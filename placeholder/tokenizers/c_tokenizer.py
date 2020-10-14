@@ -129,7 +129,6 @@ class CTokenizer:
         # stringify the tokens and then make it looks like a valid C code
         code = ' '.join(tokens)
         code = code.replace('ENDCOM', '\n').replace('▁', ' SPACETOKEN ')
-        print(self._tokenize(code))
 
         # parse the pseudo C code with libclang
         try:
@@ -198,7 +197,7 @@ class CTokenizer:
 
 if __name__ == "__main__":
     tokenizer = CTokenizer()
-    tokens = tokenizer.tokenize(open("tests/test.c").read())
+    tokens = tokenizer.tokenize(open("./test.c").read())
     print("tokens", tokens)
     new_code = tokenizer.detokenize(tokens)
     print(new_code)
