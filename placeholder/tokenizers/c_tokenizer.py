@@ -7,7 +7,7 @@ import clang
 from clang.cindex import TokenKind
 from sacrebleu.tokenizers import TokenizerV14International
 
-from utils.timeout import TimeoutError, timeout
+from .utils.timeout import TimeoutError, timeout
 
 ############### Configuration ###################
 TOK_NO_SPACE_BEFORE = {',', ';'}
@@ -192,8 +192,8 @@ class CTokenizer:
 
         lines = re.split(r'NEW_LINE', ' '.join(new_tokens))
         untok_s = self.indent_lines(lines)
-        untok_s = untok_s.replace('CB_COLON', '};').replace(
-            'CB_COMA', '},').replace('CB_', '}').replace('OB_', '{')
+        untok_s = untok_s.replace('CB_COLON', '};').replace('CB_COMA', '},')\
+                         .replace('CB_', '}').replace('OB_', '{')
         return untok_s
 
 if __name__ == "__main__":
