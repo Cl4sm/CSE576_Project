@@ -47,7 +47,7 @@ def main():
     not_runnable_packages_file = os.path.join(output_dir, "not-runnable-packages.txt")
     runnable_non_c_packages_file = os.path.join(output_dir, "non-c-runnable-packages.txt")
     runnable_unknown_language_packages_file = os.path.join(output_dir, "runnable-unknown-language-packages.txt")
-    selected_packages_file = os.path.join(output_dir, "selected-packages.txt")
+    runnable_c_only_packages_file = os.path.join(output_dir, "runnable-c-only-packages.txt")
 
     # Find all packages that do not contain a runnable program
     not_runnable_packages = set(package["package_name"] for package in db.search(q.role != "program"))
@@ -56,7 +56,7 @@ def main():
     check_if_runnable_package = set(package["package_name"] for package in db.search(~q.role.exists()))
 
     # Find all packages that contain a runnable program and contain only C code
-    selected_packages = set(package["package_name"] for package in db.search((q.role == "program") & (q["implemented-in"] == "c")))
+    runnable_c_only_packages = set(package["package_name"] for package in db.search((q.role == "program") & (q["implemented-in"] == "c")))
 
     # Find all packages that contain a runnable program and some C code
     partially_c_packages = set(package["package_name"] for package in db.search(((q.role == "program") &
@@ -77,7 +77,7 @@ def main():
     # Sanity check to ensure no overlap: classification should be into disjoint sets
     all_sets = {"not_runnable_packages": not_runnable_packages,
                 "check_if_runnable_package": check_if_runnable_package,
-                "selected_packages": selected_packages,
+                "runnable_c_only_packages": runnable_c_only_packages,
                 "partially_c_packages": partially_c_packages,
                 "runnable_non_c_packages": runnable_non_c_packages,
                 "runnable_unknown_language_packages": runnable_unknown_language_packages
@@ -128,8 +128,8 @@ def main():
 
     fh.close()
 
-    fh = open(selected_packages_file, 'w')
-    for package in sorted(selected_packages):
+    fh = open(runnable_c_only_packages_file, 'w')
+    for package in sorted(runnable_c_only_packages):
         fh.write(package + os.linesep)
 
     fh.close()
