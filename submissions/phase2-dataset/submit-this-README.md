@@ -41,10 +41,8 @@ The dataset is created using 3 levels of filtering:
 3. **Allstar**: In this final filtering, we check the Allstar repository to see if there is an AMD64 executable present for the
    package. If there is none present, then we discard the package and do not add it to the dataset.
 
-(TODO - HJ please replace M and P with actual counts after final filter)
-
-After this filtering, we have a collection of functions as well as the executables for the dataset. We have a total of M functions
-across P packages. Since our dataset would be extremely large(with both source files and binary executables), we are including
+After this filtering, we have a collection of functions as well as the executables for the dataset. We have a total of 646729 functions
+across 1146 packages. Since our dataset would be extremely large(with both source files and binary executables), we are including
 only the source level information of functions(compressed) derived from the source packages and bianries, which can be easily
 obtained from the public Allstar and Debian source package repositories.
 
@@ -66,7 +64,7 @@ responsibility assignment was done as follows:
 - William Gibbs: Tokenizing source code using IDA decompiler output.
 - Yihui Zheng: Tokenizing source code using clang and IDA decompiler output.
 - Maxfield Lehman: Responsible for model creation and training using fairseq. Also helped with generating dataset.
-- HuiJun Tay: Responsible for model creation and training using fairseq.
+- HuiJun Tay: Responsible for model creation and training using fairseq. Also helped with generating dataset.
 - Arvind Sriram Raj: Creating initial dataset from which training and testing sets will be derived.
 
 In addition, we will split the final evaluation task amongst all of us us. We have high level evaluation tasks identified but
@@ -176,4 +174,13 @@ since specific details of those tasks have not yet been identified, we do not ha
                done
     ```
 
-7. Perform final filtering using the Allstar dataset. TODO: Finish this section.
+7. Perform final filtering using the Allstar dataset.
+   NOTE: allstar.py must be in the same directory as allstar-filter-nobins.py
+         the mapping file runnable-c-only-packages-names.txt must be in the same directory
+         as runnable-c-only-packages
+    
+    ```bash
+    $ workon cse576  # Activate virtual environment if not active
+    (cse576) $ python3 allstar-filter-nobins.py debtags-classification/runnable-c-only-packages
+    (cse576) $ python3 allstar-filter-nobins.py debtags-classification/runnable-unknown-language-packages
+    ```
