@@ -91,7 +91,7 @@ for pfile in package_files:
 
 print("Found %d/%d Packages with binaries on repo:" % (count, len(package_files)))
 
-filtered_dir = args.directory.strip('/')+"_hasbinaries"
+filtered_dir = args.directory.strip('/')+"-hasbinaries"
 orignal_dir = args.directory.strip('/')
 if os.path.exists(filtered_dir):
     shutil.rmtree(filtered_dir)
