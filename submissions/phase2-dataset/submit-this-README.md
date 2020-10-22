@@ -63,7 +63,7 @@ We assigned a specific person responsible for each task who will perform the imp
 task are discussed among the team and finalized. Additionally, members also help the responsible person as needed. The task
 responsibility assignment was done as follows:
 
-- William Gibbs: Tokenizing source code using clang and IDA decompiler output.
+- William Gibbs: Tokenizing source code using IDA decompiler output.
 - Yihui Zheng: Tokenizing source code using clang and IDA decompiler output.
 - Maxfield Lehman: Responsible for model creation and training using fairseq. Also helped with generating dataset.
 - HuiJun Tay: Responsible for model creation and training using fairseq.
