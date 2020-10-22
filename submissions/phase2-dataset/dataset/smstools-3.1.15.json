@@ -1,0 +1,949 @@
+{
+    "smstools-3.1.15": {
+        "src/extras.c": [
+            {
+                "name": "yesno",
+                "start": 37,
+                "end": 81
+            },
+            {
+                "name": "yesno_check",
+                "start": 83,
+                "end": 111
+            },
+            {
+                "name": "cut_ctrl",
+                "start": 113,
+                "end": 135
+            },
+            {
+                "name": "cut_crlf",
+                "start": 137,
+                "end": 144
+            },
+            {
+                "name": "is_blank",
+                "start": 146,
+                "end": 149
+            },
+            {
+                "name": "line_is_blank",
+                "start": 151,
+                "end": 162
+            },
+            {
+                "name": "movefile",
+                "start": 164,
+                "end": 209
+            },
+            {
+                "name": "movefilewithdestlock_new",
+                "start": 216,
+                "end": 324
+            },
+            {
+                "name": "cutspaces",
+                "start": 326,
+                "end": 353
+            },
+            {
+                "name": "cut_emptylines",
+                "start": 355,
+                "end": 369
+            },
+            {
+                "name": "is_number",
+                "start": 371,
+                "end": 381
+            },
+            {
+                "name": "is_highpriority",
+                "start": 383,
+                "end": 433
+            },
+            {
+                "name": "file_is_writable",
+                "start": 435,
+                "end": 455
+            },
+            {
+                "name": "getpdufile",
+                "start": 457,
+                "end": 503
+            },
+            {
+                "name": "getfile",
+                "start": 505,
+                "end": 901
+            },
+            {
+                "name": "my_system",
+                "start": 903,
+                "end": 1079
+            },
+            {
+                "name": "write_pid",
+                "start": 1081,
+                "end": 1095
+            },
+            {
+                "name": "check_pid",
+                "start": 1097,
+                "end": 1115
+            },
+            {
+                "name": "remove_pid",
+                "start": 1117,
+                "end": 1121
+            },
+            {
+                "name": "parse_validity",
+                "start": 1123,
+                "end": 1249
+            },
+            {
+                "name": "report_validity",
+                "start": 1252,
+                "end": 1292
+            },
+            {
+                "name": "getrand",
+                "start": 1294,
+                "end": 1298
+            },
+            {
+                "name": "is_executable",
+                "start": 1300,
+                "end": 1347
+            },
+            {
+                "name": "check_access",
+                "start": 1349,
+                "end": 1396
+            },
+            {
+                "name": "value_in",
+                "start": 1398,
+                "end": 1411
+            },
+            {
+                "name": "t_sleep",
+                "start": 1413,
+                "end": 1431
+            },
+            {
+                "name": "usleep_until",
+                "start": 1433,
+                "end": 1453
+            },
+            {
+                "name": "time_usec",
+                "start": 1455,
+                "end": 1465
+            },
+            {
+                "name": "make_datetime_string",
+                "start": 1467,
+                "end": 1521
+            },
+            {
+                "name": "strcat_realloc",
+                "start": 1523,
+                "end": 1540
+            },
+            {
+                "name": "strcpyo",
+                "start": 1542,
+                "end": 1552
+            },
+            {
+                "name": "getfield",
+                "start": 1554,
+                "end": 1595
+            }
+        ],
+        "src/pdu.h": [
+            {
+                "name": "make_pdu",
+                "start": 35,
+                "end": 36
+            },
+            {
+                "name": "splitpdu",
+                "start": 53,
+                "end": 56
+            },
+            {
+                "name": "pdu2text",
+                "start": 81,
+                "end": 82
+            }
+        ],
+        "src/modeminit.c": [
+            {
+                "name": "get_gsm_cme_error",
+                "start": 213,
+                "end": 223
+            },
+            {
+                "name": "get_gsm_cms_error",
+                "start": 225,
+                "end": 235
+            },
+            {
+                "name": "get_gsm_error",
+                "start": 237,
+                "end": 250
+            },
+            {
+                "name": "explain_csq_buffer",
+                "start": 252,
+                "end": 325
+            },
+            {
+                "name": "explain_csq",
+                "start": 327,
+                "end": 352
+            },
+            {
+                "name": "write_to_modem",
+                "start": 354,
+                "end": 469
+            },
+            {
+                "name": "negotiate_with_telnet",
+                "start": 472,
+                "end": 562
+            },
+            {
+                "name": "read_from_modem",
+                "start": 568,
+                "end": 663
+            },
+            {
+                "name": "change_crlf",
+                "start": 666,
+                "end": 676
+            },
+            {
+                "name": "detect_routed_message",
+                "start": 678,
+                "end": 795
+            },
+            {
+                "name": "do_hangup",
+                "start": 797,
+                "end": 841
+            },
+            {
+                "name": "handlephonecall_clip",
+                "start": 843,
+                "end": 893
+            },
+            {
+                "name": "put_command",
+                "start": 898,
+                "end": 902
+            },
+            {
+                "name": "put_command0",
+                "start": 904,
+                "end": 1115
+            },
+            {
+                "name": "setmodemparams",
+                "start": 1117,
+                "end": 1226
+            },
+            {
+                "name": "initmodem",
+                "start": 1228,
+                "end": 1693
+            },
+            {
+                "name": "initialize_modem_sending",
+                "start": 1695,
+                "end": 1698
+            },
+            {
+                "name": "initialize_modem_receiving",
+                "start": 1700,
+                "end": 1703
+            },
+            {
+                "name": "inet_resolve",
+                "start": 1716,
+                "end": 1752
+            },
+            {
+                "name": "open_inet_socket",
+                "start": 1754,
+                "end": 1801
+            },
+            {
+                "name": "openmodem",
+                "start": 1809,
+                "end": 1883
+            },
+            {
+                "name": "talk_with_modem",
+                "start": 1885,
+                "end": 2027
+            },
+            {
+                "name": "wait_network_registration",
+                "start": 2033,
+                "end": 2189
+            },
+            {
+                "name": "try_closemodem",
+                "start": 2191,
+                "end": 2215
+            },
+            {
+                "name": "try_openmodem",
+                "start": 2217,
+                "end": 2249
+            }
+        ],
+        "src/stats.c": [
+            {
+                "name": "initstats",
+                "start": 38,
+                "end": 114
+            },
+            {
+                "name": "resetstats",
+                "start": 116,
+                "end": 139
+            },
+            {
+                "name": "savestats",
+                "start": 141,
+                "end": 168
+            },
+            {
+                "name": "loadstats",
+                "start": 170,
+                "end": 206
+            },
+            {
+                "name": "print_status",
+                "start": 208,
+                "end": 223
+            },
+            {
+                "name": "checkwritestats",
+                "start": 225,
+                "end": 304
+            },
+            {
+                "name": "update_message_counter",
+                "start": 307,
+                "end": 344
+            },
+            {
+                "name": "write_status",
+                "start": 347,
+                "end": 450
+            }
+        ],
+        "src/blacklist.c": [
+            {
+                "name": "inblacklist",
+                "start": 27,
+                "end": 68
+            }
+        ],
+        "src/locking.c": [
+            {
+                "name": "lockfile",
+                "start": 26,
+                "end": 57
+            },
+            {
+                "name": "islocked",
+                "start": 59,
+                "end": 74
+            },
+            {
+                "name": "unlockfile",
+                "start": 76,
+                "end": 90
+            }
+        ],
+        "src/logging.c": [
+            {
+                "name": "change_loglevel",
+                "start": 36,
+                "end": 43
+            },
+            {
+                "name": "restore_loglevel",
+                "start": 45,
+                "end": 49
+            },
+            {
+                "name": "get_loglevel",
+                "start": 52,
+                "end": 56
+            },
+            {
+                "name": "openlogfile",
+                "start": 58,
+                "end": 140
+            },
+            {
+                "name": "closelogfile",
+                "start": 142,
+                "end": 163
+            },
+            {
+                "name": "writelogfile0",
+                "start": 165,
+                "end": 168
+            },
+            {
+                "name": "writelogfile",
+                "start": 170,
+                "end": 240
+            },
+            {
+                "name": "flush_smart_logging",
+                "start": 242,
+                "end": 273
+            }
+        ],
+        "src/cfgfile.h": [
+            {
+                "name": "getsubparam_delim",
+                "start": 24,
+                "end": 27
+            },
+            {
+                "name": "getsubparam",
+                "start": 29,
+                "end": 31
+            },
+            {
+                "name": "my_getline",
+                "start": 46,
+                "end": 48
+            }
+        ],
+        "src/cfgfile.c": [
+            {
+                "name": "cutcomment",
+                "start": 22,
+                "end": 42
+            },
+            {
+                "name": "getsubparam_delim",
+                "start": 44,
+                "end": 81
+            },
+            {
+                "name": "getsubparam",
+                "start": 83,
+                "end": 88
+            },
+            {
+                "name": "splitline",
+                "start": 90,
+                "end": 117
+            },
+            {
+                "name": "gotosection",
+                "start": 119,
+                "end": 141
+            },
+            {
+                "name": "my_getline",
+                "start": 143,
+                "end": 171
+            }
+        ],
+        "src/whitelist.c": [
+            {
+                "name": "inwhitelist_q",
+                "start": 28,
+                "end": 84
+            }
+        ],
+        "src/alarm.c": [
+            {
+                "name": "set_alarmhandler",
+                "start": 30,
+                "end": 34
+            },
+            {
+                "name": "alarm_handler0",
+                "start": 36,
+                "end": 39
+            },
+            {
+                "name": "alarm_handler",
+                "start": 41,
+                "end": 60
+            }
+        ],
+        "src/smsd.c": [
+            {
+                "name": "sendsignal2devices",
+                "start": 153,
+                "end": 160
+            },
+            {
+                "name": "exec_system",
+                "start": 162,
+                "end": 266
+            },
+            {
+                "name": "read_translation",
+                "start": 268,
+                "end": 494
+            },
+            {
+                "name": "get_header",
+                "start": 497,
+                "end": 506
+            },
+            {
+                "name": "get_header_incoming",
+                "start": 508,
+                "end": 513
+            },
+            {
+                "name": "test_header",
+                "start": 517,
+                "end": 541
+            },
+            {
+                "name": "prepare_remove_headers",
+                "start": 543,
+                "end": 623
+            },
+            {
+                "name": "extract_macros",
+                "start": 631,
+                "end": 683
+            },
+            {
+                "name": "apply_filename_preview",
+                "start": 687,
+                "end": 747
+            },
+            {
+                "name": "run_checkhandler",
+                "start": 756,
+                "end": 767
+            },
+            {
+                "name": "stop_if_file_exists",
+                "start": 775,
+                "end": 788
+            },
+            {
+                "name": "change_headers",
+                "start": 800,
+                "end": 920
+            },
+            {
+                "name": "readSMSheader",
+                "start": 926,
+                "end": 1240
+            },
+            {
+                "name": "readSMStext",
+                "start": 1247,
+                "end": 1351
+            },
+            {
+                "name": "readSMShex",
+                "start": 1353,
+                "end": 1531
+            },
+            {
+                "name": "mainspooler",
+                "start": 1537,
+                "end": 1834
+            },
+            {
+                "name": "deletesms",
+                "start": 1840,
+                "end": 1856
+            },
+            {
+                "name": "deletesms_list",
+                "start": 1858,
+                "end": 1886
+            },
+            {
+                "name": "check_memory",
+                "start": 1893,
+                "end": 2318
+            },
+            {
+                "name": "savephonecall",
+                "start": 2330,
+                "end": 2406
+            },
+            {
+                "name": "readphonecalls",
+                "start": 2408,
+                "end": 2655
+            },
+            {
+                "name": "readsim",
+                "start": 2661,
+                "end": 2812
+            },
+            {
+                "name": "received2file",
+                "start": 2819,
+                "end": 3400
+            },
+            {
+                "name": "receivesms",
+                "start": 3406,
+                "end": 3677
+            },
+            {
+                "name": "send_part",
+                "start": 3683,
+                "end": 3997
+            },
+            {
+                "name": "send1sms",
+                "start": 4003,
+                "end": 5119
+            },
+            {
+                "name": "send_admin_message",
+                "start": 5125,
+                "end": 5186
+            },
+            {
+                "name": "cmd_to_modem",
+                "start": 5192,
+                "end": 5462
+            },
+            {
+                "name": "run_rr",
+                "start": 5464,
+                "end": 5568
+            },
+            {
+                "name": "do_ic_purge",
+                "start": 5570,
+                "end": 5686
+            },
+            {
+                "name": "send_startstring",
+                "start": 5689,
+                "end": 5731
+            },
+            {
+                "name": "send_stopstring",
+                "start": 5734,
+                "end": 5774
+            },
+            {
+                "name": "check_suspend",
+                "start": 5777,
+                "end": 5857
+            },
+            {
+                "name": "devicespooler",
+                "start": 5859,
+                "end": 6277
+            },
+            {
+                "name": "soft_termination_handler",
+                "start": 6285,
+                "end": 6333
+            },
+            {
+                "name": "abnormal_termination",
+                "start": 6335,
+                "end": 6367
+            },
+            {
+                "name": "signal_handler",
+                "start": 6369,
+                "end": 6403
+            },
+            {
+                "name": "main",
+                "start": 6409,
+                "end": 6930
+            }
+        ],
+        "src/pdu.c": [
+            {
+                "name": "add_warning",
+                "start": 34,
+                "end": 57
+            },
+            {
+                "name": "pdu_error",
+                "start": 59,
+                "end": 93
+            },
+            {
+                "name": "isXdigit",
+                "start": 95,
+                "end": 100
+            },
+            {
+                "name": "swapchars",
+                "start": 103,
+                "end": 116
+            },
+            {
+                "name": "text2pdu",
+                "start": 124,
+                "end": 201
+            },
+            {
+                "name": "binary2pdu",
+                "start": 204,
+                "end": 217
+            },
+            {
+                "name": "set_numberformat",
+                "start": 219,
+                "end": 286
+            },
+            {
+                "name": "make_pdu",
+                "start": 295,
+                "end": 419
+            },
+            {
+                "name": "octet2bin",
+                "start": 421,
+                "end": 435
+            },
+            {
+                "name": "octet2bin_check",
+                "start": 439,
+                "end": 450
+            },
+            {
+                "name": "get_remove_concatenation",
+                "start": 455,
+                "end": 532
+            },
+            {
+                "name": "get_concatenation",
+                "start": 534,
+                "end": 546
+            },
+            {
+                "name": "remove_concatenation",
+                "start": 548,
+                "end": 555
+            },
+            {
+                "name": "explain_udh",
+                "start": 560,
+                "end": 665
+            },
+            {
+                "name": "pdu2text",
+                "start": 672,
+                "end": 817
+            },
+            {
+                "name": "pdu2text0",
+                "start": 819,
+                "end": 822
+            },
+            {
+                "name": "pdu2binary",
+                "start": 826,
+                "end": 919
+            },
+            {
+                "name": "explain_toa",
+                "start": 921,
+                "end": 965
+            },
+            {
+                "name": "explain_status",
+                "start": 968,
+                "end": 1022
+            },
+            {
+                "name": "split_type_0",
+                "start": 1033,
+                "end": 1242
+            },
+            {
+                "name": "split_type_2",
+                "start": 1251,
+                "end": 1455
+            },
+            {
+                "name": "splitpdu",
+                "start": 1471,
+                "end": 1747
+            },
+            {
+                "name": "get_pdu_details",
+                "start": 1749,
+                "end": 1872
+            },
+            {
+                "name": "sort_pdu_helper",
+                "start": 1874,
+                "end": 1878
+            },
+            {
+                "name": "sort_pdu_details",
+                "start": 1880,
+                "end": 1887
+            }
+        ],
+        "src/smsd_cfg.c": [
+            {
+                "name": "tb_sprintf",
+                "start": 44,
+                "end": 53
+            },
+            {
+                "name": "startuperror",
+                "start": 55,
+                "end": 79
+            },
+            {
+                "name": "copyvalue",
+                "start": 82,
+                "end": 98
+            },
+            {
+                "name": "set_level",
+                "start": 100,
+                "end": 135
+            },
+            {
+                "name": "initcfg",
+                "start": 137,
+                "end": 382
+            },
+            {
+                "name": "ask_value",
+                "start": 384,
+                "end": 464
+            },
+            {
+                "name": "readcfg",
+                "start": 466,
+                "end": 1719
+            },
+            {
+                "name": "getqueue",
+                "start": 1722,
+                "end": 1791
+            },
+            {
+                "name": "getdevice",
+                "start": 1793,
+                "end": 1804
+            },
+            {
+                "name": "help",
+                "start": 1806,
+                "end": 1832
+            },
+            {
+                "name": "parsearguments",
+                "start": 1834,
+                "end": 1912
+            },
+            {
+                "name": "check_directory",
+                "start": 1914,
+                "end": 1954
+            },
+            {
+                "name": "remove_lockfiles",
+                "start": 1956,
+                "end": 1979
+            },
+            {
+                "name": "wrlogfile",
+                "start": 1981,
+                "end": 1995
+            },
+            {
+                "name": "startup_check",
+                "start": 1997,
+                "end": 2792
+            }
+        ],
+        "src/charset.c": [
+            {
+                "name": "special_char2gsm",
+                "start": 307,
+                "end": 324
+            },
+            {
+                "name": "char2gsm",
+                "start": 330,
+                "end": 367
+            },
+            {
+                "name": "gsm2char",
+                "start": 369,
+                "end": 392
+            },
+            {
+                "name": "iso_utf8_2gsm",
+                "start": 394,
+                "end": 586
+            },
+            {
+                "name": "iso2utf8_file",
+                "start": 589,
+                "end": 676
+            },
+            {
+                "name": "gsm2iso",
+                "start": 678,
+                "end": 730
+            },
+            {
+                "name": "decode_ucs2",
+                "start": 733,
+                "end": 763
+            },
+            {
+                "name": "logch",
+                "start": 769,
+                "end": 815
+            },
+            {
+                "name": "prch",
+                "start": 817,
+                "end": 822
+            },
+            {
+                "name": "iso2utf8",
+                "start": 825,
+                "end": 936
+            },
+            {
+                "name": "encode_7bit_packed",
+                "start": 939,
+                "end": 985
+            },
+            {
+                "name": "decode_7bit_packed",
+                "start": 988,
+                "end": 1045
+            }
+        ]
+    }
+}

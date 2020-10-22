@@ -1,0 +1,372 @@
+{
+    "netpipes-4.2": {
+        "common.h": [
+            {
+                "name": "convert_hostname",
+                "start": 60,
+                "end": 61
+            },
+            {
+                "name": "printhost",
+                "start": 65,
+                "end": 66
+            },
+            {
+                "name": "bindlocal",
+                "start": 70,
+                "end": 71
+            },
+            {
+                "name": "emit_version",
+                "start": 75,
+                "end": 76
+            }
+        ],
+        "common.c": [
+            {
+                "name": "add_fd",
+                "start": 50,
+                "end": 68
+            },
+            {
+                "name": "reserve_fds",
+                "start": 70,
+                "end": 80
+            },
+            {
+                "name": "dup_n",
+                "start": 82,
+                "end": 98
+            },
+            {
+                "name": "get_port",
+                "start": 102,
+                "end": 109
+            },
+            {
+                "name": "set_port",
+                "start": 111,
+                "end": 124
+            },
+            {
+                "name": "name_to_inet_port",
+                "start": 126,
+                "end": 152
+            },
+            {
+                "name": "convert_hostname",
+                "start": 154,
+                "end": 246
+            },
+            {
+                "name": "printhost",
+                "start": 250,
+                "end": 260
+            },
+            {
+                "name": "bindlocal",
+                "start": 282,
+                "end": 393
+            },
+            {
+                "name": "valid_descriptor",
+                "start": 398,
+                "end": 424
+            }
+        ],
+        "encapsulate.c": [
+            {
+                "name": "usage",
+                "start": 165,
+                "end": 169
+            },
+            {
+                "name": "Im_server_p",
+                "start": 181,
+                "end": 215
+            },
+            {
+                "name": "add_subproc_fd",
+                "start": 252,
+                "end": 273
+            },
+            {
+                "name": "add_control_channel",
+                "start": 275,
+                "end": 296
+            },
+            {
+                "name": "remove_pipeline_",
+                "start": 298,
+                "end": 305
+            },
+            {
+                "name": "remove_pipeline",
+                "start": 307,
+                "end": 320
+            },
+            {
+                "name": "prepare_SYNs",
+                "start": 324,
+                "end": 371
+            },
+            {
+                "name": "prime_packet_queue_",
+                "start": 385,
+                "end": 396
+            },
+            {
+                "name": "prime_packet_queue",
+                "start": 398,
+                "end": 407
+            },
+            {
+                "name": "maybe_inject_special_packets",
+                "start": 411,
+                "end": 439
+            },
+            {
+                "name": "build_fd_lists",
+                "start": 441,
+                "end": 541
+            },
+            {
+                "name": "build_packet_header",
+                "start": 543,
+                "end": 556
+            },
+            {
+                "name": "send_reset",
+                "start": 558,
+                "end": 563
+            },
+            {
+                "name": "read_from_child",
+                "start": 567,
+                "end": 601
+            },
+            {
+                "name": "write_to_child",
+                "start": 606,
+                "end": 647
+            },
+            {
+                "name": "write_to_socket",
+                "start": 650,
+                "end": 681
+            },
+            {
+                "name": "read_from_socket",
+                "start": 685,
+                "end": 730
+            },
+            {
+                "name": "interpret_scp_header",
+                "start": 732,
+                "end": 885
+            },
+            {
+                "name": "handle_control_message",
+                "start": 887,
+                "end": 940
+            },
+            {
+                "name": "perform_special_actions",
+                "start": 942,
+                "end": 1066
+            },
+            {
+                "name": "main_io_loop",
+                "start": 1070,
+                "end": 1271
+            },
+            {
+                "name": "waitonchild",
+                "start": 1277,
+                "end": 1282
+            },
+            {
+                "name": "probe_child",
+                "start": 1284,
+                "end": 1321
+            },
+            {
+                "name": "spawn_child",
+                "start": 1323,
+                "end": 1422
+            },
+            {
+                "name": "rig_single",
+                "start": 1424,
+                "end": 1449
+            },
+            {
+                "name": "scan_flag_numeric_fd",
+                "start": 1453,
+                "end": 1463
+            },
+            {
+                "name": "main",
+                "start": 1484,
+                "end": 1787
+            }
+        ],
+        "getpeername.c": [
+            {
+                "name": "usage",
+                "start": 40,
+                "end": 43
+            },
+            {
+                "name": "main",
+                "start": 48,
+                "end": 167
+            }
+        ],
+        "sockdown.c": [
+            {
+                "name": "emit_version",
+                "start": 34,
+                "end": 35
+            },
+            {
+                "name": "main",
+                "start": 40,
+                "end": 91
+            }
+        ],
+        "timelimit.c": [
+            {
+                "name": "notice_child",
+                "start": 44,
+                "end": 48
+            },
+            {
+                "name": "usage",
+                "start": 50,
+                "end": 54
+            },
+            {
+                "name": "kill_child",
+                "start": 56,
+                "end": 88
+            },
+            {
+                "name": "main",
+                "start": 90,
+                "end": 205
+            }
+        ],
+        "faucet.c": [
+            {
+                "name": "usage",
+                "start": 89,
+                "end": 91
+            },
+            {
+                "name": "nice_shutdown",
+                "start": 93,
+                "end": 99
+            },
+            {
+                "name": "setup_socket",
+                "start": 102,
+                "end": 151
+            },
+            {
+                "name": "waitonchild",
+                "start": 154,
+                "end": 162
+            },
+            {
+                "name": "authorize_address",
+                "start": 165,
+                "end": 228
+            },
+            {
+                "name": "flag_in",
+                "start": 235,
+                "end": 242
+            },
+            {
+                "name": "flag_out",
+                "start": 244,
+                "end": 251
+            },
+            {
+                "name": "flag_err",
+                "start": 253,
+                "end": 260
+            },
+            {
+                "name": "flag_scan_comma_fds",
+                "start": 262,
+                "end": 285
+            },
+            {
+                "name": "main",
+                "start": 290,
+                "end": 728
+            }
+        ],
+        "version.c": [
+            {
+                "name": "set_progname",
+                "start": 31,
+                "end": 38
+            },
+            {
+                "name": "emit_version",
+                "start": 42,
+                "end": 59
+            }
+        ],
+        "hose.c": [
+            {
+                "name": "usage",
+                "start": 93,
+                "end": 95
+            },
+            {
+                "name": "setup_socket",
+                "start": 98,
+                "end": 224
+            },
+            {
+                "name": "copyio",
+                "start": 230,
+                "end": 349
+            },
+            {
+                "name": "endjam",
+                "start": 351,
+                "end": 354
+            },
+            {
+                "name": "flag_in",
+                "start": 361,
+                "end": 368
+            },
+            {
+                "name": "flag_out",
+                "start": 370,
+                "end": 377
+            },
+            {
+                "name": "flag_err",
+                "start": 379,
+                "end": 386
+            },
+            {
+                "name": "flag_scan_comma_fds",
+                "start": 388,
+                "end": 411
+            },
+            {
+                "name": "main",
+                "start": 416,
+                "end": 739
+            }
+        ]
+    }
+}

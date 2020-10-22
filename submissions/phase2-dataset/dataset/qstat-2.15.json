@@ -1,0 +1,2384 @@
+{
+    "qstat-2.15": {
+        "qserver.h": [
+            {
+                "name": "get_param_ui_value",
+                "start": 178,
+                "end": 179
+            }
+        ],
+        "tee.c": [
+            {
+                "name": "send_tee_request_packet",
+                "start": 22,
+                "end": 25
+            },
+            {
+                "name": "deal_with_tee_packet",
+                "start": 27,
+                "end": 92
+            }
+        ],
+        "ksp.c": [
+            {
+                "name": "decode_ksp_val",
+                "start": 30,
+                "end": 35
+            },
+            {
+                "name": "send_ksp_request_packet",
+                "start": 37,
+                "end": 45
+            },
+            {
+                "name": "valid_ksp_response",
+                "start": 47,
+                "end": 89
+            },
+            {
+                "name": "ksp_json_attrib",
+                "start": 91,
+                "end": 126
+            },
+            {
+                "name": "deal_with_ksp_packet",
+                "start": 128,
+                "end": 251
+            }
+        ],
+        "ts2.c": [
+            {
+                "name": "send_ts2_request_packet",
+                "start": 25,
+                "end": 46
+            },
+            {
+                "name": "deal_with_ts2_packet",
+                "start": 49,
+                "end": 166
+            }
+        ],
+        "fl.c": [
+            {
+                "name": "send_fl_request_packet",
+                "start": 51,
+                "end": 64
+            },
+            {
+                "name": "send_fl_rule_request_packet",
+                "start": 66,
+                "end": 127
+            },
+            {
+                "name": "deal_with_fl_packet",
+                "start": 129,
+                "end": 510
+            }
+        ],
+        "utils.c": [
+            {
+                "name": "qstat_strnstr",
+                "start": 49,
+                "end": 68
+            },
+            {
+                "name": "str_replace",
+                "start": 106,
+                "end": 120
+            }
+        ],
+        "debug.c": [
+            {
+                "name": "set_debug_level",
+                "start": 63,
+                "end": 66
+            },
+            {
+                "name": "get_debug_level",
+                "start": 68,
+                "end": 71
+            },
+            {
+                "name": "malformed_packet",
+                "start": 73,
+                "end": 100
+            },
+            {
+                "name": "dump_packet",
+                "start": 125,
+                "end": 130
+            },
+            {
+                "name": "print_packet",
+                "start": 132,
+                "end": 136
+            },
+            {
+                "name": "output_packet",
+                "start": 138,
+                "end": 183
+            }
+        ],
+        "packet_manip.c": [
+            {
+                "name": "combine_packets",
+                "start": 26,
+                "end": 165
+            },
+            {
+                "name": "add_packet",
+                "start": 170,
+                "end": 228
+            },
+            {
+                "name": "next_sequence",
+                "start": 230,
+                "end": 233
+            },
+            {
+                "name": "get_packet_fragment",
+                "start": 235,
+                "end": 250
+            },
+            {
+                "name": "combined_length",
+                "start": 252,
+                "end": 264
+            },
+            {
+                "name": "packet_count",
+                "start": 266,
+                "end": 280
+            }
+        ],
+        "haze.c": [
+            {
+                "name": "deal_with_haze_packet",
+                "start": 61,
+                "end": 164
+            },
+            {
+                "name": "deal_with_haze_status",
+                "start": 166,
+                "end": 204
+            },
+            {
+                "name": "process_haze_packet",
+                "start": 206,
+                "end": 577
+            },
+            {
+                "name": "send_haze_request_packet",
+                "start": 579,
+                "end": 623
+            }
+        ],
+        "cube2.c": [
+            {
+                "name": "getint",
+                "start": 33,
+                "end": 60
+            },
+            {
+                "name": "getstr",
+                "start": 63,
+                "end": 77
+            },
+            {
+                "name": "sb_getversion_s",
+                "start": 80,
+                "end": 109
+            },
+            {
+                "name": "sb_getmode_s",
+                "start": 112,
+                "end": 148
+            },
+            {
+                "name": "send_cube2_request_packet",
+                "start": 151,
+                "end": 154
+            },
+            {
+                "name": "deal_with_cube2_packet",
+                "start": 157,
+                "end": 230
+            }
+        ],
+        "hcache.c": [
+            {
+                "name": "init_entry",
+                "start": 63,
+                "end": 64
+            },
+            {
+                "name": "hcache_open",
+                "start": 71,
+                "end": 136
+            },
+            {
+                "name": "init_entry",
+                "start": 138,
+                "end": 186
+            },
+            {
+                "name": "find_host_entry",
+                "start": 188,
+                "end": 202
+            },
+            {
+                "name": "hcache_write_file",
+                "start": 204,
+                "end": 217
+            },
+            {
+                "name": "hcache_update_file",
+                "start": 219,
+                "end": 232
+            },
+            {
+                "name": "write_file",
+                "start": 234,
+                "end": 252
+            },
+            {
+                "name": "hcache_invalidate",
+                "start": 254,
+                "end": 261
+            },
+            {
+                "name": "hcache_validate",
+                "start": 263,
+                "end": 311
+            },
+            {
+                "name": "validate_entry",
+                "start": 313,
+                "end": 358
+            },
+            {
+                "name": "hcache_lookup_hostname",
+                "start": 360,
+                "end": 385
+            },
+            {
+                "name": "hcache_lookup_ipaddr",
+                "start": 387,
+                "end": 400
+            },
+            {
+                "name": "find_entry",
+                "start": 402,
+                "end": 410
+            },
+            {
+                "name": "free_entry",
+                "start": 412,
+                "end": 420
+            },
+            {
+                "name": "add_hostname",
+                "start": 422,
+                "end": 434
+            }
+        ],
+        "bfbc2.c": [
+            {
+                "name": "send_bfbc2_request_packet",
+                "start": 28,
+                "end": 52
+            },
+            {
+                "name": "deal_with_bfbc2_packet",
+                "start": 54,
+                "end": 147
+            }
+        ],
+        "ts3.c": [
+            {
+                "name": "decode_ts3_val",
+                "start": 29,
+                "end": 43
+            },
+            {
+                "name": "all_ts3_servers",
+                "start": 45,
+                "end": 48
+            },
+            {
+                "name": "send_ts3_all_servers_packet",
+                "start": 50,
+                "end": 89
+            },
+            {
+                "name": "send_ts3_single_server_packet",
+                "start": 92,
+                "end": 158
+            },
+            {
+                "name": "send_ts3_request_packet",
+                "start": 160,
+                "end": 164
+            },
+            {
+                "name": "valid_ts3_response",
+                "start": 166,
+                "end": 205
+            },
+            {
+                "name": "deal_with_ts3_packet",
+                "start": 207,
+                "end": 462
+            }
+        ],
+        "md5.c": [
+            {
+                "name": "md5_process",
+                "start": 131,
+                "end": 310
+            },
+            {
+                "name": "md5_init",
+                "start": 312,
+                "end": 320
+            },
+            {
+                "name": "md5_append",
+                "start": 322,
+                "end": 358
+            },
+            {
+                "name": "md5_finish",
+                "start": 360,
+                "end": 381
+            },
+            {
+                "name": "md5_hex",
+                "start": 385,
+                "end": 404
+            }
+        ],
+        "farmsim.c": [
+            {
+                "name": "decode_farmsim_val",
+                "start": 30,
+                "end": 35
+            },
+            {
+                "name": "send_farmsim_request_packet",
+                "start": 37,
+                "end": 46
+            },
+            {
+                "name": "valid_farmsim_response",
+                "start": 48,
+                "end": 90
+            },
+            {
+                "name": "farmsim_xml_attrib",
+                "start": 92,
+                "end": 118
+            },
+            {
+                "name": "deal_with_farmsim_packet",
+                "start": 120,
+                "end": 239
+            }
+        ],
+        "ottd.c": [
+            {
+                "name": "deal_with_ottdmaster_packet",
+                "start": 39,
+                "end": 88
+            },
+            {
+                "name": "deal_with_ottd_packet",
+                "start": 113,
+                "end": 327
+            },
+            {
+                "name": "send_ottdmaster_request_packet",
+                "start": 329,
+                "end": 332
+            },
+            {
+                "name": "send_ottd_request_packet",
+                "start": 334,
+                "end": 344
+            }
+        ],
+        "ventrilo.c": [
+            {
+                "name": "ventrilo_udp_head_dec",
+                "start": 122,
+                "end": 151
+            },
+            {
+                "name": "ventrilo_udp_head_enc",
+                "start": 153,
+                "end": 183
+            },
+            {
+                "name": "ventrilo_udp_data_dec",
+                "start": 185,
+                "end": 203
+            },
+            {
+                "name": "ventrilo_udp_data_enc",
+                "start": 205,
+                "end": 228
+            },
+            {
+                "name": "ventrilo_udp_crc",
+                "start": 232,
+                "end": 243
+            },
+            {
+                "name": "buildVentriloRequest",
+                "start": 245,
+                "end": 264
+            },
+            {
+                "name": "send_ventrilo_request_packet",
+                "start": 266,
+                "end": 277
+            },
+            {
+                "name": "deal_with_ventrilo_packet",
+                "start": 279,
+                "end": 367
+            }
+        ],
+        "qserver.c": [
+            {
+                "name": "qserver_send_initial",
+                "start": 26,
+                "end": 68
+            },
+            {
+                "name": "qserver_send",
+                "start": 70,
+                "end": 100
+            },
+            {
+                "name": "send_broadcast",
+                "start": 102,
+                "end": 118
+            },
+            {
+                "name": "register_send",
+                "start": 120,
+                "end": 138
+            },
+            {
+                "name": "send_packet",
+                "start": 140,
+                "end": 169
+            },
+            {
+                "name": "send_error",
+                "start": 171,
+                "end": 183
+            }
+        ],
+        "doom3.c": [
+            {
+                "name": "put_param_string",
+                "start": 35,
+                "end": 49
+            },
+            {
+                "name": "build_doom3_masterfilter",
+                "start": 51,
+                "end": 132
+            },
+            {
+                "name": "send_doom3master_request_packet",
+                "start": 134,
+                "end": 165
+            },
+            {
+                "name": "send_quake4master_request_packet",
+                "start": 167,
+                "end": 198
+            },
+            {
+                "name": "deal_with_doom3master_packet",
+                "start": 202,
+                "end": 245
+            },
+            {
+                "name": "_deal_with_doom3_packet",
+                "start": 251,
+                "end": 659
+            },
+            {
+                "name": "deal_with_doom3_packet",
+                "start": 661,
+                "end": 664
+            },
+            {
+                "name": "deal_with_quake4_packet",
+                "start": 666,
+                "end": 669
+            },
+            {
+                "name": "deal_with_prey_demo_packet",
+                "start": 671,
+                "end": 674
+            },
+            {
+                "name": "deal_with_prey_packet",
+                "start": 676,
+                "end": 679
+            },
+            {
+                "name": "deal_with_etqw_packet",
+                "start": 681,
+                "end": 684
+            },
+            {
+                "name": "deal_with_wolf_packet",
+                "start": 686,
+                "end": 689
+            }
+        ],
+        "gs2.c": [
+            {
+                "name": "send_gs2_request_packet",
+                "start": 23,
+                "end": 39
+            },
+            {
+                "name": "deal_with_gs2_packet",
+                "start": 44,
+                "end": 397
+            }
+        ],
+        "xform.c": [
+            {
+                "name": "xform_html_entity",
+                "start": 79,
+                "end": 99
+            },
+            {
+                "name": "xform_strbuf",
+                "start": 104,
+                "end": 108
+            },
+            {
+                "name": "xform_buf_resize",
+                "start": 113,
+                "end": 135
+            },
+            {
+                "name": "xform_snprintf",
+                "start": 141,
+                "end": 155
+            },
+            {
+                "name": "xform_strcpy",
+                "start": 161,
+                "end": 174
+            },
+            {
+                "name": "xform_html_color",
+                "start": 180,
+                "end": 197
+            },
+            {
+                "name": "xform_buf_reset",
+                "start": 202,
+                "end": 208
+            },
+            {
+                "name": "xform_buf_create",
+                "start": 214,
+                "end": 249
+            },
+            {
+                "name": "xform_buf_get",
+                "start": 255,
+                "end": 274
+            },
+            {
+                "name": "xform_name_q3",
+                "start": 284,
+                "end": 339
+            },
+            {
+                "name": "xform_name_t2",
+                "start": 344,
+                "end": 389
+            },
+            {
+                "name": "xform_name_u2",
+                "start": 412,
+                "end": 447
+            },
+            {
+                "name": "xform_name_tm",
+                "start": 452,
+                "end": 561
+            },
+            {
+                "name": "xform_name_sof",
+                "start": 574,
+                "end": 613
+            },
+            {
+                "name": "xform_printf",
+                "start": 620,
+                "end": 633
+            },
+            {
+                "name": "xform_buf_free",
+                "start": 638,
+                "end": 655
+            },
+            {
+                "name": "xform_name",
+                "start": 660,
+                "end": 729
+            }
+        ],
+        "mumble.c": [
+            {
+                "name": "send_mumble_request_packet",
+                "start": 23,
+                "end": 26
+            },
+            {
+                "name": "deal_with_mumble_packet",
+                "start": 28,
+                "end": 70
+            }
+        ],
+        "gs3.c": [
+            {
+                "name": "deal_with_gs3_packet",
+                "start": 54,
+                "end": 192
+            },
+            {
+                "name": "deal_with_gs3_status",
+                "start": 194,
+                "end": 306
+            },
+            {
+                "name": "process_gs3_packet",
+                "start": 308,
+                "end": 803
+            },
+            {
+                "name": "send_gs3_request_packet",
+                "start": 805,
+                "end": 865
+            }
+        ],
+        "a2s.c": [
+            {
+                "name": "send_a2s_request_packet",
+                "start": 49,
+                "end": 65
+            },
+            {
+                "name": "send_a2s_rule_request_packet",
+                "start": 67,
+                "end": 134
+            },
+            {
+                "name": "deal_with_a2s_packet",
+                "start": 136,
+                "end": 705
+            }
+        ],
+        "dirtybomb.c": [
+            {
+                "name": "send_dirtybomb_request_packet",
+                "start": 34,
+                "end": 54
+            },
+            {
+                "name": "deal_with_dirtybomb_packet",
+                "start": 56,
+                "end": 123
+            },
+            {
+                "name": "unpack_msgpack_pos_fixnum",
+                "start": 125,
+                "end": 147
+            },
+            {
+                "name": "unpack_msgpack_uint16",
+                "start": 149,
+                "end": 176
+            },
+            {
+                "name": "unpack_msgpack_uint32",
+                "start": 178,
+                "end": 209
+            },
+            {
+                "name": "unpack_msgpack_raw_len",
+                "start": 211,
+                "end": 235
+            },
+            {
+                "name": "unpack_msgpack_raw",
+                "start": 237,
+                "end": 256
+            },
+            {
+                "name": "unpack_msgpack_raw16",
+                "start": 258,
+                "end": 272
+            },
+            {
+                "name": "unpack_msgpack_raw32",
+                "start": 274,
+                "end": 289
+            },
+            {
+                "name": "unpack_msgpack_string",
+                "start": 291,
+                "end": 308
+            },
+            {
+                "name": "unpack_msgpack",
+                "start": 310,
+                "end": 390
+            }
+        ],
+        "tm.c": [
+            {
+                "name": "send_tm_request_packet",
+                "start": 31,
+                "end": 76
+            },
+            {
+                "name": "deal_with_tm_packet",
+                "start": 79,
+                "end": 341
+            }
+        ],
+        "ut2004.c": [
+            {
+                "name": "send_ut2004master_request_packet",
+                "start": 108,
+                "end": 170
+            },
+            {
+                "name": "ut2004_server_done",
+                "start": 172,
+                "end": 181
+            },
+            {
+                "name": "ut2004_parse_record",
+                "start": 185,
+                "end": 218
+            },
+            {
+                "name": "put_bytes",
+                "start": 220,
+                "end": 229
+            },
+            {
+                "name": "put_string",
+                "start": 231,
+                "end": 243
+            },
+            {
+                "name": "ut2004_send_query",
+                "start": 254,
+                "end": 409
+            },
+            {
+                "name": "deal_with_ut2004master_packet",
+                "start": 411,
+                "end": 646
+            },
+            {
+                "name": "bin2hex",
+                "start": 650,
+                "end": 659
+            }
+        ],
+        "crysis.c": [
+            {
+                "name": "decode_crysis_val",
+                "start": 30,
+                "end": 35
+            },
+            {
+                "name": "send_crysis_request_packet",
+                "start": 37,
+                "end": 74
+            },
+            {
+                "name": "valid_crysis_response",
+                "start": 76,
+                "end": 112
+            },
+            {
+                "name": "crysis_response",
+                "start": 114,
+                "end": 136
+            },
+            {
+                "name": "deal_with_crysis_packet",
+                "start": 138,
+                "end": 276
+            }
+        ],
+        "template.c": [
+            {
+                "name": "is_true",
+                "start": 82,
+                "end": 83
+            },
+            {
+                "name": "read_qserver_template",
+                "start": 266,
+                "end": 270
+            },
+            {
+                "name": "read_rule_template",
+                "start": 272,
+                "end": 276
+            },
+            {
+                "name": "read_header_template",
+                "start": 278,
+                "end": 282
+            },
+            {
+                "name": "read_trailer_template",
+                "start": 284,
+                "end": 288
+            },
+            {
+                "name": "read_player_template",
+                "start": 290,
+                "end": 294
+            },
+            {
+                "name": "read_template",
+                "start": 296,
+                "end": 323
+            },
+            {
+                "name": "have_server_template",
+                "start": 325,
+                "end": 329
+            },
+            {
+                "name": "have_header_template",
+                "start": 331,
+                "end": 335
+            },
+            {
+                "name": "have_trailer_template",
+                "start": 337,
+                "end": 341
+            },
+            {
+                "name": "template_display_server",
+                "start": 343,
+                "end": 391
+            },
+            {
+                "name": "template_display_players",
+                "start": 393,
+                "end": 399
+            },
+            {
+                "name": "template_display_player",
+                "start": 401,
+                "end": 452
+            },
+            {
+                "name": "template_display_rules",
+                "start": 454,
+                "end": 460
+            },
+            {
+                "name": "template_display_rule",
+                "start": 462,
+                "end": 513
+            },
+            {
+                "name": "template_display_header",
+                "start": 515,
+                "end": 547
+            },
+            {
+                "name": "template_display_trailer",
+                "start": 549,
+                "end": 581
+            },
+            {
+                "name": "display_server_var",
+                "start": 583,
+                "end": 709
+            },
+            {
+                "name": "display_player_var",
+                "start": 711,
+                "end": 806
+            },
+            {
+                "name": "display_rule_var",
+                "start": 808,
+                "end": 821
+            },
+            {
+                "name": "display_generic_var",
+                "start": 823,
+                "end": 884
+            },
+            {
+                "name": "parse_var",
+                "start": 886,
+                "end": 942
+            },
+            {
+                "name": "is_true",
+                "start": 944,
+                "end": 1042
+            },
+            {
+                "name": "display_string",
+                "start": 1044,
+                "end": 1085
+            }
+        ],
+        "terraria.c": [
+            {
+                "name": "send_terraria_request_packet",
+                "start": 30,
+                "end": 33
+            },
+            {
+                "name": "deal_with_terraria_packet",
+                "start": 35,
+                "end": 197
+            }
+        ],
+        "gps.c": [
+            {
+                "name": "gps_max_players",
+                "start": 24,
+                "end": 39
+            },
+            {
+                "name": "gps_player_info_key",
+                "start": 41,
+                "end": 60
+            },
+            {
+                "name": "send_gps_request_packet",
+                "start": 62,
+                "end": 65
+            },
+            {
+                "name": "deal_with_gps_packet",
+                "start": 68,
+                "end": 472
+            }
+        ],
+        "config.c": [
+            {
+                "name": "set_packet_value",
+                "start": 50,
+                "end": 51
+            },
+            {
+                "name": "print_location",
+                "start": 173,
+                "end": 177
+            },
+            {
+                "name": "qsc_load_default_config_files",
+                "start": 179,
+                "end": 254
+            },
+            {
+                "name": "qsc_load_config_file",
+                "start": 256,
+                "end": 267
+            },
+            {
+                "name": "qsc_get_config_server_types",
+                "start": 269,
+                "end": 275
+            },
+            {
+                "name": "try_load_config_file",
+                "start": 277,
+                "end": 290
+            },
+            {
+                "name": "load_config_file",
+                "start": 292,
+                "end": 306
+            },
+            {
+                "name": "parse_config_file",
+                "start": 308,
+                "end": 328
+            },
+            {
+                "name": "pf_top_level",
+                "start": 334,
+                "end": 442
+            },
+            {
+                "name": "pf_gametype_modify",
+                "start": 444,
+                "end": 481
+            },
+            {
+                "name": "pf_gametype_new",
+                "start": 483,
+                "end": 522
+            },
+            {
+                "name": "get_config_key",
+                "start": 524,
+                "end": 558
+            },
+            {
+                "name": "get_server_flag_value",
+                "start": 560,
+                "end": 572
+            },
+            {
+                "name": "parse_server_flags",
+                "start": 574,
+                "end": 624
+            },
+            {
+                "name": "set_game_type_value",
+                "start": 626,
+                "end": 729
+            },
+            {
+                "name": "set_packet_value",
+                "start": 731,
+                "end": 752
+            },
+            {
+                "name": "modify_game_type_value",
+                "start": 754,
+                "end": 816
+            },
+            {
+                "name": "get_server_type",
+                "start": 818,
+                "end": 827
+            },
+            {
+                "name": "get_builtin_type",
+                "start": 829,
+                "end": 838
+            },
+            {
+                "name": "add_config_type",
+                "start": 840,
+                "end": 866
+            },
+            {
+                "name": "get_config_type",
+                "start": 868,
+                "end": 877
+            },
+            {
+                "name": "copy_server_type",
+                "start": 879,
+                "end": 883
+            },
+            {
+                "name": "memdup",
+                "start": 885,
+                "end": 896
+            },
+            {
+                "name": "first_token",
+                "start": 901,
+                "end": 913
+            },
+            {
+                "name": "next_token",
+                "start": 915,
+                "end": 920
+            },
+            {
+                "name": "next_token_dup",
+                "start": 922,
+                "end": 926
+            },
+            {
+                "name": "get_token",
+                "start": 928,
+                "end": 946
+            },
+            {
+                "name": "next_value",
+                "start": 948,
+                "end": 972
+            },
+            {
+                "name": "parse_value",
+                "start": 974,
+                "end": 1043
+            },
+            {
+                "name": "parse_hex",
+                "start": 1045,
+                "end": 1068
+            },
+            {
+                "name": "parse_oct",
+                "start": 1070,
+                "end": 1089
+            },
+            {
+                "name": "force_lower_case",
+                "start": 1091,
+                "end": 1098
+            },
+            {
+                "name": "force_upper_case",
+                "start": 1100,
+                "end": 1107
+            }
+        ],
+        "wic.c": [
+            {
+                "name": "send_wic_request_packet",
+                "start": 25,
+                "end": 47
+            },
+            {
+                "name": "deal_with_wic_packet",
+                "start": 50,
+                "end": 191
+            }
+        ],
+        "qstat.c": [
+            {
+                "name": "display_server",
+                "start": 288,
+                "end": 313
+            },
+            {
+                "name": "standard_display_server",
+                "start": 315,
+                "end": 436
+            },
+            {
+                "name": "display_qwmaster",
+                "start": 438,
+                "end": 463
+            },
+            {
+                "name": "display_header",
+                "start": 465,
+                "end": 471
+            },
+            {
+                "name": "display_server_rules",
+                "start": 473,
+                "end": 490
+            },
+            {
+                "name": "display_q_player_info",
+                "start": 492,
+                "end": 530
+            },
+            {
+                "name": "display_qw_player_info",
+                "start": 532,
+                "end": 564
+            },
+            {
+                "name": "display_q2_player_info",
+                "start": 566,
+                "end": 582
+            },
+            {
+                "name": "display_unreal_player_info",
+                "start": 586,
+                "end": 624
+            },
+            {
+                "name": "display_shogo_player_info",
+                "start": 626,
+                "end": 635
+            },
+            {
+                "name": "display_halflife_player_info",
+                "start": 637,
+                "end": 646
+            },
+            {
+                "name": "display_fl_player_info",
+                "start": 648,
+                "end": 657
+            },
+            {
+                "name": "display_tribes_player_info",
+                "start": 659,
+                "end": 669
+            },
+            {
+                "name": "display_tribes2_player_info",
+                "start": 671,
+                "end": 684
+            },
+            {
+                "name": "display_bfris_player_info",
+                "start": 686,
+                "end": 703
+            },
+            {
+                "name": "display_descent3_player_info",
+                "start": 705,
+                "end": 720
+            },
+            {
+                "name": "display_ghostrecon_player_info",
+                "start": 722,
+                "end": 731
+            },
+            {
+                "name": "display_eye_player_info",
+                "start": 733,
+                "end": 758
+            },
+            {
+                "name": "calculate_armyops_score",
+                "start": 760,
+                "end": 786
+            },
+            {
+                "name": "display_gs2_player_info",
+                "start": 788,
+                "end": 813
+            },
+            {
+                "name": "display_armyops_player_info",
+                "start": 815,
+                "end": 826
+            },
+            {
+                "name": "display_ts2_player_info",
+                "start": 828,
+                "end": 836
+            },
+            {
+                "name": "display_ts3_player_info",
+                "start": 838,
+                "end": 846
+            },
+            {
+                "name": "display_starmade_player_info",
+                "start": 848,
+                "end": 856
+            },
+            {
+                "name": "display_bfbc2_player_info",
+                "start": 858,
+                "end": 866
+            },
+            {
+                "name": "display_wic_player_info",
+                "start": 868,
+                "end": 882
+            },
+            {
+                "name": "display_ventrilo_player_info",
+                "start": 884,
+                "end": 899
+            },
+            {
+                "name": "display_tm_player_info",
+                "start": 901,
+                "end": 909
+            },
+            {
+                "name": "display_doom3_player_info",
+                "start": 911,
+                "end": 938
+            },
+            {
+                "name": "display_ravenshield_player_info",
+                "start": 940,
+                "end": 947
+            },
+            {
+                "name": "display_savage_player_info",
+                "start": 950,
+                "end": 957
+            },
+            {
+                "name": "display_farcry_player_info",
+                "start": 960,
+                "end": 967
+            },
+            {
+                "name": "display_tee_player_info",
+                "start": 969,
+                "end": 978
+            },
+            {
+                "name": "get_qw_game",
+                "start": 980,
+                "end": 1008
+            },
+            {
+                "name": "raw_display_server",
+                "start": 1015,
+                "end": 1167
+            },
+            {
+                "name": "raw_display_server_rules",
+                "start": 1169,
+                "end": 1194
+            },
+            {
+                "name": "raw_display_q_player_info",
+                "start": 1196,
+                "end": 1215
+            },
+            {
+                "name": "raw_display_qw_player_info",
+                "start": 1217,
+                "end": 1241
+            },
+            {
+                "name": "raw_display_q2_player_info",
+                "start": 1243,
+                "end": 1262
+            },
+            {
+                "name": "raw_display_unreal_player_info",
+                "start": 1264,
+                "end": 1299
+            },
+            {
+                "name": "raw_display_halflife_player_info",
+                "start": 1301,
+                "end": 1312
+            },
+            {
+                "name": "raw_display_fl_player_info",
+                "start": 1314,
+                "end": 1332
+            },
+            {
+                "name": "raw_display_tribes_player_info",
+                "start": 1334,
+                "end": 1345
+            },
+            {
+                "name": "raw_display_tribes2_player_info",
+                "start": 1347,
+                "end": 1378
+            },
+            {
+                "name": "raw_display_bfris_player_info",
+                "start": 1380,
+                "end": 1399
+            },
+            {
+                "name": "raw_display_descent3_player_info",
+                "start": 1401,
+                "end": 1412
+            },
+            {
+                "name": "raw_display_ghostrecon_player_info",
+                "start": 1414,
+                "end": 1425
+            },
+            {
+                "name": "raw_display_eye_player_info",
+                "start": 1427,
+                "end": 1460
+            },
+            {
+                "name": "raw_display_doom3_player_info",
+                "start": 1462,
+                "end": 1481
+            },
+            {
+                "name": "raw_display_gs2_player_info",
+                "start": 1483,
+                "end": 1515
+            },
+            {
+                "name": "raw_display_armyops_player_info",
+                "start": 1517,
+                "end": 1528
+            },
+            {
+                "name": "raw_display_ts2_player_info",
+                "start": 1530,
+                "end": 1546
+            },
+            {
+                "name": "raw_display_ts3_player_info",
+                "start": 1548,
+                "end": 1563
+            },
+            {
+                "name": "raw_display_starmade_player_info",
+                "start": 1565,
+                "end": 1580
+            },
+            {
+                "name": "raw_display_bfbc2_player_info",
+                "start": 1582,
+                "end": 1597
+            },
+            {
+                "name": "raw_display_wic_player_info",
+                "start": 1599,
+                "end": 1615
+            },
+            {
+                "name": "raw_display_ventrilo_player_info",
+                "start": 1617,
+                "end": 1634
+            },
+            {
+                "name": "raw_display_tm_player_info",
+                "start": 1636,
+                "end": 1652
+            },
+            {
+                "name": "raw_display_tee_player_info",
+                "start": 1654,
+                "end": 1665
+            },
+            {
+                "name": "raw_display_ravenshield_player_info",
+                "start": 1667,
+                "end": 1676
+            },
+            {
+                "name": "raw_display_savage_player_info",
+                "start": 1678,
+                "end": 1687
+            },
+            {
+                "name": "raw_display_farcry_player_info",
+                "start": 1689,
+                "end": 1698
+            },
+            {
+                "name": "xml_display_server",
+                "start": 1704,
+                "end": 1788
+            },
+            {
+                "name": "xml_header",
+                "start": 1790,
+                "end": 1804
+            },
+            {
+                "name": "xml_footer",
+                "start": 1806,
+                "end": 1809
+            },
+            {
+                "name": "xml_display_server_rules",
+                "start": 1811,
+                "end": 1822
+            },
+            {
+                "name": "xml_display_q_player_info",
+                "start": 1824,
+                "end": 1855
+            },
+            {
+                "name": "xml_display_qw_player_info",
+                "start": 1857,
+                "end": 1892
+            },
+            {
+                "name": "xml_display_q2_player_info",
+                "start": 1894,
+                "end": 1917
+            },
+            {
+                "name": "xml_display_player_info_info",
+                "start": 1919,
+                "end": 1932
+            },
+            {
+                "name": "xml_display_unreal_player_info",
+                "start": 1934,
+                "end": 1981
+            },
+            {
+                "name": "xml_display_halflife_player_info",
+                "start": 1983,
+                "end": 2002
+            },
+            {
+                "name": "xml_display_fl_player_info",
+                "start": 2004,
+                "end": 2025
+            },
+            {
+                "name": "xml_display_tribes_player_info",
+                "start": 2027,
+                "end": 2048
+            },
+            {
+                "name": "xml_display_tribes2_player_info",
+                "start": 2050,
+                "end": 2088
+            },
+            {
+                "name": "xml_display_bfris_player_info",
+                "start": 2090,
+                "end": 2112
+            },
+            {
+                "name": "xml_display_descent3_player_info",
+                "start": 2114,
+                "end": 2135
+            },
+            {
+                "name": "xml_display_ravenshield_player_info",
+                "start": 2137,
+                "end": 2156
+            },
+            {
+                "name": "xml_display_ghostrecon_player_info",
+                "start": 2159,
+                "end": 2178
+            },
+            {
+                "name": "xml_display_eye_player_info",
+                "start": 2180,
+                "end": 2215
+            },
+            {
+                "name": "xml_display_doom3_player_info",
+                "start": 2217,
+                "end": 2264
+            },
+            {
+                "name": "xml_display_player_info",
+                "start": 2266,
+                "end": 2319
+            },
+            {
+                "name": "xml_display_armyops_player_info",
+                "start": 2321,
+                "end": 2332
+            },
+            {
+                "name": "xml_display_ts2_player_info",
+                "start": 2334,
+                "end": 2358
+            },
+            {
+                "name": "xml_display_ts3_player_info",
+                "start": 2360,
+                "end": 2383
+            },
+            {
+                "name": "xml_display_starmade_player_info",
+                "start": 2385,
+                "end": 2408
+            },
+            {
+                "name": "xml_display_bfbc2_player_info",
+                "start": 2410,
+                "end": 2433
+            },
+            {
+                "name": "xml_display_wic_player_info",
+                "start": 2435,
+                "end": 2461
+            },
+            {
+                "name": "xml_display_ventrilo_player_info",
+                "start": 2463,
+                "end": 2482
+            },
+            {
+                "name": "xml_display_tm_player_info",
+                "start": 2484,
+                "end": 2508
+            },
+            {
+                "name": "xml_display_savage_player_info",
+                "start": 2511,
+                "end": 2530
+            },
+            {
+                "name": "xml_display_farcry_player_info",
+                "start": 2532,
+                "end": 2551
+            },
+            {
+                "name": "xml_display_tee_player_info",
+                "start": 2553,
+                "end": 2571
+            },
+            {
+                "name": "display_progress",
+                "start": 2574,
+                "end": 2608
+            },
+            {
+                "name": "print_version",
+                "start": 2637,
+                "end": 2640
+            },
+            {
+                "name": "usage",
+                "start": 2645,
+                "end": 2751
+            },
+            {
+                "name": "find_server_type_id",
+                "start": 2762,
+                "end": 2771
+            },
+            {
+                "name": "find_server_type_string",
+                "start": 2773,
+                "end": 2788
+            },
+            {
+                "name": "find_server_type_option",
+                "start": 2790,
+                "end": 2799
+            },
+            {
+                "name": "parse_server_type_option",
+                "start": 2801,
+                "end": 2864
+            },
+            {
+                "name": "add_server_arg",
+                "start": 2866,
+                "end": 2888
+            },
+            {
+                "name": "add_query_param",
+                "start": 2891,
+                "end": 2906
+            },
+            {
+                "name": "get_param_value",
+                "start": 2908,
+                "end": 2916
+            },
+            {
+                "name": "get_param_i_value",
+                "start": 2918,
+                "end": 2926
+            },
+            {
+                "name": "get_param_ui_value",
+                "start": 2928,
+                "end": 2936
+            },
+            {
+                "name": "parse_source_address",
+                "start": 2938,
+                "end": 2968
+            },
+            {
+                "name": "parse_source_port",
+                "start": 2970,
+                "end": 2991
+            },
+            {
+                "name": "add_config_server_types",
+                "start": 2993,
+                "end": 3021
+            },
+            {
+                "name": "revert_server_types",
+                "start": 3023,
+                "end": 3031
+            },
+            {
+                "name": "do_work",
+                "start": 3102,
+                "end": 3303
+            },
+            {
+                "name": "main",
+                "start": 3305,
+                "end": 3995
+            },
+            {
+                "name": "finish_output",
+                "start": 3997,
+                "end": 4068
+            },
+            {
+                "name": "add_file",
+                "start": 4071,
+                "end": 4128
+            },
+            {
+                "name": "print_file_location",
+                "start": 4130,
+                "end": 4136
+            },
+            {
+                "name": "parse_query_params",
+                "start": 4138,
+                "end": 4162
+            },
+            {
+                "name": "add_qserver",
+                "start": 4164,
+                "end": 4351
+            },
+            {
+                "name": "add_qserver_byaddr",
+                "start": 4353,
+                "end": 4429
+            },
+            {
+                "name": "add_servers_from_masters",
+                "start": 4431,
+                "end": 4533
+            },
+            {
+                "name": "init_qserver",
+                "start": 4535,
+                "end": 4582
+            },
+            {
+                "name": "find_server_by_address",
+                "start": 4588,
+                "end": 4618
+            },
+            {
+                "name": "add_server_to_hash",
+                "start": 4620,
+                "end": 4632
+            },
+            {
+                "name": "remove_server_from_hash",
+                "start": 4634,
+                "end": 4651
+            },
+            {
+                "name": "free_server_hash",
+                "start": 4653,
+                "end": 4663
+            },
+            {
+                "name": "bind_qserver_post",
+                "start": 4669,
+                "end": 4721
+            },
+            {
+                "name": "add_ms_to_timeval",
+                "start": 4723,
+                "end": 4732
+            },
+            {
+                "name": "qserver_sockaddr",
+                "start": 4734,
+                "end": 4742
+            },
+            {
+                "name": "connected_qserver",
+                "start": 4745,
+                "end": 4856
+            },
+            {
+                "name": "bind_qserver2",
+                "start": 4858,
+                "end": 4995
+            },
+            {
+                "name": "bind_qserver",
+                "start": 4998,
+                "end": 5001
+            },
+            {
+                "name": "bind_sockets",
+                "start": 5005,
+                "end": 5134
+            },
+            {
+                "name": "process_func_ret",
+                "start": 5136,
+                "end": 5161
+            },
+            {
+                "name": "send_packets",
+                "start": 5168,
+                "end": 5311
+            },
+            {
+                "name": "send_bfris_request_packet",
+                "start": 5314,
+                "end": 5317
+            },
+            {
+                "name": "send_qserver_request_packet",
+                "start": 5322,
+                "end": 5325
+            },
+            {
+                "name": "send_qwserver_request_packet",
+                "start": 5329,
+                "end": 5372
+            },
+            {
+                "name": "send_ut2003_request_packet",
+                "start": 5375,
+                "end": 5381
+            },
+            {
+                "name": "send_hl2_request_packet",
+                "start": 5384,
+                "end": 5387
+            },
+            {
+                "name": "send_unrealmaster_request_packet",
+                "start": 5391,
+                "end": 5394
+            },
+            {
+                "name": "build_hlmaster_packet",
+                "start": 5401,
+                "end": 5517
+            },
+            {
+                "name": "send_qwmaster_request_packet",
+                "start": 5521,
+                "end": 5632
+            },
+            {
+                "name": "send_tribes_request_packet",
+                "start": 5635,
+                "end": 5638
+            },
+            {
+                "name": "send_tribes2_request_packet",
+                "start": 5640,
+                "end": 5665
+            },
+            {
+                "name": "send_savage_request_packet",
+                "start": 5667,
+                "end": 5684
+            },
+            {
+                "name": "send_farcry_request_packet",
+                "start": 5686,
+                "end": 5703
+            },
+            {
+                "name": "send_tribes2master_request_packet",
+                "start": 5705,
+                "end": 5926
+            },
+            {
+                "name": "send_gamespy_master_request",
+                "start": 5948,
+                "end": 6008
+            },
+            {
+                "name": "send_rule_request_packet",
+                "start": 6010,
+                "end": 6064
+            },
+            {
+                "name": "send_player_request_packet",
+                "start": 6066,
+                "end": 6121
+            },
+            {
+                "name": "qserver_disconnect",
+                "start": 6123,
+                "end": 6146
+            },
+            {
+                "name": "cleanup_qserver",
+                "start": 6151,
+                "end": 6229
+            },
+            {
+                "name": "qserver_get_timeout",
+                "start": 6234,
+                "end": 6262
+            },
+            {
+                "name": "get_next_timeout",
+                "start": 6264,
+                "end": 6314
+            },
+            {
+                "name": "set_file_descriptors",
+                "start": 6383,
+                "end": 6404
+            },
+            {
+                "name": "wait_for_file_descriptors",
+                "start": 6406,
+                "end": 6410
+            },
+            {
+                "name": "get_next_ready_server",
+                "start": 6412,
+                "end": 6427
+            },
+            {
+                "name": "wait_for_timeout",
+                "start": 6429,
+                "end": 6432
+            },
+            {
+                "name": "free_server",
+                "start": 6437,
+                "end": 6559
+            },
+            {
+                "name": "free_player",
+                "start": 6561,
+                "end": 6592
+            },
+            {
+                "name": "free_rule",
+                "start": 6594,
+                "end": 6606
+            },
+            {
+                "name": "deal_with_q_packet",
+                "start": 6613,
+                "end": 6659
+            },
+            {
+                "name": "deal_with_qw_packet",
+                "start": 6664,
+                "end": 6793
+            },
+            {
+                "name": "deal_with_q1qw_packet",
+                "start": 6795,
+                "end": 7022
+            },
+            {
+                "name": "deal_with_q2_packet",
+                "start": 7024,
+                "end": 7282
+            },
+            {
+                "name": "ack_descent3master_packet",
+                "start": 7284,
+                "end": 7299
+            },
+            {
+                "name": "deal_with_descent3master_packet",
+                "start": 7303,
+                "end": 7346
+            },
+            {
+                "name": "deal_with_qwmaster_packet",
+                "start": 7350,
+                "end": 7508
+            },
+            {
+                "name": "decode_q3master_packet",
+                "start": 7510,
+                "end": 7551
+            },
+            {
+                "name": "decode_stefmaster_packet",
+                "start": 7553,
+                "end": 7582
+            },
+            {
+                "name": "deal_with_tribesmaster_packet",
+                "start": 7586,
+                "end": 7696
+            },
+            {
+                "name": "display_tribes2_string_list",
+                "start": 7698,
+                "end": 7727
+            },
+            {
+                "name": "deal_with_tribes2master_packet",
+                "start": 7729,
+                "end": 7806
+            },
+            {
+                "name": "server_info_packet",
+                "start": 7808,
+                "end": 7856
+            },
+            {
+                "name": "player_info_packet",
+                "start": 7858,
+                "end": 7940
+            },
+            {
+                "name": "rule_info_packet",
+                "start": 7942,
+                "end": 8009
+            },
+            {
+                "name": "player_add_info",
+                "start": 8011,
+                "end": 8102
+            },
+            {
+                "name": "add_rule",
+                "start": 8104,
+                "end": 8189
+            },
+            {
+                "name": "add_nrule",
+                "start": 8191,
+                "end": 8207
+            },
+            {
+                "name": "add_player",
+                "start": 8209,
+                "end": 8234
+            },
+            {
+                "name": "get_player_by_number",
+                "start": 8236,
+                "end": 8244
+            },
+            {
+                "name": "change_server_port",
+                "start": 8250,
+                "end": 8301
+            },
+            {
+                "name": "players_set_teamname",
+                "start": 8303,
+                "end": 8313
+            },
+            {
+                "name": "dup_nstring",
+                "start": 8315,
+                "end": 8331
+            },
+            {
+                "name": "dup_n1string",
+                "start": 8333,
+                "end": 8351
+            },
+            {
+                "name": "pariah_basic_packet",
+                "start": 8353,
+                "end": 8405
+            },
+            {
+                "name": "ut2003_basic_packet",
+                "start": 8407,
+                "end": 8460
+            },
+            {
+                "name": "pariah_rule_packet",
+                "start": 8462,
+                "end": 8511
+            },
+            {
+                "name": "ut2003_rule_packet",
+                "start": 8513,
+                "end": 8548
+            },
+            {
+                "name": "ut2003_strdup",
+                "start": 8550,
+                "end": 8619
+            },
+            {
+                "name": "pariah_player_packet",
+                "start": 8622,
+                "end": 8672
+            },
+            {
+                "name": "ut2003_player_packet",
+                "start": 8674,
+                "end": 8798
+            },
+            {
+                "name": "get_rule",
+                "start": 8801,
+                "end": 8814
+            },
+            {
+                "name": "deal_with_ut2003_packet",
+                "start": 8816,
+                "end": 8950
+            },
+            {
+                "name": "deal_with_unrealmaster_packet",
+                "start": 8952,
+                "end": 8963
+            },
+            {
+                "name": "deal_with_halflife_packet",
+                "start": 8967,
+                "end": 9244
+            },
+            {
+                "name": "deal_with_tribes_packet",
+                "start": 9247,
+                "end": 9427
+            },
+            {
+                "name": "get_tribes2_player_type",
+                "start": 9429,
+                "end": 9464
+            },
+            {
+                "name": "deal_with_tribes2_packet",
+                "start": 9466,
+                "end": 9759
+            },
+            {
+                "name": "deal_with_ghostrecon_packet",
+                "start": 9787,
+                "end": 10388
+            },
+            {
+                "name": "find_ravenshield_game",
+                "start": 10390,
+                "end": 10415
+            },
+            {
+                "name": "find_savage_game",
+                "start": 10417,
+                "end": 10427
+            },
+            {
+                "name": "deal_with_ravenshield_packet",
+                "start": 10429,
+                "end": 10793
+            },
+            {
+                "name": "deal_with_savage_packet",
+                "start": 10795,
+                "end": 10978
+            },
+            {
+                "name": "deal_with_farcry_packet",
+                "start": 10980,
+                "end": 11163
+            },
+            {
+                "name": "deal_with_bfris_packet",
+                "start": 11168,
+                "end": 11387
+            },
+            {
+                "name": "add_uchar_rule",
+                "start": 11389,
+                "end": 11394
+            },
+            {
+                "name": "deal_with_descent3_packet",
+                "start": 11396,
+                "end": 11509
+            },
+            {
+                "name": "deal_with_eye_packet",
+                "start": 11519,
+                "end": 11780
+            },
+            {
+                "name": "deal_with_hl2_packet",
+                "start": 11789,
+                "end": 12021
+            },
+            {
+                "name": "deal_with_gamespy_master_response",
+                "start": 12023,
+                "end": 12116
+            },
+            {
+                "name": "strndup",
+                "start": 12121,
+                "end": 12128
+            },
+            {
+                "name": "swap_long",
+                "start": 12130,
+                "end": 12134
+            },
+            {
+                "name": "swap_short",
+                "start": 12136,
+                "end": 12140
+            },
+            {
+                "name": "swap_long_from_little",
+                "start": 12142,
+                "end": 12155
+            },
+            {
+                "name": "swap_float_from_little",
+                "start": 12157,
+                "end": 12167
+            },
+            {
+                "name": "swap_short_from_little",
+                "start": 12169,
+                "end": 12182
+            },
+            {
+                "name": "put_long_little",
+                "start": 12185,
+                "end": 12191
+            },
+            {
+                "name": "xml_escape",
+                "start": 12195,
+                "end": 12408
+            },
+            {
+                "name": "is_default_rule",
+                "start": 12411,
+                "end": 12441
+            },
+            {
+                "name": "strherror",
+                "start": 12443,
+                "end": 12460
+            },
+            {
+                "name": "time_delta",
+                "start": 12462,
+                "end": 12470
+            },
+            {
+                "name": "connection_inprogress",
+                "start": 12472,
+                "end": 12479
+            },
+            {
+                "name": "connection_refused",
+                "start": 12481,
+                "end": 12488
+            },
+            {
+                "name": "connection_would_block",
+                "start": 12490,
+                "end": 12497
+            },
+            {
+                "name": "connection_reset",
+                "start": 12499,
+                "end": 12506
+            },
+            {
+                "name": "clear_socketerror",
+                "start": 12508,
+                "end": 12515
+            },
+            {
+                "name": "set_non_blocking",
+                "start": 12517,
+                "end": 12529
+            },
+            {
+                "name": "quake_color",
+                "start": 12531,
+                "end": 12593
+            },
+            {
+                "name": "play_time",
+                "start": 12603,
+                "end": 12654
+            },
+            {
+                "name": "ping_time",
+                "start": 12656,
+                "end": 12672
+            },
+            {
+                "name": "count_bits",
+                "start": 12674,
+                "end": 12683
+            },
+            {
+                "name": "strcmp_withnull",
+                "start": 12685,
+                "end": 12700
+            },
+            {
+                "name": "sort_servers",
+                "start": 12706,
+                "end": 12709
+            },
+            {
+                "name": "sort_players",
+                "start": 12711,
+                "end": 12757
+            },
+            {
+                "name": "server_compare",
+                "start": 12759,
+                "end": 12827
+            },
+            {
+                "name": "type_option_compare",
+                "start": 12829,
+                "end": 12832
+            },
+            {
+                "name": "type_string_compare",
+                "start": 12834,
+                "end": 12837
+            },
+            {
+                "name": "player_compare",
+                "start": 12839,
+                "end": 12893
+            },
+            {
+                "name": "quicksort",
+                "start": 12895,
+                "end": 12905
+            },
+            {
+                "name": "qpartition",
+                "start": 12907,
+                "end": 12966
+            }
+        ],
+        "starmade.c": [
+            {
+                "name": "send_starmade_request_packet",
+                "start": 41,
+                "end": 63
+            },
+            {
+                "name": "starmade_read_parameter",
+                "start": 65,
+                "end": 156
+            },
+            {
+                "name": "deal_with_starmade_packet",
+                "start": 158,
+                "end": 237
+            }
+        ]
+    }
+}

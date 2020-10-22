@@ -1,0 +1,1741 @@
+{
+    "rdd-2.0.7": {
+        "src/reader.h": [
+            {
+                "name": "rdd_reader_read",
+                "start": 196,
+                "end": 197
+            }
+        ],
+        "src/atomicreader.c": [
+            {
+                "name": "rdd_atomic_read",
+                "start": 59,
+                "end": 60
+            },
+            {
+                "name": "rdd_open_atomic_reader",
+                "start": 72,
+                "end": 89
+            },
+            {
+                "name": "rdd_atomic_read",
+                "start": 91,
+                "end": 118
+            },
+            {
+                "name": "rdd_atomic_tell",
+                "start": 120,
+                "end": 126
+            },
+            {
+                "name": "rdd_atomic_seek",
+                "start": 128,
+                "end": 134
+            },
+            {
+                "name": "rdd_atomic_close",
+                "start": 136,
+                "end": 146
+            }
+        ],
+        "src/rdd_internals.h": [
+            {
+                "name": "rdd_buf2hex",
+                "start": 64,
+                "end": 65
+            }
+        ],
+        "src/writer.h": [
+            {
+                "name": "rdd_open_safe_writer",
+                "start": 174,
+                "end": 175
+            },
+            {
+                "name": "rdd_open_part_writer",
+                "start": 195,
+                "end": 197
+            }
+        ],
+        "src/filter.h": [
+            {
+                "name": "rdd_new_filter",
+                "start": 89,
+                "end": 90
+            },
+            {
+                "name": "rdd_new_md5_blockfilter",
+                "start": 98,
+                "end": 99
+            },
+            {
+                "name": "rdd_new_stats_blockfilter",
+                "start": 101,
+                "end": 102
+            },
+            {
+                "name": "rdd_new_adler32_blockfilter",
+                "start": 104,
+                "end": 105
+            },
+            {
+                "name": "rdd_new_crc32_blockfilter",
+                "start": 107,
+                "end": 108
+            },
+            {
+                "name": "rdd_new_verify_adler32_blockfilter",
+                "start": 110,
+                "end": 111
+            },
+            {
+                "name": "rdd_new_verify_crc32_blockfilter",
+                "start": 113,
+                "end": 114
+            }
+        ],
+        "src/verifyblockfilter.c": [
+            {
+                "name": "verify_input",
+                "start": 77,
+                "end": 78
+            },
+            {
+                "name": "reset_checksum",
+                "start": 90,
+                "end": 101
+            },
+            {
+                "name": "verify_input",
+                "start": 103,
+                "end": 118
+            },
+            {
+                "name": "swap32",
+                "start": 120,
+                "end": 129
+            },
+            {
+                "name": "read_chksum",
+                "start": 131,
+                "end": 144
+            },
+            {
+                "name": "verify_checksum",
+                "start": 146,
+                "end": 163
+            },
+            {
+                "name": "verify_block",
+                "start": 165,
+                "end": 183
+            },
+            {
+                "name": "verify_get_result",
+                "start": 185,
+                "end": 197
+            },
+            {
+                "name": "new_verify_checksum_blockfilter",
+                "start": 199,
+                "end": 237
+            },
+            {
+                "name": "rdd_new_verify_adler32_blockfilter",
+                "start": 239,
+                "end": 246
+            },
+            {
+                "name": "rdd_new_verify_crc32_blockfilter",
+                "start": 248,
+                "end": 255
+            }
+        ],
+        "src/rawreader.c": [
+            {
+                "name": "rdd_raw_read",
+                "start": 62,
+                "end": 63
+            },
+            {
+                "name": "rdd_open_raw_reader",
+                "start": 75,
+                "end": 92
+            },
+            {
+                "name": "rdd_raw_read",
+                "start": 94,
+                "end": 164
+            },
+            {
+                "name": "rdd_raw_tell",
+                "start": 166,
+                "end": 178
+            },
+            {
+                "name": "rdd_raw_seek",
+                "start": 180,
+                "end": 189
+            },
+            {
+                "name": "rdd_raw_close",
+                "start": 191,
+                "end": 201
+            }
+        ],
+        "src/faultyreader.c": [
+            {
+                "name": "rdd_faulty_read",
+                "start": 75,
+                "end": 76
+            },
+            {
+                "name": "uniform_random",
+                "start": 90,
+                "end": 94
+            },
+            {
+                "name": "fault_compare",
+                "start": 107,
+                "end": 120
+            },
+            {
+                "name": "fault_init",
+                "start": 122,
+                "end": 133
+            },
+            {
+                "name": "read_faults",
+                "start": 137,
+                "end": 165
+            },
+            {
+                "name": "rdd_open_faulty_reader",
+                "start": 169,
+                "end": 211
+            },
+            {
+                "name": "rdd_faulty_read",
+                "start": 229,
+                "end": 268
+            },
+            {
+                "name": "rdd_faulty_tell",
+                "start": 270,
+                "end": 276
+            },
+            {
+                "name": "rdd_faulty_seek",
+                "start": 278,
+                "end": 284
+            },
+            {
+                "name": "rdd_faulty_close",
+                "start": 286,
+                "end": 296
+            }
+        ],
+        "src/strerror.c": [
+            {
+                "name": "copymsg",
+                "start": 42,
+                "end": 51
+            },
+            {
+                "name": "get_message",
+                "start": 53,
+                "end": 96
+            },
+            {
+                "name": "rdd_strerror",
+                "start": 98,
+                "end": 108
+            }
+        ],
+        "src/msgprinter.h": [
+            {
+                "name": "rdd_mp_open_printer",
+                "start": 137,
+                "end": 138
+            },
+            {
+                "name": "rdd_mp_open_bcast_printer",
+                "start": 146,
+                "end": 147
+            },
+            {
+                "name": "rdd_mp_print",
+                "start": 179,
+                "end": 180
+            },
+            {
+                "name": "rdd_mp_vmessage",
+                "start": 184,
+                "end": 185
+            },
+            {
+                "name": "rdd_mp_message",
+                "start": 189,
+                "end": 190
+            },
+            {
+                "name": "rdd_mp_unixmsg",
+                "start": 198,
+                "end": 199
+            },
+            {
+                "name": "rdd_mp_vrddmsg",
+                "start": 207,
+                "end": 208
+            },
+            {
+                "name": "rdd_mp_rddmsg",
+                "start": 216,
+                "end": 217
+            }
+        ],
+        "src/fileprinter.c": [
+            {
+                "name": "file_print",
+                "start": 49,
+                "end": 50
+            },
+            {
+                "name": "rdd_mp_open_file_printer",
+                "start": 58,
+                "end": 101
+            },
+            {
+                "name": "file_print",
+                "start": 103,
+                "end": 110
+            },
+            {
+                "name": "file_close",
+                "start": 112,
+                "end": 147
+            }
+        ],
+        "src/numparser.h": [
+            {
+                "name": "rdd_parse_bignum",
+                "start": 42,
+                "end": 43
+            }
+        ],
+        "src/commandline.h": [
+            {
+                "name": "rdd_get_opt_with_arg",
+                "start": 54,
+                "end": 55
+            }
+        ],
+        "src/copier.h": [
+            {
+                "name": "rdd_new_robust_copier",
+                "start": 164,
+                "end": 166
+            },
+            {
+                "name": "rdd_copy_exec",
+                "start": 185,
+                "end": 186
+            }
+        ],
+        "src/netio.h": [
+            {
+                "name": "rdd_init_server",
+                "start": 42,
+                "end": 43
+            },
+            {
+                "name": "rdd_await_connection",
+                "start": 45,
+                "end": 46
+            },
+            {
+                "name": "rdd_recv_info",
+                "start": 48,
+                "end": 50
+            },
+            {
+                "name": "rdd_send_info",
+                "start": 52,
+                "end": 56
+            }
+        ],
+        "src/rddcopy.c": [
+            {
+                "name": "fatal_rdd_error",
+                "start": 224,
+                "end": 233
+            },
+            {
+                "name": "logmsg",
+                "start": 235,
+                "end": 243
+            },
+            {
+                "name": "scan_size",
+                "start": 247,
+                "end": 257
+            },
+            {
+                "name": "scan_uint",
+                "start": 259,
+                "end": 269
+            },
+            {
+                "name": "scan_tcp_port",
+                "start": 271,
+                "end": 281
+            },
+            {
+                "name": "init_options",
+                "start": 283,
+                "end": 298
+            },
+            {
+                "name": "split_host_file",
+                "start": 303,
+                "end": 340
+            },
+            {
+                "name": "process_options",
+                "start": 342,
+                "end": 453
+            },
+            {
+                "name": "command_line",
+                "start": 455,
+                "end": 556
+            },
+            {
+                "name": "open_disk_input",
+                "start": 558,
+                "end": 593
+            },
+            {
+                "name": "open_net_input",
+                "start": 595,
+                "end": 654
+            },
+            {
+                "name": "open_input",
+                "start": 658,
+                "end": 666
+            },
+            {
+                "name": "open_disk_output",
+                "start": 668,
+                "end": 702
+            },
+            {
+                "name": "open_net_output",
+                "start": 704,
+                "end": 738
+            },
+            {
+                "name": "open_output",
+                "start": 743,
+                "end": 751
+            },
+            {
+                "name": "open_logfile",
+                "start": 753,
+                "end": 795
+            },
+            {
+                "name": "close_printer",
+                "start": 797,
+                "end": 813
+            },
+            {
+                "name": "log_header",
+                "start": 818,
+                "end": 856
+            },
+            {
+                "name": "log_params",
+                "start": 858,
+                "end": 897
+            },
+            {
+                "name": "handle_read_error",
+                "start": 899,
+                "end": 904
+            },
+            {
+                "name": "handle_substitution",
+                "start": 906,
+                "end": 911
+            },
+            {
+                "name": "handle_progress",
+                "start": 913,
+                "end": 970
+            },
+            {
+                "name": "add_filter",
+                "start": 972,
+                "end": 980
+            },
+            {
+                "name": "install_filters",
+                "start": 982,
+                "end": 1055
+            },
+            {
+                "name": "create_copier",
+                "start": 1057,
+                "end": 1127
+            },
+            {
+                "name": "log_hash_result",
+                "start": 1129,
+                "end": 1159
+            },
+            {
+                "name": "main",
+                "start": 1161,
+                "end": 1285
+            }
+        ],
+        "src/outfile.c": [
+            {
+                "name": "path_exists",
+                "start": 58,
+                "end": 62
+            },
+            {
+                "name": "outfile_open",
+                "start": 68,
+                "end": 94
+            },
+            {
+                "name": "outfile_fopen",
+                "start": 96,
+                "end": 113
+            },
+            {
+                "name": "outfile_close",
+                "start": 117,
+                "end": 137
+            },
+            {
+                "name": "outfile_fclose",
+                "start": 139,
+                "end": 155
+            }
+        ],
+        "src/writestreamfilter.c": [
+            {
+                "name": "rdd_new_write_streamfilter",
+                "start": 76,
+                "end": 93
+            },
+            {
+                "name": "write_input",
+                "start": 95,
+                "end": 101
+            },
+            {
+                "name": "write_close",
+                "start": 103,
+                "end": 107
+            }
+        ],
+        "src/md5.c": [
+            {
+                "name": "MD5_Init",
+                "start": 165,
+                "end": 175
+            },
+            {
+                "name": "MD5_Update",
+                "start": 182,
+                "end": 214
+            },
+            {
+                "name": "MD5_Final",
+                "start": 220,
+                "end": 242
+            },
+            {
+                "name": "MD5Transform",
+                "start": 247,
+                "end": 341
+            },
+            {
+                "name": "Encode",
+                "start": 347,
+                "end": 358
+            },
+            {
+                "name": "Decode",
+                "start": 364,
+                "end": 373
+            }
+        ],
+        "src/logprinter.c": [
+            {
+                "name": "log_print",
+                "start": 52,
+                "end": 53
+            },
+            {
+                "name": "rdd_mp_open_log_printer",
+                "start": 61,
+                "end": 78
+            },
+            {
+                "name": "log_print",
+                "start": 80,
+                "end": 110
+            },
+            {
+                "name": "log_close",
+                "start": 112,
+                "end": 126
+            }
+        ],
+        "src/stdioprinter.c": [
+            {
+                "name": "stdio_print",
+                "start": 47,
+                "end": 48
+            },
+            {
+                "name": "rdd_mp_open_stdio_printer",
+                "start": 56,
+                "end": 73
+            },
+            {
+                "name": "stdio_print",
+                "start": 75,
+                "end": 82
+            },
+            {
+                "name": "stdio_close",
+                "start": 84,
+                "end": 91
+            }
+        ],
+        "src/console.c": [
+            {
+                "name": "rdd_set_quiet",
+                "start": 53,
+                "end": 57
+            },
+            {
+                "name": "cons_write",
+                "start": 60,
+                "end": 78
+            },
+            {
+                "name": "rdd_cons_open",
+                "start": 80,
+                "end": 88
+            },
+            {
+                "name": "rdd_cons_close",
+                "start": 90,
+                "end": 99
+            },
+            {
+                "name": "rdd_vask",
+                "start": 104,
+                "end": 139
+            },
+            {
+                "name": "rdd_ask",
+                "start": 141,
+                "end": 151
+            },
+            {
+                "name": "rdd_quit_if",
+                "start": 153,
+                "end": 163
+            },
+            {
+                "name": "rdd_cons_vprintf",
+                "start": 168,
+                "end": 182
+            },
+            {
+                "name": "rdd_cons_printf",
+                "start": 184,
+                "end": 194
+            }
+        ],
+        "src/cdromreader.c": [
+            {
+                "name": "rdd_cdrom_read",
+                "start": 61,
+                "end": 62
+            },
+            {
+                "name": "rdd_open_cdrom_reader",
+                "start": 74,
+                "end": 103
+            },
+            {
+                "name": "rdd_cdrom_read",
+                "start": 105,
+                "end": 149
+            },
+            {
+                "name": "rdd_cdrom_tell",
+                "start": 151,
+                "end": 158
+            },
+            {
+                "name": "rdd_cdrom_seek",
+                "start": 160,
+                "end": 168
+            },
+            {
+                "name": "rdd_cdrom_close",
+                "start": 170,
+                "end": 174
+            }
+        ],
+        "src/simplecopier.c": [
+            {
+                "name": "simple_exec",
+                "start": 67,
+                "end": 68
+            },
+            {
+                "name": "rdd_new_simple_copier",
+                "start": 75,
+                "end": 100
+            },
+            {
+                "name": "simple_exec",
+                "start": 102,
+                "end": 158
+            }
+        ],
+        "src/filewriter.c": [
+            {
+                "name": "rdd_open_file_writer",
+                "start": 54,
+                "end": 64
+            }
+        ],
+        "src/checksumblockfilter.c": [
+            {
+                "name": "checksum_input",
+                "start": 73,
+                "end": 74
+            },
+            {
+                "name": "reset_checksum",
+                "start": 87,
+                "end": 98
+            },
+            {
+                "name": "init_header",
+                "start": 100,
+                "end": 113
+            },
+            {
+                "name": "checksum_input",
+                "start": 115,
+                "end": 130
+            },
+            {
+                "name": "checksum_block",
+                "start": 132,
+                "end": 144
+            },
+            {
+                "name": "checksum_close",
+                "start": 146,
+                "end": 155
+            },
+            {
+                "name": "checksum_free",
+                "start": 157,
+                "end": 166
+            },
+            {
+                "name": "new_checksum_blockfilter",
+                "start": 168,
+                "end": 220
+            },
+            {
+                "name": "rdd_new_adler32_blockfilter",
+                "start": 222,
+                "end": 228
+            },
+            {
+                "name": "rdd_new_crc32_blockfilter",
+                "start": 230,
+                "end": 236
+            }
+        ],
+        "src/statsblockfilter.c": [
+            {
+                "name": "stats_input",
+                "start": 67,
+                "end": 68
+            },
+            {
+                "name": "rdd_new_stats_blockfilter",
+                "start": 82,
+                "end": 125
+            },
+            {
+                "name": "compute_histogram_stats",
+                "start": 133,
+                "end": 162
+            },
+            {
+                "name": "stats_input",
+                "start": 167,
+                "end": 183
+            },
+            {
+                "name": "stats_block",
+                "start": 188,
+                "end": 210
+            },
+            {
+                "name": "stats_close",
+                "start": 212,
+                "end": 224
+            },
+            {
+                "name": "stats_free",
+                "start": 226,
+                "end": 234
+            }
+        ],
+        "src/numparser.c": [
+            {
+                "name": "rdd_parse_bignum",
+                "start": 71,
+                "end": 127
+            },
+            {
+                "name": "rdd_parse_uint",
+                "start": 132,
+                "end": 148
+            },
+            {
+                "name": "rdd_parse_tcp_port",
+                "start": 150,
+                "end": 164
+            }
+        ],
+        "src/rdd_internals.c": [
+            {
+                "name": "check_type_sizes",
+                "start": 65,
+                "end": 86
+            },
+            {
+                "name": "rdd_init",
+                "start": 88,
+                "end": 92
+            },
+            {
+                "name": "rdd_malloc",
+                "start": 96,
+                "end": 106
+            },
+            {
+                "name": "rdd_free",
+                "start": 108,
+                "end": 112
+            },
+            {
+                "name": "rdd_buf2hex",
+                "start": 114,
+                "end": 135
+            },
+            {
+                "name": "rdd_ctime",
+                "start": 137,
+                "end": 158
+            },
+            {
+                "name": "rdd_gettime",
+                "start": 160,
+                "end": 170
+            },
+            {
+                "name": "rdd_strsize",
+                "start": 172,
+                "end": 189
+            },
+            {
+                "name": "signal_exit",
+                "start": 191,
+                "end": 201
+            },
+            {
+                "name": "set_signal_handler",
+                "start": 203,
+                "end": 215
+            },
+            {
+                "name": "rdd_catch_signals",
+                "start": 217,
+                "end": 240
+            },
+            {
+                "name": "rdd_device_size",
+                "start": 242,
+                "end": 281
+            }
+        ],
+        "src/fdwriter.c": [
+            {
+                "name": "rdd_open_fd_writer",
+                "start": 57,
+                "end": 73
+            },
+            {
+                "name": "fd_write",
+                "start": 77,
+                "end": 99
+            },
+            {
+                "name": "fd_close",
+                "start": 101,
+                "end": 112
+            }
+        ],
+        "src/zlibwriter.c": [
+            {
+                "name": "rdd_open_zlib_writer",
+                "start": 80,
+                "end": 129
+            },
+            {
+                "name": "flush",
+                "start": 134,
+                "end": 150
+            },
+            {
+                "name": "zlib_write",
+                "start": 154,
+                "end": 178
+            },
+            {
+                "name": "zlib_close",
+                "start": 180,
+                "end": 221
+            }
+        ],
+        "src/copier.c": [
+            {
+                "name": "rdd_new_copier",
+                "start": 48,
+                "end": 76
+            },
+            {
+                "name": "rdd_copy_exec",
+                "start": 78,
+                "end": 85
+            },
+            {
+                "name": "rdd_copy_free",
+                "start": 87,
+                "end": 105
+            }
+        ],
+        "src/filter.c": [
+            {
+                "name": "rdd_new_filter",
+                "start": 56,
+                "end": 91
+            },
+            {
+                "name": "stream_filter_push",
+                "start": 93,
+                "end": 99
+            },
+            {
+                "name": "block_filter_push",
+                "start": 101,
+                "end": 135
+            },
+            {
+                "name": "rdd_filter_push",
+                "start": 143,
+                "end": 152
+            },
+            {
+                "name": "rdd_filter_close",
+                "start": 154,
+                "end": 173
+            },
+            {
+                "name": "rdd_filter_get_result",
+                "start": 175,
+                "end": 185
+            },
+            {
+                "name": "rdd_filter_free",
+                "start": 187,
+                "end": 205
+            }
+        ],
+        "src/sha1streamfilter.c": [
+            {
+                "name": "rdd_new_sha1_streamfilter",
+                "start": 76,
+                "end": 93
+            },
+            {
+                "name": "sha1_input",
+                "start": 95,
+                "end": 103
+            },
+            {
+                "name": "sha1_close",
+                "start": 105,
+                "end": 113
+            },
+            {
+                "name": "sha1_get_result",
+                "start": 115,
+                "end": 125
+            }
+        ],
+        "src/md5streamfilter.c": [
+            {
+                "name": "rdd_new_md5_streamfilter",
+                "start": 76,
+                "end": 93
+            },
+            {
+                "name": "md5_input",
+                "start": 95,
+                "end": 103
+            },
+            {
+                "name": "md5_close",
+                "start": 105,
+                "end": 113
+            },
+            {
+                "name": "md5_get_result",
+                "start": 115,
+                "end": 125
+            }
+        ],
+        "src/error.c": [
+            {
+                "name": "log_vprintf",
+                "start": 78,
+                "end": 110
+            },
+            {
+                "name": "log_printf",
+                "start": 112,
+                "end": 120
+            },
+            {
+                "name": "log_flush",
+                "start": 122,
+                "end": 126
+            },
+            {
+                "name": "set_progname",
+                "start": 128,
+                "end": 132
+            },
+            {
+                "name": "set_logfile",
+                "start": 134,
+                "end": 141
+            },
+            {
+                "name": "bug",
+                "start": 143,
+                "end": 156
+            },
+            {
+                "name": "error",
+                "start": 158,
+                "end": 170
+            },
+            {
+                "name": "warn",
+                "start": 172,
+                "end": 183
+            },
+            {
+                "name": "unix_warn",
+                "start": 185,
+                "end": 197
+            },
+            {
+                "name": "unix_error",
+                "start": 199,
+                "end": 212
+            },
+            {
+                "name": "errlog",
+                "start": 214,
+                "end": 226
+            },
+            {
+                "name": "errlognl",
+                "start": 228,
+                "end": 242
+            },
+            {
+                "name": "rdd_error",
+                "start": 244,
+                "end": 272
+            }
+        ],
+        "src/robustcopier.c": [
+            {
+                "name": "robust_exec",
+                "start": 102,
+                "end": 104
+            },
+            {
+                "name": "rdd_new_robust_copier",
+                "start": 112,
+                "end": 182
+            },
+            {
+                "name": "handle_eof",
+                "start": 184,
+                "end": 194
+            },
+            {
+                "name": "handle_read_ok",
+                "start": 196,
+                "end": 248
+            },
+            {
+                "name": "handle_read_error",
+                "start": 256,
+                "end": 308
+            },
+            {
+                "name": "robust_exec",
+                "start": 328,
+                "end": 461
+            },
+            {
+                "name": "robust_free",
+                "start": 463,
+                "end": 469
+            }
+        ],
+        "src/partwriter.c": [
+            {
+                "name": "count_digits",
+                "start": 96,
+                "end": 113
+            },
+            {
+                "name": "open_next_part",
+                "start": 119,
+                "end": 157
+            },
+            {
+                "name": "rdd_open_part_writer",
+                "start": 159,
+                "end": 213
+            },
+            {
+                "name": "part_write",
+                "start": 215,
+                "end": 255
+            },
+            {
+                "name": "part_close",
+                "start": 257,
+                "end": 275
+            }
+        ],
+        "src/tcpwriter.c": [
+            {
+                "name": "rdd_open_tcp_writer",
+                "start": 56,
+                "end": 79
+            }
+        ],
+        "src/reader.c": [
+            {
+                "name": "rdd_new_reader",
+                "start": 49,
+                "end": 78
+            },
+            {
+                "name": "rdd_reader_read",
+                "start": 80,
+                "end": 85
+            },
+            {
+                "name": "rdd_reader_tell",
+                "start": 87,
+                "end": 91
+            },
+            {
+                "name": "rdd_reader_seek",
+                "start": 93,
+                "end": 97
+            },
+            {
+                "name": "rdd_reader_skip",
+                "start": 99,
+                "end": 114
+            },
+            {
+                "name": "rdd_reader_close",
+                "start": 116,
+                "end": 130
+            }
+        ],
+        "src/filereader.c": [
+            {
+                "name": "rdd_open_file_reader",
+                "start": 49,
+                "end": 63
+            }
+        ],
+        "src/zlibreader.c": [
+            {
+                "name": "rdd_zlib_read",
+                "start": 70,
+                "end": 71
+            },
+            {
+                "name": "rdd_open_zlib_reader",
+                "start": 83,
+                "end": 133
+            },
+            {
+                "name": "rdd_zlib_read",
+                "start": 135,
+                "end": 173
+            },
+            {
+                "name": "rdd_zlib_tell",
+                "start": 175,
+                "end": 182
+            },
+            {
+                "name": "rdd_zlib_seek",
+                "start": 184,
+                "end": 188
+            },
+            {
+                "name": "rdd_zlib_close",
+                "start": 190,
+                "end": 210
+            }
+        ],
+        "src/netio.c": [
+            {
+                "name": "pack_netnum",
+                "start": 81,
+                "end": 86
+            },
+            {
+                "name": "unpack_netnum",
+                "start": 88,
+                "end": 96
+            },
+            {
+                "name": "rdd_send_info",
+                "start": 109,
+                "end": 145
+            },
+            {
+                "name": "receive",
+                "start": 149,
+                "end": 164
+            },
+            {
+                "name": "rdd_recv_info",
+                "start": 169,
+                "end": 214
+            },
+            {
+                "name": "rdd_init_server",
+                "start": 216,
+                "end": 257
+            },
+            {
+                "name": "rdd_await_connection",
+                "start": 259,
+                "end": 286
+            }
+        ],
+        "src/commandline.c": [
+            {
+                "name": "rdd_opt_init",
+                "start": 61,
+                "end": 66
+            },
+            {
+                "name": "rdd_get_opt_with_arg",
+                "start": 71,
+                "end": 102
+            },
+            {
+                "name": "rdd_opt_set_arg",
+                "start": 104,
+                "end": 122
+            },
+            {
+                "name": "rdd_opt_set",
+                "start": 124,
+                "end": 128
+            },
+            {
+                "name": "rdd_opt_usage",
+                "start": 130,
+                "end": 158
+            }
+        ],
+        "src/safewriter.c": [
+            {
+                "name": "path_exists",
+                "start": 72,
+                "end": 76
+            },
+            {
+                "name": "rdd_open_safe_writer",
+                "start": 78,
+                "end": 120
+            },
+            {
+                "name": "safe_write",
+                "start": 122,
+                "end": 128
+            },
+            {
+                "name": "safe_close",
+                "start": 130,
+                "end": 156
+            }
+        ],
+        "src/fdreader.c": [
+            {
+                "name": "rdd_fd_read",
+                "start": 58,
+                "end": 59
+            },
+            {
+                "name": "rdd_open_fd_reader",
+                "start": 71,
+                "end": 88
+            },
+            {
+                "name": "rdd_fd_read",
+                "start": 90,
+                "end": 114
+            },
+            {
+                "name": "rdd_fd_tell",
+                "start": 116,
+                "end": 128
+            },
+            {
+                "name": "rdd_fd_seek",
+                "start": 130,
+                "end": 139
+            },
+            {
+                "name": "rdd_fd_close",
+                "start": 141,
+                "end": 151
+            }
+        ],
+        "src/md5blockfilter.c": [
+            {
+                "name": "blockhash_input",
+                "start": 71,
+                "end": 72
+            },
+            {
+                "name": "rdd_new_md5_blockfilter",
+                "start": 85,
+                "end": 125
+            },
+            {
+                "name": "blockhash_input",
+                "start": 129,
+                "end": 137
+            },
+            {
+                "name": "blockhash_block",
+                "start": 142,
+                "end": 163
+            },
+            {
+                "name": "blockhash_close",
+                "start": 165,
+                "end": 180
+            },
+            {
+                "name": "blockhash_free",
+                "start": 182,
+                "end": 190
+            }
+        ],
+        "src/rddverify.c": [
+            {
+                "name": "process_options",
+                "start": 133,
+                "end": 166
+            },
+            {
+                "name": "command_line",
+                "start": 168,
+                "end": 190
+            },
+            {
+                "name": "swap16",
+                "start": 192,
+                "end": 196
+            },
+            {
+                "name": "swap32",
+                "start": 198,
+                "end": 207
+            },
+            {
+                "name": "swap64",
+                "start": 209,
+                "end": 222
+            },
+            {
+                "name": "open_image_file",
+                "start": 224,
+                "end": 235
+            },
+            {
+                "name": "close_image_file",
+                "start": 237,
+                "end": 245
+            },
+            {
+                "name": "swap_header",
+                "start": 247,
+                "end": 257
+            },
+            {
+                "name": "check_header",
+                "start": 259,
+                "end": 286
+            },
+            {
+                "name": "open_checksum_file",
+                "start": 288,
+                "end": 304
+            },
+            {
+                "name": "close_checksum_file",
+                "start": 306,
+                "end": 318
+            },
+            {
+                "name": "verify_file",
+                "start": 320,
+                "end": 346
+            },
+            {
+                "name": "add_filter",
+                "start": 348,
+                "end": 356
+            },
+            {
+                "name": "handle_checksum_error",
+                "start": 358,
+                "end": 367
+            },
+            {
+                "name": "get_checksum_result",
+                "start": 369,
+                "end": 386
+            },
+            {
+                "name": "get_hash_result",
+                "start": 388,
+                "end": 403
+            },
+            {
+                "name": "equal_digest",
+                "start": 405,
+                "end": 417
+            },
+            {
+                "name": "verify_files",
+                "start": 419,
+                "end": 551
+            },
+            {
+                "name": "main",
+                "start": 553,
+                "end": 636
+            }
+        ],
+        "src/progress.c": [
+            {
+                "name": "rdd_progress_init",
+                "start": 56,
+                "end": 70
+            },
+            {
+                "name": "rdd_progress_update",
+                "start": 72,
+                "end": 77
+            },
+            {
+                "name": "rdd_progress_poll",
+                "start": 79,
+                "end": 107
+            }
+        ],
+        "src/alignedreader.c": [
+            {
+                "name": "rdd_aligned_read",
+                "start": 65,
+                "end": 66
+            },
+            {
+                "name": "rdd_open_aligned_reader",
+                "start": 78,
+                "end": 96
+            },
+            {
+                "name": "rdd_aligned_read",
+                "start": 98,
+                "end": 220
+            },
+            {
+                "name": "rdd_aligned_tell",
+                "start": 222,
+                "end": 228
+            },
+            {
+                "name": "rdd_aligned_seek",
+                "start": 230,
+                "end": 236
+            },
+            {
+                "name": "rdd_aligned_close",
+                "start": 238,
+                "end": 252
+            }
+        ],
+        "src/bcastprinter.c": [
+            {
+                "name": "bcast_print",
+                "start": 48,
+                "end": 49
+            },
+            {
+                "name": "rdd_mp_open_bcast_printer",
+                "start": 57,
+                "end": 94
+            },
+            {
+                "name": "bcast_print",
+                "start": 96,
+                "end": 106
+            },
+            {
+                "name": "bcast_close",
+                "start": 108,
+                "end": 127
+            }
+        ],
+        "src/writer.c": [
+            {
+                "name": "rdd_new_writer",
+                "start": 49,
+                "end": 79
+            },
+            {
+                "name": "rdd_writer_write",
+                "start": 81,
+                "end": 85
+            },
+            {
+                "name": "rdd_writer_close",
+                "start": 87,
+                "end": 102
+            }
+        ],
+        "src/filterset.c": [
+            {
+                "name": "rdd_fset_init",
+                "start": 56,
+                "end": 63
+            },
+            {
+                "name": "rdd_fset_add",
+                "start": 65,
+                "end": 108
+            },
+            {
+                "name": "rdd_fset_get",
+                "start": 110,
+                "end": 126
+            },
+            {
+                "name": "rdd_fset_open_cursor",
+                "start": 128,
+                "end": 133
+            },
+            {
+                "name": "rdd_fset_cursor_next",
+                "start": 135,
+                "end": 146
+            },
+            {
+                "name": "rdd_fset_cursor_close",
+                "start": 148,
+                "end": 153
+            },
+            {
+                "name": "rdd_fset_push",
+                "start": 155,
+                "end": 169
+            },
+            {
+                "name": "rdd_fset_close",
+                "start": 171,
+                "end": 185
+            },
+            {
+                "name": "rdd_fset_clear",
+                "start": 187,
+                "end": 207
+            }
+        ],
+        "src/sha1.c": [
+            {
+                "name": "SHA1_Init",
+                "start": 91,
+                "end": 102
+            },
+            {
+                "name": "compress",
+                "start": 106,
+                "end": 147
+            },
+            {
+                "name": "SHA1_Update",
+                "start": 149,
+                "end": 187
+            },
+            {
+                "name": "SHA1_Final",
+                "start": 193,
+                "end": 228
+            }
+        ],
+        "src/alignedbuf.c": [
+            {
+                "name": "rdd_new_alignedbuf",
+                "start": 50,
+                "end": 80
+            },
+            {
+                "name": "rdd_free_alignedbuf",
+                "start": 82,
+                "end": 89
+            },
+            {
+                "name": "rdd_abuf_get_size",
+                "start": 91,
+                "end": 95
+            },
+            {
+                "name": "rdd_abuf_get_alignment",
+                "start": 97,
+                "end": 101
+            }
+        ],
+        "src/msgprinter.c": [
+            {
+                "name": "rdd_mp_open_printer",
+                "start": 51,
+                "end": 80
+            },
+            {
+                "name": "rdd_mp_close",
+                "start": 82,
+                "end": 91
+            },
+            {
+                "name": "rdd_mp_get_mask",
+                "start": 93,
+                "end": 97
+            },
+            {
+                "name": "rdd_mp_set_mask",
+                "start": 99,
+                "end": 103
+            },
+            {
+                "name": "mp_accept_message",
+                "start": 105,
+                "end": 115
+            },
+            {
+                "name": "rdd_mp_print",
+                "start": 117,
+                "end": 131
+            },
+            {
+                "name": "rdd_mp_vmessage",
+                "start": 133,
+                "end": 143
+            },
+            {
+                "name": "rdd_mp_message",
+                "start": 145,
+                "end": 154
+            },
+            {
+                "name": "mp_init",
+                "start": 156,
+                "end": 162
+            },
+            {
+                "name": "mp_vprintf",
+                "start": 164,
+                "end": 176
+            },
+            {
+                "name": "mp_printf",
+                "start": 178,
+                "end": 186
+            },
+            {
+                "name": "rdd_mp_unixmsg",
+                "start": 188,
+                "end": 204
+            },
+            {
+                "name": "rdd_mp_vrddmsg",
+                "start": 206,
+                "end": 223
+            },
+            {
+                "name": "rdd_mp_rddmsg",
+                "start": 225,
+                "end": 234
+            }
+        ]
+    }
+}

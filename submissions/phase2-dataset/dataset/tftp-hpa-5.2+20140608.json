@@ -1,0 +1,503 @@
+{
+    "tftp-hpa-5.2+20140608": {
+        "tftp/tftp.c": [
+            {
+                "name": "tftp_sendfile",
+                "start": 65,
+                "end": 166
+            },
+            {
+                "name": "tftp_recvfile",
+                "start": 171,
+                "end": 275
+            },
+            {
+                "name": "makerequest",
+                "start": 277,
+                "end": 292
+            },
+            {
+                "name": "nak",
+                "start": 314,
+                "end": 347
+            },
+            {
+                "name": "tpacket",
+                "start": 349,
+                "end": 382
+            },
+            {
+                "name": "startclock",
+                "start": 387,
+                "end": 390
+            },
+            {
+                "name": "stopclock",
+                "start": 392,
+                "end": 396
+            },
+            {
+                "name": "printstats",
+                "start": 398,
+                "end": 409
+            },
+            {
+                "name": "timer",
+                "start": 411,
+                "end": 425
+            }
+        ],
+        "tftp/main.c": [
+            {
+                "name": "usage",
+                "start": 191,
+                "end": 201
+            },
+            {
+                "name": "main",
+                "start": 203,
+                "end": 359
+            },
+            {
+                "name": "getmoreargs",
+                "start": 365,
+                "end": 399
+            },
+            {
+                "name": "setpeer",
+                "start": 401,
+                "end": 475
+            },
+            {
+                "name": "modecmd",
+                "start": 477,
+                "end": 507
+            },
+            {
+                "name": "setbinary",
+                "start": 509,
+                "end": 514
+            },
+            {
+                "name": "setascii",
+                "start": 516,
+                "end": 521
+            },
+            {
+                "name": "settftpmode",
+                "start": 523,
+                "end": 528
+            },
+            {
+                "name": "put",
+                "start": 533,
+                "end": 607
+            },
+            {
+                "name": "putusage",
+                "start": 609,
+                "end": 613
+            },
+            {
+                "name": "get",
+                "start": 618,
+                "end": 690
+            },
+            {
+                "name": "getusage",
+                "start": 692,
+                "end": 696
+            },
+            {
+                "name": "setrexmt",
+                "start": 700,
+                "end": 719
+            },
+            {
+                "name": "settimeout",
+                "start": 723,
+                "end": 742
+            },
+            {
+                "name": "setliteral",
+                "start": 744,
+                "end": 750
+            },
+            {
+                "name": "status",
+                "start": 752,
+                "end": 765
+            },
+            {
+                "name": "intr",
+                "start": 767,
+                "end": 774
+            },
+            {
+                "name": "tail",
+                "start": 776,
+                "end": 789
+            },
+            {
+                "name": "command",
+                "start": 794,
+                "end": 839
+            },
+            {
+                "name": "getcmd",
+                "start": 841,
+                "end": 867
+            },
+            {
+                "name": "makeargv",
+                "start": 872,
+                "end": 892
+            },
+            {
+                "name": "quit",
+                "start": 894,
+                "end": 899
+            },
+            {
+                "name": "help",
+                "start": 904,
+                "end": 927
+            },
+            {
+                "name": "settrace",
+                "start": 929,
+                "end": 936
+            },
+            {
+                "name": "setverbose",
+                "start": 938,
+                "end": 945
+            }
+        ],
+        "common/tftpsubs.h": [
+            {
+                "name": "sa_set_port",
+                "start": 84,
+                "end": 99
+            },
+            {
+                "name": "pick_port_bind",
+                "start": 118,
+                "end": 119
+            }
+        ],
+        "common/tftpsubs.c": [
+            {
+                "name": "w_init",
+                "start": 72,
+                "end": 75
+            },
+            {
+                "name": "r_init",
+                "start": 77,
+                "end": 80
+            },
+            {
+                "name": "rw_init",
+                "start": 84,
+                "end": 93
+            },
+            {
+                "name": "readit",
+                "start": 98,
+                "end": 111
+            },
+            {
+                "name": "read_ahead",
+                "start": 117,
+                "end": 158
+            },
+            {
+                "name": "writeit",
+                "start": 164,
+                "end": 173
+            },
+            {
+                "name": "write_behind",
+                "start": 181,
+                "end": 223
+            },
+            {
+                "name": "synchnet",
+                "start": 236,
+                "end": 262
+            },
+            {
+                "name": "pick_port_bind",
+                "start": 264,
+                "end": 300
+            },
+            {
+                "name": "set_sock_addr",
+                "start": 302,
+                "end": 328
+            }
+        ],
+        "lib/daemon.c": [
+            {
+                "name": "daemon",
+                "start": 7,
+                "end": 36
+            }
+        ],
+        "lib/dup2.c": [
+            {
+                "name": "dup2",
+                "start": 9,
+                "end": 23
+            }
+        ],
+        "lib/xmalloc.c": [
+            {
+                "name": "xmalloc",
+                "start": 10,
+                "end": 20
+            }
+        ],
+        "lib/getaddrinfo.c": [
+            {
+                "name": "freeaddrinfo",
+                "start": 13,
+                "end": 24
+            },
+            {
+                "name": "getaddrinfo",
+                "start": 26,
+                "end": 92
+            },
+            {
+                "name": "gai_strerror",
+                "start": 96,
+                "end": 121
+            }
+        ],
+        "lib/inet_ntop.c": [
+            {
+                "name": "inet_ntop",
+                "start": 12,
+                "end": 52
+            }
+        ],
+        "lib/getopt_long.c": [
+            {
+                "name": "option_matches",
+                "start": 22,
+                "end": 34
+            },
+            {
+                "name": "getopt_long",
+                "start": 36,
+                "end": 150
+            }
+        ],
+        "lib/xstrdup.c": [
+            {
+                "name": "xstrdup",
+                "start": 10,
+                "end": 20
+            }
+        ],
+        "lib/bsdsignal.c": [
+            {
+                "name": "bsd_signal",
+                "start": 9,
+                "end": 27
+            }
+        ],
+        "tftpd/remap.c": [
+            {
+                "name": "xform_null",
+                "start": 46,
+                "end": 49
+            },
+            {
+                "name": "xform_toupper",
+                "start": 51,
+                "end": 54
+            },
+            {
+                "name": "xform_tolower",
+                "start": 56,
+                "end": 59
+            },
+            {
+                "name": "genmatchstring",
+                "start": 62,
+                "end": 152
+            },
+            {
+                "name": "readescstring",
+                "start": 159,
+                "end": 188
+            },
+            {
+                "name": "parseline",
+                "start": 191,
+                "end": 281
+            },
+            {
+                "name": "parserulefile",
+                "start": 284,
+                "end": 313
+            },
+            {
+                "name": "freerules",
+                "start": 316,
+                "end": 333
+            },
+            {
+                "name": "rewrite_string",
+                "start": 336,
+                "end": 449
+            }
+        ],
+        "tftpd/recvfrom.h": [
+            {
+                "name": "myrecvfrom",
+                "start": 20,
+                "end": 23
+            }
+        ],
+        "tftpd/recvfrom.c": [
+            {
+                "name": "myrecvfrom",
+                "start": 276,
+                "end": 288
+            }
+        ],
+        "tftpd/tftpd.c": [
+            {
+                "name": "handle_sighup",
+                "start": 142,
+                "end": 146
+            },
+            {
+                "name": "handle_exit",
+                "start": 150,
+                "end": 153
+            },
+            {
+                "name": "timer",
+                "start": 156,
+                "end": 163
+            },
+            {
+                "name": "lock_file",
+                "start": 186,
+                "end": 201
+            },
+            {
+                "name": "set_socket_nonblock",
+                "start": 203,
+                "end": 221
+            },
+            {
+                "name": "pmtu_discovery_off",
+                "start": 223,
+                "end": 230
+            },
+            {
+                "name": "recv_time",
+                "start": 236,
+                "end": 288
+            },
+            {
+                "name": "split_port",
+                "start": 290,
+                "end": 323
+            },
+            {
+                "name": "main",
+                "start": 354,
+                "end": 1044
+            },
+            {
+                "name": "tftp",
+                "start": 1071,
+                "end": 1171
+            },
+            {
+                "name": "set_blksize",
+                "start": 1178,
+                "end": 1193
+            },
+            {
+                "name": "set_blksize2",
+                "start": 1198,
+                "end": 1223
+            },
+            {
+                "name": "set_rollover",
+                "start": 1228,
+                "end": 1237
+            },
+            {
+                "name": "set_tsize",
+                "start": 1244,
+                "end": 1256
+            },
+            {
+                "name": "set_timeout",
+                "start": 1263,
+                "end": 1274
+            },
+            {
+                "name": "set_utimeout",
+                "start": 1277,
+                "end": 1288
+            },
+            {
+                "name": "do_opt",
+                "start": 1300,
+                "end": 1343
+            },
+            {
+                "name": "rewrite_access",
+                "start": 1414,
+                "end": 1420
+            },
+            {
+                "name": "validate_access",
+                "start": 1435,
+                "end": 1545
+            },
+            {
+                "name": "tftp_sendfile",
+                "start": 1550,
+                "end": 1643
+            },
+            {
+                "name": "tftp_recvfile",
+                "start": 1648,
+                "end": 1734
+            },
+            {
+                "name": "nak",
+                "start": 1756,
+                "end": 1796
+            }
+        ],
+        "tftpd/misc.c": [
+            {
+                "name": "set_signal",
+                "start": 25,
+                "end": 38
+            },
+            {
+                "name": "tfmalloc",
+                "start": 43,
+                "end": 53
+            },
+            {
+                "name": "tfstrdup",
+                "start": 58,
+                "end": 68
+            }
+        ]
+    }
+}

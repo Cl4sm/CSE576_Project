@@ -1,0 +1,1335 @@
+{
+    "pgn-extract-17.14": {
+        "map.h": [
+            {
+                "name": "make_move",
+                "start": 26,
+                "end": 27
+            },
+            {
+                "name": "find_pawn_moves",
+                "start": 29,
+                "end": 30
+            },
+            {
+                "name": "exclude_checks",
+                "start": 36,
+                "end": 37
+            }
+        ],
+        "eco.h": [
+            {
+                "name": "eco_matches",
+                "start": 41,
+                "end": 42
+            }
+        ],
+        "grammar.c": [
+            {
+                "name": "init_game_header",
+                "start": 88,
+                "end": 98
+            },
+            {
+                "name": "increase_game_header_tags_length",
+                "start": 100,
+                "end": 116
+            },
+            {
+                "name": "MustOpen",
+                "start": 119,
+                "end": 130
+            },
+            {
+                "name": "report_details",
+                "start": 135,
+                "end": 157
+            },
+            {
+                "name": "check_result",
+                "start": 163,
+                "end": 186
+            },
+            {
+                "name": "select_output_file",
+                "start": 194,
+                "end": 227
+            },
+            {
+                "name": "ParseOptGameList",
+                "start": 229,
+                "end": 257
+            },
+            {
+                "name": "ParseGame",
+                "start": 262,
+                "end": 339
+            },
+            {
+                "name": "ParseOptTagList",
+                "start": 341,
+                "end": 368
+            },
+            {
+                "name": "ParseTag",
+                "start": 370,
+                "end": 408
+            },
+            {
+                "name": "ParseMoveList",
+                "start": 411,
+                "end": 426
+            },
+            {
+                "name": "ParseMoveAndVariants",
+                "start": 428,
+                "end": 443
+            },
+            {
+                "name": "ParseMove",
+                "start": 446,
+                "end": 464
+            },
+            {
+                "name": "ParseMoveUnit",
+                "start": 466,
+                "end": 490
+            },
+            {
+                "name": "ParseOptCommentList",
+                "start": 492,
+                "end": 507
+            },
+            {
+                "name": "ParseOptMoveNumber",
+                "start": 509,
+                "end": 518
+            },
+            {
+                "name": "ParseOptNAGList",
+                "start": 520,
+                "end": 534
+            },
+            {
+                "name": "ParseOptVariantList",
+                "start": 536,
+                "end": 551
+            },
+            {
+                "name": "ParseVariant",
+                "start": 553,
+                "end": 614
+            },
+            {
+                "name": "ParseResult",
+                "start": 616,
+                "end": 633
+            },
+            {
+                "name": "setup_for_new_game",
+                "start": 635,
+                "end": 640
+            },
+            {
+                "name": "free_tags",
+                "start": 643,
+                "end": 653
+            },
+            {
+                "name": "free_string_list",
+                "start": 656,
+                "end": 668
+            },
+            {
+                "name": "free_comment_list",
+                "start": 670,
+                "end": 682
+            },
+            {
+                "name": "free_variation",
+                "start": 684,
+                "end": 702
+            },
+            {
+                "name": "free_move_list",
+                "start": 704,
+                "end": 728
+            },
+            {
+                "name": "SaveStringListItem",
+                "start": 733,
+                "end": 755
+            },
+            {
+                "name": "append_comments_to_move",
+                "start": 760,
+                "end": 780
+            },
+            {
+                "name": "DealWithGame",
+                "start": 782,
+                "end": 917
+            },
+            {
+                "name": "DealWithEcoLine",
+                "start": 919,
+                "end": 959
+            },
+            {
+                "name": "yyparse",
+                "start": 964,
+                "end": 978
+            }
+        ],
+        "output.c": [
+            {
+                "name": "print_move",
+                "start": 56,
+                "end": 58
+            },
+            {
+                "name": "print_algebraic_game",
+                "start": 62,
+                "end": 64
+            },
+            {
+                "name": "print_epd_game",
+                "start": 65,
+                "end": 67
+            },
+            {
+                "name": "print_epd_move_list",
+                "start": 68,
+                "end": 70
+            },
+            {
+                "name": "set_output_line_length",
+                "start": 115,
+                "end": 123
+            },
+            {
+                "name": "which_output_format",
+                "start": 128,
+                "end": 177
+            },
+            {
+                "name": "output_file_suffix",
+                "start": 180,
+                "end": 202
+            },
+            {
+                "name": "select_tag_string",
+                "start": 204,
+                "end": 215
+            },
+            {
+                "name": "is_STR",
+                "start": 217,
+                "end": 232
+            },
+            {
+                "name": "output_tag",
+                "start": 237,
+                "end": 261
+            },
+            {
+                "name": "output_STR",
+                "start": 264,
+                "end": 274
+            },
+            {
+                "name": "show_tags",
+                "start": 279,
+                "end": 322
+            },
+            {
+                "name": "check_line_length",
+                "start": 327,
+                "end": 333
+            },
+            {
+                "name": "single_char",
+                "start": 338,
+                "end": 344
+            },
+            {
+                "name": "print_separator",
+                "start": 347,
+                "end": 358
+            },
+            {
+                "name": "terminate_line",
+                "start": 361,
+                "end": 373
+            },
+            {
+                "name": "print_str",
+                "start": 378,
+                "end": 395
+            },
+            {
+                "name": "print_comment_list",
+                "start": 397,
+                "end": 430
+            },
+            {
+                "name": "print_move_list",
+                "start": 432,
+                "end": 516
+            },
+            {
+                "name": "print_move",
+                "start": 524,
+                "end": 758
+            },
+            {
+                "name": "promoted_piece_letter",
+                "start": 761,
+                "end": 776
+            },
+            {
+                "name": "output_cm_comment",
+                "start": 779,
+                "end": 822
+            },
+            {
+                "name": "output_cm_result",
+                "start": 824,
+                "end": 840
+            },
+            {
+                "name": "output_cm_game",
+                "start": 844,
+                "end": 935
+            },
+            {
+                "name": "output_game",
+                "start": 939,
+                "end": 998
+            },
+            {
+                "name": "add_to_output_tag_order",
+                "start": 1001,
+                "end": 1033
+            },
+            {
+                "name": "format_epd_game_comment",
+                "start": 1035,
+                "end": 1091
+            },
+            {
+                "name": "print_algebraic_game",
+                "start": 1093,
+                "end": 1147
+            },
+            {
+                "name": "print_epd_move_list",
+                "start": 1149,
+                "end": 1174
+            },
+            {
+                "name": "print_epd_game",
+                "start": 1176,
+                "end": 1186
+            },
+            {
+                "name": "build_FEN_comment",
+                "start": 1193,
+                "end": 1206
+            }
+        ],
+        "map.c": [
+            {
+                "name": "malloc_move",
+                "start": 118,
+                "end": 131
+            },
+            {
+                "name": "append_move_pair",
+                "start": 134,
+                "end": 144
+            },
+            {
+                "name": "free_move_pair",
+                "start": 147,
+                "end": 152
+            },
+            {
+                "name": "free_move_pair_list",
+                "start": 155,
+                "end": 162
+            },
+            {
+                "name": "init_hashtab",
+                "start": 169,
+                "end": 198
+            },
+            {
+                "name": "HashLookup",
+                "start": 201,
+                "end": 205
+            },
+            {
+                "name": "piece_is_colour",
+                "start": 208,
+                "end": 212
+            },
+            {
+                "name": "make_move",
+                "start": 219,
+                "end": 377
+            },
+            {
+                "name": "find_pawn_moves",
+                "start": 384,
+                "end": 506
+            },
+            {
+                "name": "find_knight_moves",
+                "start": 509,
+                "end": 529
+            },
+            {
+                "name": "find_bishop_moves",
+                "start": 532,
+                "end": 559
+            },
+            {
+                "name": "find_rook_moves",
+                "start": 562,
+                "end": 589
+            },
+            {
+                "name": "find_queen_moves",
+                "start": 592,
+                "end": 619
+            },
+            {
+                "name": "find_king_moves",
+                "start": 622,
+                "end": 642
+            },
+            {
+                "name": "king_is_in_check",
+                "start": 647,
+                "end": 716
+            },
+            {
+                "name": "exclude_checks",
+                "start": 727,
+                "end": 762
+            },
+            {
+                "name": "exclude_castling_across_checks",
+                "start": 767,
+                "end": 804
+            },
+            {
+                "name": "exclude_moves",
+                "start": 810,
+                "end": 854
+            },
+            {
+                "name": "pawn_move",
+                "start": 861,
+                "end": 912
+            },
+            {
+                "name": "promote",
+                "start": 915,
+                "end": 962
+            },
+            {
+                "name": "knight_move",
+                "start": 967,
+                "end": 1006
+            },
+            {
+                "name": "bishop_move",
+                "start": 1011,
+                "end": 1050
+            },
+            {
+                "name": "rook_move",
+                "start": 1055,
+                "end": 1101
+            },
+            {
+                "name": "queen_move",
+                "start": 1106,
+                "end": 1145
+            },
+            {
+                "name": "can_castle_kingside",
+                "start": 1148,
+                "end": 1192
+            },
+            {
+                "name": "can_castle_queenside",
+                "start": 1195,
+                "end": 1240
+            },
+            {
+                "name": "kingside_castle",
+                "start": 1243,
+                "end": 1262
+            },
+            {
+                "name": "queenside_castle",
+                "start": 1264,
+                "end": 1283
+            },
+            {
+                "name": "king_move",
+                "start": 1288,
+                "end": 1331
+            },
+            {
+                "name": "determine_move_details",
+                "start": 1346,
+                "end": 1561
+            },
+            {
+                "name": "GenerateSingleMoves",
+                "start": 1568,
+                "end": 1608
+            },
+            {
+                "name": "GenerateMultipleMoves",
+                "start": 1613,
+                "end": 1658
+            },
+            {
+                "name": "GeneratePawnMoves",
+                "start": 1661,
+                "end": 1722
+            },
+            {
+                "name": "king_is_in_checkmate",
+                "start": 1730,
+                "end": 1780
+            },
+            {
+                "name": "find_all_moves",
+                "start": 1847,
+                "end": 1927
+            }
+        ],
+        "lists.c": [
+            {
+                "name": "init_tag_lists",
+                "start": 79,
+                "end": 89
+            },
+            {
+                "name": "extend_tag_list_length",
+                "start": 94,
+                "end": 116
+            },
+            {
+                "name": "add_to_taglist",
+                "start": 123,
+                "end": 173
+            },
+            {
+                "name": "soundex",
+                "start": 203,
+                "end": 251
+            },
+            {
+                "name": "soundex_tag",
+                "start": 256,
+                "end": 271
+            },
+            {
+                "name": "add_tag_to_list",
+                "start": 277,
+                "end": 306
+            },
+            {
+                "name": "extract_tag_argument",
+                "start": 321,
+                "end": 354
+            },
+            {
+                "name": "CheckDate",
+                "start": 369,
+                "end": 431
+            },
+            {
+                "name": "CheckElo",
+                "start": 433,
+                "end": 486
+            },
+            {
+                "name": "CheckList",
+                "start": 493,
+                "end": 514
+            },
+            {
+                "name": "CheckTagDetailsNotECO",
+                "start": 525,
+                "end": 619
+            },
+            {
+                "name": "CheckECOTag",
+                "start": 622,
+                "end": 638
+            }
+        ],
+        "lines.c": [
+            {
+                "name": "read_line",
+                "start": 41,
+                "end": 76
+            },
+            {
+                "name": "non_blank_line",
+                "start": 81,
+                "end": 101
+            },
+            {
+                "name": "blank_line",
+                "start": 103,
+                "end": 107
+            },
+            {
+                "name": "comment_line",
+                "start": 111,
+                "end": 115
+            }
+        ],
+        "lex.c": [
+            {
+                "name": "extract_yytext",
+                "start": 60,
+                "end": 61
+            },
+            {
+                "name": "init_tag_list",
+                "start": 116,
+                "end": 167
+            },
+            {
+                "name": "make_new_tag",
+                "start": 173,
+                "end": 185
+            },
+            {
+                "name": "tag_header_string",
+                "start": 187,
+                "end": 198
+            },
+            {
+                "name": "init_lex_tables",
+                "start": 205,
+                "end": 310
+            },
+            {
+                "name": "gather_string",
+                "start": 315,
+                "end": 363
+            },
+            {
+                "name": "gather_comment",
+                "start": 368,
+                "end": 411
+            },
+            {
+                "name": "gather_possible_numeric",
+                "start": 416,
+                "end": 497
+            },
+            {
+                "name": "identify_tag",
+                "start": 506,
+                "end": 517
+            },
+            {
+                "name": "gather_tag",
+                "start": 522,
+                "end": 584
+            },
+            {
+                "name": "extract_yytext",
+                "start": 586,
+                "end": 605
+            },
+            {
+                "name": "get_next_symbol",
+                "start": 610,
+                "end": 875
+            },
+            {
+                "name": "next_token",
+                "start": 877,
+                "end": 887
+            },
+            {
+                "name": "skip_token",
+                "start": 892,
+                "end": 904
+            },
+            {
+                "name": "skip_to_next_game",
+                "start": 911,
+                "end": 931
+            },
+            {
+                "name": "save_q_castle",
+                "start": 934,
+                "end": 938
+            },
+            {
+                "name": "save_k_castle",
+                "start": 941,
+                "end": 945
+            },
+            {
+                "name": "save_move",
+                "start": 948,
+                "end": 955
+            },
+            {
+                "name": "restart_lex_for_new_game",
+                "start": 957,
+                "end": 962
+            },
+            {
+                "name": "current_file_number",
+                "start": 980,
+                "end": 984
+            },
+            {
+                "name": "add_filename_list_from_file",
+                "start": 991,
+                "end": 1019
+            },
+            {
+                "name": "add_filename_to_source_list",
+                "start": 1021,
+                "end": 1092
+            },
+            {
+                "name": "open_input",
+                "start": 1095,
+                "end": 1107
+            },
+            {
+                "name": "open_eco_file",
+                "start": 1110,
+                "end": 1114
+            },
+            {
+                "name": "open_input_file",
+                "start": 1117,
+                "end": 1130
+            },
+            {
+                "name": "open_first_file",
+                "start": 1133,
+                "end": 1157
+            },
+            {
+                "name": "input_file_name",
+                "start": 1162,
+                "end": 1174
+            },
+            {
+                "name": "print_error_context",
+                "start": 1178,
+                "end": 1185
+            },
+            {
+                "name": "save_string",
+                "start": 1189,
+                "end": 1197
+            },
+            {
+                "name": "next_input_line",
+                "start": 1200,
+                "end": 1215
+            },
+            {
+                "name": "yywrap",
+                "start": 1218,
+                "end": 1260
+            },
+            {
+                "name": "reset_line_number",
+                "start": 1264,
+                "end": 1268
+            },
+            {
+                "name": "terminate_input",
+                "start": 1270,
+                "end": 1277
+            },
+            {
+                "name": "read_tag_file",
+                "start": 1286,
+                "end": 1311
+            },
+            {
+                "name": "read_tag_roster_file",
+                "start": 1316,
+                "end": 1333
+            },
+            {
+                "name": "process_tag_line",
+                "start": 1338,
+                "end": 1452
+            },
+            {
+                "name": "process_roster_line",
+                "start": 1457,
+                "end": 1482
+            }
+        ],
+        "decode.c": [
+            {
+                "name": "is_col",
+                "start": 46,
+                "end": 50
+            },
+            {
+                "name": "is_rank",
+                "start": 53,
+                "end": 57
+            },
+            {
+                "name": "is_piece",
+                "start": 64,
+                "end": 103
+            },
+            {
+                "name": "is_capture",
+                "start": 111,
+                "end": 115
+            },
+            {
+                "name": "is_castling_character",
+                "start": 117,
+                "end": 121
+            },
+            {
+                "name": "is_check",
+                "start": 123,
+                "end": 127
+            },
+            {
+                "name": "new_move_structure",
+                "start": 132,
+                "end": 143
+            },
+            {
+                "name": "decode_move",
+                "start": 152,
+                "end": 426
+            },
+            {
+                "name": "decode_algebraic",
+                "start": 428,
+                "end": 461
+            },
+            {
+                "name": "move_seems_valid",
+                "start": 466,
+                "end": 653
+            }
+        ],
+        "apply.c": [
+            {
+                "name": "play_moves",
+                "start": 51,
+                "end": 52
+            },
+            {
+                "name": "apply_variations",
+                "start": 53,
+                "end": 54
+            },
+            {
+                "name": "set_output_piece_characters",
+                "start": 82,
+                "end": 145
+            },
+            {
+                "name": "StringCopy",
+                "start": 147,
+                "end": 155
+            },
+            {
+                "name": "allocate_new_board",
+                "start": 158,
+                "end": 162
+            },
+            {
+                "name": "free_board",
+                "start": 165,
+                "end": 169
+            },
+            {
+                "name": "is_FEN_piece",
+                "start": 171,
+                "end": 196
+            },
+            {
+                "name": "SAN_piece_letter",
+                "start": 199,
+                "end": 208
+            },
+            {
+                "name": "coloured_piece_to_SAN_letter",
+                "start": 211,
+                "end": 219
+            },
+            {
+                "name": "new_fen_board",
+                "start": 231,
+                "end": 513
+            },
+            {
+                "name": "new_game_board",
+                "start": 522,
+                "end": 593
+            },
+            {
+                "name": "print_square",
+                "start": 596,
+                "end": 629
+            },
+            {
+                "name": "print_board",
+                "start": 632,
+                "end": 644
+            },
+            {
+                "name": "half_moves_played",
+                "start": 690,
+                "end": 698
+            },
+            {
+                "name": "apply_move",
+                "start": 705,
+                "end": 789
+            },
+            {
+                "name": "play_moves",
+                "start": 797,
+                "end": 982
+            },
+            {
+                "name": "play_eco_moves",
+                "start": 989,
+                "end": 1033
+            },
+            {
+                "name": "apply_variations",
+                "start": 1041,
+                "end": 1072
+            },
+            {
+                "name": "apply_move_list",
+                "start": 1080,
+                "end": 1119
+            },
+            {
+                "name": "apply_eco_move_list",
+                "start": 1126,
+                "end": 1139
+            },
+            {
+                "name": "piece_str",
+                "start": 1143,
+                "end": 1152
+            },
+            {
+                "name": "rewrite_SAN_string",
+                "start": 1157,
+                "end": 1366
+            },
+            {
+                "name": "rewrite_move",
+                "start": 1371,
+                "end": 1435
+            },
+            {
+                "name": "rewrite_moves",
+                "start": 1438,
+                "end": 1498
+            },
+            {
+                "name": "rewrite_variations",
+                "start": 1503,
+                "end": 1517
+            },
+            {
+                "name": "rewrite_game",
+                "start": 1524,
+                "end": 1536
+            },
+            {
+                "name": "store_hash_value",
+                "start": 1546,
+                "end": 1592
+            },
+            {
+                "name": "position_matches",
+                "start": 1597,
+                "end": 1617
+            },
+            {
+                "name": "build_basic_EPD_string",
+                "start": 1620,
+                "end": 1691
+            },
+            {
+                "name": "build_FEN_string",
+                "start": 1694,
+                "end": 1713
+            },
+            {
+                "name": "append_FEN_comment",
+                "start": 1719,
+                "end": 1730
+            },
+            {
+                "name": "append_evaluation",
+                "start": 1736,
+                "end": 1762
+            },
+            {
+                "name": "create_match_comment",
+                "start": 1767,
+                "end": 1778
+            },
+            {
+                "name": "evaluate",
+                "start": 1780,
+                "end": 1784
+            },
+            {
+                "name": "shannonEvaluation",
+                "start": 1789,
+                "end": 1865
+            }
+        ],
+        "end.c": [
+            {
+                "name": "is_English_piece",
+                "start": 89,
+                "end": 114
+            },
+            {
+                "name": "new_ending_details",
+                "start": 119,
+                "end": 146
+            },
+            {
+                "name": "extract_combination",
+                "start": 148,
+                "end": 234
+            },
+            {
+                "name": "extract_piece_information",
+                "start": 248,
+                "end": 318
+            },
+            {
+                "name": "decompose_line",
+                "start": 320,
+                "end": 374
+            },
+            {
+                "name": "reset_match_depths",
+                "start": 379,
+                "end": 386
+            },
+            {
+                "name": "piece_match",
+                "start": 389,
+                "end": 433
+            },
+            {
+                "name": "piece_set_match",
+                "start": 438,
+                "end": 493
+            },
+            {
+                "name": "ending_match",
+                "start": 498,
+                "end": 529
+            },
+            {
+                "name": "look_for_ending",
+                "start": 531,
+                "end": 602
+            },
+            {
+                "name": "check_for_ending",
+                "start": 604,
+                "end": 615
+            },
+            {
+                "name": "process_ending_line",
+                "start": 617,
+                "end": 634
+            },
+            {
+                "name": "build_endings",
+                "start": 636,
+                "end": 654
+            }
+        ],
+        "hashing.c": [
+            {
+                "name": "init_duplicate_hash_table",
+                "start": 107,
+                "end": 129
+            },
+            {
+                "name": "clear_duplicate_hash_table",
+                "start": 132,
+                "end": 142
+            },
+            {
+                "name": "retrieve_virtual_entry",
+                "start": 145,
+                "end": 164
+            },
+            {
+                "name": "write_virtual_entry",
+                "start": 167,
+                "end": 184
+            },
+            {
+                "name": "previous_virtual_occurance",
+                "start": 192,
+                "end": 265
+            },
+            {
+                "name": "previous_occurance",
+                "start": 276,
+                "end": 348
+            }
+        ],
+        "fenmatcher.c": [
+            {
+                "name": "add_fen_pattern",
+                "start": 63,
+                "end": 137
+            },
+            {
+                "name": "matchBoard",
+                "start": 143,
+                "end": 175
+            },
+            {
+                "name": "matchhere",
+                "start": 180,
+                "end": 240
+            },
+            {
+                "name": "matchstar",
+                "start": 245,
+                "end": 262
+            },
+            {
+                "name": "matchone",
+                "start": 267,
+                "end": 309
+            },
+            {
+                "name": "matchccl",
+                "start": 314,
+                "end": 331
+            },
+            {
+                "name": "matchnccl",
+                "start": 336,
+                "end": 349
+            },
+            {
+                "name": "convert_board_to_text",
+                "start": 353,
+                "end": 379
+            }
+        ],
+        "eco.c": [
+            {
+                "name": "initEcoTable",
+                "start": 131,
+                "end": 142
+            },
+            {
+                "name": "save_eco_details",
+                "start": 146,
+                "end": 257
+            },
+            {
+                "name": "eco_matches",
+                "start": 264,
+                "end": 295
+            },
+            {
+                "name": "open_eco_output_file",
+                "start": 300,
+                "end": 328
+            }
+        ],
+        "argsfile.c": [
+            {
+                "name": "stringcompare",
+                "start": 65,
+                "end": 73
+            },
+            {
+                "name": "skip_leading_spaces",
+                "start": 95,
+                "end": 101
+            },
+            {
+                "name": "usage_and_exit",
+                "start": 104,
+                "end": 217
+            },
+            {
+                "name": "read_args_file",
+                "start": 219,
+                "end": 372
+            },
+            {
+                "name": "classify_arg",
+                "start": 379,
+                "end": 443
+            },
+            {
+                "name": "process_argument",
+                "start": 456,
+                "end": 879
+            },
+            {
+                "name": "process_long_form_argument",
+                "start": 887,
+                "end": 1050
+            }
+        ],
+        "main.c": [
+            {
+                "name": "init_default_global_state",
+                "start": 112,
+                "end": 118
+            },
+            {
+                "name": "main",
+                "start": 120,
+                "end": 362
+            }
+        ],
+        "mymalloc.c": [
+            {
+                "name": "MallocOrDie",
+                "start": 26,
+                "end": 36
+            },
+            {
+                "name": "ReallocOrDie",
+                "start": 38,
+                "end": 48
+            }
+        ],
+        "moves.c": [
+            {
+                "name": "textual_variation_match",
+                "start": 111,
+                "end": 112
+            },
+            {
+                "name": "strip_move_number",
+                "start": 122,
+                "end": 137
+            },
+            {
+                "name": "compose_variation",
+                "start": 148,
+                "end": 231
+            },
+            {
+                "name": "add_textual_variations_from_file",
+                "start": 236,
+                "end": 243
+            },
+            {
+                "name": "add_textual_variation_from_line",
+                "start": 247,
+                "end": 257
+            },
+            {
+                "name": "compose_positional_variation",
+                "start": 268,
+                "end": 324
+            },
+            {
+                "name": "add_positional_variations_from_file",
+                "start": 329,
+                "end": 336
+            },
+            {
+                "name": "add_positional_variation_from_line",
+                "start": 338,
+                "end": 355
+            },
+            {
+                "name": "add_fen_positional_match",
+                "start": 359,
+                "end": 364
+            },
+            {
+                "name": "add_fen_pattern_match",
+                "start": 368,
+                "end": 373
+            },
+            {
+                "name": "move_char",
+                "start": 378,
+                "end": 382
+            },
+            {
+                "name": "textual_variation_match",
+                "start": 390,
+                "end": 423
+            },
+            {
+                "name": "straight_match",
+                "start": 434,
+                "end": 491
+            },
+            {
+                "name": "permutation_match",
+                "start": 513,
+                "end": 671
+            },
+            {
+                "name": "check_for_only_checkmate",
+                "start": 678,
+                "end": 697
+            },
+            {
+                "name": "check_for_only_stalemate",
+                "start": 703,
+                "end": 736
+            },
+            {
+                "name": "check_textual_variations",
+                "start": 741,
+                "end": 764
+            },
+            {
+                "name": "check_move_bounds",
+                "start": 769,
+                "end": 779
+            }
+        ]
+    }
+}

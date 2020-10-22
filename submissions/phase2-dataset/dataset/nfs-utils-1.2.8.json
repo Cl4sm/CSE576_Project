@@ -1,0 +1,5939 @@
+{
+    "nfs-utils-1.2.8": {
+        "utils/gssd/write_bytes.h": [
+            {
+                "name": "write_bytes",
+                "start": 38,
+                "end": 49
+            },
+            {
+                "name": "write_buffer",
+                "start": 53,
+                "end": 64
+            },
+            {
+                "name": "write_oid",
+                "start": 66,
+                "end": 77
+            },
+            {
+                "name": "get_bytes",
+                "start": 79,
+                "end": 90
+            },
+            {
+                "name": "get_buffer",
+                "start": 92,
+                "end": 109
+            },
+            {
+                "name": "xdr_get_u32",
+                "start": 111,
+                "end": 118
+            },
+            {
+                "name": "xdr_get_buffer",
+                "start": 120,
+                "end": 137
+            },
+            {
+                "name": "xdr_write_u32",
+                "start": 139,
+                "end": 146
+            },
+            {
+                "name": "xdr_write_buffer",
+                "start": 148,
+                "end": 156
+            }
+        ],
+        "utils/gssd/gss_util.h": [
+            {
+                "name": "pgsserr",
+                "start": 41,
+                "end": 42
+            }
+        ],
+        "utils/gssd/gss_util.c": [
+            {
+                "name": "gss_display_error",
+                "start": 141,
+                "end": 217
+            },
+            {
+                "name": "display_status_2",
+                "start": 219,
+                "end": 263
+            },
+            {
+                "name": "pgsserr",
+                "start": 265,
+                "end": 269
+            },
+            {
+                "name": "gssd_acquire_cred",
+                "start": 271,
+                "end": 316
+            },
+            {
+                "name": "gssd_check_mechs",
+                "start": 318,
+                "end": 340
+            }
+        ],
+        "utils/gssd/gss_clnt_send_err.c": [
+            {
+                "name": "usage",
+                "start": 56,
+                "end": 61
+            },
+            {
+                "name": "do_error_downcall",
+                "start": 63,
+                "end": 79
+            },
+            {
+                "name": "main",
+                "start": 81,
+                "end": 108
+            }
+        ],
+        "utils/gssd/krb5_util.h": [
+            {
+                "name": "gssd_setup_krb5_user_gss_ccache",
+                "start": 26,
+                "end": 27
+            },
+            {
+                "name": "gssd_refresh_krb5_machine_credential",
+                "start": 32,
+                "end": 35
+            }
+        ],
+        "utils/gssd/krb5_util.c": [
+            {
+                "name": "gssd_find_existing_krb5_ccache",
+                "start": 141,
+                "end": 142
+            },
+            {
+                "name": "gssd_get_single_krb5_cred",
+                "start": 143,
+                "end": 144
+            },
+            {
+                "name": "query_krb5_ccache",
+                "start": 145,
+                "end": 146
+            },
+            {
+                "name": "select_krb5_ccache",
+                "start": 156,
+                "end": 168
+            },
+            {
+                "name": "gssd_find_existing_krb5_ccache",
+                "start": 180,
+                "end": 317
+            },
+            {
+                "name": "gssd_get_single_krb5_cred",
+                "start": 329,
+                "end": 468
+            },
+            {
+                "name": "gssd_set_krb5_ccache_name",
+                "start": 474,
+                "end": 499
+            },
+            {
+                "name": "find_ple_by_princ",
+                "start": 504,
+                "end": 515
+            },
+            {
+                "name": "new_ple",
+                "start": 520,
+                "end": 578
+            },
+            {
+                "name": "get_ple_by_princ",
+                "start": 583,
+                "end": 596
+            },
+            {
+                "name": "get_full_hostname",
+                "start": 602,
+                "end": 631
+            },
+            {
+                "name": "realm_and_service_match",
+                "start": 655,
+                "end": 673
+            },
+            {
+                "name": "gssd_search_krb5_keytab",
+                "start": 688,
+                "end": 779
+            },
+            {
+                "name": "find_keytab_entry",
+                "start": 790,
+                "end": 946
+            },
+            {
+                "name": "data_is_equal",
+                "start": 949,
+                "end": 953
+            },
+            {
+                "name": "check_for_tgt",
+                "start": 955,
+                "end": 985
+            },
+            {
+                "name": "query_krb5_ccache",
+                "start": 987,
+                "end": 1034
+            },
+            {
+                "name": "gssd_setup_krb5_user_gss_ccache",
+                "start": 1047,
+                "end": 1091
+            },
+            {
+                "name": "gssd_setup_krb5_machine_gss_ccache",
+                "start": 1099,
+                "end": 1105
+            },
+            {
+                "name": "gssd_get_krb5_machine_cred_list",
+                "start": 1115,
+                "end": 1166
+            },
+            {
+                "name": "gssd_free_krb5_machine_cred_list",
+                "start": 1171,
+                "end": 1182
+            },
+            {
+                "name": "gssd_destroy_krb5_machine_creds",
+                "start": 1187,
+                "end": 1223
+            },
+            {
+                "name": "gssd_refresh_krb5_machine_credential",
+                "start": 1228,
+                "end": 1307
+            },
+            {
+                "name": "gssd_k5_err_msg",
+                "start": 1312,
+                "end": 1335
+            },
+            {
+                "name": "gssd_k5_get_default_realm",
+                "start": 1340,
+                "end": 1351
+            },
+            {
+                "name": "gssd_acquire_krb5_cred",
+                "start": 1353,
+                "end": 1371
+            },
+            {
+                "name": "gssd_acquire_user_cred",
+                "start": 1373,
+                "end": 1402
+            }
+        ],
+        "utils/gssd/err_util.c": [
+            {
+                "name": "initerr",
+                "start": 43,
+                "end": 49
+            },
+            {
+                "name": "printerr",
+                "start": 52,
+                "end": 66
+            },
+            {
+                "name": "get_verbosity",
+                "start": 68,
+                "end": 71
+            }
+        ],
+        "utils/gssd/../mount/version.h": [
+            {
+                "name": "MAKE_VERSION",
+                "start": 31,
+                "end": 35
+            },
+            {
+                "name": "linux_version_code",
+                "start": 37,
+                "end": 51
+            }
+        ],
+        "utils/gssd/svcgssd_krb5.c": [
+            {
+                "name": "parse_enctypes",
+                "start": 65,
+                "end": 126
+            },
+            {
+                "name": "get_kernel_supported_enctypes",
+                "start": 128,
+                "end": 159
+            },
+            {
+                "name": "svcgssd_limit_krb5_enctypes",
+                "start": 175,
+                "end": 230
+            }
+        ],
+        "utils/gssd/svcgssd_mech2file.c": [
+            {
+                "name": "mech2file",
+                "start": 62,
+                "end": 73
+            }
+        ],
+        "utils/gssd/gssd_main_loop.c": [
+            {
+                "name": "dir_notify_handler",
+                "start": 64,
+                "end": 67
+            },
+            {
+                "name": "scan_poll_results",
+                "start": 69,
+                "end": 104
+            },
+            {
+                "name": "topdirs_add_entry",
+                "start": 106,
+                "end": 134
+            },
+            {
+                "name": "topdirs_free_list",
+                "start": 136,
+                "end": 148
+            },
+            {
+                "name": "topdirs_init_list",
+                "start": 150,
+                "end": 180
+            },
+            {
+                "name": "gssd_poll",
+                "start": 200,
+                "end": 216
+            },
+            {
+                "name": "gssd_run",
+                "start": 219,
+                "end": 254
+            }
+        ],
+        "utils/gssd/context.h": [
+            {
+                "name": "serialize_context_for_kernel",
+                "start": 44,
+                "end": 45
+            },
+            {
+                "name": "serialize_krb5_ctx",
+                "start": 46,
+                "end": 47
+            }
+        ],
+        "utils/gssd/gssd_proc.c": [
+            {
+                "name": "addrstr_to_sockaddr",
+                "start": 127,
+                "end": 166
+            },
+            {
+                "name": "get_servername",
+                "start": 171,
+                "end": 225
+            },
+            {
+                "name": "read_service_info",
+                "start": 228,
+                "end": 307
+            },
+            {
+                "name": "destroy_client",
+                "start": 309,
+                "end": 326
+            },
+            {
+                "name": "insert_new_clnt",
+                "start": 328,
+                "end": 347
+            },
+            {
+                "name": "process_clnt_dir_files",
+                "start": 349,
+                "end": 409
+            },
+            {
+                "name": "get_poll_index",
+                "start": 411,
+                "end": 428
+            },
+            {
+                "name": "insert_clnt_poll",
+                "start": 431,
+                "end": 453
+            },
+            {
+                "name": "process_clnt_dir",
+                "start": 455,
+                "end": 494
+            },
+            {
+                "name": "init_client_list",
+                "start": 496,
+                "end": 507
+            },
+            {
+                "name": "update_old_clients",
+                "start": 514,
+                "end": 549
+            },
+            {
+                "name": "find_client",
+                "start": 552,
+                "end": 564
+            },
+            {
+                "name": "process_pipedir",
+                "start": 566,
+                "end": 596
+            },
+            {
+                "name": "update_client_list",
+                "start": 599,
+                "end": 613
+            },
+            {
+                "name": "parse_enctypes",
+                "start": 622,
+                "end": 674
+            },
+            {
+                "name": "do_downcall",
+                "start": 676,
+                "end": 707
+            },
+            {
+                "name": "do_error_downcall",
+                "start": 709,
+                "end": 730
+            },
+            {
+                "name": "populate_port",
+                "start": 741,
+                "end": 815
+            },
+            {
+                "name": "create_auth_rpc_client",
+                "start": 821,
+                "end": 959
+            },
+            {
+                "name": "process_krb5_upcall",
+                "start": 965,
+                "end": 1125
+            },
+            {
+                "name": "handle_krb5_upcall",
+                "start": 1127,
+                "end": 1139
+            },
+            {
+                "name": "handle_gssd_upcall",
+                "start": 1141,
+                "end": 1260
+            }
+        ],
+        "utils/gssd/svcgssd_main_loop.c": [
+            {
+                "name": "gssd_run",
+                "start": 53,
+                "end": 95
+            }
+        ],
+        "utils/gssd/svcgssd.c": [
+            {
+                "name": "mydaemon",
+                "start": 73,
+                "end": 133
+            },
+            {
+                "name": "release_parent",
+                "start": 135,
+                "end": 149
+            },
+            {
+                "name": "sig_die",
+                "start": 151,
+                "end": 157
+            },
+            {
+                "name": "sig_hup",
+                "start": 159,
+                "end": 165
+            },
+            {
+                "name": "usage",
+                "start": 167,
+                "end": 173
+            },
+            {
+                "name": "main",
+                "start": 175,
+                "end": 281
+            }
+        ],
+        "utils/gssd/context.c": [
+            {
+                "name": "serialize_context_for_kernel",
+                "start": 46,
+                "end": 59
+            }
+        ],
+        "utils/gssd/gssd.c": [
+            {
+                "name": "sig_die",
+                "start": 67,
+                "end": 75
+            },
+            {
+                "name": "sig_hup",
+                "start": 77,
+                "end": 83
+            },
+            {
+                "name": "usage",
+                "start": 85,
+                "end": 91
+            },
+            {
+                "name": "main",
+                "start": 93,
+                "end": 200
+            }
+        ],
+        "utils/gssd/svcgssd_proc.c": [
+            {
+                "name": "do_svc_downcall",
+                "start": 77,
+                "end": 129
+            },
+            {
+                "name": "send_response",
+                "start": 138,
+                "end": 179
+            },
+            {
+                "name": "add_supplementary_groups",
+                "start": 190,
+                "end": 212
+            },
+            {
+                "name": "get_ids",
+                "start": 214,
+                "end": 278
+            },
+            {
+                "name": "get_krb5_hostbased_name",
+                "start": 318,
+                "end": 339
+            },
+            {
+                "name": "get_hostbased_client_name",
+                "start": 341,
+                "end": 381
+            },
+            {
+                "name": "handle_nullreq",
+                "start": 383,
+                "end": 518
+            }
+        ],
+        "utils/blkmapd/device-discovery.h": [
+            {
+                "name": "process_deviceinfo",
+                "start": 148,
+                "end": 150
+            },
+            {
+                "name": "atomicio",
+                "start": 152,
+                "end": 153
+            }
+        ],
+        "utils/blkmapd/device-inq.c": [
+            {
+                "name": "bl_create_scsi_string",
+                "start": 56,
+                "end": 67
+            },
+            {
+                "name": "bl_free_scsi_string",
+                "start": 69,
+                "end": 73
+            },
+            {
+                "name": "bldev_inquire_page",
+                "start": 82,
+                "end": 110
+            },
+            {
+                "name": "bldev_inquire_pages",
+                "start": 112,
+                "end": 152
+            },
+            {
+                "name": "bldev_read_ap_state",
+                "start": 157,
+                "end": 173
+            },
+            {
+                "name": "bldev_read_serial",
+                "start": 175,
+                "end": 233
+            }
+        ],
+        "utils/blkmapd/device-discovery.c": [
+            {
+                "name": "bl_get_path",
+                "start": 67,
+                "end": 78
+            },
+            {
+                "name": "bl_is_partition",
+                "start": 81,
+                "end": 88
+            },
+            {
+                "name": "bl_update_path",
+                "start": 100,
+                "end": 112
+            },
+            {
+                "name": "bl_release_disk",
+                "start": 114,
+                "end": 133
+            },
+            {
+                "name": "bl_add_disk",
+                "start": 135,
+                "end": 234
+            },
+            {
+                "name": "bl_discover_devices",
+                "start": 236,
+                "end": 267
+            },
+            {
+                "name": "bl_disk_inquiry_process",
+                "start": 274,
+                "end": 348
+            },
+            {
+                "name": "bl_watch_dir",
+                "start": 350,
+                "end": 355
+            },
+            {
+                "name": "bl_rpcpipe_cb",
+                "start": 357,
+                "end": 400
+            },
+            {
+                "name": "bl_event_helper",
+                "start": 402,
+                "end": 434
+            },
+            {
+                "name": "sig_die",
+                "start": 436,
+                "end": 444
+            },
+            {
+                "name": "main",
+                "start": 447,
+                "end": 533
+            }
+        ],
+        "utils/blkmapd/dm-device.c": [
+            {
+                "name": "bl_dm_table_alloc",
+                "start": 71,
+                "end": 74
+            },
+            {
+                "name": "bl_dm_table_free",
+                "start": 76,
+                "end": 85
+            },
+            {
+                "name": "add_to_bl_dm_table",
+                "start": 87,
+                "end": 100
+            },
+            {
+                "name": "find_bl_dm_tree",
+                "start": 104,
+                "end": 113
+            },
+            {
+                "name": "del_from_bl_dm_tree",
+                "start": 115,
+                "end": 129
+            },
+            {
+                "name": "add_to_bl_dm_tree",
+                "start": 131,
+                "end": 144
+            },
+            {
+                "name": "dm_device_create_mapped",
+                "start": 151,
+                "end": 192
+            },
+            {
+                "name": "dm_device_remove_byname",
+                "start": 194,
+                "end": 211
+            },
+            {
+                "name": "dm_device_remove",
+                "start": 213,
+                "end": 267
+            },
+            {
+                "name": "dm_devicelist_remove",
+                "start": 269,
+                "end": 283
+            },
+            {
+                "name": "bl_dm_remove_tree",
+                "start": 285,
+                "end": 295
+            },
+            {
+                "name": "bl_dm_create_tree",
+                "start": 297,
+                "end": 327
+            },
+            {
+                "name": "dm_device_remove_all",
+                "start": 329,
+                "end": 359
+            },
+            {
+                "name": "dm_device_exists",
+                "start": 361,
+                "end": 367
+            },
+            {
+                "name": "dm_device_create",
+                "start": 370,
+                "end": 518
+            }
+        ],
+        "utils/blkmapd/device-process.c": [
+            {
+                "name": "blk_overflow",
+                "start": 52,
+                "end": 59
+            },
+            {
+                "name": "decode_blk_signature",
+                "start": 61,
+                "end": 96
+            },
+            {
+                "name": "read_cmp_blk_sig",
+                "start": 102,
+                "end": 135
+            },
+            {
+                "name": "verify_sig",
+                "start": 141,
+                "end": 165
+            },
+            {
+                "name": "map_sig_to_device",
+                "start": 174,
+                "end": 190
+            },
+            {
+                "name": "set_vol_array",
+                "start": 196,
+                "end": 217
+            },
+            {
+                "name": "sum_subvolume_sizes",
+                "start": 219,
+                "end": 227
+            },
+            {
+                "name": "decode_blk_volume",
+                "start": 229,
+                "end": 311
+            },
+            {
+                "name": "process_deviceinfo",
+                "start": 313,
+                "end": 378
+            }
+        ],
+        "utils/nfsd/nfssvc.h": [
+            {
+                "name": "nfssvc_set_sockets",
+                "start": 25,
+                "end": 26
+            }
+        ],
+        "utils/nfsd/nfsd.c": [
+            {
+                "name": "nfsd_enable_protos",
+                "start": 86,
+                "end": 92
+            },
+            {
+                "name": "main",
+                "start": 95,
+                "end": 331
+            },
+            {
+                "name": "usage",
+                "start": 333,
+                "end": 340
+            }
+        ],
+        "utils/nfsd/nfssvc.c": [
+            {
+                "name": "nfssvc_mount_nfsdfs",
+                "start": 49,
+                "end": 81
+            },
+            {
+                "name": "nfssvc_inuse",
+                "start": 91,
+                "end": 108
+            },
+            {
+                "name": "nfssvc_setfds",
+                "start": 110,
+                "end": 251
+            },
+            {
+                "name": "nfssvc_set_sockets",
+                "start": 253,
+                "end": 269
+            },
+            {
+                "name": "nfssvc_setvers",
+                "start": 271,
+                "end": 300
+            },
+            {
+                "name": "nfssvc_threads",
+                "start": 302,
+                "end": 338
+            }
+        ],
+        "utils/mountd/svc_run.c": [
+            {
+                "name": "my_svc_run",
+                "start": 93,
+                "end": 122
+            }
+        ],
+        "utils/mountd/mountd.h": [
+            {
+                "name": "auth_authenticate",
+                "start": 44,
+                "end": 46
+            },
+            {
+                "name": "cache_get_filehandle",
+                "start": 55,
+                "end": 56
+            },
+            {
+                "name": "is_ipaddr_client",
+                "start": 63,
+                "end": 66
+            }
+        ],
+        "utils/mountd/auth.c": [
+            {
+                "name": "auth_init",
+                "start": 46,
+                "end": 53
+            },
+            {
+                "name": "check_useipaddr",
+                "start": 63,
+                "end": 81
+            },
+            {
+                "name": "auth_reload",
+                "start": 83,
+                "end": 114
+            },
+            {
+                "name": "get_client_ipaddr_name",
+                "start": 116,
+                "end": 123
+            },
+            {
+                "name": "get_client_hostname",
+                "start": 125,
+                "end": 141
+            },
+            {
+                "name": "ipaddr_client_matches",
+                "start": 143,
+                "end": 146
+            },
+            {
+                "name": "namelist_client_matches",
+                "start": 148,
+                "end": 151
+            },
+            {
+                "name": "client_matches",
+                "start": 153,
+                "end": 158
+            },
+            {
+                "name": "auth_authenticate_newcache",
+                "start": 161,
+                "end": 198
+            },
+            {
+                "name": "auth_authenticate_internal",
+                "start": 200,
+                "end": 225
+            },
+            {
+                "name": "auth_authenticate",
+                "start": 227,
+                "end": 302
+            },
+            {
+                "name": "auth_fixpath",
+                "start": 304,
+                "end": 316
+            }
+        ],
+        "utils/mountd/fsloc.c": [
+            {
+                "name": "replicas_print",
+                "start": 39,
+                "end": 51
+            },
+            {
+                "name": "parse_list",
+                "start": 83,
+                "end": 117
+            },
+            {
+                "name": "method_list",
+                "start": 121,
+                "end": 160
+            },
+            {
+                "name": "replicas_lookup",
+                "start": 163,
+                "end": 189
+            },
+            {
+                "name": "release_replicas",
+                "start": 191,
+                "end": 202
+            }
+        ],
+        "utils/mountd/cache.c": [
+            {
+                "name": "auth_unix_ip",
+                "start": 72,
+                "end": 131
+            },
+            {
+                "name": "auth_unix_gid",
+                "start": 133,
+                "end": 192
+            },
+            {
+                "name": "get_uuid",
+                "start": 239,
+                "end": 267
+            },
+            {
+                "name": "uuid_by_path",
+                "start": 269,
+                "end": 321
+            },
+            {
+                "name": "next_mnt",
+                "start": 326,
+                "end": 346
+            },
+            {
+                "name": "is_subdirectory",
+                "start": 348,
+                "end": 357
+            },
+            {
+                "name": "path_matches",
+                "start": 359,
+                "end": 364
+            },
+            {
+                "name": "export_matches",
+                "start": 366,
+                "end": 370
+            },
+            {
+                "name": "subexport",
+                "start": 373,
+                "end": 381
+            },
+            {
+                "name": "parse_fsid",
+                "start": 395,
+                "end": 473
+            },
+            {
+                "name": "match_fsid",
+                "start": 475,
+                "end": 526
+            },
+            {
+                "name": "lookup_client_addr",
+                "start": 528,
+                "end": 541
+            },
+            {
+                "name": "nfsd_fh",
+                "start": 543,
+                "end": 705
+            },
+            {
+                "name": "write_fsloc",
+                "start": 707,
+                "end": 728
+            },
+            {
+                "name": "write_secinfo",
+                "start": 730,
+                "end": 748
+            },
+            {
+                "name": "dump_to_cache",
+                "start": 750,
+                "end": 780
+            },
+            {
+                "name": "lookup_export",
+                "start": 782,
+                "end": 831
+            },
+            {
+                "name": "lookup_nonexport",
+                "start": 1137,
+                "end": 1141
+            },
+            {
+                "name": "nfsd_export",
+                "start": 1144,
+                "end": 1199
+            },
+            {
+                "name": "cache_open",
+                "start": 1221,
+                "end": 1235
+            },
+            {
+                "name": "cache_set_fds",
+                "start": 1241,
+                "end": 1248
+            },
+            {
+                "name": "cache_process_req",
+                "start": 1254,
+                "end": 1267
+            },
+            {
+                "name": "cache_export_ent",
+                "start": 1276,
+                "end": 1332
+            },
+            {
+                "name": "cache_export",
+                "start": 1339,
+                "end": 1362
+            },
+            {
+                "name": "cache_get_filehandle",
+                "start": 1377,
+                "end": 1404
+            }
+        ],
+        "utils/mountd/mount_dispatch.c": [
+            {
+                "name": "mount_dispatch",
+                "start": 68,
+                "end": 84
+            }
+        ],
+        "utils/mountd/mountd.c": [
+            {
+                "name": "version2",
+                "start": 79,
+                "end": 82
+            },
+            {
+                "name": "version3",
+                "start": 84,
+                "end": 87
+            },
+            {
+                "name": "version23",
+                "start": 89,
+                "end": 92
+            },
+            {
+                "name": "version_any",
+                "start": 94,
+                "end": 97
+            },
+            {
+                "name": "unregister_services",
+                "start": 99,
+                "end": 105
+            },
+            {
+                "name": "cleanup_lockfiles",
+                "start": 107,
+                "end": 113
+            },
+            {
+                "name": "wait_for_workers",
+                "start": 116,
+                "end": 141
+            },
+            {
+                "name": "fork_workers",
+                "start": 144,
+                "end": 184
+            },
+            {
+                "name": "killer",
+                "start": 189,
+                "end": 201
+            },
+            {
+                "name": "sig_hup",
+                "start": 203,
+                "end": 209
+            },
+            {
+                "name": "mount_null_1_svc",
+                "start": 211,
+                "end": 222
+            },
+            {
+                "name": "mount_mnt_1_svc",
+                "start": 224,
+                "end": 238
+            },
+            {
+                "name": "mount_dump_1_svc",
+                "start": 240,
+                "end": 252
+            },
+            {
+                "name": "mount_umnt_1_svc",
+                "start": 254,
+                "end": 280
+            },
+            {
+                "name": "mount_umntall_1_svc",
+                "start": 282,
+                "end": 297
+            },
+            {
+                "name": "mount_export_1_svc",
+                "start": 299,
+                "end": 311
+            },
+            {
+                "name": "mount_exportall_1_svc",
+                "start": 313,
+                "end": 325
+            },
+            {
+                "name": "mount_pathconf_2_svc",
+                "start": 338,
+                "end": 388
+            },
+            {
+                "name": "set_authflavors",
+                "start": 402,
+                "end": 421
+            },
+            {
+                "name": "mount_mnt_3_svc",
+                "start": 426,
+                "end": 446
+            },
+            {
+                "name": "get_rootfh",
+                "start": 448,
+                "end": 567
+            },
+            {
+                "name": "remove_all_clients",
+                "start": 569,
+                "end": 579
+            },
+            {
+                "name": "free_exportlist",
+                "start": 581,
+                "end": 592
+            },
+            {
+                "name": "prune_clients",
+                "start": 594,
+                "end": 614
+            },
+            {
+                "name": "lookup_or_create_elist_entry",
+                "start": 616,
+                "end": 630
+            },
+            {
+                "name": "insert_group",
+                "start": 632,
+                "end": 644
+            },
+            {
+                "name": "get_exportlist",
+                "start": 646,
+                "end": 686
+            },
+            {
+                "name": "main",
+                "start": 688,
+                "end": 899
+            },
+            {
+                "name": "usage",
+                "start": 901,
+                "end": 912
+            }
+        ],
+        "utils/mountd/v4root.c": [
+            {
+                "name": "set_pseudofs_security",
+                "start": 58,
+                "end": 77
+            },
+            {
+                "name": "v4root_create",
+                "start": 82,
+                "end": 101
+            },
+            {
+                "name": "v4root_support",
+                "start": 106,
+                "end": 123
+            },
+            {
+                "name": "pseudofs_update",
+                "start": 125,
+                "end": 144
+            },
+            {
+                "name": "v4root_add_parents",
+                "start": 146,
+                "end": 172
+            },
+            {
+                "name": "v4root_set",
+                "start": 181,
+                "end": 212
+            }
+        ],
+        "utils/mountd/rmtab.c": [
+            {
+                "name": "slink_safe_rename",
+                "start": 35,
+                "end": 52
+            },
+            {
+                "name": "mountlist_add",
+                "start": 54,
+                "end": 92
+            },
+            {
+                "name": "mountlist_del",
+                "start": 94,
+                "end": 131
+            },
+            {
+                "name": "mountlist_del_all",
+                "start": 133,
+                "end": 174
+            },
+            {
+                "name": "mountlist_freeall",
+                "start": 176,
+                "end": 186
+            },
+            {
+                "name": "mountlist_list",
+                "start": 188,
+                "end": 251
+            }
+        ],
+        "utils/nfsdcltrack/nfsdcltrack.c": [
+            {
+                "name": "usage",
+                "start": 94,
+                "end": 104
+            },
+            {
+                "name": "hex_to_bin",
+                "start": 116,
+                "end": 125
+            },
+            {
+                "name": "hex_str_to_bin",
+                "start": 141,
+                "end": 169
+            },
+            {
+                "name": "cltrack_set_caps",
+                "start": 178,
+                "end": 211
+            },
+            {
+                "name": "cltrack_init",
+                "start": 213,
+                "end": 255
+            },
+            {
+                "name": "cltrack_create",
+                "start": 257,
+                "end": 276
+            },
+            {
+                "name": "cltrack_remove",
+                "start": 278,
+                "end": 297
+            },
+            {
+                "name": "cltrack_check_legacy",
+                "start": 299,
+                "end": 339
+            },
+            {
+                "name": "cltrack_check",
+                "start": 341,
+                "end": 362
+            },
+            {
+                "name": "cltrack_legacy_gracedone",
+                "start": 365,
+                "end": 411
+            },
+            {
+                "name": "cltrack_gracedone",
+                "start": 413,
+                "end": 443
+            },
+            {
+                "name": "find_cmd",
+                "start": 445,
+                "end": 459
+            },
+            {
+                "name": "main",
+                "start": 461,
+                "end": 532
+            }
+        ],
+        "utils/nfsdcltrack/sqlite.c": [
+            {
+                "name": "mkdir_if_not_exist",
+                "start": 73,
+                "end": 91
+            },
+            {
+                "name": "sqlite_prepare_dbh",
+                "start": 94,
+                "end": 124
+            },
+            {
+                "name": "sqlite_maindb_init",
+                "start": 134,
+                "end": 223
+            },
+            {
+                "name": "sqlite_insert_client",
+                "start": 230,
+                "end": 264
+            },
+            {
+                "name": "sqlite_remove_client",
+                "start": 267,
+                "end": 300
+            },
+            {
+                "name": "sqlite_check_client",
+                "start": 307,
+                "end": 373
+            },
+            {
+                "name": "sqlite_remove_unreclaimed",
+                "start": 378,
+                "end": 400
+            }
+        ],
+        "utils/mount/token.c": [
+            {
+                "name": "find_next_nondelimiter",
+                "start": 52,
+                "end": 56
+            },
+            {
+                "name": "find_next_delimiter",
+                "start": 58,
+                "end": 81
+            },
+            {
+                "name": "next_token",
+                "start": 93,
+                "end": 117
+            },
+            {
+                "name": "init_tokenizer",
+                "start": 126,
+                "end": 137
+            },
+            {
+                "name": "tokenizer_error",
+                "start": 144,
+                "end": 147
+            },
+            {
+                "name": "end_tokenizer",
+                "start": 154,
+                "end": 157
+            }
+        ],
+        "utils/mount/mount_config.h": [
+            {
+                "name": "mount_config_opts",
+                "start": 44,
+                "end": 48
+            }
+        ],
+        "utils/mount/stropts.h": [
+            {
+                "name": "nfsmount_string",
+                "start": 27,
+                "end": 28
+            }
+        ],
+        "utils/mount/version.h": [
+            {
+                "name": "MAKE_VERSION",
+                "start": 31,
+                "end": 35
+            },
+            {
+                "name": "linux_version_code",
+                "start": 37,
+                "end": 51
+            }
+        ],
+        "utils/mount/parse_opt.h": [
+            {
+                "name": "po_replace",
+                "start": 42,
+                "end": 43
+            },
+            {
+                "name": "po_get_numeric",
+                "start": 49,
+                "end": 50
+            },
+            {
+                "name": "po_rightmost",
+                "start": 51,
+                "end": 52
+            }
+        ],
+        "utils/mount/mount_libmount.c": [
+            {
+                "name": "store_mount_options",
+                "start": 64,
+                "end": 77
+            },
+            {
+                "name": "retrieve_mount_options",
+                "start": 84,
+                "end": 96
+            },
+            {
+                "name": "try_mount",
+                "start": 98,
+                "end": 141
+            },
+            {
+                "name": "is_vers4",
+                "start": 144,
+                "end": 170
+            },
+            {
+                "name": "umount_main",
+                "start": 172,
+                "end": 267
+            },
+            {
+                "name": "mount_main",
+                "start": 269,
+                "end": 417
+            },
+            {
+                "name": "main",
+                "start": 419,
+                "end": 443
+            }
+        ],
+        "utils/mount/network.h": [
+            {
+                "name": "nfs_probe_bothports",
+                "start": 43,
+                "end": 45
+            },
+            {
+                "name": "nfs_lookup",
+                "start": 47,
+                "end": 48
+            },
+            {
+                "name": "nfs_present_sockaddr",
+                "start": 50,
+                "end": 51
+            },
+            {
+                "name": "nfs_callback_address",
+                "start": 52,
+                "end": 53
+            },
+            {
+                "name": "clnt_ping",
+                "start": 54,
+                "end": 56
+            },
+            {
+                "name": "nfs_options2pmap",
+                "start": 65,
+                "end": 66
+            },
+            {
+                "name": "nfs_advise_umount",
+                "start": 73,
+                "end": 74
+            },
+            {
+                "name": "nfs_umount_do_umnt",
+                "start": 78,
+                "end": 79
+            }
+        ],
+        "utils/mount/utils.c": [
+            {
+                "name": "discover_nfs_mount_data_version",
+                "start": 53,
+                "end": 81
+            },
+            {
+                "name": "print_one",
+                "start": 83,
+                "end": 92
+            },
+            {
+                "name": "mount_usage",
+                "start": 94,
+                "end": 108
+            },
+            {
+                "name": "umount_usage",
+                "start": 110,
+                "end": 119
+            },
+            {
+                "name": "chk_mountpoint",
+                "start": 121,
+                "end": 139
+            },
+            {
+                "name": "nfs_umount23",
+                "start": 156,
+                "end": 175
+            }
+        ],
+        "utils/mount/parse_dev.c": [
+            {
+                "name": "nfs_pdn_no_devname_err",
+                "start": 42,
+                "end": 46
+            },
+            {
+                "name": "nfs_pdn_hostname_too_long_err",
+                "start": 48,
+                "end": 52
+            },
+            {
+                "name": "nfs_pdn_pathname_too_long_err",
+                "start": 54,
+                "end": 58
+            },
+            {
+                "name": "nfs_pdn_bad_format_err",
+                "start": 60,
+                "end": 64
+            },
+            {
+                "name": "nfs_pdn_nomem_err",
+                "start": 66,
+                "end": 70
+            },
+            {
+                "name": "nfs_pdn_missing_brace_err",
+                "start": 72,
+                "end": 77
+            },
+            {
+                "name": "nfs_parse_simple_hostname",
+                "start": 82,
+                "end": 126
+            },
+            {
+                "name": "nfs_parse_square_bracket",
+                "start": 136,
+                "end": 177
+            },
+            {
+                "name": "nfs_parse_nfs_url",
+                "start": 186,
+                "end": 192
+            },
+            {
+                "name": "nfs_parse_devname",
+                "start": 209,
+                "end": 231
+            }
+        ],
+        "utils/mount/parse_opt.c": [
+            {
+                "name": "option_create",
+                "start": 65,
+                "end": 102
+            },
+            {
+                "name": "option_dup",
+                "start": 104,
+                "end": 133
+            },
+            {
+                "name": "option_destroy",
+                "start": 135,
+                "end": 140
+            },
+            {
+                "name": "options_init",
+                "start": 142,
+                "end": 146
+            },
+            {
+                "name": "options_create",
+                "start": 148,
+                "end": 157
+            },
+            {
+                "name": "options_empty",
+                "start": 159,
+                "end": 162
+            },
+            {
+                "name": "options_tail_insert",
+                "start": 164,
+                "end": 179
+            },
+            {
+                "name": "options_delete",
+                "start": 181,
+                "end": 202
+            },
+            {
+                "name": "po_destroy",
+                "start": 210,
+                "end": 217
+            },
+            {
+                "name": "po_split",
+                "start": 231,
+                "end": 260
+            },
+            {
+                "name": "po_dup",
+                "start": 267,
+                "end": 294
+            },
+            {
+                "name": "po_replace",
+                "start": 303,
+                "end": 317
+            },
+            {
+                "name": "po_join",
+                "start": 332,
+                "end": 374
+            },
+            {
+                "name": "po_append",
+                "start": 382,
+                "end": 391
+            },
+            {
+                "name": "po_contains",
+                "start": 399,
+                "end": 410
+            },
+            {
+                "name": "po_get",
+                "start": 424,
+                "end": 435
+            },
+            {
+                "name": "po_get_numeric",
+                "start": 475,
+                "end": 485
+            },
+            {
+                "name": "po_rightmost",
+                "start": 508,
+                "end": 522
+            },
+            {
+                "name": "po_remove_all",
+                "start": 531,
+                "end": 547
+            }
+        ],
+        "utils/mount/configfile.c": [
+            {
+                "name": "mountopts_alias",
+                "start": 80,
+                "end": 96
+            },
+            {
+                "name": "mountopts_convert",
+                "start": 102,
+                "end": 134
+            },
+            {
+                "name": "add_entry",
+                "start": 146,
+                "end": 163
+            },
+            {
+                "name": "lookup_entry",
+                "start": 168,
+                "end": 178
+            },
+            {
+                "name": "free_all",
+                "start": 182,
+                "end": 193
+            },
+            {
+                "name": "check_vers",
+                "start": 195,
+                "end": 222
+            },
+            {
+                "name": "default_value",
+                "start": 233,
+                "end": 274
+            },
+            {
+                "name": "conf_parse_mntopts",
+                "start": 280,
+                "end": 331
+            },
+            {
+                "name": "conf_get_mntopts",
+                "start": 341,
+                "end": 417
+            }
+        ],
+        "utils/mount/fstab.c": [
+            {
+                "name": "get_mtab_info",
+                "start": 36,
+                "end": 47
+            },
+            {
+                "name": "reset_mtab_info",
+                "start": 49,
+                "end": 52
+            },
+            {
+                "name": "mtab_does_not_exist",
+                "start": 54,
+                "end": 58
+            },
+            {
+                "name": "mtab_is_a_symlink",
+                "start": 60,
+                "end": 64
+            },
+            {
+                "name": "mtab_is_writable",
+                "start": 66,
+                "end": 83
+            },
+            {
+                "name": "mtab_head",
+                "start": 98,
+                "end": 104
+            },
+            {
+                "name": "procmounts_head",
+                "start": 106,
+                "end": 112
+            },
+            {
+                "name": "fstab_head",
+                "start": 114,
+                "end": 120
+            },
+            {
+                "name": "read_mntentchn",
+                "start": 144,
+                "end": 166
+            },
+            {
+                "name": "read_mounttable",
+                "start": 173,
+                "end": 198
+            },
+            {
+                "name": "read_procmounts",
+                "start": 205,
+                "end": 222
+            },
+            {
+                "name": "read_fstab",
+                "start": 224,
+                "end": 243
+            },
+            {
+                "name": "getmntdirbackward",
+                "start": 249,
+                "end": 260
+            },
+            {
+                "name": "getprocmntdirbackward",
+                "start": 266,
+                "end": 277
+            },
+            {
+                "name": "getmntdevbackward",
+                "start": 283,
+                "end": 294
+            },
+            {
+                "name": "getfsfile",
+                "start": 297,
+                "end": 307
+            },
+            {
+                "name": "getfsspec",
+                "start": 310,
+                "end": 320
+            },
+            {
+                "name": "handler",
+                "start": 334,
+                "end": 337
+            },
+            {
+                "name": "setlkw_timeout",
+                "start": 339,
+                "end": 342
+            },
+            {
+                "name": "unlock_mtab",
+                "start": 345,
+                "end": 353
+            },
+            {
+                "name": "lock_mtab",
+                "start": 375,
+                "end": 526
+            },
+            {
+                "name": "update_mtab",
+                "start": 538,
+                "end": 649
+            }
+        ],
+        "utils/mount/stropts.c": [
+            {
+                "name": "nfs_parse_retry_option",
+                "start": 121,
+                "end": 145
+            },
+            {
+                "name": "nfs_append_generic_address_option",
+                "start": 153,
+                "end": 178
+            },
+            {
+                "name": "nfs_append_addr_option",
+                "start": 192,
+                "end": 198
+            },
+            {
+                "name": "nfs_append_clientaddr_option",
+                "start": 207,
+                "end": 222
+            },
+            {
+                "name": "nfs_fix_mounthost_option",
+                "start": 230,
+                "end": 259
+            },
+            {
+                "name": "nfs_verify_lock_option",
+                "start": 271,
+                "end": 285
+            },
+            {
+                "name": "nfs_append_sloppy_option",
+                "start": 287,
+                "end": 295
+            },
+            {
+                "name": "nfs_set_version",
+                "start": 297,
+                "end": 334
+            },
+            {
+                "name": "nfs_validate_options",
+                "start": 341,
+                "end": 375
+            },
+            {
+                "name": "nfs_extract_server_addresses",
+                "start": 383,
+                "end": 405
+            },
+            {
+                "name": "nfs_construct_new_options",
+                "start": 407,
+                "end": 471
+            },
+            {
+                "name": "nfs_rewrite_pmap_mount_options",
+                "start": 486,
+                "end": 564
+            },
+            {
+                "name": "nfs_sys_mount",
+                "start": 572,
+                "end": 595
+            },
+            {
+                "name": "nfs_do_mount_v3v2",
+                "start": 597,
+                "end": 648
+            },
+            {
+                "name": "nfs_try_mount_v3v2",
+                "start": 656,
+                "end": 679
+            },
+            {
+                "name": "nfs_do_mount_v4",
+                "start": 681,
+                "end": 745
+            },
+            {
+                "name": "nfs_try_mount_v4",
+                "start": 753,
+                "end": 775
+            },
+            {
+                "name": "nfs_autonegotiate",
+                "start": 789,
+                "end": 816
+            },
+            {
+                "name": "nfs_try_mount",
+                "start": 824,
+                "end": 844
+            },
+            {
+                "name": "nfs_is_permanent_error",
+                "start": 859,
+                "end": 870
+            },
+            {
+                "name": "nfsmount_fg",
+                "start": 879,
+                "end": 913
+            },
+            {
+                "name": "nfsmount_parent",
+                "start": 922,
+                "end": 935
+            },
+            {
+                "name": "nfsmount_child",
+                "start": 945,
+                "end": 975
+            },
+            {
+                "name": "nfsmount_bg",
+                "start": 982,
+                "end": 988
+            },
+            {
+                "name": "nfs_remount",
+                "start": 1003,
+                "end": 1008
+            },
+            {
+                "name": "nfsmount_start",
+                "start": 1021,
+                "end": 1036
+            },
+            {
+                "name": "nfsmount_string",
+                "start": 1051,
+                "end": 1076
+            }
+        ],
+        "utils/mount/nfsumount.c": [
+            {
+                "name": "try_remount",
+                "start": 62,
+                "end": 83
+            },
+            {
+                "name": "del_mtab",
+                "start": 85,
+                "end": 140
+            },
+            {
+                "name": "nfs_umount_is_vers4",
+                "start": 152,
+                "end": 213
+            },
+            {
+                "name": "nfsumount",
+                "start": 225,
+                "end": 351
+            }
+        ],
+        "utils/mount/error.c": [
+            {
+                "name": "rpc_strerror",
+                "start": 57,
+                "end": 84
+            },
+            {
+                "name": "rpc_mount_errors",
+                "start": 95,
+                "end": 138
+            },
+            {
+                "name": "sys_mount_errors",
+                "start": 150,
+                "end": 193
+            },
+            {
+                "name": "mount_error",
+                "start": 202,
+                "end": 250
+            },
+            {
+                "name": "umount_error",
+                "start": 258,
+                "end": 294
+            },
+            {
+                "name": "nfs_strerror",
+                "start": 342,
+                "end": 353
+            }
+        ],
+        "utils/mount/nfsmount.c": [
+            {
+                "name": "nfs3_mount",
+                "start": 106,
+                "end": 113
+            },
+            {
+                "name": "nfs2_mount",
+                "start": 115,
+                "end": 122
+            },
+            {
+                "name": "nfs_call_mount",
+                "start": 124,
+                "end": 162
+            },
+            {
+                "name": "parse_options",
+                "start": 164,
+                "end": 456
+            },
+            {
+                "name": "nfsmnt_check_compat",
+                "start": 458,
+                "end": 488
+            },
+            {
+                "name": "nfsmount",
+                "start": 490,
+                "end": 871
+            }
+        ],
+        "utils/mount/nfs4mount.c": [
+            {
+                "name": "parse_sec",
+                "start": 87,
+                "end": 113
+            },
+            {
+                "name": "parse_devname",
+                "start": 115,
+                "end": 135
+            },
+            {
+                "name": "fill_ipv4_sockaddr",
+                "start": 137,
+                "end": 155
+            },
+            {
+                "name": "get_my_ipv4addr",
+                "start": 157,
+                "end": 172
+            },
+            {
+                "name": "nfs4mount",
+                "start": 174,
+                "end": 480
+            }
+        ],
+        "utils/mount/mount.c": [
+            {
+                "name": "fix_opts_string",
+                "start": 155,
+                "end": 182
+            },
+            {
+                "name": "init_mntent",
+                "start": 184,
+                "end": 196
+            },
+            {
+                "name": "create_mtab",
+                "start": 199,
+                "end": 248
+            },
+            {
+                "name": "add_mtab",
+                "start": 250,
+                "end": 292
+            },
+            {
+                "name": "parse_opt",
+                "start": 294,
+                "end": 315
+            },
+            {
+                "name": "parse_opts",
+                "start": 323,
+                "end": 352
+            },
+            {
+                "name": "try_mount",
+                "start": 354,
+                "end": 379
+            },
+            {
+                "name": "main",
+                "start": 381,
+                "end": 557
+            }
+        ],
+        "utils/mount/network.c": [
+            {
+                "name": "nfsvers_to_mnt",
+                "start": 119,
+                "end": 124
+            },
+            {
+                "name": "mntvers_to_nfs",
+                "start": 129,
+                "end": 134
+            },
+            {
+                "name": "nfs_default_proto",
+                "start": 189,
+                "end": 192
+            },
+            {
+                "name": "nfs_lookup",
+                "start": 205,
+                "end": 249
+            },
+            {
+                "name": "nfs_gethostbyname",
+                "start": 258,
+                "end": 263
+            },
+            {
+                "name": "nfs_string_to_sockaddr",
+                "start": 281,
+                "end": 308
+            },
+            {
+                "name": "nfs_present_sockaddr",
+                "start": 326,
+                "end": 354
+            },
+            {
+                "name": "connect_to",
+                "start": 361,
+                "end": 402
+            },
+            {
+                "name": "get_socket",
+                "start": 409,
+                "end": 482
+            },
+            {
+                "name": "nfs_pp_debug",
+                "start": 484,
+                "end": 504
+            },
+            {
+                "name": "nfs_pp_debug2",
+                "start": 506,
+                "end": 519
+            },
+            {
+                "name": "nfs_probe_port",
+                "start": 535,
+                "end": 600
+            },
+            {
+                "name": "nfs_probe_nfsport",
+                "start": 614,
+                "end": 630
+            },
+            {
+                "name": "nfs_probe_mntport",
+                "start": 645,
+                "end": 657
+            },
+            {
+                "name": "nfs_probe_version_fixed",
+                "start": 668,
+                "end": 678
+            },
+            {
+                "name": "nfs_probe_bothports",
+                "start": 695,
+                "end": 738
+            },
+            {
+                "name": "probe_bothports",
+                "start": 753,
+                "end": 762
+            },
+            {
+                "name": "nfs_probe_statd",
+                "start": 764,
+                "end": 774
+            },
+            {
+                "name": "start_statd",
+                "start": 781,
+                "end": 813
+            },
+            {
+                "name": "nfs_advise_umount",
+                "start": 828,
+                "end": 886
+            },
+            {
+                "name": "nfs_call_umount",
+                "start": 899,
+                "end": 922
+            },
+            {
+                "name": "mnt_openclnt",
+                "start": 931,
+                "end": 972
+            },
+            {
+                "name": "mnt_closeclnt",
+                "start": 980,
+                "end": 985
+            },
+            {
+                "name": "clnt_ping",
+                "start": 1006,
+                "end": 1073
+            },
+            {
+                "name": "nfs_ca_sockname",
+                "start": 1084,
+                "end": 1123
+            },
+            {
+                "name": "nfs_ca_gai",
+                "start": 1130,
+                "end": 1148
+            },
+            {
+                "name": "nfs_callback_address",
+                "start": 1165,
+                "end": 1189
+            },
+            {
+                "name": "nfs_nfs_program",
+                "start": 1198,
+                "end": 1223
+            },
+            {
+                "name": "nfs_nfs_version",
+                "start": 1229,
+                "end": 1286
+            },
+            {
+                "name": "nfs_nfs_protocol",
+                "start": 1293,
+                "end": 1329
+            },
+            {
+                "name": "nfs_nfs_port",
+                "start": 1335,
+                "end": 1360
+            },
+            {
+                "name": "nfs_verify_family",
+                "start": 1373,
+                "end": 1380
+            },
+            {
+                "name": "nfs_nfs_proto_family",
+                "start": 1388,
+                "end": 1421
+            },
+            {
+                "name": "nfs_mount_program",
+                "start": 1430,
+                "end": 1455
+            },
+            {
+                "name": "nfs_mount_version",
+                "start": 1461,
+                "end": 1486
+            },
+            {
+                "name": "nfs_mount_protocol",
+                "start": 1493,
+                "end": 1521
+            },
+            {
+                "name": "nfs_mount_port",
+                "start": 1527,
+                "end": 1552
+            },
+            {
+                "name": "nfs_mount_proto_family",
+                "start": 1559,
+                "end": 1590
+            },
+            {
+                "name": "nfs_options2pmap",
+                "start": 1601,
+                "end": 1623
+            },
+            {
+                "name": "nfs_umount_hostname",
+                "start": 1631,
+                "end": 1651
+            },
+            {
+                "name": "nfs_umount_do_umnt",
+                "start": 1658,
+                "end": 1691
+            }
+        ],
+        "utils/nfsidmap/nfsidmap.c": [
+            {
+                "name": "id_lookup",
+                "start": 42,
+                "end": 83
+            },
+            {
+                "name": "name_lookup",
+                "start": 88,
+                "end": 121
+            },
+            {
+                "name": "keyring_clear",
+                "start": 125,
+                "end": 164
+            },
+            {
+                "name": "key_revoke",
+                "start": 168,
+                "end": 225
+            },
+            {
+                "name": "main",
+                "start": 227,
+                "end": 332
+            }
+        ],
+        "utils/exportfs/exportfs.c": [
+            {
+                "name": "grab_lockfile",
+                "start": 69,
+                "end": 75
+            },
+            {
+                "name": "release_lockfile",
+                "start": 76,
+                "end": 81
+            },
+            {
+                "name": "main",
+                "start": 83,
+                "end": 216
+            },
+            {
+                "name": "exports_update_one",
+                "start": 218,
+                "end": 248
+            },
+            {
+                "name": "exports_update",
+                "start": 256,
+                "end": 267
+            },
+            {
+                "name": "export_all",
+                "start": 273,
+                "end": 292
+            },
+            {
+                "name": "exportfs",
+                "start": 295,
+                "end": 340
+            },
+            {
+                "name": "unexportfs",
+                "start": 342,
+                "end": 399
+            },
+            {
+                "name": "can_test",
+                "start": 401,
+                "end": 416
+            },
+            {
+                "name": "test_export",
+                "start": 418,
+                "end": 434
+            },
+            {
+                "name": "validate_export",
+                "start": 436,
+                "end": 479
+            },
+            {
+                "name": "is_hostname",
+                "start": 481,
+                "end": 495
+            },
+            {
+                "name": "address_list",
+                "start": 502,
+                "end": 525
+            },
+            {
+                "name": "matchhostname",
+                "start": 527,
+                "end": 566
+            },
+            {
+                "name": "export_d_read",
+                "start": 570,
+                "end": 622
+            },
+            {
+                "name": "dumpopt",
+                "start": 624,
+                "end": 634
+            },
+            {
+                "name": "dump",
+                "start": 636,
+                "end": 719
+            },
+            {
+                "name": "error",
+                "start": 721,
+                "end": 726
+            },
+            {
+                "name": "usage",
+                "start": 728,
+                "end": 733
+            }
+        ],
+        "utils/idmapd/idmapd.c": [
+            {
+                "name": "flush_nfsd_cache",
+                "start": 174,
+                "end": 190
+            },
+            {
+                "name": "flush_nfsd_idmap_cache",
+                "start": 192,
+                "end": 203
+            },
+            {
+                "name": "main",
+                "start": 205,
+                "end": 392
+            },
+            {
+                "name": "dirscancb",
+                "start": 394,
+                "end": 477
+            },
+            {
+                "name": "svrreopen",
+                "start": 479,
+                "end": 483
+            },
+            {
+                "name": "clntscancb",
+                "start": 485,
+                "end": 497
+            },
+            {
+                "name": "nfsdcb",
+                "start": 499,
+                "end": 640
+            },
+            {
+                "name": "imconv",
+                "start": 642,
+                "end": 674
+            },
+            {
+                "name": "nfscb",
+                "start": 676,
+                "end": 706
+            },
+            {
+                "name": "nfsdreopen_one",
+                "start": 708,
+                "end": 729
+            },
+            {
+                "name": "nfsdreopen",
+                "start": 731,
+                "end": 737
+            },
+            {
+                "name": "nfsdopen",
+                "start": 739,
+                "end": 744
+            },
+            {
+                "name": "nfsdopenone",
+                "start": 746,
+                "end": 764
+            },
+            {
+                "name": "nfsopen",
+                "start": 766,
+                "end": 790
+            },
+            {
+                "name": "idtonameres",
+                "start": 792,
+                "end": 825
+            },
+            {
+                "name": "nametoidres",
+                "start": 827,
+                "end": 857
+            },
+            {
+                "name": "addfield",
+                "start": 859,
+                "end": 893
+            },
+            {
+                "name": "getfield",
+                "start": 895,
+                "end": 927
+            },
+            {
+                "name": "mydaemon",
+                "start": 936,
+                "end": 987
+            },
+            {
+                "name": "release_parent",
+                "start": 988,
+                "end": 1001
+            }
+        ],
+        "utils/showmount/showmount.c": [
+            {
+                "name": "dump_cmp",
+                "start": 66,
+                "end": 71
+            },
+            {
+                "name": "usage",
+                "start": 73,
+                "end": 79
+            },
+            {
+                "name": "nfs_get_mount_client",
+                "start": 102,
+                "end": 116
+            },
+            {
+                "name": "main",
+                "start": 118,
+                "end": 322
+            }
+        ],
+        "utils/statd/statd.h": [
+            {
+                "name": "statd_present_address",
+                "start": 26,
+                "end": 27
+            },
+            {
+                "name": "statd_canonical_name",
+                "start": 28,
+                "end": 29
+            }
+        ],
+        "utils/statd/hostname.c": [
+            {
+                "name": "statd_present_address",
+                "start": 82,
+                "end": 101
+            },
+            {
+                "name": "get_addrinfo",
+                "start": 108,
+                "end": 127
+            },
+            {
+                "name": "get_nameinfo",
+                "start": 146,
+                "end": 169
+            },
+            {
+                "name": "statd_canonical_name",
+                "start": 187,
+                "end": 226
+            },
+            {
+                "name": "statd_canonical_list",
+                "start": 237,
+                "end": 269
+            },
+            {
+                "name": "statd_matchhostname",
+                "start": 283,
+                "end": 321
+            }
+        ],
+        "utils/statd/svc_run.c": [
+            {
+                "name": "my_svc_exit",
+                "start": 70,
+                "end": 74
+            },
+            {
+                "name": "my_svc_run",
+                "start": 80,
+                "end": 132
+            }
+        ],
+        "utils/statd/callback.c": [
+            {
+                "name": "sm_notify_1_svc",
+                "start": 79,
+                "end": 118
+            }
+        ],
+        "utils/statd/misc.c": [
+            {
+                "name": "xmalloc",
+                "start": 23,
+                "end": 35
+            },
+            {
+                "name": "xstrdup",
+                "start": 41,
+                "end": 51
+            }
+        ],
+        "utils/statd/rmtcall.c": [
+            {
+                "name": "statd_get_socket",
+                "start": 66,
+                "end": 109
+            },
+            {
+                "name": "recv_rply",
+                "start": 111,
+                "end": 159
+            },
+            {
+                "name": "process_entry",
+                "start": 164,
+                "end": 210
+            },
+            {
+                "name": "process_reply",
+                "start": 215,
+                "end": 244
+            },
+            {
+                "name": "process_notify_list",
+                "start": 251,
+                "end": 274
+            }
+        ],
+        "utils/statd/statd.c": [
+            {
+                "name": "statd_unregister",
+                "start": 90,
+                "end": 93
+            },
+            {
+                "name": "killer",
+                "start": 98,
+                "end": 104
+            },
+            {
+                "name": "sigusr",
+                "start": 106,
+                "end": 113
+            },
+            {
+                "name": "log_modes",
+                "start": 118,
+                "end": 136
+            },
+            {
+                "name": "usage",
+                "start": 142,
+                "end": 157
+            },
+            {
+                "name": "create_pidfile",
+                "start": 162,
+                "end": 176
+            },
+            {
+                "name": "truncate_pidfile",
+                "start": 178,
+                "end": 186
+            },
+            {
+                "name": "run_sm_notify",
+                "start": 188,
+                "end": 210
+            },
+            {
+                "name": "main",
+                "start": 214,
+                "end": 494
+            }
+        ],
+        "utils/statd/monitor.c": [
+            {
+                "name": "caller_is_localhost",
+                "start": 41,
+                "end": 56
+            },
+            {
+                "name": "sm_mon_1_svc",
+                "start": 61,
+                "end": 213
+            },
+            {
+                "name": "load_one_host",
+                "start": 215,
+                "end": 244
+            },
+            {
+                "name": "load_state",
+                "start": 246,
+                "end": 253
+            },
+            {
+                "name": "sm_unmon_1_svc",
+                "start": 263,
+                "end": 325
+            },
+            {
+                "name": "sm_unmon_all_1_svc",
+                "start": 328,
+                "end": 383
+            }
+        ],
+        "utils/statd/stat.c": [
+            {
+                "name": "sm_stat_1_svc",
+                "start": 40,
+                "end": 60
+            }
+        ],
+        "utils/statd/notlist.c": [
+            {
+                "name": "nlist_new",
+                "start": 51,
+                "end": 65
+            },
+            {
+                "name": "nlist_insert",
+                "start": 74,
+                "end": 94
+            },
+            {
+                "name": "nlist_insert_timer",
+                "start": 107,
+                "end": 147
+            },
+            {
+                "name": "nlist_remove",
+                "start": 155,
+                "end": 177
+            },
+            {
+                "name": "nlist_clone",
+                "start": 183,
+                "end": 195
+            },
+            {
+                "name": "nlist_free",
+                "start": 203,
+                "end": 214
+            },
+            {
+                "name": "nlist_kill",
+                "start": 219,
+                "end": 224
+            },
+            {
+                "name": "nlist_gethost",
+                "start": 229,
+                "end": 241
+            }
+        ],
+        "utils/statd/simulate.c": [
+            {
+                "name": "simulator",
+                "start": 38,
+                "end": 67
+            },
+            {
+                "name": "simulate_mon",
+                "start": 69,
+                "end": 104
+            },
+            {
+                "name": "simulate_unmon",
+                "start": 106,
+                "end": 131
+            },
+            {
+                "name": "simulate_unmon_all",
+                "start": 133,
+                "end": 156
+            },
+            {
+                "name": "simulate_crash",
+                "start": 158,
+                "end": 170
+            },
+            {
+                "name": "simulate_stat",
+                "start": 172,
+                "end": 195
+            },
+            {
+                "name": "sim_killer",
+                "start": 197,
+                "end": 202
+            },
+            {
+                "name": "daemon_simulator",
+                "start": 204,
+                "end": 215
+            },
+            {
+                "name": "sim_sm_mon_1_svc",
+                "start": 217,
+                "end": 226
+            }
+        ],
+        "utils/statd/sm-notify.c": [
+            {
+                "name": "smn_lookup",
+                "start": 77,
+                "end": 95
+            },
+            {
+                "name": "smn_get_hostname",
+                "start": 114,
+                "end": 136
+            },
+            {
+                "name": "smn_verify_my_name",
+                "start": 152,
+                "end": 190
+            },
+            {
+                "name": "smn_alloc_host",
+                "start": 192,
+                "end": 234
+            },
+            {
+                "name": "smn_forget_host",
+                "start": 236,
+                "end": 251
+            },
+            {
+                "name": "smn_get_host",
+                "start": 253,
+                "end": 267
+            },
+            {
+                "name": "smn_socket",
+                "start": 322,
+                "end": 339
+            },
+            {
+                "name": "smn_bind_address",
+                "start": 346,
+                "end": 374
+            },
+            {
+                "name": "smn_bindresvport",
+                "start": 384,
+                "end": 393
+            },
+            {
+                "name": "smn_create_socket",
+                "start": 402,
+                "end": 451
+            },
+            {
+                "name": "main",
+                "start": 453,
+                "end": 579
+            },
+            {
+                "name": "notify",
+                "start": 584,
+                "end": 641
+            },
+            {
+                "name": "notify_host",
+                "start": 646,
+                "end": 697
+            },
+            {
+                "name": "smn_defer",
+                "start": 699,
+                "end": 706
+            },
+            {
+                "name": "smn_schedule",
+                "start": 708,
+                "end": 716
+            },
+            {
+                "name": "recv_rpcbind_reply",
+                "start": 721,
+                "end": 736
+            },
+            {
+                "name": "recv_notify_reply",
+                "start": 745,
+                "end": 757
+            },
+            {
+                "name": "recv_reply",
+                "start": 762,
+                "end": 798
+            },
+            {
+                "name": "insert_host",
+                "start": 803,
+                "end": 827
+            },
+            {
+                "name": "find_host",
+                "start": 832,
+                "end": 846
+            },
+            {
+                "name": "record_pid",
+                "start": 854,
+                "end": 873
+            }
+        ],
+        "utils/statd/simu.c": [
+            {
+                "name": "sm_simu_crash_1_svc",
+                "start": 29,
+                "end": 59
+            }
+        ],
+        "utils/nfsstat/nfsstat.c": [
+            {
+                "name": "print_numbers",
+                "start": 224,
+                "end": 225
+            },
+            {
+                "name": "print_callstats",
+                "start": 226,
+                "end": 227
+            },
+            {
+                "name": "print_callstats_list",
+                "start": 228,
+                "end": 229
+            },
+            {
+                "name": "get_stats",
+                "start": 237,
+                "end": 238
+            },
+            {
+                "name": "usage",
+                "start": 264,
+                "end": 294
+            },
+            {
+                "name": "main",
+                "start": 317,
+                "end": 511
+            },
+            {
+                "name": "print_all_stats",
+                "start": 513,
+                "end": 521
+            },
+            {
+                "name": "print_server_stats",
+                "start": 523,
+                "end": 614
+            },
+            {
+                "name": "print_client_stats",
+                "start": 615,
+                "end": 667
+            },
+            {
+                "name": "print_clnt_list",
+                "start": 669,
+                "end": 701
+            },
+            {
+                "name": "print_serv_list",
+                "start": 702,
+                "end": 737
+            },
+            {
+                "name": "print_stats_list",
+                "start": 738,
+                "end": 746
+            },
+            {
+                "name": "get_stat_info",
+                "start": 748,
+                "end": 759
+            },
+            {
+                "name": "print_numbers",
+                "start": 761,
+                "end": 770
+            },
+            {
+                "name": "print_callstats",
+                "start": 772,
+                "end": 796
+            },
+            {
+                "name": "print_callstats_list",
+                "start": 798,
+                "end": 818
+            },
+            {
+                "name": "parse_raw_statfile",
+                "start": 822,
+                "end": 864
+            },
+            {
+                "name": "parse_pretty_statfile",
+                "start": 867,
+                "end": 937
+            },
+            {
+                "name": "mounts",
+                "start": 939,
+                "end": 985
+            },
+            {
+                "name": "get_stats",
+                "start": 987,
+                "end": 1031
+            },
+            {
+                "name": "has_stats",
+                "start": 1039,
+                "end": 1043
+            },
+            {
+                "name": "has_rpcstats",
+                "start": 1044,
+                "end": 1052
+            },
+            {
+                "name": "diff_stats",
+                "start": 1058,
+                "end": 1092
+            },
+            {
+                "name": "unpause",
+                "start": 1094,
+                "end": 1106
+            },
+            {
+                "name": "update_old_counters",
+                "start": 1108,
+                "end": 1116
+            }
+        ],
+        "support/export/hostname.c": [
+            {
+                "name": "host_ntop",
+                "start": 65,
+                "end": 75
+            },
+            {
+                "name": "host_pton",
+                "start": 94,
+                "end": 146
+            },
+            {
+                "name": "host_addrinfo",
+                "start": 156,
+                "end": 188
+            },
+            {
+                "name": "host_canonname",
+                "start": 237,
+                "end": 253
+            },
+            {
+                "name": "host_reliable_addrinfo",
+                "start": 269,
+                "end": 306
+            },
+            {
+                "name": "host_numeric_addrinfo",
+                "start": 364,
+                "end": 395
+            }
+        ],
+        "support/export/nfsctl.c": [
+            {
+                "name": "export_export",
+                "start": 25,
+                "end": 45
+            },
+            {
+                "name": "export_unexport",
+                "start": 47,
+                "end": 56
+            },
+            {
+                "name": "str_tolower",
+                "start": 58,
+                "end": 64
+            },
+            {
+                "name": "cltsetup",
+                "start": 66,
+                "end": 93
+            },
+            {
+                "name": "expsetup",
+                "start": 95,
+                "end": 118
+            }
+        ],
+        "support/export/xtab.c": [
+            {
+                "name": "xtab_read",
+                "start": 27,
+                "end": 67
+            },
+            {
+                "name": "xtab_mount_read",
+                "start": 69,
+                "end": 83
+            },
+            {
+                "name": "xtab_export_read",
+                "start": 85,
+                "end": 89
+            },
+            {
+                "name": "xtab_write",
+                "start": 97,
+                "end": 130
+            },
+            {
+                "name": "xtab_export_write",
+                "start": 132,
+                "end": 136
+            },
+            {
+                "name": "xtab_mount_write",
+                "start": 138,
+                "end": 142
+            },
+            {
+                "name": "xtab_append",
+                "start": 144,
+                "end": 159
+            },
+            {
+                "name": "cond_rename",
+                "start": 165,
+                "end": 203
+            }
+        ],
+        "support/export/client.c": [
+            {
+                "name": "init_addrlist",
+                "start": 39,
+                "end": 53
+            },
+            {
+                "name": "client_free",
+                "start": 55,
+                "end": 60
+            },
+            {
+                "name": "init_netmask4",
+                "start": 62,
+                "end": 116
+            },
+            {
+                "name": "init_netmask6",
+                "start": 178,
+                "end": 182
+            },
+            {
+                "name": "init_subnetwork",
+                "start": 190,
+                "end": 228
+            },
+            {
+                "name": "client_init",
+                "start": 230,
+                "end": 246
+            },
+            {
+                "name": "client_add",
+                "start": 248,
+                "end": 258
+            },
+            {
+                "name": "client_lookup",
+                "start": 268,
+                "end": 314
+            },
+            {
+                "name": "client_dup",
+                "start": 325,
+                "end": 343
+            },
+            {
+                "name": "client_release",
+                "start": 349,
+                "end": 355
+            },
+            {
+                "name": "client_freeall",
+                "start": 361,
+                "end": 374
+            },
+            {
+                "name": "client_resolve",
+                "start": 383,
+                "end": 394
+            },
+            {
+                "name": "client_compose",
+                "start": 408,
+                "end": 423
+            },
+            {
+                "name": "client_member",
+                "start": 433,
+                "end": 448
+            },
+            {
+                "name": "name_cmp",
+                "start": 450,
+                "end": 461
+            },
+            {
+                "name": "add_name",
+                "start": 463,
+                "end": 500
+            },
+            {
+                "name": "check_fqdn",
+                "start": 507,
+                "end": 519
+            },
+            {
+                "name": "mask_match",
+                "start": 521,
+                "end": 525
+            },
+            {
+                "name": "check_subnet_v4",
+                "start": 527,
+                "end": 543
+            },
+            {
+                "name": "check_subnet_v6",
+                "start": 573,
+                "end": 579
+            },
+            {
+                "name": "check_subnetwork",
+                "start": 587,
+                "end": 600
+            },
+            {
+                "name": "check_wildcard",
+                "start": 607,
+                "end": 628
+            },
+            {
+                "name": "check_netgroup",
+                "start": 702,
+                "end": 707
+            },
+            {
+                "name": "client_check",
+                "start": 718,
+                "end": 740
+            },
+            {
+                "name": "client_gettype",
+                "start": 749,
+                "end": 785
+            }
+        ],
+        "support/export/mount_clnt.c": [
+            {
+                "name": "mountproc_null_1",
+                "start": 44,
+                "end": 57
+            },
+            {
+                "name": "mountproc_mnt_1",
+                "start": 59,
+                "end": 72
+            },
+            {
+                "name": "mountproc_dump_1",
+                "start": 74,
+                "end": 87
+            },
+            {
+                "name": "mountproc_umnt_1",
+                "start": 89,
+                "end": 102
+            },
+            {
+                "name": "mountproc_umntall_1",
+                "start": 104,
+                "end": 117
+            },
+            {
+                "name": "mountproc_export_1",
+                "start": 119,
+                "end": 132
+            },
+            {
+                "name": "mountproc_exportall_1",
+                "start": 134,
+                "end": 147
+            },
+            {
+                "name": "mountproc_null_2",
+                "start": 149,
+                "end": 162
+            },
+            {
+                "name": "mountproc_mnt_2",
+                "start": 164,
+                "end": 177
+            },
+            {
+                "name": "mountproc_dump_2",
+                "start": 179,
+                "end": 192
+            },
+            {
+                "name": "mountproc_umnt_2",
+                "start": 194,
+                "end": 207
+            },
+            {
+                "name": "mountproc_umntall_2",
+                "start": 209,
+                "end": 222
+            },
+            {
+                "name": "mountproc_export_2",
+                "start": 224,
+                "end": 237
+            },
+            {
+                "name": "mountproc_exportall_2",
+                "start": 239,
+                "end": 252
+            },
+            {
+                "name": "mountproc_pathconf_2",
+                "start": 254,
+                "end": 267
+            },
+            {
+                "name": "mountproc3_null_3",
+                "start": 269,
+                "end": 282
+            },
+            {
+                "name": "mountproc3_mnt_3",
+                "start": 284,
+                "end": 297
+            },
+            {
+                "name": "mountproc3_dump_3",
+                "start": 299,
+                "end": 312
+            },
+            {
+                "name": "mountproc3_umnt_3",
+                "start": 314,
+                "end": 327
+            },
+            {
+                "name": "mountproc3_umntall_3",
+                "start": 329,
+                "end": 342
+            },
+            {
+                "name": "mountproc3_export_3",
+                "start": 344,
+                "end": 357
+            }
+        ],
+        "support/export/mount_xdr.c": [
+            {
+                "name": "xdr_fhandle",
+                "start": 40,
+                "end": 48
+            },
+            {
+                "name": "xdr_fhstatus",
+                "start": 50,
+                "end": 66
+            },
+            {
+                "name": "xdr_dirpath",
+                "start": 68,
+                "end": 76
+            },
+            {
+                "name": "xdr_name",
+                "start": 78,
+                "end": 86
+            },
+            {
+                "name": "xdr_mountlist",
+                "start": 88,
+                "end": 96
+            },
+            {
+                "name": "xdr_mountbody",
+                "start": 98,
+                "end": 110
+            },
+            {
+                "name": "xdr_groups",
+                "start": 112,
+                "end": 120
+            },
+            {
+                "name": "xdr_groupnode",
+                "start": 122,
+                "end": 132
+            },
+            {
+                "name": "xdr_exports",
+                "start": 134,
+                "end": 142
+            },
+            {
+                "name": "xdr_exportnode",
+                "start": 144,
+                "end": 156
+            },
+            {
+                "name": "xdr_ppathcnf",
+                "start": 158,
+                "end": 275
+            },
+            {
+                "name": "xdr_fhandle3",
+                "start": 277,
+                "end": 285
+            },
+            {
+                "name": "xdr_mountstat3",
+                "start": 287,
+                "end": 295
+            },
+            {
+                "name": "xdr_mountres3_ok",
+                "start": 297,
+                "end": 308
+            },
+            {
+                "name": "xdr_mountres3",
+                "start": 310,
+                "end": 326
+            }
+        ],
+        "support/export/export.c": [
+            {
+                "name": "export_init",
+                "start": 25,
+                "end": 26
+            },
+            {
+                "name": "export_check",
+                "start": 28,
+                "end": 29
+            },
+            {
+                "name": "export_allowed_internal",
+                "start": 30,
+                "end": 32
+            },
+            {
+                "name": "exportent_release",
+                "start": 34,
+                "end": 43
+            },
+            {
+                "name": "export_free",
+                "start": 45,
+                "end": 50
+            },
+            {
+                "name": "warn_duplicated_exports",
+                "start": 52,
+                "end": 66
+            },
+            {
+                "name": "export_read",
+                "start": 73,
+                "end": 88
+            },
+            {
+                "name": "export_create",
+                "start": 98,
+                "end": 113
+            },
+            {
+                "name": "export_init",
+                "start": 115,
+                "end": 131
+            },
+            {
+                "name": "export_dup",
+                "start": 138,
+                "end": 164
+            },
+            {
+                "name": "export_add",
+                "start": 166,
+                "end": 192
+            },
+            {
+                "name": "export_find",
+                "start": 202,
+                "end": 219
+            },
+            {
+                "name": "export_allowed_internal",
+                "start": 221,
+                "end": 237
+            },
+            {
+                "name": "export_allowed",
+                "start": 247,
+                "end": 272
+            },
+            {
+                "name": "export_lookup",
+                "start": 283,
+                "end": 305
+            },
+            {
+                "name": "export_check",
+                "start": 307,
+                "end": 314
+            },
+            {
+                "name": "export_freeall",
+                "start": 320,
+                "end": 339
+            },
+            {
+                "name": "strtoint",
+                "start": 346,
+                "end": 357
+            },
+            {
+                "name": "export_hash",
+                "start": 362,
+                "end": 368
+            }
+        ],
+        "support/export/rmtab.c": [
+            {
+                "name": "rmtab_read_wildcard",
+                "start": 27,
+                "end": 54
+            },
+            {
+                "name": "rmtab_read",
+                "start": 56,
+                "end": 98
+            }
+        ],
+        "support/misc/from_local.c": [
+            {
+                "name": "grow_addrs",
+                "start": 140,
+                "end": 164
+            },
+            {
+                "name": "find_local",
+                "start": 167,
+                "end": 222
+            },
+            {
+                "name": "from_local",
+                "start": 235,
+                "end": 253
+            }
+        ],
+        "support/misc/mountpoint.c": [
+            {
+                "name": "is_mountpoint",
+                "start": 10,
+                "end": 39
+            }
+        ],
+        "support/nfs/xlog.c": [
+            {
+                "name": "xlog_open",
+                "start": 51,
+                "end": 62
+            },
+            {
+                "name": "xlog_stderr",
+                "start": 64,
+                "end": 68
+            },
+            {
+                "name": "xlog_syslog",
+                "start": 70,
+                "end": 74
+            },
+            {
+                "name": "xlog_toggle",
+                "start": 76,
+                "end": 98
+            },
+            {
+                "name": "xlog_config",
+                "start": 100,
+                "end": 109
+            },
+            {
+                "name": "xlog_sconfig",
+                "start": 111,
+                "end": 123
+            },
+            {
+                "name": "xlog_enabled",
+                "start": 125,
+                "end": 129
+            },
+            {
+                "name": "xlog_backend",
+                "start": 133,
+                "end": 186
+            },
+            {
+                "name": "xlog",
+                "start": 188,
+                "end": 196
+            },
+            {
+                "name": "xlog_warn",
+                "start": 198,
+                "end": 206
+            },
+            {
+                "name": "xlog_err",
+                "start": 209,
+                "end": 217
+            }
+        ],
+        "support/nfs/atomicio.c": [
+            {
+                "name": "atomicio",
+                "start": 34,
+                "end": 54
+            }
+        ],
+        "support/nfs/strlcpy.c": [
+            {
+                "name": "strlcpy",
+                "start": 46,
+                "end": 72
+            }
+        ],
+        "support/nfs/nfsctl.c": [
+            {
+                "name": "nfsctl",
+                "start": 23,
+                "end": 32
+            }
+        ],
+        "support/nfs/svc_create.c": [
+            {
+                "name": "nfs_svc_create",
+                "start": 467,
+                "end": 474
+            },
+            {
+                "name": "nfs_svc_unregister",
+                "start": 483,
+                "end": 489
+            }
+        ],
+        "support/nfs/rpc_socket.c": [
+            {
+                "name": "nfs_get_localclient",
+                "start": 67,
+                "end": 107
+            },
+            {
+                "name": "nfs_bind",
+                "start": 115,
+                "end": 137
+            },
+            {
+                "name": "nfs_bindresvport",
+                "start": 177,
+                "end": 185
+            },
+            {
+                "name": "nfs_connect_nb",
+                "start": 198,
+                "end": 258
+            },
+            {
+                "name": "nfs_get_udpclient",
+                "start": 271,
+                "end": 341
+            },
+            {
+                "name": "nfs_get_tcpclient",
+                "start": 353,
+                "end": 420
+            },
+            {
+                "name": "nfs_get_rpcclient",
+                "start": 440,
+                "end": 477
+            },
+            {
+                "name": "nfs_get_priv_rpcclient",
+                "start": 497,
+                "end": 534
+            },
+            {
+                "name": "nfs_getrpcbyname",
+                "start": 544,
+                "end": 559
+            },
+            {
+                "name": "nfs_authsys_create",
+                "start": 569,
+                "end": 580
+            }
+        ],
+        "support/nfs/conffile.c": [
+            {
+                "name": "conf_set",
+                "start": 55,
+                "end": 56
+            },
+            {
+                "name": "conf_hash",
+                "start": 112,
+                "end": 122
+            },
+            {
+                "name": "conf_remove_now",
+                "start": 127,
+                "end": 148
+            },
+            {
+                "name": "conf_remove_section_now",
+                "start": 150,
+                "end": 171
+            },
+            {
+                "name": "conf_set_now",
+                "start": 177,
+                "end": 206
+            },
+            {
+                "name": "conf_parse_line",
+                "start": 212,
+                "end": 324
+            },
+            {
+                "name": "conf_parse",
+                "start": 327,
+                "end": 350
+            },
+            {
+                "name": "conf_load_defaults",
+                "start": 352,
+                "end": 357
+            },
+            {
+                "name": "conf_init",
+                "start": 359,
+                "end": 369
+            },
+            {
+                "name": "conf_reinit",
+                "start": 372,
+                "end": 432
+            },
+            {
+                "name": "conf_get_num",
+                "start": 438,
+                "end": 447
+            },
+            {
+                "name": "conf_match_num",
+                "start": 450,
+                "end": 472
+            },
+            {
+                "name": "conf_get_str",
+                "start": 475,
+                "end": 487
+            },
+            {
+                "name": "conf_get_section",
+                "start": 491,
+                "end": 507
+            },
+            {
+                "name": "conf_get_list",
+                "start": 513,
+                "end": 565
+            },
+            {
+                "name": "conf_get_tag_list",
+                "start": 567,
+                "end": 600
+            },
+            {
+                "name": "conf_decode_base64",
+                "start": 603,
+                "end": 657
+            },
+            {
+                "name": "conf_free_list",
+                "start": 659,
+                "end": 672
+            },
+            {
+                "name": "conf_begin",
+                "start": 674,
+                "end": 680
+            },
+            {
+                "name": "conf_trans_node",
+                "start": 682,
+                "end": 697
+            },
+            {
+                "name": "conf_set",
+                "start": 700,
+                "end": 748
+            },
+            {
+                "name": "conf_remove",
+                "start": 751,
+                "end": 777
+            },
+            {
+                "name": "conf_remove_section",
+                "start": 780,
+                "end": 799
+            },
+            {
+                "name": "conf_end",
+                "start": 802,
+                "end": 838
+            },
+            {
+                "name": "conf_report_dump",
+                "start": 849,
+                "end": 865
+            },
+            {
+                "name": "conf_report",
+                "start": 867,
+                "end": 959
+            }
+        ],
+        "support/nfs/xio.c": [
+            {
+                "name": "xfopen",
+                "start": 25,
+                "end": 38
+            },
+            {
+                "name": "xfclose",
+                "start": 40,
+                "end": 45
+            },
+            {
+                "name": "xflock",
+                "start": 47,
+                "end": 72
+            },
+            {
+                "name": "xfunlock",
+                "start": 74,
+                "end": 78
+            },
+            {
+                "name": "xgettok",
+                "start": 81,
+                "end": 114
+            },
+            {
+                "name": "xgetc",
+                "start": 116,
+                "end": 136
+            },
+            {
+                "name": "xungetc",
+                "start": 138,
+                "end": 147
+            },
+            {
+                "name": "xskip",
+                "start": 149,
+                "end": 161
+            },
+            {
+                "name": "xskipcomment",
+                "start": 163,
+                "end": 170
+            }
+        ],
+        "support/nfs/rpcmisc.c": [
+            {
+                "name": "closedown",
+                "start": 45,
+                "end": 68
+            },
+            {
+                "name": "makesock",
+                "start": 76,
+                "end": 108
+            },
+            {
+                "name": "rpc_init",
+                "start": 110,
+                "end": 202
+            }
+        ],
+        "support/nfs/getport.c": [
+            {
+                "name": "nfs_gp_map_tcp_errorcodes",
+                "start": 73,
+                "end": 87
+            },
+            {
+                "name": "nfs_gp_loopback_address",
+                "start": 97,
+                "end": 114
+            },
+            {
+                "name": "nfs_gp_getservbyname",
+                "start": 120,
+                "end": 140
+            },
+            {
+                "name": "nfs_gp_get_rpcb_port",
+                "start": 150,
+                "end": 169
+            },
+            {
+                "name": "nfs_gp_get_rpcbclient",
+                "start": 180,
+                "end": 201
+            },
+            {
+                "name": "nfs_get_proto",
+                "start": 255,
+                "end": 277
+            },
+            {
+                "name": "nfs_get_netid",
+                "start": 351,
+                "end": 370
+            },
+            {
+                "name": "nfs_gp_universal_porthelper",
+                "start": 380,
+                "end": 405
+            },
+            {
+                "name": "nfs_universal2port",
+                "start": 417,
+                "end": 428
+            },
+            {
+                "name": "nfs_sockaddr2universal",
+                "start": 445,
+                "end": 489
+            },
+            {
+                "name": "nfs_gp_ping",
+                "start": 496,
+                "end": 510
+            },
+            {
+                "name": "nfs_gp_pmap_getport",
+                "start": 627,
+                "end": 647
+            },
+            {
+                "name": "nfs_gp_getport_pmap",
+                "start": 672,
+                "end": 687
+            },
+            {
+                "name": "nfs_gp_getport",
+                "start": 696,
+                "end": 716
+            },
+            {
+                "name": "nfs_rpc_ping",
+                "start": 730,
+                "end": 755
+            },
+            {
+                "name": "nfs_getport",
+                "start": 797,
+                "end": 821
+            },
+            {
+                "name": "nfs_getport_ping",
+                "start": 841,
+                "end": 883
+            },
+            {
+                "name": "nfs_getlocalport",
+                "start": 910,
+                "end": 955
+            },
+            {
+                "name": "nfs_rpcb_getaddr",
+                "start": 1027,
+                "end": 1040
+            },
+            {
+                "name": "nfs_pmap_getport",
+                "start": 1072,
+                "end": 1104
+            }
+        ],
+        "support/nfs/wildmat.c": [
+            {
+                "name": "DoMatch",
+                "start": 61,
+                "end": 120
+            },
+            {
+                "name": "wildmat",
+                "start": 126,
+                "end": 134
+            }
+        ],
+        "support/nfs/rpcdispatch.c": [
+            {
+                "name": "rpc_dispatch",
+                "start": 23,
+                "end": 68
+            }
+        ],
+        "support/nfs/xcommon.c": [
+            {
+                "name": "xstrndup",
+                "start": 25,
+                "end": 37
+            },
+            {
+                "name": "xstrconcat2",
+                "start": 39,
+                "end": 49
+            },
+            {
+                "name": "xstrconcat3",
+                "start": 52,
+                "end": 65
+            },
+            {
+                "name": "xstrconcat4",
+                "start": 68,
+                "end": 83
+            },
+            {
+                "name": "nfs_error",
+                "start": 88,
+                "end": 98
+            },
+            {
+                "name": "canonicalize",
+                "start": 105,
+                "end": 121
+            },
+            {
+                "name": "die",
+                "start": 124,
+                "end": 137
+            },
+            {
+                "name": "die_if_null",
+                "start": 139,
+                "end": 143
+            },
+            {
+                "name": "xmalloc",
+                "start": 145,
+                "end": 156
+            },
+            {
+                "name": "xrealloc",
+                "start": 158,
+                "end": 166
+            },
+            {
+                "name": "xfree",
+                "start": 168,
+                "end": 172
+            },
+            {
+                "name": "xstrdup",
+                "start": 174,
+                "end": 185
+            }
+        ],
+        "support/nfs/svc_socket.c": [
+            {
+                "name": "getservport",
+                "start": 38,
+                "end": 68
+            },
+            {
+                "name": "svc_socket",
+                "start": 70,
+                "end": 139
+            },
+            {
+                "name": "svctcp_socket",
+                "start": 144,
+                "end": 148
+            },
+            {
+                "name": "svcudp_socket",
+                "start": 153,
+                "end": 157
+            }
+        ],
+        "support/nfs/cacheio.c": [
+            {
+                "name": "qword_add",
+                "start": 29,
+                "end": 62
+            },
+            {
+                "name": "qword_addhex",
+                "start": 64,
+                "end": 90
+            },
+            {
+                "name": "qword_addint",
+                "start": 92,
+                "end": 101
+            },
+            {
+                "name": "qword_adduint",
+                "start": 103,
+                "end": 112
+            },
+            {
+                "name": "qword_addeol",
+                "start": 114,
+                "end": 121
+            },
+            {
+                "name": "qword_print",
+                "start": 124,
+                "end": 133
+            },
+            {
+                "name": "qword_printhex",
+                "start": 135,
+                "end": 144
+            },
+            {
+                "name": "qword_printint",
+                "start": 146,
+                "end": 149
+            },
+            {
+                "name": "qword_printuint",
+                "start": 151,
+                "end": 154
+            },
+            {
+                "name": "qword_printtimefrom",
+                "start": 156,
+                "end": 159
+            },
+            {
+                "name": "qword_eol",
+                "start": 161,
+                "end": 187
+            },
+            {
+                "name": "qword_get",
+                "start": 192,
+                "end": 238
+            },
+            {
+                "name": "qword_get_int",
+                "start": 240,
+                "end": 252
+            },
+            {
+                "name": "qword_get_uint",
+                "start": 254,
+                "end": 266
+            },
+            {
+                "name": "readline",
+                "start": 270,
+                "end": 307
+            },
+            {
+                "name": "check_new_cache",
+                "start": 314,
+                "end": 319
+            },
+            {
+                "name": "cache_flush",
+                "start": 329,
+                "end": 369
+            }
+        ],
+        "support/nfs/getfh.c": [
+            {
+                "name": "getfh_old",
+                "start": 31,
+                "end": 59
+            },
+            {
+                "name": "getfh",
+                "start": 69,
+                "end": 98
+            },
+            {
+                "name": "getfh_size",
+                "start": 109,
+                "end": 134
+            }
+        ],
+        "support/nfs/exports.c": [
+            {
+                "name": "setexportent",
+                "start": 67,
+                "end": 79
+            },
+            {
+                "name": "init_exportent",
+                "start": 81,
+                "end": 105
+            },
+            {
+                "name": "getexportent",
+                "start": 107,
+                "end": 197
+            },
+            {
+                "name": "secinfo_show",
+                "start": 199,
+                "end": 218
+            },
+            {
+                "name": "putexportent",
+                "start": 220,
+                "end": 303
+            },
+            {
+                "name": "endexportent",
+                "start": 305,
+                "end": 315
+            },
+            {
+                "name": "dupexportent",
+                "start": 317,
+                "end": 338
+            },
+            {
+                "name": "mkexportent",
+                "start": 340,
+                "end": 359
+            },
+            {
+                "name": "updateexportent",
+                "start": 361,
+                "end": 367
+            },
+            {
+                "name": "valid_uuid",
+                "start": 370,
+                "end": 378
+            },
+            {
+                "name": "secinfo_addflavor",
+                "start": 385,
+                "end": 402
+            },
+            {
+                "name": "find_flavor",
+                "start": 404,
+                "end": 411
+            },
+            {
+                "name": "parse_flavors",
+                "start": 417,
+                "end": 435
+            },
+            {
+                "name": "setflags",
+                "start": 438,
+                "end": 450
+            },
+            {
+                "name": "clearflags",
+                "start": 453,
+                "end": 465
+            },
+            {
+                "name": "fix_pseudoflavor_flags",
+                "start": 472,
+                "end": 480
+            },
+            {
+                "name": "parseopts",
+                "start": 485,
+                "end": 666
+            },
+            {
+                "name": "parsesquash",
+                "start": 668,
+                "end": 709
+            },
+            {
+                "name": "freesquash",
+                "start": 711,
+                "end": 724
+            },
+            {
+                "name": "parsenum",
+                "start": 726,
+                "end": 738
+            },
+            {
+                "name": "getpath",
+                "start": 740,
+                "end": 745
+            },
+            {
+                "name": "getexport",
+                "start": 747,
+                "end": 757
+            },
+            {
+                "name": "syntaxerr",
+                "start": 759,
+                "end": 764
+            },
+            {
+                "name": "get_export_features",
+                "start": 765,
+                "end": 796
+            }
+        ],
+        "support/nfs/closeall.c": [
+            {
+                "name": "closeall",
+                "start": 12,
+                "end": 36
+            }
+        ],
+        "support/nfs/nfsexport.c": [
+            {
+                "name": "exp_unexp",
+                "start": 32,
+                "end": 92
+            },
+            {
+                "name": "nfsexport",
+                "start": 94,
+                "end": 106
+            },
+            {
+                "name": "nfsunexport",
+                "start": 108,
+                "end": 122
+            }
+        ],
+        "support/nfs/strlcat.c": [
+            {
+                "name": "strlcat",
+                "start": 48,
+                "end": 76
+            }
+        ],
+        "support/nfs/nfsclient.c": [
+            {
+                "name": "nfsaddclient",
+                "start": 16,
+                "end": 24
+            },
+            {
+                "name": "nfsdelclient",
+                "start": 26,
+                "end": 34
+            }
+        ],
+        "support/nfs/rmtab.c": [
+            {
+                "name": "setrmtabent",
+                "start": 36,
+                "end": 43
+            },
+            {
+                "name": "fsetrmtabent",
+                "start": 45,
+                "end": 59
+            },
+            {
+                "name": "getrmtabent",
+                "start": 61,
+                "end": 65
+            },
+            {
+                "name": "fgetrmtabent",
+                "start": 67,
+                "end": 111
+            },
+            {
+                "name": "putrmtabent",
+                "start": 113,
+                "end": 117
+            },
+            {
+                "name": "fputrmtabent",
+                "start": 119,
+                "end": 143
+            },
+            {
+                "name": "endrmtabent",
+                "start": 145,
+                "end": 150
+            },
+            {
+                "name": "fendrmtabent",
+                "start": 152,
+                "end": 176
+            },
+            {
+                "name": "rewindrmtabent",
+                "start": 178,
+                "end": 183
+            },
+            {
+                "name": "frewindrmtabent",
+                "start": 185,
+                "end": 190
+            }
+        ],
+        "support/nfs/nfs_mntent.c": [
+            {
+                "name": "mangle",
+                "start": 28,
+                "end": 53
+            },
+            {
+                "name": "is_space_or_tab",
+                "start": 55,
+                "end": 58
+            },
+            {
+                "name": "skip_spaces",
+                "start": 60,
+                "end": 65
+            },
+            {
+                "name": "skip_nonspaces",
+                "start": 67,
+                "end": 72
+            },
+            {
+                "name": "unmangle",
+                "start": 77,
+                "end": 92
+            },
+            {
+                "name": "nfs_setmntent",
+                "start": 102,
+                "end": 114
+            },
+            {
+                "name": "nfs_endmntent",
+                "start": 116,
+                "end": 125
+            },
+            {
+                "name": "nfs_addmntent",
+                "start": 127,
+                "end": 156
+            },
+            {
+                "name": "nfs_getmntent",
+                "start": 159,
+                "end": 236
+            }
+        ],
+        "support/nsm/sm_inter_svc.c": [
+            {
+                "name": "sm_prog_1",
+                "start": 20,
+                "end": 93
+            }
+        ],
+        "support/nsm/sm_inter_xdr.c": [
+            {
+                "name": "xdr_sm_name",
+                "start": 8,
+                "end": 16
+            },
+            {
+                "name": "xdr_my_id",
+                "start": 18,
+                "end": 32
+            },
+            {
+                "name": "xdr_mon_id",
+                "start": 34,
+                "end": 44
+            },
+            {
+                "name": "xdr_mon",
+                "start": 46,
+                "end": 57
+            },
+            {
+                "name": "xdr_stat_chge",
+                "start": 59,
+                "end": 69
+            },
+            {
+                "name": "xdr_sm_stat",
+                "start": 71,
+                "end": 79
+            },
+            {
+                "name": "xdr_res",
+                "start": 81,
+                "end": 89
+            },
+            {
+                "name": "xdr_sm_stat_res",
+                "start": 91,
+                "end": 101
+            },
+            {
+                "name": "xdr_status",
+                "start": 103,
+                "end": 116
+            }
+        ],
+        "support/nsm/file.c": [
+            {
+                "name": "error_check",
+                "start": 104,
+                "end": 108
+            },
+            {
+                "name": "exact_error_check",
+                "start": 110,
+                "end": 114
+            },
+            {
+                "name": "nsm_make_record_pathname",
+                "start": 121,
+                "end": 162
+            },
+            {
+                "name": "nsm_make_pathname",
+                "start": 169,
+                "end": 192
+            },
+            {
+                "name": "nsm_make_temp_pathname",
+                "start": 199,
+                "end": 222
+            },
+            {
+                "name": "nsm_atomic_write",
+                "start": 229,
+                "end": 280
+            },
+            {
+                "name": "nsm_setup_pathnames",
+                "start": 293,
+                "end": 319
+            },
+            {
+                "name": "nsm_is_default_parentdir",
+                "start": 328,
+                "end": 332
+            },
+            {
+                "name": "nsm_clear_capabilities",
+                "start": 401,
+                "end": 405
+            },
+            {
+                "name": "prune_bounding_set",
+                "start": 407,
+                "end": 411
+            },
+            {
+                "name": "nsm_drop_privileges",
+                "start": 422,
+                "end": 485
+            },
+            {
+                "name": "nsm_get_state",
+                "start": 493,
+                "end": 544
+            },
+            {
+                "name": "nsm_update_kernel_state",
+                "start": 551,
+                "end": 577
+            },
+            {
+                "name": "nsm_retire_monitored_hosts",
+                "start": 587,
+                "end": 657
+            },
+            {
+                "name": "nsm_priv_to_hex",
+                "start": 668,
+                "end": 684
+            },
+            {
+                "name": "nsm_create_monitor_record",
+                "start": 689,
+                "end": 721
+            },
+            {
+                "name": "nsm_append_monitored_host",
+                "start": 723,
+                "end": 771
+            },
+            {
+                "name": "nsm_insert_monitored_host",
+                "start": 781,
+                "end": 837
+            },
+            {
+                "name": "nsm_parse_line",
+                "start": 839,
+                "end": 878
+            },
+            {
+                "name": "nsm_read_line",
+                "start": 885,
+                "end": 898
+            },
+            {
+                "name": "nsm_load_host",
+                "start": 905,
+                "end": 947
+            },
+            {
+                "name": "nsm_load_dir",
+                "start": 949,
+                "end": 981
+            },
+            {
+                "name": "nsm_load_monitor_list",
+                "start": 989,
+                "end": 993
+            },
+            {
+                "name": "nsm_load_notify_list",
+                "start": 1001,
+                "end": 1005
+            },
+            {
+                "name": "nsm_delete_host",
+                "start": 1007,
+                "end": 1098
+            },
+            {
+                "name": "nsm_delete_monitored_host",
+                "start": 1107,
+                "end": 1112
+            },
+            {
+                "name": "nsm_delete_notified_host",
+                "start": 1121,
+                "end": 1126
+            }
+        ],
+        "support/nsm/rpc.c": [
+            {
+                "name": "nsm_next_xid",
+                "start": 69,
+                "end": 82
+            },
+            {
+                "name": "nsm_init_rpc_header",
+                "start": 90,
+                "end": 115
+            },
+            {
+                "name": "nsm_init_xdrmem",
+                "start": 120,
+                "end": 127
+            },
+            {
+                "name": "nsm_rpc_sendto",
+                "start": 135,
+                "end": 148
+            },
+            {
+                "name": "nsm_xmit_getport",
+                "start": 166,
+                "end": 204
+            },
+            {
+                "name": "nsm_xmit_getaddr",
+                "start": 270,
+                "end": 277
+            },
+            {
+                "name": "nsm_xmit_rpcbind",
+                "start": 295,
+                "end": 308
+            },
+            {
+                "name": "nsm_xmit_notify",
+                "start": 327,
+                "end": 364
+            },
+            {
+                "name": "nsm_xmit_nlmcall",
+                "start": 382,
+                "end": 417
+            },
+            {
+                "name": "nsm_parse_reply",
+                "start": 425,
+                "end": 452
+            },
+            {
+                "name": "nsm_recv_getport",
+                "start": 461,
+                "end": 477
+            },
+            {
+                "name": "nsm_recv_getaddr",
+                "start": 486,
+                "end": 514
+            },
+            {
+                "name": "nsm_recv_rpcbind",
+                "start": 524,
+                "end": 534
+            }
+        ],
+        "support/nsm/sm_inter_clnt.c": [
+            {
+                "name": "sm_stat_1",
+                "start": 14,
+                "end": 27
+            },
+            {
+                "name": "sm_mon_1",
+                "start": 29,
+                "end": 42
+            },
+            {
+                "name": "sm_unmon_1",
+                "start": 44,
+                "end": 57
+            },
+            {
+                "name": "sm_unmon_all_1",
+                "start": 59,
+                "end": 72
+            },
+            {
+                "name": "sm_simu_crash_1",
+                "start": 74,
+                "end": 87
+            },
+            {
+                "name": "sm_notify_1",
+                "start": 89,
+                "end": 102
+            }
+        ],
+        "tests/statdb_dump.c": [
+            {
+                "name": "dump_host",
+                "start": 36,
+                "end": 88
+            },
+            {
+                "name": "main",
+                "start": 90,
+                "end": 99
+            }
+        ],
+        "tests/nsm_client/nlm_sm_inter_clnt.c": [
+            {
+                "name": "nlm_sm_notify_3",
+                "start": 13,
+                "end": 26
+            },
+            {
+                "name": "nlm_sm_notify_4",
+                "start": 28,
+                "end": 41
+            }
+        ],
+        "tests/nsm_client/nlm_sm_inter_xdr.c": [
+            {
+                "name": "xdr_nlm_sm_notify",
+                "start": 8,
+                "end": 21
+            }
+        ],
+        "tests/nsm_client/nlm_sm_inter_svc.c": [
+            {
+                "name": "nlm_sm_prog_3",
+                "start": 19,
+                "end": 58
+            },
+            {
+                "name": "nlm_sm_prog_4",
+                "start": 60,
+                "end": 99
+            }
+        ],
+        "tests/nsm_client/nsm_client.c": [
+            {
+                "name": "usage",
+                "start": 82,
+                "end": 96
+            },
+            {
+                "name": "hex2bin",
+                "start": 98,
+                "end": 115
+            },
+            {
+                "name": "bin2hex",
+                "start": 117,
+                "end": 124
+            },
+            {
+                "name": "main",
+                "start": 126,
+                "end": 201
+            },
+            {
+                "name": "nsm_client_get_rpcclient",
+                "start": 203,
+                "end": 248
+            },
+            {
+                "name": "nsm_client_mon",
+                "start": 250,
+                "end": 291
+            },
+            {
+                "name": "nsm_client_unmon",
+                "start": 293,
+                "end": 326
+            },
+            {
+                "name": "nsm_client_unmon_all",
+                "start": 328,
+                "end": 359
+            },
+            {
+                "name": "nsm_client_crash",
+                "start": 361,
+                "end": 376
+            },
+            {
+                "name": "nsm_client_stat",
+                "start": 378,
+                "end": 407
+            },
+            {
+                "name": "nsm_client_notify",
+                "start": 409,
+                "end": 428
+            },
+            {
+                "name": "sim_killer",
+                "start": 430,
+                "end": 438
+            },
+            {
+                "name": "daemon_simulator",
+                "start": 440,
+                "end": 448
+            },
+            {
+                "name": "nlm_sm_notify_4_svc",
+                "start": 450,
+                "end": 460
+            },
+            {
+                "name": "nlm_sm_notify_3_svc",
+                "start": 462,
+                "end": 465
+            }
+        ],
+        "tools/rpcdebug/rpcdebug.c": [
+            {
+                "name": "main",
+                "start": 47,
+                "end": 133
+            },
+            {
+                "name": "find_flag",
+                "start": 204,
+                "end": 244
+            },
+            {
+                "name": "get_flags",
+                "start": 246,
+                "end": 266
+            },
+            {
+                "name": "set_flags",
+                "start": 268,
+                "end": 291
+            },
+            {
+                "name": "strtolower",
+                "start": 294,
+                "end": 304
+            },
+            {
+                "name": "print_flags",
+                "start": 306,
+                "end": 341
+            },
+            {
+                "name": "usage",
+                "start": 343,
+                "end": 361
+            }
+        ],
+        "tools/rpcgen/rpc_cout.c": [
+            {
+                "name": "print_ifstat",
+                "start": 54,
+                "end": 55
+            },
+            {
+                "name": "emit",
+                "start": 69,
+                "end": 107
+            },
+            {
+                "name": "findtype",
+                "start": 109,
+                "end": 118
+            },
+            {
+                "name": "undefined",
+                "start": 120,
+                "end": 128
+            },
+            {
+                "name": "print_generic_header",
+                "start": 131,
+                "end": 151
+            },
+            {
+                "name": "print_header",
+                "start": 153,
+                "end": 165
+            },
+            {
+                "name": "print_prog_header",
+                "start": 167,
+                "end": 171
+            },
+            {
+                "name": "print_trailer",
+                "start": 173,
+                "end": 178
+            },
+            {
+                "name": "print_ifopen",
+                "start": 181,
+                "end": 186
+            },
+            {
+                "name": "print_ifarg",
+                "start": 188,
+                "end": 192
+            },
+            {
+                "name": "print_ifsizeof",
+                "start": 194,
+                "end": 206
+            },
+            {
+                "name": "print_ifclose",
+                "start": 208,
+                "end": 216
+            },
+            {
+                "name": "print_ifstat",
+                "start": 218,
+                "end": 286
+            },
+            {
+                "name": "emit_enum",
+                "start": 288,
+                "end": 294
+            },
+            {
+                "name": "emit_program",
+                "start": 296,
+                "end": 312
+            },
+            {
+                "name": "emit_union",
+                "start": 315,
+                "end": 378
+            },
+            {
+                "name": "emit_struct",
+                "start": 380,
+                "end": 583
+            },
+            {
+                "name": "emit_typedef",
+                "start": 588,
+                "end": 598
+            },
+            {
+                "name": "print_stat",
+                "start": 600,
+                "end": 615
+            },
+            {
+                "name": "emit_inline",
+                "start": 618,
+                "end": 639
+            },
+            {
+                "name": "emit_single_in_line",
+                "start": 641,
+                "end": 684
+            },
+            {
+                "name": "upcase",
+                "start": 687,
+                "end": 706
+            }
+        ],
+        "tools/rpcgen/rpc_util.c": [
+            {
+                "name": "reinitialize",
+                "start": 67,
+                "end": 74
+            },
+            {
+                "name": "streq",
+                "start": 79,
+                "end": 83
+            },
+            {
+                "name": "findval",
+                "start": 88,
+                "end": 98
+            },
+            {
+                "name": "storeval",
+                "start": 103,
+                "end": 117
+            },
+            {
+                "name": "findit",
+                "start": 119,
+                "end": 123
+            },
+            {
+                "name": "fixit",
+                "start": 125,
+                "end": 142
+            },
+            {
+                "name": "fixtype",
+                "start": 144,
+                "end": 148
+            },
+            {
+                "name": "stringfix",
+                "start": 150,
+                "end": 158
+            },
+            {
+                "name": "ptype",
+                "start": 160,
+                "end": 177
+            },
+            {
+                "name": "typedefed",
+                "start": 179,
+                "end": 187
+            },
+            {
+                "name": "isvectordef",
+                "start": 189,
+                "end": 211
+            },
+            {
+                "name": "locase",
+                "start": 213,
+                "end": 225
+            },
+            {
+                "name": "pvname_svc",
+                "start": 227,
+                "end": 231
+            },
+            {
+                "name": "pvname",
+                "start": 233,
+                "end": 237
+            },
+            {
+                "name": "error",
+                "start": 242,
+                "end": 249
+            },
+            {
+                "name": "crash",
+                "start": 255,
+                "end": 264
+            },
+            {
+                "name": "record_open",
+                "start": 266,
+                "end": 275
+            },
+            {
+                "name": "expected1",
+                "start": 283,
+                "end": 290
+            },
+            {
+                "name": "expected2",
+                "start": 295,
+                "end": 303
+            },
+            {
+                "name": "expected3",
+                "start": 308,
+                "end": 317
+            },
+            {
+                "name": "tabify",
+                "start": 319,
+                "end": 327
+            },
+            {
+                "name": "toktostr",
+                "start": 367,
+                "end": 375
+            },
+            {
+                "name": "printbuf",
+                "start": 377,
+                "end": 397
+            },
+            {
+                "name": "printwhere",
+                "start": 399,
+                "end": 419
+            },
+            {
+                "name": "make_argname",
+                "start": 421,
+                "end": 433
+            },
+            {
+                "name": "add_type",
+                "start": 438,
+                "end": 460
+            },
+            {
+                "name": "find_type",
+                "start": 463,
+                "end": 478
+            }
+        ],
+        "tools/rpcgen/rpc_svcout.c": [
+            {
+                "name": "p_xdrfunc",
+                "start": 63,
+                "end": 71
+            },
+            {
+                "name": "internal_proctype",
+                "start": 73,
+                "end": 79
+            },
+            {
+                "name": "write_most",
+                "start": 85,
+                "end": 134
+            },
+            {
+                "name": "write_netid_register",
+                "start": 139,
+                "end": 187
+            },
+            {
+                "name": "write_nettype_register",
+                "start": 192,
+                "end": 217
+            },
+            {
+                "name": "write_rest",
+                "start": 222,
+                "end": 247
+            },
+            {
+                "name": "write_programs",
+                "start": 249,
+                "end": 272
+            },
+            {
+                "name": "write_real_program",
+                "start": 278,
+                "end": 333
+            },
+            {
+                "name": "write_program",
+                "start": 335,
+                "end": 485
+            },
+            {
+                "name": "printerr",
+                "start": 487,
+                "end": 491
+            },
+            {
+                "name": "printif",
+                "start": 493,
+                "end": 498
+            },
+            {
+                "name": "nullproc",
+                "start": 500,
+                "end": 509
+            },
+            {
+                "name": "write_inetmost",
+                "start": 511,
+                "end": 537
+            },
+            {
+                "name": "print_return",
+                "start": 539,
+                "end": 549
+            },
+            {
+                "name": "print_pmapunset",
+                "start": 551,
+                "end": 568
+            },
+            {
+                "name": "print_err_message",
+                "start": 570,
+                "end": 579
+            },
+            {
+                "name": "write_svc_aux",
+                "start": 584,
+                "end": 591
+            },
+            {
+                "name": "write_msg_out",
+                "start": 596,
+                "end": 618
+            },
+            {
+                "name": "write_timeout_func",
+                "start": 623,
+                "end": 661
+            },
+            {
+                "name": "write_pm_most",
+                "start": 666,
+                "end": 746
+            },
+            {
+                "name": "write_rpc_svc_fg",
+                "start": 751,
+                "end": 798
+            },
+            {
+                "name": "open_log_file",
+                "start": 800,
+                "end": 811
+            },
+            {
+                "name": "write_inetd_register",
+                "start": 819,
+                "end": 882
+            }
+        ],
+        "tools/rpcgen/rpc_hout.c": [
+            {
+                "name": "pprocdef",
+                "start": 53,
+                "end": 54
+            },
+            {
+                "name": "print_datadef",
+                "start": 62,
+                "end": 98
+            },
+            {
+                "name": "print_funcdef",
+                "start": 101,
+                "end": 112
+            },
+            {
+                "name": "pxdrfuncdecl",
+                "start": 114,
+                "end": 128
+            },
+            {
+                "name": "pconstdef",
+                "start": 131,
+                "end": 135
+            },
+            {
+                "name": "pargdef",
+                "start": 140,
+                "end": 169
+            },
+            {
+                "name": "pstructdef",
+                "start": 172,
+                "end": 184
+            },
+            {
+                "name": "puniondef",
+                "start": 186,
+                "end": 212
+            },
+            {
+                "name": "pdefine",
+                "start": 214,
+                "end": 218
+            },
+            {
+                "name": "puldefine",
+                "start": 220,
+                "end": 224
+            },
+            {
+                "name": "define_printed",
+                "start": 226,
+                "end": 243
+            },
+            {
+                "name": "pprogramdef",
+                "start": 245,
+                "end": 297
+            },
+            {
+                "name": "pprocdef",
+                "start": 299,
+                "end": 317
+            },
+            {
+                "name": "parglist",
+                "start": 322,
+                "end": 343
+            },
+            {
+                "name": "penumdef",
+                "start": 345,
+                "end": 371
+            },
+            {
+                "name": "ptypedef",
+                "start": 373,
+                "end": 417
+            },
+            {
+                "name": "pdeclaration",
+                "start": 419,
+                "end": 471
+            },
+            {
+                "name": "undefined2",
+                "start": 473,
+                "end": 490
+            }
+        ],
+        "tools/rpcgen/rpc_tblout.c": [
+            {
+                "name": "write_tables",
+                "start": 61,
+                "end": 74
+            },
+            {
+                "name": "write_table",
+                "start": 76,
+                "end": 140
+            },
+            {
+                "name": "printit",
+                "start": 142,
+                "end": 165
+            }
+        ],
+        "tools/rpcgen/rpc_clntout.c": [
+            {
+                "name": "write_stubs",
+                "start": 54,
+                "end": 70
+            },
+            {
+                "name": "write_program",
+                "start": 72,
+                "end": 90
+            },
+            {
+                "name": "printarglist",
+                "start": 100,
+                "end": 144
+            },
+            {
+                "name": "ampr",
+                "start": 148,
+                "end": 156
+            },
+            {
+                "name": "printbody",
+                "start": 158,
+                "end": 217
+            }
+        ],
+        "tools/rpcgen/rpc_scan.c": [
+            {
+                "name": "scan",
+                "start": 63,
+                "end": 70
+            },
+            {
+                "name": "scan2",
+                "start": 75,
+                "end": 82
+            },
+            {
+                "name": "scan3",
+                "start": 87,
+                "end": 95
+            },
+            {
+                "name": "scan_num",
+                "start": 100,
+                "end": 110
+            },
+            {
+                "name": "peek",
+                "start": 115,
+                "end": 120
+            },
+            {
+                "name": "peekscan",
+                "start": 125,
+                "end": 134
+            },
+            {
+                "name": "get_token",
+                "start": 139,
+                "end": 289
+            },
+            {
+                "name": "unget_token",
+                "start": 291,
+                "end": 296
+            },
+            {
+                "name": "findstrconst",
+                "start": 298,
+                "end": 317
+            },
+            {
+                "name": "findchrconst",
+                "start": 319,
+                "end": 341
+            },
+            {
+                "name": "findconst",
+                "start": 343,
+                "end": 365
+            },
+            {
+                "name": "findkind",
+                "start": 392,
+                "end": 417
+            },
+            {
+                "name": "cppline",
+                "start": 419,
+                "end": 423
+            },
+            {
+                "name": "directive",
+                "start": 425,
+                "end": 429
+            },
+            {
+                "name": "printdirective",
+                "start": 431,
+                "end": 435
+            },
+            {
+                "name": "docppline",
+                "start": 437,
+                "end": 474
+            }
+        ],
+        "tools/rpcgen/rpc_parse.c": [
+            {
+                "name": "get_definition",
+                "start": 67,
+                "end": 103
+            },
+            {
+                "name": "isdefined",
+                "start": 105,
+                "end": 109
+            },
+            {
+                "name": "def_struct",
+                "start": 111,
+                "end": 136
+            },
+            {
+                "name": "def_program",
+                "start": 138,
+                "end": 240
+            },
+            {
+                "name": "def_enum",
+                "start": 243,
+                "end": 270
+            },
+            {
+                "name": "def_const",
+                "start": 272,
+                "end": 283
+            },
+            {
+                "name": "def_union",
+                "start": 285,
+                "end": 346
+            },
+            {
+                "name": "check_type_name",
+                "start": 374,
+                "end": 396
+            },
+            {
+                "name": "def_typedef",
+                "start": 398,
+                "end": 411
+            },
+            {
+                "name": "get_declaration",
+                "start": 413,
+                "end": 462
+            },
+            {
+                "name": "get_prog_declaration",
+                "start": 465,
+                "end": 527
+            },
+            {
+                "name": "get_type",
+                "start": 531,
+                "end": 578
+            },
+            {
+                "name": "unsigned_dec",
+                "start": 580,
+                "end": 609
+            }
+        ],
+        "tools/rpcgen/rpc_main.c": [
+            {
+                "name": "s_output",
+                "start": 75,
+                "end": 77
+            },
+            {
+                "name": "main",
+                "start": 164,
+                "end": 224
+            },
+            {
+                "name": "extendfile",
+                "start": 229,
+                "end": 246
+            },
+            {
+                "name": "open_output",
+                "start": 251,
+                "end": 273
+            },
+            {
+                "name": "add_warning",
+                "start": 275,
+                "end": 282
+            },
+            {
+                "name": "clear_args",
+                "start": 285,
+                "end": 292
+            },
+            {
+                "name": "open_input",
+                "start": 297,
+                "end": 336
+            },
+            {
+                "name": "check_nettype",
+                "start": 361,
+                "end": 372
+            },
+            {
+                "name": "c_output",
+                "start": 378,
+                "end": 404
+            },
+            {
+                "name": "c_initialize",
+                "start": 407,
+                "end": 422
+            },
+            {
+                "name": "generate_guard",
+                "start": 433,
+                "end": 451
+            },
+            {
+                "name": "h_output",
+                "start": 456,
+                "end": 507
+            },
+            {
+                "name": "s_output",
+                "start": 512,
+                "end": 613
+            },
+            {
+                "name": "l_output",
+                "start": 618,
+                "end": 645
+            },
+            {
+                "name": "t_output",
+                "start": 650,
+                "end": 669
+            },
+            {
+                "name": "svc_output",
+                "start": 672,
+                "end": 700
+            },
+            {
+                "name": "clnt_output",
+                "start": 704,
+                "end": 736
+            },
+            {
+                "name": "do_registers",
+                "start": 742,
+                "end": 769
+            },
+            {
+                "name": "addarg",
+                "start": 774,
+                "end": 784
+            },
+            {
+                "name": "putarg",
+                "start": 786,
+                "end": 796
+            },
+            {
+                "name": "checkfiles",
+                "start": 804,
+                "end": 825
+            },
+            {
+                "name": "parseargs",
+                "start": 830,
+                "end": 1024
+            },
+            {
+                "name": "usage",
+                "start": 1026,
+                "end": 1038
+            },
+            {
+                "name": "options_usage",
+                "start": 1040,
+                "end": 1067
+            }
+        ],
+        "tools/rpcgen/rpc_sample.c": [
+            {
+                "name": "write_sample_svc",
+                "start": 50,
+                "end": 56
+            },
+            {
+                "name": "write_sample_clnt",
+                "start": 59,
+                "end": 73
+            },
+            {
+                "name": "write_sample_client",
+                "start": 76,
+                "end": 154
+            },
+            {
+                "name": "write_sample_server",
+                "start": 156,
+                "end": 196
+            },
+            {
+                "name": "return_type",
+                "start": 200,
+                "end": 204
+            },
+            {
+                "name": "add_sample_msg",
+                "start": 206,
+                "end": 214
+            },
+            {
+                "name": "write_sample_clnt_main",
+                "start": 216,
+                "end": 247
+            }
+        ],
+        "tools/locktest/testlk.c": [
+            {
+                "name": "main",
+                "start": 16,
+                "end": 93
+            },
+            {
+                "name": "usage",
+                "start": 95,
+                "end": 100
+            },
+            {
+                "name": "fatal",
+                "start": 102,
+                "end": 107
+            }
+        ],
+        "tools/nlmtest/nlmtest.c": [
+            {
+                "name": "main",
+                "start": 31,
+                "end": 166
+            },
+            {
+                "name": "nlm_stat_name",
+                "start": 168,
+                "end": 187
+            },
+            {
+                "name": "holderstr",
+                "start": 189,
+                "end": 206
+            },
+            {
+                "name": "makelock",
+                "start": 208,
+                "end": 218
+            },
+            {
+                "name": "makeowner",
+                "start": 220,
+                "end": 230
+            },
+            {
+                "name": "makefileh",
+                "start": 232,
+                "end": 264
+            }
+        ]
+    }
+}

@@ -1,0 +1,4279 @@
+{
+    "sysstat-11.0.1": {
+        "rd_stats.h": [
+            {
+                "name": "read_stat_cpu",
+                "start": 553,
+                "end": 555
+            },
+            {
+                "name": "read_stat_irq",
+                "start": 556,
+                "end": 557
+            },
+            {
+                "name": "read_meminfo",
+                "start": 558,
+                "end": 559
+            },
+            {
+                "name": "read_uptime",
+                "start": 560,
+                "end": 561
+            },
+            {
+                "name": "oct2chr",
+                "start": 563,
+                "end": 564
+            },
+            {
+                "name": "read_stat_pcsw",
+                "start": 565,
+                "end": 566
+            },
+            {
+                "name": "read_loadavg",
+                "start": 567,
+                "end": 568
+            },
+            {
+                "name": "read_vmstat_swap",
+                "start": 569,
+                "end": 570
+            },
+            {
+                "name": "read_vmstat_paging",
+                "start": 571,
+                "end": 572
+            },
+            {
+                "name": "read_diskstats_io",
+                "start": 573,
+                "end": 574
+            },
+            {
+                "name": "read_diskstats_disk",
+                "start": 575,
+                "end": 576
+            },
+            {
+                "name": "read_tty_driver_serial",
+                "start": 577,
+                "end": 578
+            },
+            {
+                "name": "read_kernel_tables",
+                "start": 579,
+                "end": 580
+            },
+            {
+                "name": "read_net_dev",
+                "start": 581,
+                "end": 582
+            },
+            {
+                "name": "read_if_info",
+                "start": 583,
+                "end": 584
+            },
+            {
+                "name": "read_net_edev",
+                "start": 585,
+                "end": 586
+            },
+            {
+                "name": "read_net_nfs",
+                "start": 587,
+                "end": 588
+            },
+            {
+                "name": "read_net_nfsd",
+                "start": 589,
+                "end": 590
+            },
+            {
+                "name": "read_net_sock",
+                "start": 591,
+                "end": 592
+            },
+            {
+                "name": "read_net_ip",
+                "start": 593,
+                "end": 594
+            },
+            {
+                "name": "read_net_eip",
+                "start": 595,
+                "end": 596
+            },
+            {
+                "name": "read_net_icmp",
+                "start": 597,
+                "end": 598
+            },
+            {
+                "name": "read_net_eicmp",
+                "start": 599,
+                "end": 600
+            },
+            {
+                "name": "read_net_tcp",
+                "start": 601,
+                "end": 602
+            },
+            {
+                "name": "read_net_etcp",
+                "start": 603,
+                "end": 604
+            },
+            {
+                "name": "read_net_udp",
+                "start": 605,
+                "end": 606
+            },
+            {
+                "name": "read_net_sock6",
+                "start": 607,
+                "end": 608
+            },
+            {
+                "name": "read_net_ip6",
+                "start": 609,
+                "end": 610
+            },
+            {
+                "name": "read_net_eip6",
+                "start": 611,
+                "end": 612
+            },
+            {
+                "name": "read_net_icmp6",
+                "start": 613,
+                "end": 614
+            },
+            {
+                "name": "read_net_eicmp6",
+                "start": 615,
+                "end": 616
+            },
+            {
+                "name": "read_net_udp6",
+                "start": 617,
+                "end": 618
+            },
+            {
+                "name": "read_cpuinfo",
+                "start": 619,
+                "end": 620
+            },
+            {
+                "name": "read_meminfo_huge",
+                "start": 621,
+                "end": 622
+            },
+            {
+                "name": "read_time_in_state",
+                "start": 623,
+                "end": 624
+            },
+            {
+                "name": "read_bus_usb_dev",
+                "start": 625,
+                "end": 626
+            },
+            {
+                "name": "read_filesystem",
+                "start": 627,
+                "end": 628
+            }
+        ],
+        "common.h": [
+            {
+                "name": "compute_ext_disk_stats",
+                "start": 169,
+                "end": 171
+            },
+            {
+                "name": "count_bits",
+                "start": 172,
+                "end": 173
+            },
+            {
+                "name": "count_csvalues",
+                "start": 174,
+                "end": 175
+            },
+            {
+                "name": "device_name",
+                "start": 176,
+                "end": 177
+            },
+            {
+                "name": "get_HZ",
+                "start": 178,
+                "end": 179
+            },
+            {
+                "name": "get_devmap_major",
+                "start": 180,
+                "end": 181
+            },
+            {
+                "name": "get_interval",
+                "start": 182,
+                "end": 183
+            },
+            {
+                "name": "get_kb_shift",
+                "start": 184,
+                "end": 185
+            },
+            {
+                "name": "get_localtime",
+                "start": 186,
+                "end": 187
+            },
+            {
+                "name": "get_time",
+                "start": 188,
+                "end": 189
+            },
+            {
+                "name": "get_per_cpu_interval",
+                "start": 190,
+                "end": 191
+            },
+            {
+                "name": "get_persistent_name_from_pretty",
+                "start": 192,
+                "end": 193
+            },
+            {
+                "name": "get_persistent_type_dir",
+                "start": 194,
+                "end": 195
+            },
+            {
+                "name": "get_pretty_name_from_persistent",
+                "start": 196,
+                "end": 197
+            },
+            {
+                "name": "get_sysfs_dev_nr",
+                "start": 198,
+                "end": 199
+            },
+            {
+                "name": "get_win_height",
+                "start": 200,
+                "end": 201
+            },
+            {
+                "name": "init_nls",
+                "start": 202,
+                "end": 203
+            },
+            {
+                "name": "is_device",
+                "start": 204,
+                "end": 205
+            },
+            {
+                "name": "ll_sp_value",
+                "start": 206,
+                "end": 207
+            },
+            {
+                "name": "print_gal_header",
+                "start": 208,
+                "end": 209
+            },
+            {
+                "name": "print_version",
+                "start": 210,
+                "end": 211
+            },
+            {
+                "name": "strtolower",
+                "start": 212,
+                "end": 213
+            }
+        ],
+        "rd_sensors.h": [
+            {
+                "name": "read_fan",
+                "start": 58,
+                "end": 59
+            },
+            {
+                "name": "read_temp",
+                "start": 60,
+                "end": 61
+            },
+            {
+                "name": "read_in",
+                "start": 62,
+                "end": 63
+            },
+            {
+                "name": "get_fan_nr",
+                "start": 71,
+                "end": 72
+            },
+            {
+                "name": "get_temp_nr",
+                "start": 73,
+                "end": 74
+            },
+            {
+                "name": "get_in_nr",
+                "start": 75,
+                "end": 76
+            }
+        ],
+        "sa.h": [
+            {
+                "name": "wrap_get_cpu_nr",
+                "start": 707,
+                "end": 708
+            },
+            {
+                "name": "wrap_get_irq_nr",
+                "start": 709,
+                "end": 710
+            },
+            {
+                "name": "wrap_get_serial_nr",
+                "start": 711,
+                "end": 712
+            },
+            {
+                "name": "wrap_get_disk_nr",
+                "start": 713,
+                "end": 714
+            },
+            {
+                "name": "wrap_get_iface_nr",
+                "start": 715,
+                "end": 716
+            },
+            {
+                "name": "wrap_get_fan_nr",
+                "start": 717,
+                "end": 718
+            },
+            {
+                "name": "wrap_get_temp_nr",
+                "start": 719,
+                "end": 720
+            },
+            {
+                "name": "wrap_get_in_nr",
+                "start": 721,
+                "end": 722
+            },
+            {
+                "name": "wrap_get_freq_nr",
+                "start": 723,
+                "end": 724
+            },
+            {
+                "name": "wrap_get_usb_nr",
+                "start": 725,
+                "end": 726
+            },
+            {
+                "name": "wrap_get_filesystem_nr",
+                "start": 727,
+                "end": 728
+            },
+            {
+                "name": "wrap_read_stat_cpu",
+                "start": 731,
+                "end": 732
+            },
+            {
+                "name": "wrap_read_stat_pcsw",
+                "start": 733,
+                "end": 734
+            },
+            {
+                "name": "wrap_read_stat_irq",
+                "start": 735,
+                "end": 736
+            },
+            {
+                "name": "wrap_read_swap",
+                "start": 737,
+                "end": 738
+            },
+            {
+                "name": "wrap_read_paging",
+                "start": 739,
+                "end": 740
+            },
+            {
+                "name": "wrap_read_io",
+                "start": 741,
+                "end": 742
+            },
+            {
+                "name": "wrap_read_meminfo",
+                "start": 743,
+                "end": 744
+            },
+            {
+                "name": "wrap_read_kernel_tables",
+                "start": 745,
+                "end": 746
+            },
+            {
+                "name": "wrap_read_loadavg",
+                "start": 747,
+                "end": 748
+            },
+            {
+                "name": "wrap_read_tty_driver_serial",
+                "start": 749,
+                "end": 750
+            },
+            {
+                "name": "wrap_read_disk",
+                "start": 751,
+                "end": 752
+            },
+            {
+                "name": "wrap_read_net_dev",
+                "start": 753,
+                "end": 754
+            },
+            {
+                "name": "wrap_read_net_edev",
+                "start": 755,
+                "end": 756
+            },
+            {
+                "name": "wrap_read_net_nfs",
+                "start": 757,
+                "end": 758
+            },
+            {
+                "name": "wrap_read_net_nfsd",
+                "start": 759,
+                "end": 760
+            },
+            {
+                "name": "wrap_read_net_sock",
+                "start": 761,
+                "end": 762
+            },
+            {
+                "name": "wrap_read_net_ip",
+                "start": 763,
+                "end": 764
+            },
+            {
+                "name": "wrap_read_net_eip",
+                "start": 765,
+                "end": 766
+            },
+            {
+                "name": "wrap_read_net_icmp",
+                "start": 767,
+                "end": 768
+            },
+            {
+                "name": "wrap_read_net_eicmp",
+                "start": 769,
+                "end": 770
+            },
+            {
+                "name": "wrap_read_net_tcp",
+                "start": 771,
+                "end": 772
+            },
+            {
+                "name": "wrap_read_net_etcp",
+                "start": 773,
+                "end": 774
+            },
+            {
+                "name": "wrap_read_net_udp",
+                "start": 775,
+                "end": 776
+            },
+            {
+                "name": "wrap_read_net_sock6",
+                "start": 777,
+                "end": 778
+            },
+            {
+                "name": "wrap_read_net_ip6",
+                "start": 779,
+                "end": 780
+            },
+            {
+                "name": "wrap_read_net_eip6",
+                "start": 781,
+                "end": 782
+            },
+            {
+                "name": "wrap_read_net_icmp6",
+                "start": 783,
+                "end": 784
+            },
+            {
+                "name": "wrap_read_net_eicmp6",
+                "start": 785,
+                "end": 786
+            },
+            {
+                "name": "wrap_read_net_udp6",
+                "start": 787,
+                "end": 788
+            },
+            {
+                "name": "wrap_read_cpuinfo",
+                "start": 789,
+                "end": 790
+            },
+            {
+                "name": "wrap_read_fan",
+                "start": 791,
+                "end": 792
+            },
+            {
+                "name": "wrap_read_temp",
+                "start": 793,
+                "end": 794
+            },
+            {
+                "name": "wrap_read_in",
+                "start": 795,
+                "end": 796
+            },
+            {
+                "name": "wrap_read_meminfo_huge",
+                "start": 797,
+                "end": 798
+            },
+            {
+                "name": "wrap_read_time_in_state",
+                "start": 799,
+                "end": 800
+            },
+            {
+                "name": "wrap_read_bus_usb_dev",
+                "start": 801,
+                "end": 802
+            },
+            {
+                "name": "wrap_read_filesystem",
+                "start": 803,
+                "end": 804
+            },
+            {
+                "name": "allocate_bitmaps",
+                "start": 807,
+                "end": 808
+            },
+            {
+                "name": "allocate_structures",
+                "start": 809,
+                "end": 810
+            },
+            {
+                "name": "check_alt_sa_dir",
+                "start": 811,
+                "end": 812
+            },
+            {
+                "name": "check_disk_reg",
+                "start": 813,
+                "end": 814
+            },
+            {
+                "name": "check_file_actlst",
+                "start": 815,
+                "end": 818
+            },
+            {
+                "name": "check_net_dev_reg",
+                "start": 819,
+                "end": 820
+            },
+            {
+                "name": "check_net_edev_reg",
+                "start": 821,
+                "end": 822
+            },
+            {
+                "name": "compute_ifutil",
+                "start": 823,
+                "end": 824
+            },
+            {
+                "name": "copy_structures",
+                "start": 825,
+                "end": 827
+            },
+            {
+                "name": "datecmp",
+                "start": 828,
+                "end": 829
+            },
+            {
+                "name": "display_sa_file_version",
+                "start": 830,
+                "end": 831
+            },
+            {
+                "name": "free_bitmaps",
+                "start": 832,
+                "end": 833
+            },
+            {
+                "name": "free_structures",
+                "start": 834,
+                "end": 835
+            },
+            {
+                "name": "get_activity_nr",
+                "start": 836,
+                "end": 837
+            },
+            {
+                "name": "get_activity_position",
+                "start": 838,
+                "end": 839
+            },
+            {
+                "name": "get_devname",
+                "start": 840,
+                "end": 841
+            },
+            {
+                "name": "get_file_timestamp_struct",
+                "start": 842,
+                "end": 843
+            },
+            {
+                "name": "get_itv_value",
+                "start": 844,
+                "end": 846
+            },
+            {
+                "name": "handle_invalid_sa_file",
+                "start": 847,
+                "end": 848
+            },
+            {
+                "name": "next_slice",
+                "start": 849,
+                "end": 850
+            },
+            {
+                "name": "parse_sar_opt",
+                "start": 851,
+                "end": 852
+            },
+            {
+                "name": "parse_sar_I_opt",
+                "start": 853,
+                "end": 854
+            },
+            {
+                "name": "parse_sa_P_opt",
+                "start": 855,
+                "end": 856
+            },
+            {
+                "name": "parse_sar_m_opt",
+                "start": 857,
+                "end": 858
+            },
+            {
+                "name": "parse_sar_n_opt",
+                "start": 859,
+                "end": 860
+            },
+            {
+                "name": "parse_timestamp",
+                "start": 861,
+                "end": 862
+            },
+            {
+                "name": "print_report_hdr",
+                "start": 863,
+                "end": 864
+            },
+            {
+                "name": "read_file_stat_bunch",
+                "start": 865,
+                "end": 866
+            },
+            {
+                "name": "read_vol_act_structures",
+                "start": 867,
+                "end": 869
+            },
+            {
+                "name": "reallocate_vol_act_structures",
+                "start": 870,
+                "end": 871
+            },
+            {
+                "name": "sa_fread",
+                "start": 872,
+                "end": 873
+            },
+            {
+                "name": "select_all_activities",
+                "start": 874,
+                "end": 875
+            },
+            {
+                "name": "select_default_activity",
+                "start": 876,
+                "end": 877
+            },
+            {
+                "name": "set_bitmap",
+                "start": 878,
+                "end": 879
+            },
+            {
+                "name": "set_default_file",
+                "start": 880,
+                "end": 881
+            },
+            {
+                "name": "set_hdr_rectime",
+                "start": 882,
+                "end": 883
+            }
+        ],
+        "sadf.h": [
+            {
+                "name": "xprintf",
+                "start": 184,
+                "end": 185
+            },
+            {
+                "name": "xprintf0",
+                "start": 186,
+                "end": 187
+            },
+            {
+                "name": "print_db_restart",
+                "start": 192,
+                "end": 193
+            },
+            {
+                "name": "print_ppc_restart",
+                "start": 194,
+                "end": 195
+            },
+            {
+                "name": "print_xml_restart",
+                "start": 196,
+                "end": 197
+            },
+            {
+                "name": "print_json_restart",
+                "start": 198,
+                "end": 199
+            },
+            {
+                "name": "print_db_comment",
+                "start": 204,
+                "end": 205
+            },
+            {
+                "name": "print_ppc_comment",
+                "start": 206,
+                "end": 207
+            },
+            {
+                "name": "print_xml_comment",
+                "start": 208,
+                "end": 209
+            },
+            {
+                "name": "print_json_comment",
+                "start": 210,
+                "end": 211
+            },
+            {
+                "name": "print_xml_statistics",
+                "start": 216,
+                "end": 217
+            },
+            {
+                "name": "print_json_statistics",
+                "start": 218,
+                "end": 219
+            },
+            {
+                "name": "print_xml_timestamp",
+                "start": 224,
+                "end": 225
+            },
+            {
+                "name": "print_json_timestamp",
+                "start": 226,
+                "end": 227
+            },
+            {
+                "name": "print_xml_header",
+                "start": 232,
+                "end": 234
+            },
+            {
+                "name": "print_json_header",
+                "start": 235,
+                "end": 237
+            },
+            {
+                "name": "print_hdr_header",
+                "start": 238,
+                "end": 240
+            }
+        ],
+        "xml_stats.h": [
+            {
+                "name": "xml_print_cpu_stats",
+                "start": 18,
+                "end": 19
+            },
+            {
+                "name": "xml_print_pcsw_stats",
+                "start": 20,
+                "end": 21
+            },
+            {
+                "name": "xml_print_irq_stats",
+                "start": 22,
+                "end": 23
+            },
+            {
+                "name": "xml_print_swap_stats",
+                "start": 24,
+                "end": 25
+            },
+            {
+                "name": "xml_print_paging_stats",
+                "start": 26,
+                "end": 27
+            },
+            {
+                "name": "xml_print_io_stats",
+                "start": 28,
+                "end": 29
+            },
+            {
+                "name": "xml_print_memory_stats",
+                "start": 30,
+                "end": 31
+            },
+            {
+                "name": "xml_print_ktables_stats",
+                "start": 32,
+                "end": 33
+            },
+            {
+                "name": "xml_print_queue_stats",
+                "start": 34,
+                "end": 35
+            },
+            {
+                "name": "xml_print_serial_stats",
+                "start": 36,
+                "end": 37
+            },
+            {
+                "name": "xml_print_disk_stats",
+                "start": 38,
+                "end": 39
+            },
+            {
+                "name": "xml_print_net_dev_stats",
+                "start": 40,
+                "end": 41
+            },
+            {
+                "name": "xml_print_net_edev_stats",
+                "start": 42,
+                "end": 43
+            },
+            {
+                "name": "xml_print_net_nfs_stats",
+                "start": 44,
+                "end": 45
+            },
+            {
+                "name": "xml_print_net_nfsd_stats",
+                "start": 46,
+                "end": 47
+            },
+            {
+                "name": "xml_print_net_sock_stats",
+                "start": 48,
+                "end": 49
+            },
+            {
+                "name": "xml_print_net_ip_stats",
+                "start": 50,
+                "end": 51
+            },
+            {
+                "name": "xml_print_net_eip_stats",
+                "start": 52,
+                "end": 53
+            },
+            {
+                "name": "xml_print_net_icmp_stats",
+                "start": 54,
+                "end": 55
+            },
+            {
+                "name": "xml_print_net_eicmp_stats",
+                "start": 56,
+                "end": 57
+            },
+            {
+                "name": "xml_print_net_tcp_stats",
+                "start": 58,
+                "end": 59
+            },
+            {
+                "name": "xml_print_net_etcp_stats",
+                "start": 60,
+                "end": 61
+            },
+            {
+                "name": "xml_print_net_udp_stats",
+                "start": 62,
+                "end": 63
+            },
+            {
+                "name": "xml_print_net_sock6_stats",
+                "start": 64,
+                "end": 65
+            },
+            {
+                "name": "xml_print_net_ip6_stats",
+                "start": 66,
+                "end": 67
+            },
+            {
+                "name": "xml_print_net_eip6_stats",
+                "start": 68,
+                "end": 69
+            },
+            {
+                "name": "xml_print_net_icmp6_stats",
+                "start": 70,
+                "end": 71
+            },
+            {
+                "name": "xml_print_net_eicmp6_stats",
+                "start": 72,
+                "end": 73
+            },
+            {
+                "name": "xml_print_net_udp6_stats",
+                "start": 74,
+                "end": 75
+            },
+            {
+                "name": "xml_print_pwr_cpufreq_stats",
+                "start": 76,
+                "end": 77
+            },
+            {
+                "name": "xml_print_pwr_fan_stats",
+                "start": 78,
+                "end": 79
+            },
+            {
+                "name": "xml_print_pwr_temp_stats",
+                "start": 80,
+                "end": 81
+            },
+            {
+                "name": "xml_print_pwr_in_stats",
+                "start": 82,
+                "end": 83
+            },
+            {
+                "name": "xml_print_huge_stats",
+                "start": 84,
+                "end": 85
+            },
+            {
+                "name": "xml_print_pwr_wghfreq_stats",
+                "start": 86,
+                "end": 87
+            },
+            {
+                "name": "xml_print_pwr_usb_stats",
+                "start": 88,
+                "end": 89
+            },
+            {
+                "name": "xml_print_filesystem_stats",
+                "start": 90,
+                "end": 91
+            }
+        ],
+        "xml_stats.c": [
+            {
+                "name": "xml_markup_network",
+                "start": 51,
+                "end": 67
+            },
+            {
+                "name": "xml_markup_power_management",
+                "start": 78,
+                "end": 94
+            },
+            {
+                "name": "xml_print_cpu_stats",
+                "start": 108,
+                "end": 260
+            },
+            {
+                "name": "xml_print_pcsw_stats",
+                "start": 273,
+                "end": 286
+            },
+            {
+                "name": "xml_print_irq_stats",
+                "start": 299,
+                "end": 333
+            },
+            {
+                "name": "xml_print_swap_stats",
+                "start": 346,
+                "end": 358
+            },
+            {
+                "name": "xml_print_paging_stats",
+                "start": 371,
+                "end": 401
+            },
+            {
+                "name": "xml_print_io_stats",
+                "start": 414,
+                "end": 435
+            },
+            {
+                "name": "xml_print_memory_stats",
+                "start": 448,
+                "end": 532
+            },
+            {
+                "name": "xml_print_ktables_stats",
+                "start": 545,
+                "end": 560
+            },
+            {
+                "name": "xml_print_queue_stats",
+                "start": 573,
+                "end": 592
+            },
+            {
+                "name": "xml_print_serial_stats",
+                "start": 605,
+                "end": 642
+            },
+            {
+                "name": "xml_print_disk_stats",
+                "start": 655,
+                "end": 723
+            },
+            {
+                "name": "xml_print_net_dev_stats",
+                "start": 736,
+                "end": 788
+            },
+            {
+                "name": "xml_print_net_edev_stats",
+                "start": 801,
+                "end": 850
+            },
+            {
+                "name": "xml_print_net_nfs_stats",
+                "start": 863,
+                "end": 895
+            },
+            {
+                "name": "xml_print_net_nfsd_stats",
+                "start": 908,
+                "end": 950
+            },
+            {
+                "name": "xml_print_net_sock_stats",
+                "start": 963,
+                "end": 994
+            },
+            {
+                "name": "xml_print_net_ip_stats",
+                "start": 1007,
+                "end": 1043
+            },
+            {
+                "name": "xml_print_net_eip_stats",
+                "start": 1056,
+                "end": 1092
+            },
+            {
+                "name": "xml_print_net_icmp_stats",
+                "start": 1105,
+                "end": 1153
+            },
+            {
+                "name": "xml_print_net_eicmp_stats",
+                "start": 1166,
+                "end": 1210
+            },
+            {
+                "name": "xml_print_net_tcp_stats",
+                "start": 1223,
+                "end": 1251
+            },
+            {
+                "name": "xml_print_net_etcp_stats",
+                "start": 1264,
+                "end": 1294
+            },
+            {
+                "name": "xml_print_net_udp_stats",
+                "start": 1307,
+                "end": 1335
+            },
+            {
+                "name": "xml_print_net_sock6_stats",
+                "start": 1348,
+                "end": 1375
+            },
+            {
+                "name": "xml_print_net_ip6_stats",
+                "start": 1388,
+                "end": 1428
+            },
+            {
+                "name": "xml_print_net_eip6_stats",
+                "start": 1441,
+                "end": 1483
+            },
+            {
+                "name": "xml_print_net_icmp6_stats",
+                "start": 1496,
+                "end": 1550
+            },
+            {
+                "name": "xml_print_net_eicmp6_stats",
+                "start": 1563,
+                "end": 1605
+            },
+            {
+                "name": "xml_print_net_udp6_stats",
+                "start": 1618,
+                "end": 1646
+            },
+            {
+                "name": "xml_print_pwr_cpufreq_stats",
+                "start": 1659,
+                "end": 1704
+            },
+            {
+                "name": "xml_print_pwr_fan_stats",
+                "start": 1717,
+                "end": 1748
+            },
+            {
+                "name": "xml_print_pwr_temp_stats",
+                "start": 1761,
+                "end": 1794
+            },
+            {
+                "name": "xml_print_pwr_in_stats",
+                "start": 1807,
+                "end": 1840
+            },
+            {
+                "name": "xml_print_huge_stats",
+                "start": 1853,
+                "end": 1873
+            },
+            {
+                "name": "xml_print_pwr_wghfreq_stats",
+                "start": 1886,
+                "end": 1948
+            },
+            {
+                "name": "xml_print_pwr_usb_stats",
+                "start": 1961,
+                "end": 1999
+            },
+            {
+                "name": "xml_print_filesystem_stats",
+                "start": 2012,
+                "end": 2052
+            }
+        ],
+        "count.h": [
+            {
+                "name": "get_cpu_nr",
+                "start": 18,
+                "end": 19
+            },
+            {
+                "name": "get_irqcpu_nr",
+                "start": 20,
+                "end": 21
+            },
+            {
+                "name": "get_diskstats_dev_nr",
+                "start": 22,
+                "end": 23
+            },
+            {
+                "name": "get_irq_nr",
+                "start": 24,
+                "end": 25
+            },
+            {
+                "name": "get_serial_nr",
+                "start": 26,
+                "end": 27
+            },
+            {
+                "name": "get_iface_nr",
+                "start": 28,
+                "end": 29
+            },
+            {
+                "name": "get_disk_nr",
+                "start": 30,
+                "end": 31
+            },
+            {
+                "name": "get_freq_nr",
+                "start": 32,
+                "end": 33
+            },
+            {
+                "name": "get_usb_nr",
+                "start": 34,
+                "end": 35
+            },
+            {
+                "name": "get_filesystem_nr",
+                "start": 36,
+                "end": 37
+            }
+        ],
+        "pidstat.c": [
+            {
+                "name": "usage",
+                "start": 84,
+                "end": 94
+            },
+            {
+                "name": "alarm_handler",
+                "start": 104,
+                "end": 107
+            },
+            {
+                "name": "int_handler",
+                "start": 117,
+                "end": 120
+            },
+            {
+                "name": "init_stats",
+                "start": 127,
+                "end": 130
+            },
+            {
+                "name": "salloc_pid_array",
+                "start": 140,
+                "end": 147
+            },
+            {
+                "name": "salloc_pid",
+                "start": 157,
+                "end": 168
+            },
+            {
+                "name": "sfree_pid",
+                "start": 175,
+                "end": 182
+            },
+            {
+                "name": "check_flags",
+                "start": 189,
+                "end": 221
+            },
+            {
+                "name": "update_pid_array",
+                "start": 239,
+                "end": 255
+            },
+            {
+                "name": "print_comm",
+                "start": 265,
+                "end": 277
+            },
+            {
+                "name": "read_proc_meminfo",
+                "start": 284,
+                "end": 291
+            },
+            {
+                "name": "read_proc_pid_stat",
+                "start": 310,
+                "end": 362
+            },
+            {
+                "name": "read_proc_pid_status",
+                "start": 380,
+                "end": 418
+            },
+            {
+                "name": "read_proc_pid_smap",
+                "start": 435,
+                "end": 479
+            },
+            {
+                "name": "read_proc_pid_cmdline",
+                "start": 498,
+                "end": 534
+            },
+            {
+                "name": "read_proc_pid_io",
+                "start": 555,
+                "end": 597
+            },
+            {
+                "name": "read_proc_pid_fd",
+                "start": 618,
+                "end": 653
+            },
+            {
+                "name": "read_pid_stats",
+                "start": 672,
+                "end": 701
+            },
+            {
+                "name": "count_tid",
+                "start": 716,
+                "end": 726
+            },
+            {
+                "name": "count_pid",
+                "start": 736,
+                "end": 763
+            },
+            {
+                "name": "count_tid_in_list",
+                "start": 775,
+                "end": 794
+            },
+            {
+                "name": "pid_sys_init",
+                "start": 801,
+                "end": 823
+            },
+            {
+                "name": "read_task_stats",
+                "start": 838,
+                "end": 869
+            },
+            {
+                "name": "read_stats",
+                "start": 879,
+                "end": 971
+            },
+            {
+                "name": "get_pid_to_display",
+                "start": 1002,
+                "end": 1207
+            },
+            {
+                "name": "__print_line_id",
+                "start": 1218,
+                "end": 1246
+            },
+            {
+                "name": "print_line_id",
+                "start": 1257,
+                "end": 1262
+            },
+            {
+                "name": "write_pid_task_all_stats",
+                "start": 1281,
+                "end": 1405
+            },
+            {
+                "name": "write_pid_child_all_stats",
+                "start": 1422,
+                "end": 1473
+            },
+            {
+                "name": "write_pid_task_cpu_stats",
+                "start": 1499,
+                "end": 1545
+            },
+            {
+                "name": "write_pid_child_cpu_stats",
+                "start": 1568,
+                "end": 1630
+            },
+            {
+                "name": "write_pid_task_memory_stats",
+                "start": 1654,
+                "end": 1711
+            },
+            {
+                "name": "write_pid_child_memory_stats",
+                "start": 1734,
+                "end": 1780
+            },
+            {
+                "name": "write_pid_stack_stats",
+                "start": 1804,
+                "end": 1853
+            },
+            {
+                "name": "write_pid_io_stats",
+                "start": 1877,
+                "end": 1933
+            },
+            {
+                "name": "write_pid_ctxswitch_stats",
+                "start": 1956,
+                "end": 1984
+            },
+            {
+                "name": "write_pid_rt_stats",
+                "start": 2007,
+                "end": 2035
+            },
+            {
+                "name": "write_pid_ktab_stats",
+                "start": 2059,
+                "end": 2114
+            },
+            {
+                "name": "write_stats_core",
+                "start": 2137,
+                "end": 2236
+            },
+            {
+                "name": "write_stats_avg",
+                "start": 2247,
+                "end": 2254
+            },
+            {
+                "name": "write_stats",
+                "start": 2269,
+                "end": 2281
+            },
+            {
+                "name": "rw_pidstat_loop",
+                "start": 2292,
+                "end": 2409
+            },
+            {
+                "name": "main",
+                "start": 2416,
+                "end": 2690
+            }
+        ],
+        "rd_stats.c": [
+            {
+                "name": "read_stat_cpu",
+                "start": 59,
+                "end": 163
+            },
+            {
+                "name": "read_stat_irq",
+                "start": 178,
+                "end": 204
+            },
+            {
+                "name": "read_meminfo",
+                "start": 217,
+                "end": 274
+            },
+            {
+                "name": "read_uptime",
+                "start": 284,
+                "end": 304
+            }
+        ],
+        "common.c": [
+            {
+                "name": "print_version",
+                "start": 60,
+                "end": 65
+            },
+            {
+                "name": "get_localtime",
+                "start": 81,
+                "end": 92
+            },
+            {
+                "name": "get_gmtime",
+                "start": 108,
+                "end": 119
+            },
+            {
+                "name": "get_time",
+                "start": 135,
+                "end": 152
+            },
+            {
+                "name": "count_csvalues",
+                "start": 167,
+                "end": 183
+            },
+            {
+                "name": "get_dev_part_nr",
+                "start": 196,
+                "end": 228
+            },
+            {
+                "name": "get_sysfs_dev_nr",
+                "start": 244,
+                "end": 279
+            },
+            {
+                "name": "get_devmap_major",
+                "start": 291,
+                "end": 311
+            },
+            {
+                "name": "print_gal_header",
+                "start": 329,
+                "end": 351
+            },
+            {
+                "name": "get_win_height",
+                "start": 379,
+                "end": 394
+            },
+            {
+                "name": "device_name",
+                "start": 407,
+                "end": 430
+            },
+            {
+                "name": "is_device",
+                "start": 448,
+                "end": 461
+            },
+            {
+                "name": "get_kb_shift",
+                "start": 468,
+                "end": 486
+            },
+            {
+                "name": "get_HZ",
+                "start": 493,
+                "end": 502
+            },
+            {
+                "name": "ll_sp_value",
+                "start": 510,
+                "end": 517
+            },
+            {
+                "name": "get_interval",
+                "start": 531,
+                "end": 544
+            },
+            {
+                "name": "get_per_cpu_interval",
+                "start": 562,
+                "end": 597
+            },
+            {
+                "name": "count_bits",
+                "start": 629,
+                "end": 645
+            },
+            {
+                "name": "compute_ext_disk_stats",
+                "start": 660,
+                "end": 678
+            },
+            {
+                "name": "strtolower",
+                "start": 694,
+                "end": 704
+            },
+            {
+                "name": "get_persistent_type_dir",
+                "start": 717,
+                "end": 728
+            },
+            {
+                "name": "get_persistent_name_path",
+                "start": 741,
+                "end": 753
+            },
+            {
+                "name": "get_persistent_names",
+                "start": 763,
+                "end": 815
+            },
+            {
+                "name": "get_persistent_name_from_pretty",
+                "start": 828,
+                "end": 880
+            },
+            {
+                "name": "get_pretty_name_from_persistent",
+                "start": 893,
+                "end": 916
+            }
+        ],
+        "pr_stats.h": [
+            {
+                "name": "print_cpu_stats",
+                "start": 19,
+                "end": 20
+            },
+            {
+                "name": "print_pcsw_stats",
+                "start": 21,
+                "end": 22
+            },
+            {
+                "name": "print_irq_stats",
+                "start": 23,
+                "end": 24
+            },
+            {
+                "name": "print_swap_stats",
+                "start": 25,
+                "end": 26
+            },
+            {
+                "name": "print_paging_stats",
+                "start": 27,
+                "end": 28
+            },
+            {
+                "name": "print_io_stats",
+                "start": 29,
+                "end": 30
+            },
+            {
+                "name": "print_memory_stats",
+                "start": 31,
+                "end": 32
+            },
+            {
+                "name": "print_ktables_stats",
+                "start": 33,
+                "end": 34
+            },
+            {
+                "name": "print_queue_stats",
+                "start": 35,
+                "end": 36
+            },
+            {
+                "name": "print_serial_stats",
+                "start": 37,
+                "end": 38
+            },
+            {
+                "name": "print_disk_stats",
+                "start": 39,
+                "end": 40
+            },
+            {
+                "name": "print_net_dev_stats",
+                "start": 41,
+                "end": 42
+            },
+            {
+                "name": "print_net_edev_stats",
+                "start": 43,
+                "end": 44
+            },
+            {
+                "name": "print_net_nfs_stats",
+                "start": 45,
+                "end": 46
+            },
+            {
+                "name": "print_net_nfsd_stats",
+                "start": 47,
+                "end": 48
+            },
+            {
+                "name": "print_net_sock_stats",
+                "start": 49,
+                "end": 50
+            },
+            {
+                "name": "print_net_ip_stats",
+                "start": 51,
+                "end": 52
+            },
+            {
+                "name": "print_net_eip_stats",
+                "start": 53,
+                "end": 54
+            },
+            {
+                "name": "print_net_icmp_stats",
+                "start": 55,
+                "end": 56
+            },
+            {
+                "name": "print_net_eicmp_stats",
+                "start": 57,
+                "end": 58
+            },
+            {
+                "name": "print_net_tcp_stats",
+                "start": 59,
+                "end": 60
+            },
+            {
+                "name": "print_net_etcp_stats",
+                "start": 61,
+                "end": 62
+            },
+            {
+                "name": "print_net_udp_stats",
+                "start": 63,
+                "end": 64
+            },
+            {
+                "name": "print_net_sock6_stats",
+                "start": 65,
+                "end": 66
+            },
+            {
+                "name": "print_net_ip6_stats",
+                "start": 67,
+                "end": 68
+            },
+            {
+                "name": "print_net_eip6_stats",
+                "start": 69,
+                "end": 70
+            },
+            {
+                "name": "print_net_icmp6_stats",
+                "start": 71,
+                "end": 72
+            },
+            {
+                "name": "print_net_eicmp6_stats",
+                "start": 73,
+                "end": 74
+            },
+            {
+                "name": "print_net_udp6_stats",
+                "start": 75,
+                "end": 76
+            },
+            {
+                "name": "print_pwr_cpufreq_stats",
+                "start": 77,
+                "end": 78
+            },
+            {
+                "name": "print_pwr_fan_stats",
+                "start": 79,
+                "end": 80
+            },
+            {
+                "name": "print_pwr_temp_stats",
+                "start": 81,
+                "end": 82
+            },
+            {
+                "name": "print_pwr_in_stats",
+                "start": 83,
+                "end": 84
+            },
+            {
+                "name": "print_huge_stats",
+                "start": 85,
+                "end": 86
+            },
+            {
+                "name": "print_pwr_wghfreq_stats",
+                "start": 87,
+                "end": 88
+            },
+            {
+                "name": "print_pwr_usb_stats",
+                "start": 89,
+                "end": 90
+            },
+            {
+                "name": "print_filesystem_stats",
+                "start": 91,
+                "end": 92
+            },
+            {
+                "name": "print_avg_memory_stats",
+                "start": 95,
+                "end": 96
+            },
+            {
+                "name": "print_avg_ktables_stats",
+                "start": 97,
+                "end": 98
+            },
+            {
+                "name": "print_avg_queue_stats",
+                "start": 99,
+                "end": 100
+            },
+            {
+                "name": "print_avg_net_sock_stats",
+                "start": 101,
+                "end": 102
+            },
+            {
+                "name": "print_avg_net_sock6_stats",
+                "start": 103,
+                "end": 104
+            },
+            {
+                "name": "print_avg_pwr_cpufreq_stats",
+                "start": 105,
+                "end": 106
+            },
+            {
+                "name": "print_avg_pwr_fan_stats",
+                "start": 107,
+                "end": 108
+            },
+            {
+                "name": "print_avg_pwr_temp_stats",
+                "start": 109,
+                "end": 110
+            },
+            {
+                "name": "print_avg_pwr_in_stats",
+                "start": 111,
+                "end": 112
+            },
+            {
+                "name": "print_avg_huge_stats",
+                "start": 113,
+                "end": 114
+            },
+            {
+                "name": "print_avg_pwr_usb_stats",
+                "start": 115,
+                "end": 116
+            },
+            {
+                "name": "print_avg_filesystem_stats",
+                "start": 117,
+                "end": 118
+            }
+        ],
+        "sar.c": [
+            {
+                "name": "print_usage_title",
+                "start": 92,
+                "end": 96
+            },
+            {
+                "name": "usage",
+                "start": 106,
+                "end": 118
+            },
+            {
+                "name": "display_help",
+                "start": 128,
+                "end": 180
+            },
+            {
+                "name": "int_handler",
+                "start": 190,
+                "end": 195
+            },
+            {
+                "name": "init_structures",
+                "start": 202,
+                "end": 208
+            },
+            {
+                "name": "salloc",
+                "start": 219,
+                "end": 226
+            },
+            {
+                "name": "print_read_error",
+                "start": 234,
+                "end": 238
+            },
+            {
+                "name": "reverse_check_act",
+                "start": 250,
+                "end": 266
+            },
+            {
+                "name": "sar_get_record_timestamp_struct",
+                "start": 283,
+                "end": 306
+            },
+            {
+                "name": "check_line_hdr",
+                "start": 316,
+                "end": 342
+            },
+            {
+                "name": "set_record_timestamp_string",
+                "start": 359,
+                "end": 370
+            },
+            {
+                "name": "write_stats_avg",
+                "start": 385,
+                "end": 428
+            },
+            {
+                "name": "write_stats",
+                "start": 453,
+                "end": 529
+            },
+            {
+                "name": "write_stats_startup",
+                "start": 539,
+                "end": 563
+            },
+            {
+                "name": "sa_read",
+                "start": 579,
+                "end": 598
+            },
+            {
+                "name": "sar_print_special",
+                "start": 619,
+                "end": 660
+            },
+            {
+                "name": "read_sadc_stat_bunch",
+                "start": 670,
+                "end": 691
+            },
+            {
+                "name": "handle_curr_act_stats",
+                "start": 715,
+                "end": 805
+            },
+            {
+                "name": "read_header_data",
+                "start": 812,
+                "end": 884
+            },
+            {
+                "name": "read_stats_from_file",
+                "start": 894,
+                "end": 1034
+            },
+            {
+                "name": "read_stats",
+                "start": 1041,
+                "end": 1129
+            },
+            {
+                "name": "main",
+                "start": 1136,
+                "end": 1509
+            }
+        ],
+        "count.c": [
+            {
+                "name": "get_sys_cpu_nr",
+                "start": 60,
+                "end": 98
+            },
+            {
+                "name": "get_proc_cpu_nr",
+                "start": 111,
+                "end": 135
+            },
+            {
+                "name": "get_cpu_nr",
+                "start": 158,
+                "end": 173
+            },
+            {
+                "name": "get_irqcpu_nr",
+                "start": 190,
+                "end": 215
+            },
+            {
+                "name": "get_diskstats_dev_nr",
+                "start": 231,
+                "end": 264
+            }
+        ],
+        "cifsiostat.c": [
+            {
+                "name": "usage",
+                "start": 69,
+                "end": 82
+            },
+            {
+                "name": "alarm_handler",
+                "start": 92,
+                "end": 95
+            },
+            {
+                "name": "get_cifs_nr",
+                "start": 106,
+                "end": 128
+            },
+            {
+                "name": "set_entries_inactive",
+                "start": 135,
+                "end": 143
+            },
+            {
+                "name": "free_inactive_entries",
+                "start": 150,
+                "end": 160
+            },
+            {
+                "name": "io_sys_init",
+                "start": 167,
+                "end": 191
+            },
+            {
+                "name": "io_sys_free",
+                "start": 198,
+                "end": 208
+            },
+            {
+                "name": "save_stats",
+                "start": 220,
+                "end": 302
+            },
+            {
+                "name": "read_cifs_stat",
+                "start": 312,
+                "end": 375
+            },
+            {
+                "name": "write_cifs_stat_header",
+                "start": 385,
+                "end": 401
+            },
+            {
+                "name": "write_cifs_stat",
+                "start": 416,
+                "end": 436
+            },
+            {
+                "name": "write_stats",
+                "start": 447,
+                "end": 507
+            },
+            {
+                "name": "rw_io_stat_loop",
+                "start": 518,
+                "end": 555
+            },
+            {
+                "name": "main",
+                "start": 562,
+                "end": 682
+            }
+        ],
+        "sa_common.c": [
+            {
+                "name": "set_bitmap",
+                "start": 62,
+                "end": 69
+            },
+            {
+                "name": "allocate_structures",
+                "start": 79,
+                "end": 90
+            },
+            {
+                "name": "free_structures",
+                "start": 100,
+                "end": 114
+            },
+            {
+                "name": "get_devname_from_sysfs",
+                "start": 129,
+                "end": 152
+            },
+            {
+                "name": "get_devname",
+                "start": 171,
+                "end": 190
+            },
+            {
+                "name": "next_slice",
+                "start": 208,
+                "end": 255
+            },
+            {
+                "name": "decode_timestamp",
+                "start": 271,
+                "end": 286
+            },
+            {
+                "name": "datecmp",
+                "start": 301,
+                "end": 311
+            },
+            {
+                "name": "parse_timestamp",
+                "start": 329,
+                "end": 342
+            },
+            {
+                "name": "guess_sa_name",
+                "start": 358,
+                "end": 396
+            },
+            {
+                "name": "set_default_file",
+                "start": 415,
+                "end": 454
+            },
+            {
+                "name": "check_alt_sa_dir",
+                "start": 478,
+                "end": 494
+            },
+            {
+                "name": "get_itv_value",
+                "start": 510,
+                "end": 526
+            },
+            {
+                "name": "get_file_timestamp_struct",
+                "start": 545,
+                "end": 569
+            },
+            {
+                "name": "print_report_hdr",
+                "start": 587,
+                "end": 598
+            },
+            {
+                "name": "check_net_dev_reg",
+                "start": 616,
+                "end": 713
+            },
+            {
+                "name": "check_net_edev_reg",
+                "start": 731,
+                "end": 788
+            },
+            {
+                "name": "check_disk_reg",
+                "start": 805,
+                "end": 858
+            },
+            {
+                "name": "allocate_bitmaps",
+                "start": 868,
+                "end": 883
+            },
+            {
+                "name": "free_bitmaps",
+                "start": 893,
+                "end": 904
+            },
+            {
+                "name": "get_activity_position",
+                "start": 920,
+                "end": 933
+            },
+            {
+                "name": "get_activity_nr",
+                "start": 950,
+                "end": 972
+            },
+            {
+                "name": "select_all_activities",
+                "start": 985,
+                "end": 992
+            },
+            {
+                "name": "select_default_activity",
+                "start": 1006,
+                "end": 1028
+            },
+            {
+                "name": "sa_fread",
+                "start": 1045,
+                "end": 1066
+            },
+            {
+                "name": "display_sa_file_version",
+                "start": 1077,
+                "end": 1088
+            },
+            {
+                "name": "handle_invalid_sa_file",
+                "start": 1107,
+                "end": 1123
+            },
+            {
+                "name": "copy_structures",
+                "start": 1137,
+                "end": 1156
+            },
+            {
+                "name": "read_file_stat_bunch",
+                "start": 1170,
+                "end": 1208
+            },
+            {
+                "name": "check_file_actlst",
+                "start": 1231,
+                "end": 1375
+            },
+            {
+                "name": "reallocate_vol_act_structures",
+                "start": 1393,
+                "end": 1409
+            },
+            {
+                "name": "read_vol_act_structures",
+                "start": 1431,
+                "end": 1458
+            },
+            {
+                "name": "parse_sar_opt",
+                "start": 1477,
+                "end": 1633
+            },
+            {
+                "name": "parse_sar_m_opt",
+                "start": 1650,
+                "end": 1687
+            },
+            {
+                "name": "parse_sar_n_opt",
+                "start": 1704,
+                "end": 1789
+            },
+            {
+                "name": "parse_sar_I_opt",
+                "start": 1807,
+                "end": 1848
+            },
+            {
+                "name": "parse_sa_P_opt",
+                "start": 1867,
+                "end": 1902
+            },
+            {
+                "name": "compute_ifutil",
+                "start": 1917,
+                "end": 1941
+            }
+        ],
+        "rd_sensors.c": [
+            {
+                "name": "read_fan",
+                "start": 52,
+                "end": 92
+            },
+            {
+                "name": "read_temp",
+                "start": 106,
+                "end": 151
+            },
+            {
+                "name": "read_in",
+                "start": 165,
+                "end": 210
+            },
+            {
+                "name": "get_fan_nr",
+                "start": 252,
+                "end": 259
+            },
+            {
+                "name": "get_temp_nr",
+                "start": 269,
+                "end": 277
+            },
+            {
+                "name": "get_in_nr",
+                "start": 287,
+                "end": 295
+            }
+        ],
+        "json_stats.h": [
+            {
+                "name": "json_print_cpu_stats",
+                "start": 18,
+                "end": 19
+            },
+            {
+                "name": "json_print_pcsw_stats",
+                "start": 20,
+                "end": 21
+            },
+            {
+                "name": "json_print_irq_stats",
+                "start": 22,
+                "end": 23
+            },
+            {
+                "name": "json_print_swap_stats",
+                "start": 24,
+                "end": 25
+            },
+            {
+                "name": "json_print_paging_stats",
+                "start": 26,
+                "end": 27
+            },
+            {
+                "name": "json_print_io_stats",
+                "start": 28,
+                "end": 29
+            },
+            {
+                "name": "json_print_memory_stats",
+                "start": 30,
+                "end": 31
+            },
+            {
+                "name": "json_print_ktables_stats",
+                "start": 32,
+                "end": 33
+            },
+            {
+                "name": "json_print_queue_stats",
+                "start": 34,
+                "end": 35
+            },
+            {
+                "name": "json_print_serial_stats",
+                "start": 36,
+                "end": 37
+            },
+            {
+                "name": "json_print_disk_stats",
+                "start": 38,
+                "end": 39
+            },
+            {
+                "name": "json_print_net_dev_stats",
+                "start": 40,
+                "end": 41
+            },
+            {
+                "name": "json_print_net_edev_stats",
+                "start": 42,
+                "end": 43
+            },
+            {
+                "name": "json_print_net_nfs_stats",
+                "start": 44,
+                "end": 45
+            },
+            {
+                "name": "json_print_net_nfsd_stats",
+                "start": 46,
+                "end": 47
+            },
+            {
+                "name": "json_print_net_sock_stats",
+                "start": 48,
+                "end": 49
+            },
+            {
+                "name": "json_print_net_ip_stats",
+                "start": 50,
+                "end": 51
+            },
+            {
+                "name": "json_print_net_eip_stats",
+                "start": 52,
+                "end": 53
+            },
+            {
+                "name": "json_print_net_icmp_stats",
+                "start": 54,
+                "end": 55
+            },
+            {
+                "name": "json_print_net_eicmp_stats",
+                "start": 56,
+                "end": 57
+            },
+            {
+                "name": "json_print_net_tcp_stats",
+                "start": 58,
+                "end": 59
+            },
+            {
+                "name": "json_print_net_etcp_stats",
+                "start": 60,
+                "end": 61
+            },
+            {
+                "name": "json_print_net_udp_stats",
+                "start": 62,
+                "end": 63
+            },
+            {
+                "name": "json_print_net_sock6_stats",
+                "start": 64,
+                "end": 65
+            },
+            {
+                "name": "json_print_net_ip6_stats",
+                "start": 66,
+                "end": 67
+            },
+            {
+                "name": "json_print_net_eip6_stats",
+                "start": 68,
+                "end": 69
+            },
+            {
+                "name": "json_print_net_icmp6_stats",
+                "start": 70,
+                "end": 71
+            },
+            {
+                "name": "json_print_net_eicmp6_stats",
+                "start": 72,
+                "end": 73
+            },
+            {
+                "name": "json_print_net_udp6_stats",
+                "start": 74,
+                "end": 75
+            },
+            {
+                "name": "json_print_pwr_cpufreq_stats",
+                "start": 76,
+                "end": 77
+            },
+            {
+                "name": "json_print_pwr_fan_stats",
+                "start": 78,
+                "end": 79
+            },
+            {
+                "name": "json_print_pwr_temp_stats",
+                "start": 80,
+                "end": 81
+            },
+            {
+                "name": "json_print_pwr_in_stats",
+                "start": 82,
+                "end": 83
+            },
+            {
+                "name": "json_print_huge_stats",
+                "start": 84,
+                "end": 85
+            },
+            {
+                "name": "json_print_pwr_wghfreq_stats",
+                "start": 86,
+                "end": 87
+            },
+            {
+                "name": "json_print_pwr_usb_stats",
+                "start": 88,
+                "end": 89
+            },
+            {
+                "name": "json_print_filesystem_stats",
+                "start": 90,
+                "end": 91
+            }
+        ],
+        "json_stats.c": [
+            {
+                "name": "json_markup_network",
+                "start": 51,
+                "end": 68
+            },
+            {
+                "name": "json_markup_power_management",
+                "start": 79,
+                "end": 96
+            },
+            {
+                "name": "json_print_cpu_stats",
+                "start": 110,
+                "end": 265
+            },
+            {
+                "name": "json_print_pcsw_stats",
+                "start": 278,
+                "end": 291
+            },
+            {
+                "name": "json_print_irq_stats",
+                "start": 304,
+                "end": 346
+            },
+            {
+                "name": "json_print_swap_stats",
+                "start": 359,
+                "end": 371
+            },
+            {
+                "name": "json_print_paging_stats",
+                "start": 384,
+                "end": 414
+            },
+            {
+                "name": "json_print_io_stats",
+                "start": 427,
+                "end": 447
+            },
+            {
+                "name": "json_print_memory_stats",
+                "start": 460,
+                "end": 541
+            },
+            {
+                "name": "json_print_ktables_stats",
+                "start": 554,
+                "end": 569
+            },
+            {
+                "name": "json_print_queue_stats",
+                "start": 582,
+                "end": 601
+            },
+            {
+                "name": "json_print_serial_stats",
+                "start": 614,
+                "end": 657
+            },
+            {
+                "name": "json_print_disk_stats",
+                "start": 670,
+                "end": 744
+            },
+            {
+                "name": "json_print_net_dev_stats",
+                "start": 757,
+                "end": 821
+            },
+            {
+                "name": "json_print_net_edev_stats",
+                "start": 834,
+                "end": 895
+            },
+            {
+                "name": "json_print_net_nfs_stats",
+                "start": 908,
+                "end": 940
+            },
+            {
+                "name": "json_print_net_nfsd_stats",
+                "start": 953,
+                "end": 995
+            },
+            {
+                "name": "json_print_net_sock_stats",
+                "start": 1008,
+                "end": 1039
+            },
+            {
+                "name": "json_print_net_ip_stats",
+                "start": 1052,
+                "end": 1088
+            },
+            {
+                "name": "json_print_net_eip_stats",
+                "start": 1101,
+                "end": 1137
+            },
+            {
+                "name": "json_print_net_icmp_stats",
+                "start": 1150,
+                "end": 1198
+            },
+            {
+                "name": "json_print_net_eicmp_stats",
+                "start": 1211,
+                "end": 1255
+            },
+            {
+                "name": "json_print_net_tcp_stats",
+                "start": 1268,
+                "end": 1296
+            },
+            {
+                "name": "json_print_net_etcp_stats",
+                "start": 1309,
+                "end": 1339
+            },
+            {
+                "name": "json_print_net_udp_stats",
+                "start": 1352,
+                "end": 1380
+            },
+            {
+                "name": "json_print_net_sock6_stats",
+                "start": 1393,
+                "end": 1420
+            },
+            {
+                "name": "json_print_net_ip6_stats",
+                "start": 1433,
+                "end": 1473
+            },
+            {
+                "name": "json_print_net_eip6_stats",
+                "start": 1486,
+                "end": 1528
+            },
+            {
+                "name": "json_print_net_icmp6_stats",
+                "start": 1541,
+                "end": 1595
+            },
+            {
+                "name": "json_print_net_eicmp6_stats",
+                "start": 1608,
+                "end": 1650
+            },
+            {
+                "name": "json_print_net_udp6_stats",
+                "start": 1663,
+                "end": 1691
+            },
+            {
+                "name": "json_print_pwr_cpufreq_stats",
+                "start": 1704,
+                "end": 1756
+            },
+            {
+                "name": "json_print_pwr_fan_stats",
+                "start": 1769,
+                "end": 1810
+            },
+            {
+                "name": "json_print_pwr_temp_stats",
+                "start": 1823,
+                "end": 1866
+            },
+            {
+                "name": "json_print_pwr_in_stats",
+                "start": 1879,
+                "end": 1922
+            },
+            {
+                "name": "json_print_huge_stats",
+                "start": 1935,
+                "end": 1950
+            },
+            {
+                "name": "json_print_pwr_wghfreq_stats",
+                "start": 1963,
+                "end": 2032
+            },
+            {
+                "name": "json_print_pwr_usb_stats",
+                "start": 2045,
+                "end": 2094
+            },
+            {
+                "name": "json_print_filesystem_stats",
+                "start": 2107,
+                "end": 2151
+            }
+        ],
+        "rndr_stats.h": [
+            {
+                "name": "render_pcsw_stats",
+                "start": 49,
+                "end": 50
+            },
+            {
+                "name": "render_cpu_stats",
+                "start": 51,
+                "end": 52
+            },
+            {
+                "name": "render_irq_stats",
+                "start": 53,
+                "end": 54
+            },
+            {
+                "name": "render_swap_stats",
+                "start": 55,
+                "end": 56
+            },
+            {
+                "name": "render_paging_stats",
+                "start": 57,
+                "end": 58
+            },
+            {
+                "name": "render_io_stats",
+                "start": 59,
+                "end": 60
+            },
+            {
+                "name": "render_memory_stats",
+                "start": 61,
+                "end": 62
+            },
+            {
+                "name": "render_ktables_stats",
+                "start": 63,
+                "end": 64
+            },
+            {
+                "name": "render_queue_stats",
+                "start": 65,
+                "end": 66
+            },
+            {
+                "name": "render_serial_stats",
+                "start": 67,
+                "end": 68
+            },
+            {
+                "name": "render_disk_stats",
+                "start": 69,
+                "end": 70
+            },
+            {
+                "name": "render_net_dev_stats",
+                "start": 71,
+                "end": 72
+            },
+            {
+                "name": "render_net_edev_stats",
+                "start": 73,
+                "end": 74
+            },
+            {
+                "name": "render_net_nfs_stats",
+                "start": 75,
+                "end": 76
+            },
+            {
+                "name": "render_net_nfsd_stats",
+                "start": 77,
+                "end": 78
+            },
+            {
+                "name": "render_net_sock_stats",
+                "start": 79,
+                "end": 80
+            },
+            {
+                "name": "render_net_ip_stats",
+                "start": 81,
+                "end": 82
+            },
+            {
+                "name": "render_net_eip_stats",
+                "start": 83,
+                "end": 84
+            },
+            {
+                "name": "render_net_icmp_stats",
+                "start": 85,
+                "end": 86
+            },
+            {
+                "name": "render_net_eicmp_stats",
+                "start": 87,
+                "end": 88
+            },
+            {
+                "name": "render_net_tcp_stats",
+                "start": 89,
+                "end": 90
+            },
+            {
+                "name": "render_net_etcp_stats",
+                "start": 91,
+                "end": 92
+            },
+            {
+                "name": "render_net_udp_stats",
+                "start": 93,
+                "end": 94
+            },
+            {
+                "name": "render_net_sock6_stats",
+                "start": 95,
+                "end": 96
+            },
+            {
+                "name": "render_net_ip6_stats",
+                "start": 97,
+                "end": 98
+            },
+            {
+                "name": "render_net_eip6_stats",
+                "start": 99,
+                "end": 100
+            },
+            {
+                "name": "render_net_icmp6_stats",
+                "start": 101,
+                "end": 102
+            },
+            {
+                "name": "render_net_eicmp6_stats",
+                "start": 103,
+                "end": 104
+            },
+            {
+                "name": "render_net_udp6_stats",
+                "start": 105,
+                "end": 106
+            },
+            {
+                "name": "render_pwr_cpufreq_stats",
+                "start": 107,
+                "end": 108
+            },
+            {
+                "name": "render_pwr_fan_stats",
+                "start": 109,
+                "end": 110
+            },
+            {
+                "name": "render_pwr_temp_stats",
+                "start": 111,
+                "end": 112
+            },
+            {
+                "name": "render_pwr_in_stats",
+                "start": 113,
+                "end": 114
+            },
+            {
+                "name": "render_huge_stats",
+                "start": 115,
+                "end": 116
+            },
+            {
+                "name": "render_pwr_wghfreq_stats",
+                "start": 117,
+                "end": 118
+            },
+            {
+                "name": "render_pwr_usb_stats",
+                "start": 119,
+                "end": 120
+            },
+            {
+                "name": "render_filesystem_stats",
+                "start": 121,
+                "end": 122
+            }
+        ],
+        "rndr_stats.c": [
+            {
+                "name": "cons",
+                "start": 64,
+                "end": 82
+            },
+            {
+                "name": "render",
+                "start": 104,
+                "end": 155
+            },
+            {
+                "name": "render_cpu_stats",
+                "start": 170,
+                "end": 457
+            },
+            {
+                "name": "render_pcsw_stats",
+                "start": 471,
+                "end": 497
+            },
+            {
+                "name": "render_irq_stats",
+                "start": 511,
+                "end": 545
+            },
+            {
+                "name": "render_swap_stats",
+                "start": 559,
+                "end": 578
+            },
+            {
+                "name": "render_paging_stats",
+                "start": 592,
+                "end": 658
+            },
+            {
+                "name": "render_io_stats",
+                "start": 672,
+                "end": 710
+            },
+            {
+                "name": "render_memory_stats",
+                "start": 724,
+                "end": 830
+            },
+            {
+                "name": "render_ktables_stats",
+                "start": 844,
+                "end": 867
+            },
+            {
+                "name": "render_queue_stats",
+                "start": 881,
+                "end": 918
+            },
+            {
+                "name": "render_serial_stats",
+                "start": 932,
+                "end": 992
+            },
+            {
+                "name": "render_disk_stats",
+                "start": 1006,
+                "end": 1106
+            },
+            {
+                "name": "render_net_dev_stats",
+                "start": 1120,
+                "end": 1198
+            },
+            {
+                "name": "render_net_edev_stats",
+                "start": 1212,
+                "end": 1293
+            },
+            {
+                "name": "render_net_nfs_stats",
+                "start": 1307,
+                "end": 1351
+            },
+            {
+                "name": "render_net_nfsd_stats",
+                "start": 1365,
+                "end": 1439
+            },
+            {
+                "name": "render_net_sock_stats",
+                "start": 1453,
+                "end": 1484
+            },
+            {
+                "name": "render_net_ip_stats",
+                "start": 1498,
+                "end": 1554
+            },
+            {
+                "name": "render_net_eip_stats",
+                "start": 1568,
+                "end": 1624
+            },
+            {
+                "name": "render_net_icmp_stats",
+                "start": 1638,
+                "end": 1730
+            },
+            {
+                "name": "render_net_eicmp_stats",
+                "start": 1744,
+                "end": 1824
+            },
+            {
+                "name": "render_net_tcp_stats",
+                "start": 1838,
+                "end": 1870
+            },
+            {
+                "name": "render_net_etcp_stats",
+                "start": 1884,
+                "end": 1922
+            },
+            {
+                "name": "render_net_udp_stats",
+                "start": 1936,
+                "end": 1968
+            },
+            {
+                "name": "render_net_sock6_stats",
+                "start": 1982,
+                "end": 2005
+            },
+            {
+                "name": "render_net_ip6_stats",
+                "start": 2019,
+                "end": 2087
+            },
+            {
+                "name": "render_net_eip6_stats",
+                "start": 2101,
+                "end": 2175
+            },
+            {
+                "name": "render_net_icmp6_stats",
+                "start": 2189,
+                "end": 2299
+            },
+            {
+                "name": "render_net_eicmp6_stats",
+                "start": 2313,
+                "end": 2387
+            },
+            {
+                "name": "render_net_udp6_stats",
+                "start": 2401,
+                "end": 2433
+            },
+            {
+                "name": "render_pwr_cpufreq_stats",
+                "start": 2447,
+                "end": 2481
+            },
+            {
+                "name": "render_pwr_fan_stats",
+                "start": 2495,
+                "end": 2530
+            },
+            {
+                "name": "render_pwr_temp_stats",
+                "start": 2544,
+                "end": 2581
+            },
+            {
+                "name": "render_pwr_in_stats",
+                "start": 2595,
+                "end": 2632
+            },
+            {
+                "name": "render_huge_stats",
+                "start": 2646,
+                "end": 2667
+            },
+            {
+                "name": "render_pwr_wghfreq_stats",
+                "start": 2681,
+                "end": 2733
+            },
+            {
+                "name": "render_pwr_usb_stats",
+                "start": 2747,
+                "end": 2804
+            },
+            {
+                "name": "render_filesystem_stats",
+                "start": 2818,
+                "end": 2891
+            }
+        ],
+        "sadf_misc.c": [
+            {
+                "name": "print_dbppc_restart",
+                "start": 51,
+                "end": 64
+            },
+            {
+                "name": "print_db_restart",
+                "start": 80,
+                "end": 88
+            },
+            {
+                "name": "print_ppc_restart",
+                "start": 104,
+                "end": 112
+            },
+            {
+                "name": "print_xml_restart",
+                "start": 131,
+                "end": 145
+            },
+            {
+                "name": "print_json_restart",
+                "start": 164,
+                "end": 191
+            },
+            {
+                "name": "print_dbppc_comment",
+                "start": 206,
+                "end": 218
+            },
+            {
+                "name": "print_db_comment",
+                "start": 234,
+                "end": 243
+            },
+            {
+                "name": "print_ppc_comment",
+                "start": 259,
+                "end": 268
+            },
+            {
+                "name": "print_xml_comment",
+                "start": 287,
+                "end": 301
+            },
+            {
+                "name": "print_json_comment",
+                "start": 320,
+                "end": 349
+            },
+            {
+                "name": "print_xml_statistics",
+                "start": 363,
+                "end": 371
+            },
+            {
+                "name": "print_json_statistics",
+                "start": 385,
+                "end": 407
+            },
+            {
+                "name": "print_xml_timestamp",
+                "start": 425,
+                "end": 435
+            },
+            {
+                "name": "print_json_timestamp",
+                "start": 453,
+                "end": 468
+            },
+            {
+                "name": "print_xml_header",
+                "start": 488,
+                "end": 531
+            },
+            {
+                "name": "print_json_header",
+                "start": 551,
+                "end": 593
+            },
+            {
+                "name": "print_hdr_header",
+                "start": 610,
+                "end": 669
+            }
+        ],
+        "nfsiostat-sysstat.c": [
+            {
+                "name": "usage",
+                "start": 68,
+                "end": 81
+            },
+            {
+                "name": "set_output_unit",
+                "start": 90,
+                "end": 102
+            },
+            {
+                "name": "alarm_handler",
+                "start": 112,
+                "end": 115
+            },
+            {
+                "name": "get_nfs_mount_nr",
+                "start": 126,
+                "end": 152
+            },
+            {
+                "name": "set_entries_inactive",
+                "start": 159,
+                "end": 167
+            },
+            {
+                "name": "free_inactive_entries",
+                "start": 174,
+                "end": 184
+            },
+            {
+                "name": "io_sys_init",
+                "start": 191,
+                "end": 215
+            },
+            {
+                "name": "io_sys_free",
+                "start": 222,
+                "end": 232
+            },
+            {
+                "name": "save_stats",
+                "start": 249,
+                "end": 328
+            },
+            {
+                "name": "read_nfs_stat",
+                "start": 338,
+                "end": 440
+            },
+            {
+                "name": "write_nfs_stat_header",
+                "start": 450,
+                "end": 469
+            },
+            {
+                "name": "write_nfs_stat",
+                "start": 484,
+                "end": 504
+            },
+            {
+                "name": "write_stats",
+                "start": 515,
+                "end": 576
+            },
+            {
+                "name": "rw_io_stat_loop",
+                "start": 587,
+                "end": 622
+            },
+            {
+                "name": "main",
+                "start": 629,
+                "end": 752
+            }
+        ],
+        "iostat.c": [
+            {
+                "name": "usage",
+                "start": 84,
+                "end": 102
+            },
+            {
+                "name": "set_disk_output_unit",
+                "start": 111,
+                "end": 123
+            },
+            {
+                "name": "alarm_handler",
+                "start": 133,
+                "end": 136
+            },
+            {
+                "name": "init_stats",
+                "start": 143,
+                "end": 155
+            },
+            {
+                "name": "set_entries_unregistered",
+                "start": 167,
+                "end": 177
+            },
+            {
+                "name": "free_unregistered_entries",
+                "start": 188,
+                "end": 198
+            },
+            {
+                "name": "salloc_device",
+                "start": 209,
+                "end": 228
+            },
+            {
+                "name": "salloc_dev_list",
+                "start": 238,
+                "end": 245
+            },
+            {
+                "name": "sfree_dev_list",
+                "start": 252,
+                "end": 255
+            },
+            {
+                "name": "update_dev_list",
+                "start": 272,
+                "end": 293
+            },
+            {
+                "name": "io_sys_init",
+                "start": 300,
+                "end": 342
+            },
+            {
+                "name": "presave_device_list",
+                "start": 356,
+                "end": 391
+            },
+            {
+                "name": "io_sys_free",
+                "start": 398,
+                "end": 411
+            },
+            {
+                "name": "save_stats",
+                "start": 428,
+                "end": 472
+            },
+            {
+                "name": "read_sysfs_file_stat",
+                "start": 487,
+                "end": 537
+            },
+            {
+                "name": "read_sysfs_dlist_part_stat",
+                "start": 548,
+                "end": 574
+            },
+            {
+                "name": "read_sysfs_dlist_stat",
+                "start": 585,
+                "end": 618
+            },
+            {
+                "name": "read_sysfs_stat",
+                "start": 628,
+                "end": 667
+            },
+            {
+                "name": "read_diskstats_stat",
+                "start": 677,
+                "end": 764
+            },
+            {
+                "name": "compute_device_groups_stats",
+                "start": 775,
+                "end": 813
+            },
+            {
+                "name": "write_cpu_stat",
+                "start": 824,
+                "end": 844
+            },
+            {
+                "name": "write_disk_stat_header",
+                "start": 854,
+                "end": 887
+            },
+            {
+                "name": "write_ext_stat",
+                "start": 902,
+                "end": 981
+            },
+            {
+                "name": "write_basic_stat",
+                "start": 996,
+                "end": 1033
+            },
+            {
+                "name": "write_stats",
+                "start": 1044,
+                "end": 1186
+            },
+            {
+                "name": "rw_io_stat_loop",
+                "start": 1197,
+                "end": 1281
+            },
+            {
+                "name": "main",
+                "start": 1288,
+                "end": 1608
+            }
+        ],
+        "mpstat.c": [
+            {
+                "name": "usage",
+                "start": 88,
+                "end": 97
+            },
+            {
+                "name": "alarm_handler",
+                "start": 107,
+                "end": 110
+            },
+            {
+                "name": "int_handler",
+                "start": 120,
+                "end": 123
+            },
+            {
+                "name": "salloc_mp_struct",
+                "start": 134,
+                "end": 174
+            },
+            {
+                "name": "sfree_mp_struct",
+                "start": 181,
+                "end": 193
+            },
+            {
+                "name": "write_irqcpu_stats",
+                "start": 216,
+                "end": 317
+            },
+            {
+                "name": "write_stats_core",
+                "start": 337,
+                "end": 583
+            },
+            {
+                "name": "write_stats_avg",
+                "start": 594,
+                "end": 601
+            },
+            {
+                "name": "write_stats",
+                "start": 612,
+                "end": 623
+            },
+            {
+                "name": "read_interrupts_stat",
+                "start": 638,
+                "end": 719
+            },
+            {
+                "name": "rw_mpstat_loop",
+                "start": 730,
+                "end": 872
+            },
+            {
+                "name": "main",
+                "start": 879,
+                "end": 1078
+            }
+        ],
+        "pr_stats.c": [
+            {
+                "name": "print_cpu_stats",
+                "start": 57,
+                "end": 207
+            },
+            {
+                "name": "print_pcsw_stats",
+                "start": 220,
+                "end": 234
+            },
+            {
+                "name": "print_irq_stats",
+                "start": 247,
+                "end": 287
+            },
+            {
+                "name": "print_swap_stats",
+                "start": 300,
+                "end": 314
+            },
+            {
+                "name": "print_paging_stats",
+                "start": 327,
+                "end": 355
+            },
+            {
+                "name": "print_io_stats",
+                "start": 368,
+                "end": 386
+            },
+            {
+                "name": "stub_print_memory_stats",
+                "start": 401,
+                "end": 544
+            },
+            {
+                "name": "print_memory_stats",
+                "start": 557,
+                "end": 561
+            },
+            {
+                "name": "print_avg_memory_stats",
+                "start": 574,
+                "end": 578
+            },
+            {
+                "name": "stub_print_ktables_stats",
+                "start": 591,
+                "end": 636
+            },
+            {
+                "name": "print_ktables_stats",
+                "start": 649,
+                "end": 653
+            },
+            {
+                "name": "print_avg_ktables_stats",
+                "start": 666,
+                "end": 670
+            },
+            {
+                "name": "stub_print_queue_stats",
+                "start": 683,
+                "end": 733
+            },
+            {
+                "name": "print_queue_stats",
+                "start": 746,
+                "end": 750
+            },
+            {
+                "name": "print_avg_queue_stats",
+                "start": 763,
+                "end": 767
+            },
+            {
+                "name": "print_serial_stats",
+                "start": 780,
+                "end": 815
+            },
+            {
+                "name": "print_disk_stats",
+                "start": 828,
+                "end": 890
+            },
+            {
+                "name": "print_net_dev_stats",
+                "start": 903,
+                "end": 942
+            },
+            {
+                "name": "print_net_edev_stats",
+                "start": 955,
+                "end": 990
+            },
+            {
+                "name": "print_net_nfs_stats",
+                "start": 1003,
+                "end": 1022
+            },
+            {
+                "name": "print_net_nfsd_stats",
+                "start": 1035,
+                "end": 1061
+            },
+            {
+                "name": "stub_print_net_sock_stats",
+                "start": 1074,
+                "end": 1123
+            },
+            {
+                "name": "print_net_sock_stats",
+                "start": 1136,
+                "end": 1140
+            },
+            {
+                "name": "print_avg_net_sock_stats",
+                "start": 1153,
+                "end": 1157
+            },
+            {
+                "name": "print_net_ip_stats",
+                "start": 1170,
+                "end": 1192
+            },
+            {
+                "name": "print_net_eip_stats",
+                "start": 1205,
+                "end": 1227
+            },
+            {
+                "name": "print_net_icmp_stats",
+                "start": 1240,
+                "end": 1269
+            },
+            {
+                "name": "print_net_eicmp_stats",
+                "start": 1282,
+                "end": 1309
+            },
+            {
+                "name": "print_net_tcp_stats",
+                "start": 1322,
+                "end": 1340
+            },
+            {
+                "name": "print_net_etcp_stats",
+                "start": 1353,
+                "end": 1372
+            },
+            {
+                "name": "print_net_udp_stats",
+                "start": 1385,
+                "end": 1403
+            },
+            {
+                "name": "stub_print_net_sock6_stats",
+                "start": 1416,
+                "end": 1456
+            },
+            {
+                "name": "print_net_sock6_stats",
+                "start": 1469,
+                "end": 1473
+            },
+            {
+                "name": "print_avg_net_sock6_stats",
+                "start": 1486,
+                "end": 1490
+            },
+            {
+                "name": "print_net_ip6_stats",
+                "start": 1503,
+                "end": 1528
+            },
+            {
+                "name": "print_net_eip6_stats",
+                "start": 1541,
+                "end": 1567
+            },
+            {
+                "name": "print_net_icmp6_stats",
+                "start": 1580,
+                "end": 1613
+            },
+            {
+                "name": "print_net_eicmp6_stats",
+                "start": 1626,
+                "end": 1652
+            },
+            {
+                "name": "print_net_udp6_stats",
+                "start": 1665,
+                "end": 1683
+            },
+            {
+                "name": "stub_print_pwr_cpufreq_stats",
+                "start": 1696,
+                "end": 1775
+            },
+            {
+                "name": "print_pwr_cpufreq_stats",
+                "start": 1788,
+                "end": 1792
+            },
+            {
+                "name": "print_avg_pwr_cpufreq_stats",
+                "start": 1805,
+                "end": 1809
+            },
+            {
+                "name": "stub_print_pwr_fan_stats",
+                "start": 1822,
+                "end": 1883
+            },
+            {
+                "name": "print_pwr_fan_stats",
+                "start": 1896,
+                "end": 1900
+            },
+            {
+                "name": "print_avg_pwr_fan_stats",
+                "start": 1913,
+                "end": 1917
+            },
+            {
+                "name": "stub_print_pwr_temp_stats",
+                "start": 1930,
+                "end": 2008
+            },
+            {
+                "name": "print_pwr_temp_stats",
+                "start": 2021,
+                "end": 2025
+            },
+            {
+                "name": "print_avg_pwr_temp_stats",
+                "start": 2038,
+                "end": 2042
+            },
+            {
+                "name": "stub_print_pwr_in_stats",
+                "start": 2055,
+                "end": 2133
+            },
+            {
+                "name": "print_pwr_in_stats",
+                "start": 2146,
+                "end": 2150
+            },
+            {
+                "name": "print_avg_pwr_in_stats",
+                "start": 2163,
+                "end": 2167
+            },
+            {
+                "name": "stub_print_huge_stats",
+                "start": 2180,
+                "end": 2222
+            },
+            {
+                "name": "print_huge_stats",
+                "start": 2235,
+                "end": 2239
+            },
+            {
+                "name": "print_avg_huge_stats",
+                "start": 2252,
+                "end": 2256
+            },
+            {
+                "name": "print_pwr_wghfreq_stats",
+                "start": 2270,
+                "end": 2334
+            },
+            {
+                "name": "stub_print_pwr_usb_stats",
+                "start": 2348,
+                "end": 2412
+            },
+            {
+                "name": "print_pwr_usb_stats",
+                "start": 2425,
+                "end": 2429
+            },
+            {
+                "name": "print_avg_pwr_usb_stats",
+                "start": 2442,
+                "end": 2446
+            },
+            {
+                "name": "stub_print_filesystem_stats",
+                "start": 2459,
+                "end": 2511
+            },
+            {
+                "name": "print_filesystem_stats",
+                "start": 2524,
+                "end": 2528
+            },
+            {
+                "name": "print_avg_filesystem_stats",
+                "start": 2541,
+                "end": 2545
+            }
+        ],
+        "sadf.c": [
+            {
+                "name": "usage",
+                "start": 83,
+                "end": 94
+            },
+            {
+                "name": "init_structures",
+                "start": 101,
+                "end": 108
+            },
+            {
+                "name": "get_format_position",
+                "start": 122,
+                "end": 136
+            },
+            {
+                "name": "check_format_options",
+                "start": 145,
+                "end": 177
+            },
+            {
+                "name": "sadf_get_record_timestamp_struct",
+                "start": 203,
+                "end": 226
+            },
+            {
+                "name": "set_record_timestamp_string",
+                "start": 249,
+                "end": 265
+            },
+            {
+                "name": "prtab",
+                "start": 275,
+                "end": 282
+            },
+            {
+                "name": "xprintf0",
+                "start": 294,
+                "end": 305
+            },
+            {
+                "name": "xprintf",
+                "start": 317,
+                "end": 328
+            },
+            {
+                "name": "write_textual_restarts",
+                "start": 353,
+                "end": 375
+            },
+            {
+                "name": "write_textual_comments",
+                "start": 400,
+                "end": 425
+            },
+            {
+                "name": "list_fields",
+                "start": 435,
+                "end": 471
+            },
+            {
+                "name": "write_mech_stats",
+                "start": 490,
+                "end": 530
+            },
+            {
+                "name": "write_parsable_stats",
+                "start": 558,
+                "end": 625
+            },
+            {
+                "name": "write_textual_stats",
+                "start": 653,
+                "end": 766
+            },
+            {
+                "name": "sadf_print_special",
+                "start": 788,
+                "end": 839
+            },
+            {
+                "name": "rw_curr_act_stats",
+                "start": 868,
+                "end": 936
+            },
+            {
+                "name": "sr_act_nr",
+                "start": 951,
+                "end": 973
+            },
+            {
+                "name": "textual_display_loop",
+                "start": 993,
+                "end": 1263
+            },
+            {
+                "name": "main_display_loop",
+                "start": 1282,
+                "end": 1416
+            },
+            {
+                "name": "read_stats_from_file",
+                "start": 1426,
+                "end": 1467
+            },
+            {
+                "name": "main",
+                "start": 1474,
+                "end": 1754
+            }
+        ],
+        "sa_wrap.c": [
+            {
+                "name": "wrap_read_stat_cpu",
+                "start": 41,
+                "end": 50
+            },
+            {
+                "name": "wrap_read_stat_pcsw",
+                "start": 63,
+                "end": 72
+            },
+            {
+                "name": "wrap_read_stat_irq",
+                "start": 85,
+                "end": 94
+            },
+            {
+                "name": "wrap_read_loadavg",
+                "start": 107,
+                "end": 116
+            },
+            {
+                "name": "wrap_read_meminfo",
+                "start": 129,
+                "end": 138
+            },
+            {
+                "name": "wrap_read_swap",
+                "start": 151,
+                "end": 160
+            },
+            {
+                "name": "wrap_read_paging",
+                "start": 173,
+                "end": 182
+            },
+            {
+                "name": "wrap_read_io",
+                "start": 195,
+                "end": 204
+            },
+            {
+                "name": "wrap_read_disk",
+                "start": 217,
+                "end": 226
+            },
+            {
+                "name": "wrap_read_tty_driver_serial",
+                "start": 239,
+                "end": 248
+            },
+            {
+                "name": "wrap_read_kernel_tables",
+                "start": 261,
+                "end": 270
+            },
+            {
+                "name": "wrap_read_net_dev",
+                "start": 283,
+                "end": 299
+            },
+            {
+                "name": "wrap_read_net_edev",
+                "start": 312,
+                "end": 321
+            },
+            {
+                "name": "wrap_read_net_nfs",
+                "start": 334,
+                "end": 343
+            },
+            {
+                "name": "wrap_read_net_nfsd",
+                "start": 356,
+                "end": 365
+            },
+            {
+                "name": "wrap_read_net_sock",
+                "start": 378,
+                "end": 387
+            },
+            {
+                "name": "wrap_read_net_ip",
+                "start": 400,
+                "end": 409
+            },
+            {
+                "name": "wrap_read_net_eip",
+                "start": 422,
+                "end": 431
+            },
+            {
+                "name": "wrap_read_net_icmp",
+                "start": 444,
+                "end": 453
+            },
+            {
+                "name": "wrap_read_net_eicmp",
+                "start": 466,
+                "end": 475
+            },
+            {
+                "name": "wrap_read_net_tcp",
+                "start": 488,
+                "end": 497
+            },
+            {
+                "name": "wrap_read_net_etcp",
+                "start": 510,
+                "end": 519
+            },
+            {
+                "name": "wrap_read_net_udp",
+                "start": 532,
+                "end": 541
+            },
+            {
+                "name": "wrap_read_net_sock6",
+                "start": 554,
+                "end": 563
+            },
+            {
+                "name": "wrap_read_net_ip6",
+                "start": 576,
+                "end": 585
+            },
+            {
+                "name": "wrap_read_net_eip6",
+                "start": 598,
+                "end": 607
+            },
+            {
+                "name": "wrap_read_net_icmp6",
+                "start": 620,
+                "end": 629
+            },
+            {
+                "name": "wrap_read_net_eicmp6",
+                "start": 642,
+                "end": 651
+            },
+            {
+                "name": "wrap_read_net_udp6",
+                "start": 664,
+                "end": 673
+            },
+            {
+                "name": "wrap_read_cpuinfo",
+                "start": 686,
+                "end": 695
+            },
+            {
+                "name": "wrap_read_fan",
+                "start": 708,
+                "end": 717
+            },
+            {
+                "name": "wrap_read_temp",
+                "start": 730,
+                "end": 739
+            },
+            {
+                "name": "wrap_read_in",
+                "start": 752,
+                "end": 761
+            },
+            {
+                "name": "wrap_read_meminfo_huge",
+                "start": 774,
+                "end": 783
+            },
+            {
+                "name": "wrap_read_time_in_state",
+                "start": 796,
+                "end": 834
+            },
+            {
+                "name": "wrap_read_bus_usb_dev",
+                "start": 847,
+                "end": 856
+            },
+            {
+                "name": "wrap_read_filesystem",
+                "start": 869,
+                "end": 878
+            },
+            {
+                "name": "wrap_get_irq_nr",
+                "start": 893,
+                "end": 902
+            },
+            {
+                "name": "wrap_get_serial_nr",
+                "start": 917,
+                "end": 925
+            },
+            {
+                "name": "wrap_get_iface_nr",
+                "start": 939,
+                "end": 947
+            },
+            {
+                "name": "wrap_get_cpu_nr",
+                "start": 963,
+                "end": 966
+            },
+            {
+                "name": "wrap_get_disk_nr",
+                "start": 981,
+                "end": 990
+            },
+            {
+                "name": "wrap_get_fan_nr",
+                "start": 1003,
+                "end": 1006
+            },
+            {
+                "name": "wrap_get_temp_nr",
+                "start": 1019,
+                "end": 1022
+            },
+            {
+                "name": "wrap_get_in_nr",
+                "start": 1035,
+                "end": 1038
+            },
+            {
+                "name": "wrap_get_freq_nr",
+                "start": 1051,
+                "end": 1059
+            },
+            {
+                "name": "wrap_get_usb_nr",
+                "start": 1072,
+                "end": 1081
+            },
+            {
+                "name": "wrap_get_filesystem_nr",
+                "start": 1095,
+                "end": 1103
+            }
+        ],
+        "sadc.c": [
+            {
+                "name": "usage",
+                "start": 85,
+                "end": 94
+            },
+            {
+                "name": "collect_group_activities",
+                "start": 105,
+                "end": 117
+            },
+            {
+                "name": "parse_sadc_S_option",
+                "start": 128,
+                "end": 214
+            },
+            {
+                "name": "alarm_handler",
+                "start": 224,
+                "end": 227
+            },
+            {
+                "name": "int_handler",
+                "start": 237,
+                "end": 252
+            },
+            {
+                "name": "p_write_error",
+                "start": 259,
+                "end": 264
+            },
+            {
+                "name": "reset_stats",
+                "start": 275,
+                "end": 284
+            },
+            {
+                "name": "sa_sys_init",
+                "start": 291,
+                "end": 325
+            },
+            {
+                "name": "sa_sys_free",
+                "start": 332,
+                "end": 345
+            },
+            {
+                "name": "write_all",
+                "start": 361,
+                "end": 382
+            },
+            {
+                "name": "ask_for_flock",
+                "start": 400,
+                "end": 425
+            },
+            {
+                "name": "fill_magic_header",
+                "start": 435,
+                "end": 469
+            },
+            {
+                "name": "setup_file_hdr",
+                "start": 479,
+                "end": 568
+            },
+            {
+                "name": "write_vol_act_structures",
+                "start": 582,
+                "end": 614
+            },
+            {
+                "name": "write_special_record",
+                "start": 629,
+                "end": 667
+            },
+            {
+                "name": "write_stats",
+                "start": 677,
+                "end": 711
+            },
+            {
+                "name": "rewrite_file_hdr",
+                "start": 723,
+                "end": 749
+            },
+            {
+                "name": "create_sa_file",
+                "start": 762,
+                "end": 781
+            },
+            {
+                "name": "open_stdout",
+                "start": 795,
+                "end": 805
+            },
+            {
+                "name": "open_ofile",
+                "start": 822,
+                "end": 1018
+            },
+            {
+                "name": "read_stats",
+                "start": 1025,
+                "end": 1059
+            },
+            {
+                "name": "rw_sa_stat_loop",
+                "start": 1074,
+                "end": 1192
+            },
+            {
+                "name": "main",
+                "start": 1199,
+                "end": 1423
+            }
+        ],
+        "ioconf.c": [
+            {
+                "name": "ioc_free",
+                "start": 51,
+                "end": 77
+            },
+            {
+                "name": "ioc_conv",
+                "start": 90,
+                "end": 117
+            },
+            {
+                "name": "ioc_ito10",
+                "start": 119,
+                "end": 122
+            },
+            {
+                "name": "ioc_ito26",
+                "start": 124,
+                "end": 127
+            },
+            {
+                "name": "ioc_init",
+                "start": 140,
+                "end": 350
+            },
+            {
+                "name": "ioc_name",
+                "start": 367,
+                "end": 431
+            },
+            {
+                "name": "ioc_iswhole",
+                "start": 446,
+                "end": 463
+            },
+            {
+                "name": "transform_devmapname",
+                "start": 478,
+                "end": 516
+            }
+        ]
+    }
+}

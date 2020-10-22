@@ -1,0 +1,2540 @@
+{
+    "tcpreplay-3.4.4": {
+        "src/common/utils.h": [
+            {
+                "name": "packet_stats",
+                "start": 42,
+                "end": 43
+            }
+        ],
+        "src/common/rdtsc.h": [
+            {
+                "name": "rdtsc",
+                "start": 62,
+                "end": 68
+            },
+            {
+                "name": "rdtsc_sleep",
+                "start": 107,
+                "end": 121
+            }
+        ],
+        "src/common/timer.h": [
+            {
+                "name": "start_delta_time",
+                "start": 211,
+                "end": 219
+            },
+            {
+                "name": "get_delta_time",
+                "start": 227,
+                "end": 258
+            }
+        ],
+        "src/send_packets.h": [
+            {
+                "name": "get_next_packet",
+                "start": 38,
+                "end": 39
+            }
+        ],
+        "src/sleep.h": [
+            {
+                "name": "nanosleep_sleep",
+                "start": 61,
+                "end": 65
+            },
+            {
+                "name": "gettimeofday_sleep",
+                "start": 72,
+                "end": 83
+            }
+        ],
+        "src/send_packets.c": [
+            {
+                "name": "do_sleep",
+                "start": 73,
+                "end": 74
+            },
+            {
+                "name": "send_packets",
+                "start": 81,
+                "end": 212
+            },
+            {
+                "name": "get_next_packet",
+                "start": 222,
+                "end": 296
+            },
+            {
+                "name": "cache_mode",
+                "start": 304,
+                "end": 331
+            },
+            {
+                "name": "do_sleep",
+                "start": 338,
+                "end": 626
+            },
+            {
+                "name": "get_user_count",
+                "start": 631,
+                "end": 673
+            }
+        ],
+        "src/signal_handler.c": [
+            {
+                "name": "init_signal_handlers",
+                "start": 56,
+                "end": 63
+            },
+            {
+                "name": "reset_suspend_time",
+                "start": 69,
+                "end": 75
+            },
+            {
+                "name": "suspend_handler",
+                "start": 82,
+                "end": 94
+            },
+            {
+                "name": "continue_handler",
+                "start": 100,
+                "end": 115
+            }
+        ],
+        "src/tcpedit/tcpedit.h": [
+            {
+                "name": "tcpedit_packet",
+                "start": 54,
+                "end": 55
+            }
+        ],
+        "src/tcprewrite.c": [
+            {
+                "name": "main",
+                "start": 75,
+                "end": 156
+            },
+            {
+                "name": "tcprewrite_init",
+                "start": 158,
+                "end": 171
+            },
+            {
+                "name": "post_args",
+                "start": 176,
+                "end": 228
+            },
+            {
+                "name": "rewrite_packets",
+                "start": 233,
+                "end": 333
+            }
+        ],
+        "src/bridge.c": [
+            {
+                "name": "live_callback",
+                "start": 63,
+                "end": 64
+            },
+            {
+                "name": "rbmacsrc_comp",
+                "start": 75,
+                "end": 79
+            }
+        ],
+        "src/tcprewrite_opts.c": [
+            {
+                "name": "doUsageOpt",
+                "start": 1247,
+                "end": 1254
+            },
+            {
+                "name": "doOptMtu",
+                "start": 1260,
+                "end": 1304
+            },
+            {
+                "name": "doOptTos",
+                "start": 1310,
+                "end": 1354
+            },
+            {
+                "name": "doOptTclass",
+                "start": 1360,
+                "end": 1404
+            },
+            {
+                "name": "doOptFlowlabel",
+                "start": 1410,
+                "end": 1454
+            },
+            {
+                "name": "doOptEnet_Vlan_Tag",
+                "start": 1460,
+                "end": 1504
+            },
+            {
+                "name": "doOptEnet_Vlan_Cfi",
+                "start": 1510,
+                "end": 1554
+            },
+            {
+                "name": "doOptEnet_Vlan_Pri",
+                "start": 1560,
+                "end": 1604
+            },
+            {
+                "name": "doOptCachefile",
+                "start": 1662,
+                "end": 1670
+            },
+            {
+                "name": "doOptVersion",
+                "start": 1676,
+                "end": 1715
+            },
+            {
+                "name": "doOptLess_Help",
+                "start": 1721,
+                "end": 1728
+            }
+        ],
+        "src/tcpbridge_opts.c": [
+            {
+                "name": "doUsageOpt",
+                "start": 1303,
+                "end": 1310
+            },
+            {
+                "name": "doOptMtu",
+                "start": 1316,
+                "end": 1360
+            },
+            {
+                "name": "doOptTos",
+                "start": 1366,
+                "end": 1410
+            },
+            {
+                "name": "doOptTclass",
+                "start": 1416,
+                "end": 1460
+            },
+            {
+                "name": "doOptFlowlabel",
+                "start": 1466,
+                "end": 1510
+            },
+            {
+                "name": "doOptEnet_Vlan_Tag",
+                "start": 1516,
+                "end": 1560
+            },
+            {
+                "name": "doOptEnet_Vlan_Cfi",
+                "start": 1566,
+                "end": 1610
+            },
+            {
+                "name": "doOptEnet_Vlan_Pri",
+                "start": 1616,
+                "end": 1660
+            },
+            {
+                "name": "doOptLimit",
+                "start": 1736,
+                "end": 1780
+            },
+            {
+                "name": "doOptInclude",
+                "start": 1786,
+                "end": 1801
+            },
+            {
+                "name": "doOptExclude",
+                "start": 1807,
+                "end": 1822
+            },
+            {
+                "name": "doOptPid",
+                "start": 1828,
+                "end": 1835
+            },
+            {
+                "name": "doOptVersion",
+                "start": 1841,
+                "end": 1876
+            },
+            {
+                "name": "doOptLess_Help",
+                "start": 1882,
+                "end": 1889
+            }
+        ],
+        "src/tcpbridge.c": [
+            {
+                "name": "main",
+                "start": 74,
+                "end": 133
+            },
+            {
+                "name": "init",
+                "start": 135,
+                "end": 151
+            },
+            {
+                "name": "post_args",
+                "start": 154,
+                "end": 266
+            }
+        ],
+        "src/tcpreplay_edit_opts.c": [
+            {
+                "name": "doUsageOpt",
+                "start": 1608,
+                "end": 1615
+            },
+            {
+                "name": "doOptMtu",
+                "start": 1621,
+                "end": 1665
+            },
+            {
+                "name": "doOptTos",
+                "start": 1671,
+                "end": 1715
+            },
+            {
+                "name": "doOptTclass",
+                "start": 1721,
+                "end": 1765
+            },
+            {
+                "name": "doOptFlowlabel",
+                "start": 1771,
+                "end": 1815
+            },
+            {
+                "name": "doOptEnet_Vlan_Tag",
+                "start": 1821,
+                "end": 1865
+            },
+            {
+                "name": "doOptEnet_Vlan_Cfi",
+                "start": 1871,
+                "end": 1915
+            },
+            {
+                "name": "doOptEnet_Vlan_Pri",
+                "start": 1921,
+                "end": 1965
+            },
+            {
+                "name": "doOptLoop",
+                "start": 2041,
+                "end": 2085
+            },
+            {
+                "name": "doOptLimit",
+                "start": 2091,
+                "end": 2135
+            },
+            {
+                "name": "doOptPps_Multi",
+                "start": 2141,
+                "end": 2185
+            },
+            {
+                "name": "doOptPid",
+                "start": 2191,
+                "end": 2198
+            },
+            {
+                "name": "doOptStats",
+                "start": 2204,
+                "end": 2248
+            },
+            {
+                "name": "doOptVersion",
+                "start": 2254,
+                "end": 2299
+            },
+            {
+                "name": "doOptLess_Help",
+                "start": 2305,
+                "end": 2312
+            }
+        ],
+        "src/tcpreplay.c": [
+            {
+                "name": "main",
+                "start": 80,
+                "end": 186
+            },
+            {
+                "name": "preload_pcap_file",
+                "start": 194,
+                "end": 228
+            },
+            {
+                "name": "replay_file",
+                "start": 233,
+                "end": 289
+            },
+            {
+                "name": "init",
+                "start": 294,
+                "end": 331
+            },
+            {
+                "name": "post_args",
+                "start": 336,
+                "end": 492
+            }
+        ],
+        "src/tcpprep_opts.c": [
+            {
+                "name": "doUsageOpt",
+                "start": 916,
+                "end": 923
+            },
+            {
+                "name": "doOptAuto",
+                "start": 981,
+                "end": 1005
+            },
+            {
+                "name": "doOptCidr",
+                "start": 1011,
+                "end": 1022
+            },
+            {
+                "name": "doOptRegex",
+                "start": 1028,
+                "end": 1043
+            },
+            {
+                "name": "doOptPort",
+                "start": 1049,
+                "end": 1056
+            },
+            {
+                "name": "doOptMac",
+                "start": 1062,
+                "end": 1070
+            },
+            {
+                "name": "doOptComment",
+                "start": 1076,
+                "end": 1090
+            },
+            {
+                "name": "doOptNo_Arg_Comment",
+                "start": 1096,
+                "end": 1102
+            },
+            {
+                "name": "doOptInclude",
+                "start": 1108,
+                "end": 1123
+            },
+            {
+                "name": "doOptExclude",
+                "start": 1129,
+                "end": 1144
+            },
+            {
+                "name": "doOptServices",
+                "start": 1150,
+                "end": 1156
+            },
+            {
+                "name": "doOptNonip",
+                "start": 1162,
+                "end": 1169
+            },
+            {
+                "name": "doOptMinmask",
+                "start": 1175,
+                "end": 1219
+            },
+            {
+                "name": "doOptMaxmask",
+                "start": 1225,
+                "end": 1269
+            },
+            {
+                "name": "doOptVersion",
+                "start": 1275,
+                "end": 1309
+            },
+            {
+                "name": "doOptLess_Help",
+                "start": 1315,
+                "end": 1322
+            }
+        ],
+        "src/tcpprep.c": [
+            {
+                "name": "main",
+                "start": 97,
+                "end": 214
+            },
+            {
+                "name": "check_dst_port",
+                "start": 221,
+                "end": 280
+            },
+            {
+                "name": "check_ipv4_regex",
+                "start": 287,
+                "end": 304
+            },
+            {
+                "name": "check_ipv6_regex",
+                "start": 306,
+                "end": 321
+            },
+            {
+                "name": "process_raw_packets",
+                "start": 327,
+                "end": 582
+            },
+            {
+                "name": "init",
+                "start": 587,
+                "end": 600
+            },
+            {
+                "name": "post_args",
+                "start": 605,
+                "end": 702
+            },
+            {
+                "name": "print_comment",
+                "start": 707,
+                "end": 719
+            },
+            {
+                "name": "print_info",
+                "start": 724,
+                "end": 751
+            },
+            {
+                "name": "print_stats",
+                "start": 756,
+                "end": 787
+            }
+        ],
+        "src/tcpreplay_opts.c": [
+            {
+                "name": "doUsageOpt",
+                "start": 936,
+                "end": 943
+            },
+            {
+                "name": "doOptLoop",
+                "start": 1019,
+                "end": 1063
+            },
+            {
+                "name": "doOptLimit",
+                "start": 1069,
+                "end": 1113
+            },
+            {
+                "name": "doOptPps_Multi",
+                "start": 1119,
+                "end": 1163
+            },
+            {
+                "name": "doOptPid",
+                "start": 1169,
+                "end": 1176
+            },
+            {
+                "name": "doOptStats",
+                "start": 1182,
+                "end": 1226
+            },
+            {
+                "name": "doOptVersion",
+                "start": 1232,
+                "end": 1277
+            },
+            {
+                "name": "doOptLess_Help",
+                "start": 1283,
+                "end": 1290
+            }
+        ],
+        "src/sleep.c": [
+            {
+                "name": "ioport_sleep_init",
+                "start": 58,
+                "end": 67
+            },
+            {
+                "name": "ioport_sleep",
+                "start": 69,
+                "end": 101
+            }
+        ],
+        "src/common/timer.c": [
+            {
+                "name": "timerdiv",
+                "start": 46,
+                "end": 57
+            },
+            {
+                "name": "timesdiv",
+                "start": 60,
+                "end": 70
+            },
+            {
+                "name": "init_delta_time",
+                "start": 72,
+                "end": 80
+            }
+        ],
+        "src/common/fakepoll.c": [
+            {
+                "name": "FAKEPOLL",
+                "start": 43,
+                "end": 49
+            }
+        ],
+        "src/common/utils.c": [
+            {
+                "name": "_our_safe_malloc",
+                "start": 52,
+                "end": 69
+            },
+            {
+                "name": "_our_safe_realloc",
+                "start": 78,
+                "end": 90
+            },
+            {
+                "name": "_our_safe_strdup",
+                "start": 96,
+                "end": 110
+            },
+            {
+                "name": "_our_safe_free",
+                "start": 115,
+                "end": 125
+            },
+            {
+                "name": "packet_stats",
+                "start": 130,
+                "end": 158
+            },
+            {
+                "name": "read_hexstring",
+                "start": 165,
+                "end": 212
+            }
+        ],
+        "src/common/xX.c": [
+            {
+                "name": "parse_xX_str",
+                "start": 50,
+                "end": 119
+            },
+            {
+                "name": "process_xX_by_cidr_ipv4",
+                "start": 127,
+                "end": 187
+            },
+            {
+                "name": "process_xX_by_cidr_ipv6",
+                "start": 189,
+                "end": 249
+            }
+        ],
+        "src/common/fakepcap.c": [
+            {
+                "name": "pcap_datalink_val_to_description",
+                "start": 52,
+                "end": 60
+            },
+            {
+                "name": "pcap_datalink_val_to_name",
+                "start": 66,
+                "end": 74
+            }
+        ],
+        "src/common/err.c": [
+            {
+                "name": "notice",
+                "start": 61,
+                "end": 72
+            },
+            {
+                "name": "_our_verbose_errx",
+                "start": 111,
+                "end": 130
+            },
+            {
+                "name": "_our_verbose_warnx",
+                "start": 140,
+                "end": 157
+            }
+        ],
+        "src/common/svn_version.c": [
+            {
+                "name": "svn_version",
+                "start": 2,
+                "end": 4
+            }
+        ],
+        "src/common/rdtsc.c": [
+            {
+                "name": "rdtsc_calibrate",
+                "start": 46,
+                "end": 79
+            }
+        ],
+        "src/common/cidr.c": [
+            {
+                "name": "print_cidr",
+                "start": 57,
+                "end": 79
+            },
+            {
+                "name": "destroy_cidr",
+                "start": 84,
+                "end": 95
+            },
+            {
+                "name": "add_cidr",
+                "start": 100,
+                "end": 116
+            },
+            {
+                "name": "ip2cidr",
+                "start": 122,
+                "end": 143
+            },
+            {
+                "name": "new_cidr",
+                "start": 149,
+                "end": 161
+            },
+            {
+                "name": "new_cidr_map",
+                "start": 166,
+                "end": 177
+            },
+            {
+                "name": "cidr2cidr",
+                "start": 184,
+                "end": 284
+            },
+            {
+                "name": "mask_cidr6",
+                "start": 286,
+                "end": 300
+            },
+            {
+                "name": "parse_cidr",
+                "start": 308,
+                "end": 339
+            },
+            {
+                "name": "parse_endpoints",
+                "start": 347,
+                "end": 403
+            },
+            {
+                "name": "parse_cidr_map",
+                "start": 413,
+                "end": 463
+            },
+            {
+                "name": "ip_in_cidr",
+                "start": 469,
+                "end": 517
+            },
+            {
+                "name": "ip6_addr_is_unspec",
+                "start": 519,
+                "end": 524
+            },
+            {
+                "name": "ip6_in_cidr",
+                "start": 526,
+                "end": 581
+            },
+            {
+                "name": "check_ip_cidr",
+                "start": 589,
+                "end": 622
+            },
+            {
+                "name": "check_ip6_cidr",
+                "start": 624,
+                "end": 658
+            },
+            {
+                "name": "cidr2iplist",
+                "start": 666,
+                "end": 708
+            }
+        ],
+        "src/common/list.c": [
+            {
+                "name": "new_list",
+                "start": 55,
+                "end": 62
+            },
+            {
+                "name": "parse_list",
+                "start": 69,
+                "end": 155
+            },
+            {
+                "name": "check_list",
+                "start": 162,
+                "end": 193
+            },
+            {
+                "name": "free_list",
+                "start": 199,
+                "end": 208
+            }
+        ],
+        "src/common/mac.c": [
+            {
+                "name": "mac2hex",
+                "start": 46,
+                "end": 69
+            },
+            {
+                "name": "dualmac2hex",
+                "start": 81,
+                "end": 113
+            },
+            {
+                "name": "macinstring",
+                "start": 121,
+                "end": 158
+            }
+        ],
+        "src/common/tcpdump.c": [
+            {
+                "name": "tcpdump_print",
+                "start": 75,
+                "end": 144
+            },
+            {
+                "name": "tcpdump_open",
+                "start": 151,
+                "end": 257
+            },
+            {
+                "name": "tcpdump_close",
+                "start": 262,
+                "end": 283
+            },
+            {
+                "name": "tcpdump_kill",
+                "start": 288,
+                "end": 299
+            },
+            {
+                "name": "tcpdump_fill_in_options",
+                "start": 307,
+                "end": 361
+            },
+            {
+                "name": "can_exec",
+                "start": 367,
+                "end": 387
+            }
+        ],
+        "src/common/cache.c": [
+            {
+                "name": "read_cache",
+                "start": 80,
+                "end": 148
+            },
+            {
+                "name": "write_cache",
+                "start": 156,
+                "end": 236
+            },
+            {
+                "name": "new_cache",
+                "start": 242,
+                "end": 250
+            },
+            {
+                "name": "add_cache",
+                "start": 256,
+                "end": 330
+            },
+            {
+                "name": "check_cache",
+                "start": 336,
+                "end": 370
+            }
+        ],
+        "src/common/interface.c": [
+            {
+                "name": "get_interface",
+                "start": 53,
+                "end": 81
+            },
+            {
+                "name": "get_interface_list",
+                "start": 86,
+                "end": 124
+            },
+            {
+                "name": "list_interfaces",
+                "start": 129,
+                "end": 158
+            }
+        ],
+        "src/common/abort.c": [
+            {
+                "name": "catcher",
+                "start": 52,
+                "end": 58
+            },
+            {
+                "name": "break_now",
+                "start": 65,
+                "end": 82
+            }
+        ],
+        "src/common/get.c": [
+            {
+                "name": "get_pcap_version",
+                "start": 61,
+                "end": 83
+            },
+            {
+                "name": "get_l2protocol",
+                "start": 91,
+                "end": 138
+            },
+            {
+                "name": "get_l2len",
+                "start": 143,
+                "end": 185
+            },
+            {
+                "name": "get_ipv4",
+                "start": 196,
+                "end": 245
+            },
+            {
+                "name": "get_ipv6",
+                "start": 247,
+                "end": 296
+            },
+            {
+                "name": "get_layer4_v4",
+                "start": 301,
+                "end": 310
+            },
+            {
+                "name": "get_layer4_v6",
+                "start": 317,
+                "end": 372
+            },
+            {
+                "name": "get_ipv6_next",
+                "start": 379,
+                "end": 421
+            },
+            {
+                "name": "get_ipv6_l4proto",
+                "start": 427,
+                "end": 470
+            },
+            {
+                "name": "get_name2addr4",
+                "start": 478,
+                "end": 548
+            },
+            {
+                "name": "get_name2addr6",
+                "start": 550,
+                "end": 561
+            },
+            {
+                "name": "get_addr2name4",
+                "start": 567,
+                "end": 595
+            },
+            {
+                "name": "get_addr2name6",
+                "start": 597,
+                "end": 621
+            },
+            {
+                "name": "get_cidr2name",
+                "start": 623,
+                "end": 633
+            }
+        ],
+        "src/common/fakepcapnav.c": [
+            {
+                "name": "pcapnav_init",
+                "start": 49,
+                "end": 53
+            },
+            {
+                "name": "pcapnav_open_offline",
+                "start": 59,
+                "end": 76
+            },
+            {
+                "name": "pcapnav_close",
+                "start": 81,
+                "end": 86
+            },
+            {
+                "name": "pcapnav_pcap",
+                "start": 91,
+                "end": 95
+            }
+        ],
+        "src/common/services.c": [
+            {
+                "name": "parse_services",
+                "start": 46,
+                "end": 107
+            }
+        ],
+        "src/common/sendpacket.c": [
+            {
+                "name": "sendpacket",
+                "start": 210,
+                "end": 353
+            },
+            {
+                "name": "sendpacket_open",
+                "start": 360,
+                "end": 382
+            },
+            {
+                "name": "sendpacket_getstat",
+                "start": 387,
+                "end": 403
+            },
+            {
+                "name": "sendpacket_close",
+                "start": 408,
+                "end": 443
+            },
+            {
+                "name": "sendpacket_get_hwaddr",
+                "start": 449,
+                "end": 469
+            },
+            {
+                "name": "sendpacket_geterr",
+                "start": 474,
+                "end": 479
+            },
+            {
+                "name": "sendpacket_seterr",
+                "start": 484,
+                "end": 497
+            },
+            {
+                "name": "sendpacket_get_dlt",
+                "start": 929,
+                "end": 954
+            },
+            {
+                "name": "sendpacket_get_method",
+                "start": 956,
+                "end": 960
+            }
+        ],
+        "src/fragroute/fragroute.c": [
+            {
+                "name": "fragroute_close",
+                "start": 33,
+                "end": 39
+            },
+            {
+                "name": "fragroute_process",
+                "start": 42,
+                "end": 82
+            },
+            {
+                "name": "fragroute_getfragment",
+                "start": 89,
+                "end": 116
+            },
+            {
+                "name": "fragroute_init",
+                "start": 118,
+                "end": 144
+            }
+        ],
+        "src/fragroute/mod_ip_frag.c": [
+            {
+                "name": "ip_frag_apply_ipv4",
+                "start": 28,
+                "end": 29
+            },
+            {
+                "name": "ip_frag_apply_ipv6",
+                "start": 31,
+                "end": 32
+            },
+            {
+                "name": "ip_frag_close",
+                "start": 42,
+                "end": 49
+            },
+            {
+                "name": "ip_frag_open",
+                "start": 51,
+                "end": 79
+            },
+            {
+                "name": "ip_frag_apply",
+                "start": 81,
+                "end": 99
+            },
+            {
+                "name": "ip_frag_apply_ipv4",
+                "start": 101,
+                "end": 196
+            },
+            {
+                "name": "ip_frag_apply_ipv6",
+                "start": 199,
+                "end": 308
+            }
+        ],
+        "src/fragroute/bget.h": [
+            {
+                "name": "bectl",
+                "start": 21,
+                "end": 23
+            },
+            {
+                "name": "bstats",
+                "start": 24,
+                "end": 25
+            },
+            {
+                "name": "bstatse",
+                "start": 26,
+                "end": 27
+            }
+        ],
+        "src/fragroute/bget.c": [
+            {
+                "name": "bget",
+                "start": 558,
+                "end": 738
+            },
+            {
+                "name": "bgetz",
+                "start": 744,
+                "end": 767
+            },
+            {
+                "name": "bgetr",
+                "start": 774,
+                "end": 805
+            },
+            {
+                "name": "brel",
+                "start": 809,
+                "end": 952
+            },
+            {
+                "name": "bectl",
+                "start": 958,
+                "end": 968
+            },
+            {
+                "name": "bpool",
+                "start": 973,
+                "end": 1036
+            }
+        ],
+        "src/fragroute/argv.c": [
+            {
+                "name": "argv_create",
+                "start": 18,
+                "end": 38
+            },
+            {
+                "name": "argv_copy",
+                "start": 41,
+                "end": 68
+            }
+        ],
+        "src/fragroute/iputil.h": [
+            {
+                "name": "inet_add_option",
+                "start": 4,
+                "end": 5
+            },
+            {
+                "name": "raw_ip_opt_parse",
+                "start": 8,
+                "end": 9
+            },
+            {
+                "name": "raw_ip6_opt_parse",
+                "start": 10,
+                "end": 11
+            }
+        ],
+        "src/fragroute/mod_ip_opt.c": [
+            {
+                "name": "ip_opt_close",
+                "start": 21,
+                "end": 27
+            },
+            {
+                "name": "ip_opt_open",
+                "start": 29,
+                "end": 69
+            },
+            {
+                "name": "ip_opt_apply",
+                "start": 71,
+                "end": 94
+            }
+        ],
+        "src/fragroute/iputil.c": [
+            {
+                "name": "inet_add_option_6",
+                "start": 10,
+                "end": 11
+            },
+            {
+                "name": "inet_add_option",
+                "start": 13,
+                "end": 25
+            },
+            {
+                "name": "inet_add_option_6",
+                "start": 30,
+                "end": 81
+            },
+            {
+                "name": "inet_checksum",
+                "start": 84,
+                "end": 92
+            },
+            {
+                "name": "raw_ip_opt_parse",
+                "start": 94,
+                "end": 121
+            },
+            {
+                "name": "raw_ip6_opt_parse",
+                "start": 123,
+                "end": 147
+            }
+        ],
+        "src/fragroute/mod_delay.c": [
+            {
+                "name": "delay_close",
+                "start": 28,
+                "end": 38
+            },
+            {
+                "name": "delay_open",
+                "start": 40,
+                "end": 71
+            },
+            {
+                "name": "delay_apply",
+                "start": 73,
+                "end": 89
+            }
+        ],
+        "src/fragroute/mod_ip_ttl.c": [
+            {
+                "name": "ip_ttl_close",
+                "start": 23,
+                "end": 29
+            },
+            {
+                "name": "ip_ttl_open",
+                "start": 31,
+                "end": 46
+            },
+            {
+                "name": "ip_ttl_apply",
+                "start": 48,
+                "end": 71
+            }
+        ],
+        "src/fragroute/mod_echo.c": [
+            {
+                "name": "echo_open",
+                "start": 20,
+                "end": 32
+            },
+            {
+                "name": "echo_apply",
+                "start": 34,
+                "end": 41
+            },
+            {
+                "name": "echo_close",
+                "start": 43,
+                "end": 49
+            }
+        ],
+        "src/fragroute/mod_ip6_qos.c": [
+            {
+                "name": "ip6_qos_close",
+                "start": 24,
+                "end": 30
+            },
+            {
+                "name": "ip6_qos_open",
+                "start": 32,
+                "end": 55
+            },
+            {
+                "name": "ip6_qos_apply",
+                "start": 57,
+                "end": 75
+            }
+        ],
+        "src/fragroute/mod_ip6_opt.c": [
+            {
+                "name": "ip6_opt_close",
+                "start": 47,
+                "end": 53
+            },
+            {
+                "name": "ip6_opt_open",
+                "start": 55,
+                "end": 104
+            },
+            {
+                "name": "ip6_opt_apply",
+                "start": 106,
+                "end": 188
+            }
+        ],
+        "src/fragroute/mod_dup.c": [
+            {
+                "name": "dup_close",
+                "start": 28,
+                "end": 38
+            },
+            {
+                "name": "dup_open",
+                "start": 40,
+                "end": 66
+            },
+            {
+                "name": "dup_apply",
+                "start": 68,
+                "end": 92
+            }
+        ],
+        "src/fragroute/mod_tcp_chaff.c": [
+            {
+                "name": "tcp_chaff_close",
+                "start": 34,
+                "end": 44
+            },
+            {
+                "name": "tcp_chaff_open",
+                "start": 46,
+                "end": 77
+            },
+            {
+                "name": "tcp_chaff_apply",
+                "start": 79,
+                "end": 189
+            }
+        ],
+        "src/fragroute/mod.c": [
+            {
+                "name": "mod_usage",
+                "start": 72,
+                "end": 80
+            },
+            {
+                "name": "mod_open",
+                "start": 82,
+                "end": 164
+            },
+            {
+                "name": "mod_apply",
+                "start": 166,
+                "end": 174
+            },
+            {
+                "name": "mod_close",
+                "start": 176,
+                "end": 187
+            }
+        ],
+        "src/fragroute/mod_ip_tos.c": [
+            {
+                "name": "ip_tos_close",
+                "start": 23,
+                "end": 29
+            },
+            {
+                "name": "ip_tos_open",
+                "start": 31,
+                "end": 47
+            },
+            {
+                "name": "ip_tos_apply",
+                "start": 49,
+                "end": 65
+            }
+        ],
+        "src/fragroute/mod_tcp_seg.c": [
+            {
+                "name": "tcp_seg_close",
+                "start": 35,
+                "end": 42
+            },
+            {
+                "name": "tcp_seg_open",
+                "start": 44,
+                "end": 68
+            },
+            {
+                "name": "tcp_seg_apply",
+                "start": 70,
+                "end": 174
+            }
+        ],
+        "src/fragroute/mod_order.c": [
+            {
+                "name": "order_close",
+                "start": 25,
+                "end": 35
+            },
+            {
+                "name": "order_open",
+                "start": 37,
+                "end": 58
+            },
+            {
+                "name": "order_apply",
+                "start": 60,
+                "end": 71
+            }
+        ],
+        "src/fragroute/randutil.c": [
+            {
+                "name": "rand_strset",
+                "start": 30,
+                "end": 55
+            }
+        ],
+        "src/fragroute/mod_ip_chaff.c": [
+            {
+                "name": "ip_chaff_close",
+                "start": 30,
+                "end": 40
+            },
+            {
+                "name": "ip_chaff_open",
+                "start": 42,
+                "end": 65
+            },
+            {
+                "name": "ip_chaff_apply",
+                "start": 67,
+                "end": 129
+            }
+        ],
+        "src/fragroute/mod_print.c": [
+            {
+                "name": "_print_icmp",
+                "start": 27,
+                "end": 39
+            },
+            {
+                "name": "_print_icmp6",
+                "start": 41,
+                "end": 53
+            },
+            {
+                "name": "_print_tcp",
+                "start": 55,
+                "end": 250
+            },
+            {
+                "name": "_print_udp",
+                "start": 252,
+                "end": 278
+            },
+            {
+                "name": "_print_frag6",
+                "start": 280,
+                "end": 297
+            },
+            {
+                "name": "_print_ip",
+                "start": 299,
+                "end": 353
+            },
+            {
+                "name": "_print_ip6",
+                "start": 355,
+                "end": 393
+            },
+            {
+                "name": "_print_eth",
+                "start": 395,
+                "end": 403
+            },
+            {
+                "name": "timerntoa",
+                "start": 405,
+                "end": 417
+            },
+            {
+                "name": "print_apply",
+                "start": 419,
+                "end": 438
+            }
+        ],
+        "src/fragroute/pkt.c": [
+            {
+                "name": "pkt_init",
+                "start": 20,
+                "end": 24
+            },
+            {
+                "name": "pkt_new",
+                "start": 26,
+                "end": 45
+            },
+            {
+                "name": "pkt_dup",
+                "start": 47,
+                "end": 80
+            },
+            {
+                "name": "pkt_decorate",
+                "start": 86,
+                "end": 241
+            },
+            {
+                "name": "pkt_free",
+                "start": 243,
+                "end": 247
+            },
+            {
+                "name": "pktq_reverse",
+                "start": 249,
+                "end": 261
+            },
+            {
+                "name": "pktq_shuffle",
+                "start": 263,
+                "end": 293
+            },
+            {
+                "name": "pktq_random",
+                "start": 295,
+                "end": 312
+            }
+        ],
+        "src/fragroute/mod_tcp_opt.c": [
+            {
+                "name": "tcp_opt_close",
+                "start": 21,
+                "end": 27
+            },
+            {
+                "name": "tcp_opt_open",
+                "start": 29,
+                "end": 67
+            },
+            {
+                "name": "tcp_opt_apply",
+                "start": 69,
+                "end": 90
+            }
+        ],
+        "src/fragroute/mod_drop.c": [
+            {
+                "name": "drop_close",
+                "start": 28,
+                "end": 38
+            },
+            {
+                "name": "drop_open",
+                "start": 40,
+                "end": 66
+            },
+            {
+                "name": "drop_apply",
+                "start": 68,
+                "end": 89
+            }
+        ],
+        "src/tcpedit/checksum.c": [
+            {
+                "name": "do_checksum",
+                "start": 48,
+                "end": 164
+            },
+            {
+                "name": "do_checksum_math",
+                "start": 169,
+                "end": 190
+            }
+        ],
+        "src/tcpedit/edit_packet.h": [
+            {
+                "name": "untrunc_packet",
+                "start": 39,
+                "end": 40
+            },
+            {
+                "name": "randomize_ipv4",
+                "start": 42,
+                "end": 43
+            },
+            {
+                "name": "randomize_ipv6",
+                "start": 45,
+                "end": 46
+            },
+            {
+                "name": "randomize_iparp",
+                "start": 48,
+                "end": 49
+            },
+            {
+                "name": "fix_ipv4_checksums",
+                "start": 51,
+                "end": 52
+            },
+            {
+                "name": "fix_ipv6_checksums",
+                "start": 54,
+                "end": 55
+            },
+            {
+                "name": "extract_data",
+                "start": 57,
+                "end": 58
+            }
+        ],
+        "src/tcpedit/edit_packet.c": [
+            {
+                "name": "fix_ipv4_checksums",
+                "start": 67,
+                "end": 94
+            },
+            {
+                "name": "fix_ipv6_checksums",
+                "start": 96,
+                "end": 118
+            },
+            {
+                "name": "randomize_ipv4_addr",
+                "start": 124,
+                "end": 134
+            },
+            {
+                "name": "randomize_ipv6_addr",
+                "start": 136,
+                "end": 158
+            },
+            {
+                "name": "randomize_ipv4",
+                "start": 166,
+                "end": 205
+            },
+            {
+                "name": "randomize_ipv6",
+                "start": 207,
+                "end": 246
+            },
+            {
+                "name": "untrunc_packet",
+                "start": 254,
+                "end": 319
+            },
+            {
+                "name": "extract_data",
+                "start": 326,
+                "end": 402
+            },
+            {
+                "name": "rewrite_ipv4_ttl",
+                "start": 408,
+                "end": 441
+            },
+            {
+                "name": "rewrite_ipv6_hlim",
+                "start": 447,
+                "end": 480
+            },
+            {
+                "name": "remap_ipv4",
+                "start": 487,
+                "end": 520
+            },
+            {
+                "name": "remap_ipv6",
+                "start": 522,
+                "end": 553
+            },
+            {
+                "name": "rewrite_ipv4l3",
+                "start": 561,
+                "end": 639
+            },
+            {
+                "name": "rewrite_ipv6l3",
+                "start": 641,
+                "end": 719
+            },
+            {
+                "name": "randomize_iparp",
+                "start": 725,
+                "end": 762
+            },
+            {
+                "name": "rewrite_iparp",
+                "start": 772,
+                "end": 882
+            },
+            {
+                "name": "is_unicast_ipv4",
+                "start": 888,
+                "end": 898
+            },
+            {
+                "name": "is_multicast_ipv6",
+                "start": 904,
+                "end": 913
+            }
+        ],
+        "src/tcpedit/parse_args.c": [
+            {
+                "name": "tcpedit_post_args",
+                "start": 50,
+                "end": 253
+            }
+        ],
+        "src/tcpedit/dlt.c": [
+            {
+                "name": "dlt2layer2len",
+                "start": 42,
+                "end": 83
+            },
+            {
+                "name": "dltrequires",
+                "start": 90,
+                "end": 121
+            },
+            {
+                "name": "dlt2mtu",
+                "start": 127,
+                "end": 156
+            },
+            {
+                "name": "layer2len",
+                "start": 164,
+                "end": 170
+            }
+        ],
+        "src/tcpedit/tcpedit.c": [
+            {
+                "name": "tcpedit_packet",
+                "start": 69,
+                "end": 290
+            },
+            {
+                "name": "tcpedit_init",
+                "start": 295,
+                "end": 325
+            },
+            {
+                "name": "tcpedit_get_output_dlt",
+                "start": 330,
+                "end": 335
+            },
+            {
+                "name": "tcpedit_validate",
+                "start": 346,
+                "end": 356
+            },
+            {
+                "name": "tcpedit_geterr",
+                "start": 362,
+                "end": 369
+            },
+            {
+                "name": "__tcpedit_seterr",
+                "start": 378,
+                "end": 396
+            },
+            {
+                "name": "tcpedit_getwarn",
+                "start": 402,
+                "end": 408
+            },
+            {
+                "name": "tcpedit_setwarn",
+                "start": 413,
+                "end": 425
+            },
+            {
+                "name": "tcpedit_checkerror",
+                "start": 437,
+                "end": 468
+            },
+            {
+                "name": "tcpedit_close",
+                "start": 475,
+                "end": 490
+            },
+            {
+                "name": "tcpedit_l3data",
+                "start": 495,
+                "end": 505
+            },
+            {
+                "name": "tcpedit_l2len",
+                "start": 510,
+                "end": 520
+            },
+            {
+                "name": "tcpedit_l3proto",
+                "start": 525,
+                "end": 535
+            }
+        ],
+        "src/tcpedit/portmap.c": [
+            {
+                "name": "new_portmap",
+                "start": 52,
+                "end": 59
+            },
+            {
+                "name": "ports2PORT",
+                "start": 72,
+                "end": 179
+            },
+            {
+                "name": "parse_portmap",
+                "start": 186,
+                "end": 222
+            },
+            {
+                "name": "free_portmap",
+                "start": 228,
+                "end": 239
+            },
+            {
+                "name": "print_portmap",
+                "start": 245,
+                "end": 258
+            },
+            {
+                "name": "map_port",
+                "start": 265,
+                "end": 285
+            },
+            {
+                "name": "rewrite_ports",
+                "start": 292,
+                "end": 341
+            },
+            {
+                "name": "rewrite_ipv4_ports",
+                "start": 343,
+                "end": 355
+            },
+            {
+                "name": "rewrite_ipv6_ports",
+                "start": 357,
+                "end": 368
+            }
+        ],
+        "src/tcpedit/plugins/dlt_plugins.c": [
+            {
+                "name": "tcpedit_dlt_register",
+                "start": 59,
+                "end": 79
+            },
+            {
+                "name": "tcpedit_dlt_init",
+                "start": 127,
+                "end": 208
+            },
+            {
+                "name": "tcpedit_dlt_process",
+                "start": 215,
+                "end": 246
+            },
+            {
+                "name": "tcpedit_dlt_output_dlt",
+                "start": 252,
+                "end": 268
+            },
+            {
+                "name": "tcpedit_dlt_l2len",
+                "start": 274,
+                "end": 288
+            },
+            {
+                "name": "tcpedit_dlt_proto",
+                "start": 293,
+                "end": 309
+            },
+            {
+                "name": "tcpedit_dlt_l3data",
+                "start": 314,
+                "end": 330
+            },
+            {
+                "name": "tcpedit_dlt_merge_l3data",
+                "start": 340,
+                "end": 358
+            },
+            {
+                "name": "tcpedit_dlt_decode",
+                "start": 365,
+                "end": 369
+            },
+            {
+                "name": "tcpedit_dlt_encode",
+                "start": 374,
+                "end": 378
+            },
+            {
+                "name": "tcpedit_dlt_src",
+                "start": 383,
+                "end": 388
+            },
+            {
+                "name": "tcpedit_dlt_dst",
+                "start": 393,
+                "end": 398
+            },
+            {
+                "name": "tcpedit_dlt_cleanup",
+                "start": 404,
+                "end": 423
+            }
+        ],
+        "src/tcpedit/plugins/dlt_utils.c": [
+            {
+                "name": "tcpedit_dlt_parse_opts",
+                "start": 46,
+                "end": 60
+            },
+            {
+                "name": "tcpedit_dlt_getplugin",
+                "start": 65,
+                "end": 84
+            },
+            {
+                "name": "tcpedit_dlt_getplugin_byname",
+                "start": 89,
+                "end": 109
+            },
+            {
+                "name": "tcpedit_dlt_newplugin",
+                "start": 114,
+                "end": 122
+            },
+            {
+                "name": "tcpedit_dlt_addplugin",
+                "start": 128,
+                "end": 175
+            },
+            {
+                "name": "tcpedit_dlt_validate",
+                "start": 182,
+                "end": 201
+            },
+            {
+                "name": "tcpedit_dlt_l3data_copy",
+                "start": 209,
+                "end": 242
+            },
+            {
+                "name": "tcpedit_dlt_l3data_merge",
+                "start": 247,
+                "end": 264
+            }
+        ],
+        "src/tcpedit/plugins/ethernet.c": [
+            {
+                "name": "is_unicast_ethernet",
+                "start": 44,
+                "end": 61
+            }
+        ],
+        "src/tcpedit/plugins/dlt_ieee80211/ieee80211.c": [
+            {
+                "name": "dlt_ieee80211_register",
+                "start": 66,
+                "end": 103
+            },
+            {
+                "name": "dlt_ieee80211_init",
+                "start": 112,
+                "end": 137
+            },
+            {
+                "name": "dlt_ieee80211_cleanup",
+                "start": 144,
+                "end": 166
+            },
+            {
+                "name": "dlt_ieee80211_parse_opts",
+                "start": 174,
+                "end": 182
+            },
+            {
+                "name": "dlt_ieee80211_decode",
+                "start": 194,
+                "end": 220
+            },
+            {
+                "name": "dlt_ieee80211_encode",
+                "start": 226,
+                "end": 235
+            },
+            {
+                "name": "dlt_ieee80211_proto",
+                "start": 240,
+                "end": 285
+            },
+            {
+                "name": "dlt_ieee80211_get_layer3",
+                "start": 290,
+                "end": 303
+            },
+            {
+                "name": "dlt_ieee80211_merge_layer3",
+                "start": 311,
+                "end": 325
+            },
+            {
+                "name": "dlt_ieee80211_l2len",
+                "start": 331,
+                "end": 377
+            },
+            {
+                "name": "dlt_ieee80211_get_mac",
+                "start": 383,
+                "end": 408
+            },
+            {
+                "name": "dlt_ieee80211_l2addr_type",
+                "start": 411,
+                "end": 415
+            }
+        ],
+        "src/tcpedit/plugins/dlt_ieee80211/ieee80211_hdr.c": [
+            {
+                "name": "ieee80211_is_data",
+                "start": 43,
+                "end": 119
+            },
+            {
+                "name": "ieee80211_is_encrypted",
+                "start": 124,
+                "end": 140
+            },
+            {
+                "name": "ieee80211_get_src",
+                "start": 148,
+                "end": 176
+            },
+            {
+                "name": "ieee80211_get_dst",
+                "start": 178,
+                "end": 206
+            }
+        ],
+        "src/tcpedit/plugins/dlt_raw/raw.c": [
+            {
+                "name": "dlt_raw_register",
+                "start": 63,
+                "end": 99
+            },
+            {
+                "name": "dlt_raw_init",
+                "start": 108,
+                "end": 131
+            },
+            {
+                "name": "dlt_raw_cleanup",
+                "start": 138,
+                "end": 161
+            },
+            {
+                "name": "dlt_raw_parse_opts",
+                "start": 169,
+                "end": 176
+            },
+            {
+                "name": "dlt_raw_decode",
+                "start": 188,
+                "end": 203
+            },
+            {
+                "name": "dlt_raw_encode",
+                "start": 209,
+                "end": 218
+            },
+            {
+                "name": "dlt_raw_proto",
+                "start": 223,
+                "end": 243
+            },
+            {
+                "name": "dlt_raw_get_layer3",
+                "start": 248,
+                "end": 258
+            },
+            {
+                "name": "dlt_raw_merge_layer3",
+                "start": 266,
+                "end": 277
+            },
+            {
+                "name": "dlt_raw_l2len",
+                "start": 282,
+                "end": 290
+            },
+            {
+                "name": "dlt_raw_get_mac",
+                "start": 296,
+                "end": 304
+            },
+            {
+                "name": "dlt_raw_l2addr_type",
+                "start": 306,
+                "end": 310
+            }
+        ],
+        "src/tcpedit/plugins/dlt_user/user.c": [
+            {
+                "name": "dlt_user_register",
+                "start": 58,
+                "end": 95
+            },
+            {
+                "name": "dlt_user_init",
+                "start": 104,
+                "end": 127
+            },
+            {
+                "name": "dlt_user_cleanup",
+                "start": 134,
+                "end": 157
+            },
+            {
+                "name": "dlt_user_parse_opts",
+                "start": 165,
+                "end": 209
+            },
+            {
+                "name": "dlt_user_decode",
+                "start": 212,
+                "end": 221
+            },
+            {
+                "name": "dlt_user_encode",
+                "start": 227,
+                "end": 263
+            },
+            {
+                "name": "dlt_user_proto",
+                "start": 268,
+                "end": 278
+            },
+            {
+                "name": "dlt_user_get_layer3",
+                "start": 283,
+                "end": 296
+            },
+            {
+                "name": "dlt_user_merge_layer3",
+                "start": 304,
+                "end": 318
+            },
+            {
+                "name": "dlt_user_l2len",
+                "start": 323,
+                "end": 336
+            },
+            {
+                "name": "dlt_user_get_mac",
+                "start": 342,
+                "end": 351
+            },
+            {
+                "name": "dlt_user_l2addr_type",
+                "start": 353,
+                "end": 357
+            },
+            {
+                "name": "dlt_user_get_output_dlt",
+                "start": 363,
+                "end": 373
+            }
+        ],
+        "src/tcpedit/plugins/dlt_radiotap/radiotap.c": [
+            {
+                "name": "dlt_radiotap_register",
+                "start": 68,
+                "end": 105
+            },
+            {
+                "name": "dlt_radiotap_init",
+                "start": 113,
+                "end": 137
+            },
+            {
+                "name": "dlt_radiotap_cleanup",
+                "start": 144,
+                "end": 166
+            },
+            {
+                "name": "dlt_radiotap_parse_opts",
+                "start": 174,
+                "end": 182
+            },
+            {
+                "name": "dlt_radiotap_decode",
+                "start": 194,
+                "end": 212
+            },
+            {
+                "name": "dlt_radiotap_encode",
+                "start": 218,
+                "end": 227
+            },
+            {
+                "name": "dlt_radiotap_proto",
+                "start": 234,
+                "end": 246
+            },
+            {
+                "name": "dlt_radiotap_get_layer3",
+                "start": 251,
+                "end": 264
+            },
+            {
+                "name": "dlt_radiotap_merge_layer3",
+                "start": 272,
+                "end": 286
+            },
+            {
+                "name": "dlt_radiotap_get_mac",
+                "start": 292,
+                "end": 305
+            },
+            {
+                "name": "dlt_radiotap_l2len",
+                "start": 312,
+                "end": 322
+            },
+            {
+                "name": "dlt_radiotap_80211_l2len",
+                "start": 327,
+                "end": 337
+            },
+            {
+                "name": "dlt_radiotap_l2addr_type",
+                "start": 339,
+                "end": 344
+            },
+            {
+                "name": "dlt_radiotap_get_80211",
+                "start": 351,
+                "end": 363
+            }
+        ],
+        "src/tcpedit/plugins/dlt_en10mb/en10mb.c": [
+            {
+                "name": "dlt_en10mb_register",
+                "start": 60,
+                "end": 97
+            },
+            {
+                "name": "dlt_en10mb_init",
+                "start": 106,
+                "end": 130
+            },
+            {
+                "name": "dlt_en10mb_cleanup",
+                "start": 137,
+                "end": 158
+            },
+            {
+                "name": "dlt_en10mb_parse_opts",
+                "start": 166,
+                "end": 275
+            },
+            {
+                "name": "dlt_en10mb_decode",
+                "start": 281,
+                "end": 328
+            },
+            {
+                "name": "dlt_en10mb_encode",
+                "start": 334,
+                "end": 505
+            },
+            {
+                "name": "dlt_en10mb_proto",
+                "start": 511,
+                "end": 533
+            },
+            {
+                "name": "dlt_en10mb_get_layer3",
+                "start": 538,
+                "end": 548
+            },
+            {
+                "name": "dlt_en10mb_merge_layer3",
+                "start": 556,
+                "end": 569
+            },
+            {
+                "name": "dlt_en10mb_get_mac",
+                "start": 575,
+                "end": 598
+            },
+            {
+                "name": "dlt_en10mb_l2len",
+                "start": 603,
+                "end": 624
+            },
+            {
+                "name": "dlt_en10mb_l2addr_type",
+                "start": 626,
+                "end": 630
+            }
+        ],
+        "src/tcpedit/plugins/dlt_hdlc/hdlc.c": [
+            {
+                "name": "dlt_hdlc_register",
+                "start": 58,
+                "end": 95
+            },
+            {
+                "name": "dlt_hdlc_init",
+                "start": 104,
+                "end": 130
+            },
+            {
+                "name": "dlt_hdlc_cleanup",
+                "start": 137,
+                "end": 159
+            },
+            {
+                "name": "dlt_hdlc_parse_opts",
+                "start": 167,
+                "end": 186
+            },
+            {
+                "name": "dlt_hdlc_decode",
+                "start": 198,
+                "end": 217
+            },
+            {
+                "name": "dlt_hdlc_encode",
+                "start": 223,
+                "end": 281
+            },
+            {
+                "name": "dlt_hdlc_proto",
+                "start": 286,
+                "end": 297
+            },
+            {
+                "name": "dlt_hdlc_get_layer3",
+                "start": 302,
+                "end": 315
+            },
+            {
+                "name": "dlt_hdlc_merge_layer3",
+                "start": 323,
+                "end": 337
+            },
+            {
+                "name": "dlt_hdlc_l2len",
+                "start": 342,
+                "end": 351
+            },
+            {
+                "name": "dlt_hdlc_get_mac",
+                "start": 357,
+                "end": 379
+            },
+            {
+                "name": "dlt_hdlc_l2addr_type",
+                "start": 381,
+                "end": 385
+            }
+        ],
+        "src/tcpedit/plugins/dlt_linuxsll/linuxsll.c": [
+            {
+                "name": "dlt_linuxsll_register",
+                "start": 58,
+                "end": 96
+            },
+            {
+                "name": "dlt_linuxsll_init",
+                "start": 105,
+                "end": 128
+            },
+            {
+                "name": "dlt_linuxsll_cleanup",
+                "start": 135,
+                "end": 158
+            },
+            {
+                "name": "dlt_linuxsll_parse_opts",
+                "start": 166,
+                "end": 173
+            },
+            {
+                "name": "dlt_linuxsll_decode",
+                "start": 185,
+                "end": 206
+            },
+            {
+                "name": "dlt_linuxsll_encode",
+                "start": 212,
+                "end": 221
+            },
+            {
+                "name": "dlt_linuxsll_proto",
+                "start": 226,
+                "end": 237
+            },
+            {
+                "name": "dlt_linuxsll_get_layer3",
+                "start": 242,
+                "end": 254
+            },
+            {
+                "name": "dlt_linuxsll_merge_layer3",
+                "start": 262,
+                "end": 275
+            },
+            {
+                "name": "dlt_linuxsll_l2len",
+                "start": 280,
+                "end": 288
+            },
+            {
+                "name": "dlt_linuxsll_get_mac",
+                "start": 294,
+                "end": 316
+            },
+            {
+                "name": "dlt_linuxsll_l2addr_type",
+                "start": 318,
+                "end": 323
+            }
+        ],
+        "src/tcpedit/plugins/dlt_null/null.c": [
+            {
+                "name": "dlt_null_register",
+                "start": 77,
+                "end": 113
+            },
+            {
+                "name": "dlt_null_init",
+                "start": 122,
+                "end": 146
+            },
+            {
+                "name": "dlt_null_cleanup",
+                "start": 153,
+                "end": 175
+            },
+            {
+                "name": "dlt_null_parse_opts",
+                "start": 183,
+                "end": 190
+            },
+            {
+                "name": "dlt_null_decode",
+                "start": 202,
+                "end": 217
+            },
+            {
+                "name": "dlt_null_encode",
+                "start": 223,
+                "end": 232
+            },
+            {
+                "name": "dlt_null_proto",
+                "start": 237,
+                "end": 257
+            },
+            {
+                "name": "dlt_null_get_layer3",
+                "start": 262,
+                "end": 274
+            },
+            {
+                "name": "dlt_null_merge_layer3",
+                "start": 282,
+                "end": 295
+            },
+            {
+                "name": "dlt_null_l2len",
+                "start": 300,
+                "end": 309
+            },
+            {
+                "name": "dlt_null_get_mac",
+                "start": 315,
+                "end": 324
+            },
+            {
+                "name": "dlt_null_l2addr_type",
+                "start": 326,
+                "end": 330
+            }
+        ],
+        "src/tcpedit/plugins/dlt_loop/loop.c": [
+            {
+                "name": "dlt_loop_register",
+                "start": 66,
+                "end": 100
+            },
+            {
+                "name": "dlt_loop_init",
+                "start": 108,
+                "end": 132
+            }
+        ]
+    }
+}

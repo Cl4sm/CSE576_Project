@@ -1,0 +1,3497 @@
+{
+    "dreamchess-0.2.0": {
+        "src/comm.c": [
+            {
+                "name": "comm_send",
+                "start": 29,
+                "end": 61
+            }
+        ],
+        "src/credits.c": [
+            {
+                "name": "get_credits",
+                "start": 63,
+                "end": 66
+            }
+        ],
+        "src/debug.c": [
+            {
+                "name": "dbg_set_level",
+                "start": 40,
+                "end": 43
+            },
+            {
+                "name": "dbg_error",
+                "start": 48,
+                "end": 66
+            },
+            {
+                "name": "dbg_warn",
+                "start": 71,
+                "end": 89
+            },
+            {
+                "name": "dbg_log",
+                "start": 94,
+                "end": 111
+            }
+        ],
+        "src/pgn_parser.c": [
+            {
+                "name": "yydestruct",
+                "start": 1023,
+                "end": 1045
+            },
+            {
+                "name": "yyparse",
+                "start": 1094,
+                "end": 1575
+            },
+            {
+                "name": "yyerror",
+                "start": 1581,
+                "end": 1585
+            }
+        ],
+        "src/fen.c": [
+            {
+                "name": "fen_encode",
+                "start": 30,
+                "end": 93
+            },
+            {
+                "name": "fen_decode",
+                "start": 95,
+                "end": 162
+            }
+        ],
+        "src/system_config.c": [
+            {
+                "name": "add_resolution",
+                "start": 32,
+                "end": 44
+            },
+            {
+                "name": "config_init",
+                "start": 46,
+                "end": 122
+            },
+            {
+                "name": "config_set_failsafe_video",
+                "start": 124,
+                "end": 139
+            },
+            {
+                "name": "config_save",
+                "start": 141,
+                "end": 144
+            },
+            {
+                "name": "config_backup",
+                "start": 146,
+                "end": 149
+            },
+            {
+                "name": "config_restore",
+                "start": 151,
+                "end": 154
+            },
+            {
+                "name": "config_get_option",
+                "start": 156,
+                "end": 159
+            }
+        ],
+        "src/options.c": [
+            {
+                "name": "remove_spaces",
+                "start": 28,
+                "end": 40
+            },
+            {
+                "name": "whitespace_cb",
+                "start": 42,
+                "end": 51
+            },
+            {
+                "name": "option_group_create",
+                "start": 53,
+                "end": 60
+            },
+            {
+                "name": "option_group_add_option",
+                "start": 62,
+                "end": 73
+            },
+            {
+                "name": "option_group_add_int",
+                "start": 75,
+                "end": 83
+            },
+            {
+                "name": "option_group_add_string",
+                "start": 85,
+                "end": 94
+            },
+            {
+                "name": "option_group_save",
+                "start": 96,
+                "end": 116
+            },
+            {
+                "name": "option_group_save_xml",
+                "start": 118,
+                "end": 148
+            },
+            {
+                "name": "option_group_save_string",
+                "start": 150,
+                "end": 156
+            },
+            {
+                "name": "option_group_load",
+                "start": 158,
+                "end": 192
+            },
+            {
+                "name": "option_group_load_xml",
+                "start": 194,
+                "end": 222
+            },
+            {
+                "name": "option_group_load_string",
+                "start": 224,
+                "end": 236
+            },
+            {
+                "name": "option_add_value",
+                "start": 238,
+                "end": 248
+            },
+            {
+                "name": "option_select_value_by_name",
+                "start": 250,
+                "end": 265
+            },
+            {
+                "name": "option_select_value_by_index",
+                "start": 267,
+                "end": 281
+            },
+            {
+                "name": "option_select_next_value",
+                "start": 283,
+                "end": 293
+            },
+            {
+                "name": "option_select_prev_value",
+                "start": 295,
+                "end": 305
+            },
+            {
+                "name": "option_group_find_option",
+                "start": 307,
+                "end": 319
+            },
+            {
+                "name": "option_string_set_text",
+                "start": 321,
+                "end": 327
+            }
+        ],
+        "src/history.c": [
+            {
+                "name": "write_token",
+                "start": 33,
+                "end": 51
+            },
+            {
+                "name": "history_init",
+                "start": 53,
+                "end": 69
+            },
+            {
+                "name": "history_exit",
+                "start": 71,
+                "end": 94
+            },
+            {
+                "name": "history_play",
+                "start": 96,
+                "end": 110
+            },
+            {
+                "name": "history_undo",
+                "start": 112,
+                "end": 125
+            },
+            {
+                "name": "history_view_next",
+                "start": 127,
+                "end": 135
+            },
+            {
+                "name": "history_view_prev",
+                "start": 137,
+                "end": 145
+            },
+            {
+                "name": "history_save_pgn",
+                "start": 147,
+                "end": 208
+            }
+        ],
+        "src/board.c": [
+            {
+                "name": "board_setup",
+                "start": 32,
+                "end": 67
+            },
+            {
+                "name": "move_is_capture",
+                "start": 69,
+                "end": 79
+            },
+            {
+                "name": "square_to_str",
+                "start": 81,
+                "end": 85
+            },
+            {
+                "name": "move_to_fullalg",
+                "start": 87,
+                "end": 100
+            },
+            {
+                "name": "san_piece",
+                "start": 102,
+                "end": 122
+            },
+            {
+                "name": "make_move",
+                "start": 124,
+                "end": 164
+            },
+            {
+                "name": "ray_ok",
+                "start": 169,
+                "end": 193
+            },
+            {
+                "name": "square_attacked",
+                "start": 195,
+                "end": 222
+            },
+            {
+                "name": "move_is_semi_valid",
+                "start": 225,
+                "end": 389
+            },
+            {
+                "name": "in_check",
+                "start": 391,
+                "end": 405
+            },
+            {
+                "name": "move_is_valid",
+                "start": 407,
+                "end": 417
+            },
+            {
+                "name": "is_mated",
+                "start": 419,
+                "end": 438
+            },
+            {
+                "name": "move_set_attr",
+                "start": 440,
+                "end": 474
+            },
+            {
+                "name": "fullalg_to_move",
+                "start": 476,
+                "end": 529
+            },
+            {
+                "name": "ui_piece",
+                "start": 531,
+                "end": 553
+            },
+            {
+                "name": "find_unique_move",
+                "start": 555,
+                "end": 623
+            },
+            {
+                "name": "move_to_san",
+                "start": 625,
+                "end": 709
+            },
+            {
+                "name": "san_to_move",
+                "start": 711,
+                "end": 722
+            },
+            {
+                "name": "san_to_fan",
+                "start": 724,
+                "end": 747
+            }
+        ],
+        "src/ui.c": [
+            {
+                "name": "ui_find_driver",
+                "start": 40,
+                "end": 52
+            },
+            {
+                "name": "ui_list_drivers",
+                "start": 54,
+                "end": 67
+            }
+        ],
+        "src/dir.c": [
+            {
+                "name": "ch_datadir",
+                "start": 118,
+                "end": 121
+            },
+            {
+                "name": "ch_userdir",
+                "start": 124,
+                "end": 143
+            }
+        ],
+        "src/pgn_scanner.c": [
+            {
+                "name": "pgn_parse_file",
+                "start": 506,
+                "end": 529
+            },
+            {
+                "name": "yylex",
+                "start": 677,
+                "end": 970
+            },
+            {
+                "name": "yy_get_next_buffer",
+                "start": 979,
+                "end": 1101
+            },
+            {
+                "name": "yy_get_previous_state",
+                "start": 1105,
+                "end": 1130
+            },
+            {
+                "name": "yy_try_NUL_trans",
+                "start": 1137,
+                "end": 1158
+            },
+            {
+                "name": "yyunput",
+                "start": 1160,
+                "end": 1195
+            },
+            {
+                "name": "input",
+                "start": 1201,
+                "end": 1268
+            },
+            {
+                "name": "yyrestart",
+                "start": 1276,
+                "end": 1287
+            },
+            {
+                "name": "yy_switch_to_buffer",
+                "start": 1293,
+                "end": 1322
+            },
+            {
+                "name": "yy_load_buffer_state",
+                "start": 1324,
+                "end": 1330
+            },
+            {
+                "name": "yy_create_buffer",
+                "start": 1338,
+                "end": 1360
+            },
+            {
+                "name": "yy_delete_buffer",
+                "start": 1366,
+                "end": 1379
+            },
+            {
+                "name": "yy_init_buffer",
+                "start": 1389,
+                "end": 1411
+            },
+            {
+                "name": "yy_flush_buffer",
+                "start": 1417,
+                "end": 1438
+            },
+            {
+                "name": "yypush_buffer_state",
+                "start": 1446,
+                "end": 1470
+            },
+            {
+                "name": "yypop_buffer_state",
+                "start": 1476,
+                "end": 1490
+            },
+            {
+                "name": "yyensure_buffer_stack",
+                "start": 1495,
+                "end": 1532
+            },
+            {
+                "name": "yy_scan_buffer",
+                "start": 1540,
+                "end": 1567
+            },
+            {
+                "name": "yy_scan_string",
+                "start": 1577,
+                "end": 1581
+            },
+            {
+                "name": "yy_scan_bytes",
+                "start": 1590,
+                "end": 1618
+            },
+            {
+                "name": "yy_fatal_error",
+                "start": 1624,
+                "end": 1628
+            },
+            {
+                "name": "yyget_lineno",
+                "start": 1652,
+                "end": 1656
+            },
+            {
+                "name": "yyget_in",
+                "start": 1661,
+                "end": 1664
+            },
+            {
+                "name": "yyget_out",
+                "start": 1669,
+                "end": 1672
+            },
+            {
+                "name": "yyget_leng",
+                "start": 1677,
+                "end": 1680
+            },
+            {
+                "name": "yyget_text",
+                "start": 1686,
+                "end": 1689
+            },
+            {
+                "name": "yyset_lineno",
+                "start": 1695,
+                "end": 1699
+            },
+            {
+                "name": "yyset_in",
+                "start": 1707,
+                "end": 1710
+            },
+            {
+                "name": "yyset_out",
+                "start": 1712,
+                "end": 1715
+            },
+            {
+                "name": "yyget_debug",
+                "start": 1717,
+                "end": 1720
+            },
+            {
+                "name": "yyset_debug",
+                "start": 1722,
+                "end": 1725
+            },
+            {
+                "name": "yy_init_globals",
+                "start": 1727,
+                "end": 1753
+            },
+            {
+                "name": "yylex_destroy",
+                "start": 1756,
+                "end": 1775
+            },
+            {
+                "name": "yyalloc",
+                "start": 1801,
+                "end": 1804
+            },
+            {
+                "name": "yyrealloc",
+                "start": 1806,
+                "end": 1816
+            },
+            {
+                "name": "yyfree",
+                "start": 1818,
+                "end": 1821
+            },
+            {
+                "name": "make_string",
+                "start": 1829,
+                "end": 1852
+            }
+        ],
+        "src/dreamchess.c": [
+            {
+                "name": "move_list_play",
+                "start": 75,
+                "end": 84
+            },
+            {
+                "name": "move_list_undo",
+                "start": 86,
+                "end": 94
+            },
+            {
+                "name": "move_list_init",
+                "start": 96,
+                "end": 102
+            },
+            {
+                "name": "move_list_exit",
+                "start": 104,
+                "end": 109
+            },
+            {
+                "name": "move_list_view_next",
+                "start": 111,
+                "end": 115
+            },
+            {
+                "name": "move_list_view_prev",
+                "start": 117,
+                "end": 121
+            },
+            {
+                "name": "game_view_next",
+                "start": 123,
+                "end": 130
+            },
+            {
+                "name": "game_view_prev",
+                "start": 132,
+                "end": 139
+            },
+            {
+                "name": "game_undo",
+                "start": 141,
+                "end": 154
+            },
+            {
+                "name": "game_retract_move",
+                "start": 156,
+                "end": 167
+            },
+            {
+                "name": "game_move_now",
+                "start": 169,
+                "end": 176
+            },
+            {
+                "name": "game_want_move",
+                "start": 178,
+                "end": 182
+            },
+            {
+                "name": "game_save",
+                "start": 184,
+                "end": 201
+            },
+            {
+                "name": "game_set_engine_error",
+                "start": 203,
+                "end": 206
+            },
+            {
+                "name": "game_get_engine_error",
+                "start": 208,
+                "end": 211
+            },
+            {
+                "name": "do_move",
+                "start": 213,
+                "end": 285
+            },
+            {
+                "name": "game_make_move",
+                "start": 287,
+                "end": 298
+            },
+            {
+                "name": "game_quit",
+                "start": 300,
+                "end": 303
+            },
+            {
+                "name": "game_load",
+                "start": 305,
+                "end": 343
+            },
+            {
+                "name": "game_make_move_str",
+                "start": 345,
+                "end": 363
+            },
+            {
+                "name": "game_get_move_list",
+                "start": 365,
+                "end": 370
+            },
+            {
+                "name": "set_resolution",
+                "start": 372,
+                "end": 401
+            },
+            {
+                "name": "init_resolution",
+                "start": 403,
+                "end": 414
+            },
+            {
+                "name": "toggle_fullscreen",
+                "start": 416,
+                "end": 425
+            },
+            {
+                "name": "parse_options",
+                "start": 428,
+                "end": 512
+            },
+            {
+                "name": "set_cl_options",
+                "start": 515,
+                "end": 542
+            },
+            {
+                "name": "dreamchess",
+                "start": 544,
+                "end": 703
+            }
+        ],
+        "src/main.c": [
+            {
+                "name": "main",
+                "start": 31,
+                "end": 39
+            }
+        ],
+        "src/theme.c": [
+            {
+                "name": "load_opaque",
+                "start": 38,
+                "end": 52
+            },
+            {
+                "name": "theme_add_theme",
+                "start": 54,
+                "end": 157
+            },
+            {
+                "name": "find_themes",
+                "start": 159,
+                "end": 177
+            },
+            {
+                "name": "theme_find_themes",
+                "start": 179,
+                "end": 188
+            },
+            {
+                "name": "add_music_pack",
+                "start": 190,
+                "end": 197
+            },
+            {
+                "name": "find_music_packs",
+                "start": 199,
+                "end": 227
+            },
+            {
+                "name": "theme_find_music_packs",
+                "start": 229,
+                "end": 267
+            },
+            {
+                "name": "theme_get_music_packs",
+                "start": 269,
+                "end": 272
+            }
+        ],
+        "src/ui_sdlgl/ui_sdlgl.h": [
+            {
+                "name": "draw_texture_uv",
+                "start": 274,
+                "end": 275
+            },
+            {
+                "name": "draw_texture",
+                "start": 276,
+                "end": 277
+            },
+            {
+                "name": "draw_rect_fill_gradient",
+                "start": 282,
+                "end": 283
+            }
+        ],
+        "src/ui_sdlgl/ui_sdlgl.c": [
+            {
+                "name": "music_callback",
+                "start": 54,
+                "end": 57
+            },
+            {
+                "name": "get_screen_width",
+                "start": 59,
+                "end": 62
+            },
+            {
+                "name": "get_screen_height",
+                "start": 64,
+                "end": 67
+            },
+            {
+                "name": "get_egg_req",
+                "start": 80,
+                "end": 83
+            },
+            {
+                "name": "set_show_egg",
+                "start": 85,
+                "end": 88
+            },
+            {
+                "name": "get_show_egg",
+                "start": 90,
+                "end": 93
+            },
+            {
+                "name": "get_dialog_promote_piece",
+                "start": 95,
+                "end": 98
+            },
+            {
+                "name": "set_dialog_promote_piece",
+                "start": 100,
+                "end": 103
+            },
+            {
+                "name": "set_title_process_retval",
+                "start": 105,
+                "end": 108
+            },
+            {
+                "name": "set_set_loading",
+                "start": 110,
+                "end": 113
+            },
+            {
+                "name": "set_quit_to_menu",
+                "start": 115,
+                "end": 118
+            },
+            {
+                "name": "set_pgn_slot",
+                "start": 120,
+                "end": 123
+            },
+            {
+                "name": "get_board",
+                "start": 125,
+                "end": 128
+            },
+            {
+                "name": "get_config",
+                "start": 132,
+                "end": 135
+            },
+            {
+                "name": "set_switch_to_menu",
+                "start": 140,
+                "end": 143
+            },
+            {
+                "name": "get_fading_out",
+                "start": 145,
+                "end": 148
+            },
+            {
+                "name": "set_fading_out",
+                "start": 150,
+                "end": 153
+            },
+            {
+                "name": "get_game_stalemate",
+                "start": 155,
+                "end": 158
+            },
+            {
+                "name": "get_white_in_check",
+                "start": 160,
+                "end": 163
+            },
+            {
+                "name": "get_black_in_check",
+                "start": 165,
+                "end": 168
+            },
+            {
+                "name": "get_white_in_checkmate",
+                "start": 170,
+                "end": 173
+            },
+            {
+                "name": "get_black_in_checkmate",
+                "start": 175,
+                "end": 178
+            },
+            {
+                "name": "get_ingame_style",
+                "start": 180,
+                "end": 183
+            },
+            {
+                "name": "get_menu_style",
+                "start": 185,
+                "end": 188
+            },
+            {
+                "name": "get_turn_counter",
+                "start": 190,
+                "end": 193
+            },
+            {
+                "name": "reset_turn_counter",
+                "start": 195,
+                "end": 198
+            },
+            {
+                "name": "poll_event",
+                "start": 200,
+                "end": 236
+            },
+            {
+                "name": "do_menu",
+                "start": 239,
+                "end": 389
+            },
+            {
+                "name": "free_menu_tex",
+                "start": 391,
+                "end": 397
+            },
+            {
+                "name": "load_menu_tex",
+                "start": 399,
+                "end": 417
+            },
+            {
+                "name": "set_video",
+                "start": 419,
+                "end": 451
+            },
+            {
+                "name": "resize",
+                "start": 453,
+                "end": 487
+            },
+            {
+                "name": "init_gui",
+                "start": 490,
+                "end": 574
+            },
+            {
+                "name": "update",
+                "start": 577,
+                "end": 620
+            },
+            {
+                "name": "show_result",
+                "start": 623,
+                "end": 626
+            },
+            {
+                "name": "sdlgl_init",
+                "start": 629,
+                "end": 632
+            },
+            {
+                "name": "sdlgl_exit",
+                "start": 635,
+                "end": 647
+            },
+            {
+                "name": "show_message",
+                "start": 650,
+                "end": 653
+            },
+            {
+                "name": "poll_move",
+                "start": 656,
+                "end": 759
+            }
+        ],
+        "src/ui_sdlgl/load_data.c": [
+            {
+                "name": "load_border",
+                "start": 23,
+                "end": 54
+            },
+            {
+                "name": "unload_border",
+                "start": 56,
+                "end": 64
+            },
+            {
+                "name": "load_pieces",
+                "start": 67,
+                "end": 127
+            }
+        ],
+        "src/ui_sdlgl/transitions.c": [
+            {
+                "name": "set_fade_start",
+                "start": 28,
+                "end": 31
+            },
+            {
+                "name": "draw_fade",
+                "start": 33,
+                "end": 52
+            },
+            {
+                "name": "draw_sonic_fade",
+                "start": 54,
+                "end": 108
+            }
+        ],
+        "src/ui_sdlgl/credits.c": [
+            {
+                "name": "draw_credits",
+                "start": 33,
+                "end": 125
+            }
+        ],
+        "src/ui_sdlgl/colours.c": [
+            {
+                "name": "get_col",
+                "start": 44,
+                "end": 62
+            }
+        ],
+        "src/ui_sdlgl/draw_scene.c": [
+            {
+                "name": "get_mouse_square",
+                "start": 25,
+                "end": 28
+            },
+            {
+                "name": "draw_scene",
+                "start": 34,
+                "end": 101
+            }
+        ],
+        "src/ui_sdlgl/promote_dialog.c": [
+            {
+                "name": "dialog_promote_cb",
+                "start": 23,
+                "end": 28
+            },
+            {
+                "name": "dialog_promote_create",
+                "start": 30,
+                "end": 84
+            }
+        ],
+        "src/ui_sdlgl/get_move.c": [
+            {
+                "name": "get_move",
+                "start": 37,
+                "end": 187
+            }
+        ],
+        "src/ui_sdlgl/saveload_dialog.c": [
+            {
+                "name": "dialog_close_cb",
+                "start": 23,
+                "end": 27
+            },
+            {
+                "name": "xmlsquaretofont",
+                "start": 33,
+                "end": 53
+            },
+            {
+                "name": "dialog_loadgame_load",
+                "start": 55,
+                "end": 67
+            },
+            {
+                "name": "dialog_saveload_change",
+                "start": 69,
+                "end": 79
+            },
+            {
+                "name": "dialog_savegame_save",
+                "start": 81,
+                "end": 107
+            },
+            {
+                "name": "dialog_saveload_create",
+                "start": 109,
+                "end": 323
+            }
+        ],
+        "src/ui_sdlgl/text.c": [
+            {
+                "name": "get_text_character",
+                "start": 25,
+                "end": 28
+            },
+            {
+                "name": "text_draw_char",
+                "start": 39,
+                "end": 58
+            },
+            {
+                "name": "text_draw_string",
+                "start": 68,
+                "end": 75
+            },
+            {
+                "name": "text_width_n",
+                "start": 77,
+                "end": 92
+            },
+            {
+                "name": "text_width",
+                "start": 99,
+                "end": 102
+            },
+            {
+                "name": "text_height",
+                "start": 108,
+                "end": 111
+            },
+            {
+                "name": "text_draw_string_right",
+                "start": 121,
+                "end": 124
+            },
+            {
+                "name": "text_draw_string_bouncy",
+                "start": 137,
+                "end": 159
+            },
+            {
+                "name": "generate_text_chars",
+                "start": 162,
+                "end": 213
+            }
+        ],
+        "src/ui_sdlgl/texture.c": [
+            {
+                "name": "SDL_GL_LoadTexture",
+                "start": 26,
+                "end": 113
+            },
+            {
+                "name": "draw_texture",
+                "start": 152,
+                "end": 173
+            },
+            {
+                "name": "draw_texture_uv",
+                "start": 208,
+                "end": 232
+            },
+            {
+                "name": "load_texture_png",
+                "start": 243,
+                "end": 269
+            }
+        ],
+        "src/ui_sdlgl/system.c": [
+            {
+                "name": "get_fps",
+                "start": 45,
+                "end": 48
+            },
+            {
+                "name": "update_fps_time",
+                "start": 50,
+                "end": 53
+            },
+            {
+                "name": "toggle_show_fps",
+                "start": 55,
+                "end": 58
+            },
+            {
+                "name": "get_zerodepth",
+                "start": 67,
+                "end": 70
+            },
+            {
+                "name": "set_mouse_pos",
+                "start": 72,
+                "end": 76
+            },
+            {
+                "name": "get_true_mouse_x",
+                "start": 78,
+                "end": 81
+            },
+            {
+                "name": "get_true_mouse_y",
+                "start": 83,
+                "end": 86
+            },
+            {
+                "name": "get_mouse_x",
+                "start": 88,
+                "end": 91
+            },
+            {
+                "name": "get_mouse_y",
+                "start": 93,
+                "end": 96
+            },
+            {
+                "name": "power_of_two",
+                "start": 103,
+                "end": 112
+            },
+            {
+                "name": "go_3d",
+                "start": 114,
+                "end": 123
+            },
+            {
+                "name": "init_gl",
+                "start": 126,
+                "end": 157
+            },
+            {
+                "name": "resize_window",
+                "start": 164,
+                "end": 173
+            },
+            {
+                "name": "gl_swap",
+                "start": 179,
+                "end": 209
+            }
+        ],
+        "src/ui_sdlgl/vkeyboard.c": [
+            {
+                "name": "populate_key_table",
+                "start": 26,
+                "end": 34
+            },
+            {
+                "name": "toggle_vkeyboard_enabled",
+                "start": 36,
+                "end": 39
+            },
+            {
+                "name": "get_vkeyboard_enabled",
+                "start": 41,
+                "end": 44
+            },
+            {
+                "name": "dialog_vkeyboard_key",
+                "start": 46,
+                "end": 59
+            },
+            {
+                "name": "dialog_vkeyboard_create",
+                "start": 61,
+                "end": 112
+            }
+        ],
+        "src/ui_sdlgl/victory_dialog.c": [
+            {
+                "name": "dialog_close_cb",
+                "start": 23,
+                "end": 27
+            },
+            {
+                "name": "dialog_victory_create",
+                "start": 29,
+                "end": 74
+            }
+        ],
+        "src/ui_sdlgl/title_dialog.c": [
+            {
+                "name": "create_option_values",
+                "start": 25,
+                "end": 34
+            },
+            {
+                "name": "dialog_close_cb",
+                "start": 36,
+                "end": 40
+            },
+            {
+                "name": "menu_title_start",
+                "start": 43,
+                "end": 90
+            },
+            {
+                "name": "menu_title_quit",
+                "start": 93,
+                "end": 98
+            },
+            {
+                "name": "dialog_title_root_new",
+                "start": 100,
+                "end": 104
+            },
+            {
+                "name": "dialog_title_root_load",
+                "start": 106,
+                "end": 110
+            },
+            {
+                "name": "dialog_title_cb",
+                "start": 112,
+                "end": 117
+            },
+            {
+                "name": "dialog_title_open_systemopts",
+                "start": 119,
+                "end": 123
+            },
+            {
+                "name": "dialog_title_newgame_create",
+                "start": 125,
+                "end": 188
+            },
+            {
+                "name": "dialog_title_root_create",
+                "start": 190,
+                "end": 221
+            },
+            {
+                "name": "open_title_root_dialog",
+                "start": 223,
+                "end": 228
+            }
+        ],
+        "src/ui_sdlgl/ingame_ui.c": [
+            {
+                "name": "draw_name_dialog",
+                "start": 23,
+                "end": 78
+            },
+            {
+                "name": "draw_backdrop",
+                "start": 81,
+                "end": 84
+            },
+            {
+                "name": "draw_move_list",
+                "start": 95,
+                "end": 154
+            },
+            {
+                "name": "draw_health_bars",
+                "start": 157,
+                "end": 295
+            },
+            {
+                "name": "draw_capture_list",
+                "start": 301,
+                "end": 331
+            }
+        ],
+        "src/ui_sdlgl/draw_shape.c": [
+            {
+                "name": "draw_tri",
+                "start": 40,
+                "end": 48
+            },
+            {
+                "name": "draw_rect",
+                "start": 51,
+                "end": 60
+            },
+            {
+                "name": "draw_rect_fill_gradient",
+                "start": 83,
+                "end": 99
+            },
+            {
+                "name": "draw_rect_fill",
+                "start": 102,
+                "end": 105
+            }
+        ],
+        "src/ui_sdlgl/gamegui_driver.c": [
+            {
+                "name": "convert_event",
+                "start": 23,
+                "end": 195
+            },
+            {
+                "name": "draw_image",
+                "start": 198,
+                "end": 237
+            },
+            {
+                "name": "get_char_image",
+                "start": 239,
+                "end": 246
+            },
+            {
+                "name": "draw_char",
+                "start": 248,
+                "end": 251
+            },
+            {
+                "name": "get_image_size",
+                "start": 253,
+                "end": 262
+            },
+            {
+                "name": "get_char_size",
+                "start": 264,
+                "end": 274
+            },
+            {
+                "name": "get_ticks",
+                "start": 276,
+                "end": 279
+            },
+            {
+                "name": "get_gg_driver_sdlgl",
+                "start": 294,
+                "end": 297
+            }
+        ],
+        "src/ui_sdlgl/xmlsavefile.c": [
+            {
+                "name": "get_saved_board",
+                "start": 28,
+                "end": 31
+            },
+            {
+                "name": "get_config_save",
+                "start": 33,
+                "end": 36
+            },
+            {
+                "name": "get_time_save",
+                "start": 38,
+                "end": 41
+            },
+            {
+                "name": "set_slots",
+                "start": 43,
+                "end": 46
+            },
+            {
+                "name": "get_slots",
+                "start": 48,
+                "end": 51
+            },
+            {
+                "name": "load_game",
+                "start": 53,
+                "end": 61
+            },
+            {
+                "name": "whitespace_cb",
+                "start": 63,
+                "end": 82
+            },
+            {
+                "name": "load_opaque",
+                "start": 84,
+                "end": 97
+            },
+            {
+                "name": "save_opaque",
+                "start": 99,
+                "end": 103
+            },
+            {
+                "name": "write_save_xml",
+                "start": 105,
+                "end": 162
+            },
+            {
+                "name": "load_save_xml",
+                "start": 165,
+                "end": 240
+            }
+        ],
+        "src/ui_sdlgl/theme.c": [
+            {
+                "name": "get_menu_border",
+                "start": 34,
+                "end": 37
+            },
+            {
+                "name": "get_border",
+                "start": 39,
+                "end": 42
+            },
+            {
+                "name": "get_mouse_cursor",
+                "start": 44,
+                "end": 47
+            },
+            {
+                "name": "get_menu_mouse_cursor",
+                "start": 49,
+                "end": 52
+            },
+            {
+                "name": "get_white_name",
+                "start": 54,
+                "end": 57
+            },
+            {
+                "name": "get_black_name",
+                "start": 59,
+                "end": 62
+            },
+            {
+                "name": "get_backdrop",
+                "start": 64,
+                "end": 67
+            },
+            {
+                "name": "get_white_pieces",
+                "start": 69,
+                "end": 72
+            },
+            {
+                "name": "get_black_pieces",
+                "start": 74,
+                "end": 77
+            },
+            {
+                "name": "get_white_piece",
+                "start": 79,
+                "end": 82
+            },
+            {
+                "name": "get_black_piece",
+                "start": 84,
+                "end": 87
+            },
+            {
+                "name": "ld_style",
+                "start": 89,
+                "end": 110
+            },
+            {
+                "name": "ld_pieces",
+                "start": 112,
+                "end": 124
+            },
+            {
+                "name": "ld_board",
+                "start": 126,
+                "end": 137
+            },
+            {
+                "name": "load_theme",
+                "start": 143,
+                "end": 175
+            },
+            {
+                "name": "unload_theme",
+                "start": 178,
+                "end": 186
+            }
+        ],
+        "src/audio/playlist.c": [
+            {
+                "name": "read_opaque",
+                "start": 27,
+                "end": 39
+            },
+            {
+                "name": "playlist_create",
+                "start": 41,
+                "end": 48
+            },
+            {
+                "name": "playlist_destroy",
+                "start": 50,
+                "end": 62
+            },
+            {
+                "name": "playlist_add_track",
+                "start": 64,
+                "end": 75
+            },
+            {
+                "name": "playlist_add_tracks",
+                "start": 77,
+                "end": 127
+            }
+        ],
+        "src/audio/sdlmixer.c": [
+            {
+                "name": "audio_init",
+                "start": 205,
+                "end": 207
+            },
+            {
+                "name": "audio_exit",
+                "start": 209,
+                "end": 211
+            },
+            {
+                "name": "audio_poll",
+                "start": 213,
+                "end": 215
+            },
+            {
+                "name": "audio_set_music_callback",
+                "start": 217,
+                "end": 219
+            },
+            {
+                "name": "audio_play_sound",
+                "start": 221,
+                "end": 223
+            },
+            {
+                "name": "audio_set_sound_volume",
+                "start": 225,
+                "end": 227
+            },
+            {
+                "name": "audio_set_music_volume",
+                "start": 229,
+                "end": 231
+            }
+        ],
+        "src/libs/san_parse.c": [
+            {
+                "name": "yydestruct",
+                "start": 1031,
+                "end": 1053
+            },
+            {
+                "name": "sanparse",
+                "start": 1102,
+                "end": 1653
+            },
+            {
+                "name": "san_parse",
+                "start": 1667,
+                "end": 1688
+            },
+            {
+                "name": "add_piece",
+                "start": 1690,
+                "end": 1709
+            },
+            {
+                "name": "san_string",
+                "start": 1711,
+                "end": 1760
+            },
+            {
+                "name": "sanerror",
+                "start": 1762,
+                "end": 1765
+            },
+            {
+                "name": "sanlex",
+                "start": 1767,
+                "end": 1791
+            }
+        ],
+        "src/libs/pipe_win32.c": [
+            {
+                "name": "pipe_win32_init",
+                "start": 33,
+                "end": 37
+            },
+            {
+                "name": "pipe_win32_exit",
+                "start": 39,
+                "end": 42
+            },
+            {
+                "name": "pipe_win32_send",
+                "start": 44,
+                "end": 55
+            },
+            {
+                "name": "pipe_win32_poll",
+                "start": 57,
+                "end": 110
+            }
+        ],
+        "src/libs/msgbuf.c": [
+            {
+                "name": "msgbuf_process",
+                "start": 29,
+                "end": 86
+            },
+            {
+                "name": "msgbuf_exit",
+                "start": 88,
+                "end": 94
+            }
+        ],
+        "src/libs/pipe_beos.c": [
+            {
+                "name": "pipe_unix_init",
+                "start": 40,
+                "end": 46
+            },
+            {
+                "name": "pipe_unix_exit",
+                "start": 48,
+                "end": 51
+            },
+            {
+                "name": "pipe_unix_send",
+                "start": 53,
+                "end": 56
+            },
+            {
+                "name": "pipe_unix_poll",
+                "start": 58,
+                "end": 100
+            }
+        ],
+        "src/libs/pipe_unix.c": [
+            {
+                "name": "pipe_unix_init",
+                "start": 38,
+                "end": 42
+            },
+            {
+                "name": "pipe_unix_exit",
+                "start": 44,
+                "end": 47
+            },
+            {
+                "name": "pipe_unix_send",
+                "start": 49,
+                "end": 52
+            },
+            {
+                "name": "pipe_unix_poll",
+                "start": 54,
+                "end": 107
+            }
+        ],
+        "src/libs/pipe_mem.c": [
+            {
+                "name": "pipe_mem_init",
+                "start": 26,
+                "end": 30
+            },
+            {
+                "name": "pipe_mem_send",
+                "start": 32,
+                "end": 36
+            },
+            {
+                "name": "pipe_mem_poll",
+                "start": 38,
+                "end": 41
+            },
+            {
+                "name": "pipe_mem_exit",
+                "start": 43,
+                "end": 47
+            }
+        ],
+        "src/libs/gamegui/seperatorv.c": [
+            {
+                "name": "gg_seperatorv_get_class_id",
+                "start": 35,
+                "end": 38
+            },
+            {
+                "name": "gg_seperatorv_render",
+                "start": 40,
+                "end": 50
+            },
+            {
+                "name": "gg_seperatorv_init",
+                "start": 52,
+                "end": 60
+            },
+            {
+                "name": "gg_seperatorv_create",
+                "start": 62,
+                "end": 69
+            }
+        ],
+        "src/libs/gamegui/signal.c": [
+            {
+                "name": "gg_signal_lookup",
+                "start": 37,
+                "end": 52
+            },
+            {
+                "name": "gg_signal_register",
+                "start": 54,
+                "end": 69
+            },
+            {
+                "name": "gg_signal_init",
+                "start": 71,
+                "end": 73
+            },
+            {
+                "name": "gg_signal_exit",
+                "start": 75,
+                "end": 78
+            }
+        ],
+        "src/libs/gamegui/widget.c": [
+            {
+                "name": "gg_widget_get_class_id",
+                "start": 31,
+                "end": 34
+            },
+            {
+                "name": "gg_widget_destroy",
+                "start": 36,
+                "end": 45
+            },
+            {
+                "name": "gg_set_requested_size",
+                "start": 47,
+                "end": 51
+            },
+            {
+                "name": "gg_widget_get_requested_size",
+                "start": 53,
+                "end": 71
+            },
+            {
+                "name": "gg_set_size",
+                "start": 73,
+                "end": 77
+            },
+            {
+                "name": "gg_get_focus_pos",
+                "start": 79,
+                "end": 89
+            },
+            {
+                "name": "gg_set_focus_pos",
+                "start": 91,
+                "end": 94
+            },
+            {
+                "name": "gg_widget_find_dialog",
+                "start": 96,
+                "end": 105
+            },
+            {
+                "name": "gg_widget_init",
+                "start": 107,
+                "end": 123
+            },
+            {
+                "name": "gg_widget_subscribe_signal",
+                "start": 125,
+                "end": 132
+            },
+            {
+                "name": "gg_widget_subscribe_signal_name",
+                "start": 134,
+                "end": 143
+            },
+            {
+                "name": "gg_widget_emit_signal",
+                "start": 145,
+                "end": 158
+            }
+        ],
+        "src/libs/gamegui/option.c": [
+            {
+                "name": "gg_option_get_class_id",
+                "start": 42,
+                "end": 45
+            },
+            {
+                "name": "gg_option_render",
+                "start": 51,
+                "end": 92
+            },
+            {
+                "name": "gg_option_input",
+                "start": 95,
+                "end": 137
+            },
+            {
+                "name": "gg_option_set_size",
+                "start": 139,
+                "end": 156
+            },
+            {
+                "name": "gg_option_init",
+                "start": 158,
+                "end": 169
+            },
+            {
+                "name": "gg_option_create",
+                "start": 179,
+                "end": 186
+            },
+            {
+                "name": "gg_option_append",
+                "start": 193,
+                "end": 223
+            },
+            {
+                "name": "gg_option_append_label",
+                "start": 225,
+                "end": 230
+            },
+            {
+                "name": "gg_option_get_selected",
+                "start": 237,
+                "end": 240
+            },
+            {
+                "name": "gg_option_set_selected",
+                "start": 242,
+                "end": 245
+            }
+        ],
+        "src/libs/gamegui/system.c": [
+            {
+                "name": "gg_register_class",
+                "start": 34,
+                "end": 41
+            },
+            {
+                "name": "gg_is_parent",
+                "start": 43,
+                "end": 54
+            },
+            {
+                "name": "gg_check_cast",
+                "start": 56,
+                "end": 71
+            },
+            {
+                "name": "gg_system_init",
+                "start": 73,
+                "end": 77
+            },
+            {
+                "name": "gg_system_exit",
+                "start": 83,
+                "end": 92
+            },
+            {
+                "name": "gg_system_get_ticks",
+                "start": 94,
+                "end": 97
+            },
+            {
+                "name": "gg_system_draw_rect",
+                "start": 99,
+                "end": 115
+            },
+            {
+                "name": "gg_system_draw_filled_rect",
+                "start": 117,
+                "end": 134
+            },
+            {
+                "name": "gg_system_draw_gradient_rect",
+                "start": 136,
+                "end": 156
+            },
+            {
+                "name": "gg_system_draw_image",
+                "start": 158,
+                "end": 209
+            },
+            {
+                "name": "gg_system_draw_char",
+                "start": 211,
+                "end": 214
+            },
+            {
+                "name": "gg_system_get_image_size",
+                "start": 216,
+                "end": 219
+            },
+            {
+                "name": "gg_system_get_char_size",
+                "start": 221,
+                "end": 224
+            },
+            {
+                "name": "gg_system_get_string_size",
+                "start": 226,
+                "end": 245
+            },
+            {
+                "name": "gg_system_draw_string",
+                "start": 247,
+                "end": 301
+            },
+            {
+                "name": "gg_colour",
+                "start": 303,
+                "end": 313
+            },
+            {
+                "name": "gg_rect",
+                "start": 315,
+                "end": 325
+            }
+        ],
+        "src/libs/gamegui/entry.c": [
+            {
+                "name": "gg_entry_get_class_id",
+                "start": 41,
+                "end": 43
+            },
+            {
+                "name": "string_width",
+                "start": 45,
+                "end": 54
+            },
+            {
+                "name": "gg_entry_render",
+                "start": 57,
+                "end": 105
+            },
+            {
+                "name": "gg_entry_input",
+                "start": 108,
+                "end": 208
+            },
+            {
+                "name": "gg_entry_init",
+                "start": 210,
+                "end": 225
+            },
+            {
+                "name": "gg_entry_get_text",
+                "start": 227,
+                "end": 230
+            },
+            {
+                "name": "gg_entry_set_text",
+                "start": 232,
+                "end": 239
+            },
+            {
+                "name": "gg_entry_set_max_len",
+                "start": 241,
+                "end": 244
+            },
+            {
+                "name": "gg_entry_create",
+                "start": 252,
+                "end": 259
+            }
+        ],
+        "src/libs/gamegui/align.c": [
+            {
+                "name": "gg_align_get_class_id",
+                "start": 23,
+                "end": 26
+            },
+            {
+                "name": "gg_align_init",
+                "start": 28,
+                "end": 35
+            },
+            {
+                "name": "gg_align_set_alignment",
+                "start": 37,
+                "end": 41
+            }
+        ],
+        "src/libs/gamegui/vbox.c": [
+            {
+                "name": "gg_vbox_get_class_id",
+                "start": 26,
+                "end": 29
+            },
+            {
+                "name": "gg_vbox_set_selected",
+                "start": 31,
+                "end": 35
+            },
+            {
+                "name": "gg_vbox_render",
+                "start": 37,
+                "end": 60
+            },
+            {
+                "name": "gg_vbox_input",
+                "start": 62,
+                "end": 123
+            },
+            {
+                "name": "gg_vbox_get_requested_size",
+                "start": 125,
+                "end": 152
+            },
+            {
+                "name": "gg_vbox_set_size",
+                "start": 154,
+                "end": 168
+            },
+            {
+                "name": "gg_vbox_get_focus_pos",
+                "start": 170,
+                "end": 194
+            },
+            {
+                "name": "gg_vbox_set_focus_pos",
+                "start": 196,
+                "end": 224
+            },
+            {
+                "name": "gg_vbox_init",
+                "start": 226,
+                "end": 237
+            },
+            {
+                "name": "gg_vbox_create",
+                "start": 245,
+                "end": 252
+            }
+        ],
+        "src/libs/gamegui/image.c": [
+            {
+                "name": "gg_image_get_class_id",
+                "start": 35,
+                "end": 38
+            },
+            {
+                "name": "gg_image_render",
+                "start": 41,
+                "end": 72
+            },
+            {
+                "name": "gg_image_init",
+                "start": 74,
+                "end": 83
+            },
+            {
+                "name": "gg_image_create",
+                "start": 86,
+                "end": 93
+            }
+        ],
+        "src/libs/gamegui/box.c": [
+            {
+                "name": "gg_box_get_class_id",
+                "start": 23,
+                "end": 26
+            },
+            {
+                "name": "gg_box_init",
+                "start": 28,
+                "end": 34
+            }
+        ],
+        "src/libs/gamegui/clipping.c": [
+            {
+                "name": "gg_clipping_rect",
+                "start": 35,
+                "end": 52
+            },
+            {
+                "name": "gg_clipping_get",
+                "start": 56,
+                "end": 62
+            },
+            {
+                "name": "gg_clipping_adjust",
+                "start": 64,
+                "end": 80
+            },
+            {
+                "name": "gg_clipping_undo",
+                "start": 82,
+                "end": 91
+            }
+        ],
+        "src/libs/gamegui/label.c": [
+            {
+                "name": "gg_label_get_class_id",
+                "start": 45,
+                "end": 48
+            },
+            {
+                "name": "gg_label_render",
+                "start": 51,
+                "end": 68
+            },
+            {
+                "name": "gg_label_set_bouncy",
+                "start": 70,
+                "end": 73
+            },
+            {
+                "name": "gg_label_set_colour",
+                "start": 75,
+                "end": 82
+            },
+            {
+                "name": "gg_label_destroy",
+                "start": 88,
+                "end": 96
+            },
+            {
+                "name": "gg_label_init",
+                "start": 98,
+                "end": 112
+            },
+            {
+                "name": "gg_label_create",
+                "start": 122,
+                "end": 129
+            }
+        ],
+        "src/libs/gamegui/dialog.c": [
+            {
+                "name": "gg_dialog_get_class_id",
+                "start": 64,
+                "end": 67
+            },
+            {
+                "name": "gg_dialog_cleanup",
+                "start": 72,
+                "end": 80
+            },
+            {
+                "name": "gg_dialog_open",
+                "start": 85,
+                "end": 91
+            },
+            {
+                "name": "gg_dialog_cls",
+                "start": 93,
+                "end": 100
+            },
+            {
+                "name": "gg_dialog_close",
+                "start": 103,
+                "end": 107
+            },
+            {
+                "name": "gg_dialog_close_all",
+                "start": 109,
+                "end": 113
+            },
+            {
+                "name": "gg_dialog_get_active",
+                "start": 120,
+                "end": 123
+            },
+            {
+                "name": "gg_dialog_set_active",
+                "start": 125,
+                "end": 129
+            },
+            {
+                "name": "gg_dialog_get_screen_pos",
+                "start": 131,
+                "end": 135
+            },
+            {
+                "name": "draw_border",
+                "start": 137,
+                "end": 228
+            },
+            {
+                "name": "gg_dialog_render",
+                "start": 238,
+                "end": 280
+            },
+            {
+                "name": "gg_dialog_input",
+                "start": 282,
+                "end": 384
+            },
+            {
+                "name": "gg_dialog_input_current",
+                "start": 386,
+                "end": 394
+            },
+            {
+                "name": "gg_dialog_set_modal",
+                "start": 396,
+                "end": 399
+            },
+            {
+                "name": "gg_dialog_show",
+                "start": 401,
+                "end": 404
+            },
+            {
+                "name": "gg_dialog_hide",
+                "start": 406,
+                "end": 409
+            },
+            {
+                "name": "gg_dialog_set_position",
+                "start": 411,
+                "end": 417
+            },
+            {
+                "name": "gg_dialog_init",
+                "start": 419,
+                "end": 443
+            },
+            {
+                "name": "gg_dialog_create",
+                "start": 451,
+                "end": 459
+            },
+            {
+                "name": "gg_dialog_destroy",
+                "start": 461,
+                "end": 469
+            },
+            {
+                "name": "gg_dialog_set_style",
+                "start": 471,
+                "end": 491
+            },
+            {
+                "name": "gg_dialog_render_all",
+                "start": 493,
+                "end": 500
+            }
+        ],
+        "src/libs/gamegui/seperatorh.c": [
+            {
+                "name": "gg_seperatorh_get_class_id",
+                "start": 35,
+                "end": 38
+            },
+            {
+                "name": "gg_seperatorh_render",
+                "start": 40,
+                "end": 51
+            },
+            {
+                "name": "gg_seperatorh_init",
+                "start": 53,
+                "end": 61
+            },
+            {
+                "name": "gg_seperatorh_create",
+                "start": 63,
+                "end": 70
+            }
+        ],
+        "src/libs/gamegui/frame.c": [
+            {
+                "name": "gg_frame_get_class_id",
+                "start": 36,
+                "end": 39
+            },
+            {
+                "name": "gg_frame_render",
+                "start": 41,
+                "end": 56
+            },
+            {
+                "name": "gg_frame_get_focus_pos",
+                "start": 58,
+                "end": 66
+            },
+            {
+                "name": "gg_frame_set_focus_pos",
+                "start": 68,
+                "end": 74
+            },
+            {
+                "name": "gg_frame_input",
+                "start": 76,
+                "end": 84
+            },
+            {
+                "name": "gg_frame_init",
+                "start": 86,
+                "end": 100
+            },
+            {
+                "name": "gg_frame_create",
+                "start": 102,
+                "end": 109
+            }
+        ],
+        "src/libs/gamegui/viewport.c": [
+            {
+                "name": "scroll_to_focus_pos",
+                "start": 26,
+                "end": 47
+            },
+            {
+                "name": "gg_viewport_get_class_id",
+                "start": 49,
+                "end": 52
+            },
+            {
+                "name": "gg_viewport_render",
+                "start": 55,
+                "end": 71
+            },
+            {
+                "name": "gg_viewport_set_scroll_xpos",
+                "start": 73,
+                "end": 79
+            },
+            {
+                "name": "gg_viewport_set_scroll_ypos",
+                "start": 81,
+                "end": 87
+            },
+            {
+                "name": "gg_viewport_set_size",
+                "start": 89,
+                "end": 109
+            },
+            {
+                "name": "gg_viewport_get_focus_pos",
+                "start": 111,
+                "end": 123
+            },
+            {
+                "name": "gg_viewport_set_focus_pos",
+                "start": 125,
+                "end": 133
+            },
+            {
+                "name": "gg_viewport_input",
+                "start": 135,
+                "end": 155
+            },
+            {
+                "name": "gg_viewport_init",
+                "start": 157,
+                "end": 171
+            },
+            {
+                "name": "gg_viewport_create",
+                "start": 173,
+                "end": 180
+            }
+        ],
+        "src/libs/gamegui/container.c": [
+            {
+                "name": "list_create",
+                "start": 25,
+                "end": 33
+            },
+            {
+                "name": "list_append_item",
+                "start": 35,
+                "end": 39
+            },
+            {
+                "name": "list_get_size",
+                "start": 41,
+                "end": 44
+            },
+            {
+                "name": "list_get_item",
+                "start": 46,
+                "end": 52
+            },
+            {
+                "name": "list_destroy",
+                "start": 54,
+                "end": 59
+            },
+            {
+                "name": "gg_container_get_class_id",
+                "start": 61,
+                "end": 64
+            },
+            {
+                "name": "gg_container_destroy",
+                "start": 66,
+                "end": 79
+            },
+            {
+                "name": "gg_container_init",
+                "start": 81,
+                "end": 88
+            },
+            {
+                "name": "gg_container_append",
+                "start": 90,
+                "end": 97
+            },
+            {
+                "name": "gg_container_get_size",
+                "start": 99,
+                "end": 102
+            },
+            {
+                "name": "gg_container_get_child",
+                "start": 104,
+                "end": 107
+            }
+        ],
+        "src/libs/gamegui/select.c": [
+            {
+                "name": "gg_select_get_class_id",
+                "start": 23,
+                "end": 26
+            },
+            {
+                "name": "gg_select_init",
+                "start": 28,
+                "end": 34
+            },
+            {
+                "name": "gg_select_prev",
+                "start": 36,
+                "end": 58
+            },
+            {
+                "name": "gg_select_next",
+                "start": 60,
+                "end": 83
+            }
+        ],
+        "src/libs/gamegui/bin.c": [
+            {
+                "name": "gg_bin_get_class_id",
+                "start": 23,
+                "end": 26
+            },
+            {
+                "name": "gg_bin_get_child",
+                "start": 28,
+                "end": 31
+            },
+            {
+                "name": "gg_bin_set_size",
+                "start": 33,
+                "end": 41
+            },
+            {
+                "name": "gg_bin_set_focus_pos",
+                "start": 43,
+                "end": 51
+            },
+            {
+                "name": "gg_bin_input",
+                "start": 53,
+                "end": 61
+            },
+            {
+                "name": "gg_bin_init",
+                "start": 63,
+                "end": 73
+            }
+        ],
+        "src/libs/gamegui/action.c": [
+            {
+                "name": "gg_action_get_class_id",
+                "start": 26,
+                "end": 29
+            },
+            {
+                "name": "gg_action_render",
+                "start": 32,
+                "end": 40
+            },
+            {
+                "name": "gg_action_input",
+                "start": 43,
+                "end": 57
+            },
+            {
+                "name": "gg_action_init",
+                "start": 59,
+                "end": 72
+            },
+            {
+                "name": "gg_action_create",
+                "start": 82,
+                "end": 89
+            },
+            {
+                "name": "gg_action_create_with_label",
+                "start": 91,
+                "end": 100
+            }
+        ],
+        "src/libs/gamegui/hbox.c": [
+            {
+                "name": "gg_hbox_get_class_id",
+                "start": 26,
+                "end": 29
+            },
+            {
+                "name": "gg_hbox_render",
+                "start": 31,
+                "end": 53
+            },
+            {
+                "name": "gg_hbox_input",
+                "start": 55,
+                "end": 115
+            },
+            {
+                "name": "gg_hbox_get_requested_size",
+                "start": 117,
+                "end": 144
+            },
+            {
+                "name": "gg_hbox_set_size",
+                "start": 146,
+                "end": 160
+            },
+            {
+                "name": "gg_hbox_get_focus_pos",
+                "start": 162,
+                "end": 184
+            },
+            {
+                "name": "gg_hbox_set_focus_pos",
+                "start": 186,
+                "end": 213
+            },
+            {
+                "name": "gg_hbox_init",
+                "start": 215,
+                "end": 226
+            },
+            {
+                "name": "gg_hbox_create",
+                "start": 234,
+                "end": 241
+            }
+        ],
+        "src/libs/minizip/zip.c": [
+            {
+                "name": "allocate_new_datablock",
+                "start": 161,
+                "end": 173
+            },
+            {
+                "name": "free_datablock",
+                "start": 175,
+                "end": 184
+            },
+            {
+                "name": "init_linkedlist",
+                "start": 186,
+                "end": 190
+            },
+            {
+                "name": "free_linkedlist",
+                "start": 192,
+                "end": 197
+            },
+            {
+                "name": "add_data_in_datablock",
+                "start": 200,
+                "end": 252
+            },
+            {
+                "name": "ziplocal_putValue",
+                "start": 266,
+                "end": 291
+            },
+            {
+                "name": "ziplocal_putValue_inmemory",
+                "start": 294,
+                "end": 313
+            },
+            {
+                "name": "ziplocal_TmzDateToDosDate",
+                "start": 318,
+                "end": 330
+            },
+            {
+                "name": "ziplocal_getByte",
+                "start": 340,
+                "end": 359
+            },
+            {
+                "name": "ziplocal_getShort",
+                "start": 370,
+                "end": 391
+            },
+            {
+                "name": "ziplocal_getLong",
+                "start": 398,
+                "end": 427
+            },
+            {
+                "name": "ziplocal_SearchCentralDir",
+                "start": 440,
+                "end": 495
+            },
+            {
+                "name": "zipOpen",
+                "start": 683,
+                "end": 688
+            },
+            {
+                "name": "zipFlushWriteBuffer",
+                "start": 944,
+                "end": 964
+            }
+        ],
+        "src/libs/minizip/unzip.c": [
+            {
+                "name": "unzlocal_getByte",
+                "start": 171,
+                "end": 190
+            },
+            {
+                "name": "unzlocal_getShort",
+                "start": 201,
+                "end": 222
+            },
+            {
+                "name": "unzlocal_getLong",
+                "start": 229,
+                "end": 258
+            },
+            {
+                "name": "strcmpcasenosensitive_internal",
+                "start": 262,
+                "end": 283
+            },
+            {
+                "name": "unzStringFileNameCompare",
+                "start": 305,
+                "end": 317
+            },
+            {
+                "name": "unzlocal_SearchCentralDir",
+                "start": 331,
+                "end": 386
+            },
+            {
+                "name": "unzOpen",
+                "start": 500,
+                "end": 504
+            },
+            {
+                "name": "unzlocal_CheckCurrentFileCoherencyHeader",
+                "start": 957,
+                "end": 1041
+            }
+        ],
+        "src/dreamer/board.h": [
+            {
+                "name": "find_black_piece",
+                "start": 234,
+                "end": 235
+            },
+            {
+                "name": "find_white_piece",
+                "start": 245,
+                "end": 246
+            },
+            {
+                "name": "board_init",
+                "start": 256,
+                "end": 257
+            },
+            {
+                "name": "clear_board",
+                "start": 263,
+                "end": 264
+            },
+            {
+                "name": "setup_board",
+                "start": 270,
+                "end": 271
+            },
+            {
+                "name": "execute_move",
+                "start": 277,
+                "end": 278
+            },
+            {
+                "name": "unmake_move",
+                "start": 285,
+                "end": 287
+            }
+        ],
+        "src/dreamer/move.h": [
+            {
+                "name": "move_init",
+                "start": 43,
+                "end": 44
+            },
+            {
+                "name": "move_exit",
+                "start": 46,
+                "end": 47
+            },
+            {
+                "name": "compute_legal_moves",
+                "start": 49,
+                "end": 50
+            }
+        ],
+        "src/dreamer/repetition.c": [
+            {
+                "name": "repetition_init",
+                "start": 38,
+                "end": 45
+            },
+            {
+                "name": "repetition_exit",
+                "start": 47,
+                "end": 50
+            },
+            {
+                "name": "repetition_add",
+                "start": 52,
+                "end": 64
+            },
+            {
+                "name": "repetition_remove",
+                "start": 66,
+                "end": 75
+            },
+            {
+                "name": "is_repetition",
+                "start": 77,
+                "end": 96
+            },
+            {
+                "name": "is_draw",
+                "start": 98,
+                "end": 120
+            }
+        ],
+        "src/dreamer/search.h": [
+            {
+                "name": "find_best_move",
+                "start": 35,
+                "end": 36
+            }
+        ],
+        "src/dreamer/eval.h": [
+            {
+                "name": "board_eval_quick",
+                "start": 38,
+                "end": 39
+            },
+            {
+                "name": "board_eval_complete",
+                "start": 41,
+                "end": 42
+            }
+        ],
+        "src/dreamer/history.h": [
+            {
+                "name": "sort_moves",
+                "start": 26,
+                "end": 27
+            },
+            {
+                "name": "add_count",
+                "start": 29,
+                "end": 30
+            },
+            {
+                "name": "forget_history",
+                "start": 32,
+                "end": 33
+            }
+        ],
+        "src/dreamer/transposition.h": [
+            {
+                "name": "store_board",
+                "start": 31,
+                "end": 33
+            },
+            {
+                "name": "lookup_board",
+                "start": 35,
+                "end": 36
+            },
+            {
+                "name": "clear_table",
+                "start": 38,
+                "end": 39
+            }
+        ],
+        "src/dreamer/hashing.h": [
+            {
+                "name": "random_init_64",
+                "start": 32,
+                "end": 33
+            },
+            {
+                "name": "random_rand_64",
+                "start": 35,
+                "end": 36
+            },
+            {
+                "name": "init_hash",
+                "start": 38,
+                "end": 39
+            },
+            {
+                "name": "hash_key",
+                "start": 41,
+                "end": 42
+            }
+        ],
+        "src/dreamer/search.c": [
+            {
+                "name": "alpha_beta",
+                "start": 40,
+                "end": 41
+            },
+            {
+                "name": "is_check",
+                "start": 43,
+                "end": 44
+            },
+            {
+                "name": "poll_abort",
+                "start": 46,
+                "end": 53
+            },
+            {
+                "name": "quiescence",
+                "start": 55,
+                "end": 155
+            },
+            {
+                "name": "alpha_beta",
+                "start": 157,
+                "end": 289
+            },
+            {
+                "name": "find_best_move",
+                "start": 291,
+                "end": 384
+            }
+        ],
+        "src/dreamer/eval.c": [
+            {
+                "name": "min",
+                "start": 29,
+                "end": 36
+            },
+            {
+                "name": "max",
+                "start": 38,
+                "end": 45
+            },
+            {
+                "name": "eval_king_tropism",
+                "start": 47,
+                "end": 115
+            },
+            {
+                "name": "eval_rook_bonus",
+                "start": 117,
+                "end": 180
+            },
+            {
+                "name": "eval_development",
+                "start": 182,
+                "end": 305
+            },
+            {
+                "name": "eval_bad_bishops",
+                "start": 307,
+                "end": 337
+            },
+            {
+                "name": "eval_pawn_structure",
+                "start": 339,
+                "end": 383
+            },
+            {
+                "name": "analyze_pawn_structure",
+                "start": 385,
+                "end": 518
+            },
+            {
+                "name": "board_eval_material",
+                "start": 520,
+                "end": 559
+            },
+            {
+                "name": "board_eval_quick",
+                "start": 561,
+                "end": 568
+            },
+            {
+                "name": "board_eval_complete",
+                "start": 570,
+                "end": 593
+            }
+        ],
+        "src/dreamer/dreamer.c": [
+            {
+                "name": "drm_sleep",
+                "start": 62,
+                "end": 69
+            },
+            {
+                "name": "my_turn",
+                "start": 76,
+                "end": 82
+            },
+            {
+                "name": "is_check",
+                "start": 84,
+                "end": 96
+            },
+            {
+                "name": "check_game_state",
+                "start": 98,
+                "end": 129
+            },
+            {
+                "name": "get_option",
+                "start": 131,
+                "end": 134
+            },
+            {
+                "name": "set_option",
+                "start": 136,
+                "end": 140
+            },
+            {
+                "name": "check_game_end",
+                "start": 142,
+                "end": 174
+            },
+            {
+                "name": "check_abort",
+                "start": 176,
+                "end": 182
+            },
+            {
+                "name": "do_move",
+                "start": 184,
+                "end": 199
+            },
+            {
+                "name": "undo_move",
+                "start": 201,
+                "end": 215
+            },
+            {
+                "name": "engine",
+                "start": 217,
+                "end": 255
+            }
+        ],
+        "src/dreamer/history.c": [
+            {
+                "name": "move_compare",
+                "start": 32,
+                "end": 40
+            },
+            {
+                "name": "sort_moves",
+                "start": 42,
+                "end": 47
+            },
+            {
+                "name": "add_count",
+                "start": 49,
+                "end": 53
+            },
+            {
+                "name": "forget_history",
+                "start": 55,
+                "end": 63
+            }
+        ],
+        "src/dreamer/board.c": [
+            {
+                "name": "add_piece",
+                "start": 38,
+                "end": 53
+            },
+            {
+                "name": "remove_piece",
+                "start": 55,
+                "end": 71
+            },
+            {
+                "name": "setup_board",
+                "start": 73,
+                "end": 114
+            },
+            {
+                "name": "setup_board_fen",
+                "start": 116,
+                "end": 257
+            },
+            {
+                "name": "board_init",
+                "start": 259,
+                "end": 264
+            },
+            {
+                "name": "clear_board",
+                "start": 266,
+                "end": 277
+            },
+            {
+                "name": "find_black_piece",
+                "start": 279,
+                "end": 303
+            },
+            {
+                "name": "find_white_piece",
+                "start": 305,
+                "end": 329
+            },
+            {
+                "name": "execute_move",
+                "start": 331,
+                "end": 617
+            },
+            {
+                "name": "unmake_move",
+                "start": 619,
+                "end": 799
+            }
+        ],
+        "src/dreamer/e_comm.c": [
+            {
+                "name": "e_comm_send",
+                "start": 27,
+                "end": 56
+            }
+        ],
+        "src/dreamer/hashing.c": [
+            {
+                "name": "random_init_64",
+                "start": 30,
+                "end": 34
+            },
+            {
+                "name": "random_rand_64",
+                "start": 36,
+                "end": 44
+            },
+            {
+                "name": "init_hash",
+                "start": 46,
+                "end": 58
+            },
+            {
+                "name": "hash_key",
+                "start": 60,
+                "end": 102
+            }
+        ],
+        "src/dreamer/gen_chess_moves.c": [
+            {
+                "name": "is_valid",
+                "start": 33,
+                "end": 37
+            },
+            {
+                "name": "main",
+                "start": 147,
+                "end": 167
+            }
+        ],
+        "src/dreamer/transposition.c": [
+            {
+                "name": "store_board",
+                "start": 42,
+                "end": 63
+            },
+            {
+                "name": "lookup_board",
+                "start": 65,
+                "end": 88
+            },
+            {
+                "name": "clear_table",
+                "start": 90,
+                "end": 98
+            }
+        ],
+        "src/dreamer/move.c": [
+            {
+                "name": "add_black_rook_moves",
+                "start": 338,
+                "end": 339
+            },
+            {
+                "name": "add_white_rook_moves",
+                "start": 340,
+                "end": 341
+            },
+            {
+                "name": "add_black_bishop_moves",
+                "start": 342,
+                "end": 343
+            },
+            {
+                "name": "add_white_bishop_moves",
+                "start": 344,
+                "end": 345
+            },
+            {
+                "name": "add_white_queen_moves",
+                "start": 346,
+                "end": 347
+            },
+            {
+                "name": "add_black_queen_moves",
+                "start": 348,
+                "end": 349
+            },
+            {
+                "name": "add_white_knight_moves",
+                "start": 350,
+                "end": 351
+            },
+            {
+                "name": "add_black_knight_moves",
+                "start": 352,
+                "end": 353
+            },
+            {
+                "name": "add_white_king_moves",
+                "start": 354,
+                "end": 355
+            },
+            {
+                "name": "add_black_king_moves",
+                "start": 356,
+                "end": 357
+            },
+            {
+                "name": "add_white_pawn_moves",
+                "start": 358,
+                "end": 359
+            },
+            {
+                "name": "add_black_pawn_moves",
+                "start": 360,
+                "end": 361
+            },
+            {
+                "name": "add_white_castle_moves",
+                "start": 363,
+                "end": 395
+            },
+            {
+                "name": "add_black_castle_moves",
+                "start": 397,
+                "end": 429
+            },
+            {
+                "name": "compute_legal_moves",
+                "start": 431,
+                "end": 509
+            },
+            {
+                "name": "move_init",
+                "start": 511,
+                "end": 521
+            },
+            {
+                "name": "free_moves_ray",
+                "start": 523,
+                "end": 540
+            },
+            {
+                "name": "free_moves_single",
+                "start": 542,
+                "end": 553
+            },
+            {
+                "name": "move_exit",
+                "start": 555,
+                "end": 565
+            }
+        ],
+        "src/dreamer/commands.c": [
+            {
+                "name": "is_check",
+                "start": 32,
+                "end": 44
+            },
+            {
+                "name": "is_coord_move",
+                "start": 46,
+                "end": 71
+            },
+            {
+                "name": "get_coord_move",
+                "start": 73,
+                "end": 147
+            },
+            {
+                "name": "coord_move_str",
+                "start": 149,
+                "end": 175
+            },
+            {
+                "name": "error",
+                "start": 177,
+                "end": 180
+            },
+            {
+                "name": "coord_usermove",
+                "start": 186,
+                "end": 206
+            },
+            {
+                "name": "command_handle",
+                "start": 208,
+                "end": 412
+            },
+            {
+                "name": "command_check_abort",
+                "start": 414,
+                "end": 434
+            }
+        ],
+        "src/dreamer/main.c": [
+            {
+                "name": "main",
+                "start": 23,
+                "end": 26
+            }
+        ],
+        "src/gamegui_dialogs/quit_dialog.c": [
+            {
+                "name": "dialog_quit_ok",
+                "start": 27,
+                "end": 34
+            },
+            {
+                "name": "dialog_close_cb",
+                "start": 36,
+                "end": 40
+            },
+            {
+                "name": "dialog_quit_create",
+                "start": 49,
+                "end": 74
+            }
+        ],
+        "src/gamegui_dialogs/message_dialog.c": [
+            {
+                "name": "dialog_close_cb",
+                "start": 23,
+                "end": 27
+            },
+            {
+                "name": "dialog_message_create",
+                "start": 29,
+                "end": 48
+            },
+            {
+                "name": "show_message_dialog",
+                "start": 50,
+                "end": 53
+            },
+            {
+                "name": "dialog_engine_error_create",
+                "start": 55,
+                "end": 73
+            }
+        ],
+        "src/gamegui_dialogs/ingame_dialog.c": [
+            {
+                "name": "retract_move",
+                "start": 27,
+                "end": 32
+            },
+            {
+                "name": "move_now",
+                "start": 34,
+                "end": 39
+            },
+            {
+                "name": "view_prev",
+                "start": 41,
+                "end": 46
+            },
+            {
+                "name": "view_next",
+                "start": 48,
+                "end": 53
+            },
+            {
+                "name": "dialog_close_cb",
+                "start": 55,
+                "end": 59
+            },
+            {
+                "name": "dialog_ingame_create",
+                "start": 65,
+                "end": 98
+            }
+        ],
+        "src/gamegui_dialogs/configuration.c": [
+            {
+                "name": "dialog_close_cb",
+                "start": 32,
+                "end": 40
+            },
+            {
+                "name": "dialog_title_theme",
+                "start": 42,
+                "end": 47
+            },
+            {
+                "name": "dialog_title_music_vol",
+                "start": 49,
+                "end": 57
+            },
+            {
+                "name": "dialog_title_sound_vol",
+                "start": 59,
+                "end": 68
+            },
+            {
+                "name": "dialog_title_resolution_load",
+                "start": 70,
+                "end": 74
+            },
+            {
+                "name": "create_option_values",
+                "start": 76,
+                "end": 85
+            },
+            {
+                "name": "dialog_systemopts_create",
+                "start": 87,
+                "end": 159
+            }
+        ],
+        "src/gamegui_dialogs/system_dialog.c": [
+            {
+                "name": "dialog_close_cb",
+                "start": 25,
+                "end": 29
+            },
+            {
+                "name": "dialog_quit_open",
+                "start": 38,
+                "end": 42
+            },
+            {
+                "name": "dialog_ingame_open",
+                "start": 45,
+                "end": 49
+            },
+            {
+                "name": "dialog_savegame_open",
+                "start": 51,
+                "end": 55
+            },
+            {
+                "name": "dialog_system_create",
+                "start": 61,
+                "end": 91
+            }
+        ],
+        "src/gamegui_dialogs/styles.c": [
+            {
+                "name": "get_ingame_style",
+                "start": 25,
+                "end": 28
+            },
+            {
+                "name": "get_menu_style",
+                "start": 30,
+                "end": 33
+            }
+        ],
+        "src/gamegui_dialogs/resolution.c": [
+            {
+                "name": "dialog_close_cb",
+                "start": 30,
+                "end": 34
+            },
+            {
+                "name": "dialog_error_create",
+                "start": 36,
+                "end": 55
+            },
+            {
+                "name": "create_option_values",
+                "start": 57,
+                "end": 66
+            },
+            {
+                "name": "dialog_cancel_cb",
+                "start": 68,
+                "end": 77
+            },
+            {
+                "name": "dialog_ok_cb",
+                "start": 79,
+                "end": 119
+            },
+            {
+                "name": "resolution_changed",
+                "start": 121,
+                "end": 144
+            },
+            {
+                "name": "fs_changed",
+                "start": 146,
+                "end": 153
+            },
+            {
+                "name": "multisampling_changed",
+                "start": 155,
+                "end": 162
+            },
+            {
+                "name": "dialog_resolution_create",
+                "start": 164,
+                "end": 256
+            }
+        ]
+    }
+}

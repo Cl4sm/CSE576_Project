@@ -1,0 +1,2960 @@
+{
+    "jfsutils-1.1.15": {
+        "tune/tune.c": [
+            {
+                "name": "tune_usage",
+                "start": 51,
+                "end": 61
+            },
+            {
+                "name": "parse_journal_opts",
+                "start": 73,
+                "end": 114
+            },
+            {
+                "name": "parse_tune_options",
+                "start": 129,
+                "end": 180
+            },
+            {
+                "name": "main",
+                "start": 195,
+                "end": 453
+            }
+        ],
+        "tune/super.c": [
+            {
+                "name": "build_flag_string",
+                "start": 38,
+                "end": 85
+            },
+            {
+                "name": "display_super",
+                "start": 112,
+                "end": 168
+            },
+            {
+                "name": "display_logsuper",
+                "start": 193,
+                "end": 248
+            }
+        ],
+        "libfs/utilsubs.h": [
+            {
+                "name": "fopen_excl",
+                "start": 35,
+                "end": 44
+            }
+        ],
+        "libfs/super.c": [
+            {
+                "name": "inrange",
+                "start": 52,
+                "end": 62
+            },
+            {
+                "name": "validate_sizes",
+                "start": 87,
+                "end": 97
+            },
+            {
+                "name": "ujfs_validate_super",
+                "start": 121,
+                "end": 132
+            },
+            {
+                "name": "ujfs_put_superblk",
+                "start": 163,
+                "end": 178
+            },
+            {
+                "name": "ujfs_get_superblk",
+                "start": 206,
+                "end": 222
+            },
+            {
+                "name": "ujfs_validate_logsuper",
+                "start": 246,
+                "end": 258
+            },
+            {
+                "name": "ujfs_put_logsuper",
+                "start": 283,
+                "end": 296
+            },
+            {
+                "name": "ujfs_get_logsuper",
+                "start": 321,
+                "end": 335
+            }
+        ],
+        "libfs/log_work.c": [
+            {
+                "name": "deleteCommit",
+                "start": 380,
+                "end": 408
+            },
+            {
+                "name": "doAfter",
+                "start": 570,
+                "end": 674
+            },
+            {
+                "name": "doCommit",
+                "start": 683,
+                "end": 700
+            },
+            {
+                "name": "doExtDtPg",
+                "start": 710,
+                "end": 734
+            },
+            {
+                "name": "doNoRedoFile",
+                "start": 743,
+                "end": 812
+            },
+            {
+                "name": "doNoRedoPage",
+                "start": 833,
+                "end": 998
+            },
+            {
+                "name": "doNoRedoInoExt",
+                "start": 1040,
+                "end": 1172
+            },
+            {
+                "name": "doUpdateMap",
+                "start": 1264,
+                "end": 1348
+            },
+            {
+                "name": "dtpg_resetFreeList",
+                "start": 1360,
+                "end": 1513
+            },
+            {
+                "name": "dtrt_resetFreeList",
+                "start": 1523,
+                "end": 1640
+            },
+            {
+                "name": "findCommit",
+                "start": 1651,
+                "end": 1661
+            },
+            {
+                "name": "findPageRedo",
+                "start": 1676,
+                "end": 1741
+            },
+            {
+                "name": "logredoInit",
+                "start": 1750,
+                "end": 1849
+            },
+            {
+                "name": "markBmap",
+                "start": 1871,
+                "end": 1981
+            },
+            {
+                "name": "markImap",
+                "start": 2004,
+                "end": 2047
+            },
+            {
+                "name": "saveExtDtPg",
+                "start": 2057,
+                "end": 2095
+            },
+            {
+                "name": "updatePage",
+                "start": 2387,
+                "end": 3177
+            }
+        ],
+        "libfs/jfs_endian.h": [
+            {
+                "name": "ujfs_swap_inoext",
+                "start": 47,
+                "end": 52
+            }
+        ],
+        "libfs/open_by_label.c": [
+            {
+                "name": "open_check_label",
+                "start": 43,
+                "end": 94
+            },
+            {
+                "name": "walk_dir",
+                "start": 111,
+                "end": 148
+            },
+            {
+                "name": "open_by_label",
+                "start": 167,
+                "end": 302
+            }
+        ],
+        "libfs/utilsubs.c": [
+            {
+                "name": "log2shift",
+                "start": 29,
+                "end": 43
+            },
+            {
+                "name": "prompt",
+                "start": 52,
+                "end": 63
+            },
+            {
+                "name": "more",
+                "start": 68,
+                "end": 82
+            }
+        ],
+        "libfs/message.c": [
+            {
+                "name": "message_user",
+                "start": 46,
+                "end": 638
+            }
+        ],
+        "libfs/logform.c": [
+            {
+                "name": "jfs_logform",
+                "start": 43,
+                "end": 296
+            }
+        ],
+        "libfs/log_dump.c": [
+            {
+                "name": "jfs_logdump",
+                "start": 198,
+                "end": 515
+            },
+            {
+                "name": "ldmp_readSuper",
+                "start": 527,
+                "end": 579
+            },
+            {
+                "name": "ldmp_logError",
+                "start": 589,
+                "end": 627
+            },
+            {
+                "name": "ldmp_xdump",
+                "start": 635,
+                "end": 693
+            },
+            {
+                "name": "ldmp_x_scmp",
+                "start": 700,
+                "end": 710
+            },
+            {
+                "name": "ldmp_x_scpy",
+                "start": 717,
+                "end": 723
+            },
+            {
+                "name": "disp_noredopage",
+                "start": 739,
+                "end": 805
+            },
+            {
+                "name": "disp_noredoinoext",
+                "start": 821,
+                "end": 834
+            },
+            {
+                "name": "disp_redopage",
+                "start": 850,
+                "end": 914
+            },
+            {
+                "name": "disp_updatemap",
+                "start": 930,
+                "end": 984
+            },
+            {
+                "name": "open_outfile",
+                "start": 1000,
+                "end": 1014
+            }
+        ],
+        "libfs/fssubs.c": [
+            {
+                "name": "Is_Root_Mounted_RO",
+                "start": 69,
+                "end": 86
+            }
+        ],
+        "libfs/log_map.c": [
+            {
+                "name": "initMaps",
+                "start": 238,
+                "end": 284
+            },
+            {
+                "name": "bMapInit",
+                "start": 333,
+                "end": 504
+            },
+            {
+                "name": "bMapRead",
+                "start": 515,
+                "end": 533
+            },
+            {
+                "name": "bMapWrite",
+                "start": 544,
+                "end": 563
+            },
+            {
+                "name": "dMapGet",
+                "start": 585,
+                "end": 623
+            },
+            {
+                "name": "iMapInit",
+                "start": 652,
+                "end": 793
+            },
+            {
+                "name": "iMapRead",
+                "start": 804,
+                "end": 822
+            },
+            {
+                "name": "iMapWrite",
+                "start": 833,
+                "end": 852
+            },
+            {
+                "name": "iagGet",
+                "start": 865,
+                "end": 908
+            },
+            {
+                "name": "updateMaps",
+                "start": 918,
+                "end": 968
+            },
+            {
+                "name": "writeImap",
+                "start": 978,
+                "end": 1167
+            },
+            {
+                "name": "updateImapPage",
+                "start": 1176,
+                "end": 1241
+            },
+            {
+                "name": "writeBmap",
+                "start": 1250,
+                "end": 1599
+            },
+            {
+                "name": "updDmapPage",
+                "start": 1608,
+                "end": 1660
+            },
+            {
+                "name": "rXtree",
+                "start": 1670,
+                "end": 1712
+            },
+            {
+                "name": "adjTree",
+                "start": 1741,
+                "end": 1816
+            },
+            {
+                "name": "maxBud",
+                "start": 1829,
+                "end": 1848
+            },
+            {
+                "name": "bread",
+                "start": 1859,
+                "end": 1964
+            }
+        ],
+        "libfs/devices.c": [
+            {
+                "name": "ujfs_device_is_valid",
+                "start": 77,
+                "end": 101
+            },
+            {
+                "name": "ujfs_get_dev_size",
+                "start": 123,
+                "end": 369
+            },
+            {
+                "name": "ujfs_rw_diskblocks",
+                "start": 399,
+                "end": 456
+            },
+            {
+                "name": "ujfs_flush_dev",
+                "start": 460,
+                "end": 473
+            }
+        ],
+        "libfs/diskmap.c": [
+            {
+                "name": "ujfs_maxbuddy",
+                "start": 70,
+                "end": 94
+            },
+            {
+                "name": "ujfs_adjtree",
+                "start": 119,
+                "end": 183
+            },
+            {
+                "name": "ujfs_complete_dmap",
+                "start": 197,
+                "end": 230
+            },
+            {
+                "name": "ujfs_idmap_page",
+                "start": 247,
+                "end": 278
+            },
+            {
+                "name": "ujfs_getagl2size",
+                "start": 291,
+                "end": 314
+            }
+        ],
+        "libfs/inode.c": [
+            {
+                "name": "ujfs_rwinode",
+                "start": 69,
+                "end": 186
+            },
+            {
+                "name": "ujfs_rwdaddr",
+                "start": 214,
+                "end": 311
+            }
+        ],
+        "libfs/unicode_to_utf8.c": [
+            {
+                "name": "Unicode_Character_to_UTF8_Character",
+                "start": 34,
+                "end": 59
+            },
+            {
+                "name": "Unicode_String_to_UTF8_String",
+                "start": 61,
+                "end": 86
+            },
+            {
+                "name": "UTF8_Character_To_Unicode_Character",
+                "start": 88,
+                "end": 115
+            },
+            {
+                "name": "UTF8_String_To_Unicode_String",
+                "start": 117,
+                "end": 142
+            }
+        ],
+        "libfs/logredo.c": [
+            {
+                "name": "jfs_logredo",
+                "start": 471,
+                "end": 857
+            },
+            {
+                "name": "doMount",
+                "start": 868,
+                "end": 881
+            },
+            {
+                "name": "openVol",
+                "start": 890,
+                "end": 1012
+            },
+            {
+                "name": "updateSuper",
+                "start": 1020,
+                "end": 1043
+            },
+            {
+                "name": "rdwrSuper",
+                "start": 1055,
+                "end": 1123
+            },
+            {
+                "name": "bflush",
+                "start": 1132,
+                "end": 1161
+            },
+            {
+                "name": "findLog",
+                "start": 1172,
+                "end": 1266
+            },
+            {
+                "name": "fsError",
+                "start": 1276,
+                "end": 1313
+            },
+            {
+                "name": "logError",
+                "start": 1320,
+                "end": 1349
+            },
+            {
+                "name": "recoverExtendFS",
+                "start": 1363,
+                "end": 1683
+            },
+            {
+                "name": "alloc_dmap_bitrec",
+                "start": 1698,
+                "end": 1720
+            },
+            {
+                "name": "alloc_storage",
+                "start": 1732,
+                "end": 1779
+            }
+        ],
+        "libfs/log_read.c": [
+            {
+                "name": "findEndOfLog",
+                "start": 121,
+                "end": 186
+            },
+            {
+                "name": "pageVal",
+                "start": 198,
+                "end": 211
+            },
+            {
+                "name": "getLogpage",
+                "start": 225,
+                "end": 256
+            },
+            {
+                "name": "setLogpage",
+                "start": 295,
+                "end": 347
+            },
+            {
+                "name": "logRead",
+                "start": 364,
+                "end": 425
+            },
+            {
+                "name": "moveWords",
+                "start": 452,
+                "end": 510
+            }
+        ],
+        "mkfs/inodes.h": [
+            {
+                "name": "init_inode",
+                "start": 29,
+                "end": 30
+            }
+        ],
+        "mkfs/mkfs.c": [
+            {
+                "name": "mkfs_usage",
+                "start": 77,
+                "end": 93
+            },
+            {
+                "name": "create_fileset",
+                "start": 112,
+                "end": 169
+            },
+            {
+                "name": "create_aggregate",
+                "start": 195,
+                "end": 545
+            },
+            {
+                "name": "parse_journal_opts",
+                "start": 559,
+                "end": 647
+            },
+            {
+                "name": "main",
+                "start": 660,
+                "end": 1084
+            }
+        ],
+        "mkfs/initmap.c": [
+            {
+                "name": "xtAppend",
+                "start": 62,
+                "end": 63
+            },
+            {
+                "name": "initdmap",
+                "start": 88,
+                "end": 165
+            },
+            {
+                "name": "initctl",
+                "start": 198,
+                "end": 295
+            },
+            {
+                "name": "initbmap",
+                "start": 313,
+                "end": 345
+            },
+            {
+                "name": "alloc_map",
+                "start": 360,
+                "end": 385
+            },
+            {
+                "name": "initmap",
+                "start": 399,
+                "end": 442
+            },
+            {
+                "name": "calc_map_size",
+                "start": 467,
+                "end": 537
+            },
+            {
+                "name": "markit",
+                "start": 551,
+                "end": 625
+            },
+            {
+                "name": "write_block_map",
+                "start": 641,
+                "end": 655
+            },
+            {
+                "name": "dbAlloc",
+                "start": 678,
+                "end": 771
+            },
+            {
+                "name": "xtSplitRoot",
+                "start": 788,
+                "end": 871
+            },
+            {
+                "name": "xtSplitPage",
+                "start": 889,
+                "end": 955
+            },
+            {
+                "name": "xtAppend",
+                "start": 976,
+                "end": 1022
+            },
+            {
+                "name": "add_bad_block",
+                "start": 1039,
+                "end": 1059
+            },
+            {
+                "name": "verify_last_blocks",
+                "start": 1084,
+                "end": 1281
+            }
+        ],
+        "mkfs/inodes.c": [
+            {
+                "name": "init_aggr_inode_table",
+                "start": 59,
+                "end": 146
+            },
+            {
+                "name": "init_fileset_inode_table",
+                "start": 169,
+                "end": 319
+            },
+            {
+                "name": "init_fileset_inodes",
+                "start": 339,
+                "end": 385
+            },
+            {
+                "name": "init_inode",
+                "start": 411,
+                "end": 504
+            }
+        ],
+        "mkfs/inodemap.c": [
+            {
+                "name": "init_AG_free_list",
+                "start": 53,
+                "end": 118
+            },
+            {
+                "name": "init_inode_map",
+                "start": 140,
+                "end": 287
+            }
+        ],
+        "fsck/xfsckint.h": [
+            {
+                "name": "verify_dir_index",
+                "start": 44,
+                "end": 45
+            },
+            {
+                "name": "dTree_search",
+                "start": 89,
+                "end": 90
+            },
+            {
+                "name": "process_valid_dir_data",
+                "start": 96,
+                "end": 97
+            },
+            {
+                "name": "process_extent",
+                "start": 366,
+                "end": 367
+            }
+        ],
+        "fsck/fsckdire.c": [
+            {
+                "name": "dtSplitUp",
+                "start": 138,
+                "end": 139
+            },
+            {
+                "name": "dtSplitPage",
+                "start": 141,
+                "end": 142
+            },
+            {
+                "name": "dtSplitRoot",
+                "start": 144,
+                "end": 145
+            },
+            {
+                "name": "fsck_dtDeleteUp",
+                "start": 147,
+                "end": 148
+            },
+            {
+                "name": "ciCompare",
+                "start": 156,
+                "end": 157
+            },
+            {
+                "name": "ciGetLeafPrefixKey",
+                "start": 159,
+                "end": 161
+            },
+            {
+                "name": "dtInsertEntry",
+                "start": 165,
+                "end": 166
+            },
+            {
+                "name": "fsck_dtSearch",
+                "start": 188,
+                "end": 378
+            },
+            {
+                "name": "fsck_dtInsert",
+                "start": 393,
+                "end": 462
+            },
+            {
+                "name": "dtSplitUp",
+                "start": 475,
+                "end": 743
+            },
+            {
+                "name": "dtSplitPage",
+                "start": 756,
+                "end": 974
+            },
+            {
+                "name": "dtSplitRoot",
+                "start": 994,
+                "end": 1144
+            },
+            {
+                "name": "fsck_dtDelete",
+                "start": 1158,
+                "end": 1212
+            },
+            {
+                "name": "fsck_dtDeleteUp",
+                "start": 1224,
+                "end": 1357
+            },
+            {
+                "name": "dtRelink",
+                "start": 1370,
+                "end": 1400
+            },
+            {
+                "name": "fsck_dtInitRoot",
+                "start": 1407,
+                "end": 1437
+            },
+            {
+                "name": "dtCompare",
+                "start": 1449,
+                "end": 1536
+            },
+            {
+                "name": "ciCompare",
+                "start": 1548,
+                "end": 1644
+            },
+            {
+                "name": "ciGetLeafPrefixKey",
+                "start": 1656,
+                "end": 1702
+            },
+            {
+                "name": "dtGetKey",
+                "start": 1709,
+                "end": 1767
+            },
+            {
+                "name": "dtInsertEntry",
+                "start": 1777,
+                "end": 1881
+            },
+            {
+                "name": "dtMoveEntry",
+                "start": 1891,
+                "end": 2028
+            },
+            {
+                "name": "fsck_dtDeleteEntry",
+                "start": 2041,
+                "end": 2086
+            }
+        ],
+        "fsck/dirindex.c": [
+            {
+                "name": "allocate_dir_index_buffers",
+                "start": 70,
+                "end": 97
+            },
+            {
+                "name": "write_index_page",
+                "start": 99,
+                "end": 107
+            },
+            {
+                "name": "read_index_page",
+                "start": 109,
+                "end": 180
+            },
+            {
+                "name": "flush_index_pages",
+                "start": 182,
+                "end": 196
+            },
+            {
+                "name": "dirty_index_page",
+                "start": 198,
+                "end": 207
+            },
+            {
+                "name": "verify_dir_index",
+                "start": 209,
+                "end": 265
+            },
+            {
+                "name": "modify_index",
+                "start": 267,
+                "end": 293
+            }
+        ],
+        "fsck/fsckxtre.c": [
+            {
+                "name": "xTree_process_internal_extents",
+                "start": 64,
+                "end": 66
+            },
+            {
+                "name": "xTree_node_first_key",
+                "start": 68,
+                "end": 69
+            },
+            {
+                "name": "xTree_node_first_in_level",
+                "start": 71,
+                "end": 73
+            },
+            {
+                "name": "xTree_node_last_in_level",
+                "start": 75,
+                "end": 77
+            },
+            {
+                "name": "xTree_node_not_first_in_level",
+                "start": 79,
+                "end": 81
+            },
+            {
+                "name": "xTree_node_not_last_in_level",
+                "start": 83,
+                "end": 85
+            },
+            {
+                "name": "xTree_process_leaf_extents",
+                "start": 87,
+                "end": 89
+            },
+            {
+                "name": "find_first_leaf",
+                "start": 120,
+                "end": 157
+            },
+            {
+                "name": "init_xtree_root",
+                "start": 173,
+                "end": 186
+            },
+            {
+                "name": "process_valid_data",
+                "start": 209,
+                "end": 331
+            },
+            {
+                "name": "xTree_binsrch_page",
+                "start": 353,
+                "end": 418
+            },
+            {
+                "name": "xTree_node_first_key",
+                "start": 439,
+                "end": 499
+            },
+            {
+                "name": "xTree_node_first_in_level",
+                "start": 520,
+                "end": 540
+            },
+            {
+                "name": "xTree_node_last_in_level",
+                "start": 561,
+                "end": 580
+            },
+            {
+                "name": "xTree_node_not_first_in_level",
+                "start": 601,
+                "end": 621
+            },
+            {
+                "name": "xTree_node_not_last_in_level",
+                "start": 642,
+                "end": 687
+            },
+            {
+                "name": "xTree_process_internal_extents",
+                "start": 710,
+                "end": 796
+            },
+            {
+                "name": "xTree_process_leaf_extents",
+                "start": 821,
+                "end": 946
+            },
+            {
+                "name": "xTree_processing",
+                "start": 973,
+                "end": 1376
+            },
+            {
+                "name": "xTree_search",
+                "start": 1398,
+                "end": 1472
+            }
+        ],
+        "fsck/fsckruns.c": [
+            {
+                "name": "fsck_hbeat",
+                "start": 42,
+                "end": 118
+            },
+            {
+                "name": "fsck_hbeat_start",
+                "start": 131,
+                "end": 141
+            },
+            {
+                "name": "fsck_hbeat_stop",
+                "start": 154,
+                "end": 163
+            }
+        ],
+        "fsck/fsckino.c": [
+            {
+                "name": "backout_ACL",
+                "start": 62,
+                "end": 99
+            },
+            {
+                "name": "backout_EA",
+                "start": 116,
+                "end": 153
+            },
+            {
+                "name": "clear_ACL_field",
+                "start": 171,
+                "end": 220
+            },
+            {
+                "name": "clear_EA_field",
+                "start": 238,
+                "end": 286
+            },
+            {
+                "name": "display_path",
+                "start": 310,
+                "end": 352
+            },
+            {
+                "name": "display_paths",
+                "start": 370,
+                "end": 545
+            },
+            {
+                "name": "first_ref_check_inode",
+                "start": 566,
+                "end": 631
+            },
+            {
+                "name": "get_path",
+                "start": 653,
+                "end": 792
+            },
+            {
+                "name": "in_inode_data_check",
+                "start": 812,
+                "end": 866
+            },
+            {
+                "name": "inode_is_in_use",
+                "start": 883,
+                "end": 898
+            },
+            {
+                "name": "parent_count",
+                "start": 913,
+                "end": 932
+            },
+            {
+                "name": "record_valid_inode",
+                "start": 953,
+                "end": 995
+            },
+            {
+                "name": "release_inode",
+                "start": 1014,
+                "end": 1065
+            },
+            {
+                "name": "unrecord_valid_inode",
+                "start": 1086,
+                "end": 1136
+            },
+            {
+                "name": "validate_ACL",
+                "start": 1157,
+                "end": 1262
+            },
+            {
+                "name": "validate_data",
+                "start": 1283,
+                "end": 1418
+            },
+            {
+                "name": "validate_dir_data",
+                "start": 1440,
+                "end": 1635
+            },
+            {
+                "name": "validate_EA",
+                "start": 1656,
+                "end": 1816
+            },
+            {
+                "name": "validate_record_fileset_inode",
+                "start": 1838,
+                "end": 2168
+            }
+        ],
+        "fsck/fsckconn.c": [
+            {
+                "name": "adjust_parent",
+                "start": 78,
+                "end": 110
+            },
+            {
+                "name": "adjust_parents",
+                "start": 129,
+                "end": 224
+            },
+            {
+                "name": "check_connectedness",
+                "start": 241,
+                "end": 432
+            },
+            {
+                "name": "check_dir_integrity",
+                "start": 445,
+                "end": 576
+            },
+            {
+                "name": "check_link_counts",
+                "start": 590,
+                "end": 836
+            },
+            {
+                "name": "reset_parents",
+                "start": 852,
+                "end": 1023
+            }
+        ],
+        "fsck/fsckbmap.c": [
+            {
+                "name": "ctlpage_rebuild",
+                "start": 111,
+                "end": 206
+            },
+            {
+                "name": "ctlpage_verify",
+                "start": 221,
+                "end": 345
+            },
+            {
+                "name": "dmap_pwmap_rebuild",
+                "start": 361,
+                "end": 423
+            },
+            {
+                "name": "dmap_pmap_verify",
+                "start": 439,
+                "end": 601
+            },
+            {
+                "name": "dmap_tree_rebuild",
+                "start": 616,
+                "end": 640
+            },
+            {
+                "name": "dmap_tree_verify",
+                "start": 656,
+                "end": 721
+            },
+            {
+                "name": "dmappg_rebuild",
+                "start": 737,
+                "end": 788
+            },
+            {
+                "name": "dmappg_verify",
+                "start": 806,
+                "end": 862
+            },
+            {
+                "name": "init_bmap_info",
+                "start": 876,
+                "end": 967
+            },
+            {
+                "name": "Ln_tree_rebuild",
+                "start": 990,
+                "end": 1044
+            },
+            {
+                "name": "Ln_tree_verify",
+                "start": 1067,
+                "end": 1180
+            },
+            {
+                "name": "rebuild_blkall_map",
+                "start": 1193,
+                "end": 1360
+            },
+            {
+                "name": "stree_rebuild",
+                "start": 1378,
+                "end": 1400
+            },
+            {
+                "name": "stree_verify",
+                "start": 1420,
+                "end": 1460
+            },
+            {
+                "name": "verify_blkall_map",
+                "start": 1473,
+                "end": 1633
+            },
+            {
+                "name": "verify_blkall_summary_msgs",
+                "start": 1647,
+                "end": 1711
+            }
+        ],
+        "fsck/fsckwsp.c": [
+            {
+                "name": "extent_1stref_chk",
+                "start": 95,
+                "end": 96
+            },
+            {
+                "name": "extent_record_dupchk",
+                "start": 98,
+                "end": 100
+            },
+            {
+                "name": "alloc_vlarge_buffer",
+                "start": 141,
+                "end": 155
+            },
+            {
+                "name": "alloc_wrksp",
+                "start": 176,
+                "end": 243
+            },
+            {
+                "name": "alloc_wsp_extent",
+                "start": 261,
+                "end": 306
+            },
+            {
+                "name": "blkall_mark_free",
+                "start": 328,
+                "end": 358
+            },
+            {
+                "name": "blkall_increment_owners",
+                "start": 378,
+                "end": 464
+            },
+            {
+                "name": "blkall_split_blkrec",
+                "start": 481,
+                "end": 518
+            },
+            {
+                "name": "dire_buffer_alloc",
+                "start": 535,
+                "end": 580
+            },
+            {
+                "name": "dire_buffer_release",
+                "start": 595,
+                "end": 605
+            },
+            {
+                "name": "directory_buffers_alloc",
+                "start": 628,
+                "end": 645
+            },
+            {
+                "name": "directory_buffers_release",
+                "start": 663,
+                "end": 673
+            },
+            {
+                "name": "dtreeQ_dequeue",
+                "start": 692,
+                "end": 707
+            },
+            {
+                "name": "dtreeQ_enqueue",
+                "start": 724,
+                "end": 742
+            },
+            {
+                "name": "dtreeQ_get_elem",
+                "start": 757,
+                "end": 774
+            },
+            {
+                "name": "dtreeQ_rel_elem",
+                "start": 788,
+                "end": 796
+            },
+            {
+                "name": "dupall_extract_blkrec",
+                "start": 810,
+                "end": 830
+            },
+            {
+                "name": "dupall_find_blkrec",
+                "start": 849,
+                "end": 861
+            },
+            {
+                "name": "dupall_get_blkrec",
+                "start": 876,
+                "end": 894
+            },
+            {
+                "name": "dupall_insert_blkrec",
+                "start": 916,
+                "end": 984
+            },
+            {
+                "name": "establish_agg_workspace",
+                "start": 1000,
+                "end": 1049
+            },
+            {
+                "name": "establish_ea_iobuf",
+                "start": 1066,
+                "end": 1081
+            },
+            {
+                "name": "establish_fs_workspace",
+                "start": 1097,
+                "end": 1222
+            },
+            {
+                "name": "establish_io_buffers",
+                "start": 1237,
+                "end": 1325
+            },
+            {
+                "name": "establish_wsp_block_map",
+                "start": 1349,
+                "end": 1445
+            },
+            {
+                "name": "establish_wsp_block_map_ctl",
+                "start": 1470,
+                "end": 1533
+            },
+            {
+                "name": "extent_1stref_chk",
+                "start": 1571,
+                "end": 1643
+            },
+            {
+                "name": "blkall_ref_check",
+                "start": 1662,
+                "end": 1665
+            },
+            {
+                "name": "extent_record_dupchk",
+                "start": 1693,
+                "end": 1784
+            },
+            {
+                "name": "extent_record",
+                "start": 1807,
+                "end": 1810
+            },
+            {
+                "name": "extent_unrecord",
+                "start": 1860,
+                "end": 1916
+            },
+            {
+                "name": "fsblk_count_avail",
+                "start": 1951,
+                "end": 1985
+            },
+            {
+                "name": "fsblk_next_avail",
+                "start": 2017,
+                "end": 2052
+            },
+            {
+                "name": "fsck_alloc_fsblks",
+                "start": 2094,
+                "end": 2191
+            },
+            {
+                "name": "fsck_dealloc_fsblks",
+                "start": 2224,
+                "end": 2236
+            },
+            {
+                "name": "fscklog_end",
+                "start": 2252,
+                "end": 2273
+            },
+            {
+                "name": "fscklog_init",
+                "start": 2293,
+                "end": 2355
+            },
+            {
+                "name": "fscklog_start",
+                "start": 2373,
+                "end": 2397
+            },
+            {
+                "name": "get_inode_extension",
+                "start": 2412,
+                "end": 2429
+            },
+            {
+                "name": "get_inorecptr",
+                "start": 2460,
+                "end": 2489
+            },
+            {
+                "name": "get_inorecptr_first",
+                "start": 2532,
+                "end": 2598
+            },
+            {
+                "name": "get_inorecptr_next",
+                "start": 2647,
+                "end": 2732
+            },
+            {
+                "name": "init_agg_record",
+                "start": 2748,
+                "end": 2821
+            },
+            {
+                "name": "inorec_agg_search",
+                "start": 2839,
+                "end": 2853
+            },
+            {
+                "name": "inorec_agg_search_insert",
+                "start": 2872,
+                "end": 2903
+            },
+            {
+                "name": "inorec_fs_search",
+                "start": 2921,
+                "end": 2954
+            },
+            {
+                "name": "inorec_fs_search_insert",
+                "start": 2973,
+                "end": 3055
+            },
+            {
+                "name": "locate_inode",
+                "start": 3068,
+                "end": 3078
+            },
+            {
+                "name": "process_extent",
+                "start": 3118,
+                "end": 3243
+            },
+            {
+                "name": "release_inode_extension",
+                "start": 3257,
+                "end": 3265
+            },
+            {
+                "name": "release_logredo_allocs",
+                "start": 3280,
+                "end": 3296
+            },
+            {
+                "name": "temp_inode_buf_alloc",
+                "start": 3316,
+                "end": 3326
+            },
+            {
+                "name": "temp_inode_buf_release",
+                "start": 3341,
+                "end": 3348
+            },
+            {
+                "name": "temp_node_buf_alloc",
+                "start": 3368,
+                "end": 3382
+            },
+            {
+                "name": "treeQ_dequeue",
+                "start": 3404,
+                "end": 3419
+            },
+            {
+                "name": "treeQ_enqueue",
+                "start": 3437,
+                "end": 3454
+            },
+            {
+                "name": "treeQ_get_elem",
+                "start": 3469,
+                "end": 3486
+            },
+            {
+                "name": "treeQ_rel_elem",
+                "start": 3501,
+                "end": 3509
+            },
+            {
+                "name": "workspace_release",
+                "start": 3523,
+                "end": 3556
+            }
+        ],
+        "fsck/fsck_message.c": [
+            {
+                "name": "fsck_record_msg",
+                "start": 28,
+                "end": 75
+            },
+            {
+                "name": "v_fsck_send_msg",
+                "start": 91,
+                "end": 119
+            }
+        ],
+        "fsck/fsckdtre.c": [
+            {
+                "name": "direntry_get_objnam_node",
+                "start": 96,
+                "end": 97
+            },
+            {
+                "name": "dTree_binsrch_internal_page",
+                "start": 99,
+                "end": 101
+            },
+            {
+                "name": "dTree_binsrch_leaf",
+                "start": 103,
+                "end": 105
+            },
+            {
+                "name": "dTree_key_compare_prntchld",
+                "start": 111,
+                "end": 112
+            },
+            {
+                "name": "dTree_key_extract",
+                "start": 116,
+                "end": 117
+            },
+            {
+                "name": "dTree_key_extract_cautiously",
+                "start": 119,
+                "end": 121
+            },
+            {
+                "name": "dTree_key_extract_record",
+                "start": 123,
+                "end": 125
+            },
+            {
+                "name": "dTree_node_first_key",
+                "start": 129,
+                "end": 130
+            },
+            {
+                "name": "dTree_node_first_in_level",
+                "start": 132,
+                "end": 134
+            },
+            {
+                "name": "dTree_node_last_in_level",
+                "start": 136,
+                "end": 138
+            },
+            {
+                "name": "dTree_node_not_first_in_level",
+                "start": 139,
+                "end": 141
+            },
+            {
+                "name": "dTree_node_not_last_in_level",
+                "start": 143,
+                "end": 145
+            },
+            {
+                "name": "dTree_node_size_check",
+                "start": 147,
+                "end": 149
+            },
+            {
+                "name": "dTree_process_internal_slots",
+                "start": 151,
+                "end": 153
+            },
+            {
+                "name": "dTree_process_leaf_slots",
+                "start": 155,
+                "end": 157
+            },
+            {
+                "name": "dTree_verify_slot_freelist",
+                "start": 159,
+                "end": 161
+            },
+            {
+                "name": "process_valid_dir_node",
+                "start": 163,
+                "end": 165
+            },
+            {
+                "name": "direntry_add",
+                "start": 187,
+                "end": 212
+            },
+            {
+                "name": "direntry_get_inonum",
+                "start": 236,
+                "end": 273
+            },
+            {
+                "name": "direntry_get_objnam",
+                "start": 295,
+                "end": 405
+            },
+            {
+                "name": "direntry_get_objnam_node",
+                "start": 435,
+                "end": 525
+            },
+            {
+                "name": "direntry_remove",
+                "start": 543,
+                "end": 574
+            },
+            {
+                "name": "dTree_binsrch_internal_page",
+                "start": 619,
+                "end": 831
+            },
+            {
+                "name": "dTree_binsrch_leaf",
+                "start": 878,
+                "end": 1136
+            },
+            {
+                "name": "dTree_key_compare",
+                "start": 1158,
+                "end": 1211
+            },
+            {
+                "name": "dTree_key_compare_leaflvl",
+                "start": 1238,
+                "end": 1278
+            },
+            {
+                "name": "dTree_key_compare_prntchld",
+                "start": 1310,
+                "end": 1348
+            },
+            {
+                "name": "dTree_key_compare_samelvl",
+                "start": 1375,
+                "end": 1397
+            },
+            {
+                "name": "dTree_key_extract",
+                "start": 1430,
+                "end": 1510
+            },
+            {
+                "name": "dTree_key_extract_cautiously",
+                "start": 1543,
+                "end": 1649
+            },
+            {
+                "name": "dTree_key_extract_record",
+                "start": 1682,
+                "end": 1785
+            },
+            {
+                "name": "dTree_key_to_upper",
+                "start": 1804,
+                "end": 1820
+            },
+            {
+                "name": "dTree_node_first_key",
+                "start": 1841,
+                "end": 1938
+            },
+            {
+                "name": "dTree_node_first_in_level",
+                "start": 1959,
+                "end": 1978
+            },
+            {
+                "name": "dTree_node_last_in_level",
+                "start": 1999,
+                "end": 2018
+            },
+            {
+                "name": "dTree_node_not_first_in_level",
+                "start": 2039,
+                "end": 2058
+            },
+            {
+                "name": "dTree_node_not_last_in_level",
+                "start": 2079,
+                "end": 2132
+            },
+            {
+                "name": "dTree_node_size_check",
+                "start": 2159,
+                "end": 2240
+            },
+            {
+                "name": "dTree_process_internal_slots",
+                "start": 2262,
+                "end": 2406
+            },
+            {
+                "name": "dTree_process_leaf_slots",
+                "start": 2429,
+                "end": 2618
+            },
+            {
+                "name": "dTree_processing",
+                "start": 2641,
+                "end": 3195
+            },
+            {
+                "name": "dTree_search",
+                "start": 3234,
+                "end": 3366
+            },
+            {
+                "name": "dTree_verify_slot_freelist",
+                "start": 3388,
+                "end": 3471
+            },
+            {
+                "name": "find_first_dir_leaf",
+                "start": 3506,
+                "end": 3567
+            },
+            {
+                "name": "init_dir_tree",
+                "start": 3582,
+                "end": 3596
+            },
+            {
+                "name": "process_valid_dir_data",
+                "start": 3618,
+                "end": 3784
+            },
+            {
+                "name": "process_valid_dir_node",
+                "start": 3808,
+                "end": 3852
+            },
+            {
+                "name": "reconnect_fs_inodes",
+                "start": 3866,
+                "end": 4017
+            },
+            {
+                "name": "rebuild_dir_index",
+                "start": 4035,
+                "end": 4117
+            }
+        ],
+        "fsck/fsckmeta.c": [
+            {
+                "name": "verify_agg_fileset_inode",
+                "start": 76,
+                "end": 77
+            },
+            {
+                "name": "verify_metadata_data",
+                "start": 93,
+                "end": 94
+            },
+            {
+                "name": "verify_repair_fs_rootdir",
+                "start": 96,
+                "end": 97
+            },
+            {
+                "name": "agg_clean_or_dirty",
+                "start": 116,
+                "end": 167
+            },
+            {
+                "name": "backout_ait_part1",
+                "start": 192,
+                "end": 230
+            },
+            {
+                "name": "backout_valid_agg_inode",
+                "start": 260,
+                "end": 289
+            },
+            {
+                "name": "fatal_dup_check",
+                "start": 316,
+                "end": 354
+            },
+            {
+                "name": "first_ref_check_agg_metadata",
+                "start": 369,
+                "end": 544
+            },
+            {
+                "name": "first_ref_check_fixed_metadata",
+                "start": 560,
+                "end": 628
+            },
+            {
+                "name": "first_ref_check_fs_metadata",
+                "start": 643,
+                "end": 726
+            },
+            {
+                "name": "first_ref_check_other_ait",
+                "start": 743,
+                "end": 783
+            },
+            {
+                "name": "record_ait_part1_again",
+                "start": 810,
+                "end": 1017
+            },
+            {
+                "name": "record_fixed_metadata",
+                "start": 1032,
+                "end": 1101
+            },
+            {
+                "name": "record_other_ait",
+                "start": 1117,
+                "end": 1157
+            },
+            {
+                "name": "replicate_superblock",
+                "start": 1172,
+                "end": 1250
+            },
+            {
+                "name": "rootdir_tree_bad",
+                "start": 1272,
+                "end": 1289
+            },
+            {
+                "name": "validate_fs_metadata",
+                "start": 1303,
+                "end": 1440
+            },
+            {
+                "name": "validate_repair_superblock",
+                "start": 1459,
+                "end": 1561
+            },
+            {
+                "name": "validate_select_agg_inode_table",
+                "start": 1607,
+                "end": 1908
+            },
+            {
+                "name": "validate_super",
+                "start": 1926,
+                "end": 2127
+            },
+            {
+                "name": "validate_super_2ndaryAI",
+                "start": 2147,
+                "end": 2267
+            },
+            {
+                "name": "verify_agg_fileset_inode",
+                "start": 2292,
+                "end": 2418
+            },
+            {
+                "name": "verify_ait_inode",
+                "start": 2438,
+                "end": 2558
+            },
+            {
+                "name": "verify_ait_part1",
+                "start": 2582,
+                "end": 2821
+            },
+            {
+                "name": "verify_ait_part2",
+                "start": 2845,
+                "end": 2899
+            },
+            {
+                "name": "verify_badblk_inode",
+                "start": 2920,
+                "end": 3042
+            },
+            {
+                "name": "verify_bmap_inode",
+                "start": 3062,
+                "end": 3179
+            },
+            {
+                "name": "verify_fs_super_ext",
+                "start": 3205,
+                "end": 3331
+            },
+            {
+                "name": "verify_log_inode",
+                "start": 3352,
+                "end": 3472
+            },
+            {
+                "name": "verify_metadata_data",
+                "start": 3491,
+                "end": 3612
+            },
+            {
+                "name": "verify_repair_fs_rootdir",
+                "start": 3637,
+                "end": 4000
+            }
+        ],
+        "fsck/fsckimap.c": [
+            {
+                "name": "agfrext_lists_scan",
+                "start": 76,
+                "end": 77
+            },
+            {
+                "name": "agfrext_lists_validation",
+                "start": 79,
+                "end": 80
+            },
+            {
+                "name": "agfrino_lists_scan",
+                "start": 82,
+                "end": 83
+            },
+            {
+                "name": "agfrino_lists_validation",
+                "start": 85,
+                "end": 86
+            },
+            {
+                "name": "first_refchk_inoexts",
+                "start": 96,
+                "end": 97
+            },
+            {
+                "name": "iag_alloc_scan",
+                "start": 107,
+                "end": 108
+            },
+            {
+                "name": "iag_alloc_ver",
+                "start": 110,
+                "end": 111
+            },
+            {
+                "name": "iagfr_list_scan",
+                "start": 113,
+                "end": 114
+            },
+            {
+                "name": "iagfr_list_validation",
+                "start": 116,
+                "end": 117
+            },
+            {
+                "name": "iags_rebuild",
+                "start": 121,
+                "end": 122
+            },
+            {
+                "name": "iags_validation",
+                "start": 124,
+                "end": 125
+            },
+            {
+                "name": "iamap_rebuild",
+                "start": 127,
+                "end": 128
+            },
+            {
+                "name": "iamap_validation",
+                "start": 130,
+                "end": 131
+            },
+            {
+                "name": "record_dupchk_inoexts",
+                "start": 135,
+                "end": 136
+            },
+            {
+                "name": "agfrext_lists_scan",
+                "start": 180,
+                "end": 246
+            },
+            {
+                "name": "agfrext_lists_validation",
+                "start": 282,
+                "end": 325
+            },
+            {
+                "name": "agfrino_lists_scan",
+                "start": 359,
+                "end": 425
+            },
+            {
+                "name": "agfrino_lists_validation",
+                "start": 461,
+                "end": 504
+            },
+            {
+                "name": "AIM_check",
+                "start": 537,
+                "end": 653
+            },
+            {
+                "name": "AIM_replication",
+                "start": 694,
+                "end": 804
+            },
+            {
+                "name": "AIS_inode_check",
+                "start": 832,
+                "end": 904
+            },
+            {
+                "name": "AIS_inode_replication",
+                "start": 935,
+                "end": 960
+            },
+            {
+                "name": "AIS_redundancy_check",
+                "start": 982,
+                "end": 1150
+            },
+            {
+                "name": "AIS_replication",
+                "start": 1181,
+                "end": 1527
+            },
+            {
+                "name": "first_ref_check_inode_extents",
+                "start": 1544,
+                "end": 1601
+            },
+            {
+                "name": "first_refchk_inoexts",
+                "start": 1633,
+                "end": 1688
+            },
+            {
+                "name": "FSIM_add_extents",
+                "start": 1706,
+                "end": 1738
+            },
+            {
+                "name": "FSIM_check",
+                "start": 1762,
+                "end": 1901
+            },
+            {
+                "name": "FSIM_replication",
+                "start": 1932,
+                "end": 2049
+            },
+            {
+                "name": "iag_alloc_rebuild",
+                "start": 2066,
+                "end": 2132
+            },
+            {
+                "name": "iag_alloc_scan",
+                "start": 2159,
+                "end": 2311
+            },
+            {
+                "name": "iag_alloc_ver",
+                "start": 2337,
+                "end": 2507
+            },
+            {
+                "name": "iagfr_list_scan",
+                "start": 2536,
+                "end": 2580
+            },
+            {
+                "name": "iagfr_list_validation",
+                "start": 2606,
+                "end": 2633
+            },
+            {
+                "name": "iags_finish_lists",
+                "start": 2662,
+                "end": 2705
+            },
+            {
+                "name": "iags_rebuild",
+                "start": 2731,
+                "end": 2820
+            },
+            {
+                "name": "iags_validation",
+                "start": 2849,
+                "end": 2968
+            },
+            {
+                "name": "iamap_rebuild",
+                "start": 2994,
+                "end": 3050
+            },
+            {
+                "name": "iamap_validation",
+                "start": 3076,
+                "end": 3185
+            },
+            {
+                "name": "IM_compare_leaf",
+                "start": 3208,
+                "end": 3253
+            },
+            {
+                "name": "rebuild_agg_iamap",
+                "start": 3267,
+                "end": 3298
+            },
+            {
+                "name": "rebuild_fs_iamaps",
+                "start": 3312,
+                "end": 3345
+            },
+            {
+                "name": "record_dupchk_inode_extents",
+                "start": 3371,
+                "end": 3456
+            },
+            {
+                "name": "record_dupchk_inoexts",
+                "start": 3494,
+                "end": 3600
+            },
+            {
+                "name": "record_imap_info",
+                "start": 3624,
+                "end": 3713
+            },
+            {
+                "name": "verify_agg_iamap",
+                "start": 3727,
+                "end": 3758
+            },
+            {
+                "name": "verify_fs_iamaps",
+                "start": 3772,
+                "end": 3805
+            },
+            {
+                "name": "xtAppend",
+                "start": 3824,
+                "end": 3867
+            },
+            {
+                "name": "xtSplitPage",
+                "start": 3883,
+                "end": 3946
+            },
+            {
+                "name": "xtSplitRoot",
+                "start": 3962,
+                "end": 4050
+            }
+        ],
+        "fsck/fsckea.c": [
+            {
+                "name": "jfs_ValidateFEAList",
+                "start": 42,
+                "end": 74
+            }
+        ],
+        "fsck/fsckpfs.c": [
+            {
+                "name": "ait_node_get",
+                "start": 84,
+                "end": 145
+            },
+            {
+                "name": "ait_node_put",
+                "start": 161,
+                "end": 209
+            },
+            {
+                "name": "ait_special_read_ext1",
+                "start": 231,
+                "end": 285
+            },
+            {
+                "name": "blkmap_find_bit",
+                "start": 312,
+                "end": 327
+            },
+            {
+                "name": "blkmap_flush",
+                "start": 343,
+                "end": 408
+            },
+            {
+                "name": "blkmap_get_ctl_page",
+                "start": 425,
+                "end": 467
+            },
+            {
+                "name": "blkmap_get_page",
+                "start": 486,
+                "end": 598
+            },
+            {
+                "name": "blkmap_put_ctl_page",
+                "start": 622,
+                "end": 677
+            },
+            {
+                "name": "blkmap_put_page",
+                "start": 695,
+                "end": 704
+            },
+            {
+                "name": "blktbl_ctl_page_put",
+                "start": 722,
+                "end": 733
+            },
+            {
+                "name": "blktbl_dmap_get",
+                "start": 754,
+                "end": 872
+            },
+            {
+                "name": "blktbl_dmap_put",
+                "start": 890,
+                "end": 899
+            },
+            {
+                "name": "blktbl_dmaps_flush",
+                "start": 914,
+                "end": 983
+            },
+            {
+                "name": "blktbl_Ln_page_get",
+                "start": 1006,
+                "end": 1118
+            },
+            {
+                "name": "blktbl_Ln_page_put",
+                "start": 1136,
+                "end": 1145
+            },
+            {
+                "name": "blktbl_Ln_pages_flush",
+                "start": 1161,
+                "end": 1227
+            },
+            {
+                "name": "close_volume",
+                "start": 1241,
+                "end": 1250
+            },
+            {
+                "name": "dnode_get",
+                "start": 1270,
+                "end": 1371
+            },
+            {
+                "name": "ea_get",
+                "start": 1398,
+                "end": 1426
+            },
+            {
+                "name": "fscklog_put_buffer",
+                "start": 1450,
+                "end": 1532
+            },
+            {
+                "name": "iag_get",
+                "start": 1558,
+                "end": 1678
+            },
+            {
+                "name": "iag_get_first",
+                "start": 1703,
+                "end": 1862
+            },
+            {
+                "name": "iag_get_next",
+                "start": 1881,
+                "end": 1996
+            },
+            {
+                "name": "iag_put",
+                "start": 2014,
+                "end": 2023
+            },
+            {
+                "name": "iags_flush",
+                "start": 2039,
+                "end": 2101
+            },
+            {
+                "name": "imapleaf_get",
+                "start": 2121,
+                "end": 2202
+            },
+            {
+                "name": "inode_get",
+                "start": 2223,
+                "end": 2360
+            },
+            {
+                "name": "inode_get_first_fs",
+                "start": 2384,
+                "end": 2477
+            },
+            {
+                "name": "inode_get_next",
+                "start": 2498,
+                "end": 2615
+            },
+            {
+                "name": "inode_put",
+                "start": 2633,
+                "end": 2642
+            },
+            {
+                "name": "inodes_flush",
+                "start": 2657,
+                "end": 2723
+            },
+            {
+                "name": "inotbl_get_ctl_page",
+                "start": 2743,
+                "end": 2832
+            },
+            {
+                "name": "inotbl_put_ctl_page",
+                "start": 2852,
+                "end": 2862
+            },
+            {
+                "name": "mapctl_get",
+                "start": 2883,
+                "end": 2962
+            },
+            {
+                "name": "mapctl_put",
+                "start": 2980,
+                "end": 2989
+            },
+            {
+                "name": "mapctl_flush",
+                "start": 3005,
+                "end": 3067
+            },
+            {
+                "name": "node_get",
+                "start": 3086,
+                "end": 3180
+            },
+            {
+                "name": "open_device_read",
+                "start": 3194,
+                "end": 3204
+            },
+            {
+                "name": "open_device_rw",
+                "start": 3220,
+                "end": 3238
+            },
+            {
+                "name": "open_volume",
+                "start": 3252,
+                "end": 3287
+            },
+            {
+                "name": "readwrite_device",
+                "start": 3312,
+                "end": 3364
+            },
+            {
+                "name": "recon_dnode_assign",
+                "start": 3390,
+                "end": 3405
+            },
+            {
+                "name": "recon_dnode_get",
+                "start": 3425,
+                "end": 3484
+            },
+            {
+                "name": "recon_dnode_put",
+                "start": 3506,
+                "end": 3556
+            },
+            {
+                "name": "recon_dnode_release",
+                "start": 3571,
+                "end": 3581
+            }
+        ],
+        "fsck/xchkdsk.c": [
+            {
+                "name": "main",
+                "start": 211,
+                "end": 509
+            },
+            {
+                "name": "check_parents_and_first_refs",
+                "start": 526,
+                "end": 776
+            },
+            {
+                "name": "create_lost_and_found",
+                "start": 793,
+                "end": 947
+            },
+            {
+                "name": "final_processing",
+                "start": 964,
+                "end": 1095
+            },
+            {
+                "name": "report_problems_setup_repairs",
+                "start": 1113,
+                "end": 1410
+            },
+            {
+                "name": "initial_processing",
+                "start": 1429,
+                "end": 1656
+            },
+            {
+                "name": "parse_parms",
+                "start": 1671,
+                "end": 1823
+            },
+            {
+                "name": "phase0_processing",
+                "start": 1836,
+                "end": 1972
+            },
+            {
+                "name": "phase1_processing",
+                "start": 1992,
+                "end": 2063
+            },
+            {
+                "name": "phase2_processing",
+                "start": 2083,
+                "end": 2099
+            },
+            {
+                "name": "phase3_processing",
+                "start": 2116,
+                "end": 2171
+            },
+            {
+                "name": "phase4_processing",
+                "start": 2189,
+                "end": 2210
+            },
+            {
+                "name": "phase5_processing",
+                "start": 2226,
+                "end": 2241
+            },
+            {
+                "name": "phase6_processing",
+                "start": 2254,
+                "end": 2352
+            },
+            {
+                "name": "phase7_processing",
+                "start": 2368,
+                "end": 2404
+            },
+            {
+                "name": "phase8_processing",
+                "start": 2418,
+                "end": 2436
+            },
+            {
+                "name": "phase9_processing",
+                "start": 2450,
+                "end": 2506
+            },
+            {
+                "name": "repair_fs_inodes",
+                "start": 2520,
+                "end": 2723
+            },
+            {
+                "name": "report_dynstg_error",
+                "start": 2735,
+                "end": 2739
+            },
+            {
+                "name": "report_readait_error",
+                "start": 2752,
+                "end": 2763
+            },
+            {
+                "name": "resolve_lost_and_found",
+                "start": 2777,
+                "end": 2920
+            },
+            {
+                "name": "validate_fs_inodes",
+                "start": 2933,
+                "end": 2975
+            },
+            {
+                "name": "verify_parms",
+                "start": 2990,
+                "end": 3049
+            },
+            {
+                "name": "ask_continue",
+                "start": 3051,
+                "end": 3076
+            },
+            {
+                "name": "fsck_usage",
+                "start": 3078,
+                "end": 3093
+            }
+        ],
+        "logdump/logdump.c": [
+            {
+                "name": "main",
+                "start": 88,
+                "end": 111
+            },
+            {
+                "name": "parse_parms",
+                "start": 127,
+                "end": 167
+            }
+        ],
+        "logdump/helpers.c": [
+            {
+                "name": "alloc_wrksp",
+                "start": 60,
+                "end": 71
+            },
+            {
+                "name": "v_fsck_send_msg",
+                "start": 85,
+                "end": 102
+            }
+        ],
+        "xpeek/iag.c": [
+            {
+                "name": "iag",
+                "start": 38,
+                "end": 107
+            },
+            {
+                "name": "display_iag",
+                "start": 128,
+                "end": 151
+            },
+            {
+                "name": "change_iag",
+                "start": 153,
+                "end": 230
+            },
+            {
+                "name": "find_iag",
+                "start": 239,
+                "end": 322
+            },
+            {
+                "name": "display_map",
+                "start": 326,
+                "end": 369
+            },
+            {
+                "name": "display_ext",
+                "start": 371,
+                "end": 426
+            }
+        ],
+        "xpeek/io.c": [
+            {
+                "name": "xRead",
+                "start": 29,
+                "end": 54
+            },
+            {
+                "name": "xWrite",
+                "start": 56,
+                "end": 85
+            }
+        ],
+        "xpeek/fsckcbbl.c": [
+            {
+                "name": "cbblfsck",
+                "start": 47,
+                "end": 59
+            },
+            {
+                "name": "fsckwsphdr",
+                "start": 65,
+                "end": 77
+            },
+            {
+                "name": "logsuper",
+                "start": 83,
+                "end": 98
+            },
+            {
+                "name": "display_cbblfsck",
+                "start": 123,
+                "end": 236
+            },
+            {
+                "name": "display_fsck_wsphdr",
+                "start": 261,
+                "end": 347
+            },
+            {
+                "name": "display_logsuper",
+                "start": 371,
+                "end": 482
+            },
+            {
+                "name": "get_fsckwsphdr",
+                "start": 488,
+                "end": 499
+            },
+            {
+                "name": "put_fsckwsphdr",
+                "start": 505,
+                "end": 522
+            }
+        ],
+        "xpeek/alter.c": [
+            {
+                "name": "alter",
+                "start": 27,
+                "end": 132
+            }
+        ],
+        "xpeek/super.c": [
+            {
+                "name": "superblock",
+                "start": 30,
+                "end": 59
+            },
+            {
+                "name": "display_super",
+                "start": 87,
+                "end": 351
+            }
+        ],
+        "xpeek/dmap.c": [
+            {
+                "name": "dmap",
+                "start": 68,
+                "end": 122
+            },
+            {
+                "name": "display_dbmap",
+                "start": 140,
+                "end": 275
+            },
+            {
+                "name": "display_cpage",
+                "start": 288,
+                "end": 465
+            },
+            {
+                "name": "display_leaf",
+                "start": 482,
+                "end": 640
+            },
+            {
+                "name": "display_tree",
+                "start": 661,
+                "end": 851
+            },
+            {
+                "name": "decode_pagenum",
+                "start": 853,
+                "end": 875
+            },
+            {
+                "name": "display_agfree",
+                "start": 877,
+                "end": 914
+            }
+        ],
+        "xpeek/xpeek.c": [
+            {
+                "name": "usage",
+                "start": 50,
+                "end": 53
+            },
+            {
+                "name": "main",
+                "start": 55,
+                "end": 157
+            }
+        ],
+        "xpeek/directory.c": [
+            {
+                "name": "directory",
+                "start": 54,
+                "end": 162
+            },
+            {
+                "name": "print_direntry",
+                "start": 164,
+                "end": 202
+            },
+            {
+                "name": "dtree",
+                "start": 204,
+                "end": 392
+            },
+            {
+                "name": "xtree",
+                "start": 394,
+                "end": 541
+            },
+            {
+                "name": "display_xtpage",
+                "start": 543,
+                "end": 567
+            },
+            {
+                "name": "display_leaf_slots",
+                "start": 569,
+                "end": 640
+            },
+            {
+                "name": "display_slot",
+                "start": 642,
+                "end": 668
+            },
+            {
+                "name": "display_internal_slots",
+                "start": 670,
+                "end": 712
+            },
+            {
+                "name": "display_leaf_xads",
+                "start": 714,
+                "end": 735
+            },
+            {
+                "name": "display_internal_xads",
+                "start": 736,
+                "end": 761
+            },
+            {
+                "name": "display_internal_xtpage",
+                "start": 763,
+                "end": 875
+            },
+            {
+                "name": "display_extent_page",
+                "start": 877,
+                "end": 959
+            },
+            {
+                "name": "strToUcs",
+                "start": 961,
+                "end": 965
+            }
+        ],
+        "xpeek/ui.c": [
+            {
+                "name": "m_parse",
+                "start": 32,
+                "end": 60
+            }
+        ],
+        "xpeek/inode.c": [
+            {
+                "name": "inode",
+                "start": 38,
+                "end": 111
+            },
+            {
+                "name": "display_inode",
+                "start": 141,
+                "end": 182
+            },
+            {
+                "name": "change_inode",
+                "start": 184,
+                "end": 306
+            },
+            {
+                "name": "mode_string",
+                "start": 308,
+                "end": 363
+            },
+            {
+                "name": "find_inode",
+                "start": 365,
+                "end": 393
+            }
+        ],
+        "xpeek/super2.c": [
+            {
+                "name": "superblock2",
+                "start": 33,
+                "end": 61
+            },
+            {
+                "name": "display_super2",
+                "start": 90,
+                "end": 350
+            }
+        ],
+        "xpeek/display.c": [
+            {
+                "name": "display",
+                "start": 35,
+                "end": 186
+            },
+            {
+                "name": "display_hex",
+                "start": 191,
+                "end": 229
+            }
+        ],
+        "xpeek/help.c": [
+            {
+                "name": "help",
+                "start": 25,
+                "end": 194
+            }
+        ],
+        "fscklog/extract.c": [
+            {
+                "name": "xchklog",
+                "start": 124,
+                "end": 147
+            },
+            {
+                "name": "extract_service_log",
+                "start": 160,
+                "end": 239
+            },
+            {
+                "name": "xchklog_final_processing",
+                "start": 256,
+                "end": 283
+            },
+            {
+                "name": "xchklog_fscklog_fill_buffer",
+                "start": 307,
+                "end": 348
+            },
+            {
+                "name": "xchklog_initial_processing",
+                "start": 367,
+                "end": 474
+            },
+            {
+                "name": "open_device_read",
+                "start": 490,
+                "end": 500
+            },
+            {
+                "name": "open_outfile",
+                "start": 514,
+                "end": 559
+            },
+            {
+                "name": "readwrite_device",
+                "start": 588,
+                "end": 623
+            },
+            {
+                "name": "record_msg",
+                "start": 648,
+                "end": 693
+            },
+            {
+                "name": "validate_super",
+                "start": 715,
+                "end": 911
+            },
+            {
+                "name": "validate_superblock",
+                "start": 932,
+                "end": 983
+            }
+        ],
+        "fscklog/fscklog.c": [
+            {
+                "name": "fscklog_usage",
+                "start": 98,
+                "end": 110
+            },
+            {
+                "name": "main",
+                "start": 121,
+                "end": 151
+            },
+            {
+                "name": "parse_parms",
+                "start": 166,
+                "end": 229
+            },
+            {
+                "name": "v_send_msg",
+                "start": 242,
+                "end": 259
+            }
+        ],
+        "fscklog/display.c": [
+            {
+                "name": "xchkdmp",
+                "start": 93,
+                "end": 121
+            },
+            {
+                "name": "dump_service_log",
+                "start": 139,
+                "end": 209
+            },
+            {
+                "name": "xchkdmp_final_processing",
+                "start": 226,
+                "end": 238
+            },
+            {
+                "name": "xchkdmp_fscklog_fill_buffer",
+                "start": 262,
+                "end": 283
+            },
+            {
+                "name": "open_infile",
+                "start": 296,
+                "end": 348
+            }
+        ]
+    }
+}

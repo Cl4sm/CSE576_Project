@@ -1,0 +1,4814 @@
+{
+    "c-icap-0.3.4": {
+        "util.c": [
+            {
+                "name": "ci_strnstr",
+                "start": 25,
+                "end": 38
+            },
+            {
+                "name": "ci_strcasestr",
+                "start": 40,
+                "end": 54
+            },
+            {
+                "name": "ci_strncasestr",
+                "start": 56,
+                "end": 69
+            }
+        ],
+        "service.c": [
+            {
+                "name": "cfg_srv_transfer_preview",
+                "start": 73,
+                "end": 83
+            },
+            {
+                "name": "cfg_srv_transfer_ignore",
+                "start": 85,
+                "end": 95
+            },
+            {
+                "name": "cfg_srv_transfer_complete",
+                "start": 97,
+                "end": 107
+            },
+            {
+                "name": "cfg_srv_preview_size",
+                "start": 109,
+                "end": 133
+            },
+            {
+                "name": "cfg_srv_max_connections",
+                "start": 135,
+                "end": 153
+            },
+            {
+                "name": "cfg_srv_options_ttl",
+                "start": 155,
+                "end": 200
+            },
+            {
+                "name": "cfg_srv_allow206",
+                "start": 202,
+                "end": 218
+            },
+            {
+                "name": "create_service_conf_table",
+                "start": 220,
+                "end": 255
+            },
+            {
+                "name": "create_service",
+                "start": 264,
+                "end": 275
+            },
+            {
+                "name": "init_extra_data",
+                "start": 277,
+                "end": 331
+            },
+            {
+                "name": "add_service",
+                "start": 339,
+                "end": 390
+            },
+            {
+                "name": "register_service",
+                "start": 392,
+                "end": 408
+            },
+            {
+                "name": "find_service",
+                "start": 411,
+                "end": 420
+            },
+            {
+                "name": "service_data",
+                "start": 422,
+                "end": 430
+            },
+            {
+                "name": "init_services",
+                "start": 433,
+                "end": 441
+            },
+            {
+                "name": "post_init_services",
+                "start": 443,
+                "end": 459
+            },
+            {
+                "name": "release_services",
+                "start": 461,
+                "end": 495
+            },
+            {
+                "name": "add_service_alias",
+                "start": 499,
+                "end": 565
+            },
+            {
+                "name": "find_service_by_alias",
+                "start": 567,
+                "end": 575
+            },
+            {
+                "name": "find_service_alias",
+                "start": 577,
+                "end": 585
+            },
+            {
+                "name": "load_c_service",
+                "start": 606,
+                "end": 624
+            },
+            {
+                "name": "release_c_handler",
+                "start": 626,
+                "end": 628
+            }
+        ],
+        "net_io.c": [
+            {
+                "name": "ci_fill_sockaddr",
+                "start": 60,
+                "end": 66
+            },
+            {
+                "name": "ci_copy_sockaddr",
+                "start": 68,
+                "end": 72
+            },
+            {
+                "name": "ci_fill_ip_t",
+                "start": 75,
+                "end": 88
+            },
+            {
+                "name": "ci_sockaddr_set_port",
+                "start": 102,
+                "end": 106
+            },
+            {
+                "name": "ci_sockaddr_t_to_ip",
+                "start": 111,
+                "end": 114
+            },
+            {
+                "name": "ci_inet_aton",
+                "start": 123,
+                "end": 138
+            },
+            {
+                "name": "ci_inet_ntoa",
+                "start": 142,
+                "end": 154
+            },
+            {
+                "name": "ci_copy_connection",
+                "start": 157,
+                "end": 162
+            },
+            {
+                "name": "ci_host_to_sockaddr_t",
+                "start": 164,
+                "end": 180
+            }
+        ],
+        "array.c": [
+            {
+                "name": "ci_array_new",
+                "start": 29,
+                "end": 58
+            },
+            {
+                "name": "ci_array_new2",
+                "start": 60,
+                "end": 67
+            },
+            {
+                "name": "ci_array_destroy",
+                "start": 69,
+                "end": 76
+            },
+            {
+                "name": "ci_array_add",
+                "start": 78,
+                "end": 103
+            },
+            {
+                "name": "ci_array_search",
+                "start": 105,
+                "end": 114
+            },
+            {
+                "name": "ci_array_iterate",
+                "start": 116,
+                "end": 122
+            },
+            {
+                "name": "ci_array_pop",
+                "start": 125,
+                "end": 142
+            },
+            {
+                "name": "ci_array_get_item",
+                "start": 144,
+                "end": 149
+            },
+            {
+                "name": "ci_ptr_array_new2",
+                "start": 151,
+                "end": 158
+            },
+            {
+                "name": "ci_ptr_array_search",
+                "start": 160,
+                "end": 163
+            },
+            {
+                "name": "ci_ptr_array_add",
+                "start": 165,
+                "end": 187
+            },
+            {
+                "name": "ci_ptr_array_pop",
+                "start": 189,
+                "end": 198
+            },
+            {
+                "name": "ci_ptr_array_pop_value",
+                "start": 200,
+                "end": 208
+            },
+            {
+                "name": "ci_dyn_array_new",
+                "start": 212,
+                "end": 233
+            },
+            {
+                "name": "ci_dyn_array_new2",
+                "start": 235,
+                "end": 241
+            },
+            {
+                "name": "ci_dyn_array_destroy",
+                "start": 243,
+                "end": 247
+            },
+            {
+                "name": "ci_dyn_array_add",
+                "start": 249,
+                "end": 295
+            },
+            {
+                "name": "ci_dyn_array_search",
+                "start": 297,
+                "end": 306
+            },
+            {
+                "name": "ci_dyn_array_iterate",
+                "start": 308,
+                "end": 314
+            },
+            {
+                "name": "ci_ptr_dyn_array_add",
+                "start": 316,
+                "end": 319
+            },
+            {
+                "name": "ci_ptr_dyn_array_pop_head",
+                "start": 322,
+                "end": 344
+            },
+            {
+                "name": "ci_vector_create",
+                "start": 349,
+                "end": 384
+            },
+            {
+                "name": "ci_vector_cast_to_voidvoid",
+                "start": 386,
+                "end": 389
+            },
+            {
+                "name": "ci_vector_cast_from_voidvoid",
+                "start": 391,
+                "end": 401
+            },
+            {
+                "name": "ci_vector_destroy",
+                "start": 403,
+                "end": 410
+            },
+            {
+                "name": "ci_vector_add",
+                "start": 412,
+                "end": 430
+            },
+            {
+                "name": "ci_vector_pop",
+                "start": 432,
+                "end": 455
+            },
+            {
+                "name": "ci_vector_iterate",
+                "start": 457,
+                "end": 462
+            },
+            {
+                "name": "ci_str_vector_iterate",
+                "start": 466,
+                "end": 469
+            },
+            {
+                "name": "ci_str_vector_search",
+                "start": 471,
+                "end": 480
+            },
+            {
+                "name": "ci_ptr_vector_add",
+                "start": 484,
+                "end": 506
+            },
+            {
+                "name": "ci_list_create",
+                "start": 512,
+                "end": 533
+            },
+            {
+                "name": "ci_list_destroy",
+                "start": 535,
+                "end": 539
+            },
+            {
+                "name": "ci_list_cmp_handler",
+                "start": 541,
+                "end": 544
+            },
+            {
+                "name": "ci_list_free_handler",
+                "start": 546,
+                "end": 549
+            },
+            {
+                "name": "ci_list_copy_handler",
+                "start": 551,
+                "end": 554
+            },
+            {
+                "name": "ci_list_iterate",
+                "start": 556,
+                "end": 565
+            },
+            {
+                "name": "list_alloc_item",
+                "start": 567,
+                "end": 592
+            },
+            {
+                "name": "ci_list_push",
+                "start": 594,
+                "end": 606
+            },
+            {
+                "name": "ci_list_push_back",
+                "start": 608,
+                "end": 620
+            },
+            {
+                "name": "ci_list_pop",
+                "start": 622,
+                "end": 650
+            },
+            {
+                "name": "ci_list_pop_back",
+                "start": 652,
+                "end": 683
+            },
+            {
+                "name": "default_cmp",
+                "start": 685,
+                "end": 688
+            },
+            {
+                "name": "pointers_cmp",
+                "start": 690,
+                "end": 693
+            },
+            {
+                "name": "ci_list_remove",
+                "start": 695,
+                "end": 726
+            },
+            {
+                "name": "ci_list_search",
+                "start": 728,
+                "end": 745
+            }
+        ],
+        "service_lib.c": [
+            {
+                "name": "ci_service_data_read_lock",
+                "start": 25,
+                "end": 28
+            },
+            {
+                "name": "ci_service_data_read_unlock",
+                "start": 30,
+                "end": 33
+            },
+            {
+                "name": "ci_service_set_istag",
+                "start": 35,
+                "end": 42
+            },
+            {
+                "name": "ci_service_set_transfer_preview",
+                "start": 44,
+                "end": 52
+            },
+            {
+                "name": "ci_service_set_transfer_ignore",
+                "start": 54,
+                "end": 62
+            },
+            {
+                "name": "ci_service_set_transfer_complete",
+                "start": 64,
+                "end": 72
+            },
+            {
+                "name": "ci_service_set_preview",
+                "start": 75,
+                "end": 80
+            },
+            {
+                "name": "ci_service_enable_204",
+                "start": 82,
+                "end": 87
+            },
+            {
+                "name": "ci_service_enable_206",
+                "start": 89,
+                "end": 95
+            },
+            {
+                "name": "ci_service_set_max_connections",
+                "start": 97,
+                "end": 102
+            },
+            {
+                "name": "ci_service_set_options_ttl",
+                "start": 104,
+                "end": 109
+            },
+            {
+                "name": "ci_service_set_xopts",
+                "start": 111,
+                "end": 116
+            },
+            {
+                "name": "ci_service_add_xopts",
+                "start": 118,
+                "end": 123
+            },
+            {
+                "name": "ci_service_add_xincludes",
+                "start": 125,
+                "end": 144
+            }
+        ],
+        "stats.c": [
+            {
+                "name": "ci_stat_memblock_size",
+                "start": 33,
+                "end": 36
+            },
+            {
+                "name": "stat_entry_add",
+                "start": 40,
+                "end": 73
+            },
+            {
+                "name": "stat_entry_release_list",
+                "start": 75,
+                "end": 86
+            },
+            {
+                "name": "stat_entry_by_name",
+                "start": 88,
+                "end": 98
+            },
+            {
+                "name": "stat_group_add",
+                "start": 100,
+                "end": 127
+            },
+            {
+                "name": "ci_stat_entry_register",
+                "start": 129,
+                "end": 144
+            },
+            {
+                "name": "ci_stat_entry_release_lists",
+                "start": 146,
+                "end": 150
+            },
+            {
+                "name": "ci_stat_attach_mem",
+                "start": 152,
+                "end": 158
+            },
+            {
+                "name": "ci_stat_release",
+                "start": 160,
+                "end": 166
+            },
+            {
+                "name": "ci_stat_uint64_inc",
+                "start": 168,
+                "end": 177
+            },
+            {
+                "name": "ci_stat_kbs_inc",
+                "start": 179,
+                "end": 192
+            },
+            {
+                "name": "ci_stat_area_construct",
+                "start": 198,
+                "end": 219
+            },
+            {
+                "name": "ci_stat_area_reset",
+                "start": 221,
+                "end": 233
+            },
+            {
+                "name": "ci_stat_area_destroy",
+                "start": 236,
+                "end": 242
+            },
+            {
+                "name": "ci_stat_area_uint64_inc",
+                "start": 245,
+                "end": 254
+            },
+            {
+                "name": "ci_stat_area_kbs_inc",
+                "start": 257,
+                "end": 270
+            },
+            {
+                "name": "stat_memblock_fix",
+                "start": 273,
+                "end": 281
+            },
+            {
+                "name": "stat_memblock_reconstruct",
+                "start": 284,
+                "end": 290
+            },
+            {
+                "name": "ci_stat_memblock_reset",
+                "start": 292,
+                "end": 301
+            },
+            {
+                "name": "ci_stat_memblock_merge",
+                "start": 303,
+                "end": 318
+            },
+            {
+                "name": "ci_stat_area_merge",
+                "start": 322,
+                "end": 328
+            }
+        ],
+        "md5.c": [
+            {
+                "name": "byteReverse",
+                "start": 28,
+                "end": 37
+            },
+            {
+                "name": "ci_MD5Init",
+                "start": 44,
+                "end": 53
+            },
+            {
+                "name": "ci_MD5Update",
+                "start": 59,
+                "end": 101
+            },
+            {
+                "name": "ci_MD5Final",
+                "start": 107,
+                "end": 146
+            },
+            {
+                "name": "MD5Transform",
+                "start": 166,
+                "end": 247
+            }
+        ],
+        "acl.c": [
+            {
+                "name": "get_user",
+                "start": 42,
+                "end": 44
+            },
+            {
+                "name": "get_service",
+                "start": 46,
+                "end": 48
+            },
+            {
+                "name": "get_reqtype",
+                "start": 50,
+                "end": 52
+            },
+            {
+                "name": "get_port",
+                "start": 54,
+                "end": 56
+            },
+            {
+                "name": "get_client_ip",
+                "start": 58,
+                "end": 60
+            },
+            {
+                "name": "get_srv_ip",
+                "start": 62,
+                "end": 64
+            },
+            {
+                "name": "ci_access_entry_new",
+                "start": 166,
+                "end": 190
+            },
+            {
+                "name": "ci_access_entry_release",
+                "start": 192,
+                "end": 213
+            },
+            {
+                "name": "ci_access_entry_add_acl",
+                "start": 215,
+                "end": 237
+            },
+            {
+                "name": "ci_access_entry_add_acl_by_name",
+                "start": 239,
+                "end": 256
+            },
+            {
+                "name": "ci_acl_spec_new",
+                "start": 261,
+                "end": 297
+            },
+            {
+                "name": "ci_acl_spec_new_data",
+                "start": 299,
+                "end": 328
+            },
+            {
+                "name": "ci_acl_spec_search",
+                "start": 330,
+                "end": 345
+            },
+            {
+                "name": "ci_acl_spec_release",
+                "start": 348,
+                "end": 360
+            },
+            {
+                "name": "ci_acl_spec_list_release",
+                "start": 362,
+                "end": 370
+            },
+            {
+                "name": "ci_acl_typelist_init",
+                "start": 377,
+                "end": 383
+            },
+            {
+                "name": "ci_acl_typelist_add",
+                "start": 385,
+                "end": 416
+            },
+            {
+                "name": "ci_acl_typelist_search",
+                "start": 418,
+                "end": 426
+            },
+            {
+                "name": "ci_acl_typelist_release",
+                "start": 428,
+                "end": 434
+            },
+            {
+                "name": "ci_acl_typelist_reset",
+                "start": 436,
+                "end": 440
+            },
+            {
+                "name": "spec_data_check",
+                "start": 446,
+                "end": 461
+            },
+            {
+                "name": "request_match_specslist",
+                "start": 463,
+                "end": 496
+            },
+            {
+                "name": "ci_access_entry_match_request",
+                "start": 498,
+                "end": 514
+            },
+            {
+                "name": "acl_load_defaults",
+                "start": 523,
+                "end": 538
+            },
+            {
+                "name": "ci_acl_init",
+                "start": 540,
+                "end": 545
+            },
+            {
+                "name": "ci_acl_reset",
+                "start": 547,
+                "end": 553
+            },
+            {
+                "name": "ci_acl_search",
+                "start": 555,
+                "end": 557
+            },
+            {
+                "name": "ci_acl_type_search",
+                "start": 559,
+                "end": 561
+            },
+            {
+                "name": "ci_acl_type_add",
+                "start": 563,
+                "end": 566
+            },
+            {
+                "name": "ci_acl_add_data",
+                "start": 568,
+                "end": 610
+            },
+            {
+                "name": "get_data_type",
+                "start": 705,
+                "end": 718
+            },
+            {
+                "name": "free_data_type",
+                "start": 720,
+                "end": 722
+            }
+        ],
+        "info.c": [
+            {
+                "name": "info_init_service",
+                "start": 30,
+                "end": 31
+            },
+            {
+                "name": "info_check_preview_handler",
+                "start": 32,
+                "end": 33
+            },
+            {
+                "name": "info_io",
+                "start": 38,
+                "end": 39
+            },
+            {
+                "name": "info_init_service",
+                "start": 78,
+                "end": 83
+            },
+            {
+                "name": "info_close_service",
+                "start": 85,
+                "end": 88
+            },
+            {
+                "name": "info_init_request_data",
+                "start": 90,
+                "end": 118
+            },
+            {
+                "name": "info_release_request_data",
+                "start": 120,
+                "end": 131
+            },
+            {
+                "name": "info_check_preview_handler",
+                "start": 134,
+                "end": 156
+            },
+            {
+                "name": "info_end_of_data_handler",
+                "start": 158,
+                "end": 161
+            },
+            {
+                "name": "info_io",
+                "start": 163,
+                "end": 178
+            },
+            {
+                "name": "fill_queue_statistics",
+                "start": 182,
+                "end": 233
+            },
+            {
+                "name": "build_statistics",
+                "start": 291,
+                "end": 404
+            }
+        ],
+        "cfg_param.c": [
+            {
+                "name": "search_conf_table",
+                "start": 192,
+                "end": 200
+            },
+            {
+                "name": "init_conf_tables",
+                "start": 202,
+                "end": 210
+            },
+            {
+                "name": "reset_conf_tables",
+                "start": 212,
+                "end": 215
+            },
+            {
+                "name": "register_conf_table",
+                "start": 217,
+                "end": 256
+            },
+            {
+                "name": "unregister_conf_table",
+                "start": 258,
+                "end": 276
+            },
+            {
+                "name": "search_variables",
+                "start": 278,
+                "end": 298
+            },
+            {
+                "name": "print_conf_variables",
+                "start": 300,
+                "end": 339
+            },
+            {
+                "name": "print_variables",
+                "start": 341,
+                "end": 357
+            },
+            {
+                "name": "cfg_set_debug_level",
+                "start": 366,
+                "end": 372
+            },
+            {
+                "name": "cfg_set_debug_level_cmd",
+                "start": 374,
+                "end": 378
+            },
+            {
+                "name": "cfg_set_debug_stdout",
+                "start": 380,
+                "end": 383
+            },
+            {
+                "name": "cfg_set_body_maxmem",
+                "start": 385,
+                "end": 388
+            },
+            {
+                "name": "cfg_load_service",
+                "start": 390,
+                "end": 405
+            },
+            {
+                "name": "cfg_service_alias",
+                "start": 407,
+                "end": 422
+            },
+            {
+                "name": "cfg_load_module",
+                "start": 424,
+                "end": 437
+            },
+            {
+                "name": "cfg_load_magicfile",
+                "start": 439,
+                "end": 462
+            },
+            {
+                "name": "cfg_set_logformat",
+                "start": 465,
+                "end": 473
+            },
+            {
+                "name": "cfg_set_accesslog",
+                "start": 476,
+                "end": 488
+            },
+            {
+                "name": "cfg_set_logger",
+                "start": 492,
+                "end": 505
+            },
+            {
+                "name": "cfg_set_tmp_dir",
+                "start": 507,
+                "end": 534
+            },
+            {
+                "name": "cfg_set_acl_controllers",
+                "start": 536,
+                "end": 567
+            },
+            {
+                "name": "cfg_set_auth_method",
+                "start": 570,
+                "end": 582
+            },
+            {
+                "name": "cfg_acl_add",
+                "start": 584,
+                "end": 601
+            },
+            {
+                "name": "cfg_include_config_file",
+                "start": 603,
+                "end": 620
+            },
+            {
+                "name": "cfg_group_source_by_group",
+                "start": 625,
+                "end": 633
+            },
+            {
+                "name": "cfg_group_source_by_user",
+                "start": 635,
+                "end": 643
+            },
+            {
+                "name": "fread_line",
+                "start": 648,
+                "end": 666
+            },
+            {
+                "name": "find_action",
+                "start": 669,
+                "end": 692
+            },
+            {
+                "name": "split_args",
+                "start": 694,
+                "end": 743
+            },
+            {
+                "name": "free_args",
+                "start": 745,
+                "end": 755
+            },
+            {
+                "name": "process_line",
+                "start": 757,
+                "end": 787
+            },
+            {
+                "name": "parse_file",
+                "start": 791,
+                "end": 825
+            },
+            {
+                "name": "config",
+                "start": 851,
+                "end": 866
+            },
+            {
+                "name": "reconfig",
+                "start": 869,
+                "end": 887
+            },
+            {
+                "name": "system_shutdown",
+                "start": 897,
+                "end": 922
+            },
+            {
+                "name": "system_reconfigure",
+                "start": 924,
+                "end": 966
+            },
+            {
+                "name": "cfg_default_value_store",
+                "start": 979,
+                "end": 1006
+            },
+            {
+                "name": "cfg_default_value_replace",
+                "start": 1008,
+                "end": 1020
+            },
+            {
+                "name": "cfg_default_value_search",
+                "start": 1022,
+                "end": 1030
+            },
+            {
+                "name": "cfg_default_value_restore",
+                "start": 1032,
+                "end": 1045
+            },
+            {
+                "name": "cfg_default_value_restore_all",
+                "start": 1047,
+                "end": 1055
+            },
+            {
+                "name": "intl_cfg_set_str",
+                "start": 1060,
+                "end": 1067
+            },
+            {
+                "name": "intl_cfg_set_int",
+                "start": 1069,
+                "end": 1075
+            },
+            {
+                "name": "intl_cfg_onoff",
+                "start": 1077,
+                "end": 1083
+            },
+            {
+                "name": "intl_cfg_disable",
+                "start": 1085,
+                "end": 1091
+            },
+            {
+                "name": "intl_cfg_enable",
+                "start": 1093,
+                "end": 1099
+            },
+            {
+                "name": "intl_cfg_size_off",
+                "start": 1101,
+                "end": 1107
+            },
+            {
+                "name": "intl_cfg_size_long",
+                "start": 1109,
+                "end": 1115
+            }
+        ],
+        "header.c": [
+            {
+                "name": "ci_headers_create",
+                "start": 156,
+                "end": 184
+            },
+            {
+                "name": "ci_headers_destroy",
+                "start": 186,
+                "end": 191
+            },
+            {
+                "name": "ci_headers_setsize",
+                "start": 195,
+                "end": 211
+            },
+            {
+                "name": "ci_headers_reset",
+                "start": 213,
+                "end": 218
+            },
+            {
+                "name": "ci_headers_add",
+                "start": 220,
+                "end": 264
+            },
+            {
+                "name": "ci_headers_addheaders",
+                "start": 267,
+                "end": 311
+            },
+            {
+                "name": "ci_headers_search",
+                "start": 314,
+                "end": 322
+            },
+            {
+                "name": "ci_headers_value",
+                "start": 324,
+                "end": 337
+            },
+            {
+                "name": "ci_headers_copy_value",
+                "start": 339,
+                "end": 363
+            },
+            {
+                "name": "ci_headers_remove",
+                "start": 365,
+                "end": 408
+            },
+            {
+                "name": "ci_headers_replace",
+                "start": 410,
+                "end": 416
+            },
+            {
+                "name": "ci_headers_iterate",
+                "start": 420,
+                "end": 442
+            },
+            {
+                "name": "ci_headers_pack",
+                "start": 444,
+                "end": 468
+            },
+            {
+                "name": "ci_headers_unpack",
+                "start": 471,
+                "end": 533
+            },
+            {
+                "name": "mk_encaps_entity",
+                "start": 540,
+                "end": 554
+            },
+            {
+                "name": "destroy_encaps_entity",
+                "start": 556,
+                "end": 564
+            },
+            {
+                "name": "get_encaps_type",
+                "start": 566,
+                "end": 590
+            },
+            {
+                "name": "sizeofheader",
+                "start": 593,
+                "end": 604
+            },
+            {
+                "name": "sizeofencaps",
+                "start": 606,
+                "end": 612
+            }
+        ],
+        "body.c": [
+            {
+                "name": "resize_buffer",
+                "start": 265,
+                "end": 280
+            },
+            {
+                "name": "ci_cached_file_new",
+                "start": 282,
+                "end": 318
+            },
+            {
+                "name": "ci_cached_file_reset",
+                "start": 320,
+                "end": 341
+            },
+            {
+                "name": "ci_cached_file_destroy",
+                "start": 345,
+                "end": 361
+            },
+            {
+                "name": "ci_cached_file_release",
+                "start": 364,
+                "end": 379
+            },
+            {
+                "name": "ci_cached_file_write",
+                "start": 383,
+                "end": 436
+            },
+            {
+                "name": "ci_cached_file_read",
+                "start": 442,
+                "end": 487
+            },
+            {
+                "name": "ci_simple_file_new",
+                "start": 493,
+                "end": 518
+            },
+            {
+                "name": "ci_simple_file_named_new",
+                "start": 522,
+                "end": 557
+            },
+            {
+                "name": "ci_simple_file_destroy",
+                "start": 560,
+                "end": 574
+            },
+            {
+                "name": "ci_simple_file_release",
+                "start": 577,
+                "end": 590
+            },
+            {
+                "name": "ci_simple_file_write",
+                "start": 593,
+                "end": 646
+            },
+            {
+                "name": "ci_simple_file_read",
+                "start": 650,
+                "end": 695
+            },
+            {
+                "name": "ci_simple_file_truncate",
+                "start": 697,
+                "end": 720
+            },
+            {
+                "name": "ci_ring_buf_new",
+                "start": 725,
+                "end": 742
+            },
+            {
+                "name": "ci_ring_buf_destroy",
+                "start": 744,
+                "end": 748
+            },
+            {
+                "name": "ci_ring_buf_is_empty",
+                "start": 750,
+                "end": 753
+            },
+            {
+                "name": "ci_ring_buf_write_block",
+                "start": 755,
+                "end": 772
+            },
+            {
+                "name": "ci_ring_buf_read_block",
+                "start": 774,
+                "end": 791
+            },
+            {
+                "name": "ci_ring_buf_consume",
+                "start": 793,
+                "end": 802
+            },
+            {
+                "name": "ci_ring_buf_produce",
+                "start": 804,
+                "end": 815
+            },
+            {
+                "name": "ci_ring_buf_write",
+                "start": 817,
+                "end": 834
+            },
+            {
+                "name": "ci_ring_buf_read",
+                "start": 837,
+                "end": 854
+            }
+        ],
+        "hash.c": [
+            {
+                "name": "ci_hash_compute",
+                "start": 25,
+                "end": 44
+            },
+            {
+                "name": "ci_hash_build",
+                "start": 46,
+                "end": 76
+            },
+            {
+                "name": "ci_hash_destroy",
+                "start": 78,
+                "end": 92
+            },
+            {
+                "name": "ci_hash_search",
+                "start": 94,
+                "end": 108
+            },
+            {
+                "name": "ci_hash_add",
+                "start": 110,
+                "end": 133
+            }
+        ],
+        "lookup_file_table.c": [
+            {
+                "name": "alloc_text_table_entry",
+                "start": 55,
+                "end": 79
+            },
+            {
+                "name": "release_text_table_entry",
+                "start": 81,
+                "end": 100
+            },
+            {
+                "name": "read_row",
+                "start": 102,
+                "end": 203
+            },
+            {
+                "name": "load_text_table",
+                "start": 205,
+                "end": 244
+            },
+            {
+                "name": "file_table_open",
+                "start": 247,
+                "end": 262
+            },
+            {
+                "name": "file_table_close",
+                "start": 264,
+                "end": 292
+            },
+            {
+                "name": "file_table_search",
+                "start": 294,
+                "end": 314
+            },
+            {
+                "name": "file_table_release_result",
+                "start": 316,
+                "end": 319
+            },
+            {
+                "name": "hash_table_open",
+                "start": 339,
+                "end": 363
+            },
+            {
+                "name": "hash_table_close",
+                "start": 365,
+                "end": 375
+            },
+            {
+                "name": "hash_table_search",
+                "start": 377,
+                "end": 394
+            },
+            {
+                "name": "hash_table_release_result",
+                "start": 396,
+                "end": 399
+            },
+            {
+                "name": "regex_table_open",
+                "start": 419,
+                "end": 438
+            },
+            {
+                "name": "regex_table_close",
+                "start": 440,
+                "end": 449
+            },
+            {
+                "name": "regex_table_search",
+                "start": 451,
+                "end": 459
+            },
+            {
+                "name": "regex_table_release_result",
+                "start": 461,
+                "end": 464
+            }
+        ],
+        "lookup_table.c": [
+            {
+                "name": "ci_lookup_table_type_register",
+                "start": 36,
+                "end": 44
+            },
+            {
+                "name": "ci_lookup_table_type_unregister",
+                "start": 46,
+                "end": 56
+            },
+            {
+                "name": "ci_lookup_table_type_search",
+                "start": 58,
+                "end": 66
+            },
+            {
+                "name": "ci_lookup_table_create_ext",
+                "start": 69,
+                "end": 142
+            },
+            {
+                "name": "ci_lookup_table_create",
+                "start": 144,
+                "end": 156
+            },
+            {
+                "name": "ci_lookup_table_destroy",
+                "start": 158,
+                "end": 170
+            },
+            {
+                "name": "ci_lookup_table_open",
+                "start": 172,
+                "end": 179
+            },
+            {
+                "name": "ci_lookup_table_search",
+                "start": 181,
+                "end": 194
+            },
+            {
+                "name": "ci_lookup_table_release_result",
+                "start": 196,
+                "end": 203
+            },
+            {
+                "name": "lookup_table_get_row",
+                "start": 205,
+                "end": 226
+            },
+            {
+                "name": "ci_lookup_table_get_row",
+                "start": 228,
+                "end": 236
+            }
+        ],
+        "dlib.c": [
+            {
+                "name": "ci_dlib_entry",
+                "start": 35,
+                "end": 68
+            },
+            {
+                "name": "ci_dlib_closeall",
+                "start": 72,
+                "end": 93
+            }
+        ],
+        "http_auth.c": [
+            {
+                "name": "http_authorize",
+                "start": 36,
+                "end": 41
+            },
+            {
+                "name": "call_authenticators",
+                "start": 44,
+                "end": 56
+            },
+            {
+                "name": "http_authenticate",
+                "start": 59,
+                "end": 122
+            },
+            {
+                "name": "group_source_add",
+                "start": 136,
+                "end": 183
+            },
+            {
+                "name": "group_source_add_by_group",
+                "start": 185,
+                "end": 188
+            },
+            {
+                "name": "group_source_add_by_user",
+                "start": 190,
+                "end": 193
+            },
+            {
+                "name": "group_source_release",
+                "start": 195,
+                "end": 207
+            },
+            {
+                "name": "check_user_group",
+                "start": 211,
+                "end": 252
+            },
+            {
+                "name": "group_dup",
+                "start": 258,
+                "end": 264
+            },
+            {
+                "name": "group_free",
+                "start": 266,
+                "end": 269
+            },
+            {
+                "name": "group_len",
+                "start": 271,
+                "end": 274
+            },
+            {
+                "name": "group_cmp",
+                "start": 276,
+                "end": 285
+            },
+            {
+                "name": "group_equal",
+                "start": 286,
+                "end": 295
+            },
+            {
+                "name": "free_user",
+                "start": 306,
+                "end": 309
+            },
+            {
+                "name": "get_auth",
+                "start": 335,
+                "end": 344
+            },
+            {
+                "name": "free_auth",
+                "start": 346,
+                "end": 349
+            },
+            {
+                "name": "init_http_auth",
+                "start": 352,
+                "end": 356
+            },
+            {
+                "name": "reset_http_auth",
+                "start": 358,
+                "end": 363
+            },
+            {
+                "name": "basic_create_auth_data",
+                "start": 379,
+                "end": 380
+            },
+            {
+                "name": "basic_post_init",
+                "start": 397,
+                "end": 407
+            },
+            {
+                "name": "basic_close",
+                "start": 409,
+                "end": 415
+            },
+            {
+                "name": "basic_create_auth_data",
+                "start": 417,
+                "end": 440
+            },
+            {
+                "name": "basic_release_auth_data",
+                "start": 443,
+                "end": 446
+            },
+            {
+                "name": "basic_authentication_header",
+                "start": 448,
+                "end": 451
+            },
+            {
+                "name": "basic_simple_db_post_init",
+                "start": 483,
+                "end": 493
+            },
+            {
+                "name": "basic_simple_db_close",
+                "start": 495,
+                "end": 501
+            },
+            {
+                "name": "basic_simple_db_athenticate",
+                "start": 507,
+                "end": 560
+            }
+        ],
+        "decode.c": [
+            {
+                "name": "ci_base64_decode",
+                "start": 54,
+                "end": 85
+            },
+            {
+                "name": "ci_base64_decode_dup",
+                "start": 88,
+                "end": 99
+            },
+            {
+                "name": "ci_base64_encode",
+                "start": 111,
+                "end": 128
+            }
+        ],
+        "proc_threads_queues.c": [
+            {
+                "name": "init_queue",
+                "start": 31,
+                "end": 58
+            },
+            {
+                "name": "destroy_queue",
+                "start": 60,
+                "end": 66
+            },
+            {
+                "name": "put_to_queue",
+                "start": 68,
+                "end": 84
+            },
+            {
+                "name": "get_from_queue",
+                "start": 86,
+                "end": 98
+            },
+            {
+                "name": "wait_for_queue",
+                "start": 100,
+                "end": 112
+            },
+            {
+                "name": "create_childs_queue",
+                "start": 119,
+                "end": 168
+            },
+            {
+                "name": "attach_childs_queue",
+                "start": 170,
+                "end": 185
+            },
+            {
+                "name": "dettach_childs_queue",
+                "start": 187,
+                "end": 200
+            },
+            {
+                "name": "destroy_childs_queue",
+                "start": 202,
+                "end": 217
+            },
+            {
+                "name": "childs_queue_is_empty",
+                "start": 219,
+                "end": 227
+            },
+            {
+                "name": "get_child_data",
+                "start": 230,
+                "end": 241
+            },
+            {
+                "name": "register_child",
+                "start": 243,
+                "end": 276
+            },
+            {
+                "name": "announce_child",
+                "start": 278,
+                "end": 282
+            },
+            {
+                "name": "remove_child",
+                "start": 284,
+                "end": 313
+            },
+            {
+                "name": "find_a_child_to_be_killed",
+                "start": 315,
+                "end": 329
+            },
+            {
+                "name": "find_a_child_nrequests",
+                "start": 331,
+                "end": 351
+            },
+            {
+                "name": "find_an_idle_child",
+                "start": 353,
+                "end": 374
+            },
+            {
+                "name": "childs_queue_stats",
+                "start": 376,
+                "end": 399
+            },
+            {
+                "name": "dump_queue_statistics",
+                "start": 402,
+                "end": 456
+            }
+        ],
+        "cfg_lib.c": [
+            {
+                "name": "ci_cfg_lib_init",
+                "start": 34,
+                "end": 37
+            },
+            {
+                "name": "ci_cfg_lib_reset",
+                "start": 39,
+                "end": 42
+            },
+            {
+                "name": "ci_cfg_alloc_mem",
+                "start": 44,
+                "end": 47
+            },
+            {
+                "name": "ci_args_usage",
+                "start": 53,
+                "end": 73
+            },
+            {
+                "name": "search_options_table",
+                "start": 76,
+                "end": 91
+            },
+            {
+                "name": "ci_args_apply",
+                "start": 94,
+                "end": 120
+            },
+            {
+                "name": "ci_cfg_set_int",
+                "start": 126,
+                "end": 148
+            },
+            {
+                "name": "ci_cfg_set_str",
+                "start": 150,
+                "end": 167
+            },
+            {
+                "name": "ci_cfg_onoff",
+                "start": 169,
+                "end": 189
+            },
+            {
+                "name": "ci_cfg_disable",
+                "start": 192,
+                "end": 201
+            },
+            {
+                "name": "ci_cfg_enable",
+                "start": 203,
+                "end": 211
+            },
+            {
+                "name": "ci_cfg_size_off",
+                "start": 213,
+                "end": 242
+            },
+            {
+                "name": "ci_cfg_size_long",
+                "start": 245,
+                "end": 273
+            }
+        ],
+        "cache.c": [
+            {
+                "name": "ci_internal_time",
+                "start": 29,
+                "end": 32
+            },
+            {
+                "name": "common_mutex_init",
+                "start": 35,
+                "end": 42
+            },
+            {
+                "name": "common_mutex_destroy",
+                "start": 44,
+                "end": 49
+            },
+            {
+                "name": "common_mutex_lock",
+                "start": 51,
+                "end": 56
+            },
+            {
+                "name": "common_mutex_unlock",
+                "start": 58,
+                "end": 63
+            },
+            {
+                "name": "ci_cache_build",
+                "start": 66,
+                "end": 159
+            },
+            {
+                "name": "ci_cache_destroy",
+                "start": 161,
+                "end": 178
+            },
+            {
+                "name": "ci_cache_search",
+                "start": 180,
+                "end": 208
+            },
+            {
+                "name": "ci_cache_update",
+                "start": 210,
+                "end": 303
+            },
+            {
+                "name": "ci_cache_store_vector_val",
+                "start": 306,
+                "end": 349
+            },
+            {
+                "name": "ci_cache_read_vector_val",
+                "start": 351,
+                "end": 375
+            }
+        ],
+        "txtTemplate.c": [
+            {
+                "name": "makeTemplatePathFileName",
+                "start": 70,
+                "end": 75
+            },
+            {
+                "name": "ci_txt_template_init",
+                "start": 77,
+                "end": 97
+            },
+            {
+                "name": "ci_txt_template_set_dir",
+                "start": 99,
+                "end": 102
+            },
+            {
+                "name": "ci_txt_template_set_default_lang",
+                "start": 104,
+                "end": 107
+            },
+            {
+                "name": "templateExpired",
+                "start": 109,
+                "end": 133
+            },
+            {
+                "name": "templateFree",
+                "start": 136,
+                "end": 150
+            },
+            {
+                "name": "template_release",
+                "start": 152,
+                "end": 178
+            },
+            {
+                "name": "ci_txt_template_reset",
+                "start": 181,
+                "end": 189
+            },
+            {
+                "name": "ci_txt_template_close",
+                "start": 192,
+                "end": 205
+            },
+            {
+                "name": "templateFind",
+                "start": 208,
+                "end": 225
+            },
+            {
+                "name": "templateFindFree",
+                "start": 228,
+                "end": 249
+            },
+            {
+                "name": "templateTryLoadText",
+                "start": 251,
+                "end": 345
+            },
+            {
+                "name": "templateLoadText",
+                "start": 347,
+                "end": 393
+            },
+            {
+                "name": "ci_txt_template_build_content",
+                "start": 396,
+                "end": 429
+            }
+        ],
+        "winnt_server.c": [
+            {
+                "name": "exit_normaly",
+                "start": 72,
+                "end": 89
+            },
+            {
+                "name": "cancel_all_threads",
+                "start": 92,
+                "end": 106
+            },
+            {
+                "name": "newthread",
+                "start": 108,
+                "end": 121
+            },
+            {
+                "name": "thread_main",
+                "start": 126,
+                "end": 236
+            },
+            {
+                "name": "worker_main",
+                "start": 244,
+                "end": 318
+            },
+            {
+                "name": "child_main",
+                "start": 321,
+                "end": 373
+            },
+            {
+                "name": "tell_child_to_die",
+                "start": 627,
+                "end": 635
+            },
+            {
+                "name": "tell_child_to_restart",
+                "start": 637,
+                "end": 645
+            },
+            {
+                "name": "wait_achild_to_die",
+                "start": 650,
+                "end": 687
+            },
+            {
+                "name": "check_for_died_child",
+                "start": 691,
+                "end": 729
+            },
+            {
+                "name": "init_server",
+                "start": 731,
+                "end": 739
+            },
+            {
+                "name": "start_server",
+                "start": 742,
+                "end": 817
+            }
+        ],
+        "module.c": [
+            {
+                "name": "load_module",
+                "start": 69,
+                "end": 86
+            },
+            {
+                "name": "add_to_modules_list",
+                "start": 95,
+                "end": 113
+            },
+            {
+                "name": "module_type",
+                "start": 115,
+                "end": 138
+            },
+            {
+                "name": "init_module",
+                "start": 141,
+                "end": 206
+            },
+            {
+                "name": "find_logger",
+                "start": 209,
+                "end": 220
+            },
+            {
+                "name": "find_access_controller",
+                "start": 222,
+                "end": 232
+            },
+            {
+                "name": "find_common",
+                "start": 234,
+                "end": 245
+            },
+            {
+                "name": "find_auth_method",
+                "start": 252,
+                "end": 262
+            },
+            {
+                "name": "find_auth_method_id",
+                "start": 270,
+                "end": 283
+            },
+            {
+                "name": "find_authenticator",
+                "start": 286,
+                "end": 298
+            },
+            {
+                "name": "find_servicehandler",
+                "start": 301,
+                "end": 311
+            },
+            {
+                "name": "find_module",
+                "start": 313,
+                "end": 342
+            },
+            {
+                "name": "register_module",
+                "start": 350,
+                "end": 379
+            },
+            {
+                "name": "find_servicehandler_by_ext",
+                "start": 382,
+                "end": 417
+            },
+            {
+                "name": "init_auth_hash",
+                "start": 432,
+                "end": 442
+            },
+            {
+                "name": "release_auth_hash",
+                "start": 444,
+                "end": 454
+            },
+            {
+                "name": "get_authenticators_list",
+                "start": 457,
+                "end": 463
+            },
+            {
+                "name": "check_to_add_method_id",
+                "start": 465,
+                "end": 487
+            },
+            {
+                "name": "methods_authenticators",
+                "start": 490,
+                "end": 530
+            },
+            {
+                "name": "set_method_authenticators",
+                "start": 533,
+                "end": 545
+            },
+            {
+                "name": "get_authentication_schema",
+                "start": 548,
+                "end": 560
+            },
+            {
+                "name": "init_modules",
+                "start": 574,
+                "end": 598
+            },
+            {
+                "name": "post_init_modules",
+                "start": 601,
+                "end": 651
+            },
+            {
+                "name": "release_modules",
+                "start": 659,
+                "end": 719
+            }
+        ],
+        "mpmt_server.c": [
+            {
+                "name": "term_handler_child",
+                "start": 101,
+                "end": 110
+            },
+            {
+                "name": "sigpipe_handler",
+                "start": 112,
+                "end": 114
+            },
+            {
+                "name": "empty",
+                "start": 116,
+                "end": 118
+            },
+            {
+                "name": "sigint_handler_main",
+                "start": 120,
+                "end": 130
+            },
+            {
+                "name": "sigchld_handler_main",
+                "start": 132,
+                "end": 135
+            },
+            {
+                "name": "sighup_handler_main",
+                "start": 137,
+                "end": 140
+            },
+            {
+                "name": "child_signals",
+                "start": 142,
+                "end": 154
+            },
+            {
+                "name": "main_signals",
+                "start": 156,
+                "end": 163
+            },
+            {
+                "name": "thread_signals",
+                "start": 166,
+                "end": 177
+            },
+            {
+                "name": "exit_normaly",
+                "start": 182,
+                "end": 189
+            },
+            {
+                "name": "release_thread_i",
+                "start": 191,
+                "end": 198
+            },
+            {
+                "name": "cancel_all_threads",
+                "start": 200,
+                "end": 283
+            },
+            {
+                "name": "send_term_to_childs",
+                "start": 285,
+                "end": 297
+            },
+            {
+                "name": "wait_childs_to_exit",
+                "start": 299,
+                "end": 321
+            },
+            {
+                "name": "kill_all_childs",
+                "start": 323,
+                "end": 351
+            },
+            {
+                "name": "check_for_exited_childs",
+                "start": 353,
+                "end": 381
+            },
+            {
+                "name": "server_reconfigure",
+                "start": 384,
+                "end": 435
+            },
+            {
+                "name": "ci_named_pipe_create",
+                "start": 444,
+                "end": 453
+            },
+            {
+                "name": "ci_named_pipe_open",
+                "start": 455,
+                "end": 460
+            },
+            {
+                "name": "ci_named_pipe_close",
+                "start": 462,
+                "end": 465
+            },
+            {
+                "name": "wait_for_commands",
+                "start": 467,
+                "end": 506
+            },
+            {
+                "name": "handle_monitor_process_commands",
+                "start": 508,
+                "end": 524
+            },
+            {
+                "name": "handle_child_process_commands",
+                "start": 526,
+                "end": 533
+            },
+            {
+                "name": "newthread",
+                "start": 539,
+                "end": 551
+            },
+            {
+                "name": "thread_main",
+                "start": 553,
+                "end": 688
+            },
+            {
+                "name": "listener_thread",
+                "start": 690,
+                "end": 844
+            },
+            {
+                "name": "child_main",
+                "start": 846,
+                "end": 939
+            },
+            {
+                "name": "start_child",
+                "start": 945,
+                "end": 975
+            },
+            {
+                "name": "stop_command",
+                "start": 977,
+                "end": 980
+            },
+            {
+                "name": "reconfigure_command",
+                "start": 982,
+                "end": 987
+            },
+            {
+                "name": "dump_statistics_command",
+                "start": 989,
+                "end": 993
+            },
+            {
+                "name": "test_command",
+                "start": 995,
+                "end": 1006
+            },
+            {
+                "name": "init_server",
+                "start": 1008,
+                "end": 1017
+            },
+            {
+                "name": "init_commands",
+                "start": 1019,
+                "end": 1025
+            },
+            {
+                "name": "start_server",
+                "start": 1027,
+                "end": 1179
+            }
+        ],
+        "txt_format.c": [
+            {
+                "name": "fmt_none",
+                "start": 142,
+                "end": 149
+            },
+            {
+                "name": "fmt_percent",
+                "start": 151,
+                "end": 158
+            },
+            {
+                "name": "parse_directive",
+                "start": 160,
+                "end": 198
+            },
+            {
+                "name": "check_directive",
+                "start": 200,
+                "end": 216
+            },
+            {
+                "name": "check_tables",
+                "start": 218,
+                "end": 238
+            },
+            {
+                "name": "ci_format_text",
+                "start": 240,
+                "end": 311
+            },
+            {
+                "name": "fmt_remoteip",
+                "start": 316,
+                "end": 325
+            },
+            {
+                "name": "fmt_localip",
+                "start": 327,
+                "end": 336
+            },
+            {
+                "name": "fmt_icapmethod",
+                "start": 338,
+                "end": 345
+            },
+            {
+                "name": "fmt_service",
+                "start": 347,
+                "end": 354
+            },
+            {
+                "name": "fmt_username",
+                "start": 356,
+                "end": 363
+            },
+            {
+                "name": "fmt_request",
+                "start": 365,
+                "end": 380
+            },
+            {
+                "name": "fmt_localtime",
+                "start": 382,
+                "end": 397
+            },
+            {
+                "name": "fmt_gmttime",
+                "start": 399,
+                "end": 414
+            },
+            {
+                "name": "fmt_icapstatus",
+                "start": 416,
+                "end": 419
+            },
+            {
+                "name": "fmt_seconds",
+                "start": 422,
+                "end": 427
+            },
+            {
+                "name": "fmt_httpclientip",
+                "start": 429,
+                "end": 446
+            },
+            {
+                "name": "fmt_httpserverip",
+                "start": 448,
+                "end": 464
+            },
+            {
+                "name": "fmt_http_req_url_o",
+                "start": 466,
+                "end": 472
+            },
+            {
+                "name": "fmt_http_req_head_o",
+                "start": 474,
+                "end": 495
+            },
+            {
+                "name": "fmt_http_res_head_o",
+                "start": 497,
+                "end": 522
+            },
+            {
+                "name": "fmt_icap_req_head",
+                "start": 525,
+                "end": 547
+            },
+            {
+                "name": "fmt_icap_res_head",
+                "start": 549,
+                "end": 574
+            },
+            {
+                "name": "fmt_req_bytes_rcv",
+                "start": 577,
+                "end": 579
+            },
+            {
+                "name": "fmt_req_bytes_sent",
+                "start": 581,
+                "end": 583
+            },
+            {
+                "name": "fmt_req_http_bytes_rcv",
+                "start": 585,
+                "end": 587
+            },
+            {
+                "name": "fmt_req_http_bytes_sent",
+                "start": 589,
+                "end": 591
+            },
+            {
+                "name": "fmt_req_body_bytes_rcv",
+                "start": 593,
+                "end": 595
+            },
+            {
+                "name": "fmt_req_body_bytes_sent",
+                "start": 597,
+                "end": 599
+            },
+            {
+                "name": "fmt_req_preview_hex",
+                "start": 601,
+                "end": 631
+            },
+            {
+                "name": "fmt_req_preview_len",
+                "start": 633,
+                "end": 643
+            },
+            {
+                "name": "fmt_logstr",
+                "start": 645,
+                "end": 657
+            },
+            {
+                "name": "fmt_req_attribute",
+                "start": 659,
+                "end": 671
+            }
+        ],
+        "registry.c": [
+            {
+                "name": "ci_registry_create",
+                "start": 29,
+                "end": 47
+            },
+            {
+                "name": "ci_registry_clean",
+                "start": 49,
+                "end": 63
+            },
+            {
+                "name": "ci_registry_iterate",
+                "start": 65,
+                "end": 74
+            },
+            {
+                "name": "ci_registry_add_item",
+                "start": 76,
+                "end": 89
+            },
+            {
+                "name": "ci_registry_get_item",
+                "start": 91,
+                "end": 100
+            },
+            {
+                "name": "check_reg",
+                "start": 108,
+                "end": 117
+            },
+            {
+                "name": "ci_registry_get_id",
+                "start": 119,
+                "end": 133
+            },
+            {
+                "name": "ci_registry_id_iterate",
+                "start": 135,
+                "end": 145
+            },
+            {
+                "name": "ci_registry_id_get_item",
+                "start": 147,
+                "end": 156
+            }
+        ],
+        "aserver.c": [
+            {
+                "name": "compute_my_hostname",
+                "start": 58,
+                "end": 75
+            },
+            {
+                "name": "run_as_daemon",
+                "start": 78,
+                "end": 105
+            },
+            {
+                "name": "main",
+                "start": 108,
+                "end": 164
+            }
+        ],
+        "request_common.c": [
+            {
+                "name": "_os_malloc",
+                "start": 30,
+                "end": 33
+            },
+            {
+                "name": "_os_free",
+                "start": 35,
+                "end": 38
+            },
+            {
+                "name": "ci_buf_init",
+                "start": 45,
+                "end": 50
+            },
+            {
+                "name": "ci_buf_reset",
+                "start": 52,
+                "end": 55
+            },
+            {
+                "name": "ci_buf_mem_alloc",
+                "start": 56,
+                "end": 63
+            },
+            {
+                "name": "ci_buf_mem_free",
+                "start": 65,
+                "end": 71
+            },
+            {
+                "name": "ci_buf_write",
+                "start": 74,
+                "end": 81
+            },
+            {
+                "name": "ci_buf_reset_size",
+                "start": 83,
+                "end": 90
+            },
+            {
+                "name": "ci_request_t_pack",
+                "start": 92,
+                "end": 150
+            },
+            {
+                "name": "ci_request_pack",
+                "start": 152,
+                "end": 154
+            },
+            {
+                "name": "ci_response_pack",
+                "start": 156,
+                "end": 158
+            },
+            {
+                "name": "ci_request_alloc_entity",
+                "start": 178,
+                "end": 203
+            },
+            {
+                "name": "ci_request_release_entity",
+                "start": 206,
+                "end": 228
+            },
+            {
+                "name": "ci_request_alloc",
+                "start": 231,
+                "end": 299
+            },
+            {
+                "name": "ci_request_reset",
+                "start": 304,
+                "end": 370
+            },
+            {
+                "name": "ci_request_destroy",
+                "start": 372,
+                "end": 397
+            },
+            {
+                "name": "ci_request_set_log_str",
+                "start": 399,
+                "end": 411
+            },
+            {
+                "name": "ci_request_set_str_attribute",
+                "start": 413,
+                "end": 428
+            },
+            {
+                "name": "ci_request_206_origin_body",
+                "start": 430,
+                "end": 448
+            },
+            {
+                "name": "process_encapsulated",
+                "start": 450,
+                "end": 477
+            },
+            {
+                "name": "parse_chunk_data",
+                "start": 486,
+                "end": 603
+            },
+            {
+                "name": "net_data_read",
+                "start": 605,
+                "end": 631
+            },
+            {
+                "name": "ci_client_request",
+                "start": 640,
+                "end": 654
+            },
+            {
+                "name": "ci_client_request_reuse",
+                "start": 657,
+                "end": 698
+            },
+            {
+                "name": "client_create_request",
+                "start": 702,
+                "end": 733
+            },
+            {
+                "name": "get_request_options",
+                "start": 735,
+                "end": 776
+            },
+            {
+                "name": "ci_writen",
+                "start": 779,
+                "end": 790
+            },
+            {
+                "name": "client_send_request_headers",
+                "start": 794,
+                "end": 849
+            },
+            {
+                "name": "check_realloc",
+                "start": 852,
+                "end": 866
+            },
+            {
+                "name": "client_parse_icap_header",
+                "start": 869,
+                "end": 897
+            },
+            {
+                "name": "client_parse_encaps_header",
+                "start": 899,
+                "end": 937
+            },
+            {
+                "name": "ci_client_get_server_options",
+                "start": 940,
+                "end": 960
+            },
+            {
+                "name": "ci_client_connect_to",
+                "start": 963,
+                "end": 1005
+            },
+            {
+                "name": "client_prepere_body_chunk",
+                "start": 1008,
+                "end": 1035
+            },
+            {
+                "name": "client_parse_incoming_data",
+                "start": 1038,
+                "end": 1152
+            },
+            {
+                "name": "client_send_get_data",
+                "start": 1156,
+                "end": 1235
+            },
+            {
+                "name": "client_build_headers",
+                "start": 1237,
+                "end": 1257
+            },
+            {
+                "name": "ci_client_icapfilter",
+                "start": 1259,
+                "end": 1372
+            }
+        ],
+        "simple_api.c": [
+            {
+                "name": "ci_http_response_headers",
+                "start": 37,
+                "end": 48
+            },
+            {
+                "name": "ci_http_request_headers",
+                "start": 50,
+                "end": 66
+            },
+            {
+                "name": "ci_http_response_reset_headers",
+                "start": 68,
+                "end": 75
+            },
+            {
+                "name": "ci_http_request_reset_headers",
+                "start": 77,
+                "end": 84
+            },
+            {
+                "name": "ci_http_response_create",
+                "start": 94,
+                "end": 114
+            },
+            {
+                "name": "ci_http_request_create",
+                "start": 117,
+                "end": 136
+            },
+            {
+                "name": "ci_http_response_add_header",
+                "start": 139,
+                "end": 147
+            },
+            {
+                "name": "ci_http_request_add_header",
+                "start": 150,
+                "end": 158
+            },
+            {
+                "name": "ci_http_response_remove_header",
+                "start": 160,
+                "end": 168
+            },
+            {
+                "name": "ci_http_request_remove_header",
+                "start": 171,
+                "end": 179
+            },
+            {
+                "name": "ci_http_response_get_header",
+                "start": 182,
+                "end": 191
+            },
+            {
+                "name": "ci_http_request_get_header",
+                "start": 193,
+                "end": 202
+            },
+            {
+                "name": "ci_http_content_length",
+                "start": 205,
+                "end": 217
+            },
+            {
+                "name": "ci_http_request",
+                "start": 219,
+                "end": 229
+            },
+            {
+                "name": "ci_icap_add_xheader",
+                "start": 231,
+                "end": 234
+            },
+            {
+                "name": "ci_icap_append_xheaders",
+                "start": 236,
+                "end": 239
+            },
+            {
+                "name": "ci_http_request_url",
+                "start": 242,
+                "end": 284
+            }
+        ],
+        "default_acl.c": [
+            {
+                "name": "default_acl_init",
+                "start": 67,
+                "end": 71
+            },
+            {
+                "name": "default_acl_post_init",
+                "start": 73,
+                "end": 76
+            },
+            {
+                "name": "default_acl_release",
+                "start": 78,
+                "end": 84
+            },
+            {
+                "name": "default_acl_client_match",
+                "start": 86,
+                "end": 89
+            },
+            {
+                "name": "default_acl_request_match",
+                "start": 91,
+                "end": 94
+            },
+            {
+                "name": "cfg_default_acl_add",
+                "start": 97,
+                "end": 100
+            },
+            {
+                "name": "cfg_default_acl_access",
+                "start": 102,
+                "end": 170
+            }
+        ],
+        "mem.c": [
+            {
+                "name": "ci_buffers_init",
+                "start": 112,
+                "end": 148
+            },
+            {
+                "name": "ci_buffers_destroy",
+                "start": 166,
+                "end": 172
+            },
+            {
+                "name": "ci_buffer_alloc",
+                "start": 174,
+                "end": 202
+            },
+            {
+                "name": "ci_buffer_blocksize",
+                "start": 204,
+                "end": 229
+            },
+            {
+                "name": "ci_buffer_realloc",
+                "start": 231,
+                "end": 266
+            },
+            {
+                "name": "ci_buffer_free",
+                "start": 268,
+                "end": 296
+            },
+            {
+                "name": "ci_object_pools_init",
+                "start": 305,
+                "end": 308
+            },
+            {
+                "name": "ci_object_pools_destroy",
+                "start": 310,
+                "end": 317
+            },
+            {
+                "name": "ci_object_pool_register",
+                "start": 320,
+                "end": 352
+            },
+            {
+                "name": "ci_object_pool_unregister",
+                "start": 354,
+                "end": 365
+            },
+            {
+                "name": "ci_object_pool_alloc",
+                "start": 367,
+                "end": 384
+            },
+            {
+                "name": "ci_object_pool_free",
+                "start": 386,
+                "end": 399
+            },
+            {
+                "name": "os_allocator_alloc",
+                "start": 404,
+                "end": 407
+            },
+            {
+                "name": "os_allocator_free",
+                "start": 409,
+                "end": 412
+            },
+            {
+                "name": "os_allocator_reset",
+                "start": 414,
+                "end": 417
+            },
+            {
+                "name": "os_allocator_destroy",
+                "start": 419,
+                "end": 422
+            },
+            {
+                "name": "ci_create_os_allocator",
+                "start": 424,
+                "end": 437
+            },
+            {
+                "name": "serial_allocator_build",
+                "start": 453,
+                "end": 471
+            },
+            {
+                "name": "serial_allocation",
+                "start": 473,
+                "end": 494
+            },
+            {
+                "name": "serial_allocator_alloc",
+                "start": 496,
+                "end": 503
+            },
+            {
+                "name": "serial_allocator_free",
+                "start": 505,
+                "end": 508
+            },
+            {
+                "name": "serial_allocator_reset",
+                "start": 510,
+                "end": 525
+            },
+            {
+                "name": "serial_allocator_destroy",
+                "start": 527,
+                "end": 542
+            },
+            {
+                "name": "ci_create_serial_allocator",
+                "start": 544,
+                "end": 566
+            },
+            {
+                "name": "ci_pack_allocator_alloc_unaligned",
+                "start": 579,
+                "end": 599
+            },
+            {
+                "name": "ci_pack_allocator_alloc",
+                "start": 601,
+                "end": 605
+            },
+            {
+                "name": "ci_pack_allocator_alloc_from_rear",
+                "start": 607,
+                "end": 628
+            },
+            {
+                "name": "ci_pack_allocator_free",
+                "start": 630,
+                "end": 633
+            },
+            {
+                "name": "ci_pack_allocator_reset",
+                "start": 635,
+                "end": 642
+            },
+            {
+                "name": "ci_pack_allocator_destroy",
+                "start": 644,
+                "end": 653
+            },
+            {
+                "name": "init_pack_allocator",
+                "start": 658,
+                "end": 682
+            },
+            {
+                "name": "ci_create_pack_allocator",
+                "start": 684,
+                "end": 698
+            },
+            {
+                "name": "ci_create_pack_allocator_on_memblock",
+                "start": 701,
+                "end": 717
+            },
+            {
+                "name": "ci_pack_allocator_data_size",
+                "start": 719,
+                "end": 725
+            },
+            {
+                "name": "ci_pack_allocator_required_size",
+                "start": 727,
+                "end": 730
+            },
+            {
+                "name": "ci_pack_allocator_set_start_pos",
+                "start": 734,
+                "end": 741
+            },
+            {
+                "name": "ci_pack_allocator_set_end_pos",
+                "start": 743,
+                "end": 753
+            },
+            {
+                "name": "pool_allocator_build",
+                "start": 772,
+                "end": 791
+            },
+            {
+                "name": "pool_allocator_alloc",
+                "start": 793,
+                "end": 824
+            },
+            {
+                "name": "pool_allocator_free",
+                "start": 826,
+                "end": 845
+            },
+            {
+                "name": "pool_allocator_reset",
+                "start": 847,
+                "end": 874
+            },
+            {
+                "name": "pool_allocator_destroy",
+                "start": 877,
+                "end": 883
+            },
+            {
+                "name": "ci_create_pool_allocator",
+                "start": 885,
+                "end": 904
+            }
+        ],
+        "filetype.c": [
+            {
+                "name": "types_add",
+                "start": 86,
+                "end": 102
+            },
+            {
+                "name": "groups_add",
+                "start": 104,
+                "end": 114
+            },
+            {
+                "name": "magics_add",
+                "start": 116,
+                "end": 131
+            },
+            {
+                "name": "ci_get_data_type_id",
+                "start": 133,
+                "end": 141
+            },
+            {
+                "name": "ci_get_data_group_id",
+                "start": 143,
+                "end": 151
+            },
+            {
+                "name": "ci_belongs_to_group",
+                "start": 153,
+                "end": 165
+            },
+            {
+                "name": "free_records_group",
+                "start": 167,
+                "end": 176
+            },
+            {
+                "name": "parse_record",
+                "start": 179,
+                "end": 265
+            },
+            {
+                "name": "ci_magics_db_init",
+                "start": 267,
+                "end": 292
+            },
+            {
+                "name": "ci_magics_db_release",
+                "start": 294,
+                "end": 300
+            },
+            {
+                "name": "ci_magics_db_file_add",
+                "start": 302,
+                "end": 356
+            },
+            {
+                "name": "ci_magics_db_build",
+                "start": 358,
+                "end": 366
+            },
+            {
+                "name": "check_magics",
+                "start": 368,
+                "end": 381
+            },
+            {
+                "name": "check_ascii",
+                "start": 419,
+                "end": 433
+            },
+            {
+                "name": "isUTF8",
+                "start": 439,
+                "end": 493
+            },
+            {
+                "name": "check_unicode",
+                "start": 495,
+                "end": 539
+            },
+            {
+                "name": "ci_filetype",
+                "start": 541,
+                "end": 557
+            },
+            {
+                "name": "extend_object_type",
+                "start": 559,
+                "end": 659
+            },
+            {
+                "name": "ci_extend_filetype",
+                "start": 661,
+                "end": 671
+            },
+            {
+                "name": "ci_magic_db_load",
+                "start": 674,
+                "end": 683
+            },
+            {
+                "name": "ci_magic_db_free",
+                "start": 685,
+                "end": 691
+            },
+            {
+                "name": "ci_magic_req_data_type",
+                "start": 694,
+                "end": 709
+            },
+            {
+                "name": "ci_magic_data_type",
+                "start": 711,
+                "end": 718
+            },
+            {
+                "name": "ci_magic_data_type_ext",
+                "start": 720,
+                "end": 726
+            },
+            {
+                "name": "ci_magic_type_id",
+                "start": 729,
+                "end": 735
+            },
+            {
+                "name": "ci_magic_group_id",
+                "start": 737,
+                "end": 743
+            },
+            {
+                "name": "ci_magic_group_check",
+                "start": 745,
+                "end": 751
+            },
+            {
+                "name": "ci_magic_types_count",
+                "start": 754,
+                "end": 757
+            },
+            {
+                "name": "ci_magic_groups_count",
+                "start": 760,
+                "end": 763
+            },
+            {
+                "name": "ci_magic_type_name",
+                "start": 765,
+                "end": 772
+            },
+            {
+                "name": "ci_magic_type_descr",
+                "start": 774,
+                "end": 781
+            },
+            {
+                "name": "ci_magic_group_name",
+                "start": 783,
+                "end": 790
+            }
+        ],
+        "request.c": [
+            {
+                "name": "request_stats_init",
+                "start": 62,
+                "end": 76
+            },
+            {
+                "name": "wait_for_data",
+                "start": 78,
+                "end": 95
+            },
+            {
+                "name": "newrequest",
+                "start": 97,
+                "end": 119
+            },
+            {
+                "name": "recycle_request",
+                "start": 122,
+                "end": 137
+            },
+            {
+                "name": "icap_header_check_realloc",
+                "start": 147,
+                "end": 161
+            },
+            {
+                "name": "ci_read_icap_header",
+                "start": 164,
+                "end": 205
+            },
+            {
+                "name": "read_encaps_header",
+                "start": 208,
+                "end": 250
+            },
+            {
+                "name": "get_method",
+                "start": 252,
+                "end": 270
+            },
+            {
+                "name": "parse_request",
+                "start": 272,
+                "end": 364
+            },
+            {
+                "name": "check_request",
+                "start": 366,
+                "end": 415
+            },
+            {
+                "name": "parse_header",
+                "start": 417,
+                "end": 461
+            },
+            {
+                "name": "parse_encaps_headers",
+                "start": 464,
+                "end": 487
+            },
+            {
+                "name": "read_preview_data",
+                "start": 493,
+                "end": 541
+            },
+            {
+                "name": "ec_responce_simple",
+                "start": 543,
+                "end": 554
+            },
+            {
+                "name": "ec_responce",
+                "start": 556,
+                "end": 599
+            },
+            {
+                "name": "mk_responce_header",
+                "start": 602,
+                "end": 653
+            },
+            {
+                "name": "send_current_block_data",
+                "start": 663,
+                "end": 686
+            },
+            {
+                "name": "format_body_chunk",
+                "start": 689,
+                "end": 732
+            },
+            {
+                "name": "resp_check_body",
+                "start": 736,
+                "end": 744
+            },
+            {
+                "name": "update_send_status",
+                "start": 754,
+                "end": 816
+            },
+            {
+                "name": "mod_null_io",
+                "start": 818,
+                "end": 826
+            },
+            {
+                "name": "get_send_body",
+                "start": 829,
+                "end": 988
+            },
+            {
+                "name": "send_remaining_response",
+                "start": 992,
+                "end": 1043
+            },
+            {
+                "name": "options_responce",
+                "start": 1045,
+                "end": 1208
+            },
+            {
+                "name": "do_request_preview",
+                "start": 1218,
+                "end": 1285
+            },
+            {
+                "name": "do_fake_preview",
+                "start": 1291,
+                "end": 1350
+            },
+            {
+                "name": "do_end_of_data",
+                "start": 1355,
+                "end": 1394
+            },
+            {
+                "name": "do_request",
+                "start": 1397,
+                "end": 1531
+            },
+            {
+                "name": "process_request",
+                "start": 1533,
+                "end": 1601
+            }
+        ],
+        "commands.c": [
+            {
+                "name": "commands_init",
+                "start": 42,
+                "end": 47
+            },
+            {
+                "name": "register_command",
+                "start": 50,
+                "end": 68
+            },
+            {
+                "name": "register_command_extend",
+                "start": 70,
+                "end": 88
+            },
+            {
+                "name": "commands_reset",
+                "start": 90,
+                "end": 100
+            },
+            {
+                "name": "cb_check_command",
+                "start": 109,
+                "end": 119
+            },
+            {
+                "name": "find_command",
+                "start": 121,
+                "end": 150
+            },
+            {
+                "name": "execute_command",
+                "start": 152,
+                "end": 162
+            },
+            {
+                "name": "exec_cmd_step",
+                "start": 164,
+                "end": 175
+            },
+            {
+                "name": "execute_child_commands",
+                "start": 177,
+                "end": 186
+            },
+            {
+                "name": "commands_execute_start_child",
+                "start": 188,
+                "end": 191
+            },
+            {
+                "name": "commands_execute_stop_child",
+                "start": 193,
+                "end": 196
+            },
+            {
+                "name": "ci_command_register_ctl_cmd",
+                "start": 198,
+                "end": 201
+            },
+            {
+                "name": "ci_command_register_action",
+                "start": 203,
+                "end": 207
+            },
+            {
+                "name": "ci_command_schedule_on",
+                "start": 209,
+                "end": 225
+            },
+            {
+                "name": "ci_command_schedule",
+                "start": 227,
+                "end": 233
+            },
+            {
+                "name": "cb_check_queue",
+                "start": 235,
+                "end": 250
+            },
+            {
+                "name": "commands_exec_scheduled",
+                "start": 252,
+                "end": 265
+            }
+        ],
+        "access.c": [
+            {
+                "name": "access_reset",
+                "start": 43,
+                "end": 47
+            },
+            {
+                "name": "access_check_client",
+                "start": 49,
+                "end": 66
+            },
+            {
+                "name": "check_request",
+                "start": 69,
+                "end": 81
+            },
+            {
+                "name": "access_check_request",
+                "start": 83,
+                "end": 98
+            }
+        ],
+        "types_ops.c": [
+            {
+                "name": "stringdup",
+                "start": 33,
+                "end": 39
+            },
+            {
+                "name": "stringcmp",
+                "start": 41,
+                "end": 46
+            },
+            {
+                "name": "stringequal",
+                "start": 48,
+                "end": 53
+            },
+            {
+                "name": "stringlen",
+                "start": 55,
+                "end": 58
+            },
+            {
+                "name": "stringfree",
+                "start": 60,
+                "end": 63
+            },
+            {
+                "name": "string_ext_cmp",
+                "start": 73,
+                "end": 82
+            },
+            {
+                "name": "string_ext_equal",
+                "start": 84,
+                "end": 93
+            },
+            {
+                "name": "int32_dup",
+                "start": 107,
+                "end": 115
+            },
+            {
+                "name": "int32_cmp",
+                "start": 117,
+                "end": 128
+            },
+            {
+                "name": "int32_equal",
+                "start": 130,
+                "end": 136
+            },
+            {
+                "name": "int32_len",
+                "start": 138,
+                "end": 141
+            },
+            {
+                "name": "int32_free",
+                "start": 143,
+                "end": 147
+            },
+            {
+                "name": "uint64_dup",
+                "start": 158,
+                "end": 165
+            },
+            {
+                "name": "uint64_cmp",
+                "start": 167,
+                "end": 178
+            },
+            {
+                "name": "uint64_equal",
+                "start": 180,
+                "end": 186
+            },
+            {
+                "name": "uint64_free",
+                "start": 188,
+                "end": 191
+            },
+            {
+                "name": "uint64_len",
+                "start": 193,
+                "end": 196
+            },
+            {
+                "name": "datatype_dup",
+                "start": 328,
+                "end": 345
+            },
+            {
+                "name": "datatype_cmp",
+                "start": 347,
+                "end": 363
+            },
+            {
+                "name": "datatype_equal",
+                "start": 365,
+                "end": 381
+            },
+            {
+                "name": "datatype_len",
+                "start": 383,
+                "end": 386
+            },
+            {
+                "name": "datatype_free",
+                "start": 388,
+                "end": 392
+            },
+            {
+                "name": "ip_dup",
+                "start": 465,
+                "end": 526
+            },
+            {
+                "name": "ip_free",
+                "start": 528,
+                "end": 530
+            },
+            {
+                "name": "ip_len",
+                "start": 532,
+                "end": 535
+            },
+            {
+                "name": "ip_cmp",
+                "start": 537,
+                "end": 540
+            },
+            {
+                "name": "ip_equal",
+                "start": 542,
+                "end": 571
+            },
+            {
+                "name": "ip_sockaddr_cmp",
+                "start": 573,
+                "end": 576
+            },
+            {
+                "name": "ip_sockaddr_equal",
+                "start": 578,
+                "end": 607
+            }
+        ],
+        "log.c": [
+            {
+                "name": "log_open",
+                "start": 43,
+                "end": 48
+            },
+            {
+                "name": "log_close",
+                "start": 51,
+                "end": 56
+            },
+            {
+                "name": "log_reset",
+                "start": 58,
+                "end": 62
+            },
+            {
+                "name": "log_access",
+                "start": 64,
+                "end": 71
+            },
+            {
+                "name": "log_server",
+                "start": 74,
+                "end": 88
+            },
+            {
+                "name": "vlog_server",
+                "start": 90,
+                "end": 94
+            },
+            {
+                "name": "logformat_add",
+                "start": 115,
+                "end": 142
+            },
+            {
+                "name": "logformat_release",
+                "start": 144,
+                "end": 159
+            },
+            {
+                "name": "logformat_fmt",
+                "start": 161,
+                "end": 173
+            },
+            {
+                "name": "logfile_open",
+                "start": 217,
+                "end": 223
+            },
+            {
+                "name": "file_log_open",
+                "start": 225,
+                "end": 258
+            },
+            {
+                "name": "file_log_close",
+                "start": 260,
+                "end": 282
+            },
+            {
+                "name": "file_log_relog",
+                "start": 284,
+                "end": 306
+            },
+            {
+                "name": "file_log_access",
+                "start": 308,
+                "end": 326
+            },
+            {
+                "name": "file_log_server",
+                "start": 329,
+                "end": 342
+            },
+            {
+                "name": "file_log_addlogfile",
+                "start": 345,
+                "end": 411
+            }
+        ],
+        "utils/c-icap-mkbdb.c": [
+            {
+                "name": "open_db",
+                "start": 47,
+                "end": 96
+            },
+            {
+                "name": "close_db",
+                "start": 98,
+                "end": 102
+            },
+            {
+                "name": "dump_db",
+                "start": 104,
+                "end": 151
+            },
+            {
+                "name": "record_extract",
+                "start": 153,
+                "end": 264
+            },
+            {
+                "name": "store_db",
+                "start": 266,
+                "end": 282
+            },
+            {
+                "name": "cfg_set_type",
+                "start": 285,
+                "end": 313
+            },
+            {
+                "name": "log_errors",
+                "start": 315,
+                "end": 321
+            },
+            {
+                "name": "vlog_errors",
+                "start": 323,
+                "end": 326
+            },
+            {
+                "name": "main",
+                "start": 331,
+                "end": 412
+            }
+        ],
+        "utils/c-icap-client.c": [
+            {
+                "name": "printhead",
+                "start": 38,
+                "end": 41
+            },
+            {
+                "name": "print_headers",
+                "start": 43,
+                "end": 63
+            },
+            {
+                "name": "build_respmod_headers",
+                "start": 65,
+                "end": 90
+            },
+            {
+                "name": "build_reqmod_headers",
+                "start": 93,
+                "end": 124
+            },
+            {
+                "name": "fileread",
+                "start": 127,
+                "end": 132
+            },
+            {
+                "name": "filewrite",
+                "start": 134,
+                "end": 139
+            },
+            {
+                "name": "copy_data",
+                "start": 141,
+                "end": 148
+            },
+            {
+                "name": "add_xheader",
+                "start": 150,
+                "end": 171
+            },
+            {
+                "name": "log_errors",
+                "start": 219,
+                "end": 225
+            },
+            {
+                "name": "vlog_errors",
+                "start": 227,
+                "end": 230
+            },
+            {
+                "name": "main",
+                "start": 232,
+                "end": 381
+            }
+        ],
+        "utils/c-icap-stretch.c": [
+            {
+                "name": "print_stats",
+                "start": 83,
+                "end": 98
+            },
+            {
+                "name": "sigint_handler",
+                "start": 101,
+                "end": 132
+            },
+            {
+                "name": "str_trim",
+                "start": 134,
+                "end": 154
+            },
+            {
+                "name": "load_urls",
+                "start": 156,
+                "end": 181
+            },
+            {
+                "name": "xclient_header",
+                "start": 183,
+                "end": 190
+            },
+            {
+                "name": "build_headers",
+                "start": 192,
+                "end": 222
+            },
+            {
+                "name": "build_request_headers",
+                "start": 224,
+                "end": 241
+            },
+            {
+                "name": "fileread",
+                "start": 244,
+                "end": 249
+            },
+            {
+                "name": "filewrite",
+                "start": 251,
+                "end": 254
+            },
+            {
+                "name": "do_req",
+                "start": 257,
+                "end": 341
+            },
+            {
+                "name": "threadjobreqmod",
+                "start": 343,
+                "end": 414
+            },
+            {
+                "name": "do_file",
+                "start": 416,
+                "end": 478
+            },
+            {
+                "name": "threadjobsendfiles",
+                "start": 481,
+                "end": 564
+            },
+            {
+                "name": "usage",
+                "start": 566,
+                "end": 572
+            },
+            {
+                "name": "add_xheader",
+                "start": 574,
+                "end": 595
+            },
+            {
+                "name": "cfg_files_to_use",
+                "start": 598,
+                "end": 618
+            },
+            {
+                "name": "add_xclient_headers",
+                "start": 620,
+                "end": 663
+            },
+            {
+                "name": "log_errors",
+                "start": 693,
+                "end": 699
+            },
+            {
+                "name": "vlog_errors",
+                "start": 701,
+                "end": 704
+            },
+            {
+                "name": "main",
+                "start": 706,
+                "end": 788
+            }
+        ],
+        "services/echo/srv_echo.c": [
+            {
+                "name": "echo_init_service",
+                "start": 28,
+                "end": 29
+            },
+            {
+                "name": "echo_check_preview_handler",
+                "start": 30,
+                "end": 31
+            },
+            {
+                "name": "echo_io",
+                "start": 36,
+                "end": 37
+            },
+            {
+                "name": "echo_init_service",
+                "start": 69,
+                "end": 88
+            },
+            {
+                "name": "echo_close_service",
+                "start": 91,
+                "end": 95
+            },
+            {
+                "name": "echo_init_request_data",
+                "start": 100,
+                "end": 122
+            },
+            {
+                "name": "echo_release_request_data",
+                "start": 125,
+                "end": 135
+            },
+            {
+                "name": "echo_check_preview_handler",
+                "start": 139,
+                "end": 197
+            },
+            {
+                "name": "echo_end_of_data_handler",
+                "start": 201,
+                "end": 208
+            },
+            {
+                "name": "echo_io",
+                "start": 214,
+                "end": 237
+            }
+        ],
+        "services/ex-206/srv_ex206.c": [
+            {
+                "name": "ex206_init_service",
+                "start": 28,
+                "end": 29
+            },
+            {
+                "name": "ex206_check_preview_handler",
+                "start": 30,
+                "end": 31
+            },
+            {
+                "name": "ex206_io",
+                "start": 36,
+                "end": 37
+            },
+            {
+                "name": "ex206_init_service",
+                "start": 67,
+                "end": 86
+            },
+            {
+                "name": "ex206_close_service",
+                "start": 89,
+                "end": 93
+            },
+            {
+                "name": "ex206_init_request_data",
+                "start": 98,
+                "end": 108
+            },
+            {
+                "name": "ex206_release_request_data",
+                "start": 111,
+                "end": 116
+            },
+            {
+                "name": "ex206_check_preview_handler",
+                "start": 118,
+                "end": 175
+            },
+            {
+                "name": "ex206_end_of_data_handler",
+                "start": 179,
+                "end": 183
+            },
+            {
+                "name": "ex206_io",
+                "start": 185,
+                "end": 207
+            }
+        ],
+        "tests/test_cache.c": [
+            {
+                "name": "log_errors",
+                "start": 12,
+                "end": 18
+            },
+            {
+                "name": "copy_to_str",
+                "start": 20,
+                "end": 23
+            },
+            {
+                "name": "copy_from_str",
+                "start": 25,
+                "end": 28
+            },
+            {
+                "name": "main",
+                "start": 31,
+                "end": 121
+            }
+        ],
+        "tests/test_md5.c": [
+            {
+                "name": "MDString",
+                "start": 10,
+                "end": 22
+            },
+            {
+                "name": "MDPrint",
+                "start": 24,
+                "end": 30
+            },
+            {
+                "name": "main",
+                "start": 33,
+                "end": 45
+            }
+        ],
+        "tests/test_allocators.c": [
+            {
+                "name": "run_allocs",
+                "start": 15,
+                "end": 41
+            },
+            {
+                "name": "main",
+                "start": 54,
+                "end": 87
+            }
+        ],
+        "tests/test_base64.c": [
+            {
+                "name": "main",
+                "start": 5,
+                "end": 22
+            }
+        ],
+        "tests/test_tables.c": [
+            {
+                "name": "log_errors",
+                "start": 19,
+                "end": 25
+            },
+            {
+                "name": "load_module",
+                "start": 28,
+                "end": 53
+            },
+            {
+                "name": "main",
+                "start": 68,
+                "end": 109
+            }
+        ],
+        "tests/test_arrays.c": [
+            {
+                "name": "log_errors",
+                "start": 11,
+                "end": 17
+            },
+            {
+                "name": "print_str",
+                "start": 26,
+                "end": 31
+            },
+            {
+                "name": "main",
+                "start": 34,
+                "end": 145
+            }
+        ],
+        "tests/test_headers.c": [
+            {
+                "name": "main",
+                "start": 17,
+                "end": 56
+            }
+        ],
+        "tests/test_lists.c": [
+            {
+                "name": "log_errors",
+                "start": 11,
+                "end": 17
+            },
+            {
+                "name": "print_str",
+                "start": 26,
+                "end": 31
+            },
+            {
+                "name": "fill_obj",
+                "start": 39,
+                "end": 44
+            },
+            {
+                "name": "check_obj",
+                "start": 46,
+                "end": 63
+            },
+            {
+                "name": "cb_remove_anobj",
+                "start": 70,
+                "end": 79
+            },
+            {
+                "name": "main",
+                "start": 81,
+                "end": 221
+            }
+        ],
+        "modules/bdb_tables.c": [
+            {
+                "name": "init_bdb_tables",
+                "start": 38,
+                "end": 41
+            },
+            {
+                "name": "release_bdb_tables",
+                "start": 43,
+                "end": 46
+            },
+            {
+                "name": "bdb_table_do_real_open",
+                "start": 57,
+                "end": 128
+            },
+            {
+                "name": "command_real_open_table",
+                "start": 131,
+                "end": 135
+            },
+            {
+                "name": "bdb_table_open",
+                "start": 137,
+                "end": 152
+            },
+            {
+                "name": "bdb_table_close",
+                "start": 154,
+                "end": 168
+            },
+            {
+                "name": "bdb_table_search",
+                "start": 173,
+                "end": 224
+            },
+            {
+                "name": "bdb_table_release_result",
+                "start": 226,
+                "end": 229
+            }
+        ],
+        "modules/sys_logger.c": [
+            {
+                "name": "cfg_set_facility",
+                "start": 89,
+                "end": 128
+            },
+            {
+                "name": "cfg_set_priority",
+                "start": 130,
+                "end": 156
+            },
+            {
+                "name": "cfg_syslog_logformat",
+                "start": 158,
+                "end": 167
+            },
+            {
+                "name": "sys_log_open",
+                "start": 169,
+                "end": 173
+            },
+            {
+                "name": "sys_log_close",
+                "start": 175,
+                "end": 181
+            },
+            {
+                "name": "sys_log_access",
+                "start": 185,
+                "end": 199
+            },
+            {
+                "name": "sys_log_server",
+                "start": 202,
+                "end": 213
+            },
+            {
+                "name": "cfg_syslog_access",
+                "start": 216,
+                "end": 248
+            }
+        ],
+        "modules/dnsbl_tables.c": [
+            {
+                "name": "init_dnsbl_tables",
+                "start": 39,
+                "end": 42
+            },
+            {
+                "name": "release_dnsbl_tables",
+                "start": 44,
+                "end": 47
+            },
+            {
+                "name": "dnsbl_table_open",
+                "start": 57,
+                "end": 84
+            },
+            {
+                "name": "dnsbl_table_close",
+                "start": 86,
+                "end": 93
+            },
+            {
+                "name": "dnsbl_table_search",
+                "start": 96,
+                "end": 130
+            },
+            {
+                "name": "dnsbl_table_release_result",
+                "start": 132,
+                "end": 136
+            },
+            {
+                "name": "resolv_hostname",
+                "start": 142,
+                "end": 173
+            }
+        ],
+        "modules/perl_handler.c": [
+            {
+                "name": "perl_init_service",
+                "start": 54,
+                "end": 55
+            },
+            {
+                "name": "perl_check_preview_handler",
+                "start": 61,
+                "end": 62
+            },
+            {
+                "name": "perl_service_io",
+                "start": 64,
+                "end": 65
+            },
+            {
+                "name": "init_perl_handler",
+                "start": 68,
+                "end": 71
+            },
+            {
+                "name": "load_perl_module",
+                "start": 74,
+                "end": 106
+            },
+            {
+                "name": "perl_init_service",
+                "start": 111,
+                "end": 115
+            },
+            {
+                "name": "perl_close_service",
+                "start": 117,
+                "end": 120
+            },
+            {
+                "name": "perl_init_request_data",
+                "start": 123,
+                "end": 126
+            },
+            {
+                "name": "perl_release_request_data",
+                "start": 128,
+                "end": 131
+            },
+            {
+                "name": "perl_check_preview_handler",
+                "start": 134,
+                "end": 138
+            },
+            {
+                "name": "perl_end_of_data_handler",
+                "start": 140,
+                "end": 143
+            },
+            {
+                "name": "perl_service_io",
+                "start": 146,
+                "end": 152
+            }
+        ],
+        "modules/ldap_module.c": [
+            {
+                "name": "init_ldap_module",
+                "start": 48,
+                "end": 52
+            },
+            {
+                "name": "release_ldap_module",
+                "start": 54,
+                "end": 58
+            },
+            {
+                "name": "init_ldap_pools",
+                "start": 95,
+                "end": 100
+            },
+            {
+                "name": "release_ldap_pools",
+                "start": 102,
+                "end": 110
+            },
+            {
+                "name": "add_ldap_pool",
+                "start": 114,
+                "end": 125
+            },
+            {
+                "name": "search_ldap_pools",
+                "start": 127,
+                "end": 142
+            },
+            {
+                "name": "ldap_pool_create",
+                "start": 144,
+                "end": 196
+            },
+            {
+                "name": "ldap_pool_destroy",
+                "start": 199,
+                "end": 221
+            },
+            {
+                "name": "ldap_connection_open",
+                "start": 223,
+                "end": 330
+            },
+            {
+                "name": "ldap_connection_release",
+                "start": 332,
+                "end": 364
+            },
+            {
+                "name": "str_trim",
+                "start": 382,
+                "end": 402
+            },
+            {
+                "name": "parse_ldap_str",
+                "start": 404,
+                "end": 484
+            },
+            {
+                "name": "store_val",
+                "start": 492,
+                "end": 519
+            },
+            {
+                "name": "read_val",
+                "start": 521,
+                "end": 538
+            },
+            {
+                "name": "ldap_table_open",
+                "start": 541,
+                "end": 594
+            },
+            {
+                "name": "ldap_table_close",
+                "start": 596,
+                "end": 609
+            },
+            {
+                "name": "create_filter",
+                "start": 611,
+                "end": 639
+            },
+            {
+                "name": "ldap_table_search",
+                "start": 641,
+                "end": 756
+            },
+            {
+                "name": "ldap_table_release_result",
+                "start": 758,
+                "end": 761
+            }
+        ],
+        "os/unix/net_io.c": [
+            {
+                "name": "ci_sockaddr_t_to_host",
+                "start": 31,
+                "end": 38
+            },
+            {
+                "name": "icap_init_server",
+                "start": 87,
+                "end": 131
+            },
+            {
+                "name": "icap_socket_opts",
+                "start": 135,
+                "end": 162
+            },
+            {
+                "name": "ci_netio_init",
+                "start": 167,
+                "end": 171
+            },
+            {
+                "name": "ci_wait_for_data",
+                "start": 207,
+                "end": 250
+            },
+            {
+                "name": "ci_read",
+                "start": 253,
+                "end": 274
+            },
+            {
+                "name": "ci_write",
+                "start": 277,
+                "end": 305
+            },
+            {
+                "name": "ci_read_nonblock",
+                "start": 308,
+                "end": 319
+            },
+            {
+                "name": "ci_write_nonblock",
+                "start": 323,
+                "end": 334
+            },
+            {
+                "name": "ci_linger_close",
+                "start": 338,
+                "end": 356
+            },
+            {
+                "name": "ci_hard_close",
+                "start": 359,
+                "end": 363
+            }
+        ],
+        "os/unix/utilfunc.c": [
+            {
+                "name": "ci_strtime",
+                "start": 51,
+                "end": 59
+            },
+            {
+                "name": "ci_strtime_rfc822",
+                "start": 61,
+                "end": 75
+            },
+            {
+                "name": "ci_mktemp_file",
+                "start": 77,
+                "end": 82
+            },
+            {
+                "name": "ci_usleep",
+                "start": 85,
+                "end": 92
+            }
+        ],
+        "os/unix/threads.c": [
+            {
+                "name": "init_child_mutexes",
+                "start": 46,
+                "end": 64
+            },
+            {
+                "name": "add_mutex",
+                "start": 66,
+                "end": 103
+            },
+            {
+                "name": "del_mutex",
+                "start": 105,
+                "end": 123
+            },
+            {
+                "name": "ci_thread_mutex_init",
+                "start": 126,
+                "end": 134
+            },
+            {
+                "name": "ci_thread_mutex_destroy",
+                "start": 136,
+                "end": 140
+            },
+            {
+                "name": "ci_thread_rwlock_init",
+                "start": 164,
+                "end": 167
+            },
+            {
+                "name": "ci_thread_rwlock_destroy",
+                "start": 169,
+                "end": 172
+            },
+            {
+                "name": "ci_thread_rwlock_rdlock",
+                "start": 174,
+                "end": 177
+            },
+            {
+                "name": "ci_thread_rwlock_wrlock",
+                "start": 179,
+                "end": 182
+            },
+            {
+                "name": "ci_thread_rwlock_unlock",
+                "start": 184,
+                "end": 187
+            },
+            {
+                "name": "ci_thread_cond_init",
+                "start": 191,
+                "end": 194
+            },
+            {
+                "name": "ci_thread_cond_destroy",
+                "start": 196,
+                "end": 199
+            },
+            {
+                "name": "ci_thread_create",
+                "start": 201,
+                "end": 204
+            },
+            {
+                "name": "ci_thread_join",
+                "start": 206,
+                "end": 209
+            }
+        ],
+        "os/unix/proc_utils.c": [
+            {
+                "name": "store_pid",
+                "start": 29,
+                "end": 45
+            },
+            {
+                "name": "clear_pid",
+                "start": 47,
+                "end": 54
+            },
+            {
+                "name": "is_icap_running",
+                "start": 56,
+                "end": 84
+            },
+            {
+                "name": "set_running_permissions",
+                "start": 88,
+                "end": 149
+            }
+        ],
+        "os/win32/net_io.c": [
+            {
+                "name": "ci_sockaddr_t_to_host",
+                "start": 31,
+                "end": 39
+            },
+            {
+                "name": "windows_init",
+                "start": 43,
+                "end": 61
+            },
+            {
+                "name": "icap_init_server",
+                "start": 64,
+                "end": 97
+            },
+            {
+                "name": "icap_socket_opts",
+                "start": 101,
+                "end": 135
+            },
+            {
+                "name": "ci_netio_init",
+                "start": 141,
+                "end": 147
+            },
+            {
+                "name": "ci_wait_for_data",
+                "start": 183,
+                "end": 225
+            },
+            {
+                "name": "ci_read",
+                "start": 229,
+                "end": 255
+            },
+            {
+                "name": "ci_write",
+                "start": 258,
+                "end": 290
+            },
+            {
+                "name": "ci_read_nonblock",
+                "start": 293,
+                "end": 301
+            },
+            {
+                "name": "ci_write_nonblock",
+                "start": 304,
+                "end": 312
+            },
+            {
+                "name": "ci_linger_close",
+                "start": 314,
+                "end": 332
+            },
+            {
+                "name": "ci_hard_close",
+                "start": 335,
+                "end": 339
+            }
+        ],
+        "os/win32/utilfunc.c": [
+            {
+                "name": "strncasecmp",
+                "start": 30,
+                "end": 38
+            },
+            {
+                "name": "strcasecmp",
+                "start": 41,
+                "end": 49
+            },
+            {
+                "name": "localtime_r",
+                "start": 55,
+                "end": 59
+            },
+            {
+                "name": "gmtime_r",
+                "start": 61,
+                "end": 65
+            },
+            {
+                "name": "ci_strtime",
+                "start": 77,
+                "end": 86
+            },
+            {
+                "name": "ci_strtime_rfc822",
+                "start": 88,
+                "end": 97
+            },
+            {
+                "name": "ci_mktemp_file",
+                "start": 99,
+                "end": 105
+            }
+        ],
+        "os/win32/threads.c": [
+            {
+                "name": "ci_thread_mutex_init",
+                "start": 21,
+                "end": 25
+            },
+            {
+                "name": "ci_thread_mutex_destroy",
+                "start": 27,
+                "end": 31
+            },
+            {
+                "name": "ci_thread_mutex_lock",
+                "start": 33,
+                "end": 37
+            },
+            {
+                "name": "ci_thread_mutex_unlock",
+                "start": 39,
+                "end": 43
+            },
+            {
+                "name": "ci_thread_cond_init",
+                "start": 45,
+                "end": 49
+            },
+            {
+                "name": "ci_thread_cond_destroy",
+                "start": 51,
+                "end": 56
+            },
+            {
+                "name": "ci_thread_cond_wait",
+                "start": 58,
+                "end": 64
+            },
+            {
+                "name": "ci_thread_cond_broadcast",
+                "start": 66,
+                "end": 73
+            },
+            {
+                "name": "ci_thread_cond_signal",
+                "start": 75,
+                "end": 79
+            },
+            {
+                "name": "ci_thread_create",
+                "start": 81,
+                "end": 87
+            },
+            {
+                "name": "ci_thread_join",
+                "start": 89,
+                "end": 95
+            },
+            {
+                "name": "ci_thread_rwlock_init",
+                "start": 101,
+                "end": 105
+            },
+            {
+                "name": "ci_thread_rwlock_destroy",
+                "start": 107,
+                "end": 111
+            },
+            {
+                "name": "ci_thread_rwlock_rdlock",
+                "start": 113,
+                "end": 117
+            },
+            {
+                "name": "ci_thread_rwlock_wrlock",
+                "start": 119,
+                "end": 123
+            },
+            {
+                "name": "ci_thread_rwlock_unlock",
+                "start": 125,
+                "end": 129
+            }
+        ],
+        "os/win32/proc_mutex.c": [
+            {
+                "name": "ci_proc_mutex_init",
+                "start": 27,
+                "end": 34
+            },
+            {
+                "name": "ci_proc_mutex_destroy",
+                "start": 36,
+                "end": 40
+            },
+            {
+                "name": "ci_proc_mutex_lock",
+                "start": 42,
+                "end": 46
+            },
+            {
+                "name": "ci_proc_mutex_unlock",
+                "start": 48,
+                "end": 52
+            }
+        ],
+        "os/win32/shared_mem.c": [
+            {
+                "name": "ci_shared_mem_create",
+                "start": 28,
+                "end": 68
+            },
+            {
+                "name": "ci_shared_mem_attach",
+                "start": 71,
+                "end": 87
+            },
+            {
+                "name": "ci_shared_mem_detach",
+                "start": 89,
+                "end": 94
+            },
+            {
+                "name": "ci_shared_mem_destroy",
+                "start": 97,
+                "end": 102
+            }
+        ]
+    }
+}

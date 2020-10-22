@@ -1,0 +1,1717 @@
+{
+    "garmin-forerunner-tools-0.10repacked": {
+        "src/garmin.h": [
+            {
+                "name": "garmin_lpid",
+                "start": 1976,
+                "end": 1977
+            },
+            {
+                "name": "garmin_gpid",
+                "start": 1979,
+                "end": 1980
+            },
+            {
+                "name": "garmin_unpack_packet",
+                "start": 1988,
+                "end": 1989
+            },
+            {
+                "name": "garmin_unpack",
+                "start": 1990,
+                "end": 1991
+            },
+            {
+                "name": "garmin_save",
+                "start": 1998,
+                "end": 2000
+            },
+            {
+                "name": "garmin_pack",
+                "start": 2001,
+                "end": 2002
+            },
+            {
+                "name": "garmin_command_supported",
+                "start": 2019,
+                "end": 2020
+            },
+            {
+                "name": "garmin_make_command_packet",
+                "start": 2022,
+                "end": 2024
+            },
+            {
+                "name": "garmin_send_command",
+                "start": 2026,
+                "end": 2027
+            },
+            {
+                "name": "garmin_read_via",
+                "start": 2060,
+                "end": 2061
+            },
+            {
+                "name": "garmin_get",
+                "start": 2062,
+                "end": 2063
+            },
+            {
+                "name": "garmin_init",
+                "start": 2064,
+                "end": 2065
+            },
+            {
+                "name": "garmin_print_packet",
+                "start": 2082,
+                "end": 2084
+            },
+            {
+                "name": "garmin_packetize",
+                "start": 2085,
+                "end": 2088
+            },
+            {
+                "name": "garmin_list_append",
+                "start": 2121,
+                "end": 2122
+            },
+            {
+                "name": "garmin_list_data",
+                "start": 2123,
+                "end": 2124
+            },
+            {
+                "name": "get_run_track_lap_info",
+                "start": 2144,
+                "end": 2147
+            }
+        ],
+        "src/pack.c": [
+            {
+                "name": "garmin_pack_d100",
+                "start": 53,
+                "end": 60
+            },
+            {
+                "name": "garmin_pack_d101",
+                "start": 67,
+                "end": 76
+            },
+            {
+                "name": "garmin_pack_d102",
+                "start": 83,
+                "end": 92
+            },
+            {
+                "name": "garmin_pack_d103",
+                "start": 99,
+                "end": 108
+            },
+            {
+                "name": "garmin_pack_d104",
+                "start": 115,
+                "end": 125
+            },
+            {
+                "name": "garmin_pack_d105",
+                "start": 132,
+                "end": 138
+            },
+            {
+                "name": "garmin_pack_d106",
+                "start": 145,
+                "end": 154
+            },
+            {
+                "name": "garmin_pack_d107",
+                "start": 161,
+                "end": 172
+            },
+            {
+                "name": "garmin_pack_d108",
+                "start": 179,
+                "end": 200
+            },
+            {
+                "name": "garmin_pack_d109",
+                "start": 207,
+                "end": 229
+            },
+            {
+                "name": "garmin_pack_d110",
+                "start": 236,
+                "end": 261
+            },
+            {
+                "name": "garmin_pack_d120",
+                "start": 268,
+                "end": 272
+            },
+            {
+                "name": "garmin_pack_d150",
+                "start": 279,
+                "end": 291
+            },
+            {
+                "name": "garmin_pack_d151",
+                "start": 298,
+                "end": 313
+            },
+            {
+                "name": "garmin_pack_d152",
+                "start": 320,
+                "end": 335
+            },
+            {
+                "name": "garmin_pack_d154",
+                "start": 342,
+                "end": 358
+            },
+            {
+                "name": "garmin_pack_d155",
+                "start": 365,
+                "end": 382
+            },
+            {
+                "name": "garmin_pack_d200",
+                "start": 389,
+                "end": 393
+            },
+            {
+                "name": "garmin_pack_d201",
+                "start": 400,
+                "end": 405
+            },
+            {
+                "name": "garmin_pack_d202",
+                "start": 412,
+                "end": 416
+            },
+            {
+                "name": "garmin_pack_d210",
+                "start": 423,
+                "end": 429
+            },
+            {
+                "name": "garmin_pack_d300",
+                "start": 436,
+                "end": 442
+            },
+            {
+                "name": "garmin_pack_d301",
+                "start": 449,
+                "end": 457
+            },
+            {
+                "name": "garmin_pack_d302",
+                "start": 464,
+                "end": 473
+            },
+            {
+                "name": "garmin_pack_d303",
+                "start": 480,
+                "end": 487
+            },
+            {
+                "name": "garmin_pack_d304",
+                "start": 494,
+                "end": 504
+            },
+            {
+                "name": "garmin_pack_d310",
+                "start": 511,
+                "end": 517
+            },
+            {
+                "name": "garmin_pack_d311",
+                "start": 524,
+                "end": 528
+            },
+            {
+                "name": "garmin_pack_d312",
+                "start": 535,
+                "end": 541
+            },
+            {
+                "name": "garmin_pack_d400",
+                "start": 548,
+                "end": 554
+            },
+            {
+                "name": "garmin_pack_d403",
+                "start": 561,
+                "end": 567
+            },
+            {
+                "name": "garmin_pack_d450",
+                "start": 574,
+                "end": 581
+            },
+            {
+                "name": "garmin_pack_d500",
+                "start": 588,
+                "end": 602
+            },
+            {
+                "name": "garmin_pack_d501",
+                "start": 609,
+                "end": 624
+            },
+            {
+                "name": "garmin_pack_d550",
+                "start": 631,
+                "end": 646
+            },
+            {
+                "name": "garmin_pack_d551",
+                "start": 653,
+                "end": 669
+            },
+            {
+                "name": "garmin_pack_d600",
+                "start": 676,
+                "end": 685
+            },
+            {
+                "name": "garmin_pack_d650",
+                "start": 692,
+                "end": 710
+            },
+            {
+                "name": "garmin_pack_d700",
+                "start": 717,
+                "end": 721
+            },
+            {
+                "name": "garmin_pack_d800",
+                "start": 728,
+                "end": 744
+            },
+            {
+                "name": "garmin_pack_d906",
+                "start": 751,
+                "end": 761
+            },
+            {
+                "name": "garmin_pack_d1000",
+                "start": 772,
+                "end": 784
+            },
+            {
+                "name": "garmin_pack_d1001",
+                "start": 791,
+                "end": 805
+            },
+            {
+                "name": "garmin_pack_d1002",
+                "start": 812,
+                "end": 831
+            },
+            {
+                "name": "garmin_pack_d1003",
+                "start": 838,
+                "end": 843
+            },
+            {
+                "name": "garmin_pack_d1004",
+                "start": 850,
+                "end": 876
+            },
+            {
+                "name": "garmin_pack_d1005",
+                "start": 883,
+                "end": 889
+            },
+            {
+                "name": "garmin_pack_d1006",
+                "start": 896,
+                "end": 903
+            },
+            {
+                "name": "garmin_pack_d1007",
+                "start": 910,
+                "end": 923
+            },
+            {
+                "name": "garmin_pack_d1008",
+                "start": 930,
+                "end": 934
+            },
+            {
+                "name": "garmin_pack_d1009",
+                "start": 941,
+                "end": 954
+            },
+            {
+                "name": "garmin_pack_d1010",
+                "start": 961,
+                "end": 974
+            },
+            {
+                "name": "garmin_pack_d1011",
+                "start": 981,
+                "end": 998
+            },
+            {
+                "name": "garmin_pack_d1012",
+                "start": 1005,
+                "end": 1014
+            },
+            {
+                "name": "garmin_pack_d1013",
+                "start": 1021,
+                "end": 1028
+            },
+            {
+                "name": "garmin_pack_d1015",
+                "start": 1035,
+                "end": 1060
+            },
+            {
+                "name": "garmin_pack_dlist",
+                "start": 1065,
+                "end": 1076
+            },
+            {
+                "name": "mkpath",
+                "start": 1081,
+                "end": 1156
+            },
+            {
+                "name": "garmin_save",
+                "start": 1163,
+                "end": 1242
+            },
+            {
+                "name": "garmin_pack",
+                "start": 1254,
+                "end": 1347
+            }
+        ],
+        "src/garmin_gchart.c": [
+            {
+                "name": "gchart_t_encode",
+                "start": 53,
+                "end": 55
+            },
+            {
+                "name": "gchart_e_encode_single",
+                "start": 58,
+                "end": 72
+            },
+            {
+                "name": "gchart_e_encode",
+                "start": 75,
+                "end": 87
+            },
+            {
+                "name": "get_gchart_max_data",
+                "start": 90,
+                "end": 131
+            },
+            {
+                "name": "get_gchart_data",
+                "start": 134,
+                "end": 256
+            },
+            {
+                "name": "print_gchart_data",
+                "start": 259,
+                "end": 302
+            },
+            {
+                "name": "process_arguments",
+                "start": 305,
+                "end": 341
+            },
+            {
+                "name": "main",
+                "start": 344,
+                "end": 368
+            }
+        ],
+        "src/byte_util.c": [
+            {
+                "name": "get_string",
+                "start": 85,
+                "end": 108
+            },
+            {
+                "name": "get_vstring",
+                "start": 116,
+                "end": 132
+            },
+            {
+                "name": "put_vstring",
+                "start": 135,
+                "end": 142
+            },
+            {
+                "name": "get_strings",
+                "start": 150,
+                "end": 190
+            }
+        ],
+        "src/garmin_dump.c": [
+            {
+                "name": "main",
+                "start": 25,
+                "end": 39
+            }
+        ],
+        "src/garmin_get_info.c": [
+            {
+                "name": "main",
+                "start": 25,
+                "end": 43
+            }
+        ],
+        "src/garmin_gpx.c": [
+            {
+                "name": "get_gpx_data",
+                "start": 44,
+                "end": 187
+            },
+            {
+                "name": "print_spaces",
+                "start": 190,
+                "end": 198
+            },
+            {
+                "name": "print_open_tag",
+                "start": 201,
+                "end": 206
+            },
+            {
+                "name": "print_close_tag",
+                "start": 209,
+                "end": 214
+            },
+            {
+                "name": "print_string_tag",
+                "start": 217,
+                "end": 222
+            },
+            {
+                "name": "print_gpx_header",
+                "start": 225,
+                "end": 240
+            },
+            {
+                "name": "print_time_tag",
+                "start": 242,
+                "end": 253
+            },
+            {
+                "name": "print_bounds_tag",
+                "start": 255,
+                "end": 265
+            },
+            {
+                "name": "print_route_points",
+                "start": 267,
+                "end": 308
+            },
+            {
+                "name": "print_gpx_data",
+                "start": 310,
+                "end": 337
+            },
+            {
+                "name": "main",
+                "start": 340,
+                "end": 354
+            }
+        ],
+        "src/garmin_gmap.c": [
+            {
+                "name": "get_gmap_data",
+                "start": 49,
+                "end": 175
+            },
+            {
+                "name": "print_spaces",
+                "start": 178,
+                "end": 186
+            },
+            {
+                "name": "print_open_tag",
+                "start": 189,
+                "end": 194
+            },
+            {
+                "name": "print_close_tag",
+                "start": 197,
+                "end": 202
+            },
+            {
+                "name": "print_string_tag",
+                "start": 205,
+                "end": 210
+            },
+            {
+                "name": "print_position",
+                "start": 213,
+                "end": 222
+            },
+            {
+                "name": "print_gmap_data",
+                "start": 225,
+                "end": 253
+            },
+            {
+                "name": "main",
+                "start": 256,
+                "end": 270
+            }
+        ],
+        "src/protocol.c": [
+            {
+                "name": "garmin_assign_protocol",
+                "start": 30,
+                "end": 185
+            },
+            {
+                "name": "merge_strings",
+                "start": 188,
+                "end": 209
+            },
+            {
+                "name": "garmin_read_singleton",
+                "start": 214,
+                "end": 238
+            },
+            {
+                "name": "garmin_read_records",
+                "start": 243,
+                "end": 306
+            },
+            {
+                "name": "garmin_read_records2",
+                "start": 311,
+                "end": 406
+            },
+            {
+                "name": "garmin_read_records3",
+                "start": 411,
+                "end": 517
+            },
+            {
+                "name": "garmin_read_a000_a001",
+                "start": 525,
+                "end": 606
+            },
+            {
+                "name": "garmin_read_a100",
+                "start": 613,
+                "end": 625
+            },
+            {
+                "name": "garmin_read_a101",
+                "start": 632,
+                "end": 644
+            },
+            {
+                "name": "garmin_read_a200",
+                "start": 651,
+                "end": 665
+            },
+            {
+                "name": "garmin_read_a201",
+                "start": 672,
+                "end": 688
+            },
+            {
+                "name": "garmin_read_a300",
+                "start": 695,
+                "end": 707
+            },
+            {
+                "name": "garmin_read_a301",
+                "start": 714,
+                "end": 728
+            },
+            {
+                "name": "garmin_read_a302",
+                "start": 735,
+                "end": 739
+            },
+            {
+                "name": "garmin_read_a400",
+                "start": 746,
+                "end": 758
+            },
+            {
+                "name": "garmin_read_a500",
+                "start": 765,
+                "end": 777
+            },
+            {
+                "name": "garmin_read_a600",
+                "start": 784,
+                "end": 794
+            },
+            {
+                "name": "garmin_read_a650",
+                "start": 801,
+                "end": 813
+            },
+            {
+                "name": "garmin_read_a700",
+                "start": 820,
+                "end": 830
+            },
+            {
+                "name": "garmin_read_a800",
+                "start": 837,
+                "end": 847
+            },
+            {
+                "name": "garmin_read_a906",
+                "start": 854,
+                "end": 864
+            },
+            {
+                "name": "garmin_read_a1000",
+                "start": 871,
+                "end": 889
+            },
+            {
+                "name": "garmin_read_a1002",
+                "start": 896,
+                "end": 915
+            },
+            {
+                "name": "garmin_read_a1003",
+                "start": 922,
+                "end": 936
+            },
+            {
+                "name": "garmin_read_a1004",
+                "start": 943,
+                "end": 955
+            },
+            {
+                "name": "garmin_read_a1005",
+                "start": 962,
+                "end": 974
+            },
+            {
+                "name": "garmin_read_a1006",
+                "start": 981,
+                "end": 999
+            },
+            {
+                "name": "garmin_read_a1007",
+                "start": 1006,
+                "end": 1020
+            },
+            {
+                "name": "garmin_read_a1008",
+                "start": 1027,
+                "end": 1039
+            },
+            {
+                "name": "garmin_read_a1009",
+                "start": 1046,
+                "end": 1058
+            },
+            {
+                "name": "garmin_read_a1012",
+                "start": 1065,
+                "end": 1094
+            },
+            {
+                "name": "garmin_read_via",
+                "start": 1101,
+                "end": 1140
+            },
+            {
+                "name": "garmin_get",
+                "start": 1147,
+                "end": 1175
+            },
+            {
+                "name": "garmin_init",
+                "start": 1180,
+                "end": 1193
+            }
+        ],
+        "src/garmin_save_runs.c": [
+            {
+                "name": "main",
+                "start": 26,
+                "end": 44
+            }
+        ],
+        "src/usb_comm.c": [
+            {
+                "name": "garmin_close",
+                "start": 34,
+                "end": 44
+            },
+            {
+                "name": "garmin_open",
+                "start": 53,
+                "end": 174
+            },
+            {
+                "name": "garmin_packet_type",
+                "start": 177,
+                "end": 181
+            },
+            {
+                "name": "garmin_packet_id",
+                "start": 184,
+                "end": 188
+            },
+            {
+                "name": "garmin_packet_size",
+                "start": 191,
+                "end": 195
+            },
+            {
+                "name": "garmin_packet_data",
+                "start": 198,
+                "end": 202
+            },
+            {
+                "name": "garmin_packetize",
+                "start": 205,
+                "end": 233
+            },
+            {
+                "name": "garmin_read",
+                "start": 236,
+                "end": 277
+            },
+            {
+                "name": "garmin_write",
+                "start": 280,
+                "end": 306
+            },
+            {
+                "name": "garmin_start_session",
+                "start": 309,
+                "end": 328
+            },
+            {
+                "name": "garmin_print_packet",
+                "start": 331,
+                "end": 377
+            }
+        ],
+        "src/print.c": [
+            {
+                "name": "print_spaces",
+                "start": 99,
+                "end": 107
+            },
+            {
+                "name": "open_tag",
+                "start": 110,
+                "end": 115
+            },
+            {
+                "name": "open_tag_with_type",
+                "start": 118,
+                "end": 123
+            },
+            {
+                "name": "close_tag",
+                "start": 126,
+                "end": 131
+            },
+            {
+                "name": "garmin_print_dlist",
+                "start": 134,
+                "end": 142
+            },
+            {
+                "name": "garmin_print_dtime",
+                "start": 147,
+                "end": 182
+            },
+            {
+                "name": "garmin_print_dpos",
+                "start": 187,
+                "end": 196
+            },
+            {
+                "name": "garmin_print_float32",
+                "start": 204,
+                "end": 232
+            },
+            {
+                "name": "garmin_print_float64",
+                "start": 240,
+                "end": 284
+            },
+            {
+                "name": "garmin_print_dfloat32",
+                "start": 292,
+                "end": 300
+            },
+            {
+                "name": "garmin_print_ddist",
+                "start": 305,
+                "end": 327
+            },
+            {
+                "name": "garmin_print_d100",
+                "start": 334,
+                "end": 342
+            },
+            {
+                "name": "garmin_print_d101",
+                "start": 349,
+                "end": 359
+            },
+            {
+                "name": "garmin_print_d102",
+                "start": 366,
+                "end": 376
+            },
+            {
+                "name": "garmin_d103_smbl",
+                "start": 384,
+                "end": 402
+            },
+            {
+                "name": "garmin_d103_dspl",
+                "start": 405,
+                "end": 410
+            },
+            {
+                "name": "garmin_print_d103",
+                "start": 413,
+                "end": 423
+            },
+            {
+                "name": "garmin_d104_dspl",
+                "start": 431,
+                "end": 437
+            },
+            {
+                "name": "garmin_print_d104",
+                "start": 440,
+                "end": 451
+            },
+            {
+                "name": "garmin_print_d105",
+                "start": 458,
+                "end": 466
+            },
+            {
+                "name": "garmin_print_d106",
+                "start": 473,
+                "end": 486
+            },
+            {
+                "name": "garmin_d107_clr",
+                "start": 494,
+                "end": 500
+            },
+            {
+                "name": "garmin_print_d107",
+                "start": 503,
+                "end": 515
+            },
+            {
+                "name": "garmin_d108_wpt_class",
+                "start": 523,
+                "end": 538
+            },
+            {
+                "name": "garmin_d108_color",
+                "start": 541,
+                "end": 560
+            },
+            {
+                "name": "garmin_print_d108",
+                "start": 563,
+                "end": 584
+            },
+            {
+                "name": "garmin_print_d109",
+                "start": 591,
+                "end": 618
+            },
+            {
+                "name": "garmin_d110_wpt_class",
+                "start": 626,
+                "end": 641
+            },
+            {
+                "name": "garmin_d110_color",
+                "start": 644,
+                "end": 663
+            },
+            {
+                "name": "garmin_d110_dspl",
+                "start": 666,
+                "end": 671
+            },
+            {
+                "name": "garmin_print_d110",
+                "start": 674,
+                "end": 701
+            },
+            {
+                "name": "garmin_print_d120",
+                "start": 708,
+                "end": 712
+            },
+            {
+                "name": "garmin_d150_wpt_class",
+                "start": 720,
+                "end": 730
+            },
+            {
+                "name": "garmin_print_d150",
+                "start": 733,
+                "end": 751
+            },
+            {
+                "name": "garmin_d151_wpt_class",
+                "start": 759,
+                "end": 765
+            },
+            {
+                "name": "garmin_print_d151",
+                "start": 768,
+                "end": 787
+            },
+            {
+                "name": "garmin_d152_wpt_class",
+                "start": 795,
+                "end": 803
+            },
+            {
+                "name": "garmin_print_d152",
+                "start": 806,
+                "end": 825
+            },
+            {
+                "name": "garmin_d154_wpt_class",
+                "start": 833,
+                "end": 845
+            },
+            {
+                "name": "garmin_print_d154",
+                "start": 848,
+                "end": 868
+            },
+            {
+                "name": "garmin_d155_wpt_class",
+                "start": 876,
+                "end": 884
+            },
+            {
+                "name": "garmin_d155_dspl",
+                "start": 887,
+                "end": 892
+            },
+            {
+                "name": "garmin_print_d155",
+                "start": 895,
+                "end": 916
+            },
+            {
+                "name": "garmin_print_d200",
+                "start": 923,
+                "end": 928
+            },
+            {
+                "name": "garmin_print_d201",
+                "start": 935,
+                "end": 941
+            },
+            {
+                "name": "garmin_print_d202",
+                "start": 948,
+                "end": 954
+            },
+            {
+                "name": "garmin_d210_class",
+                "start": 962,
+                "end": 969
+            },
+            {
+                "name": "garmin_print_d210",
+                "start": 972,
+                "end": 980
+            },
+            {
+                "name": "garmin_print_d300",
+                "start": 987,
+                "end": 998
+            },
+            {
+                "name": "garmin_print_d301",
+                "start": 1005,
+                "end": 1018
+            },
+            {
+                "name": "garmin_print_d302",
+                "start": 1025,
+                "end": 1040
+            },
+            {
+                "name": "garmin_print_d303",
+                "start": 1047,
+                "end": 1059
+            },
+            {
+                "name": "garmin_print_d304",
+                "start": 1066,
+                "end": 1085
+            },
+            {
+                "name": "garmin_print_d310",
+                "start": 1092,
+                "end": 1100
+            },
+            {
+                "name": "garmin_print_d311",
+                "start": 1107,
+                "end": 1112
+            },
+            {
+                "name": "garmin_d312_color",
+                "start": 1119,
+                "end": 1139
+            },
+            {
+                "name": "garmin_print_d312",
+                "start": 1142,
+                "end": 1153
+            },
+            {
+                "name": "garmin_print_d400",
+                "start": 1160,
+                "end": 1167
+            },
+            {
+                "name": "garmin_print_d403",
+                "start": 1174,
+                "end": 1181
+            },
+            {
+                "name": "garmin_print_d450",
+                "start": 1188,
+                "end": 1197
+            },
+            {
+                "name": "garmin_print_d500",
+                "start": 1204,
+                "end": 1220
+            },
+            {
+                "name": "garmin_print_d501",
+                "start": 1227,
+                "end": 1244
+            },
+            {
+                "name": "garmin_print_d550",
+                "start": 1251,
+                "end": 1268
+            },
+            {
+                "name": "garmin_print_d551",
+                "start": 1275,
+                "end": 1293
+            },
+            {
+                "name": "garmin_print_d600",
+                "start": 1300,
+                "end": 1307
+            },
+            {
+                "name": "garmin_print_d650",
+                "start": 1314,
+                "end": 1335
+            },
+            {
+                "name": "garmin_print_d700",
+                "start": 1342,
+                "end": 1348
+            },
+            {
+                "name": "garmin_d800_fix",
+                "start": 1356,
+                "end": 1364
+            },
+            {
+                "name": "garmin_print_d800",
+                "start": 1367,
+                "end": 1390
+            },
+            {
+                "name": "garmin_print_d906",
+                "start": 1397,
+                "end": 1429
+            },
+            {
+                "name": "garmin_d1000_sport_type",
+                "start": 1440,
+                "end": 1445
+            },
+            {
+                "name": "garmin_d1000_program_type",
+                "start": 1448,
+                "end": 1453
+            },
+            {
+                "name": "garmin_print_d1000",
+                "start": 1456,
+                "end": 1478
+            },
+            {
+                "name": "garmin_d1001_intensity",
+                "start": 1486,
+                "end": 1490
+            },
+            {
+                "name": "garmin_print_d1001",
+                "start": 1493,
+                "end": 1517
+            },
+            {
+                "name": "garmin_d1002_duration_type",
+                "start": 1525,
+                "end": 1534
+            },
+            {
+                "name": "garmin_print_d1002",
+                "start": 1537,
+                "end": 1592
+            },
+            {
+                "name": "garmin_print_d1003",
+                "start": 1599,
+                "end": 1605
+            },
+            {
+                "name": "garmin_print_d1004",
+                "start": 1612,
+                "end": 1654
+            },
+            {
+                "name": "garmin_print_d1005",
+                "start": 1661,
+                "end": 1671
+            },
+            {
+                "name": "garmin_print_d1006",
+                "start": 1678,
+                "end": 1687
+            },
+            {
+                "name": "garmin_print_d1007",
+                "start": 1694,
+                "end": 1715
+            },
+            {
+                "name": "garmin_print_d1008",
+                "start": 1723,
+                "end": 1729
+            },
+            {
+                "name": "garmin_d1009_multisport",
+                "start": 1737,
+                "end": 1742
+            },
+            {
+                "name": "garmin_print_d1009",
+                "start": 1745,
+                "end": 1794
+            },
+            {
+                "name": "garmin_d1010_program_type",
+                "start": 1802,
+                "end": 1808
+            },
+            {
+                "name": "garmin_print_d1010",
+                "start": 1811,
+                "end": 1831
+            },
+            {
+                "name": "garmin_d1011_trigger_method",
+                "start": 1839,
+                "end": 1846
+            },
+            {
+                "name": "garmin_print_d1011",
+                "start": 1849,
+                "end": 1877
+            },
+            {
+                "name": "garmin_d1012_point_type",
+                "start": 1885,
+                "end": 1903
+            },
+            {
+                "name": "garmin_print_d1012",
+                "start": 1906,
+                "end": 1916
+            },
+            {
+                "name": "garmin_print_d1013",
+                "start": 1923,
+                "end": 1933
+            },
+            {
+                "name": "garmin_print_d1015",
+                "start": 1940,
+                "end": 1969
+            },
+            {
+                "name": "garmin_print_data",
+                "start": 1976,
+                "end": 2047
+            },
+            {
+                "name": "garmin_print_protocols",
+                "start": 2054,
+                "end": 2210
+            },
+            {
+                "name": "garmin_print_info",
+                "start": 2213,
+                "end": 2241
+            }
+        ],
+        "src/packet_id.c": [
+            {
+                "name": "garmin_lpid",
+                "start": 26,
+                "end": 93
+            },
+            {
+                "name": "garmin_gpid",
+                "start": 98,
+                "end": 165
+            }
+        ],
+        "src/symbol_name.c": [
+            {
+                "name": "garmin_symbol_name",
+                "start": 40,
+                "end": 300
+            }
+        ],
+        "src/scan.c": [
+            {
+                "name": "garmin_scan_attribute",
+                "start": 31,
+                "end": 35
+            },
+            {
+                "name": "garmin_scan_type",
+                "start": 38,
+                "end": 46
+            },
+            {
+                "name": "garmin_scan_position",
+                "start": 49,
+                "end": 53
+            }
+        ],
+        "src/command.c": [
+            {
+                "name": "garmin_command_supported",
+                "start": 29,
+                "end": 131
+            },
+            {
+                "name": "garmin_make_command_packet",
+                "start": 139,
+                "end": 224
+            },
+            {
+                "name": "garmin_send_command",
+                "start": 229,
+                "end": 245
+            }
+        ],
+        "src/run.c": [
+            {
+                "name": "get_run_track_lap_info",
+                "start": 27,
+                "end": 65
+            },
+            {
+                "name": "get_lap_index",
+                "start": 68,
+                "end": 97
+            },
+            {
+                "name": "get_lap_start_time",
+                "start": 100,
+                "end": 129
+            },
+            {
+                "name": "get_track",
+                "start": 132,
+                "end": 176
+            },
+            {
+                "name": "garmin_save_runs",
+                "start": 179,
+                "end": 369
+            }
+        ],
+        "src/unpack.c": [
+            {
+                "name": "garmin_unpack_d100",
+                "start": 52,
+                "end": 59
+            },
+            {
+                "name": "garmin_unpack_d101",
+                "start": 66,
+                "end": 75
+            },
+            {
+                "name": "garmin_unpack_d102",
+                "start": 82,
+                "end": 91
+            },
+            {
+                "name": "garmin_unpack_d103",
+                "start": 98,
+                "end": 107
+            },
+            {
+                "name": "garmin_unpack_d104",
+                "start": 114,
+                "end": 124
+            },
+            {
+                "name": "garmin_unpack_d105",
+                "start": 131,
+                "end": 137
+            },
+            {
+                "name": "garmin_unpack_d106",
+                "start": 144,
+                "end": 153
+            },
+            {
+                "name": "garmin_unpack_d107",
+                "start": 160,
+                "end": 171
+            },
+            {
+                "name": "garmin_unpack_d108",
+                "start": 178,
+                "end": 199
+            },
+            {
+                "name": "garmin_unpack_d109",
+                "start": 206,
+                "end": 228
+            },
+            {
+                "name": "garmin_unpack_d110",
+                "start": 235,
+                "end": 260
+            },
+            {
+                "name": "garmin_unpack_d120",
+                "start": 267,
+                "end": 271
+            },
+            {
+                "name": "garmin_unpack_d150",
+                "start": 278,
+                "end": 290
+            },
+            {
+                "name": "garmin_unpack_d151",
+                "start": 297,
+                "end": 312
+            },
+            {
+                "name": "garmin_unpack_d152",
+                "start": 319,
+                "end": 334
+            },
+            {
+                "name": "garmin_unpack_d154",
+                "start": 341,
+                "end": 357
+            },
+            {
+                "name": "garmin_unpack_d155",
+                "start": 364,
+                "end": 381
+            },
+            {
+                "name": "garmin_unpack_d200",
+                "start": 388,
+                "end": 392
+            },
+            {
+                "name": "garmin_unpack_d201",
+                "start": 399,
+                "end": 404
+            },
+            {
+                "name": "garmin_unpack_d202",
+                "start": 411,
+                "end": 415
+            },
+            {
+                "name": "garmin_unpack_d210",
+                "start": 422,
+                "end": 428
+            },
+            {
+                "name": "garmin_unpack_d300",
+                "start": 435,
+                "end": 441
+            },
+            {
+                "name": "garmin_unpack_d301",
+                "start": 448,
+                "end": 456
+            },
+            {
+                "name": "garmin_unpack_d302",
+                "start": 463,
+                "end": 472
+            },
+            {
+                "name": "garmin_unpack_d303",
+                "start": 479,
+                "end": 486
+            },
+            {
+                "name": "garmin_unpack_d304",
+                "start": 493,
+                "end": 503
+            },
+            {
+                "name": "garmin_unpack_d310",
+                "start": 510,
+                "end": 516
+            },
+            {
+                "name": "garmin_unpack_d311",
+                "start": 523,
+                "end": 527
+            },
+            {
+                "name": "garmin_unpack_d312",
+                "start": 534,
+                "end": 540
+            },
+            {
+                "name": "garmin_unpack_d400",
+                "start": 547,
+                "end": 553
+            },
+            {
+                "name": "garmin_unpack_d403",
+                "start": 560,
+                "end": 566
+            },
+            {
+                "name": "garmin_unpack_d450",
+                "start": 573,
+                "end": 580
+            },
+            {
+                "name": "garmin_unpack_d500",
+                "start": 587,
+                "end": 601
+            },
+            {
+                "name": "garmin_unpack_d501",
+                "start": 608,
+                "end": 623
+            },
+            {
+                "name": "garmin_unpack_d550",
+                "start": 630,
+                "end": 645
+            },
+            {
+                "name": "garmin_unpack_d551",
+                "start": 652,
+                "end": 668
+            },
+            {
+                "name": "garmin_unpack_d600",
+                "start": 675,
+                "end": 684
+            },
+            {
+                "name": "garmin_unpack_d650",
+                "start": 691,
+                "end": 709
+            },
+            {
+                "name": "garmin_unpack_d700",
+                "start": 716,
+                "end": 720
+            },
+            {
+                "name": "garmin_unpack_d800",
+                "start": 727,
+                "end": 743
+            },
+            {
+                "name": "garmin_unpack_d906",
+                "start": 750,
+                "end": 760
+            },
+            {
+                "name": "garmin_unpack_d1000",
+                "start": 771,
+                "end": 783
+            },
+            {
+                "name": "garmin_unpack_d1001",
+                "start": 790,
+                "end": 804
+            },
+            {
+                "name": "garmin_unpack_d1002",
+                "start": 811,
+                "end": 830
+            },
+            {
+                "name": "garmin_unpack_d1003",
+                "start": 837,
+                "end": 842
+            },
+            {
+                "name": "garmin_unpack_d1004",
+                "start": 849,
+                "end": 875
+            },
+            {
+                "name": "garmin_unpack_d1005",
+                "start": 882,
+                "end": 888
+            },
+            {
+                "name": "garmin_unpack_d1006",
+                "start": 895,
+                "end": 902
+            },
+            {
+                "name": "garmin_unpack_d1007",
+                "start": 909,
+                "end": 922
+            },
+            {
+                "name": "garmin_unpack_d1008",
+                "start": 929,
+                "end": 933
+            },
+            {
+                "name": "garmin_unpack_d1009",
+                "start": 940,
+                "end": 953
+            },
+            {
+                "name": "garmin_unpack_d1010",
+                "start": 960,
+                "end": 973
+            },
+            {
+                "name": "garmin_unpack_d1011",
+                "start": 980,
+                "end": 997
+            },
+            {
+                "name": "garmin_unpack_d1012",
+                "start": 1004,
+                "end": 1013
+            },
+            {
+                "name": "garmin_unpack_d1013",
+                "start": 1020,
+                "end": 1027
+            },
+            {
+                "name": "garmin_unpack_d1015",
+                "start": 1034,
+                "end": 1066
+            },
+            {
+                "name": "garmin_unpack_dlist",
+                "start": 1071,
+                "end": 1095
+            },
+            {
+                "name": "garmin_unpack_chunk",
+                "start": 1100,
+                "end": 1154
+            },
+            {
+                "name": "garmin_load",
+                "start": 1161,
+                "end": 1224
+            },
+            {
+                "name": "garmin_unpack_packet",
+                "start": 1231,
+                "end": 1237
+            },
+            {
+                "name": "garmin_unpack",
+                "start": 1244,
+                "end": 1328
+            }
+        ],
+        "src/datatype.c": [
+            {
+                "name": "garmin_alloc_data",
+                "start": 29,
+                "end": 101
+            },
+            {
+                "name": "garmin_alloc_list",
+                "start": 104,
+                "end": 113
+            },
+            {
+                "name": "garmin_list_append",
+                "start": 116,
+                "end": 137
+            },
+            {
+                "name": "garmin_list_data",
+                "start": 140,
+                "end": 156
+            },
+            {
+                "name": "garmin_free_list",
+                "start": 159,
+                "end": 173
+            },
+            {
+                "name": "garmin_free_list_only",
+                "start": 176,
+                "end": 189
+            },
+            {
+                "name": "garmin_free_data",
+                "start": 195,
+                "end": 283
+            },
+            {
+                "name": "garmin_data_size",
+                "start": 293,
+                "end": 444
+            }
+        ]
+    }
+}

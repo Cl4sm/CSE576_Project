@@ -1,0 +1,301 @@
+{
+    "hddtemp-0.3-beta15": {
+        "src/daemon.c": [
+            {
+                "name": "daemon_open_sockets",
+                "start": 59,
+                "end": 129
+            },
+            {
+                "name": "daemon_update",
+                "start": 131,
+                "end": 146
+            },
+            {
+                "name": "daemon_close_sockets",
+                "start": 148,
+                "end": 153
+            },
+            {
+                "name": "daemon_send_msg",
+                "start": 155,
+                "end": 208
+            },
+            {
+                "name": "daemon_syslog",
+                "start": 211,
+                "end": 250
+            },
+            {
+                "name": "daemon_stop",
+                "start": 252,
+                "end": 254
+            },
+            {
+                "name": "do_daemon_mode",
+                "start": 256,
+                "end": 393
+            }
+        ],
+        "src/ata.c": [
+            {
+                "name": "ata_probe",
+                "start": 57,
+                "end": 62
+            },
+            {
+                "name": "ata_model",
+                "start": 64,
+                "end": 69
+            },
+            {
+                "name": "ata_get_temperature",
+                "start": 72,
+                "end": 154
+            }
+        ],
+        "src/scsicmds.c": [
+            {
+                "name": "scsi_fixstring",
+                "start": 47,
+                "end": 66
+            },
+            {
+                "name": "scsi_SG_IO",
+                "start": 68,
+                "end": 83
+            },
+            {
+                "name": "scsi_SEND_COMMAND",
+                "start": 85,
+                "end": 114
+            },
+            {
+                "name": "scsi_command",
+                "start": 116,
+                "end": 135
+            },
+            {
+                "name": "scsi_inquiry",
+                "start": 137,
+                "end": 153
+            },
+            {
+                "name": "scsi_modesense",
+                "start": 155,
+                "end": 170
+            },
+            {
+                "name": "scsi_modeselect",
+                "start": 172,
+                "end": 186
+            },
+            {
+                "name": "scsi_logsense",
+                "start": 188,
+                "end": 197
+            },
+            {
+                "name": "scsi_smartsupport",
+                "start": 199,
+                "end": 206
+            },
+            {
+                "name": "scsi_smartDEXCPTdisable",
+                "start": 208,
+                "end": 221
+            }
+        ],
+        "src/backtrace.c": [
+            {
+                "name": "backtrace_handler",
+                "start": 44,
+                "end": 132
+            },
+            {
+                "name": "backtrace_sigsegv",
+                "start": 134,
+                "end": 145
+            },
+            {
+                "name": "backtrace_sigbus",
+                "start": 147,
+                "end": 158
+            },
+            {
+                "name": "backtrace_sigill",
+                "start": 160,
+                "end": 171
+            }
+        ],
+        "src/db.c": [
+            {
+                "name": "is_a_supported_drive",
+                "start": 49,
+                "end": 67
+            },
+            {
+                "name": "extract_string",
+                "start": 70,
+                "end": 92
+            },
+            {
+                "name": "display_supported_drives",
+                "start": 94,
+                "end": 128
+            },
+            {
+                "name": "parse_db_line",
+                "start": 131,
+                "end": 205
+            },
+            {
+                "name": "free_database",
+                "start": 207,
+                "end": 225
+            },
+            {
+                "name": "load_database",
+                "start": 227,
+                "end": 269
+            }
+        ],
+        "src/utf8.c": [
+            {
+                "name": "iconv_from_utf8_to_locale",
+                "start": 35,
+                "end": 97
+            },
+            {
+                "name": "degree_sign",
+                "start": 99,
+                "end": 104
+            }
+        ],
+        "src/hddtemp.c": [
+            {
+                "name": "init_bus_types",
+                "start": 85,
+                "end": 89
+            },
+            {
+                "name": "value_to_unit",
+                "start": 94,
+                "end": 108
+            },
+            {
+                "name": "get_unit",
+                "start": 110,
+                "end": 119
+            },
+            {
+                "name": "probe_bus_type",
+                "start": 123,
+                "end": 134
+            },
+            {
+                "name": "display_temperature",
+                "start": 151,
+                "end": 234
+            },
+            {
+                "name": "do_direct_mode",
+                "start": 237,
+                "end": 250
+            },
+            {
+                "name": "main",
+                "start": 253,
+                "end": 532
+            }
+        ],
+        "src/atacmds.c": [
+            {
+                "name": "ata_enable_smart",
+                "start": 44,
+                "end": 48
+            },
+            {
+                "name": "ata_get_smart_values",
+                "start": 50,
+                "end": 59
+            },
+            {
+                "name": "ata_search_temperature",
+                "start": 61,
+                "end": 81
+            },
+            {
+                "name": "ata_get_powermode",
+                "start": 83,
+                "end": 113
+            },
+            {
+                "name": "ata_get_packet",
+                "start": 115,
+                "end": 121
+            }
+        ],
+        "src/sata.c": [
+            {
+                "name": "sata_probe",
+                "start": 56,
+                "end": 81
+            },
+            {
+                "name": "sata_model",
+                "start": 83,
+                "end": 94
+            },
+            {
+                "name": "sata_search_temperature",
+                "start": 96,
+                "end": 113
+            },
+            {
+                "name": "sata_get_temperature",
+                "start": 115,
+                "end": 179
+            }
+        ],
+        "src/scsi.c": [
+            {
+                "name": "scsi_probe",
+                "start": 51,
+                "end": 58
+            },
+            {
+                "name": "scsi_model",
+                "start": 60,
+                "end": 68
+            },
+            {
+                "name": "scsi_get_temperature",
+                "start": 70,
+                "end": 141
+            }
+        ],
+        "src/satacmds.c": [
+            {
+                "name": "sata_pass_thru",
+                "start": 53,
+                "end": 88
+            },
+            {
+                "name": "sata_fixstring",
+                "start": 90,
+                "end": 115
+            },
+            {
+                "name": "sata_enable_smart",
+                "start": 117,
+                "end": 121
+            },
+            {
+                "name": "sata_get_smart_values",
+                "start": 123,
+                "end": 127
+            }
+        ]
+    }
+}

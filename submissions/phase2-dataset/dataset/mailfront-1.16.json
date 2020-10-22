@@ -1,0 +1,1173 @@
+{
+    "mailfront-1.16": {
+        "mailfront.h": [
+            {
+                "name": "respond_line",
+                "start": 55,
+                "end": 56
+            }
+        ],
+        "backend-echo.c": [
+            {
+                "name": "reset",
+                "start": 12,
+                "end": 16
+            },
+            {
+                "name": "sender",
+                "start": 18,
+                "end": 25
+            },
+            {
+                "name": "recipient",
+                "start": 27,
+                "end": 34
+            },
+            {
+                "name": "data_block",
+                "start": 36,
+                "end": 50
+            },
+            {
+                "name": "message_end",
+                "start": 52,
+                "end": 83
+            }
+        ],
+        "netstring.c": [
+            {
+                "name": "get_netstring_len",
+                "start": 5,
+                "end": 15
+            },
+            {
+                "name": "get_netstring",
+                "start": 17,
+                "end": 31
+            }
+        ],
+        "imapfront-auth.c": [
+            {
+                "name": "log_start",
+                "start": 59,
+                "end": 69
+            },
+            {
+                "name": "logmsg",
+                "start": 74,
+                "end": 79
+            },
+            {
+                "name": "respond_start",
+                "start": 81,
+                "end": 88
+            },
+            {
+                "name": "respond_str",
+                "start": 90,
+                "end": 95
+            },
+            {
+                "name": "respond_end",
+                "start": 97,
+                "end": 102
+            },
+            {
+                "name": "respond",
+                "start": 104,
+                "end": 109
+            },
+            {
+                "name": "parse_line",
+                "start": 137,
+                "end": 212
+            },
+            {
+                "name": "cmd_noop",
+                "start": 214,
+                "end": 217
+            },
+            {
+                "name": "cmd_logout",
+                "start": 219,
+                "end": 224
+            },
+            {
+                "name": "cmd_capability",
+                "start": 226,
+                "end": 246
+            },
+            {
+                "name": "do_exec",
+                "start": 248,
+                "end": 264
+            },
+            {
+                "name": "cmd_login",
+                "start": 266,
+                "end": 278
+            },
+            {
+                "name": "cmd_authenticate",
+                "start": 280,
+                "end": 297
+            },
+            {
+                "name": "dispatch_line",
+                "start": 315,
+                "end": 337
+            },
+            {
+                "name": "startup",
+                "start": 339,
+                "end": 364
+            },
+            {
+                "name": "main",
+                "start": 369,
+                "end": 381
+            }
+        ],
+        "protocol-qmtp.c": [
+            {
+                "name": "die",
+                "start": 19,
+                "end": 24
+            },
+            {
+                "name": "get_body",
+                "start": 26,
+                "end": 51
+            },
+            {
+                "name": "get_sender",
+                "start": 53,
+                "end": 62
+            },
+            {
+                "name": "get_recips",
+                "start": 64,
+                "end": 89
+            },
+            {
+                "name": "get_package",
+                "start": 91,
+                "end": 101
+            },
+            {
+                "name": "mainloop",
+                "start": 103,
+                "end": 108
+            }
+        ],
+        "iobytes.c": [
+            {
+                "name": "report_io_bytes",
+                "start": 22,
+                "end": 30
+            }
+        ],
+        "pop3-capa.c": [
+            {
+                "name": "cmd_capa",
+                "start": 39,
+                "end": 56
+            }
+        ],
+        "protocol-smtp.c": [
+            {
+                "name": "parse_addr_arg",
+                "start": 50,
+                "end": 94
+            },
+            {
+                "name": "find_param",
+                "start": 96,
+                "end": 111
+            },
+            {
+                "name": "QUIT",
+                "start": 113,
+                "end": 118
+            },
+            {
+                "name": "HELP",
+                "start": 120,
+                "end": 123
+            },
+            {
+                "name": "HELO",
+                "start": 125,
+                "end": 132
+            },
+            {
+                "name": "EHLO",
+                "start": 134,
+                "end": 155
+            },
+            {
+                "name": "do_reset",
+                "start": 157,
+                "end": 166
+            },
+            {
+                "name": "MAIL",
+                "start": 169,
+                "end": 192
+            },
+            {
+                "name": "RCPT",
+                "start": 194,
+                "end": 204
+            },
+            {
+                "name": "RSET",
+                "start": 206,
+                "end": 210
+            },
+            {
+                "name": "data_start",
+                "start": 215,
+                "end": 218
+            },
+            {
+                "name": "data_byte",
+                "start": 219,
+                "end": 227
+            },
+            {
+                "name": "message_end",
+                "start": 228,
+                "end": 232
+            },
+            {
+                "name": "copy_body",
+                "start": 234,
+                "end": 264
+            },
+            {
+                "name": "DATA",
+                "start": 266,
+                "end": 283
+            },
+            {
+                "name": "NOOP",
+                "start": 285,
+                "end": 288
+            },
+            {
+                "name": "VRFY",
+                "start": 290,
+                "end": 293
+            },
+            {
+                "name": "AUTH",
+                "start": 295,
+                "end": 319
+            },
+            {
+                "name": "parse_line",
+                "start": 342,
+                "end": 356
+            },
+            {
+                "name": "smtp_dispatch",
+                "start": 358,
+                "end": 374
+            },
+            {
+                "name": "init",
+                "start": 376,
+                "end": 395
+            },
+            {
+                "name": "mainloop",
+                "start": 397,
+                "end": 412
+            },
+            {
+                "name": "smtp_respond_line",
+                "start": 414,
+                "end": 421
+            }
+        ],
+        "plugin-clamav.c": [
+            {
+                "name": "try_connect",
+                "start": 20,
+                "end": 30
+            },
+            {
+                "name": "message_end",
+                "start": 32,
+                "end": 132
+            }
+        ],
+        "protocol-qmqp.c": [
+            {
+                "name": "die",
+                "start": 18,
+                "end": 23
+            },
+            {
+                "name": "get_wrapper",
+                "start": 25,
+                "end": 32
+            },
+            {
+                "name": "get_body",
+                "start": 34,
+                "end": 56
+            },
+            {
+                "name": "get_sender",
+                "start": 58,
+                "end": 67
+            },
+            {
+                "name": "get_recips",
+                "start": 69,
+                "end": 83
+            },
+            {
+                "name": "get_package",
+                "start": 85,
+                "end": 96
+            },
+            {
+                "name": "mainloop",
+                "start": 98,
+                "end": 103
+            }
+        ],
+        "plugin-reject.c": [
+            {
+                "name": "sender",
+                "start": 6,
+                "end": 24
+            }
+        ],
+        "plugin-template.c": [
+            {
+                "name": "init",
+                "start": 8,
+                "end": 11
+            },
+            {
+                "name": "helo",
+                "start": 16,
+                "end": 19
+            },
+            {
+                "name": "reset",
+                "start": 23,
+                "end": 26
+            },
+            {
+                "name": "sender",
+                "start": 30,
+                "end": 33
+            },
+            {
+                "name": "recipient",
+                "start": 38,
+                "end": 41
+            },
+            {
+                "name": "data_start",
+                "start": 47,
+                "end": 50
+            },
+            {
+                "name": "data_block",
+                "start": 55,
+                "end": 57
+            },
+            {
+                "name": "message_end",
+                "start": 62,
+                "end": 65
+            }
+        ],
+        "plugin-add-received.c": [
+            {
+                "name": "date_string",
+                "start": 18,
+                "end": 25
+            },
+            {
+                "name": "str_catfromby",
+                "start": 27,
+                "end": 48
+            },
+            {
+                "name": "fixup_received",
+                "start": 50,
+                "end": 67
+            },
+            {
+                "name": "add_header_add",
+                "start": 69,
+                "end": 77
+            },
+            {
+                "name": "build_received",
+                "start": 79,
+                "end": 92
+            },
+            {
+                "name": "init",
+                "start": 94,
+                "end": 114
+            },
+            {
+                "name": "data_start",
+                "start": 116,
+                "end": 125
+            }
+        ],
+        "pop3-response.c": [
+            {
+                "name": "logmsg",
+                "start": 38,
+                "end": 47
+            },
+            {
+                "name": "respond",
+                "start": 49,
+                "end": 55
+            }
+        ],
+        "mailfront-internal.h": [
+            {
+                "name": "load_modules",
+                "start": 31,
+                "end": 33
+            }
+        ],
+        "mailfront.c": [
+            {
+                "name": "handle_init",
+                "start": 45,
+                "end": 58
+            },
+            {
+                "name": "handle_helo",
+                "start": 60,
+                "end": 66
+            },
+            {
+                "name": "handle_reset",
+                "start": 68,
+                "end": 79
+            },
+            {
+                "name": "handle_sender",
+                "start": 81,
+                "end": 93
+            },
+            {
+                "name": "handle_recipient",
+                "start": 95,
+                "end": 107
+            },
+            {
+                "name": "handle_data_start",
+                "start": 111,
+                "end": 132
+            },
+            {
+                "name": "handle_data_bytes",
+                "start": 134,
+                "end": 155
+            },
+            {
+                "name": "handle_message_end",
+                "start": 157,
+                "end": 171
+            },
+            {
+                "name": "respond_line",
+                "start": 173,
+                "end": 189
+            },
+            {
+                "name": "respond",
+                "start": 191,
+                "end": 198
+            },
+            {
+                "name": "backend_data_block",
+                "start": 200,
+                "end": 213
+            },
+            {
+                "name": "scratchfile",
+                "start": 215,
+                "end": 223
+            },
+            {
+                "name": "main",
+                "start": 225,
+                "end": 253
+            }
+        ],
+        "responses.c": [
+            {
+                "name": "number_ok",
+                "start": 7,
+                "end": 10
+            },
+            {
+                "name": "response_ok",
+                "start": 12,
+                "end": 15
+            }
+        ],
+        "modules.c": [
+            {
+                "name": "append_plugin",
+                "start": 13,
+                "end": 21
+            },
+            {
+                "name": "prepend_plugin",
+                "start": 23,
+                "end": 29
+            },
+            {
+                "name": "remove_plugin",
+                "start": 31,
+                "end": 51
+            },
+            {
+                "name": "load_object",
+                "start": 53,
+                "end": 68
+            },
+            {
+                "name": "find_builtin_plugin",
+                "start": 70,
+                "end": 78
+            },
+            {
+                "name": "load_plugin",
+                "start": 80,
+                "end": 107
+            },
+            {
+                "name": "load_plugins",
+                "start": 109,
+                "end": 131
+            },
+            {
+                "name": "load_modules",
+                "start": 133,
+                "end": 156
+            }
+        ],
+        "backend-qmail.c": [
+            {
+                "name": "close_qqpipe",
+                "start": 27,
+                "end": 34
+            },
+            {
+                "name": "reset",
+                "start": 36,
+                "end": 41
+            },
+            {
+                "name": "do_sender",
+                "start": 43,
+                "end": 49
+            },
+            {
+                "name": "do_recipient",
+                "start": 51,
+                "end": 57
+            },
+            {
+                "name": "start_qq",
+                "start": 59,
+                "end": 75
+            },
+            {
+                "name": "data_start",
+                "start": 77,
+                "end": 105
+            },
+            {
+                "name": "retry_write",
+                "start": 107,
+                "end": 116
+            },
+            {
+                "name": "data_block",
+                "start": 118,
+                "end": 126
+            },
+            {
+                "name": "parse_status",
+                "start": 128,
+                "end": 164
+            },
+            {
+                "name": "message_end",
+                "start": 166,
+                "end": 204
+            }
+        ],
+        "plugin-mailrules.c": [
+            {
+                "name": "append_rule",
+                "start": 43,
+                "end": 65
+            },
+            {
+                "name": "alloc_rule",
+                "start": 67,
+                "end": 73
+            },
+            {
+                "name": "open_cdb",
+                "start": 89,
+                "end": 98
+            },
+            {
+                "name": "lower",
+                "start": 100,
+                "end": 104
+            },
+            {
+                "name": "load_text",
+                "start": 107,
+                "end": 115
+            },
+            {
+                "name": "is_special",
+                "start": 117,
+                "end": 125
+            },
+            {
+                "name": "is_cdb",
+                "start": 127,
+                "end": 135
+            },
+            {
+                "name": "extract_filename",
+                "start": 138,
+                "end": 146
+            },
+            {
+                "name": "try_load",
+                "start": 148,
+                "end": 157
+            },
+            {
+                "name": "apply_environment",
+                "start": 159,
+                "end": 167
+            },
+            {
+                "name": "parse_uint",
+                "start": 172,
+                "end": 182
+            },
+            {
+                "name": "parse_char",
+                "start": 184,
+                "end": 208
+            },
+            {
+                "name": "parse_str",
+                "start": 210,
+                "end": 220
+            },
+            {
+                "name": "parse_pattern",
+                "start": 222,
+                "end": 230
+            },
+            {
+                "name": "parse_env",
+                "start": 232,
+                "end": 239
+            },
+            {
+                "name": "add",
+                "start": 241,
+                "end": 265
+            },
+            {
+                "name": "init",
+                "start": 269,
+                "end": 296
+            },
+            {
+                "name": "reset",
+                "start": 298,
+                "end": 305
+            },
+            {
+                "name": "matches",
+                "start": 308,
+                "end": 345
+            },
+            {
+                "name": "build_response",
+                "start": 347,
+                "end": 365
+            },
+            {
+                "name": "apply_rule",
+                "start": 367,
+                "end": 379
+            },
+            {
+                "name": "copy_addr",
+                "start": 381,
+                "end": 391
+            },
+            {
+                "name": "validate_sender",
+                "start": 396,
+                "end": 410
+            },
+            {
+                "name": "validate_recipient",
+                "start": 415,
+                "end": 431
+            }
+        ],
+        "qmtp-respond.c": [
+            {
+                "name": "qmtp_respond_line",
+                "start": 7,
+                "end": 29
+            }
+        ],
+        "timeout.c": [
+            {
+                "name": "handle_alarm",
+                "start": 35,
+                "end": 39
+            },
+            {
+                "name": "set_timeout",
+                "start": 41,
+                "end": 60
+            }
+        ],
+        "plugin-require-auth.c": [
+            {
+                "name": "sender",
+                "start": 5,
+                "end": 12
+            }
+        ],
+        "pop3front-auth.c": [
+            {
+                "name": "do_exec",
+                "start": 46,
+                "end": 56
+            },
+            {
+                "name": "cmd_auth_none",
+                "start": 58,
+                "end": 85
+            },
+            {
+                "name": "cmd_auth",
+                "start": 87,
+                "end": 94
+            },
+            {
+                "name": "cmd_user",
+                "start": 96,
+                "end": 102
+            },
+            {
+                "name": "cmd_pass",
+                "start": 104,
+                "end": 118
+            },
+            {
+                "name": "cmd_quit",
+                "start": 120,
+                "end": 124
+            },
+            {
+                "name": "startup",
+                "start": 135,
+                "end": 151
+            }
+        ],
+        "getprotoenv.c": [
+            {
+                "name": "getprotoenv",
+                "start": 8,
+                "end": 22
+            }
+        ],
+        "plugin-relayclient.c": [
+            {
+                "name": "do_recipient",
+                "start": 6,
+                "end": 16
+            }
+        ],
+        "plugin-qmail-validate.c": [
+            {
+                "name": "lower",
+                "start": 21,
+                "end": 25
+            },
+            {
+                "name": "validate_init",
+                "start": 27,
+                "end": 43
+            },
+            {
+                "name": "validate_sender",
+                "start": 45,
+                "end": 57
+            },
+            {
+                "name": "validate_recipient",
+                "start": 59,
+                "end": 87
+            }
+        ],
+        "plugin-spamassassin.c": [
+            {
+                "name": "try_connect",
+                "start": 20,
+                "end": 30
+            },
+            {
+                "name": "try_connect_unix",
+                "start": 32,
+                "end": 41
+            },
+            {
+                "name": "copyit",
+                "start": 51,
+                "end": 67
+            },
+            {
+                "name": "scanit",
+                "start": 69,
+                "end": 113
+            },
+            {
+                "name": "message_end",
+                "start": 115,
+                "end": 204
+            }
+        ],
+        "plugin-patterns.c": [
+            {
+                "name": "patterns_read",
+                "start": 33,
+                "end": 87
+            },
+            {
+                "name": "init",
+                "start": 89,
+                "end": 105
+            },
+            {
+                "name": "check_line",
+                "start": 107,
+                "end": 122
+            },
+            {
+                "name": "check",
+                "start": 124,
+                "end": 149
+            }
+        ],
+        "pop3-mainloop.c": [
+            {
+                "name": "parse_line",
+                "start": 37,
+                "end": 47
+            },
+            {
+                "name": "dispatch_line",
+                "start": 49,
+                "end": 73
+            },
+            {
+                "name": "main",
+                "start": 77,
+                "end": 91
+            }
+        ],
+        "plugin-force-file.c": [
+            {
+                "name": "data_start",
+                "start": 10,
+                "end": 20
+            }
+        ],
+        "plugin-check-fqdn.c": [
+            {
+                "name": "either",
+                "start": 6,
+                "end": 33
+            }
+        ],
+        "pop3front-maildir.c": [
+            {
+                "name": "scan_dir",
+                "start": 67,
+                "end": 90
+            },
+            {
+                "name": "make_msg",
+                "start": 92,
+                "end": 145
+            },
+            {
+                "name": "fn_compare",
+                "start": 147,
+                "end": 159
+            },
+            {
+                "name": "scan_maildir",
+                "start": 161,
+                "end": 184
+            },
+            {
+                "name": "msgnum_check",
+                "start": 186,
+                "end": 195
+            },
+            {
+                "name": "msgnum",
+                "start": 197,
+                "end": 206
+            },
+            {
+                "name": "dump_msg",
+                "start": 208,
+                "end": 249
+            },
+            {
+                "name": "add_flag",
+                "start": 252,
+                "end": 268
+            },
+            {
+                "name": "cmd_dele",
+                "start": 271,
+                "end": 280
+            },
+            {
+                "name": "cmd_last",
+                "start": 282,
+                "end": 293
+            },
+            {
+                "name": "cmd_list",
+                "start": 295,
+                "end": 308
+            },
+            {
+                "name": "cmd_list_one",
+                "start": 310,
+                "end": 321
+            },
+            {
+                "name": "cmd_noop",
+                "start": 323,
+                "end": 326
+            },
+            {
+                "name": "cmd_quit",
+                "start": 328,
+                "end": 350
+            },
+            {
+                "name": "cmd_rset",
+                "start": 352,
+                "end": 359
+            },
+            {
+                "name": "cmd_stat",
+                "start": 361,
+                "end": 370
+            },
+            {
+                "name": "cmd_top",
+                "start": 372,
+                "end": 388
+            },
+            {
+                "name": "cmd_uidl",
+                "start": 390,
+                "end": 405
+            },
+            {
+                "name": "cmd_uidl_one",
+                "start": 407,
+                "end": 421
+            },
+            {
+                "name": "startup",
+                "start": 440,
+                "end": 469
+            }
+        ],
+        "builtins.c": [
+            {
+                "name": "accept",
+                "start": 5,
+                "end": 9
+            }
+        ],
+        "session.c": [
+            {
+                "name": "session_protocol",
+                "start": 11,
+                "end": 14
+            },
+            {
+                "name": "session_getenv",
+                "start": 16,
+                "end": 22
+            },
+            {
+                "name": "min_u_s",
+                "start": 24,
+                "end": 34
+            },
+            {
+                "name": "session_getenvu",
+                "start": 37,
+                "end": 49
+            },
+            {
+                "name": "session_exportenv",
+                "start": 51,
+                "end": 57
+            },
+            {
+                "name": "session_putenv",
+                "start": 59,
+                "end": 65
+            },
+            {
+                "name": "session_setenv",
+                "start": 67,
+                "end": 70
+            },
+            {
+                "name": "session_resetenv",
+                "start": 72,
+                "end": 75
+            },
+            {
+                "name": "GHASH_DEFN",
+                "start": 78,
+                "end": 79
+            },
+            {
+                "name": "GHASH_DEFN",
+                "start": 80,
+                "end": 81
+            },
+            {
+                "name": "session_delnum",
+                "start": 83,
+                "end": 86
+            },
+            {
+                "name": "session_delstr",
+                "start": 88,
+                "end": 91
+            },
+            {
+                "name": "session_getstr",
+                "start": 93,
+                "end": 99
+            },
+            {
+                "name": "session_setstr",
+                "start": 101,
+                "end": 107
+            },
+            {
+                "name": "session_hasnum",
+                "start": 109,
+                "end": 117
+            },
+            {
+                "name": "session_getnum",
+                "start": 119,
+                "end": 125
+            },
+            {
+                "name": "session_setnum",
+                "start": 127,
+                "end": 133
+            },
+            {
+                "name": "session_init",
+                "start": 136,
+                "end": 142
+            }
+        ],
+        "plugin-cvm-validate.c": [
+            {
+                "name": "validate_init",
+                "start": 14,
+                "end": 39
+            },
+            {
+                "name": "validate_recipient",
+                "start": 41,
+                "end": 73
+            }
+        ],
+        "plugin-counters.c": [
+            {
+                "name": "minenv",
+                "start": 16,
+                "end": 28
+            },
+            {
+                "name": "init",
+                "start": 30,
+                "end": 36
+            },
+            {
+                "name": "reset",
+                "start": 38,
+                "end": 43
+            },
+            {
+                "name": "sender",
+                "start": 45,
+                "end": 53
+            },
+            {
+                "name": "recipient",
+                "start": 55,
+                "end": 64
+            },
+            {
+                "name": "start",
+                "start": 66,
+                "end": 82
+            },
+            {
+                "name": "block",
+                "start": 84,
+                "end": 127
+            }
+        ]
+    }
+}

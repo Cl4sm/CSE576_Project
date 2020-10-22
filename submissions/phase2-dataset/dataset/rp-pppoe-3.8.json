@@ -1,0 +1,949 @@
+{
+    "rp-pppoe-3.8": {
+        "src/pppoe.h": [
+            {
+                "name": "sendSessionPacket",
+                "start": 324,
+                "end": 325
+            },
+            {
+                "name": "findTag",
+                "start": 331,
+                "end": 332
+            }
+        ],
+        "src/if.c": [
+            {
+                "name": "etherType",
+                "start": 127,
+                "end": 135
+            },
+            {
+                "name": "sendPacket",
+                "start": 546,
+                "end": 611
+            },
+            {
+                "name": "receivePacket",
+                "start": 646,
+                "end": 714
+            }
+        ],
+        "src/pppoe.c": [
+            {
+                "name": "sendSessionPacket",
+                "start": 127,
+                "end": 149
+            },
+            {
+                "name": "sessionDiscoveryPacket",
+                "start": 207,
+                "end": 255
+            },
+            {
+                "name": "session",
+                "start": 267,
+                "end": 366
+            },
+            {
+                "name": "sigPADT",
+                "start": 379,
+                "end": 386
+            },
+            {
+                "name": "usage",
+                "start": 397,
+                "end": 435
+            },
+            {
+                "name": "main",
+                "start": 446,
+                "end": 711
+            },
+            {
+                "name": "fatalSys",
+                "start": 722,
+                "end": 732
+            },
+            {
+                "name": "sysErr",
+                "start": 743,
+                "end": 749
+            },
+            {
+                "name": "rp_fatal",
+                "start": 760,
+                "end": 767
+            },
+            {
+                "name": "asyncReadFromEth",
+                "start": 781,
+                "end": 901
+            },
+            {
+                "name": "syncReadFromEth",
+                "start": 915,
+                "end": 1006
+            }
+        ],
+        "src/common.c": [
+            {
+                "name": "parsePacket",
+                "start": 63,
+                "end": 104
+            },
+            {
+                "name": "findTag",
+                "start": 118,
+                "end": 162
+            },
+            {
+                "name": "switchToRealID",
+                "start": 173,
+                "end": 187
+            },
+            {
+                "name": "switchToEffectiveID",
+                "start": 198,
+                "end": 210
+            },
+            {
+                "name": "dropPrivs",
+                "start": 222,
+                "end": 238
+            },
+            {
+                "name": "printErr",
+                "start": 249,
+                "end": 254
+            },
+            {
+                "name": "strDup",
+                "start": 264,
+                "end": 273
+            },
+            {
+                "name": "computeTCPChecksum",
+                "start": 283,
+                "end": 325
+            },
+            {
+                "name": "clampMSS",
+                "start": 338,
+                "end": 478
+            },
+            {
+                "name": "sendPADT",
+                "start": 490,
+                "end": 568
+            },
+            {
+                "name": "sendPADTf",
+                "start": 581,
+                "end": 593
+            },
+            {
+                "name": "pktLogErrs",
+                "start": 608,
+                "end": 629
+            },
+            {
+                "name": "parseLogErrs",
+                "start": 643,
+                "end": 648
+            }
+        ],
+        "src/md5.h": [
+            {
+                "name": "MD5Update",
+                "start": 24,
+                "end": 25
+            }
+        ],
+        "src/md5.c": [
+            {
+                "name": "byteReverse",
+                "start": 27,
+                "end": 37
+            },
+            {
+                "name": "MD5Init",
+                "start": 43,
+                "end": 52
+            },
+            {
+                "name": "MD5Update",
+                "start": 58,
+                "end": 100
+            },
+            {
+                "name": "MD5Final",
+                "start": 106,
+                "end": 145
+            },
+            {
+                "name": "MD5Transform",
+                "start": 166,
+                "end": 247
+            }
+        ],
+        "src/pppoe-server.c": [
+            {
+                "name": "InterfaceHandler",
+                "start": 79,
+                "end": 80
+            },
+            {
+                "name": "sendErrorPADS",
+                "start": 82,
+                "end": 83
+            },
+            {
+                "name": "childHandler",
+                "start": 190,
+                "end": 245
+            },
+            {
+                "name": "incrementIPAddress",
+                "start": 256,
+                "end": 269
+            },
+            {
+                "name": "killAllSessions",
+                "start": 280,
+                "end": 291
+            },
+            {
+                "name": "parseAddressPool",
+                "start": 303,
+                "end": 389
+            },
+            {
+                "name": "parsePADITags",
+                "start": 403,
+                "end": 425
+            },
+            {
+                "name": "parsePADRTags",
+                "start": 439,
+                "end": 465
+            },
+            {
+                "name": "fatalSys",
+                "start": 476,
+                "end": 484
+            },
+            {
+                "name": "sysErr",
+                "start": 495,
+                "end": 501
+            },
+            {
+                "name": "rp_fatal",
+                "start": 512,
+                "end": 518
+            },
+            {
+                "name": "genCookie",
+                "start": 534,
+                "end": 549
+            },
+            {
+                "name": "processPADI",
+                "start": 562,
+                "end": 677
+            },
+            {
+                "name": "processPADT",
+                "start": 690,
+                "end": 733
+            },
+            {
+                "name": "processPADR",
+                "start": 747,
+                "end": 953
+            },
+            {
+                "name": "termHandler",
+                "start": 964,
+                "end": 973
+            },
+            {
+                "name": "usage",
+                "start": 984,
+                "end": 1031
+            },
+            {
+                "name": "main",
+                "start": 1042,
+                "end": 1518
+            },
+            {
+                "name": "serverProcessPacket",
+                "start": 1520,
+                "end": 1565
+            },
+            {
+                "name": "sendErrorPADS",
+                "start": 1580,
+                "end": 1623
+            },
+            {
+                "name": "startPPPDUserMode",
+                "start": 1635,
+                "end": 1703
+            },
+            {
+                "name": "startPPPDLinuxKernelMode",
+                "start": 1714,
+                "end": 1785
+            },
+            {
+                "name": "startPPPD",
+                "start": 1796,
+                "end": 1801
+            },
+            {
+                "name": "InterfaceHandler",
+                "start": 1815,
+                "end": 1822
+            },
+            {
+                "name": "PppoeStopSession",
+                "start": 1834,
+                "end": 1855
+            },
+            {
+                "name": "PppoeSessionIsActive",
+                "start": 1864,
+                "end": 1868
+            },
+            {
+                "name": "pppoe_alloc_session",
+                "start": 1923,
+                "end": 1957
+            },
+            {
+                "name": "pppoe_free_session",
+                "start": 1968,
+                "end": 2012
+            },
+            {
+                "name": "sendHURLorMOTM",
+                "start": 2026,
+                "end": 2079
+            }
+        ],
+        "src/relay.h": [
+            {
+                "name": "createSession",
+                "start": 60,
+                "end": 64
+            },
+            {
+                "name": "insertBytes",
+                "start": 80,
+                "end": 81
+            },
+            {
+                "name": "removeBytes",
+                "start": 82,
+                "end": 83
+            },
+            {
+                "name": "relaySendError",
+                "start": 84,
+                "end": 89
+            }
+        ],
+        "src/relay.c": [
+            {
+                "name": "keepDescriptor",
+                "start": 93,
+                "end": 103
+            },
+            {
+                "name": "addTag",
+                "start": 115,
+                "end": 120
+            },
+            {
+                "name": "insertBytes",
+                "start": 135,
+                "end": 155
+            },
+            {
+                "name": "removeBytes",
+                "start": 169,
+                "end": 187
+            },
+            {
+                "name": "usage",
+                "start": 198,
+                "end": 217
+            },
+            {
+                "name": "main",
+                "start": 232,
+                "end": 357
+            },
+            {
+                "name": "addInterface",
+                "start": 370,
+                "end": 397
+            },
+            {
+                "name": "initRelay",
+                "start": 408,
+                "end": 459
+            },
+            {
+                "name": "createSession",
+                "start": 474,
+                "end": 544
+            },
+            {
+                "name": "freeSession",
+                "start": 557,
+                "end": 591
+            },
+            {
+                "name": "unhash",
+                "start": 603,
+                "end": 620
+            },
+            {
+                "name": "addHash",
+                "start": 631,
+                "end": 641
+            },
+            {
+                "name": "hash",
+                "start": 653,
+                "end": 666
+            },
+            {
+                "name": "findSession",
+                "start": 676,
+                "end": 688
+            },
+            {
+                "name": "fatalSys",
+                "start": 699,
+                "end": 706
+            },
+            {
+                "name": "sysErr",
+                "start": 717,
+                "end": 723
+            },
+            {
+                "name": "rp_fatal",
+                "start": 734,
+                "end": 739
+            },
+            {
+                "name": "relayLoop",
+                "start": 750,
+                "end": 805
+            },
+            {
+                "name": "relayGotDiscoveryPacket",
+                "start": 816,
+                "end": 862
+            },
+            {
+                "name": "relayGotSessionPacket",
+                "start": 873,
+                "end": 938
+            },
+            {
+                "name": "relayHandlePADT",
+                "start": 950,
+                "end": 972
+            },
+            {
+                "name": "relayHandlePADI",
+                "start": 984,
+                "end": 1066
+            },
+            {
+                "name": "relayHandlePADO",
+                "start": 1078,
+                "end": 1182
+            },
+            {
+                "name": "relayHandlePADR",
+                "start": 1194,
+                "end": 1298
+            },
+            {
+                "name": "relayHandlePADS",
+                "start": 1310,
+                "end": 1456
+            },
+            {
+                "name": "relaySendError",
+                "start": 1473,
+                "end": 1506
+            },
+            {
+                "name": "alarmHandler",
+                "start": 1518,
+                "end": 1527
+            },
+            {
+                "name": "cleanSessions",
+                "start": 1539,
+                "end": 1559
+            }
+        ],
+        "src/discovery.c": [
+            {
+                "name": "parseForHostUniq",
+                "start": 60,
+                "end": 72
+            },
+            {
+                "name": "packetIsForMe",
+                "start": 85,
+                "end": 98
+            },
+            {
+                "name": "parsePADOTags",
+                "start": 114,
+                "end": 196
+            },
+            {
+                "name": "parsePADSTags",
+                "start": 210,
+                "end": 231
+            },
+            {
+                "name": "sendPADI",
+                "start": 242,
+                "end": 307
+            },
+            {
+                "name": "waitForPADO",
+                "start": 319,
+                "end": 411
+            },
+            {
+                "name": "sendPADR",
+                "start": 422,
+                "end": 493
+            },
+            {
+                "name": "waitForPADS",
+                "start": 505,
+                "end": 581
+            },
+            {
+                "name": "discovery",
+                "start": 592,
+                "end": 670
+            }
+        ],
+        "src/plugin.c": [
+            {
+                "name": "PPPOEInitDevice",
+                "start": 102,
+                "end": 123
+            },
+            {
+                "name": "PPPOEConnectDevice",
+                "start": 134,
+                "end": 202
+            },
+            {
+                "name": "PPPOESendConfig",
+                "start": 204,
+                "end": 229
+            },
+            {
+                "name": "PPPOERecvConfig",
+                "start": 232,
+                "end": 241
+            },
+            {
+                "name": "PPPOEDisconnectDevice",
+                "start": 252,
+                "end": 270
+            },
+            {
+                "name": "PPPOEDeviceOptions",
+                "start": 272,
+                "end": 280
+            },
+            {
+                "name": "PPPoEDevnameHook",
+                "start": 296,
+                "end": 373
+            },
+            {
+                "name": "plugin_init",
+                "start": 384,
+                "end": 395
+            },
+            {
+                "name": "fatalSys",
+                "start": 406,
+                "end": 416
+            },
+            {
+                "name": "rp_fatal",
+                "start": 427,
+                "end": 433
+            },
+            {
+                "name": "sysErr",
+                "start": 444,
+                "end": 448
+            }
+        ],
+        "src/pppoe-sniff.c": [
+            {
+                "name": "parsePADRTags",
+                "start": 61,
+                "end": 74
+            },
+            {
+                "name": "fatalSys",
+                "start": 85,
+                "end": 92
+            },
+            {
+                "name": "rp_fatal",
+                "start": 103,
+                "end": 108
+            },
+            {
+                "name": "usage",
+                "start": 119,
+                "end": 133
+            },
+            {
+                "name": "main",
+                "start": 137,
+                "end": 142
+            },
+            {
+                "name": "sysErr",
+                "start": 260,
+                "end": 266
+            }
+        ],
+        "src/ppp.c": [
+            {
+                "name": "syncReadFromPPP",
+                "start": 95,
+                "end": 135
+            },
+            {
+                "name": "initPPP",
+                "start": 146,
+                "end": 153
+            },
+            {
+                "name": "asyncReadFromPPP",
+                "start": 164,
+                "end": 237
+            },
+            {
+                "name": "pppFCS16",
+                "start": 250,
+                "end": 259
+            }
+        ],
+        "src/libevent/hash.h": [
+            {
+                "name": "hash_init",
+                "start": 37,
+                "end": 40
+            }
+        ],
+        "src/libevent/hash.c": [
+            {
+                "name": "hash_init",
+                "start": 47,
+                "end": 62
+            },
+            {
+                "name": "hash_insert",
+                "start": 75,
+                "end": 90
+            },
+            {
+                "name": "hash_remove",
+                "start": 102,
+                "end": 118
+            },
+            {
+                "name": "hash_find",
+                "start": 130,
+                "end": 141
+            },
+            {
+                "name": "hash_find_next",
+                "start": 154,
+                "end": 164
+            },
+            {
+                "name": "hash_start",
+                "start": 175,
+                "end": 189
+            },
+            {
+                "name": "hash_next",
+                "start": 201,
+                "end": 211
+            },
+            {
+                "name": "hash_next_cursor",
+                "start": 221,
+                "end": 233
+            },
+            {
+                "name": "hash_num_entries",
+                "start": 235,
+                "end": 239
+            },
+            {
+                "name": "hash_pjw",
+                "start": 252,
+                "end": 266
+            }
+        ],
+        "src/libevent/event.h": [
+            {
+                "name": "Event_AddHandler",
+                "start": 48,
+                "end": 51
+            },
+            {
+                "name": "Event_AddHandlerWithTimeout",
+                "start": 54,
+                "end": 59
+            },
+            {
+                "name": "Event_AddTimerHandler",
+                "start": 63,
+                "end": 66
+            },
+            {
+                "name": "Event_DelHandler",
+                "start": 72,
+                "end": 73
+            },
+            {
+                "name": "Event_SetCallbackAndData",
+                "start": 82,
+                "end": 84
+            },
+            {
+                "name": "Event_HandleChildExit",
+                "start": 90,
+                "end": 91
+            }
+        ],
+        "src/libevent/event.c": [
+            {
+                "name": "Event_CreateSelector",
+                "start": 37,
+                "end": 48
+            },
+            {
+                "name": "Event_DestroySelector",
+                "start": 60,
+                "end": 69
+            },
+            {
+                "name": "Event_HandleEvent",
+                "start": 80,
+                "end": 225
+            },
+            {
+                "name": "Event_AddHandler",
+                "start": 238,
+                "end": 271
+            },
+            {
+                "name": "Event_AddHandlerWithTimeout",
+                "start": 286,
+                "end": 343
+            },
+            {
+                "name": "Event_AddTimerHandler",
+                "start": 356,
+                "end": 396
+            },
+            {
+                "name": "Event_DelHandler",
+                "start": 408,
+                "end": 433
+            },
+            {
+                "name": "DestroySelector",
+                "start": 444,
+                "end": 454
+            },
+            {
+                "name": "DestroyHandler",
+                "start": 465,
+                "end": 470
+            },
+            {
+                "name": "DoPendingChanges",
+                "start": 481,
+                "end": 514
+            },
+            {
+                "name": "Event_GetCallback",
+                "start": 523,
+                "end": 527
+            },
+            {
+                "name": "Event_GetData",
+                "start": 536,
+                "end": 540
+            },
+            {
+                "name": "Event_SetCallbackAndData",
+                "start": 553,
+                "end": 560
+            },
+            {
+                "name": "Event_DebugMsg",
+                "start": 575,
+                "end": 592
+            },
+            {
+                "name": "Event_EnableDebugging",
+                "start": 603,
+                "end": 612
+            },
+            {
+                "name": "Event_ChangeTimeout",
+                "start": 624,
+                "end": 644
+            }
+        ],
+        "src/libevent/event_tcp.h": [
+            {
+                "name": "EventTcp_CreateAcceptor",
+                "start": 57,
+                "end": 59
+            },
+            {
+                "name": "EventTcp_Connect",
+                "start": 61,
+                "end": 67
+            },
+            {
+                "name": "EventTcp_ReadBuf",
+                "start": 69,
+                "end": 75
+            },
+            {
+                "name": "EventTcp_WriteBuf",
+                "start": 77,
+                "end": 83
+            }
+        ],
+        "src/libevent/event_tcp.c": [
+            {
+                "name": "handle_accept",
+                "start": 47,
+                "end": 62
+            },
+            {
+                "name": "handle_connect",
+                "start": 77,
+                "end": 117
+            },
+            {
+                "name": "EventTcp_CreateAcceptor",
+                "start": 132,
+                "end": 152
+            },
+            {
+                "name": "free_state",
+                "start": 163,
+                "end": 171
+            },
+            {
+                "name": "handle_readable",
+                "start": 185,
+                "end": 258
+            },
+            {
+                "name": "handle_writeable",
+                "start": 272,
+                "end": 322
+            },
+            {
+                "name": "EventTcp_ReadBuf",
+                "start": 341,
+                "end": 405
+            },
+            {
+                "name": "EventTcp_WriteBuf",
+                "start": 422,
+                "end": 487
+            },
+            {
+                "name": "EventTcp_Connect",
+                "start": 503,
+                "end": 562
+            },
+            {
+                "name": "EventTcp_CancelPending",
+                "start": 573,
+                "end": 577
+            }
+        ],
+        "src/libevent/event_sig.c": [
+            {
+                "name": "child_hash",
+                "start": 61,
+                "end": 64
+            },
+            {
+                "name": "child_compare",
+                "start": 66,
+                "end": 69
+            },
+            {
+                "name": "DoPipe",
+                "start": 84,
+                "end": 105
+            },
+            {
+                "name": "sig_handler",
+                "start": 116,
+                "end": 128
+            },
+            {
+                "name": "child_handler",
+                "start": 139,
+                "end": 158
+            },
+            {
+                "name": "SetupPipes",
+                "start": 169,
+                "end": 196
+            },
+            {
+                "name": "Event_HandleSignal",
+                "start": 210,
+                "end": 233
+            },
+            {
+                "name": "Event_HandleChildExit",
+                "start": 249,
+                "end": 265
+            }
+        ]
+    }
+}

@@ -1,0 +1,2267 @@
+{
+    "dcap-2.47.8": {
+        "src/dcap_chmod.c": [
+            {
+                "name": "dc_chmod",
+                "start": 30,
+                "end": 73
+            }
+        ],
+        "src/dcap_lcb.c": [
+            {
+                "name": "build_request",
+                "start": 67,
+                "end": 68
+            },
+            {
+                "name": "update_request",
+                "start": 69,
+                "end": 70
+            },
+            {
+                "name": "update_currentcb_to_existing_cb",
+                "start": 71,
+                "end": 72
+            },
+            {
+                "name": "update_currentcb_by_reading",
+                "start": 73,
+                "end": 74
+            },
+            {
+                "name": "read_and_add",
+                "start": 77,
+                "end": 78
+            },
+            {
+                "name": "get_envvar",
+                "start": 79,
+                "end": 80
+            },
+            {
+                "name": "find_closest_existing_cb_scan_down",
+                "start": 82,
+                "end": 83
+            },
+            {
+                "name": "find_closest_existing_cb_scan_up",
+                "start": 84,
+                "end": 85
+            },
+            {
+                "name": "insert_into_ll_after_existing",
+                "start": 90,
+                "end": 91
+            },
+            {
+                "name": "build_from_extracted_lru_cb",
+                "start": 96,
+                "end": 97
+            },
+            {
+                "name": "dc_lcb_flush",
+                "start": 111,
+                "end": 133
+            },
+            {
+                "name": "dc_lcb_init",
+                "start": 138,
+                "end": 166
+            },
+            {
+                "name": "establish_buffer_size",
+                "start": 169,
+                "end": 197
+            },
+            {
+                "name": "get_envvar",
+                "start": 200,
+                "end": 226
+            },
+            {
+                "name": "dc_lcb_clean",
+                "start": 228,
+                "end": 245
+            },
+            {
+                "name": "update_global_stats_from_retired_cb",
+                "start": 247,
+                "end": 251
+            },
+            {
+                "name": "flush_cache",
+                "start": 254,
+                "end": 270
+            },
+            {
+                "name": "dc_lcb_read",
+                "start": 273,
+                "end": 301
+            },
+            {
+                "name": "is_first_ever_read_request",
+                "start": 304,
+                "end": 307
+            },
+            {
+                "name": "read_first_buffer",
+                "start": 310,
+                "end": 315
+            },
+            {
+                "name": "build_request",
+                "start": 318,
+                "end": 329
+            },
+            {
+                "name": "set_fpos",
+                "start": 332,
+                "end": 339
+            },
+            {
+                "name": "ensure_data_in_currentcb",
+                "start": 342,
+                "end": 356
+            },
+            {
+                "name": "record_read_hit",
+                "start": 359,
+                "end": 363
+            },
+            {
+                "name": "find_closest_existing_cb",
+                "start": 366,
+                "end": 379
+            },
+            {
+                "name": "find_closest_existing_cb_scan_down",
+                "start": 382,
+                "end": 392
+            },
+            {
+                "name": "find_closest_existing_cb_scan_up",
+                "start": 395,
+                "end": 405
+            },
+            {
+                "name": "update_currentcb_to_existing_cb",
+                "start": 408,
+                "end": 423
+            },
+            {
+                "name": "update_currentcb_by_reading",
+                "start": 425,
+                "end": 444
+            },
+            {
+                "name": "have_unused_buf",
+                "start": 447,
+                "end": 450
+            },
+            {
+                "name": "next_unallocated_cb",
+                "start": 458,
+                "end": 485
+            },
+            {
+                "name": "build_from_extracted_lru_cb",
+                "start": 488,
+                "end": 503
+            },
+            {
+                "name": "extract_lru_cb",
+                "start": 506,
+                "end": 514
+            },
+            {
+                "name": "find_lru_buf",
+                "start": 523,
+                "end": 541
+            },
+            {
+                "name": "read_and_add",
+                "start": 544,
+                "end": 557
+            },
+            {
+                "name": "emit_debug_for_current_buf",
+                "start": 560,
+                "end": 583
+            },
+            {
+                "name": "check_ll_consistency",
+                "start": 586,
+                "end": 602
+            },
+            {
+                "name": "read_currentcb",
+                "start": 605,
+                "end": 630
+            },
+            {
+                "name": "copy_data_from_currentcb",
+                "start": 633,
+                "end": 657
+            },
+            {
+                "name": "update_request",
+                "start": 660,
+                "end": 672
+            },
+            {
+                "name": "emit_debug",
+                "start": 676,
+                "end": 694
+            },
+            {
+                "name": "remove_from_ll",
+                "start": 697,
+                "end": 706
+            },
+            {
+                "name": "insert_into_ll_after_existing",
+                "start": 709,
+                "end": 720
+            }
+        ],
+        "src/dcap_write.c": [
+            {
+                "name": "dc_write",
+                "start": 37,
+                "end": 61
+            },
+            {
+                "name": "dc_pwrite",
+                "start": 63,
+                "end": 68
+            },
+            {
+                "name": "dc_pwrite64",
+                "start": 71,
+                "end": 98
+            },
+            {
+                "name": "dc_real_write",
+                "start": 100,
+                "end": 296
+            },
+            {
+                "name": "dc_writev",
+                "start": 298,
+                "end": 355
+            }
+        ],
+        "src/dcap_unlink.c": [
+            {
+                "name": "dc_unlink",
+                "start": 31,
+                "end": 75
+            },
+            {
+                "name": "dc_rmdir",
+                "start": 78,
+                "end": 122
+            }
+        ],
+        "src/dcap_access.c": [
+            {
+                "name": "dc_access",
+                "start": 27,
+                "end": 110
+            }
+        ],
+        "src/sigfig.h": [
+            {
+                "name": "dc_print_with_sigfig",
+                "start": 19,
+                "end": 20
+            }
+        ],
+        "src/print_size.h": [
+            {
+                "name": "dc_bytes_as_size_with_max_fraction",
+                "start": 18,
+                "end": 19
+            }
+        ],
+        "src/print_size.c": [
+            {
+                "name": "format_for_prefix",
+                "start": 44,
+                "end": 45
+            },
+            {
+                "name": "dc_bytes_as_size_with_max_fraction",
+                "start": 57,
+                "end": 74
+            },
+            {
+                "name": "dc_bytes_as_size",
+                "start": 85,
+                "end": 88
+            },
+            {
+                "name": "format_for_prefix",
+                "start": 92,
+                "end": 99
+            }
+        ],
+        "src/dcap_dup.c": [
+            {
+                "name": "dc_dup",
+                "start": 25,
+                "end": 56
+            }
+        ],
+        "src/dcap_chown.c": [
+            {
+                "name": "dc_chown",
+                "start": 31,
+                "end": 75
+            }
+        ],
+        "src/char2crc.c": [
+            {
+                "name": "char2crc",
+                "start": 20,
+                "end": 34
+            }
+        ],
+        "src/dcap_protocol.c": [
+            {
+                "name": "asciiCommand",
+                "start": 44,
+                "end": 47
+            }
+        ],
+        "src/dcap_command.c": [
+            {
+                "name": "do_command_fail",
+                "start": 33,
+                "end": 63
+            },
+            {
+                "name": "do_command_welcome",
+                "start": 65,
+                "end": 70
+            },
+            {
+                "name": "do_command_dummy",
+                "start": 72,
+                "end": 85
+            },
+            {
+                "name": "do_command_reject",
+                "start": 87,
+                "end": 92
+            },
+            {
+                "name": "do_command_byebye",
+                "start": 94,
+                "end": 99
+            },
+            {
+                "name": "do_command_ok",
+                "start": 101,
+                "end": 107
+            },
+            {
+                "name": "do_command_retry",
+                "start": 109,
+                "end": 114
+            },
+            {
+                "name": "do_command_pong",
+                "start": 116,
+                "end": 121
+            },
+            {
+                "name": "do_command_stat",
+                "start": 123,
+                "end": 141
+            },
+            {
+                "name": "do_command_shutdown",
+                "start": 143,
+                "end": 148
+            },
+            {
+                "name": "do_command_connect",
+                "start": 151,
+                "end": 167
+            }
+        ],
+        "src/dcap_mqueue.c": [
+            {
+                "name": "newQueue",
+                "start": 38,
+                "end": 76
+            },
+            {
+                "name": "queueAddMessage",
+                "start": 79,
+                "end": 125
+            },
+            {
+                "name": "queueGetMessage",
+                "start": 128,
+                "end": 157
+            },
+            {
+                "name": "deleteQueue",
+                "start": 160,
+                "end": 197
+            }
+        ],
+        "src/string2stat.c": [
+            {
+                "name": "string2mode",
+                "start": 35,
+                "end": 108
+            },
+            {
+                "name": "string2stat64",
+                "start": 113,
+                "end": 203
+            }
+        ],
+        "src/dcap_url-test.c": [
+            {
+                "name": "main",
+                "start": 25,
+                "end": 51
+            }
+        ],
+        "src/br.c": [
+            {
+                "name": "main",
+                "start": 23,
+                "end": 52
+            }
+        ],
+        "src/io.c": [
+            {
+                "name": "writen",
+                "start": 32,
+                "end": 52
+            },
+            {
+                "name": "readn",
+                "start": 54,
+                "end": 78
+            },
+            {
+                "name": "socket_connect",
+                "start": 86,
+                "end": 122
+            }
+        ],
+        "src/array.c": [
+            {
+                "name": "isMember",
+                "start": 34,
+                "end": 50
+            },
+            {
+                "name": "addMember",
+                "start": 52,
+                "end": 69
+            },
+            {
+                "name": "getMember",
+                "start": 72,
+                "end": 90
+            },
+            {
+                "name": "deleteMember",
+                "start": 92,
+                "end": 122
+            },
+            {
+                "name": "deleteMemberByValue",
+                "start": 124,
+                "end": 155
+            },
+            {
+                "name": "lockMember",
+                "start": 157,
+                "end": 161
+            },
+            {
+                "name": "unlockMember",
+                "start": 164,
+                "end": 168
+            }
+        ],
+        "src/dcsuck.c": [
+            {
+                "name": "main",
+                "start": 43,
+                "end": 107
+            }
+        ],
+        "src/dcap_accept.c": [
+            {
+                "name": "queueAddAccepted",
+                "start": 36,
+                "end": 52
+            },
+            {
+                "name": "queueGetAccepted",
+                "start": 55,
+                "end": 90
+            }
+        ],
+        "src/parser.c": [
+            {
+                "name": "CommandParser",
+                "start": 38,
+                "end": 140
+            }
+        ],
+        "src/linux_trace.c": [
+            {
+                "name": "getStackTrace",
+                "start": 49,
+                "end": 97
+            }
+        ],
+        "src/dcap_unix2win.c": [
+            {
+                "name": "poll",
+                "start": 61,
+                "end": 143
+            },
+            {
+                "name": "poll_gettimeout",
+                "start": 145,
+                "end": 168
+            },
+            {
+                "name": "reportWinsockError",
+                "start": 172,
+                "end": 218
+            },
+            {
+                "name": "initWinSock",
+                "start": 221,
+                "end": 281
+            }
+        ],
+        "src/dcap_test.c": [
+            {
+                "name": "pattern_walk_forward",
+                "start": 114,
+                "end": 115
+            },
+            {
+                "name": "pattern_walk_forward_with_rnd_start",
+                "start": 116,
+                "end": 119
+            },
+            {
+                "name": "pattern_walk_backward",
+                "start": 120,
+                "end": 121
+            },
+            {
+                "name": "pattern_read_float_random_offsets",
+                "start": 122,
+                "end": 125
+            },
+            {
+                "name": "pattern_read_block_random_offsets",
+                "start": 126,
+                "end": 129
+            },
+            {
+                "name": "make_ref_datafile",
+                "start": 135,
+                "end": 158
+            },
+            {
+                "name": "read_and_assert",
+                "start": 164,
+                "end": 201
+            },
+            {
+                "name": "check_offset_valid",
+                "start": 204,
+                "end": 212
+            },
+            {
+                "name": "is_valid_offset",
+                "start": 215,
+                "end": 218
+            },
+            {
+                "name": "fisher_yates_shuffle",
+                "start": 231,
+                "end": 253
+            },
+            {
+                "name": "i_th_item",
+                "start": 255,
+                "end": 258
+            },
+            {
+                "name": "main",
+                "start": 262,
+                "end": 346
+            },
+            {
+                "name": "stat_and_print_fd",
+                "start": 348,
+                "end": 358
+            },
+            {
+                "name": "stat_and_print",
+                "start": 360,
+                "end": 370
+            },
+            {
+                "name": "print_stat_info",
+                "start": 373,
+                "end": 396
+            },
+            {
+                "name": "mode2string",
+                "start": 398,
+                "end": 424
+            },
+            {
+                "name": "pattern_walk_forward",
+                "start": 427,
+                "end": 457
+            },
+            {
+                "name": "pattern_walk_forward_with_rnd_start",
+                "start": 460,
+                "end": 491
+            },
+            {
+                "name": "pattern_walk_backward",
+                "start": 494,
+                "end": 525
+            },
+            {
+                "name": "pattern_read_float_random_offsets",
+                "start": 528,
+                "end": 559
+            },
+            {
+                "name": "pattern_read_block_random_offsets",
+                "start": 562,
+                "end": 593
+            },
+            {
+                "name": "is_offset_in_file",
+                "start": 596,
+                "end": 599
+            },
+            {
+                "name": "read_from_random_offsets",
+                "start": 602,
+                "end": 609
+            },
+            {
+                "name": "runner_round_robin",
+                "start": 619,
+                "end": 706
+            },
+            {
+                "name": "is_placeholder_max_itr",
+                "start": 708,
+                "end": 711
+            }
+        ],
+        "src/dcap_mkdir.c": [
+            {
+                "name": "dc_mkdir",
+                "start": 31,
+                "end": 82
+            }
+        ],
+        "src/dcap_stat.c": [
+            {
+                "name": "stat64to32",
+                "start": 51,
+                "end": 72
+            },
+            {
+                "name": "getNodePath",
+                "start": 75,
+                "end": 102
+            },
+            {
+                "name": "dc_stat",
+                "start": 105,
+                "end": 128
+            },
+            {
+                "name": "dc_lstat",
+                "start": 131,
+                "end": 153
+            },
+            {
+                "name": "dc_fstat",
+                "start": 155,
+                "end": 177
+            },
+            {
+                "name": "dc_stat64",
+                "start": 182,
+                "end": 265
+            },
+            {
+                "name": "dc_lstat64",
+                "start": 270,
+                "end": 350
+            },
+            {
+                "name": "dc_fstat64",
+                "start": 355,
+                "end": 389
+            }
+        ],
+        "src/wdccp.c": [
+            {
+                "name": "path2filename",
+                "start": 63,
+                "end": 97
+            },
+            {
+                "name": "file2file",
+                "start": 111,
+                "end": 245
+            },
+            {
+                "name": "copyfile",
+                "start": 258,
+                "end": 309
+            },
+            {
+                "name": "usage",
+                "start": 319,
+                "end": 350
+            },
+            {
+                "name": "main",
+                "start": 359,
+                "end": 482
+            }
+        ],
+        "src/dccp_linux_directio.c": [
+            {
+                "name": "main",
+                "start": 59,
+                "end": 317
+            },
+            {
+                "name": "copyfile",
+                "start": 319,
+                "end": 410
+            },
+            {
+                "name": "usage",
+                "start": 412,
+                "end": 448
+            }
+        ],
+        "src/dcap_rename.c": [
+            {
+                "name": "dc_rename",
+                "start": 32,
+                "end": 89
+            }
+        ],
+        "src/lineparser.c": [
+            {
+                "name": "lineParser",
+                "start": 27,
+                "end": 96
+            }
+        ],
+        "src/xutil.c": [
+            {
+                "name": "xstrndup",
+                "start": 40,
+                "end": 74
+            },
+            {
+                "name": "xbasename",
+                "start": 78,
+                "end": 120
+            },
+            {
+                "name": "xdirname",
+                "start": 123,
+                "end": 156
+            }
+        ],
+        "src/dcap_checksum.c": [
+            {
+                "name": "update_checkSum",
+                "start": 43,
+                "end": 46
+            },
+            {
+                "name": "initialSum",
+                "start": 49,
+                "end": 59
+            },
+            {
+                "name": "dc_noCheckSum",
+                "start": 62,
+                "end": 80
+            }
+        ],
+        "src/dcap_poll.c": [
+            {
+                "name": "pevent2str",
+                "start": 75,
+                "end": 130
+            },
+            {
+                "name": "pollAdd",
+                "start": 133,
+                "end": 160
+            },
+            {
+                "name": "int_pollDelete",
+                "start": 162,
+                "end": 179
+            },
+            {
+                "name": "pollDelete",
+                "start": 180,
+                "end": 188
+            },
+            {
+                "name": "dcap_poll",
+                "start": 193,
+                "end": 489
+            },
+            {
+                "name": "messageDestroy",
+                "start": 492,
+                "end": 505
+            }
+        ],
+        "src/dcap_dirent.c": [
+            {
+                "name": "dc_opendir",
+                "start": 69,
+                "end": 141
+            },
+            {
+                "name": "dc_readdir",
+                "start": 146,
+                "end": 171
+            },
+            {
+                "name": "dc_readdir64",
+                "start": 173,
+                "end": 231
+            },
+            {
+                "name": "dc_closedir",
+                "start": 233,
+                "end": 270
+            },
+            {
+                "name": "dc_telldir",
+                "start": 273,
+                "end": 276
+            },
+            {
+                "name": "dc_seekdir",
+                "start": 278,
+                "end": 281
+            },
+            {
+                "name": "char2dirent64",
+                "start": 292,
+                "end": 341
+            }
+        ],
+        "src/dcap_signal.c": [
+            {
+                "name": "pipe_handler",
+                "start": 34,
+                "end": 42
+            },
+            {
+                "name": "dcap_signal",
+                "start": 45,
+                "end": 60
+            }
+        ],
+        "src/sigfig.c": [
+            {
+                "name": "dc_print_with_sigfig",
+                "start": 95,
+                "end": 134
+            },
+            {
+                "name": "identify_value_class",
+                "start": 141,
+                "end": 154
+            },
+            {
+                "name": "calc_round",
+                "start": 158,
+                "end": 191
+            },
+            {
+                "name": "whole_digit_count",
+                "start": 198,
+                "end": 210
+            },
+            {
+                "name": "zeros_after_dp",
+                "start": 216,
+                "end": 226
+            }
+        ],
+        "src/dcap_lseek.c": [
+            {
+                "name": "dc_lseek",
+                "start": 35,
+                "end": 40
+            },
+            {
+                "name": "dc_lseek64",
+                "start": 45,
+                "end": 69
+            },
+            {
+                "name": "dc_real_lseek",
+                "start": 72,
+                "end": 255
+            }
+        ],
+        "src/dcap_interpreter.c": [
+            {
+                "name": "dcap_interpreter",
+                "start": 57,
+                "end": 105
+            }
+        ],
+        "src/dcap_stream.c": [
+            {
+                "name": "dc_fclose",
+                "start": 56,
+                "end": 74
+            },
+            {
+                "name": "dc_feof",
+                "start": 76,
+                "end": 99
+            },
+            {
+                "name": "dc_fopen",
+                "start": 103,
+                "end": 106
+            },
+            {
+                "name": "dc_fopen64",
+                "start": 108,
+                "end": 160
+            },
+            {
+                "name": "dc_fdopen",
+                "start": 162,
+                "end": 194
+            },
+            {
+                "name": "dc_fread",
+                "start": 196,
+                "end": 224
+            },
+            {
+                "name": "dc_fseek",
+                "start": 228,
+                "end": 231
+            },
+            {
+                "name": "dc_fseeko",
+                "start": 233,
+                "end": 236
+            },
+            {
+                "name": "dc_fseeko64",
+                "start": 239,
+                "end": 259
+            },
+            {
+                "name": "dc_ftell",
+                "start": 261,
+                "end": 264
+            },
+            {
+                "name": "dc_ftello",
+                "start": 267,
+                "end": 270
+            },
+            {
+                "name": "dc_ftello64",
+                "start": 272,
+                "end": 294
+            },
+            {
+                "name": "dc_fwrite",
+                "start": 296,
+                "end": 332
+            },
+            {
+                "name": "dc_ferror",
+                "start": 335,
+                "end": 349
+            },
+            {
+                "name": "dc_fflush",
+                "start": 352,
+                "end": 369
+            },
+            {
+                "name": "dc_fgets",
+                "start": 372,
+                "end": 404
+            },
+            {
+                "name": "dc_fgetc",
+                "start": 406,
+                "end": 427
+            }
+        ],
+        "src/dc_job_hack.c": [
+            {
+                "name": "main",
+                "start": 35,
+                "end": 79
+            }
+        ],
+        "src/dcap_reconnect.c": [
+            {
+                "name": "recover_connection",
+                "start": 139,
+                "end": 148
+            },
+            {
+                "name": "smart_reconnect",
+                "start": 152,
+                "end": 185
+            },
+            {
+                "name": "alarm_handler",
+                "start": 188,
+                "end": 195
+            },
+            {
+                "name": "dcap_set_alarm",
+                "start": 197,
+                "end": 237
+            },
+            {
+                "name": "ping_pong",
+                "start": 246,
+                "end": 290
+            }
+        ],
+        "src/tunnelManager.c": [
+            {
+                "name": "setTunnelPair",
+                "start": 46,
+                "end": 65
+            },
+            {
+                "name": "getTunnelPair",
+                "start": 67,
+                "end": 83
+            },
+            {
+                "name": "addIoPlugin",
+                "start": 86,
+                "end": 150
+            }
+        ],
+        "src/input_parser.c": [
+            {
+                "name": "inputParser",
+                "start": 38,
+                "end": 132
+            }
+        ],
+        "src/dispatcher.c": [
+            {
+                "name": "thread_task",
+                "start": 105,
+                "end": 137
+            },
+            {
+                "name": "main",
+                "start": 140,
+                "end": 257
+            },
+            {
+                "name": "getMessage",
+                "start": 260,
+                "end": 375
+            }
+        ],
+        "src/node_plays.c": [
+            {
+                "name": "node_dupToAll",
+                "start": 46,
+                "end": 55
+            },
+            {
+                "name": "node_attach_fd",
+                "start": 57,
+                "end": 62
+            },
+            {
+                "name": "node_detach_fd",
+                "start": 64,
+                "end": 85
+            },
+            {
+                "name": "node_init",
+                "start": 88,
+                "end": 125
+            },
+            {
+                "name": "new_vsp_node",
+                "start": 127,
+                "end": 164
+            },
+            {
+                "name": "delete_vsp_node",
+                "start": 166,
+                "end": 198
+            },
+            {
+                "name": "get_vsp_node",
+                "start": 200,
+                "end": 230
+            },
+            {
+                "name": "node_destroy",
+                "start": 234,
+                "end": 286
+            },
+            {
+                "name": "node_unplug",
+                "start": 289,
+                "end": 301
+            },
+            {
+                "name": "real_node_unplug",
+                "start": 304,
+                "end": 335
+            },
+            {
+                "name": "getAllFD",
+                "start": 339,
+                "end": 384
+            }
+        ],
+        "src/win32_libdl.c": [
+            {
+                "name": "dlopen",
+                "start": 13,
+                "end": 30
+            },
+            {
+                "name": "dlsym",
+                "start": 32,
+                "end": 40
+            },
+            {
+                "name": "dlclose",
+                "start": 42,
+                "end": 57
+            },
+            {
+                "name": "dlerror",
+                "start": 59,
+                "end": 62
+            }
+        ],
+        "src/passive.c": [
+            {
+                "name": "connect_to_pool",
+                "start": 38,
+                "end": 57
+            }
+        ],
+        "src/dccp.c": [
+            {
+                "name": "hash_printing_accept_byte_count",
+                "start": 106,
+                "end": 108
+            },
+            {
+                "name": "build_output",
+                "start": 109,
+                "end": 110
+            },
+            {
+                "name": "write_bytes_written",
+                "start": 112,
+                "end": 113
+            },
+            {
+                "name": "write_avr_rate",
+                "start": 114,
+                "end": 115
+            },
+            {
+                "name": "write_percent",
+                "start": 116,
+                "end": 117
+            },
+            {
+                "name": "write_percentage_progress_bar",
+                "start": 118,
+                "end": 121
+            },
+            {
+                "name": "write_activity_progress_bar",
+                "start": 122,
+                "end": 123
+            },
+            {
+                "name": "build_item",
+                "start": 128,
+                "end": 130
+            },
+            {
+                "name": "hide_items_for_minimum_bar_size",
+                "start": 133,
+                "end": 134
+            },
+            {
+                "name": "main",
+                "start": 136,
+                "end": 429
+            },
+            {
+                "name": "copyfile",
+                "start": 431,
+                "end": 491
+            },
+            {
+                "name": "usage",
+                "start": 493,
+                "end": 534
+            },
+            {
+                "name": "hash_printing_accept_byte_count",
+                "start": 537,
+                "end": 566
+            },
+            {
+                "name": "append_spaces_if_shrunk",
+                "start": 569,
+                "end": 585
+            },
+            {
+                "name": "write_spaces",
+                "start": 587,
+                "end": 597
+            },
+            {
+                "name": "build_output",
+                "start": 599,
+                "end": 627
+            },
+            {
+                "name": "build_item",
+                "start": 630,
+                "end": 643
+            },
+            {
+                "name": "hide_items_for_minimum_bar_size",
+                "start": 645,
+                "end": 673
+            },
+            {
+                "name": "transfer_has_known_size",
+                "start": 676,
+                "end": 679
+            },
+            {
+                "name": "write_items",
+                "start": 681,
+                "end": 694
+            },
+            {
+                "name": "write_percentage_progress_bar",
+                "start": 703,
+                "end": 720
+            },
+            {
+                "name": "write_activity_progress_bar",
+                "start": 728,
+                "end": 752
+            },
+            {
+                "name": "write_bytes_written",
+                "start": 757,
+                "end": 764
+            },
+            {
+                "name": "write_avr_rate",
+                "start": 768,
+                "end": 785
+            },
+            {
+                "name": "write_percent",
+                "start": 789,
+                "end": 797
+            },
+            {
+                "name": "get_terminal_width",
+                "start": 800,
+                "end": 820
+            },
+            {
+                "name": "elapsed_transfer_time",
+                "start": 828,
+                "end": 845
+            }
+        ],
+        "src/str2errno.c": [
+            {
+                "name": "str2errno",
+                "start": 70,
+                "end": 85
+            }
+        ],
+        "src/dcap.c": [
+            {
+                "name": "name_invalid",
+                "start": 142,
+                "end": 156
+            },
+            {
+                "name": "init_hostname",
+                "start": 160,
+                "end": 195
+            },
+            {
+                "name": "cache_open",
+                "start": 198,
+                "end": 297
+            },
+            {
+                "name": "initControlLine",
+                "start": 300,
+                "end": 313
+            },
+            {
+                "name": "serverConnect",
+                "start": 316,
+                "end": 587
+            },
+            {
+                "name": "parseConfig",
+                "start": 593,
+                "end": 712
+            },
+            {
+                "name": "cache_connect",
+                "start": 715,
+                "end": 742
+            },
+            {
+                "name": "sayHello",
+                "start": 744,
+                "end": 787
+            },
+            {
+                "name": "create_data_socket",
+                "start": 789,
+                "end": 847
+            },
+            {
+                "name": "ascii_open_conversation",
+                "start": 851,
+                "end": 1156
+            },
+            {
+                "name": "close_data_socket",
+                "start": 1158,
+                "end": 1162
+            },
+            {
+                "name": "close_control_socket",
+                "start": 1165,
+                "end": 1172
+            },
+            {
+                "name": "sendControlMessage",
+                "start": 1175,
+                "end": 1199
+            },
+            {
+                "name": "getControlMessage",
+                "start": 1201,
+                "end": 1233
+            },
+            {
+                "name": "getDataMessage",
+                "start": 1235,
+                "end": 1238
+            },
+            {
+                "name": "data_hello_conversation",
+                "start": 1245,
+                "end": 1365
+            },
+            {
+                "name": "writeOK",
+                "start": 1367,
+                "end": 1395
+            },
+            {
+                "name": "sendDataMessage",
+                "start": 1397,
+                "end": 1452
+            },
+            {
+                "name": "get_ack",
+                "start": 1455,
+                "end": 1472
+            },
+            {
+                "name": "get_reply",
+                "start": 1475,
+                "end": 1567
+            },
+            {
+                "name": "get_data",
+                "start": 1569,
+                "end": 1579
+            },
+            {
+                "name": "get_fin",
+                "start": 1581,
+                "end": 1592
+            },
+            {
+                "name": "ntohll",
+                "start": 1602,
+                "end": 1610
+            },
+            {
+                "name": "htonll",
+                "start": 1614,
+                "end": 1618
+            },
+            {
+                "name": "dc_setReplyHostName",
+                "start": 1621,
+                "end": 1632
+            },
+            {
+                "name": "newCounter",
+                "start": 1635,
+                "end": 1643
+            },
+            {
+                "name": "reconnected",
+                "start": 1647,
+                "end": 1689
+            },
+            {
+                "name": "dc_set_pos",
+                "start": 1692,
+                "end": 1785
+            },
+            {
+                "name": "dc_setExtraOption",
+                "start": 1787,
+                "end": 1826
+            },
+            {
+                "name": "dc_setOpenTimeout",
+                "start": 1828,
+                "end": 1831
+            },
+            {
+                "name": "dc_setOnError",
+                "start": 1833,
+                "end": 1840
+            },
+            {
+                "name": "dc_unsafeWrite",
+                "start": 1843,
+                "end": 1855
+            },
+            {
+                "name": "newControlLine",
+                "start": 1858,
+                "end": 1878
+            },
+            {
+                "name": "dc_setCallbackPort",
+                "start": 1881,
+                "end": 1884
+            },
+            {
+                "name": "dc_setCallbackPortRange",
+                "start": 1887,
+                "end": 1895
+            },
+            {
+                "name": "dc_setTunnel",
+                "start": 1898,
+                "end": 1903
+            },
+            {
+                "name": "dc_setTunnelType",
+                "start": 1905,
+                "end": 1910
+            },
+            {
+                "name": "getRevision",
+                "start": 1916,
+                "end": 1920
+            },
+            {
+                "name": "dc_setTCPSendBuffer",
+                "start": 1924,
+                "end": 1931
+            },
+            {
+                "name": "dc_setTCPReceiveBuffer",
+                "start": 1934,
+                "end": 1941
+            },
+            {
+                "name": "getPortRange",
+                "start": 1944,
+                "end": 1969
+            },
+            {
+                "name": "isActive",
+                "start": 1977,
+                "end": 1991
+            },
+            {
+                "name": "dc_setClientActive",
+                "start": 1993,
+                "end": 1996
+            }
+        ],
+        "src/dcap_close.c": [
+            {
+                "name": "validate_env_variable",
+                "start": 62,
+                "end": 84
+            },
+            {
+                "name": "check_timeout_envar",
+                "start": 86,
+                "end": 104
+            },
+            {
+                "name": "dc_close",
+                "start": 110,
+                "end": 211
+            },
+            {
+                "name": "dc_close2",
+                "start": 218,
+                "end": 264
+            },
+            {
+                "name": "dc_closeAll",
+                "start": 271,
+                "end": 284
+            },
+            {
+                "name": "dc_setCloseTimeout",
+                "start": 286,
+                "end": 290
+            }
+        ],
+        "src/fnal_thread.c": [
+            {
+                "name": "byteSwapL",
+                "start": 36,
+                "end": 43
+            },
+            {
+                "name": "thread_task",
+                "start": 45,
+                "end": 103
+            },
+            {
+                "name": "main",
+                "start": 105,
+                "end": 161
+            }
+        ],
+        "src/dcap_ahead.c": [
+            {
+                "name": "dc_noBuffering",
+                "start": 38,
+                "end": 56
+            },
+            {
+                "name": "dc_setNodeBufferSize",
+                "start": 58,
+                "end": 149
+            },
+            {
+                "name": "dc_setBufferSize",
+                "start": 151,
+                "end": 166
+            }
+        ],
+        "src/pnfs.c": [
+            {
+                "name": "isPnfs",
+                "start": 49,
+                "end": 95
+            },
+            {
+                "name": "create_pnfs_entry",
+                "start": 98,
+                "end": 120
+            },
+            {
+                "name": "getPnfsID",
+                "start": 124,
+                "end": 183
+            },
+            {
+                "name": "getPnfsIDbyPath",
+                "start": 186,
+                "end": 253
+            }
+        ],
+        "src/dcap_url.c": [
+            {
+                "name": "isUrl",
+                "start": 37,
+                "end": 42
+            },
+            {
+                "name": "dc_getURL",
+                "start": 45,
+                "end": 186
+            },
+            {
+                "name": "url2config",
+                "start": 188,
+                "end": 199
+            }
+        ],
+        "src/dcap_preload64.c": [
+            {
+                "name": "open64",
+                "start": 42,
+                "end": 55
+            },
+            {
+                "name": "creat64",
+                "start": 57,
+                "end": 61
+            },
+            {
+                "name": "pread64",
+                "start": 63,
+                "end": 67
+            },
+            {
+                "name": "pwrite64",
+                "start": 69,
+                "end": 73
+            },
+            {
+                "name": "lseek64",
+                "start": 75,
+                "end": 79
+            },
+            {
+                "name": "__xstat64",
+                "start": 81,
+                "end": 85
+            },
+            {
+                "name": "__lxstat64",
+                "start": 87,
+                "end": 91
+            },
+            {
+                "name": "__fxstat64",
+                "start": 93,
+                "end": 97
+            },
+            {
+                "name": "stat64",
+                "start": 99,
+                "end": 103
+            },
+            {
+                "name": "lstat64",
+                "start": 105,
+                "end": 109
+            },
+            {
+                "name": "fstat64",
+                "start": 111,
+                "end": 115
+            },
+            {
+                "name": "readdir64",
+                "start": 120,
+                "end": 129
+            },
+            {
+                "name": "fopen64",
+                "start": 132,
+                "end": 137
+            },
+            {
+                "name": "fseeko64",
+                "start": 139,
+                "end": 143
+            },
+            {
+                "name": "ftello64",
+                "start": 145,
+                "end": 149
+            }
+        ],
+        "src/dcap_open.c": [
+            {
+                "name": "dc_open",
+                "start": 42,
+                "end": 396
+            },
+            {
+                "name": "dc_creat",
+                "start": 398,
+                "end": 402
+            },
+            {
+                "name": "dc_stage",
+                "start": 404,
+                "end": 416
+            },
+            {
+                "name": "dc_check",
+                "start": 418,
+                "end": 422
+            }
+        ],
+        "src/thread_test.c": [
+            {
+                "name": "thread_task",
+                "start": 28,
+                "end": 63
+            },
+            {
+                "name": "main",
+                "start": 66,
+                "end": 94
+            }
+        ],
+        "src/socket_nio.c": [
+            {
+                "name": "setNonBlocking",
+                "start": 35,
+                "end": 51
+            },
+            {
+                "name": "clearNonBlocking",
+                "start": 53,
+                "end": 67
+            },
+            {
+                "name": "nio_connect",
+                "start": 72,
+                "end": 96
+            }
+        ],
+        "src/dcap_preload.c": [
+            {
+                "name": "open",
+                "start": 38,
+                "end": 59
+            },
+            {
+                "name": "creat",
+                "start": 61,
+                "end": 69
+            },
+            {
+                "name": "lseek",
+                "start": 71,
+                "end": 75
+            },
+            {
+                "name": "stat",
+                "start": 84,
+                "end": 88
+            },
+            {
+                "name": "__xstat",
+                "start": 91,
+                "end": 95
+            },
+            {
+                "name": "lstat",
+                "start": 104,
+                "end": 108
+            },
+            {
+                "name": "__lxstat",
+                "start": 111,
+                "end": 115
+            },
+            {
+                "name": "fstat",
+                "start": 124,
+                "end": 128
+            },
+            {
+                "name": "__fxstat",
+                "start": 131,
+                "end": 135
+            },
+            {
+                "name": "readdir",
+                "start": 153,
+                "end": 157
+            },
+            {
+                "name": "opendir",
+                "start": 160,
+                "end": 167
+            },
+            {
+                "name": "closedir",
+                "start": 169,
+                "end": 173
+            },
+            {
+                "name": "telldir",
+                "start": 176,
+                "end": 180
+            },
+            {
+                "name": "seekdir",
+                "start": 182,
+                "end": 186
+            },
+            {
+                "name": "read",
+                "start": 189,
+                "end": 193
+            },
+            {
+                "name": "readv",
+                "start": 195,
+                "end": 199
+            },
+            {
+                "name": "pread",
+                "start": 201,
+                "end": 205
+            },
+            {
+                "name": "write",
+                "start": 207,
+                "end": 211
+            },
+            {
+                "name": "writev",
+                "start": 213,
+                "end": 217
+            },
+            {
+                "name": "pwrite",
+                "start": 219,
+                "end": 223
+            },
+            {
+                "name": "dup",
+                "start": 225,
+                "end": 229
+            },
+            {
+                "name": "access",
+                "start": 231,
+                "end": 235
+            },
+            {
+                "name": "fsync",
+                "start": 237,
+                "end": 241
+            },
+            {
+                "name": "close",
+                "start": 243,
+                "end": 247
+            },
+            {
+                "name": "listxattr",
+                "start": 251,
+                "end": 257
+            },
+            {
+                "name": "flistxattr",
+                "start": 259,
+                "end": 265
+            },
+            {
+                "name": "llistxattr",
+                "start": 267,
+                "end": 273
+            },
+            {
+                "name": "getxattr",
+                "start": 275,
+                "end": 281
+            },
+            {
+                "name": "lgetxattr",
+                "start": 283,
+                "end": 289
+            },
+            {
+                "name": "fgetxattr",
+                "start": 291,
+                "end": 297
+            },
+            {
+                "name": "fopen",
+                "start": 299,
+                "end": 309
+            },
+            {
+                "name": "fdopen",
+                "start": 311,
+                "end": 321
+            },
+            {
+                "name": "fclose",
+                "start": 323,
+                "end": 328
+            },
+            {
+                "name": "fwrite",
+                "start": 330,
+                "end": 334
+            },
+            {
+                "name": "fread",
+                "start": 336,
+                "end": 340
+            },
+            {
+                "name": "fseek",
+                "start": 343,
+                "end": 347
+            },
+            {
+                "name": "ftell",
+                "start": 349,
+                "end": 353
+            },
+            {
+                "name": "ferror",
+                "start": 355,
+                "end": 359
+            },
+            {
+                "name": "fflush",
+                "start": 361,
+                "end": 365
+            },
+            {
+                "name": "feof",
+                "start": 368,
+                "end": 372
+            },
+            {
+                "name": "fgets",
+                "start": 374,
+                "end": 378
+            },
+            {
+                "name": "fgetc",
+                "start": 380,
+                "end": 384
+            },
+            {
+                "name": "getc",
+                "start": 387,
+                "end": 391
+            },
+            {
+                "name": "fseeko",
+                "start": 394,
+                "end": 398
+            },
+            {
+                "name": "ftello",
+                "start": 400,
+                "end": 404
+            },
+            {
+                "name": "unlink",
+                "start": 406,
+                "end": 410
+            },
+            {
+                "name": "rmdir",
+                "start": 413,
+                "end": 417
+            },
+            {
+                "name": "mkdir",
+                "start": 419,
+                "end": 423
+            },
+            {
+                "name": "chmod",
+                "start": 425,
+                "end": 429
+            },
+            {
+                "name": "chown",
+                "start": 431,
+                "end": 435
+            },
+            {
+                "name": "clearerr",
+                "start": 437,
+                "end": 440
+            },
+            {
+                "name": "rewind",
+                "start": 442,
+                "end": 446
+            },
+            {
+                "name": "rename",
+                "start": 448,
+                "end": 452
+            }
+        ],
+        "src/links.c": [
+            {
+                "name": "followLink",
+                "start": 38,
+                "end": 64
+            }
+        ],
+        "src/dcap_read.c": [
+            {
+                "name": "dc_read",
+                "start": 40,
+                "end": 76
+            },
+            {
+                "name": "dc_pread",
+                "start": 79,
+                "end": 83
+            },
+            {
+                "name": "dc_pread64",
+                "start": 86,
+                "end": 117
+            },
+            {
+                "name": "dc_real_read",
+                "start": 120,
+                "end": 417
+            },
+            {
+                "name": "dc_readv",
+                "start": 420,
+                "end": 490
+            },
+            {
+                "name": "dc_readTo",
+                "start": 495,
+                "end": 584
+            },
+            {
+                "name": "dc_readv2",
+                "start": 587,
+                "end": 747
+            }
+        ],
+        "src/readv_test.c": [
+            {
+                "name": "byteSwapL",
+                "start": 13,
+                "end": 21
+            },
+            {
+                "name": "main",
+                "start": 23,
+                "end": 84
+            }
+        ],
+        "src/dcap_error.c": [
+            {
+                "name": "dc_perror",
+                "start": 163,
+                "end": 187
+            },
+            {
+                "name": "dc_error",
+                "start": 189,
+                "end": 193
+            },
+            {
+                "name": "dc_setServerError",
+                "start": 195,
+                "end": 228
+            },
+            {
+                "name": "dc_strerror",
+                "start": 231,
+                "end": 250
+            }
+        ],
+        "src/dcap_debug.c": [
+            {
+                "name": "dc_setDebugLevel",
+                "start": 47,
+                "end": 56
+            },
+            {
+                "name": "dc_setRecoveryDebugLevel",
+                "start": 59,
+                "end": 65
+            },
+            {
+                "name": "string2debugLevel",
+                "start": 67,
+                "end": 101
+            },
+            {
+                "name": "dc_setStrDebugLevel",
+                "start": 103,
+                "end": 112
+            },
+            {
+                "name": "dc_debug",
+                "start": 114,
+                "end": 123
+            },
+            {
+                "name": "dc_vdebug",
+                "start": 125,
+                "end": 130
+            },
+            {
+                "name": "dc_is_debug_level_enabled",
+                "start": 132,
+                "end": 137
+            },
+            {
+                "name": "conditional_initialize",
+                "start": 139,
+                "end": 144
+            },
+            {
+                "name": "emit_debug",
+                "start": 147,
+                "end": 159
+            },
+            {
+                "name": "init_dc_debug",
+                "start": 163,
+                "end": 195
+            }
+        ],
+        "src/dcap_str_util.c": [
+            {
+                "name": "dc_char_buf_create",
+                "start": 28,
+                "end": 49
+            },
+            {
+                "name": "dc_char_buf_sprintf",
+                "start": 56,
+                "end": 100
+            },
+            {
+                "name": "dc_char_buf_free",
+                "start": 104,
+                "end": 113
+            },
+            {
+                "name": "dc_safe_strncat",
+                "start": 125,
+                "end": 139
+            },
+            {
+                "name": "dc_snaprintf",
+                "start": 153,
+                "end": 193
+            }
+        ],
+        "src/dcap_fsync.c": [
+            {
+                "name": "dc_fsync",
+                "start": 26,
+                "end": 49
+            },
+            {
+                "name": "dc_real_fsync",
+                "start": 53,
+                "end": 70
+            }
+        ],
+        "src/gettrace.c": [
+            {
+                "name": "mcheck_lookup_method_info",
+                "start": 40,
+                "end": 42
+            },
+            {
+                "name": "mcheck_init_bfd",
+                "start": 54,
+                "end": 77
+            },
+            {
+                "name": "read_bfd_stuff",
+                "start": 79,
+                "end": 100
+            },
+            {
+                "name": "mcheck_lookup_method_info",
+                "start": 103,
+                "end": 111
+            },
+            {
+                "name": "printStackInfo",
+                "start": 113,
+                "end": 143
+            },
+            {
+                "name": "init_traceBack",
+                "start": 146,
+                "end": 166
+            },
+            {
+                "name": "showTraceBack",
+                "start": 168,
+                "end": 188
+            }
+        ]
+    }
+}

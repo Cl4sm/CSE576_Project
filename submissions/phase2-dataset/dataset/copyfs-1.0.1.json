@@ -1,0 +1,391 @@
+{
+    "copyfs-1.0.1": {
+        "helper.h": [
+            {
+                "name": "helper_malloc",
+                "start": 22,
+                "end": 23
+            },
+            {
+                "name": "helper_realloc",
+                "start": 24,
+                "end": 25
+            },
+            {
+                "name": "helper_strdup",
+                "start": 26,
+                "end": 27
+            }
+        ],
+        "create.c": [
+            {
+                "name": "create_version_name",
+                "start": 29,
+                "end": 51
+            },
+            {
+                "name": "create_meta_name",
+                "start": 57,
+                "end": 71
+            },
+            {
+                "name": "create_link_version",
+                "start": 78,
+                "end": 119
+            },
+            {
+                "name": "create_new_version_generic",
+                "start": 128,
+                "end": 201
+            },
+            {
+                "name": "create_new_metadata",
+                "start": 206,
+                "end": 234
+            },
+            {
+                "name": "create_new_version",
+                "start": 242,
+                "end": 245
+            },
+            {
+                "name": "create_new_subversion",
+                "start": 251,
+                "end": 254
+            },
+            {
+                "name": "create_new_file",
+                "start": 260,
+                "end": 300
+            },
+            {
+                "name": "create_new_symlink",
+                "start": 306,
+                "end": 332
+            },
+            {
+                "name": "create_new_directory",
+                "start": 334,
+                "end": 361
+            },
+            {
+                "name": "create_copy_file",
+                "start": 367,
+                "end": 413
+            }
+        ],
+        "helper.c": [
+            {
+                "name": "helper_malloc",
+                "start": 22,
+                "end": 34
+            },
+            {
+                "name": "helper_realloc",
+                "start": 39,
+                "end": 52
+            },
+            {
+                "name": "helper_strdup",
+                "start": 57,
+                "end": 69
+            },
+            {
+                "name": "helper_split_to_array",
+                "start": 77,
+                "end": 129
+            },
+            {
+                "name": "helper_free_array",
+                "start": 134,
+                "end": 141
+            },
+            {
+                "name": "helper_array_has_prefix",
+                "start": 147,
+                "end": 155
+            },
+            {
+                "name": "helper_build_composite",
+                "start": 163,
+                "end": 234
+            },
+            {
+                "name": "helper_hash_string",
+                "start": 239,
+                "end": 246
+            },
+            {
+                "name": "helper_read_line",
+                "start": 252,
+                "end": 287
+            },
+            {
+                "name": "helper_get_file_name",
+                "start": 292,
+                "end": 299
+            },
+            {
+                "name": "helper_extract_filename",
+                "start": 304,
+                "end": 313
+            },
+            {
+                "name": "helper_extract_dirname",
+                "start": 318,
+                "end": 329
+            },
+            {
+                "name": "helper_create_meta_name",
+                "start": 335,
+                "end": 349
+            }
+        ],
+        "lookup.c": [
+            {
+                "name": "rcs_find_version",
+                "start": 30,
+                "end": 98
+            },
+            {
+                "name": "rcs_fixup_metadata_paths",
+                "start": 103,
+                "end": 115
+            },
+            {
+                "name": "rcs_fixup_metadata_vfile",
+                "start": 121,
+                "end": 134
+            },
+            {
+                "name": "rcs_translate_path",
+                "start": 142,
+                "end": 244
+            },
+            {
+                "name": "rcs_translate_to_metadata",
+                "start": 249,
+                "end": 263
+            }
+        ],
+        "cache.c": [
+            {
+                "name": "cache_initialize",
+                "start": 26,
+                "end": 39
+            },
+            {
+                "name": "cache_finalize",
+                "start": 44,
+                "end": 62
+            },
+            {
+                "name": "cache_get_metadata",
+                "start": 74,
+                "end": 102
+            },
+            {
+                "name": "cache_cleanup_old_items",
+                "start": 108,
+                "end": 111
+            },
+            {
+                "name": "cache_add_metadata",
+                "start": 121,
+                "end": 140
+            },
+            {
+                "name": "cache_find_maximal_match",
+                "start": 147,
+                "end": 170
+            }
+        ],
+        "ea.h": [
+            {
+                "name": "callback_setxattr",
+                "start": 12,
+                "end": 13
+            },
+            {
+                "name": "callback_getxattr",
+                "start": 14,
+                "end": 15
+            }
+        ],
+        "interface.c": [
+            {
+                "name": "callback_getattr",
+                "start": 38,
+                "end": 63
+            },
+            {
+                "name": "callback_readlink",
+                "start": 65,
+                "end": 84
+            },
+            {
+                "name": "callback_getdir",
+                "start": 88,
+                "end": 155
+            },
+            {
+                "name": "callback_mknod",
+                "start": 157,
+                "end": 161
+            },
+            {
+                "name": "callback_mkdir",
+                "start": 163,
+                "end": 167
+            },
+            {
+                "name": "callback_unlink",
+                "start": 169,
+                "end": 192
+            },
+            {
+                "name": "callback_rmdir",
+                "start": 194,
+                "end": 271
+            },
+            {
+                "name": "callback_symlink",
+                "start": 273,
+                "end": 277
+            },
+            {
+                "name": "callback_rename",
+                "start": 279,
+                "end": 289
+            },
+            {
+                "name": "callback_link",
+                "start": 291,
+                "end": 300
+            },
+            {
+                "name": "callback_chmod",
+                "start": 302,
+                "end": 317
+            },
+            {
+                "name": "callback_chown",
+                "start": 319,
+                "end": 334
+            },
+            {
+                "name": "callback_truncate",
+                "start": 336,
+                "end": 353
+            },
+            {
+                "name": "callback_utime",
+                "start": 355,
+                "end": 373
+            },
+            {
+                "name": "callback_open",
+                "start": 375,
+                "end": 392
+            },
+            {
+                "name": "callback_read",
+                "start": 394,
+                "end": 412
+            },
+            {
+                "name": "callback_write",
+                "start": 414,
+                "end": 434
+            },
+            {
+                "name": "callback_statfs",
+                "start": 436,
+                "end": 444
+            },
+            {
+                "name": "callback_release",
+                "start": 446,
+                "end": 452
+            },
+            {
+                "name": "callback_fsync",
+                "start": 454,
+                "end": 460
+            }
+        ],
+        "write.c": [
+            {
+                "name": "write_metadata_file_worker",
+                "start": 22,
+                "end": 43
+            },
+            {
+                "name": "write_metadata_file",
+                "start": 51,
+                "end": 77
+            },
+            {
+                "name": "write_default_file",
+                "start": 83,
+                "end": 112
+            }
+        ],
+        "ea.c": [
+            {
+                "name": "callback_setxattr",
+                "start": 38,
+                "end": 126
+            },
+            {
+                "name": "callback_getxattr",
+                "start": 131,
+                "end": 253
+            },
+            {
+                "name": "callback_listxattr",
+                "start": 260,
+                "end": 308
+            },
+            {
+                "name": "callback_removexattr",
+                "start": 313,
+                "end": 333
+            }
+        ],
+        "parse.c": [
+            {
+                "name": "parse_version_line",
+                "start": 22,
+                "end": 64
+            },
+            {
+                "name": "parse_metadata_file",
+                "start": 73,
+                "end": 145
+            },
+            {
+                "name": "parse_default_file",
+                "start": 150,
+                "end": 174
+            },
+            {
+                "name": "parse_metadata_for_file",
+                "start": 180,
+                "end": 210
+            }
+        ],
+        "main.c": [
+            {
+                "name": "rcs_free_metadata",
+                "start": 25,
+                "end": 41
+            },
+            {
+                "name": "main",
+                "start": 66,
+                "end": 83
+            }
+        ]
+    }
+}

@@ -1,0 +1,995 @@
+{
+    "sshguard-1.5": {
+        "src/sshguard_log.h": [
+            {
+                "name": "sshguard_log",
+                "start": 69,
+                "end": 72
+            }
+        ],
+        "src/sshguard_whitelist.c": [
+            {
+                "name": "match_ip4",
+                "start": 67,
+                "end": 69
+            },
+            {
+                "name": "match_ip6",
+                "start": 72,
+                "end": 81
+            },
+            {
+                "name": "whitelist_compare",
+                "start": 86,
+                "end": 111
+            },
+            {
+                "name": "whitelist_conf_init",
+                "start": 113,
+                "end": 131
+            },
+            {
+                "name": "whitelist_conf_fin",
+                "start": 133,
+                "end": 138
+            },
+            {
+                "name": "whitelist_init",
+                "start": 140,
+                "end": 146
+            },
+            {
+                "name": "whitelist_fin",
+                "start": 148,
+                "end": 151
+            },
+            {
+                "name": "whitelist_file",
+                "start": 153,
+                "end": 184
+            },
+            {
+                "name": "whitelist_add",
+                "start": 187,
+                "end": 245
+            },
+            {
+                "name": "whitelist_add_block4",
+                "start": 247,
+                "end": 266
+            },
+            {
+                "name": "whitelist_add_block6",
+                "start": 268,
+                "end": 301
+            },
+            {
+                "name": "whitelist_add_ipv4",
+                "start": 303,
+                "end": 317
+            },
+            {
+                "name": "whitelist_add_ipv6",
+                "start": 319,
+                "end": 338
+            },
+            {
+                "name": "whitelist_add_host",
+                "start": 340,
+                "end": 376
+            },
+            {
+                "name": "whitelist_match",
+                "start": 378,
+                "end": 428
+            }
+        ],
+        "src/hash_32a.c": [
+            {
+                "name": "fnv_32a_str",
+                "start": 122,
+                "end": 145
+            }
+        ],
+        "src/sshguard_blacklist.c": [
+            {
+                "name": "seeker_addr",
+                "start": 42,
+                "end": 50
+            },
+            {
+                "name": "attacker_serializer",
+                "start": 62,
+                "end": 119
+            },
+            {
+                "name": "attacker_unserializer",
+                "start": 122,
+                "end": 157
+            },
+            {
+                "name": "blacklist_load",
+                "start": 162,
+                "end": 173
+            },
+            {
+                "name": "blacklist_create",
+                "start": 175,
+                "end": 187
+            },
+            {
+                "name": "blacklist_add",
+                "start": 189,
+                "end": 211
+            },
+            {
+                "name": "blacklist_lookup_address",
+                "start": 214,
+                "end": 235
+            }
+        ],
+        "src/simclist.c": [
+            {
+                "name": "list_sort_quicksort",
+                "start": 169,
+                "end": 171
+            },
+            {
+                "name": "list_sort_selectionsort",
+                "start": 173,
+                "end": 175
+            },
+            {
+                "name": "list_init",
+                "start": 237,
+                "end": 271
+            },
+            {
+                "name": "list_destroy",
+                "start": 273,
+                "end": 283
+            },
+            {
+                "name": "list_attributes_setdefaults",
+                "start": 285,
+                "end": 302
+            },
+            {
+                "name": "list_attributes_comparator",
+                "start": 305,
+                "end": 313
+            },
+            {
+                "name": "list_attributes_keymaker",
+                "start": 315,
+                "end": 323
+            },
+            {
+                "name": "list_attributes_seeker",
+                "start": 325,
+                "end": 332
+            },
+            {
+                "name": "list_attributes_copy",
+                "start": 334,
+                "end": 343
+            },
+            {
+                "name": "list_attributes_hash_computer",
+                "start": 345,
+                "end": 351
+            },
+            {
+                "name": "list_attributes_serializer",
+                "start": 353,
+                "end": 359
+            },
+            {
+                "name": "list_attributes_unserializer",
+                "start": 361,
+                "end": 367
+            },
+            {
+                "name": "list_append",
+                "start": 369,
+                "end": 371
+            },
+            {
+                "name": "list_prepend",
+                "start": 373,
+                "end": 375
+            },
+            {
+                "name": "list_fetch",
+                "start": 377,
+                "end": 379
+            },
+            {
+                "name": "list_get_at",
+                "start": 381,
+                "end": 387
+            },
+            {
+                "name": "list_get_max",
+                "start": 389,
+                "end": 391
+            },
+            {
+                "name": "list_get_min",
+                "start": 393,
+                "end": 395
+            },
+            {
+                "name": "list_get_minmax",
+                "start": 399,
+                "end": 413
+            },
+            {
+                "name": "list_findpos",
+                "start": 416,
+                "end": 445
+            },
+            {
+                "name": "list_extract_at",
+                "start": 447,
+                "end": 463
+            },
+            {
+                "name": "list_insert_at",
+                "start": 465,
+                "end": 512
+            },
+            {
+                "name": "list_delete",
+                "start": 514,
+                "end": 528
+            },
+            {
+                "name": "list_delete_at",
+                "start": 530,
+                "end": 546
+            },
+            {
+                "name": "list_delete_range",
+                "start": 548,
+                "end": 608
+            },
+            {
+                "name": "list_clear",
+                "start": 610,
+                "end": 650
+            },
+            {
+                "name": "list_size",
+                "start": 652,
+                "end": 654
+            },
+            {
+                "name": "list_empty",
+                "start": 656,
+                "end": 658
+            },
+            {
+                "name": "list_locate",
+                "start": 660,
+                "end": 678
+            },
+            {
+                "name": "list_seek",
+                "start": 680,
+                "end": 690
+            },
+            {
+                "name": "list_contains",
+                "start": 692,
+                "end": 694
+            },
+            {
+                "name": "list_concat",
+                "start": 696,
+                "end": 747
+            },
+            {
+                "name": "list_sort",
+                "start": 749,
+                "end": 758
+            },
+            {
+                "name": "el_compare",
+                "start": 777,
+                "end": 790
+            },
+            {
+                "name": "list_sort_selectionsort",
+                "start": 792,
+                "end": 811
+            },
+            {
+                "name": "list_sort_quicksort",
+                "start": 813,
+                "end": 934
+            },
+            {
+                "name": "list_iterator_start",
+                "start": 936,
+                "end": 942
+            },
+            {
+                "name": "list_iterator_next",
+                "start": 944,
+                "end": 954
+            },
+            {
+                "name": "list_iterator_hasnext",
+                "start": 956,
+                "end": 959
+            },
+            {
+                "name": "list_iterator_stop",
+                "start": 961,
+                "end": 966
+            },
+            {
+                "name": "list_hash",
+                "start": 968,
+                "end": 1002
+            },
+            {
+                "name": "list_dump_getinfo_filedescriptor",
+                "start": 1005,
+                "end": 1065
+            },
+            {
+                "name": "list_dump_getinfo_file",
+                "start": 1067,
+                "end": 1077
+            },
+            {
+                "name": "list_dump_filedescriptor",
+                "start": 1079,
+                "end": 1224
+            },
+            {
+                "name": "list_restore_filedescriptor",
+                "start": 1226,
+                "end": 1345
+            },
+            {
+                "name": "list_dump_file",
+                "start": 1347,
+                "end": 1358
+            },
+            {
+                "name": "list_restore_file",
+                "start": 1360,
+                "end": 1371
+            },
+            {
+                "name": "list_drop_elem",
+                "start": 1375,
+                "end": 1401
+            },
+            {
+                "name": "list_hashcomputer_string",
+                "start": 1455,
+                "end": 1468
+            }
+        ],
+        "src/sshguard.c": [
+            {
+                "name": "main",
+                "start": 128,
+                "end": 244
+            },
+            {
+                "name": "read_log_line",
+                "start": 246,
+                "end": 263
+            },
+            {
+                "name": "safe_fgets",
+                "start": 266,
+                "end": 280
+            },
+            {
+                "name": "report_address",
+                "start": 292,
+                "end": 412
+            },
+            {
+                "name": "attackerinit",
+                "start": 414,
+                "end": 422
+            },
+            {
+                "name": "purge_limbo_stale",
+                "start": 424,
+                "end": 437
+            },
+            {
+                "name": "pardonBlocked",
+                "start": 439,
+                "end": 477
+            },
+            {
+                "name": "finishup",
+                "start": 480,
+                "end": 491
+            },
+            {
+                "name": "sigfin_handler",
+                "start": 493,
+                "end": 496
+            },
+            {
+                "name": "sigstpcont_handler",
+                "start": 498,
+                "end": 510
+            },
+            {
+                "name": "attackt_whenlast_comparator",
+                "start": 512,
+                "end": 517
+            },
+            {
+                "name": "process_blacklisted_addresses",
+                "start": 519,
+                "end": 580
+            },
+            {
+                "name": "my_pidfile_create",
+                "start": 582,
+                "end": 594
+            },
+            {
+                "name": "my_pidfile_destroy",
+                "start": 596,
+                "end": 599
+            }
+        ],
+        "src/sshguard_log.c": [
+            {
+                "name": "sshguard_log_init",
+                "start": 41,
+                "end": 55
+            },
+            {
+                "name": "sshguard_log_debug",
+                "start": 58,
+                "end": 72
+            },
+            {
+                "name": "sshguard_log_fin",
+                "start": 75,
+                "end": 79
+            },
+            {
+                "name": "enlarge_buffer",
+                "start": 82,
+                "end": 90
+            },
+            {
+                "name": "sshguard_log",
+                "start": 93,
+                "end": 134
+            }
+        ],
+        "src/sshguard_procauth.c": [
+            {
+                "name": "procpid_meter",
+                "start": 39,
+                "end": 41
+            },
+            {
+                "name": "procauth_init",
+                "start": 51,
+                "end": 57
+            },
+            {
+                "name": "procauth_fin",
+                "start": 59,
+                "end": 73
+            },
+            {
+                "name": "procauth_addprocess",
+                "start": 75,
+                "end": 99
+            },
+            {
+                "name": "procauth_refreshpids",
+                "start": 101,
+                "end": 118
+            },
+            {
+                "name": "procauth_isauthoritative",
+                "start": 120,
+                "end": 150
+            },
+            {
+                "name": "procauth_getprocpid",
+                "start": 152,
+                "end": 169
+            },
+            {
+                "name": "procauth_ischildof",
+                "start": 171,
+                "end": 231
+            }
+        ],
+        "src/sshguard_options.c": [
+            {
+                "name": "get_options_cmdline",
+                "start": 45,
+                "end": 159
+            },
+            {
+                "name": "usage",
+                "start": 161,
+                "end": 175
+            },
+            {
+                "name": "version",
+                "start": 177,
+                "end": 181
+            }
+        ],
+        "src/sshguard_logsuck.c": [
+            {
+                "name": "list_meter_sourceentry",
+                "start": 113,
+                "end": 115
+            },
+            {
+                "name": "logsuck_init",
+                "start": 129,
+                "end": 150
+            },
+            {
+                "name": "logsuck_add_logsource",
+                "start": 152,
+                "end": 210
+            },
+            {
+                "name": "logsuck_getline",
+                "start": 212,
+                "end": 326
+            },
+            {
+                "name": "logsuck_fin",
+                "start": 328,
+                "end": 343
+            },
+            {
+                "name": "read_from",
+                "start": 346,
+                "end": 374
+            },
+            {
+                "name": "refresh_files",
+                "start": 414,
+                "end": 490
+            },
+            {
+                "name": "activate_source",
+                "start": 492,
+                "end": 507
+            },
+            {
+                "name": "deactivate_source",
+                "start": 509,
+                "end": 516
+            }
+        ],
+        "src/seekers.c": [
+            {
+                "name": "seeker_addr",
+                "start": 8,
+                "end": 16
+            }
+        ],
+        "src/parser/../sshguard_log.h": [
+            {
+                "name": "sshguard_log",
+                "start": 69,
+                "end": 72
+            }
+        ],
+        "src/parser/attack_parser.c": [
+            {
+                "name": "yy_symbol_value_print",
+                "start": 858,
+                "end": 883
+            },
+            {
+                "name": "yy_symbol_print",
+                "start": 892,
+                "end": 910
+            },
+            {
+                "name": "yy_stack_print",
+                "start": 919,
+                "end": 932
+            },
+            {
+                "name": "yy_reduce_print",
+                "start": 947,
+                "end": 971
+            },
+            {
+                "name": "yydestruct",
+                "start": 1226,
+                "end": 1250
+            },
+            {
+                "name": "yyparse",
+                "start": 1299,
+                "end": 1925
+            },
+            {
+                "name": "init_structures",
+                "start": 1933,
+                "end": 1955
+            },
+            {
+                "name": "parse_line",
+                "start": 1957,
+                "end": 1980
+            }
+        ],
+        "src/parser/attack_scanner.c": [
+            {
+                "name": "scanner_init",
+                "start": 10658,
+                "end": 10660
+            },
+            {
+                "name": "scanner_fin",
+                "start": 10662,
+                "end": 10664
+            },
+            {
+                "name": "getsyslogpid",
+                "start": 10666,
+                "end": 10671
+            },
+            {
+                "name": "filtersyslogprocess",
+                "start": 10673,
+                "end": 10681
+            },
+            {
+                "name": "yylex",
+                "start": 10944,
+                "end": 11511
+            },
+            {
+                "name": "yy_get_next_buffer",
+                "start": 11529,
+                "end": 11662
+            },
+            {
+                "name": "yy_get_previous_state",
+                "start": 11669,
+                "end": 11699
+            },
+            {
+                "name": "yy_try_NUL_trans",
+                "start": 11707,
+                "end": 11732
+            },
+            {
+                "name": "yyunput",
+                "start": 11736,
+                "end": 11776
+            },
+            {
+                "name": "input",
+                "start": 11786,
+                "end": 11858
+            },
+            {
+                "name": "yyrestart",
+                "start": 11869,
+                "end": 11883
+            },
+            {
+                "name": "yy_switch_to_buffer",
+                "start": 11890,
+                "end": 11922
+            },
+            {
+                "name": "yy_load_buffer_state",
+                "start": 11925,
+                "end": 11934
+            },
+            {
+                "name": "yy_create_buffer",
+                "start": 11943,
+                "end": 11968
+            },
+            {
+                "name": "yy_delete_buffer",
+                "start": 11975,
+                "end": 11991
+            },
+            {
+                "name": "yy_init_buffer",
+                "start": 12009,
+                "end": 12039
+            },
+            {
+                "name": "yy_flush_buffer",
+                "start": 12046,
+                "end": 12070
+            },
+            {
+                "name": "yypush_buffer_state",
+                "start": 12080,
+                "end": 12107
+            },
+            {
+                "name": "yypop_buffer_state",
+                "start": 12116,
+                "end": 12133
+            },
+            {
+                "name": "yyensure_buffer_stack",
+                "start": 12141,
+                "end": 12185
+            },
+            {
+                "name": "yy_scan_buffer",
+                "start": 12195,
+                "end": 12222
+            },
+            {
+                "name": "yy_scan_string",
+                "start": 12234,
+                "end": 12238
+            },
+            {
+                "name": "yy_scan_bytes",
+                "start": 12249,
+                "end": 12276
+            },
+            {
+                "name": "yy_fatal_error",
+                "start": 12284,
+                "end": 12288
+            },
+            {
+                "name": "yyget_lineno",
+                "start": 12319,
+                "end": 12323
+            },
+            {
+                "name": "yyget_in",
+                "start": 12328,
+                "end": 12331
+            },
+            {
+                "name": "yyget_out",
+                "start": 12336,
+                "end": 12339
+            },
+            {
+                "name": "yyget_leng",
+                "start": 12344,
+                "end": 12347
+            },
+            {
+                "name": "yyget_text",
+                "start": 12353,
+                "end": 12356
+            },
+            {
+                "name": "yyset_lineno",
+                "start": 12365,
+                "end": 12369
+            },
+            {
+                "name": "yyset_in",
+                "start": 12377,
+                "end": 12380
+            },
+            {
+                "name": "yyset_out",
+                "start": 12382,
+                "end": 12385
+            },
+            {
+                "name": "yyget_debug",
+                "start": 12387,
+                "end": 12390
+            },
+            {
+                "name": "yyset_debug",
+                "start": 12392,
+                "end": 12395
+            },
+            {
+                "name": "yy_init_globals",
+                "start": 12405,
+                "end": 12431
+            },
+            {
+                "name": "yylex_destroy",
+                "start": 12436,
+                "end": 12457
+            },
+            {
+                "name": "yy_flex_strncpy",
+                "start": 12465,
+                "end": 12470
+            },
+            {
+                "name": "yyalloc",
+                "start": 12484,
+                "end": 12487
+            },
+            {
+                "name": "yyrealloc",
+                "start": 12489,
+                "end": 12499
+            },
+            {
+                "name": "yyfree",
+                "start": 12501,
+                "end": 12504
+            }
+        ],
+        "src/fwalls/../sshguard_log.h": [
+            {
+                "name": "sshguard_log",
+                "start": 69,
+                "end": 72
+            }
+        ],
+        "src/fwalls/hosts.c": [
+            {
+                "name": "addr_service_comparator",
+                "start": 62,
+                "end": 66
+            },
+            {
+                "name": "make_temporary_conffile",
+                "start": 68,
+                "end": 70
+            },
+            {
+                "name": "install_temporary_conffile",
+                "start": 72,
+                "end": 79
+            },
+            {
+                "name": "fw_init",
+                "start": 81,
+                "end": 125
+            },
+            {
+                "name": "fw_fin",
+                "start": 127,
+                "end": 131
+            },
+            {
+                "name": "fw_block",
+                "start": 133,
+                "end": 142
+            },
+            {
+                "name": "fw_block_list",
+                "start": 144,
+                "end": 157
+            },
+            {
+                "name": "fw_release",
+                "start": 159,
+                "end": 168
+            },
+            {
+                "name": "fw_flush",
+                "start": 170,
+                "end": 173
+            },
+            {
+                "name": "hosts_updatelist",
+                "start": 175,
+                "end": 279
+            },
+            {
+                "name": "hosts_clearsshguardblocks",
+                "start": 281,
+                "end": 330
+            }
+        ],
+        "src/fwalls/command.c": [
+            {
+                "name": "fw_init",
+                "start": 50,
+                "end": 52
+            },
+            {
+                "name": "fw_fin",
+                "start": 54,
+                "end": 56
+            },
+            {
+                "name": "fw_block",
+                "start": 58,
+                "end": 60
+            },
+            {
+                "name": "fw_block_list",
+                "start": 62,
+                "end": 110
+            },
+            {
+                "name": "fw_release",
+                "start": 112,
+                "end": 114
+            },
+            {
+                "name": "fw_flush",
+                "start": 116,
+                "end": 118
+            },
+            {
+                "name": "run_command",
+                "start": 121,
+                "end": 160
+            }
+        ],
+        "src/fwalls/ipfw.c": [
+            {
+                "name": "ipfw_rule_comparator",
+                "start": 68,
+                "end": 72
+            },
+            {
+                "name": "fw_init",
+                "start": 74,
+                "end": 80
+            },
+            {
+                "name": "fw_fin",
+                "start": 82,
+                "end": 85
+            },
+            {
+                "name": "fw_block",
+                "start": 87,
+                "end": 117
+            },
+            {
+                "name": "fw_block_list",
+                "start": 123,
+                "end": 153
+            },
+            {
+                "name": "fw_release",
+                "start": 156,
+                "end": 203
+            },
+            {
+                "name": "fw_flush",
+                "start": 205,
+                "end": 243
+            },
+            {
+                "name": "ipfwmod_getrulenumber",
+                "start": 245,
+                "end": 248
+            },
+            {
+                "name": "ipfwmod_runcommand",
+                "start": 250,
+                "end": 285
+            },
+            {
+                "name": "ipfwmod_buildblockcommand",
+                "start": 287,
+                "end": 334
+            }
+        ]
+    }
+}

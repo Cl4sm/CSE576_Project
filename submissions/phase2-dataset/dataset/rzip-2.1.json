@@ -1,0 +1,403 @@
+{
+    "rzip-2.1": {
+        "rzip.c": [
+            {
+                "name": "put_u8",
+                "start": 90,
+                "end": 95
+            },
+            {
+                "name": "put_u16",
+                "start": 97,
+                "end": 101
+            },
+            {
+                "name": "put_uint32",
+                "start": 103,
+                "end": 109
+            },
+            {
+                "name": "put_header",
+                "start": 112,
+                "end": 116
+            },
+            {
+                "name": "put_match",
+                "start": 119,
+                "end": 136
+            },
+            {
+                "name": "put_literal",
+                "start": 138,
+                "end": 154
+            },
+            {
+                "name": "empty_hash",
+                "start": 157,
+                "end": 160
+            },
+            {
+                "name": "primary_hash",
+                "start": 162,
+                "end": 165
+            },
+            {
+                "name": "increase_mask",
+                "start": 167,
+                "end": 171
+            },
+            {
+                "name": "minimum_bitness",
+                "start": 173,
+                "end": 179
+            },
+            {
+                "name": "lesser_bitness",
+                "start": 183,
+                "end": 192
+            },
+            {
+                "name": "insert_hash",
+                "start": 196,
+                "end": 242
+            },
+            {
+                "name": "clean_one_from_hash",
+                "start": 246,
+                "end": 274
+            },
+            {
+                "name": "next_tag",
+                "start": 276,
+                "end": 281
+            },
+            {
+                "name": "full_tag",
+                "start": 283,
+                "end": 291
+            },
+            {
+                "name": "match_len",
+                "start": 293,
+                "end": 322
+            },
+            {
+                "name": "find_best_match",
+                "start": 324,
+                "end": 363
+            },
+            {
+                "name": "show_distrib",
+                "start": 365,
+                "end": 385
+            },
+            {
+                "name": "hash_search",
+                "start": 387,
+                "end": 517
+            },
+            {
+                "name": "init_hash_indexes",
+                "start": 520,
+                "end": 526
+            },
+            {
+                "name": "rzip_chunk",
+                "start": 530,
+                "end": 549
+            },
+            {
+                "name": "rzip_fd",
+                "start": 553,
+                "end": 621
+            }
+        ],
+        "util.c": [
+            {
+                "name": "Realloc",
+                "start": 27,
+                "end": 31
+            },
+            {
+                "name": "err_msg",
+                "start": 33,
+                "end": 40
+            },
+            {
+                "name": "fatal",
+                "start": 42,
+                "end": 55
+            }
+        ],
+        "runzip.c": [
+            {
+                "name": "read_u8",
+                "start": 22,
+                "end": 29
+            },
+            {
+                "name": "read_u16",
+                "start": 31,
+                "end": 37
+            },
+            {
+                "name": "read_u32",
+                "start": 39,
+                "end": 47
+            },
+            {
+                "name": "read_u24",
+                "start": 49,
+                "end": 56
+            },
+            {
+                "name": "read_header",
+                "start": 59,
+                "end": 63
+            },
+            {
+                "name": "unzip_literal",
+                "start": 66,
+                "end": 84
+            },
+            {
+                "name": "unzip_match",
+                "start": 86,
+                "end": 123
+            },
+            {
+                "name": "runzip_chunk",
+                "start": 129,
+                "end": 175
+            },
+            {
+                "name": "runzip_fd",
+                "start": 180,
+                "end": 187
+            }
+        ],
+        "mkrandom.c": [
+            {
+                "name": "randomize",
+                "start": 13,
+                "end": 19
+            },
+            {
+                "name": "write_random",
+                "start": 21,
+                "end": 38
+            },
+            {
+                "name": "main",
+                "start": 40,
+                "end": 73
+            }
+        ],
+        "stream.c": [
+            {
+                "name": "compress_buf",
+                "start": 53,
+                "end": 74
+            },
+            {
+                "name": "decompress_buf",
+                "start": 79,
+                "end": 107
+            },
+            {
+                "name": "write_buf",
+                "start": 110,
+                "end": 123
+            },
+            {
+                "name": "write_u8",
+                "start": 126,
+                "end": 129
+            },
+            {
+                "name": "write_u16",
+                "start": 132,
+                "end": 138
+            },
+            {
+                "name": "write_u32",
+                "start": 141,
+                "end": 148
+            },
+            {
+                "name": "read_buf",
+                "start": 150,
+                "end": 163
+            },
+            {
+                "name": "read_u8",
+                "start": 165,
+                "end": 168
+            },
+            {
+                "name": "read_u16",
+                "start": 170,
+                "end": 178
+            },
+            {
+                "name": "read_u32",
+                "start": 180,
+                "end": 194
+            },
+            {
+                "name": "seekto",
+                "start": 197,
+                "end": 205
+            },
+            {
+                "name": "open_stream_out",
+                "start": 209,
+                "end": 258
+            },
+            {
+                "name": "open_stream_in",
+                "start": 261,
+                "end": 328
+            },
+            {
+                "name": "flush_buffer",
+                "start": 332,
+                "end": 372
+            },
+            {
+                "name": "fill_buffer",
+                "start": 375,
+                "end": 420
+            },
+            {
+                "name": "write_stream",
+                "start": 423,
+                "end": 442
+            },
+            {
+                "name": "read_stream",
+                "start": 446,
+                "end": 472
+            },
+            {
+                "name": "close_stream_out",
+                "start": 475,
+                "end": 489
+            },
+            {
+                "name": "close_stream_in",
+                "start": 492,
+                "end": 508
+            }
+        ],
+        "find_stream_match.c": [
+            {
+                "name": "barf_perror",
+                "start": 56,
+                "end": 69
+            },
+            {
+                "name": "bitness",
+                "start": 71,
+                "end": 74
+            },
+            {
+                "name": "empty_hash",
+                "start": 76,
+                "end": 79
+            },
+            {
+                "name": "primary_hash",
+                "start": 81,
+                "end": 84
+            },
+            {
+                "name": "hash_equals",
+                "start": 86,
+                "end": 90
+            },
+            {
+                "name": "clean_one_from_hash",
+                "start": 93,
+                "end": 116
+            },
+            {
+                "name": "insert_hash",
+                "start": 119,
+                "end": 157
+            },
+            {
+                "name": "next_tag",
+                "start": 159,
+                "end": 164
+            },
+            {
+                "name": "full_tag",
+                "start": 166,
+                "end": 174
+            },
+            {
+                "name": "found_match",
+                "start": 176,
+                "end": 197
+            },
+            {
+                "name": "strong_sums",
+                "start": 199,
+                "end": 207
+            },
+            {
+                "name": "stream_search",
+                "start": 211,
+                "end": 325
+            },
+            {
+                "name": "init_hash_indexes",
+                "start": 327,
+                "end": 333
+            },
+            {
+                "name": "main",
+                "start": 335,
+                "end": 353
+            }
+        ],
+        "main.c": [
+            {
+                "name": "usage",
+                "start": 22,
+                "end": 45
+            },
+            {
+                "name": "write_magic",
+                "start": 48,
+                "end": 76
+            },
+            {
+                "name": "read_magic",
+                "start": 78,
+                "end": 103
+            },
+            {
+                "name": "preserve_perms",
+                "start": 107,
+                "end": 121
+            },
+            {
+                "name": "decompress_file",
+                "start": 128,
+                "end": 203
+            },
+            {
+                "name": "compress_file",
+                "start": 208,
+                "end": 269
+            },
+            {
+                "name": "main",
+                "start": 271,
+                "end": 375
+            }
+        ]
+    }
+}

@@ -1,0 +1,4078 @@
+{
+    "mspdebug-0.22": {
+        "formats/binfile.c": [
+            {
+                "name": "identify",
+                "start": 64,
+                "end": 76
+            },
+            {
+                "name": "binfile_info",
+                "start": 78,
+                "end": 91
+            },
+            {
+                "name": "binfile_extract",
+                "start": 93,
+                "end": 108
+            },
+            {
+                "name": "binfile_syms",
+                "start": 110,
+                "end": 125
+            }
+        ],
+        "formats/titext.c": [
+            {
+                "name": "is_address_line",
+                "start": 25,
+                "end": 47
+            },
+            {
+                "name": "is_data_line",
+                "start": 49,
+                "end": 58
+            },
+            {
+                "name": "titext_check",
+                "start": 60,
+                "end": 69
+            },
+            {
+                "name": "process_data_line",
+                "start": 71,
+                "end": 133
+            },
+            {
+                "name": "titext_extract",
+                "start": 135,
+                "end": 161
+            }
+        ],
+        "formats/elf32.c": [
+            {
+                "name": "parse_ehdr",
+                "start": 47,
+                "end": 70
+            },
+            {
+                "name": "parse_phdr",
+                "start": 72,
+                "end": 89
+            },
+            {
+                "name": "parse_shdr",
+                "start": 91,
+                "end": 110
+            },
+            {
+                "name": "parse_sym",
+                "start": 112,
+                "end": 127
+            },
+            {
+                "name": "read_ehdr",
+                "start": 129,
+                "end": 144
+            },
+            {
+                "name": "read_phdr",
+                "start": 146,
+                "end": 172
+            },
+            {
+                "name": "read_shdr",
+                "start": 174,
+                "end": 200
+            },
+            {
+                "name": "file_to_phys",
+                "start": 202,
+                "end": 214
+            },
+            {
+                "name": "feed_section",
+                "start": 216,
+                "end": 259
+            },
+            {
+                "name": "read_all",
+                "start": 261,
+                "end": 278
+            },
+            {
+                "name": "load_strings",
+                "start": 280,
+                "end": 312
+            },
+            {
+                "name": "elf32_extract",
+                "start": 314,
+                "end": 344
+            },
+            {
+                "name": "elf32_check",
+                "start": 346,
+                "end": 356
+            },
+            {
+                "name": "find_shdr",
+                "start": 358,
+                "end": 370
+            },
+            {
+                "name": "syms_load_syms",
+                "start": 378,
+                "end": 417
+            },
+            {
+                "name": "elf32_syms",
+                "start": 419,
+                "end": 447
+            }
+        ],
+        "formats/coff.c": [
+            {
+                "name": "read_block",
+                "start": 100,
+                "end": 131
+            },
+            {
+                "name": "parse_header",
+                "start": 133,
+                "end": 143
+            },
+            {
+                "name": "read_header",
+                "start": 145,
+                "end": 156
+            },
+            {
+                "name": "coff_check",
+                "start": 158,
+                "end": 167
+            },
+            {
+                "name": "read_sechdrs",
+                "start": 169,
+                "end": 195
+            },
+            {
+                "name": "load_section",
+                "start": 197,
+                "end": 232
+            },
+            {
+                "name": "coff_extract",
+                "start": 234,
+                "end": 271
+            },
+            {
+                "name": "read_strtab",
+                "start": 273,
+                "end": 316
+            },
+            {
+                "name": "read_symtab",
+                "start": 318,
+                "end": 344
+            },
+            {
+                "name": "coff_syms",
+                "start": 346,
+                "end": 404
+            }
+        ],
+        "formats/symmap.c": [
+            {
+                "name": "symmap_check",
+                "start": 24,
+                "end": 46
+            },
+            {
+                "name": "symmap_syms",
+                "start": 48,
+                "end": 69
+            }
+        ],
+        "formats/ihex.c": [
+            {
+                "name": "ihex_check",
+                "start": 25,
+                "end": 29
+            },
+            {
+                "name": "feed_line",
+                "start": 31,
+                "end": 101
+            },
+            {
+                "name": "ihex_extract",
+                "start": 103,
+                "end": 145
+            }
+        ],
+        "formats/srec.c": [
+            {
+                "name": "srec_check",
+                "start": 25,
+                "end": 46
+            },
+            {
+                "name": "srec_extract",
+                "start": 48,
+                "end": 136
+            }
+        ],
+        "drivers/device.h": [
+            {
+                "name": "device_setbrk",
+                "start": 152,
+                "end": 153
+            }
+        ],
+        "drivers/gdbc.c": [
+            {
+                "name": "get_xfer_size",
+                "start": 39,
+                "end": 50
+            },
+            {
+                "name": "check_ok",
+                "start": 52,
+                "end": 67
+            },
+            {
+                "name": "gdbc_destroy",
+                "start": 69,
+                "end": 76
+            },
+            {
+                "name": "gdbc_readmem",
+                "start": 78,
+                "end": 116
+            },
+            {
+                "name": "gdbc_writemem",
+                "start": 118,
+                "end": 145
+            },
+            {
+                "name": "gdbc_getregs",
+                "start": 147,
+                "end": 175
+            },
+            {
+                "name": "gdbc_setregs",
+                "start": 177,
+                "end": 192
+            },
+            {
+                "name": "do_reset",
+                "start": 194,
+                "end": 218
+            },
+            {
+                "name": "bp_send",
+                "start": 220,
+                "end": 250
+            },
+            {
+                "name": "refresh_bps",
+                "start": 252,
+                "end": 276
+            },
+            {
+                "name": "gdbc_ctl",
+                "start": 278,
+                "end": 314
+            },
+            {
+                "name": "gdbc_erase",
+                "start": 316,
+                "end": 341
+            },
+            {
+                "name": "gdbc_poll",
+                "start": 343,
+                "end": 372
+            },
+            {
+                "name": "connect_to",
+                "start": 374,
+                "end": 435
+            },
+            {
+                "name": "gdbc_open",
+                "start": 437,
+                "end": 458
+            }
+        ],
+        "drivers/goodfet.c": [
+            {
+                "name": "reset_sequence",
+                "start": 81,
+                "end": 103
+            },
+            {
+                "name": "send_packet",
+                "start": 105,
+                "end": 136
+            },
+            {
+                "name": "recv_packet",
+                "start": 138,
+                "end": 171
+            },
+            {
+                "name": "xfer",
+                "start": 173,
+                "end": 197
+            },
+            {
+                "name": "read_words",
+                "start": 204,
+                "end": 231
+            },
+            {
+                "name": "write_ram_word",
+                "start": 234,
+                "end": 252
+            },
+            {
+                "name": "write_flash_block",
+                "start": 257,
+                "end": 278
+            },
+            {
+                "name": "write_byte",
+                "start": 281,
+                "end": 306
+            },
+            {
+                "name": "init_device",
+                "start": 308,
+                "end": 364
+            },
+            {
+                "name": "goodfet_readmem",
+                "start": 376,
+                "end": 428
+            },
+            {
+                "name": "goodfet_writemem",
+                "start": 430,
+                "end": 484
+            },
+            {
+                "name": "goodfet_setregs",
+                "start": 486,
+                "end": 493
+            },
+            {
+                "name": "goodfet_getregs",
+                "start": 495,
+                "end": 502
+            },
+            {
+                "name": "goodfet_reset",
+                "start": 504,
+                "end": 527
+            },
+            {
+                "name": "goodfet_run",
+                "start": 529,
+                "end": 540
+            },
+            {
+                "name": "goodfet_halt",
+                "start": 542,
+                "end": 553
+            },
+            {
+                "name": "goodfet_ctl",
+                "start": 555,
+                "end": 575
+            },
+            {
+                "name": "goodfet_poll",
+                "start": 577,
+                "end": 585
+            },
+            {
+                "name": "goodfet_erase",
+                "start": 587,
+                "end": 605
+            },
+            {
+                "name": "goodfet_open",
+                "start": 607,
+                "end": 655
+            },
+            {
+                "name": "goodfet_destroy",
+                "start": 657,
+                "end": 666
+            }
+        ],
+        "drivers/fet_core.h": [
+            {
+                "name": "fet_open",
+                "start": 43,
+                "end": 46
+            },
+            {
+                "name": "fet_erase",
+                "start": 49,
+                "end": 50
+            },
+            {
+                "name": "fet_readmem",
+                "start": 58,
+                "end": 59
+            },
+            {
+                "name": "fet_writemem",
+                "start": 61,
+                "end": 62
+            }
+        ],
+        "drivers/fet_proto.h": [
+            {
+                "name": "fet_proto_xfer",
+                "start": 64,
+                "end": 66
+            }
+        ],
+        "drivers/fet_core.c": [
+            {
+                "name": "show_dev_info",
+                "start": 138,
+                "end": 142
+            },
+            {
+                "name": "identify_old",
+                "start": 144,
+                "end": 164
+            },
+            {
+                "name": "identify_new",
+                "start": 166,
+                "end": 243
+            },
+            {
+                "name": "identify_olimex",
+                "start": 245,
+                "end": 361
+            },
+            {
+                "name": "is_new_olimex",
+                "start": 363,
+                "end": 376
+            },
+            {
+                "name": "try_new",
+                "start": 378,
+                "end": 384
+            },
+            {
+                "name": "do_identify",
+                "start": 386,
+                "end": 398
+            },
+            {
+                "name": "power_init",
+                "start": 400,
+                "end": 425
+            },
+            {
+                "name": "power_start",
+                "start": 427,
+                "end": 443
+            },
+            {
+                "name": "power_end",
+                "start": 445,
+                "end": 459
+            },
+            {
+                "name": "shell_power",
+                "start": 461,
+                "end": 476
+            },
+            {
+                "name": "power_poll",
+                "start": 478,
+                "end": 517
+            },
+            {
+                "name": "refresh_fperm",
+                "start": 519,
+                "end": 552
+            },
+            {
+                "name": "do_run",
+                "start": 554,
+                "end": 562
+            },
+            {
+                "name": "fet_erase",
+                "start": 564,
+                "end": 605
+            },
+            {
+                "name": "fet_poll",
+                "start": 607,
+                "end": 631
+            },
+            {
+                "name": "refresh_bps",
+                "start": 633,
+                "end": 660
+            },
+            {
+                "name": "fet_ctl",
+                "start": 662,
+                "end": 714
+            },
+            {
+                "name": "fet_destroy",
+                "start": 716,
+                "end": 745
+            },
+            {
+                "name": "read_byte",
+                "start": 747,
+                "end": 759
+            },
+            {
+                "name": "write_byte",
+                "start": 761,
+                "end": 781
+            },
+            {
+                "name": "get_adjusted_block_size",
+                "start": 783,
+                "end": 793
+            },
+            {
+                "name": "fet_readmem",
+                "start": 795,
+                "end": 837
+            },
+            {
+                "name": "fet_writemem",
+                "start": 839,
+                "end": 879
+            },
+            {
+                "name": "fet_getregs",
+                "start": 881,
+                "end": 899
+            },
+            {
+                "name": "fet_setregs",
+                "start": 901,
+                "end": 926
+            },
+            {
+                "name": "do_configure",
+                "start": 928,
+                "end": 959
+            },
+            {
+                "name": "try_open",
+                "start": 961,
+                "end": 1013
+            },
+            {
+                "name": "fet_open",
+                "start": 1015,
+                "end": 1060
+            }
+        ],
+        "drivers/fet_error.c": [
+            {
+                "name": "fet_error",
+                "start": 106,
+                "end": 112
+            }
+        ],
+        "drivers/device.c": [
+            {
+                "name": "addbrk",
+                "start": 24,
+                "end": 50
+            },
+            {
+                "name": "delbrk",
+                "start": 52,
+                "end": 65
+            },
+            {
+                "name": "device_setbrk",
+                "start": 67,
+                "end": 91
+            },
+            {
+                "name": "device_probe_id",
+                "start": 93,
+                "end": 126
+            },
+            {
+                "name": "device_is_fram",
+                "start": 129,
+                "end": 136
+            },
+            {
+                "name": "device_erase",
+                "start": 138,
+                "end": 146
+            }
+        ],
+        "drivers/sim.c": [
+            {
+                "name": "watchpoint_check",
+                "start": 57,
+                "end": 75
+            },
+            {
+                "name": "fetch_operand",
+                "start": 77,
+                "end": 169
+            },
+            {
+                "name": "store_operand",
+                "start": 171,
+                "end": 195
+            },
+            {
+                "name": "step_double",
+                "start": 199,
+                "end": 341
+            },
+            {
+                "name": "step_single",
+                "start": 343,
+                "end": 452
+            },
+            {
+                "name": "step_jump",
+                "start": 454,
+                "end": 503
+            },
+            {
+                "name": "step_cpu",
+                "start": 508,
+                "end": 531
+            },
+            {
+                "name": "do_reset",
+                "start": 533,
+                "end": 540
+            },
+            {
+                "name": "step_system",
+                "start": 542,
+                "end": 580
+            },
+            {
+                "name": "sim_destroy",
+                "start": 586,
+                "end": 589
+            },
+            {
+                "name": "sim_readmem",
+                "start": 591,
+                "end": 627
+            },
+            {
+                "name": "sim_writemem",
+                "start": 629,
+                "end": 658
+            },
+            {
+                "name": "sim_getregs",
+                "start": 660,
+                "end": 668
+            },
+            {
+                "name": "sim_setregs",
+                "start": 670,
+                "end": 678
+            },
+            {
+                "name": "sim_ctl",
+                "start": 680,
+                "end": 702
+            },
+            {
+                "name": "sim_erase",
+                "start": 704,
+                "end": 726
+            },
+            {
+                "name": "sim_poll",
+                "start": 728,
+                "end": 769
+            },
+            {
+                "name": "sim_open",
+                "start": 771,
+                "end": 795
+            }
+        ],
+        "drivers/jtaglib.h": [
+            {
+                "name": "jtag_read_mem",
+                "start": 44,
+                "end": 45
+            },
+            {
+                "name": "jtag_read_mem_quick",
+                "start": 46,
+                "end": 47
+            },
+            {
+                "name": "jtag_write_mem",
+                "start": 48,
+                "end": 49
+            },
+            {
+                "name": "jtag_write_mem_quick",
+                "start": 50,
+                "end": 52
+            },
+            {
+                "name": "jtag_verify_mem",
+                "start": 56,
+                "end": 58
+            },
+            {
+                "name": "jtag_erase_check",
+                "start": 59,
+                "end": 60
+            },
+            {
+                "name": "jtag_write_flash",
+                "start": 61,
+                "end": 63
+            },
+            {
+                "name": "jtag_erase_flash",
+                "start": 64,
+                "end": 65
+            }
+        ],
+        "drivers/jtaglib.c": [
+            {
+                "name": "jtag_reset_tap",
+                "start": 76,
+                "end": 99
+            },
+            {
+                "name": "jtag_tclk_prep",
+                "start": 102,
+                "end": 114
+            },
+            {
+                "name": "jtag_shift",
+                "start": 117,
+                "end": 157
+            },
+            {
+                "name": "jtag_ir_shift",
+                "start": 160,
+                "end": 183
+            },
+            {
+                "name": "jtag_dr_shift",
+                "start": 186,
+                "end": 205
+            },
+            {
+                "name": "jtag_set_instruction_fetch",
+                "start": 208,
+                "end": 228
+            },
+            {
+                "name": "jtag_halt_cpu",
+                "start": 231,
+                "end": 248
+            },
+            {
+                "name": "jtag_release_cpu",
+                "start": 251,
+                "end": 260
+            },
+            {
+                "name": "jtag_verify_psa",
+                "start": 263,
+                "end": 343
+            },
+            {
+                "name": "jtag_init",
+                "start": 347,
+                "end": 386
+            },
+            {
+                "name": "jtag_get_device",
+                "start": 389,
+                "end": 411
+            },
+            {
+                "name": "jtag_chip_id",
+                "start": 414,
+                "end": 425
+            },
+            {
+                "name": "jtag_read_mem",
+                "start": 428,
+                "end": 463
+            },
+            {
+                "name": "jtag_read_mem_quick",
+                "start": 466,
+                "end": 493
+            },
+            {
+                "name": "jtag_write_mem",
+                "start": 496,
+                "end": 524
+            },
+            {
+                "name": "jtag_write_mem_quick",
+                "start": 527,
+                "end": 555
+            },
+            {
+                "name": "jtag_is_fuse_blown",
+                "start": 558,
+                "end": 575
+            },
+            {
+                "name": "jtag_execute_puc",
+                "start": 578,
+                "end": 599
+            },
+            {
+                "name": "jtag_release_device",
+                "start": 602,
+                "end": 624
+            },
+            {
+                "name": "jtag_verify_mem",
+                "start": 627,
+                "end": 636
+            },
+            {
+                "name": "jtag_erase_check",
+                "start": 639,
+                "end": 647
+            },
+            {
+                "name": "jtag_write_flash",
+                "start": 650,
+                "end": 731
+            },
+            {
+                "name": "jtag_erase_flash",
+                "start": 734,
+                "end": 810
+            },
+            {
+                "name": "jtag_read_reg",
+                "start": 813,
+                "end": 865
+            },
+            {
+                "name": "jtag_write_reg",
+                "start": 868,
+                "end": 905
+            }
+        ],
+        "drivers/tilib.c": [
+            {
+                "name": "event_notify",
+                "start": 113,
+                "end": 124
+            },
+            {
+                "name": "event_fetch",
+                "start": 126,
+                "end": 136
+            },
+            {
+                "name": "get_func",
+                "start": 138,
+                "end": 149
+            },
+            {
+                "name": "get_all_funcs",
+                "start": 151,
+                "end": 234
+            },
+            {
+                "name": "report_error",
+                "start": 236,
+                "end": 242
+            },
+            {
+                "name": "refresh_fperm",
+                "start": 244,
+                "end": 275
+            },
+            {
+                "name": "tilib_readmem",
+                "start": 277,
+                "end": 288
+            },
+            {
+                "name": "tilib_writemem",
+                "start": 290,
+                "end": 303
+            },
+            {
+                "name": "ti_erase_type",
+                "start": 305,
+                "end": 314
+            },
+            {
+                "name": "tilib_erase",
+                "start": 316,
+                "end": 335
+            },
+            {
+                "name": "tilib_getregs",
+                "start": 337,
+                "end": 352
+            },
+            {
+                "name": "tilib_setregs",
+                "start": 354,
+                "end": 369
+            },
+            {
+                "name": "load_break",
+                "start": 371,
+                "end": 389
+            },
+            {
+                "name": "load_complex",
+                "start": 391,
+                "end": 410
+            },
+            {
+                "name": "refresh_bps",
+                "start": 412,
+                "end": 460
+            },
+            {
+                "name": "do_halt",
+                "start": 462,
+                "end": 474
+            },
+            {
+                "name": "do_step",
+                "start": 476,
+                "end": 484
+            },
+            {
+                "name": "tilib_ctl",
+                "start": 486,
+                "end": 516
+            },
+            {
+                "name": "tilib_poll",
+                "start": 518,
+                "end": 529
+            },
+            {
+                "name": "tilib_destroy",
+                "start": 531,
+                "end": 544
+            },
+            {
+                "name": "fw_progress",
+                "start": 546,
+                "end": 593
+            },
+            {
+                "name": "do_fw_update",
+                "start": 595,
+                "end": 605
+            },
+            {
+                "name": "do_init",
+                "start": 607,
+                "end": 686
+            },
+            {
+                "name": "do_findUif",
+                "start": 688,
+                "end": 723
+            },
+            {
+                "name": "tilib_open",
+                "start": 725,
+                "end": 779
+            }
+        ],
+        "drivers/pif.c": [
+            {
+                "name": "read_words",
+                "start": 40,
+                "end": 54
+            },
+            {
+                "name": "write_ram_word",
+                "start": 58,
+                "end": 67
+            },
+            {
+                "name": "write_flash_block",
+                "start": 73,
+                "end": 94
+            },
+            {
+                "name": "write_byte",
+                "start": 98,
+                "end": 121
+            },
+            {
+                "name": "init_device",
+                "start": 124,
+                "end": 142
+            },
+            {
+                "name": "pif_readmem",
+                "start": 152,
+                "end": 190
+            },
+            {
+                "name": "pif_writemem",
+                "start": 193,
+                "end": 240
+            },
+            {
+                "name": "pif_getregs",
+                "start": 243,
+                "end": 254
+            },
+            {
+                "name": "pif_setregs",
+                "start": 257,
+                "end": 268
+            },
+            {
+                "name": "pif_ctl",
+                "start": 271,
+                "end": 299
+            },
+            {
+                "name": "pif_poll",
+                "start": 302,
+                "end": 308
+            },
+            {
+                "name": "pif_erase",
+                "start": 311,
+                "end": 334
+            },
+            {
+                "name": "pif_open",
+                "start": 337,
+                "end": 374
+            },
+            {
+                "name": "pif_destroy",
+                "start": 377,
+                "end": 386
+            }
+        ],
+        "drivers/jtdev.c": [
+            {
+                "name": "do_ppwdata",
+                "start": 77,
+                "end": 83
+            },
+            {
+                "name": "do_ppwcontrol",
+                "start": 85,
+                "end": 91
+            },
+            {
+                "name": "jtdev_open",
+                "start": 93,
+                "end": 117
+            },
+            {
+                "name": "jtdev_close",
+                "start": 119,
+                "end": 125
+            },
+            {
+                "name": "jtdev_power_on",
+                "start": 127,
+                "end": 132
+            },
+            {
+                "name": "jtdev_power_off",
+                "start": 134,
+                "end": 144
+            },
+            {
+                "name": "jtdev_connect",
+                "start": 146,
+                "end": 150
+            },
+            {
+                "name": "jtdev_release",
+                "start": 152,
+                "end": 156
+            },
+            {
+                "name": "jtdev_tck",
+                "start": 158,
+                "end": 166
+            },
+            {
+                "name": "jtdev_tms",
+                "start": 168,
+                "end": 176
+            },
+            {
+                "name": "jtdev_tdi",
+                "start": 178,
+                "end": 186
+            },
+            {
+                "name": "jtdev_rst",
+                "start": 188,
+                "end": 197
+            },
+            {
+                "name": "jtdev_tst",
+                "start": 199,
+                "end": 207
+            },
+            {
+                "name": "jtdev_tdo_get",
+                "start": 209,
+                "end": 220
+            },
+            {
+                "name": "jtdev_tclk",
+                "start": 222,
+                "end": 230
+            },
+            {
+                "name": "jtdev_tclk_get",
+                "start": 232,
+                "end": 235
+            },
+            {
+                "name": "jtdev_tclk_strobe",
+                "start": 237,
+                "end": 248
+            },
+            {
+                "name": "jtdev_led_green",
+                "start": 250,
+                "end": 258
+            },
+            {
+                "name": "jtdev_led_red",
+                "start": 260,
+                "end": 268
+            }
+        ],
+        "drivers/fet_olimex_db.c": [
+            {
+                "name": "fet_olimex_db_find_by_name",
+                "start": 7984,
+                "end": 7996
+            },
+            {
+                "name": "fet_olimex_db_enum",
+                "start": 7998,
+                "end": 8007
+            },
+            {
+                "name": "fet_olimex_db_identify",
+                "start": 8009,
+                "end": 8044
+            },
+            {
+                "name": "fet_olimex_db_index_to_type",
+                "start": 8046,
+                "end": 8052
+            },
+            {
+                "name": "fet_db_get_record",
+                "start": 8054,
+                "end": 8065
+            }
+        ],
+        "drivers/bsl.c": [
+            {
+                "name": "bsl_ack",
+                "start": 47,
+                "end": 67
+            },
+            {
+                "name": "bsl_sync",
+                "start": 69,
+                "end": 86
+            },
+            {
+                "name": "send_command",
+                "start": 88,
+                "end": 124
+            },
+            {
+                "name": "verify_checksum",
+                "start": 126,
+                "end": 144
+            },
+            {
+                "name": "fetch_reply",
+                "start": 146,
+                "end": 180
+            },
+            {
+                "name": "bsl_xfer",
+                "start": 182,
+                "end": 196
+            },
+            {
+                "name": "bsl_destroy",
+                "start": 203,
+                "end": 210
+            },
+            {
+                "name": "bsl_ctl",
+                "start": 212,
+                "end": 230
+            },
+            {
+                "name": "bsl_poll",
+                "start": 232,
+                "end": 237
+            },
+            {
+                "name": "bsl_getregs",
+                "start": 239,
+                "end": 246
+            },
+            {
+                "name": "bsl_setregs",
+                "start": 248,
+                "end": 255
+            },
+            {
+                "name": "bsl_writemem",
+                "start": 257,
+                "end": 285
+            },
+            {
+                "name": "bsl_readmem",
+                "start": 287,
+                "end": 317
+            },
+            {
+                "name": "bsl_erase",
+                "start": 319,
+                "end": 333
+            },
+            {
+                "name": "enter_via_fet",
+                "start": 335,
+                "end": 347
+            },
+            {
+                "name": "bsl_open",
+                "start": 349,
+                "end": 400
+            }
+        ],
+        "drivers/fet_proto.c": [
+            {
+                "name": "calc_checksum",
+                "start": 69,
+                "end": 78
+            },
+            {
+                "name": "send_rf2500_data",
+                "start": 91,
+                "end": 115
+            },
+            {
+                "name": "parse_packet",
+                "start": 125,
+                "end": 205
+            },
+            {
+                "name": "recv_packet",
+                "start": 213,
+                "end": 243
+            },
+            {
+                "name": "send_command",
+                "start": 245,
+                "end": 323
+            },
+            {
+                "name": "fet_proto_init",
+                "start": 325,
+                "end": 331
+            },
+            {
+                "name": "fet_proto_xfer",
+                "start": 333,
+                "end": 370
+            }
+        ],
+        "drivers/fet_db.c": [
+            {
+                "name": "fet_db_find_by_msg28",
+                "start": 2196,
+                "end": 2237
+            },
+            {
+                "name": "fet_db_find_by_name",
+                "start": 2239,
+                "end": 2251
+            },
+            {
+                "name": "fet_db_enum",
+                "start": 2253,
+                "end": 2262
+            }
+        ],
+        "drivers/fet.c": [
+            {
+                "name": "fet_open_rf2500",
+                "start": 37,
+                "end": 52
+            },
+            {
+                "name": "fet_open_olimex_iso_mk2",
+                "start": 69,
+                "end": 114
+            },
+            {
+                "name": "fet_open_olimex",
+                "start": 131,
+                "end": 149
+            },
+            {
+                "name": "fet_open_olimex_v1",
+                "start": 166,
+                "end": 184
+            },
+            {
+                "name": "fet_open_olimex_iso",
+                "start": 201,
+                "end": 219
+            },
+            {
+                "name": "fet_open_uif",
+                "start": 236,
+                "end": 249
+            }
+        ],
+        "drivers/flash_bsl.c": [
+            {
+                "name": "crc_ccitt",
+                "start": 47,
+                "end": 59
+            },
+            {
+                "name": "crc_selftest",
+                "start": 61,
+                "end": 87
+            },
+            {
+                "name": "flash_bsl_send",
+                "start": 101,
+                "end": 170
+            },
+            {
+                "name": "flash_bsl_recv",
+                "start": 172,
+                "end": 231
+            },
+            {
+                "name": "flash_bsl_perror",
+                "start": 233,
+                "end": 267
+            },
+            {
+                "name": "flash_bsl_readmem",
+                "start": 269,
+                "end": 326
+            },
+            {
+                "name": "flash_bsl_erase",
+                "start": 328,
+                "end": 381
+            },
+            {
+                "name": "flash_bsl_unlock",
+                "start": 383,
+                "end": 438
+            },
+            {
+                "name": "flash_bsl_ctl",
+                "start": 440,
+                "end": 458
+            },
+            {
+                "name": "flash_bsl_poll",
+                "start": 460,
+                "end": 465
+            },
+            {
+                "name": "flash_bsl_getregs",
+                "start": 467,
+                "end": 474
+            },
+            {
+                "name": "flash_bsl_setregs",
+                "start": 476,
+                "end": 483
+            },
+            {
+                "name": "flash_bsl_writemem",
+                "start": 485,
+                "end": 548
+            },
+            {
+                "name": "entry_delay",
+                "start": 551,
+                "end": 554
+            },
+            {
+                "name": "enter_via_dtr_rts",
+                "start": 556,
+                "end": 597
+            },
+            {
+                "name": "exit_via_dtr_rts",
+                "start": 599,
+                "end": 611
+            },
+            {
+                "name": "flash_bsl_destroy",
+                "start": 613,
+                "end": 621
+            },
+            {
+                "name": "flash_bsl_open",
+                "start": 623,
+                "end": 690
+            }
+        ],
+        "drivers/obl.c": [
+            {
+                "name": "progress_init",
+                "start": 57,
+                "end": 67
+            },
+            {
+                "name": "progress_update",
+                "start": 69,
+                "end": 78
+            },
+            {
+                "name": "transport_read_all",
+                "start": 80,
+                "end": 93
+            },
+            {
+                "name": "obl_xfer",
+                "start": 95,
+                "end": 132
+            },
+            {
+                "name": "read_file",
+                "start": 134,
+                "end": 177
+            },
+            {
+                "name": "obl_read_mem",
+                "start": 179,
+                "end": 201
+            },
+            {
+                "name": "obl_write_flash",
+                "start": 203,
+                "end": 227
+            },
+            {
+                "name": "write_image",
+                "start": 229,
+                "end": 262
+            },
+            {
+                "name": "verify_image",
+                "start": 264,
+                "end": 305
+            },
+            {
+                "name": "write_valid_size",
+                "start": 307,
+                "end": 325
+            },
+            {
+                "name": "obl_get_version",
+                "start": 327,
+                "end": 345
+            },
+            {
+                "name": "load_image",
+                "start": 347,
+                "end": 382
+            },
+            {
+                "name": "obl_update",
+                "start": 384,
+                "end": 400
+            },
+            {
+                "name": "obl_reset",
+                "start": 402,
+                "end": 412
+            }
+        ],
+        "ui/stdcmd.c": [
+            {
+                "name": "type_text",
+                "start": 32,
+                "end": 46
+            },
+            {
+                "name": "push_option_name",
+                "start": 48,
+                "end": 54
+            },
+            {
+                "name": "push_command_name",
+                "start": 56,
+                "end": 59
+            },
+            {
+                "name": "cmd_help",
+                "start": 61,
+                "end": 119
+            },
+            {
+                "name": "parse_option",
+                "start": 121,
+                "end": 141
+            },
+            {
+                "name": "display_option",
+                "start": 143,
+                "end": 166
+            },
+            {
+                "name": "cmd_opt",
+                "start": 168,
+                "end": 197
+            },
+            {
+                "name": "cmd_read",
+                "start": 199,
+                "end": 209
+            },
+            {
+                "name": "cmd_exit",
+                "start": 211,
+                "end": 217
+            }
+        ],
+        "ui/aliasdb.h": [
+            {
+                "name": "translate_alias",
+                "start": 26,
+                "end": 27
+            }
+        ],
+        "ui/cmddb.c": [
+            {
+                "name": "cmddb_get",
+                "start": 351,
+                "end": 384
+            },
+            {
+                "name": "cmddb_enum",
+                "start": 386,
+                "end": 395
+            }
+        ],
+        "ui/devcmd.c": [
+            {
+                "name": "cmd_regs",
+                "start": 35,
+                "end": 55
+            },
+            {
+                "name": "cmd_md",
+                "start": 57,
+                "end": 99
+            },
+            {
+                "name": "cmd_mw",
+                "start": 101,
+                "end": 135
+            },
+            {
+                "name": "cmd_reset",
+                "start": 137,
+                "end": 142
+            },
+            {
+                "name": "cmd_erase",
+                "start": 144,
+                "end": 220
+            },
+            {
+                "name": "cmd_step",
+                "start": 222,
+                "end": 241
+            },
+            {
+                "name": "cmd_run",
+                "start": 243,
+                "end": 293
+            },
+            {
+                "name": "cmd_set",
+                "start": 295,
+                "end": 327
+            },
+            {
+                "name": "cmd_dis",
+                "start": 329,
+                "end": 372
+            },
+            {
+                "name": "hexout_start",
+                "start": 392,
+                "end": 413
+            },
+            {
+                "name": "hexout_write",
+                "start": 415,
+                "end": 442
+            },
+            {
+                "name": "hexout_flush",
+                "start": 444,
+                "end": 479
+            },
+            {
+                "name": "hexout_feed",
+                "start": 481,
+                "end": 508
+            },
+            {
+                "name": "cmd_hexout",
+                "start": 510,
+                "end": 570
+            },
+            {
+                "name": "cmd_prog_feed",
+                "start": 572,
+                "end": 575
+            },
+            {
+                "name": "do_cmd_prog",
+                "start": 577,
+                "end": 628
+            },
+            {
+                "name": "cmd_prog",
+                "start": 630,
+                "end": 633
+            },
+            {
+                "name": "cmd_load",
+                "start": 635,
+                "end": 638
+            },
+            {
+                "name": "cmd_verify",
+                "start": 640,
+                "end": 643
+            },
+            {
+                "name": "do_setbreak",
+                "start": 645,
+                "end": 684
+            },
+            {
+                "name": "cmd_setbreak",
+                "start": 686,
+                "end": 689
+            },
+            {
+                "name": "cmd_setwatch",
+                "start": 691,
+                "end": 694
+            },
+            {
+                "name": "cmd_setwatch_w",
+                "start": 696,
+                "end": 699
+            },
+            {
+                "name": "cmd_setwatch_r",
+                "start": 701,
+                "end": 704
+            },
+            {
+                "name": "cmd_delbreak",
+                "start": 706,
+                "end": 732
+            },
+            {
+                "name": "cmd_break",
+                "start": 734,
+                "end": 773
+            },
+            {
+                "name": "cmd_fill",
+                "start": 775,
+                "end": 834
+            }
+        ],
+        "ui/input_async.c": [
+            {
+                "name": "handle_special",
+                "start": 62,
+                "end": 66
+            },
+            {
+                "name": "handle_command",
+                "start": 68,
+                "end": 81
+            },
+            {
+                "name": "io_worker",
+                "start": 83,
+                "end": 111
+            },
+            {
+                "name": "async_init",
+                "start": 113,
+                "end": 128
+            },
+            {
+                "name": "async_read_command",
+                "start": 132,
+                "end": 168
+            },
+            {
+                "name": "async_prompt_abort",
+                "start": 170,
+                "end": 175
+            }
+        ],
+        "ui/power.c": [
+            {
+                "name": "print_header",
+                "start": 31,
+                "end": 43
+            },
+            {
+                "name": "dump_session_data",
+                "start": 45,
+                "end": 79
+            },
+            {
+                "name": "sc_info",
+                "start": 81,
+                "end": 95
+            },
+            {
+                "name": "sc_clear",
+                "start": 97,
+                "end": 101
+            },
+            {
+                "name": "parse_granularity",
+                "start": 103,
+                "end": 124
+            },
+            {
+                "name": "sc_all",
+                "start": 126,
+                "end": 138
+            },
+            {
+                "name": "sc_session",
+                "start": 140,
+                "end": 162
+            },
+            {
+                "name": "sc_export_csv",
+                "start": 164,
+                "end": 216
+            },
+            {
+                "name": "add_symbol",
+                "start": 225,
+                "end": 238
+            },
+            {
+                "name": "merge_power",
+                "start": 240,
+                "end": 271
+            },
+            {
+                "name": "cmp_by_addr",
+                "start": 273,
+                "end": 284
+            },
+            {
+                "name": "cmp_by_charge_rev",
+                "start": 286,
+                "end": 297
+            },
+            {
+                "name": "print_profile",
+                "start": 299,
+                "end": 321
+            },
+            {
+                "name": "sc_profile",
+                "start": 323,
+                "end": 346
+            },
+            {
+                "name": "cmd_power",
+                "start": 348,
+                "end": 381
+            }
+        ],
+        "ui/aliasdb.c": [
+            {
+                "name": "find_alias",
+                "start": 42,
+                "end": 55
+            },
+            {
+                "name": "translate_rec",
+                "start": 62,
+                "end": 97
+            },
+            {
+                "name": "translate_alias",
+                "start": 99,
+                "end": 103
+            },
+            {
+                "name": "cmp_alias",
+                "start": 105,
+                "end": 111
+            },
+            {
+                "name": "cmd_alias",
+                "start": 113,
+                "end": 179
+            }
+        ],
+        "ui/rtools.c": [
+            {
+                "name": "isearch_opcode",
+                "start": 52,
+                "end": 79
+            },
+            {
+                "name": "isearch_bw",
+                "start": 81,
+                "end": 107
+            },
+            {
+                "name": "isearch_type",
+                "start": 109,
+                "end": 141
+            },
+            {
+                "name": "isearch_addr",
+                "start": 143,
+                "end": 172
+            },
+            {
+                "name": "isearch_reg",
+                "start": 174,
+                "end": 207
+            },
+            {
+                "name": "isearch_mode",
+                "start": 209,
+                "end": 270
+            },
+            {
+                "name": "isearch_match",
+                "start": 272,
+                "end": 346
+            },
+            {
+                "name": "do_isearch",
+                "start": 348,
+                "end": 380
+            },
+            {
+                "name": "cmd_isearch",
+                "start": 382,
+                "end": 445
+            },
+            {
+                "name": "cmp_branch_by_dst",
+                "start": 458,
+                "end": 479
+            },
+            {
+                "name": "cmp_branch_by_src",
+                "start": 481,
+                "end": 502
+            },
+            {
+                "name": "cmp_node",
+                "start": 508,
+                "end": 519
+            },
+            {
+                "name": "cgraph_destroy",
+                "start": 534,
+                "end": 539
+            },
+            {
+                "name": "find_possible_edges",
+                "start": 541,
+                "end": 567
+            },
+            {
+                "name": "add_nodes_from_edges",
+                "start": 569,
+                "end": 597
+            },
+            {
+                "name": "relabel_sources",
+                "start": 599,
+                "end": 622
+            },
+            {
+                "name": "remove_duplicate_nodes",
+                "start": 624,
+                "end": 646
+            },
+            {
+                "name": "remove_duplicate_edges",
+                "start": 648,
+                "end": 673
+            },
+            {
+                "name": "build_inverse",
+                "start": 675,
+                "end": 687
+            },
+            {
+                "name": "add_irq_edges",
+                "start": 689,
+                "end": 725
+            },
+            {
+                "name": "add_symbol_nodes",
+                "start": 727,
+                "end": 747
+            },
+            {
+                "name": "cgraph_init",
+                "start": 749,
+                "end": 781
+            },
+            {
+                "name": "cgraph_summary",
+                "start": 783,
+                "end": 819
+            },
+            {
+                "name": "cgraph_func_info",
+                "start": 821,
+                "end": 885
+            },
+            {
+                "name": "cmd_cgraph",
+                "start": 887,
+                "end": 951
+            }
+        ],
+        "ui/reader.c": [
+            {
+                "name": "mark_modified",
+                "start": 43,
+                "end": 46
+            },
+            {
+                "name": "unmark_modified",
+                "start": 48,
+                "end": 51
+            },
+            {
+                "name": "prompt_abort",
+                "start": 53,
+                "end": 60
+            },
+            {
+                "name": "do_command",
+                "start": 62,
+                "end": 105
+            },
+            {
+                "name": "reader_exit",
+                "start": 107,
+                "end": 110
+            },
+            {
+                "name": "reader_set_repeat",
+                "start": 112,
+                "end": 119
+            },
+            {
+                "name": "reader_loop",
+                "start": 121,
+                "end": 160
+            },
+            {
+                "name": "process_command",
+                "start": 162,
+                "end": 165
+            },
+            {
+                "name": "process_file",
+                "start": 167,
+                "end": 209
+            }
+        ],
+        "ui/gdb.c": [
+            {
+                "name": "read_registers",
+                "start": 42,
+                "end": 58
+            },
+            {
+                "name": "monitor_capture",
+                "start": 66,
+                "end": 83
+            },
+            {
+                "name": "monitor_command",
+                "start": 85,
+                "end": 118
+            },
+            {
+                "name": "write_registers",
+                "start": 120,
+                "end": 141
+            },
+            {
+                "name": "read_memory",
+                "start": 143,
+                "end": 174
+            },
+            {
+                "name": "write_memory",
+                "start": 176,
+                "end": 212
+            },
+            {
+                "name": "run_set_pc",
+                "start": 214,
+                "end": 226
+            },
+            {
+                "name": "run_final_status",
+                "start": 228,
+                "end": 255
+            },
+            {
+                "name": "single_step",
+                "start": 257,
+                "end": 266
+            },
+            {
+                "name": "run",
+                "start": 268,
+                "end": 308
+            },
+            {
+                "name": "set_breakpoint",
+                "start": 310,
+                "end": 374
+            },
+            {
+                "name": "restart_program",
+                "start": 376,
+                "end": 382
+            },
+            {
+                "name": "gdb_send_empty_threadlist",
+                "start": 384,
+                "end": 387
+            },
+            {
+                "name": "gdb_send_supported",
+                "start": 389,
+                "end": 395
+            },
+            {
+                "name": "process_gdb_command",
+                "start": 397,
+                "end": 450
+            },
+            {
+                "name": "gdb_reader_loop",
+                "start": 452,
+                "end": 464
+            },
+            {
+                "name": "gdb_server",
+                "start": 466,
+                "end": 534
+            },
+            {
+                "name": "cmd_gdb",
+                "start": 536,
+                "end": 557
+            }
+        ],
+        "ui/flatfile.c": [
+            {
+                "name": "read_flatfile",
+                "start": 38,
+                "end": 81
+            },
+            {
+                "name": "write_flatfile",
+                "start": 83,
+                "end": 111
+            },
+            {
+                "name": "do_flatfile",
+                "start": 113,
+                "end": 170
+            },
+            {
+                "name": "cmd_load_raw",
+                "start": 172,
+                "end": 192
+            },
+            {
+                "name": "cmd_verify_raw",
+                "start": 194,
+                "end": 214
+            },
+            {
+                "name": "cmd_save_raw",
+                "start": 216,
+                "end": 243
+            }
+        ],
+        "ui/sym.c": [
+            {
+                "name": "cmd_eval",
+                "start": 37,
+                "end": 51
+            },
+            {
+                "name": "cmd_sym_load_add",
+                "start": 53,
+                "end": 87
+            },
+            {
+                "name": "savemap_cb",
+                "start": 89,
+                "end": 99
+            },
+            {
+                "name": "cmd_sym_savemap",
+                "start": 101,
+                "end": 130
+            },
+            {
+                "name": "print_sym",
+                "start": 132,
+                "end": 143
+            },
+            {
+                "name": "find_sym",
+                "start": 145,
+                "end": 161
+            },
+            {
+                "name": "cmd_sym_find",
+                "start": 163,
+                "end": 181
+            },
+            {
+                "name": "renames_do",
+                "start": 193,
+                "end": 233
+            },
+            {
+                "name": "find_renames",
+                "start": 235,
+                "end": 255
+            },
+            {
+                "name": "cmd_sym_rename",
+                "start": 257,
+                "end": 291
+            },
+            {
+                "name": "cmd_sym_del",
+                "start": 293,
+                "end": 311
+            },
+            {
+                "name": "cmd_sym",
+                "start": 313,
+                "end": 370
+            }
+        ],
+        "ui/input_console.c": [
+            {
+                "name": "readline",
+                "start": 35,
+                "end": 67
+            },
+            {
+                "name": "console_init",
+                "start": 72,
+                "end": 75
+            },
+            {
+                "name": "console_read_command",
+                "start": 79,
+                "end": 96
+            },
+            {
+                "name": "console_prompt_abort",
+                "start": 98,
+                "end": 120
+            }
+        ],
+        "ui/main.c": [
+            {
+                "name": "usage",
+                "start": 95,
+                "end": 154
+            },
+            {
+                "name": "process_rc_file",
+                "start": 156,
+                "end": 177
+            },
+            {
+                "name": "add_fet_device",
+                "start": 179,
+                "end": 184
+            },
+            {
+                "name": "add_fet_olimex_device",
+                "start": 186,
+                "end": 191
+            },
+            {
+                "name": "list_devices",
+                "start": 193,
+                "end": 221
+            },
+            {
+                "name": "parse_cmdline_args",
+                "start": 223,
+                "end": 368
+            },
+            {
+                "name": "setup_driver",
+                "start": 370,
+                "end": 394
+            },
+            {
+                "name": "main",
+                "start": 418,
+                "end": 493
+            }
+        ],
+        "transport/comport.c": [
+            {
+                "name": "serial_send",
+                "start": 37,
+                "end": 51
+            },
+            {
+                "name": "serial_recv",
+                "start": 53,
+                "end": 68
+            },
+            {
+                "name": "serial_destroy",
+                "start": 70,
+                "end": 76
+            },
+            {
+                "name": "serial_flush",
+                "start": 78,
+                "end": 88
+            },
+            {
+                "name": "serial_set_modem",
+                "start": 90,
+                "end": 107
+            },
+            {
+                "name": "comport_open",
+                "start": 117,
+                "end": 142
+            }
+        ],
+        "transport/cp210x.h": [
+            {
+                "name": "cp210x_open",
+                "start": 30,
+                "end": 31
+            }
+        ],
+        "transport/cp210x.c": [
+            {
+                "name": "configure_port",
+                "start": 73,
+                "end": 119
+            },
+            {
+                "name": "open_interface",
+                "start": 121,
+                "end": 174
+            },
+            {
+                "name": "open_device",
+                "start": 176,
+                "end": 193
+            },
+            {
+                "name": "usbtr_send",
+                "start": 195,
+                "end": 216
+            },
+            {
+                "name": "usbtr_recv",
+                "start": 218,
+                "end": 251
+            },
+            {
+                "name": "usbtr_destroy",
+                "start": 253,
+                "end": 260
+            },
+            {
+                "name": "usbtr_flush",
+                "start": 262,
+                "end": 273
+            },
+            {
+                "name": "usbtr_set_modem",
+                "start": 275,
+                "end": 293
+            },
+            {
+                "name": "cp210x_open",
+                "start": 303,
+                "end": 339
+            }
+        ],
+        "transport/ftdi.h": [
+            {
+                "name": "ftdi_open",
+                "start": 29,
+                "end": 32
+            }
+        ],
+        "transport/ftdi.c": [
+            {
+                "name": "do_cfg",
+                "start": 70,
+                "end": 81
+            },
+            {
+                "name": "configure_ftdi",
+                "start": 83,
+                "end": 104
+            },
+            {
+                "name": "open_device",
+                "start": 106,
+                "end": 157
+            },
+            {
+                "name": "tr_destroy",
+                "start": 159,
+                "end": 165
+            },
+            {
+                "name": "tr_recv",
+                "start": 167,
+                "end": 200
+            },
+            {
+                "name": "tr_send",
+                "start": 202,
+                "end": 225
+            },
+            {
+                "name": "tr_flush",
+                "start": 227,
+                "end": 233
+            },
+            {
+                "name": "tr_set_modem",
+                "start": 235,
+                "end": 248
+            },
+            {
+                "name": "ftdi_open",
+                "start": 258,
+                "end": 294
+            }
+        ],
+        "transport/cdc_acm.h": [
+            {
+                "name": "cdc_acm_open",
+                "start": 30,
+                "end": 31
+            }
+        ],
+        "transport/cdc_acm.c": [
+            {
+                "name": "usbtr_send",
+                "start": 61,
+                "end": 82
+            },
+            {
+                "name": "usbtr_recv",
+                "start": 84,
+                "end": 112
+            },
+            {
+                "name": "usbtr_destroy",
+                "start": 114,
+                "end": 121
+            },
+            {
+                "name": "usbtr_flush",
+                "start": 123,
+                "end": 136
+            },
+            {
+                "name": "usbtr_set_modem",
+                "start": 138,
+                "end": 160
+            },
+            {
+                "name": "find_interface",
+                "start": 170,
+                "end": 211
+            },
+            {
+                "name": "open_interface",
+                "start": 213,
+                "end": 245
+            },
+            {
+                "name": "configure_port",
+                "start": 247,
+                "end": 273
+            },
+            {
+                "name": "cdc_acm_open",
+                "start": 275,
+                "end": 325
+            }
+        ],
+        "transport/rf2500.c": [
+            {
+                "name": "open_interface",
+                "start": 58,
+                "end": 92
+            },
+            {
+                "name": "open_device",
+                "start": 94,
+                "end": 110
+            },
+            {
+                "name": "usbtr_send",
+                "start": 112,
+                "end": 148
+            },
+            {
+                "name": "usbtr_recv",
+                "start": 150,
+                "end": 180
+            },
+            {
+                "name": "usbtr_destroy",
+                "start": 182,
+                "end": 189
+            },
+            {
+                "name": "usbtr_flush",
+                "start": 191,
+                "end": 211
+            },
+            {
+                "name": "usbtr_set_modem",
+                "start": 213,
+                "end": 217
+            },
+            {
+                "name": "rf2500_open",
+                "start": 227,
+                "end": 264
+            }
+        ],
+        "transport/ti3410.c": [
+            {
+                "name": "open_device",
+                "start": 138,
+                "end": 177
+            },
+            {
+                "name": "set_termios",
+                "start": 179,
+                "end": 202
+            },
+            {
+                "name": "set_mcr",
+                "start": 204,
+                "end": 225
+            },
+            {
+                "name": "do_open_start",
+                "start": 227,
+                "end": 255
+            },
+            {
+                "name": "interrupt_flush",
+                "start": 257,
+                "end": 263
+            },
+            {
+                "name": "setup_port",
+                "start": 265,
+                "end": 305
+            },
+            {
+                "name": "teardown_port",
+                "start": 307,
+                "end": 315
+            },
+            {
+                "name": "ti3410_send",
+                "start": 317,
+                "end": 335
+            },
+            {
+                "name": "ti3410_recv",
+                "start": 337,
+                "end": 359
+            },
+            {
+                "name": "ti3410_destroy",
+                "start": 361,
+                "end": 367
+            },
+            {
+                "name": "find_firmware",
+                "start": 374,
+                "end": 406
+            },
+            {
+                "name": "do_extract",
+                "start": 408,
+                "end": 426
+            },
+            {
+                "name": "load_firmware",
+                "start": 428,
+                "end": 450
+            },
+            {
+                "name": "prepare_firmware",
+                "start": 452,
+                "end": 467
+            },
+            {
+                "name": "do_download",
+                "start": 469,
+                "end": 518
+            },
+            {
+                "name": "download_firmware",
+                "start": 520,
+                "end": 536
+            },
+            {
+                "name": "ti3410_flush",
+                "start": 538,
+                "end": 541
+            },
+            {
+                "name": "ti3410_set_modem",
+                "start": 543,
+                "end": 547
+            },
+            {
+                "name": "ti3410_open",
+                "start": 557,
+                "end": 621
+            }
+        ],
+        "util/btree.h": [
+            {
+                "name": "btree_select",
+                "start": 93,
+                "end": 94
+            }
+        ],
+        "util/output.h": [
+            {
+                "name": "printc",
+                "start": 30,
+                "end": 31
+            },
+            {
+                "name": "printc_dbg",
+                "start": 32,
+                "end": 33
+            },
+            {
+                "name": "printc_err",
+                "start": 34,
+                "end": 35
+            },
+            {
+                "name": "printc_shell",
+                "start": 36,
+                "end": 37
+            }
+        ],
+        "util/util.h": [
+            {
+                "name": "debug_hexdump",
+                "start": 43,
+                "end": 44
+            },
+            {
+                "name": "ishex",
+                "start": 46,
+                "end": 49
+            },
+            {
+                "name": "base64_encoded_size",
+                "start": 67,
+                "end": 70
+            }
+        ],
+        "util/btree.c": [
+            {
+                "name": "destroy_page",
+                "start": 129,
+                "end": 142
+            },
+            {
+                "name": "allocate_page",
+                "start": 144,
+                "end": 168
+            },
+            {
+                "name": "split_page",
+                "start": 170,
+                "end": 197
+            },
+            {
+                "name": "insert_data",
+                "start": 199,
+                "end": 230
+            },
+            {
+                "name": "insert_ptr",
+                "start": 232,
+                "end": 264
+            },
+            {
+                "name": "delete_item",
+                "start": 266,
+                "end": 290
+            },
+            {
+                "name": "move_item",
+                "start": 292,
+                "end": 303
+            },
+            {
+                "name": "merge_pages",
+                "start": 305,
+                "end": 335
+            },
+            {
+                "name": "find_key_le",
+                "start": 337,
+                "end": 347
+            },
+            {
+                "name": "trace_path",
+                "start": 349,
+                "end": 371
+            },
+            {
+                "name": "cursor_first",
+                "start": 373,
+                "end": 392
+            },
+            {
+                "name": "cursor_next",
+                "start": 394,
+                "end": 421
+            },
+            {
+                "name": "btree_alloc",
+                "start": 427,
+                "end": 457
+            },
+            {
+                "name": "btree_free",
+                "start": 459,
+                "end": 464
+            },
+            {
+                "name": "btree_clear",
+                "start": 466,
+                "end": 494
+            },
+            {
+                "name": "btree_put",
+                "start": 496,
+                "end": 620
+            },
+            {
+                "name": "btree_delete",
+                "start": 622,
+                "end": 710
+            },
+            {
+                "name": "btree_get",
+                "start": 712,
+                "end": 736
+            },
+            {
+                "name": "btree_select",
+                "start": 738,
+                "end": 783
+            }
+        ],
+        "util/util.c": [
+            {
+                "name": "get_arg",
+                "start": 35,
+                "end": 139
+            },
+            {
+                "name": "debug_hexdump",
+                "start": 141,
+                "end": 156
+            },
+            {
+                "name": "hexval",
+                "start": 158,
+                "end": 168
+            },
+            {
+                "name": "last_error",
+                "start": 219,
+                "end": 222
+            },
+            {
+                "name": "expand_tilde",
+                "start": 226,
+                "end": 267
+            },
+            {
+                "name": "delay_s",
+                "start": 284,
+                "end": 287
+            },
+            {
+                "name": "delay_ms",
+                "start": 289,
+                "end": 297
+            },
+            {
+                "name": "base64_encode",
+                "start": 300,
+                "end": 336
+            }
+        ],
+        "util/sockets.h": [
+            {
+                "name": "sockets_recv",
+                "start": 50,
+                "end": 51
+            }
+        ],
+        "util/gdb_proto.c": [
+            {
+                "name": "gdb_init",
+                "start": 30,
+                "end": 37
+            },
+            {
+                "name": "gdb_printf",
+                "start": 39,
+                "end": 51
+            },
+            {
+                "name": "gdb_read",
+                "start": 54,
+                "end": 78
+            },
+            {
+                "name": "gdb_peek",
+                "start": 80,
+                "end": 86
+            },
+            {
+                "name": "gdb_getc",
+                "start": 88,
+                "end": 100
+            },
+            {
+                "name": "gdb_flush",
+                "start": 102,
+                "end": 112
+            },
+            {
+                "name": "gdb_flush_ack",
+                "start": 114,
+                "end": 140
+            },
+            {
+                "name": "gdb_packet_start",
+                "start": 142,
+                "end": 145
+            },
+            {
+                "name": "gdb_packet_end",
+                "start": 147,
+                "end": 155
+            },
+            {
+                "name": "gdb_send",
+                "start": 157,
+                "end": 163
+            },
+            {
+                "name": "gdb_read_packet",
+                "start": 165,
+                "end": 222
+            }
+        ],
+        "util/opdb.h": [
+            {
+                "name": "opdb_get",
+                "start": 55,
+                "end": 56
+            }
+        ],
+        "util/output.c": [
+            {
+                "name": "rev_bits",
+                "start": 48,
+                "end": 55
+            },
+            {
+                "name": "ansi_apply",
+                "start": 60,
+                "end": 79
+            },
+            {
+                "name": "parse_ansi",
+                "start": 84,
+                "end": 107
+            },
+            {
+                "name": "parse_text",
+                "start": 112,
+                "end": 120
+            },
+            {
+                "name": "emit_ansi",
+                "start": 123,
+                "end": 136
+            },
+            {
+                "name": "handle_line",
+                "start": 142,
+                "end": 183
+            },
+            {
+                "name": "write_text",
+                "start": 194,
+                "end": 225
+            },
+            {
+                "name": "printc",
+                "start": 232,
+                "end": 242
+            },
+            {
+                "name": "printc_dbg",
+                "start": 244,
+                "end": 257
+            },
+            {
+                "name": "printc_err",
+                "start": 259,
+                "end": 269
+            },
+            {
+                "name": "printc_shell",
+                "start": 271,
+                "end": 284
+            },
+            {
+                "name": "output_set_embedded",
+                "start": 286,
+                "end": 289
+            },
+            {
+                "name": "pr_error",
+                "start": 291,
+                "end": 294
+            },
+            {
+                "name": "capture_start",
+                "start": 296,
+                "end": 300
+            },
+            {
+                "name": "capture_end",
+                "start": 302,
+                "end": 305
+            }
+        ],
+        "util/prog.c": [
+            {
+                "name": "prog_init",
+                "start": 24,
+                "end": 28
+            },
+            {
+                "name": "prog_flush",
+                "start": 30,
+                "end": 76
+            },
+            {
+                "name": "prog_feed",
+                "start": 78,
+                "end": 122
+            }
+        ],
+        "util/opdb.c": [
+            {
+                "name": "opdb_find",
+                "start": 111,
+                "end": 123
+            },
+            {
+                "name": "opdb_reset",
+                "start": 125,
+                "end": 135
+            },
+            {
+                "name": "opdb_enum",
+                "start": 137,
+                "end": 150
+            },
+            {
+                "name": "opdb_get",
+                "start": 152,
+                "end": 167
+            },
+            {
+                "name": "opdb_set",
+                "start": 169,
+                "end": 184
+            },
+            {
+                "name": "opdb_get_string",
+                "start": 186,
+                "end": 194
+            },
+            {
+                "name": "opdb_get_boolean",
+                "start": 196,
+                "end": 204
+            },
+            {
+                "name": "opdb_get_numeric",
+                "start": 206,
+                "end": 214
+            },
+            {
+                "name": "opdb_read_fperm",
+                "start": 216,
+                "end": 226
+            }
+        ],
+        "util/stab.h": [
+            {
+                "name": "stab_nearest",
+                "start": 44,
+                "end": 45
+            }
+        ],
+        "util/stab.c": [
+            {
+                "name": "sym_key_compare",
+                "start": 43,
+                "end": 47
+            },
+            {
+                "name": "sym_key_init",
+                "start": 49,
+                "end": 58
+            },
+            {
+                "name": "addr_key_compare",
+                "start": 70,
+                "end": 81
+            },
+            {
+                "name": "addr_key_init",
+                "start": 83,
+                "end": 94
+            },
+            {
+                "name": "stab_clear",
+                "start": 119,
+                "end": 123
+            },
+            {
+                "name": "stab_set",
+                "start": 125,
+                "end": 151
+            },
+            {
+                "name": "stab_nearest",
+                "start": 153,
+                "end": 172
+            },
+            {
+                "name": "stab_get",
+                "start": 174,
+                "end": 185
+            },
+            {
+                "name": "stab_del",
+                "start": 187,
+                "end": 202
+            },
+            {
+                "name": "stab_enum",
+                "start": 204,
+                "end": 219
+            },
+            {
+                "name": "stab_init",
+                "start": 221,
+                "end": 237
+            },
+            {
+                "name": "stab_exit",
+                "start": 239,
+                "end": 243
+            }
+        ],
+        "util/demangle.c": [
+            {
+                "name": "dm_append",
+                "start": 34,
+                "end": 50
+            },
+            {
+                "name": "dm_component",
+                "start": 53,
+                "end": 68
+            },
+            {
+                "name": "demangle",
+                "start": 71,
+                "end": 117
+            }
+        ],
+        "util/ctrlc.c": [
+            {
+                "name": "sigint_handler",
+                "start": 91,
+                "end": 96
+            },
+            {
+                "name": "ctrlc_init",
+                "start": 98,
+                "end": 113
+            },
+            {
+                "name": "ctrlc_exit",
+                "start": 115,
+                "end": 118
+            },
+            {
+                "name": "ctrlc_clear",
+                "start": 120,
+                "end": 123
+            },
+            {
+                "name": "ctrlc_raise",
+                "start": 125,
+                "end": 128
+            },
+            {
+                "name": "ctrlc_check",
+                "start": 130,
+                "end": 139
+            }
+        ],
+        "util/expr.c": [
+            {
+                "name": "addr_exp_data",
+                "start": 45,
+                "end": 77
+            },
+            {
+                "name": "addr_exp_pop",
+                "start": 79,
+                "end": 128
+            },
+            {
+                "name": "can_push",
+                "start": 130,
+                "end": 156
+            },
+            {
+                "name": "addr_exp_op",
+                "start": 158,
+                "end": 203
+            },
+            {
+                "name": "addr_exp_finish",
+                "start": 205,
+                "end": 232
+            },
+            {
+                "name": "expr_eval",
+                "start": 234,
+                "end": 295
+            }
+        ],
+        "util/sockets.c": [
+            {
+                "name": "sockets_accept",
+                "start": 146,
+                "end": 149
+            },
+            {
+                "name": "sockets_connect",
+                "start": 151,
+                "end": 154
+            },
+            {
+                "name": "sockets_send",
+                "start": 156,
+                "end": 159
+            },
+            {
+                "name": "sockets_recv",
+                "start": 161,
+                "end": 186
+            }
+        ],
+        "util/list.c": [
+            {
+                "name": "list_init",
+                "start": 22,
+                "end": 26
+            },
+            {
+                "name": "list_insert",
+                "start": 28,
+                "end": 35
+            },
+            {
+                "name": "list_remove",
+                "start": 37,
+                "end": 44
+            }
+        ],
+        "util/sport.c": [
+            {
+                "name": "rate_to_code",
+                "start": 60,
+                "end": 69
+            },
+            {
+                "name": "set_nonstandard_rate",
+                "start": 72,
+                "end": 96
+            },
+            {
+                "name": "sport_open",
+                "start": 114,
+                "end": 143
+            },
+            {
+                "name": "sport_close",
+                "start": 145,
+                "end": 148
+            },
+            {
+                "name": "sport_flush",
+                "start": 150,
+                "end": 153
+            },
+            {
+                "name": "sport_set_modem",
+                "start": 155,
+                "end": 158
+            },
+            {
+                "name": "sport_read",
+                "start": 160,
+                "end": 186
+            },
+            {
+                "name": "sport_write",
+                "start": 188,
+                "end": 191
+            },
+            {
+                "name": "sport_read_all",
+                "start": 306,
+                "end": 319
+            },
+            {
+                "name": "sport_write_all",
+                "start": 321,
+                "end": 334
+            }
+        ],
+        "util/vector.c": [
+            {
+                "name": "vector_init",
+                "start": 24,
+                "end": 28
+            },
+            {
+                "name": "vector_destroy",
+                "start": 30,
+                "end": 36
+            },
+            {
+                "name": "vector_realloc",
+                "start": 38,
+                "end": 58
+            },
+            {
+                "name": "size_for",
+                "start": 60,
+                "end": 83
+            },
+            {
+                "name": "vector_push",
+                "start": 85,
+                "end": 100
+            },
+            {
+                "name": "vector_pop",
+                "start": 102,
+                "end": 109
+            }
+        ],
+        "util/powerbuf.h": [
+            {
+                "name": "powerbuf_session_info",
+                "start": 121,
+                "end": 122
+            },
+            {
+                "name": "powerbuf_add_samples",
+                "start": 127,
+                "end": 129
+            },
+            {
+                "name": "powerbuf_get_by_mab",
+                "start": 143,
+                "end": 144
+            }
+        ],
+        "util/powerbuf.c": [
+            {
+                "name": "powerbuf_new",
+                "start": 23,
+                "end": 65
+            },
+            {
+                "name": "powerbuf_free",
+                "start": 67,
+                "end": 73
+            },
+            {
+                "name": "powerbuf_clear",
+                "start": 75,
+                "end": 80
+            },
+            {
+                "name": "session_length",
+                "start": 82,
+                "end": 97
+            },
+            {
+                "name": "pop_oldest_session",
+                "start": 99,
+                "end": 110
+            },
+            {
+                "name": "powerbuf_begin_session",
+                "start": 112,
+                "end": 133
+            },
+            {
+                "name": "rev_index",
+                "start": 136,
+                "end": 140
+            },
+            {
+                "name": "powerbuf_end_session",
+                "start": 142,
+                "end": 156
+            },
+            {
+                "name": "powerbuf_num_sessions",
+                "start": 158,
+                "end": 163
+            },
+            {
+                "name": "powerbuf_session_info",
+                "start": 165,
+                "end": 175
+            },
+            {
+                "name": "ensure_room",
+                "start": 177,
+                "end": 225
+            },
+            {
+                "name": "powerbuf_add_samples",
+                "start": 227,
+                "end": 279
+            },
+            {
+                "name": "powerbuf_last_mab",
+                "start": 281,
+                "end": 291
+            },
+            {
+                "name": "sift_down",
+                "start": 293,
+                "end": 327
+            },
+            {
+                "name": "heapify",
+                "start": 329,
+                "end": 337
+            },
+            {
+                "name": "heap_extract",
+                "start": 339,
+                "end": 357
+            },
+            {
+                "name": "powerbuf_sort",
+                "start": 359,
+                "end": 381
+            },
+            {
+                "name": "find_mab_ge",
+                "start": 386,
+                "end": 406
+            },
+            {
+                "name": "powerbuf_get_by_mab",
+                "start": 408,
+                "end": 433
+            }
+        ],
+        "util/dis.h": [
+            {
+                "name": "dis_decode",
+                "start": 284,
+                "end": 286
+            }
+        ],
+        "util/dis.c": [
+            {
+                "name": "add_index",
+                "start": 35,
+                "end": 41
+            },
+            {
+                "name": "decode_00xx",
+                "start": 43,
+                "end": 164
+            },
+            {
+                "name": "decode_13xx",
+                "start": 166,
+                "end": 228
+            },
+            {
+                "name": "decode_14xx",
+                "start": 230,
+                "end": 246
+            },
+            {
+                "name": "decode_single",
+                "start": 253,
+                "end": 303
+            },
+            {
+                "name": "decode_double",
+                "start": 310,
+                "end": 398
+            },
+            {
+                "name": "decode_jump",
+                "start": 405,
+                "end": 421
+            },
+            {
+                "name": "remap_cgen",
+                "start": 423,
+                "end": 447
+            },
+            {
+                "name": "find_cgens",
+                "start": 453,
+                "end": 461
+            },
+            {
+                "name": "find_emulated_ops",
+                "start": 466,
+                "end": 745
+            },
+            {
+                "name": "dis_decode",
+                "start": 756,
+                "end": 844
+            },
+            {
+                "name": "dis_opcode_name",
+                "start": 972,
+                "end": 981
+            },
+            {
+                "name": "dis_opcode_from_name",
+                "start": 983,
+                "end": 992
+            },
+            {
+                "name": "dis_reg_from_name",
+                "start": 1001,
+                "end": 1024
+            },
+            {
+                "name": "dis_reg_name",
+                "start": 1026,
+                "end": 1032
+            }
+        ],
+        "util/usbutil.h": [
+            {
+                "name": "usbutil_find_by_id",
+                "start": 28,
+                "end": 29
+            }
+        ],
+        "util/usbutil.c": [
+            {
+                "name": "device_help",
+                "start": 26,
+                "end": 49
+            },
+            {
+                "name": "read_serial",
+                "start": 51,
+                "end": 66
+            },
+            {
+                "name": "usbutil_list",
+                "start": 68,
+                "end": 94
+            },
+            {
+                "name": "usbutil_find_by_id",
+                "start": 96,
+                "end": 126
+            },
+            {
+                "name": "usbutil_find_by_loc",
+                "start": 128,
+                "end": 170
+            }
+        ],
+        "util/output_util.h": [
+            {
+                "name": "disassemble",
+                "start": 27,
+                "end": 28
+            },
+            {
+                "name": "print_address",
+                "start": 44,
+                "end": 45
+            }
+        ],
+        "util/output_util.c": [
+            {
+                "name": "format_addr",
+                "start": 30,
+                "end": 56
+            },
+            {
+                "name": "format_reg",
+                "start": 58,
+                "end": 90
+            },
+            {
+                "name": "format_operand",
+                "start": 97,
+                "end": 106
+            },
+            {
+                "name": "dis_format",
+                "start": 109,
+                "end": 160
+            },
+            {
+                "name": "disassemble",
+                "start": 162,
+                "end": 236
+            },
+            {
+                "name": "hexdump",
+                "start": 238,
+                "end": 267
+            },
+            {
+                "name": "show_regs",
+                "start": 269,
+                "end": 286
+            },
+            {
+                "name": "print_address",
+                "start": 288,
+                "end": 317
+            },
+            {
+                "name": "namelist_cmp",
+                "start": 323,
+                "end": 326
+            },
+            {
+                "name": "namelist_print",
+                "start": 328,
+                "end": 367
+            }
+        ],
+        "util/dynload.c": [
+            {
+                "name": "dynload_open",
+                "start": 48,
+                "end": 51
+            },
+            {
+                "name": "dynload_close",
+                "start": 53,
+                "end": 56
+            },
+            {
+                "name": "dynload_sym",
+                "start": 58,
+                "end": 61
+            },
+            {
+                "name": "dynload_error",
+                "start": 63,
+                "end": 66
+            }
+        ],
+        "simio/simio.c": [
+            {
+                "name": "destroy_device",
+                "start": 54,
+                "end": 58
+            },
+            {
+                "name": "simio_init",
+                "start": 60,
+                "end": 64
+            },
+            {
+                "name": "simio_exit",
+                "start": 66,
+                "end": 70
+            },
+            {
+                "name": "find_class",
+                "start": 72,
+                "end": 84
+            },
+            {
+                "name": "find_device",
+                "start": 86,
+                "end": 98
+            },
+            {
+                "name": "cmd_add",
+                "start": 100,
+                "end": 138
+            },
+            {
+                "name": "cmd_del",
+                "start": 140,
+                "end": 159
+            },
+            {
+                "name": "cmd_devices",
+                "start": 161,
+                "end": 182
+            },
+            {
+                "name": "cmd_classes",
+                "start": 184,
+                "end": 205
+            },
+            {
+                "name": "cmd_help",
+                "start": 207,
+                "end": 225
+            },
+            {
+                "name": "cmd_config",
+                "start": 227,
+                "end": 252
+            },
+            {
+                "name": "cmd_info",
+                "start": 254,
+                "end": 276
+            },
+            {
+                "name": "cmd_simio",
+                "start": 278,
+                "end": 306
+            },
+            {
+                "name": "simio_reset",
+                "start": 308,
+                "end": 322
+            },
+            {
+                "name": "simio_write_b",
+                "start": 351,
+                "end": 359
+            },
+            {
+                "name": "simio_read_b",
+                "start": 361,
+                "end": 369
+            },
+            {
+                "name": "simio_check_interrupt",
+                "start": 371,
+                "end": 389
+            },
+            {
+                "name": "simio_ack_interrupt",
+                "start": 391,
+                "end": 402
+            },
+            {
+                "name": "simio_step",
+                "start": 404,
+                "end": 433
+            },
+            {
+                "name": "simio_sfr_get",
+                "start": 435,
+                "end": 441
+            },
+            {
+                "name": "simio_sfr_modify",
+                "start": 443,
+                "end": 449
+            }
+        ],
+        "simio/simio_console.c": [
+            {
+                "name": "console_create",
+                "start": 37,
+                "end": 54
+            },
+            {
+                "name": "console_destroy",
+                "start": 56,
+                "end": 60
+            },
+            {
+                "name": "console_reset",
+                "start": 62,
+                "end": 66
+            },
+            {
+                "name": "config_addr",
+                "start": 68,
+                "end": 83
+            },
+            {
+                "name": "console_config",
+                "start": 85,
+                "end": 97
+            },
+            {
+                "name": "console_info",
+                "start": 99,
+                "end": 105
+            },
+            {
+                "name": "console_write_b",
+                "start": 107,
+                "end": 121
+            }
+        ],
+        "simio/simio_hwmult.c": [
+            {
+                "name": "hwmult_create",
+                "start": 48,
+                "end": 63
+            },
+            {
+                "name": "hwmult_destroy",
+                "start": 65,
+                "end": 68
+            },
+            {
+                "name": "do_multiply",
+                "start": 70,
+                "end": 97
+            },
+            {
+                "name": "hwmult_write",
+                "start": 99,
+                "end": 127
+            },
+            {
+                "name": "hwmult_read",
+                "start": 129,
+                "end": 159
+            }
+        ],
+        "simio/simio_gpio.c": [
+            {
+                "name": "gpio_create",
+                "start": 52,
+                "end": 70
+            },
+            {
+                "name": "gpio_destroy",
+                "start": 72,
+                "end": 77
+            },
+            {
+                "name": "gpio_reset",
+                "start": 79,
+                "end": 88
+            },
+            {
+                "name": "config_addr",
+                "start": 90,
+                "end": 105
+            },
+            {
+                "name": "config_irq",
+                "start": 107,
+                "end": 124
+            },
+            {
+                "name": "config_channel",
+                "start": 126,
+                "end": 171
+            },
+            {
+                "name": "gpio_config",
+                "start": 173,
+                "end": 204
+            },
+            {
+                "name": "print_tristate",
+                "start": 206,
+                "end": 224
+            },
+            {
+                "name": "port_map",
+                "start": 226,
+                "end": 251
+            },
+            {
+                "name": "gpio_info",
+                "start": 253,
+                "end": 290
+            },
+            {
+                "name": "gpio_write_b",
+                "start": 292,
+                "end": 314
+            },
+            {
+                "name": "gpio_read_b",
+                "start": 316,
+                "end": 330
+            },
+            {
+                "name": "gpio_check_interrupt",
+                "start": 332,
+                "end": 340
+            }
+        ],
+        "simio/simio_tracer.c": [
+            {
+                "name": "event_print",
+                "start": 69,
+                "end": 105
+            },
+            {
+                "name": "event_rec",
+                "start": 107,
+                "end": 123
+            },
+            {
+                "name": "tracer_create",
+                "start": 125,
+                "end": 168
+            },
+            {
+                "name": "tracer_destroy",
+                "start": 170,
+                "end": 176
+            },
+            {
+                "name": "tracer_reset",
+                "start": 178,
+                "end": 183
+            },
+            {
+                "name": "tracer_config",
+                "start": 185,
+                "end": 230
+            },
+            {
+                "name": "tracer_info",
+                "start": 232,
+                "end": 252
+            },
+            {
+                "name": "tracer_write",
+                "start": 254,
+                "end": 261
+            },
+            {
+                "name": "tracer_read",
+                "start": 263,
+                "end": 272
+            },
+            {
+                "name": "tracer_write_b",
+                "start": 274,
+                "end": 281
+            },
+            {
+                "name": "tracer_read_b",
+                "start": 283,
+                "end": 292
+            },
+            {
+                "name": "tracer_check_interrupt",
+                "start": 294,
+                "end": 299
+            },
+            {
+                "name": "tracer_ack_interrupt",
+                "start": 301,
+                "end": 309
+            },
+            {
+                "name": "tracer_step",
+                "start": 311,
+                "end": 322
+            }
+        ],
+        "simio/simio_wdt.c": [
+            {
+                "name": "wdt_create",
+                "start": 61,
+                "end": 82
+            },
+            {
+                "name": "wdt_destroy",
+                "start": 84,
+                "end": 87
+            },
+            {
+                "name": "wdt_reset",
+                "start": 89,
+                "end": 95
+            },
+            {
+                "name": "parse_int",
+                "start": 97,
+                "end": 114
+            },
+            {
+                "name": "wdt_config",
+                "start": 116,
+                "end": 143
+            },
+            {
+                "name": "wdt_info",
+                "start": 145,
+                "end": 157
+            },
+            {
+                "name": "wdt_write",
+                "start": 159,
+                "end": 174
+            },
+            {
+                "name": "wdt_read",
+                "start": 176,
+                "end": 185
+            },
+            {
+                "name": "wdt_check_interrupt",
+                "start": 187,
+                "end": 207
+            },
+            {
+                "name": "wdt_ack_interrupt",
+                "start": 209,
+                "end": 217
+            },
+            {
+                "name": "wdt_step",
+                "start": 219,
+                "end": 254
+            }
+        ],
+        "simio/simio_timer.c": [
+            {
+                "name": "timer_create",
+                "start": 77,
+                "end": 113
+            },
+            {
+                "name": "timer_destroy",
+                "start": 115,
+                "end": 120
+            },
+            {
+                "name": "timer_reset",
+                "start": 122,
+                "end": 131
+            },
+            {
+                "name": "config_addr",
+                "start": 133,
+                "end": 148
+            },
+            {
+                "name": "config_irq",
+                "start": 150,
+                "end": 167
+            },
+            {
+                "name": "config_channel",
+                "start": 169,
+                "end": 225
+            },
+            {
+                "name": "timer_config",
+                "start": 227,
+                "end": 245
+            },
+            {
+                "name": "calc_iv",
+                "start": 247,
+                "end": 267
+            },
+            {
+                "name": "timer_info",
+                "start": 269,
+                "end": 289
+            },
+            {
+                "name": "timer_write",
+                "start": 291,
+                "end": 333
+            },
+            {
+                "name": "timer_read",
+                "start": 335,
+                "end": 368
+            },
+            {
+                "name": "timer_check_interrupt",
+                "start": 370,
+                "end": 386
+            },
+            {
+                "name": "timer_ack_interrupt",
+                "start": 388,
+                "end": 395
+            },
+            {
+                "name": "tar_step",
+                "start": 397,
+                "end": 431
+            },
+            {
+                "name": "timer_step",
+                "start": 433,
+                "end": 470
+            }
+        ]
+    }
+}

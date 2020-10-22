@@ -1,0 +1,394 @@
+{
+    "vlock-2.2.2": {
+        "src/util.h": [
+            {
+                "name": "fatal_error",
+                "start": 24,
+                "end": 25
+            },
+            {
+                "name": "fatal_error_free",
+                "start": 26,
+                "end": 27
+            },
+            {
+                "name": "fatal_perror",
+                "start": 28,
+                "end": 29
+            }
+        ],
+        "src/util.c": [
+            {
+                "name": "parse_seconds",
+                "start": 30,
+                "end": 50
+            },
+            {
+                "name": "fatal_error",
+                "start": 52,
+                "end": 61
+            },
+            {
+                "name": "fatal_error_free",
+                "start": 63,
+                "end": 69
+            },
+            {
+                "name": "fatal_perror",
+                "start": 71,
+                "end": 77
+            }
+        ],
+        "src/vlock-main.c": [
+            {
+                "name": "get_username",
+                "start": 44,
+                "end": 66
+            },
+            {
+                "name": "terminate",
+                "start": 68,
+                "end": 73
+            },
+            {
+                "name": "block_signals",
+                "start": 75,
+                "end": 93
+            },
+            {
+                "name": "secure_terminal",
+                "start": 98,
+                "end": 105
+            },
+            {
+                "name": "restore_terminal",
+                "start": 107,
+                "end": 112
+            },
+            {
+                "name": "auth_loop",
+                "start": 116,
+                "end": 190
+            },
+            {
+                "name": "display_auth_tries",
+                "start": 192,
+                "end": 196
+            },
+            {
+                "name": "main",
+                "start": 206,
+                "end": 264
+            }
+        ],
+        "src/list.h": [
+            {
+                "name": "list_is_empty",
+                "start": 83,
+                "end": 86
+            }
+        ],
+        "src/script.c": [
+            {
+                "name": "get_dependency",
+                "start": 76,
+                "end": 77
+            },
+            {
+                "name": "init_script",
+                "start": 81,
+                "end": 113
+            },
+            {
+                "name": "destroy_script",
+                "start": 115,
+                "end": 133
+            },
+            {
+                "name": "call_script_hook",
+                "start": 136,
+                "end": 177
+            },
+            {
+                "name": "launch_script",
+                "start": 179,
+                "end": 206
+            },
+            {
+                "name": "get_dependency",
+                "start": 212,
+                "end": 230
+            },
+            {
+                "name": "read_dependency",
+                "start": 235,
+                "end": 340
+            },
+            {
+                "name": "parse_dependency",
+                "start": 342,
+                "end": 354
+            }
+        ],
+        "src/list.c": [
+            {
+                "name": "list_new",
+                "start": 22,
+                "end": 32
+            },
+            {
+                "name": "list_copy",
+                "start": 35,
+                "end": 49
+            },
+            {
+                "name": "list_free",
+                "start": 52,
+                "end": 61
+            },
+            {
+                "name": "list_length",
+                "start": 64,
+                "end": 72
+            },
+            {
+                "name": "list_append",
+                "start": 76,
+                "end": 96
+            },
+            {
+                "name": "list_delete_item",
+                "start": 100,
+                "end": 119
+            },
+            {
+                "name": "list_delete",
+                "start": 123,
+                "end": 129
+            },
+            {
+                "name": "list_find",
+                "start": 133,
+                "end": 140
+            }
+        ],
+        "src/process.c": [
+            {
+                "name": "ignore_sigalarm",
+                "start": 27,
+                "end": 29
+            },
+            {
+                "name": "wait_for_death",
+                "start": 31,
+                "end": 73
+            },
+            {
+                "name": "ensure_death",
+                "start": 76,
+                "end": 106
+            },
+            {
+                "name": "close_fds",
+                "start": 110,
+                "end": 128
+            },
+            {
+                "name": "open_devnull",
+                "start": 130,
+                "end": 138
+            },
+            {
+                "name": "create_child",
+                "start": 140,
+                "end": 281
+            }
+        ],
+        "src/console_switch.c": [
+            {
+                "name": "release_vt",
+                "start": 40,
+                "end": 44
+            },
+            {
+                "name": "acquire_vt",
+                "start": 48,
+                "end": 52
+            },
+            {
+                "name": "lock_console_switch",
+                "start": 62,
+                "end": 113
+            },
+            {
+                "name": "unlock_console_switch",
+                "start": 116,
+                "end": 129
+            }
+        ],
+        "src/prompt.c": [
+            {
+                "name": "prompt",
+                "start": 59,
+                "end": 153
+            },
+            {
+                "name": "prompt_echo_off",
+                "start": 156,
+                "end": 176
+            },
+            {
+                "name": "read_character",
+                "start": 180,
+                "end": 209
+            },
+            {
+                "name": "wait_for_character",
+                "start": 214,
+                "end": 240
+            }
+        ],
+        "src/plugin.c": [
+            {
+                "name": "new_plugin",
+                "start": 24,
+                "end": 59
+            },
+            {
+                "name": "destroy_plugin",
+                "start": 62,
+                "end": 77
+            },
+            {
+                "name": "call_hook",
+                "start": 79,
+                "end": 82
+            }
+        ],
+        "src/auth-pam.c": [
+            {
+                "name": "conversation",
+                "start": 55,
+                "end": 109
+            },
+            {
+                "name": "auth",
+                "start": 111,
+                "end": 162
+            }
+        ],
+        "src/module.c": [
+            {
+                "name": "init_module",
+                "start": 62,
+                "end": 125
+            },
+            {
+                "name": "destroy_module",
+                "start": 127,
+                "end": 135
+            },
+            {
+                "name": "call_module_hook",
+                "start": 137,
+                "end": 151
+            }
+        ],
+        "src/auth-shadow.c": [
+            {
+                "name": "auth",
+                "start": 35,
+                "end": 79
+            }
+        ],
+        "src/plugins.c": [
+            {
+                "name": "load_plugin",
+                "start": 74,
+                "end": 77
+            },
+            {
+                "name": "resolve_dependencies",
+                "start": 79,
+                "end": 82
+            },
+            {
+                "name": "unload_plugins",
+                "start": 84,
+                "end": 88
+            },
+            {
+                "name": "plugin_hook",
+                "start": 90,
+                "end": 98
+            },
+            {
+                "name": "get_plugin",
+                "start": 104,
+                "end": 113
+            },
+            {
+                "name": "__load_plugin",
+                "start": 116,
+                "end": 145
+            },
+            {
+                "name": "__resolve_depedencies",
+                "start": 148,
+                "end": 252
+            },
+            {
+                "name": "sort_plugins",
+                "start": 258,
+                "end": 300
+            },
+            {
+                "name": "append_edge",
+                "start": 302,
+                "end": 318
+            },
+            {
+                "name": "get_edges",
+                "start": 322,
+                "end": 355
+            },
+            {
+                "name": "handle_vlock_start",
+                "start": 364,
+                "end": 383
+            },
+            {
+                "name": "handle_vlock_end",
+                "start": 386,
+                "end": 392
+            },
+            {
+                "name": "handle_vlock_save",
+                "start": 397,
+                "end": 410
+            },
+            {
+                "name": "handle_vlock_save_abort",
+                "start": 415,
+                "end": 426
+            }
+        ],
+        "src/tsort.c": [
+            {
+                "name": "get_zeros",
+                "start": 22,
+                "end": 35
+            },
+            {
+                "name": "is_zero",
+                "start": 38,
+                "end": 48
+            },
+            {
+                "name": "tsort",
+                "start": 61,
+                "end": 127
+            }
+        ]
+    }
+}

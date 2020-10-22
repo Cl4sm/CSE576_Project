@@ -1,0 +1,648 @@
+{
+    "gpsk31-0.5": {
+        "src/spectrum.C": [
+            {
+                "name": "spectrum_setup",
+                "start": 86,
+                "end": 157
+            },
+            {
+                "name": "fft_setup",
+                "start": 164,
+                "end": 191
+            },
+            {
+                "name": "spectrum_new_fc",
+                "start": 198,
+                "end": 203
+            },
+            {
+                "name": "spectrum_updateFFT",
+                "start": 205,
+                "end": 212
+            },
+            {
+                "name": "spectrum_calc_power",
+                "start": 219,
+                "end": 230
+            },
+            {
+                "name": "spectrum_draw_display",
+                "start": 236,
+                "end": 351
+            },
+            {
+                "name": "spectrum_offset",
+                "start": 356,
+                "end": 362
+            },
+            {
+                "name": "getsamplecnt",
+                "start": 368,
+                "end": 371
+            },
+            {
+                "name": "color_pixel",
+                "start": 377,
+                "end": 433
+            }
+        ],
+        "src/support.h": [
+            {
+                "name": "create_pixmap",
+                "start": 30,
+                "end": 31
+            }
+        ],
+        "src/main.C": [
+            {
+                "name": "main_loop",
+                "start": 71,
+                "end": 229
+            },
+            {
+                "name": "parsecommandline",
+                "start": 231,
+                "end": 269
+            },
+            {
+                "name": "main",
+                "start": 271,
+                "end": 329
+            }
+        ],
+        "src/phasescope.C": [
+            {
+                "name": "phase_scope_init",
+                "start": 50,
+                "end": 91
+            },
+            {
+                "name": "draw_arc",
+                "start": 93,
+                "end": 115
+            },
+            {
+                "name": "draw_scope",
+                "start": 118,
+                "end": 151
+            }
+        ],
+        "src/log.C": [
+            {
+                "name": "log_msg_reset",
+                "start": 57,
+                "end": 60
+            },
+            {
+                "name": "log_msg_append",
+                "start": 62,
+                "end": 76
+            },
+            {
+                "name": "log_msg_send",
+                "start": 78,
+                "end": 102
+            },
+            {
+                "name": "qsodata_log",
+                "start": 104,
+                "end": 147
+            }
+        ],
+        "src/backtrace.C": [
+            {
+                "name": "show_stackframe",
+                "start": 29,
+                "end": 39
+            }
+        ],
+        "src/support.C": [
+            {
+                "name": "add_pixmap_directory",
+                "start": 37,
+                "end": 42
+            },
+            {
+                "name": "find_pixmap_file",
+                "start": 45,
+                "end": 62
+            },
+            {
+                "name": "create_pixmap",
+                "start": 65,
+                "end": 86
+            },
+            {
+                "name": "create_pixbuf",
+                "start": 89,
+                "end": 116
+            }
+        ],
+        "src/socketif.C": [
+            {
+                "name": "tcp_set_listen_port",
+                "start": 53,
+                "end": 57
+            },
+            {
+                "name": "tcp_listen",
+                "start": 60,
+                "end": 116
+            },
+            {
+                "name": "tcp_connect",
+                "start": 119,
+                "end": 150
+            },
+            {
+                "name": "tcp_read",
+                "start": 153,
+                "end": 184
+            },
+            {
+                "name": "tcp_send",
+                "start": 187,
+                "end": 197
+            }
+        ],
+        "src/menu.C": [
+            {
+                "name": "init_menu",
+                "start": 159,
+                "end": 176
+            },
+            {
+                "name": "about_dialog",
+                "start": 178,
+                "end": 199
+            },
+            {
+                "name": "display_file",
+                "start": 201,
+                "end": 255
+            },
+            {
+                "name": "changelog_dialog",
+                "start": 257,
+                "end": 260
+            },
+            {
+                "name": "help_dialog",
+                "start": 262,
+                "end": 265
+            },
+            {
+                "name": "exit_destroy",
+                "start": 267,
+                "end": 270
+            },
+            {
+                "name": "real_exit",
+                "start": 272,
+                "end": 296
+            },
+            {
+                "name": "exit_dialog",
+                "start": 298,
+                "end": 324
+            },
+            {
+                "name": "warning_dialog",
+                "start": 326,
+                "end": 347
+            },
+            {
+                "name": "on_config_page_select",
+                "start": 349,
+                "end": 360
+            },
+            {
+                "name": "config_dialog",
+                "start": 362,
+                "end": 1002
+            },
+            {
+                "name": "check_menu",
+                "start": 1006,
+                "end": 1010
+            },
+            {
+                "name": "send_call",
+                "start": 1016,
+                "end": 1020
+            },
+            {
+                "name": "send_name",
+                "start": 1023,
+                "end": 1027
+            },
+            {
+                "name": "send_qth",
+                "start": 1029,
+                "end": 1033
+            },
+            {
+                "name": "send_rsts",
+                "start": 1035,
+                "end": 1039
+            },
+            {
+                "name": "send_rstr",
+                "start": 1041,
+                "end": 1045
+            },
+            {
+                "name": "send_frequency",
+                "start": 1047,
+                "end": 1051
+            },
+            {
+                "name": "send_mycall",
+                "start": 1053,
+                "end": 1057
+            },
+            {
+                "name": "send_myqth",
+                "start": 1059,
+                "end": 1063
+            },
+            {
+                "name": "send_myname",
+                "start": 1065,
+                "end": 1069
+            },
+            {
+                "name": "trx_get_mode_name",
+                "start": 1071,
+                "end": 1074
+            },
+            {
+                "name": "mode_qpsk_toggled",
+                "start": 1077,
+                "end": 1089
+            },
+            {
+                "name": "mode_afc_toggled",
+                "start": 1091,
+                "end": 1096
+            },
+            {
+                "name": "mode_net_toggled",
+                "start": 1098,
+                "end": 1103
+            },
+            {
+                "name": "mode_cwid_toggled",
+                "start": 1105,
+                "end": 1111
+            }
+        ],
+        "src/file.C": [
+            {
+                "name": "file_send_dialog",
+                "start": 52,
+                "end": 75
+            },
+            {
+                "name": "file_send",
+                "start": 84,
+                "end": 116
+            },
+            {
+                "name": "save_log_dialog",
+                "start": 119,
+                "end": 147
+            },
+            {
+                "name": "logfile",
+                "start": 149,
+                "end": 168
+            },
+            {
+                "name": "open_logfile",
+                "start": 175,
+                "end": 182
+            },
+            {
+                "name": "put_logfile",
+                "start": 189,
+                "end": 194
+            },
+            {
+                "name": "close_logfile",
+                "start": 196,
+                "end": 211
+            }
+        ],
+        "src/callback.C": [
+            {
+                "name": "transmit_on",
+                "start": 53,
+                "end": 70
+            },
+            {
+                "name": "transmit_off",
+                "start": 73,
+                "end": 87
+            },
+            {
+                "name": "macro_processor",
+                "start": 92,
+                "end": 101
+            },
+            {
+                "name": "macro_processor2",
+                "start": 105,
+                "end": 193
+            },
+            {
+                "name": "check_autotx",
+                "start": 195,
+                "end": 200
+            },
+            {
+                "name": "key_input",
+                "start": 203,
+                "end": 285
+            },
+            {
+                "name": "key_released",
+                "start": 288,
+                "end": 297
+            },
+            {
+                "name": "txbuffer_changed",
+                "start": 299,
+                "end": 305
+            },
+            {
+                "name": "rx_freq_changed",
+                "start": 307,
+                "end": 313
+            },
+            {
+                "name": "tx_freq_changed",
+                "start": 315,
+                "end": 321
+            },
+            {
+                "name": "afc_toggled",
+                "start": 323,
+                "end": 334
+            },
+            {
+                "name": "net_toggled",
+                "start": 336,
+                "end": 343
+            },
+            {
+                "name": "qpsk_toggled",
+                "start": 345,
+                "end": 363
+            },
+            {
+                "name": "cwid_toggled",
+                "start": 365,
+                "end": 371
+            },
+            {
+                "name": "tx_clear_pressed",
+                "start": 373,
+                "end": 382
+            },
+            {
+                "name": "tx_button_pressed",
+                "start": 384,
+                "end": 388
+            },
+            {
+                "name": "rx_button_pressed",
+                "start": 390,
+                "end": 394
+            },
+            {
+                "name": "dcd_level_changed",
+                "start": 396,
+                "end": 402
+            }
+        ],
+        "src/call_dialog.C": [
+            {
+                "name": "call_dialog_key_input",
+                "start": 52,
+                "end": 106
+            },
+            {
+                "name": "call_dialog_key_released",
+                "start": 111,
+                "end": 119
+            },
+            {
+                "name": "entry_changed",
+                "start": 122,
+                "end": 126
+            },
+            {
+                "name": "init_call_dialog",
+                "start": 128,
+                "end": 309
+            },
+            {
+                "name": "log_values",
+                "start": 311,
+                "end": 325
+            },
+            {
+                "name": "clear_values",
+                "start": 327,
+                "end": 342
+            },
+            {
+                "name": "set_values",
+                "start": 345,
+                "end": 373
+            },
+            {
+                "name": "toggle_call_dialog",
+                "start": 375,
+                "end": 392
+            }
+        ],
+        "src/main_screen.C": [
+            {
+                "name": "configure_event_phase_scope",
+                "start": 59,
+                "end": 73
+            },
+            {
+                "name": "expose_event_phase_scope",
+                "start": 76,
+                "end": 86
+            },
+            {
+                "name": "configure_event_spectrum",
+                "start": 90,
+                "end": 103
+            },
+            {
+                "name": "expose_event_spectrum",
+                "start": 106,
+                "end": 125
+            },
+            {
+                "name": "setup_screen",
+                "start": 131,
+                "end": 524
+            }
+        ],
+        "src/text.C": [
+            {
+                "name": "put_rx_window",
+                "start": 39,
+                "end": 71
+            },
+            {
+                "name": "put_tx_window",
+                "start": 77,
+                "end": 93
+            }
+        ],
+        "src/misc.C": [
+            {
+                "name": "spectrum_motion_event",
+                "start": 56,
+                "end": 98
+            },
+            {
+                "name": "display_time",
+                "start": 100,
+                "end": 108
+            },
+            {
+                "name": "get_time_string",
+                "start": 116,
+                "end": 130
+            },
+            {
+                "name": "read_config",
+                "start": 136,
+                "end": 160
+            },
+            {
+                "name": "set_config",
+                "start": 166,
+                "end": 204
+            },
+            {
+                "name": "set_button",
+                "start": 210,
+                "end": 223
+            }
+        ],
+        "src/cfg.C": [
+            {
+                "name": "config_create",
+                "start": 35,
+                "end": 106
+            },
+            {
+                "name": "config_load_from_keyfile",
+                "start": 118,
+                "end": 338
+            },
+            {
+                "name": "loadpreferences",
+                "start": 343,
+                "end": 354
+            },
+            {
+                "name": "savepreferences",
+                "start": 359,
+                "end": 441
+            }
+        ],
+        "src/server-main.C": [
+            {
+                "name": "init_buffer",
+                "start": 154,
+                "end": 165
+            },
+            {
+                "name": "write_buffer",
+                "start": 168,
+                "end": 193
+            },
+            {
+                "name": "read_buffer",
+                "start": 196,
+                "end": 222
+            },
+            {
+                "name": "init_audio",
+                "start": 229,
+                "end": 444
+            },
+            {
+                "name": "init_ptt",
+                "start": 450,
+                "end": 459
+            },
+            {
+                "name": "ctl_ptt",
+                "start": 462,
+                "end": 472
+            },
+            {
+                "name": "master_handler",
+                "start": 488,
+                "end": 659
+            },
+            {
+                "name": "server_main",
+                "start": 709,
+                "end": 780
+            },
+            {
+                "name": "commWaitUpdate",
+                "start": 783,
+                "end": 786
+            },
+            {
+                "name": "commGetData",
+                "start": 789,
+                "end": 819
+            },
+            {
+                "name": "commPutData",
+                "start": 822,
+                "end": 832
+            },
+            {
+                "name": "txControl",
+                "start": 835,
+                "end": 916
+            },
+            {
+                "name": "rxControl",
+                "start": 919,
+                "end": 1022
+            },
+            {
+                "name": "fftControl",
+                "start": 1025,
+                "end": 1047
+            },
+            {
+                "name": "commControl",
+                "start": 1050,
+                "end": 1077
+            },
+            {
+                "name": "commGetInfo",
+                "start": 1080,
+                "end": 1150
+            }
+        ]
+    }
+}

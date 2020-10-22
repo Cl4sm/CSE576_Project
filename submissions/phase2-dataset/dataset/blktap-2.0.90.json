@@ -1,0 +1,7034 @@
+{
+    "blktap-2.0.90": {
+        "lvm/lvm-util.c": [
+            {
+                "name": "lvm_read_line",
+                "start": 49,
+                "end": 54
+            },
+            {
+                "name": "lvm_next_line",
+                "start": 56,
+                "end": 60
+            },
+            {
+                "name": "lvm_copy_name",
+                "start": 62,
+                "end": 70
+            },
+            {
+                "name": "lvm_parse_pv",
+                "start": 72,
+                "end": 108
+            },
+            {
+                "name": "lvm_open_vg",
+                "start": 110,
+                "end": 185
+            },
+            {
+                "name": "lvm_parse_lv_devices",
+                "start": 187,
+                "end": 216
+            },
+            {
+                "name": "lvm_scan_lvs",
+                "start": 218,
+                "end": 299
+            },
+            {
+                "name": "lvm_free_vg",
+                "start": 301,
+                "end": 307
+            },
+            {
+                "name": "lvm_scan_vg",
+                "start": 309,
+                "end": 327
+            }
+        ],
+        "drivers/tapdisk-disktype.c": [
+            {
+                "name": "tapdisk_disktype_find",
+                "start": 196,
+                "end": 217
+            },
+            {
+                "name": "tapdisk_disktype_parse_params",
+                "start": 219,
+                "end": 243
+            }
+        ],
+        "drivers/tapdisk-stats.h": [
+            {
+                "name": "tapdisk_stats_init",
+                "start": 49,
+                "end": 57
+            },
+            {
+                "name": "tapdisk_stats_length",
+                "start": 59,
+                "end": 63
+            }
+        ],
+        "drivers/tapdisk.h": [
+            {
+                "name": "td_sector_count_add",
+                "start": 202,
+                "end": 209
+            }
+        ],
+        "drivers/scheduler.h": [
+            {
+                "name": "scheduler_register_event",
+                "start": 58,
+                "end": 60
+            }
+        ],
+        "drivers/tapdisk-syslog.h": [
+            {
+                "name": "tapdisk_syslog_open",
+                "start": 72,
+                "end": 73
+            }
+        ],
+        "drivers/tapdisk-utils.c": [
+            {
+                "name": "tapdisk_syslog_facility_by_name",
+                "start": 58,
+                "end": 73
+            },
+            {
+                "name": "tapdisk_syslog_facility",
+                "start": 75,
+                "end": 92
+            },
+            {
+                "name": "tapdisk_syslog_ident",
+                "start": 94,
+                "end": 110
+            },
+            {
+                "name": "tapdisk_syslog_strftime",
+                "start": 112,
+                "end": 129
+            },
+            {
+                "name": "tapdisk_syslog_strftv",
+                "start": 131,
+                "end": 141
+            },
+            {
+                "name": "tapdisk_set_resource_limits",
+                "start": 143,
+                "end": 172
+            },
+            {
+                "name": "tapdisk_namedup",
+                "start": 174,
+                "end": 187
+            },
+            {
+                "name": "tapdisk_get_image_size",
+                "start": 190,
+                "end": 242
+            },
+            {
+                "name": "tapdisk_linux_version",
+                "start": 246,
+                "end": 265
+            }
+        ],
+        "drivers/tapdisk-queue.h": [
+            {
+                "name": "tapdisk_prep_tiocb",
+                "start": 98,
+                "end": 99
+            }
+        ],
+        "drivers/tapdisk-vbd.h": [
+            {
+                "name": "tapdisk_vbd_move_request",
+                "start": 109,
+                "end": 116
+            },
+            {
+                "name": "tapdisk_vbd_add_image",
+                "start": 118,
+                "end": 122
+            },
+            {
+                "name": "tapdisk_vbd_is_last_image",
+                "start": 124,
+                "end": 128
+            },
+            {
+                "name": "tapdisk_vbd_first_image",
+                "start": 130,
+                "end": 137
+            },
+            {
+                "name": "tapdisk_vbd_last_image",
+                "start": 139,
+                "end": 146
+            },
+            {
+                "name": "tapdisk_vbd_next_image",
+                "start": 148,
+                "end": 152
+            }
+        ],
+        "drivers/tapdisk-interface.h": [
+            {
+                "name": "td_prep_read",
+                "start": 49,
+                "end": 50
+            },
+            {
+                "name": "td_prep_write",
+                "start": 51,
+                "end": 52
+            }
+        ],
+        "drivers/block-cache.c": [
+            {
+                "name": "radix_tree_calculate_size",
+                "start": 142,
+                "end": 147
+            },
+            {
+                "name": "radix_tree_calculate_height",
+                "start": 149,
+                "end": 161
+            },
+            {
+                "name": "radix_tree_index",
+                "start": 163,
+                "end": 168
+            },
+            {
+                "name": "radix_tree_node_contains_leaves",
+                "start": 170,
+                "end": 174
+            },
+            {
+                "name": "radix_tree_node_is_root",
+                "start": 176,
+                "end": 180
+            },
+            {
+                "name": "radix_tree_size",
+                "start": 182,
+                "end": 186
+            },
+            {
+                "name": "radix_tree_clear_link",
+                "start": 188,
+                "end": 193
+            },
+            {
+                "name": "radix_tree_allocate_node",
+                "start": 195,
+                "end": 208
+            },
+            {
+                "name": "radix_tree_allocate_child_node",
+                "start": 210,
+                "end": 214
+            },
+            {
+                "name": "radix_tree_free_node",
+                "start": 216,
+                "end": 224
+            },
+            {
+                "name": "radix_tree_allocate_page",
+                "start": 226,
+                "end": 242
+            },
+            {
+                "name": "radix_tree_free_page",
+                "start": 244,
+                "end": 257
+            },
+            {
+                "name": "radix_tree_remove_page",
+                "start": 263,
+                "end": 275
+            },
+            {
+                "name": "radix_tree_insert_leaf",
+                "start": 277,
+                "end": 296
+            },
+            {
+                "name": "radix_tree_find_leaf",
+                "start": 298,
+                "end": 322
+            },
+            {
+                "name": "radix_tree_add_leaf",
+                "start": 324,
+                "end": 356
+            },
+            {
+                "name": "radix_tree_add_leaves",
+                "start": 358,
+                "end": 381
+            },
+            {
+                "name": "radix_tree_delete_branch",
+                "start": 383,
+                "end": 404
+            },
+            {
+                "name": "radix_tree_destroy",
+                "start": 406,
+                "end": 411
+            },
+            {
+                "name": "radix_tree_prune_branch",
+                "start": 416,
+                "end": 456
+            },
+            {
+                "name": "radix_tree_prune",
+                "start": 461,
+                "end": 477
+            },
+            {
+                "name": "radix_tree_initialize",
+                "start": 479,
+                "end": 488
+            },
+            {
+                "name": "radix_tree_free",
+                "start": 490,
+                "end": 494
+            },
+            {
+                "name": "block_cache_prune_event",
+                "start": 496,
+                "end": 506
+            },
+            {
+                "name": "block_cache_get_request",
+                "start": 508,
+                "end": 515
+            },
+            {
+                "name": "block_cache_put_request",
+                "start": 517,
+                "end": 522
+            },
+            {
+                "name": "block_cache_open",
+                "start": 524,
+                "end": 575
+            },
+            {
+                "name": "block_cache_close",
+                "start": 577,
+                "end": 593
+            },
+            {
+                "name": "block_cache_hash",
+                "start": 595,
+                "end": 611
+            },
+            {
+                "name": "block_cache_hit",
+                "start": 613,
+                "end": 630
+            },
+            {
+                "name": "block_cache_populate_cache",
+                "start": 632,
+                "end": 669
+            },
+            {
+                "name": "block_cache_miss",
+                "start": 671,
+                "end": 712
+            },
+            {
+                "name": "block_cache_queue_read",
+                "start": 714,
+                "end": 737
+            },
+            {
+                "name": "block_cache_queue_write",
+                "start": 739,
+                "end": 743
+            },
+            {
+                "name": "block_cache_get_parent_id",
+                "start": 745,
+                "end": 749
+            },
+            {
+                "name": "block_cache_validate_parent",
+                "start": 751,
+                "end": 762
+            },
+            {
+                "name": "block_cache_debug",
+                "start": 764,
+                "end": 777
+            }
+        ],
+        "drivers/tapdisk-vbd.c": [
+            {
+                "name": "tapdisk_vbd_mark_progress",
+                "start": 84,
+                "end": 88
+            },
+            {
+                "name": "tapdisk_vbd_create",
+                "start": 90,
+                "end": 112
+            },
+            {
+                "name": "tapdisk_vbd_initialize",
+                "start": 114,
+                "end": 130
+            },
+            {
+                "name": "tapdisk_vbd_validate_chain",
+                "start": 132,
+                "end": 136
+            },
+            {
+                "name": "tapdisk_vbd_close_vdi",
+                "start": 138,
+                "end": 155
+            },
+            {
+                "name": "tapdisk_vbd_add_block_cache",
+                "start": 157,
+                "end": 216
+            },
+            {
+                "name": "tapdisk_vbd_add_local_cache",
+                "start": 218,
+                "end": 267
+            },
+            {
+                "name": "tapdisk_vbd_add_secondary",
+                "start": 269,
+                "end": 319
+            },
+            {
+                "name": "signal_enospc",
+                "start": 321,
+                "end": 339
+            },
+            {
+                "name": "tapdisk_vbd_add_dirty_log",
+                "start": 383,
+                "end": 422
+            },
+            {
+                "name": "tapdisk_vbd_open_vdi",
+                "start": 424,
+                "end": 500
+            },
+            {
+                "name": "tapdisk_vbd_detach",
+                "start": 502,
+                "end": 511
+            },
+            {
+                "name": "tapdisk_vbd_attach",
+                "start": 513,
+                "end": 521
+            },
+            {
+                "name": "tapdisk_vbd_open",
+                "start": 523,
+                "end": 545
+            },
+            {
+                "name": "tapdisk_vbd_queue_count",
+                "start": 547,
+                "end": 575
+            },
+            {
+                "name": "tapdisk_vbd_shutdown",
+                "start": 577,
+                "end": 604
+            },
+            {
+                "name": "tapdisk_vbd_close",
+                "start": 606,
+                "end": 631
+            },
+            {
+                "name": "tapdisk_vbd_debug",
+                "start": 637,
+                "end": 656
+            },
+            {
+                "name": "tapdisk_vbd_drop_log",
+                "start": 658,
+                "end": 667
+            },
+            {
+                "name": "tapdisk_vbd_get_disk_info",
+                "start": 669,
+                "end": 677
+            },
+            {
+                "name": "tapdisk_vbd_queue_ready",
+                "start": 679,
+                "end": 686
+            },
+            {
+                "name": "tapdisk_vbd_retry_needed",
+                "start": 688,
+                "end": 693
+            },
+            {
+                "name": "tapdisk_vbd_lock",
+                "start": 695,
+                "end": 699
+            },
+            {
+                "name": "tapdisk_vbd_quiesce_queue",
+                "start": 701,
+                "end": 712
+            },
+            {
+                "name": "tapdisk_vbd_start_queue",
+                "start": 714,
+                "end": 721
+            },
+            {
+                "name": "tapdisk_vbd_kill_queue",
+                "start": 723,
+                "end": 729
+            },
+            {
+                "name": "tapdisk_vbd_pause",
+                "start": 755,
+                "end": 776
+            },
+            {
+                "name": "tapdisk_vbd_resume",
+                "start": 778,
+                "end": 811
+            },
+            {
+                "name": "tapdisk_vbd_request_ttl",
+                "start": 813,
+                "end": 820
+            },
+            {
+                "name": "__tapdisk_vbd_request_timeout",
+                "start": 822,
+                "end": 835
+            },
+            {
+                "name": "tapdisk_vbd_request_timeout",
+                "start": 837,
+                "end": 843
+            },
+            {
+                "name": "tapdisk_vbd_check_queue_state",
+                "start": 845,
+                "end": 860
+            },
+            {
+                "name": "tapdisk_vbd_check_state",
+                "start": 862,
+                "end": 875
+            },
+            {
+                "name": "tapdisk_vbd_check_progress",
+                "start": 877,
+                "end": 898
+            },
+            {
+                "name": "tapdisk_vbd_check_queue",
+                "start": 904,
+                "end": 914
+            },
+            {
+                "name": "tapdisk_vbd_request_should_retry",
+                "start": 916,
+                "end": 935
+            },
+            {
+                "name": "tapdisk_vbd_complete_vbd_request",
+                "start": 937,
+                "end": 947
+            },
+            {
+                "name": "FIXME_maybe_count_enospc_redirect",
+                "start": 949,
+                "end": 957
+            },
+            {
+                "name": "__tapdisk_vbd_complete_td_request",
+                "start": 959,
+                "end": 995
+            },
+            {
+                "name": "__tapdisk_vbd_reissue_td_request",
+                "start": 997,
+                "end": 1052
+            },
+            {
+                "name": "tapdisk_vbd_forward_request",
+                "start": 1054,
+                "end": 1071
+            },
+            {
+                "name": "tapdisk_vbd_complete_td_request",
+                "start": 1073,
+                "end": 1112
+            },
+            {
+                "name": "queue_mirror_req",
+                "start": 1114,
+                "end": 1119
+            },
+            {
+                "name": "tapdisk_vbd_issue_request",
+                "start": 1121,
+                "end": 1212
+            },
+            {
+                "name": "tapdisk_vbd_request_completed",
+                "start": 1214,
+                "end": 1218
+            },
+            {
+                "name": "tapdisk_vbd_reissue_failed_requests",
+                "start": 1220,
+                "end": 1263
+            },
+            {
+                "name": "tapdisk_vbd_count_new_request",
+                "start": 1265,
+                "end": 1275
+            },
+            {
+                "name": "tapdisk_vbd_issue_new_requests",
+                "start": 1277,
+                "end": 1296
+            },
+            {
+                "name": "tapdisk_vbd_recheck_state",
+                "start": 1298,
+                "end": 1311
+            },
+            {
+                "name": "tapdisk_vbd_kill_requests",
+                "start": 1313,
+                "end": 1329
+            },
+            {
+                "name": "tapdisk_vbd_issue_requests",
+                "start": 1331,
+                "end": 1348
+            },
+            {
+                "name": "tapdisk_vbd_queue_request",
+                "start": 1350,
+                "end": 1360
+            },
+            {
+                "name": "tapdisk_vbd_kick",
+                "start": 1362,
+                "end": 1388
+            },
+            {
+                "name": "tapdisk_vbd_stats",
+                "start": 1390,
+                "end": 1419
+            }
+        ],
+        "drivers/tapdisk-blktap.c": [
+            {
+                "name": "tapdisk_blktap_alloc_request",
+                "start": 84,
+                "end": 93
+            },
+            {
+                "name": "tapdisk_blktap_free_request",
+                "start": 95,
+                "end": 100
+            },
+            {
+                "name": "tapdisk_blktap_reqs_free",
+                "start": 102,
+                "end": 114
+            },
+            {
+                "name": "tapdisk_blktap_reqs_init",
+                "start": 116,
+                "end": 144
+            },
+            {
+                "name": "tapdisk_blktap_kick",
+                "start": 146,
+                "end": 153
+            },
+            {
+                "name": "tapdisk_blktap_error_status",
+                "start": 155,
+                "end": 174
+            },
+            {
+                "name": "__tapdisk_blktap_push_response",
+                "start": 176,
+                "end": 187
+            },
+            {
+                "name": "tapdisk_blktap_fail_request",
+                "start": 189,
+                "end": 204
+            },
+            {
+                "name": "tapdisk_blktap_put_response",
+                "start": 206,
+                "end": 233
+            },
+            {
+                "name": "tapdisk_blktap_complete_request",
+                "start": 235,
+                "end": 244
+            },
+            {
+                "name": "__tapdisk_blktap_request_cb",
+                "start": 246,
+                "end": 254
+            },
+            {
+                "name": "tapdisk_blktap_vector_request",
+                "start": 256,
+                "end": 294
+            },
+            {
+                "name": "tapdisk_blktap_parse_request",
+                "start": 296,
+                "end": 337
+            },
+            {
+                "name": "tapdisk_blktap_get_requests",
+                "start": 339,
+                "end": 378
+            },
+            {
+                "name": "tapdisk_blktap_fd_event",
+                "start": 380,
+                "end": 387
+            },
+            {
+                "name": "tapdisk_blktap_remove_device",
+                "start": 389,
+                "end": 401
+            },
+            {
+                "name": "tapdisk_blktap_compat_create_device",
+                "start": 403,
+                "end": 425
+            },
+            {
+                "name": "tapdisk_blktap_create_device",
+                "start": 431,
+                "end": 462
+            },
+            {
+                "name": "tapdisk_blktap_unmap",
+                "start": 464,
+                "end": 471
+            },
+            {
+                "name": "tapdisk_blktap_map",
+                "start": 473,
+                "end": 504
+            },
+            {
+                "name": "__tapdisk_blktap_close",
+                "start": 506,
+                "end": 527
+            },
+            {
+                "name": "tapdisk_blktap_close",
+                "start": 529,
+                "end": 535
+            },
+            {
+                "name": "tapdisk_blktap_open",
+                "start": 537,
+                "end": 597
+            },
+            {
+                "name": "tapdisk_blktap_stats",
+                "start": 599,
+                "end": 613
+            }
+        ],
+        "drivers/tapdisk-stream.c": [
+            {
+                "name": "usage",
+                "start": 94,
+                "end": 100
+            },
+            {
+                "name": "tapdisk_stream_stop",
+                "start": 102,
+                "end": 106
+            },
+            {
+                "name": "tapdisk_stream_req_create",
+                "start": 108,
+                "end": 126
+            },
+            {
+                "name": "tapdisk_stream_req_destroy",
+                "start": 128,
+                "end": 136
+            },
+            {
+                "name": "tapdisk_stream_alloc_req",
+                "start": 138,
+                "end": 147
+            },
+            {
+                "name": "tapdisk_stream_free_req",
+                "start": 149,
+                "end": 155
+            },
+            {
+                "name": "tapdisk_stream_destroy_reqs",
+                "start": 157,
+                "end": 169
+            },
+            {
+                "name": "tapdisk_stream_create_reqs",
+                "start": 171,
+                "end": 193
+            },
+            {
+                "name": "tapdisk_stream_print_request",
+                "start": 195,
+                "end": 204
+            },
+            {
+                "name": "tapdisk_stream_write_data",
+                "start": 206,
+                "end": 220
+            },
+            {
+                "name": "tapdisk_stream_queue_completed",
+                "start": 222,
+                "end": 232
+            },
+            {
+                "name": "tapdisk_stream_complete_request",
+                "start": 234,
+                "end": 260
+            },
+            {
+                "name": "__tapdisk_stream_request_cb",
+                "start": 262,
+                "end": 270
+            },
+            {
+                "name": "tapdisk_stream_queue_request",
+                "start": 272,
+                "end": 302
+            },
+            {
+                "name": "tapdisk_stream_queue_requests",
+                "start": 304,
+                "end": 317
+            },
+            {
+                "name": "tapdisk_stream_open_image",
+                "start": 319,
+                "end": 350
+            },
+            {
+                "name": "tapdisk_stream_close_image",
+                "start": 352,
+                "end": 365
+            },
+            {
+                "name": "tapdisk_stream_set_position",
+                "start": 367,
+                "end": 394
+            },
+            {
+                "name": "__tapdisk_stream_event_cb",
+                "start": 396,
+                "end": 399
+            },
+            {
+                "name": "tapdisk_stream_open_fds",
+                "start": 401,
+                "end": 411
+            },
+            {
+                "name": "tapdisk_stream_close",
+                "start": 413,
+                "end": 424
+            },
+            {
+                "name": "tapdisk_stream_open",
+                "start": 426,
+                "end": 450
+            },
+            {
+                "name": "tapdisk_stream_run",
+                "start": 452,
+                "end": 458
+            },
+            {
+                "name": "main",
+                "start": 460,
+                "end": 510
+            }
+        ],
+        "drivers/block-valve.c": [
+            {
+                "name": "valve_alloc_request",
+                "start": 139,
+                "end": 148
+            },
+            {
+                "name": "valve_free_request",
+                "start": 150,
+                "end": 156
+            },
+            {
+                "name": "__valve_sock_event",
+                "start": 158,
+                "end": 166
+            },
+            {
+                "name": "valve_set_done_pending",
+                "start": 168,
+                "end": 173
+            },
+            {
+                "name": "valve_clear_done_pending",
+                "start": 175,
+                "end": 180
+            },
+            {
+                "name": "__valve_sched_event",
+                "start": 182,
+                "end": 190
+            },
+            {
+                "name": "valve_sock_close",
+                "start": 192,
+                "end": 209
+            },
+            {
+                "name": "valve_sock_open",
+                "start": 211,
+                "end": 274
+            },
+            {
+                "name": "valve_sock_send",
+                "start": 276,
+                "end": 288
+            },
+            {
+                "name": "valve_sock_recv",
+                "start": 290,
+                "end": 300
+            },
+            {
+                "name": "__valve_retry_timeout",
+                "start": 302,
+                "end": 311
+            },
+            {
+                "name": "valve_schedule_retry",
+                "start": 313,
+                "end": 327
+            },
+            {
+                "name": "valve_conn_open",
+                "start": 329,
+                "end": 341
+            },
+            {
+                "name": "valve_conn_close",
+                "start": 343,
+                "end": 358
+            },
+            {
+                "name": "valve_conn_reset",
+                "start": 360,
+                "end": 365
+            },
+            {
+                "name": "valve_conn_receive",
+                "start": 367,
+                "end": 412
+            },
+            {
+                "name": "valve_conn_request",
+                "start": 414,
+                "end": 434
+            },
+            {
+                "name": "valve_expend_request",
+                "start": 436,
+                "end": 451
+            },
+            {
+                "name": "__valve_complete_treq",
+                "start": 453,
+                "end": 469
+            },
+            {
+                "name": "valve_forward_stored_requests",
+                "start": 471,
+                "end": 493
+            },
+            {
+                "name": "valve_store_request",
+                "start": 495,
+                "end": 513
+            },
+            {
+                "name": "valve_kill",
+                "start": 515,
+                "end": 520
+            },
+            {
+                "name": "valve_init",
+                "start": 522,
+                "end": 548
+            },
+            {
+                "name": "td_valve_close",
+                "start": 550,
+                "end": 566
+            },
+            {
+                "name": "td_valve_open",
+                "start": 568,
+                "end": 590
+            },
+            {
+                "name": "td_valve_queue_request",
+                "start": 592,
+                "end": 629
+            },
+            {
+                "name": "td_valve_get_parent_id",
+                "start": 631,
+                "end": 635
+            },
+            {
+                "name": "td_valve_validate_parent",
+                "start": 637,
+                "end": 642
+            },
+            {
+                "name": "td_valve_stats",
+                "start": 644,
+                "end": 683
+            }
+        ],
+        "drivers/block-ram.c": [
+            {
+                "name": "get_image_info",
+                "start": 59,
+                "end": 121
+            },
+            {
+                "name": "tdram_open",
+                "start": 124,
+                "end": 211
+            },
+            {
+                "name": "tdram_queue_read",
+                "start": 213,
+                "end": 221
+            },
+            {
+                "name": "tdram_queue_write",
+                "start": 223,
+                "end": 233
+            },
+            {
+                "name": "tdram_close",
+                "start": 235,
+                "end": 240
+            },
+            {
+                "name": "tdram_get_parent_id",
+                "start": 242,
+                "end": 245
+            },
+            {
+                "name": "tdram_validate_parent",
+                "start": 247,
+                "end": 251
+            }
+        ],
+        "drivers/lock.c": [
+            {
+                "name": "create_lockfn",
+                "start": 69,
+                "end": 84
+            },
+            {
+                "name": "create_lockfn_link",
+                "start": 86,
+                "end": 111
+            },
+            {
+                "name": "NFSnormalizedStatTime",
+                "start": 113,
+                "end": 149
+            },
+            {
+                "name": "writer_eval",
+                "start": 151,
+                "end": 154
+            },
+            {
+                "name": "reader_eval",
+                "start": 156,
+                "end": 159
+            },
+            {
+                "name": "lock_holder",
+                "start": 161,
+                "end": 270
+            },
+            {
+                "name": "lock",
+                "start": 272,
+                "end": 625
+            },
+            {
+                "name": "unlock",
+                "start": 628,
+                "end": 654
+            },
+            {
+                "name": "lock_delta",
+                "start": 656,
+                "end": 757
+            }
+        ],
+        "drivers/td-rated.c": [
+            {
+                "name": "rlb_vlog_vfprintf",
+                "start": 50,
+                "end": 54
+            },
+            {
+                "name": "rlb_log",
+                "start": 59,
+                "end": 64
+            },
+            {
+                "name": "rlb_create_valve",
+                "start": 177,
+                "end": 178
+            },
+            {
+                "name": "rlb_strtol",
+                "start": 188,
+                "end": 244
+            },
+            {
+                "name": "vmprintf",
+                "start": 246,
+                "end": 257
+            },
+            {
+                "name": "mprintf",
+                "start": 260,
+                "end": 271
+            },
+            {
+                "name": "sysctl_vscanf",
+                "start": 273,
+                "end": 301
+            },
+            {
+                "name": "sysctl_scanf",
+                "start": 303,
+                "end": 314
+            },
+            {
+                "name": "sysctl_strtoul",
+                "start": 316,
+                "end": 329
+            },
+            {
+                "name": "rlb_tv_usec",
+                "start": 332,
+                "end": 342
+            },
+            {
+                "name": "rlb_usec_since",
+                "start": 344,
+                "end": 352
+            },
+            {
+                "name": "rlb_argv_shift",
+                "start": 354,
+                "end": 365
+            },
+            {
+                "name": "rlb_sock_close",
+                "start": 371,
+                "end": 383
+            },
+            {
+                "name": "rlb_sock_open",
+                "start": 385,
+                "end": 431
+            },
+            {
+                "name": "rlb_sock_send",
+                "start": 433,
+                "end": 446
+            },
+            {
+                "name": "rlb_sock_recv",
+                "start": 448,
+                "end": 459
+            },
+            {
+                "name": "rlb_conn_alloc",
+                "start": 461,
+                "end": 470
+            },
+            {
+                "name": "rlb_conn_free",
+                "start": 472,
+                "end": 478
+            },
+            {
+                "name": "rlb_conn_id",
+                "start": 480,
+                "end": 484
+            },
+            {
+                "name": "rlb_conn_info",
+                "start": 486,
+                "end": 504
+            },
+            {
+                "name": "rlb_conn_infos",
+                "start": 506,
+                "end": 513
+            },
+            {
+                "name": "rlb_conn_close",
+                "start": 515,
+                "end": 532
+            },
+            {
+                "name": "rlb_conn_receive",
+                "start": 534,
+                "end": 598
+            },
+            {
+                "name": "rlb_conn_respond",
+                "start": 600,
+                "end": 630
+            },
+            {
+                "name": "rlb_accept_conn",
+                "start": 632,
+                "end": 662
+            },
+            {
+                "name": "rlb_pending",
+                "start": 664,
+                "end": 674
+            },
+            {
+                "name": "rlb_token_settimeo",
+                "start": 689,
+                "end": 713
+            },
+            {
+                "name": "rlb_token_refill",
+                "start": 715,
+                "end": 741
+            },
+            {
+                "name": "rlb_token_dispatch",
+                "start": 743,
+                "end": 759
+            },
+            {
+                "name": "rlb_token_reset",
+                "start": 761,
+                "end": 767
+            },
+            {
+                "name": "rlb_token_destroy",
+                "start": 769,
+                "end": 776
+            },
+            {
+                "name": "rlb_token_create",
+                "start": 778,
+                "end": 850
+            },
+            {
+                "name": "rlb_token_usage",
+                "start": 852,
+                "end": 859
+            },
+            {
+                "name": "rlb_token_info",
+                "start": 861,
+                "end": 868
+            },
+            {
+                "name": "rlb_meminfo_info",
+                "start": 906,
+                "end": 918
+            },
+            {
+                "name": "rlb_meminfo_close",
+                "start": 920,
+                "end": 927
+            },
+            {
+                "name": "rlb_meminfo_open",
+                "start": 929,
+                "end": 950
+            },
+            {
+                "name": "__test_bit",
+                "start": 952,
+                "end": 955
+            },
+            {
+                "name": "__clear_bit",
+                "start": 957,
+                "end": 960
+            },
+            {
+                "name": "rlb_meminfo_scan",
+                "start": 974,
+                "end": 1026
+            },
+            {
+                "name": "rlb_meminfo_usage",
+                "start": 1028,
+                "end": 1042
+            },
+            {
+                "name": "rlb_meminfo_destroy",
+                "start": 1044,
+                "end": 1057
+            },
+            {
+                "name": "rlb_meminfo_create",
+                "start": 1059,
+                "end": 1173
+            },
+            {
+                "name": "rlb_meminfo_settimeo",
+                "start": 1175,
+                "end": 1190
+            },
+            {
+                "name": "rlb_meminfo_timeout",
+                "start": 1192,
+                "end": 1201
+            },
+            {
+                "name": "rlb_meminfo_test_high",
+                "start": 1203,
+                "end": 1225
+            },
+            {
+                "name": "rlb_meminfo_dispatch_low",
+                "start": 1227,
+                "end": 1247
+            },
+            {
+                "name": "rlb_meminfo_dispatch",
+                "start": 1249,
+                "end": 1292
+            },
+            {
+                "name": "rlb_info",
+                "start": 1309,
+                "end": 1315
+            },
+            {
+                "name": "rlb_sigmark",
+                "start": 1320,
+                "end": 1325
+            },
+            {
+                "name": "rlb_siginit",
+                "start": 1327,
+                "end": 1361
+            },
+            {
+                "name": "rlb_main_signaled",
+                "start": 1363,
+                "end": 1374
+            },
+            {
+                "name": "rlb_find_valve",
+                "start": 1377,
+                "end": 1402
+            },
+            {
+                "name": "rlb_main_iterate",
+                "start": 1404,
+                "end": 1484
+            },
+            {
+                "name": "rlb_main_run",
+                "start": 1486,
+                "end": 1507
+            },
+            {
+                "name": "rlb_shutdown",
+                "start": 1509,
+                "end": 1518
+            },
+            {
+                "name": "rlb_usage",
+                "start": 1520,
+                "end": 1533
+            },
+            {
+                "name": "rlb_destroy",
+                "start": 1535,
+                "end": 1549
+            },
+            {
+                "name": "rlb_create",
+                "start": 1551,
+                "end": 1582
+            },
+            {
+                "name": "rlb_create_valve",
+                "start": 1584,
+                "end": 1604
+            },
+            {
+                "name": "rlb_openlog",
+                "start": 1606,
+                "end": 1617
+            },
+            {
+                "name": "main",
+                "start": 1619,
+                "end": 1722
+            }
+        ],
+        "drivers/block-llcache.c": [
+            {
+                "name": "ll_write_error",
+                "start": 50,
+                "end": 56
+            },
+            {
+                "name": "ll_log_switch",
+                "start": 58,
+                "end": 65
+            },
+            {
+                "name": "llpcache_alloc_request",
+                "start": 148,
+                "end": 157
+            },
+            {
+                "name": "llpcache_free_request",
+                "start": 159,
+                "end": 164
+            },
+            {
+                "name": "__llpcache_write_cb",
+                "start": 166,
+                "end": 199
+            },
+            {
+                "name": "llpcache_requeue_treq",
+                "start": 213,
+                "end": 241
+            },
+            {
+                "name": "llpcache_fork_write",
+                "start": 243,
+                "end": 279
+            },
+            {
+                "name": "llpcache_forward_write",
+                "start": 281,
+                "end": 299
+            },
+            {
+                "name": "llpcache_queue_write",
+                "start": 301,
+                "end": 310
+            },
+            {
+                "name": "llpcache_queue_read",
+                "start": 312,
+                "end": 326
+            },
+            {
+                "name": "llpcache_close",
+                "start": 328,
+                "end": 339
+            },
+            {
+                "name": "llpcache_open",
+                "start": 341,
+                "end": 363
+            },
+            {
+                "name": "llcache_get_parent_id",
+                "start": 365,
+                "end": 376
+            },
+            {
+                "name": "llcache_validate_parent",
+                "start": 378,
+                "end": 383
+            },
+            {
+                "name": "llecache_alloc_request",
+                "start": 462,
+                "end": 471
+            },
+            {
+                "name": "llecache_free_request",
+                "start": 473,
+                "end": 478
+            },
+            {
+                "name": "llecache_close",
+                "start": 480,
+                "end": 491
+            },
+            {
+                "name": "llecache_open",
+                "start": 493,
+                "end": 515
+            },
+            {
+                "name": "__llecache_write_cb",
+                "start": 517,
+                "end": 542
+            },
+            {
+                "name": "llecache_forward_write",
+                "start": 544,
+                "end": 567
+            },
+            {
+                "name": "llecache_queue_write",
+                "start": 569,
+                "end": 582
+            },
+            {
+                "name": "llecache_queue_read",
+                "start": 584,
+                "end": 599
+            }
+        ],
+        "drivers/tapdisk-driver.c": [
+            {
+                "name": "tapdisk_driver_log_flush",
+                "start": 41,
+                "end": 52
+            },
+            {
+                "name": "tapdisk_driver_log_pass",
+                "start": 54,
+                "end": 71
+            },
+            {
+                "name": "tapdisk_driver_allocate",
+                "start": 73,
+                "end": 113
+            },
+            {
+                "name": "tapdisk_driver_free",
+                "start": 115,
+                "end": 133
+            },
+            {
+                "name": "tapdisk_driver_queue_tiocb",
+                "start": 135,
+                "end": 139
+            },
+            {
+                "name": "tapdisk_driver_debug",
+                "start": 141,
+                "end": 146
+            },
+            {
+                "name": "tapdisk_driver_stats",
+                "start": 148,
+                "end": 165
+            }
+        ],
+        "drivers/libaio-compat.h": [
+            {
+                "name": "__io_set_eventfd",
+                "start": 45,
+                "end": 51
+            },
+            {
+                "name": "tapdisk_sys_eventfd",
+                "start": 87,
+                "end": 90
+            }
+        ],
+        "drivers/tapdisk-queue.c": [
+            {
+                "name": "queue_tiocb",
+                "start": 64,
+                "end": 76
+            },
+            {
+                "name": "deferred_tiocbs",
+                "start": 78,
+                "end": 82
+            },
+            {
+                "name": "defer_tiocb",
+                "start": 84,
+                "end": 96
+            },
+            {
+                "name": "queue_deferred_tiocb",
+                "start": 98,
+                "end": 113
+            },
+            {
+                "name": "queue_deferred_tiocbs",
+                "start": 115,
+                "end": 120
+            },
+            {
+                "name": "complete_tiocb",
+                "start": 125,
+                "end": 139
+            },
+            {
+                "name": "cancel_tiocbs",
+                "start": 141,
+                "end": 164
+            },
+            {
+                "name": "fail_tiocbs",
+                "start": 166,
+                "end": 178
+            },
+            {
+                "name": "tapdisk_rwio_destroy",
+                "start": 188,
+                "end": 197
+            },
+            {
+                "name": "tapdisk_rwio_setup",
+                "start": 199,
+                "end": 209
+            },
+            {
+                "name": "tapdisk_rwio_rw",
+                "start": 211,
+                "end": 228
+            },
+            {
+                "name": "tapdisk_rwio_submit",
+                "start": 230,
+                "end": 266
+            },
+            {
+                "name": "tapdisk_lio_check_resfd",
+                "start": 292,
+                "end": 296
+            },
+            {
+                "name": "tapdisk_lio_destroy_aio",
+                "start": 298,
+                "end": 312
+            },
+            {
+                "name": "__lio_setup_aio_poll",
+                "start": 314,
+                "end": 343
+            },
+            {
+                "name": "__lio_setup_aio_eventfd",
+                "start": 345,
+                "end": 364
+            },
+            {
+                "name": "tapdisk_lio_setup_aio",
+                "start": 366,
+                "end": 397
+            },
+            {
+                "name": "tapdisk_lio_destroy",
+                "start": 400,
+                "end": 419
+            },
+            {
+                "name": "tapdisk_lio_set_eventfd",
+                "start": 421,
+                "end": 430
+            },
+            {
+                "name": "tapdisk_lio_ack_event",
+                "start": 432,
+                "end": 442
+            },
+            {
+                "name": "tapdisk_lio_event",
+                "start": 444,
+                "end": 474
+            },
+            {
+                "name": "tapdisk_lio_setup",
+                "start": 476,
+                "end": 508
+            },
+            {
+                "name": "tapdisk_lio_submit",
+                "start": 510,
+                "end": 542
+            },
+            {
+                "name": "tapdisk_queue_free_io",
+                "start": 552,
+                "end": 565
+            },
+            {
+                "name": "tapdisk_queue_init_io",
+                "start": 567,
+                "end": 607
+            },
+            {
+                "name": "tapdisk_init_queue",
+                "start": 609,
+                "end": 642
+            },
+            {
+                "name": "tapdisk_free_queue",
+                "start": 644,
+                "end": 653
+            },
+            {
+                "name": "tapdisk_debug_queue",
+                "start": 655,
+                "end": 676
+            },
+            {
+                "name": "tapdisk_prep_tiocb",
+                "start": 678,
+                "end": 693
+            },
+            {
+                "name": "tapdisk_queue_tiocb",
+                "start": 695,
+                "end": 702
+            },
+            {
+                "name": "tapdisk_submit_tiocbs",
+                "start": 708,
+                "end": 712
+            },
+            {
+                "name": "tapdisk_submit_all_tiocbs",
+                "start": 714,
+                "end": 724
+            },
+            {
+                "name": "tapdisk_cancel_tiocbs",
+                "start": 729,
+                "end": 733
+            },
+            {
+                "name": "tapdisk_cancel_all_tiocbs",
+                "start": 735,
+                "end": 745
+            }
+        ],
+        "drivers/tapdisk-storage.c": [
+            {
+                "name": "__tapdisk_fs_storage_type",
+                "start": 46,
+                "end": 66
+            },
+            {
+                "name": "__tapdisk_blk_storage_type",
+                "start": 68,
+                "end": 72
+            },
+            {
+                "name": "tapdisk_storage_type",
+                "start": 74,
+                "end": 102
+            },
+            {
+                "name": "tapdisk_storage_name",
+                "start": 104,
+                "end": 119
+            }
+        ],
+        "drivers/tapdisk-image.c": [
+            {
+                "name": "tapdisk_image_allocate",
+                "start": 62,
+                "end": 83
+            },
+            {
+                "name": "tapdisk_image_free",
+                "start": 85,
+                "end": 96
+            },
+            {
+                "name": "tapdisk_image_check_td_request",
+                "start": 98,
+                "end": 128
+            },
+            {
+                "name": "tapdisk_image_check_request",
+                "start": 130,
+                "end": 180
+            },
+            {
+                "name": "tapdisk_image_close",
+                "start": 182,
+                "end": 187
+            },
+            {
+                "name": "tapdisk_image_open",
+                "start": 189,
+                "end": 225
+            },
+            {
+                "name": "tapdisk_image_open_parent",
+                "start": 227,
+                "end": 252
+            },
+            {
+                "name": "tapdisk_image_open_parents",
+                "start": 254,
+                "end": 272
+            },
+            {
+                "name": "tapdisk_image_close_chain",
+                "start": 274,
+                "end": 281
+            },
+            {
+                "name": "__tapdisk_image_open_chain",
+                "start": 283,
+                "end": 321
+            },
+            {
+                "name": "tapdisk_image_parse_flags",
+                "start": 323,
+                "end": 358
+            },
+            {
+                "name": "tapdisk_image_open_x_chain",
+                "start": 360,
+                "end": 464
+            },
+            {
+                "name": "tapdisk_image_open_chain",
+                "start": 466,
+                "end": 490
+            },
+            {
+                "name": "tapdisk_image_validate_chain",
+                "start": 492,
+                "end": 527
+            },
+            {
+                "name": "tapdisk_image_stats",
+                "start": 529,
+                "end": 550
+            }
+        ],
+        "drivers/tapdisk-loglimit.c": [
+            {
+                "name": "tapdisk_loglimit_init",
+                "start": 42,
+                "end": 52
+            },
+            {
+                "name": "timeradd_ms",
+                "start": 54,
+                "end": 62
+            },
+            {
+                "name": "tapdisk_loglimit_update",
+                "start": 64,
+                "end": 75
+            },
+            {
+                "name": "tapdisk_loglimit_update_now",
+                "start": 77,
+                "end": 85
+            },
+            {
+                "name": "tapdisk_loglimit_pass",
+                "start": 87,
+                "end": 105
+            }
+        ],
+        "drivers/block-vindex.c": [
+            {
+                "name": "vhd_index_initialize_request",
+                "start": 131,
+                "end": 136
+            },
+            {
+                "name": "vhd_index_initialize_block",
+                "start": 138,
+                "end": 146
+            },
+            {
+                "name": "vhd_index_init",
+                "start": 148,
+                "end": 169
+            },
+            {
+                "name": "vhd_index_allocate_cache",
+                "start": 171,
+                "end": 200
+            },
+            {
+                "name": "vhd_index_free",
+                "start": 202,
+                "end": 217
+            },
+            {
+                "name": "vhd_index_load",
+                "start": 219,
+                "end": 248
+            },
+            {
+                "name": "vhd_index_open",
+                "start": 250,
+                "end": 285
+            },
+            {
+                "name": "vhd_index_close",
+                "start": 287,
+                "end": 300
+            },
+            {
+                "name": "vhd_index_touch_file_ref",
+                "start": 302,
+                "end": 310
+            },
+            {
+                "name": "vhd_index_get_file_ref",
+                "start": 312,
+                "end": 316
+            },
+            {
+                "name": "vhd_index_put_file_ref",
+                "start": 318,
+                "end": 322
+            },
+            {
+                "name": "vhd_index_find_lru_file_ref",
+                "start": 324,
+                "end": 345
+            },
+            {
+                "name": "vhd_index_open_file",
+                "start": 347,
+                "end": 373
+            },
+            {
+                "name": "vhd_index_get_file",
+                "start": 375,
+                "end": 413
+            },
+            {
+                "name": "vhd_index_allocate_request",
+                "start": 415,
+                "end": 427
+            },
+            {
+                "name": "vhd_index_free_request",
+                "start": 429,
+                "end": 435
+            },
+            {
+                "name": "vhd_index_block_valid",
+                "start": 437,
+                "end": 442
+            },
+            {
+                "name": "vhd_index_touch_block",
+                "start": 444,
+                "end": 452
+            },
+            {
+                "name": "vhd_index_get_lru_block",
+                "start": 454,
+                "end": 485
+            },
+            {
+                "name": "vhd_index_allocate_block",
+                "start": 487,
+                "end": 507
+            },
+            {
+                "name": "vhd_index_install_block",
+                "start": 509,
+                "end": 534
+            },
+            {
+                "name": "vhd_index_get_block",
+                "start": 536,
+                "end": 552
+            },
+            {
+                "name": "vhd_index_read_cache",
+                "start": 554,
+                "end": 582
+            },
+            {
+                "name": "vhd_index_read_cache_span",
+                "start": 584,
+                "end": 606
+            },
+            {
+                "name": "vhd_index_schedule_meta_read",
+                "start": 608,
+                "end": 640
+            },
+            {
+                "name": "vhd_index_schedule_data_read",
+                "start": 642,
+                "end": 687
+            },
+            {
+                "name": "vhd_index_queue_request",
+                "start": 689,
+                "end": 706
+            },
+            {
+                "name": "vhd_index_queue_read",
+                "start": 708,
+                "end": 771
+            },
+            {
+                "name": "vhd_index_queue_write",
+                "start": 773,
+                "end": 777
+            },
+            {
+                "name": "vhd_index_signal_completion",
+                "start": 779,
+                "end": 786
+            },
+            {
+                "name": "vhd_index_complete_meta_read",
+                "start": 788,
+                "end": 823
+            },
+            {
+                "name": "vhd_index_complete_data_read",
+                "start": 825,
+                "end": 835
+            },
+            {
+                "name": "vhd_index_get_parent_id",
+                "start": 837,
+                "end": 841
+            },
+            {
+                "name": "vhd_index_validate_parent",
+                "start": 843,
+                "end": 848
+            },
+            {
+                "name": "vhd_index_debug",
+                "start": 850,
+                "end": 910
+            }
+        ],
+        "drivers/td.c": [
+            {
+                "name": "help",
+                "start": 141,
+                "end": 149
+            },
+            {
+                "name": "get_command",
+                "start": 151,
+                "end": 161
+            },
+            {
+                "name": "get_field",
+                "start": 163,
+                "end": 173
+            },
+            {
+                "name": "get_driver_type",
+                "start": 175,
+                "end": 188
+            },
+            {
+                "name": "td_create",
+                "start": 190,
+                "end": 282
+            },
+            {
+                "name": "td_snapshot",
+                "start": 284,
+                "end": 360
+            },
+            {
+                "name": "td_coalesce",
+                "start": 362,
+                "end": 408
+            },
+            {
+                "name": "td_query",
+                "start": 410,
+                "end": 549
+            },
+            {
+                "name": "td_set_field",
+                "start": 551,
+                "end": 602
+            },
+            {
+                "name": "main",
+                "start": 604,
+                "end": 697
+            }
+        ],
+        "drivers/tapdisk-server.c": [
+            {
+                "name": "tapdisk_server_get_shared_image",
+                "start": 66,
+                "end": 82
+            },
+            {
+                "name": "tapdisk_server_get_all_vbds",
+                "start": 84,
+                "end": 88
+            },
+            {
+                "name": "tapdisk_server_get_vbd",
+                "start": 90,
+                "end": 100
+            },
+            {
+                "name": "tapdisk_server_add_vbd",
+                "start": 102,
+                "end": 106
+            },
+            {
+                "name": "tapdisk_server_remove_vbd",
+                "start": 108,
+                "end": 114
+            },
+            {
+                "name": "tapdisk_server_queue_tiocb",
+                "start": 116,
+                "end": 120
+            },
+            {
+                "name": "tapdisk_server_debug",
+                "start": 122,
+                "end": 134
+            },
+            {
+                "name": "tapdisk_server_check_state",
+                "start": 136,
+                "end": 141
+            },
+            {
+                "name": "tapdisk_server_register_event",
+                "start": 143,
+                "end": 149
+            },
+            {
+                "name": "tapdisk_server_unregister_event",
+                "start": 151,
+                "end": 155
+            },
+            {
+                "name": "tapdisk_server_mask_event",
+                "start": 157,
+                "end": 161
+            },
+            {
+                "name": "tapdisk_server_set_max_timeout",
+                "start": 163,
+                "end": 167
+            },
+            {
+                "name": "tapdisk_server_assert_locks",
+                "start": 169,
+                "end": 173
+            },
+            {
+                "name": "tapdisk_server_set_retry_timeout",
+                "start": 175,
+                "end": 185
+            },
+            {
+                "name": "tapdisk_server_check_progress",
+                "start": 187,
+                "end": 197
+            },
+            {
+                "name": "tapdisk_server_submit_tiocbs",
+                "start": 199,
+                "end": 203
+            },
+            {
+                "name": "tapdisk_server_kick_responses",
+                "start": 205,
+                "end": 212
+            },
+            {
+                "name": "tapdisk_server_check_vbds",
+                "start": 214,
+                "end": 221
+            },
+            {
+                "name": "tapdisk_server_recheck_vbds",
+                "start": 223,
+                "end": 233
+            },
+            {
+                "name": "tapdisk_server_stop_vbds",
+                "start": 235,
+                "end": 242
+            },
+            {
+                "name": "tapdisk_server_init_aio",
+                "start": 244,
+                "end": 249
+            },
+            {
+                "name": "tapdisk_server_close_aio",
+                "start": 251,
+                "end": 255
+            },
+            {
+                "name": "tapdisk_server_openlog",
+                "start": 257,
+                "end": 270
+            },
+            {
+                "name": "tapdisk_server_closelog",
+                "start": 272,
+                "end": 282
+            },
+            {
+                "name": "tapdisk_server_open_tlog",
+                "start": 284,
+                "end": 293
+            },
+            {
+                "name": "tapdisk_server_close_tlog",
+                "start": 295,
+                "end": 299
+            },
+            {
+                "name": "tapdisk_server_close",
+                "start": 301,
+                "end": 306
+            },
+            {
+                "name": "tapdisk_server_iterate",
+                "start": 308,
+                "end": 328
+            },
+            {
+                "name": "__tapdisk_server_run",
+                "start": 330,
+                "end": 335
+            },
+            {
+                "name": "tapdisk_server_signal_handler",
+                "start": 337,
+                "end": 364
+            },
+            {
+                "name": "tapdisk_server_init",
+                "start": 366,
+                "end": 375
+            },
+            {
+                "name": "tapdisk_server_complete",
+                "start": 377,
+                "end": 398
+            },
+            {
+                "name": "tapdisk_server_initialize",
+                "start": 400,
+                "end": 416
+            },
+            {
+                "name": "tapdisk_server_run",
+                "start": 418,
+                "end": 436
+            }
+        ],
+        "drivers/tapdisk-control.c": [
+            {
+                "name": "page_align",
+                "start": 123,
+                "end": 128
+            },
+            {
+                "name": "tapdisk_ctl_conn_uninit",
+                "start": 130,
+                "end": 137
+            },
+            {
+                "name": "tapdisk_ctl_conn_init",
+                "start": 139,
+                "end": 164
+            },
+            {
+                "name": "tapdisk_ctl_conn_connected",
+                "start": 166,
+                "end": 170
+            },
+            {
+                "name": "tapdisk_ctl_conn_free",
+                "start": 172,
+                "end": 188
+            },
+            {
+                "name": "tapdisk_ctl_conn_close",
+                "start": 190,
+                "end": 205
+            },
+            {
+                "name": "tapdisk_ctl_conn_mask_out",
+                "start": 207,
+                "end": 211
+            },
+            {
+                "name": "tapdisk_ctl_conn_unmask_out",
+                "start": 213,
+                "end": 217
+            },
+            {
+                "name": "tapdisk_ctl_conn_send_buf",
+                "start": 219,
+                "end": 235
+            },
+            {
+                "name": "tapdisk_ctl_conn_send_event",
+                "start": 237,
+                "end": 259
+            },
+            {
+                "name": "tapdisk_ctl_conn_drain",
+                "start": 267,
+                "end": 293
+            },
+            {
+                "name": "tapdisk_ctl_conn_open",
+                "start": 296,
+                "end": 324
+            },
+            {
+                "name": "tapdisk_ctl_conn_write",
+                "start": 326,
+                "end": 342
+            },
+            {
+                "name": "tapdisk_ctl_conn_release",
+                "start": 344,
+                "end": 351
+            },
+            {
+                "name": "tapdisk_control_initialize",
+                "start": 353,
+                "end": 374
+            },
+            {
+                "name": "tapdisk_control_close",
+                "start": 376,
+                "end": 407
+            },
+            {
+                "name": "tapdisk_control_release_connection",
+                "start": 409,
+                "end": 418
+            },
+            {
+                "name": "tapdisk_control_close_connection",
+                "start": 420,
+                "end": 430
+            },
+            {
+                "name": "tapdisk_control_read_message",
+                "start": 433,
+                "end": 478
+            },
+            {
+                "name": "tapdisk_control_write_message",
+                "start": 480,
+                "end": 492
+            },
+            {
+                "name": "tapdisk_control_validate_request",
+                "start": 494,
+                "end": 503
+            },
+            {
+                "name": "tapdisk_control_list",
+                "start": 540,
+                "end": 576
+            },
+            {
+                "name": "tapdisk_control_get_pid",
+                "start": 578,
+                "end": 590
+            },
+            {
+                "name": "tapdisk_control_attach_vbd",
+                "start": 592,
+                "end": 655
+            },
+            {
+                "name": "tapdisk_control_detach_vbd",
+                "start": 658,
+                "end": 692
+            },
+            {
+                "name": "tapdisk_control_open_image",
+                "start": 694,
+                "end": 793
+            },
+            {
+                "name": "tapdisk_control_close_image",
+                "start": 795,
+                "end": 853
+            },
+            {
+                "name": "tapdisk_control_pause_vbd",
+                "start": 855,
+                "end": 887
+            },
+            {
+                "name": "tapdisk_control_resume_vbd",
+                "start": 889,
+                "end": 916
+            },
+            {
+                "name": "tapdisk_control_stats",
+                "start": 918,
+                "end": 962
+            },
+            {
+                "name": "tapdisk_control_handle_request",
+                "start": 1004,
+                "end": 1075
+            },
+            {
+                "name": "tapdisk_control_accept",
+                "start": 1077,
+                "end": 1107
+            },
+            {
+                "name": "tapdisk_control_mkdir",
+                "start": 1109,
+                "end": 1148
+            },
+            {
+                "name": "tapdisk_control_create_socket",
+                "start": 1150,
+                "end": 1219
+            },
+            {
+                "name": "tapdisk_control_open",
+                "start": 1221,
+                "end": 1227
+            }
+        ],
+        "drivers/tapdisk-ring.h": [
+            {
+                "name": "tapdisk_uring_create",
+                "start": 77,
+                "end": 78
+            }
+        ],
+        "drivers/tapdisk-ring.c": [
+            {
+                "name": "tapdisk_uring_create_ctlfd",
+                "start": 37,
+                "end": 79
+            },
+            {
+                "name": "tapdisk_uring_destroy_ctlfd",
+                "start": 81,
+                "end": 94
+            },
+            {
+                "name": "tapdisk_uring_connect_ctlfd",
+                "start": 96,
+                "end": 126
+            },
+            {
+                "name": "tapdisk_uring_disconnect_ctlfd",
+                "start": 128,
+                "end": 135
+            },
+            {
+                "name": "tapdisk_uring_create_shmem",
+                "start": 137,
+                "end": 165
+            },
+            {
+                "name": "tapdisk_uring_destroy_shmem",
+                "start": 167,
+                "end": 180
+            },
+            {
+                "name": "tapdisk_uring_connect_shmem",
+                "start": 182,
+                "end": 230
+            },
+            {
+                "name": "tapdisk_uring_disconnect_shmem",
+                "start": 232,
+                "end": 239
+            },
+            {
+                "name": "tapdisk_uring_create",
+                "start": 241,
+                "end": 283
+            },
+            {
+                "name": "tapdisk_uring_destroy",
+                "start": 285,
+                "end": 291
+            },
+            {
+                "name": "tapdisk_uring_connect",
+                "start": 293,
+                "end": 325
+            },
+            {
+                "name": "tapdisk_uring_disconnect",
+                "start": 327,
+                "end": 333
+            },
+            {
+                "name": "tapdisk_ring_read_message",
+                "start": 335,
+                "end": 375
+            },
+            {
+                "name": "tapdisk_ring_write_message",
+                "start": 377,
+                "end": 417
+            },
+            {
+                "name": "tapdisk_uring_poll",
+                "start": 419,
+                "end": 433
+            },
+            {
+                "name": "tapdisk_uring_kick",
+                "start": 435,
+                "end": 444
+            }
+        ],
+        "drivers/tapdisk-filter.c": [
+            {
+                "name": "inject_fault",
+                "start": 57,
+                "end": 71
+            },
+            {
+                "name": "fault_injected",
+                "start": 73,
+                "end": 81
+            },
+            {
+                "name": "recover_fault",
+                "start": 83,
+                "end": 93
+            },
+            {
+                "name": "chksum",
+                "start": 95,
+                "end": 106
+            },
+            {
+                "name": "check_hash",
+                "start": 108,
+                "end": 127
+            },
+            {
+                "name": "insert_hash",
+                "start": 129,
+                "end": 137
+            },
+            {
+                "name": "check_sector",
+                "start": 139,
+                "end": 154
+            },
+            {
+                "name": "check_data",
+                "start": 156,
+                "end": 169
+            },
+            {
+                "name": "tapdisk_init_tfilter",
+                "start": 171,
+                "end": 215
+            },
+            {
+                "name": "tapdisk_free_tfilter",
+                "start": 217,
+                "end": 227
+            },
+            {
+                "name": "tapdisk_filter_iocbs",
+                "start": 229,
+                "end": 250
+            },
+            {
+                "name": "tapdisk_filter_events",
+                "start": 252,
+                "end": 273
+            }
+        ],
+        "drivers/tapdisk-syslog.c": [
+            {
+                "name": "tapdisk_syslog_sock_send",
+                "start": 57,
+                "end": 58
+            },
+            {
+                "name": "__tapdisk_syslog_ring_init",
+                "start": 86,
+                "end": 94
+            },
+            {
+                "name": "page_align",
+                "start": 96,
+                "end": 101
+            },
+            {
+                "name": "tapdisk_syslog_ring_uninit",
+                "start": 103,
+                "end": 110
+            },
+            {
+                "name": "tapdisk_syslog_ring_init",
+                "start": 112,
+                "end": 147
+            },
+            {
+                "name": "tapdisk_syslog_ring_write_str",
+                "start": 149,
+                "end": 178
+            },
+            {
+                "name": "tapdisk_syslog_ring_read_pkt",
+                "start": 180,
+                "end": 206
+            },
+            {
+                "name": "tapdisk_syslog_ring_dispatch_one",
+                "start": 208,
+                "end": 234
+            },
+            {
+                "name": "tapdisk_syslog_ring_warning",
+                "start": 236,
+                "end": 248
+            },
+            {
+                "name": "tapdisk_syslog_ring_dispatch",
+                "start": 250,
+                "end": 261
+            },
+            {
+                "name": "tapdisk_syslog_vsprintf",
+                "start": 263,
+                "end": 292
+            },
+            {
+                "name": "tapdisk_vsyslog",
+                "start": 321,
+                "end": 376
+            },
+            {
+                "name": "tapdisk_syslog",
+                "start": 378,
+                "end": 389
+            },
+            {
+                "name": "tapdisk_syslog_sock_send",
+                "start": 391,
+                "end": 403
+            },
+            {
+                "name": "tapdisk_syslog_sock_event",
+                "start": 405,
+                "end": 414
+            },
+            {
+                "name": "__tapdisk_syslog_sock_init",
+                "start": 416,
+                "end": 421
+            },
+            {
+                "name": "tapdisk_syslog_sock_close",
+                "start": 423,
+                "end": 433
+            },
+            {
+                "name": "tapdisk_syslog_sock_open",
+                "start": 435,
+                "end": 477
+            },
+            {
+                "name": "tapdisk_syslog_sock_connect",
+                "start": 479,
+                "end": 489
+            },
+            {
+                "name": "tapdisk_syslog_sock_mask",
+                "start": 491,
+                "end": 495
+            },
+            {
+                "name": "tapdisk_syslog_sock_unmask",
+                "start": 497,
+                "end": 501
+            },
+            {
+                "name": "__tapdisk_syslog_init",
+                "start": 503,
+                "end": 509
+            },
+            {
+                "name": "tapdisk_syslog_close",
+                "start": 511,
+                "end": 521
+            },
+            {
+                "name": "tapdisk_syslog_open",
+                "start": 523,
+                "end": 547
+            },
+            {
+                "name": "tapdisk_syslog_stats",
+                "start": 549,
+                "end": 559
+            },
+            {
+                "name": "tapdisk_syslog_flush",
+                "start": 561,
+                "end": 566
+            }
+        ],
+        "drivers/log.h": [
+            {
+                "name": "bmstart",
+                "start": 60,
+                "end": 63
+            },
+            {
+                "name": "bmend",
+                "start": 65,
+                "end": 68
+            },
+            {
+                "name": "sringstart",
+                "start": 70,
+                "end": 73
+            },
+            {
+                "name": "sdatastart",
+                "start": 75,
+                "end": 78
+            },
+            {
+                "name": "sdataend",
+                "start": 80,
+                "end": 83
+            }
+        ],
+        "drivers/block-log.c": [
+            {
+                "name": "test_bit",
+                "start": 102,
+                "end": 105
+            },
+            {
+                "name": "clear_bit",
+                "start": 107,
+                "end": 110
+            },
+            {
+                "name": "set_bit",
+                "start": 112,
+                "end": 115
+            },
+            {
+                "name": "bitmap_size",
+                "start": 117,
+                "end": 120
+            },
+            {
+                "name": "writelog_create",
+                "start": 122,
+                "end": 136
+            },
+            {
+                "name": "writelog_free",
+                "start": 138,
+                "end": 144
+            },
+            {
+                "name": "writelog_set",
+                "start": 146,
+                "end": 154
+            },
+            {
+                "name": "writelog_clear",
+                "start": 157,
+                "end": 171
+            },
+            {
+                "name": "writelog_export",
+                "start": 175,
+                "end": 211
+            },
+            {
+                "name": "path_escape",
+                "start": 216,
+                "end": 222
+            },
+            {
+                "name": "ctl_makepath",
+                "start": 224,
+                "end": 243
+            },
+            {
+                "name": "shmem_open",
+                "start": 245,
+                "end": 281
+            },
+            {
+                "name": "shmem_close",
+                "start": 283,
+                "end": 296
+            },
+            {
+                "name": "ctl_open",
+                "start": 300,
+                "end": 349
+            },
+            {
+                "name": "ctl_close",
+                "start": 351,
+                "end": 382
+            },
+            {
+                "name": "ctl_close_sock",
+                "start": 385,
+                "end": 402
+            },
+            {
+                "name": "ctl_accept",
+                "start": 404,
+                "end": 432
+            },
+            {
+                "name": "ctl_get_shmpath",
+                "start": 435,
+                "end": 457
+            },
+            {
+                "name": "ctl_peek_writes",
+                "start": 459,
+                "end": 473
+            },
+            {
+                "name": "ctl_clear_writes",
+                "start": 475,
+                "end": 489
+            },
+            {
+                "name": "ctl_get_writes",
+                "start": 492,
+                "end": 507
+            },
+            {
+                "name": "ctl_kick",
+                "start": 510,
+                "end": 551
+            },
+            {
+                "name": "ctl_do_request",
+                "start": 553,
+                "end": 569
+            },
+            {
+                "name": "ctl_find_connection",
+                "start": 571,
+                "end": 581
+            },
+            {
+                "name": "ctl_request",
+                "start": 583,
+                "end": 609
+            },
+            {
+                "name": "tdlog_open",
+                "start": 615,
+                "end": 644
+            },
+            {
+                "name": "tdlog_close",
+                "start": 646,
+                "end": 655
+            },
+            {
+                "name": "tdlog_queue_read",
+                "start": 657,
+                "end": 660
+            },
+            {
+                "name": "tdlog_queue_write",
+                "start": 662,
+                "end": 669
+            },
+            {
+                "name": "tdlog_get_parent_id",
+                "start": 671,
+                "end": 674
+            },
+            {
+                "name": "tdlog_validate_parent",
+                "start": 676,
+                "end": 680
+            }
+        ],
+        "drivers/tapdisk-logfile.h": [
+            {
+                "name": "tapdisk_logfile_open",
+                "start": 45,
+                "end": 47
+            },
+            {
+                "name": "tapdisk_logfile_rename",
+                "start": 54,
+                "end": 55
+            }
+        ],
+        "drivers/tapdisk-logfile.c": [
+            {
+                "name": "page_align",
+                "start": 47,
+                "end": 52
+            },
+            {
+                "name": "tapdisk_logfile_free_buffer",
+                "start": 54,
+                "end": 61
+            },
+            {
+                "name": "tapdisk_logfile_init_buffer",
+                "start": 63,
+                "end": 92
+            },
+            {
+                "name": "tapdisk_logfile_unlink",
+                "start": 94,
+                "end": 104
+            },
+            {
+                "name": "__tapdisk_logfile_rename",
+                "start": 106,
+                "end": 127
+            },
+            {
+                "name": "tapdisk_logfile_name",
+                "start": 129,
+                "end": 135
+            },
+            {
+                "name": "tapdisk_logfile_rename",
+                "start": 137,
+                "end": 146
+            },
+            {
+                "name": "tapdisk_logfile_close",
+                "start": 148,
+                "end": 157
+            },
+            {
+                "name": "tapdisk_logfile_open",
+                "start": 159,
+                "end": 186
+            },
+            {
+                "name": "tapdisk_logfile_setvbuf",
+                "start": 188,
+                "end": 200
+            },
+            {
+                "name": "tapdisk_logfile_vprintf",
+                "start": 202,
+                "end": 232
+            },
+            {
+                "name": "tapdisk_logfile_printf",
+                "start": 234,
+                "end": 245
+            },
+            {
+                "name": "tapdisk_logfile_flush",
+                "start": 247,
+                "end": 256
+            }
+        ],
+        "drivers/tapdisk-log.c": [
+            {
+                "name": "tlog_logfile_vprint",
+                "start": 66,
+                "end": 70
+            }
+        ],
+        "drivers/io-optimize.c": [
+            {
+                "name": "opio_free",
+                "start": 53,
+                "end": 67
+            },
+            {
+                "name": "opio_init",
+                "start": 69,
+                "end": 95
+            },
+            {
+                "name": "alloc_opio",
+                "start": 97,
+                "end": 103
+            },
+            {
+                "name": "free_opio",
+                "start": 105,
+                "end": 110
+            },
+            {
+                "name": "restore_iocb",
+                "start": 112,
+                "end": 120
+            },
+            {
+                "name": "iocb_optimized",
+                "start": 122,
+                "end": 130
+            },
+            {
+                "name": "contiguous_sectors",
+                "start": 132,
+                "end": 136
+            },
+            {
+                "name": "contiguous_buffers",
+                "start": 138,
+                "end": 142
+            },
+            {
+                "name": "contiguous_iocbs",
+                "start": 144,
+                "end": 150
+            },
+            {
+                "name": "init_opio_list",
+                "start": 152,
+                "end": 156
+            },
+            {
+                "name": "opio_iocb_init",
+                "start": 158,
+                "end": 177
+            },
+            {
+                "name": "opio_get",
+                "start": 179,
+                "end": 186
+            },
+            {
+                "name": "merge_tail",
+                "start": 188,
+                "end": 206
+            },
+            {
+                "name": "merge",
+                "start": 208,
+                "end": 218
+            },
+            {
+                "name": "io_merge",
+                "start": 258,
+                "end": 280
+            },
+            {
+                "name": "expand_iocb",
+                "start": 282,
+                "end": 299
+            },
+            {
+                "name": "io_expand_iocbs",
+                "start": 301,
+                "end": 323
+            },
+            {
+                "name": "expand_event",
+                "start": 325,
+                "end": 356
+            },
+            {
+                "name": "io_split",
+                "start": 358,
+                "end": 381
+            },
+            {
+                "name": "__print_iocb",
+                "start": 386,
+                "end": 393
+            }
+        ],
+        "drivers/block-vhd.c": [
+            {
+                "name": "vhd_initialize",
+                "start": 287,
+                "end": 308
+            },
+            {
+                "name": "vhd_free",
+                "start": 310,
+                "end": 320
+            },
+            {
+                "name": "_get_vhd_zeros",
+                "start": 322,
+                "end": 332
+            },
+            {
+                "name": "set_batmap",
+                "start": 336,
+                "end": 343
+            },
+            {
+                "name": "test_batmap",
+                "start": 345,
+                "end": 351
+            },
+            {
+                "name": "vhd_kill_footer",
+                "start": 353,
+                "end": 386
+            },
+            {
+                "name": "find_next_free_block",
+                "start": 388,
+                "end": 411
+            },
+            {
+                "name": "vhd_free_bat",
+                "start": 413,
+                "end": 420
+            },
+            {
+                "name": "vhd_initialize_bat",
+                "start": 422,
+                "end": 473
+            },
+            {
+                "name": "vhd_free_bitmap_cache",
+                "start": 475,
+                "end": 489
+            },
+            {
+                "name": "vhd_initialize_bitmap_cache",
+                "start": 491,
+                "end": 529
+            },
+            {
+                "name": "vhd_initialize_dynamic_disk",
+                "start": 531,
+                "end": 584
+            },
+            {
+                "name": "vhd_check_version",
+                "start": 586,
+                "end": 603
+            },
+            {
+                "name": "vhd_log_open",
+                "start": 605,
+                "end": 634
+            },
+            {
+                "name": "__vhd_open",
+                "start": 636,
+                "end": 717
+            },
+            {
+                "name": "_vhd_open",
+                "start": 719,
+                "end": 744
+            },
+            {
+                "name": "vhd_log_close",
+                "start": 746,
+                "end": 766
+            },
+            {
+                "name": "_vhd_close",
+                "start": 768,
+                "end": 816
+            },
+            {
+                "name": "vhd_validate_parent",
+                "start": 818,
+                "end": 865
+            },
+            {
+                "name": "vhd_get_parent_id",
+                "start": 867,
+                "end": 891
+            },
+            {
+                "name": "clear_req_list",
+                "start": 893,
+                "end": 897
+            },
+            {
+                "name": "add_to_tail",
+                "start": 899,
+                "end": 906
+            },
+            {
+                "name": "remove_from_req_list",
+                "start": 908,
+                "end": 934
+            },
+            {
+                "name": "init_vhd_request",
+                "start": 936,
+                "end": 941
+            },
+            {
+                "name": "init_tx",
+                "start": 943,
+                "end": 947
+            },
+            {
+                "name": "add_to_transaction",
+                "start": 949,
+                "end": 963
+            },
+            {
+                "name": "transaction_completed",
+                "start": 965,
+                "end": 969
+            },
+            {
+                "name": "init_bat",
+                "start": 971,
+                "end": 980
+            },
+            {
+                "name": "lock_bat",
+                "start": 982,
+                "end": 986
+            },
+            {
+                "name": "unlock_bat",
+                "start": 988,
+                "end": 992
+            },
+            {
+                "name": "bat_locked",
+                "start": 994,
+                "end": 998
+            },
+            {
+                "name": "init_vhd_bitmap",
+                "start": 1000,
+                "end": 1012
+            },
+            {
+                "name": "get_bitmap",
+                "start": 1014,
+                "end": 1027
+            },
+            {
+                "name": "lock_bitmap",
+                "start": 1029,
+                "end": 1033
+            },
+            {
+                "name": "unlock_bitmap",
+                "start": 1035,
+                "end": 1039
+            },
+            {
+                "name": "bitmap_locked",
+                "start": 1041,
+                "end": 1045
+            },
+            {
+                "name": "bitmap_valid",
+                "start": 1047,
+                "end": 1051
+            },
+            {
+                "name": "bitmap_in_use",
+                "start": 1053,
+                "end": 1060
+            },
+            {
+                "name": "bitmap_full",
+                "start": 1062,
+                "end": 1074
+            },
+            {
+                "name": "remove_lru_bitmap",
+                "start": 1076,
+                "end": 1098
+            },
+            {
+                "name": "alloc_vhd_bitmap",
+                "start": 1100,
+                "end": 1120
+            },
+            {
+                "name": "__bitmap_lru_seqno",
+                "start": 1122,
+                "end": 1141
+            },
+            {
+                "name": "touch_bitmap",
+                "start": 1143,
+                "end": 1147
+            },
+            {
+                "name": "install_bitmap",
+                "start": 1149,
+                "end": 1162
+            },
+            {
+                "name": "free_vhd_bitmap",
+                "start": 1164,
+                "end": 1179
+            },
+            {
+                "name": "read_bitmap_cache",
+                "start": 1181,
+                "end": 1225
+            },
+            {
+                "name": "read_bitmap_cache_span",
+                "start": 1227,
+                "end": 1254
+            },
+            {
+                "name": "alloc_vhd_request",
+                "start": 1256,
+                "end": 1269
+            },
+            {
+                "name": "free_vhd_request",
+                "start": 1271,
+                "end": 1276
+            },
+            {
+                "name": "aio_read",
+                "start": 1278,
+                "end": 1292
+            },
+            {
+                "name": "aio_write",
+                "start": 1294,
+                "end": 1308
+            },
+            {
+                "name": "reserve_new_block",
+                "start": 1310,
+                "end": 1325
+            },
+            {
+                "name": "schedule_bat_write",
+                "start": 1327,
+                "end": 1363
+            },
+            {
+                "name": "schedule_zero_bm_write",
+                "start": 1365,
+                "end": 1387
+            },
+            {
+                "name": "schedule_redundant_bm_write",
+                "start": 1407,
+                "end": 1436
+            },
+            {
+                "name": "update_bat",
+                "start": 1438,
+                "end": 1470
+            },
+            {
+                "name": "allocate_block",
+                "start": 1472,
+                "end": 1536
+            },
+            {
+                "name": "schedule_data_read",
+                "start": 1538,
+                "end": 1580
+            },
+            {
+                "name": "schedule_data_write",
+                "start": 1582,
+                "end": 1648
+            },
+            {
+                "name": "schedule_bitmap_read",
+                "start": 1650,
+                "end": 1691
+            },
+            {
+                "name": "schedule_bitmap_write",
+                "start": 1693,
+                "end": 1732
+            },
+            {
+                "name": "__vhd_queue_request",
+                "start": 1738,
+                "end": 1768
+            },
+            {
+                "name": "vhd_queue_read",
+                "start": 1770,
+                "end": 1841
+            },
+            {
+                "name": "vhd_queue_write",
+                "start": 1843,
+                "end": 1926
+            },
+            {
+                "name": "signal_completion",
+                "start": 1928,
+                "end": 1954
+            },
+            {
+                "name": "start_new_bitmap_transaction",
+                "start": 1956,
+                "end": 1996
+            },
+            {
+                "name": "finish_bat_transaction",
+                "start": 1998,
+                "end": 2022
+            },
+            {
+                "name": "finish_bitmap_transaction",
+                "start": 2024,
+                "end": 2065
+            },
+            {
+                "name": "finish_data_transaction",
+                "start": 2067,
+                "end": 2080
+            },
+            {
+                "name": "finish_bat_write",
+                "start": 2082,
+                "end": 2121
+            },
+            {
+                "name": "finish_zero_bm_write",
+                "start": 2123,
+                "end": 2155
+            },
+            {
+                "name": "finish_redundant_bm_write",
+                "start": 2157,
+                "end": 2174
+            },
+            {
+                "name": "finish_bitmap_read",
+                "start": 2177,
+                "end": 2227
+            },
+            {
+                "name": "finish_bitmap_write",
+                "start": 2229,
+                "end": 2253
+            },
+            {
+                "name": "finish_data_read",
+                "start": 2255,
+                "end": 2263
+            },
+            {
+                "name": "finish_data_write",
+                "start": 2265,
+                "end": 2303
+            },
+            {
+                "name": "vhd_complete",
+                "start": 2305,
+                "end": 2357
+            },
+            {
+                "name": "vhd_debug",
+                "start": 2359,
+                "end": 2430
+            }
+        ],
+        "drivers/block-lcache.c": [
+            {
+                "name": "lcache_alloc_request",
+                "start": 103,
+                "end": 112
+            },
+            {
+                "name": "lcache_free_request",
+                "start": 114,
+                "end": 119
+            },
+            {
+                "name": "lcache_destroy_buffers",
+                "start": 121,
+                "end": 131
+            },
+            {
+                "name": "lcache_create_buffers",
+                "start": 133,
+                "end": 162
+            },
+            {
+                "name": "lcache_close",
+                "start": 164,
+                "end": 174
+            },
+            {
+                "name": "lcache_open",
+                "start": 176,
+                "end": 198
+            },
+            {
+                "name": "lcache_fs_bfree",
+                "start": 208,
+                "end": 222
+            },
+            {
+                "name": "__lcache_wr_enabled",
+                "start": 224,
+                "end": 235
+            },
+            {
+                "name": "lcache_wr_enabled",
+                "start": 237,
+                "end": 252
+            },
+            {
+                "name": "__lcache_write_cb",
+                "start": 254,
+                "end": 265
+            },
+            {
+                "name": "lcache_store_read",
+                "start": 267,
+                "end": 291
+            },
+            {
+                "name": "lcache_complete_read",
+                "start": 293,
+                "end": 309
+            },
+            {
+                "name": "__lcache_read_cb",
+                "start": 311,
+                "end": 323
+            },
+            {
+                "name": "lcache_queue_read",
+                "start": 325,
+                "end": 350
+            },
+            {
+                "name": "lcache_get_parent_id",
+                "start": 352,
+                "end": 356
+            },
+            {
+                "name": "lcache_validate_parent",
+                "start": 358,
+                "end": 366
+            }
+        ],
+        "drivers/tapdisk-stats.c": [
+            {
+                "name": "__stats_vsprintf",
+                "start": 42,
+                "end": 48
+            }
+        ],
+        "drivers/tapdisk-client.c": [
+            {
+                "name": "dring_avail",
+                "start": 71,
+                "end": 81
+            },
+            {
+                "name": "dring_advance",
+                "start": 84,
+                "end": 94
+            },
+            {
+                "name": "usage",
+                "start": 96,
+                "end": 99
+            },
+            {
+                "name": "tdctl_open",
+                "start": 102,
+                "end": 123
+            },
+            {
+                "name": "ctl_talk",
+                "start": 125,
+                "end": 149
+            },
+            {
+                "name": "ctl_get_shmem",
+                "start": 151,
+                "end": 173
+            },
+            {
+                "name": "ctlmsg_init",
+                "start": 175,
+                "end": 179
+            },
+            {
+                "name": "ctl_get_writes",
+                "start": 181,
+                "end": 195
+            },
+            {
+                "name": "ctl_peek_writes",
+                "start": 197,
+                "end": 211
+            },
+            {
+                "name": "ctl_kick",
+                "start": 214,
+                "end": 227
+            },
+            {
+                "name": "ctl_clear_writes",
+                "start": 229,
+                "end": 243
+            },
+            {
+                "name": "writelog_map",
+                "start": 245,
+                "end": 274
+            },
+            {
+                "name": "writelog_dump",
+                "start": 276,
+                "end": 289
+            },
+            {
+                "name": "writelog_enqueue_requests",
+                "start": 296,
+                "end": 333
+            },
+            {
+                "name": "writelog_dequeue_responses",
+                "start": 335,
+                "end": 353
+            },
+            {
+                "name": "writelog_free",
+                "start": 355,
+                "end": 367
+            },
+            {
+                "name": "get_writes",
+                "start": 369,
+                "end": 384
+            },
+            {
+                "name": "await_responses",
+                "start": 386,
+                "end": 412
+            },
+            {
+                "name": "read_loop",
+                "start": 422,
+                "end": 444
+            },
+            {
+                "name": "main",
+                "start": 446,
+                "end": 500
+            }
+        ],
+        "drivers/tapdisk-interface.c": [
+            {
+                "name": "td_load",
+                "start": 45,
+                "end": 66
+            },
+            {
+                "name": "__td_open",
+                "start": 68,
+                "end": 105
+            },
+            {
+                "name": "td_open",
+                "start": 107,
+                "end": 111
+            },
+            {
+                "name": "td_close",
+                "start": 113,
+                "end": 132
+            },
+            {
+                "name": "td_get_parent_id",
+                "start": 134,
+                "end": 147
+            },
+            {
+                "name": "td_validate_parent",
+                "start": 149,
+                "end": 165
+            },
+            {
+                "name": "td_queue_write",
+                "start": 167,
+                "end": 199
+            },
+            {
+                "name": "td_queue_read",
+                "start": 201,
+                "end": 233
+            },
+            {
+                "name": "td_forward_request",
+                "start": 235,
+                "end": 239
+            },
+            {
+                "name": "td_complete_request",
+                "start": 241,
+                "end": 245
+            },
+            {
+                "name": "td_queue_tiocb",
+                "start": 247,
+                "end": 251
+            },
+            {
+                "name": "td_prep_read",
+                "start": 253,
+                "end": 258
+            },
+            {
+                "name": "td_prep_write",
+                "start": 260,
+                "end": 265
+            },
+            {
+                "name": "td_debug",
+                "start": 267,
+                "end": 278
+            },
+            {
+                "name": "td_panic",
+                "start": 280,
+                "end": 286
+            }
+        ],
+        "drivers/block-aio.c": [
+            {
+                "name": "tdaio_get_image_info",
+                "start": 67,
+                "end": 125
+            },
+            {
+                "name": "tdaio_open",
+                "start": 128,
+                "end": 175
+            },
+            {
+                "name": "tdaio_complete",
+                "start": 177,
+                "end": 184
+            },
+            {
+                "name": "tdaio_queue_read",
+                "start": 186,
+                "end": 212
+            },
+            {
+                "name": "tdaio_queue_write",
+                "start": 214,
+                "end": 240
+            },
+            {
+                "name": "tdaio_close",
+                "start": 242,
+                "end": 249
+            },
+            {
+                "name": "tdaio_get_parent_id",
+                "start": 251,
+                "end": 254
+            },
+            {
+                "name": "tdaio_validate_parent",
+                "start": 256,
+                "end": 260
+            },
+            {
+                "name": "tdaio_stats",
+                "start": 262,
+                "end": 273
+            }
+        ],
+        "drivers/scheduler.c": [
+            {
+                "name": "scheduler_prepare_events",
+                "start": 77,
+                "end": 122
+            },
+            {
+                "name": "scheduler_check_fd_events",
+                "start": 124,
+                "end": 159
+            },
+            {
+                "name": "scheduler_check_timeouts",
+                "start": 161,
+                "end": 186
+            },
+            {
+                "name": "scheduler_check_events",
+                "start": 188,
+                "end": 197
+            },
+            {
+                "name": "scheduler_event_callback",
+                "start": 199,
+                "end": 210
+            },
+            {
+                "name": "scheduler_run_events",
+                "start": 212,
+                "end": 234
+            },
+            {
+                "name": "scheduler_register_event",
+                "start": 236,
+                "end": 272
+            },
+            {
+                "name": "scheduler_unregister_event",
+                "start": 274,
+                "end": 287
+            },
+            {
+                "name": "scheduler_mask_event",
+                "start": 289,
+                "end": 302
+            },
+            {
+                "name": "scheduler_gc_events",
+                "start": 304,
+                "end": 314
+            },
+            {
+                "name": "scheduler_set_max_timeout",
+                "start": 316,
+                "end": 321
+            },
+            {
+                "name": "scheduler_wait_for_events",
+                "start": 323,
+                "end": 367
+            },
+            {
+                "name": "scheduler_initialize",
+                "start": 369,
+                "end": 382
+            }
+        ],
+        "drivers/tapdisk-diff.c": [
+            {
+                "name": "usage",
+                "start": 114,
+                "end": 119
+            },
+            {
+                "name": "open_vhd",
+                "start": 121,
+                "end": 141
+            },
+            {
+                "name": "tapdisk_stream_poll_initialize",
+                "start": 143,
+                "end": 148
+            },
+            {
+                "name": "tapdisk_stream_poll_open",
+                "start": 150,
+                "end": 176
+            },
+            {
+                "name": "tapdisk_stream_poll_close",
+                "start": 178,
+                "end": 186
+            },
+            {
+                "name": "tapdisk_stream_poll_clear",
+                "start": 188,
+                "end": 195
+            },
+            {
+                "name": "tapdisk_stream_poll_set",
+                "start": 197,
+                "end": 206
+            },
+            {
+                "name": "tapdisk_stream_stop",
+                "start": 208,
+                "end": 214
+            },
+            {
+                "name": "tapdisk_stream_initialize_request",
+                "start": 216,
+                "end": 221
+            },
+            {
+                "name": "tapdisk_stream_request_idx",
+                "start": 223,
+                "end": 228
+            },
+            {
+                "name": "tapdisk_stream_get_request",
+                "start": 230,
+                "end": 245
+            },
+            {
+                "name": "tapdisk_stream_queue_completed",
+                "start": 247,
+                "end": 260
+            },
+            {
+                "name": "tapdisk_result_compare",
+                "start": 262,
+                "end": 281
+            },
+            {
+                "name": "tapdisk_stream_process_data",
+                "start": 283,
+                "end": 333
+            },
+            {
+                "name": "tapdisk_stream_dequeue",
+                "start": 335,
+                "end": 361
+            },
+            {
+                "name": "tapdisk_stream_enqueue_copy",
+                "start": 363,
+                "end": 410
+            },
+            {
+                "name": "tapdisk_stream_enqueue1",
+                "start": 412,
+                "end": 485
+            },
+            {
+                "name": "tapdisk_stream_enqueue2",
+                "start": 487,
+                "end": 516
+            },
+            {
+                "name": "tapdisk_diff_done",
+                "start": 518,
+                "end": 522
+            },
+            {
+                "name": "tapdisk_diff_stop",
+                "start": 524,
+                "end": 529
+            },
+            {
+                "name": "tapdisk_stream_enqueue",
+                "start": 531,
+                "end": 556
+            },
+            {
+                "name": "tapdisk_stream_open_image",
+                "start": 558,
+                "end": 598
+            },
+            {
+                "name": "tapdisk_stream_close_image",
+                "start": 600,
+                "end": 614
+            },
+            {
+                "name": "tapdisk_stream_initialize_requests",
+                "start": 616,
+                "end": 642
+            },
+            {
+                "name": "tapdisk_stream_register_enqueue_event",
+                "start": 644,
+                "end": 667
+            },
+            {
+                "name": "tapdisk_stream_unregister_enqueue_event",
+                "start": 669,
+                "end": 677
+            },
+            {
+                "name": "tapdisk_stream_initialize",
+                "start": 679,
+                "end": 686
+            },
+            {
+                "name": "tapdisk_stream_open",
+                "start": 688,
+                "end": 711
+            },
+            {
+                "name": "tapdisk_stream_release",
+                "start": 713,
+                "end": 718
+            },
+            {
+                "name": "tapdisk_stream_run",
+                "start": 720,
+                "end": 726
+            },
+            {
+                "name": "main",
+                "start": 728,
+                "end": 814
+            }
+        ],
+        "drivers/tapdisk2.c": [
+            {
+                "name": "usage",
+                "start": 44,
+                "end": 49
+            },
+            {
+                "name": "fdup",
+                "start": 51,
+                "end": 74
+            },
+            {
+                "name": "main",
+                "start": 76,
+                "end": 146
+            }
+        ],
+        "vhd/vhd-index.c": [
+            {
+                "name": "usage",
+                "start": 46,
+                "end": 54
+            },
+            {
+                "name": "vhd_index_get_name",
+                "start": 67,
+                "end": 124
+            },
+            {
+                "name": "vhd_index_free_name",
+                "start": 126,
+                "end": 134
+            },
+            {
+                "name": "vhd_index_add_file_table_entry",
+                "start": 136,
+                "end": 149
+            },
+            {
+                "name": "vhd_index_get_file_id",
+                "start": 151,
+                "end": 169
+            },
+            {
+                "name": "vhd_index_get_block",
+                "start": 171,
+                "end": 189
+            },
+            {
+                "name": "vhd_index_add_bat_entry",
+                "start": 191,
+                "end": 268
+            },
+            {
+                "name": "vhd_index_clone_bat_entry",
+                "start": 270,
+                "end": 329
+            },
+            {
+                "name": "vhd_index_update_bat_entry",
+                "start": 331,
+                "end": 394
+            },
+            {
+                "name": "vhd_index_add_bat",
+                "start": 396,
+                "end": 512
+            },
+            {
+                "name": "vhd_index_clone_bat",
+                "start": 514,
+                "end": 593
+            },
+            {
+                "name": "vhd_index_update_bat",
+                "start": 595,
+                "end": 656
+            },
+            {
+                "name": "vhd_index_create",
+                "start": 658,
+                "end": 698
+            },
+            {
+                "name": "vhd_index",
+                "start": 700,
+                "end": 797
+            },
+            {
+                "name": "vhd_index_print_summary",
+                "start": 799,
+                "end": 821
+            },
+            {
+                "name": "vhd_index_print_bat_header",
+                "start": 823,
+                "end": 833
+            },
+            {
+                "name": "vhd_index_print_vhd_summary",
+                "start": 835,
+                "end": 854
+            },
+            {
+                "name": "vhd_index_print_vhd_block_summary",
+                "start": 856,
+                "end": 907
+            },
+            {
+                "name": "vhd_index_summary",
+                "start": 909,
+                "end": 945
+            },
+            {
+                "name": "main",
+                "start": 947,
+                "end": 1012
+            }
+        ],
+        "vhd/vhd-update.c": [
+            {
+                "name": "usage",
+                "start": 55,
+                "end": 60
+            },
+            {
+                "name": "update_creator_version",
+                "start": 65,
+                "end": 70
+            },
+            {
+                "name": "journal_bitmaps",
+                "start": 72,
+                "end": 84
+            },
+            {
+                "name": "old_test_bit",
+                "start": 90,
+                "end": 95
+            },
+            {
+                "name": "new_set_bit",
+                "start": 102,
+                "end": 106
+            },
+            {
+                "name": "convert_bitmap",
+                "start": 108,
+                "end": 118
+            },
+            {
+                "name": "update_vhd",
+                "start": 120,
+                "end": 162
+            },
+            {
+                "name": "open_journal",
+                "start": 164,
+                "end": 176
+            },
+            {
+                "name": "close_journal",
+                "start": 178,
+                "end": 190
+            },
+            {
+                "name": "main",
+                "start": 192,
+                "end": 271
+            }
+        ],
+        "vhd/vhd-util.c": [
+            {
+                "name": "help",
+                "start": 85,
+                "end": 91
+            },
+            {
+                "name": "get_command",
+                "start": 93,
+                "end": 108
+            },
+            {
+                "name": "main",
+                "start": 110,
+                "end": 168
+            }
+        ],
+        "vhd/lib/vhd-util-resize.c": [
+            {
+                "name": "secs_to_blocks_down",
+                "start": 66,
+                "end": 70
+            },
+            {
+                "name": "secs_to_blocks_up",
+                "start": 72,
+                "end": 82
+            },
+            {
+                "name": "vhd_fixed_shrink",
+                "start": 84,
+                "end": 103
+            },
+            {
+                "name": "vhd_write_zeros",
+                "start": 105,
+                "end": 137
+            },
+            {
+                "name": "vhd_fixed_grow",
+                "start": 139,
+                "end": 177
+            },
+            {
+                "name": "vhd_fixed_resize",
+                "start": 179,
+                "end": 198
+            },
+            {
+                "name": "swap",
+                "start": 200,
+                "end": 208
+            },
+            {
+                "name": "partition",
+                "start": 210,
+                "end": 228
+            },
+            {
+                "name": "quicksort",
+                "start": 230,
+                "end": 242
+            },
+            {
+                "name": "vhd_move_block",
+                "start": 244,
+                "end": 305
+            },
+            {
+                "name": "vhd_clobber_block",
+                "start": 307,
+                "end": 329
+            },
+            {
+                "name": "vhd_defrag_shrink",
+                "start": 338,
+                "end": 408
+            },
+            {
+                "name": "vhd_clear_bat_entries",
+                "start": 410,
+                "end": 479
+            },
+            {
+                "name": "vhd_dynamic_shrink",
+                "start": 481,
+                "end": 548
+            },
+            {
+                "name": "vhd_first_data_block",
+                "start": 550,
+                "end": 568
+            },
+            {
+                "name": "vhd_next_block_offset",
+                "start": 570,
+                "end": 588
+            },
+            {
+                "name": "in_range",
+                "start": 590,
+                "end": 594
+            },
+            {
+                "name": "skip_check",
+                "start": 602,
+                "end": 606
+            },
+            {
+                "name": "vhd_check_for_clobber",
+                "start": 608,
+                "end": 680
+            },
+            {
+                "name": "vhd_shift_metadata",
+                "start": 685,
+                "end": 780
+            },
+            {
+                "name": "vhd_add_bat_entries",
+                "start": 782,
+                "end": 885
+            },
+            {
+                "name": "vhd_dynamic_grow",
+                "start": 887,
+                "end": 1002
+            },
+            {
+                "name": "vhd_dynamic_resize",
+                "start": 1004,
+                "end": 1038
+            },
+            {
+                "name": "vhd_util_resize_check_creator",
+                "start": 1040,
+                "end": 1059
+            },
+            {
+                "name": "vhd_dynamic_grow_fast",
+                "start": 1061,
+                "end": 1098
+            },
+            {
+                "name": "vhd_util_resize",
+                "start": 1100,
+                "end": 1200
+            }
+        ],
+        "vhd/lib/vhd-util-query.c": [
+            {
+                "name": "vhd_util_query",
+                "start": 43,
+                "end": 195
+            }
+        ],
+        "vhd/lib/libvhd-journal.c": [
+            {
+                "name": "vhd_journal_seek",
+                "start": 62,
+                "end": 72
+            },
+            {
+                "name": "vhd_journal_position",
+                "start": 74,
+                "end": 78
+            },
+            {
+                "name": "vhd_journal_read",
+                "start": 80,
+                "end": 92
+            },
+            {
+                "name": "vhd_journal_write",
+                "start": 94,
+                "end": 106
+            },
+            {
+                "name": "vhd_journal_truncate",
+                "start": 108,
+                "end": 118
+            },
+            {
+                "name": "vhd_journal_sync",
+                "start": 120,
+                "end": 130
+            },
+            {
+                "name": "vhd_journal_header_in",
+                "start": 132,
+                "end": 140
+            },
+            {
+                "name": "vhd_journal_header_out",
+                "start": 142,
+                "end": 150
+            },
+            {
+                "name": "vhd_journal_validate_header",
+                "start": 152,
+                "end": 177
+            },
+            {
+                "name": "vhd_journal_read_journal_header",
+                "start": 179,
+                "end": 197
+            },
+            {
+                "name": "vhd_journal_write_header",
+                "start": 199,
+                "end": 224
+            },
+            {
+                "name": "vhd_journal_add_journal_header",
+                "start": 226,
+                "end": 255
+            },
+            {
+                "name": "vhd_journal_entry_in",
+                "start": 257,
+                "end": 265
+            },
+            {
+                "name": "vhd_journal_entry_out",
+                "start": 267,
+                "end": 275
+            },
+            {
+                "name": "vhd_journal_checksum_entry",
+                "start": 277,
+                "end": 298
+            },
+            {
+                "name": "vhd_journal_validate_entry",
+                "start": 300,
+                "end": 313
+            },
+            {
+                "name": "vhd_journal_read_entry",
+                "start": 315,
+                "end": 326
+            },
+            {
+                "name": "vhd_journal_write_entry",
+                "start": 328,
+                "end": 346
+            },
+            {
+                "name": "vhd_journal_validate_entry_data",
+                "start": 348,
+                "end": 361
+            },
+            {
+                "name": "vhd_journal_update",
+                "start": 363,
+                "end": 417
+            },
+            {
+                "name": "vhd_journal_add_footer",
+                "start": 419,
+                "end": 463
+            },
+            {
+                "name": "vhd_journal_add_header",
+                "start": 465,
+                "end": 488
+            },
+            {
+                "name": "vhd_journal_add_locators",
+                "start": 490,
+                "end": 546
+            },
+            {
+                "name": "vhd_journal_add_bat",
+                "start": 548,
+                "end": 576
+            },
+            {
+                "name": "vhd_journal_add_batmap",
+                "start": 578,
+                "end": 615
+            },
+            {
+                "name": "vhd_journal_add_metadata",
+                "start": 617,
+                "end": 652
+            },
+            {
+                "name": "__vhd_journal_read_footer",
+                "start": 654,
+                "end": 677
+            },
+            {
+                "name": "vhd_journal_read_footer",
+                "start": 679,
+                "end": 684
+            },
+            {
+                "name": "vhd_journal_read_footer_copy",
+                "start": 686,
+                "end": 691
+            },
+            {
+                "name": "vhd_journal_read_header",
+                "start": 693,
+                "end": 715
+            },
+            {
+                "name": "vhd_journal_read_locators",
+                "start": 717,
+                "end": 783
+            },
+            {
+                "name": "vhd_journal_read_bat",
+                "start": 785,
+                "end": 830
+            },
+            {
+                "name": "vhd_journal_read_batmap_header",
+                "start": 832,
+                "end": 866
+            },
+            {
+                "name": "vhd_journal_read_batmap_map",
+                "start": 868,
+                "end": 902
+            },
+            {
+                "name": "vhd_journal_read_batmap",
+                "start": 904,
+                "end": 925
+            },
+            {
+                "name": "vhd_journal_restore_footer",
+                "start": 927,
+                "end": 932
+            },
+            {
+                "name": "vhd_journal_restore_footer_copy",
+                "start": 934,
+                "end": 938
+            },
+            {
+                "name": "vhd_journal_restore_header",
+                "start": 940,
+                "end": 950
+            },
+            {
+                "name": "vhd_journal_restore_locators",
+                "start": 952,
+                "end": 981
+            },
+            {
+                "name": "vhd_journal_restore_bat",
+                "start": 983,
+                "end": 987
+            },
+            {
+                "name": "vhd_journal_restore_batmap",
+                "start": 989,
+                "end": 993
+            },
+            {
+                "name": "vhd_journal_restore_metadata",
+                "start": 995,
+                "end": 1111
+            },
+            {
+                "name": "vhd_journal_disable_vhd",
+                "start": 1113,
+                "end": 1134
+            },
+            {
+                "name": "vhd_journal_enable_vhd",
+                "start": 1136,
+                "end": 1159
+            },
+            {
+                "name": "vhd_journal_close",
+                "start": 1161,
+                "end": 1171
+            },
+            {
+                "name": "vhd_journal_remove",
+                "start": 1173,
+                "end": 1192
+            },
+            {
+                "name": "vhd_journal_open",
+                "start": 1194,
+                "end": 1264
+            },
+            {
+                "name": "vhd_journal_create",
+                "start": 1266,
+                "end": 1347
+            },
+            {
+                "name": "vhd_journal_add_block",
+                "start": 1349,
+                "end": 1411
+            },
+            {
+                "name": "vhd_journal_commit",
+                "start": 1417,
+                "end": 1437
+            },
+            {
+                "name": "vhd_journal_revert",
+                "start": 1443,
+                "end": 1540
+            }
+        ],
+        "vhd/lib/vhd-util-check.c": [
+            {
+                "name": "test_bit_u64",
+                "start": 79,
+                "end": 83
+            },
+            {
+                "name": "set_bit_u64",
+                "start": 85,
+                "end": 89
+            },
+            {
+                "name": "vhd_util_check_stats_init",
+                "start": 91,
+                "end": 96
+            },
+            {
+                "name": "vhd_util_check_stats_free_one",
+                "start": 98,
+                "end": 106
+            },
+            {
+                "name": "vhd_util_check_stats_alloc_one",
+                "start": 108,
+                "end": 138
+            },
+            {
+                "name": "vhd_util_check_stats_free",
+                "start": 140,
+                "end": 149
+            },
+            {
+                "name": "pct",
+                "start": 151,
+                "end": 155
+            },
+            {
+                "name": "name",
+                "start": 157,
+                "end": 164
+            },
+            {
+                "name": "vhd_util_check_stats_print",
+                "start": 166,
+                "end": 224
+            },
+            {
+                "name": "vhd_util_check_zeros",
+                "start": 226,
+                "end": 238
+            },
+            {
+                "name": "vhd_util_check_validate_footer",
+                "start": 240,
+                "end": 313
+            },
+            {
+                "name": "vhd_util_check_validate_header",
+                "start": 315,
+                "end": 361
+            },
+            {
+                "name": "vhd_util_check_validate_differencing_header",
+                "start": 363,
+                "end": 400
+            },
+            {
+                "name": "vhd_util_check_validate_batmap",
+                "start": 402,
+                "end": 441
+            },
+            {
+                "name": "vhd_util_check_validate_parent_locator",
+                "start": 443,
+                "end": 480
+            },
+            {
+                "name": "vhd_util_check_validate_parent",
+                "start": 482,
+                "end": 509
+            },
+            {
+                "name": "vhd_util_check_footer",
+                "start": 511,
+                "end": 633
+            },
+            {
+                "name": "vhd_util_check_header",
+                "start": 635,
+                "end": 680
+            },
+            {
+                "name": "vhd_util_check_differencing_header",
+                "start": 682,
+                "end": 695
+            },
+            {
+                "name": "vhd_util_check_bitmap",
+                "start": 697,
+                "end": 747
+            },
+            {
+                "name": "vhd_util_check_bat",
+                "start": 749,
+                "end": 867
+            },
+            {
+                "name": "vhd_util_check_batmap",
+                "start": 869,
+                "end": 904
+            },
+            {
+                "name": "vhd_util_check_parent_locators",
+                "start": 906,
+                "end": 1053
+            },
+            {
+                "name": "vhd_util_dump_headers",
+                "start": 1055,
+                "end": 1063
+            },
+            {
+                "name": "vhd_util_check_vhd",
+                "start": 1065,
+                "end": 1141
+            },
+            {
+                "name": "vhd_util_check_parents",
+                "start": 1143,
+                "end": 1186
+            },
+            {
+                "name": "vhd_util_check",
+                "start": 1188,
+                "end": 1263
+            }
+        ],
+        "vhd/lib/vhd-util-set-field.c": [
+            {
+                "name": "vhd_util_set_field",
+                "start": 43,
+                "end": 119
+            }
+        ],
+        "vhd/lib/vhd-util-modify.c": [
+            {
+                "name": "vhd_util_zero_bat",
+                "start": 45,
+                "end": 72
+            },
+            {
+                "name": "vhd_util_modify",
+                "start": 74,
+                "end": 170
+            }
+        ],
+        "vhd/lib/vhd-util-repair.c": [
+            {
+                "name": "vhd_util_repair",
+                "start": 43,
+                "end": 86
+            }
+        ],
+        "vhd/lib/vhd-util-scan.c": [
+            {
+                "name": "target_volume",
+                "start": 71,
+                "end": 75
+            },
+            {
+                "name": "target_vhd",
+                "start": 77,
+                "end": 81
+            },
+            {
+                "name": "vhd_util_scan_pretty_allocate_list",
+                "start": 131,
+                "end": 170
+            },
+            {
+                "name": "vhd_util_scan_pretty_free_list",
+                "start": 172,
+                "end": 185
+            },
+            {
+                "name": "vhd_util_scan_pretty_add_image",
+                "start": 187,
+                "end": 258
+            },
+            {
+                "name": "vhd_util_scan_pretty_image_compare",
+                "start": 260,
+                "end": 269
+            },
+            {
+                "name": "vhd_util_scan_print_image_indent",
+                "start": 271,
+                "end": 303
+            },
+            {
+                "name": "vhd_util_scan_pretty_print_tree",
+                "start": 305,
+                "end": 325
+            },
+            {
+                "name": "vhd_util_scan_pretty_print_images",
+                "start": 327,
+                "end": 387
+            },
+            {
+                "name": "vhd_util_scan_print_image",
+                "start": 389,
+                "end": 406
+            },
+            {
+                "name": "vhd_util_scan_error",
+                "start": 408,
+                "end": 426
+            },
+            {
+                "name": "vhd_util_scan_get_parent_locator",
+                "start": 428,
+                "end": 450
+            },
+            {
+                "name": "copy_name",
+                "start": 452,
+                "end": 459
+            },
+            {
+                "name": "vhd_util_scan_extract_volume_name",
+                "start": 465,
+                "end": 497
+            },
+            {
+                "name": "vhd_util_scan_get_volume_parent",
+                "start": 499,
+                "end": 529
+            },
+            {
+                "name": "vhd_util_scan_get_parent",
+                "start": 531,
+                "end": 569
+            },
+            {
+                "name": "vhd_util_scan_get_hidden",
+                "start": 571,
+                "end": 589
+            },
+            {
+                "name": "vhd_util_scan_get_marker",
+                "start": 591,
+                "end": 605
+            },
+            {
+                "name": "vhd_util_scan_get_size",
+                "start": 607,
+                "end": 618
+            },
+            {
+                "name": "vhd_util_scan_open_file",
+                "start": 620,
+                "end": 641
+            },
+            {
+                "name": "vhd_util_scan_read_volume_headers",
+                "start": 643,
+                "end": 713
+            },
+            {
+                "name": "vhd_util_scan_open_volume",
+                "start": 715,
+                "end": 751
+            },
+            {
+                "name": "vhd_util_scan_open",
+                "start": 753,
+                "end": 780
+            },
+            {
+                "name": "vhd_util_scan_init_file_target",
+                "start": 782,
+                "end": 807
+            },
+            {
+                "name": "vhd_util_scan_init_volume_target",
+                "start": 809,
+                "end": 837
+            },
+            {
+                "name": "iterator_init",
+                "start": 839,
+                "end": 855
+            },
+            {
+                "name": "iterator_next",
+                "start": 857,
+                "end": 864
+            },
+            {
+                "name": "iterator_add_file",
+                "start": 866,
+                "end": 884
+            },
+            {
+                "name": "iterator_add_volume",
+                "start": 886,
+                "end": 915
+            },
+            {
+                "name": "iterator_add",
+                "start": 917,
+                "end": 949
+            },
+            {
+                "name": "iterator_free",
+                "start": 951,
+                "end": 956
+            },
+            {
+                "name": "vhd_util_scan_add_parent",
+                "start": 958,
+                "end": 975
+            },
+            {
+                "name": "vhd_util_scan_targets",
+                "start": 977,
+                "end": 1063
+            },
+            {
+                "name": "vhd_util_scan_targets_pretty",
+                "start": 1065,
+                "end": 1082
+            },
+            {
+                "name": "vhd_util_scan_find_file_targets",
+                "start": 1084,
+                "end": 1166
+            },
+            {
+                "name": "swap_volume",
+                "start": 1168,
+                "end": 1182
+            },
+            {
+                "name": "vhd_util_scan_sort_volumes",
+                "start": 1184,
+                "end": 1218
+            },
+            {
+                "name": "vhd_util_scan_find_volume_targets",
+                "start": 1220,
+                "end": 1277
+            },
+            {
+                "name": "vhd_util_scan_find_targets",
+                "start": 1279,
+                "end": 1290
+            },
+            {
+                "name": "vhd_util_scan",
+                "start": 1292,
+                "end": 1376
+            }
+        ],
+        "vhd/lib/vhd-util-revert.c": [
+            {
+                "name": "vhd_util_revert",
+                "start": 44,
+                "end": 98
+            }
+        ],
+        "vhd/lib/vhd-util-coalesce.c": [
+            {
+                "name": "__raw_io_write",
+                "start": 44,
+                "end": 65
+            },
+            {
+                "name": "vhd_util_coalesce_block",
+                "start": 70,
+                "end": 134
+            },
+            {
+                "name": "vhd_util_coalesce_onto",
+                "start": 136,
+                "end": 171
+            },
+            {
+                "name": "vhd_util_coalesce_parent",
+                "start": 173,
+                "end": 225
+            },
+            {
+                "name": "vhd_util_pathcmp",
+                "start": 234,
+                "end": 258
+            },
+            {
+                "name": "vhd_util_coalesce_free_chain",
+                "start": 260,
+                "end": 275
+            },
+            {
+                "name": "vhd_util_coalesce_load_chain",
+                "start": 277,
+                "end": 396
+            },
+            {
+                "name": "vhd_util_coalesce_clear_bitmap",
+                "start": 398,
+                "end": 447
+            },
+            {
+                "name": "vhd_util_coalesce_clear_bitmaps",
+                "start": 449,
+                "end": 480
+            },
+            {
+                "name": "vhd_util_coalesce_ancestor",
+                "start": 482,
+                "end": 528
+            },
+            {
+                "name": "vhd_util_coalesce_open_output",
+                "start": 530,
+                "end": 559
+            },
+            {
+                "name": "vhd_util_coalesce_block_out",
+                "start": 564,
+                "end": 594
+            },
+            {
+                "name": "vhd_util_coalesce_out",
+                "start": 596,
+                "end": 647
+            },
+            {
+                "name": "vhd_util_coalesce",
+                "start": 649,
+                "end": 711
+            }
+        ],
+        "vhd/lib/relative-path.c": [
+            {
+                "name": "count_nodes",
+                "start": 52,
+                "end": 66
+            },
+            {
+                "name": "next_node",
+                "start": 74,
+                "end": 112
+            },
+            {
+                "name": "count_common_nodes",
+                "start": 118,
+                "end": 159
+            },
+            {
+                "name": "up_nodes",
+                "start": 165,
+                "end": 194
+            },
+            {
+                "name": "node_offset",
+                "start": 199,
+                "end": 214
+            },
+            {
+                "name": "relative_path_to",
+                "start": 220,
+                "end": 307
+            }
+        ],
+        "vhd/lib/vhd-util-snapshot.c": [
+            {
+                "name": "vhd_util_find_snapshot_target",
+                "start": 44,
+                "end": 95
+            },
+            {
+                "name": "vhd_util_check_depth",
+                "start": 97,
+                "end": 111
+            },
+            {
+                "name": "vhd_util_snapshot",
+                "start": 113,
+                "end": 235
+            }
+        ],
+        "vhd/lib/vhd-util-fill.c": [
+            {
+                "name": "vhd_util_fill",
+                "start": 43,
+                "end": 114
+            }
+        ],
+        "vhd/lib/vhd-util-create.c": [
+            {
+                "name": "vhd_util_create",
+                "start": 42,
+                "end": 100
+            }
+        ],
+        "vhd/lib/libvhd-index.c": [
+            {
+                "name": "vhdi_seek",
+                "start": 94,
+                "end": 104
+            },
+            {
+                "name": "vhdi_position",
+                "start": 106,
+                "end": 110
+            },
+            {
+                "name": "vhdi_read",
+                "start": 112,
+                "end": 122
+            },
+            {
+                "name": "vhdi_write",
+                "start": 124,
+                "end": 134
+            },
+            {
+                "name": "vhdi_check_block_size",
+                "start": 136,
+                "end": 150
+            },
+            {
+                "name": "vhdi_header_in",
+                "start": 152,
+                "end": 157
+            },
+            {
+                "name": "vhdi_header_out",
+                "start": 159,
+                "end": 164
+            },
+            {
+                "name": "vhdi_header_validate",
+                "start": 166,
+                "end": 173
+            },
+            {
+                "name": "vhdi_entry_in",
+                "start": 175,
+                "end": 180
+            },
+            {
+                "name": "vhdi_entry_out",
+                "start": 182,
+                "end": 192
+            },
+            {
+                "name": "vhdi_path_in",
+                "start": 194,
+                "end": 198
+            },
+            {
+                "name": "vhdi_path_out",
+                "start": 200,
+                "end": 204
+            },
+            {
+                "name": "vhdi_bat_header_in",
+                "start": 206,
+                "end": 215
+            },
+            {
+                "name": "vhdi_bat_header_out",
+                "start": 217,
+                "end": 226
+            },
+            {
+                "name": "vhdi_path_validate",
+                "start": 228,
+                "end": 241
+            },
+            {
+                "name": "vhdi_path_expand",
+                "start": 243,
+                "end": 277
+            },
+            {
+                "name": "vhdi_bat_header_validate",
+                "start": 279,
+                "end": 305
+            },
+            {
+                "name": "vhdi_bat_load_header",
+                "start": 307,
+                "end": 322
+            },
+            {
+                "name": "vhdi_file_table_header_in",
+                "start": 324,
+                "end": 329
+            },
+            {
+                "name": "vhdi_file_table_header_out",
+                "start": 331,
+                "end": 336
+            },
+            {
+                "name": "vhdi_file_table_header_validate",
+                "start": 338,
+                "end": 346
+            },
+            {
+                "name": "vhdi_file_table_load_header",
+                "start": 348,
+                "end": 363
+            },
+            {
+                "name": "vhdi_file_table_write_header",
+                "start": 365,
+                "end": 385
+            },
+            {
+                "name": "vhdi_file_table_entry_in",
+                "start": 387,
+                "end": 393
+            },
+            {
+                "name": "vhdi_file_table_entry_out",
+                "start": 395,
+                "end": 401
+            },
+            {
+                "name": "vhdi_file_table_entry_validate",
+                "start": 403,
+                "end": 407
+            },
+            {
+                "name": "vhdi_file_table_entry_validate_vhd",
+                "start": 409,
+                "end": 440
+            },
+            {
+                "name": "vhdi_create",
+                "start": 442,
+                "end": 498
+            },
+            {
+                "name": "vhdi_open",
+                "start": 500,
+                "end": 556
+            },
+            {
+                "name": "vhdi_close",
+                "start": 558,
+                "end": 563
+            },
+            {
+                "name": "vhdi_read_block",
+                "start": 565,
+                "end": 597
+            },
+            {
+                "name": "vhdi_write_block",
+                "start": 599,
+                "end": 631
+            },
+            {
+                "name": "vhdi_append_block",
+                "start": 633,
+                "end": 676
+            },
+            {
+                "name": "vhdi_copy_path_to",
+                "start": 678,
+                "end": 721
+            },
+            {
+                "name": "vhdi_bat_create",
+                "start": 723,
+                "end": 793
+            },
+            {
+                "name": "vhdi_bat_load",
+                "start": 795,
+                "end": 883
+            },
+            {
+                "name": "vhdi_bat_write",
+                "start": 885,
+                "end": 924
+            },
+            {
+                "name": "vhdi_file_table_create",
+                "start": 926,
+                "end": 963
+            },
+            {
+                "name": "vhdi_file_table_load",
+                "start": 965,
+                "end": 1054
+            },
+            {
+                "name": "vhdi_file_table_next_fid",
+                "start": 1056,
+                "end": 1094
+            },
+            {
+                "name": "vhdi_file_table_entry_initialize",
+                "start": 1096,
+                "end": 1139
+            },
+            {
+                "name": "vhdi_file_table_add",
+                "start": 1141,
+                "end": 1208
+            },
+            {
+                "name": "vhdi_file_table_free",
+                "start": 1210,
+                "end": 1222
+            }
+        ],
+        "vhd/lib/vhd-util-read.c": [
+            {
+                "name": "__xconv",
+                "start": 48,
+                "end": 53
+            },
+            {
+                "name": "__dconv",
+                "start": 55,
+                "end": 60
+            },
+            {
+                "name": "vhd_print_header",
+                "start": 65,
+                "end": 99
+            },
+            {
+                "name": "vhd_print_footer",
+                "start": 112,
+                "end": 181
+            },
+            {
+                "name": "code_name",
+                "start": 183,
+                "end": 204
+            },
+            {
+                "name": "vhd_print_parent",
+                "start": 206,
+                "end": 219
+            },
+            {
+                "name": "vhd_print_parent_locators",
+                "start": 221,
+                "end": 248
+            },
+            {
+                "name": "vhd_print_batmap_header",
+                "start": 250,
+                "end": 268
+            },
+            {
+                "name": "check_block_range",
+                "start": 270,
+                "end": 280
+            },
+            {
+                "name": "vhd_print_headers",
+                "start": 282,
+                "end": 307
+            },
+            {
+                "name": "vhd_dump_headers",
+                "start": 309,
+                "end": 335
+            },
+            {
+                "name": "vhd_print_logical_to_physical",
+                "start": 337,
+                "end": 370
+            },
+            {
+                "name": "vhd_print_bat",
+                "start": 372,
+                "end": 392
+            },
+            {
+                "name": "vhd_print_bat_str",
+                "start": 394,
+                "end": 428
+            },
+            {
+                "name": "vhd_print_bitmap",
+                "start": 430,
+                "end": 465
+            },
+            {
+                "name": "vhd_test_bitmap",
+                "start": 467,
+                "end": 513
+            },
+            {
+                "name": "vhd_print_bitmap_extents",
+                "start": 515,
+                "end": 578
+            },
+            {
+                "name": "vhd_print_batmap",
+                "start": 580,
+                "end": 598
+            },
+            {
+                "name": "vhd_test_batmap",
+                "start": 600,
+                "end": 622
+            },
+            {
+                "name": "vhd_print_data",
+                "start": 624,
+                "end": 656
+            },
+            {
+                "name": "vhd_read_data",
+                "start": 658,
+                "end": 692
+            },
+            {
+                "name": "vhd_read_bytes",
+                "start": 694,
+                "end": 730
+            },
+            {
+                "name": "vhd_util_read",
+                "start": 732,
+                "end": 932
+            }
+        ],
+        "vhd/lib/libvhd.c": [
+            {
+                "name": "libvhd_set_log_level",
+                "start": 58,
+                "end": 63
+            },
+            {
+                "name": "old_test_bit",
+                "start": 99,
+                "end": 103
+            },
+            {
+                "name": "old_set_bit",
+                "start": 105,
+                "end": 109
+            },
+            {
+                "name": "old_clear_bit",
+                "start": 111,
+                "end": 115
+            },
+            {
+                "name": "vhd_footer_in",
+                "start": 117,
+                "end": 131
+            },
+            {
+                "name": "vhd_footer_out",
+                "start": 133,
+                "end": 147
+            },
+            {
+                "name": "vhd_header_in",
+                "start": 149,
+                "end": 170
+            },
+            {
+                "name": "vhd_header_out",
+                "start": 172,
+                "end": 193
+            },
+            {
+                "name": "vhd_batmap_header_in",
+                "start": 195,
+                "end": 202
+            },
+            {
+                "name": "vhd_batmap_header_out",
+                "start": 204,
+                "end": 211
+            },
+            {
+                "name": "vhd_bat_in",
+                "start": 213,
+                "end": 220
+            },
+            {
+                "name": "vhd_bat_out",
+                "start": 222,
+                "end": 229
+            },
+            {
+                "name": "vhd_checksum_footer",
+                "start": 231,
+                "end": 248
+            },
+            {
+                "name": "vhd_validate_footer",
+                "start": 250,
+                "end": 292
+            },
+            {
+                "name": "vhd_checksum_header",
+                "start": 294,
+                "end": 311
+            },
+            {
+                "name": "vhd_validate_header",
+                "start": 313,
+                "end": 352
+            },
+            {
+                "name": "vhd_validate_bat",
+                "start": 354,
+                "end": 361
+            },
+            {
+                "name": "vhd_checksum_batmap",
+                "start": 363,
+                "end": 385
+            },
+            {
+                "name": "vhd_validate_batmap_header",
+                "start": 387,
+                "end": 397
+            },
+            {
+                "name": "vhd_validate_batmap",
+                "start": 399,
+                "end": 412
+            },
+            {
+                "name": "vhd_batmap_header_offset",
+                "start": 414,
+                "end": 428
+            },
+            {
+                "name": "vhd_validate_platform_code",
+                "start": 430,
+                "end": 446
+            },
+            {
+                "name": "vhd_parent_locator_count",
+                "start": 448,
+                "end": 452
+            },
+            {
+                "name": "vhd_hidden",
+                "start": 454,
+                "end": 477
+            },
+            {
+                "name": "vhd_chain_depth",
+                "start": 479,
+                "end": 531
+            },
+            {
+                "name": "vhd_batmap_test",
+                "start": 533,
+                "end": 543
+            },
+            {
+                "name": "vhd_batmap_set",
+                "start": 545,
+                "end": 555
+            },
+            {
+                "name": "vhd_batmap_clear",
+                "start": 557,
+                "end": 567
+            },
+            {
+                "name": "vhd_bitmap_test",
+                "start": 569,
+                "end": 577
+            },
+            {
+                "name": "vhd_bitmap_set",
+                "start": 579,
+                "end": 587
+            },
+            {
+                "name": "vhd_bitmap_clear",
+                "start": 589,
+                "end": 597
+            },
+            {
+                "name": "vhd_end_of_headers",
+                "start": 603,
+                "end": 660
+            },
+            {
+                "name": "vhd_end_of_data",
+                "start": 662,
+                "end": 703
+            },
+            {
+                "name": "vhd_time",
+                "start": 705,
+                "end": 718
+            },
+            {
+                "name": "vhd_time_to_string",
+                "start": 724,
+                "end": 748
+            },
+            {
+                "name": "vhd_chs",
+                "start": 753,
+                "end": 791
+            },
+            {
+                "name": "vhd_get_footer",
+                "start": 793,
+                "end": 800
+            },
+            {
+                "name": "vhd_get_header",
+                "start": 802,
+                "end": 812
+            },
+            {
+                "name": "vhd_get_bat",
+                "start": 814,
+                "end": 825
+            },
+            {
+                "name": "vhd_get_batmap",
+                "start": 827,
+                "end": 838
+            },
+            {
+                "name": "vhd_put_footer",
+                "start": 840,
+                "end": 844
+            },
+            {
+                "name": "vhd_put_header",
+                "start": 846,
+                "end": 850
+            },
+            {
+                "name": "vhd_put_bat",
+                "start": 852,
+                "end": 860
+            },
+            {
+                "name": "vhd_put_batmap",
+                "start": 862,
+                "end": 873
+            },
+            {
+                "name": "vhd_read_short_footer",
+                "start": 878,
+                "end": 926
+            },
+            {
+                "name": "vhd_read_footer_at",
+                "start": 928,
+                "end": 962
+            },
+            {
+                "name": "vhd_read_footer",
+                "start": 964,
+                "end": 995
+            },
+            {
+                "name": "vhd_read_header_at",
+                "start": 997,
+                "end": 1036
+            },
+            {
+                "name": "vhd_read_header",
+                "start": 1038,
+                "end": 1050
+            },
+            {
+                "name": "vhd_read_bat",
+                "start": 1052,
+                "end": 1104
+            },
+            {
+                "name": "vhd_read_batmap_header",
+                "start": 1106,
+                "end": 1149
+            },
+            {
+                "name": "vhd_read_batmap_map",
+                "start": 1151,
+                "end": 1187
+            },
+            {
+                "name": "vhd_read_batmap",
+                "start": 1189,
+                "end": 1221
+            },
+            {
+                "name": "vhd_has_batmap",
+                "start": 1223,
+                "end": 1249
+            },
+            {
+                "name": "vhd_test_file_fixed",
+                "start": 1255,
+                "end": 1267
+            },
+            {
+                "name": "vhd_find_parent",
+                "start": 1269,
+                "end": 1321
+            },
+            {
+                "name": "vhd_macx_encode_location",
+                "start": 1323,
+                "end": 1377
+            },
+            {
+                "name": "vhd_w2u_encode_location",
+                "start": 1379,
+                "end": 1464
+            },
+            {
+                "name": "vhd_macx_decode_location",
+                "start": 1466,
+                "end": 1492
+            },
+            {
+                "name": "vhd_w2u_decode_location",
+                "start": 1494,
+                "end": 1525
+            },
+            {
+                "name": "vhd_header_decode_parent",
+                "start": 1527,
+                "end": 1540
+            },
+            {
+                "name": "vhd_parent_locator_read",
+                "start": 1542,
+                "end": 1628
+            },
+            {
+                "name": "vhd_parent_locator_get",
+                "start": 1630,
+                "end": 1665
+            },
+            {
+                "name": "vhd_parent_locator_write_at",
+                "start": 1667,
+                "end": 1783
+            },
+            {
+                "name": "vhd_footer_offset_at_eof",
+                "start": 1785,
+                "end": 1793
+            },
+            {
+                "name": "vhd_read_bitmap",
+                "start": 1795,
+                "end": 1842
+            },
+            {
+                "name": "vhd_read_block",
+                "start": 1844,
+                "end": 1902
+            },
+            {
+                "name": "vhd_write_footer_at",
+                "start": 1904,
+                "end": 1941
+            },
+            {
+                "name": "vhd_write_footer",
+                "start": 1943,
+                "end": 1970
+            },
+            {
+                "name": "vhd_write_header_at",
+                "start": 1972,
+                "end": 2014
+            },
+            {
+                "name": "vhd_write_header",
+                "start": 2016,
+                "end": 2026
+            },
+            {
+                "name": "vhd_write_bat",
+                "start": 2028,
+                "end": 2071
+            },
+            {
+                "name": "vhd_write_batmap_header",
+                "start": 2073,
+                "end": 2108
+            },
+            {
+                "name": "vhd_write_batmap",
+                "start": 2110,
+                "end": 2186
+            },
+            {
+                "name": "vhd_write_bitmap",
+                "start": 2188,
+                "end": 2225
+            },
+            {
+                "name": "vhd_write_block",
+                "start": 2227,
+                "end": 2264
+            },
+            {
+                "name": "namedup",
+                "start": 2266,
+                "end": 2279
+            },
+            {
+                "name": "vhd_atomic_pio",
+                "start": 2284,
+                "end": 2323
+            },
+            {
+                "name": "vhd_atomic_io",
+                "start": 2325,
+                "end": 2344
+            },
+            {
+                "name": "vhd_seek",
+                "start": 2346,
+                "end": 2359
+            },
+            {
+                "name": "vhd_position",
+                "start": 2361,
+                "end": 2365
+            },
+            {
+                "name": "vhd_read",
+                "start": 2367,
+                "end": 2382
+            },
+            {
+                "name": "vhd_write",
+                "start": 2384,
+                "end": 2399
+            },
+            {
+                "name": "vhd_pread",
+                "start": 2401,
+                "end": 2416
+            },
+            {
+                "name": "vhd_pwrite",
+                "start": 2418,
+                "end": 2433
+            },
+            {
+                "name": "vhd_offset",
+                "start": 2435,
+                "end": 2456
+            },
+            {
+                "name": "vhd_open_fast",
+                "start": 2458,
+                "end": 2505
+            },
+            {
+                "name": "vhd_open",
+                "start": 2507,
+                "end": 2590
+            },
+            {
+                "name": "vhd_close",
+                "start": 2592,
+                "end": 2606
+            },
+            {
+                "name": "vhd_initialize_footer",
+                "start": 2608,
+                "end": 2626
+            },
+            {
+                "name": "vhd_initialize_header_parent_name",
+                "start": 2628,
+                "end": 2675
+            },
+            {
+                "name": "get_file_size",
+                "start": 2677,
+                "end": 2691
+            },
+            {
+                "name": "vhd_initialize_header",
+                "start": 2693,
+                "end": 2754
+            },
+            {
+                "name": "vhd_write_parent_locators",
+                "start": 2756,
+                "end": 2795
+            },
+            {
+                "name": "vhd_change_parent",
+                "start": 2797,
+                "end": 2875
+            },
+            {
+                "name": "vhd_create_batmap",
+                "start": 2877,
+                "end": 2913
+            },
+            {
+                "name": "vhd_create_bat",
+                "start": 2915,
+                "end": 2944
+            },
+            {
+                "name": "vhd_initialize_fixed_disk",
+                "start": 2946,
+                "end": 2975
+            },
+            {
+                "name": "vhd_get_phys_size",
+                "start": 2977,
+                "end": 2986
+            },
+            {
+                "name": "vhd_set_phys_size",
+                "start": 2988,
+                "end": 3005
+            },
+            {
+                "name": "vhd_set_virt_size_no_write",
+                "start": 3007,
+                "end": 3023
+            },
+            {
+                "name": "vhd_set_virt_size",
+                "start": 3025,
+                "end": 3034
+            },
+            {
+                "name": "__vhd_create",
+                "start": 3036,
+                "end": 3166
+            },
+            {
+                "name": "vhd_create",
+                "start": 3168,
+                "end": 3173
+            },
+            {
+                "name": "vhd_snapshot",
+                "start": 3175,
+                "end": 3180
+            },
+            {
+                "name": "__vhd_io_fixed_read",
+                "start": 3182,
+                "end": 3193
+            },
+            {
+                "name": "__vhd_io_dynamic_copy_data",
+                "start": 3195,
+                "end": 3217
+            },
+            {
+                "name": "__vhd_io_dynamic_read_link",
+                "start": 3219,
+                "end": 3272
+            },
+            {
+                "name": "__raw_read_link",
+                "start": 3274,
+                "end": 3319
+            },
+            {
+                "name": "__vhd_io_dynamic_read",
+                "start": 3321,
+                "end": 3403
+            },
+            {
+                "name": "vhd_io_read",
+                "start": 3405,
+                "end": 3415
+            },
+            {
+                "name": "__vhd_io_fixed_write",
+                "start": 3417,
+                "end": 3428
+            },
+            {
+                "name": "__vhd_io_allocate_block",
+                "start": 3430,
+                "end": 3481
+            },
+            {
+                "name": "__vhd_io_dynamic_write",
+                "start": 3483,
+                "end": 3574
+            },
+            {
+                "name": "vhd_io_write",
+                "start": 3576,
+                "end": 3586
+            },
+            {
+                "name": "vhd_cache_init",
+                "start": 3588,
+                "end": 3592
+            },
+            {
+                "name": "vhd_cache_enabled",
+                "start": 3594,
+                "end": 3598
+            },
+            {
+                "name": "vhd_cache_load",
+                "start": 3600,
+                "end": 3659
+            },
+            {
+                "name": "vhd_cache_unload",
+                "start": 3661,
+                "end": 3679
+            },
+            {
+                "name": "vhd_cache_get_parent",
+                "start": 3681,
+                "end": 3698
+            },
+            {
+                "name": "vhd_block_vector_read",
+                "start": 3721,
+                "end": 3754
+            },
+            {
+                "name": "vhd_block_vector_init",
+                "start": 3770,
+                "end": 3836
+            },
+            {
+                "name": "vhd_block_vector_read_allocated_selective",
+                "start": 3884,
+                "end": 3903
+            },
+            {
+                "name": "__vhd_io_dynamic_read_link_bytes",
+                "start": 3914,
+                "end": 3973
+            },
+            {
+                "name": "__raw_read_link_bytes",
+                "start": 3975,
+                "end": 4022
+            },
+            {
+                "name": "__vhd_io_dynamic_read_bytes",
+                "start": 4024,
+                "end": 4130
+            },
+            {
+                "name": "vhd_io_read_bytes",
+                "start": 4132,
+                "end": 4142
+            },
+            {
+                "name": "__vhd_io_dynamic_write_bytes_aligned",
+                "start": 4144,
+                "end": 4242
+            },
+            {
+                "name": "__vhd_io_dynamic_write_bytes",
+                "start": 4244,
+                "end": 4320
+            },
+            {
+                "name": "vhd_io_write_bytes",
+                "start": 4322,
+                "end": 4332
+            },
+            {
+                "name": "vhd_marker",
+                "start": 4334,
+                "end": 4351
+            },
+            {
+                "name": "vhd_set_marker",
+                "start": 4353,
+                "end": 4368
+            }
+        ],
+        "vhd/lib/libvhdio.c": [
+            {
+                "name": "_load_std_fn",
+                "start": 200,
+                "end": 216
+            },
+            {
+                "name": "_get_std_fn",
+                "start": 218,
+                "end": 228
+            },
+            {
+                "name": "_init_vhd_log",
+                "start": 230,
+                "end": 245
+            },
+            {
+                "name": "_init_vhd_map",
+                "start": 247,
+                "end": 256
+            },
+            {
+                "name": "_init_vhd_objs",
+                "start": 258,
+                "end": 262
+            },
+            {
+                "name": "_libvhd_io_reset",
+                "start": 264,
+                "end": 327
+            },
+            {
+                "name": "_libvhd_io_continue",
+                "start": 329,
+                "end": 333
+            },
+            {
+                "name": "_init_vhd_test",
+                "start": 335,
+                "end": 358
+            },
+            {
+                "name": "_libvhd_io_init",
+                "start": 360,
+                "end": 378
+            },
+            {
+                "name": "_libvhd_io_get_vhd",
+                "start": 380,
+                "end": 451
+            },
+            {
+                "name": "_libvhd_io_put_vhd",
+                "start": 453,
+                "end": 462
+            },
+            {
+                "name": "_libvhd_io_map_get",
+                "start": 464,
+                "end": 470
+            },
+            {
+                "name": "_libvhd_io_map_set",
+                "start": 472,
+                "end": 479
+            },
+            {
+                "name": "_libvhd_io_map_clear",
+                "start": 481,
+                "end": 498
+            },
+            {
+                "name": "_libvhd_io_read_bytes",
+                "start": 500,
+                "end": 523
+            },
+            {
+                "name": "_libvhd_io_write_bytes",
+                "start": 525,
+                "end": 548
+            },
+            {
+                "name": "_libvhd_io_guess_partition",
+                "start": 553,
+                "end": 596
+            },
+            {
+                "name": "_libvhd_io_init_partition",
+                "start": 598,
+                "end": 656
+            },
+            {
+                "name": "_libvhd_io_vhd_open",
+                "start": 658,
+                "end": 688
+            },
+            {
+                "name": "_libvhd_io_open",
+                "start": 690,
+                "end": 746
+            },
+            {
+                "name": "_libvhd_io_close",
+                "start": 748,
+                "end": 753
+            },
+            {
+                "name": "_libvhd_io_fopen",
+                "start": 755,
+                "end": 802
+            },
+            {
+                "name": "_libvhd_io_pread",
+                "start": 804,
+                "end": 834
+            },
+            {
+                "name": "_libvhd_io_pwrite",
+                "start": 836,
+                "end": 866
+            },
+            {
+                "name": "_libvhd_io_fstat",
+                "start": 868,
+                "end": 889
+            },
+            {
+                "name": "_libvhd_io_fstat64",
+                "start": 891,
+                "end": 913
+            },
+            {
+                "name": "_libvhd_io_stat",
+                "start": 915,
+                "end": 931
+            },
+            {
+                "name": "_libvhd_io_stat64",
+                "start": 933,
+                "end": 949
+            },
+            {
+                "name": "open",
+                "start": 951,
+                "end": 969
+            },
+            {
+                "name": "open64",
+                "start": 971,
+                "end": 989
+            },
+            {
+                "name": "__open_2",
+                "start": 991,
+                "end": 1009
+            },
+            {
+                "name": "__open64_2",
+                "start": 1011,
+                "end": 1029
+            },
+            {
+                "name": "close",
+                "start": 1031,
+                "end": 1041
+            },
+            {
+                "name": "dup",
+                "start": 1043,
+                "end": 1060
+            },
+            {
+                "name": "dup2",
+                "start": 1062,
+                "end": 1079
+            },
+            {
+                "name": "dup3",
+                "start": 1081,
+                "end": 1101
+            },
+            {
+                "name": "lseek",
+                "start": 1103,
+                "end": 1141
+            },
+            {
+                "name": "lseek64",
+                "start": 1143,
+                "end": 1181
+            },
+            {
+                "name": "read",
+                "start": 1183,
+                "end": 1203
+            },
+            {
+                "name": "write",
+                "start": 1205,
+                "end": 1225
+            },
+            {
+                "name": "pread",
+                "start": 1227,
+                "end": 1242
+            },
+            {
+                "name": "pread64",
+                "start": 1244,
+                "end": 1259
+            },
+            {
+                "name": "pwrite",
+                "start": 1261,
+                "end": 1276
+            },
+            {
+                "name": "pwrite64",
+                "start": 1278,
+                "end": 1293
+            },
+            {
+                "name": "fsync",
+                "start": 1295,
+                "end": 1309
+            },
+            {
+                "name": "__xstat",
+                "start": 1311,
+                "end": 1328
+            },
+            {
+                "name": "__xstat64",
+                "start": 1330,
+                "end": 1348
+            },
+            {
+                "name": "__fxstat",
+                "start": 1350,
+                "end": 1365
+            },
+            {
+                "name": "__fxstat64",
+                "start": 1367,
+                "end": 1382
+            },
+            {
+                "name": "__lxstat",
+                "start": 1387,
+                "end": 1404
+            },
+            {
+                "name": "__lxstat64",
+                "start": 1409,
+                "end": 1426
+            },
+            {
+                "name": "ioctl",
+                "start": 1428,
+                "end": 1475
+            },
+            {
+                "name": "fcntl",
+                "start": 1477,
+                "end": 1554
+            },
+            {
+                "name": "fopen",
+                "start": 1556,
+                "end": 1572
+            },
+            {
+                "name": "fopen64",
+                "start": 1574,
+                "end": 1590
+            },
+            {
+                "name": "_IO_getc",
+                "start": 1592,
+                "end": 1611
+            },
+            {
+                "name": "_IO_getc_unlocked",
+                "start": 1616,
+                "end": 1620
+            },
+            {
+                "name": "fread",
+                "start": 1622,
+                "end": 1643
+            },
+            {
+                "name": "fread_unlocked",
+                "start": 1648,
+                "end": 1651
+            },
+            {
+                "name": "posix_memalign",
+                "start": 1659,
+                "end": 1671
+            }
+        ],
+        "vhd/lib/test/test-snapshot.c": [
+            {
+                "name": "usage",
+                "start": 21,
+                "end": 26
+            },
+            {
+                "name": "sighandler",
+                "start": 28,
+                "end": 33
+            },
+            {
+                "name": "stop",
+                "start": 35,
+                "end": 59
+            },
+            {
+                "name": "resume",
+                "start": 61,
+                "end": 85
+            },
+            {
+                "name": "test",
+                "start": 87,
+                "end": 96
+            },
+            {
+                "name": "main",
+                "start": 98,
+                "end": 161
+            }
+        ],
+        "vhd/lib/test/random-copy.c": [
+            {
+                "name": "usage",
+                "start": 27,
+                "end": 32
+            },
+            {
+                "name": "random_copy_carve_source",
+                "start": 34,
+                "end": 91
+            },
+            {
+                "name": "random_copy_permute_source",
+                "start": 93,
+                "end": 106
+            },
+            {
+                "name": "random_copy_init",
+                "start": 108,
+                "end": 149
+            },
+            {
+                "name": "random_copy",
+                "start": 151,
+                "end": 190
+            },
+            {
+                "name": "random_copy_close",
+                "start": 192,
+                "end": 198
+            },
+            {
+                "name": "main",
+                "start": 200,
+                "end": 226
+            }
+        ],
+        "part/part-util.c": [
+            {
+                "name": "usage",
+                "start": 29,
+                "end": 35
+            },
+            {
+                "name": "chs_unpack",
+                "start": 37,
+                "end": 44
+            },
+            {
+                "name": "partition_table_dump",
+                "start": 46,
+                "end": 79
+            },
+            {
+                "name": "dump_partitions",
+                "start": 81,
+                "end": 112
+            },
+            {
+                "name": "__dump_signature",
+                "start": 114,
+                "end": 135
+            },
+            {
+                "name": "dump_signature",
+                "start": 137,
+                "end": 168
+            },
+            {
+                "name": "count_partitions",
+                "start": 170,
+                "end": 204
+            },
+            {
+                "name": "format_partition",
+                "start": 206,
+                "end": 276
+            },
+            {
+                "name": "main",
+                "start": 278,
+                "end": 369
+            }
+        ],
+        "part/partition.c": [
+            {
+                "name": "primary_partition_in",
+                "start": 26,
+                "end": 31
+            },
+            {
+                "name": "primary_partition_out",
+                "start": 33,
+                "end": 38
+            },
+            {
+                "name": "partition_table_in",
+                "start": 40,
+                "end": 50
+            },
+            {
+                "name": "partition_table_out",
+                "start": 52,
+                "end": 62
+            },
+            {
+                "name": "primary_partition_validate",
+                "start": 64,
+                "end": 72
+            },
+            {
+                "name": "partition_table_validate",
+                "start": 74,
+                "end": 89
+            },
+            {
+                "name": "lba_to_chs",
+                "start": 91,
+                "end": 112
+            }
+        ],
+        "control/tap-ctl-list.c": [
+            {
+                "name": "_tap_list_alloc",
+                "start": 44,
+                "end": 63
+            },
+            {
+                "name": "_tap_list_free",
+                "start": 65,
+                "end": 81
+            },
+            {
+                "name": "_parse_params",
+                "start": 83,
+                "end": 109
+            },
+            {
+                "name": "tap_ctl_list_free",
+                "start": 111,
+                "end": 118
+            },
+            {
+                "name": "_tap_ctl_find_minors",
+                "start": 120,
+                "end": 174
+            },
+            {
+                "name": "_tap_ctl_find_tapdisks",
+                "start": 176,
+                "end": 237
+            },
+            {
+                "name": "_tap_ctl_list_tapdisk",
+                "start": 239,
+                "end": 301
+            },
+            {
+                "name": "tap_ctl_list",
+                "start": 303,
+                "end": 361
+            },
+            {
+                "name": "tap_ctl_list_pid",
+                "start": 363,
+                "end": 385
+            },
+            {
+                "name": "tap_ctl_find_minor",
+                "start": 387,
+                "end": 415
+            }
+        ],
+        "control/tap-ctl-pause.c": [
+            {
+                "name": "tap_ctl_pause",
+                "start": 41,
+                "end": 64
+            }
+        ],
+        "control/tap-ctl-create.c": [
+            {
+                "name": "tap_ctl_create",
+                "start": 42,
+                "end": 73
+            }
+        ],
+        "control/tap-ctl-stats.c": [
+            {
+                "name": "_tap_ctl_stats_connect_and_send",
+                "start": 40,
+                "end": 60
+            },
+            {
+                "name": "tap_ctl_stats",
+                "start": 62,
+                "end": 94
+            },
+            {
+                "name": "tap_ctl_stats_fwrite",
+                "start": 96,
+                "end": 164
+            }
+        ],
+        "control/tap-ctl-destroy.c": [
+            {
+                "name": "tap_ctl_destroy",
+                "start": 43,
+                "end": 62
+            }
+        ],
+        "control/tap-ctl-open.c": [
+            {
+                "name": "tap_ctl_open",
+                "start": 42,
+                "end": 91
+            }
+        ],
+        "control/tap-ctl-detach.c": [
+            {
+                "name": "tap_ctl_detach",
+                "start": 41,
+                "end": 66
+            }
+        ],
+        "control/tap-ctl-allocate.c": [
+            {
+                "name": "tap_ctl_prepare_directory",
+                "start": 49,
+                "end": 87
+            },
+            {
+                "name": "tap_ctl_make_device",
+                "start": 89,
+                "end": 121
+            },
+            {
+                "name": "tap_ctl_check_environment",
+                "start": 123,
+                "end": 159
+            },
+            {
+                "name": "tap_ctl_allocate_device",
+                "start": 161,
+                "end": 229
+            },
+            {
+                "name": "tap_ctl_allocate",
+                "start": 231,
+                "end": 247
+            }
+        ],
+        "control/tap-ctl-unpause.c": [
+            {
+                "name": "tap_ctl_unpause",
+                "start": 42,
+                "end": 69
+            }
+        ],
+        "control/tap-ctl-close.c": [
+            {
+                "name": "tap_ctl_close",
+                "start": 42,
+                "end": 70
+            }
+        ],
+        "control/tap-ctl-attach.c": [
+            {
+                "name": "tap_ctl_attach",
+                "start": 41,
+                "end": 66
+            }
+        ],
+        "control/tap-ctl-free.c": [
+            {
+                "name": "tap_ctl_free",
+                "start": 44,
+                "end": 59
+            }
+        ],
+        "control/tap-ctl-spawn.c": [
+            {
+                "name": "__tap_ctl_spawn",
+                "start": 44,
+                "end": 96
+            },
+            {
+                "name": "tap_ctl_get_pid",
+                "start": 98,
+                "end": 112
+            },
+            {
+                "name": "tap_ctl_wait",
+                "start": 114,
+                "end": 147
+            },
+            {
+                "name": "tap_ctl_get_child_id",
+                "start": 149,
+                "end": 171
+            },
+            {
+                "name": "tap_ctl_spawn",
+                "start": 173,
+                "end": 198
+            }
+        ],
+        "control/tap-ctl-major.c": [
+            {
+                "name": "tap_ctl_blk_major",
+                "start": 38,
+                "end": 73
+            }
+        ],
+        "control/tap-ctl.c": [
+            {
+                "name": "tap_cli_list_usage",
+                "start": 50,
+                "end": 55
+            },
+            {
+                "name": "tap_cli_list_row",
+                "start": 57,
+                "end": 76
+            },
+            {
+                "name": "tap_cli_list_dict",
+                "start": 78,
+                "end": 104
+            },
+            {
+                "name": "tap_cli_list",
+                "start": 106,
+                "end": 177
+            },
+            {
+                "name": "tap_cli_allocate_usage",
+                "start": 179,
+                "end": 183
+            },
+            {
+                "name": "tap_cli_allocate",
+                "start": 185,
+                "end": 216
+            },
+            {
+                "name": "tap_cli_free_usage",
+                "start": 218,
+                "end": 222
+            },
+            {
+                "name": "tap_cli_free",
+                "start": 224,
+                "end": 253
+            },
+            {
+                "name": "tap_cli_create_usage",
+                "start": 255,
+                "end": 263
+            },
+            {
+                "name": "tap_cli_create",
+                "start": 265,
+                "end": 323
+            },
+            {
+                "name": "tap_cli_destroy_usage",
+                "start": 325,
+                "end": 329
+            },
+            {
+                "name": "tap_cli_timeout",
+                "start": 331,
+                "end": 344
+            },
+            {
+                "name": "tap_cli_destroy",
+                "start": 346,
+                "end": 386
+            },
+            {
+                "name": "tap_cli_spawn_usage",
+                "start": 388,
+                "end": 392
+            },
+            {
+                "name": "tap_cli_spawn",
+                "start": 394,
+                "end": 426
+            },
+            {
+                "name": "tap_cli_attach_usage",
+                "start": 428,
+                "end": 432
+            },
+            {
+                "name": "tap_cli_attach",
+                "start": 434,
+                "end": 467
+            },
+            {
+                "name": "tap_cli_detach_usage",
+                "start": 469,
+                "end": 473
+            },
+            {
+                "name": "tap_cli_detach",
+                "start": 475,
+                "end": 508
+            },
+            {
+                "name": "tap_cli_close_usage",
+                "start": 510,
+                "end": 514
+            },
+            {
+                "name": "tap_cli_close",
+                "start": 516,
+                "end": 560
+            },
+            {
+                "name": "tap_cli_pause_usage",
+                "start": 562,
+                "end": 566
+            },
+            {
+                "name": "tap_cli_pause",
+                "start": 568,
+                "end": 607
+            },
+            {
+                "name": "tap_cli_unpause_usage",
+                "start": 609,
+                "end": 613
+            },
+            {
+                "name": "tap_cli_unpause",
+                "start": 615,
+                "end": 653
+            },
+            {
+                "name": "tap_cli_major_usage",
+                "start": 655,
+                "end": 659
+            },
+            {
+                "name": "tap_cli_major",
+                "start": 661,
+                "end": 701
+            },
+            {
+                "name": "tap_cli_open_usage",
+                "start": 703,
+                "end": 711
+            },
+            {
+                "name": "tap_cli_open",
+                "start": 713,
+                "end": 771
+            },
+            {
+                "name": "tap_cli_stats_usage",
+                "start": 773,
+                "end": 777
+            },
+            {
+                "name": "tap_cli_stats",
+                "start": 779,
+                "end": 819
+            },
+            {
+                "name": "tap_cli_check_usage",
+                "start": 821,
+                "end": 826
+            },
+            {
+                "name": "tap_cli_check",
+                "start": 828,
+                "end": 845
+            },
+            {
+                "name": "help",
+                "start": 876,
+                "end": 882
+            },
+            {
+                "name": "get_command",
+                "start": 884,
+                "end": 899
+            },
+            {
+                "name": "main",
+                "start": 901,
+                "end": 960
+            }
+        ],
+        "control/tap-ctl-check.c": [
+            {
+                "name": "tap_ctl_check_blktap",
+                "start": 41,
+                "end": 67
+            },
+            {
+                "name": "tap_ctl_check",
+                "start": 69,
+                "end": 83
+            }
+        ],
+        "control/tap-ctl-ipc.c": [
+            {
+                "name": "tap_ctl_read_raw",
+                "start": 49,
+                "end": 78
+            },
+            {
+                "name": "tap_ctl_read_message",
+                "start": 80,
+                "end": 95
+            },
+            {
+                "name": "tap_ctl_write_message",
+                "start": 97,
+                "end": 134
+            },
+            {
+                "name": "tap_ctl_send_and_receive",
+                "start": 136,
+                "end": 157
+            },
+            {
+                "name": "tap_ctl_socket_name",
+                "start": 159,
+                "end": 169
+            },
+            {
+                "name": "tap_ctl_connect",
+                "start": 171,
+                "end": 198
+            },
+            {
+                "name": "tap_ctl_connect_id",
+                "start": 200,
+                "end": 224
+            },
+            {
+                "name": "tap_ctl_connect_send_and_receive",
+                "start": 226,
+                "end": 240
+            }
+        ]
+    }
+}

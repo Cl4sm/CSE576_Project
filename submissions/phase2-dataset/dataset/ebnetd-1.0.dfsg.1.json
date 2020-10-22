@@ -1,0 +1,2310 @@
+{
+    "ebnetd-1.0.dfsg.1": {
+        "ebnetd/global.c": [
+            {
+                "name": "initialize_global_variables",
+                "start": 203,
+                "end": 221
+            },
+            {
+                "name": "finalize_global_variables",
+                "start": 227,
+                "end": 233
+            }
+        ],
+        "ebnetd/book.c": [
+            {
+                "name": "initialize_book_registry",
+                "start": 80,
+                "end": 85
+            },
+            {
+                "name": "finalize_book_registry",
+                "start": 93,
+                "end": 110
+            },
+            {
+                "name": "count_book_registry",
+                "start": 116,
+                "end": 127
+            },
+            {
+                "name": "activate_book_registry",
+                "start": 133,
+                "end": 198
+            },
+            {
+                "name": "add_book",
+                "start": 206,
+                "end": 245
+            },
+            {
+                "name": "find_book",
+                "start": 291,
+                "end": 306
+            },
+            {
+                "name": "check_book_permissions",
+                "start": 388,
+                "end": 397
+            },
+            {
+                "name": "set_all_book_permissions",
+                "start": 404,
+                "end": 411
+            }
+        ],
+        "ebnetd/ebnet.c": [
+            {
+                "name": "protocol_main",
+                "start": 286,
+                "end": 410
+            },
+            {
+                "name": "split_line",
+                "start": 421,
+                "end": 446
+            },
+            {
+                "name": "command_booklist",
+                "start": 455,
+                "end": 489
+            },
+            {
+                "name": "command_book",
+                "start": 498,
+                "end": 549
+            },
+            {
+                "name": "command_dir",
+                "start": 558,
+                "end": 651
+            },
+            {
+                "name": "command_file",
+                "start": 660,
+                "end": 752
+            },
+            {
+                "name": "command_filesize",
+                "start": 761,
+                "end": 838
+            },
+            {
+                "name": "command_read",
+                "start": 847,
+                "end": 995
+            },
+            {
+                "name": "check_root_file_name",
+                "start": 1231,
+                "end": 1259
+            },
+            {
+                "name": "check_path_parent_directory",
+                "start": 1268,
+                "end": 1285
+            }
+        ],
+        "ebnetd/misc.c": [
+            {
+                "name": "output_version",
+                "start": 28,
+                "end": 35
+            },
+            {
+                "name": "output_try_help",
+                "start": 41,
+                "end": 46
+            }
+        ],
+        "ebnetd/fdcache.c": [
+            {
+                "name": "fdcache_compute_path_hash",
+                "start": 89,
+                "end": 100
+            },
+            {
+                "name": "fdcache_create_entry",
+                "start": 106,
+                "end": 144
+            },
+            {
+                "name": "fdcache_destroy_entry",
+                "start": 150,
+                "end": 157
+            },
+            {
+                "name": "fdcache_find_entry",
+                "start": 163,
+                "end": 179
+            },
+            {
+                "name": "fdcache_insert_entry",
+                "start": 185,
+                "end": 203
+            },
+            {
+                "name": "fdcache_purge_entry",
+                "start": 209,
+                "end": 224
+            },
+            {
+                "name": "fdcache_initialize_table",
+                "start": 230,
+                "end": 261
+            },
+            {
+                "name": "fdcache_finalize_table",
+                "start": 268,
+                "end": 282
+            },
+            {
+                "name": "fdcache_set_max_entry_count",
+                "start": 288,
+                "end": 294
+            },
+            {
+                "name": "fdcache_max_entry_count",
+                "start": 300,
+                "end": 305
+            },
+            {
+                "name": "fdcache_entry_count",
+                "start": 311,
+                "end": 316
+            },
+            {
+                "name": "fdcache_open",
+                "start": 322,
+                "end": 373
+            }
+        ],
+        "ebnetd/ebnetd.c": [
+            {
+                "name": "main",
+                "start": 191,
+                "end": 363
+            },
+            {
+                "name": "standalone_main",
+                "start": 369,
+                "end": 741
+            },
+            {
+                "name": "inetd_main",
+                "start": 747,
+                "end": 871
+            },
+            {
+                "name": "test_main",
+                "start": 877,
+                "end": 943
+            },
+            {
+                "name": "output_help",
+                "start": 949,
+                "end": 973
+            },
+            {
+                "name": "block_signal",
+                "start": 1018,
+                "end": 1036
+            },
+            {
+                "name": "unblock_signal",
+                "start": 1047,
+                "end": 1066
+            },
+            {
+                "name": "abort_parent",
+                "start": 1072,
+                "end": 1088
+            },
+            {
+                "name": "abort_child",
+                "start": 1094,
+                "end": 1105
+            },
+            {
+                "name": "terminate_parent",
+                "start": 1111,
+                "end": 1152
+            },
+            {
+                "name": "terminate_child",
+                "start": 1158,
+                "end": 1177
+            },
+            {
+                "name": "wait_child",
+                "start": 1183,
+                "end": 1211
+            },
+            {
+                "name": "restart_parent",
+                "start": 1217,
+                "end": 1227
+            }
+        ],
+        "ebnetd/config.c": [
+            {
+                "name": "cf_begin",
+                "start": 160,
+                "end": 183
+            },
+            {
+                "name": "cf_end",
+                "start": 189,
+                "end": 230
+            },
+            {
+                "name": "cf_ebnet_port",
+                "start": 236,
+                "end": 267
+            },
+            {
+                "name": "cf_ndtp_port",
+                "start": 273,
+                "end": 304
+            },
+            {
+                "name": "cf_http_port",
+                "start": 310,
+                "end": 341
+            },
+            {
+                "name": "cf_user",
+                "start": 347,
+                "end": 369
+            },
+            {
+                "name": "cf_group",
+                "start": 375,
+                "end": 397
+            },
+            {
+                "name": "cf_max_clients",
+                "start": 403,
+                "end": 425
+            },
+            {
+                "name": "cf_hosts",
+                "start": 431,
+                "end": 453
+            },
+            {
+                "name": "cf_timeout",
+                "start": 459,
+                "end": 481
+            },
+            {
+                "name": "cf_work_path",
+                "start": 487,
+                "end": 523
+            },
+            {
+                "name": "cf_max_hits",
+                "start": 529,
+                "end": 551
+            },
+            {
+                "name": "cf_max_text_size",
+                "start": 557,
+                "end": 582
+            },
+            {
+                "name": "cf_syslog_facility",
+                "start": 588,
+                "end": 610
+            },
+            {
+                "name": "cf_begin_book",
+                "start": 616,
+                "end": 638
+            },
+            {
+                "name": "cf_end_book",
+                "start": 644,
+                "end": 675
+            },
+            {
+                "name": "cf_book_name",
+                "start": 681,
+                "end": 730
+            },
+            {
+                "name": "cf_book_title",
+                "start": 736,
+                "end": 762
+            },
+            {
+                "name": "cf_book_path",
+                "start": 768,
+                "end": 811
+            },
+            {
+                "name": "cf_appendix_path",
+                "start": 817,
+                "end": 860
+            },
+            {
+                "name": "cf_book_max_clients",
+                "start": 866,
+                "end": 888
+            },
+            {
+                "name": "cf_book_hosts",
+                "start": 894,
+                "end": 916
+            }
+        ],
+        "ebnetd/ebncheck.c": [
+            {
+                "name": "main",
+                "start": 92,
+                "end": 221
+            },
+            {
+                "name": "output_help",
+                "start": 227,
+                "end": 243
+            }
+        ],
+        "ebnetd/ebncontrol.c": [
+            {
+                "name": "main",
+                "start": 142,
+                "end": 323
+            },
+            {
+                "name": "get_sub_command",
+                "start": 329,
+                "end": 360
+            },
+            {
+                "name": "output_help",
+                "start": 366,
+                "end": 386
+            }
+        ],
+        "ebhttpd/ebhttpd.c": [
+            {
+                "name": "main",
+                "start": 191,
+                "end": 363
+            },
+            {
+                "name": "standalone_main",
+                "start": 369,
+                "end": 741
+            },
+            {
+                "name": "inetd_main",
+                "start": 747,
+                "end": 871
+            },
+            {
+                "name": "test_main",
+                "start": 877,
+                "end": 943
+            },
+            {
+                "name": "output_help",
+                "start": 949,
+                "end": 973
+            },
+            {
+                "name": "block_signal",
+                "start": 1018,
+                "end": 1036
+            },
+            {
+                "name": "unblock_signal",
+                "start": 1047,
+                "end": 1066
+            },
+            {
+                "name": "abort_parent",
+                "start": 1072,
+                "end": 1088
+            },
+            {
+                "name": "abort_child",
+                "start": 1094,
+                "end": 1105
+            },
+            {
+                "name": "terminate_parent",
+                "start": 1111,
+                "end": 1152
+            },
+            {
+                "name": "terminate_child",
+                "start": 1158,
+                "end": 1177
+            },
+            {
+                "name": "wait_child",
+                "start": 1183,
+                "end": 1211
+            },
+            {
+                "name": "restart_parent",
+                "start": 1217,
+                "end": 1227
+            }
+        ],
+        "ebhttpd/global.c": [
+            {
+                "name": "initialize_global_variables",
+                "start": 203,
+                "end": 221
+            },
+            {
+                "name": "finalize_global_variables",
+                "start": 227,
+                "end": 233
+            }
+        ],
+        "ebhttpd/pathparts.c": [
+            {
+                "name": "path_parts_initialize",
+                "start": 56,
+                "end": 65
+            },
+            {
+                "name": "path_parts_finalize",
+                "start": 70,
+                "end": 87
+            },
+            {
+                "name": "path_parts_parse",
+                "start": 93,
+                "end": 181
+            },
+            {
+                "name": "path_parts_segment_count",
+                "start": 188,
+                "end": 193
+            },
+            {
+                "name": "path_parts_segment",
+                "start": 201,
+                "end": 210
+            },
+            {
+                "name": "path_parts_leaf",
+                "start": 217,
+                "end": 222
+            },
+            {
+                "name": "path_parts_is_absolute",
+                "start": 229,
+                "end": 234
+            },
+            {
+                "name": "path_parts_is_relative",
+                "start": 241,
+                "end": 246
+            }
+        ],
+        "ebhttpd/book.c": [
+            {
+                "name": "initialize_book_registry",
+                "start": 80,
+                "end": 85
+            },
+            {
+                "name": "finalize_book_registry",
+                "start": 93,
+                "end": 110
+            },
+            {
+                "name": "count_book_registry",
+                "start": 116,
+                "end": 127
+            },
+            {
+                "name": "activate_book_registry",
+                "start": 133,
+                "end": 198
+            },
+            {
+                "name": "add_book",
+                "start": 206,
+                "end": 245
+            },
+            {
+                "name": "find_book",
+                "start": 291,
+                "end": 306
+            },
+            {
+                "name": "check_book_permissions",
+                "start": 388,
+                "end": 397
+            },
+            {
+                "name": "set_all_book_permissions",
+                "start": 404,
+                "end": 411
+            }
+        ],
+        "ebhttpd/ebhtcontrol.c": [
+            {
+                "name": "main",
+                "start": 142,
+                "end": 323
+            },
+            {
+                "name": "get_sub_command",
+                "start": 329,
+                "end": 360
+            },
+            {
+                "name": "output_help",
+                "start": 366,
+                "end": 386
+            }
+        ],
+        "ebhttpd/httprequest.c": [
+            {
+                "name": "http_receive_request_chunked_entity",
+                "start": 108,
+                "end": 109
+            },
+            {
+                "name": "http_parse_header",
+                "start": 178,
+                "end": 232
+            },
+            {
+                "name": "http_initialize_request",
+                "start": 238,
+                "end": 259
+            },
+            {
+                "name": "http_finalize_request",
+                "start": 265,
+                "end": 270
+            },
+            {
+                "name": "http_request_method",
+                "start": 705,
+                "end": 710
+            },
+            {
+                "name": "http_request_method_string",
+                "start": 712,
+                "end": 717
+            },
+            {
+                "name": "http_request_url",
+                "start": 719,
+                "end": 727
+            },
+            {
+                "name": "http_request_url_scheme",
+                "start": 729,
+                "end": 737
+            },
+            {
+                "name": "http_request_url_user",
+                "start": 739,
+                "end": 747
+            },
+            {
+                "name": "http_request_url_password",
+                "start": 749,
+                "end": 757
+            },
+            {
+                "name": "http_request_url_host",
+                "start": 759,
+                "end": 767
+            },
+            {
+                "name": "http_request_url_port",
+                "start": 769,
+                "end": 777
+            },
+            {
+                "name": "http_request_url_path",
+                "start": 779,
+                "end": 787
+            },
+            {
+                "name": "http_request_url_params",
+                "start": 789,
+                "end": 797
+            },
+            {
+                "name": "http_request_url_query",
+                "start": 799,
+                "end": 807
+            },
+            {
+                "name": "http_request_url_fragment",
+                "start": 809,
+                "end": 817
+            },
+            {
+                "name": "http_request_version",
+                "start": 819,
+                "end": 824
+            },
+            {
+                "name": "http_request_version_string",
+                "start": 826,
+                "end": 831
+            },
+            {
+                "name": "http_request_content_length",
+                "start": 833,
+                "end": 838
+            },
+            {
+                "name": "http_request_host",
+                "start": 840,
+                "end": 845
+            },
+            {
+                "name": "http_request_port",
+                "start": 847,
+                "end": 852
+            },
+            {
+                "name": "http_request_if_modified_since",
+                "start": 854,
+                "end": 859
+            },
+            {
+                "name": "http_request_response_code",
+                "start": 861,
+                "end": 866
+            },
+            {
+                "name": "http_request_status",
+                "start": 868,
+                "end": 873
+            }
+        ],
+        "ebhttpd/cgiquery.c": [
+            {
+                "name": "cgi_query_initialize",
+                "start": 101,
+                "end": 108
+            },
+            {
+                "name": "cgi_query_finalize",
+                "start": 115,
+                "end": 143
+            },
+            {
+                "name": "cgi_query_element_value",
+                "start": 151,
+                "end": 166
+            },
+            {
+                "name": "cgi_query_element_string_value",
+                "start": 173,
+                "end": 188
+            },
+            {
+                "name": "cgi_query_element_integer_value",
+                "start": 197,
+                "end": 216
+            },
+            {
+                "name": "cgi_query_parse_string",
+                "start": 233,
+                "end": 331
+            },
+            {
+                "name": "cgi_query_decode_string",
+                "start": 339,
+                "end": 396
+            }
+        ],
+        "ebhttpd/hookset.c": [
+            {
+                "name": "set_html_hooks",
+                "start": 125,
+                "end": 129
+            }
+        ],
+        "ebhttpd/misc.c": [
+            {
+                "name": "output_version",
+                "start": 28,
+                "end": 35
+            },
+            {
+                "name": "output_try_help",
+                "start": 41,
+                "end": 46
+            }
+        ],
+        "ebhttpd/httpmisc.c": [
+            {
+                "name": "http_remove_header_spaces",
+                "start": 96,
+                "end": 120
+            },
+            {
+                "name": "http_parse_method",
+                "start": 130,
+                "end": 155
+            },
+            {
+                "name": "http_parse_connection",
+                "start": 171,
+                "end": 201
+            },
+            {
+                "name": "http_parse_transfer_coding",
+                "start": 218,
+                "end": 253
+            },
+            {
+                "name": "http_parse_host",
+                "start": 303,
+                "end": 386
+            },
+            {
+                "name": "http_parse_version",
+                "start": 398,
+                "end": 466
+            },
+            {
+                "name": "http_skip_parameter",
+                "start": 480,
+                "end": 520
+            },
+            {
+                "name": "http_skip_token",
+                "start": 568,
+                "end": 587
+            },
+            {
+                "name": "http_skip_quoted_string",
+                "start": 601,
+                "end": 629
+            },
+            {
+                "name": "http_method_string",
+                "start": 636,
+                "end": 658
+            },
+            {
+                "name": "http_version_string",
+                "start": 664,
+                "end": 680
+            }
+        ],
+        "ebhttpd/http.c": [
+            {
+                "name": "protocol_main",
+                "start": 227,
+                "end": 341
+            },
+            {
+                "name": "output_response",
+                "start": 347,
+                "end": 401
+            },
+            {
+                "name": "output_string_asis",
+                "start": 407,
+                "end": 413
+            },
+            {
+                "name": "output_string",
+                "start": 469,
+                "end": 478
+            },
+            {
+                "name": "output_cgi_string",
+                "start": 500,
+                "end": 555
+            },
+            {
+                "name": "output_html_safe_string",
+                "start": 563,
+                "end": 578
+            },
+            {
+                "name": "output_euc_html_safe_string",
+                "start": 583,
+                "end": 632
+            },
+            {
+                "name": "output_latin1_html_safe_string",
+                "start": 638,
+                "end": 684
+            },
+            {
+                "name": "output_terminator_chunk",
+                "start": 690,
+                "end": 704
+            },
+            {
+                "name": "initialize_property",
+                "start": 710,
+                "end": 737
+            },
+            {
+                "name": "finalize_property",
+                "start": 743,
+                "end": 747
+            },
+            {
+                "name": "find_entity_generator",
+                "start": 752,
+                "end": 791
+            },
+            {
+                "name": "parse_path",
+                "start": 797,
+                "end": 937
+            },
+            {
+                "name": "parse_query",
+                "start": 943,
+                "end": 1028
+            }
+        ],
+        "ebhttpd/ebhtcheck.c": [
+            {
+                "name": "main",
+                "start": 92,
+                "end": 221
+            },
+            {
+                "name": "output_help",
+                "start": 227,
+                "end": 243
+            }
+        ],
+        "ebhttpd/config.c": [
+            {
+                "name": "cf_begin",
+                "start": 160,
+                "end": 183
+            },
+            {
+                "name": "cf_end",
+                "start": 189,
+                "end": 230
+            },
+            {
+                "name": "cf_ebnet_port",
+                "start": 236,
+                "end": 267
+            },
+            {
+                "name": "cf_ndtp_port",
+                "start": 273,
+                "end": 304
+            },
+            {
+                "name": "cf_http_port",
+                "start": 310,
+                "end": 341
+            },
+            {
+                "name": "cf_user",
+                "start": 347,
+                "end": 369
+            },
+            {
+                "name": "cf_group",
+                "start": 375,
+                "end": 397
+            },
+            {
+                "name": "cf_max_clients",
+                "start": 403,
+                "end": 425
+            },
+            {
+                "name": "cf_hosts",
+                "start": 431,
+                "end": 453
+            },
+            {
+                "name": "cf_timeout",
+                "start": 459,
+                "end": 481
+            },
+            {
+                "name": "cf_work_path",
+                "start": 487,
+                "end": 523
+            },
+            {
+                "name": "cf_max_hits",
+                "start": 529,
+                "end": 551
+            },
+            {
+                "name": "cf_max_text_size",
+                "start": 557,
+                "end": 582
+            },
+            {
+                "name": "cf_syslog_facility",
+                "start": 588,
+                "end": 610
+            },
+            {
+                "name": "cf_begin_book",
+                "start": 616,
+                "end": 638
+            },
+            {
+                "name": "cf_end_book",
+                "start": 644,
+                "end": 675
+            },
+            {
+                "name": "cf_book_name",
+                "start": 681,
+                "end": 730
+            },
+            {
+                "name": "cf_book_title",
+                "start": 736,
+                "end": 762
+            },
+            {
+                "name": "cf_book_path",
+                "start": 768,
+                "end": 811
+            },
+            {
+                "name": "cf_appendix_path",
+                "start": 817,
+                "end": 860
+            },
+            {
+                "name": "cf_book_max_clients",
+                "start": 866,
+                "end": 888
+            },
+            {
+                "name": "cf_book_hosts",
+                "start": 894,
+                "end": 916
+            }
+        ],
+        "ebhttpd/urlparts.c": [
+            {
+                "name": "url_parts_initialize",
+                "start": 73,
+                "end": 92
+            },
+            {
+                "name": "url_parts_finalize",
+                "start": 99,
+                "end": 128
+            },
+            {
+                "name": "url_parts_url",
+                "start": 134,
+                "end": 139
+            },
+            {
+                "name": "url_parts_scheme",
+                "start": 145,
+                "end": 150
+            },
+            {
+                "name": "url_parts_user",
+                "start": 156,
+                "end": 161
+            },
+            {
+                "name": "url_parts_password",
+                "start": 167,
+                "end": 172
+            },
+            {
+                "name": "url_parts_host",
+                "start": 178,
+                "end": 183
+            },
+            {
+                "name": "url_parts_port",
+                "start": 189,
+                "end": 194
+            },
+            {
+                "name": "url_parts_path",
+                "start": 200,
+                "end": 205
+            },
+            {
+                "name": "url_parts_params",
+                "start": 211,
+                "end": 216
+            },
+            {
+                "name": "url_parts_query",
+                "start": 222,
+                "end": 227
+            },
+            {
+                "name": "url_parts_fragment",
+                "start": 233,
+                "end": 238
+            },
+            {
+                "name": "url_parts_parse",
+                "start": 255,
+                "end": 475
+            },
+            {
+                "name": "url_parts_canonicalize_path",
+                "start": 496,
+                "end": 584
+            },
+            {
+                "name": "url_parts_expand_hex",
+                "start": 618,
+                "end": 667
+            },
+            {
+                "name": "url_parts_convert_to_lower",
+                "start": 675,
+                "end": 685
+            },
+            {
+                "name": "url_parts_print",
+                "start": 688,
+                "end": 713
+            }
+        ],
+        "ebhttpd/httprescode.c": [
+            {
+                "name": "http_response_code_message",
+                "start": 91,
+                "end": 130
+            }
+        ],
+        "ebhttpd/generator.c": [
+            {
+                "name": "output_html_header",
+                "start": 94,
+                "end": 111
+            },
+            {
+                "name": "output_html_footer",
+                "start": 117,
+                "end": 125
+            },
+            {
+                "name": "output_error_message",
+                "start": 131,
+                "end": 147
+            },
+            {
+                "name": "output_word_list",
+                "start": 153,
+                "end": 165
+            },
+            {
+                "name": "output_book_list",
+                "start": 171,
+                "end": 201
+            },
+            {
+                "name": "output_subbook_list",
+                "start": 208,
+                "end": 269
+            },
+            {
+                "name": "output_method_list",
+                "start": 276,
+                "end": 375
+            },
+            {
+                "name": "output_word_form",
+                "start": 382,
+                "end": 435
+            },
+            {
+                "name": "output_exactword_form",
+                "start": 442,
+                "end": 496
+            },
+            {
+                "name": "output_endword_form",
+                "start": 503,
+                "end": 557
+            },
+            {
+                "name": "output_keyword_form",
+                "start": 564,
+                "end": 621
+            },
+            {
+                "name": "output_multi_form",
+                "start": 627,
+                "end": 745
+            },
+            {
+                "name": "output_search_word",
+                "start": 752,
+                "end": 827
+            },
+            {
+                "name": "output_search_exactword",
+                "start": 834,
+                "end": 909
+            },
+            {
+                "name": "output_search_endword",
+                "start": 916,
+                "end": 991
+            },
+            {
+                "name": "output_search_keyword",
+                "start": 998,
+                "end": 1078
+            },
+            {
+                "name": "output_search_multi",
+                "start": 1085,
+                "end": 1093
+            },
+            {
+                "name": "output_search_mutli_select",
+                "start": 1099,
+                "end": 1166
+            },
+            {
+                "name": "output_search_mutli_result",
+                "start": 1171,
+                "end": 1272
+            },
+            {
+                "name": "output_hit_list",
+                "start": 1281,
+                "end": 1418
+            },
+            {
+                "name": "output_text",
+                "start": 1425,
+                "end": 1451
+            },
+            {
+                "name": "output_narrow_font_character",
+                "start": 1509,
+                "end": 1527
+            },
+            {
+                "name": "output_wide_font_character",
+                "start": 1534,
+                "end": 1552
+            },
+            {
+                "name": "output_color_graphic",
+                "start": 1560,
+                "end": 1583
+            },
+            {
+                "name": "output_mono_graphic",
+                "start": 1590,
+                "end": 1613
+            },
+            {
+                "name": "output_gray_graphic",
+                "start": 1620,
+                "end": 1643
+            },
+            {
+                "name": "output_wave",
+                "start": 1650,
+                "end": 1689
+            },
+            {
+                "name": "output_mpeg",
+                "start": 1696,
+                "end": 1723
+            }
+        ],
+        "ebhttpd/httpdate.c": [
+            {
+                "name": "http_make_date",
+                "start": 135,
+                "end": 157
+            },
+            {
+                "name": "http_make_date2",
+                "start": 169,
+                "end": 182
+            },
+            {
+                "name": "http_print_date",
+                "start": 188,
+                "end": 196
+            },
+            {
+                "name": "http_compare_date",
+                "start": 206,
+                "end": 231
+            },
+            {
+                "name": "http_set_origin_date",
+                "start": 238,
+                "end": 249
+            },
+            {
+                "name": "http_parse_date",
+                "start": 264,
+                "end": 298
+            },
+            {
+                "name": "http_parse_date_internal",
+                "start": 317,
+                "end": 483
+            }
+        ],
+        "lib/getaddrinfo.h": [
+            {
+                "name": "getaddrinfo",
+                "start": 216,
+                "end": 217
+            },
+            {
+                "name": "getnameinfo",
+                "start": 218,
+                "end": 219
+            }
+        ],
+        "lib/hostname.c": [
+            {
+                "name": "identify_remote_host",
+                "start": 120,
+                "end": 254
+            }
+        ],
+        "lib/daemon.c": [
+            {
+                "name": "daemonize",
+                "start": 64,
+                "end": 141
+            }
+        ],
+        "lib/linebuf.c": [
+            {
+                "name": "initialize_line_buffer",
+                "start": 88,
+                "end": 96
+            },
+            {
+                "name": "finalize_line_buffer",
+                "start": 102,
+                "end": 110
+            },
+            {
+                "name": "set_line_buffer_timeout",
+                "start": 116,
+                "end": 122
+            },
+            {
+                "name": "bind_file_to_line_buffer",
+                "start": 128,
+                "end": 136
+            },
+            {
+                "name": "file_bound_to_line_buffer",
+                "start": 143,
+                "end": 148
+            },
+            {
+                "name": "discard_cache_in_line_buffer",
+                "start": 154,
+                "end": 159
+            },
+            {
+                "name": "cache_length_in_line_buffer",
+                "start": 165,
+                "end": 170
+            },
+            {
+                "name": "skip_line_buffer",
+                "start": 455,
+                "end": 474
+            }
+        ],
+        "lib/strerror.c": [
+            {
+                "name": "strerror",
+                "start": 46,
+                "end": 54
+            },
+            {
+                "name": "perror",
+                "start": 60,
+                "end": 72
+            }
+        ],
+        "lib/signame.c": [
+            {
+                "name": "signal_name",
+                "start": 237,
+                "end": 249
+            },
+            {
+                "name": "signal_code",
+                "start": 256,
+                "end": 268
+            },
+            {
+                "name": "signal_explanation",
+                "start": 275,
+                "end": 287
+            },
+            {
+                "name": "psignal",
+                "start": 294,
+                "end": 323
+            },
+            {
+                "name": "strsignal",
+                "start": 331,
+                "end": 348
+            }
+        ],
+        "lib/getopt.h": [
+            {
+                "name": "getopt",
+                "start": 204,
+                "end": 205
+            },
+            {
+                "name": "getopt_long",
+                "start": 208,
+                "end": 211
+            },
+            {
+                "name": "getopt_long_only",
+                "start": 212,
+                "end": 215
+            }
+        ],
+        "lib/gettext.h": [
+            {
+                "name": "pgettext_aux",
+                "start": 126,
+                "end": 142
+            },
+            {
+                "name": "npgettext_aux",
+                "start": 145,
+                "end": 163
+            },
+            {
+                "name": "dcpgettext_expr",
+                "start": 185,
+                "end": 222
+            },
+            {
+                "name": "dcnpgettext_expr",
+                "start": 230,
+                "end": 268
+            }
+        ],
+        "lib/getopt_int.h": [
+            {
+                "name": "_getopt_internal",
+                "start": 23,
+                "end": 26
+            },
+            {
+                "name": "_getopt_internal_r",
+                "start": 114,
+                "end": 118
+            },
+            {
+                "name": "_getopt_long_r",
+                "start": 120,
+                "end": 123
+            },
+            {
+                "name": "_getopt_long_only_r",
+                "start": 125,
+                "end": 129
+            }
+        ],
+        "lib/getopt.c": [
+            {
+                "name": "exchange",
+                "start": 151,
+                "end": 228
+            },
+            {
+                "name": "_getopt_initialize",
+                "start": 232,
+                "end": 294
+            },
+            {
+                "name": "_getopt_internal_r",
+                "start": 351,
+                "end": 1085
+            },
+            {
+                "name": "_getopt_internal",
+                "start": 1087,
+                "end": 1105
+            },
+            {
+                "name": "getopt",
+                "start": 1115,
+                "end": 1120
+            }
+        ],
+        "lib/strcasecmp.c": [
+            {
+                "name": "strcasecmp",
+                "start": 40,
+                "end": 68
+            }
+        ],
+        "lib/fdset.c": [
+            {
+                "name": "initialize_fdset",
+                "start": 78,
+                "end": 85
+            },
+            {
+                "name": "finalize_fdset",
+                "start": 90,
+                "end": 97
+            },
+            {
+                "name": "add_fd_to_fdset",
+                "start": 102,
+                "end": 112
+            },
+            {
+                "name": "shutdown_fdset",
+                "start": 117,
+                "end": 132
+            },
+            {
+                "name": "close_fdset",
+                "start": 137,
+                "end": 152
+            }
+        ],
+        "lib/openmax.c": [
+            {
+                "name": "get_open_max",
+                "start": 62,
+                "end": 91
+            }
+        ],
+        "lib/wildcard.c": [
+            {
+                "name": "match_wildcard",
+                "start": 38,
+                "end": 69
+            }
+        ],
+        "lib/readconf.c": [
+            {
+                "name": "find_directive",
+                "start": 53,
+                "end": 54
+            },
+            {
+                "name": "read_configuration",
+                "start": 79,
+                "end": 396
+            },
+            {
+                "name": "find_directive",
+                "start": 405,
+                "end": 420
+            },
+            {
+                "name": "reset_configuration",
+                "start": 426,
+                "end": 438
+            },
+            {
+                "name": "check_configuration",
+                "start": 450,
+                "end": 466
+            }
+        ],
+        "lib/logpid.c": [
+            {
+                "name": "log_pid_file",
+                "start": 104,
+                "end": 162
+            },
+            {
+                "name": "remove_pid_file",
+                "start": 169,
+                "end": 184
+            },
+            {
+                "name": "probe_pid_file",
+                "start": 191,
+                "end": 204
+            },
+            {
+                "name": "read_pid_file",
+                "start": 211,
+                "end": 270
+            }
+        ],
+        "lib/strtol.c": [
+            {
+                "name": "__strtol_internal",
+                "start": 161,
+                "end": 344
+            },
+            {
+                "name": "strtol",
+                "start": 361,
+                "end": 371
+            }
+        ],
+        "lib/permission.h": [
+            {
+                "name": "test_permission",
+                "start": 52,
+                "end": 53
+            }
+        ],
+        "lib/permission.c": [
+            {
+                "name": "initialize_permission",
+                "start": 100,
+                "end": 105
+            },
+            {
+                "name": "finalize_permission",
+                "start": 111,
+                "end": 128
+            },
+            {
+                "name": "add_permission",
+                "start": 139,
+                "end": 226
+            },
+            {
+                "name": "strnopbrk",
+                "start": 233,
+                "end": 254
+            },
+            {
+                "name": "test_permission",
+                "start": 261,
+                "end": 310
+            },
+            {
+                "name": "count_permission",
+                "start": 316,
+                "end": 328
+            }
+        ],
+        "lib/ioall.c": [
+            {
+                "name": "write_string_all",
+                "start": 195,
+                "end": 202
+            }
+        ],
+        "lib/getaddrinfo.c": [
+            {
+                "name": "gai_strerror",
+                "start": 214,
+                "end": 222
+            },
+            {
+                "name": "freeaddrinfo",
+                "start": 227,
+                "end": 242
+            },
+            {
+                "name": "is_integer",
+                "start": 247,
+                "end": 261
+            },
+            {
+                "name": "is_address",
+                "start": 268,
+                "end": 287
+            },
+            {
+                "name": "itoa_length",
+                "start": 293,
+                "end": 310
+            },
+            {
+                "name": "getaddrinfo",
+                "start": 315,
+                "end": 499
+            },
+            {
+                "name": "getnameinfo",
+                "start": 504,
+                "end": 592
+            }
+        ],
+        "lib/mappedaddr.c": [
+            {
+                "name": "ipv4_to_mapped_ipv6_address",
+                "start": 73,
+                "end": 81
+            },
+            {
+                "name": "mapped_ipv6_to_ipv4_address",
+                "start": 83,
+                "end": 94
+            },
+            {
+                "name": "ipv4_to_mapped_ipv6_net_mask",
+                "start": 97,
+                "end": 105
+            },
+            {
+                "name": "mapped_ipv6_to_ipv4_net_mask",
+                "start": 107,
+                "end": 118
+            }
+        ],
+        "lib/confutil.c": [
+            {
+                "name": "parse_integer",
+                "start": 87,
+                "end": 105
+            },
+            {
+                "name": "parse_tcp_port",
+                "start": 118,
+                "end": 137
+            },
+            {
+                "name": "parse_udp_port",
+                "start": 150,
+                "end": 169
+            },
+            {
+                "name": "parse_user",
+                "start": 182,
+                "end": 199
+            },
+            {
+                "name": "parse_group",
+                "start": 212,
+                "end": 229
+            },
+            {
+                "name": "parse_on_off",
+                "start": 243,
+                "end": 256
+            },
+            {
+                "name": "parse_syslog_facility",
+                "start": 342,
+                "end": 359
+            }
+        ],
+        "lib/serverport.c": [
+            {
+                "name": "set_server_ports",
+                "start": 126,
+                "end": 234
+            },
+            {
+                "name": "wait_server_ports",
+                "start": 247,
+                "end": 285
+            }
+        ],
+        "lib/inet_pton.c": [
+            {
+                "name": "inet_pton",
+                "start": 105,
+                "end": 123
+            },
+            {
+                "name": "inet_pton4",
+                "start": 135,
+                "end": 174
+            },
+            {
+                "name": "inet_pton6",
+                "start": 189,
+                "end": 272
+            }
+        ],
+        "lib/ticket.c": [
+            {
+                "name": "initialize_ticket_stock",
+                "start": 76,
+                "end": 84
+            },
+            {
+                "name": "bind_ticket_stock",
+                "start": 93,
+                "end": 130
+            },
+            {
+                "name": "get_ticket",
+                "start": 138,
+                "end": 171
+            },
+            {
+                "name": "unget_ticket",
+                "start": 180,
+                "end": 205
+            },
+            {
+                "name": "have_ticket",
+                "start": 211,
+                "end": 216
+            },
+            {
+                "name": "finalize_ticket_stock",
+                "start": 222,
+                "end": 245
+            }
+        ],
+        "lib/makedir.c": [
+            {
+                "name": "make_missing_directory",
+                "start": 96,
+                "end": 118
+            },
+            {
+                "name": "make_missing_directory_chain",
+                "start": 128,
+                "end": 155
+            }
+        ],
+        "lib/inet_pton2.c": [
+            {
+                "name": "inet_prefix_pton_ipv6",
+                "start": 99,
+                "end": 100
+            },
+            {
+                "name": "inet_prefix_pton_ipv4",
+                "start": 102,
+                "end": 103
+            },
+            {
+                "name": "inet_pton2",
+                "start": 124,
+                "end": 142
+            },
+            {
+                "name": "inet_pton2_ipv6",
+                "start": 149,
+                "end": 209
+            },
+            {
+                "name": "inet_pton2_ipv4",
+                "start": 216,
+                "end": 240
+            },
+            {
+                "name": "inet_prefix_pton",
+                "start": 260,
+                "end": 278
+            },
+            {
+                "name": "inet_prefix_pton2",
+                "start": 284,
+                "end": 303
+            },
+            {
+                "name": "inet_prefix_pton_ipv6",
+                "start": 309,
+                "end": 425
+            },
+            {
+                "name": "ipv6_net_mask_length_to_address",
+                "start": 432,
+                "end": 451
+            },
+            {
+                "name": "inet_prefix_pton_ipv4",
+                "start": 458,
+                "end": 550
+            },
+            {
+                "name": "ipv4_net_mask_length_to_address",
+                "start": 557,
+                "end": 576
+            }
+        ],
+        "lib/filename.c": [
+            {
+                "name": "canonicalize_file_name",
+                "start": 95,
+                "end": 125
+            }
+        ],
+        "lib/fakelog.c": [
+            {
+                "name": "set_fakelog_name",
+                "start": 92,
+                "end": 103
+            },
+            {
+                "name": "set_fakelog_mode",
+                "start": 109,
+                "end": 114
+            },
+            {
+                "name": "set_fakelog_level",
+                "start": 120,
+                "end": 169
+            },
+            {
+                "name": "fakelog",
+                "start": 198,
+                "end": 313
+            }
+        ],
+        "lib/privilege.c": [
+            {
+                "name": "set_privilege",
+                "start": 58,
+                "end": 119
+            }
+        ],
+        "ndtpd/global.c": [
+            {
+                "name": "initialize_global_variables",
+                "start": 203,
+                "end": 221
+            },
+            {
+                "name": "finalize_global_variables",
+                "start": 227,
+                "end": 233
+            }
+        ],
+        "ndtpd/book.c": [
+            {
+                "name": "initialize_book_registry",
+                "start": 80,
+                "end": 85
+            },
+            {
+                "name": "finalize_book_registry",
+                "start": 93,
+                "end": 110
+            },
+            {
+                "name": "count_book_registry",
+                "start": 116,
+                "end": 127
+            },
+            {
+                "name": "activate_book_registry",
+                "start": 133,
+                "end": 198
+            },
+            {
+                "name": "add_book",
+                "start": 206,
+                "end": 245
+            },
+            {
+                "name": "find_book",
+                "start": 291,
+                "end": 306
+            },
+            {
+                "name": "check_book_permissions",
+                "start": 388,
+                "end": 397
+            },
+            {
+                "name": "set_all_book_permissions",
+                "start": 404,
+                "end": 411
+            }
+        ],
+        "ndtpd/hookset.c": [
+            {
+                "name": "set_common_hooks",
+                "start": 76,
+                "end": 80
+            },
+            {
+                "name": "set_bitmap_hooks",
+                "start": 86,
+                "end": 90
+            },
+            {
+                "name": "set_text_hooks",
+                "start": 96,
+                "end": 100
+            }
+        ],
+        "ndtpd/misc.c": [
+            {
+                "name": "output_version",
+                "start": 28,
+                "end": 35
+            },
+            {
+                "name": "output_try_help",
+                "start": 41,
+                "end": 46
+            }
+        ],
+        "ndtpd/ndtpcontrol.c": [
+            {
+                "name": "main",
+                "start": 142,
+                "end": 323
+            },
+            {
+                "name": "get_sub_command",
+                "start": 329,
+                "end": 360
+            },
+            {
+                "name": "output_help",
+                "start": 366,
+                "end": 386
+            }
+        ],
+        "ndtpd/ndtpcheck.c": [
+            {
+                "name": "main",
+                "start": 92,
+                "end": 221
+            },
+            {
+                "name": "output_help",
+                "start": 227,
+                "end": 243
+            }
+        ],
+        "ndtpd/ndtp.c": [
+            {
+                "name": "protocol_main",
+                "start": 167,
+                "end": 252
+            },
+            {
+                "name": "command_L",
+                "start": 259,
+                "end": 462
+            },
+            {
+                "name": "command_Q",
+                "start": 468,
+                "end": 485
+            },
+            {
+                "name": "command_A",
+                "start": 492,
+                "end": 506
+            },
+            {
+                "name": "command_u",
+                "start": 513,
+                "end": 538
+            },
+            {
+                "name": "command_P",
+                "start": 550,
+                "end": 817
+            },
+            {
+                "name": "command_F",
+                "start": 825,
+                "end": 907
+            },
+            {
+                "name": "command_S",
+                "start": 915,
+                "end": 1023
+            },
+            {
+                "name": "command_I",
+                "start": 1030,
+                "end": 1097
+            },
+            {
+                "name": "command_v",
+                "start": 1103,
+                "end": 1128
+            },
+            {
+                "name": "command_T",
+                "start": 1134,
+                "end": 1192
+            },
+            {
+                "name": "command_t",
+                "start": 1199,
+                "end": 1264
+            },
+            {
+                "name": "command_X",
+                "start": 1270,
+                "end": 1294
+            },
+            {
+                "name": "command_XI",
+                "start": 1300,
+                "end": 1357
+            },
+            {
+                "name": "command_XL",
+                "start": 1363,
+                "end": 1481
+            },
+            {
+                "name": "command_XB",
+                "start": 1488,
+                "end": 1665
+            },
+            {
+                "name": "command_Xb",
+                "start": 1671,
+                "end": 1781
+            },
+            {
+                "name": "command_XS",
+                "start": 1787,
+                "end": 1901
+            },
+            {
+                "name": "book_number_to_name",
+                "start": 1911,
+                "end": 1963
+            },
+            {
+                "name": "reverse_word",
+                "start": 1972,
+                "end": 2018
+            },
+            {
+                "name": "iso8859_1_to_ascii_str",
+                "start": 2047,
+                "end": 2058
+            }
+        ],
+        "ndtpd/ndtpd.c": [
+            {
+                "name": "main",
+                "start": 191,
+                "end": 363
+            },
+            {
+                "name": "standalone_main",
+                "start": 369,
+                "end": 741
+            },
+            {
+                "name": "inetd_main",
+                "start": 747,
+                "end": 871
+            },
+            {
+                "name": "test_main",
+                "start": 877,
+                "end": 943
+            },
+            {
+                "name": "output_help",
+                "start": 949,
+                "end": 973
+            },
+            {
+                "name": "block_signal",
+                "start": 1018,
+                "end": 1036
+            },
+            {
+                "name": "unblock_signal",
+                "start": 1047,
+                "end": 1066
+            },
+            {
+                "name": "abort_parent",
+                "start": 1072,
+                "end": 1088
+            },
+            {
+                "name": "abort_child",
+                "start": 1094,
+                "end": 1105
+            },
+            {
+                "name": "terminate_parent",
+                "start": 1111,
+                "end": 1152
+            },
+            {
+                "name": "terminate_child",
+                "start": 1158,
+                "end": 1177
+            },
+            {
+                "name": "wait_child",
+                "start": 1183,
+                "end": 1211
+            },
+            {
+                "name": "restart_parent",
+                "start": 1217,
+                "end": 1227
+            }
+        ],
+        "ndtpd/config.c": [
+            {
+                "name": "cf_begin",
+                "start": 160,
+                "end": 183
+            },
+            {
+                "name": "cf_end",
+                "start": 189,
+                "end": 230
+            },
+            {
+                "name": "cf_ebnet_port",
+                "start": 236,
+                "end": 267
+            },
+            {
+                "name": "cf_ndtp_port",
+                "start": 273,
+                "end": 304
+            },
+            {
+                "name": "cf_http_port",
+                "start": 310,
+                "end": 341
+            },
+            {
+                "name": "cf_user",
+                "start": 347,
+                "end": 369
+            },
+            {
+                "name": "cf_group",
+                "start": 375,
+                "end": 397
+            },
+            {
+                "name": "cf_max_clients",
+                "start": 403,
+                "end": 425
+            },
+            {
+                "name": "cf_hosts",
+                "start": 431,
+                "end": 453
+            },
+            {
+                "name": "cf_timeout",
+                "start": 459,
+                "end": 481
+            },
+            {
+                "name": "cf_work_path",
+                "start": 487,
+                "end": 523
+            },
+            {
+                "name": "cf_max_hits",
+                "start": 529,
+                "end": 551
+            },
+            {
+                "name": "cf_max_text_size",
+                "start": 557,
+                "end": 582
+            },
+            {
+                "name": "cf_syslog_facility",
+                "start": 588,
+                "end": 610
+            },
+            {
+                "name": "cf_begin_book",
+                "start": 616,
+                "end": 638
+            },
+            {
+                "name": "cf_end_book",
+                "start": 644,
+                "end": 675
+            },
+            {
+                "name": "cf_book_name",
+                "start": 681,
+                "end": 730
+            },
+            {
+                "name": "cf_book_title",
+                "start": 736,
+                "end": 762
+            },
+            {
+                "name": "cf_book_path",
+                "start": 768,
+                "end": 811
+            },
+            {
+                "name": "cf_appendix_path",
+                "start": 817,
+                "end": 860
+            },
+            {
+                "name": "cf_book_max_clients",
+                "start": 866,
+                "end": 888
+            },
+            {
+                "name": "cf_book_hosts",
+                "start": 894,
+                "end": 916
+            }
+        ],
+        "ebtiny/util.c": [
+            {
+                "name": "eb_fix_directory_name",
+                "start": 80,
+                "end": 118
+            },
+            {
+                "name": "eb_find_file_name",
+                "start": 137,
+                "end": 234
+            }
+        ],
+        "ebtiny/eb.c": [
+            {
+                "name": "eb_initialize_library",
+                "start": 24,
+                "end": 28
+            },
+            {
+                "name": "eb_finalize_library",
+                "start": 31,
+                "end": 34
+            }
+        ]
+    }
+}

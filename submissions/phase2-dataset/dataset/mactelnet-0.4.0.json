@@ -1,0 +1,342 @@
+{
+    "mactelnet-0.4.0": {
+        "users.c": [
+            {
+                "name": "read_userfile",
+                "start": 28,
+                "end": 61
+            },
+            {
+                "name": "find_user",
+                "start": 63,
+                "end": 73
+            }
+        ],
+        "md5.c": [
+            {
+                "name": "md5_process",
+                "start": 131,
+                "end": 310
+            },
+            {
+                "name": "md5_init",
+                "start": 312,
+                "end": 320
+            },
+            {
+                "name": "md5_append",
+                "start": 322,
+                "end": 358
+            },
+            {
+                "name": "md5_finish",
+                "start": 360,
+                "end": 381
+            }
+        ],
+        "console.c": [
+            {
+                "name": "raw_term",
+                "start": 29,
+                "end": 50
+            },
+            {
+                "name": "reset_term",
+                "start": 52,
+                "end": 58
+            },
+            {
+                "name": "get_terminal_size",
+                "start": 60,
+                "end": 72
+            },
+            {
+                "name": "set_terminal_size",
+                "start": 74,
+                "end": 86
+            }
+        ],
+        "protocol.c": [
+            {
+                "name": "init_packet",
+                "start": 39,
+                "end": 77
+            },
+            {
+                "name": "add_control_packet",
+                "start": 79,
+                "end": 122
+            },
+            {
+                "name": "init_pingpacket",
+                "start": 124,
+                "end": 133
+            },
+            {
+                "name": "init_pongpacket",
+                "start": 135,
+                "end": 144
+            },
+            {
+                "name": "add_packetdata",
+                "start": 146,
+                "end": 156
+            },
+            {
+                "name": "parse_packet",
+                "start": 158,
+                "end": 193
+            },
+            {
+                "name": "parse_control_packet",
+                "start": 196,
+                "end": 259
+            },
+            {
+                "name": "mndp_init_packet",
+                "start": 261,
+                "end": 271
+            },
+            {
+                "name": "mndp_add_attribute",
+                "start": 273,
+                "end": 295
+            },
+            {
+                "name": "parse_mndp",
+                "start": 298,
+                "end": 399
+            },
+            {
+                "name": "query_mndp",
+                "start": 401,
+                "end": 487
+            },
+            {
+                "name": "query_mndp_or_mac",
+                "start": 493,
+                "end": 546
+            }
+        ],
+        "mactelnetd.c": [
+            {
+                "name": "list_add_connection",
+                "start": 137,
+                "end": 148
+            },
+            {
+                "name": "list_remove_connection",
+                "start": 150,
+                "end": 180
+            },
+            {
+                "name": "list_find_connection",
+                "start": 182,
+                "end": 196
+            },
+            {
+                "name": "find_socket",
+                "start": 198,
+                "end": 211
+            },
+            {
+                "name": "setup_sockets",
+                "start": 213,
+                "end": 252
+            },
+            {
+                "name": "send_udp",
+                "start": 254,
+                "end": 266
+            },
+            {
+                "name": "send_special_udp",
+                "start": 268,
+                "end": 283
+            },
+            {
+                "name": "display_motd",
+                "start": 286,
+                "end": 296
+            },
+            {
+                "name": "display_nologin",
+                "start": 298,
+                "end": 308
+            },
+            {
+                "name": "uwtmp_login",
+                "start": 310,
+                "end": 336
+            },
+            {
+                "name": "uwtmp_logout",
+                "start": 338,
+                "end": 361
+            },
+            {
+                "name": "abort_connection",
+                "start": 363,
+                "end": 374
+            },
+            {
+                "name": "user_login",
+                "start": 376,
+                "end": 533
+            },
+            {
+                "name": "handle_data_packet",
+                "start": 535,
+                "end": 618
+            },
+            {
+                "name": "handle_packet",
+                "start": 620,
+                "end": 731
+            },
+            {
+                "name": "daemonize",
+                "start": 733,
+                "end": 756
+            },
+            {
+                "name": "print_version",
+                "start": 758,
+                "end": 760
+            },
+            {
+                "name": "mndp_broadcast",
+                "start": 762,
+                "end": 810
+            },
+            {
+                "name": "sigterm_handler",
+                "start": 812,
+                "end": 843
+            },
+            {
+                "name": "sighup_handler",
+                "start": 845,
+                "end": 881
+            },
+            {
+                "name": "main",
+                "start": 886,
+                "end": 1153
+            }
+        ],
+        "mndp.c": [
+            {
+                "name": "main",
+                "start": 37,
+                "end": 120
+            }
+        ],
+        "mactelnet.c": [
+            {
+                "name": "print_version",
+                "start": 93,
+                "end": 95
+            },
+            {
+                "name": "drop_privileges",
+                "start": 97,
+                "end": 119
+            },
+            {
+                "name": "send_udp",
+                "start": 121,
+                "end": 185
+            },
+            {
+                "name": "send_auth",
+                "start": 187,
+                "end": 229
+            },
+            {
+                "name": "sig_winch",
+                "start": 231,
+                "end": 250
+            },
+            {
+                "name": "handle_packet",
+                "start": 252,
+                "end": 344
+            },
+            {
+                "name": "find_interface",
+                "start": 346,
+                "end": 422
+            },
+            {
+                "name": "main",
+                "start": 427,
+                "end": 699
+            }
+        ],
+        "interfaces.c": [
+            {
+                "name": "net_get_interface_ptr",
+                "start": 48,
+                "end": 68
+            },
+            {
+                "name": "net_update_mac",
+                "start": 71,
+                "end": 97
+            },
+            {
+                "name": "get_device_index",
+                "start": 99,
+                "end": 113
+            },
+            {
+                "name": "net_get_interfaces",
+                "start": 116,
+                "end": 181
+            },
+            {
+                "name": "in_cksum",
+                "start": 183,
+                "end": 204
+            },
+            {
+                "name": "udp_sum_calc",
+                "start": 206,
+                "end": 248
+            },
+            {
+                "name": "net_init_raw_socket",
+                "start": 250,
+                "end": 270
+            },
+            {
+                "name": "net_send_udp",
+                "start": 272,
+                "end": 378
+            }
+        ],
+        "macping.c": [
+            {
+                "name": "print_version",
+                "start": 62,
+                "end": 64
+            },
+            {
+                "name": "toddiff",
+                "start": 66,
+                "end": 72
+            },
+            {
+                "name": "display_results",
+                "start": 74,
+                "end": 98
+            },
+            {
+                "name": "main",
+                "start": 100,
+                "end": 338
+            }
+        ]
+    }
+}

@@ -1,0 +1,1476 @@
+{
+    "gngb-20060309": {
+        "src/rom.c": [
+            {
+                "name": "check_dir",
+                "start": 54,
+                "end": 73
+            },
+            {
+                "name": "get_ext_nb",
+                "start": 75,
+                "end": 77
+            },
+            {
+                "name": "get_bmp_ext_nb",
+                "start": 79,
+                "end": 81
+            },
+            {
+                "name": "set_gameboy_type",
+                "start": 83,
+                "end": 92
+            },
+            {
+                "name": "check_gameboy_type",
+                "start": 94,
+                "end": 102
+            },
+            {
+                "name": "open_rom",
+                "start": 104,
+                "end": 260
+            }
+        ],
+        "src/fileio.c": [
+            {
+                "name": "get_type_file",
+                "start": 48,
+                "end": 71
+            },
+            {
+                "name": "gngb_file_open",
+                "start": 73,
+                "end": 122
+            },
+            {
+                "name": "gngb_file_close",
+                "start": 124,
+                "end": 159
+            },
+            {
+                "name": "gngb_file_read",
+                "start": 161,
+                "end": 193
+            },
+            {
+                "name": "gngb_file_write",
+                "start": 195,
+                "end": 228
+            },
+            {
+                "name": "gngb_file_seek",
+                "start": 230,
+                "end": 265
+            },
+            {
+                "name": "gngb_file_eof",
+                "start": 267,
+                "end": 302
+            }
+        ],
+        "src/video_yuy2.c": [
+            {
+                "name": "init_video_yuy2",
+                "start": 31,
+                "end": 68
+            },
+            {
+                "name": "blit_screen_yuy2",
+                "start": 70,
+                "end": 111
+            },
+            {
+                "name": "blit_sgb_mask_yuy2",
+                "start": 113,
+                "end": 121
+            }
+        ],
+        "src/cpu.c": [
+            {
+                "name": "get_word",
+                "start": 64,
+                "end": 75
+            },
+            {
+                "name": "get_byte",
+                "start": 77,
+                "end": 84
+            },
+            {
+                "name": "push_r",
+                "start": 86,
+                "end": 94
+            },
+            {
+                "name": "pop_r",
+                "start": 96,
+                "end": 104
+            },
+            {
+                "name": "gbcpu_init",
+                "start": 140,
+                "end": 144
+            },
+            {
+                "name": "gbcpu_reset",
+                "start": 146,
+                "end": 167
+            },
+            {
+                "name": "unknown",
+                "start": 171,
+                "end": 174
+            },
+            {
+                "name": "gbcpu_exec_one",
+                "start": 179,
+                "end": 2809
+            },
+            {
+                "name": "rom_timer_inc",
+                "start": 2811,
+                "end": 2827
+            },
+            {
+                "name": "cpu_run",
+                "start": 2829,
+                "end": 2954
+            }
+        ],
+        "src/vram.c": [
+            {
+                "name": "GetValue",
+                "start": 73,
+                "end": 76
+            },
+            {
+                "name": "save_gb_screen",
+                "start": 78,
+                "end": 81
+            },
+            {
+                "name": "get_mini_screenshot",
+                "start": 83,
+                "end": 119
+            },
+            {
+                "name": "GenFilter",
+                "start": 121,
+                "end": 144
+            },
+            {
+                "name": "update_all_pal",
+                "start": 146,
+                "end": 153
+            },
+            {
+                "name": "gb_set_pal",
+                "start": 155,
+                "end": 162
+            },
+            {
+                "name": "init_pallete",
+                "start": 164,
+                "end": 168
+            },
+            {
+                "name": "reinit_vram",
+                "start": 171,
+                "end": 174
+            },
+            {
+                "name": "init_vram",
+                "start": 176,
+                "end": 231
+            },
+            {
+                "name": "blit_screen",
+                "start": 233,
+                "end": 238
+            },
+            {
+                "name": "switch_fullscreen",
+                "start": 240,
+                "end": 243
+            },
+            {
+                "name": "get_nb_spr",
+                "start": 245,
+                "end": 297
+            },
+            {
+                "name": "clear_screen",
+                "start": 299,
+                "end": 308
+            }
+        ],
+        "src/serial.c": [
+            {
+                "name": "gngb_closesocket",
+                "start": 60,
+                "end": 66
+            },
+            {
+                "name": "gbserial_close",
+                "start": 68,
+                "end": 71
+            },
+            {
+                "name": "gbserial_signal_recv",
+                "start": 73,
+                "end": 93
+            },
+            {
+                "name": "gbserial_init",
+                "start": 95,
+                "end": 195
+            },
+            {
+                "name": "gbserial_send",
+                "start": 197,
+                "end": 214
+            },
+            {
+                "name": "gbserial_receive",
+                "start": 216,
+                "end": 234
+            },
+            {
+                "name": "gbserial_check2",
+                "start": 236,
+                "end": 255
+            },
+            {
+                "name": "gbserial_wait_data",
+                "start": 257,
+                "end": 266
+            },
+            {
+                "name": "thread_fun",
+                "start": 268,
+                "end": 281
+            },
+            {
+                "name": "gbserial_check",
+                "start": 286,
+                "end": 300
+            },
+            {
+                "name": "gbserial_read",
+                "start": 304,
+                "end": 310
+            },
+            {
+                "name": "gbserial_write",
+                "start": 316,
+                "end": 318
+            }
+        ],
+        "src/frame_skip.c": [
+            {
+                "name": "reset_frame_skip",
+                "start": 52,
+                "end": 59
+            },
+            {
+                "name": "get_ticks",
+                "start": 61,
+                "end": 71
+            },
+            {
+                "name": "frame_skip",
+                "start": 73,
+                "end": 127
+            }
+        ],
+        "src/sound.c": [
+            {
+                "name": "update_sound_reg",
+                "start": 69,
+                "end": 73
+            },
+            {
+                "name": "write_sound_reg",
+                "start": 76,
+                "end": 258
+            },
+            {
+                "name": "read_sound_reg",
+                "start": 260,
+                "end": 331
+            },
+            {
+                "name": "init_freq_table",
+                "start": 335,
+                "end": 352
+            },
+            {
+                "name": "update_snd_m1",
+                "start": 355,
+                "end": 472
+            },
+            {
+                "name": "update_snd_m2",
+                "start": 474,
+                "end": 560
+            },
+            {
+                "name": "update_snd_m3",
+                "start": 562,
+                "end": 651
+            },
+            {
+                "name": "update_snd_m4",
+                "start": 653,
+                "end": 781
+            },
+            {
+                "name": "update_gb_sound",
+                "start": 785,
+                "end": 885
+            },
+            {
+                "name": "update_stream",
+                "start": 888,
+                "end": 912
+            },
+            {
+                "name": "gbsound_init",
+                "start": 915,
+                "end": 957
+            },
+            {
+                "name": "close_sound",
+                "start": 959,
+                "end": 967
+            }
+        ],
+        "src/video_yv12.c": [
+            {
+                "name": "init_video_yv12",
+                "start": 31,
+                "end": 67
+            },
+            {
+                "name": "blit_screen_yv12",
+                "start": 69,
+                "end": 113
+            },
+            {
+                "name": "blit_sgb_mask_yv12",
+                "start": 115,
+                "end": 140
+            }
+        ],
+        "src/message.c": [
+            {
+                "name": "draw_char",
+                "start": 48,
+                "end": 65
+            },
+            {
+                "name": "draw_message",
+                "start": 67,
+                "end": 72
+            },
+            {
+                "name": "restore_message_pal",
+                "start": 74,
+                "end": 79
+            },
+            {
+                "name": "init_message",
+                "start": 82,
+                "end": 98
+            },
+            {
+                "name": "set_message",
+                "start": 99,
+                "end": 112
+            },
+            {
+                "name": "set_info",
+                "start": 114,
+                "end": 123
+            },
+            {
+                "name": "unset_info",
+                "start": 125,
+                "end": 127
+            },
+            {
+                "name": "update_message",
+                "start": 129,
+                "end": 146
+            }
+        ],
+        "src/menu.c": [
+            {
+                "name": "action_save_state",
+                "start": 60,
+                "end": 65
+            },
+            {
+                "name": "action_load_state",
+                "start": 67,
+                "end": 72
+            },
+            {
+                "name": "menu_draw_state",
+                "start": 74,
+                "end": 91
+            },
+            {
+                "name": "action_loop_menu",
+                "start": 93,
+                "end": 98
+            },
+            {
+                "name": "toggle_fullscreen",
+                "start": 100,
+                "end": 104
+            },
+            {
+                "name": "toggle_filter",
+                "start": 106,
+                "end": 114
+            },
+            {
+                "name": "menu_draw_pal",
+                "start": 117,
+                "end": 138
+            },
+            {
+                "name": "action_setpal",
+                "start": 140,
+                "end": 145
+            },
+            {
+                "name": "action_reset",
+                "start": 147,
+                "end": 151
+            },
+            {
+                "name": "toggle_autofskip",
+                "start": 153,
+                "end": 157
+            },
+            {
+                "name": "toggle_sound",
+                "start": 159,
+                "end": 168
+            },
+            {
+                "name": "toggle_sleepidle",
+                "start": 170,
+                "end": 174
+            },
+            {
+                "name": "toggle_fps",
+                "start": 176,
+                "end": 184
+            },
+            {
+                "name": "action_set_filter",
+                "start": 186,
+                "end": 191
+            },
+            {
+                "name": "new_menu_item",
+                "start": 238,
+                "end": 247
+            },
+            {
+                "name": "menu_push_back_item",
+                "start": 249,
+                "end": 259
+            },
+            {
+                "name": "draw_v_line",
+                "start": 261,
+                "end": 269
+            },
+            {
+                "name": "draw_h_line",
+                "start": 271,
+                "end": 279
+            },
+            {
+                "name": "draw_border",
+                "start": 282,
+                "end": 311
+            },
+            {
+                "name": "display_menu",
+                "start": 313,
+                "end": 379
+            },
+            {
+                "name": "init_menu",
+                "start": 381,
+                "end": 526
+            },
+            {
+                "name": "loop_menu",
+                "start": 528,
+                "end": 598
+            }
+        ],
+        "src/unzip.c": [
+            {
+                "name": "unzlocal_getByte",
+                "start": 136,
+                "end": 154
+            },
+            {
+                "name": "unzlocal_getShort",
+                "start": 160,
+                "end": 180
+            },
+            {
+                "name": "unzlocal_getLong",
+                "start": 182,
+                "end": 210
+            },
+            {
+                "name": "strcmpcasenosensitive_internal",
+                "start": 214,
+                "end": 235
+            },
+            {
+                "name": "unzStringFileNameCompare",
+                "start": 257,
+                "end": 269
+            },
+            {
+                "name": "unzlocal_SearchCentralDir",
+                "start": 277,
+                "end": 331
+            },
+            {
+                "name": "unzOpen",
+                "start": 342,
+                "end": 433
+            },
+            {
+                "name": "unzClose",
+                "start": 441,
+                "end": 455
+            },
+            {
+                "name": "unzGetGlobalInfo",
+                "start": 462,
+                "end": 472
+            },
+            {
+                "name": "unzlocal_DosDateToTmuDate",
+                "start": 478,
+                "end": 491
+            },
+            {
+                "name": "unzlocal_GetCurrentFileInfoInternal",
+                "start": 507,
+                "end": 665
+            },
+            {
+                "name": "unzGetCurrentFileInfo",
+                "start": 674,
+                "end": 692
+            },
+            {
+                "name": "unzGoToFirstFile",
+                "start": 698,
+                "end": 713
+            },
+            {
+                "name": "unzGoToNextFile",
+                "start": 721,
+                "end": 743
+            },
+            {
+                "name": "unzLocateFile",
+                "start": 754,
+                "end": 797
+            },
+            {
+                "name": "unzlocal_CheckCurrentFileCoherencyHeader",
+                "start": 807,
+                "end": 891
+            },
+            {
+                "name": "unzOpenCurrentFile",
+                "start": 897,
+                "end": 985
+            },
+            {
+                "name": "unzReadCurrentFile",
+                "start": 998,
+                "end": 1119
+            },
+            {
+                "name": "unztell",
+                "start": 1125,
+                "end": 1139
+            },
+            {
+                "name": "unzeof",
+                "start": 1145,
+                "end": 1162
+            },
+            {
+                "name": "unzGetLocalExtrafield",
+                "start": 1178,
+                "end": 1219
+            },
+            {
+                "name": "unzCloseCurrentFile",
+                "start": 1225,
+                "end": 1259
+            },
+            {
+                "name": "unzGetGlobalComment",
+                "start": 1267,
+                "end": 1296
+            }
+        ],
+        "src/getopt.h": [
+            {
+                "name": "getopt_long",
+                "start": 151,
+                "end": 152
+            },
+            {
+                "name": "getopt_long_only",
+                "start": 153,
+                "end": 155
+            },
+            {
+                "name": "_getopt_internal",
+                "start": 158,
+                "end": 161
+            }
+        ],
+        "src/emu.c": [
+            {
+                "name": "print_help",
+                "start": 143,
+                "end": 177
+            },
+            {
+                "name": "setup_default_conf",
+                "start": 179,
+                "end": 224
+            },
+            {
+                "name": "discard_line",
+                "start": 228,
+                "end": 235
+            },
+            {
+                "name": "read_tab",
+                "start": 236,
+                "end": 252
+            },
+            {
+                "name": "open_conf",
+                "start": 254,
+                "end": 305
+            },
+            {
+                "name": "check_option",
+                "start": 307,
+                "end": 354
+            },
+            {
+                "name": "update_key",
+                "start": 356,
+                "end": 496
+            },
+            {
+                "name": "emu_init",
+                "start": 498,
+                "end": 532
+            },
+            {
+                "name": "emu_run",
+                "start": 534,
+                "end": 536
+            },
+            {
+                "name": "emu_reset",
+                "start": 538,
+                "end": 544
+            },
+            {
+                "name": "emu_pause",
+                "start": 546,
+                "end": 547
+            },
+            {
+                "name": "emu_quit",
+                "start": 549,
+                "end": 554
+            }
+        ],
+        "src/video_std.c": [
+            {
+                "name": "blit_std_with_scanline",
+                "start": 61,
+                "end": 88
+            },
+            {
+                "name": "blit_std_with_scanline50",
+                "start": 90,
+                "end": 122
+            },
+            {
+                "name": "blit_std_with_filter_s2x",
+                "start": 124,
+                "end": 256
+            },
+            {
+                "name": "blit_std_with_filter_smooth",
+                "start": 257,
+                "end": 376
+            },
+            {
+                "name": "blit_std_with_mblur",
+                "start": 377,
+                "end": 386
+            },
+            {
+                "name": "set_filter",
+                "start": 388,
+                "end": 418
+            },
+            {
+                "name": "blit_screen_default_std",
+                "start": 420,
+                "end": 442
+            },
+            {
+                "name": "blit_screen_sgb_std",
+                "start": 444,
+                "end": 477
+            },
+            {
+                "name": "init_video_std",
+                "start": 479,
+                "end": 531
+            },
+            {
+                "name": "blit_sgb_mask_std",
+                "start": 533,
+                "end": 536
+            },
+            {
+                "name": "draw_spr_std",
+                "start": 538,
+                "end": 557
+            },
+            {
+                "name": "draw_obj_std",
+                "start": 559,
+                "end": 564
+            },
+            {
+                "name": "draw_back_std",
+                "start": 566,
+                "end": 607
+            },
+            {
+                "name": "draw_win_std",
+                "start": 611,
+                "end": 644
+            },
+            {
+                "name": "draw_spr_col_std",
+                "start": 648,
+                "end": 687
+            },
+            {
+                "name": "draw_obj_col_std",
+                "start": 690,
+                "end": 695
+            },
+            {
+                "name": "draw_back_col_std",
+                "start": 697,
+                "end": 765
+            },
+            {
+                "name": "draw_win_col_std",
+                "start": 767,
+                "end": 819
+            },
+            {
+                "name": "draw_back_sgb_std",
+                "start": 824,
+                "end": 869
+            },
+            {
+                "name": "draw_win_sgb_std",
+                "start": 871,
+                "end": 905
+            },
+            {
+                "name": "draw_spr_sgb_std",
+                "start": 907,
+                "end": 933
+            },
+            {
+                "name": "draw_obj_sgb_std",
+                "start": 935,
+                "end": 940
+            },
+            {
+                "name": "draw_screen_wb_std",
+                "start": 942,
+                "end": 952
+            },
+            {
+                "name": "draw_screen_col_std",
+                "start": 954,
+                "end": 963
+            },
+            {
+                "name": "draw_screen_sgb_std",
+                "start": 965,
+                "end": 976
+            },
+            {
+                "name": "clear_screen_std",
+                "start": 978,
+                "end": 990
+            }
+        ],
+        "src/save.c": [
+            {
+                "name": "get_filename_ext",
+                "start": 12,
+                "end": 28
+            },
+            {
+                "name": "get_name_without_ext",
+                "start": 30,
+                "end": 52
+            },
+            {
+                "name": "load_ram",
+                "start": 57,
+                "end": 74
+            },
+            {
+                "name": "save_ram",
+                "start": 76,
+                "end": 93
+            },
+            {
+                "name": "save_rom_timer",
+                "start": 97,
+                "end": 116
+            },
+            {
+                "name": "load_rom_timer",
+                "start": 118,
+                "end": 189
+            },
+            {
+                "name": "save_load_cpu_reg",
+                "start": 271,
+                "end": 288
+            },
+            {
+                "name": "save_load_cpu_flag",
+                "start": 290,
+                "end": 303
+            },
+            {
+                "name": "save_load_lcd_cycles",
+                "start": 305,
+                "end": 320
+            },
+            {
+                "name": "save_load_lcd_info",
+                "start": 322,
+                "end": 333
+            },
+            {
+                "name": "save_load_pal",
+                "start": 335,
+                "end": 352
+            },
+            {
+                "name": "save_load_timer",
+                "start": 354,
+                "end": 363
+            },
+            {
+                "name": "save_load_dma",
+                "start": 365,
+                "end": 380
+            },
+            {
+                "name": "save_load_rt_reg",
+                "start": 382,
+                "end": 392
+            },
+            {
+                "name": "save_load_rt_info",
+                "start": 394,
+                "end": 405
+            },
+            {
+                "name": "save_load_pad_movie",
+                "start": 407,
+                "end": 429
+            },
+            {
+                "name": "get_pad_movie_section_size",
+                "start": 431,
+                "end": 433
+            },
+            {
+                "name": "load_section",
+                "start": 435,
+                "end": 454
+            },
+            {
+                "name": "save_section",
+                "start": 456,
+                "end": 473
+            },
+            {
+                "name": "get_surface_of_save_state",
+                "start": 475,
+                "end": 488
+            },
+            {
+                "name": "save_state_file",
+                "start": 490,
+                "end": 518
+            },
+            {
+                "name": "save_state",
+                "start": 520,
+                "end": 550
+            },
+            {
+                "name": "load_state_file",
+                "start": 552,
+                "end": 603
+            },
+            {
+                "name": "load_state",
+                "start": 605,
+                "end": 640
+            },
+            {
+                "name": "begin_save_movie",
+                "start": 648,
+                "end": 655
+            },
+            {
+                "name": "end_save_movie",
+                "start": 657,
+                "end": 663
+            },
+            {
+                "name": "play_movie",
+                "start": 665,
+                "end": 675
+            },
+            {
+                "name": "movie_get_next_pad",
+                "start": 677,
+                "end": 685
+            },
+            {
+                "name": "movie_add_pad",
+                "start": 687,
+                "end": 699
+            }
+        ],
+        "src/sgb.c": [
+            {
+                "name": "sgb_init",
+                "start": 46,
+                "end": 70
+            },
+            {
+                "name": "sgb_tiles_pat_transfer",
+                "start": 74,
+                "end": 85
+            },
+            {
+                "name": "sgb_tiles_map_transfer",
+                "start": 87,
+                "end": 115
+            },
+            {
+                "name": "sgb_draw_one_tile",
+                "start": 117,
+                "end": 162
+            },
+            {
+                "name": "sgb_draw_tiles",
+                "start": 164,
+                "end": 177
+            },
+            {
+                "name": "set_pal_Hline",
+                "start": 181,
+                "end": 185
+            },
+            {
+                "name": "set_pal_Vline",
+                "start": 187,
+                "end": 191
+            },
+            {
+                "name": "set_pal_Hline_range",
+                "start": 193,
+                "end": 198
+            },
+            {
+                "name": "set_pal_Vline_range",
+                "start": 200,
+                "end": 205
+            },
+            {
+                "name": "set_pal_inside_block",
+                "start": 207,
+                "end": 216
+            },
+            {
+                "name": "set_pal_outside_block",
+                "start": 218,
+                "end": 227
+            },
+            {
+                "name": "set_pal_on_block",
+                "start": 229,
+                "end": 248
+            },
+            {
+                "name": "sgb_block_mode",
+                "start": 250,
+                "end": 316
+            },
+            {
+                "name": "sgb_line_mode",
+                "start": 318,
+                "end": 348
+            },
+            {
+                "name": "sgb_divide_mode",
+                "start": 350,
+                "end": 367
+            },
+            {
+                "name": "sgb_1chr_mode",
+                "start": 370,
+                "end": 414
+            },
+            {
+                "name": "set_ATF_nf",
+                "start": 416,
+                "end": 433
+            },
+            {
+                "name": "sgb_set_ATF",
+                "start": 435,
+                "end": 445
+            },
+            {
+                "name": "sgb_set_data_ATF",
+                "start": 447,
+                "end": 450
+            },
+            {
+                "name": "sgb_set_scpal_data",
+                "start": 454,
+                "end": 470
+            },
+            {
+                "name": "sgb_set_pal_indirect",
+                "start": 472,
+                "end": 483
+            },
+            {
+                "name": "sgb_setpal",
+                "start": 486,
+                "end": 500
+            },
+            {
+                "name": "sgb_function",
+                "start": 504,
+                "end": 509
+            },
+            {
+                "name": "sgb_window_mask",
+                "start": 511,
+                "end": 531
+            },
+            {
+                "name": "sgb_exec_cmd",
+                "start": 533,
+                "end": 611
+            }
+        ],
+        "src/interrupt.c": [
+            {
+                "name": "get_nb_cycle",
+                "start": 38,
+                "end": 45
+            },
+            {
+                "name": "make_interrupt",
+                "start": 47,
+                "end": 67
+            },
+            {
+                "name": "go2double_speed",
+                "start": 69,
+                "end": 77
+            },
+            {
+                "name": "go2simple_speed",
+                "start": 79,
+                "end": 87
+            },
+            {
+                "name": "gblcdc_init",
+                "start": 91,
+                "end": 94
+            },
+            {
+                "name": "gblcdc_reset",
+                "start": 96,
+                "end": 115
+            },
+            {
+                "name": "gblcdc_set_on",
+                "start": 117,
+                "end": 127
+            },
+            {
+                "name": "gblcdc_update",
+                "start": 129,
+                "end": 259
+            },
+            {
+                "name": "gblcdc_update2",
+                "start": 263,
+                "end": 390
+            },
+            {
+                "name": "gblcdc_set_on3",
+                "start": 395,
+                "end": 406
+            },
+            {
+                "name": "gblcdc_update3",
+                "start": 408,
+                "end": 507
+            },
+            {
+                "name": "gblcdc_addcycle",
+                "start": 511,
+                "end": 525
+            },
+            {
+                "name": "gbtimer_init",
+                "start": 530,
+                "end": 533
+            },
+            {
+                "name": "gbtimer_reset",
+                "start": 535,
+                "end": 538
+            },
+            {
+                "name": "gbtimer_update",
+                "start": 540,
+                "end": 547
+            },
+            {
+                "name": "halt_update",
+                "start": 549,
+                "end": 555
+            }
+        ],
+        "src/memory.c": [
+            {
+                "name": "set_mem_read_direct_access",
+                "start": 130,
+                "end": 133
+            },
+            {
+                "name": "set_mem_write_direct_access",
+                "start": 135,
+                "end": 138
+            },
+            {
+                "name": "set_mem_read_fun_access",
+                "start": 140,
+                "end": 143
+            },
+            {
+                "name": "set_mem_write_fun_access",
+                "start": 145,
+                "end": 148
+            },
+            {
+                "name": "set_active_rom_page",
+                "start": 150,
+                "end": 157
+            },
+            {
+                "name": "set_active_vram_page",
+                "start": 159,
+                "end": 166
+            },
+            {
+                "name": "set_active_ram_page",
+                "start": 168,
+                "end": 177
+            },
+            {
+                "name": "set_active_wram_page",
+                "start": 179,
+                "end": 191
+            },
+            {
+                "name": "disable_ram",
+                "start": 193,
+                "end": 200
+            },
+            {
+                "name": "enable_ram",
+                "start": 202,
+                "end": 205
+            },
+            {
+                "name": "select_default",
+                "start": 207,
+                "end": 210
+            },
+            {
+                "name": "mbc1_select_page",
+                "start": 212,
+                "end": 217
+            },
+            {
+                "name": "mbc2_select_page",
+                "start": 219,
+                "end": 227
+            },
+            {
+                "name": "mbc3_select_page",
+                "start": 229,
+                "end": 234
+            },
+            {
+                "name": "mbc5_select_page",
+                "start": 236,
+                "end": 246
+            },
+            {
+                "name": "gbmemory_init",
+                "start": 249,
+                "end": 294
+            },
+            {
+                "name": "gbmemory_reset",
+                "start": 296,
+                "end": 433
+            },
+            {
+                "name": "push_stack_word",
+                "start": 435,
+                "end": 444
+            },
+            {
+                "name": "alloc_mem_page",
+                "start": 446,
+                "end": 456
+            },
+            {
+                "name": "free_mem_page",
+                "start": 458,
+                "end": 466
+            },
+            {
+                "name": "do_hdma",
+                "start": 470,
+                "end": 489
+            },
+            {
+                "name": "do_gdma",
+                "start": 491,
+                "end": 519
+            },
+            {
+                "name": "hdma_request",
+                "start": 522,
+                "end": 553
+            },
+            {
+                "name": "gdma_request",
+                "start": 555,
+                "end": 572
+            },
+            {
+                "name": "do_dma",
+                "start": 575,
+                "end": 609
+            },
+            {
+                "name": "mem_read_ff",
+                "start": 613,
+                "end": 684
+            },
+            {
+                "name": "mem_read_a000_bfff_default",
+                "start": 686,
+                "end": 689
+            },
+            {
+                "name": "mem_read_f000_ffff_default",
+                "start": 691,
+                "end": 696
+            },
+            {
+                "name": "timer_read_a000_bfff",
+                "start": 699,
+                "end": 705
+            },
+            {
+                "name": "mem_read_default",
+                "start": 707,
+                "end": 738
+            },
+            {
+                "name": "update_gb_pad",
+                "start": 740,
+                "end": 804
+            },
+            {
+                "name": "write2lcdccont",
+                "start": 808,
+                "end": 826
+            },
+            {
+                "name": "mem_write_ff",
+                "start": 828,
+                "end": 1096
+            },
+            {
+                "name": "mbc1_write_4000_5fff",
+                "start": 1100,
+                "end": 1104
+            },
+            {
+                "name": "mbc1_write_6000_7fff",
+                "start": 1106,
+                "end": 1109
+            },
+            {
+                "name": "rumble_write_4000_5fff",
+                "start": 1113,
+                "end": 1117
+            },
+            {
+                "name": "rom_timer_lock",
+                "start": 1121,
+                "end": 1123
+            },
+            {
+                "name": "rom_timer_write",
+                "start": 1125,
+                "end": 1134
+            },
+            {
+                "name": "timer_write_a000_bfff",
+                "start": 1136,
+                "end": 1144
+            },
+            {
+                "name": "timer_write_4000_5fff",
+                "start": 1146,
+                "end": 1148
+            },
+            {
+                "name": "timer_write_6000_7fff",
+                "start": 1150,
+                "end": 1153
+            },
+            {
+                "name": "mem_write_0000_1fff_default",
+                "start": 1158,
+                "end": 1161
+            },
+            {
+                "name": "mem_write_2000_3fff_default",
+                "start": 1163,
+                "end": 1165
+            },
+            {
+                "name": "mem_write_4000_5fff_default",
+                "start": 1167,
+                "end": 1169
+            },
+            {
+                "name": "mem_write_6000_7fff_default",
+                "start": 1171,
+                "end": 1173
+            },
+            {
+                "name": "mem_write_a000_bfff_default",
+                "start": 1175,
+                "end": 1178
+            },
+            {
+                "name": "mem_write_f000_ffff_default",
+                "start": 1193,
+                "end": 1207
+            },
+            {
+                "name": "mem_write_default",
+                "start": 1251,
+                "end": 1325
+            }
+        ],
+        "src/video_yuv.c": [
+            {
+                "name": "init_message_yuv",
+                "start": 28,
+                "end": 30
+            },
+            {
+                "name": "init_rgb2yuv_table",
+                "start": 32,
+                "end": 52
+            },
+            {
+                "name": "reinit_video_yuv",
+                "start": 55,
+                "end": 61
+            }
+        ],
+        "src/main.c": [
+            {
+                "name": "exit_gngb",
+                "start": 50,
+                "end": 59
+            },
+            {
+                "name": "main",
+                "start": 61,
+                "end": 83
+            }
+        ]
+    }
+}

@@ -1,0 +1,1220 @@
+{
+    "mooproxy-1.0.0": {
+        "misc.h": [
+            {
+                "name": "flush_buffer",
+                "start": 137,
+                "end": 139
+            }
+        ],
+        "daemon.c": [
+            {
+                "name": "set_up_signal_handlers",
+                "start": 52,
+                "end": 79
+            },
+            {
+                "name": "uptime_started_now",
+                "start": 83,
+                "end": 91
+            },
+            {
+                "name": "uptime_started_at",
+                "start": 95,
+                "end": 98
+            },
+            {
+                "name": "daemonize",
+                "start": 102,
+                "end": 142
+            },
+            {
+                "name": "launch_parent_exit",
+                "start": 146,
+                "end": 149
+            },
+            {
+                "name": "world_acquire_lock_file",
+                "start": 153,
+                "end": 203
+            },
+            {
+                "name": "pid_from_pidfile",
+                "start": 207,
+                "end": 238
+            },
+            {
+                "name": "world_write_pid_to_file",
+                "start": 242,
+                "end": 252
+            },
+            {
+                "name": "world_remove_lockfile",
+                "start": 256,
+                "end": 264
+            },
+            {
+                "name": "sighandler_sigterm",
+                "start": 268,
+                "end": 275
+            }
+        ],
+        "world.c": [
+            {
+                "name": "world_create",
+                "start": 52,
+                "end": 207
+            },
+            {
+                "name": "world_destroy",
+                "start": 211,
+                "end": 308
+            },
+            {
+                "name": "world_get_list",
+                "start": 312,
+                "end": 316
+            },
+            {
+                "name": "register_world",
+                "start": 321,
+                "end": 328
+            },
+            {
+                "name": "unregister_world",
+                "start": 333,
+                "end": 353
+            },
+            {
+                "name": "world_bindresult_init",
+                "start": 357,
+                "end": 366
+            },
+            {
+                "name": "world_bindresult_free",
+                "start": 370,
+                "end": 384
+            },
+            {
+                "name": "world_configfile_from_name",
+                "start": 388,
+                "end": 393
+            },
+            {
+                "name": "world_msg_client",
+                "start": 397,
+                "end": 409
+            },
+            {
+                "name": "world_newmsg_client",
+                "start": 413,
+                "end": 425
+            },
+            {
+                "name": "message_client",
+                "start": 433,
+                "end": 454
+            },
+            {
+                "name": "world_trim_dynamic_queues",
+                "start": 458,
+                "end": 512
+            },
+            {
+                "name": "world_recall_and_pass",
+                "start": 516,
+                "end": 628
+            },
+            {
+                "name": "world_login_server",
+                "start": 632,
+                "end": 665
+            },
+            {
+                "name": "world_inactive_to_history",
+                "start": 669,
+                "end": 672
+            },
+            {
+                "name": "world_recall_history",
+                "start": 676,
+                "end": 720
+            },
+            {
+                "name": "world_rebind_port",
+                "start": 724,
+                "end": 784
+            },
+            {
+                "name": "world_schedule_reconnect",
+                "start": 788,
+                "end": 830
+            },
+            {
+                "name": "world_do_reconnect",
+                "start": 834,
+                "end": 847
+            },
+            {
+                "name": "world_decrease_reconnect_delay",
+                "start": 851,
+                "end": 857
+            },
+            {
+                "name": "world_enable_ace",
+                "start": 861,
+                "end": 927
+            },
+            {
+                "name": "world_disable_ace",
+                "start": 931,
+                "end": 950
+            },
+            {
+                "name": "world_easteregg_server",
+                "start": 956,
+                "end": 1008
+            },
+            {
+                "name": "world_start_shutdown",
+                "start": 1012,
+                "end": 1045
+            }
+        ],
+        "timer.c": [
+            {
+                "name": "world_timer_init",
+                "start": 38,
+                "end": 50
+            },
+            {
+                "name": "world_timer_tick",
+                "start": 54,
+                "end": 90
+            },
+            {
+                "name": "tick_second",
+                "start": 95,
+                "end": 105
+            },
+            {
+                "name": "tick_minute",
+                "start": 110,
+                "end": 119
+            },
+            {
+                "name": "tick_hour",
+                "start": 124,
+                "end": 126
+            },
+            {
+                "name": "tick_day",
+                "start": 131,
+                "end": 142
+            },
+            {
+                "name": "tick_month",
+                "start": 147,
+                "end": 149
+            },
+            {
+                "name": "tick_year",
+                "start": 154,
+                "end": 160
+            }
+        ],
+        "recall.c": [
+            {
+                "name": "world_recall_command",
+                "start": 138,
+                "end": 192
+            },
+            {
+                "name": "parse_arguments",
+                "start": 199,
+                "end": 245
+            },
+            {
+                "name": "parse_keyword_index",
+                "start": 251,
+                "end": 260
+            },
+            {
+                "name": "parse_nextword",
+                "start": 266,
+                "end": 295
+            },
+            {
+                "name": "parse_keyword_from",
+                "start": 300,
+                "end": 347
+            },
+            {
+                "name": "parse_keyword_to",
+                "start": 352,
+                "end": 401
+            },
+            {
+                "name": "parse_keyword_search",
+                "start": 406,
+                "end": 423
+            },
+            {
+                "name": "parse_when",
+                "start": 430,
+                "end": 436
+            },
+            {
+                "name": "parse_when_relative",
+                "start": 444,
+                "end": 539
+            },
+            {
+                "name": "parse_when_absolute",
+                "start": 546,
+                "end": 639
+            },
+            {
+                "name": "parse_when_absdate",
+                "start": 646,
+                "end": 692
+            },
+            {
+                "name": "parse_when_abstime",
+                "start": 699,
+                "end": 735
+            },
+            {
+                "name": "parse_when_rchk",
+                "start": 742,
+                "end": 750
+            },
+            {
+                "name": "recall_search_and_recall",
+                "start": 756,
+                "end": 851
+            },
+            {
+                "name": "recall_match_one_line",
+                "start": 857,
+                "end": 883
+            },
+            {
+                "name": "recall_match",
+                "start": 889,
+                "end": 913
+            }
+        ],
+        "misc.c": [
+            {
+                "name": "xmalloc",
+                "start": 57,
+                "end": 79
+            },
+            {
+                "name": "xrealloc",
+                "start": 83,
+                "end": 104
+            },
+            {
+                "name": "xstrdup",
+                "start": 108,
+                "end": 130
+            },
+            {
+                "name": "xstrndup",
+                "start": 134,
+                "end": 156
+            },
+            {
+                "name": "xasprintf",
+                "start": 160,
+                "end": 170
+            },
+            {
+                "name": "xvasprintf",
+                "start": 174,
+                "end": 195
+            },
+            {
+                "name": "set_current_time",
+                "start": 199,
+                "end": 202
+            },
+            {
+                "name": "current_time",
+                "start": 206,
+                "end": 209
+            },
+            {
+                "name": "set_current_day",
+                "start": 213,
+                "end": 216
+            },
+            {
+                "name": "current_day",
+                "start": 220,
+                "end": 223
+            },
+            {
+                "name": "get_homedir",
+                "start": 227,
+                "end": 236
+            },
+            {
+                "name": "read_one_line",
+                "start": 240,
+                "end": 270
+            },
+            {
+                "name": "get_one_word",
+                "start": 274,
+                "end": 298
+            },
+            {
+                "name": "peek_one_word",
+                "start": 302,
+                "end": 325
+            },
+            {
+                "name": "trim_whitespace",
+                "start": 329,
+                "end": 361
+            },
+            {
+                "name": "remove_enclosing_quotes",
+                "start": 365,
+                "end": 390
+            },
+            {
+                "name": "true_or_false",
+                "start": 394,
+                "end": 414
+            },
+            {
+                "name": "time_string",
+                "start": 418,
+                "end": 434
+            },
+            {
+                "name": "time_fullstr",
+                "start": 438,
+                "end": 441
+            },
+            {
+                "name": "buffer_to_lines",
+                "start": 445,
+                "end": 512
+            },
+            {
+                "name": "flush_buffer",
+                "start": 516,
+                "end": 597
+            },
+            {
+                "name": "parse_ansi_tags",
+                "start": 601,
+                "end": 651
+            },
+            {
+                "name": "attempt_createdir",
+                "start": 655,
+                "end": 688
+            },
+            {
+                "name": "strcpy_noansi",
+                "start": 692,
+                "end": 728
+            },
+            {
+                "name": "strcpy_nobell",
+                "start": 732,
+                "end": 747
+            },
+            {
+                "name": "strcmp_under",
+                "start": 751,
+                "end": 770
+            }
+        ],
+        "config.h": [
+            {
+                "name": "world_desc_key",
+                "start": 111,
+                "end": 112
+            }
+        ],
+        "accessor.c": [
+            {
+                "name": "aset_listenport",
+                "start": 41,
+                "end": 65
+            },
+            {
+                "name": "aset_auth_hash",
+                "start": 69,
+                "end": 132
+            },
+            {
+                "name": "aset_dest_host",
+                "start": 136,
+                "end": 140
+            },
+            {
+                "name": "aset_dest_port",
+                "start": 144,
+                "end": 149
+            },
+            {
+                "name": "aset_autologin",
+                "start": 153,
+                "end": 157
+            },
+            {
+                "name": "aset_autoreconnect",
+                "start": 161,
+                "end": 175
+            },
+            {
+                "name": "aset_commandstring",
+                "start": 179,
+                "end": 183
+            },
+            {
+                "name": "aset_strict_commands",
+                "start": 187,
+                "end": 191
+            },
+            {
+                "name": "aset_infostring",
+                "start": 195,
+                "end": 202
+            },
+            {
+                "name": "aset_newinfostring",
+                "start": 206,
+                "end": 213
+            },
+            {
+                "name": "aset_context_lines",
+                "start": 217,
+                "end": 222
+            },
+            {
+                "name": "aset_buffer_size",
+                "start": 226,
+                "end": 231
+            },
+            {
+                "name": "aset_logbuffer_size",
+                "start": 235,
+                "end": 240
+            },
+            {
+                "name": "aset_logging",
+                "start": 244,
+                "end": 250
+            },
+            {
+                "name": "aset_log_timestamps",
+                "start": 254,
+                "end": 258
+            },
+            {
+                "name": "aset_easteregg_version",
+                "start": 262,
+                "end": 266
+            },
+            {
+                "name": "aget_listenport",
+                "start": 274,
+                "end": 277
+            },
+            {
+                "name": "aget_auth_hash",
+                "start": 281,
+                "end": 288
+            },
+            {
+                "name": "aget_dest_host",
+                "start": 292,
+                "end": 295
+            },
+            {
+                "name": "aget_dest_port",
+                "start": 299,
+                "end": 302
+            },
+            {
+                "name": "aget_autologin",
+                "start": 306,
+                "end": 309
+            },
+            {
+                "name": "aget_autoreconnect",
+                "start": 313,
+                "end": 316
+            },
+            {
+                "name": "aget_commandstring",
+                "start": 320,
+                "end": 323
+            },
+            {
+                "name": "aget_strict_commands",
+                "start": 327,
+                "end": 330
+            },
+            {
+                "name": "aget_infostring",
+                "start": 334,
+                "end": 337
+            },
+            {
+                "name": "aget_newinfostring",
+                "start": 341,
+                "end": 344
+            },
+            {
+                "name": "aget_context_lines",
+                "start": 348,
+                "end": 352
+            },
+            {
+                "name": "aget_buffer_size",
+                "start": 356,
+                "end": 360
+            },
+            {
+                "name": "aget_logbuffer_size",
+                "start": 364,
+                "end": 368
+            },
+            {
+                "name": "aget_logging",
+                "start": 372,
+                "end": 375
+            },
+            {
+                "name": "aget_log_timestamps",
+                "start": 379,
+                "end": 382
+            },
+            {
+                "name": "aget_easteregg_version",
+                "start": 386,
+                "end": 389
+            },
+            {
+                "name": "set_string",
+                "start": 404,
+                "end": 409
+            },
+            {
+                "name": "set_long",
+                "start": 413,
+                "end": 430
+            },
+            {
+                "name": "set_long_ranged",
+                "start": 435,
+                "end": 456
+            },
+            {
+                "name": "set_bool",
+                "start": 460,
+                "end": 475
+            },
+            {
+                "name": "get_string",
+                "start": 479,
+                "end": 483
+            },
+            {
+                "name": "get_long",
+                "start": 487,
+                "end": 491
+            },
+            {
+                "name": "get_bool",
+                "start": 495,
+                "end": 499
+            }
+        ],
+        "crypt.c": [
+            {
+                "name": "prompt_to_md5hash",
+                "start": 47,
+                "end": 95
+            },
+            {
+                "name": "prompt_for_password",
+                "start": 101,
+                "end": 162
+            },
+            {
+                "name": "looks_like_md5hash",
+                "start": 168,
+                "end": 192
+            },
+            {
+                "name": "world_match_authentication",
+                "start": 196,
+                "end": 209
+            },
+            {
+                "name": "match_string_md5hash",
+                "start": 213,
+                "end": 220
+            }
+        ],
+        "mooproxy.c": [
+            {
+                "name": "main",
+                "start": 50,
+                "end": 187
+            },
+            {
+                "name": "die",
+                "start": 192,
+                "end": 204
+            },
+            {
+                "name": "mainloop",
+                "start": 209,
+                "end": 317
+            },
+            {
+                "name": "handle_flags",
+                "start": 322,
+                "end": 387
+            },
+            {
+                "name": "print_help_text",
+                "start": 392,
+                "end": 410
+            },
+            {
+                "name": "print_version_text",
+                "start": 415,
+                "end": 420
+            },
+            {
+                "name": "print_license_text",
+                "start": 425,
+                "end": 439
+            }
+        ],
+        "mcp.c": [
+            {
+                "name": "world_is_mcp",
+                "start": 40,
+                "end": 43
+            },
+            {
+                "name": "world_do_mcp_client",
+                "start": 47,
+                "end": 89
+            },
+            {
+                "name": "world_do_mcp_server",
+                "start": 93,
+                "end": 103
+            },
+            {
+                "name": "world_mcp_server_connect",
+                "start": 107,
+                "end": 151
+            },
+            {
+                "name": "world_mcp_client_connect",
+                "start": 155,
+                "end": 213
+            },
+            {
+                "name": "mcp_is_init",
+                "start": 218,
+                "end": 221
+            },
+            {
+                "name": "mcp_is_negotiate_can",
+                "start": 226,
+                "end": 232
+            },
+            {
+                "name": "extract_mcpkey",
+                "start": 240,
+                "end": 302
+            },
+            {
+                "name": "skip_mcp_value",
+                "start": 306,
+                "end": 337
+            }
+        ],
+        "panic.c": [
+            {
+                "name": "panicreason_to_string",
+                "start": 36,
+                "end": 37
+            },
+            {
+                "name": "sighandler_panic",
+                "start": 42,
+                "end": 45
+            },
+            {
+                "name": "panic",
+                "start": 49,
+                "end": 118
+            },
+            {
+                "name": "panicreason_to_string",
+                "start": 122,
+                "end": 190
+            },
+            {
+                "name": "worldlist_to_string",
+                "start": 194,
+                "end": 208
+            }
+        ],
+        "resolve.c": [
+            {
+                "name": "world_start_server_resolve",
+                "start": 47,
+                "end": 87
+            },
+            {
+                "name": "world_cancel_server_resolve",
+                "start": 91,
+                "end": 106
+            },
+            {
+                "name": "world_handle_resolver_fd",
+                "start": 110,
+                "end": 169
+            },
+            {
+                "name": "slave_main",
+                "start": 175,
+                "end": 220
+            },
+            {
+                "name": "slave_msg_to_parent",
+                "start": 225,
+                "end": 244
+            }
+        ],
+        "config.c": [
+            {
+                "name": "set_key_internal",
+                "start": 45,
+                "end": 46
+            },
+            {
+                "name": "parse_command_line_options",
+                "start": 203,
+                "end": 286
+            },
+            {
+                "name": "world_load_config",
+                "start": 290,
+                "end": 392
+            },
+            {
+                "name": "read_configfile",
+                "start": 401,
+                "end": 454
+            },
+            {
+                "name": "world_get_key_list",
+                "start": 458,
+                "end": 474
+            },
+            {
+                "name": "world_set_key",
+                "start": 478,
+                "end": 481
+            },
+            {
+                "name": "world_get_key",
+                "start": 485,
+                "end": 488
+            },
+            {
+                "name": "world_desc_key",
+                "start": 492,
+                "end": 509
+            },
+            {
+                "name": "set_key_value",
+                "start": 515,
+                "end": 518
+            },
+            {
+                "name": "set_key_internal",
+                "start": 527,
+                "end": 537
+            },
+            {
+                "name": "get_key_internal",
+                "start": 545,
+                "end": 554
+            },
+            {
+                "name": "create_configdirs",
+                "start": 558,
+                "end": 590
+            },
+            {
+                "name": "check_configdir_perms",
+                "start": 594,
+                "end": 645
+            }
+        ],
+        "line.c": [
+            {
+                "name": "line_create",
+                "start": 33,
+                "end": 47
+            },
+            {
+                "name": "line_destroy",
+                "start": 51,
+                "end": 56
+            },
+            {
+                "name": "line_dup",
+                "start": 60,
+                "end": 76
+            },
+            {
+                "name": "linequeue_create",
+                "start": 80,
+                "end": 92
+            },
+            {
+                "name": "linequeue_destroy",
+                "start": 96,
+                "end": 101
+            },
+            {
+                "name": "linequeue_clear",
+                "start": 105,
+                "end": 119
+            },
+            {
+                "name": "linequeue_append",
+                "start": 123,
+                "end": 147
+            },
+            {
+                "name": "linequeue_pop",
+                "start": 151,
+                "end": 154
+            },
+            {
+                "name": "linequeue_popend",
+                "start": 158,
+                "end": 161
+            },
+            {
+                "name": "linequeue_remove",
+                "start": 165,
+                "end": 186
+            },
+            {
+                "name": "linequeue_merge",
+                "start": 190,
+                "end": 217
+            }
+        ],
+        "network.c": [
+            {
+                "name": "wait_for_network",
+                "start": 72,
+                "end": 143
+            },
+            {
+                "name": "create_fdset",
+                "start": 150,
+                "end": 221
+            },
+            {
+                "name": "world_bind_port",
+                "start": 225,
+                "end": 353
+            },
+            {
+                "name": "world_start_server_connect",
+                "start": 357,
+                "end": 448
+            },
+            {
+                "name": "handle_connecting_fd",
+                "start": 453,
+                "end": 510
+            },
+            {
+                "name": "server_connect_error",
+                "start": 518,
+                "end": 530
+            },
+            {
+                "name": "world_cancel_server_connect",
+                "start": 534,
+                "end": 550
+            },
+            {
+                "name": "world_disconnect_server",
+                "start": 554,
+                "end": 567
+            },
+            {
+                "name": "world_disconnect_client",
+                "start": 571,
+                "end": 592
+            },
+            {
+                "name": "handle_listen_fd",
+                "start": 598,
+                "end": 679
+            },
+            {
+                "name": "handle_auth_fd",
+                "start": 686,
+                "end": 725
+            },
+            {
+                "name": "remove_auth_connection",
+                "start": 731,
+                "end": 780
+            },
+            {
+                "name": "verify_authentication",
+                "start": 788,
+                "end": 876
+            },
+            {
+                "name": "promote_auth_connection",
+                "start": 883,
+                "end": 963
+            },
+            {
+                "name": "handle_client_fd",
+                "start": 969,
+                "end": 1001
+            },
+            {
+                "name": "handle_server_fd",
+                "start": 1007,
+                "end": 1040
+            },
+            {
+                "name": "world_flush_client_txbuf",
+                "start": 1044,
+                "end": 1054
+            },
+            {
+                "name": "world_flush_server_txbuf",
+                "start": 1058,
+                "end": 1075
+            },
+            {
+                "name": "world_auth_add_bucket",
+                "start": 1079,
+                "end": 1084
+            },
+            {
+                "name": "privileged_add",
+                "start": 1090,
+                "end": 1104
+            },
+            {
+                "name": "privileged_del",
+                "start": 1109,
+                "end": 1120
+            },
+            {
+                "name": "is_privileged",
+                "start": 1125,
+                "end": 1134
+            }
+        ],
+        "command.c": [
+            {
+                "name": "world_do_command",
+                "start": 192,
+                "end": 250
+            },
+            {
+                "name": "try_command",
+                "start": 256,
+                "end": 269
+            },
+            {
+                "name": "try_getoption",
+                "start": 275,
+                "end": 306
+            },
+            {
+                "name": "try_setoption",
+                "start": 312,
+                "end": 363
+            },
+            {
+                "name": "command_index",
+                "start": 368,
+                "end": 377
+            },
+            {
+                "name": "refuse_arguments",
+                "start": 383,
+                "end": 392
+            },
+            {
+                "name": "show_longdesc",
+                "start": 398,
+                "end": 420
+            },
+            {
+                "name": "show_help",
+                "start": 425,
+                "end": 478
+            },
+            {
+                "name": "show_command_help",
+                "start": 484,
+                "end": 503
+            },
+            {
+                "name": "show_setting_help",
+                "start": 509,
+                "end": 526
+            },
+            {
+                "name": "command_help",
+                "start": 532,
+                "end": 551
+            },
+            {
+                "name": "command_quit",
+                "start": 556,
+                "end": 573
+            },
+            {
+                "name": "command_shutdown",
+                "start": 578,
+                "end": 594
+            },
+            {
+                "name": "command_connect",
+                "start": 601,
+                "end": 690
+            },
+            {
+                "name": "command_disconnect",
+                "start": 695,
+                "end": 729
+            },
+            {
+                "name": "command_settings",
+                "start": 734,
+                "end": 764
+            },
+            {
+                "name": "command_recall",
+                "start": 769,
+                "end": 828
+            },
+            {
+                "name": "command_ace",
+                "start": 833,
+                "end": 904
+            },
+            {
+                "name": "command_version",
+                "start": 909,
+                "end": 916
+            },
+            {
+                "name": "command_date",
+                "start": 921,
+                "end": 928
+            },
+            {
+                "name": "command_uptime",
+                "start": 933,
+                "end": 944
+            },
+            {
+                "name": "command_world",
+                "start": 949,
+                "end": 984
+            },
+            {
+                "name": "command_forget",
+                "start": 989,
+                "end": 999
+            },
+            {
+                "name": "command_authinfo",
+                "start": 1004,
+                "end": 1051
+            }
+        ],
+        "log.c": [
+            {
+                "name": "world_log_line",
+                "start": 44,
+                "end": 85
+            },
+            {
+                "name": "world_flush_client_logqueue",
+                "start": 89,
+                "end": 161
+            },
+            {
+                "name": "world_sync_logdata",
+                "start": 165,
+                "end": 173
+            },
+            {
+                "name": "world_log_link_remove",
+                "start": 177,
+                "end": 184
+            },
+            {
+                "name": "world_log_link_update",
+                "start": 188,
+                "end": 216
+            },
+            {
+                "name": "update_one_link",
+                "start": 220,
+                "end": 281
+            },
+            {
+                "name": "log_init",
+                "start": 285,
+                "end": 358
+            },
+            {
+                "name": "log_deinit",
+                "start": 362,
+                "end": 379
+            },
+            {
+                "name": "log_write",
+                "start": 383,
+                "end": 400
+            },
+            {
+                "name": "nag_client_error",
+                "start": 404,
+                "end": 458
+            }
+        ]
+    }
+}

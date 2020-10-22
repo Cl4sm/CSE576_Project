@@ -1,0 +1,854 @@
+{
+    "htp-1.16": {
+        "src/html.h": [
+            {
+                "name": "ChangeAttributeValue",
+                "start": 50,
+                "end": 51
+            },
+            {
+                "name": "AddAttributeToMarkup",
+                "start": 57,
+                "end": 58
+            }
+        ],
+        "src/varstore.h": [
+            {
+                "name": "StoreVariable",
+                "start": 106,
+                "end": 107
+            }
+        ],
+        "src/util.c": [
+            {
+                "name": "MarkupType",
+                "start": 26,
+                "end": 43
+            },
+            {
+                "name": "CreateTempFilename",
+                "start": 50,
+                "end": 82
+            },
+            {
+                "name": "FindFilename",
+                "start": 127,
+                "end": 160
+            },
+            {
+                "name": "StringCopy",
+                "start": 168,
+                "end": 177
+            },
+            {
+                "name": "StringFirstToken",
+                "start": 183,
+                "end": 206
+            },
+            {
+                "name": "StringNextToken",
+                "start": 208,
+                "end": 240
+            },
+            {
+                "name": "DuplicateString",
+                "start": 247,
+                "end": 264
+            },
+            {
+                "name": "DuplicateSubString",
+                "start": 270,
+                "end": 289
+            },
+            {
+                "name": "ConvertDirDelimiter",
+                "start": 296,
+                "end": 325
+            },
+            {
+                "name": "FileExists",
+                "start": 330,
+                "end": 335
+            },
+            {
+                "name": "stpcpy",
+                "start": 338,
+                "end": 343
+            }
+        ],
+        "src/jpeg.c": [
+            {
+                "name": "JpegReadByte",
+                "start": 43,
+                "end": 53
+            },
+            {
+                "name": "JpegFirstMarker",
+                "start": 55,
+                "end": 85
+            },
+            {
+                "name": "JpegNextMarker",
+                "start": 87,
+                "end": 123
+            },
+            {
+                "name": "JpegFormatFound",
+                "start": 125,
+                "end": 158
+            },
+            {
+                "name": "JpegReadDimensions",
+                "start": 160,
+                "end": 225
+            }
+        ],
+        "src/option.h": [
+            {
+                "name": "OptionProcessor",
+                "start": 54,
+                "end": 56
+            }
+        ],
+        "src/textfile.c": [
+            {
+                "name": "OpenFile",
+                "start": 17,
+                "end": 48
+            },
+            {
+                "name": "OpenFD",
+                "start": 51,
+                "end": 69
+            },
+            {
+                "name": "CloseFile",
+                "start": 71,
+                "end": 78
+            },
+            {
+                "name": "GetFileChar",
+                "start": 80,
+                "end": 95
+            },
+            {
+                "name": "PutFileString",
+                "start": 97,
+                "end": 165
+            }
+        ],
+        "src/macro.h": [
+            {
+                "name": "ExpandMacrosInString",
+                "start": 19,
+                "end": 20
+            },
+            {
+                "name": "ExpandAll",
+                "start": 29,
+                "end": 30
+            }
+        ],
+        "src/htp-files.h": [
+            {
+                "name": "ReadHtmlMarkup",
+                "start": 50,
+                "end": 51
+            }
+        ],
+        "src/def-proc.h": [
+            {
+                "name": "BlockDestructor",
+                "start": 23,
+                "end": 24
+            },
+            {
+                "name": "ReadBlockToFile",
+                "start": 25,
+                "end": 26
+            }
+        ],
+        "src/file-proc.c": [
+            {
+                "name": "ExternalFileProcessor",
+                "start": 28,
+                "end": 166
+            },
+            {
+                "name": "FileExecuteProcessor",
+                "start": 168,
+                "end": 359
+            },
+            {
+                "name": "FileTemplateProcessor",
+                "start": 361,
+                "end": 384
+            },
+            {
+                "name": "FileIncludeProcessor",
+                "start": 386,
+                "end": 504
+            },
+            {
+                "name": "FileProcessor",
+                "start": 506,
+                "end": 587
+            },
+            {
+                "name": "OutputProcessor",
+                "start": 589,
+                "end": 627
+            }
+        ],
+        "src/option.c": [
+            {
+                "name": "SetOption",
+                "start": 43,
+                "end": 71
+            },
+            {
+                "name": "InitializeGlobalOption",
+                "start": 74,
+                "end": 88
+            },
+            {
+                "name": "DestroyGlobalOption",
+                "start": 90,
+                "end": 92
+            },
+            {
+                "name": "InitializeLocalOption",
+                "start": 94,
+                "end": 99
+            },
+            {
+                "name": "DestroyLocalOption",
+                "start": 101,
+                "end": 103
+            },
+            {
+                "name": "ParseToken",
+                "start": 105,
+                "end": 142
+            },
+            {
+                "name": "OptionProcessor",
+                "start": 144,
+                "end": 175
+            }
+        ],
+        "src/streams.c": [
+            {
+                "name": "CreateNullWriter",
+                "start": 15,
+                "end": 20
+            },
+            {
+                "name": "CreateBufferWriter",
+                "start": 22,
+                "end": 34
+            },
+            {
+                "name": "CreateBufferReader",
+                "start": 36,
+                "end": 51
+            },
+            {
+                "name": "FlushBufferWriter",
+                "start": 53,
+                "end": 67
+            },
+            {
+                "name": "CreateFileReader",
+                "start": 69,
+                "end": 76
+            },
+            {
+                "name": "CreateFDReader",
+                "start": 78,
+                "end": 85
+            },
+            {
+                "name": "CreateFileWriter",
+                "start": 87,
+                "end": 93
+            },
+            {
+                "name": "CloseStream",
+                "start": 95,
+                "end": 107
+            },
+            {
+                "name": "GetStreamChar",
+                "start": 110,
+                "end": 140
+            },
+            {
+                "name": "UnreadStreamChar",
+                "start": 142,
+                "end": 152
+            },
+            {
+                "name": "GetStreamBlock",
+                "start": 154,
+                "end": 235
+            },
+            {
+                "name": "PutStreamString",
+                "start": 237,
+                "end": 270
+            },
+            {
+                "name": "StreamPrintF",
+                "start": 272,
+                "end": 300
+            },
+            {
+                "name": "ForceLinefeeds",
+                "start": 303,
+                "end": 312
+            }
+        ],
+        "src/msg.c": [
+            {
+                "name": "HtpMsg",
+                "start": 25,
+                "end": 58
+            }
+        ],
+        "src/set-proc.c": [
+            {
+                "name": "SetProcessor",
+                "start": 19,
+                "end": 76
+            },
+            {
+                "name": "UnsetProcessor",
+                "start": 78,
+                "end": 114
+            },
+            {
+                "name": "IncProcessor",
+                "start": 117,
+                "end": 181
+            }
+        ],
+        "src/gif.c": [
+            {
+                "name": "GifFormatFound",
+                "start": 15,
+                "end": 41
+            },
+            {
+                "name": "GifReadDimensions",
+                "start": 43,
+                "end": 66
+            }
+        ],
+        "src/html.c": [
+            {
+                "name": "FindWhitespace",
+                "start": 16,
+                "end": 30
+            },
+            {
+                "name": "FindNonWhitespace",
+                "start": 32,
+                "end": 46
+            },
+            {
+                "name": "MakeAttribute",
+                "start": 52,
+                "end": 84
+            },
+            {
+                "name": "ChangeAttributeName",
+                "start": 86,
+                "end": 100
+            },
+            {
+                "name": "ChangeAttributeValue",
+                "start": 102,
+                "end": 118
+            },
+            {
+                "name": "DestroyAttribute",
+                "start": 120,
+                "end": 140
+            },
+            {
+                "name": "PlaintextToMarkup",
+                "start": 156,
+                "end": 305
+            },
+            {
+                "name": "AddAttributeToMarkup",
+                "start": 307,
+                "end": 336
+            },
+            {
+                "name": "DestroyMarkupStruct",
+                "start": 338,
+                "end": 369
+            },
+            {
+                "name": "IsMarkupTag",
+                "start": 371,
+                "end": 377
+            },
+            {
+                "name": "MarkupToPlaintext",
+                "start": 379,
+                "end": 527
+            },
+            {
+                "name": "FindMarkupAttribute",
+                "start": 529,
+                "end": 543
+            },
+            {
+                "name": "MarkupAttributeValue",
+                "start": 545,
+                "end": 560
+            },
+            {
+                "name": "ChangeMarkupTag",
+                "start": 562,
+                "end": 575
+            },
+            {
+                "name": "UnlinkAttributeInMarkup",
+                "start": 577,
+                "end": 594
+            },
+            {
+                "name": "UnlinkBoolAttributeInMarkup",
+                "start": 596,
+                "end": 621
+            }
+        ],
+        "src/image.c": [
+            {
+                "name": "FindImageUrl",
+                "start": 29,
+                "end": 39
+            },
+            {
+                "name": "ExistsImageUrl",
+                "start": 41,
+                "end": 44
+            },
+            {
+                "name": "StoreImageUrl",
+                "start": 47,
+                "end": 70
+            },
+            {
+                "name": "RemoveImageUrl",
+                "start": 73,
+                "end": 94
+            },
+            {
+                "name": "GetPathFor",
+                "start": 98,
+                "end": 126
+            },
+            {
+                "name": "OpenImageFile",
+                "start": 144,
+                "end": 190
+            },
+            {
+                "name": "CloseImageFile",
+                "start": 192,
+                "end": 203
+            },
+            {
+                "name": "GetImageDimensions",
+                "start": 205,
+                "end": 217
+            }
+        ],
+        "src/snprintf.c": [
+            {
+                "name": "dopr",
+                "start": 197,
+                "end": 198
+            },
+            {
+                "name": "fmtstr",
+                "start": 199,
+                "end": 200
+            },
+            {
+                "name": "fmtint",
+                "start": 201,
+                "end": 202
+            },
+            {
+                "name": "fmtfp",
+                "start": 203,
+                "end": 204
+            },
+            {
+                "name": "dopr",
+                "start": 207,
+                "end": 468
+            },
+            {
+                "name": "fmtstr",
+                "start": 470,
+                "end": 504
+            },
+            {
+                "name": "fmtint",
+                "start": 508,
+                "end": 590
+            },
+            {
+                "name": "abs_val",
+                "start": 592,
+                "end": 600
+            },
+            {
+                "name": "POW10",
+                "start": 602,
+                "end": 612
+            },
+            {
+                "name": "ROUND",
+                "start": 614,
+                "end": 623
+            },
+            {
+                "name": "my_modf",
+                "start": 627,
+                "end": 658
+            },
+            {
+                "name": "fmtfp",
+                "start": 661,
+                "end": 811
+            },
+            {
+                "name": "dopr_outch",
+                "start": 813,
+                "end": 819
+            },
+            {
+                "name": "vsnprintf",
+                "start": 821,
+                "end": 824
+            },
+            {
+                "name": "snprintf",
+                "start": 834,
+                "end": 843
+            }
+        ],
+        "src/def-proc.c": [
+            {
+                "name": "BlockDestructor",
+                "start": 25,
+                "end": 41
+            },
+            {
+                "name": "ReadBlockToFile",
+                "start": 43,
+                "end": 190
+            },
+            {
+                "name": "ReadinBlock",
+                "start": 192,
+                "end": 216
+            },
+            {
+                "name": "BlockProcessor",
+                "start": 218,
+                "end": 345
+            },
+            {
+                "name": "UndefProcessor",
+                "start": 348,
+                "end": 386
+            }
+        ],
+        "src/misc-proc.c": [
+            {
+                "name": "HeadProcessor",
+                "start": 19,
+                "end": 35
+            },
+            {
+                "name": "HtpCommentProcessor",
+                "start": 38,
+                "end": 45
+            },
+            {
+                "name": "QuoteProcessor",
+                "start": 47,
+                "end": 67
+            },
+            {
+                "name": "ConditionalWarning",
+                "start": 71,
+                "end": 78
+            },
+            {
+                "name": "PreProcessor",
+                "start": 82,
+                "end": 97
+            }
+        ],
+        "src/htp-files.c": [
+            {
+                "name": "HtpDefaultFilename",
+                "start": 25,
+                "end": 46
+            },
+            {
+                "name": "IsTargetUpdated",
+                "start": 57,
+                "end": 110
+            },
+            {
+                "name": "SearchForFile",
+                "start": 117,
+                "end": 179
+            },
+            {
+                "name": "FreeMarkupBuffer",
+                "start": 184,
+                "end": 187
+            },
+            {
+                "name": "ReadHtmlMarkup",
+                "start": 194,
+                "end": 356
+            },
+            {
+                "name": "FullyCheckDependencies",
+                "start": 358,
+                "end": 505
+            }
+        ],
+        "src/use-proc.c": [
+            {
+                "name": "UseProcessor",
+                "start": 19,
+                "end": 197
+            }
+        ],
+        "src/png.c": [
+            {
+                "name": "PngFormatFound",
+                "start": 17,
+                "end": 59
+            },
+            {
+                "name": "PngReadDimensions",
+                "start": 62,
+                "end": 87
+            }
+        ],
+        "src/while-proc.c": [
+            {
+                "name": "ConditionValue",
+                "start": 21,
+                "end": 86
+            },
+            {
+                "name": "ProcessWhileBlock",
+                "start": 89,
+                "end": 107
+            },
+            {
+                "name": "WhileProcessor",
+                "start": 109,
+                "end": 203
+            }
+        ],
+        "src/image-proc.c": [
+            {
+                "name": "ImageProcessor",
+                "start": 23,
+                "end": 105
+            },
+            {
+                "name": "AltTextProcessor",
+                "start": 108,
+                "end": 166
+            },
+            {
+                "name": "ImageUrlProcessor",
+                "start": 168,
+                "end": 214
+            }
+        ],
+        "src/ver.c": [
+            {
+                "name": "DisplayHeader",
+                "start": 19,
+                "end": 25
+            },
+            {
+                "name": "usage",
+                "start": 27,
+                "end": 38
+            }
+        ],
+        "src/htp.c": [
+            {
+                "name": "ProcessTask",
+                "start": 30,
+                "end": 121
+            },
+            {
+                "name": "ProcessFileByName",
+                "start": 123,
+                "end": 284
+            },
+            {
+                "name": "ProcessDefaultFile",
+                "start": 286,
+                "end": 319
+            },
+            {
+                "name": "ProcessResponseFile",
+                "start": 321,
+                "end": 502
+            },
+            {
+                "name": "main",
+                "start": 504,
+                "end": 661
+            }
+        ],
+        "src/macro.c": [
+            {
+                "name": "FindMatchingBrace",
+                "start": 67,
+                "end": 99
+            },
+            {
+                "name": "ExpandMacrosInString",
+                "start": 101,
+                "end": 320
+            },
+            {
+                "name": "ExpandMacros",
+                "start": 322,
+                "end": 389
+            },
+            {
+                "name": "ExpandMetatag",
+                "start": 392,
+                "end": 672
+            },
+            {
+                "name": "ExpandAll",
+                "start": 675,
+                "end": 724
+            }
+        ],
+        "src/bool-proc.c": [
+            {
+                "name": "EvaluateIfTag",
+                "start": 21,
+                "end": 76
+            },
+            {
+                "name": "DiscardConditionalBlock",
+                "start": 78,
+                "end": 143
+            },
+            {
+                "name": "BooleanProcessor",
+                "start": 146,
+                "end": 210
+            }
+        ],
+        "src/varstore.c": [
+            {
+                "name": "VariableSplay",
+                "start": 35,
+                "end": 115
+            },
+            {
+                "name": "InitializeVariableStore",
+                "start": 117,
+                "end": 128
+            },
+            {
+                "name": "DestroyVariable",
+                "start": 133,
+                "end": 148
+            },
+            {
+                "name": "ClearVariableTree",
+                "start": 150,
+                "end": 159
+            },
+            {
+                "name": "DestroyVariableStore",
+                "start": 161,
+                "end": 176
+            },
+            {
+                "name": "FindVariable",
+                "start": 178,
+                "end": 199
+            },
+            {
+                "name": "GetVariableValue",
+                "start": 201,
+                "end": 219
+            },
+            {
+                "name": "StoreVariable",
+                "start": 221,
+                "end": 270
+            },
+            {
+                "name": "UpdateVariableValue",
+                "start": 275,
+                "end": 305
+            },
+            {
+                "name": "GetVariableType",
+                "start": 307,
+                "end": 324
+            },
+            {
+                "name": "GetVariableFlag",
+                "start": 326,
+                "end": 339
+            },
+            {
+                "name": "RemoveVariable",
+                "start": 341,
+                "end": 376
+            },
+            {
+                "name": "VariableExists",
+                "start": 378,
+                "end": 387
+            },
+            {
+                "name": "GetVariableParam",
+                "start": 389,
+                "end": 402
+            },
+            {
+                "name": "PushVariableStoreContext",
+                "start": 404,
+                "end": 414
+            },
+            {
+                "name": "PopVariableStoreContext",
+                "start": 416,
+                "end": 426
+            }
+        ]
+    }
+}

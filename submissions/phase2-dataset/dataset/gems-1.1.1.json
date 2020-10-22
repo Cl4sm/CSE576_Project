@@ -1,0 +1,340 @@
+{
+    "gems-1.1.1": {
+        "client/source/gems-client.c": [
+            {
+                "name": "print_msg",
+                "start": 78,
+                "end": 87
+            },
+            {
+                "name": "set_tty_settings",
+                "start": 92,
+                "end": 119
+            },
+            {
+                "name": "get_server_address",
+                "start": 124,
+                "end": 145
+            },
+            {
+                "name": "connect_with_server",
+                "start": 150,
+                "end": 174
+            },
+            {
+                "name": "start_comm",
+                "start": 179,
+                "end": 227
+            },
+            {
+                "name": "do_output",
+                "start": 232,
+                "end": 244
+            },
+            {
+                "name": "do_server_input",
+                "start": 250,
+                "end": 285
+            },
+            {
+                "name": "print_help",
+                "start": 289,
+                "end": 293
+            },
+            {
+                "name": "long_help",
+                "start": 297,
+                "end": 309
+            },
+            {
+                "name": "parse_args",
+                "start": 314,
+                "end": 371
+            },
+            {
+                "name": "parse_key",
+                "start": 377,
+                "end": 394
+            },
+            {
+                "name": "init_client",
+                "start": 398,
+                "end": 445
+            },
+            {
+                "name": "finish_client",
+                "start": 449,
+                "end": 456
+            },
+            {
+                "name": "main",
+                "start": 459,
+                "end": 494
+            }
+        ],
+        "common/protocol.c": [
+            {
+                "name": "get_stream",
+                "start": 73,
+                "end": 93
+            },
+            {
+                "name": "get_msg",
+                "start": 104,
+                "end": 130
+            },
+            {
+                "name": "send_msg",
+                "start": 139,
+                "end": 156
+            },
+            {
+                "name": "send_version",
+                "start": 163,
+                "end": 172
+            },
+            {
+                "name": "get_peer_version",
+                "start": 183,
+                "end": 202
+            },
+            {
+                "name": "send_ack",
+                "start": 209,
+                "end": 217
+            },
+            {
+                "name": "get_ack",
+                "start": 225,
+                "end": 237
+            },
+            {
+                "name": "send_disconnect",
+                "start": 244,
+                "end": 252
+            },
+            {
+                "name": "send_winsize",
+                "start": 259,
+                "end": 275
+            },
+            {
+                "name": "compare_winsize",
+                "start": 283,
+                "end": 304
+            },
+            {
+                "name": "get_cols_rows",
+                "start": 311,
+                "end": 320
+            },
+            {
+                "name": "get_winsize",
+                "start": 329,
+                "end": 344
+            }
+        ],
+        "common/sighandlers.c": [
+            {
+                "name": "install_sighandlers",
+                "start": 47,
+                "end": 52
+            },
+            {
+                "name": "sigint_handler",
+                "start": 55,
+                "end": 59
+            },
+            {
+                "name": "sigwinch_handler",
+                "start": 62,
+                "end": 66
+            },
+            {
+                "name": "sigchld_handler",
+                "start": 69,
+                "end": 73
+            }
+        ],
+        "server/source/gems-server.h": [
+            {
+                "name": "add_waiting_client",
+                "start": 84,
+                "end": 85
+            }
+        ],
+        "server/source/gems-server.c": [
+            {
+                "name": "init_sock_server",
+                "start": 70,
+                "end": 113
+            },
+            {
+                "name": "close_sockets",
+                "start": 120,
+                "end": 131
+            },
+            {
+                "name": "validate_client",
+                "start": 140,
+                "end": 186
+            },
+            {
+                "name": "add_waiting_client",
+                "start": 193,
+                "end": 218
+            },
+            {
+                "name": "accept_new_client",
+                "start": 225,
+                "end": 258
+            },
+            {
+                "name": "add_client",
+                "start": 265,
+                "end": 309
+            },
+            {
+                "name": "remove_waiting_client",
+                "start": 316,
+                "end": 338
+            },
+            {
+                "name": "check_new_client",
+                "start": 349,
+                "end": 386
+            },
+            {
+                "name": "kill_waiting_clients",
+                "start": 393,
+                "end": 414
+            },
+            {
+                "name": "init_clsock",
+                "start": 421,
+                "end": 433
+            },
+            {
+                "name": "del_client",
+                "start": 441,
+                "end": 474
+            },
+            {
+                "name": "send_to_all",
+                "start": 481,
+                "end": 501
+            },
+            {
+                "name": "send_input_to_clients",
+                "start": 508,
+                "end": 523
+            },
+            {
+                "name": "attend_client",
+                "start": 531,
+                "end": 536
+            },
+            {
+                "name": "send_winsize_to_clients",
+                "start": 543,
+                "end": 553
+            },
+            {
+                "name": "init_data",
+                "start": 560,
+                "end": 575
+            },
+            {
+                "name": "check_winsize",
+                "start": 581,
+                "end": 593
+            },
+            {
+                "name": "gems_server",
+                "start": 600,
+                "end": 665
+            }
+        ],
+        "server/source/call_script.c": [
+            {
+                "name": "start_script",
+                "start": 62,
+                "end": 118
+            },
+            {
+                "name": "kill_script",
+                "start": 126,
+                "end": 139
+            }
+        ],
+        "server/source/main.c": [
+            {
+                "name": "main",
+                "start": 65,
+                "end": 90
+            },
+            {
+                "name": "parse_args",
+                "start": 93,
+                "end": 187
+            },
+            {
+                "name": "create_lock",
+                "start": 191,
+                "end": 210
+            },
+            {
+                "name": "release_lock",
+                "start": 214,
+                "end": 217
+            },
+            {
+                "name": "short_help",
+                "start": 221,
+                "end": 228
+            },
+            {
+                "name": "long_help",
+                "start": 231,
+                "end": 251
+            },
+            {
+                "name": "init_options",
+                "start": 254,
+                "end": 264
+            },
+            {
+                "name": "cmpstr",
+                "start": 268,
+                "end": 279
+            },
+            {
+                "name": "check_options",
+                "start": 282,
+                "end": 304
+            },
+            {
+                "name": "init_server",
+                "start": 325,
+                "end": 372
+            }
+        ],
+        "server/source/log.c": [
+            {
+                "name": "g_set_logdest",
+                "start": 91,
+                "end": 103
+            },
+            {
+                "name": "g_log",
+                "start": 118,
+                "end": 155
+            },
+            {
+                "name": "g_time",
+                "start": 160,
+                "end": 172
+            }
+        ]
+    }
+}

@@ -1,0 +1,594 @@
+{
+    "nbd-3.8": {
+        "cliserv.h": [
+            {
+                "name": "setmysockopt",
+                "start": 64,
+                "end": 80
+            },
+            {
+                "name": "err_nonfatal",
+                "start": 92,
+                "end": 116
+            },
+            {
+                "name": "err",
+                "start": 120,
+                "end": 123
+            },
+            {
+                "name": "logging",
+                "start": 125,
+                "end": 131
+            },
+            {
+                "name": "ntohll",
+                "start": 138,
+                "end": 144
+            }
+        ],
+        "nbd-client.c": [
+            {
+                "name": "check_conn",
+                "start": 53,
+                "end": 79
+            },
+            {
+                "name": "opennet",
+                "start": 81,
+                "end": 134
+            },
+            {
+                "name": "ask_list",
+                "start": 136,
+                "end": 230
+            },
+            {
+                "name": "negotiate",
+                "start": 232,
+                "end": 331
+            },
+            {
+                "name": "setsizes",
+                "start": 333,
+                "end": 357
+            },
+            {
+                "name": "set_timeout",
+                "start": 359,
+                "end": 365
+            },
+            {
+                "name": "finish_sock",
+                "start": 367,
+                "end": 373
+            },
+            {
+                "name": "oom_adjust",
+                "start": 375,
+                "end": 388
+            },
+            {
+                "name": "usage",
+                "start": 390,
+                "end": 412
+            },
+            {
+                "name": "disconnect",
+                "start": 414,
+                "end": 426
+            },
+            {
+                "name": "main",
+                "start": 428,
+                "end": 674
+            }
+        ],
+        "nbd-server.c": [
+            {
+                "name": "getcommandname",
+                "start": 244,
+                "end": 259
+            },
+            {
+                "name": "readit",
+                "start": 268,
+                "end": 281
+            },
+            {
+                "name": "consume",
+                "start": 291,
+                "end": 298
+            },
+            {
+                "name": "writeit",
+                "start": 307,
+                "end": 316
+            },
+            {
+                "name": "usage",
+                "start": 322,
+                "end": 338
+            },
+            {
+                "name": "dump_section",
+                "start": 341,
+                "end": 362
+            },
+            {
+                "name": "cmdline",
+                "start": 370,
+                "end": 505
+            },
+            {
+                "name": "do_cfile_dir",
+                "start": 515,
+                "end": 573
+            },
+            {
+                "name": "parse_cfile",
+                "start": 593,
+                "end": 820
+            },
+            {
+                "name": "sigchld_handler",
+                "start": 831,
+                "end": 833
+            },
+            {
+                "name": "killchild",
+                "start": 843,
+                "end": 847
+            },
+            {
+                "name": "sigterm_handler",
+                "start": 858,
+                "end": 860
+            },
+            {
+                "name": "sighup_handler",
+                "start": 871,
+                "end": 873
+            },
+            {
+                "name": "get_filepos",
+                "start": 886,
+                "end": 921
+            },
+            {
+                "name": "myseek",
+                "start": 929,
+                "end": 933
+            },
+            {
+                "name": "rawexpwrite",
+                "start": 946,
+                "end": 1004
+            },
+            {
+                "name": "rawexpwrite_fully",
+                "start": 1016,
+                "end": 1025
+            },
+            {
+                "name": "rawexpread",
+                "start": 1038,
+                "end": 1052
+            },
+            {
+                "name": "rawexpread_fully",
+                "start": 1058,
+                "end": 1067
+            },
+            {
+                "name": "expread",
+                "start": 1079,
+                "end": 1107
+            },
+            {
+                "name": "expwrite",
+                "start": 1121,
+                "end": 1171
+            },
+            {
+                "name": "expflush",
+                "start": 1179,
+                "end": 1193
+            },
+            {
+                "name": "exptrim",
+                "start": 1199,
+                "end": 1222
+            },
+            {
+                "name": "send_reply",
+                "start": 1224,
+                "end": 1241
+            },
+            {
+                "name": "handle_export_name",
+                "start": 1243,
+                "end": 1277
+            },
+            {
+                "name": "handle_list",
+                "start": 1279,
+                "end": 1304
+            },
+            {
+                "name": "negotiate",
+                "start": 1311,
+                "end": 1421
+            },
+            {
+                "name": "mainloop",
+                "start": 1438,
+                "end": 1594
+            },
+            {
+                "name": "setupexport",
+                "start": 1601,
+                "end": 1701
+            },
+            {
+                "name": "copyonwrite_prepare",
+                "start": 1703,
+                "end": 1718
+            },
+            {
+                "name": "do_run",
+                "start": 1727,
+                "end": 1737
+            },
+            {
+                "name": "serveconnection",
+                "start": 1747,
+                "end": 1776
+            },
+            {
+                "name": "set_peername",
+                "start": 1790,
+                "end": 1874
+            },
+            {
+                "name": "destroy_pid_t",
+                "start": 1880,
+                "end": 1882
+            },
+            {
+                "name": "spawn_child",
+                "start": 1884,
+                "end": 1918
+            },
+            {
+                "name": "socket_accept",
+                "start": 1920,
+                "end": 1933
+            },
+            {
+                "name": "handle_modern_connection",
+                "start": 1935,
+                "end": 2040
+            },
+            {
+                "name": "handle_oldstyle_connection",
+                "start": 2042,
+                "end": 2141
+            },
+            {
+                "name": "get_index_by_servename",
+                "start": 2152,
+                "end": 2164
+            },
+            {
+                "name": "append_new_servers",
+                "start": 2178,
+                "end": 2207
+            },
+            {
+                "name": "serveloop",
+                "start": 2212,
+                "end": 2348
+            },
+            {
+                "name": "dosockopts",
+                "start": 2362,
+                "end": 2393
+            },
+            {
+                "name": "setup_serve",
+                "start": 2400,
+                "end": 2504
+            },
+            {
+                "name": "open_modern",
+                "start": 2506,
+                "end": 2593
+            },
+            {
+                "name": "setup_servers",
+                "start": 2598,
+                "end": 2648
+            },
+            {
+                "name": "daemonize",
+                "start": 2658,
+                "end": 2683
+            },
+            {
+                "name": "dousers",
+                "start": 2696,
+                "end": 2720
+            },
+            {
+                "name": "glib_message_syslog_redirect",
+                "start": 2723,
+                "end": 2751
+            },
+            {
+                "name": "main",
+                "start": 2757,
+                "end": 2836
+            }
+        ],
+        "nbdsrv.c": [
+            {
+                "name": "address_matches",
+                "start": 24,
+                "end": 90
+            },
+            {
+                "name": "getmaskbyte",
+                "start": 92,
+                "end": 102
+            },
+            {
+                "name": "authorized_client",
+                "start": 104,
+                "end": 141
+            },
+            {
+                "name": "dup_serve",
+                "start": 148,
+                "end": 189
+            },
+            {
+                "name": "append_serve",
+                "start": 191,
+                "end": 249
+            },
+            {
+                "name": "size_autodetect",
+                "start": 251,
+                "end": 290
+            }
+        ],
+        "nbd-trdump.c": [
+            {
+                "name": "doread",
+                "start": 21,
+                "end": 34
+            },
+            {
+                "name": "main",
+                "start": 36,
+                "end": 115
+            }
+        ],
+        "make-integrityhuge.c": [
+            {
+                "name": "dowrite",
+                "start": 21,
+                "end": 32
+            },
+            {
+                "name": "getrandomuint64",
+                "start": 34,
+                "end": 41
+            },
+            {
+                "name": "main",
+                "start": 43,
+                "end": 94
+            }
+        ],
+        "coverity_model.c": [
+            {
+                "name": "g_array_append_vals",
+                "start": 5,
+                "end": 7
+            }
+        ],
+        "gznbd/../cliserv.h": [
+            {
+                "name": "setmysockopt",
+                "start": 64,
+                "end": 80
+            },
+            {
+                "name": "err_nonfatal",
+                "start": 92,
+                "end": 116
+            },
+            {
+                "name": "err",
+                "start": 120,
+                "end": 123
+            },
+            {
+                "name": "logging",
+                "start": 125,
+                "end": 131
+            },
+            {
+                "name": "ntohll",
+                "start": 138,
+                "end": 144
+            }
+        ],
+        "gznbd/gznbd.c": [
+            {
+                "name": "main",
+                "start": 66,
+                "end": 242
+            }
+        ],
+        "tests/run/nbd-tester-client.c": [
+            {
+                "name": "rclist_unlink",
+                "start": 102,
+                "end": 122
+            },
+            {
+                "name": "rclist_addtail",
+                "start": 125,
+                "end": 144
+            },
+            {
+                "name": "chunklist_unlink",
+                "start": 146,
+                "end": 166
+            },
+            {
+                "name": "chunklist_addtail",
+                "start": 169,
+                "end": 188
+            },
+            {
+                "name": "addbuffer",
+                "start": 191,
+                "end": 226
+            },
+            {
+                "name": "writebuffer",
+                "start": 229,
+                "end": 263
+            },
+            {
+                "name": "timeval_subtract",
+                "start": 270,
+                "end": 288
+            },
+            {
+                "name": "timeval_diff_to_double",
+                "start": 290,
+                "end": 294
+            },
+            {
+                "name": "read_all",
+                "start": 296,
+                "end": 312
+            },
+            {
+                "name": "write_all",
+                "start": 314,
+                "end": 330
+            },
+            {
+                "name": "setup_connection",
+                "start": 338,
+                "end": 420
+            },
+            {
+                "name": "close_connection",
+                "start": 422,
+                "end": 449
+            },
+            {
+                "name": "read_packet_check_header",
+                "start": 451,
+                "end": 474
+            },
+            {
+                "name": "oversize_test",
+                "start": 476,
+                "end": 543
+            },
+            {
+                "name": "throughput_test",
+                "start": 545,
+                "end": 700
+            },
+            {
+                "name": "makebuf",
+                "start": 707,
+                "end": 722
+            },
+            {
+                "name": "checkbuf",
+                "start": 724,
+                "end": 728
+            },
+            {
+                "name": "dumpcommand",
+                "start": 730,
+                "end": 758
+            },
+            {
+                "name": "getrandomhandle",
+                "start": 761,
+                "end": 770
+            },
+            {
+                "name": "integrity_test",
+                "start": 772,
+                "end": 1253
+            },
+            {
+                "name": "handle_nonopt",
+                "start": 1255,
+                "end": 1271
+            },
+            {
+                "name": "main",
+                "start": 1275,
+                "end": 1337
+            }
+        ],
+        "tests/code/size.c": [
+            {
+                "name": "main",
+                "start": 6,
+                "end": 16
+            }
+        ],
+        "tests/code/append.c": [
+            {
+                "name": "main",
+                "start": 6,
+                "end": 18
+            }
+        ],
+        "tests/code/dup.c": [
+            {
+                "name": "stringcmp",
+                "start": 6,
+                "end": 17
+            },
+            {
+                "name": "main",
+                "start": 19,
+                "end": 58
+            }
+        ],
+        "tests/code/clientacl.c": [
+            {
+                "name": "do_test",
+                "start": 13,
+                "end": 45
+            },
+            {
+                "name": "main",
+                "start": 47,
+                "end": 65
+            }
+        ],
+        "tests/code/mask.c": [
+            {
+                "name": "main",
+                "start": 5,
+                "end": 17
+            }
+        ]
+    }
+}

@@ -1,0 +1,2864 @@
+{
+    "libcgroup-0.41": {
+        "src/libcgroup-internal.h": [
+            {
+                "name": "create_cgroup_from_name_value_pairs",
+                "start": 204,
+                "end": 205
+            },
+            {
+                "name": "cgroup_config_parse_controller_options",
+                "start": 224,
+                "end": 225
+            },
+            {
+                "name": "template_config_parse_controller_options",
+                "start": 227,
+                "end": 228
+            },
+            {
+                "name": "cgroup_dictionary_create",
+                "start": 242,
+                "end": 243
+            },
+            {
+                "name": "cgroup_dictionary_add",
+                "start": 247,
+                "end": 248
+            },
+            {
+                "name": "cgroup_dictionary_iterator_begin",
+                "start": 259,
+                "end": 260
+            },
+            {
+                "name": "cgroup_dictionary_iterator_next",
+                "start": 264,
+                "end": 265
+            }
+        ],
+        "src/api.c": [
+            {
+                "name": "cg_chown",
+                "start": 119,
+                "end": 126
+            },
+            {
+                "name": "cg_chown_file",
+                "start": 127,
+                "end": 154
+            },
+            {
+                "name": "cg_chown_recursive",
+                "start": 159,
+                "end": 184
+            },
+            {
+                "name": "cg_chmod_path",
+                "start": 186,
+                "end": 219
+            },
+            {
+                "name": "cg_chmod_file",
+                "start": 221,
+                "end": 251
+            },
+            {
+                "name": "cg_chmod_recursive_controller",
+                "start": 259,
+                "end": 314
+            },
+            {
+                "name": "cg_chmod_recursive",
+                "start": 316,
+                "end": 342
+            },
+            {
+                "name": "cgroup_set_permissions",
+                "start": 344,
+                "end": 351
+            },
+            {
+                "name": "cgroup_basename",
+                "start": 353,
+                "end": 368
+            },
+            {
+                "name": "cgroup_test_subsys_mounted",
+                "start": 370,
+                "end": 385
+            },
+            {
+                "name": "cgroup_free_rule",
+                "start": 391,
+                "end": 412
+            },
+            {
+                "name": "cgroup_free_rule_list",
+                "start": 419,
+                "end": 439
+            },
+            {
+                "name": "cg_skip_unused_charactors_in_rule",
+                "start": 441,
+                "end": 465
+            },
+            {
+                "name": "cgroup_parse_rules",
+                "start": 486,
+                "end": 810
+            },
+            {
+                "name": "cg_add_duplicate_mount",
+                "start": 812,
+                "end": 835
+            },
+            {
+                "name": "cgroup_init",
+                "start": 845,
+                "end": 1071
+            },
+            {
+                "name": "cg_test_mounted_fs",
+                "start": 1073,
+                "end": 1112
+            },
+            {
+                "name": "cg_gettid",
+                "start": 1114,
+                "end": 1117
+            },
+            {
+                "name": "cg_concat_path",
+                "start": 1119,
+                "end": 1131
+            },
+            {
+                "name": "cg_build_path_locked",
+                "start": 1136,
+                "end": 1166
+            },
+            {
+                "name": "cg_build_path",
+                "start": 1168,
+                "end": 1175
+            },
+            {
+                "name": "__cgroup_attach_task_pid",
+                "start": 1177,
+                "end": 1212
+            },
+            {
+                "name": "cgroup_attach_task_pid",
+                "start": 1222,
+                "end": 1266
+            },
+            {
+                "name": "cgroup_attach_task",
+                "start": 1273,
+                "end": 1281
+            },
+            {
+                "name": "cg_mkdir_p",
+                "start": 1287,
+                "end": 1338
+            },
+            {
+                "name": "cg_create_control_group",
+                "start": 1346,
+                "end": 1353
+            },
+            {
+                "name": "cg_set_control_value",
+                "start": 1361,
+                "end": 1421
+            },
+            {
+                "name": "cgroup_modify_cgroup",
+                "start": 1434,
+                "end": 1486
+            },
+            {
+                "name": "cgroup_copy_controller_values",
+                "start": 1494,
+                "end": 1520
+            },
+            {
+                "name": "cgroup_copy_cgroup",
+                "start": 1529,
+                "end": 1562
+            },
+            {
+                "name": "cgroup_create_cgroup",
+                "start": 1572,
+                "end": 1702
+            },
+            {
+                "name": "cgroup_get_parent_name",
+                "start": 1718,
+                "end": 1750
+            },
+            {
+                "name": "cgroup_find_parent",
+                "start": 1768,
+                "end": 1818
+            },
+            {
+                "name": "cgroup_create_cgroup_from_parent",
+                "start": 1828,
+                "end": 1877
+            },
+            {
+                "name": "cg_move_task_files",
+                "start": 1885,
+                "end": 1916
+            },
+            {
+                "name": "cg_delete_cgroup_controller",
+                "start": 1935,
+                "end": 1994
+            },
+            {
+                "name": "cg_delete_cgroup_controller_recursive",
+                "start": 2007,
+                "end": 2066
+            },
+            {
+                "name": "cgroup_delete_cgroup",
+                "start": 2073,
+                "end": 2077
+            },
+            {
+                "name": "cgroup_delete_cgroup_ext",
+                "start": 2079,
+                "end": 2217
+            },
+            {
+                "name": "cg_rd_ctrl_file",
+                "start": 2224,
+                "end": 2263
+            },
+            {
+                "name": "cgroup_fill_cgc",
+                "start": 2268,
+                "end": 2364
+            },
+            {
+                "name": "cgroup_get_cgroup",
+                "start": 2372,
+                "end": 2493
+            },
+            {
+                "name": "cg_prepare_cgroup",
+                "start": 2502,
+                "end": 2557
+            },
+            {
+                "name": "cgroup_find_matching_rule_uid_gid",
+                "start": 2559,
+                "end": 2618
+            },
+            {
+                "name": "cgroup_find_matching_rule",
+                "start": 2632,
+                "end": 2668
+            },
+            {
+                "name": "cgroup_exist_in_subsystem",
+                "start": 2673,
+                "end": 2699
+            },
+            {
+                "name": "cgroup_copy_with_slash",
+                "start": 2704,
+                "end": 2722
+            },
+            {
+                "name": "add_controller",
+                "start": 2725,
+                "end": 2750
+            },
+            {
+                "name": "cgroup_create_template_group",
+                "start": 2759,
+                "end": 2859
+            },
+            {
+                "name": "cgroup_change_cgroup_flags",
+                "start": 2861,
+                "end": 3036
+            },
+            {
+                "name": "cgroup_change_cgroup_uid_gid_flags",
+                "start": 3038,
+                "end": 3042
+            },
+            {
+                "name": "cgroup_change_cgroup_uid_gid",
+                "start": 3055,
+                "end": 3058
+            },
+            {
+                "name": "cgroup_change_cgroup_path",
+                "start": 3067,
+                "end": 3089
+            },
+            {
+                "name": "cgroup_change_all_cgroups",
+                "start": 3100,
+                "end": 3138
+            },
+            {
+                "name": "cgroup_print_rules_config",
+                "start": 3146,
+                "end": 3194
+            },
+            {
+                "name": "cgroup_reload_cached_rules",
+                "start": 3201,
+                "end": 3221
+            },
+            {
+                "name": "cgroup_init_rules_cache",
+                "start": 3227,
+                "end": 3240
+            },
+            {
+                "name": "cgroup_get_current_controller_path",
+                "start": 3249,
+                "end": 3331
+            },
+            {
+                "name": "cgroup_strerror",
+                "start": 3333,
+                "end": 3339
+            },
+            {
+                "name": "cgroup_get_last_errno",
+                "start": 3344,
+                "end": 3347
+            },
+            {
+                "name": "cg_walk_node",
+                "start": 3350,
+                "end": 3392
+            },
+            {
+                "name": "cgroup_walk_tree_next",
+                "start": 3394,
+                "end": 3419
+            },
+            {
+                "name": "cgroup_walk_tree_end",
+                "start": 3421,
+                "end": 3437
+            },
+            {
+                "name": "cgroup_walk_tree_begin",
+                "start": 3442,
+                "end": 3505
+            },
+            {
+                "name": "cgroup_walk_tree_set_flags",
+                "start": 3507,
+                "end": 3526
+            },
+            {
+                "name": "cg_read_stat",
+                "start": 3532,
+                "end": 3564
+            },
+            {
+                "name": "cgroup_read_value_end",
+                "start": 3567,
+                "end": 3581
+            },
+            {
+                "name": "cgroup_read_value_next",
+                "start": 3583,
+                "end": 3601
+            },
+            {
+                "name": "cgroup_read_value_begin",
+                "start": 3603,
+                "end": 3637
+            },
+            {
+                "name": "cgroup_read_stats_end",
+                "start": 3641,
+                "end": 3657
+            },
+            {
+                "name": "cgroup_read_stats_next",
+                "start": 3659,
+                "end": 3674
+            },
+            {
+                "name": "cgroup_read_stats_begin",
+                "start": 3679,
+                "end": 3708
+            },
+            {
+                "name": "cgroup_get_task_end",
+                "start": 3710,
+                "end": 3722
+            },
+            {
+                "name": "cgroup_get_task_next",
+                "start": 3724,
+                "end": 3744
+            },
+            {
+                "name": "cgroup_get_task_begin",
+                "start": 3746,
+                "end": 3776
+            },
+            {
+                "name": "cgroup_get_controller_end",
+                "start": 3779,
+                "end": 3793
+            },
+            {
+                "name": "cgroup_get_controller_next",
+                "start": 3795,
+                "end": 3826
+            },
+            {
+                "name": "cgroup_get_controller_begin",
+                "start": 3828,
+                "end": 3850
+            },
+            {
+                "name": "cgroup_get_uid_gid_from_procfs",
+                "start": 3859,
+                "end": 3905
+            },
+            {
+                "name": "cg_get_procname_from_proc_status",
+                "start": 3913,
+                "end": 3943
+            },
+            {
+                "name": "cg_get_procname_from_proc_cmdline",
+                "start": 3956,
+                "end": 4025
+            },
+            {
+                "name": "cgroup_get_procname_from_procfs",
+                "start": 4035,
+                "end": 4102
+            },
+            {
+                "name": "cgroup_register_unchanged_process",
+                "start": 4104,
+                "end": 4142
+            },
+            {
+                "name": "cgroup_get_subsys_mount_point",
+                "start": 4144,
+                "end": 4174
+            },
+            {
+                "name": "cgroup_get_all_controller_end",
+                "start": 4177,
+                "end": 4188
+            },
+            {
+                "name": "cgroup_get_all_controller_next",
+                "start": 4191,
+                "end": 4217
+            },
+            {
+                "name": "cgroup_get_all_controller_begin",
+                "start": 4220,
+                "end": 4249
+            },
+            {
+                "name": "pid_compare",
+                "start": 4251,
+                "end": 4259
+            },
+            {
+                "name": "cgroup_get_procs",
+                "start": 4266,
+                "end": 4335
+            },
+            {
+                "name": "cgroup_dictionary_create",
+                "start": 4338,
+                "end": 4352
+            },
+            {
+                "name": "cgroup_dictionary_add",
+                "start": 4355,
+                "end": 4383
+            },
+            {
+                "name": "cgroup_dictionary_free",
+                "start": 4385,
+                "end": 4405
+            },
+            {
+                "name": "cgroup_dictionary_iterator_begin",
+                "start": 4407,
+                "end": 4427
+            },
+            {
+                "name": "cgroup_dictionary_iterator_next",
+                "start": 4429,
+                "end": 4449
+            },
+            {
+                "name": "cgroup_dictionary_iterator_end",
+                "start": 4451,
+                "end": 4458
+            },
+            {
+                "name": "cgroup_get_subsys_mount_point_begin",
+                "start": 4460,
+                "end": 4489
+            },
+            {
+                "name": "cgroup_get_subsys_mount_point_next",
+                "start": 4491,
+                "end": 4511
+            },
+            {
+                "name": "cgroup_get_subsys_mount_point_end",
+                "start": 4513,
+                "end": 4516
+            }
+        ],
+        "src/lex.c": [
+            {
+                "name": "yylex",
+                "start": 700,
+                "end": 1005
+            },
+            {
+                "name": "yy_get_next_buffer",
+                "start": 1014,
+                "end": 1144
+            },
+            {
+                "name": "yy_get_previous_state",
+                "start": 1148,
+                "end": 1174
+            },
+            {
+                "name": "yy_try_NUL_trans",
+                "start": 1181,
+                "end": 1202
+            },
+            {
+                "name": "yyrestart",
+                "start": 1285,
+                "end": 1296
+            },
+            {
+                "name": "yy_switch_to_buffer",
+                "start": 1302,
+                "end": 1331
+            },
+            {
+                "name": "yy_load_buffer_state",
+                "start": 1333,
+                "end": 1339
+            },
+            {
+                "name": "yy_create_buffer",
+                "start": 1347,
+                "end": 1369
+            },
+            {
+                "name": "yy_delete_buffer",
+                "start": 1375,
+                "end": 1388
+            },
+            {
+                "name": "yy_init_buffer",
+                "start": 1394,
+                "end": 1416
+            },
+            {
+                "name": "yy_flush_buffer",
+                "start": 1422,
+                "end": 1443
+            },
+            {
+                "name": "yypush_buffer_state",
+                "start": 1451,
+                "end": 1475
+            },
+            {
+                "name": "yypop_buffer_state",
+                "start": 1481,
+                "end": 1495
+            },
+            {
+                "name": "yyensure_buffer_stack",
+                "start": 1500,
+                "end": 1541
+            },
+            {
+                "name": "yy_scan_buffer",
+                "start": 1549,
+                "end": 1576
+            },
+            {
+                "name": "yy_scan_string",
+                "start": 1586,
+                "end": 1590
+            },
+            {
+                "name": "yy_scan_bytes",
+                "start": 1599,
+                "end": 1627
+            },
+            {
+                "name": "yy_fatal_error",
+                "start": 1633,
+                "end": 1637
+            },
+            {
+                "name": "yyget_lineno",
+                "start": 1661,
+                "end": 1665
+            },
+            {
+                "name": "yyget_in",
+                "start": 1670,
+                "end": 1673
+            },
+            {
+                "name": "yyget_out",
+                "start": 1678,
+                "end": 1681
+            },
+            {
+                "name": "yyget_leng",
+                "start": 1686,
+                "end": 1689
+            },
+            {
+                "name": "yyget_text",
+                "start": 1695,
+                "end": 1698
+            },
+            {
+                "name": "yyset_lineno",
+                "start": 1704,
+                "end": 1708
+            },
+            {
+                "name": "yyset_in",
+                "start": 1716,
+                "end": 1719
+            },
+            {
+                "name": "yyset_out",
+                "start": 1721,
+                "end": 1724
+            },
+            {
+                "name": "yyget_debug",
+                "start": 1726,
+                "end": 1729
+            },
+            {
+                "name": "yyset_debug",
+                "start": 1731,
+                "end": 1734
+            },
+            {
+                "name": "yy_init_globals",
+                "start": 1736,
+                "end": 1762
+            },
+            {
+                "name": "yylex_destroy",
+                "start": 1765,
+                "end": 1784
+            },
+            {
+                "name": "yyalloc",
+                "start": 1810,
+                "end": 1813
+            },
+            {
+                "name": "yyrealloc",
+                "start": 1815,
+                "end": 1825
+            },
+            {
+                "name": "yyfree",
+                "start": 1827,
+                "end": 1830
+            }
+        ],
+        "src/wrapper.c": [
+            {
+                "name": "init_cgroup",
+                "start": 29,
+                "end": 34
+            },
+            {
+                "name": "init_cgroup_table",
+                "start": 36,
+                "end": 42
+            },
+            {
+                "name": "cgroup_new_cgroup",
+                "start": 44,
+                "end": 54
+            },
+            {
+                "name": "cgroup_add_controller",
+                "start": 56,
+                "end": 93
+            },
+            {
+                "name": "cgroup_free_controllers",
+                "start": 95,
+                "end": 109
+            },
+            {
+                "name": "cgroup_free",
+                "start": 111,
+                "end": 124
+            },
+            {
+                "name": "cgroup_add_value_string",
+                "start": 126,
+                "end": 155
+            },
+            {
+                "name": "cgroup_add_value_int64",
+                "start": 157,
+                "end": 173
+            },
+            {
+                "name": "cgroup_add_value_uint64",
+                "start": 175,
+                "end": 191
+            },
+            {
+                "name": "cgroup_add_value_bool",
+                "start": 193,
+                "end": 212
+            },
+            {
+                "name": "cgroup_compare_controllers",
+                "start": 214,
+                "end": 239
+            },
+            {
+                "name": "cgroup_compare_cgroup",
+                "start": 241,
+                "end": 274
+            },
+            {
+                "name": "cgroup_set_uid_gid",
+                "start": 276,
+                "end": 288
+            },
+            {
+                "name": "cgroup_get_uid_gid",
+                "start": 290,
+                "end": 302
+            },
+            {
+                "name": "cgroup_get_controller",
+                "start": 304,
+                "end": 321
+            },
+            {
+                "name": "cgroup_get_value_string",
+                "start": 323,
+                "end": 346
+            },
+            {
+                "name": "cgroup_set_value_string",
+                "start": 348,
+                "end": 366
+            },
+            {
+                "name": "cgroup_get_value_int64",
+                "start": 368,
+                "end": 389
+            },
+            {
+                "name": "cgroup_set_value_int64",
+                "start": 391,
+                "end": 416
+            },
+            {
+                "name": "cgroup_get_value_uint64",
+                "start": 418,
+                "end": 438
+            },
+            {
+                "name": "cgroup_set_value_uint64",
+                "start": 440,
+                "end": 465
+            },
+            {
+                "name": "cgroup_get_value_bool",
+                "start": 467,
+                "end": 493
+            },
+            {
+                "name": "cgroup_set_value_bool",
+                "start": 495,
+                "end": 526
+            },
+            {
+                "name": "create_cgroup_from_name_value_pairs",
+                "start": 528,
+                "end": 586
+            },
+            {
+                "name": "cgroup_get_value_name_count",
+                "start": 588,
+                "end": 594
+            },
+            {
+                "name": "cgroup_get_value_name",
+                "start": 597,
+                "end": 607
+            },
+            {
+                "name": "cgroup_get_cgroup_name",
+                "start": 609,
+                "end": 615
+            }
+        ],
+        "src/config.c": [
+            {
+                "name": "config_insert_cgroup",
+                "start": 112,
+                "end": 179
+            },
+            {
+                "name": "cgroup_config_insert_cgroup",
+                "start": 186,
+                "end": 192
+            },
+            {
+                "name": "template_config_insert_cgroup",
+                "start": 199,
+                "end": 205
+            },
+            {
+                "name": "config_parse_controller_options",
+                "start": 216,
+                "end": 281
+            },
+            {
+                "name": "cgroup_config_parse_controller_options",
+                "start": 289,
+                "end": 296
+            },
+            {
+                "name": "template_config_parse_controller_options",
+                "start": 304,
+                "end": 311
+            },
+            {
+                "name": "config_group_task_perm",
+                "start": 319,
+                "end": 402
+            },
+            {
+                "name": "cgroup_config_group_task_perm",
+                "start": 407,
+                "end": 413
+            },
+            {
+                "name": "template_config_group_task_perm",
+                "start": 418,
+                "end": 424
+            },
+            {
+                "name": "config_group_admin_perm",
+                "start": 432,
+                "end": 522
+            },
+            {
+                "name": "cgroup_config_group_admin_perm",
+                "start": 527,
+                "end": 533
+            },
+            {
+                "name": "template_config_group_admin_perm",
+                "start": 538,
+                "end": 544
+            },
+            {
+                "name": "cgroup_config_insert_into_mount_table",
+                "start": 550,
+                "end": 582
+            },
+            {
+                "name": "cgroup_config_cleanup_mount_table",
+                "start": 587,
+                "end": 591
+            },
+            {
+                "name": "cgroup_config_insert_into_namespace_table",
+                "start": 597,
+                "end": 614
+            },
+            {
+                "name": "cgroup_config_cleanup_namespace_table",
+                "start": 619,
+                "end": 623
+            },
+            {
+                "name": "cgroup_config_ajdust_mount_options",
+                "start": 629,
+                "end": 656
+            },
+            {
+                "name": "cgroup_config_mount_fs",
+                "start": 661,
+                "end": 721
+            },
+            {
+                "name": "cgroup_config_create_groups",
+                "start": 726,
+                "end": 740
+            },
+            {
+                "name": "cgroup_config_destroy_groups",
+                "start": 745,
+                "end": 761
+            },
+            {
+                "name": "cgroup_config_unmount_controllers",
+                "start": 766,
+                "end": 785
+            },
+            {
+                "name": "config_validate_namespaces",
+                "start": 787,
+                "end": 886
+            },
+            {
+                "name": "config_order_namespace_table",
+                "start": 901,
+                "end": 950
+            },
+            {
+                "name": "cgroup_free_config",
+                "start": 956,
+                "end": 975
+            },
+            {
+                "name": "cgroup_config_apply_default",
+                "start": 980,
+                "end": 1003
+            },
+            {
+                "name": "cgroup_parse_config",
+                "start": 1005,
+                "end": 1066
+            },
+            {
+                "name": "_cgroup_config_compare_groups",
+                "start": 1068,
+                "end": 1074
+            },
+            {
+                "name": "cgroup_config_sort_groups",
+                "start": 1076,
+                "end": 1080
+            },
+            {
+                "name": "cgroup_config_load_config",
+                "start": 1086,
+                "end": 1152
+            },
+            {
+                "name": "cgroup_config_try_unmount",
+                "start": 1155,
+                "end": 1219
+            },
+            {
+                "name": "cgroup_config_unload_config",
+                "start": 1221,
+                "end": 1290
+            },
+            {
+                "name": "cgroup_config_unload_controller",
+                "start": 1292,
+                "end": 1336
+            },
+            {
+                "name": "cgroup_unload_cgroups",
+                "start": 1338,
+                "end": 1390
+            },
+            {
+                "name": "cgroup_config_define_default",
+                "start": 1397,
+                "end": 1424
+            },
+            {
+                "name": "cgroup_config_set_default",
+                "start": 1426,
+                "end": 1443
+            },
+            {
+                "name": "cgroup_reload_cached_templates",
+                "start": 1449,
+                "end": 1507
+            },
+            {
+                "name": "cgroup_init_templates_cache",
+                "start": 1513,
+                "end": 1573
+            },
+            {
+                "name": "cgroup_config_create_template_group",
+                "start": 1579,
+                "end": 1687
+            }
+        ],
+        "src/parse.c": [
+            {
+                "name": "yyerror",
+                "start": 30,
+                "end": 34
+            },
+            {
+                "name": "yywrap",
+                "start": 36,
+                "end": 39
+            },
+            {
+                "name": "yygrowstack",
+                "start": 314,
+                "end": 346
+            },
+            {
+                "name": "yyparse",
+                "start": 364,
+                "end": 1036
+            }
+        ],
+        "src/log.c": [
+            {
+                "name": "cgroup_default_logger",
+                "start": 27,
+                "end": 31
+            },
+            {
+                "name": "cgroup_log",
+                "start": 33,
+                "end": 46
+            },
+            {
+                "name": "cgroup_set_logger",
+                "start": 48,
+                "end": 54
+            },
+            {
+                "name": "cgroup_set_default_logger",
+                "start": 56,
+                "end": 60
+            },
+            {
+                "name": "cgroup_parse_log_level_str",
+                "start": 62,
+                "end": 83
+            },
+            {
+                "name": "cgroup_set_loglevel",
+                "start": 85,
+                "end": 96
+            }
+        ],
+        "src/daemon/cgrulesengd.h": [
+            {
+                "name": "cgre_start_daemon",
+                "start": 98,
+                "end": 99
+            }
+        ],
+        "src/daemon/../libcgroup-internal.h": [
+            {
+                "name": "create_cgroup_from_name_value_pairs",
+                "start": 204,
+                "end": 205
+            },
+            {
+                "name": "cgroup_config_parse_controller_options",
+                "start": 224,
+                "end": 225
+            },
+            {
+                "name": "template_config_parse_controller_options",
+                "start": 227,
+                "end": 228
+            },
+            {
+                "name": "cgroup_dictionary_create",
+                "start": 242,
+                "end": 243
+            },
+            {
+                "name": "cgroup_dictionary_add",
+                "start": 247,
+                "end": 248
+            },
+            {
+                "name": "cgroup_dictionary_iterator_begin",
+                "start": 259,
+                "end": 260
+            },
+            {
+                "name": "cgroup_dictionary_iterator_next",
+                "start": 264,
+                "end": 265
+            }
+        ],
+        "src/daemon/cgrulesengd.c": [
+            {
+                "name": "usage",
+                "start": 84,
+                "end": 112
+            },
+            {
+                "name": "flog_write",
+                "start": 122,
+                "end": 155
+            },
+            {
+                "name": "flog",
+                "start": 165,
+                "end": 171
+            },
+            {
+                "name": "flog_cgroup",
+                "start": 177,
+                "end": 196
+            },
+            {
+                "name": "cgre_store_parent_info",
+                "start": 209,
+                "end": 244
+            },
+            {
+                "name": "cgre_remove_old_parent_info",
+                "start": 246,
+                "end": 260
+            },
+            {
+                "name": "cgre_was_parent_changed_when_forking",
+                "start": 262,
+                "end": 283
+            },
+            {
+                "name": "cgre_store_unchanged_process",
+                "start": 298,
+                "end": 325
+            },
+            {
+                "name": "cgre_remove_unchanged_process",
+                "start": 327,
+                "end": 344
+            },
+            {
+                "name": "cgre_is_unchanged_process",
+                "start": 346,
+                "end": 356
+            },
+            {
+                "name": "cgre_is_unchanged_child",
+                "start": 358,
+                "end": 370
+            },
+            {
+                "name": "cgre_process_event",
+                "start": 380,
+                "end": 491
+            },
+            {
+                "name": "cgre_handle_msg",
+                "start": 500,
+                "end": 546
+            },
+            {
+                "name": "cgre_receive_netlink_msg",
+                "start": 548,
+                "end": 593
+            },
+            {
+                "name": "cgre_receive_unix_domain_msg",
+                "start": 595,
+                "end": 645
+            },
+            {
+                "name": "cgre_create_netlink_socket_process_msg",
+                "start": 647,
+                "end": 792
+            },
+            {
+                "name": "cgre_start_log",
+                "start": 800,
+                "end": 855
+            },
+            {
+                "name": "cgre_start_daemon",
+                "start": 868,
+                "end": 925
+            },
+            {
+                "name": "cgre_flash_rules",
+                "start": 932,
+                "end": 951
+            },
+            {
+                "name": "cgre_flash_templates",
+                "start": 958,
+                "end": 968
+            },
+            {
+                "name": "cgre_catch_term",
+                "start": 975,
+                "end": 992
+            },
+            {
+                "name": "cgre_parse_syslog_facility",
+                "start": 999,
+                "end": 1029
+            },
+            {
+                "name": "main",
+                "start": 1031,
+                "end": 1264
+            }
+        ],
+        "src/bindings/libcgroup.c": [
+            {
+                "name": "SWIG_TypeNameComp",
+                "start": 354,
+                "end": 363
+            },
+            {
+                "name": "SWIG_TypeCmp",
+                "start": 369,
+                "end": 382
+            },
+            {
+                "name": "SWIG_TypeEquiv",
+                "start": 388,
+                "end": 391
+            },
+            {
+                "name": "SWIG_TypeCheck",
+                "start": 396,
+                "end": 418
+            },
+            {
+                "name": "SWIG_TypeCheckStruct",
+                "start": 423,
+                "end": 445
+            },
+            {
+                "name": "SWIG_TypeCast",
+                "start": 450,
+                "end": 453
+            },
+            {
+                "name": "SWIG_TypeDynamicCast",
+                "start": 458,
+                "end": 467
+            },
+            {
+                "name": "SWIG_TypeName",
+                "start": 472,
+                "end": 475
+            },
+            {
+                "name": "SWIG_TypePrettyName",
+                "start": 481,
+                "end": 497
+            },
+            {
+                "name": "SWIG_TypeClientData",
+                "start": 502,
+                "end": 517
+            },
+            {
+                "name": "SWIG_TypeNewClientData",
+                "start": 518,
+                "end": 522
+            },
+            {
+                "name": "SWIG_MangledTypeQueryModule",
+                "start": 532,
+                "end": 566
+            },
+            {
+                "name": "SWIG_TypeQueryModule",
+                "start": 577,
+                "end": 601
+            },
+            {
+                "name": "SWIG_PackData",
+                "start": 606,
+                "end": 617
+            },
+            {
+                "name": "SWIG_UnpackData",
+                "start": 622,
+                "end": 645
+            },
+            {
+                "name": "SWIG_PackVoidPtr",
+                "start": 650,
+                "end": 659
+            },
+            {
+                "name": "SWIG_UnpackVoidPtr",
+                "start": 661,
+                "end": 672
+            },
+            {
+                "name": "SWIG_PackDataName",
+                "start": 674,
+                "end": 687
+            },
+            {
+                "name": "SWIG_UnpackDataName",
+                "start": 689,
+                "end": 700
+            },
+            {
+                "name": "SWIG_Python_str_AsChar",
+                "start": 759,
+                "end": 775
+            },
+            {
+                "name": "SWIG_Python_str_FromChar",
+                "start": 784,
+                "end": 792
+            },
+            {
+                "name": "PyString_FromFormat",
+                "start": 810,
+                "end": 819
+            },
+            {
+                "name": "PyBool_FromLong",
+                "start": 863,
+                "end": 869
+            },
+            {
+                "name": "PyNumber_AsSsize_t",
+                "start": 888,
+                "end": 897
+            },
+            {
+                "name": "SWIG_Python_ErrorType",
+                "start": 946,
+                "end": 987
+            },
+            {
+                "name": "SWIG_Python_AddErrorMsg",
+                "start": 990,
+                "end": 1011
+            },
+            {
+                "name": "SWIG_PyInstanceMethod_New",
+                "start": 1117,
+                "end": 1120
+            },
+            {
+                "name": "SWIG_Python_SetErrorObj",
+                "start": 1190,
+                "end": 1196
+            },
+            {
+                "name": "SWIG_Python_SetErrorMsg",
+                "start": 1198,
+                "end": 1203
+            },
+            {
+                "name": "SWIG_Python_SetConstant",
+                "start": 1232,
+                "end": 1240
+            },
+            {
+                "name": "SWIG_Python_AppendOutput",
+                "start": 1246,
+                "end": 1287
+            },
+            {
+                "name": "SWIG_Python_UnpackTuple",
+                "start": 1291,
+                "end": 1335
+            },
+            {
+                "name": "SWIG_Py_Void",
+                "start": 1402,
+                "end": 1408
+            },
+            {
+                "name": "SWIG_Python_CheckImplicit",
+                "start": 1422,
+                "end": 1427
+            },
+            {
+                "name": "SWIG_Python_ExceptionType",
+                "start": 1429,
+                "end": 1434
+            },
+            {
+                "name": "SwigPyClientData_New",
+                "start": 1437,
+                "end": 1489
+            },
+            {
+                "name": "SwigPyClientData_Del",
+                "start": 1491,
+                "end": 1496
+            },
+            {
+                "name": "SwigPyObject_long",
+                "start": 1511,
+                "end": 1515
+            },
+            {
+                "name": "SwigPyObject_format",
+                "start": 1517,
+                "end": 1537
+            },
+            {
+                "name": "SwigPyObject_oct",
+                "start": 1539,
+                "end": 1543
+            },
+            {
+                "name": "SwigPyObject_hex",
+                "start": 1545,
+                "end": 1549
+            },
+            {
+                "name": "SwigPyObject_repr",
+                "start": 1551,
+                "end": 1576
+            },
+            {
+                "name": "SwigPyObject_compare",
+                "start": 1578,
+                "end": 1584
+            },
+            {
+                "name": "SwigPyObject_richcompare",
+                "start": 1587,
+                "end": 1597
+            },
+            {
+                "name": "SwigPyObject_type",
+                "start": 1614,
+                "end": 1618
+            },
+            {
+                "name": "SwigPyObject_Check",
+                "start": 1621,
+                "end": 1632
+            },
+            {
+                "name": "SwigPyObject_New",
+                "start": 1634,
+                "end": 1635
+            },
+            {
+                "name": "SwigPyObject_dealloc",
+                "start": 1637,
+                "end": 1670
+            },
+            {
+                "name": "SwigPyObject_append",
+                "start": 1672,
+                "end": 1687
+            },
+            {
+                "name": "SwigPyObject_next",
+                "start": 1689,
+                "end": 1703
+            },
+            {
+                "name": "SwigPyObject_disown",
+                "start": 1705,
+                "end": 1715
+            },
+            {
+                "name": "SwigPyObject_acquire",
+                "start": 1717,
+                "end": 1727
+            },
+            {
+                "name": "SwigPyObject_own",
+                "start": 1729,
+                "end": 1764
+            },
+            {
+                "name": "SwigPyObject_getattr",
+                "start": 1791,
+                "end": 1795
+            },
+            {
+                "name": "SwigPyObject_TypeOnce",
+                "start": 1798,
+                "end": 1933
+            },
+            {
+                "name": "SwigPyObject_New",
+                "start": 1935,
+                "end": 1946
+            },
+            {
+                "name": "SwigPyPacked_print",
+                "start": 1959,
+                "end": 1971
+            },
+            {
+                "name": "SwigPyPacked_repr",
+                "start": 1973,
+                "end": 1982
+            },
+            {
+                "name": "SwigPyPacked_str",
+                "start": 1984,
+                "end": 1993
+            },
+            {
+                "name": "SwigPyPacked_compare",
+                "start": 1995,
+                "end": 2002
+            },
+            {
+                "name": "SwigPyPacked_type",
+                "start": 2006,
+                "end": 2010
+            },
+            {
+                "name": "SwigPyPacked_Check",
+                "start": 2012,
+                "end": 2016
+            },
+            {
+                "name": "SwigPyPacked_dealloc",
+                "start": 2018,
+                "end": 2026
+            },
+            {
+                "name": "SwigPyPacked_TypeOnce",
+                "start": 2028,
+                "end": 2112
+            },
+            {
+                "name": "SwigPyPacked_New",
+                "start": 2114,
+                "end": 2131
+            },
+            {
+                "name": "SwigPyPacked_UnpackData",
+                "start": 2133,
+                "end": 2144
+            },
+            {
+                "name": "_SWIG_This",
+                "start": 2150,
+                "end": 2154
+            },
+            {
+                "name": "SWIG_This",
+                "start": 2158,
+                "end": 2164
+            },
+            {
+                "name": "SWIG_Python_GetSwigThis",
+                "start": 2173,
+                "end": 2235
+            },
+            {
+                "name": "SWIG_Python_AcquirePtr",
+                "start": 2239,
+                "end": 2250
+            },
+            {
+                "name": "SWIG_Python_ConvertPtrAndOwn",
+                "start": 2254,
+                "end": 2355
+            },
+            {
+                "name": "SWIG_Python_ConvertFunctionPtr",
+                "start": 2359,
+                "end": 2387
+            },
+            {
+                "name": "SWIG_Python_ConvertPacked",
+                "start": 2391,
+                "end": 2403
+            },
+            {
+                "name": "SWIG_Python_NewShadowInstance",
+                "start": 2414,
+                "end": 2487
+            },
+            {
+                "name": "SWIG_Python_SetSwigThis",
+                "start": 2489,
+                "end": 2508
+            },
+            {
+                "name": "SWIG_Python_InitShadowInstance",
+                "start": 2511,
+                "end": 2525
+            },
+            {
+                "name": "SWIG_Python_NewPointerObj",
+                "start": 2529,
+                "end": 2576
+            },
+            {
+                "name": "SWIG_Python_NewPackedObj",
+                "start": 2580,
+                "end": 2583
+            },
+            {
+                "name": "SWIG_Python_GetModule",
+                "start": 2593,
+                "end": 2614
+            },
+            {
+                "name": "PyModule_AddObject",
+                "start": 2619,
+                "end": 2645
+            },
+            {
+                "name": "SWIG_Python_DestroyModule",
+                "start": 2648,
+                "end": 2671
+            },
+            {
+                "name": "SWIG_Python_SetModule",
+                "start": 2673,
+                "end": 2697
+            },
+            {
+                "name": "SWIG_Python_TypeCache",
+                "start": 2700,
+                "end": 2704
+            },
+            {
+                "name": "SWIG_Python_TypeQuery",
+                "start": 2706,
+                "end": 2734
+            },
+            {
+                "name": "SWIG_Python_AddErrMesg",
+                "start": 2743,
+                "end": 2768
+            },
+            {
+                "name": "SWIG_Python_ArgFail",
+                "start": 2770,
+                "end": 2781
+            },
+            {
+                "name": "SwigPyObject_GetDesc",
+                "start": 2783,
+                "end": 2789
+            },
+            {
+                "name": "SWIG_Python_TypeError",
+                "start": 2791,
+                "end": 2826
+            },
+            {
+                "name": "SWIG_Python_MustGetPtr",
+                "start": 2830,
+                "end": 2843
+            },
+            {
+                "name": "new_intp",
+                "start": 2971,
+                "end": 2973
+            },
+            {
+                "name": "copy_intp",
+                "start": 2975,
+                "end": 2977
+            },
+            {
+                "name": "delete_intp",
+                "start": 2979,
+                "end": 2981
+            },
+            {
+                "name": "intp_assign",
+                "start": 2983,
+                "end": 2985
+            },
+            {
+                "name": "intp_value",
+                "start": 2987,
+                "end": 2989
+            },
+            {
+                "name": "SWIG_AsVal_double",
+                "start": 3002,
+                "end": 3043
+            },
+            {
+                "name": "SWIG_CanCastAsInteger",
+                "start": 3052,
+                "end": 3079
+            },
+            {
+                "name": "SWIG_AsVal_long",
+                "start": 3082,
+                "end": 3118
+            },
+            {
+                "name": "SWIG_AsVal_int",
+                "start": 3121,
+                "end": 3134
+            },
+            {
+                "name": "SWIG_From_int",
+                "start": 3137,
+                "end": 3141
+            },
+            {
+                "name": "SWIG_pchar_descriptor",
+                "start": 3144,
+                "end": 3154
+            },
+            {
+                "name": "SWIG_FromCharPtrAndSize",
+                "start": 3157,
+                "end": 3175
+            },
+            {
+                "name": "SWIG_FromCharPtr",
+                "start": 3178,
+                "end": 3182
+            },
+            {
+                "name": "SWIG_AsCharPtrAndSize",
+                "start": 3185,
+                "end": 3258
+            },
+            {
+                "name": "SWIG_AsVal_short",
+                "start": 3264,
+                "end": 3277
+            },
+            {
+                "name": "SWIG_From_short",
+                "start": 3283,
+                "end": 3287
+            },
+            {
+                "name": "SWIG_AsCharArray",
+                "start": 3290,
+                "end": 3311
+            },
+            {
+                "name": "SWIG_AsVal_bool",
+                "start": 3314,
+                "end": 3322
+            },
+            {
+                "name": "_wrap_new_intp",
+                "start": 3327,
+                "end": 3337
+            },
+            {
+                "name": "_wrap_copy_intp",
+                "start": 3340,
+                "end": 3359
+            },
+            {
+                "name": "_wrap_delete_intp",
+                "start": 3362,
+                "end": 3380
+            },
+            {
+                "name": "_wrap_intp_assign",
+                "start": 3383,
+                "end": 3410
+            },
+            {
+                "name": "_wrap_intp_value",
+                "start": 3413,
+                "end": 3432
+            },
+            {
+                "name": "_wrap_cgroup_strerror",
+                "start": 3435,
+                "end": 3454
+            },
+            {
+                "name": "_wrap_cgroup_get_last_errno",
+                "start": 3457,
+                "end": 3467
+            },
+            {
+                "name": "_wrap_cgroup_init",
+                "start": 3470,
+                "end": 3480
+            },
+            {
+                "name": "_wrap_cgroup_get_subsys_mount_point",
+                "start": 3483,
+                "end": 3514
+            },
+            {
+                "name": "_wrap_cgroup_file_info_type_set",
+                "start": 3517,
+                "end": 3544
+            },
+            {
+                "name": "_wrap_cgroup_file_info_type_get",
+                "start": 3547,
+                "end": 3566
+            },
+            {
+                "name": "_wrap_cgroup_file_info_path_set",
+                "start": 3569,
+                "end": 3604
+            },
+            {
+                "name": "_wrap_cgroup_file_info_path_get",
+                "start": 3607,
+                "end": 3626
+            },
+            {
+                "name": "_wrap_cgroup_file_info_parent_set",
+                "start": 3629,
+                "end": 3664
+            },
+            {
+                "name": "_wrap_cgroup_file_info_parent_get",
+                "start": 3667,
+                "end": 3686
+            },
+            {
+                "name": "_wrap_cgroup_file_info_full_path_set",
+                "start": 3689,
+                "end": 3724
+            },
+            {
+                "name": "_wrap_cgroup_file_info_full_path_get",
+                "start": 3727,
+                "end": 3746
+            },
+            {
+                "name": "_wrap_cgroup_file_info_depth_set",
+                "start": 3749,
+                "end": 3776
+            },
+            {
+                "name": "_wrap_cgroup_file_info_depth_get",
+                "start": 3779,
+                "end": 3798
+            },
+            {
+                "name": "_wrap_new_cgroup_file_info",
+                "start": 3801,
+                "end": 3811
+            },
+            {
+                "name": "_wrap_delete_cgroup_file_info",
+                "start": 3814,
+                "end": 3832
+            },
+            {
+                "name": "cgroup_file_info_swigregister",
+                "start": 3835,
+                "end": 3840
+            },
+            {
+                "name": "_wrap_cgroup_walk_tree_begin",
+                "start": 3842,
+                "end": 3917
+            },
+            {
+                "name": "_wrap_cgroup_walk_tree_next",
+                "start": 3920,
+                "end": 3971
+            },
+            {
+                "name": "_wrap_cgroup_walk_tree_end",
+                "start": 3974,
+                "end": 3998
+            },
+            {
+                "name": "_wrap_cgroup_walk_tree_set_flags",
+                "start": 4001,
+                "end": 4034
+            },
+            {
+                "name": "_wrap_cgroup_read_value_begin",
+                "start": 4037,
+                "end": 4118
+            },
+            {
+                "name": "_wrap_cgroup_read_value_next",
+                "start": 4121,
+                "end": 4166
+            },
+            {
+                "name": "_wrap_cgroup_read_value_end",
+                "start": 4169,
+                "end": 4193
+            },
+            {
+                "name": "_wrap_cgroup_stat_name_set",
+                "start": 4196,
+                "end": 4224
+            },
+            {
+                "name": "_wrap_cgroup_stat_name_get",
+                "start": 4227,
+                "end": 4252
+            },
+            {
+                "name": "_wrap_cgroup_stat_value_set",
+                "start": 4255,
+                "end": 4283
+            },
+            {
+                "name": "_wrap_cgroup_stat_value_get",
+                "start": 4286,
+                "end": 4311
+            },
+            {
+                "name": "_wrap_new_cgroup_stat",
+                "start": 4314,
+                "end": 4324
+            },
+            {
+                "name": "_wrap_delete_cgroup_stat",
+                "start": 4327,
+                "end": 4345
+            },
+            {
+                "name": "cgroup_stat_swigregister",
+                "start": 4348,
+                "end": 4353
+            },
+            {
+                "name": "_wrap_cgroup_read_stats_begin",
+                "start": 4355,
+                "end": 4412
+            },
+            {
+                "name": "_wrap_cgroup_read_stats_next",
+                "start": 4415,
+                "end": 4448
+            },
+            {
+                "name": "_wrap_cgroup_read_stats_end",
+                "start": 4451,
+                "end": 4475
+            },
+            {
+                "name": "_wrap_cgroup_get_task_begin",
+                "start": 4478,
+                "end": 4535
+            },
+            {
+                "name": "_wrap_cgroup_get_task_next",
+                "start": 4538,
+                "end": 4571
+            },
+            {
+                "name": "_wrap_cgroup_get_task_end",
+                "start": 4574,
+                "end": 4598
+            },
+            {
+                "name": "_wrap_cgroup_mount_point_name_set",
+                "start": 4601,
+                "end": 4629
+            },
+            {
+                "name": "_wrap_cgroup_mount_point_name_get",
+                "start": 4632,
+                "end": 4657
+            },
+            {
+                "name": "_wrap_cgroup_mount_point_path_set",
+                "start": 4660,
+                "end": 4688
+            },
+            {
+                "name": "_wrap_cgroup_mount_point_path_get",
+                "start": 4691,
+                "end": 4716
+            },
+            {
+                "name": "_wrap_new_cgroup_mount_point",
+                "start": 4719,
+                "end": 4729
+            },
+            {
+                "name": "_wrap_delete_cgroup_mount_point",
+                "start": 4732,
+                "end": 4750
+            },
+            {
+                "name": "cgroup_mount_point_swigregister",
+                "start": 4753,
+                "end": 4758
+            },
+            {
+                "name": "_wrap_cgroup_get_controller_begin",
+                "start": 4760,
+                "end": 4793
+            },
+            {
+                "name": "_wrap_cgroup_get_controller_next",
+                "start": 4796,
+                "end": 4829
+            },
+            {
+                "name": "_wrap_cgroup_get_controller_end",
+                "start": 4832,
+                "end": 4856
+            },
+            {
+                "name": "_wrap_controller_data_name_set",
+                "start": 4859,
+                "end": 4887
+            },
+            {
+                "name": "_wrap_controller_data_name_get",
+                "start": 4890,
+                "end": 4915
+            },
+            {
+                "name": "_wrap_controller_data_hierarchy_set",
+                "start": 4918,
+                "end": 4945
+            },
+            {
+                "name": "_wrap_controller_data_hierarchy_get",
+                "start": 4948,
+                "end": 4967
+            },
+            {
+                "name": "_wrap_controller_data_num_cgroups_set",
+                "start": 4970,
+                "end": 4997
+            },
+            {
+                "name": "_wrap_controller_data_num_cgroups_get",
+                "start": 5000,
+                "end": 5019
+            },
+            {
+                "name": "_wrap_controller_data_enabled_set",
+                "start": 5022,
+                "end": 5049
+            },
+            {
+                "name": "_wrap_controller_data_enabled_get",
+                "start": 5052,
+                "end": 5071
+            },
+            {
+                "name": "_wrap_new_controller_data",
+                "start": 5074,
+                "end": 5084
+            },
+            {
+                "name": "_wrap_delete_controller_data",
+                "start": 5087,
+                "end": 5105
+            },
+            {
+                "name": "controller_data_swigregister",
+                "start": 5108,
+                "end": 5113
+            },
+            {
+                "name": "_wrap_cgroup_get_all_controller_begin",
+                "start": 5115,
+                "end": 5148
+            },
+            {
+                "name": "_wrap_cgroup_get_all_controller_next",
+                "start": 5151,
+                "end": 5184
+            },
+            {
+                "name": "_wrap_cgroup_get_all_controller_end",
+                "start": 5187,
+                "end": 5211
+            },
+            {
+                "name": "_wrap_cgroup_get_subsys_mount_point_begin",
+                "start": 5214,
+                "end": 5262
+            },
+            {
+                "name": "_wrap_cgroup_get_subsys_mount_point_next",
+                "start": 5265,
+                "end": 5301
+            },
+            {
+                "name": "_wrap_cgroup_get_subsys_mount_point_end",
+                "start": 5304,
+                "end": 5328
+            },
+            {
+                "name": "_wrap_cgroup_new_cgroup",
+                "start": 5331,
+                "end": 5353
+            },
+            {
+                "name": "_wrap_cgroup_add_controller",
+                "start": 5356,
+                "end": 5387
+            },
+            {
+                "name": "_wrap_cgroup_get_controller",
+                "start": 5390,
+                "end": 5421
+            },
+            {
+                "name": "_wrap_cgroup_free",
+                "start": 5424,
+                "end": 5442
+            },
+            {
+                "name": "_wrap_cgroup_free_controllers",
+                "start": 5445,
+                "end": 5463
+            },
+            {
+                "name": "_wrap_cgroup_create_cgroup",
+                "start": 5466,
+                "end": 5494
+            },
+            {
+                "name": "_wrap_cgroup_create_cgroup_from_parent",
+                "start": 5497,
+                "end": 5525
+            },
+            {
+                "name": "_wrap_cgroup_modify_cgroup",
+                "start": 5528,
+                "end": 5547
+            },
+            {
+                "name": "_wrap_cgroup_delete_cgroup",
+                "start": 5550,
+                "end": 5578
+            },
+            {
+                "name": "_wrap_cgroup_delete_cgroup_ext",
+                "start": 5581,
+                "end": 5609
+            },
+            {
+                "name": "_wrap_cgroup_get_cgroup",
+                "start": 5612,
+                "end": 5631
+            },
+            {
+                "name": "_wrap_cgroup_copy_cgroup",
+                "start": 5634,
+                "end": 5662
+            },
+            {
+                "name": "_wrap_cgroup_compare_cgroup",
+                "start": 5665,
+                "end": 5693
+            },
+            {
+                "name": "_wrap_cgroup_compare_controllers",
+                "start": 5696,
+                "end": 5724
+            },
+            {
+                "name": "_wrap_cgroup_set_uid_gid",
+                "start": 5727,
+                "end": 5806
+            },
+            {
+                "name": "_wrap_cgroup_get_uid_gid",
+                "start": 5809,
+                "end": 5864
+            },
+            {
+                "name": "_wrap_cgroup_set_permissions",
+                "start": 5867,
+                "end": 5930
+            },
+            {
+                "name": "_wrap_cgroup_add_value_string",
+                "start": 5933,
+                "end": 5976
+            },
+            {
+                "name": "_wrap_cgroup_add_value_int64",
+                "start": 5979,
+                "end": 6025
+            },
+            {
+                "name": "_wrap_cgroup_add_value_uint64",
+                "start": 6028,
+                "end": 6074
+            },
+            {
+                "name": "_wrap_cgroup_add_value_bool",
+                "start": 6077,
+                "end": 6117
+            },
+            {
+                "name": "_wrap_cgroup_get_value_string",
+                "start": 6120,
+                "end": 6160
+            },
+            {
+                "name": "_wrap_cgroup_get_value_int64",
+                "start": 6163,
+                "end": 6203
+            },
+            {
+                "name": "_wrap_cgroup_get_value_uint64",
+                "start": 6206,
+                "end": 6246
+            },
+            {
+                "name": "_wrap_cgroup_get_value_bool",
+                "start": 6249,
+                "end": 6289
+            },
+            {
+                "name": "_wrap_cgroup_set_value_string",
+                "start": 6292,
+                "end": 6335
+            },
+            {
+                "name": "_wrap_cgroup_set_value_int64",
+                "start": 6338,
+                "end": 6384
+            },
+            {
+                "name": "_wrap_cgroup_set_value_uint64",
+                "start": 6387,
+                "end": 6433
+            },
+            {
+                "name": "_wrap_cgroup_set_value_bool",
+                "start": 6436,
+                "end": 6476
+            },
+            {
+                "name": "_wrap_cgroup_get_value_name_count",
+                "start": 6479,
+                "end": 6498
+            },
+            {
+                "name": "_wrap_cgroup_get_value_name",
+                "start": 6501,
+                "end": 6529
+            },
+            {
+                "name": "_wrap_cgroup_get_procs",
+                "start": 6532,
+                "end": 6584
+            },
+            {
+                "name": "_wrap_cg_chmod_recursive",
+                "start": 6587,
+                "end": 6654
+            },
+            {
+                "name": "_wrap_cgroup_get_cgroup_name",
+                "start": 6657,
+                "end": 6676
+            },
+            {
+                "name": "_wrap_cgroup_attach_task",
+                "start": 6679,
+                "end": 6698
+            },
+            {
+                "name": "_wrap_cgroup_attach_task_pid",
+                "start": 6701,
+                "end": 6735
+            },
+            {
+                "name": "_wrap_cgroup_change_cgroup_path",
+                "start": 6738,
+                "end": 6784
+            },
+            {
+                "name": "_wrap_cgroup_get_current_controller_path",
+                "start": 6787,
+                "end": 6833
+            },
+            {
+                "name": "_wrap_cgroup_init_rules_cache",
+                "start": 6836,
+                "end": 6846
+            },
+            {
+                "name": "_wrap_cgroup_reload_cached_rules",
+                "start": 6849,
+                "end": 6859
+            },
+            {
+                "name": "_wrap_cgroup_print_rules_config",
+                "start": 6862,
+                "end": 6880
+            },
+            {
+                "name": "_wrap_cgroup_change_all_cgroups",
+                "start": 6883,
+                "end": 6893
+            },
+            {
+                "name": "_wrap_cgroup_change_cgroup_flags",
+                "start": 6896,
+                "end": 6972
+            },
+            {
+                "name": "_wrap_cgroup_change_cgroup_uid_gid_flags",
+                "start": 6975,
+                "end": 7039
+            },
+            {
+                "name": "_wrap_cgroup_change_cgroup_uid_gid",
+                "start": 7042,
+                "end": 7097
+            },
+            {
+                "name": "_wrap_cgroup_register_unchanged_process",
+                "start": 7100,
+                "end": 7134
+            },
+            {
+                "name": "_wrap_cgroup_config_load_config",
+                "start": 7137,
+                "end": 7159
+            },
+            {
+                "name": "_wrap_cgroup_unload_cgroups",
+                "start": 7162,
+                "end": 7172
+            },
+            {
+                "name": "_wrap_cgroup_config_unload_config",
+                "start": 7175,
+                "end": 7206
+            },
+            {
+                "name": "_wrap_cgroup_config_set_default",
+                "start": 7209,
+                "end": 7228
+            },
+            {
+                "name": "_wrap_cgroup_init_templates_cache",
+                "start": 7231,
+                "end": 7253
+            },
+            {
+                "name": "_wrap_cgroup_reload_cached_templates",
+                "start": 7256,
+                "end": 7278
+            },
+            {
+                "name": "_wrap_cgroup_config_create_template_group",
+                "start": 7281,
+                "end": 7321
+            },
+            {
+                "name": "_wrap_cgroup_set_logger",
+                "start": 7324,
+                "end": 7357
+            },
+            {
+                "name": "_wrap_cgroup_set_default_logger",
+                "start": 7360,
+                "end": 7378
+            },
+            {
+                "name": "_wrap_cgroup_set_loglevel",
+                "start": 7381,
+                "end": 7399
+            },
+            {
+                "name": "_wrap_cgroup_log__varargs__",
+                "start": 7402,
+                "end": 7433
+            },
+            {
+                "name": "_wrap_cgroup_log",
+                "start": 7436,
+                "end": 7447
+            },
+            {
+                "name": "_wrap_cgroup_parse_log_level_str",
+                "start": 7450,
+                "end": 7472
+            },
+            {
+                "name": "SWIG_InitializeModule",
+                "start": 7768,
+                "end": 7912
+            },
+            {
+                "name": "SWIG_PropagateClientData",
+                "start": 7919,
+                "end": 7940
+            },
+            {
+                "name": "swig_varlink_repr",
+                "start": 7977,
+                "end": 7984
+            },
+            {
+                "name": "swig_varlink_str",
+                "start": 7986,
+                "end": 8022
+            },
+            {
+                "name": "swig_varlink_print",
+                "start": 8024,
+                "end": 8033
+            },
+            {
+                "name": "swig_varlink_dealloc",
+                "start": 8035,
+                "end": 8044
+            },
+            {
+                "name": "swig_varlink_getattr",
+                "start": 8046,
+                "end": 8061
+            },
+            {
+                "name": "swig_varlink_setattr",
+                "start": 8063,
+                "end": 8078
+            },
+            {
+                "name": "swig_varlink_type",
+                "start": 8080,
+                "end": 8141
+            },
+            {
+                "name": "SWIG_Python_newvarlink",
+                "start": 8144,
+                "end": 8151
+            },
+            {
+                "name": "SWIG_Python_addvarlink",
+                "start": 8153,
+                "end": 8168
+            },
+            {
+                "name": "SWIG_globals",
+                "start": 8170,
+                "end": 8175
+            },
+            {
+                "name": "SWIG_Python_InstallConstants",
+                "start": 8182,
+                "end": 8203
+            },
+            {
+                "name": "SWIG_Python_FixMethods",
+                "start": 8209,
+                "end": 8249
+            },
+            {
+                "name": "init_libcgroup",
+                "start": 8263,
+                "end": 8439
+            }
+        ],
+        "src/pam/pam_cgroup.c": [
+            {
+                "name": "_pam_parse",
+                "start": 78,
+                "end": 91
+            },
+            {
+                "name": "pam_sm_open_session",
+                "start": 94,
+                "end": 154
+            },
+            {
+                "name": "pam_sm_close_session",
+                "start": 156,
+                "end": 163
+            }
+        ],
+        "src/tools/tools-common.h": [
+            {
+                "name": "parse_cgroup_spec",
+                "start": 61,
+                "end": 62
+            },
+            {
+                "name": "cgroup_string_list_init",
+                "start": 76,
+                "end": 77
+            },
+            {
+                "name": "cgroup_string_list_add_item",
+                "start": 91,
+                "end": 92
+            },
+            {
+                "name": "cgroup_string_list_add_directory",
+                "start": 103,
+                "end": 104
+            },
+            {
+                "name": "parse_uid_gid",
+                "start": 122,
+                "end": 123
+            }
+        ],
+        "src/tools/cgset.c": [
+            {
+                "name": "copy_name_value_from_cgroup",
+                "start": 29,
+                "end": 55
+            },
+            {
+                "name": "usage",
+                "start": 58,
+                "end": 74
+            },
+            {
+                "name": "main",
+                "start": 76,
+                "end": 252
+            }
+        ],
+        "src/tools/cgclear.c": [
+            {
+                "name": "usage",
+                "start": 29,
+                "end": 46
+            },
+            {
+                "name": "report_error",
+                "start": 48,
+                "end": 57
+            },
+            {
+                "name": "main",
+                "start": 60,
+                "end": 142
+            }
+        ],
+        "src/tools/cgconfig.c": [
+            {
+                "name": "usage",
+                "start": 38,
+                "end": 64
+            },
+            {
+                "name": "main",
+                "start": 66,
+                "end": 206
+            }
+        ],
+        "src/tools/cgclassify.c": [
+            {
+                "name": "usage",
+                "start": 34,
+                "end": 52
+            },
+            {
+                "name": "change_group_path",
+                "start": 57,
+                "end": 76
+            },
+            {
+                "name": "change_group_based_on_rule",
+                "start": 81,
+                "end": 113
+            },
+            {
+                "name": "main",
+                "start": 122,
+                "end": 203
+            }
+        ],
+        "src/tools/lscgroup.c": [
+            {
+                "name": "trim_filepath",
+                "start": 31,
+                "end": 39
+            },
+            {
+                "name": "usage",
+                "start": 41,
+                "end": 55
+            },
+            {
+                "name": "is_ctlr_on_list",
+                "start": 61,
+                "end": 71
+            },
+            {
+                "name": "print_info",
+                "start": 73,
+                "end": 81
+            },
+            {
+                "name": "display_controller_data",
+                "start": 84,
+                "end": 117
+            },
+            {
+                "name": "print_cgroup",
+                "start": 125,
+                "end": 193
+            },
+            {
+                "name": "cgroup_list_cgroups",
+                "start": 196,
+                "end": 248
+            },
+            {
+                "name": "main",
+                "start": 250,
+                "end": 325
+            }
+        ],
+        "src/tools/cgcreate.c": [
+            {
+                "name": "usage",
+                "start": 34,
+                "end": 55
+            },
+            {
+                "name": "main",
+                "start": 58,
+                "end": 235
+            }
+        ],
+        "src/tools/lssubsys.c": [
+            {
+                "name": "usage",
+                "start": 32,
+                "end": 51
+            },
+            {
+                "name": "print_controller_mount",
+                "start": 53,
+                "end": 86
+            },
+            {
+                "name": "print_all_controllers_in_hierarchy",
+                "start": 89,
+                "end": 145
+            },
+            {
+                "name": "cgroup_list_all_controllers",
+                "start": 150,
+                "end": 220
+            },
+            {
+                "name": "main",
+                "start": 222,
+                "end": 286
+            }
+        ],
+        "src/tools/tools-common.c": [
+            {
+                "name": "parse_cgroup_spec",
+                "start": 32,
+                "end": 96
+            },
+            {
+                "name": "cgroup_free_group_spec",
+                "start": 103,
+                "end": 121
+            },
+            {
+                "name": "cgroup_string_list_init",
+                "start": 124,
+                "end": 135
+            },
+            {
+                "name": "cgroup_string_list_free",
+                "start": 137,
+                "end": 151
+            },
+            {
+                "name": "cgroup_string_list_add_item",
+                "start": 153,
+                "end": 172
+            },
+            {
+                "name": "_compare_string",
+                "start": 174,
+                "end": 179
+            },
+            {
+                "name": "cgroup_string_list_add_directory",
+                "start": 182,
+                "end": 236
+            },
+            {
+                "name": "parse_mode",
+                "start": 240,
+                "end": 261
+            },
+            {
+                "name": "parse_uid_gid",
+                "start": 263,
+                "end": 302
+            }
+        ],
+        "src/tools/cgsnapshot.c": [
+            {
+                "name": "usage",
+                "start": 56,
+                "end": 77
+            },
+            {
+                "name": "load_list",
+                "start": 81,
+                "end": 162
+            },
+            {
+                "name": "free_list",
+                "start": 165,
+                "end": 178
+            },
+            {
+                "name": "is_on_list",
+                "start": 185,
+                "end": 203
+            },
+            {
+                "name": "display_permissions",
+                "start": 208,
+                "end": 294
+            },
+            {
+                "name": "display_cgroup_data",
+                "start": 303,
+                "end": 440
+            },
+            {
+                "name": "display_controller_data",
+                "start": 446,
+                "end": 511
+            },
+            {
+                "name": "is_ctlr_on_list",
+                "start": 513,
+                "end": 530
+            },
+            {
+                "name": "parse_controllers",
+                "start": 534,
+                "end": 594
+            },
+            {
+                "name": "show_mountpoints",
+                "start": 596,
+                "end": 622
+            },
+            {
+                "name": "parse_mountpoint",
+                "start": 628,
+                "end": 661
+            },
+            {
+                "name": "parse_mountpoints",
+                "start": 664,
+                "end": 717
+            },
+            {
+                "name": "main",
+                "start": 719,
+                "end": 842
+            }
+        ],
+        "src/tools/cgdelete.c": [
+            {
+                "name": "usage",
+                "start": 36,
+                "end": 52
+            },
+            {
+                "name": "main",
+                "start": 55,
+                "end": 178
+            }
+        ],
+        "src/tools/cgexec.c": [
+            {
+                "name": "usage",
+                "start": 43,
+                "end": 59
+            },
+            {
+                "name": "main",
+                "start": 62,
+                "end": 178
+            }
+        ],
+        "src/tools/cgget.c": [
+            {
+                "name": "usage",
+                "start": 34,
+                "end": 58
+            },
+            {
+                "name": "display_record",
+                "start": 60,
+                "end": 112
+            },
+            {
+                "name": "display_name_values",
+                "start": 116,
+                "end": 180
+            },
+            {
+                "name": "display_controller_values",
+                "start": 182,
+                "end": 242
+            },
+            {
+                "name": "display_values",
+                "start": 244,
+                "end": 274
+            },
+            {
+                "name": "add_record_to_buffer",
+                "start": 276,
+                "end": 293
+            },
+            {
+                "name": "main",
+                "start": 296,
+                "end": 466
+            }
+        ]
+    }
+}

@@ -1,0 +1,2194 @@
+{
+    "pinentry-0.8.3": {
+        "secmem/util.c": [
+            {
+                "name": "xwrite",
+                "start": 44,
+                "end": 66
+            },
+            {
+                "name": "init_uids",
+                "start": 91,
+                "end": 97
+            },
+            {
+                "name": "drop_privs",
+                "start": 136,
+                "end": 150
+            }
+        ],
+        "secmem/secmem.c": [
+            {
+                "name": "log_info",
+                "start": 63,
+                "end": 71
+            },
+            {
+                "name": "log_fatal",
+                "start": 73,
+                "end": 82
+            },
+            {
+                "name": "print_warn",
+                "start": 119,
+                "end": 124
+            },
+            {
+                "name": "lock_pool",
+                "start": 127,
+                "end": 189
+            },
+            {
+                "name": "init_pool",
+                "start": 192,
+                "end": 247
+            },
+            {
+                "name": "compress_pool",
+                "start": 251,
+                "end": 255
+            },
+            {
+                "name": "secmem_set_flags",
+                "start": 257,
+                "end": 270
+            },
+            {
+                "name": "secmem_get_flags",
+                "start": 272,
+                "end": 280
+            },
+            {
+                "name": "secmem_init",
+                "start": 282,
+                "end": 309
+            },
+            {
+                "name": "secmem_malloc",
+                "start": 312,
+                "end": 366
+            },
+            {
+                "name": "secmem_realloc",
+                "start": 369,
+                "end": 385
+            },
+            {
+                "name": "secmem_free",
+                "start": 388,
+                "end": 410
+            },
+            {
+                "name": "m_is_secure",
+                "start": 412,
+                "end": 416
+            },
+            {
+                "name": "secmem_term",
+                "start": 418,
+                "end": 437
+            },
+            {
+                "name": "secmem_dump_stats",
+                "start": 440,
+                "end": 449
+            },
+            {
+                "name": "secmem_get_max_size",
+                "start": 452,
+                "end": 456
+            }
+        ],
+        "assuan/assuan.h": [
+            {
+                "name": "assuan_register_command",
+                "start": 98,
+                "end": 100
+            },
+            {
+                "name": "assuan_register_bye_notify",
+                "start": 101,
+                "end": 102
+            },
+            {
+                "name": "assuan_register_reset_notify",
+                "start": 103,
+                "end": 104
+            },
+            {
+                "name": "assuan_register_cancel_notify",
+                "start": 105,
+                "end": 106
+            },
+            {
+                "name": "assuan_register_input_notify",
+                "start": 107,
+                "end": 108
+            },
+            {
+                "name": "assuan_register_output_notify",
+                "start": 109,
+                "end": 110
+            },
+            {
+                "name": "assuan_register_option_handler",
+                "start": 112,
+                "end": 114
+            },
+            {
+                "name": "assuan_get_active_fds",
+                "start": 118,
+                "end": 119
+            },
+            {
+                "name": "assuan_write_status",
+                "start": 123,
+                "end": 124
+            },
+            {
+                "name": "assuan_pipe_connect",
+                "start": 145,
+                "end": 146
+            },
+            {
+                "name": "assuan_socket_connect",
+                "start": 148,
+                "end": 149
+            },
+            {
+                "name": "assuan_transact",
+                "start": 156,
+                "end": 164
+            },
+            {
+                "name": "assuan_inquire",
+                "start": 168,
+                "end": 169
+            },
+            {
+                "name": "assuan_read_line",
+                "start": 172,
+                "end": 173
+            },
+            {
+                "name": "assuan_send_data",
+                "start": 176,
+                "end": 177
+            },
+            {
+                "name": "assuan_set_malloc_hooks",
+                "start": 181,
+                "end": 183
+            }
+        ],
+        "assuan/assuan-util.c": [
+            {
+                "name": "assuan_set_malloc_hooks",
+                "start": 39,
+                "end": 47
+            },
+            {
+                "name": "_assuan_malloc",
+                "start": 49,
+                "end": 53
+            },
+            {
+                "name": "_assuan_realloc",
+                "start": 55,
+                "end": 59
+            },
+            {
+                "name": "_assuan_calloc",
+                "start": 61,
+                "end": 68
+            },
+            {
+                "name": "_assuan_free",
+                "start": 70,
+                "end": 75
+            },
+            {
+                "name": "assuan_set_error",
+                "start": 82,
+                "end": 88
+            },
+            {
+                "name": "assuan_set_pointer",
+                "start": 90,
+                "end": 95
+            },
+            {
+                "name": "assuan_get_pointer",
+                "start": 97,
+                "end": 101
+            },
+            {
+                "name": "assuan_set_log_stream",
+                "start": 104,
+                "end": 113
+            },
+            {
+                "name": "assuan_begin_confidential",
+                "start": 116,
+                "end": 123
+            },
+            {
+                "name": "assuan_end_confidential",
+                "start": 125,
+                "end": 132
+            },
+            {
+                "name": "_assuan_log_print_buffer",
+                "start": 134,
+                "end": 156
+            },
+            {
+                "name": "_assuan_log_sanitized_string",
+                "start": 161,
+                "end": 194
+            }
+        ],
+        "assuan/assuan-buffer.c": [
+            {
+                "name": "my_log_prefix",
+                "start": 53,
+                "end": 61
+            },
+            {
+                "name": "writen",
+                "start": 64,
+                "end": 94
+            },
+            {
+                "name": "readline",
+                "start": 97,
+                "end": 144
+            },
+            {
+                "name": "_assuan_read_line",
+                "start": 147,
+                "end": 242
+            },
+            {
+                "name": "assuan_read_line",
+                "start": 255,
+                "end": 267
+            },
+            {
+                "name": "assuan_pending_line",
+                "start": 272,
+                "end": 276
+            },
+            {
+                "name": "assuan_write_line",
+                "start": 279,
+                "end": 310
+            },
+            {
+                "name": "_assuan_cookie_write_data",
+                "start": 316,
+                "end": 384
+            },
+            {
+                "name": "_assuan_cookie_write_flush",
+                "start": 389,
+                "end": 425
+            },
+            {
+                "name": "assuan_send_data",
+                "start": 446,
+                "end": 470
+            }
+        ],
+        "assuan/assuan-errors.c": [
+            {
+                "name": "assuan_strerror",
+                "start": 17,
+                "end": 56
+            }
+        ],
+        "assuan/assuan-pipe-server.c": [
+            {
+                "name": "deinit_pipe_server",
+                "start": 27,
+                "end": 31
+            },
+            {
+                "name": "accept_connection",
+                "start": 33,
+                "end": 38
+            },
+            {
+                "name": "finish_connection",
+                "start": 40,
+                "end": 45
+            },
+            {
+                "name": "_assuan_new_context",
+                "start": 50,
+                "end": 79
+            },
+            {
+                "name": "assuan_init_pipe_server",
+                "start": 83,
+                "end": 99
+            },
+            {
+                "name": "_assuan_release_context",
+                "start": 102,
+                "end": 111
+            },
+            {
+                "name": "assuan_deinit_server",
+                "start": 113,
+                "end": 124
+            }
+        ],
+        "assuan/assuan-listen.c": [
+            {
+                "name": "assuan_set_hello_line",
+                "start": 29,
+                "end": 50
+            },
+            {
+                "name": "assuan_accept",
+                "start": 64,
+                "end": 90
+            },
+            {
+                "name": "assuan_get_input_fd",
+                "start": 94,
+                "end": 98
+            },
+            {
+                "name": "assuan_get_output_fd",
+                "start": 101,
+                "end": 105
+            },
+            {
+                "name": "assuan_close_input_fd",
+                "start": 110,
+                "end": 118
+            },
+            {
+                "name": "assuan_close_output_fd",
+                "start": 122,
+                "end": 131
+            }
+        ],
+        "assuan/assuan-handler.c": [
+            {
+                "name": "dummy_handler",
+                "start": 32,
+                "end": 36
+            },
+            {
+                "name": "std_handler_nop",
+                "start": 39,
+                "end": 43
+            },
+            {
+                "name": "std_handler_cancel",
+                "start": 45,
+                "end": 51
+            },
+            {
+                "name": "std_handler_option",
+                "start": 53,
+                "end": 98
+            },
+            {
+                "name": "std_handler_bye",
+                "start": 100,
+                "end": 108
+            },
+            {
+                "name": "std_handler_auth",
+                "start": 110,
+                "end": 114
+            },
+            {
+                "name": "std_handler_reset",
+                "start": 116,
+                "end": 124
+            },
+            {
+                "name": "std_handler_end",
+                "start": 126,
+                "end": 130
+            },
+            {
+                "name": "parse_cmd_input_output",
+                "start": 132,
+                "end": 151
+            },
+            {
+                "name": "std_handler_input",
+                "start": 154,
+                "end": 166
+            },
+            {
+                "name": "std_handler_output",
+                "start": 169,
+                "end": 181
+            },
+            {
+                "name": "assuan_register_command",
+                "start": 225,
+                "end": 286
+            },
+            {
+                "name": "assuan_register_bye_notify",
+                "start": 288,
+                "end": 295
+            },
+            {
+                "name": "assuan_register_reset_notify",
+                "start": 297,
+                "end": 304
+            },
+            {
+                "name": "assuan_register_cancel_notify",
+                "start": 306,
+                "end": 313
+            },
+            {
+                "name": "assuan_register_option_handler",
+                "start": 315,
+                "end": 324
+            },
+            {
+                "name": "assuan_register_input_notify",
+                "start": 326,
+                "end": 334
+            },
+            {
+                "name": "assuan_register_output_notify",
+                "start": 336,
+                "end": 344
+            },
+            {
+                "name": "_assuan_register_std_commands",
+                "start": 348,
+                "end": 364
+            },
+            {
+                "name": "handle_data_line",
+                "start": 370,
+                "end": 374
+            },
+            {
+                "name": "my_strcasecmp",
+                "start": 377,
+                "end": 389
+            },
+            {
+                "name": "dispatch_command",
+                "start": 394,
+                "end": 436
+            },
+            {
+                "name": "process_request",
+                "start": 441,
+                "end": 507
+            },
+            {
+                "name": "assuan_process",
+                "start": 520,
+                "end": 533
+            },
+            {
+                "name": "assuan_process_next",
+                "start": 547,
+                "end": 551
+            },
+            {
+                "name": "assuan_get_active_fds",
+                "start": 571,
+                "end": 594
+            },
+            {
+                "name": "assuan_set_okay_line",
+                "start": 599,
+                "end": 622
+            },
+            {
+                "name": "assuan_write_status",
+                "start": 626,
+                "end": 662
+            }
+        ],
+        "gtk/gtksecentry.h": [
+            {
+                "name": "gtk_secure_entry_set_text",
+                "start": 88,
+                "end": 89
+            },
+            {
+                "name": "gtk_secure_entry_append_text",
+                "start": 90,
+                "end": 91
+            },
+            {
+                "name": "gtk_secure_entry_prepend_text",
+                "start": 92,
+                "end": 93
+            },
+            {
+                "name": "gtk_secure_entry_set_position",
+                "start": 94,
+                "end": 95
+            },
+            {
+                "name": "gtk_secure_entry_select_region",
+                "start": 98,
+                "end": 100
+            },
+            {
+                "name": "gtk_secure_entry_set_visibility",
+                "start": 101,
+                "end": 102
+            },
+            {
+                "name": "gtk_secure_entry_set_editable",
+                "start": 103,
+                "end": 104
+            },
+            {
+                "name": "gtk_secure_entry_set_max_length",
+                "start": 106,
+                "end": 107
+            }
+        ],
+        "gtk/pinentry-gtk.c": [
+            {
+                "name": "unselect",
+                "start": 68,
+                "end": 81
+            },
+            {
+                "name": "constrain_size",
+                "start": 85,
+                "end": 101
+            },
+            {
+                "name": "grab_keyboard",
+                "start": 104,
+                "end": 113
+            },
+            {
+                "name": "ungrab_keyboard",
+                "start": 116,
+                "end": 120
+            },
+            {
+                "name": "delete_event",
+                "start": 123,
+                "end": 128
+            },
+            {
+                "name": "button_clicked",
+                "start": 130,
+                "end": 172
+            },
+            {
+                "name": "enter_callback",
+                "start": 175,
+                "end": 179
+            },
+            {
+                "name": "confirm_button_clicked",
+                "start": 182,
+                "end": 190
+            },
+            {
+                "name": "create_utf8_label",
+                "start": 193,
+                "end": 208
+            },
+            {
+                "name": "create_window",
+                "start": 211,
+                "end": 369
+            },
+            {
+                "name": "gtk_cmd_handler",
+                "start": 373,
+                "end": 398
+            },
+            {
+                "name": "main",
+                "start": 402,
+                "end": 427
+            }
+        ],
+        "gtk/gtksecentry.c": [
+            {
+                "name": "gtk_secure_entry_set_arg",
+                "start": 63,
+                "end": 65
+            },
+            {
+                "name": "gtk_secure_entry_get_arg",
+                "start": 66,
+                "end": 68
+            },
+            {
+                "name": "gtk_secure_entry_size_request",
+                "start": 73,
+                "end": 74
+            },
+            {
+                "name": "gtk_secure_entry_size_allocate",
+                "start": 75,
+                "end": 76
+            },
+            {
+                "name": "gtk_secure_entry_make_backing_pixmap",
+                "start": 77,
+                "end": 78
+            },
+            {
+                "name": "gtk_secure_entry_draw",
+                "start": 79,
+                "end": 80
+            },
+            {
+                "name": "gtk_secure_entry_expose",
+                "start": 81,
+                "end": 82
+            },
+            {
+                "name": "gtk_secure_entry_button_press",
+                "start": 83,
+                "end": 84
+            },
+            {
+                "name": "gtk_secure_entry_button_release",
+                "start": 85,
+                "end": 86
+            },
+            {
+                "name": "gtk_secure_entry_motion_notify",
+                "start": 87,
+                "end": 88
+            },
+            {
+                "name": "gtk_secure_entry_key_press",
+                "start": 89,
+                "end": 90
+            },
+            {
+                "name": "gtk_secure_entry_focus_in",
+                "start": 91,
+                "end": 92
+            },
+            {
+                "name": "gtk_secure_entry_focus_out",
+                "start": 93,
+                "end": 94
+            },
+            {
+                "name": "gtk_secure_entry_draw_cursor_on_drawable",
+                "start": 97,
+                "end": 99
+            },
+            {
+                "name": "gtk_secure_entry_style_set",
+                "start": 100,
+                "end": 101
+            },
+            {
+                "name": "gtk_secure_entry_state_changed",
+                "start": 102,
+                "end": 103
+            },
+            {
+                "name": "gtk_secure_entry_position",
+                "start": 109,
+                "end": 110
+            },
+            {
+                "name": "gtk_secure_entry_insert_text",
+                "start": 113,
+                "end": 116
+            },
+            {
+                "name": "gtk_secure_entry_delete_text",
+                "start": 117,
+                "end": 119
+            },
+            {
+                "name": "gtk_secure_entry_update_text",
+                "start": 120,
+                "end": 122
+            },
+            {
+                "name": "gtk_secure_entry_get_chars",
+                "start": 123,
+                "end": 125
+            },
+            {
+                "name": "gtk_secure_entry_move_cursor",
+                "start": 128,
+                "end": 130
+            },
+            {
+                "name": "gtk_secure_entry_move_word",
+                "start": 131,
+                "end": 132
+            },
+            {
+                "name": "gtk_secure_entry_move_to_column",
+                "start": 133,
+                "end": 134
+            },
+            {
+                "name": "gtk_secure_entry_kill_char",
+                "start": 135,
+                "end": 136
+            },
+            {
+                "name": "gtk_secure_entry_kill_word",
+                "start": 137,
+                "end": 138
+            },
+            {
+                "name": "gtk_secure_entry_kill_line",
+                "start": 139,
+                "end": 140
+            },
+            {
+                "name": "gtk_select_word",
+                "start": 155,
+                "end": 156
+            },
+            {
+                "name": "gtk_select_line",
+                "start": 157,
+                "end": 158
+            },
+            {
+                "name": "gtk_secure_entry_set_selection",
+                "start": 161,
+                "end": 163
+            },
+            {
+                "name": "gtk_secure_entry_find_position",
+                "start": 166,
+                "end": 167
+            },
+            {
+                "name": "gtk_secure_entry_set_position_from_editable",
+                "start": 168,
+                "end": 169
+            },
+            {
+                "name": "g_malloc",
+                "start": 246,
+                "end": 262
+            },
+            {
+                "name": "g_malloc0",
+                "start": 264,
+                "end": 282
+            },
+            {
+                "name": "g_realloc",
+                "start": 284,
+                "end": 317
+            },
+            {
+                "name": "g_free",
+                "start": 319,
+                "end": 329
+            },
+            {
+                "name": "gtk_secure_entry_get_type",
+                "start": 331,
+                "end": 354
+            },
+            {
+                "name": "gtk_secure_entry_class_init",
+                "start": 356,
+                "end": 407
+            },
+            {
+                "name": "gtk_secure_entry_set_arg",
+                "start": 409,
+                "end": 429
+            },
+            {
+                "name": "gtk_secure_entry_get_arg",
+                "start": 431,
+                "end": 452
+            },
+            {
+                "name": "gtk_secure_entry_init",
+                "start": 454,
+                "end": 476
+            },
+            {
+                "name": "gtk_secure_entry_new",
+                "start": 478,
+                "end": 482
+            },
+            {
+                "name": "gtk_secure_entry_new_with_max_length",
+                "start": 484,
+                "end": 493
+            },
+            {
+                "name": "gtk_secure_entry_set_text",
+                "start": 495,
+                "end": 520
+            },
+            {
+                "name": "gtk_secure_entry_append_text",
+                "start": 522,
+                "end": 535
+            },
+            {
+                "name": "gtk_secure_entry_prepend_text",
+                "start": 537,
+                "end": 550
+            },
+            {
+                "name": "gtk_secure_entry_set_position",
+                "start": 552,
+                "end": 564
+            },
+            {
+                "name": "gtk_secure_entry_set_position_from_editable",
+                "start": 566,
+                "end": 571
+            },
+            {
+                "name": "gtk_secure_entry_set_visibility",
+                "start": 573,
+                "end": 584
+            },
+            {
+                "name": "gtk_secure_entry_set_editable",
+                "start": 586,
+                "end": 594
+            },
+            {
+                "name": "gtk_secure_entry_get_text",
+                "start": 596,
+                "end": 620
+            },
+            {
+                "name": "gtk_secure_entry_finalize",
+                "start": 622,
+                "end": 651
+            },
+            {
+                "name": "gtk_secure_entry_realize",
+                "start": 653,
+                "end": 786
+            },
+            {
+                "name": "gtk_secure_entry_unrealize",
+                "start": 788,
+                "end": 822
+            },
+            {
+                "name": "gtk_secure_entry_draw_focus",
+                "start": 824,
+                "end": 863
+            },
+            {
+                "name": "gtk_secure_entry_size_request",
+                "start": 865,
+                "end": 877
+            },
+            {
+                "name": "gtk_secure_entry_size_allocate",
+                "start": 879,
+                "end": 930
+            },
+            {
+                "name": "gtk_secure_entry_draw",
+                "start": 932,
+                "end": 945
+            },
+            {
+                "name": "gtk_secure_entry_expose",
+                "start": 947,
+                "end": 965
+            },
+            {
+                "name": "gtk_secure_entry_button_press",
+                "start": 967,
+                "end": 1045
+            },
+            {
+                "name": "gtk_secure_entry_button_release",
+                "start": 1047,
+                "end": 1092
+            },
+            {
+                "name": "gtk_secure_entry_motion_notify",
+                "start": 1094,
+                "end": 1120
+            },
+            {
+                "name": "gtk_secure_entry_key_press",
+                "start": 1122,
+                "end": 1316
+            },
+            {
+                "name": "gtk_secure_entry_focus_in",
+                "start": 1318,
+                "end": 1335
+            },
+            {
+                "name": "gtk_secure_entry_focus_out",
+                "start": 1337,
+                "end": 1353
+            },
+            {
+                "name": "gtk_secure_entry_make_backing_pixmap",
+                "start": 1355,
+                "end": 1380
+            },
+            {
+                "name": "gtk_secure_entry_draw_text",
+                "start": 1382,
+                "end": 1534
+            },
+            {
+                "name": "gtk_secure_entry_draw_cursor",
+                "start": 1536,
+                "end": 1543
+            },
+            {
+                "name": "gtk_secure_entry_draw_cursor_on_drawable",
+                "start": 1545,
+                "end": 1616
+            },
+            {
+                "name": "gtk_secure_entry_queue_draw",
+                "start": 1618,
+                "end": 1626
+            },
+            {
+                "name": "gtk_secure_entry_timer",
+                "start": 1628,
+                "end": 1642
+            },
+            {
+                "name": "gtk_secure_entry_find_position",
+                "start": 1644,
+                "end": 1671
+            },
+            {
+                "name": "gtk_secure_entry_position",
+                "start": 1673,
+                "end": 1678
+            },
+            {
+                "name": "entry_adjust_scroll",
+                "start": 1680,
+                "end": 1710
+            },
+            {
+                "name": "gtk_secure_entry_grow_text",
+                "start": 1712,
+                "end": 1738
+            },
+            {
+                "name": "gtk_secure_entry_insert_text",
+                "start": 1740,
+                "end": 1881
+            },
+            {
+                "name": "gtk_secure_entry_recompute_offsets",
+                "start": 1884,
+                "end": 1905
+            },
+            {
+                "name": "gtk_secure_entry_delete_text",
+                "start": 1907,
+                "end": 1960
+            },
+            {
+                "name": "gtk_secure_entry_update_text",
+                "start": 1962,
+                "end": 1968
+            },
+            {
+                "name": "gtk_secure_entry_get_chars",
+                "start": 1970,
+                "end": 2014
+            },
+            {
+                "name": "gtk_secure_entry_move_cursor",
+                "start": 2016,
+                "end": 2033
+            },
+            {
+                "name": "gtk_move_forward_character",
+                "start": 2035,
+                "end": 2039
+            },
+            {
+                "name": "gtk_move_backward_character",
+                "start": 2041,
+                "end": 2045
+            },
+            {
+                "name": "gtk_secure_entry_move_word",
+                "start": 2047,
+                "end": 2055
+            },
+            {
+                "name": "gtk_move_forward_word",
+                "start": 2057,
+                "end": 2086
+            },
+            {
+                "name": "gtk_move_backward_word",
+                "start": 2088,
+                "end": 2121
+            },
+            {
+                "name": "gtk_secure_entry_move_to_column",
+                "start": 2123,
+                "end": 2134
+            },
+            {
+                "name": "gtk_move_beginning_of_line",
+                "start": 2136,
+                "end": 2140
+            },
+            {
+                "name": "gtk_move_end_of_line",
+                "start": 2142,
+                "end": 2146
+            },
+            {
+                "name": "gtk_secure_entry_kill_char",
+                "start": 2148,
+                "end": 2168
+            },
+            {
+                "name": "gtk_delete_forward_character",
+                "start": 2170,
+                "end": 2174
+            },
+            {
+                "name": "gtk_delete_backward_character",
+                "start": 2176,
+                "end": 2180
+            },
+            {
+                "name": "gtk_secure_entry_kill_word",
+                "start": 2182,
+                "end": 2202
+            },
+            {
+                "name": "gtk_delete_forward_word",
+                "start": 2204,
+                "end": 2208
+            },
+            {
+                "name": "gtk_delete_backward_word",
+                "start": 2210,
+                "end": 2214
+            },
+            {
+                "name": "gtk_secure_entry_kill_line",
+                "start": 2216,
+                "end": 2231
+            },
+            {
+                "name": "gtk_delete_line",
+                "start": 2233,
+                "end": 2238
+            },
+            {
+                "name": "gtk_delete_to_line_end",
+                "start": 2240,
+                "end": 2244
+            },
+            {
+                "name": "gtk_select_word",
+                "start": 2246,
+                "end": 2265
+            },
+            {
+                "name": "gtk_select_line",
+                "start": 2267,
+                "end": 2280
+            },
+            {
+                "name": "gtk_secure_entry_set_selection",
+                "start": 2282,
+                "end": 2297
+            },
+            {
+                "name": "gtk_secure_entry_select_region",
+                "start": 2299,
+                "end": 2305
+            },
+            {
+                "name": "gtk_secure_entry_set_max_length",
+                "start": 2307,
+                "end": 2317
+            },
+            {
+                "name": "gtk_secure_entry_style_set",
+                "start": 2363,
+                "end": 2389
+            },
+            {
+                "name": "gtk_secure_entry_state_changed",
+                "start": 2391,
+                "end": 2410
+            }
+        ],
+        "pinentry/pinentry.h": [
+            {
+                "name": "pinentry_inq_quality",
+                "start": 173,
+                "end": 174
+            }
+        ],
+        "pinentry/pinentry-curses.c": [
+            {
+                "name": "collect_line",
+                "start": 128,
+                "end": 163
+            },
+            {
+                "name": "utf8_to_local",
+                "start": 212,
+                "end": 216
+            },
+            {
+                "name": "dialog_create",
+                "start": 219,
+                "end": 560
+            },
+            {
+                "name": "set_cursor_state",
+                "start": 563,
+                "end": 579
+            },
+            {
+                "name": "dialog_switch_pos",
+                "start": 581,
+                "end": 653
+            },
+            {
+                "name": "dialog_input",
+                "start": 656,
+                "end": 708
+            },
+            {
+                "name": "dialog_run",
+                "start": 710,
+                "end": 960
+            },
+            {
+                "name": "do_touch_file",
+                "start": 964,
+                "end": 985
+            },
+            {
+                "name": "catchsig",
+                "start": 988,
+                "end": 993
+            },
+            {
+                "name": "curses_cmd_handler",
+                "start": 996,
+                "end": 1018
+            }
+        ],
+        "pinentry/pinentry.c": [
+            {
+                "name": "copy_and_escape",
+                "start": 237,
+                "end": 257
+            },
+            {
+                "name": "pinentry_inq_quality",
+                "start": 269,
+                "end": 333
+            },
+            {
+                "name": "pinentry_setbufferlen",
+                "start": 340,
+                "end": 359
+            },
+            {
+                "name": "pinentry_init",
+                "start": 364,
+                "end": 383
+            },
+            {
+                "name": "pinentry_have_display",
+                "start": 388,
+                "end": 402
+            },
+            {
+                "name": "usage",
+                "start": 406,
+                "end": 426
+            },
+            {
+                "name": "parse_color",
+                "start": 429,
+                "end": 477
+            },
+            {
+                "name": "pinentry_parse_opts",
+                "start": 482,
+                "end": 609
+            },
+            {
+                "name": "option_handler",
+                "start": 612,
+                "end": 702
+            },
+            {
+                "name": "strcpy_escaped",
+                "start": 707,
+                "end": 722
+            },
+            {
+                "name": "cmd_setdesc",
+                "start": 725,
+                "end": 739
+            },
+            {
+                "name": "cmd_setprompt",
+                "start": 742,
+                "end": 756
+            },
+            {
+                "name": "cmd_seterror",
+                "start": 759,
+                "end": 773
+            },
+            {
+                "name": "cmd_setok",
+                "start": 776,
+                "end": 790
+            },
+            {
+                "name": "cmd_setnotok",
+                "start": 793,
+                "end": 807
+            },
+            {
+                "name": "cmd_setcancel",
+                "start": 810,
+                "end": 824
+            },
+            {
+                "name": "cmd_settimeout",
+                "start": 827,
+                "end": 834
+            },
+            {
+                "name": "cmd_settitle",
+                "start": 836,
+                "end": 850
+            },
+            {
+                "name": "cmd_setqualitybar",
+                "start": 852,
+                "end": 869
+            },
+            {
+                "name": "cmd_setqualitybar_tt",
+                "start": 872,
+                "end": 891
+            },
+            {
+                "name": "cmd_getpin",
+                "start": 894,
+                "end": 951
+            },
+            {
+                "name": "cmd_confirm",
+                "start": 961,
+                "end": 988
+            },
+            {
+                "name": "cmd_message",
+                "start": 991,
+                "end": 1013
+            },
+            {
+                "name": "cmd_getinfo",
+                "start": 1023,
+                "end": 1043
+            },
+            {
+                "name": "register_commands",
+                "start": 1047,
+                "end": 1085
+            },
+            {
+                "name": "pinentry_loop2",
+                "start": 1088,
+                "end": 1149
+            },
+            {
+                "name": "pinentry_loop",
+                "start": 1155,
+                "end": 1159
+            }
+        ],
+        "gtk+-2/gtksecentry.h": [
+            {
+                "name": "gtk_secure_entry_new",
+                "start": 137,
+                "end": 138
+            },
+            {
+                "name": "gtk_secure_entry_set_invisible_char",
+                "start": 139,
+                "end": 140
+            },
+            {
+                "name": "gtk_secure_entry_get_invisible_char",
+                "start": 141,
+                "end": 142
+            },
+            {
+                "name": "gtk_secure_entry_set_has_frame",
+                "start": 143,
+                "end": 144
+            },
+            {
+                "name": "gtk_secure_entry_get_has_frame",
+                "start": 145,
+                "end": 146
+            },
+            {
+                "name": "gtk_secure_entry_set_max_length",
+                "start": 148,
+                "end": 149
+            },
+            {
+                "name": "gtk_secure_entry_get_max_length",
+                "start": 150,
+                "end": 151
+            },
+            {
+                "name": "gtk_secure_entry_set_activates_default",
+                "start": 152,
+                "end": 154
+            },
+            {
+                "name": "gtk_secure_entry_get_activates_default",
+                "start": 155,
+                "end": 156
+            },
+            {
+                "name": "gtk_secure_entry_set_width_chars",
+                "start": 158,
+                "end": 159
+            },
+            {
+                "name": "gtk_secure_entry_get_width_chars",
+                "start": 160,
+                "end": 161
+            },
+            {
+                "name": "gtk_secure_entry_set_text",
+                "start": 165,
+                "end": 166
+            },
+            {
+                "name": "gtk_secure_entry_get_layout",
+                "start": 171,
+                "end": 172
+            },
+            {
+                "name": "gtk_secure_entry_get_layout_offsets",
+                "start": 173,
+                "end": 175
+            }
+        ],
+        "gtk+-2/pinentry-gtk-2.c": [
+            {
+                "name": "constrain_size",
+                "start": 83,
+                "end": 99
+            },
+            {
+                "name": "make_transient",
+                "start": 116,
+                "end": 129
+            },
+            {
+                "name": "grab_keyboard",
+                "start": 133,
+                "end": 145
+            },
+            {
+                "name": "ungrab_keyboard",
+                "start": 149,
+                "end": 159
+            },
+            {
+                "name": "delete_event",
+                "start": 162,
+                "end": 168
+            },
+            {
+                "name": "button_clicked",
+                "start": 171,
+                "end": 198
+            },
+            {
+                "name": "enter_callback",
+                "start": 201,
+                "end": 205
+            },
+            {
+                "name": "confirm_button_clicked",
+                "start": 208,
+                "end": 213
+            },
+            {
+                "name": "pinentry_utf8_validate",
+                "start": 216,
+                "end": 239
+            },
+            {
+                "name": "changed_text_handler",
+                "start": 244,
+                "end": 283
+            },
+            {
+                "name": "timeout_cb",
+                "start": 286,
+                "end": 293
+            },
+            {
+                "name": "create_window",
+                "start": 296,
+                "end": 560
+            },
+            {
+                "name": "gtk_cmd_handler",
+                "start": 563,
+                "end": 592
+            },
+            {
+                "name": "main",
+                "start": 598,
+                "end": 635
+            }
+        ],
+        "gtk+-2/gtksecentry.c": [
+            {
+                "name": "gtk_secure_entry_cell_editable_init",
+                "start": 83,
+                "end": 84
+            },
+            {
+                "name": "gtk_secure_entry_set_property",
+                "start": 86,
+                "end": 89
+            },
+            {
+                "name": "gtk_secure_entry_get_property",
+                "start": 90,
+                "end": 93
+            },
+            {
+                "name": "gtk_secure_entry_size_request",
+                "start": 100,
+                "end": 101
+            },
+            {
+                "name": "gtk_secure_entry_size_allocate",
+                "start": 102,
+                "end": 103
+            },
+            {
+                "name": "gtk_secure_entry_expose",
+                "start": 105,
+                "end": 106
+            },
+            {
+                "name": "gtk_secure_entry_button_press",
+                "start": 107,
+                "end": 108
+            },
+            {
+                "name": "gtk_secure_entry_button_release",
+                "start": 109,
+                "end": 110
+            },
+            {
+                "name": "gtk_secure_entry_motion_notify",
+                "start": 111,
+                "end": 112
+            },
+            {
+                "name": "gtk_secure_entry_key_press",
+                "start": 113,
+                "end": 114
+            },
+            {
+                "name": "gtk_secure_entry_key_release",
+                "start": 115,
+                "end": 116
+            },
+            {
+                "name": "gtk_secure_entry_focus_in",
+                "start": 117,
+                "end": 118
+            },
+            {
+                "name": "gtk_secure_entry_focus_out",
+                "start": 119,
+                "end": 120
+            },
+            {
+                "name": "gtk_secure_entry_style_set",
+                "start": 122,
+                "end": 123
+            },
+            {
+                "name": "gtk_secure_entry_direction_changed",
+                "start": 124,
+                "end": 126
+            },
+            {
+                "name": "gtk_secure_entry_state_changed",
+                "start": 127,
+                "end": 128
+            },
+            {
+                "name": "gtk_secure_entry_screen_changed",
+                "start": 129,
+                "end": 130
+            },
+            {
+                "name": "gtk_secure_entry_insert_text",
+                "start": 134,
+                "end": 137
+            },
+            {
+                "name": "gtk_secure_entry_delete_text",
+                "start": 138,
+                "end": 139
+            },
+            {
+                "name": "gtk_secure_entry_real_set_position",
+                "start": 140,
+                "end": 141
+            },
+            {
+                "name": "gtk_secure_entry_set_selection_bounds",
+                "start": 143,
+                "end": 144
+            },
+            {
+                "name": "gtk_secure_entry_get_selection_bounds",
+                "start": 145,
+                "end": 148
+            },
+            {
+                "name": "gtk_secure_entry_start_editing",
+                "start": 152,
+                "end": 153
+            },
+            {
+                "name": "gtk_secure_entry_real_insert_text",
+                "start": 157,
+                "end": 160
+            },
+            {
+                "name": "gtk_secure_entry_real_delete_text",
+                "start": 161,
+                "end": 163
+            },
+            {
+                "name": "gtk_secure_entry_move_cursor",
+                "start": 164,
+                "end": 167
+            },
+            {
+                "name": "gtk_secure_entry_insert_at_cursor",
+                "start": 168,
+                "end": 169
+            },
+            {
+                "name": "gtk_secure_entry_delete_from_cursor",
+                "start": 170,
+                "end": 172
+            },
+            {
+                "name": "gtk_secure_entry_keymap_direction_changed",
+                "start": 175,
+                "end": 177
+            },
+            {
+                "name": "gtk_secure_entry_commit_cb",
+                "start": 180,
+                "end": 182
+            },
+            {
+                "name": "gtk_secure_entry_preedit_changed_cb",
+                "start": 183,
+                "end": 184
+            },
+            {
+                "name": "gtk_secure_entry_retrieve_surrounding_cb",
+                "start": 185,
+                "end": 188
+            },
+            {
+                "name": "gtk_secure_entry_delete_surrounding_cb",
+                "start": 189,
+                "end": 194
+            },
+            {
+                "name": "gtk_secure_entry_enter_text",
+                "start": 198,
+                "end": 199
+            },
+            {
+                "name": "gtk_secure_entry_set_positions",
+                "start": 200,
+                "end": 202
+            },
+            {
+                "name": "gtk_secure_entry_ensure_layout",
+                "start": 205,
+                "end": 207
+            },
+            {
+                "name": "gtk_secure_entry_get_cursor_locations",
+                "start": 213,
+                "end": 215
+            },
+            {
+                "name": "gtk_secure_entry_move_visually",
+                "start": 217,
+                "end": 218
+            },
+            {
+                "name": "gtk_secure_entry_move_logically",
+                "start": 219,
+                "end": 220
+            },
+            {
+                "name": "gtk_secure_entry_mnemonic_activate",
+                "start": 221,
+                "end": 222
+            },
+            {
+                "name": "gtk_secure_entry_state_changed",
+                "start": 223,
+                "end": 224
+            },
+            {
+                "name": "get_text_area_size",
+                "start": 227,
+                "end": 229
+            },
+            {
+                "name": "get_widget_window_size",
+                "start": 230,
+                "end": 232
+            },
+            {
+                "name": "_gtk_marshal_VOID__ENUM_INT_BOOLEAN",
+                "start": 238,
+                "end": 244
+            },
+            {
+                "name": "_gtk_marshal_VOID__ENUM_INT",
+                "start": 245,
+                "end": 250
+            },
+            {
+                "name": "secentry_malloc",
+                "start": 268,
+                "end": 284
+            },
+            {
+                "name": "secentry_realloc",
+                "start": 287,
+                "end": 315
+            },
+            {
+                "name": "secentry_free",
+                "start": 317,
+                "end": 326
+            },
+            {
+                "name": "gtk_secure_entry_get_type",
+                "start": 328,
+                "end": 370
+            },
+            {
+                "name": "add_move_binding",
+                "start": 372,
+                "end": 389
+            },
+            {
+                "name": "gtk_secure_entry_class_init",
+                "start": 391,
+                "end": 658
+            },
+            {
+                "name": "gtk_secure_entry_editable_init",
+                "start": 660,
+                "end": 671
+            },
+            {
+                "name": "gtk_secure_entry_cell_editable_init",
+                "start": 673,
+                "end": 677
+            },
+            {
+                "name": "gtk_secure_entry_set_property",
+                "start": 679,
+                "end": 727
+            },
+            {
+                "name": "gtk_secure_entry_get_property",
+                "start": 729,
+                "end": 772
+            },
+            {
+                "name": "gtk_secure_entry_init",
+                "start": 774,
+                "end": 805
+            },
+            {
+                "name": "gtk_secure_entry_finalize",
+                "start": 807,
+                "end": 830
+            },
+            {
+                "name": "gtk_secure_entry_realize",
+                "start": 832,
+                "end": 898
+            },
+            {
+                "name": "gtk_secure_entry_unrealize",
+                "start": 900,
+                "end": 917
+            },
+            {
+                "name": "get_borders",
+                "start": 919,
+                "end": 942
+            },
+            {
+                "name": "gtk_secure_entry_size_request",
+                "start": 944,
+                "end": 985
+            },
+            {
+                "name": "get_text_area_size",
+                "start": 987,
+                "end": 1010
+            },
+            {
+                "name": "get_widget_window_size",
+                "start": 1012,
+                "end": 1041
+            },
+            {
+                "name": "gtk_secure_entry_size_allocate",
+                "start": 1043,
+                "end": 1068
+            },
+            {
+                "name": "gtk_secure_entry_draw_frame",
+                "start": 1070,
+                "end": 1105
+            },
+            {
+                "name": "gtk_secure_entry_expose",
+                "start": 1107,
+                "end": 1134
+            },
+            {
+                "name": "gtk_secure_entry_button_press",
+                "start": 1136,
+                "end": 1172
+            },
+            {
+                "name": "gtk_secure_entry_button_release",
+                "start": 1174,
+                "end": 1186
+            },
+            {
+                "name": "gtk_secure_entry_motion_notify",
+                "start": 1188,
+                "end": 1229
+            },
+            {
+                "name": "set_invisible_cursor",
+                "start": 1231,
+                "end": 1255
+            },
+            {
+                "name": "gtk_secure_entry_obscure_mouse_cursor",
+                "start": 1257,
+                "end": 1266
+            },
+            {
+                "name": "gtk_secure_entry_key_press",
+                "start": 1268,
+                "end": 1287
+            },
+            {
+                "name": "gtk_secure_entry_key_release",
+                "start": 1289,
+                "end": 1301
+            },
+            {
+                "name": "gtk_secure_entry_focus_in",
+                "start": 1303,
+                "end": 1321
+            },
+            {
+                "name": "gtk_secure_entry_focus_out",
+                "start": 1323,
+                "end": 1341
+            },
+            {
+                "name": "gtk_secure_entry_grab_focus",
+                "start": 1343,
+                "end": 1361
+            },
+            {
+                "name": "gtk_secure_entry_direction_changed",
+                "start": 1363,
+                "end": 1373
+            },
+            {
+                "name": "gtk_secure_entry_state_changed",
+                "start": 1375,
+                "end": 1397
+            },
+            {
+                "name": "gtk_secure_entry_screen_changed",
+                "start": 1399,
+                "end": 1403
+            },
+            {
+                "name": "gtk_secure_entry_insert_text",
+                "start": 1407,
+                "end": 1431
+            },
+            {
+                "name": "gtk_secure_entry_delete_text",
+                "start": 1433,
+                "end": 1451
+            },
+            {
+                "name": "gtk_secure_entry_set_position_internal",
+                "start": 1453,
+                "end": 1466
+            },
+            {
+                "name": "gtk_secure_entry_real_set_position",
+                "start": 1468,
+                "end": 1473
+            },
+            {
+                "name": "gtk_secure_entry_get_position",
+                "start": 1475,
+                "end": 1479
+            },
+            {
+                "name": "gtk_secure_entry_set_selection_bounds",
+                "start": 1481,
+                "end": 1497
+            },
+            {
+                "name": "gtk_secure_entry_get_selection_bounds",
+                "start": 1499,
+                "end": 1509
+            },
+            {
+                "name": "gtk_secure_entry_style_set",
+                "start": 1511,
+                "end": 1526
+            },
+            {
+                "name": "gtk_cell_editable_secure_entry_activated",
+                "start": 1530,
+                "end": 1535
+            },
+            {
+                "name": "gtk_cell_editable_key_press_event",
+                "start": 1537,
+                "end": 1558
+            },
+            {
+                "name": "gtk_secure_entry_start_editing",
+                "start": 1560,
+                "end": 1570
+            },
+            {
+                "name": "gtk_secure_entry_real_insert_text",
+                "start": 1574,
+                "end": 1652
+            },
+            {
+                "name": "gtk_secure_entry_real_delete_text",
+                "start": 1654,
+                "end": 1694
+            },
+            {
+                "name": "get_better_cursor_x",
+                "start": 1701,
+                "end": 1727
+            },
+            {
+                "name": "gtk_secure_entry_move_cursor",
+                "start": 1729,
+                "end": 1807
+            },
+            {
+                "name": "gtk_secure_entry_insert_at_cursor",
+                "start": 1809,
+                "end": 1820
+            },
+            {
+                "name": "gtk_secure_entry_delete_from_cursor",
+                "start": 1822,
+                "end": 1861
+            },
+            {
+                "name": "gtk_secure_entry_real_activate",
+                "start": 1879,
+                "end": 1901
+            },
+            {
+                "name": "gtk_secure_entry_keymap_direction_changed",
+                "start": 1903,
+                "end": 1908
+            },
+            {
+                "name": "gtk_secure_entry_commit_cb",
+                "start": 1913,
+                "end": 1918
+            },
+            {
+                "name": "gtk_secure_entry_preedit_changed_cb",
+                "start": 1920,
+                "end": 1935
+            },
+            {
+                "name": "gtk_secure_entry_retrieve_surrounding_cb",
+                "start": 1937,
+                "end": 1950
+            },
+            {
+                "name": "gtk_secure_entry_delete_surrounding_cb",
+                "start": 1952,
+                "end": 1963
+            },
+            {
+                "name": "gtk_secure_entry_enter_text",
+                "start": 1969,
+                "end": 1986
+            },
+            {
+                "name": "gtk_secure_entry_set_positions",
+                "start": 1991,
+                "end": 2017
+            },
+            {
+                "name": "gtk_secure_entry_reset_layout",
+                "start": 2019,
+                "end": 2026
+            },
+            {
+                "name": "update_im_cursor_location",
+                "start": 2028,
+                "end": 2051
+            },
+            {
+                "name": "recompute_idle_func",
+                "start": 2053,
+                "end": 2074
+            },
+            {
+                "name": "gtk_secure_entry_recompute",
+                "start": 2076,
+                "end": 2087
+            },
+            {
+                "name": "append_char",
+                "start": 2089,
+                "end": 2103
+            },
+            {
+                "name": "gtk_secure_entry_create_layout",
+                "start": 2105,
+                "end": 2215
+            },
+            {
+                "name": "gtk_secure_entry_ensure_layout",
+                "start": 2217,
+                "end": 2232
+            },
+            {
+                "name": "get_layout_position",
+                "start": 2234,
+                "end": 2271
+            },
+            {
+                "name": "gtk_secure_entry_draw_text",
+                "start": 2273,
+                "end": 2350
+            },
+            {
+                "name": "draw_insertion_cursor",
+                "start": 2352,
+                "end": 2369
+            },
+            {
+                "name": "gtk_secure_entry_draw_cursor",
+                "start": 2371,
+                "end": 2433
+            },
+            {
+                "name": "gtk_secure_entry_queue_draw",
+                "start": 2435,
+                "end": 2440
+            },
+            {
+                "name": "gtk_secure_entry_reset_im_context",
+                "start": 2442,
+                "end": 2449
+            },
+            {
+                "name": "gtk_secure_entry_find_position",
+                "start": 2451,
+                "end": 2483
+            },
+            {
+                "name": "gtk_secure_entry_get_cursor_locations",
+                "start": 2485,
+                "end": 2514
+            },
+            {
+                "name": "gtk_secure_entry_adjust_scroll",
+                "start": 2516,
+                "end": 2590
+            },
+            {
+                "name": "gtk_secure_entry_move_visually",
+                "start": 2592,
+                "end": 2644
+            },
+            {
+                "name": "gtk_secure_entry_move_logically",
+                "start": 2646,
+                "end": 2656
+            },
+            {
+                "name": "gtk_secure_entry_new",
+                "start": 2661,
+                "end": 2665
+            },
+            {
+                "name": "gtk_secure_entry_new_with_max_length",
+                "start": 2684,
+                "end": 2695
+            },
+            {
+                "name": "gtk_secure_entry_set_text",
+                "start": 2697,
+                "end": 2716
+            },
+            {
+                "name": "gtk_secure_entry_append_text",
+                "start": 2718,
+                "end": 2728
+            },
+            {
+                "name": "gtk_secure_entry_prepend_text",
+                "start": 2730,
+                "end": 2740
+            },
+            {
+                "name": "gtk_secure_entry_set_position",
+                "start": 2742,
+                "end": 2748
+            },
+            {
+                "name": "gtk_secure_entry_set_invisible_char",
+                "start": 2764,
+                "end": 2775
+            },
+            {
+                "name": "gtk_secure_entry_get_invisible_char",
+                "start": 2787,
+                "end": 2793
+            }
+        ],
+        "curses/pinentry-curses.c": [
+            {
+                "name": "main",
+                "start": 34,
+                "end": 50
+            }
+        ],
+        "w32/main.c": [
+            {
+                "name": "w32_strerror",
+                "start": 73,
+                "end": 90
+            },
+            {
+                "name": "wchar_to_utf8",
+                "start": 158,
+                "end": 183
+            },
+            {
+                "name": "utf8_to_wchar",
+                "start": 188,
+                "end": 210
+            },
+            {
+                "name": "raise_sip",
+                "start": 214,
+                "end": 233
+            },
+            {
+                "name": "center_window",
+                "start": 237,
+                "end": 275
+            },
+            {
+                "name": "move_mouse_and_click",
+                "start": 279,
+                "end": 328
+            },
+            {
+                "name": "resize_button",
+                "start": 333,
+                "end": 345
+            },
+            {
+                "name": "set_dlg_item_text",
+                "start": 352,
+                "end": 370
+            }
+        ]
+    }
+}

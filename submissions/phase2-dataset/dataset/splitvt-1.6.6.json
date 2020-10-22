@@ -1,0 +1,741 @@
+{
+    "splitvt-1.6.6": {
+        "videomem.c": [
+            {
+                "name": "alloc_video",
+                "start": 16,
+                "end": 35
+            },
+            {
+                "name": "copy_video",
+                "start": 39,
+                "end": 61
+            },
+            {
+                "name": "add_video",
+                "start": 64,
+                "end": 71
+            },
+            {
+                "name": "get_video",
+                "start": 74,
+                "end": 79
+            },
+            {
+                "name": "put_video",
+                "start": 82,
+                "end": 88
+            },
+            {
+                "name": "video_eol",
+                "start": 93,
+                "end": 105
+            },
+            {
+                "name": "getsel_video",
+                "start": 111,
+                "end": 144
+            },
+            {
+                "name": "clrsel_video",
+                "start": 147,
+                "end": 158
+            },
+            {
+                "name": "erase_video",
+                "start": 161,
+                "end": 173
+            },
+            {
+                "name": "scroll_video",
+                "start": 176,
+                "end": 200
+            },
+            {
+                "name": "revscroll_video",
+                "start": 203,
+                "end": 227
+            },
+            {
+                "name": "rshift_video",
+                "start": 230,
+                "end": 243
+            },
+            {
+                "name": "check_attr",
+                "start": 245,
+                "end": 319
+            },
+            {
+                "name": "paint_video",
+                "start": 321,
+                "end": 352
+            }
+        ],
+        "splitvt.c": [
+            {
+                "name": "print_usage",
+                "start": 92,
+                "end": 113
+            },
+            {
+                "name": "main",
+                "start": 116,
+                "end": 509
+            },
+            {
+                "name": "reset_bar",
+                "start": 511,
+                "end": 516
+            },
+            {
+                "name": "print_help",
+                "start": 519,
+                "end": 536
+            },
+            {
+                "name": "normal_input",
+                "start": 538,
+                "end": 627
+            },
+            {
+                "name": "isalive",
+                "start": 632,
+                "end": 705
+            },
+            {
+                "name": "finish",
+                "start": 709,
+                "end": 730
+            },
+            {
+                "name": "move_bar",
+                "start": 736,
+                "end": 756
+            },
+            {
+                "name": "winch",
+                "start": 763,
+                "end": 779
+            },
+            {
+                "name": "insert_dash",
+                "start": 781,
+                "end": 791
+            }
+        ],
+        "parserc.c": [
+            {
+                "name": "warn",
+                "start": 28,
+                "end": 34
+            },
+            {
+                "name": "extract",
+                "start": 36,
+                "end": 54
+            },
+            {
+                "name": "set_something",
+                "start": 57,
+                "end": 114
+            },
+            {
+                "name": "set_argv",
+                "start": 116,
+                "end": 163
+            },
+            {
+                "name": "safe_chdir",
+                "start": 168,
+                "end": 213
+            },
+            {
+                "name": "splitvtrc",
+                "start": 218,
+                "end": 434
+            }
+        ],
+        "lock.c": [
+            {
+                "name": "lock_screen",
+                "start": 32,
+                "end": 101
+            }
+        ],
+        "cut-paste.c": [
+            {
+                "name": "put_sel_char",
+                "start": 25,
+                "end": 82
+            },
+            {
+                "name": "extract_sel",
+                "start": 87,
+                "end": 124
+            },
+            {
+                "name": "line_down",
+                "start": 126,
+                "end": 148
+            },
+            {
+                "name": "line_up",
+                "start": 150,
+                "end": 174
+            },
+            {
+                "name": "move_left",
+                "start": 176,
+                "end": 187
+            },
+            {
+                "name": "move_right",
+                "start": 189,
+                "end": 200
+            },
+            {
+                "name": "vt_initsel",
+                "start": 203,
+                "end": 216
+            },
+            {
+                "name": "vt_getselbuf",
+                "start": 219,
+                "end": 238
+            },
+            {
+                "name": "vt_setselbuf",
+                "start": 239,
+                "end": 252
+            },
+            {
+                "name": "vt_getsel",
+                "start": 255,
+                "end": 318
+            },
+            {
+                "name": "vt_setsel",
+                "start": 322,
+                "end": 346
+            }
+        ],
+        "vtmouse.c": [
+            {
+                "name": "get_xtitle",
+                "start": 95,
+                "end": 122
+            },
+            {
+                "name": "set_xtitle",
+                "start": 123,
+                "end": 128
+            },
+            {
+                "name": "event_init",
+                "start": 130,
+                "end": 159
+            },
+            {
+                "name": "event_getc",
+                "start": 161,
+                "end": 281
+            },
+            {
+                "name": "event_quit",
+                "start": 283,
+                "end": 297
+            }
+        ],
+        "misc.c": [
+            {
+                "name": "pty_open",
+                "start": 58,
+                "end": 150
+            },
+            {
+                "name": "get_ttyname",
+                "start": 165,
+                "end": 170
+            },
+            {
+                "name": "get_master_pty",
+                "start": 228,
+                "end": 266
+            },
+            {
+                "name": "get_slave_pty",
+                "start": 272,
+                "end": 309
+            },
+            {
+                "name": "d_copy",
+                "start": 415,
+                "end": 420
+            },
+            {
+                "name": "d_zero",
+                "start": 422,
+                "end": 427
+            },
+            {
+                "name": "dropctty",
+                "start": 436,
+                "end": 464
+            },
+            {
+                "name": "tty_sane",
+                "start": 627,
+                "end": 644
+            },
+            {
+                "name": "tty_getmode",
+                "start": 653,
+                "end": 663
+            },
+            {
+                "name": "tty_raw",
+                "start": 672,
+                "end": 688
+            },
+            {
+                "name": "tty_reset",
+                "start": 695,
+                "end": 705
+            },
+            {
+                "name": "pty_setwin",
+                "start": 720,
+                "end": 732
+            },
+            {
+                "name": "writen",
+                "start": 748,
+                "end": 765
+            },
+            {
+                "name": "myputenv",
+                "start": 773,
+                "end": 805
+            },
+            {
+                "name": "istoken",
+                "start": 810,
+                "end": 819
+            },
+            {
+                "name": "tokenize",
+                "start": 823,
+                "end": 844
+            },
+            {
+                "name": "pathsearch",
+                "start": 850,
+                "end": 905
+            },
+            {
+                "name": "safe_popen",
+                "start": 911,
+                "end": 974
+            },
+            {
+                "name": "safe_pclose",
+                "start": 976,
+                "end": 987
+            }
+        ],
+        "utmp.c": [
+            {
+                "name": "remove_me",
+                "start": 32,
+                "end": 66
+            },
+            {
+                "name": "replace_me",
+                "start": 69,
+                "end": 74
+            },
+            {
+                "name": "get_utmp",
+                "start": 76,
+                "end": 111
+            },
+            {
+                "name": "set_utmp",
+                "start": 113,
+                "end": 157
+            },
+            {
+                "name": "addutmp",
+                "start": 162,
+                "end": 238
+            },
+            {
+                "name": "delutmp",
+                "start": 243,
+                "end": 302
+            }
+        ],
+        "config.c": [
+            {
+                "name": "exists",
+                "start": 17,
+                "end": 29
+            },
+            {
+                "name": "finddeblibmultiarch",
+                "start": 31,
+                "end": 48
+            },
+            {
+                "name": "main",
+                "start": 50,
+                "end": 283
+            },
+            {
+                "name": "grep",
+                "start": 288,
+                "end": 316
+            }
+        ],
+        "terminal.c": [
+            {
+                "name": "termcap_init",
+                "start": 209,
+                "end": 213
+            },
+            {
+                "name": "vt_rows_cols",
+                "start": 214,
+                "end": 228
+            },
+            {
+                "name": "vt_bold",
+                "start": 229,
+                "end": 233
+            },
+            {
+                "name": "vt_underline",
+                "start": 234,
+                "end": 238
+            },
+            {
+                "name": "vt_blink",
+                "start": 239,
+                "end": 243
+            },
+            {
+                "name": "vt_reverse",
+                "start": 244,
+                "end": 248
+            },
+            {
+                "name": "vt_resetattr",
+                "start": 249,
+                "end": 252
+            },
+            {
+                "name": "vt_widemode",
+                "start": 253,
+                "end": 257
+            },
+            {
+                "name": "vt_savecursor",
+                "start": 258,
+                "end": 261
+            },
+            {
+                "name": "vt_restcursor",
+                "start": 262,
+                "end": 265
+            },
+            {
+                "name": "vt_initterm",
+                "start": 268,
+                "end": 295
+            },
+            {
+                "name": "vt_bell",
+                "start": 296,
+                "end": 299
+            },
+            {
+                "name": "vt_goto",
+                "start": 300,
+                "end": 304
+            },
+            {
+                "name": "vt_up",
+                "start": 305,
+                "end": 309
+            },
+            {
+                "name": "vt_down",
+                "start": 310,
+                "end": 314
+            },
+            {
+                "name": "vt_right",
+                "start": 315,
+                "end": 319
+            },
+            {
+                "name": "vt_left",
+                "start": 320,
+                "end": 324
+            },
+            {
+                "name": "vt_clrscr",
+                "start": 325,
+                "end": 328
+            },
+            {
+                "name": "vt_clreos",
+                "start": 329,
+                "end": 332
+            },
+            {
+                "name": "vt_clrbgs",
+                "start": 333,
+                "end": 336
+            },
+            {
+                "name": "vt_clrline",
+                "start": 337,
+                "end": 340
+            },
+            {
+                "name": "vt_clreol",
+                "start": 341,
+                "end": 344
+            },
+            {
+                "name": "vt_clrbgl",
+                "start": 345,
+                "end": 348
+            },
+            {
+                "name": "vt_delunder",
+                "start": 349,
+                "end": 353
+            },
+            {
+                "name": "vt_delline",
+                "start": 354,
+                "end": 358
+            },
+            {
+                "name": "vt_insline",
+                "start": 359,
+                "end": 363
+            },
+            {
+                "name": "vt_setattr",
+                "start": 364,
+                "end": 377
+            },
+            {
+                "name": "vt_setfg",
+                "start": 378,
+                "end": 382
+            },
+            {
+                "name": "vt_setbg",
+                "start": 383,
+                "end": 387
+            },
+            {
+                "name": "vt_altcharset",
+                "start": 388,
+                "end": 404
+            },
+            {
+                "name": "vt_setscroll",
+                "start": 405,
+                "end": 413
+            },
+            {
+                "name": "vt_revscroll",
+                "start": 414,
+                "end": 417
+            },
+            {
+                "name": "vt_keystate",
+                "start": 418,
+                "end": 426
+            },
+            {
+                "name": "vt_insertchar",
+                "start": 427,
+                "end": 430
+            },
+            {
+                "name": "vt_reset",
+                "start": 431,
+                "end": 434
+            },
+            {
+                "name": "vt_update",
+                "start": 435,
+                "end": 438
+            }
+        ],
+        "vttest.c": [
+            {
+                "name": "vttest",
+                "start": 60,
+                "end": 144
+            }
+        ],
+        "vt100.c": [
+            {
+                "name": "reset_escape",
+                "start": 60,
+                "end": 70
+            },
+            {
+                "name": "reset_esc",
+                "start": 71,
+                "end": 74
+            },
+            {
+                "name": "vt_resetwin",
+                "start": 76,
+                "end": 94
+            },
+            {
+                "name": "vt_checkwin",
+                "start": 96,
+                "end": 105
+            },
+            {
+                "name": "set_win",
+                "start": 108,
+                "end": 136
+            },
+            {
+                "name": "set_attr",
+                "start": 140,
+                "end": 147
+            },
+            {
+                "name": "process_m",
+                "start": 151,
+                "end": 221
+            },
+            {
+                "name": "scan_for_esc",
+                "start": 223,
+                "end": 292
+            },
+            {
+                "name": "E_",
+                "start": 293,
+                "end": 375
+            },
+            {
+                "name": "E_brac",
+                "start": 376,
+                "end": 666
+            },
+            {
+                "name": "E_brac_Q",
+                "start": 667,
+                "end": 771
+            },
+            {
+                "name": "E_lparen",
+                "start": 772,
+                "end": 800
+            },
+            {
+                "name": "E_rparen",
+                "start": 801,
+                "end": 828
+            },
+            {
+                "name": "E_pound",
+                "start": 829,
+                "end": 843
+            },
+            {
+                "name": "init_vt100",
+                "start": 851,
+                "end": 1016
+            },
+            {
+                "name": "vt_write",
+                "start": 1018,
+                "end": 1034
+            },
+            {
+                "name": "vt_prompt",
+                "start": 1040,
+                "end": 1072
+            },
+            {
+                "name": "vt_info",
+                "start": 1076,
+                "end": 1101
+            },
+            {
+                "name": "vt_redraw",
+                "start": 1104,
+                "end": 1114
+            },
+            {
+                "name": "vt_showscreen",
+                "start": 1117,
+                "end": 1138
+            },
+            {
+                "name": "end_vt100",
+                "start": 1141,
+                "end": 1166
+            }
+        ],
+        "utils/title.c": [
+            {
+                "name": "main",
+                "start": 5,
+                "end": 13
+            }
+        ],
+        "utils/which.c": [
+            {
+                "name": "istoken",
+                "start": 8,
+                "end": 17
+            },
+            {
+                "name": "tokenize",
+                "start": 21,
+                "end": 41
+            },
+            {
+                "name": "pathsearch",
+                "start": 46,
+                "end": 101
+            },
+            {
+                "name": "main",
+                "start": 104,
+                "end": 118
+            }
+        ],
+        "utils/treset.c": [
+            {
+                "name": "main",
+                "start": 5,
+                "end": 10
+            }
+        ],
+        "utils/unman.c": [
+            {
+                "name": "main",
+                "start": 11,
+                "end": 27
+            }
+        ]
+    }
+}

@@ -1,0 +1,427 @@
+{
+    "g15daemon-1.9.5.3": {
+        "plugins/g15_plugin_net.c": [
+            {
+                "name": "process_client_cmds",
+                "start": 64,
+                "end": 133
+            },
+            {
+                "name": "init_sockserver",
+                "start": 136,
+                "end": 167
+            },
+            {
+                "name": "g15_send",
+                "start": 170,
+                "end": 197
+            },
+            {
+                "name": "g15_recv",
+                "start": 200,
+                "end": 238
+            },
+            {
+                "name": "lcd_client_thread",
+                "start": 248,
+                "end": 333
+            },
+            {
+                "name": "g15_clientconnect",
+                "start": 336,
+                "end": 381
+            },
+            {
+                "name": "lcdserver_thread",
+                "start": 386,
+                "end": 406
+            },
+            {
+                "name": "server_events",
+                "start": 409,
+                "end": 434
+            },
+            {
+                "name": "g15plugin_net_exit",
+                "start": 436,
+                "end": 440
+            }
+        ],
+        "plugins/g15_plugin_clock.c": [
+            {
+                "name": "get_clock_pos",
+                "start": 64,
+                "end": 84
+            },
+            {
+                "name": "draw_static_canvas",
+                "start": 89,
+                "end": 134
+            },
+            {
+                "name": "draw_digital",
+                "start": 136,
+                "end": 193
+            },
+            {
+                "name": "draw_analog",
+                "start": 195,
+                "end": 259
+            },
+            {
+                "name": "lcdclock",
+                "start": 262,
+                "end": 288
+            },
+            {
+                "name": "myeventhandler",
+                "start": 290,
+                "end": 319
+            },
+            {
+                "name": "callmewhenimdone",
+                "start": 322,
+                "end": 325
+            },
+            {
+                "name": "myinithandler",
+                "start": 328,
+                "end": 345
+            }
+        ],
+        "plugins/g15_plugin_uinput.c": [
+            {
+                "name": "g15_process_keys",
+                "start": 164,
+                "end": 306
+            },
+            {
+                "name": "keyevents",
+                "start": 309,
+                "end": 330
+            }
+        ],
+        "libg15daemon_client/g15daemon_net.c": [
+            {
+                "name": "g15daemon_version",
+                "start": 52,
+                "end": 54
+            },
+            {
+                "name": "new_g15_screen",
+                "start": 93,
+                "end": 146
+            },
+            {
+                "name": "g15_close_screen",
+                "start": 148,
+                "end": 151
+            },
+            {
+                "name": "g15_send",
+                "start": 153,
+                "end": 180
+            },
+            {
+                "name": "g15_recv",
+                "start": 182,
+                "end": 205
+            },
+            {
+                "name": "g15_recv_oob_answer",
+                "start": 208,
+                "end": 227
+            },
+            {
+                "name": "g15_send_cmd",
+                "start": 229,
+                "end": 297
+            }
+        ],
+        "g15daemon/lcdclient_test.c": [
+            {
+                "name": "main",
+                "start": 46,
+                "end": 135
+            }
+        ],
+        "g15daemon/utility_funcs.c": [
+            {
+                "name": "g15daemon_xmalloc",
+                "start": 64,
+                "end": 76
+            },
+            {
+                "name": "g15daemon_init_refresh",
+                "start": 79,
+                "end": 82
+            },
+            {
+                "name": "g15daemon_send_refresh",
+                "start": 84,
+                "end": 89
+            },
+            {
+                "name": "g15daemon_wait_refresh",
+                "start": 91,
+                "end": 111
+            },
+            {
+                "name": "g15daemon_quit_refresh",
+                "start": 113,
+                "end": 115
+            },
+            {
+                "name": "uf_return_running",
+                "start": 117,
+                "end": 146
+            },
+            {
+                "name": "uf_create_pidfile",
+                "start": 148,
+                "end": 174
+            },
+            {
+                "name": "g15daemon_log",
+                "start": 178,
+                "end": 206
+            },
+            {
+                "name": "g15daemon_convert_buf",
+                "start": 209,
+                "end": 226
+            },
+            {
+                "name": "uf_write_buf_to_g15",
+                "start": 229,
+                "end": 240
+            },
+            {
+                "name": "uf_read_keypresses",
+                "start": 242,
+                "end": 253
+            },
+            {
+                "name": "g15daemon_sleep",
+                "start": 256,
+                "end": 273
+            },
+            {
+                "name": "g15daemon_usleep",
+                "start": 276,
+                "end": 284
+            },
+            {
+                "name": "g15daemon_msleep",
+                "start": 287,
+                "end": 290
+            },
+            {
+                "name": "g15daemon_gettime_ms",
+                "start": 293,
+                "end": 297
+            },
+            {
+                "name": "internal_generic_eventhandler",
+                "start": 300,
+                "end": 318
+            },
+            {
+                "name": "uf_conf_free",
+                "start": 322,
+                "end": 349
+            },
+            {
+                "name": "uf_conf_write",
+                "start": 352,
+                "end": 387
+            },
+            {
+                "name": "uf_search_confsection",
+                "start": 390,
+                "end": 399
+            },
+            {
+                "name": "uf_search_confitem",
+                "start": 402,
+                "end": 415
+            },
+            {
+                "name": "g15daemon_cfg_load_section",
+                "start": 419,
+                "end": 436
+            },
+            {
+                "name": "uf_remove_whitespace",
+                "start": 439,
+                "end": 447
+            },
+            {
+                "name": "g15daemon_cfg_write_string",
+                "start": 450,
+                "end": 479
+            },
+            {
+                "name": "g15daemon_cfg_remove_key",
+                "start": 482,
+                "end": 528
+            },
+            {
+                "name": "g15daemon_cfg_write_int",
+                "start": 530,
+                "end": 534
+            },
+            {
+                "name": "g15daemon_cfg_write_float",
+                "start": 536,
+                "end": 540
+            },
+            {
+                "name": "g15daemon_cfg_write_bool",
+                "start": 543,
+                "end": 547
+            },
+            {
+                "name": "g15daemon_cfg_read_bool",
+                "start": 552,
+                "end": 562
+            },
+            {
+                "name": "g15daemon_cfg_read_int",
+                "start": 565,
+                "end": 573
+            },
+            {
+                "name": "g15daemon_cfg_read_float",
+                "start": 576,
+                "end": 584
+            },
+            {
+                "name": "g15daemon_cfg_read_string",
+                "start": 587,
+                "end": 595
+            },
+            {
+                "name": "uf_conf_open",
+                "start": 598,
+                "end": 666
+            },
+            {
+                "name": "uf_screendump_pbm",
+                "start": 668,
+                "end": 701
+            }
+        ],
+        "g15daemon/g15_plugins.c": [
+            {
+                "name": "g15daemon_dlopen_plugin",
+                "start": 51,
+                "end": 88
+            },
+            {
+                "name": "g15daemon_dlclose_plugin",
+                "start": 90,
+                "end": 99
+            },
+            {
+                "name": "run_lcd_client",
+                "start": 101,
+                "end": 130
+            },
+            {
+                "name": "run_advanced_client",
+                "start": 132,
+                "end": 167
+            },
+            {
+                "name": "plugin_thread",
+                "start": 169,
+                "end": 196
+            },
+            {
+                "name": "g15_count_plugins",
+                "start": 198,
+                "end": 222
+            },
+            {
+                "name": "g15_plugin_load",
+                "start": 224,
+                "end": 297
+            },
+            {
+                "name": "g15_open_all_plugins",
+                "start": 300,
+                "end": 359
+            }
+        ],
+        "g15daemon/linked_lists.c": [
+            {
+                "name": "ll_create_lcd",
+                "start": 37,
+                "end": 52
+            },
+            {
+                "name": "ll_quit_lcd",
+                "start": 54,
+                "end": 57
+            },
+            {
+                "name": "ll_lcdlist_init",
+                "start": 61,
+                "end": 89
+            },
+            {
+                "name": "g15daemon_lcdnode_add",
+                "start": 91,
+                "end": 114
+            },
+            {
+                "name": "g15daemon_lcdnode_cycle",
+                "start": 117,
+                "end": 153
+            },
+            {
+                "name": "g15daemon_lcdnode_remove",
+                "start": 155,
+                "end": 196
+            },
+            {
+                "name": "ll_lcdlist_destroy",
+                "start": 198,
+                "end": 211
+            }
+        ],
+        "g15daemon/main.c": [
+            {
+                "name": "g15daemon_send_event",
+                "start": 63,
+                "end": 184
+            },
+            {
+                "name": "keyboard_watch_thread",
+                "start": 186,
+                "end": 222
+            },
+            {
+                "name": "lcd_draw_thread",
+                "start": 224,
+                "end": 272
+            },
+            {
+                "name": "g15daemon_sighandler",
+                "start": 274,
+                "end": 286
+            },
+            {
+                "name": "daemon",
+                "start": 290,
+                "end": 319
+            },
+            {
+                "name": "main",
+                "start": 322,
+                "end": 580
+            }
+        ]
+    }
+}

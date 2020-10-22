@@ -1,0 +1,3068 @@
+{
+    "anyremote-6.4": {
+        "src/sys_util.c": [
+            {
+                "name": "execInFork",
+                "start": 78,
+                "end": 108
+            },
+            {
+                "name": "execCmdNoPipe",
+                "start": 110,
+                "end": 143
+            },
+            {
+                "name": "popen_r",
+                "start": 317,
+                "end": 346
+            },
+            {
+                "name": "pclose_r",
+                "start": 348,
+                "end": 372
+            },
+            {
+                "name": "executeCommandPipe",
+                "start": 376,
+                "end": 441
+            },
+            {
+                "name": "peerName",
+                "start": 501,
+                "end": 517
+            },
+            {
+                "name": "filterFiles",
+                "start": 521,
+                "end": 531
+            },
+            {
+                "name": "filterDirs",
+                "start": 533,
+                "end": 543
+            },
+            {
+                "name": "executeDirListCommand",
+                "start": 546,
+                "end": 702
+            },
+            {
+                "name": "get_iface_list",
+                "start": 710,
+                "end": 728
+            },
+            {
+                "name": "getLocalIP",
+                "start": 730,
+                "end": 759
+            }
+        ],
+        "src/loop.c": [
+            {
+                "name": "adminRoutine",
+                "start": 49,
+                "end": 81
+            },
+            {
+                "name": "loopStart",
+                "start": 126,
+                "end": 154
+            },
+            {
+                "name": "loopStop",
+                "start": 157,
+                "end": 159
+            },
+            {
+                "name": "loopDestroy",
+                "start": 161,
+                "end": 163
+            }
+        ],
+        "src/timer.c": [
+            {
+                "name": "timer_destroyed",
+                "start": 44,
+                "end": 53
+            },
+            {
+                "name": "findTimer",
+                "start": 55,
+                "end": 58
+            },
+            {
+                "name": "getTimers",
+                "start": 60,
+                "end": 63
+            },
+            {
+                "name": "forgetTimers",
+                "start": 65,
+                "end": 68
+            },
+            {
+                "name": "createTimer",
+                "start": 74,
+                "end": 115
+            },
+            {
+                "name": "deleteTimer",
+                "start": 117,
+                "end": 123
+            },
+            {
+                "name": "freeTimers",
+                "start": 136,
+                "end": 150
+            },
+            {
+                "name": "timerCommand",
+                "start": 152,
+                "end": 198
+            },
+            {
+                "name": "verifyTimers",
+                "start": 200,
+                "end": 240
+            },
+            {
+                "name": "verifyTimerCfg",
+                "start": 242,
+                "end": 250
+            }
+        ],
+        "src/btio.h": [
+            {
+                "name": "bt_put_command",
+                "start": 31,
+                "end": 36
+            }
+        ],
+        "src/btio.c": [
+            {
+                "name": "bt_read_tmo",
+                "start": 58,
+                "end": 108
+            },
+            {
+                "name": "bt_readchar",
+                "start": 110,
+                "end": 133
+            },
+            {
+                "name": "bt_put_command",
+                "start": 136,
+                "end": 228
+            },
+            {
+                "name": "unix_open_port",
+                "start": 233,
+                "end": 262
+            },
+            {
+                "name": "uxFD",
+                "start": 264,
+                "end": 267
+            },
+            {
+                "name": "openUxSocket",
+                "start": 269,
+                "end": 278
+            },
+            {
+                "name": "closeUxSocket",
+                "start": 280,
+                "end": 297
+            }
+        ],
+        "src/cmds.c": [
+            {
+                "name": "substParams",
+                "start": 57,
+                "end": 217
+            },
+            {
+                "name": "executeSimpleCommand",
+                "start": 219,
+                "end": 233
+            },
+            {
+                "name": "processSendCmd",
+                "start": 235,
+                "end": 289
+            },
+            {
+                "name": "sendData",
+                "start": 291,
+                "end": 308
+            },
+            {
+                "name": "execDynamically",
+                "start": 310,
+                "end": 320
+            },
+            {
+                "name": "loadCmds",
+                "start": 322,
+                "end": 355
+            },
+            {
+                "name": "handleHook",
+                "start": 358,
+                "end": 385
+            },
+            {
+                "name": "uploadPix",
+                "start": 494,
+                "end": 552
+            },
+            {
+                "name": "isConvertable",
+                "start": 554,
+                "end": 561
+            },
+            {
+                "name": "exitCmd",
+                "start": 563,
+                "end": 568
+            },
+            {
+                "name": "includeCmd",
+                "start": 570,
+                "end": 587
+            },
+            {
+                "name": "getCmd",
+                "start": 589,
+                "end": 620
+            },
+            {
+                "name": "execAndSetCmd",
+                "start": 622,
+                "end": 759
+            },
+            {
+                "name": "execAndSendCmd",
+                "start": 761,
+                "end": 789
+            },
+            {
+                "name": "sendCmd",
+                "start": 791,
+                "end": 801
+            },
+            {
+                "name": "setCmd",
+                "start": 803,
+                "end": 884
+            },
+            {
+                "name": "makeVarCmd",
+                "start": 886,
+                "end": 929
+            },
+            {
+                "name": "makeModeCmd",
+                "start": 931,
+                "end": 964
+            },
+            {
+                "name": "makeAlarmCmd",
+                "start": 966,
+                "end": 984
+            },
+            {
+                "name": "makeRemoteCmd",
+                "start": 986,
+                "end": 996
+            },
+            {
+                "name": "makeDisconnectCmd",
+                "start": 998,
+                "end": 1013
+            },
+            {
+                "name": "makeStopCmd",
+                "start": 1015,
+                "end": 1019
+            },
+            {
+                "name": "makeFlushCmd",
+                "start": 1021,
+                "end": 1025
+            },
+            {
+                "name": "makeExitCmd",
+                "start": 1027,
+                "end": 1030
+            },
+            {
+                "name": "makeNoneCmd",
+                "start": 1032,
+                "end": 1035
+            },
+            {
+                "name": "makeCmd",
+                "start": 1038,
+                "end": 1059
+            },
+            {
+                "name": "ckpdCmd",
+                "start": 1061,
+                "end": 1079
+            },
+            {
+                "name": "macroCmd",
+                "start": 1081,
+                "end": 1152
+            },
+            {
+                "name": "macroCmdCallback",
+                "start": 1154,
+                "end": 1176
+            },
+            {
+                "name": "processOneCommand",
+                "start": 1178,
+                "end": 1246
+            },
+            {
+                "name": "processCommands",
+                "start": 1248,
+                "end": 1275
+            },
+            {
+                "name": "handleCmdByKey",
+                "start": 1280,
+                "end": 1283
+            },
+            {
+                "name": "handleCmdByKeyEx",
+                "start": 1285,
+                "end": 1314
+            }
+        ],
+        "src/security.c": [
+            {
+                "name": "destroyPeer",
+                "start": 52,
+                "end": 56
+            },
+            {
+                "name": "dropTable",
+                "start": 58,
+                "end": 63
+            },
+            {
+                "name": "readTable",
+                "start": 65,
+                "end": 121
+            },
+            {
+                "name": "checkTable",
+                "start": 123,
+                "end": 136
+            },
+            {
+                "name": "setAllowedOnly",
+                "start": 138,
+                "end": 148
+            },
+            {
+                "name": "isAllowed",
+                "start": 150,
+                "end": 153
+            },
+            {
+                "name": "setUsePassword",
+                "start": 155,
+                "end": 159
+            },
+            {
+                "name": "getUsePassword",
+                "start": 161,
+                "end": 164
+            },
+            {
+                "name": "getStoredPass",
+                "start": 166,
+                "end": 212
+            },
+            {
+                "name": "checkPassword",
+                "start": 214,
+                "end": 235
+            },
+            {
+                "name": "verifyPassword",
+                "start": 237,
+                "end": 263
+            }
+        ],
+        "src/utils.c": [
+            {
+                "name": "initFile",
+                "start": 73,
+                "end": 97
+            },
+            {
+                "name": "initLog",
+                "start": 99,
+                "end": 125
+            },
+            {
+                "name": "releaseLog",
+                "start": 127,
+                "end": 130
+            },
+            {
+                "name": "logger2",
+                "start": 132,
+                "end": 180
+            },
+            {
+                "name": "logger",
+                "start": 182,
+                "end": 202
+            },
+            {
+                "name": "printTime",
+                "start": 204,
+                "end": 212
+            },
+            {
+                "name": "setCmdFiles",
+                "start": 214,
+                "end": 218
+            },
+            {
+                "name": "getResFile",
+                "start": 220,
+                "end": 223
+            },
+            {
+                "name": "getCmdFile",
+                "start": 225,
+                "end": 228
+            },
+            {
+                "name": "isDataCacheable",
+                "start": 236,
+                "end": 252
+            },
+            {
+                "name": "isDataNew",
+                "start": 254,
+                "end": 282
+            },
+            {
+                "name": "freeCachedData",
+                "start": 284,
+                "end": 294
+            },
+            {
+                "name": "needConvert",
+                "start": 301,
+                "end": 310
+            },
+            {
+                "name": "flushData",
+                "start": 369,
+                "end": 388
+            },
+            {
+                "name": "flushOldConf",
+                "start": 390,
+                "end": 401
+            },
+            {
+                "name": "printHelp",
+                "start": 403,
+                "end": 435
+            },
+            {
+                "name": "getUidGid",
+                "start": 437,
+                "end": 451
+            },
+            {
+                "name": "freeMMessage",
+                "start": 453,
+                "end": 457
+            },
+            {
+                "name": "sendToMainThread",
+                "start": 459,
+                "end": 462
+            },
+            {
+                "name": "sendAbort",
+                "start": 464,
+                "end": 469
+            },
+            {
+                "name": "sendDisconnect",
+                "start": 471,
+                "end": 476
+            },
+            {
+                "name": "stripCommandEnding",
+                "start": 478,
+                "end": 483
+            },
+            {
+                "name": "errnoDebug",
+                "start": 487,
+                "end": 544
+            }
+        ],
+        "src/pr_stdin.c": [
+            {
+                "name": "kbhit",
+                "start": 46,
+                "end": 56
+            },
+            {
+                "name": "nonblock",
+                "start": 58,
+                "end": 77
+            },
+            {
+                "name": "openStdin",
+                "start": 79,
+                "end": 87
+            },
+            {
+                "name": "closeStdin",
+                "start": 89,
+                "end": 96
+            },
+            {
+                "name": "readStdin",
+                "start": 98,
+                "end": 126
+            }
+        ],
+        "src/pr_serial.c": [
+            {
+                "name": "serialFD",
+                "start": 48,
+                "end": 52
+            },
+            {
+                "name": "serialSetup",
+                "start": 54,
+                "end": 63
+            },
+            {
+                "name": "serialOpenInternal",
+                "start": 65,
+                "end": 132
+            },
+            {
+                "name": "serialOpen",
+                "start": 134,
+                "end": 164
+            },
+            {
+                "name": "serialClose",
+                "start": 169,
+                "end": 205
+            },
+            {
+                "name": "serialCheckActiveCall",
+                "start": 207,
+                "end": 236
+            },
+            {
+                "name": "serialHasActiveCall",
+                "start": 238,
+                "end": 242
+            }
+        ],
+        "src/pr_socket.c": [
+            {
+                "name": "socketFD",
+                "start": 64,
+                "end": 71
+            },
+            {
+                "name": "socketOpenInternal",
+                "start": 73,
+                "end": 159
+            },
+            {
+                "name": "socketOpen",
+                "start": 161,
+                "end": 176
+            },
+            {
+                "name": "socketClose",
+                "start": 178,
+                "end": 211
+            },
+            {
+                "name": "socketSetup",
+                "start": 216,
+                "end": 229
+            },
+            {
+                "name": "socketAccept",
+                "start": 234,
+                "end": 352
+            },
+            {
+                "name": "socketWrite",
+                "start": 354,
+                "end": 402
+            }
+        ],
+        "src/executor.c": [
+            {
+                "name": "freeEMessage",
+                "start": 71,
+                "end": 78
+            },
+            {
+                "name": "sendToExecutor",
+                "start": 80,
+                "end": 83
+            },
+            {
+                "name": "getEFinalizer",
+                "start": 85,
+                "end": 92
+            },
+            {
+                "name": "sendEventToExecutor",
+                "start": 94,
+                "end": 106
+            },
+            {
+                "name": "initExecutor",
+                "start": 108,
+                "end": 126
+            },
+            {
+                "name": "doAutoRepeat",
+                "start": 129,
+                "end": 144
+            },
+            {
+                "name": "doTimers",
+                "start": 146,
+                "end": 157
+            },
+            {
+                "name": "handleKeyMsg",
+                "start": 159,
+                "end": 166
+            },
+            {
+                "name": "handleStringMsg",
+                "start": 168,
+                "end": 175
+            },
+            {
+                "name": "handleEventMsg",
+                "start": 177,
+                "end": 198
+            },
+            {
+                "name": "handleAlarmMsg",
+                "start": 200,
+                "end": 207
+            },
+            {
+                "name": "handleAsIsMsg",
+                "start": 209,
+                "end": 222
+            },
+            {
+                "name": "executorRoutine",
+                "start": 235,
+                "end": 278
+            },
+            {
+                "name": "handleInit",
+                "start": 280,
+                "end": 289
+            },
+            {
+                "name": "handleConnect",
+                "start": 291,
+                "end": 309
+            },
+            {
+                "name": "handleDisconnect",
+                "start": 311,
+                "end": 325
+            },
+            {
+                "name": "handleExit",
+                "start": 327,
+                "end": 358
+            },
+            {
+                "name": "cleanAutoRepeatFlag",
+                "start": 360,
+                "end": 366
+            },
+            {
+                "name": "handle_alarm",
+                "start": 368,
+                "end": 394
+            },
+            {
+                "name": "handle_key_press",
+                "start": 396,
+                "end": 466
+            },
+            {
+                "name": "handle_command",
+                "start": 468,
+                "end": 587
+            },
+            {
+                "name": "sendToMainMenu",
+                "start": 592,
+                "end": 606
+            },
+            {
+                "name": "isBemusedCommand",
+                "start": 613,
+                "end": 744
+            },
+            {
+                "name": "isLircCommand",
+                "start": 750,
+                "end": 785
+            },
+            {
+                "name": "isInpLircCommand",
+                "start": 790,
+                "end": 839
+            },
+            {
+                "name": "isIViewerCommand",
+                "start": 844,
+                "end": 915
+            }
+        ],
+        "src/hash.c": [
+            {
+                "name": "str2hash",
+                "start": 84,
+                "end": 91
+            },
+            {
+                "name": "get",
+                "start": 93,
+                "end": 105
+            },
+            {
+                "name": "insert",
+                "start": 107,
+                "end": 143
+            },
+            {
+                "name": "removeNode",
+                "start": 145,
+                "end": 182
+            },
+            {
+                "name": "destroyData",
+                "start": 184,
+                "end": 206
+            },
+            {
+                "name": "foreach",
+                "start": 208,
+                "end": 227
+            },
+            {
+                "name": "hashNew",
+                "start": 229,
+                "end": 240
+            },
+            {
+                "name": "hashFind",
+                "start": 242,
+                "end": 248
+            },
+            {
+                "name": "hashReplace",
+                "start": 250,
+                "end": 255
+            },
+            {
+                "name": "hashRemove",
+                "start": 257,
+                "end": 263
+            },
+            {
+                "name": "hashDestroy",
+                "start": 265,
+                "end": 272
+            },
+            {
+                "name": "hashForeach",
+                "start": 274,
+                "end": 279
+            }
+        ],
+        "src/list.c": [
+            {
+                "name": "listSingleNew",
+                "start": 32,
+                "end": 38
+            },
+            {
+                "name": "listSingleLength",
+                "start": 40,
+                "end": 49
+            },
+            {
+                "name": "listSingleNext",
+                "start": 51,
+                "end": 54
+            },
+            {
+                "name": "listSingleNth",
+                "start": 56,
+                "end": 65
+            },
+            {
+                "name": "listSingleRemove",
+                "start": 67,
+                "end": 89
+            },
+            {
+                "name": "listSingleFreeNode",
+                "start": 91,
+                "end": 97
+            },
+            {
+                "name": "listSingleFree",
+                "start": 99,
+                "end": 106
+            },
+            {
+                "name": "listSingleAppend",
+                "start": 108,
+                "end": 128
+            },
+            {
+                "name": "listSingleFullFree",
+                "start": 132,
+                "end": 142
+            },
+            {
+                "name": "listDoubleNew",
+                "start": 145,
+                "end": 152
+            },
+            {
+                "name": "listDoubleFreeNode",
+                "start": 154,
+                "end": 160
+            },
+            {
+                "name": "listDoubleFree",
+                "start": 162,
+                "end": 169
+            },
+            {
+                "name": "listDoublePrepend",
+                "start": 171,
+                "end": 188
+            },
+            {
+                "name": "listDoubleNext",
+                "start": 190,
+                "end": 193
+            },
+            {
+                "name": "listDoubleFullFree",
+                "start": 195,
+                "end": 205
+            }
+        ],
+        "src/pr_frontend.c": [
+            {
+                "name": "connectFrontEnd",
+                "start": 56,
+                "end": 97
+            },
+            {
+                "name": "disconnectFrontEnd",
+                "start": 99,
+                "end": 106
+            },
+            {
+                "name": "writeToFrontEnd",
+                "start": 108,
+                "end": 115
+            },
+            {
+                "name": "freeFMessage",
+                "start": 117,
+                "end": 120
+            },
+            {
+                "name": "sendToFrontEnd",
+                "start": 122,
+                "end": 134
+            },
+            {
+                "name": "readFromFrontEnd",
+                "start": 136,
+                "end": 171
+            },
+            {
+                "name": "frontendRoutine",
+                "start": 173,
+                "end": 217
+            }
+        ],
+        "src/queue.c": [
+            {
+                "name": "queueNew",
+                "start": 109,
+                "end": 128
+            },
+            {
+                "name": "queuePop",
+                "start": 130,
+                "end": 157
+            },
+            {
+                "name": "queuePush",
+                "start": 159,
+                "end": 176
+            },
+            {
+                "name": "queueRemove",
+                "start": 178,
+                "end": 191
+            },
+            {
+                "name": "queueCanPop",
+                "start": 193,
+                "end": 204
+            },
+            {
+                "name": "queueExists",
+                "start": 208,
+                "end": 211
+            }
+        ],
+        "src/atsend.c": [
+            {
+                "name": "writeAtCommand",
+                "start": 52,
+                "end": 150
+            },
+            {
+                "name": "sendSyncCommand",
+                "start": 155,
+                "end": 161
+            },
+            {
+                "name": "sendCMER",
+                "start": 163,
+                "end": 185
+            },
+            {
+                "name": "sendCKPD",
+                "start": 188,
+                "end": 270
+            },
+            {
+                "name": "sendSeq",
+                "start": 275,
+                "end": 301
+            },
+            {
+                "name": "parse_CLCC",
+                "start": 303,
+                "end": 343
+            },
+            {
+                "name": "getClip",
+                "start": 345,
+                "end": 405
+            },
+            {
+                "name": "setupAtConnection",
+                "start": 408,
+                "end": 491
+            },
+            {
+                "name": "atRead",
+                "start": 497,
+                "end": 568
+            }
+        ],
+        "src/pr_btspp.c": [
+            {
+                "name": "sdpDeregister",
+                "start": 200,
+                "end": 221
+            },
+            {
+                "name": "btsppFD",
+                "start": 223,
+                "end": 230
+            },
+            {
+                "name": "btsppOpenInternal",
+                "start": 232,
+                "end": 338
+            },
+            {
+                "name": "btsppOpen",
+                "start": 341,
+                "end": 352
+            },
+            {
+                "name": "btsppClose",
+                "start": 354,
+                "end": 385
+            },
+            {
+                "name": "btsppSetup",
+                "start": 390,
+                "end": 403
+            },
+            {
+                "name": "btsppAccept",
+                "start": 408,
+                "end": 529
+            },
+            {
+                "name": "btsppWrite",
+                "start": 531,
+                "end": 577
+            }
+        ],
+        "src/gen_ar.c": [
+            {
+                "name": "addFormMenu",
+                "start": 38,
+                "end": 60
+            },
+            {
+                "name": "renderCtrlForm",
+                "start": 62,
+                "end": 182
+            },
+            {
+                "name": "renderCtrlFormCover",
+                "start": 184,
+                "end": 200
+            },
+            {
+                "name": "renderTextForm",
+                "start": 202,
+                "end": 240
+            },
+            {
+                "name": "renderListForm",
+                "start": 242,
+                "end": 286
+            },
+            {
+                "name": "renderWmanForm",
+                "start": 288,
+                "end": 297
+            },
+            {
+                "name": "renderEditForm",
+                "start": 299,
+                "end": 314
+            }
+        ],
+        "src/mutex.c": [
+            {
+                "name": "mutexNew",
+                "start": 82,
+                "end": 94
+            },
+            {
+                "name": "mutexLock",
+                "start": 96,
+                "end": 101
+            },
+            {
+                "name": "mutexUnlock",
+                "start": 103,
+                "end": 108
+            },
+            {
+                "name": "mutexRemove",
+                "start": 110,
+                "end": 117
+            },
+            {
+                "name": "mutexExists",
+                "start": 121,
+                "end": 124
+            }
+        ],
+        "src/state.c": [
+            {
+                "name": "initState",
+                "start": 47,
+                "end": 95
+            },
+            {
+                "name": "listItemFree",
+                "start": 97,
+                "end": 107
+            },
+            {
+                "name": "freeState",
+                "start": 109,
+                "end": 165
+            },
+            {
+                "name": "setFgBg",
+                "start": 168,
+                "end": 211
+            },
+            {
+                "name": "setFont",
+                "start": 213,
+                "end": 243
+            },
+            {
+                "name": "setCurForm",
+                "start": 245,
+                "end": 248
+            },
+            {
+                "name": "curForm",
+                "start": 250,
+                "end": 253
+            },
+            {
+                "name": "addDefMenu",
+                "start": 261,
+                "end": 285
+            },
+            {
+                "name": "stringItemFree",
+                "start": 287,
+                "end": 290
+            },
+            {
+                "name": "freeMenu",
+                "start": 292,
+                "end": 297
+            },
+            {
+                "name": "setupDefMenu",
+                "start": 299,
+                "end": 308
+            },
+            {
+                "name": "userMenu",
+                "start": 310,
+                "end": 313
+            },
+            {
+                "name": "menuSize",
+                "start": 315,
+                "end": 318
+            },
+            {
+                "name": "menuNth",
+                "start": 320,
+                "end": 323
+            },
+            {
+                "name": "setMenu",
+                "start": 325,
+                "end": 367
+            },
+            {
+                "name": "setCfCaption",
+                "start": 375,
+                "end": 386
+            },
+            {
+                "name": "cfCaption",
+                "start": 388,
+                "end": 391
+            },
+            {
+                "name": "setCfTitle",
+                "start": 393,
+                "end": 411
+            },
+            {
+                "name": "cfTitle",
+                "start": 413,
+                "end": 416
+            },
+            {
+                "name": "setCfStatus",
+                "start": 418,
+                "end": 437
+            },
+            {
+                "name": "cfStatus",
+                "start": 439,
+                "end": 442
+            },
+            {
+                "name": "setIcons",
+                "start": 444,
+                "end": 498
+            },
+            {
+                "name": "setUseVolume",
+                "start": 500,
+                "end": 503
+            },
+            {
+                "name": "setSkin",
+                "start": 513,
+                "end": 581
+            },
+            {
+                "name": "cfIcon",
+                "start": 583,
+                "end": 588
+            },
+            {
+                "name": "setCfCover",
+                "start": 590,
+                "end": 609
+            },
+            {
+                "name": "setCfNamedCover",
+                "start": 611,
+                "end": 630
+            },
+            {
+                "name": "cfCover",
+                "start": 632,
+                "end": 635
+            },
+            {
+                "name": "cfNamedCover",
+                "start": 637,
+                "end": 640
+            },
+            {
+                "name": "freeCfCover",
+                "start": 642,
+                "end": 649
+            },
+            {
+                "name": "findNamedCover",
+                "start": 652,
+                "end": 688
+            },
+            {
+                "name": "cfBg",
+                "start": 690,
+                "end": 693
+            },
+            {
+                "name": "cfFg",
+                "start": 695,
+                "end": 698
+            },
+            {
+                "name": "cfFont",
+                "start": 700,
+                "end": 703
+            },
+            {
+                "name": "setCfVolume",
+                "start": 705,
+                "end": 716
+            },
+            {
+                "name": "cfVolume",
+                "start": 718,
+                "end": 721
+            },
+            {
+                "name": "useVolume",
+                "start": 723,
+                "end": 726
+            },
+            {
+                "name": "bottomlineSkin",
+                "start": 728,
+                "end": 731
+            },
+            {
+                "name": "cfUpButton",
+                "start": 733,
+                "end": 736
+            },
+            {
+                "name": "cfDownButton",
+                "start": 738,
+                "end": 741
+            },
+            {
+                "name": "useKeypad",
+                "start": 743,
+                "end": 746
+            },
+            {
+                "name": "useJoystick",
+                "start": 748,
+                "end": 751
+            },
+            {
+                "name": "setLfCaption",
+                "start": 759,
+                "end": 766
+            },
+            {
+                "name": "lfCaption",
+                "start": 768,
+                "end": 771
+            },
+            {
+                "name": "setLfList",
+                "start": 774,
+                "end": 798
+            },
+            {
+                "name": "setLfIndex",
+                "start": 800,
+                "end": 803
+            },
+            {
+                "name": "setList",
+                "start": 805,
+                "end": 888
+            },
+            {
+                "name": "lfIndex",
+                "start": 890,
+                "end": 893
+            },
+            {
+                "name": "lfBg",
+                "start": 895,
+                "end": 898
+            },
+            {
+                "name": "lfFg",
+                "start": 900,
+                "end": 903
+            },
+            {
+                "name": "lfFont",
+                "start": 905,
+                "end": 908
+            },
+            {
+                "name": "freeLfList",
+                "start": 910,
+                "end": 917
+            },
+            {
+                "name": "lfList",
+                "start": 919,
+                "end": 922
+            },
+            {
+                "name": "lfListNth",
+                "start": 924,
+                "end": 927
+            },
+            {
+                "name": "lfSize",
+                "start": 929,
+                "end": 932
+            },
+            {
+                "name": "setTfCaption",
+                "start": 940,
+                "end": 947
+            },
+            {
+                "name": "tfCaption",
+                "start": 949,
+                "end": 952
+            },
+            {
+                "name": "addTfText",
+                "start": 954,
+                "end": 962
+            },
+            {
+                "name": "resetTfText",
+                "start": 964,
+                "end": 969
+            },
+            {
+                "name": "tfText",
+                "start": 971,
+                "end": 974
+            },
+            {
+                "name": "tfBg",
+                "start": 976,
+                "end": 979
+            },
+            {
+                "name": "tfFg",
+                "start": 981,
+                "end": 984
+            },
+            {
+                "name": "tfFont",
+                "start": 986,
+                "end": 989
+            },
+            {
+                "name": "setText",
+                "start": 991,
+                "end": 1081
+            },
+            {
+                "name": "setEfCaption",
+                "start": 1089,
+                "end": 1096
+            },
+            {
+                "name": "efCaption",
+                "start": 1098,
+                "end": 1101
+            },
+            {
+                "name": "setEfLabel",
+                "start": 1103,
+                "end": 1110
+            },
+            {
+                "name": "efLabel",
+                "start": 1112,
+                "end": 1115
+            },
+            {
+                "name": "setEfText",
+                "start": 1117,
+                "end": 1124
+            },
+            {
+                "name": "efText",
+                "start": 1126,
+                "end": 1129
+            },
+            {
+                "name": "setEfPassword",
+                "start": 1131,
+                "end": 1134
+            },
+            {
+                "name": "efPassword",
+                "start": 1136,
+                "end": 1139
+            },
+            {
+                "name": "setEditfield",
+                "start": 1142,
+                "end": 1175
+            },
+            {
+                "name": "setPassField",
+                "start": 1177,
+                "end": 1198
+            },
+            {
+                "name": "setImage",
+                "start": 1212,
+                "end": 1261
+            },
+            {
+                "name": "wfImage",
+                "start": 1263,
+                "end": 1266
+            },
+            {
+                "name": "setParams",
+                "start": 1274,
+                "end": 1339
+            },
+            {
+                "name": "iconPadding",
+                "start": 1341,
+                "end": 1344
+            },
+            {
+                "name": "iconSize",
+                "start": 1346,
+                "end": 1349
+            },
+            {
+                "name": "updateStateSetFile",
+                "start": 1351,
+                "end": 1361
+            },
+            {
+                "name": "updateStateSet",
+                "start": 1363,
+                "end": 1450
+            },
+            {
+                "name": "updateState",
+                "start": 1452,
+                "end": 1460
+            }
+        ],
+        "src/dispatcher.c": [
+            {
+                "name": "closePort",
+                "start": 80,
+                "end": 94
+            },
+            {
+                "name": "handleActiveCall",
+                "start": 96,
+                "end": 118
+            },
+            {
+                "name": "readFromFile",
+                "start": 120,
+                "end": 183
+            },
+            {
+                "name": "getDFinalizer",
+                "start": 185,
+                "end": 193
+            },
+            {
+                "name": "freeDMessage",
+                "start": 195,
+                "end": 207
+            },
+            {
+                "name": "dispatchEventInit",
+                "start": 209,
+                "end": 213
+            },
+            {
+                "name": "dispatchEventExit",
+                "start": 215,
+                "end": 228
+            },
+            {
+                "name": "dispatchDisconnect",
+                "start": 230,
+                "end": 236
+            },
+            {
+                "name": "dispatchEventSendString",
+                "start": 238,
+                "end": 242
+            },
+            {
+                "name": "dispatchEventSendBytes",
+                "start": 244,
+                "end": 248
+            },
+            {
+                "name": "dispatchEventSet",
+                "start": 250,
+                "end": 254
+            },
+            {
+                "name": "checkMsgQueue",
+                "start": 271,
+                "end": 300
+            },
+            {
+                "name": "parseCommand",
+                "start": 302,
+                "end": 395
+            },
+            {
+                "name": "read_command",
+                "start": 397,
+                "end": 419
+            },
+            {
+                "name": "hookInitOnce",
+                "start": 421,
+                "end": 434
+            },
+            {
+                "name": "doDisconnect",
+                "start": 436,
+                "end": 459
+            },
+            {
+                "name": "sendFinalizer",
+                "start": 461,
+                "end": 469
+            },
+            {
+                "name": "dispatcherCleanup",
+                "start": 471,
+                "end": 480
+            },
+            {
+                "name": "doReadPeers",
+                "start": 482,
+                "end": 500
+            },
+            {
+                "name": "doMessageLoop",
+                "start": 502,
+                "end": 538
+            },
+            {
+                "name": "doConnectionLoop",
+                "start": 540,
+                "end": 566
+            },
+            {
+                "name": "dispatcherRoutine",
+                "start": 568,
+                "end": 672
+            },
+            {
+                "name": "sendToDispatcher",
+                "start": 674,
+                "end": 679
+            }
+        ],
+        "src/gen_xml.c": [
+            {
+                "name": "xmlScreenWidth",
+                "start": 87,
+                "end": 90
+            },
+            {
+                "name": "xmlScreenHeight",
+                "start": 92,
+                "end": 95
+            },
+            {
+                "name": "xmlScreenGrayscale",
+                "start": 97,
+                "end": 100
+            },
+            {
+                "name": "xmlSetLayoutOk",
+                "start": 102,
+                "end": 105
+            },
+            {
+                "name": "parseScreenDef",
+                "start": 108,
+                "end": 147
+            },
+            {
+                "name": "renderConvertCmd",
+                "start": 149,
+                "end": 168
+            },
+            {
+                "name": "addXMLFormMenu",
+                "start": 170,
+                "end": 279
+            },
+            {
+                "name": "renderXMLFormHead",
+                "start": 281,
+                "end": 323
+            },
+            {
+                "name": "sendXMLMenu",
+                "start": 326,
+                "end": 376
+            },
+            {
+                "name": "renderXMLLayout",
+                "start": 378,
+                "end": 508
+            },
+            {
+                "name": "renderXMLImage",
+                "start": 510,
+                "end": 537
+            },
+            {
+                "name": "renderCtrlXMLForm",
+                "start": 539,
+                "end": 607
+            },
+            {
+                "name": "renderTextXMLForm",
+                "start": 609,
+                "end": 627
+            },
+            {
+                "name": "renderListXMLForm",
+                "start": 629,
+                "end": 729
+            },
+            {
+                "name": "renderWmanXMLForm",
+                "start": 731,
+                "end": 752
+            },
+            {
+                "name": "renderEditXML",
+                "start": 754,
+                "end": 780
+            },
+            {
+                "name": "renderEditXMLForm",
+                "start": 782,
+                "end": 789
+            },
+            {
+                "name": "renderPassXMLForm",
+                "start": 791,
+                "end": 795
+            }
+        ],
+        "src/thread.c": [
+            {
+                "name": "threadInit",
+                "start": 89,
+                "end": 91
+            },
+            {
+                "name": "threadNew",
+                "start": 93,
+                "end": 115
+            },
+            {
+                "name": "threadJoin",
+                "start": 117,
+                "end": 124
+            },
+            {
+                "name": "threadExit",
+                "start": 126,
+                "end": 133
+            },
+            {
+                "name": "threadExists",
+                "start": 135,
+                "end": 141
+            }
+        ],
+        "src/peer.c": [
+            {
+                "name": "allocPeer",
+                "start": 56,
+                "end": 67
+            },
+            {
+                "name": "freePeer",
+                "start": 69,
+                "end": 77
+            },
+            {
+                "name": "countConnections",
+                "start": 79,
+                "end": 91
+            },
+            {
+                "name": "dummyOpen",
+                "start": 93,
+                "end": 96
+            },
+            {
+                "name": "dummyFD",
+                "start": 98,
+                "end": 101
+            },
+            {
+                "name": "setupNope",
+                "start": 103,
+                "end": 106
+            },
+            {
+                "name": "acceptNope",
+                "start": 108,
+                "end": 124
+            },
+            {
+                "name": "freePeers",
+                "start": 156,
+                "end": 165
+            },
+            {
+                "name": "addTcpPeer",
+                "start": 167,
+                "end": 210
+            },
+            {
+                "name": "addPeer",
+                "start": 215,
+                "end": 414
+            },
+            {
+                "name": "connectNotify",
+                "start": 416,
+                "end": 420
+            },
+            {
+                "name": "needStoreState",
+                "start": 422,
+                "end": 446
+            },
+            {
+                "name": "definePeers",
+                "start": 448,
+                "end": 485
+            },
+            {
+                "name": "openPeers",
+                "start": 487,
+                "end": 512
+            },
+            {
+                "name": "closePeers",
+                "start": 514,
+                "end": 524
+            },
+            {
+                "name": "disconnectPeersInternal",
+                "start": 526,
+                "end": 591
+            },
+            {
+                "name": "disconnectPeers",
+                "start": 595,
+                "end": 612
+            },
+            {
+                "name": "setupPeers",
+                "start": 615,
+                "end": 632
+            },
+            {
+                "name": "writePeer",
+                "start": 637,
+                "end": 645
+            },
+            {
+                "name": "peerWrite",
+                "start": 647,
+                "end": 667
+            },
+            {
+                "name": "syncPeer",
+                "start": 672,
+                "end": 739
+            },
+            {
+                "name": "readPeer",
+                "start": 744,
+                "end": 756
+            },
+            {
+                "name": "readIVPeer",
+                "start": 761,
+                "end": 805
+            },
+            {
+                "name": "readIRPeer",
+                "start": 811,
+                "end": 832
+            },
+            {
+                "name": "readBmPeer",
+                "start": 839,
+                "end": 890
+            },
+            {
+                "name": "readPeersInternal",
+                "start": 892,
+                "end": 954
+            },
+            {
+                "name": "doReadPeer",
+                "start": 956,
+                "end": 986
+            },
+            {
+                "name": "readPeers",
+                "start": 988,
+                "end": 1115
+            },
+            {
+                "name": "writePeers",
+                "start": 1117,
+                "end": 1144
+            },
+            {
+                "name": "writeByteInternal",
+                "start": 1146,
+                "end": 1157
+            },
+            {
+                "name": "peerWriteBytes",
+                "start": 1159,
+                "end": 1207
+            },
+            {
+                "name": "writeBytesPeers",
+                "start": 1209,
+                "end": 1229
+            },
+            {
+                "name": "writeFilePeers",
+                "start": 1234,
+                "end": 1293
+            },
+            {
+                "name": "writeCKPD",
+                "start": 1295,
+                "end": 1315
+            },
+            {
+                "name": "writeCMER",
+                "start": 1317,
+                "end": 1337
+            },
+            {
+                "name": "connected",
+                "start": 1342,
+                "end": 1354
+            },
+            {
+                "name": "socketWriteByte",
+                "start": 1360,
+                "end": 1371
+            },
+            {
+                "name": "writeIViewerHeartbeat",
+                "start": 1373,
+                "end": 1380
+            },
+            {
+                "name": "writeBemusedHeartbeat",
+                "start": 1382,
+                "end": 1386
+            },
+            {
+                "name": "writeHeartbeat",
+                "start": 1388,
+                "end": 1394
+            },
+            {
+                "name": "sendIViewerHeartbeat",
+                "start": 1396,
+                "end": 1409
+            },
+            {
+                "name": "needExit",
+                "start": 1414,
+                "end": 1432
+            },
+            {
+                "name": "needFinalizer",
+                "start": 1437,
+                "end": 1449
+            },
+            {
+                "name": "needAtMainMenuReturn",
+                "start": 1454,
+                "end": 1466
+            },
+            {
+                "name": "isServerMode",
+                "start": 1471,
+                "end": 1489
+            },
+            {
+                "name": "isServerModeNoWeb",
+                "start": 1494,
+                "end": 1510
+            },
+            {
+                "name": "isWebServer",
+                "start": 1512,
+                "end": 1515
+            },
+            {
+                "name": "isAtMode",
+                "start": 1520,
+                "end": 1534
+            },
+            {
+                "name": "isAtModeDuplex",
+                "start": 1539,
+                "end": 1552
+            },
+            {
+                "name": "getIViewerTcpPort",
+                "start": 1557,
+                "end": 1572
+            },
+            {
+                "name": "checkActiveCall",
+                "start": 1574,
+                "end": 1592
+            },
+            {
+                "name": "hasActiveCall",
+                "start": 1594,
+                "end": 1612
+            }
+        ],
+        "src/ar_dbus.c": [
+            {
+                "name": "getParamType",
+                "start": 61,
+                "end": 82
+            },
+            {
+                "name": "dbusInit",
+                "start": 639,
+                "end": 642
+            },
+            {
+                "name": "dbusFinish",
+                "start": 644,
+                "end": 646
+            },
+            {
+                "name": "dbusCommand",
+                "start": 648,
+                "end": 651
+            }
+        ],
+        "src/gen_html.c": [
+            {
+                "name": "initHtmlGenerator",
+                "start": 80,
+                "end": 91
+            },
+            {
+                "name": "htmlScreenWidth",
+                "start": 93,
+                "end": 96
+            },
+            {
+                "name": "htmlScreenHeight",
+                "start": 98,
+                "end": 101
+            },
+            {
+                "name": "fontHTML",
+                "start": 103,
+                "end": 116
+            },
+            {
+                "name": "getAccessKey",
+                "start": 120,
+                "end": 135
+            },
+            {
+                "name": "addFormMenu",
+                "start": 137,
+                "end": 202
+            },
+            {
+                "name": "renderFormHead",
+                "start": 204,
+                "end": 265
+            },
+            {
+                "name": "renderCtrlHTMLForm",
+                "start": 267,
+                "end": 385
+            },
+            {
+                "name": "renderTextHTMLForm",
+                "start": 387,
+                "end": 431
+            },
+            {
+                "name": "renderListHTMLForm",
+                "start": 433,
+                "end": 482
+            },
+            {
+                "name": "renderWmanHTMLForm",
+                "start": 484,
+                "end": 513
+            },
+            {
+                "name": "renderEditHTMLForm",
+                "start": 515,
+                "end": 552
+            },
+            {
+                "name": "renderPassHTMLForm",
+                "start": 557,
+                "end": 585
+            }
+        ],
+        "src/mode.c": [
+            {
+                "name": "getInternalMode",
+                "start": 38,
+                "end": 51
+            },
+            {
+                "name": "getDefaultMode",
+                "start": 53,
+                "end": 69
+            },
+            {
+                "name": "getCurrentMode",
+                "start": 71,
+                "end": 74
+            },
+            {
+                "name": "setCurrentMode",
+                "start": 76,
+                "end": 80
+            },
+            {
+                "name": "getModeName",
+                "start": 82,
+                "end": 85
+            },
+            {
+                "name": "findMode",
+                "start": 87,
+                "end": 97
+            },
+            {
+                "name": "addMode",
+                "start": 99,
+                "end": 118
+            },
+            {
+                "name": "switchMode",
+                "start": 121,
+                "end": 139
+            },
+            {
+                "name": "getModes",
+                "start": 141,
+                "end": 144
+            },
+            {
+                "name": "forgetModes",
+                "start": 146,
+                "end": 149
+            },
+            {
+                "name": "freeInternalMode",
+                "start": 152,
+                "end": 178
+            },
+            {
+                "name": "freeModes",
+                "start": 183,
+                "end": 223
+            },
+            {
+                "name": "printModes",
+                "start": 225,
+                "end": 246
+            }
+        ],
+        "src/xemulate.c": [
+            {
+                "name": "freeDisplay",
+                "start": 63,
+                "end": 71
+            },
+            {
+                "name": "emulateCommands",
+                "start": 248,
+                "end": 440
+            }
+        ],
+        "src/pr_web.c": [
+            {
+                "name": "i2string",
+                "start": 97,
+                "end": 101
+            },
+            {
+                "name": "freeWMessage",
+                "start": 103,
+                "end": 111
+            },
+            {
+                "name": "sendToWebServer",
+                "start": 113,
+                "end": 121
+            },
+            {
+                "name": "get_mime_type",
+                "start": 143,
+                "end": 159
+            },
+            {
+                "name": "sendData",
+                "start": 161,
+                "end": 172
+            },
+            {
+                "name": "sendCookie",
+                "start": 174,
+                "end": 187
+            },
+            {
+                "name": "sendHeaders",
+                "start": 189,
+                "end": 237
+            },
+            {
+                "name": "sendError",
+                "start": 239,
+                "end": 272
+            },
+            {
+                "name": "sendFile",
+                "start": 274,
+                "end": 321
+            },
+            {
+                "name": "sendGeneratedImage",
+                "start": 323,
+                "end": 346
+            },
+            {
+                "name": "sendIcon",
+                "start": 348,
+                "end": 377
+            },
+            {
+                "name": "sendCover",
+                "start": 379,
+                "end": 401
+            },
+            {
+                "name": "sendFavicon",
+                "start": 403,
+                "end": 417
+            },
+            {
+                "name": "sendIViewerGui",
+                "start": 419,
+                "end": 454
+            },
+            {
+                "name": "addLink",
+                "start": 456,
+                "end": 473
+            },
+            {
+                "name": "sendForm",
+                "start": 525,
+                "end": 564
+            },
+            {
+                "name": "parseCookie",
+                "start": 566,
+                "end": 596
+            },
+            {
+                "name": "handleMenuOnList",
+                "start": 598,
+                "end": 642
+            },
+            {
+                "name": "securityCheck",
+                "start": 644,
+                "end": 767
+            },
+            {
+                "name": "sendButtonPress",
+                "start": 769,
+                "end": 776
+            },
+            {
+                "name": "processHtmlButtonPress",
+                "start": 778,
+                "end": 793
+            },
+            {
+                "name": "processXmlButtonPress",
+                "start": 795,
+                "end": 806
+            },
+            {
+                "name": "processHtmlMenu",
+                "start": 808,
+                "end": 836
+            },
+            {
+                "name": "processXmlShortMenu",
+                "start": 838,
+                "end": 873
+            },
+            {
+                "name": "processXmlListMenu",
+                "start": 875,
+                "end": 888
+            },
+            {
+                "name": "processXmlListMenu2",
+                "start": 890,
+                "end": 914
+            },
+            {
+                "name": "processXmlLongMenu",
+                "start": 916,
+                "end": 927
+            },
+            {
+                "name": "processXmlExtMenu",
+                "start": 929,
+                "end": 943
+            },
+            {
+                "name": "processHtmlListMenu",
+                "start": 945,
+                "end": 1000
+            },
+            {
+                "name": "processHtmlEfield",
+                "start": 1002,
+                "end": 1052
+            },
+            {
+                "name": "processXmlEfieldSubmit",
+                "start": 1054,
+                "end": 1080
+            },
+            {
+                "name": "processXmlEfieldCancel",
+                "start": 1081,
+                "end": 1089
+            },
+            {
+                "name": "renderForm",
+                "start": 1100,
+                "end": 1114
+            },
+            {
+                "name": "serveRequest",
+                "start": 1117,
+                "end": 1472
+            },
+            {
+                "name": "freeConn",
+                "start": 1474,
+                "end": 1511
+            },
+            {
+                "name": "webServerMain",
+                "start": 1513,
+                "end": 1641
+            },
+            {
+                "name": "openWebInternal",
+                "start": 1643,
+                "end": 1664
+            },
+            {
+                "name": "openWeb",
+                "start": 1666,
+                "end": 1677
+            },
+            {
+                "name": "checkWebPort",
+                "start": 1679,
+                "end": 1719
+            },
+            {
+                "name": "closeWebPort",
+                "start": 1722,
+                "end": 1769
+            },
+            {
+                "name": "writeWebConnStr",
+                "start": 1771,
+                "end": 1913
+            },
+            {
+                "name": "writeWebConn",
+                "start": 1915,
+                "end": 1933
+            },
+            {
+                "name": "writeWeb",
+                "start": 1938,
+                "end": 1945
+            }
+        ],
+        "src/str.c": [
+            {
+                "name": "nearestPower",
+                "start": 42,
+                "end": 53
+            },
+            {
+                "name": "stringMaybeExpand",
+                "start": 55,
+                "end": 61
+            },
+            {
+                "name": "stringAppendLen",
+                "start": 63,
+                "end": 72
+            },
+            {
+                "name": "stringSizedNew",
+                "start": 74,
+                "end": 86
+            },
+            {
+                "name": "stringNew",
+                "start": 88,
+                "end": 101
+            },
+            {
+                "name": "stringTruncate",
+                "start": 103,
+                "end": 108
+            },
+            {
+                "name": "stringAppend",
+                "start": 110,
+                "end": 116
+            },
+            {
+                "name": "stringAssign",
+                "start": 118,
+                "end": 126
+            },
+            {
+                "name": "stringFree",
+                "start": 128,
+                "end": 139
+            },
+            {
+                "name": "stringHasPrefix",
+                "start": 141,
+                "end": 148
+            }
+        ],
+        "src/alarm.c": [
+            {
+                "name": "manageAlarms",
+                "start": 54,
+                "end": 81
+            },
+            {
+                "name": "getAlarms",
+                "start": 83,
+                "end": 86
+            },
+            {
+                "name": "forgetAlarms",
+                "start": 88,
+                "end": 91
+            },
+            {
+                "name": "addAlarm",
+                "start": 93,
+                "end": 103
+            },
+            {
+                "name": "destroyAlarm",
+                "start": 105,
+                "end": 115
+            },
+            {
+                "name": "freeAlarms",
+                "start": 117,
+                "end": 123
+            },
+            {
+                "name": "checkKeepalive",
+                "start": 136,
+                "end": 156
+            },
+            {
+                "name": "keepaliveTest",
+                "start": 158,
+                "end": 187
+            },
+            {
+                "name": "addKeepalive",
+                "start": 189,
+                "end": 211
+            },
+            {
+                "name": "useKeepalive",
+                "start": 213,
+                "end": 216
+            },
+            {
+                "name": "setKeepalive",
+                "start": 218,
+                "end": 222
+            }
+        ],
+        "src/conf.c": [
+            {
+                "name": "boolValue",
+                "start": 52,
+                "end": 56
+            },
+            {
+                "name": "setLog",
+                "start": 58,
+                "end": 66
+            },
+            {
+                "name": "getLog",
+                "start": 68,
+                "end": 71
+            },
+            {
+                "name": "setBemused",
+                "start": 73,
+                "end": 76
+            },
+            {
+                "name": "getBemused",
+                "start": 78,
+                "end": 81
+            },
+            {
+                "name": "setIViewer",
+                "start": 83,
+                "end": 86
+            },
+            {
+                "name": "getIViewer",
+                "start": 88,
+                "end": 91
+            },
+            {
+                "name": "getDebug",
+                "start": 93,
+                "end": 96
+            },
+            {
+                "name": "getDevice",
+                "start": 98,
+                "end": 101
+            },
+            {
+                "name": "getBaudrate",
+                "start": 103,
+                "end": 142
+            },
+            {
+                "name": "getRetrySecs",
+                "start": 144,
+                "end": 153
+            },
+            {
+                "name": "getWaitTime",
+                "start": 155,
+                "end": 158
+            },
+            {
+                "name": "setWaitTime",
+                "start": 160,
+                "end": 170
+            },
+            {
+                "name": "autoConnect",
+                "start": 172,
+                "end": 180
+            },
+            {
+                "name": "getAutoRepeat",
+                "start": 182,
+                "end": 190
+            },
+            {
+                "name": "setRepeatNow",
+                "start": 194,
+                "end": 197
+            },
+            {
+                "name": "repeatNow",
+                "start": 199,
+                "end": 202
+            },
+            {
+                "name": "getUseScreen",
+                "start": 204,
+                "end": 212
+            },
+            {
+                "name": "getCharset",
+                "start": 214,
+                "end": 217
+            },
+            {
+                "name": "getToMainMenu",
+                "start": 219,
+                "end": 222
+            },
+            {
+                "name": "getServiceName",
+                "start": 224,
+                "end": 227
+            },
+            {
+                "name": "getAT_CMER",
+                "start": 229,
+                "end": 271
+            },
+            {
+                "name": "getFrontEnd",
+                "start": 273,
+                "end": 276
+            },
+            {
+                "name": "getCfgDir",
+                "start": 278,
+                "end": 281
+            },
+            {
+                "name": "getConfigDir",
+                "start": 283,
+                "end": 286
+            },
+            {
+                "name": "setModel",
+                "start": 288,
+                "end": 303
+            },
+            {
+                "name": "getModel",
+                "start": 305,
+                "end": 308
+            },
+            {
+                "name": "setBtAddress",
+                "start": 310,
+                "end": 313
+            },
+            {
+                "name": "getBtAddress",
+                "start": 315,
+                "end": 318
+            },
+            {
+                "name": "freeBtAddress",
+                "start": 320,
+                "end": 326
+            },
+            {
+                "name": "findExact",
+                "start": 331,
+                "end": 350
+            },
+            {
+                "name": "findStartingWith",
+                "start": 352,
+                "end": 388
+            },
+            {
+                "name": "findItemInMode",
+                "start": 390,
+                "end": 580
+            },
+            {
+                "name": "findItemInModeAndParents",
+                "start": 582,
+                "end": 638
+            },
+            {
+                "name": "findItem",
+                "start": 640,
+                "end": 687
+            },
+            {
+                "name": "getCommand",
+                "start": 689,
+                "end": 704
+            },
+            {
+                "name": "printKey",
+                "start": 709,
+                "end": 753
+            },
+            {
+                "name": "printKeys",
+                "start": 755,
+                "end": 770
+            },
+            {
+                "name": "setInitDone",
+                "start": 772,
+                "end": 775
+            },
+            {
+                "name": "printConf",
+                "start": 777,
+                "end": 786
+            },
+            {
+                "name": "destroyCommandItem",
+                "start": 792,
+                "end": 805
+            },
+            {
+                "name": "freeCmds",
+                "start": 807,
+                "end": 812
+            },
+            {
+                "name": "freeCfg",
+                "start": 814,
+                "end": 821
+            }
+        ],
+        "src/parse.c": [
+            {
+                "name": "setCfgDir",
+                "start": 66,
+                "end": 111
+            },
+            {
+                "name": "parse_opts",
+                "start": 114,
+                "end": 143
+            },
+            {
+                "name": "regexpPrepare",
+                "start": 145,
+                "end": 165
+            },
+            {
+                "name": "deleteSpaces",
+                "start": 167,
+                "end": 190
+            },
+            {
+                "name": "normalizeSequence",
+                "start": 192,
+                "end": 227
+            },
+            {
+                "name": "allocRegmatch",
+                "start": 229,
+                "end": 237
+            },
+            {
+                "name": "parseKeyValue",
+                "start": 239,
+                "end": 301
+            },
+            {
+                "name": "id2Cmd",
+                "start": 303,
+                "end": 340
+            },
+            {
+                "name": "cmd2id",
+                "start": 342,
+                "end": 379
+            },
+            {
+                "name": "cmdSet2id",
+                "start": 381,
+                "end": 427
+            },
+            {
+                "name": "cmdGet2id",
+                "start": 429,
+                "end": 462
+            },
+            {
+                "name": "cmdTimer2id",
+                "start": 464,
+                "end": 493
+            },
+            {
+                "name": "cmdMake2id",
+                "start": 495,
+                "end": 528
+            },
+            {
+                "name": "storeGetCmd",
+                "start": 530,
+                "end": 615
+            },
+            {
+                "name": "storeMakeCmd",
+                "start": 617,
+                "end": 743
+            },
+            {
+                "name": "storeMacroCmd",
+                "start": 745,
+                "end": 771
+            },
+            {
+                "name": "storeExecCmd",
+                "start": 773,
+                "end": 779
+            },
+            {
+                "name": "storeExecAndSendCmd",
+                "start": 781,
+                "end": 797
+            },
+            {
+                "name": "storeExecAndSetCmdEx",
+                "start": 799,
+                "end": 1211
+            },
+            {
+                "name": "storeSetCmd",
+                "start": 1213,
+                "end": 1216
+            },
+            {
+                "name": "storeExecAndSetCmd",
+                "start": 1218,
+                "end": 1221
+            },
+            {
+                "name": "storeTimerCmd",
+                "start": 1223,
+                "end": 1283
+            },
+            {
+                "name": "storeDescription",
+                "start": 1285,
+                "end": 1292
+            },
+            {
+                "name": "storeSendCkpdCmd",
+                "start": 1294,
+                "end": 1298
+            },
+            {
+                "name": "storeOtherCmd",
+                "start": 1300,
+                "end": 1304
+            },
+            {
+                "name": "storeCmds",
+                "start": 1306,
+                "end": 1460
+            },
+            {
+                "name": "storeKey",
+                "start": 1462,
+                "end": 1515
+            },
+            {
+                "name": "loadLine",
+                "start": 1517,
+                "end": 1564
+            },
+            {
+                "name": "loadKeys",
+                "start": 1566,
+                "end": 1651
+            },
+            {
+                "name": "loadInternal",
+                "start": 1674,
+                "end": 1683
+            },
+            {
+                "name": "load_cfg",
+                "start": 1685,
+                "end": 1766
+            },
+            {
+                "name": "freeRegexps",
+                "start": 1768,
+                "end": 1780
+            },
+            {
+                "name": "init_cfg_dir",
+                "start": 1782,
+                "end": 1797
+            },
+            {
+                "name": "init_cfg",
+                "start": 1799,
+                "end": 1834
+            }
+        ],
+        "src/var.c": [
+            {
+                "name": "searchVar",
+                "start": 43,
+                "end": 57
+            },
+            {
+                "name": "dupVarValue",
+                "start": 61,
+                "end": 74
+            },
+            {
+                "name": "getVarValue",
+                "start": 76,
+                "end": 86
+            },
+            {
+                "name": "variable_destroyed",
+                "start": 88,
+                "end": 97
+            },
+            {
+                "name": "initVarData",
+                "start": 99,
+                "end": 114
+            },
+            {
+                "name": "arepeatHook",
+                "start": 116,
+                "end": 120
+            },
+            {
+                "name": "loggingHook",
+                "start": 122,
+                "end": 127
+            },
+            {
+                "name": "iviewerHook",
+                "start": 129,
+                "end": 134
+            },
+            {
+                "name": "bemusedHook",
+                "start": 136,
+                "end": 141
+            },
+            {
+                "name": "waitTimeoutHook",
+                "start": 143,
+                "end": 148
+            },
+            {
+                "name": "allowedOnlyHook",
+                "start": 150,
+                "end": 155
+            },
+            {
+                "name": "checkVarHooks",
+                "start": 157,
+                "end": 188
+            },
+            {
+                "name": "setVarSimple",
+                "start": 192,
+                "end": 195
+            },
+            {
+                "name": "setVar",
+                "start": 197,
+                "end": 213
+            },
+            {
+                "name": "addInternalVars",
+                "start": 215,
+                "end": 277
+            },
+            {
+                "name": "varPrinter",
+                "start": 279,
+                "end": 289
+            },
+            {
+                "name": "printVars",
+                "start": 291,
+                "end": 300
+            },
+            {
+                "name": "freeVars",
+                "start": 302,
+                "end": 306
+            }
+        ],
+        "src/main.c": [
+            {
+                "name": "aboutToExit",
+                "start": 68,
+                "end": 119
+            },
+            {
+                "name": "sig_int",
+                "start": 122,
+                "end": 127
+            },
+            {
+                "name": "sig_quit",
+                "start": 129,
+                "end": 134
+            },
+            {
+                "name": "sig_kill",
+                "start": 136,
+                "end": 141
+            },
+            {
+                "name": "createDataDir",
+                "start": 143,
+                "end": 166
+            },
+            {
+                "name": "main",
+                "start": 168,
+                "end": 238
+            }
+        ],
+        "src/pr_rfcomm.c": [
+            {
+                "name": "rfcommFD",
+                "start": 66,
+                "end": 70
+            },
+            {
+                "name": "rfcommSetup",
+                "start": 72,
+                "end": 81
+            },
+            {
+                "name": "rfcommConnect",
+                "start": 83,
+                "end": 132
+            },
+            {
+                "name": "rfcommClose",
+                "start": 134,
+                "end": 148
+            },
+            {
+                "name": "rfcommWrite",
+                "start": 150,
+                "end": 192
+            },
+            {
+                "name": "rfcommCheckActiveCall",
+                "start": 194,
+                "end": 223
+            },
+            {
+                "name": "rfcommHasActiveCall",
+                "start": 225,
+                "end": 229
+            }
+        ]
+    }
+}

@@ -1,0 +1,277 @@
+{
+    "nsca-2.9.1": {
+        "src/nsca.c": [
+            {
+                "name": "main",
+                "start": 80,
+                "end": 278
+            },
+            {
+                "name": "do_cleanup",
+                "start": 282,
+                "end": 300
+            },
+            {
+                "name": "free_memory",
+                "start": 304,
+                "end": 324
+            },
+            {
+                "name": "do_exit",
+                "start": 329,
+                "end": 334
+            },
+            {
+                "name": "read_config_file",
+                "start": 339,
+                "end": 537
+            },
+            {
+                "name": "get_log_facility",
+                "start": 542,
+                "end": 590
+            },
+            {
+                "name": "reap_children",
+                "start": 595,
+                "end": 600
+            },
+            {
+                "name": "install_child_handler",
+                "start": 605,
+                "end": 613
+            },
+            {
+                "name": "register_poll",
+                "start": 618,
+                "end": 642
+            },
+            {
+                "name": "register_read_handler",
+                "start": 647,
+                "end": 676
+            },
+            {
+                "name": "register_write_handler",
+                "start": 681,
+                "end": 710
+            },
+            {
+                "name": "find_rhand",
+                "start": 715,
+                "end": 726
+            },
+            {
+                "name": "find_whand",
+                "start": 731,
+                "end": 742
+            },
+            {
+                "name": "handle_events",
+                "start": 746,
+                "end": 786
+            },
+            {
+                "name": "wait_for_connections",
+                "start": 791,
+                "end": 870
+            },
+            {
+                "name": "accept_connection",
+                "start": 874,
+                "end": 988
+            },
+            {
+                "name": "handle_connection",
+                "start": 993,
+                "end": 1065
+            },
+            {
+                "name": "handle_connection_read",
+                "start": 1070,
+                "end": 1210
+            },
+            {
+                "name": "write_checkresult_file",
+                "start": 1215,
+                "end": 1273
+            },
+            {
+                "name": "write_check_result",
+                "start": 1276,
+                "end": 1299
+            },
+            {
+                "name": "open_command_file",
+                "start": 1304,
+                "end": 1339
+            },
+            {
+                "name": "close_command_file",
+                "start": 1344,
+                "end": 1350
+            },
+            {
+                "name": "process_arguments",
+                "start": 1355,
+                "end": 1405
+            },
+            {
+                "name": "write_pid_file",
+                "start": 1410,
+                "end": 1457
+            },
+            {
+                "name": "remove_pid_file",
+                "start": 1462,
+                "end": 1479
+            },
+            {
+                "name": "get_user_info",
+                "start": 1484,
+                "end": 1507
+            },
+            {
+                "name": "get_group_info",
+                "start": 1512,
+                "end": 1535
+            },
+            {
+                "name": "drop_privileges",
+                "start": 1540,
+                "end": 1576
+            },
+            {
+                "name": "do_chroot",
+                "start": 1581,
+                "end": 1599
+            },
+            {
+                "name": "sighandler",
+                "start": 1604,
+                "end": 1637
+            }
+        ],
+        "src/utils.c": [
+            {
+                "name": "escape_newlines",
+                "start": 44,
+                "end": 75
+            },
+            {
+                "name": "generate_crc32_table",
+                "start": 78,
+                "end": 95
+            },
+            {
+                "name": "calculate_crc32",
+                "start": 99,
+                "end": 112
+            },
+            {
+                "name": "encrypt_init",
+                "start": 117,
+                "end": 276
+            },
+            {
+                "name": "encrypt_cleanup",
+                "start": 281,
+                "end": 302
+            },
+            {
+                "name": "generate_transmitted_iv",
+                "start": 307,
+                "end": 333
+            },
+            {
+                "name": "encrypt_buffer",
+                "start": 338,
+                "end": 393
+            },
+            {
+                "name": "decrypt_buffer",
+                "start": 397,
+                "end": 427
+            },
+            {
+                "name": "randomize_buffer",
+                "start": 432,
+                "end": 463
+            },
+            {
+                "name": "strip",
+                "start": 468,
+                "end": 481
+            },
+            {
+                "name": "clear_buffer",
+                "start": 486,
+                "end": 492
+            },
+            {
+                "name": "display_license",
+                "start": 497,
+                "end": 512
+            }
+        ],
+        "src/send_nsca.c": [
+            {
+                "name": "main",
+                "start": 59,
+                "end": 310
+            },
+            {
+                "name": "do_exit",
+                "start": 315,
+                "end": 336
+            },
+            {
+                "name": "read_init_packet",
+                "start": 341,
+                "end": 371
+            },
+            {
+                "name": "process_arguments",
+                "start": 376,
+                "end": 464
+            },
+            {
+                "name": "alarm_handler",
+                "start": 469,
+                "end": 474
+            },
+            {
+                "name": "read_config_file",
+                "start": 479,
+                "end": 616
+            }
+        ],
+        "src/netutils.c": [
+            {
+                "name": "my_tcp_connect",
+                "start": 38,
+                "end": 44
+            },
+            {
+                "name": "my_connect",
+                "start": 48,
+                "end": 105
+            },
+            {
+                "name": "my_inet_aton",
+                "start": 111,
+                "end": 207
+            },
+            {
+                "name": "sendall",
+                "start": 212,
+                "end": 230
+            },
+            {
+                "name": "recvall",
+                "start": 234,
+                "end": 275
+            }
+        ]
+    }
+}

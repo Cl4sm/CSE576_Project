@@ -1,0 +1,3876 @@
+{
+    "speech-dispatcher-0.8": {
+        "src/api/c/libspeechd.h": [
+            {
+                "name": "spd_open",
+                "start": 108,
+                "end": 109
+            },
+            {
+                "name": "spd_open2",
+                "start": 110,
+                "end": 113
+            },
+            {
+                "name": "spd_sayf",
+                "start": 119,
+                "end": 120
+            },
+            {
+                "name": "spd_key",
+                "start": 140,
+                "end": 141
+            },
+            {
+                "name": "spd_char",
+                "start": 142,
+                "end": 143
+            },
+            {
+                "name": "spd_wchar",
+                "start": 144,
+                "end": 145
+            },
+            {
+                "name": "spd_sound_icon",
+                "start": 148,
+                "end": 149
+            },
+            {
+                "name": "spd_set_voice_type_uid",
+                "start": 154,
+                "end": 155
+            },
+            {
+                "name": "spd_set_synthesis_voice_uid",
+                "start": 159,
+                "end": 160
+            },
+            {
+                "name": "spd_set_notification_on",
+                "start": 164,
+                "end": 165
+            },
+            {
+                "name": "spd_set_notification_off",
+                "start": 166,
+                "end": 167
+            },
+            {
+                "name": "spd_set_notification",
+                "start": 168,
+                "end": 169
+            },
+            {
+                "name": "spd_set_voice_rate_uid",
+                "start": 173,
+                "end": 174
+            },
+            {
+                "name": "spd_set_voice_pitch_uid",
+                "start": 178,
+                "end": 179
+            },
+            {
+                "name": "spd_set_volume_uid",
+                "start": 183,
+                "end": 184
+            },
+            {
+                "name": "spd_set_punctuation_uid",
+                "start": 188,
+                "end": 189
+            },
+            {
+                "name": "spd_set_capital_letters_all",
+                "start": 192,
+                "end": 193
+            },
+            {
+                "name": "spd_set_capital_letters_uid",
+                "start": 194,
+                "end": 195
+            },
+            {
+                "name": "spd_set_spelling_uid",
+                "start": 199,
+                "end": 200
+            },
+            {
+                "name": "spd_set_language_uid",
+                "start": 204,
+                "end": 205
+            },
+            {
+                "name": "spd_set_output_module",
+                "start": 207,
+                "end": 208
+            },
+            {
+                "name": "spd_set_output_module_all",
+                "start": 209,
+                "end": 210
+            },
+            {
+                "name": "spd_set_output_module_uid",
+                "start": 211,
+                "end": 212
+            },
+            {
+                "name": "spd_get_client_list",
+                "start": 214,
+                "end": 215
+            },
+            {
+                "name": "spd_get_message_list_fd",
+                "start": 216,
+                "end": 217
+            },
+            {
+                "name": "spd_execute_command_with_list_reply",
+                "start": 222,
+                "end": 223
+            },
+            {
+                "name": "spd_execute_command_with_reply",
+                "start": 227,
+                "end": 228
+            },
+            {
+                "name": "spd_send_data_wo_mutex",
+                "start": 231,
+                "end": 232
+            }
+        ],
+        "src/api/c/libspeechd.c": [
+            {
+                "name": "strndup",
+                "start": 90,
+                "end": 107
+            },
+            {
+                "name": "getline",
+                "start": 110,
+                "end": 148
+            },
+            {
+                "name": "_get_default_unix_socket_name",
+                "start": 156,
+                "end": 168
+            },
+            {
+                "name": "spd_get_default_address",
+                "start": 170,
+                "end": 214
+            },
+            {
+                "name": "_init_debug",
+                "start": 216,
+                "end": 232
+            },
+            {
+                "name": "spd_open",
+                "start": 238,
+                "end": 253
+            },
+            {
+                "name": "resolve_host",
+                "start": 257,
+                "end": 308
+            },
+            {
+                "name": "spawn_server",
+                "start": 310,
+                "end": 370
+            },
+            {
+                "name": "spd_open2",
+                "start": 372,
+                "end": 548
+            },
+            {
+                "name": "spd_close",
+                "start": 557,
+                "end": 579
+            },
+            {
+                "name": "spd_say_prepare",
+                "start": 582,
+                "end": 611
+            },
+            {
+                "name": "spd_say_sending",
+                "start": 613,
+                "end": 645
+            },
+            {
+                "name": "spd_say",
+                "start": 649,
+                "end": 671
+            },
+            {
+                "name": "spd_sayf",
+                "start": 674,
+                "end": 695
+            },
+            {
+                "name": "spd_stop",
+                "start": 697,
+                "end": 700
+            },
+            {
+                "name": "spd_stop_all",
+                "start": 702,
+                "end": 705
+            },
+            {
+                "name": "spd_stop_uid",
+                "start": 707,
+                "end": 713
+            },
+            {
+                "name": "spd_cancel",
+                "start": 715,
+                "end": 718
+            },
+            {
+                "name": "spd_cancel_all",
+                "start": 720,
+                "end": 723
+            },
+            {
+                "name": "spd_cancel_uid",
+                "start": 725,
+                "end": 731
+            },
+            {
+                "name": "spd_pause",
+                "start": 733,
+                "end": 736
+            },
+            {
+                "name": "spd_pause_all",
+                "start": 738,
+                "end": 741
+            },
+            {
+                "name": "spd_pause_uid",
+                "start": 743,
+                "end": 749
+            },
+            {
+                "name": "spd_resume",
+                "start": 751,
+                "end": 754
+            },
+            {
+                "name": "spd_resume_all",
+                "start": 756,
+                "end": 759
+            },
+            {
+                "name": "spd_resume_uid",
+                "start": 761,
+                "end": 767
+            },
+            {
+                "name": "spd_key",
+                "start": 769,
+                "end": 793
+            },
+            {
+                "name": "spd_char",
+                "start": 795,
+                "end": 821
+            },
+            {
+                "name": "spd_wchar",
+                "start": 823,
+                "end": 849
+            },
+            {
+                "name": "spd_sound_icon",
+                "start": 851,
+                "end": 876
+            },
+            {
+                "name": "spd_w_set_punctuation",
+                "start": 878,
+                "end": 895
+            },
+            {
+                "name": "spd_w_set_capital_letters",
+                "start": 897,
+                "end": 914
+            },
+            {
+                "name": "spd_w_set_spelling",
+                "start": 916,
+                "end": 931
+            },
+            {
+                "name": "spd_set_data_mode",
+                "start": 933,
+                "end": 946
+            },
+            {
+                "name": "spd_w_set_voice_type",
+                "start": 948,
+                "end": 984
+            },
+            {
+                "name": "spd_set_notification_on",
+                "start": 1079,
+                "end": 1087
+            },
+            {
+                "name": "spd_set_notification_off",
+                "start": 1089,
+                "end": 1097
+            },
+            {
+                "name": "spd_set_notification",
+                "start": 1106,
+                "end": 1138
+            },
+            {
+                "name": "spd_list_modules",
+                "start": 1147,
+                "end": 1154
+            },
+            {
+                "name": "spd_list_voices",
+                "start": 1156,
+                "end": 1161
+            },
+            {
+                "name": "spd_list_synthesis_voices",
+                "start": 1163,
+                "end": 1199
+            },
+            {
+                "name": "spd_execute_command_with_list_reply",
+                "start": 1201,
+                "end": 1234
+            },
+            {
+                "name": "spd_get_message_list_fd",
+                "start": 1243,
+                "end": 1271
+            },
+            {
+                "name": "spd_execute_command",
+                "start": 1273,
+                "end": 1289
+            },
+            {
+                "name": "spd_execute_command_wo_mutex",
+                "start": 1291,
+                "end": 1305
+            },
+            {
+                "name": "spd_execute_command_with_reply",
+                "start": 1307,
+                "end": 1331
+            },
+            {
+                "name": "spd_send_data",
+                "start": 1333,
+                "end": 1349
+            },
+            {
+                "name": "spd_send_data_wo_mutex",
+                "start": 1351,
+                "end": 1426
+            },
+            {
+                "name": "spd_set_priority",
+                "start": 1430,
+                "end": 1458
+            },
+            {
+                "name": "get_reply",
+                "start": 1460,
+                "end": 1502
+            },
+            {
+                "name": "spd_events_handler",
+                "start": 1504,
+                "end": 1617
+            },
+            {
+                "name": "ret_ok",
+                "start": 1619,
+                "end": 1634
+            },
+            {
+                "name": "get_param_str",
+                "start": 1636,
+                "end": 1685
+            },
+            {
+                "name": "get_param_int",
+                "start": 1687,
+                "end": 1708
+            },
+            {
+                "name": "get_err_code",
+                "start": 1710,
+                "end": 1734
+            },
+            {
+                "name": "isanum",
+                "start": 1738,
+                "end": 1748
+            },
+            {
+                "name": "xmalloc",
+                "start": 1750,
+                "end": 1761
+            },
+            {
+                "name": "xfree",
+                "start": 1763,
+                "end": 1767
+            },
+            {
+                "name": "escape_dot",
+                "start": 1774,
+                "end": 1820
+            },
+            {
+                "name": "SPD_DBG",
+                "start": 1836,
+                "end": 1838
+            }
+        ],
+        "src/api/guile/gssip.c": [
+            {
+                "name": "assign_priority",
+                "start": 49,
+                "end": 68
+            },
+            {
+                "name": "SCM_DEFINE",
+                "start": 72,
+                "end": 86
+            },
+            {
+                "name": "SCM_DEFINE",
+                "start": 90,
+                "end": 100
+            },
+            {
+                "name": "SCM_DEFINE",
+                "start": 122,
+                "end": 123
+            },
+            {
+                "name": "SCM_DEFINE",
+                "start": 126,
+                "end": 127
+            },
+            {
+                "name": "SCM_DEFINE",
+                "start": 130,
+                "end": 131
+            },
+            {
+                "name": "SCM_DEFINE",
+                "start": 134,
+                "end": 135
+            },
+            {
+                "name": "SCM_DEFINE",
+                "start": 159,
+                "end": 160
+            },
+            {
+                "name": "SCM_DEFINE",
+                "start": 163,
+                "end": 164
+            },
+            {
+                "name": "SCM_DEFINE",
+                "start": 167,
+                "end": 168
+            },
+            {
+                "name": "SCM_DEFINE",
+                "start": 171,
+                "end": 172
+            },
+            {
+                "name": "SCM_DEFINE",
+                "start": 197,
+                "end": 198
+            },
+            {
+                "name": "SCM_DEFINE",
+                "start": 201,
+                "end": 202
+            },
+            {
+                "name": "SCM_DEFINE",
+                "start": 205,
+                "end": 206
+            },
+            {
+                "name": "SCM_DEFINE",
+                "start": 209,
+                "end": 210
+            },
+            {
+                "name": "SCM_DEFINE",
+                "start": 213,
+                "end": 214
+            },
+            {
+                "name": "SCM_DEFINE",
+                "start": 217,
+                "end": 230
+            },
+            {
+                "name": "SCM_DEFINE",
+                "start": 235,
+                "end": 250
+            },
+            {
+                "name": "SCM_DEFINE",
+                "start": 255,
+                "end": 268
+            },
+            {
+                "name": "SCM_DEFINE",
+                "start": 274,
+                "end": 285
+            },
+            {
+                "name": "init_gssip",
+                "start": 291,
+                "end": 294
+            }
+        ],
+        "src/clients/say/options.c": [
+            {
+                "name": "options_print_help",
+                "start": 38,
+                "end": 141
+            },
+            {
+                "name": "options_print_version",
+                "start": 143,
+                "end": 152
+            },
+            {
+                "name": "options_parse",
+                "start": 173,
+                "end": 266
+            }
+        ],
+        "src/clients/say/say.c": [
+            {
+                "name": "end_of_speech",
+                "start": 54,
+                "end": 57
+            },
+            {
+                "name": "main",
+                "start": 59,
+                "end": 309
+            }
+        ],
+        "src/clients/spdsend/common.c": [
+            {
+                "name": "write_data",
+                "start": 40,
+                "end": 51
+            },
+            {
+                "name": "read_data",
+                "start": 53,
+                "end": 69
+            },
+            {
+                "name": "forward_data",
+                "start": 71,
+                "end": 85
+            }
+        ],
+        "src/clients/spdsend/client.c": [
+            {
+                "name": "send_header",
+                "start": 34,
+                "end": 41
+            },
+            {
+                "name": "send_open_header",
+                "start": 47,
+                "end": 59
+            },
+            {
+                "name": "read_reply",
+                "start": 61,
+                "end": 75
+            },
+            {
+                "name": "open_connection",
+                "start": 79,
+                "end": 90
+            },
+            {
+                "name": "close_connection",
+                "start": 92,
+                "end": 96
+            },
+            {
+                "name": "send_command",
+                "start": 98,
+                "end": 107
+            }
+        ],
+        "src/clients/spdsend/spdsend.c": [
+            {
+                "name": "usage",
+                "start": 78,
+                "end": 85
+            },
+            {
+                "name": "string_to_number",
+                "start": 87,
+                "end": 96
+            },
+            {
+                "name": "main",
+                "start": 98,
+                "end": 148
+            }
+        ],
+        "src/clients/spdsend/server.c": [
+            {
+                "name": "system_error",
+                "start": 60,
+                "end": 64
+            },
+            {
+                "name": "get_connection",
+                "start": 73,
+                "end": 76
+            },
+            {
+                "name": "set_connection",
+                "start": 78,
+                "end": 87
+            },
+            {
+                "name": "new_connection",
+                "start": 89,
+                "end": 104
+            },
+            {
+                "name": "do_open_connection",
+                "start": 106,
+                "end": 136
+            },
+            {
+                "name": "do_close_connection",
+                "start": 138,
+                "end": 146
+            },
+            {
+                "name": "do_send_data",
+                "start": 148,
+                "end": 164
+            },
+            {
+                "name": "report",
+                "start": 184,
+                "end": 187
+            },
+            {
+                "name": "report_ok",
+                "start": 189,
+                "end": 196
+            },
+            {
+                "name": "report_error",
+                "start": 198,
+                "end": 201
+            },
+            {
+                "name": "read_id",
+                "start": 203,
+                "end": 209
+            },
+            {
+                "name": "forward_ssip_answer",
+                "start": 211,
+                "end": 232
+            },
+            {
+                "name": "process_open",
+                "start": 234,
+                "end": 266
+            },
+            {
+                "name": "process_close",
+                "start": 268,
+                "end": 275
+            },
+            {
+                "name": "process_data",
+                "start": 277,
+                "end": 287
+            },
+            {
+                "name": "process_request",
+                "start": 289,
+                "end": 306
+            },
+            {
+                "name": "process_request_thread",
+                "start": 309,
+                "end": 316
+            },
+            {
+                "name": "login_name",
+                "start": 321,
+                "end": 324
+            },
+            {
+                "name": "server_socket_name",
+                "start": 326,
+                "end": 332
+            },
+            {
+                "name": "serve",
+                "start": 334,
+                "end": 376
+            },
+            {
+                "name": "daemonize",
+                "start": 378,
+                "end": 396
+            },
+            {
+                "name": "init_connections",
+                "start": 398,
+                "end": 411
+            },
+            {
+                "name": "start_server",
+                "start": 413,
+                "end": 432
+            },
+            {
+                "name": "connect_server",
+                "start": 434,
+                "end": 449
+            },
+            {
+                "name": "open_server",
+                "start": 453,
+                "end": 466
+            }
+        ],
+        "src/tests/run_test.c": [
+            {
+                "name": "send_data",
+                "start": 62,
+                "end": 85
+            },
+            {
+                "name": "wait_for",
+                "start": 87,
+                "end": 106
+            },
+            {
+                "name": "set_socket_path",
+                "start": 115,
+                "end": 134
+            },
+            {
+                "name": "init",
+                "start": 142,
+                "end": 162
+            },
+            {
+                "name": "main",
+                "start": 164,
+                "end": 299
+            }
+        ],
+        "src/tests/connection-recovery.c": [
+            {
+                "name": "try_to_reconnect",
+                "start": 37,
+                "end": 50
+            },
+            {
+                "name": "main",
+                "start": 52,
+                "end": 89
+            }
+        ],
+        "src/tests/clibrary2.c": [
+            {
+                "name": "main",
+                "start": 36,
+                "end": 124
+            }
+        ],
+        "src/tests/clibrary.c": [
+            {
+                "name": "main",
+                "start": 36,
+                "end": 116
+            }
+        ],
+        "src/tests/spd_cancel_long_message.c": [
+            {
+                "name": "notification_cb",
+                "start": 42,
+                "end": 47
+            },
+            {
+                "name": "main",
+                "start": 49,
+                "end": 332
+            }
+        ],
+        "src/tests/long_message.c": [
+            {
+                "name": "main",
+                "start": 35,
+                "end": 409
+            }
+        ],
+        "src/tests/spd_set_notifications_all.c": [
+            {
+                "name": "notification_cb",
+                "start": 42,
+                "end": 46
+            },
+            {
+                "name": "index_mark_cb",
+                "start": 48,
+                "end": 53
+            },
+            {
+                "name": "main",
+                "start": 55,
+                "end": 203
+            }
+        ],
+        "src/common/i18n.c": [
+            {
+                "name": "i18n_init",
+                "start": 32,
+                "end": 48
+            }
+        ],
+        "src/common/spd_getline.c": [
+            {
+                "name": "spd_getline",
+                "start": 47,
+                "end": 124
+            }
+        ],
+        "src/common/fdsetconv.c": [
+            {
+                "name": "EVoice2str",
+                "start": 32,
+                "end": 66
+            },
+            {
+                "name": "str2EVoice",
+                "start": 68,
+                "end": 92
+            },
+            {
+                "name": "EPunctMode2str",
+                "start": 94,
+                "end": 113
+            },
+            {
+                "name": "str2EPunctMode",
+                "start": 115,
+                "end": 129
+            },
+            {
+                "name": "ESpellMode2str",
+                "start": 131,
+                "end": 147
+            },
+            {
+                "name": "str2ESpellMode",
+                "start": 149,
+                "end": 161
+            },
+            {
+                "name": "ECapLetRecogn2str",
+                "start": 163,
+                "end": 182
+            },
+            {
+                "name": "str2ECapLetRecogn",
+                "start": 184,
+                "end": 198
+            },
+            {
+                "name": "str2intpriority",
+                "start": 200,
+                "end": 218
+            }
+        ],
+        "src/audio/pulse.c": [
+            {
+                "name": "MSG",
+                "start": 89,
+                "end": 91
+            },
+            {
+                "name": "_pulse_open",
+                "start": 94,
+                "end": 134
+            },
+            {
+                "name": "pulse_connection_close",
+                "start": 139,
+                "end": 145
+            },
+            {
+                "name": "pulse_open",
+                "start": 147,
+                "end": 184
+            },
+            {
+                "name": "pulse_play",
+                "start": 186,
+                "end": 255
+            },
+            {
+                "name": "pulse_stop",
+                "start": 258,
+                "end": 264
+            },
+            {
+                "name": "pulse_close",
+                "start": 266,
+                "end": 274
+            },
+            {
+                "name": "pulse_set_volume",
+                "start": 276,
+                "end": 279
+            },
+            {
+                "name": "pulse_set_loglevel",
+                "start": 281,
+                "end": 286
+            },
+            {
+                "name": "pulse_get_playcmd",
+                "start": 288,
+                "end": 291
+            },
+            {
+                "name": "pulse_plugin_get",
+                "start": 305,
+                "end": 308
+            },
+            {
+                "name": "spd_pulse_LTX_spd_audio_plugin_get",
+                "start": 310,
+                "end": 311
+            }
+        ],
+        "src/audio/libao.c": [
+            {
+                "name": "libao_open_handle",
+                "start": 90,
+                "end": 102
+            },
+            {
+                "name": "libao_close_handle",
+                "start": 104,
+                "end": 110
+            },
+            {
+                "name": "libao_open",
+                "start": 112,
+                "end": 121
+            },
+            {
+                "name": "libao_play",
+                "start": 123,
+                "end": 189
+            },
+            {
+                "name": "libao_stop",
+                "start": 192,
+                "end": 197
+            },
+            {
+                "name": "libao_close",
+                "start": 199,
+                "end": 207
+            },
+            {
+                "name": "libao_set_volume",
+                "start": 209,
+                "end": 212
+            },
+            {
+                "name": "libao_set_loglevel",
+                "start": 214,
+                "end": 219
+            },
+            {
+                "name": "libao_get_playcmd",
+                "start": 221,
+                "end": 224
+            },
+            {
+                "name": "libao_plugin_get",
+                "start": 238,
+                "end": 241
+            },
+            {
+                "name": "spd_libao_LTX_spd_audio_plugin_get",
+                "start": 243,
+                "end": 244
+            }
+        ],
+        "src/audio/alsa.c": [
+            {
+                "name": "wait_for_poll",
+                "start": 64,
+                "end": 65
+            },
+            {
+                "name": "xrun",
+                "start": 118,
+                "end": 153
+            },
+            {
+                "name": "suspend",
+                "start": 156,
+                "end": 177
+            },
+            {
+                "name": "_alsa_open",
+                "start": 181,
+                "end": 209
+            },
+            {
+                "name": "_alsa_close",
+                "start": 215,
+                "end": 240
+            },
+            {
+                "name": "alsa_open",
+                "start": 250,
+                "end": 282
+            },
+            {
+                "name": "alsa_close",
+                "start": 285,
+                "end": 302
+            },
+            {
+                "name": "wait_for_poll",
+                "start": 309,
+                "end": 373
+            },
+            {
+                "name": "alsa_play",
+                "start": 393,
+                "end": 806
+            },
+            {
+                "name": "alsa_stop",
+                "start": 813,
+                "end": 838
+            },
+            {
+                "name": "alsa_set_volume",
+                "start": 846,
+                "end": 849
+            },
+            {
+                "name": "alsa_set_loglevel",
+                "start": 851,
+                "end": 856
+            },
+            {
+                "name": "alsa_get_playcmd",
+                "start": 858,
+                "end": 861
+            },
+            {
+                "name": "alsa_plugin_get",
+                "start": 875,
+                "end": 878
+            },
+            {
+                "name": "spd_alsa_LTX_spd_audio_plugin_get",
+                "start": 880,
+                "end": 881
+            }
+        ],
+        "src/audio/oss.c": [
+            {
+                "name": "_oss_open",
+                "start": 98,
+                "end": 114
+            },
+            {
+                "name": "_oss_close",
+                "start": 116,
+                "end": 129
+            },
+            {
+                "name": "oss_open",
+                "start": 137,
+                "end": 169
+            },
+            {
+                "name": "_oss_sync",
+                "start": 172,
+                "end": 182
+            },
+            {
+                "name": "oss_play",
+                "start": 184,
+                "end": 435
+            },
+            {
+                "name": "oss_stop",
+                "start": 438,
+                "end": 463
+            },
+            {
+                "name": "oss_close",
+                "start": 466,
+                "end": 478
+            },
+            {
+                "name": "oss_set_volume",
+                "start": 486,
+                "end": 489
+            },
+            {
+                "name": "oss_set_loglevel",
+                "start": 491,
+                "end": 496
+            },
+            {
+                "name": "oss_get_playcmd",
+                "start": 498,
+                "end": 501
+            },
+            {
+                "name": "oss_plugin_get",
+                "start": 515,
+                "end": 518
+            },
+            {
+                "name": "spd_oss_LTX_spd_audio_plugin_get",
+                "start": 520,
+                "end": 521
+            }
+        ],
+        "src/audio/nas.c": [
+            {
+                "name": "_nas_handle_events",
+                "start": 52,
+                "end": 60
+            },
+            {
+                "name": "_nas_handle_server_error",
+                "start": 65,
+                "end": 86
+            },
+            {
+                "name": "nas_open",
+                "start": 88,
+                "end": 125
+            },
+            {
+                "name": "nas_play",
+                "start": 127,
+                "end": 184
+            },
+            {
+                "name": "nas_stop",
+                "start": 186,
+                "end": 205
+            },
+            {
+                "name": "nas_close",
+                "start": 207,
+                "end": 226
+            },
+            {
+                "name": "nas_set_volume",
+                "start": 228,
+                "end": 231
+            },
+            {
+                "name": "nas_set_loglevel",
+                "start": 233,
+                "end": 238
+            },
+            {
+                "name": "nas_get_playcmd",
+                "start": 240,
+                "end": 243
+            },
+            {
+                "name": "nas_plugin_get",
+                "start": 257,
+                "end": 260
+            },
+            {
+                "name": "spd_nas_LTX_spd_audio_plugin_get",
+                "start": 262,
+                "end": 263
+            }
+        ],
+        "src/modules/module_utils.h": [
+            {
+                "name": "module_get_message_part",
+                "start": 161,
+                "end": 163
+            },
+            {
+                "name": "module_child_dp_write",
+                "start": 172,
+                "end": 173
+            },
+            {
+                "name": "module_parent_dp_write",
+                "start": 174,
+                "end": 175
+            },
+            {
+                "name": "module_parent_wfork",
+                "start": 203,
+                "end": 205
+            },
+            {
+                "name": "module_recode_to_iso",
+                "start": 211,
+                "end": 212
+            },
+            {
+                "name": "module_add_config_option",
+                "start": 214,
+                "end": 217
+            },
+            {
+                "name": "add_config_option",
+                "start": 221,
+                "end": 224
+            }
+        ],
+        "src/modules/ivona_client.c": [
+            {
+                "name": "ivona_init_sock",
+                "start": 49,
+                "end": 60
+            },
+            {
+                "name": "ivona_send_string",
+                "start": 65,
+                "end": 79
+            },
+            {
+                "name": "ivona_get_wave_fd",
+                "start": 81,
+                "end": 117
+            },
+            {
+                "name": "ivona_get_wave",
+                "start": 122,
+                "end": 136
+            },
+            {
+                "name": "play_icon",
+                "start": 143,
+                "end": 148
+            },
+            {
+                "name": "ivona_init_cache",
+                "start": 163,
+                "end": 167
+            },
+            {
+                "name": "ica_tohead",
+                "start": 169,
+                "end": 177
+            },
+            {
+                "name": "find_min_count",
+                "start": 179,
+                "end": 197
+            },
+            {
+                "name": "ivona_store_wave_in_cache",
+                "start": 199,
+                "end": 219
+            },
+            {
+                "name": "ivona_get_wave_from_cache",
+                "start": 221,
+                "end": 237
+            }
+        ],
+        "src/modules/ivona.c": [
+            {
+                "name": "ivona_get_msgpart",
+                "start": 67,
+                "end": 70
+            },
+            {
+                "name": "module_load",
+                "start": 95,
+                "end": 117
+            },
+            {
+                "name": "module_init",
+                "start": 125,
+                "end": 167
+            },
+            {
+                "name": "module_list_voices",
+                "start": 172,
+                "end": 178
+            },
+            {
+                "name": "module_speak",
+                "start": 180,
+                "end": 213
+            },
+            {
+                "name": "module_stop",
+                "start": 215,
+                "end": 229
+            },
+            {
+                "name": "module_pause",
+                "start": 231,
+                "end": 244
+            },
+            {
+                "name": "module_close",
+                "start": 246,
+                "end": 263
+            },
+            {
+                "name": "get_unichar",
+                "start": 266,
+                "end": 300
+            },
+            {
+                "name": "ivona_get_msgpart",
+                "start": 302,
+                "end": 408
+            },
+            {
+                "name": "_ivona_speak",
+                "start": 410,
+                "end": 564
+            },
+            {
+                "name": "ivona_set_volume",
+                "start": 567,
+                "end": 572
+            },
+            {
+                "name": "ivona_set_cap_let_recogn",
+                "start": 574,
+                "end": 592
+            },
+            {
+                "name": "ivona_set_punctuation_mode",
+                "start": 594,
+                "end": 609
+            }
+        ],
+        "src/modules/generic.c": [
+            {
+                "name": "module_load",
+                "start": 99,
+                "end": 134
+            },
+            {
+                "name": "module_init",
+                "start": 136,
+                "end": 170
+            },
+            {
+                "name": "module_list_voices",
+                "start": 172,
+                "end": 175
+            },
+            {
+                "name": "module_speak",
+                "start": 177,
+                "end": 236
+            },
+            {
+                "name": "module_stop",
+                "start": 238,
+                "end": 247
+            },
+            {
+                "name": "module_pause",
+                "start": 249,
+                "end": 261
+            },
+            {
+                "name": "module_is_speaking",
+                "start": 263,
+                "end": 266
+            },
+            {
+                "name": "module_close",
+                "start": 268,
+                "end": 282
+            },
+            {
+                "name": "string_replace",
+                "start": 288,
+                "end": 314
+            },
+            {
+                "name": "_generic_speak",
+                "start": 316,
+                "end": 478
+            },
+            {
+                "name": "_generic_child",
+                "start": 480,
+                "end": 549
+            },
+            {
+                "name": "generic_child_close",
+                "start": 551,
+                "end": 557
+            },
+            {
+                "name": "generic_set_pitch",
+                "start": 559,
+                "end": 569
+            },
+            {
+                "name": "generic_set_rate",
+                "start": 571,
+                "end": 581
+            },
+            {
+                "name": "generic_set_volume",
+                "start": 583,
+                "end": 596
+            },
+            {
+                "name": "generic_set_language",
+                "start": 598,
+                "end": 623
+            },
+            {
+                "name": "generic_set_voice",
+                "start": 625,
+                "end": 633
+            },
+            {
+                "name": "generic_set_punct",
+                "start": 635,
+                "end": 649
+            }
+        ],
+        "src/modules/cicero.c": [
+            {
+                "name": "millisecondsBetween",
+                "start": 80,
+                "end": 86
+            },
+            {
+                "name": "millisecondsSince",
+                "start": 88,
+                "end": 93
+            },
+            {
+                "name": "hasTimedOut",
+                "start": 95,
+                "end": 104
+            },
+            {
+                "name": "mywrite",
+                "start": 106,
+                "end": 128
+            },
+            {
+                "name": "module_load",
+                "start": 132,
+                "end": 140
+            },
+            {
+                "name": "module_init",
+                "start": 142,
+                "end": 228
+            },
+            {
+                "name": "module_list_voices",
+                "start": 230,
+                "end": 233
+            },
+            {
+                "name": "module_speak",
+                "start": 235,
+                "end": 265
+            },
+            {
+                "name": "module_stop",
+                "start": 267,
+                "end": 275
+            },
+            {
+                "name": "module_pause",
+                "start": 277,
+                "end": 288
+            },
+            {
+                "name": "module_close",
+                "start": 290,
+                "end": 302
+            },
+            {
+                "name": "_cicero_speak",
+                "start": 306,
+                "end": 414
+            },
+            {
+                "name": "cicero_set_rate",
+                "start": 416,
+                "end": 454
+            }
+        ],
+        "src/modules/dummy.c": [
+            {
+                "name": "module_load",
+                "start": 58,
+                "end": 64
+            },
+            {
+                "name": "module_init",
+                "start": 66,
+                "end": 91
+            },
+            {
+                "name": "module_list_voices",
+                "start": 93,
+                "end": 96
+            },
+            {
+                "name": "module_speak",
+                "start": 98,
+                "end": 116
+            },
+            {
+                "name": "module_stop",
+                "start": 118,
+                "end": 129
+            },
+            {
+                "name": "module_pause",
+                "start": 131,
+                "end": 140
+            },
+            {
+                "name": "module_is_speaking",
+                "start": 142,
+                "end": 145
+            },
+            {
+                "name": "module_close",
+                "start": 147,
+                "end": 161
+            },
+            {
+                "name": "_dummy_speak",
+                "start": 165,
+                "end": 225
+            },
+            {
+                "name": "_dummy_child",
+                "start": 227,
+                "end": 279
+            }
+        ],
+        "src/modules/spd_audio.c": [
+            {
+                "name": "my_dlopenextglobal",
+                "start": 62,
+                "end": 75
+            },
+            {
+                "name": "spd_audio_open",
+                "start": 93,
+                "end": 154
+            },
+            {
+                "name": "spd_audio_play",
+                "start": 174,
+                "end": 201
+            },
+            {
+                "name": "spd_audio_stop",
+                "start": 228,
+                "end": 238
+            },
+            {
+                "name": "spd_audio_close",
+                "start": 254,
+                "end": 268
+            },
+            {
+                "name": "spd_audio_set_volume",
+                "start": 292,
+                "end": 304
+            },
+            {
+                "name": "spd_audio_set_loglevel",
+                "start": 306,
+                "end": 313
+            },
+            {
+                "name": "spd_audio_get_playcmd",
+                "start": 315,
+                "end": 321
+            }
+        ],
+        "src/modules/ibmtts.c": [
+            {
+                "name": "ibmtts_set_language_and_voice",
+                "start": 249,
+                "end": 250
+            },
+            {
+                "name": "eciCallback",
+                "start": 266,
+                "end": 268
+            },
+            {
+                "name": "ibmtts_add_audio_to_playback_queue",
+                "start": 271,
+                "end": 273
+            },
+            {
+                "name": "ibmtts_add_flag_to_playback_queue",
+                "start": 275,
+                "end": 276
+            },
+            {
+                "name": "ibmtts_delete_playback_queue_entry",
+                "start": 277,
+                "end": 278
+            },
+            {
+                "name": "ibmtts_send_to_audio",
+                "start": 279,
+                "end": 280
+            },
+            {
+                "name": "DOTCONF_CB",
+                "start": 306,
+                "end": 308
+            },
+            {
+                "name": "module_load",
+                "start": 374,
+                "end": 402
+            },
+            {
+                "name": "module_init",
+                "start": 404,
+                "end": 544
+            },
+            {
+                "name": "module_list_voices",
+                "start": 546,
+                "end": 550
+            },
+            {
+                "name": "module_speak",
+                "start": 552,
+                "end": 622
+            },
+            {
+                "name": "module_stop",
+                "start": 624,
+                "end": 642
+            },
+            {
+                "name": "module_pause",
+                "start": 644,
+                "end": 663
+            },
+            {
+                "name": "module_close",
+                "start": 665,
+                "end": 713
+            },
+            {
+                "name": "is_thread_busy",
+                "start": 718,
+                "end": 726
+            },
+            {
+                "name": "ibmtts_extract_mark_name",
+                "start": 732,
+                "end": 741
+            },
+            {
+                "name": "ibmtts_next_part",
+                "start": 751,
+                "end": 771
+            },
+            {
+                "name": "_ibmtts_stop_or_pause",
+                "start": 774,
+                "end": 846
+            },
+            {
+                "name": "process_text_mark",
+                "start": 848,
+                "end": 907
+            },
+            {
+                "name": "_ibmtts_synth",
+                "start": 910,
+                "end": 1032
+            },
+            {
+                "name": "ibmtts_set_rate",
+                "start": 1034,
+                "end": 1057
+            },
+            {
+                "name": "ibmtts_set_volume",
+                "start": 1059,
+                "end": 1081
+            },
+            {
+                "name": "ibmtts_set_pitch",
+                "start": 1083,
+                "end": 1110
+            },
+            {
+                "name": "ibmtts_set_punctuation_mode",
+                "start": 1112,
+                "end": 1133
+            },
+            {
+                "name": "ibmtts_voice_enum_to_str",
+                "start": 1135,
+                "end": 1169
+            },
+            {
+                "name": "ibmtts_set_language_and_voice",
+                "start": 1172,
+                "end": 1310
+            },
+            {
+                "name": "ibmtts_set_voice",
+                "start": 1312,
+                "end": 1318
+            },
+            {
+                "name": "ibmtts_set_language",
+                "start": 1320,
+                "end": 1323
+            },
+            {
+                "name": "ibmtts_set_synthesis_voice",
+                "start": 1326,
+                "end": 1345
+            },
+            {
+                "name": "ibmtts_log_eci_error",
+                "start": 1347,
+                "end": 1353
+            },
+            {
+                "name": "eciCallback",
+                "start": 1358,
+                "end": 1396
+            },
+            {
+                "name": "ibmtts_add_audio_to_playback_queue",
+                "start": 1399,
+                "end": 1417
+            },
+            {
+                "name": "ibmtts_add_mark_to_playback_queue",
+                "start": 1420,
+                "end": 1432
+            },
+            {
+                "name": "ibmtts_add_flag_to_playback_queue",
+                "start": 1435,
+                "end": 1447
+            },
+            {
+                "name": "ibmtts_add_sound_icon_to_playback_queue",
+                "start": 1450,
+                "end": 1462
+            },
+            {
+                "name": "ibmtts_delete_playback_queue_entry",
+                "start": 1465,
+                "end": 1479
+            },
+            {
+                "name": "ibmtts_clear_playback_queue",
+                "start": 1482,
+                "end": 1494
+            },
+            {
+                "name": "ibmtts_send_to_audio",
+                "start": 1497,
+                "end": 1526
+            },
+            {
+                "name": "_ibmtts_play",
+                "start": 1529,
+                "end": 1615
+            },
+            {
+                "name": "ibmtts_replace",
+                "start": 1619,
+                "end": 1634
+            },
+            {
+                "name": "ibmtts_subst_keys_cb",
+                "start": 1636,
+                "end": 1641
+            },
+            {
+                "name": "ibmtts_subst_keys",
+                "start": 1648,
+                "end": 1665
+            },
+            {
+                "name": "ibmtts_search_for_sound_icon",
+                "start": 1676,
+                "end": 1705
+            },
+            {
+                "name": "alloc_voice_list",
+                "start": 1707,
+                "end": 1747
+            },
+            {
+                "name": "free_voice_list",
+                "start": 1749,
+                "end": 1767
+            }
+        ],
+        "src/modules/module_utils_addvoice.c": [
+            {
+                "name": "DOTCONF_CB",
+                "start": 49,
+                "end": 120
+            },
+            {
+                "name": "module_register_settings_voices",
+                "start": 122,
+                "end": 129
+            },
+            {
+                "name": "module_getvoice",
+                "start": 131,
+                "end": 184
+            }
+        ],
+        "src/modules/module_main.c": [
+            {
+                "name": "main",
+                "start": 72,
+                "end": 198
+            }
+        ],
+        "src/modules/module_utils.c": [
+            {
+                "name": "do_message",
+                "start": 42,
+                "end": 112
+            },
+            {
+                "name": "do_speak",
+                "start": 114,
+                "end": 118
+            },
+            {
+                "name": "do_sound_icon",
+                "start": 120,
+                "end": 124
+            },
+            {
+                "name": "do_char",
+                "start": 126,
+                "end": 130
+            },
+            {
+                "name": "do_key",
+                "start": 132,
+                "end": 136
+            },
+            {
+                "name": "do_stop",
+                "start": 138,
+                "end": 143
+            },
+            {
+                "name": "do_pause",
+                "start": 145,
+                "end": 157
+            },
+            {
+                "name": "do_set",
+                "start": 181,
+                "end": 243
+            },
+            {
+                "name": "do_audio",
+                "start": 252,
+                "end": 304
+            },
+            {
+                "name": "do_loglevel",
+                "start": 315,
+                "end": 356
+            },
+            {
+                "name": "do_debug",
+                "start": 358,
+                "end": 410
+            },
+            {
+                "name": "do_list_voices",
+                "start": 412,
+                "end": 453
+            },
+            {
+                "name": "do_quit",
+                "start": 461,
+                "end": 472
+            },
+            {
+                "name": "module_get_message_part",
+                "start": 474,
+                "end": 535
+            },
+            {
+                "name": "module_strip_punctuation_some",
+                "start": 537,
+                "end": 555
+            },
+            {
+                "name": "module_strip_ssml",
+                "start": 557,
+                "end": 598
+            },
+            {
+                "name": "module_strip_punctuation_default",
+                "start": 600,
+                "end": 605
+            },
+            {
+                "name": "module_parent_wfork",
+                "start": 607,
+                "end": 665
+            },
+            {
+                "name": "module_parent_wait_continue",
+                "start": 667,
+                "end": 685
+            },
+            {
+                "name": "module_parent_dp_init",
+                "start": 687,
+                "end": 692
+            },
+            {
+                "name": "module_parent_dp_close",
+                "start": 694,
+                "end": 699
+            },
+            {
+                "name": "module_child_dp_init",
+                "start": 701,
+                "end": 706
+            },
+            {
+                "name": "module_child_dp_close",
+                "start": 708,
+                "end": 713
+            },
+            {
+                "name": "module_child_dp_write",
+                "start": 715,
+                "end": 722
+            },
+            {
+                "name": "module_parent_dp_write",
+                "start": 724,
+                "end": 733
+            },
+            {
+                "name": "module_child_dp_read",
+                "start": 735,
+                "end": 745
+            },
+            {
+                "name": "module_parent_dp_read",
+                "start": 747,
+                "end": 757
+            },
+            {
+                "name": "module_sigblockall",
+                "start": 760,
+                "end": 773
+            },
+            {
+                "name": "module_sigunblockusr",
+                "start": 775,
+                "end": 786
+            },
+            {
+                "name": "module_sigblockusr",
+                "start": 788,
+                "end": 800
+            },
+            {
+                "name": "set_speaking_thread_parameters",
+                "start": 802,
+                "end": 819
+            },
+            {
+                "name": "module_terminate_thread",
+                "start": 821,
+                "end": 838
+            },
+            {
+                "name": "module_recode_to_iso",
+                "start": 840,
+                "end": 857
+            },
+            {
+                "name": "module_send_asynchronous",
+                "start": 859,
+                "end": 868
+            },
+            {
+                "name": "module_report_index_mark",
+                "start": 870,
+                "end": 883
+            },
+            {
+                "name": "module_report_event_begin",
+                "start": 885,
+                "end": 889
+            },
+            {
+                "name": "module_report_event_end",
+                "start": 891,
+                "end": 895
+            },
+            {
+                "name": "module_report_event_stop",
+                "start": 897,
+                "end": 901
+            },
+            {
+                "name": "module_report_event_pause",
+                "start": 903,
+                "end": 907
+            },
+            {
+                "name": "module_add_config_option",
+                "start": 912,
+                "end": 932
+            },
+            {
+                "name": "module_get_ht_option",
+                "start": 934,
+                "end": 944
+            },
+            {
+                "name": "module_audio_init",
+                "start": 946,
+                "end": 978
+            },
+            {
+                "name": "module_tts_output",
+                "start": 980,
+                "end": 989
+            },
+            {
+                "name": "module_play_file",
+                "start": 991,
+                "end": 1059
+            }
+        ],
+        "src/modules/festival_client.h": [
+            {
+                "name": "festivalGetDataMulti",
+                "start": 131,
+                "end": 132
+            }
+        ],
+        "src/modules/festival.c": [
+            {
+                "name": "FestivalSetCapLetRecogn",
+                "start": 129,
+                "end": 130
+            },
+            {
+                "name": "module_load",
+                "start": 204,
+                "end": 231
+            },
+            {
+                "name": "module_init",
+                "start": 238,
+                "end": 313
+            },
+            {
+                "name": "module_list_voices",
+                "start": 317,
+                "end": 320
+            },
+            {
+                "name": "module_speak",
+                "start": 322,
+                "end": 406
+            },
+            {
+                "name": "module_stop",
+                "start": 408,
+                "end": 442
+            },
+            {
+                "name": "module_pause",
+                "start": 444,
+                "end": 455
+            },
+            {
+                "name": "module_close",
+                "start": 457,
+                "end": 483
+            },
+            {
+                "name": "festivalGetVoices",
+                "start": 508,
+                "end": 564
+            },
+            {
+                "name": "festival_send_to_audio",
+                "start": 566,
+                "end": 593
+            },
+            {
+                "name": "_festival_speak",
+                "start": 595,
+                "end": 820
+            },
+            {
+                "name": "is_text",
+                "start": 822,
+                "end": 828
+            },
+            {
+                "name": "festival_set_language",
+                "start": 830,
+                "end": 835
+            },
+            {
+                "name": "festival_set_voice",
+                "start": 837,
+                "end": 844
+            },
+            {
+                "name": "festival_set_synthesis_voice",
+                "start": 846,
+                "end": 850
+            },
+            {
+                "name": "festival_set_rate",
+                "start": 852,
+                "end": 855
+            },
+            {
+                "name": "festival_set_pitch",
+                "start": 857,
+                "end": 860
+            },
+            {
+                "name": "festival_set_volume",
+                "start": 862,
+                "end": 865
+            },
+            {
+                "name": "festival_set_punctuation_mode",
+                "start": 867,
+                "end": 873
+            },
+            {
+                "name": "festival_set_cap_let_recogn",
+                "start": 875,
+                "end": 885
+            },
+            {
+                "name": "cache_destroy_entry",
+                "start": 889,
+                "end": 894
+            },
+            {
+                "name": "cache_destroy_table_entry",
+                "start": 896,
+                "end": 899
+            },
+            {
+                "name": "cache_free_counter_entry",
+                "start": 901,
+                "end": 905
+            },
+            {
+                "name": "cache_init",
+                "start": 907,
+                "end": 920
+            },
+            {
+                "name": "cache_destroy",
+                "start": 922,
+                "end": 929
+            },
+            {
+                "name": "cache_reset",
+                "start": 931,
+                "end": 936
+            },
+            {
+                "name": "cache_counter_comp",
+                "start": 941,
+                "end": 960
+            },
+            {
+                "name": "cache_debug_foreach_list_score",
+                "start": 963,
+                "end": 972
+            },
+            {
+                "name": "cache_clean",
+                "start": 976,
+                "end": 1016
+            },
+            {
+                "name": "cache_gen_key",
+                "start": 1019,
+                "end": 1054
+            },
+            {
+                "name": "cache_insert",
+                "start": 1057,
+                "end": 1115
+            },
+            {
+                "name": "cache_lookup",
+                "start": 1118,
+                "end": 1150
+            },
+            {
+                "name": "init_festival_standalone",
+                "start": 1152,
+                "end": 1200
+            },
+            {
+                "name": "init_festival_socket",
+                "start": 1202,
+                "end": 1222
+            },
+            {
+                "name": "stop_festival_local",
+                "start": 1224,
+                "end": 1229
+            }
+        ],
+        "src/modules/festival_client.c": [
+            {
+                "name": "delete_FT_Wave",
+                "start": 84,
+                "end": 92
+            },
+            {
+                "name": "save_FT_Wave_snd",
+                "start": 94,
+                "end": 152
+            },
+            {
+                "name": "delete_FT_Info",
+                "start": 154,
+                "end": 158
+            },
+            {
+                "name": "nist_get_param_int",
+                "start": 162,
+                "end": 176
+            },
+            {
+                "name": "nist_require_swap",
+                "start": 178,
+                "end": 192
+            },
+            {
+                "name": "festival_socket_open",
+                "start": 197,
+                "end": 232
+            },
+            {
+                "name": "socket_receive_file_to_buff",
+                "start": 238,
+                "end": 290
+            },
+            {
+                "name": "client_accept_s_expr",
+                "start": 292,
+                "end": 304
+            },
+            {
+                "name": "client_accept_waveform",
+                "start": 306,
+                "end": 350
+            },
+            {
+                "name": "festival_get_ack",
+                "start": 352,
+                "end": 376
+            },
+            {
+                "name": "festival_read_response",
+                "start": 378,
+                "end": 410
+            },
+            {
+                "name": "festival_accept_any_response",
+                "start": 412,
+                "end": 438
+            },
+            {
+                "name": "festival_check_info",
+                "start": 441,
+                "end": 449
+            },
+            {
+                "name": "festivalOpen",
+                "start": 458,
+                "end": 499
+            },
+            {
+                "name": "festival_speak_command",
+                "start": 501,
+                "end": 550
+            },
+            {
+                "name": "festivalStringToWaveGetData",
+                "start": 577,
+                "end": 599
+            },
+            {
+                "name": "festivalGetDataMulti",
+                "start": 601,
+                "end": 663
+            },
+            {
+                "name": "festivalClose",
+                "start": 666,
+                "end": 682
+            },
+            {
+                "name": "lisp_list_get_vect",
+                "start": 686,
+                "end": 711
+            },
+            {
+                "name": "vect_read_item",
+                "start": 713,
+                "end": 728
+            },
+            {
+                "name": "festivalDefaultInfo",
+                "start": 730,
+                "end": 742
+            }
+        ],
+        "src/modules/pico.c": [
+            {
+                "name": "pico_set_rate",
+                "start": 118,
+                "end": 132
+            },
+            {
+                "name": "pico_set_volume",
+                "start": 134,
+                "end": 143
+            },
+            {
+                "name": "pico_set_pitch",
+                "start": 145,
+                "end": 159
+            },
+            {
+                "name": "pico_process_tts",
+                "start": 161,
+                "end": 238
+            },
+            {
+                "name": "pico_play_func",
+                "start": 241,
+                "end": 282
+            },
+            {
+                "name": "module_load",
+                "start": 285,
+                "end": 293
+            },
+            {
+                "name": "pico_init_voice",
+                "start": 295,
+                "end": 388
+            },
+            {
+                "name": "module_init",
+                "start": 390,
+                "end": 449
+            },
+            {
+                "name": "module_list_voices",
+                "start": 451,
+                "end": 454
+            },
+            {
+                "name": "pico_set_synthesis_voice",
+                "start": 456,
+                "end": 480
+            },
+            {
+                "name": "pico_set_language",
+                "start": 482,
+                "end": 494
+            },
+            {
+                "name": "module_speak",
+                "start": 496,
+                "end": 557
+            },
+            {
+                "name": "module_stop",
+                "start": 559,
+                "end": 581
+            },
+            {
+                "name": "module_pause",
+                "start": 583,
+                "end": 605
+            },
+            {
+                "name": "module_close",
+                "start": 607,
+                "end": 624
+            }
+        ],
+        "src/modules/flite.c": [
+            {
+                "name": "module_load",
+                "start": 76,
+                "end": 86
+            },
+            {
+                "name": "module_init",
+                "start": 94,
+                "end": 148
+            },
+            {
+                "name": "module_list_voices",
+                "start": 152,
+                "end": 155
+            },
+            {
+                "name": "module_speak",
+                "start": 157,
+                "end": 186
+            },
+            {
+                "name": "module_stop",
+                "start": 188,
+                "end": 203
+            },
+            {
+                "name": "module_pause",
+                "start": 205,
+                "end": 217
+            },
+            {
+                "name": "module_close",
+                "start": 219,
+                "end": 237
+            },
+            {
+                "name": "flite_strip_silence",
+                "start": 241,
+                "end": 258
+            },
+            {
+                "name": "_flite_speak",
+                "start": 260,
+                "end": 390
+            },
+            {
+                "name": "flite_set_rate",
+                "start": 392,
+                "end": 402
+            },
+            {
+                "name": "flite_set_volume",
+                "start": 404,
+                "end": 408
+            },
+            {
+                "name": "flite_set_pitch",
+                "start": 410,
+                "end": 417
+            }
+        ],
+        "src/modules/espeak.c": [
+            {
+                "name": "espeak_add_audio_to_playback_queue",
+                "start": 170,
+                "end": 171
+            },
+            {
+                "name": "espeak_delete_playback_queue_entry",
+                "start": 174,
+                "end": 175
+            },
+            {
+                "name": "espeak_send_to_audio",
+                "start": 176,
+                "end": 177
+            },
+            {
+                "name": "module_load",
+                "start": 205,
+                "end": 229
+            },
+            {
+                "name": "module_init",
+                "start": 231,
+                "end": 321
+            },
+            {
+                "name": "module_list_voices",
+                "start": 323,
+                "end": 326
+            },
+            {
+                "name": "module_speak",
+                "start": 328,
+                "end": 436
+            },
+            {
+                "name": "module_stop",
+                "start": 438,
+                "end": 456
+            },
+            {
+                "name": "module_pause",
+                "start": 458,
+                "end": 468
+            },
+            {
+                "name": "module_close",
+                "start": 470,
+                "end": 512
+            },
+            {
+                "name": "is_thread_busy",
+                "start": 517,
+                "end": 525
+            },
+            {
+                "name": "espeak_state_reset",
+                "start": 527,
+                "end": 532
+            },
+            {
+                "name": "_espeak_stop_or_pause",
+                "start": 535,
+                "end": 604
+            },
+            {
+                "name": "espeak_set_rate",
+                "start": 606,
+                "end": 623
+            },
+            {
+                "name": "espeak_set_volume",
+                "start": 625,
+                "end": 636
+            },
+            {
+                "name": "espeak_set_pitch",
+                "start": 638,
+                "end": 659
+            },
+            {
+                "name": "espeak_set_punctuation_mode",
+                "start": 661,
+                "end": 683
+            },
+            {
+                "name": "espeak_set_cap_let_recogn",
+                "start": 685,
+                "end": 707
+            },
+            {
+                "name": "espeak_set_language_and_voice",
+                "start": 710,
+                "end": 756
+            },
+            {
+                "name": "espeak_set_voice",
+                "start": 758,
+                "end": 762
+            },
+            {
+                "name": "espeak_set_language",
+                "start": 764,
+                "end": 767
+            },
+            {
+                "name": "espeak_set_synthesis_voice",
+                "start": 769,
+                "end": 778
+            },
+            {
+                "name": "espeak_send_audio_upto",
+                "start": 782,
+                "end": 794
+            },
+            {
+                "name": "synth_callback",
+                "start": 796,
+                "end": 866
+            },
+            {
+                "name": "uri_callback",
+                "start": 868,
+                "end": 880
+            },
+            {
+                "name": "playback_queue_pop",
+                "start": 882,
+                "end": 901
+            },
+            {
+                "name": "playback_queue_push",
+                "start": 903,
+                "end": 913
+            },
+            {
+                "name": "espeak_add_audio_to_playback_queue",
+                "start": 917,
+                "end": 942
+            },
+            {
+                "name": "espeak_add_mark_to_playback_queue",
+                "start": 945,
+                "end": 953
+            },
+            {
+                "name": "espeak_add_flag_to_playback_queue",
+                "start": 956,
+                "end": 963
+            },
+            {
+                "name": "espeak_add_sound_icon_to_playback_queue",
+                "start": 966,
+                "end": 974
+            },
+            {
+                "name": "espeak_delete_playback_queue_entry",
+                "start": 977,
+                "end": 994
+            },
+            {
+                "name": "espeak_clear_playback_queue",
+                "start": 997,
+                "end": 1011
+            },
+            {
+                "name": "espeak_send_to_audio",
+                "start": 1014,
+                "end": 1032
+            },
+            {
+                "name": "_espeak_play",
+                "start": 1035,
+                "end": 1141
+            },
+            {
+                "name": "espeak_list_synthesis_voices",
+                "start": 1144,
+                "end": 1196
+            },
+            {
+                "name": "espeak_free_voice_list",
+                "start": 1198,
+                "end": 1211
+            },
+            {
+                "name": "espeak_set_punctuation_list_from_utf8",
+                "start": 1213,
+                "end": 1226
+            }
+        ],
+        "src/server/module.h": [
+            {
+                "name": "load_output_module",
+                "start": 45,
+                "end": 46
+            },
+            {
+                "name": "module_add_load_request",
+                "start": 53,
+                "end": 54
+            }
+        ],
+        "src/server/compare.h": [
+            {
+                "name": "compare_message_uid",
+                "start": 29,
+                "end": 30
+            }
+        ],
+        "src/server/parse.h": [
+            {
+                "name": "parse_history",
+                "start": 7,
+                "end": 8
+            },
+            {
+                "name": "parse_set",
+                "start": 9,
+                "end": 10
+            },
+            {
+                "name": "parse_stop",
+                "start": 11,
+                "end": 12
+            },
+            {
+                "name": "parse_cancel",
+                "start": 13,
+                "end": 14
+            },
+            {
+                "name": "parse_pause",
+                "start": 15,
+                "end": 16
+            },
+            {
+                "name": "parse_resume",
+                "start": 17,
+                "end": 18
+            },
+            {
+                "name": "parse_snd_icon",
+                "start": 19,
+                "end": 20
+            },
+            {
+                "name": "parse_char",
+                "start": 21,
+                "end": 22
+            },
+            {
+                "name": "parse_key",
+                "start": 23,
+                "end": 24
+            },
+            {
+                "name": "parse_list",
+                "start": 25,
+                "end": 26
+            },
+            {
+                "name": "parse_get",
+                "start": 27,
+                "end": 28
+            },
+            {
+                "name": "parse_help",
+                "start": 29,
+                "end": 30
+            },
+            {
+                "name": "parse_block",
+                "start": 31,
+                "end": 32
+            },
+            {
+                "name": "get_param",
+                "start": 37,
+                "end": 38
+            },
+            {
+                "name": "parse_general_event",
+                "start": 41,
+                "end": 43
+            }
+        ],
+        "src/server/compare.c": [
+            {
+                "name": "compare_message_fd",
+                "start": 37,
+                "end": 49
+            },
+            {
+                "name": "compare_message_uid",
+                "start": 51,
+                "end": 63
+            }
+        ],
+        "src/server/output.h": [
+            {
+                "name": "waitpid_with_timeout",
+                "start": 47,
+                "end": 48
+            }
+        ],
+        "src/server/output.c": [
+            {
+                "name": "safe_write",
+                "start": 39,
+                "end": 47
+            },
+            {
+                "name": "strndup",
+                "start": 53,
+                "end": 70
+            },
+            {
+                "name": "output_set_speaking_monitor",
+                "start": 73,
+                "end": 80
+            },
+            {
+                "name": "get_output_module_by_name",
+                "start": 82,
+                "end": 99
+            },
+            {
+                "name": "get_output_module",
+                "start": 114,
+                "end": 159
+            },
+            {
+                "name": "output_lock",
+                "start": 161,
+                "end": 165
+            },
+            {
+                "name": "output_unlock",
+                "start": 167,
+                "end": 171
+            },
+            {
+                "name": "output_read_reply",
+                "start": 177,
+                "end": 214
+            },
+            {
+                "name": "output_read_reply2",
+                "start": 216,
+                "end": 230
+            },
+            {
+                "name": "output_send_data",
+                "start": 232,
+                "end": 283
+            },
+            {
+                "name": "output_get_voices",
+                "start": 285,
+                "end": 347
+            },
+            {
+                "name": "output_list_voices",
+                "start": 349,
+                "end": 360
+            },
+            {
+                "name": "output_send_settings",
+                "start": 397,
+                "end": 440
+            },
+            {
+                "name": "output_send_audio_settings",
+                "start": 454,
+                "end": 476
+            },
+            {
+                "name": "output_send_loglevel_setting",
+                "start": 478,
+                "end": 495
+            },
+            {
+                "name": "output_send_debug",
+                "start": 499,
+                "end": 526
+            },
+            {
+                "name": "output_speak",
+                "start": 528,
+                "end": 571
+            },
+            {
+                "name": "output_stop",
+                "start": 573,
+                "end": 588
+            },
+            {
+                "name": "output_pause",
+                "start": 590,
+                "end": 605
+            },
+            {
+                "name": "output_module_is_speaking",
+                "start": 607,
+                "end": 696
+            },
+            {
+                "name": "output_is_speaking",
+                "start": 698,
+                "end": 712
+            },
+            {
+                "name": "waitpid_with_timeout",
+                "start": 717,
+                "end": 730
+            },
+            {
+                "name": "output_close",
+                "start": 732,
+                "end": 774
+            },
+            {
+                "name": "output_check_module",
+                "start": 779,
+                "end": 818
+            },
+            {
+                "name": "escape_dot",
+                "start": 821,
+                "end": 886
+            }
+        ],
+        "src/server/set.c": [
+            {
+                "name": "spd_str_compare",
+                "start": 35,
+                "end": 38
+            },
+            {
+                "name": "set_priority_self",
+                "start": 40,
+                "end": 51
+            },
+            {
+                "name": "set_priority_uid",
+                "start": 53,
+                "end": 64
+            },
+            {
+                "name": "set_rate_uid",
+                "start": 92,
+                "end": 105
+            },
+            {
+                "name": "set_pitch_uid",
+                "start": 109,
+                "end": 122
+            },
+            {
+                "name": "set_volume_uid",
+                "start": 126,
+                "end": 139
+            },
+            {
+                "name": "set_voice_uid",
+                "start": 143,
+                "end": 175
+            },
+            {
+                "name": "set_punctuation_mode_uid",
+                "start": 179,
+                "end": 189
+            },
+            {
+                "name": "set_capital_letter_recognition_uid",
+                "start": 196,
+                "end": 206
+            },
+            {
+                "name": "set_spelling_uid",
+                "start": 210,
+                "end": 222
+            },
+            {
+                "name": "set_language_uid",
+                "start": 226,
+                "end": 244
+            },
+            {
+                "name": "set_synthesis_voice_uid",
+                "start": 248,
+                "end": 263
+            },
+            {
+                "name": "update_cl_settings",
+                "start": 275,
+                "end": 300
+            },
+            {
+                "name": "set_client_name_self",
+                "start": 305,
+                "end": 330
+            },
+            {
+                "name": "set_output_module_uid",
+                "start": 334,
+                "end": 358
+            },
+            {
+                "name": "set_pause_context_uid",
+                "start": 362,
+                "end": 372
+            },
+            {
+                "name": "set_ssml_mode_uid",
+                "start": 376,
+                "end": 386
+            },
+            {
+                "name": "set_debug_uid",
+                "start": 390,
+                "end": 425
+            },
+            {
+                "name": "set_notification_self",
+                "start": 433,
+                "end": 470
+            },
+            {
+                "name": "default_fd_set",
+                "start": 472,
+                "end": 519
+            },
+            {
+                "name": "get_client_uid_by_fd",
+                "start": 521,
+                "end": 530
+            },
+            {
+                "name": "get_client_settings_by_fd",
+                "start": 532,
+                "end": 543
+            },
+            {
+                "name": "get_client_settings_by_uid",
+                "start": 545,
+                "end": 554
+            },
+            {
+                "name": "remove_client_settings_by_uid",
+                "start": 556,
+                "end": 568
+            },
+            {
+                "name": "set_param_str",
+                "start": 570,
+                "end": 583
+            }
+        ],
+        "src/server/index_marking.c": [
+            {
+                "name": "insert_index_marks",
+                "start": 32,
+                "end": 130
+            },
+            {
+                "name": "find_index_mark",
+                "start": 133,
+                "end": 153
+            },
+            {
+                "name": "strip_index_marks",
+                "start": 156,
+                "end": 207
+            }
+        ],
+        "src/server/sem_functions.c": [
+            {
+                "name": "speaking_semaphore_post",
+                "start": 32,
+                "end": 40
+            }
+        ],
+        "src/server/configuration.h": [
+            {
+                "name": "add_config_option",
+                "start": 39,
+                "end": 42
+            }
+        ],
+        "src/server/configuration.c": [
+            {
+                "name": "add_config_option",
+                "start": 44,
+                "end": 62
+            },
+            {
+                "name": "free_config_options",
+                "start": 65,
+                "end": 78
+            },
+            {
+                "name": "DOTCONF_CB",
+                "start": 188,
+                "end": 189
+            },
+            {
+                "name": "DOTCONF_CB",
+                "start": 190,
+                "end": 191
+            },
+            {
+                "name": "DOTCONF_CB",
+                "start": 192,
+                "end": 193
+            },
+            {
+                "name": "DOTCONF_CB",
+                "start": 194,
+                "end": 195
+            },
+            {
+                "name": "DOTCONF_CB",
+                "start": 198,
+                "end": 199
+            },
+            {
+                "name": "DOTCONF_CB",
+                "start": 200,
+                "end": 201
+            },
+            {
+                "name": "DOTCONF_CB",
+                "start": 202,
+                "end": 204
+            },
+            {
+                "name": "DOTCONF_CB",
+                "start": 205,
+                "end": 207
+            },
+            {
+                "name": "DOTCONF_CB",
+                "start": 212,
+                "end": 213
+            },
+            {
+                "name": "DOTCONF_CB",
+                "start": 214,
+                "end": 215
+            },
+            {
+                "name": "DOTCONF_CB",
+                "start": 216,
+                "end": 217
+            },
+            {
+                "name": "DOTCONF_CB",
+                "start": 219,
+                "end": 235
+            },
+            {
+                "name": "DOTCONF_CB",
+                "start": 237,
+                "end": 247
+            },
+            {
+                "name": "DOTCONF_CB",
+                "start": 249,
+                "end": 260
+            },
+            {
+                "name": "DOTCONF_CB",
+                "start": 262,
+                "end": 294
+            },
+            {
+                "name": "DOTCONF_CB",
+                "start": 296,
+                "end": 312
+            },
+            {
+                "name": "DOTCONF_CB",
+                "start": 318,
+                "end": 351
+            },
+            {
+                "name": "DOTCONF_CB",
+                "start": 356,
+                "end": 368
+            },
+            {
+                "name": "DOTCONF_CB",
+                "start": 372,
+                "end": 376
+            },
+            {
+                "name": "DOTCONF_CB",
+                "start": 379,
+                "end": 385
+            },
+            {
+                "name": "load_config_options",
+                "start": 395,
+                "end": 437
+            },
+            {
+                "name": "load_default_global_set_options",
+                "start": 441,
+                "end": 483
+            }
+        ],
+        "src/server/options.c": [
+            {
+                "name": "options_print_help",
+                "start": 58,
+                "end": 108
+            },
+            {
+                "name": "options_print_version",
+                "start": 110,
+                "end": 120
+            },
+            {
+                "name": "options_parse",
+                "start": 132,
+                "end": 238
+            }
+        ],
+        "src/server/server.h": [
+            {
+                "name": "queue_message",
+                "start": 36,
+                "end": 37
+            }
+        ],
+        "src/server/history.c": [
+            {
+                "name": "message_compare_id",
+                "start": 41,
+                "end": 46
+            },
+            {
+                "name": "history_get_client_list",
+                "start": 50,
+                "end": 72
+            },
+            {
+                "name": "history_get_client_id",
+                "start": 74,
+                "end": 89
+            },
+            {
+                "name": "history_get_message",
+                "start": 91,
+                "end": 131
+            },
+            {
+                "name": "history_get_message_list",
+                "start": 133,
+                "end": 174
+            },
+            {
+                "name": "history_get_last",
+                "start": 176,
+                "end": 192
+            },
+            {
+                "name": "history_cursor_set_last",
+                "start": 194,
+                "end": 208
+            },
+            {
+                "name": "history_cursor_set_first",
+                "start": 210,
+                "end": 221
+            },
+            {
+                "name": "history_cursor_set_pos",
+                "start": 223,
+                "end": 243
+            },
+            {
+                "name": "history_cursor_forward",
+                "start": 245,
+                "end": 260
+            },
+            {
+                "name": "history_cursor_backward",
+                "start": 262,
+                "end": 275
+            },
+            {
+                "name": "history_cursor_get",
+                "start": 277,
+                "end": 298
+            },
+            {
+                "name": "history_say_id",
+                "start": 300,
+                "end": 317
+            },
+            {
+                "name": "history_add_message",
+                "start": 319,
+                "end": 348
+            },
+            {
+                "name": "get_messages_by_client",
+                "start": 350,
+                "end": 368
+            }
+        ],
+        "src/server/alloc.c": [
+            {
+                "name": "spd_fdset_copy",
+                "start": 8,
+                "end": 27
+            },
+            {
+                "name": "spd_message_copy",
+                "start": 29,
+                "end": 45
+            },
+            {
+                "name": "mem_free_fdset",
+                "start": 47,
+                "end": 61
+            },
+            {
+                "name": "mem_free_message",
+                "start": 63,
+                "end": 70
+            }
+        ],
+        "src/server/module.c": [
+            {
+                "name": "destroy_module",
+                "start": 42,
+                "end": 48
+            },
+            {
+                "name": "detect_output_modules",
+                "start": 58,
+                "end": 120
+            },
+            {
+                "name": "load_output_module",
+                "start": 122,
+                "end": 340
+            },
+            {
+                "name": "unload_output_module",
+                "start": 342,
+                "end": 356
+            },
+            {
+                "name": "reload_output_module",
+                "start": 358,
+                "end": 390
+            },
+            {
+                "name": "output_module_debug",
+                "start": 392,
+                "end": 411
+            },
+            {
+                "name": "output_module_nodebug",
+                "start": 413,
+                "end": 425
+            },
+            {
+                "name": "module_already_requested",
+                "start": 454,
+                "end": 469
+            },
+            {
+                "name": "module_add_load_request",
+                "start": 485,
+                "end": 510
+            },
+            {
+                "name": "module_load_requested_modules",
+                "start": 518,
+                "end": 540
+            }
+        ],
+        "src/server/speaking.c": [
+            {
+                "name": "speak",
+                "start": 54,
+                "end": 302
+            },
+            {
+                "name": "reload_message",
+                "start": 304,
+                "end": 381
+            },
+            {
+                "name": "speaking_stop",
+                "start": 383,
+                "end": 435
+            },
+            {
+                "name": "speaking_stop_all",
+                "start": 437,
+                "end": 481
+            },
+            {
+                "name": "speaking_cancel",
+                "start": 483,
+                "end": 489
+            },
+            {
+                "name": "speaking_cancel_all",
+                "start": 491,
+                "end": 501
+            },
+            {
+                "name": "speaking_pause_all",
+                "start": 503,
+                "end": 520
+            },
+            {
+                "name": "speaking_pause",
+                "start": 522,
+                "end": 565
+            },
+            {
+                "name": "speaking_resume_all",
+                "start": 567,
+                "end": 584
+            },
+            {
+                "name": "speaking_resume",
+                "start": 586,
+                "end": 601
+            },
+            {
+                "name": "socket_send_msg",
+                "start": 603,
+                "end": 617
+            },
+            {
+                "name": "report_index_mark",
+                "start": 619,
+                "end": 636
+            },
+            {
+                "name": "is_sb_speaking",
+                "start": 661,
+                "end": 747
+            },
+            {
+                "name": "get_speaking_client_uid",
+                "start": 749,
+                "end": 760
+            },
+            {
+                "name": "queue_remove_message",
+                "start": 762,
+                "end": 773
+            },
+            {
+                "name": "empty_queue",
+                "start": 775,
+                "end": 787
+            },
+            {
+                "name": "empty_queue_by_time",
+                "start": 789,
+                "end": 810
+            },
+            {
+                "name": "stop_priority",
+                "start": 812,
+                "end": 827
+            },
+            {
+                "name": "stop_priority_older_than",
+                "start": 829,
+                "end": 844
+            },
+            {
+                "name": "stop_priority_from_uid",
+                "start": 846,
+                "end": 855
+            },
+            {
+                "name": "stop_from_uid",
+                "start": 857,
+                "end": 865
+            },
+            {
+                "name": "message_nto_speak",
+                "start": 872,
+                "end": 890
+            },
+            {
+                "name": "set_speak_thread_attributes",
+                "start": 892,
+                "end": 910
+            },
+            {
+                "name": "stop_priority_except_first",
+                "start": 912,
+                "end": 960
+            },
+            {
+                "name": "resolve_priorities",
+                "start": 962,
+                "end": 1012
+            },
+            {
+                "name": "get_message_from_queues",
+                "start": 1014,
+                "end": 1044
+            },
+            {
+                "name": "message_has_uid",
+                "start": 1046,
+                "end": 1052
+            },
+            {
+                "name": "client_has_messages",
+                "start": 1056,
+                "end": 1072
+            },
+            {
+                "name": "speaking_get_queue",
+                "start": 1074,
+                "end": 1100
+            },
+            {
+                "name": "speaking_set_queue",
+                "start": 1102,
+                "end": 1124
+            },
+            {
+                "name": "sortbyuid",
+                "start": 1126,
+                "end": 1139
+            }
+        ],
+        "src/server/server.c": [
+            {
+                "name": "queue_message",
+                "start": 67,
+                "end": 198
+            },
+            {
+                "name": "server_data_on",
+                "start": 203,
+                "end": 213
+            },
+            {
+                "name": "server_data_off",
+                "start": 216,
+                "end": 224
+            },
+            {
+                "name": "serve",
+                "start": 227,
+                "end": 290
+            }
+        ],
+        "src/server/parse.c": [
+            {
+                "name": "parse",
+                "start": 64,
+                "end": 224
+            },
+            {
+                "name": "parse_history",
+                "start": 259,
+                "end": 360
+            },
+            {
+                "name": "parse_set",
+                "start": 387,
+                "end": 608
+            },
+            {
+                "name": "parse_stop",
+                "start": 611,
+                "end": 647
+            },
+            {
+                "name": "parse_cancel",
+                "start": 649,
+                "end": 679
+            },
+            {
+                "name": "parse_pause",
+                "start": 681,
+                "end": 721
+            },
+            {
+                "name": "parse_resume",
+                "start": 723,
+                "end": 752
+            },
+            {
+                "name": "parse_general_event",
+                "start": 754,
+                "end": 791
+            },
+            {
+                "name": "parse_snd_icon",
+                "start": 793,
+                "end": 797
+            },
+            {
+                "name": "parse_char",
+                "start": 799,
+                "end": 803
+            },
+            {
+                "name": "parse_key",
+                "start": 805,
+                "end": 809
+            },
+            {
+                "name": "parse_list",
+                "start": 811,
+                "end": 885
+            },
+            {
+                "name": "parse_get",
+                "start": 887,
+                "end": 950
+            },
+            {
+                "name": "parse_help",
+                "start": 952,
+                "end": 972
+            },
+            {
+                "name": "parse_block",
+                "start": 974,
+                "end": 1002
+            },
+            {
+                "name": "deescape_dot",
+                "start": 1018,
+                "end": 1066
+            },
+            {
+                "name": "isanum",
+                "start": 1070,
+                "end": 1078
+            },
+            {
+                "name": "get_param",
+                "start": 1083,
+                "end": 1130
+            },
+            {
+                "name": "spd_utf8_read_char",
+                "start": 1137,
+                "end": 1148
+            }
+        ],
+        "src/server/speechd.c": [
+            {
+                "name": "spd_get_path",
+                "start": 102,
+                "end": 116
+            },
+            {
+                "name": "fatal_error",
+                "start": 121,
+                "end": 125
+            },
+            {
+                "name": "MSG2",
+                "start": 129,
+                "end": 205
+            },
+            {
+                "name": "MSG",
+                "start": 214,
+                "end": 279
+            },
+            {
+                "name": "speechd_sockets_status_init",
+                "start": 284,
+                "end": 294
+            },
+            {
+                "name": "speechd_socket_register",
+                "start": 297,
+                "end": 310
+            },
+            {
+                "name": "speechd_socket_free",
+                "start": 313,
+                "end": 318
+            },
+            {
+                "name": "speechd_socket_unregister",
+                "start": 321,
+                "end": 324
+            },
+            {
+                "name": "speechd_socket_get_by_fd",
+                "start": 327,
+                "end": 330
+            },
+            {
+                "name": "speechd_connection_new",
+                "start": 333,
+                "end": 383
+            },
+            {
+                "name": "speechd_connection_destroy",
+                "start": 385,
+                "end": 423
+            },
+            {
+                "name": "speechd_client_terminate",
+                "start": 425,
+                "end": 444
+            },
+            {
+                "name": "speechd_modules_terminate",
+                "start": 448,
+                "end": 460
+            },
+            {
+                "name": "speechd_modules_reload",
+                "start": 462,
+                "end": 475
+            },
+            {
+                "name": "speechd_module_debug",
+                "start": 477,
+                "end": 490
+            },
+            {
+                "name": "speechd_module_nodebug",
+                "start": 492,
+                "end": 505
+            },
+            {
+                "name": "speechd_reload_dead_modules",
+                "start": 507,
+                "end": 514
+            },
+            {
+                "name": "speechd_modules_debug",
+                "start": 516,
+                "end": 521
+            },
+            {
+                "name": "speechd_modules_nodebug",
+                "start": 523,
+                "end": 527
+            },
+            {
+                "name": "speechd_options_init",
+                "start": 531,
+                "end": 548
+            },
+            {
+                "name": "speechd_init",
+                "start": 550,
+                "end": 644
+            },
+            {
+                "name": "speechd_load_configuration",
+                "start": 646,
+                "end": 704
+            },
+            {
+                "name": "speechd_quit",
+                "start": 706,
+                "end": 745
+            },
+            {
+                "name": "create_pid_file",
+                "start": 749,
+                "end": 806
+            },
+            {
+                "name": "destroy_pid_file",
+                "start": 808,
+                "end": 811
+            },
+            {
+                "name": "logging_init",
+                "start": 813,
+                "end": 840
+            },
+            {
+                "name": "make_local_socket",
+                "start": 844,
+                "end": 872
+            },
+            {
+                "name": "make_inet_socket",
+                "start": 874,
+                "end": 916
+            },
+            {
+                "name": "main",
+                "start": 920,
+                "end": 1238
+            },
+            {
+                "name": "check_locked",
+                "start": 1240,
+                "end": 1249
+            }
+        ]
+    }
+}

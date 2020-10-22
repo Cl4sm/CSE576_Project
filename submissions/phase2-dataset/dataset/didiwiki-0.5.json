@@ -1,0 +1,418 @@
+{
+    "didiwiki-0.5": {
+        "src/util.h": [
+            {
+                "name": "util_mprintf",
+                "start": 4,
+                "end": 5
+            },
+            {
+                "name": "util_ascii_to_hex",
+                "start": 7,
+                "end": 8
+            },
+            {
+                "name": "util_dehttpize",
+                "start": 10,
+                "end": 11
+            },
+            {
+                "name": "util_extract_token",
+                "start": 13,
+                "end": 14
+            },
+            {
+                "name": "util_htmlize",
+                "start": 16,
+                "end": 17
+            },
+            {
+                "name": "util_httpize",
+                "start": 19,
+                "end": 20
+            }
+        ],
+        "src/http.h": [
+            {
+                "name": "http_server",
+                "start": 8,
+                "end": 9
+            },
+            {
+                "name": "http_request_new",
+                "start": 11,
+                "end": 12
+            },
+            {
+                "name": "http_request_param_get",
+                "start": 14,
+                "end": 15
+            },
+            {
+                "name": "http_request_get_uri",
+                "start": 17,
+                "end": 18
+            },
+            {
+                "name": "http_request_get_path_info",
+                "start": 20,
+                "end": 21
+            },
+            {
+                "name": "http_request_get_query_string",
+                "start": 23,
+                "end": 24
+            },
+            {
+                "name": "http_request_get_ip_src",
+                "start": 26,
+                "end": 27
+            },
+            {
+                "name": "http_response_new",
+                "start": 29,
+                "end": 30
+            },
+            {
+                "name": "http_response_printf",
+                "start": 32,
+                "end": 33
+            },
+            {
+                "name": "http_response_printf_alloc_buffer",
+                "start": 35,
+                "end": 36
+            },
+            {
+                "name": "http_response_set_content_type",
+                "start": 38,
+                "end": 39
+            },
+            {
+                "name": "http_response_set_status",
+                "start": 41,
+                "end": 44
+            },
+            {
+                "name": "http_response_set_data",
+                "start": 46,
+                "end": 47
+            },
+            {
+                "name": "http_response_append_header",
+                "start": 49,
+                "end": 50
+            },
+            {
+                "name": "http_response_send_headers",
+                "start": 52,
+                "end": 53
+            },
+            {
+                "name": "http_response_send",
+                "start": 55,
+                "end": 56
+            },
+            {
+                "name": "sigint",
+                "start": 58,
+                "end": 59
+            },
+            {
+                "name": "sigterm",
+                "start": 61,
+                "end": 62
+            }
+        ],
+        "src/wiki.h": [
+            {
+                "name": "wiki_handle_http_request",
+                "start": 12,
+                "end": 13
+            },
+            {
+                "name": "wiki_show_header",
+                "start": 15,
+                "end": 16
+            },
+            {
+                "name": "wiki_show_footer",
+                "start": 18,
+                "end": 19
+            },
+            {
+                "name": "wiki_print_data_as_html",
+                "start": 21,
+                "end": 22
+            },
+            {
+                "name": "wiki_init",
+                "start": 24,
+                "end": 25
+            }
+        ],
+        "src/util.c": [
+            {
+                "name": "util_mprintf",
+                "start": 20,
+                "end": 31
+            },
+            {
+                "name": "util_ascii_to_hex",
+                "start": 37,
+                "end": 50
+            },
+            {
+                "name": "util_dehttpize",
+                "start": 56,
+                "end": 82
+            },
+            {
+                "name": "util_extract_token",
+                "start": 90,
+                "end": 120
+            },
+            {
+                "name": "util_htmlize",
+                "start": 132,
+                "end": 191
+            },
+            {
+                "name": "validURIchar",
+                "start": 194,
+                "end": 201
+            },
+            {
+                "name": "util_httpize",
+                "start": 208,
+                "end": 234
+            }
+        ],
+        "src/didi.c": [
+            {
+                "name": "usage",
+                "start": 5,
+                "end": 15
+            },
+            {
+                "name": "main",
+                "start": 17,
+                "end": 100
+            }
+        ],
+        "src/wiki.c": [
+            {
+                "name": "get_line_from_string",
+                "start": 22,
+                "end": 48
+            },
+            {
+                "name": "check_for_link",
+                "start": 50,
+                "end": 150
+            },
+            {
+                "name": "file_read",
+                "start": 153,
+                "end": 175
+            },
+            {
+                "name": "file_write",
+                "start": 178,
+                "end": 198
+            },
+            {
+                "name": "is_wiki_format_char_or_space",
+                "start": 200,
+                "end": 206
+            },
+            {
+                "name": "wiki_print_data_as_html",
+                "start": 208,
+                "end": 556
+            },
+            {
+                "name": "wiki_redirect",
+                "start": 558,
+                "end": 576
+            },
+            {
+                "name": "wiki_show_page",
+                "start": 580,
+                "end": 599
+            },
+            {
+                "name": "wiki_show_edit_page",
+                "start": 601,
+                "end": 613
+            },
+            {
+                "name": "wiki_show_create_page",
+                "start": 615,
+                "end": 624
+            },
+            {
+                "name": "changes_compar",
+                "start": 626,
+                "end": 639
+            },
+            {
+                "name": "wiki_get_pages",
+                "start": 643,
+                "end": 694
+            },
+            {
+                "name": "wiki_show_changes_page",
+                "start": 696,
+                "end": 722
+            },
+            {
+                "name": "wiki_show_search_results_page",
+                "start": 724,
+                "end": 766
+            },
+            {
+                "name": "wiki_show_template",
+                "start": 768,
+                "end": 782
+            },
+            {
+                "name": "wiki_show_header",
+                "start": 784,
+                "end": 802
+            },
+            {
+                "name": "wiki_show_footer",
+                "start": 804,
+                "end": 813
+            },
+            {
+                "name": "page_name_is_good",
+                "start": 815,
+                "end": 835
+            },
+            {
+                "name": "wiki_handle_rest_call",
+                "start": 837,
+                "end": 936
+            },
+            {
+                "name": "wiki_handle_http_request",
+                "start": 940,
+                "end": 1067
+            },
+            {
+                "name": "wiki_init",
+                "start": 1069,
+                "end": 1123
+            }
+        ],
+        "src/http.c": [
+            {
+                "name": "malformed_request",
+                "start": 52,
+                "end": 64
+            },
+            {
+                "name": "http_request_add_param",
+                "start": 69,
+                "end": 84
+            },
+            {
+                "name": "http_request_parse_params",
+                "start": 102,
+                "end": 141
+            },
+            {
+                "name": "http_request_param_get",
+                "start": 144,
+                "end": 154
+            },
+            {
+                "name": "http_request_get_uri",
+                "start": 156,
+                "end": 160
+            },
+            {
+                "name": "http_request_get_path_info",
+                "start": 162,
+                "end": 166
+            },
+            {
+                "name": "http_request_get_query_string",
+                "start": 168,
+                "end": 172
+            },
+            {
+                "name": "http_request_get_ip_src",
+                "start": 174,
+                "end": 178
+            },
+            {
+                "name": "http_request_new",
+                "start": 185,
+                "end": 312
+            },
+            {
+                "name": "http_response_new",
+                "start": 314,
+                "end": 327
+            },
+            {
+                "name": "http_response_set_content_type",
+                "start": 329,
+                "end": 333
+            },
+            {
+                "name": "http_response_append_header",
+                "start": 336,
+                "end": 350
+            },
+            {
+                "name": "http_response_printf_alloc_buffer",
+                "start": 353,
+                "end": 358
+            },
+            {
+                "name": "http_response_printf",
+                "start": 361,
+                "end": 393
+            },
+            {
+                "name": "http_response_set_status",
+                "start": 396,
+                "end": 403
+            },
+            {
+                "name": "http_response_set_data",
+                "start": 406,
+                "end": 411
+            },
+            {
+                "name": "http_response_send_headers",
+                "start": 414,
+                "end": 433
+            },
+            {
+                "name": "http_response_send",
+                "start": 435,
+                "end": 442
+            },
+            {
+                "name": "sigint",
+                "start": 448,
+                "end": 459
+            },
+            {
+                "name": "sigterm",
+                "start": 464,
+                "end": 476
+            },
+            {
+                "name": "http_server",
+                "start": 487,
+                "end": 596
+            }
+        ]
+    }
+}

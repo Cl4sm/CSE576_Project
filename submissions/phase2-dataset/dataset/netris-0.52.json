@@ -1,0 +1,510 @@
+{
+    "netris-0.52": {
+        "util.c": [
+            {
+                "name": "InitUtil",
+                "start": 42,
+                "end": 50
+            },
+            {
+                "name": "ResetBaseTime",
+                "start": 52,
+                "end": 55
+            },
+            {
+                "name": "AtExit",
+                "start": 57,
+                "end": 64
+            },
+            {
+                "name": "Usage",
+                "start": 66,
+                "end": 92
+            },
+            {
+                "name": "DistInfo",
+                "start": 94,
+                "end": 113
+            },
+            {
+                "name": "Rules",
+                "start": 115,
+                "end": 141
+            },
+            {
+                "name": "SRandom",
+                "start": 147,
+                "end": 151
+            },
+            {
+                "name": "Random",
+                "start": 153,
+                "end": 157
+            },
+            {
+                "name": "MyRead",
+                "start": 159,
+                "end": 174
+            },
+            {
+                "name": "MyWrite",
+                "start": 176,
+                "end": 191
+            },
+            {
+                "name": "NormalizeTime",
+                "start": 193,
+                "end": 201
+            },
+            {
+                "name": "CatchInt",
+                "start": 203,
+                "end": 206
+            },
+            {
+                "name": "CatchAlarm",
+                "start": 208,
+                "end": 212
+            },
+            {
+                "name": "AlarmGenFunc",
+                "start": 214,
+                "end": 217
+            },
+            {
+                "name": "CurTimeval",
+                "start": 219,
+                "end": 227
+            },
+            {
+                "name": "SetTimeval",
+                "start": 229,
+                "end": 233
+            },
+            {
+                "name": "GetTimeval",
+                "start": 235,
+                "end": 238
+            },
+            {
+                "name": "SetITimer1",
+                "start": 240,
+                "end": 250
+            },
+            {
+                "name": "SetITimer",
+                "start": 252,
+                "end": 260
+            },
+            {
+                "name": "die",
+                "start": 262,
+                "end": 266
+            },
+            {
+                "name": "fatal",
+                "start": 268,
+                "end": 272
+            },
+            {
+                "name": "BlockSignals",
+                "start": 274,
+                "end": 299
+            },
+            {
+                "name": "RestoreSignals",
+                "start": 301,
+                "end": 311
+            },
+            {
+                "name": "AddEventGen",
+                "start": 313,
+                "end": 318
+            },
+            {
+                "name": "RemoveEventGen",
+                "start": 320,
+                "end": 329
+            },
+            {
+                "name": "WaitMyEvent",
+                "start": 331,
+                "end": 383
+            }
+        ],
+        "game.c": [
+            {
+                "name": "MapKeys",
+                "start": 43,
+                "end": 76
+            },
+            {
+                "name": "StartNewPiece",
+                "start": 78,
+                "end": 89
+            },
+            {
+                "name": "OneGame",
+                "start": 91,
+                "end": 355
+            },
+            {
+                "name": "main",
+                "start": 357,
+                "end": 532
+            }
+        ],
+        "board.c": [
+            {
+                "name": "InitBoard",
+                "start": 37,
+                "end": 43
+            },
+            {
+                "name": "CleanupBoard",
+                "start": 45,
+                "end": 48
+            },
+            {
+                "name": "GetBlock",
+                "start": 50,
+                "end": 58
+            },
+            {
+                "name": "SetBlock",
+                "start": 60,
+                "end": 68
+            },
+            {
+                "name": "RefreshBoard",
+                "start": 70,
+                "end": 105
+            },
+            {
+                "name": "PlotFunc",
+                "start": 107,
+                "end": 111
+            },
+            {
+                "name": "EraseFunc",
+                "start": 113,
+                "end": 117
+            },
+            {
+                "name": "CollisionFunc",
+                "start": 119,
+                "end": 122
+            },
+            {
+                "name": "VisibleFunc",
+                "start": 124,
+                "end": 127
+            },
+            {
+                "name": "PlotShape",
+                "start": 129,
+                "end": 132
+            },
+            {
+                "name": "EraseShape",
+                "start": 134,
+                "end": 137
+            },
+            {
+                "name": "ShapeFits",
+                "start": 139,
+                "end": 142
+            },
+            {
+                "name": "ShapeVisible",
+                "start": 144,
+                "end": 147
+            },
+            {
+                "name": "MovePiece",
+                "start": 149,
+                "end": 162
+            },
+            {
+                "name": "RotatePiece",
+                "start": 164,
+                "end": 174
+            },
+            {
+                "name": "DropPiece",
+                "start": 176,
+                "end": 187
+            },
+            {
+                "name": "LineIsFull",
+                "start": 189,
+                "end": 197
+            },
+            {
+                "name": "CopyLine",
+                "start": 199,
+                "end": 206
+            },
+            {
+                "name": "ClearFullLines",
+                "start": 208,
+                "end": 219
+            },
+            {
+                "name": "FreezePiece",
+                "start": 221,
+                "end": 230
+            },
+            {
+                "name": "InsertJunk",
+                "start": 232,
+                "end": 242
+            }
+        ],
+        "curses.c": [
+            {
+                "name": "InitScreens",
+                "start": 64,
+                "end": 115
+            },
+            {
+                "name": "CleanupScreens",
+                "start": 117,
+                "end": 122
+            },
+            {
+                "name": "GetTermcapInfo",
+                "start": 124,
+                "end": 178
+            },
+            {
+                "name": "OutputTermStr",
+                "start": 180,
+                "end": 187
+            },
+            {
+                "name": "InitScreen",
+                "start": 189,
+                "end": 214
+            },
+            {
+                "name": "CleanupScreen",
+                "start": 216,
+                "end": 218
+            },
+            {
+                "name": "PlotBlock1",
+                "start": 220,
+                "end": 243
+            },
+            {
+                "name": "PlotBlock",
+                "start": 245,
+                "end": 249
+            },
+            {
+                "name": "PlotUnderline",
+                "start": 251,
+                "end": 255
+            },
+            {
+                "name": "ShowDisplayInfo",
+                "start": 257,
+                "end": 281
+            },
+            {
+                "name": "UpdateOpponentDisplay",
+                "start": 283,
+                "end": 288
+            },
+            {
+                "name": "ShowPause",
+                "start": 290,
+                "end": 302
+            },
+            {
+                "name": "Message",
+                "start": 304,
+                "end": 314
+            },
+            {
+                "name": "RefreshScreen",
+                "start": 316,
+                "end": 332
+            },
+            {
+                "name": "ScheduleFullRedraw",
+                "start": 334,
+                "end": 337
+            },
+            {
+                "name": "KeyGenFunc",
+                "start": 339,
+                "end": 345
+            }
+        ],
+        "robot.c": [
+            {
+                "name": "InitRobot",
+                "start": 46,
+                "end": 89
+            },
+            {
+                "name": "CatchPipe",
+                "start": 91,
+                "end": 94
+            },
+            {
+                "name": "RobotCmd",
+                "start": 96,
+                "end": 105
+            },
+            {
+                "name": "RobotTimeStamp",
+                "start": 107,
+                "end": 110
+            },
+            {
+                "name": "CloseRobot",
+                "start": 112,
+                "end": 119
+            },
+            {
+                "name": "RobotGenFunc",
+                "start": 121,
+                "end": 169
+            }
+        ],
+        "sr.c": [
+            {
+                "name": "min",
+                "start": 66,
+                "end": 69
+            },
+            {
+                "name": "ReadLine",
+                "start": 71,
+                "end": 83
+            },
+            {
+                "name": "WriteLine",
+                "start": 85,
+                "end": 98
+            },
+            {
+                "name": "FindPiece",
+                "start": 100,
+                "end": 118
+            },
+            {
+                "name": "RotatePiece1",
+                "start": 120,
+                "end": 135
+            },
+            {
+                "name": "PieceFits",
+                "start": 137,
+                "end": 149
+            },
+            {
+                "name": "SimPlacement",
+                "start": 151,
+                "end": 170
+            },
+            {
+                "name": "BoardScore",
+                "start": 172,
+                "end": 301
+            },
+            {
+                "name": "PrintGoal",
+                "start": 303,
+                "end": 317
+            },
+            {
+                "name": "MakeDecision",
+                "start": 319,
+                "end": 346
+            },
+            {
+                "name": "PeekScore",
+                "start": 348,
+                "end": 358
+            },
+            {
+                "name": "main",
+                "start": 360,
+                "end": 469
+            }
+        ],
+        "shapes.c": [
+            {
+                "name": "MoveInDir",
+                "start": 102,
+                "end": 112
+            },
+            {
+                "name": "RotateDir",
+                "start": 114,
+                "end": 117
+            },
+            {
+                "name": "ShapeIterate",
+                "start": 119,
+                "end": 153
+            },
+            {
+                "name": "ChooseOption",
+                "start": 155,
+                "end": 169
+            },
+            {
+                "name": "ShapeToNetNum",
+                "start": 171,
+                "end": 180
+            },
+            {
+                "name": "NetNumToShape",
+                "start": 182,
+                "end": 186
+            }
+        ],
+        "inet.c": [
+            {
+                "name": "InitNet",
+                "start": 43,
+                "end": 46
+            },
+            {
+                "name": "WaitForConnection",
+                "start": 48,
+                "end": 98
+            },
+            {
+                "name": "InitiateConnection",
+                "start": 100,
+                "end": 135
+            },
+            {
+                "name": "NetGenFunc",
+                "start": 137,
+                "end": 174
+            },
+            {
+                "name": "CheckNetConn",
+                "start": 176,
+                "end": 178
+            },
+            {
+                "name": "SendPacket",
+                "start": 180,
+                "end": 190
+            },
+            {
+                "name": "CloseNet",
+                "start": 192,
+                "end": 214
+            }
+        ]
+    }
+}

@@ -1,0 +1,384 @@
+{
+    "pmount-0.9.23": {
+        "src/fs.c": [
+            {
+                "name": "get_supported_fs",
+                "start": 50,
+                "end": 53
+            },
+            {
+                "name": "get_fs_info",
+                "start": 55,
+                "end": 63
+            }
+        ],
+        "src/utils.c": [
+            {
+                "name": "debug",
+                "start": 31,
+                "end": 44
+            },
+            {
+                "name": "strreplace",
+                "start": 46,
+                "end": 62
+            },
+            {
+                "name": "read_number_colon_number",
+                "start": 64,
+                "end": 90
+            },
+            {
+                "name": "assert_dir",
+                "start": 92,
+                "end": 138
+            },
+            {
+                "name": "assert_emptydir",
+                "start": 140,
+                "end": 168
+            },
+            {
+                "name": "is_dir",
+                "start": 170,
+                "end": 179
+            },
+            {
+                "name": "is_block",
+                "start": 181,
+                "end": 190
+            },
+            {
+                "name": "remove_pmount_mntpt",
+                "start": 193,
+                "end": 208
+            },
+            {
+                "name": "parse_unsigned",
+                "start": 210,
+                "end": 227
+            },
+            {
+                "name": "pid_exists",
+                "start": 229,
+                "end": 239
+            },
+            {
+                "name": "is_word_str",
+                "start": 241,
+                "end": 261
+            },
+            {
+                "name": "get_root",
+                "start": 263,
+                "end": 270
+            },
+            {
+                "name": "drop_root",
+                "start": 272,
+                "end": 279
+            },
+            {
+                "name": "get_groot",
+                "start": 281,
+                "end": 288
+            },
+            {
+                "name": "drop_groot",
+                "start": 290,
+                "end": 297
+            },
+            {
+                "name": "spawnl",
+                "start": 299,
+                "end": 320
+            },
+            {
+                "name": "spawnv",
+                "start": 322,
+                "end": 373
+            },
+            {
+                "name": "get_dir_lockfile",
+                "start": 379,
+                "end": 393
+            },
+            {
+                "name": "lock_dir",
+                "start": 395,
+                "end": 416
+            },
+            {
+                "name": "unlock_dir",
+                "start": 418,
+                "end": 440
+            }
+        ],
+        "src/policy.h": [
+            {
+                "name": "make_lockdir_name",
+                "start": 96,
+                "end": 97
+            }
+        ],
+        "src/luks.h": [
+            {
+                "name": "luks_decrypt",
+                "start": 29,
+                "end": 30
+            },
+            {
+                "name": "luks_get_mapped_device",
+                "start": 45,
+                "end": 46
+            }
+        ],
+        "src/pumount.c": [
+            {
+                "name": "usage",
+                "start": 41,
+                "end": 55
+            },
+            {
+                "name": "check_umount_policy",
+                "start": 64,
+                "end": 98
+            },
+            {
+                "name": "do_umount_fstab",
+                "start": 105,
+                "end": 127
+            },
+            {
+                "name": "do_umount",
+                "start": 135,
+                "end": 153
+            },
+            {
+                "name": "main",
+                "start": 159,
+                "end": 309
+            }
+        ],
+        "src/luks.c": [
+            {
+                "name": "luks_decrypt",
+                "start": 34,
+                "end": 91
+            },
+            {
+                "name": "luks_release",
+                "start": 93,
+                "end": 104
+            },
+            {
+                "name": "luks_get_mapped_device",
+                "start": 106,
+                "end": 120
+            },
+            {
+                "name": "luks_lockfile_name",
+                "start": 124,
+                "end": 129
+            },
+            {
+                "name": "luks_create_lockfile",
+                "start": 136,
+                "end": 155
+            },
+            {
+                "name": "luks_has_lockfile",
+                "start": 157,
+                "end": 171
+            },
+            {
+                "name": "luks_remove_lockfile",
+                "start": 173,
+                "end": 185
+            }
+        ],
+        "src/pmount.c": [
+            {
+                "name": "usage",
+                "start": 59,
+                "end": 102
+            },
+            {
+                "name": "check_mount_policy",
+                "start": 109,
+                "end": 127
+            },
+            {
+                "name": "make_mountpoint_name",
+                "start": 138,
+                "end": 184
+            },
+            {
+                "name": "do_mount_fstab",
+                "start": 190,
+                "end": 204
+            },
+            {
+                "name": "do_mount",
+                "start": 228,
+                "end": 382
+            },
+            {
+                "name": "do_mount_auto",
+                "start": 402,
+                "end": 460
+            },
+            {
+                "name": "do_lock",
+                "start": 467,
+                "end": 506
+            },
+            {
+                "name": "do_unlock",
+                "start": 513,
+                "end": 559
+            },
+            {
+                "name": "clean_lock_dir",
+                "start": 564,
+                "end": 603
+            },
+            {
+                "name": "main",
+                "start": 608,
+                "end": 909
+            }
+        ],
+        "src/pmount-hal.c": [
+            {
+                "name": "help",
+                "start": 31,
+                "end": 38
+            },
+            {
+                "name": "empty_dir",
+                "start": 40,
+                "end": 59
+            },
+            {
+                "name": "valid_mntpt",
+                "start": 62,
+                "end": 91
+            },
+            {
+                "name": "get_free_label",
+                "start": 93,
+                "end": 112
+            },
+            {
+                "name": "exec_pmount",
+                "start": 114,
+                "end": 182
+            },
+            {
+                "name": "main",
+                "start": 184,
+                "end": 411
+            }
+        ],
+        "src/policy.c": [
+            {
+                "name": "find_sysfs_device",
+                "start": 80,
+                "end": 217
+            },
+            {
+                "name": "is_blockdev_attr_true",
+                "start": 225,
+                "end": 252
+            },
+            {
+                "name": "get_device_bus",
+                "start": 287,
+                "end": 321
+            },
+            {
+                "name": "bus_has_ancestry",
+                "start": 330,
+                "end": 365
+            },
+            {
+                "name": "device_valid",
+                "start": 374,
+                "end": 390
+            },
+            {
+                "name": "fstab_has_device",
+                "start": 392,
+                "end": 456
+            },
+            {
+                "name": "fstab_has_mntpt",
+                "start": 458,
+                "end": 495
+            },
+            {
+                "name": "device_mounted",
+                "start": 497,
+                "end": 517
+            },
+            {
+                "name": "device_removable_silent",
+                "start": 520,
+                "end": 555
+            },
+            {
+                "name": "device_removable",
+                "start": 557,
+                "end": 566
+            },
+            {
+                "name": "device_whitelisted",
+                "start": 573,
+                "end": 636
+            },
+            {
+                "name": "device_locked",
+                "start": 638,
+                "end": 651
+            },
+            {
+                "name": "mntpt_valid",
+                "start": 653,
+                "end": 665
+            },
+            {
+                "name": "mntpt_mounted",
+                "start": 667,
+                "end": 679
+            },
+            {
+                "name": "make_lockdir_name",
+                "start": 681,
+                "end": 692
+            },
+            {
+                "name": "device_valid_silent",
+                "start": 694,
+                "end": 708
+            },
+            {
+                "name": "print_mounted_removable_devices",
+                "start": 714,
+                "end": 743
+            }
+        ],
+        "src/realpath.c": [
+            {
+                "name": "xmalloc",
+                "start": 42,
+                "end": 56
+            },
+            {
+                "name": "private_realpath",
+                "start": 60,
+                "end": 168
+            }
+        ]
+    }
+}

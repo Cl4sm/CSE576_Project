@@ -1,0 +1,544 @@
+{
+    "ncurses-hexedit-0.9.7": {
+        "src/hexedit.h": [
+            {
+                "name": "hex_string_box",
+                "start": 220,
+                "end": 221
+            },
+            {
+                "name": "boyer_moore_search",
+                "start": 240,
+                "end": 242
+            },
+            {
+                "name": "bytecmp",
+                "start": 243,
+                "end": 245
+            },
+            {
+                "name": "calcDrawBoxes",
+                "start": 286,
+                "end": 287
+            },
+            {
+                "name": "calcNumberKey",
+                "start": 288,
+                "end": 290
+            },
+            {
+                "name": "calcArrowKey",
+                "start": 291,
+                "end": 293
+            }
+        ],
+        "src/search.c": [
+            {
+                "name": "boyer_moore_search",
+                "start": 20,
+                "end": 92
+            },
+            {
+                "name": "bytecmp",
+                "start": 96,
+                "end": 115
+            }
+        ],
+        "src/misc.c": [
+            {
+                "name": "mappos",
+                "start": 30,
+                "end": 113
+            },
+            {
+                "name": "mapcur",
+                "start": 117,
+                "end": 231
+            },
+            {
+                "name": "cursor_ascii_to_ebcdic",
+                "start": 234,
+                "end": 378
+            },
+            {
+                "name": "usage",
+                "start": 382,
+                "end": 409
+            },
+            {
+                "name": "die_horribly",
+                "start": 412,
+                "end": 429
+            },
+            {
+                "name": "handleInterrupt",
+                "start": 432,
+                "end": 570
+            },
+            {
+                "name": "handleSigwinch",
+                "start": 574,
+                "end": 728
+            },
+            {
+                "name": "exitProgram",
+                "start": 732,
+                "end": 760
+            },
+            {
+                "name": "exitSave",
+                "start": 763,
+                "end": 769
+            },
+            {
+                "name": "chompWhiteSpace",
+                "start": 772,
+                "end": 789
+            },
+            {
+                "name": "isHexChar",
+                "start": 792,
+                "end": 824
+            },
+            {
+                "name": "getHexValue",
+                "start": 827,
+                "end": 872
+            },
+            {
+                "name": "getAsciiValue",
+                "start": 874,
+                "end": 913
+            },
+            {
+                "name": "switchModes",
+                "start": 916,
+                "end": 924
+            },
+            {
+                "name": "isprintable",
+                "start": 927,
+                "end": 954
+            },
+            {
+                "name": "do_beep",
+                "start": 957,
+                "end": 962
+            }
+        ],
+        "src/hexkeys.c": [
+            {
+                "name": "hexMode",
+                "start": 18,
+                "end": 292
+            },
+            {
+                "name": "handleArrowKeys",
+                "start": 296,
+                "end": 861
+            },
+            {
+                "name": "pagedown",
+                "start": 865,
+                "end": 962
+            },
+            {
+                "name": "pageup",
+                "start": 965,
+                "end": 1000
+            },
+            {
+                "name": "homeKey",
+                "start": 1003,
+                "end": 1017
+            },
+            {
+                "name": "endKey",
+                "start": 1020,
+                "end": 1042
+            },
+            {
+                "name": "tabcursor",
+                "start": 1045,
+                "end": 1055
+            }
+        ],
+        "src/hash.c": [
+            {
+                "name": "init_hash",
+                "start": 53,
+                "end": 84
+            },
+            {
+                "name": "clear_hash",
+                "start": 87,
+                "end": 102
+            },
+            {
+                "name": "insert_hash_entry",
+                "start": 105,
+                "end": 155
+            },
+            {
+                "name": "delete_hash_entry",
+                "start": 158,
+                "end": 195
+            },
+            {
+                "name": "hash_lookup",
+                "start": 198,
+                "end": 220
+            },
+            {
+                "name": "commit_changes_in_hash",
+                "start": 250,
+                "end": 280
+            }
+        ],
+        "src/widgets.c": [
+            {
+                "name": "popupWindow",
+                "start": 20,
+                "end": 44
+            },
+            {
+                "name": "stringBox",
+                "start": 47,
+                "end": 344
+            },
+            {
+                "name": "hex_string_box",
+                "start": 347,
+                "end": 500
+            }
+        ],
+        "src/print.c": [
+            {
+                "name": "drawdump",
+                "start": 42,
+                "end": 165
+            },
+            {
+                "name": "findNewline",
+                "start": 168,
+                "end": 184
+            },
+            {
+                "name": "drawAsciiDump",
+                "start": 187,
+                "end": 268
+            },
+            {
+                "name": "drawAscii",
+                "start": 270,
+                "end": 308
+            },
+            {
+                "name": "printStatusWindow",
+                "start": 311,
+                "end": 353
+            },
+            {
+                "name": "printHelpWindow",
+                "start": 356,
+                "end": 452
+            },
+            {
+                "name": "redraw",
+                "start": 455,
+                "end": 522
+            }
+        ],
+        "src/edit.c": [
+            {
+                "name": "insertByte",
+                "start": 44,
+                "end": 78
+            },
+            {
+                "name": "deleteByte",
+                "start": 81,
+                "end": 160
+            },
+            {
+                "name": "over_write",
+                "start": 163,
+                "end": 428
+            },
+            {
+                "name": "findEBCDIC",
+                "start": 431,
+                "end": 447
+            },
+            {
+                "name": "filebuff_modify",
+                "start": 450,
+                "end": 474
+            }
+        ],
+        "src/file.c": [
+            {
+                "name": "exit_p",
+                "start": 40,
+                "end": 45
+            },
+            {
+                "name": "fileSelect",
+                "start": 47,
+                "end": 324
+            },
+            {
+                "name": "statWindow",
+                "start": 327,
+                "end": 343
+            },
+            {
+                "name": "helpWindow",
+                "start": 346,
+                "end": 353
+            },
+            {
+                "name": "getDirectory",
+                "start": 356,
+                "end": 419
+            },
+            {
+                "name": "merge",
+                "start": 421,
+                "end": 477
+            },
+            {
+                "name": "msort",
+                "start": 480,
+                "end": 514
+            },
+            {
+                "name": "printPage",
+                "start": 517,
+                "end": 654
+            }
+        ],
+        "src/calc.c": [
+            {
+                "name": "binary_calculator",
+                "start": 25,
+                "end": 101
+            },
+            {
+                "name": "calcDrawBoxes",
+                "start": 104,
+                "end": 161
+            },
+            {
+                "name": "drawEntryBox",
+                "start": 164,
+                "end": 179
+            },
+            {
+                "name": "calcStatWindow",
+                "start": 182,
+                "end": 194
+            },
+            {
+                "name": "calcBinaryString",
+                "start": 197,
+                "end": 209
+            },
+            {
+                "name": "calcOctalString",
+                "start": 212,
+                "end": 238
+            },
+            {
+                "name": "calcDecimalString",
+                "start": 241,
+                "end": 267
+            },
+            {
+                "name": "calcHexString",
+                "start": 270,
+                "end": 296
+            }
+        ],
+        "src/../gnu/getopt.h": [
+            {
+                "name": "getopt_long",
+                "start": 112,
+                "end": 113
+            },
+            {
+                "name": "getopt_long_only",
+                "start": 114,
+                "end": 116
+            },
+            {
+                "name": "_getopt_internal",
+                "start": 119,
+                "end": 122
+            }
+        ],
+        "src/init.c": [
+            {
+                "name": "init",
+                "start": 44,
+                "end": 341
+            },
+            {
+                "name": "select_new_file",
+                "start": 351,
+                "end": 373
+            },
+            {
+                "name": "popup_Error",
+                "start": 379,
+                "end": 395
+            },
+            {
+                "name": "load_new_file",
+                "start": 400,
+                "end": 587
+            }
+        ],
+        "src/calckeys.c": [
+            {
+                "name": "calcNumberKey",
+                "start": 18,
+                "end": 175
+            },
+            {
+                "name": "calcArrowKey",
+                "start": 178,
+                "end": 213
+            }
+        ],
+        "src/filekeys.c": [
+            {
+                "name": "file_key_up",
+                "start": 23,
+                "end": 86
+            },
+            {
+                "name": "file_key_down",
+                "start": 89,
+                "end": 153
+            },
+            {
+                "name": "file_redraw",
+                "start": 156,
+                "end": 183
+            },
+            {
+                "name": "file_pagedown",
+                "start": 186,
+                "end": 239
+            },
+            {
+                "name": "file_pageup",
+                "start": 242,
+                "end": 290
+            },
+            {
+                "name": "file_home",
+                "start": 293,
+                "end": 342
+            },
+            {
+                "name": "file_end",
+                "start": 345,
+                "end": 402
+            }
+        ],
+        "src/windows.c": [
+            {
+                "name": "popupGotoOffset",
+                "start": 22,
+                "end": 82
+            },
+            {
+                "name": "print_line",
+                "start": 86,
+                "end": 94
+            },
+            {
+                "name": "do_outer_help_box",
+                "start": 97,
+                "end": 116
+            },
+            {
+                "name": "popupHelp",
+                "start": 126,
+                "end": 219
+            },
+            {
+                "name": "popupFileSave",
+                "start": 225,
+                "end": 435
+            },
+            {
+                "name": "search",
+                "start": 443,
+                "end": 730
+            },
+            {
+                "name": "jump_relative_offset",
+                "start": 736,
+                "end": 846
+            }
+        ],
+        "src/undo.c": [
+            {
+                "name": "pushUndo",
+                "start": 19,
+                "end": 54
+            },
+            {
+                "name": "undoLastChange",
+                "start": 57,
+                "end": 215
+            }
+        ],
+        "src/filebuf.c": [
+            {
+                "name": "initbuffer",
+                "start": 19,
+                "end": 25
+            },
+            {
+                "name": "filebuffer",
+                "start": 28,
+                "end": 65
+            },
+            {
+                "name": "filebuffer_new_buf",
+                "start": 68,
+                "end": 121
+            }
+        ],
+        "src/help.c": [
+            {
+                "name": "help_initialize",
+                "start": 51,
+                "end": 82
+            },
+            {
+                "name": "help_print",
+                "start": 85,
+                "end": 96
+            }
+        ],
+        "src/main.c": [
+            {
+                "name": "main",
+                "start": 20,
+                "end": 45
+            }
+        ],
+        "src/asciikey.c": [
+            {
+                "name": "asciiMode",
+                "start": 17,
+                "end": 118
+            }
+        ]
+    }
+}

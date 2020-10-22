@@ -1,0 +1,6822 @@
+{
+    "drbd-utils-8.9.2~rc1": {
+        "common/drbd_strings.c": [
+            {
+                "name": "drbd_repl_str",
+                "start": 200,
+                "end": 205
+            },
+            {
+                "name": "drbd_conn_str",
+                "start": 207,
+                "end": 212
+            },
+            {
+                "name": "drbd_role_str",
+                "start": 214,
+                "end": 219
+            },
+            {
+                "name": "drbd_disk_str",
+                "start": 221,
+                "end": 226
+            },
+            {
+                "name": "drbd_set_st_err_str",
+                "start": 228,
+                "end": 233
+            },
+            {
+                "name": "drbd_packet_name",
+                "start": 235,
+                "end": 247
+            }
+        ],
+        "user/v9/drbd_nla.h": [
+            {
+                "name": "drbd_nla_parse_nested",
+                "start": 4,
+                "end": 5
+            }
+        ],
+        "user/v9/drbdtool_common.h": [
+            {
+                "name": "new_strtoll",
+                "start": 126,
+                "end": 127
+            }
+        ],
+        "user/v9/config_flags.c": [
+            {
+                "name": "enum_string_to_int",
+                "start": 29,
+                "end": 41
+            },
+            {
+                "name": "enum_is_default",
+                "start": 43,
+                "end": 49
+            },
+            {
+                "name": "enum_is_equal",
+                "start": 51,
+                "end": 54
+            },
+            {
+                "name": "type_of_field",
+                "start": 56,
+                "end": 59
+            },
+            {
+                "name": "len_of_field",
+                "start": 61,
+                "end": 64
+            },
+            {
+                "name": "get_enum",
+                "start": 66,
+                "end": 75
+            },
+            {
+                "name": "put_enum",
+                "start": 77,
+                "end": 88
+            },
+            {
+                "name": "enum_usage",
+                "start": 90,
+                "end": 110
+            },
+            {
+                "name": "enum_is_default_nocase",
+                "start": 112,
+                "end": 118
+            },
+            {
+                "name": "enum_is_equal_nocase",
+                "start": 120,
+                "end": 123
+            },
+            {
+                "name": "put_enum_nocase",
+                "start": 125,
+                "end": 136
+            },
+            {
+                "name": "enum_describe_xml",
+                "start": 138,
+                "end": 151
+            },
+            {
+                "name": "numeric_is_default",
+                "start": 155,
+                "end": 162
+            },
+            {
+                "name": "numeric_is_equal",
+                "start": 164,
+                "end": 172
+            },
+            {
+                "name": "get_numeric",
+                "start": 174,
+                "end": 222
+            },
+            {
+                "name": "put_numeric",
+                "start": 224,
+                "end": 248
+            },
+            {
+                "name": "numeric_usage",
+                "start": 250,
+                "end": 256
+            },
+            {
+                "name": "numeric_describe_xml",
+                "start": 258,
+                "end": 275
+            },
+            {
+                "name": "boolean_string_to_int",
+                "start": 279,
+                "end": 287
+            },
+            {
+                "name": "boolean_is_default",
+                "start": 289,
+                "end": 295
+            },
+            {
+                "name": "boolean_is_equal",
+                "start": 297,
+                "end": 300
+            },
+            {
+                "name": "get_boolean",
+                "start": 302,
+                "end": 309
+            },
+            {
+                "name": "put_boolean",
+                "start": 311,
+                "end": 322
+            },
+            {
+                "name": "put_flag",
+                "start": 324,
+                "end": 336
+            },
+            {
+                "name": "boolean_usage",
+                "start": 338,
+                "end": 342
+            },
+            {
+                "name": "boolean_describe_xml",
+                "start": 344,
+                "end": 351
+            },
+            {
+                "name": "string_is_default",
+                "start": 355,
+                "end": 358
+            },
+            {
+                "name": "string_is_equal",
+                "start": 360,
+                "end": 363
+            },
+            {
+                "name": "get_string",
+                "start": 365,
+                "end": 375
+            },
+            {
+                "name": "put_string",
+                "start": 377,
+                "end": 383
+            },
+            {
+                "name": "string_usage",
+                "start": 385,
+                "end": 389
+            },
+            {
+                "name": "string_describe_xml",
+                "start": 391,
+                "end": 396
+            },
+            {
+                "name": "double_quote_string",
+                "start": 398,
+                "end": 423
+            }
+        ],
+        "user/v9/drbdadm.h": [
+            {
+                "name": "m_system_ex",
+                "start": 331,
+                "end": 336
+            }
+        ],
+        "user/v9/drbdadm_usage_cnt.c": [
+            {
+                "name": "maybe_exec_legacy_drbdadm",
+                "start": 65,
+                "end": 95
+            },
+            {
+                "name": "vcs_to_str",
+                "start": 97,
+                "end": 112
+            },
+            {
+                "name": "write_node_id",
+                "start": 114,
+                "end": 151
+            },
+            {
+                "name": "read_node_id",
+                "start": 154,
+                "end": 187
+            },
+            {
+                "name": "alarm_handler",
+                "start": 195,
+                "end": 198
+            },
+            {
+                "name": "my_gethostbyname",
+                "start": 202,
+                "end": 226
+            },
+            {
+                "name": "make_get_request",
+                "start": 239,
+                "end": 319
+            },
+            {
+                "name": "url_encode",
+                "start": 321,
+                "end": 342
+            },
+            {
+                "name": "uc_node",
+                "start": 348,
+                "end": 438
+            },
+            {
+                "name": "run_adm_drbdmeta",
+                "start": 442,
+                "end": 488
+            },
+            {
+                "name": "find_backend_option",
+                "start": 490,
+                "end": 500
+            },
+            {
+                "name": "adm_create_md",
+                "start": 502,
+                "end": 604
+            }
+        ],
+        "user/v9/drbdadm_adjust.c": [
+            {
+                "name": "m_popen",
+                "start": 51,
+                "end": 88
+            },
+            {
+                "name": "is_equal",
+                "start": 90,
+                "end": 101
+            },
+            {
+                "name": "is_default",
+                "start": 103,
+                "end": 113
+            },
+            {
+                "name": "opts_equal",
+                "start": 115,
+                "end": 160
+            },
+            {
+                "name": "addr_equal",
+                "start": 162,
+                "end": 167
+            },
+            {
+                "name": "matching_conn",
+                "start": 169,
+                "end": 182
+            },
+            {
+                "name": "int_eq",
+                "start": 185,
+                "end": 188
+            },
+            {
+                "name": "disk_equal",
+                "start": 190,
+                "end": 206
+            },
+            {
+                "name": "do_proxy_reconf",
+                "start": 215,
+                "end": 222
+            },
+            {
+                "name": "schedule_deferred_proxy_reconf",
+                "start": 224,
+                "end": 237
+            },
+            {
+                "name": "_is_plugin_in_list",
+                "start": 243,
+                "end": 278
+            },
+            {
+                "name": "proxy_reconf",
+                "start": 281,
+                "end": 397
+            },
+            {
+                "name": "need_trigger_kobj_change",
+                "start": 399,
+                "end": 427
+            },
+            {
+                "name": "compare_size",
+                "start": 429,
+                "end": 451
+            },
+            {
+                "name": "compare_volume",
+                "start": 453,
+                "end": 479
+            },
+            {
+                "name": "new_to_be_deleted_minor_from_template",
+                "start": 481,
+                "end": 499
+            },
+            {
+                "name": "compare_volumes",
+                "start": 512,
+                "end": 540
+            },
+            {
+                "name": "adm_adjust",
+                "start": 545,
+                "end": 702
+            }
+        ],
+        "user/v9/drbd_nla.c": [
+            {
+                "name": "drbd_nla_check_mandatory",
+                "start": 6,
+                "end": 28
+            },
+            {
+                "name": "drbd_nla_parse_nested",
+                "start": 30,
+                "end": 40
+            },
+            {
+                "name": "drbd_nla_find_nested",
+                "start": 42,
+                "end": 50
+            }
+        ],
+        "user/v9/drbdadm_parser.c": [
+            {
+                "name": "names_from_str",
+                "start": 56,
+                "end": 64
+            },
+            {
+                "name": "_names_to_str_c",
+                "start": 66,
+                "end": 84
+            },
+            {
+                "name": "_names_to_str",
+                "start": 86,
+                "end": 89
+            },
+            {
+                "name": "hostnames_equal",
+                "start": 96,
+                "end": 109
+            },
+            {
+                "name": "hostname_in_list",
+                "start": 111,
+                "end": 120
+            },
+            {
+                "name": "free_names",
+                "start": 122,
+                "end": 133
+            },
+            {
+                "name": "m_strtoll_range",
+                "start": 135,
+                "end": 155
+            },
+            {
+                "name": "range_check",
+                "start": 157,
+                "end": 280
+            },
+            {
+                "name": "new_opt",
+                "start": 282,
+                "end": 291
+            },
+            {
+                "name": "pdperror",
+                "start": 293,
+                "end": 299
+            },
+            {
+                "name": "pperror",
+                "start": 301,
+                "end": 307
+            },
+            {
+                "name": "check_uniq_init",
+                "start": 332,
+                "end": 339
+            },
+            {
+                "name": "check_upr_init",
+                "start": 345,
+                "end": 358
+            },
+            {
+                "name": "vcheck_uniq",
+                "start": 364,
+                "end": 414
+            },
+            {
+                "name": "pe_expected",
+                "start": 416,
+                "end": 423
+            },
+            {
+                "name": "check_string_error",
+                "start": 425,
+                "end": 443
+            },
+            {
+                "name": "pe_expected_got",
+                "start": 445,
+                "end": 457
+            },
+            {
+                "name": "expect_STRING_or_INT",
+                "start": 471,
+                "end": 485
+            },
+            {
+                "name": "parse_global",
+                "start": 487,
+                "end": 539
+            },
+            {
+                "name": "check_and_change_deprecated_alias",
+                "start": 541,
+                "end": 560
+            },
+            {
+                "name": "parse_options_syncer",
+                "start": 563,
+                "end": 641
+            },
+            {
+                "name": "parse_options_d",
+                "start": 643,
+                "end": 702
+            },
+            {
+                "name": "parse_options",
+                "start": 704,
+                "end": 707
+            },
+            {
+                "name": "__parse_address",
+                "start": 709,
+                "end": 745
+            },
+            {
+                "name": "parse_address",
+                "start": 747,
+                "end": 751
+            },
+            {
+                "name": "parse_hosts",
+                "start": 753,
+                "end": 780
+            },
+            {
+                "name": "parse_proxy_section",
+                "start": 782,
+                "end": 818
+            },
+            {
+                "name": "parse_meta_disk",
+                "start": 820,
+                "end": 845
+            },
+            {
+                "name": "check_minor_nonsense",
+                "start": 847,
+                "end": 876
+            },
+            {
+                "name": "parse_device",
+                "start": 878,
+                "end": 935
+            },
+            {
+                "name": "volume0",
+                "start": 937,
+                "end": 958
+            },
+            {
+                "name": "parse_volume_stmt",
+                "start": 960,
+                "end": 1009
+            },
+            {
+                "name": "parse_volume",
+                "start": 1011,
+                "end": 1032
+            },
+            {
+                "name": "parse_stacked_volume",
+                "start": 1034,
+                "end": 1067
+            },
+            {
+                "name": "parse_host_section",
+                "start": 1074,
+                "end": 1195
+            },
+            {
+                "name": "parse_skip",
+                "start": 1197,
+                "end": 1220
+            },
+            {
+                "name": "parse_stacked_section",
+                "start": 1222,
+                "end": 1271
+            },
+            {
+                "name": "startup_delegate",
+                "start": 1273,
+                "end": 1288
+            },
+            {
+                "name": "net_delegate",
+                "start": 1290,
+                "end": 1309
+            },
+            {
+                "name": "proxy_delegate",
+                "start": 1311,
+                "end": 1361
+            },
+            {
+                "name": "parse_proxy_options",
+                "start": 1363,
+                "end": 1375
+            },
+            {
+                "name": "parse_proxy_options_section",
+                "start": 1377,
+                "end": 1390
+            },
+            {
+                "name": "parse_hname_address_pair",
+                "start": 1392,
+                "end": 1453
+            },
+            {
+                "name": "alloc_connection",
+                "start": 1455,
+                "end": 1468
+            },
+            {
+                "name": "free_connection",
+                "start": 1470,
+                "end": 1473
+            },
+            {
+                "name": "parse_connection",
+                "start": 1475,
+                "end": 1527
+            },
+            {
+                "name": "parse_connection_mesh",
+                "start": 1529,
+                "end": 1562
+            },
+            {
+                "name": "parse_resource",
+                "start": 1564,
+                "end": 1720
+            },
+            {
+                "name": "parse_resource_for_adjust",
+                "start": 1722,
+                "end": 1741
+            },
+            {
+                "name": "include_stmt",
+                "start": 1743,
+                "end": 1803
+            },
+            {
+                "name": "my_parse",
+                "start": 1805,
+                "end": 1844
+            }
+        ],
+        "user/v9/drbdadm_postparse.c": [
+            {
+                "name": "append_names",
+                "start": 38,
+                "end": 47
+            },
+            {
+                "name": "set_on_hosts_in_res",
+                "start": 49,
+                "end": 99
+            },
+            {
+                "name": "find_host_info_by_name",
+                "start": 101,
+                "end": 110
+            },
+            {
+                "name": "find_host_info_by_address",
+                "start": 112,
+                "end": 123
+            },
+            {
+                "name": "generate_implicit_node_id",
+                "start": 125,
+                "end": 137
+            },
+            {
+                "name": "set_host_info_in_host_address_pairs",
+                "start": 139,
+                "end": 237
+            },
+            {
+                "name": "test_proxy_on_host",
+                "start": 239,
+                "end": 254
+            },
+            {
+                "name": "set_me_in_resource",
+                "start": 256,
+                "end": 333
+            },
+            {
+                "name": "set_peer_in_connection",
+                "start": 336,
+                "end": 387
+            },
+            {
+                "name": "create_implicit_net_options",
+                "start": 389,
+                "end": 404
+            },
+            {
+                "name": "set_peer_in_resource",
+                "start": 406,
+                "end": 418
+            },
+            {
+                "name": "set_disk_in_res",
+                "start": 420,
+                "end": 470
+            },
+            {
+                "name": "find_volume",
+                "start": 472,
+                "end": 481
+            },
+            {
+                "name": "derror",
+                "start": 483,
+                "end": 489
+            },
+            {
+                "name": "inherit_volumes",
+                "start": 491,
+                "end": 519
+            },
+            {
+                "name": "check_volume_complete",
+                "start": 521,
+                "end": 535
+            },
+            {
+                "name": "check_volumes_complete",
+                "start": 537,
+                "end": 551
+            },
+            {
+                "name": "check_meta_disk",
+                "start": 553,
+                "end": 566
+            },
+            {
+                "name": "check_volume_sets_equal",
+                "start": 568,
+                "end": 619
+            },
+            {
+                "name": "check_volumes_hosts",
+                "start": 622,
+                "end": 633
+            },
+            {
+                "name": "alloc_hname_address",
+                "start": 635,
+                "end": 645
+            },
+            {
+                "name": "create_implicit_connections",
+                "start": 647,
+                "end": 688
+            },
+            {
+                "name": "find_host_info_or_invalid",
+                "start": 690,
+                "end": 703
+            },
+            {
+                "name": "create_connections_from_mesh",
+                "start": 705,
+                "end": 745
+            },
+            {
+                "name": "addresses_equal",
+                "start": 747,
+                "end": 759
+            },
+            {
+                "name": "find_hname_addr_in_res",
+                "start": 761,
+                "end": 777
+            },
+            {
+                "name": "check_addr_conflict",
+                "start": 783,
+                "end": 830
+            },
+            {
+                "name": "must_have_two_hosts",
+                "start": 832,
+                "end": 844
+            },
+            {
+                "name": "post_parse",
+                "start": 846,
+                "end": 906
+            },
+            {
+                "name": "expand_opts",
+                "start": 908,
+                "end": 919
+            },
+            {
+                "name": "expand_common",
+                "start": 921,
+                "end": 992
+            },
+            {
+                "name": "res_by_name",
+                "start": 994,
+                "end": 1003
+            },
+            {
+                "name": "sanity_check_abs_cmd",
+                "start": 1005,
+                "end": 1029
+            },
+            {
+                "name": "sanity_check_cmd",
+                "start": 1031,
+                "end": 1057
+            },
+            {
+                "name": "sanity_check_conf",
+                "start": 1063,
+                "end": 1093
+            },
+            {
+                "name": "sanity_check_perm",
+                "start": 1095,
+                "end": 1105
+            },
+            {
+                "name": "host_name_known",
+                "start": 1107,
+                "end": 1116
+            },
+            {
+                "name": "ensure_proxy_sections",
+                "start": 1119,
+                "end": 1157
+            },
+            {
+                "name": "validate_resource",
+                "start": 1159,
+                "end": 1236
+            },
+            {
+                "name": "ctx_set_implicit_volume",
+                "start": 1238,
+                "end": 1259
+            },
+            {
+                "name": "_convert_after_option",
+                "start": 1262,
+                "end": 1301
+            },
+            {
+                "name": "convert_after_option",
+                "start": 1304,
+                "end": 1312
+            },
+            {
+                "name": "convert_discard_opt",
+                "start": 1315,
+                "end": 1330
+            },
+            {
+                "name": "global_validate_maybe_expand_die_if_invalid",
+                "start": 1332,
+                "end": 1351
+            }
+        ],
+        "user/v9/drbdtool_common.c": [
+            {
+                "name": "new_strtoll",
+                "start": 30,
+                "end": 103
+            },
+            {
+                "name": "dt_pretty_print_uuids",
+                "start": 105,
+                "end": 135
+            },
+            {
+                "name": "dt_print_v9_uuids",
+                "start": 137,
+                "end": 158
+            },
+            {
+                "name": "dt_pretty_print_v9_uuids",
+                "start": 160,
+                "end": 183
+            },
+            {
+                "name": "get_hostname",
+                "start": 187,
+                "end": 201
+            },
+            {
+                "name": "slurp_proc_drbd",
+                "start": 206,
+                "end": 232
+            },
+            {
+                "name": "read_hex",
+                "start": 234,
+                "end": 254
+            },
+            {
+                "name": "version_from_str",
+                "start": 256,
+                "end": 278
+            },
+            {
+                "name": "parse_version",
+                "start": 280,
+                "end": 328
+            },
+            {
+                "name": "drbd_driver_version",
+                "start": 330,
+                "end": 367
+            },
+            {
+                "name": "drbd_utils_version",
+                "start": 369,
+                "end": 377
+            },
+            {
+                "name": "version_code_kernel",
+                "start": 379,
+                "end": 383
+            },
+            {
+                "name": "version_code_userland",
+                "start": 385,
+                "end": 389
+            },
+            {
+                "name": "version_equal",
+                "start": 391,
+                "end": 398
+            },
+            {
+                "name": "config_help_legacy",
+                "start": 399,
+                "end": 409
+            },
+            {
+                "name": "add_lib_drbd_to_path",
+                "start": 411,
+                "end": 428
+            },
+            {
+                "name": "crc32c",
+                "start": 503,
+                "end": 509
+            }
+        ],
+        "user/v9/drbdsetup.c": [
+            {
+                "name": "ctx_next_arg",
+                "start": 181,
+                "end": 193
+            },
+            {
+                "name": "ctx_arg_string",
+                "start": 195,
+                "end": 215
+            },
+            {
+                "name": "print_usage_and_exit",
+                "start": 237,
+                "end": 238
+            },
+            {
+                "name": "error_to_string",
+                "start": 611,
+                "end": 616
+            },
+            {
+                "name": "endpoints_equal",
+                "start": 640,
+                "end": 646
+            },
+            {
+                "name": "conv_block_dev",
+                "start": 648,
+                "end": 675
+            },
+            {
+                "name": "conv_md_idx",
+                "start": 677,
+                "end": 689
+            },
+            {
+                "name": "conv_u32",
+                "start": 691,
+                "end": 699
+            },
+            {
+                "name": "resolv6",
+                "start": 701,
+                "end": 735
+            },
+            {
+                "name": "resolv",
+                "start": 737,
+                "end": 752
+            },
+            {
+                "name": "split_ipv6_addr",
+                "start": 754,
+                "end": 771
+            },
+            {
+                "name": "split_address",
+                "start": 773,
+                "end": 813
+            },
+            {
+                "name": "sockaddr_from_str",
+                "start": 815,
+                "end": 841
+            },
+            {
+                "name": "get_af_ssocks",
+                "start": 848,
+                "end": 887
+            },
+            {
+                "name": "make_longoptions",
+                "start": 889,
+                "end": 969
+            },
+            {
+                "name": "check_error",
+                "start": 972,
+                "end": 1031
+            },
+            {
+                "name": "warn_print_excess_args",
+                "start": 1033,
+                "end": 1039
+            },
+            {
+                "name": "drbd_tla_parse",
+                "start": 1041,
+                "end": 1047
+            },
+            {
+                "name": "_generic_config_cmd",
+                "start": 1052,
+                "end": 1214
+            },
+            {
+                "name": "generic_config_cmd",
+                "start": 1216,
+                "end": 1219
+            },
+            {
+                "name": "del_minor_cmd",
+                "start": 1221,
+                "end": 1229
+            },
+            {
+                "name": "del_resource_cmd",
+                "start": 1231,
+                "end": 1239
+            },
+            {
+                "name": "find_cmd_by_name",
+                "start": 1241,
+                "end": 1251
+            },
+            {
+                "name": "print_options",
+                "start": 1253,
+                "end": 1302
+            },
+            {
+                "name": "print_current_options",
+                "start": 1304,
+                "end": 1307
+            },
+            {
+                "name": "choose_timeout",
+                "start": 1319,
+                "end": 1394
+            },
+            {
+                "name": "kernel_older_than",
+                "start": 1397,
+                "end": 1420
+            },
+            {
+                "name": "shortest_timeout",
+                "start": 1422,
+                "end": 1434
+            },
+            {
+                "name": "update_timeouts",
+                "start": 1436,
+                "end": 1452
+            },
+            {
+                "name": "generic_get",
+                "start": 1459,
+                "end": 1733
+            },
+            {
+                "name": "generic_get_cmd",
+                "start": 1735,
+                "end": 1876
+            },
+            {
+                "name": "print_current_connection",
+                "start": 1878,
+                "end": 1912
+            },
+            {
+                "name": "show_cmd",
+                "start": 1914,
+                "end": 1976
+            },
+            {
+                "name": "susp_str",
+                "start": 1978,
+                "end": 1993
+            },
+            {
+                "name": "nowrap_printf",
+                "start": 1995,
+                "end": 2005
+            },
+            {
+                "name": "print_resource_statistics",
+                "start": 2007,
+                "end": 2026
+            },
+            {
+                "name": "print_device_statistics",
+                "start": 2028,
+                "end": 2079
+            },
+            {
+                "name": "print_connection_statistics",
+                "start": 2081,
+                "end": 2089
+            },
+            {
+                "name": "print_peer_device_statistics",
+                "start": 2091,
+                "end": 2109
+            },
+            {
+                "name": "resource_status",
+                "start": 2111,
+                "end": 2137
+            },
+            {
+                "name": "device_status",
+                "start": 2139,
+                "end": 2161
+            },
+            {
+                "name": "resync_susp_str",
+                "start": 2163,
+                "end": 2178
+            },
+            {
+                "name": "peer_device_status",
+                "start": 2180,
+                "end": 2226
+            },
+            {
+                "name": "peer_devices_status",
+                "start": 2228,
+                "end": 2237
+            },
+            {
+                "name": "connection_status",
+                "start": 2239,
+                "end": 2286
+            },
+            {
+                "name": "stop_colors",
+                "start": 2288,
+                "end": 2293
+            },
+            {
+                "name": "link_peer_devices_to_devices",
+                "start": 2295,
+                "end": 2308
+            },
+            {
+                "name": "status_cmd",
+                "start": 2310,
+                "end": 2391
+            },
+            {
+                "name": "role_cmd",
+                "start": 2393,
+                "end": 2416
+            },
+            {
+                "name": "cstate_cmd",
+                "start": 2418,
+                "end": 2439
+            },
+            {
+                "name": "dstate_cmd",
+                "start": 2441,
+                "end": 2463
+            },
+            {
+                "name": "af_to_str",
+                "start": 2465,
+                "end": 2480
+            },
+            {
+                "name": "address_str",
+                "start": 2482,
+                "end": 2516
+            },
+            {
+                "name": "remember_resource",
+                "start": 2518,
+                "end": 2545
+            },
+            {
+                "name": "free_resources",
+                "start": 2547,
+                "end": 2556
+            },
+            {
+                "name": "resource_name_cmp",
+                "start": 2558,
+                "end": 2561
+            },
+            {
+                "name": "sort_resources",
+                "start": 2563,
+                "end": 2585
+            },
+            {
+                "name": "list_resources",
+                "start": 2590,
+                "end": 2619
+            },
+            {
+                "name": "remember_device",
+                "start": 2621,
+                "end": 2645
+            },
+            {
+                "name": "list_devices",
+                "start": 2650,
+                "end": 2678
+            },
+            {
+                "name": "free_devices",
+                "start": 2680,
+                "end": 2687
+            },
+            {
+                "name": "remember_connection",
+                "start": 2689,
+                "end": 2716
+            },
+            {
+                "name": "connection_name_cmp",
+                "start": 2718,
+                "end": 2723
+            },
+            {
+                "name": "sort_connections",
+                "start": 2725,
+                "end": 2747
+            },
+            {
+                "name": "list_connections",
+                "start": 2752,
+                "end": 2780
+            },
+            {
+                "name": "free_connections",
+                "start": 2782,
+                "end": 2789
+            },
+            {
+                "name": "remember_peer_device",
+                "start": 2791,
+                "end": 2814
+            },
+            {
+                "name": "list_peer_devices",
+                "start": 2819,
+                "end": 2847
+            },
+            {
+                "name": "free_peer_devices",
+                "start": 2849,
+                "end": 2856
+            },
+            {
+                "name": "show_current_volume",
+                "start": 2858,
+                "end": 2899
+            },
+            {
+                "name": "check_resize_cmd",
+                "start": 2901,
+                "end": 2955
+            },
+            {
+                "name": "show_or_get_gi_cmd",
+                "start": 2957,
+                "end": 3015
+            },
+            {
+                "name": "down_cmd",
+                "start": 3017,
+                "end": 3055
+            },
+            {
+                "name": "event_key",
+                "start": 3057,
+                "end": 3127
+            },
+            {
+                "name": "known_objects_cmp",
+                "start": 3129,
+                "end": 3131
+            },
+            {
+                "name": "update_info",
+                "start": 3133,
+                "end": 3175
+            },
+            {
+                "name": "print_notifications",
+                "start": 3177,
+                "end": 3443
+            },
+            {
+                "name": "peer_devices_append",
+                "start": 3445,
+                "end": 3456
+            },
+            {
+                "name": "wait_for_family",
+                "start": 3459,
+                "end": 3552
+            },
+            {
+                "name": "power_of_two",
+                "start": 3557,
+                "end": 3560
+            },
+            {
+                "name": "print_command_usage",
+                "start": 3562,
+                "end": 3692
+            },
+            {
+                "name": "print_usage_and_exit",
+                "start": 3694,
+                "end": 3711
+            },
+            {
+                "name": "modprobe_drbd",
+                "start": 3713,
+                "end": 3742
+            },
+            {
+                "name": "maybe_exec_legacy_drbdsetup",
+                "start": 3744,
+                "end": 3775
+            },
+            {
+                "name": "main",
+                "start": 3777,
+                "end": 3966
+            }
+        ],
+        "user/v9/drbdsetup_colors.c": [
+            {
+                "name": "stop_color_code",
+                "start": 67,
+                "end": 70
+            },
+            {
+                "name": "color_code",
+                "start": 72,
+                "end": 92
+            },
+            {
+                "name": "role_color_start",
+                "start": 94,
+                "end": 98
+            },
+            {
+                "name": "role_color_stop",
+                "start": 100,
+                "end": 104
+            },
+            {
+                "name": "cstate_color_start",
+                "start": 106,
+                "end": 110
+            },
+            {
+                "name": "cstate_color_stop",
+                "start": 112,
+                "end": 116
+            },
+            {
+                "name": "is_local_repl_state",
+                "start": 118,
+                "end": 129
+            },
+            {
+                "name": "repl_state_color_start",
+                "start": 131,
+                "end": 136
+            },
+            {
+                "name": "repl_state_color_stop",
+                "start": 138,
+                "end": 143
+            },
+            {
+                "name": "disk_state_color_start",
+                "start": 145,
+                "end": 149
+            },
+            {
+                "name": "disk_state_color_stop",
+                "start": 151,
+                "end": 155
+            }
+        ],
+        "user/v9/drbdadm_dump.c": [
+            {
+                "name": "esc",
+                "start": 48,
+                "end": 77
+            },
+            {
+                "name": "esc_xml",
+                "start": 79,
+                "end": 128
+            },
+            {
+                "name": "dump_options2",
+                "start": 130,
+                "end": 152
+            },
+            {
+                "name": "dump_options",
+                "start": 154,
+                "end": 157
+            },
+            {
+                "name": "dump_proxy_plugins",
+                "start": 159,
+                "end": 162
+            },
+            {
+                "name": "dump_global_info",
+                "start": 164,
+                "end": 189
+            },
+            {
+                "name": "dump_common_info",
+                "start": 193,
+                "end": 210
+            },
+            {
+                "name": "dump_address",
+                "start": 212,
+                "end": 218
+            },
+            {
+                "name": "dump_proxy_info",
+                "start": 220,
+                "end": 229
+            },
+            {
+                "name": "dump_volume",
+                "start": 231,
+                "end": 269
+            },
+            {
+                "name": "dump_host_info",
+                "start": 271,
+                "end": 309
+            },
+            {
+                "name": "dump_connection",
+                "start": 311,
+                "end": 345
+            },
+            {
+                "name": "dump_options_xml2",
+                "start": 347,
+                "end": 370
+            },
+            {
+                "name": "dump_options_xml",
+                "start": 372,
+                "end": 375
+            },
+            {
+                "name": "dump_proxy_plugins_xml",
+                "start": 377,
+                "end": 380
+            },
+            {
+                "name": "dump_global_info_xml",
+                "start": 382,
+                "end": 400
+            },
+            {
+                "name": "dump_common_info_xml",
+                "start": 402,
+                "end": 418
+            },
+            {
+                "name": "dump_proxy_info_xml",
+                "start": 420,
+                "end": 431
+            },
+            {
+                "name": "dump_volume_xml",
+                "start": 433,
+                "end": 457
+            },
+            {
+                "name": "dump_host_info_xml",
+                "start": 459,
+                "end": 483
+            },
+            {
+                "name": "dump_connection_xml",
+                "start": 485,
+                "end": 522
+            },
+            {
+                "name": "fake_startup_options",
+                "start": 524,
+                "end": 532
+            },
+            {
+                "name": "dump_mesh",
+                "start": 534,
+                "end": 550
+            },
+            {
+                "name": "adm_dump",
+                "start": 552,
+                "end": 598
+            },
+            {
+                "name": "adm_dump_xml",
+                "start": 600,
+                "end": 632
+            },
+            {
+                "name": "print_dump_xml_header",
+                "start": 634,
+                "end": 640
+            },
+            {
+                "name": "print_dump_header",
+                "start": 642,
+                "end": 647
+            }
+        ],
+        "user/v9/registry.c": [
+            {
+                "name": "linkname_from_minor",
+                "start": 47,
+                "end": 50
+            },
+            {
+                "name": "unregister_minor",
+                "start": 52,
+                "end": 64
+            },
+            {
+                "name": "__readlink",
+                "start": 66,
+                "end": 79
+            },
+            {
+                "name": "register_path",
+                "start": 81,
+                "end": 110
+            },
+            {
+                "name": "register_minor",
+                "start": 112,
+                "end": 118
+            },
+            {
+                "name": "resolve_symlink",
+                "start": 120,
+                "end": 127
+            },
+            {
+                "name": "lookup_minor",
+                "start": 129,
+                "end": 141
+            },
+            {
+                "name": "linkname_from_resource_name",
+                "start": 143,
+                "end": 146
+            },
+            {
+                "name": "unregister_resource",
+                "start": 148,
+                "end": 160
+            },
+            {
+                "name": "register_resource",
+                "start": 162,
+                "end": 168
+            },
+            {
+                "name": "lookup_resource",
+                "start": 173,
+                "end": 185
+            }
+        ],
+        "user/v9/drbdadm_main.c": [
+            {
+                "name": "adm_adjust_wp",
+                "start": 169,
+                "end": 174
+            },
+            {
+                "name": "initialize_deferred_cmds",
+                "start": 506,
+                "end": 511
+            },
+            {
+                "name": "schedule_deferred_cmd",
+                "start": 513,
+                "end": 529
+            },
+            {
+                "name": "__call_cmd_fn",
+                "start": 532,
+                "end": 553
+            },
+            {
+                "name": "call_cmd_fn",
+                "start": 555,
+                "end": 561
+            },
+            {
+                "name": "call_cmd",
+                "start": 567,
+                "end": 618
+            },
+            {
+                "name": "_run_deferred_cmds",
+                "start": 629,
+                "end": 678
+            },
+            {
+                "name": "run_deferred_cmds",
+                "start": 680,
+                "end": 698
+            },
+            {
+                "name": "sh_nop",
+                "start": 700,
+                "end": 703
+            },
+            {
+                "name": "sh_resources",
+                "start": 705,
+                "end": 722
+            },
+            {
+                "name": "sh_resource",
+                "start": 724,
+                "end": 728
+            },
+            {
+                "name": "sh_dev",
+                "start": 730,
+                "end": 734
+            },
+            {
+                "name": "sh_udev",
+                "start": 736,
+                "end": 766
+            },
+            {
+                "name": "sh_minor",
+                "start": 768,
+                "end": 772
+            },
+            {
+                "name": "sh_ip",
+                "start": 774,
+                "end": 778
+            },
+            {
+                "name": "sh_lres",
+                "start": 780,
+                "end": 796
+            },
+            {
+                "name": "sh_ll_dev",
+                "start": 798,
+                "end": 802
+            },
+            {
+                "name": "sh_md_dev",
+                "start": 805,
+                "end": 817
+            },
+            {
+                "name": "sh_md_idx",
+                "start": 819,
+                "end": 823
+            },
+            {
+                "name": "sh_mod_parms",
+                "start": 826,
+                "end": 840
+            },
+            {
+                "name": "free_volume",
+                "start": 842,
+                "end": 852
+            },
+            {
+                "name": "free_host_info",
+                "start": 854,
+                "end": 871
+            },
+            {
+                "name": "free_options",
+                "start": 873,
+                "end": 883
+            },
+            {
+                "name": "free_config",
+                "start": 885,
+                "end": 917
+            },
+            {
+                "name": "find_drbdcmd",
+                "start": 919,
+                "end": 934
+            },
+            {
+                "name": "m__system",
+                "start": 936,
+                "end": 1089
+            },
+            {
+                "name": "add_setup_options",
+                "start": 1098,
+                "end": 1107
+            },
+            {
+                "name": "adm_attach",
+                "start": 1126,
+                "end": 1168
+            },
+            {
+                "name": "find_opt",
+                "start": 1170,
+                "end": 1179
+            },
+            {
+                "name": "adm_new_minor",
+                "start": 1181,
+                "end": 1197
+            },
+            {
+                "name": "adm_resource",
+                "start": 1199,
+                "end": 1223
+            },
+            {
+                "name": "adm_resize",
+                "start": 1225,
+                "end": 1266
+            },
+            {
+                "name": "_adm_drbdmeta",
+                "start": 1268,
+                "end": 1300
+            },
+            {
+                "name": "adm_drbdmeta",
+                "start": 1302,
+                "end": 1305
+            },
+            {
+                "name": "__adm_drbdsetup",
+                "start": 1307,
+                "end": 1338
+            },
+            {
+                "name": "_adm_drbdsetup",
+                "start": 1340,
+                "end": 1345
+            },
+            {
+                "name": "adm_drbdsetup",
+                "start": 1347,
+                "end": 1350
+            },
+            {
+                "name": "__adm_drbdsetup_silent",
+                "start": 1352,
+                "end": 1394
+            },
+            {
+                "name": "sh_status",
+                "start": 1396,
+                "end": 1455
+            },
+            {
+                "name": "adm_outdate",
+                "start": 1457,
+                "end": 1480
+            },
+            {
+                "name": "adm_chk_resize",
+                "start": 1484,
+                "end": 1493
+            },
+            {
+                "name": "adm_setup_and_meta",
+                "start": 1495,
+                "end": 1512
+            },
+            {
+                "name": "adm_invalidate",
+                "start": 1514,
+                "end": 1537
+            },
+            {
+                "name": "adm_forget_peer",
+                "start": 1539,
+                "end": 1557
+            },
+            {
+                "name": "adm_khelper",
+                "start": 1559,
+                "end": 1571
+            },
+            {
+                "name": "adm_connect",
+                "start": 1573,
+                "end": 1600
+            },
+            {
+                "name": "free_opt",
+                "start": 1602,
+                "end": 1607
+            },
+            {
+                "name": "_proxy_connect_name_len",
+                "start": 1609,
+                "end": 1617
+            },
+            {
+                "name": "_proxy_connection_name",
+                "start": 1619,
+                "end": 1628
+            },
+            {
+                "name": "do_proxy_conn_up",
+                "start": 1630,
+                "end": 1653
+            },
+            {
+                "name": "do_proxy_conn_plugins",
+                "start": 1655,
+                "end": 1692
+            },
+            {
+                "name": "do_proxy_conn_down",
+                "start": 1694,
+                "end": 1706
+            },
+            {
+                "name": "check_proxy",
+                "start": 1708,
+                "end": 1756
+            },
+            {
+                "name": "adm_proxy_up",
+                "start": 1758,
+                "end": 1761
+            },
+            {
+                "name": "adm_proxy_down",
+                "start": 1763,
+                "end": 1766
+            },
+            {
+                "name": "adm_up",
+                "start": 1774,
+                "end": 1800
+            },
+            {
+                "name": "adm_wait_c",
+                "start": 1806,
+                "end": 1847
+            },
+            {
+                "name": "ctx_by_minor",
+                "start": 1849,
+                "end": 1872
+            },
+            {
+                "name": "volume_by_vnr",
+                "start": 1874,
+                "end": 1883
+            },
+            {
+                "name": "set_ignore_flag",
+                "start": 1887,
+                "end": 1903
+            },
+            {
+                "name": "ctx_by_name",
+                "start": 1905,
+                "end": 2028
+            },
+            {
+                "name": "childs_running",
+                "start": 2032,
+                "end": 2061
+            },
+            {
+                "name": "kill_childs",
+                "start": 2063,
+                "end": 2073
+            },
+            {
+                "name": "gets_timeout",
+                "start": 2081,
+                "end": 2124
+            },
+            {
+                "name": "get_opt_val",
+                "start": 2126,
+                "end": 2132
+            },
+            {
+                "name": "check_exit_codes",
+                "start": 2134,
+                "end": 2152
+            },
+            {
+                "name": "adm_wait_ci",
+                "start": 2154,
+                "end": 2314
+            },
+            {
+                "name": "adm_cmd_cmp",
+                "start": 2316,
+                "end": 2320
+            },
+            {
+                "name": "print_cmds",
+                "start": 2322,
+                "end": 2344
+            },
+            {
+                "name": "hidden_cmds",
+                "start": 2346,
+                "end": 2366
+            },
+            {
+                "name": "field_to_option",
+                "start": 2368,
+                "end": 2375
+            },
+            {
+                "name": "print_option",
+                "start": 2377,
+                "end": 2395
+            },
+            {
+                "name": "print_usage_and_exit",
+                "start": 2397,
+                "end": 2431
+            },
+            {
+                "name": "verify_ips",
+                "start": 2433,
+                "end": 2459
+            },
+            {
+                "name": "canonify_path",
+                "start": 2478,
+                "end": 2530
+            },
+            {
+                "name": "assign_command_names_from_argv0",
+                "start": 2532,
+                "end": 2575
+            },
+            {
+                "name": "recognize_all_drbdsetup_options",
+                "start": 2577,
+                "end": 2618
+            },
+            {
+                "name": "parse_options",
+                "start": 2622,
+                "end": 2830
+            },
+            {
+                "name": "find_cmd",
+                "start": 2832,
+                "end": 2861
+            },
+            {
+                "name": "config_file_from_arg",
+                "start": 2863,
+                "end": 2895
+            },
+            {
+                "name": "assign_default_config_file",
+                "start": 2897,
+                "end": 2911
+            },
+            {
+                "name": "count_resources",
+                "start": 2913,
+                "end": 2939
+            },
+            {
+                "name": "die_if_no_resources",
+                "start": 2941,
+                "end": 2961
+            },
+            {
+                "name": "main",
+                "start": 2963,
+                "end": 3235
+            },
+            {
+                "name": "yyerror",
+                "start": 3237,
+                "end": 3241
+            }
+        ],
+        "user/shared/wrap_printf.c": [
+            {
+                "name": "wrap_printf",
+                "start": 7,
+                "end": 50
+            },
+            {
+                "name": "wrap_printf_wordwise",
+                "start": 52,
+                "end": 75
+            }
+        ],
+        "user/shared/drbd_buildtag.c": [
+            {
+                "name": "drbd_buildtag",
+                "start": 3,
+                "end": 7
+            }
+        ],
+        "user/shared/drbd_endian.h": [
+            {
+                "name": "generic_hweight32",
+                "start": 106,
+                "end": 113
+            },
+            {
+                "name": "generic_hweight64",
+                "start": 115,
+                "end": 129
+            },
+            {
+                "name": "hweight_long",
+                "start": 131,
+                "end": 134
+            }
+        ],
+        "user/shared/shared_main.c": [
+            {
+                "name": "chld_sig_hand",
+                "start": 61,
+                "end": 64
+            },
+            {
+                "name": "minor_by_id",
+                "start": 66,
+                "end": 71
+            },
+            {
+                "name": "get_ifreq",
+                "start": 80,
+                "end": 134
+            },
+            {
+                "name": "have_ip_ipv4",
+                "start": 136,
+                "end": 156
+            },
+            {
+                "name": "have_ip_ipv6",
+                "start": 158,
+                "end": 200
+            },
+            {
+                "name": "have_ip",
+                "start": 202,
+                "end": 210
+            },
+            {
+                "name": "substitute_deprecated_cmd",
+                "start": 213,
+                "end": 221
+            }
+        ],
+        "user/shared/drbdmeta.c": [
+            {
+                "name": "confirmed",
+                "start": 118,
+                "end": 140
+            },
+            {
+                "name": "md_disk_06_to_cpu",
+                "start": 374,
+                "end": 383
+            },
+            {
+                "name": "md_cpu_to_disk_06",
+                "start": 385,
+                "end": 392
+            },
+            {
+                "name": "v06_validate_md",
+                "start": 394,
+                "end": 401
+            },
+            {
+                "name": "md_disk_07_to_cpu",
+                "start": 419,
+                "end": 436
+            },
+            {
+                "name": "md_cpu_to_disk_07",
+                "start": 438,
+                "end": 451
+            },
+            {
+                "name": "is_valid_md",
+                "start": 453,
+                "end": 543
+            },
+            {
+                "name": "v07_al_disk_to_cpu",
+                "start": 570,
+                "end": 584
+            },
+            {
+                "name": "md_disk_08_to_cpu",
+                "start": 613,
+                "end": 642
+            },
+            {
+                "name": "md_cpu_to_disk_08",
+                "start": 644,
+                "end": 667
+            },
+            {
+                "name": "v84_al_disk_to_cpu",
+                "start": 756,
+                "end": 782
+            },
+            {
+                "name": "md_disk_09_to_cpu",
+                "start": 824,
+                "end": 860
+            },
+            {
+                "name": "md_cpu_to_disk_09",
+                "start": 862,
+                "end": 895
+            },
+            {
+                "name": "format_version",
+                "start": 1012,
+                "end": 1015
+            },
+            {
+                "name": "is_v06",
+                "start": 1016,
+                "end": 1019
+            },
+            {
+                "name": "is_v07",
+                "start": 1020,
+                "end": 1023
+            },
+            {
+                "name": "is_v08",
+                "start": 1024,
+                "end": 1027
+            },
+            {
+                "name": "is_v09",
+                "start": 1028,
+                "end": 1031
+            },
+            {
+                "name": "pread_or_die",
+                "start": 1100,
+                "end": 1126
+            },
+            {
+                "name": "validate_offsets_or_die",
+                "start": 1131,
+                "end": 1168
+            },
+            {
+                "name": "pwrite_or_die",
+                "start": 1171,
+                "end": 1207
+            },
+            {
+                "name": "pwrite_with_limit_or_die",
+                "start": 1209,
+                "end": 1224
+            },
+            {
+                "name": "m_get_gc",
+                "start": 1226,
+                "end": 1229
+            },
+            {
+                "name": "m_show_gc",
+                "start": 1231,
+                "end": 1234
+            },
+            {
+                "name": "m_get_uuid",
+                "start": 1236,
+                "end": 1246
+            },
+            {
+                "name": "m_show_uuid",
+                "start": 1248,
+                "end": 1258
+            },
+            {
+                "name": "m_get_v9_uuid",
+                "start": 1260,
+                "end": 1270
+            },
+            {
+                "name": "m_show_v9_uuid",
+                "start": 1272,
+                "end": 1282
+            },
+            {
+                "name": "m_strsep_u32",
+                "start": 1284,
+                "end": 1314
+            },
+            {
+                "name": "m_strsep_u64",
+                "start": 1316,
+                "end": 1340
+            },
+            {
+                "name": "m_strsep_bit",
+                "start": 1342,
+                "end": 1362
+            },
+            {
+                "name": "m_set_gc",
+                "start": 1364,
+                "end": 1380
+            },
+            {
+                "name": "m_set_uuid",
+                "start": 1382,
+                "end": 1402
+            },
+            {
+                "name": "m_set_v9_uuid",
+                "start": 1404,
+                "end": 1427
+            },
+            {
+                "name": "m_outdate_gc",
+                "start": 1429,
+                "end": 1434
+            },
+            {
+                "name": "m_outdate_uuid",
+                "start": 1436,
+                "end": 1445
+            },
+            {
+                "name": "m_invalidate_gc",
+                "start": 1447,
+                "end": 1453
+            },
+            {
+                "name": "m_invalidate_uuid",
+                "start": 1455,
+                "end": 1462
+            },
+            {
+                "name": "m_invalidate_v9_uuid",
+                "start": 1464,
+                "end": 1476
+            },
+            {
+                "name": "v06_md_disk_to_cpu",
+                "start": 1483,
+                "end": 1488
+            },
+            {
+                "name": "v06_md_cpu_to_disk",
+                "start": 1490,
+                "end": 1497
+            },
+            {
+                "name": "v06_parse",
+                "start": 1499,
+                "end": 1524
+            },
+            {
+                "name": "v06_md_open",
+                "start": 1526,
+                "end": 1553
+            },
+            {
+                "name": "generic_md_close",
+                "start": 1555,
+                "end": 1565
+            },
+            {
+                "name": "v06_md_initialize",
+                "start": 1567,
+                "end": 1579
+            },
+            {
+                "name": "max_usable_sectors",
+                "start": 1585,
+                "end": 1635
+            },
+            {
+                "name": "re_initialize_md_offsets",
+                "start": 1637,
+                "end": 1699
+            },
+            {
+                "name": "initialize_al",
+                "start": 1701,
+                "end": 1727
+            },
+            {
+                "name": "md_initialize_common",
+                "start": 1732,
+                "end": 1789
+            },
+            {
+                "name": "v07_style_md_get_byte_offset",
+                "start": 1795,
+                "end": 1818
+            },
+            {
+                "name": "printf_al_07",
+                "start": 1820,
+                "end": 1846
+            },
+            {
+                "name": "printf_al_84",
+                "start": 1848,
+                "end": 1898
+            },
+            {
+                "name": "printf_al",
+                "start": 1900,
+                "end": 1950
+            },
+            {
+                "name": "replay_al_07",
+                "start": 1962,
+                "end": 2055
+            },
+            {
+                "name": "al_tr_number_to_on_disk_slot",
+                "start": 2057,
+                "end": 2069
+            },
+            {
+                "name": "replay_al_84",
+                "start": 2076,
+                "end": 2194
+            },
+            {
+                "name": "cmp_u32",
+                "start": 2196,
+                "end": 2203
+            },
+            {
+                "name": "apply_al",
+                "start": 2205,
+                "end": 2297
+            },
+            {
+                "name": "need_to_apply_al",
+                "start": 2299,
+                "end": 2313
+            },
+            {
+                "name": "meta_apply_al",
+                "start": 2316,
+                "end": 2448
+            },
+            {
+                "name": "bm_bytes",
+                "start": 2450,
+                "end": 2456
+            },
+            {
+                "name": "fprintf_bm_eol",
+                "start": 2458,
+                "end": 2464
+            },
+            {
+                "name": "round_down",
+                "start": 2466,
+                "end": 2470
+            },
+            {
+                "name": "fprintf_bm",
+                "start": 2474,
+                "end": 2556
+            },
+            {
+                "name": "printf_bm",
+                "start": 2558,
+                "end": 2579
+            },
+            {
+                "name": "clip_effective_size_and_bm_bytes",
+                "start": 2581,
+                "end": 2590
+            },
+            {
+                "name": "v07_style_md_open",
+                "start": 2592,
+                "end": 2709
+            },
+            {
+                "name": "v07_md_disk_to_cpu",
+                "start": 2711,
+                "end": 2721
+            },
+            {
+                "name": "v07_md_cpu_to_disk",
+                "start": 2723,
+                "end": 2730
+            },
+            {
+                "name": "v07_parse",
+                "start": 2732,
+                "end": 2765
+            },
+            {
+                "name": "v07_md_initialize",
+                "start": 2767,
+                "end": 2786
+            },
+            {
+                "name": "v08_check_for_resize",
+                "start": 2797,
+                "end": 2876
+            },
+            {
+                "name": "v08_md_open",
+                "start": 2878,
+                "end": 2888
+            },
+            {
+                "name": "v08_md_disk_to_cpu",
+                "start": 2890,
+                "end": 2902
+            },
+            {
+                "name": "v08_md_cpu_to_disk",
+                "start": 2904,
+                "end": 2912
+            },
+            {
+                "name": "v08_md_initialize",
+                "start": 2914,
+                "end": 2933
+            },
+            {
+                "name": "v08_md_close",
+                "start": 2935,
+                "end": 2950
+            },
+            {
+                "name": "v09_md_disk_to_cpu",
+                "start": 2955,
+                "end": 2967
+            },
+            {
+                "name": "v09_md_cpu_to_disk",
+                "start": 2969,
+                "end": 2977
+            },
+            {
+                "name": "v09_md_initialize",
+                "start": 2979,
+                "end": 3004
+            },
+            {
+                "name": "node_id_to_bm_idx",
+                "start": 3010,
+                "end": 3026
+            },
+            {
+                "name": "meta_get_gi",
+                "start": 3028,
+                "end": 3040
+            },
+            {
+                "name": "meta_show_gi",
+                "start": 3042,
+                "end": 3073
+            },
+            {
+                "name": "meta_dstate",
+                "start": 3075,
+                "end": 3100
+            },
+            {
+                "name": "meta_set_gi",
+                "start": 3102,
+                "end": 3141
+            },
+            {
+                "name": "print_dump_header",
+                "start": 3143,
+                "end": 3156
+            },
+            {
+                "name": "meta_dump_md",
+                "start": 3158,
+                "end": 3302
+            },
+            {
+                "name": "md_parse_error",
+                "start": 3304,
+                "end": 3397
+            },
+            {
+                "name": "EXP",
+                "start": 3399,
+                "end": 3403
+            },
+            {
+                "name": "assign_32_of_64bit",
+                "start": 3405,
+                "end": 3420
+            },
+            {
+                "name": "parse_bitmap_window_one_peer",
+                "start": 3422,
+                "end": 3493
+            },
+            {
+                "name": "parse_bitmap_window",
+                "start": 3495,
+                "end": 3507
+            },
+            {
+                "name": "parse_bitmap",
+                "start": 3509,
+                "end": 3559
+            },
+            {
+                "name": "verify_dumpfile_or_restore",
+                "start": 3561,
+                "end": 3724
+            },
+            {
+                "name": "meta_restore_md",
+                "start": 3726,
+                "end": 3729
+            },
+            {
+                "name": "meta_verify_dump_file",
+                "start": 3731,
+                "end": 3734
+            },
+            {
+                "name": "md_convert_07_to_08",
+                "start": 3736,
+                "end": 3792
+            },
+            {
+                "name": "md_convert_08_to_07",
+                "start": 3794,
+                "end": 3835
+            },
+            {
+                "name": "md_convert_08_to_09",
+                "start": 3837,
+                "end": 3857
+            },
+            {
+                "name": "md_convert_09_to_08",
+                "start": 3859,
+                "end": 3878
+            },
+            {
+                "name": "convert_md",
+                "start": 3880,
+                "end": 3935
+            },
+            {
+                "name": "may_be_extX",
+                "start": 3950,
+                "end": 3967
+            },
+            {
+                "name": "may_be_xfs",
+                "start": 3969,
+                "end": 3978
+            },
+            {
+                "name": "may_be_reiserfs",
+                "start": 3980,
+                "end": 3990
+            },
+            {
+                "name": "may_be_jfs",
+                "start": 3992,
+                "end": 4001
+            },
+            {
+                "name": "may_be_swap",
+                "start": 4009,
+                "end": 4022
+            },
+            {
+                "name": "guessed_size_from_pvs",
+                "start": 4026,
+                "end": 4128
+            },
+            {
+                "name": "may_be_LVM",
+                "start": 4130,
+                "end": 4139
+            },
+            {
+                "name": "check_for_existing_data",
+                "start": 4142,
+                "end": 4260
+            },
+            {
+                "name": "detect_md",
+                "start": 4263,
+                "end": 4287
+            },
+            {
+                "name": "check_internal_md_flavours",
+                "start": 4289,
+                "end": 4398
+            },
+            {
+                "name": "wipe_after_convert",
+                "start": 4400,
+                "end": 4409
+            },
+            {
+                "name": "check_external_md_flavours",
+                "start": 4411,
+                "end": 4452
+            },
+            {
+                "name": "v08_move_internal_md_after_resize",
+                "start": 4462,
+                "end": 4553
+            },
+            {
+                "name": "meta_create_md",
+                "start": 4555,
+                "end": 4657
+            },
+            {
+                "name": "meta_wipe_md",
+                "start": 4659,
+                "end": 4691
+            },
+            {
+                "name": "meta_outdate",
+                "start": 4693,
+                "end": 4715
+            },
+            {
+                "name": "meta_invalidate",
+                "start": 4717,
+                "end": 4735
+            },
+            {
+                "name": "meta_read_dev_uuid",
+                "start": 4737,
+                "end": 4749
+            },
+            {
+                "name": "meta_write_dev_uuid",
+                "start": 4751,
+                "end": 4774
+            },
+            {
+                "name": "print_usage_and_exit",
+                "start": 4776,
+                "end": 4806
+            },
+            {
+                "name": "parse_format",
+                "start": 4808,
+                "end": 4830
+            },
+            {
+                "name": "drbd_str_disk",
+                "start": 4833,
+                "end": 4856
+            },
+            {
+                "name": "is_attached",
+                "start": 4859,
+                "end": 4903
+            },
+            {
+                "name": "meta_chk_offline_resize",
+                "start": 4905,
+                "end": 4943
+            },
+            {
+                "name": "meta_forget_peer",
+                "start": 4945,
+                "end": 4965
+            },
+            {
+                "name": "new_cfg",
+                "start": 4968,
+                "end": 4990
+            },
+            {
+                "name": "main",
+                "start": 4992,
+                "end": 5185
+            }
+        ],
+        "user/shared/shared_main.h": [
+            {
+                "name": "substitute_deprecated_cmd",
+                "start": 32,
+                "end": 33
+            }
+        ],
+        "user/shared/shared_tool.c": [
+            {
+                "name": "shell_escape",
+                "start": 34,
+                "end": 64
+            },
+            {
+                "name": "unescape",
+                "start": 70,
+                "end": 86
+            },
+            {
+                "name": "ppsize",
+                "start": 90,
+                "end": 104
+            },
+            {
+                "name": "make_optstring",
+                "start": 106,
+                "end": 135
+            },
+            {
+                "name": "fget_token",
+                "start": 146,
+                "end": 166
+            },
+            {
+                "name": "sget_token",
+                "start": 168,
+                "end": 188
+            },
+            {
+                "name": "bdev_size",
+                "start": 190,
+                "end": 213
+            },
+            {
+                "name": "lk_bdev_path",
+                "start": 215,
+                "end": 220
+            },
+            {
+                "name": "lk_bdev_save",
+                "start": 237,
+                "end": 263
+            },
+            {
+                "name": "lk_bdev_delete",
+                "start": 266,
+                "end": 274
+            },
+            {
+                "name": "lk_bdev_load",
+                "start": 278,
+                "end": 325
+            },
+            {
+                "name": "get_random_bytes",
+                "start": 327,
+                "end": 341
+            },
+            {
+                "name": "m_asprintf",
+                "start": 343,
+                "end": 358
+            },
+            {
+                "name": "fprintf_hex",
+                "start": 362,
+                "end": 417
+            },
+            {
+                "name": "ensure_sanity_of_res_name",
+                "start": 420,
+                "end": 442
+            },
+            {
+                "name": "addr_scope_local",
+                "start": 444,
+                "end": 455
+            },
+            {
+                "name": "m_strtoll",
+                "start": 456,
+                "end": 483
+            },
+            {
+                "name": "alarm_handler",
+                "start": 488,
+                "end": 491
+            },
+            {
+                "name": "unlock_fd",
+                "start": 495,
+                "end": 498
+            },
+            {
+                "name": "get_fd_lockfile_timeout",
+                "start": 500,
+                "end": 547
+            },
+            {
+                "name": "dt_minor_of_dev",
+                "start": 549,
+                "end": 596
+            },
+            {
+                "name": "only_digits",
+                "start": 598,
+                "end": 604
+            },
+            {
+                "name": "dt_lock_drbd",
+                "start": 606,
+                "end": 641
+            },
+            {
+                "name": "dt_unlock_drbd",
+                "start": 644,
+                "end": 648
+            },
+            {
+                "name": "dt_print_gc",
+                "start": 650,
+                "end": 661
+            },
+            {
+                "name": "dt_pretty_print_gc",
+                "start": 663,
+                "end": 685
+            },
+            {
+                "name": "dt_print_uuids",
+                "start": 687,
+                "end": 704
+            }
+        ],
+        "user/shared/libgenl.h": [
+            {
+                "name": "msg_tailroom",
+                "start": 75,
+                "end": 78
+            },
+            {
+                "name": "msg_new",
+                "start": 80,
+                "end": 90
+            },
+            {
+                "name": "msg_free",
+                "start": 92,
+                "end": 95
+            },
+            {
+                "name": "msg_put",
+                "start": 97,
+                "end": 103
+            },
+            {
+                "name": "nla_validate",
+                "start": 307,
+                "end": 308
+            },
+            {
+                "name": "nla_parse",
+                "start": 309,
+                "end": 311
+            },
+            {
+                "name": "nla_strlcpy",
+                "start": 314,
+                "end": 315
+            },
+            {
+                "name": "nla_memcmp",
+                "start": 317,
+                "end": 318
+            },
+            {
+                "name": "__nla_reserve",
+                "start": 320,
+                "end": 321
+            },
+            {
+                "name": "nla_reserve",
+                "start": 323,
+                "end": 324
+            },
+            {
+                "name": "__nla_put",
+                "start": 326,
+                "end": 327
+            },
+            {
+                "name": "__nla_put_nohdr",
+                "start": 328,
+                "end": 329
+            },
+            {
+                "name": "nla_put",
+                "start": 330,
+                "end": 331
+            },
+            {
+                "name": "nla_put_nohdr",
+                "start": 332,
+                "end": 333
+            },
+            {
+                "name": "nla_append",
+                "start": 334,
+                "end": 335
+            },
+            {
+                "name": "nlmsg_msg_size",
+                "start": 345,
+                "end": 348
+            },
+            {
+                "name": "nlmsg_total_size",
+                "start": 354,
+                "end": 357
+            },
+            {
+                "name": "nlmsg_padlen",
+                "start": 363,
+                "end": 366
+            },
+            {
+                "name": "nlmsg_data",
+                "start": 372,
+                "end": 375
+            },
+            {
+                "name": "nlmsg_len",
+                "start": 381,
+                "end": 384
+            },
+            {
+                "name": "nlmsg_attrdata",
+                "start": 391,
+                "end": 396
+            },
+            {
+                "name": "nlmsg_attrlen",
+                "start": 403,
+                "end": 406
+            },
+            {
+                "name": "nlmsg_ok",
+                "start": 413,
+                "end": 418
+            },
+            {
+                "name": "nlmsg_next",
+                "start": 428,
+                "end": 435
+            },
+            {
+                "name": "nlmsg_parse",
+                "start": 447,
+                "end": 456
+            },
+            {
+                "name": "nlmsg_find_attr",
+                "start": 466,
+                "end": 471
+            },
+            {
+                "name": "nlmsg_validate",
+                "start": 480,
+                "end": 488
+            },
+            {
+                "name": "nlmsg_report",
+                "start": 496,
+                "end": 499
+            },
+            {
+                "name": "nla_attr_size",
+                "start": 532,
+                "end": 535
+            },
+            {
+                "name": "nla_total_size",
+                "start": 541,
+                "end": 544
+            },
+            {
+                "name": "nla_padlen",
+                "start": 550,
+                "end": 553
+            },
+            {
+                "name": "nla_type",
+                "start": 563,
+                "end": 566
+            },
+            {
+                "name": "nla_data",
+                "start": 572,
+                "end": 575
+            },
+            {
+                "name": "nla_len",
+                "start": 581,
+                "end": 584
+            },
+            {
+                "name": "nla_ok",
+                "start": 591,
+                "end": 596
+            },
+            {
+                "name": "nla_next",
+                "start": 606,
+                "end": 612
+            },
+            {
+                "name": "nla_find_nested",
+                "start": 621,
+                "end": 624
+            },
+            {
+                "name": "nla_parse_nested",
+                "start": 635,
+                "end": 640
+            },
+            {
+                "name": "nla_put_u8",
+                "start": 648,
+                "end": 651
+            },
+            {
+                "name": "nla_put_u16",
+                "start": 659,
+                "end": 662
+            },
+            {
+                "name": "nla_put_u32",
+                "start": 670,
+                "end": 673
+            },
+            {
+                "name": "nla_put_u64",
+                "start": 681,
+                "end": 684
+            },
+            {
+                "name": "nla_put_string",
+                "start": 692,
+                "end": 696
+            },
+            {
+                "name": "nla_put_flag",
+                "start": 703,
+                "end": 706
+            },
+            {
+                "name": "nla_get_u32",
+                "start": 754,
+                "end": 757
+            },
+            {
+                "name": "nla_get_be32",
+                "start": 763,
+                "end": 766
+            },
+            {
+                "name": "nla_get_u16",
+                "start": 772,
+                "end": 775
+            },
+            {
+                "name": "nla_get_be16",
+                "start": 781,
+                "end": 784
+            },
+            {
+                "name": "nla_get_le16",
+                "start": 790,
+                "end": 793
+            },
+            {
+                "name": "nla_get_u8",
+                "start": 799,
+                "end": 802
+            },
+            {
+                "name": "nla_get_u64",
+                "start": 808,
+                "end": 815
+            },
+            {
+                "name": "nla_get_be64",
+                "start": 821,
+                "end": 824
+            },
+            {
+                "name": "nla_get_flag",
+                "start": 830,
+                "end": 833
+            },
+            {
+                "name": "nla_nest_start",
+                "start": 842,
+                "end": 850
+            },
+            {
+                "name": "nla_nest_end",
+                "start": 862,
+                "end": 866
+            },
+            {
+                "name": "nla_validate_nested",
+                "start": 880,
+                "end": 884
+            },
+            {
+                "name": "genlmsg_put",
+                "start": 969,
+                "end": 993
+            },
+            {
+                "name": "genlmsg_data",
+                "start": 999,
+                "end": 1002
+            },
+            {
+                "name": "genlmsg_len",
+                "start": 1008,
+                "end": 1013
+            },
+            {
+                "name": "genlmsg_msg_size",
+                "start": 1019,
+                "end": 1022
+            },
+            {
+                "name": "genlmsg_total_size",
+                "start": 1028,
+                "end": 1031
+            }
+        ],
+        "user/shared/libgenl.c": [
+            {
+                "name": "genl_join_mc_group",
+                "start": 8,
+                "end": 24
+            },
+            {
+                "name": "genl_connect",
+                "start": 36,
+                "end": 78
+            },
+            {
+                "name": "do_send",
+                "start": 81,
+                "end": 94
+            },
+            {
+                "name": "genl_send",
+                "start": 96,
+                "end": 115
+            },
+            {
+                "name": "genl_recv_timeout",
+                "start": 123,
+                "end": 196
+            },
+            {
+                "name": "genl_recv_msgs",
+                "start": 203,
+                "end": 260
+            },
+            {
+                "name": "genl_connect_to_family",
+                "start": 269,
+                "end": 373
+            },
+            {
+                "name": "validate_nla",
+                "start": 397,
+                "end": 474
+            },
+            {
+                "name": "nla_validate",
+                "start": 489,
+                "end": 504
+            },
+            {
+                "name": "nla_policy_len",
+                "start": 517,
+                "end": 530
+            },
+            {
+                "name": "nla_parse",
+                "start": 547,
+                "end": 579
+            },
+            {
+                "name": "nla_find",
+                "start": 589,
+                "end": 599
+            },
+            {
+                "name": "nla_strlcpy",
+                "start": 613,
+                "end": 629
+            },
+            {
+                "name": "nla_memcpy",
+                "start": 642,
+                "end": 649
+            },
+            {
+                "name": "nla_memcmp",
+                "start": 657,
+                "end": 666
+            },
+            {
+                "name": "nla_strcmp",
+                "start": 673,
+                "end": 682
+            },
+            {
+                "name": "__nla_reserve",
+                "start": 696,
+                "end": 707
+            },
+            {
+                "name": "__nla_reserve_nohdr",
+                "start": 719,
+                "end": 727
+            },
+            {
+                "name": "nla_reserve",
+                "start": 741,
+                "end": 747
+            },
+            {
+                "name": "nla_reserve_nohdr",
+                "start": 759,
+                "end": 765
+            },
+            {
+                "name": "__nla_put",
+                "start": 777,
+                "end": 784
+            },
+            {
+                "name": "__nla_put_nohdr",
+                "start": 795,
+                "end": 801
+            },
+            {
+                "name": "nla_put",
+                "start": 813,
+                "end": 820
+            },
+            {
+                "name": "nla_put_nohdr",
+                "start": 831,
+                "end": 838
+            },
+            {
+                "name": "nla_append",
+                "start": 849,
+                "end": 856
+            }
+        ],
+        "user/shared/shared_parser.c": [
+            {
+                "name": "include_file",
+                "start": 44,
+                "end": 63
+            },
+            {
+                "name": "check_uniq",
+                "start": 65,
+                "end": 75
+            },
+            {
+                "name": "check_upr",
+                "start": 78,
+                "end": 88
+            }
+        ],
+        "user/v84/drbd_nla.h": [
+            {
+                "name": "drbd_nla_parse_nested",
+                "start": 4,
+                "end": 5
+            }
+        ],
+        "user/v84/linux/genl_magic_func.h": [
+            {
+                "name": "CONCAT_",
+                "start": 24,
+                "end": 25
+            },
+            {
+                "name": "CONCAT_",
+                "start": 221,
+                "end": 222
+            },
+            {
+                "name": "CONCAT_",
+                "start": 223,
+                "end": 233
+            }
+        ],
+        "user/v84/config_flags.c": [
+            {
+                "name": "enum_string_to_int",
+                "start": 41,
+                "end": 53
+            },
+            {
+                "name": "enum_is_default",
+                "start": 55,
+                "end": 61
+            },
+            {
+                "name": "enum_is_equal",
+                "start": 63,
+                "end": 66
+            },
+            {
+                "name": "type_of_field",
+                "start": 68,
+                "end": 71
+            },
+            {
+                "name": "len_of_field",
+                "start": 73,
+                "end": 76
+            },
+            {
+                "name": "get_enum",
+                "start": 78,
+                "end": 87
+            },
+            {
+                "name": "put_enum",
+                "start": 89,
+                "end": 100
+            },
+            {
+                "name": "enum_usage",
+                "start": 102,
+                "end": 121
+            },
+            {
+                "name": "enum_is_default_nocase",
+                "start": 123,
+                "end": 129
+            },
+            {
+                "name": "enum_is_equal_nocase",
+                "start": 131,
+                "end": 134
+            },
+            {
+                "name": "put_enum_nocase",
+                "start": 136,
+                "end": 147
+            },
+            {
+                "name": "enum_describe_xml",
+                "start": 149,
+                "end": 162
+            },
+            {
+                "name": "numeric_is_default",
+                "start": 166,
+                "end": 173
+            },
+            {
+                "name": "numeric_is_equal",
+                "start": 175,
+                "end": 183
+            },
+            {
+                "name": "get_numeric",
+                "start": 185,
+                "end": 233
+            },
+            {
+                "name": "put_numeric",
+                "start": 235,
+                "end": 259
+            },
+            {
+                "name": "numeric_usage",
+                "start": 261,
+                "end": 267
+            },
+            {
+                "name": "numeric_describe_xml",
+                "start": 269,
+                "end": 286
+            },
+            {
+                "name": "boolean_string_to_int",
+                "start": 290,
+                "end": 298
+            },
+            {
+                "name": "boolean_is_default",
+                "start": 300,
+                "end": 306
+            },
+            {
+                "name": "boolean_is_equal",
+                "start": 308,
+                "end": 311
+            },
+            {
+                "name": "get_boolean",
+                "start": 313,
+                "end": 320
+            },
+            {
+                "name": "put_boolean",
+                "start": 322,
+                "end": 333
+            },
+            {
+                "name": "put_flag",
+                "start": 335,
+                "end": 347
+            },
+            {
+                "name": "boolean_usage",
+                "start": 349,
+                "end": 353
+            },
+            {
+                "name": "boolean_describe_xml",
+                "start": 355,
+                "end": 362
+            },
+            {
+                "name": "string_is_default",
+                "start": 366,
+                "end": 369
+            },
+            {
+                "name": "string_is_equal",
+                "start": 371,
+                "end": 374
+            },
+            {
+                "name": "get_string",
+                "start": 376,
+                "end": 386
+            },
+            {
+                "name": "put_string",
+                "start": 388,
+                "end": 394
+            },
+            {
+                "name": "string_usage",
+                "start": 396,
+                "end": 400
+            },
+            {
+                "name": "string_describe_xml",
+                "start": 402,
+                "end": 407
+            },
+            {
+                "name": "double_quote_string",
+                "start": 409,
+                "end": 434
+            },
+            {
+                "name": "address_is_default",
+                "start": 437,
+                "end": 440
+            },
+            {
+                "name": "address_is_equal",
+                "start": 442,
+                "end": 445
+            },
+            {
+                "name": "get_af_ssocks",
+                "start": 452,
+                "end": 491
+            },
+            {
+                "name": "af_to_str",
+                "start": 493,
+                "end": 508
+            },
+            {
+                "name": "sprint_address",
+                "start": 510,
+                "end": 542
+            },
+            {
+                "name": "get_address",
+                "start": 544,
+                "end": 550
+            },
+            {
+                "name": "resolv6",
+                "start": 552,
+                "end": 586
+            },
+            {
+                "name": "resolv",
+                "start": 588,
+                "end": 603
+            },
+            {
+                "name": "split_ipv6_addr",
+                "start": 605,
+                "end": 622
+            },
+            {
+                "name": "split_address",
+                "start": 624,
+                "end": 664
+            },
+            {
+                "name": "nla_put_address",
+                "start": 666,
+                "end": 692
+            },
+            {
+                "name": "put_address",
+                "start": 694,
+                "end": 700
+            },
+            {
+                "name": "address_usage",
+                "start": 702,
+                "end": 706
+            },
+            {
+                "name": "address_describe_xml",
+                "start": 708,
+                "end": 713
+            }
+        ],
+        "user/v84/drbdadm.h": [
+            {
+                "name": "m_system_ex",
+                "start": 221,
+                "end": 226
+            },
+            {
+                "name": "schedule_deferred_cmd",
+                "start": 257,
+                "end": 260
+            }
+        ],
+        "user/v84/drbdadm_usage_cnt.c": [
+            {
+                "name": "slurp_proc_drbd",
+                "start": 77,
+                "end": 99
+            },
+            {
+                "name": "read_hex",
+                "start": 101,
+                "end": 118
+            },
+            {
+                "name": "vcs_ver_from_str",
+                "start": 120,
+                "end": 142
+            },
+            {
+                "name": "vcs_from_str",
+                "start": 144,
+                "end": 187
+            },
+            {
+                "name": "vcs_get_current",
+                "start": 192,
+                "end": 208
+            },
+            {
+                "name": "vcs_get_userland",
+                "start": 210,
+                "end": 215
+            },
+            {
+                "name": "version_code_kernel",
+                "start": 217,
+                "end": 223
+            },
+            {
+                "name": "version_code_userland",
+                "start": 225,
+                "end": 229
+            },
+            {
+                "name": "vcs_eq",
+                "start": 231,
+                "end": 238
+            },
+            {
+                "name": "vcs_ver_cmp",
+                "start": 240,
+                "end": 243
+            },
+            {
+                "name": "warn_on_version_mismatch",
+                "start": 245,
+                "end": 278
+            },
+            {
+                "name": "add_lib_drbd_to_path",
+                "start": 280,
+                "end": 290
+            },
+            {
+                "name": "maybe_exec_drbdadm_83",
+                "start": 292,
+                "end": 308
+            },
+            {
+                "name": "vcs_to_str",
+                "start": 310,
+                "end": 325
+            },
+            {
+                "name": "write_node_id",
+                "start": 327,
+                "end": 364
+            },
+            {
+                "name": "read_node_id",
+                "start": 367,
+                "end": 400
+            },
+            {
+                "name": "alarm_handler",
+                "start": 408,
+                "end": 411
+            },
+            {
+                "name": "my_gethostbyname",
+                "start": 415,
+                "end": 439
+            },
+            {
+                "name": "make_get_request",
+                "start": 452,
+                "end": 532
+            },
+            {
+                "name": "url_encode",
+                "start": 534,
+                "end": 555
+            },
+            {
+                "name": "uc_node",
+                "start": 561,
+                "end": 651
+            },
+            {
+                "name": "run_admm_generic",
+                "start": 655,
+                "end": 699
+            },
+            {
+                "name": "adm_create_md",
+                "start": 701,
+                "end": 780
+            }
+        ],
+        "user/v84/drbdadm_adjust.c": [
+            {
+                "name": "m_popen",
+                "start": 51,
+                "end": 88
+            },
+            {
+                "name": "is_equal",
+                "start": 90,
+                "end": 101
+            },
+            {
+                "name": "is_default",
+                "start": 103,
+                "end": 113
+            },
+            {
+                "name": "opts_equal",
+                "start": 115,
+                "end": 155
+            },
+            {
+                "name": "addr_equal",
+                "start": 157,
+                "end": 194
+            },
+            {
+                "name": "int_eq",
+                "start": 197,
+                "end": 200
+            },
+            {
+                "name": "disk_equal",
+                "start": 202,
+                "end": 218
+            },
+            {
+                "name": "find_option_in_resources",
+                "start": 222,
+                "end": 242
+            },
+            {
+                "name": "do_proxy_reconf",
+                "start": 244,
+                "end": 251
+            },
+            {
+                "name": "_is_plugin_in_list",
+                "start": 257,
+                "end": 292
+            },
+            {
+                "name": "proxy_reconf",
+                "start": 295,
+                "end": 413
+            },
+            {
+                "name": "need_trigger_kobj_change",
+                "start": 415,
+                "end": 443
+            },
+            {
+                "name": "move_opt_to_head",
+                "start": 449,
+                "end": 463
+            },
+            {
+                "name": "compare_max_bio_bvecs",
+                "start": 465,
+                "end": 488
+            },
+            {
+                "name": "compare_size",
+                "start": 491,
+                "end": 505
+            },
+            {
+                "name": "compare_volume",
+                "start": 507,
+                "end": 544
+            },
+            {
+                "name": "new_to_be_deleted_minor_from_template",
+                "start": 546,
+                "end": 564
+            },
+            {
+                "name": "compare_volumes",
+                "start": 578,
+                "end": 605
+            },
+            {
+                "name": "adm_adjust",
+                "start": 610,
+                "end": 747
+            }
+        ],
+        "user/v84/drbd_nla.c": [
+            {
+                "name": "drbd_nla_check_mandatory",
+                "start": 6,
+                "end": 28
+            },
+            {
+                "name": "drbd_nla_parse_nested",
+                "start": 30,
+                "end": 40
+            },
+            {
+                "name": "drbd_nla_find_nested",
+                "start": 42,
+                "end": 50
+            }
+        ],
+        "user/v84/drbdadm_parser.c": [
+            {
+                "name": "names_from_str",
+                "start": 54,
+                "end": 63
+            },
+            {
+                "name": "_names_to_str_c",
+                "start": 65,
+                "end": 81
+            },
+            {
+                "name": "_names_to_str",
+                "start": 83,
+                "end": 86
+            },
+            {
+                "name": "name_in_names",
+                "start": 88,
+                "end": 96
+            },
+            {
+                "name": "free_names",
+                "start": 98,
+                "end": 107
+            },
+            {
+                "name": "append_names",
+                "start": 109,
+                "end": 124
+            },
+            {
+                "name": "concat_names",
+                "start": 127,
+                "end": 135
+            },
+            {
+                "name": "m_strtoll_range",
+                "start": 137,
+                "end": 157
+            },
+            {
+                "name": "range_check",
+                "start": 159,
+                "end": 278
+            },
+            {
+                "name": "new_opt",
+                "start": 280,
+                "end": 289
+            },
+            {
+                "name": "derror",
+                "start": 290,
+                "end": 296
+            },
+            {
+                "name": "pdperror",
+                "start": 298,
+                "end": 304
+            },
+            {
+                "name": "pperror",
+                "start": 306,
+                "end": 313
+            },
+            {
+                "name": "check_uniq_init",
+                "start": 343,
+                "end": 350
+            },
+            {
+                "name": "check_upr_init",
+                "start": 356,
+                "end": 369
+            },
+            {
+                "name": "vcheck_uniq",
+                "start": 375,
+                "end": 425
+            },
+            {
+                "name": "check_meta_disk",
+                "start": 427,
+                "end": 440
+            },
+            {
+                "name": "pe_expected",
+                "start": 442,
+                "end": 449
+            },
+            {
+                "name": "check_string_error",
+                "start": 451,
+                "end": 469
+            },
+            {
+                "name": "pe_expected_got",
+                "start": 471,
+                "end": 483
+            },
+            {
+                "name": "expect_STRING_or_INT",
+                "start": 497,
+                "end": 511
+            },
+            {
+                "name": "parse_global",
+                "start": 513,
+                "end": 565
+            },
+            {
+                "name": "check_and_change_deprecated_alias",
+                "start": 567,
+                "end": 586
+            },
+            {
+                "name": "parse_options_syncer",
+                "start": 589,
+                "end": 671
+            },
+            {
+                "name": "parse_options_d",
+                "start": 673,
+                "end": 736
+            },
+            {
+                "name": "parse_options",
+                "start": 738,
+                "end": 741
+            },
+            {
+                "name": "__parse_address",
+                "start": 743,
+                "end": 785
+            },
+            {
+                "name": "parse_address",
+                "start": 787,
+                "end": 797
+            },
+            {
+                "name": "parse_hosts",
+                "start": 799,
+                "end": 828
+            },
+            {
+                "name": "parse_proxy_section",
+                "start": 830,
+                "end": 866
+            },
+            {
+                "name": "parse_meta_disk",
+                "start": 868,
+                "end": 893
+            },
+            {
+                "name": "check_minor_nonsense",
+                "start": 895,
+                "end": 924
+            },
+            {
+                "name": "parse_device",
+                "start": 926,
+                "end": 980
+            },
+            {
+                "name": "find_volume",
+                "start": 982,
+                "end": 990
+            },
+            {
+                "name": "volume0",
+                "start": 992,
+                "end": 1013
+            },
+            {
+                "name": "parse_volume_stmt",
+                "start": 1015,
+                "end": 1057
+            },
+            {
+                "name": "parse_volume",
+                "start": 1059,
+                "end": 1079
+            },
+            {
+                "name": "parse_stacked_volume",
+                "start": 1081,
+                "end": 1097
+            },
+            {
+                "name": "inherit_volumes",
+                "start": 1099,
+                "end": 1130
+            },
+            {
+                "name": "check_volume_complete",
+                "start": 1132,
+                "end": 1142
+            },
+            {
+                "name": "check_volumes_complete",
+                "start": 1144,
+                "end": 1158
+            },
+            {
+                "name": "check_volume_sets_equal",
+                "start": 1160,
+                "end": 1208
+            },
+            {
+                "name": "check_volumes_hosts",
+                "start": 1211,
+                "end": 1222
+            },
+            {
+                "name": "parse_host_section",
+                "start": 1230,
+                "end": 1363
+            },
+            {
+                "name": "parse_skip",
+                "start": 1365,
+                "end": 1402
+            },
+            {
+                "name": "parse_stacked_section",
+                "start": 1404,
+                "end": 1461
+            },
+            {
+                "name": "startup_delegate",
+                "start": 1463,
+                "end": 1474
+            },
+            {
+                "name": "net_delegate",
+                "start": 1476,
+                "end": 1495
+            },
+            {
+                "name": "set_me_in_resource",
+                "start": 1497,
+                "end": 1554
+            },
+            {
+                "name": "set_peer_in_resource",
+                "start": 1556,
+                "end": 1647
+            },
+            {
+                "name": "set_on_hosts_in_res",
+                "start": 1649,
+                "end": 1700
+            },
+            {
+                "name": "set_disk_in_res",
+                "start": 1702,
+                "end": 1752
+            },
+            {
+                "name": "proxy_delegate",
+                "start": 1754,
+                "end": 1805
+            },
+            {
+                "name": "parse_proxy_options",
+                "start": 1807,
+                "end": 1819
+            },
+            {
+                "name": "parse_proxy_options_section",
+                "start": 1821,
+                "end": 1836
+            },
+            {
+                "name": "parse_resource",
+                "start": 1838,
+                "end": 2004
+            },
+            {
+                "name": "parse_resource_for_adjust",
+                "start": 2006,
+                "end": 2025
+            },
+            {
+                "name": "post_parse",
+                "start": 2027,
+                "end": 2049
+            },
+            {
+                "name": "include_stmt",
+                "start": 2051,
+                "end": 2111
+            },
+            {
+                "name": "my_parse",
+                "start": 2113,
+                "end": 2152
+            }
+        ],
+        "user/v84/drbdtool_common.c": [
+            {
+                "name": "new_strtoll",
+                "start": 28,
+                "end": 101
+            },
+            {
+                "name": "dt_pretty_print_uuids",
+                "start": 103,
+                "end": 133
+            }
+        ],
+        "user/v84/drbdsetup.c": [
+            {
+                "name": "error_to_string",
+                "start": 515,
+                "end": 520
+            },
+            {
+                "name": "endpoints_equal",
+                "start": 545,
+                "end": 551
+            },
+            {
+                "name": "conv_block_dev",
+                "start": 553,
+                "end": 580
+            },
+            {
+                "name": "conv_md_idx",
+                "start": 582,
+                "end": 594
+            },
+            {
+                "name": "conv_resource_name",
+                "start": 596,
+                "end": 602
+            },
+            {
+                "name": "conv_volume",
+                "start": 604,
+                "end": 611
+            },
+            {
+                "name": "conv_minor",
+                "start": 613,
+                "end": 625
+            },
+            {
+                "name": "make_longoptions",
+                "start": 627,
+                "end": 707
+            },
+            {
+                "name": "print_config_error",
+                "start": 710,
+                "end": 769
+            },
+            {
+                "name": "warn_print_excess_args",
+                "start": 771,
+                "end": 777
+            },
+            {
+                "name": "drbd_tla_parse",
+                "start": 779,
+                "end": 785
+            },
+            {
+                "name": "_generic_config_cmd",
+                "start": 790,
+                "end": 935
+            },
+            {
+                "name": "generic_config_cmd",
+                "start": 937,
+                "end": 940
+            },
+            {
+                "name": "del_minor_cmd",
+                "start": 942,
+                "end": 950
+            },
+            {
+                "name": "del_resource_cmd",
+                "start": 952,
+                "end": 960
+            },
+            {
+                "name": "find_cmd_by_name",
+                "start": 962,
+                "end": 972
+            },
+            {
+                "name": "print_options",
+                "start": 974,
+                "end": 1031
+            },
+            {
+                "name": "choose_timeout",
+                "start": 1043,
+                "end": 1112
+            },
+            {
+                "name": "kernel_older_than",
+                "start": 1115,
+                "end": 1138
+            },
+            {
+                "name": "generic_get",
+                "start": 1145,
+                "end": 1418
+            },
+            {
+                "name": "generic_get_cmd",
+                "start": 1420,
+                "end": 1537
+            },
+            {
+                "name": "show_address",
+                "start": 1539,
+                "end": 1544
+            },
+            {
+                "name": "remember_minor",
+                "start": 1552,
+                "end": 1568
+            },
+            {
+                "name": "free_minors",
+                "start": 1570,
+                "end": 1577
+            },
+            {
+                "name": "enumerate_minors",
+                "start": 1582,
+                "end": 1600
+            },
+            {
+                "name": "remember_resource",
+                "start": 1602,
+                "end": 1629
+            },
+            {
+                "name": "free_resources",
+                "start": 1631,
+                "end": 1640
+            },
+            {
+                "name": "resource_name_cmp",
+                "start": 1642,
+                "end": 1645
+            },
+            {
+                "name": "sort_resources",
+                "start": 1647,
+                "end": 1669
+            },
+            {
+                "name": "list_resources",
+                "start": 1674,
+                "end": 1697
+            },
+            {
+                "name": "remember_device",
+                "start": 1699,
+                "end": 1723
+            },
+            {
+                "name": "list_devices",
+                "start": 1728,
+                "end": 1750
+            },
+            {
+                "name": "free_devices",
+                "start": 1752,
+                "end": 1759
+            },
+            {
+                "name": "remember_connection",
+                "start": 1761,
+                "end": 1788
+            },
+            {
+                "name": "sort_connections",
+                "start": 1799,
+                "end": 1823
+            },
+            {
+                "name": "list_connections",
+                "start": 1828,
+                "end": 1850
+            },
+            {
+                "name": "free_connections",
+                "start": 1852,
+                "end": 1859
+            },
+            {
+                "name": "remember_peer_device",
+                "start": 1861,
+                "end": 1884
+            },
+            {
+                "name": "list_peer_devices",
+                "start": 1889,
+                "end": 1911
+            },
+            {
+                "name": "free_peer_devices",
+                "start": 1913,
+                "end": 1920
+            },
+            {
+                "name": "show_scmd",
+                "start": 1928,
+                "end": 2016
+            },
+            {
+                "name": "lk_bdev_scmd",
+                "start": 2018,
+                "end": 2059
+            },
+            {
+                "name": "sh_status_scmd",
+                "start": 2061,
+                "end": 2145
+            },
+            {
+                "name": "role_scmd",
+                "start": 2147,
+                "end": 2175
+            },
+            {
+                "name": "cstate_scmd",
+                "start": 2177,
+                "end": 2200
+            },
+            {
+                "name": "dstate_scmd",
+                "start": 2202,
+                "end": 2225
+            },
+            {
+                "name": "uuids_scmd",
+                "start": 2227,
+                "end": 2277
+            },
+            {
+                "name": "down_cmd",
+                "start": 2279,
+                "end": 2303
+            },
+            {
+                "name": "susp_str",
+                "start": 2305,
+                "end": 2320
+            },
+            {
+                "name": "nowrap_printf",
+                "start": 2322,
+                "end": 2332
+            },
+            {
+                "name": "print_resource_statistics",
+                "start": 2334,
+                "end": 2353
+            },
+            {
+                "name": "print_device_statistics",
+                "start": 2355,
+                "end": 2406
+            },
+            {
+                "name": "print_connection_statistics",
+                "start": 2408,
+                "end": 2416
+            },
+            {
+                "name": "print_peer_device_statistics",
+                "start": 2418,
+                "end": 2436
+            },
+            {
+                "name": "resource_status",
+                "start": 2438,
+                "end": 2471
+            },
+            {
+                "name": "device_status",
+                "start": 2473,
+                "end": 2495
+            },
+            {
+                "name": "resync_susp_str",
+                "start": 2497,
+                "end": 2512
+            },
+            {
+                "name": "peer_device_status",
+                "start": 2514,
+                "end": 2560
+            },
+            {
+                "name": "peer_devices_status",
+                "start": 2562,
+                "end": 2571
+            },
+            {
+                "name": "connection_status",
+                "start": 2573,
+                "end": 2624
+            },
+            {
+                "name": "stop_colors",
+                "start": 2626,
+                "end": 2631
+            },
+            {
+                "name": "link_peer_devices_to_devices",
+                "start": 2633,
+                "end": 2646
+            },
+            {
+                "name": "status_cmd",
+                "start": 2650,
+                "end": 2731
+            },
+            {
+                "name": "af_to_str",
+                "start": 2733,
+                "end": 2748
+            },
+            {
+                "name": "address_str",
+                "start": 2750,
+                "end": 2778
+            },
+            {
+                "name": "event_key",
+                "start": 2780,
+                "end": 2853
+            },
+            {
+                "name": "known_objects_cmp",
+                "start": 2855,
+                "end": 2857
+            },
+            {
+                "name": "update_info",
+                "start": 2859,
+                "end": 2901
+            },
+            {
+                "name": "print_notifications",
+                "start": 2903,
+                "end": 3162
+            },
+            {
+                "name": "print_state",
+                "start": 3166,
+                "end": 3183
+            },
+            {
+                "name": "print_broadcast_events",
+                "start": 3185,
+                "end": 3278
+            },
+            {
+                "name": "w_connected_state",
+                "start": 3280,
+                "end": 3319
+            },
+            {
+                "name": "w_synced_state",
+                "start": 3321,
+                "end": 3350
+            },
+            {
+                "name": "power_of_two",
+                "start": 3355,
+                "end": 3358
+            },
+            {
+                "name": "print_command_usage",
+                "start": 3360,
+                "end": 3494
+            },
+            {
+                "name": "print_usage_and_exit",
+                "start": 3496,
+                "end": 3520
+            },
+            {
+                "name": "modprobe_drbd",
+                "start": 3522,
+                "end": 3546
+            },
+            {
+                "name": "exec_legacy_drbdsetup",
+                "start": 3548,
+                "end": 3579
+            },
+            {
+                "name": "main",
+                "start": 3581,
+                "end": 3758
+            }
+        ],
+        "user/v84/drbdsetup_colors.c": [
+            {
+                "name": "stop_color_code",
+                "start": 67,
+                "end": 70
+            },
+            {
+                "name": "color_code",
+                "start": 72,
+                "end": 92
+            },
+            {
+                "name": "role_color_start",
+                "start": 94,
+                "end": 98
+            },
+            {
+                "name": "role_color_stop",
+                "start": 100,
+                "end": 104
+            },
+            {
+                "name": "cstate_color_start",
+                "start": 106,
+                "end": 110
+            },
+            {
+                "name": "cstate_color_stop",
+                "start": 112,
+                "end": 116
+            },
+            {
+                "name": "is_local_repl_state",
+                "start": 118,
+                "end": 129
+            },
+            {
+                "name": "repl_state_color_start",
+                "start": 131,
+                "end": 136
+            },
+            {
+                "name": "repl_state_color_stop",
+                "start": 138,
+                "end": 143
+            },
+            {
+                "name": "disk_state_color_start",
+                "start": 145,
+                "end": 149
+            },
+            {
+                "name": "disk_state_color_stop",
+                "start": 151,
+                "end": 155
+            }
+        ],
+        "user/v84/registry.c": [
+            {
+                "name": "linkname_from_minor",
+                "start": 47,
+                "end": 50
+            },
+            {
+                "name": "unregister_minor",
+                "start": 52,
+                "end": 64
+            },
+            {
+                "name": "__readlink",
+                "start": 66,
+                "end": 79
+            },
+            {
+                "name": "register_path",
+                "start": 81,
+                "end": 110
+            },
+            {
+                "name": "register_minor",
+                "start": 112,
+                "end": 118
+            },
+            {
+                "name": "resolve_symlink",
+                "start": 120,
+                "end": 127
+            },
+            {
+                "name": "lookup_minor",
+                "start": 129,
+                "end": 141
+            },
+            {
+                "name": "linkname_from_resource_name",
+                "start": 143,
+                "end": 146
+            },
+            {
+                "name": "unregister_resource",
+                "start": 148,
+                "end": 160
+            },
+            {
+                "name": "register_resource",
+                "start": 162,
+                "end": 168
+            },
+            {
+                "name": "lookup_resource",
+                "start": 173,
+                "end": 185
+            }
+        ],
+        "user/v84/drbdadm_main.c": [
+            {
+                "name": "add_setup_option",
+                "start": 218,
+                "end": 234
+            },
+            {
+                "name": "adm_adjust_wp",
+                "start": 236,
+                "end": 241
+            },
+            {
+                "name": "schedule_deferred_cmd",
+                "start": 449,
+                "end": 477
+            },
+            {
+                "name": "call_cmd_fn",
+                "start": 480,
+                "end": 491
+            },
+            {
+                "name": "call_cmd",
+                "start": 497,
+                "end": 522
+            },
+            {
+                "name": "_run_deferred_cmds",
+                "start": 533,
+                "end": 582
+            },
+            {
+                "name": "run_deferred_cmds",
+                "start": 584,
+                "end": 602
+            },
+            {
+                "name": "esc",
+                "start": 606,
+                "end": 635
+            },
+            {
+                "name": "esc_xml",
+                "start": 637,
+                "end": 686
+            },
+            {
+                "name": "dump_options2",
+                "start": 688,
+                "end": 709
+            },
+            {
+                "name": "dump_options",
+                "start": 711,
+                "end": 714
+            },
+            {
+                "name": "dump_proxy_plugins",
+                "start": 716,
+                "end": 721
+            },
+            {
+                "name": "dump_global_info",
+                "start": 723,
+                "end": 748
+            },
+            {
+                "name": "dump_common_info",
+                "start": 752,
+                "end": 769
+            },
+            {
+                "name": "dump_address",
+                "start": 771,
+                "end": 777
+            },
+            {
+                "name": "dump_proxy_info",
+                "start": 779,
+                "end": 789
+            },
+            {
+                "name": "dump_volume",
+                "start": 791,
+                "end": 827
+            },
+            {
+                "name": "dump_host_info",
+                "start": 829,
+                "end": 866
+            },
+            {
+                "name": "dump_options_xml2",
+                "start": 868,
+                "end": 890
+            },
+            {
+                "name": "dump_options_xml",
+                "start": 892,
+                "end": 895
+            },
+            {
+                "name": "dump_proxy_plugins_xml",
+                "start": 897,
+                "end": 902
+            },
+            {
+                "name": "dump_global_info_xml",
+                "start": 904,
+                "end": 922
+            },
+            {
+                "name": "dump_common_info_xml",
+                "start": 924,
+                "end": 940
+            },
+            {
+                "name": "dump_proxy_info_xml",
+                "start": 942,
+                "end": 954
+            },
+            {
+                "name": "dump_volume_xml",
+                "start": 956,
+                "end": 977
+            },
+            {
+                "name": "dump_host_info_xml",
+                "start": 979,
+                "end": 1005
+            },
+            {
+                "name": "fake_startup_options",
+                "start": 1007,
+                "end": 1023
+            },
+            {
+                "name": "adm_dump",
+                "start": 1025,
+                "end": 1058
+            },
+            {
+                "name": "adm_dump_xml",
+                "start": 1060,
+                "end": 1089
+            },
+            {
+                "name": "sh_nop",
+                "start": 1091,
+                "end": 1094
+            },
+            {
+                "name": "sh_resources",
+                "start": 1096,
+                "end": 1113
+            },
+            {
+                "name": "sh_resource",
+                "start": 1115,
+                "end": 1119
+            },
+            {
+                "name": "sh_dev",
+                "start": 1121,
+                "end": 1125
+            },
+            {
+                "name": "sh_udev",
+                "start": 1127,
+                "end": 1154
+            },
+            {
+                "name": "sh_minor",
+                "start": 1156,
+                "end": 1160
+            },
+            {
+                "name": "sh_ip",
+                "start": 1162,
+                "end": 1166
+            },
+            {
+                "name": "sh_lres",
+                "start": 1168,
+                "end": 1184
+            },
+            {
+                "name": "sh_ll_dev",
+                "start": 1186,
+                "end": 1190
+            },
+            {
+                "name": "sh_md_dev",
+                "start": 1193,
+                "end": 1205
+            },
+            {
+                "name": "sh_md_idx",
+                "start": 1207,
+                "end": 1211
+            },
+            {
+                "name": "sh_b_pri",
+                "start": 1213,
+                "end": 1234
+            },
+            {
+                "name": "sh_mod_parms",
+                "start": 1237,
+                "end": 1251
+            },
+            {
+                "name": "free_volume",
+                "start": 1253,
+                "end": 1263
+            },
+            {
+                "name": "free_host_info",
+                "start": 1265,
+                "end": 1281
+            },
+            {
+                "name": "free_options",
+                "start": 1283,
+                "end": 1293
+            },
+            {
+                "name": "free_config",
+                "start": 1295,
+                "end": 1325
+            },
+            {
+                "name": "expand_opts",
+                "start": 1327,
+                "end": 1341
+            },
+            {
+                "name": "expand_common",
+                "start": 1343,
+                "end": 1406
+            },
+            {
+                "name": "find_drbdcmd",
+                "start": 1408,
+                "end": 1423
+            },
+            {
+                "name": "m__system",
+                "start": 1425,
+                "end": 1576
+            },
+            {
+                "name": "add_setup_options",
+                "start": 1585,
+                "end": 1596
+            },
+            {
+                "name": "adm_attach_or_disk_options",
+                "start": 1616,
+                "end": 1649
+            },
+            {
+                "name": "adm_attach",
+                "start": 1651,
+                "end": 1661
+            },
+            {
+                "name": "adm_disk_options",
+                "start": 1663,
+                "end": 1666
+            },
+            {
+                "name": "adm_set_default_disk_options",
+                "start": 1668,
+                "end": 1671
+            },
+            {
+                "name": "find_opt",
+                "start": 1673,
+                "end": 1682
+            },
+            {
+                "name": "adm_new_minor",
+                "start": 1684,
+                "end": 1700
+            },
+            {
+                "name": "adm_new_resource_or_res_options",
+                "start": 1702,
+                "end": 1722
+            },
+            {
+                "name": "adm_new_resource",
+                "start": 1724,
+                "end": 1727
+            },
+            {
+                "name": "adm_res_options",
+                "start": 1729,
+                "end": 1732
+            },
+            {
+                "name": "adm_set_default_res_options",
+                "start": 1734,
+                "end": 1737
+            },
+            {
+                "name": "adm_resize",
+                "start": 1739,
+                "end": 1780
+            },
+            {
+                "name": "_admm_generic",
+                "start": 1782,
+                "end": 1810
+            },
+            {
+                "name": "admm_generic",
+                "start": 1812,
+                "end": 1815
+            },
+            {
+                "name": "_adm_generic",
+                "start": 1817,
+                "end": 1839
+            },
+            {
+                "name": "adm_generic",
+                "start": 1841,
+                "end": 1846
+            },
+            {
+                "name": "adm_generic_s",
+                "start": 1848,
+                "end": 1851
+            },
+            {
+                "name": "sh_status",
+                "start": 1853,
+                "end": 1911
+            },
+            {
+                "name": "adm_generic_l",
+                "start": 1913,
+                "end": 1916
+            },
+            {
+                "name": "adm_outdate",
+                "start": 1918,
+                "end": 1941
+            },
+            {
+                "name": "adm_chk_resize",
+                "start": 1945,
+                "end": 1954
+            },
+            {
+                "name": "adm_generic_b",
+                "start": 1956,
+                "end": 2009
+            },
+            {
+                "name": "adm_khelper",
+                "start": 2011,
+                "end": 2093
+            },
+            {
+                "name": "convert_discard_opt",
+                "start": 2096,
+                "end": 2114
+            },
+            {
+                "name": "add_connection_endpoints",
+                "start": 2116,
+                "end": 2136
+            },
+            {
+                "name": "adm_connect_or_net_options",
+                "start": 2138,
+                "end": 2172
+            },
+            {
+                "name": "adm_connect",
+                "start": 2174,
+                "end": 2177
+            },
+            {
+                "name": "adm_net_options",
+                "start": 2179,
+                "end": 2182
+            },
+            {
+                "name": "adm_set_default_net_options",
+                "start": 2184,
+                "end": 2187
+            },
+            {
+                "name": "adm_disconnect",
+                "start": 2189,
+                "end": 2208
+            },
+            {
+                "name": "del_opt",
+                "start": 2210,
+                "end": 2231
+            },
+            {
+                "name": "_convert_after_option",
+                "start": 2234,
+                "end": 2266
+            },
+            {
+                "name": "convert_after_option",
+                "start": 2269,
+                "end": 2277
+            },
+            {
+                "name": "_proxy_connect_name_len",
+                "start": 2279,
+                "end": 2285
+            },
+            {
+                "name": "_proxy_connection_name",
+                "start": 2287,
+                "end": 2294
+            },
+            {
+                "name": "do_proxy_conn_up",
+                "start": 2296,
+                "end": 2318
+            },
+            {
+                "name": "do_proxy_conn_plugins",
+                "start": 2320,
+                "end": 2361
+            },
+            {
+                "name": "do_proxy_conn_down",
+                "start": 2363,
+                "end": 2375
+            },
+            {
+                "name": "check_proxy",
+                "start": 2378,
+                "end": 2426
+            },
+            {
+                "name": "adm_proxy_up",
+                "start": 2428,
+                "end": 2431
+            },
+            {
+                "name": "adm_proxy_down",
+                "start": 2433,
+                "end": 2436
+            },
+            {
+                "name": "adm_up",
+                "start": 2444,
+                "end": 2459
+            },
+            {
+                "name": "adm_wait_c",
+                "start": 2465,
+                "end": 2495
+            },
+            {
+                "name": "ctx_by_minor",
+                "start": 2497,
+                "end": 2520
+            },
+            {
+                "name": "res_by_name",
+                "start": 2522,
+                "end": 2531
+            },
+            {
+                "name": "volume_by_vnr",
+                "start": 2533,
+                "end": 2542
+            },
+            {
+                "name": "ctx_by_name",
+                "start": 2544,
+                "end": 2583
+            },
+            {
+                "name": "ctx_set_implicit_volume",
+                "start": 2585,
+                "end": 2606
+            },
+            {
+                "name": "childs_running",
+                "start": 2610,
+                "end": 2639
+            },
+            {
+                "name": "kill_childs",
+                "start": 2641,
+                "end": 2651
+            },
+            {
+                "name": "gets_timeout",
+                "start": 2659,
+                "end": 2700
+            },
+            {
+                "name": "get_opt_val",
+                "start": 2702,
+                "end": 2711
+            },
+            {
+                "name": "check_exit_codes",
+                "start": 2713,
+                "end": 2731
+            },
+            {
+                "name": "adm_wait_ci",
+                "start": 2733,
+                "end": 2898
+            },
+            {
+                "name": "print_cmds",
+                "start": 2900,
+                "end": 2916
+            },
+            {
+                "name": "hidden_cmds",
+                "start": 2918,
+                "end": 2938
+            },
+            {
+                "name": "field_to_option",
+                "start": 2940,
+                "end": 2947
+            },
+            {
+                "name": "print_option",
+                "start": 2949,
+                "end": 2967
+            },
+            {
+                "name": "print_usage_and_exit",
+                "start": 2969,
+                "end": 3003
+            },
+            {
+                "name": "verify_ips",
+                "start": 3005,
+                "end": 3029
+            },
+            {
+                "name": "sanity_check_abs_cmd",
+                "start": 3040,
+                "end": 3064
+            },
+            {
+                "name": "sanity_check_cmd",
+                "start": 3066,
+                "end": 3092
+            },
+            {
+                "name": "sanity_check_conf",
+                "start": 3098,
+                "end": 3128
+            },
+            {
+                "name": "sanity_check_perm",
+                "start": 3130,
+                "end": 3140
+            },
+            {
+                "name": "validate_resource",
+                "start": 3142,
+                "end": 3245
+            },
+            {
+                "name": "global_validate_maybe_expand_die_if_invalid",
+                "start": 3247,
+                "end": 3261
+            },
+            {
+                "name": "canonify_path",
+                "start": 3269,
+                "end": 3321
+            },
+            {
+                "name": "assign_command_names_from_argv0",
+                "start": 3323,
+                "end": 3365
+            },
+            {
+                "name": "recognize_all_drbdsetup_options",
+                "start": 3367,
+                "end": 3408
+            },
+            {
+                "name": "parse_options",
+                "start": 3412,
+                "end": 3632
+            },
+            {
+                "name": "find_cmd",
+                "start": 3634,
+                "end": 3663
+            },
+            {
+                "name": "config_file_from_arg",
+                "start": 3665,
+                "end": 3697
+            },
+            {
+                "name": "assign_default_config_file",
+                "start": 3699,
+                "end": 3713
+            },
+            {
+                "name": "count_resources",
+                "start": 3715,
+                "end": 3741
+            },
+            {
+                "name": "die_if_no_resources",
+                "start": 3743,
+                "end": 3763
+            },
+            {
+                "name": "print_dump_xml_header",
+                "start": 3765,
+                "end": 3771
+            },
+            {
+                "name": "print_dump_header",
+                "start": 3773,
+                "end": 3778
+            },
+            {
+                "name": "main",
+                "start": 3780,
+                "end": 4024
+            },
+            {
+                "name": "yyerror",
+                "start": 4026,
+                "end": 4030
+            }
+        ],
+        "user/v84/drbd_strings.c": [
+            {
+                "name": "drbd_conn_str",
+                "start": 97,
+                "end": 101
+            },
+            {
+                "name": "drbd_role_str",
+                "start": 103,
+                "end": 106
+            },
+            {
+                "name": "drbd_disk_str",
+                "start": 108,
+                "end": 111
+            },
+            {
+                "name": "drbd_set_st_err_str",
+                "start": 113,
+                "end": 118
+            }
+        ],
+        "user/v83/drbdadm.h": [
+            {
+                "name": "m_system_ex",
+                "start": 165,
+                "end": 170
+            },
+            {
+                "name": "schedule_dcmd",
+                "start": 173,
+                "end": 176
+            }
+        ],
+        "user/v83/drbdadm_usage_cnt.c": [
+            {
+                "name": "slurp_proc_drbd",
+                "start": 77,
+                "end": 99
+            },
+            {
+                "name": "read_hex",
+                "start": 101,
+                "end": 118
+            },
+            {
+                "name": "vcs_ver_from_str",
+                "start": 120,
+                "end": 142
+            },
+            {
+                "name": "vcs_from_str",
+                "start": 144,
+                "end": 187
+            },
+            {
+                "name": "vcs_get_current",
+                "start": 192,
+                "end": 208
+            },
+            {
+                "name": "vcs_get_userland",
+                "start": 210,
+                "end": 215
+            },
+            {
+                "name": "version_code_kernel",
+                "start": 217,
+                "end": 223
+            },
+            {
+                "name": "version_code_userland",
+                "start": 225,
+                "end": 229
+            },
+            {
+                "name": "vcs_eq",
+                "start": 231,
+                "end": 238
+            },
+            {
+                "name": "vcs_ver_cmp",
+                "start": 240,
+                "end": 243
+            },
+            {
+                "name": "warn_on_version_mismatch",
+                "start": 245,
+                "end": 278
+            },
+            {
+                "name": "vcs_to_str",
+                "start": 280,
+                "end": 295
+            },
+            {
+                "name": "write_node_id",
+                "start": 297,
+                "end": 334
+            },
+            {
+                "name": "read_node_id",
+                "start": 337,
+                "end": 370
+            },
+            {
+                "name": "alarm_handler",
+                "start": 378,
+                "end": 381
+            },
+            {
+                "name": "my_gethostbyname",
+                "start": 385,
+                "end": 409
+            },
+            {
+                "name": "make_get_request",
+                "start": 422,
+                "end": 502
+            },
+            {
+                "name": "url_encode",
+                "start": 504,
+                "end": 525
+            },
+            {
+                "name": "uc_node",
+                "start": 531,
+                "end": 621
+            },
+            {
+                "name": "run_admm_generic",
+                "start": 625,
+                "end": 665
+            },
+            {
+                "name": "adm_create_md",
+                "start": 667,
+                "end": 742
+            }
+        ],
+        "user/v83/drbdadm_adjust.c": [
+            {
+                "name": "m_popen",
+                "start": 47,
+                "end": 84
+            },
+            {
+                "name": "ov_eq",
+                "start": 87,
+                "end": 98
+            },
+            {
+                "name": "opts_equal",
+                "start": 100,
+                "end": 131
+            },
+            {
+                "name": "addr_equal",
+                "start": 133,
+                "end": 156
+            },
+            {
+                "name": "proto_equal",
+                "start": 158,
+                "end": 164
+            },
+            {
+                "name": "int_eq",
+                "start": 167,
+                "end": 170
+            },
+            {
+                "name": "disk_equal",
+                "start": 172,
+                "end": 185
+            },
+            {
+                "name": "find_option_in_resources",
+                "start": 189,
+                "end": 208
+            },
+            {
+                "name": "do_proxy_reconf",
+                "start": 210,
+                "end": 217
+            },
+            {
+                "name": "_is_plugin_in_list",
+                "start": 223,
+                "end": 258
+            },
+            {
+                "name": "proxy_reconf",
+                "start": 261,
+                "end": 375
+            },
+            {
+                "name": "need_trigger_kobj_change",
+                "start": 377,
+                "end": 405
+            },
+            {
+                "name": "adm_adjust",
+                "start": 410,
+                "end": 510
+            }
+        ],
+        "user/v83/drbdadm_parser.c": [
+            {
+                "name": "names_from_str",
+                "start": 50,
+                "end": 59
+            },
+            {
+                "name": "_names_to_str_c",
+                "start": 61,
+                "end": 75
+            },
+            {
+                "name": "_names_to_str",
+                "start": 77,
+                "end": 80
+            },
+            {
+                "name": "name_in_names",
+                "start": 82,
+                "end": 90
+            },
+            {
+                "name": "free_names",
+                "start": 92,
+                "end": 101
+            },
+            {
+                "name": "append_names",
+                "start": 103,
+                "end": 118
+            },
+            {
+                "name": "concat_names",
+                "start": 121,
+                "end": 129
+            },
+            {
+                "name": "m_strtoll_range",
+                "start": 131,
+                "end": 151
+            },
+            {
+                "name": "range_check",
+                "start": 153,
+                "end": 273
+            },
+            {
+                "name": "new_opt",
+                "start": 275,
+                "end": 287
+            },
+            {
+                "name": "derror",
+                "start": 288,
+                "end": 294
+            },
+            {
+                "name": "pdperror",
+                "start": 296,
+                "end": 302
+            },
+            {
+                "name": "pperror",
+                "start": 304,
+                "end": 311
+            },
+            {
+                "name": "check_uniq_init",
+                "start": 341,
+                "end": 348
+            },
+            {
+                "name": "check_upr_init",
+                "start": 354,
+                "end": 367
+            },
+            {
+                "name": "vcheck_uniq",
+                "start": 373,
+                "end": 423
+            },
+            {
+                "name": "check_meta_disk",
+                "start": 425,
+                "end": 450
+            },
+            {
+                "name": "pe_expected",
+                "start": 452,
+                "end": 459
+            },
+            {
+                "name": "check_string_error",
+                "start": 461,
+                "end": 479
+            },
+            {
+                "name": "pe_expected_got",
+                "start": 481,
+                "end": 493
+            },
+            {
+                "name": "expect_STRING_or_INT",
+                "start": 507,
+                "end": 521
+            },
+            {
+                "name": "parse_global",
+                "start": 523,
+                "end": 575
+            },
+            {
+                "name": "check_and_change_deprecated_alias",
+                "start": 577,
+                "end": 586
+            },
+            {
+                "name": "parse_options_d",
+                "start": 588,
+                "end": 640
+            },
+            {
+                "name": "parse_options",
+                "start": 642,
+                "end": 645
+            },
+            {
+                "name": "__parse_address",
+                "start": 647,
+                "end": 689
+            },
+            {
+                "name": "parse_address",
+                "start": 691,
+                "end": 701
+            },
+            {
+                "name": "parse_hosts",
+                "start": 703,
+                "end": 732
+            },
+            {
+                "name": "parse_proxy_section",
+                "start": 734,
+                "end": 767
+            },
+            {
+                "name": "parse_meta_disk",
+                "start": 769,
+                "end": 782
+            },
+            {
+                "name": "check_minor_nonsense",
+                "start": 784,
+                "end": 813
+            },
+            {
+                "name": "parse_device",
+                "start": 815,
+                "end": 869
+            },
+            {
+                "name": "parse_host_section",
+                "start": 876,
+                "end": 1016
+            },
+            {
+                "name": "parse_skip",
+                "start": 1018,
+                "end": 1055
+            },
+            {
+                "name": "parse_stacked_section",
+                "start": 1057,
+                "end": 1123
+            },
+            {
+                "name": "startup_delegate",
+                "start": 1125,
+                "end": 1136
+            },
+            {
+                "name": "net_delegate",
+                "start": 1138,
+                "end": 1146
+            },
+            {
+                "name": "set_me_in_resource",
+                "start": 1148,
+                "end": 1205
+            },
+            {
+                "name": "set_peer_in_resource",
+                "start": 1207,
+                "end": 1298
+            },
+            {
+                "name": "set_on_hosts_in_res",
+                "start": 1300,
+                "end": 1347
+            },
+            {
+                "name": "set_disk_in_res",
+                "start": 1349,
+                "end": 1378
+            },
+            {
+                "name": "proxy_delegate",
+                "start": 1380,
+                "end": 1429
+            },
+            {
+                "name": "parse_proxy_settings",
+                "start": 1431,
+                "end": 1456
+            },
+            {
+                "name": "parse_resource",
+                "start": 1458,
+                "end": 1603
+            },
+            {
+                "name": "post_parse",
+                "start": 1605,
+                "end": 1627
+            },
+            {
+                "name": "include_stmt",
+                "start": 1629,
+                "end": 1688
+            },
+            {
+                "name": "my_parse",
+                "start": 1690,
+                "end": 1729
+            }
+        ],
+        "user/v83/drbdtool_common.c": [
+            {
+                "name": "confirmed",
+                "start": 25,
+                "end": 47
+            },
+            {
+                "name": "new_strtoll",
+                "start": 57,
+                "end": 130
+            },
+            {
+                "name": "dt_pretty_print_uuids",
+                "start": 132,
+                "end": 161
+            }
+        ],
+        "user/v83/drbdsetup.c": [
+            {
+                "name": "call_drbd",
+                "start": 146,
+                "end": 147
+            },
+            {
+                "name": "error_to_string",
+                "start": 501,
+                "end": 506
+            },
+            {
+                "name": "dump_tag_list",
+                "start": 517,
+                "end": 564
+            },
+            {
+                "name": "create_tag_list",
+                "start": 566,
+                "end": 581
+            },
+            {
+                "name": "add_tag",
+                "start": 583,
+                "end": 603
+            },
+            {
+                "name": "free_tag_list",
+                "start": 605,
+                "end": 609
+            },
+            {
+                "name": "conv_block_dev",
+                "start": 611,
+                "end": 637
+            },
+            {
+                "name": "conv_md_idx",
+                "start": 639,
+                "end": 650
+            },
+            {
+                "name": "resolv6",
+                "start": 652,
+                "end": 686
+            },
+            {
+                "name": "resolv",
+                "start": 688,
+                "end": 703
+            },
+            {
+                "name": "split_ipv6_addr",
+                "start": 705,
+                "end": 722
+            },
+            {
+                "name": "split_address",
+                "start": 724,
+                "end": 766
+            },
+            {
+                "name": "conv_address",
+                "start": 768,
+                "end": 802
+            },
+            {
+                "name": "conv_protocol",
+                "start": 804,
+                "end": 822
+            },
+            {
+                "name": "conv_bit",
+                "start": 824,
+                "end": 831
+            },
+            {
+                "name": "get_af_ssocks",
+                "start": 838,
+                "end": 877
+            },
+            {
+                "name": "conv_sndbuf",
+                "start": 879,
+                "end": 892
+            },
+            {
+                "name": "conv_numeric",
+                "start": 894,
+                "end": 924
+            },
+            {
+                "name": "conv_handler",
+                "start": 926,
+                "end": 947
+            },
+            {
+                "name": "conv_string",
+                "start": 949,
+                "end": 954
+            },
+            {
+                "name": "make_longoptions",
+                "start": 957,
+                "end": 999
+            },
+            {
+                "name": "find_opt_by_short_name",
+                "start": 1001,
+                "end": 1010
+            },
+            {
+                "name": "print_config_error",
+                "start": 1013,
+                "end": 1057
+            },
+            {
+                "name": "warn_print_excess_args",
+                "start": 1061,
+                "end": 1067
+            },
+            {
+                "name": "dump_argv",
+                "start": 1069,
+                "end": 1086
+            },
+            {
+                "name": "_generic_config_cmd",
+                "start": 1088,
+                "end": 1179
+            },
+            {
+                "name": "generic_config_cmd",
+                "start": 1181,
+                "end": 1184
+            },
+            {
+                "name": "show_numeric",
+                "start": 1189,
+                "end": 1216
+            },
+            {
+                "name": "show_handler",
+                "start": 1218,
+                "end": 1229
+            },
+            {
+                "name": "show_bit",
+                "start": 1231,
+                "end": 1236
+            },
+            {
+                "name": "show_string",
+                "start": 1238,
+                "end": 1242
+            },
+            {
+                "name": "look_for_tag",
+                "start": 1244,
+                "end": 1256
+            },
+            {
+                "name": "print_options",
+                "start": 1258,
+                "end": 1278
+            },
+            {
+                "name": "consume_everything",
+                "start": 1281,
+                "end": 1290
+            },
+            {
+                "name": "consume_tag_blob",
+                "start": 1292,
+                "end": 1304
+            },
+            {
+                "name": "consume_tag_string",
+                "start": 1306,
+                "end": 1319
+            },
+            {
+                "name": "consume_tag_int",
+                "start": 1321,
+                "end": 1332
+            },
+            {
+                "name": "consume_tag_u64",
+                "start": 1334,
+                "end": 1358
+            },
+            {
+                "name": "consume_tag_bit",
+                "start": 1360,
+                "end": 1371
+            },
+            {
+                "name": "generic_get_cmd",
+                "start": 1373,
+                "end": 1430
+            },
+            {
+                "name": "af_to_str",
+                "start": 1432,
+                "end": 1447
+            },
+            {
+                "name": "show_address",
+                "start": 1449,
+                "end": 1476
+            },
+            {
+                "name": "show_scmd",
+                "start": 1478,
+                "end": 1530
+            },
+            {
+                "name": "lk_bdev_scmd",
+                "start": 1532,
+                "end": 1582
+            },
+            {
+                "name": "status_xml_scmd",
+                "start": 1584,
+                "end": 1634
+            },
+            {
+                "name": "sh_status_scmd",
+                "start": 1636,
+                "end": 1701
+            },
+            {
+                "name": "role_scmd",
+                "start": 1703,
+                "end": 1722
+            },
+            {
+                "name": "cstate_scmd",
+                "start": 1724,
+                "end": 1737
+            },
+            {
+                "name": "dstate_scmd",
+                "start": 1739,
+                "end": 1752
+            },
+            {
+                "name": "uuids_scmd",
+                "start": 1754,
+                "end": 1784
+            },
+            {
+                "name": "find_cmd_by_name",
+                "start": 1786,
+                "end": 1796
+            },
+            {
+                "name": "down_cmd",
+                "start": 1798,
+                "end": 1819
+            },
+            {
+                "name": "print_digest",
+                "start": 1822,
+                "end": 1829
+            },
+            {
+                "name": "printable_or_dot",
+                "start": 1831,
+                "end": 1834
+            },
+            {
+                "name": "print_hex_line",
+                "start": 1836,
+                "end": 1856
+            },
+            {
+                "name": "print_hex_dump",
+                "start": 1859,
+                "end": 1878
+            },
+            {
+                "name": "print_dump_ee",
+                "start": 1880,
+                "end": 1924
+            },
+            {
+                "name": "pretty_print_return_code",
+                "start": 1927,
+                "end": 1941
+            },
+            {
+                "name": "print_broadcast_events",
+                "start": 1943,
+                "end": 1999
+            },
+            {
+                "name": "print_failure_code",
+                "start": 2001,
+                "end": 2009
+            },
+            {
+                "name": "w_connected_state",
+                "start": 2011,
+                "end": 2030
+            },
+            {
+                "name": "w_synced_state",
+                "start": 2032,
+                "end": 2050
+            },
+            {
+                "name": "events_cmd",
+                "start": 2052,
+                "end": 2273
+            },
+            {
+                "name": "numeric_opt_usage",
+                "start": 2275,
+                "end": 2281
+            },
+            {
+                "name": "handler_opt_usage",
+                "start": 2283,
+                "end": 2301
+            },
+            {
+                "name": "bit_opt_usage",
+                "start": 2303,
+                "end": 2307
+            },
+            {
+                "name": "string_opt_usage",
+                "start": 2309,
+                "end": 2313
+            },
+            {
+                "name": "numeric_opt_xml",
+                "start": 2315,
+                "end": 2331
+            },
+            {
+                "name": "handler_opt_xml",
+                "start": 2333,
+                "end": 2346
+            },
+            {
+                "name": "bit_opt_xml",
+                "start": 2348,
+                "end": 2352
+            },
+            {
+                "name": "string_opt_xml",
+                "start": 2354,
+                "end": 2358
+            },
+            {
+                "name": "config_usage",
+                "start": 2361,
+                "end": 2437
+            },
+            {
+                "name": "get_usage",
+                "start": 2439,
+                "end": 2446
+            },
+            {
+                "name": "events_usage",
+                "start": 2448,
+                "end": 2465
+            },
+            {
+                "name": "print_command_usage",
+                "start": 2467,
+                "end": 2476
+            },
+            {
+                "name": "print_usage",
+                "start": 2478,
+                "end": 2505
+            },
+            {
+                "name": "open_cn",
+                "start": 2507,
+                "end": 2539
+            },
+            {
+                "name": "prepare_nl_header",
+                "start": 2542,
+                "end": 2560
+            },
+            {
+                "name": "send_cn",
+                "start": 2563,
+                "end": 2575
+            },
+            {
+                "name": "receive_cn",
+                "start": 2577,
+                "end": 2595
+            },
+            {
+                "name": "receive_reply_cn",
+                "start": 2597,
+                "end": 2620
+            },
+            {
+                "name": "call_drbd",
+                "start": 2622,
+                "end": 2642
+            },
+            {
+                "name": "close_cn",
+                "start": 2644,
+                "end": 2647
+            },
+            {
+                "name": "is_drbd_driver_missing",
+                "start": 2649,
+                "end": 2674
+            },
+            {
+                "name": "main",
+                "start": 2676,
+                "end": 2765
+            }
+        ],
+        "user/v83/drbdadm_minor_table.c": [
+            {
+                "name": "linkname_from_minor",
+                "start": 50,
+                "end": 53
+            },
+            {
+                "name": "unregister_minor",
+                "start": 55,
+                "end": 72
+            },
+            {
+                "name": "register_minor",
+                "start": 74,
+                "end": 107
+            },
+            {
+                "name": "lookup_minor",
+                "start": 112,
+                "end": 143
+            }
+        ],
+        "user/v83/drbdadm_main.c": [
+            {
+                "name": "schedule_dcmd",
+                "start": 351,
+                "end": 377
+            },
+            {
+                "name": "test_if_resource_is_down",
+                "start": 382,
+                "end": 420
+            },
+            {
+                "name": "if_conf_differs_confirm_or_abort",
+                "start": 423,
+                "end": 460
+            },
+            {
+                "name": "register_config_file",
+                "start": 462,
+                "end": 469
+            },
+            {
+                "name": "call_cmd_fn",
+                "start": 472,
+                "end": 494
+            },
+            {
+                "name": "call_cmd",
+                "start": 496,
+                "end": 503
+            },
+            {
+                "name": "_run_dcmds",
+                "start": 505,
+                "end": 521
+            },
+            {
+                "name": "run_dcmds",
+                "start": 523,
+                "end": 526
+            },
+            {
+                "name": "esc",
+                "start": 530,
+                "end": 559
+            },
+            {
+                "name": "esc_xml",
+                "start": 561,
+                "end": 610
+            },
+            {
+                "name": "dump_options2",
+                "start": 612,
+                "end": 633
+            },
+            {
+                "name": "dump_options",
+                "start": 635,
+                "end": 638
+            },
+            {
+                "name": "dump_proxy_plugins",
+                "start": 640,
+                "end": 645
+            },
+            {
+                "name": "dump_global_info",
+                "start": 647,
+                "end": 663
+            },
+            {
+                "name": "dump_common_info",
+                "start": 667,
+                "end": 685
+            },
+            {
+                "name": "dump_address",
+                "start": 687,
+                "end": 693
+            },
+            {
+                "name": "dump_proxy_info",
+                "start": 695,
+                "end": 704
+            },
+            {
+                "name": "dump_host_info",
+                "start": 706,
+                "end": 749
+            },
+            {
+                "name": "dump_options_xml2",
+                "start": 751,
+                "end": 773
+            },
+            {
+                "name": "dump_options_xml",
+                "start": 775,
+                "end": 778
+            },
+            {
+                "name": "dump_proxy_plugins_xml",
+                "start": 780,
+                "end": 785
+            },
+            {
+                "name": "dump_global_info_xml",
+                "start": 787,
+                "end": 805
+            },
+            {
+                "name": "dump_common_info_xml",
+                "start": 807,
+                "end": 826
+            },
+            {
+                "name": "dump_proxy_info_xml",
+                "start": 828,
+                "end": 838
+            },
+            {
+                "name": "dump_host_info_xml",
+                "start": 840,
+                "end": 871
+            },
+            {
+                "name": "fake_startup_options",
+                "start": 873,
+                "end": 889
+            },
+            {
+                "name": "adm_dump",
+                "start": 891,
+                "end": 920
+            },
+            {
+                "name": "adm_dump_xml",
+                "start": 922,
+                "end": 946
+            },
+            {
+                "name": "sh_nop",
+                "start": 948,
+                "end": 952
+            },
+            {
+                "name": "sh_resources",
+                "start": 954,
+                "end": 972
+            },
+            {
+                "name": "sh_resource",
+                "start": 974,
+                "end": 980
+            },
+            {
+                "name": "sh_dev",
+                "start": 982,
+                "end": 988
+            },
+            {
+                "name": "sh_udev",
+                "start": 990,
+                "end": 1007
+            },
+            {
+                "name": "sh_minor",
+                "start": 1009,
+                "end": 1015
+            },
+            {
+                "name": "sh_ip",
+                "start": 1017,
+                "end": 1023
+            },
+            {
+                "name": "sh_lres",
+                "start": 1025,
+                "end": 1041
+            },
+            {
+                "name": "sh_ll_dev",
+                "start": 1043,
+                "end": 1049
+            },
+            {
+                "name": "sh_md_dev",
+                "start": 1051,
+                "end": 1064
+            },
+            {
+                "name": "sh_md_idx",
+                "start": 1066,
+                "end": 1072
+            },
+            {
+                "name": "sh_b_pri",
+                "start": 1074,
+                "end": 1092
+            },
+            {
+                "name": "sh_mod_parms",
+                "start": 1094,
+                "end": 1109
+            },
+            {
+                "name": "free_host_info",
+                "start": 1111,
+                "end": 1124
+            },
+            {
+                "name": "free_options",
+                "start": 1126,
+                "end": 1136
+            },
+            {
+                "name": "free_config",
+                "start": 1138,
+                "end": 1171
+            },
+            {
+                "name": "expand_opts",
+                "start": 1173,
+                "end": 1187
+            },
+            {
+                "name": "expand_common",
+                "start": 1189,
+                "end": 1226
+            },
+            {
+                "name": "find_drbdcmd",
+                "start": 1228,
+                "end": 1243
+            },
+            {
+                "name": "m__system",
+                "start": 1246,
+                "end": 1393
+            },
+            {
+                "name": "adm_attach",
+                "start": 1419,
+                "end": 1442
+            },
+            {
+                "name": "find_opt",
+                "start": 1444,
+                "end": 1453
+            },
+            {
+                "name": "adm_resize",
+                "start": 1455,
+                "end": 1495
+            },
+            {
+                "name": "_admm_generic",
+                "start": 1497,
+                "end": 1527
+            },
+            {
+                "name": "admm_generic",
+                "start": 1529,
+                "end": 1532
+            },
+            {
+                "name": "_adm_generic",
+                "start": 1534,
+                "end": 1549
+            },
+            {
+                "name": "adm_generic",
+                "start": 1551,
+                "end": 1556
+            },
+            {
+                "name": "adm_generic_s",
+                "start": 1558,
+                "end": 1561
+            },
+            {
+                "name": "adm_status_xml",
+                "start": 1563,
+                "end": 1585
+            },
+            {
+                "name": "sh_status",
+                "start": 1587,
+                "end": 1616
+            },
+            {
+                "name": "adm_generic_l",
+                "start": 1618,
+                "end": 1621
+            },
+            {
+                "name": "adm_outdate",
+                "start": 1623,
+                "end": 1646
+            },
+            {
+                "name": "adm_chk_resize",
+                "start": 1650,
+                "end": 1659
+            },
+            {
+                "name": "adm_generic_b",
+                "start": 1661,
+                "end": 1714
+            },
+            {
+                "name": "adm_khelper",
+                "start": 1716,
+                "end": 1759
+            },
+            {
+                "name": "convert_discard_opt",
+                "start": 1762,
+                "end": 1780
+            },
+            {
+                "name": "adm_connect",
+                "start": 1782,
+                "end": 1821
+            },
+            {
+                "name": "del_opt",
+                "start": 1825,
+                "end": 1846
+            },
+            {
+                "name": "convert_after_option",
+                "start": 1849,
+                "end": 1869
+            },
+            {
+                "name": "proxy_connection_name",
+                "start": 1871,
+                "end": 1888
+            },
+            {
+                "name": "do_proxy_conn_up",
+                "start": 1890,
+                "end": 1911
+            },
+            {
+                "name": "do_proxy_conn_plugins",
+                "start": 1913,
+                "end": 1953
+            },
+            {
+                "name": "do_proxy_conn_down",
+                "start": 1955,
+                "end": 1966
+            },
+            {
+                "name": "check_proxy",
+                "start": 1969,
+                "end": 2016
+            },
+            {
+                "name": "adm_proxy_up",
+                "start": 2018,
+                "end": 2022
+            },
+            {
+                "name": "adm_proxy_down",
+                "start": 2024,
+                "end": 2028
+            },
+            {
+                "name": "adm_syncer",
+                "start": 2030,
+                "end": 2052
+            },
+            {
+                "name": "adm_up",
+                "start": 2054,
+                "end": 2062
+            },
+            {
+                "name": "adm_wait_c",
+                "start": 2068,
+                "end": 2097
+            },
+            {
+                "name": "res_by_minor",
+                "start": 2099,
+                "end": 2117
+            },
+            {
+                "name": "res_by_name",
+                "start": 2119,
+                "end": 2128
+            },
+            {
+                "name": "childs_running",
+                "start": 2132,
+                "end": 2160
+            },
+            {
+                "name": "kill_childs",
+                "start": 2162,
+                "end": 2171
+            },
+            {
+                "name": "gets_timeout",
+                "start": 2179,
+                "end": 2220
+            },
+            {
+                "name": "get_opt_val",
+                "start": 2222,
+                "end": 2231
+            },
+            {
+                "name": "check_exit_codes",
+                "start": 2233,
+                "end": 2251
+            },
+            {
+                "name": "adm_wait_ci",
+                "start": 2253,
+                "end": 2414
+            },
+            {
+                "name": "print_cmds",
+                "start": 2416,
+                "end": 2432
+            },
+            {
+                "name": "hidden_cmds",
+                "start": 2434,
+                "end": 2455
+            },
+            {
+                "name": "print_usage_and_exit",
+                "start": 2457,
+                "end": 2484
+            },
+            {
+                "name": "verify_ips",
+                "start": 2486,
+                "end": 2510
+            },
+            {
+                "name": "sanity_check_abs_cmd",
+                "start": 2520,
+                "end": 2544
+            },
+            {
+                "name": "sanity_check_cmd",
+                "start": 2546,
+                "end": 2572
+            },
+            {
+                "name": "sanity_check_conf",
+                "start": 2578,
+                "end": 2608
+            },
+            {
+                "name": "sanity_check_perm",
+                "start": 2610,
+                "end": 2620
+            },
+            {
+                "name": "validate_resource",
+                "start": 2622,
+                "end": 2733
+            },
+            {
+                "name": "global_validate_maybe_expand_die_if_invalid",
+                "start": 2735,
+                "end": 2747
+            },
+            {
+                "name": "canonify_path",
+                "start": 2755,
+                "end": 2807
+            },
+            {
+                "name": "assign_command_names_from_argv0",
+                "start": 2809,
+                "end": 2848
+            },
+            {
+                "name": "parse_options",
+                "start": 2850,
+                "end": 2968
+            },
+            {
+                "name": "find_cmd",
+                "start": 2970,
+                "end": 3001
+            },
+            {
+                "name": "config_file_from_arg",
+                "start": 3003,
+                "end": 3032
+            },
+            {
+                "name": "assign_default_config_file",
+                "start": 3034,
+                "end": 3048
+            },
+            {
+                "name": "count_resources_or_die",
+                "start": 3050,
+                "end": 3083
+            },
+            {
+                "name": "die_if_no_resources",
+                "start": 3085,
+                "end": 3105
+            },
+            {
+                "name": "print_dump_xml_header",
+                "start": 3107,
+                "end": 3113
+            },
+            {
+                "name": "print_dump_header",
+                "start": 3115,
+                "end": 3120
+            },
+            {
+                "name": "main",
+                "start": 3122,
+                "end": 3358
+            },
+            {
+                "name": "yyerror",
+                "start": 3360,
+                "end": 3364
+            }
+        ],
+        "user/v83/drbd_strings.c": [
+            {
+                "name": "drbd_conn_str",
+                "start": 94,
+                "end": 98
+            },
+            {
+                "name": "drbd_role_str",
+                "start": 100,
+                "end": 103
+            },
+            {
+                "name": "drbd_disk_str",
+                "start": 105,
+                "end": 108
+            },
+            {
+                "name": "drbd_set_st_err_str",
+                "start": 110,
+                "end": 115
+            }
+        ]
+    }
+}

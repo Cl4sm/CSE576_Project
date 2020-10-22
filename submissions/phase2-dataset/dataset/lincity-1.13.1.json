@@ -1,0 +1,3203 @@
+{
+    "lincity-1.13.1": {
+        "ldsvguts.c": [
+            {
+                "name": "remove_scene",
+                "start": 99,
+                "end": 112
+            },
+            {
+                "name": "save_city_raw",
+                "start": 114,
+                "end": 305
+            },
+            {
+                "name": "save_city",
+                "start": 308,
+                "end": 344
+            },
+            {
+                "name": "load_city",
+                "start": 346,
+                "end": 639
+            },
+            {
+                "name": "load_saved_city",
+                "start": 641,
+                "end": 648
+            },
+            {
+                "name": "reset_animation_times",
+                "start": 650,
+                "end": 684
+            },
+            {
+                "name": "verify_city",
+                "start": 687,
+                "end": 713
+            },
+            {
+                "name": "sanity_check",
+                "start": 716,
+                "end": 739
+            },
+            {
+                "name": "check_endian",
+                "start": 743,
+                "end": 781
+            },
+            {
+                "name": "eswap32",
+                "start": 783,
+                "end": 796
+            },
+            {
+                "name": "eswap16",
+                "start": 798,
+                "end": 807
+            }
+        ],
+        "timer.c": [
+            {
+                "name": "lc_usleep",
+                "start": 66,
+                "end": 81
+            },
+            {
+                "name": "reset_start_time",
+                "start": 83,
+                "end": 91
+            },
+            {
+                "name": "get_real_time",
+                "start": 94,
+                "end": 105
+            },
+            {
+                "name": "init_timer_buttons",
+                "start": 109,
+                "end": 116
+            },
+            {
+                "name": "pause_handler",
+                "start": 120,
+                "end": 128
+            },
+            {
+                "name": "slow_handler",
+                "start": 130,
+                "end": 138
+            },
+            {
+                "name": "medium_handler",
+                "start": 140,
+                "end": 148
+            },
+            {
+                "name": "fast_handler",
+                "start": 150,
+                "end": 158
+            },
+            {
+                "name": "select_fast",
+                "start": 160,
+                "end": 173
+            },
+            {
+                "name": "select_medium",
+                "start": 175,
+                "end": 188
+            },
+            {
+                "name": "select_slow",
+                "start": 190,
+                "end": 203
+            },
+            {
+                "name": "select_pause",
+                "start": 205,
+                "end": 228
+            }
+        ],
+        "mouse.c": [
+            {
+                "name": "cs_mouse_handler",
+                "start": 59,
+                "end": 242
+            },
+            {
+                "name": "move_mouse",
+                "start": 244,
+                "end": 290
+            },
+            {
+                "name": "hide_mouse",
+                "start": 292,
+                "end": 302
+            },
+            {
+                "name": "redraw_mouse",
+                "start": 304,
+                "end": 315
+            },
+            {
+                "name": "draw_square_mouse",
+                "start": 317,
+                "end": 346
+            },
+            {
+                "name": "hide_square_mouse",
+                "start": 348,
+                "end": 369
+            },
+            {
+                "name": "redraw_square_mouse",
+                "start": 371,
+                "end": 397
+            },
+            {
+                "name": "draw_normal_mouse",
+                "start": 399,
+                "end": 420
+            },
+            {
+                "name": "hide_normal_mouse",
+                "start": 422,
+                "end": 435
+            },
+            {
+                "name": "redraw_normal_mouse",
+                "start": 437,
+                "end": 453
+            },
+            {
+                "name": "do_mouse_main_win",
+                "start": 455,
+                "end": 597
+            },
+            {
+                "name": "do_mouse_other_buttons",
+                "start": 599,
+                "end": 747
+            },
+            {
+                "name": "check_bulldoze_area",
+                "start": 750,
+                "end": 795
+            },
+            {
+                "name": "fire_area",
+                "start": 798,
+                "end": 807
+            },
+            {
+                "name": "drag_screen",
+                "start": 814,
+                "end": 842
+            },
+            {
+                "name": "do_market_cb_template",
+                "start": 844,
+                "end": 920
+            },
+            {
+                "name": "do_market_cb_mouse",
+                "start": 922,
+                "end": 926
+            },
+            {
+                "name": "do_port_cb_mouse",
+                "start": 928,
+                "end": 932
+            },
+            {
+                "name": "no_credit_build_msg",
+                "start": 934,
+                "end": 968
+            },
+            {
+                "name": "choose_residence",
+                "start": 970,
+                "end": 1048
+            },
+            {
+                "name": "mt_erase",
+                "start": 1060,
+                "end": 1095
+            },
+            {
+                "name": "mt_temp",
+                "start": 1097,
+                "end": 1129
+            },
+            {
+                "name": "mt_perm",
+                "start": 1131,
+                "end": 1152
+            },
+            {
+                "name": "do_mt_draw",
+                "start": 1154,
+                "end": 1203
+            },
+            {
+                "name": "mt_draw",
+                "start": 1205,
+                "end": 1312
+            },
+            {
+                "name": "cmp",
+                "start": 1314,
+                "end": 1321
+            },
+            {
+                "name": "init_mouse_registry",
+                "start": 1323,
+                "end": 1330
+            },
+            {
+                "name": "mouse_register",
+                "start": 1334,
+                "end": 1354
+            },
+            {
+                "name": "mouse_unregister",
+                "start": 1358,
+                "end": 1379
+            },
+            {
+                "name": "mouse_handle_click",
+                "start": 1385,
+                "end": 1401
+            }
+        ],
+        "market.c": [
+            {
+                "name": "get_jobs",
+                "start": 20,
+                "end": 44
+            },
+            {
+                "name": "put_jobs",
+                "start": 46,
+                "end": 67
+            },
+            {
+                "name": "get_food",
+                "start": 69,
+                "end": 90
+            },
+            {
+                "name": "put_food",
+                "start": 92,
+                "end": 114
+            },
+            {
+                "name": "get_goods",
+                "start": 117,
+                "end": 147
+            },
+            {
+                "name": "put_goods",
+                "start": 149,
+                "end": 171
+            },
+            {
+                "name": "put_waste",
+                "start": 173,
+                "end": 195
+            },
+            {
+                "name": "get_waste",
+                "start": 197,
+                "end": 218
+            },
+            {
+                "name": "get_steel",
+                "start": 221,
+                "end": 242
+            },
+            {
+                "name": "put_steel",
+                "start": 244,
+                "end": 266
+            },
+            {
+                "name": "get_ore",
+                "start": 269,
+                "end": 290
+            },
+            {
+                "name": "put_ore",
+                "start": 292,
+                "end": 314
+            },
+            {
+                "name": "get_coal",
+                "start": 317,
+                "end": 338
+            },
+            {
+                "name": "put_coal",
+                "start": 340,
+                "end": 362
+            },
+            {
+                "name": "add_a_market",
+                "start": 365,
+                "end": 377
+            },
+            {
+                "name": "remove_a_market",
+                "start": 379,
+                "end": 392
+            },
+            {
+                "name": "do_market",
+                "start": 394,
+                "end": 463
+            },
+            {
+                "name": "shuffle_markets",
+                "start": 465,
+                "end": 483
+            },
+            {
+                "name": "deal_with_transport",
+                "start": 486,
+                "end": 722
+            },
+            {
+                "name": "get_stuff",
+                "start": 724,
+                "end": 745
+            },
+            {
+                "name": "get_stuff2",
+                "start": 761,
+                "end": 799
+            },
+            {
+                "name": "get_stuff3",
+                "start": 819,
+                "end": 861
+            },
+            {
+                "name": "get_stuff4",
+                "start": 885,
+                "end": 927
+            },
+            {
+                "name": "put_stuff",
+                "start": 929,
+                "end": 950
+            },
+            {
+                "name": "put_stuff2",
+                "start": 972,
+                "end": 1025
+            },
+            {
+                "name": "put_stuff3",
+                "start": 1028,
+                "end": 1082
+            },
+            {
+                "name": "put_stuff4",
+                "start": 1085,
+                "end": 1138
+            },
+            {
+                "name": "mps_market",
+                "start": 1140,
+                "end": 1164
+            }
+        ],
+        "stats.c": [
+            {
+                "name": "init_daily",
+                "start": 91,
+                "end": 103
+            },
+            {
+                "name": "init_monthly",
+                "start": 105,
+                "end": 120
+            },
+            {
+                "name": "init_yearly",
+                "start": 122,
+                "end": 141
+            },
+            {
+                "name": "init_lastyear",
+                "start": 143,
+                "end": 164
+            },
+            {
+                "name": "inventory",
+                "start": 166,
+                "end": 183
+            },
+            {
+                "name": "init_inventory",
+                "start": 185,
+                "end": 192
+            },
+            {
+                "name": "inventory_market",
+                "start": 194,
+                "end": 204
+            },
+            {
+                "name": "add_daily_to_monthly",
+                "start": 210,
+                "end": 225
+            }
+        ],
+        "power.c": [
+            {
+                "name": "power_time_step",
+                "start": 36,
+                "end": 64
+            },
+            {
+                "name": "map_power_grid",
+                "start": 67,
+                "end": 96
+            },
+            {
+                "name": "check_grid",
+                "start": 110,
+                "end": 145
+            },
+            {
+                "name": "recurse_power_grid",
+                "start": 151,
+                "end": 307
+            },
+            {
+                "name": "project_power",
+                "start": 312,
+                "end": 334
+            },
+            {
+                "name": "get_power",
+                "start": 343,
+                "end": 376
+            }
+        ],
+        "pixmap.h": [
+            {
+                "name": "pixmap_putbox",
+                "start": 28,
+                "end": 29
+            }
+        ],
+        "lcwin32.c": [
+            {
+                "name": "AdjustX",
+                "start": 22,
+                "end": 28
+            },
+            {
+                "name": "AdjustY",
+                "start": 30,
+                "end": 36
+            },
+            {
+                "name": "UnAdjustX",
+                "start": 38,
+                "end": 44
+            },
+            {
+                "name": "UnAdjustY",
+                "start": 46,
+                "end": 52
+            },
+            {
+                "name": "HandleError",
+                "start": 54,
+                "end": 62
+            },
+            {
+                "name": "setcustompalette",
+                "start": 64,
+                "end": 102
+            },
+            {
+                "name": "GetPaletteColorref",
+                "start": 104,
+                "end": 112
+            },
+            {
+                "name": "GetPaletteBrush",
+                "start": 114,
+                "end": 121
+            }
+        ],
+        "dialbox.c": [
+            {
+                "name": "main_handler",
+                "start": 55,
+                "end": 59
+            },
+            {
+                "name": "text_handler",
+                "start": 61,
+                "end": 71
+            },
+            {
+                "name": "dialog_key_handler",
+                "start": 77,
+                "end": 101
+            },
+            {
+                "name": "dialog_box",
+                "start": 104,
+                "end": 277
+            },
+            {
+                "name": "dialog_refresh",
+                "start": 280,
+                "end": 343
+            },
+            {
+                "name": "dialog_close",
+                "start": 348,
+                "end": 369
+            }
+        ],
+        "screen.c": [
+            {
+                "name": "draw_background",
+                "start": 92,
+                "end": 106
+            },
+            {
+                "name": "connect_transport_main_screen",
+                "start": 108,
+                "end": 115
+            },
+            {
+                "name": "refresh_main_screen",
+                "start": 117,
+                "end": 124
+            },
+            {
+                "name": "clip_main_window",
+                "start": 126,
+                "end": 132
+            },
+            {
+                "name": "unclip_main_window",
+                "start": 134,
+                "end": 138
+            },
+            {
+                "name": "rotate_main_screen",
+                "start": 140,
+                "end": 149
+            },
+            {
+                "name": "update_main_screen",
+                "start": 151,
+                "end": 200
+            },
+            {
+                "name": "update_main_screen_normal",
+                "start": 202,
+                "end": 300
+            },
+            {
+                "name": "update_main_screen_pollution",
+                "start": 302,
+                "end": 327
+            },
+            {
+                "name": "update_main_screen_ub40",
+                "start": 329,
+                "end": 360
+            },
+            {
+                "name": "update_main_screen_starve",
+                "start": 362,
+                "end": 393
+            },
+            {
+                "name": "update_main_screen_power",
+                "start": 395,
+                "end": 424
+            },
+            {
+                "name": "update_main_screen_fire_cover",
+                "start": 426,
+                "end": 453
+            },
+            {
+                "name": "update_main_screen_health_cover",
+                "start": 455,
+                "end": 481
+            },
+            {
+                "name": "update_main_screen_cricket_cover",
+                "start": 483,
+                "end": 509
+            },
+            {
+                "name": "update_main_screen_coal",
+                "start": 511,
+                "end": 532
+            },
+            {
+                "name": "screen_setup",
+                "start": 541,
+                "end": 664
+            },
+            {
+                "name": "screen_full_refresh",
+                "start": 666,
+                "end": 715
+            },
+            {
+                "name": "draw_main_window_box",
+                "start": 736,
+                "end": 753
+            },
+            {
+                "name": "draw_yellow_bezel",
+                "start": 755,
+                "end": 766
+            },
+            {
+                "name": "draw_small_yellow_bezel",
+                "start": 768,
+                "end": 789
+            },
+            {
+                "name": "load_fonts",
+                "start": 791,
+                "end": 824
+            },
+            {
+                "name": "init_fonts",
+                "start": 826,
+                "end": 838
+            },
+            {
+                "name": "init_mini_map_mouse",
+                "start": 845,
+                "end": 850
+            },
+            {
+                "name": "mini_map_handler",
+                "start": 853,
+                "end": 877
+            },
+            {
+                "name": "mini_aux_handler",
+                "start": 879,
+                "end": 890
+            },
+            {
+                "name": "rotate_mini_screen",
+                "start": 892,
+                "end": 934
+            },
+            {
+                "name": "update_mini_screen",
+                "start": 936,
+                "end": 974
+            },
+            {
+                "name": "mini_screen_help",
+                "start": 976,
+                "end": 1009
+            },
+            {
+                "name": "mini_full_refresh",
+                "start": 1011,
+                "end": 1033
+            },
+            {
+                "name": "draw_mini_screen",
+                "start": 1035,
+                "end": 1068
+            },
+            {
+                "name": "draw_big_mini_screen",
+                "start": 1070,
+                "end": 1088
+            },
+            {
+                "name": "draw_mini_screen_pollution",
+                "start": 1091,
+                "end": 1119
+            },
+            {
+                "name": "draw_mini_screen_fire_cover",
+                "start": 1121,
+                "end": 1157
+            },
+            {
+                "name": "draw_mini_screen_cricket_cover",
+                "start": 1159,
+                "end": 1193
+            },
+            {
+                "name": "draw_mini_screen_health_cover",
+                "start": 1195,
+                "end": 1229
+            },
+            {
+                "name": "draw_mini_screen_ub40",
+                "start": 1231,
+                "end": 1258
+            },
+            {
+                "name": "draw_mini_screen_starve",
+                "start": 1260,
+                "end": 1288
+            },
+            {
+                "name": "draw_mini_screen_coal",
+                "start": 1290,
+                "end": 1323
+            },
+            {
+                "name": "draw_mini_screen_power",
+                "start": 1325,
+                "end": 1366
+            },
+            {
+                "name": "draw_mini_screen_ocost",
+                "start": 1369,
+                "end": 1491
+            },
+            {
+                "name": "draw_mini_screen_cursor",
+                "start": 1543,
+                "end": 1567
+            },
+            {
+                "name": "initialize_print_stats",
+                "start": 1569,
+                "end": 1613
+            },
+            {
+                "name": "advance_monthgraph_style",
+                "start": 1615,
+                "end": 1624
+            },
+            {
+                "name": "refresh_monthgraph",
+                "start": 1626,
+                "end": 1630
+            },
+            {
+                "name": "monthgraph_full_refresh",
+                "start": 1632,
+                "end": 1638
+            },
+            {
+                "name": "print_stats",
+                "start": 1640,
+                "end": 1791
+            },
+            {
+                "name": "print_total_money",
+                "start": 1793,
+                "end": 1815
+            },
+            {
+                "name": "print_date",
+                "start": 1817,
+                "end": 1828
+            },
+            {
+                "name": "print_population",
+                "start": 1830,
+                "end": 1834
+            },
+            {
+                "name": "calculate_time_for_year",
+                "start": 1836,
+                "end": 1844
+            },
+            {
+                "name": "print_time_for_year",
+                "start": 1846,
+                "end": 1862
+            },
+            {
+                "name": "status_message_1",
+                "start": 1865,
+                "end": 1874
+            },
+            {
+                "name": "status_message_2",
+                "start": 1876,
+                "end": 1885
+            },
+            {
+                "name": "status_message",
+                "start": 1887,
+                "end": 1896
+            },
+            {
+                "name": "reset_status_message",
+                "start": 1898,
+                "end": 1907
+            },
+            {
+                "name": "init_monthgraph",
+                "start": 1909,
+                "end": 1914
+            },
+            {
+                "name": "clear_monthgraph",
+                "start": 1916,
+                "end": 1921
+            },
+            {
+                "name": "do_monthgraph",
+                "start": 1923,
+                "end": 1939
+            },
+            {
+                "name": "initialize_monthgraph",
+                "start": 1942,
+                "end": 1971
+            },
+            {
+                "name": "do_history_linegraph",
+                "start": 1973,
+                "end": 2079
+            },
+            {
+                "name": "clicked_market_cb",
+                "start": 2081,
+                "end": 2087
+            },
+            {
+                "name": "draw_cb_box",
+                "start": 2090,
+                "end": 2101
+            },
+            {
+                "name": "draw_cb_template",
+                "start": 2103,
+                "end": 2162
+            },
+            {
+                "name": "draw_market_cb",
+                "start": 2164,
+                "end": 2169
+            },
+            {
+                "name": "close_market_cb",
+                "start": 2171,
+                "end": 2185
+            },
+            {
+                "name": "clicked_port_cb",
+                "start": 2187,
+                "end": 2193
+            },
+            {
+                "name": "draw_port_cb",
+                "start": 2195,
+                "end": 2200
+            },
+            {
+                "name": "close_port_cb",
+                "start": 2203,
+                "end": 2214
+            },
+            {
+                "name": "yn_dial_box",
+                "start": 2216,
+                "end": 2230
+            },
+            {
+                "name": "ok_dial_box",
+                "start": 2232,
+                "end": 2293
+            },
+            {
+                "name": "format_status_message",
+                "start": 2295,
+                "end": 2332
+            },
+            {
+                "name": "display_info_message",
+                "start": 2335,
+                "end": 2365
+            },
+            {
+                "name": "prog_box",
+                "start": 2367,
+                "end": 2435
+            },
+            {
+                "name": "do_sust_barchart",
+                "start": 2438,
+                "end": 2542
+            },
+            {
+                "name": "draw_sustline",
+                "start": 2544,
+                "end": 2559
+            },
+            {
+                "name": "dump_screen",
+                "start": 2561,
+                "end": 2579
+            },
+            {
+                "name": "debug_writeval",
+                "start": 2581,
+                "end": 2587
+            },
+            {
+                "name": "ask_launch_rocket_click",
+                "start": 2589,
+                "end": 2596
+            },
+            {
+                "name": "ask_launch_rocket_now",
+                "start": 2598,
+                "end": 2605
+            },
+            {
+                "name": "display_rocket_result_dialog",
+                "start": 2607,
+                "end": 2621
+            },
+            {
+                "name": "Fgl_getrect",
+                "start": 2623,
+                "end": 2627
+            },
+            {
+                "name": "Fgl_putrect",
+                "start": 2629,
+                "end": 2633
+            }
+        ],
+        "transport.c": [
+            {
+                "name": "general_transport",
+                "start": 28,
+                "end": 234
+            }
+        ],
+        "readpng.c": [
+            {
+                "name": "load_png_graphic",
+                "start": 22,
+                "end": 25
+            },
+            {
+                "name": "user_error_fn",
+                "start": 30,
+                "end": 32
+            },
+            {
+                "name": "user_warning_fn",
+                "start": 34,
+                "end": 36
+            },
+            {
+                "name": "load_png_graphics",
+                "start": 38,
+                "end": 558
+            },
+            {
+                "name": "load_png_graphic",
+                "start": 560,
+                "end": 614
+            }
+        ],
+        "engine.c": [
+            {
+                "name": "adjust_money",
+                "start": 29,
+                "end": 38
+            },
+            {
+                "name": "no_credit_build",
+                "start": 42,
+                "end": 78
+            },
+            {
+                "name": "place_item",
+                "start": 80,
+                "end": 232
+            },
+            {
+                "name": "bulldoze_item",
+                "start": 234,
+                "end": 276
+            },
+            {
+                "name": "init_mappoint_array",
+                "start": 278,
+                "end": 286
+            },
+            {
+                "name": "shuffle_mappoint_array",
+                "start": 288,
+                "end": 303
+            },
+            {
+                "name": "buy_food",
+                "start": 306,
+                "end": 328
+            },
+            {
+                "name": "buy_coal",
+                "start": 330,
+                "end": 352
+            },
+            {
+                "name": "buy_ore",
+                "start": 354,
+                "end": 376
+            },
+            {
+                "name": "buy_goods",
+                "start": 378,
+                "end": 400
+            },
+            {
+                "name": "buy_steel",
+                "start": 403,
+                "end": 425
+            },
+            {
+                "name": "sell_food",
+                "start": 427,
+                "end": 434
+            },
+            {
+                "name": "sell_coal",
+                "start": 436,
+                "end": 443
+            },
+            {
+                "name": "sell_ore",
+                "start": 445,
+                "end": 452
+            },
+            {
+                "name": "sell_goods",
+                "start": 454,
+                "end": 461
+            },
+            {
+                "name": "sell_steel",
+                "start": 463,
+                "end": 470
+            },
+            {
+                "name": "do_pollution",
+                "start": 472,
+                "end": 533
+            },
+            {
+                "name": "remove_people",
+                "start": 538,
+                "end": 604
+            },
+            {
+                "name": "clear_fire_health_and_cricket_cover",
+                "start": 608,
+                "end": 618
+            },
+            {
+                "name": "do_fire_health_and_cricket_cover",
+                "start": 620,
+                "end": 637
+            },
+            {
+                "name": "do_random_fire",
+                "start": 641,
+                "end": 729
+            },
+            {
+                "name": "spiral_find_group",
+                "start": 736,
+                "end": 776
+            },
+            {
+                "name": "spiral_find_2x2",
+                "start": 783,
+                "end": 839
+            },
+            {
+                "name": "do_bulldoze_area",
+                "start": 843,
+                "end": 894
+            },
+            {
+                "name": "update_tech_dep",
+                "start": 897,
+                "end": 929
+            },
+            {
+                "name": "connect_rivers",
+                "start": 931,
+                "end": 967
+            },
+            {
+                "name": "is_real_river",
+                "start": 969,
+                "end": 980
+            },
+            {
+                "name": "do_coal_survey",
+                "start": 983,
+                "end": 990
+            }
+        ],
+        "shrtypes.c": [
+            {
+                "name": "set_mappoint_used",
+                "start": 18,
+                "end": 25
+            },
+            {
+                "name": "set_mappoint",
+                "start": 28,
+                "end": 74
+            },
+            {
+                "name": "connect_transport",
+                "start": 77,
+                "end": 528
+            }
+        ],
+        "lclib.c": [
+            {
+                "name": "current_month",
+                "start": 15,
+                "end": 19
+            },
+            {
+                "name": "current_year",
+                "start": 21,
+                "end": 25
+            },
+            {
+                "name": "format_number5",
+                "start": 27,
+                "end": 49
+            },
+            {
+                "name": "num_to_ansi",
+                "start": 51,
+                "end": 86
+            },
+            {
+                "name": "num_to_ansi_unit",
+                "start": 88,
+                "end": 117
+            },
+            {
+                "name": "commify",
+                "start": 122,
+                "end": 162
+            },
+            {
+                "name": "pad_with_blanks",
+                "start": 165,
+                "end": 176
+            },
+            {
+                "name": "format_pos_number4",
+                "start": 178,
+                "end": 182
+            },
+            {
+                "name": "format_power",
+                "start": 184,
+                "end": 188
+            },
+            {
+                "name": "min_int",
+                "start": 190,
+                "end": 194
+            },
+            {
+                "name": "max_int",
+                "start": 196,
+                "end": 200
+            },
+            {
+                "name": "lcalloc",
+                "start": 202,
+                "end": 213
+            }
+        ],
+        "pbar.c": [
+            {
+                "name": "init_pbars",
+                "start": 20,
+                "end": 33
+            },
+            {
+                "name": "pbars_full_refresh",
+                "start": 35,
+                "end": 42
+            },
+            {
+                "name": "init_pbar_text",
+                "start": 44,
+                "end": 56
+            },
+            {
+                "name": "draw_pbar",
+                "start": 62,
+                "end": 69
+            },
+            {
+                "name": "draw_pbars",
+                "start": 71,
+                "end": 83
+            },
+            {
+                "name": "clear_pbar_text",
+                "start": 87,
+                "end": 91
+            },
+            {
+                "name": "write_pbar_int",
+                "start": 93,
+                "end": 101
+            },
+            {
+                "name": "write_pbar_text",
+                "start": 103,
+                "end": 109
+            },
+            {
+                "name": "refresh_population_text",
+                "start": 131,
+                "end": 141
+            },
+            {
+                "name": "refresh_pbars",
+                "start": 143,
+                "end": 198
+            },
+            {
+                "name": "update_pbar",
+                "start": 211,
+                "end": 241
+            },
+            {
+                "name": "update_pbars_daily",
+                "start": 243,
+                "end": 255
+            },
+            {
+                "name": "update_pbars_monthly",
+                "start": 257,
+                "end": 269
+            },
+            {
+                "name": "compute_pbar_offset",
+                "start": 271,
+                "end": 287
+            },
+            {
+                "name": "draw_pbar_new",
+                "start": 289,
+                "end": 318
+            },
+            {
+                "name": "pbar_mouse",
+                "start": 322,
+                "end": 369
+            }
+        ],
+        "fileutil.c": [
+            {
+                "name": "guess_category_value",
+                "start": 100,
+                "end": 101
+            },
+            {
+                "name": "execute_command",
+                "start": 155,
+                "end": 170
+            },
+            {
+                "name": "copy_file",
+                "start": 172,
+                "end": 182
+            },
+            {
+                "name": "gunzip_file",
+                "start": 184,
+                "end": 194
+            },
+            {
+                "name": "fopen_read_gzipped",
+                "start": 196,
+                "end": 229
+            },
+            {
+                "name": "fclose_read_gzipped",
+                "start": 231,
+                "end": 242
+            },
+            {
+                "name": "directory_exists",
+                "start": 244,
+                "end": 261
+            },
+            {
+                "name": "file_exists",
+                "start": 263,
+                "end": 273
+            },
+            {
+                "name": "find_libdir",
+                "start": 310,
+                "end": 350
+            },
+            {
+                "name": "guess_category_value",
+                "start": 358,
+                "end": 398
+            },
+            {
+                "name": "lincity_nl_find_language",
+                "start": 402,
+                "end": 410
+            },
+            {
+                "name": "find_localized_paths",
+                "start": 413,
+                "end": 486
+            },
+            {
+                "name": "init_path_strings",
+                "start": 489,
+                "end": 563
+            },
+            {
+                "name": "verify_package",
+                "start": 565,
+                "end": 573
+            },
+            {
+                "name": "make_savedir",
+                "start": 575,
+                "end": 607
+            },
+            {
+                "name": "check_savedir",
+                "start": 609,
+                "end": 639
+            },
+            {
+                "name": "malloc_failure",
+                "start": 641,
+                "end": 646
+            },
+            {
+                "name": "load_graphic",
+                "start": 648,
+                "end": 669
+            },
+            {
+                "name": "load_lincityrc",
+                "start": 671,
+                "end": 714
+            },
+            {
+                "name": "save_lincityrc",
+                "start": 716,
+                "end": 767
+            },
+            {
+                "name": "undosify_string",
+                "start": 769,
+                "end": 789
+            },
+            {
+                "name": "debug_printf",
+                "start": 791,
+                "end": 825
+            }
+        ],
+        "mps.c": [
+            {
+                "name": "mps_handler",
+                "start": 47,
+                "end": 59
+            },
+            {
+                "name": "mps_init",
+                "start": 63,
+                "end": 73
+            },
+            {
+                "name": "mps_set",
+                "start": 81,
+                "end": 103
+            },
+            {
+                "name": "mps_redraw",
+                "start": 106,
+                "end": 113
+            },
+            {
+                "name": "mps_refresh",
+                "start": 115,
+                "end": 132
+            },
+            {
+                "name": "mps_update",
+                "start": 134,
+                "end": 271
+            },
+            {
+                "name": "mps_global_advance",
+                "start": 276,
+                "end": 285
+            },
+            {
+                "name": "mps_store_title",
+                "start": 295,
+                "end": 304
+            },
+            {
+                "name": "mps_store_fp",
+                "start": 306,
+                "end": 317
+            },
+            {
+                "name": "mps_store_f",
+                "start": 319,
+                "end": 330
+            },
+            {
+                "name": "mps_store_d",
+                "start": 332,
+                "end": 343
+            },
+            {
+                "name": "mps_store_ss",
+                "start": 345,
+                "end": 352
+            },
+            {
+                "name": "mps_store_sss",
+                "start": 354,
+                "end": 373
+            },
+            {
+                "name": "mps_store_sd",
+                "start": 375,
+                "end": 387
+            },
+            {
+                "name": "mps_store_sfp",
+                "start": 389,
+                "end": 396
+            },
+            {
+                "name": "mps_right",
+                "start": 400,
+                "end": 454
+            },
+            {
+                "name": "mps_global_finance",
+                "start": 458,
+                "end": 506
+            },
+            {
+                "name": "mps_global_other_costs",
+                "start": 508,
+                "end": 543
+            },
+            {
+                "name": "mps_global_housing",
+                "start": 546,
+                "end": 568
+            }
+        ],
+        "splash.c": [
+            {
+                "name": "load_start_image",
+                "start": 48,
+                "end": 147
+            },
+            {
+                "name": "start_image_text",
+                "start": 149,
+                "end": 161
+            },
+            {
+                "name": "si_scroll_text",
+                "start": 163,
+                "end": 285
+            },
+            {
+                "name": "si_next_char",
+                "start": 287,
+                "end": 297
+            }
+        ],
+        "module_buttons.c": [
+            {
+                "name": "init_modules",
+                "start": 37,
+                "end": 237
+            },
+            {
+                "name": "update_avail_modules",
+                "start": 243,
+                "end": 279
+            },
+            {
+                "name": "activate_module",
+                "start": 283,
+                "end": 354
+            },
+            {
+                "name": "module_buttons_handler",
+                "start": 359,
+                "end": 378
+            },
+            {
+                "name": "select_module",
+                "start": 384,
+                "end": 407
+            },
+            {
+                "name": "highlight_module_button",
+                "start": 412,
+                "end": 434
+            },
+            {
+                "name": "unhighlight_module_button",
+                "start": 439,
+                "end": 462
+            },
+            {
+                "name": "draw_selected_module_cost",
+                "start": 467,
+                "end": 489
+            },
+            {
+                "name": "draw_modules",
+                "start": 494,
+                "end": 505
+            },
+            {
+                "name": "draw_module",
+                "start": 507,
+                "end": 538
+            },
+            {
+                "name": "inv_sbut",
+                "start": 544,
+                "end": 562
+            },
+            {
+                "name": "set_selected_module",
+                "start": 564,
+                "end": 595
+            }
+        ],
+        "simulate.c": [
+            {
+                "name": "do_time_step",
+                "start": 49,
+                "end": 79
+            },
+            {
+                "name": "clear_mappoint",
+                "start": 81,
+                "end": 97
+            },
+            {
+                "name": "simulate_mappoints",
+                "start": 99,
+                "end": 227
+            },
+            {
+                "name": "do_periodic_events",
+                "start": 232,
+                "end": 262
+            },
+            {
+                "name": "end_of_month_update",
+                "start": 265,
+                "end": 305
+            },
+            {
+                "name": "start_of_year_update",
+                "start": 308,
+                "end": 331
+            },
+            {
+                "name": "end_of_year_update",
+                "start": 334,
+                "end": 412
+            },
+            {
+                "name": "clear_game",
+                "start": 415,
+                "end": 439
+            },
+            {
+                "name": "new_city",
+                "start": 441,
+                "end": 463
+            },
+            {
+                "name": "coal_reserve_setup",
+                "start": 465,
+                "end": 487
+            },
+            {
+                "name": "ore_reserve_setup",
+                "start": 489,
+                "end": 496
+            },
+            {
+                "name": "setup_river",
+                "start": 498,
+                "end": 530
+            },
+            {
+                "name": "setup_river2",
+                "start": 532,
+                "end": 567
+            },
+            {
+                "name": "count_groups",
+                "start": 569,
+                "end": 579
+            },
+            {
+                "name": "count_all_groups",
+                "start": 581,
+                "end": 597
+            },
+            {
+                "name": "random_start",
+                "start": 599,
+                "end": 704
+            },
+            {
+                "name": "quick_start_add",
+                "start": 707,
+                "end": 725
+            },
+            {
+                "name": "sustainability_test",
+                "start": 727,
+                "end": 795
+            },
+            {
+                "name": "sust_fire_cover",
+                "start": 797,
+                "end": 818
+            },
+            {
+                "name": "debug_mappoints",
+                "start": 820,
+                "end": 832
+            },
+            {
+                "name": "initialize_tax_rates",
+                "start": 834,
+                "end": 843
+            }
+        ],
+        "lchelp.c": [
+            {
+                "name": "activate_help",
+                "start": 29,
+                "end": 41
+            },
+            {
+                "name": "do_help_mouse",
+                "start": 43,
+                "end": 61
+            },
+            {
+                "name": "draw_help_page",
+                "start": 63,
+                "end": 381
+            },
+            {
+                "name": "refresh_help_page",
+                "start": 383,
+                "end": 388
+            },
+            {
+                "name": "parse_helpline",
+                "start": 390,
+                "end": 403
+            },
+            {
+                "name": "parse_tcolourline",
+                "start": 405,
+                "end": 417
+            },
+            {
+                "name": "parse_textline",
+                "start": 419,
+                "end": 460
+            },
+            {
+                "name": "parse_iconline",
+                "start": 463,
+                "end": 490
+            },
+            {
+                "name": "draw_help_icon",
+                "start": 492,
+                "end": 530
+            },
+            {
+                "name": "parse_buttonline",
+                "start": 532,
+                "end": 593
+            },
+            {
+                "name": "do_help_buttons",
+                "start": 595,
+                "end": 612
+            },
+            {
+                "name": "parse_tbuttonline",
+                "start": 614,
+                "end": 648
+            }
+        ],
+        "lintypes.c": [
+            {
+                "name": "init_types",
+                "start": 532,
+                "end": 1478
+            },
+            {
+                "name": "get_group_of_type",
+                "start": 1482,
+                "end": 1486
+            },
+            {
+                "name": "set_map_groups",
+                "start": 1488,
+                "end": 1497
+            },
+            {
+                "name": "get_group_cost",
+                "start": 1499,
+                "end": 1507
+            },
+            {
+                "name": "get_type_name",
+                "start": 1509,
+                "end": 1515
+            },
+            {
+                "name": "get_type_cost",
+                "start": 1517,
+                "end": 1521
+            }
+        ],
+        "ldsvgui.c": [
+            {
+                "name": "draw_prefs_cb",
+                "start": 108,
+                "end": 135
+            },
+            {
+                "name": "do_prefs_buttons",
+                "start": 137,
+                "end": 178
+            },
+            {
+                "name": "do_prefs_mouse",
+                "start": 180,
+                "end": 191
+            },
+            {
+                "name": "do_prefs_screen",
+                "start": 193,
+                "end": 228
+            },
+            {
+                "name": "close_prefs_screen",
+                "start": 230,
+                "end": 242
+            },
+            {
+                "name": "do_save_city",
+                "start": 279,
+                "end": 340
+            },
+            {
+                "name": "load_opening_city",
+                "start": 342,
+                "end": 363
+            },
+            {
+                "name": "do_load_city",
+                "start": 365,
+                "end": 444
+            },
+            {
+                "name": "draw_save_dir",
+                "start": 446,
+                "end": 549
+            },
+            {
+                "name": "edit_string",
+                "start": 551,
+                "end": 616
+            },
+            {
+                "name": "input_save_filename",
+                "start": 618,
+                "end": 623
+            },
+            {
+                "name": "input_network_host",
+                "start": 625,
+                "end": 631
+            },
+            {
+                "name": "input_network_port",
+                "start": 633,
+                "end": 639
+            },
+            {
+                "name": "do_get_nw_server",
+                "start": 642,
+                "end": 713
+            }
+        ],
+        "lcsvga.c": [
+            {
+                "name": "lc_mouse_handler",
+                "start": 35,
+                "end": 36
+            },
+            {
+                "name": "mouse_setup",
+                "start": 85,
+                "end": 108
+            },
+            {
+                "name": "mouse_set_range",
+                "start": 110,
+                "end": 118
+            },
+            {
+                "name": "set_vga_mode",
+                "start": 120,
+                "end": 151
+            },
+            {
+                "name": "lc_mouse_handler",
+                "start": 153,
+                "end": 193
+            },
+            {
+                "name": "lc_get_keystroke",
+                "start": 195,
+                "end": 199
+            },
+            {
+                "name": "parse_args",
+                "start": 205,
+                "end": 237
+            },
+            {
+                "name": "HandleError",
+                "start": 239,
+                "end": 250
+            },
+            {
+                "name": "init_mouse",
+                "start": 252,
+                "end": 256
+            },
+            {
+                "name": "setcustompalette",
+                "start": 258,
+                "end": 304
+            }
+        ],
+        "main.c": [
+            {
+                "name": "main",
+                "start": 112,
+                "end": 116
+            },
+            {
+                "name": "lincity_set_locale",
+                "start": 119,
+                "end": 151
+            },
+            {
+                "name": "lincity_main",
+                "start": 153,
+                "end": 304
+            },
+            {
+                "name": "client_main_loop",
+                "start": 306,
+                "end": 365
+            },
+            {
+                "name": "process_keystrokes",
+                "start": 367,
+                "end": 572
+            },
+            {
+                "name": "execute_timestep",
+                "start": 575,
+                "end": 693
+            },
+            {
+                "name": "do_error",
+                "start": 695,
+                "end": 705
+            },
+            {
+                "name": "cheat",
+                "start": 707,
+                "end": 722
+            },
+            {
+                "name": "compile_results",
+                "start": 724,
+                "end": 812
+            },
+            {
+                "name": "print_results",
+                "start": 815,
+                "end": 834
+            },
+            {
+                "name": "window_results",
+                "start": 852,
+                "end": 863
+            }
+        ],
+        "lcx11.c": [
+            {
+                "name": "set_pointer_confinement",
+                "start": 38,
+                "end": 49
+            },
+            {
+                "name": "confine_pointer",
+                "start": 51,
+                "end": 74
+            },
+            {
+                "name": "unconfine_pointer",
+                "start": 77,
+                "end": 83
+            },
+            {
+                "name": "setcustompalette",
+                "start": 85,
+                "end": 133
+            },
+            {
+                "name": "open_setcustompalette",
+                "start": 135,
+                "end": 139
+            },
+            {
+                "name": "do_setcustompalette",
+                "start": 141,
+                "end": 224
+            },
+            {
+                "name": "gl_setfontcolors",
+                "start": 240,
+                "end": 245
+            },
+            {
+                "name": "gl_setfont",
+                "start": 247,
+                "end": 252
+            },
+            {
+                "name": "parse_xargs",
+                "start": 254,
+                "end": 327
+            },
+            {
+                "name": "Create_Window",
+                "start": 330,
+                "end": 426
+            },
+            {
+                "name": "unlock_window_size",
+                "start": 428,
+                "end": 445
+            },
+            {
+                "name": "HandleError",
+                "start": 449,
+                "end": 460
+            },
+            {
+                "name": "gl_setpixel",
+                "start": 462,
+                "end": 492
+            },
+            {
+                "name": "Fgl_getpixel",
+                "start": 494,
+                "end": 498
+            },
+            {
+                "name": "gl_hline",
+                "start": 500,
+                "end": 515
+            },
+            {
+                "name": "gl_line",
+                "start": 517,
+                "end": 533
+            },
+            {
+                "name": "gl_write",
+                "start": 535,
+                "end": 541
+            },
+            {
+                "name": "open_write",
+                "start": 543,
+                "end": 549
+            },
+            {
+                "name": "my_x_putchar",
+                "start": 551,
+                "end": 567
+            },
+            {
+                "name": "open_x_putchar",
+                "start": 569,
+                "end": 585
+            },
+            {
+                "name": "gl_fillbox",
+                "start": 587,
+                "end": 611
+            },
+            {
+                "name": "clamp",
+                "start": 623,
+                "end": 632
+            },
+            {
+                "name": "Fgl_putbox_low",
+                "start": 641,
+                "end": 694
+            },
+            {
+                "name": "gl_putbox",
+                "start": 696,
+                "end": 711
+            },
+            {
+                "name": "gl_getbox",
+                "start": 728,
+                "end": 737
+            },
+            {
+                "name": "HandleEvent",
+                "start": 739,
+                "end": 904
+            },
+            {
+                "name": "refresh_screen",
+                "start": 908,
+                "end": 947
+            }
+        ],
+        "picedit.c": [
+            {
+                "name": "main",
+                "start": 205,
+                "end": 300
+            },
+            {
+                "name": "do_error",
+                "start": 302,
+                "end": 312
+            },
+            {
+                "name": "do_buttons",
+                "start": 314,
+                "end": 391
+            },
+            {
+                "name": "draw_dot",
+                "start": 393,
+                "end": 401
+            },
+            {
+                "name": "draw_hfill",
+                "start": 403,
+                "end": 411
+            },
+            {
+                "name": "draw_vfill",
+                "start": 413,
+                "end": 421
+            },
+            {
+                "name": "full_zoom",
+                "start": 424,
+                "end": 452
+            },
+            {
+                "name": "half_zoom",
+                "start": 454,
+                "end": 475
+            },
+            {
+                "name": "norm_zoom",
+                "start": 478,
+                "end": 502
+            },
+            {
+                "name": "choose_colour",
+                "start": 504,
+                "end": 522
+            },
+            {
+                "name": "fill_colour",
+                "start": 524,
+                "end": 543
+            },
+            {
+                "name": "hfill",
+                "start": 545,
+                "end": 586
+            },
+            {
+                "name": "vfill",
+                "start": 588,
+                "end": 629
+            },
+            {
+                "name": "fill_colourzoom",
+                "start": 632,
+                "end": 651
+            },
+            {
+                "name": "fill_colour1",
+                "start": 653,
+                "end": 672
+            },
+            {
+                "name": "fill_colour2",
+                "start": 674,
+                "end": 691
+            },
+            {
+                "name": "fill_colour3",
+                "start": 693,
+                "end": 716
+            },
+            {
+                "name": "fill_colour4",
+                "start": 718,
+                "end": 737
+            },
+            {
+                "name": "setcustompalette",
+                "start": 833,
+                "end": 866
+            },
+            {
+                "name": "initfont",
+                "start": 870,
+                "end": 890
+            },
+            {
+                "name": "save_image",
+                "start": 893,
+                "end": 907
+            },
+            {
+                "name": "load_image",
+                "start": 909,
+                "end": 937
+            },
+            {
+                "name": "setup",
+                "start": 942,
+                "end": 1001
+            },
+            {
+                "name": "draw_focus",
+                "start": 1003,
+                "end": 1038
+            },
+            {
+                "name": "draw_swin",
+                "start": 1040,
+                "end": 1062
+            },
+            {
+                "name": "draw_big_image",
+                "start": 1064,
+                "end": 1079
+            },
+            {
+                "name": "draw_big_imagezoom",
+                "start": 1081,
+                "end": 1089
+            },
+            {
+                "name": "draw_big_image1",
+                "start": 1091,
+                "end": 1099
+            },
+            {
+                "name": "draw_big_image2",
+                "start": 1101,
+                "end": 1109
+            },
+            {
+                "name": "draw_big_image3",
+                "start": 1111,
+                "end": 1119
+            },
+            {
+                "name": "draw_big_image4",
+                "start": 1121,
+                "end": 1129
+            },
+            {
+                "name": "change_imagesize",
+                "start": 1131,
+                "end": 1144
+            },
+            {
+                "name": "change_focus",
+                "start": 1146,
+                "end": 1155
+            },
+            {
+                "name": "hide_mouse",
+                "start": 1157,
+                "end": 1161
+            },
+            {
+                "name": "reshow_mouse",
+                "start": 1163,
+                "end": 1168
+            },
+            {
+                "name": "lincityrc",
+                "start": 1455,
+                "end": 1497
+            }
+        ],
+        "geometry.c": [
+            {
+                "name": "initialize_geometry",
+                "start": 31,
+                "end": 282
+            },
+            {
+                "name": "resize_geometry",
+                "start": 284,
+                "end": 368
+            },
+            {
+                "name": "mouse_in_rect",
+                "start": 370,
+                "end": 375
+            },
+            {
+                "name": "resize_main_win",
+                "start": 381,
+                "end": 390
+            },
+            {
+                "name": "pixel_to_mappoint",
+                "start": 395,
+                "end": 410
+            },
+            {
+                "name": "pixel_to_winpoint",
+                "start": 414,
+                "end": 428
+            },
+            {
+                "name": "adjust_main_origin",
+                "start": 431,
+                "end": 461
+            },
+            {
+                "name": "draw_pause",
+                "start": 466,
+                "end": 477
+            },
+            {
+                "name": "draw_slow",
+                "start": 479,
+                "end": 490
+            },
+            {
+                "name": "draw_med",
+                "start": 492,
+                "end": 503
+            },
+            {
+                "name": "draw_fast",
+                "start": 505,
+                "end": 516
+            },
+            {
+                "name": "draw_menu",
+                "start": 518,
+                "end": 541
+            },
+            {
+                "name": "draw_help",
+                "start": 543,
+                "end": 566
+            },
+            {
+                "name": "draw_results",
+                "start": 568,
+                "end": 591
+            },
+            {
+                "name": "draw_ms_button",
+                "start": 647,
+                "end": 652
+            },
+            {
+                "name": "draw_ms_text",
+                "start": 654,
+                "end": 659
+            },
+            {
+                "name": "draw_small_bezel",
+                "start": 661,
+                "end": 671
+            },
+            {
+                "name": "draw_bezel",
+                "start": 673,
+                "end": 687
+            }
+        ],
+        "modules/monument.c": [
+            {
+                "name": "do_monument",
+                "start": 17,
+                "end": 56
+            },
+            {
+                "name": "mps_monument",
+                "start": 58,
+                "end": 78
+            }
+        ],
+        "modules/road.c": [
+            {
+                "name": "do_road",
+                "start": 32,
+                "end": 46
+            },
+            {
+                "name": "mps_road",
+                "start": 48,
+                "end": 71
+            }
+        ],
+        "modules/school.c": [
+            {
+                "name": "do_school",
+                "start": 19,
+                "end": 50
+            },
+            {
+                "name": "mps_school",
+                "start": 52,
+                "end": 69
+            }
+        ],
+        "modules/tip.c": [
+            {
+                "name": "do_tip",
+                "start": 21,
+                "end": 111
+            },
+            {
+                "name": "mps_tip",
+                "start": 113,
+                "end": 129
+            }
+        ],
+        "modules/parkland.c": [
+            {
+                "name": "do_parkland",
+                "start": 15,
+                "end": 20
+            }
+        ],
+        "modules/port.c": [
+            {
+                "name": "do_port",
+                "start": 20,
+                "end": 202
+            },
+            {
+                "name": "mps_port",
+                "start": 204,
+                "end": 237
+            }
+        ],
+        "modules/mill.c": [
+            {
+                "name": "do_mill",
+                "start": 19,
+                "end": 104
+            },
+            {
+                "name": "mps_mill",
+                "start": 106,
+                "end": 122
+            }
+        ],
+        "modules/recycle.c": [
+            {
+                "name": "do_recycle",
+                "start": 18,
+                "end": 168
+            },
+            {
+                "name": "mps_recycle",
+                "start": 170,
+                "end": 194
+            }
+        ],
+        "modules/water.c": [
+            {
+                "name": "mps_water",
+                "start": 19,
+                "end": 32
+            }
+        ],
+        "modules/light_industry.c": [
+            {
+                "name": "do_industry_l",
+                "start": 19,
+                "end": 328
+            },
+            {
+                "name": "mps_light_industry",
+                "start": 331,
+                "end": 355
+            }
+        ],
+        "modules/coal_power.c": [
+            {
+                "name": "do_power_source_coal",
+                "start": 32,
+                "end": 88
+            },
+            {
+                "name": "mps_coal_power",
+                "start": 90,
+                "end": 118
+            }
+        ],
+        "modules/windmill.c": [
+            {
+                "name": "do_windmill",
+                "start": 31,
+                "end": 75
+            },
+            {
+                "name": "mps_windmill",
+                "start": 77,
+                "end": 120
+            }
+        ],
+        "modules/pottery.c": [
+            {
+                "name": "do_pottery",
+                "start": 19,
+                "end": 119
+            },
+            {
+                "name": "mps_pottery",
+                "start": 121,
+                "end": 139
+            }
+        ],
+        "modules/track.c": [
+            {
+                "name": "do_track",
+                "start": 31,
+                "end": 37
+            },
+            {
+                "name": "mps_track",
+                "start": 39,
+                "end": 62
+            }
+        ],
+        "modules/power_line.c": [
+            {
+                "name": "do_power_line",
+                "start": 26,
+                "end": 50
+            },
+            {
+                "name": "mps_power_line",
+                "start": 52,
+                "end": 61
+            }
+        ],
+        "modules/rail.c": [
+            {
+                "name": "do_rail",
+                "start": 30,
+                "end": 48
+            },
+            {
+                "name": "mps_rail",
+                "start": 51,
+                "end": 74
+            }
+        ],
+        "modules/oremine.c": [
+            {
+                "name": "do_oremine",
+                "start": 22,
+                "end": 185
+            },
+            {
+                "name": "mps_oremine",
+                "start": 187,
+                "end": 201
+            }
+        ],
+        "modules/university.c": [
+            {
+                "name": "do_university",
+                "start": 18,
+                "end": 65
+            },
+            {
+                "name": "mps_university",
+                "start": 67,
+                "end": 86
+            }
+        ],
+        "modules/rocket_pad.c": [
+            {
+                "name": "do_rocket_pad",
+                "start": 22,
+                "end": 124
+            },
+            {
+                "name": "launch_rocket",
+                "start": 126,
+                "end": 162
+            },
+            {
+                "name": "mps_rocket",
+                "start": 164,
+                "end": 183
+            }
+        ],
+        "modules/commune.c": [
+            {
+                "name": "do_commune",
+                "start": 20,
+                "end": 143
+            },
+            {
+                "name": "mps_commune",
+                "start": 145,
+                "end": 164
+            }
+        ],
+        "modules/heavy_industry.c": [
+            {
+                "name": "do_industry_h",
+                "start": 19,
+                "end": 320
+            },
+            {
+                "name": "mps_heavy_industry",
+                "start": 323,
+                "end": 353
+            }
+        ],
+        "modules/blacksmith.c": [
+            {
+                "name": "do_blacksmith",
+                "start": 19,
+                "end": 96
+            },
+            {
+                "name": "mps_blacksmith",
+                "start": 98,
+                "end": 113
+            }
+        ],
+        "modules/residence.c": [
+            {
+                "name": "do_residence",
+                "start": 17,
+                "end": 270
+            },
+            {
+                "name": "mps_residence",
+                "start": 272,
+                "end": 307
+            }
+        ],
+        "modules/firestation.c": [
+            {
+                "name": "do_firestation",
+                "start": 19,
+                "end": 90
+            },
+            {
+                "name": "do_fire_cover",
+                "start": 93,
+                "end": 119
+            },
+            {
+                "name": "mps_firestation",
+                "start": 121,
+                "end": 134
+            }
+        ],
+        "modules/health_centre.c": [
+            {
+                "name": "do_health_centre",
+                "start": 19,
+                "end": 38
+            },
+            {
+                "name": "do_health_cover",
+                "start": 41,
+                "end": 65
+            },
+            {
+                "name": "mps_health_centre",
+                "start": 68,
+                "end": 81
+            }
+        ],
+        "modules/organic_farm.c": [
+            {
+                "name": "do_organic_farm",
+                "start": 17,
+                "end": 170
+            },
+            {
+                "name": "mps_organic_farm",
+                "start": 172,
+                "end": 193
+            }
+        ],
+        "modules/fire.c": [
+            {
+                "name": "do_fire",
+                "start": 18,
+                "end": 91
+            }
+        ],
+        "modules/cricket.c": [
+            {
+                "name": "do_cricket",
+                "start": 19,
+                "end": 71
+            },
+            {
+                "name": "do_cricket_cover",
+                "start": 74,
+                "end": 100
+            },
+            {
+                "name": "mps_cricket",
+                "start": 102,
+                "end": 115
+            }
+        ],
+        "modules/solar_power.c": [
+            {
+                "name": "do_power_source",
+                "start": 33,
+                "end": 42
+            },
+            {
+                "name": "mps_solar_power",
+                "start": 45,
+                "end": 69
+            }
+        ],
+        "modules/shanty.c": [
+            {
+                "name": "add_a_shanty",
+                "start": 18,
+                "end": 66
+            },
+            {
+                "name": "remove_a_shanty",
+                "start": 68,
+                "end": 90
+            },
+            {
+                "name": "update_shanty",
+                "start": 92,
+                "end": 106
+            },
+            {
+                "name": "do_shanty",
+                "start": 108,
+                "end": 128
+            }
+        ],
+        "modules/substation.c": [
+            {
+                "name": "do_power_substation",
+                "start": 28,
+                "end": 45
+            },
+            {
+                "name": "add_a_substation",
+                "start": 47,
+                "end": 56
+            },
+            {
+                "name": "remove_a_substation",
+                "start": 58,
+                "end": 71
+            },
+            {
+                "name": "shuffle_substations",
+                "start": 73,
+                "end": 90
+            },
+            {
+                "name": "mps_substation",
+                "start": 92,
+                "end": 124
+            }
+        ],
+        "modules/coalmine.c": [
+            {
+                "name": "do_coalmine",
+                "start": 20,
+                "end": 169
+            },
+            {
+                "name": "mps_coalmine",
+                "start": 171,
+                "end": 187
+            }
+        ],
+        "intl/loadinfo.h": [
+            {
+                "name": "_nl_make_l10nflist",
+                "start": 109,
+                "end": 110
+            }
+        ],
+        "intl/gettextP.h": [
+            {
+                "name": "SWAP",
+                "start": 70,
+                "end": 75
+            }
+        ],
+        "intl/libgnuintl.h": [
+            {
+                "name": "gettext",
+                "start": 128,
+                "end": 129
+            },
+            {
+                "name": "dgettext",
+                "start": 144,
+                "end": 146
+            },
+            {
+                "name": "dcgettext",
+                "start": 163,
+                "end": 166
+            },
+            {
+                "name": "ngettext",
+                "start": 184,
+                "end": 187
+            },
+            {
+                "name": "dngettext",
+                "start": 204,
+                "end": 208
+            },
+            {
+                "name": "dcngettext",
+                "start": 227,
+                "end": 232
+            },
+            {
+                "name": "textdomain",
+                "start": 249,
+                "end": 250
+            },
+            {
+                "name": "bindtextdomain",
+                "start": 267,
+                "end": 269
+            },
+            {
+                "name": "bind_textdomain_codeset",
+                "start": 286,
+                "end": 288
+            }
+        ],
+        "intl/gettext.c": [
+            {
+                "name": "libintl_gettext",
+                "start": 54,
+                "end": 59
+            }
+        ],
+        "intl/localename.c": [
+            {
+                "name": "_nl_locale_name",
+                "start": 383,
+                "end": 772
+            }
+        ],
+        "intl/os2compat.c": [
+            {
+                "name": "_nl_getenv",
+                "start": 31,
+                "end": 39
+            },
+            {
+                "name": "nlos2_initialize",
+                "start": 48,
+                "end": 98
+            }
+        ],
+        "intl/hash-string.h": [
+            {
+                "name": "hash_string",
+                "start": 38,
+                "end": 59
+            }
+        ],
+        "intl/loadmsgcat.c": [
+            {
+                "name": "get_sysdep_segment_value",
+                "start": 500,
+                "end": 753
+            },
+            {
+                "name": "_nl_init_domain_conv",
+                "start": 757,
+                "end": 873
+            },
+            {
+                "name": "_nl_free_domain_conv",
+                "start": 876,
+                "end": 893
+            },
+            {
+                "name": "_nl_load_domain",
+                "start": 897,
+                "end": 1290
+            }
+        ],
+        "intl/ngettext.c": [
+            {
+                "name": "libintl_ngettext",
+                "start": 56,
+                "end": 63
+            }
+        ],
+        "intl/bindtextdom.c": [
+            {
+                "name": "set_binding_values",
+                "start": 95,
+                "end": 341
+            },
+            {
+                "name": "libintl_bindtextdomain",
+                "start": 345,
+                "end": 352
+            },
+            {
+                "name": "libintl_bind_textdomain_codeset",
+                "start": 356,
+                "end": 363
+            }
+        ],
+        "intl/localealias.c": [
+            {
+                "name": "_nl_expand_alias",
+                "start": 134,
+                "end": 197
+            },
+            {
+                "name": "read_alias_file",
+                "start": 200,
+                "end": 354
+            },
+            {
+                "name": "extend_alias_table",
+                "start": 357,
+                "end": 373
+            },
+            {
+                "name": "alias_compare",
+                "start": 389,
+                "end": 419
+            }
+        ],
+        "intl/dcgettext.c": [
+            {
+                "name": "libintl_dcgettext",
+                "start": 46,
+                "end": 53
+            }
+        ],
+        "intl/dngettext.c": [
+            {
+                "name": "libintl_dngettext",
+                "start": 48,
+                "end": 56
+            }
+        ],
+        "intl/dcngettext.c": [
+            {
+                "name": "libintl_dcngettext",
+                "start": 46,
+                "end": 55
+            }
+        ],
+        "intl/textdomain.c": [
+            {
+                "name": "libintl_textdomain",
+                "start": 79,
+                "end": 137
+            }
+        ],
+        "intl/dgettext.c": [
+            {
+                "name": "libintl_dgettext",
+                "start": 48,
+                "end": 54
+            }
+        ],
+        "intl/localcharset.c": [
+            {
+                "name": "get_charset_aliases",
+                "start": 105,
+                "end": 230
+            },
+            {
+                "name": "locale_charset",
+                "start": 241,
+                "end": 369
+            }
+        ],
+        "intl/explodename.c": [
+            {
+                "name": "_nl_find_language",
+                "start": 40,
+                "end": 49
+            },
+            {
+                "name": "_nl_explode_name",
+                "start": 52,
+                "end": 192
+            }
+        ],
+        "intl/plural.c": [
+            {
+                "name": "new_exp",
+                "start": 92,
+                "end": 122
+            },
+            {
+                "name": "new_exp_0",
+                "start": 124,
+                "end": 129
+            },
+            {
+                "name": "new_exp_1",
+                "start": 131,
+                "end": 140
+            },
+            {
+                "name": "new_exp_2",
+                "start": 142,
+                "end": 153
+            },
+            {
+                "name": "new_exp_3",
+                "start": 155,
+                "end": 168
+            },
+            {
+                "name": "parse_plural_expression",
+                "start": 546,
+                "end": 1140
+            },
+            {
+                "name": "free_plural_expression",
+                "start": 1144,
+                "end": 1169
+            },
+            {
+                "name": "__gettextlex",
+                "start": 1172,
+                "end": 1314
+            },
+            {
+                "name": "__gettexterror",
+                "start": 1317,
+                "end": 1322
+            }
+        ],
+        "intl/eval-plural.h": [
+            {
+                "name": "plural_eval",
+                "start": 28,
+                "end": 114
+            }
+        ],
+        "intl/dcigettext.c": [
+            {
+                "name": "libintl_dcigettext",
+                "start": 408,
+                "end": 688
+            },
+            {
+                "name": "category_to_name",
+                "start": 1043,
+                "end": 1100
+            },
+            {
+                "name": "guess_category_value",
+                "start": 1103,
+                "end": 1138
+            },
+            {
+                "name": "stpcpy",
+                "start": 1147,
+                "end": 1155
+            }
+        ],
+        "intl/l10nflist.c": [
+            {
+                "name": "pop",
+                "start": 172,
+                "end": 183
+            },
+            {
+                "name": "stpcpy",
+                "start": 444,
+                "end": 452
+            }
+        ],
+        "intl/intl-compat.c": [
+            {
+                "name": "gettext",
+                "start": 48,
+                "end": 53
+            },
+            {
+                "name": "dgettext",
+                "start": 56,
+                "end": 62
+            },
+            {
+                "name": "dcgettext",
+                "start": 65,
+                "end": 72
+            },
+            {
+                "name": "ngettext",
+                "start": 75,
+                "end": 82
+            },
+            {
+                "name": "dngettext",
+                "start": 85,
+                "end": 93
+            },
+            {
+                "name": "dcngettext",
+                "start": 96,
+                "end": 105
+            },
+            {
+                "name": "textdomain",
+                "start": 108,
+                "end": 113
+            },
+            {
+                "name": "bindtextdomain",
+                "start": 116,
+                "end": 122
+            },
+            {
+                "name": "bind_textdomain_codeset",
+                "start": 125,
+                "end": 131
+            }
+        ],
+        "intl/plural-exp.c": [
+            {
+                "name": "extract_plural_expression",
+                "start": 97,
+                "end": 156
+            }
+        ],
+        "intl/finddomain.c": [
+            {
+                "name": "_nl_find_domain",
+                "start": 48,
+                "end": 177
+            }
+        ],
+        "tools/csippm/csi2ppm.c": [
+            {
+                "name": "main",
+                "start": 15,
+                "end": 98
+            }
+        ]
+    }
+}

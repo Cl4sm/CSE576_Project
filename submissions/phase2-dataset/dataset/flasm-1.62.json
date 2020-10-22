@@ -1,0 +1,917 @@
+{
+    "flasm-1.62": {
+        "util.c": [
+            {
+                "name": "checkByteOrder",
+                "start": 22,
+                "end": 34
+            },
+            {
+                "name": "longintCompare",
+                "start": 36,
+                "end": 47
+            },
+            {
+                "name": "longintBinaryFind",
+                "start": 49,
+                "end": 68
+            },
+            {
+                "name": "strIstr",
+                "start": 70,
+                "end": 99
+            },
+            {
+                "name": "strIcmp",
+                "start": 101,
+                "end": 108
+            },
+            {
+                "name": "strnIcmp",
+                "start": 110,
+                "end": 120
+            },
+            {
+                "name": "lowercase",
+                "start": 122,
+                "end": 128
+            },
+            {
+                "name": "xtoi",
+                "start": 130,
+                "end": 149
+            },
+            {
+                "name": "getWord",
+                "start": 151,
+                "end": 156
+            },
+            {
+                "name": "getDoubleWord",
+                "start": 158,
+                "end": 164
+            },
+            {
+                "name": "goodID",
+                "start": 166,
+                "end": 192
+            },
+            {
+                "name": "parseTagHeader",
+                "start": 194,
+                "end": 201
+            },
+            {
+                "name": "getTagString",
+                "start": 203,
+                "end": 280
+            }
+        ],
+        "flasm.c": [
+            {
+                "name": "waitUserInput",
+                "start": 84,
+                "end": 93
+            },
+            {
+                "name": "mexit",
+                "start": 98,
+                "end": 114
+            },
+            {
+                "name": "copyFileContents",
+                "start": 116,
+                "end": 123
+            },
+            {
+                "name": "tellUser",
+                "start": 125,
+                "end": 183
+            },
+            {
+                "name": "mstrdup",
+                "start": 185,
+                "end": 203
+            },
+            {
+                "name": "newLabel",
+                "start": 205,
+                "end": 229
+            },
+            {
+                "name": "addLabel",
+                "start": 231,
+                "end": 234
+            },
+            {
+                "name": "branchTarget",
+                "start": 236,
+                "end": 239
+            },
+            {
+                "name": "addNumLabel",
+                "start": 241,
+                "end": 249
+            },
+            {
+                "name": "writeByte",
+                "start": 251,
+                "end": 258
+            },
+            {
+                "name": "writeShort",
+                "start": 260,
+                "end": 265
+            },
+            {
+                "name": "writeFloat",
+                "start": 267,
+                "end": 285
+            },
+            {
+                "name": "writeDouble",
+                "start": 287,
+                "end": 313
+            },
+            {
+                "name": "writeLongInt",
+                "start": 315,
+                "end": 333
+            },
+            {
+                "name": "writeString",
+                "start": 335,
+                "end": 345
+            },
+            {
+                "name": "addConstant",
+                "start": 350,
+                "end": 357
+            },
+            {
+                "name": "writeConstants",
+                "start": 359,
+                "end": 378
+            },
+            {
+                "name": "writePushString",
+                "start": 380,
+                "end": 407
+            },
+            {
+                "name": "patchTargets",
+                "start": 409,
+                "end": 440
+            },
+            {
+                "name": "flput",
+                "start": 442,
+                "end": 446
+            },
+            {
+                "name": "flputShort",
+                "start": 448,
+                "end": 453
+            },
+            {
+                "name": "flputLong",
+                "start": 455,
+                "end": 462
+            },
+            {
+                "name": "flputString",
+                "start": 464,
+                "end": 468
+            },
+            {
+                "name": "dupByte",
+                "start": 470,
+                "end": 473
+            },
+            {
+                "name": "dupWord",
+                "start": 475,
+                "end": 483
+            },
+            {
+                "name": "dupLong",
+                "start": 485,
+                "end": 488
+            },
+            {
+                "name": "dupBuffered",
+                "start": 490,
+                "end": 511
+            },
+            {
+                "name": "patchLength",
+                "start": 513,
+                "end": 517
+            },
+            {
+                "name": "patchFlag",
+                "start": 519,
+                "end": 522
+            },
+            {
+                "name": "patchFrameLoaded",
+                "start": 524,
+                "end": 530
+            },
+            {
+                "name": "updateTmpLength",
+                "start": 532,
+                "end": 547
+            },
+            {
+                "name": "updateShort",
+                "start": 549,
+                "end": 561
+            },
+            {
+                "name": "flushOutput",
+                "start": 563,
+                "end": 581
+            },
+            {
+                "name": "writeTagHeader",
+                "start": 583,
+                "end": 603
+            },
+            {
+                "name": "handledTag",
+                "start": 605,
+                "end": 613
+            },
+            {
+                "name": "findNextTag",
+                "start": 615,
+                "end": 637
+            },
+            {
+                "name": "findNextTags",
+                "start": 639,
+                "end": 671
+            },
+            {
+                "name": "writeDoAction",
+                "start": 673,
+                "end": 684
+            },
+            {
+                "name": "writeInitMC",
+                "start": 686,
+                "end": 700
+            },
+            {
+                "name": "dupBits",
+                "start": 705,
+                "end": 721
+            },
+            {
+                "name": "dupMatrix",
+                "start": 723,
+                "end": 733
+            },
+            {
+                "name": "dupColorTransform",
+                "start": 735,
+                "end": 749
+            },
+            {
+                "name": "dupFilters",
+                "start": 751,
+                "end": 780
+            },
+            {
+                "name": "writePlaceMCStart",
+                "start": 782,
+                "end": 871
+            },
+            {
+                "name": "writePlaceMCEnd",
+                "start": 873,
+                "end": 892
+            },
+            {
+                "name": "writeOnClipEvent",
+                "start": 894,
+                "end": 905
+            },
+            {
+                "name": "writeButtonStart",
+                "start": 907,
+                "end": 948
+            },
+            {
+                "name": "writeButtonEnd",
+                "start": 950,
+                "end": 959
+            },
+            {
+                "name": "writeButtonEvent",
+                "start": 961,
+                "end": 970
+            },
+            {
+                "name": "writeDefineMCStart",
+                "start": 972,
+                "end": 988
+            },
+            {
+                "name": "writeDefineMCEnd",
+                "start": 990,
+                "end": 1001
+            },
+            {
+                "name": "writeScriptLimits",
+                "start": 1003,
+                "end": 1008
+            },
+            {
+                "name": "writeProtect",
+                "start": 1010,
+                "end": 1022
+            },
+            {
+                "name": "writeEnableDebugger",
+                "start": 1024,
+                "end": 1036
+            },
+            {
+                "name": "writeEnableDebugger2",
+                "start": 1038,
+                "end": 1050
+            },
+            {
+                "name": "writeMetadata",
+                "start": 1052,
+                "end": 1056
+            },
+            {
+                "name": "writeFileAttrs",
+                "start": 1058,
+                "end": 1062
+            },
+            {
+                "name": "writeImportAssets",
+                "start": 1064,
+                "end": 1086
+            },
+            {
+                "name": "writeExportAssets",
+                "start": 1088,
+                "end": 1101
+            },
+            {
+                "name": "finalizeTemporaryFile",
+                "start": 1103,
+                "end": 1127
+            },
+            {
+                "name": "getSWFHeader",
+                "start": 1129,
+                "end": 1133
+            },
+            {
+                "name": "startUpdate",
+                "start": 1137,
+                "end": 1190
+            },
+            {
+                "name": "finishUpdate",
+                "start": 1192,
+                "end": 1215
+            },
+            {
+                "name": "writeASBytecode",
+                "start": 1217,
+                "end": 1236
+            },
+            {
+                "name": "createTemporaryFile",
+                "start": 1238,
+                "end": 1242
+            },
+            {
+                "name": "decompressSWF",
+                "start": 1244,
+                "end": 1316
+            },
+            {
+                "name": "compressSWF",
+                "start": 1318,
+                "end": 1407
+            },
+            {
+                "name": "usage",
+                "start": 1411,
+                "end": 1439
+            },
+            {
+                "name": "unescapePath",
+                "start": 1441,
+                "end": 1467
+            },
+            {
+                "name": "readINI",
+                "start": 1469,
+                "end": 1575
+            },
+            {
+                "name": "executablePath",
+                "start": 1577,
+                "end": 1594
+            },
+            {
+                "name": "parseArgs",
+                "start": 1596,
+                "end": 1740
+            },
+            {
+                "name": "main",
+                "start": 1742,
+                "end": 1851
+            }
+        ],
+        "memwatch.c": [
+            {
+                "name": "mwInit",
+                "start": 413,
+                "end": 515
+            },
+            {
+                "name": "mwAbort",
+                "start": 517,
+                "end": 623
+            },
+            {
+                "name": "mwTerm",
+                "start": 625,
+                "end": 635
+            },
+            {
+                "name": "mwStatistics",
+                "start": 637,
+                "end": 647
+            },
+            {
+                "name": "mwAutoCheck",
+                "start": 649,
+                "end": 653
+            },
+            {
+                "name": "mwSetOutFunc",
+                "start": 655,
+                "end": 658
+            },
+            {
+                "name": "mwWriteOF",
+                "start": 660,
+                "end": 670
+            },
+            {
+                "name": "mwCheckOF",
+                "start": 672,
+                "end": 683
+            },
+            {
+                "name": "mwTest",
+                "start": 685,
+                "end": 689
+            },
+            {
+                "name": "mwTestBuffer",
+                "start": 695,
+                "end": 707
+            },
+            {
+                "name": "mwBreakOut",
+                "start": 709,
+                "end": 713
+            },
+            {
+                "name": "mwMark",
+                "start": 718,
+                "end": 802
+            },
+            {
+                "name": "mwUnmark",
+                "start": 804,
+                "end": 825
+            },
+            {
+                "name": "mwARI",
+                "start": 832,
+                "end": 845
+            },
+            {
+                "name": "mwAriHandler",
+                "start": 848,
+                "end": 851
+            },
+            {
+                "name": "mwSetAriFunc",
+                "start": 854,
+                "end": 857
+            },
+            {
+                "name": "mwMalloc",
+                "start": 863,
+                "end": 945
+            },
+            {
+                "name": "mwRealloc",
+                "start": 947,
+                "end": 1027
+            },
+            {
+                "name": "mwStrdup",
+                "start": 1029,
+                "end": 1049
+            },
+            {
+                "name": "mwFree",
+                "start": 1051,
+                "end": 1152
+            },
+            {
+                "name": "mwCalloc",
+                "start": 1154,
+                "end": 1161
+            },
+            {
+                "name": "mwFree_",
+                "start": 1163,
+                "end": 1168
+            },
+            {
+                "name": "mwMalloc_",
+                "start": 1170,
+                "end": 1175
+            },
+            {
+                "name": "mwRealloc_",
+                "start": 1177,
+                "end": 1182
+            },
+            {
+                "name": "mwCalloc_",
+                "start": 1184,
+                "end": 1189
+            },
+            {
+                "name": "mwFlushNow",
+                "start": 1191,
+                "end": 1194
+            },
+            {
+                "name": "mwDoFlush",
+                "start": 1196,
+                "end": 1200
+            },
+            {
+                "name": "mwLimit",
+                "start": 1202,
+                "end": 1218
+            },
+            {
+                "name": "mwSetAriAction",
+                "start": 1220,
+                "end": 1226
+            },
+            {
+                "name": "mwAssert",
+                "start": 1228,
+                "end": 1285
+            },
+            {
+                "name": "mwVerify",
+                "start": 1287,
+                "end": 1341
+            },
+            {
+                "name": "mwTrace",
+                "start": 1343,
+                "end": 1365
+            },
+            {
+                "name": "mwGrab",
+                "start": 1372,
+                "end": 1375
+            },
+            {
+                "name": "mwDrop",
+                "start": 1377,
+                "end": 1380
+            },
+            {
+                "name": "mwDropAll",
+                "start": 1382,
+                "end": 1388
+            },
+            {
+                "name": "mwGrabType",
+                "start": 1390,
+                "end": 1401
+            },
+            {
+                "name": "mwGrab_",
+                "start": 1403,
+                "end": 1438
+            },
+            {
+                "name": "mwDrop_",
+                "start": 1440,
+                "end": 1483
+            },
+            {
+                "name": "mwNoMansLand",
+                "start": 1489,
+                "end": 1505
+            },
+            {
+                "name": "mwAutoInit",
+                "start": 1511,
+                "end": 1517
+            },
+            {
+                "name": "mwLogR",
+                "start": 1519,
+                "end": 1532
+            },
+            {
+                "name": "mwLogW",
+                "start": 1534,
+                "end": 1536
+            },
+            {
+                "name": "mwFlushR",
+                "start": 1538,
+                "end": 1551
+            },
+            {
+                "name": "mwFlushW",
+                "start": 1553,
+                "end": 1555
+            },
+            {
+                "name": "mwIncErr",
+                "start": 1557,
+                "end": 1561
+            },
+            {
+                "name": "mwFlush",
+                "start": 1563,
+                "end": 1571
+            },
+            {
+                "name": "mwUnlink",
+                "start": 1573,
+                "end": 1598
+            },
+            {
+                "name": "mwRelink",
+                "start": 1605,
+                "end": 1889
+            },
+            {
+                "name": "mwIsHeapOK",
+                "start": 1899,
+                "end": 1920
+            },
+            {
+                "name": "mwIsOwned",
+                "start": 1922,
+                "end": 1982
+            },
+            {
+                "name": "mwTestBuf",
+                "start": 1990,
+                "end": 2039
+            },
+            {
+                "name": "mwDefaultOutFunc",
+                "start": 2041,
+                "end": 2043
+            },
+            {
+                "name": "mwWrite",
+                "start": 2045,
+                "end": 2061
+            },
+            {
+                "name": "mwLogFile",
+                "start": 2063,
+                "end": 2074
+            },
+            {
+                "name": "mwFreeUp",
+                "start": 2082,
+                "end": 2131
+            },
+            {
+                "name": "mwTestMem",
+                "start": 2133,
+                "end": 2141
+            },
+            {
+                "name": "mwStrCmpI",
+                "start": 2143,
+                "end": 2150
+            },
+            {
+                "name": "mwTestNow",
+                "start": 2154,
+                "end": 2234
+            },
+            {
+                "name": "mwStatReport",
+                "start": 2240,
+                "end": 2286
+            },
+            {
+                "name": "mwStatGet",
+                "start": 2288,
+                "end": 2324
+            },
+            {
+                "name": "mwStatAlloc",
+                "start": 2326,
+                "end": 2349
+            },
+            {
+                "name": "mwStatFree",
+                "start": 2351,
+                "end": 2363
+            },
+            {
+                "name": "mwDummy",
+                "start": 2373,
+                "end": 2376
+            },
+            {
+                "name": "mwSIGSEGV",
+                "start": 2409,
+                "end": 2413
+            },
+            {
+                "name": "mwIsReadAddr",
+                "start": 2415,
+                "end": 2450
+            },
+            {
+                "name": "mwIsSafeAddr",
+                "start": 2451,
+                "end": 2486
+            }
+        ],
+        "unflasm.c": [
+            {
+                "name": "skipProtected",
+                "start": 116,
+                "end": 120
+            },
+            {
+                "name": "printIndent",
+                "start": 122,
+                "end": 152
+            },
+            {
+                "name": "print",
+                "start": 154,
+                "end": 163
+            },
+            {
+                "name": "printstr",
+                "start": 165,
+                "end": 201
+            },
+            {
+                "name": "printFloat",
+                "start": 203,
+                "end": 241
+            },
+            {
+                "name": "InitBits",
+                "start": 246,
+                "end": 250
+            },
+            {
+                "name": "getBits",
+                "start": 252,
+                "end": 268
+            },
+            {
+                "name": "printFrameNum",
+                "start": 270,
+                "end": 275
+            },
+            {
+                "name": "addLabel",
+                "start": 277,
+                "end": 292
+            },
+            {
+                "name": "includeFile",
+                "start": 296,
+                "end": 315
+            },
+            {
+                "name": "processASMLine",
+                "start": 317,
+                "end": 340
+            },
+            {
+                "name": "checkLabel",
+                "start": 342,
+                "end": 356
+            },
+            {
+                "name": "printActions",
+                "start": 362,
+                "end": 402
+            },
+            {
+                "name": "printActionRecord",
+                "start": 404,
+                "end": 1470
+            },
+            {
+                "name": "rebuildConstantPool",
+                "start": 1472,
+                "end": 1519
+            },
+            {
+                "name": "readActionBuffer",
+                "start": 1521,
+                "end": 1532
+            },
+            {
+                "name": "createLabels",
+                "start": 1534,
+                "end": 1570
+            },
+            {
+                "name": "printActionBlock",
+                "start": 1572,
+                "end": 1614
+            },
+            {
+                "name": "skipMatrix",
+                "start": 1616,
+                "end": 1624
+            },
+            {
+                "name": "skipColorTransform",
+                "start": 1626,
+                "end": 1637
+            },
+            {
+                "name": "skipFilters",
+                "start": 1639,
+                "end": 1669
+            },
+            {
+                "name": "parseKeyPressEvent",
+                "start": 1671,
+                "end": 1731
+            },
+            {
+                "name": "parseButtonEvent",
+                "start": 1733,
+                "end": 1807
+            },
+            {
+                "name": "parseButton2",
+                "start": 1809,
+                "end": 1853
+            },
+            {
+                "name": "printBitMasked",
+                "start": 1855,
+                "end": 1865
+            },
+            {
+                "name": "parseEvent",
+                "start": 1867,
+                "end": 1911
+            },
+            {
+                "name": "parsePlaceObject",
+                "start": 1913,
+                "end": 2001
+            },
+            {
+                "name": "parseMovieClip",
+                "start": 2003,
+                "end": 2055
+            },
+            {
+                "name": "disassembleSWF",
+                "start": 2057,
+                "end": 2297
+            }
+        ]
+    }
+}

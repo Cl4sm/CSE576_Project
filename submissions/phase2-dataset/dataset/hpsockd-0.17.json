@@ -1,0 +1,782 @@
+{
+    "hpsockd-0.17": {
+        "src/sockd/util.c": [
+            {
+                "name": "bufFree",
+                "start": 30,
+                "end": 38
+            },
+            {
+                "name": "freeSomeMemory",
+                "start": 45,
+                "end": 80
+            },
+            {
+                "name": "addToBuffer",
+                "start": 88,
+                "end": 117
+            },
+            {
+                "name": "getFromBuffer",
+                "start": 119,
+                "end": 136
+            },
+            {
+                "name": "setupTimeouts",
+                "start": 143,
+                "end": 149
+            },
+            {
+                "name": "setSocketBuffer",
+                "start": 150,
+                "end": 163
+            },
+            {
+                "name": "freePointers",
+                "start": 172,
+                "end": 183
+            },
+            {
+                "name": "pendingClose",
+                "start": 186,
+                "end": 205
+            },
+            {
+                "name": "closeConnectionReal",
+                "start": 213,
+                "end": 320
+            },
+            {
+                "name": "insane",
+                "start": 322,
+                "end": 331
+            },
+            {
+                "name": "connSanity",
+                "start": 332,
+                "end": 386
+            },
+            {
+                "name": "closeConnection",
+                "start": 387,
+                "end": 392
+            },
+            {
+                "name": "createSocket",
+                "start": 394,
+                "end": 411
+            },
+            {
+                "name": "setSelect",
+                "start": 420,
+                "end": 430
+            },
+            {
+                "name": "clrSelect",
+                "start": 431,
+                "end": 439
+            },
+            {
+                "name": "nullExcp",
+                "start": 447,
+                "end": 451
+            },
+            {
+                "name": "setupDaemon",
+                "start": 462,
+                "end": 507
+            },
+            {
+                "name": "forgetInfo",
+                "start": 509,
+                "end": 517
+            },
+            {
+                "name": "forgetConn",
+                "start": 518,
+                "end": 538
+            },
+            {
+                "name": "spawnChild",
+                "start": 545,
+                "end": 587
+            },
+            {
+                "name": "destroyDaemon",
+                "start": 594,
+                "end": 608
+            },
+            {
+                "name": "negotInit",
+                "start": 621,
+                "end": 683
+            },
+            {
+                "name": "negotLock",
+                "start": 693,
+                "end": 711
+            },
+            {
+                "name": "negotUnlock",
+                "start": 718,
+                "end": 734
+            },
+            {
+                "name": "compareAddr",
+                "start": 740,
+                "end": 753
+            },
+            {
+                "name": "findRoute",
+                "start": 766,
+                "end": 776
+            },
+            {
+                "name": "getEnv",
+                "start": 784,
+                "end": 804
+            },
+            {
+                "name": "footprint",
+                "start": 820,
+                "end": 829
+            },
+            {
+                "name": "dumpFootprint",
+                "start": 831,
+                "end": 892
+            },
+            {
+                "name": "setCommandLine",
+                "start": 903,
+                "end": 913
+            }
+        ],
+        "src/sockd/sockd.c": [
+            {
+                "name": "main",
+                "start": 63,
+                "end": 140
+            },
+            {
+                "name": "mainLoop",
+                "start": 163,
+                "end": 322
+            },
+            {
+                "name": "findListenInterfaces",
+                "start": 323,
+                "end": 378
+            },
+            {
+                "name": "createListenSocket",
+                "start": 385,
+                "end": 477
+            },
+            {
+                "name": "readConfig",
+                "start": 486,
+                "end": 603
+            }
+        ],
+        "src/sockd/v5udp.c": [
+            {
+                "name": "v5DoUdpAssociate",
+                "start": 43,
+                "end": 183
+            },
+            {
+                "name": "dumpUDPData",
+                "start": 184,
+                "end": 208
+            },
+            {
+                "name": "v5UdpCloseInbound",
+                "start": 217,
+                "end": 220
+            },
+            {
+                "name": "v5InboundUdpReq",
+                "start": 228,
+                "end": 313
+            },
+            {
+                "name": "v5OutputUdpReply",
+                "start": 320,
+                "end": 340
+            },
+            {
+                "name": "simpleInboundUdp",
+                "start": 346,
+                "end": 352
+            },
+            {
+                "name": "simpleOutputUdp",
+                "start": 358,
+                "end": 365
+            }
+        ],
+        "src/sockd/listen.c": [
+            {
+                "name": "listenRecv1",
+                "start": 51,
+                "end": 203
+            },
+            {
+                "name": "listenRecv",
+                "start": 204,
+                "end": 211
+            },
+            {
+                "name": "newClient",
+                "start": 223,
+                "end": 248
+            },
+            {
+                "name": "checkPidLock",
+                "start": 258,
+                "end": 273
+            },
+            {
+                "name": "doListenLock",
+                "start": 274,
+                "end": 285
+            },
+            {
+                "name": "unListenLock",
+                "start": 286,
+                "end": 297
+            },
+            {
+                "name": "unListen",
+                "start": 298,
+                "end": 342
+            },
+            {
+                "name": "tryListen",
+                "start": 347,
+                "end": 356
+            },
+            {
+                "name": "tryListenLock",
+                "start": 358,
+                "end": 469
+            }
+        ],
+        "src/sockd/dns.c": [
+            {
+                "name": "dnsGlobalInit",
+                "start": 75,
+                "end": 139
+            },
+            {
+                "name": "dnsServerInit",
+                "start": 148,
+                "end": 199
+            },
+            {
+                "name": "adjust",
+                "start": 207,
+                "end": 221
+            },
+            {
+                "name": "dnsInboundUdp",
+                "start": 238,
+                "end": 296
+            },
+            {
+                "name": "dnsQuery",
+                "start": 307,
+                "end": 335
+            },
+            {
+                "name": "dnsHandler",
+                "start": 342,
+                "end": 397
+            },
+            {
+                "name": "dnsDestroy",
+                "start": 405,
+                "end": 416
+            },
+            {
+                "name": "dnsWrite",
+                "start": 419,
+                "end": 422
+            }
+        ],
+        "src/sockd/userpass.c": [
+            {
+                "name": "userPassInfo",
+                "start": 33,
+                "end": 43
+            },
+            {
+                "name": "v5UserPassInit",
+                "start": 53,
+                "end": 64
+            },
+            {
+                "name": "v5UserPassAuth",
+                "start": 66,
+                "end": 85
+            },
+            {
+                "name": "v5UserPassNegotiate",
+                "start": 88,
+                "end": 131
+            }
+        ],
+        "src/sockd/v5tcp.c": [
+            {
+                "name": "simpleInbound",
+                "start": 32,
+                "end": 50
+            },
+            {
+                "name": "simpleOutput",
+                "start": 63,
+                "end": 90
+            },
+            {
+                "name": "v5DoConnect",
+                "start": 91,
+                "end": 119
+            },
+            {
+                "name": "v5ConnectSendReply",
+                "start": 122,
+                "end": 159
+            },
+            {
+                "name": "v5DoBind",
+                "start": 161,
+                "end": 213
+            },
+            {
+                "name": "v5BindRecv",
+                "start": 216,
+                "end": 260
+            }
+        ],
+        "src/sockd/signal.c": [
+            {
+                "name": "makeMask",
+                "start": 35,
+                "end": 47
+            },
+            {
+                "name": "relopToStr",
+                "start": 48,
+                "end": 59
+            },
+            {
+                "name": "hostToStr",
+                "start": 60,
+                "end": 72
+            },
+            {
+                "name": "dumpClients",
+                "start": 80,
+                "end": 128
+            },
+            {
+                "name": "dumpConfig",
+                "start": 137,
+                "end": 362
+            },
+            {
+                "name": "terminate",
+                "start": 425,
+                "end": 436
+            },
+            {
+                "name": "dnsTerminate",
+                "start": 437,
+                "end": 441
+            },
+            {
+                "name": "setupSignals",
+                "start": 451,
+                "end": 522
+            },
+            {
+                "name": "markSignal",
+                "start": 533,
+                "end": 545
+            },
+            {
+                "name": "doSignals",
+                "start": 555,
+                "end": 575
+            }
+        ],
+        "src/sockd/usage.c": [
+            {
+                "name": "lltos",
+                "start": 137,
+                "end": 173
+            },
+            {
+                "name": "ntoa",
+                "start": 175,
+                "end": 180
+            },
+            {
+                "name": "main",
+                "start": 182,
+                "end": 234
+            },
+            {
+                "name": "Read",
+                "start": 239,
+                "end": 254
+            },
+            {
+                "name": "process_file",
+                "start": 256,
+                "end": 386
+            },
+            {
+                "name": "lostConn",
+                "start": 387,
+                "end": 391
+            },
+            {
+                "name": "findConn",
+                "start": 392,
+                "end": 398
+            },
+            {
+                "name": "freeConn",
+                "start": 399,
+                "end": 415
+            },
+            {
+                "name": "addSrc",
+                "start": 455,
+                "end": 475
+            },
+            {
+                "name": "addDst",
+                "start": 476,
+                "end": 496
+            },
+            {
+                "name": "outputStats",
+                "start": 497,
+                "end": 518
+            },
+            {
+                "name": "Sprint",
+                "start": 523,
+                "end": 562
+            },
+            {
+                "name": "Scmp",
+                "start": 563,
+                "end": 572
+            },
+            {
+                "name": "Dprint",
+                "start": 573,
+                "end": 612
+            },
+            {
+                "name": "Dcmp",
+                "start": 613,
+                "end": 622
+            },
+            {
+                "name": "address",
+                "start": 623,
+                "end": 644
+            }
+        ],
+        "src/sockd/v5.c": [
+            {
+                "name": "noAuthInfo",
+                "start": 29,
+                "end": 39
+            },
+            {
+                "name": "newV5Client",
+                "start": 42,
+                "end": 79
+            },
+            {
+                "name": "v5PutSin",
+                "start": 81,
+                "end": 100
+            },
+            {
+                "name": "v5GetSin",
+                "start": 101,
+                "end": 123
+            },
+            {
+                "name": "v5Request",
+                "start": 125,
+                "end": 224
+            },
+            {
+                "name": "v5ErrnoToResult",
+                "start": 226,
+                "end": 241
+            },
+            {
+                "name": "v5WriteReply",
+                "start": 242,
+                "end": 254
+            },
+            {
+                "name": "validate",
+                "start": 260,
+                "end": 412
+            }
+        ],
+        "src/sockd/methods.c": [
+            {
+                "name": "loadMethInfo",
+                "start": 40,
+                "end": 97
+            },
+            {
+                "name": "findMatchingMethod",
+                "start": 105,
+                "end": 129
+            }
+        ],
+        "src/sockd/logging.c": [
+            {
+                "name": "newLog",
+                "start": 37,
+                "end": 58
+            },
+            {
+                "name": "logStartup",
+                "start": 59,
+                "end": 71
+            },
+            {
+                "name": "makeLogRec",
+                "start": 73,
+                "end": 137
+            },
+            {
+                "name": "logClose",
+                "start": 138,
+                "end": 185
+            }
+        ],
+        "src/sockd/v5command.c": [
+            {
+                "name": "v5DoCommand",
+                "start": 30,
+                "end": 101
+            },
+            {
+                "name": "commandOutput",
+                "start": 103,
+                "end": 128
+            },
+            {
+                "name": "doCommand",
+                "start": 130,
+                "end": 148
+            },
+            {
+                "name": "doCommand2",
+                "start": 149,
+                "end": 309
+            }
+        ],
+        "src/sockd/log2ascii.c": [
+            {
+                "name": "Read",
+                "start": 32,
+                "end": 47
+            },
+            {
+                "name": "main",
+                "start": 52,
+                "end": 90
+            },
+            {
+                "name": "process_file",
+                "start": 94,
+                "end": 185
+            },
+            {
+                "name": "typeToStr",
+                "start": 186,
+                "end": 201
+            },
+            {
+                "name": "dumpAddr",
+                "start": 202,
+                "end": 217
+            },
+            {
+                "name": "dumpString",
+                "start": 218,
+                "end": 225
+            }
+        ],
+        "src/sockd/sdc.c": [
+            {
+                "name": "main",
+                "start": 41,
+                "end": 156
+            },
+            {
+                "name": "printFlags",
+                "start": 157,
+                "end": 168
+            },
+            {
+                "name": "doStatus",
+                "start": 169,
+                "end": 199
+            },
+            {
+                "name": "doClients",
+                "start": 200,
+                "end": 204
+            }
+        ],
+        "src/sockd/v4.c": [
+            {
+                "name": "v4Info",
+                "start": 33,
+                "end": 43
+            },
+            {
+                "name": "newV4Client",
+                "start": 47,
+                "end": 138
+            },
+            {
+                "name": "v4DoConnect",
+                "start": 139,
+                "end": 167
+            },
+            {
+                "name": "v4ConnectSendReply",
+                "start": 170,
+                "end": 206
+            },
+            {
+                "name": "v4DoBind",
+                "start": 208,
+                "end": 262
+            },
+            {
+                "name": "v4BindRecv",
+                "start": 265,
+                "end": 314
+            },
+            {
+                "name": "makeV5Req",
+                "start": 316,
+                "end": 335
+            }
+        ],
+        "src/util/inetdsec.c": [
+            {
+                "name": "DoInetdSec",
+                "start": 66,
+                "end": 168
+            },
+            {
+                "name": "internet_parse",
+                "start": 180,
+                "end": 280
+            },
+            {
+                "name": "readsecfile",
+                "start": 284,
+                "end": 348
+            },
+            {
+                "name": "attachline",
+                "start": 350,
+                "end": 387
+            },
+            {
+                "name": "nextline",
+                "start": 393,
+                "end": 415
+            }
+        ],
+        "src/util/btree.c": [
+            {
+                "name": "find_ix",
+                "start": 68,
+                "end": 118
+            },
+            {
+                "name": "fix_keys",
+                "start": 120,
+                "end": 137
+            },
+            {
+                "name": "put_entry",
+                "start": 140,
+                "end": 266
+            },
+            {
+                "name": "search",
+                "start": 269,
+                "end": 338
+            },
+            {
+                "name": "btsearch",
+                "start": 341,
+                "end": 361
+            },
+            {
+                "name": "btdelete",
+                "start": 363,
+                "end": 376
+            },
+            {
+                "name": "btwalk",
+                "start": 378,
+                "end": 408
+            },
+            {
+                "name": "destroy",
+                "start": 410,
+                "end": 435
+            },
+            {
+                "name": "btdestroy",
+                "start": 437,
+                "end": 463
+            },
+            {
+                "name": "btvalidate",
+                "start": 468,
+                "end": 522
+            },
+            {
+                "name": "btdump",
+                "start": 525,
+                "end": 551
+            }
+        ],
+        "src/util/inet_ntoa.c": [
+            {
+                "name": "inetNtor",
+                "start": 37,
+                "end": 61
+            },
+            {
+                "name": "inetNtoa",
+                "start": 62,
+                "end": 76
+            }
+        ]
+    }
+}

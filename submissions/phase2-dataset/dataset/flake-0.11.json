@@ -1,0 +1,519 @@
+{
+    "flake-0.11": {
+        "flake/flake.c": [
+            {
+                "name": "print_usage",
+                "start": 38,
+                "end": 43
+            },
+            {
+                "name": "print_help",
+                "start": 45,
+                "end": 90
+            },
+            {
+                "name": "parse_number",
+                "start": 117,
+                "end": 139
+            },
+            {
+                "name": "parse_commandline",
+                "start": 141,
+                "end": 321
+            },
+            {
+                "name": "print_params",
+                "start": 323,
+                "end": 368
+            },
+            {
+                "name": "encode_file",
+                "start": 370,
+                "end": 528
+            },
+            {
+                "name": "open_files",
+                "start": 530,
+                "end": 558
+            },
+            {
+                "name": "filelist_cleanup",
+                "start": 560,
+                "end": 571
+            },
+            {
+                "name": "main",
+                "start": 573,
+                "end": 610
+            }
+        ],
+        "flake/wav.c": [
+            {
+                "name": "read4le",
+                "start": 35,
+                "end": 41
+            },
+            {
+                "name": "read2le",
+                "start": 43,
+                "end": 49
+            },
+            {
+                "name": "wavfile_init",
+                "start": 51,
+                "end": 177
+            },
+            {
+                "name": "fmt_convert_to_u8",
+                "start": 179,
+                "end": 219
+            },
+            {
+                "name": "fmt_convert_to_s16",
+                "start": 221,
+                "end": 261
+            },
+            {
+                "name": "fmt_convert_to_s20",
+                "start": 263,
+                "end": 303
+            },
+            {
+                "name": "fmt_convert_to_s24",
+                "start": 305,
+                "end": 345
+            },
+            {
+                "name": "fmt_convert_to_s32",
+                "start": 347,
+                "end": 387
+            },
+            {
+                "name": "fmt_convert_to_float",
+                "start": 389,
+                "end": 427
+            },
+            {
+                "name": "fmt_convert_to_double",
+                "start": 429,
+                "end": 467
+            },
+            {
+                "name": "fmt_convert",
+                "start": 469,
+                "end": 496
+            },
+            {
+                "name": "wavfile_read_samples",
+                "start": 498,
+                "end": 602
+            },
+            {
+                "name": "wavfile_seek_samples",
+                "start": 604,
+                "end": 647
+            },
+            {
+                "name": "wavfile_seek_time_ms",
+                "start": 649,
+                "end": 656
+            },
+            {
+                "name": "wavfile_position",
+                "start": 658,
+                "end": 670
+            },
+            {
+                "name": "wavfile_print",
+                "start": 672,
+                "end": 696
+            }
+        ],
+        "util/wavinfo.c": [
+            {
+                "name": "get_format_name",
+                "start": 11,
+                "end": 266
+            },
+            {
+                "name": "wavinfo_print",
+                "start": 273,
+                "end": 325
+            },
+            {
+                "name": "wavfile_error",
+                "start": 327,
+                "end": 334
+            },
+            {
+                "name": "main",
+                "start": 336,
+                "end": 367
+            }
+        ],
+        "libflake/crc.c": [
+            {
+                "name": "crc_init_table",
+                "start": 24,
+                "end": 41
+            },
+            {
+                "name": "crc_init",
+                "start": 52,
+                "end": 57
+            },
+            {
+                "name": "calc_crc",
+                "start": 59,
+                "end": 72
+            },
+            {
+                "name": "calc_crc8",
+                "start": 74,
+                "end": 83
+            },
+            {
+                "name": "calc_crc16",
+                "start": 85,
+                "end": 94
+            }
+        ],
+        "libflake/flake.h": [
+            {
+                "name": "flake_encode_frame",
+                "start": 193,
+                "end": 194
+            }
+        ],
+        "libflake/rice.h": [
+            {
+                "name": "calc_rice_params_fixed",
+                "start": 44,
+                "end": 46
+            },
+            {
+                "name": "calc_rice_params_lpc",
+                "start": 48,
+                "end": 50
+            }
+        ],
+        "libflake/lpc.h": [
+            {
+                "name": "lpc_calc_coefs",
+                "start": 27,
+                "end": 29
+            }
+        ],
+        "libflake/md5.h": [
+            {
+                "name": "md5_accumulate",
+                "start": 30,
+                "end": 31
+            }
+        ],
+        "libflake/bitio.h": [
+            {
+                "name": "bitwriter_init",
+                "start": 40,
+                "end": 53
+            },
+            {
+                "name": "bitwriter_count",
+                "start": 55,
+                "end": 60
+            },
+            {
+                "name": "bitwriter_flush",
+                "start": 62,
+                "end": 80
+            },
+            {
+                "name": "bitwriter_writebits",
+                "start": 82,
+                "end": 110
+            },
+            {
+                "name": "bitwriter_writebits_signed",
+                "start": 112,
+                "end": 117
+            },
+            {
+                "name": "bitwriter_write_rice_signed",
+                "start": 119,
+                "end": 140
+            }
+        ],
+        "libflake/encode.c": [
+            {
+                "name": "write_streaminfo",
+                "start": 55,
+                "end": 86
+            },
+            {
+                "name": "write_padding",
+                "start": 91,
+                "end": 102
+            },
+            {
+                "name": "write_vorbis_comment",
+                "start": 110,
+                "end": 137
+            },
+            {
+                "name": "write_headers",
+                "start": 142,
+                "end": 173
+            },
+            {
+                "name": "select_blocksize",
+                "start": 179,
+                "end": 192
+            },
+            {
+                "name": "flake_set_defaults",
+                "start": 194,
+                "end": 299
+            },
+            {
+                "name": "flake_validate_params",
+                "start": 301,
+                "end": 425
+            },
+            {
+                "name": "flake_encode_init",
+                "start": 430,
+                "end": 528
+            },
+            {
+                "name": "init_frame",
+                "start": 533,
+                "end": 588
+            },
+            {
+                "name": "update_md5_checksum",
+                "start": 593,
+                "end": 597
+            },
+            {
+                "name": "copy_samples",
+                "start": 602,
+                "end": 614
+            },
+            {
+                "name": "calc_decorr_scores",
+                "start": 619,
+                "end": 664
+            },
+            {
+                "name": "channel_decorrelation",
+                "start": 669,
+                "end": 715
+            },
+            {
+                "name": "write_utf8",
+                "start": 721,
+                "end": 737
+            },
+            {
+                "name": "output_frame_header",
+                "start": 739,
+                "end": 781
+            },
+            {
+                "name": "output_residual",
+                "start": 783,
+                "end": 814
+            },
+            {
+                "name": "output_subframe_constant",
+                "start": 816,
+                "end": 823
+            },
+            {
+                "name": "output_subframe_verbatim",
+                "start": 825,
+                "end": 839
+            },
+            {
+                "name": "output_subframe_fixed",
+                "start": 841,
+                "end": 858
+            },
+            {
+                "name": "output_subframe_lpc",
+                "start": 860,
+                "end": 885
+            },
+            {
+                "name": "output_subframes",
+                "start": 887,
+                "end": 915
+            },
+            {
+                "name": "output_frame_footer",
+                "start": 917,
+                "end": 925
+            },
+            {
+                "name": "encode_frame",
+                "start": 927,
+                "end": 983
+            },
+            {
+                "name": "flake_encode_frame",
+                "start": 985,
+                "end": 1000
+            },
+            {
+                "name": "flake_encode_close",
+                "start": 1002,
+                "end": 1017
+            }
+        ],
+        "libflake/md5.c": [
+            {
+                "name": "body",
+                "start": 54,
+                "end": 160
+            },
+            {
+                "name": "md5_init",
+                "start": 162,
+                "end": 172
+            },
+            {
+                "name": "md5_update",
+                "start": 174,
+                "end": 207
+            },
+            {
+                "name": "md5_final",
+                "start": 209,
+                "end": 259
+            },
+            {
+                "name": "md5_accumulate",
+                "start": 264,
+                "end": 281
+            },
+            {
+                "name": "md5_print",
+                "start": 283,
+                "end": 291
+            }
+        ],
+        "libflake/vbs.c": [
+            {
+                "name": "split_frame_v1",
+                "start": 36,
+                "end": 83
+            },
+            {
+                "name": "split_frame_v2",
+                "start": 85,
+                "end": 149
+            },
+            {
+                "name": "encode_frame_vbs",
+                "start": 151,
+                "end": 187
+            }
+        ],
+        "libflake/lpc.c": [
+            {
+                "name": "apply_welch_window",
+                "start": 28,
+                "end": 40
+            },
+            {
+                "name": "compute_autocorr",
+                "start": 46,
+                "end": 71
+            },
+            {
+                "name": "compute_lpc_coefs",
+                "start": 77,
+                "end": 118
+            },
+            {
+                "name": "compute_lpc_coefs_est",
+                "start": 126,
+                "end": 163
+            },
+            {
+                "name": "quantize_lpc_coefs",
+                "start": 168,
+                "end": 220
+            },
+            {
+                "name": "lpc_calc_coefs",
+                "start": 225,
+                "end": 258
+            }
+        ],
+        "libflake/optimize.c": [
+            {
+                "name": "encode_residual_verbatim",
+                "start": 28,
+                "end": 32
+            },
+            {
+                "name": "encode_residual_fixed",
+                "start": 34,
+                "end": 75
+            },
+            {
+                "name": "encode_residual_lpc",
+                "start": 77,
+                "end": 129
+            },
+            {
+                "name": "encode_residual",
+                "start": 131,
+                "end": 283
+            },
+            {
+                "name": "reencode_residual_verbatim",
+                "start": 285,
+                "end": 296
+            }
+        ],
+        "libflake/rice.c": [
+            {
+                "name": "find_optimal_rice_param",
+                "start": 29,
+                "end": 44
+            },
+            {
+                "name": "calc_optimal_rice_params",
+                "start": 46,
+                "end": 69
+            },
+            {
+                "name": "calc_sums",
+                "start": 71,
+                "end": 98
+            },
+            {
+                "name": "calc_rice_params",
+                "start": 100,
+                "end": 134
+            },
+            {
+                "name": "get_max_p_order",
+                "start": 136,
+                "end": 143
+            },
+            {
+                "name": "calc_rice_params_fixed",
+                "start": 145,
+                "end": 155
+            },
+            {
+                "name": "calc_rice_params_lpc",
+                "start": 157,
+                "end": 167
+            }
+        ]
+    }
+}

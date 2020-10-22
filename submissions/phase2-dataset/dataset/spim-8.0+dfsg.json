@@ -1,0 +1,1495 @@
+{
+    "spim-8.0+dfsg": {
+        "spim/spim.c": [
+            {
+                "name": "main",
+                "start": 132,
+                "end": 323
+            },
+            {
+                "name": "top_level",
+                "start": 328,
+                "end": 345
+            },
+            {
+                "name": "control_c_seen",
+                "start": 348,
+                "end": 354
+            },
+            {
+                "name": "parse_spim_command",
+                "start": 385,
+                "end": 698
+            },
+            {
+                "name": "read_assembly_command",
+                "start": 704,
+                "end": 753
+            },
+            {
+                "name": "str_prefix",
+                "start": 758,
+                "end": 763
+            },
+            {
+                "name": "get_opt_int",
+                "start": 770,
+                "end": 787
+            },
+            {
+                "name": "flush_to_newline",
+                "start": 792,
+                "end": 796
+            },
+            {
+                "name": "print_reg",
+                "start": 802,
+                "end": 807
+            },
+            {
+                "name": "print_fp_reg",
+                "start": 810,
+                "end": 817
+            },
+            {
+                "name": "print_reg_from_string",
+                "start": 820,
+                "end": 856
+            },
+            {
+                "name": "print_all_regs",
+                "start": 859,
+                "end": 867
+            },
+            {
+                "name": "error",
+                "start": 873,
+                "end": 886
+            },
+            {
+                "name": "fatal_error",
+                "start": 891,
+                "end": 904
+            },
+            {
+                "name": "run_error",
+                "start": 909,
+                "end": 925
+            },
+            {
+                "name": "write_output",
+                "start": 931,
+                "end": 969
+            },
+            {
+                "name": "read_input",
+                "start": 974,
+                "end": 1006
+            },
+            {
+                "name": "console_to_program",
+                "start": 1011,
+                "end": 1043
+            },
+            {
+                "name": "console_to_spim",
+                "start": 1048,
+                "end": 1058
+            },
+            {
+                "name": "console_input_available",
+                "start": 1061,
+                "end": 1077
+            },
+            {
+                "name": "get_console_char",
+                "start": 1080,
+                "end": 1090
+            },
+            {
+                "name": "put_console_char",
+                "start": 1093,
+                "end": 1098
+            },
+            {
+                "name": "read_token",
+                "start": 1100,
+                "end": 1114
+            }
+        ],
+        "CPU/endian.c": [
+            {
+                "name": "main",
+                "start": 1,
+                "end": 8
+            }
+        ],
+        "CPU/mem.h": [
+            {
+                "name": "make_memory",
+                "start": 149,
+                "end": 151
+            }
+        ],
+        "CPU/spim-utils.c": [
+            {
+                "name": "initialize_world",
+                "start": 84,
+                "end": 142
+            },
+            {
+                "name": "write_startup_message",
+                "start": 145,
+                "end": 156
+            },
+            {
+                "name": "initialize_registers",
+                "start": 160,
+                "end": 189
+            },
+            {
+                "name": "read_assembly_file",
+                "start": 195,
+                "end": 217
+            },
+            {
+                "name": "starting_address",
+                "start": 220,
+                "end": 233
+            },
+            {
+                "name": "initialize_run_stack",
+                "start": 242,
+                "end": 282
+            },
+            {
+                "name": "copy_str_to_stack",
+                "start": 285,
+                "end": 296
+            },
+            {
+                "name": "copy_int_to_stack",
+                "start": 299,
+                "end": 305
+            },
+            {
+                "name": "run_program",
+                "start": 313,
+                "end": 341
+            },
+            {
+                "name": "add_breakpoint",
+                "start": 360,
+                "end": 378
+            },
+            {
+                "name": "delete_breakpoint",
+                "start": 383,
+                "end": 408
+            },
+            {
+                "name": "delete_all_breakpoints",
+                "start": 411,
+                "end": 422
+            },
+            {
+                "name": "list_breakpoints",
+                "start": 427,
+                "end": 437
+            },
+            {
+                "name": "map_string_to_name_val_val",
+                "start": 448,
+                "end": 470
+            },
+            {
+                "name": "map_int_to_name_val_val",
+                "start": 477,
+                "end": 496
+            },
+            {
+                "name": "str_copy",
+                "start": 568,
+                "end": 572
+            },
+            {
+                "name": "xmalloc",
+                "start": 575,
+                "end": 583
+            },
+            {
+                "name": "zmalloc",
+                "start": 588,
+                "end": 598
+            }
+        ],
+        "CPU/dump_ops.c": [
+            {
+                "name": "compare_ops",
+                "start": 62,
+                "end": 92
+            },
+            {
+                "name": "main",
+                "start": 95,
+                "end": 129
+            }
+        ],
+        "CPU/string-stream.c": [
+            {
+                "name": "ss_init",
+                "start": 48,
+                "end": 55
+            },
+            {
+                "name": "ss_clear",
+                "start": 58,
+                "end": 64
+            },
+            {
+                "name": "ss_erase",
+                "start": 67,
+                "end": 74
+            },
+            {
+                "name": "ss_length",
+                "start": 77,
+                "end": 83
+            },
+            {
+                "name": "ss_to_string",
+                "start": 86,
+                "end": 102
+            },
+            {
+                "name": "ss_printf",
+                "start": 105,
+                "end": 142
+            }
+        ],
+        "CPU/data.c": [
+            {
+                "name": "user_kernel_data_segment",
+                "start": 73,
+                "end": 77
+            },
+            {
+                "name": "end_of_assembly_file",
+                "start": 80,
+                "end": 85
+            },
+            {
+                "name": "data_begins_at_point",
+                "start": 92,
+                "end": 104
+            },
+            {
+                "name": "k_data_begins_at_point",
+                "start": 110,
+                "end": 114
+            },
+            {
+                "name": "align_data",
+                "start": 121,
+                "end": 137
+            },
+            {
+                "name": "set_data_alignment",
+                "start": 140,
+                "end": 145
+            },
+            {
+                "name": "enable_data_alignment",
+                "start": 148,
+                "end": 152
+            },
+            {
+                "name": "set_data_pc",
+                "start": 157,
+                "end": 164
+            },
+            {
+                "name": "current_data_pc",
+                "start": 169,
+                "end": 173
+            },
+            {
+                "name": "increment_data_pc",
+                "start": 179,
+                "end": 183
+            },
+            {
+                "name": "extern_directive",
+                "start": 188,
+                "end": 201
+            },
+            {
+                "name": "lcomm_directive",
+                "start": 206,
+                "end": 229
+            },
+            {
+                "name": "store_string",
+                "start": 234,
+                "end": 246
+            },
+            {
+                "name": "store_byte",
+                "start": 251,
+                "end": 256
+            },
+            {
+                "name": "store_half",
+                "start": 261,
+                "end": 279
+            },
+            {
+                "name": "store_word",
+                "start": 284,
+                "end": 302
+            },
+            {
+                "name": "store_double",
+                "start": 307,
+                "end": 322
+            },
+            {
+                "name": "store_float",
+                "start": 327,
+                "end": 343
+            }
+        ],
+        "CPU/mem.c": [
+            {
+                "name": "make_memory",
+                "start": 120,
+                "end": 186
+            },
+            {
+                "name": "free_instructions",
+                "start": 191,
+                "end": 197
+            },
+            {
+                "name": "expand_data",
+                "start": 202,
+                "end": 227
+            },
+            {
+                "name": "expand_stack",
+                "start": 234,
+                "end": 262
+            },
+            {
+                "name": "expand_k_data",
+                "start": 267,
+                "end": 293
+            },
+            {
+                "name": "mem_reference",
+                "start": 299,
+                "end": 317
+            },
+            {
+                "name": "read_mem_inst",
+                "start": 320,
+                "end": 329
+            },
+            {
+                "name": "read_mem_byte",
+                "start": 332,
+                "end": 343
+            },
+            {
+                "name": "read_mem_half",
+                "start": 346,
+                "end": 357
+            },
+            {
+                "name": "read_mem_word",
+                "start": 360,
+                "end": 371
+            },
+            {
+                "name": "set_mem_inst",
+                "start": 374,
+                "end": 384
+            },
+            {
+                "name": "set_mem_byte",
+                "start": 387,
+                "end": 399
+            },
+            {
+                "name": "set_mem_half",
+                "start": 402,
+                "end": 414
+            },
+            {
+                "name": "set_mem_word",
+                "start": 417,
+                "end": 429
+            },
+            {
+                "name": "bad_text_read",
+                "start": 434,
+                "end": 439
+            },
+            {
+                "name": "bad_text_write",
+                "start": 442,
+                "end": 447
+            },
+            {
+                "name": "bad_mem_read",
+                "start": 450,
+                "end": 505
+            },
+            {
+                "name": "bad_mem_write",
+                "start": 508,
+                "end": 584
+            },
+            {
+                "name": "check_memory_mapped_IO",
+                "start": 602,
+                "end": 640
+            },
+            {
+                "name": "write_memory_mapped_IO",
+                "start": 645,
+                "end": 711
+            },
+            {
+                "name": "read_memory_mapped_IO",
+                "start": 716,
+                "end": 740
+            },
+            {
+                "name": "print_mem",
+                "start": 746,
+                "end": 779
+            }
+        ],
+        "CPU/sym-tbl.c": [
+            {
+                "name": "initialize_symbol_table",
+                "start": 77,
+                "end": 96
+            },
+            {
+                "name": "get_hash",
+                "start": 105,
+                "end": 133
+            },
+            {
+                "name": "label_is_defined",
+                "start": 139,
+                "end": 148
+            },
+            {
+                "name": "lookup_label",
+                "start": 154,
+                "end": 177
+            },
+            {
+                "name": "record_label",
+                "start": 183,
+                "end": 209
+            },
+            {
+                "name": "make_label_global",
+                "start": 214,
+                "end": 221
+            },
+            {
+                "name": "record_inst_uses_symbol",
+                "start": 226,
+                "end": 243
+            },
+            {
+                "name": "record_data_uses_symbol",
+                "start": 248,
+                "end": 257
+            },
+            {
+                "name": "resolve_label_uses",
+                "start": 263,
+                "end": 281
+            },
+            {
+                "name": "resolve_a_label",
+                "start": 286,
+                "end": 292
+            },
+            {
+                "name": "resolve_a_label_sub",
+                "start": 295,
+                "end": 397
+            },
+            {
+                "name": "flush_local_labels",
+                "start": 402,
+                "end": 431
+            },
+            {
+                "name": "find_symbol_address",
+                "start": 436,
+                "end": 445
+            },
+            {
+                "name": "print_symbols",
+                "start": 450,
+                "end": 460
+            },
+            {
+                "name": "print_undefined_symbols",
+                "start": 465,
+                "end": 475
+            },
+            {
+                "name": "undefined_symbol_string",
+                "start": 482,
+                "end": 517
+            }
+        ],
+        "CPU/syscall.c": [
+            {
+                "name": "do_syscall",
+                "start": 60,
+                "end": 205
+            },
+            {
+                "name": "handle_exception",
+                "start": 209,
+                "end": 282
+            }
+        ],
+        "CPU/run.c": [
+            {
+                "name": "run_spim",
+                "start": 185,
+                "end": 1654
+            },
+            {
+                "name": "bump_CP0_timer",
+                "start": 1669,
+                "end": 1677
+            },
+            {
+                "name": "start_CP0_timer",
+                "start": 1680,
+                "end": 1725
+            },
+            {
+                "name": "unsigned_multiply",
+                "start": 1742,
+                "end": 1771
+            },
+            {
+                "name": "signed_multiply",
+                "start": 1774,
+                "end": 1799
+            },
+            {
+                "name": "set_fpu_cc",
+                "start": 1801,
+                "end": 1822
+            },
+            {
+                "name": "raise_exception",
+                "start": 1825,
+                "end": 1866
+            }
+        ],
+        "CPU/display-utils.c": [
+            {
+                "name": "format_registers",
+                "start": 51,
+                "end": 172
+            },
+            {
+                "name": "format_insts",
+                "start": 179,
+                "end": 193
+            },
+            {
+                "name": "format_data_segs",
+                "start": 199,
+                "end": 210
+            },
+            {
+                "name": "format_mem",
+                "start": 219,
+                "end": 265
+            },
+            {
+                "name": "format_partial_line",
+                "start": 271,
+                "end": 288
+            }
+        ],
+        "CPU/inst.c": [
+            {
+                "name": "i_type_inst_full_word",
+                "start": 54,
+                "end": 55
+            },
+            {
+                "name": "text_begins_at_point",
+                "start": 94,
+                "end": 98
+            },
+            {
+                "name": "k_text_begins_at_point",
+                "start": 101,
+                "end": 105
+            },
+            {
+                "name": "set_text_pc",
+                "start": 110,
+                "end": 117
+            },
+            {
+                "name": "current_text_pc",
+                "start": 122,
+                "end": 126
+            },
+            {
+                "name": "increment_text_pc",
+                "start": 131,
+                "end": 135
+            },
+            {
+                "name": "user_kernel_text_segment",
+                "start": 141,
+                "end": 145
+            },
+            {
+                "name": "store_instruction",
+                "start": 150,
+                "end": 173
+            },
+            {
+                "name": "i_type_inst_free",
+                "start": 177,
+                "end": 182
+            },
+            {
+                "name": "i_type_inst",
+                "start": 191,
+                "end": 237
+            },
+            {
+                "name": "i_type_inst_full_word",
+                "start": 243,
+                "end": 337
+            },
+            {
+                "name": "produce_immediate",
+                "start": 340,
+                "end": 356
+            },
+            {
+                "name": "j_type_inst",
+                "start": 363,
+                "end": 377
+            },
+            {
+                "name": "make_r_type_inst",
+                "start": 383,
+                "end": 394
+            },
+            {
+                "name": "r_type_inst",
+                "start": 400,
+                "end": 404
+            },
+            {
+                "name": "r_co_type_inst",
+                "start": 410,
+                "end": 416
+            },
+            {
+                "name": "r_sh_type_inst",
+                "start": 422,
+                "end": 428
+            },
+            {
+                "name": "r_cond_type_inst",
+                "start": 434,
+                "end": 554
+            },
+            {
+                "name": "copy_inst",
+                "start": 559,
+                "end": 568
+            },
+            {
+                "name": "free_inst",
+                "start": 571,
+                "end": 581
+            },
+            {
+                "name": "initialize_inst_tables",
+                "start": 594,
+                "end": 600
+            },
+            {
+                "name": "sort_name_table",
+                "start": 614,
+                "end": 621
+            },
+            {
+                "name": "compare_pair_value",
+                "start": 627,
+                "end": 636
+            },
+            {
+                "name": "print_inst",
+                "start": 641,
+                "end": 659
+            },
+            {
+                "name": "format_an_inst",
+                "start": 662,
+                "end": 824
+            },
+            {
+                "name": "opcode_is_branch",
+                "start": 831,
+                "end": 875
+            },
+            {
+                "name": "opcode_is_nullified_branch",
+                "start": 881,
+                "end": 903
+            },
+            {
+                "name": "opcode_is_true_branch",
+                "start": 909,
+                "end": 923
+            },
+            {
+                "name": "opcode_is_jump",
+                "start": 929,
+                "end": 941
+            },
+            {
+                "name": "opcode_is_load_store",
+                "start": 945,
+                "end": 977
+            },
+            {
+                "name": "inst_is_breakpoint",
+                "start": 982,
+                "end": 989
+            },
+            {
+                "name": "set_breakpoint",
+                "start": 995,
+                "end": 1013
+            },
+            {
+                "name": "make_imm_expr",
+                "start": 1022,
+                "end": 1035
+            },
+            {
+                "name": "copy_imm_expr",
+                "start": 1040,
+                "end": 1048
+            },
+            {
+                "name": "upper_bits_of_expr",
+                "start": 1054,
+                "end": 1061
+            },
+            {
+                "name": "lower_bits_of_expr",
+                "start": 1067,
+                "end": 1074
+            },
+            {
+                "name": "const_imm_expr",
+                "start": 1079,
+                "end": 1083
+            },
+            {
+                "name": "incr_expr_offset",
+                "start": 1089,
+                "end": 1096
+            },
+            {
+                "name": "eval_imm_expr",
+                "start": 1101,
+                "end": 1125
+            },
+            {
+                "name": "format_imm_expr",
+                "start": 1130,
+                "end": 1154
+            },
+            {
+                "name": "zero_imm",
+                "start": 1159,
+                "end": 1163
+            },
+            {
+                "name": "make_addr_expr",
+                "start": 1170,
+                "end": 1187
+            },
+            {
+                "name": "addr_expr_imm",
+                "start": 1190,
+                "end": 1194
+            },
+            {
+                "name": "addr_expr_reg",
+                "start": 1197,
+                "end": 1201
+            },
+            {
+                "name": "sort_i_opcode_table",
+                "start": 1225,
+                "end": 1232
+            },
+            {
+                "name": "inst_encode",
+                "start": 1238,
+                "end": 1380
+            },
+            {
+                "name": "sort_a_opcode_table",
+                "start": 1399,
+                "end": 1406
+            },
+            {
+                "name": "inst_decode",
+                "start": 1410,
+                "end": 1528
+            },
+            {
+                "name": "mk_r_inst",
+                "start": 1531,
+                "end": 1544
+            },
+            {
+                "name": "mk_i_inst",
+                "start": 1547,
+                "end": 1559
+            },
+            {
+                "name": "mk_j_inst",
+                "start": 1561,
+                "end": 1571
+            },
+            {
+                "name": "test_assembly",
+                "start": 1577,
+                "end": 1584
+            },
+            {
+                "name": "inst_cmp",
+                "start": 1587,
+                "end": 1600
+            }
+        ],
+        "xspim/buttons.h": [
+            {
+                "name": "confirm",
+                "start": 37,
+                "end": 38
+            }
+        ],
+        "xspim/windows.h": [
+            {
+                "name": "create_sub_windows",
+                "start": 36,
+                "end": 40
+            }
+        ],
+        "xspim/xspim.c": [
+            {
+                "name": "display_values",
+                "start": 121,
+                "end": 122
+            },
+            {
+                "name": "display_insts",
+                "start": 123,
+                "end": 124
+            },
+            {
+                "name": "initialize",
+                "start": 304,
+                "end": 385
+            },
+            {
+                "name": "create_console_display",
+                "start": 388,
+                "end": 403
+            },
+            {
+                "name": "clear_console_display",
+                "start": 405,
+                "end": 413
+            },
+            {
+                "name": "main",
+                "start": 416,
+                "end": 507
+            },
+            {
+                "name": "syntax",
+                "start": 510,
+                "end": 529
+            },
+            {
+                "name": "control_c_seen",
+                "start": 532,
+                "end": 540
+            },
+            {
+                "name": "popup_console",
+                "start": 543,
+                "end": 556
+            },
+            {
+                "name": "read_file",
+                "start": 559,
+                "end": 576
+            },
+            {
+                "name": "start_program",
+                "start": 579,
+                "end": 587
+            },
+            {
+                "name": "execute_program",
+                "start": 590,
+                "end": 614
+            },
+            {
+                "name": "show_running",
+                "start": 617,
+                "end": 624
+            },
+            {
+                "name": "redisplay_data",
+                "start": 630,
+                "end": 635
+            },
+            {
+                "name": "display_registers",
+                "start": 641,
+                "end": 653
+            },
+            {
+                "name": "redisplay_text",
+                "start": 658,
+                "end": 678
+            },
+            {
+                "name": "center_text_at_PC",
+                "start": 684,
+                "end": 732
+            },
+            {
+                "name": "display_data_seg",
+                "start": 738,
+                "end": 755
+            },
+            {
+                "name": "write_output",
+                "start": 763,
+                "end": 792
+            },
+            {
+                "name": "read_input",
+                "start": 797,
+                "end": 848
+            },
+            {
+                "name": "console_input_available",
+                "start": 859,
+                "end": 898
+            },
+            {
+                "name": "get_console_char",
+                "start": 900,
+                "end": 905
+            },
+            {
+                "name": "put_console_char",
+                "start": 908,
+                "end": 921
+            },
+            {
+                "name": "error",
+                "start": 927,
+                "end": 940
+            },
+            {
+                "name": "fatal_error",
+                "start": 945,
+                "end": 958
+            },
+            {
+                "name": "run_error",
+                "start": 961,
+                "end": 976
+            },
+            {
+                "name": "write_text_to_window",
+                "start": 979,
+                "end": 995
+            }
+        ],
+        "xspim/windows.c": [
+            {
+                "name": "create_command_panel",
+                "start": 59,
+                "end": 63
+            },
+            {
+                "name": "create_reg_window",
+                "start": 66,
+                "end": 67
+            },
+            {
+                "name": "create_reg_window",
+                "start": 72,
+                "end": 93
+            },
+            {
+                "name": "create_command_panel",
+                "start": 96,
+                "end": 115
+            },
+            {
+                "name": "create_text_window",
+                "start": 118,
+                "end": 145
+            },
+            {
+                "name": "create_data_window",
+                "start": 148,
+                "end": 175
+            },
+            {
+                "name": "create_display_window",
+                "start": 178,
+                "end": 194
+            },
+            {
+                "name": "create_sub_windows",
+                "start": 197,
+                "end": 217
+            }
+        ],
+        "xspim/buttons.c": [
+            {
+                "name": "add_breakpoint_action",
+                "start": 67,
+                "end": 68
+            },
+            {
+                "name": "breakpoint_prompt",
+                "start": 74,
+                "end": 75
+            },
+            {
+                "name": "breakpoint_prompt_destroyed",
+                "start": 76,
+                "end": 77
+            },
+            {
+                "name": "clear_program_state_action",
+                "start": 78,
+                "end": 79
+            },
+            {
+                "name": "continue_action",
+                "start": 80,
+                "end": 81
+            },
+            {
+                "name": "continue_prompt_destroyed",
+                "start": 82,
+                "end": 83
+            },
+            {
+                "name": "delete_breakpoint_action",
+                "start": 84,
+                "end": 85
+            },
+            {
+                "name": "destroy_popup_prompt",
+                "start": 86,
+                "end": 87
+            },
+            {
+                "name": "load_prompt",
+                "start": 90,
+                "end": 91
+            },
+            {
+                "name": "load_prompt_destroyed",
+                "start": 92,
+                "end": 93
+            },
+            {
+                "name": "list_breakpoint_action",
+                "start": 94,
+                "end": 95
+            },
+            {
+                "name": "parse_print_value",
+                "start": 97,
+                "end": 98
+            },
+            {
+                "name": "parse_set_value",
+                "start": 99,
+                "end": 100
+            },
+            {
+                "name": "popup_one_field_dialog",
+                "start": 101,
+                "end": 107
+            },
+            {
+                "name": "popup_two_field_dialog",
+                "start": 108,
+                "end": 116
+            },
+            {
+                "name": "print_mem_prompt",
+                "start": 117,
+                "end": 118
+            },
+            {
+                "name": "print_prompt_destroyed",
+                "start": 119,
+                "end": 120
+            },
+            {
+                "name": "print_symbol_action",
+                "start": 121,
+                "end": 122
+            },
+            {
+                "name": "quit_prompt",
+                "start": 124,
+                "end": 125
+            },
+            {
+                "name": "quit_prompt_destroyed",
+                "start": 126,
+                "end": 127
+            },
+            {
+                "name": "read_assm_file_action",
+                "start": 128,
+                "end": 129
+            },
+            {
+                "name": "reload_action",
+                "start": 130,
+                "end": 131
+            },
+            {
+                "name": "run_program_action",
+                "start": 132,
+                "end": 133
+            },
+            {
+                "name": "run_prompt",
+                "start": 134,
+                "end": 135
+            },
+            {
+                "name": "run_prompt_destroyed",
+                "start": 136,
+                "end": 137
+            },
+            {
+                "name": "select_mode_action",
+                "start": 138,
+                "end": 139
+            },
+            {
+                "name": "set_value_prompt",
+                "start": 141,
+                "end": 142
+            },
+            {
+                "name": "set_value_destroyed",
+                "start": 143,
+                "end": 144
+            },
+            {
+                "name": "step_continue_action",
+                "start": 145,
+                "end": 146
+            },
+            {
+                "name": "step_program_action",
+                "start": 147,
+                "end": 148
+            },
+            {
+                "name": "step_prompt",
+                "start": 149,
+                "end": 150
+            },
+            {
+                "name": "step_prompt_destroyed",
+                "start": 151,
+                "end": 152
+            },
+            {
+                "name": "warp_to_second_dialog",
+                "start": 153,
+                "end": 154
+            },
+            {
+                "name": "record_file_name_for_prompt",
+                "start": 166,
+                "end": 171
+            },
+            {
+                "name": "create_buttons",
+                "start": 174,
+                "end": 245
+            },
+            {
+                "name": "quit_prompt",
+                "start": 253,
+                "end": 283
+            },
+            {
+                "name": "quit_action",
+                "start": 286,
+                "end": 294
+            },
+            {
+                "name": "quit_prompt_destroyed",
+                "start": 297,
+                "end": 301
+            },
+            {
+                "name": "load_prompt",
+                "start": 308,
+                "end": 346
+            },
+            {
+                "name": "read_assm_file_action",
+                "start": 349,
+                "end": 361
+            },
+            {
+                "name": "load_prompt_destroyed",
+                "start": 364,
+                "end": 368
+            },
+            {
+                "name": "run_prompt",
+                "start": 376,
+                "end": 395
+            },
+            {
+                "name": "run_program_action",
+                "start": 398,
+                "end": 420
+            },
+            {
+                "name": "init_stack",
+                "start": 425,
+                "end": 457
+            },
+            {
+                "name": "run_prompt_destroyed",
+                "start": 460,
+                "end": 464
+            },
+            {
+                "name": "step_prompt",
+                "start": 474,
+                "end": 491
+            },
+            {
+                "name": "step_program_action",
+                "start": 494,
+                "end": 514
+            },
+            {
+                "name": "step_continue_action",
+                "start": 517,
+                "end": 526
+            },
+            {
+                "name": "step_prompt_destroyed",
+                "start": 529,
+                "end": 533
+            },
+            {
+                "name": "add_reload_button",
+                "start": 538,
+                "end": 554
+            },
+            {
+                "name": "reload_action",
+                "start": 557,
+                "end": 567
+            },
+            {
+                "name": "add_clear_button",
+                "start": 577,
+                "end": 603
+            },
+            {
+                "name": "clear_program_state_action",
+                "start": 606,
+                "end": 636
+            },
+            {
+                "name": "set_value_prompt",
+                "start": 644,
+                "end": 660
+            },
+            {
+                "name": "parse_set_value",
+                "start": 663,
+                "end": 679
+            },
+            {
+                "name": "set_value_action",
+                "start": 682,
+                "end": 728
+            },
+            {
+                "name": "set_value_destroyed",
+                "start": 731,
+                "end": 735
+            },
+            {
+                "name": "add_print_button",
+                "start": 740,
+                "end": 759
+            },
+            {
+                "name": "print_mem_prompt",
+                "start": 765,
+                "end": 782
+            },
+            {
+                "name": "parse_print_value",
+                "start": 785,
+                "end": 813
+            },
+            {
+                "name": "print_symbol_action",
+                "start": 816,
+                "end": 820
+            },
+            {
+                "name": "print_prompt_destroyed",
+                "start": 823,
+                "end": 827
+            },
+            {
+                "name": "breakpoint_prompt",
+                "start": 836,
+                "end": 875
+            },
+            {
+                "name": "add_breakpoint_action",
+                "start": 878,
+                "end": 897
+            },
+            {
+                "name": "delete_breakpoint_action",
+                "start": 900,
+                "end": 914
+            },
+            {
+                "name": "list_breakpoint_action",
+                "start": 917,
+                "end": 921
+            },
+            {
+                "name": "breakpoint_prompt_destroyed",
+                "start": 924,
+                "end": 929
+            },
+            {
+                "name": "help_action",
+                "start": 934,
+                "end": 952
+            },
+            {
+                "name": "add_terminal_button",
+                "start": 957,
+                "end": 972
+            },
+            {
+                "name": "add_mode_button",
+                "start": 979,
+                "end": 1008
+            },
+            {
+                "name": "select_mode_action",
+                "start": 1011,
+                "end": 1035
+            },
+            {
+                "name": "continue_prompt",
+                "start": 1042,
+                "end": 1075
+            },
+            {
+                "name": "continue_action",
+                "start": 1078,
+                "end": 1088
+            },
+            {
+                "name": "continue_prompt_destroyed",
+                "start": 1091,
+                "end": 1096
+            },
+            {
+                "name": "confirm",
+                "start": 1101,
+                "end": 1106
+            },
+            {
+                "name": "destroy_popup_prompt",
+                "start": 1109,
+                "end": 1116
+            },
+            {
+                "name": "noop",
+                "start": 1119,
+                "end": 1122
+            },
+            {
+                "name": "popup_one_field_dialog",
+                "start": 1125,
+                "end": 1185
+            },
+            {
+                "name": "popup_two_field_dialog",
+                "start": 1188,
+                "end": 1275
+            },
+            {
+                "name": "warp_to_second_dialog",
+                "start": 1278,
+                "end": 1289
+            }
+        ]
+    }
+}

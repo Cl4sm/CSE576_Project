@@ -1,0 +1,3351 @@
+{
+    "blktrace-1.0.5": {
+        "rbtree.h": [
+            {
+                "name": "rb_set_parent",
+                "start": 131,
+                "end": 134
+            },
+            {
+                "name": "rb_set_color",
+                "start": 135,
+                "end": 138
+            },
+            {
+                "name": "rb_replace_node",
+                "start": 153,
+                "end": 154
+            },
+            {
+                "name": "rb_link_node",
+                "start": 156,
+                "end": 163
+            }
+        ],
+        "blktrace.h": [
+            {
+                "name": "verify_trace",
+                "start": 86,
+                "end": 99
+            },
+            {
+                "name": "trace_to_cpu",
+                "start": 101,
+                "end": 117
+            },
+            {
+                "name": "check_data_endianness",
+                "start": 122,
+                "end": 136
+            },
+            {
+                "name": "process_fmt",
+                "start": 140,
+                "end": 141
+            }
+        ],
+        "blkparse_fmt.c": [
+            {
+                "name": "valid_spec",
+                "start": 20,
+                "end": 23
+            },
+            {
+                "name": "set_all_format_specs",
+                "start": 25,
+                "end": 32
+            },
+            {
+                "name": "add_format_spec",
+                "start": 34,
+                "end": 51
+            },
+            {
+                "name": "fill_rwbs",
+                "start": 53,
+                "end": 86
+            },
+            {
+                "name": "print_time",
+                "start": 88,
+                "end": 111
+            },
+            {
+                "name": "pdu_rest_is_zero",
+                "start": 113,
+                "end": 118
+            },
+            {
+                "name": "dump_pdu",
+                "start": 120,
+                "end": 146
+            },
+            {
+                "name": "get_pdu_int",
+                "start": 150,
+                "end": 155
+            },
+            {
+                "name": "get_pdu_remap",
+                "start": 157,
+                "end": 165
+            },
+            {
+                "name": "print_field",
+                "start": 167,
+                "end": 259
+            },
+            {
+                "name": "parse_field",
+                "start": 261,
+                "end": 286
+            },
+            {
+                "name": "process_default",
+                "start": 288,
+                "end": 421
+            },
+            {
+                "name": "process_fmt",
+                "start": 423,
+                "end": 467
+            }
+        ],
+        "btt/list.h": [
+            {
+                "name": "INIT_LIST_HEAD",
+                "start": 43,
+                "end": 47
+            },
+            {
+                "name": "__list_add",
+                "start": 55,
+                "end": 63
+            },
+            {
+                "name": "list_add",
+                "start": 73,
+                "end": 76
+            },
+            {
+                "name": "list_add_tail",
+                "start": 86,
+                "end": 89
+            },
+            {
+                "name": "__list_del",
+                "start": 98,
+                "end": 102
+            },
+            {
+                "name": "list_del",
+                "start": 110,
+                "end": 115
+            },
+            {
+                "name": "list_len",
+                "start": 149,
+                "end": 159
+            },
+            {
+                "name": "list_empty",
+                "start": 165,
+                "end": 168
+            },
+            {
+                "name": "list_first",
+                "start": 174,
+                "end": 177
+            },
+            {
+                "name": "list_move_tail",
+                "start": 184,
+                "end": 189
+            },
+            {
+                "name": "__list_splice",
+                "start": 191,
+                "end": 203
+            },
+            {
+                "name": "list_splice",
+                "start": 210,
+                "end": 214
+            },
+            {
+                "name": "list_replace",
+                "start": 223,
+                "end": 230
+            },
+            {
+                "name": "list_replace_init",
+                "start": 232,
+                "end": 237
+            }
+        ],
+        "blktrace.c": [
+            {
+                "name": "clear_events",
+                "start": 473,
+                "end": 477
+            },
+            {
+                "name": "net_client_use_sendfile",
+                "start": 479,
+                "end": 482
+            },
+            {
+                "name": "net_client_use_send",
+                "start": 484,
+                "end": 487
+            },
+            {
+                "name": "use_tracer_devpaths",
+                "start": 489,
+                "end": 492
+            },
+            {
+                "name": "in_addr_eq",
+                "start": 494,
+                "end": 497
+            },
+            {
+                "name": "pdc_dr_update",
+                "start": 499,
+                "end": 502
+            },
+            {
+                "name": "pdc_nev_update",
+                "start": 504,
+                "end": 507
+            },
+            {
+                "name": "show_usage",
+                "start": 509,
+                "end": 512
+            },
+            {
+                "name": "make_timespec",
+                "start": 517,
+                "end": 532
+            },
+            {
+                "name": "t_pthread_cond_wait",
+                "start": 537,
+                "end": 543
+            },
+            {
+                "name": "unblock_tracers",
+                "start": 545,
+                "end": 551
+            },
+            {
+                "name": "tracer_wait_unblock",
+                "start": 553,
+                "end": 559
+            },
+            {
+                "name": "tracer_signal_ready",
+                "start": 561,
+                "end": 577
+            },
+            {
+                "name": "wait_tracers_ready",
+                "start": 579,
+                "end": 585
+            },
+            {
+                "name": "wait_tracers_leaving",
+                "start": 587,
+                "end": 593
+            },
+            {
+                "name": "init_mmap_info",
+                "start": 595,
+                "end": 600
+            },
+            {
+                "name": "net_close_connection",
+                "start": 602,
+                "end": 607
+            },
+            {
+                "name": "dpp_free",
+                "start": 609,
+                "end": 620
+            },
+            {
+                "name": "lock_on_cpu",
+                "start": 622,
+                "end": 632
+            },
+            {
+                "name": "increase_limit",
+                "start": 634,
+                "end": 650
+            },
+            {
+                "name": "handle_open_failure",
+                "start": 652,
+                "end": 657
+            },
+            {
+                "name": "handle_mem_failure",
+                "start": 659,
+                "end": 666
+            },
+            {
+                "name": "my_fopen",
+                "start": 668,
+                "end": 677
+            },
+            {
+                "name": "my_open",
+                "start": 679,
+                "end": 688
+            },
+            {
+                "name": "my_socket",
+                "start": 690,
+                "end": 699
+            },
+            {
+                "name": "my_accept",
+                "start": 701,
+                "end": 710
+            },
+            {
+                "name": "my_mmap",
+                "start": 712,
+                "end": 722
+            },
+            {
+                "name": "my_mlock",
+                "start": 724,
+                "end": 737
+            },
+            {
+                "name": "setup_mmap",
+                "start": 739,
+                "end": 775
+            },
+            {
+                "name": "__stop_trace",
+                "start": 777,
+                "end": 784
+            },
+            {
+                "name": "write_data",
+                "start": 786,
+                "end": 811
+            },
+            {
+                "name": "__net_recv_data",
+                "start": 816,
+                "end": 839
+            },
+            {
+                "name": "net_recv_data",
+                "start": 841,
+                "end": 844
+            },
+            {
+                "name": "net_send_data",
+                "start": 849,
+                "end": 866
+            },
+            {
+                "name": "net_send_header",
+                "start": 868,
+                "end": 887
+            },
+            {
+                "name": "net_send_open_close",
+                "start": 889,
+                "end": 895
+            },
+            {
+                "name": "net_send_open",
+                "start": 897,
+                "end": 900
+            },
+            {
+                "name": "net_send_close",
+                "start": 902,
+                "end": 913
+            },
+            {
+                "name": "ack_open_close",
+                "start": 915,
+                "end": 918
+            },
+            {
+                "name": "net_send_drops",
+                "start": 920,
+                "end": 929
+            },
+            {
+                "name": "net_get_header",
+                "start": 937,
+                "end": 952
+            },
+            {
+                "name": "net_setup_addr",
+                "start": 954,
+                "end": 991
+            },
+            {
+                "name": "net_setup_client",
+                "start": 993,
+                "end": 1018
+            },
+            {
+                "name": "open_client_connections",
+                "start": 1020,
+                "end": 1037
+            },
+            {
+                "name": "close_client_connections",
+                "start": 1039,
+                "end": 1052
+            },
+            {
+                "name": "setup_buts",
+                "start": 1054,
+                "end": 1078
+            },
+            {
+                "name": "start_buts",
+                "start": 1080,
+                "end": 1092
+            },
+            {
+                "name": "get_drops",
+                "start": 1094,
+                "end": 1120
+            },
+            {
+                "name": "get_all_drops",
+                "start": 1122,
+                "end": 1131
+            },
+            {
+                "name": "alloc_trace_buf",
+                "start": 1133,
+                "end": 1145
+            },
+            {
+                "name": "free_tracer_heads",
+                "start": 1147,
+                "end": 1159
+            },
+            {
+                "name": "setup_tracer_devpaths",
+                "start": 1161,
+                "end": 1183
+            },
+            {
+                "name": "add_trace_buf",
+                "start": 1185,
+                "end": 1198
+            },
+            {
+                "name": "incr_entries",
+                "start": 1200,
+                "end": 1207
+            },
+            {
+                "name": "decr_entries",
+                "start": 1209,
+                "end": 1214
+            },
+            {
+                "name": "wait_empty_entries",
+                "start": 1216,
+                "end": 1224
+            },
+            {
+                "name": "add_devpath",
+                "start": 1226,
+                "end": 1258
+            },
+            {
+                "name": "rel_devpaths",
+                "start": 1260,
+                "end": 1277
+            },
+            {
+                "name": "flush_subbuf_net",
+                "start": 1279,
+                "end": 1290
+            },
+            {
+                "name": "handle_list_net",
+                "start": 1292,
+                "end": 1317
+            },
+            {
+                "name": "tb_combine",
+                "start": 1322,
+                "end": 1345
+            },
+            {
+                "name": "handle_list_file",
+                "start": 1347,
+                "end": 1410
+            },
+            {
+                "name": "__process_trace_bufs",
+                "start": 1412,
+                "end": 1439
+            },
+            {
+                "name": "process_trace_bufs",
+                "start": 1441,
+                "end": 1445
+            },
+            {
+                "name": "clean_trace_bufs",
+                "start": 1447,
+                "end": 1455
+            },
+            {
+                "name": "read_err",
+                "start": 1457,
+                "end": 1462
+            },
+            {
+                "name": "net_sendfile",
+                "start": 1464,
+                "end": 1479
+            },
+            {
+                "name": "net_sendfile_data",
+                "start": 1481,
+                "end": 1488
+            },
+            {
+                "name": "fill_ofname",
+                "start": 1490,
+                "end": 1537
+            },
+            {
+                "name": "set_vbuf",
+                "start": 1539,
+                "end": 1551
+            },
+            {
+                "name": "iop_open",
+                "start": 1553,
+                "end": 1575
+            },
+            {
+                "name": "close_iop",
+                "start": 1577,
+                "end": 1596
+            },
+            {
+                "name": "close_ios",
+                "start": 1598,
+                "end": 1619
+            },
+            {
+                "name": "open_ios",
+                "start": 1621,
+                "end": 1685
+            },
+            {
+                "name": "handle_pfds_file",
+                "start": 1687,
+                "end": 1728
+            },
+            {
+                "name": "handle_pfds_netclient",
+                "start": 1730,
+                "end": 1762
+            },
+            {
+                "name": "handle_pfds_entries",
+                "start": 1764,
+                "end": 1801
+            },
+            {
+                "name": "thread_main",
+                "start": 1803,
+                "end": 1847
+            },
+            {
+                "name": "start_tracer",
+                "start": 1849,
+                "end": 1869
+            },
+            {
+                "name": "start_tracers",
+                "start": 1871,
+                "end": 1889
+            },
+            {
+                "name": "stop_tracers",
+                "start": 1891,
+                "end": 1910
+            },
+            {
+                "name": "del_tracers",
+                "start": 1912,
+                "end": 1922
+            },
+            {
+                "name": "wait_tracers",
+                "start": 1924,
+                "end": 1947
+            },
+            {
+                "name": "exit_tracing",
+                "start": 1949,
+                "end": 1960
+            },
+            {
+                "name": "handle_sigint",
+                "start": 1962,
+                "end": 1966
+            },
+            {
+                "name": "show_stats",
+                "start": 1968,
+                "end": 2034
+            },
+            {
+                "name": "handle_args",
+                "start": 2036,
+                "end": 2201
+            },
+            {
+                "name": "ch_add_connection",
+                "start": 2203,
+                "end": 2222
+            },
+            {
+                "name": "ch_rem_connection",
+                "start": 2224,
+                "end": 2237
+            },
+            {
+                "name": "net_find_client_host",
+                "start": 2239,
+                "end": 2252
+            },
+            {
+                "name": "net_add_client_host",
+                "start": 2254,
+                "end": 2274
+            },
+            {
+                "name": "device_done",
+                "start": 2276,
+                "end": 2286
+            },
+            {
+                "name": "net_ch_remove",
+                "start": 2288,
+                "end": 2310
+            },
+            {
+                "name": "net_add_connection",
+                "start": 2312,
+                "end": 2332
+            },
+            {
+                "name": "nc_add_dpp",
+                "start": 2334,
+                "end": 2381
+            },
+            {
+                "name": "nc_find_dpp",
+                "start": 2383,
+                "end": 2400
+            },
+            {
+                "name": "net_client_read_data",
+                "start": 2402,
+                "end": 2422
+            },
+            {
+                "name": "net_client_data",
+                "start": 2428,
+                "end": 2495
+            },
+            {
+                "name": "handle_client_data",
+                "start": 2497,
+                "end": 2513
+            },
+            {
+                "name": "net_setup_pfds",
+                "start": 2515,
+                "end": 2531
+            },
+            {
+                "name": "net_server_handle_connections",
+                "start": 2533,
+                "end": 2559
+            },
+            {
+                "name": "net_server",
+                "start": 2561,
+                "end": 2612
+            },
+            {
+                "name": "run_tracers",
+                "start": 2614,
+                "end": 2651
+            },
+            {
+                "name": "main",
+                "start": 2653,
+                "end": 2708
+            }
+        ],
+        "blkrawverify.c": [
+            {
+                "name": "act_to_str",
+                "start": 83,
+                "end": 103
+            },
+            {
+                "name": "dump_trace",
+                "start": 105,
+                "end": 120
+            },
+            {
+                "name": "process",
+                "start": 122,
+                "end": 276
+            },
+            {
+                "name": "main",
+                "start": 278,
+                "end": 324
+            }
+        ],
+        "jhash.h": [
+            {
+                "name": "jhash",
+                "start": 58,
+                "end": 97
+            },
+            {
+                "name": "jhash2",
+                "start": 102,
+                "end": 131
+            },
+            {
+                "name": "jhash_3words",
+                "start": 136,
+                "end": 145
+            },
+            {
+                "name": "jhash_2words",
+                "start": 147,
+                "end": 150
+            },
+            {
+                "name": "jhash_1word",
+                "start": 152,
+                "end": 155
+            }
+        ],
+        "stats.h": [
+            {
+                "name": "minmax_init",
+                "start": 36,
+                "end": 43
+            },
+            {
+                "name": "minmax_account",
+                "start": 45,
+                "end": 54
+            },
+            {
+                "name": "minmax_merge",
+                "start": 56,
+                "end": 65
+            },
+            {
+                "name": "minmax_to_be",
+                "start": 67,
+                "end": 74
+            },
+            {
+                "name": "minmax_avg",
+                "start": 76,
+                "end": 82
+            },
+            {
+                "name": "minmax_var",
+                "start": 84,
+                "end": 92
+            },
+            {
+                "name": "minmax_print",
+                "start": 94,
+                "end": 101
+            },
+            {
+                "name": "histlog2_upper_limit",
+                "start": 109,
+                "end": 112
+            },
+            {
+                "name": "histlog2_index",
+                "start": 114,
+                "end": 120
+            },
+            {
+                "name": "histlog2_account",
+                "start": 122,
+                "end": 127
+            },
+            {
+                "name": "histlog2_merge",
+                "start": 129,
+                "end": 135
+            },
+            {
+                "name": "histlog2_to_be",
+                "start": 137,
+                "end": 143
+            },
+            {
+                "name": "histlog2_print",
+                "start": 145,
+                "end": 159
+            }
+        ],
+        "blkiomon.h": [
+            {
+                "name": "blkiomon_stat_init",
+                "start": 59,
+                "end": 68
+            },
+            {
+                "name": "blkiomon_stat_to_be",
+                "start": 70,
+                "end": 83
+            },
+            {
+                "name": "blkiomon_stat_merge",
+                "start": 85,
+                "end": 97
+            },
+            {
+                "name": "blkiomon_stat_print",
+                "start": 99,
+                "end": 115
+            }
+        ],
+        "blkiomon.c": [
+            {
+                "name": "dump_bit",
+                "start": 106,
+                "end": 127
+            },
+            {
+                "name": "dump_bits",
+                "start": 129,
+                "end": 154
+            },
+            {
+                "name": "blkiomon_alloc_dstat",
+                "start": 156,
+                "end": 173
+            },
+            {
+                "name": "blkiomon_find_dstat",
+                "start": 175,
+                "end": 196
+            },
+            {
+                "name": "blkiomon_get_dstat",
+                "start": 198,
+                "end": 224
+            },
+            {
+                "name": "blkiomon_output_msg_q",
+                "start": 226,
+                "end": 233
+            },
+            {
+                "name": "blkiomon_output_binary",
+                "start": 235,
+                "end": 253
+            },
+            {
+                "name": "blkiomon_output",
+                "start": 255,
+                "end": 268
+            },
+            {
+                "name": "blkiomon_interval",
+                "start": 270,
+                "end": 304
+            },
+            {
+                "name": "blkiomon_account",
+                "start": 308,
+                "end": 336
+            },
+            {
+                "name": "blkiomon_alloc_trace",
+                "start": 338,
+                "end": 348
+            },
+            {
+                "name": "blkiomon_free_trace",
+                "start": 350,
+                "end": 358
+            },
+            {
+                "name": "action",
+                "start": 360,
+                "end": 364
+            },
+            {
+                "name": "blkiomon_store_trace",
+                "start": 366,
+                "end": 372
+            },
+            {
+                "name": "blkiomon_fetch_trace",
+                "start": 374,
+                "end": 392
+            },
+            {
+                "name": "blkiomon_do_trace",
+                "start": 394,
+                "end": 429
+            },
+            {
+                "name": "blkiomon_dump_drvdata",
+                "start": 431,
+                "end": 449
+            },
+            {
+                "name": "blkiomon_do_fifo",
+                "start": 451,
+                "end": 524
+            },
+            {
+                "name": "blkiomon_open_output",
+                "start": 526,
+                "end": 556
+            },
+            {
+                "name": "blkiomon_open_msg_q",
+                "start": 558,
+                "end": 575
+            },
+            {
+                "name": "blkiomon_debug",
+                "start": 577,
+                "end": 594
+            },
+            {
+                "name": "blkiomon_signal",
+                "start": 676,
+                "end": 680
+            },
+            {
+                "name": "main",
+                "start": 682,
+                "end": 757
+            }
+        ],
+        "act_mask.c": [
+            {
+                "name": "find_mask_map",
+                "start": 34,
+                "end": 43
+            },
+            {
+                "name": "valid_act_opt",
+                "start": 45,
+                "end": 48
+            }
+        ],
+        "rbtree.c": [
+            {
+                "name": "__rb_rotate_left",
+                "start": 25,
+                "end": 46
+            },
+            {
+                "name": "__rb_rotate_right",
+                "start": 48,
+                "end": 69
+            },
+            {
+                "name": "rb_insert_color",
+                "start": 71,
+                "end": 134
+            },
+            {
+                "name": "__rb_erase_color",
+                "start": 136,
+                "end": 220
+            },
+            {
+                "name": "rb_erase",
+                "start": 222,
+                "end": 287
+            },
+            {
+                "name": "rb_first",
+                "start": 292,
+                "end": 302
+            },
+            {
+                "name": "rb_last",
+                "start": 304,
+                "end": 314
+            },
+            {
+                "name": "rb_next",
+                "start": 316,
+                "end": 342
+            },
+            {
+                "name": "rb_prev",
+                "start": 344,
+                "end": 366
+            },
+            {
+                "name": "rb_replace_node",
+                "start": 368,
+                "end": 389
+            }
+        ],
+        "blkparse.c": [
+            {
+                "name": "output_binary",
+                "start": 309,
+                "end": 319
+            },
+            {
+                "name": "resize_cpu_info",
+                "start": 321,
+                "end": 355
+            },
+            {
+                "name": "get_cpu_info",
+                "start": 357,
+                "end": 367
+            },
+            {
+                "name": "resize_devices",
+                "start": 370,
+                "end": 383
+            },
+            {
+                "name": "get_dev_info",
+                "start": 385,
+                "end": 406
+            },
+            {
+                "name": "insert_skip",
+                "start": 408,
+                "end": 434
+            },
+            {
+                "name": "remove_sip",
+                "start": 436,
+                "end": 455
+            },
+            {
+                "name": "check_current_skips",
+                "start": 458,
+                "end": 480
+            },
+            {
+                "name": "collect_pdi_skips",
+                "start": 482,
+                "end": 502
+            },
+            {
+                "name": "cpu_mark_online",
+                "start": 504,
+                "end": 522
+            },
+            {
+                "name": "cpu_mark_offline",
+                "start": 524,
+                "end": 527
+            },
+            {
+                "name": "cpu_is_online",
+                "start": 529,
+                "end": 532
+            },
+            {
+                "name": "ppm_hash_pid",
+                "start": 534,
+                "end": 537
+            },
+            {
+                "name": "find_ppm",
+                "start": 539,
+                "end": 553
+            },
+            {
+                "name": "add_ppm_hash",
+                "start": 555,
+                "end": 573
+            },
+            {
+                "name": "handle_notify",
+                "start": 575,
+                "end": 623
+            },
+            {
+                "name": "find_process_name",
+                "start": 625,
+                "end": 633
+            },
+            {
+                "name": "ppi_hash_pid",
+                "start": 635,
+                "end": 638
+            },
+            {
+                "name": "ppi_hash_name",
+                "start": 640,
+                "end": 643
+            },
+            {
+                "name": "ppi_hash",
+                "start": 645,
+                "end": 653
+            },
+            {
+                "name": "add_ppi_to_hash",
+                "start": 655,
+                "end": 661
+            },
+            {
+                "name": "add_ppi_to_list",
+                "start": 663,
+                "end": 668
+            },
+            {
+                "name": "find_ppi_by_name",
+                "start": 670,
+                "end": 686
+            },
+            {
+                "name": "find_ppi_by_pid",
+                "start": 688,
+                "end": 704
+            },
+            {
+                "name": "find_ppi",
+                "start": 706,
+                "end": 723
+            },
+            {
+                "name": "t_free",
+                "start": 730,
+                "end": 738
+            },
+            {
+                "name": "t_alloc",
+                "start": 740,
+                "end": 751
+            },
+            {
+                "name": "bit_free",
+                "start": 753,
+                "end": 764
+            },
+            {
+                "name": "bit_alloc",
+                "start": 766,
+                "end": 778
+            },
+            {
+                "name": "__put_trace_last",
+                "start": 780,
+                "end": 789
+            },
+            {
+                "name": "put_trace",
+                "start": 791,
+                "end": 797
+            },
+            {
+                "name": "trace_rb_insert",
+                "start": 799,
+                "end": 827
+            },
+            {
+                "name": "trace_rb_insert_sort",
+                "start": 829,
+                "end": 837
+            },
+            {
+                "name": "trace_rb_insert_last",
+                "start": 839,
+                "end": 856
+            },
+            {
+                "name": "trace_rb_find",
+                "start": 858,
+                "end": 903
+            },
+            {
+                "name": "trace_rb_find_last",
+                "start": 905,
+                "end": 910
+            },
+            {
+                "name": "track_rb_insert",
+                "start": 912,
+                "end": 938
+            },
+            {
+                "name": "__find_track",
+                "start": 940,
+                "end": 957
+            },
+            {
+                "name": "find_track",
+                "start": 959,
+                "end": 975
+            },
+            {
+                "name": "log_track_frontmerge",
+                "start": 977,
+                "end": 997
+            },
+            {
+                "name": "log_track_getrq",
+                "start": 999,
+                "end": 1008
+            },
+            {
+                "name": "is_remapper",
+                "start": 1010,
+                "end": 1015
+            },
+            {
+                "name": "log_track_queue",
+                "start": 1021,
+                "end": 1032
+            },
+            {
+                "name": "log_track_insert",
+                "start": 1037,
+                "end": 1063
+            },
+            {
+                "name": "log_track_issue",
+                "start": 1068,
+                "end": 1100
+            },
+            {
+                "name": "log_track_complete",
+                "start": 1105,
+                "end": 1141
+            },
+            {
+                "name": "find_process_io_stats",
+                "start": 1144,
+                "end": 1159
+            },
+            {
+                "name": "get_dev_name",
+                "start": 1161,
+                "end": 1168
+            },
+            {
+                "name": "check_time",
+                "start": 1170,
+                "end": 1177
+            },
+            {
+                "name": "__account_m",
+                "start": 1179,
+                "end": 1189
+            },
+            {
+                "name": "account_m",
+                "start": 1191,
+                "end": 1201
+            },
+            {
+                "name": "__account_pc_queue",
+                "start": 1203,
+                "end": 1213
+            },
+            {
+                "name": "account_pc_queue",
+                "start": 1215,
+                "end": 1225
+            },
+            {
+                "name": "__account_pc_issue",
+                "start": 1227,
+                "end": 1237
+            },
+            {
+                "name": "account_pc_issue",
+                "start": 1239,
+                "end": 1249
+            },
+            {
+                "name": "__account_pc_requeue",
+                "start": 1251,
+                "end": 1261
+            },
+            {
+                "name": "account_pc_requeue",
+                "start": 1263,
+                "end": 1273
+            },
+            {
+                "name": "__account_pc_c",
+                "start": 1275,
+                "end": 1281
+            },
+            {
+                "name": "account_pc_c",
+                "start": 1283,
+                "end": 1293
+            },
+            {
+                "name": "__account_queue",
+                "start": 1295,
+                "end": 1305
+            },
+            {
+                "name": "account_queue",
+                "start": 1307,
+                "end": 1317
+            },
+            {
+                "name": "__account_c",
+                "start": 1319,
+                "end": 1328
+            },
+            {
+                "name": "account_c",
+                "start": 1330,
+                "end": 1340
+            },
+            {
+                "name": "__account_issue",
+                "start": 1342,
+                "end": 1352
+            },
+            {
+                "name": "account_issue",
+                "start": 1354,
+                "end": 1364
+            },
+            {
+                "name": "__account_unplug",
+                "start": 1366,
+                "end": 1372
+            },
+            {
+                "name": "account_unplug",
+                "start": 1374,
+                "end": 1384
+            },
+            {
+                "name": "__account_requeue",
+                "start": 1386,
+                "end": 1396
+            },
+            {
+                "name": "account_requeue",
+                "start": 1398,
+                "end": 1408
+            },
+            {
+                "name": "log_complete",
+                "start": 1410,
+                "end": 1414
+            },
+            {
+                "name": "log_insert",
+                "start": 1416,
+                "end": 1420
+            },
+            {
+                "name": "log_queue",
+                "start": 1422,
+                "end": 1426
+            },
+            {
+                "name": "log_issue",
+                "start": 1428,
+                "end": 1432
+            },
+            {
+                "name": "log_merge",
+                "start": 1434,
+                "end": 1441
+            },
+            {
+                "name": "log_action",
+                "start": 1443,
+                "end": 1447
+            },
+            {
+                "name": "log_generic",
+                "start": 1449,
+                "end": 1453
+            },
+            {
+                "name": "log_unplug",
+                "start": 1455,
+                "end": 1459
+            },
+            {
+                "name": "log_split",
+                "start": 1461,
+                "end": 1465
+            },
+            {
+                "name": "log_pc",
+                "start": 1467,
+                "end": 1472
+            },
+            {
+                "name": "dump_trace_pc",
+                "start": 1474,
+                "end": 1521
+            },
+            {
+                "name": "dump_trace_fs",
+                "start": 1523,
+                "end": 1604
+            },
+            {
+                "name": "dump_trace",
+                "start": 1606,
+                "end": 1627
+            },
+            {
+                "name": "size_cnv",
+                "start": 1633,
+                "end": 1648
+            },
+            {
+                "name": "dump_io_stats",
+                "start": 1650,
+                "end": 1684
+            },
+            {
+                "name": "dump_wait_stats",
+                "start": 1686,
+                "end": 1701
+            },
+            {
+                "name": "ppi_name_compare",
+                "start": 1703,
+                "end": 1714
+            },
+            {
+                "name": "sort_process_list",
+                "start": 1716,
+                "end": 1743
+            },
+            {
+                "name": "show_process_stats",
+                "start": 1745,
+                "end": 1767
+            },
+            {
+                "name": "show_device_and_cpu_stats",
+                "start": 1769,
+                "end": 1862
+            },
+            {
+                "name": "find_genesis",
+                "start": 1864,
+                "end": 1894
+            },
+            {
+                "name": "check_stopwatch",
+                "start": 1896,
+                "end": 1903
+            },
+            {
+                "name": "sort_entries",
+                "start": 1908,
+                "end": 1950
+            },
+            {
+                "name": "check_cpu_map",
+                "start": 1955,
+                "end": 1991
+            },
+            {
+                "name": "check_sequence",
+                "start": 1993,
+                "end": 2040
+            },
+            {
+                "name": "show_entries_rb",
+                "start": 2042,
+                "end": 2093
+            },
+            {
+                "name": "read_data",
+                "start": 2095,
+                "end": 2141
+            },
+            {
+                "name": "get_pdulen",
+                "start": 2143,
+                "end": 2149
+            },
+            {
+                "name": "get_magic",
+                "start": 2151,
+                "end": 2157
+            },
+            {
+                "name": "read_events",
+                "start": 2159,
+                "end": 2241
+            },
+            {
+                "name": "ms_peek",
+                "start": 2262,
+                "end": 2265
+            },
+            {
+                "name": "ms_peek_time",
+                "start": 2267,
+                "end": 2270
+            },
+            {
+                "name": "ms_resort",
+                "start": 2272,
+                "end": 2279
+            },
+            {
+                "name": "ms_deq",
+                "start": 2281,
+                "end": 2294
+            },
+            {
+                "name": "ms_sort",
+                "start": 2296,
+                "end": 2314
+            },
+            {
+                "name": "ms_prime",
+                "start": 2316,
+                "end": 2402
+            },
+            {
+                "name": "ms_alloc",
+                "start": 2404,
+                "end": 2417
+            },
+            {
+                "name": "setup_file",
+                "start": 2419,
+                "end": 2461
+            },
+            {
+                "name": "handle",
+                "start": 2463,
+                "end": 2496
+            },
+            {
+                "name": "name_fixup",
+                "start": 2502,
+                "end": 2514
+            },
+            {
+                "name": "do_file",
+                "start": 2516,
+                "end": 2553
+            },
+            {
+                "name": "do_pipe",
+                "start": 2555,
+                "end": 2580
+            },
+            {
+                "name": "do_fifo",
+                "start": 2582,
+                "end": 2599
+            },
+            {
+                "name": "show_stats",
+                "start": 2601,
+                "end": 2617
+            },
+            {
+                "name": "handle_sigint",
+                "start": 2619,
+                "end": 2622
+            },
+            {
+                "name": "find_stopwatch_interval",
+                "start": 2629,
+                "end": 2660
+            },
+            {
+                "name": "is_pipe",
+                "start": 2662,
+                "end": 2672
+            },
+            {
+                "name": "usage",
+                "start": 2716,
+                "end": 2719
+            },
+            {
+                "name": "main",
+                "start": 2721,
+                "end": 2900
+            }
+        ],
+        "verify_blkparse.c": [
+            {
+                "name": "main",
+                "start": 9,
+                "end": 66
+            }
+        ],
+        "btt/globals.h": [
+            {
+                "name": "dip_foreach",
+                "start": 217,
+                "end": 218
+            },
+            {
+                "name": "rb_foreach",
+                "start": 230,
+                "end": 232
+            }
+        ],
+        "btt/inlines.h": [
+            {
+                "name": "remapper_dev",
+                "start": 22,
+                "end": 26
+            },
+            {
+                "name": "region_init",
+                "start": 28,
+                "end": 32
+            },
+            {
+                "name": "__region_exit",
+                "start": 34,
+                "end": 43
+            },
+            {
+                "name": "region_exit",
+                "start": 45,
+                "end": 49
+            },
+            {
+                "name": "update_range",
+                "start": 51,
+                "end": 70
+            },
+            {
+                "name": "update_qregion",
+                "start": 72,
+                "end": 75
+            },
+            {
+                "name": "update_cregion",
+                "start": 77,
+                "end": 80
+            },
+            {
+                "name": "avg_update",
+                "start": 82,
+                "end": 93
+            },
+            {
+                "name": "avg_update_n",
+                "start": 95,
+                "end": 109
+            },
+            {
+                "name": "avg_unupdate",
+                "start": 111,
+                "end": 115
+            },
+            {
+                "name": "update_lq",
+                "start": 117,
+                "end": 122
+            },
+            {
+                "name": "dip_update_q",
+                "start": 124,
+                "end": 131
+            },
+            {
+                "name": "io_alloc",
+                "start": 133,
+                "end": 141
+            },
+            {
+                "name": "io_free",
+                "start": 143,
+                "end": 147
+            },
+            {
+                "name": "io_free_all",
+                "start": 149,
+                "end": 158
+            },
+            {
+                "name": "io_setup",
+                "start": 160,
+                "end": 170
+            },
+            {
+                "name": "io_release",
+                "start": 172,
+                "end": 180
+            },
+            {
+                "name": "update_q2c",
+                "start": 200,
+                "end": 206
+            },
+            {
+                "name": "update_q2a",
+                "start": 208,
+                "end": 214
+            },
+            {
+                "name": "update_q2g",
+                "start": 216,
+                "end": 219
+            },
+            {
+                "name": "update_s2g",
+                "start": 221,
+                "end": 224
+            },
+            {
+                "name": "unupdate_q2g",
+                "start": 226,
+                "end": 229
+            },
+            {
+                "name": "update_g2i",
+                "start": 231,
+                "end": 234
+            },
+            {
+                "name": "unupdate_g2i",
+                "start": 236,
+                "end": 239
+            },
+            {
+                "name": "update_q2m",
+                "start": 241,
+                "end": 244
+            },
+            {
+                "name": "unupdate_q2m",
+                "start": 246,
+                "end": 249
+            },
+            {
+                "name": "update_i2d",
+                "start": 251,
+                "end": 254
+            },
+            {
+                "name": "unupdate_i2d",
+                "start": 256,
+                "end": 259
+            },
+            {
+                "name": "update_m2d",
+                "start": 261,
+                "end": 264
+            },
+            {
+                "name": "unupdate_m2d",
+                "start": 266,
+                "end": 269
+            },
+            {
+                "name": "update_d2c",
+                "start": 271,
+                "end": 274
+            },
+            {
+                "name": "update_blks",
+                "start": 276,
+                "end": 283
+            },
+            {
+                "name": "__get_root",
+                "start": 285,
+                "end": 289
+            },
+            {
+                "name": "dip_rb_ins",
+                "start": 291,
+                "end": 294
+            },
+            {
+                "name": "dip_rb_rem",
+                "start": 296,
+                "end": 299
+            },
+            {
+                "name": "dip_rb_fe",
+                "start": 301,
+                "end": 307
+            },
+            {
+                "name": "dip_rb_find_sec",
+                "start": 309,
+                "end": 313
+            },
+            {
+                "name": "tdelta",
+                "start": 315,
+                "end": 318
+            },
+            {
+                "name": "type2c",
+                "start": 320,
+                "end": 338
+            },
+            {
+                "name": "histo_idx",
+                "start": 340,
+                "end": 344
+            },
+            {
+                "name": "update_q_histo",
+                "start": 346,
+                "end": 349
+            },
+            {
+                "name": "update_d_histo",
+                "start": 351,
+                "end": 354
+            },
+            {
+                "name": "io_first_list",
+                "start": 356,
+                "end": 362
+            },
+            {
+                "name": "__dump_iop",
+                "start": 364,
+                "end": 372
+            },
+            {
+                "name": "__dump_iop2",
+                "start": 374,
+                "end": 383
+            }
+        ],
+        "btt/devs.c": [
+            {
+                "name": "dip_rb_mkhds",
+                "start": 28,
+                "end": 32
+            },
+            {
+                "name": "__destroy",
+                "start": 34,
+                "end": 43
+            },
+            {
+                "name": "__destroy_heads",
+                "start": 45,
+                "end": 53
+            },
+            {
+                "name": "init_dev_heads",
+                "start": 55,
+                "end": 60
+            },
+            {
+                "name": "__dip_find",
+                "start": 62,
+                "end": 74
+            },
+            {
+                "name": "__dip_exit",
+                "start": 76,
+                "end": 96
+            },
+            {
+                "name": "dip_exit",
+                "start": 98,
+                "end": 106
+            },
+            {
+                "name": "open_pit",
+                "start": 108,
+                "end": 118
+            },
+            {
+                "name": "dip_alloc",
+                "start": 120,
+                "end": 171
+            },
+            {
+                "name": "iop_rem_dip",
+                "start": 173,
+                "end": 179
+            },
+            {
+                "name": "dip_foreach",
+                "start": 181,
+                "end": 197
+            },
+            {
+                "name": "dip_foreach_list",
+                "start": 199,
+                "end": 202
+            },
+            {
+                "name": "dip_find_sec",
+                "start": 204,
+                "end": 207
+            },
+            {
+                "name": "dip_foreach_out",
+                "start": 209,
+                "end": 228
+            },
+            {
+                "name": "dip_plug",
+                "start": 230,
+                "end": 238
+            },
+            {
+                "name": "unplug",
+                "start": 240,
+                "end": 244
+            },
+            {
+                "name": "dip_unplug",
+                "start": 246,
+                "end": 255
+            },
+            {
+                "name": "dip_unplug_tm",
+                "start": 257,
+                "end": 266
+            },
+            {
+                "name": "dip_cleanup",
+                "start": 268,
+                "end": 278
+            }
+        ],
+        "btt/trace_queue.c": [
+            {
+                "name": "handle_queue",
+                "start": 23,
+                "end": 42
+            },
+            {
+                "name": "trace_queue",
+                "start": 44,
+                "end": 53
+            }
+        ],
+        "btt/bno_dump.c": [
+            {
+                "name": "bno_dump_open",
+                "start": 27,
+                "end": 40
+            },
+            {
+                "name": "bno_dump_write",
+                "start": 42,
+                "end": 46
+            },
+            {
+                "name": "bno_dump_alloc",
+                "start": 48,
+                "end": 60
+            },
+            {
+                "name": "bno_dump_free",
+                "start": 62,
+                "end": 65
+            },
+            {
+                "name": "bno_dump_add",
+                "start": 67,
+                "end": 79
+            }
+        ],
+        "btt/latency.c": [
+            {
+                "name": "latency_out",
+                "start": 23,
+                "end": 27
+            },
+            {
+                "name": "latency_open",
+                "start": 29,
+                "end": 46
+            },
+            {
+                "name": "latency_alloc",
+                "start": 48,
+                "end": 53
+            },
+            {
+                "name": "latency_q2d",
+                "start": 55,
+                "end": 59
+            },
+            {
+                "name": "latency_d2c",
+                "start": 61,
+                "end": 65
+            },
+            {
+                "name": "latency_q2c",
+                "start": 67,
+                "end": 71
+            }
+        ],
+        "btt/devmap.c": [
+            {
+                "name": "dev_map_add",
+                "start": 31,
+                "end": 46
+            },
+            {
+                "name": "dev_map_find",
+                "start": 48,
+                "end": 62
+            },
+            {
+                "name": "dev_map_read",
+                "start": 64,
+                "end": 81
+            },
+            {
+                "name": "dev_map_exit",
+                "start": 83,
+                "end": 93
+            }
+        ],
+        "btt/output.c": [
+            {
+                "name": "output_section_hdr",
+                "start": 56,
+                "end": 61
+            },
+            {
+                "name": "output_hdr",
+                "start": 63,
+                "end": 68
+            },
+            {
+                "name": "__output_avg",
+                "start": 70,
+                "end": 84
+            },
+            {
+                "name": "avg2string",
+                "start": 86,
+                "end": 93
+            },
+            {
+                "name": "__output_dip_avg",
+                "start": 99,
+                "end": 109
+            },
+            {
+                "name": "output_dip_avg",
+                "start": 111,
+                "end": 117
+            },
+            {
+                "name": "__output_q2d_histo",
+                "start": 124,
+                "end": 138
+            },
+            {
+                "name": "output_q2d_histo",
+                "start": 140,
+                "end": 163
+            },
+            {
+                "name": "__output_dip_merge_ratio",
+                "start": 169,
+                "end": 225
+            },
+            {
+                "name": "output_dip_merge_ratio",
+                "start": 227,
+                "end": 244
+            },
+            {
+                "name": "__output_dip_prep_ohead",
+                "start": 262,
+                "end": 285
+            },
+            {
+                "name": "output_dip_prep_ohead",
+                "start": 291,
+                "end": 317
+            },
+            {
+                "name": "output_seek_mode_info",
+                "start": 331,
+                "end": 364
+            },
+            {
+                "name": "add_seek_mode_info",
+                "start": 366,
+                "end": 391
+            },
+            {
+                "name": "do_output_dip_seek_info",
+                "start": 393,
+                "end": 438
+            },
+            {
+                "name": "__output_dip_seek_info",
+                "start": 440,
+                "end": 443
+            },
+            {
+                "name": "__output_dip_q2q_seek_info",
+                "start": 445,
+                "end": 448
+            },
+            {
+                "name": "output_dip_seek_info",
+                "start": 450,
+                "end": 467
+            },
+            {
+                "name": "output_dip_q2q_seek_info",
+                "start": 469,
+                "end": 486
+            },
+            {
+                "name": "__output_pip_avg",
+                "start": 493,
+                "end": 505
+            },
+            {
+                "name": "output_pip_avg",
+                "start": 507,
+                "end": 514
+            },
+            {
+                "name": "__dip_output_plug",
+                "start": 522,
+                "end": 550
+            },
+            {
+                "name": "__dip_output_plug_all",
+                "start": 552,
+                "end": 561
+            },
+            {
+                "name": "__dip_output_plug_nios",
+                "start": 568,
+                "end": 595
+            },
+            {
+                "name": "__dip_output_uplug_all",
+                "start": 597,
+                "end": 611
+            },
+            {
+                "name": "output_plug_info",
+                "start": 613,
+                "end": 630
+            },
+            {
+                "name": "__dip_output_actQ",
+                "start": 638,
+                "end": 657
+            },
+            {
+                "name": "__dip_output_actQ_all",
+                "start": 659,
+                "end": 665
+            },
+            {
+                "name": "output_actQ_info",
+                "start": 667,
+                "end": 675
+            },
+            {
+                "name": "__dip_output_p_live",
+                "start": 677,
+                "end": 688
+            },
+            {
+                "name": "output_p_live",
+                "start": 690,
+                "end": 703
+            },
+            {
+                "name": "output_histos",
+                "start": 705,
+                "end": 740
+            },
+            {
+                "name": "output_avgs",
+                "start": 742,
+                "end": 829
+            },
+            {
+                "name": "__output_ranges",
+                "start": 831,
+                "end": 844
+            },
+            {
+                "name": "output_regions",
+                "start": 846,
+                "end": 861
+            },
+            {
+                "name": "__output_dev",
+                "start": 867,
+                "end": 875
+            },
+            {
+                "name": "output_devs",
+                "start": 877,
+                "end": 884
+            },
+            {
+                "name": "exe_match",
+                "start": 886,
+                "end": 889
+            },
+            {
+                "name": "__output_procs",
+                "start": 895,
+                "end": 900
+            },
+            {
+                "name": "output_procs",
+                "start": 902,
+                "end": 909
+            },
+            {
+                "name": "output_ranges",
+                "start": 911,
+                "end": 925
+            }
+        ],
+        "btt/trace_remap.c": [
+            {
+                "name": "cvt_pdu_remap",
+                "start": 23,
+                "end": 28
+            },
+            {
+                "name": "trace_remap",
+                "start": 34,
+                "end": 59
+            }
+        ],
+        "btt/seek.c": [
+            {
+                "name": "seek_open",
+                "start": 45,
+                "end": 61
+            },
+            {
+                "name": "__insert",
+                "start": 63,
+                "end": 88
+            },
+            {
+                "name": "__destroy",
+                "start": 90,
+                "end": 99
+            },
+            {
+                "name": "sps_emit",
+                "start": 101,
+                "end": 116
+            },
+            {
+                "name": "sps_add",
+                "start": 118,
+                "end": 133
+            },
+            {
+                "name": "__median",
+                "start": 135,
+                "end": 154
+            },
+            {
+                "name": "__mode",
+                "start": 156,
+                "end": 179
+            },
+            {
+                "name": "seek_dist",
+                "start": 181,
+                "end": 203
+            },
+            {
+                "name": "seeki_alloc",
+                "start": 205,
+                "end": 235
+            },
+            {
+                "name": "seeki_free",
+                "start": 237,
+                "end": 249
+            },
+            {
+                "name": "seeki_add",
+                "start": 251,
+                "end": 270
+            },
+            {
+                "name": "seeki_nseeks",
+                "start": 272,
+                "end": 275
+            },
+            {
+                "name": "seeki_mean",
+                "start": 277,
+                "end": 281
+            },
+            {
+                "name": "seeki_median",
+                "start": 283,
+                "end": 293
+            },
+            {
+                "name": "seeki_mode",
+                "start": 295,
+                "end": 305
+            }
+        ],
+        "btt/trace.c": [
+            {
+                "name": "__add_trace",
+                "start": 23,
+                "end": 57
+            },
+            {
+                "name": "trace_message",
+                "start": 59,
+                "end": 74
+            },
+            {
+                "name": "add_trace",
+                "start": 76,
+                "end": 107
+            }
+        ],
+        "btt/q2d.c": [
+            {
+                "name": "q2d_histo_add",
+                "start": 33,
+                "end": 55
+            },
+            {
+                "name": "q2d_alloc",
+                "start": 57,
+                "end": 62
+            },
+            {
+                "name": "q2d_free",
+                "start": 64,
+                "end": 67
+            },
+            {
+                "name": "q2d_display_header",
+                "start": 69,
+                "end": 81
+            },
+            {
+                "name": "q2d_display_dashes",
+                "start": 83,
+                "end": 90
+            },
+            {
+                "name": "q2d_display",
+                "start": 92,
+                "end": 103
+            },
+            {
+                "name": "q2d_ok",
+                "start": 105,
+                "end": 110
+            },
+            {
+                "name": "q2d_acc",
+                "start": 112,
+                "end": 121
+            }
+        ],
+        "btt/misc.c": [
+            {
+                "name": "clean_files",
+                "start": 48,
+                "end": 64
+            },
+            {
+                "name": "clean_bufs",
+                "start": 66,
+                "end": 77
+            },
+            {
+                "name": "increase_limit",
+                "start": 86,
+                "end": 102
+            },
+            {
+                "name": "handle_open_failure",
+                "start": 104,
+                "end": 110
+            },
+            {
+                "name": "add_file",
+                "start": 112,
+                "end": 119
+            },
+            {
+                "name": "add_buf",
+                "start": 121,
+                "end": 127
+            },
+            {
+                "name": "clean_allocs",
+                "start": 129,
+                "end": 133
+            },
+            {
+                "name": "make_dev_hdr",
+                "start": 135,
+                "end": 147
+            },
+            {
+                "name": "mkhandle",
+                "start": 149,
+                "end": 152
+            },
+            {
+                "name": "my_fopen",
+                "start": 154,
+                "end": 163
+            },
+            {
+                "name": "my_open",
+                "start": 165,
+                "end": 174
+            }
+        ],
+        "btt/mmap.c": [
+            {
+                "name": "min_len",
+                "start": 44,
+                "end": 47
+            },
+            {
+                "name": "convert_to_cpu",
+                "start": 49,
+                "end": 79
+            },
+            {
+                "name": "move_map",
+                "start": 81,
+                "end": 100
+            },
+            {
+                "name": "setup_ifile",
+                "start": 102,
+                "end": 121
+            },
+            {
+                "name": "cleanup_ifile",
+                "start": 123,
+                "end": 128
+            },
+            {
+                "name": "next_trace",
+                "start": 130,
+                "end": 145
+            },
+            {
+                "name": "pct_done",
+                "start": 147,
+                "end": 150
+            }
+        ],
+        "btt/proc.c": [
+            {
+                "name": "__foreach",
+                "start": 36,
+                "end": 44
+            },
+            {
+                "name": "__destroy",
+                "start": 46,
+                "end": 63
+            },
+            {
+                "name": "__find_process_pid",
+                "start": 65,
+                "end": 81
+            },
+            {
+                "name": "__find_process_name",
+                "start": 83,
+                "end": 101
+            },
+            {
+                "name": "insert_pid",
+                "start": 103,
+                "end": 127
+            },
+            {
+                "name": "insert_name",
+                "start": 129,
+                "end": 155
+            },
+            {
+                "name": "insert",
+                "start": 157,
+                "end": 161
+            },
+            {
+                "name": "pip_alloc",
+                "start": 163,
+                "end": 166
+            },
+            {
+                "name": "find_process",
+                "start": 168,
+                "end": 205
+            },
+            {
+                "name": "process_alloc",
+                "start": 207,
+                "end": 220
+            },
+            {
+                "name": "pip_update_q",
+                "start": 222,
+                "end": 233
+            },
+            {
+                "name": "pip_foreach_out",
+                "start": 235,
+                "end": 256
+            },
+            {
+                "name": "pip_exit",
+                "start": 258,
+                "end": 262
+            }
+        ],
+        "btt/trace_issue.c": [
+            {
+                "name": "handle_issue",
+                "start": 23,
+                "end": 61
+            },
+            {
+                "name": "trace_issue",
+                "start": 63,
+                "end": 73
+            }
+        ],
+        "btt/plat.c": [
+            {
+                "name": "plat_alloc",
+                "start": 30,
+                "end": 52
+            },
+            {
+                "name": "plat_free",
+                "start": 54,
+                "end": 67
+            },
+            {
+                "name": "plat_x2c",
+                "start": 69,
+                "end": 95
+            }
+        ],
+        "btt/rstats.c": [
+            {
+                "name": "do_open",
+                "start": 39,
+                "end": 52
+            },
+            {
+                "name": "init_rsip",
+                "start": 54,
+                "end": 66
+            },
+            {
+                "name": "rstat_emit",
+                "start": 68,
+                "end": 85
+            },
+            {
+                "name": "__add",
+                "start": 87,
+                "end": 96
+            },
+            {
+                "name": "rstat_alloc",
+                "start": 98,
+                "end": 107
+            },
+            {
+                "name": "rstat_free",
+                "start": 109,
+                "end": 116
+            },
+            {
+                "name": "rstat_add",
+                "start": 118,
+                "end": 123
+            },
+            {
+                "name": "rstat_init",
+                "start": 125,
+                "end": 129
+            },
+            {
+                "name": "rstat_exit",
+                "start": 131,
+                "end": 139
+            }
+        ],
+        "btt/trace_requeue.c": [
+            {
+                "name": "handle_requeue",
+                "start": 23,
+                "end": 28
+            },
+            {
+                "name": "trace_requeue",
+                "start": 30,
+                "end": 35
+            }
+        ],
+        "btt/aqd.c": [
+            {
+                "name": "aqd_alloc",
+                "start": 32,
+                "end": 54
+            },
+            {
+                "name": "aqd_free",
+                "start": 56,
+                "end": 59
+            },
+            {
+                "name": "aqd_issue",
+                "start": 61,
+                "end": 69
+            },
+            {
+                "name": "aqd_complete",
+                "start": 71,
+                "end": 82
+            }
+        ],
+        "btt/bt_timeline.c": [
+            {
+                "name": "main",
+                "start": 59,
+                "end": 96
+            },
+            {
+                "name": "tv2dbl",
+                "start": 98,
+                "end": 101
+            },
+            {
+                "name": "process",
+                "start": 103,
+                "end": 131
+            }
+        ],
+        "btt/iostat.c": [
+            {
+                "name": "dump_hdr",
+                "start": 56,
+                "end": 61
+            },
+            {
+                "name": "update_tot_qusz",
+                "start": 63,
+                "end": 71
+            },
+            {
+                "name": "update_idle_time",
+                "start": 73,
+                "end": 81
+            },
+            {
+                "name": "__dump_stats",
+                "start": 83,
+                "end": 159
+            },
+            {
+                "name": "__dump_stats_t",
+                "start": 161,
+                "end": 183
+            },
+            {
+                "name": "iostat_init",
+                "start": 185,
+                "end": 190
+            },
+            {
+                "name": "iostat_dump_stats",
+                "start": 192,
+                "end": 226
+            },
+            {
+                "name": "iostat_check_time",
+                "start": 228,
+                "end": 240
+            },
+            {
+                "name": "iostat_getrq",
+                "start": 242,
+                "end": 246
+            },
+            {
+                "name": "iostat_merge",
+                "start": 248,
+                "end": 251
+            },
+            {
+                "name": "iostat_issue",
+                "start": 253,
+                "end": 264
+            },
+            {
+                "name": "iostat_complete",
+                "start": 266,
+                "end": 283
+            }
+        ],
+        "btt/trace_complete.c": [
+            {
+                "name": "__out",
+                "start": 23,
+                "end": 33
+            },
+            {
+                "name": "display_io_track",
+                "start": 35,
+                "end": 50
+            },
+            {
+                "name": "handle_complete",
+                "start": 52,
+                "end": 117
+            },
+            {
+                "name": "trace_complete",
+                "start": 119,
+                "end": 128
+            }
+        ],
+        "btt/dip_rb.c": [
+            {
+                "name": "rb_insert",
+                "start": 24,
+                "end": 47
+            },
+            {
+                "name": "rb_find_sec",
+                "start": 49,
+                "end": 65
+            },
+            {
+                "name": "rb_foreach",
+                "start": 67,
+                "end": 86
+            }
+        ],
+        "btt/unplug_hist.c": [
+            {
+                "name": "unplug_hist_alloc",
+                "start": 33,
+                "end": 44
+            },
+            {
+                "name": "unplug_hist_add",
+                "start": 46,
+                "end": 62
+            },
+            {
+                "name": "unplug_hist_free",
+                "start": 64,
+                "end": 88
+            }
+        ],
+        "btt/p_live.c": [
+            {
+                "name": "do_open",
+                "start": 43,
+                "end": 62
+            },
+            {
+                "name": "inside",
+                "start": 64,
+                "end": 73
+            },
+            {
+                "name": "__p_live_add",
+                "start": 75,
+                "end": 106
+            },
+            {
+                "name": "p_live_alloc",
+                "start": 108,
+                "end": 112
+            },
+            {
+                "name": "p_live_free",
+                "start": 114,
+                "end": 117
+            },
+            {
+                "name": "p_live_add",
+                "start": 119,
+                "end": 123
+            },
+            {
+                "name": "p_live_visit",
+                "start": 125,
+                "end": 154
+            },
+            {
+                "name": "p_live_get",
+                "start": 156,
+                "end": 191
+            },
+            {
+                "name": "p_live_exit",
+                "start": 193,
+                "end": 203
+            }
+        ],
+        "btt/trace_im.c": [
+            {
+                "name": "handle_g",
+                "start": 23,
+                "end": 36
+            },
+            {
+                "name": "handle_s",
+                "start": 38,
+                "end": 44
+            },
+            {
+                "name": "handle_i",
+                "start": 46,
+                "end": 55
+            },
+            {
+                "name": "handle_m",
+                "start": 57,
+                "end": 71
+            },
+            {
+                "name": "trace_sleeprq",
+                "start": 73,
+                "end": 80
+            },
+            {
+                "name": "trace_getrq",
+                "start": 82,
+                "end": 89
+            },
+            {
+                "name": "trace_insert",
+                "start": 91,
+                "end": 98
+            },
+            {
+                "name": "trace_merge",
+                "start": 100,
+                "end": 107
+            }
+        ],
+        "btt/trace_plug.c": [
+            {
+                "name": "get_nio_up",
+                "start": 23,
+                "end": 27
+            },
+            {
+                "name": "trace_unplug_io",
+                "start": 29,
+                "end": 34
+            },
+            {
+                "name": "trace_unplug_timer",
+                "start": 36,
+                "end": 41
+            },
+            {
+                "name": "trace_plug",
+                "start": 43,
+                "end": 47
+            }
+        ],
+        "btt/args.c": [
+            {
+                "name": "usage",
+                "start": 245,
+                "end": 248
+            },
+            {
+                "name": "setup_ofile",
+                "start": 250,
+                "end": 271
+            },
+            {
+                "name": "std_open",
+                "start": 273,
+                "end": 288
+            },
+            {
+                "name": "handle_args",
+                "start": 290,
+                "end": 423
+            }
+        ],
+        "btreplay/btrecord.h": [
+            {
+                "name": "mk_btversion",
+                "start": 78,
+                "end": 81
+            },
+            {
+                "name": "get_btversion",
+                "start": 83,
+                "end": 88
+            }
+        ],
+        "btreplay/btreplay.c": [
+            {
+                "name": "fatal",
+                "start": 212,
+                "end": 226
+            },
+            {
+                "name": "du64_to_sec",
+                "start": 228,
+                "end": 231
+            },
+            {
+                "name": "du64_to_nsec",
+                "start": 233,
+                "end": 236
+            },
+            {
+                "name": "min",
+                "start": 241,
+                "end": 244
+            },
+            {
+                "name": "minl",
+                "start": 249,
+                "end": 252
+            },
+            {
+                "name": "usage",
+                "start": 257,
+                "end": 261
+            },
+            {
+                "name": "is_send_done",
+                "start": 267,
+                "end": 270
+            },
+            {
+                "name": "is_reap_done",
+                "start": 276,
+                "end": 279
+            },
+            {
+                "name": "ts2ns",
+                "start": 285,
+                "end": 288
+            },
+            {
+                "name": "tv2ns",
+                "start": 293,
+                "end": 296
+            },
+            {
+                "name": "touch_memory",
+                "start": 307,
+                "end": 317
+            },
+            {
+                "name": "buf_alloc",
+                "start": 323,
+                "end": 333
+            },
+            {
+                "name": "gettime",
+                "start": 338,
+                "end": 363
+            },
+            {
+                "name": "setup_signal",
+                "start": 368,
+                "end": 375
+            },
+            {
+                "name": "__set_cv",
+                "start": 390,
+                "end": 399
+            },
+            {
+                "name": "__wait_cv",
+                "start": 408,
+                "end": 416
+            },
+            {
+                "name": "set_reclaim_done",
+                "start": 418,
+                "end": 422
+            },
+            {
+                "name": "wait_reclaims_done",
+                "start": 424,
+                "end": 428
+            },
+            {
+                "name": "set_replay_ready",
+                "start": 430,
+                "end": 434
+            },
+            {
+                "name": "wait_replays_ready",
+                "start": 436,
+                "end": 440
+            },
+            {
+                "name": "set_replay_done",
+                "start": 442,
+                "end": 446
+            },
+            {
+                "name": "wait_replays_done",
+                "start": 448,
+                "end": 452
+            },
+            {
+                "name": "set_iter_done",
+                "start": 454,
+                "end": 458
+            },
+            {
+                "name": "wait_iters_done",
+                "start": 460,
+                "end": 464
+            },
+            {
+                "name": "wait_iter_start",
+                "start": 472,
+                "end": 480
+            },
+            {
+                "name": "start_iter",
+                "start": 485,
+                "end": 492
+            },
+            {
+                "name": "get_ncpus",
+                "start": 503,
+                "end": 522
+            },
+            {
+                "name": "pin_to_cpu",
+                "start": 528,
+                "end": 551
+            },
+            {
+                "name": "add_input_dev",
+                "start": 562,
+                "end": 576
+            },
+            {
+                "name": "rem_input_dev",
+                "start": 581,
+                "end": 586
+            },
+            {
+                "name": "find_input_devs",
+                "start": 588,
+                "end": 613
+            },
+            {
+                "name": "read_map_devs",
+                "start": 627,
+                "end": 647
+            },
+            {
+                "name": "release_map_devs",
+                "start": 652,
+                "end": 665
+            },
+            {
+                "name": "map_dev",
+                "start": 673,
+                "end": 685
+            },
+            {
+                "name": "iocb_init",
+                "start": 698,
+                "end": 703
+            },
+            {
+                "name": "iocb_setup",
+                "start": 712,
+                "end": 744
+            },
+            {
+                "name": "tip_init",
+                "start": 755,
+                "end": 811
+            },
+            {
+                "name": "tip_release",
+                "start": 816,
+                "end": 848
+            },
+            {
+                "name": "add_input_file",
+                "start": 856,
+                "end": 925
+            },
+            {
+                "name": "rem_input_file",
+                "start": 931,
+                "end": 942
+            },
+            {
+                "name": "rem_input_files",
+                "start": 947,
+                "end": 954
+            },
+            {
+                "name": "__find_input_files",
+                "start": 959,
+                "end": 980
+            },
+            {
+                "name": "find_input_files",
+                "start": 986,
+                "end": 993
+            },
+            {
+                "name": "reap_wait_aios",
+                "start": 1006,
+                "end": 1026
+            },
+            {
+                "name": "reclaim_ios",
+                "start": 1033,
+                "end": 1084
+            },
+            {
+                "name": "replay_rec",
+                "start": 1090,
+                "end": 1103
+            },
+            {
+                "name": "next_bunch",
+                "start": 1118,
+                "end": 1142
+            },
+            {
+                "name": "nfree_current",
+                "start": 1151,
+                "end": 1167
+            },
+            {
+                "name": "stall",
+                "start": 1174,
+                "end": 1202
+            },
+            {
+                "name": "iocbs_map",
+                "start": 1211,
+                "end": 1245
+            },
+            {
+                "name": "process_bunch",
+                "start": 1252,
+                "end": 1292
+            },
+            {
+                "name": "reset_input_file",
+                "start": 1300,
+                "end": 1310
+            },
+            {
+                "name": "replay_sub",
+                "start": 1315,
+                "end": 1360
+            },
+            {
+                "name": "handle_args",
+                "start": 1471,
+                "end": 1576
+            },
+            {
+                "name": "set_signal_done",
+                "start": 1587,
+                "end": 1590
+            },
+            {
+                "name": "main",
+                "start": 1597,
+                "end": 1636
+            }
+        ],
+        "btreplay/btrecord.c": [
+            {
+                "name": "fatal",
+                "start": 185,
+                "end": 199
+            },
+            {
+                "name": "match",
+                "start": 205,
+                "end": 209
+            },
+            {
+                "name": "usage",
+                "start": 214,
+                "end": 218
+            },
+            {
+                "name": "write_file_hdr",
+                "start": 225,
+                "end": 243
+            },
+            {
+                "name": "io_bunch_create",
+                "start": 251,
+                "end": 261
+            },
+            {
+                "name": "io_bunch_add",
+                "start": 270,
+                "end": 285
+            },
+            {
+                "name": "rem_input_file",
+                "start": 291,
+                "end": 299
+            },
+            {
+                "name": "__add_input_file",
+                "start": 307,
+                "end": 323
+            },
+            {
+                "name": "add_input_file",
+                "start": 329,
+                "end": 355
+            },
+            {
+                "name": "find_input_files",
+                "start": 357,
+                "end": 382
+            },
+            {
+                "name": "handle_args",
+                "start": 391,
+                "end": 477
+            },
+            {
+                "name": "next_io",
+                "start": 486,
+                "end": 566
+            },
+            {
+                "name": "bunch_output_hdr",
+                "start": 571,
+                "end": 592
+            },
+            {
+                "name": "bunch_output_pkts",
+                "start": 597,
+                "end": 618
+            },
+            {
+                "name": "stream_flush",
+                "start": 624,
+                "end": 639
+            },
+            {
+                "name": "bunch_done",
+                "start": 646,
+                "end": 655
+            },
+            {
+                "name": "stream_add_io",
+                "start": 662,
+                "end": 673
+            },
+            {
+                "name": "stream_open",
+                "start": 679,
+                "end": 722
+            },
+            {
+                "name": "stream_close",
+                "start": 728,
+                "end": 756
+            },
+            {
+                "name": "process",
+                "start": 762,
+                "end": 773
+            },
+            {
+                "name": "main",
+                "start": 780,
+                "end": 789
+            }
+        ]
+    }
+}

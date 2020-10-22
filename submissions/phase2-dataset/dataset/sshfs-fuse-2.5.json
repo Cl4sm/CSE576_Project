@@ -1,0 +1,1049 @@
+{
+    "sshfs-fuse-2.5": {
+        "sshnodelay.c": [
+            {
+                "name": "connect",
+                "start": 8,
+                "end": 18
+            }
+        ],
+        "sshfs.c": [
+            {
+                "name": "type_name",
+                "start": 415,
+                "end": 447
+            },
+            {
+                "name": "list_init",
+                "start": 456,
+                "end": 460
+            },
+            {
+                "name": "list_add",
+                "start": 462,
+                "end": 470
+            },
+            {
+                "name": "list_del",
+                "start": 472,
+                "end": 479
+            },
+            {
+                "name": "list_empty",
+                "start": 481,
+                "end": 484
+            },
+            {
+                "name": "translate_id",
+                "start": 488,
+                "end": 502
+            },
+            {
+                "name": "buf_init",
+                "start": 504,
+                "end": 516
+            },
+            {
+                "name": "buf_free",
+                "start": 518,
+                "end": 521
+            },
+            {
+                "name": "buf_finish",
+                "start": 523,
+                "end": 526
+            },
+            {
+                "name": "buf_clear",
+                "start": 528,
+                "end": 532
+            },
+            {
+                "name": "buf_resize",
+                "start": 534,
+                "end": 542
+            },
+            {
+                "name": "buf_check_add",
+                "start": 544,
+                "end": 548
+            },
+            {
+                "name": "buf_add_mem",
+                "start": 556,
+                "end": 560
+            },
+            {
+                "name": "buf_add_buf",
+                "start": 562,
+                "end": 565
+            },
+            {
+                "name": "buf_add_uint8",
+                "start": 567,
+                "end": 570
+            },
+            {
+                "name": "buf_add_uint32",
+                "start": 572,
+                "end": 576
+            },
+            {
+                "name": "buf_add_uint64",
+                "start": 578,
+                "end": 582
+            },
+            {
+                "name": "buf_add_data",
+                "start": 584,
+                "end": 588
+            },
+            {
+                "name": "buf_add_string",
+                "start": 590,
+                "end": 596
+            },
+            {
+                "name": "buf_add_path",
+                "start": 598,
+                "end": 624
+            },
+            {
+                "name": "buf_check_get",
+                "start": 626,
+                "end": 633
+            },
+            {
+                "name": "buf_get_mem",
+                "start": 635,
+                "end": 642
+            },
+            {
+                "name": "buf_get_uint8",
+                "start": 644,
+                "end": 647
+            },
+            {
+                "name": "buf_get_uint32",
+                "start": 649,
+                "end": 656
+            },
+            {
+                "name": "buf_get_uint64",
+                "start": 658,
+                "end": 668
+            },
+            {
+                "name": "buf_get_data",
+                "start": 670,
+                "end": 682
+            },
+            {
+                "name": "buf_get_string",
+                "start": 684,
+                "end": 692
+            },
+            {
+                "name": "buf_get_attrs",
+                "start": 694,
+                "end": 762
+            },
+            {
+                "name": "buf_get_statvfs",
+                "start": 764,
+                "end": 804
+            },
+            {
+                "name": "buf_get_entries",
+                "start": 806,
+                "end": 838
+            },
+            {
+                "name": "ssh_add_arg",
+                "start": 840,
+                "end": 844
+            },
+            {
+                "name": "pty_expect_loop",
+                "start": 893,
+                "end": 959
+            },
+            {
+                "name": "pty_master",
+                "start": 961,
+                "end": 981
+            },
+            {
+                "name": "replace_arg",
+                "start": 983,
+                "end": 991
+            },
+            {
+                "name": "start_ssh",
+                "start": 993,
+                "end": 1104
+            },
+            {
+                "name": "connect_slave",
+                "start": 1106,
+                "end": 1111
+            },
+            {
+                "name": "connect_to",
+                "start": 1113,
+                "end": 1150
+            },
+            {
+                "name": "do_write",
+                "start": 1152,
+                "end": 1177
+            },
+            {
+                "name": "sftp_get_id",
+                "start": 1179,
+                "end": 1183
+            },
+            {
+                "name": "buf_to_iov",
+                "start": 1185,
+                "end": 1189
+            },
+            {
+                "name": "iov_length",
+                "start": 1191,
+                "end": 1199
+            },
+            {
+                "name": "sftp_send_iov",
+                "start": 1203,
+                "end": 1225
+            },
+            {
+                "name": "do_read",
+                "start": 1227,
+                "end": 1245
+            },
+            {
+                "name": "sftp_read",
+                "start": 1247,
+                "end": 1268
+            },
+            {
+                "name": "request_free",
+                "start": 1270,
+                "end": 1275
+            },
+            {
+                "name": "chunk_free",
+                "start": 1277,
+                "end": 1288
+            },
+            {
+                "name": "chunk_put",
+                "start": 1290,
+                "end": 1297
+            },
+            {
+                "name": "chunk_put_locked",
+                "start": 1299,
+                "end": 1304
+            },
+            {
+                "name": "clean_req",
+                "start": 1306,
+                "end": 1319
+            },
+            {
+                "name": "process_one_request",
+                "start": 1321,
+                "end": 1390
+            },
+            {
+                "name": "close_conn",
+                "start": 1392,
+                "end": 1407
+            },
+            {
+                "name": "process_requests",
+                "start": 1409,
+                "end": 1432
+            },
+            {
+                "name": "sftp_init_reply_ok",
+                "start": 1434,
+                "end": 1492
+            },
+            {
+                "name": "sftp_find_init_reply",
+                "start": 1494,
+                "end": 1518
+            },
+            {
+                "name": "sftp_init",
+                "start": 1520,
+                "end": 1546
+            },
+            {
+                "name": "sftp_error_to_errno",
+                "start": 1548,
+                "end": 1561
+            },
+            {
+                "name": "sftp_detect_uid",
+                "start": 1563,
+                "end": 1615
+            },
+            {
+                "name": "sftp_check_root",
+                "start": 1617,
+                "end": 1683
+            },
+            {
+                "name": "connect_remote",
+                "start": 1685,
+                "end": 1704
+            },
+            {
+                "name": "start_processing_thread",
+                "start": 1706,
+                "end": 1742
+            },
+            {
+                "name": "sshfs_init",
+                "start": 1747,
+                "end": 1760
+            },
+            {
+                "name": "sftp_request_wait",
+                "start": 1762,
+                "end": 1826
+            },
+            {
+                "name": "sftp_request_send",
+                "start": 1828,
+                "end": 1892
+            },
+            {
+                "name": "sftp_request_iov",
+                "start": 1895,
+                "end": 1907
+            },
+            {
+                "name": "sftp_request",
+                "start": 1909,
+                "end": 1916
+            },
+            {
+                "name": "sshfs_getattr",
+                "start": 1918,
+                "end": 1933
+            },
+            {
+                "name": "count_components",
+                "start": 1935,
+                "end": 1945
+            },
+            {
+                "name": "strip_common",
+                "start": 1947,
+                "end": 1958
+            },
+            {
+                "name": "transform_symlink",
+                "start": 1960,
+                "end": 1999
+            },
+            {
+                "name": "sshfs_readlink",
+                "start": 2001,
+                "end": 2032
+            },
+            {
+                "name": "sftp_readdir_send",
+                "start": 2034,
+                "end": 2041
+            },
+            {
+                "name": "sshfs_req_pending",
+                "start": 2043,
+                "end": 2049
+            },
+            {
+                "name": "sftp_readdir_async",
+                "start": 2051,
+                "end": 2121
+            },
+            {
+                "name": "sftp_readdir_sync",
+                "start": 2123,
+                "end": 2139
+            },
+            {
+                "name": "sshfs_getdir",
+                "start": 2141,
+                "end": 2166
+            },
+            {
+                "name": "sshfs_mkdir",
+                "start": 2168,
+                "end": 2179
+            },
+            {
+                "name": "sshfs_mknod",
+                "start": 2181,
+                "end": 2208
+            },
+            {
+                "name": "sshfs_symlink",
+                "start": 2210,
+                "end": 2226
+            },
+            {
+                "name": "sshfs_unlink",
+                "start": 2228,
+                "end": 2237
+            },
+            {
+                "name": "sshfs_rmdir",
+                "start": 2239,
+                "end": 2248
+            },
+            {
+                "name": "sshfs_do_rename",
+                "start": 2250,
+                "end": 2260
+            },
+            {
+                "name": "sshfs_ext_posix_rename",
+                "start": 2262,
+                "end": 2273
+            },
+            {
+                "name": "random_string",
+                "start": 2275,
+                "end": 2281
+            },
+            {
+                "name": "sshfs_rename",
+                "start": 2283,
+                "end": 2308
+            },
+            {
+                "name": "sshfs_link",
+                "start": 2310,
+                "end": 2327
+            },
+            {
+                "name": "sshfs_chmod",
+                "start": 2329,
+                "end": 2341
+            },
+            {
+                "name": "sshfs_chown",
+                "start": 2343,
+                "end": 2365
+            },
+            {
+                "name": "sshfs_truncate_workaround",
+                "start": 2367,
+                "end": 2368
+            },
+            {
+                "name": "sshfs_inc_modifver",
+                "start": 2370,
+                "end": 2375
+            },
+            {
+                "name": "sshfs_truncate",
+                "start": 2377,
+                "end": 2393
+            },
+            {
+                "name": "sshfs_utime",
+                "start": 2395,
+                "end": 2407
+            },
+            {
+                "name": "sshfs_file_is_conn",
+                "start": 2409,
+                "end": 2418
+            },
+            {
+                "name": "sshfs_open_common",
+                "start": 2420,
+                "end": 2499
+            },
+            {
+                "name": "sshfs_open",
+                "start": 2501,
+                "end": 2504
+            },
+            {
+                "name": "get_sshfs_file",
+                "start": 2506,
+                "end": 2509
+            },
+            {
+                "name": "sshfs_flush",
+                "start": 2511,
+                "end": 2538
+            },
+            {
+                "name": "sshfs_fsync",
+                "start": 2540,
+                "end": 2545
+            },
+            {
+                "name": "sshfs_file_put",
+                "start": 2547,
+                "end": 2552
+            },
+            {
+                "name": "sshfs_file_get",
+                "start": 2554,
+                "end": 2557
+            },
+            {
+                "name": "sshfs_release",
+                "start": 2559,
+                "end": 2571
+            },
+            {
+                "name": "sshfs_read_end",
+                "start": 2573,
+                "end": 2610
+            },
+            {
+                "name": "sshfs_read_begin",
+                "start": 2612,
+                "end": 2616
+            },
+            {
+                "name": "sshfs_send_read",
+                "start": 2618,
+                "end": 2662
+            },
+            {
+                "name": "wait_chunk",
+                "start": 2664,
+                "end": 2720
+            },
+            {
+                "name": "sshfs_sync_read",
+                "start": 2722,
+                "end": 2729
+            },
+            {
+                "name": "submit_read",
+                "start": 2731,
+                "end": 2743
+            },
+            {
+                "name": "search_read_chunk",
+                "start": 2745,
+                "end": 2753
+            },
+            {
+                "name": "sshfs_async_read",
+                "start": 2755,
+                "end": 2803
+            },
+            {
+                "name": "sshfs_read",
+                "start": 2805,
+                "end": 2818
+            },
+            {
+                "name": "sshfs_write_begin",
+                "start": 2820,
+                "end": 2826
+            },
+            {
+                "name": "sshfs_write_end",
+                "start": 2828,
+                "end": 2846
+            },
+            {
+                "name": "sshfs_async_write",
+                "start": 2848,
+                "end": 2876
+            },
+            {
+                "name": "sshfs_sync_write_begin",
+                "start": 2878,
+                "end": 2882
+            },
+            {
+                "name": "sshfs_sync_write_end",
+                "start": 2884,
+                "end": 2902
+            },
+            {
+                "name": "sshfs_sync_write",
+                "start": 2905,
+                "end": 2945
+            },
+            {
+                "name": "sshfs_write",
+                "start": 2947,
+                "end": 2966
+            },
+            {
+                "name": "sshfs_ext_statvfs",
+                "start": 2968,
+                "end": 2985
+            },
+            {
+                "name": "sshfs_statfs",
+                "start": 3007,
+                "end": 3032
+            },
+            {
+                "name": "sshfs_fgetattr",
+                "start": 3069,
+                "end": 3094
+            },
+            {
+                "name": "sshfs_truncate_zero",
+                "start": 3096,
+                "end": 3107
+            },
+            {
+                "name": "calc_buf_size",
+                "start": 3109,
+                "end": 3112
+            },
+            {
+                "name": "sshfs_truncate_shrink",
+                "start": 3114,
+                "end": 3158
+            },
+            {
+                "name": "sshfs_truncate_extend",
+                "start": 3160,
+                "end": 3181
+            },
+            {
+                "name": "sshfs_truncate_workaround",
+                "start": 3195,
+                "end": 3216
+            },
+            {
+                "name": "processing_init",
+                "start": 3218,
+                "end": 3231
+            },
+            {
+                "name": "usage",
+                "start": 3265,
+                "end": 3320
+            },
+            {
+                "name": "is_ssh_opt",
+                "start": 3322,
+                "end": 3335
+            },
+            {
+                "name": "sshfs_fuse_main",
+                "start": 3337,
+                "end": 3344
+            },
+            {
+                "name": "sshfs_opt_proc",
+                "start": 3346,
+                "end": 3407
+            },
+            {
+                "name": "workaround_opt_proc",
+                "start": 3409,
+                "end": 3415
+            },
+            {
+                "name": "parse_workarounds",
+                "start": 3417,
+                "end": 3434
+            },
+            {
+                "name": "check_large_read",
+                "start": 3454,
+                "end": 3461
+            },
+            {
+                "name": "read_password",
+                "start": 3463,
+                "end": 3501
+            },
+            {
+                "name": "set_ssh_command",
+                "start": 3503,
+                "end": 3538
+            },
+            {
+                "name": "find_base_path",
+                "start": 3540,
+                "end": 3568
+            },
+            {
+                "name": "fsname_remove_commas",
+                "start": 3573,
+                "end": 3585
+            },
+            {
+                "name": "ssh_connect",
+                "start": 3606,
+                "end": 3624
+            },
+            {
+                "name": "parse_idmap_line",
+                "start": 3631,
+                "end": 3674
+            },
+            {
+                "name": "read_id_map",
+                "start": 3677,
+                "end": 3741
+            },
+            {
+                "name": "username_to_uid",
+                "start": 3745,
+                "end": 3765
+            },
+            {
+                "name": "groupname_to_gid",
+                "start": 3769,
+                "end": 3789
+            },
+            {
+                "name": "load_uid_map",
+                "start": 3791,
+                "end": 3794
+            },
+            {
+                "name": "load_gid_map",
+                "start": 3796,
+                "end": 3799
+            },
+            {
+                "name": "main",
+                "start": 3801,
+                "end": 4055
+            }
+        ],
+        "cache.c": [
+            {
+                "name": "free_node",
+                "start": 54,
+                "end": 59
+            },
+            {
+                "name": "cache_clean_entry",
+                "start": 61,
+                "end": 68
+            },
+            {
+                "name": "cache_clean",
+                "start": 70,
+                "end": 80
+            },
+            {
+                "name": "cache_lookup",
+                "start": 82,
+                "end": 85
+            },
+            {
+                "name": "cache_purge",
+                "start": 87,
+                "end": 90
+            },
+            {
+                "name": "cache_purge_parent",
+                "start": 92,
+                "end": 104
+            },
+            {
+                "name": "cache_invalidate",
+                "start": 106,
+                "end": 114
+            },
+            {
+                "name": "cache_invalidate_write",
+                "start": 116,
+                "end": 122
+            },
+            {
+                "name": "cache_invalidate_dir",
+                "start": 124,
+                "end": 130
+            },
+            {
+                "name": "cache_del_children",
+                "start": 132,
+                "end": 139
+            },
+            {
+                "name": "cache_do_rename",
+                "start": 141,
+                "end": 151
+            },
+            {
+                "name": "cache_get",
+                "start": 153,
+                "end": 162
+            },
+            {
+                "name": "cache_add_attr",
+                "start": 164,
+                "end": 181
+            },
+            {
+                "name": "cache_add_dir",
+                "start": 183,
+                "end": 196
+            },
+            {
+                "name": "my_strnlen",
+                "start": 198,
+                "end": 203
+            },
+            {
+                "name": "cache_add_link",
+                "start": 205,
+                "end": 218
+            },
+            {
+                "name": "cache_get_attr",
+                "start": 220,
+                "end": 235
+            },
+            {
+                "name": "cache_get_write_ctr",
+                "start": 237,
+                "end": 246
+            },
+            {
+                "name": "cache_getattr",
+                "start": 248,
+                "end": 258
+            },
+            {
+                "name": "cache_readlink",
+                "start": 260,
+                "end": 282
+            },
+            {
+                "name": "cache_dirfill",
+                "start": 284,
+                "end": 300
+            },
+            {
+                "name": "cache_getdir",
+                "start": 302,
+                "end": 336
+            },
+            {
+                "name": "cache_unity_dirfill",
+                "start": 338,
+                "end": 343
+            },
+            {
+                "name": "cache_unity_getdir",
+                "start": 345,
+                "end": 352
+            },
+            {
+                "name": "cache_mknod",
+                "start": 354,
+                "end": 360
+            },
+            {
+                "name": "cache_mkdir",
+                "start": 362,
+                "end": 368
+            },
+            {
+                "name": "cache_unlink",
+                "start": 370,
+                "end": 376
+            },
+            {
+                "name": "cache_rmdir",
+                "start": 378,
+                "end": 384
+            },
+            {
+                "name": "cache_symlink",
+                "start": 386,
+                "end": 392
+            },
+            {
+                "name": "cache_rename",
+                "start": 394,
+                "end": 400
+            },
+            {
+                "name": "cache_link",
+                "start": 402,
+                "end": 410
+            },
+            {
+                "name": "cache_chmod",
+                "start": 412,
+                "end": 418
+            },
+            {
+                "name": "cache_chown",
+                "start": 420,
+                "end": 426
+            },
+            {
+                "name": "cache_truncate",
+                "start": 428,
+                "end": 434
+            },
+            {
+                "name": "cache_utime",
+                "start": 436,
+                "end": 442
+            },
+            {
+                "name": "cache_write",
+                "start": 444,
+                "end": 451
+            },
+            {
+                "name": "cache_unity_fill",
+                "start": 486,
+                "end": 522
+            },
+            {
+                "name": "cache_fill",
+                "start": 524,
+                "end": 548
+            },
+            {
+                "name": "cache_init",
+                "start": 550,
+                "end": 567
+            },
+            {
+                "name": "cache_parse_options",
+                "start": 581,
+                "end": 589
+            }
+        ],
+        "compat/fuse_opt.h": [
+            {
+                "name": "fuse_opt_parse",
+                "start": 199,
+                "end": 200
+            }
+        ],
+        "compat/fuse_opt.c": [
+            {
+                "name": "fuse_opt_free_args",
+                "start": 28,
+                "end": 38
+            },
+            {
+                "name": "alloc_failed",
+                "start": 40,
+                "end": 44
+            },
+            {
+                "name": "fuse_opt_add_arg",
+                "start": 46,
+                "end": 63
+            },
+            {
+                "name": "fuse_opt_insert_arg",
+                "start": 65,
+                "end": 78
+            },
+            {
+                "name": "next_arg",
+                "start": 80,
+                "end": 88
+            },
+            {
+                "name": "add_arg",
+                "start": 90,
+                "end": 93
+            },
+            {
+                "name": "fuse_opt_add_opt",
+                "start": 95,
+                "end": 113
+            },
+            {
+                "name": "add_opt",
+                "start": 115,
+                "end": 118
+            },
+            {
+                "name": "call_proc",
+                "start": 120,
+                "end": 135
+            },
+            {
+                "name": "match_template",
+                "start": 137,
+                "end": 156
+            },
+            {
+                "name": "find_opt",
+                "start": 158,
+                "end": 165
+            },
+            {
+                "name": "fuse_opt_match",
+                "start": 167,
+                "end": 171
+            },
+            {
+                "name": "process_opt_param",
+                "start": 173,
+                "end": 190
+            },
+            {
+                "name": "process_opt",
+                "start": 192,
+                "end": 212
+            },
+            {
+                "name": "process_opt_sep_arg",
+                "start": 214,
+                "end": 236
+            },
+            {
+                "name": "process_gopt",
+                "start": 238,
+                "end": 255
+            },
+            {
+                "name": "process_real_option_group",
+                "start": 257,
+                "end": 273
+            },
+            {
+                "name": "process_option_group",
+                "start": 275,
+                "end": 291
+            },
+            {
+                "name": "process_one",
+                "start": 293,
+                "end": 313
+            },
+            {
+                "name": "opt_parse",
+                "start": 315,
+                "end": 337
+            },
+            {
+                "name": "fuse_opt_parse",
+                "start": 339,
+                "end": 364
+            }
+        ]
+    }
+}

@@ -1,0 +1,874 @@
+{
+    "httperf-0.9.0": {
+        "src/timer.h": [
+            {
+                "name": "timer_schedule",
+                "start": 70,
+                "end": 71
+            }
+        ],
+        "src/call.c": [
+            {
+                "name": "call_init",
+                "start": 45,
+                "end": 59
+            },
+            {
+                "name": "call_deinit",
+                "start": 61,
+                "end": 64
+            },
+            {
+                "name": "call_append_request_header",
+                "start": 66,
+                "end": 81
+            }
+        ],
+        "src/timer.c": [
+            {
+                "name": "done",
+                "start": 58,
+                "end": 64
+            },
+            {
+                "name": "timer_now_forced",
+                "start": 66,
+                "end": 73
+            },
+            {
+                "name": "timer_now",
+                "start": 75,
+                "end": 79
+            },
+            {
+                "name": "timer_init",
+                "start": 81,
+                "end": 88
+            },
+            {
+                "name": "timer_tick",
+                "start": 90,
+                "end": 119
+            },
+            {
+                "name": "timer_schedule",
+                "start": 121,
+                "end": 188
+            },
+            {
+                "name": "timer_cancel",
+                "start": 190,
+                "end": 213
+            }
+        ],
+        "src/conn.c": [
+            {
+                "name": "conn_init",
+                "start": 45,
+                "end": 86
+            },
+            {
+                "name": "conn_deinit",
+                "start": 88,
+                "end": 101
+            }
+        ],
+        "src/idleconn.c": [
+            {
+                "name": "sigint_handler",
+                "start": 55,
+                "end": 69
+            },
+            {
+                "name": "main",
+                "start": 71,
+                "end": 212
+            }
+        ],
+        "src/event.h": [
+            {
+                "name": "event_register_handler",
+                "start": 89,
+                "end": 90
+            }
+        ],
+        "src/event.c": [
+            {
+                "name": "event_register_handler",
+                "start": 86,
+                "end": 103
+            },
+            {
+                "name": "event_signal",
+                "start": 105,
+                "end": 121
+            }
+        ],
+        "src/core.h": [
+            {
+                "name": "core_intern_addr",
+                "start": 43,
+                "end": 44
+            }
+        ],
+        "src/core.c": [
+            {
+                "name": "rpl_realloc",
+                "start": 70,
+                "end": 91
+            },
+            {
+                "name": "hash_code",
+                "start": 175,
+                "end": 195
+            },
+            {
+                "name": "hash_enter",
+                "start": 197,
+                "end": 216
+            },
+            {
+                "name": "hash_lookup",
+                "start": 218,
+                "end": 237
+            },
+            {
+                "name": "lffs",
+                "start": 239,
+                "end": 259
+            },
+            {
+                "name": "port_put",
+                "start": 261,
+                "end": 270
+            },
+            {
+                "name": "port_get",
+                "start": 272,
+                "end": 309
+            },
+            {
+                "name": "conn_failure",
+                "start": 311,
+                "end": 320
+            },
+            {
+                "name": "conn_timeout",
+                "start": 322,
+                "end": 358
+            },
+            {
+                "name": "set_active",
+                "start": 360,
+                "end": 388
+            },
+            {
+                "name": "do_send",
+                "start": 390,
+                "end": 520
+            },
+            {
+                "name": "recv_done",
+                "start": 522,
+                "end": 539
+            },
+            {
+                "name": "do_recv",
+                "start": 541,
+                "end": 645
+            },
+            {
+                "name": "core_addr_intern",
+                "start": 647,
+                "end": 687
+            },
+            {
+                "name": "core_init",
+                "start": 689,
+                "end": 746
+            },
+            {
+                "name": "core_connect",
+                "start": 818,
+                "end": 1005
+            },
+            {
+                "name": "core_send",
+                "start": 1007,
+                "end": 1089
+            },
+            {
+                "name": "core_close",
+                "start": 1091,
+                "end": 1152
+            },
+            {
+                "name": "core_loop",
+                "start": 1154,
+                "end": 1264
+            },
+            {
+                "name": "core_exit",
+                "start": 1266,
+                "end": 1291
+            }
+        ],
+        "src/http.c": [
+            {
+                "name": "get_line",
+                "start": 53,
+                "end": 104
+            },
+            {
+                "name": "parse_status_line",
+                "start": 106,
+                "end": 195
+            },
+            {
+                "name": "parse_headers",
+                "start": 197,
+                "end": 262
+            },
+            {
+                "name": "parse_footers",
+                "start": 264,
+                "end": 291
+            },
+            {
+                "name": "parse_data",
+                "start": 293,
+                "end": 317
+            },
+            {
+                "name": "xfer_chunked",
+                "start": 319,
+                "end": 356
+            },
+            {
+                "name": "http_process_reply_bytes",
+                "start": 358,
+                "end": 409
+            }
+        ],
+        "src/httperf.c": [
+            {
+                "name": "usage",
+                "start": 152,
+                "end": 174
+            },
+            {
+                "name": "panic",
+                "start": 176,
+                "end": 185
+            },
+            {
+                "name": "no_op",
+                "start": 187,
+                "end": 190
+            },
+            {
+                "name": "perf_sample",
+                "start": 192,
+                "end": 203
+            },
+            {
+                "name": "main",
+                "start": 205,
+                "end": 983
+            }
+        ],
+        "src/object.c": [
+            {
+                "name": "object_destroy",
+                "start": 64,
+                "end": 102
+            },
+            {
+                "name": "object_expand",
+                "start": 104,
+                "end": 110
+            },
+            {
+                "name": "object_new",
+                "start": 112,
+                "end": 165
+            },
+            {
+                "name": "object_dec_ref",
+                "start": 167,
+                "end": 174
+            }
+        ],
+        "src/sess.c": [
+            {
+                "name": "sess_init",
+                "start": 38,
+                "end": 41
+            },
+            {
+                "name": "sess_deinit",
+                "start": 43,
+                "end": 50
+            },
+            {
+                "name": "sess_failure",
+                "start": 52,
+                "end": 65
+            }
+        ],
+        "src/lib/getopt.h": [
+            {
+                "name": "getopt_long",
+                "start": 110,
+                "end": 111
+            },
+            {
+                "name": "getopt_long_only",
+                "start": 112,
+                "end": 114
+            },
+            {
+                "name": "_getopt_internal",
+                "start": 117,
+                "end": 120
+            }
+        ],
+        "src/stat/print_reply.c": [
+            {
+                "name": "flush_print_buf",
+                "start": 62,
+                "end": 70
+            },
+            {
+                "name": "print_buf",
+                "start": 72,
+                "end": 119
+            },
+            {
+                "name": "print_request",
+                "start": 121,
+                "end": 154
+            },
+            {
+                "name": "print_reply_hdr",
+                "start": 156,
+                "end": 184
+            },
+            {
+                "name": "call_destroyed",
+                "start": 186,
+                "end": 198
+            },
+            {
+                "name": "send_raw_data",
+                "start": 200,
+                "end": 209
+            },
+            {
+                "name": "recv_raw_data",
+                "start": 211,
+                "end": 222
+            },
+            {
+                "name": "recv_data",
+                "start": 224,
+                "end": 235
+            },
+            {
+                "name": "recv_stop",
+                "start": 237,
+                "end": 250
+            },
+            {
+                "name": "init",
+                "start": 252,
+                "end": 269
+            }
+        ],
+        "src/stat/basic.c": [
+            {
+                "name": "perf_sample",
+                "start": 104,
+                "end": 127
+            },
+            {
+                "name": "conn_timeout",
+                "start": 129,
+                "end": 135
+            },
+            {
+                "name": "conn_fail",
+                "start": 137,
+                "end": 170
+            },
+            {
+                "name": "conn_created",
+                "start": 172,
+                "end": 178
+            },
+            {
+                "name": "conn_connecting",
+                "start": 180,
+                "end": 189
+            },
+            {
+                "name": "conn_connected",
+                "start": 191,
+                "end": 200
+            },
+            {
+                "name": "conn_destroyed",
+                "start": 202,
+                "end": 229
+            },
+            {
+                "name": "send_start",
+                "start": 231,
+                "end": 239
+            },
+            {
+                "name": "send_stop",
+                "start": 241,
+                "end": 250
+            },
+            {
+                "name": "recv_start",
+                "start": 252,
+                "end": 265
+            },
+            {
+                "name": "recv_stop",
+                "start": 267,
+                "end": 288
+            },
+            {
+                "name": "init",
+                "start": 290,
+                "end": 310
+            },
+            {
+                "name": "dump",
+                "start": 312,
+                "end": 463
+            }
+        ],
+        "src/stat/sess_stat.c": [
+            {
+                "name": "perf_sample",
+                "start": 87,
+                "end": 108
+            },
+            {
+                "name": "sess_created",
+                "start": 110,
+                "end": 120
+            },
+            {
+                "name": "sess_destroyed",
+                "start": 122,
+                "end": 168
+            },
+            {
+                "name": "conn_connected",
+                "start": 170,
+                "end": 182
+            },
+            {
+                "name": "call_done",
+                "start": 184,
+                "end": 196
+            },
+            {
+                "name": "init",
+                "start": 198,
+                "end": 226
+            },
+            {
+                "name": "dump",
+                "start": 228,
+                "end": 268
+            }
+        ],
+        "src/gen/sess_cookie.c": [
+            {
+                "name": "call_issue",
+                "start": 98,
+                "end": 126
+            },
+            {
+                "name": "call_recv_hdr",
+                "start": 128,
+                "end": 172
+            },
+            {
+                "name": "init",
+                "start": 174,
+                "end": 186
+            }
+        ],
+        "src/gen/uri_wset.c": [
+            {
+                "name": "set_uri",
+                "start": 56,
+                "end": 100
+            },
+            {
+                "name": "init",
+                "start": 102,
+                "end": 121
+            }
+        ],
+        "src/gen/call_seq.c": [
+            {
+                "name": "issue_calls",
+                "start": 60,
+                "end": 81
+            },
+            {
+                "name": "conn_connected",
+                "start": 83,
+                "end": 89
+            },
+            {
+                "name": "call_done",
+                "start": 91,
+                "end": 101
+            },
+            {
+                "name": "call_destroyed",
+                "start": 103,
+                "end": 122
+            },
+            {
+                "name": "init",
+                "start": 124,
+                "end": 138
+            }
+        ],
+        "src/gen/rate.h": [
+            {
+                "name": "rate_generator_start",
+                "start": 55,
+                "end": 56
+            }
+        ],
+        "src/gen/rate.c": [
+            {
+                "name": "next_arrival_time_det",
+                "start": 53,
+                "end": 57
+            },
+            {
+                "name": "next_arrival_time_uniform",
+                "start": 59,
+                "end": 68
+            },
+            {
+                "name": "next_arrival_time_exp",
+                "start": 70,
+                "end": 76
+            },
+            {
+                "name": "tick",
+                "start": 78,
+                "end": 99
+            },
+            {
+                "name": "done",
+                "start": 101,
+                "end": 109
+            },
+            {
+                "name": "rate_generator_start",
+                "start": 111,
+                "end": 154
+            },
+            {
+                "name": "rate_generator_stop",
+                "start": 156,
+                "end": 165
+            }
+        ],
+        "src/gen/conn_rate.c": [
+            {
+                "name": "make_conn",
+                "start": 52,
+                "end": 66
+            },
+            {
+                "name": "destroyed",
+                "start": 68,
+                "end": 73
+            },
+            {
+                "name": "init",
+                "start": 75,
+                "end": 85
+            },
+            {
+                "name": "start",
+                "start": 87,
+                "end": 92
+            }
+        ],
+        "src/gen/misc.c": [
+            {
+                "name": "unescape",
+                "start": 63,
+                "end": 111
+            },
+            {
+                "name": "call_created",
+                "start": 113,
+                "end": 125
+            },
+            {
+                "name": "init",
+                "start": 128,
+                "end": 141
+            }
+        ],
+        "src/gen/wsesspage.c": [
+            {
+                "name": "issue_calls",
+                "start": 112,
+                "end": 159
+            },
+            {
+                "name": "fetch_uri",
+                "start": 161,
+                "end": 214
+            },
+            {
+                "name": "user_think_time_expired",
+                "start": 216,
+                "end": 228
+            },
+            {
+                "name": "call_recv_hdr",
+                "start": 230,
+                "end": 264
+            },
+            {
+                "name": "call_recv_data",
+                "start": 266,
+                "end": 422
+            },
+            {
+                "name": "call_destroyed",
+                "start": 424,
+                "end": 469
+            },
+            {
+                "name": "sess_create",
+                "start": 472,
+                "end": 489
+            },
+            {
+                "name": "sess_destroyed",
+                "start": 491,
+                "end": 509
+            },
+            {
+                "name": "init",
+                "start": 511,
+                "end": 541
+            },
+            {
+                "name": "start",
+                "start": 543,
+                "end": 547
+            }
+        ],
+        "src/gen/uri_fixed.c": [
+            {
+                "name": "set_uri",
+                "start": 48,
+                "end": 53
+            },
+            {
+                "name": "init",
+                "start": 55,
+                "end": 64
+            }
+        ],
+        "src/gen/uri_wlog.c": [
+            {
+                "name": "set_uri",
+                "start": 87,
+                "end": 121
+            },
+            {
+                "name": "init_wlog",
+                "start": 123,
+                "end": 152
+            },
+            {
+                "name": "stop_wlog",
+                "start": 154,
+                "end": 158
+            }
+        ],
+        "src/gen/wsess.c": [
+            {
+                "name": "issue_calls",
+                "start": 72,
+                "end": 102
+            },
+            {
+                "name": "user_think_time_expired",
+                "start": 104,
+                "end": 116
+            },
+            {
+                "name": "call_destroyed",
+                "start": 118,
+                "end": 154
+            },
+            {
+                "name": "sess_create",
+                "start": 157,
+                "end": 175
+            },
+            {
+                "name": "sess_destroyed",
+                "start": 177,
+                "end": 195
+            },
+            {
+                "name": "init",
+                "start": 197,
+                "end": 213
+            },
+            {
+                "name": "start",
+                "start": 215,
+                "end": 219
+            }
+        ],
+        "src/gen/session.c": [
+            {
+                "name": "create_conn",
+                "start": 125,
+                "end": 160
+            },
+            {
+                "name": "send_calls",
+                "start": 162,
+                "end": 186
+            },
+            {
+                "name": "sess_destroyed",
+                "start": 188,
+                "end": 214
+            },
+            {
+                "name": "conn_connected",
+                "start": 216,
+                "end": 244
+            },
+            {
+                "name": "conn_failed",
+                "start": 246,
+                "end": 268
+            },
+            {
+                "name": "conn_timeout",
+                "start": 270,
+                "end": 283
+            },
+            {
+                "name": "call_done",
+                "start": 285,
+                "end": 330
+            },
+            {
+                "name": "session_init",
+                "start": 332,
+                "end": 379
+            },
+            {
+                "name": "session_max_qlen",
+                "start": 381,
+                "end": 385
+            },
+            {
+                "name": "session_current_qlen",
+                "start": 387,
+                "end": 400
+            },
+            {
+                "name": "session_issue_call",
+                "start": 402,
+                "end": 432
+            },
+            {
+                "name": "session_get_sess_from_conn",
+                "start": 434,
+                "end": 439
+            },
+            {
+                "name": "session_get_sess_from_call",
+                "start": 441,
+                "end": 446
+            }
+        ],
+        "src/gen/wsesslog.c": [
+            {
+                "name": "sess_destroyed",
+                "start": 168,
+                "end": 186
+            },
+            {
+                "name": "issue_calls",
+                "start": 188,
+                "end": 245
+            },
+            {
+                "name": "user_think_time_expired",
+                "start": 247,
+                "end": 258
+            },
+            {
+                "name": "sess_create",
+                "start": 261,
+                "end": 288
+            },
+            {
+                "name": "prepare_for_next_burst",
+                "start": 290,
+                "end": 315
+            },
+            {
+                "name": "call_destroyed",
+                "start": 317,
+                "end": 341
+            },
+            {
+                "name": "new_request",
+                "start": 345,
+                "end": 360
+            },
+            {
+                "name": "new_burst",
+                "start": 363,
+                "end": 376
+            },
+            {
+                "name": "parse_config",
+                "start": 380,
+                "end": 612
+            },
+            {
+                "name": "init",
+                "start": 614,
+                "end": 634
+            },
+            {
+                "name": "start",
+                "start": 636,
+                "end": 640
+            }
+        ]
+    }
+}

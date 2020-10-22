@@ -1,0 +1,5093 @@
+{
+    "multipath-tools-0.5.0": {
+        "libmultipath/list.h": [
+            {
+                "name": "__list_add",
+                "start": 60,
+                "end": 68
+            },
+            {
+                "name": "list_add",
+                "start": 78,
+                "end": 81
+            },
+            {
+                "name": "list_add_tail",
+                "start": 91,
+                "end": 94
+            },
+            {
+                "name": "__list_del",
+                "start": 103,
+                "end": 107
+            },
+            {
+                "name": "list_del",
+                "start": 115,
+                "end": 120
+            },
+            {
+                "name": "list_del_init",
+                "start": 126,
+                "end": 130
+            },
+            {
+                "name": "list_move",
+                "start": 137,
+                "end": 141
+            },
+            {
+                "name": "list_move_tail",
+                "start": 148,
+                "end": 153
+            },
+            {
+                "name": "list_empty",
+                "start": 159,
+                "end": 162
+            },
+            {
+                "name": "__list_splice",
+                "start": 164,
+                "end": 176
+            },
+            {
+                "name": "list_splice",
+                "start": 183,
+                "end": 187
+            },
+            {
+                "name": "list_splice_init",
+                "start": 196,
+                "end": 203
+            }
+        ],
+        "libmultipath/debug.h": [
+            {
+                "name": "dlog",
+                "start": 1,
+                "end": 2
+            }
+        ],
+        "libmultipath/alias.h": [
+            {
+                "name": "get_user_friendly_alias",
+                "start": 10,
+                "end": 11
+            }
+        ],
+        "libmultipath/discovery.h": [
+            {
+                "name": "store_pathinfo",
+                "start": 36,
+                "end": 38
+            }
+        ],
+        "libmultipath/prioritizers/alua_spc3.h": [
+            {
+                "name": "get_uint16",
+                "start": 21,
+                "end": 25
+            },
+            {
+                "name": "set_uint16",
+                "start": 27,
+                "end": 32
+            },
+            {
+                "name": "get_uint32",
+                "start": 34,
+                "end": 38
+            },
+            {
+                "name": "set_uint32",
+                "start": 40,
+                "end": 47
+            },
+            {
+                "name": "inquiry_command_set_evpd",
+                "start": 68,
+                "end": 72
+            },
+            {
+                "name": "inquiry_data_get_tpgs",
+                "start": 164,
+                "end": 168
+            },
+            {
+                "name": "vpd83_dscr_istype",
+                "start": 209,
+                "end": 213
+            },
+            {
+                "name": "rtpg_command_set_service_action",
+                "start": 260,
+                "end": 264
+            },
+            {
+                "name": "rtpg_tpg_dscr_get_aas",
+                "start": 303,
+                "end": 307
+            }
+        ],
+        "libmultipath/propsel.c": [
+            {
+                "name": "select_mode",
+                "start": 32,
+                "end": 48
+            },
+            {
+                "name": "select_uid",
+                "start": 50,
+                "end": 66
+            },
+            {
+                "name": "select_gid",
+                "start": 68,
+                "end": 84
+            },
+            {
+                "name": "select_rr_weight",
+                "start": 91,
+                "end": 116
+            },
+            {
+                "name": "select_pgfailback",
+                "start": 118,
+                "end": 143
+            },
+            {
+                "name": "select_pgpolicy",
+                "start": 145,
+                "end": 192
+            },
+            {
+                "name": "select_selector",
+                "start": 194,
+                "end": 219
+            },
+            {
+                "name": "select_alias_prefix",
+                "start": 221,
+                "end": 239
+            },
+            {
+                "name": "want_user_friendly_names",
+                "start": 241,
+                "end": 251
+            },
+            {
+                "name": "select_alias",
+                "start": 253,
+                "end": 270
+            },
+            {
+                "name": "select_features",
+                "start": 272,
+                "end": 303
+            },
+            {
+                "name": "select_hwhandler",
+                "start": 305,
+                "end": 324
+            },
+            {
+                "name": "select_checker",
+                "start": 326,
+                "end": 361
+            },
+            {
+                "name": "select_getuid",
+                "start": 363,
+                "end": 394
+            },
+            {
+                "name": "detect_prio",
+                "start": 396,
+                "end": 410
+            },
+            {
+                "name": "select_prio",
+                "start": 412,
+                "end": 458
+            },
+            {
+                "name": "select_no_path_retry",
+                "start": 460,
+                "end": 493
+            },
+            {
+                "name": "select_minio_rq",
+                "start": 495,
+                "end": 520
+            },
+            {
+                "name": "select_minio_bio",
+                "start": 522,
+                "end": 547
+            },
+            {
+                "name": "select_minio",
+                "start": 549,
+                "end": 558
+            },
+            {
+                "name": "select_fast_io_fail",
+                "start": 560,
+                "end": 587
+            },
+            {
+                "name": "select_dev_loss",
+                "start": 589,
+                "end": 606
+            },
+            {
+                "name": "select_flush_on_last_del",
+                "start": 608,
+                "end": 635
+            },
+            {
+                "name": "select_reservation_key",
+                "start": 637,
+                "end": 679
+            },
+            {
+                "name": "select_retain_hwhandler",
+                "start": 681,
+                "end": 705
+            },
+            {
+                "name": "select_detect_prio",
+                "start": 707,
+                "end": 723
+            }
+        ],
+        "libmultipath/util.c": [
+            {
+                "name": "strchop",
+                "start": 13,
+                "end": 21
+            },
+            {
+                "name": "basenamecpy",
+                "start": 23,
+                "end": 48
+            },
+            {
+                "name": "filepresent",
+                "start": 50,
+                "end": 57
+            },
+            {
+                "name": "get_word",
+                "start": 59,
+                "end": 100
+            },
+            {
+                "name": "strlcpy",
+                "start": 102,
+                "end": 118
+            },
+            {
+                "name": "strlcat",
+                "start": 120,
+                "end": 142
+            },
+            {
+                "name": "devt2devname",
+                "start": 144,
+                "end": 227
+            },
+            {
+                "name": "convert_dev",
+                "start": 231,
+                "end": 249
+            },
+            {
+                "name": "parse_devt",
+                "start": 251,
+                "end": 259
+            }
+        ],
+        "libmultipath/debug.c": [
+            {
+                "name": "dlog",
+                "start": 15,
+                "end": 42
+            }
+        ],
+        "libmultipath/parser.h": [
+            {
+                "name": "keyword_alloc",
+                "start": 63,
+                "end": 64
+            },
+            {
+                "name": "_install_keyword",
+                "start": 68,
+                "end": 69
+            },
+            {
+                "name": "snprint_keyword",
+                "start": 84,
+                "end": 85
+            }
+        ],
+        "libmultipath/parser.c": [
+            {
+                "name": "set_current_keywords",
+                "start": 32,
+                "end": 36
+            },
+            {
+                "name": "keyword_alloc",
+                "start": 38,
+                "end": 61
+            },
+            {
+                "name": "install_keyword_root",
+                "start": 63,
+                "end": 70
+            },
+            {
+                "name": "install_sublevel",
+                "start": 72,
+                "end": 76
+            },
+            {
+                "name": "install_sublevel_end",
+                "start": 78,
+                "end": 82
+            },
+            {
+                "name": "_install_keyword",
+                "start": 84,
+                "end": 108
+            },
+            {
+                "name": "free_keywords",
+                "start": 110,
+                "end": 126
+            },
+            {
+                "name": "find_keyword",
+                "start": 128,
+                "end": 155
+            },
+            {
+                "name": "snprint_keyword",
+                "start": 157,
+                "end": 193
+            },
+            {
+                "name": "alloc_strvec",
+                "start": 195,
+                "end": 280
+            },
+            {
+                "name": "read_line",
+                "start": 282,
+                "end": 297
+            },
+            {
+                "name": "read_value_block",
+                "start": 299,
+                "end": 354
+            },
+            {
+                "name": "alloc_value_block",
+                "start": 356,
+                "end": 386
+            },
+            {
+                "name": "set_value",
+                "start": 388,
+                "end": 430
+            },
+            {
+                "name": "warn_on_duplicates",
+                "start": 435,
+                "end": 455
+            },
+            {
+                "name": "free_uniques",
+                "start": 457,
+                "end": 465
+            },
+            {
+                "name": "process_stream",
+                "start": 467,
+                "end": 536
+            },
+            {
+                "name": "alloc_keywords",
+                "start": 538,
+                "end": 547
+            },
+            {
+                "name": "init_data",
+                "start": 550,
+                "end": 576
+            }
+        ],
+        "libmultipath/lock.c": [
+            {
+                "name": "cleanup_lock",
+                "start": 5,
+                "end": 8
+            }
+        ],
+        "libmultipath/blacklist.c": [
+            {
+                "name": "store_ble",
+                "start": 16,
+                "end": 47
+            },
+            {
+                "name": "alloc_ble_device",
+                "start": 50,
+                "end": 64
+            },
+            {
+                "name": "set_ble_device",
+                "start": 66,
+                "end": 97
+            },
+            {
+                "name": "_blacklist_exceptions",
+                "start": 99,
+                "end": 110
+            },
+            {
+                "name": "_blacklist",
+                "start": 112,
+                "end": 123
+            },
+            {
+                "name": "_blacklist_exceptions_device",
+                "start": 125,
+                "end": 137
+            },
+            {
+                "name": "_blacklist_device",
+                "start": 139,
+                "end": 151
+            },
+            {
+                "name": "setup_default_blist",
+                "start": 153,
+                "end": 210
+            },
+            {
+                "name": "log_filter",
+                "start": 223,
+                "end": 261
+            },
+            {
+                "name": "_filter_device",
+                "start": 263,
+                "end": 273
+            },
+            {
+                "name": "filter_device",
+                "start": 275,
+                "end": 281
+            },
+            {
+                "name": "_filter_devnode",
+                "start": 283,
+                "end": 293
+            },
+            {
+                "name": "filter_devnode",
+                "start": 295,
+                "end": 301
+            },
+            {
+                "name": "_filter_wwid",
+                "start": 303,
+                "end": 313
+            },
+            {
+                "name": "filter_wwid",
+                "start": 315,
+                "end": 321
+            },
+            {
+                "name": "_filter_path",
+                "start": 323,
+                "end": 337
+            },
+            {
+                "name": "filter_path",
+                "start": 339,
+                "end": 345
+            },
+            {
+                "name": "_filter_property",
+                "start": 347,
+                "end": 356
+            },
+            {
+                "name": "filter_property",
+                "start": 358,
+                "end": 390
+            },
+            {
+                "name": "free_blacklist",
+                "start": 392,
+                "end": 409
+            },
+            {
+                "name": "free_blacklist_device",
+                "start": 411,
+                "end": 434
+            }
+        ],
+        "libmultipath/pgpolicies.c": [
+            {
+                "name": "get_pgpolicy_id",
+                "start": 16,
+                "end": 31
+            },
+            {
+                "name": "get_pgpolicy_name",
+                "start": 33,
+                "end": 59
+            },
+            {
+                "name": "sort_pathgroups",
+                "start": 62,
+                "end": 86
+            },
+            {
+                "name": "group_by_node_name",
+                "start": 92,
+                "end": 161
+            },
+            {
+                "name": "group_by_serial",
+                "start": 166,
+                "end": 234
+            },
+            {
+                "name": "one_path_per_group",
+                "start": 236,
+                "end": 270
+            },
+            {
+                "name": "one_group",
+                "start": 272,
+                "end": 305
+            },
+            {
+                "name": "group_by_prio",
+                "start": 307,
+                "end": 381
+            }
+        ],
+        "libmultipath/sysfs.h": [
+            {
+                "name": "sysfs_attr_set_value",
+                "start": 8,
+                "end": 9
+            },
+            {
+                "name": "sysfs_attr_get_value",
+                "start": 10,
+                "end": 11
+            }
+        ],
+        "libmultipath/devmapper.c": [
+            {
+                "name": "dm_task_set_cookie",
+                "start": 36,
+                "end": 39
+            },
+            {
+                "name": "udev_wait",
+                "start": 41,
+                "end": 43
+            },
+            {
+                "name": "udev_set_sync_support",
+                "start": 45,
+                "end": 47
+            },
+            {
+                "name": "dm_write_log",
+                "start": 60,
+                "end": 95
+            },
+            {
+                "name": "dm_init",
+                "start": 97,
+                "end": 101
+            },
+            {
+                "name": "dm_lib_prereq",
+                "start": 103,
+                "end": 123
+            },
+            {
+                "name": "dm_drv_version",
+                "start": 125,
+                "end": 170
+            },
+            {
+                "name": "dm_drv_prereq",
+                "start": 172,
+                "end": 194
+            },
+            {
+                "name": "dm_prereq",
+                "start": 196,
+                "end": 202
+            },
+            {
+                "name": "dm_simplecmd",
+                "start": 204,
+                "end": 231
+            },
+            {
+                "name": "dm_simplecmd_flush",
+                "start": 233,
+                "end": 236
+            },
+            {
+                "name": "dm_simplecmd_noflush",
+                "start": 238,
+                "end": 241
+            },
+            {
+                "name": "dm_addmap",
+                "start": 243,
+                "end": 301
+            },
+            {
+                "name": "dm_addmap_create",
+                "start": 303,
+                "end": 325
+            },
+            {
+                "name": "dm_addmap_reload",
+                "start": 330,
+                "end": 337
+            },
+            {
+                "name": "dm_map_present",
+                "start": 339,
+                "end": 365
+            },
+            {
+                "name": "dm_get_map",
+                "start": 367,
+                "end": 404
+            },
+            {
+                "name": "dm_get_prefixed_uuid",
+                "start": 406,
+                "end": 433
+            },
+            {
+                "name": "dm_get_uuid",
+                "start": 435,
+                "end": 449
+            },
+            {
+                "name": "dm_compare_uuid",
+                "start": 456,
+                "end": 474
+            },
+            {
+                "name": "dm_get_status",
+                "start": 476,
+                "end": 509
+            },
+            {
+                "name": "dm_type",
+                "start": 517,
+                "end": 550
+            },
+            {
+                "name": "dm_dev_t",
+                "start": 552,
+                "end": 579
+            },
+            {
+                "name": "dm_get_opencount",
+                "start": 581,
+                "end": 604
+            },
+            {
+                "name": "dm_get_major",
+                "start": 606,
+                "end": 629
+            },
+            {
+                "name": "dm_get_minor",
+                "start": 631,
+                "end": 654
+            },
+            {
+                "name": "_dm_flush_map",
+                "start": 656,
+                "end": 682
+            },
+            {
+                "name": "dm_suspend_and_flush_map",
+                "start": 684,
+                "end": 719
+            },
+            {
+                "name": "dm_flush_maps",
+                "start": 721,
+                "end": 752
+            },
+            {
+                "name": "dm_message",
+                "start": 754,
+                "end": 784
+            },
+            {
+                "name": "dm_fail_path",
+                "start": 786,
+                "end": 795
+            },
+            {
+                "name": "dm_reinstate_path",
+                "start": 797,
+                "end": 806
+            },
+            {
+                "name": "dm_queue_if_no_path",
+                "start": 808,
+                "end": 819
+            },
+            {
+                "name": "dm_groupmsg",
+                "start": 821,
+                "end": 830
+            },
+            {
+                "name": "dm_switchgroup",
+                "start": 832,
+                "end": 836
+            },
+            {
+                "name": "dm_enablegroup",
+                "start": 838,
+                "end": 842
+            },
+            {
+                "name": "dm_disablegroup",
+                "start": 844,
+                "end": 848
+            },
+            {
+                "name": "dm_get_maps",
+                "start": 850,
+                "end": 920
+            },
+            {
+                "name": "dm_geteventnr",
+                "start": 922,
+                "end": 950
+            },
+            {
+                "name": "dm_mapname",
+                "start": 952,
+                "end": 998
+            },
+            {
+                "name": "dm_remove_partmaps",
+                "start": 1000,
+                "end": 1083
+            },
+            {
+                "name": "alloc_dminfo",
+                "start": 1085,
+                "end": 1089
+            },
+            {
+                "name": "dm_get_info",
+                "start": 1091,
+                "end": 1132
+            },
+            {
+                "name": "dm_rename_partmaps",
+                "start": 1134,
+                "end": 1206
+            },
+            {
+                "name": "dm_rename",
+                "start": 1208,
+                "end": 1237
+            },
+            {
+                "name": "dm_reassign_deps",
+                "start": 1239,
+                "end": 1251
+            },
+            {
+                "name": "dm_reassign_table",
+                "start": 1253,
+                "end": 1309
+            },
+            {
+                "name": "dm_reassign",
+                "start": 1317,
+                "end": 1364
+            },
+            {
+                "name": "dm_setgeometry",
+                "start": 1366,
+                "end": 1412
+            }
+        ],
+        "libmultipath/dict.c": [
+            {
+                "name": "polling_interval_handler",
+                "start": 28,
+                "end": 38
+            },
+            {
+                "name": "def_fast_io_fail_handler",
+                "start": 40,
+                "end": 56
+            },
+            {
+                "name": "def_dev_loss_handler",
+                "start": 58,
+                "end": 74
+            },
+            {
+                "name": "verbosity_handler",
+                "start": 76,
+                "end": 85
+            },
+            {
+                "name": "max_polling_interval_handler",
+                "start": 87,
+                "end": 96
+            },
+            {
+                "name": "reassign_maps_handler",
+                "start": 98,
+                "end": 112
+            },
+            {
+                "name": "multipath_dir_handler",
+                "start": 114,
+                "end": 123
+            },
+            {
+                "name": "def_selector_handler",
+                "start": 125,
+                "end": 134
+            },
+            {
+                "name": "def_pgpolicy_handler",
+                "start": 136,
+                "end": 150
+            },
+            {
+                "name": "def_uid_attribute_handler",
+                "start": 152,
+                "end": 161
+            },
+            {
+                "name": "def_getuid_callout_handler",
+                "start": 163,
+                "end": 172
+            },
+            {
+                "name": "def_prio_handler",
+                "start": 174,
+                "end": 183
+            },
+            {
+                "name": "def_alias_prefix_handler",
+                "start": 185,
+                "end": 194
+            },
+            {
+                "name": "def_prio_args_handler",
+                "start": 196,
+                "end": 205
+            },
+            {
+                "name": "def_features_handler",
+                "start": 207,
+                "end": 216
+            },
+            {
+                "name": "def_path_checker_handler",
+                "start": 218,
+                "end": 227
+            },
+            {
+                "name": "def_minio_handler",
+                "start": 229,
+                "end": 243
+            },
+            {
+                "name": "def_minio_rq_handler",
+                "start": 245,
+                "end": 259
+            },
+            {
+                "name": "get_sys_max_fds",
+                "start": 261,
+                "end": 286
+            },
+            {
+                "name": "max_fds_handler",
+                "start": 289,
+                "end": 317
+            },
+            {
+                "name": "def_mode_handler",
+                "start": 319,
+                "end": 337
+            },
+            {
+                "name": "def_uid_handler",
+                "start": 339,
+                "end": 361
+            },
+            {
+                "name": "def_gid_handler",
+                "start": 363,
+                "end": 385
+            },
+            {
+                "name": "def_weight_handler",
+                "start": 387,
+                "end": 408
+            },
+            {
+                "name": "default_failback_handler",
+                "start": 410,
+                "end": 429
+            },
+            {
+                "name": "def_no_path_retry_handler",
+                "start": 431,
+                "end": 450
+            },
+            {
+                "name": "def_queue_without_daemon",
+                "start": 452,
+                "end": 469
+            },
+            {
+                "name": "def_checker_timeout_handler",
+                "start": 471,
+                "end": 488
+            },
+            {
+                "name": "def_pg_timeout_handler",
+                "start": 490,
+                "end": 504
+            },
+            {
+                "name": "def_flush_on_last_del_handler",
+                "start": 506,
+                "end": 526
+            },
+            {
+                "name": "def_log_checker_err_handler",
+                "start": 528,
+                "end": 545
+            },
+            {
+                "name": "def_reservation_key_handler",
+                "start": 547,
+                "end": 592
+            },
+            {
+                "name": "def_names_handler",
+                "start": 594,
+                "end": 615
+            },
+            {
+                "name": "bindings_file_handler",
+                "start": 617,
+                "end": 626
+            },
+            {
+                "name": "wwids_file_handler",
+                "start": 628,
+                "end": 637
+            },
+            {
+                "name": "def_retain_hwhandler_handler",
+                "start": 639,
+                "end": 660
+            },
+            {
+                "name": "def_detect_prio_handler",
+                "start": 662,
+                "end": 683
+            },
+            {
+                "name": "blacklist_handler",
+                "start": 688,
+                "end": 701
+            },
+            {
+                "name": "blacklist_exceptions_handler",
+                "start": 703,
+                "end": 716
+            },
+            {
+                "name": "ble_devnode_handler",
+                "start": 718,
+                "end": 729
+            },
+            {
+                "name": "ble_except_devnode_handler",
+                "start": 731,
+                "end": 742
+            },
+            {
+                "name": "ble_wwid_handler",
+                "start": 744,
+                "end": 755
+            },
+            {
+                "name": "ble_except_wwid_handler",
+                "start": 757,
+                "end": 768
+            },
+            {
+                "name": "ble_property_handler",
+                "start": 770,
+                "end": 781
+            },
+            {
+                "name": "ble_except_property_handler",
+                "start": 783,
+                "end": 794
+            },
+            {
+                "name": "ble_device_handler",
+                "start": 796,
+                "end": 800
+            },
+            {
+                "name": "ble_except_device_handler",
+                "start": 802,
+                "end": 806
+            },
+            {
+                "name": "ble_vendor_handler",
+                "start": 808,
+                "end": 819
+            },
+            {
+                "name": "ble_except_vendor_handler",
+                "start": 821,
+                "end": 832
+            },
+            {
+                "name": "ble_product_handler",
+                "start": 834,
+                "end": 845
+            },
+            {
+                "name": "ble_except_product_handler",
+                "start": 847,
+                "end": 858
+            },
+            {
+                "name": "devices_handler",
+                "start": 863,
+                "end": 873
+            },
+            {
+                "name": "device_handler",
+                "start": 875,
+                "end": 892
+            },
+            {
+                "name": "vendor_handler",
+                "start": 894,
+                "end": 908
+            },
+            {
+                "name": "product_handler",
+                "start": 910,
+                "end": 924
+            },
+            {
+                "name": "revision_handler",
+                "start": 926,
+                "end": 940
+            },
+            {
+                "name": "bl_product_handler",
+                "start": 942,
+                "end": 955
+            },
+            {
+                "name": "hw_fast_io_fail_handler",
+                "start": 957,
+                "end": 974
+            },
+            {
+                "name": "hw_dev_loss_handler",
+                "start": 976,
+                "end": 993
+            },
+            {
+                "name": "hw_pgpolicy_handler",
+                "start": 995,
+                "end": 1010
+            },
+            {
+                "name": "hw_uid_attribute_handler",
+                "start": 1012,
+                "end": 1023
+            },
+            {
+                "name": "hw_getuid_callout_handler",
+                "start": 1025,
+                "end": 1036
+            },
+            {
+                "name": "hw_selector_handler",
+                "start": 1038,
+                "end": 1052
+            },
+            {
+                "name": "hw_path_checker_handler",
+                "start": 1054,
+                "end": 1068
+            },
+            {
+                "name": "hw_features_handler",
+                "start": 1070,
+                "end": 1084
+            },
+            {
+                "name": "hw_handler_handler",
+                "start": 1086,
+                "end": 1100
+            },
+            {
+                "name": "hw_prio_handler",
+                "start": 1102,
+                "end": 1116
+            },
+            {
+                "name": "hw_alias_prefix_handler",
+                "start": 1118,
+                "end": 1132
+            },
+            {
+                "name": "hw_prio_args_handler",
+                "start": 1134,
+                "end": 1148
+            },
+            {
+                "name": "hw_failback_handler",
+                "start": 1150,
+                "end": 1173
+            },
+            {
+                "name": "hw_weight_handler",
+                "start": 1175,
+                "end": 1200
+            },
+            {
+                "name": "hw_no_path_retry_handler",
+                "start": 1202,
+                "end": 1225
+            },
+            {
+                "name": "hw_minio_handler",
+                "start": 1227,
+                "end": 1245
+            },
+            {
+                "name": "hw_minio_rq_handler",
+                "start": 1247,
+                "end": 1265
+            },
+            {
+                "name": "hw_pg_timeout_handler",
+                "start": 1267,
+                "end": 1281
+            },
+            {
+                "name": "hw_flush_on_last_del_handler",
+                "start": 1283,
+                "end": 1307
+            },
+            {
+                "name": "hw_names_handler",
+                "start": 1309,
+                "end": 1333
+            },
+            {
+                "name": "hw_retain_hwhandler_handler",
+                "start": 1335,
+                "end": 1360
+            },
+            {
+                "name": "hw_detect_prio_handler",
+                "start": 1362,
+                "end": 1387
+            },
+            {
+                "name": "multipaths_handler",
+                "start": 1392,
+                "end": 1401
+            },
+            {
+                "name": "multipath_handler",
+                "start": 1403,
+                "end": 1420
+            },
+            {
+                "name": "wwid_handler",
+                "start": 1422,
+                "end": 1436
+            },
+            {
+                "name": "alias_handler",
+                "start": 1438,
+                "end": 1452
+            },
+            {
+                "name": "mp_pgpolicy_handler",
+                "start": 1454,
+                "end": 1472
+            },
+            {
+                "name": "mp_selector_handler",
+                "start": 1474,
+                "end": 1488
+            },
+            {
+                "name": "mp_failback_handler",
+                "start": 1490,
+                "end": 1513
+            },
+            {
+                "name": "mp_mode_handler",
+                "start": 1515,
+                "end": 1535
+            },
+            {
+                "name": "mp_uid_handler",
+                "start": 1537,
+                "end": 1564
+            },
+            {
+                "name": "mp_gid_handler",
+                "start": 1566,
+                "end": 1593
+            },
+            {
+                "name": "mp_weight_handler",
+                "start": 1595,
+                "end": 1620
+            },
+            {
+                "name": "mp_no_path_retry_handler",
+                "start": 1622,
+                "end": 1645
+            },
+            {
+                "name": "mp_minio_handler",
+                "start": 1647,
+                "end": 1665
+            },
+            {
+                "name": "mp_minio_rq_handler",
+                "start": 1667,
+                "end": 1685
+            },
+            {
+                "name": "mp_pg_timeout_handler",
+                "start": 1687,
+                "end": 1701
+            },
+            {
+                "name": "mp_features_handler",
+                "start": 1703,
+                "end": 1717
+            },
+            {
+                "name": "mp_flush_on_last_del_handler",
+                "start": 1719,
+                "end": 1743
+            },
+            {
+                "name": "mp_prio_handler",
+                "start": 1745,
+                "end": 1759
+            },
+            {
+                "name": "mp_prio_args_handler",
+                "start": 1761,
+                "end": 1774
+            },
+            {
+                "name": "mp_reservation_key_handler",
+                "start": 1776,
+                "end": 1823
+            },
+            {
+                "name": "mp_names_handler",
+                "start": 1825,
+                "end": 1849
+            },
+            {
+                "name": "snprint_mp_wwid",
+                "start": 1854,
+                "end": 1860
+            },
+            {
+                "name": "snprint_mp_alias",
+                "start": 1862,
+                "end": 1871
+            },
+            {
+                "name": "snprint_mp_path_grouping_policy",
+                "start": 1873,
+                "end": 1884
+            },
+            {
+                "name": "snprint_mp_selector",
+                "start": 1886,
+                "end": 1895
+            },
+            {
+                "name": "snprint_mp_failback",
+                "start": 1897,
+                "end": 1917
+            },
+            {
+                "name": "snprint_mp_mode",
+                "start": 1919,
+                "end": 1927
+            },
+            {
+                "name": "snprint_mp_uid",
+                "start": 1929,
+                "end": 1937
+            },
+            {
+                "name": "snprint_mp_gid",
+                "start": 1939,
+                "end": 1947
+            },
+            {
+                "name": "snprint_mp_rr_weight",
+                "start": 1949,
+                "end": 1962
+            },
+            {
+                "name": "snprint_mp_no_path_retry",
+                "start": 1964,
+                "end": 1984
+            },
+            {
+                "name": "snprint_mp_rr_min_io",
+                "start": 1986,
+                "end": 1995
+            },
+            {
+                "name": "snprint_mp_rr_min_io_rq",
+                "start": 1997,
+                "end": 2006
+            },
+            {
+                "name": "snprint_mp_pg_timeout",
+                "start": 2008,
+                "end": 2012
+            },
+            {
+                "name": "snprint_mp_features",
+                "start": 2014,
+                "end": 2026
+            },
+            {
+                "name": "snprint_mp_flush_on_last_del",
+                "start": 2028,
+                "end": 2040
+            },
+            {
+                "name": "snprint_mp_prio",
+                "start": 2042,
+                "end": 2051
+            },
+            {
+                "name": "snprint_mp_prio_args",
+                "start": 2053,
+                "end": 2062
+            },
+            {
+                "name": "snprint_mp_reservation_key",
+                "start": 2064,
+                "end": 2083
+            },
+            {
+                "name": "snprint_mp_user_friendly_names",
+                "start": 2085,
+                "end": 2096
+            },
+            {
+                "name": "snprint_hw_fast_io_fail",
+                "start": 2098,
+                "end": 2111
+            },
+            {
+                "name": "snprint_hw_dev_loss",
+                "start": 2113,
+                "end": 2125
+            },
+            {
+                "name": "snprint_hw_vendor",
+                "start": 2127,
+                "end": 2136
+            },
+            {
+                "name": "snprint_hw_product",
+                "start": 2138,
+                "end": 2147
+            },
+            {
+                "name": "snprint_hw_revision",
+                "start": 2149,
+                "end": 2158
+            },
+            {
+                "name": "snprint_hw_bl_product",
+                "start": 2160,
+                "end": 2169
+            },
+            {
+                "name": "snprint_hw_uid_attribute",
+                "start": 2171,
+                "end": 2180
+            },
+            {
+                "name": "snprint_hw_getuid_callout",
+                "start": 2182,
+                "end": 2191
+            },
+            {
+                "name": "snprint_hw_prio",
+                "start": 2193,
+                "end": 2202
+            },
+            {
+                "name": "snprint_hw_alias_prefix",
+                "start": 2204,
+                "end": 2213
+            },
+            {
+                "name": "snprint_hw_prio_args",
+                "start": 2215,
+                "end": 2224
+            },
+            {
+                "name": "snprint_hw_features",
+                "start": 2226,
+                "end": 2235
+            },
+            {
+                "name": "snprint_hw_hardware_handler",
+                "start": 2237,
+                "end": 2246
+            },
+            {
+                "name": "snprint_hw_selector",
+                "start": 2248,
+                "end": 2257
+            },
+            {
+                "name": "snprint_hw_path_grouping_policy",
+                "start": 2259,
+                "end": 2272
+            },
+            {
+                "name": "snprint_hw_failback",
+                "start": 2274,
+                "end": 2294
+            },
+            {
+                "name": "snprint_hw_rr_weight",
+                "start": 2296,
+                "end": 2309
+            },
+            {
+                "name": "snprint_hw_no_path_retry",
+                "start": 2311,
+                "end": 2331
+            },
+            {
+                "name": "snprint_hw_rr_min_io",
+                "start": 2333,
+                "end": 2342
+            },
+            {
+                "name": "snprint_hw_rr_min_io_rq",
+                "start": 2344,
+                "end": 2353
+            },
+            {
+                "name": "snprint_hw_pg_timeout",
+                "start": 2355,
+                "end": 2359
+            },
+            {
+                "name": "snprint_hw_flush_on_last_del",
+                "start": 2361,
+                "end": 2373
+            },
+            {
+                "name": "snprint_hw_path_checker",
+                "start": 2375,
+                "end": 2384
+            },
+            {
+                "name": "snprint_hw_user_friendly_names",
+                "start": 2386,
+                "end": 2397
+            },
+            {
+                "name": "snprint_hw_retain_hwhandler_handler",
+                "start": 2399,
+                "end": 2410
+            },
+            {
+                "name": "snprint_detect_prio",
+                "start": 2412,
+                "end": 2423
+            },
+            {
+                "name": "snprint_def_polling_interval",
+                "start": 2425,
+                "end": 2429
+            },
+            {
+                "name": "snprint_def_fast_io_fail",
+                "start": 2431,
+                "end": 2441
+            },
+            {
+                "name": "snprint_def_dev_loss",
+                "start": 2443,
+                "end": 2451
+            },
+            {
+                "name": "snprint_def_verbosity",
+                "start": 2453,
+                "end": 2457
+            },
+            {
+                "name": "snprint_def_max_polling_interval",
+                "start": 2459,
+                "end": 2463
+            },
+            {
+                "name": "snprint_reassign_maps",
+                "start": 2465,
+                "end": 2470
+            },
+            {
+                "name": "snprint_def_multipath_dir",
+                "start": 2472,
+                "end": 2479
+            },
+            {
+                "name": "snprint_def_selector",
+                "start": 2481,
+                "end": 2488
+            },
+            {
+                "name": "snprint_def_path_grouping_policy",
+                "start": 2490,
+                "end": 2502
+            },
+            {
+                "name": "snprint_def_uid_attribute",
+                "start": 2504,
+                "end": 2511
+            },
+            {
+                "name": "snprint_def_getuid_callout",
+                "start": 2513,
+                "end": 2520
+            },
+            {
+                "name": "snprint_def_prio",
+                "start": 2522,
+                "end": 2529
+            },
+            {
+                "name": "snprint_def_prio_args",
+                "start": 2531,
+                "end": 2538
+            },
+            {
+                "name": "snprint_def_features",
+                "start": 2540,
+                "end": 2547
+            },
+            {
+                "name": "snprint_def_path_checker",
+                "start": 2549,
+                "end": 2556
+            },
+            {
+                "name": "snprint_def_failback",
+                "start": 2558,
+                "end": 2574
+            },
+            {
+                "name": "snprint_def_rr_min_io",
+                "start": 2576,
+                "end": 2583
+            },
+            {
+                "name": "snprint_def_rr_min_io_rq",
+                "start": 2585,
+                "end": 2592
+            },
+            {
+                "name": "snprint_max_fds",
+                "start": 2594,
+                "end": 2607
+            },
+            {
+                "name": "snprint_def_mode",
+                "start": 2609,
+                "end": 2615
+            },
+            {
+                "name": "snprint_def_uid",
+                "start": 2617,
+                "end": 2623
+            },
+            {
+                "name": "snprint_def_gid",
+                "start": 2625,
+                "end": 2631
+            },
+            {
+                "name": "snprint_def_rr_weight",
+                "start": 2633,
+                "end": 2642
+            },
+            {
+                "name": "snprint_def_no_path_retry",
+                "start": 2644,
+                "end": 2659
+            },
+            {
+                "name": "snprint_def_queue_without_daemon",
+                "start": 2661,
+                "end": 2673
+            },
+            {
+                "name": "snprint_def_checker_timeout",
+                "start": 2675,
+                "end": 2682
+            },
+            {
+                "name": "snprint_def_pg_timeout",
+                "start": 2684,
+                "end": 2688
+            },
+            {
+                "name": "snprint_def_flush_on_last_del",
+                "start": 2690,
+                "end": 2702
+            },
+            {
+                "name": "snprint_def_log_checker_err",
+                "start": 2704,
+                "end": 2710
+            },
+            {
+                "name": "snprint_def_user_friendly_names",
+                "start": 2712,
+                "end": 2719
+            },
+            {
+                "name": "snprint_def_alias_prefix",
+                "start": 2721,
+                "end": 2727
+            },
+            {
+                "name": "snprint_def_bindings_file",
+                "start": 2729,
+                "end": 2735
+            },
+            {
+                "name": "snprint_def_wwids_file",
+                "start": 2737,
+                "end": 2743
+            },
+            {
+                "name": "snprint_def_reservation_key",
+                "start": 2745,
+                "end": 2762
+            },
+            {
+                "name": "snprint_def_retain_hwhandler_handler",
+                "start": 2764,
+                "end": 2771
+            },
+            {
+                "name": "snprint_def_detect_prio",
+                "start": 2773,
+                "end": 2780
+            },
+            {
+                "name": "snprint_ble_simple",
+                "start": 2782,
+                "end": 2788
+            },
+            {
+                "name": "snprint_bled_vendor",
+                "start": 2790,
+                "end": 2796
+            },
+            {
+                "name": "snprint_bled_product",
+                "start": 2798,
+                "end": 2804
+            },
+            {
+                "name": "init_keywords",
+                "start": 2808,
+                "end": 2941
+            }
+        ],
+        "libmultipath/hwtable.c": [
+            {
+                "name": "setup_default_hwtable",
+                "start": 1145,
+                "end": 1156
+            }
+        ],
+        "libmultipath/callout.c": [
+            {
+                "name": "execute_program",
+                "start": 23,
+                "end": 136
+            },
+            {
+                "name": "apply_format",
+                "start": 138,
+                "end": 216
+            }
+        ],
+        "libmultipath/structs_vec.h": [
+            {
+                "name": "__setup_multipath",
+                "start": 24,
+                "end": 25
+            },
+            {
+                "name": "add_map_with_path",
+                "start": 35,
+                "end": 36
+            }
+        ],
+        "libmultipath/print.h": [
+            {
+                "name": "snprint_multipath_topology",
+                "start": 42,
+                "end": 43
+            }
+        ],
+        "libmultipath/uevent.h": [
+            {
+                "name": "uevent_dispatch",
+                "start": 33,
+                "end": 34
+            }
+        ],
+        "libmultipath/print.c": [
+            {
+                "name": "snprint_str",
+                "start": 46,
+                "end": 50
+            },
+            {
+                "name": "snprint_int",
+                "start": 52,
+                "end": 56
+            },
+            {
+                "name": "snprint_uint",
+                "start": 58,
+                "end": 62
+            },
+            {
+                "name": "snprint_size",
+                "start": 64,
+                "end": 82
+            },
+            {
+                "name": "snprint_name",
+                "start": 87,
+                "end": 94
+            },
+            {
+                "name": "snprint_sysfs",
+                "start": 96,
+                "end": 103
+            },
+            {
+                "name": "snprint_ro",
+                "start": 105,
+                "end": 114
+            },
+            {
+                "name": "snprint_progress",
+                "start": 116,
+                "end": 142
+            },
+            {
+                "name": "snprint_failback",
+                "start": 144,
+                "end": 157
+            },
+            {
+                "name": "snprint_queueing",
+                "start": 159,
+                "end": 177
+            },
+            {
+                "name": "snprint_nb_paths",
+                "start": 179,
+                "end": 183
+            },
+            {
+                "name": "snprint_dm_map_state",
+                "start": 185,
+                "end": 192
+            },
+            {
+                "name": "snprint_multipath_size",
+                "start": 194,
+                "end": 198
+            },
+            {
+                "name": "snprint_features",
+                "start": 200,
+                "end": 204
+            },
+            {
+                "name": "snprint_hwhandler",
+                "start": 206,
+                "end": 210
+            },
+            {
+                "name": "snprint_path_faults",
+                "start": 212,
+                "end": 216
+            },
+            {
+                "name": "snprint_switch_grp",
+                "start": 218,
+                "end": 222
+            },
+            {
+                "name": "snprint_map_loads",
+                "start": 224,
+                "end": 228
+            },
+            {
+                "name": "snprint_total_q_time",
+                "start": 230,
+                "end": 234
+            },
+            {
+                "name": "snprint_q_timeouts",
+                "start": 236,
+                "end": 240
+            },
+            {
+                "name": "snprint_multipath_uuid",
+                "start": 242,
+                "end": 246
+            },
+            {
+                "name": "snprint_multipath_vpr",
+                "start": 248,
+                "end": 256
+            },
+            {
+                "name": "snprint_action",
+                "start": 258,
+                "end": 275
+            },
+            {
+                "name": "snprint_path_uuid",
+                "start": 280,
+                "end": 284
+            },
+            {
+                "name": "snprint_hcil",
+                "start": 286,
+                "end": 297
+            },
+            {
+                "name": "snprint_dev",
+                "start": 299,
+                "end": 306
+            },
+            {
+                "name": "snprint_dev_t",
+                "start": 308,
+                "end": 315
+            },
+            {
+                "name": "snprint_offline",
+                "start": 317,
+                "end": 324
+            },
+            {
+                "name": "snprint_chk_state",
+                "start": 326,
+                "end": 345
+            },
+            {
+                "name": "snprint_dm_path_state",
+                "start": 347,
+                "end": 358
+            },
+            {
+                "name": "snprint_vpr",
+                "start": 360,
+                "end": 365
+            },
+            {
+                "name": "snprint_next_check",
+                "start": 367,
+                "end": 374
+            },
+            {
+                "name": "snprint_pri",
+                "start": 376,
+                "end": 380
+            },
+            {
+                "name": "snprint_pg_selector",
+                "start": 382,
+                "end": 386
+            },
+            {
+                "name": "snprint_pg_pri",
+                "start": 388,
+                "end": 399
+            },
+            {
+                "name": "snprint_pg_state",
+                "start": 401,
+                "end": 414
+            },
+            {
+                "name": "snprint_path_size",
+                "start": 416,
+                "end": 420
+            },
+            {
+                "name": "snprint_path_serial",
+                "start": 422,
+                "end": 426
+            },
+            {
+                "name": "snprint_path_mpp",
+                "start": 428,
+                "end": 436
+            },
+            {
+                "name": "snprint_path_checker",
+                "start": 438,
+                "end": 443
+            },
+            {
+                "name": "snprint_wildcards",
+                "start": 492,
+                "end": 510
+            },
+            {
+                "name": "get_path_layout",
+                "start": 512,
+                "end": 530
+            },
+            {
+                "name": "reset_multipath_layout",
+                "start": 532,
+                "end": 539
+            },
+            {
+                "name": "get_multipath_layout",
+                "start": 541,
+                "end": 559
+            },
+            {
+                "name": "mpd_lookup",
+                "start": 561,
+                "end": 571
+            },
+            {
+                "name": "pd_lookup",
+                "start": 573,
+                "end": 583
+            },
+            {
+                "name": "pgd_lookup",
+                "start": 585,
+                "end": 595
+            },
+            {
+                "name": "snprint_multipath_header",
+                "start": 597,
+                "end": 628
+            },
+            {
+                "name": "snprint_multipath",
+                "start": 630,
+                "end": 665
+            },
+            {
+                "name": "snprint_path_header",
+                "start": 667,
+                "end": 698
+            },
+            {
+                "name": "snprint_path",
+                "start": 700,
+                "end": 734
+            },
+            {
+                "name": "snprint_pathgroup",
+                "start": 736,
+                "end": 770
+            },
+            {
+                "name": "print_multipath_topology",
+                "start": 772,
+                "end": 800
+            },
+            {
+                "name": "snprint_multipath_topology",
+                "start": 802,
+                "end": 875
+            },
+            {
+                "name": "snprint_hwentry",
+                "start": 877,
+                "end": 908
+            },
+            {
+                "name": "snprint_hwtable",
+                "start": 910,
+                "end": 934
+            },
+            {
+                "name": "snprint_mpentry",
+                "start": 936,
+                "end": 961
+            },
+            {
+                "name": "snprint_mptable",
+                "start": 963,
+                "end": 987
+            },
+            {
+                "name": "snprint_defaults",
+                "start": 989,
+                "end": 1015
+            },
+            {
+                "name": "snprint_blacklist_group",
+                "start": 1017,
+                "end": 1042
+            },
+            {
+                "name": "snprint_blacklist_devgroup",
+                "start": 1044,
+                "end": 1069
+            },
+            {
+                "name": "snprint_blacklist_report",
+                "start": 1071,
+                "end": 1132
+            },
+            {
+                "name": "snprint_blacklist",
+                "start": 1134,
+                "end": 1209
+            },
+            {
+                "name": "snprint_blacklist_except",
+                "start": 1211,
+                "end": 1286
+            },
+            {
+                "name": "snprint_status",
+                "start": 1288,
+                "end": 1318
+            },
+            {
+                "name": "snprint_devices",
+                "start": 1320,
+                "end": 1380
+            },
+            {
+                "name": "snprint_config",
+                "start": 1382,
+                "end": 1386
+            },
+            {
+                "name": "print_path",
+                "start": 1391,
+                "end": 1399
+            },
+            {
+                "name": "print_multipath",
+                "start": 1401,
+                "end": 1409
+            },
+            {
+                "name": "print_pathgroup",
+                "start": 1411,
+                "end": 1419
+            },
+            {
+                "name": "print_map",
+                "start": 1421,
+                "end": 1428
+            },
+            {
+                "name": "print_all_paths",
+                "start": 1430,
+                "end": 1434
+            },
+            {
+                "name": "print_all_paths_custo",
+                "start": 1436,
+                "end": 1458
+            }
+        ],
+        "libmultipath/defaults.c": [
+            {
+                "name": "set_default",
+                "start": 8,
+                "end": 23
+            }
+        ],
+        "libmultipath/vector.c": [
+            {
+                "name": "vector_alloc",
+                "start": 30,
+                "end": 35
+            },
+            {
+                "name": "vector_alloc_slot",
+                "start": 38,
+                "end": 58
+            },
+            {
+                "name": "vector_move_up",
+                "start": 60,
+                "end": 74
+            },
+            {
+                "name": "vector_insert_slot",
+                "start": 76,
+                "end": 90
+            },
+            {
+                "name": "find_slot",
+                "start": 92,
+                "end": 105
+            },
+            {
+                "name": "vector_del_slot",
+                "start": 107,
+                "end": 133
+            },
+            {
+                "name": "vector_repack",
+                "start": 135,
+                "end": 146
+            },
+            {
+                "name": "vector_free",
+                "start": 149,
+                "end": 161
+            },
+            {
+                "name": "free_strvec",
+                "start": 163,
+                "end": 177
+            },
+            {
+                "name": "vector_set_slot",
+                "start": 180,
+                "end": 190
+            }
+        ],
+        "libmultipath/discovery.c": [
+            {
+                "name": "store_pathinfo",
+                "start": 32,
+                "end": 72
+            },
+            {
+                "name": "path_discover",
+                "start": 74,
+                "end": 101
+            },
+            {
+                "name": "path_discovery",
+                "start": 103,
+                "end": 140
+            },
+            {
+                "name": "sysfs_get_timeout",
+                "start": 174,
+                "end": 210
+            },
+            {
+                "name": "sysfs_get_tgt_nodename",
+                "start": 212,
+                "end": 318
+            },
+            {
+                "name": "sysfs_set_rport_tmo",
+                "start": 320,
+                "end": 422
+            },
+            {
+                "name": "sysfs_set_session_tmo",
+                "start": 424,
+                "end": 463
+            },
+            {
+                "name": "sysfs_set_nexus_loss_tmo",
+                "start": 465,
+                "end": 494
+            },
+            {
+                "name": "sysfs_set_scsi_tmo",
+                "start": 496,
+                "end": 535
+            },
+            {
+                "name": "do_inq",
+                "start": 537,
+                "end": 588
+            },
+            {
+                "name": "get_serial",
+                "start": 590,
+                "end": 610
+            },
+            {
+                "name": "get_geometry",
+                "start": 612,
+                "end": 627
+            },
+            {
+                "name": "scsi_sysfs_pathinfo",
+                "start": 629,
+                "end": 693
+            },
+            {
+                "name": "ccw_sysfs_pathinfo",
+                "start": 695,
+                "end": 751
+            },
+            {
+                "name": "cciss_sysfs_pathinfo",
+                "start": 753,
+                "end": 808
+            },
+            {
+                "name": "common_sysfs_pathinfo",
+                "start": 810,
+                "end": 833
+            },
+            {
+                "name": "path_offline",
+                "start": 835,
+                "end": 883
+            },
+            {
+                "name": "sysfs_pathinfo",
+                "start": 885,
+                "end": 912
+            },
+            {
+                "name": "scsi_ioctl_pathinfo",
+                "start": 914,
+                "end": 923
+            },
+            {
+                "name": "cciss_ioctl_pathinfo",
+                "start": 925,
+                "end": 933
+            },
+            {
+                "name": "get_state",
+                "start": 935,
+                "end": 976
+            },
+            {
+                "name": "get_prio",
+                "start": 978,
+                "end": 1004
+            },
+            {
+                "name": "get_uid",
+                "start": 1006,
+                "end": 1066
+            },
+            {
+                "name": "pathinfo",
+                "start": 1068,
+                "end": 1166
+            }
+        ],
+        "libmultipath/switchgroup.c": [
+            {
+                "name": "path_group_prio_update",
+                "start": 10,
+                "end": 33
+            },
+            {
+                "name": "select_path_group",
+                "start": 35,
+                "end": 66
+            }
+        ],
+        "libmultipath/uxsock.c": [
+            {
+                "name": "ux_socket_connect",
+                "start": 30,
+                "end": 54
+            },
+            {
+                "name": "ux_socket_listen",
+                "start": 60,
+                "end": 103
+            },
+            {
+                "name": "write_all",
+                "start": 108,
+                "end": 126
+            },
+            {
+                "name": "read_all",
+                "start": 131,
+                "end": 164
+            },
+            {
+                "name": "send_packet",
+                "start": 169,
+                "end": 188
+            },
+            {
+                "name": "recv_packet",
+                "start": 193,
+                "end": 214
+            }
+        ],
+        "libmultipath/wwids.c": [
+            {
+                "name": "lookup_wwid",
+                "start": 23,
+                "end": 54
+            },
+            {
+                "name": "write_out_wwid",
+                "start": 56,
+                "end": 83
+            },
+            {
+                "name": "replace_wwids",
+                "start": 85,
+                "end": 132
+            },
+            {
+                "name": "do_remove_wwid",
+                "start": 134,
+                "end": 183
+            },
+            {
+                "name": "remove_wwid",
+                "start": 186,
+                "end": 218
+            },
+            {
+                "name": "check_wwids_file",
+                "start": 220,
+                "end": 261
+            },
+            {
+                "name": "remember_wwid",
+                "start": 263,
+                "end": 276
+            }
+        ],
+        "libmultipath/file.c": [
+            {
+                "name": "ensure_directories_exist",
+                "start": 39,
+                "end": 74
+            },
+            {
+                "name": "sigalrm",
+                "start": 76,
+                "end": 80
+            },
+            {
+                "name": "lock_file",
+                "start": 82,
+                "end": 118
+            },
+            {
+                "name": "open_file",
+                "start": 120,
+                "end": 180
+            }
+        ],
+        "libmultipath/structs_vec.c": [
+            {
+                "name": "update_mpp_paths",
+                "start": 22,
+                "end": 45
+            },
+            {
+                "name": "adopt_paths",
+                "start": 47,
+                "end": 77
+            },
+            {
+                "name": "orphan_path",
+                "start": 79,
+                "end": 92
+            },
+            {
+                "name": "orphan_paths",
+                "start": 94,
+                "end": 105
+            },
+            {
+                "name": "set_multipath_wwid",
+                "start": 107,
+                "end": 114
+            },
+            {
+                "name": "_remove_map",
+                "start": 120,
+                "end": 147
+            },
+            {
+                "name": "remove_map",
+                "start": 149,
+                "end": 153
+            },
+            {
+                "name": "remove_map_and_stop_waiter",
+                "start": 155,
+                "end": 160
+            },
+            {
+                "name": "_remove_maps",
+                "start": 162,
+                "end": 178
+            },
+            {
+                "name": "remove_maps",
+                "start": 180,
+                "end": 184
+            },
+            {
+                "name": "remove_maps_and_stop_waiters",
+                "start": 186,
+                "end": 190
+            },
+            {
+                "name": "extract_hwe_from_path",
+                "start": 192,
+                "end": 240
+            },
+            {
+                "name": "update_multipath_table",
+                "start": 242,
+                "end": 261
+            },
+            {
+                "name": "update_multipath_status",
+                "start": 263,
+                "end": 282
+            },
+            {
+                "name": "update_multipath_strings",
+                "start": 284,
+                "end": 303
+            },
+            {
+                "name": "set_no_path_retry",
+                "start": 305,
+                "end": 331
+            },
+            {
+                "name": "__setup_multipath",
+                "start": 333,
+                "end": 374
+            },
+            {
+                "name": "add_map_without_path",
+                "start": 376,
+                "end": 404
+            },
+            {
+                "name": "add_map_with_path",
+                "start": 406,
+                "end": 438
+            },
+            {
+                "name": "verify_paths",
+                "start": 440,
+                "end": 480
+            },
+            {
+                "name": "update_multipath",
+                "start": 482,
+                "end": 531
+            },
+            {
+                "name": "update_queue_mode_del_path",
+                "start": 540,
+                "end": 554
+            },
+            {
+                "name": "update_queue_mode_add_path",
+                "start": 556,
+                "end": 566
+            }
+        ],
+        "libmultipath/log_pthread.c": [
+            {
+                "name": "log_safe",
+                "start": 25,
+                "end": 39
+            },
+            {
+                "name": "log_thread_flush",
+                "start": 41,
+                "end": 52
+            },
+            {
+                "name": "flush_logqueue",
+                "start": 54,
+                "end": 65
+            },
+            {
+                "name": "log_thread",
+                "start": 67,
+                "end": 88
+            },
+            {
+                "name": "log_thread_start",
+                "start": 90,
+                "end": 108
+            },
+            {
+                "name": "log_thread_stop",
+                "start": 110,
+                "end": 132
+            }
+        ],
+        "libmultipath/checkers.c": [
+            {
+                "name": "checker_state_name",
+                "start": 26,
+                "end": 29
+            },
+            {
+                "name": "init_checkers",
+                "start": 31,
+                "end": 36
+            },
+            {
+                "name": "alloc_checker",
+                "start": 38,
+                "end": 48
+            },
+            {
+                "name": "free_checker",
+                "start": 50,
+                "end": 69
+            },
+            {
+                "name": "cleanup_checkers",
+                "start": 71,
+                "end": 79
+            },
+            {
+                "name": "checker_lookup",
+                "start": 81,
+                "end": 92
+            },
+            {
+                "name": "add_checker",
+                "start": 94,
+                "end": 148
+            },
+            {
+                "name": "checker_set_fd",
+                "start": 150,
+                "end": 155
+            },
+            {
+                "name": "checker_set_sync",
+                "start": 157,
+                "end": 162
+            },
+            {
+                "name": "checker_set_async",
+                "start": 164,
+                "end": 169
+            },
+            {
+                "name": "checker_enable",
+                "start": 171,
+                "end": 176
+            },
+            {
+                "name": "checker_disable",
+                "start": 178,
+                "end": 183
+            },
+            {
+                "name": "checker_init",
+                "start": 185,
+                "end": 191
+            },
+            {
+                "name": "checker_put",
+                "start": 193,
+                "end": 204
+            },
+            {
+                "name": "checker_check",
+                "start": 206,
+                "end": 225
+            },
+            {
+                "name": "checker_selected",
+                "start": 227,
+                "end": 232
+            },
+            {
+                "name": "checker_name",
+                "start": 234,
+                "end": 239
+            },
+            {
+                "name": "checker_message",
+                "start": 241,
+                "end": 246
+            },
+            {
+                "name": "checker_clear_message",
+                "start": 248,
+                "end": 253
+            },
+            {
+                "name": "checker_get",
+                "start": 255,
+                "end": 275
+            }
+        ],
+        "libmultipath/dmparser.c": [
+            {
+                "name": "merge_words",
+                "start": 20,
+                "end": 45
+            },
+            {
+                "name": "assemble_map",
+                "start": 50,
+                "end": 140
+            },
+            {
+                "name": "disassemble_map",
+                "start": 142,
+                "end": 396
+            },
+            {
+                "name": "disassemble_status",
+                "start": 398,
+                "end": 582
+            }
+        ],
+        "libmultipath/uevent.c": [
+            {
+                "name": "is_uevent_busy",
+                "start": 63,
+                "end": 71
+            },
+            {
+                "name": "alloc_uevent",
+                "start": 73,
+                "end": 81
+            },
+            {
+                "name": "setup_thread_attr",
+                "start": 83,
+                "end": 105
+            },
+            {
+                "name": "service_uevq",
+                "start": 110,
+                "end": 125
+            },
+            {
+                "name": "uevq_stop",
+                "start": 127,
+                "end": 137
+            },
+            {
+                "name": "uevq_cleanup",
+                "start": 139,
+                "end": 148
+            },
+            {
+                "name": "uevent_dispatch",
+                "start": 153,
+                "end": 183
+            },
+            {
+                "name": "failback_listen",
+                "start": 185,
+                "end": 402
+            },
+            {
+                "name": "uevent_listen",
+                "start": 404,
+                "end": 535
+            },
+            {
+                "name": "uevent_get_major",
+                "start": 537,
+                "end": 555
+            },
+            {
+                "name": "uevent_get_minor",
+                "start": 557,
+                "end": 575
+            },
+            {
+                "name": "uevent_get_disk_ro",
+                "start": 577,
+                "end": 595
+            },
+            {
+                "name": "uevent_get_dm_name",
+                "start": 597,
+                "end": 612
+            }
+        ],
+        "libmultipath/config.c": [
+            {
+                "name": "hwe_strmatch",
+                "start": 25,
+                "end": 44
+            },
+            {
+                "name": "find_hwe_strmatch",
+                "start": 46,
+                "end": 59
+            },
+            {
+                "name": "hwe_regmatch",
+                "start": 61,
+                "end": 97
+            },
+            {
+                "name": "find_hwe",
+                "start": 99,
+                "end": 121
+            },
+            {
+                "name": "find_mpe",
+                "start": 123,
+                "end": 137
+            },
+            {
+                "name": "get_mpe_wwid",
+                "start": 139,
+                "end": 153
+            },
+            {
+                "name": "free_hwe",
+                "start": 155,
+                "end": 201
+            },
+            {
+                "name": "free_hwtable",
+                "start": 203,
+                "end": 216
+            },
+            {
+                "name": "free_mpe",
+                "start": 218,
+                "end": 246
+            },
+            {
+                "name": "free_mptable",
+                "start": 248,
+                "end": 261
+            },
+            {
+                "name": "alloc_mpe",
+                "start": 263,
+                "end": 270
+            },
+            {
+                "name": "alloc_hwe",
+                "start": 272,
+                "end": 279
+            },
+            {
+                "name": "set_param_str",
+                "start": 281,
+                "end": 302
+            },
+            {
+                "name": "merge_hwe",
+                "start": 315,
+                "end": 354
+            },
+            {
+                "name": "store_hwe",
+                "start": 356,
+                "end": 427
+            },
+            {
+                "name": "factorize_hwtable",
+                "start": 429,
+                "end": 460
+            },
+            {
+                "name": "alloc_config",
+                "start": 462,
+                "end": 466
+            },
+            {
+                "name": "free_config",
+                "start": 468,
+                "end": 528
+            },
+            {
+                "name": "load_config",
+                "start": 530,
+                "end": 675
+            }
+        ],
+        "libmultipath/waiter.c": [
+            {
+                "name": "alloc_waiter",
+                "start": 25,
+                "end": 34
+            },
+            {
+                "name": "free_waiter",
+                "start": 36,
+                "end": 44
+            },
+            {
+                "name": "stop_waiter_thread",
+                "start": 46,
+                "end": 61
+            },
+            {
+                "name": "waiteventloop",
+                "start": 67,
+                "end": 157
+            },
+            {
+                "name": "waitevent",
+                "start": 159,
+                "end": 180
+            },
+            {
+                "name": "start_waiter_thread",
+                "start": 182,
+                "end": 211
+            }
+        ],
+        "libmultipath/prio.c": [
+            {
+                "name": "init_prio",
+                "start": 13,
+                "end": 18
+            },
+            {
+                "name": "alloc_prio",
+                "start": 20,
+                "end": 30
+            },
+            {
+                "name": "free_prio",
+                "start": 32,
+                "end": 51
+            },
+            {
+                "name": "cleanup_prio",
+                "start": 53,
+                "end": 61
+            },
+            {
+                "name": "prio_lookup",
+                "start": 63,
+                "end": 75
+            },
+            {
+                "name": "prio_set_args",
+                "start": 77,
+                "end": 80
+            },
+            {
+                "name": "add_prio",
+                "start": 82,
+                "end": 119
+            },
+            {
+                "name": "prio_getprio",
+                "start": 121,
+                "end": 124
+            },
+            {
+                "name": "prio_selected",
+                "start": 126,
+                "end": 131
+            },
+            {
+                "name": "prio_name",
+                "start": 133,
+                "end": 136
+            },
+            {
+                "name": "prio_args",
+                "start": 138,
+                "end": 141
+            },
+            {
+                "name": "prio_get",
+                "start": 143,
+                "end": 159
+            },
+            {
+                "name": "prio_put",
+                "start": 161,
+                "end": 171
+            }
+        ],
+        "libmultipath/sysfs.c": [
+            {
+                "name": "sysfs_attr_get_value",
+                "start": 46,
+                "end": 95
+            },
+            {
+                "name": "sysfs_attr_set_value",
+                "start": 97,
+                "end": 147
+            },
+            {
+                "name": "sysfs_get_size",
+                "start": 149,
+                "end": 173
+            },
+            {
+                "name": "sysfs_check_holders",
+                "start": 175,
+                "end": 227
+            }
+        ],
+        "libmultipath/configure.c": [
+            {
+                "name": "setup_map",
+                "start": 42,
+                "end": 112
+            },
+            {
+                "name": "compute_pgid",
+                "start": 114,
+                "end": 122
+            },
+            {
+                "name": "pgcmp",
+                "start": 124,
+                "end": 150
+            },
+            {
+                "name": "select_action",
+                "start": 152,
+                "end": 264
+            },
+            {
+                "name": "reinstate_paths",
+                "start": 266,
+                "end": 294
+            },
+            {
+                "name": "lock_multipath",
+                "start": 296,
+                "end": 332
+            },
+            {
+                "name": "domap",
+                "start": 343,
+                "end": 436
+            },
+            {
+                "name": "deadmap",
+                "start": 438,
+                "end": 458
+            },
+            {
+                "name": "check_daemon",
+                "start": 460,
+                "end": 486
+            },
+            {
+                "name": "coalesce_paths",
+                "start": 488,
+                "end": 663
+            },
+            {
+                "name": "get_refwwid",
+                "start": 671,
+                "end": 779
+            },
+            {
+                "name": "reload_map",
+                "start": 781,
+                "end": 818
+            }
+        ],
+        "libmultipath/memory.c": [
+            {
+                "name": "xalloc",
+                "start": 28,
+                "end": 35
+            },
+            {
+                "name": "zalloc",
+                "start": 37,
+                "end": 46
+            },
+            {
+                "name": "xfree",
+                "start": 48,
+                "end": 54
+            }
+        ],
+        "libmultipath/alias.c": [
+            {
+                "name": "format_devname",
+                "start": 40,
+                "end": 58
+            },
+            {
+                "name": "scan_devname",
+                "start": 60,
+                "end": 89
+            },
+            {
+                "name": "lookup_binding",
+                "start": 91,
+                "end": 145
+            },
+            {
+                "name": "rlookup_binding",
+                "start": 147,
+                "end": 192
+            },
+            {
+                "name": "allocate_binding",
+                "start": 194,
+                "end": 237
+            },
+            {
+                "name": "get_user_friendly_alias",
+                "start": 239,
+                "end": 283
+            },
+            {
+                "name": "get_user_friendly_wwid",
+                "start": 285,
+                "end": 316
+            }
+        ],
+        "libmultipath/log.c": [
+            {
+                "name": "logarea_init",
+                "start": 39,
+                "end": 71
+            },
+            {
+                "name": "log_init",
+                "start": 73,
+                "end": 82
+            },
+            {
+                "name": "free_logarea",
+                "start": 84,
+                "end": 90
+            },
+            {
+                "name": "log_close",
+                "start": 92,
+                "end": 98
+            },
+            {
+                "name": "log_reset",
+                "start": 100,
+                "end": 105
+            },
+            {
+                "name": "log_enqueue",
+                "start": 107,
+                "end": 164
+            },
+            {
+                "name": "log_dequeue",
+                "start": 166,
+                "end": 193
+            },
+            {
+                "name": "log_syslog",
+                "start": 198,
+                "end": 203
+            }
+        ],
+        "libmultipath/structs.c": [
+            {
+                "name": "alloc_path",
+                "start": 21,
+                "end": 37
+            },
+            {
+                "name": "free_path",
+                "start": 39,
+                "end": 60
+            },
+            {
+                "name": "free_pathvec",
+                "start": 62,
+                "end": 76
+            },
+            {
+                "name": "alloc_pathgroup",
+                "start": 78,
+                "end": 96
+            },
+            {
+                "name": "free_pathgroup",
+                "start": 98,
+                "end": 106
+            },
+            {
+                "name": "free_pgvec",
+                "start": 108,
+                "end": 121
+            },
+            {
+                "name": "alloc_multipath",
+                "start": 123,
+                "end": 137
+            },
+            {
+                "name": "free_multipath_attributes",
+                "start": 139,
+                "end": 164
+            },
+            {
+                "name": "free_multipath",
+                "start": 166,
+                "end": 188
+            },
+            {
+                "name": "drop_multipath",
+                "start": 190,
+                "end": 206
+            },
+            {
+                "name": "free_multipathvec",
+                "start": 208,
+                "end": 221
+            },
+            {
+                "name": "store_path",
+                "start": 223,
+                "end": 232
+            },
+            {
+                "name": "store_pathgroup",
+                "start": 234,
+                "end": 243
+            },
+            {
+                "name": "find_mp_by_minor",
+                "start": 245,
+                "end": 262
+            },
+            {
+                "name": "find_mp_by_wwid",
+                "start": 264,
+                "end": 278
+            },
+            {
+                "name": "find_mp_by_alias",
+                "start": 280,
+                "end": 301
+            },
+            {
+                "name": "find_mp_by_str",
+                "start": 303,
+                "end": 312
+            },
+            {
+                "name": "find_path_by_dev",
+                "start": 314,
+                "end": 329
+            },
+            {
+                "name": "find_path_by_devt",
+                "start": 331,
+                "end": 346
+            },
+            {
+                "name": "pathcountgr",
+                "start": 348,
+                "end": 360
+            },
+            {
+                "name": "pathcount",
+                "start": 362,
+                "end": 374
+            },
+            {
+                "name": "pathcmp",
+                "start": 376,
+                "end": 394
+            },
+            {
+                "name": "first_path",
+                "start": 396,
+                "end": 405
+            },
+            {
+                "name": "setup_feature",
+                "start": 407,
+                "end": 414
+            },
+            {
+                "name": "add_feature",
+                "start": 416,
+                "end": 488
+            },
+            {
+                "name": "remove_feature",
+                "start": 490,
+                "end": 595
+            }
+        ],
+        "libmultipath/checkers/tur.c": [
+            {
+                "name": "libcheck_init",
+                "start": 51,
+                "end": 69
+            },
+            {
+                "name": "cleanup_context",
+                "start": 71,
+                "end": 77
+            },
+            {
+                "name": "libcheck_free",
+                "start": 79,
+                "end": 98
+            },
+            {
+                "name": "tur_check",
+                "start": 102,
+                "end": 184
+            },
+            {
+                "name": "cleanup_func",
+                "start": 189,
+                "end": 200
+            },
+            {
+                "name": "tur_thread",
+                "start": 202,
+                "end": 230
+            },
+            {
+                "name": "tur_timeout",
+                "start": 233,
+                "end": 241
+            },
+            {
+                "name": "tur_set_async_timeout",
+                "start": 243,
+                "end": 250
+            },
+            {
+                "name": "tur_check_async_timeout",
+                "start": 252,
+                "end": 259
+            },
+            {
+                "name": "libcheck_check",
+                "start": 261,
+                "end": 358
+            }
+        ],
+        "libmultipath/checkers/cciss_tur.c": [
+            {
+                "name": "libcheck_init",
+                "start": 56,
+                "end": 59
+            },
+            {
+                "name": "libcheck_free",
+                "start": 61,
+                "end": 64
+            },
+            {
+                "name": "libcheck_check",
+                "start": 66,
+                "end": 137
+            }
+        ],
+        "libmultipath/checkers/libsg.h": [
+            {
+                "name": "sg_read",
+                "start": 6,
+                "end": 7
+            }
+        ],
+        "libmultipath/checkers/readsector0.c": [
+            {
+                "name": "libcheck_init",
+                "start": 16,
+                "end": 19
+            },
+            {
+                "name": "libcheck_free",
+                "start": 21,
+                "end": 24
+            },
+            {
+                "name": "libcheck_check",
+                "start": 26,
+                "end": 47
+            }
+        ],
+        "libmultipath/checkers/rdac.c": [
+            {
+                "name": "libcheck_init",
+                "start": 63,
+                "end": 135
+            },
+            {
+                "name": "libcheck_free",
+                "start": 137,
+                "end": 140
+            },
+            {
+                "name": "do_inq",
+                "start": 142,
+                "end": 207
+            },
+            {
+                "name": "checker_msg_string",
+                "start": 222,
+                "end": 258
+            },
+            {
+                "name": "libcheck_check",
+                "start": 260,
+                "end": 323
+            }
+        ],
+        "libmultipath/checkers/emc_clariion.c": [
+            {
+                "name": "hexadecimal_to_ascii",
+                "start": 53,
+                "end": 65
+            },
+            {
+                "name": "libcheck_init",
+                "start": 67,
+                "end": 87
+            },
+            {
+                "name": "libcheck_free",
+                "start": 89,
+                "end": 92
+            },
+            {
+                "name": "libcheck_check",
+                "start": 94,
+                "end": 236
+            }
+        ],
+        "libmultipath/checkers/libsg.c": [
+            {
+                "name": "sg_read",
+                "start": 13,
+                "end": 97
+            }
+        ],
+        "libmultipath/checkers/directio.c": [
+            {
+                "name": "libcheck_init",
+                "start": 39,
+                "end": 95
+            },
+            {
+                "name": "libcheck_free",
+                "start": 97,
+                "end": 117
+            },
+            {
+                "name": "check_state",
+                "start": 119,
+                "end": 184
+            },
+            {
+                "name": "libcheck_check",
+                "start": 186,
+                "end": 214
+            }
+        ],
+        "libmultipath/checkers/hp_sw.c": [
+            {
+                "name": "libcheck_init",
+                "start": 37,
+                "end": 40
+            },
+            {
+                "name": "libcheck_free",
+                "start": 42,
+                "end": 45
+            },
+            {
+                "name": "do_inq",
+                "start": 47,
+                "end": 98
+            },
+            {
+                "name": "do_tur",
+                "start": 100,
+                "end": 124
+            },
+            {
+                "name": "libcheck_check",
+                "start": 126,
+                "end": 142
+            }
+        ],
+        "libmultipath/prioritizers/random.c": [
+            {
+                "name": "getprio",
+                "start": 8,
+                "end": 15
+            }
+        ],
+        "libmultipath/prioritizers/ontap.c": [
+            {
+                "name": "dump_cdb",
+                "start": 36,
+                "end": 47
+            },
+            {
+                "name": "process_sg_error",
+                "start": 49,
+                "end": 66
+            },
+            {
+                "name": "send_gva",
+                "start": 73,
+                "end": 117
+            },
+            {
+                "name": "get_proxy",
+                "start": 125,
+                "end": 175
+            },
+            {
+                "name": "ontap_prio",
+                "start": 185,
+                "end": 242
+            },
+            {
+                "name": "getprio",
+                "start": 244,
+                "end": 247
+            }
+        ],
+        "libmultipath/prioritizers/emc.c": [
+            {
+                "name": "emc_clariion_prio",
+                "start": 15,
+                "end": 82
+            },
+            {
+                "name": "getprio",
+                "start": 84,
+                "end": 87
+            }
+        ],
+        "libmultipath/prioritizers/datacore.c": [
+            {
+                "name": "datacore_prio",
+                "start": 35,
+                "end": 107
+            },
+            {
+                "name": "getprio",
+                "start": 109,
+                "end": 112
+            }
+        ],
+        "libmultipath/prioritizers/iet.c": [
+            {
+                "name": "find_regex",
+                "start": 35,
+                "end": 69
+            },
+            {
+                "name": "iet_prio",
+                "start": 75,
+                "end": 136
+            },
+            {
+                "name": "getprio",
+                "start": 138,
+                "end": 141
+            }
+        ],
+        "libmultipath/prioritizers/rdac.c": [
+            {
+                "name": "rdac_prio",
+                "start": 15,
+                "end": 92
+            },
+            {
+                "name": "getprio",
+                "start": 94,
+                "end": 97
+            }
+        ],
+        "libmultipath/prioritizers/const.c": [
+            {
+                "name": "getprio",
+                "start": 5,
+                "end": 8
+            }
+        ],
+        "libmultipath/prioritizers/hds.c": [
+            {
+                "name": "hds_modular_prio",
+                "start": 87,
+                "end": 167
+            },
+            {
+                "name": "getprio",
+                "start": 169,
+                "end": 172
+            }
+        ],
+        "libmultipath/prioritizers/alua.c": [
+            {
+                "name": "aas_print_string",
+                "start": 40,
+                "end": 51
+            },
+            {
+                "name": "get_alua_info",
+                "start": 53,
+                "end": 80
+            },
+            {
+                "name": "getprio",
+                "start": 82,
+                "end": 130
+            }
+        ],
+        "libmultipath/prioritizers/hp_sw.c": [
+            {
+                "name": "hp_sw_prio",
+                "start": 35,
+                "end": 96
+            },
+            {
+                "name": "getprio",
+                "start": 98,
+                "end": 101
+            }
+        ],
+        "libmultipath/prioritizers/alua_rtpg.c": [
+            {
+                "name": "scsi_error",
+                "start": 73,
+                "end": 107
+            },
+            {
+                "name": "do_inquiry",
+                "start": 112,
+                "end": 151
+            },
+            {
+                "name": "get_target_port_group_support",
+                "start": 157,
+                "end": 170
+            },
+            {
+                "name": "get_target_port_group",
+                "start": 172,
+                "end": 232
+            },
+            {
+                "name": "do_rtpg",
+                "start": 234,
+                "end": 268
+            },
+            {
+                "name": "get_asymmetric_access_state",
+                "start": 270,
+                "end": 324
+            }
+        ],
+        "libmultipath/prioritizers/weightedpath.c": [
+            {
+                "name": "get_next_string",
+                "start": 36,
+                "end": 43
+            },
+            {
+                "name": "prio_path_weight",
+                "start": 46,
+                "end": 97
+            },
+            {
+                "name": "getprio",
+                "start": 99,
+                "end": 102
+            }
+        ],
+        "multipath/main.c": [
+            {
+                "name": "filter_pathvec",
+                "start": 62,
+                "end": 80
+            },
+            {
+                "name": "usage",
+                "start": 82,
+                "end": 128
+            },
+            {
+                "name": "update_paths",
+                "start": 130,
+                "end": 173
+            },
+            {
+                "name": "get_dm_mpvec",
+                "start": 175,
+                "end": 225
+            },
+            {
+                "name": "configure",
+                "start": 234,
+                "end": 355
+            },
+            {
+                "name": "dump_config",
+                "start": 357,
+                "end": 404
+            },
+            {
+                "name": "get_dev_type",
+                "start": 406,
+                "end": 420
+            },
+            {
+                "name": "main",
+                "start": 422,
+                "end": 628
+            }
+        ],
+        "multipathd/pidfile.c": [
+            {
+                "name": "pidfile_create",
+                "start": 15,
+                "end": 67
+            }
+        ],
+        "multipathd/uxclnt.c": [
+            {
+                "name": "print_reply",
+                "start": 27,
+                "end": 39
+            },
+            {
+                "name": "need_quit",
+                "start": 41,
+                "end": 61
+            },
+            {
+                "name": "process",
+                "start": 66,
+                "end": 97
+            },
+            {
+                "name": "process_req",
+                "start": 99,
+                "end": 114
+            },
+            {
+                "name": "uxclnt",
+                "start": 119,
+                "end": 133
+            }
+        ],
+        "multipathd/cli.c": [
+            {
+                "name": "alloc_key",
+                "start": 16,
+                "end": 20
+            },
+            {
+                "name": "alloc_handler",
+                "start": 22,
+                "end": 26
+            },
+            {
+                "name": "add_key",
+                "start": 28,
+                "end": 57
+            },
+            {
+                "name": "add_handler",
+                "start": 59,
+                "end": 79
+            },
+            {
+                "name": "find_handler",
+                "start": 81,
+                "end": 92
+            },
+            {
+                "name": "set_handler_callback",
+                "start": 94,
+                "end": 103
+            },
+            {
+                "name": "free_key",
+                "start": 105,
+                "end": 115
+            },
+            {
+                "name": "free_keys",
+                "start": 117,
+                "end": 127
+            },
+            {
+                "name": "free_handlers",
+                "start": 129,
+                "end": 140
+            },
+            {
+                "name": "load_keys",
+                "start": 142,
+                "end": 198
+            },
+            {
+                "name": "find_key",
+                "start": 200,
+                "end": 224
+            },
+            {
+                "name": "get_cmdvec",
+                "start": 230,
+                "end": 293
+            },
+            {
+                "name": "fingerprint",
+                "start": 295,
+                "end": 309
+            },
+            {
+                "name": "alloc_handlers",
+                "start": 311,
+                "end": 320
+            },
+            {
+                "name": "genhelp_sprint_aliases",
+                "start": 322,
+                "end": 333
+            },
+            {
+                "name": "genhelp_handler",
+                "start": 335,
+                "end": 370
+            },
+            {
+                "name": "parse_cmd",
+                "start": 372,
+                "end": 403
+            },
+            {
+                "name": "get_keyparam",
+                "start": 405,
+                "end": 416
+            },
+            {
+                "name": "cli_init",
+                "start": 418,
+                "end": 467
+            },
+            {
+                "name": "cli_exit",
+                "start": 469,
+                "end": 474
+            },
+            {
+                "name": "key_match_fingerprint",
+                "start": 476,
+                "end": 483
+            },
+            {
+                "name": "key_generator",
+                "start": 488,
+                "end": 580
+            }
+        ],
+        "multipathd/main.h": [
+            {
+                "name": "prin_do_scsi_ioctl",
+                "start": 28,
+                "end": 29
+            },
+            {
+                "name": "prout_do_scsi_ioctl",
+                "start": 31,
+                "end": 33
+            }
+        ],
+        "multipathd/uxlsnr.h": [
+            {
+                "name": "uxsock_listen",
+                "start": 4,
+                "end": 6
+            }
+        ],
+        "multipathd/uxlsnr.c": [
+            {
+                "name": "new_client",
+                "start": 53,
+                "end": 73
+            },
+            {
+                "name": "dead_client",
+                "start": 78,
+                "end": 86
+            },
+            {
+                "name": "free_polls",
+                "start": 88,
+                "end": 92
+            },
+            {
+                "name": "uxsock_cleanup",
+                "start": 94,
+                "end": 98
+            },
+            {
+                "name": "uxsock_listen",
+                "start": 103,
+                "end": 193
+            }
+        ],
+        "multipathd/cli_handlers.c": [
+            {
+                "name": "show_paths",
+                "start": 37,
+                "end": 71
+            },
+            {
+                "name": "show_map_topology",
+                "start": 73,
+                "end": 100
+            },
+            {
+                "name": "show_maps_topology",
+                "start": 102,
+                "end": 137
+            },
+            {
+                "name": "show_config",
+                "start": 139,
+                "end": 200
+            },
+            {
+                "name": "cli_list_config",
+                "start": 202,
+                "end": 208
+            },
+            {
+                "name": "cli_list_paths",
+                "start": 210,
+                "end": 218
+            },
+            {
+                "name": "cli_list_paths_fmt",
+                "start": 220,
+                "end": 229
+            },
+            {
+                "name": "cli_list_map_topology",
+                "start": 231,
+                "end": 248
+            },
+            {
+                "name": "cli_list_maps_topology",
+                "start": 250,
+                "end": 258
+            },
+            {
+                "name": "cli_list_wildcards",
+                "start": 260,
+                "end": 275
+            },
+            {
+                "name": "show_status",
+                "start": 277,
+                "end": 295
+            },
+            {
+                "name": "show_daemon",
+                "start": 297,
+                "end": 316
+            },
+            {
+                "name": "show_maps",
+                "start": 318,
+                "end": 351
+            },
+            {
+                "name": "cli_list_maps_fmt",
+                "start": 353,
+                "end": 362
+            },
+            {
+                "name": "cli_list_maps",
+                "start": 364,
+                "end": 372
+            },
+            {
+                "name": "cli_list_status",
+                "start": 374,
+                "end": 382
+            },
+            {
+                "name": "cli_list_maps_status",
+                "start": 384,
+                "end": 392
+            },
+            {
+                "name": "cli_list_maps_stats",
+                "start": 394,
+                "end": 402
+            },
+            {
+                "name": "cli_list_daemon",
+                "start": 404,
+                "end": 410
+            },
+            {
+                "name": "cli_add_path",
+                "start": 412,
+                "end": 455
+            },
+            {
+                "name": "cli_del_path",
+                "start": 457,
+                "end": 472
+            },
+            {
+                "name": "cli_add_map",
+                "start": 474,
+                "end": 513
+            },
+            {
+                "name": "cli_del_map",
+                "start": 515,
+                "end": 547
+            },
+            {
+                "name": "cli_reload",
+                "start": 549,
+                "end": 570
+            },
+            {
+                "name": "resize_map",
+                "start": 572,
+                "end": 589
+            },
+            {
+                "name": "cli_resize",
+                "start": 591,
+                "end": 649
+            },
+            {
+                "name": "cli_force_no_daemon_q",
+                "start": 651,
+                "end": 658
+            },
+            {
+                "name": "cli_restore_no_daemon_q",
+                "start": 660,
+                "end": 667
+            },
+            {
+                "name": "cli_restore_queueing",
+                "start": 669,
+                "end": 698
+            },
+            {
+                "name": "cli_restore_all_queueing",
+                "start": 700,
+                "end": 719
+            },
+            {
+                "name": "cli_disable_queueing",
+                "start": 721,
+                "end": 744
+            },
+            {
+                "name": "cli_disable_all_queueing",
+                "start": 746,
+                "end": 759
+            },
+            {
+                "name": "cli_switch_group",
+                "start": 761,
+                "end": 771
+            },
+            {
+                "name": "cli_reconfigure",
+                "start": 773,
+                "end": 781
+            },
+            {
+                "name": "cli_suspend",
+                "start": 783,
+                "end": 803
+            },
+            {
+                "name": "cli_resume",
+                "start": 805,
+                "end": 825
+            },
+            {
+                "name": "cli_reinstate",
+                "start": 827,
+                "end": 848
+            },
+            {
+                "name": "cli_reassign",
+                "start": 850,
+                "end": 860
+            },
+            {
+                "name": "cli_fail",
+                "start": 862,
+                "end": 889
+            },
+            {
+                "name": "show_blacklist",
+                "start": 891,
+                "end": 915
+            },
+            {
+                "name": "cli_list_blacklist",
+                "start": 917,
+                "end": 923
+            },
+            {
+                "name": "show_devices",
+                "start": 925,
+                "end": 949
+            },
+            {
+                "name": "cli_list_devices",
+                "start": 951,
+                "end": 959
+            },
+            {
+                "name": "cli_quit",
+                "start": 961,
+                "end": 965
+            },
+            {
+                "name": "cli_shutdown",
+                "start": 967,
+                "end": 973
+            },
+            {
+                "name": "cli_getprstatus",
+                "start": 975,
+                "end": 1003
+            },
+            {
+                "name": "cli_setprstatus",
+                "start": 1005,
+                "end": 1026
+            },
+            {
+                "name": "cli_unsetprstatus",
+                "start": 1028,
+                "end": 1048
+            }
+        ],
+        "multipathd/main.c": [
+            {
+                "name": "need_switch_pathgroup",
+                "start": 102,
+                "end": 126
+            },
+            {
+                "name": "switch_pathgroup",
+                "start": 128,
+                "end": 135
+            },
+            {
+                "name": "coalesce_maps",
+                "start": 137,
+                "end": 180
+            },
+            {
+                "name": "sync_map_state",
+                "start": 182,
+                "end": 208
+            },
+            {
+                "name": "sync_maps_state",
+                "start": 210,
+                "end": 218
+            },
+            {
+                "name": "flush_map",
+                "start": 220,
+                "end": 244
+            },
+            {
+                "name": "uev_add_map",
+                "start": 246,
+                "end": 268
+            },
+            {
+                "name": "ev_add_map",
+                "start": 270,
+                "end": 326
+            },
+            {
+                "name": "uev_remove_map",
+                "start": 328,
+                "end": 360
+            },
+            {
+                "name": "ev_remove_map",
+                "start": 362,
+                "end": 380
+            },
+            {
+                "name": "uev_add_path",
+                "start": 382,
+                "end": 437
+            },
+            {
+                "name": "ev_add_path",
+                "start": 444,
+                "end": 571
+            },
+            {
+                "name": "uev_remove_path",
+                "start": 573,
+                "end": 588
+            },
+            {
+                "name": "ev_remove_path",
+                "start": 590,
+                "end": 681
+            },
+            {
+                "name": "uev_update_path",
+                "start": 683,
+                "end": 711
+            },
+            {
+                "name": "map_discovery",
+                "start": 713,
+                "end": 727
+            },
+            {
+                "name": "uxsock_trigger",
+                "start": 729,
+                "end": 759
+            },
+            {
+                "name": "uev_discard",
+                "start": 761,
+                "end": 781
+            },
+            {
+                "name": "uev_trigger",
+                "start": 783,
+                "end": 838
+            },
+            {
+                "name": "ueventloop",
+                "start": 840,
+                "end": 849
+            },
+            {
+                "name": "uevqloop",
+                "start": 851,
+                "end": 858
+            },
+            {
+                "name": "uxlsnrloop",
+                "start": 859,
+                "end": 909
+            },
+            {
+                "name": "exit_daemon",
+                "start": 911,
+                "end": 915
+            },
+            {
+                "name": "daemon_status",
+                "start": 917,
+                "end": 933
+            },
+            {
+                "name": "fail_path",
+                "start": 935,
+                "end": 947
+            },
+            {
+                "name": "reinstate_path",
+                "start": 952,
+                "end": 965
+            },
+            {
+                "name": "enable_group",
+                "start": 967,
+                "end": 988
+            },
+            {
+                "name": "mpvec_garbage_collector",
+                "start": 990,
+                "end": 1006
+            },
+            {
+                "name": "followover_should_failback",
+                "start": 1012,
+                "end": 1032
+            },
+            {
+                "name": "defered_failback_tick",
+                "start": 1034,
+                "end": 1051
+            },
+            {
+                "name": "retry_count_tick",
+                "start": 1053,
+                "end": 1069
+            },
+            {
+                "name": "update_prio",
+                "start": 1071,
+                "end": 1095
+            },
+            {
+                "name": "update_path_groups",
+                "start": 1097,
+                "end": 1108
+            },
+            {
+                "name": "check_path",
+                "start": 1113,
+                "end": 1293
+            },
+            {
+                "name": "checkerloop",
+                "start": 1295,
+                "end": 1357
+            },
+            {
+                "name": "configure",
+                "start": 1359,
+                "end": 1436
+            },
+            {
+                "name": "reconfigure",
+                "start": 1438,
+                "end": 1469
+            },
+            {
+                "name": "init_vecs",
+                "start": 1471,
+                "end": 1496
+            },
+            {
+                "name": "signal_set",
+                "start": 1498,
+                "end": 1515
+            },
+            {
+                "name": "handle_signals",
+                "start": 1517,
+                "end": 1537
+            },
+            {
+                "name": "sighup",
+                "start": 1539,
+                "end": 1543
+            },
+            {
+                "name": "sigend",
+                "start": 1545,
+                "end": 1549
+            },
+            {
+                "name": "sigusr1",
+                "start": 1551,
+                "end": 1555
+            },
+            {
+                "name": "sigusr2",
+                "start": 1557,
+                "end": 1561
+            },
+            {
+                "name": "signal_init",
+                "start": 1563,
+                "end": 1580
+            },
+            {
+                "name": "setscheduler",
+                "start": 1582,
+                "end": 1595
+            },
+            {
+                "name": "set_oom_adj",
+                "start": 1597,
+                "end": 1643
+            },
+            {
+                "name": "child",
+                "start": 1645,
+                "end": 1880
+            },
+            {
+                "name": "daemonize",
+                "start": 1882,
+                "end": 1933
+            },
+            {
+                "name": "main",
+                "start": 1935,
+                "end": 2017
+            },
+            {
+                "name": "mpath_pr_event_handler_fn",
+                "start": 2019,
+                "end": 2105
+            },
+            {
+                "name": "mpath_pr_event_handle",
+                "start": 2107,
+                "end": 2130
+            }
+        ],
+        "kpartx/kpartx.h": [
+            {
+                "name": "get_sector_size",
+                "start": 26,
+                "end": 27
+            },
+            {
+                "name": "four2int",
+                "start": 54,
+                "end": 57
+            }
+        ],
+        "kpartx/sun.c": [
+            {
+                "name": "sun_verify_checksum",
+                "start": 49,
+                "end": 59
+            },
+            {
+                "name": "read_sun_pt",
+                "start": 61,
+                "end": 130
+            }
+        ],
+        "kpartx/crc32.c": [
+            {
+                "name": "crc32init_le",
+                "start": 73,
+                "end": 91
+            },
+            {
+                "name": "crc32cleanup_le",
+                "start": 96,
+                "end": 101
+            },
+            {
+                "name": "crc32_le",
+                "start": 111,
+                "end": 129
+            },
+            {
+                "name": "crc32init_be",
+                "start": 175,
+                "end": 193
+            },
+            {
+                "name": "crc32cleanup_be",
+                "start": 198,
+                "end": 203
+            },
+            {
+                "name": "crc32_be",
+                "start": 214,
+                "end": 232
+            },
+            {
+                "name": "init_crc32",
+                "start": 375,
+                "end": 383
+            },
+            {
+                "name": "cleanup_crc32",
+                "start": 388,
+                "end": 393
+            }
+        ],
+        "kpartx/devmapper.h": [
+            {
+                "name": "dm_addmap",
+                "start": 9,
+                "end": 10
+            }
+        ],
+        "kpartx/dasd.h": [
+            {
+                "name": "vtoc_ebcdic_dec",
+                "start": 245,
+                "end": 252
+            },
+            {
+                "name": "cchh2blk",
+                "start": 258,
+                "end": 271
+            },
+            {
+                "name": "cchhb2blk",
+                "start": 277,
+                "end": 291
+            }
+        ],
+        "kpartx/dasd.c": [
+            {
+                "name": "sectors512",
+                "start": 44,
+                "end": 47
+            },
+            {
+                "name": "read_dasd_pt",
+                "start": 53,
+                "end": 264
+            }
+        ],
+        "kpartx/devmapper.c": [
+            {
+                "name": "dm_task_set_cookie",
+                "start": 18,
+                "end": 21
+            },
+            {
+                "name": "dm_prereq",
+                "start": 24,
+                "end": 60
+            },
+            {
+                "name": "dm_simplecmd",
+                "start": 62,
+                "end": 88
+            },
+            {
+                "name": "dm_addmap",
+                "start": 90,
+                "end": 139
+            },
+            {
+                "name": "dm_map_present",
+                "start": 141,
+                "end": 167
+            },
+            {
+                "name": "dm_mapname",
+                "start": 170,
+                "end": 194
+            },
+            {
+                "name": "dm_get_first_dep",
+                "start": 202,
+                "end": 227
+            },
+            {
+                "name": "dm_mapuuid",
+                "start": 229,
+                "end": 252
+            },
+            {
+                "name": "dm_devn",
+                "start": 254,
+                "end": 280
+            },
+            {
+                "name": "dm_get_map",
+                "start": 282,
+                "end": 311
+            },
+            {
+                "name": "dm_no_partitions",
+                "start": 315,
+                "end": 340
+            }
+        ],
+        "kpartx/unixware.c": [
+            {
+                "name": "read_unixware_pt",
+                "start": 50,
+                "end": 83
+            }
+        ],
+        "kpartx/mac.c": [
+            {
+                "name": "read_mac_pt",
+                "start": 7,
+                "end": 47
+            }
+        ],
+        "kpartx/lopart.c": [
+            {
+                "name": "xstrdup",
+                "start": 46,
+                "end": 62
+            },
+            {
+                "name": "is_loop_device",
+                "start": 64,
+                "end": 94
+            },
+            {
+                "name": "find_loop_by_file",
+                "start": 98,
+                "end": 136
+            },
+            {
+                "name": "find_unused_loop_device",
+                "start": 138,
+                "end": 234
+            },
+            {
+                "name": "set_loop",
+                "start": 236,
+                "end": 286
+            },
+            {
+                "name": "del_loop",
+                "start": 288,
+                "end": 316
+            }
+        ],
+        "kpartx/bsd.c": [
+            {
+                "name": "read_bsd_pt",
+                "start": 49,
+                "end": 114
+            }
+        ],
+        "kpartx/kpartx.c": [
+            {
+                "name": "addpts",
+                "start": 62,
+                "end": 72
+            },
+            {
+                "name": "initpts",
+                "start": 74,
+                "end": 86
+            },
+            {
+                "name": "usage",
+                "start": 95,
+                "end": 109
+            },
+            {
+                "name": "set_delimiter",
+                "start": 111,
+                "end": 121
+            },
+            {
+                "name": "strip_slash",
+                "start": 123,
+                "end": 133
+            },
+            {
+                "name": "find_devname_offset",
+                "start": 135,
+                "end": 147
+            },
+            {
+                "name": "get_hotplug_device",
+                "start": 149,
+                "end": 192
+            },
+            {
+                "name": "main",
+                "start": 194,
+                "end": 629
+            },
+            {
+                "name": "xmalloc",
+                "start": 631,
+                "end": 646
+            },
+            {
+                "name": "sseek",
+                "start": 652,
+                "end": 664
+            },
+            {
+                "name": "getblock",
+                "start": 673,
+                "end": 697
+            },
+            {
+                "name": "get_sector_size",
+                "start": 699,
+                "end": 708
+            }
+        ],
+        "kpartx/solaris.c": [
+            {
+                "name": "read_solaris_pt",
+                "start": 32,
+                "end": 70
+            }
+        ],
+        "kpartx/dos.c": [
+            {
+                "name": "is_extended",
+                "start": 13,
+                "end": 16
+            },
+            {
+                "name": "read_extended_partition",
+                "start": 18,
+                "end": 69
+            },
+            {
+                "name": "is_gpt",
+                "start": 71,
+                "end": 74
+            },
+            {
+                "name": "read_dos_pt",
+                "start": 76,
+                "end": 110
+            }
+        ],
+        "kpartx/efi.h": [
+            {
+                "name": "efi_guidcmp",
+                "start": 50,
+                "end": 54
+            }
+        ],
+        "kpartx/gpt.c": [
+            {
+                "name": "efi_crc32",
+                "start": 86,
+                "end": 90
+            },
+            {
+                "name": "is_pmbr_valid",
+                "start": 101,
+                "end": 116
+            },
+            {
+                "name": "_get_num_sectors",
+                "start": 134,
+                "end": 145
+            },
+            {
+                "name": "last_lba",
+                "start": 158,
+                "end": 182
+            },
+            {
+                "name": "read_lastoddsector",
+                "start": 185,
+                "end": 201
+            },
+            {
+                "name": "read_lba",
+                "start": 203,
+                "end": 227
+            },
+            {
+                "name": "alloc_read_gpt_entries",
+                "start": 237,
+                "end": 257
+            },
+            {
+                "name": "alloc_read_gpt_header",
+                "start": 268,
+                "end": 283
+            },
+            {
+                "name": "is_gpt_valid",
+                "start": 295,
+                "end": 382
+            },
+            {
+                "name": "compare_gpts",
+                "start": 392,
+                "end": 492
+            },
+            {
+                "name": "find_valid_gpt",
+                "start": 504,
+                "end": 603
+            },
+            {
+                "name": "read_gpt_pt",
+                "start": 614,
+                "end": 650
+            }
+        ],
+        "kpartx/xstrncpy.c": [
+            {
+                "name": "xstrncpy",
+                "start": 6,
+                "end": 10
+            }
+        ],
+        "kpartx/ps3.c": [
+            {
+                "name": "read_disklabel",
+                "start": 34,
+                "end": 48
+            },
+            {
+                "name": "read_ps3_pt",
+                "start": 50,
+                "end": 72
+            }
+        ],
+        "libmpathpersist/mpath_updatepr.c": [
+            {
+                "name": "update_prflag",
+                "start": 21,
+                "end": 51
+            }
+        ],
+        "libmpathpersist/mpath_persist.h": [
+            {
+                "name": "mpath_persistent_reserve_in",
+                "start": 208,
+                "end": 209
+            },
+            {
+                "name": "mpath_persistent_reserve_out",
+                "start": 233,
+                "end": 235
+            }
+        ],
+        "libmpathpersist/mpath_pr_ioctl.c": [
+            {
+                "name": "prout_do_scsi_ioctl",
+                "start": 29,
+                "end": 30
+            },
+            {
+                "name": "prout_do_scsi_ioctl",
+                "start": 40,
+                "end": 139
+            },
+            {
+                "name": "format_transportids",
+                "start": 141,
+                "end": 180
+            },
+            {
+                "name": "mpath_format_readkeys",
+                "start": 182,
+                "end": 186
+            },
+            {
+                "name": "mpath_format_readresv",
+                "start": 188,
+                "end": 195
+            },
+            {
+                "name": "mpath_format_reportcapabilities",
+                "start": 197,
+                "end": 203
+            },
+            {
+                "name": "mpath_format_readfullstatus",
+                "start": 205,
+                "end": 263
+            },
+            {
+                "name": "decode_transport_id",
+                "start": 265,
+                "end": 292
+            },
+            {
+                "name": "prin_do_scsi_ioctl",
+                "start": 294,
+                "end": 399
+            },
+            {
+                "name": "mpath_translate_response",
+                "start": 401,
+                "end": 468
+            },
+            {
+                "name": "mpath_isLittleEndian",
+                "start": 470,
+                "end": 482
+            },
+            {
+                "name": "mpath_reverse_uint16_byteorder",
+                "start": 484,
+                "end": 492
+            },
+            {
+                "name": "mpath_reverse_uint32_byteorder",
+                "start": 494,
+                "end": 504
+            },
+            {
+                "name": "mpath_reverse_8bytes_order",
+                "start": 506,
+                "end": 519
+            },
+            {
+                "name": "dumpHex",
+                "start": 521,
+                "end": 559
+            },
+            {
+                "name": "get_prin_length",
+                "start": 561,
+                "end": 584
+            }
+        ],
+        "libmpathpersist/mpathpr.h": [
+            {
+                "name": "prout_do_scsi_ioctl",
+                "start": 33,
+                "end": 34
+            },
+            {
+                "name": "mpath_prout_reg",
+                "start": 41,
+                "end": 42
+            },
+            {
+                "name": "mpath_prout_common",
+                "start": 43,
+                "end": 44
+            },
+            {
+                "name": "mpath_prout_rel",
+                "start": 45,
+                "end": 46
+            },
+            {
+                "name": "send_prout_activepath",
+                "start": 47,
+                "end": 48
+            }
+        ],
+        "libmpathpersist/mpath_persist.c": [
+            {
+                "name": "mpath_lib_init",
+                "start": 35,
+                "end": 44
+            },
+            {
+                "name": "mpath_lib_exit",
+                "start": 46,
+                "end": 56
+            },
+            {
+                "name": "updatepaths",
+                "start": 58,
+                "end": 95
+            },
+            {
+                "name": "mpath_prin_activepath",
+                "start": 97,
+                "end": 126
+            },
+            {
+                "name": "mpath_persistent_reserve_in",
+                "start": 128,
+                "end": 208
+            },
+            {
+                "name": "mpath_persistent_reserve_out",
+                "start": 210,
+                "end": 341
+            },
+            {
+                "name": "get_mpvec",
+                "start": 343,
+                "end": 382
+            },
+            {
+                "name": "mpath_prin_pthread_fn",
+                "start": 384,
+                "end": 392
+            },
+            {
+                "name": "mpath_send_prin_activepath",
+                "start": 394,
+                "end": 402
+            },
+            {
+                "name": "mpath_prout_reg",
+                "start": 404,
+                "end": 528
+            },
+            {
+                "name": "mpath_prout_pthread_fn",
+                "start": 530,
+                "end": 539
+            },
+            {
+                "name": "mpath_prout_common",
+                "start": 541,
+                "end": 562
+            },
+            {
+                "name": "send_prout_activepath",
+                "start": 564,
+                "end": 595
+            },
+            {
+                "name": "mpath_prout_rel",
+                "start": 597,
+                "end": 781
+            },
+            {
+                "name": "mpath_alloc_prin_response",
+                "start": 783,
+                "end": 812
+            },
+            {
+                "name": "update_map_pr",
+                "start": 814,
+                "end": 882
+            }
+        ],
+        "mpathpersist/main.c": [
+            {
+                "name": "main",
+                "start": 44,
+                "end": 474
+            },
+            {
+                "name": "get_transportids_length",
+                "start": 476,
+                "end": 501
+            },
+            {
+                "name": "mpath_print_buf_readkeys",
+                "start": 503,
+                "end": 535
+            },
+            {
+                "name": "mpath_print_buf_readresv",
+                "start": 537,
+                "end": 571
+            },
+            {
+                "name": "mpath_print_buf_readcap",
+                "start": 573,
+                "end": 603
+            },
+            {
+                "name": "mpath_print_buf_readfullstat",
+                "start": 605,
+                "end": 658
+            },
+            {
+                "name": "usage",
+                "start": 660,
+                "end": 699
+            },
+            {
+                "name": "mpath_print_transport_id",
+                "start": 701,
+                "end": 737
+            },
+            {
+                "name": "construct_transportid",
+                "start": 739,
+                "end": 818
+            }
+        ]
+    }
+}

@@ -1,0 +1,509 @@
+{
+    "httptunnel-3.3+dfsg": {
+        "tunnel.h": [
+            {
+                "name": "tunnel_new_client",
+                "start": 70,
+                "end": 72
+            },
+            {
+                "name": "tunnel_new_server",
+                "start": 73,
+                "end": 74
+            }
+        ],
+        "common.h": [
+            {
+                "name": "set_address",
+                "start": 58,
+                "end": 59
+            },
+            {
+                "name": "read_all",
+                "start": 68,
+                "end": 103
+            },
+            {
+                "name": "write_all",
+                "start": 105,
+                "end": 128
+            },
+            {
+                "name": "do_connect",
+                "start": 130,
+                "end": 147
+            },
+            {
+                "name": "handle_input",
+                "start": 149,
+                "end": 168
+            }
+        ],
+        "common.c": [
+            {
+                "name": "log_exit",
+                "start": 51,
+                "end": 56
+            },
+            {
+                "name": "log_notice",
+                "start": 58,
+                "end": 69
+            },
+            {
+                "name": "log_error",
+                "start": 71,
+                "end": 82
+            },
+            {
+                "name": "server_socket",
+                "start": 117,
+                "end": 155
+            },
+            {
+                "name": "set_address",
+                "start": 157,
+                "end": 189
+            },
+            {
+                "name": "open_device",
+                "start": 191,
+                "end": 215
+            },
+            {
+                "name": "handle_device_input",
+                "start": 248,
+                "end": 289
+            },
+            {
+                "name": "handle_tunnel_input",
+                "start": 291,
+                "end": 332
+            },
+            {
+                "name": "name_and_port",
+                "start": 334,
+                "end": 352
+            },
+            {
+                "name": "atoi_with_postfix",
+                "start": 354,
+                "end": 394
+            }
+        ],
+        "hts.c": [
+            {
+                "name": "usage",
+                "start": 39,
+                "end": 74
+            },
+            {
+                "name": "parse_arguments",
+                "start": 76,
+                "end": 271
+            },
+            {
+                "name": "main",
+                "start": 273,
+                "end": 491
+            }
+        ],
+        "base64.c": [
+            {
+                "name": "encode_base64",
+                "start": 32,
+                "end": 93
+            }
+        ],
+        "http.h": [
+            {
+                "name": "http_put",
+                "start": 59,
+                "end": 60
+            },
+            {
+                "name": "http_post",
+                "start": 61,
+                "end": 62
+            },
+            {
+                "name": "http_create_response",
+                "start": 65,
+                "end": 68
+            },
+            {
+                "name": "http_add_header",
+                "start": 72,
+                "end": 74
+            },
+            {
+                "name": "http_create_request",
+                "start": 76,
+                "end": 79
+            }
+        ],
+        "http.c": [
+            {
+                "name": "http_method",
+                "start": 17,
+                "end": 68
+            },
+            {
+                "name": "http_get",
+                "start": 70,
+                "end": 74
+            },
+            {
+                "name": "http_put",
+                "start": 76,
+                "end": 80
+            },
+            {
+                "name": "http_post",
+                "start": 82,
+                "end": 86
+            },
+            {
+                "name": "http_error_to_errno",
+                "start": 88,
+                "end": 154
+            },
+            {
+                "name": "http_string_to_method",
+                "start": 156,
+                "end": 174
+            },
+            {
+                "name": "http_method_to_string",
+                "start": 176,
+                "end": 190
+            },
+            {
+                "name": "read_until",
+                "start": 192,
+                "end": 245
+            },
+            {
+                "name": "http_alloc_header",
+                "start": 247,
+                "end": 270
+            },
+            {
+                "name": "http_add_header",
+                "start": 272,
+                "end": 287
+            },
+            {
+                "name": "parse_header",
+                "start": 289,
+                "end": 358
+            },
+            {
+                "name": "http_write_header",
+                "start": 360,
+                "end": 404
+            },
+            {
+                "name": "http_destroy_header",
+                "start": 406,
+                "end": 419
+            },
+            {
+                "name": "http_allocate_response",
+                "start": 421,
+                "end": 438
+            },
+            {
+                "name": "http_create_response",
+                "start": 440,
+                "end": 458
+            },
+            {
+                "name": "http_parse_response",
+                "start": 460,
+                "end": 575
+            },
+            {
+                "name": "http_destroy_response",
+                "start": 577,
+                "end": 584
+            },
+            {
+                "name": "http_allocate_request",
+                "start": 586,
+                "end": 603
+            },
+            {
+                "name": "http_create_request",
+                "start": 605,
+                "end": 623
+            },
+            {
+                "name": "http_parse_request",
+                "start": 625,
+                "end": 745
+            },
+            {
+                "name": "http_write_request",
+                "start": 747,
+                "end": 776
+            },
+            {
+                "name": "http_destroy_request",
+                "start": 778,
+                "end": 785
+            },
+            {
+                "name": "http_header_find",
+                "start": 787,
+                "end": 797
+            },
+            {
+                "name": "http_header_get",
+                "start": 799,
+                "end": 809
+            }
+        ],
+        "htc.c": [
+            {
+                "name": "usage",
+                "start": 51,
+                "end": 93
+            },
+            {
+                "name": "wait_for_connection_on_socket",
+                "start": 95,
+                "end": 108
+            },
+            {
+                "name": "parse_arguments",
+                "start": 110,
+                "end": 396
+            },
+            {
+                "name": "main",
+                "start": 398,
+                "end": 674
+            }
+        ],
+        "tunnel.c": [
+            {
+                "name": "REQ_TO_STRING",
+                "start": 57,
+                "end": 71
+            },
+            {
+                "name": "tunnel_is_disconnected",
+                "start": 97,
+                "end": 101
+            },
+            {
+                "name": "tunnel_is_connected",
+                "start": 103,
+                "end": 107
+            },
+            {
+                "name": "tunnel_is_server",
+                "start": 109,
+                "end": 113
+            },
+            {
+                "name": "tunnel_is_client",
+                "start": 115,
+                "end": 119
+            },
+            {
+                "name": "get_proto_number",
+                "start": 122,
+                "end": 136
+            },
+            {
+                "name": "tunnel_in_setsockopts",
+                "start": 139,
+                "end": 170
+            },
+            {
+                "name": "tunnel_out_setsockopts",
+                "start": 172,
+                "end": 309
+            },
+            {
+                "name": "tunnel_out_disconnect",
+                "start": 311,
+                "end": 332
+            },
+            {
+                "name": "tunnel_in_disconnect",
+                "start": 334,
+                "end": 344
+            },
+            {
+                "name": "tunnel_out_connect",
+                "start": 346,
+                "end": 397
+            },
+            {
+                "name": "tunnel_in_connect",
+                "start": 399,
+                "end": 478
+            },
+            {
+                "name": "tunnel_write_data",
+                "start": 480,
+                "end": 490
+            },
+            {
+                "name": "tunnel_write_request",
+                "start": 492,
+                "end": 655
+            },
+            {
+                "name": "tunnel_connect",
+                "start": 657,
+                "end": 679
+            },
+            {
+                "name": "tunnel_write_or_padding",
+                "start": 681,
+                "end": 718
+            },
+            {
+                "name": "tunnel_write",
+                "start": 720,
+                "end": 729
+            },
+            {
+                "name": "tunnel_padding",
+                "start": 731,
+                "end": 744
+            },
+            {
+                "name": "tunnel_close",
+                "start": 746,
+                "end": 804
+            },
+            {
+                "name": "tunnel_read_request",
+                "start": 806,
+                "end": 887
+            },
+            {
+                "name": "tunnel_read",
+                "start": 889,
+                "end": 988
+            },
+            {
+                "name": "tunnel_pollin_fd",
+                "start": 990,
+                "end": 1011
+            },
+            {
+                "name": "tunnel_maybe_pad",
+                "start": 1018,
+                "end": 1033
+            },
+            {
+                "name": "tunnel_accept",
+                "start": 1080,
+                "end": 1245
+            },
+            {
+                "name": "tunnel_new_server",
+                "start": 1247,
+                "end": 1299
+            },
+            {
+                "name": "tunnel_new_client",
+                "start": 1301,
+                "end": 1360
+            },
+            {
+                "name": "tunnel_destroy",
+                "start": 1362,
+                "end": 1372
+            },
+            {
+                "name": "tunnel_opt",
+                "start": 1374,
+                "end": 1441
+            },
+            {
+                "name": "tunnel_setopt",
+                "start": 1443,
+                "end": 1447
+            },
+            {
+                "name": "tunnel_getopt",
+                "start": 1449,
+                "end": 1453
+            }
+        ],
+        "port/daemon.c": [
+            {
+                "name": "daemon",
+                "start": 16,
+                "end": 39
+            }
+        ],
+        "port/getopt.h": [
+            {
+                "name": "getopt_long",
+                "start": 112,
+                "end": 113
+            },
+            {
+                "name": "getopt_long_only",
+                "start": 114,
+                "end": 116
+            },
+            {
+                "name": "_getopt_internal",
+                "start": 119,
+                "end": 122
+            }
+        ],
+        "port/endprotoent.c": [
+            {
+                "name": "endprotoent",
+                "start": 12,
+                "end": 16
+            }
+        ],
+        "port/vsnprintf.c": [
+            {
+                "name": "vsmprintf",
+                "start": 18,
+                "end": 36
+            },
+            {
+                "name": "vsnprintf",
+                "start": 39,
+                "end": 63
+            },
+            {
+                "name": "snprintf",
+                "start": 65,
+                "end": 75
+            }
+        ],
+        "port/poll.c": [
+            {
+                "name": "poll",
+                "start": 20,
+                "end": 71
+            }
+        ],
+        "port/vsyslog.c": [
+            {
+                "name": "syslog",
+                "start": 14,
+                "end": 26
+            },
+            {
+                "name": "vsyslog",
+                "start": 30,
+                "end": 37
+            }
+        ]
+    }
+}

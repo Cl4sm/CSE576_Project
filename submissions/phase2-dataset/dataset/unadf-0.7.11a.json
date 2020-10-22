@@ -1,0 +1,967 @@
+{
+    "unadf-0.7.11a": {
+        "Demo/unadf.c": [
+            {
+                "name": "mkdirOrLogErr",
+                "start": 54,
+                "end": 59
+            },
+            {
+                "name": "help",
+                "start": 61,
+                "end": 73
+            },
+            {
+                "name": "printEnt",
+                "start": 75,
+                "end": 103
+            },
+            {
+                "name": "extractFile",
+                "start": 106,
+                "end": 154
+            },
+            {
+                "name": "extractTree",
+                "start": 157,
+                "end": 203
+            },
+            {
+                "name": "printTree",
+                "start": 206,
+                "end": 230
+            },
+            {
+                "name": "printDev",
+                "start": 233,
+                "end": 253
+            },
+            {
+                "name": "printVol",
+                "start": 256,
+                "end": 291
+            },
+            {
+                "name": "processFile",
+                "start": 294,
+                "end": 370
+            },
+            {
+                "name": "main",
+                "start": 373,
+                "end": 569
+            }
+        ],
+        "Lib/adf_util.h": [
+            {
+                "name": "adfTime2AmigaTime",
+                "start": 41,
+                "end": 42
+            },
+            {
+                "name": "adfGiveCurrentTime",
+                "start": 43,
+                "end": 44
+            }
+        ],
+        "Lib/adf_disk.h": [
+            {
+                "name": "adfCreateVol",
+                "start": 41,
+                "end": 42
+            }
+        ],
+        "Lib/adf_dir.h": [
+            {
+                "name": "adfCreateFile",
+                "start": 44,
+                "end": 45
+            },
+            {
+                "name": "adfNameToEntryBlk",
+                "start": 63,
+                "end": 64
+            }
+        ],
+        "Lib/adf_file.h": [
+            {
+                "name": "adfGetFileBlocks",
+                "start": 33,
+                "end": 34
+            }
+        ],
+        "Lib/adf_salv.c": [
+            {
+                "name": "adfFreeGenBlock",
+                "start": 45,
+                "end": 49
+            },
+            {
+                "name": "adfFreeDelList",
+                "start": 56,
+                "end": 66
+            },
+            {
+                "name": "adfGetDelEnt",
+                "start": 73,
+                "end": 110
+            },
+            {
+                "name": "adfReadGenBlock",
+                "start": 117,
+                "end": 150
+            },
+            {
+                "name": "adfCheckParent",
+                "start": 157,
+                "end": 175
+            },
+            {
+                "name": "adfUndelDir",
+                "start": 182,
+                "end": 220
+            },
+            {
+                "name": "adfUndelFile",
+                "start": 227,
+                "end": 274
+            },
+            {
+                "name": "adfUndelEntry",
+                "start": 281,
+                "end": 299
+            },
+            {
+                "name": "adfCheckFile",
+                "start": 306,
+                "end": 354
+            },
+            {
+                "name": "adfCheckDir",
+                "start": 361,
+                "end": 369
+            },
+            {
+                "name": "adfCheckEntry",
+                "start": 376,
+                "end": 396
+            }
+        ],
+        "Lib/adf_dir.c": [
+            {
+                "name": "adfRenameEntry",
+                "start": 51,
+                "end": 177
+            },
+            {
+                "name": "adfRemoveEntry",
+                "start": 183,
+                "end": 251
+            },
+            {
+                "name": "adfSetEntryComment",
+                "start": 258,
+                "end": 286
+            },
+            {
+                "name": "adfSetEntryAccess",
+                "start": 293,
+                "end": 319
+            },
+            {
+                "name": "isDirEmpty",
+                "start": 326,
+                "end": 335
+            },
+            {
+                "name": "adfFreeDirList",
+                "start": 342,
+                "end": 354
+            },
+            {
+                "name": "adfGetRDirEnt",
+                "start": 361,
+                "end": 445
+            },
+            {
+                "name": "adfGetDirEnt",
+                "start": 452,
+                "end": 455
+            },
+            {
+                "name": "adfFreeEntry",
+                "start": 462,
+                "end": 471
+            },
+            {
+                "name": "adfToRootDir",
+                "start": 478,
+                "end": 483
+            },
+            {
+                "name": "adfChangeDir",
+                "start": 490,
+                "end": 507
+            },
+            {
+                "name": "adfParentDir",
+                "start": 514,
+                "end": 524
+            },
+            {
+                "name": "adfEntBlock2Entry",
+                "start": 531,
+                "end": 591
+            },
+            {
+                "name": "adfNameToEntryBlk",
+                "start": 598,
+                "end": 648
+            },
+            {
+                "name": "adfAccess2String",
+                "start": 655,
+                "end": 671
+            },
+            {
+                "name": "adfCreateEntry",
+                "start": 681,
+                "end": 771
+            },
+            {
+                "name": "adfIntlToUpper",
+                "start": 780,
+                "end": 784
+            },
+            {
+                "name": "adfToUpper",
+                "start": 786,
+                "end": 790
+            },
+            {
+                "name": "myToUpper",
+                "start": 796,
+                "end": 808
+            },
+            {
+                "name": "adfGetHashValue",
+                "start": 815,
+                "end": 833
+            },
+            {
+                "name": "printEntry",
+                "start": 840,
+                "end": 854
+            },
+            {
+                "name": "adfCreateDir",
+                "start": 861,
+                "end": 904
+            },
+            {
+                "name": "adfCreateFile",
+                "start": 911,
+                "end": 949
+            },
+            {
+                "name": "adfReadEntryBlock",
+                "start": 956,
+                "end": 983
+            },
+            {
+                "name": "adfWriteEntryBlock",
+                "start": 990,
+                "end": 1008
+            },
+            {
+                "name": "adfWriteDirBlock",
+                "start": 1015,
+                "end": 1038
+            }
+        ],
+        "Lib/adf_cache.c": [
+            {
+                "name": "adfGetDirEntCache",
+                "start": 60,
+                "end": 132
+            },
+            {
+                "name": "adfGetCacheEntry",
+                "start": 142,
+                "end": 190
+            },
+            {
+                "name": "adfPutCacheEntry",
+                "start": 198,
+                "end": 238
+            },
+            {
+                "name": "adfEntry2CacheEntry",
+                "start": 246,
+                "end": 276
+            },
+            {
+                "name": "adfDelFromCache",
+                "start": 284,
+                "end": 348
+            },
+            {
+                "name": "adfAddInCache",
+                "start": 355,
+                "end": 435
+            },
+            {
+                "name": "adfUpdateCache",
+                "start": 442,
+                "end": 516
+            },
+            {
+                "name": "adfCreateEmptyCache",
+                "start": 523,
+                "end": 559
+            },
+            {
+                "name": "adfReadDirCBlock",
+                "start": 566,
+                "end": 585
+            },
+            {
+                "name": "adfWriteDirCBlock",
+                "start": 592,
+                "end": 614
+            }
+        ],
+        "Lib/adf_file.c": [
+            {
+                "name": "adfFileTruncate",
+                "start": 43,
+                "end": 46
+            },
+            {
+                "name": "adfFlushFile",
+                "start": 53,
+                "end": 89
+            },
+            {
+                "name": "adfGetFileBlocks",
+                "start": 96,
+                "end": 138
+            },
+            {
+                "name": "adfFreeFileBlocks",
+                "start": 144,
+                "end": 163
+            },
+            {
+                "name": "adfFileRealSize",
+                "start": 173,
+                "end": 196
+            },
+            {
+                "name": "adfWriteFileHdrBlock",
+                "start": 203,
+                "end": 224
+            },
+            {
+                "name": "adfFileSeek",
+                "start": 231,
+                "end": 258
+            },
+            {
+                "name": "adfOpenFile",
+                "start": 265,
+                "end": 336
+            },
+            {
+                "name": "adfCloseFile",
+                "start": 343,
+                "end": 362
+            },
+            {
+                "name": "adfReadFile",
+                "start": 369,
+                "end": 407
+            },
+            {
+                "name": "adfEndOfFile",
+                "start": 414,
+                "end": 417
+            },
+            {
+                "name": "adfReadNextFileBlock",
+                "start": 424,
+                "end": 466
+            },
+            {
+                "name": "adfWriteFile",
+                "start": 473,
+                "end": 518
+            },
+            {
+                "name": "adfCreateNextFileBlock",
+                "start": 525,
+                "end": 620
+            },
+            {
+                "name": "adfPos2DataBlock",
+                "start": 627,
+                "end": 647
+            },
+            {
+                "name": "adfReadDataBlock",
+                "start": 654,
+                "end": 684
+            },
+            {
+                "name": "adfWriteDataBlock",
+                "start": 691,
+                "end": 717
+            },
+            {
+                "name": "adfReadFileExtBlock",
+                "start": 724,
+                "end": 751
+            },
+            {
+                "name": "adfWriteFileExtBlock",
+                "start": 758,
+                "end": 780
+            }
+        ],
+        "Lib/adf_dump.h": [
+            {
+                "name": "adfCreateDumpDevice",
+                "start": 31,
+                "end": 32
+            }
+        ],
+        "Lib/adf_hd.c": [
+            {
+                "name": "adfDevType",
+                "start": 54,
+                "end": 69
+            },
+            {
+                "name": "adfDeviceInfo",
+                "start": 80,
+                "end": 121
+            },
+            {
+                "name": "adfFreeTmpVolList",
+                "start": 128,
+                "end": 142
+            },
+            {
+                "name": "adfMountHdFile",
+                "start": 149,
+                "end": 198
+            },
+            {
+                "name": "adfMountHd",
+                "start": 208,
+                "end": 314
+            },
+            {
+                "name": "adfMountFlop",
+                "start": 325,
+                "end": 369
+            },
+            {
+                "name": "adfMountDev",
+                "start": 379,
+                "end": 465
+            },
+            {
+                "name": "adfCreateHdHeader",
+                "start": 479,
+                "end": 555
+            },
+            {
+                "name": "adfCreateFlop",
+                "start": 564,
+                "end": 588
+            },
+            {
+                "name": "adfCreateHd",
+                "start": 599,
+                "end": 641
+            },
+            {
+                "name": "adfUnMountDev",
+                "start": 648,
+                "end": 671
+            },
+            {
+                "name": "adfReadRDSKblock",
+                "start": 679,
+                "end": 724
+            },
+            {
+                "name": "adfWriteRDSKblock",
+                "start": 731,
+                "end": 773
+            },
+            {
+                "name": "adfReadPARTblock",
+                "start": 780,
+                "end": 819
+            },
+            {
+                "name": "adfWritePARTblock",
+                "start": 826,
+                "end": 867
+            },
+            {
+                "name": "adfReadFSHDblock",
+                "start": 873,
+                "end": 906
+            },
+            {
+                "name": "adfWriteFSHDblock",
+                "start": 913,
+                "end": 949
+            },
+            {
+                "name": "adfReadLSEGblock",
+                "start": 956,
+                "end": 989
+            },
+            {
+                "name": "adfWriteLSEGblock",
+                "start": 996,
+                "end": 1033
+            }
+        ],
+        "Lib/adf_bitm.c": [
+            {
+                "name": "adfUpdateBitmap",
+                "start": 46,
+                "end": 73
+            },
+            {
+                "name": "adfCountFreeBlocks",
+                "start": 80,
+                "end": 91
+            },
+            {
+                "name": "adfReadBitmap",
+                "start": 98,
+                "end": 178
+            },
+            {
+                "name": "adfIsBlockFree",
+                "start": 185,
+                "end": 199
+            },
+            {
+                "name": "adfSetBlockFree",
+                "start": 206,
+                "end": 224
+            },
+            {
+                "name": "adfSetBlockUsed",
+                "start": 231,
+                "end": 243
+            },
+            {
+                "name": "adfGet1FreeBlock",
+                "start": 250,
+                "end": 256
+            },
+            {
+                "name": "adfGetFreeBlocks",
+                "start": 262,
+                "end": 291
+            },
+            {
+                "name": "adfCreateBitmap",
+                "start": 299,
+                "end": 347
+            },
+            {
+                "name": "adfWriteNewBitmap",
+                "start": 357,
+                "end": 436
+            },
+            {
+                "name": "adfReadBitmapBlock",
+                "start": 443,
+                "end": 462
+            },
+            {
+                "name": "adfWriteBitmapBlock",
+                "start": 470,
+                "end": 490
+            },
+            {
+                "name": "adfReadBitmapExtBlock",
+                "start": 498,
+                "end": 512
+            },
+            {
+                "name": "adfWriteBitmapExtBlock",
+                "start": 519,
+                "end": 535
+            },
+            {
+                "name": "adfFreeBitmap",
+                "start": 542,
+                "end": 558
+            }
+        ],
+        "Lib/adf_util.c": [
+            {
+                "name": "swLong",
+                "start": 44,
+                "end": 50
+            },
+            {
+                "name": "swShort",
+                "start": 52,
+                "end": 56
+            },
+            {
+                "name": "newCell",
+                "start": 63,
+                "end": 78
+            },
+            {
+                "name": "freeList",
+                "start": 85,
+                "end": 93
+            },
+            {
+                "name": "adfDays2Date",
+                "start": 104,
+                "end": 141
+            },
+            {
+                "name": "adfIsLeap",
+                "start": 150,
+                "end": 154
+            },
+            {
+                "name": "adfGiveCurrentTime",
+                "start": 162,
+                "end": 180
+            },
+            {
+                "name": "adfTime2AmigaTime",
+                "start": 188,
+                "end": 223
+            },
+            {
+                "name": "dumpBlock",
+                "start": 233,
+                "end": 250
+            }
+        ],
+        "Lib/adf_disk.c": [
+            {
+                "name": "adfInstallBootBlock",
+                "start": 56,
+                "end": 77
+            },
+            {
+                "name": "isSectNumValid",
+                "start": 84,
+                "end": 87
+            },
+            {
+                "name": "adfVolumeInfo",
+                "start": 95,
+                "end": 151
+            },
+            {
+                "name": "adfMount",
+                "start": 160,
+                "end": 208
+            },
+            {
+                "name": "adfUnMount",
+                "start": 218,
+                "end": 229
+            },
+            {
+                "name": "adfCreateVol",
+                "start": 238,
+                "end": 358
+            },
+            {
+                "name": "adfReadBlock",
+                "start": 368,
+                "end": 406
+            },
+            {
+                "name": "adfWriteBlock",
+                "start": 413,
+                "end": 450
+            }
+        ],
+        "Lib/adf_link.h": [
+            {
+                "name": "adfBlockPtr2EntryName",
+                "start": 32,
+                "end": 33
+            }
+        ],
+        "Lib/adf_link.c": [
+            {
+                "name": "path",
+                "start": 39,
+                "end": 55
+            },
+            {
+                "name": "adfBlockPtr2EntryName",
+                "start": 62,
+                "end": 84
+            }
+        ],
+        "Lib/adf_raw.c": [
+            {
+                "name": "swapEndian",
+                "start": 67,
+                "end": 103
+            },
+            {
+                "name": "adfReadRootBlock",
+                "start": 114,
+                "end": 137
+            },
+            {
+                "name": "adfWriteRootBlock",
+                "start": 145,
+                "end": 177
+            },
+            {
+                "name": "adfReadBootBlock",
+                "start": 185,
+                "end": 212
+            },
+            {
+                "name": "adfWriteBootBlock",
+                "start": 220,
+                "end": 250
+            },
+            {
+                "name": "adfNormalSum",
+                "start": 260,
+                "end": 273
+            },
+            {
+                "name": "adfBitmapSum",
+                "start": 279,
+                "end": 289
+            },
+            {
+                "name": "adfBootSum",
+                "start": 296,
+                "end": 314
+            },
+            {
+                "name": "adfBootSum2",
+                "start": 316,
+                "end": 334
+            }
+        ],
+        "Lib/adf_env.h": [
+            {
+                "name": "adfSetEnvFct",
+                "start": 32,
+                "end": 33
+            }
+        ],
+        "Lib/adf_env.c": [
+            {
+                "name": "rwHeadAccess",
+                "start": 45,
+                "end": 50
+            },
+            {
+                "name": "progressBar",
+                "start": 52,
+                "end": 55
+            },
+            {
+                "name": "Warning",
+                "start": 57,
+                "end": 59
+            },
+            {
+                "name": "Error",
+                "start": 61,
+                "end": 64
+            },
+            {
+                "name": "Verbose",
+                "start": 66,
+                "end": 68
+            },
+            {
+                "name": "Changed",
+                "start": 70,
+                "end": 85
+            },
+            {
+                "name": "adfEnvInitDefault",
+                "start": 91,
+                "end": 152
+            },
+            {
+                "name": "adfEnvCleanUp",
+                "start": 159,
+                "end": 162
+            },
+            {
+                "name": "adfChgEnvProp",
+                "start": 178,
+                "end": 219
+            },
+            {
+                "name": "adfSetEnvFct",
+                "start": 225,
+                "end": 236
+            },
+            {
+                "name": "adfGetVersionNumber",
+                "start": 243,
+                "end": 246
+            },
+            {
+                "name": "adfGetVersionDate",
+                "start": 253,
+                "end": 256
+            }
+        ],
+        "Lib/adf_dump.c": [
+            {
+                "name": "adfInitDumpDevice",
+                "start": 44,
+                "end": 88
+            },
+            {
+                "name": "adfReadDumpSector",
+                "start": 95,
+                "end": 113
+            },
+            {
+                "name": "adfWriteDumpSector",
+                "start": 120,
+                "end": 135
+            },
+            {
+                "name": "adfReleaseDumpDevice",
+                "start": 142,
+                "end": 155
+            },
+            {
+                "name": "adfCreateHdFile",
+                "start": 162,
+                "end": 185
+            },
+            {
+                "name": "adfCreateDumpDevice",
+                "start": 193,
+                "end": 259
+            }
+        ],
+        "Lib/Generic/adf_nativ.c": [
+            {
+                "name": "myInitDevice",
+                "start": 38,
+                "end": 60
+            },
+            {
+                "name": "myReadSector",
+                "start": 67,
+                "end": 70
+            },
+            {
+                "name": "myWriteSector",
+                "start": 77,
+                "end": 80
+            },
+            {
+                "name": "myReleaseDevice",
+                "start": 88,
+                "end": 97
+            },
+            {
+                "name": "adfInitNativeFct",
+                "start": 104,
+                "end": 115
+            },
+            {
+                "name": "myIsDevNative",
+                "start": 122,
+                "end": 125
+            }
+        ],
+        "Lib/Win32/adf_nativ.c": [
+            {
+                "name": "Win32InitDevice",
+                "start": 41,
+                "end": 76
+            },
+            {
+                "name": "Win32ReadSector",
+                "start": 79,
+                "end": 91
+            },
+            {
+                "name": "Win32WriteSector",
+                "start": 94,
+                "end": 106
+            },
+            {
+                "name": "Win32ReleaseDevice",
+                "start": 109,
+                "end": 121
+            },
+            {
+                "name": "adfInitNativeFct",
+                "start": 124,
+                "end": 135
+            },
+            {
+                "name": "Win32IsDevNative",
+                "start": 138,
+                "end": 141
+            }
+        ],
+        "Lib/Win32/nt4_dev.c": [
+            {
+                "name": "NT4OpenDrive",
+                "start": 29,
+                "end": 56
+            },
+            {
+                "name": "NT4CloseDrive",
+                "start": 58,
+                "end": 72
+            },
+            {
+                "name": "NT4ReadSector",
+                "start": 74,
+                "end": 95
+            },
+            {
+                "name": "NT4WriteSector",
+                "start": 97,
+                "end": 122
+            },
+            {
+                "name": "NT4GetDriveSize",
+                "start": 124,
+                "end": 140
+            }
+        ],
+        "Lib/Win32/adfvolinfo.c": [
+            {
+                "name": "adfVolumeInfoWin",
+                "start": 31,
+                "end": 103
+            }
+        ]
+    }
+}

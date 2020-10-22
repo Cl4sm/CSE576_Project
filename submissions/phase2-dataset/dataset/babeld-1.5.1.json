@@ -1,0 +1,1686 @@
+{
+    "babeld-1.5.1": {
+        "interface.h": [
+            {
+                "name": "if_up",
+                "start": 116,
+                "end": 120
+            }
+        ],
+        "source.h": [
+            {
+                "name": "find_source",
+                "start": 36,
+                "end": 39
+            },
+            {
+                "name": "update_source",
+                "start": 43,
+                "end": 44
+            }
+        ],
+        "neighbour.h": [
+            {
+                "name": "find_neighbour",
+                "start": 51,
+                "end": 52
+            }
+        ],
+        "xroute.h": [
+            {
+                "name": "add_xroute",
+                "start": 35,
+                "end": 36
+            }
+        ],
+        "route.h": [
+            {
+                "name": "route_metric",
+                "start": 54,
+                "end": 59
+            },
+            {
+                "name": "route_metric_noninterfering",
+                "start": 61,
+                "end": 70
+            },
+            {
+                "name": "find_route",
+                "start": 72,
+                "end": 73
+            },
+            {
+                "name": "find_installed_route",
+                "start": 74,
+                "end": 75
+            },
+            {
+                "name": "update_feasible",
+                "start": 90,
+                "end": 91
+            },
+            {
+                "name": "find_best_route",
+                "start": 94,
+                "end": 96
+            },
+            {
+                "name": "install_best_route",
+                "start": 97,
+                "end": 98
+            },
+            {
+                "name": "update_route",
+                "start": 102,
+                "end": 107
+            },
+            {
+                "name": "send_unfeasible_request",
+                "start": 109,
+                "end": 111
+            },
+            {
+                "name": "send_triggered_update",
+                "start": 113,
+                "end": 114
+            },
+            {
+                "name": "route_changed",
+                "start": 115,
+                "end": 116
+            }
+        ],
+        "util.h": [
+            {
+                "name": "seqno_compare",
+                "start": 50,
+                "end": 57
+            },
+            {
+                "name": "seqno_minus",
+                "start": 59,
+                "end": 63
+            },
+            {
+                "name": "seqno_plus",
+                "start": 65,
+                "end": 69
+            },
+            {
+                "name": "time_us",
+                "start": 73,
+                "end": 77
+            },
+            {
+                "name": "timeval_minus",
+                "start": 80,
+                "end": 81
+            },
+            {
+                "name": "timeval_minus_msec",
+                "start": 82,
+                "end": 83
+            },
+            {
+                "name": "timeval_add_msec",
+                "start": 84,
+                "end": 85
+            },
+            {
+                "name": "timeval_compare",
+                "start": 86,
+                "end": 87
+            },
+            {
+                "name": "do_debugf",
+                "start": 92,
+                "end": 93
+            },
+            {
+                "name": "in_prefix",
+                "start": 94,
+                "end": 96
+            },
+            {
+                "name": "mask_prefix",
+                "start": 97,
+                "end": 99
+            },
+            {
+                "name": "parse_net",
+                "start": 105,
+                "end": 106
+            }
+        ],
+        "local.c": [
+            {
+                "name": "local_read",
+                "start": 48,
+                "end": 61
+            },
+            {
+                "name": "write_timeout",
+                "start": 63,
+                "end": 92
+            },
+            {
+                "name": "local_notify_self_1",
+                "start": 94,
+                "end": 120
+            },
+            {
+                "name": "local_kind",
+                "start": 122,
+                "end": 131
+            },
+            {
+                "name": "local_notify_neighbour_1",
+                "start": 133,
+                "end": 173
+            },
+            {
+                "name": "local_notify_neighbour",
+                "start": 175,
+                "end": 181
+            },
+            {
+                "name": "local_notify_xroute_1",
+                "start": 183,
+                "end": 206
+            },
+            {
+                "name": "local_notify_xroute",
+                "start": 208,
+                "end": 214
+            },
+            {
+                "name": "local_notify_route_1",
+                "start": 216,
+                "end": 246
+            },
+            {
+                "name": "local_notify_route",
+                "start": 248,
+                "end": 254
+            },
+            {
+                "name": "local_notify_all_1",
+                "start": 256,
+                "end": 304
+            }
+        ],
+        "util.c": [
+            {
+                "name": "roughly",
+                "start": 40,
+                "end": 49
+            },
+            {
+                "name": "timeval_minus",
+                "start": 51,
+                "end": 62
+            },
+            {
+                "name": "timeval_minus_msec",
+                "start": 64,
+                "end": 83
+            },
+            {
+                "name": "timeval_add_msec",
+                "start": 85,
+                "end": 97
+            },
+            {
+                "name": "timeval_compare",
+                "start": 99,
+                "end": 112
+            },
+            {
+                "name": "timeval_min",
+                "start": 115,
+                "end": 124
+            },
+            {
+                "name": "timeval_min_sec",
+                "start": 126,
+                "end": 133
+            },
+            {
+                "name": "parse_nat",
+                "start": 136,
+                "end": 153
+            },
+            {
+                "name": "parse_thousands",
+                "start": 157,
+                "end": 197
+            },
+            {
+                "name": "do_debugf",
+                "start": 199,
+                "end": 209
+            },
+            {
+                "name": "in_prefix",
+                "start": 211,
+                "end": 229
+            },
+            {
+                "name": "mask_prefix",
+                "start": 231,
+                "end": 246
+            },
+            {
+                "name": "format_address",
+                "start": 254,
+                "end": 265
+            },
+            {
+                "name": "format_prefix",
+                "start": 267,
+                "end": 284
+            },
+            {
+                "name": "format_eui64",
+                "start": 286,
+                "end": 296
+            },
+            {
+                "name": "format_thousands",
+                "start": 298,
+                "end": 306
+            },
+            {
+                "name": "parse_address",
+                "start": 308,
+                "end": 331
+            },
+            {
+                "name": "parse_net",
+                "start": 333,
+                "end": 389
+            },
+            {
+                "name": "parse_eui64",
+                "start": 391,
+                "end": 416
+            },
+            {
+                "name": "wait_for_fd",
+                "start": 418,
+                "end": 436
+            },
+            {
+                "name": "martian_prefix",
+                "start": 438,
+                "end": 449
+            },
+            {
+                "name": "linklocal",
+                "start": 451,
+                "end": 455
+            },
+            {
+                "name": "v4mapped",
+                "start": 457,
+                "end": 461
+            },
+            {
+                "name": "v4tov6",
+                "start": 463,
+                "end": 468
+            },
+            {
+                "name": "daemonise",
+                "start": 470,
+                "end": 490
+            }
+        ],
+        "kernel.h": [
+            {
+                "name": "kernel_interface_ipv4",
+                "start": 57,
+                "end": 58
+            },
+            {
+                "name": "kernel_route",
+                "start": 62,
+                "end": 65
+            },
+            {
+                "name": "kernel_addresses",
+                "start": 68,
+                "end": 69
+            }
+        ],
+        "message.h": [
+            {
+                "name": "parse_packet",
+                "start": 60,
+                "end": 61
+            },
+            {
+                "name": "send_ack",
+                "start": 64,
+                "end": 65
+            },
+            {
+                "name": "send_update",
+                "start": 69,
+                "end": 70
+            },
+            {
+                "name": "send_update_resend",
+                "start": 71,
+                "end": 72
+            },
+            {
+                "name": "send_request",
+                "start": 78,
+                "end": 79
+            },
+            {
+                "name": "send_unicast_request",
+                "start": 80,
+                "end": 81
+            },
+            {
+                "name": "send_multihop_request",
+                "start": 82,
+                "end": 85
+            },
+            {
+                "name": "send_unicast_multihop_request",
+                "start": 86,
+                "end": 90
+            },
+            {
+                "name": "send_request_resend",
+                "start": 91,
+                "end": 93
+            },
+            {
+                "name": "handle_request",
+                "start": 94,
+                "end": 96
+            }
+        ],
+        "configuration.h": [
+            {
+                "name": "input_filter",
+                "start": 43,
+                "end": 45
+            },
+            {
+                "name": "output_filter",
+                "start": 46,
+                "end": 47
+            },
+            {
+                "name": "redistribute_filter",
+                "start": 48,
+                "end": 49
+            }
+        ],
+        "xroute.c": [
+            {
+                "name": "find_xroute",
+                "start": 45,
+                "end": 55
+            },
+            {
+                "name": "flush_xroute",
+                "start": 57,
+                "end": 85
+            },
+            {
+                "name": "add_xroute",
+                "start": 87,
+                "end": 120
+            },
+            {
+                "name": "xroutes_estimate",
+                "start": 123,
+                "end": 127
+            },
+            {
+                "name": "xroute_stream",
+                "start": 133,
+                "end": 143
+            },
+            {
+                "name": "xroute_stream_next",
+                "start": 146,
+                "end": 153
+            },
+            {
+                "name": "xroute_stream_done",
+                "start": 155,
+                "end": 159
+            },
+            {
+                "name": "check_xroutes",
+                "start": 161,
+                "end": 271
+            }
+        ],
+        "source.c": [
+            {
+                "name": "find_source",
+                "start": 37,
+                "end": 75
+            },
+            {
+                "name": "retain_source",
+                "start": 77,
+                "end": 83
+            },
+            {
+                "name": "release_source",
+                "start": 85,
+                "end": 90
+            },
+            {
+                "name": "flush_source",
+                "start": 92,
+                "end": 110
+            },
+            {
+                "name": "update_source",
+                "start": 112,
+                "end": 130
+            },
+            {
+                "name": "expire_sources",
+                "start": 132,
+                "end": 150
+            },
+            {
+                "name": "check_sources_released",
+                "start": 152,
+                "end": 164
+            }
+        ],
+        "resend.h": [
+            {
+                "name": "find_request",
+                "start": 44,
+                "end": 45
+            },
+            {
+                "name": "record_resend",
+                "start": 47,
+                "end": 49
+            },
+            {
+                "name": "unsatisfied_request",
+                "start": 50,
+                "end": 51
+            },
+            {
+                "name": "request_redundant",
+                "start": 52,
+                "end": 54
+            },
+            {
+                "name": "satisfy_request",
+                "start": 55,
+                "end": 57
+            }
+        ],
+        "resend.c": [
+            {
+                "name": "resend_match",
+                "start": 39,
+                "end": 45
+            },
+            {
+                "name": "flush_resends",
+                "start": 49,
+                "end": 53
+            },
+            {
+                "name": "find_resend",
+                "start": 55,
+                "end": 74
+            },
+            {
+                "name": "find_request",
+                "start": 76,
+                "end": 81
+            },
+            {
+                "name": "record_resend",
+                "start": 83,
+                "end": 145
+            },
+            {
+                "name": "resend_expired",
+                "start": 147,
+                "end": 156
+            },
+            {
+                "name": "unsatisfied_request",
+                "start": 158,
+                "end": 173
+            },
+            {
+                "name": "request_redundant",
+                "start": 176,
+                "end": 204
+            },
+            {
+                "name": "satisfy_request",
+                "start": 206,
+                "end": 231
+            },
+            {
+                "name": "expire_resend",
+                "start": 233,
+                "end": 260
+            },
+            {
+                "name": "recompute_resend_time",
+                "start": 262,
+                "end": 279
+            },
+            {
+                "name": "do_resend",
+                "start": 281,
+                "end": 311
+            }
+        ],
+        "configuration.c": [
+            {
+                "name": "skip_whitespace",
+                "start": 58,
+                "end": 64
+            },
+            {
+                "name": "skip_to_eol",
+                "start": 66,
+                "end": 74
+            },
+            {
+                "name": "getword",
+                "start": 76,
+                "end": 93
+            },
+            {
+                "name": "getstring",
+                "start": 95,
+                "end": 130
+            },
+            {
+                "name": "getint",
+                "start": 132,
+                "end": 148
+            },
+            {
+                "name": "getthousands",
+                "start": 150,
+                "end": 166
+            },
+            {
+                "name": "getbool",
+                "start": 168,
+                "end": 189
+            },
+            {
+                "name": "getip",
+                "start": 191,
+                "end": 218
+            },
+            {
+                "name": "getid",
+                "start": 220,
+                "end": 245
+            },
+            {
+                "name": "getnet",
+                "start": 247,
+                "end": 274
+            },
+            {
+                "name": "parse_filter",
+                "start": 276,
+                "end": 377
+            },
+            {
+                "name": "parse_anonymous_ifconf",
+                "start": 379,
+                "end": 509
+            },
+            {
+                "name": "parse_ifconf",
+                "start": 511,
+                "end": 537
+            },
+            {
+                "name": "add_filter",
+                "start": 539,
+                "end": 553
+            },
+            {
+                "name": "merge_ifconf",
+                "start": 555,
+                "end": 584
+            },
+            {
+                "name": "add_ifconf",
+                "start": 586,
+                "end": 608
+            },
+            {
+                "name": "parse_option",
+                "start": 610,
+                "end": 730
+            },
+            {
+                "name": "parse_config",
+                "start": 732,
+                "end": 798
+            },
+            {
+                "name": "gnc_file",
+                "start": 805,
+                "end": 813
+            },
+            {
+                "name": "parse_config_from_file",
+                "start": 815,
+                "end": 832
+            },
+            {
+                "name": "gnc_string",
+                "start": 839,
+                "end": 846
+            },
+            {
+                "name": "parse_config_from_string",
+                "start": 848,
+                "end": 853
+            },
+            {
+                "name": "renumber_filter",
+                "start": 855,
+                "end": 863
+            },
+            {
+                "name": "renumber_filters",
+                "start": 865,
+                "end": 871
+            },
+            {
+                "name": "filter_match",
+                "start": 873,
+                "end": 923
+            },
+            {
+                "name": "do_filter",
+                "start": 925,
+                "end": 936
+            },
+            {
+                "name": "input_filter",
+                "start": 938,
+                "end": 948
+            },
+            {
+                "name": "output_filter",
+                "start": 950,
+                "end": 959
+            },
+            {
+                "name": "redistribute_filter",
+                "start": 961,
+                "end": 971
+            },
+            {
+                "name": "finalise_config",
+                "start": 973,
+                "end": 1000
+            }
+        ],
+        "neighbour.c": [
+            {
+                "name": "find_neighbour_nocreate",
+                "start": 42,
+                "end": 52
+            },
+            {
+                "name": "flush_neighbour",
+                "start": 54,
+                "end": 72
+            },
+            {
+                "name": "find_neighbour",
+                "start": 74,
+                "end": 111
+            },
+            {
+                "name": "update_neighbour",
+                "start": 115,
+                "end": 200
+            },
+            {
+                "name": "reset_txcost",
+                "start": 202,
+                "end": 222
+            },
+            {
+                "name": "neighbour_txcost",
+                "start": 224,
+                "end": 228
+            },
+            {
+                "name": "check_neighbours",
+                "start": 230,
+                "end": 265
+            },
+            {
+                "name": "neighbour_rxcost",
+                "start": 267,
+                "end": 299
+            },
+            {
+                "name": "neighbour_rttcost",
+                "start": 301,
+                "end": 322
+            },
+            {
+                "name": "neighbour_cost",
+                "start": 324,
+                "end": 357
+            },
+            {
+                "name": "valid_rtt",
+                "start": 359,
+                "end": 363
+            }
+        ],
+        "kernel_netlink.c": [
+            {
+                "name": "if_eui64",
+                "start": 81,
+                "end": 143
+            },
+            {
+                "name": "read_proc",
+                "start": 145,
+                "end": 167
+            },
+            {
+                "name": "write_proc",
+                "start": 169,
+                "end": 190
+            },
+            {
+                "name": "netlink_socket",
+                "start": 203,
+                "end": 245
+            },
+            {
+                "name": "netlink_read",
+                "start": 247,
+                "end": 371
+            },
+            {
+                "name": "netlink_talk",
+                "start": 373,
+                "end": 419
+            },
+            {
+                "name": "netlink_send_dump",
+                "start": 421,
+                "end": 472
+            },
+            {
+                "name": "kernel_setup",
+                "start": 474,
+                "end": 597
+            },
+            {
+                "name": "rtnlgrp_to_mask",
+                "start": 599,
+                "end": 603
+            },
+            {
+                "name": "kernel_setup_socket",
+                "start": 605,
+                "end": 636
+            },
+            {
+                "name": "get_old_if",
+                "start": 638,
+                "end": 652
+            },
+            {
+                "name": "kernel_setup_interface",
+                "start": 654,
+                "end": 691
+            },
+            {
+                "name": "kernel_interface_operational",
+                "start": 693,
+                "end": 706
+            },
+            {
+                "name": "kernel_interface_ipv4",
+                "start": 708,
+                "end": 723
+            },
+            {
+                "name": "kernel_interface_mtu",
+                "start": 725,
+                "end": 738
+            },
+            {
+                "name": "isbridge",
+                "start": 740,
+                "end": 783
+            },
+            {
+                "name": "isbatman",
+                "start": 785,
+                "end": 802
+            },
+            {
+                "name": "kernel_interface_wireless",
+                "start": 804,
+                "end": 830
+            },
+            {
+                "name": "freq_to_chan",
+                "start": 854,
+                "end": 889
+            },
+            {
+                "name": "kernel_interface_channel",
+                "start": 891,
+                "end": 905
+            },
+            {
+                "name": "kernel_route",
+                "start": 907,
+                "end": 1052
+            },
+            {
+                "name": "parse_kernel_route_rta",
+                "start": 1054,
+                "end": 1115
+            },
+            {
+                "name": "print_kernel_route",
+                "start": 1117,
+                "end": 1138
+            },
+            {
+                "name": "filter_kernel_routes",
+                "start": 1140,
+                "end": 1211
+            },
+            {
+                "name": "kernel_routes",
+                "start": 1214,
+                "end": 1253
+            },
+            {
+                "name": "parse_ifname_rta",
+                "start": 1255,
+                "end": 1274
+            },
+            {
+                "name": "parse_addr_rta",
+                "start": 1276,
+                "end": 1309
+            },
+            {
+                "name": "filter_link",
+                "start": 1311,
+                "end": 1342
+            },
+            {
+                "name": "filter_addresses",
+                "start": 1344,
+                "end": 1405
+            },
+            {
+                "name": "filter_netlink",
+                "start": 1407,
+                "end": 1438
+            },
+            {
+                "name": "kernel_addresses",
+                "start": 1440,
+                "end": 1478
+            },
+            {
+                "name": "kernel_callback",
+                "start": 1480,
+                "end": 1506
+            }
+        ],
+        "kernel.c": [
+            {
+                "name": "gettime",
+                "start": 37,
+                "end": 78
+            },
+            {
+                "name": "read_random_bytes",
+                "start": 83,
+                "end": 99
+            },
+            {
+                "name": "add_import_table",
+                "start": 101,
+                "end": 108
+            }
+        ],
+        "net.h": [
+            {
+                "name": "babel_send",
+                "start": 25,
+                "end": 27
+            }
+        ],
+        "message.c": [
+            {
+                "name": "network_prefix",
+                "start": 62,
+                "end": 120
+            },
+            {
+                "name": "parse_update_subtlv",
+                "start": 122,
+                "end": 167
+            },
+            {
+                "name": "parse_hello_subtlv",
+                "start": 169,
+                "end": 209
+            },
+            {
+                "name": "parse_ihu_subtlv",
+                "start": 211,
+                "end": 254
+            },
+            {
+                "name": "network_address",
+                "start": 256,
+                "end": 261
+            },
+            {
+                "name": "channels_len",
+                "start": 263,
+                "end": 268
+            },
+            {
+                "name": "parse_packet",
+                "start": 270,
+                "end": 641
+            },
+            {
+                "name": "check_bucket",
+                "start": 647,
+                "end": 666
+            },
+            {
+                "name": "fill_rtt_message",
+                "start": 668,
+                "end": 689
+            },
+            {
+                "name": "flushbuf",
+                "start": 691,
+                "end": 731
+            },
+            {
+                "name": "schedule_flush",
+                "start": 733,
+                "end": 741
+            },
+            {
+                "name": "schedule_flush_now",
+                "start": 743,
+                "end": 752
+            },
+            {
+                "name": "schedule_unicast_flush",
+                "start": 754,
+                "end": 765
+            },
+            {
+                "name": "ensure_space",
+                "start": 767,
+                "end": 772
+            },
+            {
+                "name": "start_message",
+                "start": 774,
+                "end": 781
+            },
+            {
+                "name": "end_message",
+                "start": 783,
+                "end": 790
+            },
+            {
+                "name": "accumulate_byte",
+                "start": 792,
+                "end": 796
+            },
+            {
+                "name": "accumulate_short",
+                "start": 798,
+                "end": 803
+            },
+            {
+                "name": "accumulate_int",
+                "start": 805,
+                "end": 810
+            },
+            {
+                "name": "accumulate_bytes",
+                "start": 812,
+                "end": 818
+            },
+            {
+                "name": "start_unicast_message",
+                "start": 820,
+                "end": 841
+            },
+            {
+                "name": "end_unicast_message",
+                "start": 843,
+                "end": 850
+            },
+            {
+                "name": "accumulate_unicast_byte",
+                "start": 852,
+                "end": 856
+            },
+            {
+                "name": "accumulate_unicast_short",
+                "start": 858,
+                "end": 863
+            },
+            {
+                "name": "accumulate_unicast_int",
+                "start": 865,
+                "end": 870
+            },
+            {
+                "name": "accumulate_unicast_bytes",
+                "start": 872,
+                "end": 878
+            },
+            {
+                "name": "send_ack",
+                "start": 880,
+                "end": 891
+            },
+            {
+                "name": "send_hello_noupdate",
+                "start": 893,
+                "end": 923
+            },
+            {
+                "name": "send_hello",
+                "start": 925,
+                "end": 934
+            },
+            {
+                "name": "flush_unicast",
+                "start": 936,
+                "end": 983
+            },
+            {
+                "name": "really_send_update",
+                "start": 985,
+                "end": 1079
+            },
+            {
+                "name": "compare_buffered_updates",
+                "start": 1081,
+                "end": 1113
+            },
+            {
+                "name": "flushupdates",
+                "start": 1115,
+                "end": 1235
+            },
+            {
+                "name": "schedule_update_flush",
+                "start": 1237,
+                "end": 1246
+            },
+            {
+                "name": "buffer_update",
+                "start": 1248,
+                "end": 1283
+            },
+            {
+                "name": "send_update",
+                "start": 1285,
+                "end": 1332
+            },
+            {
+                "name": "send_update_resend",
+                "start": 1334,
+                "end": 1342
+            },
+            {
+                "name": "send_wildcard_retraction",
+                "start": 1344,
+                "end": 1368
+            },
+            {
+                "name": "update_myseqno",
+                "start": 1370,
+                "end": 1375
+            },
+            {
+                "name": "send_self_update",
+                "start": 1377,
+                "end": 1403
+            },
+            {
+                "name": "send_ihu",
+                "start": 1405,
+                "end": 1506
+            },
+            {
+                "name": "send_marginal_ihu",
+                "start": 1509,
+                "end": 1519
+            },
+            {
+                "name": "send_request",
+                "start": 1521,
+                "end": 1559
+            },
+            {
+                "name": "send_unicast_request",
+                "start": 1561,
+                "end": 1588
+            },
+            {
+                "name": "send_multihop_request",
+                "start": 1590,
+                "end": 1634
+            },
+            {
+                "name": "send_unicast_multihop_request",
+                "start": 1636,
+                "end": 1669
+            },
+            {
+                "name": "send_request_resend",
+                "start": 1671,
+                "end": 1683
+            },
+            {
+                "name": "handle_request",
+                "start": 1685,
+                "end": 1752
+            }
+        ],
+        "route.c": [
+            {
+                "name": "route_compare",
+                "start": 58,
+                "end": 72
+            },
+            {
+                "name": "find_route_slot",
+                "start": 77,
+                "end": 106
+            },
+            {
+                "name": "find_route",
+                "start": 108,
+                "end": 127
+            },
+            {
+                "name": "find_installed_route",
+                "start": 129,
+                "end": 138
+            },
+            {
+                "name": "installed_routes_estimate",
+                "start": 141,
+                "end": 145
+            },
+            {
+                "name": "resize_route_table",
+                "start": 147,
+                "end": 165
+            },
+            {
+                "name": "insert_route",
+                "start": 169,
+                "end": 199
+            },
+            {
+                "name": "flush_route",
+                "start": 201,
+                "end": 252
+            },
+            {
+                "name": "flush_all_routes",
+                "start": 254,
+                "end": 272
+            },
+            {
+                "name": "flush_neighbour_routes",
+                "start": 274,
+                "end": 294
+            },
+            {
+                "name": "flush_interface_routes",
+                "start": 296,
+                "end": 317
+            },
+            {
+                "name": "route_stream",
+                "start": 326,
+                "end": 340
+            },
+            {
+                "name": "route_stream_next",
+                "start": 342,
+                "end": 365
+            },
+            {
+                "name": "route_stream_done",
+                "start": 367,
+                "end": 371
+            },
+            {
+                "name": "metric_to_kernel",
+                "start": 373,
+                "end": 377
+            },
+            {
+                "name": "move_installed_route",
+                "start": 381,
+                "end": 395
+            },
+            {
+                "name": "install_route",
+                "start": 397,
+                "end": 432
+            },
+            {
+                "name": "uninstall_route",
+                "start": 434,
+                "end": 451
+            },
+            {
+                "name": "switch_routes",
+                "start": 457,
+                "end": 490
+            },
+            {
+                "name": "change_route_metric",
+                "start": 492,
+                "end": 528
+            },
+            {
+                "name": "retract_route",
+                "start": 530,
+                "end": 536
+            },
+            {
+                "name": "route_feasible",
+                "start": 538,
+                "end": 542
+            },
+            {
+                "name": "route_old",
+                "start": 544,
+                "end": 548
+            },
+            {
+                "name": "route_expired",
+                "start": 550,
+                "end": 554
+            },
+            {
+                "name": "channels_interfere",
+                "start": 556,
+                "end": 564
+            },
+            {
+                "name": "route_interferes",
+                "start": 566,
+                "end": 594
+            },
+            {
+                "name": "update_feasible",
+                "start": 596,
+                "end": 613
+            },
+            {
+                "name": "change_smoothing_half_life",
+                "start": 615,
+                "end": 634
+            },
+            {
+                "name": "route_smoothed_metric",
+                "start": 637,
+                "end": 672
+            },
+            {
+                "name": "route_acceptable",
+                "start": 674,
+                "end": 685
+            },
+            {
+                "name": "find_best_route",
+                "start": 692,
+                "end": 718
+            },
+            {
+                "name": "update_route_metric",
+                "start": 720,
+                "end": 745
+            },
+            {
+                "name": "update_neighbour_metric",
+                "start": 749,
+                "end": 767
+            },
+            {
+                "name": "update_interface_metric",
+                "start": 769,
+                "end": 782
+            },
+            {
+                "name": "update_route",
+                "start": 785,
+                "end": 919
+            },
+            {
+                "name": "send_unfeasible_request",
+                "start": 923,
+                "end": 942
+            },
+            {
+                "name": "consider_route",
+                "start": 949,
+                "end": 989
+            },
+            {
+                "name": "retract_neighbour_routes",
+                "start": 991,
+                "end": 1011
+            },
+            {
+                "name": "send_triggered_update",
+                "start": 1013,
+                "end": 1068
+            },
+            {
+                "name": "route_changed",
+                "start": 1072,
+                "end": 1093
+            },
+            {
+                "name": "route_lost",
+                "start": 1096,
+                "end": 1115
+            },
+            {
+                "name": "expire_routes",
+                "start": 1119,
+                "end": 1151
+            }
+        ],
+        "interface.c": [
+            {
+                "name": "last_interface",
+                "start": 46,
+                "end": 58
+            },
+            {
+                "name": "add_interface",
+                "start": 60,
+                "end": 89
+            },
+            {
+                "name": "jitter",
+                "start": 93,
+                "end": 102
+            },
+            {
+                "name": "update_jitter",
+                "start": 104,
+                "end": 113
+            },
+            {
+                "name": "set_timeout",
+                "start": 115,
+                "end": 119
+            },
+            {
+                "name": "check_interface_ipv4",
+                "start": 121,
+                "end": 152
+            },
+            {
+                "name": "check_interface_channel",
+                "start": 154,
+                "end": 178
+            },
+            {
+                "name": "interface_up",
+                "start": 180,
+                "end": 420
+            },
+            {
+                "name": "interface_ll_address",
+                "start": 422,
+                "end": 435
+            },
+            {
+                "name": "check_interfaces",
+                "start": 437,
+                "end": 477
+            }
+        ],
+        "kernel_socket.c": [
+            {
+                "name": "if_eui64",
+                "start": 62,
+                "end": 83
+            },
+            {
+                "name": "get_sdl",
+                "start": 88,
+                "end": 138
+            },
+            {
+                "name": "mask2len",
+                "start": 162,
+                "end": 186
+            },
+            {
+                "name": "plen2mask",
+                "start": 188,
+                "end": 209
+            },
+            {
+                "name": "kernel_setup",
+                "start": 211,
+                "end": 257
+            },
+            {
+                "name": "kernel_setup_socket",
+                "start": 259,
+                "end": 289
+            },
+            {
+                "name": "kernel_setup_interface",
+                "start": 291,
+                "end": 295
+            },
+            {
+                "name": "kernel_interface_operational",
+                "start": 297,
+                "end": 316
+            },
+            {
+                "name": "kernel_interface_ipv4",
+                "start": 318,
+                "end": 339
+            },
+            {
+                "name": "kernel_interface_mtu",
+                "start": 341,
+                "end": 360
+            },
+            {
+                "name": "kernel_interface_wireless",
+                "start": 362,
+                "end": 379
+            },
+            {
+                "name": "kernel_interface_channel",
+                "start": 381,
+                "end": 386
+            },
+            {
+                "name": "kernel_route",
+                "start": 388,
+                "end": 551
+            },
+            {
+                "name": "print_kernel_route",
+                "start": 553,
+                "end": 570
+            },
+            {
+                "name": "parse_kernel_route",
+                "start": 572,
+                "end": 661
+            },
+            {
+                "name": "kernel_routes",
+                "start": 663,
+                "end": 721
+            },
+            {
+                "name": "socket_read",
+                "start": 723,
+                "end": 762
+            },
+            {
+                "name": "kernel_addresses",
+                "start": 764,
+                "end": 820
+            },
+            {
+                "name": "kernel_callback",
+                "start": 822,
+                "end": 836
+            }
+        ],
+        "babeld.c": [
+            {
+                "name": "main",
+                "start": 98,
+                "end": 837
+            },
+            {
+                "name": "accept_local_connections",
+                "start": 839,
+                "end": 883
+            },
+            {
+                "name": "schedule_neighbours_check",
+                "start": 885,
+                "end": 895
+            },
+            {
+                "name": "schedule_interfaces_check",
+                "start": 897,
+                "end": 907
+            },
+            {
+                "name": "resize_receive_buffer",
+                "start": 909,
+                "end": 933
+            },
+            {
+                "name": "sigexit",
+                "start": 935,
+                "end": 939
+            },
+            {
+                "name": "sigdump",
+                "start": 941,
+                "end": 945
+            },
+            {
+                "name": "sigreopening",
+                "start": 947,
+                "end": 951
+            },
+            {
+                "name": "init_signals",
+                "start": 953,
+                "end": 1002
+            },
+            {
+                "name": "dump_route",
+                "start": 1004,
+                "end": 1045
+            },
+            {
+                "name": "dump_xroute",
+                "start": 1047,
+                "end": 1053
+            },
+            {
+                "name": "dump_tables",
+                "start": 1055,
+                "end": 1101
+            },
+            {
+                "name": "reopen_logfile",
+                "start": 1103,
+                "end": 1130
+            },
+            {
+                "name": "kernel_routes_callback",
+                "start": 1132,
+                "end": 1142
+            }
+        ],
+        "net.c": [
+            {
+                "name": "babel_socket",
+                "start": 41,
+                "end": 116
+            },
+            {
+                "name": "babel_recv",
+                "start": 118,
+                "end": 135
+            },
+            {
+                "name": "babel_send",
+                "start": 137,
+                "end": 170
+            },
+            {
+                "name": "tcp_server_socket",
+                "start": 172,
+                "end": 226
+            }
+        ]
+    }
+}

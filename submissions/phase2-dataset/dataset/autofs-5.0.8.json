@@ -1,0 +1,3276 @@
+{
+    "autofs-5.0.8": {
+        "daemon/spawn.c": [
+            {
+                "name": "dump_core",
+                "start": 39,
+                "end": 49
+            },
+            {
+                "name": "reset_signals",
+                "start": 55,
+                "end": 87
+            },
+            {
+                "name": "timed_read",
+                "start": 91,
+                "end": 117
+            },
+            {
+                "name": "do_spawn",
+                "start": 119,
+                "end": 282
+            },
+            {
+                "name": "spawnv",
+                "start": 284,
+                "end": 287
+            },
+            {
+                "name": "spawnl",
+                "start": 289,
+                "end": 308
+            },
+            {
+                "name": "spawn_mount",
+                "start": 310,
+                "end": 428
+            },
+            {
+                "name": "spawn_bind_mount",
+                "start": 438,
+                "end": 546
+            },
+            {
+                "name": "spawn_umount",
+                "start": 548,
+                "end": 635
+            }
+        ],
+        "daemon/lookup.c": [
+            {
+                "name": "check_nss_result",
+                "start": 28,
+                "end": 71
+            },
+            {
+                "name": "nsslist_cleanup",
+                "start": 73,
+                "end": 79
+            },
+            {
+                "name": "do_read_master",
+                "start": 81,
+                "end": 101
+            },
+            {
+                "name": "read_master_map",
+                "start": 103,
+                "end": 141
+            },
+            {
+                "name": "lookup_nss_read_master",
+                "start": 143,
+                "end": 273
+            },
+            {
+                "name": "do_read_map",
+                "start": 275,
+                "end": 317
+            },
+            {
+                "name": "read_file_source_instance",
+                "start": 319,
+                "end": 355
+            },
+            {
+                "name": "read_source_instance",
+                "start": 357,
+                "end": 377
+            },
+            {
+                "name": "argv_cleanup",
+                "start": 379,
+                "end": 385
+            },
+            {
+                "name": "read_map_source",
+                "start": 387,
+                "end": 455
+            },
+            {
+                "name": "lookup_nss_read_map",
+                "start": 457,
+                "end": 570
+            },
+            {
+                "name": "lookup_ghost",
+                "start": 572,
+                "end": 657
+            },
+            {
+                "name": "do_lookup_mount",
+                "start": 659,
+                "end": 683
+            },
+            {
+                "name": "lookup_name_file_source_instance",
+                "start": 685,
+                "end": 721
+            },
+            {
+                "name": "lookup_name_source_instance",
+                "start": 723,
+                "end": 743
+            },
+            {
+                "name": "lookup_map_name",
+                "start": 745,
+                "end": 813
+            },
+            {
+                "name": "update_negative_cache",
+                "start": 815,
+                "end": 856
+            },
+            {
+                "name": "lookup_nss_mount",
+                "start": 858,
+                "end": 970
+            },
+            {
+                "name": "lookup_close_lookup_instances",
+                "start": 972,
+                "end": 986
+            },
+            {
+                "name": "lookup_close_lookup",
+                "start": 988,
+                "end": 1002
+            },
+            {
+                "name": "make_fullpath",
+                "start": 1004,
+                "end": 1027
+            },
+            {
+                "name": "lookup_prune_one_cache",
+                "start": 1029,
+                "end": 1133
+            },
+            {
+                "name": "lookup_prune_cache",
+                "start": 1135,
+                "end": 1162
+            },
+            {
+                "name": "lookup_source_valid_mapent",
+                "start": 1165,
+                "end": 1196
+            },
+            {
+                "name": "lookup_source_mapent",
+                "start": 1199,
+                "end": 1224
+            },
+            {
+                "name": "lookup_source_close_ioctlfd",
+                "start": 1226,
+                "end": 1254
+            }
+        ],
+        "daemon/direct.c": [
+            {
+                "name": "key_mnt_params_destroy",
+                "start": 52,
+                "end": 61
+            },
+            {
+                "name": "key_mnt_params_init",
+                "start": 63,
+                "end": 76
+            },
+            {
+                "name": "mnts_cleanup",
+                "start": 78,
+                "end": 83
+            },
+            {
+                "name": "do_umount_autofs_direct",
+                "start": 85,
+                "end": 194
+            },
+            {
+                "name": "umount_autofs_direct",
+                "start": 196,
+                "end": 242
+            },
+            {
+                "name": "unlink_mount_tree",
+                "start": 244,
+                "end": 285
+            },
+            {
+                "name": "unlink_active_mounts",
+                "start": 287,
+                "end": 329
+            },
+            {
+                "name": "do_mount_autofs_direct",
+                "start": 331,
+                "end": 459
+            },
+            {
+                "name": "mount_autofs_direct",
+                "start": 461,
+                "end": 540
+            },
+            {
+                "name": "umount_autofs_offset",
+                "start": 542,
+                "end": 650
+            },
+            {
+                "name": "mount_autofs_offset",
+                "start": 652,
+                "end": 811
+            },
+            {
+                "name": "expire_proc_direct",
+                "start": 813,
+                "end": 970
+            },
+            {
+                "name": "expire_send_fail",
+                "start": 972,
+                "end": 979
+            },
+            {
+                "name": "do_expire_direct",
+                "start": 981,
+                "end": 1033
+            },
+            {
+                "name": "handle_packet_expire_direct",
+                "start": 1035,
+                "end": 1177
+            },
+            {
+                "name": "mount_send_fail",
+                "start": 1179,
+                "end": 1186
+            },
+            {
+                "name": "do_mount_direct",
+                "start": 1188,
+                "end": 1287
+            },
+            {
+                "name": "handle_packet_missing_direct",
+                "start": 1289,
+                "end": 1496
+            }
+        ],
+        "daemon/indirect.c": [
+            {
+                "name": "unlink_mount_tree",
+                "start": 43,
+                "end": 84
+            },
+            {
+                "name": "do_mount_autofs_indirect",
+                "start": 86,
+                "end": 196
+            },
+            {
+                "name": "mount_autofs_indirect",
+                "start": 198,
+                "end": 233
+            },
+            {
+                "name": "close_mount_fds",
+                "start": 235,
+                "end": 258
+            },
+            {
+                "name": "umount_autofs_indirect",
+                "start": 260,
+                "end": 372
+            },
+            {
+                "name": "mnts_cleanup",
+                "start": 374,
+                "end": 379
+            },
+            {
+                "name": "expire_proc_indirect",
+                "start": 381,
+                "end": 586
+            },
+            {
+                "name": "expire_send_fail",
+                "start": 588,
+                "end": 595
+            },
+            {
+                "name": "do_expire_indirect",
+                "start": 597,
+                "end": 634
+            },
+            {
+                "name": "handle_packet_expire_indirect",
+                "start": 636,
+                "end": 712
+            },
+            {
+                "name": "mount_send_fail",
+                "start": 714,
+                "end": 721
+            },
+            {
+                "name": "do_mount_indirect",
+                "start": 723,
+                "end": 793
+            },
+            {
+                "name": "handle_packet_missing_indirect",
+                "start": 795,
+                "end": 905
+            }
+        ],
+        "daemon/state.c": [
+            {
+                "name": "st_mutex_lock",
+                "start": 41,
+                "end": 46
+            },
+            {
+                "name": "st_mutex_unlock",
+                "start": 48,
+                "end": 53
+            },
+            {
+                "name": "dump_state_queue",
+                "start": 55,
+                "end": 77
+            },
+            {
+                "name": "nextstate",
+                "start": 79,
+                "end": 87
+            },
+            {
+                "name": "expire_cleanup",
+                "start": 93,
+                "end": 208
+            },
+            {
+                "name": "st_ready",
+                "start": 210,
+                "end": 219
+            },
+            {
+                "name": "expire_proc_cleanup",
+                "start": 236,
+                "end": 258
+            },
+            {
+                "name": "expire_proc",
+                "start": 260,
+                "end": 321
+            },
+            {
+                "name": "do_readmap_cleanup",
+                "start": 323,
+                "end": 341
+            },
+            {
+                "name": "tree_mnts_cleanup",
+                "start": 343,
+                "end": 348
+            },
+            {
+                "name": "do_readmap_mount",
+                "start": 350,
+                "end": 438
+            },
+            {
+                "name": "do_readmap",
+                "start": 440,
+                "end": 527
+            },
+            {
+                "name": "st_readmap_cleanup",
+                "start": 529,
+                "end": 549
+            },
+            {
+                "name": "st_readmap",
+                "start": 551,
+                "end": 616
+            },
+            {
+                "name": "st_prepare_shutdown",
+                "start": 618,
+                "end": 642
+            },
+            {
+                "name": "st_force_shutdown",
+                "start": 644,
+                "end": 668
+            },
+            {
+                "name": "st_shutdown",
+                "start": 670,
+                "end": 680
+            },
+            {
+                "name": "st_prune",
+                "start": 682,
+                "end": 701
+            },
+            {
+                "name": "st_expire",
+                "start": 703,
+                "end": 722
+            },
+            {
+                "name": "st_alloc_task",
+                "start": 724,
+                "end": 740
+            },
+            {
+                "name": "__st_add_task",
+                "start": 746,
+                "end": 829
+            },
+            {
+                "name": "st_add_task",
+                "start": 831,
+                "end": 840
+            },
+            {
+                "name": "st_remove_tasks",
+                "start": 846,
+                "end": 900
+            },
+            {
+                "name": "st_task_active",
+                "start": 902,
+                "end": 947
+            },
+            {
+                "name": "st_wait_task",
+                "start": 949,
+                "end": 977
+            },
+            {
+                "name": "st_wait_state",
+                "start": 979,
+                "end": 997
+            },
+            {
+                "name": "run_state_task",
+                "start": 1000,
+                "end": 1039
+            },
+            {
+                "name": "st_set_thid",
+                "start": 1041,
+                "end": 1054
+            },
+            {
+                "name": "st_set_done",
+                "start": 1057,
+                "end": 1072
+            },
+            {
+                "name": "st_queue_handler",
+                "start": 1074,
+                "end": 1186
+            },
+            {
+                "name": "st_start_handler",
+                "start": 1188,
+                "end": 1211
+            }
+        ],
+        "daemon/module.c": [
+            {
+                "name": "open_lookup",
+                "start": 59,
+                "end": 127
+            },
+            {
+                "name": "close_lookup",
+                "start": 129,
+                "end": 135
+            },
+            {
+                "name": "open_parse",
+                "start": 137,
+                "end": 204
+            },
+            {
+                "name": "close_parse",
+                "start": 206,
+                "end": 212
+            },
+            {
+                "name": "open_mount",
+                "start": 214,
+                "end": 280
+            },
+            {
+                "name": "close_mount",
+                "start": 282,
+                "end": 288
+            }
+        ],
+        "daemon/automount.c": [
+            {
+                "name": "do_mkdir",
+                "start": 98,
+                "end": 134
+            },
+            {
+                "name": "mkdir_path",
+                "start": 136,
+                "end": 168
+            },
+            {
+                "name": "rmdir_path",
+                "start": 171,
+                "end": 249
+            },
+            {
+                "name": "walk_tree",
+                "start": 254,
+                "end": 307
+            },
+            {
+                "name": "rm_unwanted_fn",
+                "start": 309,
+                "end": 352
+            },
+            {
+                "name": "rm_unwanted",
+                "start": 354,
+                "end": 357
+            },
+            {
+                "name": "counter_fn",
+                "start": 364,
+                "end": 375
+            },
+            {
+                "name": "count_mounts",
+                "start": 378,
+                "end": 389
+            },
+            {
+                "name": "check_rm_dirs",
+                "start": 391,
+                "end": 412
+            },
+            {
+                "name": "update_map_cache",
+                "start": 415,
+                "end": 449
+            },
+            {
+                "name": "umount_subtree_mounts",
+                "start": 451,
+                "end": 526
+            },
+            {
+                "name": "umount_multi",
+                "start": 530,
+                "end": 559
+            },
+            {
+                "name": "umount_all",
+                "start": 561,
+                "end": 571
+            },
+            {
+                "name": "umount_autofs",
+                "start": 573,
+                "end": 595
+            },
+            {
+                "name": "get_kpkt_len",
+                "start": 597,
+                "end": 620
+            },
+            {
+                "name": "fullread",
+                "start": 622,
+                "end": 640
+            },
+            {
+                "name": "automount_path_to_fifo",
+                "start": 642,
+                "end": 674
+            },
+            {
+                "name": "create_logpri_fifo",
+                "start": 676,
+                "end": 720
+            },
+            {
+                "name": "destroy_logpri_fifo",
+                "start": 722,
+                "end": 756
+            },
+            {
+                "name": "handle_fifo_message",
+                "start": 758,
+                "end": 819
+            },
+            {
+                "name": "set_log_priority",
+                "start": 821,
+                "end": 873
+            },
+            {
+                "name": "get_pkt",
+                "start": 875,
+                "end": 930
+            },
+            {
+                "name": "do_expire",
+                "start": 932,
+                "end": 962
+            },
+            {
+                "name": "autofs_init_ap",
+                "start": 964,
+                "end": 1002
+            },
+            {
+                "name": "mount_autofs",
+                "start": 1004,
+                "end": 1022
+            },
+            {
+                "name": "handle_packet",
+                "start": 1024,
+                "end": 1048
+            },
+            {
+                "name": "become_daemon",
+                "start": 1050,
+                "end": 1131
+            },
+            {
+                "name": "getnumopt",
+                "start": 1133,
+                "end": 1146
+            },
+            {
+                "name": "do_master_cleanup_unlock",
+                "start": 1148,
+                "end": 1157
+            },
+            {
+                "name": "do_notify_state",
+                "start": 1159,
+                "end": 1193
+            },
+            {
+                "name": "do_signals",
+                "start": 1195,
+                "end": 1230
+            },
+            {
+                "name": "do_read_master",
+                "start": 1232,
+                "end": 1273
+            },
+            {
+                "name": "do_hup_signal",
+                "start": 1275,
+                "end": 1324
+            },
+            {
+                "name": "statemachine",
+                "start": 1327,
+                "end": 1372
+            },
+            {
+                "name": "return_start_status",
+                "start": 1374,
+                "end": 1394
+            },
+            {
+                "name": "handle_mounts_startup_cond_init",
+                "start": 1396,
+                "end": 1423
+            },
+            {
+                "name": "handle_mounts_startup_cond_destroy",
+                "start": 1425,
+                "end": 1443
+            },
+            {
+                "name": "handle_mounts_cleanup",
+                "start": 1445,
+                "end": 1510
+            },
+            {
+                "name": "submount_source_writelock_nested",
+                "start": 1512,
+                "end": 1536
+            },
+            {
+                "name": "submount_source_unlock_nested",
+                "start": 1538,
+                "end": 1545
+            },
+            {
+                "name": "handle_mounts",
+                "start": 1547,
+                "end": 1696
+            },
+            {
+                "name": "key_thread_stdenv_vars_destroy",
+                "start": 1698,
+                "end": 1711
+            },
+            {
+                "name": "usage",
+                "start": 1713,
+                "end": 1739
+            },
+            {
+                "name": "show_build_info",
+                "start": 1741,
+                "end": 1842
+            },
+            {
+                "name": "convert_log_priority",
+                "start": 1864,
+                "end": 1877
+            },
+            {
+                "name": "remove_empty_args",
+                "start": 1879,
+                "end": 1905
+            },
+            {
+                "name": "main",
+                "start": 1907,
+                "end": 2335
+            }
+        ],
+        "daemon/flag.c": [
+            {
+                "name": "flag_is_owned",
+                "start": 42,
+                "end": 96
+            },
+            {
+                "name": "release_flag_file",
+                "start": 99,
+                "end": 110
+            },
+            {
+                "name": "aquire_flag_file",
+                "start": 113,
+                "end": 191
+            }
+        ],
+        "daemon/mount.c": [
+            {
+                "name": "do_mount",
+                "start": 33,
+                "end": 82
+            }
+        ],
+        "modules/parse_sun.c": [
+            {
+                "name": "instance_mutex_lock",
+                "start": 47,
+                "end": 52
+            },
+            {
+                "name": "instance_mutex_unlock",
+                "start": 54,
+                "end": 59
+            },
+            {
+                "name": "kill_context",
+                "start": 90,
+                "end": 100
+            },
+            {
+                "name": "expandsunent",
+                "start": 106,
+                "end": 234
+            },
+            {
+                "name": "parse_init",
+                "start": 236,
+                "end": 423
+            },
+            {
+                "name": "parse_options",
+                "start": 425,
+                "end": 440
+            },
+            {
+                "name": "concat_options",
+                "start": 442,
+                "end": 475
+            },
+            {
+                "name": "sun_mount",
+                "start": 477,
+                "end": 689
+            },
+            {
+                "name": "check_is_multi",
+                "start": 695,
+                "end": 747
+            },
+            {
+                "name": "update_offset_entry",
+                "start": 749,
+                "end": 824
+            },
+            {
+                "name": "validate_location",
+                "start": 826,
+                "end": 884
+            },
+            {
+                "name": "parse_mapent",
+                "start": 886,
+                "end": 1013
+            },
+            {
+                "name": "cleanup_multi_triggers",
+                "start": 1015,
+                "end": 1052
+            },
+            {
+                "name": "mount_subtree",
+                "start": 1054,
+                "end": 1183
+            },
+            {
+                "name": "parse_mount",
+                "start": 1197,
+                "end": 1603
+            },
+            {
+                "name": "parse_done",
+                "start": 1605,
+                "end": 1620
+            }
+        ],
+        "modules/replicated.c": [
+            {
+                "name": "ipv6_mask_cmp",
+                "start": 79,
+                "end": 91
+            },
+            {
+                "name": "seed_random",
+                "start": 93,
+                "end": 112
+            },
+            {
+                "name": "get_proximity",
+                "start": 114,
+                "end": 281
+            },
+            {
+                "name": "new_host",
+                "start": 283,
+                "end": 323
+            },
+            {
+                "name": "add_host",
+                "start": 325,
+                "end": 364
+            },
+            {
+                "name": "free_host",
+                "start": 366,
+                "end": 372
+            },
+            {
+                "name": "remove_host",
+                "start": 374,
+                "end": 400
+            },
+            {
+                "name": "delete_host",
+                "start": 402,
+                "end": 407
+            },
+            {
+                "name": "free_host_list",
+                "start": 409,
+                "end": 420
+            },
+            {
+                "name": "get_nfs_info",
+                "start": 422,
+                "end": 654
+            },
+            {
+                "name": "get_vers_and_cost",
+                "start": 656,
+                "end": 708
+            },
+            {
+                "name": "get_supported_ver_and_cost",
+                "start": 710,
+                "end": 847
+            },
+            {
+                "name": "prune_host_list",
+                "start": 849,
+                "end": 1029
+            },
+            {
+                "name": "add_new_host",
+                "start": 1031,
+                "end": 1082
+            },
+            {
+                "name": "add_host_addrs",
+                "start": 1084,
+                "end": 1167
+            },
+            {
+                "name": "add_path",
+                "start": 1169,
+                "end": 1193
+            },
+            {
+                "name": "add_local_path",
+                "start": 1195,
+                "end": 1222
+            },
+            {
+                "name": "seek_delim",
+                "start": 1224,
+                "end": 1244
+            },
+            {
+                "name": "parse_location",
+                "start": 1246,
+                "end": 1349
+            },
+            {
+                "name": "dump_host_list",
+                "start": 1351,
+                "end": 1366
+            }
+        ],
+        "modules/mount_ext2.c": [
+            {
+                "name": "mount_init",
+                "start": 31,
+                "end": 34
+            },
+            {
+                "name": "mount_mount",
+                "start": 36,
+                "end": 148
+            },
+            {
+                "name": "mount_done",
+                "start": 150,
+                "end": 153
+            }
+        ],
+        "modules/mount_generic.c": [
+            {
+                "name": "mount_init",
+                "start": 31,
+                "end": 34
+            },
+            {
+                "name": "mount_mount",
+                "start": 36,
+                "end": 130
+            },
+            {
+                "name": "mount_done",
+                "start": 132,
+                "end": 135
+            }
+        ],
+        "modules/lookup_yp.c": [
+            {
+                "name": "get_map_order",
+                "start": 61,
+                "end": 103
+            },
+            {
+                "name": "lookup_init",
+                "start": 105,
+                "end": 154
+            },
+            {
+                "name": "yp_all_master_callback",
+                "start": 156,
+                "end": 205
+            },
+            {
+                "name": "lookup_read_master",
+                "start": 207,
+                "end": 257
+            },
+            {
+                "name": "yp_all_callback",
+                "start": 259,
+                "end": 309
+            },
+            {
+                "name": "lookup_read_map",
+                "start": 311,
+                "end": 377
+            },
+            {
+                "name": "lookup_one",
+                "start": 379,
+                "end": 437
+            },
+            {
+                "name": "lookup_wild",
+                "start": 439,
+                "end": 489
+            },
+            {
+                "name": "check_map_indirect",
+                "start": 491,
+                "end": 586
+            },
+            {
+                "name": "lookup_mount",
+                "start": 588,
+                "end": 727
+            },
+            {
+                "name": "lookup_done",
+                "start": 729,
+                "end": 735
+            }
+        ],
+        "modules/dclist.c": [
+            {
+                "name": "dclist_mutex_lock",
+                "start": 54,
+                "end": 60
+            },
+            {
+                "name": "dclist_mutex_unlock",
+                "start": 62,
+                "end": 68
+            },
+            {
+                "name": "do_srv_query",
+                "start": 70,
+                "end": 106
+            },
+            {
+                "name": "get_name_len",
+                "start": 108,
+                "end": 112
+            },
+            {
+                "name": "get_data_offset",
+                "start": 114,
+                "end": 132
+            },
+            {
+                "name": "parse_srv_rr",
+                "start": 134,
+                "end": 161
+            },
+            {
+                "name": "cmp",
+                "start": 163,
+                "end": 178
+            },
+            {
+                "name": "free_srv_rrs",
+                "start": 180,
+                "end": 189
+            },
+            {
+                "name": "get_srv_rrs",
+                "start": 191,
+                "end": 289
+            },
+            {
+                "name": "escape_dn_commas",
+                "start": 291,
+                "end": 328
+            },
+            {
+                "name": "free_dclist",
+                "start": 330,
+                "end": 335
+            },
+            {
+                "name": "getdnsdomainname",
+                "start": 337,
+                "end": 374
+            },
+            {
+                "name": "get_dc_list",
+                "start": 376,
+                "end": 584
+            }
+        ],
+        "modules/lookup_hosts.c": [
+            {
+                "name": "lookup_init",
+                "start": 49,
+                "end": 74
+            },
+            {
+                "name": "lookup_read_master",
+                "start": 76,
+                "end": 79
+            },
+            {
+                "name": "get_exports",
+                "start": 81,
+                "end": 137
+            },
+            {
+                "name": "do_parse_mount",
+                "start": 139,
+                "end": 168
+            },
+            {
+                "name": "update_hosts_mounts",
+                "start": 170,
+                "end": 227
+            },
+            {
+                "name": "lookup_read_map",
+                "start": 229,
+                "end": 282
+            },
+            {
+                "name": "lookup_mount",
+                "start": 284,
+                "end": 393
+            },
+            {
+                "name": "lookup_done",
+                "start": 395,
+                "end": 401
+            }
+        ],
+        "modules/mount_autofs.c": [
+            {
+                "name": "mount_init",
+                "start": 37,
+                "end": 40
+            },
+            {
+                "name": "mount_mount",
+                "start": 42,
+                "end": 289
+            },
+            {
+                "name": "mount_done",
+                "start": 291,
+                "end": 294
+            }
+        ],
+        "modules/mount_changer.c": [
+            {
+                "name": "mount_init",
+                "start": 39,
+                "end": 42
+            },
+            {
+                "name": "mount_mount",
+                "start": 44,
+                "end": 136
+            },
+            {
+                "name": "mount_done",
+                "start": 138,
+                "end": 141
+            },
+            {
+                "name": "swapCD",
+                "start": 143,
+                "end": 186
+            }
+        ],
+        "modules/mount_bind.c": [
+            {
+                "name": "mount_init",
+                "start": 33,
+                "end": 68
+            },
+            {
+                "name": "mount_mount",
+                "start": 70,
+                "end": 229
+            },
+            {
+                "name": "mount_done",
+                "start": 231,
+                "end": 234
+            }
+        ],
+        "modules/mount_nfs.c": [
+            {
+                "name": "mount_init",
+                "start": 43,
+                "end": 55
+            },
+            {
+                "name": "mount_mount",
+                "start": 57,
+                "end": 385
+            },
+            {
+                "name": "mount_done",
+                "start": 387,
+                "end": 396
+            }
+        ],
+        "modules/lookup_program.c": [
+            {
+                "name": "lookup_init",
+                "start": 52,
+                "end": 101
+            },
+            {
+                "name": "lookup_read_master",
+                "start": 103,
+                "end": 106
+            },
+            {
+                "name": "lookup_read_map",
+                "start": 108,
+                "end": 114
+            },
+            {
+                "name": "lookup_mount",
+                "start": 116,
+                "end": 477
+            },
+            {
+                "name": "lookup_done",
+                "start": 479,
+                "end": 487
+            }
+        ],
+        "modules/lookup_nisplus.c": [
+            {
+                "name": "lookup_init",
+                "start": 33,
+                "end": 77
+            },
+            {
+                "name": "lookup_read_master",
+                "start": 79,
+                "end": 164
+            },
+            {
+                "name": "lookup_read_map",
+                "start": 166,
+                "end": 267
+            },
+            {
+                "name": "lookup_one",
+                "start": 269,
+                "end": 327
+            },
+            {
+                "name": "lookup_wild",
+                "start": 329,
+                "end": 383
+            },
+            {
+                "name": "check_map_indirect",
+                "start": 385,
+                "end": 486
+            },
+            {
+                "name": "lookup_mount",
+                "start": 488,
+                "end": 637
+            },
+            {
+                "name": "lookup_done",
+                "start": 639,
+                "end": 645
+            }
+        ],
+        "modules/lookup_sss.c": [
+            {
+                "name": "lookup_init",
+                "start": 59,
+                "end": 138
+            },
+            {
+                "name": "setautomntent",
+                "start": 140,
+                "end": 154
+            },
+            {
+                "name": "endautomntent",
+                "start": 156,
+                "end": 167
+            },
+            {
+                "name": "lookup_read_master",
+                "start": 169,
+                "end": 253
+            },
+            {
+                "name": "lookup_read_map",
+                "start": 255,
+                "end": 368
+            },
+            {
+                "name": "lookup_one",
+                "start": 370,
+                "end": 485
+            },
+            {
+                "name": "check_map_indirect",
+                "start": 487,
+                "end": 559
+            },
+            {
+                "name": "lookup_mount",
+                "start": 561,
+                "end": 696
+            },
+            {
+                "name": "lookup_done",
+                "start": 698,
+                "end": 705
+            }
+        ],
+        "modules/lookup_userhome.c": [
+            {
+                "name": "lookup_init",
+                "start": 32,
+                "end": 35
+            },
+            {
+                "name": "lookup_read_master",
+                "start": 37,
+                "end": 40
+            },
+            {
+                "name": "lookup_read_map",
+                "start": 42,
+                "end": 47
+            },
+            {
+                "name": "lookup_mount",
+                "start": 49,
+                "end": 97
+            },
+            {
+                "name": "lookup_done",
+                "start": 99,
+                "end": 102
+            }
+        ],
+        "modules/base64.c": [
+            {
+                "name": "_base64_encode_triple",
+                "start": 15,
+                "end": 29
+            },
+            {
+                "name": "base64_encode",
+                "start": 40,
+                "end": 70
+            },
+            {
+                "name": "_base64_char_value",
+                "start": 78,
+                "end": 91
+            },
+            {
+                "name": "_base64_decode_triple",
+                "start": 100,
+                "end": 146
+            },
+            {
+                "name": "base64_decode",
+                "start": 156,
+                "end": 201
+            }
+        ],
+        "modules/lookup_dir.c": [
+            {
+                "name": "lookup_init",
+                "start": 54,
+                "end": 106
+            },
+            {
+                "name": "acceptable_dirent_p",
+                "start": 108,
+                "end": 125
+            },
+            {
+                "name": "include_file",
+                "start": 128,
+                "end": 160
+            },
+            {
+                "name": "lookup_read_master",
+                "start": 163,
+                "end": 199
+            },
+            {
+                "name": "lookup_read_map",
+                "start": 201,
+                "end": 206
+            },
+            {
+                "name": "lookup_mount",
+                "start": 208,
+                "end": 213
+            },
+            {
+                "name": "lookup_done",
+                "start": 215,
+                "end": 221
+            }
+        ],
+        "modules/lookup_multi.c": [
+            {
+                "name": "nss_open_lookup",
+                "start": 43,
+                "end": 135
+            },
+            {
+                "name": "lookup_init",
+                "start": 137,
+                "end": 229
+            },
+            {
+                "name": "lookup_read_master",
+                "start": 231,
+                "end": 234
+            },
+            {
+                "name": "lookup_read_map",
+                "start": 236,
+                "end": 261
+            },
+            {
+                "name": "lookup_mount",
+                "start": 263,
+                "end": 281
+            },
+            {
+                "name": "lookup_done",
+                "start": 283,
+                "end": 298
+            }
+        ],
+        "modules/parse_hesiod.c": [
+            {
+                "name": "parse_afs",
+                "start": 26,
+                "end": 90
+            },
+            {
+                "name": "parse_nfs",
+                "start": 96,
+                "end": 189
+            },
+            {
+                "name": "parse_generic",
+                "start": 193,
+                "end": 257
+            },
+            {
+                "name": "parse_init",
+                "start": 259,
+                "end": 262
+            },
+            {
+                "name": "parse_done",
+                "start": 264,
+                "end": 267
+            },
+            {
+                "name": "parse_mount",
+                "start": 269,
+                "end": 325
+            }
+        ],
+        "modules/mount_afs.c": [
+            {
+                "name": "mount_init",
+                "start": 23,
+                "end": 26
+            },
+            {
+                "name": "mount_mount",
+                "start": 28,
+                "end": 54
+            },
+            {
+                "name": "mount_done",
+                "start": 56,
+                "end": 59
+            }
+        ],
+        "modules/cyrus-sasl.c": [
+            {
+                "name": "_krb5_princ_realm",
+                "start": 79,
+                "end": 93
+            },
+            {
+                "name": "sasl_log_func",
+                "start": 122,
+                "end": 146
+            },
+            {
+                "name": "getuser_func",
+                "start": 148,
+                "end": 166
+            },
+            {
+                "name": "getpass_func",
+                "start": 173,
+                "end": 188
+            },
+            {
+                "name": "get_server_SASL_mechanisms",
+                "start": 197,
+                "end": 234
+            },
+            {
+                "name": "do_sasl_bind",
+                "start": 239,
+                "end": 392
+            },
+            {
+                "name": "sasl_do_kinit",
+                "start": 405,
+                "end": 590
+            },
+            {
+                "name": "sasl_do_kinit_ext_cc",
+                "start": 601,
+                "end": 736
+            },
+            {
+                "name": "sasl_bind_mech",
+                "start": 744,
+                "end": 828
+            },
+            {
+                "name": "sasl_choose_mech",
+                "start": 834,
+                "end": 882
+            },
+            {
+                "name": "autofs_sasl_unbind",
+                "start": 887,
+                "end": 894
+            },
+            {
+                "name": "autofs_sasl_bind",
+                "start": 905,
+                "end": 960
+            },
+            {
+                "name": "autofs_sasl_dispose",
+                "start": 966,
+                "end": 1001
+            },
+            {
+                "name": "sasl_mutex_new",
+                "start": 1003,
+                "end": 1014
+            },
+            {
+                "name": "sasl_mutex_lock",
+                "start": 1016,
+                "end": 1026
+            },
+            {
+                "name": "sasl_mutex_unlock",
+                "start": 1028,
+                "end": 1038
+            },
+            {
+                "name": "sasl_mutex_dispose",
+                "start": 1040,
+                "end": 1052
+            },
+            {
+                "name": "autofs_sasl_client_init",
+                "start": 1058,
+                "end": 1072
+            },
+            {
+                "name": "autofs_sasl_done",
+                "start": 1078,
+                "end": 1082
+            }
+        ],
+        "modules/lookup_hesiod.c": [
+            {
+                "name": "lookup_init",
+                "start": 39,
+                "end": 79
+            },
+            {
+                "name": "lookup_read_master",
+                "start": 81,
+                "end": 84
+            },
+            {
+                "name": "lookup_read_map",
+                "start": 86,
+                "end": 92
+            },
+            {
+                "name": "lookup_mount",
+                "start": 100,
+                "end": 182
+            },
+            {
+                "name": "lookup_done",
+                "start": 186,
+                "end": 194
+            }
+        ],
+        "modules/lookup_ldap.c": [
+            {
+                "name": "ldap_create_page_control",
+                "start": 88,
+                "end": 113
+            },
+            {
+                "name": "ldap_parse_page_control",
+                "start": 117,
+                "end": 144
+            },
+            {
+                "name": "ldapinit_mutex_lock",
+                "start": 147,
+                "end": 153
+            },
+            {
+                "name": "ldapinit_mutex_unlock",
+                "start": 155,
+                "end": 161
+            },
+            {
+                "name": "uris_mutex_lock",
+                "start": 163,
+                "end": 169
+            },
+            {
+                "name": "uris_mutex_unlock",
+                "start": 171,
+                "end": 177
+            },
+            {
+                "name": "bind_ldap_simple",
+                "start": 179,
+                "end": 204
+            },
+            {
+                "name": "unbind_ldap_connection",
+                "start": 206,
+                "end": 221
+            },
+            {
+                "name": "__init_ldap_connection",
+                "start": 223,
+                "end": 300
+            },
+            {
+                "name": "init_ldap_connection",
+                "start": 302,
+                "end": 311
+            },
+            {
+                "name": "get_query_dn",
+                "start": 313,
+                "end": 454
+            },
+            {
+                "name": "alloc_common_schema",
+                "start": 456,
+                "end": 512
+            },
+            {
+                "name": "find_query_dn",
+                "start": 514,
+                "end": 537
+            },
+            {
+                "name": "do_bind",
+                "start": 539,
+                "end": 615
+            },
+            {
+                "name": "do_connect",
+                "start": 617,
+                "end": 637
+            },
+            {
+                "name": "connect_to_server",
+                "start": 639,
+                "end": 652
+            },
+            {
+                "name": "find_dc_server",
+                "start": 654,
+                "end": 679
+            },
+            {
+                "name": "find_server",
+                "start": 681,
+                "end": 760
+            },
+            {
+                "name": "do_reconnect",
+                "start": 762,
+                "end": 827
+            },
+            {
+                "name": "get_property",
+                "start": 829,
+                "end": 847
+            },
+            {
+                "name": "parse_ldap_config",
+                "start": 878,
+                "end": 1169
+            },
+            {
+                "name": "parse_server_string",
+                "start": 1175,
+                "end": 1387
+            },
+            {
+                "name": "free_context",
+                "start": 1389,
+                "end": 1441
+            },
+            {
+                "name": "validate_uris",
+                "start": 1443,
+                "end": 1463
+            },
+            {
+                "name": "lookup_init",
+                "start": 1469,
+                "end": 1559
+            },
+            {
+                "name": "lookup_read_master",
+                "start": 1561,
+                "end": 1754
+            },
+            {
+                "name": "get_percent_decoded_len",
+                "start": 1756,
+                "end": 1797
+            },
+            {
+                "name": "validate_string_len",
+                "start": 1802,
+                "end": 1813
+            },
+            {
+                "name": "decode_percent_hack",
+                "start": 1827,
+                "end": 1874
+            },
+            {
+                "name": "get_encoded_len_escaping_every_cap",
+                "start": 1882,
+                "end": 1896
+            },
+            {
+                "name": "get_encoded_len_escaping_sequences",
+                "start": 1906,
+                "end": 1927
+            },
+            {
+                "name": "encode_individual",
+                "start": 1929,
+                "end": 1943
+            },
+            {
+                "name": "encode_sequence",
+                "start": 1945,
+                "end": 1971
+            },
+            {
+                "name": "encode_percent_hack",
+                "start": 1977,
+                "end": 2007
+            },
+            {
+                "name": "do_paged_query",
+                "start": 2009,
+                "end": 2100
+            },
+            {
+                "name": "do_get_entries",
+                "start": 2102,
+                "end": 2353
+            },
+            {
+                "name": "read_one_map",
+                "start": 2356,
+                "end": 2484
+            },
+            {
+                "name": "lookup_read_map",
+                "start": 2486,
+                "end": 2508
+            },
+            {
+                "name": "lookup_one",
+                "start": 2510,
+                "end": 2867
+            },
+            {
+                "name": "check_map_indirect",
+                "start": 2869,
+                "end": 2940
+            },
+            {
+                "name": "lookup_mount",
+                "start": 2942,
+                "end": 3078
+            },
+            {
+                "name": "lookup_done",
+                "start": 3084,
+                "end": 3094
+            }
+        ],
+        "modules/lookup_file.c": [
+            {
+                "name": "lookup_init",
+                "start": 53,
+                "end": 113
+            },
+            {
+                "name": "read_one",
+                "start": 115,
+                "end": 346
+            },
+            {
+                "name": "check_master_self_include",
+                "start": 348,
+                "end": 386
+            },
+            {
+                "name": "lookup_read_master",
+                "start": 388,
+                "end": 490
+            },
+            {
+                "name": "check_self_include",
+                "start": 492,
+                "end": 528
+            },
+            {
+                "name": "prepare_plus_include",
+                "start": 530,
+                "end": 631
+            },
+            {
+                "name": "lookup_read_map",
+                "start": 633,
+                "end": 731
+            },
+            {
+                "name": "lookup_one",
+                "start": 733,
+                "end": 838
+            },
+            {
+                "name": "lookup_wild",
+                "start": 840,
+                "end": 895
+            },
+            {
+                "name": "check_map_indirect",
+                "start": 897,
+                "end": 963
+            },
+            {
+                "name": "lookup_mount",
+                "start": 965,
+                "end": 1155
+            },
+            {
+                "name": "lookup_done",
+                "start": 1157,
+                "end": 1164
+            }
+        ],
+        "lib/macros.c": [
+            {
+                "name": "dump_table",
+                "start": 42,
+                "end": 60
+            },
+            {
+                "name": "macro_init",
+                "start": 63,
+                "end": 74
+            },
+            {
+                "name": "macro_is_systemvar",
+                "start": 76,
+                "end": 101
+            },
+            {
+                "name": "macro_global_addvar",
+                "start": 103,
+                "end": 161
+            },
+            {
+                "name": "macro_parse_globalvar",
+                "start": 163,
+                "end": 188
+            },
+            {
+                "name": "macro_lock",
+                "start": 190,
+                "end": 195
+            },
+            {
+                "name": "macro_unlock",
+                "start": 197,
+                "end": 202
+            },
+            {
+                "name": "macro_addvar",
+                "start": 204,
+                "end": 257
+            },
+            {
+                "name": "macro_global_removevar",
+                "start": 259,
+                "end": 295
+            },
+            {
+                "name": "macro_removevar",
+                "start": 297,
+                "end": 325
+            },
+            {
+                "name": "macro_free_global_table",
+                "start": 327,
+                "end": 360
+            },
+            {
+                "name": "macro_free_table",
+                "start": 362,
+                "end": 381
+            },
+            {
+                "name": "macro_findvar",
+                "start": 384,
+                "end": 422
+            },
+            {
+                "name": "macro_setenv",
+                "start": 425,
+                "end": 448
+            }
+        ],
+        "lib/cat_path.c": [
+            {
+                "name": "cat_path",
+                "start": 23,
+                "end": 57
+            },
+            {
+                "name": "_strlen",
+                "start": 59,
+                "end": 68
+            },
+            {
+                "name": "ncat_path",
+                "start": 75,
+                "end": 88
+            }
+        ],
+        "lib/rpc_subs.c": [
+            {
+                "name": "connect_nb",
+                "start": 88,
+                "end": 167
+            },
+            {
+                "name": "rpc_do_create_client",
+                "start": 170,
+                "end": 236
+            },
+            {
+                "name": "rpc_getrpcbyname",
+                "start": 333,
+                "end": 355
+            },
+            {
+                "name": "rpc_getrpcbport",
+                "start": 357,
+                "end": 384
+            },
+            {
+                "name": "create_client",
+                "start": 389,
+                "end": 482
+            },
+            {
+                "name": "rpc_udp_getclient",
+                "start": 484,
+                "end": 508
+            },
+            {
+                "name": "rpc_destroy_udp_client",
+                "start": 510,
+                "end": 518
+            },
+            {
+                "name": "rpc_tcp_getclient",
+                "start": 520,
+                "end": 544
+            },
+            {
+                "name": "rpc_destroy_tcp_client",
+                "start": 546,
+                "end": 569
+            },
+            {
+                "name": "rpc_portmap_getclient",
+                "start": 571,
+                "end": 608
+            },
+            {
+                "name": "rpc_portmap_getport",
+                "start": 610,
+                "end": 694
+            },
+            {
+                "name": "rpc_ping_proto",
+                "start": 696,
+                "end": 751
+            },
+            {
+                "name": "__rpc_ping",
+                "start": 753,
+                "end": 788
+            },
+            {
+                "name": "rpc_ping",
+                "start": 790,
+                "end": 813
+            },
+            {
+                "name": "elapsed",
+                "start": 815,
+                "end": 821
+            },
+            {
+                "name": "rpc_time",
+                "start": 823,
+                "end": 847
+            },
+            {
+                "name": "rpc_get_exports_proto",
+                "start": 849,
+                "end": 908
+            },
+            {
+                "name": "rpc_export_free",
+                "start": 910,
+                "end": 927
+            },
+            {
+                "name": "rpc_exports_free",
+                "start": 929,
+                "end": 939
+            },
+            {
+                "name": "rpc_get_exports",
+                "start": 941,
+                "end": 995
+            },
+            {
+                "name": "get_addr_string",
+                "start": 997,
+                "end": 1015
+            }
+        ],
+        "lib/dev-ioctl-lib.c": [
+            {
+                "name": "init_ioctl_ctl",
+                "start": 116,
+                "end": 144
+            },
+            {
+                "name": "close_ioctl_ctl",
+                "start": 146,
+                "end": 154
+            },
+            {
+                "name": "get_ioctl_ops",
+                "start": 157,
+                "end": 162
+            },
+            {
+                "name": "dev_ioctl_version",
+                "start": 165,
+                "end": 174
+            },
+            {
+                "name": "dev_ioctl_protover",
+                "start": 177,
+                "end": 191
+            },
+            {
+                "name": "ioctl_protover",
+                "start": 193,
+                "end": 197
+            },
+            {
+                "name": "dev_ioctl_protosubver",
+                "start": 200,
+                "end": 214
+            },
+            {
+                "name": "ioctl_protosubver",
+                "start": 216,
+                "end": 220
+            },
+            {
+                "name": "alloc_dev_ioctl_open",
+                "start": 230,
+                "end": 254
+            },
+            {
+                "name": "free_dev_ioctl_open",
+                "start": 256,
+                "end": 260
+            },
+            {
+                "name": "alloc_dev_ioctl_path",
+                "start": 268,
+                "end": 293
+            },
+            {
+                "name": "free_dev_ioctl_path",
+                "start": 295,
+                "end": 299
+            },
+            {
+                "name": "dev_ioctl_mount_device",
+                "start": 307,
+                "end": 338
+            },
+            {
+                "name": "ioctl_mount_device",
+                "start": 340,
+                "end": 345
+            },
+            {
+                "name": "dev_ioctl_open",
+                "start": 348,
+                "end": 371
+            },
+            {
+                "name": "ioctl_open",
+                "start": 373,
+                "end": 402
+            },
+            {
+                "name": "dev_ioctl_close",
+                "start": 405,
+                "end": 416
+            },
+            {
+                "name": "ioctl_close",
+                "start": 418,
+                "end": 421
+            },
+            {
+                "name": "dev_ioctl_send_ready",
+                "start": 424,
+                "end": 449
+            },
+            {
+                "name": "ioctl_send_ready",
+                "start": 451,
+                "end": 470
+            },
+            {
+                "name": "dev_ioctl_send_fail",
+                "start": 478,
+                "end": 504
+            },
+            {
+                "name": "ioctl_send_fail",
+                "start": 506,
+                "end": 525
+            },
+            {
+                "name": "dev_ioctl_setpipefd",
+                "start": 540,
+                "end": 557
+            },
+            {
+                "name": "dev_ioctl_catatonic",
+                "start": 563,
+                "end": 574
+            },
+            {
+                "name": "ioctl_catatonic",
+                "start": 576,
+                "end": 579
+            },
+            {
+                "name": "dev_ioctl_timeout",
+                "start": 582,
+                "end": 594
+            },
+            {
+                "name": "ioctl_timeout",
+                "start": 596,
+                "end": 600
+            },
+            {
+                "name": "dev_ioctl_requestor",
+                "start": 610,
+                "end": 642
+            },
+            {
+                "name": "expire",
+                "start": 648,
+                "end": 684
+            },
+            {
+                "name": "dev_ioctl_expire",
+                "start": 686,
+                "end": 697
+            },
+            {
+                "name": "ioctl_expire",
+                "start": 699,
+                "end": 704
+            },
+            {
+                "name": "dev_ioctl_askumount",
+                "start": 707,
+                "end": 721
+            },
+            {
+                "name": "ioctl_askumount",
+                "start": 723,
+                "end": 727
+            },
+            {
+                "name": "dev_ioctl_ismountpoint",
+                "start": 738,
+                "end": 777
+            }
+        ],
+        "lib/nsswitch.c": [
+            {
+                "name": "set_action",
+                "start": 29,
+                "end": 56
+            },
+            {
+                "name": "add_source",
+                "start": 58,
+                "end": 84
+            },
+            {
+                "name": "free_sources",
+                "start": 86,
+                "end": 106
+            }
+        ],
+        "lib/defaults.c": [
+            {
+                "name": "get_env_string",
+                "start": 63,
+                "end": 76
+            },
+            {
+                "name": "get_env_number",
+                "start": 78,
+                "end": 94
+            },
+            {
+                "name": "get_env_yesno",
+                "start": 96,
+                "end": 113
+            },
+            {
+                "name": "check_set_config_value",
+                "start": 119,
+                "end": 156
+            },
+            {
+                "name": "parse_line",
+                "start": 158,
+                "end": 202
+            },
+            {
+                "name": "defaults_read_config",
+                "start": 502,
+                "end": 555
+            },
+            {
+                "name": "defaults_get_master_map",
+                "start": 557,
+                "end": 566
+            },
+            {
+                "name": "defaults_master_set",
+                "start": 568,
+                "end": 575
+            },
+            {
+                "name": "defaults_get_timeout",
+                "start": 577,
+                "end": 586
+            },
+            {
+                "name": "defaults_get_negative_timeout",
+                "start": 588,
+                "end": 597
+            },
+            {
+                "name": "defaults_get_browse_mode",
+                "start": 599,
+                "end": 608
+            },
+            {
+                "name": "defaults_get_logging",
+                "start": 610,
+                "end": 632
+            },
+            {
+                "name": "defaults_force_std_prog_map_env",
+                "start": 634,
+                "end": 643
+            },
+            {
+                "name": "defaults_get_ldap_timeout",
+                "start": 645,
+                "end": 654
+            },
+            {
+                "name": "defaults_get_ldap_network_timeout",
+                "start": 656,
+                "end": 665
+            },
+            {
+                "name": "defaults_get_mount_nfs_default_proto",
+                "start": 667,
+                "end": 676
+            },
+            {
+                "name": "defaults_get_append_options",
+                "start": 678,
+                "end": 687
+            },
+            {
+                "name": "defaults_get_mount_wait",
+                "start": 689,
+                "end": 698
+            },
+            {
+                "name": "defaults_get_umount_wait",
+                "start": 700,
+                "end": 709
+            },
+            {
+                "name": "defaults_get_auth_conf_file",
+                "start": 711,
+                "end": 720
+            },
+            {
+                "name": "defaults_get_map_hash_table_size",
+                "start": 722,
+                "end": 731
+            }
+        ],
+        "lib/cache.c": [
+            {
+                "name": "cache_dump_multi",
+                "start": 28,
+                "end": 37
+            },
+            {
+                "name": "cache_dump_cache",
+                "start": 39,
+                "end": 54
+            },
+            {
+                "name": "cache_readlock",
+                "start": 56,
+                "end": 66
+            },
+            {
+                "name": "cache_writelock",
+                "start": 68,
+                "end": 78
+            },
+            {
+                "name": "cache_try_writelock",
+                "start": 80,
+                "end": 90
+            },
+            {
+                "name": "cache_unlock",
+                "start": 92,
+                "end": 102
+            },
+            {
+                "name": "cache_lock_cleanup",
+                "start": 104,
+                "end": 110
+            },
+            {
+                "name": "cache_multi_readlock",
+                "start": 112,
+                "end": 125
+            },
+            {
+                "name": "cache_multi_writelock",
+                "start": 127,
+                "end": 140
+            },
+            {
+                "name": "cache_multi_unlock",
+                "start": 142,
+                "end": 155
+            },
+            {
+                "name": "cache_multi_lock_cleanup",
+                "start": 157,
+                "end": 162
+            },
+            {
+                "name": "ino_index_lock",
+                "start": 164,
+                "end": 170
+            },
+            {
+                "name": "ino_index_unlock",
+                "start": 172,
+                "end": 178
+            },
+            {
+                "name": "cache_init",
+                "start": 180,
+                "end": 229
+            },
+            {
+                "name": "cache_clean_null_cache",
+                "start": 231,
+                "end": 256
+            },
+            {
+                "name": "cache_init_null_cache",
+                "start": 258,
+                "end": 300
+            },
+            {
+                "name": "hash",
+                "start": 302,
+                "end": 318
+            },
+            {
+                "name": "ino_hash",
+                "start": 320,
+                "end": 327
+            },
+            {
+                "name": "cache_set_ino_index",
+                "start": 329,
+                "end": 346
+            },
+            {
+                "name": "cache_lookup_ino",
+                "start": 349,
+                "end": 370
+            },
+            {
+                "name": "cache_lookup_first",
+                "start": 373,
+                "end": 393
+            },
+            {
+                "name": "cache_lookup_next",
+                "start": 396,
+                "end": 433
+            },
+            {
+                "name": "cache_lookup_key_next",
+                "start": 436,
+                "end": 453
+            },
+            {
+                "name": "cache_lookup",
+                "start": 456,
+                "end": 482
+            },
+            {
+                "name": "cache_lookup_distinct",
+                "start": 485,
+                "end": 498
+            },
+            {
+                "name": "cache_lookup_offset",
+                "start": 501,
+                "end": 522
+            },
+            {
+                "name": "cache_partial_match",
+                "start": 525,
+                "end": 549
+            },
+            {
+                "name": "cache_add",
+                "start": 552,
+                "end": 620
+            },
+            {
+                "name": "cache_add_ordered_offset",
+                "start": 623,
+                "end": 647
+            },
+            {
+                "name": "cache_update_offset",
+                "start": 650,
+                "end": 681
+            },
+            {
+                "name": "cache_update_negative",
+                "start": 683,
+                "end": 700
+            },
+            {
+                "name": "get_parent",
+                "start": 703,
+                "end": 727
+            },
+            {
+                "name": "cache_set_parents",
+                "start": 729,
+                "end": 751
+            },
+            {
+                "name": "cache_update",
+                "start": 754,
+                "end": 792
+            },
+            {
+                "name": "cache_delete_offset",
+                "start": 795,
+                "end": 839
+            },
+            {
+                "name": "cache_delete",
+                "start": 842,
+                "end": 903
+            },
+            {
+                "name": "cache_delete_offset_list",
+                "start": 906,
+                "end": 962
+            },
+            {
+                "name": "cache_release",
+                "start": 964,
+                "end": 1010
+            },
+            {
+                "name": "cache_release_null_cache",
+                "start": 1012,
+                "end": 1056
+            },
+            {
+                "name": "cache_enumerate",
+                "start": 1061,
+                "end": 1067
+            },
+            {
+                "name": "cache_get_offset",
+                "start": 1076,
+                "end": 1155
+            }
+        ],
+        "lib/parse_subs.c": [
+            {
+                "name": "skipspace",
+                "start": 52,
+                "end": 74
+            },
+            {
+                "name": "check_colon",
+                "start": 79,
+                "end": 94
+            },
+            {
+                "name": "chunklen",
+                "start": 97,
+                "end": 149
+            },
+            {
+                "name": "strmcmp",
+                "start": 155,
+                "end": 171
+            },
+            {
+                "name": "dequote",
+                "start": 173,
+                "end": 225
+            },
+            {
+                "name": "span_space",
+                "start": 227,
+                "end": 247
+            },
+            {
+                "name": "sanitize_path",
+                "start": 249,
+                "end": 325
+            },
+            {
+                "name": "free_map_type_info",
+                "start": 327,
+                "end": 337
+            },
+            {
+                "name": "parse_map_type_info",
+                "start": 339,
+                "end": 474
+            }
+        ],
+        "lib/master.c": [
+            {
+                "name": "__master_find_map_source",
+                "start": 41,
+                "end": 43
+            },
+            {
+                "name": "master_mutex_lock",
+                "start": 48,
+                "end": 53
+            },
+            {
+                "name": "master_mutex_unlock",
+                "start": 55,
+                "end": 60
+            },
+            {
+                "name": "master_mutex_lock_cleanup",
+                "start": 62,
+                "end": 66
+            },
+            {
+                "name": "master_add_autofs_point",
+                "start": 68,
+                "end": 134
+            },
+            {
+                "name": "master_free_autofs_point",
+                "start": 136,
+                "end": 149
+            },
+            {
+                "name": "master_add_map_source",
+                "start": 151,
+                "end": 239
+            },
+            {
+                "name": "compare_source_type_and_format",
+                "start": 241,
+                "end": 266
+            },
+            {
+                "name": "__master_find_map_source",
+                "start": 268,
+                "end": 294
+            },
+            {
+                "name": "master_find_map_source",
+                "start": 296,
+                "end": 307
+            },
+            {
+                "name": "__master_free_map_source",
+                "start": 309,
+                "end": 344
+            },
+            {
+                "name": "master_free_map_source",
+                "start": 346,
+                "end": 359
+            },
+            {
+                "name": "master_find_source_instance",
+                "start": 361,
+                "end": 397
+            },
+            {
+                "name": "master_add_source_instance",
+                "start": 399,
+                "end": 469
+            },
+            {
+                "name": "check_stale_instances",
+                "start": 471,
+                "end": 488
+            },
+            {
+                "name": "clear_stale_instances",
+                "start": 490,
+                "end": 506
+            },
+            {
+                "name": "send_map_update_request",
+                "start": 508,
+                "end": 538
+            },
+            {
+                "name": "master_source_writelock",
+                "start": 540,
+                "end": 550
+            },
+            {
+                "name": "master_source_readlock",
+                "start": 552,
+                "end": 581
+            },
+            {
+                "name": "master_source_unlock",
+                "start": 583,
+                "end": 593
+            },
+            {
+                "name": "master_source_lock_cleanup",
+                "start": 595,
+                "end": 602
+            },
+            {
+                "name": "master_source_current_wait",
+                "start": 604,
+                "end": 624
+            },
+            {
+                "name": "master_source_current_signal",
+                "start": 626,
+                "end": 643
+            },
+            {
+                "name": "master_find_mapent",
+                "start": 645,
+                "end": 660
+            },
+            {
+                "name": "__master_find_submount",
+                "start": 662,
+                "end": 677
+            },
+            {
+                "name": "master_find_submount",
+                "start": 679,
+                "end": 688
+            },
+            {
+                "name": "master_new_mapent",
+                "start": 690,
+                "end": 731
+            },
+            {
+                "name": "master_add_mapent",
+                "start": 733,
+                "end": 737
+            },
+            {
+                "name": "master_remove_mapent",
+                "start": 739,
+                "end": 752
+            },
+            {
+                "name": "master_free_mapent_sources",
+                "start": 754,
+                "end": 769
+            },
+            {
+                "name": "master_free_mapent",
+                "start": 771,
+                "end": 795
+            },
+            {
+                "name": "master_new",
+                "start": 797,
+                "end": 832
+            },
+            {
+                "name": "master_read_master",
+                "start": 834,
+                "end": 880
+            },
+            {
+                "name": "master_submount_list_empty",
+                "start": 882,
+                "end": 892
+            },
+            {
+                "name": "master_notify_submount",
+                "start": 894,
+                "end": 977
+            },
+            {
+                "name": "master_notify_state_change",
+                "start": 979,
+                "end": 1042
+            },
+            {
+                "name": "master_do_mount",
+                "start": 1044,
+                "end": 1091
+            },
+            {
+                "name": "check_update_map_sources",
+                "start": 1093,
+                "end": 1154
+            },
+            {
+                "name": "master_mount_mounts",
+                "start": 1156,
+                "end": 1255
+            },
+            {
+                "name": "list_source_instances",
+                "start": 1258,
+                "end": 1282
+            },
+            {
+                "name": "print_map_info",
+                "start": 1284,
+                "end": 1330
+            },
+            {
+                "name": "match_type",
+                "start": 1332,
+                "end": 1340
+            },
+            {
+                "name": "get_map_name",
+                "start": 1342,
+                "end": 1374
+            },
+            {
+                "name": "match_name",
+                "start": 1376,
+                "end": 1412
+            },
+            {
+                "name": "dump_map",
+                "start": 1414,
+                "end": 1517
+            },
+            {
+                "name": "master_show_mounts",
+                "start": 1519,
+                "end": 1622
+            },
+            {
+                "name": "master_list_empty",
+                "start": 1624,
+                "end": 1634
+            },
+            {
+                "name": "master_done",
+                "start": 1636,
+                "end": 1656
+            },
+            {
+                "name": "master_get_logopt",
+                "start": 1658,
+                "end": 1661
+            },
+            {
+                "name": "master_kill",
+                "start": 1663,
+                "end": 1675
+            },
+            {
+                "name": "dump_master",
+                "start": 1677,
+                "end": 1686
+            }
+        ],
+        "lib/mounts.c": [
+            {
+                "name": "linux_version_code",
+                "start": 50,
+                "end": 77
+            },
+            {
+                "name": "query_kproto_ver",
+                "start": 79,
+                "end": 156
+            },
+            {
+                "name": "get_kver_major",
+                "start": 158,
+                "end": 161
+            },
+            {
+                "name": "get_kver_minor",
+                "start": 163,
+                "end": 166
+            },
+            {
+                "name": "set_env_name",
+                "start": 309,
+                "end": 328
+            },
+            {
+                "name": "do_macro_addvar",
+                "start": 330,
+                "end": 345
+            },
+            {
+                "name": "do_macro_removevar",
+                "start": 347,
+                "end": 361
+            },
+            {
+                "name": "addstdenv",
+                "start": 363,
+                "end": 400
+            },
+            {
+                "name": "removestdenv",
+                "start": 402,
+                "end": 413
+            },
+            {
+                "name": "make_options_string",
+                "start": 418,
+                "end": 452
+            },
+            {
+                "name": "make_mnt_name_string",
+                "start": 454,
+                "end": 481
+            },
+            {
+                "name": "get_mnt_list",
+                "start": 486,
+                "end": 589
+            },
+            {
+                "name": "reverse_mnt_list",
+                "start": 594,
+                "end": 610
+            },
+            {
+                "name": "free_mnt_list",
+                "start": 612,
+                "end": 639
+            },
+            {
+                "name": "contained_in_local_fs",
+                "start": 641,
+                "end": 684
+            },
+            {
+                "name": "table_is_mounted",
+                "start": 686,
+                "end": 730
+            },
+            {
+                "name": "ioctl_is_mounted",
+                "start": 732,
+                "end": 749
+            },
+            {
+                "name": "is_mounted",
+                "start": 751,
+                "end": 759
+            },
+            {
+                "name": "has_fstab_option",
+                "start": 761,
+                "end": 788
+            },
+            {
+                "name": "get_offset",
+                "start": 790,
+                "end": 854
+            },
+            {
+                "name": "add_ordered_list",
+                "start": 856,
+                "end": 882
+            },
+            {
+                "name": "tree_free_mnt_tree",
+                "start": 895,
+                "end": 934
+            },
+            {
+                "name": "tree_make_mnt_tree",
+                "start": 939,
+                "end": 1086
+            },
+            {
+                "name": "tree_get_mnt_list",
+                "start": 1091,
+                "end": 1133
+            },
+            {
+                "name": "tree_get_mnt_sublist",
+                "start": 1138,
+                "end": 1180
+            },
+            {
+                "name": "tree_find_mnt_ents",
+                "start": 1182,
+                "end": 1224
+            },
+            {
+                "name": "tree_is_mounted",
+                "start": 1226,
+                "end": 1268
+            },
+            {
+                "name": "set_tsd_user_vars",
+                "start": 1270,
+                "end": 1393
+            },
+            {
+                "name": "mount_type_str",
+                "start": 1395,
+                "end": 1409
+            },
+            {
+                "name": "notify_mount_result",
+                "start": 1411,
+                "end": 1425
+            },
+            {
+                "name": "do_remount_direct",
+                "start": 1427,
+                "end": 1448
+            },
+            {
+                "name": "do_remount_indirect",
+                "start": 1450,
+                "end": 1522
+            },
+            {
+                "name": "remount_active_mount",
+                "start": 1524,
+                "end": 1624
+            },
+            {
+                "name": "try_remount",
+                "start": 1626,
+                "end": 1687
+            },
+            {
+                "name": "umount_ent",
+                "start": 1689,
+                "end": 1721
+            },
+            {
+                "name": "do_mount_autofs_offset",
+                "start": 1723,
+                "end": 1748
+            },
+            {
+                "name": "mount_multi_triggers",
+                "start": 1750,
+                "end": 1800
+            },
+            {
+                "name": "rmdir_path_offset",
+                "start": 1802,
+                "end": 1835
+            },
+            {
+                "name": "umount_multi_triggers",
+                "start": 1837,
+                "end": 1936
+            },
+            {
+                "name": "clean_stale_multi_triggers",
+                "start": 1938,
+                "end": 2095
+            }
+        ],
+        "lib/alarm.c": [
+            {
+                "name": "alarm_add",
+                "start": 44,
+                "end": 103
+            },
+            {
+                "name": "alarm_delete",
+                "start": 105,
+                "end": 153
+            },
+            {
+                "name": "alarm_handler",
+                "start": 155,
+                "end": 208
+            },
+            {
+                "name": "alarm_start_handler",
+                "start": 210,
+                "end": 233
+            }
+        ],
+        "lib/args.c": [
+            {
+                "name": "add_argv",
+                "start": 25,
+                "end": 63
+            },
+            {
+                "name": "append_argv",
+                "start": 65,
+                "end": 102
+            },
+            {
+                "name": "copy_argv",
+                "start": 104,
+                "end": 135
+            },
+            {
+                "name": "compare",
+                "start": 137,
+                "end": 153
+            },
+            {
+                "name": "compare_argv",
+                "start": 155,
+                "end": 173
+            },
+            {
+                "name": "free_argv",
+                "start": 175,
+                "end": 193
+            }
+        ],
+        "lib/log.c": [
+            {
+                "name": "set_log_norm",
+                "start": 35,
+                "end": 40
+            },
+            {
+                "name": "set_log_verbose",
+                "start": 42,
+                "end": 46
+            },
+            {
+                "name": "set_log_debug",
+                "start": 48,
+                "end": 52
+            },
+            {
+                "name": "set_log_norm_ap",
+                "start": 54,
+                "end": 58
+            },
+            {
+                "name": "set_log_verbose_ap",
+                "start": 60,
+                "end": 64
+            },
+            {
+                "name": "set_log_debug_ap",
+                "start": 66,
+                "end": 70
+            },
+            {
+                "name": "log_info",
+                "start": 72,
+                "end": 90
+            },
+            {
+                "name": "log_notice",
+                "start": 92,
+                "end": 110
+            },
+            {
+                "name": "log_warn",
+                "start": 112,
+                "end": 130
+            },
+            {
+                "name": "log_error",
+                "start": 132,
+                "end": 145
+            },
+            {
+                "name": "log_crit",
+                "start": 147,
+                "end": 160
+            },
+            {
+                "name": "log_debug",
+                "start": 162,
+                "end": 180
+            },
+            {
+                "name": "logmsg",
+                "start": 182,
+                "end": 194
+            },
+            {
+                "name": "open_log",
+                "start": 196,
+                "end": 205
+            },
+            {
+                "name": "log_to_syslog",
+                "start": 207,
+                "end": 235
+            },
+            {
+                "name": "log_to_stderr",
+                "start": 237,
+                "end": 247
+            }
+        ]
+    }
+}

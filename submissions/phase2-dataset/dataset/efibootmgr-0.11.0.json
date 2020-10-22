@@ -1,0 +1,555 @@
+{
+    "efibootmgr-0.11.0": {
+        "src/lib/crc32.c": [
+            {
+                "name": "crc32",
+                "start": 109,
+                "end": 124
+            }
+        ],
+        "src/lib/disk.c": [
+            {
+                "name": "get_virtblk_major",
+                "start": 37,
+                "end": 74
+            },
+            {
+                "name": "get_nvme_major",
+                "start": 76,
+                "end": 113
+            },
+            {
+                "name": "disk_info_from_fd",
+                "start": 115,
+                "end": 221
+            },
+            {
+                "name": "disk_get_virt_pci",
+                "start": 223,
+                "end": 246
+            },
+            {
+                "name": "disk_get_scsi_pci",
+                "start": 248,
+                "end": 292
+            },
+            {
+                "name": "disk_get_ide_pci",
+                "start": 309,
+                "end": 346
+            },
+            {
+                "name": "disk_get_pci",
+                "start": 348,
+                "end": 377
+            },
+            {
+                "name": "disk_get_size",
+                "start": 379,
+                "end": 383
+            },
+            {
+                "name": "is_mbr_valid",
+                "start": 393,
+                "end": 399
+            },
+            {
+                "name": "msdos_disk_get_extended_partition_info",
+                "start": 413,
+                "end": 421
+            },
+            {
+                "name": "msdos_disk_get_partition_info",
+                "start": 436,
+                "end": 505
+            },
+            {
+                "name": "get_sector_size",
+                "start": 515,
+                "end": 524
+            },
+            {
+                "name": "lcm",
+                "start": 534,
+                "end": 545
+            },
+            {
+                "name": "disk_get_partition_info",
+                "start": 561,
+                "end": 610
+            }
+        ],
+        "src/lib/efi.c": [
+            {
+                "name": "load_option_path",
+                "start": 50,
+                "end": 58
+            },
+            {
+                "name": "select_boot_var_names",
+                "start": 60,
+                "end": 70
+            },
+            {
+                "name": "cmpstringp",
+                "start": 73,
+                "end": 79
+            },
+            {
+                "name": "read_var_names",
+                "start": 81,
+                "end": 127
+            },
+            {
+                "name": "read_boot_var_names",
+                "start": 129,
+                "end": 133
+            },
+            {
+                "name": "get_edd_version",
+                "start": 135,
+                "end": 170
+            },
+            {
+                "name": "make_edd10_device_path",
+                "start": 176,
+                "end": 194
+            },
+            {
+                "name": "make_end_device_path",
+                "start": 196,
+                "end": 207
+            },
+            {
+                "name": "make_acpi_device_path",
+                "start": 209,
+                "end": 222
+            },
+            {
+                "name": "make_mac_addr_device_path",
+                "start": 224,
+                "end": 240
+            },
+            {
+                "name": "is_parent_bridge",
+                "start": 248,
+                "end": 273
+            },
+            {
+                "name": "find_parent",
+                "start": 275,
+                "end": 287
+            },
+            {
+                "name": "make_one_pci_device_path",
+                "start": 289,
+                "end": 303
+            },
+            {
+                "name": "make_pci_device_path",
+                "start": 305,
+                "end": 353
+            },
+            {
+                "name": "make_nvme_device_path",
+                "start": 355,
+                "end": 367
+            },
+            {
+                "name": "make_scsi_device_path",
+                "start": 369,
+                "end": 382
+            },
+            {
+                "name": "make_harddrive_device_path",
+                "start": 384,
+                "end": 404
+            },
+            {
+                "name": "make_file_path_device_path",
+                "start": 406,
+                "end": 430
+            },
+            {
+                "name": "make_edd30_device_path",
+                "start": 432,
+                "end": 482
+            },
+            {
+                "name": "tilt_slashes",
+                "start": 484,
+                "end": 492
+            },
+            {
+                "name": "make_disk_load_option",
+                "start": 502,
+                "end": 572
+            },
+            {
+                "name": "get_virt_pci",
+                "start": 574,
+                "end": 597
+            },
+            {
+                "name": "make_net_load_option",
+                "start": 607,
+                "end": 694
+            },
+            {
+                "name": "make_linux_load_option",
+                "start": 713,
+                "end": 790
+            },
+            {
+                "name": "append_extra_args_ascii",
+                "start": 797,
+                "end": 833
+            },
+            {
+                "name": "append_extra_args_unicode",
+                "start": 835,
+                "end": 874
+            },
+            {
+                "name": "append_extra_args_file",
+                "start": 876,
+                "end": 920
+            },
+            {
+                "name": "add_new_data",
+                "start": 922,
+                "end": 933
+            },
+            {
+                "name": "append_extra_args",
+                "start": 935,
+                "end": 984
+            }
+        ],
+        "src/lib/gpt.c": [
+            {
+                "name": "efi_crc32",
+                "start": 59,
+                "end": 63
+            },
+            {
+                "name": "is_pmbr_valid",
+                "start": 74,
+                "end": 89
+            },
+            {
+                "name": "kernel_has_blkgetsize64",
+                "start": 99,
+                "end": 122
+            },
+            {
+                "name": "_get_num_sectors",
+                "start": 139,
+                "end": 156
+            },
+            {
+                "name": "last_lba",
+                "start": 169,
+                "end": 193
+            },
+            {
+                "name": "read_lastoddsector",
+                "start": 196,
+                "end": 212
+            },
+            {
+                "name": "read_lba",
+                "start": 214,
+                "end": 249
+            },
+            {
+                "name": "alloc_read_gpt_entries",
+                "start": 259,
+                "end": 279
+            },
+            {
+                "name": "alloc_read_gpt_header",
+                "start": 290,
+                "end": 305
+            },
+            {
+                "name": "is_gpt_valid",
+                "start": 317,
+                "end": 383
+            },
+            {
+                "name": "compare_gpts",
+                "start": 393,
+                "end": 482
+            },
+            {
+                "name": "find_valid_gpt",
+                "start": 494,
+                "end": 591
+            },
+            {
+                "name": "gpt_disk_get_partition_info",
+                "start": 605,
+                "end": 639
+            }
+        ],
+        "src/lib/scsi_ioctls.c": [
+            {
+                "name": "get_nvme_ns_id",
+                "start": 30,
+                "end": 34
+            },
+            {
+                "name": "idlun_to_components",
+                "start": 36,
+                "end": 50
+            },
+            {
+                "name": "get_scsi_idlun",
+                "start": 53,
+                "end": 57
+            },
+            {
+                "name": "get_scsi_pci",
+                "start": 59,
+                "end": 70
+            }
+        ],
+        "src/lib/efichar.c": [
+            {
+                "name": "efichar_char_strcmp",
+                "start": 32,
+                "end": 50
+            },
+            {
+                "name": "efichar_strcmp",
+                "start": 52,
+                "end": 69
+            },
+            {
+                "name": "efichar_from_char",
+                "start": 71,
+                "end": 80
+            },
+            {
+                "name": "efichar_to_char",
+                "start": 82,
+                "end": 91
+            },
+            {
+                "name": "efichar_strlen",
+                "start": 93,
+                "end": 106
+            },
+            {
+                "name": "efichar_strncpy",
+                "start": 112,
+                "end": 124
+            },
+            {
+                "name": "efichar_strsize",
+                "start": 126,
+                "end": 130
+            }
+        ],
+        "src/lib/unparse_path.c": [
+            {
+                "name": "unparse_raw",
+                "start": 40,
+                "end": 58
+            },
+            {
+                "name": "unparse_raw_text",
+                "start": 60,
+                "end": 79
+            },
+            {
+                "name": "unparse_ipv4_port",
+                "start": 81,
+                "end": 92
+            },
+            {
+                "name": "unparse_acpi_path",
+                "start": 94,
+                "end": 109
+            },
+            {
+                "name": "unparse_vendor_path",
+                "start": 111,
+                "end": 148
+            },
+            {
+                "name": "unparse_hardware_path",
+                "start": 150,
+                "end": 183
+            },
+            {
+                "name": "unparse_messaging_path",
+                "start": 185,
+                "end": 318
+            },
+            {
+                "name": "unparse_media_hard_drive_path",
+                "start": 320,
+                "end": 361
+            },
+            {
+                "name": "unparse_media_path",
+                "start": 363,
+                "end": 413
+            },
+            {
+                "name": "unparse_bios_path",
+                "start": 415,
+                "end": 449
+            },
+            {
+                "name": "unparse_path",
+                "start": 451,
+                "end": 566
+            }
+        ],
+        "src/efibootmgr/efibootmgr.c": [
+            {
+                "name": "free_vars",
+                "start": 78,
+                "end": 91
+            },
+            {
+                "name": "read_vars",
+                "start": 93,
+                "end": 134
+            },
+            {
+                "name": "free_array",
+                "start": 136,
+                "end": 148
+            },
+            {
+                "name": "compare",
+                "start": 150,
+                "end": 161
+            },
+            {
+                "name": "find_free_boot_var",
+                "start": 168,
+                "end": 206
+            },
+            {
+                "name": "warn_duplicate_name",
+                "start": 209,
+                "end": 227
+            },
+            {
+                "name": "make_boot_var",
+                "start": 229,
+                "end": 297
+            },
+            {
+                "name": "read_boot_order",
+                "start": 299,
+                "end": 329
+            },
+            {
+                "name": "set_boot_u16",
+                "start": 331,
+                "end": 338
+            },
+            {
+                "name": "add_to_boot_order",
+                "start": 340,
+                "end": 377
+            },
+            {
+                "name": "remove_dupes_from_boot_order",
+                "start": 379,
+                "end": 431
+            },
+            {
+                "name": "remove_from_boot_order",
+                "start": 433,
+                "end": 479
+            },
+            {
+                "name": "read_boot_u16",
+                "start": 481,
+                "end": 504
+            },
+            {
+                "name": "delete_boot_var",
+                "start": 506,
+                "end": 543
+            },
+            {
+                "name": "set_var_nums",
+                "start": 545,
+                "end": 573
+            },
+            {
+                "name": "unparse_boot_order",
+                "start": 575,
+                "end": 586
+            },
+            {
+                "name": "is_current_boot_entry",
+                "start": 588,
+                "end": 600
+            },
+            {
+                "name": "print_error_arrow",
+                "start": 602,
+                "end": 612
+            },
+            {
+                "name": "parse_boot_order",
+                "start": 614,
+                "end": 685
+            },
+            {
+                "name": "construct_boot_order",
+                "start": 687,
+                "end": 754
+            },
+            {
+                "name": "set_boot_order",
+                "start": 756,
+                "end": 775
+            },
+            {
+                "name": "show_boot_vars",
+                "start": 777,
+                "end": 870
+            },
+            {
+                "name": "show_boot_order",
+                "start": 872,
+                "end": 898
+            },
+            {
+                "name": "set_active_state",
+                "start": 900,
+                "end": 945
+            },
+            {
+                "name": "usage",
+                "start": 950,
+                "end": 984
+            },
+            {
+                "name": "set_default_opts",
+                "start": 986,
+                "end": 1002
+            },
+            {
+                "name": "parse_opts",
+                "start": 1004,
+                "end": 1266
+            },
+            {
+                "name": "main",
+                "start": 1269,
+                "end": 1401
+            }
+        ]
+    }
+}

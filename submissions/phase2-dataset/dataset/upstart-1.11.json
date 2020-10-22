@@ -1,0 +1,5961 @@
+{
+    "upstart-1.11": {
+        "test/test_util_common.h": [
+            {
+                "name": "set_upstart_session",
+                "start": 693,
+                "end": 694
+            },
+            {
+                "name": "have_timed_waitpid",
+                "start": 699,
+                "end": 700
+            },
+            {
+                "name": "timed_waitpid",
+                "start": 702,
+                "end": 703
+            },
+            {
+                "name": "get_initctl",
+                "start": 705,
+                "end": 706
+            },
+            {
+                "name": "start_upstart_common",
+                "start": 710,
+                "end": 712
+            },
+            {
+                "name": "job_to_pid",
+                "start": 716,
+                "end": 717
+            },
+            {
+                "name": "string_check",
+                "start": 719,
+                "end": 720
+            },
+            {
+                "name": "get_upstart_binary",
+                "start": 722,
+                "end": 723
+            },
+            {
+                "name": "get_initctl_binary",
+                "start": 725,
+                "end": 726
+            },
+            {
+                "name": "strcmp_compar",
+                "start": 728,
+                "end": 729
+            },
+            {
+                "name": "get_session_file",
+                "start": 731,
+                "end": 732
+            },
+            {
+                "name": "in_chroot",
+                "start": 734,
+                "end": 735
+            },
+            {
+                "name": "dbus_configured",
+                "start": 737,
+                "end": 738
+            },
+            {
+                "name": "search_and_replace",
+                "start": 740,
+                "end": 742
+            },
+            {
+                "name": "file_exists",
+                "start": 744,
+                "end": 745
+            }
+        ],
+        "test/test_util_common.c": [
+            {
+                "name": "wait_for_upstart",
+                "start": 86,
+                "end": 133
+            },
+            {
+                "name": "session_init_reexec",
+                "start": 142,
+                "end": 187
+            },
+            {
+                "name": "set_upstart_session",
+                "start": 205,
+                "end": 280
+            },
+            {
+                "name": "selfpipe_write",
+                "start": 289,
+                "end": 295
+            },
+            {
+                "name": "selfpipe_setup",
+                "start": 303,
+                "end": 336
+            },
+            {
+                "name": "have_timed_waitpid",
+                "start": 344,
+                "end": 353
+            },
+            {
+                "name": "timed_waitpid",
+                "start": 364,
+                "end": 419
+            },
+            {
+                "name": "get_initctl",
+                "start": 431,
+                "end": 456
+            },
+            {
+                "name": "_start_upstart",
+                "start": 470,
+                "end": 509
+            },
+            {
+                "name": "start_upstart_common",
+                "start": 524,
+                "end": 571
+            },
+            {
+                "name": "start_upstart",
+                "start": 581,
+                "end": 585
+            },
+            {
+                "name": "job_to_pid",
+                "start": 599,
+                "end": 654
+            },
+            {
+                "name": "get_upstart_binary",
+                "start": 656,
+                "end": 664
+            },
+            {
+                "name": "get_initctl_binary",
+                "start": 666,
+                "end": 674
+            },
+            {
+                "name": "string_check",
+                "start": 686,
+                "end": 699
+            },
+            {
+                "name": "strcmp_compar",
+                "start": 710,
+                "end": 714
+            },
+            {
+                "name": "get_session_file",
+                "start": 729,
+                "end": 743
+            },
+            {
+                "name": "in_chroot",
+                "start": 754,
+                "end": 772
+            },
+            {
+                "name": "dbus_configured",
+                "start": 782,
+                "end": 789
+            },
+            {
+                "name": "search_and_replace",
+                "start": 804,
+                "end": 845
+            },
+            {
+                "name": "file_exists",
+                "start": 855,
+                "end": 863
+            },
+            {
+                "name": "test_common_setup",
+                "start": 875,
+                "end": 916
+            },
+            {
+                "name": "test_common_cleanup",
+                "start": 928,
+                "end": 1004
+            }
+        ],
+        "test/tests/test_util_check_env.c": [
+            {
+                "name": "check_for_overlayfs",
+                "start": 49,
+                "end": 73
+            },
+            {
+                "name": "test_checks",
+                "start": 80,
+                "end": 97
+            },
+            {
+                "name": "main",
+                "start": 99,
+                "end": 106
+            }
+        ],
+        "init/process.h": [
+            {
+                "name": "process_name",
+                "start": 77,
+                "end": 78
+            },
+            {
+                "name": "process_serialise",
+                "start": 80,
+                "end": 81
+            },
+            {
+                "name": "process_deserialise",
+                "start": 83,
+                "end": 84
+            },
+            {
+                "name": "process_serialise_all",
+                "start": 86,
+                "end": 88
+            },
+            {
+                "name": "process_from_name",
+                "start": 90,
+                "end": 91
+            },
+            {
+                "name": "process_deserialise_all",
+                "start": 93,
+                "end": 96
+            },
+            {
+                "name": "process_type_enum_to_str",
+                "start": 98,
+                "end": 100
+            },
+            {
+                "name": "process_type_str_to_enum",
+                "start": 102,
+                "end": 104
+            }
+        ],
+        "init/session.h": [
+            {
+                "name": "session_new",
+                "start": 83,
+                "end": 84
+            },
+            {
+                "name": "session_serialise_all",
+                "start": 88,
+                "end": 89
+            },
+            {
+                "name": "session_deserialise_all",
+                "start": 91,
+                "end": 92
+            },
+            {
+                "name": "session_get_index",
+                "start": 94,
+                "end": 95
+            },
+            {
+                "name": "session_from_index",
+                "start": 97,
+                "end": 98
+            }
+        ],
+        "init/state.h": [
+            {
+                "name": "state_read",
+                "start": 1129,
+                "end": 1130
+            },
+            {
+                "name": "state_write",
+                "start": 1132,
+                "end": 1133
+            },
+            {
+                "name": "state_read_objects",
+                "start": 1135,
+                "end": 1136
+            },
+            {
+                "name": "state_write_objects",
+                "start": 1138,
+                "end": 1139
+            },
+            {
+                "name": "state_to_string",
+                "start": 1141,
+                "end": 1142
+            },
+            {
+                "name": "state_from_string",
+                "start": 1144,
+                "end": 1145
+            },
+            {
+                "name": "state_serialise_str_array",
+                "start": 1149,
+                "end": 1151
+            },
+            {
+                "name": "state_serialise_int32_array",
+                "start": 1153,
+                "end": 1155
+            },
+            {
+                "name": "state_serialise_int64_array",
+                "start": 1157,
+                "end": 1159
+            },
+            {
+                "name": "_state_deserialise_str_array",
+                "start": 1161,
+                "end": 1164
+            },
+            {
+                "name": "state_deserialise_int32_array",
+                "start": 1166,
+                "end": 1169
+            },
+            {
+                "name": "state_deserialise_int64_array",
+                "start": 1171,
+                "end": 1174
+            },
+            {
+                "name": "state_rlimit_serialise_all",
+                "start": 1176,
+                "end": 1178
+            },
+            {
+                "name": "state_rlimit_deserialise_all",
+                "start": 1180,
+                "end": 1183
+            },
+            {
+                "name": "state_collapse_env",
+                "start": 1185,
+                "end": 1186
+            },
+            {
+                "name": "state_get_json_type",
+                "start": 1188,
+                "end": 1190
+            },
+            {
+                "name": "state_deserialise_resolve_deps",
+                "start": 1192,
+                "end": 1194
+            },
+            {
+                "name": "state_serialise_blocking",
+                "start": 1196,
+                "end": 1198
+            },
+            {
+                "name": "state_deserialise_blocking",
+                "start": 1200,
+                "end": 1203
+            },
+            {
+                "name": "state_fd_valid",
+                "start": 1205,
+                "end": 1206
+            },
+            {
+                "name": "state_data_to_hex",
+                "start": 1208,
+                "end": 1210
+            },
+            {
+                "name": "state_hex_to_data",
+                "start": 1212,
+                "end": 1215
+            },
+            {
+                "name": "state_rlimit_serialise",
+                "start": 1217,
+                "end": 1218
+            },
+            {
+                "name": "state_rlimit_deserialise",
+                "start": 1220,
+                "end": 1221
+            },
+            {
+                "name": "state_get_version",
+                "start": 1223,
+                "end": 1224
+            }
+        ],
+        "init/event.h": [
+            {
+                "name": "event_serialise",
+                "start": 99,
+                "end": 100
+            },
+            {
+                "name": "event_deserialise",
+                "start": 102,
+                "end": 103
+            },
+            {
+                "name": "event_serialise_all",
+                "start": 105,
+                "end": 106
+            },
+            {
+                "name": "event_deserialise_all",
+                "start": 108,
+                "end": 109
+            },
+            {
+                "name": "event_to_index",
+                "start": 111,
+                "end": 112
+            },
+            {
+                "name": "event_from_index",
+                "start": 114,
+                "end": 115
+            }
+        ],
+        "init/event_operator.h": [
+            {
+                "name": "event_operator_copy",
+                "start": 82,
+                "end": 84
+            },
+            {
+                "name": "event_operator_match",
+                "start": 89,
+                "end": 90
+            },
+            {
+                "name": "event_operator_handle",
+                "start": 92,
+                "end": 93
+            },
+            {
+                "name": "event_operator_environment",
+                "start": 95,
+                "end": 97
+            },
+            {
+                "name": "event_operator_fds",
+                "start": 98,
+                "end": 105
+            },
+            {
+                "name": "event_operator_events",
+                "start": 106,
+                "end": 107
+            },
+            {
+                "name": "event_operator_type_enum_to_str",
+                "start": 111,
+                "end": 113
+            },
+            {
+                "name": "event_operator_type_str_to_enum",
+                "start": 115,
+                "end": 117
+            },
+            {
+                "name": "event_operator_serialise",
+                "start": 119,
+                "end": 121
+            },
+            {
+                "name": "event_operator_serialise_all",
+                "start": 123,
+                "end": 125
+            },
+            {
+                "name": "event_operator_deserialise",
+                "start": 127,
+                "end": 129
+            },
+            {
+                "name": "event_operator_deserialise_all",
+                "start": 131,
+                "end": 133
+            },
+            {
+                "name": "event_operator_collapse",
+                "start": 136,
+                "end": 137
+            }
+        ],
+        "init/job_class.h": [
+            {
+                "name": "job_class_environment_get_all",
+                "start": 247,
+                "end": 248
+            },
+            {
+                "name": "job_class_environment_get",
+                "start": 250,
+                "end": 251
+            },
+            {
+                "name": "job_class_new",
+                "start": 253,
+                "end": 256
+            },
+            {
+                "name": "job_class_register",
+                "start": 263,
+                "end": 264
+            },
+            {
+                "name": "job_class_unregister",
+                "start": 265,
+                "end": 266
+            },
+            {
+                "name": "job_class_environment",
+                "start": 268,
+                "end": 270
+            },
+            {
+                "name": "job_class_get_instance",
+                "start": 273,
+                "end": 277
+            },
+            {
+                "name": "job_class_get_instance_by_name",
+                "start": 278,
+                "end": 282
+            },
+            {
+                "name": "job_class_get_all_instances",
+                "start": 283,
+                "end": 286
+            },
+            {
+                "name": "job_class_start",
+                "start": 288,
+                "end": 291
+            },
+            {
+                "name": "job_class_stop",
+                "start": 292,
+                "end": 295
+            },
+            {
+                "name": "job_class_restart",
+                "start": 296,
+                "end": 299
+            },
+            {
+                "name": "job_class_get_name",
+                "start": 301,
+                "end": 304
+            },
+            {
+                "name": "job_class_get_description",
+                "start": 305,
+                "end": 308
+            },
+            {
+                "name": "job_class_get_author",
+                "start": 309,
+                "end": 312
+            },
+            {
+                "name": "job_class_get_version",
+                "start": 313,
+                "end": 316
+            },
+            {
+                "name": "job_class_get_start_on",
+                "start": 318,
+                "end": 320
+            },
+            {
+                "name": "job_class_get_stop_on",
+                "start": 321,
+                "end": 323
+            },
+            {
+                "name": "job_class_get_emits",
+                "start": 324,
+                "end": 326
+            },
+            {
+                "name": "job_class_get_usage",
+                "start": 327,
+                "end": 329
+            },
+            {
+                "name": "job_class_console_type_enum_to_str",
+                "start": 331,
+                "end": 333
+            },
+            {
+                "name": "job_class_console_type_str_to_enum",
+                "start": 335,
+                "end": 337
+            },
+            {
+                "name": "job_class_expect_type_enum_to_str",
+                "start": 339,
+                "end": 341
+            },
+            {
+                "name": "job_class_expect_type_str_to_enum",
+                "start": 343,
+                "end": 345
+            },
+            {
+                "name": "job_class_console_type",
+                "start": 347,
+                "end": 348
+            },
+            {
+                "name": "job_class_serialise",
+                "start": 350,
+                "end": 351
+            },
+            {
+                "name": "job_class_deserialise",
+                "start": 353,
+                "end": 354
+            },
+            {
+                "name": "job_class_serialise_all",
+                "start": 356,
+                "end": 357
+            },
+            {
+                "name": "job_class_deserialise_all",
+                "start": 359,
+                "end": 360
+            },
+            {
+                "name": "job_class_get",
+                "start": 362,
+                "end": 363
+            },
+            {
+                "name": "job_class_serialise_job_environ",
+                "start": 365,
+                "end": 366
+            },
+            {
+                "name": "job_class_deserialise_job_environ",
+                "start": 368,
+                "end": 369
+            },
+            {
+                "name": "job_class_max_kill_timeout",
+                "start": 373,
+                "end": 374
+            },
+            {
+                "name": "job_class_get_registered",
+                "start": 376,
+                "end": 377
+            },
+            {
+                "name": "job_class_get_index",
+                "start": 381,
+                "end": 383
+            }
+        ],
+        "init/parse_job.h": [
+            {
+                "name": "parse_job",
+                "start": 32,
+                "end": 36
+            },
+            {
+                "name": "parse_on_simple",
+                "start": 38,
+                "end": 41
+            }
+        ],
+        "init/log.h": [
+            {
+                "name": "log_new",
+                "start": 79,
+                "end": 81
+            },
+            {
+                "name": "log_destroy",
+                "start": 84,
+                "end": 85
+            },
+            {
+                "name": "log_handle_unflushed",
+                "start": 86,
+                "end": 87
+            },
+            {
+                "name": "log_clear_unflushed",
+                "start": 88,
+                "end": 89
+            },
+            {
+                "name": "log_serialise",
+                "start": 91,
+                "end": 92
+            },
+            {
+                "name": "log_deserialise",
+                "start": 93,
+                "end": 94
+            }
+        ],
+        "init/job.h": [
+            {
+                "name": "job_goal_name",
+                "start": 185,
+                "end": 186
+            },
+            {
+                "name": "job_state_name",
+                "start": 189,
+                "end": 190
+            },
+            {
+                "name": "job_start",
+                "start": 193,
+                "end": 194
+            },
+            {
+                "name": "job_stop",
+                "start": 195,
+                "end": 196
+            },
+            {
+                "name": "job_restart",
+                "start": 197,
+                "end": 198
+            },
+            {
+                "name": "job_reload",
+                "start": 199,
+                "end": 200
+            },
+            {
+                "name": "job_get_name",
+                "start": 202,
+                "end": 204
+            },
+            {
+                "name": "job_get_goal",
+                "start": 205,
+                "end": 207
+            },
+            {
+                "name": "job_get_state",
+                "start": 208,
+                "end": 210
+            },
+            {
+                "name": "job_get_processes",
+                "start": 212,
+                "end": 214
+            },
+            {
+                "name": "job_serialise_all",
+                "start": 219,
+                "end": 220
+            },
+            {
+                "name": "job_deserialise_all",
+                "start": 222,
+                "end": 223
+            },
+            {
+                "name": "job_find",
+                "start": 225,
+                "end": 229
+            }
+        ],
+        "init/apparmor.h": [
+            {
+                "name": "apparmor_switch",
+                "start": 44,
+                "end": 45
+            },
+            {
+                "name": "apparmor_available",
+                "start": 47,
+                "end": 48
+            }
+        ],
+        "init/parse_job.c": [
+            {
+                "name": "parse_exec",
+                "start": 50,
+                "end": 56
+            },
+            {
+                "name": "parse_script",
+                "start": 57,
+                "end": 61
+            },
+            {
+                "name": "parse_process",
+                "start": 62,
+                "end": 66
+            },
+            {
+                "name": "parse_on",
+                "start": 67,
+                "end": 71
+            },
+            {
+                "name": "parse_on_operator",
+                "start": 72,
+                "end": 77
+            },
+            {
+                "name": "parse_on_paren",
+                "start": 78,
+                "end": 84
+            },
+            {
+                "name": "parse_on_operand",
+                "start": 85,
+                "end": 90
+            },
+            {
+                "name": "parse_on_collect",
+                "start": 91,
+                "end": 93
+            },
+            {
+                "name": "stanza_instance",
+                "start": 95,
+                "end": 98
+            },
+            {
+                "name": "stanza_description",
+                "start": 100,
+                "end": 103
+            },
+            {
+                "name": "stanza_author",
+                "start": 104,
+                "end": 107
+            },
+            {
+                "name": "stanza_version",
+                "start": 108,
+                "end": 111
+            },
+            {
+                "name": "stanza_env",
+                "start": 113,
+                "end": 116
+            },
+            {
+                "name": "stanza_export",
+                "start": 117,
+                "end": 120
+            },
+            {
+                "name": "stanza_start",
+                "start": 122,
+                "end": 125
+            },
+            {
+                "name": "stanza_stop",
+                "start": 126,
+                "end": 129
+            },
+            {
+                "name": "stanza_emits",
+                "start": 130,
+                "end": 133
+            },
+            {
+                "name": "stanza_exec",
+                "start": 135,
+                "end": 138
+            },
+            {
+                "name": "stanza_script",
+                "start": 139,
+                "end": 142
+            },
+            {
+                "name": "stanza_pre_start",
+                "start": 143,
+                "end": 146
+            },
+            {
+                "name": "stanza_post_start",
+                "start": 147,
+                "end": 150
+            },
+            {
+                "name": "stanza_pre_stop",
+                "start": 151,
+                "end": 154
+            },
+            {
+                "name": "stanza_post_stop",
+                "start": 155,
+                "end": 158
+            },
+            {
+                "name": "stanza_expect",
+                "start": 160,
+                "end": 163
+            },
+            {
+                "name": "stanza_task",
+                "start": 164,
+                "end": 167
+            },
+            {
+                "name": "stanza_kill",
+                "start": 169,
+                "end": 172
+            },
+            {
+                "name": "stanza_reload",
+                "start": 174,
+                "end": 177
+            },
+            {
+                "name": "stanza_apparmor",
+                "start": 179,
+                "end": 182
+            },
+            {
+                "name": "stanza_respawn",
+                "start": 184,
+                "end": 187
+            },
+            {
+                "name": "stanza_normal",
+                "start": 188,
+                "end": 191
+            },
+            {
+                "name": "stanza_console",
+                "start": 193,
+                "end": 196
+            },
+            {
+                "name": "stanza_umask",
+                "start": 198,
+                "end": 201
+            },
+            {
+                "name": "stanza_nice",
+                "start": 202,
+                "end": 205
+            },
+            {
+                "name": "stanza_oom",
+                "start": 206,
+                "end": 209
+            },
+            {
+                "name": "stanza_limit",
+                "start": 210,
+                "end": 213
+            },
+            {
+                "name": "stanza_chroot",
+                "start": 214,
+                "end": 217
+            },
+            {
+                "name": "stanza_chdir",
+                "start": 218,
+                "end": 221
+            },
+            {
+                "name": "stanza_setuid",
+                "start": 222,
+                "end": 225
+            },
+            {
+                "name": "stanza_setgid",
+                "start": 226,
+                "end": 229
+            },
+            {
+                "name": "stanza_debug",
+                "start": 230,
+                "end": 233
+            },
+            {
+                "name": "stanza_manual",
+                "start": 234,
+                "end": 237
+            },
+            {
+                "name": "stanza_usage",
+                "start": 238,
+                "end": 241
+            },
+            {
+                "name": "parse_job",
+                "start": 314,
+                "end": 350
+            },
+            {
+                "name": "parse_exec",
+                "start": 371,
+                "end": 399
+            },
+            {
+                "name": "parse_script",
+                "start": 419,
+                "end": 446
+            },
+            {
+                "name": "parse_process",
+                "start": 464,
+                "end": 515
+            },
+            {
+                "name": "parse_on",
+                "start": 536,
+                "end": 637
+            },
+            {
+                "name": "parse_on_simple",
+                "start": 651,
+                "end": 679
+            },
+            {
+                "name": "parse_on_operator",
+                "start": 701,
+                "end": 784
+            },
+            {
+                "name": "parse_on_paren",
+                "start": 815,
+                "end": 889
+            },
+            {
+                "name": "parse_on_operand",
+                "start": 913,
+                "end": 989
+            },
+            {
+                "name": "parse_on_collect",
+                "start": 1010,
+                "end": 1058
+            },
+            {
+                "name": "stanza_debug",
+                "start": 1074,
+                "end": 1090
+            },
+            {
+                "name": "stanza_manual",
+                "start": 1106,
+                "end": 1130
+            },
+            {
+                "name": "stanza_instance",
+                "start": 1147,
+                "end": 1168
+            },
+            {
+                "name": "stanza_description",
+                "start": 1186,
+                "end": 1208
+            },
+            {
+                "name": "stanza_author",
+                "start": 1225,
+                "end": 1246
+            },
+            {
+                "name": "stanza_version",
+                "start": 1263,
+                "end": 1284
+            },
+            {
+                "name": "stanza_env",
+                "start": 1302,
+                "end": 1325
+            },
+            {
+                "name": "stanza_export",
+                "start": 1342,
+                "end": 1371
+            },
+            {
+                "name": "stanza_start",
+                "start": 1389,
+                "end": 1436
+            },
+            {
+                "name": "stanza_stop",
+                "start": 1454,
+                "end": 1501
+            },
+            {
+                "name": "stanza_emits",
+                "start": 1519,
+                "end": 1548
+            },
+            {
+                "name": "stanza_exec",
+                "start": 1565,
+                "end": 1586
+            },
+            {
+                "name": "stanza_script",
+                "start": 1602,
+                "end": 1623
+            },
+            {
+                "name": "stanza_pre_start",
+                "start": 1639,
+                "end": 1654
+            },
+            {
+                "name": "stanza_post_start",
+                "start": 1670,
+                "end": 1685
+            },
+            {
+                "name": "stanza_pre_stop",
+                "start": 1701,
+                "end": 1716
+            },
+            {
+                "name": "stanza_post_stop",
+                "start": 1732,
+                "end": 1747
+            },
+            {
+                "name": "stanza_expect",
+                "start": 1765,
+                "end": 1810
+            },
+            {
+                "name": "stanza_task",
+                "start": 1826,
+                "end": 1842
+            },
+            {
+                "name": "stanza_kill",
+                "start": 1859,
+                "end": 1945
+            },
+            {
+                "name": "stanza_reload",
+                "start": 1962,
+                "end": 2030
+            },
+            {
+                "name": "stanza_apparmor",
+                "start": 2047,
+                "end": 2134
+            },
+            {
+                "name": "stanza_respawn",
+                "start": 2151,
+                "end": 2243
+            },
+            {
+                "name": "stanza_normal",
+                "start": 2264,
+                "end": 2338
+            },
+            {
+                "name": "stanza_console",
+                "start": 2355,
+                "end": 2394
+            },
+            {
+                "name": "stanza_umask",
+                "start": 2411,
+                "end": 2450
+            },
+            {
+                "name": "stanza_nice",
+                "start": 2466,
+                "end": 2505
+            },
+            {
+                "name": "stanza_oom",
+                "start": 2521,
+                "end": 2590
+            },
+            {
+                "name": "stanza_limit",
+                "start": 2606,
+                "end": 2722
+            },
+            {
+                "name": "stanza_chroot",
+                "start": 2738,
+                "end": 2759
+            },
+            {
+                "name": "stanza_chdir",
+                "start": 2775,
+                "end": 2796
+            },
+            {
+                "name": "stanza_setuid",
+                "start": 2812,
+                "end": 2833
+            },
+            {
+                "name": "stanza_setgid",
+                "start": 2849,
+                "end": 2870
+            },
+            {
+                "name": "stanza_usage",
+                "start": 2886,
+                "end": 2907
+            }
+        ],
+        "init/environ.h": [
+            {
+                "name": "environ_add",
+                "start": 26,
+                "end": 30
+            },
+            {
+                "name": "environ_remove",
+                "start": 31,
+                "end": 33
+            },
+            {
+                "name": "environ_append",
+                "start": 34,
+                "end": 36
+            },
+            {
+                "name": "environ_set",
+                "start": 38,
+                "end": 40
+            },
+            {
+                "name": "environ_lookup",
+                "start": 42,
+                "end": 43
+            },
+            {
+                "name": "environ_getn",
+                "start": 46,
+                "end": 47
+            },
+            {
+                "name": "environ_expand",
+                "start": 51,
+                "end": 53
+            },
+            "name",
+            "start",
+            "end",
+            "name",
+            "start",
+            "end",
+            "name",
+            "start",
+            "end"
+        ],
+        "init/job_process.h": [
+            {
+                "name": "job_process_run",
+                "start": 128,
+                "end": 130
+            },
+            {
+                "name": "job_process_spawn",
+                "start": 132,
+                "end": 135
+            },
+            {
+                "name": "job_process_handler",
+                "start": 139,
+                "end": 140
+            },
+            {
+                "name": "job_process_log_path",
+                "start": 144,
+                "end": 145
+            },
+            {
+                "name": "job_process_set_kill_timer",
+                "start": 147,
+                "end": 149
+            }
+        ],
+        "init/blocked.h": [
+            {
+                "name": "blocked_type_enum_to_str",
+                "start": 82,
+                "end": 84
+            },
+            {
+                "name": "blocked_type_str_to_enum",
+                "start": 86,
+                "end": 88
+            }
+        ],
+        "init/quiesce.h": [
+            {
+                "name": "quiesce",
+                "start": 67,
+                "end": 69
+            },
+            {
+                "name": "quiesce_in_progress",
+                "start": 74,
+                "end": 75
+            }
+        ],
+        "init/control.h": [
+            {
+                "name": "control_server_open",
+                "start": 99,
+                "end": 100
+            },
+            {
+                "name": "control_bus_open",
+                "start": 103,
+                "end": 104
+            },
+            {
+                "name": "control_reload_configuration",
+                "start": 107,
+                "end": 108
+            },
+            {
+                "name": "control_get_job_by_name",
+                "start": 110,
+                "end": 112
+            },
+            {
+                "name": "control_get_all_jobs",
+                "start": 113,
+                "end": 115
+            },
+            {
+                "name": "control_emit_event",
+                "start": 117,
+                "end": 120
+            },
+            {
+                "name": "control_emit_event_with_file",
+                "start": 121,
+                "end": 124
+            },
+            {
+                "name": "control_get_version",
+                "start": 126,
+                "end": 128
+            },
+            {
+                "name": "control_get_log_priority",
+                "start": 130,
+                "end": 132
+            },
+            {
+                "name": "control_set_log_priority",
+                "start": 133,
+                "end": 135
+            },
+            {
+                "name": "control_get_bus_type",
+                "start": 137,
+                "end": 138
+            },
+            {
+                "name": "control_conn_to_index",
+                "start": 142,
+                "end": 143
+            },
+            {
+                "name": "control_conn_from_index",
+                "start": 145,
+                "end": 147
+            },
+            {
+                "name": "control_bus_release_name",
+                "start": 149,
+                "end": 150
+            },
+            {
+                "name": "control_get_state",
+                "start": 152,
+                "end": 155
+            },
+            {
+                "name": "control_restart",
+                "start": 157,
+                "end": 158
+            },
+            {
+                "name": "control_notify_disk_writeable",
+                "start": 164,
+                "end": 166
+            },
+            {
+                "name": "control_notify_dbus_address",
+                "start": 168,
+                "end": 171
+            },
+            {
+                "name": "control_set_env",
+                "start": 173,
+                "end": 178
+            },
+            {
+                "name": "control_get_env",
+                "start": 180,
+                "end": 185
+            },
+            {
+                "name": "control_list_env",
+                "start": 187,
+                "end": 192
+            },
+            {
+                "name": "control_reset_env",
+                "start": 194,
+                "end": 198
+            },
+            {
+                "name": "control_unset_env",
+                "start": 200,
+                "end": 205
+            }
+        ],
+        "init/job.c": [
+            {
+                "name": "job_goal_enum_to_str",
+                "start": 50,
+                "end": 67
+            },
+            {
+                "name": "job_goal_str_to_enum",
+                "start": 69,
+                "end": 70
+            },
+            {
+                "name": "job_state_enum_to_str",
+                "start": 72,
+                "end": 74
+            },
+            {
+                "name": "job_state_str_to_enum",
+                "start": 76,
+                "end": 78
+            },
+            {
+                "name": "job_trace_state_enum_to_str",
+                "start": 80,
+                "end": 82
+            },
+            {
+                "name": "job_trace_state_str_to_enum",
+                "start": 84,
+                "end": 86
+            },
+            {
+                "name": "job_serialise_kill_timer",
+                "start": 88,
+                "end": 90
+            },
+            {
+                "name": "job_deserialise_kill_timer",
+                "start": 92,
+                "end": 94
+            },
+            {
+                "name": "job_new",
+                "start": 110,
+                "end": 215
+            },
+            {
+                "name": "job_register",
+                "start": 226,
+                "end": 242
+            },
+            {
+                "name": "job_change_goal",
+                "start": 271,
+                "end": 318
+            },
+            {
+                "name": "job_change_state",
+                "start": 339,
+                "end": 580
+            },
+            {
+                "name": "job_next_state",
+                "start": 600,
+                "end": 719
+            },
+            {
+                "name": "job_failed",
+                "start": 739,
+                "end": 761
+            },
+            {
+                "name": "job_finished",
+                "start": 775,
+                "end": 869
+            },
+            {
+                "name": "job_emit_event",
+                "start": 891,
+                "end": 1003
+            },
+            {
+                "name": "job_name",
+                "start": 1016,
+                "end": 1034
+            },
+            {
+                "name": "job_goal_name",
+                "start": 1046,
+                "end": 1059
+            },
+            {
+                "name": "job_goal_from_name",
+                "start": 1069,
+                "end": 1083
+            },
+            {
+                "name": "job_state_name",
+                "start": 1095,
+                "end": 1124
+            },
+            {
+                "name": "job_state_from_name",
+                "start": 1134,
+                "end": 1164
+            },
+            {
+                "name": "job_start",
+                "start": 1189,
+                "end": 1240
+            },
+            {
+                "name": "job_stop",
+                "start": 1264,
+                "end": 1315
+            },
+            {
+                "name": "job_restart",
+                "start": 1340,
+                "end": 1396
+            },
+            {
+                "name": "job_reload",
+                "start": 1411,
+                "end": 1444
+            },
+            {
+                "name": "job_get_name",
+                "start": 1461,
+                "end": 1474
+            },
+            {
+                "name": "job_get_goal",
+                "start": 1490,
+                "end": 1504
+            },
+            {
+                "name": "job_get_state",
+                "start": 1520,
+                "end": 1534
+            },
+            {
+                "name": "job_get_processes",
+                "start": 1551,
+                "end": 1607
+            },
+            {
+                "name": "job_serialise",
+                "start": 1622,
+                "end": 1779
+            },
+            {
+                "name": "job_serialise_all",
+                "start": 1788,
+                "end": 1816
+            },
+            {
+                "name": "job_deserialise",
+                "start": 1828,
+                "end": 2078
+            },
+            {
+                "name": "job_deserialise_all",
+                "start": 2091,
+                "end": 2127
+            },
+            {
+                "name": "job_goal_enum_to_str",
+                "start": 2138,
+                "end": 2146
+            },
+            {
+                "name": "job_goal_str_to_enum",
+                "start": 2157,
+                "end": 2165
+            },
+            {
+                "name": "job_state_enum_to_str",
+                "start": 2176,
+                "end": 2192
+            },
+            {
+                "name": "job_state_str_to_enum",
+                "start": 2203,
+                "end": 2219
+            },
+            {
+                "name": "job_trace_state_enum_to_str",
+                "start": 2230,
+                "end": 2239
+            },
+            {
+                "name": "job_trace_state_str_to_enum",
+                "start": 2250,
+                "end": 2259
+            },
+            {
+                "name": "job_serialise_kill_timer",
+                "start": 2270,
+                "end": 2292
+            },
+            {
+                "name": "job_deserialise_kill_timer",
+                "start": 2303,
+                "end": 2327
+            },
+            {
+                "name": "job_find",
+                "start": 2342,
+                "end": 2367
+            }
+        ],
+        "init/apparmor.c": [
+            {
+                "name": "apparmor_switch",
+                "start": 50,
+                "end": 74
+            },
+            {
+                "name": "apparmor_available",
+                "start": 83,
+                "end": 127
+            }
+        ],
+        "init/environ.c": [
+            {
+                "name": "environ_expand_until",
+                "start": 42,
+                "end": 44
+            },
+            {
+                "name": "environ_add",
+                "start": 80,
+                "end": 155
+            },
+            {
+                "name": "environ_remove",
+                "start": 171,
+                "end": 220
+            },
+            {
+                "name": "environ_append",
+                "start": 257,
+                "end": 273
+            },
+            {
+                "name": "environ_set",
+                "start": 310,
+                "end": 335
+            },
+            {
+                "name": "environ_lookup",
+                "start": 349,
+                "end": 363
+            },
+            {
+                "name": "environ_get",
+                "start": 377,
+                "end": 384
+            },
+            {
+                "name": "environ_getn",
+                "start": 398,
+                "end": 418
+            },
+            {
+                "name": "environ_all_valid",
+                "start": 434,
+                "end": 450
+            },
+            {
+                "name": "environ_expand",
+                "start": 485,
+                "end": 508
+            },
+            {
+                "name": "environ_expand_until",
+                "start": 537,
+                "end": 766
+            }
+        ],
+        "init/conf.h": [
+            {
+                "name": "conf_source_new",
+                "start": 117,
+                "end": 119
+            },
+            {
+                "name": "conf_file_new",
+                "start": 120,
+                "end": 121
+            },
+            {
+                "name": "conf_source_reload",
+                "start": 124,
+                "end": 125
+            },
+            {
+                "name": "conf_source_type_enum_to_str",
+                "start": 131,
+                "end": 133
+            },
+            {
+                "name": "conf_source_type_str_to_enum",
+                "start": 135,
+                "end": 137
+            },
+            {
+                "name": "conf_source_serialise",
+                "start": 139,
+                "end": 141
+            },
+            {
+                "name": "conf_source_serialise_all",
+                "start": 143,
+                "end": 145
+            },
+            {
+                "name": "conf_source_deserialise",
+                "start": 147,
+                "end": 149
+            },
+            {
+                "name": "conf_source_deserialise_all",
+                "start": 151,
+                "end": 153
+            },
+            {
+                "name": "conf_file_serialise",
+                "start": 155,
+                "end": 157
+            },
+            {
+                "name": "conf_file_deserialise",
+                "start": 159,
+                "end": 161
+            },
+            {
+                "name": "conf_file_deserialise_all",
+                "start": 163,
+                "end": 165
+            },
+            {
+                "name": "conf_source_get_index",
+                "start": 167,
+                "end": 169
+            },
+            {
+                "name": "conf_file_find",
+                "start": 171,
+                "end": 173
+            }
+        ],
+        "init/job_class.c": [
+            {
+                "name": "job_class_init",
+                "start": 111,
+                "end": 116
+            },
+            {
+                "name": "job_class_environment_init",
+                "start": 123,
+                "end": 136
+            },
+            {
+                "name": "job_class_environment_reset",
+                "start": 145,
+                "end": 150
+            },
+            {
+                "name": "job_class_environment_clear",
+                "start": 157,
+                "end": 164
+            },
+            {
+                "name": "job_class_environment_set",
+                "start": 177,
+                "end": 199
+            },
+            {
+                "name": "job_class_environment_unset",
+                "start": 210,
+                "end": 232
+            },
+            {
+                "name": "job_class_environment_get_all",
+                "start": 244,
+                "end": 250
+            },
+            {
+                "name": "job_class_environment_get",
+                "start": 264,
+                "end": 271
+            },
+            {
+                "name": "job_class_new",
+                "start": 292,
+                "end": 398
+            },
+            {
+                "name": "job_class_get_registered",
+                "start": 412,
+                "end": 428
+            },
+            {
+                "name": "job_class_consider",
+                "start": 440,
+                "end": 472
+            },
+            {
+                "name": "job_class_reconsider",
+                "start": 487,
+                "end": 515
+            },
+            {
+                "name": "job_class_event_block",
+                "start": 535,
+                "end": 589
+            },
+            {
+                "name": "job_class_add",
+                "start": 598,
+                "end": 614
+            },
+            {
+                "name": "job_class_add_safe",
+                "start": 623,
+                "end": 638
+            },
+            {
+                "name": "job_class_remove",
+                "start": 653,
+                "end": 677
+            },
+            {
+                "name": "job_class_register",
+                "start": 691,
+                "end": 713
+            },
+            {
+                "name": "job_class_unregister",
+                "start": 723,
+                "end": 738
+            },
+            {
+                "name": "job_class_environment",
+                "start": 762,
+                "end": 796
+            },
+            {
+                "name": "job_class_get_instance",
+                "start": 817,
+                "end": 892
+            },
+            {
+                "name": "job_class_get_instance_by_name",
+                "start": 911,
+                "end": 937
+            },
+            {
+                "name": "job_class_get_all_instances",
+                "start": 954,
+                "end": 984
+            },
+            {
+                "name": "job_class_start",
+                "start": 1015,
+                "end": 1126
+            },
+            {
+                "name": "job_class_stop",
+                "start": 1155,
+                "end": 1257
+            },
+            {
+                "name": "job_class_restart",
+                "start": 1290,
+                "end": 1396
+            },
+            {
+                "name": "job_class_get",
+                "start": 1408,
+                "end": 1431
+            },
+            {
+                "name": "job_class_get_name",
+                "start": 1448,
+                "end": 1461
+            },
+            {
+                "name": "job_class_get_description",
+                "start": 1477,
+                "end": 1496
+            },
+            {
+                "name": "job_class_get_author",
+                "start": 1512,
+                "end": 1531
+            },
+            {
+                "name": "job_class_get_version",
+                "start": 1547,
+                "end": 1566
+            },
+            {
+                "name": "job_class_get_start_on",
+                "start": 1588,
+                "end": 1646
+            },
+            {
+                "name": "job_class_get_stop_on",
+                "start": 1667,
+                "end": 1725
+            },
+            {
+                "name": "job_class_get_emits",
+                "start": 1741,
+                "end": 1761
+            },
+            {
+                "name": "job_class_console_type",
+                "start": 1769,
+                "end": 1783
+            },
+            {
+                "name": "job_class_get_usage",
+                "start": 1799,
+                "end": 1820
+            },
+            {
+                "name": "job_class_serialise_job_environ",
+                "start": 1829,
+                "end": 1845
+            },
+            {
+                "name": "job_class_deserialise_job_environ",
+                "start": 1855,
+                "end": 1872
+            },
+            {
+                "name": "job_class_serialise",
+                "start": 1884,
+                "end": 2059
+            },
+            {
+                "name": "job_class_serialise_all",
+                "start": 2082,
+                "end": 2110
+            },
+            {
+                "name": "job_class_deserialise",
+                "start": 2121,
+                "end": 2394
+            },
+            {
+                "name": "job_class_deserialise_all",
+                "start": 2405,
+                "end": 2460
+            },
+            {
+                "name": "job_class_expect_type_enum_to_str",
+                "start": 2472,
+                "end": 2481
+            },
+            {
+                "name": "job_class_expect_type_str_to_enum",
+                "start": 2492,
+                "end": 2503
+            },
+            {
+                "name": "job_class_console_type_enum_to_str",
+                "start": 2514,
+                "end": 2523
+            },
+            {
+                "name": "job_class_console_type_str_to_enum",
+                "start": 2534,
+                "end": 2547
+            },
+            {
+                "name": "job_class_prepare_reexec",
+                "start": 2555,
+                "end": 2603
+            },
+            {
+                "name": "job_class_max_kill_timeout",
+                "start": 2612,
+                "end": 2633
+            },
+            {
+                "name": "job_class_get_index",
+                "start": 2642,
+                "end": 2659
+            }
+        ],
+        "init/system.h": [
+            {
+                "name": "system_kill",
+                "start": 32,
+                "end": 33
+            },
+            {
+                "name": "system_setup_console",
+                "start": 35,
+                "end": 36
+            },
+            {
+                "name": "system_mount",
+                "start": 38,
+                "end": 40
+            },
+            {
+                "name": "system_check_file",
+                "start": 44,
+                "end": 45
+            }
+        ],
+        "init/system.c": [
+            {
+                "name": "system_kill",
+                "start": 47,
+                "end": 72
+            },
+            {
+                "name": "system_setup_console",
+                "start": 86,
+                "end": 161
+            },
+            {
+                "name": "system_mount",
+                "start": 177,
+                "end": 214
+            },
+            {
+                "name": "system_mknod",
+                "start": 229,
+                "end": 236
+            },
+            {
+                "name": "system_check_file",
+                "start": 251,
+                "end": 271
+            }
+        ],
+        "init/event.c": [
+            {
+                "name": "event_progress_enum_to_str",
+                "start": 57,
+                "end": 58
+            },
+            {
+                "name": "event_progress_str_to_enum",
+                "start": 60,
+                "end": 62
+            },
+            {
+                "name": "event_init",
+                "start": 80,
+                "end": 85
+            },
+            {
+                "name": "event_new",
+                "start": 119,
+                "end": 168
+            },
+            {
+                "name": "event_block",
+                "start": 181,
+                "end": 187
+            },
+            {
+                "name": "event_unblock",
+                "start": 198,
+                "end": 205
+            },
+            {
+                "name": "event_poll",
+                "start": 224,
+                "end": 267
+            },
+            {
+                "name": "event_pending",
+                "start": 281,
+                "end": 291
+            },
+            {
+                "name": "event_pending_handle_jobs",
+                "start": 300,
+                "end": 458
+            },
+            {
+                "name": "event_finished",
+                "start": 470,
+                "end": 537
+            },
+            {
+                "name": "event_serialise",
+                "start": 554,
+                "end": 611
+            },
+            {
+                "name": "event_serialise_all",
+                "start": 620,
+                "end": 648
+            },
+            {
+                "name": "event_deserialise",
+                "start": 658,
+                "end": 719
+            },
+            {
+                "name": "event_deserialise_all",
+                "start": 730,
+                "end": 767
+            },
+            {
+                "name": "event_progress_enum_to_str",
+                "start": 778,
+                "end": 786
+            },
+            {
+                "name": "event_progress_str_to_enum",
+                "start": 798,
+                "end": 806
+            },
+            {
+                "name": "event_to_index",
+                "start": 818,
+                "end": 842
+            },
+            {
+                "name": "event_from_index",
+                "start": 853,
+                "end": 870
+            }
+        ],
+        "init/state.c": [
+            {
+                "name": "state_read",
+                "start": 97,
+                "end": 133
+            },
+            {
+                "name": "state_write",
+                "start": 154,
+                "end": 194
+            },
+            {
+                "name": "state_read_objects",
+                "start": 207,
+                "end": 258
+            },
+            {
+                "name": "state_write_file",
+                "start": 270,
+                "end": 300
+            },
+            {
+                "name": "state_write_objects",
+                "start": 314,
+                "end": 326
+            },
+            {
+                "name": "state_to_string",
+                "start": 338,
+                "end": 413
+            },
+            {
+                "name": "state_from_string",
+                "start": 424,
+                "end": 502
+            },
+            {
+                "name": "state_toggle_cloexec",
+                "start": 515,
+                "end": 538
+            },
+            {
+                "name": "state_fd_valid",
+                "start": 546,
+                "end": 565
+            },
+            {
+                "name": "state_serialise_str_array",
+                "start": 576,
+                "end": 606
+            },
+            {
+                "name": "_state_deserialise_str_array",
+                "start": 625,
+                "end": 685
+            },
+            {
+                "name": "state_serialise_int32_array",
+                "start": 697,
+                "end": 729
+            },
+            {
+                "name": "state_serialise_int64_array",
+                "start": 741,
+                "end": 773
+            },
+            {
+                "name": "state_deserialise_int32_array",
+                "start": 790,
+                "end": 834
+            },
+            {
+                "name": "state_deserialise_int64_array",
+                "start": 851,
+                "end": 895
+            },
+            {
+                "name": "state_rlimit_serialise",
+                "start": 906,
+                "end": 928
+            },
+            {
+                "name": "state_rlimit_serialise_all",
+                "start": 939,
+                "end": 972
+            },
+            {
+                "name": "state_rlimit_deserialise",
+                "start": 985,
+                "end": 1012
+            },
+            {
+                "name": "state_rlimit_deserialise_all",
+                "start": 1026,
+                "end": 1088
+            },
+            {
+                "name": "state_collapse_env",
+                "start": 1100,
+                "end": 1143
+            },
+            {
+                "name": "state_get_json_type",
+                "start": 1163,
+                "end": 1189
+            },
+            {
+                "name": "state_deserialise_resolve_deps",
+                "start": 1202,
+                "end": 1324
+            },
+            {
+                "name": "state_serialise_blocked",
+                "start": 1346,
+                "end": 1483
+            },
+            {
+                "name": "state_serialise_blocking",
+                "start": 1494,
+                "end": 1534
+            },
+            {
+                "name": "state_deserialise_blocked",
+                "start": 1548,
+                "end": 1725
+            },
+            {
+                "name": "state_deserialise_blocking",
+                "start": 1739,
+                "end": 1774
+            },
+            {
+                "name": "state_data_to_hex",
+                "start": 1788,
+                "end": 1812
+            },
+            {
+                "name": "state_hex_to_data",
+                "start": 1828,
+                "end": 1884
+            },
+            {
+                "name": "perform_reexec",
+                "start": 1894,
+                "end": 1951
+            },
+            {
+                "name": "stateful_reexec",
+                "start": 1967,
+                "end": 2075
+            },
+            {
+                "name": "clean_args",
+                "start": 2087,
+                "end": 2124
+            }
+        ],
+        "init/xdg.h": [
+            {
+                "name": "get_env_subdir",
+                "start": 33,
+                "end": 37
+            },
+            {
+                "name": "get_home_subdir",
+                "start": 39,
+                "end": 40
+            },
+            {
+                "name": "xdg_get_config_home",
+                "start": 42,
+                "end": 43
+            },
+            {
+                "name": "xdg_get_cache_home",
+                "start": 45,
+                "end": 46
+            },
+            {
+                "name": "xdg_get_runtime_dir",
+                "start": 48,
+                "end": 49
+            },
+            {
+                "name": "xdg_get_config_dirs",
+                "start": 51,
+                "end": 52
+            },
+            {
+                "name": "get_user_upstart_dirs",
+                "start": 54,
+                "end": 55
+            },
+            {
+                "name": "get_user_log_dir",
+                "start": 57,
+                "end": 58
+            },
+            {
+                "name": "get_session_dir",
+                "start": 60,
+                "end": 61
+            },
+            "name",
+            "start",
+            "end",
+            "name",
+            "start",
+            "end"
+        ],
+        "init/xdg.c": [
+            {
+                "name": "get_subdir",
+                "start": 71,
+                "end": 90
+            },
+            {
+                "name": "get_home_subdir",
+                "start": 105,
+                "end": 115
+            },
+            {
+                "name": "xdg_get_cache_home",
+                "start": 124,
+                "end": 147
+            },
+            {
+                "name": "xdg_get_config_home",
+                "start": 156,
+                "end": 176
+            },
+            {
+                "name": "xdg_get_runtime_dir",
+                "start": 188,
+                "end": 199
+            },
+            {
+                "name": "get_session_dir",
+                "start": 209,
+                "end": 230
+            },
+            {
+                "name": "xdg_get_config_dirs",
+                "start": 239,
+                "end": 252
+            },
+            {
+                "name": "get_user_upstart_dirs",
+                "start": 265,
+                "end": 340
+            },
+            {
+                "name": "get_user_log_dir",
+                "start": 350,
+                "end": 364
+            }
+        ],
+        "init/event_operator.c": [
+            {
+                "name": "event_operator_new",
+                "start": 72,
+                "end": 113
+            },
+            {
+                "name": "event_operator_copy",
+                "start": 138,
+                "end": 190
+            },
+            {
+                "name": "event_operator_destroy",
+                "start": 204,
+                "end": 215
+            },
+            {
+                "name": "event_operator_update",
+                "start": 227,
+                "end": 249
+            },
+            {
+                "name": "event_operator_match",
+                "start": 273,
+                "end": 361
+            },
+            {
+                "name": "event_operator_handle",
+                "start": 389,
+                "end": 430
+            },
+            {
+                "name": "event_operator_filter",
+                "start": 443,
+                "end": 450
+            },
+            {
+                "name": "event_operator_environment",
+                "start": 487,
+                "end": 553
+            },
+            {
+                "name": "event_operator_fds",
+                "start": 572,
+                "end": 629
+            },
+            {
+                "name": "event_operator_events",
+                "start": 648,
+                "end": 678
+            },
+            {
+                "name": "event_operator_reset",
+                "start": 689,
+                "end": 715
+            },
+            {
+                "name": "event_operator_collapse",
+                "start": 741,
+                "end": 865
+            },
+            {
+                "name": "event_operator_type_enum_to_str",
+                "start": 876,
+                "end": 884
+            },
+            {
+                "name": "event_operator_type_str_to_enum",
+                "start": 895,
+                "end": 905
+            },
+            {
+                "name": "event_operator_serialise",
+                "start": 916,
+                "end": 961
+            },
+            {
+                "name": "event_operator_serialise_all",
+                "start": 973,
+                "end": 1001
+            },
+            {
+                "name": "event_operator_deserialise",
+                "start": 1012,
+                "end": 1075
+            },
+            {
+                "name": "event_operator_deserialise_all",
+                "start": 1087,
+                "end": 1174
+            }
+        ],
+        "init/parse_conf.h": [
+            {
+                "name": "parse_conf",
+                "start": 30,
+                "end": 32
+            }
+        ],
+        "init/parse_conf.c": [
+            {
+                "name": "parse_conf",
+                "start": 66,
+                "end": 88
+            }
+        ],
+        "init/conf.c": [
+            {
+                "name": "conf_source_reload_file",
+                "start": 55,
+                "end": 56
+            },
+            {
+                "name": "conf_source_reload_dir",
+                "start": 57,
+                "end": 58
+            },
+            {
+                "name": "conf_file_filter",
+                "start": 60,
+                "end": 61
+            },
+            {
+                "name": "conf_dir_filter",
+                "start": 62,
+                "end": 63
+            },
+            {
+                "name": "conf_create_modify_handler",
+                "start": 64,
+                "end": 66
+            },
+            {
+                "name": "conf_delete_handler",
+                "start": 67,
+                "end": 68
+            },
+            {
+                "name": "conf_file_visitor",
+                "start": 69,
+                "end": 72
+            },
+            {
+                "name": "conf_reload_path",
+                "start": 74,
+                "end": 76
+            },
+            {
+                "name": "is_conf_file",
+                "start": 78,
+                "end": 79
+            },
+            {
+                "name": "is_conf_file_std",
+                "start": 81,
+                "end": 82
+            },
+            {
+                "name": "is_conf_file_override",
+                "start": 84,
+                "end": 85
+            },
+            {
+                "name": "toggle_conf_name",
+                "start": 87,
+                "end": 88
+            },
+            {
+                "name": "conf_to_job_name",
+                "start": 90,
+                "end": 92
+            },
+            {
+                "name": "conf_get_best_override",
+                "start": 94,
+                "end": 96
+            },
+            {
+                "name": "is_conf_file_std",
+                "start": 120,
+                "end": 131
+            },
+            {
+                "name": "is_conf_file_override",
+                "start": 144,
+                "end": 155
+            },
+            {
+                "name": "is_conf_file",
+                "start": 168,
+                "end": 179
+            },
+            {
+                "name": "conf_to_job_name",
+                "start": 193,
+                "end": 219
+            },
+            {
+                "name": "conf_get_best_override",
+                "start": 232,
+                "end": 271
+            },
+            {
+                "name": "toggle_conf_name",
+                "start": 287,
+                "end": 311
+            },
+            {
+                "name": "conf_init",
+                "start": 319,
+                "end": 324
+            },
+            {
+                "name": "conf_destroy",
+                "start": 331,
+                "end": 336
+            },
+            {
+                "name": "conf_source_new",
+                "start": 362,
+                "end": 401
+            },
+            {
+                "name": "conf_file_new",
+                "start": 416,
+                "end": 446
+            },
+            {
+                "name": "conf_reload",
+                "start": 474,
+                "end": 493
+            },
+            {
+                "name": "conf_source_reload",
+                "start": 513,
+                "end": 563
+            },
+            {
+                "name": "conf_source_reload_file",
+                "start": 578,
+                "end": 659
+            },
+            {
+                "name": "conf_source_reload_dir",
+                "start": 678,
+                "end": 737
+            },
+            {
+                "name": "conf_file_filter",
+                "start": 753,
+                "end": 768
+            },
+            {
+                "name": "conf_dir_filter",
+                "start": 784,
+                "end": 802
+            },
+            {
+                "name": "conf_load_path_with_override",
+                "start": 813,
+                "end": 861
+            },
+            {
+                "name": "conf_create_modify_handler",
+                "start": 881,
+                "end": 927
+            },
+            {
+                "name": "conf_delete_handler",
+                "start": 943,
+                "end": 991
+            },
+            {
+                "name": "conf_file_visitor",
+                "start": 1007,
+                "end": 1025
+            },
+            {
+                "name": "conf_reload_path",
+                "start": 1050,
+                "end": 1229
+            },
+            {
+                "name": "conf_file_destroy",
+                "start": 1245,
+                "end": 1280
+            },
+            {
+                "name": "conf_select_job",
+                "start": 1293,
+                "end": 1321
+            },
+            {
+                "name": "conf_source_serialise",
+                "start": 1332,
+                "end": 1391
+            },
+            {
+                "name": "conf_source_serialise_all",
+                "start": 1401,
+                "end": 1429
+            },
+            {
+                "name": "conf_source_deserialise",
+                "start": 1441,
+                "end": 1490
+            },
+            {
+                "name": "conf_source_deserialise_all",
+                "start": 1501,
+                "end": 1543
+            },
+            {
+                "name": "conf_source_type_enum_to_str",
+                "start": 1554,
+                "end": 1562
+            },
+            {
+                "name": "conf_source_type_str_to_enum",
+                "start": 1573,
+                "end": 1583
+            },
+            {
+                "name": "conf_file_serialise",
+                "start": 1594,
+                "end": 1672
+            },
+            {
+                "name": "conf_file_deserialise",
+                "start": 1684,
+                "end": 1719
+            },
+            {
+                "name": "conf_file_deserialise_all",
+                "start": 1731,
+                "end": 1773
+            },
+            {
+                "name": "conf_source_get_index",
+                "start": 1783,
+                "end": 1802
+            },
+            {
+                "name": "conf_file_find",
+                "start": 1814,
+                "end": 1849
+            }
+        ],
+        "init/session.c": [
+            {
+                "name": "session_serialise",
+                "start": 53,
+                "end": 54
+            },
+            {
+                "name": "session_deserialise",
+                "start": 56,
+                "end": 57
+            },
+            {
+                "name": "session_init",
+                "start": 85,
+                "end": 90
+            },
+            {
+                "name": "session_destroy",
+                "start": 97,
+                "end": 102
+            },
+            {
+                "name": "session_new",
+                "start": 114,
+                "end": 143
+            },
+            {
+                "name": "session_from_dbus",
+                "start": 154,
+                "end": 216
+            },
+            {
+                "name": "session_create_conf_source",
+                "start": 227,
+                "end": 261
+            },
+            {
+                "name": "session_serialise",
+                "start": 273,
+                "end": 308
+            },
+            {
+                "name": "session_serialise_all",
+                "start": 317,
+                "end": 346
+            },
+            {
+                "name": "session_deserialise",
+                "start": 359,
+                "end": 388
+            },
+            {
+                "name": "session_deserialise_all",
+                "start": 399,
+                "end": 448
+            },
+            {
+                "name": "session_get_index",
+                "start": 459,
+                "end": 482
+            },
+            {
+                "name": "session_from_index",
+                "start": 493,
+                "end": 517
+            }
+        ],
+        "init/main.c": [
+            {
+                "name": "logger_kmsg",
+                "start": 63,
+                "end": 80
+            },
+            {
+                "name": "main",
+                "start": 203,
+                "end": 812
+            },
+            {
+                "name": "logger_kmsg",
+                "start": 827,
+                "end": 874
+            },
+            {
+                "name": "crash_handler",
+                "start": 891,
+                "end": 949
+            },
+            {
+                "name": "term_handler",
+                "start": 961,
+                "end": 975
+            },
+            {
+                "name": "cad_handler",
+                "start": 988,
+                "end": 993
+            },
+            {
+                "name": "kbd_handler",
+                "start": 1004,
+                "end": 1009
+            },
+            {
+                "name": "pwr_handler",
+                "start": 1020,
+                "end": 1025
+            },
+            {
+                "name": "hup_handler",
+                "start": 1035,
+                "end": 1041
+            },
+            {
+                "name": "usr1_handler",
+                "start": 1051,
+                "end": 1078
+            },
+            {
+                "name": "handle_confdir",
+                "start": 1087,
+                "end": 1104
+            },
+            {
+                "name": "handle_logdir",
+                "start": 1111,
+                "end": 1136
+            },
+            {
+                "name": "console_type_setter",
+                "start": 1144,
+                "end": 1157
+            },
+            {
+                "name": "conf_dir_setter",
+                "start": 1165,
+                "end": 1174
+            }
+        ],
+        "init/quiesce.c": [
+            {
+                "name": "quiesce_event_match",
+                "start": 87,
+                "end": 88
+            },
+            {
+                "name": "quiesce",
+                "start": 100,
+                "end": 195
+            },
+            {
+                "name": "quiesce_wait_callback",
+                "start": 206,
+                "end": 262
+            },
+            {
+                "name": "quiesce_show_slow_jobs",
+                "start": 269,
+                "end": 289
+            },
+            {
+                "name": "quiesce_finalise",
+                "start": 297,
+                "end": 321
+            },
+            {
+                "name": "quiesce_complete",
+                "start": 328,
+                "end": 334
+            },
+            {
+                "name": "quiesce_event_match",
+                "start": 348,
+                "end": 383
+            },
+            {
+                "name": "quiesce_in_progress",
+                "start": 392,
+                "end": 396
+            }
+        ],
+        "init/log.c": [
+            {
+                "name": "log_file_open",
+                "start": 232,
+                "end": 35
+            },
+            {
+                "name": "log_new",
+                "start": 82,
+                "end": 161
+            },
+            {
+                "name": "log_destroy",
+                "start": 178,
+                "end": 195
+            },
+            {
+                "name": "log_flush",
+                "start": 212,
+                "end": 278
+            },
+            {
+                "name": "log_io_reader",
+                "start": 314,
+                "end": 355
+            },
+            {
+                "name": "log_io_error_handler",
+                "start": 369,
+                "end": 392
+            },
+            {
+                "name": "log_file_open",
+                "start": 402,
+                "end": 459
+            },
+            {
+                "name": "log_file_write",
+                "start": 514,
+                "end": 606
+            },
+            {
+                "name": "log_read_watch",
+                "start": 619,
+                "end": 709
+            },
+            {
+                "name": "log_unflushed_init",
+                "start": 716,
+                "end": 721
+            },
+            {
+                "name": "log_handle_unflushed",
+                "start": 738,
+                "end": 777
+            },
+            {
+                "name": "log_clear_unflushed",
+                "start": 787,
+                "end": 838
+            },
+            {
+                "name": "log_serialise",
+                "start": 849,
+                "end": 933
+            },
+            {
+                "name": "log_deserialise",
+                "start": 943,
+                "end": 1035
+            }
+        ],
+        "init/job_process.c": [
+            {
+                "name": "job_process_error_abort",
+                "start": 111,
+                "end": 113
+            },
+            {
+                "name": "job_process_error_read",
+                "start": 114,
+                "end": 115
+            },
+            {
+                "name": "job_process_terminated",
+                "start": 136,
+                "end": 137
+            },
+            {
+                "name": "job_process_trace_signal",
+                "start": 142,
+                "end": 143
+            },
+            {
+                "name": "job_process_run",
+                "start": 184,
+                "end": 378
+            },
+            {
+                "name": "job_process_spawn",
+                "start": 418,
+                "end": 940
+            },
+            {
+                "name": "job_process_error_abort",
+                "start": 955,
+                "end": 980
+            },
+            {
+                "name": "job_process_error_read",
+                "start": 996,
+                "end": 1216
+            },
+            {
+                "name": "job_process_kill",
+                "start": 1229,
+                "end": 1257
+            },
+            {
+                "name": "job_process_jobs_running",
+                "start": 1268,
+                "end": 1288
+            },
+            {
+                "name": "job_process_stop_all",
+                "start": 1296,
+                "end": 1312
+            },
+            {
+                "name": "job_process_set_kill_timer",
+                "start": 1322,
+                "end": 1334
+            },
+            {
+                "name": "job_process_adj_kill_timer",
+                "start": 1344,
+                "end": 1352
+            },
+            {
+                "name": "job_process_kill_timer",
+                "start": 1363,
+                "end": 1395
+            },
+            {
+                "name": "job_process_handler",
+                "start": 1412,
+                "end": 1550
+            },
+            {
+                "name": "job_process_terminated",
+                "start": 1566,
+                "end": 1829
+            },
+            {
+                "name": "job_process_catch_runaway",
+                "start": 1842,
+                "end": 1869
+            },
+            {
+                "name": "job_process_stopped",
+                "start": 1883,
+                "end": 1902
+            },
+            {
+                "name": "job_process_trace_new",
+                "start": 1916,
+                "end": 1952
+            },
+            {
+                "name": "job_process_trace_new_child",
+                "start": 1968,
+                "end": 2000
+            },
+            {
+                "name": "job_process_trace_signal",
+                "start": 2013,
+                "end": 2033
+            },
+            {
+                "name": "job_process_trace_fork",
+                "start": 2047,
+                "end": 2103
+            },
+            {
+                "name": "job_process_trace_exec",
+                "start": 2117,
+                "end": 2148
+            },
+            {
+                "name": "job_process_find",
+                "start": 2162,
+                "end": 2189
+            },
+            {
+                "name": "job_process_log_path",
+                "start": 2204,
+                "end": 2295
+            },
+            {
+                "name": "job_process_remap_fd",
+                "start": 2313,
+                "end": 2332
+            }
+        ],
+        "init/control.c": [
+            {
+                "name": "control_server_connect",
+                "start": 63,
+                "end": 67
+            },
+            {
+                "name": "control_get_origin_uid",
+                "start": 72,
+                "end": 73
+            },
+            {
+                "name": "control_check_permission",
+                "start": 74,
+                "end": 75
+            },
+            {
+                "name": "control_init",
+                "start": 143,
+                "end": 159
+            },
+            {
+                "name": "control_cleanup",
+                "start": 166,
+                "end": 170
+            },
+            {
+                "name": "control_server_open",
+                "start": 181,
+                "end": 199
+            },
+            {
+                "name": "control_server_connect",
+                "start": 209,
+                "end": 232
+            },
+            {
+                "name": "control_server_close",
+                "start": 242,
+                "end": 252
+            },
+            {
+                "name": "control_bus_open",
+                "start": 263,
+                "end": 342
+            },
+            {
+                "name": "control_bus_close",
+                "start": 352,
+                "end": 360
+            },
+            {
+                "name": "control_disconnected",
+                "start": 371,
+                "end": 399
+            },
+            {
+                "name": "control_register_all",
+                "start": 409,
+                "end": 431
+            },
+            {
+                "name": "control_reload_configuration",
+                "start": 449,
+                "end": 468
+            },
+            {
+                "name": "control_get_job_by_name",
+                "start": 487,
+                "end": 547
+            },
+            {
+                "name": "control_get_all_jobs",
+                "start": 563,
+                "end": 603
+            },
+            {
+                "name": "control_emit_event",
+                "start": 606,
+                "end": 614
+            },
+            {
+                "name": "control_emit_event_with_file",
+                "start": 642,
+                "end": 715
+            },
+            {
+                "name": "control_get_version",
+                "start": 732,
+                "end": 745
+            },
+            {
+                "name": "control_get_log_priority",
+                "start": 761,
+                "end": 799
+            },
+            {
+                "name": "control_set_log_priority",
+                "start": 816,
+                "end": 856
+            },
+            {
+                "name": "control_get_bus_type",
+                "start": 865,
+                "end": 871
+            },
+            {
+                "name": "control_notify_disk_writeable",
+                "start": 891,
+                "end": 922
+            },
+            {
+                "name": "control_notify_dbus_address",
+                "start": 938,
+                "end": 975
+            },
+            {
+                "name": "control_bus_flush",
+                "start": 982,
+                "end": 992
+            },
+            {
+                "name": "control_prepare_reexec",
+                "start": 1000,
+                "end": 1013
+            },
+            {
+                "name": "control_conn_to_index",
+                "start": 1026,
+                "end": 1049
+            },
+            {
+                "name": "control_conn_from_index",
+                "start": 1061,
+                "end": 1079
+            },
+            {
+                "name": "control_bus_release_name",
+                "start": 1088,
+                "end": 1108
+            },
+            {
+                "name": "control_get_state",
+                "start": 1121,
+                "end": 1163
+            },
+            {
+                "name": "control_restart",
+                "start": 1178,
+                "end": 1212
+            },
+            {
+                "name": "control_notify_event_emitted",
+                "start": 1221,
+                "end": 1235
+            },
+            {
+                "name": "control_notify_restarted",
+                "start": 1242,
+                "end": 1253
+            },
+            {
+                "name": "control_set_env",
+                "start": 1276,
+                "end": 1358
+            },
+            {
+                "name": "control_unset_env",
+                "start": 1376,
+                "end": 1452
+            },
+            {
+                "name": "control_get_env",
+                "start": 1470,
+                "end": 1549
+            },
+            {
+                "name": "control_list_env",
+                "start": 1567,
+                "end": 1622
+            },
+            {
+                "name": "control_reset_env",
+                "start": 1639,
+                "end": 1710
+            },
+            {
+                "name": "control_get_origin_uid",
+                "start": 1720,
+                "end": 1753
+            },
+            {
+                "name": "control_check_permission",
+                "start": 1767,
+                "end": 1790
+            },
+            {
+                "name": "control_session_file_create",
+                "start": 1799,
+                "end": 1828
+            },
+            {
+                "name": "control_session_file_remove",
+                "start": 1837,
+                "end": 1842
+            },
+            {
+                "name": "control_end_session",
+                "start": 1859,
+                "end": 1889
+            }
+        ],
+        "init/tests/test_parse_conf.c": [
+            {
+                "name": "test_parse_conf",
+                "start": 35,
+                "end": 73
+            },
+            {
+                "name": "main",
+                "start": 76,
+                "end": 86
+            }
+        ],
+        "init/tests/test_util.h": [
+            {
+                "name": "event_operator_diff",
+                "start": 11,
+                "end": 12
+            },
+            {
+                "name": "session_from_chroot",
+                "start": 14,
+                "end": 15
+            }
+        ],
+        "init/tests/test_event_operator.c": [
+            {
+                "name": "test_operator_new",
+                "start": 36,
+                "end": 135
+            },
+            {
+                "name": "test_operator_copy",
+                "start": 137,
+                "end": 389
+            },
+            {
+                "name": "test_operator_destroy",
+                "start": 391,
+                "end": 427
+            },
+            {
+                "name": "test_operator_update",
+                "start": 430,
+                "end": 526
+            },
+            {
+                "name": "test_operator_match",
+                "start": 528,
+                "end": 836
+            },
+            {
+                "name": "test_operator_handle",
+                "start": 839,
+                "end": 988
+            },
+            {
+                "name": "test_operator_environment",
+                "start": 991,
+                "end": 1157
+            },
+            {
+                "name": "test_operator_events",
+                "start": 1159,
+                "end": 1262
+            },
+            {
+                "name": "test_operator_reset",
+                "start": 1265,
+                "end": 1324
+            },
+            {
+                "name": "test_operator_serialisation",
+                "start": 1326,
+                "end": 1433
+            },
+            {
+                "name": "main",
+                "start": 1435,
+                "end": 1454
+            }
+        ],
+        "init/tests/test_environ.c": [
+            {
+                "name": "test_add",
+                "start": 35,
+                "end": 616
+            },
+            {
+                "name": "test_remove",
+                "start": 618,
+                "end": 1031
+            },
+            {
+                "name": "test_append",
+                "start": 1033,
+                "end": 1158
+            },
+            {
+                "name": "test_set",
+                "start": 1161,
+                "end": 1200
+            },
+            {
+                "name": "test_lookup",
+                "start": 1203,
+                "end": 1256
+            },
+            {
+                "name": "test_get",
+                "start": 1258,
+                "end": 1304
+            },
+            {
+                "name": "test_getn",
+                "start": 1306,
+                "end": 1359
+            },
+            {
+                "name": "test_all_valid",
+                "start": 1362,
+                "end": 1408
+            },
+            {
+                "name": "test_expand",
+                "start": 1411,
+                "end": 2038
+            },
+            {
+                "name": "main",
+                "start": 2041,
+                "end": 2059
+            }
+        ],
+        "init/tests/test_util.c": [
+            {
+                "name": "event_operator_diff",
+                "start": 16,
+                "end": 63
+            },
+            {
+                "name": "session_from_chroot",
+                "start": 73,
+                "end": 88
+            },
+            {
+                "name": "ensure_env_clean",
+                "start": 98,
+                "end": 113
+            },
+            {
+                "name": "clean_env",
+                "start": 122,
+                "end": 148
+            }
+        ],
+        "init/tests/test_conf.c": [
+            {
+                "name": "test_source_new",
+                "start": 61,
+                "end": 91
+            },
+            {
+                "name": "test_file_new",
+                "start": 93,
+                "end": 130
+            },
+            {
+                "name": "test_source_reload_job_dir",
+                "start": 132,
+                "end": 1625
+            },
+            {
+                "name": "test_source_reload_conf_dir",
+                "start": 1628,
+                "end": 2410
+            },
+            {
+                "name": "test_override",
+                "start": 2412,
+                "end": 3722
+            },
+            {
+                "name": "test_source_reload_file",
+                "start": 3724,
+                "end": 4509
+            },
+            {
+                "name": "test_source_reload",
+                "start": 4512,
+                "end": 4878
+            },
+            {
+                "name": "test_file_destroy",
+                "start": 4881,
+                "end": 4964
+            },
+            {
+                "name": "test_select_job",
+                "start": 4967,
+                "end": 5036
+            },
+            {
+                "name": "main",
+                "start": 5039,
+                "end": 5057
+            }
+        ],
+        "init/tests/test_control.c": [
+            {
+                "name": "test_server_open",
+                "start": 68,
+                "end": 145
+            },
+            {
+                "name": "test_server_connect",
+                "start": 147,
+                "end": 339
+            },
+            {
+                "name": "test_server_close",
+                "start": 341,
+                "end": 360
+            },
+            {
+                "name": "my_connect_handler",
+                "start": 367,
+                "end": 428
+            },
+            {
+                "name": "test_bus_open",
+                "start": 430,
+                "end": 785
+            },
+            {
+                "name": "test_bus_close",
+                "start": 787,
+                "end": 833
+            },
+            {
+                "name": "test_disconnected",
+                "start": 836,
+                "end": 889
+            },
+            {
+                "name": "test_reload_configuration",
+                "start": 892,
+                "end": 974
+            },
+            {
+                "name": "test_get_job_by_name",
+                "start": 977,
+                "end": 1086
+            },
+            {
+                "name": "test_get_all_jobs",
+                "start": 1088,
+                "end": 1200
+            },
+            {
+                "name": "test_emit_event",
+                "start": 1202,
+                "end": 1625
+            },
+            {
+                "name": "test_get_version",
+                "start": 1628,
+                "end": 1672
+            },
+            {
+                "name": "test_get_log_priority",
+                "start": 1675,
+                "end": 1910
+            },
+            {
+                "name": "test_set_log_priority",
+                "start": 1912,
+                "end": 2177
+            },
+            {
+                "name": "main",
+                "start": 2180,
+                "end": 2209
+            }
+        ],
+        "init/tests/test_blocked.c": [
+            {
+                "name": "test_new",
+                "start": 33,
+                "end": 360
+            },
+            {
+                "name": "main",
+                "start": 363,
+                "end": 373
+            }
+        ],
+        "init/tests/test_main.c": [
+            {
+                "name": "test_confdir",
+                "start": 44,
+                "end": 407
+            },
+            {
+                "name": "main",
+                "start": 409,
+                "end": 420
+            }
+        ],
+        "init/tests/test_parse_job.c": [
+            {
+                "name": "test_parse_job",
+                "start": 42,
+                "end": 174
+            },
+            {
+                "name": "test_stanza_exec",
+                "start": 176,
+                "end": 318
+            },
+            {
+                "name": "test_stanza_script",
+                "start": 320,
+                "end": 468
+            },
+            {
+                "name": "test_stanza_apparmor",
+                "start": 470,
+                "end": 729
+            },
+            {
+                "name": "test_stanza_pre_start",
+                "start": 731,
+                "end": 1050
+            },
+            {
+                "name": "test_stanza_post_start",
+                "start": 1052,
+                "end": 1371
+            },
+            {
+                "name": "test_stanza_pre_stop",
+                "start": 1373,
+                "end": 1692
+            },
+            {
+                "name": "test_stanza_post_stop",
+                "start": 1694,
+                "end": 2013
+            },
+            {
+                "name": "test_stanza_start",
+                "start": 2015,
+                "end": 2830
+            },
+            {
+                "name": "test_stanza_manual",
+                "start": 2832,
+                "end": 2898
+            },
+            {
+                "name": "test_stanza_stop",
+                "start": 2900,
+                "end": 3715
+            },
+            {
+                "name": "test_stanza_description",
+                "start": 3717,
+                "end": 3830
+            },
+            {
+                "name": "test_stanza_author",
+                "start": 3832,
+                "end": 3945
+            },
+            {
+                "name": "test_stanza_version",
+                "start": 3947,
+                "end": 4060
+            },
+            {
+                "name": "test_stanza_emits",
+                "start": 4062,
+                "end": 4212
+            },
+            {
+                "name": "test_stanza_expect",
+                "start": 4214,
+                "end": 4444
+            },
+            {
+                "name": "test_stanza_respawn",
+                "start": 4446,
+                "end": 4848
+            },
+            {
+                "name": "test_stanza_task",
+                "start": 4850,
+                "end": 4942
+            },
+            {
+                "name": "test_stanza_instance",
+                "start": 4944,
+                "end": 5058
+            },
+            {
+                "name": "test_stanza_kill",
+                "start": 5060,
+                "end": 5443
+            },
+            {
+                "name": "test_stanza_reload",
+                "start": 5446,
+                "end": 5651
+            },
+            {
+                "name": "test_stanza_normal",
+                "start": 5654,
+                "end": 5941
+            },
+            {
+                "name": "test_stanza_console",
+                "start": 5943,
+                "end": 6170
+            },
+            {
+                "name": "test_stanza_env",
+                "start": 6172,
+                "end": 6294
+            },
+            {
+                "name": "test_stanza_export",
+                "start": 6296,
+                "end": 6446
+            },
+            {
+                "name": "test_stanza_umask",
+                "start": 6448,
+                "end": 6637
+            },
+            {
+                "name": "test_stanza_nice",
+                "start": 6639,
+                "end": 6860
+            },
+            {
+                "name": "test_stanza_oom",
+                "start": 6864,
+                "end": 7395
+            },
+            {
+                "name": "test_stanza_limit",
+                "start": 7397,
+                "end": 8239
+            },
+            {
+                "name": "test_stanza_chroot",
+                "start": 8241,
+                "end": 8355
+            },
+            {
+                "name": "test_stanza_chdir",
+                "start": 8357,
+                "end": 8471
+            },
+            {
+                "name": "test_stanza_setuid",
+                "start": 8473,
+                "end": 8587
+            },
+            {
+                "name": "test_stanza_setgid",
+                "start": 8589,
+                "end": 8703
+            },
+            {
+                "name": "test_stanza_usage",
+                "start": 8705,
+                "end": 8819
+            },
+            {
+                "name": "main",
+                "start": 8821,
+                "end": 8875
+            }
+        ],
+        "init/tests/test_state.c": [
+            {
+                "name": "state_serialise_blocked",
+                "start": 63,
+                "end": 65
+            },
+            {
+                "name": "state_deserialise_blocked",
+                "start": 67,
+                "end": 69
+            },
+            {
+                "name": "session_diff",
+                "start": 118,
+                "end": 119
+            },
+            {
+                "name": "process_diff",
+                "start": 121,
+                "end": 122
+            },
+            {
+                "name": "event_diff",
+                "start": 124,
+                "end": 125
+            },
+            {
+                "name": "nih_timer_diff",
+                "start": 127,
+                "end": 128
+            },
+            {
+                "name": "log_diff",
+                "start": 130,
+                "end": 131
+            },
+            {
+                "name": "rlimit_diff",
+                "start": 133,
+                "end": 134
+            },
+            {
+                "name": "job_class_diff",
+                "start": 136,
+                "end": 138
+            },
+            {
+                "name": "job_diff",
+                "start": 140,
+                "end": 142
+            },
+            {
+                "name": "blocking_diff",
+                "start": 144,
+                "end": 145
+            },
+            {
+                "name": "blocked_diff",
+                "start": 147,
+                "end": 148
+            },
+            {
+                "name": "conf_source_from_path",
+                "start": 162,
+                "end": 165
+            },
+            {
+                "name": "conf_source_diff",
+                "start": 167,
+                "end": 168
+            },
+            {
+                "name": "conf_file_diff",
+                "start": 170,
+                "end": 171
+            },
+            {
+                "name": "session_diff",
+                "start": 237,
+                "end": 256
+            },
+            {
+                "name": "process_diff",
+                "start": 267,
+                "end": 286
+            },
+            {
+                "name": "event_diff",
+                "start": 298,
+                "end": 347
+            },
+            {
+                "name": "nih_timer_diff",
+                "start": 358,
+                "end": 377
+            },
+            {
+                "name": "log_diff",
+                "start": 388,
+                "end": 435
+            },
+            {
+                "name": "rlimit_diff",
+                "start": 447,
+                "end": 466
+            },
+            {
+                "name": "job_class_diff",
+                "start": 479,
+                "end": 661
+            },
+            {
+                "name": "job_diff",
+                "start": 674,
+                "end": 795
+            },
+            {
+                "name": "blocking_diff",
+                "start": 807,
+                "end": 829
+            },
+            {
+                "name": "blocked_diff",
+                "start": 841,
+                "end": 886
+            },
+            {
+                "name": "conf_source_diff",
+                "start": 898,
+                "end": 937
+            },
+            {
+                "name": "conf_file_diff",
+                "start": 949,
+                "end": 980
+            },
+            {
+                "name": "test_session_serialise",
+                "start": 982,
+                "end": 1139
+            },
+            {
+                "name": "run_process_test",
+                "start": 1141,
+                "end": 1177
+            },
+            {
+                "name": "test_process_serialise",
+                "start": 1179,
+                "end": 1259
+            },
+            {
+                "name": "test_blocking",
+                "start": 1261,
+                "end": 1792
+            },
+            {
+                "name": "test_event_serialise",
+                "start": 1794,
+                "end": 2031
+            },
+            {
+                "name": "test_log_serialise",
+                "start": 2033,
+                "end": 2204
+            },
+            {
+                "name": "test_job_class_serialise",
+                "start": 2206,
+                "end": 2371
+            },
+            {
+                "name": "test_job_serialise",
+                "start": 2373,
+                "end": 2416
+            },
+            {
+                "name": "test_enums",
+                "start": 2418,
+                "end": 2537
+            },
+            {
+                "name": "test_int_arrays",
+                "start": 2539,
+                "end": 2682
+            },
+            {
+                "name": "test_string_arrays",
+                "start": 2684,
+                "end": 2829
+            },
+            {
+                "name": "test_hex_encoding",
+                "start": 2831,
+                "end": 2862
+            },
+            {
+                "name": "test_rlimit_encoding",
+                "start": 2864,
+                "end": 2935
+            },
+            {
+                "name": "test_basic_types",
+                "start": 2937,
+                "end": 3184
+            },
+            {
+                "name": "test_clean_args",
+                "start": 3186,
+                "end": 3303
+            },
+            {
+                "name": "test_upgrade",
+                "start": 3311,
+                "end": 3350
+            },
+            {
+                "name": "test_upstart1_6_upgrade",
+                "start": 3365,
+                "end": 3450
+            },
+            {
+                "name": "test_session_upgrade_midflight",
+                "start": 3460,
+                "end": 3562
+            },
+            {
+                "name": "test_session_upgrade_exists",
+                "start": 3579,
+                "end": 3729
+            },
+            {
+                "name": "test_session_upgrade_stale",
+                "start": 3742,
+                "end": 3849
+            },
+            {
+                "name": "test_upstart1_8_upgrade",
+                "start": 3860,
+                "end": 3909
+            },
+            {
+                "name": "test_upstart_pre_security_upgrade",
+                "start": 3920,
+                "end": 4032
+            },
+            {
+                "name": "test_upstart_with_apparmor_upgrade",
+                "start": 4044,
+                "end": 4161
+            },
+            {
+                "name": "test_upstart_full_serialise_without_apparmor_upgrade",
+                "start": 4173,
+                "end": 4309
+            },
+            {
+                "name": "test_upstart_full_serialise_with_apparmor_upgrade",
+                "start": 4321,
+                "end": 4458
+            },
+            {
+                "name": "test_reload_signal_state",
+                "start": 4469,
+                "end": 4526
+            },
+            {
+                "name": "test_job_environ_upgrade",
+                "start": 4536,
+                "end": 4596
+            },
+            {
+                "name": "conf_source_from_path",
+                "start": 4610,
+                "end": 4623
+            },
+            {
+                "name": "main",
+                "start": 4625,
+                "end": 4652
+            }
+        ],
+        "init/tests/test_log.c": [
+            {
+                "name": "test_log_new",
+                "start": 76,
+                "end": 1127
+            },
+            {
+                "name": "test_log_destroy",
+                "start": 1129,
+                "end": 1258
+            },
+            {
+                "name": "main",
+                "start": 1260,
+                "end": 1271
+            }
+        ],
+        "init/tests/wrap_inotify.c": [
+            {
+                "name": "__wrap_inotify_init",
+                "start": 92,
+                "end": 93
+            },
+            {
+                "name": "__wrap_inotify_add_watch",
+                "start": 95,
+                "end": 96
+            },
+            {
+                "name": "__wrap_inotify_rm_watch",
+                "start": 98,
+                "end": 99
+            },
+            {
+                "name": "__wrap_inotify_init",
+                "start": 105,
+                "end": 120
+            },
+            {
+                "name": "__wrap_inotify_add_watch",
+                "start": 122,
+                "end": 137
+            },
+            {
+                "name": "__wrap_inotify_rm_watch",
+                "start": 139,
+                "end": 152
+            },
+            {
+                "name": "inotify_init",
+                "start": 154,
+                "end": 160
+            },
+            {
+                "name": "inotify_add_watch",
+                "start": 162,
+                "end": 169
+            },
+            {
+                "name": "inotify_rm_watch",
+                "start": 171,
+                "end": 177
+            }
+        ],
+        "init/tests/test_process.c": [
+            {
+                "name": "test_new",
+                "start": 30,
+                "end": 54
+            },
+            {
+                "name": "test_name",
+                "start": 57,
+                "end": 111
+            },
+            {
+                "name": "test_from_name",
+                "start": 113,
+                "end": 167
+            },
+            {
+                "name": "main",
+                "start": 170,
+                "end": 183
+            }
+        ],
+        "init/tests/test_job.c": [
+            {
+                "name": "test_new",
+                "start": 73,
+                "end": 276
+            },
+            {
+                "name": "test_register",
+                "start": 278,
+                "end": 385
+            },
+            {
+                "name": "test_change_goal",
+                "start": 388,
+                "end": 679
+            },
+            {
+                "name": "test_change_state",
+                "start": 682,
+                "end": 3967
+            },
+            {
+                "name": "test_next_state",
+                "start": 3969,
+                "end": 4230
+            },
+            {
+                "name": "test_failed",
+                "start": 4233,
+                "end": 4328
+            },
+            {
+                "name": "test_finished",
+                "start": 4330,
+                "end": 4426
+            },
+            {
+                "name": "test_emit_event",
+                "start": 4429,
+                "end": 5561
+            },
+            {
+                "name": "test_name",
+                "start": 5564,
+                "end": 5620
+            },
+            {
+                "name": "test_goal_name",
+                "start": 5623,
+                "end": 5656
+            },
+            {
+                "name": "test_goal_from_name",
+                "start": 5658,
+                "end": 5691
+            },
+            {
+                "name": "test_state_name",
+                "start": 5694,
+                "end": 5783
+            },
+            {
+                "name": "test_state_from_name",
+                "start": 5785,
+                "end": 5874
+            },
+            {
+                "name": "test_start",
+                "start": 5877,
+                "end": 6119
+            },
+            {
+                "name": "test_stop",
+                "start": 6121,
+                "end": 6351
+            },
+            {
+                "name": "test_reload",
+                "start": 6353,
+                "end": 6498
+            },
+            {
+                "name": "test_restart",
+                "start": 6500,
+                "end": 6747
+            },
+            {
+                "name": "test_get_name",
+                "start": 6750,
+                "end": 6842
+            },
+            {
+                "name": "test_get_goal",
+                "start": 6844,
+                "end": 6896
+            },
+            {
+                "name": "test_get_state",
+                "start": 6898,
+                "end": 6951
+            },
+            {
+                "name": "test_get_processes",
+                "start": 6954,
+                "end": 7411
+            },
+            {
+                "name": "test_deserialise_ptrace",
+                "start": 7413,
+                "end": 7494
+            },
+            {
+                "name": "deserialise_ptrace_next",
+                "start": 7497,
+                "end": 7542
+            },
+            {
+                "name": "main",
+                "start": 7562,
+                "end": 7612
+            }
+        ],
+        "init/tests/test_job_class.c": [
+            {
+                "name": "test_new",
+                "start": 65,
+                "end": 156
+            },
+            {
+                "name": "test_consider",
+                "start": 159,
+                "end": 460
+            },
+            {
+                "name": "test_reconsider",
+                "start": 462,
+                "end": 778
+            },
+            {
+                "name": "test_register",
+                "start": 781,
+                "end": 886
+            },
+            {
+                "name": "test_unregister",
+                "start": 888,
+                "end": 957
+            },
+            {
+                "name": "test_environment",
+                "start": 960,
+                "end": 1081
+            },
+            {
+                "name": "test_get_instance",
+                "start": 1084,
+                "end": 1249
+            },
+            {
+                "name": "test_get_instance_by_name",
+                "start": 1251,
+                "end": 1380
+            },
+            {
+                "name": "test_get_all_instances",
+                "start": 1382,
+                "end": 1495
+            },
+            {
+                "name": "test_start",
+                "start": 1498,
+                "end": 2018
+            },
+            {
+                "name": "test_stop",
+                "start": 2020,
+                "end": 2458
+            },
+            {
+                "name": "test_restart",
+                "start": 2460,
+                "end": 2948
+            },
+            {
+                "name": "test_get_name",
+                "start": 2951,
+                "end": 3001
+            },
+            {
+                "name": "test_get_description",
+                "start": 3003,
+                "end": 3095
+            },
+            {
+                "name": "test_get_author",
+                "start": 3097,
+                "end": 3189
+            },
+            {
+                "name": "test_get_version",
+                "start": 3191,
+                "end": 3283
+            },
+            {
+                "name": "test_get_start_on",
+                "start": 3285,
+                "end": 3436
+            },
+            {
+                "name": "test_get_stop_on",
+                "start": 3438,
+                "end": 3589
+            },
+            {
+                "name": "test_get_emits",
+                "start": 3591,
+                "end": 3698
+            },
+            {
+                "name": "main",
+                "start": 3701,
+                "end": 3732
+            }
+        ],
+        "init/tests/test_conf_static.c": [
+            {
+                "name": "test_toggle_conf_name",
+                "start": 27,
+                "end": 72
+            },
+            {
+                "name": "test_conf_to_job_name",
+                "start": 74,
+                "end": 111
+            },
+            {
+                "name": "test_conf_get_best_override",
+                "start": 113,
+                "end": 213
+            },
+            {
+                "name": "main",
+                "start": 215,
+                "end": 224
+            }
+        ],
+        "init/tests/test_job_process.c": [
+            {
+                "name": "fd_valid",
+                "start": 156,
+                "end": 175
+            },
+            {
+                "name": "child",
+                "start": 177,
+                "end": 345
+            },
+            {
+                "name": "get_available_pty_count",
+                "start": 361,
+                "end": 387
+            },
+            {
+                "name": "close_all_files",
+                "start": 392,
+                "end": 403
+            },
+            {
+                "name": "test_run",
+                "start": 411,
+                "end": 4215
+            },
+            {
+                "name": "test_spawn",
+                "start": 4225,
+                "end": 5265
+            },
+            {
+                "name": "test_log_path",
+                "start": 5267,
+                "end": 5370
+            },
+            {
+                "name": "test_kill",
+                "start": 5373,
+                "end": 5514
+            },
+            {
+                "name": "test_handler",
+                "start": 5517,
+                "end": 8814
+            },
+            {
+                "name": "test_find",
+                "start": 8817,
+                "end": 8945
+            },
+            {
+                "name": "test_utmp",
+                "start": 8948,
+                "end": 9183
+            },
+            {
+                "name": "run_tests",
+                "start": 9185,
+                "end": 9195
+            },
+            {
+                "name": "io_reader",
+                "start": 9207,
+                "end": 9224
+            },
+            {
+                "name": "io_error_handler",
+                "start": 9231,
+                "end": 9248
+            },
+            {
+                "name": "process_handler",
+                "start": 9251,
+                "end": 9260
+            },
+            {
+                "name": "run_tests_in_pty",
+                "start": 9279,
+                "end": 9339
+            },
+            {
+                "name": "have_ctty",
+                "start": 9347,
+                "end": 9358
+            },
+            {
+                "name": "main",
+                "start": 9360,
+                "end": 9444
+            }
+        ],
+        "init/tests/test_system.c": [
+            {
+                "name": "test_kill",
+                "start": 32,
+                "end": 129
+            },
+            {
+                "name": "main",
+                "start": 132,
+                "end": 142
+            }
+        ],
+        "init/tests/test_xdg.c": [
+            {
+                "name": "_test_dir_created",
+                "start": 35,
+                "end": 44
+            },
+            {
+                "name": "test_get_home_subdir",
+                "start": 46,
+                "end": 85
+            },
+            {
+                "name": "_test_get_home",
+                "start": 87,
+                "end": 225
+            },
+            {
+                "name": "test_get_config_home",
+                "start": 227,
+                "end": 233
+            },
+            {
+                "name": "test_get_cache_home",
+                "start": 235,
+                "end": 240
+            },
+            {
+                "name": "test_get_config_dirs",
+                "start": 242,
+                "end": 310
+            },
+            {
+                "name": "test_get_user_upstart_dirs",
+                "start": 312,
+                "end": 404
+            },
+            {
+                "name": "test_get_user_log_dir",
+                "start": 406,
+                "end": 438
+            },
+            {
+                "name": "test_get_session_dir",
+                "start": 440,
+                "end": 490
+            },
+            {
+                "name": "main",
+                "start": 492,
+                "end": 509
+            }
+        ],
+        "init/tests/test_event.c": [
+            {
+                "name": "test_new",
+                "start": 44,
+                "end": 95
+            },
+            {
+                "name": "test_block",
+                "start": 98,
+                "end": 115
+            },
+            {
+                "name": "test_unblock",
+                "start": 117,
+                "end": 134
+            },
+            {
+                "name": "test_poll",
+                "start": 137,
+                "end": 261
+            },
+            {
+                "name": "test_pending",
+                "start": 264,
+                "end": 311
+            },
+            {
+                "name": "test_pending_handle_jobs",
+                "start": 313,
+                "end": 1662
+            },
+            {
+                "name": "test_finished",
+                "start": 1665,
+                "end": 2040
+            },
+            {
+                "name": "main",
+                "start": 2043,
+                "end": 2062
+            }
+        ],
+        "lib/tests/test_libupstart.c": [
+            {
+                "name": "upstart_open",
+                "start": 54,
+                "end": 88
+            },
+            {
+                "name": "test_libupstart",
+                "start": 90,
+                "end": 160
+            },
+            {
+                "name": "main",
+                "start": 162,
+                "end": 176
+            }
+        ],
+        "extra/upstart-dbus-bridge.c": [
+            {
+                "name": "signal_filter",
+                "start": 60,
+                "end": 61
+            },
+            {
+                "name": "upstart_job_added",
+                "start": 63,
+                "end": 64
+            },
+            {
+                "name": "upstart_job_removed",
+                "start": 65,
+                "end": 66
+            },
+            {
+                "name": "main",
+                "start": 153,
+                "end": 360
+            },
+            {
+                "name": "dbus_disconnected",
+                "start": 369,
+                "end": 374
+            },
+            {
+                "name": "upstart_disconnected",
+                "start": 383,
+                "end": 388
+            },
+            {
+                "name": "bus_name_setter",
+                "start": 395,
+                "end": 406
+            },
+            {
+                "name": "dbus_bus_setter",
+                "start": 413,
+                "end": 426
+            },
+            {
+                "name": "signal_filter",
+                "start": 439,
+                "end": 647
+            },
+            {
+                "name": "emit_event_error",
+                "start": 649,
+                "end": 658
+            },
+            {
+                "name": "upstart_job_added",
+                "start": 660,
+                "end": 751
+            },
+            {
+                "name": "upstart_job_removed",
+                "start": 753,
+                "end": 767
+            }
+        ],
+        "extra/upstart-dconf-bridge.c": [
+            {
+                "name": "dconf_changed",
+                "start": 59,
+                "end": 61
+            },
+            {
+                "name": "handle_upstart_job",
+                "start": 63,
+                "end": 65
+            },
+            {
+                "name": "handle_existing_jobs",
+                "start": 67,
+                "end": 68
+            },
+            {
+                "name": "job_needs_event",
+                "start": 70,
+                "end": 71
+            },
+            {
+                "name": "jobs_need_event",
+                "start": 73,
+                "end": 74
+            },
+            {
+                "name": "main",
+                "start": 130,
+                "end": 265
+            },
+            {
+                "name": "handle_upstart_job",
+                "start": 272,
+                "end": 338
+            },
+            {
+                "name": "dconf_changed",
+                "start": 345,
+                "end": 413
+            },
+            {
+                "name": "jobs_need_event",
+                "start": 420,
+                "end": 428
+            },
+            {
+                "name": "job_needs_event",
+                "start": 437,
+                "end": 528
+            },
+            {
+                "name": "handle_existing_jobs",
+                "start": 540,
+                "end": 608
+            }
+        ],
+        "extra/upstart-event-bridge.c": [
+            {
+                "name": "upstart_forward_event",
+                "start": 48,
+                "end": 49
+            },
+            {
+                "name": "upstart_forward_restarted",
+                "start": 50,
+                "end": 51
+            },
+            {
+                "name": "main",
+                "start": 89,
+                "end": 260
+            },
+            {
+                "name": "upstart_disconnected",
+                "start": 262,
+                "end": 267
+            },
+            {
+                "name": "upstart_forward_event",
+                "start": 269,
+                "end": 313
+            },
+            {
+                "name": "upstart_forward_restarted",
+                "start": 315,
+                "end": 336
+            },
+            {
+                "name": "emit_event_error",
+                "start": 338,
+                "end": 347
+            }
+        ],
+        "extra/upstart-file-bridge.c": [
+            {
+                "name": "watched_dir_new",
+                "start": 297,
+                "end": 298
+            },
+            {
+                "name": "watched_file_new",
+                "start": 300,
+                "end": 304
+            },
+            {
+                "name": "job_new",
+                "start": 306,
+                "end": 307
+            },
+            {
+                "name": "create_handler",
+                "start": 311,
+                "end": 312
+            },
+            {
+                "name": "modify_handler",
+                "start": 314,
+                "end": 315
+            },
+            {
+                "name": "delete_handler",
+                "start": 317,
+                "end": 318
+            },
+            {
+                "name": "upstart_job_added",
+                "start": 320,
+                "end": 321
+            },
+            {
+                "name": "upstart_job_removed",
+                "start": 323,
+                "end": 324
+            },
+            {
+                "name": "emit_event",
+                "start": 329,
+                "end": 330
+            },
+            {
+                "name": "file_event_new",
+                "start": 332,
+                "end": 333
+            },
+            {
+                "name": "handle_event",
+                "start": 337,
+                "end": 338
+            },
+            {
+                "name": "find_first_parent",
+                "start": 342,
+                "end": 343
+            },
+            {
+                "name": "string_match",
+                "start": 349,
+                "end": 350
+            },
+            {
+                "name": "expand_path",
+                "start": 352,
+                "end": 353
+            },
+            {
+                "name": "path_valid",
+                "start": 355,
+                "end": 356
+            },
+            {
+                "name": "main",
+                "start": 419,
+                "end": 616
+            },
+            {
+                "name": "upstart_job_added",
+                "start": 627,
+                "end": 711
+            },
+            {
+                "name": "upstart_job_removed",
+                "start": 724,
+                "end": 741
+            },
+            {
+                "name": "job_add_file",
+                "start": 754,
+                "end": 898
+            },
+            {
+                "name": "file_filter",
+                "start": 911,
+                "end": 936
+            },
+            {
+                "name": "create_handler",
+                "start": 948,
+                "end": 1068
+            },
+            {
+                "name": "modify_handler",
+                "start": 1080,
+                "end": 1132
+            },
+            {
+                "name": "delete_handler",
+                "start": 1143,
+                "end": 1263
+            },
+            {
+                "name": "upstart_disconnected",
+                "start": 1272,
+                "end": 1277
+            },
+            {
+                "name": "ensure_watched",
+                "start": 1295,
+                "end": 1348
+            },
+            {
+                "name": "watched_dir_init",
+                "start": 1355,
+                "end": 1360
+            },
+            {
+                "name": "emit_event",
+                "start": 1372,
+                "end": 1417
+            },
+            {
+                "name": "emit_event_error",
+                "start": 1428,
+                "end": 1437
+            },
+            {
+                "name": "watched_dir_new",
+                "start": 1449,
+                "end": 1539
+            },
+            {
+                "name": "watched_file_new",
+                "start": 1559,
+                "end": 1628
+            },
+            {
+                "name": "job_new",
+                "start": 1639,
+                "end": 1666
+            },
+            {
+                "name": "job_destroy",
+                "start": 1683,
+                "end": 1703
+            },
+            {
+                "name": "find_first_parent",
+                "start": 1716,
+                "end": 1760
+            },
+            {
+                "name": "file_event_new",
+                "start": 1772,
+                "end": 1795
+            },
+            {
+                "name": "handle_event",
+                "start": 1806,
+                "end": 1838
+            },
+            {
+                "name": "string_match",
+                "start": 1850,
+                "end": 1863
+            },
+            {
+                "name": "expand_path",
+                "start": 1878,
+                "end": 1905
+            },
+            {
+                "name": "path_valid",
+                "start": 1917,
+                "end": 1953
+            }
+        ],
+        "extra/upstart-socket-bridge.c": [
+            {
+                "name": "epoll_watcher",
+                "start": 81,
+                "end": 82
+            },
+            {
+                "name": "upstart_job_added",
+                "start": 83,
+                "end": 84
+            },
+            {
+                "name": "upstart_job_removed",
+                "start": 85,
+                "end": 86
+            },
+            {
+                "name": "main",
+                "start": 137,
+                "end": 274
+            },
+            {
+                "name": "epoll_watcher",
+                "start": 277,
+                "end": 361
+            },
+            {
+                "name": "upstart_job_added",
+                "start": 364,
+                "end": 448
+            },
+            {
+                "name": "upstart_job_removed",
+                "start": 450,
+                "end": 464
+            },
+            {
+                "name": "job_add_socket",
+                "start": 467,
+                "end": 608
+            },
+            {
+                "name": "socket_destroy",
+                "start": 610,
+                "end": 617
+            },
+            {
+                "name": "upstart_disconnected",
+                "start": 620,
+                "end": 625
+            },
+            {
+                "name": "emit_event_reply",
+                "start": 628,
+                "end": 633
+            },
+            {
+                "name": "emit_event_error",
+                "start": 635,
+                "end": 644
+            }
+        ],
+        "extra/upstart-local-bridge.c": [
+            {
+                "name": "upstart_job_added",
+                "start": 103,
+                "end": 104
+            },
+            {
+                "name": "upstart_job_removed",
+                "start": 105,
+                "end": 106
+            },
+            {
+                "name": "socket_watcher",
+                "start": 112,
+                "end": 113
+            },
+            {
+                "name": "socket_reader",
+                "start": 115,
+                "end": 116
+            },
+            {
+                "name": "signal_handler",
+                "start": 225,
+                "end": 234
+            },
+            {
+                "name": "cleanup",
+                "start": 241,
+                "end": 250
+            },
+            {
+                "name": "main",
+                "start": 252,
+                "end": 327
+            },
+            {
+                "name": "upstart_job_added",
+                "start": 329,
+                "end": 400
+            },
+            {
+                "name": "upstart_job_removed",
+                "start": 402,
+                "end": 416
+            },
+            {
+                "name": "upstart_connect",
+                "start": 418,
+                "end": 495
+            },
+            {
+                "name": "upstart_disconnected",
+                "start": 497,
+                "end": 502
+            },
+            {
+                "name": "socket_watcher",
+                "start": 513,
+                "end": 576
+            },
+            {
+                "name": "socket_reader",
+                "start": 589,
+                "end": 662
+            },
+            {
+                "name": "close_handler",
+                "start": 664,
+                "end": 675
+            },
+            {
+                "name": "create_socket",
+                "start": 686,
+                "end": 770
+            },
+            {
+                "name": "emit_event_error",
+                "start": 772,
+                "end": 781
+            },
+            {
+                "name": "emit_event",
+                "start": 783,
+                "end": 846
+            }
+        ],
+        "extra/upstart-udev-bridge.c": [
+            {
+                "name": "udev_monitor_watcher",
+                "start": 49,
+                "end": 50
+            },
+            {
+                "name": "main",
+                "start": 94,
+                "end": 184
+            },
+            {
+                "name": "udev_monitor_watcher",
+                "start": 187,
+                "end": 330
+            },
+            {
+                "name": "upstart_disconnected",
+                "start": 333,
+                "end": 338
+            },
+            {
+                "name": "emit_event_error",
+                "start": 340,
+                "end": 349
+            },
+            {
+                "name": "make_safe_string",
+                "start": 383,
+                "end": 423
+            }
+        ],
+        "util/sysv.h": [
+            {
+                "name": "sysv_change_runlevel",
+                "start": 26,
+                "end": 30
+            },
+            "name",
+            "start",
+            "end"
+        ],
+        "util/shutdown.c": [
+            {
+                "name": "runlevel_option",
+                "start": 32,
+                "end": 93
+            },
+            {
+                "name": "shutdown_now",
+                "start": 96,
+                "end": 97
+            },
+            {
+                "name": "cancel_callback",
+                "start": 98,
+                "end": 99
+            },
+            {
+                "name": "warning_message",
+                "start": 101,
+                "end": 102
+            },
+            {
+                "name": "runlevel_option",
+                "start": 160,
+                "end": 192
+            },
+            {
+                "name": "main",
+                "start": 230,
+                "end": 457
+            },
+            {
+                "name": "shutdown_now",
+                "start": 467,
+                "end": 508
+            },
+            {
+                "name": "cancel_callback",
+                "start": 520,
+                "end": 528
+            },
+            {
+                "name": "timer_callback",
+                "start": 540,
+                "end": 578
+            },
+            {
+                "name": "warning_message",
+                "start": 590,
+                "end": 659
+            },
+            {
+                "name": "alarm_handler",
+                "start": 667,
+                "end": 670
+            },
+            {
+                "name": "wall",
+                "start": 679,
+                "end": 787
+            },
+            {
+                "name": "sysvinit_shutdown",
+                "start": 809,
+                "end": 847
+            }
+        ],
+        "util/utmp.h": [
+            {
+                "name": "utmp_read_runlevel",
+                "start": 26,
+                "end": 29
+            },
+            {
+                "name": "utmp_get_runlevel",
+                "start": 30,
+                "end": 31
+            },
+            {
+                "name": "utmp_write_runlevel",
+                "start": 33,
+                "end": 35
+            },
+            {
+                "name": "utmp_write_shutdown",
+                "start": 36,
+                "end": 37
+            }
+        ],
+        "util/sysv.c": [
+            {
+                "name": "error_handler",
+                "start": 32,
+                "end": 56
+            },
+            {
+                "name": "sysv_change_runlevel",
+                "start": 74,
+                "end": 186
+            },
+            {
+                "name": "error_handler",
+                "start": 196,
+                "end": 201
+            }
+        ],
+        "util/initctl.c": [
+            {
+                "name": "upstart_open",
+                "start": 66,
+                "end": 67
+            },
+            {
+                "name": "job_status",
+                "start": 68,
+                "end": 70
+            },
+            {
+                "name": "job_usage",
+                "start": 71,
+                "end": 73
+            },
+            {
+                "name": "start_reply_handler",
+                "start": 76,
+                "end": 77
+            },
+            {
+                "name": "job_class_condition_handler",
+                "start": 81,
+                "end": 83
+            },
+            {
+                "name": "job_class_condition_err_handler",
+                "start": 85,
+                "end": 86
+            },
+            {
+                "name": "job_class_parse_events",
+                "start": 88,
+                "end": 89
+            },
+            {
+                "name": "job_class_show_emits",
+                "start": 91,
+                "end": 92
+            },
+            {
+                "name": "job_class_show_conditions",
+                "start": 94,
+                "end": 95
+            },
+            {
+                "name": "check_condition",
+                "start": 99,
+                "end": 102
+            },
+            {
+                "name": "display_check_errors",
+                "start": 106,
+                "end": 107
+            },
+            {
+                "name": "get_job_details",
+                "start": 111,
+                "end": 112
+            },
+            {
+                "name": "dbus_bus_type_setter",
+                "start": 246,
+                "end": 261
+            },
+            {
+                "name": "ignored_events_setter",
+                "start": 270,
+                "end": 306
+            },
+            {
+                "name": "upstart_open",
+                "start": 326,
+                "end": 412
+            },
+            {
+                "name": "job_status",
+                "start": 435,
+                "end": 532
+            },
+            {
+                "name": "job_usage",
+                "start": 544,
+                "end": 556
+            },
+            {
+                "name": "start_action",
+                "start": 567,
+                "end": 690
+            },
+            {
+                "name": "stop_action",
+                "start": 702,
+                "end": 818
+            },
+            {
+                "name": "restart_action",
+                "start": 830,
+                "end": 954
+            },
+            {
+                "name": "reload_action",
+                "start": 966,
+                "end": 1047
+            },
+            {
+                "name": "status_action",
+                "start": 1059,
+                "end": 1155
+            },
+            {
+                "name": "list_action",
+                "start": 1167,
+                "end": 1274
+            },
+            {
+                "name": "show_config_action",
+                "start": 1285,
+                "end": 1362
+            },
+            {
+                "name": "get_env_action",
+                "start": 1373,
+                "end": 1414
+            },
+            {
+                "name": "set_env_action",
+                "start": 1425,
+                "end": 1466
+            },
+            {
+                "name": "unset_env_action",
+                "start": 1478,
+                "end": 1515
+            },
+            {
+                "name": "reset_env_action",
+                "start": 1526,
+                "end": 1554
+            },
+            {
+                "name": "list_env_qsort_compar",
+                "start": 1564,
+                "end": 1568
+            },
+            {
+                "name": "list_env_action",
+                "start": 1581,
+                "end": 1622
+            },
+            {
+                "name": "usage_action",
+                "start": 1633,
+                "end": 1698
+            },
+            {
+                "name": "emit_action",
+                "start": 1710,
+                "end": 1750
+            },
+            {
+                "name": "reload_configuration_action",
+                "start": 1762,
+                "end": 1787
+            },
+            {
+                "name": "version_action",
+                "start": 1799,
+                "end": 1827
+            },
+            {
+                "name": "log_priority_action",
+                "start": 1839,
+                "end": 1874
+            },
+            {
+                "name": "check_config_action",
+                "start": 1886,
+                "end": 1949
+            },
+            {
+                "name": "notify_disk_writeable_action",
+                "start": 1960,
+                "end": 1985
+            },
+            {
+                "name": "notify_dbus_address_action",
+                "start": 1997,
+                "end": 2031
+            },
+            {
+                "name": "list_sessions_action",
+                "start": 2044,
+                "end": 2142
+            },
+            {
+                "name": "start_reply_handler",
+                "start": 2145,
+                "end": 2155
+            },
+            {
+                "name": "reply_handler",
+                "start": 2157,
+                "end": 2164
+            },
+            {
+                "name": "error_handler",
+                "start": 2166,
+                "end": 2177
+            },
+            {
+                "name": "job_class_parse_events",
+                "start": 2201,
+                "end": 2361
+            },
+            {
+                "name": "job_class_show_conditions",
+                "start": 2371,
+                "end": 2419
+            },
+            {
+                "name": "job_class_show_emits",
+                "start": 2429,
+                "end": 2463
+            },
+            {
+                "name": "job_class_condition_handler",
+                "start": 2475,
+                "end": 2479
+            },
+            {
+                "name": "job_class_condition_err_handler",
+                "start": 2490,
+                "end": 2494
+            },
+            {
+                "name": "eval_expr_tree",
+                "start": 2508,
+                "end": 2619
+            },
+            {
+                "name": "check_condition",
+                "start": 2636,
+                "end": 2683
+            },
+            {
+                "name": "display_check_errors",
+                "start": 2698,
+                "end": 2717
+            },
+            {
+                "name": "tree_filter",
+                "start": 2732,
+                "end": 2746
+            },
+            {
+                "name": "allow_job",
+                "start": 2757,
+                "end": 2774
+            },
+            {
+                "name": "allow_event",
+                "start": 2785,
+                "end": 2806
+            },
+            {
+                "name": "get_job_details",
+                "start": 2830,
+                "end": 2864
+            },
+            {
+                "name": "main",
+                "start": 3264,
+                "end": 3279
+            }
+        ],
+        "util/utmp.c": [
+            {
+                "name": "utmp_entry",
+                "start": 39,
+                "end": 45
+            },
+            {
+                "name": "utmp_write",
+                "start": 46,
+                "end": 47
+            },
+            {
+                "name": "utmp_read_runlevel",
+                "start": 74,
+                "end": 108
+            },
+            {
+                "name": "utmp_get_runlevel",
+                "start": 122,
+                "end": 140
+            },
+            {
+                "name": "utmp_write_runlevel",
+                "start": 158,
+                "end": 210
+            },
+            {
+                "name": "utmp_write_shutdown",
+                "start": 226,
+                "end": 239
+            },
+            {
+                "name": "utmp_entry",
+                "start": 261,
+                "end": 316
+            },
+            {
+                "name": "utmp_write",
+                "start": 328,
+                "end": 347
+            },
+            {
+                "name": "wtmp_write",
+                "start": 357,
+                "end": 364
+            }
+        ],
+        "util/runlevel.c": [
+            {
+                "name": "main",
+                "start": 49,
+                "end": 91
+            }
+        ],
+        "util/telinit.c": [
+            {
+                "name": "env_option",
+                "start": 32,
+                "end": 54
+            },
+            {
+                "name": "upstart_open",
+                "start": 56,
+                "end": 57
+            },
+            {
+                "name": "restart_upstart",
+                "start": 59,
+                "end": 60
+            },
+            {
+                "name": "env_option",
+                "start": 84,
+                "end": 99
+            },
+            {
+                "name": "upstart_open",
+                "start": 117,
+                "end": 151
+            },
+            {
+                "name": "restart_upstart",
+                "start": 160,
+                "end": 185
+            },
+            {
+                "name": "main",
+                "start": 204,
+                "end": 297
+            }
+        ],
+        "util/reboot.c": [
+            {
+                "name": "main",
+                "start": 134,
+                "end": 270
+            }
+        ],
+        "util/tests/test_utmp.c": [
+            {
+                "name": "test_read_runlevel",
+                "start": 40,
+                "end": 325
+            },
+            {
+                "name": "test_get_runlevel",
+                "start": 327,
+                "end": 616
+            },
+            {
+                "name": "test_write_runlevel",
+                "start": 619,
+                "end": 1265
+            },
+            {
+                "name": "test_write_shutdown",
+                "start": 1267,
+                "end": 1509
+            },
+            {
+                "name": "main",
+                "start": 1512,
+                "end": 1523
+            }
+        ],
+        "util/tests/test_initctl.c": [
+            {
+                "name": "upstart_open",
+                "start": 65,
+                "end": 66
+            },
+            {
+                "name": "job_status",
+                "start": 67,
+                "end": 69
+            },
+            {
+                "name": "my_connect_handler",
+                "start": 87,
+                "end": 98
+            },
+            {
+                "name": "test_upstart_open",
+                "start": 100,
+                "end": 518
+            },
+            {
+                "name": "test_job_status",
+                "start": 521,
+                "end": 3321
+            },
+            {
+                "name": "test_start_action",
+                "start": 3324,
+                "end": 5097
+            },
+            {
+                "name": "test_stop_action",
+                "start": 5100,
+                "end": 6678
+            },
+            {
+                "name": "test_restart_action",
+                "start": 6681,
+                "end": 8454
+            },
+            {
+                "name": "test_reload_action",
+                "start": 8457,
+                "end": 9178
+            },
+            {
+                "name": "test_status_action",
+                "start": 9181,
+                "end": 10712
+            },
+            {
+                "name": "test_list",
+                "start": 10714,
+                "end": 10801
+            },
+            {
+                "name": "test_reexec",
+                "start": 10803,
+                "end": 11094
+            },
+            {
+                "name": "test_list_sessions",
+                "start": 11096,
+                "end": 11210
+            },
+            {
+                "name": "test_no_dbus",
+                "start": 11212,
+                "end": 11273
+            },
+            {
+                "name": "test_quiesce",
+                "start": 11275,
+                "end": 12044
+            },
+            {
+                "name": "test_umask",
+                "start": 12046,
+                "end": 12147
+            },
+            {
+                "name": "test_show_config",
+                "start": 12149,
+                "end": 12611
+            },
+            {
+                "name": "test_check_config",
+                "start": 12613,
+                "end": 13068
+            },
+            {
+                "name": "test_notify_disk_writeable",
+                "start": 13070,
+                "end": 13186
+            },
+            {
+                "name": "test_list_action",
+                "start": 13189,
+                "end": 14483
+            },
+            {
+                "name": "test_emit_action",
+                "start": 14486,
+                "end": 14921
+            },
+            {
+                "name": "test_reload_configuration_action",
+                "start": 14924,
+                "end": 15106
+            },
+            {
+                "name": "test_version_action",
+                "start": 15109,
+                "end": 15325
+            },
+            {
+                "name": "test_log_priority_action",
+                "start": 15328,
+                "end": 15738
+            },
+            {
+                "name": "test_usage",
+                "start": 15741,
+                "end": 15845
+            },
+            {
+                "name": "test_default_job_env",
+                "start": 15847,
+                "end": 15976
+            },
+            {
+                "name": "clear_job_env",
+                "start": 15978,
+                "end": 16024
+            },
+            {
+                "name": "test_clear_job_env",
+                "start": 16029,
+                "end": 16113
+            },
+            {
+                "name": "test_modified_job_env",
+                "start": 16115,
+                "end": 16542
+            },
+            {
+                "name": "test_job_env_invalid_args",
+                "start": 16544,
+                "end": 16593
+            },
+            {
+                "name": "test_global_and_local_job_env",
+                "start": 16595,
+                "end": 16750
+            },
+            {
+                "name": "test_no_inherit_job_env",
+                "start": 16752,
+                "end": 16817
+            },
+            {
+                "name": "test_job_env",
+                "start": 16823,
+                "end": 16918
+            },
+            {
+                "name": "test_dbus_connection",
+                "start": 16920,
+                "end": 17139
+            },
+            {
+                "name": "main",
+                "start": 17141,
+                "end": 17201
+            }
+        ],
+        "util/tests/test_sysv.c": [
+            {
+                "name": "my_connect_handler",
+                "start": 60,
+                "end": 71
+            },
+            {
+                "name": "test_change_runlevel",
+                "start": 73,
+                "end": 1118
+            },
+            {
+                "name": "main",
+                "start": 1121,
+                "end": 1134
+            }
+        ],
+        "util/tests/test_telinit.c": [
+            {
+                "name": "test_env_option",
+                "start": 33,
+                "end": 74
+            },
+            {
+                "name": "main",
+                "start": 77,
+                "end": 86
+            }
+        ]
+    }
+}

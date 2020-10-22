@@ -1,0 +1,936 @@
+{
+    "iodine-0.7.0": {
+        "src/fw_query.c": [
+            {
+                "name": "fw_query_init",
+                "start": 23,
+                "end": 27
+            },
+            {
+                "name": "fw_query_put",
+                "start": 29,
+                "end": 36
+            },
+            {
+                "name": "fw_query_get",
+                "start": 38,
+                "end": 49
+            }
+        ],
+        "src/base128.c": [
+            {
+                "name": "get_base128_encoder",
+                "start": 72,
+                "end": 76
+            },
+            {
+                "name": "base128_handles_dots",
+                "start": 78,
+                "end": 82
+            },
+            {
+                "name": "base128_blksize_raw",
+                "start": 84,
+                "end": 88
+            },
+            {
+                "name": "base128_blksize_enc",
+                "start": 90,
+                "end": 94
+            },
+            {
+                "name": "base128_reverse_init",
+                "start": 96,
+                "end": 110
+            },
+            {
+                "name": "base128_encode",
+                "start": 112,
+                "end": 202
+            },
+            {
+                "name": "base128_decode",
+                "start": 206,
+                "end": 291
+            }
+        ],
+        "src/util.c": [
+            {
+                "name": "get_resolvconf_addr",
+                "start": 21,
+                "end": 80
+            }
+        ],
+        "src/common.c": [
+            {
+                "name": "check_superuser",
+                "start": 105,
+                "end": 115
+            },
+            {
+                "name": "format_addr",
+                "start": 117,
+                "end": 139
+            },
+            {
+                "name": "get_addr",
+                "start": 141,
+                "end": 171
+            },
+            {
+                "name": "open_dns",
+                "start": 173,
+                "end": 208
+            },
+            {
+                "name": "open_dns_from_host",
+                "start": 210,
+                "end": 221
+            },
+            {
+                "name": "close_dns",
+                "start": 223,
+                "end": 227
+            },
+            {
+                "name": "do_chroot",
+                "start": 229,
+                "end": 242
+            },
+            {
+                "name": "do_setcon",
+                "start": 244,
+                "end": 253
+            },
+            {
+                "name": "do_pidfile",
+                "start": 255,
+                "end": 271
+            },
+            {
+                "name": "do_detach",
+                "start": 273,
+                "end": 284
+            },
+            {
+                "name": "read_password",
+                "start": 286,
+                "end": 327
+            },
+            {
+                "name": "check_topdomain",
+                "start": 329,
+                "end": 388
+            },
+            {
+                "name": "recent_seqno",
+                "start": 452,
+                "end": 465
+            },
+            {
+                "name": "fd_set_close_on_exec",
+                "start": 471,
+                "end": 482
+            }
+        ],
+        "src/dns.c": [
+            {
+                "name": "dns_encode",
+                "start": 52,
+                "end": 228
+            },
+            {
+                "name": "dns_encode_ns_response",
+                "start": 230,
+                "end": 320
+            },
+            {
+                "name": "dns_encode_a_response",
+                "start": 322,
+                "end": 380
+            },
+            {
+                "name": "dns_get_id",
+                "start": 384,
+                "end": 394
+            },
+            {
+                "name": "dns_decode",
+                "start": 398,
+                "end": 613
+            }
+        ],
+        "src/tun.c": [
+            {
+                "name": "open_tun",
+                "start": 318,
+                "end": 357
+            },
+            {
+                "name": "close_tun",
+                "start": 361,
+                "end": 366
+            },
+            {
+                "name": "write_tun",
+                "start": 407,
+                "end": 432
+            },
+            {
+                "name": "read_tun",
+                "start": 434,
+                "end": 451
+            },
+            {
+                "name": "tun_setip",
+                "start": 454,
+                "end": 550
+            },
+            {
+                "name": "tun_setmtu",
+                "start": 552,
+                "end": 575
+            }
+        ],
+        "src/read.c": [
+            {
+                "name": "readname_loop",
+                "start": 22,
+                "end": 79
+            },
+            {
+                "name": "readname",
+                "start": 81,
+                "end": 85
+            },
+            {
+                "name": "readshort",
+                "start": 87,
+                "end": 97
+            },
+            {
+                "name": "readlong",
+                "start": 99,
+                "end": 114
+            },
+            {
+                "name": "readdata",
+                "start": 116,
+                "end": 124
+            },
+            {
+                "name": "readtxtbin",
+                "start": 126,
+                "end": 153
+            },
+            {
+                "name": "putname",
+                "start": 155,
+                "end": 188
+            },
+            {
+                "name": "putbyte",
+                "start": 190,
+                "end": 197
+            },
+            {
+                "name": "putshort",
+                "start": 199,
+                "end": 211
+            },
+            {
+                "name": "putlong",
+                "start": 213,
+                "end": 228
+            },
+            {
+                "name": "putdata",
+                "start": 230,
+                "end": 237
+            },
+            {
+                "name": "puttxtbin",
+                "start": 239,
+                "end": 270
+            }
+        ],
+        "src/md5.c": [
+            {
+                "name": "md5_process",
+                "start": 131,
+                "end": 310
+            },
+            {
+                "name": "md5_init",
+                "start": 312,
+                "end": 320
+            },
+            {
+                "name": "md5_append",
+                "start": 322,
+                "end": 358
+            },
+            {
+                "name": "md5_finish",
+                "start": 360,
+                "end": 381
+            }
+        ],
+        "src/iodined.c": [
+            {
+                "name": "get_external_ip",
+                "start": 103,
+                "end": 152
+            },
+            {
+                "name": "sigint",
+                "start": 154,
+                "end": 158
+            },
+            {
+                "name": "check_user_and_ip",
+                "start": 178,
+                "end": 202
+            },
+            {
+                "name": "check_authenticated_user_and_ip",
+                "start": 205,
+                "end": 216
+            },
+            {
+                "name": "send_raw",
+                "start": 218,
+                "end": 240
+            },
+            {
+                "name": "start_new_outpacket",
+                "start": 243,
+                "end": 256
+            },
+            {
+                "name": "save_to_outpacketq",
+                "start": 260,
+                "end": 287
+            },
+            {
+                "name": "get_from_outpacketq",
+                "start": 289,
+                "end": 316
+            },
+            {
+                "name": "save_to_dnscache",
+                "start": 337,
+                "end": 355
+            },
+            {
+                "name": "answer_from_dnscache",
+                "start": 357,
+                "end": 395
+            },
+            {
+                "name": "save_to_qmem",
+                "start": 399,
+                "end": 414
+            },
+            {
+                "name": "save_to_qmem_pingordata",
+                "start": 416,
+                "end": 470
+            },
+            {
+                "name": "answer_from_qmem",
+                "start": 472,
+                "end": 503
+            },
+            {
+                "name": "answer_from_qmem_data",
+                "start": 505,
+                "end": 521
+            },
+            {
+                "name": "send_chunk_or_dataless",
+                "start": 523,
+                "end": 615
+            },
+            {
+                "name": "tunnel_tun",
+                "start": 617,
+                "end": 663
+            },
+            {
+                "name": "send_version_response",
+                "start": 671,
+                "end": 695
+            },
+            {
+                "name": "process_downstream_ack",
+                "start": 697,
+                "end": 733
+            },
+            {
+                "name": "handle_null_request",
+                "start": 735,
+                "end": 1491
+            },
+            {
+                "name": "handle_ns_request",
+                "start": 1493,
+                "end": 1519
+            },
+            {
+                "name": "handle_a_request",
+                "start": 1521,
+                "end": 1551
+            },
+            {
+                "name": "forward_query",
+                "start": 1553,
+                "end": 1586
+            },
+            {
+                "name": "tunnel_bind",
+                "start": 1588,
+                "end": 1631
+            },
+            {
+                "name": "tunnel_dns",
+                "start": 1633,
+                "end": 1704
+            },
+            {
+                "name": "tunnel",
+                "start": 1706,
+                "end": 1801
+            },
+            {
+                "name": "handle_full_packet",
+                "start": 1803,
+                "end": 1858
+            },
+            {
+                "name": "handle_raw_login",
+                "start": 1860,
+                "end": 1899
+            },
+            {
+                "name": "handle_raw_data",
+                "start": 1901,
+                "end": 1924
+            },
+            {
+                "name": "handle_raw_ping",
+                "start": 1926,
+                "end": 1944
+            },
+            {
+                "name": "raw_decode",
+                "start": 1946,
+                "end": 1975
+            },
+            {
+                "name": "read_dns",
+                "start": 1977,
+                "end": 2040
+            },
+            {
+                "name": "write_dns_nameenc",
+                "start": 2042,
+                "end": 2110
+            },
+            {
+                "name": "write_dns",
+                "start": 2112,
+                "end": 2198
+            },
+            {
+                "name": "usage",
+                "start": 2200,
+                "end": 2210
+            },
+            {
+                "name": "help",
+                "start": 2212,
+                "end": 2246
+            },
+            {
+                "name": "version",
+                "start": 2248,
+                "end": 2253
+            },
+            {
+                "name": "main",
+                "start": 2255,
+                "end": 2611
+            }
+        ],
+        "src/client.c": [
+            {
+                "name": "client_init",
+                "start": 115,
+                "end": 139
+            },
+            {
+                "name": "client_stop",
+                "start": 141,
+                "end": 145
+            },
+            {
+                "name": "client_get_conn",
+                "start": 147,
+                "end": 151
+            },
+            {
+                "name": "client_set_nameserver",
+                "start": 153,
+                "end": 158
+            },
+            {
+                "name": "client_set_topdomain",
+                "start": 160,
+                "end": 164
+            },
+            {
+                "name": "client_set_password",
+                "start": 166,
+                "end": 170
+            },
+            {
+                "name": "client_set_qtype",
+                "start": 172,
+                "end": 190
+            },
+            {
+                "name": "client_get_qtype",
+                "start": 192,
+                "end": 206
+            },
+            {
+                "name": "client_set_downenc",
+                "start": 208,
+                "end": 221
+            },
+            {
+                "name": "client_set_selecttimeout",
+                "start": 223,
+                "end": 227
+            },
+            {
+                "name": "client_set_lazymode",
+                "start": 229,
+                "end": 233
+            },
+            {
+                "name": "client_set_hostname_maxlen",
+                "start": 235,
+                "end": 240
+            },
+            {
+                "name": "client_get_raw_addr",
+                "start": 242,
+                "end": 246
+            },
+            {
+                "name": "send_query",
+                "start": 248,
+                "end": 307
+            },
+            {
+                "name": "send_raw",
+                "start": 309,
+                "end": 326
+            },
+            {
+                "name": "send_raw_data",
+                "start": 328,
+                "end": 333
+            },
+            {
+                "name": "send_packet",
+                "start": 336,
+                "end": 346
+            },
+            {
+                "name": "is_sending",
+                "start": 348,
+                "end": 352
+            },
+            {
+                "name": "send_chunk",
+                "start": 354,
+                "end": 397
+            },
+            {
+                "name": "send_ping",
+                "start": 399,
+                "end": 421
+            },
+            {
+                "name": "write_dns_error",
+                "start": 423,
+                "end": 461
+            },
+            {
+                "name": "dns_namedec",
+                "start": 463,
+                "end": 558
+            },
+            {
+                "name": "read_dns_withq",
+                "start": 560,
+                "end": 665
+            },
+            {
+                "name": "handshake_waitdns",
+                "start": 667,
+                "end": 748
+            },
+            {
+                "name": "tunnel_tun",
+                "start": 750,
+                "end": 788
+            },
+            {
+                "name": "tunnel_dns",
+                "start": 790,
+                "end": 1093
+            },
+            {
+                "name": "client_tunnel",
+                "start": 1095,
+                "end": 1192
+            },
+            {
+                "name": "send_login",
+                "start": 1194,
+                "end": 1209
+            },
+            {
+                "name": "send_fragsize_probe",
+                "start": 1211,
+                "end": 1238
+            },
+            {
+                "name": "send_set_downstream_fragsize",
+                "start": 1240,
+                "end": 1254
+            },
+            {
+                "name": "send_version",
+                "start": 1256,
+                "end": 1272
+            },
+            {
+                "name": "send_ip_request",
+                "start": 1274,
+                "end": 1287
+            },
+            {
+                "name": "send_raw_udp_login",
+                "start": 1289,
+                "end": 1296
+            },
+            {
+                "name": "send_upenctest",
+                "start": 1298,
+                "end": 1313
+            },
+            {
+                "name": "send_downenctest",
+                "start": 1315,
+                "end": 1331
+            },
+            {
+                "name": "send_codec_switch",
+                "start": 1333,
+                "end": 1347
+            },
+            {
+                "name": "send_downenc_switch",
+                "start": 1350,
+                "end": 1364
+            },
+            {
+                "name": "send_lazy_switch",
+                "start": 1366,
+                "end": 1384
+            },
+            {
+                "name": "handshake_version",
+                "start": 1386,
+                "end": 1431
+            },
+            {
+                "name": "handshake_login",
+                "start": 1433,
+                "end": 1479
+            },
+            {
+                "name": "handshake_raw_udp",
+                "start": 1481,
+                "end": 1568
+            },
+            {
+                "name": "handshake_upenctest",
+                "start": 1570,
+                "end": 1645
+            },
+            {
+                "name": "handshake_upenc_autodetect",
+                "start": 1647,
+                "end": 1740
+            },
+            {
+                "name": "handshake_downenctest",
+                "start": 1742,
+                "end": 1784
+            },
+            {
+                "name": "handshake_downenc_autodetect",
+                "start": 1786,
+                "end": 1832
+            },
+            {
+                "name": "handshake_qtypetest",
+                "start": 1834,
+                "end": 1873
+            },
+            {
+                "name": "handshake_qtype_numcvt",
+                "start": 1875,
+                "end": 1888
+            },
+            {
+                "name": "handshake_qtype_autodetect",
+                "start": 1890,
+                "end": 1960
+            },
+            {
+                "name": "handshake_edns0_check",
+                "start": 1962,
+                "end": 2010
+            },
+            {
+                "name": "handshake_switch_codec",
+                "start": 2012,
+                "end": 2064
+            },
+            {
+                "name": "handshake_switch_downenc",
+                "start": 2066,
+                "end": 2116
+            },
+            {
+                "name": "handshake_try_lazy",
+                "start": 2118,
+                "end": 2160
+            },
+            {
+                "name": "handshake_lazyoff",
+                "start": 2162,
+                "end": 2187
+            },
+            {
+                "name": "fragsize_check",
+                "start": 2189,
+                "end": 2259
+            },
+            {
+                "name": "handshake_autoprobe_fragsize",
+                "start": 2262,
+                "end": 2334
+            },
+            {
+                "name": "handshake_set_fragsize",
+                "start": 2336,
+                "end": 2371
+            },
+            {
+                "name": "client_handshake",
+                "start": 2373,
+                "end": 2465
+            }
+        ],
+        "src/base64.c": [
+            {
+                "name": "get_base64_encoder",
+                "start": 53,
+                "end": 57
+            },
+            {
+                "name": "base64_handles_dots",
+                "start": 59,
+                "end": 63
+            },
+            {
+                "name": "base64_blksize_raw",
+                "start": 65,
+                "end": 69
+            },
+            {
+                "name": "base64_blksize_enc",
+                "start": 71,
+                "end": 75
+            },
+            {
+                "name": "base64_reverse_init",
+                "start": 77,
+                "end": 91
+            },
+            {
+                "name": "base64_encode",
+                "start": 93,
+                "end": 150
+            },
+            {
+                "name": "base64_decode",
+                "start": 154,
+                "end": 206
+            }
+        ],
+        "src/login.c": [
+            {
+                "name": "login_calculate",
+                "start": 33,
+                "end": 58
+            }
+        ],
+        "src/encoding.c": [
+            {
+                "name": "build_hostname",
+                "start": 22,
+                "end": 56
+            },
+            {
+                "name": "unpack_data",
+                "start": 58,
+                "end": 64
+            },
+            {
+                "name": "inline_dotify",
+                "start": 66,
+                "end": 102
+            },
+            {
+                "name": "inline_undotify",
+                "start": 104,
+                "end": 130
+            }
+        ],
+        "src/iodine.c": [
+            {
+                "name": "sighandler",
+                "start": 55,
+                "end": 59
+            },
+            {
+                "name": "usage",
+                "start": 67,
+                "end": 75
+            },
+            {
+                "name": "help",
+                "start": 77,
+                "end": 108
+            },
+            {
+                "name": "version",
+                "start": 110,
+                "end": 117
+            },
+            {
+                "name": "main",
+                "start": 119,
+                "end": 408
+            }
+        ],
+        "src/base32.c": [
+            {
+                "name": "get_base32_encoder",
+                "start": 53,
+                "end": 57
+            },
+            {
+                "name": "base32_handles_dots",
+                "start": 59,
+                "end": 63
+            },
+            {
+                "name": "base32_blksize_raw",
+                "start": 65,
+                "end": 69
+            },
+            {
+                "name": "base32_blksize_enc",
+                "start": 71,
+                "end": 75
+            },
+            {
+                "name": "base32_reverse_init",
+                "start": 77,
+                "end": 93
+            },
+            {
+                "name": "b32_5to8",
+                "start": 95,
+                "end": 99
+            },
+            {
+                "name": "b32_8to5",
+                "start": 101,
+                "end": 106
+            },
+            {
+                "name": "base32_encode",
+                "start": 108,
+                "end": 195
+            },
+            {
+                "name": "base32_decode",
+                "start": 199,
+                "end": 271
+            }
+        ],
+        "src/user.c": [
+            {
+                "name": "init_users",
+                "start": 40,
+                "end": 85
+            },
+            {
+                "name": "users_get_first_ip",
+                "start": 87,
+                "end": 93
+            },
+            {
+                "name": "users_waiting_on_reply",
+                "start": 95,
+                "end": 111
+            },
+            {
+                "name": "find_user_by_ip",
+                "start": 113,
+                "end": 131
+            },
+            {
+                "name": "all_users_waiting_to_send",
+                "start": 133,
+                "end": 164
+            },
+            {
+                "name": "find_available_user",
+                "start": 166,
+                "end": 185
+            },
+            {
+                "name": "user_switch_codec",
+                "start": 187,
+                "end": 194
+            },
+            {
+                "name": "user_set_conn_type",
+                "start": 196,
+                "end": 206
+            }
+        ]
+    }
+}

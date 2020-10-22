@@ -1,0 +1,2399 @@
+{
+    "consolekit-0.4.6": {
+        "src/ck-sysdeps.h": [
+            {
+                "name": "ck_process_stat_new_for_unix_pid",
+                "start": 32,
+                "end": 34
+            },
+            {
+                "name": "ck_unix_pid_get_env",
+                "start": 41,
+                "end": 42
+            },
+            {
+                "name": "ck_unix_pid_get_login_session_id",
+                "start": 48,
+                "end": 49
+            },
+            {
+                "name": "ck_get_socket_peer_credentials",
+                "start": 52,
+                "end": 55
+            },
+            {
+                "name": "ck_get_console_num_from_device",
+                "start": 67,
+                "end": 68
+            },
+            {
+                "name": "ck_get_active_console_num",
+                "start": 69,
+                "end": 70
+            },
+            {
+                "name": "ck_activate_console_num",
+                "start": 71,
+                "end": 72
+            },
+            {
+                "name": "ck_wait_for_active_console_num",
+                "start": 73,
+                "end": 74
+            }
+        ],
+        "src/ck-sysdeps-gnu.c": [
+            {
+                "name": "get_proc_stat_from_pid",
+                "start": 47,
+                "end": 77
+            },
+            {
+                "name": "ck_process_stat_get_ppid",
+                "start": 80,
+                "end": 86
+            },
+            {
+                "name": "ck_process_stat_get_cmd",
+                "start": 88,
+                "end": 94
+            },
+            {
+                "name": "ck_process_stat_get_tty",
+                "start": 96,
+                "end": 106
+            },
+            {
+                "name": "ck_process_stat_new_for_unix_pid",
+                "start": 108,
+                "end": 135
+            },
+            {
+                "name": "ck_process_stat_free",
+                "start": 137,
+                "end": 143
+            },
+            {
+                "name": "ck_unix_pid_get_env_hash",
+                "start": 145,
+                "end": 189
+            },
+            {
+                "name": "ck_unix_pid_get_env",
+                "start": 191,
+                "end": 234
+            },
+            {
+                "name": "ck_unix_pid_get_uid",
+                "start": 236,
+                "end": 255
+            },
+            {
+                "name": "ck_unix_pid_get_ppid",
+                "start": 257,
+                "end": 276
+            },
+            {
+                "name": "ck_unix_pid_get_login_session_id",
+                "start": 278,
+                "end": 285
+            },
+            {
+                "name": "ck_get_max_num_consoles",
+                "start": 287,
+                "end": 323
+            },
+            {
+                "name": "ck_supports_activatable_consoles",
+                "start": 325,
+                "end": 329
+            },
+            {
+                "name": "ck_get_console_device_for_num",
+                "start": 331,
+                "end": 339
+            },
+            {
+                "name": "ck_get_console_num_from_device",
+                "start": 341,
+                "end": 364
+            },
+            {
+                "name": "ck_get_active_console_num",
+                "start": 366,
+                "end": 402
+            }
+        ],
+        "src/ck-file-monitor.h": [
+            {
+                "name": "ck_file_monitor_add_notify",
+                "start": 74,
+                "end": 78
+            },
+            {
+                "name": "ck_file_monitor_remove_notify",
+                "start": 79,
+                "end": 80
+            }
+        ],
+        "src/ck-file-monitor-dummy.c": [
+            {
+                "name": "ck_file_monitor_error_quark",
+                "start": 46,
+                "end": 55
+            },
+            {
+                "name": "ck_file_monitor_add_notify",
+                "start": 57,
+                "end": 65
+            },
+            {
+                "name": "ck_file_monitor_remove_notify",
+                "start": 67,
+                "end": 72
+            },
+            {
+                "name": "ck_file_monitor_class_init",
+                "start": 74,
+                "end": 82
+            },
+            {
+                "name": "ck_file_monitor_init",
+                "start": 84,
+                "end": 88
+            },
+            {
+                "name": "ck_file_monitor_finalize",
+                "start": 90,
+                "end": 103
+            },
+            {
+                "name": "ck_file_monitor_new",
+                "start": 105,
+                "end": 118
+            }
+        ],
+        "src/ck-session-leader.h": [
+            {
+                "name": "ck_session_leader_set_pid",
+                "start": 67,
+                "end": 68
+            },
+            {
+                "name": "ck_session_leader_set_uid",
+                "start": 69,
+                "end": 70
+            },
+            {
+                "name": "ck_session_leader_set_session_id",
+                "start": 71,
+                "end": 72
+            },
+            {
+                "name": "ck_session_leader_set_cookie",
+                "start": 73,
+                "end": 74
+            },
+            {
+                "name": "ck_session_leader_set_service_name",
+                "start": 75,
+                "end": 76
+            },
+            {
+                "name": "ck_session_leader_set_override_parameters",
+                "start": 78,
+                "end": 79
+            },
+            {
+                "name": "ck_session_leader_collect_parameters",
+                "start": 88,
+                "end": 91
+            },
+            {
+                "name": "ck_session_leader_dump",
+                "start": 94,
+                "end": 95
+            }
+        ],
+        "src/ck-job.h": [
+            {
+                "name": "ck_job_set_command",
+                "start": 62,
+                "end": 63
+            },
+            {
+                "name": "ck_job_get_command",
+                "start": 64,
+                "end": 65
+            },
+            {
+                "name": "ck_job_execute",
+                "start": 66,
+                "end": 67
+            },
+            {
+                "name": "ck_job_get_stdout",
+                "start": 68,
+                "end": 69
+            },
+            {
+                "name": "ck_job_get_stderr",
+                "start": 70,
+                "end": 71
+            }
+        ],
+        "src/ck-session-leader.c": [
+            {
+                "name": "parse_output",
+                "start": 244,
+                "end": 292
+            },
+            {
+                "name": "parameters_free",
+                "start": 294,
+                "end": 308
+            },
+            {
+                "name": "save_parameters",
+                "start": 310,
+                "end": 363
+            },
+            {
+                "name": "job_completed",
+                "start": 372,
+                "end": 406
+            },
+            {
+                "name": "job_data_free",
+                "start": 408,
+                "end": 412
+            },
+            {
+                "name": "ck_session_leader_collect_parameters",
+                "start": 414,
+                "end": 469
+            },
+            {
+                "name": "ck_session_leader_peek_session_id",
+                "start": 472,
+                "end": 477
+            },
+            {
+                "name": "ck_session_leader_peek_cookie",
+                "start": 479,
+                "end": 484
+            },
+            {
+                "name": "ck_session_leader_peek_service_name",
+                "start": 486,
+                "end": 491
+            },
+            {
+                "name": "ck_session_leader_get_uid",
+                "start": 493,
+                "end": 498
+            },
+            {
+                "name": "ck_session_leader_get_pid",
+                "start": 500,
+                "end": 505
+            },
+            {
+                "name": "ck_session_leader_set_pid",
+                "start": 507,
+                "end": 513
+            },
+            {
+                "name": "ck_session_leader_set_uid",
+                "start": 515,
+                "end": 521
+            },
+            {
+                "name": "ck_session_leader_set_session_id",
+                "start": 523,
+                "end": 530
+            },
+            {
+                "name": "ck_session_leader_set_cookie",
+                "start": 532,
+                "end": 539
+            },
+            {
+                "name": "ck_session_leader_set_service_name",
+                "start": 541,
+                "end": 548
+            },
+            {
+                "name": "ck_session_leader_set_override_parameters",
+                "start": 550,
+                "end": 563
+            },
+            {
+                "name": "ck_session_leader_set_property",
+                "start": 565,
+                "end": 580
+            },
+            {
+                "name": "ck_session_leader_get_property",
+                "start": 582,
+                "end": 597
+            },
+            {
+                "name": "ck_session_leader_constructor",
+                "start": 599,
+                "end": 614
+            },
+            {
+                "name": "ck_session_leader_class_init",
+                "start": 616,
+                "end": 627
+            },
+            {
+                "name": "parameter_free",
+                "start": 629,
+                "end": 633
+            },
+            {
+                "name": "ck_session_leader_init",
+                "start": 635,
+                "end": 644
+            },
+            {
+                "name": "ck_session_leader_finalize",
+                "start": 646,
+                "end": 668
+            },
+            {
+                "name": "ck_session_leader_new",
+                "start": 670,
+                "end": 679
+            },
+            {
+                "name": "ck_session_leader_dump",
+                "start": 681,
+                "end": 694
+            }
+        ],
+        "src/ck-vt-monitor.h": [
+            {
+                "name": "ck_vt_monitor_set_active",
+                "start": 62,
+                "end": 64
+            },
+            {
+                "name": "ck_vt_monitor_get_active",
+                "start": 65,
+                "end": 67
+            }
+        ],
+        "src/ck-marshal.h": [
+            {
+                "name": "ck_marshal_VOID__UINT_STRING",
+                "start": 10,
+                "end": 15
+            },
+            {
+                "name": "ck_marshal_BOOLEAN__POINTER",
+                "start": 18,
+                "end": 23
+            },
+            {
+                "name": "ck_marshal_VOID__OBJECT_OBJECT",
+                "start": 26,
+                "end": 31
+            },
+            "name",
+            "start",
+            "end",
+            "name",
+            "start",
+            "end",
+            "name",
+            "start",
+            "end"
+        ],
+        "src/ck-vt-monitor.c": [
+            {
+                "name": "ck_vt_monitor_error_quark",
+                "start": 88,
+                "end": 97
+            },
+            {
+                "name": "ck_vt_monitor_set_active",
+                "start": 99,
+                "end": 137
+            },
+            {
+                "name": "ck_vt_monitor_get_active",
+                "start": 139,
+                "end": 163
+            },
+            {
+                "name": "change_active_num",
+                "start": 203,
+                "end": 220
+            },
+            {
+                "name": "thread_data_free",
+                "start": 231,
+                "end": 239
+            },
+            {
+                "name": "event_data_free",
+                "start": 241,
+                "end": 249
+            },
+            {
+                "name": "process_queue",
+                "start": 251,
+                "end": 298
+            },
+            {
+                "name": "schedule_process_queue",
+                "start": 300,
+                "end": 308
+            },
+            {
+                "name": "vt_thread_start",
+                "start": 310,
+                "end": 347
+            },
+            {
+                "name": "vt_add_watch_unlocked",
+                "start": 349,
+                "end": 374
+            },
+            {
+                "name": "vt_add_watches",
+                "start": 376,
+                "end": 429
+            },
+            {
+                "name": "ck_vt_monitor_class_init",
+                "start": 431,
+                "end": 449
+            },
+            {
+                "name": "ck_vt_monitor_init",
+                "start": 451,
+                "end": 482
+            },
+            {
+                "name": "ck_vt_monitor_finalize",
+                "start": 484,
+                "end": 513
+            },
+            {
+                "name": "ck_vt_monitor_new",
+                "start": 515,
+                "end": 528
+            }
+        ],
+        "src/ck-log-event.h": [
+            {
+                "name": "ck_log_event_fill_from_string",
+                "start": 151,
+                "end": 152
+            },
+            {
+                "name": "ck_log_event_to_string",
+                "start": 154,
+                "end": 155
+            }
+        ],
+        "src/ck-event-logger.h": [
+            {
+                "name": "ck_event_logger_queue_event",
+                "start": 60,
+                "end": 62
+            }
+        ],
+        "src/ck-sysdeps-freebsd.c": [
+            {
+                "name": "ck_process_stat_get_ppid",
+                "start": 95,
+                "end": 101
+            },
+            {
+                "name": "ck_process_stat_get_cmd",
+                "start": 103,
+                "end": 109
+            },
+            {
+                "name": "ck_process_stat_get_tty",
+                "start": 111,
+                "end": 117
+            },
+            {
+                "name": "get_kinfo_proc",
+                "start": 119,
+                "end": 137
+            },
+            {
+                "name": "stat2proc",
+                "start": 140,
+                "end": 197
+            },
+            {
+                "name": "ck_process_stat_new_for_unix_pid",
+                "start": 199,
+                "end": 225
+            },
+            {
+                "name": "ck_process_stat_free",
+                "start": 227,
+                "end": 231
+            },
+            {
+                "name": "ck_unix_pid_get_env_hash",
+                "start": 233,
+                "end": 278
+            },
+            {
+                "name": "ck_unix_pid_get_env",
+                "start": 280,
+                "end": 297
+            },
+            {
+                "name": "ck_unix_pid_get_uid",
+                "start": 299,
+                "end": 317
+            },
+            {
+                "name": "ck_unix_pid_get_login_session_id",
+                "start": 319,
+                "end": 326
+            },
+            {
+                "name": "ck_get_max_num_consoles",
+                "start": 328,
+                "end": 364
+            },
+            {
+                "name": "ck_supports_activatable_consoles",
+                "start": 366,
+                "end": 370
+            },
+            {
+                "name": "ck_get_console_device_for_num",
+                "start": 372,
+                "end": 383
+            },
+            {
+                "name": "ck_get_console_num_from_device",
+                "start": 385,
+                "end": 410
+            },
+            {
+                "name": "ck_get_active_console_num",
+                "start": 412,
+                "end": 440
+            }
+        ],
+        "src/test-vt-monitor.c": [
+            {
+                "name": "activated_cb",
+                "start": 76,
+                "end": 48
+            },
+            {
+                "name": "main",
+                "start": 50,
+                "end": 95
+            }
+        ],
+        "src/ck-session.h": [
+            {
+                "name": "ck_session_new",
+                "start": 71,
+                "end": 72
+            },
+            {
+                "name": "ck_session_new_with_parameters",
+                "start": 73,
+                "end": 75
+            },
+            {
+                "name": "ck_session_dump",
+                "start": 77,
+                "end": 78
+            },
+            {
+                "name": "ck_session_run_programs",
+                "start": 79,
+                "end": 80
+            },
+            {
+                "name": "ck_session_set_active",
+                "start": 83,
+                "end": 85
+            },
+            {
+                "name": "ck_session_set_is_local",
+                "start": 86,
+                "end": 88
+            },
+            {
+                "name": "ck_session_set_id",
+                "start": 89,
+                "end": 91
+            },
+            {
+                "name": "ck_session_set_cookie",
+                "start": 92,
+                "end": 94
+            },
+            {
+                "name": "ck_session_set_seat_id",
+                "start": 95,
+                "end": 97
+            },
+            {
+                "name": "ck_session_set_unix_user",
+                "start": 98,
+                "end": 100
+            },
+            {
+                "name": "ck_session_set_x11_display",
+                "start": 101,
+                "end": 103
+            },
+            {
+                "name": "ck_session_set_x11_display_device",
+                "start": 104,
+                "end": 106
+            },
+            {
+                "name": "ck_session_set_display_device",
+                "start": 107,
+                "end": 109
+            },
+            {
+                "name": "ck_session_set_login_session_id",
+                "start": 110,
+                "end": 112
+            },
+            {
+                "name": "ck_session_set_remote_host_name",
+                "start": 113,
+                "end": 115
+            },
+            {
+                "name": "ck_session_set_session_type",
+                "start": 116,
+                "end": 118
+            },
+            {
+                "name": "ck_session_get_id",
+                "start": 123,
+                "end": 125
+            },
+            {
+                "name": "ck_session_get_seat_id",
+                "start": 126,
+                "end": 128
+            },
+            {
+                "name": "ck_session_is_active",
+                "start": 129,
+                "end": 131
+            },
+            {
+                "name": "ck_session_is_local",
+                "start": 132,
+                "end": 134
+            },
+            {
+                "name": "ck_session_get_unix_user",
+                "start": 135,
+                "end": 137
+            },
+            {
+                "name": "ck_session_get_x11_display",
+                "start": 138,
+                "end": 140
+            },
+            {
+                "name": "ck_session_get_x11_display_device",
+                "start": 141,
+                "end": 143
+            },
+            {
+                "name": "ck_session_get_display_device",
+                "start": 144,
+                "end": 146
+            },
+            {
+                "name": "ck_session_get_login_session_id",
+                "start": 147,
+                "end": 149
+            },
+            {
+                "name": "ck_session_get_session_type",
+                "start": 150,
+                "end": 152
+            },
+            {
+                "name": "ck_session_get_remote_host_name",
+                "start": 153,
+                "end": 155
+            },
+            {
+                "name": "ck_session_get_creation_time",
+                "start": 156,
+                "end": 158
+            },
+            {
+                "name": "ck_session_get_user",
+                "start": 160,
+                "end": 162
+            },
+            {
+                "name": "ck_session_get_idle_hint",
+                "start": 165,
+                "end": 167
+            },
+            {
+                "name": "ck_session_get_idle_since_hint",
+                "start": 168,
+                "end": 170
+            },
+            {
+                "name": "ck_session_set_idle_hint",
+                "start": 171,
+                "end": 173
+            },
+            {
+                "name": "ck_session_activate",
+                "start": 176,
+                "end": 177
+            },
+            {
+                "name": "ck_session_lock",
+                "start": 178,
+                "end": 179
+            },
+            {
+                "name": "ck_session_unlock",
+                "start": 180,
+                "end": 181
+            }
+        ],
+        "src/ck-seat.h": [
+            {
+                "name": "ck_seat_new",
+                "start": 86,
+                "end": 87
+            },
+            {
+                "name": "ck_seat_new_from_file",
+                "start": 88,
+                "end": 89
+            },
+            {
+                "name": "ck_seat_new_with_devices",
+                "start": 90,
+                "end": 92
+            },
+            {
+                "name": "ck_seat_run_programs",
+                "start": 96,
+                "end": 99
+            },
+            {
+                "name": "ck_seat_dump",
+                "start": 101,
+                "end": 102
+            },
+            {
+                "name": "ck_seat_get_kind",
+                "start": 104,
+                "end": 106
+            },
+            {
+                "name": "ck_seat_add_session",
+                "start": 107,
+                "end": 109
+            },
+            {
+                "name": "ck_seat_remove_session",
+                "start": 110,
+                "end": 112
+            },
+            {
+                "name": "ck_seat_add_device",
+                "start": 113,
+                "end": 115
+            },
+            {
+                "name": "ck_seat_remove_device",
+                "start": 116,
+                "end": 118
+            },
+            {
+                "name": "ck_seat_get_id",
+                "start": 121,
+                "end": 123
+            },
+            {
+                "name": "ck_seat_get_sessions",
+                "start": 124,
+                "end": 126
+            },
+            {
+                "name": "ck_seat_get_devices",
+                "start": 127,
+                "end": 129
+            },
+            {
+                "name": "ck_seat_get_active_session",
+                "start": 130,
+                "end": 132
+            },
+            {
+                "name": "ck_seat_can_activate_sessions",
+                "start": 134,
+                "end": 136
+            },
+            {
+                "name": "ck_seat_activate_session",
+                "start": 137,
+                "end": 139
+            }
+        ],
+        "src/ck-manager.h": [
+            {
+                "name": "ck_manager_stop",
+                "start": 80,
+                "end": 81
+            },
+            {
+                "name": "ck_manager_restart",
+                "start": 83,
+                "end": 84
+            },
+            {
+                "name": "ck_manager_can_stop",
+                "start": 86,
+                "end": 87
+            },
+            {
+                "name": "ck_manager_can_restart",
+                "start": 88,
+                "end": 89
+            },
+            {
+                "name": "ck_manager_open_session",
+                "start": 91,
+                "end": 92
+            },
+            {
+                "name": "ck_manager_get_sessions",
+                "start": 93,
+                "end": 95
+            },
+            {
+                "name": "ck_manager_get_seats",
+                "start": 96,
+                "end": 98
+            },
+            {
+                "name": "ck_manager_close_session",
+                "start": 99,
+                "end": 101
+            },
+            {
+                "name": "ck_manager_get_current_session",
+                "start": 102,
+                "end": 103
+            },
+            {
+                "name": "ck_manager_get_session_for_cookie",
+                "start": 104,
+                "end": 106
+            },
+            {
+                "name": "ck_manager_get_session_for_unix_process",
+                "start": 107,
+                "end": 109
+            },
+            {
+                "name": "ck_manager_get_sessions_for_unix_user",
+                "start": 110,
+                "end": 112
+            },
+            {
+                "name": "ck_manager_get_sessions_for_user",
+                "start": 114,
+                "end": 116
+            },
+            {
+                "name": "ck_manager_get_system_idle_hint",
+                "start": 119,
+                "end": 121
+            },
+            {
+                "name": "ck_manager_get_system_idle_since_hint",
+                "start": 122,
+                "end": 124
+            },
+            {
+                "name": "ck_manager_open_session_with_parameters",
+                "start": 127,
+                "end": 129
+            }
+        ],
+        "src/ck-manager-glue.h": [
+            {
+                "name": "dbus_glib_marshal_ck_manager_VOID__STRING_POINTER",
+                "start": 67,
+                "end": 72
+            },
+            {
+                "name": "dbus_glib_marshal_ck_manager_VOID__STRING_POINTER",
+                "start": 73,
+                "end": 107
+            },
+            {
+                "name": "dbus_glib_marshal_ck_manager_VOID__BOXED_POINTER",
+                "start": 111,
+                "end": 116
+            },
+            {
+                "name": "dbus_glib_marshal_ck_manager_VOID__BOXED_POINTER",
+                "start": 117,
+                "end": 151
+            },
+            {
+                "name": "dbus_glib_marshal_ck_manager_BOOLEAN__POINTER_POINTER",
+                "start": 155,
+                "end": 160
+            },
+            {
+                "name": "dbus_glib_marshal_ck_manager_BOOLEAN__POINTER_POINTER",
+                "start": 161,
+                "end": 199
+            }
+        ],
+        "src/ck-manager.c": [
+            {
+                "name": "dump_state_seat_iter",
+                "start": 104,
+                "end": 110
+            },
+            {
+                "name": "dump_state_session_iter",
+                "start": 112,
+                "end": 118
+            },
+            {
+                "name": "dump_state_leader_iter",
+                "start": 120,
+                "end": 126
+            },
+            {
+                "name": "do_dump",
+                "start": 128,
+                "end": 177
+            },
+            {
+                "name": "ck_manager_dump",
+                "start": 179,
+                "end": 235
+            },
+            {
+                "name": "ck_manager_error_quark",
+                "start": 237,
+                "end": 246
+            },
+            {
+                "name": "ck_manager_error_get_type",
+                "start": 250,
+                "end": 268
+            },
+            {
+                "name": "get_next_session_serial",
+                "start": 270,
+                "end": 282
+            },
+            {
+                "name": "get_next_seat_serial",
+                "start": 284,
+                "end": 296
+            },
+            {
+                "name": "generate_session_cookie",
+                "start": 298,
+                "end": 331
+            },
+            {
+                "name": "generate_session_id",
+                "start": 333,
+                "end": 350
+            },
+            {
+                "name": "generate_seat_id",
+                "start": 352,
+                "end": 369
+            },
+            {
+                "name": "get_object_id_basename",
+                "start": 371,
+                "end": 383
+            },
+            {
+                "name": "log_seat_added_event",
+                "start": 385,
+                "end": 415
+            },
+            {
+                "name": "log_seat_removed_event",
+                "start": 417,
+                "end": 447
+            },
+            {
+                "name": "log_system_stop_event",
+                "start": 449,
+                "end": 469
+            },
+            {
+                "name": "log_system_restart_event",
+                "start": 471,
+                "end": 491
+            },
+            {
+                "name": "log_seat_session_added_event",
+                "start": 493,
+                "end": 546
+            },
+            {
+                "name": "log_seat_session_removed_event",
+                "start": 548,
+                "end": 600
+            },
+            {
+                "name": "log_seat_active_session_changed_event",
+                "start": 602,
+                "end": 631
+            },
+            {
+                "name": "log_seat_device_added_event",
+                "start": 633,
+                "end": 679
+            },
+            {
+                "name": "log_seat_device_removed_event",
+                "start": 681,
+                "end": 727
+            },
+            {
+                "name": "get_cookie_for_pid",
+                "start": 729,
+                "end": 740
+            },
+            {
+                "name": "data_free",
+                "start": 752,
+                "end": 757
+            },
+            {
+                "name": "get_caller_info",
+                "start": 892,
+                "end": 934
+            },
+            {
+                "name": "get_user_name",
+                "start": 936,
+                "end": 951
+            },
+            {
+                "name": "session_is_real_user",
+                "start": 953,
+                "end": 992
+            },
+            {
+                "name": "collect_users",
+                "start": 994,
+                "end": 1006
+            },
+            {
+                "name": "get_system_num_users",
+                "start": 1008,
+                "end": 1025
+            },
+            {
+                "name": "do_restart",
+                "start": 1076,
+                "end": 1105
+            },
+            {
+                "name": "ck_manager_restart",
+                "start": 1114,
+                "end": 1137
+            },
+            {
+                "name": "ck_manager_can_restart",
+                "start": 1139,
+                "end": 1160
+            },
+            {
+                "name": "do_stop",
+                "start": 1162,
+                "end": 1190
+            },
+            {
+                "name": "ck_manager_stop",
+                "start": 1192,
+                "end": 1213
+            },
+            {
+                "name": "ck_manager_can_stop",
+                "start": 1215,
+                "end": 1235
+            },
+            {
+                "name": "on_seat_active_session_changed_full",
+                "start": 1237,
+                "end": 1255
+            },
+            {
+                "name": "on_seat_session_added_full",
+                "start": 1257,
+                "end": 1272
+            },
+            {
+                "name": "on_seat_session_removed_full",
+                "start": 1274,
+                "end": 1289
+            },
+            {
+                "name": "on_seat_device_added",
+                "start": 1291,
+                "end": 1298
+            },
+            {
+                "name": "on_seat_device_removed",
+                "start": 1300,
+                "end": 1307
+            },
+            {
+                "name": "connect_seat_signals",
+                "start": 1309,
+                "end": 1318
+            },
+            {
+                "name": "disconnect_seat_signals",
+                "start": 1320,
+                "end": 1329
+            },
+            {
+                "name": "add_new_seat",
+                "start": 1331,
+                "end": 1370
+            },
+            {
+                "name": "remove_seat",
+                "start": 1372,
+                "end": 1421
+            },
+            {
+                "name": "find_seat_for_session",
+                "start": 1425,
+                "end": 1482
+            },
+            {
+                "name": "manager_set_system_idle_hint",
+                "start": 1484,
+                "end": 1499
+            },
+            {
+                "name": "is_session_busy",
+                "start": 1501,
+                "end": 1514
+            },
+            {
+                "name": "manager_update_system_idle_hint",
+                "start": 1516,
+                "end": 1529
+            },
+            {
+                "name": "session_idle_hint_changed",
+                "start": 1531,
+                "end": 1537
+            },
+            {
+                "name": "ck_manager_get_system_idle_hint",
+                "start": 1546,
+                "end": 1558
+            },
+            {
+                "name": "_g_time_val_to_iso8601",
+                "start": 1564,
+                "end": 1580
+            },
+            {
+                "name": "ck_manager_get_system_idle_since_hint",
+                "start": 1583,
+                "end": 1604
+            },
+            {
+                "name": "open_session_for_leader",
+                "start": 1606,
+                "end": 1660
+            },
+            {
+                "name": "_get_parameter",
+                "start": 1672,
+                "end": 1741
+            },
+            {
+                "name": "_verify_login_session_id_is_local",
+                "start": 1743,
+                "end": 1779
+            },
+            {
+                "name": "add_param_boolean",
+                "start": 1781,
+                "end": 1801
+            },
+            {
+                "name": "verify_and_open_session_for_leader",
+                "start": 1803,
+                "end": 1835
+            },
+            {
+                "name": "collect_parameters_cb",
+                "start": 1837,
+                "end": 1857
+            },
+            {
+                "name": "generate_session_for_leader",
+                "start": 1859,
+                "end": 1878
+            },
+            {
+                "name": "create_session_for_sender",
+                "start": 1880,
+                "end": 1936
+            },
+            {
+                "name": "ck_manager_get_session_for_cookie",
+                "start": 1945,
+                "end": 2041
+            },
+            {
+                "name": "ck_manager_get_session_for_unix_process",
+                "start": 2050,
+                "end": 2100
+            },
+            {
+                "name": "ck_manager_get_current_session",
+                "start": 2109,
+                "end": 2141
+            },
+            {
+                "name": "ck_manager_open_session",
+                "start": 2143,
+                "end": 2155
+            },
+            {
+                "name": "ck_manager_open_session_with_parameters",
+                "start": 2157,
+                "end": 2170
+            },
+            {
+                "name": "remove_session_for_cookie",
+                "start": 2172,
+                "end": 2258
+            },
+            {
+                "name": "paranoia_check_is_cookie_owner",
+                "start": 2260,
+                "end": 2306
+            },
+            {
+                "name": "ck_manager_close_session",
+                "start": 2308,
+                "end": 2360
+            },
+            {
+                "name": "remove_leader_for_connection",
+                "start": 2367,
+                "end": 2385
+            },
+            {
+                "name": "remove_sessions_for_connection",
+                "start": 2387,
+                "end": 2403
+            },
+            {
+                "name": "bus_name_owner_changed",
+                "start": 2405,
+                "end": 2418
+            },
+            {
+                "name": "register_manager",
+                "start": 2420,
+                "end": 2458
+            },
+            {
+                "name": "ck_manager_class_init",
+                "start": 2460,
+                "end": 2502
+            },
+            {
+                "name": "get_sessions_for_unix_user_iter",
+                "start": 2509,
+                "end": 2522
+            },
+            {
+                "name": "ck_manager_get_sessions_for_unix_user",
+                "start": 2524,
+                "end": 2546
+            },
+            {
+                "name": "ck_manager_get_sessions_for_user",
+                "start": 2549,
+                "end": 2555
+            },
+            {
+                "name": "listify_seat_ids",
+                "start": 2557,
+                "end": 2563
+            },
+            {
+                "name": "ck_manager_get_seats",
+                "start": 2565,
+                "end": 2580
+            },
+            {
+                "name": "listify_session_ids",
+                "start": 2582,
+                "end": 2588
+            },
+            {
+                "name": "ck_manager_get_sessions",
+                "start": 2590,
+                "end": 2605
+            },
+            {
+                "name": "add_seat_for_file",
+                "start": 2607,
+                "end": 2642
+            },
+            {
+                "name": "load_seats_from_dir",
+                "start": 2644,
+                "end": 2673
+            },
+            {
+                "name": "create_seats",
+                "start": 2675,
+                "end": 2679
+            },
+            {
+                "name": "ck_manager_init",
+                "start": 2681,
+                "end": 2709
+            },
+            {
+                "name": "ck_manager_finalize",
+                "start": 2711,
+                "end": 2735
+            },
+            {
+                "name": "ck_manager_new",
+                "start": 2737,
+                "end": 2756
+            }
+        ],
+        "src/ck-seat-glue.h": [
+            {
+                "name": "dbus_glib_marshal_ck_seat_BOOLEAN__POINTER_POINTER",
+                "start": 59,
+                "end": 64
+            },
+            {
+                "name": "dbus_glib_marshal_ck_seat_BOOLEAN__POINTER_POINTER",
+                "start": 65,
+                "end": 103
+            },
+            {
+                "name": "dbus_glib_marshal_ck_seat_VOID__BOXED_POINTER",
+                "start": 106,
+                "end": 111
+            },
+            {
+                "name": "dbus_glib_marshal_ck_seat_VOID__BOXED_POINTER",
+                "start": 112,
+                "end": 146
+            }
+        ],
+        "src/ck-seat.c": [
+            {
+                "name": "activated_cb",
+                "start": 170,
+                "end": 188
+            },
+            {
+                "name": "_seat_activate_session",
+                "start": 190,
+                "end": 271
+            },
+            {
+                "name": "ck_seat_activate_session",
+                "start": 282,
+                "end": 303
+            },
+            {
+                "name": "match_session_display_device",
+                "start": 305,
+                "end": 333
+            },
+            {
+                "name": "match_session_x11_display_device",
+                "start": 335,
+                "end": 363
+            },
+            {
+                "name": "find_all_func",
+                "start": 372,
+                "end": 383
+            },
+            {
+                "name": "hash_table_find_all",
+                "start": 385,
+                "end": 400
+            },
+            {
+                "name": "find_sessions_for_display_device",
+                "start": 402,
+                "end": 412
+            },
+            {
+                "name": "find_sessions_for_x11_display_device",
+                "start": 414,
+                "end": 424
+            },
+            {
+                "name": "sort_sessions_by_age",
+                "start": 426,
+                "end": 443
+            },
+            {
+                "name": "find_oldest_session",
+                "start": 445,
+                "end": 452
+            },
+            {
+                "name": "find_session_for_display_device",
+                "start": 454,
+                "end": 479
+            },
+            {
+                "name": "change_active_session",
+                "start": 481,
+                "end": 525
+            },
+            {
+                "name": "update_active_vt",
+                "start": 527,
+                "end": 542
+            },
+            {
+                "name": "maybe_update_active_session",
+                "start": 544,
+                "end": 556
+            },
+            {
+                "name": "session_activate",
+                "start": 558,
+                "end": 567
+            },
+            {
+                "name": "ck_seat_remove_session",
+                "start": 569,
+                "end": 628
+            },
+            {
+                "name": "ck_seat_add_session",
+                "start": 630,
+                "end": 661
+            },
+            {
+                "name": "ck_seat_can_activate_sessions",
+                "start": 663,
+                "end": 675
+            },
+            {
+                "name": "ck_seat_has_device",
+                "start": 677,
+                "end": 686
+            },
+            {
+                "name": "ck_seat_add_device",
+                "start": 688,
+                "end": 711
+            },
+            {
+                "name": "ck_seat_remove_device",
+                "start": 713,
+                "end": 727
+            },
+            {
+                "name": "ck_seat_get_kind",
+                "start": 729,
+                "end": 741
+            },
+            {
+                "name": "ck_seat_get_id",
+                "start": 743,
+                "end": 755
+            },
+            {
+                "name": "active_vt_changed",
+                "start": 757,
+                "end": 765
+            },
+            {
+                "name": "ck_seat_register",
+                "start": 767,
+                "end": 787
+            },
+            {
+                "name": "listify_session_ids",
+                "start": 789,
+                "end": 795
+            },
+            {
+                "name": "ck_seat_get_sessions",
+                "start": 797,
+                "end": 812
+            },
+            {
+                "name": "copy_devices",
+                "start": 814,
+                "end": 819
+            },
+            {
+                "name": "ck_seat_get_devices",
+                "start": 829,
+                "end": 844
+            },
+            {
+                "name": "_ck_seat_set_id",
+                "start": 846,
+                "end": 852
+            },
+            {
+                "name": "_ck_seat_set_kind",
+                "start": 854,
+                "end": 859
+            },
+            {
+                "name": "ck_seat_set_property",
+                "start": 861,
+                "end": 882
+            },
+            {
+                "name": "ck_seat_get_property",
+                "start": 884,
+                "end": 905
+            },
+            {
+                "name": "ck_seat_constructor",
+                "start": 907,
+                "end": 927
+            },
+            {
+                "name": "ck_seat_class_init",
+                "start": 929,
+                "end": 1031
+            },
+            {
+                "name": "ck_seat_init",
+                "start": 1033,
+                "end": 1043
+            },
+            {
+                "name": "ck_seat_finalize",
+                "start": 1045,
+                "end": 1070
+            },
+            {
+                "name": "ck_seat_new",
+                "start": 1072,
+                "end": 1084
+            },
+            {
+                "name": "ck_seat_new_with_devices",
+                "start": 1086,
+                "end": 1106
+            },
+            {
+                "name": "ck_seat_new_from_file",
+                "start": 1108,
+                "end": 1190
+            },
+            {
+                "name": "env_add_session_info",
+                "start": 1192,
+                "end": 1249
+            },
+            {
+                "name": "ck_seat_run_programs",
+                "start": 1251,
+                "end": 1287
+            },
+            {
+                "name": "dump_seat_session_iter",
+                "start": 1289,
+                "end": 1308
+            },
+            {
+                "name": "ck_seat_dump",
+                "start": 1310,
+                "end": 1373
+            }
+        ],
+        "src/ck-file-monitor-inotify.c": [
+            {
+                "name": "ck_file_monitor_error_quark",
+                "start": 100,
+                "end": 109
+            },
+            {
+                "name": "our_event_mask_to_inotify_mask",
+                "start": 113,
+                "end": 137
+            },
+            {
+                "name": "imask_to_string",
+                "start": 139,
+                "end": 190
+            },
+            {
+                "name": "file_monitor_add_watch_for_path",
+                "start": 192,
+                "end": 227
+            },
+            {
+                "name": "monitor_release_watch",
+                "start": 229,
+                "end": 241
+            },
+            {
+                "name": "file_monitor_remove_watch",
+                "start": 243,
+                "end": 256
+            },
+            {
+                "name": "remove_watch_foreach",
+                "start": 258,
+                "end": 265
+            },
+            {
+                "name": "close_inotify",
+                "start": 267,
+                "end": 299
+            },
+            {
+                "name": "emit_events_in_idle",
+                "start": 301,
+                "end": 353
+            },
+            {
+                "name": "emit_removals_in_idle",
+                "start": 355,
+                "end": 383
+            },
+            {
+                "name": "file_monitor_queue_event",
+                "start": 385,
+                "end": 394
+            },
+            {
+                "name": "queue_watch_event",
+                "start": 396,
+                "end": 411
+            },
+            {
+                "name": "queue_remove_event",
+                "start": 413,
+                "end": 422
+            },
+            {
+                "name": "handle_inotify_event",
+                "start": 424,
+                "end": 464
+            },
+            {
+                "name": "inotify_data_pending",
+                "start": 466,
+                "end": 535
+            },
+            {
+                "name": "file_monitor_add_notify_for_path",
+                "start": 537,
+                "end": 565
+            },
+            {
+                "name": "file_monitor_remove_notify",
+                "start": 567,
+                "end": 594
+            },
+            {
+                "name": "ck_file_monitor_add_notify",
+                "start": 596,
+                "end": 622
+            },
+            {
+                "name": "ck_file_monitor_remove_notify",
+                "start": 624,
+                "end": 633
+            },
+            {
+                "name": "ck_file_monitor_class_init",
+                "start": 635,
+                "end": 643
+            },
+            {
+                "name": "setup_inotify",
+                "start": 646,
+                "end": 683
+            },
+            {
+                "name": "ck_file_monitor_init",
+                "start": 685,
+                "end": 695
+            },
+            {
+                "name": "ck_file_monitor_finalize",
+                "start": 697,
+                "end": 716
+            },
+            {
+                "name": "ck_file_monitor_new",
+                "start": 718,
+                "end": 731
+            }
+        ],
+        "src/ck-sysdeps-linux.c": [
+            {
+                "name": "load_drivers",
+                "start": 104,
+                "end": 175
+            },
+            {
+                "name": "driver_name",
+                "start": 179,
+                "end": 232
+            },
+            {
+                "name": "link_name",
+                "start": 235,
+                "end": 273
+            },
+            {
+                "name": "ck_process_stat_get_ppid",
+                "start": 275,
+                "end": 281
+            },
+            {
+                "name": "ck_process_stat_get_cmd",
+                "start": 283,
+                "end": 289
+            },
+            {
+                "name": "ck_process_stat_get_tty",
+                "start": 292,
+                "end": 336
+            },
+            {
+                "name": "stat2proc",
+                "start": 340,
+                "end": 402
+            },
+            {
+                "name": "ck_process_stat_new_for_unix_pid",
+                "start": 404,
+                "end": 444
+            },
+            {
+                "name": "ck_process_stat_free",
+                "start": 446,
+                "end": 450
+            },
+            {
+                "name": "ck_unix_pid_get_env_hash",
+                "start": 452,
+                "end": 511
+            },
+            {
+                "name": "ck_unix_pid_get_env",
+                "start": 513,
+                "end": 571
+            },
+            {
+                "name": "ck_unix_pid_get_uid",
+                "start": 573,
+                "end": 594
+            },
+            {
+                "name": "ck_unix_pid_get_ppid",
+                "start": 596,
+                "end": 618
+            },
+            {
+                "name": "ck_unix_pid_get_login_session_id",
+                "start": 620,
+                "end": 684
+            },
+            {
+                "name": "ck_get_max_num_consoles",
+                "start": 686,
+                "end": 694
+            },
+            {
+                "name": "ck_supports_activatable_consoles",
+                "start": 696,
+                "end": 700
+            },
+            {
+                "name": "ck_get_console_device_for_num",
+                "start": 702,
+                "end": 710
+            },
+            {
+                "name": "ck_get_console_num_from_device",
+                "start": 712,
+                "end": 735
+            },
+            {
+                "name": "ck_get_active_console_num",
+                "start": 737,
+                "end": 778
+            }
+        ],
+        "src/ck-tty-idle-monitor.h": [
+            {
+                "name": "ck_tty_idle_monitor_set_threshold",
+                "start": 64,
+                "end": 65
+            }
+        ],
+        "src/ck-session-glue.h": [
+            {
+                "name": "dbus_glib_marshal_ck_session_BOOLEAN__POINTER_POINTER",
+                "start": 63,
+                "end": 68
+            },
+            {
+                "name": "dbus_glib_marshal_ck_session_BOOLEAN__POINTER_POINTER",
+                "start": 69,
+                "end": 107
+            },
+            {
+                "name": "dbus_glib_marshal_ck_session_VOID__BOOLEAN_POINTER",
+                "start": 110,
+                "end": 115
+            },
+            {
+                "name": "dbus_glib_marshal_ck_session_VOID__BOOLEAN_POINTER",
+                "start": 116,
+                "end": 150
+            }
+        ],
+        "src/test-tty-idle-monitor.c": [
+            {
+                "name": "idle_changed_cb",
+                "start": 76,
+                "end": 47
+            },
+            {
+                "name": "is_console",
+                "start": 49,
+                "end": 67
+            },
+            {
+                "name": "main",
+                "start": 69,
+                "end": 109
+            }
+        ],
+        "src/ck-log.h": [
+            {
+                "name": "ck_log_default_handler",
+                "start": 28,
+                "end": 33
+            },
+            "name",
+            "start",
+            "end"
+        ],
+        "src/ck-log.c": [
+            {
+                "name": "log_level_to_priority_and_prefix",
+                "start": 40,
+                "end": 96
+            },
+            {
+                "name": "ck_log_default_handler",
+                "start": 98,
+                "end": 151
+            },
+            {
+                "name": "ck_log_toggle_debug",
+                "start": 153,
+                "end": 163
+            },
+            {
+                "name": "ck_log_set_debug",
+                "start": 165,
+                "end": 175
+            },
+            {
+                "name": "ck_log_init",
+                "start": 177,
+                "end": 195
+            },
+            {
+                "name": "ck_log_shutdown",
+                "start": 197,
+                "end": 202
+            }
+        ],
+        "src/ck-tty-idle-monitor.c": [
+            {
+                "name": "schedule_tty_check",
+                "start": 73,
+                "end": 74
+            }
+        ],
+        "src/ck-sysdeps-solaris.c": [
+            {
+                "name": "ck_process_stat_get_ppid",
+                "start": 97,
+                "end": 103
+            },
+            {
+                "name": "ck_process_stat_get_cmd",
+                "start": 105,
+                "end": 111
+            },
+            {
+                "name": "ck_process_stat_get_tty",
+                "start": 114,
+                "end": 126
+            },
+            {
+                "name": "get_system_vt_major",
+                "start": 129,
+                "end": 146
+            },
+            {
+                "name": "stat2proc",
+                "start": 149,
+                "end": 213
+            },
+            {
+                "name": "ck_process_stat_new_for_unix_pid",
+                "start": 215,
+                "end": 244
+            },
+            {
+                "name": "ck_process_stat_free",
+                "start": 246,
+                "end": 250
+            },
+            {
+                "name": "ck_unix_pid_get_env_hash",
+                "start": 252,
+                "end": 293
+            },
+            {
+                "name": "ck_unix_pid_get_env",
+                "start": 295,
+                "end": 312
+            },
+            {
+                "name": "ck_unix_pid_get_uid",
+                "start": 314,
+                "end": 335
+            },
+            {
+                "name": "ck_unix_pid_get_ppid",
+                "start": 337,
+                "end": 359
+            },
+            {
+                "name": "ck_unix_pid_get_login_session_id",
+                "start": 361,
+                "end": 368
+            },
+            {
+                "name": "ck_get_max_num_consoles",
+                "start": 370,
+                "end": 421
+            },
+            {
+                "name": "ck_supports_activatable_consoles",
+                "start": 423,
+                "end": 438
+            },
+            {
+                "name": "ck_get_console_device_for_num",
+                "start": 440,
+                "end": 451
+            },
+            {
+                "name": "ck_get_console_num_from_device",
+                "start": 453,
+                "end": 478
+            },
+            {
+                "name": "ck_get_active_console_num",
+                "start": 480,
+                "end": 531
+            }
+        ],
+        "src/ck-run-programs.c": [
+            {
+                "name": "_child_data_new",
+                "start": 56,
+                "end": 66
+            },
+            {
+                "name": "_child_data_ref",
+                "start": 68,
+                "end": 73
+            },
+            {
+                "name": "_child_data_unref",
+                "start": 76,
+                "end": 85
+            },
+            {
+                "name": "_child_watch",
+                "start": 88,
+                "end": 101
+            },
+            {
+                "name": "_child_timeout",
+                "start": 103,
+                "end": 113
+            },
+            {
+                "name": "ck_run_programs",
+                "start": 124,
+                "end": 231
+            }
+        ],
+        "src/ck-marshal.c": [
+            {
+                "name": "ck_marshal_VOID__UINT_STRING",
+                "start": 33,
+                "end": 88
+            },
+            {
+                "name": "ck_marshal_BOOLEAN__POINTER",
+                "start": 91,
+                "end": 127
+            },
+            {
+                "name": "ck_marshal_VOID__OBJECT_OBJECT",
+                "start": 130,
+                "end": 164
+            }
+        ],
+        "src/ck-log-event.c": [
+            {
+                "name": "event_seat_added_free",
+                "start": 157,
+                "end": 38
+            },
+            {
+                "name": "event_seat_removed_free",
+                "start": 40,
+                "end": 47
+            },
+            {
+                "name": "event_system_stop_free",
+                "start": 49,
+                "end": 53
+            },
+            {
+                "name": "event_system_restart_free",
+                "start": 55,
+                "end": 59
+            },
+            {
+                "name": "event_system_start_free",
+                "start": 62,
+                "end": 68
+            },
+            {
+                "name": "event_seat_session_added_free",
+                "start": 70,
+                "end": 92
+            },
+            {
+                "name": "event_seat_session_removed_free",
+                "start": 94,
+                "end": 116
+            },
+            {
+                "name": "event_seat_active_session_changed_free",
+                "start": 118,
+                "end": 128
+            },
+            {
+                "name": "event_seat_device_added_free",
+                "start": 130,
+                "end": 141
+            },
+            {
+                "name": "event_seat_device_removed_free",
+                "start": 143,
+                "end": 154
+            },
+            {
+                "name": "event_seat_added_copy",
+                "start": 156,
+                "end": 165
+            },
+            {
+                "name": "event_seat_removed_copy",
+                "start": 167,
+                "end": 176
+            },
+            {
+                "name": "event_system_stop_copy",
+                "start": 178,
+                "end": 184
+            },
+            {
+                "name": "event_system_restart_copy",
+                "start": 186,
+                "end": 192
+            },
+            {
+                "name": "event_system_start_copy",
+                "start": 195,
+                "end": 204
+            },
+            {
+                "name": "event_seat_session_added_copy",
+                "start": 206,
+                "end": 223
+            },
+            {
+                "name": "event_seat_session_removed_copy",
+                "start": 225,
+                "end": 242
+            },
+            {
+                "name": "event_seat_active_session_changed_copy",
+                "start": 244,
+                "end": 253
+            },
+            {
+                "name": "event_seat_device_added_copy",
+                "start": 255,
+                "end": 265
+            },
+            {
+                "name": "event_seat_device_removed_copy",
+                "start": 267,
+                "end": 277
+            },
+            {
+                "name": "ck_log_event_copy",
+                "start": 279,
+                "end": 340
+            },
+            {
+                "name": "ck_log_event_free",
+                "start": 342,
+                "end": 382
+            },
+            {
+                "name": "add_log_for_seat_added",
+                "start": 384,
+                "end": 395
+            },
+            {
+                "name": "add_log_for_seat_removed",
+                "start": 397,
+                "end": 408
+            },
+            {
+                "name": "add_log_for_seat_session_added",
+                "start": 410,
+                "end": 429
+            },
+            {
+                "name": "add_log_for_seat_session_removed",
+                "start": 431,
+                "end": 450
+            },
+            {
+                "name": "add_log_for_system_stop",
+                "start": 452,
+                "end": 459
+            },
+            {
+                "name": "add_log_for_system_restart",
+                "start": 461,
+                "end": 468
+            },
+            {
+                "name": "add_log_for_system_start",
+                "start": 471,
+                "end": 482
+            },
+            {
+                "name": "add_log_for_seat_active_session_changed",
+                "start": 484,
+                "end": 495
+            },
+            {
+                "name": "add_log_for_seat_device_added",
+                "start": 497,
+                "end": 509
+            },
+            {
+                "name": "add_log_for_seat_device_removed",
+                "start": 511,
+                "end": 523
+            },
+            {
+                "name": "event_type_to_name",
+                "start": 525,
+                "end": 565
+            },
+            {
+                "name": "event_name_to_type",
+                "start": 567,
+                "end": 600
+            },
+            {
+                "name": "add_log_for_any",
+                "start": 602,
+                "end": 611
+            },
+            {
+                "name": "ck_log_event_to_string",
+                "start": 613,
+                "end": 655
+            },
+            {
+                "name": "skip_header",
+                "start": 657,
+                "end": 679
+            },
+            {
+                "name": "parse_value_as_ulong",
+                "start": 681,
+                "end": 697
+            },
+            {
+                "name": "parse_log_for_seat_added",
+                "start": 699,
+                "end": 757
+            },
+            {
+                "name": "parse_log_for_seat_removed",
+                "start": 759,
+                "end": 817
+            },
+            {
+                "name": "parse_log_for_system_stop",
+                "start": 819,
+                "end": 840
+            },
+            {
+                "name": "parse_log_for_system_restart",
+                "start": 842,
+                "end": 863
+            },
+            {
+                "name": "parse_log_for_system_start",
+                "start": 865,
+                "end": 917
+            },
+            {
+                "name": "parse_log_for_seat_session_added",
+                "start": 919,
+                "end": 992
+            },
+            {
+                "name": "parse_log_for_seat_session_removed",
+                "start": 994,
+                "end": 1067
+            },
+            {
+                "name": "parse_log_for_seat_active_session_changed",
+                "start": 1069,
+                "end": 1119
+            },
+            {
+                "name": "parse_log_for_seat_device_added",
+                "start": 1121,
+                "end": 1172
+            },
+            {
+                "name": "parse_log_for_seat_device_removed",
+                "start": 1174,
+                "end": 1225
+            },
+            {
+                "name": "parse_log_for_any",
+                "start": 1227,
+                "end": 1256
+            },
+            {
+                "name": "ck_log_event_fill_from_string",
+                "start": 1258,
+                "end": 1315
+            },
+            {
+                "name": "ck_log_event_new_from_string",
+                "start": 1317,
+                "end": 1333
+            }
+        ],
+        "src/main.c": [
+            {
+                "name": "debug_log_io_cb",
+                "start": 192,
+                "end": 205
+            },
+            {
+                "name": "sigusr1_handler",
+                "start": 207,
+                "end": 212
+            },
+            {
+                "name": "setup_debug_log_signals",
+                "start": 214,
+                "end": 231
+            },
+            {
+                "name": "setup_debug_log",
+                "start": 233,
+                "end": 239
+            },
+            {
+                "name": "create_pid_file",
+                "start": 241,
+                "end": 275
+            },
+            {
+                "name": "main",
+                "start": 277,
+                "end": 386
+            }
+        ]
+    }
+}

@@ -1,0 +1,512 @@
+{
+    "preload-0.6.4": {
+        "src/readahead.c": [
+            {
+                "name": "set_block",
+                "start": 34,
+                "end": 66
+            },
+            {
+                "name": "map_path_compare",
+                "start": 70,
+                "end": 83
+            },
+            {
+                "name": "map_block_compare",
+                "start": 86,
+                "end": 101
+            },
+            {
+                "name": "wait_for_children",
+                "start": 105,
+                "end": 115
+            },
+            {
+                "name": "process_file",
+                "start": 117,
+                "end": 165
+            },
+            {
+                "name": "sort_by_block_or_inode",
+                "start": 167,
+                "end": 193
+            },
+            {
+                "name": "sort_files",
+                "start": 195,
+                "end": 218
+            },
+            {
+                "name": "preload_readahead",
+                "start": 220,
+                "end": 263
+            }
+        ],
+        "src/proc.c": [
+            {
+                "name": "sanitize_file",
+                "start": 45,
+                "end": 65
+            },
+            {
+                "name": "accept_file",
+                "start": 67,
+                "end": 86
+            },
+            {
+                "name": "proc_get_maps",
+                "start": 88,
+                "end": 148
+            },
+            {
+                "name": "all_digits",
+                "start": 150,
+                "end": 159
+            },
+            {
+                "name": "proc_foreach",
+                "start": 161,
+                "end": 203
+            },
+            {
+                "name": "proc_get_memstat",
+                "start": 231,
+                "end": 262
+            }
+        ],
+        "src/cmdline.c": [
+            {
+                "name": "preload_cmdline_parse",
+                "start": 77,
+                "end": 124
+            },
+            {
+                "name": "version_func",
+                "start": 129,
+                "end": 139
+            },
+            {
+                "name": "help_func",
+                "start": 142,
+                "end": 175
+            }
+        ],
+        "src/state.c": [
+            {
+                "name": "preload_map_new",
+                "start": 46,
+                "end": 61
+            },
+            {
+                "name": "preload_map_free",
+                "start": 64,
+                "end": 74
+            },
+            {
+                "name": "preload_state_register_map",
+                "start": 77,
+                "end": 85
+            },
+            {
+                "name": "preload_state_unregister_map",
+                "start": 88,
+                "end": 95
+            },
+            {
+                "name": "preload_map_ref",
+                "start": 98,
+                "end": 104
+            },
+            {
+                "name": "preload_map_unref",
+                "start": 107,
+                "end": 118
+            },
+            {
+                "name": "preload_map_get_size",
+                "start": 121,
+                "end": 127
+            },
+            {
+                "name": "preload_map_hash",
+                "start": 130,
+                "end": 139
+            },
+            {
+                "name": "preload_map_equal",
+                "start": 142,
+                "end": 146
+            },
+            {
+                "name": "preload_exemap_new",
+                "start": 151,
+                "end": 163
+            },
+            {
+                "name": "preload_exemap_free",
+                "start": 166,
+                "end": 174
+            },
+            {
+                "name": "exe_exemap_callback",
+                "start": 183,
+                "end": 187
+            },
+            {
+                "name": "exe_exemap_foreach",
+                "start": 189,
+                "end": 194
+            },
+            {
+                "name": "preload_exemap_foreach",
+                "start": 196,
+                "end": 203
+            },
+            {
+                "name": "preload_markov_new",
+                "start": 207,
+                "end": 243
+            },
+            {
+                "name": "preload_markov_state_changed",
+                "start": 246,
+                "end": 267
+            },
+            {
+                "name": "preload_markov_free",
+                "start": 270,
+                "end": 285
+            },
+            {
+                "name": "exe_markov_callback",
+                "start": 295,
+                "end": 301
+            },
+            {
+                "name": "exe_markov_foreach",
+                "start": 303,
+                "end": 308
+            },
+            {
+                "name": "preload_markov_foreach",
+                "start": 310,
+                "end": 317
+            },
+            {
+                "name": "preload_markov_correlation",
+                "start": 355,
+                "end": 376
+            },
+            {
+                "name": "exe_add_map_size",
+                "start": 381,
+                "end": 385
+            },
+            {
+                "name": "preload_exe_new",
+                "start": 388,
+                "end": 412
+            },
+            {
+                "name": "preload_exe_free",
+                "start": 415,
+                "end": 430
+            },
+            {
+                "name": "preload_exe_map_new",
+                "start": 433,
+                "end": 445
+            },
+            {
+                "name": "shift_preload_markov_new",
+                "start": 450,
+                "end": 455
+            },
+            {
+                "name": "preload_state_register_exe",
+                "start": 458,
+                "end": 468
+            },
+            {
+                "name": "preload_state_unregister_exe",
+                "start": 471,
+                "end": 480
+            },
+            {
+                "name": "read_map",
+                "start": 522,
+                "end": 560
+            },
+            {
+                "name": "read_badexe",
+                "start": 563,
+                "end": 586
+            },
+            {
+                "name": "read_exe",
+                "start": 589,
+                "end": 628
+            },
+            {
+                "name": "read_exemap",
+                "start": 631,
+                "end": 656
+            },
+            {
+                "name": "read_markov",
+                "start": 659,
+                "end": 713
+            },
+            {
+                "name": "set_running_process_callback",
+                "start": 716,
+                "end": 726
+            },
+            {
+                "name": "set_markov_state_callback",
+                "start": 728,
+                "end": 732
+            },
+            {
+                "name": "read_state",
+                "start": 734,
+                "end": 833
+            },
+            {
+                "name": "preload_state_load",
+                "start": 836,
+                "end": 876
+            },
+            {
+                "name": "write_header",
+                "start": 898,
+                "end": 907
+            },
+            {
+                "name": "write_map",
+                "start": 910,
+                "end": 927
+            },
+            {
+                "name": "write_badexe",
+                "start": 930,
+                "end": 947
+            },
+            {
+                "name": "write_exe",
+                "start": 950,
+                "end": 967
+            },
+            {
+                "name": "write_exemap",
+                "start": 970,
+                "end": 979
+            },
+            {
+                "name": "write_markov",
+                "start": 982,
+                "end": 1009
+            },
+            {
+                "name": "write_state",
+                "start": 1012,
+                "end": 1036
+            },
+            {
+                "name": "true_func",
+                "start": 1039,
+                "end": 1043
+            },
+            {
+                "name": "preload_state_save",
+                "start": 1046,
+                "end": 1093
+            },
+            {
+                "name": "preload_state_free",
+                "start": 1099,
+                "end": 1115
+            },
+            {
+                "name": "preload_state_dump_log",
+                "start": 1118,
+                "end": 1130
+            },
+            {
+                "name": "preload_state_tick2",
+                "start": 1145,
+                "end": 1159
+            },
+            {
+                "name": "preload_state_tick",
+                "start": 1162,
+                "end": 1183
+            },
+            {
+                "name": "preload_state_autosave",
+                "start": 1190,
+                "end": 1197
+            },
+            {
+                "name": "preload_state_run",
+                "start": 1200,
+                "end": 1208
+            }
+        ],
+        "src/preload.c": [
+            {
+                "name": "daemonize",
+                "start": 53,
+                "end": 82
+            },
+            {
+                "name": "sig_handler_sync",
+                "start": 88,
+                "end": 109
+            },
+            {
+                "name": "sig_handler",
+                "start": 111,
+                "end": 115
+            },
+            {
+                "name": "set_sig_handlers",
+                "start": 117,
+                "end": 128
+            },
+            {
+                "name": "main",
+                "start": 131,
+                "end": 157
+            }
+        ],
+        "src/conf.c": [
+            {
+                "name": "set_default_conf",
+                "start": 33,
+                "end": 46
+            },
+            {
+                "name": "preload_conf_load",
+                "start": 48,
+                "end": 97
+            },
+            {
+                "name": "preload_conf_dump_log",
+                "start": 99,
+                "end": 137
+            }
+        ],
+        "src/spy.c": [
+            {
+                "name": "running_process_callback",
+                "start": 37,
+                "end": 62
+            },
+            {
+                "name": "already_running_exe_callback",
+                "start": 67,
+                "end": 74
+            },
+            {
+                "name": "new_exe_callback",
+                "start": 79,
+                "end": 111
+            },
+            {
+                "name": "running_markov_inc_time",
+                "start": 114,
+                "end": 119
+            },
+            {
+                "name": "running_exe_inc_time",
+                "start": 121,
+                "end": 126
+            },
+            {
+                "name": "exe_changed_callback",
+                "start": 130,
+                "end": 135
+            },
+            {
+                "name": "preload_spy_scan",
+                "start": 143,
+                "end": 161
+            },
+            {
+                "name": "preload_spy_update_model",
+                "start": 165,
+                "end": 183
+            }
+        ],
+        "src/prophet.c": [
+            {
+                "name": "markov_bid_for_exe",
+                "start": 50,
+                "end": 92
+            },
+            {
+                "name": "markov_bid_in_exes",
+                "start": 95,
+                "end": 109
+            },
+            {
+                "name": "map_zero_prob",
+                "start": 112,
+                "end": 116
+            },
+            {
+                "name": "map_prob_compare",
+                "start": 119,
+                "end": 124
+            },
+            {
+                "name": "exe_zero_prob",
+                "start": 127,
+                "end": 131
+            },
+            {
+                "name": "exemap_bid_in_maps",
+                "start": 148,
+                "end": 159
+            },
+            {
+                "name": "exe_prob_print",
+                "start": 163,
+                "end": 168
+            },
+            {
+                "name": "map_prob_print",
+                "start": 172,
+                "end": 176
+            },
+            {
+                "name": "preload_prophet_readahead",
+                "start": 185,
+                "end": 227
+            },
+            {
+                "name": "preload_prophet_predict",
+                "start": 230,
+                "end": 251
+            }
+        ],
+        "src/log.c": [
+            {
+                "name": "preload_log",
+                "start": 31,
+                "end": 60
+            },
+            {
+                "name": "preload_log_init",
+                "start": 62,
+                "end": 92
+            },
+            {
+                "name": "preload_log_reopen",
+                "start": 94,
+                "end": 119
+            }
+        ]
+    }
+}

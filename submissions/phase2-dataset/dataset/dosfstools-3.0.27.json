@@ -1,0 +1,571 @@
+{
+    "dosfstools-3.0.27": {
+        "src/boot.c": [
+            {
+                "name": "get_media_descr",
+                "start": 67,
+                "end": 76
+            },
+            {
+                "name": "dump_boot",
+                "start": 78,
+                "end": 128
+            },
+            {
+                "name": "check_backup_boot",
+                "start": 130,
+                "end": 206
+            },
+            {
+                "name": "init_fsinfo",
+                "start": 208,
+                "end": 215
+            },
+            {
+                "name": "read_fsinfo",
+                "start": 217,
+                "end": 284
+            },
+            {
+                "name": "print_fat_dirty_state",
+                "start": 286,
+                "end": 297
+            },
+            {
+                "name": "check_fat_state_bit",
+                "start": 299,
+                "end": 322
+            },
+            {
+                "name": "read_boot",
+                "start": 324,
+                "end": 470
+            },
+            {
+                "name": "write_boot_label",
+                "start": 472,
+                "end": 500
+            },
+            {
+                "name": "find_volume_de",
+                "start": 502,
+                "end": 530
+            },
+            {
+                "name": "write_volume_label",
+                "start": 532,
+                "end": 565
+            },
+            {
+                "name": "write_label",
+                "start": 567,
+                "end": 576
+            }
+        ],
+        "src/mkfs.fat.c": [
+            {
+                "name": "cdiv",
+                "start": 100,
+                "end": 103
+            },
+            {
+                "name": "fatal_error",
+                "start": 314,
+                "end": 318
+            },
+            {
+                "name": "mark_FAT_cluster",
+                "start": 322,
+                "end": 357
+            },
+            {
+                "name": "mark_FAT_sector",
+                "start": 361,
+                "end": 371
+            },
+            {
+                "name": "do_check",
+                "start": 375,
+                "end": 392
+            },
+            {
+                "name": "alarm_intr",
+                "start": 397,
+                "end": 411
+            },
+            {
+                "name": "check_blocks",
+                "start": 413,
+                "end": 453
+            },
+            {
+                "name": "get_list_blocks",
+                "start": 455,
+                "end": 475
+            },
+            {
+                "name": "valid_offset",
+                "start": 480,
+                "end": 489
+            },
+            {
+                "name": "count_blocks",
+                "start": 493,
+                "end": 521
+            },
+            {
+                "name": "check_mount",
+                "start": 525,
+                "end": 536
+            },
+            {
+                "name": "establish_params",
+                "start": 540,
+                "end": 723
+            },
+            {
+                "name": "align_object",
+                "start": 729,
+                "end": 735
+            },
+            {
+                "name": "setup_tables",
+                "start": 739,
+                "end": 1288
+            },
+            {
+                "name": "write_tables",
+                "start": 1314,
+                "end": 1358
+            },
+            {
+                "name": "usage",
+                "start": 1362,
+                "end": 1371
+            },
+            {
+                "name": "check_atari",
+                "start": 1377,
+                "end": 1399
+            },
+            {
+                "name": "main",
+                "start": 1404,
+                "end": 1751
+            }
+        ],
+        "src/common.c": [
+            {
+                "name": "die",
+                "start": 40,
+                "end": 49
+            },
+            {
+                "name": "pdie",
+                "start": 51,
+                "end": 60
+            },
+            {
+                "name": "alloc",
+                "start": 62,
+                "end": 70
+            },
+            {
+                "name": "qalloc",
+                "start": 72,
+                "end": 80
+            },
+            {
+                "name": "qfree",
+                "start": 82,
+                "end": 92
+            },
+            {
+                "name": "min",
+                "start": 94,
+                "end": 97
+            },
+            {
+                "name": "get_key",
+                "start": 99,
+                "end": 119
+            }
+        ],
+        "src/io.c": [
+            {
+                "name": "llseek",
+                "start": 75,
+                "end": 78
+            },
+            {
+                "name": "fs_open",
+                "start": 81,
+                "end": 110
+            },
+            {
+                "name": "fs_read",
+                "start": 121,
+                "end": 146
+            },
+            {
+                "name": "fs_test",
+                "start": 148,
+                "end": 159
+            },
+            {
+                "name": "fs_write",
+                "start": 161,
+                "end": 185
+            },
+            {
+                "name": "fs_flush",
+                "start": 187,
+                "end": 208
+            },
+            {
+                "name": "fs_close",
+                "start": 210,
+                "end": 228
+            },
+            {
+                "name": "fs_changed",
+                "start": 230,
+                "end": 233
+            }
+        ],
+        "src/fat.c": [
+            {
+                "name": "get_fat",
+                "start": 46,
+                "end": 71
+            },
+            {
+                "name": "read_fat",
+                "start": 81,
+                "end": 164
+            },
+            {
+                "name": "set_fat",
+                "start": 179,
+                "end": 236
+            },
+            {
+                "name": "bad_cluster",
+                "start": 238,
+                "end": 244
+            },
+            {
+                "name": "next_cluster",
+                "start": 256,
+                "end": 267
+            },
+            {
+                "name": "cluster_start",
+                "start": 269,
+                "end": 273
+            },
+            {
+                "name": "set_owner",
+                "start": 284,
+                "end": 293
+            },
+            {
+                "name": "get_owner",
+                "start": 295,
+                "end": 301
+            },
+            {
+                "name": "fix_bad",
+                "start": 303,
+                "end": 319
+            },
+            {
+                "name": "reclaim_free",
+                "start": 321,
+                "end": 343
+            },
+            {
+                "name": "tag_free",
+                "start": 355,
+                "end": 396
+            },
+            {
+                "name": "reclaim_file",
+                "start": 403,
+                "end": 500
+            },
+            {
+                "name": "update_free",
+                "start": 502,
+                "end": 552
+            }
+        ],
+        "src/lfn.c": [
+            {
+                "name": "mbslen",
+                "start": 90,
+                "end": 94
+            },
+            {
+                "name": "wctombs",
+                "start": 96,
+                "end": 103
+            },
+            {
+                "name": "cnv_unicode",
+                "start": 108,
+                "end": 147
+            },
+            {
+                "name": "copy_lfn_part",
+                "start": 149,
+                "end": 154
+            },
+            {
+                "name": "clear_lfn_slots",
+                "start": 156,
+                "end": 171
+            },
+            {
+                "name": "lfn_fix_checksum",
+                "start": 173,
+                "end": 183
+            },
+            {
+                "name": "lfn_reset",
+                "start": 185,
+                "end": 194
+            },
+            {
+                "name": "lfn_add_slot",
+                "start": 198,
+                "end": 405
+            },
+            {
+                "name": "lfn_get",
+                "start": 409,
+                "end": 508
+            },
+            {
+                "name": "lfn_check_orphaned",
+                "start": 510,
+                "end": 527
+            }
+        ],
+        "src/check.c": [
+            {
+                "name": "alloc_rootdir_entry",
+                "start": 78,
+                "end": 196
+            },
+            {
+                "name": "path_name",
+                "start": 206,
+                "end": 225
+            },
+            {
+                "name": "date_dos2unix",
+                "start": 233,
+                "end": 246
+            },
+            {
+                "name": "file_stat",
+                "start": 248,
+                "end": 261
+            },
+            {
+                "name": "bad_name",
+                "start": 263,
+                "end": 334
+            },
+            {
+                "name": "lfn_remove",
+                "start": 336,
+                "end": 350
+            },
+            {
+                "name": "drop_file",
+                "start": 352,
+                "end": 363
+            },
+            {
+                "name": "truncate_file",
+                "start": 365,
+                "end": 381
+            },
+            {
+                "name": "auto_rename",
+                "start": 383,
+                "end": 429
+            },
+            {
+                "name": "rename_file",
+                "start": 431,
+                "end": 472
+            },
+            {
+                "name": "handle_dot",
+                "start": 474,
+                "end": 511
+            },
+            {
+                "name": "check_file",
+                "start": 513,
+                "end": 678
+            },
+            {
+                "name": "check_files",
+                "start": 680,
+                "end": 688
+            },
+            {
+                "name": "check_dir",
+                "start": 690,
+                "end": 831
+            },
+            {
+                "name": "test_file",
+                "start": 842,
+                "end": 897
+            },
+            {
+                "name": "undelete",
+                "start": 899,
+                "end": 931
+            },
+            {
+                "name": "new_dir",
+                "start": 933,
+                "end": 936
+            },
+            {
+                "name": "add_file",
+                "start": 951,
+                "end": 1004
+            },
+            {
+                "name": "scan_dir",
+                "start": 1008,
+                "end": 1032
+            },
+            {
+                "name": "subdirs",
+                "start": 1044,
+                "end": 1056
+            },
+            {
+                "name": "scan_root",
+                "start": 1066,
+                "end": 1086
+            }
+        ],
+        "src/file.c": [
+            {
+                "name": "put_char",
+                "start": 47,
+                "end": 59
+            },
+            {
+                "name": "file_name",
+                "start": 69,
+                "end": 93
+            },
+            {
+                "name": "file_cvt",
+                "start": 95,
+                "end": 154
+            },
+            {
+                "name": "file_add",
+                "start": 156,
+                "end": 198
+            },
+            {
+                "name": "file_cd",
+                "start": 200,
+                "end": 210
+            },
+            {
+                "name": "file_find",
+                "start": 212,
+                "end": 231
+            },
+            {
+                "name": "file_type",
+                "start": 235,
+                "end": 242
+            },
+            {
+                "name": "file_modify",
+                "start": 244,
+                "end": 265
+            },
+            {
+                "name": "report_unused",
+                "start": 267,
+                "end": 281
+            },
+            {
+                "name": "file_unused",
+                "start": 283,
+                "end": 286
+            }
+        ],
+        "src/fsck.fat.c": [
+            {
+                "name": "usage",
+                "start": 50,
+                "end": 74
+            },
+            {
+                "name": "check_atari",
+                "start": 80,
+                "end": 102
+            },
+            {
+                "name": "main",
+                "start": 104,
+                "end": 223
+            }
+        ],
+        "src/fatlabel.c": [
+            {
+                "name": "usage",
+                "start": 48,
+                "end": 55
+            },
+            {
+                "name": "check_atari",
+                "start": 61,
+                "end": 83
+            },
+            {
+                "name": "main",
+                "start": 85,
+                "end": 144
+            }
+        ],
+        "src/charconv.c": [
+            {
+                "name": "iconv_init_codepage",
+                "start": 7,
+                "end": 16
+            },
+            {
+                "name": "init_conversion",
+                "start": 25,
+                "end": 43
+            },
+            {
+                "name": "set_dos_codepage",
+                "start": 45,
+                "end": 48
+            },
+            {
+                "name": "dos_char_to_printable",
+                "start": 50,
+                "end": 59
+            }
+        ]
+    }
+}

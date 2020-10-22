@@ -1,0 +1,5757 @@
+{
+    "omega-rpg-0.90-pa9": {
+        "movef.c": [
+            {
+                "name": "p_movefunction",
+                "start": 9,
+                "end": 161
+            },
+            {
+                "name": "m_movefunction",
+                "start": 165,
+                "end": 194
+            }
+        ],
+        "util.c": [
+            {
+                "name": "setPlayerXY",
+                "start": 17,
+                "end": 21
+            },
+            {
+                "name": "inbounds",
+                "start": 24,
+                "end": 32
+            },
+            {
+                "name": "random_range",
+                "start": 35,
+                "end": 39
+            },
+            {
+                "name": "screenmody",
+                "start": 43,
+                "end": 46
+            },
+            {
+                "name": "screenmodx",
+                "start": 50,
+                "end": 53
+            },
+            {
+                "name": "offscreen",
+                "start": 56,
+                "end": 84
+            },
+            {
+                "name": "hitp",
+                "start": 88,
+                "end": 94
+            },
+            {
+                "name": "distance",
+                "start": 98,
+                "end": 101
+            },
+            {
+                "name": "unblocked",
+                "start": 105,
+                "end": 119
+            },
+            {
+                "name": "m_unblocked",
+                "start": 123,
+                "end": 189
+            },
+            {
+                "name": "view_unblocked",
+                "start": 194,
+                "end": 206
+            },
+            {
+                "name": "initdirs",
+                "start": 211,
+                "end": 231
+            },
+            {
+                "name": "do_los",
+                "start": 241,
+                "end": 293
+            },
+            {
+                "name": "do_object_los",
+                "start": 298,
+                "end": 356
+            },
+            {
+                "name": "los_p",
+                "start": 360,
+                "end": 406
+            },
+            {
+                "name": "view_los_p",
+                "start": 410,
+                "end": 456
+            },
+            {
+                "name": "inversedir",
+                "start": 460,
+                "end": 473
+            },
+            {
+                "name": "calc_points",
+                "start": 477,
+                "end": 516
+            },
+            {
+                "name": "hour",
+                "start": 520,
+                "end": 523
+            },
+            {
+                "name": "showminute",
+                "start": 526,
+                "end": 529
+            },
+            {
+                "name": "showhour",
+                "start": 532,
+                "end": 538
+            },
+            {
+                "name": "nighttime",
+                "start": 541,
+                "end": 544
+            },
+            {
+                "name": "getarticle",
+                "start": 546,
+                "end": 557
+            },
+            {
+                "name": "day",
+                "start": 559,
+                "end": 562
+            },
+            {
+                "name": "ordinal",
+                "start": 564,
+                "end": 573
+            },
+            {
+                "name": "month",
+                "start": 575,
+                "end": 593
+            },
+            {
+                "name": "spaceok",
+                "start": 598,
+                "end": 606
+            },
+            {
+                "name": "findspace_method_one",
+                "start": 608,
+                "end": 621
+            },
+            {
+                "name": "findspace_method_two",
+                "start": 623,
+                "end": 837
+            },
+            {
+                "name": "findspace",
+                "start": 839,
+                "end": 851
+            },
+            {
+                "name": "try_findspace",
+                "start": 855,
+                "end": 866
+            },
+            {
+                "name": "strprefix",
+                "start": 869,
+                "end": 880
+            },
+            {
+                "name": "strmem",
+                "start": 886,
+                "end": 892
+            },
+            {
+                "name": "calc_weight",
+                "start": 894,
+                "end": 911
+            },
+            {
+                "name": "strjoin",
+                "start": 914,
+                "end": 923
+            },
+            {
+                "name": "ok_to_free",
+                "start": 926,
+                "end": 932
+            },
+            {
+                "name": "free_obj",
+                "start": 935,
+                "end": 940
+            },
+            {
+                "name": "copy_obj",
+                "start": 942,
+                "end": 952
+            },
+            {
+                "name": "free_objlist",
+                "start": 954,
+                "end": 963
+            },
+            {
+                "name": "free_mons_and_objs",
+                "start": 965,
+                "end": 981
+            },
+            {
+                "name": "free_level",
+                "start": 984,
+                "end": 998
+            },
+            {
+                "name": "checkmalloc",
+                "start": 1002,
+                "end": 1029
+            },
+            {
+                "name": "salloc",
+                "start": 1032,
+                "end": 1037
+            },
+            {
+                "name": "cryptkey",
+                "start": 1110,
+                "end": 1117
+            },
+            {
+                "name": "init_perms",
+                "start": 1122,
+                "end": 1128
+            },
+            {
+                "name": "change_to_user_perms",
+                "start": 1136,
+                "end": 1145
+            },
+            {
+                "name": "change_to_game_perms",
+                "start": 1147,
+                "end": 1156
+            }
+        ],
+        "spell.c": [
+            {
+                "name": "s_nutrition",
+                "start": 8,
+                "end": 17
+            },
+            {
+                "name": "s_wish",
+                "start": 19,
+                "end": 36
+            },
+            {
+                "name": "s_firebolt",
+                "start": 38,
+                "end": 43
+            },
+            {
+                "name": "s_missile",
+                "start": 45,
+                "end": 50
+            },
+            {
+                "name": "s_teleport",
+                "start": 52,
+                "end": 55
+            },
+            {
+                "name": "s_disrupt",
+                "start": 57,
+                "end": 62
+            },
+            {
+                "name": "s_disintegrate",
+                "start": 65,
+                "end": 70
+            },
+            {
+                "name": "s_sleep",
+                "start": 73,
+                "end": 76
+            },
+            {
+                "name": "s_heal",
+                "start": 78,
+                "end": 81
+            },
+            {
+                "name": "s_dispel",
+                "start": 83,
+                "end": 86
+            },
+            {
+                "name": "s_breathe",
+                "start": 88,
+                "end": 91
+            },
+            {
+                "name": "s_invisible",
+                "start": 93,
+                "end": 96
+            },
+            {
+                "name": "s_warp",
+                "start": 99,
+                "end": 102
+            },
+            {
+                "name": "s_enchant",
+                "start": 104,
+                "end": 107
+            },
+            {
+                "name": "s_bless",
+                "start": 110,
+                "end": 113
+            },
+            {
+                "name": "s_restore",
+                "start": 116,
+                "end": 119
+            },
+            {
+                "name": "s_cure",
+                "start": 122,
+                "end": 125
+            },
+            {
+                "name": "s_truesight",
+                "start": 128,
+                "end": 131
+            },
+            {
+                "name": "s_hellfire",
+                "start": 134,
+                "end": 147
+            },
+            {
+                "name": "s_knowledge",
+                "start": 150,
+                "end": 153
+            },
+            {
+                "name": "s_hero",
+                "start": 156,
+                "end": 159
+            },
+            {
+                "name": "s_return",
+                "start": 162,
+                "end": 167
+            },
+            {
+                "name": "s_desecrate",
+                "start": 169,
+                "end": 172
+            },
+            {
+                "name": "s_haste",
+                "start": 175,
+                "end": 178
+            },
+            {
+                "name": "s_summon",
+                "start": 181,
+                "end": 184
+            },
+            {
+                "name": "s_sanctuary",
+                "start": 187,
+                "end": 190
+            },
+            {
+                "name": "s_sanctify",
+                "start": 192,
+                "end": 195
+            },
+            {
+                "name": "s_accuracy",
+                "start": 198,
+                "end": 201
+            },
+            {
+                "name": "s_fear",
+                "start": 203,
+                "end": 208
+            },
+            {
+                "name": "s_ritual",
+                "start": 213,
+                "end": 383
+            },
+            {
+                "name": "s_apport",
+                "start": 387,
+                "end": 390
+            },
+            {
+                "name": "s_shadowform",
+                "start": 392,
+                "end": 395
+            },
+            {
+                "name": "s_alert",
+                "start": 397,
+                "end": 400
+            },
+            {
+                "name": "s_regenerate",
+                "start": 402,
+                "end": 405
+            },
+            {
+                "name": "s_clairvoyance",
+                "start": 407,
+                "end": 410
+            },
+            {
+                "name": "s_drain",
+                "start": 412,
+                "end": 415
+            },
+            {
+                "name": "s_levitate",
+                "start": 417,
+                "end": 420
+            },
+            {
+                "name": "s_polymorph",
+                "start": 422,
+                "end": 425
+            },
+            {
+                "name": "s_lball",
+                "start": 429,
+                "end": 434
+            },
+            {
+                "name": "s_identify",
+                "start": 436,
+                "end": 439
+            },
+            {
+                "name": "s_objdet",
+                "start": 441,
+                "end": 444
+            },
+            {
+                "name": "s_mondet",
+                "start": 446,
+                "end": 449
+            },
+            {
+                "name": "getspell",
+                "start": 453,
+                "end": 462
+            },
+            {
+                "name": "spellid",
+                "start": 465,
+                "end": 512
+            },
+            {
+                "name": "initspells",
+                "start": 516,
+                "end": 649
+            },
+            {
+                "name": "cast_spell",
+                "start": 656,
+                "end": 746
+            },
+            {
+                "name": "showknownspells",
+                "start": 769,
+                "end": 787
+            },
+            {
+                "name": "spellparse",
+                "start": 789,
+                "end": 875
+            }
+        ],
+        "compress.c": [
+            {
+                "name": "Usage",
+                "start": 421,
+                "end": 428
+            },
+            {
+                "name": "do_compression",
+                "start": 502,
+                "end": 680
+            },
+            {
+                "name": "compress",
+                "start": 703,
+                "end": 819
+            },
+            {
+                "name": "output",
+                "start": 845,
+                "end": 961
+            },
+            {
+                "name": "decompress",
+                "start": 970,
+                "end": 1048
+            },
+            {
+                "name": "getcode",
+                "start": 1060,
+                "end": 1130
+            },
+            {
+                "name": "rindex",
+                "start": 1133,
+                "end": 1141
+            },
+            {
+                "name": "writeerr",
+                "start": 1259,
+                "end": 1264
+            },
+            {
+                "name": "copystat",
+                "start": 1266,
+                "end": 1318
+            },
+            {
+                "name": "onintr",
+                "start": 1320,
+                "end": 1326
+            },
+            {
+                "name": "oops",
+                "start": 1328,
+                "end": 1335
+            },
+            {
+                "name": "cl_block",
+                "start": 1337,
+                "end": 1377
+            },
+            {
+                "name": "cl_hash",
+                "start": 1379,
+                "end": 1428
+            },
+            {
+                "name": "prratio",
+                "start": 1430,
+                "end": 1444
+            }
+        ],
+        "test.c": [
+            {
+                "name": "key_to_index",
+                "start": 3,
+                "end": 13
+            },
+            {
+                "name": "index_to_key",
+                "start": 15,
+                "end": 27
+            },
+            {
+                "name": "main",
+                "start": 29,
+                "end": 37
+            }
+        ],
+        "char.c": [
+            {
+                "name": "initplayer",
+                "start": 14,
+                "end": 98
+            },
+            {
+                "name": "omegarc_check",
+                "start": 101,
+                "end": 119
+            },
+            {
+                "name": "initstats",
+                "start": 121,
+                "end": 155
+            },
+            {
+                "name": "save_omegarc",
+                "start": 157,
+                "end": 184
+            },
+            {
+                "name": "calcmana",
+                "start": 188,
+                "end": 191
+            },
+            {
+                "name": "fixnpc",
+                "start": 203,
+                "end": 269
+            },
+            {
+                "name": "competence_check",
+                "start": 273,
+                "end": 304
+            },
+            {
+                "name": "user_character_strength",
+                "start": 306,
+                "end": 326
+            },
+            {
+                "name": "user_character_iq_test",
+                "start": 328,
+                "end": 347
+            },
+            {
+                "name": "user_character_undergraduate_exam",
+                "start": 349,
+                "end": 370
+            },
+            {
+                "name": "user_character_graduate_exam",
+                "start": 372,
+                "end": 393
+            },
+            {
+                "name": "user_character_dumb",
+                "start": 395,
+                "end": 413
+            },
+            {
+                "name": "user_character_dance",
+                "start": 415,
+                "end": 421
+            },
+            {
+                "name": "user_character_martial_art",
+                "start": 423,
+                "end": 429
+            },
+            {
+                "name": "user_character_field_sport",
+                "start": 431,
+                "end": 437
+            },
+            {
+                "name": "user_character_cave",
+                "start": 439,
+                "end": 444
+            },
+            {
+                "name": "user_character_skate",
+                "start": 446,
+                "end": 452
+            },
+            {
+                "name": "user_character_handicapped",
+                "start": 454,
+                "end": 459
+            },
+            {
+                "name": "user_character_accident_prone",
+                "start": 461,
+                "end": 466
+            },
+            {
+                "name": "user_character_bicycle",
+                "start": 468,
+                "end": 473
+            },
+            {
+                "name": "user_character_video_games",
+                "start": 475,
+                "end": 481
+            },
+            {
+                "name": "user_character_archer",
+                "start": 483,
+                "end": 489
+            },
+            {
+                "name": "user_character_picked_lock",
+                "start": 491,
+                "end": 508
+            },
+            {
+                "name": "user_character_typing_speed",
+                "start": 510,
+                "end": 525
+            },
+            {
+                "name": "user_character_hand_shakes",
+                "start": 527,
+                "end": 532
+            },
+            {
+                "name": "user_character_ambidextrous",
+                "start": 534,
+                "end": 539
+            },
+            {
+                "name": "user_character_can_cut_deck",
+                "start": 541,
+                "end": 546
+            },
+            {
+                "name": "user_character_can_tie_shoes",
+                "start": 548,
+                "end": 553
+            },
+            {
+                "name": "user_character_colds",
+                "start": 555,
+                "end": 561
+            },
+            {
+                "name": "user_character_recent_accident",
+                "start": 563,
+                "end": 568
+            },
+            {
+                "name": "user_character_chronic_disease",
+                "start": 570,
+                "end": 575
+            },
+            {
+                "name": "user_character_overweight",
+                "start": 577,
+                "end": 582
+            },
+            {
+                "name": "user_character_high_blood_pressure",
+                "start": 584,
+                "end": 589
+            },
+            {
+                "name": "user_character_smoke",
+                "start": 591,
+                "end": 600
+            },
+            {
+                "name": "user_character_aerobics",
+                "start": 602,
+                "end": 607
+            },
+            {
+                "name": "user_character_miles_run",
+                "start": 609,
+                "end": 625
+            },
+            {
+                "name": "user_character_animals",
+                "start": 627,
+                "end": 636
+            },
+            {
+                "name": "user_character_auras",
+                "start": 638,
+                "end": 647
+            },
+            {
+                "name": "user_character_out_of_body",
+                "start": 649,
+                "end": 658
+            },
+            {
+                "name": "user_character_spell",
+                "start": 660,
+                "end": 670
+            },
+            {
+                "name": "user_character_esp",
+                "start": 672,
+                "end": 681
+            },
+            {
+                "name": "user_character_pk",
+                "start": 683,
+                "end": 692
+            },
+            {
+                "name": "user_character_ghosts",
+                "start": 694,
+                "end": 703
+            },
+            {
+                "name": "user_character_irish",
+                "start": 705,
+                "end": 714
+            },
+            {
+                "name": "user_character_stats",
+                "start": 716,
+                "end": 795
+            },
+            {
+                "name": "omegan_character_stats",
+                "start": 799,
+                "end": 842
+            }
+        ],
+        "effect3.c": [
+            {
+                "name": "summon",
+                "start": 7,
+                "end": 57
+            },
+            {
+                "name": "itemlist",
+                "start": 60,
+                "end": 78
+            },
+            {
+                "name": "monsterlist",
+                "start": 80,
+                "end": 106
+            },
+            {
+                "name": "cleanse",
+                "start": 110,
+                "end": 143
+            },
+            {
+                "name": "annihilate",
+                "start": 145,
+                "end": 177
+            },
+            {
+                "name": "sleep_monster",
+                "start": 180,
+                "end": 217
+            },
+            {
+                "name": "sleep_player",
+                "start": 219,
+                "end": 228
+            },
+            {
+                "name": "hide",
+                "start": 231,
+                "end": 239
+            },
+            {
+                "name": "clairvoyance",
+                "start": 241,
+                "end": 257
+            },
+            {
+                "name": "aggravate",
+                "start": 259,
+                "end": 267
+            },
+            {
+                "name": "learnspell",
+                "start": 270,
+                "end": 305
+            },
+            {
+                "name": "amnesia",
+                "start": 308,
+                "end": 317
+            },
+            {
+                "name": "level_drain",
+                "start": 321,
+                "end": 337
+            },
+            {
+                "name": "disrupt",
+                "start": 340,
+                "end": 368
+            },
+            {
+                "name": "disintegrate",
+                "start": 371,
+                "end": 469
+            },
+            {
+                "name": "acid_cloud",
+                "start": 471,
+                "end": 493
+            },
+            {
+                "name": "p_teleport",
+                "start": 497,
+                "end": 528
+            },
+            {
+                "name": "p_poison",
+                "start": 531,
+                "end": 538
+            },
+            {
+                "name": "apport",
+                "start": 540,
+                "end": 563
+            },
+            {
+                "name": "strategic_teleport",
+                "start": 566,
+                "end": 691
+            },
+            {
+                "name": "hero",
+                "start": 694,
+                "end": 707
+            },
+            {
+                "name": "levitate",
+                "start": 710,
+                "end": 723
+            },
+            {
+                "name": "level_return",
+                "start": 727,
+                "end": 744
+            },
+            {
+                "name": "cure",
+                "start": 747,
+                "end": 775
+            },
+            {
+                "name": "disease",
+                "start": 777,
+                "end": 785
+            },
+            {
+                "name": "truesight",
+                "start": 787,
+                "end": 797
+            },
+            {
+                "name": "dispel",
+                "start": 800,
+                "end": 882
+            },
+            {
+                "name": "polymorph",
+                "start": 885,
+                "end": 945
+            },
+            {
+                "name": "hellfire",
+                "start": 948,
+                "end": 983
+            },
+            {
+                "name": "drain",
+                "start": 986,
+                "end": 1058
+            },
+            {
+                "name": "sanctuary",
+                "start": 1060,
+                "end": 1069
+            },
+            {
+                "name": "shadowform",
+                "start": 1071,
+                "end": 1090
+            },
+            {
+                "name": "illuminate",
+                "start": 1092,
+                "end": 1122
+            },
+            {
+                "name": "drain_life",
+                "start": 1125,
+                "end": 1149
+            },
+            {
+                "name": "inflict_fear",
+                "start": 1152,
+                "end": 1181
+            },
+            {
+                "name": "deflection",
+                "start": 1185,
+                "end": 1195
+            }
+        ],
+        "lev.c": [
+            {
+                "name": "make_country_monsters",
+                "start": 11,
+                "end": 87
+            },
+            {
+                "name": "populate_level",
+                "start": 93,
+                "end": 259
+            },
+            {
+                "name": "wandercheck",
+                "start": 264,
+                "end": 275
+            },
+            {
+                "name": "make_site_monster",
+                "start": 280,
+                "end": 291
+            },
+            {
+                "name": "m_create",
+                "start": 297,
+                "end": 327
+            },
+            {
+                "name": "make_creature",
+                "start": 333,
+                "end": 403
+            },
+            {
+                "name": "stock_level",
+                "start": 407,
+                "end": 440
+            },
+            {
+                "name": "make_site_treasure",
+                "start": 444,
+                "end": 450
+            },
+            {
+                "name": "make_specific_treasure",
+                "start": 453,
+                "end": 463
+            },
+            {
+                "name": "difficulty",
+                "start": 472,
+                "end": 513
+            }
+        ],
+        "map.c": [
+            {
+                "name": "error",
+                "start": 37,
+                "end": 45
+            },
+            {
+                "name": "fgetint",
+                "start": 47,
+                "end": 61
+            },
+            {
+                "name": "fgetshort",
+                "start": 63,
+                "end": 75
+            },
+            {
+                "name": "decode",
+                "start": 77,
+                "end": 80
+            },
+            {
+                "name": "map_getWidth",
+                "start": 82,
+                "end": 85
+            },
+            {
+                "name": "map_getLength",
+                "start": 87,
+                "end": 90
+            },
+            {
+                "name": "map_getDepth",
+                "start": 92,
+                "end": 95
+            },
+            {
+                "name": "map_read",
+                "start": 99,
+                "end": 129
+            },
+            {
+                "name": "map_readDimensions",
+                "start": 133,
+                "end": 158
+            },
+            {
+                "name": "map_open",
+                "start": 160,
+                "end": 173
+            },
+            {
+                "name": "map_setLevel",
+                "start": 175,
+                "end": 186
+            },
+            {
+                "name": "map_close",
+                "start": 188,
+                "end": 192
+            },
+            {
+                "name": "map_getSiteChar",
+                "start": 203,
+                "end": 209
+            }
+        ],
+        "effect2.c": [
+            {
+                "name": "knowledge",
+                "start": 6,
+                "end": 366
+            },
+            {
+                "name": "flux",
+                "start": 370,
+                "end": 389
+            },
+            {
+                "name": "displace",
+                "start": 392,
+                "end": 402
+            },
+            {
+                "name": "invisible",
+                "start": 405,
+                "end": 420
+            },
+            {
+                "name": "warp",
+                "start": 423,
+                "end": 438
+            },
+            {
+                "name": "alert",
+                "start": 440,
+                "end": 447
+            },
+            {
+                "name": "regenerate",
+                "start": 449,
+                "end": 457
+            },
+            {
+                "name": "haste",
+                "start": 459,
+                "end": 480
+            },
+            {
+                "name": "recover_stat",
+                "start": 482,
+                "end": 505
+            },
+            {
+                "name": "augment",
+                "start": 507,
+                "end": 541
+            },
+            {
+                "name": "breathe",
+                "start": 543,
+                "end": 553
+            },
+            {
+                "name": "i_chaos",
+                "start": 556,
+                "end": 568
+            },
+            {
+                "name": "i_law",
+                "start": 570,
+                "end": 582
+            },
+            {
+                "name": "sanctify",
+                "start": 584,
+                "end": 646
+            },
+            {
+                "name": "accuracy",
+                "start": 648,
+                "end": 660
+            }
+        ],
+        "stats.c": [
+            {
+                "name": "editstats",
+                "start": 18,
+                "end": 118
+            }
+        ],
+        "item.c": [
+            {
+                "name": "create_object",
+                "start": 7,
+                "end": 41
+            },
+            {
+                "name": "make_cash",
+                "start": 43,
+                "end": 49
+            },
+            {
+                "name": "make_food",
+                "start": 51,
+                "end": 55
+            },
+            {
+                "name": "make_corpse",
+                "start": 58,
+                "end": 144
+            },
+            {
+                "name": "make_ring",
+                "start": 147,
+                "end": 154
+            },
+            {
+                "name": "make_thing",
+                "start": 156,
+                "end": 189
+            },
+            {
+                "name": "make_scroll",
+                "start": 192,
+                "end": 200
+            },
+            {
+                "name": "make_potion",
+                "start": 202,
+                "end": 207
+            },
+            {
+                "name": "make_weapon",
+                "start": 209,
+                "end": 223
+            },
+            {
+                "name": "make_shield",
+                "start": 225,
+                "end": 236
+            },
+            {
+                "name": "make_armor",
+                "start": 238,
+                "end": 248
+            },
+            {
+                "name": "make_cloak",
+                "start": 250,
+                "end": 256
+            },
+            {
+                "name": "make_boots",
+                "start": 258,
+                "end": 263
+            },
+            {
+                "name": "make_stick",
+                "start": 265,
+                "end": 271
+            },
+            {
+                "name": "make_artifact",
+                "start": 273,
+                "end": 282
+            },
+            {
+                "name": "shuffle",
+                "start": 287,
+                "end": 299
+            },
+            {
+                "name": "scrollname",
+                "start": 303,
+                "end": 338
+            },
+            {
+                "name": "grotname",
+                "start": 340,
+                "end": 366
+            },
+            {
+                "name": "potionname",
+                "start": 371,
+                "end": 396
+            },
+            {
+                "name": "stickname",
+                "start": 399,
+                "end": 424
+            },
+            {
+                "name": "ringname",
+                "start": 426,
+                "end": 451
+            },
+            {
+                "name": "cloakname",
+                "start": 454,
+                "end": 479
+            },
+            {
+                "name": "bootname",
+                "start": 481,
+                "end": 506
+            },
+            {
+                "name": "itemplus",
+                "start": 508,
+                "end": 515
+            },
+            {
+                "name": "itemcharge",
+                "start": 519,
+                "end": 522
+            },
+            {
+                "name": "itemblessing",
+                "start": 526,
+                "end": 535
+            },
+            {
+                "name": "twohandedp",
+                "start": 538,
+                "end": 554
+            },
+            {
+                "name": "item_use",
+                "start": 557,
+                "end": 711
+            }
+        ],
+        "country.c": [
+            {
+                "name": "load_country",
+                "start": 9,
+                "end": 114
+            },
+            {
+                "name": "load_dlair",
+                "start": 118,
+                "end": 265
+            },
+            {
+                "name": "load_speak",
+                "start": 269,
+                "end": 387
+            },
+            {
+                "name": "load_misle",
+                "start": 390,
+                "end": 481
+            },
+            {
+                "name": "load_temple",
+                "start": 485,
+                "end": 605
+            },
+            {
+                "name": "random_temple_site",
+                "start": 607,
+                "end": 634
+            },
+            {
+                "name": "make_high_priest",
+                "start": 636,
+                "end": 647
+            }
+        ],
+        "gen2.c": [
+            {
+                "name": "make_stairs",
+                "start": 14,
+                "end": 38
+            },
+            {
+                "name": "make_country_screen",
+                "start": 44,
+                "end": 84
+            },
+            {
+                "name": "make_general_map",
+                "start": 86,
+                "end": 123
+            },
+            {
+                "name": "make_plains",
+                "start": 125,
+                "end": 128
+            },
+            {
+                "name": "make_road",
+                "start": 130,
+                "end": 140
+            },
+            {
+                "name": "make_forest",
+                "start": 144,
+                "end": 149
+            },
+            {
+                "name": "make_jungle",
+                "start": 152,
+                "end": 155
+            },
+            {
+                "name": "make_river",
+                "start": 158,
+                "end": 172
+            },
+            {
+                "name": "make_mountains",
+                "start": 175,
+                "end": 191
+            },
+            {
+                "name": "make_swamp",
+                "start": 194,
+                "end": 197
+            },
+            {
+                "name": "room_level",
+                "start": 205,
+                "end": 343
+            },
+            {
+                "name": "room_corridor",
+                "start": 349,
+                "end": 378
+            },
+            {
+                "name": "maze_level",
+                "start": 380,
+                "end": 487
+            },
+            {
+                "name": "maze_corridor",
+                "start": 491,
+                "end": 501
+            }
+        ],
+        "scr.c": [
+            {
+                "name": "phaseprint",
+                "start": 61,
+                "end": 75
+            },
+            {
+                "name": "show_screen_level",
+                "start": 77,
+                "end": 106
+            },
+            {
+                "name": "show_screen_country",
+                "start": 108,
+                "end": 137
+            },
+            {
+                "name": "show_screen",
+                "start": 139,
+                "end": 192
+            },
+            {
+                "name": "mgetc",
+                "start": 196,
+                "end": 199
+            },
+            {
+                "name": "mcigetc",
+                "start": 202,
+                "end": 215
+            },
+            {
+                "name": "menugetc",
+                "start": 217,
+                "end": 220
+            },
+            {
+                "name": "lgetc",
+                "start": 223,
+                "end": 226
+            },
+            {
+                "name": "ynq",
+                "start": 228,
+                "end": 246
+            },
+            {
+                "name": "ynq1",
+                "start": 249,
+                "end": 267
+            },
+            {
+                "name": "ynq2",
+                "start": 270,
+                "end": 288
+            },
+            {
+                "name": "erasemsg3",
+                "start": 290,
+                "end": 294
+            },
+            {
+                "name": "checkclear",
+                "start": 297,
+                "end": 309
+            },
+            {
+                "name": "clearmsg",
+                "start": 312,
+                "end": 321
+            },
+            {
+                "name": "clearmsg3",
+                "start": 323,
+                "end": 327
+            },
+            {
+                "name": "clearmsg1",
+                "start": 329,
+                "end": 336
+            },
+            {
+                "name": "erase_level",
+                "start": 339,
+                "end": 343
+            },
+            {
+                "name": "print1",
+                "start": 346,
+                "end": 354
+            },
+            {
+                "name": "nprint1",
+                "start": 357,
+                "end": 365
+            },
+            {
+                "name": "print2",
+                "start": 369,
+                "end": 377
+            },
+            {
+                "name": "nprint2",
+                "start": 380,
+                "end": 388
+            },
+            {
+                "name": "print3",
+                "start": 396,
+                "end": 406
+            },
+            {
+                "name": "nprint3",
+                "start": 409,
+                "end": 420
+            },
+            {
+                "name": "mprint",
+                "start": 426,
+                "end": 453
+            },
+            {
+                "name": "omega_title",
+                "start": 456,
+                "end": 463
+            },
+            {
+                "name": "hide_line",
+                "start": 468,
+                "end": 473
+            },
+            {
+                "name": "initgraf",
+                "start": 493,
+                "end": 571
+            },
+            {
+                "name": "cinema_display",
+                "start": 575,
+                "end": 639
+            },
+            {
+                "name": "cinema_blank",
+                "start": 641,
+                "end": 644
+            },
+            {
+                "name": "cinema_blank_line",
+                "start": 646,
+                "end": 658
+            },
+            {
+                "name": "cinema_print_line",
+                "start": 660,
+                "end": 664
+            },
+            {
+                "name": "cinema_hide",
+                "start": 668,
+                "end": 676
+            },
+            {
+                "name": "cinema_getch",
+                "start": 678,
+                "end": 684
+            },
+            {
+                "name": "cinema_interact",
+                "start": 703,
+                "end": 720
+            },
+            {
+                "name": "cinema_interact_line",
+                "start": 722,
+                "end": 739
+            },
+            {
+                "name": "cinema_ynq_line",
+                "start": 741,
+                "end": 744
+            },
+            {
+                "name": "cinema_getnum_line",
+                "start": 746,
+                "end": 757
+            },
+            {
+                "name": "cinema_confirm",
+                "start": 759,
+                "end": 772
+            },
+            {
+                "name": "cinema_ynq",
+                "start": 774,
+                "end": 777
+            },
+            {
+                "name": "cinema_scene",
+                "start": 779,
+                "end": 784
+            },
+            {
+                "name": "drawplayer",
+                "start": 788,
+                "end": 826
+            },
+            {
+                "name": "setlastxy",
+                "start": 828,
+                "end": 832
+            },
+            {
+                "name": "litroom",
+                "start": 834,
+                "end": 839
+            },
+            {
+                "name": "drawvision",
+                "start": 841,
+                "end": 891
+            },
+            {
+                "name": "omshowcursor",
+                "start": 894,
+                "end": 900
+            },
+            {
+                "name": "levelrefresh",
+                "start": 902,
+                "end": 905
+            },
+            {
+                "name": "drawspot",
+                "start": 909,
+                "end": 921
+            },
+            {
+                "name": "dodrawspot",
+                "start": 926,
+                "end": 937
+            },
+            {
+                "name": "blankoutspot",
+                "start": 940,
+                "end": 950
+            },
+            {
+                "name": "blotspot",
+                "start": 953,
+                "end": 964
+            },
+            {
+                "name": "plotspot",
+                "start": 968,
+                "end": 974
+            },
+            {
+                "name": "putspot",
+                "start": 978,
+                "end": 986
+            },
+            {
+                "name": "plotmon",
+                "start": 990,
+                "end": 998
+            },
+            {
+                "name": "drawmonsters",
+                "start": 1001,
+                "end": 1022
+            },
+            {
+                "name": "erase_monster",
+                "start": 1025,
+                "end": 1030
+            },
+            {
+                "name": "getspot",
+                "start": 1033,
+                "end": 1091
+            },
+            {
+                "name": "commanderror",
+                "start": 1093,
+                "end": 1098
+            },
+            {
+                "name": "timeprint",
+                "start": 1100,
+                "end": 1128
+            },
+            {
+                "name": "comwinprint",
+                "start": 1131,
+                "end": 1140
+            },
+            {
+                "name": "dataprint",
+                "start": 1142,
+                "end": 1155
+            },
+            {
+                "name": "redraw",
+                "start": 1159,
+                "end": 1163
+            },
+            {
+                "name": "xredraw",
+                "start": 1166,
+                "end": 1188
+            },
+            {
+                "name": "menuaddch",
+                "start": 1192,
+                "end": 1196
+            },
+            {
+                "name": "morewait",
+                "start": 1200,
+                "end": 1217
+            },
+            {
+                "name": "stillonblock",
+                "start": 1219,
+                "end": 1234
+            },
+            {
+                "name": "menuclear",
+                "start": 1236,
+                "end": 1241
+            },
+            {
+                "name": "menuspellprint",
+                "start": 1243,
+                "end": 1255
+            },
+            {
+                "name": "menuprint",
+                "start": 1257,
+                "end": 1268
+            },
+            {
+                "name": "showmenu",
+                "start": 1270,
+                "end": 1273
+            },
+            {
+                "name": "endgraf",
+                "start": 1276,
+                "end": 1282
+            },
+            {
+                "name": "plotchar",
+                "start": 1285,
+                "end": 1294
+            },
+            {
+                "name": "draw_explosion",
+                "start": 1298,
+                "end": 1313
+            },
+            {
+                "name": "msgscanstring",
+                "start": 1315,
+                "end": 1340
+            },
+            {
+                "name": "locprint",
+                "start": 1343,
+                "end": 1348
+            },
+            {
+                "name": "drawscreen",
+                "start": 1351,
+                "end": 1365
+            },
+            {
+                "name": "getnumber",
+                "start": 1370,
+                "end": 1423
+            },
+            {
+                "name": "input_number",
+                "start": 1425,
+                "end": 1467
+            },
+            {
+                "name": "parsenum",
+                "start": 1472,
+                "end": 1517
+            },
+            {
+                "name": "maddch",
+                "start": 1521,
+                "end": 1525
+            },
+            {
+                "name": "display_death",
+                "start": 1528,
+                "end": 1549
+            },
+            {
+                "name": "display_win",
+                "start": 1552,
+                "end": 1576
+            },
+            {
+                "name": "display_quit",
+                "start": 1578,
+                "end": 1594
+            },
+            {
+                "name": "display_bigwin",
+                "start": 1597,
+                "end": 1613
+            },
+            {
+                "name": "mnumprint",
+                "start": 1616,
+                "end": 1623
+            },
+            {
+                "name": "mlongprint",
+                "start": 1625,
+                "end": 1632
+            },
+            {
+                "name": "menunumprint",
+                "start": 1635,
+                "end": 1646
+            },
+            {
+                "name": "menulongprint",
+                "start": 1648,
+                "end": 1659
+            },
+            {
+                "name": "dobackspace",
+                "start": 1662,
+                "end": 1674
+            },
+            {
+                "name": "showflags",
+                "start": 1677,
+                "end": 1712
+            },
+            {
+                "name": "drawomega",
+                "start": 1714,
+                "end": 1779
+            },
+            {
+                "name": "screencheck",
+                "start": 1798,
+                "end": 1852
+            },
+            {
+                "name": "spreadroomlight",
+                "start": 1855,
+                "end": 1865
+            },
+            {
+                "name": "lightspot",
+                "start": 1868,
+                "end": 1877
+            },
+            {
+                "name": "spreadroomdark",
+                "start": 1880,
+                "end": 1890
+            },
+            {
+                "name": "display_pack",
+                "start": 1893,
+                "end": 1906
+            },
+            {
+                "name": "display_possessions",
+                "start": 1909,
+                "end": 1914
+            },
+            {
+                "name": "display_inventory_slot",
+                "start": 1917,
+                "end": 1986
+            },
+            {
+                "name": "move_slot",
+                "start": 1988,
+                "end": 2002
+            },
+            {
+                "name": "colour_on",
+                "start": 2004,
+                "end": 2006
+            },
+            {
+                "name": "colour_off",
+                "start": 2008,
+                "end": 2011
+            },
+            {
+                "name": "display_option_slot",
+                "start": 2013,
+                "end": 2068
+            },
+            {
+                "name": "display_stat_slot",
+                "start": 2070,
+                "end": 2110
+            },
+            {
+                "name": "display_options",
+                "start": 2112,
+                "end": 2119
+            },
+            {
+                "name": "display_stats",
+                "start": 2121,
+                "end": 2128
+            },
+            {
+                "name": "deathprint",
+                "start": 2131,
+                "end": 2149
+            },
+            {
+                "name": "clear_if_necessary",
+                "start": 2151,
+                "end": 2175
+            },
+            {
+                "name": "buffercycle",
+                "start": 2179,
+                "end": 2184
+            },
+            {
+                "name": "bufferappend",
+                "start": 2186,
+                "end": 2198
+            },
+            {
+                "name": "bufferprint",
+                "start": 2201,
+                "end": 2231
+            },
+            {
+                "name": "clear_screen",
+                "start": 2233,
+                "end": 2238
+            }
+        ],
+        "bank.c": [
+            {
+                "name": "bank_create_account",
+                "start": 100,
+                "end": 126
+            },
+            {
+                "name": "bank_create_card",
+                "start": 128,
+                "end": 139
+            },
+            {
+                "name": "bank_index_password",
+                "start": 142,
+                "end": 150
+            },
+            {
+                "name": "bank_index_number",
+                "start": 153,
+                "end": 161
+            },
+            {
+                "name": "input_password",
+                "start": 165,
+                "end": 205
+            },
+            {
+                "name": "input_amount",
+                "start": 209,
+                "end": 248
+            },
+            {
+                "name": "bank_new_customer",
+                "start": 251,
+                "end": 280
+            },
+            {
+                "name": "bank_call_police",
+                "start": 282,
+                "end": 299
+            },
+            {
+                "name": "police_are_hostile",
+                "start": 301,
+                "end": 314
+            },
+            {
+                "name": "bank_open_account",
+                "start": 316,
+                "end": 489
+            },
+            {
+                "name": "bank_close_accounts",
+                "start": 491,
+                "end": 504
+            },
+            {
+                "name": "bank_break",
+                "start": 506,
+                "end": 636
+            },
+            {
+                "name": "bank_password",
+                "start": 638,
+                "end": 742
+            },
+            {
+                "name": "bank_deposit",
+                "start": 744,
+                "end": 829
+            },
+            {
+                "name": "bank_withdraw",
+                "start": 831,
+                "end": 921
+            },
+            {
+                "name": "bank_transaction",
+                "start": 923,
+                "end": 1010
+            },
+            {
+                "name": "l_bank",
+                "start": 1013,
+                "end": 1116
+            },
+            {
+                "name": "bank_init",
+                "start": 1118,
+                "end": 1137
+            },
+            {
+                "name": "bank_random_account_number",
+                "start": 1139,
+                "end": 1168
+            }
+        ],
+        "village.c": [
+            {
+                "name": "load_village",
+                "start": 9,
+                "end": 148
+            },
+            {
+                "name": "make_guard",
+                "start": 150,
+                "end": 158
+            },
+            {
+                "name": "make_sheep",
+                "start": 160,
+                "end": 168
+            },
+            {
+                "name": "make_food_bin",
+                "start": 170,
+                "end": 182
+            },
+            {
+                "name": "make_horse",
+                "start": 184,
+                "end": 192
+            },
+            {
+                "name": "make_merchant",
+                "start": 195,
+                "end": 203
+            },
+            {
+                "name": "assign_village_function",
+                "start": 206,
+                "end": 264
+            },
+            {
+                "name": "special_village_site",
+                "start": 268,
+                "end": 294
+            }
+        ],
+        "newrand.c": [
+            {
+                "name": "sgenrand",
+                "start": 47,
+                "end": 58
+            },
+            {
+                "name": "genrand",
+                "start": 60,
+                "end": 95
+            }
+        ],
+        "aux3.c": [
+            {
+                "name": "tenminute_check",
+                "start": 11,
+                "end": 23
+            },
+            {
+                "name": "hourly_check",
+                "start": 31,
+                "end": 47
+            },
+            {
+                "name": "indoors_random_event",
+                "start": 52,
+                "end": 210
+            },
+            {
+                "name": "outdoors_random_event",
+                "start": 214,
+                "end": 440
+            },
+            {
+                "name": "getlocation",
+                "start": 443,
+                "end": 458
+            },
+            {
+                "name": "magic_resist",
+                "start": 463,
+                "end": 481
+            },
+            {
+                "name": "terrain_check",
+                "start": 484,
+                "end": 779
+            },
+            {
+                "name": "countrysearch",
+                "start": 783,
+                "end": 801
+            },
+            {
+                "name": "countryid",
+                "start": 803,
+                "end": 874
+            },
+            {
+                "name": "showknownsites",
+                "start": 901,
+                "end": 916
+            },
+            {
+                "name": "parsecitysite",
+                "start": 918,
+                "end": 998
+            },
+            {
+                "name": "hostilemonstersnear",
+                "start": 1002,
+                "end": 1013
+            },
+            {
+                "name": "stonecheck",
+                "start": 1017,
+                "end": 1160
+            },
+            {
+                "name": "alert_guards",
+                "start": 1162,
+                "end": 1219
+            },
+            {
+                "name": "destroy_order",
+                "start": 1223,
+                "end": 1250
+            },
+            {
+                "name": "maneuvers",
+                "start": 1254,
+                "end": 1267
+            },
+            {
+                "name": "default_maneuvers",
+                "start": 1270,
+                "end": 1285
+            }
+        ],
+        "gen1.c": [
+            {
+                "name": "free_dungeon",
+                "start": 10,
+                "end": 27
+            },
+            {
+                "name": "clear_level",
+                "start": 31,
+                "end": 58
+            },
+            {
+                "name": "change_level",
+                "start": 68,
+                "end": 179
+            },
+            {
+                "name": "findlevel",
+                "start": 184,
+                "end": 196
+            },
+            {
+                "name": "straggle_corridor",
+                "start": 204,
+                "end": 214
+            },
+            {
+                "name": "makedoor",
+                "start": 217,
+                "end": 244
+            },
+            {
+                "name": "corridor_crawl",
+                "start": 247,
+                "end": 269
+            },
+            {
+                "name": "roomname",
+                "start": 272,
+                "end": 350
+            },
+            {
+                "name": "find_stairs",
+                "start": 355,
+                "end": 375
+            },
+            {
+                "name": "install_traps",
+                "start": 379,
+                "end": 388
+            },
+            {
+                "name": "build_square_room",
+                "start": 393,
+                "end": 407
+            },
+            {
+                "name": "build_room",
+                "start": 410,
+                "end": 413
+            },
+            {
+                "name": "cavern_level",
+                "start": 415,
+                "end": 466
+            },
+            {
+                "name": "sewer_level",
+                "start": 469,
+                "end": 512
+            },
+            {
+                "name": "sewer_corridor",
+                "start": 515,
+                "end": 540
+            },
+            {
+                "name": "install_specials",
+                "start": 543,
+                "end": 625
+            }
+        ],
+        "command1.c": [
+            {
+                "name": "p_process",
+                "start": 12,
+                "end": 250
+            },
+            {
+                "name": "p_country_process",
+                "start": 257,
+                "end": 332
+            }
+        ],
+        "itemf1.c": [
+            {
+                "name": "i_no_op",
+                "start": 10,
+                "end": 12
+            },
+            {
+                "name": "i_nothing",
+                "start": 14,
+                "end": 16
+            },
+            {
+                "name": "i_knowledge",
+                "start": 20,
+                "end": 25
+            },
+            {
+                "name": "is_capital_letter",
+                "start": 27,
+                "end": 31
+            },
+            {
+                "name": "is_vowel",
+                "start": 33,
+                "end": 41
+            },
+            {
+                "name": "i_jane_t",
+                "start": 43,
+                "end": 121
+            },
+            {
+                "name": "i_flux",
+                "start": 124,
+                "end": 129
+            },
+            {
+                "name": "i_enchant",
+                "start": 133,
+                "end": 138
+            },
+            {
+                "name": "i_clairvoyance",
+                "start": 141,
+                "end": 148
+            },
+            {
+                "name": "i_acquire",
+                "start": 152,
+                "end": 161
+            },
+            {
+                "name": "i_teleport",
+                "start": 163,
+                "end": 168
+            },
+            {
+                "name": "i_spells",
+                "start": 171,
+                "end": 178
+            },
+            {
+                "name": "i_bless",
+                "start": 183,
+                "end": 187
+            },
+            {
+                "name": "i_wish",
+                "start": 190,
+                "end": 196
+            },
+            {
+                "name": "i_displace",
+                "start": 199,
+                "end": 204
+            },
+            {
+                "name": "i_deflect",
+                "start": 208,
+                "end": 213
+            },
+            {
+                "name": "i_id",
+                "start": 216,
+                "end": 221
+            },
+            {
+                "name": "i_heal",
+                "start": 226,
+                "end": 233
+            },
+            {
+                "name": "i_mondet",
+                "start": 236,
+                "end": 241
+            },
+            {
+                "name": "i_objdet",
+                "start": 245,
+                "end": 251
+            },
+            {
+                "name": "i_neutralize_poison",
+                "start": 254,
+                "end": 262
+            },
+            {
+                "name": "i_sleep_self",
+                "start": 266,
+                "end": 270
+            },
+            {
+                "name": "i_speed",
+                "start": 276,
+                "end": 281
+            },
+            {
+                "name": "i_restore",
+                "start": 285,
+                "end": 290
+            },
+            {
+                "name": "i_augment",
+                "start": 292,
+                "end": 297
+            },
+            {
+                "name": "i_azoth",
+                "start": 299,
+                "end": 330
+            },
+            {
+                "name": "i_regenerate",
+                "start": 332,
+                "end": 335
+            },
+            {
+                "name": "i_perm_speed",
+                "start": 342,
+                "end": 374
+            },
+            {
+                "name": "i_perm_displace",
+                "start": 377,
+                "end": 405
+            },
+            {
+                "name": "i_perm_negimmune",
+                "start": 407,
+                "end": 417
+            },
+            {
+                "name": "i_food",
+                "start": 422,
+                "end": 432
+            },
+            {
+                "name": "i_stim",
+                "start": 434,
+                "end": 441
+            },
+            {
+                "name": "i_pow",
+                "start": 443,
+                "end": 447
+            },
+            {
+                "name": "i_poison_food",
+                "start": 449,
+                "end": 453
+            },
+            {
+                "name": "i_pepper_food",
+                "start": 455,
+                "end": 472
+            },
+            {
+                "name": "i_lembas",
+                "start": 474,
+                "end": 479
+            },
+            {
+                "name": "i_cure",
+                "start": 482,
+                "end": 485
+            },
+            {
+                "name": "i_immune",
+                "start": 487,
+                "end": 494
+            },
+            {
+                "name": "i_breathing",
+                "start": 496,
+                "end": 502
+            },
+            {
+                "name": "i_invisible",
+                "start": 505,
+                "end": 510
+            },
+            {
+                "name": "i_perm_invisible",
+                "start": 513,
+                "end": 543
+            },
+            {
+                "name": "i_warp",
+                "start": 546,
+                "end": 551
+            },
+            {
+                "name": "i_alert",
+                "start": 554,
+                "end": 560
+            },
+            {
+                "name": "i_charge",
+                "start": 562,
+                "end": 580
+            },
+            {
+                "name": "i_fear_resist",
+                "start": 583,
+                "end": 596
+            },
+            {
+                "name": "i_pick",
+                "start": 601,
+                "end": 638
+            },
+            {
+                "name": "i_key",
+                "start": 641,
+                "end": 672
+            },
+            {
+                "name": "i_corpse",
+                "start": 674,
+                "end": 769
+            },
+            {
+                "name": "i_accuracy",
+                "start": 771,
+                "end": 776
+            },
+            {
+                "name": "i_perm_accuracy",
+                "start": 778,
+                "end": 794
+            },
+            {
+                "name": "i_hero",
+                "start": 796,
+                "end": 801
+            },
+            {
+                "name": "i_perm_hero",
+                "start": 803,
+                "end": 839
+            },
+            {
+                "name": "i_levitate",
+                "start": 841,
+                "end": 846
+            },
+            {
+                "name": "i_perm_levitate",
+                "start": 848,
+                "end": 867
+            },
+            {
+                "name": "i_perm_protection",
+                "start": 869,
+                "end": 884
+            },
+            {
+                "name": "i_perm_agility",
+                "start": 886,
+                "end": 903
+            },
+            {
+                "name": "i_truesight",
+                "start": 905,
+                "end": 910
+            },
+            {
+                "name": "i_perm_truesight",
+                "start": 912,
+                "end": 942
+            },
+            {
+                "name": "i_illuminate",
+                "start": 944,
+                "end": 949
+            },
+            {
+                "name": "i_perm_illuminate",
+                "start": 951,
+                "end": 959
+            },
+            {
+                "name": "i_trap",
+                "start": 964,
+                "end": 981
+            },
+            {
+                "name": "i_raise_portcullis",
+                "start": 984,
+                "end": 989
+            }
+        ],
+        "guild2.c": [
+            {
+                "name": "l_thieves_guild",
+                "start": 12,
+                "end": 267
+            },
+            {
+                "name": "l_college",
+                "start": 269,
+                "end": 452
+            },
+            {
+                "name": "l_monastery",
+                "start": 455,
+                "end": 739
+            },
+            {
+                "name": "l_sorcerors",
+                "start": 743,
+                "end": 924
+            },
+            {
+                "name": "l_order",
+                "start": 929,
+                "end": 1103
+            }
+        ],
+        "itemf3.c": [
+            {
+                "name": "i_planes",
+                "start": 9,
+                "end": 19
+            },
+            {
+                "name": "i_serenity",
+                "start": 22,
+                "end": 40
+            },
+            {
+                "name": "i_sceptre",
+                "start": 44,
+                "end": 65
+            },
+            {
+                "name": "i_stargem",
+                "start": 69,
+                "end": 109
+            },
+            {
+                "name": "i_fear",
+                "start": 113,
+                "end": 124
+            },
+            {
+                "name": "i_juggernaut",
+                "start": 127,
+                "end": 188
+            },
+            {
+                "name": "i_symbol",
+                "start": 191,
+                "end": 228
+            },
+            {
+                "name": "i_crystal",
+                "start": 231,
+                "end": 256
+            },
+            {
+                "name": "i_antioch",
+                "start": 258,
+                "end": 305
+            },
+            {
+                "name": "i_kolwynia",
+                "start": 307,
+                "end": 323
+            },
+            {
+                "name": "i_enchantment",
+                "start": 325,
+                "end": 344
+            },
+            {
+                "name": "i_helm",
+                "start": 346,
+                "end": 361
+            },
+            {
+                "name": "i_death",
+                "start": 364,
+                "end": 369
+            },
+            {
+                "name": "i_life",
+                "start": 371,
+                "end": 378
+            },
+            {
+                "name": "orbcheck",
+                "start": 382,
+                "end": 404
+            },
+            {
+                "name": "i_orbfire",
+                "start": 407,
+                "end": 426
+            },
+            {
+                "name": "i_orbwater",
+                "start": 429,
+                "end": 448
+            },
+            {
+                "name": "i_orbearth",
+                "start": 452,
+                "end": 487
+            },
+            {
+                "name": "i_orbair",
+                "start": 490,
+                "end": 510
+            },
+            {
+                "name": "i_orbmastery",
+                "start": 513,
+                "end": 550
+            },
+            {
+                "name": "i_orbdead",
+                "start": 553,
+                "end": 571
+            },
+            {
+                "name": "i_dispel",
+                "start": 575,
+                "end": 578
+            },
+            {
+                "name": "i_holding",
+                "start": 581,
+                "end": 742
+            },
+            {
+                "name": "i_apport",
+                "start": 749,
+                "end": 754
+            },
+            {
+                "name": "i_firebolt",
+                "start": 757,
+                "end": 768
+            },
+            {
+                "name": "i_disintegrate",
+                "start": 771,
+                "end": 782
+            },
+            {
+                "name": "i_disrupt",
+                "start": 784,
+                "end": 795
+            },
+            {
+                "name": "i_lbolt",
+                "start": 799,
+                "end": 810
+            },
+            {
+                "name": "i_missile",
+                "start": 813,
+                "end": 824
+            },
+            {
+                "name": "i_fireball",
+                "start": 827,
+                "end": 838
+            },
+            {
+                "name": "i_snowball",
+                "start": 842,
+                "end": 853
+            },
+            {
+                "name": "i_lball",
+                "start": 856,
+                "end": 867
+            },
+            {
+                "name": "i_sleep_other",
+                "start": 870,
+                "end": 875
+            },
+            {
+                "name": "i_summon",
+                "start": 879,
+                "end": 884
+            },
+            {
+                "name": "i_hide",
+                "start": 886,
+                "end": 893
+            },
+            {
+                "name": "i_polymorph",
+                "start": 895,
+                "end": 900
+            }
+        ],
+        "aux1.c": [
+            {
+                "name": "tunnelcheck",
+                "start": 10,
+                "end": 54
+            },
+            {
+                "name": "showroom",
+                "start": 57,
+                "end": 129
+            },
+            {
+                "name": "player_on_sanctuary",
+                "start": 132,
+                "end": 146
+            },
+            {
+                "name": "p_moveable",
+                "start": 151,
+                "end": 227
+            },
+            {
+                "name": "p_country_moveable",
+                "start": 232,
+                "end": 242
+            },
+            {
+                "name": "searchat",
+                "start": 249,
+                "end": 277
+            },
+            {
+                "name": "calc_melee",
+                "start": 283,
+                "end": 381
+            },
+            {
+                "name": "fight_monster",
+                "start": 385,
+                "end": 421
+            },
+            {
+                "name": "damage_item",
+                "start": 427,
+                "end": 508
+            },
+            {
+                "name": "p_damage",
+                "start": 511,
+                "end": 524
+            },
+            {
+                "name": "p_death",
+                "start": 527,
+                "end": 539
+            },
+            {
+                "name": "setspot",
+                "start": 543,
+                "end": 568
+            },
+            {
+                "name": "getdir",
+                "start": 572,
+                "end": 605
+            },
+            {
+                "name": "mstatus_string",
+                "start": 610,
+                "end": 639
+            },
+            {
+                "name": "describe_player",
+                "start": 645,
+                "end": 663
+            },
+            {
+                "name": "gain_experience",
+                "start": 668,
+                "end": 678
+            },
+            {
+                "name": "goberserk",
+                "start": 683,
+                "end": 698
+            },
+            {
+                "name": "trapid",
+                "start": 701,
+                "end": 719
+            },
+            {
+                "name": "foodcheck",
+                "start": 723,
+                "end": 751
+            },
+            {
+                "name": "roomcheck",
+                "start": 757,
+                "end": 796
+            },
+            {
+                "name": "surrender",
+                "start": 800,
+                "end": 874
+            },
+            {
+                "name": "threaten",
+                "start": 878,
+                "end": 932
+            },
+            {
+                "name": "levelname",
+                "start": 935,
+                "end": 972
+            }
+        ],
+        "mon.c": [
+            {
+                "name": "m_pulse",
+                "start": 12,
+                "end": 67
+            },
+            {
+                "name": "movemonster",
+                "start": 70,
+                "end": 80
+            },
+            {
+                "name": "m_pickup",
+                "start": 84,
+                "end": 90
+            },
+            {
+                "name": "m_dropstuff",
+                "start": 92,
+                "end": 103
+            },
+            {
+                "name": "m_damage",
+                "start": 106,
+                "end": 122
+            },
+            {
+                "name": "m_remove",
+                "start": 126,
+                "end": 133
+            },
+            {
+                "name": "m_death",
+                "start": 135,
+                "end": 376
+            },
+            {
+                "name": "monster_move",
+                "start": 378,
+                "end": 381
+            },
+            {
+                "name": "monster_strike",
+                "start": 384,
+                "end": 397
+            },
+            {
+                "name": "monster_special",
+                "start": 399,
+                "end": 410
+            },
+            {
+                "name": "monster_talk",
+                "start": 413,
+                "end": 416
+            },
+            {
+                "name": "monster_action",
+                "start": 418,
+                "end": 525
+            },
+            {
+                "name": "make_hiscore_npc",
+                "start": 528,
+                "end": 622
+            },
+            {
+                "name": "determine_npc_behavior",
+                "start": 626,
+                "end": 683
+            },
+            {
+                "name": "make_log_npc",
+                "start": 687,
+                "end": 748
+            },
+            {
+                "name": "m_trap_dart",
+                "start": 751,
+                "end": 765
+            },
+            {
+                "name": "m_trap_pit",
+                "start": 767,
+                "end": 784
+            },
+            {
+                "name": "m_trap_door",
+                "start": 786,
+                "end": 800
+            },
+            {
+                "name": "m_trap_abyss",
+                "start": 802,
+                "end": 821
+            },
+            {
+                "name": "m_trap_snare",
+                "start": 823,
+                "end": 838
+            },
+            {
+                "name": "m_trap_blade",
+                "start": 840,
+                "end": 854
+            },
+            {
+                "name": "m_trap_fire",
+                "start": 856,
+                "end": 871
+            },
+            {
+                "name": "m_fire",
+                "start": 874,
+                "end": 887
+            },
+            {
+                "name": "m_trap_teleport",
+                "start": 889,
+                "end": 904
+            },
+            {
+                "name": "m_trap_disintegrate",
+                "start": 906,
+                "end": 921
+            },
+            {
+                "name": "m_trap_sleepgas",
+                "start": 923,
+                "end": 938
+            },
+            {
+                "name": "m_trap_acid",
+                "start": 940,
+                "end": 955
+            },
+            {
+                "name": "m_trap_manadrain",
+                "start": 957,
+                "end": 972
+            },
+            {
+                "name": "m_water",
+                "start": 975,
+                "end": 992
+            },
+            {
+                "name": "m_abyss",
+                "start": 995,
+                "end": 1008
+            },
+            {
+                "name": "m_lava",
+                "start": 1011,
+                "end": 1027
+            },
+            {
+                "name": "m_altar",
+                "start": 1029,
+                "end": 1078
+            },
+            {
+                "name": "mancorpse",
+                "start": 1080,
+                "end": 1105
+            },
+            {
+                "name": "angeltype",
+                "start": 1107,
+                "end": 1147
+            },
+            {
+                "name": "strengthen_death",
+                "start": 1149,
+                "end": 1174
+            },
+            {
+                "name": "m_no_op",
+                "start": 1177,
+                "end": 1179
+            }
+        ],
+        "mtalk.c": [
+            {
+                "name": "m_talk_druid",
+                "start": 9,
+                "end": 95
+            },
+            {
+                "name": "m_talk_silent",
+                "start": 98,
+                "end": 121
+            },
+            {
+                "name": "m_talk_stupid",
+                "start": 123,
+                "end": 139
+            },
+            {
+                "name": "m_talk_greedy",
+                "start": 141,
+                "end": 157
+            },
+            {
+                "name": "m_talk_hungry",
+                "start": 159,
+                "end": 175
+            },
+            {
+                "name": "m_talk_guard",
+                "start": 178,
+                "end": 227
+            },
+            {
+                "name": "m_talk_mp",
+                "start": 230,
+                "end": 233
+            },
+            {
+                "name": "m_talk_titter",
+                "start": 236,
+                "end": 246
+            },
+            {
+                "name": "m_talk_ninja",
+                "start": 249,
+                "end": 253
+            },
+            {
+                "name": "m_talk_thief",
+                "start": 258,
+                "end": 272
+            },
+            {
+                "name": "m_talk_assassin",
+                "start": 276,
+                "end": 281
+            },
+            {
+                "name": "m_talk_im",
+                "start": 284,
+                "end": 331
+            },
+            {
+                "name": "m_talk_man",
+                "start": 333,
+                "end": 349
+            },
+            {
+                "name": "m_talk_evil",
+                "start": 352,
+                "end": 378
+            },
+            {
+                "name": "m_talk_robot",
+                "start": 381,
+                "end": 399
+            },
+            {
+                "name": "m_talk_slithy",
+                "start": 401,
+                "end": 404
+            },
+            {
+                "name": "m_talk_mimsy",
+                "start": 407,
+                "end": 410
+            },
+            {
+                "name": "m_talk_burble",
+                "start": 414,
+                "end": 424
+            },
+            {
+                "name": "m_talk_beg",
+                "start": 427,
+                "end": 436
+            },
+            {
+                "name": "m_talk_hint",
+                "start": 439,
+                "end": 456
+            },
+            {
+                "name": "m_talk_gf",
+                "start": 458,
+                "end": 480
+            },
+            {
+                "name": "m_talk_ef",
+                "start": 482,
+                "end": 497
+            },
+            {
+                "name": "m_talk_seductor",
+                "start": 500,
+                "end": 530
+            },
+            {
+                "name": "m_talk_demonlover",
+                "start": 533,
+                "end": 589
+            },
+            {
+                "name": "m_talk_horse",
+                "start": 592,
+                "end": 611
+            },
+            {
+                "name": "m_talk_hyena",
+                "start": 613,
+                "end": 616
+            },
+            {
+                "name": "m_talk_parrot",
+                "start": 618,
+                "end": 621
+            },
+            {
+                "name": "m_talk_servant",
+                "start": 624,
+                "end": 659
+            },
+            {
+                "name": "m_talk_animal",
+                "start": 662,
+                "end": 674
+            },
+            {
+                "name": "m_talk_scream",
+                "start": 677,
+                "end": 686
+            },
+            {
+                "name": "m_talk_archmage",
+                "start": 689,
+                "end": 711
+            },
+            {
+                "name": "m_talk_maharaja",
+                "start": 713,
+                "end": 733
+            },
+            {
+                "name": "m_talk_merchant",
+                "start": 736,
+                "end": 766
+            },
+            {
+                "name": "m_talk_prime",
+                "start": 769,
+                "end": 794
+            }
+        ],
+        "itemf2.c": [
+            {
+                "name": "i_perm_knowledge",
+                "start": 12,
+                "end": 23
+            },
+            {
+                "name": "i_perm_strength",
+                "start": 25,
+                "end": 42
+            },
+            {
+                "name": "i_perm_burden",
+                "start": 46,
+                "end": 64
+            },
+            {
+                "name": "i_perm_gaze_immune",
+                "start": 66,
+                "end": 70
+            },
+            {
+                "name": "i_perm_fire_resist",
+                "start": 72,
+                "end": 76
+            },
+            {
+                "name": "i_perm_poison_resist",
+                "start": 78,
+                "end": 97
+            },
+            {
+                "name": "i_perm_regenerate",
+                "start": 101,
+                "end": 117
+            },
+            {
+                "name": "i_normal_armor",
+                "start": 123,
+                "end": 126
+            },
+            {
+                "name": "i_perm_energy_resist",
+                "start": 128,
+                "end": 140
+            },
+            {
+                "name": "i_perm_fear_resist",
+                "start": 144,
+                "end": 163
+            },
+            {
+                "name": "i_perm_breathing",
+                "start": 167,
+                "end": 191
+            },
+            {
+                "name": "weapon_acidwhip",
+                "start": 197,
+                "end": 205
+            },
+            {
+                "name": "weapon_scythe",
+                "start": 207,
+                "end": 216
+            },
+            {
+                "name": "weapon_demonblade",
+                "start": 218,
+                "end": 260
+            },
+            {
+                "name": "weapon_lightsabre",
+                "start": 262,
+                "end": 280
+            },
+            {
+                "name": "weapon_tangle",
+                "start": 282,
+                "end": 289
+            },
+            {
+                "name": "weapon_arrow",
+                "start": 292,
+                "end": 298
+            },
+            {
+                "name": "weapon_bolt",
+                "start": 301,
+                "end": 310
+            },
+            {
+                "name": "weapon_mace_disrupt",
+                "start": 313,
+                "end": 320
+            },
+            {
+                "name": "weapon_normal_hit",
+                "start": 322,
+                "end": 325
+            },
+            {
+                "name": "weapon_bare_hands",
+                "start": 329,
+                "end": 333
+            },
+            {
+                "name": "i_demonblade",
+                "start": 336,
+                "end": 350
+            },
+            {
+                "name": "i_normal_weapon",
+                "start": 352,
+                "end": 355
+            },
+            {
+                "name": "i_lightsabre",
+                "start": 357,
+                "end": 361
+            },
+            {
+                "name": "i_mace_disrupt",
+                "start": 363,
+                "end": 366
+            },
+            {
+                "name": "weapon_vorpal",
+                "start": 369,
+                "end": 379
+            },
+            {
+                "name": "weapon_desecrate",
+                "start": 381,
+                "end": 401
+            },
+            {
+                "name": "weapon_firestar",
+                "start": 404,
+                "end": 411
+            },
+            {
+                "name": "weapon_defend",
+                "start": 413,
+                "end": 433
+            },
+            {
+                "name": "weapon_victrix",
+                "start": 435,
+                "end": 442
+            },
+            {
+                "name": "i_defend",
+                "start": 444,
+                "end": 452
+            },
+            {
+                "name": "i_victrix",
+                "start": 455,
+                "end": 469
+            },
+            {
+                "name": "i_desecrate",
+                "start": 472,
+                "end": 482
+            },
+            {
+                "name": "i_normal_shield",
+                "start": 486,
+                "end": 489
+            },
+            {
+                "name": "i_perm_deflect",
+                "start": 492,
+                "end": 522
+            }
+        ],
+        "etc.c": [
+            {
+                "name": "hint",
+                "start": 8,
+                "end": 118
+            },
+            {
+                "name": "learnclericalspells",
+                "start": 121,
+                "end": 226
+            },
+            {
+                "name": "slotstr",
+                "start": 229,
+                "end": 254
+            },
+            {
+                "name": "nameprint",
+                "start": 257,
+                "end": 302
+            },
+            {
+                "name": "wordnum",
+                "start": 306,
+                "end": 322
+            }
+        ],
+        "mmelee.c": [
+            {
+                "name": "m_hit",
+                "start": 8,
+                "end": 18
+            },
+            {
+                "name": "tacmonster",
+                "start": 23,
+                "end": 48
+            },
+            {
+                "name": "monster_melee",
+                "start": 52,
+                "end": 181
+            },
+            {
+                "name": "monster_hit",
+                "start": 186,
+                "end": 213
+            },
+            {
+                "name": "transcribe_monster_actions",
+                "start": 221,
+                "end": 295
+            },
+            {
+                "name": "random_loc",
+                "start": 297,
+                "end": 304
+            }
+        ],
+        "mmove.c": [
+            {
+                "name": "m_smart_move",
+                "start": 9,
+                "end": 12
+            },
+            {
+                "name": "m_normal_move",
+                "start": 15,
+                "end": 18
+            },
+            {
+                "name": "m_simple_move",
+                "start": 22,
+                "end": 71
+            },
+            {
+                "name": "m_move_animal",
+                "start": 74,
+                "end": 79
+            },
+            {
+                "name": "m_scaredy_move",
+                "start": 83,
+                "end": 113
+            },
+            {
+                "name": "m_spirit_move",
+                "start": 118,
+                "end": 132
+            },
+            {
+                "name": "m_flutter_move",
+                "start": 137,
+                "end": 163
+            },
+            {
+                "name": "m_follow_move",
+                "start": 166,
+                "end": 171
+            },
+            {
+                "name": "m_confused_move",
+                "start": 176,
+                "end": 190
+            },
+            {
+                "name": "m_random_move",
+                "start": 192,
+                "end": 206
+            },
+            {
+                "name": "m_vanish",
+                "start": 210,
+                "end": 220
+            },
+            {
+                "name": "m_teleport",
+                "start": 223,
+                "end": 232
+            },
+            {
+                "name": "m_move_leash",
+                "start": 234,
+                "end": 267
+            }
+        ],
+        "genclr.c": [
+            {
+                "name": "clr_lookup",
+                "start": 119,
+                "end": 135
+            },
+            {
+                "name": "clr_scan",
+                "start": 137,
+                "end": 164
+            },
+            {
+                "name": "opaircmp",
+                "start": 166,
+                "end": 178
+            },
+            {
+                "name": "cpaircmp",
+                "start": 180,
+                "end": 192
+            },
+            {
+                "name": "emitopen",
+                "start": 194,
+                "end": 215
+            },
+            {
+                "name": "emitclose",
+                "start": 217,
+                "end": 227
+            },
+            {
+                "name": "main",
+                "start": 229,
+                "end": 363
+            }
+        ],
+        "command3.c": [
+            {
+                "name": "examine",
+                "start": 15,
+                "end": 136
+            },
+            {
+                "name": "help",
+                "start": 138,
+                "end": 207
+            },
+            {
+                "name": "version",
+                "start": 209,
+                "end": 216
+            },
+            {
+                "name": "fire",
+                "start": 218,
+                "end": 307
+            },
+            {
+                "name": "quit",
+                "start": 314,
+                "end": 330
+            },
+            {
+                "name": "nap",
+                "start": 336,
+                "end": 361
+            },
+            {
+                "name": "charid",
+                "start": 364,
+                "end": 500
+            },
+            {
+                "name": "wizard",
+                "start": 503,
+                "end": 540
+            },
+            {
+                "name": "vault",
+                "start": 543,
+                "end": 587
+            },
+            {
+                "name": "tacoptions",
+                "start": 591,
+                "end": 762
+            },
+            {
+                "name": "pickpocket",
+                "start": 768,
+                "end": 841
+            },
+            {
+                "name": "rename_player",
+                "start": 844,
+                "end": 859
+            },
+            {
+                "name": "abortshadowform",
+                "start": 862,
+                "end": 874
+            },
+            {
+                "name": "tunnel",
+                "start": 876,
+                "end": 944
+            },
+            {
+                "name": "hunt",
+                "start": 946,
+                "end": 1027
+            },
+            {
+                "name": "dismount_steed",
+                "start": 1029,
+                "end": 1051
+            },
+            {
+                "name": "city_move",
+                "start": 1054,
+                "end": 1097
+            },
+            {
+                "name": "frobgamestatus",
+                "start": 1099,
+                "end": 1119
+            }
+        ],
+        "abyss.c": [
+            {
+                "name": "load_abyss",
+                "start": 17,
+                "end": 95
+            }
+        ],
+        "trap.c": [
+            {
+                "name": "l_trap_siren",
+                "start": 11,
+                "end": 48
+            },
+            {
+                "name": "l_trap_dart",
+                "start": 50,
+                "end": 68
+            },
+            {
+                "name": "l_trap_pit",
+                "start": 70,
+                "end": 94
+            },
+            {
+                "name": "l_trap_door",
+                "start": 96,
+                "end": 133
+            },
+            {
+                "name": "l_trap_snare",
+                "start": 135,
+                "end": 147
+            },
+            {
+                "name": "l_trap_blade",
+                "start": 149,
+                "end": 170
+            },
+            {
+                "name": "l_trap_fire",
+                "start": 172,
+                "end": 190
+            },
+            {
+                "name": "l_trap_teleport",
+                "start": 192,
+                "end": 200
+            },
+            {
+                "name": "l_trap_disintegrate",
+                "start": 202,
+                "end": 215
+            },
+            {
+                "name": "l_trap_sleepgas",
+                "start": 217,
+                "end": 226
+            },
+            {
+                "name": "l_trap_acid",
+                "start": 229,
+                "end": 256
+            },
+            {
+                "name": "l_trap_abyss",
+                "start": 258,
+                "end": 273
+            },
+            {
+                "name": "l_trap_manadrain",
+                "start": 275,
+                "end": 302
+            }
+        ],
+        "save.c": [
+            {
+                "name": "save_game",
+                "start": 31,
+                "end": 151
+            },
+            {
+                "name": "signalsave",
+                "start": 158,
+                "end": 171
+            },
+            {
+                "name": "save_player",
+                "start": 176,
+                "end": 295
+            },
+            {
+                "name": "save_level",
+                "start": 299,
+                "end": 355
+            },
+            {
+                "name": "save_monsters",
+                "start": 358,
+                "end": 400
+            },
+            {
+                "name": "save_item",
+                "start": 405,
+                "end": 436
+            },
+            {
+                "name": "save_itemlist",
+                "start": 438,
+                "end": 449
+            },
+            {
+                "name": "save_country",
+                "start": 452,
+                "end": 486
+            },
+            {
+                "name": "ok_outdated",
+                "start": 490,
+                "end": 529
+            },
+            {
+                "name": "restore_game",
+                "start": 536,
+                "end": 639
+            },
+            {
+                "name": "restore_player",
+                "start": 641,
+                "end": 783
+            },
+            {
+                "name": "restore_item",
+                "start": 789,
+                "end": 839
+            },
+            {
+                "name": "restore_itemlist",
+                "start": 841,
+                "end": 860
+            },
+            {
+                "name": "fix_p_locf",
+                "start": 863,
+                "end": 980
+            },
+            {
+                "name": "restore_level",
+                "start": 982,
+                "end": 1111
+            },
+            {
+                "name": "restore_hiscore_npc",
+                "start": 1114,
+                "end": 1195
+            },
+            {
+                "name": "restore_monsters",
+                "start": 1198,
+                "end": 1264
+            },
+            {
+                "name": "restore_country",
+                "start": 1267,
+                "end": 1293
+            }
+        ],
+        "effect1.c": [
+            {
+                "name": "enchant",
+                "start": 8,
+                "end": 114
+            },
+            {
+                "name": "bless",
+                "start": 117,
+                "end": 197
+            },
+            {
+                "name": "heal",
+                "start": 201,
+                "end": 220
+            },
+            {
+                "name": "fbolt",
+                "start": 223,
+                "end": 226
+            },
+            {
+                "name": "lbolt",
+                "start": 228,
+                "end": 231
+            },
+            {
+                "name": "icebolt",
+                "start": 234,
+                "end": 237
+            },
+            {
+                "name": "nbolt",
+                "start": 239,
+                "end": 242
+            },
+            {
+                "name": "bolt",
+                "start": 246,
+                "end": 341
+            },
+            {
+                "name": "lball",
+                "start": 344,
+                "end": 347
+            },
+            {
+                "name": "manastorm",
+                "start": 349,
+                "end": 352
+            },
+            {
+                "name": "snowball",
+                "start": 354,
+                "end": 357
+            },
+            {
+                "name": "fball",
+                "start": 359,
+                "end": 362
+            },
+            {
+                "name": "ball",
+                "start": 366,
+                "end": 444
+            },
+            {
+                "name": "mondet",
+                "start": 446,
+                "end": 461
+            },
+            {
+                "name": "objdet",
+                "start": 464,
+                "end": 479
+            },
+            {
+                "name": "identify",
+                "start": 481,
+                "end": 533
+            },
+            {
+                "name": "random_item",
+                "start": 537,
+                "end": 549
+            },
+            {
+                "name": "stolen_item",
+                "start": 552,
+                "end": 583
+            },
+            {
+                "name": "wish",
+                "start": 586,
+                "end": 661
+            },
+            {
+                "name": "acquire",
+                "start": 664,
+                "end": 807
+            }
+        ],
+        "file.c": [
+            {
+                "name": "checkfopen",
+                "start": 26,
+                "end": 50
+            },
+            {
+                "name": "commandlist",
+                "start": 52,
+                "end": 60
+            },
+            {
+                "name": "user_intro",
+                "start": 63,
+                "end": 69
+            },
+            {
+                "name": "show_license",
+                "start": 71,
+                "end": 77
+            },
+            {
+                "name": "abyss_file",
+                "start": 81,
+                "end": 86
+            },
+            {
+                "name": "inv_help",
+                "start": 91,
+                "end": 97
+            },
+            {
+                "name": "combat_help",
+                "start": 101,
+                "end": 107
+            },
+            {
+                "name": "cityguidefile",
+                "start": 112,
+                "end": 118
+            },
+            {
+                "name": "wishfile",
+                "start": 121,
+                "end": 127
+            },
+            {
+                "name": "adeptfile",
+                "start": 129,
+                "end": 135
+            },
+            {
+                "name": "theologyfile",
+                "start": 137,
+                "end": 143
+            },
+            {
+                "name": "showmotd",
+                "start": 146,
+                "end": 151
+            },
+            {
+                "name": "lock_score_file",
+                "start": 154,
+                "end": 205
+            },
+            {
+                "name": "unlock_score_file",
+                "start": 207,
+                "end": 214
+            },
+            {
+                "name": "showscores",
+                "start": 216,
+                "end": 293
+            },
+            {
+                "name": "save_hiscore_npc",
+                "start": 297,
+                "end": 390
+            },
+            {
+                "name": "checkhigh",
+                "start": 392,
+                "end": 428
+            },
+            {
+                "name": "extendlog",
+                "start": 430,
+                "end": 446
+            },
+            {
+                "name": "filescanstring",
+                "start": 453,
+                "end": 466
+            },
+            {
+                "name": "test_file_access",
+                "start": 484,
+                "end": 496
+            },
+            {
+                "name": "filecheck",
+                "start": 520,
+                "end": 579
+            },
+            {
+                "name": "displayfile",
+                "start": 582,
+                "end": 613
+            },
+            {
+                "name": "displaycryptfile",
+                "start": 616,
+                "end": 650
+            },
+            {
+                "name": "copyfile",
+                "start": 653,
+                "end": 684
+            }
+        ],
+        "city.c": [
+            {
+                "name": "load_city",
+                "start": 13,
+                "end": 373
+            },
+            {
+                "name": "assign_city_function",
+                "start": 376,
+                "end": 519
+            },
+            {
+                "name": "make_justiciar",
+                "start": 525,
+                "end": 538
+            },
+            {
+                "name": "resurrect_guards",
+                "start": 543,
+                "end": 570
+            },
+            {
+                "name": "mazesite",
+                "start": 573,
+                "end": 610
+            },
+            {
+                "name": "randommazesite",
+                "start": 612,
+                "end": 633
+            },
+            {
+                "name": "make_minor_undead",
+                "start": 637,
+                "end": 645
+            },
+            {
+                "name": "make_major_undead",
+                "start": 648,
+                "end": 656
+            },
+            {
+                "name": "repair_jail",
+                "start": 669,
+                "end": 703
+            }
+        ],
+        "site2.c": [
+            {
+                "name": "l_condo",
+                "start": 9,
+                "end": 143
+            },
+            {
+                "name": "gymtrain",
+                "start": 148,
+                "end": 174
+            },
+            {
+                "name": "healforpay",
+                "start": 176,
+                "end": 191
+            },
+            {
+                "name": "cureforpay",
+                "start": 193,
+                "end": 203
+            },
+            {
+                "name": "pacify_guards",
+                "start": 207,
+                "end": 234
+            },
+            {
+                "name": "send_to_jail",
+                "start": 236,
+                "end": 340
+            },
+            {
+                "name": "l_adept",
+                "start": 343,
+                "end": 386
+            },
+            {
+                "name": "l_trifid",
+                "start": 390,
+                "end": 454
+            },
+            {
+                "name": "l_vault",
+                "start": 457,
+                "end": 489
+            },
+            {
+                "name": "l_brothel",
+                "start": 492,
+                "end": 642
+            },
+            {
+                "name": "sign_print",
+                "start": 648,
+                "end": 810
+            },
+            {
+                "name": "l_countryside",
+                "start": 815,
+                "end": 822
+            },
+            {
+                "name": "l_oracle",
+                "start": 826,
+                "end": 909
+            },
+            {
+                "name": "l_mansion",
+                "start": 911,
+                "end": 915
+            },
+            {
+                "name": "l_house",
+                "start": 917,
+                "end": 921
+            },
+            {
+                "name": "l_hovel",
+                "start": 923,
+                "end": 927
+            },
+            {
+                "name": "l_safe",
+                "start": 929,
+                "end": 1005
+            },
+            {
+                "name": "l_cartographer",
+                "start": 1008,
+                "end": 1042
+            },
+            {
+                "name": "l_charity",
+                "start": 1044,
+                "end": 1071
+            },
+            {
+                "name": "l_tourist",
+                "start": 1073,
+                "end": 1147
+            }
+        ],
+        "site1.c": [
+            {
+                "name": "l_armorer",
+                "start": 11,
+                "end": 33
+            },
+            {
+                "name": "buyfromstock",
+                "start": 36,
+                "end": 78
+            },
+            {
+                "name": "l_club",
+                "start": 81,
+                "end": 127
+            },
+            {
+                "name": "l_gym",
+                "start": 129,
+                "end": 181
+            },
+            {
+                "name": "l_healer",
+                "start": 183,
+                "end": 196
+            },
+            {
+                "name": "statue_random",
+                "start": 199,
+                "end": 289
+            },
+            {
+                "name": "l_statue_wake",
+                "start": 291,
+                "end": 297
+            },
+            {
+                "name": "wake_statue",
+                "start": 299,
+                "end": 316
+            },
+            {
+                "name": "l_casino",
+                "start": 319,
+                "end": 449
+            },
+            {
+                "name": "l_commandant",
+                "start": 452,
+                "end": 488
+            },
+            {
+                "name": "l_diner",
+                "start": 491,
+                "end": 505
+            },
+            {
+                "name": "l_crap",
+                "start": 507,
+                "end": 526
+            },
+            {
+                "name": "l_tavern",
+                "start": 528,
+                "end": 706
+            },
+            {
+                "name": "l_alchemist",
+                "start": 709,
+                "end": 782
+            },
+            {
+                "name": "l_dpw",
+                "start": 784,
+                "end": 821
+            },
+            {
+                "name": "l_library",
+                "start": 823,
+                "end": 930
+            },
+            {
+                "name": "l_pawn_shop",
+                "start": 933,
+                "end": 1093
+            }
+        ],
+        "mstrike.c": [
+            {
+                "name": "m_firebolt",
+                "start": 8,
+                "end": 11
+            },
+            {
+                "name": "m_nbolt",
+                "start": 13,
+                "end": 16
+            },
+            {
+                "name": "m_lball",
+                "start": 19,
+                "end": 22
+            },
+            {
+                "name": "m_fireball",
+                "start": 24,
+                "end": 27
+            },
+            {
+                "name": "m_snowball",
+                "start": 30,
+                "end": 33
+            },
+            {
+                "name": "m_blind_strike",
+                "start": 35,
+                "end": 57
+            },
+            {
+                "name": "m_strike_sonic",
+                "start": 62,
+                "end": 72
+            }
+        ],
+        "priest.c": [
+            {
+                "name": "l_altar",
+                "start": 8,
+                "end": 124
+            },
+            {
+                "name": "check_sacrilege",
+                "start": 127,
+                "end": 242
+            },
+            {
+                "name": "increase_priest_rank",
+                "start": 244,
+                "end": 395
+            },
+            {
+                "name": "answer_prayer",
+                "start": 398,
+                "end": 407
+            },
+            {
+                "name": "hp_req_test",
+                "start": 410,
+                "end": 451
+            },
+            {
+                "name": "hp_req_print",
+                "start": 454,
+                "end": 483
+            },
+            {
+                "name": "make_hp",
+                "start": 485,
+                "end": 523
+            }
+        ],
+        "fixstr.c": [
+            {
+                "name": "main",
+                "start": 28,
+                "end": 66
+            },
+            {
+                "name": "do_scan",
+                "start": 71,
+                "end": 123
+            },
+            {
+                "name": "do_output",
+                "start": 125,
+                "end": 142
+            }
+        ],
+        "pdump.c": [
+            {
+                "name": "player_dump",
+                "start": 147,
+                "end": 207
+            },
+            {
+                "name": "strcat_carry_item",
+                "start": 209,
+                "end": 218
+            },
+            {
+                "name": "dump_carried",
+                "start": 220,
+                "end": 308
+            },
+            {
+                "name": "dump_pack",
+                "start": 310,
+                "end": 335
+            },
+            {
+                "name": "dump_condo",
+                "start": 337,
+                "end": 362
+            },
+            {
+                "name": "dump_possessions",
+                "start": 364,
+                "end": 379
+            },
+            {
+                "name": "fill_rank_field",
+                "start": 382,
+                "end": 396
+            },
+            {
+                "name": "dump_ranks",
+                "start": 398,
+                "end": 530
+            },
+            {
+                "name": "dump_in_columns",
+                "start": 534,
+                "end": 565
+            },
+            {
+                "name": "end_dump_in_columns",
+                "start": 567,
+                "end": 580
+            },
+            {
+                "name": "dump_stati",
+                "start": 582,
+                "end": 737
+            },
+            {
+                "name": "dump_immunities",
+                "start": 739,
+                "end": 852
+            },
+            {
+                "name": "dump_options",
+                "start": 857,
+                "end": 891
+            },
+            {
+                "name": "dump_basic",
+                "start": 893,
+                "end": 1019
+            },
+            {
+                "name": "dump",
+                "start": 1021,
+                "end": 1037
+            },
+            {
+                "name": "build_check",
+                "start": 1039,
+                "end": 1071
+            },
+            {
+                "name": "alignment_level_index",
+                "start": 1073,
+                "end": 1093
+            },
+            {
+                "name": "alignment_string",
+                "start": 1107,
+                "end": 1117
+            },
+            {
+                "name": "elapsed_time_string",
+                "start": 1119,
+                "end": 1166
+            },
+            {
+                "name": "legion_rank_string",
+                "start": 1168,
+                "end": 1171
+            },
+            {
+                "name": "arena_rank_string",
+                "start": 1173,
+                "end": 1179
+            },
+            {
+                "name": "college_rank_string",
+                "start": 1181,
+                "end": 1184
+            },
+            {
+                "name": "nobility_rank_string",
+                "start": 1186,
+                "end": 1189
+            },
+            {
+                "name": "circle_rank_string",
+                "start": 1191,
+                "end": 1197
+            },
+            {
+                "name": "order_rank_string",
+                "start": 1199,
+                "end": 1205
+            },
+            {
+                "name": "thieves_rank_string",
+                "start": 1207,
+                "end": 1210
+            },
+            {
+                "name": "priesthood_rank_string",
+                "start": 1212,
+                "end": 1217
+            },
+            {
+                "name": "monk_rank_string",
+                "start": 1219,
+                "end": 1222
+            }
+        ],
+        "time.c": [
+            {
+                "name": "time_clock",
+                "start": 13,
+                "end": 83
+            },
+            {
+                "name": "fix_phantom",
+                "start": 87,
+                "end": 103
+            }
+        ],
+        "env.c": [
+            {
+                "name": "load_arena",
+                "start": 8,
+                "end": 76
+            },
+            {
+                "name": "load_circle",
+                "start": 79,
+                "end": 192
+            },
+            {
+                "name": "make_prime",
+                "start": 195,
+                "end": 217
+            },
+            {
+                "name": "load_court",
+                "start": 221,
+                "end": 312
+            },
+            {
+                "name": "make_archmage",
+                "start": 317,
+                "end": 329
+            }
+        ],
+        "move.c": [
+            {
+                "name": "l_water",
+                "start": 10,
+                "end": 38
+            },
+            {
+                "name": "l_chaos",
+                "start": 42,
+                "end": 82
+            },
+            {
+                "name": "l_hedge",
+                "start": 87,
+                "end": 117
+            },
+            {
+                "name": "l_lava",
+                "start": 121,
+                "end": 138
+            },
+            {
+                "name": "l_fire",
+                "start": 142,
+                "end": 150
+            },
+            {
+                "name": "l_abyss",
+                "start": 152,
+                "end": 213
+            },
+            {
+                "name": "l_lift",
+                "start": 216,
+                "end": 278
+            },
+            {
+                "name": "l_magic_pool",
+                "start": 281,
+                "end": 344
+            },
+            {
+                "name": "l_no_op",
+                "start": 347,
+                "end": 349
+            },
+            {
+                "name": "l_tactical_exit",
+                "start": 352,
+                "end": 365
+            },
+            {
+                "name": "l_rubble",
+                "start": 368,
+                "end": 380
+            },
+            {
+                "name": "l_portcullis_trap",
+                "start": 387,
+                "end": 409
+            },
+            {
+                "name": "l_drop_every_portcullis",
+                "start": 412,
+                "end": 438
+            },
+            {
+                "name": "l_raise_portcullis",
+                "start": 442,
+                "end": 455
+            },
+            {
+                "name": "l_arena_exit",
+                "start": 458,
+                "end": 466
+            },
+            {
+                "name": "l_house_exit",
+                "start": 469,
+                "end": 481
+            },
+            {
+                "name": "l_void",
+                "start": 484,
+                "end": 508
+            },
+            {
+                "name": "l_fire_station",
+                "start": 511,
+                "end": 542
+            },
+            {
+                "name": "l_water_station",
+                "start": 547,
+                "end": 590
+            },
+            {
+                "name": "l_air_station",
+                "start": 595,
+                "end": 626
+            },
+            {
+                "name": "l_earth_station",
+                "start": 631,
+                "end": 663
+            },
+            {
+                "name": "stationcheck",
+                "start": 665,
+                "end": 691
+            },
+            {
+                "name": "l_void_station",
+                "start": 699,
+                "end": 758
+            },
+            {
+                "name": "l_voice1",
+                "start": 761,
+                "end": 765
+            },
+            {
+                "name": "l_voice2",
+                "start": 767,
+                "end": 771
+            },
+            {
+                "name": "l_voice3",
+                "start": 773,
+                "end": 777
+            },
+            {
+                "name": "l_whirlwind",
+                "start": 780,
+                "end": 795
+            },
+            {
+                "name": "l_enter_circle",
+                "start": 798,
+                "end": 804
+            },
+            {
+                "name": "l_circle_library",
+                "start": 806,
+                "end": 809
+            },
+            {
+                "name": "l_tome1",
+                "start": 811,
+                "end": 827
+            },
+            {
+                "name": "l_tome2",
+                "start": 830,
+                "end": 841
+            },
+            {
+                "name": "l_temple_warning",
+                "start": 844,
+                "end": 849
+            },
+            {
+                "name": "l_throne",
+                "start": 851,
+                "end": 943
+            },
+            {
+                "name": "l_escalator",
+                "start": 946,
+                "end": 957
+            },
+            {
+                "name": "l_enter_court",
+                "start": 959,
+                "end": 972
+            },
+            {
+                "name": "l_chaostone",
+                "start": 974,
+                "end": 995
+            },
+            {
+                "name": "l_balancestone",
+                "start": 998,
+                "end": 1033
+            },
+            {
+                "name": "l_lawstone",
+                "start": 1036,
+                "end": 1057
+            },
+            {
+                "name": "l_voidstone",
+                "start": 1060,
+                "end": 1084
+            },
+            {
+                "name": "l_sacrificestone",
+                "start": 1086,
+                "end": 1142
+            },
+            {
+                "name": "l_mindstone",
+                "start": 1144,
+                "end": 1165
+            }
+        ],
+        "mspec.c": [
+            {
+                "name": "m_sp_mp",
+                "start": 8,
+                "end": 23
+            },
+            {
+                "name": "m_sp_ng",
+                "start": 26,
+                "end": 36
+            },
+            {
+                "name": "m_sp_poison_cloud",
+                "start": 40,
+                "end": 48
+            },
+            {
+                "name": "m_sp_explode",
+                "start": 51,
+                "end": 57
+            },
+            {
+                "name": "m_sp_demon",
+                "start": 60,
+                "end": 102
+            },
+            {
+                "name": "m_sp_acid_cloud",
+                "start": 105,
+                "end": 110
+            },
+            {
+                "name": "m_sp_escape",
+                "start": 113,
+                "end": 117
+            },
+            {
+                "name": "m_sp_ghost",
+                "start": 120,
+                "end": 129
+            },
+            {
+                "name": "m_sp_spell",
+                "start": 133,
+                "end": 211
+            },
+            {
+                "name": "m_sp_surprise",
+                "start": 217,
+                "end": 249
+            },
+            {
+                "name": "m_sp_whistleblower",
+                "start": 251,
+                "end": 257
+            },
+            {
+                "name": "m_sp_seductor",
+                "start": 260,
+                "end": 278
+            },
+            {
+                "name": "m_sp_demonlover",
+                "start": 281,
+                "end": 285
+            },
+            {
+                "name": "m_sp_eater",
+                "start": 287,
+                "end": 304
+            },
+            {
+                "name": "m_sp_dragonlord",
+                "start": 307,
+                "end": 351
+            },
+            {
+                "name": "m_sp_blackout",
+                "start": 354,
+                "end": 370
+            },
+            {
+                "name": "m_sp_bogthing",
+                "start": 373,
+                "end": 392
+            },
+            {
+                "name": "m_sp_were",
+                "start": 395,
+                "end": 433
+            },
+            {
+                "name": "m_sp_servant",
+                "start": 436,
+                "end": 442
+            },
+            {
+                "name": "m_sp_av",
+                "start": 445,
+                "end": 452
+            },
+            {
+                "name": "m_sp_lw",
+                "start": 454,
+                "end": 468
+            },
+            {
+                "name": "m_sp_angel",
+                "start": 471,
+                "end": 503
+            },
+            {
+                "name": "m_sp_swarm",
+                "start": 507,
+                "end": 515
+            },
+            {
+                "name": "m_sp_raise",
+                "start": 519,
+                "end": 535
+            },
+            {
+                "name": "m_sp_mb",
+                "start": 539,
+                "end": 568
+            },
+            {
+                "name": "m_sp_mirror",
+                "start": 571,
+                "end": 588
+            },
+            {
+                "name": "m_illusion",
+                "start": 592,
+                "end": 604
+            },
+            {
+                "name": "m_huge_sounds",
+                "start": 608,
+                "end": 614
+            },
+            {
+                "name": "m_thief_f",
+                "start": 618,
+                "end": 651
+            },
+            {
+                "name": "m_summon",
+                "start": 654,
+                "end": 661
+            },
+            {
+                "name": "m_aggravate",
+                "start": 664,
+                "end": 678
+            },
+            {
+                "name": "m_sp_merchant",
+                "start": 682,
+                "end": 695
+            },
+            {
+                "name": "m_sp_court",
+                "start": 699,
+                "end": 711
+            },
+            {
+                "name": "m_sp_lair",
+                "start": 715,
+                "end": 732
+            },
+            {
+                "name": "m_sp_prime",
+                "start": 735,
+                "end": 746
+            }
+        ],
+        "guild1.c": [
+            {
+                "name": "l_merc_guild",
+                "start": 16,
+                "end": 268
+            },
+            {
+                "name": "l_castle",
+                "start": 270,
+                "end": 376
+            },
+            {
+                "name": "l_arena",
+                "start": 379,
+                "end": 615
+            }
+        ],
+        "aux2.c": [
+            {
+                "name": "statmod",
+                "start": 12,
+                "end": 15
+            },
+            {
+                "name": "p_hit",
+                "start": 19,
+                "end": 87
+            },
+            {
+                "name": "player_miss",
+                "start": 90,
+                "end": 111
+            },
+            {
+                "name": "p_fumble",
+                "start": 114,
+                "end": 131
+            },
+            {
+                "name": "drop_weapon",
+                "start": 134,
+                "end": 145
+            },
+            {
+                "name": "break_weapon",
+                "start": 149,
+                "end": 159
+            },
+            {
+                "name": "p_win",
+                "start": 163,
+                "end": 172
+            },
+            {
+                "name": "movecursor",
+                "start": 177,
+                "end": 185
+            },
+            {
+                "name": "p_immune",
+                "start": 189,
+                "end": 192
+            },
+            {
+                "name": "minute_status_check",
+                "start": 198,
+                "end": 292
+            },
+            {
+                "name": "moon_check",
+                "start": 297,
+                "end": 317
+            },
+            {
+                "name": "torch_check",
+                "start": 322,
+                "end": 346
+            },
+            {
+                "name": "tenminute_status_check",
+                "start": 352,
+                "end": 459
+            },
+            {
+                "name": "gain_level",
+                "start": 464,
+                "end": 495
+            },
+            {
+                "name": "expval",
+                "start": 498,
+                "end": 520
+            },
+            {
+                "name": "item_value",
+                "start": 523,
+                "end": 534
+            },
+            {
+                "name": "true_item_value",
+                "start": 538,
+                "end": 550
+            },
+            {
+                "name": "p_drown",
+                "start": 553,
+                "end": 609
+            },
+            {
+                "name": "weapon_use",
+                "start": 613,
+                "end": 634
+            },
+            {
+                "name": "actionlocstr",
+                "start": 638,
+                "end": 647
+            },
+            {
+                "name": "tacplayer",
+                "start": 651,
+                "end": 696
+            },
+            {
+                "name": "player_hit",
+                "start": 702,
+                "end": 736
+            },
+            {
+                "name": "toggle_item_use",
+                "start": 743,
+                "end": 770
+            },
+            {
+                "name": "enter_site",
+                "start": 773,
+                "end": 788
+            },
+            {
+                "name": "change_environment",
+                "start": 793,
+                "end": 1215
+            }
+        ],
+        "omega.c": [
+            {
+                "name": "initrand",
+                "start": 215,
+                "end": 230
+            },
+            {
+                "name": "game_restore",
+                "start": 233,
+                "end": 246
+            },
+            {
+                "name": "signalquit",
+                "start": 248,
+                "end": 251
+            },
+            {
+                "name": "main",
+                "start": 253,
+                "end": 450
+            },
+            {
+                "name": "signalexit",
+                "start": 453,
+                "end": 474
+            },
+            {
+                "name": "init_world",
+                "start": 481,
+                "end": 497
+            },
+            {
+                "name": "inititem",
+                "start": 500,
+                "end": 526
+            }
+        ],
+        "house.c": [
+            {
+                "name": "load_house",
+                "start": 9,
+                "end": 172
+            },
+            {
+                "name": "make_house_npc",
+                "start": 177,
+                "end": 202
+            },
+            {
+                "name": "make_mansion_npc",
+                "start": 206,
+                "end": 223
+            }
+        ],
+        "command2.c": [
+            {
+                "name": "rest",
+                "start": 14,
+                "end": 32
+            },
+            {
+                "name": "peruse",
+                "start": 36,
+                "end": 65
+            },
+            {
+                "name": "quaff",
+                "start": 67,
+                "end": 88
+            },
+            {
+                "name": "activate",
+                "start": 90,
+                "end": 114
+            },
+            {
+                "name": "eat",
+                "start": 117,
+                "end": 152
+            },
+            {
+                "name": "search",
+                "start": 156,
+                "end": 170
+            },
+            {
+                "name": "pickup",
+                "start": 175,
+                "end": 183
+            },
+            {
+                "name": "floor_inv",
+                "start": 188,
+                "end": 204
+            },
+            {
+                "name": "drop",
+                "start": 208,
+                "end": 237
+            },
+            {
+                "name": "talk",
+                "start": 241,
+                "end": 289
+            },
+            {
+                "name": "disarm",
+                "start": 292,
+                "end": 374
+            },
+            {
+                "name": "give",
+                "start": 377,
+                "end": 428
+            },
+            {
+                "name": "zapwand",
+                "start": 432,
+                "end": 460
+            },
+            {
+                "name": "magic",
+                "start": 463,
+                "end": 490
+            },
+            {
+                "name": "upstairs",
+                "start": 494,
+                "end": 513
+            },
+            {
+                "name": "downstairs",
+                "start": 518,
+                "end": 540
+            },
+            {
+                "name": "setoptions",
+                "start": 547,
+                "end": 642
+            },
+            {
+                "name": "callitem",
+                "start": 647,
+                "end": 670
+            },
+            {
+                "name": "opendoor",
+                "start": 674,
+                "end": 715
+            },
+            {
+                "name": "bash_location",
+                "start": 719,
+                "end": 860
+            },
+            {
+                "name": "bash_item",
+                "start": 864,
+                "end": 942
+            },
+            {
+                "name": "save",
+                "start": 947,
+                "end": 1046
+            },
+            {
+                "name": "closedoor",
+                "start": 1049,
+                "end": 1074
+            },
+            {
+                "name": "moveplayer",
+                "start": 1077,
+                "end": 1136
+            },
+            {
+                "name": "movepincountry",
+                "start": 1140,
+                "end": 1219
+            }
+        ],
+        "inv.c": [
+            {
+                "name": "drop_money",
+                "start": 24,
+                "end": 38
+            },
+            {
+                "name": "detach_money",
+                "start": 43,
+                "end": 59
+            },
+            {
+                "name": "get_money",
+                "start": 63,
+                "end": 72
+            },
+            {
+                "name": "pickup_at",
+                "start": 79,
+                "end": 109
+            },
+            {
+                "name": "key_to_index",
+                "start": 118,
+                "end": 129
+            },
+            {
+                "name": "index_to_key",
+                "start": 131,
+                "end": 136
+            },
+            {
+                "name": "aux_slottable",
+                "start": 141,
+                "end": 171
+            },
+            {
+                "name": "drop_at",
+                "start": 175,
+                "end": 193
+            },
+            {
+                "name": "p_drop_at",
+                "start": 196,
+                "end": 215
+            },
+            {
+                "name": "itemid",
+                "start": 219,
+                "end": 274
+            },
+            {
+                "name": "cashstr",
+                "start": 276,
+                "end": 285
+            },
+            {
+                "name": "setplustr",
+                "start": 288,
+                "end": 301
+            },
+            {
+                "name": "setnumstr",
+                "start": 304,
+                "end": 322
+            },
+            {
+                "name": "setchargestr",
+                "start": 326,
+                "end": 349
+            },
+            {
+                "name": "give_money",
+                "start": 352,
+                "end": 360
+            },
+            {
+                "name": "lawbringer_gets_gem",
+                "start": 363,
+                "end": 384
+            },
+            {
+                "name": "givemonster",
+                "start": 386,
+                "end": 447
+            },
+            {
+                "name": "conform_lost_object",
+                "start": 452,
+                "end": 455
+            },
+            {
+                "name": "dispose_lost_objects",
+                "start": 461,
+                "end": 483
+            },
+            {
+                "name": "conform_lost_objects",
+                "start": 488,
+                "end": 505
+            },
+            {
+                "name": "conform_unused_object",
+                "start": 509,
+                "end": 517
+            },
+            {
+                "name": "item_is_selectable",
+                "start": 528,
+                "end": 538
+            },
+            {
+                "name": "getitem",
+                "start": 540,
+                "end": 543
+            },
+            {
+                "name": "getitem_prompt",
+                "start": 545,
+                "end": 639
+            },
+            {
+                "name": "badobject",
+                "start": 644,
+                "end": 649
+            },
+            {
+                "name": "baditem",
+                "start": 654,
+                "end": 658
+            },
+            {
+                "name": "gain_item",
+                "start": 664,
+                "end": 684
+            },
+            {
+                "name": "push_pack",
+                "start": 687,
+                "end": 694
+            },
+            {
+                "name": "add_to_pack",
+                "start": 697,
+                "end": 707
+            },
+            {
+                "name": "get_to_pack",
+                "start": 710,
+                "end": 722
+            },
+            {
+                "name": "pack_item_cost",
+                "start": 724,
+                "end": 735
+            },
+            {
+                "name": "use_pack_item",
+                "start": 738,
+                "end": 771
+            },
+            {
+                "name": "aux_display_pack",
+                "start": 775,
+                "end": 820
+            },
+            {
+                "name": "aux_take_from_pack",
+                "start": 824,
+                "end": 882
+            },
+            {
+                "name": "aux_top_take_from_pack",
+                "start": 886,
+                "end": 916
+            },
+            {
+                "name": "take_from_pack",
+                "start": 918,
+                "end": 922
+            },
+            {
+                "name": "item_inventory",
+                "start": 927,
+                "end": 934
+            },
+            {
+                "name": "do_inventory_control",
+                "start": 938,
+                "end": 946
+            },
+            {
+                "name": "inventory_control",
+                "start": 952,
+                "end": 1130
+            },
+            {
+                "name": "inv_display_munge",
+                "start": 1135,
+                "end": 1138
+            },
+            {
+                "name": "inv_display_refresh",
+                "start": 1140,
+                "end": 1145
+            },
+            {
+                "name": "top_inventory_control",
+                "start": 1151,
+                "end": 1273
+            },
+            {
+                "name": "get_inventory_slot",
+                "start": 1278,
+                "end": 1290
+            },
+            {
+                "name": "get_item_number",
+                "start": 1294,
+                "end": 1310
+            },
+            {
+                "name": "drop_from_slot",
+                "start": 1312,
+                "end": 1331
+            },
+            {
+                "name": "put_to_pack",
+                "start": 1334,
+                "end": 1352
+            },
+            {
+                "name": "split_item",
+                "start": 1358,
+                "end": 1369
+            },
+            {
+                "name": "switch_to_slot",
+                "start": 1378,
+                "end": 1489
+            },
+            {
+                "name": "merge_item",
+                "start": 1496,
+                "end": 1501
+            },
+            {
+                "name": "objequal",
+                "start": 1506,
+                "end": 1526
+            },
+            {
+                "name": "slottable",
+                "start": 1529,
+                "end": 1564
+            },
+            {
+                "name": "item_useable",
+                "start": 1569,
+                "end": 1604
+            },
+            {
+                "name": "cursed",
+                "start": 1609,
+                "end": 1616
+            },
+            {
+                "name": "find_item",
+                "start": 1622,
+                "end": 1644
+            },
+            {
+                "name": "find_and_remove_item",
+                "start": 1650,
+                "end": 1678
+            },
+            {
+                "name": "lose_all_items",
+                "start": 1681,
+                "end": 1700
+            },
+            {
+                "name": "pack_extra_items",
+                "start": 1704,
+                "end": 1724
+            },
+            {
+                "name": "fixpack",
+                "start": 1728,
+                "end": 1739
+            },
+            {
+                "name": "show_inventory_slot",
+                "start": 1744,
+                "end": 1764
+            }
+        ],
+        "tools/bwt.c": [
+            {
+                "name": "BWT_Compare",
+                "start": 43,
+                "end": 49
+            },
+            {
+                "name": "BWT_Transform",
+                "start": 60,
+                "end": 113
+            },
+            {
+                "name": "BWT_Detransform",
+                "start": 115,
+                "end": 206
+            }
+        ],
+        "tools/makedate.c": [
+            {
+                "name": "main",
+                "start": 9,
+                "end": 20
+            }
+        ],
+        "tools/crypt.c": [
+            {
+                "name": "error",
+                "start": 23,
+                "end": 32
+            },
+            {
+                "name": "unique",
+                "start": 34,
+                "end": 46
+            },
+            {
+                "name": "fputint",
+                "start": 48,
+                "end": 56
+            },
+            {
+                "name": "fputshort",
+                "start": 58,
+                "end": 64
+            },
+            {
+                "name": "rle_encode",
+                "start": 71,
+                "end": 111
+            },
+            {
+                "name": "encode",
+                "start": 113,
+                "end": 119
+            },
+            {
+                "name": "main",
+                "start": 121,
+                "end": 240
+            }
+        ],
+        "tools/decrypt.c": [
+            {
+                "name": "error",
+                "start": 19,
+                "end": 27
+            },
+            {
+                "name": "fgetint",
+                "start": 29,
+                "end": 43
+            },
+            {
+                "name": "fgetshort",
+                "start": 45,
+                "end": 57
+            },
+            {
+                "name": "rle_decode",
+                "start": 59,
+                "end": 85
+            },
+            {
+                "name": "decode",
+                "start": 87,
+                "end": 95
+            },
+            {
+                "name": "main",
+                "start": 97,
+                "end": 179
+            }
+        ]
+    }
+}

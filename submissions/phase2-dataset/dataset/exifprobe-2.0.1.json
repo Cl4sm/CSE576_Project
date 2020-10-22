@@ -1,0 +1,3055 @@
+{
+    "exifprobe-2.0.1": {
+        "extern.h": [
+            {
+                "name": "process_tiff_ifd",
+                "start": 49,
+                "end": 52
+            },
+            {
+                "name": "process_exif_ifd",
+                "start": 53,
+                "end": 56
+            },
+            {
+                "name": "process_gps_ifd",
+                "start": 57,
+                "end": 60
+            },
+            {
+                "name": "process_subifd",
+                "start": 61,
+                "end": 64
+            },
+            {
+                "name": "process_makernote",
+                "start": 65,
+                "end": 68
+            },
+            {
+                "name": "process_app0",
+                "start": 69,
+                "end": 71
+            },
+            {
+                "name": "process_app1",
+                "start": 72,
+                "end": 74
+            },
+            {
+                "name": "process_app3",
+                "start": 75,
+                "end": 77
+            },
+            {
+                "name": "process_app12",
+                "start": 78,
+                "end": 80
+            },
+            {
+                "name": "process_appn",
+                "start": 81,
+                "end": 83
+            },
+            {
+                "name": "process_jpeg_segments",
+                "start": 84,
+                "end": 87
+            },
+            {
+                "name": "process_pim",
+                "start": 88,
+                "end": 90
+            },
+            {
+                "name": "print_cfapattern",
+                "start": 135,
+                "end": 136
+            },
+            {
+                "name": "print_entry",
+                "start": 173,
+                "end": 175
+            },
+            {
+                "name": "print_offset_value",
+                "start": 186,
+                "end": 188
+            },
+            {
+                "name": "sum_strip_bytecounts",
+                "start": 189,
+                "end": 190
+            },
+            {
+                "name": "hexdump",
+                "start": 209,
+                "end": 210
+            },
+            {
+                "name": "interpret_offset_value",
+                "start": 214,
+                "end": 215
+            },
+            {
+                "name": "process_private_ifd",
+                "start": 218,
+                "end": 221
+            },
+            {
+                "name": "print_private_entry",
+                "start": 222,
+                "end": 225
+            },
+            {
+                "name": "print_offset_pe_value",
+                "start": 229,
+                "end": 232
+            },
+            {
+                "name": "print_private_offset_value",
+                "start": 235,
+                "end": 237
+            }
+        ],
+        "ciff_extern.h": [
+            {
+                "name": "process_ciff",
+                "start": 23,
+                "end": 25
+            },
+            {
+                "name": "process_ciff_dir",
+                "start": 26,
+                "end": 28
+            },
+            {
+                "name": "process_ciff_direntry",
+                "start": 29,
+                "end": 31
+            },
+            {
+                "name": "read_ciff_direntry",
+                "start": 32,
+                "end": 33
+            },
+            {
+                "name": "print_ciff_value",
+                "start": 36,
+                "end": 39
+            },
+            {
+                "name": "print_ciffinheapdata",
+                "start": 42,
+                "end": 44
+            },
+            {
+                "name": "print_ciffinrecdata",
+                "start": 45,
+                "end": 47
+            }
+        ],
+        "interpret.c": [
+            {
+                "name": "print_offset_epcfapattern",
+                "start": 43,
+                "end": 44
+            },
+            {
+                "name": "interpret_value",
+                "start": 69,
+                "end": 175
+            },
+            {
+                "name": "interpret_offset_value",
+                "start": 177,
+                "end": 220
+            },
+            {
+                "name": "print_compression",
+                "start": 222,
+                "end": 235
+            },
+            {
+                "name": "print_photometric",
+                "start": 237,
+                "end": 278
+            },
+            {
+                "name": "print_orientation",
+                "start": 280,
+                "end": 300
+            },
+            {
+                "name": "print_resunit",
+                "start": 302,
+                "end": 317
+            },
+            {
+                "name": "print_epfpresunit",
+                "start": 319,
+                "end": 336
+            },
+            {
+                "name": "print_epcfapattern",
+                "start": 338,
+                "end": 358
+            },
+            {
+                "name": "print_offset_epcfapattern",
+                "start": 360,
+                "end": 386
+            },
+            {
+                "name": "print_colorspace",
+                "start": 388,
+                "end": 402
+            },
+            {
+                "name": "print_meteringmode",
+                "start": 404,
+                "end": 424
+            },
+            {
+                "name": "print_sensingmethod",
+                "start": 427,
+                "end": 447
+            },
+            {
+                "name": "print_exposureprogram",
+                "start": 449,
+                "end": 473
+            },
+            {
+                "name": "print_componentsconfig",
+                "start": 475,
+                "end": 502
+            },
+            {
+                "name": "print_newsubfiletype",
+                "start": 505,
+                "end": 521
+            },
+            {
+                "name": "print_oldsubfiletype",
+                "start": 524,
+                "end": 538
+            },
+            {
+                "name": "print_planarconfig",
+                "start": 540,
+                "end": 554
+            },
+            {
+                "name": "print_jpegproc",
+                "start": 556,
+                "end": 570
+            },
+            {
+                "name": "print_ycbcrpositioning",
+                "start": 572,
+                "end": 586
+            },
+            {
+                "name": "print_lightsource",
+                "start": 588,
+                "end": 623
+            },
+            {
+                "name": "print_flash",
+                "start": 625,
+                "end": 660
+            },
+            {
+                "name": "print_filesource",
+                "start": 662,
+                "end": 678
+            },
+            {
+                "name": "print_scenetype",
+                "start": 680,
+                "end": 692
+            },
+            {
+                "name": "print_custom",
+                "start": 694,
+                "end": 708
+            },
+            {
+                "name": "print_exposuremode",
+                "start": 710,
+                "end": 725
+            },
+            {
+                "name": "print_whitebalance",
+                "start": 727,
+                "end": 741
+            },
+            {
+                "name": "print_35mmfocallength",
+                "start": 743,
+                "end": 749
+            },
+            {
+                "name": "print_capturetype",
+                "start": 751,
+                "end": 767
+            },
+            {
+                "name": "print_gaincontrol",
+                "start": 769,
+                "end": 786
+            },
+            {
+                "name": "print_contrast",
+                "start": 788,
+                "end": 803
+            },
+            {
+                "name": "print_saturation",
+                "start": 805,
+                "end": 820
+            },
+            {
+                "name": "print_sharpness",
+                "start": 822,
+                "end": 837
+            },
+            {
+                "name": "print_subjectdistancerange",
+                "start": 839,
+                "end": 855
+            },
+            {
+                "name": "print_aperture",
+                "start": 859,
+                "end": 874
+            },
+            {
+                "name": "print_shutterspeed",
+                "start": 876,
+                "end": 891
+            },
+            {
+                "name": "print_brightness",
+                "start": 893,
+                "end": 908
+            }
+        ],
+        "x3f_extern.h": [
+            {
+                "name": "process_x3f",
+                "start": 22,
+                "end": 24
+            },
+            {
+                "name": "process_x3f_dir",
+                "start": 25,
+                "end": 27
+            },
+            {
+                "name": "process_x3f_direntry",
+                "start": 28,
+                "end": 30
+            },
+            {
+                "name": "read_x3f_direntry",
+                "start": 31,
+                "end": 33
+            },
+            {
+                "name": "print_x3f_direntry",
+                "start": 34,
+                "end": 35
+            },
+            {
+                "name": "display_x3f_imag_header",
+                "start": 39,
+                "end": 40
+            },
+            {
+                "name": "display_x3f_prop_header",
+                "start": 41,
+                "end": 42
+            },
+            {
+                "name": "display_x3f_camf_header",
+                "start": 43,
+                "end": 44
+            },
+            {
+                "name": "process_x3f_props",
+                "start": 45,
+                "end": 46
+            },
+            {
+                "name": "print_property",
+                "start": 47,
+                "end": 48
+            }
+        ],
+        "readfile.c": [
+            {
+                "name": "read_imageheader",
+                "start": 58,
+                "end": 198
+            },
+            {
+                "name": "read_ifd_entry",
+                "start": 206,
+                "end": 260
+            },
+            {
+                "name": "read_ushort",
+                "start": 265,
+                "end": 308
+            },
+            {
+                "name": "read_ubyte",
+                "start": 313,
+                "end": 356
+            },
+            {
+                "name": "read_ulong",
+                "start": 364,
+                "end": 407
+            },
+            {
+                "name": "read_float",
+                "start": 410,
+                "end": 419
+            },
+            {
+                "name": "read_ulong64",
+                "start": 424,
+                "end": 451
+            },
+            {
+                "name": "to_ulong64",
+                "start": 453,
+                "end": 478
+            },
+            {
+                "name": "read_double",
+                "start": 485,
+                "end": 513
+            },
+            {
+                "name": "read_bytes",
+                "start": 518,
+                "end": 578
+            },
+            {
+                "name": "to_ushort",
+                "start": 585,
+                "end": 602
+            },
+            {
+                "name": "to_ulong",
+                "start": 609,
+                "end": 625
+            },
+            {
+                "name": "to_float",
+                "start": 636,
+                "end": 644
+            },
+            {
+                "name": "to_double",
+                "start": 655,
+                "end": 680
+            },
+            {
+                "name": "read_appstring",
+                "start": 685,
+                "end": 711
+            },
+            {
+                "name": "read_string",
+                "start": 717,
+                "end": 778
+            },
+            {
+                "name": "ateof",
+                "start": 780,
+                "end": 789
+            },
+            {
+                "name": "get_filesize",
+                "start": 796,
+                "end": 817
+            }
+        ],
+        "maker_extern.h": [
+            {
+                "name": "find_makerscheme",
+                "start": 34,
+                "end": 38
+            },
+            {
+                "name": "print_makerentry",
+                "start": 39,
+                "end": 43
+            },
+            {
+                "name": "print_offset_makervalue",
+                "start": 45,
+                "end": 50
+            },
+            {
+                "name": "print_generic_offset_makervalue",
+                "start": 52,
+                "end": 56
+            },
+            {
+                "name": "print_agfa_offset_makervalue",
+                "start": 74,
+                "end": 79
+            },
+            {
+                "name": "agfa1_offset_makervalue",
+                "start": 80,
+                "end": 85
+            },
+            {
+                "name": "agfa1_interpret_offset_makervalue",
+                "start": 87,
+                "end": 89
+            },
+            {
+                "name": "print_asahi_offset_makervalue",
+                "start": 100,
+                "end": 105
+            },
+            {
+                "name": "asahi1_offset_makervalue",
+                "start": 106,
+                "end": 111
+            },
+            {
+                "name": "asahi2_offset_makervalue",
+                "start": 112,
+                "end": 117
+            },
+            {
+                "name": "print_casio_offset_makervalue",
+                "start": 136,
+                "end": 141
+            },
+            {
+                "name": "casio1_offset_makervalue",
+                "start": 142,
+                "end": 147
+            },
+            {
+                "name": "casio2_offset_makervalue",
+                "start": 148,
+                "end": 153
+            },
+            {
+                "name": "print_epson_offset_makervalue",
+                "start": 165,
+                "end": 170
+            },
+            {
+                "name": "epson1_offset_makervalue",
+                "start": 171,
+                "end": 176
+            },
+            {
+                "name": "epson1_interpret_offset_makervalue",
+                "start": 178,
+                "end": 180
+            },
+            {
+                "name": "print_fujifilm_offset_makervalue",
+                "start": 189,
+                "end": 194
+            },
+            {
+                "name": "fujifilm1_offset_makervalue",
+                "start": 195,
+                "end": 200
+            },
+            {
+                "name": "print_konica_offset_makervalue",
+                "start": 216,
+                "end": 221
+            },
+            {
+                "name": "konica1_offset_makervalue",
+                "start": 222,
+                "end": 227
+            },
+            {
+                "name": "print_kyocera_offset_makervalue",
+                "start": 236,
+                "end": 241
+            },
+            {
+                "name": "kyocera1_offset_makervalue",
+                "start": 242,
+                "end": 247
+            },
+            {
+                "name": "print_leica_offset_makervalue",
+                "start": 256,
+                "end": 261
+            },
+            {
+                "name": "leica1_offset_makervalue",
+                "start": 262,
+                "end": 267
+            },
+            {
+                "name": "print_minolta_offset_makervalue",
+                "start": 277,
+                "end": 282
+            },
+            {
+                "name": "minolta1_offset_makervalue",
+                "start": 283,
+                "end": 288
+            },
+            {
+                "name": "minolta1_interpret_offset_makervalue",
+                "start": 290,
+                "end": 292
+            },
+            {
+                "name": "minolta_camerasetting",
+                "start": 295,
+                "end": 297
+            },
+            {
+                "name": "print_nikon_offset_makervalue",
+                "start": 306,
+                "end": 311
+            },
+            {
+                "name": "nikon1_offset_makervalue",
+                "start": 312,
+                "end": 317
+            },
+            {
+                "name": "nikon2_offset_makervalue",
+                "start": 318,
+                "end": 323
+            },
+            {
+                "name": "nikon2_interpret_offset_makervalue",
+                "start": 326,
+                "end": 329
+            },
+            {
+                "name": "nikon_colorbalance",
+                "start": 330,
+                "end": 331
+            },
+            {
+                "name": "print_olympus_offset_makervalue",
+                "start": 341,
+                "end": 346
+            },
+            {
+                "name": "olympus1_offset_makervalue",
+                "start": 347,
+                "end": 352
+            },
+            {
+                "name": "olympus1_interpret_offset_makervalue",
+                "start": 354,
+                "end": 356
+            },
+            {
+                "name": "olympus_offset_pe_value",
+                "start": 366,
+                "end": 369
+            },
+            {
+                "name": "olympus1_offset_pe_value",
+                "start": 370,
+                "end": 373
+            },
+            {
+                "name": "olympus2010_offset_value",
+                "start": 374,
+                "end": 378
+            },
+            {
+                "name": "olympus2020_offset_value",
+                "start": 379,
+                "end": 383
+            },
+            {
+                "name": "olympus2030_offset_value",
+                "start": 384,
+                "end": 388
+            },
+            {
+                "name": "olympus2040_offset_value",
+                "start": 389,
+                "end": 393
+            },
+            {
+                "name": "olympus2050_offset_value",
+                "start": 394,
+                "end": 398
+            },
+            {
+                "name": "olympus1_interpret_offset_pe_value",
+                "start": 399,
+                "end": 401
+            },
+            {
+                "name": "olympus2010_interpret_offset_value",
+                "start": 402,
+                "end": 403
+            },
+            {
+                "name": "olympus2020_interpret_offset_value",
+                "start": 404,
+                "end": 405
+            },
+            {
+                "name": "olympus2030_interpret_offset_value",
+                "start": 406,
+                "end": 407
+            },
+            {
+                "name": "olympus2040_interpret_offset_value",
+                "start": 408,
+                "end": 409
+            },
+            {
+                "name": "olympus2050_interpret_offset_value",
+                "start": 410,
+                "end": 411
+            },
+            {
+                "name": "print_panasonic_offset_makervalue",
+                "start": 429,
+                "end": 434
+            },
+            {
+                "name": "panasonic1_offset_makervalue",
+                "start": 435,
+                "end": 440
+            },
+            {
+                "name": "panasonic1_interpret_offset_makervalue",
+                "start": 442,
+                "end": 444
+            },
+            {
+                "name": "print_sanyo_offset_makervalue",
+                "start": 456,
+                "end": 461
+            },
+            {
+                "name": "sanyo1_offset_makervalue",
+                "start": 462,
+                "end": 467
+            },
+            {
+                "name": "sanyo1_interpret_offset_makervalue",
+                "start": 469,
+                "end": 471
+            },
+            {
+                "name": "print_sigma_offset_makervalue",
+                "start": 480,
+                "end": 485
+            },
+            {
+                "name": "sigma1_offset_makervalue",
+                "start": 486,
+                "end": 491
+            },
+            {
+                "name": "print_sony_offset_makervalue",
+                "start": 499,
+                "end": 504
+            },
+            {
+                "name": "sony1_offset_makervalue",
+                "start": 505,
+                "end": 510
+            },
+            {
+                "name": "print_toshiba_offset_makervalue",
+                "start": 519,
+                "end": 524
+            },
+            {
+                "name": "toshiba1_offset_makervalue",
+                "start": 525,
+                "end": 530
+            }
+        ],
+        "canon_extern.h": [
+            {
+                "name": "print_canon_offset_makervalue",
+                "start": 24,
+                "end": 27
+            },
+            {
+                "name": "canon1_offset_makervalue",
+                "start": 28,
+                "end": 31
+            },
+            {
+                "name": "canon_camera_settings",
+                "start": 33,
+                "end": 34
+            },
+            {
+                "name": "canon_shotinfo",
+                "start": 35,
+                "end": 36
+            },
+            {
+                "name": "canon_customfunctions",
+                "start": 37,
+                "end": 38
+            },
+            {
+                "name": "canon_customfunctions_unk",
+                "start": 39,
+                "end": 40
+            },
+            {
+                "name": "canon_customfunctionsD30",
+                "start": 41,
+                "end": 42
+            },
+            {
+                "name": "canon_customfunctions10D",
+                "start": 43,
+                "end": 44
+            },
+            {
+                "name": "canon_customfunctions20D",
+                "start": 45,
+                "end": 46
+            },
+            {
+                "name": "canon_customfunctions1D",
+                "start": 47,
+                "end": 48
+            },
+            {
+                "name": "canon_sensorinfo",
+                "start": 49,
+                "end": 50
+            },
+            {
+                "name": "canon_pictureinfo",
+                "start": 51,
+                "end": 52
+            },
+            {
+                "name": "canon_colorspace",
+                "start": 53,
+                "end": 54
+            },
+            {
+                "name": "canon_whitebalancetable",
+                "start": 55,
+                "end": 56
+            },
+            {
+                "name": "canon_imageinfo",
+                "start": 57,
+                "end": 59
+            },
+            {
+                "name": "canon_exposureinfo",
+                "start": 60,
+                "end": 62
+            },
+            {
+                "name": "canon_focusinfo",
+                "start": 63,
+                "end": 64
+            },
+            {
+                "name": "canon_ct_to_datetime",
+                "start": 65,
+                "end": 66
+            }
+        ],
+        "maker_canon.c": [
+            {
+                "name": "canon_model_number",
+                "start": 47,
+                "end": 64
+            },
+            {
+                "name": "print_canon_makervalue",
+                "start": 69,
+                "end": 94
+            },
+            {
+                "name": "print_canon1_makervalue",
+                "start": 103,
+                "end": 122
+            },
+            {
+                "name": "print_canon_serialno",
+                "start": 129,
+                "end": 143
+            },
+            {
+                "name": "print_canon_offset_makervalue",
+                "start": 151,
+                "end": 188
+            },
+            {
+                "name": "canon1_offset_makervalue",
+                "start": 193,
+                "end": 448
+            },
+            {
+                "name": "maker_canon_tagname",
+                "start": 455,
+                "end": 499
+            },
+            {
+                "name": "maker_canon1_tagname",
+                "start": 501,
+                "end": 532
+            },
+            {
+                "name": "canon1_interpret_value",
+                "start": 544,
+                "end": 551
+            },
+            {
+                "name": "canon_camera_settings",
+                "start": 558,
+                "end": 1114
+            },
+            {
+                "name": "canon_shotinfo",
+                "start": 1119,
+                "end": 1384
+            },
+            {
+                "name": "canon_customfunctions",
+                "start": 1387,
+                "end": 1417
+            },
+            {
+                "name": "canon_customfunctions_unk",
+                "start": 1422,
+                "end": 1470
+            },
+            {
+                "name": "canon_customfunctionsD30",
+                "start": 1474,
+                "end": 1776
+            },
+            {
+                "name": "canon_customfunctions10D",
+                "start": 1780,
+                "end": 2131
+            },
+            {
+                "name": "canon_customfunctions20D",
+                "start": 2135,
+                "end": 2489
+            },
+            {
+                "name": "canon_customfunctions1D",
+                "start": 2493,
+                "end": 2908
+            },
+            {
+                "name": "canon_sensorinfo",
+                "start": 2910,
+                "end": 3011
+            },
+            {
+                "name": "canon_whitebalancetable",
+                "start": 3015,
+                "end": 3180
+            },
+            {
+                "name": "canon_pictureinfo",
+                "start": 3187,
+                "end": 3276
+            },
+            {
+                "name": "canon_imageinfo",
+                "start": 3280,
+                "end": 3384
+            },
+            {
+                "name": "canon_exposureinfo",
+                "start": 3388,
+                "end": 3456
+            },
+            {
+                "name": "canon_focusinfo",
+                "start": 3459,
+                "end": 3526
+            },
+            {
+                "name": "maker_canon_value_is_offset",
+                "start": 3534,
+                "end": 3555
+            }
+        ],
+        "mrw_extern.h": [
+            {
+                "name": "process_mrw",
+                "start": 21,
+                "end": 23
+            },
+            {
+                "name": "process_prd",
+                "start": 24,
+                "end": 25
+            },
+            {
+                "name": "process_wbg",
+                "start": 26,
+                "end": 27
+            },
+            {
+                "name": "process_rif",
+                "start": 28,
+                "end": 29
+            }
+        ],
+        "mrw.c": [
+            {
+                "name": "print_mrw_header",
+                "start": 39,
+                "end": 66
+            },
+            {
+                "name": "process_mrw",
+                "start": 71,
+                "end": 217
+            },
+            {
+                "name": "process_prd",
+                "start": 222,
+                "end": 436
+            },
+            {
+                "name": "process_wbg",
+                "start": 440,
+                "end": 751
+            },
+            {
+                "name": "process_rif",
+                "start": 755,
+                "end": 929
+            }
+        ],
+        "misc.c": [
+            {
+                "name": "value_type_size",
+                "start": 29,
+                "end": 60
+            },
+            {
+                "name": "value_type_name",
+                "start": 64,
+                "end": 86
+            },
+            {
+                "name": "print_summary",
+                "start": 107,
+                "end": 144
+            },
+            {
+                "name": "print_image_summary_entry",
+                "start": 148,
+                "end": 228
+            },
+            {
+                "name": "scan_summary",
+                "start": 259,
+                "end": 571
+            },
+            {
+                "name": "print_fileformat",
+                "start": 604,
+                "end": 744
+            },
+            {
+                "name": "find_camera_name",
+                "start": 751,
+                "end": 767
+            },
+            {
+                "name": "print_imageformat",
+                "start": 769,
+                "end": 823
+            },
+            {
+                "name": "print_tiff_compression",
+                "start": 825,
+                "end": 834
+            },
+            {
+                "name": "tiff_compression_string",
+                "start": 836,
+                "end": 881
+            },
+            {
+                "name": "print_jpeg_compression",
+                "start": 883,
+                "end": 912
+            },
+            {
+                "name": "print_jp2c_compression",
+                "start": 914,
+                "end": 946
+            },
+            {
+                "name": "print_crw_compression",
+                "start": 948,
+                "end": 966
+            },
+            {
+                "name": "print_raf_compression",
+                "start": 968,
+                "end": 986
+            },
+            {
+                "name": "print_x3f_compression",
+                "start": 988,
+                "end": 1008
+            },
+            {
+                "name": "print_imagecompression",
+                "start": 1012,
+                "end": 1042
+            },
+            {
+                "name": "print_imagesubformat",
+                "start": 1045,
+                "end": 1095
+            },
+            {
+                "name": "print_imagesubtype",
+                "start": 1097,
+                "end": 1127
+            },
+            {
+                "name": "print_imagesize",
+                "start": 1129,
+                "end": 1151
+            },
+            {
+                "name": "print_location",
+                "start": 1157,
+                "end": 1192
+            },
+            {
+                "name": "sum_strip_bytecounts",
+                "start": 1198,
+                "end": 1223
+            },
+            {
+                "name": "why",
+                "start": 1226,
+                "end": 1231
+            },
+            {
+                "name": "toggle",
+                "start": 1233,
+                "end": 1241
+            },
+            {
+                "name": "clear_memory",
+                "start": 1245,
+                "end": 1255
+            },
+            {
+                "name": "splice",
+                "start": 1260,
+                "end": 1273
+            },
+            {
+                "name": "newline",
+                "start": 1289,
+                "end": 1296
+            },
+            {
+                "name": "setcharsprinted",
+                "start": 1298,
+                "end": 1302
+            },
+            {
+                "name": "charsprinted",
+                "start": 1304,
+                "end": 1308
+            },
+            {
+                "name": "setfilename",
+                "start": 1316,
+                "end": 1320
+            },
+            {
+                "name": "print_filename",
+                "start": 1322,
+                "end": 1334
+            }
+        ],
+        "maker_agfa.c": [
+            {
+                "name": "agfa_model_number",
+                "start": 40,
+                "end": 57
+            },
+            {
+                "name": "print_agfa_makervalue",
+                "start": 61,
+                "end": 82
+            },
+            {
+                "name": "print_agfa1_makervalue",
+                "start": 91,
+                "end": 104
+            },
+            {
+                "name": "print_agfa_offset_makervalue",
+                "start": 108,
+                "end": 139
+            },
+            {
+                "name": "agfa1_offset_makervalue",
+                "start": 145,
+                "end": 272
+            },
+            {
+                "name": "maker_agfa_tagname",
+                "start": 276,
+                "end": 311
+            },
+            {
+                "name": "maker_agfa1_tagname",
+                "start": 313,
+                "end": 335
+            },
+            {
+                "name": "agfa1_interpret_value",
+                "start": 338,
+                "end": 377
+            },
+            {
+                "name": "agfa1_interpret_offset_makervalue",
+                "start": 379,
+                "end": 421
+            }
+        ],
+        "tagnames.c": [
+            {
+                "name": "tagname",
+                "start": 36,
+                "end": 428
+            },
+            {
+                "name": "interop_tagname",
+                "start": 430,
+                "end": 455
+            },
+            {
+                "name": "gps_tagname",
+                "start": 458,
+                "end": 509
+            },
+            {
+                "name": "cifftagname",
+                "start": 511,
+                "end": 591
+            },
+            {
+                "name": "jp2000tagname",
+                "start": 593,
+                "end": 634
+            }
+        ],
+        "maker_fujifilm.c": [
+            {
+                "name": "fujifilm_model_number",
+                "start": 39,
+                "end": 56
+            },
+            {
+                "name": "print_fujifilm_makervalue",
+                "start": 62,
+                "end": 82
+            },
+            {
+                "name": "print_fujifilm1_makervalue",
+                "start": 91,
+                "end": 104
+            },
+            {
+                "name": "print_fujifilm_offset_makervalue",
+                "start": 110,
+                "end": 130
+            },
+            {
+                "name": "maker_fujifilm_tagname",
+                "start": 136,
+                "end": 172
+            },
+            {
+                "name": "maker_fujifilm1_tagname",
+                "start": 174,
+                "end": 201
+            },
+            {
+                "name": "fujifilm1_interpret_value",
+                "start": 207,
+                "end": 373
+            }
+        ],
+        "maker_hp.c": [
+            {
+                "name": "hp_model_number",
+                "start": 26,
+                "end": 43
+            }
+        ],
+        "maker_konica.c": [
+            {
+                "name": "konica_model_number",
+                "start": 40,
+                "end": 58
+            },
+            {
+                "name": "print_konica_makervalue",
+                "start": 64,
+                "end": 83
+            },
+            {
+                "name": "print_konica1_makervalue",
+                "start": 92,
+                "end": 105
+            },
+            {
+                "name": "print_konica_offset_makervalue",
+                "start": 111,
+                "end": 137
+            },
+            {
+                "name": "konica1_offset_makervalue",
+                "start": 142,
+                "end": 185
+            },
+            {
+                "name": "maker_konica_tagname",
+                "start": 199,
+                "end": 215
+            }
+        ],
+        "process.c": [
+            {
+                "name": "process_tiff_ifd",
+                "start": 72,
+                "end": 1528
+            },
+            {
+                "name": "new_summary_entry",
+                "start": 1533,
+                "end": 1630
+            },
+            {
+                "name": "last_summary_entry",
+                "start": 1633,
+                "end": 1642
+            },
+            {
+                "name": "lock_number",
+                "start": 1648,
+                "end": 1686
+            },
+            {
+                "name": "destroy_summary",
+                "start": 1689,
+                "end": 1709
+            },
+            {
+                "name": "process_exif_ifd",
+                "start": 1726,
+                "end": 2035
+            },
+            {
+                "name": "process_subifd",
+                "start": 2042,
+                "end": 2145
+            },
+            {
+                "name": "process_gps_ifd",
+                "start": 2149,
+                "end": 2360
+            },
+            {
+                "name": "forward_scan_for_eoi",
+                "start": 2375,
+                "end": 2376
+            },
+            {
+                "name": "process_jpeg_segments",
+                "start": 2378,
+                "end": 3284
+            },
+            {
+                "name": "jpeg_status",
+                "start": 3288,
+                "end": 3297
+            },
+            {
+                "name": "forward_scan_for_eoi",
+                "start": 3302,
+                "end": 3343
+            },
+            {
+                "name": "process_app0",
+                "start": 3348,
+                "end": 3793
+            },
+            {
+                "name": "process_app1",
+                "start": 3797,
+                "end": 3982
+            },
+            {
+                "name": "process_app3",
+                "start": 3986,
+                "end": 4167
+            },
+            {
+                "name": "process_appn",
+                "start": 4173,
+                "end": 4249
+            },
+            {
+                "name": "process_app12",
+                "start": 4255,
+                "end": 4379
+            },
+            {
+                "name": "skip_past_newline",
+                "start": 4384,
+                "end": 4390
+            },
+            {
+                "name": "skip_to_bracket",
+                "start": 4395,
+                "end": 4405
+            },
+            {
+                "name": "putword",
+                "start": 4420,
+                "end": 4464
+            },
+            {
+                "name": "is_offset",
+                "start": 4472,
+                "end": 4478
+            },
+            {
+                "name": "process_pim",
+                "start": 4505,
+                "end": 4711
+            }
+        ],
+        "maker_asahi.c": [
+            {
+                "name": "asahi_model_number",
+                "start": 48,
+                "end": 65
+            },
+            {
+                "name": "set_asahi_noteversion",
+                "start": 80,
+                "end": 115
+            },
+            {
+                "name": "print_asahi_makervalue",
+                "start": 120,
+                "end": 149
+            },
+            {
+                "name": "print_asahi1_makervalue",
+                "start": 158,
+                "end": 171
+            },
+            {
+                "name": "print_asahi_offset_makervalue",
+                "start": 177,
+                "end": 214
+            },
+            {
+                "name": "asahi1_offset_makervalue",
+                "start": 220,
+                "end": 324
+            },
+            {
+                "name": "asahi2_offset_makervalue",
+                "start": 326,
+                "end": 425
+            },
+            {
+                "name": "maker_asahi_tagname",
+                "start": 430,
+                "end": 469
+            },
+            {
+                "name": "maker_asahi1_tagname",
+                "start": 472,
+                "end": 495
+            },
+            {
+                "name": "maker_asahi2_tagname",
+                "start": 497,
+                "end": 536
+            },
+            {
+                "name": "maker_asahi3_tagname",
+                "start": 538,
+                "end": 574
+            },
+            {
+                "name": "asahi1_interpret_value",
+                "start": 579,
+                "end": 716
+            },
+            {
+                "name": "asahi2_interpret_value",
+                "start": 718,
+                "end": 933
+            },
+            {
+                "name": "asahi3_interpret_value",
+                "start": 935,
+                "end": 1104
+            },
+            {
+                "name": "maker_asahi_value_is_offset",
+                "start": 1116,
+                "end": 1154
+            }
+        ],
+        "maker_olympus.c": [
+            {
+                "name": "olympus_model_number",
+                "start": 45,
+                "end": 62
+            },
+            {
+                "name": "print_olympus_makervalue",
+                "start": 66,
+                "end": 87
+            },
+            {
+                "name": "print_olympus1_makervalue",
+                "start": 96,
+                "end": 109
+            },
+            {
+                "name": "print_olympus_offset_makervalue",
+                "start": 113,
+                "end": 142
+            },
+            {
+                "name": "olympus1_offset_makervalue",
+                "start": 147,
+                "end": 298
+            },
+            {
+                "name": "maker_olympus_tagname",
+                "start": 311,
+                "end": 335
+            },
+            {
+                "name": "maker_olympus1_tagname",
+                "start": 337,
+                "end": 399
+            },
+            {
+                "name": "olympus1_interpret_value",
+                "start": 402,
+                "end": 447
+            },
+            {
+                "name": "olympus1_interpret_offset_makervalue",
+                "start": 449,
+                "end": 491
+            },
+            {
+                "name": "olympus_private_tagname",
+                "start": 495,
+                "end": 521
+            },
+            {
+                "name": "olympus_private_2010_tagname",
+                "start": 523,
+                "end": 552
+            },
+            {
+                "name": "olympus_private_2020_tagname",
+                "start": 554,
+                "end": 593
+            },
+            {
+                "name": "olympus_private_2030_tagname",
+                "start": 595,
+                "end": 621
+            },
+            {
+                "name": "olympus_private_2040_tagname",
+                "start": 623,
+                "end": 647
+            },
+            {
+                "name": "olympus_private_2050_tagname",
+                "start": 649,
+                "end": 667
+            },
+            {
+                "name": "olympus_interpret_pe_value",
+                "start": 669,
+                "end": 696
+            },
+            {
+                "name": "olympus2010_interpret_value",
+                "start": 698,
+                "end": 736
+            },
+            {
+                "name": "olympus2020_interpret_value",
+                "start": 739,
+                "end": 939
+            },
+            {
+                "name": "olympus2030_interpret_value",
+                "start": 942,
+                "end": 953
+            },
+            {
+                "name": "olympus2040_interpret_value",
+                "start": 956,
+                "end": 967
+            },
+            {
+                "name": "olympus2050_interpret_value",
+                "start": 969,
+                "end": 980
+            },
+            {
+                "name": "olympus_offset_pe_value",
+                "start": 985,
+                "end": 1016
+            },
+            {
+                "name": "olympus1_offset_pe_value",
+                "start": 1021,
+                "end": 1070
+            },
+            {
+                "name": "olympus2010_offset_value",
+                "start": 1074,
+                "end": 1116
+            },
+            {
+                "name": "olympus2020_offset_value",
+                "start": 1120,
+                "end": 1237
+            },
+            {
+                "name": "olympus2030_offset_value",
+                "start": 1241,
+                "end": 1276
+            },
+            {
+                "name": "olympus2040_offset_value",
+                "start": 1280,
+                "end": 1315
+            },
+            {
+                "name": "olympus2050_offset_value",
+                "start": 1319,
+                "end": 1354
+            },
+            {
+                "name": "olympus1_interpret_offset_pe_value",
+                "start": 1356,
+                "end": 1384
+            },
+            {
+                "name": "olympus2010_interpret_offset_value",
+                "start": 1386,
+                "end": 1401
+            },
+            {
+                "name": "olympus2020_interpret_offset_value",
+                "start": 1403,
+                "end": 1418
+            },
+            {
+                "name": "olympus2030_interpret_offset_value",
+                "start": 1420,
+                "end": 1435
+            },
+            {
+                "name": "olympus2040_interpret_offset_value",
+                "start": 1437,
+                "end": 1452
+            },
+            {
+                "name": "olympus2050_interpret_offset_value",
+                "start": 1454,
+                "end": 1469
+            },
+            {
+                "name": "olympus_private_value_is_offset",
+                "start": 1471,
+                "end": 1486
+            },
+            {
+                "name": "olympus2020_value_is_offset",
+                "start": 1488,
+                "end": 1501
+            }
+        ],
+        "jp2_extern.h": [
+            {
+                "name": "process_jp2",
+                "start": 23,
+                "end": 24
+            },
+            {
+                "name": "process_jp2_ftyp",
+                "start": 25,
+                "end": 26
+            },
+            {
+                "name": "process_jp2_jp2h",
+                "start": 27,
+                "end": 28
+            },
+            {
+                "name": "process_jp2_ihdr",
+                "start": 29,
+                "end": 30
+            },
+            {
+                "name": "process_jp2_uuid",
+                "start": 31,
+                "end": 32
+            },
+            {
+                "name": "process_jp2_uinf",
+                "start": 33,
+                "end": 34
+            },
+            {
+                "name": "process_jp2_jp2c",
+                "start": 35,
+                "end": 36
+            },
+            {
+                "name": "process_jpeg2000_codestream",
+                "start": 45,
+                "end": 48
+            },
+            {
+                "name": "process_jpc_siz",
+                "start": 50,
+                "end": 52
+            },
+            {
+                "name": "process_jpc_cod",
+                "start": 53,
+                "end": 55
+            },
+            {
+                "name": "process_jpc_qcd",
+                "start": 56,
+                "end": 58
+            }
+        ],
+        "print.c": [
+            {
+                "name": "print_header",
+                "start": 36,
+                "end": 90
+            },
+            {
+                "name": "print_tiff_header",
+                "start": 98,
+                "end": 145
+            },
+            {
+                "name": "print_filetype",
+                "start": 150,
+                "end": 244
+            },
+            {
+                "name": "print_tag_address",
+                "start": 256,
+                "end": 291
+            },
+            {
+                "name": "print_entry",
+                "start": 302,
+                "end": 408
+            },
+            {
+                "name": "is_a_long_offset",
+                "start": 414,
+                "end": 434
+            },
+            {
+                "name": "print_tagid",
+                "start": 441,
+                "end": 474
+            },
+            {
+                "name": "print_taginfo",
+                "start": 484,
+                "end": 534
+            },
+            {
+                "name": "print_value",
+                "start": 540,
+                "end": 691
+            },
+            {
+                "name": "print_offset_value",
+                "start": 705,
+                "end": 902
+            },
+            {
+                "name": "print_ubytes",
+                "start": 909,
+                "end": 973
+            },
+            {
+                "name": "print_sbytes",
+                "start": 980,
+                "end": 1045
+            },
+            {
+                "name": "print_ushort",
+                "start": 1051,
+                "end": 1137
+            },
+            {
+                "name": "print_sshort",
+                "start": 1144,
+                "end": 1210
+            },
+            {
+                "name": "print_ulong",
+                "start": 1217,
+                "end": 1303
+            },
+            {
+                "name": "print_slong",
+                "start": 1310,
+                "end": 1376
+            },
+            {
+                "name": "print_urational",
+                "start": 1383,
+                "end": 1499
+            },
+            {
+                "name": "print_srational",
+                "start": 1501,
+                "end": 1616
+            },
+            {
+                "name": "print_float",
+                "start": 1618,
+                "end": 1678
+            },
+            {
+                "name": "print_double",
+                "start": 1681,
+                "end": 1741
+            },
+            {
+                "name": "print_ascii",
+                "start": 1750,
+                "end": 1819
+            },
+            {
+                "name": "print_unicode",
+                "start": 1827,
+                "end": 1865
+            },
+            {
+                "name": "show_string",
+                "start": 1872,
+                "end": 1929
+            },
+            {
+                "name": "print_user_comment",
+                "start": 1941,
+                "end": 2095
+            },
+            {
+                "name": "pushcolor",
+                "start": 2101,
+                "end": 2117
+            },
+            {
+                "name": "popcolor",
+                "start": 2119,
+                "end": 2130
+            },
+            {
+                "name": "printred",
+                "start": 2132,
+                "end": 2141
+            },
+            {
+                "name": "putcolorchar",
+                "start": 2148,
+                "end": 2163
+            },
+            {
+                "name": "print_cfapattern",
+                "start": 2167,
+                "end": 2346
+            },
+            {
+                "name": "hexdump",
+                "start": 2366,
+                "end": 2466
+            },
+            {
+                "name": "putindent",
+                "start": 2469,
+                "end": 2480
+            },
+            {
+                "name": "extraindent",
+                "start": 2484,
+                "end": 2489
+            },
+            {
+                "name": "print_startvalue",
+                "start": 2492,
+                "end": 2497
+            },
+            {
+                "name": "print_endvalue",
+                "start": 2500,
+                "end": 2505
+            },
+            {
+                "name": "print_byteorder",
+                "start": 2511,
+                "end": 2539
+            },
+            {
+                "name": "print_magic",
+                "start": 2544,
+                "end": 2552
+            },
+            {
+                "name": "print_jpeg_status",
+                "start": 2559,
+                "end": 2578
+            },
+            {
+                "name": "display_end_of_ifd",
+                "start": 2580,
+                "end": 2618
+            },
+            {
+                "name": "dumpsection",
+                "start": 2626,
+                "end": 2645
+            },
+            {
+                "name": "process_private_ifd",
+                "start": 2665,
+                "end": 2895
+            },
+            {
+                "name": "print_private_entry",
+                "start": 2897,
+                "end": 2970
+            },
+            {
+                "name": "private_value_is_offset",
+                "start": 2972,
+                "end": 2986
+            },
+            {
+                "name": "print_private_taginfo",
+                "start": 2988,
+                "end": 3023
+            },
+            {
+                "name": "print_private_tagid",
+                "start": 3025,
+                "end": 3050
+            },
+            {
+                "name": "private_tagname",
+                "start": 3052,
+                "end": 3079
+            },
+            {
+                "name": "interpret_pe_value",
+                "start": 3083,
+                "end": 3098
+            },
+            {
+                "name": "print_offset_pe_value",
+                "start": 3100,
+                "end": 3141
+            },
+            {
+                "name": "print_private_offset_value",
+                "start": 3143,
+                "end": 3244
+            }
+        ],
+        "maker_traveler.c": [
+            {
+                "name": "traveler_model_number",
+                "start": 27,
+                "end": 44
+            }
+        ],
+        "ciff.c": [
+            {
+                "name": "process_ciff",
+                "start": 41,
+                "end": 88
+            },
+            {
+                "name": "process_ciff_dir",
+                "start": 90,
+                "end": 250
+            },
+            {
+                "name": "print_ciff_taginfo",
+                "start": 257,
+                "end": 320
+            },
+            {
+                "name": "print_ciff_value",
+                "start": 327,
+                "end": 360
+            },
+            {
+                "name": "canon_colorspace",
+                "start": 362,
+                "end": 409
+            },
+            {
+                "name": "canon_ct_to_datetime",
+                "start": 413,
+                "end": 456
+            },
+            {
+                "name": "print_ciffinheapdata",
+                "start": 467,
+                "end": 547
+            },
+            {
+                "name": "print_ciffinrecdata",
+                "start": 558,
+                "end": 596
+            },
+            {
+                "name": "process_ciff_direntry",
+                "start": 598,
+                "end": 1534
+            },
+            {
+                "name": "is_compressed_crw",
+                "start": 1542,
+                "end": 1570
+            },
+            {
+                "name": "print_ciff_header",
+                "start": 1575,
+                "end": 1631
+            },
+            {
+                "name": "read_ciffheader",
+                "start": 1633,
+                "end": 1664
+            },
+            {
+                "name": "read_ciff_direntry",
+                "start": 1667,
+                "end": 1683
+            }
+        ],
+        "raf.c": [
+            {
+                "name": "print_raf_header",
+                "start": 44,
+                "end": 65
+            },
+            {
+                "name": "process_raf",
+                "start": 71,
+                "end": 510
+            }
+        ],
+        "maker_ricoh.c": [
+            {
+                "name": "ricoh_model_number",
+                "start": 26,
+                "end": 43
+            }
+        ],
+        "options.c": [
+            {
+                "name": "process_options",
+                "start": 27,
+                "end": 233
+            },
+            {
+                "name": "env_options",
+                "start": 241,
+                "end": 257
+            },
+            {
+                "name": "usage",
+                "start": 259,
+                "end": 318
+            },
+            {
+                "name": "print_version",
+                "start": 322,
+                "end": 333
+            }
+        ],
+        "maker_kyocera.c": [
+            {
+                "name": "kyocera_model_number",
+                "start": 32,
+                "end": 50
+            },
+            {
+                "name": "print_kyocera_makervalue",
+                "start": 56,
+                "end": 76
+            },
+            {
+                "name": "print_kyocera1_makervalue",
+                "start": 85,
+                "end": 98
+            },
+            {
+                "name": "print_kyocera_offset_makervalue",
+                "start": 104,
+                "end": 131
+            },
+            {
+                "name": "kyocera1_offset_makervalue",
+                "start": 136,
+                "end": 178
+            },
+            {
+                "name": "maker_kyocera_tagname",
+                "start": 183,
+                "end": 207
+            }
+        ],
+        "maker_minolta.c": [
+            {
+                "name": "minolta_model_number",
+                "start": 50,
+                "end": 67
+            },
+            {
+                "name": "print_minolta_makervalue",
+                "start": 73,
+                "end": 94
+            },
+            {
+                "name": "print_minolta1_makervalue",
+                "start": 103,
+                "end": 125
+            },
+            {
+                "name": "print_minolta_offset_makervalue",
+                "start": 130,
+                "end": 159
+            },
+            {
+                "name": "minolta1_offset_makervalue",
+                "start": 165,
+                "end": 356
+            },
+            {
+                "name": "maker_minolta_tagname",
+                "start": 365,
+                "end": 399
+            },
+            {
+                "name": "maker_minolta1_tagname",
+                "start": 409,
+                "end": 481
+            },
+            {
+                "name": "minolta1_interpret_value",
+                "start": 484,
+                "end": 579
+            },
+            {
+                "name": "minolta1_interpret_offset_makervalue",
+                "start": 581,
+                "end": 623
+            },
+            {
+                "name": "minolta_camerasetting",
+                "start": 629,
+                "end": 1573
+            },
+            {
+                "name": "maker_minolta_value_is_offset",
+                "start": 1575,
+                "end": 1591
+            }
+        ],
+        "maker_tagnames.c": [
+            {
+                "name": "maker_tagname",
+                "start": 47,
+                "end": 126
+            }
+        ],
+        "maker_generic.c": [
+            {
+                "name": "process_makernote",
+                "start": 72,
+                "end": 725
+            },
+            {
+                "name": "maker_number",
+                "start": 732,
+                "end": 748
+            },
+            {
+                "name": "model_number",
+                "start": 765,
+                "end": 847
+            },
+            {
+                "name": "clear_makerscheme",
+                "start": 924,
+                "end": 929
+            },
+            {
+                "name": "find_makerscheme",
+                "start": 931,
+                "end": 1367
+            },
+            {
+                "name": "find_maker_model",
+                "start": 1375,
+                "end": 1382
+            },
+            {
+                "name": "valid_tiffhdr",
+                "start": 1386,
+                "end": 1415
+            },
+            {
+                "name": "invalid_ifd_entry",
+                "start": 1420,
+                "end": 1463
+            },
+            {
+                "name": "maker_value_is_offset",
+                "start": 1468,
+                "end": 1498
+            },
+            {
+                "name": "check_printable",
+                "start": 1504,
+                "end": 1525
+            },
+            {
+                "name": "setoptionnoteversion",
+                "start": 1540,
+                "end": 1544
+            },
+            {
+                "name": "setnoteversion",
+                "start": 1546,
+                "end": 1553
+            },
+            {
+                "name": "getnoteversion",
+                "start": 1555,
+                "end": 1561
+            },
+            {
+                "name": "setnotetagset",
+                "start": 1568,
+                "end": 1572
+            },
+            {
+                "name": "getnotetagset",
+                "start": 1574,
+                "end": 1578
+            },
+            {
+                "name": "retrieve_makerscheme",
+                "start": 1582,
+                "end": 1590
+            }
+        ],
+        "maker_sigma.c": [
+            {
+                "name": "sigma_model_number",
+                "start": 38,
+                "end": 55
+            },
+            {
+                "name": "print_sigma_makervalue",
+                "start": 59,
+                "end": 78
+            },
+            {
+                "name": "print_sigma1_makervalue",
+                "start": 87,
+                "end": 100
+            },
+            {
+                "name": "print_sigma_offset_makervalue",
+                "start": 105,
+                "end": 131
+            },
+            {
+                "name": "sigma1_offset_makervalue",
+                "start": 136,
+                "end": 161
+            },
+            {
+                "name": "maker_sigma_tagname",
+                "start": 172,
+                "end": 205
+            },
+            {
+                "name": "maker_sigma1_tagname",
+                "start": 207,
+                "end": 240
+            }
+        ],
+        "maker_sony.c": [
+            {
+                "name": "sony_model_number",
+                "start": 40,
+                "end": 58
+            },
+            {
+                "name": "print_sony_makervalue",
+                "start": 64,
+                "end": 84
+            },
+            {
+                "name": "print_sony1_makervalue",
+                "start": 95,
+                "end": 108
+            },
+            {
+                "name": "print_sony_offset_makervalue",
+                "start": 114,
+                "end": 137
+            },
+            {
+                "name": "sony1_offset_makervalue",
+                "start": 142,
+                "end": 184
+            },
+            {
+                "name": "maker_sony_tagname",
+                "start": 198,
+                "end": 226
+            }
+        ],
+        "maker_panasonic.c": [
+            {
+                "name": "panasonic_model_number",
+                "start": 41,
+                "end": 58
+            },
+            {
+                "name": "print_panasonic_makervalue",
+                "start": 64,
+                "end": 85
+            },
+            {
+                "name": "print_panasonic1_makervalue",
+                "start": 94,
+                "end": 107
+            },
+            {
+                "name": "print_panasonic_offset_makervalue",
+                "start": 113,
+                "end": 141
+            },
+            {
+                "name": "panasonic1_offset_makervalue",
+                "start": 146,
+                "end": 187
+            },
+            {
+                "name": "maker_panasonic_tagname",
+                "start": 201,
+                "end": 226
+            },
+            {
+                "name": "maker_panasonic1_tagname",
+                "start": 228,
+                "end": 253
+            },
+            {
+                "name": "panasonic1_interpret_value",
+                "start": 259,
+                "end": 441
+            }
+        ],
+        "maker_sanyo.c": [
+            {
+                "name": "sanyo_model_number",
+                "start": 43,
+                "end": 61
+            },
+            {
+                "name": "print_sanyo_makervalue",
+                "start": 65,
+                "end": 86
+            },
+            {
+                "name": "print_sanyo1_makervalue",
+                "start": 95,
+                "end": 108
+            },
+            {
+                "name": "print_sanyo_offset_makervalue",
+                "start": 113,
+                "end": 142
+            },
+            {
+                "name": "sanyo1_offset_makervalue",
+                "start": 148,
+                "end": 282
+            },
+            {
+                "name": "maker_sanyo_tagname",
+                "start": 296,
+                "end": 329
+            },
+            {
+                "name": "maker_sanyo1_tagname",
+                "start": 331,
+                "end": 368
+            },
+            {
+                "name": "sanyo1_interpret_value",
+                "start": 371,
+                "end": 588
+            },
+            {
+                "name": "sanyo1_interpret_offset_makervalue",
+                "start": 590,
+                "end": 632
+            }
+        ],
+        "maker_kodak.c": [
+            {
+                "name": "kodak_model_number",
+                "start": 26,
+                "end": 43
+            }
+        ],
+        "maker_casio.c": [
+            {
+                "name": "casio_model_number",
+                "start": 45,
+                "end": 62
+            },
+            {
+                "name": "set_casio_noteversion",
+                "start": 68,
+                "end": 101
+            },
+            {
+                "name": "print_casio_makervalue",
+                "start": 106,
+                "end": 131
+            },
+            {
+                "name": "print_casio1_makervalue",
+                "start": 140,
+                "end": 153
+            },
+            {
+                "name": "print_casio_offset_makervalue",
+                "start": 159,
+                "end": 192
+            },
+            {
+                "name": "casio1_offset_makervalue",
+                "start": 197,
+                "end": 281
+            },
+            {
+                "name": "casio2_offset_makervalue",
+                "start": 283,
+                "end": 430
+            },
+            {
+                "name": "maker_casio_tagname",
+                "start": 444,
+                "end": 479
+            },
+            {
+                "name": "maker_casio1_tagname",
+                "start": 482,
+                "end": 505
+            },
+            {
+                "name": "maker_casio2_tagname",
+                "start": 508,
+                "end": 547
+            },
+            {
+                "name": "casio1_interpret_value",
+                "start": 552,
+                "end": 685
+            },
+            {
+                "name": "casio2_interpret_value",
+                "start": 687,
+                "end": 902
+            },
+            {
+                "name": "maker_casio_value_is_offset",
+                "start": 910,
+                "end": 933
+            }
+        ],
+        "maker_leica.c": [
+            {
+                "name": "leica_model_number",
+                "start": 43,
+                "end": 60
+            },
+            {
+                "name": "print_leica_makervalue",
+                "start": 66,
+                "end": 87
+            },
+            {
+                "name": "print_leica1_makervalue",
+                "start": 96,
+                "end": 109
+            },
+            {
+                "name": "print_leica_offset_makervalue",
+                "start": 115,
+                "end": 141
+            },
+            {
+                "name": "leica1_offset_makervalue",
+                "start": 146,
+                "end": 163
+            },
+            {
+                "name": "maker_leica_tagname",
+                "start": 168,
+                "end": 204
+            },
+            {
+                "name": "maker_leica1_tagname",
+                "start": 207,
+                "end": 234
+            },
+            {
+                "name": "leica1_interpret_value",
+                "start": 240,
+                "end": 407
+            }
+        ],
+        "maker_toshiba.c": [
+            {
+                "name": "toshiba_model_number",
+                "start": 36,
+                "end": 53
+            },
+            {
+                "name": "print_toshiba_makervalue",
+                "start": 59,
+                "end": 75
+            },
+            {
+                "name": "print_toshiba1_makervalue",
+                "start": 84,
+                "end": 97
+            },
+            {
+                "name": "print_toshiba_offset_makervalue",
+                "start": 103,
+                "end": 129
+            },
+            {
+                "name": "toshiba1_offset_makervalue",
+                "start": 134,
+                "end": 176
+            },
+            {
+                "name": "maker_toshiba_tagname",
+                "start": 190,
+                "end": 223
+            }
+        ],
+        "print_maker.c": [
+            {
+                "name": "print_makerentry",
+                "start": 42,
+                "end": 106
+            },
+            {
+                "name": "print_makertagid",
+                "start": 120,
+                "end": 142
+            },
+            {
+                "name": "print_makertaginfo",
+                "start": 153,
+                "end": 190
+            },
+            {
+                "name": "print_makervalue",
+                "start": 201,
+                "end": 277
+            },
+            {
+                "name": "print_offset_makervalue",
+                "start": 292,
+                "end": 454
+            },
+            {
+                "name": "print_generic_offset_makervalue",
+                "start": 461,
+                "end": 564
+            },
+            {
+                "name": "print_scheme",
+                "start": 567,
+                "end": 691
+            },
+            {
+                "name": "print_camera_makes",
+                "start": 702,
+                "end": 748
+            },
+            {
+                "name": "print_camera_models",
+                "start": 755,
+                "end": 782
+            },
+            {
+                "name": "fake_strcasestr",
+                "start": 784,
+                "end": 811
+            }
+        ],
+        "main.c": [
+            {
+                "name": "main",
+                "start": 60,
+                "end": 336
+            }
+        ],
+        "x3f.c": [
+            {
+                "name": "read_x3fheader",
+                "start": 36,
+                "end": 77
+            },
+            {
+                "name": "print_x3f_header",
+                "start": 83,
+                "end": 239
+            },
+            {
+                "name": "process_x3f",
+                "start": 245,
+                "end": 290
+            },
+            {
+                "name": "process_x3f_dir",
+                "start": 295,
+                "end": 408
+            },
+            {
+                "name": "process_x3f_direntry",
+                "start": 415,
+                "end": 692
+            },
+            {
+                "name": "print_x3f_direntry",
+                "start": 694,
+                "end": 718
+            },
+            {
+                "name": "read_x3f_direntry",
+                "start": 721,
+                "end": 740
+            },
+            {
+                "name": "read_x3f_imag_header",
+                "start": 742,
+                "end": 762
+            },
+            {
+                "name": "read_x3f_camf_header",
+                "start": 764,
+                "end": 784
+            },
+            {
+                "name": "read_x3f_prop_header",
+                "start": 786,
+                "end": 805
+            },
+            {
+                "name": "display_x3f_imag_header",
+                "start": 807,
+                "end": 948
+            },
+            {
+                "name": "display_x3f_prop_header",
+                "start": 950,
+                "end": 1053
+            },
+            {
+                "name": "display_x3f_camf_header",
+                "start": 1055,
+                "end": 1163
+            },
+            {
+                "name": "process_x3f_props",
+                "start": 1170,
+                "end": 1350
+            },
+            {
+                "name": "print_property",
+                "start": 1356,
+                "end": 1465
+            }
+        ],
+        "jp2000.c": [
+            {
+                "name": "read_jp2box",
+                "start": 47,
+                "end": 88
+            },
+            {
+                "name": "print_jp2_header",
+                "start": 93,
+                "end": 122
+            },
+            {
+                "name": "print_jp2box",
+                "start": 128,
+                "end": 153
+            },
+            {
+                "name": "list_jp2box",
+                "start": 155,
+                "end": 188
+            },
+            {
+                "name": "print_jp2type",
+                "start": 199,
+                "end": 238
+            },
+            {
+                "name": "process_jp2",
+                "start": 242,
+                "end": 340
+            },
+            {
+                "name": "process_jp2_ftyp",
+                "start": 342,
+                "end": 426
+            },
+            {
+                "name": "process_jp2_xml",
+                "start": 435,
+                "end": 480
+            },
+            {
+                "name": "process_jp2_jp2i",
+                "start": 487,
+                "end": 529
+            },
+            {
+                "name": "process_jp2_jp2h",
+                "start": 533,
+                "end": 610
+            },
+            {
+                "name": "process_jp2_ihdr",
+                "start": 614,
+                "end": 753
+            },
+            {
+                "name": "process_jp2_uuid",
+                "start": 755,
+                "end": 856
+            },
+            {
+                "name": "process_jp2_uinf",
+                "start": 864,
+                "end": 913
+            },
+            {
+                "name": "process_jp2_ulst",
+                "start": 917,
+                "end": 985
+            },
+            {
+                "name": "process_jp2_de",
+                "start": 989,
+                "end": 1056
+            },
+            {
+                "name": "process_jp2_colr",
+                "start": 1060,
+                "end": 1166
+            },
+            {
+                "name": "process_jp2_res",
+                "start": 1171,
+                "end": 1499
+            },
+            {
+                "name": "process_jp2_jp2c",
+                "start": 1503,
+                "end": 1531
+            },
+            {
+                "name": "process_jpeg2000_codestream",
+                "start": 1535,
+                "end": 1808
+            },
+            {
+                "name": "process_jpc_siz",
+                "start": 1812,
+                "end": 2039
+            },
+            {
+                "name": "process_jpc_cod",
+                "start": 2046,
+                "end": 2312
+            },
+            {
+                "name": "process_jpc_qcd",
+                "start": 2316,
+                "end": 2433
+            }
+        ],
+        "maker_nikon.c": [
+            {
+                "name": "nikon_model_number",
+                "start": 66,
+                "end": 83
+            },
+            {
+                "name": "set_nikon_noteversion",
+                "start": 95,
+                "end": 129
+            },
+            {
+                "name": "print_nikon_makervalue",
+                "start": 131,
+                "end": 156
+            },
+            {
+                "name": "print_nikon_offset_makervalue",
+                "start": 158,
+                "end": 196
+            },
+            {
+                "name": "nikon1_offset_makervalue",
+                "start": 198,
+                "end": 320
+            },
+            {
+                "name": "nikon2_offset_makervalue",
+                "start": 322,
+                "end": 567
+            },
+            {
+                "name": "maker_nikon_tagname",
+                "start": 578,
+                "end": 600
+            },
+            {
+                "name": "maker_nikon1_tagname",
+                "start": 605,
+                "end": 626
+            },
+            {
+                "name": "maker_nikon2_tagname",
+                "start": 629,
+                "end": 694
+            },
+            {
+                "name": "nikon1_interpret_value",
+                "start": 696,
+                "end": 865
+            },
+            {
+                "name": "nikon2_interpret_value",
+                "start": 867,
+                "end": 993
+            },
+            {
+                "name": "nikon2_interpret_offset_makervalue",
+                "start": 995,
+                "end": 1134
+            },
+            {
+                "name": "nikon_colorbalance",
+                "start": 1147,
+                "end": 1281
+            },
+            {
+                "name": "maker_nikon_value_is_offset",
+                "start": 1285,
+                "end": 1302
+            }
+        ],
+        "maker_epson.c": [
+            {
+                "name": "epson_model_number",
+                "start": 43,
+                "end": 60
+            },
+            {
+                "name": "print_epson_makervalue",
+                "start": 66,
+                "end": 87
+            },
+            {
+                "name": "print_epson1_makervalue",
+                "start": 96,
+                "end": 109
+            },
+            {
+                "name": "print_epson_offset_makervalue",
+                "start": 114,
+                "end": 143
+            },
+            {
+                "name": "epson1_offset_makervalue",
+                "start": 148,
+                "end": 365
+            },
+            {
+                "name": "maker_epson_tagname",
+                "start": 369,
+                "end": 403
+            },
+            {
+                "name": "maker_epson1_tagname",
+                "start": 405,
+                "end": 432
+            },
+            {
+                "name": "epson1_interpret_value",
+                "start": 441,
+                "end": 486
+            },
+            {
+                "name": "epson1_interpret_offset_makervalue",
+                "start": 491,
+                "end": 535
+            }
+        ],
+        "aux/dump_section.c": [
+            {
+                "name": "main",
+                "start": 44,
+                "end": 352
+            },
+            {
+                "name": "read_ushort",
+                "start": 354,
+                "end": 394
+            },
+            {
+                "name": "read_ulong",
+                "start": 396,
+                "end": 436
+            },
+            {
+                "name": "to_ushort",
+                "start": 438,
+                "end": 455
+            },
+            {
+                "name": "to_ulong",
+                "start": 457,
+                "end": 473
+            }
+        ],
+        "aux/extract_section.c": [
+            {
+                "name": "main",
+                "start": 34,
+                "end": 131
+            }
+        ],
+        "aux/findjpeg.c": [
+            {
+                "name": "main",
+                "start": 44,
+                "end": 220
+            }
+        ],
+        "lib/veclib.c": [
+            {
+                "name": "vector",
+                "start": 21,
+                "end": 50
+            },
+            {
+                "name": "next_word",
+                "start": 64,
+                "end": 96
+            },
+            {
+                "name": "is_sep",
+                "start": 104,
+                "end": 121
+            },
+            {
+                "name": "prvector",
+                "start": 130,
+                "end": 146
+            }
+        ]
+    }
+}

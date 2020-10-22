@@ -1,0 +1,1382 @@
+{
+    "cdparanoia-3.10.2+debian": {
+        "header.c": [
+            {
+                "name": "PutNum",
+                "start": 15,
+                "end": 34
+            },
+            {
+                "name": "WriteWav",
+                "start": 36,
+                "end": 51
+            },
+            {
+                "name": "WriteAiff",
+                "start": 53,
+                "end": 75
+            },
+            {
+                "name": "WriteAifc",
+                "start": 77,
+                "end": 107
+            }
+        ],
+        "interface/cdda_interface.h": [
+            {
+                "name": "cdda_identify",
+                "start": 110,
+                "end": 111
+            },
+            {
+                "name": "cdda_identify_cooked",
+                "start": 112,
+                "end": 113
+            },
+            {
+                "name": "cdda_identify_scsi",
+                "start": 114,
+                "end": 116
+            },
+            {
+                "name": "cdda_read",
+                "start": 132,
+                "end": 133
+            },
+            {
+                "name": "cdda_read_timed",
+                "start": 134,
+                "end": 135
+            }
+        ],
+        "cachetest.c": [
+            {
+                "name": "time_drive",
+                "start": 48,
+                "end": 98
+            },
+            {
+                "name": "retime_drive",
+                "start": 100,
+                "end": 120
+            },
+            {
+                "name": "analyze_cache",
+                "start": 122,
+                "end": 850
+            }
+        ],
+        "utils.h": [
+            {
+                "name": "bigendianp",
+                "start": 17,
+                "end": 22
+            },
+            {
+                "name": "swap32",
+                "start": 24,
+                "end": 29
+            },
+            {
+                "name": "swap16",
+                "start": 31,
+                "end": 34
+            },
+            {
+                "name": "be32_to_cpu",
+                "start": 38,
+                "end": 40
+            },
+            {
+                "name": "be16_to_cpu",
+                "start": 42,
+                "end": 44
+            },
+            {
+                "name": "le32_to_cpu",
+                "start": 46,
+                "end": 48
+            },
+            {
+                "name": "le16_to_cpu",
+                "start": 50,
+                "end": 52
+            },
+            {
+                "name": "cpu_to_be32",
+                "start": 75,
+                "end": 77
+            },
+            {
+                "name": "cpu_to_le32",
+                "start": 79,
+                "end": 81
+            },
+            {
+                "name": "cpu_to_be16",
+                "start": 83,
+                "end": 85
+            },
+            {
+                "name": "cpu_to_le16",
+                "start": 87,
+                "end": 89
+            },
+            {
+                "name": "copystring",
+                "start": 91,
+                "end": 98
+            },
+            {
+                "name": "catstring",
+                "start": 100,
+                "end": 109
+            }
+        ],
+        "buffering_write.c": [
+            {
+                "name": "buffering_write",
+                "start": 27,
+                "end": 57
+            },
+            {
+                "name": "buffering_close",
+                "start": 63,
+                "end": 74
+            }
+        ],
+        "main.c": [
+            {
+                "name": "parse_offset",
+                "start": 43,
+                "end": 164
+            },
+            {
+                "name": "display_toc",
+                "start": 166,
+                "end": 192
+            },
+            {
+                "name": "usage",
+                "start": 194,
+                "end": 341
+            },
+            {
+                "name": "callback",
+                "start": 368,
+                "end": 611
+            },
+            {
+                "name": "blocking_write",
+                "start": 655,
+                "end": 668
+            },
+            {
+                "name": "cleanup",
+                "start": 673,
+                "end": 676
+            },
+            {
+                "name": "main",
+                "start": 678,
+                "end": 1486
+            }
+        ],
+        "paranoia/../interface/cdda_interface.h": [
+            {
+                "name": "cdda_identify",
+                "start": 110,
+                "end": 111
+            },
+            {
+                "name": "cdda_identify_cooked",
+                "start": 112,
+                "end": 113
+            },
+            {
+                "name": "cdda_identify_scsi",
+                "start": 114,
+                "end": 116
+            },
+            {
+                "name": "cdda_read",
+                "start": 132,
+                "end": 133
+            },
+            {
+                "name": "cdda_read_timed",
+                "start": 134,
+                "end": 135
+            }
+        ],
+        "paranoia/isort.h": [
+            {
+                "name": "sort_setup",
+                "start": 63,
+                "end": 64
+            }
+        ],
+        "paranoia/p_block.h": [
+            {
+                "name": "new_v_fragment",
+                "start": 101,
+                "end": 102
+            }
+        ],
+        "paranoia/gap.h": [
+            {
+                "name": "i_paranoia_overlap_r",
+                "start": 9,
+                "end": 10
+            },
+            {
+                "name": "i_paranoia_overlap_f",
+                "start": 11,
+                "end": 13
+            },
+            {
+                "name": "i_stutter_or_gap",
+                "start": 14,
+                "end": 15
+            },
+            {
+                "name": "i_analyze_rift_f",
+                "start": 16,
+                "end": 19
+            },
+            {
+                "name": "i_analyze_rift_r",
+                "start": 20,
+                "end": 23
+            },
+            {
+                "name": "analyze_rift_silence_f",
+                "start": 25,
+                "end": 27
+            }
+        ],
+        "paranoia/gap.c": [
+            {
+                "name": "i_paranoia_overlap_r",
+                "start": 29,
+                "end": 41
+            },
+            {
+                "name": "i_paranoia_overlap_f",
+                "start": 57,
+                "end": 70
+            },
+            {
+                "name": "i_stutter_or_gap",
+                "start": 84,
+                "end": 120
+            },
+            {
+                "name": "i_analyze_rift_f",
+                "start": 141,
+                "end": 275
+            },
+            {
+                "name": "i_analyze_rift_r",
+                "start": 296,
+                "end": 440
+            },
+            {
+                "name": "analyze_rift_silence_f",
+                "start": 463,
+                "end": 502
+            }
+        ],
+        "paranoia/isort.c": [
+            {
+                "name": "sort_alloc",
+                "start": 36,
+                "end": 50
+            },
+            {
+                "name": "sort_unsortall",
+                "start": 60,
+                "end": 82
+            },
+            {
+                "name": "sort_free",
+                "start": 91,
+                "end": 96
+            },
+            {
+                "name": "sort_sort",
+                "start": 107,
+                "end": 149
+            },
+            {
+                "name": "sort_setup",
+                "start": 166,
+                "end": 182
+            },
+            {
+                "name": "sort_getmatch",
+                "start": 196,
+                "end": 237
+            },
+            {
+                "name": "sort_nextmatch",
+                "start": 250,
+                "end": 259
+            }
+        ],
+        "paranoia/overlap.h": [
+            {
+                "name": "offset_add_value",
+                "start": 9,
+                "end": 10
+            },
+            {
+                "name": "offset_adjust_settings",
+                "start": 12,
+                "end": 13
+            }
+        ],
+        "paranoia/overlap.c": [
+            {
+                "name": "paranoia_resetcache",
+                "start": 19,
+                "end": 33
+            },
+            {
+                "name": "paranoia_resetall",
+                "start": 35,
+                "end": 46
+            },
+            {
+                "name": "i_paranoia_trim",
+                "start": 48,
+                "end": 88
+            },
+            {
+                "name": "offset_adjust_settings",
+                "start": 104,
+                "end": 177
+            },
+            {
+                "name": "offset_add_value",
+                "start": 205,
+                "end": 224
+            }
+        ],
+        "paranoia/paranoia.c": [
+            {
+                "name": "re",
+                "start": 89,
+                "end": 93
+            },
+            {
+                "name": "rb",
+                "start": 95,
+                "end": 99
+            },
+            {
+                "name": "rs",
+                "start": 101,
+                "end": 105
+            },
+            {
+                "name": "rv",
+                "start": 107,
+                "end": 111
+            },
+            {
+                "name": "i_paranoia_overlap",
+                "start": 148,
+                "end": 169
+            },
+            {
+                "name": "i_paranoia_overlap2",
+                "start": 188,
+                "end": 239
+            },
+            {
+                "name": "do_const_sync",
+                "start": 258,
+                "end": 295
+            },
+            {
+                "name": "try_sort_sync",
+                "start": 325,
+                "end": 402
+            },
+            {
+                "name": "stage1_matched",
+                "start": 439,
+                "end": 540
+            },
+            {
+                "name": "i_iterate_stage1",
+                "start": 566,
+                "end": 652
+            },
+            {
+                "name": "i_stage1",
+                "start": 684,
+                "end": 749
+            },
+            {
+                "name": "i_iterate_stage2",
+                "start": 795,
+                "end": 921
+            },
+            {
+                "name": "i_silence_test",
+                "start": 936,
+                "end": 956
+            },
+            {
+                "name": "i_silence_match",
+                "start": 984,
+                "end": 1146
+            },
+            {
+                "name": "i_stage2_each",
+                "start": 1171,
+                "end": 1838
+            },
+            {
+                "name": "i_init_root",
+                "start": 1840,
+                "end": 1865
+            },
+            {
+                "name": "vsort",
+                "start": 1867,
+                "end": 1869
+            },
+            {
+                "name": "i_stage2",
+                "start": 1897,
+                "end": 2056
+            },
+            {
+                "name": "i_end_case",
+                "start": 2058,
+                "end": 2082
+            },
+            {
+                "name": "verify_skip_case",
+                "start": 2092,
+                "end": 2181
+            },
+            {
+                "name": "paranoia_free",
+                "start": 2185,
+                "end": 2191
+            },
+            {
+                "name": "paranoia_modeset",
+                "start": 2193,
+                "end": 2195
+            },
+            {
+                "name": "paranoia_seek",
+                "start": 2197,
+                "end": 2228
+            },
+            {
+                "name": "cdrom_cache_update",
+                "start": 2230,
+                "end": 2253
+            },
+            {
+                "name": "cdrom_cache_handler",
+                "start": 2255,
+                "end": 2277
+            },
+            {
+                "name": "i_read_c_block",
+                "start": 2312,
+                "end": 2525
+            },
+            {
+                "name": "paranoia_read",
+                "start": 2538,
+                "end": 2540
+            },
+            {
+                "name": "paranoia_read_limited",
+                "start": 2545,
+                "end": 2744
+            },
+            {
+                "name": "paranoia_overlapset",
+                "start": 2747,
+                "end": 2750
+            },
+            {
+                "name": "paranoia_version",
+                "start": 2752,
+                "end": 2754
+            }
+        ],
+        "paranoia/p_block.c": [
+            {
+                "name": "new_list",
+                "start": 9,
+                "end": 14
+            },
+            {
+                "name": "add_elem",
+                "start": 16,
+                "end": 33
+            },
+            {
+                "name": "new_elem",
+                "start": 35,
+                "end": 38
+            },
+            {
+                "name": "free_elem",
+                "start": 40,
+                "end": 56
+            },
+            {
+                "name": "free_list",
+                "start": 58,
+                "end": 62
+            },
+            {
+                "name": "get_elem",
+                "start": 64,
+                "end": 66
+            },
+            {
+                "name": "copy_list",
+                "start": 68,
+                "end": 77
+            },
+            {
+                "name": "i_cblock_constructor",
+                "start": 81,
+                "end": 84
+            },
+            {
+                "name": "i_cblock_destructor",
+                "start": 86,
+                "end": 93
+            },
+            {
+                "name": "new_c_block",
+                "start": 95,
+                "end": 101
+            },
+            {
+                "name": "free_c_block",
+                "start": 103,
+                "end": 114
+            },
+            {
+                "name": "i_vfragment_constructor",
+                "start": 116,
+                "end": 119
+            },
+            {
+                "name": "i_v_fragment_destructor",
+                "start": 121,
+                "end": 123
+            },
+            {
+                "name": "new_v_fragment",
+                "start": 125,
+                "end": 140
+            },
+            {
+                "name": "free_v_fragment",
+                "start": 142,
+                "end": 144
+            },
+            {
+                "name": "c_first",
+                "start": 146,
+                "end": 150
+            },
+            {
+                "name": "c_last",
+                "start": 152,
+                "end": 156
+            },
+            {
+                "name": "c_next",
+                "start": 158,
+                "end": 162
+            },
+            {
+                "name": "c_prev",
+                "start": 164,
+                "end": 168
+            },
+            {
+                "name": "v_first",
+                "start": 170,
+                "end": 175
+            },
+            {
+                "name": "v_last",
+                "start": 177,
+                "end": 181
+            },
+            {
+                "name": "v_next",
+                "start": 183,
+                "end": 187
+            },
+            {
+                "name": "v_prev",
+                "start": 189,
+                "end": 193
+            },
+            {
+                "name": "recover_cache",
+                "start": 195,
+                "end": 203
+            },
+            {
+                "name": "v_buffer",
+                "start": 205,
+                "end": 209
+            },
+            {
+                "name": "c_alloc",
+                "start": 212,
+                "end": 218
+            },
+            {
+                "name": "c_set",
+                "start": 220,
+                "end": 222
+            },
+            {
+                "name": "c_insert",
+                "start": 225,
+                "end": 239
+            },
+            {
+                "name": "c_remove",
+                "start": 241,
+                "end": 252
+            },
+            {
+                "name": "c_overwrite",
+                "start": 254,
+                "end": 261
+            },
+            {
+                "name": "c_append",
+                "start": 263,
+                "end": 274
+            },
+            {
+                "name": "c_removef",
+                "start": 276,
+                "end": 279
+            },
+            {
+                "name": "i_paranoia_firstlast",
+                "start": 294,
+                "end": 311
+            },
+            {
+                "name": "paranoia_init",
+                "start": 313,
+                "end": 336
+            },
+            {
+                "name": "paranoia_cachemodel_size",
+                "start": 339,
+                "end": 344
+            }
+        ],
+        "interface/utils.h": [
+            {
+                "name": "bigendianp",
+                "start": 14,
+                "end": 19
+            },
+            {
+                "name": "swap32",
+                "start": 21,
+                "end": 26
+            },
+            {
+                "name": "swap16",
+                "start": 28,
+                "end": 31
+            },
+            {
+                "name": "be32_to_cpu",
+                "start": 35,
+                "end": 37
+            },
+            {
+                "name": "be16_to_cpu",
+                "start": 39,
+                "end": 41
+            },
+            {
+                "name": "le32_to_cpu",
+                "start": 43,
+                "end": 45
+            },
+            {
+                "name": "le16_to_cpu",
+                "start": 47,
+                "end": 49
+            },
+            {
+                "name": "cpu_to_be32",
+                "start": 72,
+                "end": 74
+            },
+            {
+                "name": "cpu_to_le32",
+                "start": 76,
+                "end": 78
+            },
+            {
+                "name": "cpu_to_be16",
+                "start": 80,
+                "end": 82
+            },
+            {
+                "name": "cpu_to_le16",
+                "start": 84,
+                "end": 86
+            },
+            {
+                "name": "copystring",
+                "start": 88,
+                "end": 96
+            },
+            {
+                "name": "catstring",
+                "start": 98,
+                "end": 107
+            },
+            {
+                "name": "cderror",
+                "start": 109,
+                "end": 123
+            },
+            {
+                "name": "cdmessage",
+                "start": 125,
+                "end": 139
+            },
+            {
+                "name": "idperror",
+                "start": 141,
+                "end": 183
+            },
+            {
+                "name": "idmessage",
+                "start": 186,
+                "end": 220
+            }
+        ],
+        "interface/scsi_interface.c": [
+            {
+                "name": "timed_ioctl",
+                "start": 20,
+                "end": 32
+            },
+            {
+                "name": "Dummy",
+                "start": 35,
+                "end": 37
+            },
+            {
+                "name": "tweak_SG_buffer",
+                "start": 40,
+                "end": 109
+            },
+            {
+                "name": "clear_garbage",
+                "start": 113,
+                "end": 142
+            },
+            {
+                "name": "check_sbp_error",
+                "start": 145,
+                "end": 195
+            },
+            {
+                "name": "sg2_handle_scsi_cmd",
+                "start": 199,
+                "end": 357
+            },
+            {
+                "name": "sgio_handle_scsi_cmd",
+                "start": 359,
+                "end": 442
+            },
+            {
+                "name": "handle_scsi_cmd",
+                "start": 444,
+                "end": 457
+            },
+            {
+                "name": "test_unit_ready",
+                "start": 544,
+                "end": 562
+            },
+            {
+                "name": "reset_scsi",
+                "start": 565,
+                "end": 582
+            },
+            {
+                "name": "mode_sense_atapi",
+                "start": 607,
+                "end": 639
+            },
+            {
+                "name": "mode_sense_scsi",
+                "start": 643,
+                "end": 662
+            },
+            {
+                "name": "mode_sense",
+                "start": 664,
+                "end": 668
+            },
+            {
+                "name": "mode_select",
+                "start": 674,
+                "end": 733
+            },
+            {
+                "name": "get_orig_sectorsize",
+                "start": 736,
+                "end": 741
+            },
+            {
+                "name": "set_sectorsize",
+                "start": 744,
+                "end": 746
+            },
+            {
+                "name": "scsi_enable_cdda",
+                "start": 749,
+                "end": 764
+            },
+            {
+                "name": "scsi_read_toc",
+                "start": 782,
+                "end": 852
+            },
+            {
+                "name": "scsi_read_toc2",
+                "start": 856,
+                "end": 920
+            },
+            {
+                "name": "scsi_set_speed",
+                "start": 922,
+                "end": 933
+            },
+            {
+                "name": "i_read_28",
+                "start": 937,
+                "end": 954
+            },
+            {
+                "name": "i_read_A8",
+                "start": 956,
+                "end": 973
+            },
+            {
+                "name": "i_read_D4_10",
+                "start": 975,
+                "end": 991
+            },
+            {
+                "name": "i_read_D4_12",
+                "start": 993,
+                "end": 1009
+            },
+            {
+                "name": "i_read_D5",
+                "start": 1011,
+                "end": 1027
+            },
+            {
+                "name": "i_read_D8",
+                "start": 1029,
+                "end": 1045
+            },
+            {
+                "name": "i_read_mmc",
+                "start": 1047,
+                "end": 1059
+            },
+            {
+                "name": "i_read_mmcB",
+                "start": 1061,
+                "end": 1073
+            },
+            {
+                "name": "i_read_mmc2",
+                "start": 1075,
+                "end": 1087
+            },
+            {
+                "name": "i_read_mmc2B",
+                "start": 1089,
+                "end": 1101
+            },
+            {
+                "name": "i_read_mmc3",
+                "start": 1103,
+                "end": 1115
+            },
+            {
+                "name": "i_read_mmc3B",
+                "start": 1117,
+                "end": 1129
+            },
+            {
+                "name": "LBA_to_MSF",
+                "start": 1132,
+                "end": 1149
+            },
+            {
+                "name": "i_read_msf",
+                "start": 1152,
+                "end": 1163
+            },
+            {
+                "name": "i_read_msf2",
+                "start": 1165,
+                "end": 1176
+            },
+            {
+                "name": "i_read_msf3",
+                "start": 1178,
+                "end": 1189
+            },
+            {
+                "name": "scsi_read_map",
+                "start": 1192,
+                "end": 1345
+            },
+            {
+                "name": "scsi_read_28",
+                "start": 1347,
+                "end": 1350
+            },
+            {
+                "name": "scsi_read_A8",
+                "start": 1352,
+                "end": 1355
+            },
+            {
+                "name": "scsi_read_D4_10",
+                "start": 1357,
+                "end": 1360
+            },
+            {
+                "name": "scsi_read_D4_12",
+                "start": 1362,
+                "end": 1365
+            },
+            {
+                "name": "scsi_read_D5",
+                "start": 1367,
+                "end": 1370
+            },
+            {
+                "name": "scsi_read_D8",
+                "start": 1372,
+                "end": 1375
+            },
+            {
+                "name": "scsi_read_mmc",
+                "start": 1377,
+                "end": 1380
+            },
+            {
+                "name": "scsi_read_mmc2",
+                "start": 1382,
+                "end": 1385
+            },
+            {
+                "name": "scsi_read_mmc3",
+                "start": 1387,
+                "end": 1390
+            },
+            {
+                "name": "scsi_read_mmcB",
+                "start": 1392,
+                "end": 1395
+            },
+            {
+                "name": "scsi_read_mmc2B",
+                "start": 1397,
+                "end": 1400
+            },
+            {
+                "name": "scsi_read_mmc3B",
+                "start": 1402,
+                "end": 1405
+            },
+            {
+                "name": "scsi_read_msf",
+                "start": 1407,
+                "end": 1410
+            },
+            {
+                "name": "scsi_read_msf2",
+                "start": 1412,
+                "end": 1415
+            },
+            {
+                "name": "scsi_read_msf3",
+                "start": 1417,
+                "end": 1420
+            },
+            {
+                "name": "count_2352_bytes",
+                "start": 1427,
+                "end": 1434
+            },
+            {
+                "name": "verify_nonzero",
+                "start": 1436,
+                "end": 1445
+            },
+            {
+                "name": "verify_read_command",
+                "start": 1451,
+                "end": 1700
+            },
+            {
+                "name": "check_cache",
+                "start": 1702,
+                "end": 1740
+            },
+            {
+                "name": "check_atapi",
+                "start": 1743,
+                "end": 1772
+            },
+            {
+                "name": "check_mmc",
+                "start": 1815,
+                "end": 1844
+            },
+            {
+                "name": "check_exceptions",
+                "start": 1846,
+                "end": 1859
+            },
+            {
+                "name": "scsi_inquiry",
+                "start": 1863,
+                "end": 1872
+            },
+            {
+                "name": "scsi_init_drive",
+                "start": 1875,
+                "end": 1949
+            }
+        ],
+        "interface/cooked_interface.c": [
+            {
+                "name": "timed_ioctl",
+                "start": 15,
+                "end": 27
+            },
+            {
+                "name": "cooked_readtoc",
+                "start": 30,
+                "end": 74
+            },
+            {
+                "name": "cooked_setspeed",
+                "start": 77,
+                "end": 83
+            },
+            {
+                "name": "cooked_read",
+                "start": 89,
+                "end": 161
+            },
+            {
+                "name": "Dummy",
+                "start": 298,
+                "end": 300
+            },
+            {
+                "name": "verify_read_command",
+                "start": 302,
+                "end": 341
+            },
+            {
+                "name": "check_exceptions",
+                "start": 345,
+                "end": 355
+            },
+            {
+                "name": "cooked_init_drive",
+                "start": 358,
+                "end": 427
+            }
+        ],
+        "interface/toc.c": [
+            {
+                "name": "cdda_track_firstsector",
+                "start": 13,
+                "end": 35
+            },
+            {
+                "name": "cdda_disc_firstsector",
+                "start": 37,
+                "end": 55
+            },
+            {
+                "name": "cdda_track_lastsector",
+                "start": 57,
+                "end": 80
+            },
+            {
+                "name": "cdda_disc_lastsector",
+                "start": 82,
+                "end": 96
+            },
+            {
+                "name": "cdda_tracks",
+                "start": 98,
+                "end": 104
+            },
+            {
+                "name": "cdda_sector_gettrack",
+                "start": 106,
+                "end": 125
+            },
+            {
+                "name": "cdda_track_bitmap",
+                "start": 127,
+                "end": 144
+            },
+            {
+                "name": "cdda_track_channels",
+                "start": 147,
+                "end": 149
+            },
+            {
+                "name": "cdda_track_audiop",
+                "start": 151,
+                "end": 153
+            },
+            {
+                "name": "cdda_track_copyp",
+                "start": 155,
+                "end": 157
+            },
+            {
+                "name": "cdda_track_preemp",
+                "start": 159,
+                "end": 161
+            }
+        ],
+        "interface/interface.c": [
+            {
+                "name": "cdda_version",
+                "start": 17,
+                "end": 19
+            },
+            {
+                "name": "_clean_messages",
+                "start": 21,
+                "end": 28
+            },
+            {
+                "name": "cdda_close",
+                "start": 31,
+                "end": 58
+            },
+            {
+                "name": "cdda_open",
+                "start": 61,
+                "end": 107
+            },
+            {
+                "name": "cdda_speed_set",
+                "start": 109,
+                "end": 116
+            },
+            {
+                "name": "cdda_read_timed",
+                "start": 118,
+                "end": 144
+            },
+            {
+                "name": "cdda_read",
+                "start": 146,
+                "end": 148
+            },
+            {
+                "name": "cdda_verbose_set",
+                "start": 150,
+                "end": 153
+            },
+            {
+                "name": "cdda_messages",
+                "start": 155,
+                "end": 159
+            },
+            {
+                "name": "cdda_errors",
+                "start": 161,
+                "end": 165
+            }
+        ],
+        "interface/common_interface.c": [
+            {
+                "name": "ioctl_ping_cdrom",
+                "start": 23,
+                "end": 36
+            },
+            {
+                "name": "atapi_drive_info",
+                "start": 41,
+                "end": 59
+            },
+            {
+                "name": "data_bigendianp",
+                "start": 62,
+                "end": 178
+            },
+            {
+                "name": "FixupTOC",
+                "start": 185,
+                "end": 253
+            }
+        ],
+        "interface/smallft.c": [
+            {
+                "name": "drfti1",
+                "start": 17,
+                "end": 85
+            },
+            {
+                "name": "fdrffti",
+                "start": 87,
+                "end": 91
+            },
+            {
+                "name": "dradf2",
+                "start": 93,
+                "end": 146
+            },
+            {
+                "name": "dradf4",
+                "start": 148,
+                "end": 248
+            },
+            {
+                "name": "drftf1",
+                "start": 250,
+                "end": 300
+            },
+            {
+                "name": "fdrfftf",
+                "start": 302,
+                "end": 305
+            },
+            {
+                "name": "dradb2",
+                "start": 307,
+                "end": 357
+            },
+            {
+                "name": "dradb4",
+                "start": 359,
+                "end": 448
+            },
+            {
+                "name": "drftb1",
+                "start": 450,
+                "end": 497
+            },
+            {
+                "name": "fdrfftb",
+                "start": 499,
+                "end": 502
+            },
+            {
+                "name": "fft_forward",
+                "start": 504,
+                "end": 520
+            },
+            {
+                "name": "fft_backward",
+                "start": 522,
+                "end": 541
+            },
+            {
+                "name": "fft_i",
+                "start": 543,
+                "end": 547
+            }
+        ],
+        "interface/scan_devices.c": [
+            {
+                "name": "cdda_find_a_cdrom",
+                "start": 72,
+                "end": 114
+            },
+            {
+                "name": "cdda_identify",
+                "start": 116,
+                "end": 145
+            },
+            {
+                "name": "test_resolve_symlink",
+                "start": 147,
+                "end": 161
+            },
+            {
+                "name": "cdda_identify_cooked",
+                "start": 164,
+                "end": 297
+            },
+            {
+                "name": "get_scsi_id",
+                "start": 367,
+                "end": 383
+            },
+            {
+                "name": "scsi_match",
+                "start": 386,
+                "end": 479
+            },
+            {
+                "name": "strscat",
+                "start": 482,
+                "end": 490
+            },
+            {
+                "name": "verify_SG_version",
+                "start": 495,
+                "end": 521
+            },
+            {
+                "name": "check_sgio",
+                "start": 523,
+                "end": 569
+            },
+            {
+                "name": "cdda_identify_scsi",
+                "start": 575,
+                "end": 861
+            }
+        ]
+    }
+}

@@ -1,0 +1,464 @@
+{
+    "srptools-1.0.2": {
+        "srp_daemon/srp_ib_types.h": [
+            {
+                "name": "ib_get_attr_size",
+                "start": 160,
+                "end": 163
+            },
+            {
+                "name": "ib_mad_init_new",
+                "start": 241,
+                "end": 260
+            },
+            {
+                "name": "ib_gid_get_guid",
+                "start": 415,
+                "end": 418
+            }
+        ],
+        "srp_daemon/srp_daemon.h": [
+            {
+                "name": "pkey_index_to_pkey",
+                "start": 430,
+                "end": 431
+            },
+            {
+                "name": "push_to_retry_list",
+                "start": 448,
+                "end": 449
+            },
+            {
+                "name": "pop_from_list",
+                "start": 452,
+                "end": 453
+            }
+        ],
+        "srp_daemon/srp_handle_traps.c": [
+            {
+                "name": "srp_sleep",
+                "start": 52,
+                "end": 64
+            },
+            {
+                "name": "ud_resources_init",
+                "start": 69,
+                "end": 83
+            },
+            {
+                "name": "modify_qp_to_rts",
+                "start": 89,
+                "end": 139
+            },
+            {
+                "name": "modify_qp_to_err",
+                "start": 141,
+                "end": 148
+            },
+            {
+                "name": "fill_rq_entry",
+                "start": 153,
+                "end": 184
+            },
+            {
+                "name": "fill_rq",
+                "start": 189,
+                "end": 203
+            },
+            {
+                "name": "ud_resources_create",
+                "start": 208,
+                "end": 346
+            },
+            {
+                "name": "get_port_lid",
+                "start": 348,
+                "end": 354
+            },
+            {
+                "name": "create_ah",
+                "start": 356,
+                "end": 380
+            },
+            {
+                "name": "ud_resources_destroy",
+                "start": 385,
+                "end": 458
+            },
+            {
+                "name": "fill_send_request",
+                "start": 460,
+                "end": 483
+            },
+            {
+                "name": "stop_threads",
+                "start": 485,
+                "end": 494
+            },
+            {
+                "name": "poll_cq",
+                "start": 496,
+                "end": 544
+            },
+            {
+                "name": "register_to_trap",
+                "start": 549,
+                "end": 657
+            },
+            {
+                "name": "response_to_trap",
+                "start": 663,
+                "end": 687
+            },
+            {
+                "name": "get_trap_notices",
+                "start": 693,
+                "end": 761
+            },
+            {
+                "name": "run_thread_get_trap_notices",
+                "start": 763,
+                "end": 772
+            },
+            {
+                "name": "register_to_traps",
+                "start": 778,
+                "end": 794
+            },
+            {
+                "name": "run_thread_listen_to_events",
+                "start": 796,
+                "end": 859
+            }
+        ],
+        "srp_daemon/srp_daemon.c": [
+            {
+                "name": "wake_up_main_loop",
+                "start": 90,
+                "end": 97
+            },
+            {
+                "name": "signal_handler",
+                "start": 99,
+                "end": 103
+            },
+            {
+                "name": "check_process_uniqueness",
+                "start": 105,
+                "end": 128
+            },
+            {
+                "name": "srpd_sys_read_string",
+                "start": 130,
+                "end": 154
+            },
+            {
+                "name": "srpd_sys_read_gid",
+                "start": 156,
+                "end": 172
+            },
+            {
+                "name": "srpd_sys_read_uint64",
+                "start": 174,
+                "end": 185
+            },
+            {
+                "name": "usage",
+                "start": 190,
+                "end": 210
+            },
+            {
+                "name": "check_equal_uint64",
+                "start": 212,
+                "end": 221
+            },
+            {
+                "name": "check_equal_uint16",
+                "start": 223,
+                "end": 232
+            },
+            {
+                "name": "pr_cmd",
+                "start": 236,
+                "end": 253
+            },
+            {
+                "name": "pr_err",
+                "start": 255,
+                "end": 274
+            },
+            {
+                "name": "check_not_equal_str",
+                "start": 276,
+                "end": 294
+            },
+            {
+                "name": "check_not_equal_int",
+                "start": 296,
+                "end": 308
+            },
+            {
+                "name": "is_enabled_by_rules_file",
+                "start": 310,
+                "end": 361
+            },
+            {
+                "name": "add_non_exist_target",
+                "start": 365,
+                "end": 549
+            },
+            {
+                "name": "send_and_get",
+                "start": 551,
+                "end": 612
+            },
+            {
+                "name": "initialize_sysfs",
+                "start": 614,
+                "end": 629
+            },
+            {
+                "name": "translate_umad_to_ibdev_and_port",
+                "start": 631,
+                "end": 684
+            },
+            {
+                "name": "init_srp_mad",
+                "start": 686,
+                "end": 704
+            },
+            {
+                "name": "init_srp_dm_mad",
+                "start": 706,
+                "end": 714
+            },
+            {
+                "name": "init_srp_sa_mad",
+                "start": 716,
+                "end": 724
+            },
+            {
+                "name": "check_sm_cap",
+                "start": 726,
+                "end": 747
+            },
+            {
+                "name": "set_class_port_info",
+                "start": 749,
+                "end": 790
+            },
+            {
+                "name": "get_iou_info",
+                "start": 792,
+                "end": 815
+            },
+            {
+                "name": "get_ioc_prof",
+                "start": 817,
+                "end": 838
+            },
+            {
+                "name": "get_svc_entries",
+                "start": 840,
+                "end": 862
+            },
+            {
+                "name": "do_port",
+                "start": 864,
+                "end": 973
+            },
+            {
+                "name": "get_node",
+                "start": 975,
+                "end": 998
+            },
+            {
+                "name": "get_port_info",
+                "start": 1000,
+                "end": 1025
+            },
+            {
+                "name": "pkey_index_to_pkey",
+                "start": 1027,
+                "end": 1043
+            },
+            {
+                "name": "get_shared_pkeys",
+                "start": 1045,
+                "end": 1119
+            },
+            {
+                "name": "do_dm_port_list",
+                "start": 1121,
+                "end": 1192
+            },
+            {
+                "name": "handle_port",
+                "start": 1194,
+                "end": 1208
+            },
+            {
+                "name": "do_full_port_list",
+                "start": 1211,
+                "end": 1270
+            },
+            {
+                "name": "print_config",
+                "start": 1274,
+                "end": 1303
+            },
+            {
+                "name": "copy_till_comma",
+                "start": 1305,
+                "end": 1327
+            },
+            {
+                "name": "parse_main_option",
+                "start": 1329,
+                "end": 1362
+            },
+            {
+                "name": "parse_other_option",
+                "start": 1370,
+                "end": 1404
+            },
+            {
+                "name": "get_rules_file",
+                "start": 1406,
+                "end": 1506
+            },
+            {
+                "name": "get_config",
+                "start": 1508,
+                "end": 1657
+            },
+            {
+                "name": "config_destroy",
+                "start": 1659,
+                "end": 1664
+            },
+            {
+                "name": "umad_resources_init",
+                "start": 1666,
+                "end": 1672
+            },
+            {
+                "name": "umad_resources_destroy",
+                "start": 1674,
+                "end": 1686
+            },
+            {
+                "name": "umad_resources_create",
+                "start": 1688,
+                "end": 1717
+            },
+            {
+                "name": "run_thread_retry_to_connect",
+                "start": 1719,
+                "end": 1750
+            },
+            {
+                "name": "free_res",
+                "start": 1752,
+                "end": 1788
+            },
+            {
+                "name": "alloc_res",
+                "start": 1790,
+                "end": 1847
+            },
+            {
+                "name": "ts_sub",
+                "start": 1850,
+                "end": 1859
+            },
+            {
+                "name": "ibsrpdm",
+                "start": 1861,
+                "end": 1936
+            },
+            {
+                "name": "main",
+                "start": 1938,
+                "end": 2158
+            },
+            {
+                "name": "recalc",
+                "start": 2160,
+                "end": 2192
+            },
+            {
+                "name": "get_lid",
+                "start": 2194,
+                "end": 2220
+            }
+        ],
+        "srp_daemon/srp_sync.c": [
+            {
+                "name": "__schedule_rescan",
+                "start": 53,
+                "end": 59
+            },
+            {
+                "name": "schedule_rescan",
+                "start": 61,
+                "end": 66
+            },
+            {
+                "name": "__rescan_scheduled",
+                "start": 68,
+                "end": 74
+            },
+            {
+                "name": "rescan_scheduled",
+                "start": 76,
+                "end": 85
+            },
+            {
+                "name": "sync_resources_init",
+                "start": 87,
+                "end": 111
+            },
+            {
+                "name": "sync_resources_cleanup",
+                "start": 113,
+                "end": 118
+            },
+            {
+                "name": "push_gid_to_list",
+                "start": 120,
+                "end": 156
+            },
+            {
+                "name": "push_lid_to_list",
+                "start": 158,
+                "end": 194
+            },
+            {
+                "name": "clear_traps_list",
+                "start": 196,
+                "end": 201
+            },
+            {
+                "name": "pop_from_list",
+                "start": 205,
+                "end": 223
+            },
+            {
+                "name": "pop_from_retry_list",
+                "start": 227,
+                "end": 237
+            },
+            {
+                "name": "push_to_retry_list",
+                "start": 239,
+                "end": 265
+            },
+            {
+                "name": "retry_list_is_empty",
+                "start": 268,
+                "end": 271
+            }
+        ]
+    }
+}

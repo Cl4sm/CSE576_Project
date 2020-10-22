@@ -1,0 +1,2864 @@
+{
+    "dvi2ps-5.1j": {
+        "dvi2.c": [
+            {
+                "name": "main",
+                "start": 111,
+                "end": 237
+            },
+            {
+                "name": "default_def",
+                "start": 239,
+                "end": 245
+            },
+            {
+                "name": "ReadPreAmble",
+                "start": 247,
+                "end": 265
+            },
+            {
+                "name": "ReadPostAmble",
+                "start": 267,
+                "end": 312
+            },
+            {
+                "name": "FindPostAmblePtr",
+                "start": 314,
+                "end": 337
+            },
+            {
+                "name": "GetFontDef",
+                "start": 345,
+                "end": 366
+            }
+        ],
+        "util.c": [
+            {
+                "name": "alloc_check",
+                "start": 4,
+                "end": 11
+            },
+            {
+                "name": "makeuint",
+                "start": 13,
+                "end": 25
+            },
+            {
+                "name": "makeint",
+                "start": 27,
+                "end": 49
+            },
+            {
+                "name": "htoi",
+                "start": 51,
+                "end": 68
+            },
+            {
+                "name": "numstr",
+                "start": 70,
+                "end": 77
+            },
+            {
+                "name": "strsave",
+                "start": 79,
+                "end": 90
+            },
+            {
+                "name": "getstrtok",
+                "start": 95,
+                "end": 108
+            },
+            {
+                "name": "skipstrblank",
+                "start": 110,
+                "end": 117
+            },
+            {
+                "name": "scale_exact",
+                "start": 128,
+                "end": 147
+            }
+        ],
+        "pkfont.c": [
+            {
+                "name": "pktype_access",
+                "start": 29,
+                "end": 50
+            },
+            {
+                "name": "init_pk_fontinfo",
+                "start": 52,
+                "end": 60
+            },
+            {
+                "name": "read_pk_fontinfo",
+                "start": 62,
+                "end": 136
+            },
+            {
+                "name": "readpkchar",
+                "start": 138,
+                "end": 191
+            },
+            {
+                "name": "loadpkchar",
+                "start": 200,
+                "end": 219
+            },
+            {
+                "name": "unpack_run",
+                "start": 252,
+                "end": 289
+            },
+            {
+                "name": "unpack_raster",
+                "start": 293,
+                "end": 315
+            }
+        ],
+        "gffont.c": [
+            {
+                "name": "gftype_access",
+                "start": 27,
+                "end": 48
+            },
+            {
+                "name": "init_gf_fontinfo",
+                "start": 50,
+                "end": 58
+            },
+            {
+                "name": "read_gf_fontinfo",
+                "start": 60,
+                "end": 128
+            },
+            {
+                "name": "loadgfchar",
+                "start": 135,
+                "end": 255
+            }
+        ],
+        "io.c": [
+            {
+                "name": "getbytes",
+                "start": 10,
+                "end": 17
+            },
+            {
+                "name": "skipbytes",
+                "start": 19,
+                "end": 25
+            },
+            {
+                "name": "getuint",
+                "start": 33,
+                "end": 42
+            },
+            {
+                "name": "getint",
+                "start": 50,
+                "end": 59
+            },
+            {
+                "name": "putint",
+                "start": 70,
+                "end": 92
+            },
+            {
+                "name": "putoct",
+                "start": 100,
+                "end": 108
+            }
+        ],
+        "bifont.c": [
+            {
+                "name": "gentfm_access",
+                "start": 72,
+                "end": 101
+            },
+            {
+                "name": "tfm_access",
+                "start": 105,
+                "end": 113
+            },
+            {
+                "name": "init_tfm_fontinfo",
+                "start": 115,
+                "end": 139
+            },
+            {
+                "name": "read_tfm_finfo",
+                "start": 141,
+                "end": 161
+            },
+            {
+                "name": "read_tfm_fontinfo",
+                "start": 163,
+                "end": 176
+            },
+            {
+                "name": "tfm_fontdict",
+                "start": 179,
+                "end": 185
+            },
+            {
+                "name": "getjsubshare",
+                "start": 192,
+                "end": 216
+            },
+            {
+                "name": "jstfm_access",
+                "start": 218,
+                "end": 226
+            },
+            {
+                "name": "init_jstfm_fontinfo",
+                "start": 228,
+                "end": 261
+            },
+            {
+                "name": "read_jstfm_finfo",
+                "start": 263,
+                "end": 294
+            },
+            {
+                "name": "read_jstfm_fontinfo",
+                "start": 296,
+                "end": 310
+            },
+            {
+                "name": "jstfm_fontdict",
+                "start": 313,
+                "end": 319
+            },
+            {
+                "name": "jfm_access",
+                "start": 323,
+                "end": 331
+            },
+            {
+                "name": "init_jfm_fontinfo",
+                "start": 333,
+                "end": 361
+            },
+            {
+                "name": "read_jfm_finfo",
+                "start": 363,
+                "end": 390
+            },
+            {
+                "name": "read_jfm_fontinfo",
+                "start": 392,
+                "end": 404
+            },
+            {
+                "name": "getctype",
+                "start": 406,
+                "end": 427
+            },
+            {
+                "name": "readtfm",
+                "start": 432,
+                "end": 449
+            },
+            {
+                "name": "readjfm",
+                "start": 451,
+                "end": 470
+            }
+        ],
+        "set.c": [
+            {
+                "name": "MarkChar",
+                "start": 7,
+                "end": 12
+            },
+            {
+                "name": "MarkString",
+                "start": 14,
+                "end": 25
+            }
+        ],
+        "decompfont.c": [
+            {
+                "name": "decomptype_init",
+                "start": 20,
+                "end": 38
+            },
+            {
+                "name": "decomptype_access",
+                "start": 40,
+                "end": 66
+            },
+            {
+                "name": "init_decomp_fontinfo",
+                "start": 68,
+                "end": 78
+            },
+            {
+                "name": "init_dcmpntt_fontinfo",
+                "start": 80,
+                "end": 102
+            },
+            {
+                "name": "dcmpntt_markchar",
+                "start": 113,
+                "end": 121
+            },
+            {
+                "name": "read_dcmpntt_fontinfo",
+                "start": 123,
+                "end": 135
+            },
+            {
+                "name": "dcmpntt_fontdict",
+                "start": 137,
+                "end": 148
+            },
+            {
+                "name": "dcmpntt_setchar",
+                "start": 156,
+                "end": 165
+            },
+            {
+                "name": "dcmpntt_setstring",
+                "start": 168,
+                "end": 173
+            },
+            {
+                "name": "init_dcmpdcd_fontinfo",
+                "start": 175,
+                "end": 198
+            },
+            {
+                "name": "dcmpdcd_markchar",
+                "start": 200,
+                "end": 208
+            },
+            {
+                "name": "read_dcmpdcd_fontinfo",
+                "start": 210,
+                "end": 222
+            },
+            {
+                "name": "dcmpdcd_fontdict",
+                "start": 224,
+                "end": 235
+            },
+            {
+                "name": "dcmpdcd_setchar",
+                "start": 237,
+                "end": 246
+            },
+            {
+                "name": "dcmpdcd_setstring",
+                "start": 249,
+                "end": 254
+            }
+        ],
+        "pstype1.c": [
+            {
+                "name": "dev_t1_initfontdict",
+                "start": 11,
+                "end": 28
+            },
+            {
+                "name": "read_type1_file",
+                "start": 30,
+                "end": 102
+            },
+            {
+                "name": "copy_type1_pfa",
+                "start": 104,
+                "end": 125
+            },
+            {
+                "name": "copy_type1_pfb",
+                "start": 130,
+                "end": 176
+            }
+        ],
+        "rfset.c": [
+            {
+                "name": "realf_setchar",
+                "start": 11,
+                "end": 35
+            },
+            {
+                "name": "realf_setstring",
+                "start": 38,
+                "end": 73
+            }
+        ],
+        "writet1.c": [
+            {
+                "name": "end_hexline",
+                "start": 273,
+                "end": 279
+            },
+            {
+                "name": "t1_outhex",
+                "start": 281,
+                "end": 288
+            },
+            {
+                "name": "enc_getline",
+                "start": 291,
+                "end": 306
+            },
+            {
+                "name": "load_enc",
+                "start": 308,
+                "end": 355
+            },
+            {
+                "name": "t1_check_pfa",
+                "start": 357,
+                "end": 365
+            },
+            {
+                "name": "t1_getbyte",
+                "start": 367,
+                "end": 386
+            },
+            {
+                "name": "hexval",
+                "start": 388,
+                "end": 398
+            },
+            {
+                "name": "edecrypt",
+                "start": 400,
+                "end": 411
+            },
+            {
+                "name": "cdecrypt",
+                "start": 413,
+                "end": 418
+            },
+            {
+                "name": "eencrypt",
+                "start": 420,
+                "end": 425
+            },
+            {
+                "name": "eol",
+                "start": 427,
+                "end": 435
+            },
+            {
+                "name": "t1_suffix",
+                "start": 437,
+                "end": 448
+            },
+            {
+                "name": "t1_getline",
+                "start": 450,
+                "end": 497
+            },
+            {
+                "name": "t1_putline",
+                "start": 499,
+                "end": 510
+            },
+            {
+                "name": "t1_puts",
+                "start": 512,
+                "end": 518
+            },
+            {
+                "name": "t1_printf",
+                "start": 530,
+                "end": 536
+            },
+            {
+                "name": "t1_init_params",
+                "start": 539,
+                "end": 553
+            },
+            {
+                "name": "t1_close_font_file",
+                "start": 555,
+                "end": 560
+            },
+            {
+                "name": "t1_check_block_len",
+                "start": 562,
+                "end": 576
+            },
+            {
+                "name": "t1_start_eexec",
+                "start": 578,
+                "end": 594
+            },
+            {
+                "name": "t1_stop_eexec",
+                "start": 596,
+                "end": 616
+            },
+            {
+                "name": "t1_check_unique_id",
+                "start": 775,
+                "end": 782
+            },
+            {
+                "name": "t1_scan_param",
+                "start": 784,
+                "end": 797
+            },
+            {
+                "name": "copy_glyph_names",
+                "start": 799,
+                "end": 808
+            },
+            {
+                "name": "t1_builtin_enc",
+                "start": 810,
+                "end": 907
+            },
+            {
+                "name": "t1_check_predef_enc",
+                "start": 909,
+                "end": 921
+            },
+            {
+                "name": "t1_check_end",
+                "start": 923,
+                "end": 930
+            },
+            {
+                "name": "t1_open_fontfile",
+                "start": 1020,
+                "end": 1026
+            },
+            {
+                "name": "cs_store",
+                "start": 1033,
+                "end": 1061
+            },
+            {
+                "name": "cc_init",
+                "start": 1111,
+                "end": 1147
+            },
+            {
+                "name": "cs_mark",
+                "start": 1154,
+                "end": 1288
+            },
+            {
+                "name": "t1_subset_ascii_part",
+                "start": 1290,
+                "end": 1327
+            },
+            {
+                "name": "cs_init",
+                "start": 1334,
+                "end": 1342
+            },
+            {
+                "name": "init_cs_entry",
+                "start": 1344,
+                "end": 1352
+            },
+            {
+                "name": "t1_read_subrs",
+                "start": 1356,
+                "end": 1426
+            },
+            {
+                "name": "t1_flush_cs",
+                "start": 1428,
+                "end": 1480
+            },
+            {
+                "name": "t1_mark_glyphs",
+                "start": 1482,
+                "end": 1526
+            },
+            {
+                "name": "t1_subset_charstrings",
+                "start": 1528,
+                "end": 1555
+            },
+            {
+                "name": "t1_subset_end",
+                "start": 1557,
+                "end": 1581
+            },
+            {
+                "name": "writet1",
+                "start": 1583,
+                "end": 1611
+            },
+            {
+                "name": "t1_subset",
+                "start": 1614,
+                "end": 1629
+            },
+            {
+                "name": "t1_open",
+                "start": 1635,
+                "end": 1639
+            },
+            {
+                "name": "enc_open",
+                "start": 1641,
+                "end": 1645
+            },
+            {
+                "name": "pdftex_fail",
+                "start": 1647,
+                "end": 1656
+            },
+            {
+                "name": "pdftex_warn",
+                "start": 1658,
+                "end": 1667
+            },
+            {
+                "name": "t1_get_encode",
+                "start": 1672,
+                "end": 1683
+            },
+            {
+                "name": "t1_free_encode",
+                "start": 1685,
+                "end": 1693
+            }
+        ],
+        "vfdcom.c": [
+            {
+                "name": "vfd_getcommand",
+                "start": 41,
+                "end": 46
+            },
+            {
+                "name": "vfd_backupone",
+                "start": 48,
+                "end": 52
+            },
+            {
+                "name": "vfd_getbytes",
+                "start": 54,
+                "end": 61
+            },
+            {
+                "name": "vfd_skipbytes",
+                "start": 63,
+                "end": 68
+            },
+            {
+                "name": "vfd_getuint",
+                "start": 70,
+                "end": 79
+            },
+            {
+                "name": "vfd_getint",
+                "start": 81,
+                "end": 90
+            },
+            {
+                "name": "vfd_movedown",
+                "start": 93,
+                "end": 98
+            },
+            {
+                "name": "vfd_movedown_v",
+                "start": 100,
+                "end": 105
+            },
+            {
+                "name": "vfd_moveover",
+                "start": 107,
+                "end": 112
+            },
+            {
+                "name": "vfd_moveover_v",
+                "start": 114,
+                "end": 119
+            },
+            {
+                "name": "vfd_setrule",
+                "start": 121,
+                "end": 127
+            },
+            {
+                "name": "vfd_setrule_v",
+                "start": 129,
+                "end": 135
+            }
+        ],
+        "mmfont.c": [
+            {
+                "name": "alloc_bi",
+                "start": 10,
+                "end": 28
+            },
+            {
+                "name": "alloc_biinif",
+                "start": 30,
+                "end": 35
+            },
+            {
+                "name": "alloc_jbiinif",
+                "start": 37,
+                "end": 42
+            },
+            {
+                "name": "jmm_markchar",
+                "start": 44,
+                "end": 51
+            },
+            {
+                "name": "mm_markchar",
+                "start": 53,
+                "end": 59
+            },
+            {
+                "name": "jsmm_markchar",
+                "start": 61,
+                "end": 72
+            }
+        ],
+        "dconv.c": [
+            {
+                "name": "setcurdconv",
+                "start": 20,
+                "end": 43
+            },
+            {
+                "name": "setdirhor",
+                "start": 45,
+                "end": 50
+            },
+            {
+                "name": "setdirver",
+                "start": 52,
+                "end": 57
+            }
+        ],
+        "psrast.c": [
+            {
+                "name": "getpackdict",
+                "start": 33,
+                "end": 37
+            },
+            {
+                "name": "getdvidict",
+                "start": 39,
+                "end": 43
+            },
+            {
+                "name": "getdictstat",
+                "start": 45,
+                "end": 60
+            },
+            {
+                "name": "dictform",
+                "start": 62,
+                "end": 71
+            },
+            {
+                "name": "getpdlist",
+                "start": 76,
+                "end": 99
+            },
+            {
+                "name": "dev_rast_initfontdict",
+                "start": 101,
+                "end": 168
+            },
+            {
+                "name": "pscharbitmap",
+                "start": 173,
+                "end": 197
+            },
+            {
+                "name": "dev_rast_initfe",
+                "start": 199,
+                "end": 209
+            },
+            {
+                "name": "rast_setchar",
+                "start": 211,
+                "end": 221
+            },
+            {
+                "name": "rast_setstring",
+                "start": 223,
+                "end": 238
+            }
+        ],
+        "psbi.c": [
+            {
+                "name": "getbuiltin",
+                "start": 110,
+                "end": 115
+            },
+            {
+                "name": "getbifont",
+                "start": 117,
+                "end": 122
+            },
+            {
+                "name": "getbikanji",
+                "start": 124,
+                "end": 129
+            },
+            {
+                "name": "getbuiltinfont",
+                "start": 131,
+                "end": 339
+            },
+            {
+                "name": "comp_bfname",
+                "start": 341,
+                "end": 366
+            },
+            {
+                "name": "findbifont",
+                "start": 368,
+                "end": 379
+            },
+            {
+                "name": "findbksub",
+                "start": 381,
+                "end": 402
+            },
+            {
+                "name": "findbkjfm",
+                "start": 404,
+                "end": 416
+            },
+            {
+                "name": "dev_set_repfe",
+                "start": 418,
+                "end": 423
+            },
+            {
+                "name": "dev_get_repfe",
+                "start": 425,
+                "end": 430
+            },
+            {
+                "name": "dev_fontpath",
+                "start": 432,
+                "end": 437
+            },
+            {
+                "name": "dev_bold",
+                "start": 439,
+                "end": 443
+            },
+            {
+                "name": "dev_cs_enc",
+                "start": 445,
+                "end": 450
+            },
+            {
+                "name": "dev_encfile",
+                "start": 452,
+                "end": 457
+            },
+            {
+                "name": "dev_mf_kind",
+                "start": 459,
+                "end": 463
+            },
+            {
+                "name": "dev_is_tfm",
+                "start": 465,
+                "end": 481
+            },
+            {
+                "name": "dev_tfm_kind",
+                "start": 483,
+                "end": 487
+            },
+            {
+                "name": "bipave",
+                "start": 489,
+                "end": 518
+            },
+            {
+                "name": "t1tobi",
+                "start": 520,
+                "end": 536
+            },
+            {
+                "name": "fttobi",
+                "start": 538,
+                "end": 554
+            },
+            {
+                "name": "dev_is_jstfm",
+                "start": 556,
+                "end": 572
+            },
+            {
+                "name": "dev_jstfm_parent",
+                "start": 574,
+                "end": 600
+            },
+            {
+                "name": "dev_jstfm_kind",
+                "start": 602,
+                "end": 606
+            },
+            {
+                "name": "dev_is_jfm",
+                "start": 608,
+                "end": 624
+            },
+            {
+                "name": "dev_jfm_kind",
+                "start": 626,
+                "end": 630
+            },
+            {
+                "name": "bifpos_relun",
+                "start": 633,
+                "end": 638
+            },
+            {
+                "name": "bifpos_rel",
+                "start": 640,
+                "end": 644
+            },
+            {
+                "name": "bif_coding",
+                "start": 646,
+                "end": 650
+            },
+            {
+                "name": "newbifontname",
+                "start": 652,
+                "end": 660
+            },
+            {
+                "name": "newbifont",
+                "start": 662,
+                "end": 674
+            },
+            {
+                "name": "get_tfm_psbiops",
+                "start": 689,
+                "end": 732
+            },
+            {
+                "name": "get_jstfm_psbiops",
+                "start": 734,
+                "end": 775
+            },
+            {
+                "name": "tmp_psf",
+                "start": 777,
+                "end": 782
+            },
+            {
+                "name": "get_jfm_psbiops",
+                "start": 784,
+                "end": 827
+            },
+            {
+                "name": "psgetfontsize",
+                "start": 829,
+                "end": 833
+            },
+            {
+                "name": "psfindfontop",
+                "start": 835,
+                "end": 842
+            },
+            {
+                "name": "psfindsubfop",
+                "start": 844,
+                "end": 857
+            },
+            {
+                "name": "psfindfop",
+                "start": 859,
+                "end": 868
+            },
+            {
+                "name": "getpd",
+                "start": 870,
+                "end": 880
+            }
+        ],
+        "psspecial.c": [
+            {
+                "name": "dev_predospecial",
+                "start": 109,
+                "end": 230
+            },
+            {
+                "name": "dev_outbangspecials",
+                "start": 232,
+                "end": 245
+            },
+            {
+                "name": "dev_dospecial",
+                "start": 248,
+                "end": 504
+            },
+            {
+                "name": "GetKeyStr",
+                "start": 520,
+                "end": 562
+            },
+            {
+                "name": "GetKeyVal",
+                "start": 574,
+                "end": 616
+            },
+            {
+                "name": "ToLower",
+                "start": 618,
+                "end": 622
+            },
+            {
+                "name": "IsSame",
+                "start": 624,
+                "end": 631
+            },
+            {
+                "name": "scanfile",
+                "start": 637,
+                "end": 668
+            },
+            {
+                "name": "push_location",
+                "start": 686,
+                "end": 689
+            },
+            {
+                "name": "pop_location",
+                "start": 694,
+                "end": 697
+            },
+            {
+                "name": "ps_pensize",
+                "start": 707,
+                "end": 718
+            },
+            {
+                "name": "set_pen_size",
+                "start": 724,
+                "end": 727
+            },
+            {
+                "name": "do_attributes",
+                "start": 733,
+                "end": 747
+            },
+            {
+                "name": "ps_flushpath",
+                "start": 753,
+                "end": 779
+            },
+            {
+                "name": "ps_flushdashedpath",
+                "start": 787,
+                "end": 825
+            },
+            {
+                "name": "ps_drawto",
+                "start": 835,
+                "end": 848
+            },
+            {
+                "name": "ps_arc",
+                "start": 850,
+                "end": 888
+            },
+            {
+                "name": "ps_flushspline",
+                "start": 898,
+                "end": 960
+            },
+            {
+                "name": "dist",
+                "start": 962,
+                "end": 969
+            },
+            {
+                "name": "ps_whiten",
+                "start": 975,
+                "end": 978
+            },
+            {
+                "name": "ps_blacken",
+                "start": 984,
+                "end": 987
+            },
+            {
+                "name": "ps_shade",
+                "start": 994,
+                "end": 1009
+            },
+            {
+                "name": "ps_texture",
+                "start": 1011,
+                "end": 1064
+            },
+            {
+                "name": "ps_rotate",
+                "start": 1066,
+                "end": 1090
+            },
+            {
+                "name": "ps_setrgbcolor",
+                "start": 1092,
+                "end": 1099
+            },
+            {
+                "name": "ps_sethsbcolor",
+                "start": 1101,
+                "end": 1108
+            },
+            {
+                "name": "ps_setcmykcolor",
+                "start": 1110,
+                "end": 1117
+            }
+        ],
+        "mag.c": [
+            {
+                "name": "actfact",
+                "start": 58,
+                "end": 89
+            },
+            {
+                "name": "apprfact",
+                "start": 91,
+                "end": 125
+            }
+        ],
+        "kanji.c": [
+            {
+                "name": "getjsubfont",
+                "start": 49,
+                "end": 61
+            },
+            {
+                "name": "getdcode",
+                "start": 65,
+                "end": 74
+            },
+            {
+                "name": "jsub_to_jis",
+                "start": 79,
+                "end": 111
+            },
+            {
+                "name": "jis_to_jsub",
+                "start": 113,
+                "end": 155
+            },
+            {
+                "name": "code_to_jis",
+                "start": 157,
+                "end": 169
+            },
+            {
+                "name": "jis_to_dcode",
+                "start": 187,
+                "end": 194
+            },
+            {
+                "name": "match_subf",
+                "start": 202,
+                "end": 237
+            },
+            {
+                "name": "subst_subf",
+                "start": 239,
+                "end": 255
+            },
+            {
+                "name": "jis_to_idx94",
+                "start": 260,
+                "end": 274
+            },
+            {
+                "name": "idx94_to_std",
+                "start": 276,
+                "end": 280
+            },
+            {
+                "name": "jsub_to_idx94",
+                "start": 282,
+                "end": 289
+            },
+            {
+                "name": "idx94_to_sjis",
+                "start": 291,
+                "end": 309
+            },
+            {
+                "name": "jis_to_euc",
+                "start": 311,
+                "end": 315
+            },
+            {
+                "name": "jis_to_sjis",
+                "start": 317,
+                "end": 321
+            }
+        ],
+        "ttfont.c": [
+            {
+                "name": "init_ft_fontinfo",
+                "start": 686,
+                "end": 697
+            },
+            {
+                "name": "init_jft_fontinfo",
+                "start": 699,
+                "end": 704
+            },
+            {
+                "name": "init_jsft_fontinfo",
+                "start": 706,
+                "end": 711
+            }
+        ],
+        "scanfont.c": [
+            {
+                "name": "scanfont",
+                "start": 10,
+                "end": 178
+            }
+        ],
+        "type1font.c": [
+            {
+                "name": "init_t1_fontinfo",
+                "start": 13,
+                "end": 28
+            },
+            {
+                "name": "read_t1_fontinfo",
+                "start": 30,
+                "end": 67
+            },
+            {
+                "name": "enc_read",
+                "start": 75,
+                "end": 107
+            }
+        ],
+        "psio.c": [
+            {
+                "name": "dev_copyfile",
+                "start": 18,
+                "end": 25
+            },
+            {
+                "name": "ps_add_include",
+                "start": 27,
+                "end": 38
+            },
+            {
+                "name": "ps_add_setup",
+                "start": 40,
+                "end": 51
+            },
+            {
+                "name": "ps_copyfigfile",
+                "start": 53,
+                "end": 66
+            },
+            {
+                "name": "ps_searchfile",
+                "start": 68,
+                "end": 100
+            },
+            {
+                "name": "ps_createpipe",
+                "start": 102,
+                "end": 109
+            },
+            {
+                "name": "dev_copystring",
+                "start": 111,
+                "end": 116
+            },
+            {
+                "name": "ps_string",
+                "start": 118,
+                "end": 142
+            },
+            {
+                "name": "pschar",
+                "start": 144,
+                "end": 154
+            },
+            {
+                "name": "codetopsstr",
+                "start": 156,
+                "end": 162
+            },
+            {
+                "name": "c2pstr",
+                "start": 164,
+                "end": 171
+            },
+            {
+                "name": "cpfile",
+                "start": 174,
+                "end": 197
+            },
+            {
+                "name": "copyfile",
+                "start": 203,
+                "end": 222
+            },
+            {
+                "name": "createpipe",
+                "start": 228,
+                "end": 253
+            }
+        ],
+        "execfont.c": [
+            {
+                "name": "cexectype_access",
+                "start": 24,
+                "end": 59
+            },
+            {
+                "name": "exectype_access",
+                "start": 61,
+                "end": 69
+            },
+            {
+                "name": "init_exec_fontinfo",
+                "start": 72,
+                "end": 77
+            }
+        ],
+        "pst1form.c": [
+            {
+                "name": "stdex_type1_charname",
+                "start": 87,
+                "end": 94
+            },
+            {
+                "name": "stdex_type1_reencoding",
+                "start": 96,
+                "end": 108
+            },
+            {
+                "name": "stdex_type1_encoding",
+                "start": 110,
+                "end": 123
+            },
+            {
+                "name": "cnum_type1_charname",
+                "start": 125,
+                "end": 133
+            },
+            {
+                "name": "cnum_type1_encoding",
+                "start": 135,
+                "end": 159
+            },
+            {
+                "name": "reencode",
+                "start": 161,
+                "end": 178
+            },
+            {
+                "name": "begin_eexec",
+                "start": 184,
+                "end": 192
+            },
+            {
+                "name": "end_eexec",
+                "start": 194,
+                "end": 204
+            },
+            {
+                "name": "charstring_start",
+                "start": 242,
+                "end": 250
+            },
+            {
+                "name": "charstring_byte",
+                "start": 254,
+                "end": 265
+            },
+            {
+                "name": "charstring_end",
+                "start": 270,
+                "end": 279
+            },
+            {
+                "name": "charstring_int",
+                "start": 283,
+                "end": 308
+            },
+            {
+                "name": "charstring_com",
+                "start": 341,
+                "end": 347
+            },
+            {
+                "name": "e_printf",
+                "start": 351,
+                "end": 361
+            },
+            {
+                "name": "e_putchar",
+                "start": 363,
+                "end": 372
+            },
+            {
+                "name": "init_encrypt",
+                "start": 379,
+                "end": 382
+            },
+            {
+                "name": "init_cencrypt",
+                "start": 384,
+                "end": 387
+            },
+            {
+                "name": "encrypt_char",
+                "start": 389,
+                "end": 397
+            },
+            {
+                "name": "cencrypt_char",
+                "start": 399,
+                "end": 407
+            }
+        ],
+        "ps.c": [
+            {
+                "name": "dev_arg",
+                "start": 68,
+                "end": 78
+            },
+            {
+                "name": "ChkOpt",
+                "start": 83,
+                "end": 171
+            },
+            {
+                "name": "dev_init",
+                "start": 173,
+                "end": 176
+            },
+            {
+                "name": "dev_prologue",
+                "start": 178,
+                "end": 203
+            },
+            {
+                "name": "dev_setup",
+                "start": 205,
+                "end": 237
+            },
+            {
+                "name": "dev_endsetup",
+                "start": 239,
+                "end": 247
+            },
+            {
+                "name": "dev_finish",
+                "start": 249,
+                "end": 256
+            },
+            {
+                "name": "dev_devfilekind",
+                "start": 264,
+                "end": 277
+            },
+            {
+                "name": "dev_devfileif",
+                "start": 279,
+                "end": 294
+            },
+            {
+                "name": "psfname",
+                "start": 304,
+                "end": 310
+            },
+            {
+                "name": "dev_newdevfont",
+                "start": 312,
+                "end": 315
+            },
+            {
+                "name": "dev_initpage",
+                "start": 317,
+                "end": 321
+            },
+            {
+                "name": "dev_prebop",
+                "start": 323,
+                "end": 331
+            },
+            {
+                "name": "dev_bop",
+                "start": 333,
+                "end": 342
+            },
+            {
+                "name": "dev_eop",
+                "start": 344,
+                "end": 348
+            },
+            {
+                "name": "dev_fontmag",
+                "start": 350,
+                "end": 359
+            },
+            {
+                "name": "dev_initfont",
+                "start": 361,
+                "end": 364
+            },
+            {
+                "name": "dev_setfont",
+                "start": 366,
+                "end": 374
+            },
+            {
+                "name": "dev_setposn",
+                "start": 376,
+                "end": 401
+            },
+            {
+                "name": "dev_setposn_abs",
+                "start": 403,
+                "end": 414
+            },
+            {
+                "name": "dev_setrule",
+                "start": 416,
+                "end": 423
+            },
+            {
+                "name": "dev_dir",
+                "start": 429,
+                "end": 441
+            },
+            {
+                "name": "begin_string",
+                "start": 446,
+                "end": 452
+            },
+            {
+                "name": "begin_string_v",
+                "start": 454,
+                "end": 461
+            },
+            {
+                "name": "end_string",
+                "start": 463,
+                "end": 473
+            },
+            {
+                "name": "DoConv",
+                "start": 487,
+                "end": 497
+            },
+            {
+                "name": "pixround",
+                "start": 499,
+                "end": 505
+            }
+        ],
+        "dfdcom.c": [
+            {
+                "name": "dfd_getcommand",
+                "start": 41,
+                "end": 45
+            },
+            {
+                "name": "dfd_backupone",
+                "start": 47,
+                "end": 51
+            },
+            {
+                "name": "dfd_getbytes",
+                "start": 53,
+                "end": 59
+            },
+            {
+                "name": "dfd_skipbytes",
+                "start": 61,
+                "end": 66
+            },
+            {
+                "name": "dfd_getuint",
+                "start": 68,
+                "end": 73
+            },
+            {
+                "name": "dfd_getint",
+                "start": 75,
+                "end": 80
+            },
+            {
+                "name": "ReadFontDef",
+                "start": 83,
+                "end": 99
+            },
+            {
+                "name": "SkipFontDef",
+                "start": 101,
+                "end": 110
+            },
+            {
+                "name": "HasBeenRead",
+                "start": 112,
+                "end": 122
+            },
+            {
+                "name": "dfd_movedown",
+                "start": 125,
+                "end": 130
+            },
+            {
+                "name": "dfd_movedown_v",
+                "start": 132,
+                "end": 137
+            },
+            {
+                "name": "dfd_moveover",
+                "start": 139,
+                "end": 144
+            },
+            {
+                "name": "dfd_moveover_v",
+                "start": 146,
+                "end": 151
+            },
+            {
+                "name": "dfd_setrule",
+                "start": 153,
+                "end": 164
+            },
+            {
+                "name": "dfd_setrule_v",
+                "start": 166,
+                "end": 177
+            }
+        ],
+        "virfont.c": [
+            {
+                "name": "vftype_access",
+                "start": 33,
+                "end": 39
+            },
+            {
+                "name": "jvftype_access",
+                "start": 41,
+                "end": 48
+            },
+            {
+                "name": "vfty_acc",
+                "start": 50,
+                "end": 73
+            },
+            {
+                "name": "init_vf_fontinfo",
+                "start": 75,
+                "end": 85
+            },
+            {
+                "name": "init_jvf_fontinfo",
+                "start": 87,
+                "end": 97
+            },
+            {
+                "name": "read_vf_dviinfo",
+                "start": 107,
+                "end": 111
+            },
+            {
+                "name": "read_jvf_dviinfo",
+                "start": 113,
+                "end": 117
+            },
+            {
+                "name": "read_vf_di",
+                "start": 119,
+                "end": 222
+            },
+            {
+                "name": "alloc_virfinfo",
+                "start": 224,
+                "end": 243
+            },
+            {
+                "name": "realloc_virfinfo",
+                "start": 245,
+                "end": 265
+            },
+            {
+                "name": "vf_markchar",
+                "start": 267,
+                "end": 271
+            },
+            {
+                "name": "jvf_markchar",
+                "start": 273,
+                "end": 286
+            },
+            {
+                "name": "getvfdvi",
+                "start": 288,
+                "end": 305
+            },
+            {
+                "name": "vf_mc",
+                "start": 307,
+                "end": 393
+            },
+            {
+                "name": "setc_com",
+                "start": 395,
+                "end": 409
+            },
+            {
+                "name": "read_vf_fontinfo",
+                "start": 411,
+                "end": 423
+            },
+            {
+                "name": "read_jvf_fontinfo",
+                "start": 425,
+                "end": 437
+            },
+            {
+                "name": "vf_fontdict",
+                "start": 440,
+                "end": 446
+            },
+            {
+                "name": "vf_setchar",
+                "start": 448,
+                "end": 452
+            },
+            {
+                "name": "jvf_setchar",
+                "start": 454,
+                "end": 463
+            },
+            {
+                "name": "vf_sc",
+                "start": 466,
+                "end": 516
+            },
+            {
+                "name": "vf_setstring",
+                "start": 518,
+                "end": 531
+            },
+            {
+                "name": "jvf_setstring",
+                "start": 533,
+                "end": 546
+            }
+        ],
+        "pstfm.c": [
+            {
+                "name": "dev_tfm_initfontdict",
+                "start": 15,
+                "end": 25
+            },
+            {
+                "name": "dev_tfm_initfe",
+                "start": 27,
+                "end": 43
+            },
+            {
+                "name": "tfm_setchar",
+                "start": 45,
+                "end": 55
+            },
+            {
+                "name": "tfm_setstring",
+                "start": 57,
+                "end": 72
+            },
+            {
+                "name": "tfm_setchar_abs",
+                "start": 74,
+                "end": 82
+            },
+            {
+                "name": "tfm_setstring_abs",
+                "start": 84,
+                "end": 101
+            },
+            {
+                "name": "dev_jstfm_initfontdict",
+                "start": 106,
+                "end": 118
+            },
+            {
+                "name": "dev_jstfm_initfe",
+                "start": 120,
+                "end": 165
+            },
+            {
+                "name": "jstfm_setstring_abs_sjis",
+                "start": 129,
+                "end": 130
+            },
+            {
+                "name": "pschar_jis",
+                "start": 167,
+                "end": 172
+            },
+            {
+                "name": "pschar_euc",
+                "start": 174,
+                "end": 179
+            },
+            {
+                "name": "pschar_sjis",
+                "start": 181,
+                "end": 188
+            },
+            {
+                "name": "jstfm_setchar_gen",
+                "start": 190,
+                "end": 201
+            },
+            {
+                "name": "jstfm_setchar",
+                "start": 203,
+                "end": 207
+            },
+            {
+                "name": "jstfm_setchar_euc",
+                "start": 209,
+                "end": 213
+            },
+            {
+                "name": "jstfm_setchar_sjis",
+                "start": 215,
+                "end": 219
+            },
+            {
+                "name": "jstfm_setstring_gen",
+                "start": 221,
+                "end": 237
+            },
+            {
+                "name": "jstfm_setstring",
+                "start": 239,
+                "end": 244
+            },
+            {
+                "name": "jstfm_setstring_euc",
+                "start": 246,
+                "end": 251
+            },
+            {
+                "name": "jstfm_setstring_sjis",
+                "start": 253,
+                "end": 258
+            },
+            {
+                "name": "setchar_abs_gen",
+                "start": 260,
+                "end": 269
+            },
+            {
+                "name": "jstfm_setchar_abs",
+                "start": 271,
+                "end": 275
+            },
+            {
+                "name": "jstfm_setchar_abs_euc",
+                "start": 277,
+                "end": 281
+            },
+            {
+                "name": "jstfm_setchar_abs_sjis",
+                "start": 283,
+                "end": 287
+            },
+            {
+                "name": "jstfm_setstring_abs_gen",
+                "start": 289,
+                "end": 307
+            },
+            {
+                "name": "jstfm_setstring_abs",
+                "start": 309,
+                "end": 314
+            },
+            {
+                "name": "jstfm_setstring_abs_euc",
+                "start": 316,
+                "end": 321
+            },
+            {
+                "name": "jstfm_setstring_abs_sjis",
+                "start": 323,
+                "end": 328
+            },
+            {
+                "name": "dev_jfm_initfontdict",
+                "start": 333,
+                "end": 343
+            },
+            {
+                "name": "dev_jfm_initfe",
+                "start": 345,
+                "end": 400
+            },
+            {
+                "name": "jfm_setchar_gen",
+                "start": 402,
+                "end": 413
+            },
+            {
+                "name": "jfm_setchar",
+                "start": 417,
+                "end": 421
+            },
+            {
+                "name": "jfm_setchar_euc",
+                "start": 423,
+                "end": 427
+            },
+            {
+                "name": "jfm_setchar_sjis",
+                "start": 429,
+                "end": 433
+            },
+            {
+                "name": "jfm_setstring",
+                "start": 436,
+                "end": 441
+            },
+            {
+                "name": "jfm_setchar_abs",
+                "start": 443,
+                "end": 447
+            },
+            {
+                "name": "jfm_setchar_abs_euc",
+                "start": 449,
+                "end": 453
+            },
+            {
+                "name": "jfm_setchar_abs_sjis",
+                "start": 455,
+                "end": 459
+            },
+            {
+                "name": "jfm_setstring_abs",
+                "start": 462,
+                "end": 467
+            },
+            {
+                "name": "jfm_setchar_v",
+                "start": 469,
+                "end": 473
+            },
+            {
+                "name": "jfm_setchar_v_euc",
+                "start": 475,
+                "end": 479
+            },
+            {
+                "name": "jfm_setchar_v_sjis",
+                "start": 481,
+                "end": 485
+            },
+            {
+                "name": "jfm_setstring_v",
+                "start": 488,
+                "end": 493
+            },
+            {
+                "name": "setchar_vabs_gen",
+                "start": 498,
+                "end": 508
+            },
+            {
+                "name": "jfm_setchar_vabs",
+                "start": 510,
+                "end": 514
+            },
+            {
+                "name": "jfm_setchar_vabs_euc",
+                "start": 516,
+                "end": 520
+            },
+            {
+                "name": "jfm_setchar_vabs_sjis",
+                "start": 522,
+                "end": 526
+            },
+            {
+                "name": "jfm_setstring_vabs",
+                "start": 529,
+                "end": 534
+            }
+        ],
+        "open.c": [
+            {
+                "name": "openfontfile",
+                "start": 14,
+                "end": 83
+            },
+            {
+                "name": "priority",
+                "start": 85,
+                "end": 90
+            }
+        ],
+        "wlfont.c": [
+            {
+                "name": "init_wl_fontinfo",
+                "start": 13,
+                "end": 23
+            },
+            {
+                "name": "wlpave",
+                "start": 25,
+                "end": 55
+            },
+            {
+                "name": "read_wl_finfo",
+                "start": 57,
+                "end": 124
+            },
+            {
+                "name": "read_wl_fontinfo",
+                "start": 126,
+                "end": 148
+            },
+            {
+                "name": "wl_fontdict",
+                "start": 150,
+                "end": 156
+            },
+            {
+                "name": "init_jswl_fontinfo",
+                "start": 161,
+                "end": 177
+            },
+            {
+                "name": "read_jswl_fontinfo",
+                "start": 179,
+                "end": 200
+            },
+            {
+                "name": "jswl_fontdict",
+                "start": 202,
+                "end": 210
+            }
+        ],
+        "fontcom.c": [
+            {
+                "name": "readfontdef",
+                "start": 14,
+                "end": 32
+            },
+            {
+                "name": "get_font_entry",
+                "start": 34,
+                "end": 88
+            },
+            {
+                "name": "first_markchar",
+                "start": 96,
+                "end": 101
+            },
+            {
+                "name": "SetFntNum",
+                "start": 109,
+                "end": 123
+            },
+            {
+                "name": "read_fontinfo",
+                "start": 128,
+                "end": 140
+            },
+            {
+                "name": "null_markchar",
+                "start": 145,
+                "end": 148
+            },
+            {
+                "name": "read_null_fontinfo",
+                "start": 150,
+                "end": 160
+            },
+            {
+                "name": "null_fontdict",
+                "start": 163,
+                "end": 169
+            },
+            {
+                "name": "null_setchar",
+                "start": 172,
+                "end": 176
+            },
+            {
+                "name": "null_setstring",
+                "start": 179,
+                "end": 184
+            }
+        ],
+        "vflfont.c": [
+            {
+                "name": "getvfcap",
+                "start": 20,
+                "end": 30
+            },
+            {
+                "name": "getvflbase",
+                "start": 40,
+                "end": 50
+            },
+            {
+                "name": "init_vfl_fontinfo",
+                "start": 237,
+                "end": 248
+            },
+            {
+                "name": "init_jsvfl_fontinfo",
+                "start": 250,
+                "end": 255
+            }
+        ],
+        "rastfont.c": [
+            {
+                "name": "rast_mag",
+                "start": 7,
+                "end": 30
+            },
+            {
+                "name": "rast_debug_report",
+                "start": 33,
+                "end": 46
+            },
+            {
+                "name": "check_id",
+                "start": 49,
+                "end": 68
+            },
+            {
+                "name": "init_rast_fontinfo",
+                "start": 70,
+                "end": 87
+            },
+            {
+                "name": "rast_markchar",
+                "start": 89,
+                "end": 99
+            },
+            {
+                "name": "alloc_rastfinfo",
+                "start": 101,
+                "end": 128
+            },
+            {
+                "name": "rast_fontdict",
+                "start": 131,
+                "end": 138
+            }
+        ],
+        "compfont.c": [
+            {
+                "name": "comptype_init",
+                "start": 20,
+                "end": 38
+            },
+            {
+                "name": "comptype_access",
+                "start": 40,
+                "end": 70
+            },
+            {
+                "name": "init_comp_fontinfo",
+                "start": 72,
+                "end": 82
+            },
+            {
+                "name": "init_cmpntt_fontinfo",
+                "start": 84,
+                "end": 99
+            },
+            {
+                "name": "cmpntt_markchar",
+                "start": 109,
+                "end": 117
+            },
+            {
+                "name": "read_cmpntt_fontinfo",
+                "start": 119,
+                "end": 131
+            },
+            {
+                "name": "cmpntt_fontdict",
+                "start": 133,
+                "end": 144
+            },
+            {
+                "name": "cmpntt_setchar",
+                "start": 152,
+                "end": 161
+            },
+            {
+                "name": "cmpntt_setstring",
+                "start": 163,
+                "end": 173
+            },
+            {
+                "name": "init_cmpdcd_fontinfo",
+                "start": 175,
+                "end": 190
+            },
+            {
+                "name": "cmpdcd_markchar",
+                "start": 192,
+                "end": 200
+            },
+            {
+                "name": "read_cmpdcd_fontinfo",
+                "start": 202,
+                "end": 214
+            },
+            {
+                "name": "cmpdcd_fontdict",
+                "start": 216,
+                "end": 227
+            },
+            {
+                "name": "cmpdcd_setchar",
+                "start": 229,
+                "end": 238
+            },
+            {
+                "name": "cmpdcd_setstring",
+                "start": 240,
+                "end": 250
+            }
+        ],
+        "pscolor.c": [
+            {
+                "name": "colorcmdout",
+                "start": 59,
+                "end": 87
+            },
+            {
+                "name": "initcolor",
+                "start": 92,
+                "end": 108
+            },
+            {
+                "name": "background",
+                "start": 114,
+                "end": 124
+            },
+            {
+                "name": "pushcolor",
+                "start": 129,
+                "end": 142
+            },
+            {
+                "name": "popcolor",
+                "start": 147,
+                "end": 164
+            },
+            {
+                "name": "resetcolorstack",
+                "start": 169,
+                "end": 192
+            },
+            {
+                "name": "bopcolor",
+                "start": 206,
+                "end": 252
+            }
+        ],
+        "dviconv.c": [
+            {
+                "name": "dviconv",
+                "start": 20,
+                "end": 248
+            },
+            {
+                "name": "initdir",
+                "start": 250,
+                "end": 254
+            },
+            {
+                "name": "setdir",
+                "start": 256,
+                "end": 272
+            }
+        ],
+        "vfset.c": [
+            {
+                "name": "virf_setchar",
+                "start": 11,
+                "end": 27
+            },
+            {
+                "name": "virf_setstring",
+                "start": 30,
+                "end": 55
+            }
+        ],
+        "fontdesc.c": [
+            {
+                "name": "setlibdir",
+                "start": 100,
+                "end": 107
+            },
+            {
+                "name": "read_fontdesc",
+                "start": 109,
+                "end": 149
+            },
+            {
+                "name": "findsearchfile",
+                "start": 154,
+                "end": 177
+            },
+            {
+                "name": "pathsearchfile",
+                "start": 182,
+                "end": 208
+            },
+            {
+                "name": "searchfile",
+                "start": 210,
+                "end": 275
+            },
+            {
+                "name": "searchfiledir",
+                "start": 277,
+                "end": 291
+            },
+            {
+                "name": "skipline",
+                "start": 293,
+                "end": 298
+            },
+            {
+                "name": "skipblanks0",
+                "start": 300,
+                "end": 311
+            },
+            {
+                "name": "skipblanks",
+                "start": 313,
+                "end": 319
+            },
+            {
+                "name": "getfield",
+                "start": 321,
+                "end": 344
+            },
+            {
+                "name": "getqfield0",
+                "start": 346,
+                "end": 368
+            },
+            {
+                "name": "getqfield",
+                "start": 370,
+                "end": 375
+            },
+            {
+                "name": "getoqfield",
+                "start": 377,
+                "end": 385
+            },
+            {
+                "name": "getlfield",
+                "start": 387,
+                "end": 408
+            },
+            {
+                "name": "findconfop",
+                "start": 415,
+                "end": 426
+            },
+            {
+                "name": "getfontdesc",
+                "start": 438,
+                "end": 448
+            },
+            {
+                "name": "arg_fontdesc",
+                "start": 450,
+                "end": 458
+            },
+            {
+                "name": "getfdfont",
+                "start": 476,
+                "end": 509
+            },
+            {
+                "name": "findfontop",
+                "start": 511,
+                "end": 521
+            },
+            {
+                "name": "pathtype_init",
+                "start": 523,
+                "end": 532
+            },
+            {
+                "name": "add_def0",
+                "start": 548,
+                "end": 560
+            },
+            {
+                "name": "add_def",
+                "start": 562,
+                "end": 574
+            },
+            {
+                "name": "get_def",
+                "start": 576,
+                "end": 587
+            },
+            {
+                "name": "arg_define",
+                "start": 589,
+                "end": 600
+            },
+            {
+                "name": "getdef",
+                "start": 602,
+                "end": 614
+            },
+            {
+                "name": "getdefbody",
+                "start": 616,
+                "end": 623
+            },
+            {
+                "name": "defexpand",
+                "start": 625,
+                "end": 656
+            },
+            {
+                "name": "set_resolution",
+                "start": 664,
+                "end": 671
+            },
+            {
+                "name": "getresolution",
+                "start": 673,
+                "end": 681
+            },
+            {
+                "name": "add_include",
+                "start": 716,
+                "end": 722
+            },
+            {
+                "name": "add_includeif",
+                "start": 724,
+                "end": 731
+            },
+            {
+                "name": "add_setup",
+                "start": 733,
+                "end": 739
+            },
+            {
+                "name": "add_setupif",
+                "start": 741,
+                "end": 748
+            },
+            {
+                "name": "add_devfile",
+                "start": 750,
+                "end": 779
+            },
+            {
+                "name": "add_include_spec",
+                "start": 781,
+                "end": 793
+            },
+            {
+                "name": "add_setup_spec",
+                "start": 795,
+                "end": 807
+            },
+            {
+                "name": "getinclude",
+                "start": 809,
+                "end": 813
+            },
+            {
+                "name": "getincludeif",
+                "start": 815,
+                "end": 819
+            },
+            {
+                "name": "getsetup",
+                "start": 821,
+                "end": 825
+            },
+            {
+                "name": "getsetupif",
+                "start": 827,
+                "end": 831
+            },
+            {
+                "name": "getdevfile",
+                "start": 833,
+                "end": 841
+            },
+            {
+                "name": "getdevfileif",
+                "start": 843,
+                "end": 854
+            },
+            {
+                "name": "do_include",
+                "start": 856,
+                "end": 859
+            },
+            {
+                "name": "do_setup",
+                "start": 861,
+                "end": 864
+            },
+            {
+                "name": "do_devfile",
+                "start": 866,
+                "end": 872
+            },
+            {
+                "name": "getcconv",
+                "start": 882,
+                "end": 893
+            },
+            {
+                "name": "findcconvmap",
+                "start": 895,
+                "end": 899
+            },
+            {
+                "name": "getsubst",
+                "start": 917,
+                "end": 940
+            },
+            {
+                "name": "getreplfont",
+                "start": 958,
+                "end": 1003
+            },
+            {
+                "name": "init_default",
+                "start": 1011,
+                "end": 1016
+            },
+            {
+                "name": "fix_default",
+                "start": 1018,
+                "end": 1031
+            },
+            {
+                "name": "replfont",
+                "start": 1037,
+                "end": 1057
+            },
+            {
+                "name": "init_fontinfo",
+                "start": 1062,
+                "end": 1165
+            },
+            {
+                "name": "pave",
+                "start": 1170,
+                "end": 1244
+            }
+        ],
+        "psifont.c": [
+            {
+                "name": "ps_scanifont",
+                "start": 12,
+                "end": 22
+            },
+            {
+                "name": "scanifont",
+                "start": 36,
+                "end": 133
+            },
+            {
+                "name": "bp2sp",
+                "start": 135,
+                "end": 139
+            },
+            {
+                "name": "useifont",
+                "start": 141,
+                "end": 144
+            },
+            {
+                "name": "ifont_setup",
+                "start": 146,
+                "end": 172
+            }
+        ],
+        "pswl.c": [
+            {
+                "name": "dev_wl_begfontdict",
+                "start": 20,
+                "end": 25
+            },
+            {
+                "name": "dev_wl_initfontdict",
+                "start": 29,
+                "end": 71
+            },
+            {
+                "name": "dev_wl_endfontdict",
+                "start": 73,
+                "end": 77
+            },
+            {
+                "name": "wl_endfontdict",
+                "start": 79,
+                "end": 87
+            },
+            {
+                "name": "dev_wl_initfe",
+                "start": 89,
+                "end": 105
+            },
+            {
+                "name": "wl_setchar",
+                "start": 107,
+                "end": 118
+            },
+            {
+                "name": "wl_setstring",
+                "start": 121,
+                "end": 126
+            },
+            {
+                "name": "wl_setchar_abs",
+                "start": 128,
+                "end": 136
+            },
+            {
+                "name": "wl_setstring_abs",
+                "start": 139,
+                "end": 144
+            },
+            {
+                "name": "dev_jswl_begfontdict",
+                "start": 149,
+                "end": 154
+            },
+            {
+                "name": "dev_jswl_initfe",
+                "start": 156,
+                "end": 172
+            },
+            {
+                "name": "jswl_setchar",
+                "start": 174,
+                "end": 185
+            },
+            {
+                "name": "jswl_setstring",
+                "start": 188,
+                "end": 205
+            },
+            {
+                "name": "jswl_setchar_abs",
+                "start": 207,
+                "end": 215
+            },
+            {
+                "name": "jswl_setstring_abs",
+                "start": 218,
+                "end": 237
+            },
+            {
+                "name": "wl_type1_prologue1",
+                "start": 249,
+                "end": 272
+            },
+            {
+                "name": "wl_type1_prologue2",
+                "start": 274,
+                "end": 309
+            },
+            {
+                "name": "wl_type1_char",
+                "start": 311,
+                "end": 322
+            },
+            {
+                "name": "wl_type1_epilogue",
+                "start": 324,
+                "end": 337
+            }
+        ],
+        "run.c": [
+            {
+                "name": "sigabort",
+                "start": 9,
+                "end": 14
+            },
+            {
+                "name": "init_settings",
+                "start": 19,
+                "end": 313
+            },
+            {
+                "name": "usage",
+                "start": 315,
+                "end": 329
+            },
+            {
+                "name": "AbortRun",
+                "start": 337,
+                "end": 344
+            },
+            {
+                "name": "AllDone",
+                "start": 352,
+                "end": 385
+            },
+            {
+                "name": "Fatal",
+                "start": 393,
+                "end": 403
+            },
+            {
+                "name": "Warning",
+                "start": 411,
+                "end": 421
+            }
+        ],
+        "funcfont.c": [
+            {
+                "name": "functype_init",
+                "start": 25,
+                "end": 80
+            },
+            {
+                "name": "functype_access",
+                "start": 82,
+                "end": 106
+            },
+            {
+                "name": "init_func_fontinfo",
+                "start": 108,
+                "end": 117
+            },
+            {
+                "name": "findcondop",
+                "start": 137,
+                "end": 147
+            },
+            {
+                "name": "init_dummy_fontinfo",
+                "start": 150,
+                "end": 155
+            },
+            {
+                "name": "false_access",
+                "start": 167,
+                "end": 174
+            },
+            {
+                "name": "exist_access",
+                "start": 184,
+                "end": 216
+            },
+            {
+                "name": "pre_access",
+                "start": 233,
+                "end": 244
+            },
+            {
+                "name": "notpre_access",
+                "start": 246,
+                "end": 257
+            }
+        ],
+        "tools/texfix.c": [
+            {
+                "name": "main",
+                "start": 41,
+                "end": 59
+            },
+            {
+                "name": "pageout",
+                "start": 61,
+                "end": 97
+            },
+            {
+                "name": "specialout",
+                "start": 99,
+                "end": 111
+            },
+            {
+                "name": "cleanup",
+                "start": 113,
+                "end": 117
+            }
+        ],
+        "tools/nup.c": [
+            {
+                "name": "main",
+                "start": 75,
+                "end": 157
+            },
+            {
+                "name": "printprologue",
+                "start": 159,
+                "end": 172
+            },
+            {
+                "name": "printheader",
+                "start": 174,
+                "end": 218
+            },
+            {
+                "name": "printscript",
+                "start": 220,
+                "end": 249
+            },
+            {
+                "name": "printsetup",
+                "start": 251,
+                "end": 264
+            },
+            {
+                "name": "skipdocument",
+                "start": 266,
+                "end": 278
+            },
+            {
+                "name": "printprocset",
+                "start": 280,
+                "end": 372
+            },
+            {
+                "name": "usage",
+                "start": 374,
+                "end": 377
+            }
+        ]
+    }
+}

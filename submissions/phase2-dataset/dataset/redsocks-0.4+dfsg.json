@@ -1,0 +1,964 @@
+{
+    "redsocks-0.4+dfsg": {
+        "reddns.c": [
+            {
+                "name": "reddns_onenter",
+                "start": 31,
+                "end": 42
+            },
+            {
+                "name": "reddns_onexit",
+                "start": 44,
+                "end": 62
+            },
+            {
+                "name": "reddns_init",
+                "start": 80,
+                "end": 83
+            },
+            {
+                "name": "reddns_fini",
+                "start": 85,
+                "end": 87
+            }
+        ],
+        "log.h": [
+            {
+                "name": "_log_write",
+                "start": 16,
+                "end": 18
+            }
+        ],
+        "list.h": [
+            {
+                "name": "INIT_LIST_HEAD",
+                "start": 37,
+                "end": 41
+            },
+            {
+                "name": "__list_add",
+                "start": 49,
+                "end": 57
+            },
+            {
+                "name": "list_add",
+                "start": 67,
+                "end": 70
+            },
+            {
+                "name": "list_add_tail",
+                "start": 80,
+                "end": 83
+            },
+            {
+                "name": "__list_del",
+                "start": 92,
+                "end": 96
+            },
+            {
+                "name": "list_del",
+                "start": 104,
+                "end": 109
+            },
+            {
+                "name": "list_replace",
+                "start": 117,
+                "end": 124
+            },
+            {
+                "name": "list_replace_init",
+                "start": 126,
+                "end": 131
+            },
+            {
+                "name": "list_del_init",
+                "start": 137,
+                "end": 141
+            },
+            {
+                "name": "list_move",
+                "start": 148,
+                "end": 152
+            },
+            {
+                "name": "list_move_tail",
+                "start": 159,
+                "end": 164
+            },
+            {
+                "name": "list_is_last",
+                "start": 171,
+                "end": 175
+            },
+            {
+                "name": "list_empty",
+                "start": 181,
+                "end": 184
+            },
+            {
+                "name": "list_empty_careful",
+                "start": 199,
+                "end": 203
+            },
+            {
+                "name": "__list_splice",
+                "start": 205,
+                "end": 217
+            },
+            {
+                "name": "list_splice",
+                "start": 224,
+                "end": 228
+            },
+            {
+                "name": "list_splice_init",
+                "start": 237,
+                "end": 244
+            }
+        ],
+        "redsocks.h": [
+            {
+                "name": "redsocks_write_helper_ex_plain",
+                "start": 83,
+                "end": 85
+            },
+            {
+                "name": "redsocks_write_helper_ex",
+                "start": 86,
+                "end": 88
+            },
+            {
+                "name": "redsocks_write_helper",
+                "start": 89,
+                "end": 91
+            },
+            {
+                "name": "redsocks_log_write_plain",
+                "start": 101,
+                "end": 106
+            }
+        ],
+        "utils.c": [
+            {
+                "name": "red_recv_udp_pkt",
+                "start": 28,
+                "end": 53
+            },
+            {
+                "name": "redsocks_time",
+                "start": 55,
+                "end": 62
+            },
+            {
+                "name": "redsocks_evbuffer_readline",
+                "start": 64,
+                "end": 71
+            },
+            {
+                "name": "red_connect_relay",
+                "start": 73,
+                "end": 124
+            },
+            {
+                "name": "red_socket_geterrno",
+                "start": 126,
+                "end": 140
+            },
+            {
+                "name": "fcntl_nonblock",
+                "start": 146,
+                "end": 160
+            },
+            {
+                "name": "red_is_socket_connected_ok",
+                "start": 162,
+                "end": 177
+            }
+        ],
+        "http-auth.h": [
+            {
+                "name": "digest_authentication_encode",
+                "start": 23,
+                "end": 24
+            }
+        ],
+        "http-auth.c": [
+            {
+                "name": "basic_authentication_encode",
+                "start": 31,
+                "end": 47
+            },
+            {
+                "name": "dump_hash",
+                "start": 51,
+                "end": 60
+            },
+            {
+                "name": "extract_param",
+                "start": 72,
+                "end": 136
+            },
+            {
+                "name": "digest_authentication_encode",
+                "start": 138,
+                "end": 269
+            }
+        ],
+        "parser.c": [
+            {
+                "name": "parser_error",
+                "start": 50,
+                "end": 57
+            },
+            {
+                "name": "parser_start",
+                "start": 59,
+                "end": 73
+            },
+            {
+                "name": "parser_add_section",
+                "start": 75,
+                "end": 80
+            },
+            {
+                "name": "parser_stop",
+                "start": 82,
+                "end": 86
+            },
+            {
+                "name": "unescape",
+                "start": 88,
+                "end": 101
+            },
+            {
+                "name": "gettoken",
+                "start": 105,
+                "end": 227
+            },
+            {
+                "name": "context_filled_add",
+                "start": 229,
+                "end": 233
+            },
+            {
+                "name": "context_filled_set",
+                "start": 235,
+                "end": 239
+            },
+            {
+                "name": "vp_pbool",
+                "start": 241,
+                "end": 261
+            },
+            {
+                "name": "vp_pchar",
+                "start": 263,
+                "end": 272
+            },
+            {
+                "name": "vp_uint16",
+                "start": 274,
+                "end": 288
+            },
+            {
+                "name": "vp_in_addr",
+                "start": 290,
+                "end": 332
+            },
+            {
+                "name": "vp_in_addr2",
+                "start": 334,
+                "end": 383
+            },
+            {
+                "name": "parser_run",
+                "start": 394,
+                "end": 587
+            }
+        ],
+        "md5.c": [
+            {
+                "name": "md5_process",
+                "start": 131,
+                "end": 309
+            },
+            {
+                "name": "md5_init",
+                "start": 311,
+                "end": 318
+            },
+            {
+                "name": "md5_append",
+                "start": 320,
+                "end": 355
+            },
+            {
+                "name": "md5_finish",
+                "start": 357,
+                "end": 377
+            }
+        ],
+        "redudp.c": [
+            {
+                "name": "redudp_fill_preamble",
+                "start": 53,
+                "end": 60
+            },
+            {
+                "name": "socks5_mkmethods_plain_wrapper",
+                "start": 62,
+                "end": 66
+            },
+            {
+                "name": "socks5_mkpassword_plain_wrapper",
+                "start": 68,
+                "end": 72
+            },
+            {
+                "name": "socks5_mkassociate",
+                "start": 74,
+                "end": 81
+            },
+            {
+                "name": "redudp_drop_client",
+                "start": 86,
+                "end": 113
+            },
+            {
+                "name": "redudp_bump_timeout",
+                "start": 115,
+                "end": 125
+            },
+            {
+                "name": "redudp_forward_pkt",
+                "start": 127,
+                "end": 156
+            },
+            {
+                "name": "redudp_enqeue_pkt",
+                "start": 158,
+                "end": 181
+            },
+            {
+                "name": "redudp_flush_queue",
+                "start": 183,
+                "end": 194
+            },
+            {
+                "name": "redudp_read_assoc_reply",
+                "start": 196,
+                "end": 260
+            },
+            {
+                "name": "redudp_read_auth_reply",
+                "start": 262,
+                "end": 294
+            },
+            {
+                "name": "redudp_read_auth_methods",
+                "start": 296,
+                "end": 340
+            },
+            {
+                "name": "redudp_relay_connected",
+                "start": 342,
+                "end": 367
+            },
+            {
+                "name": "redudp_relay_error",
+                "start": 369,
+                "end": 375
+            },
+            {
+                "name": "redudp_timeout",
+                "start": 377,
+                "end": 383
+            },
+            {
+                "name": "redudp_first_pkt_from_client",
+                "start": 385,
+                "end": 420
+            },
+            {
+                "name": "redudp_pkt_from_socks",
+                "start": 422,
+                "end": 481
+            },
+            {
+                "name": "redudp_pkt_from_client",
+                "start": 483,
+                "end": 517
+            },
+            {
+                "name": "redudp_onenter",
+                "start": 539,
+                "end": 575
+            },
+            {
+                "name": "redudp_onexit",
+                "start": 577,
+                "end": 597
+            },
+            {
+                "name": "redudp_init_instance",
+                "start": 599,
+                "end": 643
+            },
+            {
+                "name": "redudp_fini_instance",
+                "start": 648,
+                "end": 673
+            },
+            {
+                "name": "redudp_init",
+                "start": 675,
+                "end": 691
+            },
+            {
+                "name": "redudp_fini",
+                "start": 693,
+                "end": 701
+            }
+        ],
+        "redsocks.c": [
+            {
+                "name": "tracked_event_set",
+                "start": 75,
+                "end": 81
+            },
+            {
+                "name": "tracked_event_add",
+                "start": 83,
+                "end": 89
+            },
+            {
+                "name": "tracked_event_del",
+                "start": 91,
+                "end": 97
+            },
+            {
+                "name": "redsocks_onenter",
+                "start": 99,
+                "end": 142
+            },
+            {
+                "name": "redsocks_onexit",
+                "start": 144,
+                "end": 192
+            },
+            {
+                "name": "redsocks_log_write_plain",
+                "start": 202,
+                "end": 236
+            },
+            {
+                "name": "redsocks_touch_client",
+                "start": 238,
+                "end": 241
+            },
+            {
+                "name": "redsocks_relay_readcb",
+                "start": 244,
+                "end": 254
+            },
+            {
+                "name": "redsocks_relay_writecb",
+                "start": 256,
+                "end": 270
+            },
+            {
+                "name": "redsocks_relay_relayreadcb",
+                "start": 273,
+                "end": 278
+            },
+            {
+                "name": "redsocks_relay_relaywritecb",
+                "start": 280,
+                "end": 285
+            },
+            {
+                "name": "redsocks_relay_clientreadcb",
+                "start": 287,
+                "end": 292
+            },
+            {
+                "name": "redsocks_relay_clientwritecb",
+                "start": 294,
+                "end": 299
+            },
+            {
+                "name": "redsocks_start_relay",
+                "start": 301,
+                "end": 333
+            },
+            {
+                "name": "redsocks_drop_client",
+                "start": 335,
+                "end": 354
+            },
+            {
+                "name": "redsocks_shutdown",
+                "start": 356,
+                "end": 403
+            },
+            {
+                "name": "redsocks_socket_geterrno",
+                "start": 406,
+                "end": 414
+            },
+            {
+                "name": "redsocks_event_error",
+                "start": 416,
+                "end": 442
+            },
+            {
+                "name": "sizes_equal",
+                "start": 444,
+                "end": 447
+            },
+            {
+                "name": "sizes_greater_equal",
+                "start": 449,
+                "end": 452
+            },
+            {
+                "name": "redsocks_read_expected",
+                "start": 454,
+                "end": 468
+            },
+            {
+                "name": "mkevbuffer",
+                "start": 470,
+                "end": 492
+            },
+            {
+                "name": "redsocks_write_helper_ex",
+                "start": 494,
+                "end": 501
+            },
+            {
+                "name": "redsocks_write_helper_ex_plain",
+                "start": 503,
+                "end": 540
+            },
+            {
+                "name": "redsocks_write_helper",
+                "start": 542,
+                "end": 548
+            },
+            {
+                "name": "redsocks_relay_connected",
+                "start": 550,
+                "end": 570
+            },
+            {
+                "name": "redsocks_connect_relay",
+                "start": 572,
+                "end": 580
+            },
+            {
+                "name": "redsocks_accept_backoff",
+                "start": 582,
+                "end": 593
+            },
+            {
+                "name": "redsocks_close_internal",
+                "start": 595,
+                "end": 619
+            },
+            {
+                "name": "redsocks_accept_client",
+                "start": 621,
+                "end": 722
+            },
+            {
+                "name": "redsocks_evshut_str",
+                "start": 724,
+                "end": 732
+            },
+            {
+                "name": "redsocks_event_str",
+                "start": 734,
+                "end": 742
+            },
+            {
+                "name": "redsocks_debug_dump_instance",
+                "start": 744,
+                "end": 764
+            },
+            {
+                "name": "redsocks_debug_dump",
+                "start": 766,
+                "end": 773
+            },
+            {
+                "name": "redsocks_init_instance",
+                "start": 777,
+                "end": 838
+            },
+            {
+                "name": "redsocks_fini_instance",
+                "start": 843,
+                "end": 879
+            },
+            {
+                "name": "redsocks_init",
+                "start": 885,
+                "end": 916
+            },
+            {
+                "name": "redsocks_fini",
+                "start": 918,
+                "end": 932
+            }
+        ],
+        "socks4.c": [
+            {
+                "name": "socks4_client_init",
+                "start": 55,
+                "end": 61
+            },
+            {
+                "name": "socks4_read_cb",
+                "start": 64,
+                "end": 94
+            },
+            {
+                "name": "socks4_mkconnect",
+                "start": 96,
+                "end": 114
+            },
+            {
+                "name": "socks4_write_cb",
+                "start": 116,
+                "end": 131
+            }
+        ],
+        "base64.c": [
+            {
+                "name": "base64_decode",
+                "start": 46,
+                "end": 65
+            },
+            {
+                "name": "base64_encode",
+                "start": 73,
+                "end": 101
+            }
+        ],
+        "socks5.c": [
+            {
+                "name": "socks5_status_to_str",
+                "start": 54,
+                "end": 62
+            },
+            {
+                "name": "socks5_is_valid_cred",
+                "start": 64,
+                "end": 77
+            },
+            {
+                "name": "socks5_client_init",
+                "start": 79,
+                "end": 86
+            },
+            {
+                "name": "socks5_mkmethods",
+                "start": 88,
+                "end": 92
+            },
+            {
+                "name": "socks5_mkmethods_plain",
+                "start": 94,
+                "end": 109
+            },
+            {
+                "name": "socks5_mkpassword",
+                "start": 111,
+                "end": 114
+            },
+            {
+                "name": "socks5_mkpassword_plain",
+                "start": 116,
+                "end": 129
+            },
+            {
+                "name": "socks5_mkcommand_plain",
+                "start": 131,
+                "end": 147
+            },
+            {
+                "name": "socks5_mkconnect",
+                "start": 149,
+                "end": 152
+            },
+            {
+                "name": "socks5_write_cb",
+                "start": 154,
+                "end": 166
+            },
+            {
+                "name": "socks5_is_known_auth_method",
+                "start": 168,
+                "end": 178
+            },
+            {
+                "name": "socks5_read_auth_methods",
+                "start": 180,
+                "end": 205
+            },
+            {
+                "name": "socks5_read_auth_reply",
+                "start": 207,
+                "end": 225
+            },
+            {
+                "name": "socks5_read_reply",
+                "start": 227,
+                "end": 272
+            },
+            {
+                "name": "socks5_read_cb",
+                "start": 274,
+                "end": 310
+            }
+        ],
+        "base.c": [
+            {
+                "name": "getdestaddr_generic",
+                "start": 225,
+                "end": 236
+            },
+            {
+                "name": "getdestaddr",
+                "start": 238,
+                "end": 241
+            },
+            {
+                "name": "base_onenter",
+                "start": 273,
+                "end": 281
+            },
+            {
+                "name": "base_onexit",
+                "start": 283,
+                "end": 310
+            },
+            {
+                "name": "base_init",
+                "start": 325,
+                "end": 439
+            },
+            {
+                "name": "base_fini",
+                "start": 441,
+                "end": 455
+            }
+        ],
+        "http-relay.c": [
+            {
+                "name": "httpr_buffer_init",
+                "start": 65,
+                "end": 73
+            },
+            {
+                "name": "httpr_buffer_fini",
+                "start": 75,
+                "end": 79
+            },
+            {
+                "name": "httpr_buffer_append",
+                "start": 81,
+                "end": 98
+            },
+            {
+                "name": "httpr_client_init",
+                "start": 100,
+                "end": 108
+            },
+            {
+                "name": "httpr_client_fini",
+                "start": 110,
+                "end": 120
+            },
+            {
+                "name": "httpr_instance_fini",
+                "start": 122,
+                "end": 127
+            },
+            {
+                "name": "get_auth_request_header",
+                "start": 129,
+                "end": 142
+            },
+            {
+                "name": "httpr_relay_read_cb",
+                "start": 144,
+                "end": 262
+            },
+            {
+                "name": "httpr_relay_write_cb",
+                "start": 264,
+                "end": 366
+            },
+            {
+                "name": "httpr_append_header",
+                "start": 369,
+                "end": 378
+            },
+            {
+                "name": "fmt_http_host",
+                "start": 381,
+                "end": 394
+            },
+            {
+                "name": "httpr_toss_http_firstline",
+                "start": 396,
+                "end": 441
+            },
+            {
+                "name": "httpr_client_read_content",
+                "start": 443,
+                "end": 477
+            },
+            {
+                "name": "httpr_client_read_cb",
+                "start": 479,
+                "end": 556
+            },
+            {
+                "name": "httpr_connect_relay",
+                "start": 558,
+                "end": 568
+            }
+        ],
+        "dnstc.c": [
+            {
+                "name": "dnstc_pkt_from_client",
+                "start": 60,
+                "end": 99
+            },
+            {
+                "name": "dnstc_onenter",
+                "start": 113,
+                "end": 132
+            },
+            {
+                "name": "dnstc_onexit",
+                "start": 134,
+                "end": 147
+            },
+            {
+                "name": "dnstc_init_instance",
+                "start": 149,
+                "end": 194
+            },
+            {
+                "name": "dnstc_fini_instance",
+                "start": 199,
+                "end": 213
+            },
+            {
+                "name": "dnstc_init",
+                "start": 215,
+                "end": 231
+            },
+            {
+                "name": "dnstc_fini",
+                "start": 233,
+                "end": 241
+            }
+        ],
+        "main.c": [
+            {
+                "name": "terminate",
+                "start": 45,
+                "end": 49
+            },
+            {
+                "name": "red_srand",
+                "start": 51,
+                "end": 57
+            },
+            {
+                "name": "main",
+                "start": 59,
+                "end": 174
+            }
+        ],
+        "http-connect.c": [
+            {
+                "name": "httpc_client_init",
+                "start": 46,
+                "end": 49
+            },
+            {
+                "name": "httpc_instance_fini",
+                "start": 51,
+                "end": 56
+            },
+            {
+                "name": "get_auth_request_header",
+                "start": 63,
+                "end": 76
+            },
+            {
+                "name": "httpc_read_cb",
+                "start": 78,
+                "end": 181
+            },
+            {
+                "name": "httpc_mkconnect",
+                "start": 183,
+                "end": 254
+            },
+            {
+                "name": "httpc_write_cb",
+                "start": 257,
+                "end": 272
+            }
+        ],
+        "log.c": [
+            {
+                "name": "fprint_timestamp",
+                "start": 30,
+                "end": 43
+            },
+            {
+                "name": "stderr_msg",
+                "start": 45,
+                "end": 48
+            },
+            {
+                "name": "logfile_msg",
+                "start": 52,
+                "end": 56
+            },
+            {
+                "name": "syslog_msg",
+                "start": 58,
+                "end": 64
+            },
+            {
+                "name": "log_preopen",
+                "start": 70,
+                "end": 130
+            },
+            {
+                "name": "log_open",
+                "start": 132,
+                "end": 136
+            },
+            {
+                "name": "_log_vwrite",
+                "start": 138,
+                "end": 155
+            },
+            {
+                "name": "_log_write",
+                "start": 157,
+                "end": 164
+            }
+        ]
+    }
+}

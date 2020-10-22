@@ -1,0 +1,746 @@
+{
+    "acpid-2.0.23": {
+        "ud_socket.c": [
+            {
+                "name": "ud_create_socket",
+                "start": 25,
+                "end": 79
+            },
+            {
+                "name": "ud_accept",
+                "start": 81,
+                "end": 100
+            },
+            {
+                "name": "ud_connect",
+                "start": 102,
+                "end": 135
+            },
+            {
+                "name": "ud_get_peercred",
+                "start": 137,
+                "end": 143
+            }
+        ],
+        "proc.c": [
+            {
+                "name": "process_proc",
+                "start": 41,
+                "end": 83
+            },
+            {
+                "name": "open_proc",
+                "start": 85,
+                "end": 120
+            },
+            {
+                "name": "read_line",
+                "start": 126,
+                "end": 164
+            }
+        ],
+        "libnetlink.h": [
+            {
+                "name": "rtnl_dump_filter",
+                "start": 27,
+                "end": 30
+            },
+            {
+                "name": "rtnl_talk",
+                "start": 31,
+                "end": 34
+            },
+            {
+                "name": "rtnl_listen",
+                "start": 50,
+                "end": 51
+            },
+            {
+                "name": "rtnl_from_file",
+                "start": 52,
+                "end": 53
+            }
+        ],
+        "libnetlink.c": [
+            {
+                "name": "rtnl_close",
+                "start": 29,
+                "end": 35
+            },
+            {
+                "name": "rtnl_open_byproto",
+                "start": 37,
+                "end": 85
+            },
+            {
+                "name": "rtnl_open",
+                "start": 87,
+                "end": 90
+            },
+            {
+                "name": "rtnl_wilddump_request",
+                "start": 92,
+                "end": 113
+            },
+            {
+                "name": "rtnl_send",
+                "start": 115,
+                "end": 123
+            },
+            {
+                "name": "rtnl_dump_request",
+                "start": 125,
+                "end": 150
+            },
+            {
+                "name": "rtnl_dump_filter",
+                "start": 152,
+                "end": 229
+            },
+            {
+                "name": "rtnl_talk",
+                "start": 231,
+                "end": 351
+            },
+            {
+                "name": "rtnl_listen",
+                "start": 353,
+                "end": 421
+            },
+            {
+                "name": "rtnl_from_file",
+                "start": 423,
+                "end": 473
+            },
+            {
+                "name": "addattr32",
+                "start": 475,
+                "end": 489
+            },
+            {
+                "name": "addattr_l",
+                "start": 491,
+                "end": 507
+            },
+            {
+                "name": "addraw_l",
+                "start": 509,
+                "end": 520
+            },
+            {
+                "name": "rta_addattr32",
+                "start": 522,
+                "end": 537
+            },
+            {
+                "name": "rta_addattr_l",
+                "start": 539,
+                "end": 555
+            },
+            {
+                "name": "parse_rtattr",
+                "start": 557,
+                "end": 568
+            },
+            {
+                "name": "parse_rtattr_byindex",
+                "start": 570,
+                "end": 583
+            }
+        ],
+        "event.c": [
+            {
+                "name": "acpid_read_conf",
+                "start": 94,
+                "end": 198
+            },
+            {
+                "name": "acpid_cleanup_rules",
+                "start": 203,
+                "end": 248
+            },
+            {
+                "name": "parse_file",
+                "start": 250,
+                "end": 369
+            },
+            {
+                "name": "acpid_add_client",
+                "start": 371,
+                "end": 390
+            },
+            {
+                "name": "parse_client",
+                "start": 392,
+                "end": 421
+            },
+            {
+                "name": "enlist_rule",
+                "start": 427,
+                "end": 438
+            },
+            {
+                "name": "delist_rule",
+                "start": 440,
+                "end": 456
+            },
+            {
+                "name": "new_rule",
+                "start": 458,
+                "end": 476
+            },
+            {
+                "name": "free_rule",
+                "start": 479,
+                "end": 497
+            },
+            {
+                "name": "client_is_dead",
+                "start": 499,
+                "end": 516
+            },
+            {
+                "name": "acpid_close_dead_clients",
+                "start": 518,
+                "end": 546
+            },
+            {
+                "name": "acpid_handle_event",
+                "start": 551,
+                "end": 614
+            },
+            {
+                "name": "signals_handled",
+                "start": 617,
+                "end": 629
+            },
+            {
+                "name": "lock_rules",
+                "start": 631,
+                "end": 638
+            },
+            {
+                "name": "unlock_rules",
+                "start": 640,
+                "end": 647
+            },
+            {
+                "name": "do_cmd_rule",
+                "start": 653,
+                "end": 714
+            },
+            {
+                "name": "do_client_rule",
+                "start": 716,
+                "end": 744
+            },
+            {
+                "name": "safe_write",
+                "start": 747,
+                "end": 777
+            },
+            {
+                "name": "parse_cmd",
+                "start": 779,
+                "end": 812
+            },
+            {
+                "name": "check_escapes",
+                "start": 814,
+                "end": 838
+            }
+        ],
+        "input_layer.c": [
+            {
+                "name": "mute_string",
+                "start": 213,
+                "end": 231
+            },
+            {
+                "name": "event_string",
+                "start": 236,
+                "end": 256
+            },
+            {
+                "name": "need_event",
+                "start": 260,
+                "end": 275
+            },
+            {
+                "name": "process_input",
+                "start": 279,
+                "end": 369
+            },
+            {
+                "name": "has_event",
+                "start": 380,
+                "end": 410
+            },
+            {
+                "name": "open_inputfile",
+                "start": 414,
+                "end": 462
+            },
+            {
+                "name": "open_input",
+                "start": 466,
+                "end": 489
+            }
+        ],
+        "connection_list.c": [
+            {
+                "name": "add_connection",
+                "start": 54,
+                "end": 86
+            },
+            {
+                "name": "delete_connection",
+                "start": 90,
+                "end": 121
+            },
+            {
+                "name": "delete_all_connections",
+                "start": 125,
+                "end": 136
+            },
+            {
+                "name": "find_connection",
+                "start": 140,
+                "end": 153
+            },
+            {
+                "name": "find_connection_name",
+                "start": 157,
+                "end": 174
+            },
+            {
+                "name": "get_number_of_connections",
+                "start": 178,
+                "end": 182
+            },
+            {
+                "name": "get_connection",
+                "start": 186,
+                "end": 193
+            },
+            {
+                "name": "get_fdset",
+                "start": 197,
+                "end": 201
+            },
+            {
+                "name": "get_highestfd",
+                "start": 205,
+                "end": 209
+            }
+        ],
+        "acpi_ids.c": [
+            {
+                "name": "get_ctrl_grp_id",
+                "start": 53,
+                "end": 83
+            },
+            {
+                "name": "genl_get_mcast_group_id",
+                "start": 86,
+                "end": 160
+            },
+            {
+                "name": "genl_get_ids",
+                "start": 162,
+                "end": 229
+            },
+            {
+                "name": "acpi_ids_init",
+                "start": 232,
+                "end": 238
+            },
+            {
+                "name": "acpi_ids_getfamily",
+                "start": 241,
+                "end": 249
+            },
+            {
+                "name": "acpi_ids_getgroup",
+                "start": 252,
+                "end": 260
+            }
+        ],
+        "acpid.c": [
+            {
+                "name": "main",
+                "start": 70,
+                "end": 189
+            },
+            {
+                "name": "handle_cmdline",
+                "start": 194,
+                "end": 326
+            },
+            {
+                "name": "close_fds",
+                "start": 328,
+                "end": 346
+            },
+            {
+                "name": "daemonize",
+                "start": 347,
+                "end": 385
+            },
+            {
+                "name": "open_log",
+                "start": 387,
+                "end": 398
+            },
+            {
+                "name": "std2null",
+                "start": 400,
+                "end": 435
+            },
+            {
+                "name": "create_pidfile",
+                "start": 437,
+                "end": 465
+            },
+            {
+                "name": "clean_exit_with_status",
+                "start": 467,
+                "end": 475
+            },
+            {
+                "name": "clean_exit",
+                "start": 477,
+                "end": 481
+            },
+            {
+                "name": "reload_conf",
+                "start": 483,
+                "end": 489
+            },
+            {
+                "name": "locked",
+                "start": 491,
+                "end": 498
+            }
+        ],
+        "inotify_handler.c": [
+            {
+                "name": "process_inotify",
+                "start": 44,
+                "end": 110
+            },
+            {
+                "name": "open_inotify",
+                "start": 114,
+                "end": 154
+            }
+        ],
+        "acpi_listen.c": [
+            {
+                "name": "time_expired",
+                "start": 49,
+                "end": 53
+            },
+            {
+                "name": "main",
+                "start": 55,
+                "end": 108
+            },
+            {
+                "name": "usage",
+                "start": 126,
+                "end": 147
+            },
+            {
+                "name": "handle_cmdline",
+                "start": 152,
+                "end": 196
+            },
+            {
+                "name": "read_line",
+                "start": 199,
+                "end": 245
+            }
+        ],
+        "sock.c": [
+            {
+                "name": "is_socket",
+                "start": 53,
+                "end": 57
+            },
+            {
+                "name": "process_sock",
+                "start": 60,
+                "end": 99
+            },
+            {
+                "name": "open_sock",
+                "start": 102,
+                "end": 180
+            }
+        ],
+        "log.c": [
+            {
+                "name": "acpid_log",
+                "start": 31,
+                "end": 56
+            }
+        ],
+        "netlink.c": [
+            {
+                "name": "format_netlink",
+                "start": 50,
+                "end": 112
+            },
+            {
+                "name": "process_netlink",
+                "start": 115,
+                "end": 203
+            },
+            {
+                "name": "nl_mgrp",
+                "start": 207,
+                "end": 215
+            },
+            {
+                "name": "open_netlink",
+                "start": 217,
+                "end": 243
+            }
+        ],
+        "kacpimon/libnetlink.h": [
+            {
+                "name": "rtnl_dump_filter",
+                "start": 27,
+                "end": 30
+            },
+            {
+                "name": "rtnl_talk",
+                "start": 31,
+                "end": 34
+            },
+            {
+                "name": "rtnl_listen",
+                "start": 50,
+                "end": 51
+            },
+            {
+                "name": "rtnl_from_file",
+                "start": 52,
+                "end": 53
+            }
+        ],
+        "kacpimon/kacpimon.c": [
+            {
+                "name": "process_proc",
+                "start": 63,
+                "end": 84
+            },
+            {
+                "name": "open_proc",
+                "start": 88,
+                "end": 117
+            },
+            {
+                "name": "monitor",
+                "start": 123,
+                "end": 163
+            },
+            {
+                "name": "close_all",
+                "start": 167,
+                "end": 184
+            },
+            {
+                "name": "main",
+                "start": 188,
+                "end": 207
+            }
+        ],
+        "kacpimon/libnetlink.c": [
+            {
+                "name": "rtnl_close",
+                "start": 29,
+                "end": 35
+            },
+            {
+                "name": "rtnl_open_byproto",
+                "start": 37,
+                "end": 85
+            },
+            {
+                "name": "rtnl_open",
+                "start": 87,
+                "end": 90
+            },
+            {
+                "name": "rtnl_wilddump_request",
+                "start": 92,
+                "end": 113
+            },
+            {
+                "name": "rtnl_send",
+                "start": 115,
+                "end": 123
+            },
+            {
+                "name": "rtnl_dump_request",
+                "start": 125,
+                "end": 150
+            },
+            {
+                "name": "rtnl_dump_filter",
+                "start": 152,
+                "end": 229
+            },
+            {
+                "name": "rtnl_talk",
+                "start": 231,
+                "end": 351
+            },
+            {
+                "name": "rtnl_listen",
+                "start": 353,
+                "end": 421
+            },
+            {
+                "name": "rtnl_from_file",
+                "start": 423,
+                "end": 473
+            },
+            {
+                "name": "addattr32",
+                "start": 475,
+                "end": 489
+            },
+            {
+                "name": "addattr_l",
+                "start": 491,
+                "end": 507
+            },
+            {
+                "name": "addraw_l",
+                "start": 509,
+                "end": 520
+            },
+            {
+                "name": "rta_addattr32",
+                "start": 522,
+                "end": 537
+            },
+            {
+                "name": "rta_addattr_l",
+                "start": 539,
+                "end": 555
+            },
+            {
+                "name": "parse_rtattr",
+                "start": 557,
+                "end": 568
+            },
+            {
+                "name": "parse_rtattr_byindex",
+                "start": 570,
+                "end": 583
+            }
+        ],
+        "kacpimon/input_layer.c": [
+            {
+                "name": "process_input",
+                "start": 51,
+                "end": 98
+            },
+            {
+                "name": "open_input",
+                "start": 108,
+                "end": 155
+            }
+        ],
+        "kacpimon/connection_list.c": [
+            {
+                "name": "add_connection",
+                "start": 49,
+                "end": 69
+            },
+            {
+                "name": "find_connection",
+                "start": 73,
+                "end": 86
+            },
+            {
+                "name": "get_number_of_connections",
+                "start": 90,
+                "end": 94
+            },
+            {
+                "name": "get_connection",
+                "start": 98,
+                "end": 105
+            },
+            {
+                "name": "get_fdset",
+                "start": 109,
+                "end": 113
+            },
+            {
+                "name": "get_highestfd",
+                "start": 117,
+                "end": 121
+            }
+        ],
+        "kacpimon/acpi_ids.c": [
+            {
+                "name": "get_ctrl_grp_id",
+                "start": 52,
+                "end": 82
+            },
+            {
+                "name": "genl_get_mcast_group_id",
+                "start": 85,
+                "end": 157
+            },
+            {
+                "name": "genl_get_ids",
+                "start": 159,
+                "end": 223
+            },
+            {
+                "name": "acpi_ids_init",
+                "start": 226,
+                "end": 232
+            },
+            {
+                "name": "acpi_ids_getfamily",
+                "start": 235,
+                "end": 243
+            },
+            {
+                "name": "acpi_ids_getgroup",
+                "start": 246,
+                "end": 254
+            }
+        ],
+        "kacpimon/netlink.c": [
+            {
+                "name": "format_netlink",
+                "start": 49,
+                "end": 86
+            },
+            {
+                "name": "process_netlink",
+                "start": 89,
+                "end": 171
+            },
+            {
+                "name": "nl_mgrp",
+                "start": 175,
+                "end": 183
+            },
+            {
+                "name": "open_netlink",
+                "start": 185,
+                "end": 207
+            }
+        ]
+    }
+}

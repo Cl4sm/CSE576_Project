@@ -1,0 +1,7194 @@
+{
+    "sfront-0.99": {
+        "src/tree.h": [
+            {
+                "name": "make_instrdecl",
+                "start": 1591,
+                "end": 1592
+            },
+            {
+                "name": "make_opcodedecl",
+                "start": 1595,
+                "end": 1596
+            },
+            {
+                "name": "make_templatedecl",
+                "start": 1599,
+                "end": 1600
+            },
+            {
+                "name": "make_routedef",
+                "start": 1604,
+                "end": 1605
+            },
+            {
+                "name": "make_senddef",
+                "start": 1606,
+                "end": 1607
+            },
+            {
+                "name": "make_statement",
+                "start": 1609,
+                "end": 1611
+            },
+            {
+                "name": "make_simplevar",
+                "start": 1613,
+                "end": 1614
+            },
+            {
+                "name": "make_tabledecl",
+                "start": 1615,
+                "end": 1616
+            },
+            {
+                "name": "make_tablemap",
+                "start": 1617,
+                "end": 1618
+            },
+            {
+                "name": "make_expr",
+                "start": 1622,
+                "end": 1623
+            }
+        ],
+        "src/optrefer.c": [
+            {
+                "name": "staterefer",
+                "start": 88,
+                "end": 130
+            },
+            {
+                "name": "exprrefer",
+                "start": 162,
+                "end": 183
+            },
+            {
+                "name": "assignrefer",
+                "start": 204,
+                "end": 241
+            },
+            {
+                "name": "simplerefer",
+                "start": 254,
+                "end": 280
+            },
+            {
+                "name": "ifrefer",
+                "start": 290,
+                "end": 337
+            },
+            {
+                "name": "whilerefer",
+                "start": 347,
+                "end": 388
+            },
+            {
+                "name": "dynglobals",
+                "start": 402,
+                "end": 411
+            },
+            {
+                "name": "outbusrefer",
+                "start": 419,
+                "end": 443
+            },
+            {
+                "name": "tokenrefer",
+                "start": 457,
+                "end": 555
+            },
+            {
+                "name": "unaryrefer",
+                "start": 562,
+                "end": 581
+            },
+            {
+                "name": "floatcastrefer",
+                "start": 588,
+                "end": 605
+            },
+            {
+                "name": "parenrefer",
+                "start": 612,
+                "end": 630
+            },
+            {
+                "name": "multirefer",
+                "start": 636,
+                "end": 660
+            },
+            {
+                "name": "binaryrefer",
+                "start": 667,
+                "end": 704
+            },
+            {
+                "name": "switchrefer",
+                "start": 710,
+                "end": 737
+            },
+            {
+                "name": "opcoderefer",
+                "start": 749,
+                "end": 806
+            },
+            {
+                "name": "dynglobalupdate",
+                "start": 822,
+                "end": 853
+            },
+            {
+                "name": "userdefrefer",
+                "start": 867,
+                "end": 1057
+            },
+            {
+                "name": "tmaprefer",
+                "start": 1064,
+                "end": 1089
+            },
+            {
+                "name": "refermirror",
+                "start": 1104,
+                "end": 1220
+            },
+            {
+                "name": "rewriteand",
+                "start": 1228,
+                "end": 1298
+            },
+            {
+                "name": "rewriteor",
+                "start": 1305,
+                "end": 1408
+            },
+            {
+                "name": "transfer_tnode",
+                "start": 1414,
+                "end": 1425
+            }
+        ],
+        "src/special.c": [
+            {
+                "name": "exprspecial",
+                "start": 48,
+                "end": 52
+            },
+            {
+                "name": "exprlistspecial",
+                "start": 58,
+                "end": 71
+            },
+            {
+                "name": "blockspecial",
+                "start": 77,
+                "end": 90
+            },
+            {
+                "name": "specialupdate",
+                "start": 96,
+                "end": 297
+            }
+        ],
+        "src/optconst.c": [
+            {
+                "name": "stateoptconst",
+                "start": 87,
+                "end": 138
+            },
+            {
+                "name": "exprcollapse",
+                "start": 169,
+                "end": 192
+            },
+            {
+                "name": "assignoptconst",
+                "start": 208,
+                "end": 291
+            },
+            {
+                "name": "ifoptconst",
+                "start": 299,
+                "end": 406
+            },
+            {
+                "name": "ifelseoptconst",
+                "start": 414,
+                "end": 570
+            },
+            {
+                "name": "whileoptconst",
+                "start": 578,
+                "end": 620
+            },
+            {
+                "name": "tokencollapse",
+                "start": 635,
+                "end": 748
+            },
+            {
+                "name": "unarycollapse",
+                "start": 754,
+                "end": 816
+            },
+            {
+                "name": "floatcastcollapse",
+                "start": 822,
+                "end": 857
+            },
+            {
+                "name": "parencollapse",
+                "start": 863,
+                "end": 892
+            },
+            {
+                "name": "multicollapse",
+                "start": 898,
+                "end": 1038
+            },
+            {
+                "name": "binarycollapse",
+                "start": 1047,
+                "end": 1167
+            },
+            {
+                "name": "switchcollapse",
+                "start": 1173,
+                "end": 1255
+            },
+            {
+                "name": "opcodecollapse",
+                "start": 1267,
+                "end": 1394
+            },
+            {
+                "name": "tablemapcollapse",
+                "start": 1408,
+                "end": 1446
+            },
+            {
+                "name": "dividereduction",
+                "start": 1452,
+                "end": 1470
+            },
+            {
+                "name": "userdefcollapse",
+                "start": 1476,
+                "end": 1596
+            }
+        ],
+        "src/collapse.c": [
+            {
+                "name": "co_constcollapse",
+                "start": 92,
+                "end": 136
+            },
+            {
+                "name": "co_identcollapse",
+                "start": 149,
+                "end": 159
+            },
+            {
+                "name": "co_unarycollapse",
+                "start": 165,
+                "end": 219
+            },
+            {
+                "name": "co_floatcastcollapse",
+                "start": 226,
+                "end": 256
+            },
+            {
+                "name": "co_parencollapse",
+                "start": 263,
+                "end": 287
+            },
+            {
+                "name": "co_multicollapse",
+                "start": 293,
+                "end": 419
+            },
+            {
+                "name": "co_binarycollapse",
+                "start": 428,
+                "end": 540
+            },
+            {
+                "name": "co_switchcollapse",
+                "start": 546,
+                "end": 618
+            },
+            {
+                "name": "co_opcodecollapse",
+                "start": 627,
+                "end": 688
+            },
+            {
+                "name": "co_dividereduction",
+                "start": 702,
+                "end": 719
+            },
+            {
+                "name": "co_deleteopcode",
+                "start": 725,
+                "end": 751
+            }
+        ],
+        "src/writeorc.c": [
+            {
+                "name": "toptree",
+                "start": 63,
+                "end": 134
+            },
+            {
+                "name": "postscript",
+                "start": 147,
+                "end": 181
+            },
+            {
+                "name": "ipassmake",
+                "start": 195,
+                "end": 337
+            },
+            {
+                "name": "kpassmake",
+                "start": 346,
+                "end": 428
+            },
+            {
+                "name": "apassmake",
+                "start": 435,
+                "end": 472
+            },
+            {
+                "name": "printinputgroups",
+                "start": 486,
+                "end": 554
+            },
+            {
+                "name": "printsystemsinit",
+                "start": 563,
+                "end": 702
+            },
+            {
+                "name": "printeffectsinit",
+                "start": 708,
+                "end": 819
+            },
+            {
+                "name": "printshutdown",
+                "start": 825,
+                "end": 916
+            },
+            {
+                "name": "printmaincontrol",
+                "start": 926,
+                "end": 963
+            },
+            {
+                "name": "updatedynamictables",
+                "start": 977,
+                "end": 1028
+            },
+            {
+                "name": "printmidiglobals",
+                "start": 1034,
+                "end": 1176
+            },
+            {
+                "name": "printtempoloop",
+                "start": 1182,
+                "end": 1215
+            },
+            {
+                "name": "printtableloop",
+                "start": 1222,
+                "end": 1260
+            },
+            {
+                "name": "printcontrolloop",
+                "start": 1267,
+                "end": 1299
+            },
+            {
+                "name": "shadowcheck",
+                "start": 1305,
+                "end": 1310
+            },
+            {
+                "name": "inputbusmacro",
+                "start": 1316,
+                "end": 1321
+            },
+            {
+                "name": "ptokens",
+                "start": 1327,
+                "end": 1348
+            }
+        ],
+        "src/optrate.c": [
+            {
+                "name": "stateoptrate",
+                "start": 82,
+                "end": 106
+            },
+            {
+                "name": "exproptrate",
+                "start": 137,
+                "end": 232
+            },
+            {
+                "name": "assignoptrate",
+                "start": 252,
+                "end": 268
+            },
+            {
+                "name": "simpleoptrate",
+                "start": 284,
+                "end": 312
+            },
+            {
+                "name": "guardoptrate",
+                "start": 326,
+                "end": 348
+            },
+            {
+                "name": "tmapoptrate",
+                "start": 365,
+                "end": 383
+            },
+            {
+                "name": "saferateopt",
+                "start": 394,
+                "end": 425
+            },
+            {
+                "name": "ratefactor",
+                "start": 433,
+                "end": 500
+            },
+            {
+                "name": "multioptrate",
+                "start": 508,
+                "end": 610
+            },
+            {
+                "name": "idxoptrate",
+                "start": 617,
+                "end": 655
+            },
+            {
+                "name": "opcodemirrorupdate",
+                "start": 664,
+                "end": 683
+            },
+            {
+                "name": "looseopcoderules",
+                "start": 699,
+                "end": 725
+            },
+            {
+                "name": "guardreduce",
+                "start": 736,
+                "end": 873
+            },
+            {
+                "name": "tmapfactor",
+                "start": 886,
+                "end": 939
+            },
+            {
+                "name": "nospeedtraps",
+                "start": 946,
+                "end": 1053
+            },
+            {
+                "name": "namecheck",
+                "start": 1060,
+                "end": 1080
+            },
+            {
+                "name": "updatecallrate",
+                "start": 1087,
+                "end": 1106
+            }
+        ],
+        "src/postparse.c": [
+            {
+                "name": "saolparse",
+                "start": 78,
+                "end": 111
+            },
+            {
+                "name": "doparse",
+                "start": 127,
+                "end": 152
+            },
+            {
+                "name": "globalparamcheck",
+                "start": 159,
+                "end": 221
+            },
+            {
+                "name": "globalvariablecheck",
+                "start": 227,
+                "end": 256
+            },
+            {
+                "name": "businitcheck",
+                "start": 262,
+                "end": 386
+            },
+            {
+                "name": "globalstatementcheck",
+                "start": 405,
+                "end": 526
+            },
+            {
+                "name": "globalimportscheck",
+                "start": 536,
+                "end": 557
+            },
+            {
+                "name": "linkcalls",
+                "start": 564,
+                "end": 591
+            },
+            {
+                "name": "mainscoreread",
+                "start": 598,
+                "end": 649
+            },
+            {
+                "name": "mainrecursioncheck",
+                "start": 658,
+                "end": 682
+            },
+            {
+                "name": "seqloopdetect",
+                "start": 691,
+                "end": 759
+            },
+            {
+                "name": "instrorder",
+                "start": 775,
+                "end": 949
+            },
+            {
+                "name": "instanceorder",
+                "start": 956,
+                "end": 1024
+            },
+            {
+                "name": "buswidth",
+                "start": 1036,
+                "end": 1112
+            },
+            {
+                "name": "inbusinstall",
+                "start": 1119,
+                "end": 1163
+            },
+            {
+                "name": "outbusinstall",
+                "start": 1171,
+                "end": 1233
+            },
+            {
+                "name": "sendoutputflag",
+                "start": 1239,
+                "end": 1260
+            },
+            {
+                "name": "instanceclone",
+                "start": 1269,
+                "end": 1283
+            },
+            {
+                "name": "checktable",
+                "start": 1299,
+                "end": 1341
+            },
+            {
+                "name": "checktableimport",
+                "start": 1350,
+                "end": 1374
+            },
+            {
+                "name": "futureglobalinit",
+                "start": 1380,
+                "end": 1410
+            },
+            {
+                "name": "varupdate",
+                "start": 1417,
+                "end": 1603
+            },
+            {
+                "name": "checkopcoderecursion",
+                "start": 1610,
+                "end": 1636
+            },
+            {
+                "name": "dotree",
+                "start": 1642,
+                "end": 1659
+            },
+            {
+                "name": "checkopcodeargswidth",
+                "start": 1665,
+                "end": 1753
+            },
+            {
+                "name": "resolveinstrument",
+                "start": 1759,
+                "end": 1776
+            },
+            {
+                "name": "instrbuswrite",
+                "start": 1783,
+                "end": 1841
+            },
+            {
+                "name": "instrinputwidth",
+                "start": 1848,
+                "end": 1867
+            },
+            {
+                "name": "instancecode",
+                "start": 1873,
+                "end": 1958
+            },
+            {
+                "name": "checkopcodedecls",
+                "start": 1966,
+                "end": 2006
+            }
+        ],
+        "src/mp4write.c": [
+            {
+                "name": "bitwrite",
+                "start": 48,
+                "end": 68
+            },
+            {
+                "name": "bitflush",
+                "start": 75,
+                "end": 85
+            },
+            {
+                "name": "addsamplefile",
+                "start": 94,
+                "end": 128
+            },
+            {
+                "name": "globalstateupdate",
+                "start": 135,
+                "end": 174
+            },
+            {
+                "name": "printstateupdate",
+                "start": 180,
+                "end": 187
+            },
+            {
+                "name": "bitsaolwrite",
+                "start": 194,
+                "end": 315
+            },
+            {
+                "name": "bitsymbolwrite",
+                "start": 321,
+                "end": 355
+            },
+            {
+                "name": "saslpreamble",
+                "start": 365,
+                "end": 384
+            },
+            {
+                "name": "saslendwrite",
+                "start": 390,
+                "end": 405
+            },
+            {
+                "name": "sasltempowrite",
+                "start": 413,
+                "end": 424
+            },
+            {
+                "name": "sasltablewrite",
+                "start": 431,
+                "end": 496
+            },
+            {
+                "name": "saslinstrwrite",
+                "start": 503,
+                "end": 554
+            },
+            {
+                "name": "saslcontrolwrite",
+                "start": 561,
+                "end": 599
+            },
+            {
+                "name": "bitscorewrite",
+                "start": 606,
+                "end": 695
+            },
+            {
+                "name": "bitmidiwrite",
+                "start": 701,
+                "end": 723
+            },
+            {
+                "name": "bitsounderror",
+                "start": 729,
+                "end": 735
+            },
+            {
+                "name": "getsoundbytes",
+                "start": 742,
+                "end": 751
+            },
+            {
+                "name": "getsoundsbytes",
+                "start": 757,
+                "end": 766
+            },
+            {
+                "name": "getnextcookie",
+                "start": 772,
+                "end": 780
+            },
+            {
+                "name": "flushsoundbytes",
+                "start": 787,
+                "end": 802
+            },
+            {
+                "name": "wavefileintval",
+                "start": 808,
+                "end": 844
+            },
+            {
+                "name": "aiffileintval",
+                "start": 851,
+                "end": 886
+            },
+            {
+                "name": "soundtypecheck",
+                "start": 895,
+                "end": 909
+            },
+            {
+                "name": "nextsamplewrite",
+                "start": 915,
+                "end": 1371
+            },
+            {
+                "name": "bitsamplewrite",
+                "start": 1377,
+                "end": 1390
+            },
+            {
+                "name": "bitmidievent",
+                "start": 1396,
+                "end": 1437
+            },
+            {
+                "name": "bitmidistream",
+                "start": 1443,
+                "end": 1516
+            },
+            {
+                "name": "morestream",
+                "start": 1523,
+                "end": 1632
+            },
+            {
+                "name": "startaccessdata",
+                "start": 1638,
+                "end": 1656
+            },
+            {
+                "name": "startaccessunit",
+                "start": 1662,
+                "end": 1671
+            },
+            {
+                "name": "closeaccessunit",
+                "start": 1677,
+                "end": 1684
+            },
+            {
+                "name": "bitaccesssamplewrite",
+                "start": 1690,
+                "end": 1695
+            },
+            {
+                "name": "bitstreamingmidiinit",
+                "start": 1701,
+                "end": 1752
+            },
+            {
+                "name": "bitstreamingwrite",
+                "start": 1758,
+                "end": 1914
+            },
+            {
+                "name": "mp4write",
+                "start": 1921,
+                "end": 1959
+            }
+        ],
+        "src/blocktree.c": [
+            {
+                "name": "nextstateupdate",
+                "start": 53,
+                "end": 84
+            },
+            {
+                "name": "macroselect",
+                "start": 92,
+                "end": 155
+            },
+            {
+                "name": "outputcode",
+                "start": 163,
+                "end": 221
+            },
+            {
+                "name": "outbuscode",
+                "start": 228,
+                "end": 286
+            },
+            {
+                "name": "turnoffcode",
+                "start": 294,
+                "end": 309
+            },
+            {
+                "name": "tmapidxcode",
+                "start": 322,
+                "end": 334
+            },
+            {
+                "name": "spatializecode",
+                "start": 341,
+                "end": 348
+            },
+            {
+                "name": "extendcode",
+                "start": 354,
+                "end": 379
+            },
+            {
+                "name": "printfcode",
+                "start": 385,
+                "end": 428
+            },
+            {
+                "name": "lvaluecode",
+                "start": 434,
+                "end": 483
+            },
+            {
+                "name": "ifslowercode",
+                "start": 489,
+                "end": 532
+            },
+            {
+                "name": "ifcode",
+                "start": 539,
+                "end": 598
+            },
+            {
+                "name": "whilecode",
+                "start": 604,
+                "end": 633
+            },
+            {
+                "name": "returncode",
+                "start": 640,
+                "end": 782
+            },
+            {
+                "name": "instrcode",
+                "start": 788,
+                "end": 921
+            },
+            {
+                "name": "instrstubcode",
+                "start": 927,
+                "end": 956
+            },
+            {
+                "name": "opcallprint",
+                "start": 962,
+                "end": 996
+            },
+            {
+                "name": "opcallcode",
+                "start": 1003,
+                "end": 1079
+            },
+            {
+                "name": "specialexpr",
+                "start": 1086,
+                "end": 1106
+            },
+            {
+                "name": "specialcode",
+                "start": 1112,
+                "end": 1212
+            },
+            {
+                "name": "blocktree",
+                "start": 1218,
+                "end": 1391
+            }
+        ],
+        "src/stparse.c": [
+            {
+                "name": "standardname",
+                "start": 46,
+                "end": 103
+            },
+            {
+                "name": "hasstandardname",
+                "start": 109,
+                "end": 239
+            },
+            {
+                "name": "standardrate",
+                "start": 245,
+                "end": 302
+            },
+            {
+                "name": "standardres",
+                "start": 308,
+                "end": 365
+            },
+            {
+                "name": "standardvartype",
+                "start": 371,
+                "end": 428
+            },
+            {
+                "name": "standardwidth",
+                "start": 435,
+                "end": 492
+            },
+            {
+                "name": "constdur",
+                "start": 498,
+                "end": 516
+            },
+            {
+                "name": "standardcollapse",
+                "start": 522,
+                "end": 581
+            },
+            {
+                "name": "nobus",
+                "start": 589,
+                "end": 604
+            },
+            {
+                "name": "arraybus",
+                "start": 610,
+                "end": 649
+            },
+            {
+                "name": "constbus",
+                "start": 655,
+                "end": 693
+            },
+            {
+                "name": "onebus",
+                "start": 699,
+                "end": 733
+            },
+            {
+                "name": "hasmidisys",
+                "start": 739,
+                "end": 752
+            },
+            {
+                "name": "hascdriver",
+                "start": 758,
+                "end": 771
+            },
+            {
+                "name": "printaudiobiffarray",
+                "start": 777,
+                "end": 816
+            },
+            {
+                "name": "printstandardname",
+                "start": 823,
+                "end": 1112
+            },
+            {
+                "name": "printdurassign",
+                "start": 1119,
+                "end": 1146
+            }
+        ],
+        "src/symbols.c": [
+            {
+                "name": "addsym",
+                "start": 51,
+                "end": 97
+            },
+            {
+                "name": "addvsym",
+                "start": 103,
+                "end": 147
+            },
+            {
+                "name": "addvsymend",
+                "start": 153,
+                "end": 205
+            },
+            {
+                "name": "addvsymsort",
+                "start": 211,
+                "end": 271
+            },
+            {
+                "name": "getsym",
+                "start": 277,
+                "end": 299
+            },
+            {
+                "name": "getvsym",
+                "start": 305,
+                "end": 323
+            },
+            {
+                "name": "symcheck",
+                "start": 330,
+                "end": 350
+            },
+            {
+                "name": "deletesym",
+                "start": 356,
+                "end": 382
+            },
+            {
+                "name": "reversetable",
+                "start": 388,
+                "end": 414
+            },
+            {
+                "name": "findlast",
+                "start": 424,
+                "end": 457
+            },
+            {
+                "name": "moveafter",
+                "start": 463,
+                "end": 495
+            },
+            {
+                "name": "movebefore",
+                "start": 502,
+                "end": 534
+            },
+            {
+                "name": "dupval",
+                "start": 541,
+                "end": 554
+            },
+            {
+                "name": "dupunderscore",
+                "start": 560,
+                "end": 575
+            },
+            {
+                "name": "make_tnode",
+                "start": 581,
+                "end": 620
+            },
+            {
+                "name": "make_int",
+                "start": 626,
+                "end": 640
+            },
+            {
+                "name": "largeinteger",
+                "start": 646,
+                "end": 650
+            },
+            {
+                "name": "reachableinstr",
+                "start": 656,
+                "end": 665
+            },
+            {
+                "name": "reachableinstrexeff",
+                "start": 671,
+                "end": 680
+            },
+            {
+                "name": "reachableinstrexstart",
+                "start": 686,
+                "end": 695
+            },
+            {
+                "name": "reachableinstrexeffexstart",
+                "start": 701,
+                "end": 710
+            }
+        ],
+        "src/tokens.c": [
+            {
+                "name": "identtoken",
+                "start": 47,
+                "end": 408
+            },
+            {
+                "name": "tokenmap",
+                "start": 414,
+                "end": 933
+            },
+            {
+                "name": "parsetokenmap",
+                "start": 941,
+                "end": 1460
+            },
+            {
+                "name": "strfortoken",
+                "start": 1467,
+                "end": 1987
+            }
+        ],
+        "src/audio.c": [
+            {
+                "name": "printaudiohelp",
+                "start": 73,
+                "end": 121
+            },
+            {
+                "name": "aoutfilecheck",
+                "start": 128,
+                "end": 398
+            },
+            {
+                "name": "ainfilecheck",
+                "start": 404,
+                "end": 566
+            },
+            {
+                "name": "makeaudiotypeout",
+                "start": 572,
+                "end": 592
+            },
+            {
+                "name": "makeaudiotypein",
+                "start": 598,
+                "end": 618
+            },
+            {
+                "name": "makeaoutsync",
+                "start": 624,
+                "end": 645
+            },
+            {
+                "name": "makeainsync",
+                "start": 651,
+                "end": 669
+            },
+            {
+                "name": "makeaouttimedefault",
+                "start": 675,
+                "end": 696
+            },
+            {
+                "name": "makeaintimedefault",
+                "start": 703,
+                "end": 724
+            },
+            {
+                "name": "makeaoutrobust",
+                "start": 731,
+                "end": 746
+            },
+            {
+                "name": "makeainrobust",
+                "start": 752,
+                "end": 767
+            },
+            {
+                "name": "makeainparams",
+                "start": 798,
+                "end": 838
+            },
+            {
+                "name": "stdoutused",
+                "start": 844,
+                "end": 848
+            },
+            {
+                "name": "stdinused",
+                "start": 854,
+                "end": 858
+            },
+            {
+                "name": "wiretap_logging",
+                "start": 864,
+                "end": 868
+            },
+            {
+                "name": "adriver_reflection",
+                "start": 874,
+                "end": 878
+            },
+            {
+                "name": "audiodefaults",
+                "start": 884,
+                "end": 906
+            },
+            {
+                "name": "makeportaudiocommon",
+                "start": 912,
+                "end": 920
+            },
+            {
+                "name": "makeaudiodriver",
+                "start": 930,
+                "end": 994
+            },
+            {
+                "name": "ainparams_info",
+                "start": 1011,
+                "end": 1058
+            },
+            {
+                "name": "ainparams_wav_flushbytes",
+                "start": 1077,
+                "end": 1090
+            },
+            {
+                "name": "ainparams_wav_soundtypecheck",
+                "start": 1097,
+                "end": 1107
+            },
+            {
+                "name": "ainparams_wav_getbytes",
+                "start": 1114,
+                "end": 1120
+            },
+            {
+                "name": "ainparams_wav_getint",
+                "start": 1127,
+                "end": 1159
+            },
+            {
+                "name": "ainparams_wav_reader",
+                "start": 1165,
+                "end": 1208
+            },
+            {
+                "name": "ainparams_wav",
+                "start": 1215,
+                "end": 1237
+            },
+            {
+                "name": "ainparams_aif_soundtypecheck",
+                "start": 1263,
+                "end": 1273
+            },
+            {
+                "name": "ainparams_aif_flushbytes",
+                "start": 1279,
+                "end": 1292
+            },
+            {
+                "name": "ainparams_aif_getbytes",
+                "start": 1298,
+                "end": 1304
+            },
+            {
+                "name": "ainparams_aif_getint",
+                "start": 1310,
+                "end": 1342
+            },
+            {
+                "name": "ainparams_aif_getsint",
+                "start": 1348,
+                "end": 1380
+            },
+            {
+                "name": "ainparams_aif_reader",
+                "start": 1386,
+                "end": 1439
+            },
+            {
+                "name": "ainparams_aif",
+                "start": 1445,
+                "end": 1467
+            },
+            {
+                "name": "audiounit_typemaker",
+                "start": 1492,
+                "end": 1533
+            },
+            {
+                "name": "audiounit_filemaker",
+                "start": 1539,
+                "end": 1705
+            }
+        ],
+        "src/writepre.c": [
+            {
+                "name": "preamble",
+                "start": 77,
+                "end": 113
+            },
+            {
+                "name": "makeprevars",
+                "start": 137,
+                "end": 172
+            },
+            {
+                "name": "makesysinfo",
+                "start": 178,
+                "end": 492
+            },
+            {
+                "name": "corefunctions",
+                "start": 499,
+                "end": 581
+            },
+            {
+                "name": "postcorefunctions",
+                "start": 588,
+                "end": 682
+            },
+            {
+                "name": "makebusnames",
+                "start": 688,
+                "end": 711
+            },
+            {
+                "name": "opcodedefines",
+                "start": 718,
+                "end": 719
+            },
+            {
+                "name": "makeglobalvars",
+                "start": 726,
+                "end": 820
+            },
+            {
+                "name": "opcodetabledefines",
+                "start": 827,
+                "end": 828
+            },
+            {
+                "name": "makeglobaltabs",
+                "start": 835,
+                "end": 876
+            },
+            {
+                "name": "instrvars",
+                "start": 890,
+                "end": 932
+            },
+            {
+                "name": "instrtabs",
+                "start": 939,
+                "end": 973
+            },
+            {
+                "name": "effvars",
+                "start": 979,
+                "end": 1017
+            },
+            {
+                "name": "efftabs",
+                "start": 1024,
+                "end": 1054
+            },
+            {
+                "name": "makefexterns",
+                "start": 1072,
+                "end": 1179
+            },
+            {
+                "name": "printinstrvars",
+                "start": 1196,
+                "end": 1240
+            },
+            {
+                "name": "trueconstants",
+                "start": 1250,
+                "end": 1263
+            },
+            {
+                "name": "make_ninstr",
+                "start": 1269,
+                "end": 1297
+            },
+            {
+                "name": "libfunctions",
+                "start": 1303,
+                "end": 1365
+            },
+            {
+                "name": "eprfunction",
+                "start": 1371,
+                "end": 1420
+            },
+            {
+                "name": "makeengineinit",
+                "start": 1429,
+                "end": 1489
+            },
+            {
+                "name": "audiolibrary",
+                "start": 1503,
+                "end": 1588
+            },
+            {
+                "name": "controllibrary",
+                "start": 1600,
+                "end": 1777
+            },
+            {
+                "name": "enginedefines",
+                "start": 1791,
+                "end": 1909
+            },
+            {
+                "name": "printcdriverstructs",
+                "start": 1915,
+                "end": 2011
+            },
+            {
+                "name": "opcodearrayidx",
+                "start": 2024,
+                "end": 2053
+            },
+            {
+                "name": "oparrayextrastate",
+                "start": 2055,
+                "end": 2056
+            },
+            {
+                "name": "oparrayslice",
+                "start": 2062,
+                "end": 2108
+            },
+            {
+                "name": "opcodedefines",
+                "start": 2116,
+                "end": 2215
+            },
+            {
+                "name": "oparraytableextrastate",
+                "start": 2217,
+                "end": 2218
+            },
+            {
+                "name": "oparraytableslice",
+                "start": 2224,
+                "end": 2250
+            },
+            {
+                "name": "opcodetabledefines",
+                "start": 2256,
+                "end": 2305
+            },
+            {
+                "name": "oparrayextrastate",
+                "start": 2312,
+                "end": 2485
+            },
+            {
+                "name": "oparraytableextrastate",
+                "start": 2491,
+                "end": 2554
+            },
+            {
+                "name": "opstate_needed",
+                "start": 2560,
+                "end": 2579
+            },
+            {
+                "name": "instrdriversymbols",
+                "start": 2590,
+                "end": 2617
+            },
+            {
+                "name": "printopexterns",
+                "start": 2630,
+                "end": 2693
+            },
+            {
+                "name": "printpassexterns",
+                "start": 2700,
+                "end": 2734
+            },
+            {
+                "name": "printfinputexterns",
+                "start": 2741,
+                "end": 2756
+            },
+            {
+                "name": "coreopcodeexterns",
+                "start": 2764,
+                "end": 2788
+            },
+            {
+                "name": "printsaoltables",
+                "start": 2798,
+                "end": 2889
+            },
+            {
+                "name": "printsaolopcodetables",
+                "start": 2895,
+                "end": 2932
+            },
+            {
+                "name": "printsaolopcodecatalog",
+                "start": 2935,
+                "end": 2936
+            },
+            {
+                "name": "printtablecatalog",
+                "start": 2942,
+                "end": 3043
+            },
+            {
+                "name": "printsaolopcodecatalog",
+                "start": 3049,
+                "end": 3087
+            },
+            {
+                "name": "printreflectionglobalvars",
+                "start": 3100,
+                "end": 3263
+            },
+            {
+                "name": "targetvarposition",
+                "start": 3270,
+                "end": 3288
+            },
+            {
+                "name": "printreflectiontarget",
+                "start": 3295,
+                "end": 3414
+            },
+            {
+                "name": "printreflectionlabels",
+                "start": 3421,
+                "end": 3489
+            },
+            {
+                "name": "printreflectionpresets",
+                "start": 3495,
+                "end": 3535
+            },
+            {
+                "name": "printreflectionsamples",
+                "start": 3541,
+                "end": 3602
+            },
+            {
+                "name": "printreflectionvars",
+                "start": 3608,
+                "end": 3754
+            },
+            {
+                "name": "printreflectioninstr",
+                "start": 3760,
+                "end": 3819
+            },
+            {
+                "name": "printreflectionbus",
+                "start": 3825,
+                "end": 3888
+            },
+            {
+                "name": "printreflectionroute",
+                "start": 3894,
+                "end": 3971
+            },
+            {
+                "name": "printreflectionsend",
+                "start": 3977,
+                "end": 4054
+            },
+            {
+                "name": "printreflection",
+                "start": 4060,
+                "end": 4102
+            },
+            {
+                "name": "printinstrlists",
+                "start": 4114,
+                "end": 4194
+            },
+            {
+                "name": "printinstrlistassign",
+                "start": 4201,
+                "end": 4252
+            },
+            {
+                "name": "printinstrlistconstant",
+                "start": 4259,
+                "end": 4285
+            },
+            {
+                "name": "printpresetinit",
+                "start": 4292,
+                "end": 4313
+            },
+            {
+                "name": "printextchaninit",
+                "start": 4320,
+                "end": 4344
+            },
+            {
+                "name": "printextchanpreset",
+                "start": 4350,
+                "end": 4374
+            },
+            {
+                "name": "printsaslinit",
+                "start": 4380,
+                "end": 4443
+            },
+            {
+                "name": "printsaslsizes",
+                "start": 4449,
+                "end": 4491
+            },
+            {
+                "name": "printcdrivervars",
+                "start": 4498,
+                "end": 4571
+            },
+            {
+                "name": "printcdriverconstant",
+                "start": 4578,
+                "end": 4586
+            },
+            {
+                "name": "printcdriverassign",
+                "start": 4593,
+                "end": 4615
+            },
+            {
+                "name": "printdynamiclists",
+                "start": 4621,
+                "end": 4642
+            },
+            {
+                "name": "makeoutputaudiodriver",
+                "start": 4654,
+                "end": 4677
+            },
+            {
+                "name": "makeinputaudiodriver",
+                "start": 4683,
+                "end": 4705
+            }
+        ],
+        "src/treeupdate.c": [
+            {
+                "name": "ratetostr",
+                "start": 48,
+                "end": 65
+            },
+            {
+                "name": "truewidth",
+                "start": 71,
+                "end": 79
+            },
+            {
+                "name": "exprwidth",
+                "start": 87,
+                "end": 148
+            },
+            {
+                "name": "multiwidth",
+                "start": 157,
+                "end": 224
+            },
+            {
+                "name": "widthupdate",
+                "start": 232,
+                "end": 694
+            },
+            {
+                "name": "exprrate",
+                "start": 700,
+                "end": 704
+            },
+            {
+                "name": "multirate",
+                "start": 710,
+                "end": 723
+            },
+            {
+                "name": "truerate",
+                "start": 729,
+                "end": 740
+            },
+            {
+                "name": "opcodelabel",
+                "start": 746,
+                "end": 757
+            },
+            {
+                "name": "opcoderatecheck",
+                "start": 763,
+                "end": 778
+            },
+            {
+                "name": "slowestopcode",
+                "start": 785,
+                "end": 808
+            },
+            {
+                "name": "blockrate",
+                "start": 814,
+                "end": 836
+            },
+            {
+                "name": "deleteslower",
+                "start": 842,
+                "end": 863
+            },
+            {
+                "name": "symrateupdate",
+                "start": 869,
+                "end": 891
+            },
+            {
+                "name": "opraterecurse",
+                "start": 897,
+                "end": 915
+            },
+            {
+                "name": "tablerateupdate",
+                "start": 922,
+                "end": 942
+            },
+            {
+                "name": "inrateupdate",
+                "start": 948,
+                "end": 961
+            },
+            {
+                "name": "checkopcodeargsrate",
+                "start": 968,
+                "end": 1045
+            },
+            {
+                "name": "dinstrargsrate",
+                "start": 1052,
+                "end": 1123
+            },
+            {
+                "name": "rateupdate",
+                "start": 1130,
+                "end": 1543
+            }
+        ],
+        "src/asyslib.c": [
+            {
+                "name": "makeaif",
+                "start": 45,
+                "end": 780
+            },
+            {
+                "name": "makehpux",
+                "start": 783,
+                "end": 1260
+            },
+            {
+                "name": "makeraw",
+                "start": 1263,
+                "end": 1606
+            },
+            {
+                "name": "makewav",
+                "start": 1609,
+                "end": 2295
+            },
+            {
+                "name": "makedsound",
+                "start": 2298,
+                "end": 2876
+            },
+            {
+                "name": "makelinux",
+                "start": 2879,
+                "end": 4224
+            },
+            {
+                "name": "makefreebsd",
+                "start": 4227,
+                "end": 5571
+            },
+            {
+                "name": "makestd",
+                "start": 5574,
+                "end": 5893
+            },
+            {
+                "name": "makevcdat",
+                "start": 5896,
+                "end": 6295
+            },
+            {
+                "name": "makenull",
+                "start": 6298,
+                "end": 6533
+            },
+            {
+                "name": "makeirix",
+                "start": 6536,
+                "end": 6840
+            },
+            {
+                "name": "makeportaudio",
+                "start": 6843,
+                "end": 7646
+            },
+            {
+                "name": "makecoreaudio",
+                "start": 7649,
+                "end": 9579
+            },
+            {
+                "name": "makeaudiounit",
+                "start": 9582,
+                "end": 15592
+            },
+            {
+                "name": "makewiretap",
+                "start": 15595,
+                "end": 18848
+            }
+        ],
+        "src/psyslib.c": [
+            {
+                "name": "makepa_hosthdr",
+                "start": 45,
+                "end": 189
+            },
+            {
+                "name": "makepa_porthdr",
+                "start": 192,
+                "end": 622
+            },
+            {
+                "name": "makepa_tracehdr",
+                "start": 625,
+                "end": 695
+            },
+            {
+                "name": "makepa_lib",
+                "start": 698,
+                "end": 1539
+            },
+            {
+                "name": "makepa_unix_oss",
+                "start": 1542,
+                "end": 2584
+            },
+            {
+                "name": "makepa_win_wmme",
+                "start": 2587,
+                "end": 4046
+            },
+            {
+                "name": "makepa_dshdr",
+                "start": 4049,
+                "end": 4151
+            },
+            {
+                "name": "makepa_dswrap",
+                "start": 4154,
+                "end": 4613
+            },
+            {
+                "name": "makepa_dsound",
+                "start": 4616,
+                "end": 5600
+            }
+        ],
+        "src/cmainpass.c": [
+            {
+                "name": "makecontrolsys",
+                "start": 47,
+                "end": 451
+            },
+            {
+                "name": "makesaslcontrolsys",
+                "start": 458,
+                "end": 518
+            },
+            {
+                "name": "makesaslcrosscontrol",
+                "start": 525,
+                "end": 536
+            },
+            {
+                "name": "makesasltablesys",
+                "start": 543,
+                "end": 627
+            }
+        ],
+        "src/coreinline.c": [
+            {
+                "name": "coreopcodecaninline",
+                "start": 61,
+                "end": 334
+            },
+            {
+                "name": "coreopcodedoinline",
+                "start": 349,
+                "end": 704
+            },
+            {
+                "name": "coreopcodetabletype",
+                "start": 718,
+                "end": 734
+            },
+            {
+                "name": "coretablereadinline",
+                "start": 740,
+                "end": 764
+            },
+            {
+                "name": "coremathinline",
+                "start": 771,
+                "end": 777
+            }
+        ],
+        "src/lex.c": [
+            {
+                "name": "noerrorplace",
+                "start": 48,
+                "end": 66
+            },
+            {
+                "name": "showerrorplace",
+                "start": 73,
+                "end": 108
+            },
+            {
+                "name": "internalerror",
+                "start": 115,
+                "end": 125
+            },
+            {
+                "name": "warningmessage",
+                "start": 131,
+                "end": 140
+            },
+            {
+                "name": "yyerror",
+                "start": 146,
+                "end": 162
+            },
+            {
+                "name": "iswhitespace",
+                "start": 169,
+                "end": 201
+            },
+            {
+                "name": "getnextsaolfile",
+                "start": 207,
+                "end": 230
+            },
+            {
+                "name": "preprocesslinenum",
+                "start": 236,
+                "end": 273
+            },
+            {
+                "name": "lexstate_wmap",
+                "start": 279,
+                "end": 314
+            },
+            {
+                "name": "lexstate_pmap",
+                "start": 321,
+                "end": 393
+            },
+            {
+                "name": "yylex",
+                "start": 400,
+                "end": 1166
+            }
+        ],
+        "src/corecode.c": [
+            {
+                "name": "vmcheck",
+                "start": 46,
+                "end": 57
+            },
+            {
+                "name": "mz",
+                "start": 63,
+                "end": 77
+            },
+            {
+                "name": "freezlist",
+                "start": 84,
+                "end": 100
+            },
+            {
+                "name": "firstopcodearg",
+                "start": 106,
+                "end": 116
+            },
+            {
+                "name": "printbody",
+                "start": 123,
+                "end": 147
+            },
+            {
+                "name": "makereturn",
+                "start": 154,
+                "end": 182
+            },
+            {
+                "name": "printblock",
+                "start": 189,
+                "end": 198
+            },
+            {
+                "name": "printraw",
+                "start": 205,
+                "end": 218
+            },
+            {
+                "name": "printlib",
+                "start": 225,
+                "end": 237
+            },
+            {
+                "name": "genex",
+                "start": 244,
+                "end": 266
+            },
+            {
+                "name": "gened",
+                "start": 272,
+                "end": 291
+            },
+            {
+                "name": "printwaveblock",
+                "start": 297,
+                "end": 332
+            },
+            {
+                "name": "printcontrolblock",
+                "start": 338,
+                "end": 361
+            },
+            {
+                "name": "printwaveblock2",
+                "start": 367,
+                "end": 391
+            },
+            {
+                "name": "printwavesymblock",
+                "start": 397,
+                "end": 433
+            },
+            {
+                "name": "printwavesymblock2",
+                "start": 439,
+                "end": 464
+            },
+            {
+                "name": "acycleguard",
+                "start": 470,
+                "end": 488
+            },
+            {
+                "name": "acycleguard2",
+                "start": 494,
+                "end": 512
+            },
+            {
+                "name": "kcycassign",
+                "start": 518,
+                "end": 536
+            },
+            {
+                "name": "kcycassign2",
+                "start": 542,
+                "end": 556
+            },
+            {
+                "name": "mathopscode",
+                "start": 563,
+                "end": 573
+            },
+            {
+                "name": "minmaxcode",
+                "start": 579,
+                "end": 595
+            },
+            {
+                "name": "noloopkoscil_sinc",
+                "start": 602,
+                "end": 724
+            },
+            {
+                "name": "noloopkoscil",
+                "start": 730,
+                "end": 769
+            },
+            {
+                "name": "loopkoscil_sinc",
+                "start": 775,
+                "end": 911
+            },
+            {
+                "name": "loopkoscil",
+                "start": 917,
+                "end": 968
+            },
+            {
+                "name": "nolooposcilafreq_sinc",
+                "start": 975,
+                "end": 1096
+            },
+            {
+                "name": "nolooposcilafreq",
+                "start": 1103,
+                "end": 1141
+            },
+            {
+                "name": "nolooposcilkfreq_sinc",
+                "start": 1148,
+                "end": 1290
+            },
+            {
+                "name": "nolooposcilkfreq",
+                "start": 1297,
+                "end": 1366
+            },
+            {
+                "name": "nolooposcilifreq_sinc",
+                "start": 1375,
+                "end": 1484
+            },
+            {
+                "name": "nolooposcilifreq",
+                "start": 1490,
+                "end": 1536
+            },
+            {
+                "name": "looposcilafreq_sinc",
+                "start": 1543,
+                "end": 1678
+            },
+            {
+                "name": "looposcilafreq",
+                "start": 1684,
+                "end": 1734
+            },
+            {
+                "name": "looposcilkfreq_sinc",
+                "start": 1740,
+                "end": 1909
+            },
+            {
+                "name": "looposcilkfreq",
+                "start": 1915,
+                "end": 2007
+            },
+            {
+                "name": "looposcilifreq_sinc",
+                "start": 2013,
+                "end": 2136
+            },
+            {
+                "name": "looposcilifreq",
+                "start": 2142,
+                "end": 2200
+            },
+            {
+                "name": "finitelooposcil",
+                "start": 2207,
+                "end": 2234
+            },
+            {
+                "name": "looposcilrate",
+                "start": 2240,
+                "end": 2247
+            },
+            {
+                "name": "loscilsetup",
+                "start": 2255,
+                "end": 2386
+            },
+            {
+                "name": "loscil_sinc",
+                "start": 2392,
+                "end": 2625
+            },
+            {
+                "name": "loscil",
+                "start": 2632,
+                "end": 2727
+            },
+            {
+                "name": "fracdelaym1",
+                "start": 2735,
+                "end": 2768
+            },
+            {
+                "name": "fracdelaym2",
+                "start": 2774,
+                "end": 2907
+            },
+            {
+                "name": "fracdelaym3",
+                "start": 2913,
+                "end": 2952
+            },
+            {
+                "name": "fracdelaym4",
+                "start": 2958,
+                "end": 2995
+            },
+            {
+                "name": "fracdelaym5",
+                "start": 3001,
+                "end": 3021
+            },
+            {
+                "name": "fracdelaygeneral",
+                "start": 3028,
+                "end": 3055
+            },
+            {
+                "name": "fracdelay",
+                "start": 3061,
+                "end": 3098
+            },
+            {
+                "name": "flangecode",
+                "start": 3105,
+                "end": 3260
+            },
+            {
+                "name": "choruscode",
+                "start": 3268,
+                "end": 3422
+            },
+            {
+                "name": "revcombinit",
+                "start": 3429,
+                "end": 3499
+            },
+            {
+                "name": "revcombcode",
+                "start": 3505,
+                "end": 3557
+            },
+            {
+                "name": "reverbcode",
+                "start": 3563,
+                "end": 3643
+            },
+            {
+                "name": "spatialcode",
+                "start": 3650,
+                "end": 3912
+            },
+            {
+                "name": "aphasorcode",
+                "start": 3919,
+                "end": 3950
+            },
+            {
+                "name": "kphasorcode",
+                "start": 3956,
+                "end": 3987
+            },
+            {
+                "name": "buzzphaseincr",
+                "start": 3994,
+                "end": 4024
+            },
+            {
+                "name": "buzzphaseinit",
+                "start": 4030,
+                "end": 4041
+            },
+            {
+                "name": "buzzcode",
+                "start": 4048,
+                "end": 4172
+            },
+            {
+                "name": "pluckcode_sinc",
+                "start": 4179,
+                "end": 4343
+            },
+            {
+                "name": "pluckcode",
+                "start": 4350,
+                "end": 4438
+            },
+            {
+                "name": "fftkrate",
+                "start": 4445,
+                "end": 4455
+            },
+            {
+                "name": "newfftlen",
+                "start": 4462,
+                "end": 4477
+            },
+            {
+                "name": "newfftsize",
+                "start": 4483,
+                "end": 4527
+            },
+            {
+                "name": "newfftshift",
+                "start": 4533,
+                "end": 4546
+            },
+            {
+                "name": "fftparams",
+                "start": 4553,
+                "end": 4595
+            },
+            {
+                "name": "ffttableset",
+                "start": 4603,
+                "end": 4617
+            },
+            {
+                "name": "fftarate",
+                "start": 4624,
+                "end": 4928
+            },
+            {
+                "name": "fftcode",
+                "start": 4935,
+                "end": 4943
+            },
+            {
+                "name": "ifftcore",
+                "start": 4950,
+                "end": 5057
+            },
+            {
+                "name": "ifftcode",
+                "start": 5063,
+                "end": 5316
+            },
+            {
+                "name": "alinecode",
+                "start": 5323,
+                "end": 5396
+            },
+            {
+                "name": "klinecode",
+                "start": 5402,
+                "end": 5471
+            },
+            {
+                "name": "aexpcode",
+                "start": 5477,
+                "end": 5568
+            },
+            {
+                "name": "kexpcode",
+                "start": 5574,
+                "end": 5658
+            },
+            {
+                "name": "grainoscilflag",
+                "start": 5665,
+                "end": 5696
+            },
+            {
+                "name": "graincode",
+                "start": 5703,
+                "end": 5847
+            },
+            {
+                "name": "filterconst",
+                "start": 5854,
+                "end": 5966
+            },
+            {
+                "name": "lopassk",
+                "start": 5973,
+                "end": 6011
+            },
+            {
+                "name": "lopass",
+                "start": 6018,
+                "end": 6030
+            },
+            {
+                "name": "hipassk",
+                "start": 6037,
+                "end": 6075
+            },
+            {
+                "name": "hipass",
+                "start": 6082,
+                "end": 6095
+            },
+            {
+                "name": "bandpassk",
+                "start": 6101,
+                "end": 6148
+            },
+            {
+                "name": "bandpass",
+                "start": 6155,
+                "end": 6169
+            },
+            {
+                "name": "bandstopk",
+                "start": 6178,
+                "end": 6225
+            },
+            {
+                "name": "bandstop",
+                "start": 6232,
+                "end": 6246
+            },
+            {
+                "name": "portamento",
+                "start": 6252,
+                "end": 6300
+            },
+            {
+                "name": "firtordernone",
+                "start": 6307,
+                "end": 6347
+            },
+            {
+                "name": "firtorderirate",
+                "start": 6353,
+                "end": 6397
+            },
+            {
+                "name": "firtorderkrate",
+                "start": 6404,
+                "end": 6460
+            },
+            {
+                "name": "firtcode",
+                "start": 6467,
+                "end": 6483
+            },
+            {
+                "name": "iirtordernone",
+                "start": 6492,
+                "end": 6554
+            },
+            {
+                "name": "iirtorderirate",
+                "start": 6560,
+                "end": 6624
+            },
+            {
+                "name": "iirtorderkrate",
+                "start": 6631,
+                "end": 6708
+            },
+            {
+                "name": "iirtcode",
+                "start": 6716,
+                "end": 6732
+            },
+            {
+                "name": "compresskcheck",
+                "start": 6739,
+                "end": 6774
+            },
+            {
+                "name": "compresskrate",
+                "start": 6780,
+                "end": 6864
+            },
+            {
+                "name": "compressirate",
+                "start": 6871,
+                "end": 6953
+            },
+            {
+                "name": "compresscode",
+                "start": 6959,
+                "end": 7057
+            },
+            {
+                "name": "rmslengthset",
+                "start": 7063,
+                "end": 7085
+            },
+            {
+                "name": "rmskrate",
+                "start": 7091,
+                "end": 7111
+            },
+            {
+                "name": "rmsarate",
+                "start": 7117,
+                "end": 7137
+            },
+            {
+                "name": "rmscode",
+                "start": 7144,
+                "end": 7152
+            },
+            {
+                "name": "decimatecode",
+                "start": 7160,
+                "end": 7175
+            },
+            {
+                "name": "downsampkrate",
+                "start": 7182,
+                "end": 7225
+            },
+            {
+                "name": "downsamparate",
+                "start": 7231,
+                "end": 7267
+            },
+            {
+                "name": "downsampcode",
+                "start": 7274,
+                "end": 7282
+            },
+            {
+                "name": "sblockkrate",
+                "start": 7289,
+                "end": 7302
+            },
+            {
+                "name": "sblockarate",
+                "start": 7309,
+                "end": 7331
+            },
+            {
+                "name": "sblockcode",
+                "start": 7338,
+                "end": 7346
+            },
+            {
+                "name": "extralength",
+                "start": 7353,
+                "end": 7367
+            },
+            {
+                "name": "coreopcodebody",
+                "start": 7373,
+                "end": 8818
+            }
+        ],
+        "src/mp4read.c": [
+            {
+                "name": "readnextbyte",
+                "start": 47,
+                "end": 58
+            },
+            {
+                "name": "readbit",
+                "start": 65,
+                "end": 80
+            },
+            {
+                "name": "readaccesstime",
+                "start": 86,
+                "end": 115
+            },
+            {
+                "name": "readflush",
+                "start": 123,
+                "end": 135
+            },
+            {
+                "name": "midifileflush",
+                "start": 141,
+                "end": 147
+            },
+            {
+                "name": "symboltableflush",
+                "start": 153,
+                "end": 164
+            },
+            {
+                "name": "orcfileflush",
+                "start": 170,
+                "end": 200
+            },
+            {
+                "name": "scorelineflush",
+                "start": 206,
+                "end": 263
+            },
+            {
+                "name": "scorefileflush",
+                "start": 269,
+                "end": 280
+            },
+            {
+                "name": "sampleflush",
+                "start": 287,
+                "end": 303
+            },
+            {
+                "name": "readfindchunk",
+                "start": 310,
+                "end": 348
+            },
+            {
+                "name": "putsoundbytes",
+                "start": 355,
+                "end": 363
+            },
+            {
+                "name": "wavefileintwrite",
+                "start": 369,
+                "end": 406
+            },
+            {
+                "name": "readnextsample",
+                "start": 413,
+                "end": 522
+            },
+            {
+                "name": "readsampleset",
+                "start": 528,
+                "end": 543
+            },
+            {
+                "name": "readsymboltable",
+                "start": 549,
+                "end": 584
+            },
+            {
+                "name": "readprepare",
+                "start": 590,
+                "end": 622
+            },
+            {
+                "name": "orclex",
+                "start": 628,
+                "end": 762
+            },
+            {
+                "name": "binscorelinetop",
+                "start": 768,
+                "end": 829
+            },
+            {
+                "name": "binscoretimestamp",
+                "start": 835,
+                "end": 862
+            },
+            {
+                "name": "binscorelinebottom",
+                "start": 868,
+                "end": 1077
+            },
+            {
+                "name": "binconflex",
+                "start": 1083,
+                "end": 1110
+            },
+            {
+                "name": "readnextscoreline",
+                "start": 1117,
+                "end": 1146
+            },
+            {
+                "name": "binsstrlex",
+                "start": 1153,
+                "end": 1173
+            }
+        ],
+        "src/wtconst.c": [
+            {
+                "name": "wavereduceconstants",
+                "start": 77,
+                "end": 276
+            },
+            {
+                "name": "createconstanttable",
+                "start": 294,
+                "end": 353
+            },
+            {
+                "name": "printtablestring",
+                "start": 367,
+                "end": 437
+            },
+            {
+                "name": "printtableproblem",
+                "start": 450,
+                "end": 464
+            },
+            {
+                "name": "buzzconstcheck",
+                "start": 471,
+                "end": 595
+            },
+            {
+                "name": "cubicconstcheck",
+                "start": 602,
+                "end": 799
+            },
+            {
+                "name": "dataconstcheck",
+                "start": 806,
+                "end": 851
+            },
+            {
+                "name": "expsegconstcheck",
+                "start": 857,
+                "end": 974
+            },
+            {
+                "name": "harmconstcheck",
+                "start": 980,
+                "end": 1010
+            },
+            {
+                "name": "harmphaseconstcheck",
+                "start": 1016,
+                "end": 1064
+            },
+            {
+                "name": "linesegconstcheck",
+                "start": 1071,
+                "end": 1173
+            },
+            {
+                "name": "periodicconstcheck",
+                "start": 1179,
+                "end": 1230
+            },
+            {
+                "name": "polynomialconstcheck",
+                "start": 1237,
+                "end": 1314
+            },
+            {
+                "name": "randomconstcheck",
+                "start": 1321,
+                "end": 1386
+            },
+            {
+                "name": "sampleconstcheck",
+                "start": 1396,
+                "end": 1472
+            },
+            {
+                "name": "splineconstcheck",
+                "start": 1478,
+                "end": 1643
+            },
+            {
+                "name": "stepconstcheck",
+                "start": 1650,
+                "end": 1742
+            },
+            {
+                "name": "windowconstcheck",
+                "start": 1751,
+                "end": 1860
+            },
+            {
+                "name": "wavetablenameprefix",
+                "start": 1874,
+                "end": 1925
+            },
+            {
+                "name": "wt_getsoundbytes",
+                "start": 1929,
+                "end": 1930
+            },
+            {
+                "name": "wt_getsoundsbytes",
+                "start": 1931,
+                "end": 1932
+            },
+            {
+                "name": "wavefileconstcheck",
+                "start": 1945,
+                "end": 2116
+            },
+            {
+                "name": "aiffileconstcheck",
+                "start": 2122,
+                "end": 2344
+            },
+            {
+                "name": "besselval",
+                "start": 2357,
+                "end": 2375
+            },
+            {
+                "name": "wt_bitsounderror",
+                "start": 2382,
+                "end": 2387
+            },
+            {
+                "name": "wt_getsoundbytes",
+                "start": 2394,
+                "end": 2403
+            },
+            {
+                "name": "wt_getsoundsbytes",
+                "start": 2409,
+                "end": 2419
+            },
+            {
+                "name": "wt_getnextcookie",
+                "start": 2425,
+                "end": 2435
+            },
+            {
+                "name": "wt_flushsoundbytes",
+                "start": 2442,
+                "end": 2452
+            },
+            {
+                "name": "wt_wavefileintval",
+                "start": 2458,
+                "end": 2493
+            },
+            {
+                "name": "wt_aiffileintval",
+                "start": 2499,
+                "end": 2533
+            },
+            {
+                "name": "wt_soundtypecheck",
+                "start": 2542,
+                "end": 2558
+            },
+            {
+                "name": "compactfloat",
+                "start": 2565,
+                "end": 2576
+            }
+        ],
+        "src/readscore.c": [
+            {
+                "name": "readscore",
+                "start": 68,
+                "end": 178
+            },
+            {
+                "name": "renumberabs",
+                "start": 196,
+                "end": 310
+            },
+            {
+                "name": "mergerootlist",
+                "start": 313,
+                "end": 314
+            },
+            {
+                "name": "mergescores",
+                "start": 321,
+                "end": 395
+            },
+            {
+                "name": "initendsasl",
+                "start": 409,
+                "end": 491
+            },
+            {
+                "name": "initendtime",
+                "start": 497,
+                "end": 562
+            },
+            {
+                "name": "initendtimeassign",
+                "start": 568,
+                "end": 586
+            },
+            {
+                "name": "initscoreinstr",
+                "start": 593,
+                "end": 626
+            },
+            {
+                "name": "initscoreinstrassign",
+                "start": 632,
+                "end": 679
+            },
+            {
+                "name": "initscoreinstrconstant",
+                "start": 686,
+                "end": 795
+            },
+            {
+                "name": "initscorecontrol",
+                "start": 802,
+                "end": 864
+            },
+            {
+                "name": "initscorecontrolassign",
+                "start": 870,
+                "end": 943
+            },
+            {
+                "name": "initscorecontrolconstant",
+                "start": 949,
+                "end": 1090
+            },
+            {
+                "name": "initscoretempo",
+                "start": 1097,
+                "end": 1117
+            },
+            {
+                "name": "initscoretempoassign",
+                "start": 1123,
+                "end": 1151
+            },
+            {
+                "name": "initscoretempoconstant",
+                "start": 1158,
+                "end": 1194
+            },
+            {
+                "name": "initscoretablevars",
+                "start": 1200,
+                "end": 1220
+            },
+            {
+                "name": "initscoretableassign",
+                "start": 1226,
+                "end": 1254
+            },
+            {
+                "name": "initscoretableconstant",
+                "start": 1261,
+                "end": 1311
+            },
+            {
+                "name": "initscoretableexterns",
+                "start": 1318,
+                "end": 1350
+            },
+            {
+                "name": "printtablefunctions",
+                "start": 1357,
+                "end": 1423
+            },
+            {
+                "name": "scorelex",
+                "start": 1438,
+                "end": 1756
+            },
+            {
+                "name": "parseend",
+                "start": 1762,
+                "end": 1781
+            },
+            {
+                "name": "parsetempo",
+                "start": 1790,
+                "end": 1827
+            },
+            {
+                "name": "parsetable",
+                "start": 1837,
+                "end": 1956
+            },
+            {
+                "name": "parsecontrol",
+                "start": 1962,
+                "end": 2000
+            },
+            {
+                "name": "parselcontrol",
+                "start": 2006,
+                "end": 2047
+            },
+            {
+                "name": "parselinstr",
+                "start": 2056,
+                "end": 2125
+            },
+            {
+                "name": "parseinstr",
+                "start": 2131,
+                "end": 2181
+            },
+            {
+                "name": "showbadline",
+                "start": 2187,
+                "end": 2215
+            },
+            {
+                "name": "badline",
+                "start": 2221,
+                "end": 2227
+            },
+            {
+                "name": "maketempomap",
+                "start": 2241,
+                "end": 2321
+            },
+            {
+                "name": "midipointers",
+                "start": 2337,
+                "end": 2369
+            },
+            {
+                "name": "timestampconvert",
+                "start": 2375,
+                "end": 2385
+            },
+            {
+                "name": "mergerootlist",
+                "start": 2391,
+                "end": 2461
+            },
+            {
+                "name": "mergelabeltable",
+                "start": 2467,
+                "end": 2491
+            },
+            {
+                "name": "scoreaddsymtable",
+                "start": 2504,
+                "end": 2511
+            },
+            {
+                "name": "mergenodes",
+                "start": 2517,
+                "end": 2545
+            },
+            {
+                "name": "instrpfieldcheck",
+                "start": 2552,
+                "end": 2567
+            },
+            {
+                "name": "tablepfieldcheck",
+                "start": 2573,
+                "end": 2640
+            },
+            {
+                "name": "addtempomap",
+                "start": 2652,
+                "end": 2658
+            }
+        ],
+        "src/optmain.c": [
+            {
+                "name": "optmain",
+                "start": 64,
+                "end": 130
+            },
+            {
+                "name": "optglobalblock",
+                "start": 154,
+                "end": 293
+            },
+            {
+                "name": "globalclearcount",
+                "start": 300,
+                "end": 313
+            },
+            {
+                "name": "symtableinit",
+                "start": 320,
+                "end": 373
+            },
+            {
+                "name": "symtableparam",
+                "start": 381,
+                "end": 435
+            },
+            {
+                "name": "tablerefer",
+                "start": 442,
+                "end": 483
+            },
+            {
+                "name": "refercount",
+                "start": 492,
+                "end": 516
+            },
+            {
+                "name": "tablepromote",
+                "start": 528,
+                "end": 590
+            },
+            {
+                "name": "duradd",
+                "start": 597,
+                "end": 612
+            },
+            {
+                "name": "optlines",
+                "start": 621,
+                "end": 712
+            },
+            {
+                "name": "globalrefer",
+                "start": 719,
+                "end": 785
+            },
+            {
+                "name": "mirrorupdate",
+                "start": 792,
+                "end": 811
+            },
+            {
+                "name": "globalreferinit",
+                "start": 825,
+                "end": 846
+            },
+            {
+                "name": "dotablepromote",
+                "start": 853,
+                "end": 894
+            },
+            {
+                "name": "globalcountupdate",
+                "start": 900,
+                "end": 915
+            },
+            {
+                "name": "opcodelinecount",
+                "start": 922,
+                "end": 958
+            }
+        ],
+        "src/parser.tab.c": [
+            {
+                "name": "yydestruct",
+                "start": 1497,
+                "end": 1519
+            },
+            {
+                "name": "yyparse",
+                "start": 1568,
+                "end": 2572
+            }
+        ],
+        "src/oclone.c": [
+            {
+                "name": "installopnames",
+                "start": 60,
+                "end": 113
+            },
+            {
+                "name": "installdyninstr",
+                "start": 120,
+                "end": 137
+            },
+            {
+                "name": "tclone",
+                "start": 152,
+                "end": 210
+            },
+            {
+                "name": "eclone",
+                "start": 216,
+                "end": 256
+            },
+            {
+                "name": "sclone",
+                "start": 263,
+                "end": 314
+            },
+            {
+                "name": "treeclone",
+                "start": 324,
+                "end": 563
+            },
+            {
+                "name": "opcodelink",
+                "start": 576,
+                "end": 639
+            },
+            {
+                "name": "dptrmatch",
+                "start": 645,
+                "end": 657
+            },
+            {
+                "name": "optrmatch",
+                "start": 663,
+                "end": 676
+            }
+        ],
+        "src/writemain.c": [
+            {
+                "name": "printmainloops",
+                "start": 61,
+                "end": 69
+            },
+            {
+                "name": "makeloops",
+                "start": 94,
+                "end": 324
+            },
+            {
+                "name": "ipassstartup",
+                "start": 337,
+                "end": 398
+            },
+            {
+                "name": "kpassstartup",
+                "start": 405,
+                "end": 415
+            },
+            {
+                "name": "apassstartup",
+                "start": 422,
+                "end": 434
+            },
+            {
+                "name": "ipasssasl",
+                "start": 448,
+                "end": 556
+            },
+            {
+                "name": "kpasssasl",
+                "start": 562,
+                "end": 587
+            },
+            {
+                "name": "apasssasl",
+                "start": 593,
+                "end": 621
+            },
+            {
+                "name": "ipasscounter",
+                "start": 635,
+                "end": 655
+            },
+            {
+                "name": "ipasscore",
+                "start": 661,
+                "end": 828
+            },
+            {
+                "name": "kpasscore",
+                "start": 834,
+                "end": 851
+            },
+            {
+                "name": "apasscore",
+                "start": 857,
+                "end": 881
+            },
+            {
+                "name": "midipass",
+                "start": 895,
+                "end": 944
+            },
+            {
+                "name": "ipassinitpass",
+                "start": 958,
+                "end": 984
+            },
+            {
+                "name": "ipasseffects",
+                "start": 990,
+                "end": 1057
+            },
+            {
+                "name": "kpasseffects",
+                "start": 1063,
+                "end": 1083
+            },
+            {
+                "name": "apasseffects",
+                "start": 1089,
+                "end": 1112
+            },
+            {
+                "name": "makeinputbusread",
+                "start": 1124,
+                "end": 1175
+            },
+            {
+                "name": "makebufferinit",
+                "start": 1181,
+                "end": 1267
+            }
+        ],
+        "src/ascwrite.c": [
+            {
+                "name": "ascsaoltreewrite",
+                "start": 47,
+                "end": 132
+            },
+            {
+                "name": "ascsaolwrite",
+                "start": 139,
+                "end": 174
+            },
+            {
+                "name": "slinewrite",
+                "start": 180,
+                "end": 201
+            },
+            {
+                "name": "ascsaslwrite",
+                "start": 208,
+                "end": 228
+            }
+        ],
+        "src/writeop.c": [
+            {
+                "name": "opcodefunctions",
+                "start": 63,
+                "end": 126
+            },
+            {
+                "name": "printopcodes",
+                "start": 146,
+                "end": 181
+            },
+            {
+                "name": "redefglobal",
+                "start": 188,
+                "end": 217
+            },
+            {
+                "name": "redefnormal",
+                "start": 224,
+                "end": 253
+            },
+            {
+                "name": "redefstatic",
+                "start": 260,
+                "end": 289
+            },
+            {
+                "name": "printopcall",
+                "start": 314,
+                "end": 394
+            },
+            {
+                "name": "printoparraycall",
+                "start": 403,
+                "end": 468
+            },
+            {
+                "name": "printlocals",
+                "start": 485,
+                "end": 524
+            },
+            {
+                "name": "printopargs",
+                "start": 539,
+                "end": 767
+            },
+            {
+                "name": "printopimports",
+                "start": 774,
+                "end": 871
+            },
+            {
+                "name": "printopcodebody",
+                "start": 881,
+                "end": 913
+            },
+            {
+                "name": "printopbody_ki",
+                "start": 919,
+                "end": 946
+            },
+            {
+                "name": "printopbody_aki",
+                "start": 954,
+                "end": 1016
+            },
+            {
+                "name": "printoparraygeneral",
+                "start": 1026,
+                "end": 1137
+            },
+            {
+                "name": "printoparrayconst",
+                "start": 1143,
+                "end": 1203
+            },
+            {
+                "name": "printoparraychildren",
+                "start": 1209,
+                "end": 1257
+            },
+            {
+                "name": "redefoparrayargs",
+                "start": 1265,
+                "end": 1291
+            },
+            {
+                "name": "redefoparraybody",
+                "start": 1298,
+                "end": 1335
+            },
+            {
+                "name": "namingprefix",
+                "start": 1357,
+                "end": 1419
+            },
+            {
+                "name": "callbyrefvars",
+                "start": 1431,
+                "end": 1453
+            },
+            {
+                "name": "printsignaldefine",
+                "start": 1460,
+                "end": 1505
+            },
+            {
+                "name": "makeparamindex",
+                "start": 1512,
+                "end": 1601
+            },
+            {
+                "name": "printtabledefine",
+                "start": 1613,
+                "end": 1636
+            },
+            {
+                "name": "printinlinetable",
+                "start": 1642,
+                "end": 1663
+            },
+            {
+                "name": "printtableindirect",
+                "start": 1670,
+                "end": 1691
+            },
+            {
+                "name": "printtmapcase",
+                "start": 1698,
+                "end": 1744
+            },
+            {
+                "name": "maketableindex",
+                "start": 1751,
+                "end": 1921
+            },
+            {
+                "name": "stackstring",
+                "start": 1934,
+                "end": 2104
+            },
+            {
+                "name": "indexed_cbr",
+                "start": 2115,
+                "end": 2131
+            },
+            {
+                "name": "stname_cbr",
+                "start": 2137,
+                "end": 2150
+            }
+        ],
+        "src/wtparse.c": [
+            {
+                "name": "wavegeneratorname",
+                "start": 54,
+                "end": 113
+            },
+            {
+                "name": "haswavegenerator",
+                "start": 119,
+                "end": 227
+            },
+            {
+                "name": "wavegeneratorvar",
+                "start": 249,
+                "end": 741
+            },
+            {
+                "name": "createtable",
+                "start": 759,
+                "end": 823
+            },
+            {
+                "name": "tablestartupcheck",
+                "start": 830,
+                "end": 872
+            },
+            {
+                "name": "createwavetable",
+                "start": 893,
+                "end": 1468
+            },
+            {
+                "name": "wavevarinit",
+                "start": 1484,
+                "end": 2289
+            },
+            {
+                "name": "tablepreamble",
+                "start": 2297,
+                "end": 2439
+            },
+            {
+                "name": "wavevarinitcheck",
+                "start": 2452,
+                "end": 2480
+            },
+            {
+                "name": "tablelistlength",
+                "start": 2486,
+                "end": 2502
+            },
+            {
+                "name": "makewstring",
+                "start": 2508,
+                "end": 2519
+            },
+            {
+                "name": "samplefilecode",
+                "start": 2526,
+                "end": 2991
+            },
+            {
+                "name": "randomconstcode",
+                "start": 2997,
+                "end": 3086
+            }
+        ],
+        "src/sfmain.c": [
+            {
+                "name": "main",
+                "start": 60,
+                "end": 128
+            },
+            {
+                "name": "sfrontinitialize",
+                "start": 142,
+                "end": 163
+            },
+            {
+                "name": "commandlineargs",
+                "start": 178,
+                "end": 208
+            },
+            {
+                "name": "sfrontshutdown",
+                "start": 215,
+                "end": 228
+            },
+            {
+                "name": "printbsd",
+                "start": 250,
+                "end": 284
+            },
+            {
+                "name": "printhelptop",
+                "start": 290,
+                "end": 306
+            },
+            {
+                "name": "printhelpshort",
+                "start": 312,
+                "end": 320
+            },
+            {
+                "name": "printhelp",
+                "start": 327,
+                "end": 393
+            },
+            {
+                "name": "cppsystemcall",
+                "start": 406,
+                "end": 453
+            },
+            {
+                "name": "cppsaslfile",
+                "start": 459,
+                "end": 488
+            },
+            {
+                "name": "cppenvironment",
+                "start": 494,
+                "end": 548
+            },
+            {
+                "name": "saolcppcheck",
+                "start": 555,
+                "end": 592
+            },
+            {
+                "name": "deletecppfiles",
+                "start": 598,
+                "end": 620
+            },
+            {
+                "name": "sfrontpostparsecheck",
+                "start": 632,
+                "end": 796
+            },
+            {
+                "name": "cmdlinefileopen",
+                "start": 806,
+                "end": 837
+            },
+            {
+                "name": "cmddriveropen",
+                "start": 843,
+                "end": 862
+            },
+            {
+                "name": "oneparamflags",
+                "start": 868,
+                "end": 1311
+            },
+            {
+                "name": "cmdlineorchestra",
+                "start": 1318,
+                "end": 1367
+            },
+            {
+                "name": "singleflags",
+                "start": 1373,
+                "end": 1481
+            }
+        ],
+        "src/csrclib.c": [
+            {
+                "name": "makeruntime",
+                "start": 45,
+                "end": 143
+            },
+            {
+                "name": "makeruntimef",
+                "start": 146,
+                "end": 242
+            },
+            {
+                "name": "makecallback",
+                "start": 245,
+                "end": 457
+            },
+            {
+                "name": "makerobust",
+                "start": 460,
+                "end": 593
+            },
+            {
+                "name": "makepreamble",
+                "start": 596,
+                "end": 749
+            },
+            {
+                "name": "makerunspt",
+                "start": 752,
+                "end": 997
+            },
+            {
+                "name": "maketsync",
+                "start": 1000,
+                "end": 1142
+            },
+            {
+                "name": "makepsync",
+                "start": 1145,
+                "end": 1278
+            },
+            {
+                "name": "maketgen",
+                "start": 1281,
+                "end": 2317
+            }
+        ],
+        "src/csyslib.c": [
+            {
+                "name": "makeascii",
+                "start": 45,
+                "end": 508
+            },
+            {
+                "name": "makegliss",
+                "start": 511,
+                "end": 695
+            },
+            {
+                "name": "makelinmidi",
+                "start": 698,
+                "end": 1291
+            },
+            {
+                "name": "makefreebsdmidi",
+                "start": 1294,
+                "end": 1889
+            },
+            {
+                "name": "makewin32",
+                "start": 1892,
+                "end": 2129
+            },
+            {
+                "name": "makealsamidi",
+                "start": 2132,
+                "end": 2524
+            },
+            {
+                "name": "makealsaseq",
+                "start": 2527,
+                "end": 2981
+            },
+            {
+                "name": "makefstr",
+                "start": 2984,
+                "end": 4284
+            },
+            {
+                "name": "makecoremidi",
+                "start": 4287,
+                "end": 5248
+            },
+            {
+                "name": "makeaucontrol",
+                "start": 5251,
+                "end": 5657
+            }
+        ],
+        "src/parsehelp.c": [
+            {
+                "name": "make_instrdecl",
+                "start": 69,
+                "end": 159
+            },
+            {
+                "name": "make_instrpfields",
+                "start": 168,
+                "end": 203
+            },
+            {
+                "name": "make_miditag",
+                "start": 210,
+                "end": 226
+            },
+            {
+                "name": "make_opcodedecl",
+                "start": 239,
+                "end": 352
+            },
+            {
+                "name": "make_opcodetype",
+                "start": 358,
+                "end": 383
+            },
+            {
+                "name": "make_globaldecl",
+                "start": 396,
+                "end": 490
+            },
+            {
+                "name": "make_templatedecl",
+                "start": 508,
+                "end": 674
+            },
+            {
+                "name": "templateopcodepatch",
+                "start": 680,
+                "end": 706
+            },
+            {
+                "name": "make_templatepfields",
+                "start": 712,
+                "end": 728
+            },
+            {
+                "name": "make_mapblock",
+                "start": 734,
+                "end": 756
+            },
+            {
+                "name": "make_rtparam",
+                "start": 779,
+                "end": 866
+            },
+            {
+                "name": "make_routedef",
+                "start": 872,
+                "end": 898
+            },
+            {
+                "name": "make_senddef",
+                "start": 904,
+                "end": 961
+            },
+            {
+                "name": "make_seqdef",
+                "start": 967,
+                "end": 985
+            },
+            {
+                "name": "make_statement",
+                "start": 1011,
+                "end": 1242
+            },
+            {
+                "name": "make_lval",
+                "start": 1249,
+                "end": 1324
+            },
+            {
+                "name": "make_simplevar",
+                "start": 1338,
+                "end": 1540
+            },
+            {
+                "name": "make_tabledecl",
+                "start": 1547,
+                "end": 1601
+            },
+            {
+                "name": "make_tablemap",
+                "start": 1608,
+                "end": 1643
+            },
+            {
+                "name": "make_paramdecl",
+                "start": 1651,
+                "end": 1736
+            },
+            {
+                "name": "make_name",
+                "start": 1746,
+                "end": 1764
+            },
+            {
+                "name": "make_expr",
+                "start": 1803,
+                "end": 2116
+            },
+            {
+                "name": "leftrecurse",
+                "start": 2129,
+                "end": 2149
+            },
+            {
+                "name": "leftsrecurse",
+                "start": 2155,
+                "end": 2187
+            },
+            {
+                "name": "make_stree",
+                "start": 2193,
+                "end": 2216
+            },
+            {
+                "name": "make_asfloat",
+                "start": 2229,
+                "end": 2252
+            },
+            {
+                "name": "exprres",
+                "start": 2258,
+                "end": 2264
+            },
+            {
+                "name": "reservednames",
+                "start": 2270,
+                "end": 2295
+            },
+            {
+                "name": "tableexprcheck",
+                "start": 2303,
+                "end": 2324
+            },
+            {
+                "name": "exprtableok",
+                "start": 2330,
+                "end": 2357
+            },
+            {
+                "name": "tablecheck",
+                "start": 2369,
+                "end": 2380
+            },
+            {
+                "name": "tablelistcheck",
+                "start": 2386,
+                "end": 2400
+            }
+        ],
+        "src/readmidi.c": [
+            {
+                "name": "getmidibytes",
+                "start": 72,
+                "end": 130
+            },
+            {
+                "name": "miditypecheck",
+                "start": 139,
+                "end": 187
+            },
+            {
+                "name": "intval",
+                "start": 194,
+                "end": 226
+            },
+            {
+                "name": "tickval",
+                "start": 232,
+                "end": 251
+            },
+            {
+                "name": "flushmidi",
+                "start": 257,
+                "end": 269
+            },
+            {
+                "name": "textoutmidi",
+                "start": 275,
+                "end": 297
+            },
+            {
+                "name": "getvlength",
+                "start": 303,
+                "end": 319
+            },
+            {
+                "name": "nextmidicommand",
+                "start": 325,
+                "end": 352
+            },
+            {
+                "name": "miditimestampptr",
+                "start": 358,
+                "end": 390
+            },
+            {
+                "name": "midisyscommands",
+                "start": 396,
+                "end": 512
+            },
+            {
+                "name": "midisummary",
+                "start": 518,
+                "end": 550
+            },
+            {
+                "name": "midiheader",
+                "start": 556,
+                "end": 581
+            },
+            {
+                "name": "newpatch",
+                "start": 588,
+                "end": 635
+            },
+            {
+                "name": "addnote",
+                "start": 641,
+                "end": 728
+            },
+            {
+                "name": "endnote",
+                "start": 734,
+                "end": 759
+            },
+            {
+                "name": "midicleanup",
+                "start": 765,
+                "end": 801
+            },
+            {
+                "name": "pitchwheel",
+                "start": 807,
+                "end": 831
+            },
+            {
+                "name": "keytouch",
+                "start": 837,
+                "end": 859
+            },
+            {
+                "name": "controller",
+                "start": 865,
+                "end": 901
+            },
+            {
+                "name": "cleanmidivars",
+                "start": 907,
+                "end": 931
+            },
+            {
+                "name": "readmidi",
+                "start": 937,
+                "end": 1026
+            },
+            {
+                "name": "initmidiinstr",
+                "start": 1032,
+                "end": 1074
+            },
+            {
+                "name": "initmidiinstrassign",
+                "start": 1081,
+                "end": 1126
+            },
+            {
+                "name": "initmidiinstrconstant",
+                "start": 1132,
+                "end": 1240
+            },
+            {
+                "name": "binmidiwrite",
+                "start": 1246,
+                "end": 1277
+            },
+            {
+                "name": "nextmidievent",
+                "start": 1284,
+                "end": 1309
+            },
+            {
+                "name": "midieventread",
+                "start": 1318,
+                "end": 1383
+            }
+        ],
+        "src/control.c": [
+            {
+                "name": "printcontrolhelp",
+                "start": 65,
+                "end": 82
+            },
+            {
+                "name": "cinfilecheck",
+                "start": 88,
+                "end": 229
+            },
+            {
+                "name": "makecontroldriver",
+                "start": 235,
+                "end": 275
+            },
+            {
+                "name": "makenetworkdriver",
+                "start": 281,
+                "end": 319
+            }
+        ],
+        "src/corevars.c": [
+            {
+                "name": "coreparamvars",
+                "start": 46,
+                "end": 66
+            },
+            {
+                "name": "coreopcodevars",
+                "start": 72,
+                "end": 531
+            },
+            {
+                "name": "coreopcodename",
+                "start": 538,
+                "end": 808
+            },
+            {
+                "name": "coreopcodehasextras",
+                "start": 815,
+                "end": 922
+            },
+            {
+                "name": "coreopcodespeedtrap",
+                "start": 936,
+                "end": 1044
+            },
+            {
+                "name": "delicatepolyops",
+                "start": 1051,
+                "end": 1069
+            },
+            {
+                "name": "polyopcallexcept",
+                "start": 1075,
+                "end": 1127
+            },
+            {
+                "name": "coreopcodeprecompute",
+                "start": 1134,
+                "end": 1305
+            },
+            {
+                "name": "mathfloatop",
+                "start": 1311,
+                "end": 1318
+            },
+            {
+                "name": "mathintop",
+                "start": 1324,
+                "end": 1331
+            },
+            {
+                "name": "mathmaxmin",
+                "start": 1337,
+                "end": 1367
+            },
+            {
+                "name": "coreopcodecollapse",
+                "start": 1373,
+                "end": 1798
+            },
+            {
+                "name": "hascoreopcode",
+                "start": 1804,
+                "end": 2389
+            },
+            {
+                "name": "corerefer",
+                "start": 2395,
+                "end": 2549
+            },
+            {
+                "name": "coreopcodespecial",
+                "start": 2555,
+                "end": 2571
+            },
+            {
+                "name": "coreopcodeasint",
+                "start": 2578,
+                "end": 2590
+            },
+            {
+                "name": "createopcode",
+                "start": 2597,
+                "end": 2665
+            },
+            {
+                "name": "addopcodevar",
+                "start": 2672,
+                "end": 2710
+            },
+            {
+                "name": "addopcodepfield",
+                "start": 2716,
+                "end": 2777
+            },
+            {
+                "name": "addextraparam",
+                "start": 2786,
+                "end": 2840
+            },
+            {
+                "name": "oneargopcode",
+                "start": 2847,
+                "end": 2855
+            },
+            {
+                "name": "coreopcodeadd",
+                "start": 2862,
+                "end": 3797
+            },
+            {
+                "name": "extracheckargs",
+                "start": 3803,
+                "end": 3813
+            },
+            {
+                "name": "coreopcodeargs",
+                "start": 3819,
+                "end": 4341
+            },
+            {
+                "name": "coreopcodevarargs",
+                "start": 4348,
+                "end": 4411
+            }
+        ],
+        "src/lib/libmaker.c": [
+            {
+                "name": "exitlibmaker",
+                "start": 61,
+                "end": 67
+            },
+            {
+                "name": "printhelp",
+                "start": 73,
+                "end": 88
+            },
+            {
+                "name": "commandlineargs",
+                "start": 94,
+                "end": 182
+            },
+            {
+                "name": "writepreamble",
+                "start": 188,
+                "end": 228
+            },
+            {
+                "name": "writefiles",
+                "start": 235,
+                "end": 322
+            },
+            {
+                "name": "main",
+                "start": 329,
+                "end": 336
+            }
+        ],
+        "src/lib/csys/fstr.c": [
+            {
+                "name": "csysi_readnextbyte",
+                "start": 170,
+                "end": 185
+            },
+            {
+                "name": "csysi_readbit",
+                "start": 192,
+                "end": 208
+            },
+            {
+                "name": "csysi_readaccesstime",
+                "start": 214,
+                "end": 246
+            },
+            {
+                "name": "csysi_readflush",
+                "start": 254,
+                "end": 266
+            },
+            {
+                "name": "csysi_midifileflush",
+                "start": 272,
+                "end": 278
+            },
+            {
+                "name": "csysi_symboltableflush",
+                "start": 284,
+                "end": 295
+            },
+            {
+                "name": "csysi_orcfileflush",
+                "start": 301,
+                "end": 331
+            },
+            {
+                "name": "csysi_scorelineflush",
+                "start": 337,
+                "end": 392
+            },
+            {
+                "name": "csysi_scorefileflush",
+                "start": 398,
+                "end": 409
+            },
+            {
+                "name": "csysi_sampleflush",
+                "start": 416,
+                "end": 432
+            },
+            {
+                "name": "csysi_flushconfig",
+                "start": 439,
+                "end": 468
+            },
+            {
+                "name": "csysi_scorelinefill",
+                "start": 474,
+                "end": 675
+            },
+            {
+                "name": "csysi_sampleread",
+                "start": 681,
+                "end": 772
+            },
+            {
+                "name": "csysi_emptycheck",
+                "start": 778,
+                "end": 786
+            },
+            {
+                "name": "csysi_midilinefill",
+                "start": 793,
+                "end": 882
+            },
+            {
+                "name": "csysi_readnewevent",
+                "start": 888,
+                "end": 913
+            },
+            {
+                "name": "csysi_setendtime",
+                "start": 919,
+                "end": 937
+            },
+            {
+                "name": "csysi_fillqueues",
+                "start": 944,
+                "end": 973
+            },
+            {
+                "name": "csysi_openfile",
+                "start": 979,
+                "end": 1043
+            },
+            {
+                "name": "csys_setup",
+                "start": 1049,
+                "end": 1054
+            },
+            {
+                "name": "csys_newdata",
+                "start": 1061,
+                "end": 1128
+            },
+            {
+                "name": "csys_saslevent",
+                "start": 1134,
+                "end": 1237
+            },
+            {
+                "name": "csys_shutdown",
+                "start": 1244,
+                "end": 1247
+            },
+            {
+                "name": "csys_midievent",
+                "start": 1255,
+                "end": 1287
+            }
+        ],
+        "src/lib/csys/coremidi.c": [
+            {
+                "name": "csysi_read_proc",
+                "start": 197,
+                "end": 199
+            },
+            {
+                "name": "csysi_notify_proc",
+                "start": 201,
+                "end": 202
+            },
+            {
+                "name": "csysi_bugrecovery",
+                "start": 204,
+                "end": 205
+            },
+            {
+                "name": "csysi_packet_arblength",
+                "start": 207,
+                "end": 208
+            },
+            {
+                "name": "csys_setup",
+                "start": 218,
+                "end": 368
+            },
+            {
+                "name": "csys_newdata",
+                "start": 374,
+                "end": 420
+            },
+            {
+                "name": "csys_midievent",
+                "start": 426,
+                "end": 526
+            },
+            {
+                "name": "csys_shutdown",
+                "start": 532,
+                "end": 538
+            },
+            {
+                "name": "csysi_packet_shorten",
+                "start": 544,
+                "end": 546
+            },
+            {
+                "name": "csysi_read_proc",
+                "start": 552,
+                "end": 597
+            },
+            {
+                "name": "csysi_notify_proc",
+                "start": 603,
+                "end": 608
+            },
+            {
+                "name": "csysi_packet_shorten",
+                "start": 618,
+                "end": 821
+            },
+            {
+                "name": "csysi_bugrecovery",
+                "start": 827,
+                "end": 833
+            },
+            {
+                "name": "csysi_packet_arblength",
+                "start": 839,
+                "end": 948
+            }
+        ],
+        "src/lib/csys/alsaseq.c": [
+            {
+                "name": "csysi_parse_address",
+                "start": 78,
+                "end": 101
+            },
+            {
+                "name": "csys_setup",
+                "start": 103,
+                "end": 165
+            },
+            {
+                "name": "csys_newdata",
+                "start": 171,
+                "end": 180
+            },
+            {
+                "name": "csys_midievent",
+                "start": 187,
+                "end": 306
+            },
+            {
+                "name": "csys_shutdown",
+                "start": 312,
+                "end": 315
+            },
+            {
+                "name": "csysi_init_maps",
+                "start": 347,
+                "end": 362
+            },
+            {
+                "name": "csysi_read_ext_channel_device",
+                "start": 367,
+                "end": 378
+            },
+            {
+                "name": "csysi_new_ext_channel_device",
+                "start": 391,
+                "end": 421
+            },
+            {
+                "name": "csysi_remove_ext_channel_device",
+                "start": 424,
+                "end": 449
+            }
+        ],
+        "src/lib/csys/alsamidi.c": [
+            {
+                "name": "csys_setup",
+                "start": 81,
+                "end": 95
+            },
+            {
+                "name": "csys_newdata",
+                "start": 101,
+                "end": 123
+            },
+            {
+                "name": "csysi_getbyte",
+                "start": 129,
+                "end": 138
+            },
+            {
+                "name": "csysi_sysflush",
+                "start": 144,
+                "end": 249
+            },
+            {
+                "name": "csys_midievent",
+                "start": 256,
+                "end": 373
+            },
+            {
+                "name": "csys_shutdown",
+                "start": 379,
+                "end": 383
+            }
+        ],
+        "src/lib/csys/ascii.c": [
+            {
+                "name": "csys_setup",
+                "start": 134,
+                "end": 207
+            },
+            {
+                "name": "csys_newdata",
+                "start": 213,
+                "end": 257
+            },
+            {
+                "name": "csys_midievent",
+                "start": 263,
+                "end": 353
+            },
+            {
+                "name": "csys_shutdown",
+                "start": 359,
+                "end": 363
+            },
+            {
+                "name": "csysi_kbdmap_init",
+                "start": 374,
+                "end": 431
+            },
+            {
+                "name": "csysi_signal_handler",
+                "start": 443,
+                "end": 456
+            }
+        ],
+        "src/lib/csys/gliss.c": [
+            {
+                "name": "csys_setup",
+                "start": 63,
+                "end": 67
+            },
+            {
+                "name": "csys_newdata",
+                "start": 73,
+                "end": 91
+            },
+            {
+                "name": "csys_midievent",
+                "start": 98,
+                "end": 124
+            },
+            {
+                "name": "csys_saslevent",
+                "start": 131,
+                "end": 168
+            },
+            {
+                "name": "csys_shutdown",
+                "start": 175,
+                "end": 178
+            }
+        ],
+        "src/lib/csys/freebsdmidi.c": [
+            {
+                "name": "csysi_overrun_handler",
+                "start": 114,
+                "end": 144
+            },
+            {
+                "name": "csys_setup",
+                "start": 151,
+                "end": 190
+            },
+            {
+                "name": "csysi_midiparseover",
+                "start": 196,
+                "end": 203
+            },
+            {
+                "name": "csys_newdata",
+                "start": 209,
+                "end": 278
+            },
+            {
+                "name": "csysi_getbyte",
+                "start": 284,
+                "end": 321
+            },
+            {
+                "name": "csysi_sysflush",
+                "start": 327,
+                "end": 432
+            },
+            {
+                "name": "csys_midievent",
+                "start": 439,
+                "end": 556
+            },
+            {
+                "name": "csys_shutdown",
+                "start": 563,
+                "end": 580
+            }
+        ],
+        "src/lib/csys/linmidi.c": [
+            {
+                "name": "csysi_overrun_handler",
+                "start": 114,
+                "end": 144
+            },
+            {
+                "name": "csys_setup",
+                "start": 151,
+                "end": 190
+            },
+            {
+                "name": "csysi_midiparseover",
+                "start": 196,
+                "end": 203
+            },
+            {
+                "name": "csys_newdata",
+                "start": 209,
+                "end": 276
+            },
+            {
+                "name": "csysi_getbyte",
+                "start": 282,
+                "end": 319
+            },
+            {
+                "name": "csysi_sysflush",
+                "start": 325,
+                "end": 430
+            },
+            {
+                "name": "csys_midievent",
+                "start": 437,
+                "end": 554
+            },
+            {
+                "name": "csys_shutdown",
+                "start": 561,
+                "end": 578
+            }
+        ],
+        "src/lib/csys/aucontrol.c": [
+            {
+                "name": "csys_setup",
+                "start": 126,
+                "end": 154
+            },
+            {
+                "name": "csys_newdata",
+                "start": 160,
+                "end": 195
+            },
+            {
+                "name": "csys_saslevent",
+                "start": 238,
+                "end": 263
+            },
+            {
+                "name": "csys_shutdown",
+                "start": 270,
+                "end": 296
+            },
+            {
+                "name": "csysi_aucontrol_saslevent_read",
+                "start": 359,
+                "end": 401
+            }
+        ],
+        "src/lib/psys/pa_hosthdr.c": [
+            {
+                "name": "Pa_CallConvertInt16",
+                "start": 120,
+                "end": 122
+            },
+            {
+                "name": "Pa_CallConvertFloat32",
+                "start": 124,
+                "end": 126
+            },
+            {
+                "name": "PaHost_ValidateSampleRate",
+                "start": 131,
+                "end": 132
+            },
+            {
+                "name": "PaHost_FindClosestTableEntry",
+                "start": 133,
+                "end": 134
+            }
+        ],
+        "src/lib/psys/pa_porthdr.c": [
+            {
+                "name": "Pa_OpenStream",
+                "start": 306,
+                "end": 320
+            },
+            {
+                "name": "Pa_OpenDefaultStream",
+                "start": 335,
+                "end": 343
+            }
+        ],
+        "src/lib/psys/pa_win_wmme.c": [
+            {
+                "name": "Pa_StartUsageCalculation",
+                "start": 168,
+                "end": 174
+            },
+            {
+                "name": "Pa_EndUsageCalculation",
+                "start": 175,
+                "end": 193
+            },
+            {
+                "name": "Pa_QueryDevices",
+                "start": 195,
+                "end": 211
+            },
+            {
+                "name": "Pa_GetHostError",
+                "start": 213,
+                "end": 216
+            },
+            {
+                "name": "Pa_CountDevices",
+                "start": 218,
+                "end": 222
+            },
+            {
+                "name": "Pa_GetDeviceInfo",
+                "start": 230,
+                "end": 375
+            },
+            {
+                "name": "PaHost_GetEnvDefaultDeviceID",
+                "start": 389,
+                "end": 401
+            },
+            {
+                "name": "Pa_MaybeQueryDevices",
+                "start": 402,
+                "end": 409
+            },
+            {
+                "name": "Pa_GetDefaultInputDeviceID",
+                "start": 413,
+                "end": 424
+            },
+            {
+                "name": "Pa_GetDefaultOutputDeviceID",
+                "start": 425,
+                "end": 436
+            },
+            {
+                "name": "PaHost_Init",
+                "start": 440,
+                "end": 446
+            },
+            {
+                "name": "Pa_TimeSlice",
+                "start": 452,
+                "end": 574
+            },
+            {
+                "name": "PaHost_BackgroundManager",
+                "start": 576,
+                "end": 632
+            }
+        ],
+        "src/lib/psys/pa_dswrap.c": [
+            {
+                "name": "DSW_Term",
+                "start": 46,
+                "end": 73
+            },
+            {
+                "name": "DSW_Init",
+                "start": 75,
+                "end": 79
+            },
+            {
+                "name": "DSW_InitOutputDevice",
+                "start": 81,
+                "end": 87
+            },
+            {
+                "name": "DSW_InitOutputBuffer",
+                "start": 89,
+                "end": 179
+            },
+            {
+                "name": "DSW_StartOutput",
+                "start": 181,
+                "end": 204
+            },
+            {
+                "name": "DSW_StopOutput",
+                "start": 206,
+                "end": 215
+            },
+            {
+                "name": "DSW_QueryOutputSpace",
+                "start": 217,
+                "end": 283
+            },
+            {
+                "name": "DSW_ZeroEmptySpace",
+                "start": 285,
+                "end": 313
+            },
+            {
+                "name": "DSW_WriteBlock",
+                "start": 315,
+                "end": 339
+            },
+            {
+                "name": "DSW_GetOutputStatus",
+                "start": 341,
+                "end": 348
+            }
+        ],
+        "src/lib/psys/pa_dshdr.c": [
+            {
+                "name": "DSW_InitOutputBuffer",
+                "start": 77,
+                "end": 78
+            },
+            {
+                "name": "DSW_InitInputBuffer",
+                "start": 87,
+                "end": 88
+            }
+        ],
+        "src/lib/psys/pa_unix_oss.c": [
+            {
+                "name": "Pa_StartUsageCalculation",
+                "start": 179,
+                "end": 186
+            },
+            {
+                "name": "SubtractTime_AminusB",
+                "start": 188,
+                "end": 194
+            },
+            {
+                "name": "Pa_EndUsageCalculation",
+                "start": 200,
+                "end": 221
+            },
+            {
+                "name": "Pa_QueryDevice",
+                "start": 229,
+                "end": 355
+            },
+            {
+                "name": "Pa_QueryDevices",
+                "start": 362,
+                "end": 423
+            },
+            {
+                "name": "Pa_CountDevices",
+                "start": 426,
+                "end": 441
+            },
+            {
+                "name": "Pa_GetInternalDevice",
+                "start": 443,
+                "end": 454
+            },
+            {
+                "name": "Pa_GetDeviceInfo",
+                "start": 457,
+                "end": 463
+            },
+            {
+                "name": "Pa_MaybeQueryDevices",
+                "start": 465,
+                "end": 472
+            },
+            {
+                "name": "Pa_GetDefaultInputDeviceID",
+                "start": 474,
+                "end": 478
+            },
+            {
+                "name": "Pa_GetDefaultOutputDeviceID",
+                "start": 480,
+                "end": 483
+            },
+            {
+                "name": "PaHost_Init",
+                "start": 489,
+                "end": 492
+            },
+            {
+                "name": "Pa_AudioThreadProc",
+                "start": 495,
+                "end": 556
+            },
+            {
+                "name": "Pa_SetupDeviceFormat",
+                "start": 559,
+                "end": 606
+            },
+            {
+                "name": "CalcHigherLogTwo",
+                "start": 608,
+                "end": 613
+            },
+            {
+                "name": "Pa_SetLatency",
+                "start": 618,
+                "end": 648
+            },
+            {
+                "name": "Pa_GetMinNumBuffers",
+                "start": 661,
+                "end": 677
+            },
+            {
+                "name": "PaHost_OpenStream",
+                "start": 680,
+                "end": 807
+            },
+            {
+                "name": "PaHost_StartOutput",
+                "start": 810,
+                "end": 813
+            },
+            {
+                "name": "PaHost_StartInput",
+                "start": 816,
+                "end": 819
+            },
+            {
+                "name": "PaHost_StartEngine",
+                "start": 822,
+                "end": 850
+            },
+            {
+                "name": "PaHost_StopEngine",
+                "start": 853,
+                "end": 891
+            },
+            {
+                "name": "PaHost_StopInput",
+                "start": 894,
+                "end": 897
+            },
+            {
+                "name": "PaHost_StopOutput",
+                "start": 900,
+                "end": 903
+            },
+            {
+                "name": "PaHost_CloseStream",
+                "start": 906,
+                "end": 954
+            },
+            {
+                "name": "PaHost_Term",
+                "start": 957,
+                "end": 971
+            },
+            {
+                "name": "Pa_Sleep",
+                "start": 976,
+                "end": 987
+            },
+            {
+                "name": "PaHost_AllocateFastMemory",
+                "start": 995,
+                "end": 1000
+            },
+            {
+                "name": "PaHost_FreeFastMemory",
+                "start": 1006,
+                "end": 1009
+            },
+            {
+                "name": "PaHost_StreamActive",
+                "start": 1013,
+                "end": 1020
+            },
+            {
+                "name": "Pa_StreamTime",
+                "start": 1023,
+                "end": 1031
+            },
+            {
+                "name": "Pa_GetHostError",
+                "start": 1034,
+                "end": 1037
+            }
+        ],
+        "src/lib/psys/pa_dsound.c": [
+            {
+                "name": "Pa_StartUsageCalculation",
+                "start": 117,
+                "end": 123
+            },
+            {
+                "name": "Pa_EndUsageCalculation",
+                "start": 124,
+                "end": 142
+            },
+            {
+                "name": "Pa_QueryDevices",
+                "start": 144,
+                "end": 169
+            },
+            {
+                "name": "Pa_GetHostError",
+                "start": 171,
+                "end": 174
+            }
+        ],
+        "src/lib/psys/pa_lib.c": [
+            {
+                "name": "PaHost_FindClosestTableEntry",
+                "start": 82,
+                "end": 97
+            },
+            {
+                "name": "PaHost_ValidateSampleRate",
+                "start": 102,
+                "end": 131
+            },
+            {
+                "name": "Pa_OpenStream",
+                "start": 134,
+                "end": 302
+            },
+            {
+                "name": "Pa_OpenDefaultStream",
+                "start": 306,
+                "end": 323
+            },
+            {
+                "name": "Pa_CloseStream",
+                "start": 326,
+                "end": 343
+            },
+            {
+                "name": "Pa_StartStream",
+                "start": 346,
+                "end": 378
+            },
+            {
+                "name": "Pa_StopStream",
+                "start": 381,
+                "end": 384
+            },
+            {
+                "name": "Pa_AbortStream",
+                "start": 387,
+                "end": 390
+            },
+            {
+                "name": "Pa_KillStream",
+                "start": 393,
+                "end": 428
+            },
+            {
+                "name": "Pa_StreamActive",
+                "start": 431,
+                "end": 437
+            },
+            {
+                "name": "Pa_GetErrorText",
+                "start": 440,
+                "end": 464
+            },
+            {
+                "name": "Pa_GetCPULoad",
+                "start": 473,
+                "end": 479
+            },
+            {
+                "name": "Pa_TriangularDither",
+                "start": 487,
+                "end": 502
+            },
+            {
+                "name": "Pa_CallConvertInt16",
+                "start": 511,
+                "end": 731
+            },
+            {
+                "name": "Pa_CallConvertFloat32",
+                "start": 741,
+                "end": 780
+            },
+            {
+                "name": "Pa_Initialize",
+                "start": 783,
+                "end": 788
+            },
+            {
+                "name": "Pa_Terminate",
+                "start": 790,
+                "end": 801
+            },
+            {
+                "name": "Pa_GetSampleSize",
+                "start": 804,
+                "end": 834
+            }
+        ],
+        "src/lib/csrc/runspt.c": [
+            {
+                "name": "picola",
+                "start": 42,
+                "end": 240
+            }
+        ],
+        "src/lib/csrc/runtime.c": [
+            {
+                "name": "main",
+                "start": 41,
+                "end": 88
+            }
+        ],
+        "src/lib/csrc/tsync.c": [
+            {
+                "name": "ksync",
+                "start": 73,
+                "end": 124
+            },
+            {
+                "name": "ksyncinit",
+                "start": 130,
+                "end": 135
+            }
+        ],
+        "src/lib/csrc/callback.c": [
+            {
+                "name": "main",
+                "start": 188,
+                "end": 202
+            }
+        ],
+        "src/lib/csrc/runtimef.c": [
+            {
+                "name": "main",
+                "start": 40,
+                "end": 86
+            }
+        ],
+        "src/lib/csrc/robust.c": [
+            {
+                "name": "rread",
+                "start": 42,
+                "end": 86
+            },
+            {
+                "name": "rwrite",
+                "start": 90,
+                "end": 127
+            }
+        ],
+        "src/lib/csrc/tgen.c": [
+            {
+                "name": "tgen_init",
+                "start": 40,
+                "end": 69
+            },
+            {
+                "name": "tgen_buzz",
+                "start": 72,
+                "end": 135
+            },
+            {
+                "name": "tgen_concat_global",
+                "start": 138,
+                "end": 182
+            },
+            {
+                "name": "tgen_cubicseg",
+                "start": 184,
+                "end": 268
+            },
+            {
+                "name": "tgen_data",
+                "start": 270,
+                "end": 292
+            },
+            {
+                "name": "tgen_destroy",
+                "start": 294,
+                "end": 307
+            },
+            {
+                "name": "tgen_empty",
+                "start": 309,
+                "end": 313
+            },
+            {
+                "name": "tgen_expseg",
+                "start": 316,
+                "end": 393
+            },
+            {
+                "name": "tgen_harm",
+                "start": 396,
+                "end": 416
+            },
+            {
+                "name": "tgen_harm_phase",
+                "start": 418,
+                "end": 442
+            },
+            {
+                "name": "tgen_lineseg",
+                "start": 445,
+                "end": 514
+            },
+            {
+                "name": "tgen_periodic",
+                "start": 516,
+                "end": 539
+            },
+            {
+                "name": "tgen_polynomial",
+                "start": 542,
+                "end": 570
+            },
+            {
+                "name": "tgen_random",
+                "start": 578,
+                "end": 652
+            },
+            {
+                "name": "tgen_sample",
+                "start": 668,
+                "end": 771
+            },
+            {
+                "name": "tgen_spline",
+                "start": 780,
+                "end": 870
+            },
+            {
+                "name": "tgen_step",
+                "start": 872,
+                "end": 925
+            },
+            {
+                "name": "tgen_bessel",
+                "start": 928,
+                "end": 946
+            },
+            {
+                "name": "tgen_window",
+                "start": 956,
+                "end": 1020
+            }
+        ],
+        "src/lib/csrc/psync.c": [
+            {
+                "name": "ksync",
+                "start": 78,
+                "end": 116
+            },
+            {
+                "name": "ksyncinit",
+                "start": 122,
+                "end": 126
+            }
+        ],
+        "src/lib/nsys/net_sfront.c": [
+            {
+                "name": "nsys_newdata",
+                "start": 47,
+                "end": 553
+            },
+            {
+                "name": "nsys_midievent",
+                "start": 560,
+                "end": 624
+            },
+            {
+                "name": "nsys_sysex_parse",
+                "start": 630,
+                "end": 673
+            },
+            {
+                "name": "nsys_midisend",
+                "start": 680,
+                "end": 885
+            },
+            {
+                "name": "nsys_endcycle",
+                "start": 891,
+                "end": 901
+            }
+        ],
+        "src/lib/nsys/net_rtplib.c": [
+            {
+                "name": "nsys_setup",
+                "start": 52,
+                "end": 342
+            },
+            {
+                "name": "nsys_shutdown",
+                "start": 349,
+                "end": 391
+            },
+            {
+                "name": "nsys_netin_addsrc",
+                "start": 402,
+                "end": 471
+            },
+            {
+                "name": "nsys_netin_rtpstats",
+                "start": 477,
+                "end": 642
+            },
+            {
+                "name": "nsys_warning",
+                "start": 648,
+                "end": 676
+            },
+            {
+                "name": "nsys_status",
+                "start": 682,
+                "end": 692
+            },
+            {
+                "name": "nsys_terminate_error",
+                "start": 698,
+                "end": 711
+            },
+            {
+                "name": "nsys_netin_ptypevalid",
+                "start": 722,
+                "end": 733
+            },
+            {
+                "name": "nsys_netin_ptypeset",
+                "start": 739,
+                "end": 752
+            },
+            {
+                "name": "nsys_netin_newrecv",
+                "start": 758,
+                "end": 774
+            },
+            {
+                "name": "nsys_netin_newrecvsys",
+                "start": 779,
+                "end": 794
+            },
+            {
+                "name": "nsys_find_clientip",
+                "start": 800,
+                "end": 868
+            }
+        ],
+        "src/lib/nsys/net_rtcplib.c": [
+            {
+                "name": "nsys_netout_rtcptime",
+                "start": 53,
+                "end": 68
+            },
+            {
+                "name": "nsys_netin_rtcp",
+                "start": 74,
+                "end": 271
+            },
+            {
+                "name": "nsys_netout_rtcp_initpackets",
+                "start": 277,
+                "end": 369
+            },
+            {
+                "name": "nsys_netin_clear_mset",
+                "start": 375,
+                "end": 388
+            },
+            {
+                "name": "nsys_netout_excheck",
+                "start": 399,
+                "end": 515
+            },
+            {
+                "name": "nsys_netout_rtcpreport",
+                "start": 521,
+                "end": 688
+            },
+            {
+                "name": "nsys_netout_rtcpsend",
+                "start": 693,
+                "end": 731
+            },
+            {
+                "name": "nsys_netout_keepalive",
+                "start": 737,
+                "end": 748
+            },
+            {
+                "name": "nsys_netin_rtcp_display",
+                "start": 755,
+                "end": 935
+            },
+            {
+                "name": "nsys_netin_newcname",
+                "start": 943,
+                "end": 980
+            },
+            {
+                "name": "nsys_netin_bye",
+                "start": 987,
+                "end": 1006
+            },
+            {
+                "name": "nsys_netout_rtcp_initrr",
+                "start": 1014,
+                "end": 1038
+            },
+            {
+                "name": "nsys_netout_rtcp_initsr",
+                "start": 1044,
+                "end": 1068
+            },
+            {
+                "name": "nsys_netout_rtcp_initsdes",
+                "start": 1074,
+                "end": 1107
+            },
+            {
+                "name": "nsys_netout_rtcp_initbye",
+                "start": 1113,
+                "end": 1135
+            },
+            {
+                "name": "nsys_delete_ssrc",
+                "start": 1145,
+                "end": 1236
+            },
+            {
+                "name": "nsys_harvest_ssrc",
+                "start": 1244,
+                "end": 1298
+            },
+            {
+                "name": "nsys_late_windowcheck",
+                "start": 1304,
+                "end": 1325
+            },
+            {
+                "name": "nsys_netin_rtcp_trunc",
+                "start": 1331,
+                "end": 1355
+            },
+            {
+                "name": "nsys_netin_latenotes_open",
+                "start": 1361,
+                "end": 1393
+            }
+        ],
+        "src/lib/nsys/net_crypto.c": [
+            {
+                "name": "nsys_md5_init",
+                "start": 112,
+                "end": 120
+            },
+            {
+                "name": "nsys_md5_process",
+                "start": 126,
+                "end": 212
+            },
+            {
+                "name": "nsys_md5_append",
+                "start": 228,
+                "end": 275
+            },
+            {
+                "name": "nsys_md5_finish",
+                "start": 281,
+                "end": 302
+            },
+            {
+                "name": "nsys_md5",
+                "start": 314,
+                "end": 323
+            },
+            {
+                "name": "nsys_hmac_md5",
+                "start": 330,
+                "end": 359
+            },
+            {
+                "name": "nsys_digest_base64",
+                "start": 379,
+                "end": 399
+            },
+            {
+                "name": "nsys_digest_syntaxcheck",
+                "start": 405,
+                "end": 422
+            }
+        ],
+        "src/lib/nsys/net_include.c": [
+            {
+                "name": "nsys_netin_reply",
+                "start": 2051,
+                "end": 2052
+            },
+            {
+                "name": "nsys_netin_invite",
+                "start": 2054,
+                "end": 2055
+            },
+            {
+                "name": "nsys_createsip",
+                "start": 2057,
+                "end": 2058
+            },
+            {
+                "name": "nsys_sendsip",
+                "start": 2059,
+                "end": 2060
+            },
+            {
+                "name": "nsys_netin_readmethod",
+                "start": 2062,
+                "end": 2063
+            },
+            {
+                "name": "nsys_netin_ack",
+                "start": 2064,
+                "end": 2065
+            },
+            {
+                "name": "nsys_netin_replyparse",
+                "start": 2066,
+                "end": 2068
+            },
+            {
+                "name": "nsys_netin_redirect",
+                "start": 2069,
+                "end": 2070
+            },
+            {
+                "name": "nsys_netin_set_marray",
+                "start": 2075,
+                "end": 2076
+            },
+            {
+                "name": "nsys_netin_payset",
+                "start": 2079,
+                "end": 2080
+            },
+            {
+                "name": "nsys_netin_noreplay",
+                "start": 2081,
+                "end": 2082
+            },
+            {
+                "name": "nsys_netin_addsrc",
+                "start": 2092,
+                "end": 2093
+            },
+            {
+                "name": "nsys_netin_rtcp",
+                "start": 2108,
+                "end": 2109
+            },
+            {
+                "name": "nsys_netin_rtcp_display",
+                "start": 2120,
+                "end": 2121
+            },
+            {
+                "name": "nsys_netin_clear_mset",
+                "start": 2124,
+                "end": 2125
+            },
+            {
+                "name": "nsys_sysex_parse",
+                "start": 2139,
+                "end": 2141
+            },
+            {
+                "name": "nsys_netout_journal_addstate",
+                "start": 2149,
+                "end": 2151
+            },
+            {
+                "name": "nsys_netout_journal_addhistory",
+                "start": 2153,
+                "end": 2155
+            },
+            {
+                "name": "nsys_netout_journal_addprogram",
+                "start": 2165,
+                "end": 2166
+            },
+            {
+                "name": "nsys_netout_journal_addcontrol",
+                "start": 2168,
+                "end": 2170
+            },
+            {
+                "name": "nsys_netout_journal_addparameter",
+                "start": 2172,
+                "end": 2174
+            },
+            {
+                "name": "nsys_netout_journal_addpwheel",
+                "start": 2176,
+                "end": 2178
+            },
+            {
+                "name": "nsys_netout_journal_addnoteoff",
+                "start": 2180,
+                "end": 2182
+            },
+            {
+                "name": "nsys_netout_journal_addnoteon",
+                "start": 2184,
+                "end": 2186
+            },
+            {
+                "name": "nsys_netout_journal_addnoteon_extras",
+                "start": 2188,
+                "end": 2189
+            },
+            {
+                "name": "nsys_netout_journal_addnoteoff_extras",
+                "start": 2191,
+                "end": 2193
+            },
+            {
+                "name": "nsys_netout_journal_addctouch",
+                "start": 2195,
+                "end": 2196
+            },
+            {
+                "name": "nsys_netout_journal_addptouch",
+                "start": 2198,
+                "end": 2200
+            },
+            {
+                "name": "nsys_netout_journal_addsc",
+                "start": 2205,
+                "end": 2206
+            },
+            {
+                "name": "nsys_netout_journal_addsequence",
+                "start": 2211,
+                "end": 2212
+            },
+            {
+                "name": "nsys_netout_journal_addsysex",
+                "start": 2216,
+                "end": 2217
+            },
+            {
+                "name": "nsys_netout_journal_trimchapter",
+                "start": 2219,
+                "end": 2220
+            },
+            {
+                "name": "nsys_netout_journal_trimpartcontrol",
+                "start": 2226,
+                "end": 2227
+            },
+            {
+                "name": "nsys_netout_journal_trimpartparams",
+                "start": 2231,
+                "end": 2232
+            },
+            {
+                "name": "nsys_netout_journal_trimpartnote",
+                "start": 2238,
+                "end": 2239
+            },
+            {
+                "name": "nsys_netout_journal_trimpartextras",
+                "start": 2243,
+                "end": 2244
+            },
+            {
+                "name": "nsys_netout_journal_trimpartptouch",
+                "start": 2250,
+                "end": 2251
+            },
+            {
+                "name": "nsys_netout_journal_clear_clog",
+                "start": 2275,
+                "end": 2276
+            },
+            {
+                "name": "nsys_netin_journal_recovery",
+                "start": 2282,
+                "end": 2285
+            },
+            {
+                "name": "nsys_netin_journal_trackstate",
+                "start": 2287,
+                "end": 2289
+            },
+            {
+                "name": "nsys_netin_journal_addcmd_three",
+                "start": 2291,
+                "end": 2294
+            },
+            {
+                "name": "nsys_netin_journal_addcmd_two",
+                "start": 2296,
+                "end": 2298
+            },
+            {
+                "name": "nsys_netin_journal_addcmd_one",
+                "start": 2300,
+                "end": 2301
+            },
+            {
+                "name": "nsys_netin_journal_trans",
+                "start": 2303,
+                "end": 2307
+            },
+            {
+                "name": "nsys_netin_journal_button_trans",
+                "start": 2309,
+                "end": 2313
+            },
+            {
+                "name": "nsys_netin_jrec_program",
+                "start": 2317,
+                "end": 2320
+            },
+            {
+                "name": "nsys_netin_jrec_control",
+                "start": 2322,
+                "end": 2325
+            },
+            {
+                "name": "nsys_netin_jrec_param",
+                "start": 2327,
+                "end": 2331
+            },
+            {
+                "name": "nsys_netin_jrec_wheel",
+                "start": 2333,
+                "end": 2336
+            },
+            {
+                "name": "nsys_netin_jrec_notelog",
+                "start": 2338,
+                "end": 2343
+            },
+            {
+                "name": "nsys_netin_jrec_bitfield",
+                "start": 2345,
+                "end": 2349
+            },
+            {
+                "name": "nsys_netin_jrec_ctouch",
+                "start": 2351,
+                "end": 2354
+            },
+            {
+                "name": "nsys_netin_jrec_ptouch",
+                "start": 2356,
+                "end": 2359
+            },
+            {
+                "name": "nsys_netin_jrec_reset",
+                "start": 2361,
+                "end": 2363
+            },
+            {
+                "name": "nsys_netin_jrec_tune",
+                "start": 2365,
+                "end": 2367
+            },
+            {
+                "name": "nsys_netin_jrec_song",
+                "start": 2369,
+                "end": 2371
+            },
+            {
+                "name": "nsys_netin_jrec_scj",
+                "start": 2373,
+                "end": 2375
+            },
+            {
+                "name": "nsys_netin_jrec_sck",
+                "start": 2377,
+                "end": 2379
+            },
+            {
+                "name": "nsys_netin_jrec_rty",
+                "start": 2381,
+                "end": 2383
+            },
+            {
+                "name": "nsys_netin_jrec_rtz",
+                "start": 2385,
+                "end": 2387
+            },
+            {
+                "name": "nsys_netin_jrec_sense",
+                "start": 2389,
+                "end": 2391
+            },
+            {
+                "name": "nsys_netin_jrec_sequence",
+                "start": 2393,
+                "end": 2395
+            },
+            {
+                "name": "nsys_netin_jrec_timecode",
+                "start": 2397,
+                "end": 2399
+            },
+            {
+                "name": "nsys_netin_jrec_sysex",
+                "start": 2401,
+                "end": 2403
+            },
+            {
+                "name": "nsys_netin_track_timecode",
+                "start": 2405,
+                "end": 2406
+            },
+            {
+                "name": "nsys_md5",
+                "start": 2412,
+                "end": 2413
+            },
+            {
+                "name": "nsys_hmac_md5",
+                "start": 2415,
+                "end": 2416
+            },
+            {
+                "name": "nsys_digest_base64",
+                "start": 2418,
+                "end": 2419
+            }
+        ],
+        "src/lib/nsys/net_jsend.c": [
+            {
+                "name": "nsys_netin_journal_create",
+                "start": 52,
+                "end": 374
+            },
+            {
+                "name": "nsys_netout_journal_addstate",
+                "start": 380,
+                "end": 532
+            },
+            {
+                "name": "nsys_netout_journal_addhistory",
+                "start": 538,
+                "end": 583
+            },
+            {
+                "name": "nsys_netin_journal_trimstate",
+                "start": 589,
+                "end": 826
+            },
+            {
+                "name": "nsys_netout_guard_tick",
+                "start": 833,
+                "end": 845
+            },
+            {
+                "name": "nsys_netout_midistate_init",
+                "start": 852,
+                "end": 955
+            },
+            {
+                "name": "nsys_netout_journal_addprogram",
+                "start": 966,
+                "end": 994
+            },
+            {
+                "name": "nsys_netout_journal_addcontrol",
+                "start": 1001,
+                "end": 1201
+            },
+            {
+                "name": "nsys_netout_journal_addparameter",
+                "start": 1208,
+                "end": 1589
+            },
+            {
+                "name": "nsys_netout_journal_addpwheel",
+                "start": 1596,
+                "end": 1620
+            },
+            {
+                "name": "nsys_netout_journal_addnoteoff",
+                "start": 1626,
+                "end": 1747
+            },
+            {
+                "name": "nsys_netout_journal_addnoteon",
+                "start": 1753,
+                "end": 1886
+            },
+            {
+                "name": "nsys_netout_journal_addnoteon_extras",
+                "start": 1892,
+                "end": 2087
+            },
+            {
+                "name": "nsys_netout_journal_addnoteoff_extras",
+                "start": 2093,
+                "end": 2343
+            },
+            {
+                "name": "nsys_netout_journal_addctouch",
+                "start": 2349,
+                "end": 2373
+            },
+            {
+                "name": "nsys_netout_journal_addptouch",
+                "start": 2379,
+                "end": 2460
+            },
+            {
+                "name": "nsys_netout_journal_addreset",
+                "start": 2466,
+                "end": 2530
+            },
+            {
+                "name": "nsys_netout_journal_addtune",
+                "start": 2536,
+                "end": 2597
+            },
+            {
+                "name": "nsys_netout_journal_addsong",
+                "start": 2603,
+                "end": 2663
+            },
+            {
+                "name": "nsys_netout_journal_addsc",
+                "start": 2669,
+                "end": 2768
+            },
+            {
+                "name": "nsys_netout_journal_addrt",
+                "start": 2775,
+                "end": 2840
+            },
+            {
+                "name": "nsys_netout_journal_addsense",
+                "start": 2846,
+                "end": 2885
+            },
+            {
+                "name": "nsys_netout_journal_addsequence",
+                "start": 2892,
+                "end": 3037
+            },
+            {
+                "name": "nsys_netout_journal_addtimecode",
+                "start": 3043,
+                "end": 3304
+            },
+            {
+                "name": "nsys_netout_journal_addsysex",
+                "start": 3310,
+                "end": 3463
+            },
+            {
+                "name": "nsys_netout_journal_trimchapter",
+                "start": 3474,
+                "end": 3562
+            },
+            {
+                "name": "nsys_netout_journal_trimprogram",
+                "start": 3568,
+                "end": 3574
+            },
+            {
+                "name": "nsys_netout_journal_trimallcontrol",
+                "start": 3581,
+                "end": 3597
+            },
+            {
+                "name": "nsys_netout_journal_trimpartcontrol",
+                "start": 3603,
+                "end": 3641
+            },
+            {
+                "name": "nsys_netout_journal_trimallparams",
+                "start": 3647,
+                "end": 3659
+            },
+            {
+                "name": "nsys_netout_journal_trimpartparams",
+                "start": 3665,
+                "end": 3748
+            },
+            {
+                "name": "nsys_netout_journal_trimpwheel",
+                "start": 3754,
+                "end": 3760
+            },
+            {
+                "name": "nsys_netout_journal_trimallnote",
+                "start": 3766,
+                "end": 3796
+            },
+            {
+                "name": "nsys_netout_journal_trimpartnote",
+                "start": 3802,
+                "end": 3880
+            },
+            {
+                "name": "nsys_netout_journal_trimallextras",
+                "start": 3886,
+                "end": 3907
+            },
+            {
+                "name": "nsys_netout_journal_trimpartextras",
+                "start": 3913,
+                "end": 3960
+            },
+            {
+                "name": "nsys_netout_journal_trimctouch",
+                "start": 3966,
+                "end": 3972
+            },
+            {
+                "name": "nsys_netout_journal_trimallptouch",
+                "start": 3978,
+                "end": 3994
+            },
+            {
+                "name": "nsys_netout_journal_trimpartptouch",
+                "start": 4000,
+                "end": 4026
+            },
+            {
+                "name": "nsys_netout_journal_trimsystem",
+                "start": 4032,
+                "end": 4083
+            },
+            {
+                "name": "nsys_netout_journal_trimsimple",
+                "start": 4089,
+                "end": 4128
+            },
+            {
+                "name": "nsys_netout_journal_trimreset",
+                "start": 4134,
+                "end": 4154
+            },
+            {
+                "name": "nsys_netout_journal_trimtune",
+                "start": 4160,
+                "end": 4181
+            },
+            {
+                "name": "nsys_netout_journal_trimsong",
+                "start": 4187,
+                "end": 4199
+            },
+            {
+                "name": "nsys_netout_journal_trimscj",
+                "start": 4205,
+                "end": 4216
+            },
+            {
+                "name": "nsys_netout_journal_trimsck",
+                "start": 4222,
+                "end": 4233
+            },
+            {
+                "name": "nsys_netout_journal_trimrty",
+                "start": 4239,
+                "end": 4250
+            },
+            {
+                "name": "nsys_netout_journal_trimrtz",
+                "start": 4256,
+                "end": 4267
+            },
+            {
+                "name": "nsys_netout_journal_trimsense",
+                "start": 4273,
+                "end": 4282
+            },
+            {
+                "name": "nsys_netout_journal_trimsequence",
+                "start": 4288,
+                "end": 4300
+            },
+            {
+                "name": "nsys_netout_journal_trimtimecode",
+                "start": 4306,
+                "end": 4332
+            },
+            {
+                "name": "nsys_netout_journal_trimparttimecode",
+                "start": 4338,
+                "end": 4354
+            },
+            {
+                "name": "nsys_netout_journal_trimsysex",
+                "start": 4361,
+                "end": 4385
+            },
+            {
+                "name": "nsys_netout_journal_trimpartsysex",
+                "start": 4391,
+                "end": 4421
+            },
+            {
+                "name": "nsys_netout_journal_changecheck",
+                "start": 4431,
+                "end": 4442
+            },
+            {
+                "name": "nsys_netout_journal_clear_nactive",
+                "start": 4448,
+                "end": 4462
+            },
+            {
+                "name": "nsys_netout_journal_clear_cactive",
+                "start": 4468,
+                "end": 4516
+            },
+            {
+                "name": "nsys_netout_journal_clear_active",
+                "start": 4522,
+                "end": 4532
+            }
+        ],
+        "src/lib/nsys/net_siplib.c": [
+            {
+                "name": "nsys_initsip",
+                "start": 51,
+                "end": 85
+            },
+            {
+                "name": "nsys_netin_reply",
+                "start": 91,
+                "end": 265
+            },
+            {
+                "name": "nsys_netin_invite",
+                "start": 272,
+                "end": 461
+            },
+            {
+                "name": "nsys_sip_shutdown",
+                "start": 467,
+                "end": 552
+            },
+            {
+                "name": "nsys_createsip",
+                "start": 564,
+                "end": 776
+            },
+            {
+                "name": "nsys_netin_readmethod",
+                "start": 782,
+                "end": 896
+            },
+            {
+                "name": "nsys_netin_ack",
+                "start": 903,
+                "end": 957
+            },
+            {
+                "name": "nsys_netin_replyparse",
+                "start": 963,
+                "end": 1018
+            },
+            {
+                "name": "nsys_netin_redirect",
+                "start": 1024,
+                "end": 1086
+            },
+            {
+                "name": "nsys_sendsip",
+                "start": 1096,
+                "end": 1119
+            },
+            {
+                "name": "nsys_netin_sipaddr",
+                "start": 1126,
+                "end": 1155
+            },
+            {
+                "name": "nsys_netin_siporigin",
+                "start": 1161,
+                "end": 1189
+            },
+            {
+                "name": "nsys_netin_make_marray",
+                "start": 1195,
+                "end": 1228
+            },
+            {
+                "name": "nsys_netin_set_marray",
+                "start": 1235,
+                "end": 1267
+            },
+            {
+                "name": "nsys_netin_payvalid",
+                "start": 1274,
+                "end": 1315
+            },
+            {
+                "name": "nsys_netin_payset",
+                "start": 1321,
+                "end": 1338
+            },
+            {
+                "name": "nsys_netin_noreplay",
+                "start": 1344,
+                "end": 1366
+            }
+        ],
+        "src/lib/nsys/net_jrecv.c": [
+            {
+                "name": "nsys_netin_journal_recovery",
+                "start": 54,
+                "end": 536
+            },
+            {
+                "name": "nsys_netin_journal_trackstate",
+                "start": 542,
+                "end": 903
+            },
+            {
+                "name": "nsys_netin_jrec_program",
+                "start": 915,
+                "end": 993
+            },
+            {
+                "name": "nsys_netin_jrec_control",
+                "start": 999,
+                "end": 1144
+            },
+            {
+                "name": "nsys_netin_jrec_param",
+                "start": 1150,
+                "end": 1487
+            },
+            {
+                "name": "nsys_netin_jrec_wheel",
+                "start": 1494,
+                "end": 1524
+            },
+            {
+                "name": "nsys_netin_jrec_notelog",
+                "start": 1533,
+                "end": 1672
+            },
+            {
+                "name": "nsys_netin_jrec_bitfield",
+                "start": 1680,
+                "end": 1736
+            },
+            {
+                "name": "nsys_netin_jrec_ctouch",
+                "start": 1742,
+                "end": 1766
+            },
+            {
+                "name": "nsys_netin_jrec_ptouch",
+                "start": 1772,
+                "end": 1809
+            },
+            {
+                "name": "nsys_netin_jrec_reset",
+                "start": 1816,
+                "end": 1840
+            },
+            {
+                "name": "nsys_netin_jrec_tune",
+                "start": 1848,
+                "end": 1871
+            },
+            {
+                "name": "nsys_netin_jrec_song",
+                "start": 1879,
+                "end": 1902
+            },
+            {
+                "name": "nsys_netin_jrec_scj",
+                "start": 1909,
+                "end": 1991
+            },
+            {
+                "name": "nsys_netin_jrec_sck",
+                "start": 1998,
+                "end": 2079
+            },
+            {
+                "name": "nsys_netin_jrec_rty",
+                "start": 2086,
+                "end": 2112
+            },
+            {
+                "name": "nsys_netin_jrec_rtz",
+                "start": 2119,
+                "end": 2145
+            },
+            {
+                "name": "nsys_netin_jrec_sense",
+                "start": 2152,
+                "end": 2178
+            },
+            {
+                "name": "nsys_netin_jrec_sequence",
+                "start": 2185,
+                "end": 2300
+            },
+            {
+                "name": "nsys_netin_jrec_timecode",
+                "start": 2307,
+                "end": 2428
+            },
+            {
+                "name": "nsys_netin_track_timecode",
+                "start": 2435,
+                "end": 2585
+            },
+            {
+                "name": "nsys_netin_jrec_sysex",
+                "start": 2593,
+                "end": 2784
+            },
+            {
+                "name": "nsys_netin_journal_addcmd_three",
+                "start": 2794,
+                "end": 2815
+            },
+            {
+                "name": "nsys_netin_journal_addcmd_two",
+                "start": 2821,
+                "end": 2840
+            },
+            {
+                "name": "nsys_netin_journal_addcmd_one",
+                "start": 2846,
+                "end": 2863
+            },
+            {
+                "name": "nsys_netin_journal_trans",
+                "start": 2869,
+                "end": 2917
+            },
+            {
+                "name": "nsys_netin_journal_button_trans",
+                "start": 2922,
+                "end": 2971
+            },
+            {
+                "name": "nsys_netin_journal_clear_active",
+                "start": 2977,
+                "end": 2987
+            }
+        ],
+        "src/lib/asys/portaudio.c": [
+            {
+                "name": "asysn_portaudio_init",
+                "start": 289,
+                "end": 303
+            },
+            {
+                "name": "asysn_portaudio_outcheck",
+                "start": 310,
+                "end": 371
+            },
+            {
+                "name": "asysn_portaudio_incheck",
+                "start": 378,
+                "end": 439
+            },
+            {
+                "name": "asysn_portaudio_buffparam",
+                "start": 446,
+                "end": 506
+            },
+            {
+                "name": "asysn_portaudio_shutdown",
+                "start": 661,
+                "end": 676
+            },
+            {
+                "name": "asys_main",
+                "start": 725,
+                "end": 773
+            }
+        ],
+        "src/lib/asys/coreaudio.c": [
+            {
+                "name": "asysn_coreaudio_page",
+                "start": 815,
+                "end": 918
+            },
+            {
+                "name": "asysn_coreaudio_globalsetup",
+                "start": 924,
+                "end": 941
+            },
+            {
+                "name": "asysn_coreaudio_devicesetup",
+                "start": 947,
+                "end": 991
+            },
+            {
+                "name": "asysn_coreaudio_getdevicename",
+                "start": 997,
+                "end": 1031
+            },
+            {
+                "name": "asysn_coreaudio_streaminfo",
+                "start": 1153,
+                "end": 1233
+            },
+            {
+                "name": "asysn_coreaudio_reconfigure",
+                "start": 1240,
+                "end": 1280
+            },
+            {
+                "name": "asysn_coreaudio_latencyset",
+                "start": 1287,
+                "end": 1346
+            },
+            {
+                "name": "asysn_coreaudio_printbanner",
+                "start": 1353,
+                "end": 1406
+            },
+            {
+                "name": "asysn_coreaudio_devlisten",
+                "start": 1412,
+                "end": 1436
+            },
+            {
+                "name": "asysn_coreaudio_setup_dlisten",
+                "start": 1442,
+                "end": 1466
+            },
+            {
+                "name": "asysn_coreaudio_shutdown_dlisten",
+                "start": 1473,
+                "end": 1493
+            },
+            {
+                "name": "asys_main",
+                "start": 1704,
+                "end": 1790
+            }
+        ],
+        "src/lib/asys/linux.c": [
+            {
+                "name": "asysio_shutdown",
+                "start": 219,
+                "end": 242
+            },
+            {
+                "name": "asysio_opendevice",
+                "start": 327,
+                "end": 358
+            },
+            {
+                "name": "asysio_iloop_handler",
+                "start": 364,
+                "end": 371
+            },
+            {
+                "name": "asysio_initiloop",
+                "start": 378,
+                "end": 414
+            },
+            {
+                "name": "asysio_initscheduler",
+                "start": 420,
+                "end": 448
+            },
+            {
+                "name": "asysio_screenwriter",
+                "start": 454,
+                "end": 646
+            },
+            {
+                "name": "asysio_setup",
+                "start": 653,
+                "end": 779
+            }
+        ],
+        "src/lib/asys/freebsd.c": [
+            {
+                "name": "asysio_shutdown",
+                "start": 218,
+                "end": 241
+            },
+            {
+                "name": "asysio_opendevice",
+                "start": 326,
+                "end": 357
+            },
+            {
+                "name": "asysio_iloop_handler",
+                "start": 363,
+                "end": 370
+            },
+            {
+                "name": "asysio_initiloop",
+                "start": 377,
+                "end": 413
+            },
+            {
+                "name": "asysio_initscheduler",
+                "start": 419,
+                "end": 447
+            },
+            {
+                "name": "asysio_screenwriter",
+                "start": 453,
+                "end": 645
+            },
+            {
+                "name": "asysio_setup",
+                "start": 652,
+                "end": 778
+            }
+        ],
+        "src/lib/asys/wiretap.c": [
+            {
+                "name": "asysn_audiounit_logfile_initialize",
+                "start": 115,
+                "end": 120
+            },
+            {
+                "name": "asysn_audiounit_print_scope_name",
+                "start": 133,
+                "end": 156
+            },
+            {
+                "name": "asysn_audiounit_print_selector_name",
+                "start": 162,
+                "end": 267
+            },
+            {
+                "name": "asysn_audiounit_print_returncode_name",
+                "start": 273,
+                "end": 378
+            },
+            {
+                "name": "asysn_audiounit_print_nonzero_returncode",
+                "start": 384,
+                "end": 391
+            },
+            {
+                "name": "asysn_audiounit_print_property_name",
+                "start": 397,
+                "end": 712
+            },
+            {
+                "name": "asysn_audiounit_print_parameter_name",
+                "start": 718,
+                "end": 726
+            },
+            {
+                "name": "asysn_audiounit_print_parameter_units",
+                "start": 732,
+                "end": 806
+            },
+            {
+                "name": "asysn_audiounit_print_midievent",
+                "start": 812,
+                "end": 860
+            },
+            {
+                "name": "asysn_audiounit_expected_param_size",
+                "start": 873,
+                "end": 975
+            },
+            {
+                "name": "asysn_audiounit_print_paramsize_check",
+                "start": 981,
+                "end": 996
+            },
+            {
+                "name": "asysn_audiounit_expected_property_size",
+                "start": 1002,
+                "end": 1229
+            },
+            {
+                "name": "asysn_audiounit_print_propertysize_check",
+                "start": 1235,
+                "end": 1251
+            },
+            {
+                "name": "asysn_audiounit_wiretap_classinfo_readint",
+                "start": 1265,
+                "end": 1286
+            },
+            {
+                "name": "asysn_audiounit_wiretap_classinfo_readfloat",
+                "start": 1293,
+                "end": 1314
+            },
+            {
+                "name": "asysn_audiounit_wiretap_classinfo_readcfstr",
+                "start": 1321,
+                "end": 1344
+            },
+            {
+                "name": "asysn_audiounit_wiretap_classinfo_pdata_intread",
+                "start": 1351,
+                "end": 1359
+            },
+            {
+                "name": "asysn_audiounit_wiretap_classinfo_pdata_floatread",
+                "start": 1366,
+                "end": 1374
+            },
+            {
+                "name": "asysn_audiounit_print_property_ClassInfo",
+                "start": 1383,
+                "end": 1557
+            },
+            {
+                "name": "asysn_audiounit_print_property_ParameterList",
+                "start": 1567,
+                "end": 1579
+            },
+            {
+                "name": "asysn_audiounit_print_property_ParameterInfo",
+                "start": 1597,
+                "end": 1679
+            },
+            {
+                "name": "asysn_audiounit_print_property_FastDispatch",
+                "start": 1690,
+                "end": 1697
+            },
+            {
+                "name": "asysn_audiounit_print_property_StreamFormat",
+                "start": 1719,
+                "end": 1768
+            },
+            {
+                "name": "asysn_audiounit_print_property_SupportedNumChannels",
+                "start": 1779,
+                "end": 1791
+            },
+            {
+                "name": "asysn_audiounit_print_property_ParameterValueStrings",
+                "start": 1801,
+                "end": 1827
+            },
+            {
+                "name": "asysn_audiounit_print_property_FactoryPresets",
+                "start": 1843,
+                "end": 1871
+            },
+            {
+                "name": "asysn_audiounit_print_property_CocoaViewInfo",
+                "start": 1886,
+                "end": 1915
+            },
+            {
+                "name": "asysn_audiounit_print_property_data",
+                "start": 1927,
+                "end": 2392
+            },
+            {
+                "name": "asysn_audiounit_print_kComponentCanDoSelect",
+                "start": 2408,
+                "end": 2443
+            },
+            {
+                "name": "asysn_audiounit_print_kComponentOpenSelect",
+                "start": 2452,
+                "end": 2461
+            },
+            {
+                "name": "asysn_audiounit_print_kComponentCloseSelect",
+                "start": 2470,
+                "end": 2479
+            },
+            {
+                "name": "asysn_audiounit_print_kAudioUnitInitializeSelect",
+                "start": 2486,
+                "end": 2493
+            },
+            {
+                "name": "asysn_audiounit_print_kAudioUnitUninitializeSelect",
+                "start": 2500,
+                "end": 2507
+            },
+            {
+                "name": "asysn_audiounit_print_kAudioUnitGetPropertyInfoSelect",
+                "start": 2520,
+                "end": 2538
+            },
+            {
+                "name": "asysn_audiounit_print_kAudioUnitGetPropertySelect",
+                "start": 2552,
+                "end": 2566
+            },
+            {
+                "name": "asysn_audiounit_print_kAudioUnitSetPropertySelect",
+                "start": 2580,
+                "end": 2594
+            },
+            {
+                "name": "asysn_audiounit_print_kAudioUnitAddPropertyListenerSelect",
+                "start": 2609,
+                "end": 2621
+            },
+            {
+                "name": "asysn_audiounit_print_kAudioUnitRemovePropertyListenerSelect",
+                "start": 2633,
+                "end": 2645
+            },
+            {
+                "name": "asysn_audiounit_print_kAudioUnitRemovePropertyListenerWithUserDataSelect",
+                "start": 2658,
+                "end": 2670
+            },
+            {
+                "name": "asysn_audiounit_print_kAudioUnitAddRenderNotifySelect",
+                "start": 2680,
+                "end": 2687
+            },
+            {
+                "name": "asysn_audiounit_print_kAudioUnitRemoveRenderNotifySelect",
+                "start": 2697,
+                "end": 2704
+            },
+            {
+                "name": "asysn_audiounit_print_kAudioUnitGetParameterSelect",
+                "start": 2716,
+                "end": 2729
+            },
+            {
+                "name": "asysn_audiounit_print_kAudioUnitSetParameterSelect",
+                "start": 2742,
+                "end": 2763
+            },
+            {
+                "name": "asysn_audiounit_print_kAudioUnitScheduleParametersSelect",
+                "start": 2774,
+                "end": 2783
+            },
+            {
+                "name": "asysn_audiounit_print_kAudioUnitRenderSelect",
+                "start": 2797,
+                "end": 2801
+            },
+            {
+                "name": "asysn_audiounit_print_kAudioUnitResetSelect",
+                "start": 2812,
+                "end": 2822
+            },
+            {
+                "name": "asysn_audiounit_print_kMusicDeviceMIDIEventSelect",
+                "start": 2835,
+                "end": 2848
+            },
+            {
+                "name": "asysn_audiounit_print_kMusicDeviceSysExSelect",
+                "start": 2859,
+                "end": 2868
+            },
+            {
+                "name": "asysn_audiounit_print_kMusicDevicePrepareInstrumentSelect",
+                "start": 2879,
+                "end": 2888
+            },
+            {
+                "name": "asysn_audiounit_print_kMusicDeviceReleaseInstrumentSelect",
+                "start": 2898,
+                "end": 2907
+            },
+            {
+                "name": "asysn_audiounit_print_kMusicDeviceStartNoteSelect",
+                "start": 2921,
+                "end": 2935
+            },
+            {
+                "name": "asysn_audiounit_print_kMusicDeviceStopNoteSelect",
+                "start": 2947,
+                "end": 2959
+            },
+            {
+                "name": "asysn_audiounit_wiretap",
+                "start": 2973,
+                "end": 3059
+            },
+            {
+                "name": "asysn_audiounit_wiretap_renderer",
+                "start": 3065,
+                "end": 3118
+            },
+            {
+                "name": "asysn_audiounit_wiretap_midievent",
+                "start": 3125,
+                "end": 3145
+            },
+            {
+                "name": "asysn_audiounit_wiretap_getparameter",
+                "start": 3151,
+                "end": 3177
+            },
+            {
+                "name": "asysn_audiounit_wiretap_setparameter",
+                "start": 3183,
+                "end": 3213
+            },
+            {
+                "name": "asysn_audiounit_wiretap_putstring",
+                "start": 3219,
+                "end": 3226
+            },
+            {
+                "name": "asysn_audiounit_wiretap_print_component_result",
+                "start": 3232,
+                "end": 3239
+            }
+        ],
+        "src/lib/asys/irix.c": [
+            {
+                "name": "setrate",
+                "start": 67,
+                "end": 83
+            }
+        ],
+        "src/lib/asys/audiounit.c": [
+            {
+                "name": "asysn_audiounit_memstatus",
+                "start": 685,
+                "end": 690
+            },
+            {
+                "name": "asysn_audiounit_ksyncinit",
+                "start": 703,
+                "end": 717
+            },
+            {
+                "name": "asysn_audiounit_ksync",
+                "start": 723,
+                "end": 745
+            },
+            {
+                "name": "asysn_audiounit_sendMIDIevent",
+                "start": 758,
+                "end": 799
+            },
+            {
+                "name": "asysn_audiounit_MyMIDIEventProc",
+                "start": 805,
+                "end": 830
+            },
+            {
+                "name": "asysn_audiounit_getSASLevent",
+                "start": 836,
+                "end": 846
+            },
+            {
+                "name": "asysn_audiounit_MyGetParameterProc",
+                "start": 852,
+                "end": 873
+            },
+            {
+                "name": "asysn_audiounit_sendSASLevent",
+                "start": 879,
+                "end": 931
+            },
+            {
+                "name": "asysn_audiounit_MySetParameterProc",
+                "start": 937,
+                "end": 976
+            },
+            {
+                "name": "asysn_audiounit_eventlistenernotify",
+                "start": 991,
+                "end": 1022
+            },
+            {
+                "name": "asysn_audiounit_factorypresetname",
+                "start": 1771,
+                "end": 1800
+            },
+            {
+                "name": "asysn_audiounit_factorypresetnumber",
+                "start": 1806,
+                "end": 1843
+            },
+            {
+                "name": "asysn_audiounit_parametervaluestrings_create",
+                "start": 1850,
+                "end": 1867
+            },
+            {
+                "name": "asysn_audiounit_earlypass_parametersystem",
+                "start": 1873,
+                "end": 2049
+            },
+            {
+                "name": "asysn_audiounit_parametervaluestrings_parametersystem",
+                "start": 2056,
+                "end": 2139
+            },
+            {
+                "name": "asysn_audiounit_factorypreset_parametersystem",
+                "start": 2145,
+                "end": 2213
+            },
+            {
+                "name": "asysn_audiounit_initialize_parametersystem",
+                "start": 2219,
+                "end": 2498
+            },
+            {
+                "name": "asysn_audiounit_initialize_properties",
+                "start": 2505,
+                "end": 2727
+            },
+            {
+                "name": "asysn_audiounit_globalvars_memstatus",
+                "start": 2733,
+                "end": 2839
+            },
+            {
+                "name": "asysn_audiounit_instance_cleanup",
+                "start": 2845,
+                "end": 2967
+            },
+            {
+                "name": "asysn_audiounit_engine_parameter_update",
+                "start": 2973,
+                "end": 2990
+            },
+            {
+                "name": "asysn_audiounit_engine_emptypipes",
+                "start": 2996,
+                "end": 3018
+            },
+            {
+                "name": "asysn_audiounit_classinfo_pdata_intwrite",
+                "start": 3030,
+                "end": 3041
+            },
+            {
+                "name": "asysn_audiounit_classinfo_pdata_floatwrite",
+                "start": 3048,
+                "end": 3062
+            },
+            {
+                "name": "asysn_audiounit_classinfo_addint",
+                "start": 3068,
+                "end": 3090
+            },
+            {
+                "name": "asysn_audiounit_classinfo_addfloat",
+                "start": 3096,
+                "end": 3118
+            },
+            {
+                "name": "asysn_audiounit_classinfo_addcfstr",
+                "start": 3124,
+                "end": 3140
+            },
+            {
+                "name": "asysn_audiounit_classinfo_create",
+                "start": 3146,
+                "end": 3216
+            },
+            {
+                "name": "asysn_audiounit_classinfo_readint",
+                "start": 3228,
+                "end": 3249
+            },
+            {
+                "name": "asysn_audiounit_classinfo_readfloat",
+                "start": 3255,
+                "end": 3276
+            },
+            {
+                "name": "asysn_audiounit_classinfo_readcfstr",
+                "start": 3282,
+                "end": 3305
+            },
+            {
+                "name": "asysn_audiounit_classinfo_pdata_intread",
+                "start": 3311,
+                "end": 3319
+            },
+            {
+                "name": "asysn_audiounit_classinfo_pdata_floatread",
+                "start": 3325,
+                "end": 3333
+            },
+            {
+                "name": "asysn_audiounit_classinfo_readpdata",
+                "start": 3339,
+                "end": 3398
+            },
+            {
+                "name": "asysn_audiounit_classinfo_read",
+                "start": 3404,
+                "end": 3439
+            },
+            {
+                "name": "asysn_audiounit_presentproperty_setfactory",
+                "start": 3445,
+                "end": 3460
+            },
+            {
+                "name": "asysn_audiounit_supported_property",
+                "start": 3466,
+                "end": 3555
+            },
+            {
+                "name": "asysn_audiounit_property_size",
+                "start": 3561,
+                "end": 3631
+            },
+            {
+                "name": "asysn_audiounit_proplisteners_index",
+                "start": 3637,
+                "end": 3679
+            },
+            {
+                "name": "asysn_audiounit_proplisteners_update",
+                "start": 3685,
+                "end": 3711
+            },
+            {
+                "name": "asysn_audiounit_initializeselect_enterstate",
+                "start": 3733,
+                "end": 3779
+            },
+            {
+                "name": "asysn_audiounit_initializeselect_exitstate",
+                "start": 3796,
+                "end": 3847
+            },
+            {
+                "name": "asysn_audiounit_uninitializeselect_enterstate",
+                "start": 3863,
+                "end": 3904
+            },
+            {
+                "name": "asysn_audiounit_uninitializeselect_exitstate",
+                "start": 3921,
+                "end": 3972
+            },
+            {
+                "name": "asysn_audiounit_closeselect_enterstate",
+                "start": 3987,
+                "end": 4037
+            },
+            {
+                "name": "asysn_audiounit_realtime_enterstate",
+                "start": 4052,
+                "end": 4138
+            },
+            {
+                "name": "asysn_audiounit_realtime_exitstate",
+                "start": 4153,
+                "end": 4222
+            },
+            {
+                "name": "asysn_audiounit_kComponentOpenSelect",
+                "start": 4237,
+                "end": 4389
+            },
+            {
+                "name": "asysn_audiounit_kComponentCloseSelect",
+                "start": 4398,
+                "end": 4562
+            },
+            {
+                "name": "asysn_audiounit_kAudioUnitInitializeSelect",
+                "start": 4569,
+                "end": 4621
+            },
+            {
+                "name": "asysn_audiounit_kAudioUnitUninitializeSelect",
+                "start": 4628,
+                "end": 4666
+            },
+            {
+                "name": "asysn_audiounit_kAudioUnitGetPropertyInfoSelect",
+                "start": 4679,
+                "end": 4727
+            },
+            {
+                "name": "asysn_audiounit_kAudioUnitGetPropertySelect",
+                "start": 4740,
+                "end": 5047
+            },
+            {
+                "name": "asysn_audiounit_kAudioUnitSetPropertySelect",
+                "start": 5060,
+                "end": 5498
+            },
+            {
+                "name": "asysn_audiounit_kAudioUnitRenderSelect",
+                "start": 5511,
+                "end": 5519
+            },
+            {
+                "name": "asysn_audiounit_kAudioUnitResetSelect",
+                "start": 5526,
+                "end": 5536
+            },
+            {
+                "name": "asysn_audiounit_kAudioUnitAddPropertyListenerSelect",
+                "start": 5550,
+                "end": 5597
+            },
+            {
+                "name": "asysn_audiounit_kAudioUnitRemovePropertyListenerSelect",
+                "start": 5609,
+                "end": 5645
+            },
+            {
+                "name": "asysn_audiounit_kAudioUnitRemovePropertyListenerWithUserDataSelect",
+                "start": 5658,
+                "end": 5696
+            },
+            {
+                "name": "asysn_audiounit_kAudioUnitAddRenderNotifySelect",
+                "start": 5706,
+                "end": 5728
+            },
+            {
+                "name": "asysn_audiounit_kAudioUnitRemoveRenderNotifySelect",
+                "start": 5738,
+                "end": 5769
+            },
+            {
+                "name": "asysn_audiounit_kAudioUnitGetParameterSelect",
+                "start": 5782,
+                "end": 5790
+            },
+            {
+                "name": "asysn_audiounit_kAudioUnitSetParameterSelect",
+                "start": 5804,
+                "end": 5833
+            },
+            {
+                "name": "asysn_audiounit_entry",
+                "start": 5845,
+                "end": 5995
+            }
+        ]
+    }
+}

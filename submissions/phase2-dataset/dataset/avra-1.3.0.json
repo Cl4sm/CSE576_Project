@@ -1,0 +1,743 @@
+{
+    "avra-1.3.0": {
+        "src/mnemonic.c": [
+            {
+                "name": "parse_mnemonic",
+                "start": 347,
+                "end": 672
+            },
+            {
+                "name": "get_mnemonic_type",
+                "start": 674,
+                "end": 687
+            },
+            {
+                "name": "get_register",
+                "start": 690,
+                "end": 717
+            },
+            {
+                "name": "get_bitnum",
+                "start": 720,
+                "end": 729
+            },
+            {
+                "name": "get_indirect",
+                "start": 732,
+                "end": 800
+            },
+            {
+                "name": "is_supported",
+                "start": 804,
+                "end": 812
+            },
+            {
+                "name": "count_supported_instructions",
+                "start": 814,
+                "end": 824
+            }
+        ],
+        "src/parser.c": [
+            {
+                "name": "fgets_new",
+                "start": 47,
+                "end": 97
+            },
+            {
+                "name": "parse_file",
+                "start": 104,
+                "end": 192
+            },
+            {
+                "name": "parse_line",
+                "start": 204,
+                "end": 354
+            },
+            {
+                "name": "get_next_token",
+                "start": 362,
+                "end": 409
+            }
+        ],
+        "src/map.c": [
+            {
+                "name": "write_map_file",
+                "start": 35,
+                "end": 63
+            },
+            {
+                "name": "Space",
+                "start": 65,
+                "end": 73
+            }
+        ],
+        "src/expr.c": [
+            {
+                "name": "log_2",
+                "start": 102,
+                "end": 108
+            },
+            {
+                "name": "get_operator",
+                "start": 110,
+                "end": 161
+            },
+            {
+                "name": "test_operator_at_precedence",
+                "start": 166,
+                "end": 193
+            },
+            {
+                "name": "calc",
+                "start": 196,
+                "end": 245
+            },
+            {
+                "name": "get_function",
+                "start": 248,
+                "end": 269
+            },
+            {
+                "name": "do_function",
+                "start": 271,
+                "end": 297
+            },
+            {
+                "name": "get_symbol",
+                "start": 300,
+                "end": 319
+            },
+            {
+                "name": "par_length",
+                "start": 322,
+                "end": 338
+            },
+            {
+                "name": "get_expr",
+                "start": 340,
+                "end": 569
+            }
+        ],
+        "src/device.c": [
+            {
+                "name": "def_dev",
+                "start": 125,
+                "end": 131
+            },
+            {
+                "name": "get_device",
+                "start": 133,
+                "end": 152
+            },
+            {
+                "name": "predef_dev",
+                "start": 155,
+                "end": 187
+            },
+            {
+                "name": "list_devices",
+                "start": 189,
+                "end": 211
+            }
+        ],
+        "src/coff.c": [
+            {
+                "name": "open_coff_file",
+                "start": 80,
+                "end": 153
+            },
+            {
+                "name": "write_coff_file",
+                "start": 156,
+                "end": 421
+            },
+            {
+                "name": "write_coff_eeprom",
+                "start": 425,
+                "end": 441
+            },
+            {
+                "name": "write_coff_program",
+                "start": 444,
+                "end": 467
+            },
+            {
+                "name": "close_coff_file",
+                "start": 471,
+                "end": 493
+            },
+            {
+                "name": "parse_stabs",
+                "start": 497,
+                "end": 645
+            },
+            {
+                "name": "parse_stabn",
+                "start": 648,
+                "end": 706
+            },
+            {
+                "name": "stab_add_lineno",
+                "start": 709,
+                "end": 753
+            },
+            {
+                "name": "stab_add_lbracket",
+                "start": 756,
+                "end": 790
+            },
+            {
+                "name": "stab_add_rbracket",
+                "start": 793,
+                "end": 846
+            },
+            {
+                "name": "stab_add_filename",
+                "start": 849,
+                "end": 907
+            },
+            {
+                "name": "stab_add_function",
+                "start": 910,
+                "end": 993
+            },
+            {
+                "name": "stab_add_global",
+                "start": 996,
+                "end": 1059
+            },
+            {
+                "name": "stab_add_local",
+                "start": 1062,
+                "end": 1101
+            },
+            {
+                "name": "stab_add_parameter_symbol",
+                "start": 1104,
+                "end": 1128
+            },
+            {
+                "name": "stab_add_static_symbol",
+                "start": 1130,
+                "end": 1157
+            },
+            {
+                "name": "stab_add_local_register",
+                "start": 1160,
+                "end": 1202
+            },
+            {
+                "name": "stab_add_local_type",
+                "start": 1206,
+                "end": 1221
+            },
+            {
+                "name": "GetStructUnionTagItem",
+                "start": 1225,
+                "end": 1271
+            },
+            {
+                "name": "GetEnumTagItem",
+                "start": 1274,
+                "end": 1295
+            },
+            {
+                "name": "GetArrayType",
+                "start": 1298,
+                "end": 1350
+            },
+            {
+                "name": "GetStabType",
+                "start": 1353,
+                "end": 1434
+            },
+            {
+                "name": "stab_add_tag_type",
+                "start": 1438,
+                "end": 1579
+            },
+            {
+                "name": "SetupDefinedType",
+                "start": 1582,
+                "end": 1610
+            },
+            {
+                "name": "GetArrayDefinitions",
+                "start": 1613,
+                "end": 1654
+            },
+            {
+                "name": "GetInternalType",
+                "start": 1658,
+                "end": 1678
+            },
+            {
+                "name": "GetSubRangeType",
+                "start": 1681,
+                "end": 1764
+            },
+            {
+                "name": "CopyStabCoffMap",
+                "start": 1767,
+                "end": 1778
+            },
+            {
+                "name": "GetCoffType",
+                "start": 1781,
+                "end": 1790
+            },
+            {
+                "name": "GetCoffTypeSize",
+                "start": 1793,
+                "end": 1802
+            },
+            {
+                "name": "GetDigitLength",
+                "start": 1806,
+                "end": 1817
+            },
+            {
+                "name": "GetStringDelimiters",
+                "start": 1820,
+                "end": 1843
+            },
+            {
+                "name": "IsTypeArray",
+                "start": 1846,
+                "end": 1866
+            },
+            {
+                "name": "AddArrayAuxInfo",
+                "start": 1869,
+                "end": 1878
+            },
+            {
+                "name": "AddNameToEntry",
+                "start": 1881,
+                "end": 1899
+            },
+            {
+                "name": "SkipPastDigits",
+                "start": 1903,
+                "end": 1912
+            },
+            {
+                "name": "InitializeList",
+                "start": 1925,
+                "end": 1933
+            },
+            {
+                "name": "AllocateTwoListObjects",
+                "start": 1937,
+                "end": 1944
+            },
+            {
+                "name": "AllocateListObject",
+                "start": 1947,
+                "end": 1960
+            },
+            {
+                "name": "AddListObject",
+                "start": 1963,
+                "end": 1974
+            },
+            {
+                "name": "AllocateListNode",
+                "start": 1977,
+                "end": 1988
+            },
+            {
+                "name": "AddNodeToList",
+                "start": 1991,
+                "end": 2005
+            },
+            {
+                "name": "RemoveNodeFromList",
+                "start": 2008,
+                "end": 2015
+            },
+            {
+                "name": "FindFirstListObject",
+                "start": 2019,
+                "end": 2026
+            },
+            {
+                "name": "FindNextListObject",
+                "start": 2028,
+                "end": 2036
+            },
+            {
+                "name": "GetCurrentNode",
+                "start": 2039,
+                "end": 2042
+            },
+            {
+                "name": "GetCurrentListObject",
+                "start": 2045,
+                "end": 2048
+            },
+            {
+                "name": "FindLastListObject",
+                "start": 2052,
+                "end": 2059
+            },
+            {
+                "name": "FindNextLastListObject",
+                "start": 2061,
+                "end": 2069
+            },
+            {
+                "name": "FreeList",
+                "start": 2073,
+                "end": 2086
+            }
+        ],
+        "src/file.c": [
+            {
+                "name": "open_out_files",
+                "start": 40,
+                "end": 105
+            },
+            {
+                "name": "unlink_out_files",
+                "start": 108,
+                "end": 141
+            },
+            {
+                "name": "close_out_files",
+                "start": 143,
+                "end": 170
+            },
+            {
+                "name": "open_hex_file",
+                "start": 173,
+                "end": 187
+            },
+            {
+                "name": "close_hex_file",
+                "start": 190,
+                "end": 199
+            },
+            {
+                "name": "write_ee_byte",
+                "start": 202,
+                "end": 212
+            },
+            {
+                "name": "write_prog_word",
+                "start": 214,
+                "end": 238
+            },
+            {
+                "name": "do_hex_line",
+                "start": 241,
+                "end": 254
+            },
+            {
+                "name": "open_obj_file",
+                "start": 257,
+                "end": 284
+            },
+            {
+                "name": "close_obj_file",
+                "start": 287,
+                "end": 297
+            },
+            {
+                "name": "write_obj_record",
+                "start": 300,
+                "end": 314
+            }
+        ],
+        "src/avra.c": [
+            {
+                "name": "main",
+                "start": 79,
+                "end": 150
+            },
+            {
+                "name": "get_rootpath",
+                "start": 152,
+                "end": 182
+            },
+            {
+                "name": "assemble",
+                "start": 185,
+                "end": 252
+            },
+            {
+                "name": "load_arg_defines",
+                "start": 255,
+                "end": 296
+            },
+            {
+                "name": "get_pi",
+                "start": 301,
+                "end": 331
+            },
+            {
+                "name": "free_pi",
+                "start": 333,
+                "end": 341
+            },
+            {
+                "name": "prepare_second_pass",
+                "start": 343,
+                "end": 354
+            },
+            {
+                "name": "print_msg",
+                "start": 357,
+                "end": 404
+            },
+            {
+                "name": "def_const",
+                "start": 409,
+                "end": 431
+            },
+            {
+                "name": "def_var",
+                "start": 433,
+                "end": 461
+            },
+            {
+                "name": "def_blacklist",
+                "start": 464,
+                "end": 486
+            },
+            {
+                "name": "def_orglist",
+                "start": 489,
+                "end": 518
+            },
+            {
+                "name": "fix_orglist",
+                "start": 521,
+                "end": 541
+            },
+            {
+                "name": "print_orglist",
+                "start": 544,
+                "end": 564
+            },
+            {
+                "name": "test_orglist",
+                "start": 567,
+                "end": 655
+            },
+            {
+                "name": "get_label",
+                "start": 660,
+                "end": 666
+            },
+            {
+                "name": "get_constant",
+                "start": 668,
+                "end": 674
+            },
+            {
+                "name": "get_variable",
+                "start": 676,
+                "end": 682
+            },
+            {
+                "name": "test_label",
+                "start": 686,
+                "end": 689
+            },
+            {
+                "name": "test_constant",
+                "start": 691,
+                "end": 694
+            },
+            {
+                "name": "test_variable",
+                "start": 696,
+                "end": 699
+            },
+            {
+                "name": "test_blacklist",
+                "start": 701,
+                "end": 704
+            },
+            {
+                "name": "search_symbol",
+                "start": 709,
+                "end": 720
+            },
+            {
+                "name": "free_defs",
+                "start": 723,
+                "end": 734
+            },
+            {
+                "name": "free_labels",
+                "start": 736,
+                "end": 747
+            },
+            {
+                "name": "free_constants",
+                "start": 749,
+                "end": 760
+            },
+            {
+                "name": "free_blacklist",
+                "start": 762,
+                "end": 773
+            },
+            {
+                "name": "free_variables",
+                "start": 775,
+                "end": 786
+            },
+            {
+                "name": "free_orglist",
+                "start": 788,
+                "end": 798
+            }
+        ],
+        "src/directiv.c": [
+            {
+                "name": "parse_directive",
+                "start": 116,
+                "end": 700
+            },
+            {
+                "name": "get_directive_type",
+                "start": 703,
+                "end": 710
+            },
+            {
+                "name": "term_string",
+                "start": 713,
+                "end": 729
+            },
+            {
+                "name": "parse_db",
+                "start": 732,
+                "end": 798
+            },
+            {
+                "name": "write_db",
+                "start": 801,
+                "end": 825
+            },
+            {
+                "name": "spool_conditional",
+                "start": 828,
+                "end": 863
+            },
+            {
+                "name": "check_conditional",
+                "start": 866,
+                "end": 917
+            },
+            {
+                "name": "test_include",
+                "start": 919,
+                "end": 930
+            }
+        ],
+        "src/macro.c": [
+            {
+                "name": "itoa",
+                "start": 48,
+                "end": 80
+            },
+            {
+                "name": "read_macro",
+                "start": 84,
+                "end": 222
+            },
+            {
+                "name": "get_macro",
+                "start": 225,
+                "end": 233
+            },
+            {
+                "name": "append_type",
+                "start": 235,
+                "end": 267
+            },
+            {
+                "name": "expand_macro",
+                "start": 274,
+                "end": 543
+            },
+            {
+                "name": "get_macro_label",
+                "start": 545,
+                "end": 557
+            }
+        ],
+        "src/args.c": [
+            {
+                "name": "alloc_args",
+                "start": 36,
+                "end": 52
+            },
+            {
+                "name": "read_args",
+                "start": 55,
+                "end": 167
+            },
+            {
+                "name": "add_arg",
+                "start": 170,
+                "end": 188
+            },
+            {
+                "name": "free_args",
+                "start": 191,
+                "end": 210
+            },
+            {
+                "name": "define_arg",
+                "start": 213,
+                "end": 219
+            }
+        ],
+        "src/stdextra.c": [
+            {
+                "name": "nocase_strcmp",
+                "start": 42,
+                "end": 50
+            },
+            {
+                "name": "nocase_strncmp",
+                "start": 57,
+                "end": 65
+            },
+            {
+                "name": "nocase_strstr",
+                "start": 72,
+                "end": 93
+            },
+            {
+                "name": "atox",
+                "start": 101,
+                "end": 116
+            },
+            {
+                "name": "atoi_n",
+                "start": 123,
+                "end": 133
+            },
+            {
+                "name": "atox_n",
+                "start": 142,
+                "end": 158
+            },
+            {
+                "name": "my_strlwr",
+                "start": 165,
+                "end": 173
+            },
+            {
+                "name": "my_strupr",
+                "start": 180,
+                "end": 188
+            }
+        ]
+    }
+}

@@ -1,0 +1,3583 @@
+{
+    "netexpect-0.22": {
+        "src/util.c": [
+            {
+                "name": "dump",
+                "start": 26,
+                "end": 53
+            },
+            {
+                "name": "error",
+                "start": 55,
+                "end": 71
+            },
+            {
+                "name": "warn",
+                "start": 73,
+                "end": 87
+            },
+            {
+                "name": "debug",
+                "start": 89,
+                "end": 102
+            },
+            {
+                "name": "in_checksum",
+                "start": 104,
+                "end": 134
+            },
+            {
+                "name": "make_prefix",
+                "start": 140,
+                "end": 156
+            },
+            {
+                "name": "mac_to_ascii",
+                "start": 167,
+                "end": 178
+            },
+            {
+                "name": "format_ethernet_addr",
+                "start": 192,
+                "end": 281
+            },
+            {
+                "name": "parse_mac_addr",
+                "start": 289,
+                "end": 300
+            },
+            {
+                "name": "ipaddr2str",
+                "start": 302,
+                "end": 314
+            },
+            {
+                "name": "ip6addr2str",
+                "start": 316,
+                "end": 328
+            },
+            {
+                "name": "copy_argv",
+                "start": 336,
+                "end": 360
+            },
+            {
+                "name": "random_ip",
+                "start": 371,
+                "end": 375
+            },
+            {
+                "name": "random_int",
+                "start": 380,
+                "end": 384
+            },
+            {
+                "name": "random_block",
+                "start": 389,
+                "end": 394
+            },
+            {
+                "name": "ts2str",
+                "start": 404,
+                "end": 468
+            },
+            {
+                "name": "gmt2local",
+                "start": 476,
+                "end": 502
+            },
+            {
+                "name": "compare_integers",
+                "start": 510,
+                "end": 514
+            }
+        ],
+        "src/nexp_ghost.c": [
+            {
+                "name": "lookup_ghost",
+                "start": 91,
+                "end": 101
+            },
+            {
+                "name": "addr_in_network",
+                "start": 107,
+                "end": 124
+            },
+            {
+                "name": "ghost_process_pkt",
+                "start": 131,
+                "end": 289
+            },
+            {
+                "name": "destroy_ghost_ctrl_blk",
+                "start": 291,
+                "end": 350
+            },
+            {
+                "name": "create_ghost_ctrl_blk",
+                "start": 352,
+                "end": 545
+            },
+            {
+                "name": "ghost_main",
+                "start": 550,
+                "end": 626
+            },
+            {
+                "name": "ghost_kill",
+                "start": 628,
+                "end": 660
+            },
+            {
+                "name": "ghost_create",
+                "start": 668,
+                "end": 761
+            },
+            {
+                "name": "ghosts_info",
+                "start": 763,
+                "end": 791
+            },
+            {
+                "name": "NExp_GhostObjCmd",
+                "start": 806,
+                "end": 857
+            },
+            {
+                "name": "nexp_init_ghost_cmd",
+                "start": 865,
+                "end": 880
+            }
+        ],
+        "src/tcl_packet.c": [
+            {
+                "name": "set_from_any",
+                "start": 73,
+                "end": 82
+            },
+            {
+                "name": "dup_int_rep",
+                "start": 84,
+                "end": 99
+            },
+            {
+                "name": "get_line_buf",
+                "start": 101,
+                "end": 123
+            },
+            {
+                "name": "fill_in_pkthdr",
+                "start": 125,
+                "end": 138
+            },
+            {
+                "name": "fill_in_framedata",
+                "start": 140,
+                "end": 144
+            },
+            {
+                "name": "columns_to_string",
+                "start": 147,
+                "end": 354
+            },
+            {
+                "name": "update_string",
+                "start": 356,
+                "end": 400
+            },
+            {
+                "name": "free_int_rep",
+                "start": 402,
+                "end": 411
+            },
+            {
+                "name": "Tcl_NewPacketObj",
+                "start": 413,
+                "end": 439
+            },
+            {
+                "name": "Tcl_GetPacketFromObj",
+                "start": 441,
+                "end": 459
+            },
+            {
+                "name": "tcl_packet_dissect",
+                "start": 465,
+                "end": 534
+            },
+            {
+                "name": "tcl_packet_hash",
+                "start": 536,
+                "end": 575
+            },
+            {
+                "name": "tcl_packet_data",
+                "start": 577,
+                "end": 649
+            },
+            {
+                "name": "tcl_packet_dump",
+                "start": 651,
+                "end": 679
+            },
+            {
+                "name": "tcl_packet_ts",
+                "start": 681,
+                "end": 708
+            },
+            {
+                "name": "tcl_packet_tdelta",
+                "start": 710,
+                "end": 764
+            },
+            {
+                "name": "tcl_packet_show",
+                "start": 766,
+                "end": 821
+            },
+            {
+                "name": "print_tree_node",
+                "start": 823,
+                "end": 846
+            },
+            {
+                "name": "tcl_packet_stats",
+                "start": 848,
+                "end": 881
+            },
+            {
+                "name": "tcl_packet_heximport",
+                "start": 883,
+                "end": 965
+            },
+            {
+                "name": "tcl_packet_new",
+                "start": 967,
+                "end": 1036
+            },
+            {
+                "name": "tcl_packet_len",
+                "start": 1038,
+                "end": 1065
+            },
+            {
+                "name": "NExp_PacketObjCmd",
+                "start": 1067,
+                "end": 1149
+            },
+            {
+                "name": "tcl_ws_setprefs",
+                "start": 1155,
+                "end": 1185
+            },
+            {
+                "name": "NExp_WSObjCmd",
+                "start": 1187,
+                "end": 1218
+            },
+            {
+                "name": "nexp_init_packet_cmd",
+                "start": 1227,
+                "end": 1233
+            }
+        ],
+        "src/nexp_pcap.c": [
+            {
+                "name": "dump_pcap",
+                "start": 28,
+                "end": 47
+            }
+        ],
+        "src/util-tcl.c": [
+            {
+                "name": "nexp_get_var",
+                "start": 32,
+                "end": 41
+            },
+            {
+                "name": "nexp_get_var2ex",
+                "start": 46,
+                "end": 55
+            }
+        ],
+        "src/tcl_barray.c": [
+            {
+                "name": "parse_format",
+                "start": 67,
+                "end": 124
+            },
+            {
+                "name": "dumpx",
+                "start": 126,
+                "end": 220
+            },
+            {
+                "name": "set_from_any",
+                "start": 240,
+                "end": 249
+            },
+            {
+                "name": "dup_int_rep",
+                "start": 251,
+                "end": 264
+            },
+            {
+                "name": "update_string",
+                "start": 266,
+                "end": 338
+            },
+            {
+                "name": "free_int_rep",
+                "start": 340,
+                "end": 348
+            },
+            {
+                "name": "Tcl_NewBArrayObj",
+                "start": 350,
+                "end": 368
+            },
+            {
+                "name": "Tcl_GetBArrayFromObj",
+                "start": 370,
+                "end": 383
+            },
+            {
+                "name": "tcl_barray_new",
+                "start": 389,
+                "end": 410
+            },
+            {
+                "name": "tcl_barray_heximport",
+                "start": 416,
+                "end": 477
+            },
+            {
+                "name": "tcl_barray_len",
+                "start": 483,
+                "end": 510
+            },
+            {
+                "name": "tcl_barray_delete",
+                "start": 516,
+                "end": 537
+            },
+            {
+                "name": "tcl_barray_examine",
+                "start": 543,
+                "end": 613
+            },
+            {
+                "name": "tcl_barray_dump",
+                "start": 623,
+                "end": 649
+            },
+            {
+                "name": "tcl_barray_slice",
+                "start": 655,
+                "end": 717
+            },
+            {
+                "name": "tcl_barray_cmp",
+                "start": 723,
+                "end": 765
+            },
+            {
+                "name": "tcl_barray_string",
+                "start": 771,
+                "end": 804
+            },
+            {
+                "name": "tcl_barray_cksum",
+                "start": 810,
+                "end": 837
+            },
+            {
+                "name": "NExp_BArrayObjCmd",
+                "start": 843,
+                "end": 920
+            },
+            {
+                "name": "NExp_XCmd",
+                "start": 926,
+                "end": 987
+            },
+            {
+                "name": "NExp_PeekObjCmd",
+                "start": 998,
+                "end": 1101
+            },
+            {
+                "name": "nexp_init_barray_cmd",
+                "start": 1115,
+                "end": 1124
+            }
+        ],
+        "src/nexp_pbuild.c": [
+            {
+                "name": "pcb_dump",
+                "start": 32,
+                "end": 39
+            },
+            {
+                "name": "pcb_destroy",
+                "start": 44,
+                "end": 52
+            },
+            {
+                "name": "nexp_pdu_output",
+                "start": 59,
+                "end": 96
+            }
+        ],
+        "src/send_network.c": [
+            {
+                "name": "process_options",
+                "start": 33,
+                "end": 151
+            },
+            {
+                "name": "NExp_SendNetworkObjCmd",
+                "start": 153,
+                "end": 285
+            },
+            {
+                "name": "NExp_SendTclObjCmd",
+                "start": 287,
+                "end": 409
+            },
+            {
+                "name": "nexp_init_send_cmds",
+                "start": 418,
+                "end": 422
+            }
+        ],
+        "src/cmd_parser.c": [
+            {
+                "name": "yystrlen",
+                "start": 859,
+                "end": 871
+            },
+            {
+                "name": "yystpcpy",
+                "start": 883,
+                "end": 899
+            },
+            {
+                "name": "yytnamerr",
+                "start": 911,
+                "end": 948
+            },
+            {
+                "name": "yysyntax_error",
+                "start": 958,
+                "end": 1057
+            },
+            {
+                "name": "yydestruct",
+                "start": 1068,
+                "end": 1096
+            },
+            {
+                "name": "cmdparse",
+                "start": 1137,
+                "end": 1722
+            },
+            {
+                "name": "cmderror",
+                "start": 1728,
+                "end": 1733
+            },
+            {
+                "name": "cmd_parseargs",
+                "start": 1735,
+                "end": 1753
+            }
+        ],
+        "src/tcl_numspec.c": [
+            {
+                "name": "set_from_any",
+                "start": 57,
+                "end": 66
+            },
+            {
+                "name": "dup_int_rep",
+                "start": 68,
+                "end": 78
+            },
+            {
+                "name": "update_string",
+                "start": 81,
+                "end": 100
+            },
+            {
+                "name": "free_int_rep",
+                "start": 102,
+                "end": 110
+            },
+            {
+                "name": "Tcl_NewNumspecObj",
+                "start": 112,
+                "end": 129
+            },
+            {
+                "name": "NExp_NumObjCmd",
+                "start": 135,
+                "end": 264
+            },
+            {
+                "name": "NExp_IPAddrObjCmd",
+                "start": 270,
+                "end": 378
+            },
+            {
+                "name": "nexp_init_numspec_cmds",
+                "start": 387,
+                "end": 393
+            }
+        ],
+        "src/tcl_usr.c": [
+            {
+                "name": "set_from_any",
+                "start": 46,
+                "end": 50
+            },
+            {
+                "name": "dup_int_rep",
+                "start": 52,
+                "end": 68
+            },
+            {
+                "name": "update_string",
+                "start": 70,
+                "end": 94
+            },
+            {
+                "name": "free_int_rep",
+                "start": 96,
+                "end": 103
+            },
+            {
+                "name": "Tcl_NewRTableObj",
+                "start": 105,
+                "end": 122
+            },
+            {
+                "name": "tcl_rtable_new",
+                "start": 128,
+                "end": 145
+            },
+            {
+                "name": "tcl_rtable_delete",
+                "start": 151,
+                "end": 172
+            },
+            {
+                "name": "NExp_RTableObjCmd",
+                "start": 178,
+                "end": 204
+            },
+            {
+                "name": "tcl_ip_link",
+                "start": 210,
+                "end": 220
+            },
+            {
+                "name": "tcl_ip_address",
+                "start": 222,
+                "end": 232
+            },
+            {
+                "name": "tcl_ip_route",
+                "start": 234,
+                "end": 244
+            },
+            {
+                "name": "NExp_IPObjCmd",
+                "start": 250,
+                "end": 285
+            },
+            {
+                "name": "nexp_init_usr_cmds",
+                "start": 294,
+                "end": 302
+            }
+        ],
+        "src/tgn.c": [
+            {
+                "name": "version",
+                "start": 46,
+                "end": 53
+            },
+            {
+                "name": "usage",
+                "start": 55,
+                "end": 71
+            },
+            {
+                "name": "main",
+                "start": 73,
+                "end": 270
+            }
+        ],
+        "src/md5c.c": [
+            {
+                "name": "byteReverse",
+                "start": 27,
+                "end": 36
+            },
+            {
+                "name": "MD5_Init",
+                "start": 42,
+                "end": 51
+            },
+            {
+                "name": "MD5_Update",
+                "start": 57,
+                "end": 100
+            },
+            {
+                "name": "MD5_Final",
+                "start": 106,
+                "end": 145
+            },
+            {
+                "name": "MD5Transform",
+                "start": 164,
+                "end": 245
+            }
+        ],
+        "src/spawn_network.c": [
+            {
+                "name": "lookup_listener",
+                "start": 44,
+                "end": 54
+            },
+            {
+                "name": "listener_fd",
+                "start": 62,
+                "end": 82
+            },
+            {
+                "name": "close_listener",
+                "start": 84,
+                "end": 128
+            },
+            {
+                "name": "close_listeners",
+                "start": 133,
+                "end": 142
+            },
+            {
+                "name": "listeners_info",
+                "start": 144,
+                "end": 214
+            },
+            {
+                "name": "listeners_and_speakers_info",
+                "start": 216,
+                "end": 221
+            },
+            {
+                "name": "socket_listener_info",
+                "start": 223,
+                "end": 289
+            },
+            {
+                "name": "calc_delays",
+                "start": 300,
+                "end": 362
+            },
+            {
+                "name": "prepare_pd",
+                "start": 371,
+                "end": 430
+            },
+            {
+                "name": "set_pcap_filter",
+                "start": 437,
+                "end": 461
+            },
+            {
+                "name": "process_packet_list",
+                "start": 463,
+                "end": 510
+            },
+            {
+                "name": "usage",
+                "start": 512,
+                "end": 520
+            },
+            {
+                "name": "NExp_SpawnNetworkCmd",
+                "start": 526,
+                "end": 961
+            },
+            {
+                "name": "NExp_CloseNetworkCmd",
+                "start": 967,
+                "end": 992
+            },
+            {
+                "name": "nexp_init_spawn_cmds",
+                "start": 1001,
+                "end": 1030
+            }
+        ],
+        "src/nexp_trap.c": [
+            {
+                "name": "signal_to_string",
+                "start": 76,
+                "end": 82
+            },
+            {
+                "name": "bottomhalf",
+                "start": 180,
+                "end": 222
+            },
+            {
+                "name": "nexp_init_trap",
+                "start": 249,
+                "end": 280
+            }
+        ],
+        "src/cmd_scanner.c": [
+            {
+                "name": "cmdlex",
+                "start": 724,
+                "end": 725
+            },
+            {
+                "name": "cmdlex",
+                "start": 748,
+                "end": 1068
+            },
+            {
+                "name": "yy_get_next_buffer",
+                "start": 1077,
+                "end": 1208
+            },
+            {
+                "name": "yy_get_previous_state",
+                "start": 1212,
+                "end": 1238
+            },
+            {
+                "name": "yy_try_NUL_trans",
+                "start": 1245,
+                "end": 1267
+            },
+            {
+                "name": "input",
+                "start": 1273,
+                "end": 1341
+            },
+            {
+                "name": "cmdrestart",
+                "start": 1349,
+                "end": 1361
+            },
+            {
+                "name": "cmd_switch_to_buffer",
+                "start": 1367,
+                "end": 1397
+            },
+            {
+                "name": "cmd_load_buffer_state",
+                "start": 1399,
+                "end": 1406
+            },
+            {
+                "name": "cmd_create_buffer",
+                "start": 1414,
+                "end": 1436
+            },
+            {
+                "name": "cmd_delete_buffer",
+                "start": 1442,
+                "end": 1456
+            },
+            {
+                "name": "cmd_init_buffer",
+                "start": 1466,
+                "end": 1489
+            },
+            {
+                "name": "cmd_flush_buffer",
+                "start": 1495,
+                "end": 1517
+            },
+            {
+                "name": "cmdpush_buffer_state",
+                "start": 1525,
+                "end": 1550
+            },
+            {
+                "name": "cmdpop_buffer_state",
+                "start": 1556,
+                "end": 1571
+            },
+            {
+                "name": "cmdensure_buffer_stack",
+                "start": 1576,
+                "end": 1618
+            },
+            {
+                "name": "cmd_scan_buffer",
+                "start": 1626,
+                "end": 1653
+            },
+            {
+                "name": "cmd_scan_string",
+                "start": 1663,
+                "end": 1667
+            },
+            {
+                "name": "cmd_scan_bytes",
+                "start": 1676,
+                "end": 1704
+            },
+            {
+                "name": "yy_fatal_error",
+                "start": 1710,
+                "end": 1714
+            },
+            {
+                "name": "cmdget_extra",
+                "start": 1738,
+                "end": 1742
+            },
+            {
+                "name": "cmdget_lineno",
+                "start": 1747,
+                "end": 1755
+            },
+            {
+                "name": "cmdget_column",
+                "start": 1760,
+                "end": 1768
+            },
+            {
+                "name": "cmdget_in",
+                "start": 1773,
+                "end": 1777
+            },
+            {
+                "name": "cmdget_out",
+                "start": 1782,
+                "end": 1786
+            },
+            {
+                "name": "cmdget_leng",
+                "start": 1791,
+                "end": 1795
+            },
+            {
+                "name": "cmdget_text",
+                "start": 1801,
+                "end": 1805
+            },
+            {
+                "name": "cmdset_extra",
+                "start": 1811,
+                "end": 1815
+            },
+            {
+                "name": "cmdset_lineno",
+                "start": 1821,
+                "end": 1830
+            },
+            {
+                "name": "cmdset_column",
+                "start": 1836,
+                "end": 1845
+            },
+            {
+                "name": "cmdset_in",
+                "start": 1853,
+                "end": 1857
+            },
+            {
+                "name": "cmdset_out",
+                "start": 1859,
+                "end": 1863
+            },
+            {
+                "name": "cmdget_debug",
+                "start": 1865,
+                "end": 1869
+            },
+            {
+                "name": "cmdset_debug",
+                "start": 1871,
+                "end": 1875
+            },
+            {
+                "name": "cmdget_lval",
+                "start": 1879,
+                "end": 1883
+            },
+            {
+                "name": "cmdset_lval",
+                "start": 1885,
+                "end": 1889
+            },
+            {
+                "name": "cmdlex_init",
+                "start": 1898,
+                "end": 1917
+            },
+            {
+                "name": "cmdlex_init_extra",
+                "start": 1927,
+                "end": 1953
+            },
+            {
+                "name": "yy_init_globals",
+                "start": 1955,
+                "end": 1986
+            },
+            {
+                "name": "cmdlex_destroy",
+                "start": 1989,
+                "end": 2016
+            },
+            {
+                "name": "cmdalloc",
+                "start": 2042,
+                "end": 2045
+            },
+            {
+                "name": "cmdrealloc",
+                "start": 2047,
+                "end": 2057
+            },
+            {
+                "name": "cmdfree",
+                "start": 2059,
+                "end": 2062
+            }
+        ],
+        "src/nexp_log.c": [
+            {
+                "name": "nexpDiagWriteBytes",
+                "start": 50,
+                "end": 59
+            },
+            {
+                "name": "nexpDiagWriteChars",
+                "start": 62,
+                "end": 71
+            }
+        ],
+        "src/xmalloc.c": [
+            {
+                "name": "xmalloc",
+                "start": 28,
+                "end": 38
+            },
+            {
+                "name": "xrealloc",
+                "start": 44,
+                "end": 70
+            },
+            {
+                "name": "xcalloc",
+                "start": 75,
+                "end": 84
+            }
+        ],
+        "src/tcl_ws-ftypes.c": [
+            {
+                "name": "uint32_dup_int_rep",
+                "start": 92,
+                "end": 104
+            },
+            {
+                "name": "uint32_update_string",
+                "start": 106,
+                "end": 123
+            },
+            {
+                "name": "uint32_free_int_rep",
+                "start": 125,
+                "end": 131
+            },
+            {
+                "name": "Tcl_NewUInt32Obj",
+                "start": 133,
+                "end": 149
+            },
+            {
+                "name": "Tcl_GetUInt8FromObj",
+                "start": 151,
+                "end": 163
+            },
+            {
+                "name": "Tcl_GetUInt16FromObj",
+                "start": 165,
+                "end": 195
+            },
+            {
+                "name": "Tcl_GetUInt32FromObj",
+                "start": 197,
+                "end": 206
+            },
+            {
+                "name": "int32_dup_int_rep",
+                "start": 225,
+                "end": 237
+            },
+            {
+                "name": "int32_update_string",
+                "start": 239,
+                "end": 256
+            },
+            {
+                "name": "int32_free_int_rep",
+                "start": 258,
+                "end": 264
+            },
+            {
+                "name": "Tcl_NewInt32Obj",
+                "start": 266,
+                "end": 282
+            },
+            {
+                "name": "Tcl_GetInt32FromObj",
+                "start": 284,
+                "end": 293
+            },
+            {
+                "name": "uint64_dup_int_rep",
+                "start": 313,
+                "end": 325
+            },
+            {
+                "name": "uint64_update_string",
+                "start": 327,
+                "end": 344
+            },
+            {
+                "name": "uint64_free_int_rep",
+                "start": 346,
+                "end": 352
+            },
+            {
+                "name": "Tcl_NewUInt64Obj",
+                "start": 354,
+                "end": 370
+            },
+            {
+                "name": "Tcl_GetUInt64FromObj",
+                "start": 372,
+                "end": 381
+            },
+            {
+                "name": "int64_dup_int_rep",
+                "start": 401,
+                "end": 413
+            },
+            {
+                "name": "int64_update_string",
+                "start": 415,
+                "end": 432
+            },
+            {
+                "name": "int64_free_int_rep",
+                "start": 434,
+                "end": 440
+            },
+            {
+                "name": "Tcl_NewInt64Obj",
+                "start": 442,
+                "end": 458
+            },
+            {
+                "name": "Tcl_GetInt64FromObj",
+                "start": 460,
+                "end": 469
+            },
+            {
+                "name": "addr_dup_int_rep",
+                "start": 489,
+                "end": 501
+            },
+            {
+                "name": "addr_update_string",
+                "start": 503,
+                "end": 532
+            },
+            {
+                "name": "addr_free_int_rep",
+                "start": 534,
+                "end": 540
+            },
+            {
+                "name": "Tcl_NewAddrObj",
+                "start": 542,
+                "end": 558
+            },
+            {
+                "name": "Tcl_GetAddrFromObj",
+                "start": 560,
+                "end": 569
+            },
+            {
+                "name": "Tcl_GetIPAddrFromObj",
+                "start": 571,
+                "end": 580
+            },
+            {
+                "name": "nexp_register_tcl_ws_ftypes",
+                "start": 584,
+                "end": 594
+            }
+        ],
+        "src/nexp_speakers.c": [
+            {
+                "name": "lookup_speaker",
+                "start": 58,
+                "end": 68
+            },
+            {
+                "name": "iface_callback",
+                "start": 70,
+                "end": 109
+            },
+            {
+                "name": "create_default_speakers",
+                "start": 115,
+                "end": 243
+            },
+            {
+                "name": "close_speaker",
+                "start": 245,
+                "end": 295
+            },
+            {
+                "name": "close_speakers",
+                "start": 301,
+                "end": 310
+            },
+            {
+                "name": "speakers_info",
+                "start": 312,
+                "end": 365
+            },
+            {
+                "name": "nexp_newspeaker",
+                "start": 367,
+                "end": 459
+            }
+        ],
+        "src/payload.c": [
+            {
+                "name": "escapes",
+                "start": 44,
+                "end": 97
+            },
+            {
+                "name": "read_payload_from_file",
+                "start": 102,
+                "end": 128
+            },
+            {
+                "name": "read_payload_from_stdin",
+                "start": 133,
+                "end": 152
+            },
+            {
+                "name": "file_payload",
+                "start": 154,
+                "end": 165
+            },
+            {
+                "name": "random_payload",
+                "start": 167,
+                "end": 179
+            },
+            {
+                "name": "pattern_payload",
+                "start": 181,
+                "end": 215
+            },
+            {
+                "name": "string_payload",
+                "start": 217,
+                "end": 249
+            },
+            {
+                "name": "create_payload",
+                "start": 267,
+                "end": 376
+            }
+        ],
+        "src/send_receive.c": [
+            {
+                "name": "usage",
+                "start": 50,
+                "end": 57
+            },
+            {
+                "name": "process_options",
+                "start": 59,
+                "end": 205
+            },
+            {
+                "name": "send_packets",
+                "start": 207,
+                "end": 257
+            },
+            {
+                "name": "process_pkt",
+                "start": 262,
+                "end": 272
+            },
+            {
+                "name": "sigusr1_handler",
+                "start": 280,
+                "end": 293
+            },
+            {
+                "name": "sigalrm_handler",
+                "start": 295,
+                "end": 312
+            },
+            {
+                "name": "NExp_SendReceiveObjCmd",
+                "start": 314,
+                "end": 485
+            },
+            {
+                "name": "nexp_init_send_receive_cmd",
+                "start": 493,
+                "end": 497
+            }
+        ],
+        "src/wire.c": [
+            {
+                "name": "wire_dump",
+                "start": 25,
+                "end": 89
+            }
+        ],
+        "src/nexp_commands.c": [
+            {
+                "name": "NExp_VersionCmd",
+                "start": 49,
+                "end": 105
+            },
+            {
+                "name": "NExp_SleepCmd",
+                "start": 110,
+                "end": 137
+            },
+            {
+                "name": "NExp_TxDeltaCmd",
+                "start": 142,
+                "end": 176
+            },
+            {
+                "name": "NExp_ContinueCmd",
+                "start": 182,
+                "end": 191
+            },
+            {
+                "name": "NExp_SystemCmd",
+                "start": 207,
+                "end": 242
+            },
+            {
+                "name": "NExp_RandomCmd",
+                "start": 248,
+                "end": 354
+            },
+            {
+                "name": "NExp_HostCmd",
+                "start": 360,
+                "end": 389
+            },
+            {
+                "name": "NExp_HelpCmd",
+                "start": 395,
+                "end": 419
+            },
+            {
+                "name": "NExp_ClearObjCmd",
+                "start": 426,
+                "end": 454
+            },
+            {
+                "name": "NExp_ShowObjCmd",
+                "start": 460,
+                "end": 499
+            },
+            {
+                "name": "NExp_IsLocalObjCmd",
+                "start": 501,
+                "end": 537
+            },
+            {
+                "name": "nexp_create_commands",
+                "start": 539,
+                "end": 547
+            },
+            {
+                "name": "nexp_init_cmds",
+                "start": 566,
+                "end": 570
+            }
+        ],
+        "src/nexp_iface.c": [
+            {
+                "name": "create_iface_callback",
+                "start": 31,
+                "end": 146
+            },
+            {
+                "name": "create_iface_array",
+                "start": 148,
+                "end": 160
+            },
+            {
+                "name": "iface_list_callback",
+                "start": 166,
+                "end": 175
+            },
+            {
+                "name": "NExp_IfListCmd",
+                "start": 177,
+                "end": 212
+            },
+            {
+                "name": "NExp_OutIfCmd",
+                "start": 218,
+                "end": 259
+            },
+            {
+                "name": "nexp_init_iflist_cmd",
+                "start": 268,
+                "end": 274
+            }
+        ],
+        "src/tcl_pbuild.c": [
+            {
+                "name": "set_from_any",
+                "start": 46,
+                "end": 55
+            },
+            {
+                "name": "update_string",
+                "start": 57,
+                "end": 76
+            },
+            {
+                "name": "free_int_rep",
+                "start": 78,
+                "end": 89
+            },
+            {
+                "name": "process_options",
+                "start": 95,
+                "end": 197
+            },
+            {
+                "name": "tcl_pdu_new",
+                "start": 201,
+                "end": 233
+            },
+            {
+                "name": "tcl_pdu_delete",
+                "start": 239,
+                "end": 262
+            },
+            {
+                "name": "tcl_pdu_info",
+                "start": 268,
+                "end": 303
+            },
+            {
+                "name": "tcl_pdu_count",
+                "start": 309,
+                "end": 338
+            },
+            {
+                "name": "tcl_pdu_build",
+                "start": 344,
+                "end": 398
+            },
+            {
+                "name": "tcl_pdu_list",
+                "start": 404,
+                "end": 410
+            },
+            {
+                "name": "tcl_pdu_send",
+                "start": 416,
+                "end": 454
+            },
+            {
+                "name": "NExp_PDUObjCmd",
+                "start": 456,
+                "end": 523
+            },
+            {
+                "name": "nexp_init_pdu_cmd",
+                "start": 531,
+                "end": 537
+            }
+        ],
+        "src/xstrdup.c": [
+            {
+                "name": "xstrdup",
+                "start": 21,
+                "end": 33
+            }
+        ],
+        "src/tcl_timeval.c": [
+            {
+                "name": "set_from_any",
+                "start": 46,
+                "end": 55
+            },
+            {
+                "name": "dup_int_rep",
+                "start": 57,
+                "end": 68
+            },
+            {
+                "name": "update_string",
+                "start": 70,
+                "end": 89
+            },
+            {
+                "name": "free_int_rep",
+                "start": 91,
+                "end": 98
+            },
+            {
+                "name": "Tcl_NewTimevalObj",
+                "start": 100,
+                "end": 116
+            },
+            {
+                "name": "tcl_timeval_new",
+                "start": 122,
+                "end": 138
+            },
+            {
+                "name": "tcl_timeval_delta",
+                "start": 140,
+                "end": 182
+            },
+            {
+                "name": "NExp_TimevalCmd",
+                "start": 184,
+                "end": 208
+            },
+            {
+                "name": "nexp_init_timeval_cmd",
+                "start": 216,
+                "end": 222
+            }
+        ],
+        "src/send_expect.c": [
+            {
+                "name": "usage",
+                "start": 97,
+                "end": 104
+            },
+            {
+                "name": "process_options",
+                "start": 106,
+                "end": 260
+            },
+            {
+                "name": "fill_in_pkthdr",
+                "start": 262,
+                "end": 275
+            },
+            {
+                "name": "fill_in_framedata",
+                "start": 277,
+                "end": 281
+            },
+            {
+                "name": "build_and_hash",
+                "start": 287,
+                "end": 341
+            },
+            {
+                "name": "send_main",
+                "start": 346,
+                "end": 410
+            },
+            {
+                "name": "NExp_SendExpectObjCmd",
+                "start": 419,
+                "end": 1018
+            },
+            {
+                "name": "nexp_init_send_expect_cmd",
+                "start": 1534,
+                "end": 1546
+            }
+        ],
+        "src/nexp.c": [
+            {
+                "name": "version",
+                "start": 71,
+                "end": 78
+            },
+            {
+                "name": "usage",
+                "start": 80,
+                "end": 92
+            },
+            {
+                "name": "main",
+                "start": 111,
+                "end": 197
+            },
+            {
+                "name": "Tcl_AppInit",
+                "start": 218,
+                "end": 364
+            }
+        ],
+        "src/expect_network.c": [
+            {
+                "name": "fill_in_pkthdr",
+                "start": 69,
+                "end": 82
+            },
+            {
+                "name": "fill_in_framedata",
+                "start": 84,
+                "end": 89
+            },
+            {
+                "name": "process_packet",
+                "start": 96,
+                "end": 141
+            },
+            {
+                "name": "dump_nexp_cmd_descriptor",
+                "start": 146,
+                "end": 235
+            },
+            {
+                "name": "nexp_cmd_descriptor_listeners",
+                "start": 243,
+                "end": 268
+            },
+            {
+                "name": "nexp_one_arg_braced",
+                "start": 287,
+                "end": 305
+            },
+            {
+                "name": "nexp_eval_with_one_arg",
+                "start": 312,
+                "end": 412
+            },
+            {
+                "name": "ecase_clear",
+                "start": 414,
+                "end": 425
+            },
+            {
+                "name": "ecase_new",
+                "start": 427,
+                "end": 436
+            },
+            {
+                "name": "free_ecase",
+                "start": 439,
+                "end": 451
+            },
+            {
+                "name": "free_ecases",
+                "start": 454,
+                "end": 469
+            },
+            {
+                "name": "parse_expect_args",
+                "start": 497,
+                "end": 704
+            },
+            {
+                "name": "eval_cases",
+                "start": 715,
+                "end": 992
+            },
+            {
+                "name": "process_match",
+                "start": 997,
+                "end": 1017
+            },
+            {
+                "name": "expect_network",
+                "start": 1025,
+                "end": 1250
+            },
+            {
+                "name": "NExp_ExpectNetworkObjCmd",
+                "start": 1353,
+                "end": 1388
+            },
+            {
+                "name": "nexp_listener_append",
+                "start": 1390,
+                "end": 1395
+            },
+            {
+                "name": "ecase_append",
+                "start": 1397,
+                "end": 1407
+            },
+            {
+                "name": "netexpect_info",
+                "start": 1410,
+                "end": 1475
+            },
+            {
+                "name": "NExp_ExpectGlobalObjCmd",
+                "start": 1480,
+                "end": 1604
+            },
+            {
+                "name": "NExp_ExpectNetworkBackgroundObjCmd",
+                "start": 1614,
+                "end": 1725
+            },
+            {
+                "name": "terminate_children",
+                "start": 1772,
+                "end": 1777
+            },
+            {
+                "name": "sig_chld",
+                "start": 1784,
+                "end": 1791
+            },
+            {
+                "name": "nexp_init_expect_cmds",
+                "start": 1793,
+                "end": 1831
+            }
+        ],
+        "src/nexp_tgn.c": [
+            {
+                "name": "lookup_tgn",
+                "start": 89,
+                "end": 99
+            },
+            {
+                "name": "tgn_destroy",
+                "start": 101,
+                "end": 171
+            },
+            {
+                "name": "tgn_main",
+                "start": 176,
+                "end": 305
+            },
+            {
+                "name": "usage",
+                "start": 307,
+                "end": 313
+            },
+            {
+                "name": "process_options",
+                "start": 315,
+                "end": 434
+            },
+            {
+                "name": "tgn_create",
+                "start": 436,
+                "end": 519
+            },
+            {
+                "name": "tgn_info",
+                "start": 521,
+                "end": 549
+            },
+            {
+                "name": "NExp_TGNObjCmd",
+                "start": 563,
+                "end": 630
+            },
+            {
+                "name": "nexp_init_tgn_cmd",
+                "start": 638,
+                "end": 642
+            }
+        ],
+        "src/nexp_tclvars.c": [
+            {
+                "name": "update_int",
+                "start": 40,
+                "end": 53
+            },
+            {
+                "name": "update_double",
+                "start": 61,
+                "end": 74
+            },
+            {
+                "name": "setup_tcl_vartrace",
+                "start": 76,
+                "end": 97
+            },
+            {
+                "name": "nexp_init_tclvars",
+                "start": 99,
+                "end": 119
+            }
+        ],
+        "src/numbers/util.c": [
+            {
+                "name": "_num_ipaddr2str",
+                "start": 32,
+                "end": 44
+            },
+            {
+                "name": "_num_random_int",
+                "start": 49,
+                "end": 53
+            }
+        ],
+        "src/numbers/parser.c": [
+            {
+                "name": "yystpcpy",
+                "start": 954,
+                "end": 970
+            },
+            {
+                "name": "yytnamerr",
+                "start": 982,
+                "end": 1019
+            },
+            {
+                "name": "yysyntax_error",
+                "start": 1029,
+                "end": 1128
+            },
+            {
+                "name": "yydestruct",
+                "start": 1139,
+                "end": 1165
+            },
+            {
+                "name": "numspecparse",
+                "start": 1214,
+                "end": 2168
+            },
+            {
+                "name": "proto_or_service_number",
+                "start": 2179,
+                "end": 2196
+            },
+            {
+                "name": "create_iprange",
+                "start": 2198,
+                "end": 2226
+            },
+            {
+                "name": "create_iprand",
+                "start": 2228,
+                "end": 2253
+            },
+            {
+                "name": "mask2bits",
+                "start": 2255,
+                "end": 2268
+            },
+            {
+                "name": "numspecerror",
+                "start": 2270,
+                "end": 2276
+            },
+            {
+                "name": "num_init",
+                "start": 2278,
+                "end": 2319
+            },
+            {
+                "name": "num_initn",
+                "start": 2324,
+                "end": 2341
+            },
+            {
+                "name": "ip_init",
+                "start": 2343,
+                "end": 2384
+            },
+            {
+                "name": "ip_initn",
+                "start": 2386,
+                "end": 2401
+            }
+        ],
+        "src/numbers/numbers.c": [
+            {
+                "name": "num_next",
+                "start": 48,
+                "end": 154
+            },
+            {
+                "name": "num_info",
+                "start": 156,
+                "end": 260
+            },
+            {
+                "name": "num_destroy",
+                "start": 262,
+                "end": 275
+            },
+            {
+                "name": "num_spec",
+                "start": 277,
+                "end": 281
+            },
+            {
+                "name": "ip_next",
+                "start": 290,
+                "end": 374
+            },
+            {
+                "name": "num_getfreq",
+                "start": 376,
+                "end": 380
+            },
+            {
+                "name": "num_setfreq",
+                "start": 382,
+                "end": 386
+            },
+            {
+                "name": "num_nvalues",
+                "start": 388,
+                "end": 392
+            },
+            {
+                "name": "num_seq",
+                "start": 394,
+                "end": 398
+            }
+        ],
+        "src/numbers/scanner.c": [
+            {
+                "name": "numspeclex",
+                "start": 744,
+                "end": 1115
+            },
+            {
+                "name": "yy_get_next_buffer",
+                "start": 1124,
+                "end": 1254
+            },
+            {
+                "name": "yy_get_previous_state",
+                "start": 1258,
+                "end": 1283
+            },
+            {
+                "name": "yy_try_NUL_trans",
+                "start": 1290,
+                "end": 1311
+            },
+            {
+                "name": "input",
+                "start": 1317,
+                "end": 1384
+            },
+            {
+                "name": "numspecrestart",
+                "start": 1392,
+                "end": 1403
+            },
+            {
+                "name": "numspec_switch_to_buffer",
+                "start": 1409,
+                "end": 1438
+            },
+            {
+                "name": "numspec_load_buffer_state",
+                "start": 1440,
+                "end": 1446
+            },
+            {
+                "name": "numspec_create_buffer",
+                "start": 1454,
+                "end": 1476
+            },
+            {
+                "name": "numspec_delete_buffer",
+                "start": 1482,
+                "end": 1495
+            },
+            {
+                "name": "numspec_init_buffer",
+                "start": 1505,
+                "end": 1527
+            },
+            {
+                "name": "numspec_flush_buffer",
+                "start": 1533,
+                "end": 1554
+            },
+            {
+                "name": "numspecpush_buffer_state",
+                "start": 1562,
+                "end": 1586
+            },
+            {
+                "name": "numspecpop_buffer_state",
+                "start": 1592,
+                "end": 1606
+            },
+            {
+                "name": "numspecensure_buffer_stack",
+                "start": 1611,
+                "end": 1652
+            },
+            {
+                "name": "numspec_scan_buffer",
+                "start": 1660,
+                "end": 1687
+            },
+            {
+                "name": "numspec_scan_string",
+                "start": 1697,
+                "end": 1701
+            },
+            {
+                "name": "numspec_scan_bytes",
+                "start": 1710,
+                "end": 1738
+            },
+            {
+                "name": "yy_fatal_error",
+                "start": 1744,
+                "end": 1748
+            },
+            {
+                "name": "numspecget_lineno",
+                "start": 1772,
+                "end": 1776
+            },
+            {
+                "name": "numspecget_in",
+                "start": 1781,
+                "end": 1784
+            },
+            {
+                "name": "numspecget_out",
+                "start": 1789,
+                "end": 1792
+            },
+            {
+                "name": "numspecget_leng",
+                "start": 1797,
+                "end": 1800
+            },
+            {
+                "name": "numspecget_text",
+                "start": 1806,
+                "end": 1809
+            },
+            {
+                "name": "numspecset_lineno",
+                "start": 1815,
+                "end": 1819
+            },
+            {
+                "name": "numspecset_in",
+                "start": 1827,
+                "end": 1830
+            },
+            {
+                "name": "numspecset_out",
+                "start": 1832,
+                "end": 1835
+            },
+            {
+                "name": "numspecget_debug",
+                "start": 1837,
+                "end": 1840
+            },
+            {
+                "name": "numspecset_debug",
+                "start": 1842,
+                "end": 1845
+            },
+            {
+                "name": "yy_init_globals",
+                "start": 1847,
+                "end": 1873
+            },
+            {
+                "name": "numspeclex_destroy",
+                "start": 1876,
+                "end": 1895
+            },
+            {
+                "name": "numspecalloc",
+                "start": 1921,
+                "end": 1924
+            },
+            {
+                "name": "numspecrealloc",
+                "start": 1926,
+                "end": 1936
+            },
+            {
+                "name": "numspecfree",
+                "start": 1938,
+                "end": 1941
+            }
+        ],
+        "src/p0f/crc32.c": [
+            {
+                "name": "crc32",
+                "start": 81,
+                "end": 88
+            }
+        ],
+        "src/pbuild/util.c": [
+            {
+                "name": "_pb_cksum",
+                "start": 43,
+                "end": 73
+            },
+            {
+                "name": "_pb_make_prefix",
+                "start": 79,
+                "end": 95
+            },
+            {
+                "name": "_pb_mac_to_ascii",
+                "start": 102,
+                "end": 113
+            },
+            {
+                "name": "_pb_ip6addr2str",
+                "start": 115,
+                "end": 127
+            },
+            {
+                "name": "_pb_array_shift_left",
+                "start": 134,
+                "end": 146
+            },
+            {
+                "name": "_pb_dump_bytes",
+                "start": 148,
+                "end": 175
+            },
+            {
+                "name": "_pb_format_ethernet_addr",
+                "start": 189,
+                "end": 278
+            },
+            {
+                "name": "_pb_ipx_to_ascii",
+                "start": 285,
+                "end": 297
+            },
+            {
+                "name": "_pb_format_ipx_addr",
+                "start": 315,
+                "end": 362
+            },
+            {
+                "name": "_pb_random_block",
+                "start": 367,
+                "end": 372
+            },
+            {
+                "name": "_pb_new_hash",
+                "start": 374,
+                "end": 389
+            }
+        ],
+        "src/pbuild/parser.c": [
+            {
+                "name": "pberror",
+                "start": 183,
+                "end": 184
+            },
+            {
+                "name": "new_parm_node",
+                "start": 189,
+                "end": 190
+            },
+            {
+                "name": "yystpcpy",
+                "start": 913,
+                "end": 929
+            },
+            {
+                "name": "yytnamerr",
+                "start": 941,
+                "end": 978
+            },
+            {
+                "name": "yysyntax_error",
+                "start": 988,
+                "end": 1087
+            },
+            {
+                "name": "yydestruct",
+                "start": 1098,
+                "end": 1128
+            },
+            {
+                "name": "pbparse",
+                "start": 1166,
+                "end": 1901
+            },
+            {
+                "name": "pberror",
+                "start": 1909,
+                "end": 1919
+            },
+            {
+                "name": "get_field",
+                "start": 1925,
+                "end": 1946
+            },
+            {
+                "name": "new_parm_node",
+                "start": 1959,
+                "end": 2193
+            },
+            {
+                "name": "calc_opt_lengths",
+                "start": 2195,
+                "end": 2232
+            },
+            {
+                "name": "calc_lengths",
+                "start": 2238,
+                "end": 2269
+            },
+            {
+                "name": "calc_change_frequencies",
+                "start": 2274,
+                "end": 2293
+            },
+            {
+                "name": "_pb_dump_numspecs",
+                "start": 2297,
+                "end": 2313
+            },
+            {
+                "name": "pb_parsedef",
+                "start": 2326,
+                "end": 2393
+            }
+        ],
+        "src/pbuild/pbuild.c": [
+            {
+                "name": "pb_len",
+                "start": 37,
+                "end": 47
+            },
+            {
+                "name": "pb_build",
+                "start": 56,
+                "end": 117
+            },
+            {
+                "name": "destroy_traverse_func",
+                "start": 119,
+                "end": 173
+            },
+            {
+                "name": "pb_destroy",
+                "start": 178,
+                "end": 185
+            },
+            {
+                "name": "dump_traverse_func",
+                "start": 242,
+                "end": 312
+            },
+            {
+                "name": "pb_dumppdu",
+                "start": 314,
+                "end": 323
+            },
+            {
+                "name": "pdu_list",
+                "start": 325,
+                "end": 338
+            },
+            {
+                "name": "pb_getname",
+                "start": 340,
+                "end": 344
+            },
+            {
+                "name": "pb_nextpdu",
+                "start": 350,
+                "end": 364
+            },
+            {
+                "name": "calc_permutations",
+                "start": 366,
+                "end": 397
+            },
+            {
+                "name": "pb_permutation_count",
+                "start": 403,
+                "end": 414
+            }
+        ],
+        "src/pbuild/scanner.c": [
+            {
+                "name": "pblex",
+                "start": 744,
+                "end": 745
+            },
+            {
+                "name": "pblex",
+                "start": 768,
+                "end": 1147
+            },
+            {
+                "name": "yy_get_next_buffer",
+                "start": 1156,
+                "end": 1287
+            },
+            {
+                "name": "yy_get_previous_state",
+                "start": 1291,
+                "end": 1317
+            },
+            {
+                "name": "yy_try_NUL_trans",
+                "start": 1324,
+                "end": 1346
+            },
+            {
+                "name": "input",
+                "start": 1352,
+                "end": 1420
+            },
+            {
+                "name": "pbrestart",
+                "start": 1428,
+                "end": 1440
+            },
+            {
+                "name": "pb_switch_to_buffer",
+                "start": 1446,
+                "end": 1476
+            },
+            {
+                "name": "pb_load_buffer_state",
+                "start": 1478,
+                "end": 1485
+            },
+            {
+                "name": "pb_create_buffer",
+                "start": 1493,
+                "end": 1515
+            },
+            {
+                "name": "pb_delete_buffer",
+                "start": 1521,
+                "end": 1535
+            },
+            {
+                "name": "pb_init_buffer",
+                "start": 1545,
+                "end": 1568
+            },
+            {
+                "name": "pb_flush_buffer",
+                "start": 1574,
+                "end": 1596
+            },
+            {
+                "name": "pbpush_buffer_state",
+                "start": 1604,
+                "end": 1629
+            },
+            {
+                "name": "pbpop_buffer_state",
+                "start": 1635,
+                "end": 1650
+            },
+            {
+                "name": "pbensure_buffer_stack",
+                "start": 1655,
+                "end": 1697
+            },
+            {
+                "name": "pb_scan_buffer",
+                "start": 1705,
+                "end": 1732
+            },
+            {
+                "name": "pb_scan_string",
+                "start": 1742,
+                "end": 1746
+            },
+            {
+                "name": "pb_scan_bytes",
+                "start": 1755,
+                "end": 1783
+            },
+            {
+                "name": "yy_fatal_error",
+                "start": 1789,
+                "end": 1793
+            },
+            {
+                "name": "pbget_extra",
+                "start": 1817,
+                "end": 1821
+            },
+            {
+                "name": "pbget_lineno",
+                "start": 1826,
+                "end": 1834
+            },
+            {
+                "name": "pbget_column",
+                "start": 1839,
+                "end": 1847
+            },
+            {
+                "name": "pbget_in",
+                "start": 1852,
+                "end": 1856
+            },
+            {
+                "name": "pbget_out",
+                "start": 1861,
+                "end": 1865
+            },
+            {
+                "name": "pbget_leng",
+                "start": 1870,
+                "end": 1874
+            },
+            {
+                "name": "pbget_text",
+                "start": 1880,
+                "end": 1884
+            },
+            {
+                "name": "pbset_extra",
+                "start": 1890,
+                "end": 1894
+            },
+            {
+                "name": "pbset_lineno",
+                "start": 1900,
+                "end": 1909
+            },
+            {
+                "name": "pbset_column",
+                "start": 1915,
+                "end": 1924
+            },
+            {
+                "name": "pbset_in",
+                "start": 1932,
+                "end": 1936
+            },
+            {
+                "name": "pbset_out",
+                "start": 1938,
+                "end": 1942
+            },
+            {
+                "name": "pbget_debug",
+                "start": 1944,
+                "end": 1948
+            },
+            {
+                "name": "pbset_debug",
+                "start": 1950,
+                "end": 1954
+            },
+            {
+                "name": "pbget_lval",
+                "start": 1958,
+                "end": 1962
+            },
+            {
+                "name": "pbset_lval",
+                "start": 1964,
+                "end": 1968
+            },
+            {
+                "name": "pblex_init",
+                "start": 1977,
+                "end": 1996
+            },
+            {
+                "name": "pblex_init_extra",
+                "start": 2006,
+                "end": 2032
+            },
+            {
+                "name": "yy_init_globals",
+                "start": 2034,
+                "end": 2065
+            },
+            {
+                "name": "pblex_destroy",
+                "start": 2068,
+                "end": 2095
+            },
+            {
+                "name": "pballoc",
+                "start": 2121,
+                "end": 2124
+            },
+            {
+                "name": "pbrealloc",
+                "start": 2126,
+                "end": 2136
+            },
+            {
+                "name": "pbfree",
+                "start": 2138,
+                "end": 2141
+            }
+        ],
+        "src/pbuild/private.c": [
+            {
+                "name": "_pb_pdata",
+                "start": 33,
+                "end": 50
+            },
+            {
+                "name": "_pb_findnode",
+                "start": 52,
+                "end": 68
+            },
+            {
+                "name": "_pb_parent_pdu",
+                "start": 73,
+                "end": 87
+            }
+        ],
+        "src/pbuild/init.c": [
+            {
+                "name": "_pb_getpdutemplate",
+                "start": 62,
+                "end": 66
+            },
+            {
+                "name": "_pb_getopttemplate",
+                "start": 71,
+                "end": 81
+            },
+            {
+                "name": "_pb_register_protocol_option",
+                "start": 83,
+                "end": 113
+            },
+            {
+                "name": "_pb_register_protocol",
+                "start": 115,
+                "end": 136
+            },
+            {
+                "name": "_pb_register_pdus",
+                "start": 138,
+                "end": 162
+            },
+            {
+                "name": "pb_init",
+                "start": 164,
+                "end": 189
+            }
+        ],
+        "src/pbuild/builders/pdu-igmp.c": [
+            {
+                "name": "build",
+                "start": 27,
+                "end": 40
+            },
+            {
+                "name": "postbuild",
+                "start": 42,
+                "end": 66
+            },
+            {
+                "name": "_pb_register_igmp",
+                "start": 103,
+                "end": 107
+            }
+        ],
+        "src/pbuild/builders/pdu-ipx.c": [
+            {
+                "name": "build",
+                "start": 30,
+                "end": 54
+            },
+            {
+                "name": "postbuild",
+                "start": 56,
+                "end": 85
+            },
+            {
+                "name": "_pb_register_ipx",
+                "start": 124,
+                "end": 128
+            }
+        ],
+        "src/pbuild/builders/pdu-mpls.c": [
+            {
+                "name": "build",
+                "start": 27,
+                "end": 42
+            },
+            {
+                "name": "_pb_register_mpls",
+                "start": 75,
+                "end": 79
+            }
+        ],
+        "src/pbuild/builders/pdu-icmpv6.c": [
+            {
+                "name": "pdu_icmpv6_generic_pass2_builder",
+                "start": 50,
+                "end": 129
+            },
+            {
+                "name": "pdu_icmpv6rawhdr_builder",
+                "start": 135,
+                "end": 144
+            },
+            {
+                "name": "pdu_icmpv6unreachablehdr_builder",
+                "start": 166,
+                "end": 176
+            },
+            {
+                "name": "pdu_icmpv6toobighdr_builder",
+                "start": 197,
+                "end": 210
+            },
+            {
+                "name": "pdu_icmpv6timeexceedhdr_builder",
+                "start": 232,
+                "end": 241
+            },
+            {
+                "name": "pdu_icmpv6parmproblemhdr_builder",
+                "start": 262,
+                "end": 275
+            },
+            {
+                "name": "pdu_icmpv6echo_builder",
+                "start": 298,
+                "end": 316
+            },
+            {
+                "name": "pdu_icmpv6echoreply_builder",
+                "start": 338,
+                "end": 354
+            },
+            {
+                "name": "pdu_icmpv6redirect_builder",
+                "start": 360,
+                "end": 379
+            },
+            {
+                "name": "pdu_nd_neighbor_solicit_builder",
+                "start": 406,
+                "end": 419
+            },
+            {
+                "name": "pdu_nd_neighbor_advert_builder",
+                "start": 443,
+                "end": 460
+            },
+            {
+                "name": "pdu_nd_router_solicit_builder",
+                "start": 490,
+                "end": 499
+            },
+            {
+                "name": "pdu_nd_router_advert_builder",
+                "start": 519,
+                "end": 545
+            },
+            {
+                "name": "pdu_icmpv6_router_renumber_builder",
+                "start": 577,
+                "end": 606
+            },
+            {
+                "name": "icmpv6_tlv",
+                "start": 645,
+                "end": 681
+            },
+            {
+                "name": "icmpv6_mtu",
+                "start": 683,
+                "end": 699
+            },
+            {
+                "name": "icmpv6_lnklayeraddr",
+                "start": 701,
+                "end": 713
+            },
+            {
+                "name": "_pb_register_icmp6",
+                "start": 997,
+                "end": 1017
+            }
+        ],
+        "src/pbuild/builders/pdu-vtp.c": [
+            {
+                "name": "vlan_info_len",
+                "start": 233,
+                "end": 254
+            },
+            {
+                "name": "_pb_register_vtp",
+                "start": 380,
+                "end": 389
+            }
+        ],
+        "src/pbuild/builders/pdu-ospf.c": [
+            {
+                "name": "pdu_ospf_generic_postbuild",
+                "start": 32,
+                "end": 60
+            },
+            {
+                "name": "pdu_ospfrawhdr_builder",
+                "start": 66,
+                "end": 89
+            },
+            {
+                "name": "pdu_ospfhello_builder",
+                "start": 116,
+                "end": 176
+            },
+            {
+                "name": "pdu_ospfhello_len",
+                "start": 178,
+                "end": 198
+            },
+            {
+                "name": "_pb_register_ospf",
+                "start": 279,
+                "end": 284
+            }
+        ],
+        "src/pbuild/builders/pdu-gre.c": [
+            {
+                "name": "builder",
+                "start": 27,
+                "end": 63
+            },
+            {
+                "name": "greopt_cksum",
+                "start": 80,
+                "end": 101
+            },
+            {
+                "name": "_pb_register_gre",
+                "start": 125,
+                "end": 131
+            }
+        ],
+        "src/pbuild/builders/pdu-802dot1q.c": [
+            {
+                "name": "builder",
+                "start": 27,
+                "end": 68
+            },
+            {
+                "name": "_pb_register_dot1q",
+                "start": 103,
+                "end": 107
+            }
+        ],
+        "src/pbuild/builders/pdu-arp.c": [
+            {
+                "name": "builder",
+                "start": 26,
+                "end": 76
+            },
+            {
+                "name": "_pb_register_arp",
+                "start": 170,
+                "end": 179
+            }
+        ],
+        "src/pbuild/builders/pdu-udp.c": [
+            {
+                "name": "build",
+                "start": 51,
+                "end": 82
+            },
+            {
+                "name": "postbuild",
+                "start": 84,
+                "end": 205
+            },
+            {
+                "name": "_pb_register_udp",
+                "start": 241,
+                "end": 251
+            }
+        ],
+        "src/pbuild/builders/pdu-sntp.c": [
+            {
+                "name": "_pb_register_sntp",
+                "start": 157,
+                "end": 161
+            }
+        ],
+        "src/pbuild/builders/pdu-ipgeneric.c": [
+            {
+                "name": "postbuild",
+                "start": 195,
+                "end": 228
+            },
+            {
+                "name": "ipv4opt_raw",
+                "start": 234,
+                "end": 243
+            },
+            {
+                "name": "ipv4opt_rr",
+                "start": 245,
+                "end": 288
+            },
+            {
+                "name": "option_len",
+                "start": 295,
+                "end": 329
+            },
+            {
+                "name": "_pb_register_ipv4_generic",
+                "start": 382,
+                "end": 393
+            }
+        ],
+        "src/pbuild/builders/pdu-bgp.c": [
+            {
+                "name": "pdu_bgpopen_builder",
+                "start": 31,
+                "end": 69
+            },
+            {
+                "name": "pdu_bgpupdate_builder",
+                "start": 96,
+                "end": 183
+            },
+            {
+                "name": "_pb_register_bgp",
+                "start": 239,
+                "end": 244
+            }
+        ],
+        "src/pbuild/builders/pdu-ipv6.c": [
+            {
+                "name": "ipv6_nxt_hdr",
+                "start": 58,
+                "end": 86
+            },
+            {
+                "name": "pdu_ipv6hdr_builder",
+                "start": 92,
+                "end": 121
+            },
+            {
+                "name": "pdu_ipv6hdr_builder2",
+                "start": 123,
+                "end": 137
+            },
+            {
+                "name": "pdu_ipv6hbh_builder",
+                "start": 161,
+                "end": 232
+            },
+            {
+                "name": "pdu_ipv6hbh_len",
+                "start": 238,
+                "end": 271
+            },
+            {
+                "name": "pdu_ipv6destopts_builder",
+                "start": 277,
+                "end": 348
+            },
+            {
+                "name": "pdu_ipv6frag_builder",
+                "start": 354,
+                "end": 373
+            },
+            {
+                "name": "pdu_ipv6rthdr_builder",
+                "start": 397,
+                "end": 430
+            },
+            {
+                "name": "pdu_ipv6rthdr_len",
+                "start": 436,
+                "end": 458
+            },
+            {
+                "name": "_pb_register_ipv6",
+                "start": 567,
+                "end": 577
+            }
+        ],
+        "src/pbuild/builders/pdu-ether.c": [
+            {
+                "name": "build",
+                "start": 26,
+                "end": 69
+            },
+            {
+                "name": "_pb_register_ether",
+                "start": 192,
+                "end": 199
+            }
+        ],
+        "src/pbuild/builders/pdu-data.c": [
+            {
+                "name": "build",
+                "start": 26,
+                "end": 55
+            },
+            {
+                "name": "get_len",
+                "start": 57,
+                "end": 83
+            },
+            {
+                "name": "_pb_register_data",
+                "start": 125,
+                "end": 129
+            }
+        ],
+        "src/pbuild/builders/pdu-ip.c": [
+            {
+                "name": "build",
+                "start": 47,
+                "end": 151
+            },
+            {
+                "name": "postbuild",
+                "start": 153,
+                "end": 179
+            },
+            {
+                "name": "ipv4opt_raw",
+                "start": 224,
+                "end": 233
+            },
+            {
+                "name": "ipv4opt_eol",
+                "start": 235,
+                "end": 240
+            },
+            {
+                "name": "ipv4opt_nop",
+                "start": 242,
+                "end": 247
+            },
+            {
+                "name": "ipv4opt_rr",
+                "start": 249,
+                "end": 292
+            },
+            {
+                "name": "option_len",
+                "start": 299,
+                "end": 333
+            },
+            {
+                "name": "_pb_register_ipv4",
+                "start": 425,
+                "end": 442
+            }
+        ],
+        "src/pbuild/builders/pdu-generic.c": [
+            {
+                "name": "write_field_default",
+                "start": 30,
+                "end": 157
+            },
+            {
+                "name": "write_field",
+                "start": 168,
+                "end": 241
+            },
+            {
+                "name": "_pb_generic_build",
+                "start": 246,
+                "end": 290
+            },
+            {
+                "name": "pdu_generic_tlv_len",
+                "start": 301,
+                "end": 313
+            },
+            {
+                "name": "pdu_generic_tlv_len2",
+                "start": 326,
+                "end": 338
+            },
+            {
+                "name": "pdu_generic_tlv_len4",
+                "start": 351,
+                "end": 363
+            }
+        ],
+        "src/pbuild/builders/pdu-tcp.c": [
+            {
+                "name": "build",
+                "start": 48,
+                "end": 103
+            },
+            {
+                "name": "postbuild",
+                "start": 105,
+                "end": 217
+            },
+            {
+                "name": "tcpopt_eol",
+                "start": 256,
+                "end": 262
+            },
+            {
+                "name": "tcpopt_nop",
+                "start": 264,
+                "end": 269
+            },
+            {
+                "name": "tcpopt_maxseg",
+                "start": 271,
+                "end": 281
+            },
+            {
+                "name": "tcpopt_window",
+                "start": 297,
+                "end": 304
+            },
+            {
+                "name": "tcpopt_signature",
+                "start": 323,
+                "end": 402
+            },
+            {
+                "name": "tcpopt_timestamp",
+                "start": 420,
+                "end": 441
+            },
+            {
+                "name": "tcpopt_raw",
+                "start": 459,
+                "end": 470
+            },
+            {
+                "name": "tcpopt_raw_len",
+                "start": 472,
+                "end": 480
+            },
+            {
+                "name": "tcpopt_sackok",
+                "start": 495,
+                "end": 501
+            },
+            {
+                "name": "_pb_register_tcp",
+                "start": 605,
+                "end": 618
+            }
+        ],
+        "src/pbuild/builders/pdu-dns.c": [
+            {
+                "name": "build",
+                "start": 39,
+                "end": 124
+            },
+            {
+                "name": "_pb_register_dns",
+                "start": 167,
+                "end": 171
+            }
+        ],
+        "src/pbuild/builders/pdu-icmp.c": [
+            {
+                "name": "pdu_icmp_generic_pass2_builder",
+                "start": 32,
+                "end": 57
+            },
+            {
+                "name": "pdu_icmprawhdr_builder",
+                "start": 63,
+                "end": 72
+            },
+            {
+                "name": "pdu_icmpecho_builder",
+                "start": 94,
+                "end": 117
+            },
+            {
+                "name": "pdu_icmpechoreply_builder",
+                "start": 135,
+                "end": 149
+            },
+            {
+                "name": "pdu_icmpredirect_builder",
+                "start": 155,
+                "end": 168
+            },
+            {
+                "name": "pdu_icmpsrcquench_builder",
+                "start": 192,
+                "end": 202
+            },
+            {
+                "name": "pdu_icmpparmproblemhdr_builder",
+                "start": 208,
+                "end": 220
+            },
+            {
+                "name": "pdu_icmptimeexceed_builder",
+                "start": 242,
+                "end": 252
+            },
+            {
+                "name": "_pb_register_icmp",
+                "start": 415,
+                "end": 426
+            }
+        ],
+        "src/pbuild/builders/pdu-dtp.c": [
+            {
+                "name": "_pb_register_dtp",
+                "start": 114,
+                "end": 120
+            }
+        ],
+        "src/dumbhex/dumbhex.c": [
+            {
+                "name": "dumbhexlex",
+                "start": 729,
+                "end": 1064
+            },
+            {
+                "name": "yy_get_next_buffer",
+                "start": 1073,
+                "end": 1204
+            },
+            {
+                "name": "yy_get_previous_state",
+                "start": 1208,
+                "end": 1234
+            },
+            {
+                "name": "yy_try_NUL_trans",
+                "start": 1241,
+                "end": 1263
+            },
+            {
+                "name": "input",
+                "start": 1269,
+                "end": 1337
+            },
+            {
+                "name": "dumbhexrestart",
+                "start": 1345,
+                "end": 1357
+            },
+            {
+                "name": "dumbhex_switch_to_buffer",
+                "start": 1363,
+                "end": 1393
+            },
+            {
+                "name": "dumbhex_load_buffer_state",
+                "start": 1395,
+                "end": 1402
+            },
+            {
+                "name": "dumbhex_create_buffer",
+                "start": 1410,
+                "end": 1432
+            },
+            {
+                "name": "dumbhex_delete_buffer",
+                "start": 1438,
+                "end": 1452
+            },
+            {
+                "name": "dumbhex_init_buffer",
+                "start": 1462,
+                "end": 1485
+            },
+            {
+                "name": "dumbhex_flush_buffer",
+                "start": 1491,
+                "end": 1513
+            },
+            {
+                "name": "dumbhexpush_buffer_state",
+                "start": 1521,
+                "end": 1546
+            },
+            {
+                "name": "dumbhexpop_buffer_state",
+                "start": 1552,
+                "end": 1567
+            },
+            {
+                "name": "dumbhexensure_buffer_stack",
+                "start": 1572,
+                "end": 1614
+            },
+            {
+                "name": "dumbhex_scan_buffer",
+                "start": 1622,
+                "end": 1649
+            },
+            {
+                "name": "dumbhex_scan_string",
+                "start": 1659,
+                "end": 1663
+            },
+            {
+                "name": "dumbhex_scan_bytes",
+                "start": 1672,
+                "end": 1700
+            },
+            {
+                "name": "yy_fatal_error",
+                "start": 1706,
+                "end": 1710
+            },
+            {
+                "name": "dumbhexget_extra",
+                "start": 1734,
+                "end": 1738
+            },
+            {
+                "name": "dumbhexget_lineno",
+                "start": 1743,
+                "end": 1751
+            },
+            {
+                "name": "dumbhexget_column",
+                "start": 1756,
+                "end": 1764
+            },
+            {
+                "name": "dumbhexget_in",
+                "start": 1769,
+                "end": 1773
+            },
+            {
+                "name": "dumbhexget_out",
+                "start": 1778,
+                "end": 1782
+            },
+            {
+                "name": "dumbhexget_leng",
+                "start": 1787,
+                "end": 1791
+            },
+            {
+                "name": "dumbhexget_text",
+                "start": 1797,
+                "end": 1801
+            },
+            {
+                "name": "dumbhexset_extra",
+                "start": 1807,
+                "end": 1811
+            },
+            {
+                "name": "dumbhexset_lineno",
+                "start": 1817,
+                "end": 1826
+            },
+            {
+                "name": "dumbhexset_column",
+                "start": 1832,
+                "end": 1841
+            },
+            {
+                "name": "dumbhexset_in",
+                "start": 1849,
+                "end": 1853
+            },
+            {
+                "name": "dumbhexset_out",
+                "start": 1855,
+                "end": 1859
+            },
+            {
+                "name": "dumbhexget_debug",
+                "start": 1861,
+                "end": 1865
+            },
+            {
+                "name": "dumbhexset_debug",
+                "start": 1867,
+                "end": 1871
+            },
+            {
+                "name": "dumbhexlex_init",
+                "start": 1882,
+                "end": 1901
+            },
+            {
+                "name": "dumbhexlex_init_extra",
+                "start": 1911,
+                "end": 1937
+            },
+            {
+                "name": "yy_init_globals",
+                "start": 1939,
+                "end": 1970
+            },
+            {
+                "name": "dumbhexlex_destroy",
+                "start": 1973,
+                "end": 2000
+            },
+            {
+                "name": "dumbhexalloc",
+                "start": 2026,
+                "end": 2029
+            },
+            {
+                "name": "dumbhexrealloc",
+                "start": 2031,
+                "end": 2041
+            },
+            {
+                "name": "dumbhexfree",
+                "start": 2043,
+                "end": 2046
+            },
+            {
+                "name": "dh_parsehex",
+                "start": 2054,
+                "end": 2096
+            }
+        ],
+        "src/usr/usr.c": [
+            {
+                "name": "usr_init",
+                "start": 43,
+                "end": 56
+            },
+            {
+                "name": "usr_outif",
+                "start": 58,
+                "end": 62
+            }
+        ],
+        "src/usr/iproute.c": [
+            {
+                "name": "rt_handler",
+                "start": 35,
+                "end": 56
+            },
+            {
+                "name": "rtable_sync",
+                "start": 61,
+                "end": 91
+            },
+            {
+                "name": "rtable_new",
+                "start": 100,
+                "end": 120
+            },
+            {
+                "name": "rtable_destroy",
+                "start": 126,
+                "end": 131
+            },
+            {
+                "name": "rtable_print",
+                "start": 137,
+                "end": 159
+            }
+        ],
+        "src/usr/iface.c": [
+            {
+                "name": "iface_handler",
+                "start": 35,
+                "end": 65
+            },
+            {
+                "name": "iftable_sync",
+                "start": 70,
+                "end": 96
+            },
+            {
+                "name": "iftable_new",
+                "start": 102,
+                "end": 121
+            },
+            {
+                "name": "iftable_destroy",
+                "start": 126,
+                "end": 131
+            },
+            {
+                "name": "iftable_print",
+                "start": 137,
+                "end": 201
+            }
+        ],
+        "src/packets/packets-priv.h": [
+            {
+                "name": "_pkt_createvar",
+                "start": 36,
+                "end": 37
+            }
+        ],
+        "src/packets/util.c": [
+            {
+                "name": "_pkt_varname",
+                "start": 43,
+                "end": 90
+            },
+            {
+                "name": "_pkt_createvar",
+                "start": 92,
+                "end": 118
+            },
+            {
+                "name": "_pkt_layername",
+                "start": 124,
+                "end": 142
+            },
+            {
+                "name": "_pkt_prepend_ns_name",
+                "start": 147,
+                "end": 162
+            }
+        ],
+        "src/packets/dissect.c": [
+            {
+                "name": "remove_all",
+                "start": 38,
+                "end": 42
+            },
+            {
+                "name": "proto_tree_tcl_node",
+                "start": 64,
+                "end": 290
+            },
+            {
+                "name": "proto_tree_tcl",
+                "start": 292,
+                "end": 384
+            },
+            {
+                "name": "pkt_dissect_tcl",
+                "start": 406,
+                "end": 477
+            },
+            {
+                "name": "_pkt_get_uint8",
+                "start": 483,
+                "end": 495
+            },
+            {
+                "name": "_pkt_get_uint16",
+                "start": 497,
+                "end": 510
+            },
+            {
+                "name": "_pkt_get_ipaddr",
+                "start": 533,
+                "end": 546
+            },
+            {
+                "name": "_pkt_get_boolean",
+                "start": 548,
+                "end": 560
+            },
+            {
+                "name": "proto_tree_print_node",
+                "start": 577,
+                "end": 615
+            },
+            {
+                "name": "proto_tree_print_simple_node",
+                "start": 617,
+                "end": 674
+            },
+            {
+                "name": "pkt_dissect_show",
+                "start": 683,
+                "end": 713
+            }
+        ],
+        "src/packets/isanswer.c": [
+            {
+                "name": "pkt_isanswer",
+                "start": 92,
+                "end": 196
+            },
+            {
+                "name": "isanswer_eth",
+                "start": 198,
+                "end": 212
+            },
+            {
+                "name": "isanswer_arp",
+                "start": 214,
+                "end": 233
+            },
+            {
+                "name": "isanswer_ip",
+                "start": 235,
+                "end": 309
+            },
+            {
+                "name": "isanswer_icmp",
+                "start": 311,
+                "end": 402
+            },
+            {
+                "name": "isanswer_tcp",
+                "start": 404,
+                "end": 433
+            },
+            {
+                "name": "isanswer_udp",
+                "start": 435,
+                "end": 464
+            },
+            {
+                "name": "isanswer_dns",
+                "start": 466,
+                "end": 481
+            }
+        ],
+        "src/packets/proto_hier_stats.c": [
+            {
+                "name": "find_stat_node",
+                "start": 48,
+                "end": 76
+            },
+            {
+                "name": "process_node",
+                "start": 79,
+                "end": 120
+            },
+            {
+                "name": "process_tree",
+                "start": 122,
+                "end": 133
+            },
+            {
+                "name": "process_frame",
+                "start": 135,
+                "end": 166
+            },
+            {
+                "name": "ph_stats_tcl",
+                "start": 168,
+                "end": 262
+            },
+            {
+                "name": "stat_node_free",
+                "start": 264,
+                "end": 273
+            },
+            {
+                "name": "ph_stats_free",
+                "start": 275,
+                "end": 287
+            }
+        ],
+        "src/packets/hash.c": [
+            {
+                "name": "pkt_hash",
+                "start": 73,
+                "end": 126
+            },
+            {
+                "name": "hash_eth",
+                "start": 128,
+                "end": 137
+            },
+            {
+                "name": "hash_ip",
+                "start": 139,
+                "end": 193
+            },
+            {
+                "name": "hash_icmp",
+                "start": 195,
+                "end": 230
+            },
+            {
+                "name": "hash_tcp",
+                "start": 232,
+                "end": 253
+            }
+        ],
+        "src/packets/packets.c": [
+            {
+                "name": "init_libwireshark",
+                "start": 54,
+                "end": 158
+            },
+            {
+                "name": "packets_cleanup",
+                "start": 164,
+                "end": 170
+            },
+            {
+                "name": "pkt_init",
+                "start": 172,
+                "end": 185
+            },
+            {
+                "name": "remove_all",
+                "start": 192,
+                "end": 196
+            },
+            {
+                "name": "unset_var",
+                "start": 199,
+                "end": 207
+            },
+            {
+                "name": "pkt_clear_dissection",
+                "start": 209,
+                "end": 245
+            },
+            {
+                "name": "add_key_to_list",
+                "start": 256,
+                "end": 267
+            },
+            {
+                "name": "pkt_show_dissection",
+                "start": 269,
+                "end": 285
+            }
+        ]
+    }
+}

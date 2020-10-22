@@ -1,0 +1,403 @@
+{
+    "nodm-0.11": {
+        "test.c": [
+            {
+                "name": "test_setup_dm",
+                "start": 30,
+                "end": 53
+            },
+            {
+                "name": "test_start",
+                "start": 55,
+                "end": 64
+            },
+            {
+                "name": "test_fail",
+                "start": 66,
+                "end": 70
+            },
+            {
+                "name": "test_ok",
+                "start": 72,
+                "end": 76
+            },
+            {
+                "name": "ensure_equals",
+                "start": 78,
+                "end": 87
+            },
+            {
+                "name": "ensure_not_equals",
+                "start": 89,
+                "end": 101
+            },
+            {
+                "name": "ensure_equali",
+                "start": 103,
+                "end": 110
+            },
+            {
+                "name": "_ensure_succeeds",
+                "start": 112,
+                "end": 119
+            }
+        ],
+        "common.c": [
+            {
+                "name": "basename",
+                "start": 29,
+                "end": 33
+            },
+            {
+                "name": "getenv_with_default",
+                "start": 35,
+                "end": 42
+            },
+            {
+                "name": "nodm_strerror",
+                "start": 44,
+                "end": 69
+            },
+            {
+                "name": "child_has_quit",
+                "start": 71,
+                "end": 88
+            },
+            {
+                "name": "child_must_exit",
+                "start": 90,
+                "end": 129
+            }
+        ],
+        "dm.c": [
+            {
+                "name": "nodm_display_manager_init",
+                "start": 36,
+                "end": 50
+            },
+            {
+                "name": "nodm_display_manager_cleanup",
+                "start": 52,
+                "end": 74
+            },
+            {
+                "name": "nodm_display_manager_start",
+                "start": 76,
+                "end": 111
+            },
+            {
+                "name": "nodm_display_manager_restart",
+                "start": 113,
+                "end": 126
+            },
+            {
+                "name": "nodm_display_manager_stop",
+                "start": 128,
+                "end": 137
+            },
+            {
+                "name": "catch_signals",
+                "start": 141,
+                "end": 144
+            },
+            {
+                "name": "setup_quit_notification",
+                "start": 146,
+                "end": 170
+            },
+            {
+                "name": "shutdown_quit_notification",
+                "start": 172,
+                "end": 176
+            },
+            {
+                "name": "nodm_display_manager_wait",
+                "start": 178,
+                "end": 232
+            },
+            {
+                "name": "nodm_display_manager_parse_xcmdline",
+                "start": 234,
+                "end": 315
+            },
+            {
+                "name": "nodm_display_manager_dump_status",
+                "start": 317,
+                "end": 321
+            },
+            {
+                "name": "interruptible_sleep",
+                "start": 323,
+                "end": 357
+            },
+            {
+                "name": "nodm_display_manager_wait_restart_loop",
+                "start": 359,
+                "end": 404
+            }
+        ],
+        "xserver.c": [
+            {
+                "name": "nodm_xserver_init",
+                "start": 73,
+                "end": 84
+            },
+            {
+                "name": "nodm_xserver_start",
+                "start": 86,
+                "end": 262
+            },
+            {
+                "name": "nodm_xserver_stop",
+                "start": 264,
+                "end": 277
+            },
+            {
+                "name": "xopendisplay_error_handler",
+                "start": 279,
+                "end": 284
+            },
+            {
+                "name": "nodm_xserver_connect",
+                "start": 294,
+                "end": 319
+            },
+            {
+                "name": "ignorexio",
+                "start": 322,
+                "end": 327
+            },
+            {
+                "name": "nodm_xserver_disconnect",
+                "start": 329,
+                "end": 344
+            },
+            {
+                "name": "nodm_xserver_read_window_path",
+                "start": 346,
+                "end": 421
+            },
+            {
+                "name": "nodm_xserver_dump_status",
+                "start": 423,
+                "end": 434
+            },
+            {
+                "name": "nodm_xserver_report_exit",
+                "start": 436,
+                "end": 447
+            }
+        ],
+        "xsession-child.c": [
+            {
+                "name": "cleanup_xse",
+                "start": 105,
+                "end": 138
+            },
+            {
+                "name": "setup_groups",
+                "start": 145,
+                "end": 165
+            },
+            {
+                "name": "change_uid",
+                "start": 167,
+                "end": 177
+            },
+            {
+                "name": "setup_pam",
+                "start": 179,
+                "end": 286
+            },
+            {
+                "name": "shutdown_pam",
+                "start": 288,
+                "end": 299
+            },
+            {
+                "name": "nodm_xsession_child_common_env",
+                "start": 301,
+                "end": 344
+            },
+            {
+                "name": "nodm_xsession_child",
+                "start": 346,
+                "end": 368
+            },
+            {
+                "name": "catch_signals",
+                "start": 372,
+                "end": 375
+            },
+            {
+                "name": "nodm_xsession_child_pam",
+                "start": 381,
+                "end": 497
+            }
+        ],
+        "test-xsession.c": [
+            {
+                "name": "test_session",
+                "start": 36,
+                "end": 45
+            },
+            {
+                "name": "test_session_bad",
+                "start": 47,
+                "end": 53
+            },
+            {
+                "name": "test_session_x_killer",
+                "start": 55,
+                "end": 68
+            },
+            {
+                "name": "test_trivial_session",
+                "start": 71,
+                "end": 84
+            },
+            {
+                "name": "test_bad_x_server",
+                "start": 87,
+                "end": 105
+            },
+            {
+                "name": "test_failing_x_session",
+                "start": 108,
+                "end": 124
+            },
+            {
+                "name": "test_dying_x_server",
+                "start": 127,
+                "end": 142
+            },
+            {
+                "name": "main",
+                "start": 144,
+                "end": 160
+            }
+        ],
+        "xsession.c": [
+            {
+                "name": "nodm_xsession_init",
+                "start": 36,
+                "end": 56
+            },
+            {
+                "name": "nodm_xsession_start",
+                "start": 58,
+                "end": 138
+            },
+            {
+                "name": "nodm_xsession_stop",
+                "start": 140,
+                "end": 145
+            },
+            {
+                "name": "nodm_xsession_dump_status",
+                "start": 147,
+                "end": 155
+            },
+            {
+                "name": "nodm_xsession_report_exit",
+                "start": 157,
+                "end": 168
+            }
+        ],
+        "nodm.c": [
+            {
+                "name": "do_help",
+                "start": 43,
+                "end": 56
+            },
+            {
+                "name": "main",
+                "start": 67,
+                "end": 182
+            }
+        ],
+        "test-internals.c": [
+            {
+                "name": "main",
+                "start": 29,
+                "end": 186
+            }
+        ],
+        "test-xstart.c": [
+            {
+                "name": "main",
+                "start": 29,
+                "end": 59
+            }
+        ],
+        "vt.c": [
+            {
+                "name": "try_vtstate",
+                "start": 39,
+                "end": 52
+            },
+            {
+                "name": "get_vtstate",
+                "start": 55,
+                "end": 61
+            },
+            {
+                "name": "nodm_vt_init",
+                "start": 63,
+                "end": 68
+            },
+            {
+                "name": "nodm_vt_start",
+                "start": 70,
+                "end": 106
+            },
+            {
+                "name": "nodm_vt_stop",
+                "start": 108,
+                "end": 116
+            }
+        ],
+        "log.c": [
+            {
+                "name": "log_config_init",
+                "start": 29,
+                "end": 35
+            },
+            {
+                "name": "log_start",
+                "start": 37,
+                "end": 43
+            },
+            {
+                "name": "log_end",
+                "start": 45,
+                "end": 49
+            },
+            {
+                "name": "log_common",
+                "start": 51,
+                "end": 75
+            },
+            {
+                "name": "log_verb",
+                "start": 77,
+                "end": 87
+            },
+            {
+                "name": "log_info",
+                "start": 89,
+                "end": 99
+            },
+            {
+                "name": "log_warn",
+                "start": 101,
+                "end": 111
+            },
+            {
+                "name": "log_err",
+                "start": 113,
+                "end": 123
+            }
+        ]
+    }
+}

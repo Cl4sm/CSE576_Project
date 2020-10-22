@@ -1,0 +1,4549 @@
+{
+    "bam-0.4.0": {
+        "src/node.h": [
+            {
+                "name": "node_walk",
+                "start": 223,
+                "end": 227
+            }
+        ],
+        "src/nodelinktree.inl": [
+            {
+                "name": "nodelinktree_find_closest",
+                "start": 2,
+                "end": 21
+            },
+            {
+                "name": "nodelinktree_rotate_parentswap",
+                "start": 23,
+                "end": 34
+            },
+            {
+                "name": "nodelinktree_rotate_depthcalc",
+                "start": 36,
+                "end": 52
+            },
+            {
+                "name": "nodelinktree_rotate_right",
+                "start": 54,
+                "end": 69
+            },
+            {
+                "name": "nodelinktree_rotate_left",
+                "start": 71,
+                "end": 86
+            },
+            {
+                "name": "nodelinktree_rebalance",
+                "start": 89,
+                "end": 110
+            },
+            {
+                "name": "nodelinktree_insert",
+                "start": 112,
+                "end": 152
+            }
+        ],
+        "src/node.c": [
+            {
+                "name": "node_create_graph",
+                "start": 17,
+                "end": 29
+            },
+            {
+                "name": "node_create",
+                "start": 32,
+                "end": 116
+            },
+            {
+                "name": "node_find_byhash",
+                "start": 119,
+                "end": 126
+            },
+            {
+                "name": "node_find",
+                "start": 128,
+                "end": 131
+            },
+            {
+                "name": "node_get",
+                "start": 134,
+                "end": 144
+            },
+            {
+                "name": "node_add_dependency_withnode",
+                "start": 146,
+                "end": 188
+            },
+            {
+                "name": "node_add_job_dependency_withnode",
+                "start": 191,
+                "end": 222
+            },
+            {
+                "name": "node_add_dependency",
+                "start": 226,
+                "end": 232
+            },
+            {
+                "name": "node_add_constraint",
+                "start": 234,
+                "end": 242
+            },
+            {
+                "name": "node_add_constraint_shared",
+                "start": 244,
+                "end": 247
+            },
+            {
+                "name": "node_add_constraint_exclusive",
+                "start": 249,
+                "end": 252
+            },
+            {
+                "name": "node_cached",
+                "start": 254,
+                "end": 257
+            },
+            {
+                "name": "node_set_pseudo",
+                "start": 259,
+                "end": 263
+            },
+            {
+                "name": "bitarray_allocate",
+                "start": 266,
+                "end": 267
+            },
+            {
+                "name": "bitarray_zeroall",
+                "start": 269,
+                "end": 270
+            },
+            {
+                "name": "bitarray_free",
+                "start": 272,
+                "end": 273
+            },
+            {
+                "name": "bitarray_value",
+                "start": 275,
+                "end": 276
+            },
+            {
+                "name": "bitarray_set",
+                "start": 278,
+                "end": 279
+            },
+            {
+                "name": "bitarray_clear",
+                "start": 281,
+                "end": 282
+            },
+            {
+                "name": "node_walk_r",
+                "start": 285,
+                "end": 353
+            },
+            {
+                "name": "node_walk_do_revisits",
+                "start": 356,
+                "end": 382
+            },
+            {
+                "name": "node_walk",
+                "start": 384,
+                "end": 427
+            },
+            {
+                "name": "node_walk_revisit",
+                "start": 429,
+                "end": 447
+            },
+            {
+                "name": "node_debug_dump",
+                "start": 449,
+                "end": 460
+            },
+            {
+                "name": "node_debug_dump_detailed",
+                "start": 463,
+                "end": 487
+            },
+            {
+                "name": "node_debug_dump_dot_callback",
+                "start": 490,
+                "end": 503
+            },
+            {
+                "name": "node_debug_dump_dot",
+                "start": 506,
+                "end": 513
+            },
+            {
+                "name": "node_debug_dump_jobs_dot_callback",
+                "start": 515,
+                "end": 528
+            },
+            {
+                "name": "node_debug_dump_jobs_dot",
+                "start": 530,
+                "end": 537
+            },
+            {
+                "name": "node_debug_dump_jobs",
+                "start": 539,
+                "end": 557
+            }
+        ],
+        "src/dep_search.c": [
+            {
+                "name": "checkpath",
+                "start": 23,
+                "end": 45
+            },
+            {
+                "name": "do_run",
+                "start": 48,
+                "end": 81
+            },
+            {
+                "name": "lf_add_dependency_search",
+                "start": 84,
+                "end": 124
+            }
+        ],
+        "src/cache.h": [
+            {
+                "name": "cache_do_dependency",
+                "start": 11,
+                "end": 15
+            }
+        ],
+        "src/dep_cpp.c": [
+            {
+                "name": "processline",
+                "start": 18,
+                "end": 96
+            },
+            {
+                "name": "dependency_cpp_run",
+                "start": 105,
+                "end": 106
+            },
+            {
+                "name": "cachehit_callback",
+                "start": 108,
+                "end": 129
+            },
+            {
+                "name": "dependency_cpp_run",
+                "start": 132,
+                "end": 223
+            },
+            {
+                "name": "dependency_cpp_callback",
+                "start": 232,
+                "end": 309
+            },
+            {
+                "name": "dependency_cpp_do_run",
+                "start": 313,
+                "end": 321
+            },
+            {
+                "name": "lf_add_dependency_cpp_set_paths",
+                "start": 324,
+                "end": 337
+            },
+            {
+                "name": "lf_add_dependency_cpp",
+                "start": 340,
+                "end": 359
+            }
+        ],
+        "src/support.c": [
+            {
+                "name": "list_directory",
+                "start": 153,
+                "end": 210
+            },
+            {
+                "name": "install_signals",
+                "start": 213,
+                "end": 218
+            },
+            {
+                "name": "threads_create",
+                "start": 227,
+                "end": 232
+            },
+            {
+                "name": "threads_join",
+                "start": 234,
+                "end": 237
+            },
+            {
+                "name": "threads_yield",
+                "start": 239,
+                "end": 242
+            },
+            {
+                "name": "plugin_load",
+                "start": 244,
+                "end": 283
+            },
+            {
+                "name": "file_timestamp",
+                "start": 289,
+                "end": 305
+            },
+            {
+                "name": "file_createdir",
+                "start": 307,
+                "end": 318
+            },
+            {
+                "name": "file_touch",
+                "start": 320,
+                "end": 327
+            },
+            {
+                "name": "run_command",
+                "start": 345,
+                "end": 431
+            },
+            {
+                "name": "file_exist",
+                "start": 434,
+                "end": 440
+            },
+            {
+                "name": "listdir_callback",
+                "start": 449,
+                "end": 454
+            },
+            {
+                "name": "lf_listdir",
+                "start": 456,
+                "end": 476
+            },
+            {
+                "name": "collect_callback",
+                "start": 503,
+                "end": 555
+            },
+            {
+                "name": "run_collect",
+                "start": 557,
+                "end": 588
+            },
+            {
+                "name": "collect",
+                "start": 590,
+                "end": 619
+            },
+            {
+                "name": "string_hash_add",
+                "start": 660,
+                "end": 665
+            },
+            {
+                "name": "string_hash",
+                "start": 668,
+                "end": 671
+            }
+        ],
+        "src/cache.c": [
+            {
+                "name": "cache_setup_header",
+                "start": 25,
+                "end": 32
+            },
+            {
+                "name": "io_size",
+                "start": 58,
+                "end": 68
+            },
+            {
+                "name": "cachenode_cmp",
+                "start": 92,
+                "end": 97
+            },
+            {
+                "name": "CACHENODE_FUNCTIONREMOVER",
+                "start": 102,
+                "end": 106
+            },
+            {
+                "name": "write_header",
+                "start": 139,
+                "end": 150
+            },
+            {
+                "name": "write_flush",
+                "start": 152,
+                "end": 159
+            },
+            {
+                "name": "write_nodes",
+                "start": 161,
+                "end": 237
+            },
+            {
+                "name": "cache_save",
+                "start": 239,
+                "end": 262
+            },
+            {
+                "name": "cache_load",
+                "start": 264,
+                "end": 317
+            },
+            {
+                "name": "cache_find_byindex",
+                "start": 319,
+                "end": 322
+            },
+            {
+                "name": "cache_find_byhash",
+                "start": 324,
+                "end": 331
+            },
+            {
+                "name": "cache_do_dependency",
+                "start": 333,
+                "end": 364
+            }
+        ],
+        "src/context.c": [
+            {
+                "name": "context_get_pointer",
+                "start": 20,
+                "end": 27
+            },
+            {
+                "name": "context_get_path",
+                "start": 30,
+                "end": 38
+            },
+            {
+                "name": "context_default_target",
+                "start": 40,
+                "end": 44
+            },
+            {
+                "name": "progressbar_clear",
+                "start": 46,
+                "end": 49
+            },
+            {
+                "name": "progressbar_draw",
+                "start": 51,
+                "end": 78
+            },
+            {
+                "name": "constraints_update",
+                "start": 80,
+                "end": 87
+            },
+            {
+                "name": "constraints_check",
+                "start": 90,
+                "end": 106
+            },
+            {
+                "name": "create_path",
+                "start": 108,
+                "end": 157
+            },
+            {
+                "name": "run_node",
+                "start": 159,
+                "end": 256
+            },
+            {
+                "name": "threads_run_callback",
+                "start": 266,
+                "end": 327
+            },
+            {
+                "name": "threads_run",
+                "start": 329,
+                "end": 366
+            },
+            {
+                "name": "context_build_make",
+                "start": 368,
+                "end": 415
+            },
+            {
+                "name": "build_clean_callback",
+                "start": 417,
+                "end": 431
+            },
+            {
+                "name": "context_build_clean",
+                "start": 433,
+                "end": 436
+            },
+            {
+                "name": "build_prepare_callback",
+                "start": 438,
+                "end": 548
+            },
+            {
+                "name": "context_build_prepare",
+                "start": 552,
+                "end": 559
+            }
+        ],
+        "src/mem.c": [
+            {
+                "name": "mem_newchunk",
+                "start": 22,
+                "end": 42
+            },
+            {
+                "name": "mem_allocate_from_chunk",
+                "start": 45,
+                "end": 57
+            },
+            {
+                "name": "mem_create",
+                "start": 60,
+                "end": 70
+            },
+            {
+                "name": "mem_destroy",
+                "start": 73,
+                "end": 84
+            },
+            {
+                "name": "mem_allocate",
+                "start": 87,
+                "end": 119
+            }
+        ],
+        "src/luafuncs.c": [
+            {
+                "name": "build_stringlist",
+                "start": 20,
+                "end": 49
+            },
+            {
+                "name": "deep_walk_r",
+                "start": 58,
+                "end": 81
+            },
+            {
+                "name": "deep_walk",
+                "start": 83,
+                "end": 104
+            },
+            {
+                "name": "lf_add_pseudo",
+                "start": 107,
+                "end": 132
+            },
+            {
+                "name": "lf_add_output",
+                "start": 135,
+                "end": 160
+            },
+            {
+                "name": "callback_node_attrib",
+                "start": 168,
+                "end": 173
+            },
+            {
+                "name": "add_node_attribute",
+                "start": 176,
+                "end": 199
+            },
+            {
+                "name": "lf_add_job",
+                "start": 206,
+                "end": 238
+            },
+            {
+                "name": "lf_set_touch",
+                "start": 240,
+                "end": 255
+            },
+            {
+                "name": "lf_set_filter",
+                "start": 258,
+                "end": 281
+            },
+            {
+                "name": "lf_default_target",
+                "start": 284,
+                "end": 305
+            },
+            {
+                "name": "lf_update_globalstamp",
+                "start": 308,
+                "end": 324
+            },
+            {
+                "name": "lf_loadfile",
+                "start": 328,
+                "end": 340
+            },
+            {
+                "name": "debug_print_lua_value",
+                "start": 344,
+                "end": 365
+            },
+            {
+                "name": "lf_errorfunc",
+                "start": 369,
+                "end": 426
+            },
+            {
+                "name": "lf_panicfunc",
+                "start": 428,
+                "end": 433
+            },
+            {
+                "name": "lf_mkdir",
+                "start": 435,
+                "end": 448
+            },
+            {
+                "name": "lf_fileexist",
+                "start": 451,
+                "end": 464
+            },
+            {
+                "name": "lf_istable",
+                "start": 466,
+                "end": 473
+            },
+            {
+                "name": "lf_isstring",
+                "start": 475,
+                "end": 482
+            },
+            {
+                "name": "lf_table_walk_iter",
+                "start": 493,
+                "end": 541
+            },
+            {
+                "name": "lf_table_walk",
+                "start": 552,
+                "end": 574
+            },
+            {
+                "name": "table_deepcopy_r",
+                "start": 577,
+                "end": 615
+            },
+            {
+                "name": "lf_table_deepcopy",
+                "start": 617,
+                "end": 624
+            },
+            {
+                "name": "lf_table_flatten_r",
+                "start": 629,
+                "end": 657
+            },
+            {
+                "name": "lf_table_flatten",
+                "start": 659,
+                "end": 673
+            },
+            {
+                "name": "lf_table_tostring",
+                "start": 677,
+                "end": 745
+            },
+            {
+                "name": "lf_loadplugin",
+                "start": 747,
+                "end": 763
+            }
+        ],
+        "src/main.c": [
+            {
+                "name": "internal_base_reader",
+                "start": 243,
+                "end": 253
+            },
+            {
+                "name": "lua_setglobalstring",
+                "start": 256,
+                "end": 260
+            },
+            {
+                "name": "lua_vm_trace_hook",
+                "start": 262,
+                "end": 267
+            },
+            {
+                "name": "lua_alloctor_malloc",
+                "start": 269,
+                "end": 278
+            },
+            {
+                "name": "register_lua_globals",
+                "start": 282,
+                "end": 428
+            },
+            {
+                "name": "run_deferred_functions",
+                "start": 430,
+                "end": 440
+            },
+            {
+                "name": "bam_setup",
+                "start": 442,
+                "end": 611
+            },
+            {
+                "name": "bam",
+                "start": 614,
+                "end": 733
+            },
+            {
+                "name": "abortsignal",
+                "start": 738,
+                "end": 743
+            },
+            {
+                "name": "install_abort_signal",
+                "start": 745,
+                "end": 748
+            },
+            {
+                "name": "print_help",
+                "start": 751,
+                "end": 766
+            },
+            {
+                "name": "parse_parameters",
+                "start": 768,
+                "end": 817
+            },
+            {
+                "name": "parse_parameters_str",
+                "start": 819,
+                "end": 876
+            },
+            {
+                "name": "main",
+                "start": 879,
+                "end": 956
+            }
+        ],
+        "src/path.c": [
+            {
+                "name": "path_is_separator",
+                "start": 14,
+                "end": 21
+            },
+            {
+                "name": "path_filename",
+                "start": 24,
+                "end": 34
+            },
+            {
+                "name": "path_directory",
+                "start": 37,
+                "end": 65
+            },
+            {
+                "name": "path_normalize",
+                "start": 68,
+                "end": 169
+            },
+            {
+                "name": "path_isabs",
+                "start": 172,
+                "end": 188
+            },
+            {
+                "name": "path_isnice",
+                "start": 191,
+                "end": 239
+            },
+            {
+                "name": "path_join",
+                "start": 242,
+                "end": 297
+            },
+            {
+                "name": "lf_path_join",
+                "start": 300,
+                "end": 328
+            },
+            {
+                "name": "lf_path_isnice",
+                "start": 331,
+                "end": 344
+            },
+            {
+                "name": "lf_path_normalize",
+                "start": 346,
+                "end": 373
+            },
+            {
+                "name": "path_ext",
+                "start": 376,
+                "end": 391
+            },
+            {
+                "name": "lf_path_ext",
+                "start": 394,
+                "end": 407
+            },
+            {
+                "name": "lf_path_base",
+                "start": 411,
+                "end": 438
+            },
+            {
+                "name": "path_dir_length",
+                "start": 441,
+                "end": 455
+            },
+            {
+                "name": "lf_path_dir",
+                "start": 458,
+                "end": 482
+            },
+            {
+                "name": "lf_path_filename",
+                "start": 485,
+                "end": 499
+            }
+        ],
+        "src/lua/lua.h": [
+            {
+                "name": "lua_pushvfstring",
+                "start": 165,
+                "end": 166
+            },
+            {
+                "name": "lua_load",
+                "start": 204,
+                "end": 205
+            }
+        ],
+        "src/lua/lobject.h": [
+            {
+                "name": "luaO_pushvfstring",
+                "start": 374,
+                "end": 375
+            }
+        ],
+        "src/lua/ltm.h": [
+            {
+                "name": "luaT_gettmbyobj",
+                "start": 50,
+                "end": 51
+            }
+        ],
+        "src/lua/lmem.h": [
+            {
+                "name": "luaM_realloc_",
+                "start": 41,
+                "end": 42
+            },
+            {
+                "name": "luaM_growaux_",
+                "start": 44,
+                "end": 46
+            }
+        ],
+        "src/lua/lzio.h": [
+            {
+                "name": "luaZ_init",
+                "start": 47,
+                "end": 48
+            }
+        ],
+        "src/lua/ldebug.h": [
+            {
+                "name": "luaG_typeerror",
+                "start": 21,
+                "end": 22
+            },
+            {
+                "name": "luaG_aritherror",
+                "start": 24,
+                "end": 25
+            },
+            {
+                "name": "luaG_ordererror",
+                "start": 26,
+                "end": 27
+            }
+        ],
+        "src/lua/ldo.h": [
+            {
+                "name": "luaD_pcall",
+                "start": 44,
+                "end": 45
+            }
+        ],
+        "src/lua/lfunc.h": [
+            {
+                "name": "luaF_getlocalname",
+                "start": 30,
+                "end": 31
+            }
+        ],
+        "src/lua/llex.h": [
+            {
+                "name": "luaX_setinput",
+                "start": 71,
+                "end": 72
+            }
+        ],
+        "src/lua/lstate.c": [
+            {
+                "name": "stack_init",
+                "start": 42,
+                "end": 58
+            },
+            {
+                "name": "freestack",
+                "start": 61,
+                "end": 64
+            },
+            {
+                "name": "f_luaopen",
+                "start": 70,
+                "end": 81
+            },
+            {
+                "name": "preinit_state",
+                "start": 84,
+                "end": 102
+            },
+            {
+                "name": "close_state",
+                "start": 105,
+                "end": 116
+            },
+            {
+                "name": "luaE_newthread",
+                "start": 119,
+                "end": 131
+            },
+            {
+                "name": "luaE_freethread",
+                "start": 134,
+                "end": 140
+            },
+            {
+                "name": "lua_newstate",
+                "start": 143,
+                "end": 190
+            },
+            {
+                "name": "callallgcTM",
+                "start": 193,
+                "end": 196
+            },
+            {
+                "name": "lua_close",
+                "start": 199,
+                "end": 213
+            }
+        ],
+        "src/lua/lgc.c": [
+            {
+                "name": "removeentry",
+                "start": 62,
+                "end": 66
+            },
+            {
+                "name": "reallymarkobject",
+                "start": 69,
+                "end": 112
+            },
+            {
+                "name": "marktmu",
+                "start": 115,
+                "end": 124
+            },
+            {
+                "name": "luaC_separateudata",
+                "start": 128,
+                "end": 155
+            },
+            {
+                "name": "traversetable",
+                "start": 158,
+                "end": 196
+            },
+            {
+                "name": "traverseproto",
+                "start": 203,
+                "end": 220
+            },
+            {
+                "name": "traverseclosure",
+                "start": 224,
+                "end": 238
+            },
+            {
+                "name": "checkstacksizes",
+                "start": 241,
+                "end": 253
+            },
+            {
+                "name": "traversestack",
+                "start": 256,
+                "end": 270
+            },
+            {
+                "name": "propagatemark",
+                "start": 277,
+                "end": 320
+            },
+            {
+                "name": "propagateall",
+                "start": 323,
+                "end": 327
+            },
+            {
+                "name": "iscleared",
+                "start": 337,
+                "end": 345
+            },
+            {
+                "name": "cleartable",
+                "start": 351,
+                "end": 375
+            },
+            {
+                "name": "freeobj",
+                "start": 378,
+                "end": 400
+            },
+            {
+                "name": "sweeplist",
+                "start": 407,
+                "end": 428
+            },
+            {
+                "name": "checkSizes",
+                "start": 431,
+                "end": 442
+            },
+            {
+                "name": "GCTM",
+                "start": 445,
+                "end": 471
+            },
+            {
+                "name": "luaC_callGCTM",
+                "start": 477,
+                "end": 480
+            },
+            {
+                "name": "luaC_freeall",
+                "start": 483,
+                "end": 490
+            },
+            {
+                "name": "markmt",
+                "start": 493,
+                "end": 497
+            },
+            {
+                "name": "markroot",
+                "start": 501,
+                "end": 512
+            },
+            {
+                "name": "remarkupvals",
+                "start": 515,
+                "end": 522
+            },
+            {
+                "name": "atomic",
+                "start": 525,
+                "end": 553
+            },
+            {
+                "name": "singlestep",
+                "start": 556,
+                "end": 607
+            },
+            {
+                "name": "luaC_step",
+                "start": 610,
+                "end": 633
+            },
+            {
+                "name": "luaC_fullgc",
+                "start": 636,
+                "end": 659
+            },
+            {
+                "name": "luaC_barrierf",
+                "start": 662,
+                "end": 672
+            },
+            {
+                "name": "luaC_barrierback",
+                "start": 675,
+                "end": 683
+            },
+            {
+                "name": "luaC_link",
+                "start": 686,
+                "end": 692
+            },
+            {
+                "name": "luaC_linkupval",
+                "start": 695,
+                "end": 710
+            }
+        ],
+        "src/lua/lparser.h": [
+            {
+                "name": "luaY_parser",
+                "start": 78,
+                "end": 79
+            }
+        ],
+        "src/lua/lparser.c": [
+            {
+                "name": "anchor_token",
+                "start": 57,
+                "end": 62
+            },
+            {
+                "name": "error_expected",
+                "start": 65,
+                "end": 68
+            },
+            {
+                "name": "errorlimit",
+                "start": 71,
+                "end": 77
+            },
+            {
+                "name": "testnext",
+                "start": 80,
+                "end": 86
+            },
+            {
+                "name": "check",
+                "start": 89,
+                "end": 92
+            },
+            {
+                "name": "checknext",
+                "start": 94,
+                "end": 97
+            },
+            {
+                "name": "check_match",
+                "start": 104,
+                "end": 114
+            },
+            {
+                "name": "str_checkname",
+                "start": 117,
+                "end": 123
+            },
+            {
+                "name": "init_exp",
+                "start": 126,
+                "end": 130
+            },
+            {
+                "name": "codestring",
+                "start": 133,
+                "end": 135
+            },
+            {
+                "name": "checkname",
+                "start": 138,
+                "end": 140
+            },
+            {
+                "name": "registerlocalvar",
+                "start": 143,
+                "end": 153
+            },
+            {
+                "name": "new_localvar",
+                "start": 160,
+                "end": 164
+            },
+            {
+                "name": "adjustlocalvars",
+                "start": 167,
+                "end": 173
+            },
+            {
+                "name": "removevars",
+                "start": 176,
+                "end": 180
+            },
+            {
+                "name": "indexupvalue",
+                "start": 183,
+                "end": 204
+            },
+            {
+                "name": "searchvar",
+                "start": 207,
+                "end": 214
+            },
+            {
+                "name": "markupval",
+                "start": 217,
+                "end": 221
+            },
+            {
+                "name": "singlevaraux",
+                "start": 224,
+                "end": 245
+            },
+            {
+                "name": "singlevar",
+                "start": 248,
+                "end": 253
+            },
+            {
+                "name": "adjust_assign",
+                "start": 256,
+                "end": 273
+            },
+            {
+                "name": "enterlevel",
+                "start": 276,
+                "end": 279
+            },
+            {
+                "name": "enterblock",
+                "start": 285,
+                "end": 293
+            },
+            {
+                "name": "leaveblock",
+                "start": 296,
+                "end": 307
+            },
+            {
+                "name": "pushclosure",
+                "start": 310,
+                "end": 325
+            },
+            {
+                "name": "open_func",
+                "start": 328,
+                "end": 353
+            },
+            {
+                "name": "close_func",
+                "start": 356,
+                "end": 380
+            },
+            {
+                "name": "luaY_parser",
+                "start": 383,
+                "end": 398
+            },
+            {
+                "name": "field",
+                "start": 407,
+                "end": 415
+            },
+            {
+                "name": "yindex",
+                "start": 418,
+                "end": 424
+            },
+            {
+                "name": "recfield",
+                "start": 443,
+                "end": 461
+            },
+            {
+                "name": "closelistfield",
+                "start": 464,
+                "end": 472
+            },
+            {
+                "name": "lastlistfield",
+                "start": 475,
+                "end": 487
+            },
+            {
+                "name": "listfield",
+                "start": 490,
+                "end": 495
+            },
+            {
+                "name": "constructor",
+                "start": 498,
+                "end": 537
+            },
+            {
+                "name": "parlist",
+                "start": 543,
+                "end": 573
+            },
+            {
+                "name": "body",
+                "start": 576,
+                "end": 593
+            },
+            {
+                "name": "explist1",
+                "start": 596,
+                "end": 606
+            },
+            {
+                "name": "funcargs",
+                "start": 609,
+                "end": 655
+            },
+            {
+                "name": "prefixexp",
+                "start": 667,
+                "end": 687
+            },
+            {
+                "name": "primaryexp",
+                "start": 690,
+                "end": 724
+            },
+            {
+                "name": "simpleexp",
+                "start": 727,
+                "end": 775
+            },
+            {
+                "name": "getunopr",
+                "start": 778,
+                "end": 785
+            },
+            {
+                "name": "getbinopr",
+                "start": 788,
+                "end": 807
+            },
+            {
+                "name": "subexpr",
+                "start": 828,
+                "end": 853
+            },
+            {
+                "name": "expr",
+                "start": 856,
+                "end": 858
+            },
+            {
+                "name": "block_follow",
+                "start": 871,
+                "end": 878
+            },
+            {
+                "name": "block",
+                "start": 881,
+                "end": 889
+            },
+            {
+                "name": "check_conflict",
+                "start": 908,
+                "end": 928
+            },
+            {
+                "name": "assignment",
+                "start": 931,
+                "end": 962
+            },
+            {
+                "name": "cond",
+                "start": 965,
+                "end": 972
+            },
+            {
+                "name": "breakstat",
+                "start": 975,
+                "end": 988
+            },
+            {
+                "name": "whilestat",
+                "start": 991,
+                "end": 1007
+            },
+            {
+                "name": "repeatstat",
+                "start": 1010,
+                "end": 1033
+            },
+            {
+                "name": "exp1",
+                "start": 1036,
+                "end": 1043
+            },
+            {
+                "name": "forbody",
+                "start": 1046,
+                "end": 1064
+            },
+            {
+                "name": "fornum",
+                "start": 1067,
+                "end": 1086
+            },
+            {
+                "name": "forlist",
+                "start": 1089,
+                "end": 1109
+            },
+            {
+                "name": "forstat",
+                "start": 1112,
+                "end": 1127
+            },
+            {
+                "name": "test_then_block",
+                "start": 1130,
+                "end": 1138
+            },
+            {
+                "name": "ifstat",
+                "start": 1141,
+                "end": 1162
+            },
+            {
+                "name": "localfunc",
+                "start": 1165,
+                "end": 1176
+            },
+            {
+                "name": "localstat",
+                "start": 1179,
+                "end": 1195
+            },
+            {
+                "name": "funcname",
+                "start": 1198,
+                "end": 1209
+            },
+            {
+                "name": "funcstat",
+                "start": 1212,
+                "end": 1221
+            },
+            {
+                "name": "exprstat",
+                "start": 1224,
+                "end": 1235
+            },
+            {
+                "name": "retstat",
+                "start": 1238,
+                "end": 1268
+            },
+            {
+                "name": "statement",
+                "start": 1271,
+                "end": 1322
+            },
+            {
+                "name": "chunk",
+                "start": 1325,
+                "end": 1337
+            }
+        ],
+        "src/lua/lauxlib.h": [
+            {
+                "name": "luaI_openlib",
+                "start": 42,
+                "end": 43
+            },
+            {
+                "name": "luaL_register",
+                "start": 44,
+                "end": 45
+            },
+            {
+                "name": "luaL_checklstring",
+                "start": 50,
+                "end": 51
+            },
+            {
+                "name": "luaL_optlstring",
+                "start": 52,
+                "end": 53
+            },
+            {
+                "name": "luaL_optinteger",
+                "start": 58,
+                "end": 59
+            },
+            {
+                "name": "luaL_checkoption",
+                "start": 71,
+                "end": 72
+            },
+            {
+                "name": "luaL_loadbuffer",
+                "start": 78,
+                "end": 79
+            },
+            {
+                "name": "luaL_gsub",
+                "start": 85,
+                "end": 86
+            },
+            {
+                "name": "luaL_findtable",
+                "start": 88,
+                "end": 89
+            }
+        ],
+        "src/lua/loslib.c": [
+            {
+                "name": "os_pushresult",
+                "start": 23,
+                "end": 35
+            },
+            {
+                "name": "os_execute",
+                "start": 38,
+                "end": 41
+            },
+            {
+                "name": "os_remove",
+                "start": 44,
+                "end": 47
+            },
+            {
+                "name": "os_rename",
+                "start": 50,
+                "end": 54
+            },
+            {
+                "name": "os_tmpname",
+                "start": 57,
+                "end": 65
+            },
+            {
+                "name": "os_getenv",
+                "start": 68,
+                "end": 71
+            },
+            {
+                "name": "os_clock",
+                "start": 74,
+                "end": 77
+            },
+            {
+                "name": "setfield",
+                "start": 88,
+                "end": 91
+            },
+            {
+                "name": "setboolfield",
+                "start": 93,
+                "end": 98
+            },
+            {
+                "name": "getboolfield",
+                "start": 100,
+                "end": 106
+            },
+            {
+                "name": "getfield",
+                "start": 109,
+                "end": 121
+            },
+            {
+                "name": "os_date",
+                "start": 124,
+                "end": 167
+            },
+            {
+                "name": "os_time",
+                "start": 170,
+                "end": 192
+            },
+            {
+                "name": "os_difftime",
+                "start": 195,
+                "end": 199
+            },
+            {
+                "name": "os_setlocale",
+                "start": 204,
+                "end": 213
+            },
+            {
+                "name": "os_exit",
+                "start": 216,
+                "end": 218
+            },
+            {
+                "name": "luaopen_os",
+                "start": 239,
+                "end": 242
+            }
+        ],
+        "src/lua/loadlib.c": [
+            {
+                "name": "ll_unloadlib",
+                "start": 239,
+                "end": 241
+            },
+            {
+                "name": "ll_load",
+                "start": 244,
+                "end": 248
+            },
+            {
+                "name": "ll_sym",
+                "start": 251,
+                "end": 255
+            },
+            {
+                "name": "ll_register",
+                "start": 262,
+                "end": 279
+            },
+            {
+                "name": "gctm",
+                "start": 286,
+                "end": 291
+            },
+            {
+                "name": "ll_loadfunc",
+                "start": 294,
+                "end": 306
+            },
+            {
+                "name": "ll_loadlib",
+                "start": 309,
+                "end": 321
+            },
+            {
+                "name": "readable",
+                "start": 332,
+                "end": 337
+            },
+            {
+                "name": "pushnexttemplate",
+                "start": 340,
+                "end": 348
+            },
+            {
+                "name": "findfile",
+                "start": 351,
+                "end": 371
+            },
+            {
+                "name": "loaderror",
+                "start": 374,
+                "end": 377
+            },
+            {
+                "name": "loader_Lua",
+                "start": 380,
+                "end": 388
+            },
+            {
+                "name": "mkfuncname",
+                "start": 391,
+                "end": 399
+            },
+            {
+                "name": "loader_C",
+                "start": 402,
+                "end": 411
+            },
+            {
+                "name": "loader_Croot",
+                "start": 414,
+                "end": 432
+            },
+            {
+                "name": "loader_preload",
+                "start": 435,
+                "end": 444
+            },
+            {
+                "name": "ll_require",
+                "start": 451,
+                "end": 494
+            },
+            {
+                "name": "setfenv",
+                "start": 507,
+                "end": 516
+            },
+            {
+                "name": "dooptions",
+                "start": 519,
+                "end": 526
+            },
+            {
+                "name": "modinit",
+                "start": 529,
+                "end": 541
+            },
+            {
+                "name": "ll_module",
+                "start": 544,
+                "end": 569
+            },
+            {
+                "name": "ll_seeall",
+                "start": 572,
+                "end": 582
+            },
+            {
+                "name": "setpath",
+                "start": 592,
+                "end": 606
+            },
+            {
+                "name": "luaopen_package",
+                "start": 627,
+                "end": 665
+            }
+        ],
+        "src/lua/lstrlib.c": [
+            {
+                "name": "str_len",
+                "start": 28,
+                "end": 33
+            },
+            {
+                "name": "posrelat",
+                "start": 36,
+                "end": 40
+            },
+            {
+                "name": "str_sub",
+                "start": 43,
+                "end": 54
+            },
+            {
+                "name": "str_reverse",
+                "start": 57,
+                "end": 65
+            },
+            {
+                "name": "str_lower",
+                "start": 68,
+                "end": 78
+            },
+            {
+                "name": "str_upper",
+                "start": 81,
+                "end": 91
+            },
+            {
+                "name": "str_rep",
+                "start": 93,
+                "end": 103
+            },
+            {
+                "name": "str_byte",
+                "start": 106,
+                "end": 122
+            },
+            {
+                "name": "str_char",
+                "start": 125,
+                "end": 137
+            },
+            {
+                "name": "writer",
+                "start": 140,
+                "end": 144
+            },
+            {
+                "name": "str_dump",
+                "start": 147,
+                "end": 156
+            },
+            {
+                "name": "check_capture",
+                "start": 186,
+                "end": 191
+            },
+            {
+                "name": "capture_to_close",
+                "start": 194,
+                "end": 199
+            },
+            {
+                "name": "classend",
+                "start": 202,
+                "end": 223
+            },
+            {
+                "name": "match_class",
+                "start": 226,
+                "end": 242
+            },
+            {
+                "name": "matchbracketclass",
+                "start": 245,
+                "end": 265
+            },
+            {
+                "name": "singlematch",
+                "start": 268,
+                "end": 275
+            },
+            {
+                "name": "matchbalance",
+                "start": 281,
+                "end": 298
+            },
+            {
+                "name": "max_expand",
+                "start": 301,
+                "end": 313
+            },
+            {
+                "name": "min_expand",
+                "start": 316,
+                "end": 326
+            },
+            {
+                "name": "start_capture",
+                "start": 329,
+                "end": 340
+            },
+            {
+                "name": "end_capture",
+                "start": 343,
+                "end": 351
+            },
+            {
+                "name": "match_capture",
+                "start": 354,
+                "end": 362
+            },
+            {
+                "name": "match",
+                "start": 365,
+                "end": 440
+            },
+            {
+                "name": "lmemfind",
+                "start": 444,
+                "end": 463
+            },
+            {
+                "name": "push_onecapture",
+                "start": 466,
+                "end": 482
+            },
+            {
+                "name": "push_captures",
+                "start": 485,
+                "end": 492
+            },
+            {
+                "name": "str_find_aux",
+                "start": 495,
+                "end": 535
+            },
+            {
+                "name": "str_find",
+                "start": 538,
+                "end": 540
+            },
+            {
+                "name": "str_match",
+                "start": 543,
+                "end": 545
+            },
+            {
+                "name": "gmatch_aux",
+                "start": 548,
+                "end": 571
+            },
+            {
+                "name": "gmatch",
+                "start": 574,
+                "end": 581
+            },
+            {
+                "name": "gfind_nodef",
+                "start": 584,
+                "end": 587
+            },
+            {
+                "name": "add_s",
+                "start": 590,
+                "end": 609
+            },
+            {
+                "name": "add_value",
+                "start": 612,
+                "end": 641
+            },
+            {
+                "name": "str_gsub",
+                "start": 644,
+                "end": 680
+            },
+            {
+                "name": "addquoted",
+                "start": 696,
+                "end": 723
+            },
+            {
+                "name": "scanformat",
+                "start": 725,
+                "end": 744
+            },
+            {
+                "name": "addintlen",
+                "start": 747,
+                "end": 753
+            },
+            {
+                "name": "str_format",
+                "start": 756,
+                "end": 822
+            },
+            {
+                "name": "createmetatable",
+                "start": 845,
+                "end": 854
+            },
+            {
+                "name": "luaopen_string",
+                "start": 860,
+                "end": 868
+            }
+        ],
+        "src/lua/lcode.c": [
+            {
+                "name": "isnumeral",
+                "start": 30,
+                "end": 32
+            },
+            {
+                "name": "luaK_nil",
+                "start": 35,
+                "end": 56
+            },
+            {
+                "name": "luaK_jump",
+                "start": 59,
+                "end": 66
+            },
+            {
+                "name": "luaK_ret",
+                "start": 69,
+                "end": 71
+            },
+            {
+                "name": "condjump",
+                "start": 74,
+                "end": 77
+            },
+            {
+                "name": "fixjump",
+                "start": 80,
+                "end": 87
+            },
+            {
+                "name": "luaK_getlabel",
+                "start": 94,
+                "end": 97
+            },
+            {
+                "name": "getjump",
+                "start": 100,
+                "end": 106
+            },
+            {
+                "name": "getjumpcontrol",
+                "start": 109,
+                "end": 115
+            },
+            {
+                "name": "need_value",
+                "start": 122,
+                "end": 128
+            },
+            {
+                "name": "patchtestreg",
+                "start": 131,
+                "end": 141
+            },
+            {
+                "name": "removevalues",
+                "start": 144,
+                "end": 147
+            },
+            {
+                "name": "patchlistaux",
+                "start": 150,
+                "end": 160
+            },
+            {
+                "name": "dischargejpc",
+                "start": 163,
+                "end": 166
+            },
+            {
+                "name": "luaK_patchlist",
+                "start": 169,
+                "end": 176
+            },
+            {
+                "name": "luaK_patchtohere",
+                "start": 179,
+                "end": 182
+            },
+            {
+                "name": "luaK_concat",
+                "start": 185,
+                "end": 196
+            },
+            {
+                "name": "luaK_checkstack",
+                "start": 199,
+                "end": 206
+            },
+            {
+                "name": "luaK_reserveregs",
+                "start": 209,
+                "end": 212
+            },
+            {
+                "name": "freereg",
+                "start": 215,
+                "end": 220
+            },
+            {
+                "name": "freeexp",
+                "start": 223,
+                "end": 226
+            },
+            {
+                "name": "addk",
+                "start": 229,
+                "end": 247
+            },
+            {
+                "name": "luaK_stringK",
+                "start": 250,
+                "end": 254
+            },
+            {
+                "name": "luaK_numberK",
+                "start": 257,
+                "end": 261
+            },
+            {
+                "name": "boolK",
+                "start": 264,
+                "end": 268
+            },
+            {
+                "name": "nilK",
+                "start": 271,
+                "end": 277
+            },
+            {
+                "name": "luaK_setreturns",
+                "start": 280,
+                "end": 289
+            },
+            {
+                "name": "luaK_setoneret",
+                "start": 292,
+                "end": 301
+            },
+            {
+                "name": "luaK_dischargevars",
+                "start": 304,
+                "end": 334
+            },
+            {
+                "name": "code_label",
+                "start": 337,
+                "end": 340
+            },
+            {
+                "name": "discharge2reg",
+                "start": 343,
+                "end": 379
+            },
+            {
+                "name": "discharge2anyreg",
+                "start": 382,
+                "end": 387
+            },
+            {
+                "name": "exp2reg",
+                "start": 390,
+                "end": 411
+            },
+            {
+                "name": "luaK_exp2nextreg",
+                "start": 414,
+                "end": 419
+            },
+            {
+                "name": "luaK_exp2anyreg",
+                "start": 422,
+                "end": 433
+            },
+            {
+                "name": "luaK_exp2val",
+                "start": 436,
+                "end": 441
+            },
+            {
+                "name": "luaK_exp2RK",
+                "start": 444,
+                "end": 469
+            },
+            {
+                "name": "luaK_storevar",
+                "start": 472,
+                "end": 500
+            },
+            {
+                "name": "luaK_self",
+                "start": 503,
+                "end": 513
+            },
+            {
+                "name": "invertjump",
+                "start": 516,
+                "end": 521
+            },
+            {
+                "name": "jumponcond",
+                "start": 524,
+                "end": 536
+            },
+            {
+                "name": "luaK_goiftrue",
+                "start": 539,
+                "end": 564
+            },
+            {
+                "name": "luaK_goiffalse",
+                "start": 567,
+                "end": 591
+            },
+            {
+                "name": "codenot",
+                "start": 594,
+                "end": 626
+            },
+            {
+                "name": "luaK_indexed",
+                "start": 629,
+                "end": 632
+            },
+            {
+                "name": "constfolding",
+                "start": 635,
+                "end": 658
+            },
+            {
+                "name": "codearith",
+                "start": 661,
+                "end": 678
+            },
+            {
+                "name": "codecomp",
+                "start": 681,
+                "end": 694
+            },
+            {
+                "name": "luaK_prefix",
+                "start": 697,
+                "end": 715
+            },
+            {
+                "name": "luaK_infix",
+                "start": 718,
+                "end": 742
+            },
+            {
+                "name": "luaK_posfix",
+                "start": 745,
+                "end": 789
+            },
+            {
+                "name": "luaK_fixline",
+                "start": 792,
+                "end": 794
+            },
+            {
+                "name": "luaK_code",
+                "start": 797,
+                "end": 809
+            },
+            {
+                "name": "luaK_codeABC",
+                "start": 812,
+                "end": 817
+            },
+            {
+                "name": "luaK_codeABx",
+                "start": 820,
+                "end": 824
+            },
+            {
+                "name": "luaK_setlist",
+                "start": 827,
+                "end": 838
+            }
+        ],
+        "src/lua/ltm.c": [
+            {
+                "name": "luaT_init",
+                "start": 30,
+                "end": 43
+            },
+            {
+                "name": "luaT_gettm",
+                "start": 50,
+                "end": 58
+            },
+            {
+                "name": "luaT_gettmbyobj",
+                "start": 61,
+                "end": 74
+            }
+        ],
+        "src/lua/linit.c": [
+            {
+                "name": "luaL_openlibs",
+                "start": 30,
+                "end": 37
+            }
+        ],
+        "src/lua/ldblib.c": [
+            {
+                "name": "db_getregistry",
+                "start": 22,
+                "end": 25
+            },
+            {
+                "name": "db_getmetatable",
+                "start": 28,
+                "end": 34
+            },
+            {
+                "name": "db_setmetatable",
+                "start": 37,
+                "end": 44
+            },
+            {
+                "name": "db_getfenv",
+                "start": 47,
+                "end": 50
+            },
+            {
+                "name": "db_setfenv",
+                "start": 53,
+                "end": 60
+            },
+            {
+                "name": "settabss",
+                "start": 63,
+                "end": 66
+            },
+            {
+                "name": "settabsi",
+                "start": 69,
+                "end": 72
+            },
+            {
+                "name": "getthread",
+                "start": 75,
+                "end": 84
+            },
+            {
+                "name": "treatstackoption",
+                "start": 87,
+                "end": 95
+            },
+            {
+                "name": "db_getinfo",
+                "start": 98,
+                "end": 140
+            },
+            {
+                "name": "db_getlocal",
+                "start": 143,
+                "end": 161
+            },
+            {
+                "name": "db_setlocal",
+                "start": 164,
+                "end": 175
+            },
+            {
+                "name": "auxupvalue",
+                "start": 178,
+                "end": 188
+            },
+            {
+                "name": "db_getupvalue",
+                "start": 191,
+                "end": 193
+            },
+            {
+                "name": "db_setupvalue",
+                "start": 196,
+                "end": 199
+            },
+            {
+                "name": "hookf",
+                "start": 206,
+                "end": 221
+            },
+            {
+                "name": "makemask",
+                "start": 224,
+                "end": 231
+            },
+            {
+                "name": "unmakemask",
+                "start": 234,
+                "end": 241
+            },
+            {
+                "name": "gethooktable",
+                "start": 244,
+                "end": 254
+            },
+            {
+                "name": "db_sethook",
+                "start": 257,
+                "end": 278
+            },
+            {
+                "name": "db_gethook",
+                "start": 281,
+                "end": 298
+            },
+            {
+                "name": "db_debug",
+                "start": 301,
+                "end": 315
+            },
+            {
+                "name": "db_errorfb",
+                "start": 321,
+                "end": 371
+            },
+            {
+                "name": "luaopen_debug",
+                "start": 393,
+                "end": 396
+            }
+        ],
+        "src/lua/lvm.h": [
+            {
+                "name": "luaV_gettable",
+                "start": 29,
+                "end": 30
+            },
+            {
+                "name": "luaV_settable",
+                "start": 31,
+                "end": 32
+            }
+        ],
+        "src/lua/lapi.c": [
+            {
+                "name": "index2adr",
+                "start": 49,
+                "end": 76
+            },
+            {
+                "name": "getcurrenv",
+                "start": 79,
+                "end": 86
+            },
+            {
+                "name": "luaA_pushobject",
+                "start": 89,
+                "end": 92
+            },
+            {
+                "name": "lua_checkstack",
+                "start": 95,
+                "end": 107
+            },
+            {
+                "name": "lua_xmove",
+                "start": 110,
+                "end": 122
+            },
+            {
+                "name": "lua_setlevel",
+                "start": 125,
+                "end": 127
+            },
+            {
+                "name": "lua_atpanic",
+                "start": 130,
+                "end": 137
+            },
+            {
+                "name": "lua_newthread",
+                "start": 140,
+                "end": 150
+            },
+            {
+                "name": "lua_gettop",
+                "start": 159,
+                "end": 161
+            },
+            {
+                "name": "lua_settop",
+                "start": 164,
+                "end": 177
+            },
+            {
+                "name": "lua_remove",
+                "start": 180,
+                "end": 188
+            },
+            {
+                "name": "lua_insert",
+                "start": 191,
+                "end": 200
+            },
+            {
+                "name": "lua_replace",
+                "start": 203,
+                "end": 225
+            },
+            {
+                "name": "lua_pushvalue",
+                "start": 228,
+                "end": 233
+            },
+            {
+                "name": "lua_type",
+                "start": 242,
+                "end": 245
+            },
+            {
+                "name": "lua_typename",
+                "start": 248,
+                "end": 251
+            },
+            {
+                "name": "lua_iscfunction",
+                "start": 254,
+                "end": 257
+            },
+            {
+                "name": "lua_isnumber",
+                "start": 260,
+                "end": 264
+            },
+            {
+                "name": "lua_isstring",
+                "start": 267,
+                "end": 270
+            },
+            {
+                "name": "lua_isuserdata",
+                "start": 273,
+                "end": 276
+            },
+            {
+                "name": "lua_rawequal",
+                "start": 279,
+                "end": 284
+            },
+            {
+                "name": "lua_equal",
+                "start": 287,
+                "end": 296
+            },
+            {
+                "name": "lua_lessthan",
+                "start": 299,
+                "end": 309
+            },
+            {
+                "name": "lua_tonumber",
+                "start": 313,
+                "end": 320
+            },
+            {
+                "name": "lua_tointeger",
+                "start": 323,
+                "end": 334
+            },
+            {
+                "name": "lua_toboolean",
+                "start": 337,
+                "end": 340
+            },
+            {
+                "name": "lua_tolstring",
+                "start": 343,
+                "end": 358
+            },
+            {
+                "name": "lua_objlen",
+                "start": 361,
+                "end": 376
+            },
+            {
+                "name": "lua_tocfunction",
+                "start": 379,
+                "end": 382
+            },
+            {
+                "name": "lua_touserdata",
+                "start": 385,
+                "end": 392
+            },
+            {
+                "name": "lua_tothread",
+                "start": 395,
+                "end": 398
+            },
+            {
+                "name": "lua_topointer",
+                "start": 401,
+                "end": 412
+            },
+            {
+                "name": "lua_pushnil",
+                "start": 421,
+                "end": 426
+            },
+            {
+                "name": "lua_pushnumber",
+                "start": 429,
+                "end": 434
+            },
+            {
+                "name": "lua_pushinteger",
+                "start": 437,
+                "end": 442
+            },
+            {
+                "name": "lua_pushlstring",
+                "start": 445,
+                "end": 451
+            },
+            {
+                "name": "lua_pushstring",
+                "start": 454,
+                "end": 459
+            },
+            {
+                "name": "lua_pushvfstring",
+                "start": 462,
+                "end": 470
+            },
+            {
+                "name": "lua_pushfstring",
+                "start": 473,
+                "end": 483
+            },
+            {
+                "name": "lua_pushcclosure",
+                "start": 486,
+                "end": 500
+            },
+            {
+                "name": "lua_pushboolean",
+                "start": 503,
+                "end": 508
+            },
+            {
+                "name": "lua_pushlightuserdata",
+                "start": 511,
+                "end": 516
+            },
+            {
+                "name": "lua_pushthread",
+                "start": 519,
+                "end": 525
+            },
+            {
+                "name": "lua_gettable",
+                "start": 534,
+                "end": 541
+            },
+            {
+                "name": "lua_getfield",
+                "start": 544,
+                "end": 554
+            },
+            {
+                "name": "lua_rawget",
+                "start": 557,
+                "end": 564
+            },
+            {
+                "name": "lua_rawgeti",
+                "start": 567,
+                "end": 575
+            },
+            {
+                "name": "lua_createtable",
+                "start": 578,
+                "end": 584
+            },
+            {
+                "name": "lua_getmetatable",
+                "start": 587,
+                "end": 613
+            },
+            {
+                "name": "lua_getfenv",
+                "start": 616,
+                "end": 637
+            },
+            {
+                "name": "lua_settable",
+                "start": 645,
+                "end": 654
+            },
+            {
+                "name": "lua_setfield",
+                "start": 657,
+                "end": 668
+            },
+            {
+                "name": "lua_rawset",
+                "start": 671,
+                "end": 681
+            },
+            {
+                "name": "lua_rawseti",
+                "start": 684,
+                "end": 694
+            },
+            {
+                "name": "lua_setmetatable",
+                "start": 697,
+                "end": 731
+            },
+            {
+                "name": "lua_setfenv",
+                "start": 734,
+                "end": 760
+            },
+            {
+                "name": "lua_call",
+                "start": 776,
+                "end": 785
+            },
+            {
+                "name": "f_call",
+                "start": 798,
+                "end": 801
+            },
+            {
+                "name": "lua_pcall",
+                "start": 805,
+                "end": 825
+            },
+            {
+                "name": "f_Ccall",
+                "start": 837,
+                "end": 847
+            },
+            {
+                "name": "lua_cpcall",
+                "start": 850,
+                "end": 859
+            },
+            {
+                "name": "lua_load",
+                "start": 862,
+                "end": 872
+            },
+            {
+                "name": "lua_dump",
+                "start": 875,
+                "end": 887
+            },
+            {
+                "name": "lua_status",
+                "start": 890,
+                "end": 892
+            },
+            {
+                "name": "lua_gc",
+                "start": 899,
+                "end": 955
+            },
+            {
+                "name": "lua_error",
+                "start": 964,
+                "end": 970
+            },
+            {
+                "name": "lua_next",
+                "start": 973,
+                "end": 987
+            },
+            {
+                "name": "lua_concat",
+                "start": 990,
+                "end": 1004
+            },
+            {
+                "name": "lua_getallocf",
+                "start": 1007,
+                "end": 1014
+            },
+            {
+                "name": "lua_setallocf",
+                "start": 1017,
+                "end": 1022
+            },
+            {
+                "name": "lua_newuserdata",
+                "start": 1025,
+                "end": 1034
+            },
+            {
+                "name": "aux_upvalue",
+                "start": 1039,
+                "end": 1054
+            },
+            {
+                "name": "lua_getupvalue",
+                "start": 1057,
+                "end": 1068
+            },
+            {
+                "name": "lua_setupvalue",
+                "start": 1071,
+                "end": 1086
+            }
+        ],
+        "src/lua/ldo.c": [
+            {
+                "name": "luaD_seterrorobj",
+                "start": 51,
+                "end": 68
+            },
+            {
+                "name": "restore_stack_limit",
+                "start": 71,
+                "end": 78
+            },
+            {
+                "name": "resetstack",
+                "start": 81,
+                "end": 91
+            },
+            {
+                "name": "luaD_throw",
+                "start": 94,
+                "end": 108
+            },
+            {
+                "name": "luaD_rawrunprotected",
+                "start": 111,
+                "end": 121
+            },
+            {
+                "name": "correctstack",
+                "start": 126,
+                "end": 138
+            },
+            {
+                "name": "luaD_reallocstack",
+                "start": 141,
+                "end": 149
+            },
+            {
+                "name": "luaD_reallocCI",
+                "start": 152,
+                "end": 158
+            },
+            {
+                "name": "luaD_growstack",
+                "start": 161,
+                "end": 166
+            },
+            {
+                "name": "growCI",
+                "start": 169,
+                "end": 178
+            },
+            {
+                "name": "luaD_callhook",
+                "start": 181,
+                "end": 205
+            },
+            {
+                "name": "adjust_varargs",
+                "start": 208,
+                "end": 240
+            },
+            {
+                "name": "tryfuncTM",
+                "start": 243,
+                "end": 255
+            },
+            {
+                "name": "luaD_precall",
+                "start": 264,
+                "end": 328
+            },
+            {
+                "name": "callrethooks",
+                "start": 331,
+                "end": 339
+            },
+            {
+                "name": "luaD_poscall",
+                "start": 342,
+                "end": 360
+            },
+            {
+                "name": "luaD_call",
+                "start": 369,
+                "end": 380
+            },
+            {
+                "name": "resume",
+                "start": 383,
+                "end": 405
+            },
+            {
+                "name": "resume_error",
+                "start": 408,
+                "end": 414
+            },
+            {
+                "name": "lua_resume",
+                "start": 417,
+                "end": 440
+            },
+            {
+                "name": "lua_yield",
+                "start": 443,
+                "end": 452
+            },
+            {
+                "name": "luaD_pcall",
+                "start": 455,
+                "end": 477
+            },
+            {
+                "name": "f_parser",
+                "start": 490,
+                "end": 505
+            },
+            {
+                "name": "luaD_protectedparser",
+                "start": 508,
+                "end": 516
+            }
+        ],
+        "src/lua/lobject.c": [
+            {
+                "name": "luaO_int2fb",
+                "start": 35,
+                "end": 43
+            },
+            {
+                "name": "luaO_fb2int",
+                "start": 47,
+                "end": 51
+            },
+            {
+                "name": "luaO_log2",
+                "start": 54,
+                "end": 69
+            },
+            {
+                "name": "luaO_rawequalObj",
+                "start": 72,
+                "end": 87
+            },
+            {
+                "name": "luaO_str2d",
+                "start": 90,
+                "end": 100
+            },
+            {
+                "name": "pushstr",
+                "start": 104,
+                "end": 107
+            },
+            {
+                "name": "luaO_pushvfstring",
+                "start": 111,
+                "end": 169
+            },
+            {
+                "name": "luaO_pushfstring",
+                "start": 172,
+                "end": 179
+            },
+            {
+                "name": "luaO_chunkid",
+                "start": 182,
+                "end": 214
+            }
+        ],
+        "src/lua/lbaselib.c": [
+            {
+                "name": "luaB_print",
+                "start": 31,
+                "end": 50
+            },
+            {
+                "name": "luaB_tonumber",
+                "start": 53,
+                "end": 78
+            },
+            {
+                "name": "luaB_error",
+                "start": 81,
+                "end": 90
+            },
+            {
+                "name": "luaB_getmetatable",
+                "start": 93,
+                "end": 101
+            },
+            {
+                "name": "luaB_setmetatable",
+                "start": 104,
+                "end": 114
+            },
+            {
+                "name": "getfunc",
+                "start": 117,
+                "end": 130
+            },
+            {
+                "name": "luaB_getfenv",
+                "start": 133,
+                "end": 140
+            },
+            {
+                "name": "luaB_setfenv",
+                "start": 143,
+                "end": 158
+            },
+            {
+                "name": "luaB_rawequal",
+                "start": 161,
+                "end": 166
+            },
+            {
+                "name": "luaB_rawget",
+                "start": 169,
+                "end": 175
+            },
+            {
+                "name": "luaB_rawset",
+                "start": 177,
+                "end": 184
+            },
+            {
+                "name": "luaB_gcinfo",
+                "start": 187,
+                "end": 190
+            },
+            {
+                "name": "luaB_collectgarbage",
+                "start": 193,
+                "end": 216
+            },
+            {
+                "name": "luaB_type",
+                "start": 219,
+                "end": 223
+            },
+            {
+                "name": "luaB_next",
+                "start": 226,
+                "end": 235
+            },
+            {
+                "name": "luaB_pairs",
+                "start": 238,
+                "end": 244
+            },
+            {
+                "name": "ipairsaux",
+                "start": 247,
+                "end": 254
+            },
+            {
+                "name": "luaB_ipairs",
+                "start": 257,
+                "end": 263
+            },
+            {
+                "name": "load_aux",
+                "start": 266,
+                "end": 274
+            },
+            {
+                "name": "luaB_loadstring",
+                "start": 277,
+                "end": 282
+            },
+            {
+                "name": "luaB_loadfile",
+                "start": 285,
+                "end": 288
+            },
+            {
+                "name": "generic_reader",
+                "start": 297,
+                "end": 312
+            },
+            {
+                "name": "luaB_load",
+                "start": 315,
+                "end": 322
+            },
+            {
+                "name": "luaB_dofile",
+                "start": 325,
+                "end": 331
+            },
+            {
+                "name": "luaB_assert",
+                "start": 334,
+                "end": 339
+            },
+            {
+                "name": "luaB_unpack",
+                "start": 342,
+                "end": 355
+            },
+            {
+                "name": "luaB_select",
+                "start": 358,
+                "end": 371
+            },
+            {
+                "name": "luaB_pcall",
+                "start": 374,
+                "end": 381
+            },
+            {
+                "name": "luaB_xpcall",
+                "start": 384,
+                "end": 393
+            },
+            {
+                "name": "luaB_tostring",
+                "start": 396,
+                "end": 418
+            },
+            {
+                "name": "luaB_newproxy",
+                "start": 421,
+                "end": 444
+            },
+            {
+                "name": "costatus",
+                "start": 490,
+                "end": 507
+            },
+            {
+                "name": "luaB_costatus",
+                "start": 510,
+                "end": 515
+            },
+            {
+                "name": "auxresume",
+                "start": 518,
+                "end": 540
+            },
+            {
+                "name": "luaB_coresume",
+                "start": 543,
+                "end": 558
+            },
+            {
+                "name": "luaB_auxwrap",
+                "start": 561,
+                "end": 573
+            },
+            {
+                "name": "luaB_cocreate",
+                "start": 576,
+                "end": 583
+            },
+            {
+                "name": "luaB_cowrap",
+                "start": 586,
+                "end": 590
+            },
+            {
+                "name": "luaB_yield",
+                "start": 593,
+                "end": 595
+            },
+            {
+                "name": "luaB_corunning",
+                "start": 598,
+                "end": 602
+            },
+            {
+                "name": "auxopen",
+                "start": 618,
+                "end": 623
+            },
+            {
+                "name": "base_open",
+                "start": 626,
+                "end": 645
+            },
+            {
+                "name": "luaopen_base",
+                "start": 648,
+                "end": 652
+            }
+        ],
+        "src/lua/print.c": [
+            {
+                "name": "PrintString",
+                "start": 23,
+                "end": 49
+            },
+            {
+                "name": "PrintConstant",
+                "start": 51,
+                "end": 72
+            },
+            {
+                "name": "PrintCode",
+                "start": 74,
+                "end": 156
+            },
+            {
+                "name": "PrintHeader",
+                "start": 161,
+                "end": 179
+            },
+            {
+                "name": "PrintConstants",
+                "start": 181,
+                "end": 191
+            },
+            {
+                "name": "PrintLocals",
+                "start": 193,
+                "end": 202
+            },
+            {
+                "name": "PrintUpvalues",
+                "start": 204,
+                "end": 213
+            },
+            {
+                "name": "luaU_print",
+                "start": 215,
+                "end": 227
+            }
+        ],
+        "src/lua/ltablib.c": [
+            {
+                "name": "foreachi",
+                "start": 22,
+                "end": 36
+            },
+            {
+                "name": "foreach",
+                "start": 39,
+                "end": 53
+            },
+            {
+                "name": "maxn",
+                "start": 56,
+                "end": 69
+            },
+            {
+                "name": "getn",
+                "start": 72,
+                "end": 75
+            },
+            {
+                "name": "setn",
+                "start": 78,
+                "end": 87
+            },
+            {
+                "name": "tinsert",
+                "start": 90,
+                "end": 115
+            },
+            {
+                "name": "tremove",
+                "start": 118,
+                "end": 132
+            },
+            {
+                "name": "addfield",
+                "start": 135,
+                "end": 141
+            },
+            {
+                "name": "tconcat",
+                "start": 144,
+                "end": 161
+            },
+            {
+                "name": "set2",
+                "start": 173,
+                "end": 176
+            },
+            {
+                "name": "sort_comp",
+                "start": 178,
+                "end": 191
+            },
+            {
+                "name": "auxsort",
+                "start": 193,
+                "end": 254
+            },
+            {
+                "name": "sort",
+                "start": 256,
+                "end": 264
+            },
+            {
+                "name": "luaopen_table",
+                "start": 283,
+                "end": 286
+            }
+        ],
+        "src/lua/liolib.c": [
+            {
+                "name": "pushresult",
+                "start": 30,
+                "end": 45
+            },
+            {
+                "name": "fileerror",
+                "start": 48,
+                "end": 51
+            },
+            {
+                "name": "io_type",
+                "start": 57,
+                "end": 69
+            },
+            {
+                "name": "tofile",
+                "start": 72,
+                "end": 77
+            },
+            {
+                "name": "newfile",
+                "start": 86,
+                "end": 92
+            },
+            {
+                "name": "io_noclose",
+                "start": 98,
+                "end": 102
+            },
+            {
+                "name": "io_pclose",
+                "start": 108,
+                "end": 113
+            },
+            {
+                "name": "io_fclose",
+                "start": 119,
+                "end": 124
+            },
+            {
+                "name": "aux_close",
+                "start": 127,
+                "end": 131
+            },
+            {
+                "name": "io_close",
+                "start": 134,
+                "end": 139
+            },
+            {
+                "name": "io_gc",
+                "start": 142,
+                "end": 148
+            },
+            {
+                "name": "io_tostring",
+                "start": 151,
+                "end": 158
+            },
+            {
+                "name": "io_open",
+                "start": 161,
+                "end": 167
+            },
+            {
+                "name": "io_popen",
+                "start": 174,
+                "end": 180
+            },
+            {
+                "name": "io_tmpfile",
+                "start": 183,
+                "end": 187
+            },
+            {
+                "name": "getiofile",
+                "start": 190,
+                "end": 197
+            },
+            {
+                "name": "g_iofile",
+                "start": 200,
+                "end": 218
+            },
+            {
+                "name": "io_input",
+                "start": 221,
+                "end": 223
+            },
+            {
+                "name": "io_output",
+                "start": 226,
+                "end": 228
+            },
+            {
+                "name": "aux_lines",
+                "start": 234,
+                "end": 238
+            },
+            {
+                "name": "f_lines",
+                "start": 241,
+                "end": 245
+            },
+            {
+                "name": "io_lines",
+                "start": 248,
+                "end": 263
+            },
+            {
+                "name": "read_number",
+                "start": 273,
+                "end": 280
+            },
+            {
+                "name": "test_eof",
+                "start": 283,
+                "end": 288
+            },
+            {
+                "name": "read_line",
+                "start": 291,
+                "end": 310
+            },
+            {
+                "name": "read_chars",
+                "start": 313,
+                "end": 328
+            },
+            {
+                "name": "g_read",
+                "start": 331,
+                "end": 375
+            },
+            {
+                "name": "io_read",
+                "start": 378,
+                "end": 380
+            },
+            {
+                "name": "f_read",
+                "start": 383,
+                "end": 385
+            },
+            {
+                "name": "io_readline",
+                "start": 388,
+                "end": 405
+            },
+            {
+                "name": "g_write",
+                "start": 410,
+                "end": 426
+            },
+            {
+                "name": "io_write",
+                "start": 429,
+                "end": 431
+            },
+            {
+                "name": "f_write",
+                "start": 434,
+                "end": 436
+            },
+            {
+                "name": "f_seek",
+                "start": 439,
+                "end": 452
+            },
+            {
+                "name": "f_setvbuf",
+                "start": 455,
+                "end": 463
+            },
+            {
+                "name": "io_flush",
+                "start": 467,
+                "end": 469
+            },
+            {
+                "name": "f_flush",
+                "start": 472,
+                "end": 474
+            },
+            {
+                "name": "createmeta",
+                "start": 507,
+                "end": 512
+            },
+            {
+                "name": "createstdfile",
+                "start": 515,
+                "end": 524
+            },
+            {
+                "name": "newfenv",
+                "start": 527,
+                "end": 531
+            },
+            {
+                "name": "luaopen_io",
+                "start": 534,
+                "end": 552
+            }
+        ],
+        "src/lua/lzio.c": [
+            {
+                "name": "luaZ_fill",
+                "start": 21,
+                "end": 32
+            },
+            {
+                "name": "luaZ_lookahead",
+                "start": 35,
+                "end": 45
+            },
+            {
+                "name": "luaZ_init",
+                "start": 48,
+                "end": 54
+            },
+            {
+                "name": "luaZ_read",
+                "start": 58,
+                "end": 71
+            },
+            {
+                "name": "luaZ_openspace",
+                "start": 74,
+                "end": 80
+            }
+        ],
+        "src/lua/llex.c": [
+            {
+                "name": "save",
+                "start": 51,
+                "end": 61
+            },
+            {
+                "name": "luaX_init",
+                "start": 64,
+                "end": 72
+            },
+            {
+                "name": "luaX_token2str",
+                "start": 78,
+                "end": 86
+            },
+            {
+                "name": "txtToken",
+                "start": 89,
+                "end": 99
+            },
+            {
+                "name": "luaX_lexerror",
+                "start": 102,
+                "end": 109
+            },
+            {
+                "name": "luaX_syntaxerror",
+                "start": 112,
+                "end": 114
+            },
+            {
+                "name": "luaX_newstring",
+                "start": 117,
+                "end": 124
+            },
+            {
+                "name": "inclinenumber",
+                "start": 127,
+                "end": 135
+            },
+            {
+                "name": "luaX_setinput",
+                "start": 138,
+                "end": 149
+            },
+            {
+                "name": "check_next",
+                "start": 161,
+                "end": 166
+            },
+            {
+                "name": "buffreplace",
+                "start": 169,
+                "end": 174
+            },
+            {
+                "name": "trydecpoint",
+                "start": 177,
+                "end": 188
+            },
+            {
+                "name": "read_numeral",
+                "start": 192,
+                "end": 205
+            },
+            {
+                "name": "skip_sep",
+                "start": 208,
+                "end": 218
+            },
+            {
+                "name": "read_long_string",
+                "start": 221,
+                "end": 273
+            },
+            {
+                "name": "read_string",
+                "start": 276,
+                "end": 329
+            },
+            {
+                "name": "llex",
+                "start": 332,
+                "end": 443
+            },
+            {
+                "name": "luaX_next",
+                "start": 446,
+                "end": 454
+            },
+            {
+                "name": "luaX_lookahead",
+                "start": 457,
+                "end": 460
+            }
+        ],
+        "src/lua/lfunc.c": [
+            {
+                "name": "luaF_newCclosure",
+                "start": 23,
+                "end": 30
+            },
+            {
+                "name": "luaF_newLclosure",
+                "start": 33,
+                "end": 41
+            },
+            {
+                "name": "luaF_newupval",
+                "start": 44,
+                "end": 50
+            },
+            {
+                "name": "luaF_findupval",
+                "start": 53,
+                "end": 79
+            },
+            {
+                "name": "unlinkupval",
+                "start": 82,
+                "end": 86
+            },
+            {
+                "name": "luaF_freeupval",
+                "start": 89,
+                "end": 93
+            },
+            {
+                "name": "luaF_close",
+                "start": 96,
+                "end": 112
+            },
+            {
+                "name": "luaF_newproto",
+                "start": 115,
+                "end": 138
+            },
+            {
+                "name": "luaF_freeproto",
+                "start": 141,
+                "end": 149
+            },
+            {
+                "name": "luaF_freeclosure",
+                "start": 152,
+                "end": 156
+            },
+            {
+                "name": "luaF_getlocalname",
+                "start": 163,
+                "end": 173
+            }
+        ],
+        "src/lua/ldump.c": [
+            {
+                "name": "DumpBlock",
+                "start": 29,
+                "end": 37
+            },
+            {
+                "name": "DumpChar",
+                "start": 39,
+                "end": 43
+            },
+            {
+                "name": "DumpInt",
+                "start": 45,
+                "end": 48
+            },
+            {
+                "name": "DumpNumber",
+                "start": 50,
+                "end": 53
+            },
+            {
+                "name": "DumpVector",
+                "start": 55,
+                "end": 59
+            },
+            {
+                "name": "DumpString",
+                "start": 61,
+                "end": 74
+            },
+            {
+                "name": "DumpConstants",
+                "start": 80,
+                "end": 109
+            },
+            {
+                "name": "DumpDebug",
+                "start": 111,
+                "end": 127
+            },
+            {
+                "name": "DumpFunction",
+                "start": 129,
+                "end": 141
+            },
+            {
+                "name": "DumpHeader",
+                "start": 143,
+                "end": 148
+            },
+            {
+                "name": "luaU_dump",
+                "start": 153,
+                "end": 164
+            }
+        ],
+        "src/lua/lvm.c": [
+            {
+                "name": "luaV_tonumber",
+                "start": 35,
+                "end": 44
+            },
+            {
+                "name": "luaV_tostring",
+                "start": 47,
+                "end": 57
+            },
+            {
+                "name": "traceexec",
+                "start": 60,
+                "end": 77
+            },
+            {
+                "name": "callTMres",
+                "start": 80,
+                "end": 92
+            },
+            {
+                "name": "callTM",
+                "start": 96,
+                "end": 105
+            },
+            {
+                "name": "luaV_gettable",
+                "start": 108,
+                "end": 131
+            },
+            {
+                "name": "luaV_settable",
+                "start": 134,
+                "end": 158
+            },
+            {
+                "name": "call_binTM",
+                "start": 161,
+                "end": 169
+            },
+            {
+                "name": "get_compTM",
+                "start": 172,
+                "end": 183
+            },
+            {
+                "name": "call_orderTM",
+                "start": 186,
+                "end": 196
+            },
+            {
+                "name": "l_strcmp",
+                "start": 199,
+                "end": 218
+            },
+            {
+                "name": "luaV_lessthan",
+                "start": 221,
+                "end": 232
+            },
+            {
+                "name": "lessequal",
+                "start": 235,
+                "end": 248
+            },
+            {
+                "name": "luaV_equalval",
+                "start": 251,
+                "end": 275
+            },
+            {
+                "name": "luaV_concat",
+                "start": 278,
+                "end": 310
+            },
+            {
+                "name": "Arith",
+                "start": 313,
+                "end": 333
+            },
+            {
+                "name": "luaV_execute",
+                "start": 373,
+                "end": 762
+            }
+        ],
+        "src/lua/lundump.c": [
+            {
+                "name": "error",
+                "start": 36,
+                "end": 40
+            },
+            {
+                "name": "LoadBlock",
+                "start": 48,
+                "end": 52
+            },
+            {
+                "name": "LoadChar",
+                "start": 54,
+                "end": 59
+            },
+            {
+                "name": "LoadInt",
+                "start": 61,
+                "end": 67
+            },
+            {
+                "name": "LoadNumber",
+                "start": 69,
+                "end": 74
+            },
+            {
+                "name": "LoadString",
+                "start": 76,
+                "end": 88
+            },
+            {
+                "name": "LoadCode",
+                "start": 90,
+                "end": 96
+            },
+            {
+                "name": "LoadConstants",
+                "start": 100,
+                "end": 135
+            },
+            {
+                "name": "LoadDebug",
+                "start": 137,
+                "end": 159
+            },
+            {
+                "name": "LoadFunction",
+                "start": 161,
+                "end": 181
+            },
+            {
+                "name": "LoadHeader",
+                "start": 183,
+                "end": 190
+            },
+            {
+                "name": "luaU_undump",
+                "start": 195,
+                "end": 209
+            },
+            {
+                "name": "luaU_header",
+                "start": 214,
+                "end": 227
+            }
+        ],
+        "src/lua/ltable.c": [
+            {
+                "name": "hashnum",
+                "start": 84,
+                "end": 92
+            },
+            {
+                "name": "mainposition",
+                "start": 100,
+                "end": 113
+            },
+            {
+                "name": "arrayindex",
+                "start": 120,
+                "end": 129
+            },
+            {
+                "name": "findindex",
+                "start": 137,
+                "end": 159
+            },
+            {
+                "name": "luaH_next",
+                "start": 162,
+                "end": 179
+            },
+            {
+                "name": "computesizes",
+                "start": 189,
+                "end": 208
+            },
+            {
+                "name": "countint",
+                "start": 211,
+                "end": 219
+            },
+            {
+                "name": "numusearray",
+                "start": 222,
+                "end": 244
+            },
+            {
+                "name": "numusehash",
+                "start": 247,
+                "end": 260
+            },
+            {
+                "name": "setarrayvector",
+                "start": 263,
+                "end": 269
+            },
+            {
+                "name": "setnodevector",
+                "start": 272,
+                "end": 294
+            },
+            {
+                "name": "resize",
+                "start": 297,
+                "end": 324
+            },
+            {
+                "name": "luaH_resizearray",
+                "start": 327,
+                "end": 330
+            },
+            {
+                "name": "rehash",
+                "start": 333,
+                "end": 349
+            },
+            {
+                "name": "luaH_new",
+                "start": 358,
+                "end": 371
+            },
+            {
+                "name": "luaH_free",
+                "start": 374,
+                "end": 379
+            },
+            {
+                "name": "getfreepos",
+                "start": 382,
+                "end": 388
+            },
+            {
+                "name": "newkey",
+                "start": 399,
+                "end": 429
+            },
+            {
+                "name": "luaH_getnum",
+                "start": 435,
+                "end": 449
+            },
+            {
+                "name": "luaH_getstr",
+                "start": 455,
+                "end": 463
+            },
+            {
+                "name": "luaH_get",
+                "start": 469,
+                "end": 491
+            },
+            {
+                "name": "luaH_set",
+                "start": 494,
+                "end": 505
+            },
+            {
+                "name": "luaH_setnum",
+                "start": 508,
+                "end": 517
+            },
+            {
+                "name": "luaH_setstr",
+                "start": 520,
+                "end": 529
+            },
+            {
+                "name": "unbound_search",
+                "start": 532,
+                "end": 553
+            },
+            {
+                "name": "luaH_getn",
+                "start": 560,
+                "end": 576
+            }
+        ],
+        "src/lua/lstring.c": [
+            {
+                "name": "luaS_resize",
+                "start": 22,
+                "end": 47
+            },
+            {
+                "name": "newlstr",
+                "start": 50,
+                "end": 72
+            },
+            {
+                "name": "luaS_newlstr",
+                "start": 75,
+                "end": 93
+            },
+            {
+                "name": "luaS_newudata",
+                "start": 96,
+                "end": 110
+            }
+        ],
+        "src/lua/ldebug.c": [
+            {
+                "name": "currentpc",
+                "start": 36,
+                "end": 41
+            },
+            {
+                "name": "currentline",
+                "start": 44,
+                "end": 50
+            },
+            {
+                "name": "lua_sethook",
+                "start": 56,
+                "end": 66
+            },
+            {
+                "name": "lua_gethook",
+                "start": 69,
+                "end": 71
+            },
+            {
+                "name": "lua_gethookmask",
+                "start": 74,
+                "end": 76
+            },
+            {
+                "name": "lua_gethookcount",
+                "start": 79,
+                "end": 81
+            },
+            {
+                "name": "lua_getstack",
+                "start": 84,
+                "end": 104
+            },
+            {
+                "name": "getluaproto",
+                "start": 107,
+                "end": 109
+            },
+            {
+                "name": "findlocal",
+                "start": 112,
+                "end": 124
+            },
+            {
+                "name": "lua_getlocal",
+                "start": 127,
+                "end": 135
+            },
+            {
+                "name": "lua_setlocal",
+                "start": 138,
+                "end": 147
+            },
+            {
+                "name": "funcinfo",
+                "start": 150,
+                "end": 164
+            },
+            {
+                "name": "info_tailcall",
+                "start": 167,
+                "end": 174
+            },
+            {
+                "name": "collectvalidlines",
+                "start": 177,
+                "end": 190
+            },
+            {
+                "name": "auxgetinfo",
+                "start": 193,
+                "end": 229
+            },
+            {
+                "name": "lua_getinfo",
+                "start": 232,
+                "end": 259
+            },
+            {
+                "name": "precheck",
+                "start": 276,
+                "end": 285
+            },
+            {
+                "name": "luaG_checkopenop",
+                "start": 290,
+                "end": 301
+            },
+            {
+                "name": "checkArgMode",
+                "start": 304,
+                "end": 314
+            },
+            {
+                "name": "symbexec",
+                "start": 317,
+                "end": 475
+            },
+            {
+                "name": "luaG_checkcode",
+                "start": 484,
+                "end": 486
+            },
+            {
+                "name": "kname",
+                "start": 489,
+                "end": 494
+            },
+            {
+                "name": "getobjname",
+                "start": 497,
+                "end": 541
+            },
+            {
+                "name": "getfuncname",
+                "start": 544,
+                "end": 555
+            },
+            {
+                "name": "isinstack",
+                "start": 559,
+                "end": 564
+            },
+            {
+                "name": "luaG_typeerror",
+                "start": 567,
+                "end": 578
+            },
+            {
+                "name": "luaG_concaterror",
+                "start": 581,
+                "end": 585
+            },
+            {
+                "name": "luaG_aritherror",
+                "start": 588,
+                "end": 593
+            },
+            {
+                "name": "luaG_ordererror",
+                "start": 596,
+                "end": 604
+            },
+            {
+                "name": "addinfo",
+                "start": 607,
+                "end": 615
+            },
+            {
+                "name": "luaG_errormsg",
+                "start": 618,
+                "end": 628
+            },
+            {
+                "name": "luaG_runerror",
+                "start": 631,
+                "end": 637
+            }
+        ],
+        "src/lua/lmem.c": [
+            {
+                "name": "luaM_growaux_",
+                "start": 46,
+                "end": 63
+            },
+            {
+                "name": "luaM_toobig",
+                "start": 66,
+                "end": 69
+            },
+            {
+                "name": "luaM_realloc_",
+                "start": 76,
+                "end": 85
+            }
+        ],
+        "src/lua/lauxlib.c": [
+            {
+                "name": "luaL_argerror",
+                "start": 43,
+                "end": 58
+            },
+            {
+                "name": "luaL_typerror",
+                "start": 61,
+                "end": 65
+            },
+            {
+                "name": "tag_error",
+                "start": 68,
+                "end": 70
+            },
+            {
+                "name": "luaL_where",
+                "start": 73,
+                "end": 83
+            },
+            {
+                "name": "luaL_error",
+                "start": 86,
+                "end": 94
+            },
+            {
+                "name": "luaL_checkoption",
+                "start": 99,
+                "end": 109
+            },
+            {
+                "name": "luaL_newmetatable",
+                "start": 112,
+                "end": 121
+            },
+            {
+                "name": "luaL_checkudata",
+                "start": 124,
+                "end": 137
+            },
+            {
+                "name": "luaL_checkstack",
+                "start": 140,
+                "end": 143
+            },
+            {
+                "name": "luaL_checktype",
+                "start": 146,
+                "end": 149
+            },
+            {
+                "name": "luaL_checkany",
+                "start": 152,
+                "end": 155
+            },
+            {
+                "name": "luaL_checklstring",
+                "start": 158,
+                "end": 162
+            },
+            {
+                "name": "luaL_optlstring",
+                "start": 165,
+                "end": 173
+            },
+            {
+                "name": "luaL_checknumber",
+                "start": 176,
+                "end": 181
+            },
+            {
+                "name": "luaL_optnumber",
+                "start": 184,
+                "end": 186
+            },
+            {
+                "name": "luaL_checkinteger",
+                "start": 189,
+                "end": 194
+            },
+            {
+                "name": "luaL_optinteger",
+                "start": 197,
+                "end": 200
+            },
+            {
+                "name": "luaL_getmetafield",
+                "start": 203,
+                "end": 216
+            },
+            {
+                "name": "luaL_callmeta",
+                "start": 219,
+                "end": 226
+            },
+            {
+                "name": "luaL_register",
+                "start": 229,
+                "end": 232
+            },
+            {
+                "name": "libsize",
+                "start": 235,
+                "end": 239
+            },
+            {
+                "name": "luaI_openlib",
+                "start": 242,
+                "end": 268
+            },
+            {
+                "name": "luaL_gsub",
+                "start": 340,
+                "end": 354
+            },
+            {
+                "name": "luaL_findtable",
+                "start": 357,
+                "end": 381
+            },
+            {
+                "name": "emptybuffer",
+                "start": 398,
+                "end": 407
+            },
+            {
+                "name": "adjuststack",
+                "start": 410,
+                "end": 426
+            },
+            {
+                "name": "luaL_prepbuffer",
+                "start": 429,
+                "end": 433
+            },
+            {
+                "name": "luaL_addlstring",
+                "start": 436,
+                "end": 439
+            },
+            {
+                "name": "luaL_addstring",
+                "start": 442,
+                "end": 444
+            },
+            {
+                "name": "luaL_pushresult",
+                "start": 447,
+                "end": 451
+            },
+            {
+                "name": "luaL_addvalue",
+                "start": 454,
+                "end": 469
+            },
+            {
+                "name": "luaL_buffinit",
+                "start": 472,
+                "end": 476
+            },
+            {
+                "name": "luaL_ref",
+                "start": 481,
+                "end": 501
+            },
+            {
+                "name": "luaL_unref",
+                "start": 504,
+                "end": 512
+            },
+            {
+                "name": "getF",
+                "start": 529,
+                "end": 540
+            },
+            {
+                "name": "errfile",
+                "start": 543,
+                "end": 549
+            },
+            {
+                "name": "luaL_loadfile",
+                "start": 552,
+                "end": 590
+            },
+            {
+                "name": "getS",
+                "start": 599,
+                "end": 606
+            },
+            {
+                "name": "luaL_loadbuffer",
+                "start": 609,
+                "end": 615
+            },
+            {
+                "name": "luaL_loadstring",
+                "start": 618,
+                "end": 620
+            },
+            {
+                "name": "l_alloc",
+                "start": 627,
+                "end": 636
+            },
+            {
+                "name": "panic",
+                "start": 639,
+                "end": 644
+            },
+            {
+                "name": "luaL_newstate",
+                "start": 647,
+                "end": 651
+            }
+        ],
+        "src/lua/lmathlib.c": [
+            {
+                "name": "math_abs",
+                "start": 26,
+                "end": 29
+            },
+            {
+                "name": "math_sin",
+                "start": 31,
+                "end": 34
+            },
+            {
+                "name": "math_sinh",
+                "start": 36,
+                "end": 39
+            },
+            {
+                "name": "math_cos",
+                "start": 41,
+                "end": 44
+            },
+            {
+                "name": "math_cosh",
+                "start": 46,
+                "end": 49
+            },
+            {
+                "name": "math_tan",
+                "start": 51,
+                "end": 54
+            },
+            {
+                "name": "math_tanh",
+                "start": 56,
+                "end": 59
+            },
+            {
+                "name": "math_asin",
+                "start": 61,
+                "end": 64
+            },
+            {
+                "name": "math_acos",
+                "start": 66,
+                "end": 69
+            },
+            {
+                "name": "math_atan",
+                "start": 71,
+                "end": 74
+            },
+            {
+                "name": "math_atan2",
+                "start": 76,
+                "end": 79
+            },
+            {
+                "name": "math_ceil",
+                "start": 81,
+                "end": 84
+            },
+            {
+                "name": "math_floor",
+                "start": 86,
+                "end": 89
+            },
+            {
+                "name": "math_fmod",
+                "start": 91,
+                "end": 94
+            },
+            {
+                "name": "math_modf",
+                "start": 96,
+                "end": 102
+            },
+            {
+                "name": "math_sqrt",
+                "start": 104,
+                "end": 107
+            },
+            {
+                "name": "math_pow",
+                "start": 109,
+                "end": 112
+            },
+            {
+                "name": "math_log",
+                "start": 114,
+                "end": 117
+            },
+            {
+                "name": "math_log10",
+                "start": 119,
+                "end": 122
+            },
+            {
+                "name": "math_exp",
+                "start": 124,
+                "end": 127
+            },
+            {
+                "name": "math_deg",
+                "start": 129,
+                "end": 132
+            },
+            {
+                "name": "math_rad",
+                "start": 134,
+                "end": 137
+            },
+            {
+                "name": "math_frexp",
+                "start": 139,
+                "end": 144
+            },
+            {
+                "name": "math_ldexp",
+                "start": 146,
+                "end": 149
+            },
+            {
+                "name": "math_min",
+                "start": 153,
+                "end": 164
+            },
+            {
+                "name": "math_max",
+                "start": 167,
+                "end": 178
+            },
+            {
+                "name": "math_random",
+                "start": 181,
+                "end": 206
+            },
+            {
+                "name": "math_randomseed",
+                "start": 209,
+                "end": 212
+            },
+            {
+                "name": "luaopen_math",
+                "start": 251,
+                "end": 262
+            }
+        ],
+        "src/tools/txt2c.c": [
+            {
+                "name": "main",
+                "start": 7,
+                "end": 49
+            }
+        ]
+    }
+}

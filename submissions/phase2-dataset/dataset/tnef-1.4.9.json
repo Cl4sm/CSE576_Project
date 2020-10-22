@@ -1,0 +1,472 @@
+{
+    "tnef-1.4.9": {
+        "src/util.c": [
+            {
+                "name": "GETINT32",
+                "start": 32,
+                "end": 38
+            },
+            {
+                "name": "GETINT16",
+                "start": 40,
+                "end": 43
+            },
+            {
+                "name": "GETINT8",
+                "start": 45,
+                "end": 48
+            },
+            {
+                "name": "getbuf",
+                "start": 50,
+                "end": 59
+            },
+            {
+                "name": "geti32",
+                "start": 61,
+                "end": 66
+            },
+            {
+                "name": "geti16",
+                "start": 67,
+                "end": 72
+            },
+            {
+                "name": "geti8",
+                "start": 74,
+                "end": 79
+            },
+            {
+                "name": "unicode_to_utf8",
+                "start": 81,
+                "end": 113
+            }
+        ],
+        "src/tnef.h": [
+            {
+                "name": "parse_file",
+                "start": 37,
+                "end": 40
+            }
+        ],
+        "src/tnef.c": [
+            {
+                "name": "read_object",
+                "start": 62,
+                "end": 75
+            },
+            {
+                "name": "get_body_files",
+                "start": 77,
+                "end": 138
+            },
+            {
+                "name": "get_text_data",
+                "start": 140,
+                "end": 150
+            },
+            {
+                "name": "get_html_data",
+                "start": 152,
+                "end": 168
+            },
+            {
+                "name": "data_left",
+                "start": 170,
+                "end": 232
+            },
+            {
+                "name": "parse_file",
+                "start": 236,
+                "end": 389
+            },
+            {
+                "name": "free_bodies",
+                "start": 391,
+                "end": 398
+            }
+        ],
+        "src/debug.c": [
+            {
+                "name": "debug_print",
+                "start": 32,
+                "end": 44
+            }
+        ],
+        "src/mapi_attr.c": [
+            {
+                "name": "pad_to_4byte",
+                "start": 35,
+                "end": 39
+            },
+            {
+                "name": "copy_guid_from_buf",
+                "start": 42,
+                "end": 55
+            },
+            {
+                "name": "mapi_attr_dump",
+                "start": 59,
+                "end": 148
+            },
+            {
+                "name": "alloc_mapi_values",
+                "start": 150,
+                "end": 159
+            },
+            {
+                "name": "mapi_attr_read",
+                "start": 170,
+                "end": 383
+            },
+            {
+                "name": "mapi_attr_free",
+                "start": 385,
+                "end": 411
+            },
+            {
+                "name": "mapi_attr_free_list",
+                "start": 413,
+                "end": 422
+            }
+        ],
+        "src/attr.c": [
+            {
+                "name": "copy_date_from_attr",
+                "start": 39,
+                "end": 48
+            },
+            {
+                "name": "copy_triple_from_attr",
+                "start": 50,
+                "end": 63
+            },
+            {
+                "name": "attr_dump",
+                "start": 68,
+                "end": 180
+            },
+            {
+                "name": "attr_free",
+                "start": 182,
+                "end": 190
+            },
+            {
+                "name": "check_checksum",
+                "start": 195,
+                "end": 227
+            },
+            {
+                "name": "attr_read",
+                "start": 229,
+                "end": 274
+            }
+        ],
+        "src/rtf.c": [
+            {
+                "name": "generate_crc",
+                "start": 135,
+                "end": 150
+            },
+            {
+                "name": "is_rtf_data",
+                "start": 152,
+                "end": 168
+            },
+            {
+                "name": "decompress_rtf_data",
+                "start": 170,
+                "end": 300
+            },
+            {
+                "name": "get_rtf_data_from_buf",
+                "start": 302,
+                "end": 340
+            },
+            {
+                "name": "get_rtf_data",
+                "start": 342,
+                "end": 361
+            }
+        ],
+        "src/alloc.c": [
+            {
+                "name": "set_alloc_limit",
+                "start": 31,
+                "end": 35
+            },
+            {
+                "name": "get_alloc_limit",
+                "start": 37,
+                "end": 41
+            },
+            {
+                "name": "check_mul_overflow",
+                "start": 43,
+                "end": 50
+            },
+            {
+                "name": "alloc_limit_failure",
+                "start": 52,
+                "end": 61
+            },
+            {
+                "name": "alloc_limit_assert",
+                "start": 63,
+                "end": 71
+            },
+            {
+                "name": "xmalloc",
+                "start": 74,
+                "end": 90
+            },
+            {
+                "name": "checked_xmalloc",
+                "start": 93,
+                "end": 103
+            },
+            {
+                "name": "xcalloc",
+                "start": 106,
+                "end": 122
+            },
+            {
+                "name": "checked_xcalloc",
+                "start": 125,
+                "end": 134
+            }
+        ],
+        "src/file.c": [
+            {
+                "name": "confirm_action",
+                "start": 39,
+                "end": 58
+            },
+            {
+                "name": "file_write",
+                "start": 60,
+                "end": 160
+            },
+            {
+                "name": "file_add_mapi_attrs",
+                "start": 162,
+                "end": 208
+            },
+            {
+                "name": "file_add_attr",
+                "start": 210,
+                "end": 248
+            },
+            {
+                "name": "file_free",
+                "start": 250,
+                "end": 262
+            }
+        ],
+        "src/date.c": [
+            {
+                "name": "dow_str",
+                "start": 35,
+                "end": 40
+            },
+            {
+                "name": "date_to_str",
+                "start": 42,
+                "end": 51
+            },
+            {
+                "name": "date_read",
+                "start": 53,
+                "end": 65
+            }
+        ],
+        "src/write.c": [
+            {
+                "name": "write_uint8",
+                "start": 22,
+                "end": 26
+            },
+            {
+                "name": "write_uint16",
+                "start": 28,
+                "end": 32
+            },
+            {
+                "name": "write_uint32",
+                "start": 34,
+                "end": 38
+            },
+            {
+                "name": "write_int8",
+                "start": 40,
+                "end": 44
+            },
+            {
+                "name": "write_int16",
+                "start": 46,
+                "end": 50
+            },
+            {
+                "name": "write_int32",
+                "start": 52,
+                "end": 56
+            },
+            {
+                "name": "write_float",
+                "start": 58,
+                "end": 62
+            },
+            {
+                "name": "write_string",
+                "start": 64,
+                "end": 68
+            },
+            {
+                "name": "write_byte",
+                "start": 70,
+                "end": 74
+            },
+            {
+                "name": "write_word",
+                "start": 76,
+                "end": 80
+            },
+            {
+                "name": "write_dword",
+                "start": 82,
+                "end": 86
+            },
+            {
+                "name": "write_date",
+                "start": 88,
+                "end": 92
+            },
+            {
+                "name": "write_triple",
+                "start": 94,
+                "end": 110
+            },
+            {
+                "name": "write_boolean",
+                "start": 112,
+                "end": 116
+            },
+            {
+                "name": "write_uint64",
+                "start": 118,
+                "end": 122
+            },
+            {
+                "name": "write_guid",
+                "start": 124,
+                "end": 136
+            }
+        ],
+        "src/xstrdup.c": [
+            {
+                "name": "xstrdup",
+                "start": 30,
+                "end": 40
+            }
+        ],
+        "src/replace/getopt_long.h": [
+            {
+                "name": "getopt_long",
+                "start": 116,
+                "end": 117
+            },
+            {
+                "name": "getopt_long_only",
+                "start": 118,
+                "end": 120
+            },
+            {
+                "name": "_getopt_internal",
+                "start": 123,
+                "end": 126
+            }
+        ],
+        "src/main.c": [
+            {
+                "name": "usage",
+                "start": 92,
+                "end": 97
+            },
+            {
+                "name": "validate_body_pref",
+                "start": 100,
+                "end": 142
+            },
+            {
+                "name": "parse_cmdline",
+                "start": 145,
+                "end": 332
+            },
+            {
+                "name": "main",
+                "start": 335,
+                "end": 386
+            }
+        ],
+        "src/path.c": [
+            {
+                "name": "concat_fname",
+                "start": 41,
+                "end": 89
+            },
+            {
+                "name": "file_exists",
+                "start": 91,
+                "end": 96
+            },
+            {
+                "name": "find_free_number",
+                "start": 100,
+                "end": 115
+            },
+            {
+                "name": "could_be_a_windows_path",
+                "start": 131,
+                "end": 180
+            },
+            {
+                "name": "sanitize_filename",
+                "start": 189,
+                "end": 294
+            },
+            {
+                "name": "munge_fname",
+                "start": 305,
+                "end": 397
+            }
+        ],
+        "src/replace/malloc.c": [
+            {
+                "name": "rpl_malloc",
+                "start": 35,
+                "end": 41
+            }
+        ],
+        "src/replace/dummy.c": [
+            {
+                "name": "___dummy___",
+                "start": 5,
+                "end": 7
+            }
+        ],
+        "src/replace/basename.c": [
+            {
+                "name": "basename",
+                "start": 39,
+                "end": 44
+            }
+        ],
+        "src/replace/strdup.c": [
+            {
+                "name": "strdup",
+                "start": 42,
+                "end": 49
+            }
+        ]
+    }
+}

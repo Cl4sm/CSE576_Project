@@ -1,0 +1,736 @@
+{
+    "patch-2.7.5": {
+        "src/pch.h": [
+            {
+                "name": "pch_timestamp",
+                "start": 57,
+                "end": 60
+            }
+        ],
+        "src/util.h": [
+            {
+                "name": "fatal",
+                "start": 37,
+                "end": 38
+            },
+            {
+                "name": "pfatal",
+                "start": 39,
+                "end": 40
+            },
+            {
+                "name": "set_file_attributes",
+                "start": 81,
+                "end": 82
+            }
+        ],
+        "src/bestmatch.h": [
+            {
+                "name": "bestmatch",
+                "start": 54,
+                "end": 163
+            }
+        ],
+        "src/merge.c": [
+            {
+                "name": "locate_merge",
+                "start": 45,
+                "end": 153
+            },
+            {
+                "name": "print_linerange",
+                "start": 155,
+                "end": 168
+            },
+            {
+                "name": "merge_result",
+                "start": 170,
+                "end": 196
+            }
+        ],
+        "src/util.c": [
+            {
+                "name": "file_id_hasher",
+                "start": 74,
+                "end": 80
+            },
+            {
+                "name": "file_id_comparator",
+                "start": 84,
+                "end": 90
+            },
+            {
+                "name": "init_backup_hash_table",
+                "start": 96,
+                "end": 103
+            },
+            {
+                "name": "__insert_file_id",
+                "start": 105,
+                "end": 123
+            },
+            {
+                "name": "__lookup_file_id",
+                "start": 125,
+                "end": 133
+            },
+            {
+                "name": "insert_file_id",
+                "start": 138,
+                "end": 142
+            },
+            {
+                "name": "lookup_file_id",
+                "start": 147,
+                "end": 153
+            },
+            {
+                "name": "set_queued_output",
+                "start": 155,
+                "end": 163
+            },
+            {
+                "name": "has_queued_output",
+                "start": 165,
+                "end": 171
+            },
+            {
+                "name": "quote_system_arg",
+                "start": 680,
+                "end": 689
+            },
+            {
+                "name": "version_controller",
+                "start": 702,
+                "end": 823
+            },
+            {
+                "name": "version_get",
+                "start": 830,
+                "end": 860
+            },
+            {
+                "name": "savebuf",
+                "start": 864,
+                "end": 883
+            },
+            {
+                "name": "savestr",
+                "start": 885,
+                "end": 889
+            },
+            {
+                "name": "remove_prefix",
+                "start": 891,
+                "end": 897
+            },
+            {
+                "name": "format_linenum",
+                "start": 899,
+                "end": 921
+            },
+            {
+                "name": "fatal",
+                "start": 925,
+                "end": 936
+            },
+            {
+                "name": "xalloc_die",
+                "start": 938,
+                "end": 942
+            },
+            {
+                "name": "read_fatal",
+                "start": 944,
+                "end": 948
+            },
+            {
+                "name": "write_fatal",
+                "start": 950,
+                "end": 954
+            },
+            {
+                "name": "pfatal",
+                "start": 958,
+                "end": 972
+            },
+            {
+                "name": "vsay",
+                "start": 976,
+                "end": 981
+            },
+            {
+                "name": "say",
+                "start": 983,
+                "end": 990
+            },
+            {
+                "name": "ask",
+                "start": 994,
+                "end": 1049
+            },
+            {
+                "name": "ok_to_reverse",
+                "start": 1053,
+                "end": 1098
+            },
+            {
+                "name": "fatal_exit_handler",
+                "start": 1147,
+                "end": 1152
+            },
+            {
+                "name": "set_signals",
+                "start": 1155,
+                "end": 1204
+            },
+            {
+                "name": "ignore_signals",
+                "start": 1208,
+                "end": 1219
+            },
+            {
+                "name": "exit_with_signal",
+                "start": 1221,
+                "end": 1231
+            },
+            {
+                "name": "systemic",
+                "start": 1233,
+                "end": 1240
+            },
+            {
+                "name": "replace_slashes",
+                "start": 1245,
+                "end": 1282
+            },
+            {
+                "name": "makedirs",
+                "start": 1287,
+                "end": 1315
+            },
+            {
+                "name": "removedirs",
+                "start": 1320,
+                "end": 1342
+            },
+            {
+                "name": "init_time",
+                "start": 1346,
+                "end": 1350
+            },
+            {
+                "name": "parse_c_string",
+                "start": 1352,
+                "end": 1424
+            },
+            {
+                "name": "strip_leading_slashes",
+                "start": 1430,
+                "end": 1453
+            },
+            {
+                "name": "fetchname",
+                "start": 1458,
+                "end": 1574
+            },
+            {
+                "name": "parse_name",
+                "start": 1576,
+                "end": 1601
+            },
+            {
+                "name": "Fseek",
+                "start": 1603,
+                "end": 1608
+            },
+            {
+                "name": "try_safe_open",
+                "start": 1620,
+                "end": 1635
+            },
+            {
+                "name": "make_tempfile",
+                "start": 1637,
+                "end": 1678
+            },
+            {
+                "name": "stat_file",
+                "start": 1680,
+                "end": 1686
+            },
+            {
+                "name": "filename_is_safe",
+                "start": 1692,
+                "end": 1708
+            },
+            {
+                "name": "cwd_is_root",
+                "start": 1712,
+                "end": 1731
+            }
+        ],
+        "src/inp.c": [
+            {
+                "name": "re_input",
+                "start": 54,
+                "end": 77
+            },
+            {
+                "name": "scan_input",
+                "start": 81,
+                "end": 94
+            },
+            {
+                "name": "report_revision",
+                "start": 98,
+                "end": 124
+            },
+            {
+                "name": "too_many_lines",
+                "start": 127,
+                "end": 131
+            },
+            {
+                "name": "lines_too_long",
+                "start": 133,
+                "end": 137
+            },
+            {
+                "name": "get_input_file",
+                "start": 139,
+                "end": 214
+            },
+            {
+                "name": "plan_a",
+                "start": 219,
+                "end": 341
+            },
+            {
+                "name": "plan_b",
+                "start": 345,
+                "end": 461
+            },
+            {
+                "name": "ifetch",
+                "start": 466,
+                "end": 505
+            }
+        ],
+        "src/pch.c": [
+            {
+                "name": "re_patch",
+                "start": 97,
+                "end": 108
+            },
+            {
+                "name": "open_patch_file",
+                "start": 112,
+                "end": 166
+            },
+            {
+                "name": "set_hunkmax",
+                "start": 170,
+                "end": 179
+            },
+            {
+                "name": "grow_hunkmax",
+                "start": 183,
+                "end": 199
+            },
+            {
+                "name": "maybe_reverse",
+                "start": 201,
+                "end": 225
+            },
+            {
+                "name": "there_is_another_patch",
+                "start": 229,
+                "end": 322
+            }
+        ],
+        "src/patch.c": [
+            {
+                "name": "output_file",
+                "start": 61,
+                "end": 62
+            },
+            {
+                "name": "main",
+                "start": 109,
+                "end": 679
+            },
+            {
+                "name": "reinitialize_almost_everything",
+                "start": 683,
+                "end": 709
+            },
+            {
+                "name": "usage",
+                "start": 837,
+                "end": 856
+            },
+            {
+                "name": "get_some_switches",
+                "start": 860,
+                "end": 1078
+            },
+            {
+                "name": "numeric_string",
+                "start": 1083,
+                "end": 1115
+            },
+            {
+                "name": "locate_hunk",
+                "start": 1119,
+                "end": 1208
+            },
+            {
+                "name": "mangled_patch",
+                "start": 1210,
+                "end": 1222
+            },
+            {
+                "name": "print_unidiff_range",
+                "start": 1226,
+                "end": 1248
+            },
+            {
+                "name": "print_header_line",
+                "start": 1250,
+                "end": 1258
+            },
+            {
+                "name": "abort_hunk_unified",
+                "start": 1262,
+                "end": 1315
+            },
+            {
+                "name": "abort_hunk_context",
+                "start": 1319,
+                "end": 1384
+            },
+            {
+                "name": "abort_hunk",
+                "start": 1388,
+                "end": 1398
+            },
+            {
+                "name": "apply_hunk",
+                "start": 1402,
+                "end": 1551
+            },
+            {
+                "name": "create_output_file",
+                "start": 1555,
+                "end": 1564
+            },
+            {
+                "name": "init_output",
+                "start": 1568,
+                "end": 1574
+            },
+            {
+                "name": "open_outfile",
+                "start": 1576,
+                "end": 1595
+            },
+            {
+                "name": "init_reject",
+                "start": 1599,
+                "end": 1611
+            },
+            {
+                "name": "copy_till",
+                "start": 1615,
+                "end": 1642
+            },
+            {
+                "name": "spew_output",
+                "start": 1646,
+                "end": 1672
+            },
+            {
+                "name": "patch_match",
+                "start": 1676,
+                "end": 1698
+            },
+            {
+                "name": "check_line_endings",
+                "start": 1702,
+                "end": 1725
+            },
+            {
+                "name": "similar",
+                "start": 1729,
+                "end": 1757
+            },
+            {
+                "name": "init_files_to_delete",
+                "start": 1769,
+                "end": 1773
+            },
+            {
+                "name": "delete_file_later",
+                "start": 1775,
+                "end": 1793
+            },
+            {
+                "name": "delete_files",
+                "start": 1795,
+                "end": 1820
+            },
+            {
+                "name": "output_file_later",
+                "start": 1834,
+                "end": 1849
+            },
+            {
+                "name": "output_file_now",
+                "start": 1851,
+                "end": 1866
+            },
+            {
+                "name": "output_file",
+                "start": 1868,
+                "end": 1901
+            },
+            {
+                "name": "dispose_file_to_output",
+                "start": 1903,
+                "end": 1910
+            },
+            {
+                "name": "init_files_to_output",
+                "start": 1912,
+                "end": 1917
+            },
+            {
+                "name": "gl_list_clear",
+                "start": 1919,
+                "end": 1924
+            },
+            {
+                "name": "output_files",
+                "start": 1926,
+                "end": 1961
+            },
+            {
+                "name": "forget_output_files",
+                "start": 1963,
+                "end": 1977
+            },
+            {
+                "name": "fatal_exit",
+                "start": 1981,
+                "end": 1990
+            },
+            {
+                "name": "remove_if_needed",
+                "start": 1992,
+                "end": 2000
+            },
+            {
+                "name": "cleanup",
+                "start": 2002,
+                "end": 2011
+            }
+        ],
+        "src/version.c": [
+            {
+                "name": "version",
+                "start": 19,
+                "end": 24
+            }
+        ],
+        "src/list.h": [
+            {
+                "name": "INIT_LIST_HEAD",
+                "start": 15,
+                "end": 19
+            },
+            {
+                "name": "list_add",
+                "start": 21,
+                "end": 28
+            },
+            {
+                "name": "list_del",
+                "start": 30,
+                "end": 37
+            },
+            {
+                "name": "list_del_init",
+                "start": 39,
+                "end": 44
+            },
+            {
+                "name": "list_empty",
+                "start": 46,
+                "end": 50
+            }
+        ],
+        "src/safe.c": [
+            {
+                "name": "hash_cached_dirfd",
+                "start": 69,
+                "end": 74
+            },
+            {
+                "name": "compare_cached_dirfds",
+                "start": 76,
+                "end": 84
+            },
+            {
+                "name": "free_cached_dirfd",
+                "start": 86,
+                "end": 91
+            },
+            {
+                "name": "init_dirfd_cache",
+                "start": 93,
+                "end": 109
+            },
+            {
+                "name": "lookup_cached_dirfd",
+                "start": 111,
+                "end": 124
+            },
+            {
+                "name": "remove_cached_dirfd",
+                "start": 126,
+                "end": 140
+            },
+            {
+                "name": "insert_cached_dirfd",
+                "start": 142,
+                "end": 166
+            },
+            {
+                "name": "invalidate_cached_dirfd",
+                "start": 168,
+                "end": 180
+            },
+            {
+                "name": "put_path",
+                "start": 184,
+                "end": 198
+            },
+            {
+                "name": "new_cached_dirfd",
+                "start": 200,
+                "end": 211
+            },
+            {
+                "name": "openat_cached",
+                "start": 213,
+                "end": 240
+            },
+            {
+                "name": "count_path_components",
+                "start": 242,
+                "end": 258
+            },
+            {
+                "name": "push_symlink",
+                "start": 267,
+                "end": 271
+            },
+            {
+                "name": "pop_symlink",
+                "start": 273,
+                "end": 278
+            },
+            {
+                "name": "read_symlink",
+                "start": 283,
+                "end": 348
+            },
+            {
+                "name": "traverse_next",
+                "start": 352,
+                "end": 404
+            },
+            {
+                "name": "traverse_another_path",
+                "start": 416,
+                "end": 533
+            },
+            {
+                "name": "traverse_path",
+                "start": 536,
+                "end": 539
+            },
+            {
+                "name": "safe_xstat",
+                "start": 541,
+                "end": 549
+            },
+            {
+                "name": "safe_stat",
+                "start": 552,
+                "end": 555
+            },
+            {
+                "name": "safe_lstat",
+                "start": 558,
+                "end": 561
+            },
+            {
+                "name": "safe_open",
+                "start": 564,
+                "end": 572
+            },
+            {
+                "name": "safe_rename",
+                "start": 575,
+                "end": 595
+            },
+            {
+                "name": "safe_mkdir",
+                "start": 598,
+                "end": 606
+            },
+            {
+                "name": "safe_rmdir",
+                "start": 609,
+                "end": 622
+            },
+            {
+                "name": "safe_unlink",
+                "start": 625,
+                "end": 633
+            },
+            {
+                "name": "safe_symlink",
+                "start": 636,
+                "end": 644
+            },
+            {
+                "name": "safe_chmod",
+                "start": 647,
+                "end": 655
+            },
+            {
+                "name": "safe_lchown",
+                "start": 658,
+                "end": 666
+            },
+            {
+                "name": "safe_lutimens",
+                "start": 669,
+                "end": 677
+            },
+            {
+                "name": "safe_readlink",
+                "start": 680,
+                "end": 688
+            },
+            {
+                "name": "safe_access",
+                "start": 691,
+                "end": 699
+            }
+        ]
+    }
+}

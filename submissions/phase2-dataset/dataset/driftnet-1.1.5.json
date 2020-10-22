@@ -1,0 +1,676 @@
+{
+    "driftnet-1.1.5": {
+        "src/util.c": [
+            {
+                "name": "xmalloc",
+                "start": 37,
+                "end": 42
+            },
+            {
+                "name": "xcalloc",
+                "start": 46,
+                "end": 51
+            },
+            {
+                "name": "xrealloc",
+                "start": 55,
+                "end": 60
+            },
+            {
+                "name": "xfree",
+                "start": 64,
+                "end": 66
+            },
+            {
+                "name": "xstrdup",
+                "start": 70,
+                "end": 75
+            },
+            {
+                "name": "memstr",
+                "start": 80,
+                "end": 91
+            },
+            {
+                "name": "xnanosleep",
+                "start": 93,
+                "end": 109
+            }
+        ],
+        "src/layer2.h": [
+            {
+                "name": "handle_link_layer",
+                "start": 36,
+                "end": 37
+            }
+        ],
+        "src/layer2.c": [
+            {
+                "name": "parse_ieee80211",
+                "start": 77,
+                "end": 138
+            },
+            {
+                "name": "handle_link_layer",
+                "start": 140,
+                "end": 220
+            }
+        ],
+        "src/connection.c": [
+            {
+                "name": "connection_alloc_slots",
+                "start": 33,
+                "end": 38
+            },
+            {
+                "name": "connection_free_slots",
+                "start": 40,
+                "end": 50
+            },
+            {
+                "name": "alloc_connection",
+                "start": 54,
+                "end": 70
+            },
+            {
+                "name": "find_connection",
+                "start": 75,
+                "end": 88
+            },
+            {
+                "name": "connection_string",
+                "start": 94,
+                "end": 118
+            },
+            {
+                "name": "print_ipport_pair",
+                "start": 120,
+                "end": 152
+            },
+            {
+                "name": "sweep_connections",
+                "start": 159,
+                "end": 182
+            },
+            {
+                "name": "connection_new",
+                "start": 187,
+                "end": 203
+            },
+            {
+                "name": "connection_delete",
+                "start": 207,
+                "end": 220
+            },
+            {
+                "name": "connection_push",
+                "start": 224,
+                "end": 280
+            }
+        ],
+        "src/options.c": [
+            {
+                "name": "parse_options",
+                "start": 43,
+                "end": 162
+            },
+            {
+                "name": "validate_options",
+                "start": 164,
+                "end": 205
+            },
+            {
+                "name": "usage",
+                "start": 209,
+                "end": 268
+            }
+        ],
+        "src/driftnet.c": [
+            {
+                "name": "unexpected_exit",
+                "start": 42,
+                "end": 51
+            },
+            {
+                "name": "terminate_on_signal",
+                "start": 57,
+                "end": 66
+            },
+            {
+                "name": "setup_signals",
+                "start": 71,
+                "end": 93
+            },
+            {
+                "name": "capture_thread",
+                "start": 98,
+                "end": 104
+            },
+            {
+                "name": "print_exit_reason",
+                "start": 106,
+                "end": 124
+            },
+            {
+                "name": "main",
+                "start": 129,
+                "end": 216
+            }
+        ],
+        "src/layer3.h": [
+            {
+                "name": "layer3_find_tcp",
+                "start": 35,
+                "end": 36
+            }
+        ],
+        "src/packetcapture.c": [
+            {
+                "name": "packetcapture_open_offline",
+                "start": 56,
+                "end": 68
+            },
+            {
+                "name": "packetcapture_open_live",
+                "start": 70,
+                "end": 102
+            },
+            {
+                "name": "packetcapture_close",
+                "start": 104,
+                "end": 108
+            },
+            {
+                "name": "get_default_interface",
+                "start": 110,
+                "end": 125
+            },
+            {
+                "name": "packetcapture_dispatch",
+                "start": 127,
+                "end": 130
+            },
+            {
+                "name": "process_packet",
+                "start": 134,
+                "end": 229
+            },
+            {
+                "name": "get_datalink_info",
+                "start": 232,
+                "end": 244
+            }
+        ],
+        "src/pid.c": [
+            {
+                "name": "create_pidfile",
+                "start": 35,
+                "end": 99
+            },
+            {
+                "name": "close_pidfile",
+                "start": 101,
+                "end": 107
+            }
+        ],
+        "src/layer3.c": [
+            {
+                "name": "layer3_find_tcp",
+                "start": 19,
+                "end": 132
+            }
+        ],
+        "src/tmpdir.c": [
+            {
+                "name": "set_tmpdir",
+                "start": 62,
+                "end": 73
+            },
+            {
+                "name": "get_tmpdir",
+                "start": 75,
+                "end": 80
+            },
+            {
+                "name": "make_tmpdir",
+                "start": 82,
+                "end": 132
+            },
+            {
+                "name": "clean_tmpdir",
+                "start": 138,
+                "end": 185
+            },
+            {
+                "name": "check_dir_is_rw",
+                "start": 187,
+                "end": 206
+            },
+            {
+                "name": "tmpfile_write",
+                "start": 208,
+                "end": 229
+            },
+            {
+                "name": "count_tmpfiles",
+                "start": 234,
+                "end": 253
+            },
+            {
+                "name": "is_tempfile",
+                "start": 255,
+                "end": 272
+            },
+            {
+                "name": "tmpfiles_limit_reached",
+                "start": 274,
+                "end": 281
+            }
+        ],
+        "src/log.c": [
+            {
+                "name": "get_loglevel",
+                "start": 34,
+                "end": 37
+            },
+            {
+                "name": "set_loglevel",
+                "start": 39,
+                "end": 42
+            },
+            {
+                "name": "log_msg",
+                "start": 44,
+                "end": 81
+            },
+            {
+                "name": "get_timestring",
+                "start": 83,
+                "end": 95
+            },
+            {
+                "name": "get_levelstring",
+                "start": 97,
+                "end": 115
+            }
+        ],
+        "src/media/audio.h": [
+            {
+                "name": "find_mpeg_stream",
+                "start": 16,
+                "end": 17
+            }
+        ],
+        "src/media/audio.c": [
+            {
+                "name": "find_mpeg_stream",
+                "start": 37,
+                "end": 89
+            }
+        ],
+        "src/media/image.c": [
+            {
+                "name": "find_gif_image",
+                "start": 30,
+                "end": 146
+            },
+            {
+                "name": "jpeg_next_marker",
+                "start": 152,
+                "end": 160
+            },
+            {
+                "name": "jpeg_skip_block",
+                "start": 162,
+                "end": 169
+            },
+            {
+                "name": "find_jpeg_image",
+                "start": 171,
+                "end": 208
+            },
+            {
+                "name": "find_png_eoi",
+                "start": 213,
+                "end": 241
+            },
+            {
+                "name": "find_png_image",
+                "start": 245,
+                "end": 265
+            }
+        ],
+        "src/media/playaudio.c": [
+            {
+                "name": "audiochunk_new",
+                "start": 61,
+                "end": 70
+            },
+            {
+                "name": "audiochunk_delete",
+                "start": 74,
+                "end": 77
+            },
+            {
+                "name": "audiochunk_write",
+                "start": 83,
+                "end": 101
+            },
+            {
+                "name": "mpeg_submit_chunk",
+                "start": 110,
+                "end": 127
+            },
+            {
+                "name": "mpeg_play",
+                "start": 134,
+                "end": 163
+            },
+            {
+                "name": "mpeg_player_manager",
+                "start": 167,
+                "end": 219
+            },
+            {
+                "name": "do_mpeg_player",
+                "start": 226,
+                "end": 247
+            }
+        ],
+        "src/media/mpeghdr.c": [
+            {
+                "name": "mpeg_hdr_parse",
+                "start": 53,
+                "end": 118
+            },
+            {
+                "name": "mpeg_hdr_nextframe_offset",
+                "start": 123,
+                "end": 131
+            },
+            {
+                "name": "mpeg_hdr_print",
+                "start": 138,
+                "end": 150
+            }
+        ],
+        "src/media/http.c": [
+            {
+                "name": "find_http_req",
+                "start": 32,
+                "end": 95
+            },
+            {
+                "name": "dispatch_http_req",
+                "start": 97,
+                "end": 133
+            }
+        ],
+        "src/media/image.h": [
+            {
+                "name": "find_gif_image",
+                "start": 16,
+                "end": 17
+            },
+            {
+                "name": "find_jpeg_image",
+                "start": 19,
+                "end": 20
+            },
+            {
+                "name": "find_png_image",
+                "start": 22,
+                "end": 23
+            }
+        ],
+        "src/media/http.h": [
+            {
+                "name": "find_http_req",
+                "start": 20,
+                "end": 21
+            }
+        ],
+        "src/media/media.c": [
+            {
+                "name": "dispatch_image",
+                "start": 40,
+                "end": 55
+            },
+            {
+                "name": "dispatch_mpeg_audio",
+                "start": 62,
+                "end": 64
+            },
+            {
+                "name": "init_mediadrv",
+                "start": 81,
+                "end": 85
+            },
+            {
+                "name": "extract_media",
+                "start": 89,
+                "end": 118
+            }
+        ],
+        "src/display/img.c": [
+            {
+                "name": "img_new",
+                "start": 82,
+                "end": 87
+            },
+            {
+                "name": "img_new_blank",
+                "start": 91,
+                "end": 98
+            },
+            {
+                "name": "img_alloc",
+                "start": 103,
+                "end": 109
+            },
+            {
+                "name": "img_delete",
+                "start": 113,
+                "end": 117
+            },
+            {
+                "name": "img_load",
+                "start": 122,
+                "end": 151
+            },
+            {
+                "name": "img_load_stream",
+                "start": 155,
+                "end": 158
+            },
+            {
+                "name": "img_load_file",
+                "start": 162,
+                "end": 187
+            },
+            {
+                "name": "img_save",
+                "start": 191,
+                "end": 202
+            },
+            {
+                "name": "img_clip_adj_x",
+                "start": 208,
+                "end": 212
+            },
+            {
+                "name": "img_clip_adj_y",
+                "start": 214,
+                "end": 218
+            },
+            {
+                "name": "img_clip",
+                "start": 222,
+                "end": 225
+            },
+            {
+                "name": "img_simple_blt",
+                "start": 229,
+                "end": 233
+            }
+        ],
+        "src/display/jpeg.c": [
+            {
+                "name": "my_error_exit",
+                "start": 36,
+                "end": 40
+            },
+            {
+                "name": "jpeg_load_hdr",
+                "start": 44,
+                "end": 71
+            },
+            {
+                "name": "jpeg_abort_load",
+                "start": 75,
+                "end": 79
+            },
+            {
+                "name": "jpeg_load_img",
+                "start": 83,
+                "end": 116
+            },
+            {
+                "name": "jpeg_save_img",
+                "start": 120,
+                "end": 172
+            }
+        ],
+        "src/display/gif.c": [
+            {
+                "name": "gif_load_hdr",
+                "start": 25,
+                "end": 44
+            },
+            {
+                "name": "gif_abort_load",
+                "start": 49,
+                "end": 52
+            },
+            {
+                "name": "gif_load_img",
+                "start": 57,
+                "end": 131
+            }
+        ],
+        "src/display/png.c": [
+            {
+                "name": "png_catch_error",
+                "start": 29,
+                "end": 37
+            },
+            {
+                "name": "png_load_hdr",
+                "start": 39,
+                "end": 89
+            },
+            {
+                "name": "png_abort_load",
+                "start": 91,
+                "end": 93
+            },
+            {
+                "name": "png_load_img",
+                "start": 95,
+                "end": 188
+            },
+            {
+                "name": "png_save_img",
+                "start": 190,
+                "end": 192
+            }
+        ],
+        "src/display/display.c": [
+            {
+                "name": "display_send_img",
+                "start": 63,
+                "end": 66
+            },
+            {
+                "name": "do_image_display",
+                "start": 68,
+                "end": 99
+            },
+            {
+                "name": "delete_event",
+                "start": 101,
+                "end": 104
+            },
+            {
+                "name": "make_backing_image",
+                "start": 108,
+                "end": 150
+            },
+            {
+                "name": "update_window",
+                "start": 154,
+                "end": 161
+            },
+            {
+                "name": "scroll_backing_image",
+                "start": 165,
+                "end": 188
+            },
+            {
+                "name": "add_image_rectangle",
+                "start": 193,
+                "end": 210
+            },
+            {
+                "name": "find_image_rectangle",
+                "start": 215,
+                "end": 221
+            },
+            {
+                "name": "expose_event",
+                "start": 225,
+                "end": 232
+            },
+            {
+                "name": "configure_event",
+                "start": 236,
+                "end": 243
+            },
+            {
+                "name": "save_image",
+                "start": 247,
+                "end": 291
+            },
+            {
+                "name": "button_press_event",
+                "start": 297,
+                "end": 300
+            },
+            {
+                "name": "button_release_event",
+                "start": 302,
+                "end": 314
+            },
+            {
+                "name": "destroy",
+                "start": 316,
+                "end": 318
+            },
+            {
+                "name": "xread",
+                "start": 322,
+                "end": 335
+            },
+            {
+                "name": "pipe_event",
+                "start": 337,
+                "end": 417
+            },
+            {
+                "name": "do_gtkdisplay",
+                "start": 419,
+                "end": 469
+            }
+        ]
+    }
+}

@@ -1,0 +1,2682 @@
+{
+    "pommed-1.39~dfsg": {
+        "pommed/pommed.h": [
+            {
+                "name": "logmsg",
+                "start": 16,
+                "end": 17
+            },
+            {
+                "name": "logdebug",
+                "start": 19,
+                "end": 20
+            },
+            {
+                "name": "kbd_set_fnmode",
+                "start": 23,
+                "end": 24
+            }
+        ],
+        "pommed/evloop.h": [
+            {
+                "name": "evloop_add",
+                "start": 40,
+                "end": 41
+            },
+            {
+                "name": "evloop_remove",
+                "start": 43,
+                "end": 44
+            },
+            {
+                "name": "evloop_add_timer",
+                "start": 46,
+                "end": 47
+            },
+            {
+                "name": "evloop_remove_timer",
+                "start": 49,
+                "end": 50
+            },
+            {
+                "name": "evloop_iteration",
+                "start": 52,
+                "end": 53
+            },
+            {
+                "name": "evloop_stop",
+                "start": 55,
+                "end": 56
+            },
+            {
+                "name": "evloop_init",
+                "start": 58,
+                "end": 59
+            },
+            {
+                "name": "evloop_cleanup",
+                "start": 61,
+                "end": 62
+            }
+        ],
+        "pommed/conffile.h": [
+            {
+                "name": "config_load",
+                "start": 93,
+                "end": 94
+            },
+            {
+                "name": "config_cleanup",
+                "start": 96,
+                "end": 97
+            }
+        ],
+        "pommed/audio.h": [
+            {
+                "name": "audio_step",
+                "start": 19,
+                "end": 20
+            },
+            {
+                "name": "audio_toggle_mute",
+                "start": 22,
+                "end": 23
+            },
+            {
+                "name": "audio_init",
+                "start": 25,
+                "end": 26
+            },
+            {
+                "name": "audio_cleanup",
+                "start": 28,
+                "end": 29
+            },
+            {
+                "name": "audio_fix_config",
+                "start": 31,
+                "end": 32
+            }
+        ],
+        "pommed/beep.h": [
+            {
+                "name": "beep_audio",
+                "start": 12,
+                "end": 13
+            },
+            {
+                "name": "beep_init",
+                "start": 15,
+                "end": 16
+            },
+            {
+                "name": "beep_cleanup",
+                "start": 18,
+                "end": 19
+            },
+            {
+                "name": "beep_fix_config",
+                "start": 21,
+                "end": 22
+            }
+        ],
+        "pommed/beep.c": [
+            {
+                "name": "beep_thread_command",
+                "start": 65,
+                "end": 66
+            },
+            {
+                "name": "beep_thread_cleanup",
+                "start": 68,
+                "end": 69
+            },
+            {
+                "name": "beep_thread_init",
+                "start": 71,
+                "end": 72
+            },
+            {
+                "name": "beep_beep",
+                "start": 75,
+                "end": 85
+            },
+            {
+                "name": "beep_audio",
+                "start": 87,
+                "end": 94
+            },
+            {
+                "name": "beep_open_device",
+                "start": 97,
+                "end": 185
+            },
+            {
+                "name": "beep_close_device",
+                "start": 187,
+                "end": 200
+            },
+            {
+                "name": "beep_process_events",
+                "start": 203,
+                "end": 237
+            },
+            {
+                "name": "beep_init",
+                "start": 240,
+                "end": 276
+            },
+            {
+                "name": "beep_cleanup",
+                "start": 278,
+                "end": 288
+            },
+            {
+                "name": "beep_fix_config",
+                "start": 290,
+                "end": 318
+            },
+            {
+                "name": "beep_load_sample",
+                "start": 328,
+                "end": 404
+            },
+            {
+                "name": "beep_play_sample",
+                "start": 408,
+                "end": 494
+            },
+            {
+                "name": "beep_thread",
+                "start": 500,
+                "end": 526
+            },
+            {
+                "name": "beep_thread_command",
+                "start": 532,
+                "end": 544
+            },
+            {
+                "name": "beep_thread_cleanup",
+                "start": 548,
+                "end": 566
+            },
+            {
+                "name": "beep_thread_init",
+                "start": 573,
+                "end": 601
+            }
+        ],
+        "pommed/evdev.h": [
+            {
+                "name": "evdev_init",
+                "start": 131,
+                "end": 132
+            },
+            {
+                "name": "evdev_cleanup",
+                "start": 134,
+                "end": 135
+            }
+        ],
+        "pommed/kbd_backlight.h": [
+            {
+                "name": "has_kbd_backlight",
+                "start": 63,
+                "end": 78
+            },
+            {
+                "name": "kbd_backlight_step",
+                "start": 82,
+                "end": 83
+            },
+            {
+                "name": "kbd_backlight_init",
+                "start": 85,
+                "end": 86
+            },
+            {
+                "name": "kbd_backlight_cleanup",
+                "start": 88,
+                "end": 89
+            },
+            {
+                "name": "kbd_backlight_fix_config",
+                "start": 91,
+                "end": 92
+            },
+            {
+                "name": "kbd_backlight_toggle",
+                "start": 96,
+                "end": 97
+            },
+            {
+                "name": "kbd_backlight_inhibit_set",
+                "start": 99,
+                "end": 100
+            },
+            {
+                "name": "kbd_backlight_inhibit_clear",
+                "start": 102,
+                "end": 103
+            },
+            {
+                "name": "kbd_backlight_inhibit_toggle",
+                "start": 105,
+                "end": 106
+            },
+            {
+                "name": "kbd_backlight_ambient_check",
+                "start": 108,
+                "end": 109
+            }
+        ],
+        "pommed/lcd_backlight.h": [
+            {
+                "name": "x1600_backlight_step",
+                "start": 31,
+                "end": 32
+            },
+            {
+                "name": "x1600_backlight_toggle",
+                "start": 34,
+                "end": 35
+            },
+            {
+                "name": "x1600_backlight_probe",
+                "start": 37,
+                "end": 38
+            },
+            {
+                "name": "x1600_backlight_fix_config",
+                "start": 40,
+                "end": 41
+            },
+            {
+                "name": "gma950_backlight_step",
+                "start": 48,
+                "end": 49
+            },
+            {
+                "name": "gma950_backlight_toggle",
+                "start": 51,
+                "end": 52
+            },
+            {
+                "name": "gma950_backlight_probe",
+                "start": 54,
+                "end": 55
+            },
+            {
+                "name": "nv8600mgt_backlight_step",
+                "start": 62,
+                "end": 63
+            },
+            {
+                "name": "nv8600mgt_backlight_toggle",
+                "start": 65,
+                "end": 66
+            },
+            {
+                "name": "nv8600mgt_backlight_probe",
+                "start": 68,
+                "end": 69
+            },
+            {
+                "name": "nv8600mgt_backlight_fix_config",
+                "start": 71,
+                "end": 72
+            },
+            {
+                "name": "sysfs_backlight_step",
+                "start": 79,
+                "end": 80
+            },
+            {
+                "name": "sysfs_backlight_toggle",
+                "start": 82,
+                "end": 83
+            },
+            {
+                "name": "mbp_sysfs_backlight_probe",
+                "start": 101,
+                "end": 102
+            }
+        ],
+        "pommed/cd_eject.h": [
+            {
+                "name": "cd_eject",
+                "start": 9,
+                "end": 10
+            },
+            {
+                "name": "cd_eject_fix_config",
+                "start": 12,
+                "end": 13
+            }
+        ],
+        "pommed/video.h": [
+            {
+                "name": "video_switch",
+                "start": 9,
+                "end": 10
+            },
+            {
+                "name": "video_vt_active",
+                "start": 12,
+                "end": 13
+            }
+        ],
+        "pommed/evdev.c": [
+            {
+                "name": "evdev_try_add",
+                "start": 63,
+                "end": 64
+            },
+            {
+                "name": "evdev_process_events",
+                "start": 69,
+                "end": 230
+            },
+            {
+                "name": "evdev_inotify_process",
+                "start": 233,
+                "end": 328
+            },
+            {
+                "name": "evdev_is_geyser3",
+                "start": 450,
+                "end": 473
+            },
+            {
+                "name": "evdev_is_geyser4",
+                "start": 476,
+                "end": 499
+            },
+            {
+                "name": "evdev_is_geyser4hf",
+                "start": 503,
+                "end": 526
+            },
+            {
+                "name": "evdev_is_wellspring",
+                "start": 529,
+                "end": 552
+            },
+            {
+                "name": "evdev_is_wellspring2",
+                "start": 555,
+                "end": 578
+            },
+            {
+                "name": "evdev_is_wellspring3",
+                "start": 583,
+                "end": 606
+            },
+            {
+                "name": "evdev_is_wellspring4",
+                "start": 609,
+                "end": 632
+            },
+            {
+                "name": "evdev_is_wellspring4a",
+                "start": 635,
+                "end": 658
+            },
+            {
+                "name": "evdev_is_wellspring5",
+                "start": 664,
+                "end": 687
+            },
+            {
+                "name": "evdev_is_wellspring5a",
+                "start": 692,
+                "end": 715
+            },
+            {
+                "name": "evdev_is_wellspring6",
+                "start": 717,
+                "end": 740
+            },
+            {
+                "name": "evdev_is_wellspring6a",
+                "start": 742,
+                "end": 765
+            },
+            {
+                "name": "evdev_is_wellspring7",
+                "start": 767,
+                "end": 790
+            },
+            {
+                "name": "evdev_is_wellspring7a",
+                "start": 792,
+                "end": 815
+            },
+            {
+                "name": "evdev_is_internal",
+                "start": 818,
+                "end": 835
+            },
+            {
+                "name": "evdev_is_appleir",
+                "start": 839,
+                "end": 859
+            },
+            {
+                "name": "evdev_is_lidswitch",
+                "start": 862,
+                "end": 881
+            },
+            {
+                "name": "evdev_is_extkbd_white",
+                "start": 885,
+                "end": 906
+            },
+            {
+                "name": "evdev_is_extkbd_mini_alu",
+                "start": 909,
+                "end": 932
+            },
+            {
+                "name": "evdev_is_extkbd_alu",
+                "start": 935,
+                "end": 958
+            },
+            {
+                "name": "evdev_is_extkbd_alu_wl",
+                "start": 961,
+                "end": 984
+            },
+            {
+                "name": "evdev_is_extkbd_alu_wl_2",
+                "start": 987,
+                "end": 1010
+            },
+            {
+                "name": "evdev_is_extkbd",
+                "start": 1013,
+                "end": 1021
+            },
+            {
+                "name": "evdev_is_mouseemu",
+                "start": 1024,
+                "end": 1043
+            },
+            {
+                "name": "evdev_try_add",
+                "start": 1046,
+                "end": 1129
+            },
+            {
+                "name": "evdev_inotify_init",
+                "start": 1132,
+                "end": 1168
+            },
+            {
+                "name": "evdev_init",
+                "start": 1171,
+                "end": 1211
+            },
+            {
+                "name": "evdev_cleanup",
+                "start": 1213,
+                "end": 1217
+            }
+        ],
+        "pommed/dbus.h": [
+            {
+                "name": "mbpdbus_send_lcd_backlight",
+                "start": 11,
+                "end": 12
+            },
+            {
+                "name": "mbpdbus_send_kbd_backlight",
+                "start": 14,
+                "end": 15
+            },
+            {
+                "name": "mbpdbus_send_ambient_light",
+                "start": 17,
+                "end": 18
+            },
+            {
+                "name": "mbpdbus_send_audio_volume",
+                "start": 20,
+                "end": 21
+            },
+            {
+                "name": "mbpdbus_send_audio_mute",
+                "start": 23,
+                "end": 24
+            },
+            {
+                "name": "mbpdbus_send_cd_eject",
+                "start": 26,
+                "end": 27
+            },
+            {
+                "name": "mbpdbus_send_video_switch",
+                "start": 29,
+                "end": 30
+            },
+            {
+                "name": "mbpdbus_init",
+                "start": 33,
+                "end": 34
+            },
+            {
+                "name": "mbpdbus_cleanup",
+                "start": 36,
+                "end": 37
+            }
+        ],
+        "pommed/sysfs_backlight.c": [
+            {
+                "name": "sysfs_backlight_get",
+                "start": 120,
+                "end": 150
+            },
+            {
+                "name": "sysfs_backlight_get_max",
+                "start": 152,
+                "end": 182
+            },
+            {
+                "name": "sysfs_backlight_set",
+                "start": 185,
+                "end": 204
+            },
+            {
+                "name": "sysfs_backlight_step",
+                "start": 206,
+                "end": 243
+            },
+            {
+                "name": "sysfs_backlight_toggle",
+                "start": 246,
+                "end": 297
+            },
+            {
+                "name": "sysfs_backlight_fix_config",
+                "start": 329,
+                "end": 347
+            },
+            {
+                "name": "sysfs_backlight_probe",
+                "start": 351,
+                "end": 392
+            },
+            {
+                "name": "mbp_sysfs_backlight_probe",
+                "start": 416,
+                "end": 457
+            }
+        ],
+        "pommed/video.c": [
+            {
+                "name": "video_switch",
+                "start": 41,
+                "end": 45
+            },
+            {
+                "name": "video_vt_active",
+                "start": 47,
+                "end": 88
+            }
+        ],
+        "pommed/conffile.c": [
+            {
+                "name": "config_validate_positive_integer",
+                "start": 163,
+                "end": 175
+            },
+            {
+                "name": "config_validate_string",
+                "start": 177,
+                "end": 189
+            },
+            {
+                "name": "config_print",
+                "start": 192,
+                "end": 247
+            },
+            {
+                "name": "config_load",
+                "start": 250,
+                "end": 397
+            },
+            {
+                "name": "config_cleanup",
+                "start": 399,
+                "end": 410
+            }
+        ],
+        "pommed/audio.c": [
+            {
+                "name": "audio_step",
+                "start": 47,
+                "end": 100
+            },
+            {
+                "name": "audio_set_mute_elem",
+                "start": 103,
+                "end": 114
+            },
+            {
+                "name": "audio_toggle_mute",
+                "start": 116,
+                "end": 135
+            },
+            {
+                "name": "audio_init",
+                "start": 138,
+                "end": 269
+            },
+            {
+                "name": "audio_cleanup",
+                "start": 271,
+                "end": 281
+            },
+            {
+                "name": "audio_fix_config",
+                "start": 284,
+                "end": 298
+            }
+        ],
+        "pommed/kbd_auto.c": [
+            {
+                "name": "kbd_backlight_toggle",
+                "start": 25,
+                "end": 44
+            },
+            {
+                "name": "kbd_backlight_inhibit_set",
+                "start": 48,
+                "end": 66
+            },
+            {
+                "name": "kbd_backlight_inhibit_clear",
+                "start": 68,
+                "end": 90
+            },
+            {
+                "name": "kbd_backlight_inhibit_toggle",
+                "start": 92,
+                "end": 99
+            },
+            {
+                "name": "kbd_backlight_ambient_check",
+                "start": 102,
+                "end": 145
+            },
+            {
+                "name": "kbd_auto_process",
+                "start": 148,
+                "end": 157
+            },
+            {
+                "name": "kbd_auto_init",
+                "start": 160,
+                "end": 168
+            },
+            {
+                "name": "kbd_auto_cleanup",
+                "start": 170,
+                "end": 175
+            }
+        ],
+        "pommed/ambient.h": [
+            {
+                "name": "ambient_get",
+                "start": 39,
+                "end": 40
+            },
+            {
+                "name": "ambient_init",
+                "start": 42,
+                "end": 43
+            }
+        ],
+        "pommed/dbus.c": [
+            {
+                "name": "mbpdbus_send_lcd_backlight",
+                "start": 48,
+                "end": 98
+            },
+            {
+                "name": "mbpdbus_send_kbd_backlight",
+                "start": 100,
+                "end": 150
+            },
+            {
+                "name": "mbpdbus_send_ambient_light",
+                "start": 152,
+                "end": 203
+            },
+            {
+                "name": "mbpdbus_send_audio_volume",
+                "start": 205,
+                "end": 254
+            },
+            {
+                "name": "mbpdbus_send_audio_mute",
+                "start": 256,
+                "end": 303
+            },
+            {
+                "name": "mbpdbus_send_cd_eject",
+                "start": 305,
+                "end": 340
+            },
+            {
+                "name": "mbpdbus_send_video_switch",
+                "start": 342,
+                "end": 377
+            },
+            {
+                "name": "process_lcd_getlevel_call",
+                "start": 380,
+                "end": 423
+            },
+            {
+                "name": "process_kbd_getlevel_call",
+                "start": 426,
+                "end": 469
+            },
+            {
+                "name": "process_ambient_getlevel_call",
+                "start": 472,
+                "end": 516
+            },
+            {
+                "name": "process_audio_getvolume_call",
+                "start": 518,
+                "end": 561
+            },
+            {
+                "name": "process_audio_getmute_call",
+                "start": 563,
+                "end": 605
+            },
+            {
+                "name": "process_video_getvtstate_call",
+                "start": 607,
+                "end": 654
+            },
+            {
+                "name": "process_lcd_backlight_step_call",
+                "start": 657,
+                "end": 681
+            },
+            {
+                "name": "process_kbd_backlight_inhibit_call",
+                "start": 683,
+                "end": 710
+            },
+            {
+                "name": "process_audio_volume_step_call",
+                "start": 712,
+                "end": 736
+            },
+            {
+                "name": "process_audio_toggle_mute_call",
+                "start": 738,
+                "end": 762
+            },
+            {
+                "name": "process_cd_eject_call",
+                "start": 764,
+                "end": 788
+            },
+            {
+                "name": "mbpdbus_reconnect",
+                "start": 791,
+                "end": 802
+            },
+            {
+                "name": "mbpdbus_process_requests",
+                "start": 804,
+                "end": 851
+            },
+            {
+                "name": "dbus_to_epoll",
+                "start": 869,
+                "end": 883
+            },
+            {
+                "name": "epoll_to_dbus",
+                "start": 885,
+                "end": 905
+            },
+            {
+                "name": "mbpdbus_process_watch",
+                "start": 907,
+                "end": 948
+            },
+            {
+                "name": "mbpdbus_add_watch",
+                "start": 950,
+                "end": 1010
+            },
+            {
+                "name": "mbpdbus_remove_watch",
+                "start": 1012,
+                "end": 1055
+            },
+            {
+                "name": "mbpdbus_toggle_watch",
+                "start": 1057,
+                "end": 1100
+            },
+            {
+                "name": "mbpdbus_data_free",
+                "start": 1102,
+                "end": 1106
+            },
+            {
+                "name": "mbpdbus_init",
+                "start": 1109,
+                "end": 1179
+            },
+            {
+                "name": "mbpdbus_cleanup",
+                "start": 1181,
+                "end": 1197
+            }
+        ],
+        "pommed/power.h": [
+            {
+                "name": "power_init",
+                "start": 24,
+                "end": 25
+            },
+            {
+                "name": "power_cleanup",
+                "start": 27,
+                "end": 28
+            }
+        ],
+        "pommed/power.c": [
+            {
+                "name": "procfs_check_ac_state",
+                "start": 35,
+                "end": 36
+            },
+            {
+                "name": "sysfs_check_ac_state",
+                "start": 44,
+                "end": 71
+            },
+            {
+                "name": "check_ac_state",
+                "start": 73,
+                "end": 83
+            },
+            {
+                "name": "power_check_ac_state",
+                "start": 86,
+                "end": 118
+            },
+            {
+                "name": "power_init",
+                "start": 121,
+                "end": 127
+            },
+            {
+                "name": "power_cleanup",
+                "start": 129,
+                "end": 134
+            }
+        ],
+        "pommed/evloop.c": [
+            {
+                "name": "evloop_add",
+                "start": 57,
+                "end": 94
+            },
+            {
+                "name": "evloop_remove",
+                "start": 96,
+                "end": 129
+            },
+            {
+                "name": "evloop_timer_callback",
+                "start": 132,
+                "end": 160
+            },
+            {
+                "name": "evloop_create_timer",
+                "start": 162,
+                "end": 215
+            },
+            {
+                "name": "evloop_add_timer",
+                "start": 217,
+                "end": 269
+            },
+            {
+                "name": "evloop_remove_timer",
+                "start": 271,
+                "end": 326
+            },
+            {
+                "name": "evloop_iteration",
+                "start": 329,
+                "end": 362
+            },
+            {
+                "name": "evloop_stop",
+                "start": 364,
+                "end": 368
+            },
+            {
+                "name": "evloop_init",
+                "start": 371,
+                "end": 390
+            },
+            {
+                "name": "evloop_cleanup",
+                "start": 392,
+                "end": 428
+            }
+        ],
+        "pommed/pommed.c": [
+            {
+                "name": "logmsg",
+                "start": 420,
+                "end": 457
+            },
+            {
+                "name": "logdebug",
+                "start": 459,
+                "end": 470
+            },
+            {
+                "name": "kbd_set_fnmode",
+                "start": 473,
+                "end": 512
+            },
+            {
+                "name": "check_machine_dmi",
+                "start": 648,
+                "end": 812
+            },
+            {
+                "name": "usage",
+                "start": 816,
+                "end": 827
+            },
+            {
+                "name": "sig_int_term_handler",
+                "start": 830,
+                "end": 834
+            },
+            {
+                "name": "main",
+                "start": 836,
+                "end": 1048
+            }
+        ],
+        "pommed/cd_eject.c": [
+            {
+                "name": "cd_eject",
+                "start": 43,
+                "end": 124
+            },
+            {
+                "name": "cd_eject_fix_config",
+                "start": 127,
+                "end": 135
+            }
+        ],
+        "pommed/mactel/../pommed.h": [
+            {
+                "name": "logmsg",
+                "start": 16,
+                "end": 17
+            },
+            {
+                "name": "logdebug",
+                "start": 19,
+                "end": 20
+            },
+            {
+                "name": "kbd_set_fnmode",
+                "start": 23,
+                "end": 24
+            }
+        ],
+        "pommed/mactel/../conffile.h": [
+            {
+                "name": "config_load",
+                "start": 93,
+                "end": 94
+            },
+            {
+                "name": "config_cleanup",
+                "start": 96,
+                "end": 97
+            }
+        ],
+        "pommed/mactel/../lcd_backlight.h": [
+            {
+                "name": "x1600_backlight_step",
+                "start": 31,
+                "end": 32
+            },
+            {
+                "name": "x1600_backlight_toggle",
+                "start": 34,
+                "end": 35
+            },
+            {
+                "name": "x1600_backlight_probe",
+                "start": 37,
+                "end": 38
+            },
+            {
+                "name": "x1600_backlight_fix_config",
+                "start": 40,
+                "end": 41
+            },
+            {
+                "name": "gma950_backlight_step",
+                "start": 48,
+                "end": 49
+            },
+            {
+                "name": "gma950_backlight_toggle",
+                "start": 51,
+                "end": 52
+            },
+            {
+                "name": "gma950_backlight_probe",
+                "start": 54,
+                "end": 55
+            },
+            {
+                "name": "nv8600mgt_backlight_step",
+                "start": 62,
+                "end": 63
+            },
+            {
+                "name": "nv8600mgt_backlight_toggle",
+                "start": 65,
+                "end": 66
+            },
+            {
+                "name": "nv8600mgt_backlight_probe",
+                "start": 68,
+                "end": 69
+            },
+            {
+                "name": "nv8600mgt_backlight_fix_config",
+                "start": 71,
+                "end": 72
+            },
+            {
+                "name": "sysfs_backlight_step",
+                "start": 79,
+                "end": 80
+            },
+            {
+                "name": "sysfs_backlight_toggle",
+                "start": 82,
+                "end": 83
+            },
+            {
+                "name": "mbp_sysfs_backlight_probe",
+                "start": 101,
+                "end": 102
+            }
+        ],
+        "pommed/mactel/../dbus.h": [
+            {
+                "name": "mbpdbus_send_lcd_backlight",
+                "start": 11,
+                "end": 12
+            },
+            {
+                "name": "mbpdbus_send_kbd_backlight",
+                "start": 14,
+                "end": 15
+            },
+            {
+                "name": "mbpdbus_send_ambient_light",
+                "start": 17,
+                "end": 18
+            },
+            {
+                "name": "mbpdbus_send_audio_volume",
+                "start": 20,
+                "end": 21
+            },
+            {
+                "name": "mbpdbus_send_audio_mute",
+                "start": 23,
+                "end": 24
+            },
+            {
+                "name": "mbpdbus_send_cd_eject",
+                "start": 26,
+                "end": 27
+            },
+            {
+                "name": "mbpdbus_send_video_switch",
+                "start": 29,
+                "end": 30
+            },
+            {
+                "name": "mbpdbus_init",
+                "start": 33,
+                "end": 34
+            },
+            {
+                "name": "mbpdbus_cleanup",
+                "start": 36,
+                "end": 37
+            }
+        ],
+        "pommed/mactel/nv8600mgt_backlight.c": [
+            {
+                "name": "nv8600mgt_backlight_get",
+                "start": 58,
+                "end": 72
+            },
+            {
+                "name": "nv8600mgt_backlight_set",
+                "start": 74,
+                "end": 82
+            },
+            {
+                "name": "nv8600mgt_backlight_step",
+                "start": 85,
+                "end": 122
+            },
+            {
+                "name": "nv8600mgt_backlight_toggle",
+                "start": 124,
+                "end": 175
+            },
+            {
+                "name": "nv8600mgt_backlight_probe",
+                "start": 178,
+                "end": 232
+            },
+            {
+                "name": "nv8600mgt_backlight_fix_config",
+                "start": 235,
+                "end": 253
+            }
+        ],
+        "pommed/mactel/../evloop.h": [
+            {
+                "name": "evloop_add",
+                "start": 40,
+                "end": 41
+            },
+            {
+                "name": "evloop_remove",
+                "start": 43,
+                "end": 44
+            },
+            {
+                "name": "evloop_add_timer",
+                "start": 46,
+                "end": 47
+            },
+            {
+                "name": "evloop_remove_timer",
+                "start": 49,
+                "end": 50
+            },
+            {
+                "name": "evloop_iteration",
+                "start": 52,
+                "end": 53
+            },
+            {
+                "name": "evloop_stop",
+                "start": 55,
+                "end": 56
+            },
+            {
+                "name": "evloop_init",
+                "start": 58,
+                "end": 59
+            },
+            {
+                "name": "evloop_cleanup",
+                "start": 61,
+                "end": 62
+            }
+        ],
+        "pommed/mactel/../kbd_backlight.h": [
+            {
+                "name": "has_kbd_backlight",
+                "start": 63,
+                "end": 78
+            },
+            {
+                "name": "kbd_backlight_step",
+                "start": 82,
+                "end": 83
+            },
+            {
+                "name": "kbd_backlight_init",
+                "start": 85,
+                "end": 86
+            },
+            {
+                "name": "kbd_backlight_cleanup",
+                "start": 88,
+                "end": 89
+            },
+            {
+                "name": "kbd_backlight_fix_config",
+                "start": 91,
+                "end": 92
+            },
+            {
+                "name": "kbd_backlight_toggle",
+                "start": 96,
+                "end": 97
+            },
+            {
+                "name": "kbd_backlight_inhibit_set",
+                "start": 99,
+                "end": 100
+            },
+            {
+                "name": "kbd_backlight_inhibit_clear",
+                "start": 102,
+                "end": 103
+            },
+            {
+                "name": "kbd_backlight_inhibit_toggle",
+                "start": 105,
+                "end": 106
+            },
+            {
+                "name": "kbd_backlight_ambient_check",
+                "start": 108,
+                "end": 109
+            }
+        ],
+        "pommed/mactel/../ambient.h": [
+            {
+                "name": "ambient_get",
+                "start": 39,
+                "end": 40
+            },
+            {
+                "name": "ambient_init",
+                "start": 42,
+                "end": 43
+            }
+        ],
+        "pommed/mactel/kbd_backlight.c": [
+            {
+                "name": "kbd_backlight_open",
+                "start": 45,
+                "end": 72
+            },
+            {
+                "name": "kbd_backlight_get",
+                "start": 75,
+                "end": 103
+            },
+            {
+                "name": "kbd_backlight_set",
+                "start": 105,
+                "end": 184
+            },
+            {
+                "name": "kbd_backlight_step",
+                "start": 186,
+                "end": 222
+            },
+            {
+                "name": "kbd_backlight_init",
+                "start": 229,
+                "end": 266
+            },
+            {
+                "name": "kbd_backlight_cleanup",
+                "start": 268,
+                "end": 273
+            },
+            {
+                "name": "kbd_backlight_fix_config",
+                "start": 276,
+                "end": 287
+            }
+        ],
+        "pommed/mactel/../kbd_auto.c": [
+            {
+                "name": "kbd_backlight_toggle",
+                "start": 25,
+                "end": 44
+            },
+            {
+                "name": "kbd_backlight_inhibit_set",
+                "start": 48,
+                "end": 66
+            },
+            {
+                "name": "kbd_backlight_inhibit_clear",
+                "start": 68,
+                "end": 90
+            },
+            {
+                "name": "kbd_backlight_inhibit_toggle",
+                "start": 92,
+                "end": 99
+            },
+            {
+                "name": "kbd_backlight_ambient_check",
+                "start": 102,
+                "end": 145
+            },
+            {
+                "name": "kbd_auto_process",
+                "start": 148,
+                "end": 157
+            },
+            {
+                "name": "kbd_auto_init",
+                "start": 160,
+                "end": 168
+            },
+            {
+                "name": "kbd_auto_cleanup",
+                "start": 170,
+                "end": 175
+            }
+        ],
+        "pommed/mactel/gma950_backlight.c": [
+            {
+                "name": "readl",
+                "start": 86,
+                "end": 90
+            },
+            {
+                "name": "writel",
+                "start": 92,
+                "end": 96
+            },
+            {
+                "name": "gma950_backlight_get",
+                "start": 102,
+                "end": 106
+            },
+            {
+                "name": "gma950_backlight_get_max",
+                "start": 108,
+                "end": 112
+            },
+            {
+                "name": "gma950_backlight_set",
+                "start": 114,
+                "end": 118
+            },
+            {
+                "name": "gma950_backlight_map",
+                "start": 121,
+                "end": 151
+            },
+            {
+                "name": "gma950_backlight_unmap",
+                "start": 153,
+                "end": 161
+            },
+            {
+                "name": "gma950_backlight_step",
+                "start": 164,
+                "end": 211
+            },
+            {
+                "name": "gma950_backlight_toggle",
+                "start": 214,
+                "end": 272
+            },
+            {
+                "name": "gma950_backlight_fix_config",
+                "start": 279,
+                "end": 301
+            },
+            {
+                "name": "gma950_backlight_probe",
+                "start": 309,
+                "end": 422
+            }
+        ],
+        "pommed/mactel/ambient.c": [
+            {
+                "name": "ambient_get",
+                "start": 43,
+                "end": 87
+            },
+            {
+                "name": "ambient_init",
+                "start": 90,
+                "end": 167
+            }
+        ],
+        "pommed/mactel/x1600_backlight.c": [
+            {
+                "name": "readl",
+                "start": 55,
+                "end": 59
+            },
+            {
+                "name": "writel",
+                "start": 61,
+                "end": 65
+            },
+            {
+                "name": "x1600_backlight_get",
+                "start": 71,
+                "end": 75
+            },
+            {
+                "name": "x1600_backlight_set",
+                "start": 77,
+                "end": 81
+            },
+            {
+                "name": "x1600_backlight_map",
+                "start": 84,
+                "end": 121
+            },
+            {
+                "name": "x1600_backlight_unmap",
+                "start": 123,
+                "end": 131
+            },
+            {
+                "name": "x1600_backlight_step",
+                "start": 134,
+                "end": 176
+            },
+            {
+                "name": "x1600_backlight_toggle",
+                "start": 178,
+                "end": 236
+            },
+            {
+                "name": "x1600_backlight_probe",
+                "start": 243,
+                "end": 329
+            },
+            {
+                "name": "x1600_backlight_fix_config",
+                "start": 332,
+                "end": 350
+            }
+        ],
+        "pommed/mactel/../power.h": [
+            {
+                "name": "power_init",
+                "start": 24,
+                "end": 25
+            },
+            {
+                "name": "power_cleanup",
+                "start": 27,
+                "end": 28
+            }
+        ],
+        "pommed/mactel/acpi.c": [
+            {
+                "name": "procfs_check_ac_state",
+                "start": 35,
+                "end": 71
+            }
+        ],
+        "pommed/pmac/ofapi/of_internals.h": [
+            {
+                "name": "_of_return_nodes",
+                "start": 15,
+                "end": 16
+            }
+        ],
+        "pommed/pmac/../pommed.h": [
+            {
+                "name": "logmsg",
+                "start": 16,
+                "end": 17
+            },
+            {
+                "name": "logdebug",
+                "start": 19,
+                "end": 20
+            },
+            {
+                "name": "kbd_set_fnmode",
+                "start": 23,
+                "end": 24
+            }
+        ],
+        "pommed/pmac/../evloop.h": [
+            {
+                "name": "evloop_add",
+                "start": 40,
+                "end": 41
+            },
+            {
+                "name": "evloop_remove",
+                "start": 43,
+                "end": 44
+            },
+            {
+                "name": "evloop_add_timer",
+                "start": 46,
+                "end": 47
+            },
+            {
+                "name": "evloop_remove_timer",
+                "start": 49,
+                "end": 50
+            },
+            {
+                "name": "evloop_iteration",
+                "start": 52,
+                "end": 53
+            },
+            {
+                "name": "evloop_stop",
+                "start": 55,
+                "end": 56
+            },
+            {
+                "name": "evloop_init",
+                "start": 58,
+                "end": 59
+            },
+            {
+                "name": "evloop_cleanup",
+                "start": 61,
+                "end": 62
+            }
+        ],
+        "pommed/pmac/../conffile.h": [
+            {
+                "name": "config_load",
+                "start": 93,
+                "end": 94
+            },
+            {
+                "name": "config_cleanup",
+                "start": 96,
+                "end": 97
+            }
+        ],
+        "pommed/pmac/../kbd_backlight.h": [
+            {
+                "name": "has_kbd_backlight",
+                "start": 63,
+                "end": 78
+            },
+            {
+                "name": "kbd_backlight_step",
+                "start": 82,
+                "end": 83
+            },
+            {
+                "name": "kbd_backlight_init",
+                "start": 85,
+                "end": 86
+            },
+            {
+                "name": "kbd_backlight_cleanup",
+                "start": 88,
+                "end": 89
+            },
+            {
+                "name": "kbd_backlight_fix_config",
+                "start": 91,
+                "end": 92
+            },
+            {
+                "name": "kbd_backlight_toggle",
+                "start": 96,
+                "end": 97
+            },
+            {
+                "name": "kbd_backlight_inhibit_set",
+                "start": 99,
+                "end": 100
+            },
+            {
+                "name": "kbd_backlight_inhibit_clear",
+                "start": 102,
+                "end": 103
+            },
+            {
+                "name": "kbd_backlight_inhibit_toggle",
+                "start": 105,
+                "end": 106
+            },
+            {
+                "name": "kbd_backlight_ambient_check",
+                "start": 108,
+                "end": 109
+            }
+        ],
+        "pommed/pmac/../ambient.h": [
+            {
+                "name": "ambient_get",
+                "start": 39,
+                "end": 40
+            },
+            {
+                "name": "ambient_init",
+                "start": 42,
+                "end": 43
+            }
+        ],
+        "pommed/pmac/../dbus.h": [
+            {
+                "name": "mbpdbus_send_lcd_backlight",
+                "start": 11,
+                "end": 12
+            },
+            {
+                "name": "mbpdbus_send_kbd_backlight",
+                "start": 14,
+                "end": 15
+            },
+            {
+                "name": "mbpdbus_send_ambient_light",
+                "start": 17,
+                "end": 18
+            },
+            {
+                "name": "mbpdbus_send_audio_volume",
+                "start": 20,
+                "end": 21
+            },
+            {
+                "name": "mbpdbus_send_audio_mute",
+                "start": 23,
+                "end": 24
+            },
+            {
+                "name": "mbpdbus_send_cd_eject",
+                "start": 26,
+                "end": 27
+            },
+            {
+                "name": "mbpdbus_send_video_switch",
+                "start": 29,
+                "end": 30
+            },
+            {
+                "name": "mbpdbus_init",
+                "start": 33,
+                "end": 34
+            },
+            {
+                "name": "mbpdbus_cleanup",
+                "start": 36,
+                "end": 37
+            }
+        ],
+        "pommed/pmac/kbd_backlight.c": [
+            {
+                "name": "kbd_backlight_get",
+                "start": 58,
+                "end": 62
+            },
+            {
+                "name": "lmu_write_kbd_value",
+                "start": 66,
+                "end": 86
+            },
+            {
+                "name": "kbd_lmu_backlight_set",
+                "start": 88,
+                "end": 159
+            },
+            {
+                "name": "adb_write_kbd_value",
+                "start": 163,
+                "end": 186
+            },
+            {
+                "name": "kbd_pmu_backlight_set",
+                "start": 188,
+                "end": 246
+            },
+            {
+                "name": "kbd_backlight_set",
+                "start": 248,
+                "end": 260
+            },
+            {
+                "name": "kbd_backlight_step",
+                "start": 263,
+                "end": 299
+            },
+            {
+                "name": "kbd_probe_lmu",
+                "start": 306,
+                "end": 307
+            },
+            {
+                "name": "kbd_backlight_init",
+                "start": 309,
+                "end": 361
+            },
+            {
+                "name": "kbd_backlight_cleanup",
+                "start": 363,
+                "end": 368
+            },
+            {
+                "name": "kbd_backlight_fix_config",
+                "start": 371,
+                "end": 382
+            },
+            {
+                "name": "kbd_get_i2cdev",
+                "start": 385,
+                "end": 455
+            },
+            {
+                "name": "kbd_get_lmuaddr",
+                "start": 457,
+                "end": 487
+            },
+            {
+                "name": "kbd_probe_lmu",
+                "start": 489,
+                "end": 534
+            }
+        ],
+        "pommed/pmac/../kbd_auto.c": [
+            {
+                "name": "kbd_backlight_toggle",
+                "start": 25,
+                "end": 44
+            },
+            {
+                "name": "kbd_backlight_inhibit_set",
+                "start": 48,
+                "end": 66
+            },
+            {
+                "name": "kbd_backlight_inhibit_clear",
+                "start": 68,
+                "end": 90
+            },
+            {
+                "name": "kbd_backlight_inhibit_toggle",
+                "start": 92,
+                "end": 99
+            },
+            {
+                "name": "kbd_backlight_ambient_check",
+                "start": 102,
+                "end": 145
+            },
+            {
+                "name": "kbd_auto_process",
+                "start": 148,
+                "end": 157
+            },
+            {
+                "name": "kbd_auto_init",
+                "start": 160,
+                "end": 168
+            },
+            {
+                "name": "kbd_auto_cleanup",
+                "start": 170,
+                "end": 175
+            }
+        ],
+        "pommed/pmac/ambient.c": [
+            {
+                "name": "lmu_ambient_get",
+                "start": 48,
+                "end": 107
+            },
+            {
+                "name": "pmu_ambient_get",
+                "start": 109,
+                "end": 171
+            },
+            {
+                "name": "ambient_get",
+                "start": 173,
+                "end": 185
+            },
+            {
+                "name": "ambient_init",
+                "start": 188,
+                "end": 196
+            }
+        ],
+        "pommed/pmac/../power.h": [
+            {
+                "name": "power_init",
+                "start": 24,
+                "end": 25
+            },
+            {
+                "name": "power_cleanup",
+                "start": 27,
+                "end": 28
+            }
+        ],
+        "pommed/pmac/pmu.c": [
+            {
+                "name": "procfs_check_ac_state",
+                "start": 35,
+                "end": 80
+            }
+        ],
+        "pommed/pmac/ofapi/of_externals.c": [
+            {
+                "name": "of_init",
+                "start": 12,
+                "end": 15
+            },
+            {
+                "name": "of_init_root",
+                "start": 17,
+                "end": 32
+            },
+            {
+                "name": "of_test_property",
+                "start": 35,
+                "end": 46
+            },
+            {
+                "name": "of_find_property",
+                "start": 48,
+                "end": 77
+            },
+            {
+                "name": "of_property_to_n_uint64",
+                "start": 79,
+                "end": 99
+            },
+            {
+                "name": "of_property_to_n_uint32",
+                "start": 101,
+                "end": 116
+            },
+            {
+                "name": "of_property_to_uint32",
+                "start": 119,
+                "end": 131
+            },
+            {
+                "name": "of_get_parent",
+                "start": 133,
+                "end": 154
+            },
+            {
+                "name": "of_find_node_by_name",
+                "start": 156,
+                "end": 162
+            },
+            {
+                "name": "of_find_type_devices",
+                "start": 164,
+                "end": 177
+            },
+            {
+                "name": "of_find_type_devices_free",
+                "start": 179,
+                "end": 189
+            },
+            {
+                "name": "of_find_node_by_path",
+                "start": 191,
+                "end": 205
+            },
+            {
+                "name": "of_find_node_by_phandle",
+                "start": 207,
+                "end": 220
+            },
+            {
+                "name": "of_find_node_by_type",
+                "start": 222,
+                "end": 228
+            }
+        ],
+        "pommed/pmac/ofapi/of_internals.c": [
+            {
+                "name": "_of_return_nodes",
+                "start": 14,
+                "end": 26
+            },
+            {
+                "name": "_of_read_name",
+                "start": 28,
+                "end": 64
+            },
+            {
+                "name": "_of_read_type",
+                "start": 66,
+                "end": 91
+            },
+            {
+                "name": "_of_read_linux_phandle",
+                "start": 93,
+                "end": 119
+            },
+            {
+                "name": "_of_get_path",
+                "start": 121,
+                "end": 134
+            },
+            {
+                "name": "_of_populate_node",
+                "start": 136,
+                "end": 159
+            },
+            {
+                "name": "_of_get_type",
+                "start": 161,
+                "end": 204
+            },
+            {
+                "name": "_of_remove_filename",
+                "start": 206,
+                "end": 211
+            },
+            {
+                "name": "_of_phandle_to_int",
+                "start": 213,
+                "end": 223
+            },
+            {
+                "name": "_of_make_compat_path",
+                "start": 225,
+                "end": 245
+            },
+            {
+                "name": "_of_get_phandle",
+                "start": 247,
+                "end": 291
+            },
+            {
+                "name": "_of_get_name",
+                "start": 292,
+                "end": 323
+            },
+            {
+                "name": "_of_find_node_by_parse",
+                "start": 325,
+                "end": 406
+            }
+        ],
+        "pommed/pmac/ofapi/of_standard.c": [
+            {
+                "name": "of_error",
+                "start": 12,
+                "end": 16
+            },
+            {
+                "name": "of_free_node",
+                "start": 18,
+                "end": 34
+            }
+        ],
+        "client-common/dbus-client.h": [
+            {
+                "name": "mbp_call_lcd_getlevel",
+                "start": 26,
+                "end": 27
+            },
+            {
+                "name": "mbp_call_kbd_getlevel",
+                "start": 29,
+                "end": 30
+            },
+            {
+                "name": "mbp_call_ambient_getlevel",
+                "start": 32,
+                "end": 33
+            },
+            {
+                "name": "mbp_call_audio_getvolume",
+                "start": 35,
+                "end": 36
+            },
+            {
+                "name": "mbp_call_audio_getmute",
+                "start": 38,
+                "end": 39
+            },
+            {
+                "name": "mbp_call_video_getvtstate",
+                "start": 41,
+                "end": 42
+            },
+            {
+                "name": "mbp_dbus_check_error",
+                "start": 46,
+                "end": 47
+            },
+            {
+                "name": "mbp_dbus_init",
+                "start": 51,
+                "end": 52
+            },
+            {
+                "name": "mbp_dbus_cleanup",
+                "start": 54,
+                "end": 55
+            }
+        ],
+        "client-common/dbus-client.c": [
+            {
+                "name": "mbp_call_lcd_getlevel",
+                "start": 34,
+                "end": 71
+            },
+            {
+                "name": "mbp_call_kbd_getlevel",
+                "start": 73,
+                "end": 110
+            },
+            {
+                "name": "mbp_call_ambient_getlevel",
+                "start": 112,
+                "end": 161
+            },
+            {
+                "name": "mbp_call_audio_getvolume",
+                "start": 163,
+                "end": 200
+            },
+            {
+                "name": "mbp_call_audio_getmute",
+                "start": 202,
+                "end": 239
+            },
+            {
+                "name": "mbp_call_video_getvtstate",
+                "start": 241,
+                "end": 290
+            },
+            {
+                "name": "mbp_dbus_check_error",
+                "start": 295,
+                "end": 313
+            },
+            {
+                "name": "bus_add_match",
+                "start": 318,
+                "end": 332
+            },
+            {
+                "name": "mbp_dbus_cleanup",
+                "start": 335,
+                "end": 345
+            },
+            {
+                "name": "mbp_dbus_init",
+                "start": 348,
+                "end": 419
+            }
+        ],
+        "client-common/video-client.h": [
+            {
+                "name": "mbp_get_x_vtnum",
+                "start": 12,
+                "end": 13
+            },
+            {
+                "name": "mbp_video_switch",
+                "start": 15,
+                "end": 16
+            }
+        ],
+        "client-common/video-client.c": [
+            {
+                "name": "mbp_get_x_vtnum",
+                "start": 50,
+                "end": 107
+            },
+            {
+                "name": "mbp_video_switch",
+                "start": 113,
+                "end": 170
+            }
+        ],
+        "wmpomme/../client-common/dbus-client.h": [
+            {
+                "name": "mbp_call_lcd_getlevel",
+                "start": 26,
+                "end": 27
+            },
+            {
+                "name": "mbp_call_kbd_getlevel",
+                "start": 29,
+                "end": 30
+            },
+            {
+                "name": "mbp_call_ambient_getlevel",
+                "start": 32,
+                "end": 33
+            },
+            {
+                "name": "mbp_call_audio_getvolume",
+                "start": 35,
+                "end": 36
+            },
+            {
+                "name": "mbp_call_audio_getmute",
+                "start": 38,
+                "end": 39
+            },
+            {
+                "name": "mbp_call_video_getvtstate",
+                "start": 41,
+                "end": 42
+            },
+            {
+                "name": "mbp_dbus_check_error",
+                "start": 46,
+                "end": 47
+            },
+            {
+                "name": "mbp_dbus_init",
+                "start": 51,
+                "end": 52
+            },
+            {
+                "name": "mbp_dbus_cleanup",
+                "start": 54,
+                "end": 55
+            }
+        ],
+        "wmpomme/../client-common/video-client.h": [
+            {
+                "name": "mbp_get_x_vtnum",
+                "start": 12,
+                "end": 13
+            },
+            {
+                "name": "mbp_video_switch",
+                "start": 15,
+                "end": 16
+            }
+        ],
+        "wmpomme/wmpomme.c": [
+            {
+                "name": "wmmbp_get_values",
+                "start": 106,
+                "end": 107
+            },
+            {
+                "name": "wmmbp_dbus_init",
+                "start": 109,
+                "end": 130
+            },
+            {
+                "name": "wmmbp_video_getvtstate_cb",
+                "start": 133,
+                "end": 134
+            },
+            {
+                "name": "mbp_dbus_listen",
+                "start": 136,
+                "end": 242
+            },
+            {
+                "name": "wmmbp_lcd_getlevel_cb",
+                "start": 246,
+                "end": 275
+            },
+            {
+                "name": "wmmbp_kbd_getlevel_cb",
+                "start": 277,
+                "end": 306
+            },
+            {
+                "name": "wmmbp_ambient_getlevel_cb",
+                "start": 308,
+                "end": 338
+            },
+            {
+                "name": "wmmbp_audio_getvolume_cb",
+                "start": 340,
+                "end": 369
+            },
+            {
+                "name": "wmmbp_audio_getmute_cb",
+                "start": 371,
+                "end": 399
+            },
+            {
+                "name": "wmmbp_video_getvtstate_cb",
+                "start": 401,
+                "end": 429
+            },
+            {
+                "name": "wmmbp_get_values",
+                "start": 432,
+                "end": 482
+            },
+            {
+                "name": "usage",
+                "start": 485,
+                "end": 486
+            },
+            {
+                "name": "printversion",
+                "start": 488,
+                "end": 489
+            },
+            {
+                "name": "BlitString",
+                "start": 491,
+                "end": 492
+            },
+            {
+                "name": "BlitNum",
+                "start": 494,
+                "end": 495
+            },
+            {
+                "name": "wmmbp_routine",
+                "start": 497,
+                "end": 498
+            },
+            {
+                "name": "DrawBar",
+                "start": 501,
+                "end": 509
+            },
+            {
+                "name": "DrawGreenBar",
+                "start": 511,
+                "end": 519
+            },
+            {
+                "name": "DrawRedDot",
+                "start": 521,
+                "end": 525
+            },
+            {
+                "name": "DrawYellowDot",
+                "start": 527,
+                "end": 531
+            },
+            {
+                "name": "DrawGreenDot",
+                "start": 533,
+                "end": 537
+            },
+            {
+                "name": "DrawEmptyDot",
+                "start": 539,
+                "end": 543
+            },
+            {
+                "name": "DisplayMBPStatus",
+                "start": 546,
+                "end": 612
+            },
+            {
+                "name": "mbp_create_timer",
+                "start": 615,
+                "end": 661
+            },
+            {
+                "name": "sig_int_term_handler",
+                "start": 666,
+                "end": 670
+            },
+            {
+                "name": "sig_chld_handler",
+                "start": 672,
+                "end": 682
+            },
+            {
+                "name": "main",
+                "start": 684,
+                "end": 746
+            },
+            {
+                "name": "wmmbp_routine",
+                "start": 751,
+                "end": 879
+            },
+            {
+                "name": "BlitString",
+                "start": 884,
+                "end": 916
+            },
+            {
+                "name": "BlitNum",
+                "start": 918,
+                "end": 926
+            },
+            {
+                "name": "usage",
+                "start": 928,
+                "end": 936
+            },
+            {
+                "name": "printversion",
+                "start": 938,
+                "end": 943
+            }
+        ],
+        "wmpomme/wmgeneral.c": [
+            {
+                "name": "parse_rcfile",
+                "start": 110,
+                "end": 139
+            },
+            {
+                "name": "parse_rcfile2",
+                "start": 145,
+                "end": 172
+            },
+            {
+                "name": "GetXPM",
+                "start": 179,
+                "end": 196
+            },
+            {
+                "name": "GetColor",
+                "start": 202,
+                "end": 216
+            },
+            {
+                "name": "flush_expose",
+                "start": 222,
+                "end": 231
+            },
+            {
+                "name": "RedrawWindow",
+                "start": 237,
+                "end": 245
+            },
+            {
+                "name": "RedrawWindowXY",
+                "start": 251,
+                "end": 259
+            },
+            {
+                "name": "AddMouseRegion",
+                "start": 265,
+                "end": 274
+            },
+            {
+                "name": "CheckMouseRegion",
+                "start": 280,
+                "end": 297
+            },
+            {
+                "name": "createXBMfromXPM",
+                "start": 302,
+                "end": 343
+            },
+            {
+                "name": "copyXPMArea",
+                "start": 349,
+                "end": 353
+            },
+            {
+                "name": "copyXBMArea",
+                "start": 359,
+                "end": 362
+            },
+            {
+                "name": "setMaskXY",
+                "start": 369,
+                "end": 373
+            },
+            {
+                "name": "openXwindow",
+                "start": 378,
+                "end": 490
+            }
+        ],
+        "gpomme/conffile.h": [
+            {
+                "name": "config_load",
+                "start": 8,
+                "end": 9
+            },
+            {
+                "name": "config_write",
+                "start": 11,
+                "end": 12
+            },
+            {
+                "name": "config_monitor",
+                "start": 14,
+                "end": 15
+            },
+            {
+                "name": "config_gui",
+                "start": 17,
+                "end": 18
+            }
+        ],
+        "gpomme/conffile.c": [
+            {
+                "name": "on_gpomme_response_cb",
+                "start": 61,
+                "end": 62
+            },
+            {
+                "name": "on_gpomme_window_close_cb",
+                "start": 64,
+                "end": 65
+            },
+            {
+                "name": "update_gui_config",
+                "start": 67,
+                "end": 68
+            },
+            {
+                "name": "config_validate_positive_integer",
+                "start": 75,
+                "end": 87
+            },
+            {
+                "name": "config_validate_string",
+                "start": 89,
+                "end": 101
+            },
+            {
+                "name": "config_load",
+                "start": 104,
+                "end": 190
+            },
+            {
+                "name": "config_write",
+                "start": 192,
+                "end": 214
+            },
+            {
+                "name": "config_monitor",
+                "start": 217,
+                "end": 262
+            },
+            {
+                "name": "config_gui",
+                "start": 266,
+                "end": 362
+            },
+            {
+                "name": "on_gpomme_response_cb",
+                "start": 364,
+                "end": 368
+            },
+            {
+                "name": "on_gpomme_window_close_cb",
+                "start": 371,
+                "end": 378
+            },
+            {
+                "name": "update_gui_config",
+                "start": 380,
+                "end": 392
+            }
+        ],
+        "gpomme/../client-common/dbus-client.h": [
+            {
+                "name": "mbp_call_lcd_getlevel",
+                "start": 26,
+                "end": 27
+            },
+            {
+                "name": "mbp_call_kbd_getlevel",
+                "start": 29,
+                "end": 30
+            },
+            {
+                "name": "mbp_call_ambient_getlevel",
+                "start": 32,
+                "end": 33
+            },
+            {
+                "name": "mbp_call_audio_getvolume",
+                "start": 35,
+                "end": 36
+            },
+            {
+                "name": "mbp_call_audio_getmute",
+                "start": 38,
+                "end": 39
+            },
+            {
+                "name": "mbp_call_video_getvtstate",
+                "start": 41,
+                "end": 42
+            },
+            {
+                "name": "mbp_dbus_check_error",
+                "start": 46,
+                "end": 47
+            },
+            {
+                "name": "mbp_dbus_init",
+                "start": 51,
+                "end": 52
+            },
+            {
+                "name": "mbp_dbus_cleanup",
+                "start": 54,
+                "end": 55
+            }
+        ],
+        "gpomme/../client-common/video-client.h": [
+            {
+                "name": "mbp_get_x_vtnum",
+                "start": 12,
+                "end": 13
+            },
+            {
+                "name": "mbp_video_switch",
+                "start": 15,
+                "end": 16
+            }
+        ],
+        "gpomme/gpomme.c": [
+            {
+                "name": "hide_window",
+                "start": 72,
+                "end": 80
+            },
+            {
+                "name": "window_expose_event",
+                "start": 82,
+                "end": 114
+            },
+            {
+                "name": "draw_window_bg",
+                "start": 116,
+                "end": 168
+            },
+            {
+                "name": "show_window",
+                "start": 170,
+                "end": 235
+            },
+            {
+                "name": "create_window",
+                "start": 238,
+                "end": 301
+            },
+            {
+                "name": "mbp_video_getvtstate_cb",
+                "start": 304,
+                "end": 332
+            },
+            {
+                "name": "mbp_dbus_reconnect",
+                "start": 334,
+                "end": 335
+            },
+            {
+                "name": "mbp_dbus_listen",
+                "start": 337,
+                "end": 450
+            },
+            {
+                "name": "mbp_dbus_connect",
+                "start": 452,
+                "end": 500
+            },
+            {
+                "name": "mbp_dbus_reconnect",
+                "start": 502,
+                "end": 509
+            },
+            {
+                "name": "mbp_check_config",
+                "start": 512,
+                "end": 543
+            },
+            {
+                "name": "usage",
+                "start": 546,
+                "end": 556
+            },
+            {
+                "name": "sig_int_term_handler",
+                "start": 559,
+                "end": 563
+            },
+            {
+                "name": "sig_chld_handler",
+                "start": 565,
+                "end": 575
+            },
+            {
+                "name": "main",
+                "start": 577,
+                "end": 646
+            }
+        ],
+        "gpomme/theme.c": [
+            {
+                "name": "load_image",
+                "start": 37,
+                "end": 61
+            },
+            {
+                "name": "theme_load",
+                "start": 63,
+                "end": 117
+            }
+        ]
+    }
+}

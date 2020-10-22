@@ -1,0 +1,2219 @@
+{
+    "privoxy-3.0.21": {
+        "cgi.h": [
+            {
+                "name": "error_response",
+                "start": 54,
+                "end": 55
+            },
+            {
+                "name": "finish_http_response",
+                "start": 63,
+                "end": 64
+            },
+            {
+                "name": "template_load",
+                "start": 72,
+                "end": 73
+            },
+            {
+                "name": "template_fill_for_cgi",
+                "start": 75,
+                "end": 78
+            },
+            {
+                "name": "cgi_error_no_template",
+                "start": 84,
+                "end": 86
+            },
+            {
+                "name": "cgi_error_bad_param",
+                "start": 87,
+                "end": 88
+            },
+            {
+                "name": "cgi_error_disabled",
+                "start": 89,
+                "end": 90
+            },
+            {
+                "name": "cgi_error_unknown",
+                "start": 91,
+                "end": 93
+            },
+            {
+                "name": "get_number_param",
+                "start": 95,
+                "end": 98
+            },
+            {
+                "name": "get_string_param",
+                "start": 99,
+                "end": 101
+            },
+            {
+                "name": "get_char_param",
+                "start": 102,
+                "end": 103
+            }
+        ],
+        "list.h": [
+            {
+                "name": "map",
+                "start": 85,
+                "end": 87
+            },
+            {
+                "name": "unmap",
+                "start": 88,
+                "end": 89
+            }
+        ],
+        "filters.h": [
+            {
+                "name": "get_url_actions",
+                "start": 90,
+                "end": 91
+            },
+            {
+                "name": "apply_url_actions",
+                "start": 92,
+                "end": 94
+            },
+            {
+                "name": "forward_url",
+                "start": 98,
+                "end": 99
+            }
+        ],
+        "cgisimple.h": [
+            {
+                "name": "cgi_default",
+                "start": 51,
+                "end": 53
+            },
+            {
+                "name": "cgi_error_404",
+                "start": 54,
+                "end": 56
+            },
+            {
+                "name": "cgi_robots_txt",
+                "start": 57,
+                "end": 59
+            },
+            {
+                "name": "cgi_send_banner",
+                "start": 60,
+                "end": 62
+            },
+            {
+                "name": "cgi_show_status",
+                "start": 63,
+                "end": 65
+            },
+            {
+                "name": "cgi_show_url_info",
+                "start": 66,
+                "end": 68
+            },
+            {
+                "name": "cgi_show_version",
+                "start": 69,
+                "end": 71
+            },
+            {
+                "name": "cgi_show_request",
+                "start": 72,
+                "end": 74
+            },
+            {
+                "name": "cgi_transparent_image",
+                "start": 75,
+                "end": 77
+            },
+            {
+                "name": "cgi_send_error_favicon",
+                "start": 78,
+                "end": 80
+            },
+            {
+                "name": "cgi_send_default_favicon",
+                "start": 81,
+                "end": 83
+            },
+            {
+                "name": "cgi_send_stylesheet",
+                "start": 84,
+                "end": 86
+            },
+            {
+                "name": "cgi_send_url_info_osd",
+                "start": 87,
+                "end": 89
+            },
+            {
+                "name": "cgi_send_user_manual",
+                "start": 90,
+                "end": 92
+            }
+        ],
+        "cgi.c": [
+            {
+                "name": "dispatch_known_cgi",
+                "start": 281,
+                "end": 282
+            },
+            {
+                "name": "dispatch_cgi",
+                "start": 303,
+                "end": 369
+            },
+            {
+                "name": "grep_cgi_referrer",
+                "start": 391,
+                "end": 405
+            },
+            {
+                "name": "referrer_is_safe",
+                "start": 423,
+                "end": 454
+            },
+            {
+                "name": "dispatch_known_cgi",
+                "start": 476,
+                "end": 593
+            },
+            {
+                "name": "parse_cgi_parameters",
+                "start": 609,
+                "end": 677
+            },
+            {
+                "name": "get_char_param",
+                "start": 694,
+                "end": 709
+            },
+            {
+                "name": "get_string_param",
+                "start": 734,
+                "end": 782
+            },
+            {
+                "name": "get_number_param",
+                "start": 805,
+                "end": 859
+            },
+            {
+                "name": "error_response",
+                "start": 877,
+                "end": 1031
+            },
+            {
+                "name": "cgi_error_disabled",
+                "start": 1055,
+                "end": 1074
+            },
+            {
+                "name": "cgi_init_error_messages",
+                "start": 1089,
+                "end": 1114
+            },
+            {
+                "name": "cgi_error_memory",
+                "start": 1130,
+                "end": 1136
+            },
+            {
+                "name": "cgi_error_no_template",
+                "start": 1158,
+                "end": 1214
+            },
+            {
+                "name": "cgi_error_unknown",
+                "start": 1241,
+                "end": 1289
+            },
+            {
+                "name": "cgi_error_bad_param",
+                "start": 1309,
+                "end": 1323
+            },
+            {
+                "name": "cgi_redirect",
+                "start": 1343,
+                "end": 1359
+            },
+            {
+                "name": "add_help_link",
+                "start": 1384,
+                "end": 1410
+            },
+            {
+                "name": "get_http_time",
+                "start": 1432,
+                "end": 1460
+            },
+            {
+                "name": "get_locale_time",
+                "start": 1481,
+                "end": 1506
+            },
+            {
+                "name": "finish_http_response",
+                "start": 1576,
+                "end": 1758
+            },
+            {
+                "name": "alloc_http_response",
+                "start": 1772,
+                "end": 1776
+            },
+            {
+                "name": "free_http_response",
+                "start": 1792,
+                "end": 1806
+            },
+            {
+                "name": "template_load",
+                "start": 1830,
+                "end": 1956
+            },
+            {
+                "name": "template_fill",
+                "start": 1982,
+                "end": 2085
+            },
+            {
+                "name": "template_fill_for_cgi",
+                "start": 2108,
+                "end": 2134
+            },
+            {
+                "name": "default_exports",
+                "start": 2152,
+                "end": 2248
+            },
+            {
+                "name": "map_block_killer",
+                "start": 2269,
+                "end": 2279
+            },
+            {
+                "name": "map_block_keep",
+                "start": 2298,
+                "end": 2317
+            },
+            {
+                "name": "map_conditional",
+                "start": 2345,
+                "end": 2367
+            },
+            {
+                "name": "make_menu",
+                "start": 2387,
+                "end": 2438
+            },
+            {
+                "name": "dump_map",
+                "start": 2453,
+                "end": 2473
+            }
+        ],
+        "gateway.h": [
+            {
+                "name": "forwarded_connect",
+                "start": 48,
+                "end": 50
+            }
+        ],
+        "gateway.c": [
+            {
+                "name": "socks4_connect",
+                "start": 83,
+                "end": 86
+            },
+            {
+                "name": "socks5_connect",
+                "start": 88,
+                "end": 91
+            },
+            {
+                "name": "mark_connection_closed",
+                "start": 279,
+                "end": 295
+            },
+            {
+                "name": "forwarded_connect",
+                "start": 599,
+                "end": 662
+            },
+            {
+                "name": "socks4_connect",
+                "start": 688,
+                "end": 870
+            },
+            {
+                "name": "translate_socks5_error",
+                "start": 884,
+                "end": 910
+            },
+            {
+                "name": "socks5_connect",
+                "start": 931,
+                "end": 1154
+            }
+        ],
+        "miscutil.c": [
+            {
+                "name": "zalloc",
+                "start": 82,
+                "end": 93
+            },
+            {
+                "name": "strdup_or_die",
+                "start": 114,
+                "end": 129
+            },
+            {
+                "name": "malloc_or_die",
+                "start": 150,
+                "end": 165
+            },
+            {
+                "name": "write_pid_file",
+                "start": 180,
+                "end": 201
+            },
+            {
+                "name": "hash_string",
+                "start": 218,
+                "end": 229
+            },
+            {
+                "name": "strcmpic",
+                "start": 245,
+                "end": 260
+            },
+            {
+                "name": "strncmpic",
+                "start": 277,
+                "end": 296
+            },
+            {
+                "name": "chomp",
+                "start": 312,
+                "end": 348
+            },
+            {
+                "name": "string_append",
+                "start": 399,
+                "end": 434
+            },
+            {
+                "name": "string_join",
+                "start": 470,
+                "end": 487
+            },
+            {
+                "name": "string_toupper",
+                "start": 504,
+                "end": 524
+            },
+            {
+                "name": "string_move",
+                "start": 543,
+                "end": 549
+            },
+            {
+                "name": "bindup",
+                "start": 566,
+                "end": 578
+            },
+            {
+                "name": "make_path",
+                "start": 601,
+                "end": 697
+            },
+            {
+                "name": "pick_from_range",
+                "start": 714,
+                "end": 753
+            },
+            {
+                "name": "privoxy_strlcpy",
+                "start": 771,
+                "end": 786
+            },
+            {
+                "name": "privoxy_strlcat",
+                "start": 805,
+                "end": 809
+            },
+            {
+                "name": "snprintf",
+                "start": 1137,
+                "end": 1145
+            },
+            {
+                "name": "vsnprintf",
+                "start": 1151,
+                "end": 1637
+            }
+        ],
+        "actions.h": [
+            {
+                "name": "get_actions",
+                "start": 59,
+                "end": 61
+            },
+            {
+                "name": "merge_actions",
+                "start": 66,
+                "end": 67
+            },
+            {
+                "name": "copy_action",
+                "start": 72,
+                "end": 73
+            },
+            {
+                "name": "actions_to_html",
+                "start": 75,
+                "end": 76
+            },
+            {
+                "name": "merge_current_action",
+                "start": 79,
+                "end": 80
+            },
+            {
+                "name": "current_action_to_html",
+                "start": 81,
+                "end": 82
+            }
+        ],
+        "loaders.h": [
+            {
+                "name": "check_file_changed",
+                "start": 53,
+                "end": 55
+            },
+            {
+                "name": "edit_read_line",
+                "start": 57,
+                "end": 62
+            },
+            {
+                "name": "add_loader",
+                "start": 101,
+                "end": 102
+            }
+        ],
+        "urlmatch.h": [
+            {
+                "name": "parse_http_url",
+                "start": 50,
+                "end": 52
+            },
+            {
+                "name": "url_match",
+                "start": 57,
+                "end": 58
+            }
+        ],
+        "w32log.c": [
+            {
+                "name": "InitLogWindow",
+                "start": 253,
+                "end": 279
+            },
+            {
+                "name": "TermLogWindow",
+                "start": 293,
+                "end": 308
+            },
+            {
+                "name": "LogCreatePatternMatchingBuffers",
+                "start": 322,
+                "end": 329
+            },
+            {
+                "name": "LogDestroyPatternMatchingBuffers",
+                "start": 343,
+                "end": 350
+            },
+            {
+                "name": "LogPutString",
+                "start": 368,
+                "end": 450
+            },
+            {
+                "name": "LogPutStringNoMatch",
+                "start": 468,
+                "end": 537
+            },
+            {
+                "name": "LogShowActivity",
+                "start": 551,
+                "end": 560
+            },
+            {
+                "name": "LogClipBuffer",
+                "start": 574,
+                "end": 607
+            },
+            {
+                "name": "CreateHiddenLogOwnerWindow",
+                "start": 623,
+                "end": 648
+            }
+        ],
+        "encode.c": [
+            {
+                "name": "html_encode",
+                "start": 127,
+                "end": 166
+            },
+            {
+                "name": "html_encode_and_free_original",
+                "start": 187,
+                "end": 200
+            },
+            {
+                "name": "url_encode",
+                "start": 222,
+                "end": 261
+            },
+            {
+                "name": "xdtoi",
+                "start": 276,
+                "end": 294
+            },
+            {
+                "name": "xtoi",
+                "start": 310,
+                "end": 325
+            },
+            {
+                "name": "url_decode",
+                "start": 342,
+                "end": 381
+            },
+            {
+                "name": "percent_encode_url",
+                "start": 402,
+                "end": 458
+            }
+        ],
+        "urlmatch.c": [
+            {
+                "name": "free_http_request",
+                "start": 82,
+                "end": 100
+            },
+            {
+                "name": "init_domain_components",
+                "start": 122,
+                "end": 157
+            },
+            {
+                "name": "url_requires_percent_encoding",
+                "start": 176,
+                "end": 205
+            },
+            {
+                "name": "parse_http_url",
+                "start": 227,
+                "end": 416
+            },
+            {
+                "name": "unknown_method",
+                "start": 431,
+                "end": 470
+            },
+            {
+                "name": "parse_http_request",
+                "start": 489,
+                "end": 551
+            },
+            {
+                "name": "compile_pattern",
+                "start": 575,
+                "end": 638
+            },
+            {
+                "name": "compile_url_pattern",
+                "start": 656,
+                "end": 726
+            },
+            {
+                "name": "compile_host_pattern",
+                "start": 766,
+                "end": 824
+            },
+            {
+                "name": "simplematch",
+                "start": 843,
+                "end": 962
+            },
+            {
+                "name": "simple_domaincmp",
+                "start": 984,
+                "end": 998
+            },
+            {
+                "name": "domain_match",
+                "start": 1018,
+                "end": 1081
+            },
+            {
+                "name": "create_url_spec",
+                "start": 1107,
+                "end": 1127
+            },
+            {
+                "name": "free_url_spec",
+                "start": 1143,
+                "end": 1170
+            },
+            {
+                "name": "port_matches",
+                "start": 1186,
+                "end": 1189
+            },
+            {
+                "name": "host_matches",
+                "start": 1205,
+                "end": 1214
+            },
+            {
+                "name": "path_matches",
+                "start": 1230,
+                "end": 1234
+            },
+            {
+                "name": "url_match",
+                "start": 1250,
+                "end": 1262
+            },
+            {
+                "name": "match_portlist",
+                "start": 1280,
+                "end": 1342
+            },
+            {
+                "name": "parse_forwarder_address",
+                "start": 1362,
+                "end": 1391
+            }
+        ],
+        "filters.c": [
+            {
+                "name": "connect_port_is_forbidden",
+                "start": 524,
+                "end": 529
+            },
+            {
+                "name": "block_url",
+                "start": 544,
+                "end": 765
+            },
+            {
+                "name": "compile_dynamic_pcrs_job_list",
+                "start": 943,
+                "end": 993
+            },
+            {
+                "name": "rewrite_url",
+                "start": 1013,
+                "end": 1054
+            },
+            {
+                "name": "redirect_url",
+                "start": 1219,
+                "end": 1344
+            },
+            {
+                "name": "pcrs_filter_response",
+                "start": 1547,
+                "end": 1699
+            },
+            {
+                "name": "gif_deanimate_response",
+                "start": 1717,
+                "end": 1760
+            },
+            {
+                "name": "get_filter_function",
+                "start": 1777,
+                "end": 1798
+            },
+            {
+                "name": "remove_chunked_transfer_coding",
+                "start": 1818,
+                "end": 1906
+            },
+            {
+                "name": "prepare_for_filtering",
+                "start": 1923,
+                "end": 1981
+            },
+            {
+                "name": "execute_content_filters",
+                "start": 1997,
+                "end": 2031
+            },
+            {
+                "name": "get_url_actions",
+                "start": 2047,
+                "end": 2066
+            },
+            {
+                "name": "apply_url_actions",
+                "start": 2083,
+                "end": 2100
+            },
+            {
+                "name": "get_forward_override_settings",
+                "start": 2129,
+                "end": 2235
+            },
+            {
+                "name": "forward_url",
+                "start": 2251,
+                "end": 2277
+            },
+            {
+                "name": "direct_response",
+                "start": 2297,
+                "end": 2347
+            },
+            {
+                "name": "content_requires_filtering",
+                "start": 2364,
+                "end": 2422
+            },
+            {
+                "name": "content_filters_enabled",
+                "start": 2438,
+                "end": 2442
+            },
+            {
+                "name": "filters_available",
+                "start": 2457,
+                "end": 2469
+            }
+        ],
+        "list.c": [
+            {
+                "name": "init_list",
+                "start": 84,
+                "end": 87
+            },
+            {
+                "name": "destroy_list",
+                "start": 112,
+                "end": 127
+            },
+            {
+                "name": "list_is_valid",
+                "start": 147,
+                "end": 209
+            },
+            {
+                "name": "enlist",
+                "start": 226,
+                "end": 263
+            },
+            {
+                "name": "enlist_first",
+                "start": 282,
+                "end": 314
+            },
+            {
+                "name": "enlist_unique",
+                "start": 339,
+                "end": 376
+            },
+            {
+                "name": "enlist_unique_header",
+                "start": 399,
+                "end": 443
+            },
+            {
+                "name": "list_remove_all",
+                "start": 462,
+                "end": 480
+            },
+            {
+                "name": "list_to_text",
+                "start": 501,
+                "end": 560
+            },
+            {
+                "name": "list_remove_item",
+                "start": 576,
+                "end": 620
+            },
+            {
+                "name": "list_remove_list",
+                "start": 638,
+                "end": 660
+            },
+            {
+                "name": "list_duplicate",
+                "start": 679,
+                "end": 757
+            },
+            {
+                "name": "list_append_list_unique",
+                "start": 777,
+                "end": 804
+            },
+            {
+                "name": "list_is_empty",
+                "start": 819,
+                "end": 825
+            },
+            {
+                "name": "list_contains_item",
+                "start": 843,
+                "end": 871
+            },
+            {
+                "name": "new_map",
+                "start": 885,
+                "end": 888
+            },
+            {
+                "name": "free_map",
+                "start": 904,
+                "end": 926
+            },
+            {
+                "name": "map",
+                "start": 972,
+                "end": 1034
+            },
+            {
+                "name": "unmap",
+                "start": 1051,
+                "end": 1103
+            },
+            {
+                "name": "lookup",
+                "start": 1123,
+                "end": 1138
+            }
+        ],
+        "strptime.h": [
+            {
+                "name": "my_localtime_r",
+                "start": 55,
+                "end": 65
+            },
+            {
+                "name": "day_of_the_week",
+                "start": 222,
+                "end": 237
+            },
+            {
+                "name": "day_of_the_year",
+                "start": 240,
+                "end": 245
+            },
+            {
+                "name": "strptime_internal",
+                "start": 247,
+                "end": 251
+            },
+            {
+                "name": "strptime_internal",
+                "start": 254,
+                "end": 986
+            },
+            {
+                "name": "strptime",
+                "start": 989,
+                "end": 1003
+            }
+        ],
+        "parsers.c": [
+            {
+                "name": "handle_conditional_hide_referrer_parameter",
+                "start": 156,
+                "end": 157
+            },
+            {
+                "name": "create_content_length_header",
+                "start": 158,
+                "end": 159
+            },
+            {
+                "name": "flush_socket",
+                "start": 269,
+                "end": 285
+            },
+            {
+                "name": "add_to_iob",
+                "start": 305,
+                "end": 368
+            },
+            {
+                "name": "clear_iob",
+                "start": 385,
+                "end": 389
+            },
+            {
+                "name": "normalize_lws",
+                "start": 767,
+                "end": 818
+            },
+            {
+                "name": "get_header",
+                "start": 839,
+                "end": 891
+            },
+            {
+                "name": "get_header_line",
+                "start": 912,
+                "end": 945
+            },
+            {
+                "name": "get_header_value",
+                "start": 965,
+                "end": 996
+            },
+            {
+                "name": "scan_headers",
+                "start": 1011,
+                "end": 1025
+            },
+            {
+                "name": "enforce_header_order",
+                "start": 1041,
+                "end": 1099
+            },
+            {
+                "name": "sed",
+                "start": 1122,
+                "end": 1173
+            },
+            {
+                "name": "update_server_headers",
+                "start": 1189,
+                "end": 1256
+            },
+            {
+                "name": "header_tagger",
+                "start": 1276,
+                "end": 1447
+            },
+            {
+                "name": "filter_header",
+                "start": 1470,
+                "end": 1608
+            },
+            {
+                "name": "server_connection",
+                "start": 1629,
+                "end": 1663
+            },
+            {
+                "name": "client_connection",
+                "start": 1916,
+                "end": 1980
+            },
+            {
+                "name": "client_transfer_encoding",
+                "start": 2039,
+                "end": 2048
+            },
+            {
+                "name": "crumble",
+                "start": 2068,
+                "end": 2074
+            },
+            {
+                "name": "crunch_server_header",
+                "start": 2094,
+                "end": 2112
+            },
+            {
+                "name": "server_content_type",
+                "start": 2137,
+                "end": 2219
+            },
+            {
+                "name": "server_transfer_coding",
+                "start": 2242,
+                "end": 2281
+            },
+            {
+                "name": "server_content_encoding",
+                "start": 2310,
+                "end": 2384
+            },
+            {
+                "name": "server_adjust_content_length",
+                "start": 2448,
+                "end": 2466
+            },
+            {
+                "name": "server_content_md5",
+                "start": 2530,
+                "end": 2539
+            },
+            {
+                "name": "server_content_disposition",
+                "start": 2560,
+                "end": 2600
+            },
+            {
+                "name": "server_last_modified",
+                "start": 2622,
+                "end": 2751
+            },
+            {
+                "name": "client_accept_encoding",
+                "start": 2773,
+                "end": 2789
+            },
+            {
+                "name": "client_te",
+                "start": 2810,
+                "end": 2819
+            },
+            {
+                "name": "client_referrer",
+                "start": 2840,
+                "end": 2898
+            },
+            {
+                "name": "client_accept_language",
+                "start": 2919,
+                "end": 2964
+            },
+            {
+                "name": "crunch_client_header",
+                "start": 2984,
+                "end": 3001
+            },
+            {
+                "name": "client_uagent",
+                "start": 3023,
+                "end": 3045
+            },
+            {
+                "name": "client_ua",
+                "start": 3065,
+                "end": 3074
+            },
+            {
+                "name": "client_from",
+                "start": 3095,
+                "end": 3123
+            },
+            {
+                "name": "client_send_cookie",
+                "start": 3146,
+                "end": 3155
+            },
+            {
+                "name": "client_x_forwarded",
+                "start": 3176,
+                "end": 3208
+            },
+            {
+                "name": "client_max_forwards",
+                "start": 3229,
+                "end": 3260
+            },
+            {
+                "name": "client_host",
+                "start": 3285,
+                "end": 3340
+            },
+            {
+                "name": "client_if_modified_since",
+                "start": 3360,
+                "end": 3466
+            },
+            {
+                "name": "client_if_none_match",
+                "start": 3486,
+                "end": 3495
+            },
+            {
+                "name": "client_x_filter",
+                "start": 3515,
+                "end": 3541
+            },
+            {
+                "name": "client_range",
+                "start": 3579,
+                "end": 3590
+            },
+            {
+                "name": "client_host_adder",
+                "start": 3608,
+                "end": 3643
+            },
+            {
+                "name": "client_xtra_adder",
+                "start": 3659,
+                "end": 3677
+            },
+            {
+                "name": "client_x_forwarded_for_adder",
+                "start": 3693,
+                "end": 3723
+            },
+            {
+                "name": "server_connection_adder",
+                "start": 3740,
+                "end": 3773
+            },
+            {
+                "name": "client_connection_header_adder",
+                "start": 3825,
+                "end": 3849
+            },
+            {
+                "name": "server_http",
+                "start": 3873,
+                "end": 3901
+            },
+            {
+                "name": "add_cookie_expiry_date",
+                "start": 3918,
+                "end": 3945
+            },
+            {
+                "name": "server_set_cookie",
+                "start": 3967,
+                "end": 4163
+            },
+            {
+                "name": "parse_header_time",
+                "start": 4221,
+                "end": 4306
+            },
+            {
+                "name": "get_destination_from_headers",
+                "start": 4330,
+                "end": 4379
+            },
+            {
+                "name": "parse_time_header",
+                "start": 4396,
+                "end": 4417
+            },
+            {
+                "name": "create_forged_referrer",
+                "start": 4436,
+                "end": 4453
+            },
+            {
+                "name": "create_fake_referrer",
+                "start": 4471,
+                "end": 4492
+            },
+            {
+                "name": "handle_conditional_hide_referrer_parameter",
+                "start": 4513,
+                "end": 4550
+            },
+            {
+                "name": "create_content_length_header",
+                "start": 4567,
+                "end": 4571
+            }
+        ],
+        "deanimate.c": [
+            {
+                "name": "buf_free",
+                "start": 63,
+                "end": 74
+            },
+            {
+                "name": "buf_extend",
+                "start": 94,
+                "end": 116
+            },
+            {
+                "name": "buf_copy",
+                "start": 135,
+                "end": 164
+            },
+            {
+                "name": "buf_getbyte",
+                "start": 181,
+                "end": 192
+            },
+            {
+                "name": "gif_skip_data_block",
+                "start": 210,
+                "end": 231
+            },
+            {
+                "name": "gif_extract_image",
+                "start": 250,
+                "end": 300
+            },
+            {
+                "name": "gif_deanimate",
+                "start": 322,
+                "end": 474
+            }
+        ],
+        "ssplit.c": [
+            {
+                "name": "ssplit",
+                "start": 69,
+                "end": 161
+            }
+        ],
+        "win32.c": [
+            {
+                "name": "InitWin32",
+                "start": 233,
+                "end": 255
+            },
+            {
+                "name": "UserInterfaceThread",
+                "start": 281,
+                "end": 303
+            }
+        ],
+        "cgisimple.c": [
+            {
+                "name": "cgi_show_file",
+                "start": 68,
+                "end": 70
+            },
+            {
+                "name": "cgi_default",
+                "start": 92,
+                "end": 109
+            },
+            {
+                "name": "cgi_error_404",
+                "start": 130,
+                "end": 153
+            },
+            {
+                "name": "cgi_show_request",
+                "start": 239,
+                "end": 282
+            },
+            {
+                "name": "cgi_send_banner",
+                "start": 307,
+                "end": 415
+            },
+            {
+                "name": "cgi_transparent_image",
+                "start": 435,
+                "end": 459
+            },
+            {
+                "name": "cgi_send_default_favicon",
+                "start": 479,
+                "end": 520
+            },
+            {
+                "name": "cgi_send_error_favicon",
+                "start": 540,
+                "end": 581
+            },
+            {
+                "name": "cgi_send_stylesheet",
+                "start": 602,
+                "end": 634
+            },
+            {
+                "name": "cgi_send_url_info_osd",
+                "start": 656,
+                "end": 678
+            },
+            {
+                "name": "get_content_type",
+                "start": 695,
+                "end": 721
+            },
+            {
+                "name": "cgi_send_user_manual",
+                "start": 742,
+                "end": 811
+            },
+            {
+                "name": "cgi_show_version",
+                "start": 832,
+                "end": 854
+            },
+            {
+                "name": "cgi_show_status",
+                "start": 881,
+                "end": 1074
+            },
+            {
+                "name": "cgi_show_url_info",
+                "start": 1100,
+                "end": 1489
+            },
+            {
+                "name": "cgi_robots_txt",
+                "start": 1509,
+                "end": 1540
+            },
+            {
+                "name": "show_defines",
+                "start": 1557,
+                "end": 1690
+            },
+            {
+                "name": "show_rcs",
+                "start": 1704,
+                "end": 1786
+            },
+            {
+                "name": "cgi_show_file",
+                "start": 1813,
+                "end": 1902
+            },
+            {
+                "name": "load_file",
+                "start": 1922,
+                "end": 1979
+            }
+        ],
+        "jbsockets.c": [
+            {
+                "name": "connect_to",
+                "start": 141,
+                "end": 175
+            },
+            {
+                "name": "no_rfc2553_connect_to",
+                "start": 407,
+                "end": 548
+            },
+            {
+                "name": "write_socket",
+                "start": 570,
+                "end": 609
+            },
+            {
+                "name": "read_socket",
+                "start": 637,
+                "end": 660
+            },
+            {
+                "name": "data_is_available",
+                "start": 677,
+                "end": 701
+            },
+            {
+                "name": "close_socket",
+                "start": 716,
+                "end": 727
+            },
+            {
+                "name": "drain_and_close_socket",
+                "start": 742,
+                "end": 799
+            },
+            {
+                "name": "bind_port",
+                "start": 819,
+                "end": 988
+            },
+            {
+                "name": "get_host_information",
+                "start": 1015,
+                "end": 1166
+            },
+            {
+                "name": "accept_connection",
+                "start": 1186,
+                "end": 1335
+            },
+            {
+                "name": "resolve_hostname_to_ip",
+                "start": 1351,
+                "end": 1451
+            },
+            {
+                "name": "socket_is_still_alive",
+                "start": 1466,
+                "end": 1506
+            }
+        ],
+        "pcrs.c": [
+            {
+                "name": "pcrs_compile_replacement",
+                "start": 65,
+                "end": 66
+            },
+            {
+                "name": "pcrs_strerror",
+                "start": 81,
+                "end": 128
+            },
+            {
+                "name": "pcrs_parse_perl_options",
+                "start": 150,
+                "end": 176
+            },
+            {
+                "name": "pcrs_compile_replacement",
+                "start": 203,
+                "end": 405
+            },
+            {
+                "name": "pcrs_free_job",
+                "start": 422,
+                "end": 444
+            },
+            {
+                "name": "pcrs_free_joblist",
+                "start": 461,
+                "end": 467
+            },
+            {
+                "name": "pcrs_compile_command",
+                "start": 489,
+                "end": 556
+            },
+            {
+                "name": "pcrs_compile",
+                "start": 578,
+                "end": 658
+            },
+            {
+                "name": "pcrs_execute_list",
+                "start": 690,
+                "end": 720
+            },
+            {
+                "name": "pcrs_execute",
+                "start": 750,
+                "end": 910
+            },
+            {
+                "name": "is_hex_sequence",
+                "start": 930,
+                "end": 936
+            },
+            {
+                "name": "pcrs_job_is_dynamic",
+                "start": 958,
+                "end": 989
+            },
+            {
+                "name": "pcrs_get_delimiter",
+                "start": 1005,
+                "end": 1021
+            },
+            {
+                "name": "pcrs_execute_single_command",
+                "start": 1042,
+                "end": 1066
+            },
+            {
+                "name": "pcrs_compile_dynamic_command",
+                "start": 1086,
+                "end": 1172
+            }
+        ],
+        "errlog.c": [
+            {
+                "name": "fatal_error",
+                "start": 147,
+                "end": 179
+            },
+            {
+                "name": "show_version",
+                "start": 194,
+                "end": 201
+            },
+            {
+                "name": "init_log_module",
+                "start": 218,
+                "end": 224
+            },
+            {
+                "name": "set_debug_level",
+                "start": 243,
+                "end": 246
+            },
+            {
+                "name": "debug_level_is_enabled",
+                "start": 260,
+                "end": 263
+            },
+            {
+                "name": "disable_logging",
+                "start": 277,
+                "end": 288
+            },
+            {
+                "name": "init_error_log",
+                "start": 306,
+                "end": 387
+            },
+            {
+                "name": "get_thread_id",
+                "start": 403,
+                "end": 433
+            },
+            {
+                "name": "get_log_timestamp",
+                "start": 449,
+                "end": 487
+            },
+            {
+                "name": "get_clf_timestamp",
+                "start": 503,
+                "end": 559
+            },
+            {
+                "name": "get_log_level_string",
+                "start": 574,
+                "end": 636
+            },
+            {
+                "name": "log_error",
+                "start": 653,
+                "end": 956
+            },
+            {
+                "name": "jb_err_to_string",
+                "start": 975,
+                "end": 999
+            }
+        ],
+        "loadcfg.c": [
+            {
+                "name": "unload_configfile",
+                "start": 191,
+                "end": 253
+            },
+            {
+                "name": "parse_toggle_state",
+                "start": 296,
+                "end": 322
+            },
+            {
+                "name": "parse_client_header_order",
+                "start": 341,
+                "end": 392
+            },
+            {
+                "name": "load_config",
+                "start": 409,
+                "end": 1781
+            },
+            {
+                "name": "savearg",
+                "start": 1802,
+                "end": 1862
+            }
+        ],
+        "loaders.c": [
+            {
+                "name": "sweep",
+                "start": 109,
+                "end": 240
+            },
+            {
+                "name": "check_file_changed",
+                "start": 269,
+                "end": 310
+            },
+            {
+                "name": "simple_read_line",
+                "start": 341,
+                "end": 442
+            },
+            {
+                "name": "edit_read_line",
+                "start": 490,
+                "end": 724
+            },
+            {
+                "name": "read_config_line",
+                "start": 744,
+                "end": 757
+            },
+            {
+                "name": "unload_re_filterfile",
+                "start": 981,
+                "end": 999
+            },
+            {
+                "name": "unload_forward_spec",
+                "start": 1015,
+                "end": 1023
+            },
+            {
+                "name": "load_re_filterfiles",
+                "start": 1070,
+                "end": 1093
+            },
+            {
+                "name": "load_one_re_filterfile",
+                "start": 1111,
+                "end": 1335
+            },
+            {
+                "name": "add_loader",
+                "start": 1353,
+                "end": 1367
+            },
+            {
+                "name": "run_loader",
+                "start": 1387,
+                "end": 1402
+            },
+            {
+                "name": "file_has_been_modified",
+                "start": 1419,
+                "end": 1430
+            },
+            {
+                "name": "any_loaded_file_changed",
+                "start": 1449,
+                "end": 1494
+            }
+        ],
+        "w32taskbar.c": [
+            {
+                "name": "CreateTrayWindow",
+                "start": 75,
+                "end": 107
+            },
+            {
+                "name": "TraySetIcon",
+                "start": 124,
+                "end": 139
+            },
+            {
+                "name": "TrayAddIcon",
+                "start": 157,
+                "end": 177
+            },
+            {
+                "name": "TrayDeleteIcon",
+                "start": 193,
+                "end": 205
+            }
+        ],
+        "actions.c": [
+            {
+                "name": "merge_actions",
+                "start": 143,
+                "end": 197
+            },
+            {
+                "name": "copy_action",
+                "start": 214,
+                "end": 251
+            },
+            {
+                "name": "free_action_spec",
+                "start": 265,
+                "end": 269
+            },
+            {
+                "name": "free_action",
+                "start": 286,
+                "end": 307
+            },
+            {
+                "name": "get_action_token",
+                "start": 337,
+                "end": 423
+            },
+            {
+                "name": "action_used_to_be_valid",
+                "start": 438,
+                "end": 460
+            },
+            {
+                "name": "get_actions",
+                "start": 480,
+                "end": 667
+            },
+            {
+                "name": "init_current_action",
+                "start": 682,
+                "end": 687
+            },
+            {
+                "name": "init_action",
+                "start": 702,
+                "end": 705
+            },
+            {
+                "name": "merge_current_action",
+                "start": 730,
+                "end": 772
+            },
+            {
+                "name": "update_action_bits_for_tag",
+                "start": 790,
+                "end": 835
+            },
+            {
+                "name": "free_current_action",
+                "start": 851,
+                "end": 866
+            },
+            {
+                "name": "unload_actions_file",
+                "start": 917,
+                "end": 938
+            },
+            {
+                "name": "free_alias_list",
+                "start": 953,
+                "end": 964
+            },
+            {
+                "name": "load_action_files",
+                "start": 980,
+                "end": 1003
+            },
+            {
+                "name": "referenced_filters_are_missing",
+                "start": 1022,
+                "end": 1063
+            },
+            {
+                "name": "action_spec_is_valid",
+                "start": 1081,
+                "end": 1104
+            },
+            {
+                "name": "load_one_actions_file",
+                "start": 1121,
+                "end": 1560
+            },
+            {
+                "name": "actions_to_text",
+                "start": 1578,
+                "end": 1646
+            },
+            {
+                "name": "actions_to_html",
+                "start": 1666,
+                "end": 1753
+            },
+            {
+                "name": "current_action_to_html",
+                "start": 1772,
+                "end": 1849
+            },
+            {
+                "name": "actions_to_line_of_text",
+                "start": 1866,
+                "end": 1915
+            }
+        ],
+        "jcc.c": [
+            {
+                "name": "sig_handler",
+                "start": 340,
+                "end": 371
+            },
+            {
+                "name": "client_protocol_is_unsupported",
+                "start": 391,
+                "end": 433
+            },
+            {
+                "name": "get_request_destination_elsewhere",
+                "start": 463,
+                "end": 514
+            },
+            {
+                "name": "get_server_headers",
+                "start": 532,
+                "end": 602
+            },
+            {
+                "name": "crunch_reason",
+                "start": 617,
+                "end": 668
+            },
+            {
+                "name": "log_applied_actions",
+                "start": 684,
+                "end": 696
+            },
+            {
+                "name": "send_crunch_response",
+                "start": 714,
+                "end": 764
+            },
+            {
+                "name": "crunch_response_triggered",
+                "start": 782,
+                "end": 831
+            },
+            {
+                "name": "build_request_line",
+                "start": 852,
+                "end": 892
+            },
+            {
+                "name": "change_request_destination",
+                "start": 909,
+                "end": 930
+            },
+            {
+                "name": "mark_server_socket_tainted",
+                "start": 1183,
+                "end": 1199
+            },
+            {
+                "name": "get_request_line",
+                "start": 1213,
+                "end": 1282
+            },
+            {
+                "name": "chunked_body_is_complete",
+                "start": 1316,
+                "end": 1368
+            },
+            {
+                "name": "receive_chunked_client_request_body",
+                "start": 1384,
+                "end": 1426
+            },
+            {
+                "name": "receive_client_request",
+                "start": 1441,
+                "end": 1621
+            },
+            {
+                "name": "parse_client_request",
+                "start": 1641,
+                "end": 1706
+            },
+            {
+                "name": "chat",
+                "start": 1733,
+                "end": 2680
+            },
+            {
+                "name": "serve",
+                "start": 2774,
+                "end": 2972
+            },
+            {
+                "name": "usage",
+                "start": 3009,
+                "end": 3025
+            },
+            {
+                "name": "initialize_mutexes",
+                "start": 3131,
+                "end": 3169
+            },
+            {
+                "name": "main",
+                "start": 3198,
+                "end": 3638
+            },
+            {
+                "name": "bind_port_helper",
+                "start": 3656,
+                "end": 3709
+            },
+            {
+                "name": "bind_ports_helper",
+                "start": 3730,
+                "end": 3747
+            },
+            {
+                "name": "close_ports_helper",
+                "start": 3764,
+                "end": 3776
+            },
+            {
+                "name": "listen_loop",
+                "start": 3801,
+                "end": 4172
+            }
+        ],
+        "pcre/internal.h": [
+            {
+                "name": "pcre_memmove",
+                "start": 54,
+                "end": 61
+            }
+        ],
+        "pcre/pcre.h": [
+            {
+                "name": "pcre_compile",
+                "start": 91,
+                "end": 92
+            },
+            {
+                "name": "pcre_exec",
+                "start": 94,
+                "end": 95
+            }
+        ],
+        "pcre/study.c": [
+            {
+                "name": "set_bit",
+                "start": 59,
+                "end": 65
+            },
+            {
+                "name": "set_start_bits",
+                "start": 86,
+                "end": 317
+            },
+            {
+                "name": "pcre_study",
+                "start": 339,
+                "end": 395
+            }
+        ],
+        "pcre/pcreposix.c": [
+            {
+                "name": "pcre_posix_error_code",
+                "start": 123,
+                "end": 130
+            },
+            {
+                "name": "regerror",
+                "start": 138,
+                "end": 164
+            },
+            {
+                "name": "regfree",
+                "start": 173,
+                "end": 177
+            },
+            {
+                "name": "regcomp",
+                "start": 196,
+                "end": 213
+            },
+            {
+                "name": "regexec",
+                "start": 227,
+                "end": 278
+            }
+        ],
+        "pcre/maketables.c": [
+            {
+                "name": "pcre_maketables",
+                "start": 61,
+                "end": 130
+            }
+        ],
+        "pcre/dftables.c": [
+            {
+                "name": "main",
+                "start": 53,
+                "end": 146
+            }
+        ],
+        "pcre/pcretest.c": [
+            {
+                "name": "ord2utf8",
+                "start": 68,
+                "end": 84
+            },
+            {
+                "name": "utf82ord",
+                "start": 102,
+                "end": 141
+            },
+            {
+                "name": "print_internals",
+                "start": 166,
+                "end": 371
+            },
+            {
+                "name": "pchars",
+                "start": 377,
+                "end": 400
+            },
+            {
+                "name": "new_malloc",
+                "start": 407,
+                "end": 414
+            },
+            {
+                "name": "new_info",
+                "start": 421,
+                "end": 426
+            },
+            {
+                "name": "main",
+                "start": 435,
+                "end": 1223
+            }
+        ],
+        "pcre/get.c": [
+            {
+                "name": "pcre_copy_substring",
+                "start": 74,
+                "end": 87
+            },
+            {
+                "name": "pcre_get_substring_list",
+                "start": 112,
+                "end": 142
+            },
+            {
+                "name": "pcre_free_substring_list",
+                "start": 157,
+                "end": 161
+            },
+            {
+                "name": "pcre_get_substring",
+                "start": 190,
+                "end": 206
+            },
+            {
+                "name": "pcre_free_substring",
+                "start": 221,
+                "end": 225
+            }
+        ],
+        "pcre/pcregrep.c": [
+            {
+                "name": "strerror",
+                "start": 50,
+                "end": 55
+            },
+            {
+                "name": "pcregrep",
+                "start": 64,
+                "end": 113
+            },
+            {
+                "name": "usage",
+                "start": 122,
+                "end": 127
+            },
+            {
+                "name": "main",
+                "start": 136,
+                "end": 226
+            }
+        ],
+        "pcre/pcre.c": [
+            {
+                "name": "compile_regex",
+                "start": 154,
+                "end": 156
+            },
+            {
+                "name": "pcre_version",
+                "start": 329,
+                "end": 333
+            },
+            {
+                "name": "pcre_info",
+                "start": 360,
+                "end": 371
+            },
+            {
+                "name": "pcre_fullinfo",
+                "start": 391,
+                "end": 440
+            },
+            {
+                "name": "check_escape",
+                "start": 497,
+                "end": 650
+            },
+            {
+                "name": "is_counted_repeat",
+                "start": 670,
+                "end": 683
+            },
+            {
+                "name": "read_repeat_counts",
+                "start": 707,
+                "end": 741
+            },
+            {
+                "name": "find_fixedlength",
+                "start": 759,
+                "end": 903
+            },
+            {
+                "name": "check_posix_syntax",
+                "start": 925,
+                "end": 938
+            },
+            {
+                "name": "check_posix_name",
+                "start": 957,
+                "end": 968
+            },
+            {
+                "name": "compile_branch",
+                "start": 994,
+                "end": 2077
+            },
+            {
+                "name": "compile_regex",
+                "start": 2111,
+                "end": 2244
+            },
+            {
+                "name": "first_significant_code",
+                "start": 2269,
+                "end": 2307
+            },
+            {
+                "name": "is_anchored",
+                "start": 2333,
+                "end": 2352
+            },
+            {
+                "name": "is_startline",
+                "start": 2369,
+                "end": 2384
+            },
+            {
+                "name": "find_firstchar",
+                "start": 2405,
+                "end": 2446
+            },
+            {
+                "name": "pcre_compile",
+                "start": 2470,
+                "end": 3378
+            },
+            {
+                "name": "match_ref",
+                "start": 3399,
+                "end": 3433
+            },
+            {
+                "name": "match",
+                "start": 3461,
+                "end": 4835
+            },
+            {
+                "name": "pcre_exec",
+                "start": 4864,
+                "end": 5149
+            }
+        ]
+    }
+}

@@ -1,0 +1,6808 @@
+{
+    "quakespasm-0.85.9": {
+        "Quake/common.h": [
+            {
+                "name": "q_vsnprintf",
+                "start": 155,
+                "end": 156
+            },
+            {
+                "name": "COM_LoadStackFile",
+                "start": 212,
+                "end": 213
+            },
+            {
+                "name": "COM_LoadCacheFile",
+                "start": 223,
+                "end": 224
+            }
+        ],
+        "Quake/mathlib.h": [
+            {
+                "name": "IS_NAN",
+                "start": 44,
+                "end": 48
+            },
+            {
+                "name": "FloorDivMod",
+                "start": 93,
+                "end": 94
+            }
+        ],
+        "Quake/server.h": [
+            {
+                "name": "SV_StartSound",
+                "start": 195,
+                "end": 196
+            }
+        ],
+        "Quake/gl_texmgr.h": [
+            {
+                "name": "TexMgr_LoadImage",
+                "start": 89,
+                "end": 90
+            }
+        ],
+        "Quake/mathlib.c": [
+            {
+                "name": "ProjectPointOnPlane",
+                "start": 34,
+                "end": 51
+            },
+            {
+                "name": "PerpendicularVector",
+                "start": 56,
+                "end": 86
+            },
+            {
+                "name": "anglemod",
+                "start": 93,
+                "end": 103
+            },
+            {
+                "name": "BOPS_Error",
+                "start": 113,
+                "end": 116
+            },
+            {
+                "name": "BoxOnPlaneSide",
+                "start": 126,
+                "end": 224
+            },
+            {
+                "name": "VectorAngles",
+                "start": 228,
+                "end": 238
+            },
+            {
+                "name": "AngleVectors",
+                "start": 240,
+                "end": 264
+            },
+            {
+                "name": "VectorCompare",
+                "start": 266,
+                "end": 275
+            },
+            {
+                "name": "VectorMA",
+                "start": 277,
+                "end": 282
+            },
+            {
+                "name": "_DotProduct",
+                "start": 285,
+                "end": 288
+            },
+            {
+                "name": "_VectorSubtract",
+                "start": 290,
+                "end": 295
+            },
+            {
+                "name": "_VectorAdd",
+                "start": 297,
+                "end": 302
+            },
+            {
+                "name": "_VectorCopy",
+                "start": 304,
+                "end": 309
+            },
+            {
+                "name": "CrossProduct",
+                "start": 311,
+                "end": 316
+            },
+            {
+                "name": "VectorLength",
+                "start": 318,
+                "end": 321
+            },
+            {
+                "name": "VectorNormalize",
+                "start": 323,
+                "end": 339
+            },
+            {
+                "name": "VectorInverse",
+                "start": 341,
+                "end": 346
+            },
+            {
+                "name": "VectorScale",
+                "start": 348,
+                "end": 353
+            },
+            {
+                "name": "Q_log2",
+                "start": 356,
+                "end": 362
+            },
+            {
+                "name": "R_ConcatRotations",
+                "start": 370,
+                "end": 390
+            },
+            {
+                "name": "R_ConcatTransforms",
+                "start": 398,
+                "end": 424
+            },
+            {
+                "name": "FloorDivMod",
+                "start": 437,
+                "end": 476
+            },
+            {
+                "name": "GreatestCommonDivisor",
+                "start": 484,
+                "end": 498
+            },
+            {
+                "name": "Invert24To16",
+                "start": 509,
+                "end": 516
+            }
+        ],
+        "Quake/world.c": [
+            {
+                "name": "SV_InitBoxHull",
+                "start": 70,
+                "end": 96
+            },
+            {
+                "name": "SV_HullForBox",
+                "start": 107,
+                "end": 117
+            },
+            {
+                "name": "SV_HullForEntity",
+                "start": 131,
+                "end": 173
+            },
+            {
+                "name": "SV_CreateAreaNode",
+                "start": 204,
+                "end": 241
+            },
+            {
+                "name": "SV_ClearWorld",
+                "start": 249,
+                "end": 256
+            },
+            {
+                "name": "SV_UnlinkEdict",
+                "start": 268,
+                "end": 278
+            },
+            {
+                "name": "SV_TouchLinks",
+                "start": 286,
+                "end": 338
+            },
+            {
+                "name": "SV_FindTouchedLeafs",
+                "start": 347,
+                "end": 383
+            },
+            {
+                "name": "SV_LinkEdict",
+                "start": 391,
+                "end": 462
+            },
+            {
+                "name": "SV_HullPointContents",
+                "start": 480,
+                "end": 505
+            },
+            {
+                "name": "SV_PointContents",
+                "start": 514,
+                "end": 522
+            },
+            {
+                "name": "SV_TruePointContents",
+                "start": 524,
+                "end": 527
+            },
+            {
+                "name": "SV_TestEntityPosition",
+                "start": 538,
+                "end": 548
+            },
+            {
+                "name": "SV_RecursiveHullCheck",
+                "start": 565,
+                "end": 695
+            },
+            {
+                "name": "SV_ClipMoveToEntity",
+                "start": 706,
+                "end": 737
+            },
+            {
+                "name": "SV_ClipToLinks",
+                "start": 748,
+                "end": 819
+            },
+            {
+                "name": "SV_MoveBounds",
+                "start": 827,
+                "end": 850
+            },
+            {
+                "name": "SV_Move",
+                "start": 857,
+                "end": 895
+            }
+        ],
+        "Quake/net_main.c": [
+            {
+                "name": "SetNetTime",
+                "start": 76,
+                "end": 80
+            },
+            {
+                "name": "NET_NewQSocket",
+                "start": 91,
+                "end": 127
+            },
+            {
+                "name": "NET_FreeQSocket",
+                "start": 130,
+                "end": 156
+            },
+            {
+                "name": "NET_QSocketGetTime",
+                "start": 159,
+                "end": 162
+            },
+            {
+                "name": "NET_QSocketGetAddressString",
+                "start": 165,
+                "end": 168
+            },
+            {
+                "name": "NET_Listen_f",
+                "start": 171,
+                "end": 187
+            },
+            {
+                "name": "MaxPlayers_f",
+                "start": 190,
+                "end": 226
+            },
+            {
+                "name": "NET_Port_f",
+                "start": 229,
+                "end": 255
+            },
+            {
+                "name": "PrintSlistHeader",
+                "start": 258,
+                "end": 263
+            },
+            {
+                "name": "PrintSlist",
+                "start": 266,
+                "end": 278
+            },
+            {
+                "name": "PrintSlistTrailer",
+                "start": 281,
+                "end": 287
+            },
+            {
+                "name": "NET_Slist_f",
+                "start": 290,
+                "end": 308
+            },
+            {
+                "name": "NET_SlistSort",
+                "start": 311,
+                "end": 330
+            },
+            {
+                "name": "NET_SlistPrintServer",
+                "start": 333,
+                "end": 353
+            },
+            {
+                "name": "NET_SlistPrintServerName",
+                "start": 356,
+                "end": 361
+            },
+            {
+                "name": "Slist_Send",
+                "start": 364,
+                "end": 377
+            },
+            {
+                "name": "Slist_Poll",
+                "start": 380,
+                "end": 405
+            },
+            {
+                "name": "NET_Connect",
+                "start": 417,
+                "end": 494
+            },
+            {
+                "name": "NET_CheckNewConnections",
+                "start": 502,
+                "end": 522
+            },
+            {
+                "name": "NET_Close",
+                "start": 529,
+                "end": 543
+            },
+            {
+                "name": "NET_GetMessage",
+                "start": 557,
+                "end": 597
+            },
+            {
+                "name": "NET_SendMessage",
+                "start": 611,
+                "end": 630
+            },
+            {
+                "name": "NET_SendUnreliableMessage",
+                "start": 633,
+                "end": 652
+            },
+            {
+                "name": "NET_CanSendMessage",
+                "start": 663,
+                "end": 674
+            },
+            {
+                "name": "NET_SendToAll",
+                "start": 677,
+                "end": 751
+            },
+            {
+                "name": "NET_Init",
+                "start": 762,
+                "end": 837
+            },
+            {
+                "name": "NET_Shutdown",
+                "start": 845,
+                "end": 865
+            },
+            {
+                "name": "NET_Poll",
+                "start": 870,
+                "end": 883
+            },
+            {
+                "name": "SchedulePollProcedure",
+                "start": 886,
+                "end": 907
+            }
+        ],
+        "Quake/strlcpy.c": [
+            {
+                "name": "q_strlcpy",
+                "start": 30,
+                "end": 54
+            }
+        ],
+        "Quake/cl_main.c": [
+            {
+                "name": "CL_ClearState",
+                "start": 72,
+                "end": 103
+            },
+            {
+                "name": "CL_Disconnect",
+                "start": 113,
+                "end": 146
+            },
+            {
+                "name": "CL_Disconnect_f",
+                "start": 148,
+                "end": 153
+            },
+            {
+                "name": "CL_EstablishConnection",
+                "start": 165,
+                "end": 184
+            },
+            {
+                "name": "CL_SignonReply",
+                "start": 193,
+                "end": 228
+            },
+            {
+                "name": "CL_NextDemo",
+                "start": 237,
+                "end": 261
+            },
+            {
+                "name": "CL_PrintEntities_f",
+                "start": 268,
+                "end": 284
+            },
+            {
+                "name": "CL_AllocDlight",
+                "start": 294,
+                "end": 333
+            },
+            {
+                "name": "CL_DecayLights",
+                "start": 342,
+                "end": 360
+            },
+            {
+                "name": "CL_LerpPoint",
+                "start": 371,
+                "end": 410
+            },
+            {
+                "name": "CL_RelinkEntities",
+                "start": 417,
+                "end": 593
+            },
+            {
+                "name": "CL_ReadFromServer",
+                "start": 603,
+                "end": 673
+            },
+            {
+                "name": "CL_SendCmd",
+                "start": 680,
+                "end": 720
+            },
+            {
+                "name": "CL_Tracepos_f",
+                "start": 729,
+                "end": 740
+            },
+            {
+                "name": "CL_Viewpos_f",
+                "start": 749,
+                "end": 770
+            },
+            {
+                "name": "CL_Init",
+                "start": 777,
+                "end": 819
+            }
+        ],
+        "Quake/pl_linux.c": [
+            {
+                "name": "PL_SetWindowIcon",
+                "start": 35,
+                "end": 53
+            },
+            {
+                "name": "PL_VID_Shutdown",
+                "start": 55,
+                "end": 57
+            },
+            {
+                "name": "PL_GetClipboardData",
+                "start": 59,
+                "end": 62
+            },
+            {
+                "name": "PL_ErrorDialog",
+                "start": 64,
+                "end": 66
+            }
+        ],
+        "Quake/gl_rmisc.c": [
+            {
+                "name": "GL_Overbright_f",
+                "start": 58,
+                "end": 61
+            },
+            {
+                "name": "GL_Fullbrights_f",
+                "start": 68,
+                "end": 71
+            },
+            {
+                "name": "R_SetClearColor_f",
+                "start": 78,
+                "end": 86
+            },
+            {
+                "name": "R_VisChanged",
+                "start": 93,
+                "end": 97
+            },
+            {
+                "name": "R_NoLerpList_f",
+                "start": 104,
+                "end": 109
+            },
+            {
+                "name": "R_Init",
+                "start": 116,
+                "end": 179
+            },
+            {
+                "name": "R_TranslatePlayerSkin",
+                "start": 186,
+                "end": 197
+            },
+            {
+                "name": "R_TranslateNewPlayerSkin",
+                "start": 206,
+                "end": 239
+            },
+            {
+                "name": "R_NewGame",
+                "start": 246,
+                "end": 253
+            },
+            {
+                "name": "R_NewMap",
+                "start": 260,
+                "end": 284
+            },
+            {
+                "name": "R_TimeRefresh_f",
+                "start": 293,
+                "end": 317
+            },
+            {
+                "name": "D_FlushCaches",
+                "start": 319,
+                "end": 321
+            }
+        ],
+        "Quake/snd_sdl.c": [
+            {
+                "name": "paint_audio",
+                "start": 34,
+                "end": 73
+            },
+            {
+                "name": "SNDDMA_Init",
+                "start": 75,
+                "end": 168
+            },
+            {
+                "name": "SNDDMA_GetDMAPos",
+                "start": 170,
+                "end": 173
+            },
+            {
+                "name": "SNDDMA_Shutdown",
+                "start": 175,
+                "end": 189
+            },
+            {
+                "name": "SNDDMA_LockBuffer",
+                "start": 191,
+                "end": 194
+            },
+            {
+                "name": "SNDDMA_Submit",
+                "start": 196,
+                "end": 199
+            },
+            {
+                "name": "SNDDMA_BlockSound",
+                "start": 201,
+                "end": 204
+            },
+            {
+                "name": "SNDDMA_UnblockSound",
+                "start": 206,
+                "end": 209
+            }
+        ],
+        "Quake/gl_warp.c": [
+            {
+                "name": "BoundPoly",
+                "start": 54,
+                "end": 70
+            },
+            {
+                "name": "SubdividePolygon",
+                "start": 72,
+                "end": 153
+            },
+            {
+                "name": "GL_SubdivideSurface",
+                "start": 160,
+                "end": 173
+            },
+            {
+                "name": "DrawWaterPoly",
+                "start": 180,
+                "end": 207
+            },
+            {
+                "name": "R_UpdateWarpTextures",
+                "start": 220,
+                "end": 269
+            }
+        ],
+        "Quake/common.c": [
+            {
+                "name": "ClearLink",
+                "start": 117,
+                "end": 120
+            },
+            {
+                "name": "RemoveLink",
+                "start": 122,
+                "end": 126
+            },
+            {
+                "name": "InsertLinkBefore",
+                "start": 128,
+                "end": 134
+            },
+            {
+                "name": "InsertLinkAfter",
+                "start": 136,
+                "end": 142
+            },
+            {
+                "name": "q_vsnprintf",
+                "start": 152,
+                "end": 166
+            },
+            {
+                "name": "q_snprintf",
+                "start": 168,
+                "end": 178
+            },
+            {
+                "name": "Q_memset",
+                "start": 180,
+                "end": 194
+            },
+            {
+                "name": "Q_memcpy",
+                "start": 196,
+                "end": 209
+            },
+            {
+                "name": "Q_memcmp",
+                "start": 211,
+                "end": 220
+            },
+            {
+                "name": "Q_strcpy",
+                "start": 222,
+                "end": 229
+            },
+            {
+                "name": "Q_strncpy",
+                "start": 231,
+                "end": 239
+            },
+            {
+                "name": "Q_strlen",
+                "start": 241,
+                "end": 250
+            },
+            {
+                "name": "Q_strrchr",
+                "start": 252,
+                "end": 262
+            },
+            {
+                "name": "Q_strcat",
+                "start": 264,
+                "end": 268
+            },
+            {
+                "name": "Q_strcmp",
+                "start": 270,
+                "end": 283
+            },
+            {
+                "name": "Q_strncmp",
+                "start": 285,
+                "end": 300
+            },
+            {
+                "name": "Q_strncasecmp",
+                "start": 302,
+                "end": 331
+            },
+            {
+                "name": "Q_strcasecmp",
+                "start": 333,
+                "end": 336
+            },
+            {
+                "name": "Q_atoi",
+                "start": 338,
+                "end": 394
+            },
+            {
+                "name": "Q_atof",
+                "start": 397,
+                "end": 470
+            },
+            {
+                "name": "ShortSwap",
+                "start": 489,
+                "end": 497
+            },
+            {
+                "name": "ShortNoSwap",
+                "start": 499,
+                "end": 502
+            },
+            {
+                "name": "LongSwap",
+                "start": 504,
+                "end": 514
+            },
+            {
+                "name": "LongNoSwap",
+                "start": 516,
+                "end": 519
+            },
+            {
+                "name": "FloatSwap",
+                "start": 521,
+                "end": 536
+            },
+            {
+                "name": "FloatNoSwap",
+                "start": 538,
+                "end": 541
+            },
+            {
+                "name": "MSG_WriteChar",
+                "start": 556,
+                "end": 567
+            },
+            {
+                "name": "MSG_WriteByte",
+                "start": 569,
+                "end": 580
+            },
+            {
+                "name": "MSG_WriteShort",
+                "start": 582,
+                "end": 594
+            },
+            {
+                "name": "MSG_WriteLong",
+                "start": 596,
+                "end": 605
+            },
+            {
+                "name": "MSG_WriteFloat",
+                "start": 607,
+                "end": 619
+            },
+            {
+                "name": "MSG_WriteString",
+                "start": 621,
+                "end": 627
+            },
+            {
+                "name": "MSG_WriteCoord16",
+                "start": 630,
+                "end": 633
+            },
+            {
+                "name": "MSG_WriteCoord24",
+                "start": 636,
+                "end": 640
+            },
+            {
+                "name": "MSG_WriteCoord32f",
+                "start": 643,
+                "end": 646
+            },
+            {
+                "name": "MSG_WriteCoord",
+                "start": 648,
+                "end": 651
+            },
+            {
+                "name": "MSG_WriteAngle",
+                "start": 653,
+                "end": 656
+            },
+            {
+                "name": "MSG_WriteAngle16",
+                "start": 659,
+                "end": 662
+            },
+            {
+                "name": "MSG_BeginReading",
+                "start": 671,
+                "end": 675
+            },
+            {
+                "name": "MSG_ReadChar",
+                "start": 678,
+                "end": 692
+            },
+            {
+                "name": "MSG_ReadByte",
+                "start": 694,
+                "end": 708
+            },
+            {
+                "name": "MSG_ReadShort",
+                "start": 710,
+                "end": 726
+            },
+            {
+                "name": "MSG_ReadLong",
+                "start": 728,
+                "end": 746
+            },
+            {
+                "name": "MSG_ReadFloat",
+                "start": 748,
+                "end": 766
+            },
+            {
+                "name": "MSG_ReadString",
+                "start": 768,
+                "end": 787
+            },
+            {
+                "name": "MSG_ReadCoord16",
+                "start": 790,
+                "end": 793
+            },
+            {
+                "name": "MSG_ReadCoord24",
+                "start": 796,
+                "end": 799
+            },
+            {
+                "name": "MSG_ReadCoord32f",
+                "start": 802,
+                "end": 805
+            },
+            {
+                "name": "MSG_ReadCoord",
+                "start": 807,
+                "end": 810
+            },
+            {
+                "name": "MSG_ReadAngle",
+                "start": 812,
+                "end": 815
+            },
+            {
+                "name": "MSG_ReadAngle16",
+                "start": 818,
+                "end": 821
+            },
+            {
+                "name": "SZ_Alloc",
+                "start": 826,
+                "end": 833
+            },
+            {
+                "name": "SZ_Free",
+                "start": 836,
+                "end": 842
+            },
+            {
+                "name": "SZ_Clear",
+                "start": 844,
+                "end": 847
+            },
+            {
+                "name": "SZ_GetSpace",
+                "start": 849,
+                "end": 870
+            },
+            {
+                "name": "SZ_Write",
+                "start": 872,
+                "end": 875
+            },
+            {
+                "name": "SZ_Print",
+                "start": 877,
+                "end": 889
+            },
+            {
+                "name": "COM_SkipPath",
+                "start": 899,
+                "end": 911
+            },
+            {
+                "name": "COM_StripExtension",
+                "start": 918,
+                "end": 938
+            },
+            {
+                "name": "COM_FileGetExtension",
+                "start": 945,
+                "end": 961
+            },
+            {
+                "name": "COM_ExtractExtension",
+                "start": 968,
+                "end": 975
+            },
+            {
+                "name": "COM_FileBase",
+                "start": 984,
+                "end": 1012
+            },
+            {
+                "name": "COM_DefaultExtension",
+                "start": 1019,
+                "end": 1040
+            },
+            {
+                "name": "COM_Parse",
+                "start": 1050,
+                "end": 1130
+            },
+            {
+                "name": "COM_CheckParm",
+                "start": 1141,
+                "end": 1154
+            },
+            {
+                "name": "COM_CheckRegistered",
+                "start": 1166,
+                "end": 1204
+            },
+            {
+                "name": "COM_InitArgv",
+                "start": 1212,
+                "end": 1260
+            },
+            {
+                "name": "COM_Init",
+                "start": 1278,
+                "end": 1324
+            },
+            {
+                "name": "get_va_buffer",
+                "start": 1340,
+                "end": 1346
+            },
+            {
+                "name": "va",
+                "start": 1348,
+                "end": 1359
+            },
+            {
+                "name": "COM_Path_f",
+                "start": 1429,
+                "end": 1443
+            },
+            {
+                "name": "COM_WriteFile",
+                "start": 1452,
+                "end": 1471
+            },
+            {
+                "name": "COM_CreatePath",
+                "start": 1478,
+                "end": 1491
+            },
+            {
+                "name": "COM_filelength",
+                "start": 1498,
+                "end": 1508
+            },
+            {
+                "name": "COM_FindFile",
+                "start": 1520,
+                "end": 1614
+            },
+            {
+                "name": "COM_FileExists",
+                "start": 1624,
+                "end": 1628
+            },
+            {
+                "name": "COM_OpenFile",
+                "start": 1639,
+                "end": 1642
+            },
+            {
+                "name": "COM_FOpenFile",
+                "start": 1652,
+                "end": 1655
+            },
+            {
+                "name": "COM_CloseFile",
+                "start": 1664,
+                "end": 1673
+            },
+            {
+                "name": "COM_LoadFile",
+                "start": 1695,
+                "end": 1748
+            },
+            {
+                "name": "COM_LoadHunkFile",
+                "start": 1750,
+                "end": 1753
+            },
+            {
+                "name": "COM_LoadZoneFile",
+                "start": 1755,
+                "end": 1758
+            },
+            {
+                "name": "COM_LoadTempFile",
+                "start": 1760,
+                "end": 1763
+            },
+            {
+                "name": "COM_LoadCacheFile",
+                "start": 1765,
+                "end": 1769
+            },
+            {
+                "name": "COM_LoadStackFile",
+                "start": 1772,
+                "end": 1781
+            },
+            {
+                "name": "COM_LoadMallocFile",
+                "start": 1784,
+                "end": 1787
+            },
+            {
+                "name": "COM_LoadPackFile",
+                "start": 1800,
+                "end": 1862
+            },
+            {
+                "name": "COM_AddGameDirectory",
+                "start": 1869,
+                "end": 1914
+            },
+            {
+                "name": "COM_InitFilesystem",
+                "start": 1946,
+                "end": 2005
+            },
+            {
+                "name": "FS_fread",
+                "start": 2014,
+                "end": 2053
+            },
+            {
+                "name": "FS_fseek",
+                "start": 2055,
+                "end": 2099
+            },
+            {
+                "name": "FS_fclose",
+                "start": 2101,
+                "end": 2110
+            },
+            {
+                "name": "FS_ftell",
+                "start": 2112,
+                "end": 2122
+            },
+            {
+                "name": "FS_rewind",
+                "start": 2124,
+                "end": 2132
+            },
+            {
+                "name": "FS_feof",
+                "start": 2134,
+                "end": 2139
+            },
+            {
+                "name": "FS_ferror",
+                "start": 2141,
+                "end": 2144
+            },
+            {
+                "name": "FS_fgets",
+                "start": 2146,
+                "end": 2160
+            }
+        ],
+        "Quake/net_loop.c": [
+            {
+                "name": "Loop_Init",
+                "start": 35,
+                "end": 40
+            },
+            {
+                "name": "Loop_Shutdown",
+                "start": 43,
+                "end": 45
+            },
+            {
+                "name": "Loop_Listen",
+                "start": 48,
+                "end": 50
+            },
+            {
+                "name": "Loop_SearchForHosts",
+                "start": 53,
+                "end": 68
+            },
+            {
+                "name": "Loop_Connect",
+                "start": 71,
+                "end": 108
+            },
+            {
+                "name": "Loop_CheckNewConnections",
+                "start": 111,
+                "end": 124
+            },
+            {
+                "name": "IntAlign",
+                "start": 127,
+                "end": 130
+            },
+            {
+                "name": "Loop_GetMessage",
+                "start": 133,
+                "end": 157
+            },
+            {
+                "name": "Loop_SendMessage",
+                "start": 160,
+                "end": 191
+            },
+            {
+                "name": "Loop_SendUnreliableMessage",
+                "start": 194,
+                "end": 223
+            },
+            {
+                "name": "Loop_CanSendMessage",
+                "start": 226,
+                "end": 231
+            },
+            {
+                "name": "Loop_CanSendUnreliableMessage",
+                "start": 234,
+                "end": 237
+            },
+            {
+                "name": "Loop_Close",
+                "start": 240,
+                "end": 251
+            }
+        ],
+        "Quake/snd_dma.c": [
+            {
+                "name": "S_SoundInfo_f",
+                "start": 88,
+                "end": 103
+            },
+            {
+                "name": "SND_Callback_sfxvolume",
+                "start": 106,
+                "end": 109
+            },
+            {
+                "name": "S_Startup",
+                "start": 117,
+                "end": 135
+            },
+            {
+                "name": "S_Init",
+                "start": 143,
+                "end": 211
+            },
+            {
+                "name": "S_Shutdown",
+                "start": 217,
+                "end": 229
+            },
+            {
+                "name": "S_FindName",
+                "start": 242,
+                "end": 271
+            },
+            {
+                "name": "S_TouchSound",
+                "start": 280,
+                "end": 289
+            },
+            {
+                "name": "S_PrecacheSound",
+                "start": 297,
+                "end": 311
+            },
+            {
+                "name": "SND_PickChannel",
+                "start": 323,
+                "end": 360
+            },
+            {
+                "name": "SND_Spatialize",
+                "start": 369,
+                "end": 410
+            },
+            {
+                "name": "S_StartSound",
+                "start": 417,
+                "end": 487
+            },
+            {
+                "name": "S_StopSound",
+                "start": 489,
+                "end": 503
+            },
+            {
+                "name": "S_StopAllSounds",
+                "start": 505,
+                "end": 524
+            },
+            {
+                "name": "S_StopAllSoundsC",
+                "start": 526,
+                "end": 529
+            },
+            {
+                "name": "S_ClearBuffer",
+                "start": 531,
+                "end": 552
+            },
+            {
+                "name": "S_StaticSound",
+                "start": 560,
+                "end": 594
+            },
+            {
+                "name": "S_UpdateAmbientSounds",
+                "start": 604,
+                "end": 650
+            },
+            {
+                "name": "S_RawSamples",
+                "start": 663,
+                "end": 736
+            },
+            {
+                "name": "S_Update",
+                "start": 745,
+                "end": 837
+            },
+            {
+                "name": "GetSoundtime",
+                "start": 839,
+                "end": 866
+            },
+            {
+                "name": "S_ExtraUpdate",
+                "start": 868,
+                "end": 873
+            },
+            {
+                "name": "S_Update_",
+                "start": 875,
+                "end": 905
+            },
+            {
+                "name": "S_BlockSound",
+                "start": 907,
+                "end": 919
+            },
+            {
+                "name": "S_UnblockSound",
+                "start": 921,
+                "end": 931
+            },
+            {
+                "name": "S_Play",
+                "start": 941,
+                "end": 960
+            },
+            {
+                "name": "S_PlayVol",
+                "start": 962,
+                "end": 983
+            },
+            {
+                "name": "S_SoundList",
+                "start": 985,
+                "end": 1007
+            },
+            {
+                "name": "S_LocalSound",
+                "start": 1010,
+                "end": 1026
+            },
+            {
+                "name": "S_ClearPrecache",
+                "start": 1029,
+                "end": 1031
+            },
+            {
+                "name": "S_BeginPrecaching",
+                "start": 1034,
+                "end": 1036
+            },
+            {
+                "name": "S_EndPrecaching",
+                "start": 1039,
+                "end": 1041
+            }
+        ],
+        "Quake/host_cmd.c": [
+            {
+                "name": "Host_Quit_f",
+                "start": 40,
+                "end": 51
+            },
+            {
+                "name": "KillGameDir",
+                "start": 89,
+                "end": 107
+            },
+            {
+                "name": "NumGames",
+                "start": 110,
+                "end": 120
+            },
+            {
+                "name": "Host_Game_f",
+                "start": 129,
+                "end": 215
+            },
+            {
+                "name": "ExtraMaps_Add",
+                "start": 229,
+                "end": 262
+            },
+            {
+                "name": "ExtraMaps_Init",
+                "start": 264,
+                "end": 314
+            },
+            {
+                "name": "ExtraMaps_Clear",
+                "start": 316,
+                "end": 326
+            },
+            {
+                "name": "ExtraMaps_NewGame",
+                "start": 328,
+                "end": 332
+            },
+            {
+                "name": "Host_Maps_f",
+                "start": 339,
+                "end": 351
+            },
+            {
+                "name": "Modlist_Add",
+                "start": 365,
+                "end": 398
+            },
+            {
+                "name": "Modlist_Init",
+                "start": 400,
+                "end": 447
+            },
+            {
+                "name": "Host_Mods_f",
+                "start": 456,
+                "end": 468
+            },
+            {
+                "name": "Host_Mapname_f",
+                "start": 477,
+                "end": 492
+            },
+            {
+                "name": "Host_Status_f",
+                "start": 499,
+                "end": 546
+            },
+            {
+                "name": "Host_God_f",
+                "start": 555,
+                "end": 593
+            },
+            {
+                "name": "Host_Notarget_f",
+                "start": 600,
+                "end": 638
+            },
+            {
+                "name": "Host_Noclip_f",
+                "start": 647,
+                "end": 694
+            },
+            {
+                "name": "Host_Fly_f",
+                "start": 703,
+                "end": 746
+            },
+            {
+                "name": "Host_Ping_f",
+                "start": 755,
+                "end": 778
+            },
+            {
+                "name": "Host_Map_f",
+                "start": 798,
+                "end": 857
+            },
+            {
+                "name": "Host_Changelevel_f",
+                "start": 866,
+                "end": 896
+            },
+            {
+                "name": "Host_Restart_f",
+                "start": 905,
+                "end": 918
+            },
+            {
+                "name": "Host_Reconnect_f",
+                "start": 928,
+                "end": 932
+            },
+            {
+                "name": "Host_Connect_f",
+                "start": 941,
+                "end": 954
+            },
+            {
+                "name": "Host_SavegameComment",
+                "start": 974,
+                "end": 991
+            },
+            {
+                "name": "Host_Savegame_f",
+                "start": 999,
+                "end": 1087
+            },
+            {
+                "name": "Host_Loadgame_f",
+                "start": 1095,
+                "end": 1239
+            },
+            {
+                "name": "Host_Name_f",
+                "start": 1248,
+                "end": 1286
+            },
+            {
+                "name": "Host_Say",
+                "start": 1288,
+                "end": 1363
+            },
+            {
+                "name": "Host_Say_f",
+                "start": 1366,
+                "end": 1369
+            },
+            {
+                "name": "Host_Say_Team_f",
+                "start": 1372,
+                "end": 1375
+            },
+            {
+                "name": "Host_Tell_f",
+                "start": 1378,
+                "end": 1440
+            },
+            {
+                "name": "Host_Color_f",
+                "start": 1448,
+                "end": 1492
+            },
+            {
+                "name": "Host_Kill_f",
+                "start": 1499,
+                "end": 1516
+            },
+            {
+                "name": "Host_Pause_f",
+                "start": 1524,
+                "end": 1551
+            },
+            {
+                "name": "Host_PreSpawn_f",
+                "start": 1561,
+                "end": 1579
+            },
+            {
+                "name": "Host_Spawn_f",
+                "start": 1586,
+                "end": 1699
+            },
+            {
+                "name": "Host_Begin_f",
+                "start": 1706,
+                "end": 1715
+            },
+            {
+                "name": "Host_Kick_f",
+                "start": 1727,
+                "end": 1804
+            },
+            {
+                "name": "Host_Give_f",
+                "start": 1819,
+                "end": 2042
+            },
+            {
+                "name": "FindViewthing",
+                "start": 2044,
+                "end": 2057
+            },
+            {
+                "name": "Host_Viewmodel_f",
+                "start": 2064,
+                "end": 2082
+            },
+            {
+                "name": "Host_Viewframe_f",
+                "start": 2089,
+                "end": 2105
+            },
+            {
+                "name": "PrintFrameName",
+                "start": 2108,
+                "end": 2119
+            },
+            {
+                "name": "Host_Viewnext_f",
+                "start": 2126,
+                "end": 2141
+            },
+            {
+                "name": "Host_Viewprev_f",
+                "start": 2148,
+                "end": 2164
+            },
+            {
+                "name": "Host_Startdemos_f",
+                "start": 2180,
+                "end": 2213
+            },
+            {
+                "name": "Host_Demos_f",
+                "start": 2223,
+                "end": 2231
+            },
+            {
+                "name": "Host_Stopdemo_f",
+                "start": 2240,
+                "end": 2248
+            },
+            {
+                "name": "Host_InitCommands",
+                "start": 2257,
+                "end": 2303
+            }
+        ],
+        "Quake/crc.c": [
+            {
+                "name": "CRC_Init",
+                "start": 69,
+                "end": 72
+            },
+            {
+                "name": "CRC_ProcessByte",
+                "start": 74,
+                "end": 77
+            },
+            {
+                "name": "CRC_Value",
+                "start": 79,
+                "end": 82
+            },
+            {
+                "name": "CRC_Block",
+                "start": 85,
+                "end": 94
+            }
+        ],
+        "Quake/gl_vidsdl.c": [
+            {
+                "name": "VID_Gamma_SetGamma",
+                "start": 122,
+                "end": 129
+            },
+            {
+                "name": "VID_Gamma_Restore",
+                "start": 136,
+                "end": 143
+            },
+            {
+                "name": "VID_Gamma_Shutdown",
+                "start": 150,
+                "end": 153
+            },
+            {
+                "name": "VID_Gamma_f",
+                "start": 160,
+                "end": 173
+            },
+            {
+                "name": "VID_Gamma_Init",
+                "start": 180,
+                "end": 189
+            },
+            {
+                "name": "VID_ValidMode",
+                "start": 196,
+                "end": 222
+            },
+            {
+                "name": "VID_SetMode",
+                "start": 229,
+                "end": 287
+            },
+            {
+                "name": "VID_Changed_f",
+                "start": 294,
+                "end": 297
+            },
+            {
+                "name": "VID_Restart",
+                "start": 304,
+                "end": 358
+            },
+            {
+                "name": "VID_Test",
+                "start": 365,
+                "end": 391
+            },
+            {
+                "name": "VID_Unlock",
+                "start": 398,
+                "end": 402
+            },
+            {
+                "name": "GL_MakeNiceExtensionsList",
+                "start": 415,
+                "end": 441
+            },
+            {
+                "name": "GL_Info_f",
+                "start": 448,
+                "end": 454
+            },
+            {
+                "name": "GL_ParseExtensionList",
+                "start": 461,
+                "end": 483
+            },
+            {
+                "name": "GL_CheckExtensions",
+                "start": 485,
+                "end": 635
+            },
+            {
+                "name": "GL_SetupState",
+                "start": 644,
+                "end": 663
+            },
+            {
+                "name": "GL_Init",
+                "start": 670,
+                "end": 690
+            },
+            {
+                "name": "GL_BeginRendering",
+                "start": 697,
+                "end": 702
+            },
+            {
+                "name": "GL_EndRendering",
+                "start": 709,
+                "end": 713
+            },
+            {
+                "name": "VID_Shutdown",
+                "start": 716,
+                "end": 727
+            },
+            {
+                "name": "ClearAllStates",
+                "start": 744,
+                "end": 748
+            },
+            {
+                "name": "VID_DescribeCurrentMode_f",
+                "start": 763,
+                "end": 771
+            },
+            {
+                "name": "VID_DescribeModes_f",
+                "start": 778,
+                "end": 799
+            },
+            {
+                "name": "VID_InitModelist",
+                "start": 812,
+                "end": 865
+            },
+            {
+                "name": "VID_Init",
+                "start": 872,
+                "end": 1007
+            },
+            {
+                "name": "VID_Toggle",
+                "start": 1010,
+                "end": 1043
+            },
+            {
+                "name": "VID_SyncCvars",
+                "start": 1050,
+                "end": 1066
+            },
+            {
+                "name": "VID_Menu_Init",
+                "start": 1102,
+                "end": 1125
+            },
+            {
+                "name": "VID_Menu_RebuildBppList",
+                "start": 1134,
+                "end": 1179
+            },
+            {
+                "name": "VID_Menu_ChooseNextMode",
+                "start": 1189,
+                "end": 1219
+            },
+            {
+                "name": "VID_Menu_ChooseNextBpp",
+                "start": 1228,
+                "end": 1255
+            },
+            {
+                "name": "VID_MenuKey",
+                "start": 1262,
+                "end": 1361
+            },
+            {
+                "name": "VID_MenuDraw",
+                "start": 1368,
+                "end": 1430
+            },
+            {
+                "name": "VID_Menu_f",
+                "start": 1437,
+                "end": 1449
+            }
+        ],
+        "Quake/gl_fog.c": [
+            {
+                "name": "Fog_Update",
+                "start": 51,
+                "end": 82
+            },
+            {
+                "name": "Fog_ParseServerMessage",
+                "start": 91,
+                "end": 102
+            },
+            {
+                "name": "Fog_FogCommand_f",
+                "start": 111,
+                "end": 163
+            },
+            {
+                "name": "Fog_ParseWorldspawn",
+                "start": 172,
+                "end": 211
+            },
+            {
+                "name": "Fog_GetColor",
+                "start": 220,
+                "end": 247
+            },
+            {
+                "name": "Fog_GetDensity",
+                "start": 256,
+                "end": 267
+            },
+            {
+                "name": "Fog_SetupFrame",
+                "start": 276,
+                "end": 280
+            },
+            {
+                "name": "Fog_EnableGFog",
+                "start": 289,
+                "end": 293
+            },
+            {
+                "name": "Fog_DisableGFog",
+                "start": 302,
+                "end": 306
+            },
+            {
+                "name": "Fog_StartAdditive",
+                "start": 315,
+                "end": 321
+            },
+            {
+                "name": "Fog_StopAdditive",
+                "start": 330,
+                "end": 334
+            },
+            {
+                "name": "Fog_NewMap",
+                "start": 360,
+                "end": 364
+            },
+            {
+                "name": "Fog_Init",
+                "start": 373,
+                "end": 386
+            }
+        ],
+        "Quake/cvar.c": [
+            {
+                "name": "Cvar_List_f",
+                "start": 41,
+                "end": 79
+            },
+            {
+                "name": "Cvar_Inc_f",
+                "start": 86,
+                "end": 101
+            },
+            {
+                "name": "Cvar_Toggle_f",
+                "start": 108,
+                "end": 123
+            },
+            {
+                "name": "Cvar_Cycle_f",
+                "start": 130,
+                "end": 166
+            },
+            {
+                "name": "Cvar_Reset_f",
+                "start": 173,
+                "end": 185
+            },
+            {
+                "name": "Cvar_ResetAll_f",
+                "start": 192,
+                "end": 198
+            },
+            {
+                "name": "Cvar_ResetCfg_f",
+                "start": 205,
+                "end": 211
+            },
+            {
+                "name": "Cvar_Init",
+                "start": 225,
+                "end": 234
+            },
+            {
+                "name": "Cvar_FindVar",
+                "start": 247,
+                "end": 258
+            },
+            {
+                "name": "Cvar_FindVarAfter",
+                "start": 260,
+                "end": 282
+            },
+            {
+                "name": "Cvar_LockVar",
+                "start": 289,
+                "end": 294
+            },
+            {
+                "name": "Cvar_UnlockVar",
+                "start": 296,
+                "end": 301
+            },
+            {
+                "name": "Cvar_UnlockAll",
+                "start": 303,
+                "end": 311
+            },
+            {
+                "name": "Cvar_VariableValue",
+                "start": 318,
+                "end": 326
+            },
+            {
+                "name": "Cvar_VariableString",
+                "start": 334,
+                "end": 342
+            },
+            {
+                "name": "Cvar_CompleteVariable",
+                "start": 350,
+                "end": 367
+            },
+            {
+                "name": "Cvar_Reset",
+                "start": 374,
+                "end": 383
+            },
+            {
+                "name": "Cvar_SetQuick",
+                "start": 385,
+                "end": 428
+            },
+            {
+                "name": "Cvar_SetValueQuick",
+                "start": 430,
+                "end": 447
+            },
+            {
+                "name": "Cvar_Set",
+                "start": 454,
+                "end": 466
+            },
+            {
+                "name": "Cvar_SetValue",
+                "start": 473,
+                "end": 490
+            },
+            {
+                "name": "Cvar_SetROM",
+                "start": 497,
+                "end": 506
+            },
+            {
+                "name": "Cvar_SetValueROM",
+                "start": 513,
+                "end": 522
+            },
+            {
+                "name": "Cvar_RegisterVariable",
+                "start": 531,
+                "end": 588
+            },
+            {
+                "name": "Cvar_SetCallback",
+                "start": 597,
+                "end": 603
+            },
+            {
+                "name": "Cvar_Command",
+                "start": 612,
+                "end": 630
+            },
+            {
+                "name": "Cvar_WriteVariables",
+                "start": 641,
+                "end": 650
+            }
+        ],
+        "Quake/keys.c": [
+            {
+                "name": "PasteToConsole",
+                "start": 177,
+                "end": 221
+            },
+            {
+                "name": "Key_Console",
+                "start": 233,
+                "end": 465
+            },
+            {
+                "name": "Key_GetChatBuffer",
+                "start": 473,
+                "end": 476
+            },
+            {
+                "name": "Key_GetChatMsgLen",
+                "start": 478,
+                "end": 481
+            },
+            {
+                "name": "Key_EndChat",
+                "start": 483,
+                "end": 488
+            },
+            {
+                "name": "Key_Message",
+                "start": 490,
+                "end": 526
+            },
+            {
+                "name": "Key_StringToKeynum",
+                "start": 540,
+                "end": 555
+            },
+            {
+                "name": "Key_KeynumToString",
+                "start": 566,
+                "end": 587
+            },
+            {
+                "name": "Key_SetBinding",
+                "start": 595,
+                "end": 609
+            },
+            {
+                "name": "Key_Unbind_f",
+                "start": 616,
+                "end": 634
+            },
+            {
+                "name": "Key_Unbindall_f",
+                "start": 636,
+                "end": 645
+            },
+            {
+                "name": "Key_Bindlist_f",
+                "start": 652,
+                "end": 666
+            },
+            {
+                "name": "Key_Bind_f",
+                "start": 673,
+                "end": 711
+            },
+            {
+                "name": "Key_WriteBindings",
+                "start": 720,
+                "end": 732
+            },
+            {
+                "name": "History_Init",
+                "start": 735,
+                "end": 777
+            },
+            {
+                "name": "History_Shutdown",
+                "start": 779,
+                "end": 800
+            },
+            {
+                "name": "Key_Init",
+                "start": 807,
+                "end": 884
+            },
+            {
+                "name": "Key_Event",
+                "start": 894,
+                "end": 1024
+            },
+            {
+                "name": "Key_ClearStates",
+                "start": 1031,
+                "end": 1040
+            },
+            {
+                "name": "Key_UpdateForDest",
+                "start": 1047,
+                "end": 1079
+            }
+        ],
+        "Quake/in_sdl.c": [
+            {
+                "name": "FilterMouseEvents",
+                "start": 64,
+                "end": 75
+            },
+            {
+                "name": "IN_Activate",
+                "start": 147,
+                "end": 177
+            },
+            {
+                "name": "IN_Deactivate",
+                "start": 179,
+                "end": 209
+            },
+            {
+                "name": "IN_Init",
+                "start": 211,
+                "end": 230
+            },
+            {
+                "name": "IN_Shutdown",
+                "start": 232,
+                "end": 235
+            },
+            {
+                "name": "IN_Commands",
+                "start": 237,
+                "end": 240
+            },
+            {
+                "name": "IN_MouseMove",
+                "start": 246,
+                "end": 250
+            },
+            {
+                "name": "IN_Move",
+                "start": 252,
+                "end": 297
+            },
+            {
+                "name": "IN_ClearStates",
+                "start": 299,
+                "end": 301
+            },
+            {
+                "name": "IN_UpdateForKeydest",
+                "start": 303,
+                "end": 312
+            },
+            {
+                "name": "IN_SendKeyEvents",
+                "start": 314,
+                "end": 600
+            }
+        ],
+        "Quake/r_world.c": [
+            {
+                "name": "R_MarkSurfaces",
+                "start": 45,
+                "end": 134
+            },
+            {
+                "name": "R_BackFaceCull",
+                "start": 141,
+                "end": 165
+            },
+            {
+                "name": "R_CullSurfaces",
+                "start": 172,
+                "end": 196
+            },
+            {
+                "name": "R_BuildLightmapChains",
+                "start": 203,
+                "end": 216
+            },
+            {
+                "name": "R_DrawTextureChains_ShowTris",
+                "start": 229,
+                "end": 260
+            },
+            {
+                "name": "R_DrawTextureChains_Drawflat",
+                "start": 267,
+                "end": 306
+            },
+            {
+                "name": "R_DrawTextureChains_Glow",
+                "start": 313,
+                "end": 342
+            },
+            {
+                "name": "R_DrawTextureChains_Multitexture",
+                "start": 349,
+                "end": 390
+            },
+            {
+                "name": "R_DrawTextureChains_NoTexture",
+                "start": 399,
+                "end": 427
+            },
+            {
+                "name": "R_DrawTextureChains_TextureOnly",
+                "start": 434,
+                "end": 463
+            },
+            {
+                "name": "R_DrawTextureChains_Water",
+                "start": 470,
+                "end": 542
+            },
+            {
+                "name": "R_DrawTextureChains_White",
+                "start": 549,
+                "end": 571
+            },
+            {
+                "name": "R_DrawLightmapChains",
+                "start": 578,
+                "end": 604
+            },
+            {
+                "name": "R_DrawWorld",
+                "start": 611,
+                "end": 748
+            }
+        ],
+        "Quake/sys_sdl_unix.c": [
+            {
+                "name": "findhandle",
+                "start": 52,
+                "end": 63
+            },
+            {
+                "name": "Sys_filelength",
+                "start": 65,
+                "end": 75
+            },
+            {
+                "name": "Sys_FileOpenRead",
+                "start": 77,
+                "end": 98
+            },
+            {
+                "name": "Sys_FileOpenWrite",
+                "start": 100,
+                "end": 113
+            },
+            {
+                "name": "Sys_FileClose",
+                "start": 115,
+                "end": 119
+            },
+            {
+                "name": "Sys_FileSeek",
+                "start": 121,
+                "end": 124
+            },
+            {
+                "name": "Sys_FileRead",
+                "start": 126,
+                "end": 129
+            },
+            {
+                "name": "Sys_FileWrite",
+                "start": 131,
+                "end": 134
+            },
+            {
+                "name": "Sys_FileTime",
+                "start": 136,
+                "end": 149
+            },
+            {
+                "name": "Sys_GetUserdir",
+                "start": 154,
+                "end": 181
+            },
+            {
+                "name": "Sys_Init",
+                "start": 183,
+                "end": 188
+            },
+            {
+                "name": "Sys_mkdir",
+                "start": 190,
+                "end": 200
+            },
+            {
+                "name": "Sys_Error",
+                "start": 205,
+                "end": 225
+            },
+            {
+                "name": "Sys_Printf",
+                "start": 227,
+                "end": 234
+            },
+            {
+                "name": "Sys_Quit",
+                "start": 236,
+                "end": 241
+            },
+            {
+                "name": "Sys_DoubleTime",
+                "start": 243,
+                "end": 246
+            },
+            {
+                "name": "Sys_ConsoleInput",
+                "start": 248,
+                "end": 294
+            },
+            {
+                "name": "Sys_Sleep",
+                "start": 296,
+                "end": 300
+            },
+            {
+                "name": "Sys_SendKeyEvents",
+                "start": 302,
+                "end": 305
+            },
+            {
+                "name": "Sys_LowFPPrecision",
+                "start": 307,
+                "end": 309
+            },
+            {
+                "name": "Sys_HighFPPrecision",
+                "start": 311,
+                "end": 313
+            },
+            {
+                "name": "Sys_SetFPCW",
+                "start": 315,
+                "end": 317
+            }
+        ],
+        "Quake/r_part.c": [
+            {
+                "name": "R_ParticleTextureLookup",
+                "start": 51,
+                "end": 63
+            },
+            {
+                "name": "R_InitParticleTextures",
+                "start": 70,
+                "end": 118
+            },
+            {
+                "name": "R_SetParticleTexture_f",
+                "start": 125,
+                "end": 142
+            },
+            {
+                "name": "R_InitParticles",
+                "start": 149,
+                "end": 174
+            },
+            {
+                "name": "R_EntityParticles",
+                "start": 189,
+                "end": 244
+            },
+            {
+                "name": "R_ClearParticles",
+                "start": 251,
+                "end": 261
+            },
+            {
+                "name": "R_ReadPointFile_f",
+                "start": 268,
+                "end": 317
+            },
+            {
+                "name": "R_ParseParticleEffect",
+                "start": 326,
+                "end": 344
+            },
+            {
+                "name": "R_ParticleExplosion",
+                "start": 351,
+                "end": 387
+            },
+            {
+                "name": "R_ParticleExplosion2",
+                "start": 394,
+                "end": 420
+            },
+            {
+                "name": "R_BlobExplosion",
+                "start": 427,
+                "end": 464
+            },
+            {
+                "name": "R_RunParticleEffect",
+                "start": 471,
+                "end": 521
+            },
+            {
+                "name": "R_LavaSplash",
+                "start": 528,
+                "end": 562
+            },
+            {
+                "name": "R_TeleportSplash",
+                "start": 569,
+                "end": 603
+            },
+            {
+                "name": "R_RocketTrail",
+                "start": 612,
+                "end": 714
+            },
+            {
+                "name": "CL_RunParticles",
+                "start": 721,
+                "end": 820
+            },
+            {
+                "name": "R_DrawParticles",
+                "start": 827,
+                "end": 940
+            },
+            {
+                "name": "R_DrawParticles_ShowTris",
+                "start": 948,
+                "end": 1020
+            }
+        ],
+        "Quake/snd_mix.c": [
+            {
+                "name": "Snd_WriteLinearBlastStereo16",
+                "start": 33,
+                "end": 56
+            },
+            {
+                "name": "S_TransferStereo16",
+                "start": 58,
+                "end": 85
+            },
+            {
+                "name": "S_TransferPaintBuffer",
+                "start": 87,
+                "end": 150
+            },
+            {
+                "name": "S_PaintChannels",
+                "start": 164,
+                "end": 260
+            },
+            {
+                "name": "SND_InitScaletable",
+                "start": 262,
+                "end": 282
+            },
+            {
+                "name": "SND_PaintChannelFrom8",
+                "start": 285,
+                "end": 309
+            },
+            {
+                "name": "SND_PaintChannelFrom16",
+                "start": 311,
+                "end": 339
+            }
+        ],
+        "Quake/gl_rmain.c": [
+            {
+                "name": "R_CullBox",
+                "start": 115,
+                "end": 160
+            },
+            {
+                "name": "R_CullModelForEntity",
+                "start": 166,
+                "end": 187
+            },
+            {
+                "name": "R_RotateForEntity",
+                "start": 194,
+                "end": 200
+            },
+            {
+                "name": "GL_PolygonOffset",
+                "start": 209,
+                "end": 228
+            },
+            {
+                "name": "SignbitsForPlane",
+                "start": 236,
+                "end": 249
+            },
+            {
+                "name": "TurnVector",
+                "start": 262,
+                "end": 272
+            },
+            {
+                "name": "R_SetFrustum",
+                "start": 279,
+                "end": 297
+            },
+            {
+                "name": "GL_SetFrustum",
+                "start": 306,
+                "end": 312
+            },
+            {
+                "name": "R_SetupGL",
+                "start": 319,
+                "end": 357
+            },
+            {
+                "name": "R_Clear",
+                "start": 364,
+                "end": 372
+            },
+            {
+                "name": "R_SetupScene",
+                "start": 379,
+                "end": 385
+            },
+            {
+                "name": "R_SetupView",
+                "start": 392,
+                "end": 446
+            },
+            {
+                "name": "R_DrawEntitiesOnList",
+                "start": 459,
+                "end": 495
+            },
+            {
+                "name": "R_DrawViewModel",
+                "start": 502,
+                "end": 523
+            },
+            {
+                "name": "R_EmitWirePoint",
+                "start": 530,
+                "end": 542
+            },
+            {
+                "name": "R_EmitWireBox",
+                "start": 549,
+                "end": 563
+            },
+            {
+                "name": "R_ShowBoundingBoxes",
+                "start": 572,
+                "end": 620
+            },
+            {
+                "name": "R_ShowTris",
+                "start": 627,
+                "end": 704
+            },
+            {
+                "name": "R_DrawShadows",
+                "start": 711,
+                "end": 730
+            },
+            {
+                "name": "R_RenderScene",
+                "start": 737,
+                "end": 768
+            },
+            {
+                "name": "R_RenderView",
+                "start": 775,
+                "end": 856
+            }
+        ],
+        "Quake/cl_parse.c": [
+            {
+                "name": "CL_EntityNum",
+                "start": 104,
+                "end": 124
+            },
+            {
+                "name": "CL_ParseStartSoundPacket",
+                "start": 132,
+                "end": 185
+            },
+            {
+                "name": "CL_KeepaliveMessage",
+                "start": 196,
+                "end": 248
+            },
+            {
+                "name": "CL_ParseServerInfo",
+                "start": 255,
+                "end": 394
+            },
+            {
+                "name": "CL_ParseUpdate",
+                "start": 405,
+                "end": 612
+            },
+            {
+                "name": "CL_ParseBaseline",
+                "start": 619,
+                "end": 639
+            },
+            {
+                "name": "CL_ParseClientdata",
+                "start": 649,
+                "end": 805
+            },
+            {
+                "name": "CL_NewTranslation",
+                "start": 812,
+                "end": 845
+            },
+            {
+                "name": "CL_ParseStatic",
+                "start": 852,
+                "end": 879
+            },
+            {
+                "name": "CL_ParseStaticSound",
+                "start": 886,
+                "end": 906
+            },
+            {
+                "name": "CL_ParseServerMessage",
+                "start": 916,
+                "end": 1225
+            }
+        ],
+        "Quake/snd_codec.c": [
+            {
+                "name": "S_CodecRegister",
+                "start": 43,
+                "end": 47
+            },
+            {
+                "name": "S_CodecInit",
+                "start": 54,
+                "end": 76
+            },
+            {
+                "name": "S_CodecShutdown",
+                "start": 83,
+                "end": 92
+            },
+            {
+                "name": "S_CodecOpenStreamType",
+                "start": 99,
+                "end": 126
+            },
+            {
+                "name": "S_CodecOpenStreamExt",
+                "start": 128,
+                "end": 157
+            },
+            {
+                "name": "S_CodecOpenStreamAny",
+                "start": 159,
+                "end": 204
+            },
+            {
+                "name": "S_CodecCloseStream",
+                "start": 206,
+                "end": 210
+            },
+            {
+                "name": "S_CodecRewindStream",
+                "start": 212,
+                "end": 215
+            },
+            {
+                "name": "S_CodecReadStream",
+                "start": 217,
+                "end": 220
+            },
+            {
+                "name": "S_CodecUtilOpen",
+                "start": 224,
+                "end": 249
+            },
+            {
+                "name": "S_CodecUtilClose",
+                "start": 251,
+                "end": 256
+            },
+            {
+                "name": "S_CodecIsAvailable",
+                "start": 258,
+                "end": 268
+            }
+        ],
+        "Quake/r_sprite.c": [
+            {
+                "name": "R_GetSpriteFrame",
+                "start": 30,
+                "end": 74
+            },
+            {
+                "name": "R_DrawSpriteModel",
+                "start": 81,
+                "end": 181
+            }
+        ],
+        "Quake/console.c": [
+            {
+                "name": "Con_Quakebar",
+                "start": 74,
+                "end": 96
+            },
+            {
+                "name": "Con_ToggleConsole_f",
+                "start": 105,
+                "end": 131
+            },
+            {
+                "name": "Con_Clear_f",
+                "start": 138,
+                "end": 143
+            },
+            {
+                "name": "Con_Dump_f",
+                "start": 150,
+                "end": 223
+            },
+            {
+                "name": "Con_ClearNotify",
+                "start": 230,
+                "end": 236
+            },
+            {
+                "name": "Con_MessageMode_f",
+                "start": 244,
+                "end": 250
+            },
+            {
+                "name": "Con_MessageMode2_f",
+                "start": 257,
+                "end": 263
+            },
+            {
+                "name": "Con_CheckResize",
+                "start": 273,
+                "end": 319
+            },
+            {
+                "name": "Con_Init",
+                "start": 327,
+                "end": 361
+            },
+            {
+                "name": "Con_Linefeed",
+                "start": 369,
+                "end": 381
+            },
+            {
+                "name": "Con_Print",
+                "start": 392,
+                "end": 474
+            },
+            {
+                "name": "Con_DebugLog",
+                "start": 487,
+                "end": 493
+            },
+            {
+                "name": "Con_Printf",
+                "start": 504,
+                "end": 542
+            },
+            {
+                "name": "Con_Warning",
+                "start": 549,
+                "end": 560
+            },
+            {
+                "name": "Con_DPrintf",
+                "start": 569,
+                "end": 582
+            },
+            {
+                "name": "Con_DPrintf2",
+                "start": 591,
+                "end": 603
+            },
+            {
+                "name": "Con_SafePrintf",
+                "start": 613,
+                "end": 627
+            },
+            {
+                "name": "Con_CenterPrintf",
+                "start": 635,
+                "end": 669
+            },
+            {
+                "name": "Con_LogCenterPrint",
+                "start": 676,
+                "end": 693
+            },
+            {
+                "name": "AddToTabList",
+                "start": 747,
+                "end": 805
+            },
+            {
+                "name": "BuildMapList",
+                "start": 821,
+                "end": 870
+            },
+            {
+                "name": "BuildTabList",
+                "start": 877,
+                "end": 902
+            },
+            {
+                "name": "Con_TabComplete",
+                "start": 909,
+                "end": 1039
+            },
+            {
+                "name": "Con_DrawNotify",
+                "start": 1056,
+                "end": 1119
+            },
+            {
+                "name": "Con_DrawInput",
+                "start": 1130,
+                "end": 1153
+            },
+            {
+                "name": "Con_DrawConsole",
+                "start": 1163,
+                "end": 1213
+            },
+            {
+                "name": "Con_NotifyBox",
+                "start": 1221,
+                "end": 1248
+            },
+            {
+                "name": "LOG_Init",
+                "start": 1251,
+                "end": 1275
+            },
+            {
+                "name": "LOG_Close",
+                "start": 1277,
+                "end": 1283
+            }
+        ],
+        "Quake/main_sdl.c": [
+            {
+                "name": "Sys_CheckSDL",
+                "start": 39,
+                "end": 53
+            },
+            {
+                "name": "main",
+                "start": 60,
+                "end": 155
+            }
+        ],
+        "Quake/snd_mem.c": [
+            {
+                "name": "ResampleSfx",
+                "start": 30,
+                "end": 84
+            },
+            {
+                "name": "S_LoadSound",
+                "start": 93,
+                "end": 161
+            },
+            {
+                "name": "GetLittleShort",
+                "start": 179,
+                "end": 186
+            },
+            {
+                "name": "GetLittleLong",
+                "start": 188,
+                "end": 197
+            },
+            {
+                "name": "FindNextChunk",
+                "start": 199,
+                "end": 223
+            },
+            {
+                "name": "FindChunk",
+                "start": 225,
+                "end": 229
+            },
+            {
+                "name": "GetWavinfo",
+                "start": 254,
+                "end": 348
+            }
+        ],
+        "Quake/gl_model.c": [
+            {
+                "name": "Mod_Init",
+                "start": 53,
+                "end": 69
+            },
+            {
+                "name": "Mod_Extradata",
+                "start": 78,
+                "end": 91
+            },
+            {
+                "name": "Mod_PointInLeaf",
+                "start": 98,
+                "end": 121
+            },
+            {
+                "name": "Mod_DecompressVis",
+                "start": 129,
+                "end": 171
+            },
+            {
+                "name": "Mod_LeafPVS",
+                "start": 173,
+                "end": 178
+            },
+            {
+                "name": "Mod_ClearAll",
+                "start": 185,
+                "end": 196
+            },
+            {
+                "name": "Mod_FindName",
+                "start": 204,
+                "end": 229
+            },
+            {
+                "name": "Mod_TouchModel",
+                "start": 237,
+                "end": 248
+            },
+            {
+                "name": "Mod_LoadModel",
+                "start": 257,
+                "end": 324
+            },
+            {
+                "name": "Mod_ForName",
+                "start": 333,
+                "end": 340
+            },
+            {
+                "name": "Mod_CheckFullbrights",
+                "start": 358,
+                "end": 365
+            },
+            {
+                "name": "Mod_LoadTextures",
+                "start": 372,
+                "end": 629
+            },
+            {
+                "name": "Mod_LoadLighting",
+                "start": 636,
+                "end": 696
+            },
+            {
+                "name": "Mod_LoadVisibility",
+                "start": 704,
+                "end": 713
+            },
+            {
+                "name": "Mod_LoadEntities",
+                "start": 721,
+                "end": 762
+            },
+            {
+                "name": "Mod_LoadVertexes",
+                "start": 770,
+                "end": 791
+            },
+            {
+                "name": "Mod_LoadEdges",
+                "start": 798,
+                "end": 818
+            },
+            {
+                "name": "Mod_LoadTexinfo",
+                "start": 825,
+                "end": 891
+            },
+            {
+                "name": "CalcSurfaceExtents",
+                "start": 900,
+                "end": 945
+            },
+            {
+                "name": "Mod_PolyForUnlitSurface",
+                "start": 954,
+                "end": 992
+            },
+            {
+                "name": "Mod_CalcSurfaceBounds",
+                "start": 999,
+                "end": 1029
+            },
+            {
+                "name": "Mod_LoadFaces",
+                "start": 1036,
+                "end": 1111
+            },
+            {
+                "name": "Mod_SetParent",
+                "start": 1119,
+                "end": 1126
+            },
+            {
+                "name": "Mod_LoadNodes",
+                "start": 1133,
+                "end": 1189
+            },
+            {
+                "name": "Mod_LoadLeafs",
+                "start": 1196,
+                "end": 1242
+            },
+            {
+                "name": "Mod_LoadClipnodes",
+                "start": 1249,
+                "end": 1312
+            },
+            {
+                "name": "Mod_MakeHull0",
+                "start": 1321,
+                "end": 1351
+            },
+            {
+                "name": "Mod_LoadMarksurfaces",
+                "start": 1358,
+                "end": 1385
+            },
+            {
+                "name": "Mod_LoadSurfedges",
+                "start": 1392,
+                "end": 1408
+            },
+            {
+                "name": "Mod_LoadPlanes",
+                "start": 1416,
+                "end": 1447
+            },
+            {
+                "name": "RadiusFromBounds",
+                "start": 1454,
+                "end": 1465
+            },
+            {
+                "name": "Mod_LoadSubmodels",
+                "start": 1472,
+                "end": 1511
+            },
+            {
+                "name": "Mod_BoundsFromClipNode",
+                "start": 1525,
+                "end": 1563
+            },
+            {
+                "name": "Mod_LoadBrushModel",
+                "start": 1570,
+                "end": 1670
+            },
+            {
+                "name": "Mod_LoadAliasFrame",
+                "start": 1698,
+                "end": 1727
+            },
+            {
+                "name": "Mod_LoadAliasGroup",
+                "start": 1735,
+                "end": 1774
+            },
+            {
+                "name": "Mod_FloodFillSkin",
+                "start": 1807,
+                "end": 1851
+            },
+            {
+                "name": "Mod_LoadAllSkins",
+                "start": 1858,
+                "end": 1958
+            },
+            {
+                "name": "Mod_CalcAliasBounds",
+                "start": 1967,
+                "end": 2012
+            },
+            {
+                "name": "Mod_SetExtraFlags",
+                "start": 2019,
+                "end": 2069
+            },
+            {
+                "name": "Mod_LoadAliasModel",
+                "start": 2076,
+                "end": 2225
+            },
+            {
+                "name": "Mod_LoadSpriteFrame",
+                "start": 2234,
+                "end": 2274
+            },
+            {
+                "name": "Mod_LoadSpriteGroup",
+                "start": 2282,
+                "end": 2326
+            },
+            {
+                "name": "Mod_LoadSpriteModel",
+                "start": 2334,
+                "end": 2402
+            },
+            {
+                "name": "Mod_Print",
+                "start": 2411,
+                "end": 2422
+            }
+        ],
+        "Quake/pr_exec.c": [
+            {
+                "name": "PR_PrintStatement",
+                "start": 142,
+                "end": 175
+            },
+            {
+                "name": "PR_StackTrace",
+                "start": 182,
+                "end": 206
+            },
+            {
+                "name": "PR_Profile_f",
+                "start": 215,
+                "end": 246
+            },
+            {
+                "name": "PR_RunError",
+                "start": 256,
+                "end": 273
+            },
+            {
+                "name": "PR_EnterFunction",
+                "start": 282,
+                "end": 314
+            },
+            {
+                "name": "PR_LeaveFunction",
+                "start": 321,
+                "end": 341
+            },
+            {
+                "name": "PR_ExecuteProgram",
+                "start": 355,
+                "end": 649
+            }
+        ],
+        "Quake/net_wipx.c": [
+            {
+                "name": "WIPX_Init",
+                "start": 49,
+                "end": 109
+            },
+            {
+                "name": "WIPX_Shutdown",
+                "start": 113,
+                "end": 119
+            },
+            {
+                "name": "WIPX_Listen",
+                "start": 123,
+                "end": 140
+            },
+            {
+                "name": "WIPX_OpenSocket",
+                "start": 144,
+                "end": 200
+            },
+            {
+                "name": "WIPX_CloseSocket",
+                "start": 204,
+                "end": 212
+            },
+            {
+                "name": "WIPX_Connect",
+                "start": 216,
+                "end": 219
+            },
+            {
+                "name": "WIPX_CheckNewConnections",
+                "start": 223,
+                "end": 238
+            },
+            {
+                "name": "WIPX_Read",
+                "start": 244,
+                "end": 267
+            },
+            {
+                "name": "WIPX_Broadcast",
+                "start": 271,
+                "end": 274
+            },
+            {
+                "name": "WIPX_Write",
+                "start": 278,
+                "end": 299
+            },
+            {
+                "name": "WIPX_AddrToString",
+                "start": 303,
+                "end": 321
+            },
+            {
+                "name": "WIPX_StringToAddr",
+                "start": 325,
+                "end": 358
+            },
+            {
+                "name": "WIPX_GetSocketAddr",
+                "start": 362,
+                "end": 376
+            },
+            {
+                "name": "WIPX_GetNameFromAddr",
+                "start": 380,
+                "end": 384
+            },
+            {
+                "name": "WIPX_GetAddrFromName",
+                "start": 388,
+                "end": 409
+            },
+            {
+                "name": "WIPX_AddrCompare",
+                "start": 413,
+                "end": 431
+            },
+            {
+                "name": "WIPX_GetSocketPort",
+                "start": 435,
+                "end": 438
+            },
+            {
+                "name": "WIPX_SetSocketPort",
+                "start": 441,
+                "end": 445
+            }
+        ],
+        "Quake/wad.c": [
+            {
+                "name": "W_CleanupName",
+                "start": 42,
+                "end": 60
+            },
+            {
+                "name": "W_LoadWadFile",
+                "start": 67,
+                "end": 101
+            },
+            {
+                "name": "W_GetLumpinfo",
+                "start": 109,
+                "end": 125
+            },
+            {
+                "name": "W_GetLumpName",
+                "start": 127,
+                "end": 136
+            },
+            {
+                "name": "W_GetLumpNum",
+                "start": 138,
+                "end": 148
+            },
+            {
+                "name": "SwapPic",
+                "start": 158,
+                "end": 162
+            }
+        ],
+        "Quake/cl_tent.c": [
+            {
+                "name": "CL_InitTEnts",
+                "start": 42,
+                "end": 51
+            },
+            {
+                "name": "CL_ParseBeam",
+                "start": 58,
+                "end": 108
+            },
+            {
+                "name": "CL_ParseTEnt",
+                "start": 115,
+                "end": 259
+            },
+            {
+                "name": "CL_NewTempEntity",
+                "start": 267,
+                "end": 283
+            },
+            {
+                "name": "CL_UpdateTEnts",
+                "start": 291,
+                "end": 360
+            }
+        ],
+        "Quake/cl_input.c": [
+            {
+                "name": "KeyDown",
+                "start": 62,
+                "end": 89
+            },
+            {
+                "name": "KeyUp",
+                "start": 91,
+                "end": 119
+            },
+            {
+                "name": "IN_MLookUp",
+                "start": 124,
+                "end": 128
+            },
+            {
+                "name": "CL_KeyState",
+                "start": 175,
+                "end": 217
+            },
+            {
+                "name": "CL_AdjustAngles",
+                "start": 244,
+                "end": 288
+            },
+            {
+                "name": "CL_BaseMove",
+                "start": 297,
+                "end": 335
+            },
+            {
+                "name": "CL_SendMove",
+                "start": 344,
+                "end": 412
+            },
+            {
+                "name": "CL_InitInput",
+                "start": 419,
+                "end": 457
+            }
+        ],
+        "Quake/gl_draw.c": [
+            {
+                "name": "Scrap_AllocBlock",
+                "start": 176,
+                "end": 215
+            },
+            {
+                "name": "Scrap_Upload",
+                "start": 222,
+                "end": 235
+            },
+            {
+                "name": "Draw_PicFromWad",
+                "start": 242,
+                "end": 291
+            },
+            {
+                "name": "Draw_CachePic",
+                "start": 298,
+                "end": 341
+            },
+            {
+                "name": "Draw_ConbackPic",
+                "start": 349,
+                "end": 352
+            },
+            {
+                "name": "Draw_MakePic",
+                "start": 408,
+                "end": 426
+            },
+            {
+                "name": "Draw_LoadPics",
+                "start": 439,
+                "end": 452
+            },
+            {
+                "name": "Draw_NewGame",
+                "start": 459,
+                "end": 479
+            },
+            {
+                "name": "Draw_Init",
+                "start": 486,
+                "end": 509
+            },
+            {
+                "name": "Draw_CharacterQuad",
+                "start": 522,
+                "end": 542
+            },
+            {
+                "name": "Draw_Character",
+                "start": 549,
+                "end": 565
+            },
+            {
+                "name": "Draw_String",
+                "start": 572,
+                "end": 589
+            },
+            {
+                "name": "Draw_Pic",
+                "start": 596,
+                "end": 614
+            },
+            {
+                "name": "Draw_TransPicTranslate",
+                "start": 623,
+                "end": 637
+            },
+            {
+                "name": "Draw_ConsoleBackground",
+                "start": 644,
+                "end": 677
+            },
+            {
+                "name": "Draw_TileClear",
+                "start": 688,
+                "end": 706
+            },
+            {
+                "name": "Draw_Fill",
+                "start": 715,
+                "end": 735
+            },
+            {
+                "name": "Draw_FadeScreen",
+                "start": 742,
+                "end": 764
+            },
+            {
+                "name": "GL_SetCanvas",
+                "start": 771,
+                "end": 845
+            },
+            {
+                "name": "GL_Set2D",
+                "start": 852,
+                "end": 862
+            }
+        ],
+        "Quake/gl_texmgr.c": [
+            {
+                "name": "TexMgr_DescribeTextureModes_f",
+                "start": 77,
+                "end": 85
+            },
+            {
+                "name": "TexMgr_SetFilterModes",
+                "start": 92,
+                "end": 117
+            },
+            {
+                "name": "TexMgr_TextureMode_f",
+                "start": 124,
+                "end": 163
+            },
+            {
+                "name": "TexMgr_Anisotropy_f",
+                "start": 170,
+                "end": 194
+            },
+            {
+                "name": "TexMgr_Imagelist_f",
+                "start": 201,
+                "end": 218
+            },
+            {
+                "name": "TexMgr_Imagedump_f",
+                "start": 225,
+                "end": 262
+            },
+            {
+                "name": "TexMgr_FrameUsage",
+                "start": 269,
+                "end": 288
+            },
+            {
+                "name": "TexMgr_FindTexture",
+                "start": 303,
+                "end": 317
+            },
+            {
+                "name": "TexMgr_NewTexture",
+                "start": 324,
+                "end": 339
+            },
+            {
+                "name": "TexMgr_FreeTexture",
+                "start": 346,
+                "end": 382
+            },
+            {
+                "name": "TexMgr_FreeTextures",
+                "start": 391,
+                "end": 401
+            },
+            {
+                "name": "TexMgr_FreeTexturesForOwner",
+                "start": 408,
+                "end": 418
+            },
+            {
+                "name": "TexMgr_LoadPalette",
+                "start": 433,
+                "end": 499
+            },
+            {
+                "name": "TexMgr_NewGame",
+                "start": 506,
+                "end": 514
+            },
+            {
+                "name": "TexMgr_RecalcWarpImageSize",
+                "start": 523,
+                "end": 561
+            },
+            {
+                "name": "TexMgr_Init",
+                "start": 570,
+                "end": 612
+            },
+            {
+                "name": "TexMgr_Pad",
+                "start": 627,
+                "end": 633
+            },
+            {
+                "name": "TexMgr_SafeTextureSize",
+                "start": 640,
+                "end": 647
+            },
+            {
+                "name": "TexMgr_PadConditional",
+                "start": 654,
+                "end": 660
+            },
+            {
+                "name": "TexMgr_MipMapW",
+                "start": 667,
+                "end": 684
+            },
+            {
+                "name": "TexMgr_MipMapH",
+                "start": 691,
+                "end": 712
+            },
+            {
+                "name": "TexMgr_ResampleTexture",
+                "start": 719,
+                "end": 771
+            },
+            {
+                "name": "TexMgr_AlphaEdgeFix",
+                "start": 781,
+                "end": 823
+            },
+            {
+                "name": "TexMgr_PadEdgeFixW",
+                "start": 832,
+                "end": 861
+            },
+            {
+                "name": "TexMgr_PadEdgeFixH",
+                "start": 870,
+                "end": 901
+            },
+            {
+                "name": "TexMgr_8to32",
+                "start": 908,
+                "end": 919
+            },
+            {
+                "name": "TexMgr_PadImageW",
+                "start": 926,
+                "end": 947
+            },
+            {
+                "name": "TexMgr_PadImageH",
+                "start": 954,
+                "end": 973
+            },
+            {
+                "name": "TexMgr_LoadImage32",
+                "start": 980,
+                "end": 1037
+            },
+            {
+                "name": "TexMgr_LoadImage8",
+                "start": 1044,
+                "end": 1128
+            },
+            {
+                "name": "TexMgr_LoadLightmap",
+                "start": 1135,
+                "end": 1143
+            },
+            {
+                "name": "TexMgr_LoadImage",
+                "start": 1150,
+                "end": 1217
+            },
+            {
+                "name": "TexMgr_ReloadImage",
+                "start": 1232,
+                "end": 1348
+            },
+            {
+                "name": "TexMgr_ReloadImages",
+                "start": 1355,
+                "end": 1364
+            },
+            {
+                "name": "TexMgr_ReloadNobrightImages",
+                "start": 1371,
+                "end": 1378
+            },
+            {
+                "name": "GL_SelectTexture",
+                "start": 1397,
+                "end": 1419
+            },
+            {
+                "name": "GL_DisableMultitexture",
+                "start": 1426,
+                "end": 1434
+            },
+            {
+                "name": "GL_EnableMultitexture",
+                "start": 1441,
+                "end": 1449
+            },
+            {
+                "name": "GL_Bind",
+                "start": 1456,
+                "end": 1467
+            }
+        ],
+        "Quake/image.c": [
+            {
+                "name": "Image_LoadImage",
+                "start": 36,
+                "end": 51
+            },
+            {
+                "name": "fgetLittleShort",
+                "start": 71,
+                "end": 79
+            },
+            {
+                "name": "fgetLittleLong",
+                "start": 81,
+                "end": 91
+            },
+            {
+                "name": "Image_WriteTGA",
+                "start": 102,
+                "end": 139
+            },
+            {
+                "name": "Image_LoadTGA",
+                "start": 146,
+                "end": 328
+            },
+            {
+                "name": "Image_LoadPCX",
+                "start": 357,
+                "end": 427
+            }
+        ],
+        "Quake/sbar.c": [
+            {
+                "name": "Sbar_ShowScores",
+                "start": 76,
+                "end": 82
+            },
+            {
+                "name": "Sbar_DontShowScores",
+                "start": 91,
+                "end": 95
+            },
+            {
+                "name": "Sbar_Changed",
+                "start": 102,
+                "end": 105
+            },
+            {
+                "name": "Sbar_LoadPics",
+                "start": 112,
+                "end": 246
+            },
+            {
+                "name": "Sbar_Init",
+                "start": 253,
+                "end": 259
+            },
+            {
+                "name": "Sbar_DrawPic",
+                "start": 271,
+                "end": 274
+            },
+            {
+                "name": "Sbar_DrawPicAlpha",
+                "start": 281,
+                "end": 290
+            },
+            {
+                "name": "Sbar_DrawCharacter",
+                "start": 297,
+                "end": 300
+            },
+            {
+                "name": "Sbar_DrawString",
+                "start": 307,
+                "end": 310
+            },
+            {
+                "name": "Sbar_DrawScrollString",
+                "start": 319,
+                "end": 341
+            },
+            {
+                "name": "Sbar_itoa",
+                "start": 348,
+                "end": 376
+            },
+            {
+                "name": "Sbar_DrawNum",
+                "start": 384,
+                "end": 410
+            },
+            {
+                "name": "Sbar_SortFrags",
+                "start": 427,
+                "end": 454
+            },
+            {
+                "name": "Sbar_ColorForMap",
+                "start": 456,
+                "end": 459
+            },
+            {
+                "name": "Sbar_UpdateScoreboard",
+                "start": 466,
+                "end": 488
+            },
+            {
+                "name": "Sbar_SoloScoreboard",
+                "start": 495,
+                "end": 532
+            },
+            {
+                "name": "Sbar_DrawScoreboard",
+                "start": 539,
+                "end": 544
+            },
+            {
+                "name": "Sbar_DrawInventory",
+                "start": 553,
+                "end": 767
+            },
+            {
+                "name": "Sbar_DrawFrags",
+                "start": 776,
+                "end": 816
+            },
+            {
+                "name": "Sbar_DrawFace",
+                "start": 826,
+                "end": 916
+            },
+            {
+                "name": "Sbar_Draw",
+                "start": 923,
+                "end": 1060
+            },
+            {
+                "name": "Sbar_IntermissionNumber",
+                "start": 1070,
+                "end": 1094
+            },
+            {
+                "name": "Sbar_DeathmatchOverlay",
+                "start": 1102,
+                "end": 1176
+            },
+            {
+                "name": "Sbar_MiniDeathmatchOverlay",
+                "start": 1183,
+                "end": 1250
+            },
+            {
+                "name": "Sbar_IntermissionOverlay",
+                "start": 1257,
+                "end": 1291
+            },
+            {
+                "name": "Sbar_FinaleOverlay",
+                "start": 1299,
+                "end": 1307
+            }
+        ],
+        "Quake/r_brush.c": [
+            {
+                "name": "R_TextureAnimation",
+                "start": 61,
+                "end": 86
+            },
+            {
+                "name": "DrawGLPoly",
+                "start": 93,
+                "end": 106
+            },
+            {
+                "name": "DrawGLTriangleFan",
+                "start": 113,
+                "end": 125
+            },
+            {
+                "name": "R_DrawSequentialPoly",
+                "start": 140,
+                "end": 494
+            },
+            {
+                "name": "R_DrawBrushModel",
+                "start": 501,
+                "end": 586
+            },
+            {
+                "name": "R_DrawBrushModel_ShowTris",
+                "start": 593,
+                "end": 647
+            },
+            {
+                "name": "R_RenderDynamicLightmaps",
+                "start": 663,
+                "end": 711
+            },
+            {
+                "name": "AllocBlock",
+                "start": 718,
+                "end": 757
+            },
+            {
+                "name": "GL_CreateSurfaceLightmap",
+                "start": 770,
+                "end": 782
+            },
+            {
+                "name": "BuildSurfaceDisplayList",
+                "start": 789,
+                "end": 855
+            },
+            {
+                "name": "GL_BuildLightmaps",
+                "start": 865,
+                "end": 940
+            },
+            {
+                "name": "R_AddDynamicLights",
+                "start": 947,
+                "end": 1025
+            },
+            {
+                "name": "R_BuildLightMap",
+                "start": 1035,
+                "end": 1144
+            },
+            {
+                "name": "R_UploadLightmap",
+                "start": 1153,
+                "end": 1171
+            },
+            {
+                "name": "R_RebuildAllLightmaps",
+                "start": 1178,
+                "end": 1213
+            }
+        ],
+        "Quake/cl_demo.c": [
+            {
+                "name": "CL_StopPlayback",
+                "start": 49,
+                "end": 61
+            },
+            {
+                "name": "CL_WriteDemoMessage",
+                "start": 70,
+                "end": 85
+            },
+            {
+                "name": "CL_GetDemoMessage",
+                "start": 87,
+                "end": 138
+            },
+            {
+                "name": "CL_GetMessage",
+                "start": 147,
+                "end": 180
+            },
+            {
+                "name": "CL_Stop_f",
+                "start": 190,
+                "end": 211
+            },
+            {
+                "name": "CL_Record_f",
+                "start": 220,
+                "end": 371
+            },
+            {
+                "name": "CL_PlayDemo_f",
+                "start": 381,
+                "end": 453
+            },
+            {
+                "name": "CL_FinishTimeDemo",
+                "start": 461,
+                "end": 474
+            },
+            {
+                "name": "CL_TimeDemo_f",
+                "start": 483,
+                "end": 505
+            }
+        ],
+        "Quake/menu.c": [
+            {
+                "name": "M_DrawCharacter",
+                "start": 104,
+                "end": 107
+            },
+            {
+                "name": "M_Print",
+                "start": 109,
+                "end": 117
+            },
+            {
+                "name": "M_PrintWhite",
+                "start": 119,
+                "end": 127
+            },
+            {
+                "name": "M_DrawTransPic",
+                "start": 129,
+                "end": 132
+            },
+            {
+                "name": "M_DrawPic",
+                "start": 134,
+                "end": 137
+            },
+            {
+                "name": "M_DrawTransPicTranslate",
+                "start": 139,
+                "end": 142
+            },
+            {
+                "name": "M_DrawTextBox",
+                "start": 144,
+                "end": 197
+            },
+            {
+                "name": "M_ToggleMenu_f",
+                "start": 208,
+                "end": 233
+            },
+            {
+                "name": "M_Menu_Main_f",
+                "start": 243,
+                "end": 254
+            },
+            {
+                "name": "M_Main_Draw",
+                "start": 257,
+                "end": 270
+            },
+            {
+                "name": "M_Main_Key",
+                "start": 273,
+                "end": 326
+            },
+            {
+                "name": "M_Menu_SinglePlayer_f",
+                "start": 335,
+                "end": 341
+            },
+            {
+                "name": "M_SinglePlayer_Draw",
+                "start": 344,
+                "end": 357
+            },
+            {
+                "name": "M_SinglePlayer_Key",
+                "start": 360,
+                "end": 408
+            },
+            {
+                "name": "M_ScanSaves",
+                "start": 419,
+                "end": 447
+            },
+            {
+                "name": "M_Menu_Load_f",
+                "start": 449,
+                "end": 457
+            },
+            {
+                "name": "M_Menu_Save_f",
+                "start": 460,
+                "end": 474
+            },
+            {
+                "name": "M_Load_Draw",
+                "start": 477,
+                "end": 490
+            },
+            {
+                "name": "M_Save_Draw",
+                "start": 493,
+                "end": 506
+            },
+            {
+                "name": "M_Load_Key",
+                "start": 509,
+                "end": 549
+            },
+            {
+                "name": "M_Save_Key",
+                "start": 552,
+                "end": 583
+            },
+            {
+                "name": "M_Menu_MultiPlayer_f",
+                "start": 592,
+                "end": 598
+            },
+            {
+                "name": "M_MultiPlayer_Draw",
+                "start": 601,
+                "end": 618
+            },
+            {
+                "name": "M_MultiPlayer_Key",
+                "start": 621,
+                "end": 660
+            },
+            {
+                "name": "M_Menu_Setup_f",
+                "start": 677,
+                "end": 687
+            },
+            {
+                "name": "M_Setup_Draw",
+                "start": 690,
+                "end": 724
+            },
+            {
+                "name": "M_Setup_Key",
+                "start": 727,
+                "end": 834
+            },
+            {
+                "name": "M_Menu_Net_f",
+                "start": 856,
+                "end": 868
+            },
+            {
+                "name": "M_Net_Draw",
+                "start": 871,
+                "end": 905
+            },
+            {
+                "name": "M_Net_Key",
+                "start": 908,
+                "end": 939
+            },
+            {
+                "name": "M_Menu_Options_f",
+                "start": 973,
+                "end": 979
+            },
+            {
+                "name": "M_AdjustSliders",
+                "start": 982,
+                "end": 1073
+            },
+            {
+                "name": "M_DrawSlider",
+                "start": 1076,
+                "end": 1089
+            },
+            {
+                "name": "M_DrawCheckbox",
+                "start": 1091,
+                "end": 1103
+            },
+            {
+                "name": "M_Options_Draw",
+                "start": 1105,
+                "end": 1188
+            },
+            {
+                "name": "M_Options_Key",
+                "start": 1191,
+                "end": 1257
+            },
+            {
+                "name": "M_Menu_Keys_f",
+                "start": 1293,
+                "end": 1299
+            },
+            {
+                "name": "M_FindKeysForCommand",
+                "start": 1302,
+                "end": 1326
+            },
+            {
+                "name": "M_UnbindCommand",
+                "start": 1328,
+                "end": 1344
+            },
+            {
+                "name": "M_Keys_Draw",
+                "start": 1348,
+                "end": 1401
+            },
+            {
+                "name": "M_Keys_Key",
+                "start": 1404,
+                "end": 1465
+            },
+            {
+                "name": "M_Menu_Video_f",
+                "start": 1470,
+                "end": 1473
+            },
+            {
+                "name": "M_Video_Draw",
+                "start": 1476,
+                "end": 1479
+            },
+            {
+                "name": "M_Video_Key",
+                "start": 1482,
+                "end": 1485
+            },
+            {
+                "name": "M_Menu_Help_f",
+                "start": 1494,
+                "end": 1501
+            },
+            {
+                "name": "M_Help_Draw",
+                "start": 1505,
+                "end": 1508
+            },
+            {
+                "name": "M_Help_Key",
+                "start": 1511,
+                "end": 1534
+            },
+            {
+                "name": "M_Menu_Quit_f",
+                "start": 1543,
+                "end": 1554
+            },
+            {
+                "name": "M_Quit_Key",
+                "start": 1557,
+                "end": 1588
+            },
+            {
+                "name": "M_Quit_Draw",
+                "start": 1590,
+                "end": 1618
+            },
+            {
+                "name": "M_Menu_LanConfig_f",
+                "start": 1631,
+                "end": 1651
+            },
+            {
+                "name": "M_LanConfig_Draw",
+                "start": 1654,
+                "end": 1710
+            },
+            {
+                "name": "M_LanConfig_Key",
+                "start": 1713,
+                "end": 1824
+            },
+            {
+                "name": "M_Menu_GameOptions_f",
+                "start": 1979,
+                "end": 1989
+            },
+            {
+                "name": "M_GameOptions_Draw",
+                "start": 1996,
+                "end": 2118
+            },
+            {
+                "name": "M_NetStart_Change",
+                "start": 2121,
+                "end": 2214
+            },
+            {
+                "name": "M_GameOptions_Key",
+                "start": 2216,
+                "end": 2275
+            },
+            {
+                "name": "M_Menu_Search_f",
+                "start": 2283,
+                "end": 2294
+            },
+            {
+                "name": "M_Search_Draw",
+                "start": 2297,
+                "end": 2331
+            },
+            {
+                "name": "M_Search_Key",
+                "start": 2334,
+                "end": 2336
+            },
+            {
+                "name": "M_Menu_ServerList_f",
+                "start": 2344,
+                "end": 2354
+            },
+            {
+                "name": "M_ServerList_Draw",
+                "start": 2357,
+                "end": 2376
+            },
+            {
+                "name": "M_ServerList_Key",
+                "start": 2379,
+                "end": 2422
+            },
+            {
+                "name": "M_Init",
+                "start": 2428,
+                "end": 2443
+            },
+            {
+                "name": "M_Draw",
+                "start": 2446,
+                "end": 2551
+            },
+            {
+                "name": "M_Keydown",
+                "start": 2554,
+                "end": 2625
+            },
+            {
+                "name": "M_ConfigureNetSubsystem",
+                "start": 2628,
+                "end": 2635
+            }
+        ],
+        "Quake/gl_mesh.c": [
+            {
+                "name": "StripLength",
+                "start": 62,
+                "end": 124
+            },
+            {
+                "name": "FanLength",
+                "start": 131,
+                "end": 191
+            },
+            {
+                "name": "BuildTris",
+                "start": 202,
+                "end": 289
+            },
+            {
+                "name": "GL_MakeAliasModelDisplayLists",
+                "start": 297,
+                "end": 350
+            }
+        ],
+        "Quake/gl_sky.c": [
+            {
+                "name": "Sky_LoadTexture",
+                "start": 92,
+                "end": 141
+            },
+            {
+                "name": "Sky_LoadSkyBox",
+                "start": 149,
+                "end": 206
+            },
+            {
+                "name": "Sky_NewMap",
+                "start": 213,
+                "end": 267
+            },
+            {
+                "name": "Sky_SkyCommand_f",
+                "start": 274,
+                "end": 287
+            },
+            {
+                "name": "Sky_Init",
+                "start": 294,
+                "end": 307
+            },
+            {
+                "name": "Sky_ProjectPoly",
+                "start": 322,
+                "end": 390
+            },
+            {
+                "name": "Sky_ClipPoly",
+                "start": 397,
+                "end": 486
+            },
+            {
+                "name": "Sky_ProcessPoly",
+                "start": 493,
+                "end": 509
+            },
+            {
+                "name": "Sky_ProcessTextureChains",
+                "start": 516,
+                "end": 536
+            },
+            {
+                "name": "Sky_ProcessEntities",
+                "start": 543,
+                "end": 619
+            },
+            {
+                "name": "Sky_EmitSkyBoxVertex",
+                "start": 632,
+                "end": 665
+            },
+            {
+                "name": "Sky_DrawSkyBox",
+                "start": 674,
+                "end": 724
+            },
+            {
+                "name": "Sky_SetBoxVert",
+                "start": 737,
+                "end": 755
+            },
+            {
+                "name": "Sky_GetTexCoord",
+                "start": 762,
+                "end": 779
+            },
+            {
+                "name": "Sky_DrawFaceQuad",
+                "start": 786,
+                "end": 872
+            },
+            {
+                "name": "Sky_DrawFace",
+                "start": 880,
+                "end": 930
+            },
+            {
+                "name": "Sky_DrawSkyLayers",
+                "start": 939,
+                "end": 952
+            },
+            {
+                "name": "Sky_DrawSky",
+                "start": 961,
+                "end": 1010
+            }
+        ],
+        "Quake/cfgfile.c": [
+            {
+                "name": "CFG_ReadCvars",
+                "start": 42,
+                "end": 114
+            },
+            {
+                "name": "CFG_ReadCvarOverrides",
+                "start": 125,
+                "end": 145
+            },
+            {
+                "name": "CFG_CloseConfig",
+                "start": 147,
+                "end": 155
+            },
+            {
+                "name": "CFG_OpenConfig",
+                "start": 157,
+                "end": 178
+            }
+        ],
+        "Quake/host.c": [
+            {
+                "name": "Max_Edicts_f",
+                "start": 93,
+                "end": 98
+            },
+            {
+                "name": "Host_EndGame",
+                "start": 105,
+                "end": 127
+            },
+            {
+                "name": "Host_Error",
+                "start": 136,
+                "end": 166
+            },
+            {
+                "name": "Host_FindMaxClients",
+                "start": 173,
+                "end": 217
+            },
+            {
+                "name": "Host_Version_f",
+                "start": 219,
+                "end": 224
+            },
+            {
+                "name": "Host_Callback_Notify",
+                "start": 227,
+                "end": 231
+            },
+            {
+                "name": "Host_InitLocal",
+                "start": 238,
+                "end": 276
+            },
+            {
+                "name": "Host_WriteConfiguration",
+                "start": 286,
+                "end": 330
+            },
+            {
+                "name": "SV_ClientPrintf",
+                "start": 341,
+                "end": 352
+            },
+            {
+                "name": "SV_BroadcastPrintf",
+                "start": 361,
+                "end": 379
+            },
+            {
+                "name": "Host_ClientCommands",
+                "start": 388,
+                "end": 399
+            },
+            {
+                "name": "SV_DropClient",
+                "start": 409,
+                "end": 462
+            },
+            {
+                "name": "Host_ShutdownServer",
+                "start": 471,
+                "end": 532
+            },
+            {
+                "name": "Host_ClearMemory",
+                "start": 543,
+                "end": 553
+            },
+            {
+                "name": "Host_FilterTime",
+                "start": 569,
+                "end": 594
+            },
+            {
+                "name": "Host_GetConsoleCommands",
+                "start": 603,
+                "end": 617
+            },
+            {
+                "name": "Host_ServerFrame",
+                "start": 624,
+                "end": 664
+            },
+            {
+                "name": "_Host_Frame",
+                "start": 673,
+                "end": 768
+            },
+            {
+                "name": "Host_Frame",
+                "start": 770,
+                "end": 804
+            },
+            {
+                "name": "Host_Init",
+                "start": 811,
+                "end": 894
+            },
+            {
+                "name": "Host_Shutdown",
+                "start": 905,
+                "end": 935
+            }
+        ],
+        "Quake/sv_phys.c": [
+            {
+                "name": "SV_CheckAllEnts",
+                "start": 60,
+                "end": 79
+            },
+            {
+                "name": "SV_CheckVelocity",
+                "start": 86,
+                "end": 110
+            },
+            {
+                "name": "SV_RunThink",
+                "start": 122,
+                "end": 158
+            },
+            {
+                "name": "SV_Impact",
+                "start": 167,
+                "end": 191
+            },
+            {
+                "name": "ClipVelocity",
+                "start": 204,
+                "end": 227
+            },
+            {
+                "name": "SV_FlyMove",
+                "start": 243,
+                "end": 376
+            },
+            {
+                "name": "SV_AddGravity",
+                "start": 385,
+                "end": 397
+            },
+            {
+                "name": "SV_PushEntity",
+                "start": 415,
+                "end": 437
+            },
+            {
+                "name": "SV_PushMove",
+                "start": 445,
+                "end": 568
+            },
+            {
+                "name": "SV_Physics_Pusher",
+                "start": 576,
+                "end": 610
+            },
+            {
+                "name": "SV_CheckStuck",
+                "start": 629,
+                "end": 667
+            },
+            {
+                "name": "SV_CheckWater",
+                "start": 675,
+                "end": 704
+            },
+            {
+                "name": "SV_WallFriction",
+                "start": 712,
+                "end": 732
+            },
+            {
+                "name": "SV_TryUnstick",
+                "start": 746,
+                "end": 793
+            },
+            {
+                "name": "SV_WalkMove",
+                "start": 803,
+                "end": 894
+            },
+            {
+                "name": "SV_Physics_Client",
+                "start": 904,
+                "end": 969
+            },
+            {
+                "name": "SV_Physics_None",
+                "start": 980,
+                "end": 984
+            },
+            {
+                "name": "SV_Physics_Noclip",
+                "start": 993,
+                "end": 1003
+            },
+            {
+                "name": "SV_CheckWaterTransition",
+                "start": 1019,
+                "end": 1050
+            },
+            {
+                "name": "SV_Physics_Toss",
+                "start": 1059,
+                "end": 1112
+            },
+            {
+                "name": "SV_Physics_Step",
+                "start": 1133,
+                "end": 1161
+            },
+            {
+                "name": "SV_Physics",
+                "start": 1172,
+                "end": 1231
+            }
+        ],
+        "Quake/r_alias.c": [
+            {
+                "name": "GL_DrawAliasFrame",
+                "start": 72,
+                "end": 176
+            },
+            {
+                "name": "R_SetupAliasFrame",
+                "start": 183,
+                "end": 245
+            },
+            {
+                "name": "R_SetupEntityTransform",
+                "start": 252,
+                "end": 307
+            },
+            {
+                "name": "R_SetupAliasLighting",
+                "start": 314,
+                "end": 377
+            },
+            {
+                "name": "R_DrawAliasModel",
+                "start": 384,
+                "end": 636
+            },
+            {
+                "name": "GL_DrawAliasShadow",
+                "start": 652,
+                "end": 703
+            },
+            {
+                "name": "R_DrawAliasModel_ShowTris",
+                "start": 710,
+                "end": 732
+            }
+        ],
+        "Quake/chase.c": [
+            {
+                "name": "Chase_Init",
+                "start": 35,
+                "end": 41
+            },
+            {
+                "name": "TraceLine",
+                "start": 50,
+                "end": 58
+            },
+            {
+                "name": "Chase_UpdateForClient",
+                "start": 65,
+                "end": 74
+            },
+            {
+                "name": "Chase_UpdateForDrawing",
+                "start": 83,
+                "end": 116
+            }
+        ],
+        "Quake/sv_user.c": [
+            {
+                "name": "SV_SetIdealPitch",
+                "start": 54,
+                "end": 114
+            },
+            {
+                "name": "SV_UserFriction",
+                "start": 123,
+                "end": 161
+            },
+            {
+                "name": "SV_Accelerate",
+                "start": 170,
+                "end": 185
+            },
+            {
+                "name": "SV_AirAccelerate",
+                "start": 187,
+                "end": 206
+            },
+            {
+                "name": "DropPunchAngle",
+                "start": 209,
+                "end": 219
+            },
+            {
+                "name": "SV_WaterMove",
+                "start": 227,
+                "end": 286
+            },
+            {
+                "name": "SV_WaterJump",
+                "start": 288,
+                "end": 298
+            },
+            {
+                "name": "SV_NoclipMove",
+                "start": 307,
+                "end": 321
+            },
+            {
+                "name": "SV_AirMove",
+                "start": 328,
+                "end": 372
+            },
+            {
+                "name": "SV_ClientThink",
+                "start": 382,
+                "end": 432
+            },
+            {
+                "name": "SV_ReadClientMove",
+                "start": 440,
+                "end": 475
+            },
+            {
+                "name": "SV_ReadClientMessage",
+                "start": 484,
+                "end": 590
+            },
+            {
+                "name": "SV_RunClients",
+                "start": 598,
+                "end": 626
+            }
+        ],
+        "Quake/sys_sdl_win.c": [
+            {
+                "name": "findhandle",
+                "start": 52,
+                "end": 63
+            },
+            {
+                "name": "Sys_filelength",
+                "start": 65,
+                "end": 75
+            },
+            {
+                "name": "Sys_FileOpenRead",
+                "start": 77,
+                "end": 98
+            },
+            {
+                "name": "Sys_FileOpenWrite",
+                "start": 100,
+                "end": 113
+            },
+            {
+                "name": "Sys_FileClose",
+                "start": 115,
+                "end": 119
+            },
+            {
+                "name": "Sys_FileSeek",
+                "start": 121,
+                "end": 124
+            },
+            {
+                "name": "Sys_FileRead",
+                "start": 126,
+                "end": 129
+            },
+            {
+                "name": "Sys_FileWrite",
+                "start": 131,
+                "end": 134
+            },
+            {
+                "name": "Sys_FileTime",
+                "start": 136,
+                "end": 149
+            },
+            {
+                "name": "Sys_Init",
+                "start": 151,
+                "end": 199
+            },
+            {
+                "name": "Sys_mkdir",
+                "start": 201,
+                "end": 207
+            },
+            {
+                "name": "Sys_Error",
+                "start": 212,
+                "end": 245
+            },
+            {
+                "name": "Sys_Printf",
+                "start": 247,
+                "end": 267
+            },
+            {
+                "name": "Sys_Quit",
+                "start": 269,
+                "end": 277
+            },
+            {
+                "name": "Sys_DoubleTime",
+                "start": 279,
+                "end": 282
+            },
+            {
+                "name": "Sys_ConsoleInput",
+                "start": 284,
+                "end": 348
+            },
+            {
+                "name": "Sys_Sleep",
+                "start": 350,
+                "end": 354
+            },
+            {
+                "name": "Sys_SendKeyEvents",
+                "start": 356,
+                "end": 359
+            },
+            {
+                "name": "Sys_LowFPPrecision",
+                "start": 361,
+                "end": 363
+            },
+            {
+                "name": "Sys_HighFPPrecision",
+                "start": 365,
+                "end": 367
+            },
+            {
+                "name": "Sys_SetFPCW",
+                "start": 369,
+                "end": 371
+            }
+        ],
+        "Quake/zone.c": [
+            {
+                "name": "Z_Free",
+                "start": 73,
+                "end": 108
+            },
+            {
+                "name": "Z_TagMalloc",
+                "start": 111,
+                "end": 167
+            },
+            {
+                "name": "Z_CheckHeap",
+                "start": 174,
+                "end": 189
+            },
+            {
+                "name": "Z_Malloc",
+                "start": 197,
+                "end": 208
+            },
+            {
+                "name": "Z_Realloc",
+                "start": 215,
+                "end": 245
+            },
+            {
+                "name": "Z_Strdup",
+                "start": 247,
+                "end": 253
+            },
+            {
+                "name": "Z_Print",
+                "start": 261,
+                "end": 281
+            },
+            {
+                "name": "Hunk_Check",
+                "start": 312,
+                "end": 324
+            },
+            {
+                "name": "Hunk_Print",
+                "start": 334,
+                "end": 410
+            },
+            {
+                "name": "Hunk_Print_f",
+                "start": 417,
+                "end": 420
+            },
+            {
+                "name": "Hunk_AllocName",
+                "start": 427,
+                "end": 455
+            },
+            {
+                "name": "Hunk_Alloc",
+                "start": 462,
+                "end": 465
+            },
+            {
+                "name": "Hunk_LowMark",
+                "start": 467,
+                "end": 470
+            },
+            {
+                "name": "Hunk_FreeToLowMark",
+                "start": 472,
+                "end": 478
+            },
+            {
+                "name": "Hunk_HighMark",
+                "start": 480,
+                "end": 489
+            },
+            {
+                "name": "Hunk_FreeToHighMark",
+                "start": 491,
+                "end": 502
+            },
+            {
+                "name": "Hunk_HighAllocName",
+                "start": 510,
+                "end": 546
+            },
+            {
+                "name": "Hunk_TempAlloc",
+                "start": 556,
+                "end": 575
+            },
+            {
+                "name": "Hunk_Strdup",
+                "start": 577,
+                "end": 583
+            },
+            {
+                "name": "Cache_Move",
+                "start": 612,
+                "end": 634
+            },
+            {
+                "name": "Cache_FreeLow",
+                "start": 643,
+                "end": 656
+            },
+            {
+                "name": "Cache_FreeHigh",
+                "start": 665,
+                "end": 685
+            },
+            {
+                "name": "Cache_UnlinkLRU",
+                "start": 687,
+                "end": 696
+            },
+            {
+                "name": "Cache_MakeLRU",
+                "start": 698,
+                "end": 707
+            },
+            {
+                "name": "Cache_TryAlloc",
+                "start": 717,
+                "end": 787
+            },
+            {
+                "name": "Cache_Flush",
+                "start": 796,
+                "end": 800
+            },
+            {
+                "name": "Cache_Print",
+                "start": 809,
+                "end": 817
+            },
+            {
+                "name": "Cache_Report",
+                "start": 825,
+                "end": 828
+            },
+            {
+                "name": "Cache_Init",
+                "start": 836,
+                "end": 842
+            },
+            {
+                "name": "Cache_Free",
+                "start": 851,
+                "end": 873
+            },
+            {
+                "name": "Cache_Check",
+                "start": 882,
+                "end": 896
+            },
+            {
+                "name": "Cache_Alloc",
+                "start": 904,
+                "end": 936
+            },
+            {
+                "name": "Memory_InitZone",
+                "start": 941,
+                "end": 958
+            },
+            {
+                "name": "Memory_Init",
+                "start": 965,
+                "end": 988
+            }
+        ],
+        "Quake/sv_move.c": [
+            {
+                "name": "SV_CheckBottom",
+                "start": 38,
+                "end": 98
+            },
+            {
+                "name": "SV_movestep",
+                "start": 111,
+                "end": 219
+            },
+            {
+                "name": "SV_StepDirection",
+                "start": 234,
+                "end": 261
+            },
+            {
+                "name": "SV_FixCheckBottom",
+                "start": 269,
+                "end": 274
+            },
+            {
+                "name": "SV_NewChaseDir",
+                "start": 285,
+                "end": 366
+            },
+            {
+                "name": "SV_CloseEnough",
+                "start": 374,
+                "end": 386
+            },
+            {
+                "name": "SV_MoveToGoal",
+                "start": 394,
+                "end": 419
+            }
+        ],
+        "Quake/bgmusic.c": [
+            {
+                "name": "BGM_Play_f",
+                "start": 71,
+                "end": 82
+            },
+            {
+                "name": "BGM_Pause_f",
+                "start": 84,
+                "end": 87
+            },
+            {
+                "name": "BGM_Resume_f",
+                "start": 89,
+                "end": 92
+            },
+            {
+                "name": "BGM_Loop_f",
+                "start": 94,
+                "end": 112
+            },
+            {
+                "name": "BGM_Stop_f",
+                "start": 114,
+                "end": 117
+            },
+            {
+                "name": "BGM_Init",
+                "start": 119,
+                "end": 167
+            },
+            {
+                "name": "BGM_Shutdown",
+                "start": 169,
+                "end": 175
+            },
+            {
+                "name": "BGM_Play_noext",
+                "start": 177,
+                "end": 215
+            },
+            {
+                "name": "BGM_Play",
+                "start": 217,
+                "end": 271
+            },
+            {
+                "name": "BGM_PlayCDtrack",
+                "start": 273,
+                "end": 330
+            },
+            {
+                "name": "BGM_Stop",
+                "start": 332,
+                "end": 341
+            },
+            {
+                "name": "BGM_Pause",
+                "start": 343,
+                "end": 350
+            },
+            {
+                "name": "BGM_Resume",
+                "start": 352,
+                "end": 359
+            },
+            {
+                "name": "BGM_UpdateStream",
+                "start": 361,
+                "end": 436
+            },
+            {
+                "name": "BGM_Update",
+                "start": 438,
+                "end": 450
+            }
+        ],
+        "Quake/net_udp.c": [
+            {
+                "name": "UDP_Init",
+                "start": 40,
+                "end": 98
+            },
+            {
+                "name": "UDP_Shutdown",
+                "start": 102,
+                "end": 106
+            },
+            {
+                "name": "UDP_Listen",
+                "start": 110,
+                "end": 127
+            },
+            {
+                "name": "UDP_OpenSocket",
+                "start": 131,
+                "end": 160
+            },
+            {
+                "name": "UDP_CloseSocket",
+                "start": 164,
+                "end": 169
+            },
+            {
+                "name": "PartialIPAddress",
+                "start": 181,
+                "end": 225
+            },
+            {
+                "name": "UDP_Connect",
+                "start": 229,
+                "end": 232
+            },
+            {
+                "name": "UDP_CheckNewConnections",
+                "start": 236,
+                "end": 256
+            },
+            {
+                "name": "UDP_Read",
+                "start": 260,
+                "end": 274
+            },
+            {
+                "name": "UDP_MakeSocketBroadcastCapable",
+                "start": 278,
+                "end": 293
+            },
+            {
+                "name": "UDP_Broadcast",
+                "start": 297,
+                "end": 314
+            },
+            {
+                "name": "UDP_Write",
+                "start": 318,
+                "end": 332
+            },
+            {
+                "name": "UDP_AddrToString",
+                "start": 336,
+                "end": 346
+            },
+            {
+                "name": "UDP_StringToAddr",
+                "start": 350,
+                "end": 361
+            },
+            {
+                "name": "UDP_GetSocketAddr",
+                "start": 365,
+                "end": 379
+            },
+            {
+                "name": "UDP_GetNameFromAddr",
+                "start": 383,
+                "end": 397
+            },
+            {
+                "name": "UDP_GetAddrFromName",
+                "start": 401,
+                "end": 418
+            },
+            {
+                "name": "UDP_AddrCompare",
+                "start": 422,
+                "end": 436
+            },
+            {
+                "name": "UDP_GetSocketPort",
+                "start": 440,
+                "end": 443
+            },
+            {
+                "name": "UDP_SetSocketPort",
+                "start": 446,
+                "end": 450
+            }
+        ],
+        "Quake/sv_main.c": [
+            {
+                "name": "SV_Protocol_f",
+                "start": 41,
+                "end": 65
+            },
+            {
+                "name": "SV_Init",
+                "start": 72,
+                "end": 108
+            },
+            {
+                "name": "SV_StartParticle",
+                "start": 125,
+                "end": 146
+            },
+            {
+                "name": "SV_StartSound",
+                "start": 163,
+                "end": 242
+            },
+            {
+                "name": "SV_SendServerinfo",
+                "start": 260,
+                "end": 307
+            },
+            {
+                "name": "SV_ConnectClient",
+                "start": 317,
+                "end": 361
+            },
+            {
+                "name": "SV_CheckForNewClients",
+                "start": 370,
+                "end": 398
+            },
+            {
+                "name": "SV_ClearDatagram",
+                "start": 416,
+                "end": 419
+            },
+            {
+                "name": "SV_AddToFatPVS",
+                "start": 435,
+                "end": 468
+            },
+            {
+                "name": "SV_FatPVS",
+                "start": 478,
+                "end": 484
+            },
+            {
+                "name": "SV_VisibleToClient",
+                "start": 493,
+                "end": 507
+            },
+            {
+                "name": "SV_WriteEntitiesToClient",
+                "start": 517,
+                "end": 700
+            },
+            {
+                "name": "SV_CleanupEnts",
+                "start": 708,
+                "end": 719
+            },
+            {
+                "name": "SV_WriteClientdataToMessage",
+                "start": 727,
+                "end": 901
+            },
+            {
+                "name": "SV_SendClientDatagram",
+                "start": 908,
+                "end": 942
+            },
+            {
+                "name": "SV_UpdateToReliableMessages",
+                "start": 949,
+                "end": 980
+            },
+            {
+                "name": "SV_SendNop",
+                "start": 991,
+                "end": 1005
+            },
+            {
+                "name": "SV_SendClientMessages",
+                "start": 1012,
+                "end": 1080
+            },
+            {
+                "name": "SV_ModelIndex",
+                "start": 1097,
+                "end": 1110
+            },
+            {
+                "name": "SV_CreateBaseline",
+                "start": 1117,
+                "end": 1214
+            },
+            {
+                "name": "SV_SendReconnect",
+                "start": 1224,
+                "end": 1239
+            },
+            {
+                "name": "SV_SaveSpawnparms",
+                "start": 1250,
+                "end": 1267
+            },
+            {
+                "name": "SV_SpawnServer",
+                "start": 1278,
+                "end": 1428
+            }
+        ],
+        "Quake/pr_edict.c": [
+            {
+                "name": "ED_ClearEdict",
+                "start": 92,
+                "end": 96
+            },
+            {
+                "name": "ED_Alloc",
+                "start": 109,
+                "end": 134
+            },
+            {
+                "name": "ED_Free",
+                "start": 144,
+                "end": 162
+            },
+            {
+                "name": "ED_GlobalAtOfs",
+                "start": 171,
+                "end": 183
+            },
+            {
+                "name": "ED_FieldAtOfs",
+                "start": 190,
+                "end": 202
+            },
+            {
+                "name": "ED_FindField",
+                "start": 209,
+                "end": 221
+            },
+            {
+                "name": "ED_FindGlobal",
+                "start": 229,
+                "end": 241
+            },
+            {
+                "name": "ED_FindFunction",
+                "start": 249,
+                "end": 261
+            },
+            {
+                "name": "GetEdictFieldValue",
+                "start": 268,
+                "end": 297
+            },
+            {
+                "name": "PR_ValueString",
+                "start": 308,
+                "end": 350
+            },
+            {
+                "name": "PR_UglyValueString",
+                "start": 361,
+                "end": 400
+            },
+            {
+                "name": "PR_GlobalString",
+                "start": 410,
+                "end": 434
+            },
+            {
+                "name": "PR_GlobalStringNoContents",
+                "start": 436,
+                "end": 454
+            },
+            {
+                "name": "ED_Print",
+                "start": 464,
+                "end": 506
+            },
+            {
+                "name": "ED_Write",
+                "start": 515,
+                "end": 561
+            },
+            {
+                "name": "ED_PrintNum",
+                "start": 563,
+                "end": 566
+            },
+            {
+                "name": "ED_PrintEdicts",
+                "start": 575,
+                "end": 585
+            },
+            {
+                "name": "ED_PrintEdict_f",
+                "start": 594,
+                "end": 608
+            },
+            {
+                "name": "ED_Count",
+                "start": 617,
+                "end": 645
+            },
+            {
+                "name": "ED_WriteGlobals",
+                "start": 662,
+                "end": 686
+            },
+            {
+                "name": "ED_ParseGlobals",
+                "start": 693,
+                "end": 727
+            },
+            {
+                "name": "ED_NewString",
+                "start": 737,
+                "end": 761
+            },
+            {
+                "name": "ED_ParseEpair",
+                "start": 772,
+                "end": 837
+            },
+            {
+                "name": "ED_ParseEdict",
+                "start": 848,
+                "end": 939
+            },
+            {
+                "name": "ED_LoadFromFile",
+                "start": 957,
+                "end": 1027
+            },
+            {
+                "name": "PR_LoadProgs",
+                "start": 1035,
+                "end": 1134
+            },
+            {
+                "name": "PR_Init",
+                "start": 1142,
+                "end": 1159
+            },
+            {
+                "name": "EDICT_NUM",
+                "start": 1162,
+                "end": 1167
+            },
+            {
+                "name": "NUM_FOR_EDICT",
+                "start": 1169,
+                "end": 1179
+            },
+            {
+                "name": "PR_AllocStringSlots",
+                "start": 1186,
+                "end": 1191
+            },
+            {
+                "name": "PR_GetString",
+                "start": 1193,
+                "end": 1211
+            },
+            {
+                "name": "PR_SetEngineString",
+                "start": 1213,
+                "end": 1248
+            },
+            {
+                "name": "PR_AllocString",
+                "start": 1250,
+                "end": 1271
+            }
+        ],
+        "Quake/gl_rlight.c": [
+            {
+                "name": "R_AnimateLight",
+                "start": 34,
+                "end": 62
+            },
+            {
+                "name": "AddLightBlend",
+                "start": 72,
+                "end": 83
+            },
+            {
+                "name": "R_RenderDlight",
+                "start": 85,
+                "end": 116
+            },
+            {
+                "name": "R_RenderDlights",
+                "start": 123,
+                "end": 152
+            },
+            {
+                "name": "R_MarkLights",
+                "start": 168,
+                "end": 229
+            },
+            {
+                "name": "R_PushDlights",
+                "start": 236,
+                "end": 254
+            },
+            {
+                "name": "RecursiveLightPoint",
+                "start": 274,
+                "end": 367
+            },
+            {
+                "name": "R_LightPoint",
+                "start": 374,
+                "end": 391
+            }
+        ],
+        "Quake/pr_cmds.c": [
+            {
+                "name": "PR_GetTempString",
+                "start": 29,
+                "end": 32
+            },
+            {
+                "name": "PF_VarString",
+                "start": 49,
+                "end": 69
+            },
+            {
+                "name": "PF_error",
+                "start": 82,
+                "end": 94
+            },
+            {
+                "name": "PF_objerror",
+                "start": 106,
+                "end": 119
+            },
+            {
+                "name": "PF_makevectors",
+                "start": 131,
+                "end": 134
+            },
+            {
+                "name": "PF_setorigin",
+                "start": 150,
+                "end": 159
+            },
+            {
+                "name": "SetMinMaxSize",
+                "start": 162,
+                "end": 234
+            },
+            {
+                "name": "PF_setsize",
+                "start": 245,
+                "end": 254
+            },
+            {
+                "name": "PF_setmodel",
+                "start": 264,
+                "end": 301
+            },
+            {
+                "name": "PF_bprint",
+                "start": 312,
+                "end": 318
+            },
+            {
+                "name": "PF_sprint",
+                "start": 329,
+                "end": 348
+            },
+            {
+                "name": "PF_centerprint",
+                "start": 360,
+                "end": 379
+            },
+            {
+                "name": "PF_normalize",
+                "start": 389,
+                "end": 411
+            },
+            {
+                "name": "PF_vlen",
+                "start": 420,
+                "end": 431
+            },
+            {
+                "name": "PF_vectoyaw",
+                "start": 440,
+                "end": 457
+            },
+            {
+                "name": "PF_vectoangles",
+                "start": 467,
+                "end": 498
+            },
+            {
+                "name": "PF_random",
+                "start": 509,
+                "end": 516
+            },
+            {
+                "name": "PF_particle",
+                "start": 525,
+                "end": 536
+            },
+            {
+                "name": "PF_ambientsound",
+                "start": 545,
+                "end": 603
+            },
+            {
+                "name": "PF_sound",
+                "start": 620,
+                "end": 644
+            },
+            {
+                "name": "PF_break",
+                "start": 653,
+                "end": 658
+            },
+            {
+                "name": "PF_traceline",
+                "start": 671,
+                "end": 710
+            },
+            {
+                "name": "PF_newcheckclient",
+                "start": 732,
+                "end": 780
+            },
+            {
+                "name": "PF_checkclient",
+                "start": 799,
+                "end": 836
+            },
+            {
+                "name": "PF_stuffcmd",
+                "start": 850,
+                "end": 865
+            },
+            {
+                "name": "PF_localcmd",
+                "start": 876,
+                "end": 882
+            },
+            {
+                "name": "PF_cvar",
+                "start": 891,
+                "end": 898
+            },
+            {
+                "name": "PF_cvar_set",
+                "start": 907,
+                "end": 915
+            },
+            {
+                "name": "PF_findradius",
+                "start": 926,
+                "end": 956
+            },
+            {
+                "name": "PF_dprint",
+                "start": 963,
+                "end": 966
+            },
+            {
+                "name": "PF_ftos",
+                "start": 968,
+                "end": 980
+            },
+            {
+                "name": "PF_fabs",
+                "start": 982,
+                "end": 987
+            },
+            {
+                "name": "PF_vtos",
+                "start": 989,
+                "end": 996
+            },
+            {
+                "name": "PF_Spawn",
+                "start": 998,
+                "end": 1005
+            },
+            {
+                "name": "PF_Remove",
+                "start": 1007,
+                "end": 1013
+            },
+            {
+                "name": "PF_Find",
+                "start": 1017,
+                "end": 1046
+            },
+            {
+                "name": "PR_CheckEmptyString",
+                "start": 1048,
+                "end": 1052
+            },
+            {
+                "name": "PF_precache_file",
+                "start": 1054,
+                "end": 1057
+            },
+            {
+                "name": "PF_precache_sound",
+                "start": 1059,
+                "end": 1082
+            },
+            {
+                "name": "PF_precache_model",
+                "start": 1084,
+                "end": 1108
+            },
+            {
+                "name": "PF_coredump",
+                "start": 1111,
+                "end": 1114
+            },
+            {
+                "name": "PF_traceon",
+                "start": 1116,
+                "end": 1119
+            },
+            {
+                "name": "PF_traceoff",
+                "start": 1121,
+                "end": 1124
+            },
+            {
+                "name": "PF_eprint",
+                "start": 1126,
+                "end": 1129
+            },
+            {
+                "name": "PF_walkmove",
+                "start": 1138,
+                "end": 1172
+            },
+            {
+                "name": "PF_droptofloor",
+                "start": 1181,
+                "end": 1204
+            },
+            {
+                "name": "PF_lightstyle",
+                "start": 1213,
+                "end": 1239
+            },
+            {
+                "name": "PF_rint",
+                "start": 1241,
+                "end": 1249
+            },
+            {
+                "name": "PF_floor",
+                "start": 1251,
+                "end": 1254
+            },
+            {
+                "name": "PF_ceil",
+                "start": 1256,
+                "end": 1259
+            },
+            {
+                "name": "PF_checkbottom",
+                "start": 1267,
+                "end": 1274
+            },
+            {
+                "name": "PF_pointcontents",
+                "start": 1281,
+                "end": 1288
+            },
+            {
+                "name": "PF_nextent",
+                "start": 1297,
+                "end": 1318
+            },
+            {
+                "name": "PF_aim",
+                "start": 1329,
+                "end": 1398
+            },
+            {
+                "name": "PF_changeyaw",
+                "start": 1407,
+                "end": 1442
+            },
+            {
+                "name": "WriteDest",
+                "start": 1452,
+                "end": 1483
+            },
+            {
+                "name": "PF_WriteByte",
+                "start": 1485,
+                "end": 1488
+            },
+            {
+                "name": "PF_WriteChar",
+                "start": 1490,
+                "end": 1493
+            },
+            {
+                "name": "PF_WriteShort",
+                "start": 1495,
+                "end": 1498
+            },
+            {
+                "name": "PF_WriteLong",
+                "start": 1500,
+                "end": 1503
+            },
+            {
+                "name": "PF_WriteAngle",
+                "start": 1505,
+                "end": 1508
+            },
+            {
+                "name": "PF_WriteCoord",
+                "start": 1510,
+                "end": 1513
+            },
+            {
+                "name": "PF_WriteString",
+                "start": 1515,
+                "end": 1518
+            },
+            {
+                "name": "PF_WriteEntity",
+                "start": 1520,
+                "end": 1523
+            },
+            {
+                "name": "PF_makestatic",
+                "start": 1527,
+                "end": 1595
+            },
+            {
+                "name": "PF_setspawnparms",
+                "start": 1604,
+                "end": 1620
+            },
+            {
+                "name": "PF_changelevel",
+                "start": 1627,
+                "end": 1638
+            },
+            {
+                "name": "PF_Fixme",
+                "start": 1640,
+                "end": 1643
+            }
+        ],
+        "Quake/view.c": [
+            {
+                "name": "V_CalcRoll",
+                "start": 76,
+                "end": 99
+            },
+            {
+                "name": "V_CalcBob",
+                "start": 108,
+                "end": 132
+            },
+            {
+                "name": "V_StartPitchDrift",
+                "start": 142,
+                "end": 156
+            },
+            {
+                "name": "V_StopPitchDrift",
+                "start": 158,
+                "end": 163
+            },
+            {
+                "name": "V_DriftPitch",
+                "start": 178,
+                "end": 237
+            },
+            {
+                "name": "V_ParseDamage",
+                "start": 261,
+                "end": 324
+            },
+            {
+                "name": "V_cshift_f",
+                "start": 332,
+                "end": 338
+            },
+            {
+                "name": "V_BonusFlash_f",
+                "start": 348,
+                "end": 354
+            },
+            {
+                "name": "V_SetContentsColor",
+                "start": 363,
+                "end": 381
+            },
+            {
+                "name": "V_CalcPowerupCshift",
+                "start": 388,
+                "end": 420
+            },
+            {
+                "name": "V_CalcBlend",
+                "start": 427,
+                "end": 465
+            },
+            {
+                "name": "V_UpdateBlend",
+                "start": 472,
+                "end": 508
+            },
+            {
+                "name": "V_PolyBlend",
+                "start": 515,
+                "end": 546
+            },
+            {
+                "name": "angledelta",
+                "start": 556,
+                "end": 562
+            },
+            {
+                "name": "CalcGunAngle",
+                "start": 569,
+                "end": 620
+            },
+            {
+                "name": "V_BoundOffsets",
+                "start": 627,
+                "end": 648
+            },
+            {
+                "name": "V_AddIdle",
+                "start": 657,
+                "end": 662
+            },
+            {
+                "name": "V_CalcViewRoll",
+                "start": 672,
+                "end": 692
+            },
+            {
+                "name": "V_CalcIntermissionRefdef",
+                "start": 700,
+                "end": 719
+            },
+            {
+                "name": "V_CalcRefdef",
+                "start": 726,
+                "end": 843
+            },
+            {
+                "name": "V_RenderView",
+                "start": 855,
+                "end": 870
+            },
+            {
+                "name": "V_Init",
+                "start": 885,
+                "end": 918
+            }
+        ],
+        "Quake/cmd.c": [
+            {
+                "name": "Cmd_Wait_f",
+                "start": 54,
+                "end": 57
+            },
+            {
+                "name": "Cbuf_Init",
+                "start": 74,
+                "end": 77
+            },
+            {
+                "name": "Cbuf_AddText",
+                "start": 87,
+                "end": 100
+            },
+            {
+                "name": "Cbuf_InsertText",
+                "start": 112,
+                "end": 137
+            },
+            {
+                "name": "Cbuf_Execute",
+                "start": 144,
+                "end": 194
+            },
+            {
+                "name": "Cmd_StuffCmds_f",
+                "start": 214,
+                "end": 242
+            },
+            {
+                "name": "Cmd_Exec_f",
+                "start": 250,
+                "end": 272
+            },
+            {
+                "name": "Cmd_Echo_f",
+                "start": 282,
+                "end": 289
+            },
+            {
+                "name": "Cmd_Alias_f",
+                "start": 298,
+                "end": 366
+            },
+            {
+                "name": "Cmd_Unalias_f",
+                "start": 373,
+                "end": 403
+            },
+            {
+                "name": "Cmd_Unaliasall_f",
+                "start": 410,
+                "end": 421
+            },
+            {
+                "name": "Cmd_List_f",
+                "start": 458,
+                "end": 492
+            },
+            {
+                "name": "Cmd_Init",
+                "start": 499,
+                "end": 511
+            },
+            {
+                "name": "Cmd_Argc",
+                "start": 518,
+                "end": 521
+            },
+            {
+                "name": "Cmd_Argv",
+                "start": 528,
+                "end": 533
+            },
+            {
+                "name": "Cmd_Args",
+                "start": 540,
+                "end": 543
+            },
+            {
+                "name": "Cmd_TokenizeString",
+                "start": 553,
+                "end": 595
+            },
+            {
+                "name": "Cmd_AddCommand",
+                "start": 602,
+                "end": 650
+            },
+            {
+                "name": "Cmd_Exists",
+                "start": 657,
+                "end": 668
+            },
+            {
+                "name": "Cmd_CompleteCommand",
+                "start": 677,
+                "end": 693
+            },
+            {
+                "name": "Cmd_ExecuteString",
+                "start": 703,
+                "end": 739
+            },
+            {
+                "name": "Cmd_ForwardToServer",
+                "start": 749,
+                "end": 770
+            },
+            {
+                "name": "Cmd_CheckParm",
+                "start": 782,
+                "end": 794
+            }
+        ],
+        "Quake/strlcat.c": [
+            {
+                "name": "q_strlcat",
+                "start": 32,
+                "end": 58
+            }
+        ],
+        "Quake/net_dgrm.c": [
+            {
+                "name": "StrAddr",
+                "start": 62,
+                "end": 71
+            },
+            {
+                "name": "NET_Ban_f",
+                "start": 79,
+                "end": 132
+            },
+            {
+                "name": "Datagram_SendMessage",
+                "start": 136,
+                "end": 180
+            },
+            {
+                "name": "SendMessageNext",
+                "start": 183,
+                "end": 213
+            },
+            {
+                "name": "ReSendMessage",
+                "start": 216,
+                "end": 246
+            },
+            {
+                "name": "Datagram_CanSendMessage",
+                "start": 249,
+                "end": 255
+            },
+            {
+                "name": "Datagram_CanSendUnreliableMessage",
+                "start": 258,
+                "end": 261
+            },
+            {
+                "name": "Datagram_SendUnreliableMessage",
+                "start": 264,
+                "end": 287
+            },
+            {
+                "name": "Datagram_GetMessage",
+                "start": 290,
+                "end": 437
+            },
+            {
+                "name": "PrintStats",
+                "start": 440,
+                "end": 446
+            },
+            {
+                "name": "NET_Stats_f",
+                "start": 448,
+                "end": 494
+            },
+            {
+                "name": "Strip_Port",
+                "start": 498,
+                "end": 518
+            },
+            {
+                "name": "Test_Poll",
+                "start": 529,
+                "end": 583
+            },
+            {
+                "name": "Test_f",
+                "start": 585,
+                "end": 652
+            },
+            {
+                "name": "Test2_Poll",
+                "start": 662,
+                "end": 718
+            },
+            {
+                "name": "Test2_f",
+                "start": 720,
+                "end": 782
+            },
+            {
+                "name": "Datagram_Init",
+                "start": 785,
+                "end": 822
+            },
+            {
+                "name": "Datagram_Shutdown",
+                "start": 825,
+                "end": 840
+            },
+            {
+                "name": "Datagram_Close",
+                "start": 843,
+                "end": 846
+            },
+            {
+                "name": "Datagram_Listen",
+                "start": 849,
+                "end": 858
+            },
+            {
+                "name": "_Datagram_CheckNewConnections",
+                "start": 861,
+                "end": 1105
+            },
+            {
+                "name": "Datagram_CheckNewConnections",
+                "start": 1107,
+                "end": 1120
+            },
+            {
+                "name": "_Datagram_SearchForHosts",
+                "start": 1123,
+                "end": 1223
+            },
+            {
+                "name": "Datagram_SearchForHosts",
+                "start": 1225,
+                "end": 1234
+            },
+            {
+                "name": "_Datagram_Connect",
+                "start": 1237,
+                "end": 1408
+            },
+            {
+                "name": "Datagram_Connect",
+                "start": 1410,
+                "end": 1424
+            }
+        ],
+        "Quake/net_sdlnet.c": [
+            {
+                "name": "socket_id",
+                "start": 47,
+                "end": 69
+            },
+            {
+                "name": "_AddrToString",
+                "start": 71,
+                "end": 78
+            },
+            {
+                "name": "_IPAddrToString",
+                "start": 80,
+                "end": 89
+            },
+            {
+                "name": "SDLN_Init",
+                "start": 91,
+                "end": 151
+            },
+            {
+                "name": "SDLN_Shutdown",
+                "start": 153,
+                "end": 157
+            },
+            {
+                "name": "SDLN_GetLocalAddress",
+                "start": 159,
+                "end": 165
+            },
+            {
+                "name": "SDLN_Listen",
+                "start": 167,
+                "end": 192
+            },
+            {
+                "name": "SDLN_OpenSocket",
+                "start": 194,
+                "end": 213
+            },
+            {
+                "name": "SDLN_CloseSocket",
+                "start": 215,
+                "end": 231
+            },
+            {
+                "name": "SDLN_Connect",
+                "start": 233,
+                "end": 236
+            },
+            {
+                "name": "SDLN_CheckNewConnections",
+                "start": 238,
+                "end": 247
+            },
+            {
+                "name": "init_packet",
+                "start": 249,
+                "end": 258
+            },
+            {
+                "name": "SDLN_Read",
+                "start": 260,
+                "end": 287
+            },
+            {
+                "name": "SDLN_Write",
+                "start": 289,
+                "end": 313
+            },
+            {
+                "name": "SDLN_Broadcast",
+                "start": 315,
+                "end": 327
+            },
+            {
+                "name": "SDLN_AddrToString",
+                "start": 329,
+                "end": 341
+            },
+            {
+                "name": "SDLN_StringToAddr",
+                "start": 343,
+                "end": 359
+            },
+            {
+                "name": "SDLN_GetSocketAddr",
+                "start": 361,
+                "end": 392
+            },
+            {
+                "name": "SDLN_GetNameFromAddr",
+                "start": 394,
+                "end": 410
+            },
+            {
+                "name": "PartialIPAddress",
+                "start": 421,
+                "end": 475
+            },
+            {
+                "name": "SDLN_GetAddrFromName",
+                "start": 477,
+                "end": 490
+            },
+            {
+                "name": "SDLN_AddrCompare",
+                "start": 492,
+                "end": 510
+            },
+            {
+                "name": "SDLN_GetSocketPort",
+                "start": 512,
+                "end": 518
+            },
+            {
+                "name": "SDLN_SetSocketPort",
+                "start": 520,
+                "end": 528
+            }
+        ],
+        "Quake/pl_win.c": [
+            {
+                "name": "PL_SetWindowIcon",
+                "start": 35,
+                "end": 58
+            },
+            {
+                "name": "PL_VID_Shutdown",
+                "start": 60,
+                "end": 63
+            },
+            {
+                "name": "PL_GetClipboardData",
+                "start": 66,
+                "end": 94
+            },
+            {
+                "name": "PL_ErrorDialog",
+                "start": 96,
+                "end": 100
+            }
+        ],
+        "Quake/cd_null.c": [
+            {
+                "name": "CDAudio_Play",
+                "start": 28,
+                "end": 31
+            },
+            {
+                "name": "CDAudio_Stop",
+                "start": 33,
+                "end": 35
+            },
+            {
+                "name": "CDAudio_Pause",
+                "start": 37,
+                "end": 39
+            },
+            {
+                "name": "CDAudio_Resume",
+                "start": 41,
+                "end": 43
+            },
+            {
+                "name": "CDAudio_Update",
+                "start": 45,
+                "end": 47
+            },
+            {
+                "name": "CDAudio_Init",
+                "start": 49,
+                "end": 53
+            },
+            {
+                "name": "CDAudio_Shutdown",
+                "start": 55,
+                "end": 57
+            }
+        ],
+        "Quake/gl_screen.c": [
+            {
+                "name": "SCR_CenterPrint",
+                "start": 146,
+                "end": 161
+            },
+            {
+                "name": "SCR_DrawCenterString",
+                "start": 163,
+                "end": 210
+            },
+            {
+                "name": "SCR_CheckDrawCenterString",
+                "start": 212,
+                "end": 227
+            },
+            {
+                "name": "AdaptFovx",
+                "start": 238,
+                "end": 252
+            },
+            {
+                "name": "CalcFovy",
+                "start": 259,
+                "end": 270
+            },
+            {
+                "name": "SCR_CalcRefdef",
+                "start": 280,
+                "end": 328
+            },
+            {
+                "name": "SCR_SizeUp_f",
+                "start": 338,
+                "end": 341
+            },
+            {
+                "name": "SCR_SizeDown_f",
+                "start": 351,
+                "end": 354
+            },
+            {
+                "name": "SCR_Callback_refdef",
+                "start": 356,
+                "end": 359
+            },
+            {
+                "name": "SCR_Conwidth_f",
+                "start": 366,
+                "end": 373
+            },
+            {
+                "name": "SCR_LoadPics",
+                "start": 382,
+                "end": 387
+            },
+            {
+                "name": "SCR_Init",
+                "start": 393,
+                "end": 429
+            },
+            {
+                "name": "SCR_DrawFPS",
+                "start": 438,
+                "end": 476
+            },
+            {
+                "name": "SCR_DrawClock",
+                "start": 483,
+                "end": 504
+            },
+            {
+                "name": "SCR_DrawDevStats",
+                "start": 511,
+                "end": 550
+            },
+            {
+                "name": "SCR_DrawRam",
+                "start": 557,
+                "end": 568
+            },
+            {
+                "name": "SCR_DrawTurtle",
+                "start": 575,
+                "end": 595
+            },
+            {
+                "name": "SCR_DrawNet",
+                "start": 602,
+                "end": 612
+            },
+            {
+                "name": "SCR_DrawPause",
+                "start": 619,
+                "end": 635
+            },
+            {
+                "name": "SCR_DrawLoading",
+                "start": 642,
+                "end": 655
+            },
+            {
+                "name": "SCR_DrawCrosshair",
+                "start": 662,
+                "end": 669
+            },
+            {
+                "name": "SCR_SetUpToDrawConsole",
+                "start": 681,
+                "end": 727
+            },
+            {
+                "name": "SCR_DrawConsole",
+                "start": 734,
+                "end": 746
+            },
+            {
+                "name": "SCR_ScreenShot_f",
+                "start": 762,
+                "end": 794
+            },
+            {
+                "name": "SCR_BeginLoadingPlaque",
+                "start": 806,
+                "end": 827
+            },
+            {
+                "name": "SCR_EndLoadingPlaque",
+                "start": 835,
+                "end": 839
+            },
+            {
+                "name": "SCR_DrawNotifyString",
+                "start": 846,
+                "end": 878
+            },
+            {
+                "name": "SCR_ModalMessage",
+                "start": 888,
+                "end": 930
+            },
+            {
+                "name": "SCR_TileClear",
+                "start": 945,
+                "end": 978
+            },
+            {
+                "name": "SCR_UpdateScreen",
+                "start": 991,
+                "end": 1072
+            }
+        ],
+        "Quake/wsaerror.h": [
+            {
+                "name": "__WSAE_StrError",
+                "start": 13,
+                "end": 90
+            }
+        ],
+        "Quake/net_wins.c": [
+            {
+                "name": "BlockingHook",
+                "start": 48,
+                "end": 71
+            },
+            {
+                "name": "WINS_GetLocalAddress",
+                "start": 74,
+                "end": 109
+            },
+            {
+                "name": "WINS_Init",
+                "start": 112,
+                "end": 180
+            },
+            {
+                "name": "WINS_Shutdown",
+                "start": 184,
+                "end": 190
+            },
+            {
+                "name": "WINS_Listen",
+                "start": 194,
+                "end": 212
+            },
+            {
+                "name": "WINS_OpenSocket",
+                "start": 216,
+                "end": 255
+            },
+            {
+                "name": "WINS_CloseSocket",
+                "start": 259,
+                "end": 264
+            },
+            {
+                "name": "PartialIPAddress",
+                "start": 276,
+                "end": 320
+            },
+            {
+                "name": "WINS_Connect",
+                "start": 324,
+                "end": 327
+            },
+            {
+                "name": "WINS_CheckNewConnections",
+                "start": 331,
+                "end": 344
+            },
+            {
+                "name": "WINS_Read",
+                "start": 348,
+                "end": 362
+            },
+            {
+                "name": "WINS_MakeSocketBroadcastCapable",
+                "start": 366,
+                "end": 381
+            },
+            {
+                "name": "WINS_Broadcast",
+                "start": 385,
+                "end": 403
+            },
+            {
+                "name": "WINS_Write",
+                "start": 407,
+                "end": 421
+            },
+            {
+                "name": "WINS_AddrToString",
+                "start": 425,
+                "end": 435
+            },
+            {
+                "name": "WINS_StringToAddr",
+                "start": 439,
+                "end": 450
+            },
+            {
+                "name": "WINS_GetSocketAddr",
+                "start": 454,
+                "end": 467
+            },
+            {
+                "name": "WINS_GetNameFromAddr",
+                "start": 471,
+                "end": 485
+            },
+            {
+                "name": "WINS_GetAddrFromName",
+                "start": 489,
+                "end": 506
+            },
+            {
+                "name": "WINS_AddrCompare",
+                "start": 510,
+                "end": 524
+            },
+            {
+                "name": "WINS_GetSocketPort",
+                "start": 528,
+                "end": 531
+            },
+            {
+                "name": "WINS_SetSocketPort",
+                "start": 534,
+                "end": 538
+            }
+        ],
+        "Quake/gl_refrag.c": [
+            {
+                "name": "R_RemoveEfrags",
+                "start": 52,
+                "end": 84
+            },
+            {
+                "name": "R_SplitEntityOnNode",
+                "start": 91,
+                "end": 161
+            },
+            {
+                "name": "R_CheckEfrags",
+                "start": 168,
+                "end": 184
+            },
+            {
+                "name": "R_AddEfrags",
+                "start": 191,
+                "end": 217
+            },
+            {
+                "name": "R_StoreEfrags",
+                "start": 225,
+                "end": 242
+            }
+        ],
+        "Misc/mk_header.c": [
+            {
+                "name": "main",
+                "start": 19,
+                "end": 100
+            }
+        ],
+        "Misc/systest.c": [
+            {
+                "name": "DetectByteorder",
+                "start": 157,
+                "end": 181
+            },
+            {
+                "name": "main",
+                "start": 193,
+                "end": 255
+            }
+        ]
+    }
+}

@@ -1,0 +1,5560 @@
+{
+    "kexec-tools-2.0.7": {
+        "purgatory/printf.c": [
+            {
+                "name": "vsprintf",
+                "start": 36,
+                "end": 136
+            },
+            {
+                "name": "sprintf",
+                "start": 138,
+                "end": 145
+            },
+            {
+                "name": "printf",
+                "start": 147,
+                "end": 154
+            }
+        ],
+        "purgatory/string.c": [
+            {
+                "name": "strnlen",
+                "start": 4,
+                "end": 12
+            },
+            {
+                "name": "memset",
+                "start": 14,
+                "end": 21
+            },
+            {
+                "name": "memcpy",
+                "start": 24,
+                "end": 36
+            },
+            {
+                "name": "memcmp",
+                "start": 39,
+                "end": 52
+            }
+        ],
+        "purgatory/purgatory.c": [
+            {
+                "name": "verify_sha256_digest",
+                "start": 12,
+                "end": 40
+            },
+            {
+                "name": "purgatory",
+                "start": 42,
+                "end": 52
+            }
+        ],
+        "purgatory/arch/x86_64/purgatory-x86_64.c": [
+            {
+                "name": "setup_arch",
+                "start": 12,
+                "end": 16
+            },
+            {
+                "name": "x86_setup_jump_back_entry",
+                "start": 18,
+                "end": 23
+            },
+            {
+                "name": "post_verification_setup_arch",
+                "start": 26,
+                "end": 30
+            }
+        ],
+        "purgatory/arch/ppc64/purgatory-ppc64.c": [
+            {
+                "name": "setup_arch",
+                "start": 35,
+                "end": 38
+            },
+            {
+                "name": "post_verification_setup_arch",
+                "start": 40,
+                "end": 44
+            }
+        ],
+        "purgatory/arch/ppc64/console-ppc64.c": [
+            {
+                "name": "putchar",
+                "start": 30,
+                "end": 45
+            }
+        ],
+        "purgatory/arch/ppc64/../../../kexec/arch/ppc64/crashdump-ppc64.h": [
+            {
+                "name": "load_crashdump_segments",
+                "start": 8,
+                "end": 9
+            }
+        ],
+        "purgatory/arch/ppc64/crashdump_backup.c": [
+            {
+                "name": "crashdump_backup_memory",
+                "start": 29,
+                "end": 39
+            }
+        ],
+        "purgatory/arch/s390/purgatory-s390.c": [
+            {
+                "name": "memcpy_fast",
+                "start": 25,
+                "end": 39
+            },
+            {
+                "name": "memswap",
+                "start": 44,
+                "end": 55
+            },
+            {
+                "name": "setup_arch",
+                "start": 60,
+                "end": 62
+            },
+            {
+                "name": "post_verification_setup_arch",
+                "start": 74,
+                "end": 93
+            }
+        ],
+        "purgatory/arch/s390/console-s390.c": [
+            {
+                "name": "putchar",
+                "start": 12,
+                "end": 14
+            }
+        ],
+        "purgatory/arch/ia64/io.h": [
+            {
+                "name": "io_addr",
+                "start": 7,
+                "end": 14
+            },
+            {
+                "name": "inb",
+                "start": 16,
+                "end": 25
+            },
+            {
+                "name": "inw",
+                "start": 27,
+                "end": 37
+            },
+            {
+                "name": "inl",
+                "start": 39,
+                "end": 48
+            },
+            {
+                "name": "outb",
+                "start": 50,
+                "end": 58
+            },
+            {
+                "name": "outw",
+                "start": 60,
+                "end": 68
+            },
+            {
+                "name": "outl",
+                "start": 70,
+                "end": 78
+            },
+            {
+                "name": "readb",
+                "start": 80,
+                "end": 83
+            },
+            {
+                "name": "readw",
+                "start": 84,
+                "end": 87
+            },
+            {
+                "name": "readl",
+                "start": 88,
+                "end": 91
+            },
+            {
+                "name": "writeb",
+                "start": 93,
+                "end": 97
+            },
+            {
+                "name": "writew",
+                "start": 98,
+                "end": 102
+            },
+            {
+                "name": "writel",
+                "start": 103,
+                "end": 107
+            }
+        ],
+        "purgatory/arch/ia64/console-ia64.c": [
+            {
+                "name": "putchar_vga",
+                "start": 14,
+                "end": 42
+            },
+            {
+                "name": "putchar",
+                "start": 44,
+                "end": 47
+            }
+        ],
+        "purgatory/arch/ia64/purgatory-ia64.c": [
+            {
+                "name": "setup_arch",
+                "start": 142,
+                "end": 146
+            },
+            {
+                "name": "PA",
+                "start": 148,
+                "end": 151
+            },
+            {
+                "name": "patch_efi_memmap",
+                "start": 153,
+                "end": 234
+            },
+            {
+                "name": "flush_icache_range",
+                "start": 236,
+                "end": 246
+            },
+            {
+                "name": "ia64_env_setup",
+                "start": 251,
+                "end": 301
+            },
+            {
+                "name": "post_verification_setup_arch",
+                "start": 304,
+                "end": 307
+            }
+        ],
+        "purgatory/arch/ia64/vga.c": [
+            {
+                "name": "reset_vga",
+                "start": 2,
+                "end": 143
+            }
+        ],
+        "purgatory/arch/mips/purgatory-mips.c": [
+            {
+                "name": "setup_arch",
+                "start": 4,
+                "end": 7
+            }
+        ],
+        "purgatory/arch/mips/console-mips.c": [
+            {
+                "name": "putchar",
+                "start": 4,
+                "end": 7
+            }
+        ],
+        "purgatory/arch/i386/console-x86.c": [
+            {
+                "name": "putchar_vga",
+                "start": 20,
+                "end": 50
+            },
+            {
+                "name": "serial_init",
+                "start": 79,
+                "end": 100
+            },
+            {
+                "name": "serial_tx_byte",
+                "start": 102,
+                "end": 114
+            },
+            {
+                "name": "putchar_serial",
+                "start": 116,
+                "end": 125
+            },
+            {
+                "name": "putchar",
+                "start": 129,
+                "end": 133
+            }
+        ],
+        "purgatory/arch/i386/pic.c": [
+            {
+                "name": "x86_setup_legacy_pic",
+                "start": 24,
+                "end": 50
+            }
+        ],
+        "purgatory/arch/i386/crashdump_backup.c": [
+            {
+                "name": "crashdump_backup_memory",
+                "start": 36,
+                "end": 51
+            }
+        ],
+        "purgatory/arch/i386/vga.c": [
+            {
+                "name": "x86_reset_vga",
+                "start": 11,
+                "end": 152
+            }
+        ],
+        "purgatory/arch/i386/purgatory-x86.c": [
+            {
+                "name": "x86_setup_cpu",
+                "start": 10,
+                "end": 28
+            },
+            {
+                "name": "setup_arch",
+                "start": 37,
+                "end": 43
+            },
+            {
+                "name": "x86_setup_jump_back_entry",
+                "start": 45,
+                "end": 50
+            },
+            {
+                "name": "post_verification_setup_arch",
+                "start": 53,
+                "end": 57
+            }
+        ],
+        "purgatory/arch/ppc/purgatory-ppc.c": [
+            {
+                "name": "setup_arch",
+                "start": 32,
+                "end": 35
+            },
+            {
+                "name": "post_verification_setup_arch",
+                "start": 37,
+                "end": 43
+            },
+            {
+                "name": "crashdump_backup_memory",
+                "start": 45,
+                "end": 48
+            }
+        ],
+        "purgatory/arch/ppc/console-ppc.c": [
+            {
+                "name": "putchar",
+                "start": 4,
+                "end": 7
+            }
+        ],
+        "kdump/kdump.c": [
+            {
+                "name": "map_addr",
+                "start": 28,
+                "end": 38
+            },
+            {
+                "name": "unmap_addr",
+                "start": 40,
+                "end": 49
+            },
+            {
+                "name": "xmalloc",
+                "start": 51,
+                "end": 61
+            },
+            {
+                "name": "collect_notes",
+                "start": 63,
+                "end": 121
+            },
+            {
+                "name": "generate_new_headers",
+                "start": 123,
+                "end": 187
+            },
+            {
+                "name": "write_all",
+                "start": 189,
+                "end": 210
+            },
+            {
+                "name": "main",
+                "start": 212,
+                "end": 312
+            }
+        ],
+        "util_lib/compute_ip_checksum.c": [
+            {
+                "name": "compute_ip_checksum",
+                "start": 24,
+                "end": 74
+            },
+            {
+                "name": "add_ip_checksums",
+                "start": 76,
+                "end": 93
+            },
+            {
+                "name": "negate_ip_checksum",
+                "start": 95,
+                "end": 102
+            }
+        ],
+        "util_lib/sha256.c": [
+            {
+                "name": "sha256_starts",
+                "start": 41,
+                "end": 54
+            },
+            {
+                "name": "sha256_process",
+                "start": 56,
+                "end": 185
+            },
+            {
+                "name": "sha256_update",
+                "start": 187,
+                "end": 222
+            },
+            {
+                "name": "sha256_finish",
+                "start": 232,
+                "end": 259
+            }
+        ],
+        "vmcore-dmesg/vmcore-dmesg.c": [
+            {
+                "name": "file16_to_cpu",
+                "start": 54,
+                "end": 59
+            },
+            {
+                "name": "file32_to_cpu",
+                "start": 61,
+                "end": 66
+            },
+            {
+                "name": "file64_to_cpu",
+                "start": 68,
+                "end": 73
+            },
+            {
+                "name": "vaddr_to_offset",
+                "start": 75,
+                "end": 91
+            },
+            {
+                "name": "machine_pointer_bits",
+                "start": 93,
+                "end": 109
+            },
+            {
+                "name": "read_elf32",
+                "start": 111,
+                "end": 179
+            },
+            {
+                "name": "read_elf64",
+                "start": 182,
+                "end": 250
+            },
+            {
+                "name": "scan_vmcoreinfo",
+                "start": 252,
+                "end": 368
+            },
+            {
+                "name": "scan_notes",
+                "start": 370,
+                "end": 418
+            },
+            {
+                "name": "scan_note_headers",
+                "start": 420,
+                "end": 428
+            },
+            {
+                "name": "read_file_pointer",
+                "start": 430,
+                "end": 455
+            },
+            {
+                "name": "read_file_u32",
+                "start": 457,
+                "end": 468
+            },
+            {
+                "name": "read_file_s32",
+                "start": 470,
+                "end": 473
+            },
+            {
+                "name": "write_to_stdout",
+                "start": 475,
+                "end": 485
+            },
+            {
+                "name": "dump_dmesg_legacy",
+                "start": 487,
+                "end": 544
+            },
+            {
+                "name": "struct_val_u16",
+                "start": 546,
+                "end": 549
+            },
+            {
+                "name": "struct_val_u32",
+                "start": 551,
+                "end": 554
+            },
+            {
+                "name": "struct_val_u64",
+                "start": 556,
+                "end": 559
+            },
+            {
+                "name": "log_text",
+                "start": 562,
+                "end": 565
+            },
+            {
+                "name": "log_from_idx",
+                "start": 568,
+                "end": 579
+            },
+            {
+                "name": "log_next",
+                "start": 582,
+                "end": 599
+            },
+            {
+                "name": "dump_dmesg_structured",
+                "start": 602,
+                "end": 714
+            },
+            {
+                "name": "dump_dmesg",
+                "start": 716,
+                "end": 722
+            },
+            {
+                "name": "main",
+                "start": 724,
+                "end": 779
+            }
+        ],
+        "kexec/kexec-elf.h": [
+            {
+                "name": "build_elf_info",
+                "start": 93,
+                "end": 94
+            },
+            {
+                "name": "build_elf_exec_info",
+                "start": 95,
+                "end": 96
+            },
+            {
+                "name": "build_elf_rel_info",
+                "start": 97,
+                "end": 98
+            },
+            {
+                "name": "build_elf_core_info",
+                "start": 100,
+                "end": 101
+            },
+            {
+                "name": "elf_rel_load",
+                "start": 103,
+                "end": 104
+            },
+            {
+                "name": "elf_exec_build_load",
+                "start": 106,
+                "end": 107
+            },
+            {
+                "name": "elf_rel_build_load",
+                "start": 108,
+                "end": 110
+            },
+            {
+                "name": "elf_rel_find_symbol",
+                "start": 112,
+                "end": 113
+            },
+            {
+                "name": "elf_rel_set_symbol",
+                "start": 115,
+                "end": 116
+            },
+            {
+                "name": "elf_rel_get_symbol",
+                "start": 117,
+                "end": 118
+            },
+            {
+                "name": "machine_apply_elf_rel",
+                "start": 132,
+                "end": 133
+            }
+        ],
+        "kexec/kexec.h": [
+            {
+                "name": "get_memory_ranges",
+                "start": 174,
+                "end": 175
+            },
+            {
+                "name": "valid_memory_range",
+                "start": 176,
+                "end": 177
+            },
+            {
+                "name": "locate_hole",
+                "start": 180,
+                "end": 183
+            },
+            {
+                "name": "die",
+                "start": 238,
+                "end": 239
+            },
+            {
+                "name": "add_segment",
+                "start": 246,
+                "end": 247
+            },
+            {
+                "name": "add_segment_phys_virt",
+                "start": 248,
+                "end": 250
+            },
+            {
+                "name": "add_buffer",
+                "start": 251,
+                "end": 254
+            },
+            {
+                "name": "add_buffer_virt",
+                "start": 255,
+                "end": 258
+            },
+            {
+                "name": "add_buffer_phys_virt",
+                "start": 259,
+                "end": 262
+            },
+            {
+                "name": "kexec_iomem_for_each_line",
+                "start": 281,
+                "end": 287
+            }
+        ],
+        "kexec/crashdump.h": [
+            {
+                "name": "crash_create_elf32_headers",
+                "start": 43,
+                "end": 47
+            },
+            {
+                "name": "crash_create_elf64_headers",
+                "start": 49,
+                "end": 53
+            },
+            {
+                "name": "phys_to_virt",
+                "start": 57,
+                "end": 58
+            }
+        ],
+        "kexec/kexec-elf.c": [
+            {
+                "name": "elf16_to_cpu",
+                "start": 15,
+                "end": 24
+            },
+            {
+                "name": "elf32_to_cpu",
+                "start": 26,
+                "end": 35
+            },
+            {
+                "name": "elf64_to_cpu",
+                "start": 37,
+                "end": 46
+            },
+            {
+                "name": "cpu_to_elf16",
+                "start": 48,
+                "end": 57
+            },
+            {
+                "name": "cpu_to_elf32",
+                "start": 59,
+                "end": 68
+            },
+            {
+                "name": "cpu_to_elf64",
+                "start": 70,
+                "end": 79
+            },
+            {
+                "name": "elf_max_addr",
+                "start": 88,
+                "end": 98
+            },
+            {
+                "name": "build_mem_elf32_ehdr",
+                "start": 99,
+                "end": 169
+            },
+            {
+                "name": "build_mem_elf64_ehdr",
+                "start": 171,
+                "end": 241
+            },
+            {
+                "name": "build_mem_ehdr",
+                "start": 243,
+                "end": 304
+            },
+            {
+                "name": "build_mem_elf32_phdr",
+                "start": 306,
+                "end": 336
+            },
+            {
+                "name": "build_mem_elf64_phdr",
+                "start": 338,
+                "end": 368
+            },
+            {
+                "name": "build_mem_phdrs",
+                "start": 370,
+                "end": 446
+            },
+            {
+                "name": "build_mem_elf32_shdr",
+                "start": 448,
+                "end": 515
+            },
+            {
+                "name": "build_mem_elf64_shdr",
+                "start": 517,
+                "end": 584
+            },
+            {
+                "name": "build_mem_shdrs",
+                "start": 586,
+                "end": 659
+            },
+            {
+                "name": "read_nhdr",
+                "start": 661,
+                "end": 669
+            },
+            {
+                "name": "build_mem_notes",
+                "start": 670,
+                "end": 740
+            },
+            {
+                "name": "free_elf_info",
+                "start": 742,
+                "end": 747
+            },
+            {
+                "name": "build_elf_info",
+                "start": 749,
+                "end": 777
+            }
+        ],
+        "kexec/add_buffer.c": [
+            {
+                "name": "add_buffer",
+                "start": 3,
+                "end": 14
+            }
+        ],
+        "kexec/lzma.c": [
+            {
+                "name": "lzma_decompress_file",
+                "start": 199,
+                "end": 202
+            }
+        ],
+        "kexec/kexec-iomem.c": [
+            {
+                "name": "kexec_iomem_for_each_line",
+                "start": 25,
+                "end": 64
+            },
+            {
+                "name": "kexec_iomem_single_callback",
+                "start": 66,
+                "end": 79
+            },
+            {
+                "name": "parse_iomem_single",
+                "start": 81,
+                "end": 103
+            }
+        ],
+        "kexec/kernel_version.c": [
+            {
+                "name": "kernel_version",
+                "start": 9,
+                "end": 57
+            }
+        ],
+        "kexec/phys_to_virt.c": [
+            {
+                "name": "phys_to_virt",
+                "start": 12,
+                "end": 16
+            }
+        ],
+        "kexec/kexec-uImage.c": [
+            {
+                "name": "uImage_probe",
+                "start": 27,
+                "end": 98
+            },
+            {
+                "name": "uImage_probe_kernel",
+                "start": 111,
+                "end": 118
+            },
+            {
+                "name": "uImage_probe_ramdisk",
+                "start": 120,
+                "end": 127
+            },
+            {
+                "name": "uImage_gz_load",
+                "start": 227,
+                "end": 231
+            },
+            {
+                "name": "uImage_load",
+                "start": 234,
+                "end": 276
+            }
+        ],
+        "kexec/kexec-syscall.h": [
+            {
+                "name": "kexec_load",
+                "start": 58,
+                "end": 62
+            }
+        ],
+        "kexec/kexec-xen.c": [
+            {
+                "name": "xen_kexec_load",
+                "start": 123,
+                "end": 126
+            },
+            {
+                "name": "xen_kexec_unload",
+                "start": 128,
+                "end": 131
+            },
+            {
+                "name": "xen_kexec_exec",
+                "start": 133,
+                "end": 135
+            }
+        ],
+        "kexec/fs2dt.c": [
+            {
+                "name": "pad_structure_block",
+                "start": 58,
+                "end": 63
+            },
+            {
+                "name": "dt_reserve",
+                "start": 69,
+                "end": 90
+            },
+            {
+                "name": "reserve",
+                "start": 92,
+                "end": 105
+            },
+            {
+                "name": "checkprop",
+                "start": 108,
+                "end": 146
+            },
+            {
+                "name": "propnum",
+                "start": 152,
+                "end": 168
+            },
+            {
+                "name": "add_usable_mem_property",
+                "start": 289,
+                "end": 377
+            },
+            {
+                "name": "putprops",
+                "start": 380,
+                "end": 471
+            },
+            {
+                "name": "comparefunc",
+                "start": 477,
+                "end": 494
+            },
+            {
+                "name": "putnode",
+                "start": 500,
+                "end": 703
+            },
+            {
+                "name": "add_boot_block",
+                "start": 707,
+                "end": 767
+            },
+            {
+                "name": "create_flatten_tree",
+                "start": 769,
+                "end": 793
+            }
+        ],
+        "kexec/kexec-elf-boot.h": [
+            {
+                "name": "elf_boot_notes",
+                "start": 4,
+                "end": 6
+            }
+        ],
+        "kexec/kexec-elf-boot.c": [
+            {
+                "name": "elf_boot_notes",
+                "start": 70,
+                "end": 89
+            }
+        ],
+        "kexec/crashdump-elf.c": [
+            {
+                "name": "crash_create_elf64_headers",
+                "start": 29,
+                "end": 238
+            },
+            {
+                "name": "crash_create_elf32_headers",
+                "start": 29,
+                "end": 238
+            },
+            "name",
+            "start",
+            "end"
+        ],
+        "kexec/crashdump.c": [
+            {
+                "name": "crash_architecture",
+                "start": 56,
+                "end": 62
+            },
+            {
+                "name": "get_crash_notes_per_cpu",
+                "start": 65,
+                "end": 127
+            },
+            {
+                "name": "get_vmcoreinfo",
+                "start": 129,
+                "end": 153
+            },
+            {
+                "name": "get_kernel_vmcoreinfo",
+                "start": 156,
+                "end": 159
+            }
+        ],
+        "kexec/kexec.c": [
+            {
+                "name": "dbgprint_mem_range",
+                "start": 56,
+                "end": 64
+            },
+            {
+                "name": "die",
+                "start": 66,
+                "end": 75
+            },
+            {
+                "name": "xstrdup",
+                "start": 77,
+                "end": 84
+            },
+            {
+                "name": "xmalloc",
+                "start": 86,
+                "end": 97
+            },
+            {
+                "name": "xrealloc",
+                "start": 99,
+                "end": 108
+            },
+            {
+                "name": "valid_memory_range",
+                "start": 110,
+                "end": 138
+            },
+            {
+                "name": "valid_memory_segment",
+                "start": 140,
+                "end": 148
+            },
+            {
+                "name": "print_segments",
+                "start": 150,
+                "end": 165
+            },
+            {
+                "name": "sort_segments",
+                "start": 167,
+                "end": 199
+            },
+            {
+                "name": "locate_hole",
+                "start": 201,
+                "end": 305
+            },
+            {
+                "name": "add_segment_phys_virt",
+                "start": 307,
+                "end": 357
+            },
+            {
+                "name": "add_buffer_phys_virt",
+                "start": 359,
+                "end": 384
+            },
+            {
+                "name": "add_buffer_virt",
+                "start": 386,
+                "end": 393
+            },
+            {
+                "name": "find_memory_range",
+                "start": 395,
+                "end": 417
+            },
+            {
+                "name": "find_segment_hole",
+                "start": 419,
+                "end": 445
+            },
+            {
+                "name": "add_backup_segments",
+                "start": 447,
+                "end": 480
+            },
+            {
+                "name": "slurp_fd",
+                "start": 482,
+                "end": 513
+            },
+            {
+                "name": "slurp_file",
+                "start": 515,
+                "end": 566
+            },
+            {
+                "name": "slurp_file_len",
+                "start": 571,
+                "end": 585
+            },
+            {
+                "name": "slurp_decompress_file",
+                "start": 587,
+                "end": 598
+            },
+            {
+                "name": "update_purgatory",
+                "start": 600,
+                "end": 645
+            },
+            {
+                "name": "my_load",
+                "start": 650,
+                "end": 788
+            },
+            {
+                "name": "k_unload",
+                "start": 790,
+                "end": 812
+            },
+            {
+                "name": "my_shutdown",
+                "start": 817,
+                "end": 832
+            },
+            {
+                "name": "my_exec",
+                "start": 837,
+                "end": 847
+            },
+            {
+                "name": "load_jump_back_helper_image",
+                "start": 851,
+                "end": 859
+            },
+            {
+                "name": "my_load_jump_back_helper",
+                "start": 864,
+                "end": 885
+            },
+            {
+                "name": "version",
+                "start": 887,
+                "end": 890
+            },
+            {
+                "name": "usage",
+                "start": 892,
+                "end": 938
+            },
+            {
+                "name": "kexec_loaded",
+                "start": 940,
+                "end": 972
+            },
+            {
+                "name": "remove_parameter",
+                "start": 977,
+                "end": 1001
+            },
+            {
+                "name": "get_command_line",
+                "start": 1016,
+                "end": 1043
+            },
+            {
+                "name": "check_reuse_initrd",
+                "start": 1046,
+                "end": 1057
+            },
+            {
+                "name": "concat_cmdline",
+                "start": 1059,
+                "end": 1073
+            },
+            {
+                "name": "main",
+                "start": 1076,
+                "end": 1269
+            }
+        ],
+        "kexec/kexec-elf-exec.c": [
+            {
+                "name": "build_elf_exec_info",
+                "start": 14,
+                "end": 49
+            },
+            {
+                "name": "elf_exec_load",
+                "start": 52,
+                "end": 138
+            },
+            {
+                "name": "elf_exec_build_load",
+                "start": 140,
+                "end": 155
+            }
+        ],
+        "kexec/kexec-elf-rel.c": [
+            {
+                "name": "elf_sym_size",
+                "start": 14,
+                "end": 27
+            },
+            {
+                "name": "elf_rel_size",
+                "start": 29,
+                "end": 42
+            },
+            {
+                "name": "elf_rela_size",
+                "start": 44,
+                "end": 57
+            },
+            {
+                "name": "elf_sym",
+                "start": 59,
+                "end": 86
+            },
+            {
+                "name": "elf_rel",
+                "start": 88,
+                "end": 111
+            },
+            {
+                "name": "elf_rela",
+                "start": 113,
+                "end": 136
+            },
+            {
+                "name": "build_elf_rel_info",
+                "start": 138,
+                "end": 169
+            },
+            {
+                "name": "elf_rel_load",
+                "start": 172,
+                "end": 418
+            },
+            {
+                "name": "elf_rel_build_load",
+                "start": 420,
+                "end": 436
+            },
+            {
+                "name": "elf_rel_find_symbol",
+                "start": 438,
+                "end": 486
+            },
+            {
+                "name": "elf_rel_get_addr",
+                "start": 488,
+                "end": 500
+            },
+            {
+                "name": "elf_rel_set_symbol",
+                "start": 502,
+                "end": 525
+            },
+            {
+                "name": "elf_rel_get_symbol",
+                "start": 527,
+                "end": 549
+            }
+        ],
+        "kexec/proc_iomem.c": [
+            {
+                "name": "proc_iomem",
+                "start": 10,
+                "end": 13
+            }
+        ],
+        "kexec/firmware_memmap.c": [
+            {
+                "name": "parse_numeric_sysfs",
+                "start": 57,
+                "end": 82
+            },
+            {
+                "name": "parse_string_sysfs",
+                "start": 93,
+                "end": 122
+            },
+            {
+                "name": "parse_memmap_entry",
+                "start": 124,
+                "end": 179
+            },
+            {
+                "name": "compare_ranges",
+                "start": 182,
+                "end": 197
+            },
+            {
+                "name": "have_sys_firmware_memmap",
+                "start": 200,
+                "end": 210
+            },
+            {
+                "name": "get_firmware_memmap_ranges",
+                "start": 213,
+                "end": 277
+            }
+        ],
+        "kexec/virt_to_phys.c": [
+            {
+                "name": "virt_to_phys",
+                "start": 4,
+                "end": 7
+            }
+        ],
+        "kexec/phys_arch.c": [
+            {
+                "name": "physical_arch",
+                "start": 6,
+                "end": 28
+            }
+        ],
+        "kexec/crashdump-xen.c": [
+            {
+                "name": "xen_sigill_handler",
+                "start": 37,
+                "end": 40
+            },
+            {
+                "name": "xen_cpuid",
+                "start": 42,
+                "end": 59
+            },
+            {
+                "name": "check_for_xen",
+                "start": 61,
+                "end": 85
+            },
+            {
+                "name": "xen_detect_pv_guest",
+                "start": 87,
+                "end": 104
+            },
+            {
+                "name": "xen_present",
+                "start": 117,
+                "end": 126
+            },
+            {
+                "name": "xen_architecture",
+                "start": 128,
+                "end": 164
+            },
+            {
+                "name": "get_xen_vmcoreinfo",
+                "start": 229,
+                "end": 232
+            },
+            {
+                "name": "xen_get_nr_phys_cpus",
+                "start": 234,
+                "end": 237
+            },
+            {
+                "name": "xen_get_note",
+                "start": 241,
+                "end": 254
+            },
+            {
+                "name": "xen_get_crashkernel_region",
+                "start": 284,
+                "end": 287
+            }
+        ],
+        "kexec/ifdown.c": [
+            {
+                "name": "ifdown",
+                "start": 28,
+                "end": 74
+            }
+        ],
+        "kexec/arch_reuse_initrd.c": [
+            {
+                "name": "arch_reuse_initrd",
+                "start": 5,
+                "end": 8
+            }
+        ],
+        "kexec/kexec-elf-core.c": [
+            {
+                "name": "build_elf_core_info",
+                "start": 9,
+                "end": 29
+            }
+        ],
+        "kexec/add_segment.c": [
+            {
+                "name": "add_segment",
+                "start": 3,
+                "end": 8
+            }
+        ],
+        "kexec/zlib.c": [
+            {
+                "name": "zlib_decompress_file",
+                "start": 74,
+                "end": 77
+            }
+        ],
+        "kexec/arch/x86_64/../../kexec-elf.h": [
+            {
+                "name": "build_elf_info",
+                "start": 93,
+                "end": 94
+            },
+            {
+                "name": "build_elf_exec_info",
+                "start": 95,
+                "end": 96
+            },
+            {
+                "name": "build_elf_rel_info",
+                "start": 97,
+                "end": 98
+            },
+            {
+                "name": "build_elf_core_info",
+                "start": 100,
+                "end": 101
+            },
+            {
+                "name": "elf_rel_load",
+                "start": 103,
+                "end": 104
+            },
+            {
+                "name": "elf_exec_build_load",
+                "start": 106,
+                "end": 107
+            },
+            {
+                "name": "elf_rel_build_load",
+                "start": 108,
+                "end": 110
+            },
+            {
+                "name": "elf_rel_find_symbol",
+                "start": 112,
+                "end": 113
+            },
+            {
+                "name": "elf_rel_set_symbol",
+                "start": 115,
+                "end": 116
+            },
+            {
+                "name": "elf_rel_get_symbol",
+                "start": 117,
+                "end": 118
+            },
+            {
+                "name": "machine_apply_elf_rel",
+                "start": 132,
+                "end": 133
+            }
+        ],
+        "kexec/arch/x86_64/../../kexec.h": [
+            {
+                "name": "get_memory_ranges",
+                "start": 174,
+                "end": 175
+            },
+            {
+                "name": "valid_memory_range",
+                "start": 176,
+                "end": 177
+            },
+            {
+                "name": "locate_hole",
+                "start": 180,
+                "end": 183
+            },
+            {
+                "name": "die",
+                "start": 238,
+                "end": 239
+            },
+            {
+                "name": "add_segment",
+                "start": 246,
+                "end": 247
+            },
+            {
+                "name": "add_segment_phys_virt",
+                "start": 248,
+                "end": 250
+            },
+            {
+                "name": "add_buffer",
+                "start": 251,
+                "end": 254
+            },
+            {
+                "name": "add_buffer_virt",
+                "start": 255,
+                "end": 258
+            },
+            {
+                "name": "add_buffer_phys_virt",
+                "start": 259,
+                "end": 262
+            },
+            {
+                "name": "kexec_iomem_for_each_line",
+                "start": 281,
+                "end": 287
+            }
+        ],
+        "kexec/arch/x86_64/../../kexec-syscall.h": [
+            {
+                "name": "kexec_load",
+                "start": 58,
+                "end": 62
+            }
+        ],
+        "kexec/arch/x86_64/../i386/kexec-x86.h": [
+            {
+                "name": "multiboot_x86_load",
+                "start": 58,
+                "end": 59
+            },
+            {
+                "name": "elf_x86_load",
+                "start": 63,
+                "end": 64
+            },
+            {
+                "name": "bzImage_load",
+                "start": 68,
+                "end": 69
+            },
+            {
+                "name": "do_bzImage_load",
+                "start": 71,
+                "end": 75
+            },
+            {
+                "name": "beoboot_load",
+                "start": 78,
+                "end": 79
+            },
+            {
+                "name": "nbi_load",
+                "start": 83,
+                "end": 84
+            }
+        ],
+        "kexec/arch/x86_64/kexec-x86_64.h": [
+            {
+                "name": "elf_x86_64_load",
+                "start": 27,
+                "end": 28
+            },
+            {
+                "name": "bzImage64_load",
+                "start": 32,
+                "end": 33
+            }
+        ],
+        "kexec/arch/x86_64/../i386/x86-linux-setup.h": [
+            {
+                "name": "setup_linux_bootloader_parameters_high",
+                "start": 6,
+                "end": 10
+            },
+            {
+                "name": "setup_linux_bootloader_parameters",
+                "start": 11,
+                "end": 21
+            },
+            {
+                "name": "setup_linux_system_parameters",
+                "start": 22,
+                "end": 23
+            }
+        ],
+        "kexec/arch/x86_64/../i386/crashdump-x86.h": [
+            {
+                "name": "load_crashdump_segments",
+                "start": 5,
+                "end": 6
+            }
+        ],
+        "kexec/arch/x86_64/kexec-bzImage64.c": [
+            {
+                "name": "bzImage64_probe",
+                "start": 47,
+                "end": 95
+            },
+            {
+                "name": "bzImage64_usage",
+                "start": 97,
+                "end": 107
+            },
+            {
+                "name": "do_bzImage64_load",
+                "start": 109,
+                "end": 236
+            },
+            {
+                "name": "bzImage64_load",
+                "start": 238,
+                "end": 312
+            }
+        ],
+        "kexec/arch/x86_64/../../kexec-elf-boot.h": [
+            {
+                "name": "elf_boot_notes",
+                "start": 4,
+                "end": 6
+            }
+        ],
+        "kexec/arch/x86_64/kexec-elf-x86_64.c": [
+            {
+                "name": "elf_x86_64_probe",
+                "start": 45,
+                "end": 71
+            },
+            {
+                "name": "elf_x86_64_usage",
+                "start": 73,
+                "end": 84
+            },
+            {
+                "name": "elf_x86_64_load",
+                "start": 86,
+                "end": 289
+            }
+        ],
+        "kexec/arch/x86_64/kexec-elf-rel-x86_64.c": [
+            {
+                "name": "machine_verify_elf_rel",
+                "start": 6,
+                "end": 18
+            },
+            {
+                "name": "reloc_name",
+                "start": 20,
+                "end": 58
+            },
+            {
+                "name": "machine_apply_elf_rel",
+                "start": 60,
+                "end": 91
+            }
+        ],
+        "kexec/arch/x86_64/kexec-x86_64.c": [
+            {
+                "name": "arch_usage",
+                "start": 48,
+                "end": 59
+            },
+            {
+                "name": "arch_process_options",
+                "start": 72,
+                "end": 145
+            },
+            {
+                "name": "arch_compat_trampoline",
+                "start": 152,
+                "end": 155
+            },
+            {
+                "name": "arch_update_purgatory",
+                "start": 157,
+                "end": 183
+            }
+        ],
+        "kexec/arch/ppc64/../../kexec-elf.h": [
+            {
+                "name": "build_elf_info",
+                "start": 93,
+                "end": 94
+            },
+            {
+                "name": "build_elf_exec_info",
+                "start": 95,
+                "end": 96
+            },
+            {
+                "name": "build_elf_rel_info",
+                "start": 97,
+                "end": 98
+            },
+            {
+                "name": "build_elf_core_info",
+                "start": 100,
+                "end": 101
+            },
+            {
+                "name": "elf_rel_load",
+                "start": 103,
+                "end": 104
+            },
+            {
+                "name": "elf_exec_build_load",
+                "start": 106,
+                "end": 107
+            },
+            {
+                "name": "elf_rel_build_load",
+                "start": 108,
+                "end": 110
+            },
+            {
+                "name": "elf_rel_find_symbol",
+                "start": 112,
+                "end": 113
+            },
+            {
+                "name": "elf_rel_set_symbol",
+                "start": 115,
+                "end": 116
+            },
+            {
+                "name": "elf_rel_get_symbol",
+                "start": 117,
+                "end": 118
+            },
+            {
+                "name": "machine_apply_elf_rel",
+                "start": 132,
+                "end": 133
+            }
+        ],
+        "kexec/arch/ppc64/../../kexec.h": [
+            {
+                "name": "get_memory_ranges",
+                "start": 174,
+                "end": 175
+            },
+            {
+                "name": "valid_memory_range",
+                "start": 176,
+                "end": 177
+            },
+            {
+                "name": "locate_hole",
+                "start": 180,
+                "end": 183
+            },
+            {
+                "name": "die",
+                "start": 238,
+                "end": 239
+            },
+            {
+                "name": "add_segment",
+                "start": 246,
+                "end": 247
+            },
+            {
+                "name": "add_segment_phys_virt",
+                "start": 248,
+                "end": 250
+            },
+            {
+                "name": "add_buffer",
+                "start": 251,
+                "end": 254
+            },
+            {
+                "name": "add_buffer_virt",
+                "start": 255,
+                "end": 258
+            },
+            {
+                "name": "add_buffer_phys_virt",
+                "start": 259,
+                "end": 262
+            },
+            {
+                "name": "kexec_iomem_for_each_line",
+                "start": 281,
+                "end": 287
+            }
+        ],
+        "kexec/arch/ppc64/../../kexec-syscall.h": [
+            {
+                "name": "kexec_load",
+                "start": 58,
+                "end": 62
+            }
+        ],
+        "kexec/arch/ppc64/kexec-ppc64.h": [
+            {
+                "name": "elf_ppc64_load",
+                "start": 18,
+                "end": 19
+            }
+        ],
+        "kexec/arch/ppc64/crashdump-ppc64.h": [
+            {
+                "name": "load_crashdump_segments",
+                "start": 8,
+                "end": 9
+            }
+        ],
+        "kexec/arch/ppc64/kexec-ppc64.c": [
+            {
+                "name": "cleanup_memory_ranges",
+                "start": 50,
+                "end": 60
+            },
+            {
+                "name": "alloc_memory_ranges",
+                "start": 66,
+                "end": 100
+            },
+            {
+                "name": "realloc_memory_ranges",
+                "start": 102,
+                "end": 131
+            },
+            {
+                "name": "add_base_memory_range",
+                "start": 134,
+                "end": 147
+            },
+            {
+                "name": "get_dyn_reconf_base_ranges",
+                "start": 149,
+                "end": 205
+            },
+            {
+                "name": "sort_base_ranges",
+                "start": 210,
+                "end": 228
+            },
+            {
+                "name": "get_base_ranges",
+                "start": 231,
+                "end": 296
+            },
+            {
+                "name": "sort_ranges",
+                "start": 299,
+                "end": 316
+            },
+            {
+                "name": "scan_reserved_ranges",
+                "start": 318,
+                "end": 357
+            },
+            {
+                "name": "get_devtree_details",
+                "start": 362,
+                "end": 748
+            },
+            {
+                "name": "setup_memory_ranges",
+                "start": 751,
+                "end": 835
+            },
+            {
+                "name": "get_memory_ranges",
+                "start": 838,
+                "end": 862
+            },
+            {
+                "name": "arch_usage",
+                "start": 869,
+                "end": 872
+            },
+            {
+                "name": "arch_process_options",
+                "start": 878,
+                "end": 904
+            },
+            {
+                "name": "arch_compat_trampoline",
+                "start": 915,
+                "end": 918
+            },
+            {
+                "name": "arch_update_purgatory",
+                "start": 920,
+                "end": 922
+            }
+        ],
+        "kexec/arch/ppc64/../../crashdump.h": [
+            {
+                "name": "crash_create_elf32_headers",
+                "start": 43,
+                "end": 47
+            },
+            {
+                "name": "crash_create_elf64_headers",
+                "start": 49,
+                "end": 53
+            },
+            {
+                "name": "phys_to_virt",
+                "start": 57,
+                "end": 58
+            }
+        ],
+        "kexec/arch/ppc64/crashdump-ppc64.c": [
+            {
+                "name": "exclude_crash_region",
+                "start": 79,
+                "end": 116
+            },
+            {
+                "name": "get_dyn_reconf_crash_memory_ranges",
+                "start": 118,
+                "end": 164
+            },
+            {
+                "name": "get_crash_memory_ranges",
+                "start": 177,
+                "end": 342
+            },
+            {
+                "name": "ultoa",
+                "start": 345,
+                "end": 361
+            },
+            {
+                "name": "add_cmdline_param",
+                "start": 363,
+                "end": 392
+            },
+            {
+                "name": "load_crashdump_segments",
+                "start": 398,
+                "end": 461
+            },
+            {
+                "name": "add_usable_mem_rgns",
+                "start": 467,
+                "end": 512
+            },
+            {
+                "name": "is_crashkernel_mem_reserved",
+                "start": 514,
+                "end": 523
+            }
+        ],
+        "kexec/arch/ppc64/kexec-elf-rel-ppc64.c": [
+            {
+                "name": "machine_verify_elf_rel",
+                "start": 8,
+                "end": 18
+            },
+            {
+                "name": "toc_section",
+                "start": 20,
+                "end": 35
+            },
+            {
+                "name": "my_r2",
+                "start": 40,
+                "end": 50
+            },
+            {
+                "name": "do_relative_toc",
+                "start": 52,
+                "end": 64
+            },
+            {
+                "name": "machine_apply_elf_rel",
+                "start": 66,
+                "end": 178
+            }
+        ],
+        "kexec/arch/ppc64/kexec-elf-ppc64.c": [
+            {
+                "name": "elf_ppc64_probe",
+                "start": 48,
+                "end": 67
+            },
+            {
+                "name": "arch_reuse_initrd",
+                "start": 69,
+                "end": 72
+            },
+            {
+                "name": "read_prop",
+                "start": 74,
+                "end": 92
+            },
+            {
+                "name": "elf_ppc64_load",
+                "start": 94,
+                "end": 385
+            },
+            {
+                "name": "elf_ppc64_usage",
+                "start": 387,
+                "end": 397
+            }
+        ],
+        "kexec/arch/ppc64/kexec-zImage-ppc64.c": [
+            {
+                "name": "zImage_ppc64_probe",
+                "start": 36,
+                "end": 67
+            },
+            {
+                "name": "zImage_ppc64_load",
+                "start": 69,
+                "end": 172
+            },
+            {
+                "name": "zImage_ppc64_usage",
+                "start": 174,
+                "end": 177
+            }
+        ],
+        "kexec/arch/cris/../../kexec-elf.h": [
+            {
+                "name": "build_elf_info",
+                "start": 93,
+                "end": 94
+            },
+            {
+                "name": "build_elf_exec_info",
+                "start": 95,
+                "end": 96
+            },
+            {
+                "name": "build_elf_rel_info",
+                "start": 97,
+                "end": 98
+            },
+            {
+                "name": "build_elf_core_info",
+                "start": 100,
+                "end": 101
+            },
+            {
+                "name": "elf_rel_load",
+                "start": 103,
+                "end": 104
+            },
+            {
+                "name": "elf_exec_build_load",
+                "start": 106,
+                "end": 107
+            },
+            {
+                "name": "elf_rel_build_load",
+                "start": 108,
+                "end": 110
+            },
+            {
+                "name": "elf_rel_find_symbol",
+                "start": 112,
+                "end": 113
+            },
+            {
+                "name": "elf_rel_set_symbol",
+                "start": 115,
+                "end": 116
+            },
+            {
+                "name": "elf_rel_get_symbol",
+                "start": 117,
+                "end": 118
+            },
+            {
+                "name": "machine_apply_elf_rel",
+                "start": 132,
+                "end": 133
+            }
+        ],
+        "kexec/arch/cris/../../kexec.h": [
+            {
+                "name": "get_memory_ranges",
+                "start": 174,
+                "end": 175
+            },
+            {
+                "name": "valid_memory_range",
+                "start": 176,
+                "end": 177
+            },
+            {
+                "name": "locate_hole",
+                "start": 180,
+                "end": 183
+            },
+            {
+                "name": "die",
+                "start": 238,
+                "end": 239
+            },
+            {
+                "name": "add_segment",
+                "start": 246,
+                "end": 247
+            },
+            {
+                "name": "add_segment_phys_virt",
+                "start": 248,
+                "end": 250
+            },
+            {
+                "name": "add_buffer",
+                "start": 251,
+                "end": 254
+            },
+            {
+                "name": "add_buffer_virt",
+                "start": 255,
+                "end": 258
+            },
+            {
+                "name": "add_buffer_phys_virt",
+                "start": 259,
+                "end": 262
+            },
+            {
+                "name": "kexec_iomem_for_each_line",
+                "start": 281,
+                "end": 287
+            }
+        ],
+        "kexec/arch/cris/../../kexec-syscall.h": [
+            {
+                "name": "kexec_load",
+                "start": 58,
+                "end": 62
+            }
+        ],
+        "kexec/arch/cris/../../kexec-elf-boot.h": [
+            {
+                "name": "elf_boot_notes",
+                "start": 4,
+                "end": 6
+            }
+        ],
+        "kexec/arch/cris/kexec-cris.h": [
+            {
+                "name": "elf_cris_load",
+                "start": 5,
+                "end": 6
+            }
+        ],
+        "kexec/arch/cris/kexec-elf-cris.c": [
+            {
+                "name": "elf_cris_probe",
+                "start": 43,
+                "end": 61
+            },
+            {
+                "name": "elf_cris_usage",
+                "start": 63,
+                "end": 67
+            },
+            {
+                "name": "elf_cris_load",
+                "start": 76,
+                "end": 133
+            }
+        ],
+        "kexec/arch/cris/kexec-elf-rel-cris.c": [
+            {
+                "name": "machine_verify_elf_rel",
+                "start": 18,
+                "end": 30
+            },
+            {
+                "name": "machine_apply_elf_rel",
+                "start": 32,
+                "end": 42
+            }
+        ],
+        "kexec/arch/cris/kexec-cris.c": [
+            {
+                "name": "get_memory_ranges",
+                "start": 26,
+                "end": 44
+            },
+            {
+                "name": "arch_usage",
+                "start": 51,
+                "end": 53
+            },
+            {
+                "name": "arch_process_options",
+                "start": 55,
+                "end": 58
+            },
+            {
+                "name": "arch_compat_trampoline",
+                "start": 66,
+                "end": 69
+            },
+            {
+                "name": "arch_update_purgatory",
+                "start": 71,
+                "end": 73
+            },
+            {
+                "name": "is_crashkernel_mem_reserved",
+                "start": 75,
+                "end": 78
+            },
+            {
+                "name": "virt_to_phys",
+                "start": 80,
+                "end": 83
+            },
+            {
+                "name": "add_segment",
+                "start": 88,
+                "end": 92
+            },
+            {
+                "name": "add_buffer",
+                "start": 97,
+                "end": 104
+            }
+        ],
+        "kexec/arch/m68k/../../kexec-elf.h": [
+            {
+                "name": "build_elf_info",
+                "start": 93,
+                "end": 94
+            },
+            {
+                "name": "build_elf_exec_info",
+                "start": 95,
+                "end": 96
+            },
+            {
+                "name": "build_elf_rel_info",
+                "start": 97,
+                "end": 98
+            },
+            {
+                "name": "build_elf_core_info",
+                "start": 100,
+                "end": 101
+            },
+            {
+                "name": "elf_rel_load",
+                "start": 103,
+                "end": 104
+            },
+            {
+                "name": "elf_exec_build_load",
+                "start": 106,
+                "end": 107
+            },
+            {
+                "name": "elf_rel_build_load",
+                "start": 108,
+                "end": 110
+            },
+            {
+                "name": "elf_rel_find_symbol",
+                "start": 112,
+                "end": 113
+            },
+            {
+                "name": "elf_rel_set_symbol",
+                "start": 115,
+                "end": 116
+            },
+            {
+                "name": "elf_rel_get_symbol",
+                "start": 117,
+                "end": 118
+            },
+            {
+                "name": "machine_apply_elf_rel",
+                "start": 132,
+                "end": 133
+            }
+        ],
+        "kexec/arch/m68k/../../kexec.h": [
+            {
+                "name": "get_memory_ranges",
+                "start": 174,
+                "end": 175
+            },
+            {
+                "name": "valid_memory_range",
+                "start": 176,
+                "end": 177
+            },
+            {
+                "name": "locate_hole",
+                "start": 180,
+                "end": 183
+            },
+            {
+                "name": "die",
+                "start": 238,
+                "end": 239
+            },
+            {
+                "name": "add_segment",
+                "start": 246,
+                "end": 247
+            },
+            {
+                "name": "add_segment_phys_virt",
+                "start": 248,
+                "end": 250
+            },
+            {
+                "name": "add_buffer",
+                "start": 251,
+                "end": 254
+            },
+            {
+                "name": "add_buffer_virt",
+                "start": 255,
+                "end": 258
+            },
+            {
+                "name": "add_buffer_phys_virt",
+                "start": 259,
+                "end": 262
+            },
+            {
+                "name": "kexec_iomem_for_each_line",
+                "start": 281,
+                "end": 287
+            }
+        ],
+        "kexec/arch/m68k/bootinfo.c": [
+            {
+                "name": "bi_next",
+                "start": 16,
+                "end": 19
+            },
+            {
+                "name": "bi_find",
+                "start": 21,
+                "end": 30
+            },
+            {
+                "name": "bi_remove",
+                "start": 32,
+                "end": 55
+            },
+            {
+                "name": "bi_add",
+                "start": 57,
+                "end": 77
+            },
+            {
+                "name": "bootinfo_load",
+                "start": 79,
+                "end": 121
+            },
+            {
+                "name": "bootinfo_print",
+                "start": 123,
+                "end": 161
+            },
+            {
+                "name": "bootinfo_get_memory_ranges",
+                "start": 163,
+                "end": 179
+            },
+            {
+                "name": "bootinfo_set_cmdline",
+                "start": 181,
+                "end": 196
+            },
+            {
+                "name": "bootinfo_set_ramdisk",
+                "start": 198,
+                "end": 213
+            },
+            {
+                "name": "bootinfo_check_bootversion",
+                "start": 222,
+                "end": 256
+            },
+            {
+                "name": "add_bootinfo",
+                "start": 258,
+                "end": 262
+            }
+        ],
+        "kexec/arch/m68k/../../kexec-syscall.h": [
+            {
+                "name": "kexec_load",
+                "start": 58,
+                "end": 62
+            }
+        ],
+        "kexec/arch/m68k/kexec-m68k.h": [
+            {
+                "name": "elf_m68k_load",
+                "start": 5,
+                "end": 6
+            }
+        ],
+        "kexec/arch/m68k/kexec-m68k.c": [
+            {
+                "name": "get_memory_ranges",
+                "start": 27,
+                "end": 34
+            },
+            {
+                "name": "arch_usage",
+                "start": 42,
+                "end": 44
+            },
+            {
+                "name": "arch_process_options",
+                "start": 46,
+                "end": 71
+            },
+            {
+                "name": "arch_compat_trampoline",
+                "start": 78,
+                "end": 81
+            },
+            {
+                "name": "arch_update_purgatory",
+                "start": 83,
+                "end": 85
+            },
+            {
+                "name": "is_crashkernel_mem_reserved",
+                "start": 87,
+                "end": 90
+            },
+            {
+                "name": "virt_to_phys",
+                "start": 92,
+                "end": 95
+            },
+            {
+                "name": "add_segment",
+                "start": 100,
+                "end": 104
+            }
+        ],
+        "kexec/arch/m68k/kexec-elf-rel-m68k.c": [
+            {
+                "name": "machine_verify_elf_rel",
+                "start": 15,
+                "end": 24
+            },
+            {
+                "name": "machine_apply_elf_rel",
+                "start": 26,
+                "end": 37
+            }
+        ],
+        "kexec/arch/m68k/kexec-elf-m68k.c": [
+            {
+                "name": "elf_m68k_probe",
+                "start": 36,
+                "end": 55
+            },
+            {
+                "name": "elf_m68k_usage",
+                "start": 57,
+                "end": 66
+            },
+            {
+                "name": "segment_end",
+                "start": 68,
+                "end": 71
+            },
+            {
+                "name": "elf_m68k_load",
+                "start": 73,
+                "end": 182
+            }
+        ],
+        "kexec/arch/sh/../../kexec-elf.h": [
+            {
+                "name": "build_elf_info",
+                "start": 93,
+                "end": 94
+            },
+            {
+                "name": "build_elf_exec_info",
+                "start": 95,
+                "end": 96
+            },
+            {
+                "name": "build_elf_rel_info",
+                "start": 97,
+                "end": 98
+            },
+            {
+                "name": "build_elf_core_info",
+                "start": 100,
+                "end": 101
+            },
+            {
+                "name": "elf_rel_load",
+                "start": 103,
+                "end": 104
+            },
+            {
+                "name": "elf_exec_build_load",
+                "start": 106,
+                "end": 107
+            },
+            {
+                "name": "elf_rel_build_load",
+                "start": 108,
+                "end": 110
+            },
+            {
+                "name": "elf_rel_find_symbol",
+                "start": 112,
+                "end": 113
+            },
+            {
+                "name": "elf_rel_set_symbol",
+                "start": 115,
+                "end": 116
+            },
+            {
+                "name": "elf_rel_get_symbol",
+                "start": 117,
+                "end": 118
+            },
+            {
+                "name": "machine_apply_elf_rel",
+                "start": 132,
+                "end": 133
+            }
+        ],
+        "kexec/arch/sh/../../kexec.h": [
+            {
+                "name": "get_memory_ranges",
+                "start": 174,
+                "end": 175
+            },
+            {
+                "name": "valid_memory_range",
+                "start": 176,
+                "end": 177
+            },
+            {
+                "name": "locate_hole",
+                "start": 180,
+                "end": 183
+            },
+            {
+                "name": "die",
+                "start": 238,
+                "end": 239
+            },
+            {
+                "name": "add_segment",
+                "start": 246,
+                "end": 247
+            },
+            {
+                "name": "add_segment_phys_virt",
+                "start": 248,
+                "end": 250
+            },
+            {
+                "name": "add_buffer",
+                "start": 251,
+                "end": 254
+            },
+            {
+                "name": "add_buffer_virt",
+                "start": 255,
+                "end": 258
+            },
+            {
+                "name": "add_buffer_phys_virt",
+                "start": 259,
+                "end": 262
+            },
+            {
+                "name": "kexec_iomem_for_each_line",
+                "start": 281,
+                "end": 287
+            }
+        ],
+        "kexec/arch/sh/kexec-sh.h": [
+            {
+                "name": "uImage_sh_load",
+                "start": 7,
+                "end": 8
+            },
+            {
+                "name": "zImage_sh_load",
+                "start": 11,
+                "end": 12
+            },
+            {
+                "name": "elf_sh_load",
+                "start": 16,
+                "end": 17
+            },
+            {
+                "name": "netbsd_sh_load",
+                "start": 21,
+                "end": 22
+            },
+            {
+                "name": "kexec_sh_setup_zero_page",
+                "start": 26,
+                "end": 27
+            }
+        ],
+        "kexec/arch/sh/kexec-zImage-sh.c": [
+            {
+                "name": "zImage_head32",
+                "start": 37,
+                "end": 47
+            },
+            {
+                "name": "zImage_sh_probe",
+                "start": 54,
+                "end": 63
+            },
+            {
+                "name": "zImage_sh_usage",
+                "start": 65,
+                "end": 71
+            },
+            {
+                "name": "zImage_sh_load",
+                "start": 73,
+                "end": 142
+            }
+        ],
+        "kexec/arch/sh/../../kexec-elf-boot.h": [
+            {
+                "name": "elf_boot_notes",
+                "start": 4,
+                "end": 6
+            }
+        ],
+        "kexec/arch/sh/../../kexec-syscall.h": [
+            {
+                "name": "kexec_load",
+                "start": 58,
+                "end": 62
+            }
+        ],
+        "kexec/arch/sh/../../crashdump.h": [
+            {
+                "name": "crash_create_elf32_headers",
+                "start": 43,
+                "end": 47
+            },
+            {
+                "name": "crash_create_elf64_headers",
+                "start": 49,
+                "end": 53
+            },
+            {
+                "name": "phys_to_virt",
+                "start": 57,
+                "end": 58
+            }
+        ],
+        "kexec/arch/sh/crashdump-sh.c": [
+            {
+                "name": "crash_sh_memory_range_callback",
+                "start": 35,
+                "end": 72
+            },
+            {
+                "name": "crash_get_memory_ranges",
+                "start": 75,
+                "end": 83
+            },
+            {
+                "name": "ultoa",
+                "start": 94,
+                "end": 110
+            },
+            {
+                "name": "add_cmdline_param",
+                "start": 112,
+                "end": 143
+            },
+            {
+                "name": "load_crashdump_segments",
+                "start": 148,
+                "end": 172
+            },
+            {
+                "name": "is_crashkernel_mem_reserved",
+                "start": 174,
+                "end": 180
+            }
+        ],
+        "kexec/arch/sh/kexec-elf-sh.c": [
+            {
+                "name": "elf_sh_probe",
+                "start": 43,
+                "end": 61
+            },
+            {
+                "name": "elf_sh_usage",
+                "start": 63,
+                "end": 67
+            },
+            {
+                "name": "elf_sh_load",
+                "start": 69,
+                "end": 136
+            }
+        ],
+        "kexec/arch/sh/kexec-netbsd-sh.c": [
+            {
+                "name": "netbsd_sh_probe",
+                "start": 36,
+                "end": 48
+            },
+            {
+                "name": "netbsd_sh_usage",
+                "start": 50,
+                "end": 55
+            },
+            {
+                "name": "netbsd_sh_load",
+                "start": 57,
+                "end": 149
+            }
+        ],
+        "kexec/arch/sh/kexec-uImage-sh.c": [
+            {
+                "name": "uImage_sh_probe",
+                "start": 14,
+                "end": 17
+            },
+            {
+                "name": "uImage_sh_load",
+                "start": 19,
+                "end": 24
+            }
+        ],
+        "kexec/arch/sh/kexec-elf-rel-sh.c": [
+            {
+                "name": "machine_verify_elf_rel",
+                "start": 18,
+                "end": 29
+            },
+            {
+                "name": "machine_apply_elf_rel",
+                "start": 31,
+                "end": 53
+            }
+        ],
+        "kexec/arch/sh/kexec-sh.c": [
+            {
+                "name": "kexec_sh_memory_range_callback",
+                "start": 25,
+                "end": 38
+            },
+            {
+                "name": "get_memory_ranges",
+                "start": 41,
+                "end": 72
+            },
+            {
+                "name": "arch_usage",
+                "start": 86,
+                "end": 96
+            },
+            {
+                "name": "arch_process_options",
+                "start": 98,
+                "end": 130
+            },
+            {
+                "name": "arch_compat_trampoline",
+                "start": 143,
+                "end": 146
+            },
+            {
+                "name": "arch_update_purgatory",
+                "start": 148,
+                "end": 150
+            },
+            {
+                "name": "get_append",
+                "start": 154,
+                "end": 166
+            },
+            {
+                "name": "kexec_sh_setup_zero_page",
+                "start": 168,
+                "end": 182
+            },
+            {
+                "name": "is_32bit",
+                "start": 184,
+                "end": 212
+            },
+            {
+                "name": "virt_to_phys",
+                "start": 214,
+                "end": 238
+            },
+            {
+                "name": "add_segment",
+                "start": 243,
+                "end": 247
+            },
+            {
+                "name": "add_buffer",
+                "start": 252,
+                "end": 259
+            }
+        ],
+        "kexec/arch/s390/../../kexec-elf.h": [
+            {
+                "name": "build_elf_info",
+                "start": 93,
+                "end": 94
+            },
+            {
+                "name": "build_elf_exec_info",
+                "start": 95,
+                "end": 96
+            },
+            {
+                "name": "build_elf_rel_info",
+                "start": 97,
+                "end": 98
+            },
+            {
+                "name": "build_elf_core_info",
+                "start": 100,
+                "end": 101
+            },
+            {
+                "name": "elf_rel_load",
+                "start": 103,
+                "end": 104
+            },
+            {
+                "name": "elf_exec_build_load",
+                "start": 106,
+                "end": 107
+            },
+            {
+                "name": "elf_rel_build_load",
+                "start": 108,
+                "end": 110
+            },
+            {
+                "name": "elf_rel_find_symbol",
+                "start": 112,
+                "end": 113
+            },
+            {
+                "name": "elf_rel_set_symbol",
+                "start": 115,
+                "end": 116
+            },
+            {
+                "name": "elf_rel_get_symbol",
+                "start": 117,
+                "end": 118
+            },
+            {
+                "name": "machine_apply_elf_rel",
+                "start": 132,
+                "end": 133
+            }
+        ],
+        "kexec/arch/s390/../../kexec.h": [
+            {
+                "name": "get_memory_ranges",
+                "start": 174,
+                "end": 175
+            },
+            {
+                "name": "valid_memory_range",
+                "start": 176,
+                "end": 177
+            },
+            {
+                "name": "locate_hole",
+                "start": 180,
+                "end": 183
+            },
+            {
+                "name": "die",
+                "start": 238,
+                "end": 239
+            },
+            {
+                "name": "add_segment",
+                "start": 246,
+                "end": 247
+            },
+            {
+                "name": "add_segment_phys_virt",
+                "start": 248,
+                "end": 250
+            },
+            {
+                "name": "add_buffer",
+                "start": 251,
+                "end": 254
+            },
+            {
+                "name": "add_buffer_virt",
+                "start": 255,
+                "end": 258
+            },
+            {
+                "name": "add_buffer_phys_virt",
+                "start": 259,
+                "end": 262
+            },
+            {
+                "name": "kexec_iomem_for_each_line",
+                "start": 281,
+                "end": 287
+            }
+        ],
+        "kexec/arch/s390/../../kexec-syscall.h": [
+            {
+                "name": "kexec_load",
+                "start": 58,
+                "end": 62
+            }
+        ],
+        "kexec/arch/s390/kexec-s390.h": [
+            {
+                "name": "load_crashdump_segments",
+                "start": 30,
+                "end": 32
+            },
+            {
+                "name": "get_memory_ranges_s390",
+                "start": 33,
+                "end": 34
+            }
+        ],
+        "kexec/arch/s390/kexec-image.c": [
+            {
+                "name": "add_segment_check",
+                "start": 29,
+                "end": 36
+            },
+            {
+                "name": "command_line_add",
+                "start": 38,
+                "end": 46
+            },
+            {
+                "name": "image_s390_load",
+                "start": 48,
+                "end": 148
+            },
+            {
+                "name": "image_s390_probe",
+                "start": 150,
+                "end": 158
+            },
+            {
+                "name": "image_s390_usage",
+                "start": 160,
+                "end": 167
+            }
+        ],
+        "kexec/arch/s390/kexec-s390.c": [
+            {
+                "name": "read_str",
+                "start": 31,
+                "end": 46
+            },
+            {
+                "name": "memory_range_cnt",
+                "start": 51,
+                "end": 60
+            },
+            {
+                "name": "add_mem_hole",
+                "start": 67,
+                "end": 111
+            },
+            {
+                "name": "remove_offline_memory",
+                "start": 116,
+                "end": 142
+            },
+            {
+                "name": "get_memory_ranges_s390",
+                "start": 148,
+                "end": 191
+            },
+            {
+                "name": "get_memory_ranges",
+                "start": 207,
+                "end": 225
+            },
+            {
+                "name": "arch_usage",
+                "start": 234,
+                "end": 236
+            },
+            {
+                "name": "arch_process_options",
+                "start": 238,
+                "end": 241
+            },
+            {
+                "name": "arch_compat_trampoline",
+                "start": 249,
+                "end": 252
+            },
+            {
+                "name": "arch_update_purgatory",
+                "start": 254,
+                "end": 256
+            },
+            {
+                "name": "is_crashkernel_mem_reserved",
+                "start": 258,
+                "end": 264
+            }
+        ],
+        "kexec/arch/s390/crashdump-s390.c": [
+            {
+                "name": "load_crashdump_segments",
+                "start": 84,
+                "end": 88
+            }
+        ],
+        "kexec/arch/s390/kexec-elf-rel-s390.c": [
+            {
+                "name": "machine_verify_elf_rel",
+                "start": 15,
+                "end": 24
+            },
+            {
+                "name": "machine_apply_elf_rel",
+                "start": 26,
+                "end": 76
+            }
+        ],
+        "kexec/arch/ia64/../../kexec-elf.h": [
+            {
+                "name": "build_elf_info",
+                "start": 93,
+                "end": 94
+            },
+            {
+                "name": "build_elf_exec_info",
+                "start": 95,
+                "end": 96
+            },
+            {
+                "name": "build_elf_rel_info",
+                "start": 97,
+                "end": 98
+            },
+            {
+                "name": "build_elf_core_info",
+                "start": 100,
+                "end": 101
+            },
+            {
+                "name": "elf_rel_load",
+                "start": 103,
+                "end": 104
+            },
+            {
+                "name": "elf_exec_build_load",
+                "start": 106,
+                "end": 107
+            },
+            {
+                "name": "elf_rel_build_load",
+                "start": 108,
+                "end": 110
+            },
+            {
+                "name": "elf_rel_find_symbol",
+                "start": 112,
+                "end": 113
+            },
+            {
+                "name": "elf_rel_set_symbol",
+                "start": 115,
+                "end": 116
+            },
+            {
+                "name": "elf_rel_get_symbol",
+                "start": 117,
+                "end": 118
+            },
+            {
+                "name": "machine_apply_elf_rel",
+                "start": 132,
+                "end": 133
+            }
+        ],
+        "kexec/arch/ia64/../../kexec.h": [
+            {
+                "name": "get_memory_ranges",
+                "start": 174,
+                "end": 175
+            },
+            {
+                "name": "valid_memory_range",
+                "start": 176,
+                "end": 177
+            },
+            {
+                "name": "locate_hole",
+                "start": 180,
+                "end": 183
+            },
+            {
+                "name": "die",
+                "start": 238,
+                "end": 239
+            },
+            {
+                "name": "add_segment",
+                "start": 246,
+                "end": 247
+            },
+            {
+                "name": "add_segment_phys_virt",
+                "start": 248,
+                "end": 250
+            },
+            {
+                "name": "add_buffer",
+                "start": 251,
+                "end": 254
+            },
+            {
+                "name": "add_buffer_virt",
+                "start": 255,
+                "end": 258
+            },
+            {
+                "name": "add_buffer_phys_virt",
+                "start": 259,
+                "end": 262
+            },
+            {
+                "name": "kexec_iomem_for_each_line",
+                "start": 281,
+                "end": 287
+            }
+        ],
+        "kexec/arch/ia64/../../kexec-syscall.h": [
+            {
+                "name": "kexec_load",
+                "start": 58,
+                "end": 62
+            }
+        ],
+        "kexec/arch/ia64/kexec-ia64.h": [
+            {
+                "name": "elf_ia64_load",
+                "start": 6,
+                "end": 7
+            }
+        ],
+        "kexec/arch/ia64/crashdump-ia64.h": [
+            {
+                "name": "load_crashdump_segments",
+                "start": 6,
+                "end": 8
+            }
+        ],
+        "kexec/arch/ia64/crashdump-ia64.c": [
+            {
+                "name": "seg_comp",
+                "start": 63,
+                "end": 70
+            },
+            {
+                "name": "add_loaded_segments_info",
+                "start": 74,
+                "end": 106
+            },
+            {
+                "name": "exclude_crash_reserve_region",
+                "start": 111,
+                "end": 155
+            },
+            {
+                "name": "get_crash_memory_ranges",
+                "start": 157,
+                "end": 212
+            },
+            {
+                "name": "cmdline_add_elfcorehdr",
+                "start": 218,
+                "end": 229
+            },
+            {
+                "name": "load_crashdump_segments",
+                "start": 231,
+                "end": 280
+            },
+            {
+                "name": "is_crashkernel_mem_reserved",
+                "start": 282,
+                "end": 288
+            }
+        ],
+        "kexec/arch/ia64/../../crashdump.h": [
+            {
+                "name": "crash_create_elf32_headers",
+                "start": 43,
+                "end": 47
+            },
+            {
+                "name": "crash_create_elf64_headers",
+                "start": 49,
+                "end": 53
+            },
+            {
+                "name": "phys_to_virt",
+                "start": 57,
+                "end": 58
+            }
+        ],
+        "kexec/arch/ia64/kexec-iomem.c": [
+            {
+                "name": "proc_iomem",
+                "start": 18,
+                "end": 23
+            }
+        ],
+        "kexec/arch/ia64/kexec-elf-rel-ia64.c": [
+            {
+                "name": "machine_verify_elf_rel",
+                "start": 35,
+                "end": 47
+            },
+            {
+                "name": "ia64_patch",
+                "start": 49,
+                "end": 67
+            },
+            {
+                "name": "bundle",
+                "start": 69,
+                "end": 73
+            },
+            {
+                "name": "machine_apply_elf_rel",
+                "start": 75,
+                "end": 159
+            }
+        ],
+        "kexec/arch/ia64/kexec-elf-ia64.c": [
+            {
+                "name": "elf_ia64_probe",
+                "start": 56,
+                "end": 76
+            },
+            {
+                "name": "elf_ia64_usage",
+                "start": 78,
+                "end": 90
+            },
+            {
+                "name": "move_loaded_segments",
+                "start": 94,
+                "end": 116
+            },
+            {
+                "name": "elf_ia64_load",
+                "start": 118,
+                "end": 303
+            }
+        ],
+        "kexec/arch/ia64/kexec-ia64.c": [
+            {
+                "name": "split_range",
+                "start": 47,
+                "end": 76
+            },
+            {
+                "name": "get_memory_ranges",
+                "start": 79,
+                "end": 168
+            },
+            {
+                "name": "arch_usage",
+                "start": 177,
+                "end": 179
+            },
+            {
+                "name": "arch_process_options",
+                "start": 181,
+                "end": 192
+            },
+            {
+                "name": "arch_compat_trampoline",
+                "start": 199,
+                "end": 202
+            },
+            {
+                "name": "update_loaded_segments",
+                "start": 204,
+                "end": 242
+            },
+            {
+                "name": "arch_update_purgatory",
+                "start": 244,
+                "end": 246
+            }
+        ],
+        "kexec/arch/mips/../../kexec-elf.h": [
+            {
+                "name": "build_elf_info",
+                "start": 93,
+                "end": 94
+            },
+            {
+                "name": "build_elf_exec_info",
+                "start": 95,
+                "end": 96
+            },
+            {
+                "name": "build_elf_rel_info",
+                "start": 97,
+                "end": 98
+            },
+            {
+                "name": "build_elf_core_info",
+                "start": 100,
+                "end": 101
+            },
+            {
+                "name": "elf_rel_load",
+                "start": 103,
+                "end": 104
+            },
+            {
+                "name": "elf_exec_build_load",
+                "start": 106,
+                "end": 107
+            },
+            {
+                "name": "elf_rel_build_load",
+                "start": 108,
+                "end": 110
+            },
+            {
+                "name": "elf_rel_find_symbol",
+                "start": 112,
+                "end": 113
+            },
+            {
+                "name": "elf_rel_set_symbol",
+                "start": 115,
+                "end": 116
+            },
+            {
+                "name": "elf_rel_get_symbol",
+                "start": 117,
+                "end": 118
+            },
+            {
+                "name": "machine_apply_elf_rel",
+                "start": 132,
+                "end": 133
+            }
+        ],
+        "kexec/arch/mips/../../kexec.h": [
+            {
+                "name": "get_memory_ranges",
+                "start": 174,
+                "end": 175
+            },
+            {
+                "name": "valid_memory_range",
+                "start": 176,
+                "end": 177
+            },
+            {
+                "name": "locate_hole",
+                "start": 180,
+                "end": 183
+            },
+            {
+                "name": "die",
+                "start": 238,
+                "end": 239
+            },
+            {
+                "name": "add_segment",
+                "start": 246,
+                "end": 247
+            },
+            {
+                "name": "add_segment_phys_virt",
+                "start": 248,
+                "end": 250
+            },
+            {
+                "name": "add_buffer",
+                "start": 251,
+                "end": 254
+            },
+            {
+                "name": "add_buffer_virt",
+                "start": 255,
+                "end": 258
+            },
+            {
+                "name": "add_buffer_phys_virt",
+                "start": 259,
+                "end": 262
+            },
+            {
+                "name": "kexec_iomem_for_each_line",
+                "start": 281,
+                "end": 287
+            }
+        ],
+        "kexec/arch/mips/../../kexec-syscall.h": [
+            {
+                "name": "kexec_load",
+                "start": 58,
+                "end": 62
+            }
+        ],
+        "kexec/arch/mips/kexec-mips.h": [
+            {
+                "name": "elf_mips_load",
+                "start": 11,
+                "end": 12
+            }
+        ],
+        "kexec/arch/mips/kexec-mips.c": [
+            {
+                "name": "get_memory_ranges",
+                "start": 27,
+                "end": 68
+            },
+            {
+                "name": "arch_usage",
+                "start": 75,
+                "end": 81
+            },
+            {
+                "name": "arch_process_options",
+                "start": 89,
+                "end": 92
+            },
+            {
+                "name": "arch_compat_trampoline",
+                "start": 103,
+                "end": 107
+            },
+            {
+                "name": "arch_update_purgatory",
+                "start": 109,
+                "end": 111
+            },
+            {
+                "name": "virt_to_phys",
+                "start": 113,
+                "end": 116
+            },
+            {
+                "name": "add_segment",
+                "start": 121,
+                "end": 125
+            },
+            {
+                "name": "add_buffer",
+                "start": 130,
+                "end": 137
+            }
+        ],
+        "kexec/arch/mips/crashdump-mips.h": [
+            {
+                "name": "load_crashdump_segments",
+                "start": 5,
+                "end": 6
+            }
+        ],
+        "kexec/arch/mips/kexec-elf-mips.c": [
+            {
+                "name": "elf_mips_probe",
+                "start": 40,
+                "end": 62
+            },
+            {
+                "name": "elf_mips_usage",
+                "start": 64,
+                "end": 70
+            },
+            {
+                "name": "elf_mips_load",
+                "start": 72,
+                "end": 171
+            }
+        ],
+        "kexec/arch/mips/../../crashdump.h": [
+            {
+                "name": "crash_create_elf32_headers",
+                "start": 43,
+                "end": 47
+            },
+            {
+                "name": "crash_create_elf64_headers",
+                "start": 49,
+                "end": 53
+            },
+            {
+                "name": "phys_to_virt",
+                "start": 57,
+                "end": 58
+            }
+        ],
+        "kexec/arch/mips/crashdump-mips.c": [
+            {
+                "name": "get_kernel_paddr",
+                "start": 46,
+                "end": 61
+            },
+            {
+                "name": "get_kernel_vaddr_and_size",
+                "start": 63,
+                "end": 83
+            },
+            {
+                "name": "exclude_crash_reserve_region",
+                "start": 88,
+                "end": 135
+            },
+            {
+                "name": "get_crash_memory_ranges",
+                "start": 147,
+                "end": 218
+            },
+            {
+                "name": "ultoa",
+                "start": 221,
+                "end": 237
+            },
+            {
+                "name": "cmdline_add_mem",
+                "start": 241,
+                "end": 264
+            },
+            {
+                "name": "cmdline_add_elfcorehdr",
+                "start": 267,
+                "end": 288
+            },
+            {
+                "name": "load_crashdump_segments",
+                "start": 311,
+                "end": 369
+            },
+            {
+                "name": "is_crashkernel_mem_reserved",
+                "start": 371,
+                "end": 377
+            }
+        ],
+        "kexec/arch/mips/kexec-elf-rel-mips.c": [
+            {
+                "name": "machine_verify_elf_rel",
+                "start": 18,
+                "end": 30
+            },
+            {
+                "name": "machine_apply_elf_rel",
+                "start": 32,
+                "end": 44
+            }
+        ],
+        "kexec/arch/i386/../../kexec-elf.h": [
+            {
+                "name": "build_elf_info",
+                "start": 93,
+                "end": 94
+            },
+            {
+                "name": "build_elf_exec_info",
+                "start": 95,
+                "end": 96
+            },
+            {
+                "name": "build_elf_rel_info",
+                "start": 97,
+                "end": 98
+            },
+            {
+                "name": "build_elf_core_info",
+                "start": 100,
+                "end": 101
+            },
+            {
+                "name": "elf_rel_load",
+                "start": 103,
+                "end": 104
+            },
+            {
+                "name": "elf_exec_build_load",
+                "start": 106,
+                "end": 107
+            },
+            {
+                "name": "elf_rel_build_load",
+                "start": 108,
+                "end": 110
+            },
+            {
+                "name": "elf_rel_find_symbol",
+                "start": 112,
+                "end": 113
+            },
+            {
+                "name": "elf_rel_set_symbol",
+                "start": 115,
+                "end": 116
+            },
+            {
+                "name": "elf_rel_get_symbol",
+                "start": 117,
+                "end": 118
+            },
+            {
+                "name": "machine_apply_elf_rel",
+                "start": 132,
+                "end": 133
+            }
+        ],
+        "kexec/arch/i386/../../kexec.h": [
+            {
+                "name": "get_memory_ranges",
+                "start": 174,
+                "end": 175
+            },
+            {
+                "name": "valid_memory_range",
+                "start": 176,
+                "end": 177
+            },
+            {
+                "name": "locate_hole",
+                "start": 180,
+                "end": 183
+            },
+            {
+                "name": "die",
+                "start": 238,
+                "end": 239
+            },
+            {
+                "name": "add_segment",
+                "start": 246,
+                "end": 247
+            },
+            {
+                "name": "add_segment_phys_virt",
+                "start": 248,
+                "end": 250
+            },
+            {
+                "name": "add_buffer",
+                "start": 251,
+                "end": 254
+            },
+            {
+                "name": "add_buffer_virt",
+                "start": 255,
+                "end": 258
+            },
+            {
+                "name": "add_buffer_phys_virt",
+                "start": 259,
+                "end": 262
+            },
+            {
+                "name": "kexec_iomem_for_each_line",
+                "start": 281,
+                "end": 287
+            }
+        ],
+        "kexec/arch/i386/../../kexec-syscall.h": [
+            {
+                "name": "kexec_load",
+                "start": 58,
+                "end": 62
+            }
+        ],
+        "kexec/arch/i386/kexec-x86.h": [
+            {
+                "name": "multiboot_x86_load",
+                "start": 58,
+                "end": 59
+            },
+            {
+                "name": "elf_x86_load",
+                "start": 63,
+                "end": 64
+            },
+            {
+                "name": "bzImage_load",
+                "start": 68,
+                "end": 69
+            },
+            {
+                "name": "do_bzImage_load",
+                "start": 71,
+                "end": 75
+            },
+            {
+                "name": "beoboot_load",
+                "start": 78,
+                "end": 79
+            },
+            {
+                "name": "nbi_load",
+                "start": 83,
+                "end": 84
+            }
+        ],
+        "kexec/arch/i386/x86-linux-setup.h": [
+            {
+                "name": "setup_linux_bootloader_parameters_high",
+                "start": 6,
+                "end": 10
+            },
+            {
+                "name": "setup_linux_bootloader_parameters",
+                "start": 11,
+                "end": 21
+            },
+            {
+                "name": "setup_linux_system_parameters",
+                "start": 22,
+                "end": 23
+            }
+        ],
+        "kexec/arch/i386/crashdump-x86.h": [
+            {
+                "name": "load_crashdump_segments",
+                "start": 5,
+                "end": 6
+            }
+        ],
+        "kexec/arch/i386/kexec-bzImage.c": [
+            {
+                "name": "bzImage_probe",
+                "start": 45,
+                "end": 87
+            },
+            {
+                "name": "bzImage_usage",
+                "start": 90,
+                "end": 100
+            },
+            {
+                "name": "do_bzImage_load",
+                "start": 102,
+                "end": 379
+            },
+            {
+                "name": "bzImage_load",
+                "start": 381,
+                "end": 454
+            }
+        ],
+        "kexec/arch/i386/kexec-elf-rel-x86.c": [
+            {
+                "name": "machine_verify_elf_rel",
+                "start": 6,
+                "end": 19
+            },
+            {
+                "name": "machine_apply_elf_rel",
+                "start": 21,
+                "end": 35
+            }
+        ],
+        "kexec/arch/i386/../../kexec-elf-boot.h": [
+            {
+                "name": "elf_boot_notes",
+                "start": 4,
+                "end": 6
+            }
+        ],
+        "kexec/arch/i386/kexec-elf-x86.c": [
+            {
+                "name": "elf_x86_probe",
+                "start": 45,
+                "end": 71
+            },
+            {
+                "name": "elf_x86_usage",
+                "start": 73,
+                "end": 85
+            },
+            {
+                "name": "elf_x86_load",
+                "start": 87,
+                "end": 311
+            }
+        ],
+        "kexec/arch/i386/kexec-x86.c": [
+            {
+                "name": "arch_usage",
+                "start": 47,
+                "end": 60
+            },
+            {
+                "name": "arch_process_options",
+                "start": 73,
+                "end": 152
+            },
+            {
+                "name": "arch_compat_trampoline",
+                "start": 166,
+                "end": 181
+            },
+            {
+                "name": "arch_update_purgatory",
+                "start": 183,
+                "end": 208
+            }
+        ],
+        "kexec/arch/i386/kexec-multiboot-x86.c": [
+            {
+                "name": "multiboot_x86_probe",
+                "start": 66,
+                "end": 125
+            },
+            {
+                "name": "multiboot_x86_usage",
+                "start": 128,
+                "end": 135
+            },
+            {
+                "name": "multiboot_x86_load",
+                "start": 137,
+                "end": 392
+            }
+        ],
+        "kexec/arch/i386/kexec-nbi.c": [
+            {
+                "name": "nbi_probe",
+                "start": 71,
+                "end": 145
+            },
+            {
+                "name": "nbi_usage",
+                "start": 147,
+                "end": 151
+            },
+            {
+                "name": "nbi_load",
+                "start": 153,
+                "end": 249
+            }
+        ],
+        "kexec/arch/i386/../../crashdump.h": [
+            {
+                "name": "crash_create_elf32_headers",
+                "start": 43,
+                "end": 47
+            },
+            {
+                "name": "crash_create_elf64_headers",
+                "start": 49,
+                "end": 53
+            },
+            {
+                "name": "phys_to_virt",
+                "start": 57,
+                "end": 58
+            }
+        ],
+        "kexec/arch/i386/kexec-x86-common.c": [
+            {
+                "name": "get_memory_ranges_proc_iomem",
+                "start": 57,
+                "end": 112
+            },
+            {
+                "name": "get_memory_ranges_sysfs",
+                "start": 124,
+                "end": 140
+            },
+            {
+                "name": "get_memory_ranges_xen",
+                "start": 207,
+                "end": 210
+            },
+            {
+                "name": "remove_range",
+                "start": 213,
+                "end": 221
+            },
+            {
+                "name": "fixup_memory_ranges",
+                "start": 233,
+                "end": 283
+            },
+            {
+                "name": "efi_map_added",
+                "start": 295,
+                "end": 305
+            },
+            {
+                "name": "get_memory_ranges",
+                "start": 321,
+                "end": 379
+            }
+        ],
+        "kexec/arch/i386/kexec-beoboot-x86.c": [
+            {
+                "name": "beoboot_probe",
+                "start": 41,
+                "end": 63
+            },
+            {
+                "name": "beoboot_usage",
+                "start": 65,
+                "end": 71
+            },
+            {
+                "name": "beoboot_load",
+                "start": 77,
+                "end": 131
+            }
+        ],
+        "kexec/arch/i386/x86-linux-setup.c": [
+            {
+                "name": "init_linux_parameters",
+                "start": 39,
+                "end": 48
+            },
+            {
+                "name": "setup_linux_bootloader_parameters_high",
+                "start": 50,
+                "end": 123
+            },
+            {
+                "name": "setup_linux_vesafb",
+                "start": 125,
+                "end": 177
+            },
+            {
+                "name": "file_scanf",
+                "start": 190,
+                "end": 212
+            },
+            {
+                "name": "parse_edd_extensions",
+                "start": 214,
+                "end": 249
+            },
+            {
+                "name": "read_edd_raw_data",
+                "start": 251,
+                "end": 281
+            },
+            {
+                "name": "add_edd_entry",
+                "start": 283,
+                "end": 361
+            },
+            {
+                "name": "zero_edd",
+                "start": 363,
+                "end": 371
+            },
+            {
+                "name": "setup_edd_info",
+                "start": 373,
+                "end": 414
+            },
+            {
+                "name": "find_mnt_by_fsname",
+                "start": 421,
+                "end": 437
+            },
+            {
+                "name": "get_bootparam",
+                "start": 439,
+                "end": 474
+            },
+            {
+                "name": "setup_subarch",
+                "start": 476,
+                "end": 481
+            },
+            {
+                "name": "get_efi_value",
+                "start": 512,
+                "end": 536
+            },
+            {
+                "name": "get_efi_values",
+                "start": 538,
+                "end": 551
+            },
+            {
+                "name": "get_efi_runtime_map",
+                "start": 553,
+                "end": 595
+            },
+            {
+                "name": "add_setup_data",
+                "start": 613,
+                "end": 622
+            },
+            {
+                "name": "setup_efi_data",
+                "start": 630,
+                "end": 688
+            },
+            {
+                "name": "add_e820_map_from_mr",
+                "start": 690,
+                "end": 732
+            },
+            {
+                "name": "setup_e820_ext",
+                "start": 734,
+                "end": 751
+            },
+            {
+                "name": "setup_e820",
+                "start": 753,
+                "end": 780
+            },
+            {
+                "name": "get_efi_mem_desc_version",
+                "start": 782,
+                "end": 788
+            },
+            {
+                "name": "setup_efi_info",
+                "start": 790,
+                "end": 818
+            },
+            {
+                "name": "setup_linux_system_parameters",
+                "start": 820,
+                "end": 867
+            }
+        ],
+        "kexec/arch/i386/crashdump-x86.c": [
+            {
+                "name": "get_kernel_page_offset",
+                "start": 56,
+                "end": 76
+            },
+            {
+                "name": "get_kernel_paddr",
+                "start": 82,
+                "end": 102
+            },
+            {
+                "name": "get_kernel_stext_sym",
+                "start": 105,
+                "end": 132
+            },
+            {
+                "name": "get_kernel_vaddr_and_size",
+                "start": 141,
+                "end": 234
+            },
+            {
+                "name": "get_crash_memory_ranges",
+                "start": 260,
+                "end": 356
+            },
+            {
+                "name": "get_crash_memory_ranges_xen",
+                "start": 406,
+                "end": 410
+            },
+            {
+                "name": "segregate_lowmem_region",
+                "start": 413,
+                "end": 435
+            },
+            {
+                "name": "exclude_region",
+                "start": 440,
+                "end": 478
+            },
+            {
+                "name": "add_memmap",
+                "start": 482,
+                "end": 526
+            },
+            {
+                "name": "delete_memmap",
+                "start": 530,
+                "end": 606
+            },
+            {
+                "name": "ultoa",
+                "start": 609,
+                "end": 625
+            },
+            {
+                "name": "cmdline_add_memmap_internal",
+                "start": 627,
+                "end": 652
+            },
+            {
+                "name": "cmdline_add_memmap",
+                "start": 656,
+                "end": 702
+            },
+            {
+                "name": "cmdline_add_elfcorehdr",
+                "start": 705,
+                "end": 730
+            },
+            {
+                "name": "get_crash_notes",
+                "start": 738,
+                "end": 765
+            },
+            {
+                "name": "get_core_type",
+                "start": 767,
+                "end": 782
+            },
+            {
+                "name": "sysfs_efi_runtime_map_exist",
+                "start": 784,
+                "end": 794
+            },
+            {
+                "name": "cmdline_add_efi",
+                "start": 797,
+                "end": 828
+            },
+            {
+                "name": "get_backup_area",
+                "start": 830,
+                "end": 852
+            },
+            {
+                "name": "load_crashdump_segments",
+                "start": 858,
+                "end": 1018
+            },
+            {
+                "name": "get_max_crash_kernel_limit",
+                "start": 1020,
+                "end": 1040
+            },
+            {
+                "name": "crashkernel_mem_callback",
+                "start": 1042,
+                "end": 1054
+            },
+            {
+                "name": "is_crashkernel_mem_reserved",
+                "start": 1056,
+                "end": 1078
+            }
+        ],
+        "kexec/arch/arm/../../kexec-elf.h": [
+            {
+                "name": "build_elf_info",
+                "start": 93,
+                "end": 94
+            },
+            {
+                "name": "build_elf_exec_info",
+                "start": 95,
+                "end": 96
+            },
+            {
+                "name": "build_elf_rel_info",
+                "start": 97,
+                "end": 98
+            },
+            {
+                "name": "build_elf_core_info",
+                "start": 100,
+                "end": 101
+            },
+            {
+                "name": "elf_rel_load",
+                "start": 103,
+                "end": 104
+            },
+            {
+                "name": "elf_exec_build_load",
+                "start": 106,
+                "end": 107
+            },
+            {
+                "name": "elf_rel_build_load",
+                "start": 108,
+                "end": 110
+            },
+            {
+                "name": "elf_rel_find_symbol",
+                "start": 112,
+                "end": 113
+            },
+            {
+                "name": "elf_rel_set_symbol",
+                "start": 115,
+                "end": 116
+            },
+            {
+                "name": "elf_rel_get_symbol",
+                "start": 117,
+                "end": 118
+            },
+            {
+                "name": "machine_apply_elf_rel",
+                "start": 132,
+                "end": 133
+            }
+        ],
+        "kexec/arch/arm/../../kexec.h": [
+            {
+                "name": "get_memory_ranges",
+                "start": 174,
+                "end": 175
+            },
+            {
+                "name": "valid_memory_range",
+                "start": 176,
+                "end": 177
+            },
+            {
+                "name": "locate_hole",
+                "start": 180,
+                "end": 183
+            },
+            {
+                "name": "die",
+                "start": 238,
+                "end": 239
+            },
+            {
+                "name": "add_segment",
+                "start": 246,
+                "end": 247
+            },
+            {
+                "name": "add_segment_phys_virt",
+                "start": 248,
+                "end": 250
+            },
+            {
+                "name": "add_buffer",
+                "start": 251,
+                "end": 254
+            },
+            {
+                "name": "add_buffer_virt",
+                "start": 255,
+                "end": 258
+            },
+            {
+                "name": "add_buffer_phys_virt",
+                "start": 259,
+                "end": 262
+            },
+            {
+                "name": "kexec_iomem_for_each_line",
+                "start": 281,
+                "end": 287
+            }
+        ],
+        "kexec/arch/arm/kexec-elf-rel-arm.c": [
+            {
+                "name": "machine_verify_elf_rel",
+                "start": 6,
+                "end": 19
+            },
+            {
+                "name": "machine_apply_elf_rel",
+                "start": 21,
+                "end": 35
+            }
+        ],
+        "kexec/arch/arm/../../crashdump.h": [
+            {
+                "name": "crash_create_elf32_headers",
+                "start": 43,
+                "end": 47
+            },
+            {
+                "name": "crash_create_elf64_headers",
+                "start": 49,
+                "end": 53
+            },
+            {
+                "name": "phys_to_virt",
+                "start": 57,
+                "end": 58
+            }
+        ],
+        "kexec/arch/arm/phys_to_virt.c": [
+            {
+                "name": "phys_to_virt",
+                "start": 16,
+                "end": 20
+            }
+        ],
+        "kexec/arch/arm/../../kexec-syscall.h": [
+            {
+                "name": "kexec_load",
+                "start": 58,
+                "end": 62
+            }
+        ],
+        "kexec/arch/arm/kexec-arm.h": [
+            {
+                "name": "zImage_arm_load",
+                "start": 12,
+                "end": 13
+            },
+            {
+                "name": "uImage_arm_load",
+                "start": 17,
+                "end": 18
+            }
+        ],
+        "kexec/arch/arm/kexec-zImage-arm.c": [
+            {
+                "name": "zImage_arm_probe",
+                "start": 91,
+                "end": 98
+            },
+            {
+                "name": "zImage_arm_usage",
+                "start": 100,
+                "end": 111
+            },
+            {
+                "name": "atag_read_tags",
+                "start": 113,
+                "end": 140
+            },
+            {
+                "name": "atag_arm_load",
+                "start": 143,
+                "end": 220
+            },
+            {
+                "name": "setup_dtb_prop",
+                "start": 222,
+                "end": 281
+            },
+            {
+                "name": "zImage_arm_load",
+                "start": 283,
+                "end": 524
+            }
+        ],
+        "kexec/arch/arm/kexec-arm.c": [
+            {
+                "name": "get_memory_ranges",
+                "start": 25,
+                "end": 73
+            },
+            {
+                "name": "arch_usage",
+                "start": 84,
+                "end": 93
+            },
+            {
+                "name": "arch_process_options",
+                "start": 95,
+                "end": 98
+            },
+            {
+                "name": "arch_compat_trampoline",
+                "start": 105,
+                "end": 108
+            },
+            {
+                "name": "arch_update_purgatory",
+                "start": 110,
+                "end": 112
+            }
+        ],
+        "kexec/arch/arm/crashdump-arm.c": [
+            {
+                "name": "get_kernel_stext_sym",
+                "start": 67,
+                "end": 93
+            },
+            {
+                "name": "get_kernel_page_offset",
+                "start": 95,
+                "end": 122
+            },
+            {
+                "name": "crash_range_callback",
+                "start": 137,
+                "end": 160
+            },
+            {
+                "name": "crash_exclude_range",
+                "start": 168,
+                "end": 198
+            },
+            {
+                "name": "range_cmp",
+                "start": 200,
+                "end": 211
+            },
+            {
+                "name": "crash_get_memory_ranges",
+                "start": 222,
+                "end": 248
+            },
+            {
+                "name": "cmdline_add_elfcorehdr",
+                "start": 259,
+                "end": 273
+            },
+            {
+                "name": "cmdline_add_mem",
+                "start": 284,
+                "end": 297
+            },
+            {
+                "name": "range_size",
+                "start": 299,
+                "end": 302
+            },
+            {
+                "name": "dump_memory_ranges",
+                "start": 304,
+                "end": 320
+            },
+            {
+                "name": "load_crashdump_segments",
+                "start": 333,
+                "end": 406
+            },
+            {
+                "name": "is_crashkernel_mem_reserved",
+                "start": 408,
+                "end": 416
+            }
+        ],
+        "kexec/arch/arm/kexec-uImage-arm.c": [
+            {
+                "name": "uImage_arm_probe",
+                "start": 12,
+                "end": 15
+            },
+            {
+                "name": "uImage_arm_load",
+                "start": 17,
+                "end": 22
+            }
+        ],
+        "kexec/arch/ppc/../../kexec-elf.h": [
+            {
+                "name": "build_elf_info",
+                "start": 93,
+                "end": 94
+            },
+            {
+                "name": "build_elf_exec_info",
+                "start": 95,
+                "end": 96
+            },
+            {
+                "name": "build_elf_rel_info",
+                "start": 97,
+                "end": 98
+            },
+            {
+                "name": "build_elf_core_info",
+                "start": 100,
+                "end": 101
+            },
+            {
+                "name": "elf_rel_load",
+                "start": 103,
+                "end": 104
+            },
+            {
+                "name": "elf_exec_build_load",
+                "start": 106,
+                "end": 107
+            },
+            {
+                "name": "elf_rel_build_load",
+                "start": 108,
+                "end": 110
+            },
+            {
+                "name": "elf_rel_find_symbol",
+                "start": 112,
+                "end": 113
+            },
+            {
+                "name": "elf_rel_set_symbol",
+                "start": 115,
+                "end": 116
+            },
+            {
+                "name": "elf_rel_get_symbol",
+                "start": 117,
+                "end": 118
+            },
+            {
+                "name": "machine_apply_elf_rel",
+                "start": 132,
+                "end": 133
+            }
+        ],
+        "kexec/arch/ppc/../../kexec.h": [
+            {
+                "name": "get_memory_ranges",
+                "start": 174,
+                "end": 175
+            },
+            {
+                "name": "valid_memory_range",
+                "start": 176,
+                "end": 177
+            },
+            {
+                "name": "locate_hole",
+                "start": 180,
+                "end": 183
+            },
+            {
+                "name": "die",
+                "start": 238,
+                "end": 239
+            },
+            {
+                "name": "add_segment",
+                "start": 246,
+                "end": 247
+            },
+            {
+                "name": "add_segment_phys_virt",
+                "start": 248,
+                "end": 250
+            },
+            {
+                "name": "add_buffer",
+                "start": 251,
+                "end": 254
+            },
+            {
+                "name": "add_buffer_virt",
+                "start": 255,
+                "end": 258
+            },
+            {
+                "name": "add_buffer_phys_virt",
+                "start": 259,
+                "end": 262
+            },
+            {
+                "name": "kexec_iomem_for_each_line",
+                "start": 281,
+                "end": 287
+            }
+        ],
+        "kexec/arch/ppc/kexec-ppc.h": [
+            {
+                "name": "elf_ppc_load",
+                "start": 27,
+                "end": 28
+            },
+            {
+                "name": "uImage_ppc_load",
+                "start": 32,
+                "end": 33
+            },
+            {
+                "name": "dol_ppc_load",
+                "start": 37,
+                "end": 38
+            },
+            {
+                "name": "read_memory_region_limits",
+                "start": 76,
+                "end": 77
+            }
+        ],
+        "kexec/arch/ppc/../../kexec-syscall.h": [
+            {
+                "name": "kexec_load",
+                "start": 58,
+                "end": 62
+            }
+        ],
+        "kexec/arch/ppc/crashdump-powerpc.h": [
+            {
+                "name": "load_crashdump_segments",
+                "start": 5,
+                "end": 6
+            }
+        ],
+        "kexec/arch/ppc/fixup_dtb.h": [
+            {
+                "name": "fixup_dtb_init",
+                "start": 4,
+                "end": 5
+            },
+            {
+                "name": "fixup_dtb_finalize",
+                "start": 7,
+                "end": 8
+            }
+        ],
+        "kexec/arch/ppc/kexec-elf-ppc.c": [
+            {
+                "name": "create_flatten_tree",
+                "start": 37,
+                "end": 38
+            },
+            {
+                "name": "elf_ppc_probe",
+                "start": 77,
+                "end": 100
+            },
+            {
+                "name": "elf_ppc_usage",
+                "start": 139,
+                "end": 152
+            },
+            {
+                "name": "elf_ppc_load",
+                "start": 154,
+                "end": 464
+            }
+        ],
+        "kexec/arch/ppc/ops.h": [
+            {
+                "name": "finddevice",
+                "start": 49,
+                "end": 52
+            },
+            {
+                "name": "getprop",
+                "start": 54,
+                "end": 57
+            },
+            {
+                "name": "setprop",
+                "start": 59,
+                "end": 63
+            },
+            {
+                "name": "setprop_str",
+                "start": 70,
+                "end": 76
+            },
+            {
+                "name": "get_parent",
+                "start": 78,
+                "end": 81
+            },
+            {
+                "name": "create_node",
+                "start": 83,
+                "end": 86
+            },
+            {
+                "name": "find_node_by_prop_value",
+                "start": 89,
+                "end": 98
+            },
+            {
+                "name": "find_node_by_prop_value_str",
+                "start": 100,
+                "end": 106
+            },
+            {
+                "name": "find_node_by_devtype",
+                "start": 108,
+                "end": 112
+            },
+            {
+                "name": "find_node_by_alias",
+                "start": 114,
+                "end": 125
+            },
+            {
+                "name": "find_node_by_compatible",
+                "start": 127,
+                "end": 134
+            },
+            {
+                "name": "get_path",
+                "start": 140,
+                "end": 146
+            }
+        ],
+        "kexec/arch/ppc/libfdt-wrapper.c": [
+            {
+                "name": "expand_buf",
+                "start": 61,
+                "end": 76
+            },
+            {
+                "name": "fdt_wrapper_finddevice",
+                "start": 78,
+                "end": 81
+            },
+            {
+                "name": "fdt_wrapper_getprop",
+                "start": 83,
+                "end": 94
+            },
+            {
+                "name": "fdt_wrapper_setprop",
+                "start": 96,
+                "end": 108
+            },
+            {
+                "name": "fdt_wrapper_get_parent",
+                "start": 110,
+                "end": 113
+            },
+            {
+                "name": "fdt_wrapper_create_node",
+                "start": 115,
+                "end": 126
+            },
+            {
+                "name": "fdt_wrapper_find_node_by_prop_value",
+                "start": 128,
+                "end": 136
+            },
+            {
+                "name": "fdt_wrapper_find_node_by_compatible",
+                "start": 138,
+                "end": 144
+            },
+            {
+                "name": "fdt_wrapper_get_path",
+                "start": 146,
+                "end": 154
+            },
+            {
+                "name": "fdt_wrapper_finalize",
+                "start": 156,
+                "end": 165
+            },
+            {
+                "name": "fdt_init",
+                "start": 167,
+                "end": 189
+            }
+        ],
+        "kexec/arch/ppc/fixup_dtb.c": [
+            {
+                "name": "print_fdt_reserve_regions",
+                "start": 20,
+                "end": 38
+            },
+            {
+                "name": "fixup_nodes",
+                "start": 41,
+                "end": 87
+            },
+            {
+                "name": "fixup_cmdline",
+                "start": 95,
+                "end": 114
+            },
+            {
+                "name": "expand_buf",
+                "start": 118,
+                "end": 135
+            },
+            {
+                "name": "fixup_reserve_regions",
+                "start": 137,
+                "end": 209
+            },
+            {
+                "name": "fixup_memory",
+                "start": 211,
+                "end": 271
+            },
+            {
+                "name": "fixup_crashkernel",
+                "start": 277,
+                "end": 292
+            },
+            {
+                "name": "fixup_initrd",
+                "start": 296,
+                "end": 332
+            },
+            {
+                "name": "fixup_dtb_init",
+                "start": 334,
+                "end": 370
+            },
+            {
+                "name": "save_fixed_up_dtb",
+                "start": 372,
+                "end": 388
+            },
+            {
+                "name": "fixup_dtb_finalize",
+                "start": 390,
+                "end": 406
+            }
+        ],
+        "kexec/arch/ppc/fs2dt.c": [
+            {
+                "name": "reserve",
+                "start": 52,
+                "end": 65
+            },
+            {
+                "name": "checkprop",
+                "start": 68,
+                "end": 101
+            },
+            {
+                "name": "propnum",
+                "start": 107,
+                "end": 123
+            },
+            {
+                "name": "add_usable_mem_property",
+                "start": 125,
+                "end": 181
+            },
+            {
+                "name": "putprops",
+                "start": 184,
+                "end": 289
+            },
+            {
+                "name": "comparefunc",
+                "start": 295,
+                "end": 311
+            },
+            {
+                "name": "putnode",
+                "start": 317,
+                "end": 398
+            },
+            {
+                "name": "create_flatten_tree",
+                "start": 400,
+                "end": 459
+            }
+        ],
+        "kexec/arch/ppc/kexec-uImage-ppc.c": [
+            {
+                "name": "create_flatten_tree",
+                "start": 20,
+                "end": 21
+            },
+            {
+                "name": "uImage_ppc_usage",
+                "start": 36,
+                "end": 47
+            },
+            {
+                "name": "slurp_ramdisk_ppc",
+                "start": 54,
+                "end": 77
+            },
+            {
+                "name": "uImage_ppc_probe",
+                "start": 79,
+                "end": 82
+            },
+            {
+                "name": "ppc_load_bare_bits",
+                "start": 84,
+                "end": 318
+            },
+            {
+                "name": "uImage_ppc_load",
+                "start": 320,
+                "end": 332
+            }
+        ],
+        "kexec/arch/ppc/../../crashdump.h": [
+            {
+                "name": "crash_create_elf32_headers",
+                "start": 43,
+                "end": 47
+            },
+            {
+                "name": "crash_create_elf64_headers",
+                "start": 49,
+                "end": 53
+            },
+            {
+                "name": "phys_to_virt",
+                "start": 57,
+                "end": 58
+            }
+        ],
+        "kexec/arch/ppc/crashdump-powerpc.c": [
+            {
+                "name": "add_crash_memory_range",
+                "start": 57,
+                "end": 75
+            },
+            {
+                "name": "get_crash_memory_ranges",
+                "start": 89,
+                "end": 228
+            },
+            {
+                "name": "ulltoa",
+                "start": 231,
+                "end": 247
+            },
+            {
+                "name": "add_cmdline",
+                "start": 250,
+                "end": 256
+            },
+            {
+                "name": "add_cmdline_param",
+                "start": 258,
+                "end": 286
+            },
+            {
+                "name": "load_crashdump_segments",
+                "start": 292,
+                "end": 359
+            },
+            {
+                "name": "add_usable_mem_rgns",
+                "start": 365,
+                "end": 398
+            },
+            {
+                "name": "is_crashkernel_mem_reserved",
+                "start": 400,
+                "end": 409
+            }
+        ],
+        "kexec/arch/ppc/kexec-dol-ppc.c": [
+            {
+                "name": "print_sects_bitmap",
+                "start": 129,
+                "end": 142
+            },
+            {
+                "name": "print_dol_segment",
+                "start": 144,
+                "end": 152
+            },
+            {
+                "name": "load_dol_segments",
+                "start": 154,
+                "end": 187
+            },
+            {
+                "name": "fix_dol_segments_overlaps",
+                "start": 189,
+                "end": 235
+            },
+            {
+                "name": "dol_ppc_probe",
+                "start": 237,
+                "end": 309
+            },
+            {
+                "name": "dol_ppc_usage",
+                "start": 311,
+                "end": 317
+            },
+            {
+                "name": "dol_ppc_load",
+                "start": 319,
+                "end": 468
+            }
+        ],
+        "kexec/arch/ppc/kexec-elf-rel-ppc.c": [
+            {
+                "name": "machine_verify_elf_rel",
+                "start": 6,
+                "end": 18
+            },
+            {
+                "name": "machine_apply_elf_rel",
+                "start": 20,
+                "end": 68
+            }
+        ],
+        "kexec/arch/ppc/kexec-ppc.c": [
+            {
+                "name": "init_memory_region_info",
+                "start": 44,
+                "end": 83
+            },
+            {
+                "name": "read_memory_region_limits",
+                "start": 90,
+                "end": 130
+            },
+            {
+                "name": "arch_reuse_initrd",
+                "start": 132,
+                "end": 135
+            },
+            {
+                "name": "count_memory_ranges",
+                "start": 168,
+                "end": 194
+            },
+            {
+                "name": "cleanup_memory_ranges",
+                "start": 196,
+                "end": 201
+            },
+            {
+                "name": "alloc_memory_ranges",
+                "start": 207,
+                "end": 234
+            },
+            {
+                "name": "sort_ranges",
+                "start": 237,
+                "end": 254
+            },
+            {
+                "name": "sort_base_ranges",
+                "start": 260,
+                "end": 278
+            },
+            {
+                "name": "realloc_memory_ranges",
+                "start": 280,
+                "end": 313
+            },
+            {
+                "name": "get_base_ranges",
+                "start": 316,
+                "end": 386
+            },
+            {
+                "name": "read_kernel_memory_limit",
+                "start": 388,
+                "end": 424
+            },
+            {
+                "name": "get_devtree_details",
+                "start": 429,
+                "end": 785
+            },
+            {
+                "name": "setup_memory_ranges",
+                "start": 789,
+                "end": 876
+            },
+            {
+                "name": "get_memory_ranges_dt",
+                "start": 880,
+                "end": 893
+            },
+            {
+                "name": "get_memory_ranges",
+                "start": 897,
+                "end": 910
+            },
+            {
+                "name": "arch_usage",
+                "start": 919,
+                "end": 921
+            },
+            {
+                "name": "arch_process_options",
+                "start": 923,
+                "end": 926
+            },
+            {
+                "name": "arch_compat_trampoline",
+                "start": 936,
+                "end": 939
+            },
+            {
+                "name": "arch_update_purgatory",
+                "start": 941,
+                "end": 943
+            }
+        ],
+        "kexec/libfdt/libfdt_env.h": [
+            {
+                "name": "fdt32_to_cpu",
+                "start": 9,
+                "end": 12
+            },
+            {
+                "name": "fdt64_to_cpu",
+                "start": 15,
+                "end": 19
+            }
+        ],
+        "kexec/libfdt/libfdt.h": [
+            {
+                "name": "fdt_offset_ptr_w",
+                "start": 126,
+                "end": 129
+            },
+            {
+                "name": "fdt_subnode_offset_namelen",
+                "start": 271,
+                "end": 272
+            },
+            {
+                "name": "fdt_get_property",
+                "start": 372,
+                "end": 373
+            },
+            {
+                "name": "fdt_get_property_w",
+                "start": 374,
+                "end": 380
+            },
+            {
+                "name": "fdt_getprop",
+                "start": 409,
+                "end": 410
+            },
+            {
+                "name": "fdt_getprop_w",
+                "start": 411,
+                "end": 415
+            },
+            {
+                "name": "fdt_supernode_atdepth_offset",
+                "start": 488,
+                "end": 489
+            },
+            {
+                "name": "fdt_node_offset_by_prop_value",
+                "start": 573,
+                "end": 575
+            },
+            {
+                "name": "fdt_node_check_compatible",
+                "start": 620,
+                "end": 621
+            },
+            {
+                "name": "fdt_node_offset_by_compatible",
+                "start": 657,
+                "end": 658
+            },
+            {
+                "name": "fdt_setprop_inplace",
+                "start": 692,
+                "end": 693
+            },
+            {
+                "name": "fdt_setprop_inplace_cell",
+                "start": 723,
+                "end": 728
+            },
+            {
+                "name": "fdt_property_cell",
+                "start": 789,
+                "end": 793
+            },
+            {
+                "name": "fdt_setprop",
+                "start": 908,
+                "end": 909
+            },
+            {
+                "name": "fdt_setprop_cell",
+                "start": 939,
+                "end": 944
+            },
+            {
+                "name": "fdt_add_subnode_namelen",
+                "start": 1013,
+                "end": 1014
+            },
+            {
+                "name": "fdt_node_len",
+                "start": 1083,
+                "end": 1087
+            },
+            {
+                "name": "fdt_prop_len",
+                "start": 1093,
+                "end": 1098
+            }
+        ],
+        "kexec/libfdt/libfdt_internal.h": [
+            {
+                "name": "_fdt_offset_ptr",
+                "start": 67,
+                "end": 70
+            },
+            {
+                "name": "_fdt_offset_ptr_w",
+                "start": 72,
+                "end": 75
+            },
+            {
+                "name": "_fdt_mem_rsv",
+                "start": 77,
+                "end": 84
+            },
+            {
+                "name": "_fdt_mem_rsv_w",
+                "start": 85,
+                "end": 88
+            }
+        ],
+        "kexec/libfdt/fdt_sw.c": [
+            {
+                "name": "_fdt_sw_check_header",
+                "start": 58,
+                "end": 64
+            },
+            {
+                "name": "_fdt_grab_space",
+                "start": 73,
+                "end": 86
+            },
+            {
+                "name": "fdt_create",
+                "start": 88,
+                "end": 108
+            },
+            {
+                "name": "fdt_add_reservemap_entry",
+                "start": 110,
+                "end": 131
+            },
+            {
+                "name": "fdt_finish_reservemap",
+                "start": 133,
+                "end": 136
+            },
+            {
+                "name": "fdt_begin_node",
+                "start": 138,
+                "end": 152
+            },
+            {
+                "name": "fdt_end_node",
+                "start": 154,
+                "end": 166
+            },
+            {
+                "name": "_fdt_find_add_string",
+                "start": 168,
+                "end": 189
+            },
+            {
+                "name": "fdt_property",
+                "start": 191,
+                "end": 211
+            },
+            {
+                "name": "fdt_finish",
+                "start": 213,
+                "end": 257
+            }
+        ],
+        "kexec/libfdt/fdt_wip.c": [
+            {
+                "name": "fdt_setprop_inplace",
+                "start": 58,
+                "end": 73
+            },
+            {
+                "name": "_fdt_nop_region",
+                "start": 75,
+                "end": 81
+            },
+            {
+                "name": "fdt_nop_property",
+                "start": 83,
+                "end": 95
+            },
+            {
+                "name": "_fdt_node_end_offset",
+                "start": 97,
+                "end": 132
+            },
+            {
+                "name": "fdt_nop_node",
+                "start": 134,
+                "end": 145
+            }
+        ],
+        "kexec/libfdt/fdt_rw.c": [
+            {
+                "name": "_fdt_blocks_misordered",
+                "start": 58,
+                "end": 68
+            },
+            {
+                "name": "_fdt_rw_check_header",
+                "start": 70,
+                "end": 83
+            },
+            {
+                "name": "_fdt_data_size",
+                "start": 92,
+                "end": 95
+            },
+            {
+                "name": "_fdt_splice",
+                "start": 97,
+                "end": 108
+            },
+            {
+                "name": "_fdt_splice_mem_rsv",
+                "start": 110,
+                "end": 121
+            },
+            {
+                "name": "_fdt_splice_struct",
+                "start": 123,
+                "end": 135
+            },
+            {
+                "name": "_fdt_splice_string",
+                "start": 137,
+                "end": 148
+            },
+            {
+                "name": "_fdt_find_add_string",
+                "start": 150,
+                "end": 170
+            },
+            {
+                "name": "fdt_add_mem_rsv",
+                "start": 172,
+                "end": 187
+            },
+            {
+                "name": "fdt_del_mem_rsv",
+                "start": 189,
+                "end": 203
+            },
+            {
+                "name": "_fdt_resize_property",
+                "start": 205,
+                "end": 221
+            },
+            {
+                "name": "_fdt_add_property",
+                "start": 223,
+                "end": 249
+            },
+            {
+                "name": "fdt_set_name",
+                "start": 251,
+                "end": 272
+            },
+            {
+                "name": "fdt_setprop",
+                "start": 274,
+                "end": 290
+            },
+            {
+                "name": "fdt_delprop",
+                "start": 292,
+                "end": 305
+            },
+            {
+                "name": "fdt_add_subnode_namelen",
+                "start": 307,
+                "end": 346
+            },
+            {
+                "name": "fdt_add_subnode",
+                "start": 348,
+                "end": 351
+            },
+            {
+                "name": "fdt_del_node",
+                "start": 353,
+                "end": 365
+            },
+            {
+                "name": "_fdt_packblocks",
+                "start": 367,
+                "end": 387
+            },
+            {
+                "name": "fdt_open_into",
+                "start": 389,
+                "end": 449
+            },
+            {
+                "name": "fdt_pack",
+                "start": 451,
+                "end": 463
+            }
+        ],
+        "kexec/libfdt/fdt_ro.c": [
+            {
+                "name": "_fdt_nodename_eq",
+                "start": 58,
+                "end": 76
+            },
+            {
+                "name": "fdt_string",
+                "start": 78,
+                "end": 81
+            },
+            {
+                "name": "fdt_get_mem_rsv",
+                "start": 83,
+                "end": 89
+            },
+            {
+                "name": "fdt_num_mem_rsv",
+                "start": 91,
+                "end": 98
+            },
+            {
+                "name": "fdt_subnode_offset_namelen",
+                "start": 100,
+                "end": 118
+            },
+            {
+                "name": "fdt_subnode_offset",
+                "start": 120,
+                "end": 124
+            },
+            {
+                "name": "fdt_path_offset",
+                "start": 126,
+                "end": 156
+            },
+            {
+                "name": "fdt_get_name",
+                "start": 158,
+                "end": 176
+            },
+            {
+                "name": "fdt_get_property",
+                "start": 178,
+                "end": 239
+            },
+            {
+                "name": "fdt_getprop",
+                "start": 241,
+                "end": 251
+            },
+            {
+                "name": "fdt_get_phandle",
+                "start": 253,
+                "end": 263
+            },
+            {
+                "name": "fdt_get_path",
+                "start": 265,
+                "end": 316
+            },
+            {
+                "name": "fdt_supernode_atdepth_offset",
+                "start": 318,
+                "end": 352
+            },
+            {
+                "name": "fdt_node_depth",
+                "start": 354,
+                "end": 363
+            },
+            {
+                "name": "fdt_parent_offset",
+                "start": 365,
+                "end": 373
+            },
+            {
+                "name": "fdt_node_offset_by_prop_value",
+                "start": 375,
+                "end": 400
+            },
+            {
+                "name": "fdt_node_offset_by_phandle",
+                "start": 402,
+                "end": 409
+            },
+            {
+                "name": "_stringlist_contains",
+                "start": 411,
+                "end": 426
+            },
+            {
+                "name": "fdt_node_check_compatible",
+                "start": 428,
+                "end": 441
+            },
+            {
+                "name": "fdt_node_offset_by_compatible",
+                "start": 443,
+                "end": 466
+            }
+        ],
+        "kexec/libfdt/fdt.c": [
+            {
+                "name": "fdt_check_header",
+                "start": 58,
+                "end": 75
+            },
+            {
+                "name": "fdt_offset_ptr",
+                "start": 77,
+                "end": 91
+            },
+            {
+                "name": "fdt_next_tag",
+                "start": 93,
+                "end": 130
+            },
+            {
+                "name": "_fdt_check_node_offset",
+                "start": 132,
+                "end": 139
+            },
+            {
+                "name": "fdt_next_node",
+                "start": 141,
+                "end": 178
+            },
+            {
+                "name": "_fdt_find_string",
+                "start": 180,
+                "end": 190
+            },
+            {
+                "name": "fdt_move",
+                "start": 192,
+                "end": 201
+            }
+        ],
+        "kexec/libfdt/fdt_strerror.c": [
+            {
+                "name": "fdt_strerror",
+                "start": 82,
+                "end": 96
+            }
+        ],
+        "util/bin-to-hex.c": [
+            {
+                "name": "main",
+                "start": 3,
+                "end": 25
+            }
+        ]
+    }
+}

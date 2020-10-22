@@ -1,0 +1,5871 @@
+{
+    "xfsdump-3.1.4": {
+        "inventory/inventory.h": [
+            {
+                "name": "inv_open",
+                "start": 188,
+                "end": 192
+            },
+            {
+                "name": "inv_close",
+                "start": 195,
+                "end": 197
+            },
+            {
+                "name": "inv_writesession_open",
+                "start": 200,
+                "end": 212
+            },
+            {
+                "name": "inv_writesession_close",
+                "start": 214,
+                "end": 216
+            },
+            {
+                "name": "inv_stream_open",
+                "start": 218,
+                "end": 221
+            },
+            {
+                "name": "inv_stream_close",
+                "start": 223,
+                "end": 226
+            },
+            {
+                "name": "inv_put_mediafile",
+                "start": 228,
+                "end": 241
+            },
+            {
+                "name": "inv_lasttime_level_lessthan",
+                "start": 248,
+                "end": 252
+            },
+            {
+                "name": "inv_lastsession_level_lessthan",
+                "start": 254,
+                "end": 258
+            },
+            {
+                "name": "inv_lastsession_level_equalto",
+                "start": 260,
+                "end": 264
+            },
+            {
+                "name": "inv_get_session_byuuid",
+                "start": 267,
+                "end": 270
+            },
+            {
+                "name": "inv_get_session_bylabel",
+                "start": 272,
+                "end": 275
+            },
+            {
+                "name": "inv_free_session",
+                "start": 279,
+                "end": 281
+            },
+            {
+                "name": "inv_get_sessioninfo",
+                "start": 285,
+                "end": 289
+            },
+            {
+                "name": "inv_delete_mediaobj",
+                "start": 292,
+                "end": 293
+            },
+            {
+                "name": "inv_DEBUG_print",
+                "start": 295,
+                "end": 296
+            },
+            {
+                "name": "inv_setup_base",
+                "start": 298,
+                "end": 299
+            },
+            {
+                "name": "inv_dirpath",
+                "start": 301,
+                "end": 302
+            },
+            {
+                "name": "inv_fstab",
+                "start": 304,
+                "end": 305
+            },
+            {
+                "name": "inv_lockfile",
+                "start": 307,
+                "end": 308
+            },
+            {
+                "name": "inv_basepath",
+                "start": 310,
+                "end": 311
+            }
+        ],
+        "inventory/inv_priv.h": [
+            {
+                "name": "idx_create",
+                "start": 356,
+                "end": 357
+            },
+            {
+                "name": "idx_create_entry",
+                "start": 359,
+                "end": 360
+            },
+            {
+                "name": "idx_put_sesstime",
+                "start": 362,
+                "end": 363
+            },
+            {
+                "name": "idx_find_stobj",
+                "start": 366,
+                "end": 367
+            },
+            {
+                "name": "idx_insert_newentry",
+                "start": 369,
+                "end": 372
+            },
+            {
+                "name": "idx_put_newentry",
+                "start": 373,
+                "end": 374
+            },
+            {
+                "name": "idx_get_stobj",
+                "start": 376,
+                "end": 377
+            },
+            {
+                "name": "idx_recons_time",
+                "start": 379,
+                "end": 380
+            },
+            {
+                "name": "idx_DEBUG_printinvindices",
+                "start": 382,
+                "end": 383
+            },
+            {
+                "name": "idx_DEBUG_print",
+                "start": 385,
+                "end": 386
+            },
+            {
+                "name": "stobj_create",
+                "start": 390,
+                "end": 391
+            },
+            {
+                "name": "stobj_create_session",
+                "start": 393,
+                "end": 395
+            },
+            {
+                "name": "stobj_put_mediafile",
+                "start": 397,
+                "end": 398
+            },
+            {
+                "name": "stobj_put_session",
+                "start": 400,
+                "end": 407
+            },
+            {
+                "name": "stobj_put_streams",
+                "start": 409,
+                "end": 412
+            },
+            {
+                "name": "stobj_hdrcmp",
+                "start": 414,
+                "end": 415
+            },
+            {
+                "name": "stobj_sortheaders",
+                "start": 417,
+                "end": 418
+            },
+            {
+                "name": "stobj_find_splitpoint",
+                "start": 420,
+                "end": 421
+            },
+            {
+                "name": "stobj_split",
+                "start": 423,
+                "end": 425
+            },
+            {
+                "name": "stobj_replace_session",
+                "start": 426,
+                "end": 428
+            },
+            {
+                "name": "stobj_delete_mfile",
+                "start": 430,
+                "end": 432
+            },
+            {
+                "name": "stobj_pack_sessinfo",
+                "start": 434,
+                "end": 436
+            },
+            {
+                "name": "stobj_unpack_sessinfo",
+                "start": 438,
+                "end": 442
+            },
+            {
+                "name": "stobj_delete_sessinfo",
+                "start": 444,
+                "end": 446
+            },
+            {
+                "name": "stobj_delete_mobj",
+                "start": 448,
+                "end": 450
+            },
+            {
+                "name": "stobj_get_sessinfo",
+                "start": 452,
+                "end": 453
+            },
+            {
+                "name": "stobj_makefname",
+                "start": 455,
+                "end": 456
+            },
+            {
+                "name": "stobj_insert_session",
+                "start": 458,
+                "end": 460
+            },
+            {
+                "name": "stobj_make_invsess",
+                "start": 462,
+                "end": 463
+            },
+            {
+                "name": "stobj_copy_invsess",
+                "start": 465,
+                "end": 467
+            },
+            {
+                "name": "DEBUG_sessionprint",
+                "start": 469,
+                "end": 470
+            },
+            {
+                "name": "DEBUG_sessprint",
+                "start": 472,
+                "end": 473
+            },
+            {
+                "name": "stobj_getsession_byuuid",
+                "start": 475,
+                "end": 476
+            },
+            {
+                "name": "stobj_getsession_bylabel",
+                "start": 478,
+                "end": 479
+            },
+            {
+                "name": "stobj_convert_session",
+                "start": 482,
+                "end": 484
+            },
+            {
+                "name": "stobj_convert_strm",
+                "start": 486,
+                "end": 487
+            },
+            {
+                "name": "stobj_convert_mfile",
+                "start": 489,
+                "end": 490
+            },
+            {
+                "name": "stobj_convert_sessinfo",
+                "start": 492,
+                "end": 493
+            },
+            {
+                "name": "fstab_get_fname",
+                "start": 497,
+                "end": 499
+            },
+            {
+                "name": "fstab_put_entry",
+                "start": 501,
+                "end": 502
+            },
+            {
+                "name": "fstab_getall",
+                "start": 504,
+                "end": 506
+            },
+            {
+                "name": "fstab_DEBUG_print",
+                "start": 508,
+                "end": 509
+            },
+            {
+                "name": "get_invtentry",
+                "start": 514,
+                "end": 515
+            },
+            {
+                "name": "get_invtrecord",
+                "start": 517,
+                "end": 518
+            },
+            {
+                "name": "put_invtrecord",
+                "start": 520,
+                "end": 521
+            },
+            {
+                "name": "get_token",
+                "start": 523,
+                "end": 524
+            },
+            {
+                "name": "destroy_token",
+                "start": 526,
+                "end": 527
+            },
+            {
+                "name": "get_headers",
+                "start": 530,
+                "end": 531
+            },
+            {
+                "name": "get_counters",
+                "start": 533,
+                "end": 534
+            },
+            {
+                "name": "get_sescounters",
+                "start": 536,
+                "end": 537
+            },
+            {
+                "name": "get_lastheader",
+                "start": 539,
+                "end": 540
+            },
+            {
+                "name": "get_sesstoken",
+                "start": 543,
+                "end": 544
+            },
+            {
+                "name": "get_headerinfo",
+                "start": 546,
+                "end": 548
+            },
+            {
+                "name": "invmgr_query_all_sessions",
+                "start": 550,
+                "end": 551
+            },
+            {
+                "name": "search_invt",
+                "start": 553,
+                "end": 555
+            },
+            {
+                "name": "invmgr_inv_print",
+                "start": 556,
+                "end": 557
+            },
+            {
+                "name": "invmgr_inv_check",
+                "start": 559,
+                "end": 560
+            },
+            {
+                "name": "tm_level_lessthan",
+                "start": 562,
+                "end": 564
+            },
+            {
+                "name": "lastsess_level_lessthan",
+                "start": 566,
+                "end": 568
+            },
+            {
+                "name": "lastsess_level_equalto",
+                "start": 570,
+                "end": 571
+            },
+            {
+                "name": "DEBUG_displayallsessions",
+                "start": 573,
+                "end": 575
+            },
+            {
+                "name": "make_invdirectory",
+                "start": 577,
+                "end": 578
+            },
+            {
+                "name": "init_idb",
+                "start": 580,
+                "end": 582
+            },
+            {
+                "name": "inv_getopt",
+                "start": 584,
+                "end": 585
+            },
+            {
+                "name": "insert_session",
+                "start": 587,
+                "end": 588
+            },
+            {
+                "name": "inv_put_sessioninfo",
+                "start": 591,
+                "end": 592
+            }
+        ],
+        "inventory/inv_stobj.c": [
+            {
+                "name": "stobj_insert_session",
+                "start": 44,
+                "end": 107
+            },
+            {
+                "name": "stobj_find_splitpoint",
+                "start": 120,
+                "end": 147
+            },
+            {
+                "name": "stobj_split",
+                "start": 157,
+                "end": 260
+            },
+            {
+                "name": "stobj_delete_mfile",
+                "start": 266,
+                "end": 273
+            },
+            {
+                "name": "stobj_delete_sessinfo",
+                "start": 279,
+                "end": 292
+            },
+            {
+                "name": "stobj_put_session",
+                "start": 303,
+                "end": 371
+            },
+            {
+                "name": "stobj_sortheaders",
+                "start": 382,
+                "end": 420
+            },
+            {
+                "name": "stobj_put_streams",
+                "start": 432,
+                "end": 482
+            },
+            {
+                "name": "stobj_makefname",
+                "start": 493,
+                "end": 509
+            },
+            {
+                "name": "stobj_create",
+                "start": 518,
+                "end": 553
+            },
+            {
+                "name": "stobj_create_session",
+                "start": 564,
+                "end": 588
+            },
+            {
+                "name": "stobj_put_mediafile",
+                "start": 598,
+                "end": 688
+            },
+            {
+                "name": "stobj_get_sessinfo",
+                "start": 704,
+                "end": 719
+            },
+            {
+                "name": "stobj_pack_sessinfo",
+                "start": 729,
+                "end": 822
+            },
+            {
+                "name": "stobj_getsession_byuuid",
+                "start": 831,
+                "end": 856
+            },
+            {
+                "name": "stobj_getsession_bylabel",
+                "start": 867,
+                "end": 892
+            },
+            {
+                "name": "stobj_delete_mobj",
+                "start": 902,
+                "end": 985
+            },
+            {
+                "name": "stobj_unpack_sessinfo",
+                "start": 998,
+                "end": 1115
+            },
+            {
+                "name": "stobj_make_invsess",
+                "start": 1124,
+                "end": 1136
+            },
+            {
+                "name": "stobj_convert_mfile",
+                "start": 1139,
+                "end": 1156
+            },
+            {
+                "name": "stobj_convert_strm",
+                "start": 1158,
+                "end": 1174
+            },
+            {
+                "name": "stobj_convert_session",
+                "start": 1176,
+                "end": 1194
+            },
+            {
+                "name": "stobj_copy_invsess",
+                "start": 1203,
+                "end": 1276
+            },
+            {
+                "name": "stobj_convert_sessinfo",
+                "start": 1285,
+                "end": 1312
+            },
+            {
+                "name": "stobj_hdrcmp",
+                "start": 1316,
+                "end": 1321
+            },
+            {
+                "name": "DEBUG_sessprint",
+                "start": 1330,
+                "end": 1343
+            },
+            {
+                "name": "mobj_eql",
+                "start": 1345,
+                "end": 1362
+            },
+            {
+                "name": "check_for_mobj",
+                "start": 1365,
+                "end": 1381
+            },
+            {
+                "name": "DEBUG_sessionprint",
+                "start": 1386,
+                "end": 1488
+            }
+        ],
+        "inventory/inv_api.c": [
+            {
+                "name": "inv_open",
+                "start": 42,
+                "end": 117
+            },
+            {
+                "name": "inv_close",
+                "start": 129,
+                "end": 137
+            },
+            {
+                "name": "inv_writesession_open",
+                "start": 151,
+                "end": 241
+            },
+            {
+                "name": "inv_writesession_close",
+                "start": 254,
+                "end": 269
+            },
+            {
+                "name": "inv_stream_open",
+                "start": 278,
+                "end": 354
+            },
+            {
+                "name": "inv_stream_close",
+                "start": 365,
+                "end": 420
+            },
+            {
+                "name": "inv_put_mediafile",
+                "start": 431,
+                "end": 485
+            },
+            {
+                "name": "inv_get_sessioninfo",
+                "start": 503,
+                "end": 535
+            },
+            {
+                "name": "inv_put_sessioninfo",
+                "start": 551,
+                "end": 565
+            },
+            {
+                "name": "inv_free_session",
+                "start": 576,
+                "end": 595
+            },
+            {
+                "name": "inv_lasttime_level_lessthan",
+                "start": 607,
+                "end": 624
+            },
+            {
+                "name": "inv_lastsession_level_lessthan",
+                "start": 636,
+                "end": 654
+            },
+            {
+                "name": "inv_lastsession_level_equalto",
+                "start": 667,
+                "end": 685
+            },
+            {
+                "name": "inv_get_session_byuuid",
+                "start": 693,
+                "end": 702
+            },
+            {
+                "name": "inv_get_session_bylabel",
+                "start": 711,
+                "end": 720
+            },
+            {
+                "name": "inv_delete_mediaobj",
+                "start": 732,
+                "end": 798
+            },
+            {
+                "name": "inv_getopt",
+                "start": 842,
+                "end": 1056
+            },
+            {
+                "name": "inv_DEBUG_print",
+                "start": 1059,
+                "end": 1120
+            }
+        ],
+        "inventory/testmain.c": [
+            {
+                "name": "CREAT_mfiles",
+                "start": 54,
+                "end": 72
+            },
+            {
+                "name": "recons_test",
+                "start": 82,
+                "end": 113
+            },
+            {
+                "name": "delete_test",
+                "start": 118,
+                "end": 138
+            },
+            {
+                "name": "sess_queries_byuuid",
+                "start": 140,
+                "end": 162
+            },
+            {
+                "name": "sess_queries_bylabel",
+                "start": 165,
+                "end": 184
+            },
+            {
+                "name": "query_test",
+                "start": 187,
+                "end": 234
+            },
+            {
+                "name": "write_test",
+                "start": 243,
+                "end": 341
+            },
+            {
+                "name": "usage",
+                "start": 344,
+                "end": 348
+            },
+            {
+                "name": "mp_test",
+                "start": 351,
+                "end": 378
+            },
+            {
+                "name": "main",
+                "start": 390,
+                "end": 499
+            }
+        ],
+        "inventory/inv_idx.c": [
+            {
+                "name": "idx_insert_newentry",
+                "start": 40,
+                "end": 141
+            },
+            {
+                "name": "idx_put_newentry",
+                "start": 150,
+                "end": 197
+            },
+            {
+                "name": "idx_find_stobj",
+                "start": 209,
+                "end": 237
+            },
+            {
+                "name": "idx_create",
+                "start": 250,
+                "end": 280
+            },
+            {
+                "name": "idx_recons_time",
+                "start": 288,
+                "end": 302
+            },
+            {
+                "name": "idx_put_sesstime",
+                "start": 313,
+                "end": 361
+            },
+            {
+                "name": "idx_create_entry",
+                "start": 377,
+                "end": 452
+            },
+            {
+                "name": "idx_get_stobj",
+                "start": 465,
+                "end": 489
+            },
+            {
+                "name": "idx_DEBUG_printinvindices",
+                "start": 492,
+                "end": 515
+            },
+            {
+                "name": "idx_DEBUG_print",
+                "start": 517,
+                "end": 535
+            },
+            {
+                "name": "DEBUG_displayallsessions",
+                "start": 539,
+                "end": 552
+            }
+        ],
+        "inventory/inv_core.c": [
+            {
+                "name": "get_counters",
+                "start": 42,
+                "end": 70
+            },
+            {
+                "name": "get_headers",
+                "start": 80,
+                "end": 99
+            },
+            {
+                "name": "get_invtrecord",
+                "start": 107,
+                "end": 139
+            },
+            {
+                "name": "put_invtrecord",
+                "start": 150,
+                "end": 177
+            },
+            {
+                "name": "get_headerinfo",
+                "start": 190,
+                "end": 211
+            },
+            {
+                "name": "get_lastheader",
+                "start": 219,
+                "end": 241
+            }
+        ],
+        "inventory/inv_files.c": [
+            {
+                "name": "inv_dirpath",
+                "start": 50,
+                "end": 55
+            },
+            {
+                "name": "inv_fstab",
+                "start": 57,
+                "end": 62
+            },
+            {
+                "name": "inv_lockfile",
+                "start": 64,
+                "end": 69
+            },
+            {
+                "name": "inv_basepath",
+                "start": 71,
+                "end": 76
+            },
+            {
+                "name": "inv_setup_base",
+                "start": 78,
+                "end": 116
+            }
+        ],
+        "inventory/inv_mgr.c": [
+            {
+                "name": "init_idb",
+                "start": 40,
+                "end": 78
+            },
+            {
+                "name": "get_token",
+                "start": 84,
+                "end": 98
+            },
+            {
+                "name": "destroy_token",
+                "start": 105,
+                "end": 109
+            },
+            {
+                "name": "get_sesstoken",
+                "start": 113,
+                "end": 123
+            },
+            {
+                "name": "invmgr_query_all_sessions",
+                "start": 135,
+                "end": 201
+            },
+            {
+                "name": "search_invt",
+                "start": 214,
+                "end": 303
+            },
+            {
+                "name": "invmgr_inv_print",
+                "start": 314,
+                "end": 394
+            },
+            {
+                "name": "invmgr_inv_check",
+                "start": 405,
+                "end": 475
+            },
+            {
+                "name": "tm_level_lessthan",
+                "start": 485,
+                "end": 503
+            },
+            {
+                "name": "lastsess_level_lessthan",
+                "start": 514,
+                "end": 531
+            },
+            {
+                "name": "lastsess_level_equalto",
+                "start": 541,
+                "end": 559
+            },
+            {
+                "name": "insert_session",
+                "start": 572,
+                "end": 638
+            },
+            {
+                "name": "make_invdirectory",
+                "start": 648,
+                "end": 686
+            }
+        ],
+        "inventory/inv_fstab.c": [
+            {
+                "name": "fstab_getall",
+                "start": 44,
+                "end": 71
+            },
+            {
+                "name": "fstab_put_entry",
+                "start": 83,
+                "end": 163
+            },
+            {
+                "name": "fstab_get_fname",
+                "start": 169,
+                "end": 234
+            },
+            {
+                "name": "fstab_DEBUG_print",
+                "start": 237,
+                "end": 251
+            }
+        ],
+        "inventory/inv_oref.h": [
+            {
+                "name": "oref_resolve_upto",
+                "start": 240,
+                "end": 243
+            },
+            {
+                "name": "oref_resolve_entries",
+                "start": 245,
+                "end": 247
+            },
+            {
+                "name": "oref_resolve_counters",
+                "start": 249,
+                "end": 251
+            },
+            {
+                "name": "_oref_free",
+                "start": 253,
+                "end": 256
+            }
+        ],
+        "inventory/inv_oref.c": [
+            {
+                "name": "oref_resolve_",
+                "start": 29,
+                "end": 59
+            },
+            {
+                "name": "oref_resolve_upto",
+                "start": 69,
+                "end": 525
+            }
+        ],
+        "dump/inomap.h": [
+            {
+                "name": "inomap_build",
+                "start": 49,
+                "end": 66
+            }
+        ],
+        "dump/inomap.c": [
+            {
+                "name": "cb_context",
+                "start": 66,
+                "end": 76
+            },
+            {
+                "name": "cb_startpt",
+                "start": 85,
+                "end": 88
+            },
+            {
+                "name": "supprt_prune",
+                "start": 89,
+                "end": 93
+            },
+            {
+                "name": "subtree_descend_cb",
+                "start": 106,
+                "end": 110
+            },
+            {
+                "name": "subtreelist_parse_cb",
+                "start": 111,
+                "end": 115
+            },
+            {
+                "name": "subtreelist_parse",
+                "start": 116,
+                "end": 120
+            },
+            {
+                "name": "inomap_build",
+                "start": 140,
+                "end": 395
+            },
+            {
+                "name": "inomap_skip",
+                "start": 397,
+                "end": 412
+            },
+            {
+                "name": "cb_context",
+                "start": 443,
+                "end": 478
+            },
+            {
+                "name": "cb_context_free",
+                "start": 480,
+                "end": 484
+            },
+            {
+                "name": "cb_count_inogrp",
+                "start": 486,
+                "end": 492
+            },
+            {
+                "name": "cb_add",
+                "start": 500,
+                "end": 635
+            },
+            {
+                "name": "cb_inoinresumerange",
+                "start": 637,
+                "end": 660
+            },
+            {
+                "name": "cb_inoresumed",
+                "start": 662,
+                "end": 679
+            },
+            {
+                "name": "supprt_prune",
+                "start": 686,
+                "end": 764
+            },
+            {
+                "name": "cb_accuminit_sz",
+                "start": 767,
+                "end": 772
+            },
+            {
+                "name": "cb_spinit",
+                "start": 780,
+                "end": 787
+            },
+            {
+                "name": "cb_startpt",
+                "start": 807,
+                "end": 938
+            },
+            {
+                "name": "SEG_SET_BITS",
+                "start": 964,
+                "end": 1015
+            },
+            {
+                "name": "SEG_GET_BITS",
+                "start": 1017,
+                "end": 1038
+            },
+            {
+                "name": "inomap_init",
+                "start": 1042,
+                "end": 1058
+            },
+            {
+                "name": "inomap_getsz",
+                "start": 1060,
+                "end": 1064
+            },
+            {
+                "name": "inomap_validaddr",
+                "start": 1066,
+                "end": 1081
+            },
+            {
+                "name": "inomap_addr2hnk",
+                "start": 1083,
+                "end": 1087
+            },
+            {
+                "name": "inomap_addr2seg",
+                "start": 1089,
+                "end": 1094
+            },
+            {
+                "name": "inomap_addr2segix",
+                "start": 1096,
+                "end": 1100
+            },
+            {
+                "name": "inomap_lastseg",
+                "start": 1102,
+                "end": 1109
+            },
+            {
+                "name": "cb_add_inogrp",
+                "start": 1114,
+                "end": 1160
+            },
+            {
+                "name": "inomap_add",
+                "start": 1164,
+                "end": 1169
+            },
+            {
+                "name": "inomap_alloc_context",
+                "start": 1171,
+                "end": 1181
+            },
+            {
+                "name": "inomap_reset_context",
+                "start": 1183,
+                "end": 1187
+            },
+            {
+                "name": "inomap_free_context",
+                "start": 1189,
+                "end": 1193
+            },
+            {
+                "name": "inomap_find_hnk",
+                "start": 1198,
+                "end": 1223
+            },
+            {
+                "name": "inomap_find_seg",
+                "start": 1230,
+                "end": 1263
+            },
+            {
+                "name": "inomap_iter",
+                "start": 1265,
+                "end": 1296
+            },
+            {
+                "name": "inomap_next_nondir",
+                "start": 1298,
+                "end": 1309
+            },
+            {
+                "name": "inomap_next_dir",
+                "start": 1311,
+                "end": 1322
+            },
+            {
+                "name": "inomap_set_state",
+                "start": 1324,
+                "end": 1342
+            },
+            {
+                "name": "inomap_get_state",
+                "start": 1344,
+                "end": 1358
+            },
+            {
+                "name": "inomap_set_gen",
+                "start": 1360,
+                "end": 1379
+            },
+            {
+                "name": "inomap_get_gen",
+                "start": 1381,
+                "end": 1403
+            },
+            {
+                "name": "inomap_writehdr",
+                "start": 1405,
+                "end": 1417
+            },
+            {
+                "name": "inomap_dump",
+                "start": 1419,
+                "end": 1468
+            },
+            {
+                "name": "subtreelist_parse",
+                "start": 1470,
+                "end": 1508
+            },
+            {
+                "name": "subtreelist_parse_cb",
+                "start": 1510,
+                "end": 1591
+            },
+            {
+                "name": "subtree_descend_cb",
+                "start": 1593,
+                "end": 1617
+            },
+            {
+                "name": "quantity2offset",
+                "start": 1624,
+                "end": 1696
+            },
+            {
+                "name": "estimate_dump_space",
+                "start": 1699,
+                "end": 1742
+            }
+        ],
+        "dump/content.c": [
+            {
+                "name": "dump_dirs",
+                "start": 257,
+                "end": 260
+            },
+            {
+                "name": "dump_dir",
+                "start": 261,
+                "end": 264
+            },
+            {
+                "name": "dump_file",
+                "start": 265,
+                "end": 268
+            },
+            {
+                "name": "dump_file_reg",
+                "start": 269,
+                "end": 274
+            },
+            {
+                "name": "dump_file_spec",
+                "start": 275,
+                "end": 278
+            },
+            {
+                "name": "dump_filehdr",
+                "start": 279,
+                "end": 283
+            },
+            {
+                "name": "dump_extenthdr",
+                "start": 284,
+                "end": 289
+            },
+            {
+                "name": "dump_dirent",
+                "start": 290,
+                "end": 296
+            },
+            {
+                "name": "init_extent_group_context",
+                "start": 297,
+                "end": 299
+            },
+            {
+                "name": "dump_extent_group",
+                "start": 301,
+                "end": 310
+            },
+            {
+                "name": "dump_session_inv",
+                "start": 311,
+                "end": 314
+            },
+            {
+                "name": "dump_terminator",
+                "start": 320,
+                "end": 322
+            },
+            {
+                "name": "Media_mfile_begin",
+                "start": 323,
+                "end": 325
+            },
+            {
+                "name": "Media_mfile_end",
+                "start": 326,
+                "end": 330
+            },
+            {
+                "name": "Media_erasechk",
+                "start": 332,
+                "end": 335
+            },
+            {
+                "name": "update_cc_Media_useterminatorpr",
+                "start": 338,
+                "end": 339
+            },
+            {
+                "name": "dump_extattrs",
+                "start": 345,
+                "end": 348
+            },
+            {
+                "name": "dump_extattr_list",
+                "start": 349,
+                "end": 355
+            },
+            {
+                "name": "dump_extattr_buildrecord",
+                "start": 356,
+                "end": 362
+            },
+            {
+                "name": "dump_extattrhdr",
+                "start": 363,
+                "end": 369
+            },
+            {
+                "name": "save_quotas",
+                "start": 371,
+                "end": 372
+            },
+            {
+                "name": "create_inv_session",
+                "start": 499,
+                "end": 505
+            },
+            {
+                "name": "content_init",
+                "start": 507,
+                "end": 1713
+            },
+            {
+                "name": "content_statline",
+                "start": 1717,
+                "end": 1889
+            },
+            {
+                "name": "create_inv_session",
+                "start": 1891,
+                "end": 1965
+            },
+            {
+                "name": "mark_set",
+                "start": 1967,
+                "end": 1995
+            },
+            {
+                "name": "mark_callback",
+                "start": 1997,
+                "end": 2077
+            },
+            {
+                "name": "content_stream_dump",
+                "start": 2081,
+                "end": 2635
+            },
+            {
+                "name": "content_complete",
+                "start": 2642,
+                "end": 2694
+            },
+            {
+                "name": "content_mediachange_query",
+                "start": 2707,
+                "end": 2758
+            },
+            {
+                "name": "update_cc_Media_useterminatorpr",
+                "start": 2761,
+                "end": 2779
+            },
+            {
+                "name": "dump_dirs",
+                "start": 2781,
+                "end": 2899
+            },
+            {
+                "name": "dump_dir",
+                "start": 2901,
+                "end": 3140
+            },
+            {
+                "name": "dump_extattrs",
+                "start": 3142,
+                "end": 3240
+            },
+            {
+                "name": "dump_extattr_list",
+                "start": 3242,
+                "end": 3546
+            },
+            {
+                "name": "dump_extattr_buildrecord",
+                "start": 3548,
+                "end": 3626
+            },
+            {
+                "name": "dump_extattrhdr",
+                "start": 3629,
+                "end": 3675
+            },
+            {
+                "name": "dump_file",
+                "start": 3685,
+                "end": 3906
+            },
+            {
+                "name": "dump_file_reg",
+                "start": 3914,
+                "end": 4130
+            },
+            {
+                "name": "dump_file_spec",
+                "start": 4136,
+                "end": 4246
+            },
+            {
+                "name": "init_extent_group_context",
+                "start": 4252,
+                "end": 4306
+            },
+            {
+                "name": "cleanup_extent_group_context",
+                "start": 4308,
+                "end": 4312
+            },
+            {
+                "name": "dump_extent_group",
+                "start": 4314,
+                "end": 4905
+            },
+            {
+                "name": "copy_xfs_bstat",
+                "start": 4908,
+                "end": 4935
+            },
+            {
+                "name": "dump_filehdr",
+                "start": 4937,
+                "end": 4986
+            },
+            {
+                "name": "dump_extenthdr",
+                "start": 4988,
+                "end": 5058
+            },
+            {
+                "name": "dump_dirent",
+                "start": 5060,
+                "end": 5171
+            },
+            {
+                "name": "dump_session_inv",
+                "start": 5173,
+                "end": 5342
+            },
+            {
+                "name": "dump_terminator",
+                "start": 5344,
+                "end": 5433
+            },
+            {
+                "name": "write_pad",
+                "start": 5435,
+                "end": 5466
+            },
+            {
+                "name": "inv_cleanup",
+                "start": 5468,
+                "end": 5511
+            },
+            {
+                "name": "Media_mfile_begin",
+                "start": 5522,
+                "end": 6124
+            },
+            {
+                "name": "Media_mfile_end",
+                "start": 6127,
+                "end": 6171
+            },
+            {
+                "name": "Media_prompt_overwrite",
+                "start": 6173,
+                "end": 6271
+            },
+            {
+                "name": "Media_erasechk",
+                "start": 6273,
+                "end": 6309
+            },
+            {
+                "name": "Media_prompt_erase",
+                "start": 6311,
+                "end": 6412
+            },
+            {
+                "name": "Media_prompt_label_cb",
+                "start": 6414,
+                "end": 6425
+            },
+            {
+                "name": "Media_prompt_label",
+                "start": 6427,
+                "end": 6510
+            },
+            {
+                "name": "set_mcflag",
+                "start": 6512,
+                "end": 6519
+            },
+            {
+                "name": "clr_mcflag",
+                "start": 6521,
+                "end": 6534
+            },
+            {
+                "name": "check_complete_flags",
+                "start": 6536,
+                "end": 6551
+            },
+            {
+                "name": "is_quota_file",
+                "start": 6553,
+                "end": 6563
+            },
+            {
+                "name": "save_quotas",
+                "start": 6567,
+                "end": 6629
+            },
+            {
+                "name": "getxfsqstat",
+                "start": 6631,
+                "end": 6645
+            }
+        ],
+        "dump/var.c": [
+            {
+                "name": "var_create",
+                "start": 36,
+                "end": 56
+            },
+            {
+                "name": "var_create_component",
+                "start": 58,
+                "end": 76
+            },
+            {
+                "name": "var_skip",
+                "start": 78,
+                "end": 108
+            },
+            {
+                "name": "var_skip_recurse",
+                "start": 110,
+                "end": 166
+            }
+        ],
+        "common/fs.h": [
+            {
+                "name": "fs_info",
+                "start": 34,
+                "end": 42
+            },
+            {
+                "name": "fs_mounted",
+                "start": 46,
+                "end": 49
+            }
+        ],
+        "common/fs.c": [
+            {
+                "name": "fs_info",
+                "start": 105,
+                "end": 186
+            },
+            {
+                "name": "fs_mounted",
+                "start": 193,
+                "end": 197
+            },
+            {
+                "name": "fs_getid",
+                "start": 199,
+                "end": 219
+            },
+            {
+                "name": "fs_getinocnt",
+                "start": 221,
+                "end": 237
+            },
+            {
+                "name": "fs_tab_build",
+                "start": 239,
+                "end": 260
+            },
+            {
+                "name": "fs_tab_free",
+                "start": 262,
+                "end": 275
+            },
+            {
+                "name": "fs_tab_ent_build",
+                "start": 277,
+                "end": 314
+            },
+            {
+                "name": "fs_tab_ent_free",
+                "start": 316,
+                "end": 324
+            },
+            {
+                "name": "fs_tab_lookup_blk",
+                "start": 326,
+                "end": 352
+            },
+            {
+                "name": "fs_tab_lookup_mnt",
+                "start": 354,
+                "end": 365
+            }
+        ],
+        "common/util.h": [
+            {
+                "name": "write_buf",
+                "start": 38,
+                "end": 42
+            },
+            {
+                "name": "read_buf",
+                "start": 62,
+                "end": 67
+            },
+            {
+                "name": "bigstat_iter",
+                "start": 95,
+                "end": 106
+            },
+            {
+                "name": "bigstat_one",
+                "start": 108,
+                "end": 110
+            },
+            {
+                "name": "inogrp_iter",
+                "start": 112,
+                "end": 117
+            },
+            {
+                "name": "diriter",
+                "start": 132,
+                "end": 143
+            }
+        ],
+        "common/dlog.h": [
+            {
+                "name": "dlog_multi_query",
+                "start": 58,
+                "end": 70
+            },
+            {
+                "name": "dlog_string_query",
+                "start": 83,
+                "end": 92
+            }
+        ],
+        "common/global.c": [
+            {
+                "name": "global_hdr_alloc",
+                "start": 55,
+                "end": 226
+            },
+            {
+                "name": "global_hdr_free",
+                "start": 229,
+                "end": 233
+            },
+            {
+                "name": "global_hdr_checksum_set",
+                "start": 238,
+                "end": 252
+            },
+            {
+                "name": "global_hdr_checksum_check",
+                "start": 258,
+                "end": 271
+            },
+            {
+                "name": "global_version_check",
+                "start": 276,
+                "end": 288
+            }
+        ],
+        "common/util.c": [
+            {
+                "name": "write_buf",
+                "start": 36,
+                "end": 68
+            },
+            {
+                "name": "read_buf",
+                "start": 70,
+                "end": 100
+            },
+            {
+                "name": "strncpyterm",
+                "start": 102,
+                "end": 111
+            },
+            {
+                "name": "bigstat_iter",
+                "start": 113,
+                "end": 247
+            },
+            {
+                "name": "bigstat_one",
+                "start": 250,
+                "end": 264
+            },
+            {
+                "name": "inogrp_iter",
+                "start": 269,
+                "end": 321
+            },
+            {
+                "name": "diriter",
+                "start": 335,
+                "end": 508
+            },
+            {
+                "name": "cvtnum",
+                "start": 510,
+                "end": 528
+            },
+            {
+                "name": "fold_init",
+                "start": 530,
+                "end": 573
+            }
+        ],
+        "common/cldmgr.h": [
+            {
+                "name": "cldmgr_create",
+                "start": 32,
+                "end": 35
+            }
+        ],
+        "common/ring.h": [
+            {
+                "name": "ring_create",
+                "start": 167,
+                "end": 174
+            }
+        ],
+        "common/ring.c": [
+            {
+                "name": "ring_create",
+                "start": 38,
+                "end": 132
+            },
+            {
+                "name": "ring_get",
+                "start": 134,
+                "end": 183
+            },
+            {
+                "name": "ring_put",
+                "start": 185,
+                "end": 217
+            },
+            {
+                "name": "ring_reset",
+                "start": 219,
+                "end": 278
+            },
+            {
+                "name": "ring_destroy",
+                "start": 280,
+                "end": 316
+            },
+            {
+                "name": "ring_slave_get",
+                "start": 319,
+                "end": 368
+            },
+            {
+                "name": "ring_slave_put",
+                "start": 370,
+                "end": 402
+            },
+            {
+                "name": "ring_slave_entry",
+                "start": 404,
+                "end": 493
+            }
+        ],
+        "common/drive.h": [
+            {
+                "name": "drive_init2",
+                "start": 658,
+                "end": 660
+            }
+        ],
+        "common/drive.c": [
+            {
+                "name": "drive_allochdrs",
+                "start": 56,
+                "end": 58
+            },
+            {
+                "name": "drive_init1",
+                "start": 83,
+                "end": 234
+            },
+            {
+                "name": "drive_init2",
+                "start": 243,
+                "end": 262
+            },
+            {
+                "name": "drive_init3",
+                "start": 268,
+                "end": 284
+            },
+            {
+                "name": "drive_mark_commit",
+                "start": 292,
+                "end": 306
+            },
+            {
+                "name": "drive_mark_discard",
+                "start": 312,
+                "end": 325
+            },
+            {
+                "name": "drive_display_metrics",
+                "start": 330,
+                "end": 342
+            },
+            {
+                "name": "drive_alloc",
+                "start": 350,
+                "end": 384
+            },
+            {
+                "name": "drive_allochdrs",
+                "start": 389,
+                "end": 437
+            }
+        ],
+        "common/stream.h": [
+            {
+                "name": "stream_find_all",
+                "start": 49,
+                "end": 52
+            },
+            {
+                "name": "stream_get_exit_status",
+                "start": 58,
+                "end": 65
+            }
+        ],
+        "common/content_inode.h": [
+            {
+                "name": "bstat_projid",
+                "start": 194,
+                "end": 198
+            },
+            {
+                "name": "calc_checksum",
+                "start": 386,
+                "end": 396
+            },
+            {
+                "name": "is_checksum_valid",
+                "start": 398,
+                "end": 408
+            }
+        ],
+        "common/drive_minrmt.c": [
+            {
+                "name": "Read",
+                "start": 302,
+                "end": 305
+            },
+            {
+                "name": "Write",
+                "start": 306,
+                "end": 309
+            },
+            {
+                "name": "record_hdr_validate",
+                "start": 310,
+                "end": 312
+            },
+            {
+                "name": "write_record",
+                "start": 317,
+                "end": 318
+            },
+            {
+                "name": "ds_match",
+                "start": 406,
+                "end": 461
+            },
+            {
+                "name": "ds_instantiate",
+                "start": 466,
+                "end": 655
+            },
+            {
+                "name": "do_init",
+                "start": 666,
+                "end": 684
+            },
+            {
+                "name": "do_sync",
+                "start": 691,
+                "end": 698
+            },
+            {
+                "name": "do_begin_read",
+                "start": 709,
+                "end": 794
+            },
+            {
+                "name": "do_read",
+                "start": 805,
+                "end": 865
+            },
+            {
+                "name": "do_return_read_buf",
+                "start": 875,
+                "end": 920
+            },
+            {
+                "name": "do_get_mark",
+                "start": 928,
+                "end": 954
+            },
+            {
+                "name": "do_seek_mark",
+                "start": 967,
+                "end": 1285
+            },
+            {
+                "name": "do_next_mark",
+                "start": 1297,
+                "end": 1537
+            },
+            {
+                "name": "do_end_read",
+                "start": 1546,
+                "end": 1573
+            },
+            {
+                "name": "do_begin_write",
+                "start": 1582,
+                "end": 1717
+            },
+            {
+                "name": "do_set_mark",
+                "start": 1722,
+                "end": 1778
+            },
+            {
+                "name": "do_get_write_buf",
+                "start": 1788,
+                "end": 1825
+            },
+            {
+                "name": "do_write",
+                "start": 1839,
+                "end": 1959
+            },
+            {
+                "name": "do_get_align_cnt",
+                "start": 1968,
+                "end": 2003
+            },
+            {
+                "name": "do_end_write",
+                "start": 2012,
+                "end": 2199
+            },
+            {
+                "name": "do_fsf",
+                "start": 2208,
+                "end": 2274
+            },
+            {
+                "name": "do_bsf",
+                "start": 2284,
+                "end": 2363
+            },
+            {
+                "name": "do_rewind",
+                "start": 2372,
+                "end": 2389
+            },
+            {
+                "name": "do_erase",
+                "start": 2398,
+                "end": 2427
+            },
+            {
+                "name": "do_eject_media",
+                "start": 2436,
+                "end": 2460
+            },
+            {
+                "name": "do_get_device_class",
+                "start": 2469,
+                "end": 2476
+            },
+            {
+                "name": "do_display_metrics",
+                "start": 2480,
+                "end": 2495
+            },
+            {
+                "name": "do_quit",
+                "start": 2499,
+                "end": 2524
+            },
+            {
+                "name": "percent64",
+                "start": 2526,
+                "end": 2530
+            },
+            {
+                "name": "read_label",
+                "start": 2544,
+                "end": 2608
+            },
+            {
+                "name": "validate_media_file_hdr",
+                "start": 2610,
+                "end": 2705
+            },
+            {
+                "name": "get_tpcaps",
+                "start": 2717,
+                "end": 2737
+            },
+            {
+                "name": "set_recommended_sizes",
+                "start": 2746,
+                "end": 2778
+            },
+            {
+                "name": "mt_op",
+                "start": 2789,
+                "end": 2862
+            },
+            {
+                "name": "determine_write_error",
+                "start": 2871,
+                "end": 2912
+            },
+            {
+                "name": "tape_rec_checksum_set",
+                "start": 2914,
+                "end": 2934
+            },
+            {
+                "name": "tape_rec_checksum_check",
+                "start": 2936,
+                "end": 2954
+            },
+            {
+                "name": "display_access_failed_message",
+                "start": 3039,
+                "end": 3049
+            },
+            {
+                "name": "prepare_drive",
+                "start": 3056,
+                "end": 3393
+            },
+            {
+                "name": "Open",
+                "start": 3397,
+                "end": 3423
+            },
+            {
+                "name": "Close",
+                "start": 3425,
+                "end": 3438
+            },
+            {
+                "name": "Read",
+                "start": 3440,
+                "end": 3474
+            },
+            {
+                "name": "Write",
+                "start": 3476,
+                "end": 3510
+            },
+            {
+                "name": "record_hdr_validate",
+                "start": 3515,
+                "end": 3609
+            },
+            {
+                "name": "read_record",
+                "start": 3614,
+                "end": 3685
+            },
+            {
+                "name": "ring_read",
+                "start": 3687,
+                "end": 3691
+            },
+            {
+                "name": "getrec",
+                "start": 3695,
+                "end": 3746
+            },
+            {
+                "name": "write_record",
+                "start": 3752,
+                "end": 3781
+            },
+            {
+                "name": "ring_write",
+                "start": 3783,
+                "end": 3787
+            },
+            {
+                "name": "Ring_get",
+                "start": 3789,
+                "end": 3799
+            },
+            {
+                "name": "Ring_put",
+                "start": 3801,
+                "end": 3809
+            },
+            {
+                "name": "Ring_reset",
+                "start": 3811,
+                "end": 3820
+            },
+            {
+                "name": "calc_max_lost",
+                "start": 3826,
+                "end": 3837
+            },
+            {
+                "name": "display_ring_metrics",
+                "start": 3839,
+                "end": 3880
+            },
+            {
+                "name": "rewind_and_verify",
+                "start": 3885,
+                "end": 3907
+            },
+            {
+                "name": "erase_and_verify",
+                "start": 3912,
+                "end": 3939
+            },
+            {
+                "name": "bsf_and_verify",
+                "start": 3944,
+                "end": 3951
+            },
+            {
+                "name": "fsf_and_verify",
+                "start": 3956,
+                "end": 3965
+            },
+            {
+                "name": "set_best_blk_and_rec_sz",
+                "start": 3967,
+                "end": 3978
+            },
+            {
+                "name": "isefsdump",
+                "start": 3980,
+                "end": 3992
+            },
+            {
+                "name": "isxfsdumperasetape",
+                "start": 3994,
+                "end": 4001
+            }
+        ],
+        "common/timeutil.c": [
+            {
+                "name": "ctime32",
+                "start": 26,
+                "end": 31
+            },
+            {
+                "name": "ctime32_r",
+                "start": 33,
+                "end": 38
+            },
+            {
+                "name": "ctimennl",
+                "start": 40,
+                "end": 50
+            }
+        ],
+        "common/lock.c": [
+            {
+                "name": "lock_init",
+                "start": 28,
+                "end": 40
+            },
+            {
+                "name": "lock",
+                "start": 42,
+                "end": 46
+            },
+            {
+                "name": "unlock",
+                "start": 48,
+                "end": 52
+            }
+        ],
+        "common/arch_xlate.c": [
+            {
+                "name": "xlate_global_hdr",
+                "start": 45,
+                "end": 102
+            },
+            {
+                "name": "xlate_drive_hdr",
+                "start": 108,
+                "end": 154
+            },
+            {
+                "name": "xlate_media_hdr",
+                "start": 160,
+                "end": 189
+            },
+            {
+                "name": "xlate_content_hdr",
+                "start": 195,
+                "end": 219
+            },
+            {
+                "name": "xlate_content_inode_hdr",
+                "start": 225,
+                "end": 259
+            },
+            {
+                "name": "xlate_startpt",
+                "start": 264,
+                "end": 273
+            },
+            {
+                "name": "xlate_hnk",
+                "start": 280,
+                "end": 307
+            },
+            {
+                "name": "xlate_filehdr",
+                "start": 312,
+                "end": 345
+            },
+            {
+                "name": "xlate_bstat",
+                "start": 350,
+                "end": 405
+            },
+            {
+                "name": "xlate_extenthdr",
+                "start": 410,
+                "end": 430
+            },
+            {
+                "name": "xlate_direnthdr",
+                "start": 435,
+                "end": 476
+            },
+            {
+                "name": "xlate_direnthdr_v1",
+                "start": 481,
+                "end": 522
+            },
+            {
+                "name": "xlate_extattrhdr",
+                "start": 527,
+                "end": 537
+            },
+            {
+                "name": "xlate_rec_hdr",
+                "start": 542,
+                "end": 613
+            },
+            {
+                "name": "xlate_invt_seshdr",
+                "start": 618,
+                "end": 639
+            },
+            {
+                "name": "xlate_invt_session",
+                "start": 641,
+                "end": 676
+            },
+            {
+                "name": "xlate_invt_breakpt",
+                "start": 678,
+                "end": 685
+            },
+            {
+                "name": "xlate_invt_stream",
+                "start": 687,
+                "end": 710
+            },
+            {
+                "name": "xlate_invt_mediafile",
+                "start": 712,
+                "end": 737
+            }
+        ],
+        "common/drive_scsitape.c": [
+            {
+                "name": "Read",
+                "start": 349,
+                "end": 352
+            },
+            {
+                "name": "Write",
+                "start": 353,
+                "end": 356
+            },
+            {
+                "name": "quick_backup",
+                "start": 357,
+                "end": 359
+            },
+            {
+                "name": "record_hdr_validate",
+                "start": 360,
+                "end": 362
+            },
+            {
+                "name": "write_record",
+                "start": 367,
+                "end": 368
+            },
+            {
+                "name": "is_scsi_driver",
+                "start": 450,
+                "end": 503
+            },
+            {
+                "name": "ds_match",
+                "start": 508,
+                "end": 541
+            },
+            {
+                "name": "ds_instantiate",
+                "start": 546,
+                "end": 768
+            },
+            {
+                "name": "do_init",
+                "start": 779,
+                "end": 797
+            },
+            {
+                "name": "do_sync",
+                "start": 804,
+                "end": 811
+            },
+            {
+                "name": "do_begin_read",
+                "start": 822,
+                "end": 907
+            },
+            {
+                "name": "do_read",
+                "start": 918,
+                "end": 978
+            },
+            {
+                "name": "do_return_read_buf",
+                "start": 988,
+                "end": 1033
+            },
+            {
+                "name": "do_get_mark",
+                "start": 1041,
+                "end": 1067
+            },
+            {
+                "name": "do_seek_mark",
+                "start": 1080,
+                "end": 1398
+            },
+            {
+                "name": "do_next_mark",
+                "start": 1410,
+                "end": 1680
+            },
+            {
+                "name": "do_end_read",
+                "start": 1689,
+                "end": 1709
+            },
+            {
+                "name": "do_begin_write",
+                "start": 1718,
+                "end": 1867
+            },
+            {
+                "name": "do_set_mark",
+                "start": 1872,
+                "end": 1928
+            },
+            {
+                "name": "do_get_write_buf",
+                "start": 1938,
+                "end": 1975
+            },
+            {
+                "name": "do_write",
+                "start": 1989,
+                "end": 2109
+            },
+            {
+                "name": "do_get_align_cnt",
+                "start": 2118,
+                "end": 2153
+            },
+            {
+                "name": "do_end_write",
+                "start": 2162,
+                "end": 2363
+            },
+            {
+                "name": "do_fsf",
+                "start": 2372,
+                "end": 2462
+            },
+            {
+                "name": "do_bsf",
+                "start": 2472,
+                "end": 2589
+            },
+            {
+                "name": "do_rewind",
+                "start": 2598,
+                "end": 2620
+            },
+            {
+                "name": "do_erase",
+                "start": 2629,
+                "end": 2665
+            },
+            {
+                "name": "do_eject_media",
+                "start": 2674,
+                "end": 2698
+            },
+            {
+                "name": "do_get_device_class",
+                "start": 2707,
+                "end": 2714
+            },
+            {
+                "name": "do_display_metrics",
+                "start": 2718,
+                "end": 2733
+            },
+            {
+                "name": "do_quit",
+                "start": 2737,
+                "end": 2776
+            },
+            {
+                "name": "percent64",
+                "start": 2778,
+                "end": 2782
+            },
+            {
+                "name": "read_label",
+                "start": 2829,
+                "end": 3003
+            },
+            {
+                "name": "validate_media_file_hdr",
+                "start": 3005,
+                "end": 3116
+            },
+            {
+                "name": "set_fixed_blksz",
+                "start": 3130,
+                "end": 3200
+            },
+            {
+                "name": "get_tpcaps",
+                "start": 3211,
+                "end": 3269
+            },
+            {
+                "name": "set_recommended_sizes",
+                "start": 3278,
+                "end": 3310
+            },
+            {
+                "name": "mt_blkinfo",
+                "start": 3324,
+                "end": 3370
+            },
+            {
+                "name": "mt_op",
+                "start": 3379,
+                "end": 3448
+            },
+            {
+                "name": "mt_get_fileno",
+                "start": 3450,
+                "end": 3474
+            },
+            {
+                "name": "mt_get_status",
+                "start": 3483,
+                "end": 3542
+            },
+            {
+                "name": "determine_write_error",
+                "start": 3551,
+                "end": 3605
+            },
+            {
+                "name": "tape_rec_checksum_set",
+                "start": 3607,
+                "end": 3627
+            },
+            {
+                "name": "tape_rec_checksum_check",
+                "start": 3629,
+                "end": 3647
+            },
+            {
+                "name": "display_access_failed_message",
+                "start": 3732,
+                "end": 3756
+            },
+            {
+                "name": "status_failed_message",
+                "start": 3764,
+                "end": 3794
+            },
+            {
+                "name": "is_variable",
+                "start": 3796,
+                "end": 3836
+            },
+            {
+                "name": "prepare_drive",
+                "start": 3844,
+                "end": 4640
+            },
+            {
+                "name": "Open",
+                "start": 4644,
+                "end": 4671
+            },
+            {
+                "name": "Close",
+                "start": 4673,
+                "end": 4686
+            },
+            {
+                "name": "Read",
+                "start": 4688,
+                "end": 4722
+            },
+            {
+                "name": "Write",
+                "start": 4724,
+                "end": 4758
+            },
+            {
+                "name": "quick_backup",
+                "start": 4765,
+                "end": 4790
+            },
+            {
+                "name": "record_hdr_validate",
+                "start": 4795,
+                "end": 4878
+            },
+            {
+                "name": "read_record",
+                "start": 4883,
+                "end": 4965
+            },
+            {
+                "name": "ring_read",
+                "start": 4967,
+                "end": 4971
+            },
+            {
+                "name": "getrec",
+                "start": 4975,
+                "end": 5026
+            },
+            {
+                "name": "write_record",
+                "start": 5032,
+                "end": 5061
+            },
+            {
+                "name": "ring_write",
+                "start": 5063,
+                "end": 5067
+            },
+            {
+                "name": "Ring_get",
+                "start": 5069,
+                "end": 5079
+            },
+            {
+                "name": "Ring_put",
+                "start": 5081,
+                "end": 5089
+            },
+            {
+                "name": "Ring_reset",
+                "start": 5091,
+                "end": 5100
+            },
+            {
+                "name": "calc_max_lost",
+                "start": 5106,
+                "end": 5117
+            },
+            {
+                "name": "display_ring_metrics",
+                "start": 5119,
+                "end": 5164
+            },
+            {
+                "name": "rewind_and_verify",
+                "start": 5166,
+                "end": 5202
+            },
+            {
+                "name": "erase_and_verify",
+                "start": 5204,
+                "end": 5218
+            },
+            {
+                "name": "bsf_and_verify",
+                "start": 5220,
+                "end": 5291
+            },
+            {
+                "name": "fsf_and_verify",
+                "start": 5293,
+                "end": 5327
+            },
+            {
+                "name": "calc_best_blk_and_rec_sz",
+                "start": 5329,
+                "end": 5351
+            },
+            {
+                "name": "set_best_blk_and_rec_sz",
+                "start": 5353,
+                "end": 5373
+            },
+            {
+                "name": "isefsdump",
+                "start": 5375,
+                "end": 5387
+            },
+            {
+                "name": "get_driver_character_major",
+                "start": 5395,
+                "end": 5416
+            },
+            {
+                "name": "map_ts_status",
+                "start": 5418,
+                "end": 5458
+            }
+        ],
+        "common/drive_simple.c": [
+            {
+                "name": "ds_match",
+                "start": 180,
+                "end": 218
+            },
+            {
+                "name": "ds_instantiate",
+                "start": 223,
+                "end": 380
+            },
+            {
+                "name": "do_init",
+                "start": 386,
+                "end": 401
+            },
+            {
+                "name": "do_sync",
+                "start": 407,
+                "end": 411
+            },
+            {
+                "name": "do_begin_read",
+                "start": 416,
+                "end": 568
+            },
+            {
+                "name": "do_read",
+                "start": 572,
+                "end": 665
+            },
+            {
+                "name": "do_return_read_buf",
+                "start": 671,
+                "end": 699
+            },
+            {
+                "name": "do_get_mark",
+                "start": 704,
+                "end": 726
+            },
+            {
+                "name": "do_seek_mark",
+                "start": 731,
+                "end": 788
+            },
+            {
+                "name": "do_next_mark",
+                "start": 794,
+                "end": 823
+            },
+            {
+                "name": "do_end_read",
+                "start": 828,
+                "end": 845
+            },
+            {
+                "name": "do_begin_write",
+                "start": 849,
+                "end": 981
+            },
+            {
+                "name": "do_set_mark",
+                "start": 985,
+                "end": 1161
+            },
+            {
+                "name": "do_get_write_buf",
+                "start": 1168,
+                "end": 1208
+            },
+            {
+                "name": "do_write",
+                "start": 1214,
+                "end": 1288
+            },
+            {
+                "name": "do_get_align_cnt",
+                "start": 1293,
+                "end": 1323
+            },
+            {
+                "name": "do_end_write",
+                "start": 1328,
+                "end": 1393
+            },
+            {
+                "name": "do_rewind",
+                "start": 1397,
+                "end": 1428
+            },
+            {
+                "name": "do_erase",
+                "start": 1432,
+                "end": 1477
+            },
+            {
+                "name": "do_get_device_class",
+                "start": 1482,
+                "end": 1489
+            },
+            {
+                "name": "do_quit",
+                "start": 1491,
+                "end": 1515
+            }
+        ],
+        "common/dlog.c": [
+            {
+                "name": "promptinput",
+                "start": 42,
+                "end": 50
+            },
+            {
+                "name": "dlog_init",
+                "start": 53,
+                "end": 124
+            },
+            {
+                "name": "dlog_allowed",
+                "start": 126,
+                "end": 130
+            },
+            {
+                "name": "dlog_desist",
+                "start": 132,
+                "end": 136
+            },
+            {
+                "name": "dlog_fd",
+                "start": 138,
+                "end": 142
+            },
+            {
+                "name": "dlog_begin",
+                "start": 144,
+                "end": 154
+            },
+            {
+                "name": "dlog_end",
+                "start": 156,
+                "end": 166
+            },
+            {
+                "name": "dlog_multi_query",
+                "start": 168,
+                "end": 268
+            },
+            {
+                "name": "dlog_multi_ack",
+                "start": 270,
+                "end": 279
+            },
+            {
+                "name": "dlog_string_query",
+                "start": 281,
+                "end": 333
+            },
+            {
+                "name": "dlog_string_ack",
+                "start": 335,
+                "end": 339
+            },
+            {
+                "name": "dlog_sighandler",
+                "start": 345,
+                "end": 354
+            },
+            {
+                "name": "dlog_string_query_print",
+                "start": 357,
+                "end": 367
+            },
+            {
+                "name": "promptinput",
+                "start": 369,
+                "end": 517
+            }
+        ],
+        "common/cleanup.h": [
+            {
+                "name": "cleanup_register",
+                "start": 29,
+                "end": 31
+            },
+            {
+                "name": "cleanup_register_early",
+                "start": 33,
+                "end": 36
+            }
+        ],
+        "common/cleanup.c": [
+            {
+                "name": "cleanup_init",
+                "start": 40,
+                "end": 44
+            },
+            {
+                "name": "cleanup_register_base",
+                "start": 46,
+                "end": 63
+            },
+            {
+                "name": "cleanup_register",
+                "start": 65,
+                "end": 75
+            },
+            {
+                "name": "cleanup_register_early",
+                "start": 77,
+                "end": 88
+            },
+            {
+                "name": "cleanup_cancel",
+                "start": 90,
+                "end": 113
+            },
+            {
+                "name": "cleanup",
+                "start": 115,
+                "end": 124
+            },
+            {
+                "name": "cleanup_early",
+                "start": 126,
+                "end": 151
+            }
+        ],
+        "common/inventory.c": [
+            {
+                "name": "inv_open",
+                "start": 43,
+                "end": 105
+            },
+            {
+                "name": "inv_close",
+                "start": 117,
+                "end": 127
+            },
+            {
+                "name": "inv_lasttime_level_lessthan",
+                "start": 141,
+                "end": 154
+            },
+            {
+                "name": "inv_lastsession_level_lessthan",
+                "start": 166,
+                "end": 180
+            },
+            {
+                "name": "inv_lastsession_level_equalto",
+                "start": 193,
+                "end": 206
+            },
+            {
+                "name": "inv_writesession_open",
+                "start": 220,
+                "end": 309
+            },
+            {
+                "name": "inv_writesession_close",
+                "start": 322,
+                "end": 338
+            },
+            {
+                "name": "inv_stream_open",
+                "start": 347,
+                "end": 429
+            },
+            {
+                "name": "inv_stream_close",
+                "start": 440,
+                "end": 483
+            },
+            {
+                "name": "inv_put_mediafile",
+                "start": 494,
+                "end": 533
+            },
+            {
+                "name": "inv_get_inolist",
+                "start": 549,
+                "end": 606
+            },
+            {
+                "name": "inv_get_session",
+                "start": 624,
+                "end": 636
+            }
+        ],
+        "common/exit.h": [
+            {
+                "name": "exit_codestring",
+                "start": 28,
+                "end": 38
+            }
+        ],
+        "common/mlog.c": [
+            {
+                "name": "mlog_init0",
+                "start": 122,
+                "end": 142
+            },
+            {
+                "name": "mlog_init1",
+                "start": 144,
+                "end": 305
+            },
+            {
+                "name": "mlog_init2",
+                "start": 307,
+                "end": 315
+            },
+            {
+                "name": "mlog_tell_streamcnt",
+                "start": 317,
+                "end": 321
+            },
+            {
+                "name": "mlog_lock",
+                "start": 323,
+                "end": 327
+            },
+            {
+                "name": "mlog_unlock",
+                "start": 329,
+                "end": 333
+            },
+            {
+                "name": "mlog_override_level",
+                "start": 341,
+                "end": 358
+            },
+            {
+                "name": "mlog",
+                "start": 360,
+                "end": 367
+            },
+            {
+                "name": "mlog_va",
+                "start": 369,
+                "end": 459
+            },
+            {
+                "name": "rv_getdesc",
+                "start": 508,
+                "end": 522
+            },
+            {
+                "name": "_mlog_exit",
+                "start": 569,
+                "end": 629
+            },
+            {
+                "name": "_mlog_exit_hint",
+                "start": 631,
+                "end": 664
+            },
+            {
+                "name": "mlog_get_hint",
+                "start": 666,
+                "end": 681
+            },
+            {
+                "name": "mlog_exit_flush",
+                "start": 698,
+                "end": 783
+            },
+            {
+                "name": "mlog_sym_lookup",
+                "start": 785,
+                "end": 800
+            }
+        ],
+        "common/getdents.c": [
+            {
+                "name": "getdents_wrap",
+                "start": 54,
+                "end": 124
+            }
+        ],
+        "common/openutil.c": [
+            {
+                "name": "open_pathalloc",
+                "start": 29,
+                "end": 68
+            },
+            {
+                "name": "open_trwp",
+                "start": 70,
+                "end": 84
+            },
+            {
+                "name": "open_erwp",
+                "start": 86,
+                "end": 100
+            },
+            {
+                "name": "open_rwp",
+                "start": 102,
+                "end": 110
+            },
+            {
+                "name": "mkdir_tp",
+                "start": 112,
+                "end": 120
+            },
+            {
+                "name": "open_trwdb",
+                "start": 122,
+                "end": 133
+            },
+            {
+                "name": "open_erwdb",
+                "start": 135,
+                "end": 146
+            },
+            {
+                "name": "open_rwdb",
+                "start": 148,
+                "end": 159
+            }
+        ],
+        "common/cldmgr.c": [
+            {
+                "name": "cldmgr_init",
+                "start": 63,
+                "end": 71
+            },
+            {
+                "name": "cldmgr_create",
+                "start": 73,
+                "end": 115
+            },
+            {
+                "name": "cldmgr_stop",
+                "start": 117,
+                "end": 124
+            },
+            {
+                "name": "cldmgr_join",
+                "start": 126,
+                "end": 157
+            },
+            {
+                "name": "cldmgr_stop_requested",
+                "start": 159,
+                "end": 163
+            },
+            {
+                "name": "cldmgr_remainingcnt",
+                "start": 165,
+                "end": 182
+            },
+            {
+                "name": "cldmgr_otherstreamsremain",
+                "start": 184,
+                "end": 200
+            },
+            {
+                "name": "cldmgr_getcld",
+                "start": 202,
+                "end": 218
+            },
+            {
+                "name": "cldmgr_entry",
+                "start": 220,
+                "end": 240
+            },
+            {
+                "name": "cldmgr_cleanup",
+                "start": 242,
+                "end": 252
+            }
+        ],
+        "common/stream.c": [
+            {
+                "name": "stream_init",
+                "start": 45,
+                "end": 50
+            },
+            {
+                "name": "stream_register",
+                "start": 62,
+                "end": 87
+            },
+            {
+                "name": "stream_dead",
+                "start": 90,
+                "end": 102
+            },
+            {
+                "name": "stream_free",
+                "start": 104,
+                "end": 120
+            },
+            {
+                "name": "stream_find_all",
+                "start": 122,
+                "end": 144
+            },
+            {
+                "name": "stream_find",
+                "start": 146,
+                "end": 178
+            },
+            {
+                "name": "stream_getix",
+                "start": 186,
+                "end": 195
+            },
+            {
+                "name": "stream_set_code",
+                "start": 224,
+                "end": 227
+            },
+            {
+                "name": "stream_set_return",
+                "start": 229,
+                "end": 232
+            },
+            {
+                "name": "stream_set_hint",
+                "start": 234,
+                "end": 237
+            },
+            {
+                "name": "stream_get_exit_status",
+                "start": 240,
+                "end": 267
+            },
+            {
+                "name": "stream_cnt",
+                "start": 269,
+                "end": 296
+            }
+        ],
+        "common/media.c": [
+            {
+                "name": "media_create",
+                "start": 76,
+                "end": 211
+            },
+            {
+                "name": "media_init",
+                "start": 213,
+                "end": 221
+            },
+            {
+                "name": "media_complete",
+                "start": 223,
+                "end": 227
+            },
+            {
+                "name": "media_get_upper_hdrs",
+                "start": 232,
+                "end": 248
+            },
+            {
+                "name": "media_alloc",
+                "start": 256,
+                "end": 306
+            }
+        ],
+        "common/hsmapi.h": [
+            {
+                "name": "HsmInitFsysContext",
+                "start": 56,
+                "end": 59
+            },
+            {
+                "name": "HsmDeleteFsysContext",
+                "start": 74,
+                "end": 76
+            },
+            {
+                "name": "HsmEstimateFileSpace",
+                "start": 93,
+                "end": 99
+            },
+            {
+                "name": "HsmEstimateFileOffset",
+                "start": 117,
+                "end": 122
+            },
+            {
+                "name": "HsmAllocateFileContext",
+                "start": 143,
+                "end": 145
+            },
+            {
+                "name": "HsmDeleteFileContext",
+                "start": 160,
+                "end": 162
+            },
+            {
+                "name": "HsmInitFileContext",
+                "start": 181,
+                "end": 184
+            },
+            {
+                "name": "HsmModifyInode",
+                "start": 201,
+                "end": 204
+            },
+            {
+                "name": "HsmModifyExtentMap",
+                "start": 222,
+                "end": 225
+            },
+            {
+                "name": "HsmFilterExistingAttribute",
+                "start": 251,
+                "end": 257
+            },
+            {
+                "name": "HsmAddNewAttribute",
+                "start": 286,
+                "end": 293
+            },
+            {
+                "name": "HsmBeginRestoreFile",
+                "start": 313,
+                "end": 317
+            },
+            {
+                "name": "HsmRestoreAttribute",
+                "start": 337,
+                "end": 341
+            },
+            {
+                "name": "HsmEndRestoreFile",
+                "start": 361,
+                "end": 365
+            }
+        ],
+        "common/hsmapi.c": [
+            {
+                "name": "msb_store",
+                "start": 132,
+                "end": 144
+            },
+            {
+                "name": "msb_load",
+                "start": 153,
+                "end": 165
+            },
+            {
+                "name": "HsmInitFsysContext",
+                "start": 188,
+                "end": 218
+            },
+            {
+                "name": "HsmDeleteFsysContext",
+                "start": 233,
+                "end": 238
+            },
+            {
+                "name": "HsmEstimateFileSpace",
+                "start": 255,
+                "end": 320
+            },
+            {
+                "name": "HsmEstimateFileOffset",
+                "start": 339,
+                "end": 368
+            },
+            {
+                "name": "HsmAllocateFileContext",
+                "start": 389,
+                "end": 405
+            },
+            {
+                "name": "HsmDeleteFileContext",
+                "start": 420,
+                "end": 425
+            },
+            {
+                "name": "HsmInitFileContext",
+                "start": 444,
+                "end": 522
+            },
+            {
+                "name": "HsmModifyInode",
+                "start": 539,
+                "end": 550
+            },
+            {
+                "name": "HsmModifyExtentMap",
+                "start": 568,
+                "end": 602
+            },
+            {
+                "name": "HsmFilterExistingAttribute",
+                "start": 628,
+                "end": 660
+            },
+            {
+                "name": "HsmAddNewAttribute",
+                "start": 689,
+                "end": 748
+            },
+            {
+                "name": "HsmBeginRestoreFile",
+                "start": 768,
+                "end": 796
+            },
+            {
+                "name": "HsmRestoreAttribute",
+                "start": 816,
+                "end": 828
+            },
+            {
+                "name": "HsmEndRestoreFile",
+                "start": 848,
+                "end": 868
+            }
+        ],
+        "common/content_common.c": [
+            {
+                "name": "Media_prompt_change",
+                "start": 43,
+                "end": 142
+            }
+        ],
+        "common/inventory.h": [
+            {
+                "name": "inv_open",
+                "start": 144,
+                "end": 147
+            },
+            {
+                "name": "inv_close",
+                "start": 150,
+                "end": 152
+            },
+            {
+                "name": "inv_writesession_open",
+                "start": 155,
+                "end": 165
+            },
+            {
+                "name": "inv_writesession_close",
+                "start": 167,
+                "end": 169
+            },
+            {
+                "name": "inv_stream_open",
+                "start": 171,
+                "end": 173
+            },
+            {
+                "name": "inv_stream_close",
+                "start": 175,
+                "end": 178
+            },
+            {
+                "name": "inv_put_mediafile",
+                "start": 180,
+                "end": 188
+            },
+            {
+                "name": "inv_lasttime_level_lessthan",
+                "start": 195,
+                "end": 199
+            },
+            {
+                "name": "inv_lastsession_level_lessthan",
+                "start": 201,
+                "end": 205
+            },
+            {
+                "name": "inv_lastsession_level_equalto",
+                "start": 207,
+                "end": 211
+            },
+            {
+                "name": "inv_get_inolist",
+                "start": 213,
+                "end": 215
+            },
+            {
+                "name": "inv_get_session",
+                "start": 218,
+                "end": 222
+            },
+            {
+                "name": "inv_put_session",
+                "start": 225,
+                "end": 229
+            },
+            {
+                "name": "inv_setup_base",
+                "start": 240,
+                "end": 241
+            },
+            {
+                "name": "inv_dirpath",
+                "start": 243,
+                "end": 244
+            },
+            {
+                "name": "inv_fstab",
+                "start": 246,
+                "end": 247
+            },
+            {
+                "name": "inv_lockfile",
+                "start": 249,
+                "end": 250
+            }
+        ],
+        "common/main.c": [
+            {
+                "name": "main",
+                "start": 139,
+                "end": 2338
+            }
+        ],
+        "common/qlock.c": [
+            {
+                "name": "qlock_alloc",
+                "start": 74,
+                "end": 98
+            },
+            {
+                "name": "qlock_lock",
+                "start": 100,
+                "end": 142
+            },
+            {
+                "name": "qlock_unlock",
+                "start": 144,
+                "end": 163
+            },
+            {
+                "name": "qsem_alloc",
+                "start": 165,
+                "end": 182
+            },
+            {
+                "name": "qsem_free",
+                "start": 184,
+                "end": 198
+            },
+            {
+                "name": "qsemP",
+                "start": 200,
+                "end": 210
+            },
+            {
+                "name": "qsemV",
+                "start": 212,
+                "end": 222
+            },
+            {
+                "name": "qsemPwouldblock",
+                "start": 224,
+                "end": 235
+            },
+            {
+                "name": "qsemPavail",
+                "start": 237,
+                "end": 248
+            }
+        ],
+        "common/path.c": [
+            {
+                "name": "path_diff",
+                "start": 49,
+                "end": 77
+            },
+            {
+                "name": "path_beginswith",
+                "start": 79,
+                "end": 86
+            },
+            {
+                "name": "path_reltoabs",
+                "start": 88,
+                "end": 120
+            },
+            {
+                "name": "path_normalize",
+                "start": 122,
+                "end": 160
+            },
+            {
+                "name": "pem_alloc",
+                "start": 162,
+                "end": 171
+            },
+            {
+                "name": "pem_free",
+                "start": 173,
+                "end": 177
+            },
+            {
+                "name": "pem_next",
+                "start": 179,
+                "end": 227
+            },
+            {
+                "name": "pa_alloc",
+                "start": 229,
+                "end": 236
+            },
+            {
+                "name": "pa_free",
+                "start": 238,
+                "end": 248
+            },
+            {
+                "name": "pa_append",
+                "start": 250,
+                "end": 258
+            },
+            {
+                "name": "pa_peel",
+                "start": 260,
+                "end": 274
+            },
+            {
+                "name": "pa_gen",
+                "start": 276,
+                "end": 306
+            }
+        ],
+        "restore/win.h": [
+            {
+                "name": "win_init",
+                "start": 28,
+                "end": 31
+            },
+            {
+                "name": "win_map",
+                "start": 35,
+                "end": 36
+            },
+            {
+                "name": "win_unmap",
+                "start": 41,
+                "end": 42
+            }
+        ],
+        "restore/node.h": [
+            {
+                "name": "node_init",
+                "start": 32,
+                "end": 38
+            }
+        ],
+        "restore/node.c": [
+            {
+                "name": "nh2segix",
+                "start": 156,
+                "end": 160
+            },
+            {
+                "name": "nh2relnix",
+                "start": 162,
+                "end": 166
+            },
+            {
+                "name": "node_map_internal",
+                "start": 168,
+                "end": 178
+            },
+            {
+                "name": "node_unmap_internal",
+                "start": 181,
+                "end": 221
+            },
+            {
+                "name": "node_init",
+                "start": 224,
+                "end": 390
+            },
+            {
+                "name": "node_sync",
+                "start": 392,
+                "end": 428
+            },
+            {
+                "name": "node_alloc",
+                "start": 430,
+                "end": 521
+            },
+            {
+                "name": "node_map",
+                "start": 523,
+                "end": 562
+            },
+            {
+                "name": "node_unmap",
+                "start": 564,
+                "end": 568
+            },
+            {
+                "name": "node_free",
+                "start": 570,
+                "end": 629
+            }
+        ],
+        "restore/dirattr.h": [
+            {
+                "name": "dirattr_init",
+                "start": 34,
+                "end": 36
+            },
+            {
+                "name": "dirattr_cb_extattr",
+                "start": 85,
+                "end": 89
+            }
+        ],
+        "restore/dirattr.c": [
+            {
+                "name": "dirattr_init",
+                "start": 195,
+                "end": 345
+            },
+            {
+                "name": "dirattr_cleanup",
+                "start": 347,
+                "end": 380
+            },
+            {
+                "name": "dirattr_add",
+                "start": 382,
+                "end": 462
+            },
+            {
+                "name": "dirattr_addextattr",
+                "start": 464,
+                "end": 614
+            },
+            {
+                "name": "dirattr_cb_extattr",
+                "start": 616,
+                "end": 743
+            },
+            {
+                "name": "dirattr_update",
+                "start": 745,
+                "end": 830
+            },
+            {
+                "name": "dirattr_del",
+                "start": 833,
+                "end": 836
+            },
+            {
+                "name": "dirattr_get_mode",
+                "start": 838,
+                "end": 843
+            },
+            {
+                "name": "dirattr_get_uid",
+                "start": 845,
+                "end": 850
+            },
+            {
+                "name": "dirattr_get_gid",
+                "start": 852,
+                "end": 857
+            },
+            {
+                "name": "dirattr_get_atime",
+                "start": 859,
+                "end": 864
+            },
+            {
+                "name": "dirattr_get_mtime",
+                "start": 866,
+                "end": 871
+            },
+            {
+                "name": "dirattr_get_ctime",
+                "start": 873,
+                "end": 878
+            },
+            {
+                "name": "dirattr_get_xflags",
+                "start": 880,
+                "end": 885
+            },
+            {
+                "name": "dirattr_get_extsize",
+                "start": 887,
+                "end": 892
+            },
+            {
+                "name": "dirattr_get_projid",
+                "start": 894,
+                "end": 899
+            },
+            {
+                "name": "dirattr_get_dmevmask",
+                "start": 901,
+                "end": 906
+            },
+            {
+                "name": "dirattr_get_dmstate",
+                "start": 908,
+                "end": 913
+            },
+            {
+                "name": "dirattr_flush",
+                "start": 915,
+                "end": 945
+            },
+            {
+                "name": "dirattr_get",
+                "start": 949,
+                "end": 1025
+            },
+            {
+                "name": "dirattr_cacheflush",
+                "start": 1027,
+                "end": 1096
+            }
+        ],
+        "restore/mmap.c": [
+            {
+                "name": "mmap_autogrow",
+                "start": 30,
+                "end": 46
+            }
+        ],
+        "restore/inomap.h": [
+            {
+                "name": "inomap_restore_pers",
+                "start": 73,
+                "end": 75
+            },
+            {
+                "name": "inomap_cbiter",
+                "start": 82,
+                "end": 84
+            }
+        ],
+        "restore/inomap.c": [
+            {
+                "name": "SEG_SET_BITS",
+                "start": 99,
+                "end": 150
+            },
+            {
+                "name": "SEG_GET_BITS",
+                "start": 152,
+                "end": 173
+            },
+            {
+                "name": "inomap_restore_pers",
+                "start": 177,
+                "end": 299
+            },
+            {
+                "name": "inomap_discard",
+                "start": 303,
+                "end": 342
+            },
+            {
+                "name": "inomap_sync_pers",
+                "start": 344,
+                "end": 428
+            },
+            {
+                "name": "inomap_del_pers",
+                "start": 432,
+                "end": 438
+            },
+            {
+                "name": "inomap_sanitize",
+                "start": 442,
+                "end": 481
+            },
+            {
+                "name": "inomap_rst_add",
+                "start": 485,
+                "end": 490
+            },
+            {
+                "name": "inomap_rst_del",
+                "start": 494,
+                "end": 499
+            },
+            {
+                "name": "inomap_rst_needed",
+                "start": 504,
+                "end": 574
+            },
+            {
+                "name": "inomap_cbiter",
+                "start": 580,
+                "end": 624
+            },
+            {
+                "name": "map_getset",
+                "start": 631,
+                "end": 646
+            },
+            {
+                "name": "map_getsegment",
+                "start": 648,
+                "end": 704
+            },
+            {
+                "name": "map_set",
+                "start": 706,
+                "end": 713
+            }
+        ],
+        "restore/namreg.h": [
+            {
+                "name": "namreg_init",
+                "start": 37,
+                "end": 39
+            }
+        ],
+        "restore/namreg.c": [
+            {
+                "name": "namreg_init",
+                "start": 112,
+                "end": 250
+            },
+            {
+                "name": "namreg_add",
+                "start": 252,
+                "end": 318
+            },
+            {
+                "name": "namreg_del",
+                "start": 321,
+                "end": 326
+            },
+            {
+                "name": "namreg_flush",
+                "start": 328,
+                "end": 359
+            },
+            {
+                "name": "namreg_get",
+                "start": 361,
+                "end": 477
+            },
+            {
+                "name": "namreg_map",
+                "start": 479,
+                "end": 504
+            }
+        ],
+        "restore/bag.h": [
+            {
+                "name": "bag_insert",
+                "start": 53,
+                "end": 56
+            },
+            {
+                "name": "bag_remove",
+                "start": 61,
+                "end": 64
+            },
+            {
+                "name": "bag_find",
+                "start": 71,
+                "end": 73
+            }
+        ],
+        "restore/tree.h": [
+            {
+                "name": "tree_init",
+                "start": 23,
+                "end": 37
+            },
+            {
+                "name": "tree_sync",
+                "start": 41,
+                "end": 45
+            },
+            {
+                "name": "tree_addent",
+                "start": 64,
+                "end": 68
+            },
+            {
+                "name": "tree_cb_links",
+                "start": 96,
+                "end": 106
+            },
+            {
+                "name": "tree_extattr",
+                "start": 118,
+                "end": 119
+            }
+        ],
+        "restore/tree.c": [
+            {
+                "name": "Node_alloc",
+                "start": 262,
+                "end": 266
+            },
+            {
+                "name": "Node2path_recurse",
+                "start": 270,
+                "end": 271
+            },
+            {
+                "name": "link_headiter",
+                "start": 281,
+                "end": 282
+            },
+            {
+                "name": "link_iter_init",
+                "start": 283,
+                "end": 284
+            },
+            {
+                "name": "hash_init",
+                "start": 287,
+                "end": 290
+            },
+            {
+                "name": "hash_iter",
+                "start": 296,
+                "end": 297
+            },
+            {
+                "name": "tsi_walkpath",
+                "start": 299,
+                "end": 302
+            },
+            {
+                "name": "tsi_cmd_pwd_recurse",
+                "start": 305,
+                "end": 308
+            },
+            {
+                "name": "tree_init",
+                "start": 330,
+                "end": 522
+            },
+            {
+                "name": "tree_sync",
+                "start": 524,
+                "end": 653
+            },
+            {
+                "name": "tree_check_dump_format",
+                "start": 655,
+                "end": 671
+            },
+            {
+                "name": "tree_marknoref",
+                "start": 681,
+                "end": 693
+            },
+            {
+                "name": "tree_marknoref_recurse",
+                "start": 695,
+                "end": 718
+            },
+            {
+                "name": "tree_markallsubtree",
+                "start": 720,
+                "end": 727
+            },
+            {
+                "name": "tree_begindir",
+                "start": 729,
+                "end": 819
+            },
+            {
+                "name": "tree_addent",
+                "start": 821,
+                "end": 1113
+            },
+            {
+                "name": "tree_enddir",
+                "start": 1116,
+                "end": 1119
+            },
+            {
+                "name": "tree_subtree_parse",
+                "start": 1121,
+                "end": 1155
+            },
+            {
+                "name": "noref_elim_recurse",
+                "start": 1167,
+                "end": 1171
+            },
+            {
+                "name": "mkdirs_recurse",
+                "start": 1173,
+                "end": 1175
+            },
+            {
+                "name": "rename_dirs",
+                "start": 1177,
+                "end": 1179
+            },
+            {
+                "name": "proc_hardlinks",
+                "start": 1181,
+                "end": 1182
+            },
+            {
+                "name": "tree_post",
+                "start": 1184,
+                "end": 1256
+            },
+            {
+                "name": "noref_elim_recurse",
+                "start": 1259,
+                "end": 1568
+            },
+            {
+                "name": "mkdirs_recurse",
+                "start": 1571,
+                "end": 1640
+            },
+            {
+                "name": "rename_dirs",
+                "start": 1642,
+                "end": 1728
+            },
+            {
+                "name": "tree_cb_links",
+                "start": 1733,
+                "end": 1972
+            },
+            {
+                "name": "tree_adjref_recurse",
+                "start": 1985,
+                "end": 1987
+            },
+            {
+                "name": "tree_adjref",
+                "start": 1989,
+                "end": 1994
+            },
+            {
+                "name": "tree_adjref_recurse",
+                "start": 1996,
+                "end": 2025
+            },
+            {
+                "name": "tree_extattr_recurse",
+                "start": 2027,
+                "end": 2031
+            },
+            {
+                "name": "tree_extattr",
+                "start": 2033,
+                "end": 2046
+            },
+            {
+                "name": "tree_extattr_recurse",
+                "start": 2048,
+                "end": 2113
+            },
+            {
+                "name": "proc_hardlinks",
+                "start": 2125,
+                "end": 2137
+            },
+            {
+                "name": "proc_hardlinks_cb",
+                "start": 2158,
+                "end": 2445
+            },
+            {
+                "name": "tree_setattr",
+                "start": 2450,
+                "end": 2466
+            },
+            {
+                "name": "tree_setattr_recurse",
+                "start": 2468,
+                "end": 2512
+            },
+            {
+                "name": "setdirattr",
+                "start": 2514,
+                "end": 2630
+            },
+            {
+                "name": "tree_delorph",
+                "start": 2634,
+                "end": 2654
+            },
+            {
+                "name": "tree_subtree_inter",
+                "start": 2678,
+                "end": 2809
+            },
+            {
+                "name": "tsi_cmd_inst",
+                "start": 2811,
+                "end": 2817
+            },
+            {
+                "name": "tsi_cmd_pwd",
+                "start": 2819,
+                "end": 2835
+            },
+            {
+                "name": "tsi_cmd_pwd_recurse",
+                "start": 2837,
+                "end": 2866
+            },
+            {
+                "name": "tsi_cmd_ls",
+                "start": 2869,
+                "end": 2946
+            },
+            {
+                "name": "tsi_cmd_cd",
+                "start": 2949,
+                "end": 2997
+            },
+            {
+                "name": "tsi_cmd_add",
+                "start": 3000,
+                "end": 3035
+            },
+            {
+                "name": "tsi_cmd_delete",
+                "start": 3038,
+                "end": 3073
+            },
+            {
+                "name": "tsi_cmd_extract",
+                "start": 3076,
+                "end": 3081
+            },
+            {
+                "name": "tsi_cmd_quit",
+                "start": 3084,
+                "end": 3089
+            },
+            {
+                "name": "tsi_cmd_parse",
+                "start": 3093,
+                "end": 3106
+            },
+            {
+                "name": "tsi_cmd_match",
+                "start": 3129,
+                "end": 3165
+            },
+            {
+                "name": "tsi_cmd_help",
+                "start": 3168,
+                "end": 3187
+            },
+            {
+                "name": "tsi_walkpath",
+                "start": 3196,
+                "end": 3397
+            },
+            {
+                "name": "Node_alloc",
+                "start": 3401,
+                "end": 3425
+            },
+            {
+                "name": "Node_free",
+                "start": 3427,
+                "end": 3450
+            },
+            {
+                "name": "Node_map",
+                "start": 3455,
+                "end": 3465
+            },
+            {
+                "name": "Node_unmap",
+                "start": 3467,
+                "end": 3471
+            },
+            {
+                "name": "Node2path",
+                "start": 3476,
+                "end": 3498
+            },
+            {
+                "name": "Node2path_recurse",
+                "start": 3504,
+                "end": 3591
+            },
+            {
+                "name": "adopt",
+                "start": 3595,
+                "end": 3627
+            },
+            {
+                "name": "disown",
+                "start": 3629,
+                "end": 3692
+            },
+            {
+                "name": "selsubtree",
+                "start": 3699,
+                "end": 3755
+            },
+            {
+                "name": "selsubtree_recurse_down",
+                "start": 3757,
+                "end": 3825
+            },
+            {
+                "name": "link_hardh",
+                "start": 3832,
+                "end": 3836
+            },
+            {
+                "name": "link_nexth",
+                "start": 3840,
+                "end": 3850
+            },
+            {
+                "name": "link_matchh",
+                "start": 3855,
+                "end": 3879
+            },
+            {
+                "name": "link_in",
+                "start": 3881,
+                "end": 3939
+            },
+            {
+                "name": "link_out",
+                "start": 3941,
+                "end": 3987
+            },
+            {
+                "name": "link_headiter",
+                "start": 3992,
+                "end": 3996
+            },
+            {
+                "name": "link_iter_init",
+                "start": 4001,
+                "end": 4008
+            },
+            {
+                "name": "link_iter_next",
+                "start": 4010,
+                "end": 4057
+            },
+            {
+                "name": "link_iter_unlink",
+                "start": 4060,
+                "end": 4094
+            },
+            {
+                "name": "hash_init",
+                "start": 4101,
+                "end": 4173
+            },
+            {
+                "name": "hash_sync",
+                "start": 4175,
+                "end": 4207
+            },
+            {
+                "name": "hash_val",
+                "start": 4209,
+                "end": 4219
+            },
+            {
+                "name": "hash_in",
+                "start": 4221,
+                "end": 4258
+            },
+            {
+                "name": "hash_out",
+                "start": 4260,
+                "end": 4310
+            },
+            {
+                "name": "hash_find",
+                "start": 4312,
+                "end": 4355
+            },
+            {
+                "name": "hash_iter",
+                "start": 4362,
+                "end": 4388
+            },
+            {
+                "name": "parse",
+                "start": 4624,
+                "end": 4693
+            },
+            {
+                "name": "fix_escape",
+                "start": 4719,
+                "end": 4799
+            },
+            {
+                "name": "fix_quoted_span",
+                "start": 4801,
+                "end": 4823
+            },
+            {
+                "name": "collapse_white",
+                "start": 4825,
+                "end": 4843
+            },
+            {
+                "name": "distance_to_space",
+                "start": 4845,
+                "end": 4855
+            },
+            {
+                "name": "shrink",
+                "start": 4857,
+                "end": 4861
+            },
+            {
+                "name": "is_white",
+                "start": 4863,
+                "end": 4871
+            },
+            {
+                "name": "is_hex",
+                "start": 4873,
+                "end": 4889
+            },
+            {
+                "name": "hex_to_size",
+                "start": 4891,
+                "end": 4907
+            },
+            {
+                "name": "is_octal",
+                "start": 4909,
+                "end": 4917
+            },
+            {
+                "name": "octal_to_size",
+                "start": 4919,
+                "end": 4927
+            },
+            {
+                "name": "mkdir_r",
+                "start": 4929,
+                "end": 4947
+            }
+        ],
+        "restore/bag.c": [
+            {
+                "name": "bag_alloc",
+                "start": 30,
+                "end": 38
+            },
+            {
+                "name": "bag_insert",
+                "start": 40,
+                "end": 71
+            },
+            {
+                "name": "bag_remove",
+                "start": 73,
+                "end": 104
+            },
+            {
+                "name": "bag_find",
+                "start": 106,
+                "end": 129
+            },
+            {
+                "name": "bagiter_init",
+                "start": 132,
+                "end": 142
+            },
+            {
+                "name": "bagiter_next",
+                "start": 144,
+                "end": 170
+            },
+            {
+                "name": "bag_free",
+                "start": 172,
+                "end": 190
+            }
+        ],
+        "restore/content.c": [
+            {
+                "name": "Media_mfile_next",
+                "start": 692,
+                "end": 702
+            },
+            {
+                "name": "Media_prompt_change",
+                "start": 704,
+                "end": 708
+            },
+            {
+                "name": "dumpcompat",
+                "start": 711,
+                "end": 714
+            },
+            {
+                "name": "promptdumpmatch",
+                "start": 715,
+                "end": 719
+            },
+            {
+                "name": "pi_checkpoint",
+                "start": 721,
+                "end": 724
+            },
+            {
+                "name": "pi_addfile",
+                "start": 726,
+                "end": 731
+            },
+            {
+                "name": "pi_neededobjs_dir_alloc",
+                "start": 736,
+                "end": 737
+            },
+            {
+                "name": "pi_neededobjs_nondir_alloc",
+                "start": 738,
+                "end": 741
+            },
+            {
+                "name": "pi_bracketneededegrps",
+                "start": 743,
+                "end": 745
+            },
+            {
+                "name": "pi_know_no_more_beyond_on_object",
+                "start": 751,
+                "end": 754
+            },
+            {
+                "name": "applydirdump",
+                "start": 762,
+                "end": 765
+            },
+            {
+                "name": "applynondirdump",
+                "start": 767,
+                "end": 772
+            },
+            {
+                "name": "restore_file",
+                "start": 777,
+                "end": 782
+            },
+            {
+                "name": "restore_reg",
+                "start": 783,
+                "end": 786
+            },
+            {
+                "name": "restore_extent_group",
+                "start": 787,
+                "end": 792
+            },
+            {
+                "name": "restore_symlink",
+                "start": 795,
+                "end": 800
+            },
+            {
+                "name": "read_dirent",
+                "start": 802,
+                "end": 805
+            },
+            {
+                "name": "restore_extent",
+                "start": 807,
+                "end": 812
+            },
+            {
+                "name": "addobj",
+                "start": 814,
+                "end": 818
+            },
+            {
+                "name": "display_dump_label",
+                "start": 823,
+                "end": 829
+            },
+            {
+                "name": "display_needed_objects",
+                "start": 830,
+                "end": 833
+            },
+            {
+                "name": "restore_extattr",
+                "start": 841,
+                "end": 847
+            },
+            {
+                "name": "partial_reg",
+                "start": 851,
+                "end": 852
+            },
+            {
+                "name": "content_init",
+                "start": 879,
+                "end": 1907
+            },
+            {
+                "name": "content_stream_restore",
+                "start": 1911,
+                "end": 2606
+            },
+            {
+                "name": "content_complete",
+                "start": 2611,
+                "end": 2690
+            },
+            {
+                "name": "content_statline",
+                "start": 2694,
+                "end": 2799
+            },
+            {
+                "name": "content_showinv",
+                "start": 2801,
+                "end": 2805
+            },
+            {
+                "name": "content_showremainingobjects",
+                "start": 2807,
+                "end": 2826
+            },
+            {
+                "name": "content_mediachange_query",
+                "start": 2843,
+                "end": 2940
+            },
+            {
+                "name": "applydirdump",
+                "start": 2949,
+                "end": 3143
+            },
+            {
+                "name": "eatdirdump",
+                "start": 3150,
+                "end": 3270
+            },
+            {
+                "name": "treepost",
+                "start": 3277,
+                "end": 3395
+            },
+            {
+                "name": "applynondirdump",
+                "start": 3397,
+                "end": 3606
+            },
+            {
+                "name": "finalize",
+                "start": 3609,
+                "end": 3660
+            },
+            {
+                "name": "toconly_cleanup",
+                "start": 3662,
+                "end": 3682
+            },
+            {
+                "name": "wipepersstate",
+                "start": 3684,
+                "end": 3720
+            },
+            {
+                "name": "Inv_validate_cmdline",
+                "start": 3727,
+                "end": 3770
+            },
+            {
+                "name": "Media_create",
+                "start": 3776,
+                "end": 3802
+            },
+            {
+                "name": "Media_indir",
+                "start": 3807,
+                "end": 3814
+            },
+            {
+                "name": "Media_atnondir",
+                "start": 3816,
+                "end": 3823
+            },
+            {
+                "name": "Media_mfile_next",
+                "start": 3845,
+                "end": 4840
+            },
+            {
+                "name": "Media_end",
+                "start": 4844,
+                "end": 4862
+            },
+            {
+                "name": "pi_lock",
+                "start": 4887,
+                "end": 4891
+            },
+            {
+                "name": "pi_unlock",
+                "start": 4893,
+                "end": 4897
+            },
+            {
+                "name": "pi_checkpoint",
+                "start": 4901,
+                "end": 4909
+            },
+            {
+                "name": "pi_allocdesc",
+                "start": 4913,
+                "end": 4978
+            },
+            {
+                "name": "pi_insertfile",
+                "start": 4984,
+                "end": 5215
+            },
+            {
+                "name": "pi_addfile",
+                "start": 5222,
+                "end": 5499
+            },
+            {
+                "name": "pi_transcribe",
+                "start": 5503,
+                "end": 5587
+            },
+            {
+                "name": "pi_preclean",
+                "start": 5592,
+                "end": 5619
+            },
+            {
+                "name": "pi_driveempty",
+                "start": 5623,
+                "end": 5659
+            },
+            {
+                "name": "pi_note_indrive",
+                "start": 5663,
+                "end": 5693
+            },
+            {
+                "name": "pi_note_underhead",
+                "start": 5697,
+                "end": 5723
+            },
+            {
+                "name": "pi_seestrmend",
+                "start": 5727,
+                "end": 5760
+            },
+            {
+                "name": "pi_seeobjstrmend",
+                "start": 5764,
+                "end": 5819
+            },
+            {
+                "name": "pi_scanfileendino",
+                "start": 5825,
+                "end": 5882
+            },
+            {
+                "name": "pi_bracketneededegrps",
+                "start": 5887,
+                "end": 5975
+            },
+            {
+                "name": "pi_update_stats",
+                "start": 5977,
+                "end": 5985
+            },
+            {
+                "name": "pi_iter_alloc",
+                "start": 6007,
+                "end": 6015
+            },
+            {
+                "name": "pi_iter_free",
+                "start": 6017,
+                "end": 6021
+            },
+            {
+                "name": "pi_iter_nextfileh",
+                "start": 6023,
+                "end": 6097
+            },
+            {
+                "name": "pi_neededobjs_nondir_alloc",
+                "start": 6116,
+                "end": 6299
+            },
+            {
+                "name": "pi_neededobjs_dir_alloc",
+                "start": 6301,
+                "end": 6360
+            },
+            {
+                "name": "pi_neededobjs_free",
+                "start": 6362,
+                "end": 6385
+            },
+            {
+                "name": "pi_alldone",
+                "start": 6390,
+                "end": 6416
+            },
+            {
+                "name": "pi_hiteod",
+                "start": 6422,
+                "end": 6473
+            },
+            {
+                "name": "pi_hiteom",
+                "start": 6479,
+                "end": 6483
+            },
+            {
+                "name": "pi_hitnextdump",
+                "start": 6485,
+                "end": 6537
+            },
+            {
+                "name": "pi_know_no_more_on_object",
+                "start": 6543,
+                "end": 6616
+            },
+            {
+                "name": "pi_know_no_more_beyond_on_object",
+                "start": 6618,
+                "end": 6700
+            },
+            {
+                "name": "gapneeded",
+                "start": 6705,
+                "end": 6731
+            },
+            {
+                "name": "addobj",
+                "start": 6733,
+                "end": 6754
+            },
+            {
+                "name": "cntobj",
+                "start": 6756,
+                "end": 6774
+            },
+            {
+                "name": "askinvforbaseof",
+                "start": 6783,
+                "end": 6844
+            },
+            {
+                "name": "dumpcompat",
+                "start": 6846,
+                "end": 6895
+            },
+            {
+                "name": "Media_prompt_change",
+                "start": 6901,
+                "end": 7054
+            },
+            {
+                "name": "promptdumpmatch",
+                "start": 7059,
+                "end": 7187
+            },
+            {
+                "name": "restore_file",
+                "start": 7208,
+                "end": 7243
+            },
+            {
+                "name": "restore_file_cb",
+                "start": 7252,
+                "end": 7364
+            },
+            {
+                "name": "set_file_owner",
+                "start": 7371,
+                "end": 7419
+            },
+            {
+                "name": "restore_reg",
+                "start": 7427,
+                "end": 7550
+            },
+            {
+                "name": "restore_extent_group",
+                "start": 7557,
+                "end": 7662
+            },
+            {
+                "name": "restore_complete_reg",
+                "start": 7668,
+                "end": 7766
+            },
+            {
+                "name": "restore_spec",
+                "start": 7769,
+                "end": 7929
+            },
+            {
+                "name": "restore_symlink",
+                "start": 7931,
+                "end": 8072
+            },
+            {
+                "name": "read_filehdr",
+                "start": 8075,
+                "end": 8132
+            },
+            {
+                "name": "read_extenthdr",
+                "start": 8135,
+                "end": 8191
+            },
+            {
+                "name": "read_dirent",
+                "start": 8194,
+                "end": 8317
+            },
+            {
+                "name": "read_extattrhdr",
+                "start": 8320,
+                "end": 8390
+            },
+            {
+                "name": "discard_padding",
+                "start": 8392,
+                "end": 8423
+            },
+            {
+                "name": "restore_extent",
+                "start": 8425,
+                "end": 8665
+            },
+            {
+                "name": "extattr_init",
+                "start": 8670,
+                "end": 8691
+            },
+            {
+                "name": "get_extattrbuf",
+                "start": 8693,
+                "end": 8697
+            },
+            {
+                "name": "restore_extattr",
+                "start": 8706,
+                "end": 8806
+            },
+            {
+                "name": "restore_dir_extattr_cb",
+                "start": 8808,
+                "end": 8827
+            },
+            {
+                "name": "restore_dir_extattr_cb_cb",
+                "start": 8829,
+                "end": 8837
+            },
+            {
+                "name": "setextattr",
+                "start": 8839,
+                "end": 8889
+            },
+            {
+                "name": "partial_reg",
+                "start": 8993,
+                "end": 9094
+            },
+            {
+                "name": "partial_check",
+                "start": 9101,
+                "end": 9145
+            },
+            {
+                "name": "partial_check2",
+                "start": 9152,
+                "end": 9182
+            },
+            {
+                "name": "ehdr_typestr",
+                "start": 9184,
+                "end": 9199
+            },
+            {
+                "name": "content_overwrite_ok",
+                "start": 9202,
+                "end": 9251
+            },
+            {
+                "name": "set_mcflag",
+                "start": 9254,
+                "end": 9261
+            },
+            {
+                "name": "clr_mcflag",
+                "start": 9263,
+                "end": 9276
+            },
+            {
+                "name": "pi_show",
+                "start": 9280,
+                "end": 9311
+            },
+            {
+                "name": "pi_show_nomloglock",
+                "start": 9313,
+                "end": 9495
+            },
+            {
+                "name": "egrpcmp",
+                "start": 9497,
+                "end": 9511
+            },
+            {
+                "name": "display_dump_label",
+                "start": 9513,
+                "end": 9587
+            },
+            {
+                "name": "display_needed_objects",
+                "start": 9589,
+                "end": 9701
+            },
+            {
+                "name": "do_fssetdm_by_handle",
+                "start": 9703,
+                "end": 9727
+            },
+            {
+                "name": "quotafilecheck",
+                "start": 9729,
+                "end": 9749
+            }
+        ],
+        "restore/win.c": [
+            {
+                "name": "win_locks_off",
+                "start": 124,
+                "end": 128
+            },
+            {
+                "name": "win_locks_on",
+                "start": 133,
+                "end": 137
+            },
+            {
+                "name": "win_getnum_mmaps",
+                "start": 142,
+                "end": 146
+            },
+            {
+                "name": "win_init",
+                "start": 148,
+                "end": 178
+            },
+            {
+                "name": "win_map",
+                "start": 180,
+                "end": 327
+            },
+            {
+                "name": "win_unmap",
+                "start": 329,
+                "end": 375
+            },
+            {
+                "name": "win_segmap_resize",
+                "start": 377,
+                "end": 393
+            }
+        ],
+        "invutil/invutil.h": [
+            {
+                "name": "CheckAndPruneFstab",
+                "start": 47,
+                "end": 48
+            },
+            {
+                "name": "uses_specified_mf_label",
+                "start": 51,
+                "end": 52
+            }
+        ],
+        "invutil/list.h": [
+            {
+                "name": "node_create",
+                "start": 46,
+                "end": 48
+            }
+        ],
+        "invutil/invidx.h": [
+            {
+                "name": "read_stobj_info",
+                "start": 39,
+                "end": 40
+            },
+            {
+                "name": "insert_stobj_into_stobjfile",
+                "start": 41,
+                "end": 43
+            }
+        ],
+        "invutil/fstab.c": [
+            {
+                "name": "fstab_commit",
+                "start": 56,
+                "end": 124
+            },
+            {
+                "name": "fstab_select",
+                "start": 127,
+                "end": 142
+            },
+            {
+                "name": "fstab_highlight",
+                "start": 145,
+                "end": 171
+            },
+            {
+                "name": "fstab_prune",
+                "start": 174,
+                "end": 196
+            },
+            {
+                "name": "add_fstab_data",
+                "start": 198,
+                "end": 221
+            },
+            {
+                "name": "generate_fstab_menu",
+                "start": 223,
+                "end": 276
+            },
+            {
+                "name": "add_fstab",
+                "start": 278,
+                "end": 313
+            },
+            {
+                "name": "fstab_equal",
+                "start": 315,
+                "end": 328
+            },
+            {
+                "name": "find_matching_fstab",
+                "start": 330,
+                "end": 342
+            },
+            {
+                "name": "remmap_fstab",
+                "start": 344,
+                "end": 383
+            },
+            {
+                "name": "open_fstab",
+                "start": 385,
+                "end": 416
+            },
+            {
+                "name": "close_fstab",
+                "start": 418,
+                "end": 443
+            },
+            {
+                "name": "close_all_fstab",
+                "start": 445,
+                "end": 457
+            }
+        ],
+        "invutil/stobj.c": [
+            {
+                "name": "stobjmed_commit",
+                "start": 85,
+                "end": 96
+            },
+            {
+                "name": "stobjstrm_commit",
+                "start": 99,
+                "end": 110
+            },
+            {
+                "name": "stobjmed_delete",
+                "start": 113,
+                "end": 124
+            },
+            {
+                "name": "stobjstrm_delete",
+                "start": 127,
+                "end": 138
+            },
+            {
+                "name": "stobjsess_commit",
+                "start": 141,
+                "end": 163
+            },
+            {
+                "name": "stobjsess_highlight",
+                "start": 166,
+                "end": 202
+            },
+            {
+                "name": "stobjstrm_highlight",
+                "start": 205,
+                "end": 238
+            },
+            {
+                "name": "stobjmed_highlight",
+                "start": 241,
+                "end": 274
+            },
+            {
+                "name": "stobj_select",
+                "start": 277,
+                "end": 292
+            },
+            {
+                "name": "stobj_prune",
+                "start": 295,
+                "end": 328
+            },
+            {
+                "name": "stobj_undelete",
+                "start": 331,
+                "end": 354
+            },
+            {
+                "name": "add_stobj_data",
+                "start": 356,
+                "end": 381
+            },
+            {
+                "name": "generate_stobj_menu",
+                "start": 383,
+                "end": 526
+            },
+            {
+                "name": "add_stobj",
+                "start": 528,
+                "end": 563
+            },
+            {
+                "name": "open_stobj",
+                "start": 565,
+                "end": 600
+            },
+            {
+                "name": "close_stobj_file",
+                "start": 602,
+                "end": 623
+            },
+            {
+                "name": "close_all_stobj",
+                "start": 625,
+                "end": 656
+            }
+        ],
+        "invutil/invutil.c": [
+            {
+                "name": "invutil_interactive",
+                "start": 46,
+                "end": 52
+            },
+            {
+                "name": "main",
+                "start": 55,
+                "end": 283
+            },
+            {
+                "name": "get_mntpnt",
+                "start": 289,
+                "end": 299
+            },
+            {
+                "name": "mntpnt_equal",
+                "start": 301,
+                "end": 310
+            },
+            {
+                "name": "ParseDate",
+                "start": 313,
+                "end": 397
+            },
+            {
+                "name": "GetNameOfStobj",
+                "start": 399,
+                "end": 412
+            },
+            {
+                "name": "GetNameOfInvIndex",
+                "start": 414,
+                "end": 429
+            },
+            {
+                "name": "GetFstabFullPath",
+                "start": 431,
+                "end": 442
+            },
+            {
+                "name": "CheckAndPruneFstab",
+                "start": 444,
+                "end": 590
+            },
+            {
+                "name": "CheckAndPruneInvIndexFile",
+                "start": 592,
+                "end": 703
+            },
+            {
+                "name": "CheckAndPruneStObjFile",
+                "start": 705,
+                "end": 913
+            },
+            {
+                "name": "uses_specified_mf_label",
+                "start": 921,
+                "end": 956
+            },
+            {
+                "name": "inv_DEBUG_lock_str",
+                "start": 960,
+                "end": 1002
+            },
+            {
+                "name": "open_and_lock",
+                "start": 1010,
+                "end": 1097
+            },
+            {
+                "name": "read_n_bytes",
+                "start": 1099,
+                "end": 1117
+            },
+            {
+                "name": "write_n_bytes",
+                "start": 1119,
+                "end": 1137
+            },
+            {
+                "name": "mmap_n_bytes",
+                "start": 1139,
+                "end": 1157
+            },
+            {
+                "name": "usage",
+                "start": 1159,
+                "end": 1176
+            }
+        ],
+        "invutil/list.c": [
+            {
+                "name": "parent_add_child",
+                "start": 26,
+                "end": 41
+            },
+            {
+                "name": "node_create",
+                "start": 43,
+                "end": 81
+            },
+            {
+                "name": "node_free",
+                "start": 83,
+                "end": 96
+            },
+            {
+                "name": "list_add",
+                "start": 98,
+                "end": 123
+            },
+            {
+                "name": "list_del",
+                "start": 125,
+                "end": 138
+            },
+            {
+                "name": "free_all_children",
+                "start": 140,
+                "end": 158
+            },
+            {
+                "name": "mark_all_children_commited",
+                "start": 161,
+                "end": 178
+            }
+        ],
+        "invutil/menu.c": [
+            {
+                "name": "put_all_options",
+                "start": 29,
+                "end": 57
+            },
+            {
+                "name": "put_helpscreen",
+                "start": 59,
+                "end": 96
+            },
+            {
+                "name": "menu",
+                "start": 98,
+                "end": 306
+            }
+        ],
+        "invutil/screen.c": [
+            {
+                "name": "put_line",
+                "start": 25,
+                "end": 63
+            },
+            {
+                "name": "hitanykey",
+                "start": 65,
+                "end": 71
+            },
+            {
+                "name": "get_string",
+                "start": 74,
+                "end": 84
+            }
+        ],
+        "invutil/cmenu.c": [
+            {
+                "name": "signal_handler",
+                "start": 56,
+                "end": 69
+            },
+            {
+                "name": "menu_quit",
+                "start": 72,
+                "end": 76
+            },
+            {
+                "name": "menu_commit",
+                "start": 79,
+                "end": 104
+            },
+            {
+                "name": "get_lastnode",
+                "start": 106,
+                "end": 114
+            },
+            {
+                "name": "menu_import",
+                "start": 117,
+                "end": 165
+            },
+            {
+                "name": "menu_unhighlight",
+                "start": 168,
+                "end": 174
+            },
+            {
+                "name": "menu_select",
+                "start": 176,
+                "end": 191
+            },
+            {
+                "name": "expand_node",
+                "start": 194,
+                "end": 212
+            },
+            {
+                "name": "menu_expand",
+                "start": 214,
+                "end": 233
+            },
+            {
+                "name": "expand_tree",
+                "start": 235,
+                "end": 254
+            },
+            {
+                "name": "menu_expandall",
+                "start": 256,
+                "end": 275
+            },
+            {
+                "name": "collapse_node",
+                "start": 277,
+                "end": 299
+            },
+            {
+                "name": "menu_collapse",
+                "start": 301,
+                "end": 320
+            },
+            {
+                "name": "menu_collapseall",
+                "start": 322,
+                "end": 348
+            },
+            {
+                "name": "menu_delete",
+                "start": 350,
+                "end": 368
+            },
+            {
+                "name": "menu_undelete",
+                "start": 370,
+                "end": 389
+            },
+            {
+                "name": "menu_saveexit",
+                "start": 391,
+                "end": 406
+            },
+            {
+                "name": "delete_node",
+                "start": 408,
+                "end": 427
+            },
+            {
+                "name": "list_delete",
+                "start": 430,
+                "end": 440
+            },
+            {
+                "name": "undelete_node",
+                "start": 442,
+                "end": 460
+            },
+            {
+                "name": "list_undelete",
+                "start": 463,
+                "end": 471
+            },
+            {
+                "name": "list_prune",
+                "start": 473,
+                "end": 505
+            },
+            {
+                "name": "generate_menu",
+                "start": 507,
+                "end": 523
+            },
+            {
+                "name": "create_windows",
+                "start": 525,
+                "end": 566
+            },
+            {
+                "name": "invutil_interactive",
+                "start": 568,
+                "end": 597
+            }
+        ],
+        "invutil/invidx.c": [
+            {
+                "name": "invidx_commit",
+                "start": 63,
+                "end": 329
+            },
+            {
+                "name": "create_stobjfile",
+                "start": 331,
+                "end": 344
+            },
+            {
+                "name": "read_stobj_info",
+                "start": 346,
+                "end": 395
+            },
+            {
+                "name": "delete_stobj_entries",
+                "start": 397,
+                "end": 420
+            },
+            {
+                "name": "find_stobj_insert_point",
+                "start": 422,
+                "end": 440
+            },
+            {
+                "name": "update_invidx_entry",
+                "start": 442,
+                "end": 497
+            },
+            {
+                "name": "insert_stobj_into_stobjfile",
+                "start": 499,
+                "end": 578
+            },
+            {
+                "name": "stobj_makefname_len",
+                "start": 580,
+                "end": 591
+            },
+            {
+                "name": "stobj_create",
+                "start": 593,
+                "end": 618
+            },
+            {
+                "name": "stobj_put_streams",
+                "start": 620,
+                "end": 661
+            },
+            {
+                "name": "invidx_select",
+                "start": 664,
+                "end": 679
+            },
+            {
+                "name": "invidx_highlight",
+                "start": 682,
+                "end": 711
+            },
+            {
+                "name": "invidx_undelete",
+                "start": 714,
+                "end": 737
+            },
+            {
+                "name": "invidx_prune",
+                "start": 740,
+                "end": 761
+            },
+            {
+                "name": "find_invidx_node",
+                "start": 763,
+                "end": 782
+            },
+            {
+                "name": "get_inventry_stobjfile",
+                "start": 784,
+                "end": 799
+            },
+            {
+                "name": "find_overlapping_invidx",
+                "start": 801,
+                "end": 817
+            },
+            {
+                "name": "find_invidx_insert_pos",
+                "start": 819,
+                "end": 837
+            },
+            {
+                "name": "find_matching_stobjfile",
+                "start": 839,
+                "end": 853
+            },
+            {
+                "name": "find_matching_invidxfile",
+                "start": 855,
+                "end": 869
+            },
+            {
+                "name": "add_invidx_data",
+                "start": 871,
+                "end": 896
+            },
+            {
+                "name": "generate_invidx_menu",
+                "start": 898,
+                "end": 949
+            },
+            {
+                "name": "add_invidx",
+                "start": 951,
+                "end": 986
+            },
+            {
+                "name": "remmap_invidx",
+                "start": 988,
+                "end": 1027
+            },
+            {
+                "name": "open_invidx",
+                "start": 1029,
+                "end": 1060
+            },
+            {
+                "name": "close_invidx",
+                "start": 1063,
+                "end": 1093
+            },
+            {
+                "name": "close_all_invidx",
+                "start": 1095,
+                "end": 1109
+            }
+        ],
+        "librmt/rmtdev.c": [
+            {
+                "name": "_rmt_dev",
+                "start": 32,
+                "end": 43
+            }
+        ],
+        "librmt/rmtlseek.c": [
+            {
+                "name": "rmtlseek",
+                "start": 33,
+                "end": 46
+            },
+            {
+                "name": "_rmt_lseek",
+                "start": 53,
+                "end": 62
+            }
+        ],
+        "librmt/rmtcommand.c": [
+            {
+                "name": "_rmt_command",
+                "start": 33,
+                "end": 59
+            }
+        ],
+        "librmt/rmtwrite.c": [
+            {
+                "name": "rmtwrite",
+                "start": 34,
+                "end": 47
+            },
+            {
+                "name": "_rmt_write",
+                "start": 54,
+                "end": 70
+            }
+        ],
+        "librmt/rmtread.c": [
+            {
+                "name": "rmtread",
+                "start": 34,
+                "end": 47
+            },
+            {
+                "name": "_rmt_read",
+                "start": 54,
+                "end": 75
+            }
+        ],
+        "librmt/rmtaccess.c": [
+            {
+                "name": "rmtaccess",
+                "start": 32,
+                "end": 44
+            }
+        ],
+        "librmt/rmtfstat.c": [
+            {
+                "name": "rmtfstat",
+                "start": 36,
+                "end": 50
+            },
+            {
+                "name": "_rmt_fstat",
+                "start": 52,
+                "end": 95
+            }
+        ],
+        "librmt/rmtopen.c": [
+            {
+                "name": "rmtopen",
+                "start": 59,
+                "end": 72
+            },
+            {
+                "name": "_rmt_open",
+                "start": 85,
+                "end": 273
+            }
+        ],
+        "librmt/rmtcreat.c": [
+            {
+                "name": "rmtcreat",
+                "start": 35,
+                "end": 47
+            }
+        ],
+        "librmt/isrmt.c": [
+            {
+                "name": "isrmt",
+                "start": 30,
+                "end": 34
+            }
+        ],
+        "librmt/rmtabort.c": [
+            {
+                "name": "_rmt_abort",
+                "start": 30,
+                "end": 38
+            }
+        ],
+        "librmt/rmtmsg.c": [
+            {
+                "name": "checkcode",
+                "start": 32,
+                "end": 39
+            },
+            {
+                "name": "_rmt_turnonmsgsbyenv",
+                "start": 41,
+                "end": 50
+            },
+            {
+                "name": "rmt_turnonmsgs",
+                "start": 52,
+                "end": 57
+            },
+            {
+                "name": "_rmt_msgson",
+                "start": 59,
+                "end": 63
+            },
+            {
+                "name": "_rmt_msg",
+                "start": 67,
+                "end": 80
+            }
+        ],
+        "librmt/rmtisatty.c": [
+            {
+                "name": "rmtisatty",
+                "start": 31,
+                "end": 42
+            }
+        ],
+        "librmt/rmtioctl.c": [
+            {
+                "name": "init_mtop_map",
+                "start": 107,
+                "end": 131
+            },
+            {
+                "name": "rmtioctl",
+                "start": 140,
+                "end": 149
+            },
+            {
+                "name": "_rmt_ioctl",
+                "start": 165,
+                "end": 424
+            }
+        ],
+        "librmt/rmtclose.c": [
+            {
+                "name": "rmtclose",
+                "start": 31,
+                "end": 45
+            },
+            {
+                "name": "_rmt_close",
+                "start": 51,
+                "end": 64
+            }
+        ],
+        "librmt/rmtstatus.c": [
+            {
+                "name": "_rmt_status",
+                "start": 32,
+                "end": 98
+            }
+        ]
+    }
+}

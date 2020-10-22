@@ -1,0 +1,725 @@
+{
+    "minidjvu-0.8.svn.2010.05.06+dfsg": {
+        "src/base/6string.c": [
+            {
+                "name": "my_strcasecmp",
+                "start": 16,
+                "end": 27
+            },
+            {
+                "name": "mdjvu_ends_with_ignore_case",
+                "start": 29,
+                "end": 35
+            }
+        ],
+        "src/base/0porting.c": [
+            {
+                "name": "mdjvu_check_sanity",
+                "start": 14,
+                "end": 29
+            },
+            {
+                "name": "mdjvu_init",
+                "start": 34,
+                "end": 54
+            }
+        ],
+        "src/base/3graymap.c": [
+            {
+                "name": "mdjvu_create_2d_array",
+                "start": 9,
+                "end": 22
+            },
+            {
+                "name": "mdjvu_destroy_2d_array",
+                "start": 24,
+                "end": 27
+            }
+        ],
+        "src/base/1error.c": [
+            {
+                "name": "mdjvu_get_error_message",
+                "start": 8,
+                "end": 11
+            }
+        ],
+        "src/base/5image.c": [
+            {
+                "name": "initialize_artifact",
+                "start": 81,
+                "end": 108
+            },
+            {
+                "name": "initialize_artifacts",
+                "start": 110,
+                "end": 119
+            },
+            {
+                "name": "mdjvu_image_enable_artifact",
+                "start": 121,
+                "end": 135
+            },
+            {
+                "name": "mdjvu_image_disable_artifact",
+                "start": 137,
+                "end": 145
+            }
+        ],
+        "src/base/version.c": [
+            {
+                "name": "mdjvu_get_version",
+                "start": 8,
+                "end": 11
+            }
+        ],
+        "src/alg/clean.c": [
+            {
+                "name": "mdjvu_clean",
+                "start": 14,
+                "end": 35
+            }
+        ],
+        "src/alg/classify.c": [
+            {
+                "name": "new_class",
+                "start": 58,
+                "end": 68
+            },
+            {
+                "name": "delete_class",
+                "start": 71,
+                "end": 84
+            },
+            {
+                "name": "new_node",
+                "start": 87,
+                "end": 103
+            },
+            {
+                "name": "merge",
+                "start": 106,
+                "end": 120
+            },
+            {
+                "name": "put_tags",
+                "start": 123,
+                "end": 139
+            },
+            {
+                "name": "delete_all_classes",
+                "start": 142,
+                "end": 151
+            },
+            {
+                "name": "compare_to_class",
+                "start": 154,
+                "end": 166
+            },
+            {
+                "name": "classify",
+                "start": 168,
+                "end": 192
+            },
+            {
+                "name": "get_tags_from_classification",
+                "start": 194,
+                "end": 219
+            },
+            {
+                "name": "init_classification",
+                "start": 221,
+                "end": 225
+            }
+        ],
+        "src/alg/delegate.c": [
+            {
+                "name": "mdjvu_multipage_choose_representatives",
+                "start": 11,
+                "end": 35
+            }
+        ],
+        "src/alg/split.c": [
+            {
+                "name": "mdjvu_split_options_create",
+                "start": 13,
+                "end": 19
+            },
+            {
+                "name": "mdjvu_split_options_set_maximum_shape_size",
+                "start": 21,
+                "end": 25
+            },
+            {
+                "name": "mdjvu_split_options_destroy",
+                "start": 27,
+                "end": 30
+            },
+            {
+                "name": "interpret_runs_in_a_line",
+                "start": 57,
+                "end": 85
+            },
+            {
+                "name": "interpret_runs",
+                "start": 93,
+                "end": 110
+            },
+            {
+                "name": "walk_around_a_black_contour",
+                "start": 119,
+                "end": 212
+            },
+            {
+                "name": "add_to_image",
+                "start": 216,
+                "end": 222
+            },
+            {
+                "name": "process_row",
+                "start": 227,
+                "end": 289
+            },
+            {
+                "name": "add_to_image",
+                "start": 295,
+                "end": 397
+            },
+            {
+                "name": "mdjvu_split",
+                "start": 399,
+                "end": 409
+            }
+        ],
+        "src/alg/erosion.c": [
+            {
+                "name": "get_erosion_candidates_in_a_row",
+                "start": 30,
+                "end": 48
+            }
+        ],
+        "src/alg/blitsort.c": [
+            {
+                "name": "compare_top_edges_downward",
+                "start": 21,
+                "end": 31
+            },
+            {
+                "name": "compare_left_edges_rightward",
+                "start": 33,
+                "end": 43
+            },
+            {
+                "name": "compare_integers_reversed",
+                "start": 45,
+                "end": 57
+            },
+            {
+                "name": "mdjvu_sort_blits",
+                "start": 60,
+                "end": 179
+            }
+        ],
+        "src/alg/smooth.c": [
+            {
+                "name": "smooth_row",
+                "start": 12,
+                "end": 33
+            },
+            {
+                "name": "mdjvu_smooth",
+                "start": 36,
+                "end": 71
+            }
+        ],
+        "src/alg/nosubst.c": [
+            {
+                "name": "segments_intersect_or_touch",
+                "start": 19,
+                "end": 22
+            },
+            {
+                "name": "blits_intersect_or_touch",
+                "start": 24,
+                "end": 38
+            },
+            {
+                "name": "make_no_subst",
+                "start": 40,
+                "end": 54
+            },
+            {
+                "name": "mdjvu_calculate_not_a_letter_flags",
+                "start": 56,
+                "end": 68
+            }
+        ],
+        "src/alg/adjust_y.c": [
+            {
+                "name": "compute_baseline",
+                "start": 26,
+                "end": 64
+            },
+            {
+                "name": "update_blits",
+                "start": 70,
+                "end": 86
+            },
+            {
+                "name": "get_baselines",
+                "start": 91,
+                "end": 105
+            },
+            {
+                "name": "compute_adjustments",
+                "start": 112,
+                "end": 136
+            },
+            {
+                "name": "mdjvu_adjust",
+                "start": 138,
+                "end": 168
+            },
+            {
+                "name": "adjust_page",
+                "start": 170,
+                "end": 210
+            },
+            {
+                "name": "mdjvu_multipage_adjust",
+                "start": 213,
+                "end": 222
+            }
+        ],
+        "src/image-io/bmp.c": [
+            {
+                "name": "read_uint32",
+                "start": 30,
+                "end": 36
+            },
+            {
+                "name": "read_uint16",
+                "start": 38,
+                "end": 42
+            },
+            {
+                "name": "write_uint16",
+                "start": 44,
+                "end": 48
+            },
+            {
+                "name": "write_uint32",
+                "start": 50,
+                "end": 56
+            },
+            {
+                "name": "write_bmp_header",
+                "start": 58,
+                "end": 83
+            },
+            {
+                "name": "read_bmp_header",
+                "start": 85,
+                "end": 103
+            },
+            {
+                "name": "save_DIB_bytes",
+                "start": 105,
+                "end": 138
+            },
+            {
+                "name": "mdjvu_file_save_bmp",
+                "start": 140,
+                "end": 150
+            },
+            {
+                "name": "mdjvu_save_bmp",
+                "start": 152,
+                "end": 168
+            },
+            {
+                "name": "invert_row",
+                "start": 170,
+                "end": 179
+            }
+        ],
+        "src/image-io/pbm.c": [
+            {
+                "name": "skip_to_the_end_of_line",
+                "start": 9,
+                "end": 19
+            },
+            {
+                "name": "mdjvu_skip_pbm_whitespace_and_comments",
+                "start": 21,
+                "end": 41
+            },
+            {
+                "name": "mdjvu_save_pbm",
+                "start": 43,
+                "end": 56
+            },
+            {
+                "name": "mdjvu_file_save_pbm",
+                "start": 58,
+                "end": 81
+            }
+        ],
+        "src/image-io/tiff.c": [
+            {
+                "name": "mdjvu_have_tiff_support",
+                "start": 15,
+                "end": 22
+            },
+            {
+                "name": "mdjvu_disable_tiff_warnings",
+                "start": 24,
+                "end": 29
+            }
+        ],
+        "src/image-io/tiffsave.c": [
+            {
+                "name": "mdjvu_save_tiff",
+                "start": 69,
+                "end": 77
+            }
+        ],
+        "src/djvu/djvusave.c": [
+            {
+                "name": "mdjvu_file_save_djvu_dir",
+                "start": 11,
+                "end": 46
+            },
+            {
+                "name": "mdjvu_file_save_djvu_page",
+                "start": 48,
+                "end": 78
+            },
+            {
+                "name": "mdjvu_file_save_djvu_dictionary",
+                "start": 81,
+                "end": 101
+            },
+            {
+                "name": "mdjvu_save_djvu_dir",
+                "start": 103,
+                "end": 116
+            },
+            {
+                "name": "mdjvu_save_djvu_page",
+                "start": 118,
+                "end": 131
+            },
+            {
+                "name": "mdjvu_save_djvu_dictionary",
+                "start": 133,
+                "end": 146
+            }
+        ],
+        "src/djvu/iff.c": [
+            {
+                "name": "read_align",
+                "start": 11,
+                "end": 15
+            },
+            {
+                "name": "write_align",
+                "start": 17,
+                "end": 21
+            }
+        ],
+        "src/djvu/djvuinfo.c": [
+            {
+                "name": "mdjvu_write_info_chunk",
+                "start": 12,
+                "end": 25
+            },
+            {
+                "name": "mdjvu_read_info_chunk",
+                "start": 27,
+                "end": 39
+            }
+        ],
+        "src/djvu/djvuload.c": [
+            {
+                "name": "read_uint32_most_significant_byte_first",
+                "start": 10,
+                "end": 17
+            },
+            {
+                "name": "skip_in_chunk",
+                "start": 27,
+                "end": 34
+            },
+            {
+                "name": "skip_to_next_sibling_chunk",
+                "start": 36,
+                "end": 43
+            },
+            {
+                "name": "get_child_chunk",
+                "start": 45,
+                "end": 52
+            },
+            {
+                "name": "find_sibling_chunk",
+                "start": 54,
+                "end": 63
+            },
+            {
+                "name": "mdjvu_locate_jb2_chunk",
+                "start": 70,
+                "end": 107
+            }
+        ],
+        "src/jb2/proto.c": [
+            {
+                "name": "diff",
+                "start": 18,
+                "end": 74
+            },
+            {
+                "name": "find_prototypes",
+                "start": 76,
+                "end": 162
+            },
+            {
+                "name": "mdjvu_find_prototypes",
+                "start": 164,
+                "end": 167
+            },
+            {
+                "name": "mdjvu_multipage_find_prototypes",
+                "start": 169,
+                "end": 204
+            }
+        ],
+        "src/matcher/cuts.c": [
+            {
+                "name": "sum_column_gray",
+                "start": 37,
+                "end": 42
+            },
+            {
+                "name": "sum_row_gray",
+                "start": 44,
+                "end": 50
+            },
+            {
+                "name": "sum_column_black_and_white",
+                "start": 52,
+                "end": 57
+            },
+            {
+                "name": "sum_row_black_and_white",
+                "start": 59,
+                "end": 65
+            },
+            {
+                "name": "make_vcut",
+                "start": 67,
+                "end": 71
+            },
+            {
+                "name": "make_hcut",
+                "start": 73,
+                "end": 115
+            },
+            {
+                "name": "make_vcut",
+                "start": 117,
+                "end": 158
+            },
+            {
+                "name": "get_signature",
+                "start": 160,
+                "end": 172
+            },
+            {
+                "name": "mdjvu_get_gray_signature",
+                "start": 174,
+                "end": 178
+            },
+            {
+                "name": "mdjvu_get_black_and_white_signature",
+                "start": 180,
+                "end": 185
+            }
+        ],
+        "src/matcher/patterns.c": [
+            {
+                "name": "interpolate",
+                "start": 53,
+                "end": 63
+            },
+            {
+                "name": "mdjvu_set_aggression",
+                "start": 70,
+                "end": 84
+            },
+            {
+                "name": "simple_tests",
+                "start": 139,
+                "end": 152
+            },
+            {
+                "name": "distance_by_pixeldiff_functions_by_shift",
+                "start": 171,
+                "end": 241
+            },
+            {
+                "name": "distance_by_pixeldiff_functions",
+                "start": 243,
+                "end": 286
+            },
+            {
+                "name": "pithdiff_compare_row",
+                "start": 302,
+                "end": 314
+            },
+            {
+                "name": "pithdiff_compare_with_white",
+                "start": 316,
+                "end": 321
+            },
+            {
+                "name": "pithdiff_distance",
+                "start": 323,
+                "end": 330
+            },
+            {
+                "name": "pithdiff_equivalence",
+                "start": 332,
+                "end": 340
+            },
+            {
+                "name": "shiftdiff_equivalence",
+                "start": 353,
+                "end": 373
+            },
+            {
+                "name": "mdjvu_pattern_create",
+                "start": 378,
+                "end": 389
+            },
+            {
+                "name": "get_mass_center",
+                "start": 394,
+                "end": 414
+            },
+            {
+                "name": "mdjvu_pattern_get_center",
+                "start": 420,
+                "end": 424
+            },
+            {
+                "name": "sweep",
+                "start": 426,
+                "end": 444
+            },
+            {
+                "name": "quick_thin",
+                "start": 446,
+                "end": 464
+            },
+            {
+                "name": "quick_thicken",
+                "start": 466,
+                "end": 489
+            }
+        ],
+        "src/matcher/bitmaps.c": [
+            {
+                "name": "allocate_bitmap",
+                "start": 7,
+                "end": 30
+            },
+            {
+                "name": "free_bitmap",
+                "start": 33,
+                "end": 38
+            },
+            {
+                "name": "allocate_bitmap_with_margins",
+                "start": 41,
+                "end": 56
+            },
+            {
+                "name": "provide_margins",
+                "start": 62,
+                "end": 96
+            },
+            {
+                "name": "free_bitmap_with_margins",
+                "start": 100,
+                "end": 105
+            },
+            {
+                "name": "assign_bitmap",
+                "start": 108,
+                "end": 113
+            },
+            {
+                "name": "copy_bitmap",
+                "start": 116,
+                "end": 121
+            },
+            {
+                "name": "strip_endpoints_4",
+                "start": 124,
+                "end": 138
+            },
+            {
+                "name": "strip_endpoints_8",
+                "start": 140,
+                "end": 155
+            },
+            {
+                "name": "print_bitmap",
+                "start": 158,
+                "end": 169
+            },
+            {
+                "name": "make_bitmap_0_or_1",
+                "start": 172,
+                "end": 183
+            },
+            {
+                "name": "invert_bitmap",
+                "start": 186,
+                "end": 205
+            },
+            {
+                "name": "allocate_bitmap_with_white_margins",
+                "start": 208,
+                "end": 222
+            },
+            {
+                "name": "clear_bitmap",
+                "start": 225,
+                "end": 231
+            }
+        ],
+        "src/matcher/frames.c": [
+            {
+                "name": "donut_connectivity_test",
+                "start": 78,
+                "end": 157
+            },
+            {
+                "name": "donut_transform_pixel",
+                "start": 158,
+                "end": 252
+            },
+            {
+                "name": "flay",
+                "start": 257,
+                "end": 297
+            },
+            {
+                "name": "mdjvu_soften_pattern",
+                "start": 300,
+                "end": 360
+            }
+        ]
+    }
+}

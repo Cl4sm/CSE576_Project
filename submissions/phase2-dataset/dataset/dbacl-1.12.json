@@ -1,0 +1,2442 @@
+{
+    "dbacl-1.12": {
+        "src/dbacl.h": [
+            {
+                "name": "hash_word_and_learn",
+                "start": 959,
+                "end": 960
+            },
+            {
+                "name": "std_tokenizer",
+                "start": 1006,
+                "end": 1009
+            },
+            {
+                "name": "regex_tokenizer",
+                "start": 1010,
+                "end": 1012
+            },
+            {
+                "name": "process_file",
+                "start": 1030,
+                "end": 1035
+            },
+            {
+                "name": "process_directory",
+                "start": 1036,
+                "end": 1041
+            }
+        ],
+        "src/util.h": [
+            {
+                "name": "hash",
+                "start": 37,
+                "end": 39
+            },
+            {
+                "name": "hash_partial_token",
+                "start": 50,
+                "end": 51
+            },
+            {
+                "name": "errormsg",
+                "start": 87,
+                "end": 89
+            }
+        ],
+        "src/hmine.c": [
+            {
+                "name": "print_mailbox",
+                "start": 70,
+                "end": 152
+            },
+            {
+                "name": "print_summary",
+                "start": 154,
+                "end": 179
+            },
+            {
+                "name": "usage",
+                "start": 185,
+                "end": 202
+            },
+            {
+                "name": "hset_option",
+                "start": 204,
+                "end": 223
+            },
+            {
+                "name": "hprocess_file",
+                "start": 226,
+                "end": 260
+            },
+            {
+                "name": "init_header_handling",
+                "start": 262,
+                "end": 265
+            },
+            {
+                "name": "cleanup_header_handling",
+                "start": 267,
+                "end": 270
+            },
+            {
+                "name": "main",
+                "start": 272,
+                "end": 369
+            }
+        ],
+        "src/util.c": [
+            {
+                "name": "init_buffers",
+                "start": 66,
+                "end": 93
+            },
+            {
+                "name": "cleanup_buffers",
+                "start": 95,
+                "end": 102
+            },
+            {
+                "name": "cleanup_tempfiles",
+                "start": 104,
+                "end": 109
+            },
+            {
+                "name": "set_iobuf_mode",
+                "start": 112,
+                "end": 136
+            },
+            {
+                "name": "hash_full_token",
+                "start": 140,
+                "end": 153
+            },
+            {
+                "name": "hash_partial_token",
+                "start": 155,
+                "end": 159
+            },
+            {
+                "name": "digitize_a_weight",
+                "start": 165,
+                "end": 177
+            },
+            {
+                "name": "undigitize_a_weight",
+                "start": 179,
+                "end": 181
+            },
+            {
+                "name": "nats2bits",
+                "start": 183,
+                "end": 185
+            },
+            {
+                "name": "my_sa_handler",
+                "start": 197,
+                "end": 201
+            },
+            {
+                "name": "sigsegv",
+                "start": 203,
+                "end": 208
+            },
+            {
+                "name": "init_signal_handling",
+                "start": 211,
+                "end": 242
+            },
+            {
+                "name": "cleanup_signal_handling",
+                "start": 244,
+                "end": 246
+            },
+            {
+                "name": "process_pending_signal",
+                "start": 248,
+                "end": 299
+            },
+            {
+                "name": "errormsg",
+                "start": 305,
+                "end": 331
+            },
+            {
+                "name": "print_token",
+                "start": 339,
+                "end": 358
+            },
+            {
+                "name": "fill_textbuf",
+                "start": 364,
+                "end": 400
+            }
+        ],
+        "src/mailinspect.c": [
+            {
+                "name": "usage",
+                "start": 126,
+                "end": 145
+            },
+            {
+                "name": "load_rc_file",
+                "start": 148,
+                "end": 175
+            },
+            {
+                "name": "init_emails",
+                "start": 181,
+                "end": 194
+            },
+            {
+                "name": "free_emails",
+                "start": 196,
+                "end": 206
+            },
+            {
+                "name": "build_scores",
+                "start": 208,
+                "end": 227
+            },
+            {
+                "name": "build_other_descriptions",
+                "start": 230,
+                "end": 245
+            },
+            {
+                "name": "process_email_line",
+                "start": 248,
+                "end": 338
+            },
+            {
+                "name": "process_last_email",
+                "start": 341,
+                "end": 362
+            },
+            {
+                "name": "compare_scores",
+                "start": 369,
+                "end": 381
+            },
+            {
+                "name": "recalculate_limited",
+                "start": 384,
+                "end": 392
+            },
+            {
+                "name": "reverse_sort",
+                "start": 394,
+                "end": 407
+            },
+            {
+                "name": "limit_all",
+                "start": 410,
+                "end": 417
+            },
+            {
+                "name": "grep_single_email",
+                "start": 421,
+                "end": 440
+            },
+            {
+                "name": "limit_on_regex",
+                "start": 445,
+                "end": 473
+            },
+            {
+                "name": "email_line_filter",
+                "start": 475,
+                "end": 477
+            },
+            {
+                "name": "read_mbox_and_sort_list",
+                "start": 486,
+                "end": 520
+            },
+            {
+                "name": "tag_all",
+                "start": 528,
+                "end": 537
+            },
+            {
+                "name": "pipe_single_email",
+                "start": 550,
+                "end": 577
+            },
+            {
+                "name": "pipe_all_to_command",
+                "start": 581,
+                "end": 591
+            },
+            {
+                "name": "display_results",
+                "start": 595,
+                "end": 607
+            },
+            {
+                "name": "tag_current",
+                "start": 614,
+                "end": 620
+            },
+            {
+                "name": "tag_all_limited",
+                "start": 623,
+                "end": 632
+            },
+            {
+                "name": "main",
+                "start": 1273,
+                "end": 1517
+            }
+        ],
+        "src/risk-parser.c": [
+            {
+                "name": "yydestruct",
+                "start": 880,
+                "end": 903
+            },
+            {
+                "name": "yyparse",
+                "start": 948,
+                "end": 1564
+            },
+            {
+                "name": "set_loss_and_increment",
+                "start": 1570,
+                "end": 1578
+            },
+            {
+                "name": "parse_loss_vec",
+                "start": 1581,
+                "end": 1595
+            },
+            {
+                "name": "parse_risk_spec",
+                "start": 1598,
+                "end": 1607
+            },
+            {
+                "name": "yyerror",
+                "start": 1609,
+                "end": 1614
+            },
+            {
+                "name": "add_prior_weight",
+                "start": 1616,
+                "end": 1625
+            },
+            {
+                "name": "add_cat_name",
+                "start": 1627,
+                "end": 1633
+            },
+            {
+                "name": "attach_cat_vec",
+                "start": 1635,
+                "end": 1672
+            }
+        ],
+        "src/fh.c": [
+            {
+                "name": "init_file_handling",
+                "start": 219,
+                "end": 222
+            },
+            {
+                "name": "cleanup_file_handling",
+                "start": 224,
+                "end": 227
+            },
+            {
+                "name": "select_xml_defaults",
+                "start": 232,
+                "end": 255
+            },
+            {
+                "name": "reset_xml_character_filter",
+                "start": 257,
+                "end": 303
+            },
+            {
+                "name": "reset_mbox_line_filter",
+                "start": 306,
+                "end": 330
+            },
+            {
+                "name": "init_mbox_line_filter",
+                "start": 332,
+                "end": 335
+            },
+            {
+                "name": "free_mbox_line_filter",
+                "start": 337,
+                "end": 346
+            },
+            {
+                "name": "get_token_type",
+                "start": 355,
+                "end": 403
+            },
+            {
+                "name": "finalize_textbuf",
+                "start": 415,
+                "end": 421
+            },
+            {
+                "name": "process_directory",
+                "start": 423,
+                "end": 472
+            },
+            {
+                "name": "reset_current_token",
+                "start": 474,
+                "end": 479
+            },
+            {
+                "name": "process_file",
+                "start": 482,
+                "end": 569
+            }
+        ],
+        "src/polevl.c": [
+            {
+                "name": "polevl",
+                "start": 53,
+                "end": 71
+            },
+            {
+                "name": "p1evl",
+                "start": 79,
+                "end": 97
+            }
+        ],
+        "src/ndtr.c": [
+            {
+                "name": "ndtr",
+                "start": 396,
+                "end": 416
+            },
+            {
+                "name": "erfc",
+                "start": 419,
+                "end": 466
+            },
+            {
+                "name": "erf",
+                "start": 470,
+                "end": 481
+            }
+        ],
+        "src/catfun.c": [
+            {
+                "name": "sanitize_path",
+                "start": 50,
+                "end": 74
+            },
+            {
+                "name": "print_model_options",
+                "start": 78,
+                "end": 109
+            },
+            {
+                "name": "print_user_options",
+                "start": 111,
+                "end": 135
+            },
+            {
+                "name": "sanitize_model_options",
+                "start": 137,
+                "end": 231
+            },
+            {
+                "name": "load_regex",
+                "start": 233,
+                "end": 305
+            },
+            {
+                "name": "free_all_regexes",
+                "start": 307,
+                "end": 312
+            },
+            {
+                "name": "init_empirical",
+                "start": 320,
+                "end": 341
+            },
+            {
+                "name": "free_empirical",
+                "start": 343,
+                "end": 347
+            },
+            {
+                "name": "clear_empirical",
+                "start": 349,
+                "end": 368
+            },
+            {
+                "name": "find_in_empirical",
+                "start": 370,
+                "end": 391
+            },
+            {
+                "name": "empirical_entropy",
+                "start": 394,
+                "end": 416
+            },
+            {
+                "name": "init_category",
+                "start": 423,
+                "end": 459
+            },
+            {
+                "name": "create_category_hash",
+                "start": 461,
+                "end": 517
+            },
+            {
+                "name": "free_category_hash",
+                "start": 520,
+                "end": 534
+            },
+            {
+                "name": "free_category",
+                "start": 537,
+                "end": 541
+            },
+            {
+                "name": "init_purely_random_text_category",
+                "start": 544,
+                "end": 592
+            },
+            {
+                "name": "find_in_category",
+                "start": 594,
+                "end": 617
+            },
+            {
+                "name": "score_word",
+                "start": 622,
+                "end": 852
+            },
+            {
+                "name": "gamma_pvalue",
+                "start": 864,
+                "end": 879
+            },
+            {
+                "name": "load_category_header",
+                "start": 884,
+                "end": 982
+            },
+            {
+                "name": "explicit_load_category",
+                "start": 985,
+                "end": 1037
+            },
+            {
+                "name": "load_category",
+                "start": 1042,
+                "end": 1044
+            },
+            {
+                "name": "open_category",
+                "start": 1047,
+                "end": 1049
+            },
+            {
+                "name": "reload_category",
+                "start": 1051,
+                "end": 1059
+            },
+            {
+                "name": "reload_all_categories",
+                "start": 1061,
+                "end": 1069
+            }
+        ],
+        "src/probs.c": [
+            {
+                "name": "log_poisson",
+                "start": 26,
+                "end": 31
+            },
+            {
+                "name": "chi2_cdf",
+                "start": 35,
+                "end": 38
+            },
+            {
+                "name": "gamma_tail",
+                "start": 40,
+                "end": 43
+            },
+            {
+                "name": "normal_cdf",
+                "start": 45,
+                "end": 47
+            }
+        ],
+        "src/jenkins.c": [
+            {
+                "name": "hash",
+                "start": 72,
+                "end": 116
+            }
+        ],
+        "src/igam.c": [
+            {
+                "name": "igamc",
+                "start": 101,
+                "end": 162
+            },
+            {
+                "name": "igam",
+                "start": 176,
+                "end": 210
+            }
+        ],
+        "src/mtherr.c": [
+            {
+                "name": "mtherr",
+                "start": 77,
+                "end": 102
+            }
+        ],
+        "src/gamma.c": [
+            {
+                "name": "stirf",
+                "start": 301,
+                "end": 320
+            },
+            {
+                "name": "gamma",
+                "start": 324,
+                "end": 440
+            },
+            {
+                "name": "lgam",
+                "start": 577,
+                "end": 685
+            }
+        ],
+        "src/isnan.c": [
+            {
+                "name": "signbit",
+                "start": 78,
+                "end": 114
+            },
+            {
+                "name": "isnan",
+                "start": 119,
+                "end": 183
+            },
+            {
+                "name": "isfinite",
+                "start": 188,
+                "end": 237
+            }
+        ],
+        "src/bayesol.c": [
+            {
+                "name": "usage",
+                "start": 102,
+                "end": 119
+            },
+            {
+                "name": "print_line",
+                "start": 121,
+                "end": 123
+            },
+            {
+                "name": "init_spec",
+                "start": 125,
+                "end": 135
+            },
+            {
+                "name": "setup_regexes",
+                "start": 145,
+                "end": 204
+            },
+            {
+                "name": "parse_dbacl_scores",
+                "start": 209,
+                "end": 262
+            },
+            {
+                "name": "finish_parsing",
+                "start": 265,
+                "end": 340
+            },
+            {
+                "name": "compare_reals",
+                "start": 342,
+                "end": 344
+            },
+            {
+                "name": "score_losses",
+                "start": 355,
+                "end": 443
+            },
+            {
+                "name": "finish_parsing_and_score",
+                "start": 446,
+                "end": 484
+            },
+            {
+                "name": "read_riskspec",
+                "start": 491,
+                "end": 515
+            },
+            {
+                "name": "b_process_file",
+                "start": 531,
+                "end": 587
+            },
+            {
+                "name": "main",
+                "start": 676,
+                "end": 829
+            }
+        ],
+        "src/risk-lexer.c": [
+            {
+                "name": "yylex",
+                "start": 686,
+                "end": 1008
+            },
+            {
+                "name": "yy_get_next_buffer",
+                "start": 1017,
+                "end": 1139
+            },
+            {
+                "name": "yy_get_previous_state",
+                "start": 1143,
+                "end": 1169
+            },
+            {
+                "name": "yy_try_NUL_trans",
+                "start": 1176,
+                "end": 1197
+            },
+            {
+                "name": "yyunput",
+                "start": 1199,
+                "end": 1234
+            },
+            {
+                "name": "input",
+                "start": 1240,
+                "end": 1309
+            },
+            {
+                "name": "yyrestart",
+                "start": 1317,
+                "end": 1328
+            },
+            {
+                "name": "yy_switch_to_buffer",
+                "start": 1334,
+                "end": 1363
+            },
+            {
+                "name": "yy_load_buffer_state",
+                "start": 1365,
+                "end": 1371
+            },
+            {
+                "name": "yy_create_buffer",
+                "start": 1379,
+                "end": 1401
+            },
+            {
+                "name": "yy_delete_buffer",
+                "start": 1407,
+                "end": 1420
+            },
+            {
+                "name": "yy_init_buffer",
+                "start": 1430,
+                "end": 1452
+            },
+            {
+                "name": "yy_flush_buffer",
+                "start": 1458,
+                "end": 1479
+            },
+            {
+                "name": "yypush_buffer_state",
+                "start": 1487,
+                "end": 1511
+            },
+            {
+                "name": "yypop_buffer_state",
+                "start": 1517,
+                "end": 1531
+            },
+            {
+                "name": "yyensure_buffer_stack",
+                "start": 1536,
+                "end": 1573
+            },
+            {
+                "name": "yy_scan_buffer",
+                "start": 1581,
+                "end": 1608
+            },
+            {
+                "name": "yy_scan_string",
+                "start": 1618,
+                "end": 1622
+            },
+            {
+                "name": "yy_scan_bytes",
+                "start": 1631,
+                "end": 1659
+            },
+            {
+                "name": "yy_fatal_error",
+                "start": 1665,
+                "end": 1669
+            },
+            {
+                "name": "yyget_lineno",
+                "start": 1693,
+                "end": 1697
+            },
+            {
+                "name": "yyget_in",
+                "start": 1702,
+                "end": 1705
+            },
+            {
+                "name": "yyget_out",
+                "start": 1710,
+                "end": 1713
+            },
+            {
+                "name": "yyget_leng",
+                "start": 1718,
+                "end": 1721
+            },
+            {
+                "name": "yyget_text",
+                "start": 1727,
+                "end": 1730
+            },
+            {
+                "name": "yyset_lineno",
+                "start": 1736,
+                "end": 1740
+            },
+            {
+                "name": "yyset_in",
+                "start": 1748,
+                "end": 1751
+            },
+            {
+                "name": "yyset_out",
+                "start": 1753,
+                "end": 1756
+            },
+            {
+                "name": "yyget_debug",
+                "start": 1758,
+                "end": 1761
+            },
+            {
+                "name": "yyset_debug",
+                "start": 1763,
+                "end": 1766
+            },
+            {
+                "name": "yy_init_globals",
+                "start": 1768,
+                "end": 1794
+            },
+            {
+                "name": "yylex_destroy",
+                "start": 1797,
+                "end": 1816
+            },
+            {
+                "name": "yyalloc",
+                "start": 1842,
+                "end": 1845
+            },
+            {
+                "name": "yyrealloc",
+                "start": 1847,
+                "end": 1857
+            },
+            {
+                "name": "yyfree",
+                "start": 1859,
+                "end": 1862
+            },
+            {
+                "name": "reset_lexer",
+                "start": 1870,
+                "end": 1872
+            },
+            {
+                "name": "lexer_prepare_string",
+                "start": 1874,
+                "end": 1876
+            },
+            {
+                "name": "lexer_free_string",
+                "start": 1878,
+                "end": 1880
+            }
+        ],
+        "src/icheck.c": [
+            {
+                "name": "dump",
+                "start": 49,
+                "end": 62
+            },
+            {
+                "name": "integrity_check2",
+                "start": 64,
+                "end": 82
+            },
+            {
+                "name": "integrity_check1",
+                "start": 84,
+                "end": 102
+            },
+            {
+                "name": "main",
+                "start": 108,
+                "end": 146
+            }
+        ],
+        "src/hparse.c": [
+            {
+                "name": "print_token_delim",
+                "start": 57,
+                "end": 66
+            },
+            {
+                "name": "print_state",
+                "start": 68,
+                "end": 78
+            },
+            {
+                "name": "init_head_filter",
+                "start": 83,
+                "end": 93
+            },
+            {
+                "name": "free_head_filter",
+                "start": 95,
+                "end": 106
+            },
+            {
+                "name": "head_append_hline",
+                "start": 108,
+                "end": 137
+            },
+            {
+                "name": "adjust_tz",
+                "start": 142,
+                "end": 187
+            },
+            {
+                "name": "cvt_date",
+                "start": 190,
+                "end": 263
+            },
+            {
+                "name": "mkh_ignore",
+                "start": 268,
+                "end": 279
+            },
+            {
+                "name": "mkh_return_path",
+                "start": 281,
+                "end": 313
+            },
+            {
+                "name": "mkh_received",
+                "start": 315,
+                "end": 364
+            },
+            {
+                "name": "mkh_reply_to",
+                "start": 366,
+                "end": 390
+            },
+            {
+                "name": "mkh_from",
+                "start": 392,
+                "end": 416
+            },
+            {
+                "name": "mkh_sender",
+                "start": 418,
+                "end": 442
+            },
+            {
+                "name": "mkh_resent_reply_to",
+                "start": 444,
+                "end": 468
+            },
+            {
+                "name": "mkh_resent_from",
+                "start": 470,
+                "end": 494
+            },
+            {
+                "name": "mkh_resent_sender",
+                "start": 496,
+                "end": 520
+            },
+            {
+                "name": "mkh_date",
+                "start": 522,
+                "end": 558
+            },
+            {
+                "name": "mkh_resent_date",
+                "start": 560,
+                "end": 584
+            },
+            {
+                "name": "mkh_to",
+                "start": 586,
+                "end": 610
+            },
+            {
+                "name": "mkh_resent_to",
+                "start": 612,
+                "end": 636
+            },
+            {
+                "name": "mkh_cc",
+                "start": 638,
+                "end": 662
+            },
+            {
+                "name": "mkh_resent_cc",
+                "start": 664,
+                "end": 688
+            },
+            {
+                "name": "mkh_bcc",
+                "start": 690,
+                "end": 714
+            },
+            {
+                "name": "mkh_resent_bcc",
+                "start": 716,
+                "end": 740
+            },
+            {
+                "name": "mkh_message_id",
+                "start": 742,
+                "end": 766
+            },
+            {
+                "name": "mkh_resent_message_id",
+                "start": 768,
+                "end": 792
+            },
+            {
+                "name": "mkh_in_reply_to",
+                "start": 794,
+                "end": 818
+            },
+            {
+                "name": "mkh_references",
+                "start": 820,
+                "end": 844
+            },
+            {
+                "name": "mkh_subject",
+                "start": 846,
+                "end": 870
+            },
+            {
+                "name": "make_new_header",
+                "start": 878,
+                "end": 917
+            },
+            {
+                "name": "head_push_header",
+                "start": 919,
+                "end": 942
+            },
+            {
+                "name": "unfold_token",
+                "start": 947,
+                "end": 977
+            },
+            {
+                "name": "bracketize_mailbox",
+                "start": 985,
+                "end": 1003
+            }
+        ],
+        "src/hypex.c": [
+            {
+                "name": "usage",
+                "start": 94,
+                "end": 113
+            },
+            {
+                "name": "find_in_category_pair",
+                "start": 118,
+                "end": 139
+            },
+            {
+                "name": "grow_category_pair",
+                "start": 143,
+                "end": 215
+            },
+            {
+                "name": "init_category_pair",
+                "start": 217,
+                "end": 227
+            },
+            {
+                "name": "free_category_pair",
+                "start": 229,
+                "end": 234
+            },
+            {
+                "name": "edge_divergences",
+                "start": 239,
+                "end": 273
+            },
+            {
+                "name": "calculate_divergences",
+                "start": 275,
+                "end": 325
+            },
+            {
+                "name": "load_category_dump",
+                "start": 332,
+                "end": 450
+            },
+            {
+                "name": "process_dump_pair",
+                "start": 453,
+                "end": 498
+            },
+            {
+                "name": "set_option",
+                "start": 504,
+                "end": 553
+            },
+            {
+                "name": "sanitize_options",
+                "start": 555,
+                "end": 561
+            },
+            {
+                "name": "main",
+                "start": 564,
+                "end": 621
+            }
+        ],
+        "src/rfc2822.c": [
+            {
+                "name": "skip_recursive",
+                "start": 46,
+                "end": 66
+            },
+            {
+                "name": "skip_single_char",
+                "start": 68,
+                "end": 72
+            },
+            {
+                "name": "skip_twodigit",
+                "start": 74,
+                "end": 79
+            },
+            {
+                "name": "skip_onetwodigit",
+                "start": 81,
+                "end": 89
+            },
+            {
+                "name": "skip_fourdigit",
+                "start": 91,
+                "end": 97
+            },
+            {
+                "name": "skip_single_string",
+                "start": 99,
+                "end": 103
+            },
+            {
+                "name": "skip_string_list",
+                "start": 105,
+                "end": 115
+            },
+            {
+                "name": "skip_2822_fws",
+                "start": 124,
+                "end": 134
+            },
+            {
+                "name": "unskip_2822_fws",
+                "start": 143,
+                "end": 149
+            },
+            {
+                "name": "skip_2822_cfws",
+                "start": 151,
+                "end": 180
+            },
+            {
+                "name": "skip_2822_obs_list",
+                "start": 184,
+                "end": 211
+            },
+            {
+                "name": "skip_2822_seq",
+                "start": 213,
+                "end": 227
+            },
+            {
+                "name": "skip_2822_1atext",
+                "start": 240,
+                "end": 250
+            },
+            {
+                "name": "skip_2822_quoted_string",
+                "start": 252,
+                "end": 261
+            },
+            {
+                "name": "skip_2822_atom",
+                "start": 263,
+                "end": 272
+            },
+            {
+                "name": "skip_2822_word",
+                "start": 274,
+                "end": 286
+            },
+            {
+                "name": "skip_2822_dot_atom_text",
+                "start": 288,
+                "end": 293
+            },
+            {
+                "name": "skip_2822_dot_atom",
+                "start": 295,
+                "end": 304
+            },
+            {
+                "name": "skip_2822_domain_literal",
+                "start": 306,
+                "end": 316
+            },
+            {
+                "name": "skip_2822_obs_domain",
+                "start": 318,
+                "end": 323
+            },
+            {
+                "name": "skip_2822_domain",
+                "start": 325,
+                "end": 343
+            },
+            {
+                "name": "skip_2822_multicomma",
+                "start": 345,
+                "end": 355
+            },
+            {
+                "name": "skip_2822_obs_domain_list",
+                "start": 357,
+                "end": 375
+            },
+            {
+                "name": "skip_2822_obs_route",
+                "start": 377,
+                "end": 388
+            },
+            {
+                "name": "skip_2822_obs_local_part",
+                "start": 390,
+                "end": 396
+            },
+            {
+                "name": "skip_2822_local_part",
+                "start": 398,
+                "end": 413
+            },
+            {
+                "name": "skip_2822_addr_spec",
+                "start": 415,
+                "end": 424
+            },
+            {
+                "name": "skip_2822_obs_angle_addr",
+                "start": 426,
+                "end": 443
+            },
+            {
+                "name": "skip_2822_obs_path",
+                "start": 445,
+                "end": 451
+            },
+            {
+                "name": "skip_2822_path",
+                "start": 453,
+                "end": 471
+            },
+            {
+                "name": "skip_2822_angle_addr",
+                "start": 473,
+                "end": 488
+            },
+            {
+                "name": "skip_2822_item_value",
+                "start": 500,
+                "end": 532
+            },
+            {
+                "name": "skip_2822_item_name",
+                "start": 534,
+                "end": 544
+            },
+            {
+                "name": "skip_2822_name_val_pair",
+                "start": 546,
+                "end": 557
+            },
+            {
+                "name": "skip_2822_name_val_list",
+                "start": 559,
+                "end": 582
+            },
+            {
+                "name": "skip_2822_day_of_week",
+                "start": 588,
+                "end": 601
+            },
+            {
+                "name": "skip_2822_day",
+                "start": 603,
+                "end": 616
+            },
+            {
+                "name": "skip_2822_month",
+                "start": 623,
+                "end": 638
+            },
+            {
+                "name": "skip_2822_year",
+                "start": 640,
+                "end": 650
+            },
+            {
+                "name": "skip_2822_date",
+                "start": 652,
+                "end": 658
+            },
+            {
+                "name": "skip_2822_hour",
+                "start": 660,
+                "end": 670
+            },
+            {
+                "name": "skip_2822_minute",
+                "start": 672,
+                "end": 682
+            },
+            {
+                "name": "skip_2822_second",
+                "start": 684,
+                "end": 692
+            },
+            {
+                "name": "skip_2822_time_of_day",
+                "start": 695,
+                "end": 706
+            },
+            {
+                "name": "skip_2822_obs_zone_name",
+                "start": 713,
+                "end": 716
+            },
+            {
+                "name": "skip_2822_obs_zone",
+                "start": 718,
+                "end": 729
+            },
+            {
+                "name": "skip_2822_zone",
+                "start": 731,
+                "end": 741
+            },
+            {
+                "name": "skip_2822_time",
+                "start": 743,
+                "end": 752
+            },
+            {
+                "name": "skip_2822_date_time",
+                "start": 755,
+                "end": 773
+            },
+            {
+                "name": "skip_2822_obs_phrase",
+                "start": 775,
+                "end": 799
+            },
+            {
+                "name": "skip_2822_phrase",
+                "start": 801,
+                "end": 821
+            },
+            {
+                "name": "skip_2822_display_name",
+                "start": 823,
+                "end": 827
+            },
+            {
+                "name": "skip_2822_name_addr",
+                "start": 829,
+                "end": 841
+            },
+            {
+                "name": "skip_2822_mailbox",
+                "start": 843,
+                "end": 854
+            },
+            {
+                "name": "skip_2822_mailbox_list",
+                "start": 856,
+                "end": 864
+            },
+            {
+                "name": "skip_2822_group",
+                "start": 866,
+                "end": 886
+            },
+            {
+                "name": "skip_2822_address",
+                "start": 888,
+                "end": 899
+            },
+            {
+                "name": "skip_2822_address_list",
+                "start": 901,
+                "end": 909
+            },
+            {
+                "name": "skip_2822_id_left",
+                "start": 911,
+                "end": 924
+            },
+            {
+                "name": "skip_2822_id_right",
+                "start": 926,
+                "end": 939
+            },
+            {
+                "name": "skip_2822_msg_id",
+                "start": 941,
+                "end": 954
+            },
+            {
+                "name": "skip_2822_refs",
+                "start": 956,
+                "end": 969
+            },
+            {
+                "name": "skip_2822_text",
+                "start": 971,
+                "end": 979
+            },
+            {
+                "name": "skip_2822_field_name",
+                "start": 981,
+                "end": 989
+            },
+            {
+                "name": "skip_2822_end_of_line",
+                "start": 991,
+                "end": 997
+            },
+            {
+                "name": "parse_2822_return",
+                "start": 1003,
+                "end": 1009
+            },
+            {
+                "name": "parse_2822_received",
+                "start": 1011,
+                "end": 1024
+            },
+            {
+                "name": "parse_2822_from",
+                "start": 1026,
+                "end": 1033
+            },
+            {
+                "name": "parse_2822_resent_from",
+                "start": 1035,
+                "end": 1038
+            },
+            {
+                "name": "parse_2822_sender",
+                "start": 1040,
+                "end": 1047
+            },
+            {
+                "name": "parse_2822_resent_sender",
+                "start": 1049,
+                "end": 1052
+            },
+            {
+                "name": "parse_2822_reply_to",
+                "start": 1054,
+                "end": 1061
+            },
+            {
+                "name": "parse_2822_resent_reply_to",
+                "start": 1063,
+                "end": 1066
+            },
+            {
+                "name": "parse_2822_to",
+                "start": 1068,
+                "end": 1075
+            },
+            {
+                "name": "parse_2822_resent_to",
+                "start": 1077,
+                "end": 1080
+            },
+            {
+                "name": "parse_2822_cc",
+                "start": 1082,
+                "end": 1089
+            },
+            {
+                "name": "parse_2822_resent_cc",
+                "start": 1091,
+                "end": 1094
+            },
+            {
+                "name": "parse_2822_bcc",
+                "start": 1096,
+                "end": 1109
+            },
+            {
+                "name": "parse_2822_resent_bcc",
+                "start": 1111,
+                "end": 1114
+            },
+            {
+                "name": "parse_2822_message_id",
+                "start": 1116,
+                "end": 1123
+            },
+            {
+                "name": "parse_2822_resent_message_id",
+                "start": 1125,
+                "end": 1128
+            },
+            {
+                "name": "parse_2822_date",
+                "start": 1130,
+                "end": 1137
+            },
+            {
+                "name": "parse_2822_resent_date",
+                "start": 1139,
+                "end": 1142
+            },
+            {
+                "name": "parse_2822_in_reply_to",
+                "start": 1144,
+                "end": 1151
+            },
+            {
+                "name": "parse_2822_references",
+                "start": 1153,
+                "end": 1160
+            },
+            {
+                "name": "parse_2822_subject",
+                "start": 1162,
+                "end": 1169
+            },
+            {
+                "name": "skip_2821_sub_domain",
+                "start": 1177,
+                "end": 1189
+            },
+            {
+                "name": "skip_2821_address_literal",
+                "start": 1192,
+                "end": 1195
+            },
+            {
+                "name": "skip_2821_domain",
+                "start": 1197,
+                "end": 1217
+            },
+            {
+                "name": "skip_2821_at_domain",
+                "start": 1219,
+                "end": 1227
+            },
+            {
+                "name": "skip_2821_local_part",
+                "start": 1229,
+                "end": 1236
+            },
+            {
+                "name": "skip_2821_mailbox",
+                "start": 1238,
+                "end": 1247
+            },
+            {
+                "name": "skip_2821_adl",
+                "start": 1249,
+                "end": 1256
+            },
+            {
+                "name": "skip_2821_path",
+                "start": 1258,
+                "end": 1273
+            },
+            {
+                "name": "skip_2821_reverse_path",
+                "start": 1276,
+                "end": 1279
+            },
+            {
+                "name": "skip_2821_tcp_info",
+                "start": 1281,
+                "end": 1290
+            },
+            {
+                "name": "skip_2821_extended_domain",
+                "start": 1292,
+                "end": 1322
+            },
+            {
+                "name": "skip_2821_from_domain",
+                "start": 1324,
+                "end": 1332
+            },
+            {
+                "name": "skip_2821_by_domain",
+                "start": 1334,
+                "end": 1342
+            },
+            {
+                "name": "skip_2821_link",
+                "start": 1344,
+                "end": 1347
+            },
+            {
+                "name": "skip_2821_protocol",
+                "start": 1349,
+                "end": 1352
+            },
+            {
+                "name": "skip_2821_string",
+                "start": 1354,
+                "end": 1366
+            },
+            {
+                "name": "skip_2821_string_msg_id",
+                "start": 1368,
+                "end": 1378
+            },
+            {
+                "name": "skip_2821_path_mailbox",
+                "start": 1380,
+                "end": 1389
+            },
+            {
+                "name": "parse_2821_return_path_line",
+                "start": 1394,
+                "end": 1401
+            },
+            {
+                "name": "parse_2821_time_stamp_line",
+                "start": 1403,
+                "end": 1469
+            }
+        ],
+        "src/rfc822.c": [
+            {
+                "name": "skip_recursive",
+                "start": 46,
+                "end": 67
+            },
+            {
+                "name": "skip_single_char",
+                "start": 69,
+                "end": 73
+            },
+            {
+                "name": "skip_twodigit",
+                "start": 75,
+                "end": 80
+            },
+            {
+                "name": "skip_fourdigit",
+                "start": 82,
+                "end": 88
+            },
+            {
+                "name": "skip_single_string",
+                "start": 90,
+                "end": 94
+            },
+            {
+                "name": "skip_string_list",
+                "start": 96,
+                "end": 106
+            },
+            {
+                "name": "skip_822_comment",
+                "start": 117,
+                "end": 124
+            },
+            {
+                "name": "skip_822_lwsp",
+                "start": 131,
+                "end": 147
+            },
+            {
+                "name": "skip_822_linwsp",
+                "start": 153,
+                "end": 156
+            },
+            {
+                "name": "assert_char",
+                "start": 158,
+                "end": 161
+            },
+            {
+                "name": "skip_822_sharp",
+                "start": 163,
+                "end": 190
+            },
+            {
+                "name": "skip_822_seq",
+                "start": 192,
+                "end": 208
+            },
+            {
+                "name": "skip_822_atom",
+                "start": 221,
+                "end": 231
+            },
+            {
+                "name": "skip_822_quoted_string",
+                "start": 233,
+                "end": 240
+            },
+            {
+                "name": "skip_822_text",
+                "start": 243,
+                "end": 251
+            },
+            {
+                "name": "skip_822_domain_literal",
+                "start": 253,
+                "end": 260
+            },
+            {
+                "name": "skip_822_word",
+                "start": 262,
+                "end": 273
+            },
+            {
+                "name": "skip_822_phrase",
+                "start": 275,
+                "end": 290
+            },
+            {
+                "name": "skip_822_phrase_list",
+                "start": 292,
+                "end": 297
+            },
+            {
+                "name": "skip_822_domain_ref",
+                "start": 299,
+                "end": 302
+            },
+            {
+                "name": "skip_822_sub_domain",
+                "start": 304,
+                "end": 315
+            },
+            {
+                "name": "skip_822_domain",
+                "start": 317,
+                "end": 324
+            },
+            {
+                "name": "skip_822_local_part",
+                "start": 326,
+                "end": 333
+            },
+            {
+                "name": "skip_822_addr_spec",
+                "start": 335,
+                "end": 346
+            },
+            {
+                "name": "skip_822_msg_id",
+                "start": 348,
+                "end": 359
+            },
+            {
+                "name": "skip_822_at_domain",
+                "start": 361,
+                "end": 370
+            },
+            {
+                "name": "skip_822_route",
+                "start": 372,
+                "end": 380
+            },
+            {
+                "name": "skip_822_route_addr",
+                "start": 382,
+                "end": 398
+            },
+            {
+                "name": "skip_822_mailbox",
+                "start": 400,
+                "end": 413
+            },
+            {
+                "name": "skip_822_mailbox_list",
+                "start": 416,
+                "end": 421
+            },
+            {
+                "name": "skip_822_field_name",
+                "start": 423,
+                "end": 429
+            },
+            {
+                "name": "skip_822_group",
+                "start": 431,
+                "end": 444
+            },
+            {
+                "name": "skip_822_address",
+                "start": 446,
+                "end": 459
+            },
+            {
+                "name": "skip_822_address_list",
+                "start": 461,
+                "end": 466
+            },
+            {
+                "name": "skip_822_refs",
+                "start": 468,
+                "end": 482
+            },
+            {
+                "name": "skip_822_hour",
+                "start": 484,
+                "end": 502
+            },
+            {
+                "name": "skip_822_zone_name",
+                "start": 504,
+                "end": 511
+            },
+            {
+                "name": "skip_822_zone",
+                "start": 513,
+                "end": 532
+            },
+            {
+                "name": "skip_822_time",
+                "start": 534,
+                "end": 543
+            },
+            {
+                "name": "skip_822_day_name",
+                "start": 546,
+                "end": 552
+            },
+            {
+                "name": "skip_822_month_name",
+                "start": 555,
+                "end": 562
+            },
+            {
+                "name": "skip_822_date",
+                "start": 564,
+                "end": 575
+            },
+            {
+                "name": "skip_822_date_time",
+                "start": 577,
+                "end": 593
+            },
+            {
+                "name": "skip_822_end_of_line",
+                "start": 595,
+                "end": 602
+            },
+            {
+                "name": "parse_822_return",
+                "start": 608,
+                "end": 615
+            },
+            {
+                "name": "parse_822_received",
+                "start": 617,
+                "end": 678
+            },
+            {
+                "name": "parse_822_reply_to",
+                "start": 680,
+                "end": 687
+            },
+            {
+                "name": "parse_822_from",
+                "start": 689,
+                "end": 696
+            },
+            {
+                "name": "parse_822_sender",
+                "start": 698,
+                "end": 705
+            },
+            {
+                "name": "parse_822_resent_reply_to",
+                "start": 707,
+                "end": 710
+            },
+            {
+                "name": "parse_822_resent_from",
+                "start": 712,
+                "end": 715
+            },
+            {
+                "name": "parse_822_resent_sender",
+                "start": 717,
+                "end": 720
+            },
+            {
+                "name": "parse_822_date",
+                "start": 723,
+                "end": 730
+            },
+            {
+                "name": "parse_822_resent_date",
+                "start": 732,
+                "end": 735
+            },
+            {
+                "name": "parse_822_to",
+                "start": 737,
+                "end": 744
+            },
+            {
+                "name": "parse_822_resent_to",
+                "start": 746,
+                "end": 749
+            },
+            {
+                "name": "parse_822_cc",
+                "start": 751,
+                "end": 758
+            },
+            {
+                "name": "parse_822_resent_cc",
+                "start": 760,
+                "end": 763
+            },
+            {
+                "name": "parse_822_bcc",
+                "start": 766,
+                "end": 773
+            },
+            {
+                "name": "parse_822_resent_bcc",
+                "start": 775,
+                "end": 778
+            },
+            {
+                "name": "parse_822_message_id",
+                "start": 780,
+                "end": 787
+            },
+            {
+                "name": "parse_822_resent_message_id",
+                "start": 789,
+                "end": 792
+            },
+            {
+                "name": "parse_822_in_reply_to",
+                "start": 794,
+                "end": 801
+            },
+            {
+                "name": "parse_822_references",
+                "start": 803,
+                "end": 810
+            },
+            {
+                "name": "parse_822_keywords",
+                "start": 812,
+                "end": 819
+            },
+            {
+                "name": "parse_822_subject",
+                "start": 821,
+                "end": 828
+            },
+            {
+                "name": "parse_822_comments",
+                "start": 830,
+                "end": 837
+            },
+            {
+                "name": "skip_821_name",
+                "start": 843,
+                "end": 853
+            },
+            {
+                "name": "skip_821_number",
+                "start": 855,
+                "end": 865
+            },
+            {
+                "name": "skip_821_dotnum",
+                "start": 867,
+                "end": 889
+            },
+            {
+                "name": "skip_821_element",
+                "start": 891,
+                "end": 912
+            },
+            {
+                "name": "skip_821_domain",
+                "start": 914,
+                "end": 921
+            },
+            {
+                "name": "skip_821_string",
+                "start": 923,
+                "end": 926
+            },
+            {
+                "name": "skip_821_dot_string",
+                "start": 928,
+                "end": 935
+            },
+            {
+                "name": "skip_821_local_part",
+                "start": 937,
+                "end": 949
+            },
+            {
+                "name": "skip_821_mailbox",
+                "start": 951,
+                "end": 962
+            },
+            {
+                "name": "skip_821_at_domain",
+                "start": 964,
+                "end": 973
+            },
+            {
+                "name": "skip_821_adl",
+                "start": 975,
+                "end": 982
+            },
+            {
+                "name": "skip_821_path",
+                "start": 984,
+                "end": 1003
+            },
+            {
+                "name": "skip_821_reverse_path",
+                "start": 1005,
+                "end": 1008
+            },
+            {
+                "name": "skip_821_link",
+                "start": 1010,
+                "end": 1013
+            },
+            {
+                "name": "skip_821_protocol",
+                "start": 1015,
+                "end": 1018
+            },
+            {
+                "name": "skip_821_from_domain",
+                "start": 1020,
+                "end": 1030
+            },
+            {
+                "name": "skip_821_by_domain",
+                "start": 1032,
+                "end": 1042
+            },
+            {
+                "name": "skip_821_date",
+                "start": 1044,
+                "end": 1055
+            },
+            {
+                "name": "skip_821_time",
+                "start": 1057,
+                "end": 1074
+            },
+            {
+                "name": "skip_821_daytime",
+                "start": 1076,
+                "end": 1085
+            },
+            {
+                "name": "parse_821_return_path_line",
+                "start": 1090,
+                "end": 1097
+            },
+            {
+                "name": "parse_821_time_stamp_line",
+                "start": 1099,
+                "end": 1141
+            }
+        ],
+        "src/dbacl.c": [
+            {
+                "name": "usage",
+                "start": 137,
+                "end": 170
+            },
+            {
+                "name": "line_score_categories",
+                "start": 179,
+                "end": 259
+            },
+            {
+                "name": "score_categories",
+                "start": 261,
+                "end": 429
+            },
+            {
+                "name": "check_magic_write",
+                "start": 435,
+                "end": 454
+            },
+            {
+                "name": "mytmpfile",
+                "start": 465,
+                "end": 496
+            },
+            {
+                "name": "myrename",
+                "start": 498,
+                "end": 505
+            },
+            {
+                "name": "write_category_headers",
+                "start": 508,
+                "end": 562
+            },
+            {
+                "name": "save_learner",
+                "start": 575,
+                "end": 768
+            },
+            {
+                "name": "fast_partial_save_learner",
+                "start": 776,
+                "end": 865
+            },
+            {
+                "name": "tmp_seek_start",
+                "start": 868,
+                "end": 877
+            },
+            {
+                "name": "tmp_seek_end",
+                "start": 879,
+                "end": 888
+            },
+            {
+                "name": "tmp_get_pos",
+                "start": 890,
+                "end": 897
+            },
+            {
+                "name": "tmp_read_block",
+                "start": 899,
+                "end": 916
+            },
+            {
+                "name": "tmp_grow",
+                "start": 919,
+                "end": 973
+            },
+            {
+                "name": "tmp_write_token",
+                "start": 976,
+                "end": 994
+            },
+            {
+                "name": "tmp_close",
+                "start": 996,
+                "end": 1012
+            },
+            {
+                "name": "emplist_grow",
+                "start": 1017,
+                "end": 1040
+            },
+            {
+                "name": "emplist_replace",
+                "start": 1042,
+                "end": 1060
+            },
+            {
+                "name": "emplist_add_to_reservoir",
+                "start": 1070,
+                "end": 1082
+            },
+            {
+                "name": "free_learner_hash",
+                "start": 1087,
+                "end": 1102
+            },
+            {
+                "name": "create_learner_hash",
+                "start": 1104,
+                "end": 1190
+            },
+            {
+                "name": "grow_learner_hash",
+                "start": 1196,
+                "end": 1316
+            },
+            {
+                "name": "read_online_learner_struct",
+                "start": 1319,
+                "end": 1446
+            },
+            {
+                "name": "write_online_learner_struct",
+                "start": 1449,
+                "end": 1567
+            },
+            {
+                "name": "binomial",
+                "start": 1573,
+                "end": 1596
+            },
+            {
+                "name": "update_shannon_partials",
+                "start": 1598,
+                "end": 1653
+            },
+            {
+                "name": "calc_shannon",
+                "start": 1655,
+                "end": 1774
+            },
+            {
+                "name": "reset_mbox_messages",
+                "start": 1776,
+                "end": 1781
+            },
+            {
+                "name": "count_mbox_messages",
+                "start": 1783,
+                "end": 1812
+            },
+            {
+                "name": "find_in_learner",
+                "start": 1815,
+                "end": 1836
+            },
+            {
+                "name": "hash_word_and_learn",
+                "start": 1843,
+                "end": 1977
+            },
+            {
+                "name": "init_learner",
+                "start": 1980,
+                "end": 2109
+            },
+            {
+                "name": "free_learner",
+                "start": 2111,
+                "end": 2134
+            },
+            {
+                "name": "make_dirichlet_digrams",
+                "start": 2163,
+                "end": 2258
+            },
+            {
+                "name": "make_uniform_digrams",
+                "start": 2260,
+                "end": 2273
+            },
+            {
+                "name": "transpose_digrams",
+                "start": 2278,
+                "end": 2292
+            },
+            {
+                "name": "recompute_ed",
+                "start": 2294,
+                "end": 2336
+            },
+            {
+                "name": "make_entropic_digrams",
+                "start": 2338,
+                "end": 2439
+            },
+            {
+                "name": "interpolate_digrams",
+                "start": 2442,
+                "end": 2461
+            },
+            {
+                "name": "calc_learner_digramic_excursion",
+                "start": 2464,
+                "end": 2478
+            },
+            {
+                "name": "learner_divergence",
+                "start": 2485,
+                "end": 2507
+            },
+            {
+                "name": "learner_logZ",
+                "start": 2512,
+                "end": 2570
+            },
+            {
+                "name": "get_token_order",
+                "start": 2573,
+                "end": 2583
+            },
+            {
+                "name": "fill_ref_vars",
+                "start": 2587,
+                "end": 2632
+            },
+            {
+                "name": "recalculate_reference_measure",
+                "start": 2639,
+                "end": 2719
+            },
+            {
+                "name": "print_score",
+                "start": 2723,
+                "end": 2759
+            },
+            {
+                "name": "theta_rescale",
+                "start": 2763,
+                "end": 2846
+            },
+            {
+                "name": "minimize_learner_divergence",
+                "start": 2850,
+                "end": 3009
+            },
+            {
+                "name": "dump_model",
+                "start": 3013,
+                "end": 3093
+            },
+            {
+                "name": "learner_prefill_lambdas",
+                "start": 3117,
+                "end": 3173
+            },
+            {
+                "name": "optimize_and_save",
+                "start": 3176,
+                "end": 3279
+            },
+            {
+                "name": "handle_indents_and_appends",
+                "start": 3289,
+                "end": 3311
+            },
+            {
+                "name": "learner_preprocess_fun",
+                "start": 3323,
+                "end": 3325
+            },
+            {
+                "name": "learner_post_line_fun",
+                "start": 3327,
+                "end": 3329
+            },
+            {
+                "name": "learner_postprocess_fun",
+                "start": 3331,
+                "end": 3333
+            },
+            {
+                "name": "learner_cleanup_fun",
+                "start": 3335,
+                "end": 3337
+            },
+            {
+                "name": "learner_word_fun",
+                "start": 3339,
+                "end": 3341
+            },
+            {
+                "name": "classifier_preprocess_fun",
+                "start": 3343,
+                "end": 3367
+            },
+            {
+                "name": "classifier_cleanup_fun",
+                "start": 3369,
+                "end": 3381
+            },
+            {
+                "name": "email_line_filter",
+                "start": 3384,
+                "end": 3386
+            },
+            {
+                "name": "set_option",
+                "start": 3394,
+                "end": 3775
+            },
+            {
+                "name": "sanitize_options",
+                "start": 3777,
+                "end": 3915
+            },
+            {
+                "name": "main",
+                "start": 3918,
+                "end": 4147
+            }
+        ]
+    }
+}

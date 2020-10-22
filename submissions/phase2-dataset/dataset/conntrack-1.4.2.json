@@ -1,0 +1,3558 @@
+{
+    "conntrack-1.4.2": {
+        "src/local.c": [
+            {
+                "name": "local_server_create",
+                "start": 29,
+                "end": 66
+            },
+            {
+                "name": "local_server_destroy",
+                "start": 68,
+                "end": 72
+            },
+            {
+                "name": "do_local_server_step",
+                "start": 74,
+                "end": 90
+            },
+            {
+                "name": "local_client_create",
+                "start": 92,
+                "end": 111
+            },
+            {
+                "name": "local_client_destroy",
+                "start": 113,
+                "end": 116
+            },
+            {
+                "name": "do_local_client_step",
+                "start": 118,
+                "end": 132
+            },
+            {
+                "name": "local_step",
+                "start": 134,
+                "end": 137
+            },
+            {
+                "name": "do_local_request",
+                "start": 139,
+                "end": 158
+            }
+        ],
+        "src/expect.c": [
+            {
+                "name": "cthelper_expect_init",
+                "start": 22,
+                "end": 161
+            },
+            {
+                "name": "cthelper_expect_cmd",
+                "start": 163,
+                "end": 176
+            },
+            {
+                "name": "cthelper_add_expect",
+                "start": 178,
+                "end": 181
+            },
+            {
+                "name": "cthelper_del_expect",
+                "start": 183,
+                "end": 186
+            },
+            {
+                "name": "cthelper_get_addr_src",
+                "start": 188,
+                "end": 200
+            },
+            {
+                "name": "cthelper_get_addr_dst",
+                "start": 202,
+                "end": 214
+            }
+        ],
+        "src/internal_bypass.c": [
+            {
+                "name": "internal_bypass_init",
+                "start": 20,
+                "end": 23
+            },
+            {
+                "name": "internal_bypass_close",
+                "start": 25,
+                "end": 27
+            },
+            {
+                "name": "internal_bypass_ct_dump_cb",
+                "start": 29,
+                "end": 47
+            },
+            {
+                "name": "internal_bypass_ct_dump",
+                "start": 49,
+                "end": 66
+            },
+            {
+                "name": "internal_bypass_ct_flush",
+                "start": 68,
+                "end": 71
+            },
+            {
+                "name": "internal_bypass_ct_stats",
+                "start": 79,
+                "end": 93
+            },
+            {
+                "name": "internal_bypass_ct_populate",
+                "start": 96,
+                "end": 98
+            },
+            {
+                "name": "internal_bypass_ct_purge",
+                "start": 101,
+                "end": 103
+            },
+            {
+                "name": "internal_bypass_ct_resync",
+                "start": 106,
+                "end": 111
+            },
+            {
+                "name": "internal_bypass_ct_event_new",
+                "start": 113,
+                "end": 124
+            },
+            {
+                "name": "internal_bypass_ct_event_upd",
+                "start": 126,
+                "end": 137
+            },
+            {
+                "name": "internal_bypass_ct_event_del",
+                "start": 139,
+                "end": 152
+            },
+            {
+                "name": "internal_bypass_exp_dump_cb",
+                "start": 154,
+                "end": 178
+            },
+            {
+                "name": "internal_bypass_exp_dump",
+                "start": 180,
+                "end": 198
+            },
+            {
+                "name": "internal_bypass_exp_flush",
+                "start": 200,
+                "end": 203
+            },
+            {
+                "name": "internal_bypass_exp_stats",
+                "start": 211,
+                "end": 225
+            },
+            {
+                "name": "internal_bypass_exp_populate",
+                "start": 228,
+                "end": 230
+            },
+            {
+                "name": "internal_bypass_exp_purge",
+                "start": 233,
+                "end": 235
+            },
+            {
+                "name": "internal_bypass_exp_resync",
+                "start": 238,
+                "end": 243
+            },
+            {
+                "name": "internal_bypass_exp_event_new",
+                "start": 245,
+                "end": 256
+            },
+            {
+                "name": "internal_bypass_exp_event_upd",
+                "start": 258,
+                "end": 269
+            },
+            {
+                "name": "internal_bypass_exp_event_del",
+                "start": 271,
+                "end": 284
+            },
+            {
+                "name": "internal_bypass_exp_master_find",
+                "start": 286,
+                "end": 289
+            }
+        ],
+        "src/utils.c": [
+            {
+                "name": "hex_to_bin",
+                "start": 35,
+                "end": 43
+            },
+            {
+                "name": "xdigit2bin",
+                "start": 56,
+                "end": 74
+            },
+            {
+                "name": "in4_pton",
+                "start": 76,
+                "end": 127
+            },
+            {
+                "name": "in6_pton",
+                "start": 129,
+                "end": 243
+            }
+        ],
+        "src/external_cache.c": [
+            {
+                "name": "external_cache_init",
+                "start": 31,
+                "end": 49
+            },
+            {
+                "name": "external_cache_close",
+                "start": 51,
+                "end": 55
+            },
+            {
+                "name": "external_cache_ct_new",
+                "start": 57,
+                "end": 78
+            },
+            {
+                "name": "external_cache_ct_upd",
+                "start": 80,
+                "end": 83
+            },
+            {
+                "name": "external_cache_ct_del",
+                "start": 85,
+                "end": 95
+            },
+            {
+                "name": "external_cache_ct_dump",
+                "start": 97,
+                "end": 100
+            },
+            {
+                "name": "external_cache_ct_commit",
+                "start": 102,
+                "end": 105
+            },
+            {
+                "name": "external_cache_ct_flush",
+                "start": 107,
+                "end": 110
+            },
+            {
+                "name": "external_cache_ct_stats",
+                "start": 112,
+                "end": 115
+            },
+            {
+                "name": "external_cache_ct_stats_ext",
+                "start": 117,
+                "end": 120
+            },
+            {
+                "name": "external_cache_exp_new",
+                "start": 122,
+                "end": 143
+            },
+            {
+                "name": "external_cache_exp_upd",
+                "start": 145,
+                "end": 148
+            },
+            {
+                "name": "external_cache_exp_del",
+                "start": 150,
+                "end": 160
+            },
+            {
+                "name": "external_cache_exp_dump",
+                "start": 162,
+                "end": 165
+            },
+            {
+                "name": "external_cache_exp_commit",
+                "start": 167,
+                "end": 170
+            },
+            {
+                "name": "external_cache_exp_flush",
+                "start": 172,
+                "end": 175
+            },
+            {
+                "name": "external_cache_exp_stats",
+                "start": 177,
+                "end": 180
+            },
+            {
+                "name": "external_cache_exp_stats_ext",
+                "start": 182,
+                "end": 185
+            }
+        ],
+        "src/channel.c": [
+            {
+                "name": "channel_init",
+                "start": 30,
+                "end": 41
+            },
+            {
+                "name": "channel_end",
+                "start": 43,
+                "end": 46
+            },
+            {
+                "name": "channel_buffer_open",
+                "start": 54,
+                "end": 71
+            },
+            {
+                "name": "channel_buffer_close",
+                "start": 73,
+                "end": 81
+            },
+            {
+                "name": "channel_open",
+                "start": 83,
+                "end": 141
+            },
+            {
+                "name": "channel_close",
+                "start": 143,
+                "end": 150
+            },
+            {
+                "name": "channel_enqueue_errors",
+                "start": 157,
+                "end": 188
+            },
+            {
+                "name": "channel_handle_error_step",
+                "start": 190,
+                "end": 208
+            },
+            {
+                "name": "channel_handle_errors",
+                "start": 210,
+                "end": 218
+            },
+            {
+                "name": "channel_send",
+                "start": 220,
+                "end": 253
+            },
+            {
+                "name": "channel_send_flush",
+                "start": 255,
+                "end": 276
+            },
+            {
+                "name": "channel_recv",
+                "start": 278,
+                "end": 281
+            },
+            {
+                "name": "channel_get_fd",
+                "start": 283,
+                "end": 286
+            },
+            {
+                "name": "channel_stats",
+                "start": 288,
+                "end": 291
+            },
+            {
+                "name": "channel_stats_extended",
+                "start": 293,
+                "end": 297
+            },
+            {
+                "name": "channel_accept_isset",
+                "start": 299,
+                "end": 302
+            },
+            {
+                "name": "channel_isset",
+                "start": 304,
+                "end": 307
+            },
+            {
+                "name": "channel_accept",
+                "start": 309,
+                "end": 312
+            },
+            {
+                "name": "channel_type",
+                "start": 314,
+                "end": 317
+            }
+        ],
+        "src/external_inject.c": [
+            {
+                "name": "external_inject_init",
+                "start": 42,
+                "end": 55
+            },
+            {
+                "name": "external_inject_close",
+                "start": 57,
+                "end": 61
+            },
+            {
+                "name": "external_inject_ct_new",
+                "start": 63,
+                "end": 89
+            },
+            {
+                "name": "external_inject_ct_upd",
+                "start": 91,
+                "end": 130
+            },
+            {
+                "name": "external_inject_ct_del",
+                "start": 132,
+                "end": 143
+            },
+            {
+                "name": "external_inject_ct_dump",
+                "start": 145,
+                "end": 147
+            },
+            {
+                "name": "external_inject_ct_commit",
+                "start": 149,
+                "end": 153
+            },
+            {
+                "name": "external_inject_ct_flush",
+                "start": 155,
+                "end": 157
+            },
+            {
+                "name": "external_inject_ct_stats",
+                "start": 159,
+                "end": 176
+            },
+            {
+                "name": "external_inject_exp_new",
+                "start": 187,
+                "end": 213
+            },
+            {
+                "name": "external_inject_exp_del",
+                "start": 215,
+                "end": 226
+            },
+            {
+                "name": "external_inject_exp_dump",
+                "start": 228,
+                "end": 230
+            },
+            {
+                "name": "external_inject_exp_commit",
+                "start": 232,
+                "end": 236
+            },
+            {
+                "name": "external_inject_exp_flush",
+                "start": 238,
+                "end": 240
+            },
+            {
+                "name": "external_inject_exp_stats",
+                "start": 242,
+                "end": 259
+            }
+        ],
+        "src/sync-alarm.c": [
+            {
+                "name": "refresher",
+                "start": 38,
+                "end": 47
+            },
+            {
+                "name": "cache_alarm_add",
+                "start": 49,
+                "end": 59
+            },
+            {
+                "name": "cache_alarm_update",
+                "start": 61,
+                "end": 67
+            },
+            {
+                "name": "cache_alarm_destroy",
+                "start": 69,
+                "end": 74
+            },
+            {
+                "name": "alarm_recv",
+                "start": 83,
+                "end": 111
+            },
+            {
+                "name": "alarm_enqueue",
+                "start": 113,
+                "end": 118
+            },
+            {
+                "name": "tx_queue_xmit",
+                "start": 120,
+                "end": 147
+            },
+            {
+                "name": "alarm_xmit",
+                "start": 149,
+                "end": 152
+            }
+        ],
+        "src/sync-notrack.c": [
+            {
+                "name": "cache_notrack_add",
+                "start": 40,
+                "end": 45
+            },
+            {
+                "name": "cache_notrack_del",
+                "start": 47,
+                "end": 51
+            },
+            {
+                "name": "tx_queue_add_ctlmsg",
+                "start": 59,
+                "end": 76
+            },
+            {
+                "name": "do_cache_to_tx",
+                "start": 78,
+                "end": 85
+            },
+            {
+                "name": "kernel_resync_cb",
+                "start": 87,
+                "end": 96
+            },
+            {
+                "name": "kernel_resync",
+                "start": 99,
+                "end": 116
+            },
+            {
+                "name": "notrack_local",
+                "start": 118,
+                "end": 144
+            },
+            {
+                "name": "digest_msg",
+                "start": 146,
+                "end": 167
+            },
+            {
+                "name": "notrack_recv",
+                "start": 169,
+                "end": 182
+            },
+            {
+                "name": "tx_queue_xmit",
+                "start": 184,
+                "end": 215
+            },
+            {
+                "name": "notrack_xmit",
+                "start": 217,
+                "end": 221
+            },
+            {
+                "name": "notrack_enqueue",
+                "start": 223,
+                "end": 228
+            },
+            {
+                "name": "tx_queue_add_ctlmsg2",
+                "start": 230,
+                "end": 245
+            },
+            {
+                "name": "do_alive_alarm",
+                "start": 247,
+                "end": 251
+            },
+            {
+                "name": "notrack_init",
+                "start": 253,
+                "end": 258
+            }
+        ],
+        "src/channel_mcast.c": [
+            {
+                "name": "channel_mcast_open",
+                "start": 16,
+                "end": 39
+            },
+            {
+                "name": "channel_mcast_send",
+                "start": 41,
+                "end": 46
+            },
+            {
+                "name": "channel_mcast_recv",
+                "start": 48,
+                "end": 53
+            },
+            {
+                "name": "channel_mcast_close",
+                "start": 55,
+                "end": 62
+            },
+            {
+                "name": "channel_mcast_get_fd",
+                "start": 64,
+                "end": 69
+            },
+            {
+                "name": "channel_mcast_stats",
+                "start": 71,
+                "end": 82
+            },
+            {
+                "name": "channel_mcast_stats_extended",
+                "start": 84,
+                "end": 113
+            },
+            {
+                "name": "channel_mcast_isset",
+                "start": 115,
+                "end": 120
+            },
+            {
+                "name": "channel_mcast_accept_isset",
+                "start": 122,
+                "end": 126
+            }
+        ],
+        "src/tcp.c": [
+            {
+                "name": "tcp_server_create",
+                "start": 28,
+                "end": 115
+            },
+            {
+                "name": "tcp_server_destroy",
+                "start": 117,
+                "end": 121
+            },
+            {
+                "name": "tcp_client_init",
+                "start": 123,
+                "end": 202
+            },
+            {
+                "name": "tcp_client_create",
+                "start": 208,
+                "end": 226
+            },
+            {
+                "name": "tcp_client_destroy",
+                "start": 228,
+                "end": 232
+            },
+            {
+                "name": "tcp_accept",
+                "start": 234,
+                "end": 269
+            },
+            {
+                "name": "tcp_send",
+                "start": 273,
+                "end": 326
+            },
+            {
+                "name": "tcp_recv",
+                "start": 328,
+                "end": 362
+            },
+            {
+                "name": "tcp_get_fd",
+                "start": 364,
+                "end": 367
+            },
+            {
+                "name": "tcp_isset",
+                "start": 369,
+                "end": 372
+            },
+            {
+                "name": "tcp_accept_isset",
+                "start": 374,
+                "end": 377
+            },
+            {
+                "name": "tcp_snprintf_stats",
+                "start": 379,
+                "end": 406
+            },
+            {
+                "name": "tcp_snprintf_stats2",
+                "start": 408,
+                "end": 431
+            }
+        ],
+        "src/channel_udp.c": [
+            {
+                "name": "channel_udp_open",
+                "start": 16,
+                "end": 39
+            },
+            {
+                "name": "channel_udp_send",
+                "start": 41,
+                "end": 46
+            },
+            {
+                "name": "channel_udp_recv",
+                "start": 48,
+                "end": 53
+            },
+            {
+                "name": "channel_udp_close",
+                "start": 55,
+                "end": 62
+            },
+            {
+                "name": "channel_udp_get_fd",
+                "start": 64,
+                "end": 69
+            },
+            {
+                "name": "channel_udp_stats",
+                "start": 71,
+                "end": 82
+            },
+            {
+                "name": "channel_udp_stats_extended",
+                "start": 84,
+                "end": 113
+            },
+            {
+                "name": "channel_udp_isset",
+                "start": 115,
+                "end": 120
+            },
+            {
+                "name": "channel_udp_accept_isset",
+                "start": 122,
+                "end": 126
+            }
+        ],
+        "src/udp.c": [
+            {
+                "name": "udp_server_create",
+                "start": 22,
+                "end": 86
+            },
+            {
+                "name": "udp_server_destroy",
+                "start": 88,
+                "end": 92
+            },
+            {
+                "name": "udp_client_create",
+                "start": 94,
+                "end": 160
+            },
+            {
+                "name": "udp_client_destroy",
+                "start": 162,
+                "end": 166
+            },
+            {
+                "name": "udp_send",
+                "start": 168,
+                "end": 187
+            },
+            {
+                "name": "udp_recv",
+                "start": 189,
+                "end": 210
+            },
+            {
+                "name": "udp_get_fd",
+                "start": 212,
+                "end": 215
+            },
+            {
+                "name": "udp_isset",
+                "start": 217,
+                "end": 220
+            },
+            {
+                "name": "udp_snprintf_stats",
+                "start": 222,
+                "end": 243
+            },
+            {
+                "name": "udp_snprintf_stats2",
+                "start": 245,
+                "end": 268
+            }
+        ],
+        "src/cidr.c": [
+            {
+                "name": "ipv4_cidr2mask_host",
+                "start": 25,
+                "end": 28
+            },
+            {
+                "name": "ipv4_cidr2mask_net",
+                "start": 31,
+                "end": 34
+            },
+            {
+                "name": "ipv6_cidr2mask_host",
+                "start": 36,
+                "end": 49
+            },
+            {
+                "name": "ipv6_cidr2mask_net",
+                "start": 51,
+                "end": 58
+            },
+            {
+                "name": "ipv6_addr2addr_host",
+                "start": 62,
+                "end": 70
+            }
+        ],
+        "src/channel_tcp.c": [
+            {
+                "name": "channel_tcp_open",
+                "start": 18,
+                "end": 41
+            },
+            {
+                "name": "channel_tcp_send",
+                "start": 43,
+                "end": 48
+            },
+            {
+                "name": "channel_tcp_recv",
+                "start": 50,
+                "end": 55
+            },
+            {
+                "name": "channel_tcp_close",
+                "start": 57,
+                "end": 64
+            },
+            {
+                "name": "channel_tcp_get_fd",
+                "start": 66,
+                "end": 71
+            },
+            {
+                "name": "channel_tcp_stats",
+                "start": 73,
+                "end": 84
+            },
+            {
+                "name": "channel_tcp_stats_extended",
+                "start": 86,
+                "end": 115
+            },
+            {
+                "name": "channel_tcp_isset",
+                "start": 117,
+                "end": 122
+            },
+            {
+                "name": "channel_tcp_accept_isset",
+                "start": 124,
+                "end": 129
+            },
+            {
+                "name": "channel_tcp_accept",
+                "start": 131,
+                "end": 136
+            }
+        ],
+        "src/ctnl.c": [
+            {
+                "name": "ctnl_kill",
+                "start": 42,
+                "end": 59
+            },
+            {
+                "name": "local_flush_master",
+                "start": 61,
+                "end": 73
+            },
+            {
+                "name": "local_resync_master",
+                "start": 75,
+                "end": 84
+            },
+            {
+                "name": "local_exp_flush_master",
+                "start": 86,
+                "end": 101
+            },
+            {
+                "name": "local_exp_resync_master",
+                "start": 103,
+                "end": 115
+            },
+            {
+                "name": "ctnl_local",
+                "start": 117,
+                "end": 150
+            },
+            {
+                "name": "do_overrun_resync_alarm",
+                "start": 152,
+                "end": 156
+            },
+            {
+                "name": "do_polling_alarm",
+                "start": 158,
+                "end": 171
+            },
+            {
+                "name": "event_handler",
+                "start": 173,
+                "end": 212
+            },
+            {
+                "name": "exp_event_handler",
+                "start": 214,
+                "end": 255
+            },
+            {
+                "name": "dump_handler",
+                "start": 257,
+                "end": 273
+            },
+            {
+                "name": "exp_dump_handler",
+                "start": 275,
+                "end": 296
+            },
+            {
+                "name": "get_handler",
+                "start": 298,
+                "end": 307
+            },
+            {
+                "name": "exp_get_handler",
+                "start": 309,
+                "end": 323
+            },
+            {
+                "name": "event_cb",
+                "start": 326,
+                "end": 385
+            },
+            {
+                "name": "resync_cb",
+                "start": 388,
+                "end": 393
+            },
+            {
+                "name": "poll_cb",
+                "start": 395,
+                "end": 398
+            },
+            {
+                "name": "ctnl_init",
+                "start": 400,
+                "end": 524
+            }
+        ],
+        "src/cthelper.c": [
+            {
+                "name": "cthelper_kill",
+                "start": 51,
+                "end": 55
+            },
+            {
+                "name": "cthelper_local",
+                "start": 57,
+                "end": 61
+            },
+            {
+                "name": "nfq_hdr_put",
+                "start": 63,
+                "end": 76
+            },
+            {
+                "name": "pkt_get",
+                "start": 78,
+                "end": 155
+            },
+            {
+                "name": "pkt_verdict_issue",
+                "start": 157,
+                "end": 191
+            },
+            {
+                "name": "pkt_verdict_error",
+                "start": 193,
+                "end": 207
+            },
+            {
+                "name": "helper_run",
+                "start": 209,
+                "end": 238
+            },
+            {
+                "name": "nfq_queue_cb",
+                "start": 240,
+                "end": 339
+            },
+            {
+                "name": "nfq_cb",
+                "start": 341,
+                "end": 357
+            },
+            {
+                "name": "cthelper_setup",
+                "start": 359,
+                "end": 442
+            },
+            {
+                "name": "cthelper_nfqueue_setup",
+                "start": 444,
+                "end": 469
+            },
+            {
+                "name": "cthelper_configure",
+                "start": 471,
+                "end": 485
+            },
+            {
+                "name": "nfq_configure",
+                "start": 487,
+                "end": 509
+            },
+            {
+                "name": "cthelper_init",
+                "start": 511,
+                "end": 547
+            }
+        ],
+        "src/sync-ftfw.c": [
+            {
+                "name": "cache_ftfw_add",
+                "start": 62,
+                "end": 68
+            },
+            {
+                "name": "cache_ftfw_del",
+                "start": 70,
+                "end": 74
+            },
+            {
+                "name": "nethdr_set_hello",
+                "start": 82,
+                "end": 96
+            },
+            {
+                "name": "tx_queue_add_ctlmsg",
+                "start": 98,
+                "end": 115
+            },
+            {
+                "name": "tx_queue_add_ctlmsg2",
+                "start": 117,
+                "end": 132
+            },
+            {
+                "name": "do_alive_alarm",
+                "start": 135,
+                "end": 147
+            },
+            {
+                "name": "ftfw_init",
+                "start": 149,
+                "end": 164
+            },
+            {
+                "name": "ftfw_kill",
+                "start": 166,
+                "end": 169
+            },
+            {
+                "name": "do_cache_to_tx",
+                "start": 171,
+                "end": 184
+            },
+            {
+                "name": "rs_queue_dump",
+                "start": 186,
+                "end": 209
+            },
+            {
+                "name": "ftfw_local_queue",
+                "start": 211,
+                "end": 219
+            },
+            {
+                "name": "ftfw_local",
+                "start": 221,
+                "end": 243
+            },
+            {
+                "name": "rs_queue_to_tx",
+                "start": 245,
+                "end": 282
+            },
+            {
+                "name": "rs_queue_empty",
+                "start": 284,
+                "end": 328
+            },
+            {
+                "name": "digest_msg",
+                "start": 330,
+                "end": 365
+            },
+            {
+                "name": "digest_hello",
+                "start": 367,
+                "end": 382
+            },
+            {
+                "name": "ftfw_recv",
+                "start": 384,
+                "end": 457
+            },
+            {
+                "name": "rs_queue_purge_full",
+                "start": 459,
+                "end": 478
+            },
+            {
+                "name": "tx_queue_xmit",
+                "start": 480,
+                "end": 541
+            },
+            {
+                "name": "ftfw_xmit",
+                "start": 543,
+                "end": 549
+            },
+            {
+                "name": "ftfw_enqueue",
+                "start": 551,
+                "end": 561
+            }
+        ],
+        "src/hash.c": [
+            {
+                "name": "hashtable_create",
+                "start": 28,
+                "end": 54
+            },
+            {
+                "name": "hashtable_destroy",
+                "start": 56,
+                "end": 59
+            },
+            {
+                "name": "hashtable_hash",
+                "start": 61,
+                "end": 64
+            },
+            {
+                "name": "hashtable_find",
+                "start": 66,
+                "end": 80
+            },
+            {
+                "name": "hashtable_add",
+                "start": 82,
+                "end": 92
+            },
+            {
+                "name": "hashtable_del",
+                "start": 94,
+                "end": 98
+            },
+            {
+                "name": "hashtable_flush",
+                "start": 100,
+                "end": 113
+            },
+            {
+                "name": "hashtable_iterate_limit",
+                "start": 115,
+                "end": 132
+            },
+            {
+                "name": "hashtable_iterate",
+                "start": 134,
+                "end": 138
+            },
+            {
+                "name": "hashtable_counter",
+                "start": 140,
+                "end": 143
+            }
+        ],
+        "src/sync-mode.c": [
+            {
+                "name": "msg2ct_alloc",
+                "start": 44,
+                "end": 60
+            },
+            {
+                "name": "msg2exp_alloc",
+                "start": 62,
+                "end": 78
+            },
+            {
+                "name": "do_channel_handler_step",
+                "start": 80,
+                "end": 161
+            },
+            {
+                "name": "channel_stream",
+                "start": 166,
+                "end": 175
+            },
+            {
+                "name": "channel_handler_routine",
+                "start": 178,
+                "end": 250
+            },
+            {
+                "name": "channel_handler",
+                "start": 253,
+                "end": 263
+            },
+            {
+                "name": "interface_candidate",
+                "start": 266,
+                "end": 286
+            },
+            {
+                "name": "interface_handler",
+                "start": 288,
+                "end": 297
+            },
+            {
+                "name": "do_reset_cache_alarm",
+                "start": 299,
+                "end": 313
+            },
+            {
+                "name": "commit_cb",
+                "start": 315,
+                "end": 340
+            },
+            {
+                "name": "channel_accept_cb",
+                "start": 342,
+                "end": 352
+            },
+            {
+                "name": "tx_queue_cb",
+                "start": 354,
+                "end": 360
+            },
+            {
+                "name": "init_sync",
+                "start": 362,
+                "end": 478
+            },
+            {
+                "name": "kill_sync",
+                "start": 480,
+                "end": 499
+            },
+            {
+                "name": "dump_stats_sync",
+                "start": 501,
+                "end": 513
+            },
+            {
+                "name": "dump_stats_sync_extended",
+                "start": 515,
+                "end": 548
+            },
+            {
+                "name": "local_commit",
+                "start": 550,
+                "end": 569
+            },
+            {
+                "name": "local_handler_sync",
+                "start": 572,
+                "end": 748
+            }
+        ],
+        "src/stats-mode.c": [
+            {
+                "name": "init_stats",
+                "start": 32,
+                "end": 52
+            },
+            {
+                "name": "kill_stats",
+                "start": 54,
+                "end": 57
+            },
+            {
+                "name": "local_handler_stats",
+                "start": 60,
+                "end": 92
+            },
+            {
+                "name": "stats_populate",
+                "start": 94,
+                "end": 104
+            },
+            {
+                "name": "stats_resync",
+                "start": 106,
+                "end": 124
+            },
+            {
+                "name": "purge_step",
+                "start": 126,
+                "end": 139
+            },
+            {
+                "name": "stats_purge",
+                "start": 141,
+                "end": 144
+            },
+            {
+                "name": "stats_event_new",
+                "start": 146,
+                "end": 165
+            },
+            {
+                "name": "stats_event_upd",
+                "start": 167,
+                "end": 171
+            },
+            {
+                "name": "stats_event_del",
+                "start": 173,
+                "end": 188
+            }
+        ],
+        "src/queue.c": [
+            {
+                "name": "queue_create",
+                "start": 31,
+                "end": 56
+            },
+            {
+                "name": "queue_destroy",
+                "start": 58,
+                "end": 64
+            },
+            {
+                "name": "queue_stats_show",
+                "start": 66,
+                "end": 88
+            },
+            {
+                "name": "queue_node_init",
+                "start": 90,
+                "end": 94
+            },
+            {
+                "name": "queue_node_data",
+                "start": 96,
+                "end": 99
+            },
+            {
+                "name": "queue_object_new",
+                "start": 101,
+                "end": 114
+            },
+            {
+                "name": "queue_object_free",
+                "start": 116,
+                "end": 120
+            },
+            {
+                "name": "queue_add",
+                "start": 122,
+                "end": 138
+            },
+            {
+                "name": "queue_del",
+                "start": 140,
+                "end": 151
+            },
+            {
+                "name": "queue_del_head",
+                "start": 153,
+                "end": 158
+            },
+            {
+                "name": "queue_in",
+                "start": 160,
+                "end": 163
+            },
+            {
+                "name": "queue_get_eventfd",
+                "start": 165,
+                "end": 168
+            },
+            {
+                "name": "queue_iterate",
+                "start": 170,
+                "end": 182
+            },
+            {
+                "name": "queue_len",
+                "start": 184,
+                "end": 187
+            }
+        ],
+        "src/process.c": [
+            {
+                "name": "fork_process_new",
+                "start": 25,
+                "end": 53
+            },
+            {
+                "name": "fork_process_delete",
+                "start": 55,
+                "end": 70
+            },
+            {
+                "name": "fork_process_dump",
+                "start": 78,
+                "end": 93
+            }
+        ],
+        "src/filter.c": [
+            {
+                "name": "ct_filter_hash",
+                "start": 48,
+                "end": 53
+            },
+            {
+                "name": "ct_filter_hash6",
+                "start": 55,
+                "end": 58
+            },
+            {
+                "name": "ct_filter_compare",
+                "start": 60,
+                "end": 66
+            },
+            {
+                "name": "ct_filter_compare6",
+                "start": 68,
+                "end": 73
+            },
+            {
+                "name": "ct_filter_create",
+                "start": 75,
+                "end": 124
+            },
+            {
+                "name": "ct_filter_destroy",
+                "start": 126,
+                "end": 133
+            },
+            {
+                "name": "__filter_alloc",
+                "start": 136,
+                "end": 147
+            },
+            {
+                "name": "ct_filter_set_logic",
+                "start": 149,
+                "end": 155
+            },
+            {
+                "name": "ct_filter_add_ip",
+                "start": 157,
+                "end": 189
+            },
+            {
+                "name": "cmp_ipv4_addr",
+                "start": 191,
+                "end": 194
+            },
+            {
+                "name": "cmp_ipv6_addr",
+                "start": 196,
+                "end": 199
+            },
+            {
+                "name": "ct_filter_add_netmask",
+                "start": 201,
+                "end": 222
+            },
+            {
+                "name": "ct_filter_add_proto",
+                "start": 224,
+                "end": 229
+            },
+            {
+                "name": "ct_filter_add_state",
+                "start": 231,
+                "end": 236
+            },
+            {
+                "name": "__ct_filter_test_ipv4",
+                "start": 238,
+                "end": 253
+            },
+            {
+                "name": "__ct_filter_test_ipv6",
+                "start": 255,
+                "end": 269
+            },
+            {
+                "name": "__ct_filter_test_mask4",
+                "start": 271,
+                "end": 280
+            },
+            {
+                "name": "__ct_filter_test_mask6",
+                "start": 282,
+                "end": 297
+            },
+            {
+                "name": "__ct_filter_test_state",
+                "start": 299,
+                "end": 317
+            },
+            {
+                "name": "ct_filter_check",
+                "start": 319,
+                "end": 365
+            },
+            {
+                "name": "ct_filter_sanity_check",
+                "start": 367,
+                "end": 395
+            },
+            {
+                "name": "ct_filter_conntrack",
+                "start": 398,
+                "end": 408
+            },
+            {
+                "name": "ct_filter_master_sanity_check",
+                "start": 410,
+                "end": 442
+            },
+            {
+                "name": "ct_filter_master",
+                "start": 444,
+                "end": 453
+            },
+            {
+                "name": "exp_filter_create",
+                "start": 459,
+                "end": 469
+            },
+            {
+                "name": "exp_filter_alloc",
+                "start": 477,
+                "end": 487
+            },
+            {
+                "name": "exp_filter_add",
+                "start": 489,
+                "end": 510
+            },
+            {
+                "name": "exp_filter_find",
+                "start": 512,
+                "end": 540
+            }
+        ],
+        "src/event.c": [
+            {
+                "name": "create_evfd",
+                "start": 30,
+                "end": 45
+            },
+            {
+                "name": "destroy_evfd",
+                "start": 47,
+                "end": 52
+            },
+            {
+                "name": "get_read_evfd",
+                "start": 54,
+                "end": 57
+            },
+            {
+                "name": "write_evfd",
+                "start": 59,
+                "end": 68
+            },
+            {
+                "name": "read_evfd",
+                "start": 70,
+                "end": 77
+            }
+        ],
+        "src/stack.c": [
+            {
+                "name": "stack_item_alloc",
+                "start": 17,
+                "end": 30
+            },
+            {
+                "name": "stack_item_free",
+                "start": 32,
+                "end": 35
+            },
+            {
+                "name": "stack_item_push",
+                "start": 37,
+                "end": 40
+            },
+            {
+                "name": "stack_item_pop",
+                "start": 42,
+                "end": 56
+            }
+        ],
+        "src/multichannel.c": [
+            {
+                "name": "multichannel_open",
+                "start": 15,
+                "end": 49
+            },
+            {
+                "name": "multichannel_send",
+                "start": 51,
+                "end": 54
+            },
+            {
+                "name": "multichannel_send_flush",
+                "start": 56,
+                "end": 59
+            },
+            {
+                "name": "multichannel_recv",
+                "start": 61,
+                "end": 64
+            },
+            {
+                "name": "multichannel_close",
+                "start": 66,
+                "end": 74
+            },
+            {
+                "name": "multichannel_stats",
+                "start": 76,
+                "end": 79
+            },
+            {
+                "name": "multichannel_stats_extended",
+                "start": 81,
+                "end": 95
+            },
+            {
+                "name": "multichannel_get_ifindex",
+                "start": 97,
+                "end": 100
+            },
+            {
+                "name": "multichannel_get_current_ifindex",
+                "start": 102,
+                "end": 105
+            },
+            {
+                "name": "multichannel_set_current_channel",
+                "start": 107,
+                "end": 110
+            },
+            {
+                "name": "multichannel_change_current_channel",
+                "start": 112,
+                "end": 117
+            }
+        ],
+        "src/read_config_yy.c": [
+            {
+                "name": "yydestruct",
+                "start": 1755,
+                "end": 1777
+            },
+            {
+                "name": "yyparse",
+                "start": 1823,
+                "end": 4347
+            },
+            {
+                "name": "yyerror",
+                "start": 4355,
+                "end": 4362
+            },
+            {
+                "name": "print_err",
+                "start": 4364,
+                "end": 4382
+            },
+            {
+                "name": "__kernel_filter_start",
+                "start": 4384,
+                "end": 4393
+            },
+            {
+                "name": "__kernel_filter_add_state",
+                "start": 4395,
+                "end": 4406
+            },
+            {
+                "name": "__max_dedicated_links_reached",
+                "start": 4408,
+                "end": 4416
+            },
+            {
+                "name": "init_config",
+                "start": 4418,
+                "end": 4488
+            }
+        ],
+        "src/vector.c": [
+            {
+                "name": "vector_create",
+                "start": 34,
+                "end": 53
+            },
+            {
+                "name": "vector_destroy",
+                "start": 55,
+                "end": 59
+            },
+            {
+                "name": "vector_add",
+                "start": 61,
+                "end": 74
+            },
+            {
+                "name": "vector_iterate",
+                "start": 76,
+                "end": 88
+            }
+        ],
+        "src/cache.c": [
+            {
+                "name": "cache_create",
+                "start": 36,
+                "end": 114
+            },
+            {
+                "name": "cache_destroy",
+                "start": 116,
+                "end": 123
+            },
+            {
+                "name": "cache_object_new",
+                "start": 125,
+                "end": 149
+            },
+            {
+                "name": "cache_object_free",
+                "start": 151,
+                "end": 157
+            },
+            {
+                "name": "cache_object_put",
+                "start": 159,
+                "end": 167
+            },
+            {
+                "name": "cache_object_get",
+                "start": 169,
+                "end": 172
+            },
+            {
+                "name": "cache_object_set_status",
+                "start": 174,
+                "end": 181
+            },
+            {
+                "name": "__add",
+                "start": 183,
+                "end": 206
+            },
+            {
+                "name": "cache_add",
+                "start": 208,
+                "end": 221
+            },
+            {
+                "name": "cache_update",
+                "start": 223,
+                "end": 241
+            },
+            {
+                "name": "__del",
+                "start": 243,
+                "end": 257
+            },
+            {
+                "name": "cache_del",
+                "start": 259,
+                "end": 271
+            },
+            {
+                "name": "cache_update_force",
+                "start": 273,
+                "end": 298
+            },
+            {
+                "name": "cache_find",
+                "start": 300,
+                "end": 304
+            },
+            {
+                "name": "cache_get_extra",
+                "start": 306,
+                "end": 309
+            },
+            {
+                "name": "cache_stats",
+                "start": 311,
+                "end": 330
+            },
+            {
+                "name": "cache_stats_extended",
+                "start": 332,
+                "end": 361
+            },
+            {
+                "name": "cache_iterate",
+                "start": 363,
+                "end": 368
+            },
+            {
+                "name": "cache_iterate_limit",
+                "start": 370,
+                "end": 375
+            },
+            {
+                "name": "cache_dump",
+                "start": 377,
+                "end": 384
+            },
+            {
+                "name": "cache_commit",
+                "start": 386,
+                "end": 389
+            },
+            {
+                "name": "do_flush",
+                "start": 391,
+                "end": 399
+            },
+            {
+                "name": "cache_flush",
+                "start": 401,
+                "end": 405
+            }
+        ],
+        "src/read_config_lex.c": [
+            {
+                "name": "yylex",
+                "start": 2263,
+                "end": 3062
+            },
+            {
+                "name": "yy_get_next_buffer",
+                "start": 3071,
+                "end": 3201
+            },
+            {
+                "name": "yy_get_previous_state",
+                "start": 3205,
+                "end": 3230
+            },
+            {
+                "name": "yy_try_NUL_trans",
+                "start": 3237,
+                "end": 3258
+            },
+            {
+                "name": "yyrestart",
+                "start": 3344,
+                "end": 3355
+            },
+            {
+                "name": "yy_switch_to_buffer",
+                "start": 3361,
+                "end": 3390
+            },
+            {
+                "name": "yy_load_buffer_state",
+                "start": 3392,
+                "end": 3398
+            },
+            {
+                "name": "yy_create_buffer",
+                "start": 3406,
+                "end": 3428
+            },
+            {
+                "name": "yy_delete_buffer",
+                "start": 3434,
+                "end": 3447
+            },
+            {
+                "name": "yy_init_buffer",
+                "start": 3457,
+                "end": 3479
+            },
+            {
+                "name": "yy_flush_buffer",
+                "start": 3485,
+                "end": 3506
+            },
+            {
+                "name": "yypush_buffer_state",
+                "start": 3514,
+                "end": 3538
+            },
+            {
+                "name": "yypop_buffer_state",
+                "start": 3544,
+                "end": 3558
+            },
+            {
+                "name": "yyensure_buffer_stack",
+                "start": 3563,
+                "end": 3604
+            },
+            {
+                "name": "yy_scan_buffer",
+                "start": 3612,
+                "end": 3639
+            },
+            {
+                "name": "yy_scan_string",
+                "start": 3649,
+                "end": 3653
+            },
+            {
+                "name": "yy_scan_bytes",
+                "start": 3662,
+                "end": 3690
+            },
+            {
+                "name": "yy_fatal_error",
+                "start": 3696,
+                "end": 3700
+            },
+            {
+                "name": "yyget_lineno",
+                "start": 3724,
+                "end": 3728
+            },
+            {
+                "name": "yyget_in",
+                "start": 3733,
+                "end": 3736
+            },
+            {
+                "name": "yyget_out",
+                "start": 3741,
+                "end": 3744
+            },
+            {
+                "name": "yyget_leng",
+                "start": 3749,
+                "end": 3752
+            },
+            {
+                "name": "yyget_text",
+                "start": 3758,
+                "end": 3761
+            },
+            {
+                "name": "yyset_lineno",
+                "start": 3767,
+                "end": 3771
+            },
+            {
+                "name": "yyset_in",
+                "start": 3779,
+                "end": 3782
+            },
+            {
+                "name": "yyset_out",
+                "start": 3784,
+                "end": 3787
+            },
+            {
+                "name": "yyget_debug",
+                "start": 3789,
+                "end": 3792
+            },
+            {
+                "name": "yyset_debug",
+                "start": 3794,
+                "end": 3797
+            },
+            {
+                "name": "yy_init_globals",
+                "start": 3799,
+                "end": 3828
+            },
+            {
+                "name": "yylex_destroy",
+                "start": 3831,
+                "end": 3850
+            },
+            {
+                "name": "yyalloc",
+                "start": 3876,
+                "end": 3879
+            },
+            {
+                "name": "yyrealloc",
+                "start": 3881,
+                "end": 3891
+            },
+            {
+                "name": "yyfree",
+                "start": 3893,
+                "end": 3896
+            },
+            {
+                "name": "yywrap",
+                "start": 3904,
+                "end": 3908
+            }
+        ],
+        "src/conntrack.c": [
+            {
+                "name": "alloc_tmpl_objects",
+                "start": 87,
+                "end": 98
+            },
+            {
+                "name": "free_tmpl_objects",
+                "start": 100,
+                "end": 112
+            },
+            {
+                "name": "register_proto",
+                "start": 506,
+                "end": 514
+            },
+            {
+                "name": "findproto",
+                "start": 518,
+                "end": 551
+            },
+            {
+                "name": "extension_help",
+                "start": 553,
+                "end": 572
+            },
+            {
+                "name": "exit_tryhelp",
+                "start": 574,
+                "end": 580
+            },
+            {
+                "name": "free_options",
+                "start": 582,
+                "end": 589
+            },
+            {
+                "name": "exit_error",
+                "start": 591,
+                "end": 607
+            },
+            {
+                "name": "bit2cmd",
+                "start": 609,
+                "end": 618
+            },
+            {
+                "name": "generic_opt_check",
+                "start": 620,
+                "end": 667
+            },
+            {
+                "name": "merge_options",
+                "start": 669,
+                "end": 694
+            },
+            {
+                "name": "err2str",
+                "start": 700,
+                "end": 729
+            },
+            {
+                "name": "mark_cmp",
+                "start": 731,
+                "end": 735
+            },
+            {
+                "name": "do_parse_parameter",
+                "start": 772,
+                "end": 800
+            },
+            {
+                "name": "parse_parameter",
+                "start": 802,
+                "end": 817
+            },
+            {
+                "name": "parse_u32_mask",
+                "start": 819,
+                "end": 830
+            },
+            {
+                "name": "get_label",
+                "start": 832,
+                "end": 839
+            },
+            {
+                "name": "set_label",
+                "start": 841,
+                "end": 846
+            },
+            {
+                "name": "set_max_label",
+                "start": 848,
+                "end": 855
+            },
+            {
+                "name": "parse_label_get_max",
+                "start": 857,
+                "end": 871
+            },
+            {
+                "name": "parse_label",
+                "start": 873,
+                "end": 883
+            },
+            {
+                "name": "add_command",
+                "start": 885,
+                "end": 891
+            },
+            {
+                "name": "get_table",
+                "start": 893,
+                "end": 907
+            },
+            {
+                "name": "check_type",
+                "start": 916,
+                "end": 936
+            },
+            {
+                "name": "set_family",
+                "start": 938,
+                "end": 944
+            },
+            {
+                "name": "parse_inetaddr",
+                "start": 952,
+                "end": 962
+            },
+            {
+                "name": "parse_addr",
+                "start": 969,
+                "end": 981
+            },
+            {
+                "name": "nat_parse",
+                "start": 983,
+                "end": 1035
+            },
+            {
+                "name": "usage",
+                "start": 1037,
+                "end": 1049
+            },
+            {
+                "name": "filter_label",
+                "start": 1053,
+                "end": 1070
+            },
+            {
+                "name": "filter_mark",
+                "start": 1072,
+                "end": 1079
+            },
+            {
+                "name": "filter_nat",
+                "start": 1081,
+                "end": 1163
+            },
+            {
+                "name": "event_sighandler",
+                "start": 1168,
+                "end": 1180
+            },
+            {
+                "name": "exp_event_sighandler",
+                "start": 1182,
+                "end": 1194
+            },
+            {
+                "name": "event_cb",
+                "start": 1196,
+                "end": 1249
+            },
+            {
+                "name": "dump_cb",
+                "start": 1251,
+                "end": 1294
+            },
+            {
+                "name": "delete_cb",
+                "start": 1296,
+                "end": 1335
+            },
+            {
+                "name": "print_cb",
+                "start": 1337,
+                "end": 1356
+            },
+            {
+                "name": "copy_mark",
+                "start": 1358,
+                "end": 1367
+            },
+            {
+                "name": "copy_status",
+                "start": 1369,
+                "end": 1377
+            },
+            {
+                "name": "update_cb",
+                "start": 1379,
+                "end": 1440
+            },
+            {
+                "name": "dump_exp_cb",
+                "start": 1442,
+                "end": 1472
+            },
+            {
+                "name": "event_exp_cb",
+                "start": 1474,
+                "end": 1504
+            },
+            {
+                "name": "count_exp_cb",
+                "start": 1506,
+                "end": 1512
+            },
+            {
+                "name": "display_proc_conntrack_stats",
+                "start": 1528,
+                "end": 1580
+            },
+            {
+                "name": "nfct_mnl_socket_open",
+                "start": 1587,
+                "end": 1601
+            },
+            {
+                "name": "nfct_mnl_nlmsghdr_put",
+                "start": 1603,
+                "end": 1620
+            },
+            {
+                "name": "nfct_mnl_socket_close",
+                "start": 1622,
+                "end": 1625
+            },
+            {
+                "name": "nfct_mnl_dump",
+                "start": 1627,
+                "end": 1651
+            },
+            {
+                "name": "nfct_mnl_get",
+                "start": 1653,
+                "end": 1671
+            },
+            {
+                "name": "nfct_stats_attr_cb",
+                "start": 1673,
+                "end": 1688
+            },
+            {
+                "name": "nfct_stats_cb",
+                "start": 1690,
+                "end": 1723
+            },
+            {
+                "name": "nfexp_stats_attr_cb",
+                "start": 1725,
+                "end": 1740
+            },
+            {
+                "name": "nfexp_stats_cb",
+                "start": 1742,
+                "end": 1765
+            },
+            {
+                "name": "nfct_stats_global_attr_cb",
+                "start": 1767,
+                "end": 1782
+            },
+            {
+                "name": "nfct_global_stats_cb",
+                "start": 1784,
+                "end": 1796
+            },
+            {
+                "name": "mnl_nfct_dump_cb",
+                "start": 1798,
+                "end": 1817
+            },
+            {
+                "name": "main",
+                "start": 1821,
+                "end": 2497
+            }
+        ],
+        "src/cache-exp.c": [
+            {
+                "name": "cache_hash4_exp",
+                "start": 34,
+                "end": 54
+            },
+            {
+                "name": "cache_hash6_exp",
+                "start": 56,
+                "end": 69
+            },
+            {
+                "name": "cache_exp_hash",
+                "start": 71,
+                "end": 90
+            },
+            {
+                "name": "cache_exp_cmp",
+                "start": 92,
+                "end": 98
+            },
+            {
+                "name": "cache_exp_alloc",
+                "start": 100,
+                "end": 103
+            },
+            {
+                "name": "cache_exp_free",
+                "start": 105,
+                "end": 108
+            },
+            {
+                "name": "cache_exp_copy",
+                "start": 110,
+                "end": 114
+            },
+            {
+                "name": "cache_exp_dump_step",
+                "start": 116,
+                "end": 166
+            },
+            {
+                "name": "cache_exp_commit_step",
+                "start": 168,
+                "end": 216
+            },
+            {
+                "name": "cache_exp_commit",
+                "start": 218,
+                "end": 278
+            },
+            {
+                "name": "cache_exp_build_msg",
+                "start": 280,
+                "end": 284
+            }
+        ],
+        "src/cache_timer.c": [
+            {
+                "name": "timeout",
+                "start": 25,
+                "end": 31
+            },
+            {
+                "name": "timer_add",
+                "start": 33,
+                "end": 39
+            },
+            {
+                "name": "timer_update",
+                "start": 41,
+                "end": 45
+            },
+            {
+                "name": "timer_destroy",
+                "start": 47,
+                "end": 51
+            },
+            {
+                "name": "timer_dump",
+                "start": 53,
+                "end": 67
+            }
+        ],
+        "src/date.c": [
+            {
+                "name": "do_gettimeofday",
+                "start": 15,
+                "end": 18
+            },
+            {
+                "name": "gettimeofday_cached",
+                "start": 20,
+                "end": 23
+            },
+            {
+                "name": "time_cached",
+                "start": 25,
+                "end": 28
+            }
+        ],
+        "src/origin.c": [
+            {
+                "name": "origin_register",
+                "start": 30,
+                "end": 43
+            },
+            {
+                "name": "origin_find",
+                "start": 46,
+                "end": 56
+            },
+            {
+                "name": "origin_unregister",
+                "start": 58,
+                "end": 70
+            }
+        ],
+        "src/helpers.c": [
+            {
+                "name": "helper_register",
+                "start": 24,
+                "end": 27
+            },
+            {
+                "name": "__helper_find",
+                "start": 29,
+                "end": 45
+            },
+            {
+                "name": "helper_find",
+                "start": 47,
+                "end": 76
+            }
+        ],
+        "src/traffic_stats.c": [
+            {
+                "name": "update_traffic_stats",
+                "start": 22,
+                "end": 32
+            },
+            {
+                "name": "dump_traffic_stats",
+                "start": 34,
+                "end": 47
+            }
+        ],
+        "src/nfct.c": [
+            {
+                "name": "usage",
+                "start": 33,
+                "end": 37
+            },
+            {
+                "name": "nfct_perror",
+                "start": 39,
+                "end": 47
+            },
+            {
+                "name": "main",
+                "start": 49,
+                "end": 87
+            },
+            {
+                "name": "nfct_cmd_version",
+                "start": 97,
+                "end": 101
+            },
+            {
+                "name": "nfct_cmd_help",
+                "start": 118,
+                "end": 122
+            }
+        ],
+        "src/fds.c": [
+            {
+                "name": "create_fds",
+                "start": 29,
+                "end": 40
+            },
+            {
+                "name": "destroy_fds",
+                "start": 42,
+                "end": 52
+            },
+            {
+                "name": "register_fd",
+                "start": 54,
+                "end": 74
+            },
+            {
+                "name": "unregister_fd",
+                "start": 76,
+                "end": 103
+            },
+            {
+                "name": "select_main_step",
+                "start": 105,
+                "end": 130
+            },
+            {
+                "name": "select_main_loop",
+                "start": 132,
+                "end": 149
+            }
+        ],
+        "src/rbtree.c": [
+            {
+                "name": "__rb_rotate_left",
+                "start": 25,
+                "end": 46
+            },
+            {
+                "name": "__rb_rotate_right",
+                "start": 48,
+                "end": 69
+            },
+            {
+                "name": "rb_insert_color",
+                "start": 71,
+                "end": 134
+            },
+            {
+                "name": "__rb_erase_color",
+                "start": 136,
+                "end": 220
+            },
+            {
+                "name": "rb_erase",
+                "start": 222,
+                "end": 287
+            },
+            {
+                "name": "rb_first",
+                "start": 292,
+                "end": 302
+            },
+            {
+                "name": "rb_last",
+                "start": 304,
+                "end": 314
+            },
+            {
+                "name": "rb_next",
+                "start": 316,
+                "end": 342
+            },
+            {
+                "name": "rb_prev",
+                "start": 344,
+                "end": 366
+            },
+            {
+                "name": "rb_replace_node",
+                "start": 368,
+                "end": 389
+            }
+        ],
+        "src/mcast.c": [
+            {
+                "name": "mcast_server_create",
+                "start": 34,
+                "end": 129
+            },
+            {
+                "name": "mcast_server_destroy",
+                "start": 131,
+                "end": 135
+            },
+            {
+                "name": "__mcast_client_create_ipv4",
+                "start": 137,
+                "end": 161
+            },
+            {
+                "name": "__mcast_client_create_ipv6",
+                "start": 163,
+                "end": 189
+            },
+            {
+                "name": "mcast_client_create",
+                "start": 191,
+                "end": 250
+            },
+            {
+                "name": "mcast_client_destroy",
+                "start": 252,
+                "end": 256
+            },
+            {
+                "name": "mcast_send",
+                "start": 258,
+                "end": 277
+            },
+            {
+                "name": "mcast_recv",
+                "start": 279,
+                "end": 300
+            },
+            {
+                "name": "mcast_get_fd",
+                "start": 302,
+                "end": 305
+            },
+            {
+                "name": "mcast_isset",
+                "start": 307,
+                "end": 310
+            },
+            {
+                "name": "mcast_snprintf_stats",
+                "start": 312,
+                "end": 333
+            },
+            {
+                "name": "mcast_snprintf_stats2",
+                "start": 335,
+                "end": 358
+            }
+        ],
+        "src/alarm.c": [
+            {
+                "name": "init_alarm",
+                "start": 26,
+                "end": 35
+            },
+            {
+                "name": "__add_alarm",
+                "start": 37,
+                "end": 56
+            },
+            {
+                "name": "add_alarm",
+                "start": 58,
+                "end": 68
+            },
+            {
+                "name": "del_alarm",
+                "start": 70,
+                "end": 77
+            },
+            {
+                "name": "alarm_pending",
+                "start": 79,
+                "end": 85
+            },
+            {
+                "name": "calculate_next_run",
+                "start": 87,
+                "end": 103
+            },
+            {
+                "name": "get_next_alarm_run",
+                "start": 105,
+                "end": 120
+            },
+            {
+                "name": "do_alarm_run",
+                "start": 122,
+                "end": 150
+            }
+        ],
+        "src/build.c": [
+            {
+                "name": "put_header",
+                "start": 25,
+                "end": 36
+            },
+            {
+                "name": "addattr",
+                "start": 38,
+                "end": 43
+            },
+            {
+                "name": "ct_build_u8",
+                "start": 45,
+                "end": 50
+            },
+            {
+                "name": "ct_build_u16",
+                "start": 52,
+                "end": 58
+            },
+            {
+                "name": "ct_build_u32",
+                "start": 60,
+                "end": 66
+            },
+            {
+                "name": "ct_build_str",
+                "start": 68,
+                "end": 73
+            },
+            {
+                "name": "ct_build_group",
+                "start": 75,
+                "end": 81
+            },
+            {
+                "name": "ct_build_natseqadj",
+                "start": 83,
+                "end": 101
+            },
+            {
+                "name": "build_l4proto_tcp",
+                "start": 109,
+                "end": 121
+            },
+            {
+                "name": "build_l4proto_sctp",
+                "start": 123,
+                "end": 134
+            },
+            {
+                "name": "build_l4proto_dccp",
+                "start": 136,
+                "end": 146
+            },
+            {
+                "name": "build_l4proto_icmp",
+                "start": 148,
+                "end": 157
+            },
+            {
+                "name": "build_l4proto_udp",
+                "start": 159,
+                "end": 163
+            },
+            {
+                "name": "ct_build_clabel",
+                "start": 165,
+                "end": 199
+            },
+            {
+                "name": "ct2msg",
+                "start": 216,
+                "end": 279
+            },
+            {
+                "name": "exp_build_l4proto_tcp",
+                "start": 281,
+                "end": 286
+            },
+            {
+                "name": "exp_build_l4proto_sctp",
+                "start": 288,
+                "end": 293
+            },
+            {
+                "name": "exp_build_l4proto_dccp",
+                "start": 295,
+                "end": 300
+            },
+            {
+                "name": "exp_build_l4proto_udp",
+                "start": 302,
+                "end": 307
+            },
+            {
+                "name": "exp_build_u32",
+                "start": 318,
+                "end": 324
+            },
+            {
+                "name": "exp_build_str",
+                "start": 326,
+                "end": 331
+            },
+            {
+                "name": "exp2msg",
+                "start": 333,
+                "end": 406
+            }
+        ],
+        "src/parse.c": [
+            {
+                "name": "ct_parse_str",
+                "start": 32,
+                "end": 33
+            },
+            {
+                "name": "ct_parse_clabel",
+                "start": 36,
+                "end": 37
+            },
+            {
+                "name": "ct_parse_u8",
+                "start": 194,
+                "end": 199
+            },
+            {
+                "name": "ct_parse_u16",
+                "start": 201,
+                "end": 206
+            },
+            {
+                "name": "ct_parse_u32",
+                "start": 208,
+                "end": 213
+            },
+            {
+                "name": "ct_parse_str",
+                "start": 215,
+                "end": 219
+            },
+            {
+                "name": "ct_parse_group",
+                "start": 221,
+                "end": 225
+            },
+            {
+                "name": "ct_parse_clabel",
+                "start": 227,
+                "end": 263
+            },
+            {
+                "name": "ct_parse_nat_seq_adj",
+                "start": 265,
+                "end": 281
+            },
+            {
+                "name": "msg2ct",
+                "start": 283,
+                "end": 323
+            },
+            {
+                "name": "exp_parse_ct_group",
+                "start": 459,
+                "end": 462
+            },
+            {
+                "name": "exp_parse_ct_u8",
+                "start": 464,
+                "end": 468
+            },
+            {
+                "name": "exp_parse_u32",
+                "start": 470,
+                "end": 474
+            },
+            {
+                "name": "exp_parse_str",
+                "start": 476,
+                "end": 479
+            },
+            {
+                "name": "msg2exp",
+                "start": 481,
+                "end": 582
+            }
+        ],
+        "src/network.c": [
+            {
+                "name": "nethdr_align",
+                "start": 32,
+                "end": 35
+            },
+            {
+                "name": "nethdr_size",
+                "start": 37,
+                "end": 40
+            },
+            {
+                "name": "__nethdr_set",
+                "start": 42,
+                "end": 51
+            },
+            {
+                "name": "nethdr_set",
+                "start": 53,
+                "end": 57
+            },
+            {
+                "name": "nethdr_set_ack",
+                "start": 59,
+                "end": 62
+            },
+            {
+                "name": "nethdr_set_ctl",
+                "start": 64,
+                "end": 67
+            },
+            {
+                "name": "nethdr_track_seq",
+                "start": 72,
+                "end": 106
+            },
+            {
+                "name": "nethdr_track_update_seq",
+                "start": 108,
+                "end": 114
+            },
+            {
+                "name": "nethdr_track_is_seq_set",
+                "start": 116,
+                "end": 119
+            },
+            {
+                "name": "object_status_to_network_type",
+                "start": 136,
+                "end": 139
+            }
+        ],
+        "src/internal_cache.c": [
+            {
+                "name": "sync_send",
+                "start": 18,
+                "end": 21
+            },
+            {
+                "name": "internal_cache_init",
+                "start": 23,
+                "end": 48
+            },
+            {
+                "name": "internal_cache_close",
+                "start": 50,
+                "end": 54
+            },
+            {
+                "name": "internal_cache_ct_dump",
+                "start": 56,
+                "end": 59
+            },
+            {
+                "name": "internal_cache_ct_flush",
+                "start": 61,
+                "end": 64
+            },
+            {
+                "name": "internal_cache_ct_stats",
+                "start": 66,
+                "end": 69
+            },
+            {
+                "name": "internal_cache_ct_stats_ext",
+                "start": 71,
+                "end": 74
+            },
+            {
+                "name": "internal_cache_ct_populate",
+                "start": 76,
+                "end": 86
+            },
+            {
+                "name": "internal_cache_ct_purge_step",
+                "start": 88,
+                "end": 103
+            },
+            {
+                "name": "internal_cache_ct_purge",
+                "start": 105,
+                "end": 109
+            },
+            {
+                "name": "internal_cache_ct_resync",
+                "start": 111,
+                "end": 140
+            },
+            {
+                "name": "internal_cache_ct_event_new",
+                "start": 142,
+                "end": 177
+            },
+            {
+                "name": "internal_cache_ct_event_upd",
+                "start": 179,
+                "end": 193
+            },
+            {
+                "name": "internal_cache_ct_event_del",
+                "start": 195,
+                "end": 217
+            },
+            {
+                "name": "internal_cache_exp_dump",
+                "start": 219,
+                "end": 222
+            },
+            {
+                "name": "internal_cache_exp_flush",
+                "start": 224,
+                "end": 227
+            },
+            {
+                "name": "internal_cache_exp_stats",
+                "start": 229,
+                "end": 232
+            },
+            {
+                "name": "internal_cache_exp_stats_ext",
+                "start": 234,
+                "end": 237
+            },
+            {
+                "name": "internal_cache_exp_populate",
+                "start": 239,
+                "end": 242
+            },
+            {
+                "name": "internal_cache_exp_purge_step",
+                "start": 244,
+                "end": 259
+            },
+            {
+                "name": "internal_cache_exp_purge",
+                "start": 261,
+                "end": 265
+            },
+            {
+                "name": "internal_cache_exp_resync",
+                "start": 267,
+                "end": 294
+            },
+            {
+                "name": "internal_cache_exp_event_new",
+                "start": 296,
+                "end": 325
+            },
+            {
+                "name": "internal_cache_exp_event_upd",
+                "start": 327,
+                "end": 341
+            },
+            {
+                "name": "internal_cache_exp_event_del",
+                "start": 343,
+                "end": 365
+            },
+            {
+                "name": "internal_cache_exp_master_find",
+                "start": 367,
+                "end": 375
+            }
+        ],
+        "src/cache-ct.c": [
+            {
+                "name": "cache_hash4_ct",
+                "start": 34,
+                "end": 54
+            },
+            {
+                "name": "cache_hash6_ct",
+                "start": 56,
+                "end": 69
+            },
+            {
+                "name": "cache_ct_hash",
+                "start": 71,
+                "end": 89
+            },
+            {
+                "name": "cache_ct_cmp_id",
+                "start": 92,
+                "end": 97
+            },
+            {
+                "name": "cache_ct_cmp",
+                "start": 99,
+                "end": 106
+            },
+            {
+                "name": "cache_ct_alloc",
+                "start": 108,
+                "end": 111
+            },
+            {
+                "name": "cache_ct_free",
+                "start": 113,
+                "end": 116
+            },
+            {
+                "name": "cache_ct_copy",
+                "start": 118,
+                "end": 121
+            },
+            {
+                "name": "cache_ct_dump_step",
+                "start": 123,
+                "end": 178
+            },
+            {
+                "name": "cache_ct_commit_step",
+                "start": 180,
+                "end": 225
+            },
+            {
+                "name": "cache_ct_commit_related",
+                "start": 227,
+                "end": 236
+            },
+            {
+                "name": "cache_ct_commit_master",
+                "start": 238,
+                "end": 247
+            },
+            {
+                "name": "cache_ct_commit",
+                "start": 249,
+                "end": 321
+            },
+            {
+                "name": "cache_ct_build_msg",
+                "start": 323,
+                "end": 327
+            }
+        ],
+        "src/run.c": [
+            {
+                "name": "killer",
+                "start": 43,
+                "end": 67
+            },
+            {
+                "name": "child",
+                "start": 69,
+                "end": 112
+            },
+            {
+                "name": "uptime",
+                "start": 114,
+                "end": 135
+            },
+            {
+                "name": "dump_stats_runtime",
+                "start": 137,
+                "end": 182
+            },
+            {
+                "name": "local_handler",
+                "start": 184,
+                "end": 212
+            },
+            {
+                "name": "local_cb",
+                "start": 215,
+                "end": 218
+            },
+            {
+                "name": "init",
+                "start": 220,
+                "end": 272
+            }
+        ],
+        "src/main.c": [
+            {
+                "name": "show_usage",
+                "start": 64,
+                "end": 72
+            },
+            {
+                "name": "show_version",
+                "start": 74,
+                "end": 81
+            },
+            {
+                "name": "set_operation_mode",
+                "start": 83,
+                "end": 95
+            },
+            {
+                "name": "set_action_by_table",
+                "start": 97,
+                "end": 114
+            },
+            {
+                "name": "set_nice_value",
+                "start": 116,
+                "end": 123
+            },
+            {
+                "name": "do_chdir",
+                "start": 125,
+                "end": 131
+            },
+            {
+                "name": "main",
+                "start": 133,
+                "end": 430
+            }
+        ],
+        "src/log.c": [
+            {
+                "name": "init_log",
+                "start": 30,
+                "end": 61
+            },
+            {
+                "name": "dlog",
+                "start": 63,
+                "end": 105
+            },
+            {
+                "name": "dlog_ct",
+                "start": 107,
+                "end": 146
+            },
+            {
+                "name": "dlog_exp",
+                "start": 148,
+                "end": 183
+            },
+            {
+                "name": "close_log",
+                "start": 185,
+                "end": 196
+            }
+        ],
+        "src/netlink.c": [
+            {
+                "name": "nl_init_event_handler",
+                "start": 32,
+                "end": 96
+            },
+            {
+                "name": "nl_init_interface_handler",
+                "start": 98,
+                "end": 112
+            },
+            {
+                "name": "nl_resize_socket_buffer",
+                "start": 116,
+                "end": 147
+            },
+            {
+                "name": "nl_dump_conntrack_table",
+                "start": 151,
+                "end": 154
+            },
+            {
+                "name": "nl_flush_selective_cb",
+                "start": 156,
+                "end": 173
+            },
+            {
+                "name": "nl_flush_conntrack_table_selective",
+                "start": 175,
+                "end": 192
+            },
+            {
+                "name": "nl_send_resync",
+                "start": 194,
+                "end": 197
+            },
+            {
+                "name": "nl_get_conntrack",
+                "start": 200,
+                "end": 217
+            },
+            {
+                "name": "nl_create_conntrack",
+                "start": 219,
+                "end": 266
+            },
+            {
+                "name": "nl_update_conntrack",
+                "start": 268,
+                "end": 333
+            },
+            {
+                "name": "nl_destroy_conntrack",
+                "start": 335,
+                "end": 338
+            },
+            {
+                "name": "nl_create_expect",
+                "start": 340,
+                "end": 357
+            },
+            {
+                "name": "nl_destroy_expect",
+                "start": 359,
+                "end": 362
+            },
+            {
+                "name": "nl_get_expect",
+                "start": 365,
+                "end": 380
+            },
+            {
+                "name": "nl_dump_expect_table",
+                "start": 382,
+                "end": 385
+            },
+            {
+                "name": "nl_flush_expect_table",
+                "start": 387,
+                "end": 390
+            },
+            {
+                "name": "nl_send_expect_resync",
+                "start": 392,
+                "end": 395
+            }
+        ],
+        "src/helpers/ftp.c": [
+            {
+                "name": "get_ipv6_addr",
+                "start": 60,
+                "end": 69
+            },
+            {
+                "name": "try_number",
+                "start": 71,
+                "end": 99
+            },
+            {
+                "name": "get_port",
+                "start": 102,
+                "end": 125
+            },
+            {
+                "name": "try_rfc959",
+                "start": 128,
+                "end": 142
+            },
+            {
+                "name": "try_eprt",
+                "start": 145,
+                "end": 189
+            },
+            {
+                "name": "try_epsv_response",
+                "start": 192,
+                "end": 206
+            },
+            {
+                "name": "ftp_find_pattern",
+                "start": 254,
+                "end": 297
+            },
+            {
+                "name": "find_nl_seq",
+                "start": 300,
+                "end": 308
+            },
+            {
+                "name": "update_nl_seq",
+                "start": 311,
+                "end": 332
+            },
+            {
+                "name": "nf_nat_ftp_fmt_cmd",
+                "start": 334,
+                "end": 360
+            },
+            {
+                "name": "nf_nat_ftp",
+                "start": 364,
+                "end": 439
+            },
+            {
+                "name": "ftp_helper_cb",
+                "start": 441,
+                "end": 583
+            },
+            {
+                "name": "ftp_init",
+                "start": 601,
+                "end": 604
+            }
+        ],
+        "src/helpers/rpc.c": [
+            {
+                "name": "nf_nat_rpc",
+                "start": 58,
+                "end": 110
+            },
+            {
+                "name": "rpc_call",
+                "start": 115,
+                "end": 240
+            },
+            {
+                "name": "rpc_reply",
+                "start": 242,
+                "end": 324
+            },
+            {
+                "name": "rpc_helper_cb",
+                "start": 326,
+                "end": 452
+            },
+            {
+                "name": "rpc_init",
+                "start": 484,
+                "end": 488
+            }
+        ],
+        "src/helpers/tns.c": [
+            {
+                "name": "try_number",
+                "start": 64,
+                "end": 95
+            },
+            {
+                "name": "get_port",
+                "start": 98,
+                "end": 123
+            },
+            {
+                "name": "find_pattern",
+                "start": 129,
+                "end": 178
+            },
+            {
+                "name": "nton",
+                "start": 180,
+                "end": 186
+            },
+            {
+                "name": "nf_nat_tns",
+                "start": 190,
+                "end": 278
+            },
+            {
+                "name": "tns_helper_cb",
+                "start": 280,
+                "end": 386
+            },
+            {
+                "name": "tns_init",
+                "start": 404,
+                "end": 407
+            }
+        ],
+        "src/nfct-extensions/helper.c": [
+            {
+                "name": "nfct_cmd_helper_usage",
+                "start": 32,
+                "end": 38
+            },
+            {
+                "name": "nfct_cmd_helper_parse_params",
+                "start": 40,
+                "end": 91
+            },
+            {
+                "name": "nfct_helper_cb",
+                "start": 93,
+                "end": 116
+            },
+            {
+                "name": "nfct_cmd_helper_list",
+                "start": 118,
+                "end": 166
+            },
+            {
+                "name": "nfct_cmd_helper_add",
+                "start": 168,
+                "end": 282
+            },
+            {
+                "name": "nfct_cmd_helper_delete",
+                "start": 284,
+                "end": 376
+            },
+            {
+                "name": "nfct_cmd_helper_get",
+                "start": 378,
+                "end": 469
+            },
+            {
+                "name": "nfct_cmd_helper_flush",
+                "start": 471,
+                "end": 520
+            },
+            {
+                "name": "nfct_cmd_helper_disable",
+                "start": 522,
+                "end": 614
+            }
+        ],
+        "src/nfct-extensions/timeout.c": [
+            {
+                "name": "nfct_cmd_timeout_usage",
+                "start": 30,
+                "end": 36
+            },
+            {
+                "name": "nfct_cmd_timeout_parse_params",
+                "start": 38,
+                "end": 81
+            },
+            {
+                "name": "nfct_timeout_cb",
+                "start": 83,
+                "end": 106
+            },
+            {
+                "name": "nfct_cmd_timeout_list",
+                "start": 108,
+                "end": 156
+            },
+            {
+                "name": "nfct_cmd_timeout_add",
+                "start": 170,
+                "end": 304
+            },
+            {
+                "name": "nfct_cmd_timeout_delete",
+                "start": 306,
+                "end": 370
+            },
+            {
+                "name": "nfct_cmd_timeout_get",
+                "start": 372,
+                "end": 435
+            },
+            {
+                "name": "nfct_cmd_timeout_flush",
+                "start": 437,
+                "end": 486
+            }
+        ]
+    }
+}

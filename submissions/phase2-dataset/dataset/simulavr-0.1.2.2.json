@@ -1,0 +1,3762 @@
+{
+    "simulavr-0.1.2.2": {
+        "src/gdbserver.c": [
+            {
+                "name": "gdb_read_byte",
+                "start": 122,
+                "end": 152
+            },
+            {
+                "name": "hex2nib",
+                "start": 156,
+                "end": 172
+            },
+            {
+                "name": "gdb_write",
+                "start": 177,
+                "end": 194
+            },
+            {
+                "name": "gdb_last_reply",
+                "start": 200,
+                "end": 217
+            },
+            {
+                "name": "gdb_send_ack",
+                "start": 221,
+                "end": 228
+            },
+            {
+                "name": "gdb_send_reply",
+                "start": 232,
+                "end": 284
+            },
+            {
+                "name": "gdb_read_registers",
+                "start": 292,
+                "end": 351
+            },
+            {
+                "name": "gdb_write_registers",
+                "start": 356,
+                "end": 405
+            },
+            {
+                "name": "gdb_extract_hex_num",
+                "start": 415,
+                "end": 436
+            },
+            {
+                "name": "gdb_read_register",
+                "start": 441,
+                "end": 483
+            },
+            {
+                "name": "gdb_write_register",
+                "start": 489,
+                "end": 551
+            },
+            {
+                "name": "gdb_get_addr_len",
+                "start": 558,
+                "end": 580
+            },
+            {
+                "name": "gdb_read_memory",
+                "start": 582,
+                "end": 687
+            },
+            {
+                "name": "gdb_write_memory",
+                "start": 689,
+                "end": 796
+            },
+            {
+                "name": "gdb_break_point",
+                "start": 818,
+                "end": 857
+            },
+            {
+                "name": "gdb_fetch_io_registers",
+                "start": 868,
+                "end": 914
+            },
+            {
+                "name": "gdb_query_request",
+                "start": 919,
+                "end": 936
+            },
+            {
+                "name": "gdb_continue",
+                "start": 943,
+                "end": 1028
+            },
+            {
+                "name": "gdb_continue_with_signal",
+                "start": 1037,
+                "end": 1097
+            },
+            {
+                "name": "gdb_parse_packet",
+                "start": 1103,
+                "end": 1169
+            },
+            {
+                "name": "gdb_set_blocking_mode",
+                "start": 1171,
+                "end": 1186
+            },
+            {
+                "name": "gdb_pre_parse_packet",
+                "start": 1194,
+                "end": 1280
+            },
+            {
+                "name": "gdb_main_loop",
+                "start": 1282,
+                "end": 1306
+            },
+            {
+                "name": "gdb_interact",
+                "start": 1319,
+                "end": 1420
+            }
+        ],
+        "src/avrclass.h": [
+            {
+                "name": "class_overload_destroy",
+                "start": 48,
+                "end": 49
+            }
+        ],
+        "src/utils.h": [
+            {
+                "name": "set_bit_in_byte",
+                "start": 50,
+                "end": 54
+            },
+            {
+                "name": "set_bit_in_word",
+                "start": 56,
+                "end": 60
+            },
+            {
+                "name": "dlist_iterator",
+                "start": 87,
+                "end": 88
+            }
+        ],
+        "src/callback.h": [
+            {
+                "name": "callback_construct",
+                "start": 51,
+                "end": 52
+            }
+        ],
+        "src/storage.h": [
+            {
+                "name": "storage_readb",
+                "start": 49,
+                "end": 61
+            },
+            {
+                "name": "storage_readw",
+                "start": 63,
+                "end": 79
+            }
+        ],
+        "src/flash.h": [
+            {
+                "name": "flash_read",
+                "start": 49,
+                "end": 53
+            }
+        ],
+        "src/vdevs.h": [
+            {
+                "name": "vdev_new",
+                "start": 58,
+                "end": 59
+            },
+            {
+                "name": "vdev_construct",
+                "start": 60,
+                "end": 61
+            },
+            {
+                "name": "vdev_get_core",
+                "start": 73,
+                "end": 76
+            },
+            {
+                "name": "vdev_add_addr",
+                "start": 78,
+                "end": 79
+            },
+            {
+                "name": "vdev_def_AddAddr",
+                "start": 80,
+                "end": 81
+            }
+        ],
+        "src/memory.h": [
+            {
+                "name": "mem_new",
+                "start": 64,
+                "end": 65
+            },
+            {
+                "name": "mem_construct",
+                "start": 66,
+                "end": 67
+            },
+            {
+                "name": "mem_attach",
+                "start": 70,
+                "end": 72
+            },
+            {
+                "name": "mem_io_fetch",
+                "start": 82,
+                "end": 83
+            }
+        ],
+        "src/stack.h": [
+            {
+                "name": "stack_construct",
+                "start": 57,
+                "end": 58
+            }
+        ],
+        "src/display.h": [
+            {
+                "name": "display_open",
+                "start": 29,
+                "end": 30
+            }
+        ],
+        "src/register.h": [
+            {
+                "name": "sreg_get",
+                "start": 87,
+                "end": 91
+            },
+            {
+                "name": "sreg_set",
+                "start": 93,
+                "end": 98
+            },
+            {
+                "name": "sreg_get_bit",
+                "start": 100,
+                "end": 104
+            },
+            {
+                "name": "sreg_set_bit",
+                "start": 106,
+                "end": 111
+            },
+            {
+                "name": "gpwr_get",
+                "start": 137,
+                "end": 146
+            },
+            {
+                "name": "gpwr_set",
+                "start": 148,
+                "end": 159
+            }
+        ],
+        "src/timers.h": [
+            {
+                "name": "timer_int_create",
+                "start": 100,
+                "end": 101
+            },
+            {
+                "name": "timer_intr_construct",
+                "start": 103,
+                "end": 104
+            },
+            {
+                "name": "timer0_create",
+                "start": 178,
+                "end": 179
+            },
+            {
+                "name": "timer0_construct",
+                "start": 181,
+                "end": 182
+            },
+            {
+                "name": "ocreg16_create",
+                "start": 238,
+                "end": 239
+            },
+            {
+                "name": "ocreg16_construct",
+                "start": 241,
+                "end": 242
+            },
+            {
+                "name": "timer16_create",
+                "start": 316,
+                "end": 317
+            },
+            {
+                "name": "timer16_new",
+                "start": 318,
+                "end": 319
+            },
+            {
+                "name": "timer16_construct",
+                "start": 320,
+                "end": 321
+            }
+        ],
+        "src/ports.h": [
+            {
+                "name": "port_add_ext_rd_wr",
+                "start": 100,
+                "end": 101
+            }
+        ],
+        "src/adc.h": [
+            {
+                "name": "adc_int_create",
+                "start": 104,
+                "end": 105
+            },
+            {
+                "name": "adc_intr_construct",
+                "start": 107,
+                "end": 108
+            },
+            {
+                "name": "adc_construct",
+                "start": 168,
+                "end": 169
+            }
+        ],
+        "src/usb.h": [
+            {
+                "name": "usb_intr_construct",
+                "start": 137,
+                "end": 138
+            }
+        ],
+        "src/uart.h": [
+            {
+                "name": "uart_int_create",
+                "start": 129,
+                "end": 130
+            }
+        ],
+        "src/avrcore.h": [
+            {
+                "name": "avr_core_get_sizes",
+                "start": 122,
+                "end": 123
+            },
+            {
+                "name": "avr_core_attach_vdev",
+                "start": 127,
+                "end": 135
+            },
+            {
+                "name": "avr_core_get_vdev_by_name",
+                "start": 137,
+                "end": 141
+            },
+            {
+                "name": "avr_core_get_vdev_by_addr",
+                "start": 143,
+                "end": 147
+            },
+            {
+                "name": "avr_core_set_addr_name",
+                "start": 149,
+                "end": 153
+            },
+            {
+                "name": "avr_core_get_state",
+                "start": 158,
+                "end": 162
+            },
+            {
+                "name": "avr_core_set_state",
+                "start": 164,
+                "end": 168
+            },
+            {
+                "name": "avr_core_set_sleep_mode",
+                "start": 172,
+                "end": 177
+            },
+            {
+                "name": "avr_core_get_sleep_mode",
+                "start": 179,
+                "end": 183
+            },
+            {
+                "name": "avr_core_flash_read",
+                "start": 187,
+                "end": 191
+            },
+            {
+                "name": "avr_core_flash_write",
+                "start": 193,
+                "end": 197
+            },
+            {
+                "name": "avr_core_flash_write_lo8",
+                "start": 199,
+                "end": 203
+            },
+            {
+                "name": "avr_core_flash_write_hi8",
+                "start": 205,
+                "end": 209
+            },
+            {
+                "name": "avr_core_mem_read",
+                "start": 213,
+                "end": 217
+            },
+            {
+                "name": "avr_core_mem_write",
+                "start": 219,
+                "end": 223
+            },
+            {
+                "name": "avr_core_sreg_get",
+                "start": 227,
+                "end": 231
+            },
+            {
+                "name": "avr_core_sreg_set",
+                "start": 233,
+                "end": 237
+            },
+            {
+                "name": "avr_core_sreg_get_bit",
+                "start": 239,
+                "end": 243
+            },
+            {
+                "name": "avr_core_sreg_set_bit",
+                "start": 245,
+                "end": 249
+            },
+            {
+                "name": "avr_core_rampz_get",
+                "start": 253,
+                "end": 260
+            },
+            {
+                "name": "avr_core_rampz_set",
+                "start": 262,
+                "end": 267
+            },
+            {
+                "name": "avr_core_gpwr_get",
+                "start": 271,
+                "end": 275
+            },
+            {
+                "name": "avr_core_gpwr_set",
+                "start": 277,
+                "end": 281
+            },
+            {
+                "name": "avr_core_io_read",
+                "start": 287,
+                "end": 291
+            },
+            {
+                "name": "avr_core_io_write",
+                "start": 293,
+                "end": 297
+            },
+            {
+                "name": "avr_core_io_fetch",
+                "start": 299,
+                "end": 304
+            },
+            {
+                "name": "avr_core_stack_pop",
+                "start": 308,
+                "end": 312
+            },
+            {
+                "name": "avr_core_stack_push",
+                "start": 314,
+                "end": 318
+            },
+            {
+                "name": "_adjust_PC_to_max",
+                "start": 328,
+                "end": 336
+            },
+            {
+                "name": "avr_core_PC_size",
+                "start": 340,
+                "end": 344
+            },
+            {
+                "name": "avr_core_PC_max",
+                "start": 346,
+                "end": 350
+            },
+            {
+                "name": "avr_core_PC_get",
+                "start": 352,
+                "end": 356
+            },
+            {
+                "name": "avr_core_PC_set",
+                "start": 358,
+                "end": 364
+            },
+            {
+                "name": "avr_core_PC_incr",
+                "start": 366,
+                "end": 372
+            },
+            {
+                "name": "avr_core_irq_clear_all",
+                "start": 379,
+                "end": 384
+            },
+            {
+                "name": "avr_core_CK_get",
+                "start": 402,
+                "end": 406
+            },
+            {
+                "name": "avr_core_CK_incr",
+                "start": 408,
+                "end": 415
+            },
+            {
+                "name": "avr_core_inst_CKS_get",
+                "start": 417,
+                "end": 421
+            },
+            {
+                "name": "avr_core_inst_CKS_set",
+                "start": 423,
+                "end": 427
+            },
+            {
+                "name": "avr_core_clk_cb_add",
+                "start": 431,
+                "end": 435
+            },
+            {
+                "name": "avr_core_clk_cb_exec",
+                "start": 437,
+                "end": 442
+            },
+            {
+                "name": "avr_core_async_cb_add",
+                "start": 446,
+                "end": 450
+            },
+            {
+                "name": "avr_core_async_cb_exec",
+                "start": 452,
+                "end": 457
+            },
+            {
+                "name": "avr_core_add_ext_rd_wr",
+                "start": 460,
+                "end": 461
+            }
+        ],
+        "src/devsupp.c": [
+            {
+                "name": "dev_supp_has_ext_io_reg",
+                "start": 167,
+                "end": 171
+            },
+            {
+                "name": "dev_supp_get_flash_sz",
+                "start": 173,
+                "end": 177
+            },
+            {
+                "name": "dev_supp_get_PC_sz",
+                "start": 179,
+                "end": 183
+            },
+            {
+                "name": "dev_supp_get_stack_sz",
+                "start": 185,
+                "end": 189
+            },
+            {
+                "name": "dev_supp_get_vtab_idx",
+                "start": 191,
+                "end": 195
+            },
+            {
+                "name": "dev_supp_get_sram_sz",
+                "start": 197,
+                "end": 201
+            },
+            {
+                "name": "dev_supp_lookup_device",
+                "start": 255,
+                "end": 271
+            },
+            {
+                "name": "dev_supp_list_devices",
+                "start": 275,
+                "end": 282
+            },
+            {
+                "name": "dev_supp_attach_io_regs",
+                "start": 284,
+                "end": 345
+            }
+        ],
+        "src/utils.c": [
+            {
+                "name": "str2ffmt",
+                "start": 49,
+                "end": 60
+            },
+            {
+                "name": "get_program_time",
+                "start": 75,
+                "end": 87
+            },
+            {
+                "name": "dlist_new_node",
+                "start": 112,
+                "end": 122
+            },
+            {
+                "name": "dlist_construct_node",
+                "start": 124,
+                "end": 136
+            },
+            {
+                "name": "dlist_destroy_node",
+                "start": 138,
+                "end": 149
+            },
+            {
+                "name": "dlist_add",
+                "start": 158,
+                "end": 191
+            },
+            {
+                "name": "dlist_add_head",
+                "start": 195,
+                "end": 207
+            },
+            {
+                "name": "dlist_delete",
+                "start": 214,
+                "end": 261
+            },
+            {
+                "name": "dlist_delete_all",
+                "start": 265,
+                "end": 277
+            },
+            {
+                "name": "dlist_lookup",
+                "start": 290,
+                "end": 309
+            },
+            {
+                "name": "dlist_get_head_data",
+                "start": 320,
+                "end": 330
+            },
+            {
+                "name": "dlist_iterator_cmp",
+                "start": 334,
+                "end": 342
+            },
+            {
+                "name": "dlist_iterator",
+                "start": 356,
+                "end": 376
+            }
+        ],
+        "src/decoder.h": [
+            {
+                "name": "avr_op_UNKNOWN",
+                "start": 48,
+                "end": 49
+            },
+            {
+                "name": "decode_opcode",
+                "start": 51,
+                "end": 62
+            }
+        ],
+        "src/decoder.c": [
+            {
+                "name": "avr_op_CALL",
+                "start": 121,
+                "end": 122
+            },
+            {
+                "name": "avr_op_JMP",
+                "start": 123,
+                "end": 124
+            },
+            {
+                "name": "avr_op_LDS",
+                "start": 125,
+                "end": 126
+            },
+            {
+                "name": "avr_op_STS",
+                "start": 127,
+                "end": 128
+            },
+            {
+                "name": "get_rd_2",
+                "start": 136,
+                "end": 141
+            },
+            {
+                "name": "get_rd_3",
+                "start": 143,
+                "end": 148
+            },
+            {
+                "name": "get_rd_4",
+                "start": 150,
+                "end": 155
+            },
+            {
+                "name": "get_rd_5",
+                "start": 157,
+                "end": 162
+            },
+            {
+                "name": "get_rr_3",
+                "start": 164,
+                "end": 168
+            },
+            {
+                "name": "get_rr_4",
+                "start": 170,
+                "end": 174
+            },
+            {
+                "name": "get_rr_5",
+                "start": 176,
+                "end": 181
+            },
+            {
+                "name": "get_K_8",
+                "start": 183,
+                "end": 188
+            },
+            {
+                "name": "get_K_6",
+                "start": 190,
+                "end": 195
+            },
+            {
+                "name": "get_k_7",
+                "start": 197,
+                "end": 201
+            },
+            {
+                "name": "get_k_12",
+                "start": 203,
+                "end": 207
+            },
+            {
+                "name": "get_k_22",
+                "start": 209,
+                "end": 216
+            },
+            {
+                "name": "get_reg_bit",
+                "start": 218,
+                "end": 222
+            },
+            {
+                "name": "get_sreg_bit",
+                "start": 224,
+                "end": 228
+            },
+            {
+                "name": "get_q",
+                "start": 230,
+                "end": 237
+            },
+            {
+                "name": "get_A_5",
+                "start": 239,
+                "end": 243
+            },
+            {
+                "name": "get_A_6",
+                "start": 245,
+                "end": 250
+            },
+            {
+                "name": "get_add_carry",
+                "start": 259,
+                "end": 266
+            },
+            {
+                "name": "get_add_overflow",
+                "start": 268,
+                "end": 275
+            },
+            {
+                "name": "get_sub_carry",
+                "start": 277,
+                "end": 284
+            },
+            {
+                "name": "get_sub_overflow",
+                "start": 286,
+                "end": 293
+            },
+            {
+                "name": "get_compare_carry",
+                "start": 295,
+                "end": 302
+            },
+            {
+                "name": "get_compare_overflow",
+                "start": 304,
+                "end": 313
+            },
+            {
+                "name": "is_next_inst_2_words",
+                "start": 321,
+                "end": 332
+            },
+            {
+                "name": "n_bit_unsigned_to_signed",
+                "start": 334,
+                "end": 346
+            },
+            {
+                "name": "avr_op_ADC",
+                "start": 354,
+                "end": 393
+            },
+            {
+                "name": "avr_op_ADD",
+                "start": 395,
+                "end": 434
+            },
+            {
+                "name": "avr_op_ADIW",
+                "start": 436,
+                "end": 479
+            },
+            {
+                "name": "avr_op_AND",
+                "start": 481,
+                "end": 517
+            },
+            {
+                "name": "avr_op_ANDI",
+                "start": 519,
+                "end": 554
+            },
+            {
+                "name": "avr_op_ASR",
+                "start": 556,
+                "end": 591
+            },
+            {
+                "name": "avr_op_BCLR",
+                "start": 593,
+                "end": 611
+            },
+            {
+                "name": "avr_op_BLD",
+                "start": 613,
+                "end": 642
+            },
+            {
+                "name": "avr_op_BRBC",
+                "start": 644,
+                "end": 677
+            },
+            {
+                "name": "avr_op_BRBS",
+                "start": 679,
+                "end": 712
+            },
+            {
+                "name": "avr_op_BREAK",
+                "start": 714,
+                "end": 745
+            },
+            {
+                "name": "avr_op_BSET",
+                "start": 747,
+                "end": 765
+            },
+            {
+                "name": "avr_op_BST",
+                "start": 767,
+                "end": 790
+            },
+            {
+                "name": "avr_op_CALL",
+                "start": 792,
+                "end": 822
+            },
+            {
+                "name": "avr_op_CBI",
+                "start": 824,
+                "end": 847
+            },
+            {
+                "name": "avr_op_COM",
+                "start": 849,
+                "end": 884
+            },
+            {
+                "name": "avr_op_CP",
+                "start": 886,
+                "end": 926
+            },
+            {
+                "name": "avr_op_CPC",
+                "start": 928,
+                "end": 972
+            },
+            {
+                "name": "avr_op_CPI",
+                "start": 974,
+                "end": 1013
+            },
+            {
+                "name": "avr_op_CPSE",
+                "start": 1015,
+                "end": 1053
+            },
+            {
+                "name": "avr_op_DEC",
+                "start": 1055,
+                "end": 1089
+            },
+            {
+                "name": "avr_op_EICALL",
+                "start": 1091,
+                "end": 1120
+            },
+            {
+                "name": "avr_op_EIJMP",
+                "start": 1122,
+                "end": 1147
+            },
+            {
+                "name": "avr_op_ELPM_Z",
+                "start": 1149,
+                "end": 1192
+            },
+            {
+                "name": "avr_op_ELPM_Z_incr",
+                "start": 1194,
+                "end": 1244
+            },
+            {
+                "name": "avr_op_ELPM",
+                "start": 1246,
+                "end": 1263
+            },
+            {
+                "name": "avr_op_EOR",
+                "start": 1265,
+                "end": 1303
+            },
+            {
+                "name": "avr_op_ESPM",
+                "start": 1305,
+                "end": 1320
+            },
+            {
+                "name": "avr_op_FMUL",
+                "start": 1327,
+                "end": 1364
+            },
+            {
+                "name": "avr_op_FMULS",
+                "start": 1366,
+                "end": 1403
+            },
+            {
+                "name": "avr_op_FMULSU",
+                "start": 1405,
+                "end": 1442
+            },
+            {
+                "name": "avr_op_ICALL",
+                "start": 1444,
+                "end": 1470
+            },
+            {
+                "name": "avr_op_IJMP",
+                "start": 1472,
+                "end": 1493
+            },
+            {
+                "name": "avr_op_IN",
+                "start": 1495,
+                "end": 1517
+            },
+            {
+                "name": "avr_op_INC",
+                "start": 1519,
+                "end": 1553
+            },
+            {
+                "name": "avr_op_JMP",
+                "start": 1555,
+                "end": 1577
+            },
+            {
+                "name": "avr_op_LDD_Y",
+                "start": 1579,
+                "end": 1605
+            },
+            {
+                "name": "avr_op_LDD_Z",
+                "start": 1607,
+                "end": 1634
+            },
+            {
+                "name": "avr_op_LDI",
+                "start": 1636,
+                "end": 1658
+            },
+            {
+                "name": "avr_op_LDS",
+                "start": 1660,
+                "end": 1685
+            },
+            {
+                "name": "avr_op_LD_X",
+                "start": 1687,
+                "end": 1713
+            },
+            {
+                "name": "avr_op_LD_X_decr",
+                "start": 1715,
+                "end": 1749
+            },
+            {
+                "name": "avr_op_LD_X_incr",
+                "start": 1751,
+                "end": 1785
+            },
+            {
+                "name": "avr_op_LD_Y_decr",
+                "start": 1787,
+                "end": 1821
+            },
+            {
+                "name": "avr_op_LD_Y_incr",
+                "start": 1823,
+                "end": 1857
+            },
+            {
+                "name": "avr_op_LD_Z_incr",
+                "start": 1859,
+                "end": 1893
+            },
+            {
+                "name": "avr_op_LD_Z_decr",
+                "start": 1895,
+                "end": 1929
+            },
+            {
+                "name": "avr_op_LPM_Z",
+                "start": 1931,
+                "end": 1968
+            },
+            {
+                "name": "avr_op_LPM",
+                "start": 1970,
+                "end": 1985
+            },
+            {
+                "name": "avr_op_LPM_Z_incr",
+                "start": 1987,
+                "end": 2032
+            },
+            {
+                "name": "avr_op_LSR",
+                "start": 2034,
+                "end": 2070
+            },
+            {
+                "name": "avr_op_MOV",
+                "start": 2072,
+                "end": 2093
+            },
+            {
+                "name": "avr_op_MOVW",
+                "start": 2095,
+                "end": 2123
+            },
+            {
+                "name": "avr_op_MUL",
+                "start": 2125,
+                "end": 2162
+            },
+            {
+                "name": "avr_op_MULS",
+                "start": 2164,
+                "end": 2199
+            },
+            {
+                "name": "avr_op_MULSU",
+                "start": 2201,
+                "end": 2239
+            },
+            {
+                "name": "avr_op_NEG",
+                "start": 2241,
+                "end": 2279
+            },
+            {
+                "name": "avr_op_NOP",
+                "start": 2281,
+                "end": 2297
+            },
+            {
+                "name": "avr_op_OR",
+                "start": 2299,
+                "end": 2334
+            },
+            {
+                "name": "avr_op_ORI",
+                "start": 2336,
+                "end": 2371
+            },
+            {
+                "name": "avr_op_OUT",
+                "start": 2373,
+                "end": 2398
+            },
+            {
+                "name": "avr_op_POP",
+                "start": 2400,
+                "end": 2421
+            },
+            {
+                "name": "avr_op_PUSH",
+                "start": 2423,
+                "end": 2444
+            },
+            {
+                "name": "avr_op_RCALL",
+                "start": 2446,
+                "end": 2470
+            },
+            {
+                "name": "avr_op_RET",
+                "start": 2472,
+                "end": 2492
+            },
+            {
+                "name": "avr_op_RETI",
+                "start": 2494,
+                "end": 2516
+            },
+            {
+                "name": "avr_op_RJMP",
+                "start": 2518,
+                "end": 2537
+            },
+            {
+                "name": "avr_op_ROR",
+                "start": 2539,
+                "end": 2576
+            },
+            {
+                "name": "avr_op_SBC",
+                "start": 2578,
+                "end": 2623
+            },
+            {
+                "name": "avr_op_SBCI",
+                "start": 2625,
+                "end": 2669
+            },
+            {
+                "name": "avr_op_SBI",
+                "start": 2671,
+                "end": 2694
+            },
+            {
+                "name": "avr_op_SBIC",
+                "start": 2696,
+                "end": 2731
+            },
+            {
+                "name": "avr_op_SBIS",
+                "start": 2733,
+                "end": 2768
+            },
+            {
+                "name": "avr_op_SBIW",
+                "start": 2770,
+                "end": 2814
+            },
+            {
+                "name": "avr_op_SBRC",
+                "start": 2816,
+                "end": 2851
+            },
+            {
+                "name": "avr_op_SBRS",
+                "start": 2853,
+                "end": 2888
+            },
+            {
+                "name": "avr_op_SLEEP",
+                "start": 2890,
+                "end": 2929
+            },
+            {
+                "name": "avr_op_SPM",
+                "start": 2931,
+                "end": 2946
+            },
+            {
+                "name": "avr_op_STD_Y",
+                "start": 2948,
+                "end": 2975
+            },
+            {
+                "name": "avr_op_STD_Z",
+                "start": 2977,
+                "end": 3004
+            },
+            {
+                "name": "avr_op_STS",
+                "start": 3006,
+                "end": 3031
+            },
+            {
+                "name": "avr_op_ST_X",
+                "start": 3033,
+                "end": 3059
+            },
+            {
+                "name": "avr_op_ST_X_decr",
+                "start": 3061,
+                "end": 3095
+            },
+            {
+                "name": "avr_op_ST_X_incr",
+                "start": 3097,
+                "end": 3131
+            },
+            {
+                "name": "avr_op_ST_Y_decr",
+                "start": 3133,
+                "end": 3167
+            },
+            {
+                "name": "avr_op_ST_Y_incr",
+                "start": 3169,
+                "end": 3203
+            },
+            {
+                "name": "avr_op_ST_Z_decr",
+                "start": 3205,
+                "end": 3239
+            },
+            {
+                "name": "avr_op_ST_Z_incr",
+                "start": 3241,
+                "end": 3275
+            },
+            {
+                "name": "avr_op_SUB",
+                "start": 3277,
+                "end": 3320
+            },
+            {
+                "name": "avr_op_SUBI",
+                "start": 3322,
+                "end": 3364
+            },
+            {
+                "name": "avr_op_SWAP",
+                "start": 3366,
+                "end": 3388
+            },
+            {
+                "name": "avr_op_WDR",
+                "start": 3390,
+                "end": 3416
+            },
+            {
+                "name": "avr_op_UNKNOWN",
+                "start": 3418,
+                "end": 3428
+            },
+            {
+                "name": "lookup_opcode",
+                "start": 3440,
+                "end": 3857
+            },
+            {
+                "name": "decode_init_lookup_table",
+                "start": 3868,
+                "end": 3882
+            }
+        ],
+        "src/avrclass.c": [
+            {
+                "name": "class_new",
+                "start": 45,
+                "end": 51
+            },
+            {
+                "name": "class_construct",
+                "start": 60,
+                "end": 68
+            },
+            {
+                "name": "class_destroy",
+                "start": 77,
+                "end": 84
+            },
+            {
+                "name": "class_overload_destroy",
+                "start": 91,
+                "end": 98
+            },
+            {
+                "name": "class_ref",
+                "start": 105,
+                "end": 112
+            },
+            {
+                "name": "class_unref",
+                "start": 119,
+                "end": 128
+            }
+        ],
+        "src/uart.c": [
+            {
+                "name": "uart_iadd_addr",
+                "start": 67,
+                "end": 68
+            },
+            {
+                "name": "uart_int_create",
+                "start": 94,
+                "end": 102
+            },
+            {
+                "name": "uart_intr_new",
+                "start": 104,
+                "end": 123
+            },
+            {
+                "name": "uart_intr_construct",
+                "start": 127,
+                "end": 137
+            },
+            {
+                "name": "uart_iadd_addr",
+                "start": 139,
+                "end": 174
+            },
+            {
+                "name": "uart_intr_destroy",
+                "start": 178,
+                "end": 185
+            },
+            {
+                "name": "uart_intr_read",
+                "start": 187,
+                "end": 218
+            },
+            {
+                "name": "uart_intr_write",
+                "start": 220,
+                "end": 269
+            },
+            {
+                "name": "uart_intr_reset",
+                "start": 271,
+                "end": 282
+            },
+            {
+                "name": "uart_intr_cb",
+                "start": 284,
+                "end": 317
+            },
+            {
+                "name": "uart_add_addr",
+                "start": 325,
+                "end": 326
+            },
+            {
+                "name": "uart_create",
+                "start": 334,
+                "end": 338
+            },
+            {
+                "name": "uart_new",
+                "start": 340,
+                "end": 351
+            },
+            {
+                "name": "uart_construct",
+                "start": 355,
+                "end": 368
+            },
+            {
+                "name": "uart_add_addr",
+                "start": 370,
+                "end": 384
+            },
+            {
+                "name": "uart_destroy",
+                "start": 388,
+                "end": 395
+            },
+            {
+                "name": "uart_read",
+                "start": 397,
+                "end": 432
+            },
+            {
+                "name": "uart_write",
+                "start": 434,
+                "end": 488
+            },
+            {
+                "name": "uart_reset",
+                "start": 490,
+                "end": 501
+            },
+            {
+                "name": "uart_clk_incr_cb",
+                "start": 503,
+                "end": 550
+            },
+            {
+                "name": "uart_port_rd",
+                "start": 552,
+                "end": 576
+            },
+            {
+                "name": "uart_port_wr",
+                "start": 578,
+                "end": 582
+            }
+        ],
+        "src/storage.c": [
+            {
+                "name": "storage_new",
+                "start": 42,
+                "end": 52
+            },
+            {
+                "name": "storage_construct",
+                "start": 54,
+                "end": 66
+            },
+            {
+                "name": "storage_destroy",
+                "start": 72,
+                "end": 80
+            },
+            {
+                "name": "storage_readb",
+                "start": 82,
+                "end": 83
+            },
+            {
+                "name": "storage_readw",
+                "start": 85,
+                "end": 86
+            },
+            {
+                "name": "storage_writeb",
+                "start": 88,
+                "end": 100
+            },
+            {
+                "name": "storage_writew",
+                "start": 102,
+                "end": 115
+            },
+            {
+                "name": "storage_get_size",
+                "start": 117,
+                "end": 121
+            },
+            {
+                "name": "storage_get_base",
+                "start": 123,
+                "end": 127
+            }
+        ],
+        "src/sram.c": [
+            {
+                "name": "sram_new",
+                "start": 58,
+                "end": 68
+            },
+            {
+                "name": "sram_construct",
+                "start": 70,
+                "end": 79
+            },
+            {
+                "name": "sram_destroy",
+                "start": 81,
+                "end": 92
+            },
+            {
+                "name": "sram_get_size",
+                "start": 94,
+                "end": 98
+            },
+            {
+                "name": "sram_get_base",
+                "start": 100,
+                "end": 104
+            },
+            {
+                "name": "sram_read",
+                "start": 106,
+                "end": 112
+            },
+            {
+                "name": "sram_write",
+                "start": 114,
+                "end": 122
+            },
+            {
+                "name": "sram_reset",
+                "start": 124,
+                "end": 128
+            }
+        ],
+        "src/avrmalloc.c": [
+            {
+                "name": "avr_malloc",
+                "start": 92,
+                "end": 105
+            },
+            {
+                "name": "avr_malloc0",
+                "start": 116,
+                "end": 129
+            },
+            {
+                "name": "avr_realloc",
+                "start": 142,
+                "end": 154
+            },
+            {
+                "name": "avr_strdup",
+                "start": 167,
+                "end": 180
+            },
+            {
+                "name": "avr_free",
+                "start": 186,
+                "end": 191
+            }
+        ],
+        "src/ports.c": [
+            {
+                "name": "port_add_addr",
+                "start": 84,
+                "end": 85
+            },
+            {
+                "name": "port_create",
+                "start": 99,
+                "end": 103
+            },
+            {
+                "name": "port_new",
+                "start": 109,
+                "end": 119
+            },
+            {
+                "name": "port_construct",
+                "start": 125,
+                "end": 140
+            },
+            {
+                "name": "port_add_addr",
+                "start": 142,
+                "end": 166
+            },
+            {
+                "name": "port_reset",
+                "start": 168,
+                "end": 178
+            },
+            {
+                "name": "port_destroy",
+                "start": 186,
+                "end": 193
+            },
+            {
+                "name": "port_ext_disable",
+                "start": 199,
+                "end": 203
+            },
+            {
+                "name": "port_ext_enable",
+                "start": 209,
+                "end": 213
+            },
+            {
+                "name": "port_add_ext_rd_wr",
+                "start": 230,
+                "end": 235
+            },
+            {
+                "name": "port_read_pin",
+                "start": 237,
+                "end": 262
+            },
+            {
+                "name": "port_write_port",
+                "start": 264,
+                "end": 276
+            },
+            {
+                "name": "port_write_ddr",
+                "start": 278,
+                "end": 292
+            },
+            {
+                "name": "port_reg_read",
+                "start": 294,
+                "end": 312
+            },
+            {
+                "name": "port_reg_write",
+                "start": 314,
+                "end": 338
+            }
+        ],
+        "src/callback.c": [
+            {
+                "name": "callback_new",
+                "start": 55,
+                "end": 65
+            },
+            {
+                "name": "callback_construct",
+                "start": 67,
+                "end": 81
+            },
+            {
+                "name": "callback_destroy",
+                "start": 83,
+                "end": 95
+            },
+            {
+                "name": "callback_list_add",
+                "start": 97,
+                "end": 101
+            },
+            {
+                "name": "callback_execute",
+                "start": 103,
+                "end": 110
+            },
+            {
+                "name": "callback_list_execute_all",
+                "start": 112,
+                "end": 116
+            }
+        ],
+        "src/register.c": [
+            {
+                "name": "sreg_add_addr",
+                "start": 64,
+                "end": 65
+            },
+            {
+                "name": "sreg_create",
+                "start": 67,
+                "end": 71
+            },
+            {
+                "name": "sreg_new",
+                "start": 73,
+                "end": 83
+            },
+            {
+                "name": "sreg_construct",
+                "start": 85,
+                "end": 95
+            },
+            {
+                "name": "sreg_destroy",
+                "start": 97,
+                "end": 104
+            },
+            {
+                "name": "sreg_read",
+                "start": 114,
+                "end": 118
+            },
+            {
+                "name": "sreg_write",
+                "start": 120,
+                "end": 124
+            },
+            {
+                "name": "sreg_reset",
+                "start": 126,
+                "end": 131
+            },
+            {
+                "name": "sreg_add_addr",
+                "start": 133,
+                "end": 137
+            },
+            {
+                "name": "gpwr_new",
+                "start": 150,
+                "end": 160
+            },
+            {
+                "name": "gpwr_construct",
+                "start": 162,
+                "end": 171
+            },
+            {
+                "name": "gpwr_destroy",
+                "start": 173,
+                "end": 180
+            },
+            {
+                "name": "gpwr_read",
+                "start": 186,
+                "end": 190
+            },
+            {
+                "name": "gpwr_write",
+                "start": 192,
+                "end": 196
+            },
+            {
+                "name": "gpwr_reset",
+                "start": 198,
+                "end": 205
+            },
+            {
+                "name": "acsr_new",
+                "start": 217,
+                "end": 227
+            },
+            {
+                "name": "acsr_construct",
+                "start": 229,
+                "end": 240
+            },
+            {
+                "name": "acsr_destroy",
+                "start": 242,
+                "end": 249
+            },
+            {
+                "name": "acsr_get_bit",
+                "start": 251,
+                "end": 255
+            },
+            {
+                "name": "acsr_set_bit",
+                "start": 257,
+                "end": 264
+            },
+            {
+                "name": "acsr_read",
+                "start": 266,
+                "end": 272
+            },
+            {
+                "name": "acsr_write",
+                "start": 274,
+                "end": 281
+            },
+            {
+                "name": "acsr_reset",
+                "start": 283,
+                "end": 287
+            },
+            {
+                "name": "mcucr_new",
+                "start": 299,
+                "end": 309
+            },
+            {
+                "name": "mcucr_construct",
+                "start": 311,
+                "end": 322
+            },
+            {
+                "name": "mcucr_destroy",
+                "start": 324,
+                "end": 331
+            },
+            {
+                "name": "mcucr_get_bit",
+                "start": 333,
+                "end": 337
+            },
+            {
+                "name": "mcucr_set_bit",
+                "start": 339,
+                "end": 343
+            },
+            {
+                "name": "mcucr_read",
+                "start": 345,
+                "end": 351
+            },
+            {
+                "name": "mcucr_write",
+                "start": 353,
+                "end": 359
+            },
+            {
+                "name": "mcucr_reset",
+                "start": 361,
+                "end": 365
+            },
+            {
+                "name": "wdtcr_new",
+                "start": 383,
+                "end": 393
+            },
+            {
+                "name": "wdtcr_construct",
+                "start": 395,
+                "end": 407
+            },
+            {
+                "name": "wdtcr_destroy",
+                "start": 409,
+                "end": 416
+            },
+            {
+                "name": "wdtcr_update",
+                "start": 421,
+                "end": 425
+            },
+            {
+                "name": "wdtcr_set_bit",
+                "start": 435,
+                "end": 439
+            },
+            {
+                "name": "wdtcr_read",
+                "start": 441,
+                "end": 447
+            },
+            {
+                "name": "wdtcr_write",
+                "start": 454,
+                "end": 500
+            },
+            {
+                "name": "wdtcr_reset",
+                "start": 502,
+                "end": 515
+            },
+            {
+                "name": "wdtcr_timer_cb",
+                "start": 520,
+                "end": 543
+            },
+            {
+                "name": "wdtcr_toe_clr_cb",
+                "start": 548,
+                "end": 568
+            },
+            {
+                "name": "rampz_create",
+                "start": 585,
+                "end": 589
+            },
+            {
+                "name": "rampz_new",
+                "start": 591,
+                "end": 601
+            },
+            {
+                "name": "rampz_construct",
+                "start": 603,
+                "end": 613
+            },
+            {
+                "name": "rampz_destroy",
+                "start": 615,
+                "end": 622
+            },
+            {
+                "name": "rampz_get",
+                "start": 624,
+                "end": 628
+            },
+            {
+                "name": "rampz_set",
+                "start": 630,
+                "end": 634
+            },
+            {
+                "name": "rampz_read",
+                "start": 636,
+                "end": 640
+            },
+            {
+                "name": "rampz_write",
+                "start": 642,
+                "end": 646
+            },
+            {
+                "name": "rampz_reset",
+                "start": 648,
+                "end": 653
+            }
+        ],
+        "src/device.c": [
+            {
+                "name": "vdev_new",
+                "start": 61,
+                "end": 72
+            },
+            {
+                "name": "vdev_def_AddAddr",
+                "start": 79,
+                "end": 84
+            },
+            {
+                "name": "vdev_construct",
+                "start": 88,
+                "end": 101
+            },
+            {
+                "name": "vdev_destroy",
+                "start": 104,
+                "end": 111
+            },
+            {
+                "name": "vdev_read",
+                "start": 160,
+                "end": 164
+            },
+            {
+                "name": "vdev_write",
+                "start": 167,
+                "end": 171
+            },
+            {
+                "name": "vdev_reset",
+                "start": 174,
+                "end": 178
+            },
+            {
+                "name": "vdev_set_core",
+                "start": 181,
+                "end": 185
+            },
+            {
+                "name": "vdev_add_addr",
+                "start": 194,
+                "end": 206
+            }
+        ],
+        "src/spi.c": [
+            {
+                "name": "spii_add_addr",
+                "start": 68,
+                "end": 69
+            },
+            {
+                "name": "spii_create",
+                "start": 77,
+                "end": 81
+            },
+            {
+                "name": "spi_intr_new",
+                "start": 83,
+                "end": 93
+            },
+            {
+                "name": "spi_intr_construct",
+                "start": 97,
+                "end": 108
+            },
+            {
+                "name": "spii_add_addr",
+                "start": 110,
+                "end": 129
+            },
+            {
+                "name": "spi_intr_destroy",
+                "start": 133,
+                "end": 140
+            },
+            {
+                "name": "spi_intr_read",
+                "start": 142,
+                "end": 167
+            },
+            {
+                "name": "spi_intr_write",
+                "start": 169,
+                "end": 196
+            },
+            {
+                "name": "spi_intr_reset",
+                "start": 198,
+                "end": 208
+            },
+            {
+                "name": "spi_intr_cb",
+                "start": 210,
+                "end": 229
+            },
+            {
+                "name": "spi_add_addr",
+                "start": 237,
+                "end": 238
+            },
+            {
+                "name": "spi_create",
+                "start": 246,
+                "end": 250
+            },
+            {
+                "name": "spi_new",
+                "start": 252,
+                "end": 262
+            },
+            {
+                "name": "spi_construct",
+                "start": 266,
+                "end": 279
+            },
+            {
+                "name": "spi_add_addr",
+                "start": 281,
+                "end": 295
+            },
+            {
+                "name": "spi_destroy",
+                "start": 299,
+                "end": 306
+            },
+            {
+                "name": "spi_read",
+                "start": 308,
+                "end": 337
+            },
+            {
+                "name": "spi_write",
+                "start": 339,
+                "end": 405
+            },
+            {
+                "name": "spi_reset",
+                "start": 407,
+                "end": 418
+            },
+            {
+                "name": "spi_clk_incr_cb",
+                "start": 420,
+                "end": 459
+            },
+            {
+                "name": "spi_port_rd",
+                "start": 464,
+                "end": 488
+            },
+            {
+                "name": "spi_port_wr",
+                "start": 490,
+                "end": 494
+            }
+        ],
+        "src/stack.c": [
+            {
+                "name": "stack_new",
+                "start": 81,
+                "end": 91
+            },
+            {
+                "name": "stack_construct",
+                "start": 98,
+                "end": 108
+            },
+            {
+                "name": "stack_destroy",
+                "start": 115,
+                "end": 122
+            },
+            {
+                "name": "stack_pop",
+                "start": 132,
+                "end": 136
+            },
+            {
+                "name": "stack_push",
+                "start": 145,
+                "end": 149
+            },
+            {
+                "name": "hwstack_new",
+                "start": 162,
+                "end": 172
+            },
+            {
+                "name": "hwstack_construct",
+                "start": 176,
+                "end": 186
+            },
+            {
+                "name": "hwstack_destroy",
+                "start": 190,
+                "end": 198
+            },
+            {
+                "name": "hw_pop",
+                "start": 202,
+                "end": 215
+            },
+            {
+                "name": "hw_push",
+                "start": 219,
+                "end": 231
+            },
+            {
+                "name": "sp_add_addr",
+                "start": 264,
+                "end": 265
+            },
+            {
+                "name": "sp_create",
+                "start": 271,
+                "end": 275
+            },
+            {
+                "name": "sp_new",
+                "start": 277,
+                "end": 287
+            },
+            {
+                "name": "sp_construct",
+                "start": 289,
+                "end": 300
+            },
+            {
+                "name": "sp_destroy",
+                "start": 302,
+                "end": 309
+            },
+            {
+                "name": "sp_read",
+                "start": 311,
+                "end": 324
+            },
+            {
+                "name": "sp_write",
+                "start": 326,
+                "end": 340
+            },
+            {
+                "name": "sp_reset",
+                "start": 342,
+                "end": 349
+            },
+            {
+                "name": "sp_get",
+                "start": 351,
+                "end": 355
+            },
+            {
+                "name": "sp_set",
+                "start": 357,
+                "end": 362
+            },
+            {
+                "name": "sp_add_addr",
+                "start": 364,
+                "end": 377
+            },
+            {
+                "name": "memstack_new",
+                "start": 387,
+                "end": 397
+            },
+            {
+                "name": "memstack_construct",
+                "start": 401,
+                "end": 418
+            },
+            {
+                "name": "memstack_destroy",
+                "start": 422,
+                "end": 434
+            },
+            {
+                "name": "mem_pop",
+                "start": 438,
+                "end": 458
+            },
+            {
+                "name": "mem_push",
+                "start": 462,
+                "end": 480
+            }
+        ],
+        "src/adc.c": [
+            {
+                "name": "adc_iadd_addr",
+                "start": 68,
+                "end": 69
+            },
+            {
+                "name": "adc_int_create",
+                "start": 78,
+                "end": 82
+            },
+            {
+                "name": "adc_intr_new",
+                "start": 84,
+                "end": 94
+            },
+            {
+                "name": "adc_intr_construct",
+                "start": 98,
+                "end": 112
+            },
+            {
+                "name": "adc_iadd_addr",
+                "start": 114,
+                "end": 133
+            },
+            {
+                "name": "adc_intr_destroy",
+                "start": 137,
+                "end": 144
+            },
+            {
+                "name": "adc_intr_read",
+                "start": 146,
+                "end": 161
+            },
+            {
+                "name": "adc_intr_write",
+                "start": 163,
+                "end": 244
+            },
+            {
+                "name": "adc_intr_reset",
+                "start": 246,
+                "end": 255
+            },
+            {
+                "name": "adc_intr_cb",
+                "start": 257,
+                "end": 275
+            },
+            {
+                "name": "adc_add_addr",
+                "start": 283,
+                "end": 284
+            },
+            {
+                "name": "adc_create",
+                "start": 291,
+                "end": 301
+            },
+            {
+                "name": "adc_new",
+                "start": 303,
+                "end": 313
+            },
+            {
+                "name": "adc_construct",
+                "start": 317,
+                "end": 332
+            },
+            {
+                "name": "adc_add_addr",
+                "start": 333,
+                "end": 352
+            },
+            {
+                "name": "adc_destroy",
+                "start": 356,
+                "end": 363
+            },
+            {
+                "name": "adc_read",
+                "start": 365,
+                "end": 380
+            },
+            {
+                "name": "adc_write",
+                "start": 382,
+                "end": 386
+            },
+            {
+                "name": "adc_reset",
+                "start": 388,
+                "end": 401
+            },
+            {
+                "name": "adc_clk_incr_cb",
+                "start": 403,
+                "end": 445
+            },
+            {
+                "name": "adc_port_rd",
+                "start": 450,
+                "end": 472
+            },
+            {
+                "name": "adc_port_wr",
+                "start": 474,
+                "end": 478
+            }
+        ],
+        "src/timers.c": [
+            {
+                "name": "timer_iadd_addr",
+                "start": 128,
+                "end": 129
+            },
+            {
+                "name": "timer_int_create",
+                "start": 137,
+                "end": 146
+            },
+            {
+                "name": "timer_intr_new",
+                "start": 148,
+                "end": 158
+            },
+            {
+                "name": "timer_intr_construct",
+                "start": 162,
+                "end": 177
+            },
+            {
+                "name": "timer_iadd_addr",
+                "start": 179,
+                "end": 200
+            },
+            {
+                "name": "timer_intr_destroy",
+                "start": 204,
+                "end": 211
+            },
+            {
+                "name": "timer_intr_read",
+                "start": 213,
+                "end": 234
+            },
+            {
+                "name": "timer_intr_write",
+                "start": 236,
+                "end": 268
+            },
+            {
+                "name": "timer_intr_reset",
+                "start": 270,
+                "end": 279
+            },
+            {
+                "name": "timer_intr_cb",
+                "start": 281,
+                "end": 332
+            },
+            {
+                "name": "timer0_add_addr",
+                "start": 340,
+                "end": 341
+            },
+            {
+                "name": "timer0_create",
+                "start": 349,
+                "end": 353
+            },
+            {
+                "name": "timer0_new",
+                "start": 355,
+                "end": 365
+            },
+            {
+                "name": "timer0_construct",
+                "start": 369,
+                "end": 382
+            },
+            {
+                "name": "timer0_destroy",
+                "start": 386,
+                "end": 393
+            },
+            {
+                "name": "timer0_add_addr",
+                "start": 395,
+                "end": 415
+            },
+            {
+                "name": "timer0_read",
+                "start": 417,
+                "end": 434
+            },
+            {
+                "name": "timer0_write",
+                "start": 436,
+                "end": 508
+            },
+            {
+                "name": "timer0_reset",
+                "start": 510,
+                "end": 522
+            },
+            {
+                "name": "timer0_clk_incr_cb",
+                "start": 524,
+                "end": 558
+            },
+            {
+                "name": "timer16_add_addr",
+                "start": 570,
+                "end": 571
+            },
+            {
+                "name": "timer16_create",
+                "start": 581,
+                "end": 591
+            },
+            {
+                "name": "timer16_new",
+                "start": 593,
+                "end": 603
+            },
+            {
+                "name": "timer16_construct",
+                "start": 607,
+                "end": 623
+            },
+            {
+                "name": "timer16_add_addr",
+                "start": 625,
+                "end": 661
+            },
+            {
+                "name": "timer16_destroy",
+                "start": 663,
+                "end": 670
+            },
+            {
+                "name": "timer16_read",
+                "start": 672,
+                "end": 709
+            },
+            {
+                "name": "timer16_write",
+                "start": 711,
+                "end": 748
+            },
+            {
+                "name": "timer16_reset",
+                "start": 750,
+                "end": 764
+            },
+            {
+                "name": "timer_intr_set_flag",
+                "start": 766,
+                "end": 770
+            },
+            {
+                "name": "timer16_clk_incr_cb",
+                "start": 772,
+                "end": 817
+            },
+            {
+                "name": "timer16_handle_tccr_write",
+                "start": 827,
+                "end": 883
+            },
+            {
+                "name": "ocr_add_addr",
+                "start": 897,
+                "end": 898
+            },
+            {
+                "name": "ocreg16_create",
+                "start": 908,
+                "end": 918
+            },
+            {
+                "name": "ocreg16_new",
+                "start": 920,
+                "end": 930
+            },
+            {
+                "name": "ocreg16_construct",
+                "start": 934,
+                "end": 947
+            },
+            {
+                "name": "ocr_add_addr",
+                "start": 949,
+                "end": 973
+            },
+            {
+                "name": "ocreg16_destroy",
+                "start": 975,
+                "end": 982
+            },
+            {
+                "name": "ocreg16_read",
+                "start": 984,
+                "end": 1005
+            },
+            {
+                "name": "ocreg16_write",
+                "start": 1007,
+                "end": 1026
+            },
+            {
+                "name": "ocreg16_reset",
+                "start": 1028,
+                "end": 1034
+            }
+        ],
+        "src/avrcore.c": [
+            {
+                "name": "brk_pt_construct",
+                "start": 88,
+                "end": 98
+            },
+            {
+                "name": "brk_pt_new",
+                "start": 100,
+                "end": 110
+            },
+            {
+                "name": "brk_pt_destroy",
+                "start": 112,
+                "end": 121
+            },
+            {
+                "name": "brk_pt_cmp",
+                "start": 130,
+                "end": 134
+            },
+            {
+                "name": "brk_pt_list_add",
+                "start": 136,
+                "end": 142
+            },
+            {
+                "name": "brk_pt_list_delete",
+                "start": 144,
+                "end": 153
+            },
+            {
+                "name": "brk_pt_list_lookup",
+                "start": 155,
+                "end": 165
+            },
+            {
+                "name": "brk_pt_iterator",
+                "start": 167,
+                "end": 171
+            },
+            {
+                "name": "irq_new",
+                "start": 195,
+                "end": 196
+            },
+            {
+                "name": "irq_construct",
+                "start": 197,
+                "end": 198
+            },
+            {
+                "name": "irq_construct",
+                "start": 201,
+                "end": 212
+            },
+            {
+                "name": "irq_new",
+                "start": 214,
+                "end": 224
+            },
+            {
+                "name": "irq_destroy",
+                "start": 226,
+                "end": 235
+            },
+            {
+                "name": "irq_cmp_addr",
+                "start": 247,
+                "end": 251
+            },
+            {
+                "name": "irq_list_add",
+                "start": 253,
+                "end": 259
+            },
+            {
+                "name": "irq_list_delete",
+                "start": 261,
+                "end": 270
+            },
+            {
+                "name": "irq_cmp_pending",
+                "start": 286,
+                "end": 314
+            },
+            {
+                "name": "irq_get_pending_vector",
+                "start": 320,
+                "end": 330
+            },
+            {
+                "name": "avr_core_new",
+                "start": 354,
+                "end": 370
+            },
+            {
+                "name": "avr_core_construct",
+                "start": 374,
+                "end": 491
+            },
+            {
+                "name": "avr_core_destroy",
+                "start": 499,
+                "end": 519
+            },
+            {
+                "name": "avr_core_get_sizes",
+                "start": 522,
+                "end": 543
+            },
+            {
+                "name": "avr_core_attach_vdev",
+                "start": 546,
+                "end": 549
+            },
+            {
+                "name": "avr_core_flash_write",
+                "start": 582,
+                "end": 583
+            },
+            {
+                "name": "avr_core_flash_write_lo8",
+                "start": 591,
+                "end": 592
+            },
+            {
+                "name": "avr_core_flash_write_hi8",
+                "start": 600,
+                "end": 601
+            },
+            {
+                "name": "avr_core_io_display_names",
+                "start": 683,
+                "end": 695
+            },
+            {
+                "name": "avr_core_io_fetch",
+                "start": 710,
+                "end": 711
+            },
+            {
+                "name": "avr_core_stack_push",
+                "start": 729,
+                "end": 730
+            },
+            {
+                "name": "avr_core_irq_get_pending",
+                "start": 796,
+                "end": 801
+            },
+            {
+                "name": "avr_core_irq_raise",
+                "start": 804,
+                "end": 814
+            },
+            {
+                "name": "avr_core_irq_clear",
+                "start": 817,
+                "end": 821
+            },
+            {
+                "name": "avr_core_insert_breakpoint",
+                "start": 834,
+                "end": 844
+            },
+            {
+                "name": "avr_core_remove_breakpoint",
+                "start": 848,
+                "end": 862
+            },
+            {
+                "name": "iter_enable_breakpoint",
+                "start": 874,
+                "end": 898
+            },
+            {
+                "name": "avr_core_disable_breakpoints",
+                "start": 905,
+                "end": 912
+            },
+            {
+                "name": "avr_core_enable_breakpoints",
+                "start": 918,
+                "end": 925
+            },
+            {
+                "name": "exec_next_instruction",
+                "start": 940,
+                "end": 963
+            },
+            {
+                "name": "avr_core_check_interrupts",
+                "start": 992,
+                "end": 1035
+            },
+            {
+                "name": "avr_core_step",
+                "start": 1043,
+                "end": 1081
+            },
+            {
+                "name": "avr_core_run",
+                "start": 1100,
+                "end": 1147
+            },
+            {
+                "name": "avr_core_reset",
+                "start": 1154,
+                "end": 1169
+            },
+            {
+                "name": "avr_core_add_ext_rd_wr",
+                "start": 1194,
+                "end": 1207
+            },
+            {
+                "name": "avr_core_dump_core",
+                "start": 1244,
+                "end": 1252
+            },
+            {
+                "name": "avr_core_load_program",
+                "start": 1257,
+                "end": 1261
+            },
+            {
+                "name": "avr_core_load_eeprom",
+                "start": 1264,
+                "end": 1270
+            }
+        ],
+        "src/sig.c": [
+            {
+                "name": "signal_handle_sigint",
+                "start": 53,
+                "end": 57
+            },
+            {
+                "name": "signal_watch_start",
+                "start": 66,
+                "end": 88
+            },
+            {
+                "name": "signal_watch_stop",
+                "start": 96,
+                "end": 110
+            },
+            {
+                "name": "signal_has_occurred",
+                "start": 118,
+                "end": 134
+            },
+            {
+                "name": "signal_reset",
+                "start": 141,
+                "end": 145
+            }
+        ],
+        "src/memory.c": [
+            {
+                "name": "mem_new",
+                "start": 65,
+                "end": 75
+            },
+            {
+                "name": "mem_construct",
+                "start": 79,
+                "end": 94
+            },
+            {
+                "name": "mem_destroy",
+                "start": 98,
+                "end": 119
+            },
+            {
+                "name": "mem_attach",
+                "start": 129,
+                "end": 154
+            },
+            {
+                "name": "mem_get_vdevice_by_addr",
+                "start": 158,
+                "end": 162
+            },
+            {
+                "name": "mem_get_vdevice_by_name",
+                "start": 168,
+                "end": 178
+            },
+            {
+                "name": "mem_get_cell",
+                "start": 180,
+                "end": 184
+            },
+            {
+                "name": "mem_is_io_reg",
+                "start": 186,
+                "end": 190
+            },
+            {
+                "name": "mem_get_name",
+                "start": 192,
+                "end": 196
+            },
+            {
+                "name": "mem_set_addr_name",
+                "start": 198,
+                "end": 202
+            },
+            {
+                "name": "mem_read",
+                "start": 211,
+                "end": 237
+            },
+            {
+                "name": "mem_write",
+                "start": 246,
+                "end": 277
+            },
+            {
+                "name": "mem_reset",
+                "start": 283,
+                "end": 295
+            },
+            {
+                "name": "mem_reg_dump_core",
+                "start": 297,
+                "end": 310
+            },
+            {
+                "name": "mem_io_fetch",
+                "start": 321,
+                "end": 359
+            },
+            {
+                "name": "mem_io_reg_dump_core",
+                "start": 361,
+                "end": 387
+            },
+            {
+                "name": "mem_sram_display",
+                "start": 389,
+                "end": 427
+            },
+            {
+                "name": "mem_sram_dump_core",
+                "start": 429,
+                "end": 458
+            },
+            {
+                "name": "mem_dump_core",
+                "start": 482,
+                "end": 489
+            }
+        ],
+        "src/display.c": [
+            {
+                "name": "display_open",
+                "start": 84,
+                "end": 176
+            },
+            {
+                "name": "display_close",
+                "start": 180,
+                "end": 192
+            },
+            {
+                "name": "checksum",
+                "start": 194,
+                "end": 205
+            },
+            {
+                "name": "display_send_msg",
+                "start": 219,
+                "end": 247
+            },
+            {
+                "name": "display_clock",
+                "start": 254,
+                "end": 263
+            },
+            {
+                "name": "display_pc",
+                "start": 268,
+                "end": 277
+            },
+            {
+                "name": "display_reg",
+                "start": 283,
+                "end": 292
+            },
+            {
+                "name": "display_io_reg",
+                "start": 298,
+                "end": 307
+            },
+            {
+                "name": "display_io_reg_name",
+                "start": 315,
+                "end": 324
+            },
+            {
+                "name": "display_flash",
+                "start": 339,
+                "end": 361
+            },
+            {
+                "name": "display_sram",
+                "start": 371,
+                "end": 393
+            },
+            {
+                "name": "display_eeprom",
+                "start": 403,
+                "end": 425
+            }
+        ],
+        "src/eeprom.c": [
+            {
+                "name": "eeprom_new",
+                "start": 69,
+                "end": 79
+            },
+            {
+                "name": "eeprom_construct",
+                "start": 81,
+                "end": 101
+            },
+            {
+                "name": "eeprom_destroy",
+                "start": 103,
+                "end": 114
+            },
+            {
+                "name": "eeprom_get_size",
+                "start": 116,
+                "end": 120
+            },
+            {
+                "name": "eeprom_reg_read",
+                "start": 122,
+                "end": 140
+            },
+            {
+                "name": "eeprom_reg_write",
+                "start": 142,
+                "end": 176
+            },
+            {
+                "name": "eeprom_reg_reset",
+                "start": 178,
+                "end": 190
+            },
+            {
+                "name": "eeprom_wr_eecr",
+                "start": 192,
+                "end": 251
+            },
+            {
+                "name": "eeprom_wr_op_cb",
+                "start": 261,
+                "end": 292
+            },
+            {
+                "name": "eeprom_mwe_clr_cb",
+                "start": 298,
+                "end": 313
+            },
+            {
+                "name": "eeprom_load_from_bin_file",
+                "start": 315,
+                "end": 341
+            },
+            {
+                "name": "eeprom_load_from_file",
+                "start": 345,
+                "end": 359
+            },
+            {
+                "name": "eeprom_dump_core",
+                "start": 361,
+                "end": 403
+            }
+        ],
+        "src/usb.c": [
+            {
+                "name": "usbi_add_addr",
+                "start": 65,
+                "end": 66
+            },
+            {
+                "name": "usbi_create",
+                "start": 77,
+                "end": 86
+            },
+            {
+                "name": "usb_intr_new",
+                "start": 88,
+                "end": 98
+            },
+            {
+                "name": "usb_intr_construct",
+                "start": 102,
+                "end": 114
+            },
+            {
+                "name": "usbi_add_addr",
+                "start": 116,
+                "end": 176
+            },
+            {
+                "name": "usb_intr_destroy",
+                "start": 180,
+                "end": 187
+            },
+            {
+                "name": "usb_intr_read",
+                "start": 189,
+                "end": 218
+            },
+            {
+                "name": "usb_intr_write",
+                "start": 220,
+                "end": 243
+            },
+            {
+                "name": "usb_intr_reset",
+                "start": 245,
+                "end": 252
+            },
+            {
+                "name": "usb_intr_reg_name",
+                "start": 254,
+                "end": 283
+            },
+            {
+                "name": "usb_add_addr",
+                "start": 291,
+                "end": 292
+            },
+            {
+                "name": "usb_create",
+                "start": 300,
+                "end": 304
+            },
+            {
+                "name": "usb_new",
+                "start": 306,
+                "end": 316
+            },
+            {
+                "name": "usb_construct",
+                "start": 320,
+                "end": 331
+            },
+            {
+                "name": "usb_add_addr",
+                "start": 333,
+                "end": 475
+            },
+            {
+                "name": "usb_destroy",
+                "start": 479,
+                "end": 486
+            },
+            {
+                "name": "usb_read",
+                "start": 488,
+                "end": 638
+            },
+            {
+                "name": "usb_write",
+                "start": 640,
+                "end": 757
+            },
+            {
+                "name": "usb_reset",
+                "start": 759,
+                "end": 771
+            },
+            {
+                "name": "usb_reg_name",
+                "start": 773,
+                "end": 913
+            },
+            {
+                "name": "usb_port_rd",
+                "start": 915,
+                "end": 937
+            },
+            {
+                "name": "usb_port_wr",
+                "start": 939,
+                "end": 943
+            }
+        ],
+        "src/avrerror.c": [
+            {
+                "name": "strip_dir",
+                "start": 56,
+                "end": 80
+            },
+            {
+                "name": "private_avr_message",
+                "start": 87,
+                "end": 104
+            },
+            {
+                "name": "private_avr_warning",
+                "start": 106,
+                "end": 123
+            },
+            {
+                "name": "private_avr_error",
+                "start": 125,
+                "end": 144
+            }
+        ],
+        "src/main.c": [
+            {
+                "name": "usage",
+                "start": 168,
+                "end": 176
+            },
+            {
+                "name": "parse_cmd_line",
+                "start": 204,
+                "end": 337
+            },
+            {
+                "name": "ext_port_rd",
+                "start": 339,
+                "end": 361
+            },
+            {
+                "name": "ext_port_wr",
+                "start": 363,
+                "end": 368
+            },
+            {
+                "name": "atexit_cleanup",
+                "start": 372,
+                "end": 393
+            },
+            {
+                "name": "main",
+                "start": 399,
+                "end": 479
+            }
+        ],
+        "src/flash.c": [
+            {
+                "name": "flash_write",
+                "start": 85,
+                "end": 90
+            },
+            {
+                "name": "flash_write_lo8",
+                "start": 97,
+                "end": 101
+            },
+            {
+                "name": "flash_write_hi8",
+                "start": 108,
+                "end": 112
+            },
+            {
+                "name": "flash_new",
+                "start": 116,
+                "end": 126
+            },
+            {
+                "name": "flash_construct",
+                "start": 130,
+                "end": 144
+            },
+            {
+                "name": "flash_destroy",
+                "start": 152,
+                "end": 159
+            },
+            {
+                "name": "flash_load_from_file",
+                "start": 163,
+                "end": 177
+            },
+            {
+                "name": "flash_load_from_bin_file",
+                "start": 179,
+                "end": 205
+            },
+            {
+                "name": "flash_get_size",
+                "start": 209,
+                "end": 213
+            },
+            {
+                "name": "flash_dump_core",
+                "start": 222,
+                "end": 262
+            }
+        ],
+        "src/disp-vcd/vcd.c": [
+            {
+                "name": "vcd_new_signal",
+                "start": 100,
+                "end": 137
+            },
+            {
+                "name": "vcd_free_signals",
+                "start": 139,
+                "end": 157
+            },
+            {
+                "name": "vcd_close",
+                "start": 161,
+                "end": 169
+            },
+            {
+                "name": "vcd_open",
+                "start": 173,
+                "end": 200
+            },
+            {
+                "name": "vcd_exit",
+                "start": 204,
+                "end": 225
+            },
+            {
+                "name": "vcd_init",
+                "start": 229,
+                "end": 262
+            },
+            {
+                "name": "vcd_write_time",
+                "start": 268,
+                "end": 282
+            },
+            {
+                "name": "vcd_write_version",
+                "start": 286,
+                "end": 298
+            },
+            {
+                "name": "vcd_write_timescale",
+                "start": 302,
+                "end": 314
+            },
+            {
+                "name": "vcd_bind_io_reg_shortcut",
+                "start": 316,
+                "end": 363
+            },
+            {
+                "name": "vcd_set_frequency",
+                "start": 367,
+                "end": 373
+            },
+            {
+                "name": "vcd_set_file_name",
+                "start": 377,
+                "end": 386
+            },
+            {
+                "name": "vcd_trace_io_reg",
+                "start": 391,
+                "end": 399
+            },
+            {
+                "name": "vcd_trace_reg",
+                "start": 403,
+                "end": 420
+            },
+            {
+                "name": "vcd_trace_sram",
+                "start": 424,
+                "end": 444
+            },
+            {
+                "name": "vcd_trace_sp",
+                "start": 448,
+                "end": 458
+            },
+            {
+                "name": "vcd_trace_pc",
+                "start": 462,
+                "end": 472
+            },
+            {
+                "name": "vcd_read_config",
+                "start": 476,
+                "end": 500
+            },
+            {
+                "name": "vcd_write_signals",
+                "start": 504,
+                "end": 519
+            },
+            {
+                "name": "vcd_write_header",
+                "start": 523,
+                "end": 550
+            },
+            {
+                "name": "vcd_write_bit8",
+                "start": 554,
+                "end": 562
+            },
+            {
+                "name": "vcd_write_bit16",
+                "start": 566,
+                "end": 574
+            },
+            {
+                "name": "vcd_write_io_reg",
+                "start": 578,
+                "end": 598
+            },
+            {
+                "name": "vcd_write_reg",
+                "start": 602,
+                "end": 621
+            },
+            {
+                "name": "vcd_write_sram",
+                "start": 625,
+                "end": 647
+            },
+            {
+                "name": "vcd_write_sp",
+                "start": 651,
+                "end": 673
+            },
+            {
+                "name": "vcd_write_pc",
+                "start": 677,
+                "end": 695
+            },
+            {
+                "name": "vcd_set_clock",
+                "start": 699,
+                "end": 706
+            },
+            {
+                "name": "vcd_write_clock",
+                "start": 710,
+                "end": 730
+            }
+        ],
+        "src/disp-vcd/config_scanner.c": [
+            {
+                "name": "config_lex",
+                "start": 615,
+                "end": 928
+            },
+            {
+                "name": "yy_get_next_buffer",
+                "start": 939,
+                "end": 1066
+            },
+            {
+                "name": "yy_get_previous_state",
+                "start": 1071,
+                "end": 1096
+            },
+            {
+                "name": "yy_try_NUL_trans",
+                "start": 1106,
+                "end": 1131
+            },
+            {
+                "name": "config_restart",
+                "start": 1257,
+                "end": 1268
+            },
+            {
+                "name": "config__switch_to_buffer",
+                "start": 1272,
+                "end": 1298
+            },
+            {
+                "name": "config__load_buffer_state",
+                "start": 1302,
+                "end": 1311
+            },
+            {
+                "name": "config__create_buffer",
+                "start": 1315,
+                "end": 1342
+            },
+            {
+                "name": "config__delete_buffer",
+                "start": 1346,
+                "end": 1362
+            },
+            {
+                "name": "config__init_buffer",
+                "start": 1367,
+                "end": 1390
+            },
+            {
+                "name": "config__flush_buffer",
+                "start": 1394,
+                "end": 1420
+            },
+            {
+                "name": "config__scan_buffer",
+                "start": 1425,
+                "end": 1457
+            },
+            {
+                "name": "config__scan_string",
+                "start": 1463,
+                "end": 1474
+            },
+            {
+                "name": "config__scan_bytes",
+                "start": 1480,
+                "end": 1513
+            },
+            {
+                "name": "yy_fatal_error",
+                "start": 1574,
+                "end": 1582
+            },
+            {
+                "name": "yy_flex_alloc",
+                "start": 1638,
+                "end": 1645
+            },
+            {
+                "name": "yy_flex_realloc",
+                "start": 1648,
+                "end": 1663
+            },
+            {
+                "name": "yy_flex_free",
+                "start": 1666,
+                "end": 1673
+            },
+            {
+                "name": "config_scanner_init",
+                "start": 1685,
+                "end": 1690
+            },
+            {
+                "name": "config_get_line",
+                "start": 1692,
+                "end": 1695
+            }
+        ],
+        "src/disp-vcd/disp.c": [
+            {
+                "name": "hex2nib",
+                "start": 105,
+                "end": 122
+            },
+            {
+                "name": "disp_sig_handler",
+                "start": 124,
+                "end": 133
+            },
+            {
+                "name": "disp_read_byte",
+                "start": 138,
+                "end": 165
+            },
+            {
+                "name": "disp_set_sram_values",
+                "start": 167,
+                "end": 188
+            },
+            {
+                "name": "disp_usage",
+                "start": 193,
+                "end": 200
+            },
+            {
+                "name": "disp_parse_packet",
+                "start": 204,
+                "end": 313
+            },
+            {
+                "name": "disp_read_packet",
+                "start": 318,
+                "end": 368
+            },
+            {
+                "name": "disp_check_update_pipe",
+                "start": 374,
+                "end": 407
+            },
+            {
+                "name": "disp_parse_cmd_line",
+                "start": 427,
+                "end": 469
+            },
+            {
+                "name": "main",
+                "start": 471,
+                "end": 549
+            }
+        ],
+        "src/disp-vcd/config_parser.c": [
+            {
+                "name": "yydestruct",
+                "start": 749,
+                "end": 767
+            },
+            {
+                "name": "config_parse",
+                "start": 812,
+                "end": 1411
+            },
+            {
+                "name": "config_error",
+                "start": 1429,
+                "end": 1433
+            },
+            {
+                "name": "parse_config",
+                "start": 1442,
+                "end": 1457
+            }
+        ],
+        "src/disp/disp.c": [
+            {
+                "name": "hex2nib",
+                "start": 122,
+                "end": 139
+            },
+            {
+                "name": "sram_init",
+                "start": 141,
+                "end": 158
+            },
+            {
+                "name": "sram_vis_setup",
+                "start": 160,
+                "end": 170
+            },
+            {
+                "name": "sram_destroy",
+                "start": 172,
+                "end": 177
+            },
+            {
+                "name": "disp_sig_handler",
+                "start": 179,
+                "end": 191
+            },
+            {
+                "name": "disp_read_byte",
+                "start": 196,
+                "end": 226
+            },
+            {
+                "name": "disp_draw_borders",
+                "start": 228,
+                "end": 247
+            },
+            {
+                "name": "disp_print_reg",
+                "start": 249,
+                "end": 258
+            },
+            {
+                "name": "disp_print_pc",
+                "start": 260,
+                "end": 266
+            },
+            {
+                "name": "disp_print_sp",
+                "start": 268,
+                "end": 272
+            },
+            {
+                "name": "disp_print_addr_reg",
+                "start": 276,
+                "end": 281
+            },
+            {
+                "name": "disp_print_float_reg",
+                "start": 288,
+                "end": 295
+            },
+            {
+                "name": "disp_print_sreg",
+                "start": 297,
+                "end": 306
+            },
+            {
+                "name": "disp_reg_labels",
+                "start": 308,
+                "end": 356
+            },
+            {
+                "name": "disp_print_io_reg",
+                "start": 358,
+                "end": 367
+            },
+            {
+                "name": "disp_print_io_reg_name",
+                "start": 369,
+                "end": 384
+            },
+            {
+                "name": "disp_io_reg_labels",
+                "start": 388,
+                "end": 413
+            },
+            {
+                "name": "disp_update_sram",
+                "start": 415,
+                "end": 443
+            },
+            {
+                "name": "disp_set_sram_values",
+                "start": 445,
+                "end": 472
+            },
+            {
+                "name": "disp_move_cursor",
+                "start": 477,
+                "end": 519
+            },
+            {
+                "name": "disp_cycle_cur_win",
+                "start": 521,
+                "end": 535
+            },
+            {
+                "name": "disp_initialize",
+                "start": 537,
+                "end": 598
+            },
+            {
+                "name": "disp_change_size",
+                "start": 602,
+                "end": 626
+            },
+            {
+                "name": "disp_delete_windows",
+                "start": 628,
+                "end": 634
+            },
+            {
+                "name": "disp_cleanup",
+                "start": 636,
+                "end": 642
+            },
+            {
+                "name": "disp_usage",
+                "start": 644,
+                "end": 651
+            },
+            {
+                "name": "disp_check_for_user_input",
+                "start": 661,
+                "end": 783
+            },
+            {
+                "name": "disp_parse_packet",
+                "start": 787,
+                "end": 891
+            },
+            {
+                "name": "disp_read_packet",
+                "start": 896,
+                "end": 946
+            },
+            {
+                "name": "disp_check_update_pipe",
+                "start": 952,
+                "end": 985
+            },
+            {
+                "name": "disp_parse_cmd_line",
+                "start": 1005,
+                "end": 1047
+            },
+            {
+                "name": "main",
+                "start": 1049,
+                "end": 1169
+            }
+        ],
+        "src/getopt/gnu_getopt.h": [
+            {
+                "name": "getopt_long",
+                "start": 128,
+                "end": 129
+            },
+            {
+                "name": "getopt_long_only",
+                "start": 130,
+                "end": 132
+            },
+            {
+                "name": "_getopt_internal",
+                "start": 135,
+                "end": 138
+            }
+        ]
+    }
+}

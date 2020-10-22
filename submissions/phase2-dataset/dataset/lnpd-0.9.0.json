@@ -1,0 +1,558 @@
+{
+    "lnpd-0.9.0": {
+        "dllx/loader2.c": [
+            {
+                "name": "msecs2timeval",
+                "start": 93,
+                "end": 97
+            },
+            {
+                "name": "msleep",
+                "start": 100,
+                "end": 117
+            },
+            {
+                "name": "lnp_assured_write",
+                "start": 121,
+                "end": 170
+            },
+            {
+                "name": "ahandler",
+                "start": 172,
+                "end": 181
+            },
+            {
+                "name": "lnp_download",
+                "start": 184,
+                "end": 208
+            },
+            {
+                "name": "main",
+                "start": 210,
+                "end": 314
+            }
+        ],
+        "dllx/lx.c": [
+            {
+                "name": "lx_write",
+                "start": 51,
+                "end": 81
+            },
+            {
+                "name": "lx_read",
+                "start": 83,
+                "end": 129
+            },
+            {
+                "name": "lx_relocate",
+                "start": 131,
+                "end": 146
+            }
+        ],
+        "lnpd+liblnp/lnpd/daemon.c": [
+            {
+                "name": "get_num_clients",
+                "start": 33,
+                "end": 36
+            },
+            {
+                "name": "start_server",
+                "start": 38,
+                "end": 73
+            },
+            {
+                "name": "daemon_init",
+                "start": 75,
+                "end": 83
+            },
+            {
+                "name": "stop_server",
+                "start": 85,
+                "end": 89
+            },
+            {
+                "name": "set_socket_descriptors",
+                "start": 91,
+                "end": 130
+            },
+            {
+                "name": "get_packet",
+                "start": 132,
+                "end": 162
+            },
+            {
+                "name": "confirm_packet",
+                "start": 164,
+                "end": 172
+            },
+            {
+                "name": "deliver_packet",
+                "start": 174,
+                "end": 193
+            },
+            {
+                "name": "append_to_list",
+                "start": 195,
+                "end": 207
+            },
+            {
+                "name": "check_new_clients",
+                "start": 209,
+                "end": 249
+            },
+            {
+                "name": "delete_client",
+                "start": 251,
+                "end": 277
+            },
+            {
+                "name": "process_rcv",
+                "start": 281,
+                "end": 373
+            },
+            {
+                "name": "process_tx",
+                "start": 377,
+                "end": 421
+            },
+            {
+                "name": "serv_clients",
+                "start": 424,
+                "end": 437
+            }
+        ],
+        "lnpd+liblnp/lnpd/transceiver.c": [
+            {
+                "name": "msecs2timeval",
+                "start": 44,
+                "end": 48
+            },
+            {
+                "name": "msleep",
+                "start": 51,
+                "end": 68
+            },
+            {
+                "name": "set_time",
+                "start": 72,
+                "end": 80
+            },
+            {
+                "name": "check_expired",
+                "start": 84,
+                "end": 94
+            },
+            {
+                "name": "rx_flush",
+                "start": 98,
+                "end": 104
+            },
+            {
+                "name": "tx_flush",
+                "start": 107,
+                "end": 110
+            },
+            {
+                "name": "rx_error",
+                "start": 112,
+                "end": 118
+            },
+            {
+                "name": "tx_error",
+                "start": 120,
+                "end": 127
+            },
+            {
+                "name": "send_keepalive",
+                "start": 129,
+                "end": 146
+            },
+            {
+                "name": "check_keepalive_urgent",
+                "start": 148,
+                "end": 161
+            },
+            {
+                "name": "rcx_read",
+                "start": 163,
+                "end": 233
+            },
+            {
+                "name": "rcx_write",
+                "start": 235,
+                "end": 269
+            },
+            {
+                "name": "init_tower",
+                "start": 271,
+                "end": 295
+            },
+            {
+                "name": "check_interbyte_timeout",
+                "start": 297,
+                "end": 305
+            },
+            {
+                "name": "init_transceiver",
+                "start": 307,
+                "end": 323
+            },
+            {
+                "name": "run_transceiver",
+                "start": 325,
+                "end": 351
+            }
+        ],
+        "lnpd+liblnp/lnpd/rcxtty.c": [
+            {
+                "name": "make_lockfile",
+                "start": 33,
+                "end": 115
+            },
+            {
+                "name": "tty_exit",
+                "start": 117,
+                "end": 120
+            },
+            {
+                "name": "tty_init",
+                "start": 123,
+                "end": 189
+            }
+        ],
+        "lnpd+liblnp/lnpd/logger.c": [
+            {
+                "name": "log_init",
+                "start": 35,
+                "end": 58
+            },
+            {
+                "name": "log_set_level",
+                "start": 60,
+                "end": 63
+            },
+            {
+                "name": "log",
+                "start": 65,
+                "end": 92
+            }
+        ],
+        "lnpd+liblnp/lnpd/lnp.c": [
+            {
+                "name": "lnp_checksum",
+                "start": 36,
+                "end": 49
+            },
+            {
+                "name": "lnp_set_speed",
+                "start": 52,
+                "end": 60
+            },
+            {
+                "name": "lnp_integrity_byte",
+                "start": 63,
+                "end": 104
+            },
+            {
+                "name": "lnp_integrity_reset",
+                "start": 107,
+                "end": 111
+            },
+            {
+                "name": "lnp_integrity_active",
+                "start": 114,
+                "end": 117
+            }
+        ],
+        "lnpd+liblnp/lnpd/main.c": [
+            {
+                "name": "parse_opt",
+                "start": 72,
+                "end": 154
+            },
+            {
+                "name": "go_realtime",
+                "start": 159,
+                "end": 186
+            },
+            {
+                "name": "daemonise",
+                "start": 189,
+                "end": 208
+            },
+            {
+                "name": "signal_handler",
+                "start": 211,
+                "end": 215
+            },
+            {
+                "name": "install_handler",
+                "start": 218,
+                "end": 231
+            },
+            {
+                "name": "cleanup",
+                "start": 234,
+                "end": 237
+            },
+            {
+                "name": "main",
+                "start": 239,
+                "end": 336
+            }
+        ],
+        "lnpd+liblnp/applications/loader.c": [
+            {
+                "name": "lnp_assured_write",
+                "start": 86,
+                "end": 117
+            },
+            {
+                "name": "ahandler",
+                "start": 119,
+                "end": 128
+            },
+            {
+                "name": "lnp_download",
+                "start": 131,
+                "end": 155
+            },
+            {
+                "name": "main",
+                "start": 157,
+                "end": 259
+            }
+        ],
+        "lnpd+liblnp/applications/lnptest2.c": [
+            {
+                "name": "addr_handler",
+                "start": 11,
+                "end": 25
+            },
+            {
+                "name": "main",
+                "start": 27,
+                "end": 41
+            }
+        ],
+        "lnpd+liblnp/applications/lx.c": [
+            {
+                "name": "lx_write",
+                "start": 51,
+                "end": 81
+            },
+            {
+                "name": "lx_read",
+                "start": 83,
+                "end": 129
+            },
+            {
+                "name": "lx_relocate",
+                "start": 131,
+                "end": 146
+            }
+        ],
+        "lnpd+liblnp/applications/lnptest.c": [
+            {
+                "name": "addr_handler_1",
+                "start": 22,
+                "end": 29
+            },
+            {
+                "name": "addr_handler_2",
+                "start": 31,
+                "end": 38
+            },
+            {
+                "name": "int_handler",
+                "start": 40,
+                "end": 47
+            },
+            {
+                "name": "main",
+                "start": 49,
+                "end": 92
+            }
+        ],
+        "lnpd+liblnp/liblnp/liblnp.h": [
+            {
+                "name": "lnp_init",
+                "start": 48,
+                "end": 55
+            },
+            {
+                "name": "lnp_addressing_write",
+                "start": 80,
+                "end": 81
+            }
+        ],
+        "lnpd+liblnp/liblnp/stub.c": [
+            {
+                "name": "msecs2timeval",
+                "start": 51,
+                "end": 55
+            },
+            {
+                "name": "lnp_checksum",
+                "start": 57,
+                "end": 70
+            },
+            {
+                "name": "block_rcv",
+                "start": 72,
+                "end": 78
+            },
+            {
+                "name": "unblock_rcv",
+                "start": 80,
+                "end": 86
+            },
+            {
+                "name": "lnp_integrity_set_handler",
+                "start": 88,
+                "end": 93
+            },
+            {
+                "name": "lnp_addressing_set_handler",
+                "start": 95,
+                "end": 100
+            },
+            {
+                "name": "lnp_shutdown",
+                "start": 102,
+                "end": 116
+            },
+            {
+                "name": "lnp_receive_packet",
+                "start": 118,
+                "end": 144
+            },
+            {
+                "name": "transmit_ack",
+                "start": 146,
+                "end": 170
+            },
+            {
+                "name": "receive_byte",
+                "start": 172,
+                "end": 212
+            },
+            {
+                "name": "rcv_handler",
+                "start": 214,
+                "end": 246
+            },
+            {
+                "name": "lnp_logical_write",
+                "start": 248,
+                "end": 302
+            },
+            {
+                "name": "lnp_integrity_write",
+                "start": 304,
+                "end": 311
+            },
+            {
+                "name": "lnp_addressing_write",
+                "start": 313,
+                "end": 323
+            },
+            {
+                "name": "lnp_init",
+                "start": 325,
+                "end": 395
+            }
+        ],
+        "lnpd+liblnp/liblnp/lnptest.c": [
+            {
+                "name": "addr_handler_1",
+                "start": 22,
+                "end": 29
+            },
+            {
+                "name": "addr_handler_2",
+                "start": 31,
+                "end": 38
+            },
+            {
+                "name": "int_handler",
+                "start": 40,
+                "end": 47
+            },
+            {
+                "name": "main",
+                "start": 49,
+                "end": 92
+            }
+        ],
+        "lnpd+liblnp/rcx/lnptest2.c": [
+            {
+                "name": "printInt",
+                "start": 15,
+                "end": 22
+            },
+            {
+                "name": "prgmKeyCheck",
+                "start": 24,
+                "end": 27
+            },
+            {
+                "name": "main",
+                "start": 29,
+                "end": 44
+            }
+        ],
+        "lnpd+liblnp/rcx/lnptest.c": [
+            {
+                "name": "prgmKeyCheck",
+                "start": 33,
+                "end": 36
+            },
+            {
+                "name": "countchanged",
+                "start": 38,
+                "end": 54
+            },
+            {
+                "name": "countOrKey",
+                "start": 56,
+                "end": 59
+            },
+            {
+                "name": "childTest",
+                "start": 61,
+                "end": 64
+            },
+            {
+                "name": "show_counters",
+                "start": 66,
+                "end": 69
+            },
+            {
+                "name": "packet_handler",
+                "start": 71,
+                "end": 74
+            },
+            {
+                "name": "sender_1",
+                "start": 76,
+                "end": 94
+            },
+            {
+                "name": "sender_2",
+                "start": 96,
+                "end": 114
+            },
+            {
+                "name": "sender_3",
+                "start": 116,
+                "end": 134
+            },
+            {
+                "name": "main",
+                "start": 136,
+                "end": 164
+            }
+        ]
+    }
+}

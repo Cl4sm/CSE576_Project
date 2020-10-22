@@ -1,0 +1,866 @@
+{
+    "lbzip2-2.5": {
+        "src/signals.c": [
+            {
+                "name": "xempty",
+                "start": 34,
+                "end": 39
+            },
+            {
+                "name": "xadd",
+                "start": 41,
+                "end": 46
+            },
+            {
+                "name": "xmask",
+                "start": 48,
+                "end": 53
+            },
+            {
+                "name": "xpending",
+                "start": 55,
+                "end": 60
+            },
+            {
+                "name": "xmember",
+                "start": 62,
+                "end": 73
+            },
+            {
+                "name": "xaction",
+                "start": 75,
+                "end": 86
+            },
+            {
+                "name": "signal_handler",
+                "start": 121,
+                "end": 134
+            },
+            {
+                "name": "setup_signals",
+                "start": 144,
+                "end": 161
+            },
+            {
+                "name": "cli",
+                "start": 165,
+                "end": 174
+            },
+            {
+                "name": "sti",
+                "start": 178,
+                "end": 187
+            },
+            {
+                "name": "terminate",
+                "start": 191,
+                "end": 206
+            },
+            {
+                "name": "halt",
+                "start": 210,
+                "end": 251
+            },
+            {
+                "name": "xraise",
+                "start": 254,
+                "end": 259
+            },
+            {
+                "name": "promote",
+                "start": 263,
+                "end": 275
+            },
+            {
+                "name": "bailout",
+                "start": 296,
+                "end": 308
+            }
+        ],
+        "src/main.h": [
+            {
+                "name": "info",
+                "start": 61,
+                "end": 62
+            },
+            {
+                "name": "infof",
+                "start": 63,
+                "end": 64
+            },
+            {
+                "name": "infox",
+                "start": 65,
+                "end": 66
+            },
+            {
+                "name": "infofx",
+                "start": 67,
+                "end": 68
+            },
+            {
+                "name": "warn",
+                "start": 69,
+                "end": 70
+            },
+            {
+                "name": "warnf",
+                "start": 71,
+                "end": 72
+            },
+            {
+                "name": "warnx",
+                "start": 73,
+                "end": 74
+            },
+            {
+                "name": "warnfx",
+                "start": 75,
+                "end": 76
+            },
+            {
+                "name": "fail",
+                "start": 77,
+                "end": 78
+            },
+            {
+                "name": "failf",
+                "start": 79,
+                "end": 80
+            },
+            {
+                "name": "failx",
+                "start": 81,
+                "end": 82
+            },
+            {
+                "name": "failfx",
+                "start": 83,
+                "end": 84
+            },
+            {
+                "name": "display",
+                "start": 85,
+                "end": 86
+            }
+        ],
+        "src/compress.c": [
+            {
+                "name": "can_collect",
+                "start": 66,
+                "end": 70
+            },
+            {
+                "name": "do_collect",
+                "start": 73,
+                "end": 116
+            },
+            {
+                "name": "can_collect_seq",
+                "start": 119,
+                "end": 123
+            },
+            {
+                "name": "do_collect_seq",
+                "start": 126,
+                "end": 193
+            },
+            {
+                "name": "can_transmit",
+                "start": 196,
+                "end": 201
+            },
+            {
+                "name": "do_transmit",
+                "start": 204,
+                "end": 221
+            },
+            {
+                "name": "can_reorder",
+                "start": 224,
+                "end": 228
+            },
+            {
+                "name": "do_reorder",
+                "start": 231,
+                "end": 243
+            },
+            {
+                "name": "can_terminate",
+                "start": 246,
+                "end": 251
+            },
+            {
+                "name": "on_input_avail",
+                "start": 254,
+                "end": 269
+            },
+            {
+                "name": "on_write_complete",
+                "start": 272,
+                "end": 280
+            },
+            {
+                "name": "write_header",
+                "start": 283,
+                "end": 294
+            },
+            {
+                "name": "write_trailer",
+                "start": 297,
+                "end": 314
+            },
+            {
+                "name": "init",
+                "start": 317,
+                "end": 332
+            },
+            {
+                "name": "uninit",
+                "start": 335,
+                "end": 343
+            }
+        ],
+        "src/encode.c": [
+            {
+                "name": "encoder_init",
+                "start": 104,
+                "end": 126
+            },
+            {
+                "name": "collect",
+                "start": 129,
+                "end": 331
+            },
+            {
+                "name": "make_map_e",
+                "start": 335,
+                "end": 350
+            },
+            {
+                "name": "do_mtf",
+                "start": 355,
+                "end": 420
+            },
+            {
+                "name": "encode",
+                "start": 422,
+                "end": 538
+            },
+            {
+                "name": "sort_alphabet",
+                "start": 546,
+                "end": 560
+            },
+            {
+                "name": "build_tree",
+                "start": 567,
+                "end": 608
+            },
+            {
+                "name": "compute_depths",
+                "start": 612,
+                "end": 642
+            },
+            {
+                "name": "package_merge",
+                "start": 653,
+                "end": 703
+            },
+            {
+                "name": "make_code_lengths",
+                "start": 706,
+                "end": 759
+            },
+            {
+                "name": "generate_initial_trees",
+                "start": 772,
+                "end": 834
+            },
+            {
+                "name": "find_best_tree",
+                "start": 839,
+                "end": 870
+            },
+            {
+                "name": "assign_codes",
+                "start": 875,
+                "end": 980
+            },
+            {
+                "name": "generate_prefix_code",
+                "start": 998,
+                "end": 1122
+            },
+            {
+                "name": "transmit",
+                "start": 1132,
+                "end": 1245
+            }
+        ],
+        "src/process.c": [
+            {
+                "name": "thread_entry",
+                "start": 79,
+                "end": 84
+            },
+            {
+                "name": "xcreate",
+                "start": 87,
+                "end": 98
+            },
+            {
+                "name": "xread",
+                "start": 101,
+                "end": 128
+            },
+            {
+                "name": "xwrite",
+                "start": 130,
+                "end": 154
+            },
+            {
+                "name": "up_heap",
+                "start": 161,
+                "end": 177
+            },
+            {
+                "name": "down_heap",
+                "start": 179,
+                "end": 202
+            },
+            {
+                "name": "source_thread_proc",
+                "start": 244,
+                "end": 291
+            },
+            {
+                "name": "source_release_buffer",
+                "start": 294,
+                "end": 303
+            },
+            {
+                "name": "source_close",
+                "start": 306,
+                "end": 314
+            },
+            {
+                "name": "sink_write_buffer",
+                "start": 317,
+                "end": 330
+            },
+            {
+                "name": "sink_thread_proc",
+                "start": 333,
+                "end": 401
+            },
+            {
+                "name": "select_task",
+                "start": 404,
+                "end": 417
+            },
+            {
+                "name": "worker_thread_proc",
+                "start": 420,
+                "end": 448
+            },
+            {
+                "name": "sched_lock",
+                "start": 452,
+                "end": 456
+            },
+            {
+                "name": "sched_unlock",
+                "start": 460,
+                "end": 469
+            },
+            {
+                "name": "init_io",
+                "start": 472,
+                "end": 481
+            },
+            {
+                "name": "uninit_io",
+                "start": 484,
+                "end": 496
+            },
+            {
+                "name": "primary_thread",
+                "start": 499,
+                "end": 532
+            },
+            {
+                "name": "copy_on_input_avail",
+                "start": 535,
+                "end": 543
+            },
+            {
+                "name": "copy_on_write_complete",
+                "start": 546,
+                "end": 554
+            },
+            {
+                "name": "copy_terminate",
+                "start": 557,
+                "end": 564
+            },
+            {
+                "name": "copy",
+                "start": 566,
+                "end": 590
+            },
+            {
+                "name": "schedule",
+                "start": 593,
+                "end": 603
+            },
+            {
+                "name": "set_memory_constraints",
+                "start": 607,
+                "end": 628
+            },
+            {
+                "name": "work",
+                "start": 631,
+                "end": 665
+            }
+        ],
+        "src/decode.h": [
+            {
+                "name": "parse",
+                "start": 72,
+                "end": 73
+            }
+        ],
+        "src/decode.c": [
+            {
+                "name": "make_tree",
+                "start": 190,
+                "end": 311
+            },
+            {
+                "name": "mtf_one",
+                "start": 439,
+                "end": 515
+            },
+            {
+                "name": "retrieve",
+                "start": 518,
+                "end": 798
+            },
+            {
+                "name": "decode",
+                "start": 851,
+                "end": 928
+            },
+            {
+                "name": "emit",
+                "start": 941,
+                "end": 1137
+            },
+            {
+                "name": "decoder_init",
+                "start": 1140,
+                "end": 1148
+            },
+            {
+                "name": "decoder_free",
+                "start": 1151,
+                "end": 1156
+            }
+        ],
+        "src/divbwt.c": [
+            {
+                "name": "ss_ilg",
+                "start": 153,
+                "end": 189
+            },
+            {
+                "name": "ss_isqrt",
+                "start": 214,
+                "end": 239
+            },
+            {
+                "name": "ss_compare",
+                "start": 247,
+                "end": 265
+            },
+            {
+                "name": "ss_compare_last",
+                "start": 267,
+                "end": 294
+            },
+            {
+                "name": "ss_insertionsort",
+                "start": 302,
+                "end": 318
+            },
+            {
+                "name": "ss_fixdown",
+                "start": 327,
+                "end": 341
+            },
+            {
+                "name": "ss_heapsort",
+                "start": 344,
+                "end": 363
+            },
+            {
+                "name": "ss_median3",
+                "start": 369,
+                "end": 380
+            },
+            {
+                "name": "ss_median5",
+                "start": 383,
+                "end": 395
+            },
+            {
+                "name": "ss_pivot",
+                "start": 398,
+                "end": 420
+            },
+            {
+                "name": "ss_partition",
+                "start": 426,
+                "end": 442
+            },
+            {
+                "name": "ss_mintrosort",
+                "start": 445,
+                "end": 578
+            },
+            {
+                "name": "ss_blockswap",
+                "start": 587,
+                "end": 594
+            },
+            {
+                "name": "ss_rotate",
+                "start": 596,
+                "end": 632
+            },
+            {
+                "name": "ss_inplacemerge",
+                "start": 637,
+                "end": 674
+            },
+            {
+                "name": "ss_mergeforward",
+                "start": 680,
+                "end": 727
+            },
+            {
+                "name": "ss_mergebackward",
+                "start": 730,
+                "end": 786
+            },
+            {
+                "name": "ss_swapmerge",
+                "start": 789,
+                "end": 873
+            },
+            {
+                "name": "sssort",
+                "start": 883,
+                "end": 954
+            },
+            {
+                "name": "tr_ilg",
+                "start": 961,
+                "end": 989
+            },
+            {
+                "name": "tr_insertionsort",
+                "start": 995,
+                "end": 1010
+            },
+            {
+                "name": "tr_fixdown",
+                "start": 1015,
+                "end": 1030
+            },
+            {
+                "name": "tr_heapsort",
+                "start": 1033,
+                "end": 1053
+            },
+            {
+                "name": "tr_median3",
+                "start": 1059,
+                "end": 1070
+            },
+            {
+                "name": "tr_median5",
+                "start": 1073,
+                "end": 1085
+            },
+            {
+                "name": "tr_pivot",
+                "start": 1088,
+                "end": 1111
+            },
+            {
+                "name": "trbudget_init",
+                "start": 1124,
+                "end": 1129
+            },
+            {
+                "name": "trbudget_check",
+                "start": 1131,
+                "end": 1139
+            },
+            {
+                "name": "tr_partition",
+                "start": 1144,
+                "end": 1184
+            },
+            {
+                "name": "tr_copy",
+                "start": 1186,
+                "end": 1211
+            },
+            {
+                "name": "tr_partialcopy",
+                "start": 1213,
+                "end": 1253
+            },
+            {
+                "name": "tr_introsort",
+                "start": 1255,
+                "end": 1477
+            },
+            {
+                "name": "trsort",
+                "start": 1485,
+                "end": 1530
+            },
+            {
+                "name": "sort_typeBstar",
+                "start": 1538,
+                "end": 1684
+            },
+            {
+                "name": "construct_BWT",
+                "start": 1686,
+                "end": 1752
+            },
+            {
+                "name": "divbwt",
+                "start": 1759,
+                "end": 1786
+            }
+        ],
+        "src/parse.c": [
+            {
+                "name": "parser_init",
+                "start": 124,
+                "end": 130
+            },
+            {
+                "name": "parse",
+                "start": 146,
+                "end": 264
+            },
+            {
+                "name": "scan",
+                "start": 274,
+                "end": 335
+            }
+        ],
+        "src/expand.c": [
+            {
+                "name": "err2str",
+                "start": 68,
+                "end": 94
+            },
+            {
+                "name": "bits_init",
+                "start": 229,
+                "end": 242
+            },
+            {
+                "name": "can_attach",
+                "start": 245,
+                "end": 252
+            },
+            {
+                "name": "attach",
+                "start": 254,
+                "end": 304
+            },
+            {
+                "name": "detach",
+                "start": 306,
+                "end": 343
+            },
+            {
+                "name": "advance",
+                "start": 347,
+                "end": 383
+            },
+            {
+                "name": "can_parse",
+                "start": 386,
+                "end": 391
+            },
+            {
+                "name": "do_parse",
+                "start": 393,
+                "end": 543
+            },
+            {
+                "name": "can_retrieve",
+                "start": 546,
+                "end": 550
+            },
+            {
+                "name": "do_retrieve",
+                "start": 552,
+                "end": 640
+            },
+            {
+                "name": "can_emit",
+                "start": 643,
+                "end": 650
+            },
+            {
+                "name": "do_emit",
+                "start": 652,
+                "end": 691
+            },
+            {
+                "name": "can_reorder",
+                "start": 694,
+                "end": 701
+            },
+            {
+                "name": "do_reorder",
+                "start": 703,
+                "end": 740
+            },
+            {
+                "name": "can_scan",
+                "start": 743,
+                "end": 748
+            },
+            {
+                "name": "do_scan",
+                "start": 750,
+                "end": 814
+            },
+            {
+                "name": "can_terminate",
+                "start": 817,
+                "end": 823
+            },
+            {
+                "name": "on_input_avail",
+                "start": 826,
+                "end": 862
+            },
+            {
+                "name": "on_write_complete",
+                "start": 865,
+                "end": 876
+            },
+            {
+                "name": "init",
+                "start": 879,
+                "end": 900
+            },
+            {
+                "name": "uninit",
+                "start": 903,
+                "end": 917
+            }
+        ],
+        "src/main.c": [
+            {
+                "name": "cleanup",
+                "start": 62,
+                "end": 75
+            },
+            {
+                "name": "xalloc_die",
+                "start": 78,
+                "end": 81
+            },
+            {
+                "name": "log_generic",
+                "start": 86,
+                "end": 87
+            },
+            {
+                "name": "log_generic",
+                "start": 89,
+                "end": 99
+            },
+            {
+                "name": "xstrtol",
+                "start": 155,
+                "end": 190
+            },
+            {
+                "name": "usage",
+                "start": 261,
+                "end": 269
+            },
+            {
+                "name": "version",
+                "start": 272,
+                "end": 280
+            },
+            {
+                "name": "opts_outmode",
+                "start": 289,
+                "end": 303
+            },
+            {
+                "name": "opts_decompress",
+                "start": 306,
+                "end": 314
+            },
+            {
+                "name": "opts_setup",
+                "start": 317,
+                "end": 622
+            },
+            {
+                "name": "suffix_xform",
+                "start": 655,
+                "end": 683
+            },
+            {
+                "name": "input_init",
+                "start": 698,
+                "end": 756
+            },
+            {
+                "name": "input_oprnd_rm",
+                "start": 759,
+                "end": 767
+            },
+            {
+                "name": "input_uninit",
+                "start": 770,
+                "end": 776
+            },
+            {
+                "name": "output_init",
+                "start": 791,
+                "end": 859
+            },
+            {
+                "name": "output_regf_uninit",
+                "start": 862,
+                "end": 900
+            },
+            {
+                "name": "main",
+                "start": 903,
+                "end": 981
+            }
+        ]
+    }
+}

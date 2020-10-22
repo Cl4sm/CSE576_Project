@@ -1,0 +1,878 @@
+{
+    "dns2tcp-0.5.2": {
+        "client/auth.c": [
+            {
+                "name": "list_resources",
+                "start": 44,
+                "end": 72
+            },
+            {
+                "name": "connect_resource",
+                "start": 82,
+                "end": 104
+            }
+        ],
+        "client/requests.c": [
+            {
+                "name": "create_req_hdr",
+                "start": 45,
+                "end": 50
+            },
+            {
+                "name": "add_query",
+                "start": 63,
+                "end": 81
+            },
+            {
+                "name": "data2qname",
+                "start": 89,
+                "end": 100
+            },
+            {
+                "name": "query_is_compressed",
+                "start": 109,
+                "end": 118
+            },
+            {
+                "name": "create_request",
+                "start": 128,
+                "end": 151
+            },
+            {
+                "name": "send_query",
+                "start": 160,
+                "end": 175
+            },
+            {
+                "name": "transceive_query",
+                "start": 187,
+                "end": 213
+            },
+            {
+                "name": "create_simple_req",
+                "start": 227,
+                "end": 246
+            },
+            {
+                "name": "push_req_data",
+                "start": 256,
+                "end": 290
+            }
+        ],
+        "client/client.c": [
+            {
+                "name": "delete_client",
+                "start": 62,
+                "end": 108
+            },
+            {
+                "name": "delete_all_client",
+                "start": 110,
+                "end": 117
+            },
+            {
+                "name": "add_client",
+                "start": 128,
+                "end": 192
+            },
+            {
+                "name": "check_incoming_ns_reply",
+                "start": 195,
+                "end": 221
+            },
+            {
+                "name": "check_incoming_client_data",
+                "start": 223,
+                "end": 248
+            },
+            {
+                "name": "check_incoming_client",
+                "start": 250,
+                "end": 277
+            },
+            {
+                "name": "get_socket_data",
+                "start": 289,
+                "end": 326
+            },
+            {
+                "name": "open_file",
+                "start": 337,
+                "end": 356
+            },
+            {
+                "name": "check_child",
+                "start": 364,
+                "end": 377
+            },
+            {
+                "name": "unix_check_for_data",
+                "start": 380,
+                "end": 399
+            },
+            {
+                "name": "check_for_data",
+                "start": 428,
+                "end": 435
+            },
+            {
+                "name": "do_client",
+                "start": 443,
+                "end": 479
+            }
+        ],
+        "client/queue.c": [
+            {
+                "name": "init_queue",
+                "start": 54,
+                "end": 66
+            },
+            {
+                "name": "delete_queue",
+                "start": 75,
+                "end": 81
+            },
+            {
+                "name": "queue_send",
+                "start": 94,
+                "end": 119
+            },
+            {
+                "name": "queue_resend",
+                "start": 133,
+                "end": 145
+            },
+            {
+                "name": "check_for_resent",
+                "start": 154,
+                "end": 184
+            },
+            {
+                "name": "queue_dump",
+                "start": 194,
+                "end": 215
+            },
+            {
+                "name": "queue_change_root",
+                "start": 225,
+                "end": 252
+            },
+            {
+                "name": "write_to_client",
+                "start": 254,
+                "end": 292
+            },
+            {
+                "name": "extract_data",
+                "start": 302,
+                "end": 352
+            },
+            {
+                "name": "queue_find_empty_data_cell",
+                "start": 361,
+                "end": 376
+            },
+            {
+                "name": "queue_prepare_ack",
+                "start": 386,
+                "end": 395
+            },
+            {
+                "name": "queue_flush",
+                "start": 407,
+                "end": 434
+            },
+            {
+                "name": "queue_put_nop",
+                "start": 444,
+                "end": 475
+            },
+            {
+                "name": "queue_get_udp_data",
+                "start": 488,
+                "end": 540
+            },
+            {
+                "name": "queue_get_tcp_data",
+                "start": 622,
+                "end": 678
+            }
+        ],
+        "client/options.c": [
+            {
+                "name": "usage",
+                "start": 55,
+                "end": 77
+            },
+            {
+                "name": "check_mandatory_param",
+                "start": 86,
+                "end": 105
+            },
+            {
+                "name": "client_copy_param",
+                "start": 116,
+                "end": 158
+            },
+            {
+                "name": "read_resolv",
+                "start": 168,
+                "end": 186
+            },
+            {
+                "name": "get_option",
+                "start": 235,
+                "end": 329
+            }
+        ],
+        "client/rr.c": [
+            {
+                "name": "get_rr_function_by_type",
+                "start": 43,
+                "end": 51
+            },
+            {
+                "name": "get_rr_function_by_name",
+                "start": 53,
+                "end": 61
+            },
+            {
+                "name": "jump_next_reply",
+                "start": 64,
+                "end": 90
+            },
+            {
+                "name": "rr_decode_next_reply_encode",
+                "start": 92,
+                "end": 109
+            },
+            {
+                "name": "rr_decode_next_reply_raw",
+                "start": 111,
+                "end": 125
+            }
+        ],
+        "client/socket.c": [
+            {
+                "name": "socket_is_valid",
+                "start": 39,
+                "end": 47
+            },
+            {
+                "name": "unix_get_simple_reply",
+                "start": 51,
+                "end": 85
+            },
+            {
+                "name": "get_simple_reply",
+                "start": 126,
+                "end": 134
+            },
+            {
+                "name": "set_nonblock",
+                "start": 144,
+                "end": 155
+            },
+            {
+                "name": "bind_socket",
+                "start": 164,
+                "end": 203
+            },
+            {
+                "name": "create_socket",
+                "start": 210,
+                "end": 235
+            }
+        ],
+        "client/select.c": [
+            {
+                "name": "add_socket",
+                "start": 46,
+                "end": 50
+            },
+            {
+                "name": "unix_prepare_select",
+                "start": 104,
+                "end": 134
+            },
+            {
+                "name": "prepare_select",
+                "start": 145,
+                "end": 152
+            }
+        ],
+        "client/command.c": [
+            {
+                "name": "count_arg",
+                "start": 49,
+                "end": 57
+            },
+            {
+                "name": "line_to_argv",
+                "start": 65,
+                "end": 79
+            },
+            {
+                "name": "create_process",
+                "start": 88,
+                "end": 135
+            }
+        ],
+        "client/session.c": [
+            {
+                "name": "request_challenge",
+                "start": 41,
+                "end": 56
+            },
+            {
+                "name": "send_response",
+                "start": 68,
+                "end": 84
+            },
+            {
+                "name": "create_session",
+                "start": 93,
+                "end": 126
+            }
+        ],
+        "client/main.c": [
+            {
+                "name": "main",
+                "start": 45,
+                "end": 66
+            }
+        ],
+        "common/memdump.c": [
+            {
+                "name": "memdump2",
+                "start": 27,
+                "end": 43
+            },
+            {
+                "name": "memdump",
+                "start": 45,
+                "end": 50
+            }
+        ],
+        "common/dns.c": [
+            {
+                "name": "jump_qname",
+                "start": 47,
+                "end": 65
+            },
+            {
+                "name": "jump_edns",
+                "start": 68,
+                "end": 94
+            },
+            {
+                "name": "jump_end_answer",
+                "start": 102,
+                "end": 129
+            },
+            {
+                "name": "get_edns_size",
+                "start": 131,
+                "end": 138
+            },
+            {
+                "name": "jump_end_query",
+                "start": 148,
+                "end": 166
+            },
+            {
+                "name": "search_dot",
+                "start": 168,
+                "end": 176
+            },
+            {
+                "name": "dns_encode",
+                "start": 183,
+                "end": 210
+            },
+            {
+                "name": "dns_simple_decode",
+                "start": 220,
+                "end": 246
+            },
+            {
+                "name": "dns_simple_decode_strip_dot",
+                "start": 255,
+                "end": 280
+            }
+        ],
+        "common/myrand.c": [
+            {
+                "name": "myrand",
+                "start": 37,
+                "end": 43
+            }
+        ],
+        "common/getopt.c": [
+            {
+                "name": "getopt",
+                "start": 15,
+                "end": 63
+            }
+        ],
+        "common/list.c": [
+            {
+                "name": "list_create_simple_cell",
+                "start": 35,
+                "end": 43
+            },
+            {
+                "name": "list_create_cell",
+                "start": 53,
+                "end": 62
+            },
+            {
+                "name": "list_add_simple_cell",
+                "start": 72,
+                "end": 83
+            },
+            {
+                "name": "list_add_cell",
+                "start": 93,
+                "end": 104
+            },
+            {
+                "name": "list_destroy_cell",
+                "start": 111,
+                "end": 118
+            },
+            {
+                "name": "list_destroy_simple_cell",
+                "start": 125,
+                "end": 132
+            }
+        ],
+        "common/mystrnlen.c": [
+            {
+                "name": "mystrnlen",
+                "start": 22,
+                "end": 29
+            }
+        ],
+        "common/base64.c": [
+            {
+                "name": "base64_encode",
+                "start": 57,
+                "end": 87
+            },
+            {
+                "name": "base64_decode",
+                "start": 89,
+                "end": 131
+            }
+        ],
+        "common/crc16.c": [
+            {
+                "name": "crc16_byte",
+                "start": 81,
+                "end": 84
+            },
+            {
+                "name": "crc16",
+                "start": 94,
+                "end": 101
+            }
+        ],
+        "common/hmac_sha1.c": [
+            {
+                "name": "sha1_starts",
+                "start": 77,
+                "end": 87
+            },
+            {
+                "name": "sha1_process",
+                "start": 89,
+                "end": 243
+            },
+            {
+                "name": "sha1_update",
+                "start": 248,
+                "end": 287
+            },
+            {
+                "name": "sha1_finish",
+                "start": 300,
+                "end": 324
+            },
+            {
+                "name": "sha1",
+                "start": 329,
+                "end": 338
+            },
+            {
+                "name": "sha1_hmac_starts",
+                "start": 343,
+                "end": 368
+            },
+            {
+                "name": "sha1_hmac_update",
+                "start": 373,
+                "end": 376
+            },
+            {
+                "name": "sha1_hmac_finish",
+                "start": 381,
+                "end": 392
+            },
+            {
+                "name": "sha1_hmac_reset",
+                "start": 397,
+                "end": 401
+            },
+            {
+                "name": "sha1_hmac",
+                "start": 406,
+                "end": 417
+            }
+        ],
+        "common/mycrypto.c": [
+            {
+                "name": "alphanum_random",
+                "start": 29,
+                "end": 35
+            },
+            {
+                "name": "sign_challenge",
+                "start": 46,
+                "end": 67
+            }
+        ],
+        "common/config.c": [
+            {
+                "name": "extract_param",
+                "start": 45,
+                "end": 59
+            },
+            {
+                "name": "remove_space",
+                "start": 66,
+                "end": 83
+            },
+            {
+                "name": "get_next_line",
+                "start": 86,
+                "end": 95
+            },
+            {
+                "name": "config_extract_token",
+                "start": 104,
+                "end": 130
+            },
+            {
+                "name": "read_config",
+                "start": 140,
+                "end": 161
+            }
+        ],
+        "server/dns_decode.c": [
+            {
+                "name": "dns_strip_dot_and_domain",
+                "start": 43,
+                "end": 104
+            },
+            {
+                "name": "dns_decode",
+                "start": 114,
+                "end": 148
+            }
+        ],
+        "server/auth.c": [
+            {
+                "name": "connect_resource",
+                "start": 51,
+                "end": 76
+            },
+            {
+                "name": "bind_user",
+                "start": 89,
+                "end": 123
+            },
+            {
+                "name": "login_user",
+                "start": 135,
+                "end": 171
+            }
+        ],
+        "server/requests.c": [
+            {
+                "name": "get_type_request",
+                "start": 56,
+                "end": 75
+            },
+            {
+                "name": "send_resources_reply",
+                "start": 86,
+                "end": 131
+            },
+            {
+                "name": "get_request",
+                "start": 142,
+                "end": 169
+            },
+            {
+                "name": "send_reply",
+                "start": 182,
+                "end": 213
+            },
+            {
+                "name": "send_ascii_reply",
+                "start": 223,
+                "end": 243
+            },
+            {
+                "name": "get_incoming_request",
+                "start": 250,
+                "end": 284
+            }
+        ],
+        "server/queue.c": [
+            {
+                "name": "init_queue",
+                "start": 52,
+                "end": 64
+            },
+            {
+                "name": "delete_queue",
+                "start": 69,
+                "end": 75
+            },
+            {
+                "name": "queue_update_timer",
+                "start": 81,
+                "end": 91
+            },
+            {
+                "name": "queue_mark_received",
+                "start": 103,
+                "end": 114
+            },
+            {
+                "name": "queue_copy_data",
+                "start": 126,
+                "end": 149
+            },
+            {
+                "name": "queue_send_data",
+                "start": 158,
+                "end": 169
+            },
+            {
+                "name": "queue_reply",
+                "start": 181,
+                "end": 219
+            },
+            {
+                "name": "queue_flush_incoming_data",
+                "start": 228,
+                "end": 246
+            },
+            {
+                "name": "queue_change_root",
+                "start": 255,
+                "end": 286
+            },
+            {
+                "name": "queue_flush_outgoing_data",
+                "start": 296,
+                "end": 310
+            },
+            {
+                "name": "queue_flush_expired_data",
+                "start": 318,
+                "end": 349
+            },
+            {
+                "name": "queue_deal_incoming_data",
+                "start": 376,
+                "end": 425
+            },
+            {
+                "name": "queue_read_tcp",
+                "start": 436,
+                "end": 468
+            },
+            {
+                "name": "queue_dump",
+                "start": 474,
+                "end": 491
+            },
+            {
+                "name": "get_cell_in_queue",
+                "start": 499,
+                "end": 504
+            },
+            {
+                "name": "queue_copy_query",
+                "start": 515,
+                "end": 545
+            },
+            {
+                "name": "send_error",
+                "start": 557,
+                "end": 570
+            },
+            {
+                "name": "client_update_timer",
+                "start": 577,
+                "end": 587
+            },
+            {
+                "name": "find_client_by_session_id",
+                "start": 595,
+                "end": 605
+            },
+            {
+                "name": "queue_put_data",
+                "start": 627,
+                "end": 679
+            }
+        ],
+        "server/options.c": [
+            {
+                "name": "usage",
+                "start": 40,
+                "end": 44
+            },
+            {
+                "name": "check_mandatory_param",
+                "start": 54,
+                "end": 69
+            },
+            {
+                "name": "add_resource",
+                "start": 79,
+                "end": 100
+            },
+            {
+                "name": "server_copy_param",
+                "start": 111,
+                "end": 154
+            },
+            {
+                "name": "get_option",
+                "start": 165,
+                "end": 209
+            }
+        ],
+        "server/rr.c": [
+            {
+                "name": "get_rr_function_by_type",
+                "start": 47,
+                "end": 55
+            },
+            {
+                "name": "rr_add_data",
+                "start": 67,
+                "end": 92
+            },
+            {
+                "name": "rr_add_reply_cname",
+                "start": 97,
+                "end": 124
+            },
+            {
+                "name": "rr_add_reply_encode",
+                "start": 135,
+                "end": 146
+            },
+            {
+                "name": "rr_add_reply_raw",
+                "start": 157,
+                "end": 168
+            },
+            {
+                "name": "rr_get_reply_length_cname",
+                "start": 170,
+                "end": 176
+            },
+            {
+                "name": "rr_get_reply_length_encode",
+                "start": 185,
+                "end": 206
+            },
+            {
+                "name": "rr_get_reply_length_raw",
+                "start": 215,
+                "end": 237
+            }
+        ],
+        "server/server.c": [
+            {
+                "name": "prepare_select",
+                "start": 48,
+                "end": 72
+            },
+            {
+                "name": "delete_client",
+                "start": 80,
+                "end": 105
+            },
+            {
+                "name": "delete_zombie",
+                "start": 114,
+                "end": 132
+            },
+            {
+                "name": "do_server",
+                "start": 141,
+                "end": 204
+            }
+        ],
+        "server/socket.c": [
+            {
+                "name": "bind_socket",
+                "start": 42,
+                "end": 111
+            },
+            {
+                "name": "connect_socket",
+                "start": 120,
+                "end": 194
+            }
+        ],
+        "server/session.c": [
+            {
+                "name": "new_sessionid",
+                "start": 39,
+                "end": 61
+            },
+            {
+                "name": "create_session",
+                "start": 72,
+                "end": 125
+            },
+            {
+                "name": "session_request",
+                "start": 137,
+                "end": 159
+            }
+        ],
+        "server/main.c": [
+            {
+                "name": "detach_process",
+                "start": 45,
+                "end": 74
+            },
+            {
+                "name": "load_resolv",
+                "start": 81,
+                "end": 102
+            },
+            {
+                "name": "jail",
+                "start": 104,
+                "end": 158
+            },
+            {
+                "name": "main",
+                "start": 160,
+                "end": 180
+            }
+        ]
+    }
+}

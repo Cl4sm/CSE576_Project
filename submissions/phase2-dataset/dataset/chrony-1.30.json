@@ -1,0 +1,3867 @@
+{
+    "chrony-1.30": {
+        "regress.h": [
+            {
+                "name": "RGR_WeightedRegression",
+                "start": 31,
+                "end": 53
+            },
+            {
+                "name": "RGR_FindBestRegression",
+                "start": 75,
+                "end": 109
+            },
+            {
+                "name": "RGR_FindBestRobustRegression",
+                "start": 111,
+                "end": 120
+            }
+        ],
+        "logging.h": [
+            {
+                "name": "LOG_Message",
+                "start": 106,
+                "end": 109
+            },
+            {
+                "name": "LOG_FileWrite",
+                "start": 133,
+                "end": 134
+            }
+        ],
+        "hash.h": [
+            {
+                "name": "HSH_Hash",
+                "start": 36,
+                "end": 39
+            }
+        ],
+        "util.h": [
+            {
+                "name": "UTI_GenerateNTPAuth",
+                "start": 113,
+                "end": 114
+            },
+            {
+                "name": "UTI_CheckNTPAuth",
+                "start": 115,
+                "end": 116
+            }
+        ],
+        "regress.c": [
+            {
+                "name": "RGR_WeightedRegression",
+                "start": 39,
+                "end": 102
+            },
+            {
+                "name": "RGR_GetTCoef",
+                "start": 108,
+                "end": 127
+            },
+            {
+                "name": "RGR_GetChi2Coef",
+                "start": 132,
+                "end": 151
+            },
+            {
+                "name": "n_runs_from_residuals",
+                "start": 189,
+                "end": 206
+            },
+            {
+                "name": "RGR_FindBestRegression",
+                "start": 212,
+                "end": 334
+            },
+            {
+                "name": "find_ordered_entry_with_flags",
+                "start": 356,
+                "end": 411
+            },
+            {
+                "name": "find_median",
+                "start": 430,
+                "end": 444
+            },
+            {
+                "name": "eval_robust_residual",
+                "start": 454,
+                "end": 487
+            },
+            {
+                "name": "RGR_FindBestRobustRegression",
+                "start": 501,
+                "end": 653
+            }
+        ],
+        "local.h": [
+            {
+                "name": "LCL_NotifyExternalTimeStep",
+                "start": 163,
+                "end": 164
+            }
+        ],
+        "localp.h": [
+            {
+                "name": "lcl_RegisterSystemDrivers",
+                "start": 62,
+                "end": 68
+            }
+        ],
+        "local.c": [
+            {
+                "name": "calculate_sys_precision",
+                "start": 104,
+                "end": 138
+            },
+            {
+                "name": "LCL_Initialise",
+                "start": 142,
+                "end": 164
+            },
+            {
+                "name": "LCL_Finalise",
+                "start": 168,
+                "end": 171
+            },
+            {
+                "name": "LCL_GetSysPrecisionAsLog",
+                "start": 176,
+                "end": 180
+            },
+            {
+                "name": "LCL_GetSysPrecisionAsQuantum",
+                "start": 185,
+                "end": 189
+            },
+            {
+                "name": "LCL_GetMaxClockError",
+                "start": 193,
+                "end": 197
+            },
+            {
+                "name": "LCL_AddParameterChangeHandler",
+                "start": 201,
+                "end": 223
+            },
+            {
+                "name": "LCL_RemoveParameterChangeHandler",
+                "start": 228,
+                "end": 251
+            },
+            {
+                "name": "invoke_parameter_change_handlers",
+                "start": 255,
+                "end": 265
+            },
+            {
+                "name": "LCL_AddDispersionNotifyHandler",
+                "start": 269,
+                "end": 291
+            },
+            {
+                "name": "LCL_RemoveDispersionNotifyHandler",
+                "start": 296,
+                "end": 320
+            },
+            {
+                "name": "LCL_ReadRawTime",
+                "start": 326,
+                "end": 332
+            },
+            {
+                "name": "LCL_ReadCookedTime",
+                "start": 336,
+                "end": 343
+            },
+            {
+                "name": "LCL_CookTime",
+                "start": 347,
+                "end": 354
+            },
+            {
+                "name": "LCL_GetOffsetCorrection",
+                "start": 358,
+                "end": 363
+            },
+            {
+                "name": "LCL_ReadAbsoluteFrequency",
+                "start": 368,
+                "end": 381
+            },
+            {
+                "name": "LCL_SetAbsoluteFrequency",
+                "start": 387,
+                "end": 412
+            },
+            {
+                "name": "LCL_AccumulateDeltaFrequency",
+                "start": 416,
+                "end": 439
+            },
+            {
+                "name": "LCL_AccumulateOffset",
+                "start": 443,
+                "end": 458
+            },
+            {
+                "name": "LCL_ApplyStepOffset",
+                "start": 462,
+                "end": 477
+            },
+            {
+                "name": "LCL_NotifyExternalTimeStep",
+                "start": 481,
+                "end": 489
+            },
+            {
+                "name": "LCL_AccumulateFrequencyAndOffset",
+                "start": 493,
+                "end": 527
+            },
+            {
+                "name": "lcl_InvokeDispersionNotifyHandlers",
+                "start": 531,
+                "end": 540
+            },
+            {
+                "name": "lcl_RegisterSystemDrivers",
+                "start": 544,
+                "end": 562
+            },
+            {
+                "name": "LCL_MakeStep",
+                "start": 568,
+                "end": 584
+            },
+            {
+                "name": "LCL_SetLeap",
+                "start": 588,
+                "end": 594
+            },
+            {
+                "name": "LCL_SetTempComp",
+                "start": 598,
+                "end": 622
+            }
+        ],
+        "util.c": [
+            {
+                "name": "UTI_TimevalToDouble",
+                "start": 37,
+                "end": 42
+            },
+            {
+                "name": "UTI_DoubleToTimeval",
+                "start": 46,
+                "end": 55
+            },
+            {
+                "name": "UTI_CompareTimevals",
+                "start": 59,
+                "end": 75
+            },
+            {
+                "name": "UTI_NormaliseTimeval",
+                "start": 79,
+                "end": 94
+            },
+            {
+                "name": "UTI_DiffTimevals",
+                "start": 98,
+                "end": 110
+            },
+            {
+                "name": "UTI_DiffTimevalsToDouble",
+                "start": 115,
+                "end": 122
+            },
+            {
+                "name": "UTI_AddDoubleToTimeval",
+                "start": 126,
+                "end": 145
+            },
+            {
+                "name": "UTI_AverageDiffTimevals",
+                "start": 150,
+                "end": 180
+            },
+            {
+                "name": "UTI_AddDiffToTimeval",
+                "start": 184,
+                "end": 192
+            },
+            {
+                "name": "UTI_TimevalToString",
+                "start": 207,
+                "end": 217
+            },
+            {
+                "name": "UTI_TimestampToString",
+                "start": 223,
+                "end": 229
+            },
+            {
+                "name": "UTI_RefidToString",
+                "start": 233,
+                "end": 250
+            },
+            {
+                "name": "UTI_IPToString",
+                "start": 254,
+                "end": 288
+            },
+            {
+                "name": "UTI_StringToIP",
+                "start": 292,
+                "end": 323
+            },
+            {
+                "name": "UTI_IPToRefid",
+                "start": 327,
+                "end": 350
+            },
+            {
+                "name": "UTI_IPHostToNetwork",
+                "start": 354,
+                "end": 370
+            },
+            {
+                "name": "UTI_IPNetworkToHost",
+                "start": 374,
+                "end": 387
+            },
+            {
+                "name": "UTI_CompareIPs",
+                "start": 391,
+                "end": 421
+            },
+            {
+                "name": "UTI_TimeToLogForm",
+                "start": 425,
+                "end": 437
+            },
+            {
+                "name": "UTI_AdjustTimeval",
+                "start": 441,
+                "end": 449
+            },
+            {
+                "name": "UTI_GetNTPTsFuzz",
+                "start": 453,
+                "end": 463
+            },
+            {
+                "name": "UTI_Int32ToDouble",
+                "start": 467,
+                "end": 471
+            },
+            {
+                "name": "UTI_DoubleToInt32",
+                "start": 477,
+                "end": 485
+            },
+            {
+                "name": "UTI_TimevalToInt64",
+                "start": 493,
+                "end": 516
+            },
+            {
+                "name": "UTI_Int64ToTimeval",
+                "start": 520,
+                "end": 531
+            },
+            {
+                "name": "UTI_TimevalNetworkToHost",
+                "start": 535,
+                "end": 553
+            },
+            {
+                "name": "UTI_TimevalHostToNetwork",
+                "start": 557,
+                "end": 566
+            },
+            {
+                "name": "UTI_FloatNetworkToHost",
+                "start": 577,
+                "end": 586
+            },
+            {
+                "name": "UTI_FloatHostToNetwork",
+                "start": 588,
+                "end": 639
+            },
+            {
+                "name": "UTI_FdSetCloexec",
+                "start": 643,
+                "end": 655
+            },
+            {
+                "name": "UTI_GenerateNTPAuth",
+                "start": 659,
+                "end": 664
+            },
+            {
+                "name": "UTI_CheckNTPAuth",
+                "start": 668,
+                "end": 676
+            },
+            {
+                "name": "UTI_DecodePasswordFromText",
+                "start": 680,
+                "end": 706
+            }
+        ],
+        "nameserv.c": [
+            {
+                "name": "DNS_SetAddressFamily",
+                "start": 40,
+                "end": 44
+            },
+            {
+                "name": "DNS_Name2IPAddress",
+                "start": 46,
+                "end": 109
+            },
+            {
+                "name": "DNS_IPAddress2Name",
+                "start": 113,
+                "end": 172
+            },
+            {
+                "name": "DNS_Reload",
+                "start": 176,
+                "end": 180
+            }
+        ],
+        "getdate.c": [
+            {
+                "name": "yydestruct",
+                "start": 1252,
+                "end": 1274
+            },
+            {
+                "name": "gd_parse",
+                "start": 1320,
+                "end": 2279
+            },
+            {
+                "name": "gd_error",
+                "start": 2484,
+                "end": 2489
+            },
+            {
+                "name": "ToHour",
+                "start": 2491,
+                "end": 2518
+            },
+            {
+                "name": "ToYear",
+                "start": 2520,
+                "end": 2535
+            },
+            {
+                "name": "LookupWord",
+                "start": 2537,
+                "end": 2656
+            },
+            {
+                "name": "gd_lex",
+                "start": 2658,
+                "end": 2714
+            },
+            {
+                "name": "difftm",
+                "start": 2719,
+                "end": 2737
+            },
+            {
+                "name": "get_date",
+                "start": 2739,
+                "end": 2855
+            }
+        ],
+        "reference.h": [
+            {
+                "name": "REF_GetReferenceParams",
+                "start": 89,
+                "end": 99
+            },
+            {
+                "name": "REF_SetReference",
+                "start": 125,
+                "end": 139
+            },
+            {
+                "name": "REF_SetManualReference",
+                "start": 141,
+                "end": 147
+            },
+            {
+                "name": "REF_SetUnsynchronised",
+                "start": 150,
+                "end": 151
+            }
+        ],
+        "sched.h": [
+            {
+                "name": "SCH_AddInputFileHandler",
+                "start": 54,
+                "end": 58
+            },
+            {
+                "name": "SCH_AddTimeoutInClass",
+                "start": 74,
+                "end": 76
+            }
+        ],
+        "reference.c": [
+            {
+                "name": "handle_slew",
+                "start": 142,
+                "end": 158
+            },
+            {
+                "name": "REF_Initialise",
+                "start": 162,
+                "end": 259
+            },
+            {
+                "name": "REF_Finalise",
+                "start": 263,
+                "end": 277
+            },
+            {
+                "name": "REF_SetMode",
+                "start": 281,
+                "end": 284
+            },
+            {
+                "name": "REF_GetMode",
+                "start": 288,
+                "end": 292
+            },
+            {
+                "name": "REF_SetModeEndHandler",
+                "start": 296,
+                "end": 300
+            },
+            {
+                "name": "Sqr",
+                "start": 304,
+                "end": 308
+            },
+            {
+                "name": "update_drift_file",
+                "start": 322,
+                "end": 381
+            },
+            {
+                "name": "update_fb_drifts",
+                "start": 385,
+                "end": 432
+            },
+            {
+                "name": "fb_drift_timeout",
+                "start": 436,
+                "end": 446
+            },
+            {
+                "name": "schedule_fb_drift",
+                "start": 450,
+                "end": 486
+            },
+            {
+                "name": "end_ref_mode",
+                "start": 490,
+                "end": 498
+            },
+            {
+                "name": "maybe_log_offset",
+                "start": 505,
+                "end": 550
+            },
+            {
+                "name": "is_step_limit_reached",
+                "start": 554,
+                "end": 563
+            },
+            {
+                "name": "is_offset_ok",
+                "start": 567,
+                "end": 590
+            },
+            {
+                "name": "is_leap_second_day",
+                "start": 594,
+                "end": 599
+            },
+            {
+                "name": "get_tz_leap",
+                "start": 603,
+                "end": 655
+            },
+            {
+                "name": "update_leap_status",
+                "start": 659,
+                "end": 689
+            },
+            {
+                "name": "write_log",
+                "start": 693,
+                "end": 705
+            },
+            {
+                "name": "special_mode_sync",
+                "start": 709,
+                "end": 761
+            },
+            {
+                "name": "REF_SetReference",
+                "start": 765,
+                "end": 969
+            },
+            {
+                "name": "REF_SetManualReference",
+                "start": 973,
+                "end": 989
+            },
+            {
+                "name": "REF_SetUnsynchronised",
+                "start": 993,
+                "end": 1029
+            },
+            {
+                "name": "REF_GetReferenceParams",
+                "start": 1033,
+                "end": 1102
+            },
+            {
+                "name": "REF_GetOurStratum",
+                "start": 1106,
+                "end": 1116
+            },
+            {
+                "name": "REF_ModifyMaxupdateskew",
+                "start": 1120,
+                "end": 1124
+            },
+            {
+                "name": "REF_EnableLocal",
+                "start": 1128,
+                "end": 1133
+            },
+            {
+                "name": "REF_DisableLocal",
+                "start": 1137,
+                "end": 1141
+            },
+            {
+                "name": "REF_IsLocalActive",
+                "start": 1145,
+                "end": 1149
+            },
+            {
+                "name": "REF_GetTrackingReport",
+                "start": 1153,
+                "end": 1204
+            }
+        ],
+        "hash_nss.c": [
+            {
+                "name": "HSH_GetHashId",
+                "start": 52,
+                "end": 73
+            },
+            {
+                "name": "HSH_Hash",
+                "start": 75,
+                "end": 89
+            }
+        ],
+        "hash_tomcrypt.c": [
+            {
+                "name": "HSH_GetHashId",
+                "start": 74,
+                "end": 95
+            },
+            {
+                "name": "HSH_Hash",
+                "start": 97,
+                "end": 116
+            }
+        ],
+        "pktlength.c": [
+            {
+                "name": "command_unpadded_length",
+                "start": 38,
+                "end": 157
+            },
+            {
+                "name": "PKL_CommandLength",
+                "start": 162,
+                "end": 172
+            },
+            {
+                "name": "PKL_CommandPaddingLength",
+                "start": 182,
+                "end": 301
+            },
+            {
+                "name": "PKL_ReplyLength",
+                "start": 305,
+                "end": 366
+            }
+        ],
+        "keys.h": [
+            {
+                "name": "KEY_GenerateAuth",
+                "start": 41,
+                "end": 42
+            },
+            {
+                "name": "KEY_CheckAuth",
+                "start": 43,
+                "end": 44
+            }
+        ],
+        "keys.c": [
+            {
+                "name": "generate_key",
+                "start": 63,
+                "end": 117
+            },
+            {
+                "name": "KEY_Initialise",
+                "start": 121,
+                "end": 133
+            },
+            {
+                "name": "KEY_Finalise",
+                "start": 137,
+                "end": 140
+            },
+            {
+                "name": "determine_hash_delay",
+                "start": 144,
+                "end": 171
+            },
+            {
+                "name": "compare_keys_by_id",
+                "start": 177,
+                "end": 191
+            },
+            {
+                "name": "KEY_Reload",
+                "start": 195,
+                "end": 273
+            },
+            {
+                "name": "lookup_key",
+                "start": 277,
+                "end": 291
+            },
+            {
+                "name": "get_key_pos",
+                "start": 295,
+                "end": 312
+            },
+            {
+                "name": "KEY_GetCommandKey",
+                "start": 316,
+                "end": 324
+            },
+            {
+                "name": "KEY_KeyKnown",
+                "start": 328,
+                "end": 332
+            },
+            {
+                "name": "KEY_GetAuthDelay",
+                "start": 336,
+                "end": 348
+            },
+            {
+                "name": "KEY_GenerateAuth",
+                "start": 352,
+                "end": 367
+            },
+            {
+                "name": "KEY_CheckAuth",
+                "start": 371,
+                "end": 386
+            }
+        ],
+        "md5.c": [
+            {
+                "name": "MD5Init",
+                "start": 120,
+                "end": 131
+            },
+            {
+                "name": "MD5Update",
+                "start": 137,
+                "end": 170
+            },
+            {
+                "name": "MD5Final",
+                "start": 176,
+                "end": 213
+            },
+            {
+                "name": "Transform",
+                "start": 217,
+                "end": 316
+            }
+        ],
+        "refclock_shm.c": [
+            {
+                "name": "shm_initialise",
+                "start": 61,
+                "end": 84
+            },
+            {
+                "name": "shm_finalise",
+                "start": 86,
+                "end": 89
+            },
+            {
+                "name": "shm_poll",
+                "start": 91,
+                "end": 121
+            }
+        ],
+        "rtc.c": [
+            {
+                "name": "RTC_Initialise",
+                "start": 76,
+                "end": 111
+            },
+            {
+                "name": "RTC_Finalise",
+                "start": 115,
+                "end": 121
+            },
+            {
+                "name": "RTC_TimeInit",
+                "start": 134,
+                "end": 143
+            },
+            {
+                "name": "RTC_TimePreInit",
+                "start": 149,
+                "end": 155
+            },
+            {
+                "name": "RTC_StartMeasurements",
+                "start": 160,
+                "end": 167
+            },
+            {
+                "name": "RTC_WriteParameters",
+                "start": 173,
+                "end": 181
+            },
+            {
+                "name": "RTC_GetReport",
+                "start": 185,
+                "end": 193
+            },
+            {
+                "name": "RTC_Trim",
+                "start": 197,
+                "end": 205
+            }
+        ],
+        "logging.c": [
+            {
+                "name": "LOG_Initialise",
+                "start": 73,
+                "end": 81
+            },
+            {
+                "name": "LOG_Finalise",
+                "start": 86,
+                "end": 102
+            },
+            {
+                "name": "log_message",
+                "start": 106,
+                "end": 139
+            },
+            {
+                "name": "LOG_Message",
+                "start": 143,
+                "end": 197
+            },
+            {
+                "name": "LOG_OpenSystemLog",
+                "start": 201,
+                "end": 209
+            },
+            {
+                "name": "LOG_SetDebugLevel",
+                "start": 213,
+                "end": 221
+            },
+            {
+                "name": "LOG_SetParentFd",
+                "start": 225,
+                "end": 229
+            },
+            {
+                "name": "LOG_CloseParentFd",
+                "start": 233,
+                "end": 239
+            },
+            {
+                "name": "LOG_FileOpen",
+                "start": 243,
+                "end": 254
+            },
+            {
+                "name": "LOG_FileWrite",
+                "start": 258,
+                "end": 304
+            },
+            {
+                "name": "LOG_CreateLogFileDir",
+                "start": 308,
+                "end": 318
+            },
+            {
+                "name": "LOG_CycleLogFiles",
+                "start": 322,
+                "end": 333
+            }
+        ],
+        "refclock.c": [
+            {
+                "name": "slew_samples",
+                "start": 99,
+                "end": 100
+            },
+            {
+                "name": "RCL_Initialise",
+                "start": 115,
+                "end": 128
+            },
+            {
+                "name": "RCL_Finalise",
+                "start": 130,
+                "end": 149
+            },
+            {
+                "name": "RCL_AddRefclock",
+                "start": 151,
+                "end": 260
+            },
+            {
+                "name": "RCL_StartRefclocks",
+                "start": 262,
+                "end": 282
+            },
+            {
+                "name": "RCL_ReportSource",
+                "start": 284,
+                "end": 301
+            },
+            {
+                "name": "RCL_SetDriverData",
+                "start": 303,
+                "end": 307
+            },
+            {
+                "name": "RCL_GetDriverData",
+                "start": 309,
+                "end": 313
+            },
+            {
+                "name": "RCL_GetDriverParameter",
+                "start": 315,
+                "end": 319
+            },
+            {
+                "name": "RCL_GetDriverOption",
+                "start": 321,
+                "end": 344
+            },
+            {
+                "name": "RCL_AddSample",
+                "start": 346,
+                "end": 381
+            },
+            {
+                "name": "RCL_AddPulse",
+                "start": 383,
+                "end": 480
+            },
+            {
+                "name": "poll_interval",
+                "start": 482,
+                "end": 489
+            },
+            {
+                "name": "valid_sample_time",
+                "start": 491,
+                "end": 505
+            },
+            {
+                "name": "pps_stratum",
+                "start": 507,
+                "end": 532
+            },
+            {
+                "name": "poll_timeout",
+                "start": 534,
+                "end": 576
+            },
+            {
+                "name": "slew_samples",
+                "start": 578,
+                "end": 590
+            },
+            {
+                "name": "add_dispersion",
+                "start": 592,
+                "end": 599
+            },
+            {
+                "name": "log_sample",
+                "start": 601,
+                "end": 629
+            },
+            {
+                "name": "filter_init",
+                "start": 631,
+                "end": 650
+            },
+            {
+                "name": "filter_fini",
+                "start": 652,
+                "end": 660
+            },
+            {
+                "name": "filter_reset",
+                "start": 662,
+                "end": 667
+            },
+            {
+                "name": "filter_get_avg_sample_dispersion",
+                "start": 669,
+                "end": 673
+            },
+            {
+                "name": "filter_add_sample",
+                "start": 675,
+                "end": 690
+            },
+            {
+                "name": "filter_get_last_sample",
+                "start": 692,
+                "end": 702
+            },
+            {
+                "name": "sample_compare",
+                "start": 706,
+                "end": 719
+            },
+            {
+                "name": "filter_select_samples",
+                "start": 721,
+                "end": 803
+            },
+            {
+                "name": "filter_get_sample",
+                "start": 805,
+                "end": 905
+            },
+            {
+                "name": "filter_slew_samples",
+                "start": 907,
+                "end": 919
+            },
+            {
+                "name": "filter_add_dispersion",
+                "start": 921,
+                "end": 929
+            }
+        ],
+        "ntp_core.h": [
+            {
+                "name": "NCR_IncrementActivityCounters",
+                "start": 100,
+                "end": 101
+            }
+        ],
+        "sourcestats.h": [
+            {
+                "name": "SST_GetSelectionData",
+                "start": 80,
+                "end": 86
+            },
+            {
+                "name": "SST_GetTrackingData",
+                "start": 89,
+                "end": 93
+            },
+            {
+                "name": "SST_IsGoodSample",
+                "start": 127,
+                "end": 128
+            }
+        ],
+        "addrfilt.h": [
+            {
+                "name": "ADF_Allow",
+                "start": 45,
+                "end": 47
+            },
+            {
+                "name": "ADF_AllowAll",
+                "start": 51,
+                "end": 53
+            },
+            {
+                "name": "ADF_Deny",
+                "start": 57,
+                "end": 59
+            },
+            {
+                "name": "ADF_DenyAll",
+                "start": 63,
+                "end": 65
+            },
+            {
+                "name": "ADF_IsAllowed",
+                "start": 72,
+                "end": 73
+            }
+        ],
+        "clientlog.h": [
+            {
+                "name": "CLG_GetClientAccessReportByIP",
+                "start": 69,
+                "end": 70
+            },
+            {
+                "name": "CLG_GetClientAccessReportByIndex",
+                "start": 72,
+                "end": 74
+            },
+            {
+                "name": "CLG_IterateNTPClients",
+                "start": 79,
+                "end": 82
+            }
+        ],
+        "cmdmon.c": [
+            {
+                "name": "prepare_socket",
+                "start": 178,
+                "end": 258
+            },
+            {
+                "name": "CAM_Initialise",
+                "start": 262,
+                "end": 316
+            },
+            {
+                "name": "CAM_Finalise",
+                "start": 320,
+                "end": 339
+            },
+            {
+                "name": "check_rx_packet_auth",
+                "start": 346,
+                "end": 356
+            },
+            {
+                "name": "generate_tx_packet_auth",
+                "start": 360,
+                "end": 369
+            },
+            {
+                "name": "shift_tokens",
+                "start": 373,
+                "end": 382
+            },
+            {
+                "name": "get_token",
+                "start": 386,
+                "end": 402
+            },
+            {
+                "name": "check_token",
+                "start": 406,
+                "end": 437
+            },
+            {
+                "name": "allocate_ts_cell",
+                "start": 457,
+                "end": 473
+            },
+            {
+                "name": "release_ts_cell",
+                "start": 477,
+                "end": 482
+            },
+            {
+                "name": "check_unique_ts",
+                "start": 488,
+                "end": 524
+            },
+            {
+                "name": "ts_is_unique_and_not_stale",
+                "start": 528,
+                "end": 544
+            },
+            {
+                "name": "get_more_replies",
+                "start": 550,
+                "end": 564
+            },
+            {
+                "name": "get_reply_slot",
+                "start": 568,
+                "end": 578
+            },
+            {
+                "name": "free_reply_slot",
+                "start": 582,
+                "end": 587
+            },
+            {
+                "name": "save_reply",
+                "start": 591,
+                "end": 613
+            },
+            {
+                "name": "lookup_reply",
+                "start": 617,
+                "end": 637
+            },
+            {
+                "name": "token_acknowledged",
+                "start": 644,
+                "end": 666
+            },
+            {
+                "name": "transmit_reply",
+                "start": 670,
+                "end": 720
+            },
+            {
+                "name": "handle_null",
+                "start": 725,
+                "end": 729
+            },
+            {
+                "name": "handle_online",
+                "start": 733,
+                "end": 746
+            },
+            {
+                "name": "handle_offline",
+                "start": 750,
+                "end": 763
+            },
+            {
+                "name": "handle_burst",
+                "start": 767,
+                "end": 783
+            },
+            {
+                "name": "handle_modify_minpoll",
+                "start": 787,
+                "end": 801
+            },
+            {
+                "name": "handle_modify_maxpoll",
+                "start": 805,
+                "end": 819
+            },
+            {
+                "name": "handle_modify_maxdelay",
+                "start": 823,
+                "end": 836
+            },
+            {
+                "name": "handle_modify_maxdelayratio",
+                "start": 840,
+                "end": 853
+            },
+            {
+                "name": "handle_modify_maxdelaydevratio",
+                "start": 857,
+                "end": 870
+            },
+            {
+                "name": "handle_modify_minstratum",
+                "start": 874,
+                "end": 888
+            },
+            {
+                "name": "handle_modify_polltarget",
+                "start": 892,
+                "end": 906
+            },
+            {
+                "name": "handle_modify_maxupdateskew",
+                "start": 910,
+                "end": 915
+            },
+            {
+                "name": "handle_settime",
+                "start": 919,
+                "end": 935
+            },
+            {
+                "name": "handle_local",
+                "start": 939,
+                "end": 951
+            },
+            {
+                "name": "handle_manual",
+                "start": 955,
+                "end": 972
+            },
+            {
+                "name": "handle_n_sources",
+                "start": 976,
+                "end": 984
+            },
+            {
+                "name": "handle_source_data",
+                "start": 988,
+                "end": 1062
+            },
+            {
+                "name": "handle_rekey",
+                "start": 1066,
+                "end": 1071
+            },
+            {
+                "name": "handle_allow",
+                "start": 1075,
+                "end": 1087
+            },
+            {
+                "name": "handle_allowall",
+                "start": 1091,
+                "end": 1103
+            },
+            {
+                "name": "handle_deny",
+                "start": 1107,
+                "end": 1119
+            },
+            {
+                "name": "handle_denyall",
+                "start": 1123,
+                "end": 1135
+            },
+            {
+                "name": "handle_cmdallow",
+                "start": 1139,
+                "end": 1151
+            },
+            {
+                "name": "handle_cmdallowall",
+                "start": 1155,
+                "end": 1167
+            },
+            {
+                "name": "handle_cmddeny",
+                "start": 1171,
+                "end": 1183
+            },
+            {
+                "name": "handle_cmddenyall",
+                "start": 1187,
+                "end": 1199
+            },
+            {
+                "name": "handle_accheck",
+                "start": 1203,
+                "end": 1213
+            },
+            {
+                "name": "handle_cmdaccheck",
+                "start": 1217,
+                "end": 1227
+            },
+            {
+                "name": "handle_add_source",
+                "start": 1231,
+                "end": 1275
+            },
+            {
+                "name": "handle_del_source",
+                "start": 1279,
+                "end": 1302
+            },
+            {
+                "name": "handle_writertc",
+                "start": 1306,
+                "end": 1320
+            },
+            {
+                "name": "handle_dfreq",
+                "start": 1324,
+                "end": 1332
+            },
+            {
+                "name": "handle_doffset",
+                "start": 1336,
+                "end": 1347
+            },
+            {
+                "name": "handle_tracking",
+                "start": 1351,
+                "end": 1373
+            },
+            {
+                "name": "handle_sourcestats",
+                "start": 1377,
+                "end": 1404
+            },
+            {
+                "name": "handle_rtcreport",
+                "start": 1408,
+                "end": 1426
+            },
+            {
+                "name": "handle_trimrtc",
+                "start": 1430,
+                "end": 1440
+            },
+            {
+                "name": "handle_cyclelogs",
+                "start": 1444,
+                "end": 1450
+            },
+            {
+                "name": "handle_client_accesses_by_index",
+                "start": 1454,
+                "end": 1504
+            },
+            {
+                "name": "handle_manual_list",
+                "start": 1508,
+                "end": 1528
+            },
+            {
+                "name": "handle_manual_delete",
+                "start": 1532,
+                "end": 1545
+            },
+            {
+                "name": "handle_make_step",
+                "start": 1549,
+                "end": 1554
+            },
+            {
+                "name": "handle_activity",
+                "start": 1558,
+                "end": 1570
+            },
+            {
+                "name": "handle_reselect_distance",
+                "start": 1574,
+                "end": 1581
+            },
+            {
+                "name": "handle_reselect",
+                "start": 1585,
+                "end": 1590
+            },
+            {
+                "name": "read_from_cmd_socket",
+                "start": 1595,
+                "end": 2151
+            },
+            {
+                "name": "CAM_AddAccessRestriction",
+                "start": 2155,
+                "end": 2181
+            },
+            {
+                "name": "CAM_CheckAccessRestriction",
+                "start": 2185,
+                "end": 2189
+            }
+        ],
+        "ntp_sources.c": [
+            {
+                "name": "slew_sources",
+                "start": 92,
+                "end": 98
+            },
+            {
+                "name": "NSR_Initialise",
+                "start": 107,
+                "end": 118
+            },
+            {
+                "name": "NSR_Finalise",
+                "start": 122,
+                "end": 126
+            },
+            {
+                "name": "find_slot",
+                "start": 142,
+                "end": 191
+            },
+            {
+                "name": "NSR_AddSource",
+                "start": 196,
+                "end": 222
+            },
+            {
+                "name": "name_resolve_handler",
+                "start": 226,
+                "end": 290
+            },
+            {
+                "name": "resolve_sources",
+                "start": 294,
+                "end": 310
+            },
+            {
+                "name": "NSR_AddUnresolvedSource",
+                "start": 316,
+                "end": 332
+            },
+            {
+                "name": "NSR_SetSourceResolvingEndHandler",
+                "start": 336,
+                "end": 340
+            },
+            {
+                "name": "NSR_ResolveSources",
+                "start": 344,
+                "end": 362
+            },
+            {
+                "name": "NSR_StartSources",
+                "start": 366,
+                "end": 375
+            },
+            {
+                "name": "NSR_AutoStartSources",
+                "start": 379,
+                "end": 382
+            },
+            {
+                "name": "NSR_RemoveSource",
+                "start": 390,
+                "end": 428
+            },
+            {
+                "name": "NSR_RemoveAllSources",
+                "start": 432,
+                "end": 443
+            },
+            {
+                "name": "NSR_ProcessReceive",
+                "start": 449,
+                "end": 463
+            },
+            {
+                "name": "slew_sources",
+                "start": 467,
+                "end": 486
+            },
+            {
+                "name": "NSR_TakeSourcesOnline",
+                "start": 490,
+                "end": 519
+            },
+            {
+                "name": "NSR_TakeSourcesOffline",
+                "start": 523,
+                "end": 559
+            },
+            {
+                "name": "NSR_ModifyMinpoll",
+                "start": 563,
+                "end": 578
+            },
+            {
+                "name": "NSR_ModifyMaxpoll",
+                "start": 582,
+                "end": 597
+            },
+            {
+                "name": "NSR_ModifyMaxdelay",
+                "start": 601,
+                "end": 616
+            },
+            {
+                "name": "NSR_ModifyMaxdelayratio",
+                "start": 620,
+                "end": 635
+            },
+            {
+                "name": "NSR_ModifyMaxdelaydevratio",
+                "start": 639,
+                "end": 654
+            },
+            {
+                "name": "NSR_ModifyMinstratum",
+                "start": 658,
+                "end": 673
+            },
+            {
+                "name": "NSR_ModifyPolltarget",
+                "start": 677,
+                "end": 692
+            },
+            {
+                "name": "NSR_InitiateSampleBurst",
+                "start": 696,
+                "end": 716
+            },
+            {
+                "name": "NSR_ReportSource",
+                "start": 722,
+                "end": 737
+            },
+            {
+                "name": "NSR_GetActivityReport",
+                "start": 741,
+                "end": 764
+            }
+        ],
+        "addrfilt.c": [
+            {
+                "name": "split_ip6",
+                "start": 59,
+                "end": 69
+            },
+            {
+                "name": "get_subnet",
+                "start": 73,
+                "end": 82
+            },
+            {
+                "name": "ADF_CreateTable",
+                "start": 86,
+                "end": 99
+            },
+            {
+                "name": "close_node",
+                "start": 105,
+                "end": 119
+            },
+            {
+                "name": "open_node",
+                "start": 126,
+                "end": 142
+            },
+            {
+                "name": "set_subnet",
+                "start": 146,
+                "end": 222
+            },
+            {
+                "name": "set_subnet_",
+                "start": 226,
+                "end": 253
+            },
+            {
+                "name": "ADF_Allow",
+                "start": 255,
+                "end": 261
+            },
+            {
+                "name": "ADF_AllowAll",
+                "start": 266,
+                "end": 272
+            },
+            {
+                "name": "ADF_Deny",
+                "start": 276,
+                "end": 282
+            },
+            {
+                "name": "ADF_DenyAll",
+                "start": 286,
+                "end": 292
+            },
+            {
+                "name": "ADF_DestroyTable",
+                "start": 296,
+                "end": 302
+            },
+            {
+                "name": "check_ip_in_node",
+                "start": 306,
+                "end": 345
+            },
+            {
+                "name": "ADF_IsAllowed",
+                "start": 350,
+                "end": 365
+            }
+        ],
+        "client.c": [
+            {
+                "name": "time_to_log_form",
+                "start": 76,
+                "end": 93
+            },
+            {
+                "name": "read_line",
+                "start": 99,
+                "end": 135
+            },
+            {
+                "name": "open_io",
+                "start": 140,
+                "end": 198
+            },
+            {
+                "name": "close_io",
+                "start": 202,
+                "end": 208
+            },
+            {
+                "name": "bits_to_mask",
+                "start": 212,
+                "end": 242
+            },
+            {
+                "name": "read_mask_address",
+                "start": 246,
+                "end": 284
+            },
+            {
+                "name": "process_cmd_offline",
+                "start": 288,
+                "end": 305
+            },
+            {
+                "name": "process_cmd_online",
+                "start": 310,
+                "end": 327
+            },
+            {
+                "name": "read_address_integer",
+                "start": 331,
+                "end": 354
+            },
+            {
+                "name": "read_address_double",
+                "start": 359,
+                "end": 382
+            },
+            {
+                "name": "process_cmd_minpoll",
+                "start": 387,
+                "end": 405
+            },
+            {
+                "name": "process_cmd_maxpoll",
+                "start": 409,
+                "end": 427
+            },
+            {
+                "name": "process_cmd_maxdelay",
+                "start": 431,
+                "end": 449
+            },
+            {
+                "name": "process_cmd_maxdelaydevratio",
+                "start": 453,
+                "end": 471
+            },
+            {
+                "name": "process_cmd_maxdelayratio",
+                "start": 475,
+                "end": 493
+            },
+            {
+                "name": "process_cmd_minstratum",
+                "start": 497,
+                "end": 515
+            },
+            {
+                "name": "process_cmd_polltarget",
+                "start": 519,
+                "end": 537
+            },
+            {
+                "name": "process_cmd_maxupdateskew",
+                "start": 541,
+                "end": 557
+            },
+            {
+                "name": "process_cmd_dump",
+                "start": 561,
+                "end": 566
+            },
+            {
+                "name": "process_cmd_writertc",
+                "start": 570,
+                "end": 574
+            },
+            {
+                "name": "process_cmd_trimrtc",
+                "start": 578,
+                "end": 582
+            },
+            {
+                "name": "process_cmd_cyclelogs",
+                "start": 586,
+                "end": 590
+            },
+            {
+                "name": "process_cmd_burst",
+                "start": 594,
+                "end": 623
+            },
+            {
+                "name": "process_cmd_local",
+                "start": 627,
+                "end": 648
+            },
+            {
+                "name": "process_cmd_manual",
+                "start": 652,
+                "end": 672
+            },
+            {
+                "name": "parse_allow_deny",
+                "start": 676,
+                "end": 760
+            },
+            {
+                "name": "process_cmd_allow",
+                "start": 764,
+                "end": 771
+            },
+            {
+                "name": "process_cmd_allowall",
+                "start": 775,
+                "end": 782
+            },
+            {
+                "name": "process_cmd_deny",
+                "start": 786,
+                "end": 793
+            },
+            {
+                "name": "process_cmd_denyall",
+                "start": 797,
+                "end": 804
+            },
+            {
+                "name": "process_cmd_cmdallow",
+                "start": 808,
+                "end": 815
+            },
+            {
+                "name": "process_cmd_cmdallowall",
+                "start": 819,
+                "end": 826
+            },
+            {
+                "name": "process_cmd_cmddeny",
+                "start": 830,
+                "end": 837
+            },
+            {
+                "name": "process_cmd_cmddenyall",
+                "start": 841,
+                "end": 848
+            },
+            {
+                "name": "accheck_getaddr",
+                "start": 852,
+                "end": 875
+            },
+            {
+                "name": "process_cmd_accheck",
+                "start": 879,
+                "end": 891
+            },
+            {
+                "name": "process_cmd_cmdaccheck",
+                "start": 895,
+                "end": 907
+            },
+            {
+                "name": "process_cmd_dfreq",
+                "start": 911,
+                "end": 921
+            },
+            {
+                "name": "cvt_to_sec_usec",
+                "start": 925,
+                "end": 941
+            },
+            {
+                "name": "process_cmd_doffset",
+                "start": 945,
+                "end": 959
+            },
+            {
+                "name": "process_cmd_add_server_or_peer",
+                "start": 963,
+                "end": 1052
+            },
+            {
+                "name": "process_cmd_add_server",
+                "start": 1056,
+                "end": 1061
+            },
+            {
+                "name": "process_cmd_add_peer",
+                "start": 1065,
+                "end": 1070
+            },
+            {
+                "name": "process_cmd_delete",
+                "start": 1074,
+                "end": 1100
+            },
+            {
+                "name": "process_cmd_password",
+                "start": 1110,
+                "end": 1160
+            },
+            {
+                "name": "generate_auth",
+                "start": 1164,
+                "end": 1175
+            },
+            {
+                "name": "check_reply_auth",
+                "start": 1179,
+                "end": 1191
+            },
+            {
+                "name": "give_help",
+                "start": 1195,
+                "end": 1251
+            },
+            {
+                "name": "submit_request",
+                "start": 1268,
+                "end": 1504
+            },
+            {
+                "name": "request_reply",
+                "start": 1508,
+                "end": 1604
+            },
+            {
+                "name": "print_seconds",
+                "start": 1608,
+                "end": 1626
+            },
+            {
+                "name": "print_nanoseconds",
+                "start": 1630,
+                "end": 1654
+            },
+            {
+                "name": "print_signed_nanoseconds",
+                "start": 1658,
+                "end": 1684
+            },
+            {
+                "name": "print_freq_ppm",
+                "start": 1688,
+                "end": 1696
+            },
+            {
+                "name": "print_signed_freq_ppm",
+                "start": 1700,
+                "end": 1708
+            },
+            {
+                "name": "check_for_verbose_flag",
+                "start": 1712,
+                "end": 1721
+            },
+            {
+                "name": "process_cmd_sources",
+                "start": 1725,
+                "end": 1838
+            },
+            {
+                "name": "process_cmd_sourcestats",
+                "start": 1842,
+                "end": 1922
+            },
+            {
+                "name": "process_cmd_tracking",
+                "start": 1926,
+                "end": 2013
+            },
+            {
+                "name": "process_cmd_rtcreport",
+                "start": 2016,
+                "end": 2049
+            },
+            {
+                "name": "process_cmd_clients",
+                "start": 2053,
+                "end": 2140
+            },
+            {
+                "name": "process_cmd_manual_list",
+                "start": 2145,
+                "end": 2173
+            },
+            {
+                "name": "process_cmd_manual_delete",
+                "start": 2177,
+                "end": 2191
+            },
+            {
+                "name": "process_cmd_settime",
+                "start": 2195,
+                "end": 2227
+            },
+            {
+                "name": "process_cmd_rekey",
+                "start": 2231,
+                "end": 2235
+            },
+            {
+                "name": "process_cmd_makestep",
+                "start": 2239,
+                "end": 2243
+            },
+            {
+                "name": "process_cmd_activity",
+                "start": 2247,
+                "end": 2268
+            },
+            {
+                "name": "process_cmd_reselectdist",
+                "start": 2272,
+                "end": 2285
+            },
+            {
+                "name": "process_cmd_reselect",
+                "start": 2289,
+                "end": 2293
+            },
+            {
+                "name": "process_cmd_waitsync",
+                "start": 2297,
+                "end": 2343
+            },
+            {
+                "name": "process_cmd_dns",
+                "start": 2347,
+                "end": 2365
+            },
+            {
+                "name": "process_cmd_authhash",
+                "start": 2369,
+                "end": 2392
+            },
+            {
+                "name": "process_cmd_timeout",
+                "start": 2396,
+                "end": 2408
+            },
+            {
+                "name": "process_cmd_retries",
+                "start": 2412,
+                "end": 2424
+            },
+            {
+                "name": "process_line",
+                "start": 2428,
+                "end": 2602
+            },
+            {
+                "name": "authenticate_from_config",
+                "start": 2606,
+                "end": 2673
+            },
+            {
+                "name": "process_args",
+                "start": 2677,
+                "end": 2710
+            },
+            {
+                "name": "display_gpl",
+                "start": 2714,
+                "end": 2723
+            },
+            {
+                "name": "main",
+                "start": 2727,
+                "end": 2826
+            }
+        ],
+        "sources.c": [
+            {
+                "name": "slew_sources",
+                "start": 155,
+                "end": 157
+            },
+            {
+                "name": "add_dispersion",
+                "start": 158,
+                "end": 159
+            },
+            {
+                "name": "source_to_string",
+                "start": 160,
+                "end": 161
+            },
+            {
+                "name": "SRC_Initialise",
+                "start": 165,
+                "end": 178
+            },
+            {
+                "name": "SRC_Finalise",
+                "start": 182,
+                "end": 187
+            },
+            {
+                "name": "SRC_CreateNewInstance",
+                "start": 193,
+                "end": 234
+            },
+            {
+                "name": "SRC_DestroyInstance",
+                "start": 242,
+                "end": 262
+            },
+            {
+                "name": "SRC_GetFrequencyRange",
+                "start": 276,
+                "end": 281
+            },
+            {
+                "name": "SRC_AccumulateSample",
+                "start": 296,
+                "end": 319
+            },
+            {
+                "name": "SRC_SetActive",
+                "start": 323,
+                "end": 327
+            },
+            {
+                "name": "SRC_UnsetActive",
+                "start": 331,
+                "end": 335
+            },
+            {
+                "name": "SRC_SetSelectable",
+                "start": 339,
+                "end": 348
+            },
+            {
+                "name": "SRC_UnsetSelectable",
+                "start": 352,
+                "end": 366
+            },
+            {
+                "name": "special_mode_end",
+                "start": 370,
+                "end": 391
+            },
+            {
+                "name": "SRC_UpdateReachability",
+                "start": 393,
+                "end": 412
+            },
+            {
+                "name": "SRC_ResetReachability",
+                "start": 416,
+                "end": 426
+            },
+            {
+                "name": "log_selection_message",
+                "start": 430,
+                "end": 436
+            },
+            {
+                "name": "compare_sort_elements",
+                "start": 440,
+                "end": 457
+            },
+            {
+                "name": "source_to_string",
+                "start": 461,
+                "end": 473
+            },
+            {
+                "name": "combine_sources",
+                "start": 477,
+                "end": 550
+            },
+            {
+                "name": "SRC_SelectSource",
+                "start": 559,
+                "end": 984
+            },
+            {
+                "name": "SRC_ReselectSource",
+                "start": 989,
+                "end": 994
+            },
+            {
+                "name": "SRC_SetReselectDistance",
+                "start": 998,
+                "end": 1005
+            },
+            {
+                "name": "SRC_PredictOffset",
+                "start": 1009,
+                "end": 1013
+            },
+            {
+                "name": "SRC_MinRoundTripDelay",
+                "start": 1017,
+                "end": 1021
+            },
+            {
+                "name": "SRC_IsGoodSample",
+                "start": 1025,
+                "end": 1031
+            },
+            {
+                "name": "slew_sources",
+                "start": 1040,
+                "end": 1062
+            },
+            {
+                "name": "add_dispersion",
+                "start": 1068,
+                "end": 1076
+            },
+            {
+                "name": "SRC_DumpSources",
+                "start": 1081,
+                "end": 1115
+            },
+            {
+                "name": "SRC_ReloadSources",
+                "start": 1119,
+                "end": 1153
+            },
+            {
+                "name": "SRC_IsSyncPeer",
+                "start": 1157,
+                "end": 1166
+            },
+            {
+                "name": "SRC_ReadNumberOfSources",
+                "start": 1170,
+                "end": 1174
+            },
+            {
+                "name": "SRC_ActiveSources",
+                "start": 1178,
+                "end": 1188
+            },
+            {
+                "name": "SRC_ReportSource",
+                "start": 1192,
+                "end": 1255
+            },
+            {
+                "name": "SRC_ReportSourcestats",
+                "start": 1259,
+                "end": 1276
+            },
+            {
+                "name": "SRC_GetType",
+                "start": 1280,
+                "end": 1286
+            },
+            {
+                "name": "SRC_LastSkewChange",
+                "start": 1290,
+                "end": 1307
+            },
+            {
+                "name": "SRC_Samples",
+                "start": 1311,
+                "end": 1315
+            }
+        ],
+        "broadcast.c": [
+            {
+                "name": "BRD_Initialise",
+                "start": 50,
+                "end": 53
+            },
+            {
+                "name": "BRD_Finalise",
+                "start": 57,
+                "end": 60
+            },
+            {
+                "name": "timeout_handler",
+                "start": 65,
+                "end": 127
+            },
+            {
+                "name": "BRD_AddDestination",
+                "start": 131,
+                "end": 157
+            }
+        ],
+        "sourcestats.c": [
+            {
+                "name": "SST_Initialise",
+                "start": 164,
+                "end": 172
+            },
+            {
+                "name": "SST_Finalise",
+                "start": 176,
+                "end": 179
+            },
+            {
+                "name": "SST_CreateInstance",
+                "start": 184,
+                "end": 195
+            },
+            {
+                "name": "SST_DeleteInstance",
+                "start": 200,
+                "end": 204
+            },
+            {
+                "name": "SST_ResetInstance",
+                "start": 208,
+                "end": 226
+            },
+            {
+                "name": "prune_register",
+                "start": 232,
+                "end": 247
+            },
+            {
+                "name": "SST_AccumulateSample",
+                "start": 251,
+                "end": 291
+            },
+            {
+                "name": "get_runsbuf_index",
+                "start": 297,
+                "end": 302
+            },
+            {
+                "name": "get_buf_index",
+                "start": 307,
+                "end": 312
+            },
+            {
+                "name": "convert_to_intervals",
+                "start": 319,
+                "end": 331
+            },
+            {
+                "name": "find_best_sample_index",
+                "start": 335,
+                "end": 366
+            },
+            {
+                "name": "find_min_delay_sample",
+                "start": 370,
+                "end": 382
+            },
+            {
+                "name": "SST_DoNewRegression",
+                "start": 399,
+                "end": 506
+            },
+            {
+                "name": "SST_GetFrequencyRange",
+                "start": 513,
+                "end": 530
+            },
+            {
+                "name": "SST_GetSelectionData",
+                "start": 534,
+                "end": 577
+            },
+            {
+                "name": "SST_GetTrackingData",
+                "start": 581,
+                "end": 608
+            },
+            {
+                "name": "SST_SlewSamples",
+                "start": 612,
+                "end": 649
+            },
+            {
+                "name": "SST_AddDispersion",
+                "start": 653,
+                "end": 663
+            },
+            {
+                "name": "SST_PredictOffset",
+                "start": 667,
+                "end": 686
+            },
+            {
+                "name": "SST_MinRoundTripDelay",
+                "start": 690,
+                "end": 696
+            },
+            {
+                "name": "SST_IsGoodSample",
+                "start": 700,
+                "end": 734
+            },
+            {
+                "name": "SST_SaveToFile",
+                "start": 740,
+                "end": 764
+            },
+            {
+                "name": "SST_LoadFromFile",
+                "start": 769,
+                "end": 825
+            },
+            {
+                "name": "SST_DoSourceReport",
+                "start": 829,
+                "end": 852
+            },
+            {
+                "name": "SST_LastSkewChange",
+                "start": 857,
+                "end": 860
+            },
+            {
+                "name": "SST_Samples",
+                "start": 864,
+                "end": 868
+            },
+            {
+                "name": "SST_DoSourcestatsReport",
+                "start": 872,
+                "end": 911
+            }
+        ],
+        "cmdparse.c": [
+            {
+                "name": "CPS_ParseNTPSourceAdd",
+                "start": 41,
+                "end": 195
+            },
+            {
+                "name": "CPS_NormalizeLine",
+                "start": 199,
+                "end": 227
+            },
+            {
+                "name": "CPS_SplitWord",
+                "start": 231,
+                "end": 252
+            },
+            {
+                "name": "CPS_ParseKey",
+                "start": 256,
+                "end": 282
+            }
+        ],
+        "sys_generic.h": [
+            {
+                "name": "SYS_Generic_CompleteFreqDriver",
+                "start": 34,
+                "end": 38
+            }
+        ],
+        "sys_generic.c": [
+            {
+                "name": "handle_step",
+                "start": 95,
+                "end": 107
+            },
+            {
+                "name": "update_slew",
+                "start": 112,
+                "end": 192
+            },
+            {
+                "name": "handle_end_of_slew",
+                "start": 196,
+                "end": 201
+            },
+            {
+                "name": "read_frequency",
+                "start": 205,
+                "end": 209
+            },
+            {
+                "name": "set_frequency",
+                "start": 213,
+                "end": 220
+            },
+            {
+                "name": "accrue_offset",
+                "start": 224,
+                "end": 231
+            },
+            {
+                "name": "offset_convert",
+                "start": 236,
+                "end": 247
+            },
+            {
+                "name": "apply_step_offset",
+                "start": 252,
+                "end": 269
+            },
+            {
+                "name": "SYS_Generic_CompleteFreqDriver",
+                "start": 273,
+                "end": 297
+            },
+            {
+                "name": "SYS_Generic_Finalise",
+                "start": 301,
+                "end": 312
+            }
+        ],
+        "rtc_linux.c": [
+            {
+                "name": "discard_samples",
+                "start": 163,
+                "end": 177
+            },
+            {
+                "name": "accumulate_sample",
+                "start": 183,
+                "end": 204
+            },
+            {
+                "name": "run_regression",
+                "start": 211,
+                "end": 260
+            },
+            {
+                "name": "slew_samples",
+                "start": 264,
+                "end": 298
+            },
+            {
+                "name": "rtc_from_t",
+                "start": 306,
+                "end": 314
+            },
+            {
+                "name": "t_from_rtc",
+                "start": 350,
+                "end": 371
+            },
+            {
+                "name": "read_hwclock_file",
+                "start": 375,
+                "end": 408
+            },
+            {
+                "name": "setup_config",
+                "start": 412,
+                "end": 424
+            },
+            {
+                "name": "read_coefs_from_file",
+                "start": 430,
+                "end": 464
+            },
+            {
+                "name": "write_coefs_to_file",
+                "start": 470,
+                "end": 532
+            },
+            {
+                "name": "RTC_Linux_Initialise",
+                "start": 540,
+                "end": 579
+            },
+            {
+                "name": "RTC_Linux_Finalise",
+                "start": 583,
+                "end": 600
+            },
+            {
+                "name": "switch_interrupts",
+                "start": 604,
+                "end": 623
+            },
+            {
+                "name": "measurement_timeout",
+                "start": 627,
+                "end": 632
+            },
+            {
+                "name": "set_rtc",
+                "start": 636,
+                "end": 660
+            },
+            {
+                "name": "handle_initial_trim",
+                "start": 664,
+                "end": 710
+            },
+            {
+                "name": "handle_relock_after_trim",
+                "start": 714,
+                "end": 735
+            },
+            {
+                "name": "maybe_autotrim",
+                "start": 739,
+                "end": 755
+            },
+            {
+                "name": "process_reading",
+                "start": 759,
+                "end": 802
+            },
+            {
+                "name": "read_from_device",
+                "start": 806,
+                "end": 925
+            },
+            {
+                "name": "RTC_Linux_TimeInit",
+                "start": 929,
+                "end": 939
+            },
+            {
+                "name": "RTC_Linux_StartMeasurements",
+                "start": 943,
+                "end": 948
+            },
+            {
+                "name": "RTC_Linux_WriteParameters",
+                "start": 952,
+                "end": 970
+            },
+            {
+                "name": "RTC_Linux_TimePreInit",
+                "start": 978,
+                "end": 1057
+            },
+            {
+                "name": "RTC_Linux_GetReport",
+                "start": 1061,
+                "end": 1077
+            },
+            {
+                "name": "RTC_Linux_Trim",
+                "start": 1081,
+                "end": 1127
+            }
+        ],
+        "refclock_sock.c": [
+            {
+                "name": "read_sample",
+                "start": 48,
+                "end": 82
+            },
+            {
+                "name": "sock_initialise",
+                "start": 84,
+                "end": 115
+            },
+            {
+                "name": "sock_finalise",
+                "start": 117,
+                "end": 124
+            }
+        ],
+        "tempcomp.c": [
+            {
+                "name": "read_timeout",
+                "start": 49,
+                "end": 84
+            },
+            {
+                "name": "TMC_Initialise",
+                "start": 86,
+                "end": 102
+            },
+            {
+                "name": "TMC_Finalise",
+                "start": 104,
+                "end": 112
+            }
+        ],
+        "clientlog.c": [
+            {
+                "name": "split_ip6",
+                "start": 98,
+                "end": 108
+            },
+            {
+                "name": "get_subnet",
+                "start": 112,
+                "end": 121
+            },
+            {
+                "name": "clear_subnet",
+                "start": 126,
+                "end": 134
+            },
+            {
+                "name": "clear_node",
+                "start": 138,
+                "end": 148
+            },
+            {
+                "name": "CLG_Initialise",
+                "start": 152,
+                "end": 170
+            },
+            {
+                "name": "CLG_Finalise",
+                "start": 174,
+                "end": 177
+            },
+            {
+                "name": "check_alloc_limit",
+                "start": 181,
+                "end": 189
+            },
+            {
+                "name": "create_subnet",
+                "start": 193,
+                "end": 200
+            },
+            {
+                "name": "create_node",
+                "start": 204,
+                "end": 228
+            },
+            {
+                "name": "find_subnet",
+                "start": 234,
+                "end": 257
+            },
+            {
+                "name": "find_subnet_dont_open",
+                "start": 264,
+                "end": 282
+            },
+            {
+                "name": "CLG_LogNTPClientAccess",
+                "start": 286,
+                "end": 312
+            },
+            {
+                "name": "CLG_LogNTPPeerAccess",
+                "start": 316,
+                "end": 342
+            },
+            {
+                "name": "CLG_LogCommandAccess",
+                "start": 346,
+                "end": 385
+            },
+            {
+                "name": "CLG_GetSubnetBitmap",
+                "start": 389,
+                "end": 435
+            },
+            {
+                "name": "CLG_GetClientAccessReportByIP",
+                "start": 439,
+                "end": 474
+            },
+            {
+                "name": "CLG_GetClientAccessReportByIndex",
+                "start": 478,
+                "end": 508
+            }
+        ],
+        "ntp_core.c": [
+            {
+                "name": "NCR_Initialise",
+                "start": 235,
+                "end": 243
+            },
+            {
+                "name": "NCR_Finalise",
+                "start": 247,
+                "end": 252
+            },
+            {
+                "name": "start_initial_timeout",
+                "start": 256,
+                "end": 289
+            },
+            {
+                "name": "take_offline",
+                "start": 293,
+                "end": 315
+            },
+            {
+                "name": "NCR_GetInstance",
+                "start": 319,
+                "end": 388
+            },
+            {
+                "name": "NCR_DestroyInstance",
+                "start": 393,
+                "end": 406
+            },
+            {
+                "name": "NCR_StartInstance",
+                "start": 410,
+                "end": 416
+            },
+            {
+                "name": "NCR_ResetInstance",
+                "start": 420,
+                "end": 439
+            },
+            {
+                "name": "check_packet_auth",
+                "start": 443,
+                "end": 448
+            },
+            {
+                "name": "adjust_poll",
+                "start": 452,
+                "end": 475
+            },
+            {
+                "name": "get_poll_adj",
+                "start": 479,
+                "end": 508
+            },
+            {
+                "name": "get_transmit_delay",
+                "start": 512,
+                "end": 597
+            },
+            {
+                "name": "transmit_packet",
+                "start": 601,
+                "end": 728
+            },
+            {
+                "name": "transmit_timeout",
+                "start": 733,
+                "end": 829
+            },
+            {
+                "name": "receive_packet",
+                "start": 834,
+                "end": 1294
+            },
+            {
+                "name": "NCR_ProcessKnown",
+                "start": 1320,
+                "end": 1484
+            },
+            {
+                "name": "NCR_ProcessUnknown",
+                "start": 1490,
+                "end": 1573
+            },
+            {
+                "name": "NCR_SlewTimes",
+                "start": 1577,
+                "end": 1592
+            },
+            {
+                "name": "NCR_TakeSourceOnline",
+                "start": 1596,
+                "end": 1617
+            },
+            {
+                "name": "NCR_TakeSourceOffline",
+                "start": 1621,
+                "end": 1639
+            },
+            {
+                "name": "NCR_ModifyMinpoll",
+                "start": 1643,
+                "end": 1652
+            },
+            {
+                "name": "NCR_ModifyMaxpoll",
+                "start": 1656,
+                "end": 1665
+            },
+            {
+                "name": "NCR_ModifyMaxdelay",
+                "start": 1669,
+                "end": 1675
+            },
+            {
+                "name": "NCR_ModifyMaxdelayratio",
+                "start": 1679,
+                "end": 1685
+            },
+            {
+                "name": "NCR_ModifyMaxdelaydevratio",
+                "start": 1689,
+                "end": 1695
+            },
+            {
+                "name": "NCR_ModifyMinstratum",
+                "start": 1699,
+                "end": 1705
+            },
+            {
+                "name": "NCR_ModifyPolltarget",
+                "start": 1709,
+                "end": 1715
+            },
+            {
+                "name": "NCR_InitiateSampleBurst",
+                "start": 1719,
+                "end": 1751
+            },
+            {
+                "name": "NCR_ReportSource",
+                "start": 1755,
+                "end": 1770
+            },
+            {
+                "name": "NCR_AddAccessRestriction",
+                "start": 1774,
+                "end": 1800
+            },
+            {
+                "name": "NCR_CheckAccessRestriction",
+                "start": 1804,
+                "end": 1808
+            },
+            {
+                "name": "NCR_IncrementActivityCounters",
+                "start": 1812,
+                "end": 1833
+            },
+            {
+                "name": "NCR_GetRemoteAddress",
+                "start": 1837,
+                "end": 1841
+            },
+            {
+                "name": "NCR_IsSyncPeer",
+                "start": 1845,
+                "end": 1848
+            }
+        ],
+        "sched.c": [
+            {
+                "name": "handle_slew",
+                "start": 121,
+                "end": 127
+            },
+            {
+                "name": "SCH_Initialise",
+                "start": 131,
+                "end": 153
+            },
+            {
+                "name": "SCH_Finalise",
+                "start": 158,
+                "end": 161
+            },
+            {
+                "name": "SCH_AddInputFileHandler",
+                "start": 165,
+                "end": 187
+            },
+            {
+                "name": "SCH_RemoveInputFileHandler",
+                "start": 192,
+                "end": 217
+            },
+            {
+                "name": "SCH_GetLastEventTime",
+                "start": 221,
+                "end": 231
+            },
+            {
+                "name": "allocate_tqe",
+                "start": 237,
+                "end": 255
+            },
+            {
+                "name": "release_tqe",
+                "start": 259,
+                "end": 264
+            },
+            {
+                "name": "SCH_AddTimeout",
+                "start": 268,
+                "end": 304
+            },
+            {
+                "name": "SCH_AddTimeoutByDelay",
+                "start": 310,
+                "end": 322
+            },
+            {
+                "name": "SCH_AddTimeoutInClass",
+                "start": 326,
+                "end": 396
+            },
+            {
+                "name": "SCH_RemoveTimeout",
+                "start": 400,
+                "end": 425
+            },
+            {
+                "name": "dispatch_timeouts",
+                "start": 433,
+                "end": 473
+            },
+            {
+                "name": "dispatch_filehandlers",
+                "start": 479,
+                "end": 497
+            },
+            {
+                "name": "handle_slew",
+                "start": 501,
+                "end": 528
+            },
+            {
+                "name": "check_current_time",
+                "start": 534,
+                "end": 559
+            },
+            {
+                "name": "SCH_MainLoop",
+                "start": 563,
+                "end": 638
+            },
+            {
+                "name": "SCH_QuitProgram",
+                "start": 642,
+                "end": 647
+            }
+        ],
+        "ntp_io.c": [
+            {
+                "name": "do_size_checks",
+                "start": 74,
+                "end": 97
+            },
+            {
+                "name": "prepare_socket",
+                "start": 101,
+                "end": 243
+            },
+            {
+                "name": "connect_socket",
+                "start": 247,
+                "end": 283
+            },
+            {
+                "name": "close_socket",
+                "start": 287,
+                "end": 295
+            },
+            {
+                "name": "NIO_Initialise",
+                "start": 299,
+                "end": 356
+            },
+            {
+                "name": "NIO_Finalise",
+                "start": 360,
+                "end": 374
+            },
+            {
+                "name": "NIO_GetClientSocket",
+                "start": 378,
+                "end": 418
+            },
+            {
+                "name": "NIO_GetServerSocket",
+                "start": 422,
+                "end": 435
+            },
+            {
+                "name": "NIO_CloseClientSocket",
+                "start": 439,
+                "end": 444
+            },
+            {
+                "name": "NIO_IsServerSocket",
+                "start": 448,
+                "end": 457
+            },
+            {
+                "name": "read_from_socket",
+                "start": 461,
+                "end": 569
+            },
+            {
+                "name": "send_packet",
+                "start": 574,
+                "end": 687
+            },
+            {
+                "name": "NIO_SendNormalPacket",
+                "start": 692,
+                "end": 696
+            },
+            {
+                "name": "NIO_SendAuthenticatedPacket",
+                "start": 701,
+                "end": 705
+            },
+            {
+                "name": "NIO_SendEcho",
+                "start": 712,
+                "end": 722
+            }
+        ],
+        "sys.c": [
+            {
+                "name": "SYS_Initialise",
+                "start": 51,
+                "end": 71
+            },
+            {
+                "name": "SYS_Finalise",
+                "start": 75,
+                "end": 94
+            },
+            {
+                "name": "SYS_DropRoot",
+                "start": 98,
+                "end": 105
+            },
+            {
+                "name": "SYS_SetScheduler",
+                "start": 109,
+                "end": 116
+            },
+            {
+                "name": "SYS_LockMemory",
+                "start": 120,
+                "end": 127
+            }
+        ],
+        "nameserv_async.c": [
+            {
+                "name": "DNS_Name2IPAddressAsync",
+                "start": 132,
+                "end": 140
+            }
+        ],
+        "conf.c": [
+            {
+                "name": "command_parse_error",
+                "start": 246,
+                "end": 252
+            },
+            {
+                "name": "other_parse_error",
+                "start": 256,
+                "end": 262
+            },
+            {
+                "name": "check_number_of_args",
+                "start": 266,
+                "end": 284
+            },
+            {
+                "name": "CNF_SetRestarted",
+                "start": 288,
+                "end": 292
+            },
+            {
+                "name": "CNF_ReadFile",
+                "start": 297,
+                "end": 315
+            },
+            {
+                "name": "CNF_ParseLine",
+                "start": 320,
+                "end": 457
+            },
+            {
+                "name": "parse_string",
+                "start": 461,
+                "end": 467
+            },
+            {
+                "name": "parse_int",
+                "start": 471,
+                "end": 480
+            },
+            {
+                "name": "parse_unsignedlong",
+                "start": 484,
+                "end": 493
+            },
+            {
+                "name": "parse_double",
+                "start": 497,
+                "end": 506
+            },
+            {
+                "name": "parse_null",
+                "start": 510,
+                "end": 515
+            },
+            {
+                "name": "parse_source",
+                "start": 519,
+                "end": 571
+            },
+            {
+                "name": "parse_server",
+                "start": 575,
+                "end": 579
+            },
+            {
+                "name": "parse_peer",
+                "start": 583,
+                "end": 587
+            },
+            {
+                "name": "parse_refclock",
+                "start": 591,
+                "end": 706
+            },
+            {
+                "name": "parse_log",
+                "start": 710,
+                "end": 738
+            },
+            {
+                "name": "parse_local",
+                "start": 742,
+                "end": 752
+            },
+            {
+                "name": "parse_initstepslew",
+                "start": 756,
+                "end": 791
+            },
+            {
+                "name": "parse_clientloglimit",
+                "start": 795,
+                "end": 807
+            },
+            {
+                "name": "parse_fallbackdrift",
+                "start": 811,
+                "end": 818
+            },
+            {
+                "name": "parse_makestep",
+                "start": 822,
+                "end": 835
+            },
+            {
+                "name": "parse_maxchange",
+                "start": 839,
+                "end": 847
+            },
+            {
+                "name": "parse_mailonchange",
+                "start": 851,
+                "end": 864
+            },
+            {
+                "name": "parse_allow_deny",
+                "start": 868,
+                "end": 973
+            },
+            {
+                "name": "parse_allow",
+                "start": 978,
+                "end": 982
+            },
+            {
+                "name": "parse_deny",
+                "start": 987,
+                "end": 991
+            },
+            {
+                "name": "parse_cmdallow",
+                "start": 995,
+                "end": 999
+            },
+            {
+                "name": "parse_cmddeny",
+                "start": 1004,
+                "end": 1008
+            },
+            {
+                "name": "parse_bindacqaddress",
+                "start": 1012,
+                "end": 1026
+            },
+            {
+                "name": "parse_bindaddress",
+                "start": 1030,
+                "end": 1044
+            },
+            {
+                "name": "parse_bindcmdaddress",
+                "start": 1048,
+                "end": 1062
+            },
+            {
+                "name": "parse_broadcast",
+                "start": 1066,
+                "end": 1118
+            },
+            {
+                "name": "parse_tempcomp",
+                "start": 1122,
+                "end": 1142
+            },
+            {
+                "name": "parse_include",
+                "start": 1146,
+                "end": 1151
+            },
+            {
+                "name": "CNF_AddInitSources",
+                "start": 1155,
+                "end": 1175
+            },
+            {
+                "name": "CNF_AddSources",
+                "start": 1179,
+                "end": 1187
+            },
+            {
+                "name": "CNF_AddRefclocks",
+                "start": 1191,
+                "end": 1198
+            },
+            {
+                "name": "CNF_AddBroadcasts",
+                "start": 1202,
+                "end": 1211
+            },
+            {
+                "name": "CNF_GetNTPPort",
+                "start": 1215,
+                "end": 1219
+            },
+            {
+                "name": "CNF_GetAcquisitionPort",
+                "start": 1223,
+                "end": 1227
+            },
+            {
+                "name": "CNF_GetDriftFile",
+                "start": 1231,
+                "end": 1235
+            },
+            {
+                "name": "CNF_GetLogBanner",
+                "start": 1239,
+                "end": 1243
+            },
+            {
+                "name": "CNF_GetLogDir",
+                "start": 1247,
+                "end": 1251
+            },
+            {
+                "name": "CNF_GetDumpDir",
+                "start": 1255,
+                "end": 1259
+            },
+            {
+                "name": "CNF_GetLogMeasurements",
+                "start": 1263,
+                "end": 1267
+            },
+            {
+                "name": "CNF_GetLogStatistics",
+                "start": 1271,
+                "end": 1275
+            },
+            {
+                "name": "CNF_GetLogTracking",
+                "start": 1279,
+                "end": 1283
+            },
+            {
+                "name": "CNF_GetLogRtc",
+                "start": 1287,
+                "end": 1291
+            },
+            {
+                "name": "CNF_GetLogRefclocks",
+                "start": 1295,
+                "end": 1299
+            },
+            {
+                "name": "CNF_GetLogTempComp",
+                "start": 1303,
+                "end": 1307
+            },
+            {
+                "name": "CNF_GetKeysFile",
+                "start": 1311,
+                "end": 1315
+            },
+            {
+                "name": "CNF_GetRtcAutotrim",
+                "start": 1319,
+                "end": 1323
+            },
+            {
+                "name": "CNF_GetRtcFile",
+                "start": 1327,
+                "end": 1331
+            },
+            {
+                "name": "CNF_GetRtcDevice",
+                "start": 1335,
+                "end": 1339
+            },
+            {
+                "name": "CNF_GetCommandKey",
+                "start": 1343,
+                "end": 1347
+            },
+            {
+                "name": "CNF_GetGenerateCommandKey",
+                "start": 1351,
+                "end": 1355
+            },
+            {
+                "name": "CNF_GetDumpOnExit",
+                "start": 1359,
+                "end": 1363
+            },
+            {
+                "name": "CNF_GetMaxUpdateSkew",
+                "start": 1367,
+                "end": 1371
+            },
+            {
+                "name": "CNF_GetMaxClockError",
+                "start": 1375,
+                "end": 1379
+            },
+            {
+                "name": "CNF_GetCorrectionTimeRatio",
+                "start": 1383,
+                "end": 1387
+            },
+            {
+                "name": "CNF_GetMaxSlewRate",
+                "start": 1391,
+                "end": 1395
+            },
+            {
+                "name": "CNF_GetReselectDistance",
+                "start": 1399,
+                "end": 1403
+            },
+            {
+                "name": "CNF_GetStratumWeight",
+                "start": 1407,
+                "end": 1411
+            },
+            {
+                "name": "CNF_GetCombineLimit",
+                "start": 1415,
+                "end": 1419
+            },
+            {
+                "name": "CNF_GetManualEnabled",
+                "start": 1423,
+                "end": 1427
+            },
+            {
+                "name": "CNF_GetCommandPort",
+                "start": 1431,
+                "end": 1434
+            },
+            {
+                "name": "CNF_AllowLocalReference",
+                "start": 1438,
+                "end": 1447
+            },
+            {
+                "name": "CNF_GetRtcOnUtc",
+                "start": 1451,
+                "end": 1455
+            },
+            {
+                "name": "CNF_GetRtcSync",
+                "start": 1459,
+                "end": 1463
+            },
+            {
+                "name": "CNF_GetMakeStep",
+                "start": 1467,
+                "end": 1472
+            },
+            {
+                "name": "CNF_GetMaxChange",
+                "start": 1476,
+                "end": 1482
+            },
+            {
+                "name": "CNF_GetLogChange",
+                "start": 1486,
+                "end": 1491
+            },
+            {
+                "name": "CNF_GetMailOnChange",
+                "start": 1495,
+                "end": 1507
+            },
+            {
+                "name": "CNF_SetupAccessRestrictions",
+                "start": 1511,
+                "end": 1530
+            },
+            {
+                "name": "CNF_GetNoClientLog",
+                "start": 1534,
+                "end": 1538
+            },
+            {
+                "name": "CNF_GetClientLogLimit",
+                "start": 1542,
+                "end": 1546
+            },
+            {
+                "name": "CNF_GetFallbackDrifts",
+                "start": 1550,
+                "end": 1555
+            },
+            {
+                "name": "CNF_GetBindAddress",
+                "start": 1559,
+                "end": 1568
+            },
+            {
+                "name": "CNF_GetBindAcquisitionAddress",
+                "start": 1572,
+                "end": 1581
+            },
+            {
+                "name": "CNF_GetBindCommandAddress",
+                "start": 1585,
+                "end": 1594
+            },
+            {
+                "name": "CNF_GetPidFile",
+                "start": 1598,
+                "end": 1602
+            },
+            {
+                "name": "CNF_GetLeapSecTimezone",
+                "start": 1606,
+                "end": 1610
+            },
+            {
+                "name": "CNF_GetSchedPriority",
+                "start": 1614,
+                "end": 1618
+            },
+            {
+                "name": "CNF_GetLockMemory",
+                "start": 1622,
+                "end": 1626
+            },
+            {
+                "name": "CNF_GetTempComp",
+                "start": 1630,
+                "end": 1639
+            },
+            {
+                "name": "CNF_GetUser",
+                "start": 1643,
+                "end": 1647
+            },
+            {
+                "name": "CNF_GetMaxSamples",
+                "start": 1651,
+                "end": 1655
+            },
+            {
+                "name": "CNF_GetMinSamples",
+                "start": 1659,
+                "end": 1663
+            },
+            {
+                "name": "CNF_GetHwclockFile",
+                "start": 1667,
+                "end": 1671
+            },
+            {
+                "name": "CNF_GetInitSources",
+                "start": 1675,
+                "end": 1679
+            },
+            {
+                "name": "CNF_GetInitStepThreshold",
+                "start": 1683,
+                "end": 1687
+            }
+        ],
+        "manual.c": [
+            {
+                "name": "slew_samples",
+                "start": 64,
+                "end": 70
+            },
+            {
+                "name": "MNL_Initialise",
+                "start": 74,
+                "end": 86
+            },
+            {
+                "name": "MNL_Finalise",
+                "start": 90,
+                "end": 93
+            },
+            {
+                "name": "estimate_and_set_system",
+                "start": 97,
+                "end": 169
+            },
+            {
+                "name": "MNL_AcceptTimestamp",
+                "start": 173,
+                "end": 210
+            },
+            {
+                "name": "slew_samples",
+                "start": 214,
+                "end": 234
+            },
+            {
+                "name": "MNL_Enable",
+                "start": 238,
+                "end": 242
+            },
+            {
+                "name": "MNL_Disable",
+                "start": 247,
+                "end": 251
+            },
+            {
+                "name": "MNL_Reset",
+                "start": 255,
+                "end": 259
+            },
+            {
+                "name": "MNL_ReportSamples",
+                "start": 265,
+                "end": 282
+            },
+            {
+                "name": "MNL_DeleteSample",
+                "start": 288,
+                "end": 313
+            }
+        ],
+        "wrap_adjtimex.c": [
+            {
+                "name": "TMX_ResetOffset",
+                "start": 39,
+                "end": 64
+            },
+            {
+                "name": "TMX_SetFrequency",
+                "start": 66,
+                "end": 86
+            },
+            {
+                "name": "TMX_GetFrequency",
+                "start": 88,
+                "end": 98
+            },
+            {
+                "name": "TMX_ReadCurrentParams",
+                "start": 100,
+                "end": 143
+            },
+            {
+                "name": "TMX_SetLeap",
+                "start": 145,
+                "end": 162
+            },
+            {
+                "name": "TMX_SetSync",
+                "start": 164,
+                "end": 178
+            },
+            {
+                "name": "TMX_TestStepOffset",
+                "start": 180,
+                "end": 202
+            },
+            {
+                "name": "TMX_ApplyStepOffset",
+                "start": 204,
+                "end": 218
+            }
+        ],
+        "sys_linux.c": [
+            {
+                "name": "our_round",
+                "start": 84,
+                "end": 93
+            },
+            {
+                "name": "apply_step_offset",
+                "start": 98,
+                "end": 104
+            },
+            {
+                "name": "set_frequency",
+                "start": 113,
+                "end": 147
+            },
+            {
+                "name": "read_frequency",
+                "start": 152,
+                "end": 165
+            },
+            {
+                "name": "set_leap",
+                "start": 169,
+                "end": 178
+            },
+            {
+                "name": "guess_hz_and_shift_hz",
+                "start": 187,
+                "end": 215
+            },
+            {
+                "name": "get_hz_and_shift_hz",
+                "start": 219,
+                "end": 239
+            },
+            {
+                "name": "kernelvercmp",
+                "start": 243,
+                "end": 252
+            },
+            {
+                "name": "get_version_specific_details",
+                "start": 258,
+                "end": 316
+            },
+            {
+                "name": "SYS_Linux_Initialise",
+                "start": 321,
+                "end": 342
+            },
+            {
+                "name": "SYS_Linux_Finalise",
+                "start": 347,
+                "end": 351
+            }
+        ],
+        "main.c": [
+            {
+                "name": "delete_pidfile",
+                "start": 70,
+                "end": 76
+            },
+            {
+                "name": "MAI_CleanupAndExit",
+                "start": 80,
+                "end": 112
+            },
+            {
+                "name": "signal_cleanup",
+                "start": 116,
+                "end": 121
+            },
+            {
+                "name": "ntp_source_resolving_end",
+                "start": 125,
+                "end": 148
+            },
+            {
+                "name": "post_init_ntp_hook",
+                "start": 152,
+                "end": 170
+            },
+            {
+                "name": "reference_mode_end",
+                "start": 174,
+                "end": 193
+            },
+            {
+                "name": "post_init_rtc_hook",
+                "start": 197,
+                "end": 208
+            },
+            {
+                "name": "does_process_exist",
+                "start": 213,
+                "end": 223
+            },
+            {
+                "name": "maybe_another_chronyd_running",
+                "start": 227,
+                "end": 247
+            },
+            {
+                "name": "write_lockfile",
+                "start": 251,
+                "end": 264
+            },
+            {
+                "name": "go_daemon",
+                "start": 268,
+                "end": 336
+            },
+            {
+                "name": "main",
+                "start": 340,
+                "end": 533
+            }
+        ],
+        "hash_intmd5.c": [
+            {
+                "name": "HSH_GetHashId",
+                "start": 37,
+                "end": 45
+            },
+            {
+                "name": "HSH_Hash",
+                "start": 47,
+                "end": 64
+            }
+        ],
+        "mkdirpp.c": [
+            {
+                "name": "do_dir",
+                "start": 35,
+                "end": 63
+            },
+            {
+                "name": "mkdir_and_parents",
+                "start": 69,
+                "end": 120
+            }
+        ]
+    }
+}

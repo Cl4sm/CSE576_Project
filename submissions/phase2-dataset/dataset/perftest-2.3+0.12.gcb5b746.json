@@ -1,0 +1,921 @@
+{
+    "perftest-2.3+0.12.gcb5b746": {
+        "src/get_clock.h": [
+            {
+                "name": "get_cycles",
+                "start": 43,
+                "end": 51
+            }
+        ],
+        "src/perftest_resources.h": [
+            {
+                "name": "check_add_port",
+                "start": 217,
+                "end": 220
+            },
+            {
+                "name": "create_rdma_resources",
+                "start": 245,
+                "end": 246
+            },
+            {
+                "name": "destroy_rdma_resources",
+                "start": 258,
+                "end": 259
+            },
+            {
+                "name": "destroy_ctx",
+                "start": 281,
+                "end": 282
+            },
+            {
+                "name": "ctx_qp_create",
+                "start": 314,
+                "end": 315
+            },
+            {
+                "name": "ctx_connect",
+                "start": 350,
+                "end": 353
+            },
+            {
+                "name": "ctx_set_send_exp_wqes",
+                "start": 368,
+                "end": 370
+            },
+            {
+                "name": "ctx_set_send_reg_wqes",
+                "start": 386,
+                "end": 388
+            },
+            {
+                "name": "ctx_set_send_wqes",
+                "start": 403,
+                "end": 405
+            },
+            {
+                "name": "ctx_alloc_credit",
+                "start": 439,
+                "end": 441
+            },
+            {
+                "name": "ctx_set_credit_wqes",
+                "start": 456,
+                "end": 458
+            },
+            {
+                "name": "ctx_notify_events",
+                "start": 594,
+                "end": 611
+            },
+            {
+                "name": "increase_rem_addr",
+                "start": 664,
+                "end": 680
+            },
+            {
+                "name": "increase_loc_addr",
+                "start": 696,
+                "end": 703
+            }
+        ],
+        "src/perftest_communication.h": [
+            {
+                "name": "create_comm_struct",
+                "start": 133,
+                "end": 134
+            },
+            {
+                "name": "set_up_connection",
+                "start": 149,
+                "end": 151
+            },
+            {
+                "name": "rdma_client_connect",
+                "start": 178,
+                "end": 179
+            },
+            {
+                "name": "retry_rdma_connect",
+                "start": 192,
+                "end": 193
+            },
+            {
+                "name": "rdma_server_connect",
+                "start": 205,
+                "end": 206
+            },
+            {
+                "name": "ctx_hand_shake",
+                "start": 225,
+                "end": 227
+            },
+            {
+                "name": "ctx_print_pingpong_data",
+                "start": 242,
+                "end": 243
+            },
+            {
+                "name": "ctx_close_connection",
+                "start": 259,
+                "end": 261
+            },
+            {
+                "name": "ctx_xchg_data",
+                "start": 281,
+                "end": 283
+            },
+            {
+                "name": "xchg_bw_reports",
+                "start": 402,
+                "end": 403
+            },
+            {
+                "name": "ctx_check_gid_compatibility",
+                "start": 434,
+                "end": 435
+            }
+        ],
+        "src/write_bw.c": [
+            {
+                "name": "main",
+                "start": 48,
+                "end": 397
+            }
+        ],
+        "src/read_lat.c": [
+            {
+                "name": "main",
+                "start": 52,
+                "end": 276
+            }
+        ],
+        "src/raw_ethernet_resources.h": [
+            {
+                "name": "build_pkt_on_buffer",
+                "start": 126,
+                "end": 133
+            },
+            {
+                "name": "create_raw_eth_pkt",
+                "start": 146,
+                "end": 149
+            },
+            {
+                "name": "send_set_up_connection",
+                "start": 172,
+                "end": 181
+            },
+            {
+                "name": "switch_smac_dmac",
+                "start": 242,
+                "end": 250
+            }
+        ],
+        "src/raw_ethernet_send_bw.c": [
+            {
+                "name": "main",
+                "start": 55,
+                "end": 393
+            }
+        ],
+        "src/perftest_communication.c": [
+            {
+                "name": "valid_mtu_size",
+                "start": 24,
+                "end": 27
+            },
+            {
+                "name": "ipv6_addr_v4mapped",
+                "start": 29,
+                "end": 37
+            },
+            {
+                "name": "bswap_double",
+                "start": 44,
+                "end": 53
+            },
+            {
+                "name": "post_one_recv_wqe",
+                "start": 60,
+                "end": 81
+            },
+            {
+                "name": "post_recv_to_get_ah",
+                "start": 86,
+                "end": 108
+            },
+            {
+                "name": "send_qp_num_for_ah",
+                "start": 113,
+                "end": 155
+            },
+            {
+                "name": "create_ah_from_wc_recv",
+                "start": 160,
+                "end": 181
+            },
+            {
+                "name": "ethernet_write_keys",
+                "start": 187,
+                "end": 226
+            },
+            {
+                "name": "ethernet_read_keys",
+                "start": 231,
+                "end": 325
+            },
+            {
+                "name": "rdma_write_keys",
+                "start": 330,
+                "end": 387
+            },
+            {
+                "name": "rdma_read_keys",
+                "start": 392,
+                "end": 430
+            },
+            {
+                "name": "ethernet_client_connect",
+                "start": 435,
+                "end": 471
+            },
+            {
+                "name": "ethernet_server_connect",
+                "start": 476,
+                "end": 525
+            },
+            {
+                "name": "set_up_connection",
+                "start": 530,
+                "end": 685
+            },
+            {
+                "name": "rdma_client_connect",
+                "start": 690,
+                "end": 852
+            },
+            {
+                "name": "retry_rdma_connect",
+                "start": 857,
+                "end": 878
+            },
+            {
+                "name": "rdma_server_connect",
+                "start": 883,
+                "end": 991
+            },
+            {
+                "name": "create_comm_struct",
+                "start": 996,
+                "end": 1043
+            },
+            {
+                "name": "establish_connection",
+                "start": 1048,
+                "end": 1080
+            },
+            {
+                "name": "ctx_hand_shake",
+                "start": 1085,
+                "end": 1127
+            },
+            {
+                "name": "ctx_xchg_data_ethernet",
+                "start": 1136,
+                "end": 1165
+            },
+            {
+                "name": "ctx_xchg_data_rdma",
+                "start": 1170,
+                "end": 1199
+            },
+            {
+                "name": "rdma_read_data",
+                "start": 1205,
+                "end": 1228
+            },
+            {
+                "name": "rdma_write_data",
+                "start": 1233,
+                "end": 1269
+            },
+            {
+                "name": "ethernet_write_data",
+                "start": 1274,
+                "end": 1284
+            },
+            {
+                "name": "ethernet_read_data",
+                "start": 1288,
+                "end": 1296
+            },
+            {
+                "name": "ctx_xchg_data",
+                "start": 1302,
+                "end": 1312
+            },
+            {
+                "name": "xchg_bw_reports",
+                "start": 1317,
+                "end": 1399
+            },
+            {
+                "name": "ctx_print_pingpong_data",
+                "start": 1404,
+                "end": 1444
+            },
+            {
+                "name": "ctx_close_connection",
+                "start": 1449,
+                "end": 1471
+            },
+            {
+                "name": "exchange_versions",
+                "start": 1476,
+                "end": 1484
+            },
+            {
+                "name": "check_sys_data",
+                "start": 1489,
+                "end": 1527
+            },
+            {
+                "name": "check_mtu",
+                "start": 1532,
+                "end": 1589
+            },
+            {
+                "name": "ctx_check_gid_compatibility",
+                "start": 1591,
+                "end": 1604
+            }
+        ],
+        "src/perftest_parameters.c": [
+            {
+                "name": "parse_mac_from_str",
+                "start": 31,
+                "end": 74
+            },
+            {
+                "name": "parse_ip_from_str",
+                "start": 90,
+                "end": 93
+            },
+            {
+                "name": "check_if_valid_udp_port",
+                "start": 98,
+                "end": 101
+            },
+            {
+                "name": "get_cache_line_size",
+                "start": 105,
+                "end": 127
+            },
+            {
+                "name": "usage",
+                "start": 131,
+                "end": 377
+            },
+            {
+                "name": "usage_raw_ethernet",
+                "start": 381,
+                "end": 418
+            },
+            {
+                "name": "init_perftest_params",
+                "start": 422,
+                "end": 511
+            },
+            {
+                "name": "ctx_chk_pkey_index",
+                "start": 516,
+                "end": 536
+            },
+            {
+                "name": "change_conn_type",
+                "start": 542,
+                "end": 581
+            },
+            {
+                "name": "set_eth_mtu",
+                "start": 585,
+                "end": 602
+            },
+            {
+                "name": "force_dependecies",
+                "start": 606,
+                "end": 960
+            },
+            {
+                "name": "transport_str",
+                "start": 965,
+                "end": 977
+            },
+            {
+                "name": "link_layer_str",
+                "start": 982,
+                "end": 998
+            },
+            {
+                "name": "ib_dev_name",
+                "start": 1003,
+                "end": 1049
+            },
+            {
+                "name": "set_mtu",
+                "start": 1054,
+                "end": 1093
+            },
+            {
+                "name": "set_link_layer",
+                "start": 1098,
+                "end": 1123
+            },
+            {
+                "name": "ctx_set_out_reads",
+                "start": 1128,
+                "end": 1149
+            },
+            {
+                "name": "ctx_set_max_inline",
+                "start": 1154,
+                "end": 1187
+            },
+            {
+                "name": "parser",
+                "start": 1191,
+                "end": 1679
+            },
+            {
+                "name": "check_link_and_mtu",
+                "start": 1684,
+                "end": 1760
+            },
+            {
+                "name": "check_link",
+                "start": 1766,
+                "end": 1817
+            },
+            {
+                "name": "ctx_print_test_info",
+                "start": 1823,
+                "end": 1932
+            },
+            {
+                "name": "calc_cpu_util",
+                "start": 1934,
+                "end": 1943
+            },
+            {
+                "name": "print_report_bw",
+                "start": 1948,
+                "end": 2033
+            },
+            {
+                "name": "print_full_bw_report",
+                "start": 2039,
+                "end": 2086
+            },
+            {
+                "name": "get_median",
+                "start": 2090,
+                "end": 2096
+            },
+            {
+                "name": "cycles_compare",
+                "start": 2101,
+                "end": 2109
+            },
+            {
+                "name": "print_report_lat",
+                "start": 2114,
+                "end": 2176
+            },
+            {
+                "name": "print_report_lat_duration",
+                "start": 2181,
+                "end": 2208
+            }
+        ],
+        "src/atomic_lat.c": [
+            {
+                "name": "main",
+                "start": 53,
+                "end": 274
+            }
+        ],
+        "src/raw_ethernet_send_lat.c": [
+            {
+                "name": "main",
+                "start": 54,
+                "end": 287
+            }
+        ],
+        "src/write_lat.c": [
+            {
+                "name": "main",
+                "start": 52,
+                "end": 257
+            }
+        ],
+        "src/perftest_resources.c": [
+            {
+                "name": "next_word_string",
+                "start": 153,
+                "end": 165
+            },
+            {
+                "name": "get_n_word_string",
+                "start": 167,
+                "end": 174
+            },
+            {
+                "name": "compress_spaces",
+                "start": 175,
+                "end": 190
+            },
+            {
+                "name": "get_cpu_stats",
+                "start": 192,
+                "end": 210
+            },
+            {
+                "name": "check_for_contig_pages_support",
+                "start": 212,
+                "end": 239
+            },
+            {
+                "name": "check_add_port",
+                "start": 516,
+                "end": 535
+            },
+            {
+                "name": "create_rdma_resources",
+                "start": 540,
+                "end": 570
+            },
+            {
+                "name": "destroy_rdma_resources",
+                "start": 575,
+                "end": 585
+            },
+            {
+                "name": "ctx_find_dev",
+                "start": 590,
+                "end": 618
+            },
+            {
+                "name": "alloc_ctx",
+                "start": 623,
+                "end": 696
+            },
+            {
+                "name": "destroy_ctx",
+                "start": 701,
+                "end": 876
+            },
+            {
+                "name": "ctx_init",
+                "start": 950,
+                "end": 1258
+            },
+            {
+                "name": "ctx_qp_create",
+                "start": 1263,
+                "end": 1313
+            },
+            {
+                "name": "ctx_modify_qp_to_init",
+                "start": 1452,
+                "end": 1543
+            },
+            {
+                "name": "ctx_modify_qp_to_rtr",
+                "start": 1606,
+                "end": 1676
+            },
+            {
+                "name": "ctx_modify_qp_to_rts",
+                "start": 1717,
+                "end": 1743
+            },
+            {
+                "name": "ctx_connect",
+                "start": 1748,
+                "end": 1835
+            },
+            {
+                "name": "ctx_set_send_wqes",
+                "start": 1840,
+                "end": 1854
+            },
+            {
+                "name": "ctx_set_send_reg_wqes",
+                "start": 2008,
+                "end": 2134
+            },
+            {
+                "name": "ctx_set_recv_wqes",
+                "start": 2139,
+                "end": 2205
+            },
+            {
+                "name": "ctx_alloc_credit",
+                "start": 2207,
+                "end": 2231
+            },
+            {
+                "name": "ctx_set_credit_wqes",
+                "start": 2234,
+                "end": 2260
+            },
+            {
+                "name": "clean_scq_credit",
+                "start": 2262,
+                "end": 2294
+            },
+            {
+                "name": "perform_warm_up",
+                "start": 2299,
+                "end": 2364
+            },
+            {
+                "name": "run_iter_bw",
+                "start": 2369,
+                "end": 2610
+            },
+            {
+                "name": "set_on_first_rx_packet",
+                "start": 2615,
+                "end": 2631
+            },
+            {
+                "name": "run_iter_bw_server",
+                "start": 2636,
+                "end": 2827
+            },
+            {
+                "name": "run_iter_bw_infinitely",
+                "start": 2832,
+                "end": 2928
+            },
+            {
+                "name": "run_iter_bw_infinitely_server",
+                "start": 2933,
+                "end": 3042
+            },
+            {
+                "name": "run_iter_bi",
+                "start": 3047,
+                "end": 3384
+            },
+            {
+                "name": "run_iter_lat_write",
+                "start": 3389,
+                "end": 3505
+            },
+            {
+                "name": "run_iter_lat",
+                "start": 3510,
+                "end": 3603
+            },
+            {
+                "name": "run_iter_lat_send",
+                "start": 3608,
+                "end": 3797
+            },
+            {
+                "name": "ctx_get_local_lid",
+                "start": 3802,
+                "end": 3810
+            },
+            {
+                "name": "catch_alarm",
+                "start": 3815,
+                "end": 3839
+            },
+            {
+                "name": "check_alive",
+                "start": 3841,
+                "end": 3858
+            },
+            {
+                "name": "catch_alarm_infintely",
+                "start": 3863,
+                "end": 3870
+            }
+        ],
+        "src/read_bw.c": [
+            {
+                "name": "main",
+                "start": 48,
+                "end": 395
+            }
+        ],
+        "src/send_lat.c": [
+            {
+                "name": "set_mcast_group",
+                "start": 54,
+                "end": 96
+            },
+            {
+                "name": "send_set_up_connection",
+                "start": 101,
+                "end": 163
+            },
+            {
+                "name": "send_destroy_ctx",
+                "start": 168,
+                "end": 198
+            },
+            {
+                "name": "main",
+                "start": 203,
+                "end": 488
+            }
+        ],
+        "src/send_bw.c": [
+            {
+                "name": "set_mcast_group",
+                "start": 49,
+                "end": 78
+            },
+            {
+                "name": "send_set_up_connection",
+                "start": 83,
+                "end": 117
+            },
+            {
+                "name": "send_destroy_ctx",
+                "start": 122,
+                "end": 148
+            },
+            {
+                "name": "main",
+                "start": 153,
+                "end": 577
+            }
+        ],
+        "src/raw_ethernet_resources.c": [
+            {
+                "name": "check_flow_steering_support",
+                "start": 52,
+                "end": 70
+            },
+            {
+                "name": "mac_from_gid",
+                "start": 76,
+                "end": 83
+            },
+            {
+                "name": "mac_from_user",
+                "start": 88,
+                "end": 91
+            },
+            {
+                "name": "ip_checksum",
+                "start": 96,
+                "end": 111
+            },
+            {
+                "name": "gen_ip_header",
+                "start": 116,
+                "end": 135
+            },
+            {
+                "name": "gen_udp_header",
+                "start": 140,
+                "end": 154
+            },
+            {
+                "name": "gen_tcp_header",
+                "start": 158,
+                "end": 169
+            },
+            {
+                "name": "gen_eth_header",
+                "start": 178,
+                "end": 185
+            },
+            {
+                "name": "print_spec",
+                "start": 196,
+                "end": 257
+            },
+            {
+                "name": "print_ethernet_header",
+                "start": 261,
+                "end": 294
+            },
+            {
+                "name": "print_ip_header",
+                "start": 298,
+                "end": 327
+            },
+            {
+                "name": "print_udp_header",
+                "start": 331,
+                "end": 345
+            },
+            {
+                "name": "print_tcp_header",
+                "start": 350,
+                "end": 364
+            },
+            {
+                "name": "print_pkt",
+                "start": 370,
+                "end": 397
+            },
+            {
+                "name": "build_pkt_on_buffer",
+                "start": 401,
+                "end": 431
+            },
+            {
+                "name": "create_raw_eth_pkt",
+                "start": 437,
+                "end": 470
+            },
+            {
+                "name": "calc_flow_rules_size",
+                "start": 475,
+                "end": 493
+            },
+            {
+                "name": "send_set_up_connection",
+                "start": 498,
+                "end": 661
+            },
+            {
+                "name": "run_iter_fw",
+                "start": 666,
+                "end": 863
+            }
+        ],
+        "src/multicast_resources.c": [
+            {
+                "name": "signalCatcher",
+                "start": 26,
+                "end": 40
+            },
+            {
+                "name": "prepare_mcast_mad",
+                "start": 45,
+                "end": 82
+            },
+            {
+                "name": "check_mad_status",
+                "start": 87,
+                "end": 116
+            },
+            {
+                "name": "get_mlid_from_mad",
+                "start": 122,
+                "end": 128
+            },
+            {
+                "name": "set_multicast_gid",
+                "start": 133,
+                "end": 165
+            },
+            {
+                "name": "join_multicast_group",
+                "start": 170,
+                "end": 257
+            }
+        ],
+        "src/clock_test.c": [
+            {
+                "name": "main",
+                "start": 5,
+                "end": 25
+            }
+        ],
+        "src/get_clock.c": [
+            {
+                "name": "sample_get_cpu_mhz",
+                "start": 64,
+                "end": 133
+            },
+            {
+                "name": "proc_get_cpu_mhz",
+                "start": 136,
+                "end": 184
+            },
+            {
+                "name": "get_cpu_mhz",
+                "start": 187,
+                "end": 217
+            }
+        ],
+        "src/atomic_bw.c": [
+            {
+                "name": "main",
+                "start": 48,
+                "end": 336
+            }
+        ]
+    }
+}

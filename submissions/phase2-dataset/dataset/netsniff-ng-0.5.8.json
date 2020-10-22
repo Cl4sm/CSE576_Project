@@ -1,0 +1,6785 @@
+{
+    "netsniff-ng-0.5.8": {
+        "irq.h": [
+            {
+                "name": "device_set_irq_affinity_list",
+                "start": 6,
+                "end": 7
+            }
+        ],
+        "built_in.h": [
+            {
+                "name": "htonll",
+                "start": 186,
+                "end": 189
+            },
+            {
+                "name": "ntohll",
+                "start": 191,
+                "end": 194
+            },
+            {
+                "name": "cpu_to_be16",
+                "start": 221,
+                "end": 224
+            },
+            {
+                "name": "cpu_to_be32",
+                "start": 226,
+                "end": 229
+            },
+            {
+                "name": "cpu_to_be64",
+                "start": 231,
+                "end": 234
+            },
+            {
+                "name": "cpu_to_le16",
+                "start": 236,
+                "end": 239
+            },
+            {
+                "name": "cpu_to_le32",
+                "start": 241,
+                "end": 244
+            },
+            {
+                "name": "cpu_to_le64",
+                "start": 246,
+                "end": 249
+            }
+        ],
+        "die.h": [
+            {
+                "name": "syslog_panic",
+                "start": 16,
+                "end": 17
+            },
+            {
+                "name": "syslog_maybe",
+                "start": 18,
+                "end": 19
+            },
+            {
+                "name": "__die_hard",
+                "start": 21,
+                "end": 24
+            },
+            {
+                "name": "__die_harder",
+                "start": 26,
+                "end": 29
+            },
+            {
+                "name": "die",
+                "start": 31,
+                "end": 34
+            },
+            {
+                "name": "_die",
+                "start": 36,
+                "end": 39
+            },
+            {
+                "name": "panic",
+                "start": 41,
+                "end": 50
+            },
+            {
+                "name": "syslog_panic",
+                "start": 52,
+                "end": 61
+            },
+            {
+                "name": "syslog_maybe",
+                "start": 63,
+                "end": 73
+            }
+        ],
+        "irq.c": [
+            {
+                "name": "device_irq_number",
+                "start": 14,
+                "end": 40
+            },
+            {
+                "name": "device_save_irq_affinity_list",
+                "start": 46,
+                "end": 70
+            },
+            {
+                "name": "device_restore_irq_affinity_list",
+                "start": 72,
+                "end": 95
+            },
+            {
+                "name": "device_set_irq_affinity_list",
+                "start": 97,
+                "end": 120
+            },
+            {
+                "name": "device_set_irq_affinity",
+                "start": 122,
+                "end": 125
+            }
+        ],
+        "ring.h": [
+            {
+                "name": "next_rnd_slot",
+                "start": 65,
+                "end": 68
+            },
+            {
+                "name": "ring_size",
+                "start": 70,
+                "end": 92
+            },
+            {
+                "name": "ring_frame_size",
+                "start": 94,
+                "end": 97
+            },
+            {
+                "name": "ring_verify_layout",
+                "start": 99,
+                "end": 104
+            },
+            {
+                "name": "tpacket_hdr_clone",
+                "start": 106,
+                "end": 113
+            },
+            {
+                "name": "prepare_polling",
+                "start": 115,
+                "end": 121
+            },
+            {
+                "name": "__set_sockopt_tpacket",
+                "start": 123,
+                "end": 128
+            },
+            {
+                "name": "set_sockopt_tpacket_v2",
+                "start": 130,
+                "end": 133
+            },
+            {
+                "name": "set_sockopt_tpacket_v3",
+                "start": 135,
+                "end": 140
+            },
+            {
+                "name": "get_sockopt_tpacket",
+                "start": 142,
+                "end": 152
+            }
+        ],
+        "ring_rx.h": [
+            {
+                "name": "setup_rx_ring_layout",
+                "start": 19,
+                "end": 20
+            },
+            {
+                "name": "user_may_pull_from_rx",
+                "start": 23,
+                "end": 26
+            },
+            {
+                "name": "user_may_pull_from_rx_block",
+                "start": 28,
+                "end": 31
+            },
+            {
+                "name": "kernel_may_pull_from_rx",
+                "start": 33,
+                "end": 36
+            },
+            {
+                "name": "kernel_may_pull_from_rx_block",
+                "start": 38,
+                "end": 41
+            }
+        ],
+        "ring_tx.h": [
+            {
+                "name": "setup_tx_ring_layout",
+                "start": 22,
+                "end": 23
+            },
+            {
+                "name": "user_may_pull_from_tx",
+                "start": 26,
+                "end": 29
+            },
+            {
+                "name": "kernel_may_pull_from_tx",
+                "start": 31,
+                "end": 34
+            },
+            {
+                "name": "pull_and_flush_tx_ring",
+                "start": 36,
+                "end": 39
+            },
+            {
+                "name": "pull_and_flush_tx_ring_wait",
+                "start": 41,
+                "end": 44
+            }
+        ],
+        "pcap_io.h": [
+            {
+                "name": "tp_to_pcap_tsource",
+                "start": 141,
+                "end": 151
+            },
+            {
+                "name": "pcap_devtype_to_linktype",
+                "start": 153,
+                "end": 193
+            },
+            {
+                "name": "pcap_check_magic",
+                "start": 195,
+                "end": 213
+            },
+            {
+                "name": "pcap_magic_is_swapped",
+                "start": 215,
+                "end": 228
+            },
+            {
+                "name": "pcap_get_length",
+                "start": 230,
+                "end": 251
+            },
+            {
+                "name": "pcap_set_length",
+                "start": 253,
+                "end": 274
+            },
+            {
+                "name": "pcap_get_hdr_length",
+                "start": 276,
+                "end": 296
+            },
+            {
+                "name": "pcap_get_total_length",
+                "start": 298,
+                "end": 319
+            },
+            {
+                "name": "__tpacket_hdr_to_pcap_pkthdr",
+                "start": 321,
+                "end": 403
+            },
+            {
+                "name": "tpacket_hdr_to_pcap_pkthdr",
+                "start": 409,
+                "end": 417
+            },
+            {
+                "name": "tpacket3_hdr_to_pcap_pkthdr",
+                "start": 419,
+                "end": 427
+            },
+            {
+                "name": "pcap_pkthdr_to_tpacket_hdr",
+                "start": 429,
+                "end": 516
+            },
+            {
+                "name": "pcap_dump_type_features",
+                "start": 571,
+                "end": 606
+            },
+            {
+                "name": "pcap_prepare_header",
+                "start": 620,
+                "end": 633
+            },
+            {
+                "name": "pcap_validate_header",
+                "start": 661,
+                "end": 680
+            },
+            {
+                "name": "pcap_generic_pull_fhdr",
+                "start": 682,
+                "end": 683
+            },
+            {
+                "name": "pcap_generic_pull_fhdr",
+                "start": 685,
+                "end": 700
+            },
+            {
+                "name": "pcap_generic_push_fhdr",
+                "start": 702,
+                "end": 703
+            },
+            {
+                "name": "pcap_generic_push_fhdr",
+                "start": 705,
+                "end": 719
+            }
+        ],
+        "bpf.h": [
+            {
+                "name": "bpf_run_filter",
+                "start": 16,
+                "end": 17
+            },
+            {
+                "name": "bpf_try_compile",
+                "start": 26,
+                "end": 31
+            },
+            {
+                "name": "bpf_release",
+                "start": 33,
+                "end": 36
+            }
+        ],
+        "geoip.h": [
+            {
+                "name": "init_geoip",
+                "start": 28,
+                "end": 30
+            },
+            {
+                "name": "destroy_geoip",
+                "start": 32,
+                "end": 34
+            },
+            {
+                "name": "update_geoip",
+                "start": 36,
+                "end": 39
+            },
+            {
+                "name": "geoip_working",
+                "start": 41,
+                "end": 44
+            },
+            {
+                "name": "geoip4_city_name",
+                "start": 46,
+                "end": 49
+            },
+            {
+                "name": "geoip6_city_name",
+                "start": 51,
+                "end": 54
+            },
+            {
+                "name": "geoip4_region_name",
+                "start": 56,
+                "end": 59
+            },
+            {
+                "name": "geoip6_region_name",
+                "start": 61,
+                "end": 64
+            },
+            {
+                "name": "geoip4_country_name",
+                "start": 66,
+                "end": 69
+            },
+            {
+                "name": "geoip6_country_name",
+                "start": 71,
+                "end": 74
+            },
+            {
+                "name": "geoip4_longitude",
+                "start": 76,
+                "end": 79
+            },
+            {
+                "name": "geoip4_latitude",
+                "start": 81,
+                "end": 84
+            },
+            {
+                "name": "geoip6_longitude",
+                "start": 86,
+                "end": 89
+            },
+            {
+                "name": "geoip6_latitude",
+                "start": 91,
+                "end": 94
+            },
+            {
+                "name": "geoip4_as_name",
+                "start": 96,
+                "end": 99
+            },
+            {
+                "name": "geoip6_as_name",
+                "start": 101,
+                "end": 104
+            }
+        ],
+        "lockme.h": [
+            {
+                "name": "xlockme",
+                "start": 8,
+                "end": 12
+            },
+            {
+                "name": "xunlockme",
+                "start": 14,
+                "end": 17
+            }
+        ],
+        "timer.h": [
+            {
+                "name": "set_itimer_interval_value",
+                "start": 6,
+                "end": 7
+            }
+        ],
+        "tstamping.h": [
+            {
+                "name": "set_sockopt_hwtimestamp",
+                "start": 9,
+                "end": 12
+            }
+        ],
+        "dissector.h": [
+            {
+                "name": "__show_ts_source",
+                "start": 39,
+                "end": 49
+            },
+            {
+                "name": "__show_frame_hdr",
+                "start": 51,
+                "end": 78
+            },
+            {
+                "name": "show_frame_hdr",
+                "start": 80,
+                "end": 83
+            }
+        ],
+        "xmalloc.h": [
+            {
+                "name": "__xfree",
+                "start": 20,
+                "end": 25
+            }
+        ],
+        "netsniff-ng.c": [
+            {
+                "name": "signal_handler",
+                "start": 112,
+                "end": 123
+            },
+            {
+                "name": "timer_elapsed",
+                "start": 125,
+                "end": 141
+            },
+            {
+                "name": "timer_purge",
+                "start": 143,
+                "end": 155
+            },
+            {
+                "name": "timer_next_dump",
+                "start": 157,
+                "end": 162
+            },
+            {
+                "name": "dump_to_pcap",
+                "start": 164,
+                "end": 167
+            },
+            {
+                "name": "pcap_to_xmit",
+                "start": 169,
+                "end": 340
+            },
+            {
+                "name": "receive_to_xmit",
+                "start": 342,
+                "end": 497
+            },
+            {
+                "name": "translate_pcap_to_txf",
+                "start": 499,
+                "end": 530
+            },
+            {
+                "name": "read_pcap",
+                "start": 532,
+                "end": 667
+            },
+            {
+                "name": "finish_multi_pcap_file",
+                "start": 669,
+                "end": 680
+            },
+            {
+                "name": "next_multi_pcap_file",
+                "start": 682,
+                "end": 711
+            },
+            {
+                "name": "begin_multi_pcap_file",
+                "start": 713,
+                "end": 749
+            },
+            {
+                "name": "finish_single_pcap_file",
+                "start": 751,
+                "end": 762
+            },
+            {
+                "name": "begin_single_pcap_file",
+                "start": 764,
+                "end": 792
+            },
+            {
+                "name": "print_pcap_file_stats",
+                "start": 794,
+                "end": 811
+            },
+            {
+                "name": "walk_t3_block",
+                "start": 813,
+                "end": 876
+            },
+            {
+                "name": "recv_only_or_dump",
+                "start": 878,
+                "end": 1015
+            },
+            {
+                "name": "init_ctx",
+                "start": 1017,
+                "end": 1035
+            },
+            {
+                "name": "destroy_ctx",
+                "start": 1037,
+                "end": 1044
+            },
+            {
+                "name": "help",
+                "start": 1046,
+                "end": 1106
+            },
+            {
+                "name": "version",
+                "start": 1108,
+                "end": 1122
+            },
+            {
+                "name": "main",
+                "start": 1124,
+                "end": 1433
+            }
+        ],
+        "timer.c": [
+            {
+                "name": "set_itimer_interval_value",
+                "start": 5,
+                "end": 13
+            }
+        ],
+        "hash.h": [
+            {
+                "name": "insert_hash",
+                "start": 48,
+                "end": 49
+            },
+            {
+                "name": "remove_hash",
+                "start": 50,
+                "end": 51
+            },
+            {
+                "name": "for_each_hash_int",
+                "start": 53,
+                "end": 54
+            },
+            {
+                "name": "init_hash",
+                "start": 57,
+                "end": 62
+            },
+            {
+                "name": "icase_hash",
+                "start": 64,
+                "end": 67
+            },
+            {
+                "name": "hash_name",
+                "start": 69,
+                "end": 78
+            }
+        ],
+        "csum.h": [
+            {
+                "name": "csum",
+                "start": 9,
+                "end": 19
+            },
+            {
+                "name": "calc_csum",
+                "start": 21,
+                "end": 25
+            },
+            {
+                "name": "csum_expected",
+                "start": 27,
+                "end": 37
+            },
+            {
+                "name": "__in_cksum",
+                "start": 58,
+                "end": 144
+            },
+            {
+                "name": "p4_csum",
+                "start": 146,
+                "end": 172
+            }
+        ],
+        "dissector_eth.h": [
+            {
+                "name": "dissector_get_ethernet_entry_point",
+                "start": 34,
+                "end": 37
+            },
+            {
+                "name": "dissector_get_ethernet_exit_point",
+                "start": 39,
+                "end": 42
+            }
+        ],
+        "pkt_buff.h": [
+            {
+                "name": "pkt_alloc",
+                "start": 25,
+                "end": 36
+            },
+            {
+                "name": "pkt_free",
+                "start": 38,
+                "end": 41
+            },
+            {
+                "name": "pkt_len",
+                "start": 43,
+                "end": 48
+            },
+            {
+                "name": "pkt_pull",
+                "start": 50,
+                "end": 64
+            },
+            {
+                "name": "pkt_peek",
+                "start": 66,
+                "end": 71
+            },
+            {
+                "name": "pkt_trim",
+                "start": 73,
+                "end": 86
+            },
+            {
+                "name": "pkt_pull_tail",
+                "start": 88,
+                "end": 100
+            },
+            {
+                "name": "pkt_set_proto",
+                "start": 102,
+                "end": 110
+            }
+        ],
+        "proto_ipv6.c": [
+            {
+                "name": "ipv6",
+                "start": 23,
+                "end": 87
+            },
+            {
+                "name": "ipv6_less",
+                "start": 89,
+                "end": 105
+            }
+        ],
+        "ring.c": [
+            {
+                "name": "mmap_ring_generic",
+                "start": 22,
+                "end": 28
+            },
+            {
+                "name": "alloc_ring_frames_generic",
+                "start": 30,
+                "end": 42
+            },
+            {
+                "name": "bind_ring_generic",
+                "start": 44,
+                "end": 66
+            }
+        ],
+        "pcap_sg.c": [
+            {
+                "name": "pcap_sg_write",
+                "start": 23,
+                "end": 44
+            },
+            {
+                "name": "__pcap_sg_inter_iov_hdr_read",
+                "start": 46,
+                "end": 75
+            },
+            {
+                "name": "__pcap_sg_inter_iov_data_read",
+                "start": 77,
+                "end": 105
+            },
+            {
+                "name": "pcap_sg_read",
+                "start": 107,
+                "end": 136
+            },
+            {
+                "name": "pcap_sg_fsync",
+                "start": 138,
+                "end": 146
+            },
+            {
+                "name": "pcap_sg_init_once",
+                "start": 148,
+                "end": 151
+            },
+            {
+                "name": "pcap_sg_prepare_access",
+                "start": 153,
+                "end": 177
+            },
+            {
+                "name": "pcap_sg_prepare_close",
+                "start": 179,
+                "end": 186
+            }
+        ],
+        "ring_tx.c": [
+            {
+                "name": "set_packet_loss_discard",
+                "start": 23,
+                "end": 30
+            },
+            {
+                "name": "destroy_tx_ring",
+                "start": 32,
+                "end": 46
+            },
+            {
+                "name": "setup_tx_ring_layout",
+                "start": 48,
+                "end": 69
+            },
+            {
+                "name": "create_tx_ring",
+                "start": 71,
+                "end": 96
+            },
+            {
+                "name": "mmap_tx_ring",
+                "start": 98,
+                "end": 101
+            },
+            {
+                "name": "alloc_tx_ring_frames",
+                "start": 103,
+                "end": 107
+            },
+            {
+                "name": "bind_tx_ring",
+                "start": 109,
+                "end": 112
+            }
+        ],
+        "proto_ip_authentication_hdr.c": [
+            {
+                "name": "auth_hdr",
+                "start": 26,
+                "end": 69
+            },
+            {
+                "name": "auth_hdr_less",
+                "start": 71,
+                "end": 88
+            }
+        ],
+        "proto_icmpv6.c": [
+            {
+                "name": "print_ipv6_addr_list",
+                "start": 282,
+                "end": 298
+            },
+            {
+                "name": "dissect_icmpv6_mcast_rec",
+                "start": 309,
+                "end": 369
+            },
+            {
+                "name": "dissect_neighb_disc_ops_1",
+                "start": 371,
+                "end": 399
+            },
+            {
+                "name": "dissect_neighb_disc_ops_2",
+                "start": 401,
+                "end": 405
+            },
+            {
+                "name": "dissect_neighb_disc_ops_3",
+                "start": 407,
+                "end": 436
+            },
+            {
+                "name": "dissect_neighb_disc_ops_4",
+                "start": 438,
+                "end": 468
+            },
+            {
+                "name": "dissect_neighb_disc_ops_5",
+                "start": 470,
+                "end": 487
+            },
+            {
+                "name": "dissect_neighb_disc_ops_9",
+                "start": 489,
+                "end": 506
+            },
+            {
+                "name": "dissect_neighb_disc_ops_10",
+                "start": 508,
+                "end": 512
+            },
+            {
+                "name": "dissect_neighb_disc_ops_15",
+                "start": 519,
+                "end": 583
+            },
+            {
+                "name": "dissect_neighb_disc_ops_16",
+                "start": 589,
+                "end": 625
+            },
+            {
+                "name": "dissect_neighb_disc_ops_17",
+                "start": 634,
+                "end": 709
+            },
+            {
+                "name": "dissect_neighb_disc_ops_19",
+                "start": 726,
+                "end": 761
+            },
+            {
+                "name": "icmpv6_neighb_disc_ops",
+                "start": 763,
+                "end": 805
+            },
+            {
+                "name": "dissect_neighb_disc_ops",
+                "start": 807,
+                "end": 910
+            },
+            {
+                "name": "dissect_icmpv6_type1",
+                "start": 923,
+                "end": 935
+            },
+            {
+                "name": "dissect_icmpv6_type2",
+                "start": 937,
+                "end": 949
+            },
+            {
+                "name": "dissect_icmpv6_type3",
+                "start": 956,
+                "end": 968
+            },
+            {
+                "name": "dissect_icmpv6_type4",
+                "start": 976,
+                "end": 988
+            },
+            {
+                "name": "dissect_icmpv6_type128",
+                "start": 990,
+                "end": 1004
+            },
+            {
+                "name": "dissect_icmpv6_type129",
+                "start": 1006,
+                "end": 1020
+            },
+            {
+                "name": "dissect_icmpv6_type130",
+                "start": 1022,
+                "end": 1069
+            },
+            {
+                "name": "dissect_icmpv6_type131",
+                "start": 1071,
+                "end": 1088
+            },
+            {
+                "name": "dissect_icmpv6_type132",
+                "start": 1090,
+                "end": 1093
+            },
+            {
+                "name": "dissect_icmpv6_type133",
+                "start": 1095,
+                "end": 1107
+            },
+            {
+                "name": "dissect_icmpv6_type134",
+                "start": 1109,
+                "end": 1126
+            },
+            {
+                "name": "dissect_icmpv6_type135",
+                "start": 1128,
+                "end": 1144
+            },
+            {
+                "name": "dissect_icmpv6_type136",
+                "start": 1146,
+                "end": 1166
+            },
+            {
+                "name": "dissect_icmpv6_type137",
+                "start": 1168,
+                "end": 1187
+            },
+            {
+                "name": "dissect_icmpv6_rr_body",
+                "start": 1189,
+                "end": 1197
+            },
+            {
+                "name": "icmpv6_type_138_codes",
+                "start": 1199,
+                "end": 1207
+            },
+            {
+                "name": "dissect_icmpv6_type138",
+                "start": 1209,
+                "end": 1230
+            },
+            {
+                "name": "dissect_icmpv6_node_inf_data",
+                "start": 1232,
+                "end": 1240
+            },
+            {
+                "name": "dissect_icmpv6_type139",
+                "start": 1256,
+                "end": 1278
+            },
+            {
+                "name": "dissect_icmpv6_type140",
+                "start": 1286,
+                "end": 1289
+            },
+            {
+                "name": "dissect_icmpv6_type141",
+                "start": 1291,
+                "end": 1294
+            },
+            {
+                "name": "dissect_icmpv6_type142",
+                "start": 1296,
+                "end": 1299
+            },
+            {
+                "name": "dissect_icmpv6_type143",
+                "start": 1301,
+                "end": 1316
+            },
+            {
+                "name": "dissect_icmpv6_type144",
+                "start": 1318,
+                "end": 1331
+            },
+            {
+                "name": "dissect_icmpv6_type145",
+                "start": 1333,
+                "end": 1347
+            },
+            {
+                "name": "dissect_icmpv6_type146",
+                "start": 1349,
+                "end": 1352
+            },
+            {
+                "name": "dissect_icmpv6_type147",
+                "start": 1354,
+                "end": 1370
+            },
+            {
+                "name": "dissect_icmpv6_type148",
+                "start": 1372,
+                "end": 1385
+            },
+            {
+                "name": "dissect_icmpv6_type149",
+                "start": 1387,
+                "end": 1402
+            },
+            {
+                "name": "dissect_icmpv6_type150",
+                "start": 1404,
+                "end": 1418
+            },
+            {
+                "name": "dissect_icmpv6_type151",
+                "start": 1420,
+                "end": 1433
+            },
+            {
+                "name": "dissect_icmpv6_type152",
+                "start": 1435,
+                "end": 1445
+            },
+            {
+                "name": "dissect_icmpv6_type153",
+                "start": 1447,
+                "end": 1457
+            },
+            {
+                "name": "dissect_icmpv6_type154",
+                "start": 1459,
+                "end": 1473
+            },
+            {
+                "name": "icmpv6_type_155_codes",
+                "start": 1475,
+                "end": 1489
+            },
+            {
+                "name": "icmpv6_process",
+                "start": 1491,
+                "end": 1664
+            },
+            {
+                "name": "icmpv6",
+                "start": 1666,
+                "end": 1687
+            },
+            {
+                "name": "icmpv6_less",
+                "start": 1689,
+                "end": 1698
+            }
+        ],
+        "dissector_80211.h": [
+            {
+                "name": "dissector_get_ieee80211_entry_point",
+                "start": 29,
+                "end": 32
+            },
+            {
+                "name": "dissector_get_ieee80211_exit_point",
+                "start": 34,
+                "end": 37
+            }
+        ],
+        "oui.h": [
+            {
+                "name": "lookup_vendor_str",
+                "start": 8,
+                "end": 11
+            }
+        ],
+        "dissector_80211.c": [
+            {
+                "name": "dissector_init_ieee80211",
+                "start": 41,
+                "end": 47
+            },
+            {
+                "name": "dissector_cleanup_ieee80211",
+                "start": 49,
+                "end": 53
+            }
+        ],
+        "locking.h": [
+            {
+                "name": "spinlock_init",
+                "start": 18,
+                "end": 21
+            },
+            {
+                "name": "spinlock_destroy",
+                "start": 23,
+                "end": 26
+            },
+            {
+                "name": "spinlock_lock",
+                "start": 28,
+                "end": 31
+            },
+            {
+                "name": "spinlock_unlock",
+                "start": 33,
+                "end": 36
+            },
+            {
+                "name": "mutexlock_init",
+                "start": 38,
+                "end": 41
+            },
+            {
+                "name": "mutexlock_destroy",
+                "start": 43,
+                "end": 46
+            },
+            {
+                "name": "mutexlock_lock",
+                "start": 48,
+                "end": 51
+            },
+            {
+                "name": "mutexlock_unlock",
+                "start": 53,
+                "end": 56
+            },
+            {
+                "name": "rwlock_init",
+                "start": 58,
+                "end": 61
+            },
+            {
+                "name": "rwlock_init2",
+                "start": 63,
+                "end": 67
+            },
+            {
+                "name": "rwlock_destroy",
+                "start": 69,
+                "end": 72
+            },
+            {
+                "name": "rwlock_rd_lock",
+                "start": 74,
+                "end": 77
+            },
+            {
+                "name": "rwlock_wr_lock",
+                "start": 79,
+                "end": 82
+            },
+            {
+                "name": "rwlock_unlock",
+                "start": 84,
+                "end": 87
+            }
+        ],
+        "taia.h": [
+            {
+                "name": "tai_pack",
+                "start": 21,
+                "end": 35
+            },
+            {
+                "name": "tai_unpack",
+                "start": 37,
+                "end": 51
+            },
+            {
+                "name": "taia_pack",
+                "start": 53,
+                "end": 74
+            },
+            {
+                "name": "taia_unpack",
+                "start": 76,
+                "end": 97
+            },
+            {
+                "name": "taia_now",
+                "start": 103,
+                "end": 113
+            },
+            {
+                "name": "taia_sub",
+                "start": 115,
+                "end": 134
+            },
+            {
+                "name": "taia_add",
+                "start": 136,
+                "end": 152
+            },
+            {
+                "name": "taia_less",
+                "start": 154,
+                "end": 165
+            }
+        ],
+        "curve.h": [
+            {
+                "name": "curve25519_proto_init",
+                "start": 29,
+                "end": 30
+            },
+            {
+                "name": "curve25519_pubkey_hexparse_32",
+                "start": 31,
+                "end": 32
+            },
+            {
+                "name": "curve25519_encode",
+                "start": 34,
+                "end": 37
+            },
+            {
+                "name": "curve25519_decode",
+                "start": 38,
+                "end": 42
+            }
+        ],
+        "curvetun.h": [
+            {
+                "name": "server_main",
+                "start": 29,
+                "end": 30
+            }
+        ],
+        "curvetun_mgmt_servers.h": [
+            {
+                "name": "get_serv_store_entry_by_alias",
+                "start": 9,
+                "end": 10
+            }
+        ],
+        "curvetun_mgmt_users.h": [
+            {
+                "name": "username_msg_is_user",
+                "start": 23,
+                "end": 24
+            },
+            {
+                "name": "get_user_by_sockaddr",
+                "start": 30,
+                "end": 31
+            },
+            {
+                "name": "try_register_user_by_socket",
+                "start": 32,
+                "end": 34
+            },
+            {
+                "name": "try_register_user_by_sockaddr",
+                "start": 35,
+                "end": 38
+            },
+            {
+                "name": "remove_user_by_sockaddr",
+                "start": 40,
+                "end": 41
+            }
+        ],
+        "curvetun_client.c": [
+            {
+                "name": "handler_udp_tun_to_net",
+                "start": 44,
+                "end": 85
+            },
+            {
+                "name": "handler_udp_net_to_tun",
+                "start": 87,
+                "end": 131
+            },
+            {
+                "name": "handler_tcp_tun_to_net",
+                "start": 133,
+                "end": 174
+            },
+            {
+                "name": "handler_tcp_net_to_tun",
+                "start": 178,
+                "end": 217
+            },
+            {
+                "name": "notify_init",
+                "start": 219,
+                "end": 286
+            },
+            {
+                "name": "notify_close",
+                "start": 288,
+                "end": 298
+            },
+            {
+                "name": "client_main",
+                "start": 300,
+                "end": 436
+            }
+        ],
+        "proto_tcp.c": [
+            {
+                "name": "tcp",
+                "start": 53,
+                "end": 104
+            },
+            {
+                "name": "tcp_less",
+                "start": 106,
+                "end": 148
+            }
+        ],
+        "proto_ip_esp.c": [
+            {
+                "name": "esp",
+                "start": 23,
+                "end": 35
+            },
+            {
+                "name": "esp_less",
+                "start": 37,
+                "end": 46
+            }
+        ],
+        "cpus.h": [
+            {
+                "name": "get_number_cpus",
+                "start": 8,
+                "end": 16
+            },
+            {
+                "name": "get_number_cpus_online",
+                "start": 18,
+                "end": 26
+            }
+        ],
+        "trie.h": [
+            {
+                "name": "trie_addr_lookup",
+                "start": 6,
+                "end": 7
+            },
+            {
+                "name": "trie_addr_maybe_update",
+                "start": 8,
+                "end": 9
+            }
+        ],
+        "curvetun_server.c": [
+            {
+                "name": "handler_udp_tun_to_net",
+                "start": 70,
+                "end": 71
+            },
+            {
+                "name": "handler_udp_net_to_tun",
+                "start": 72,
+                "end": 73
+            },
+            {
+                "name": "handler_udp",
+                "start": 74,
+                "end": 75
+            },
+            {
+                "name": "handler_tcp_tun_to_net",
+                "start": 76,
+                "end": 77
+            },
+            {
+                "name": "handler_tcp_net_to_tun",
+                "start": 78,
+                "end": 79
+            },
+            {
+                "name": "handler_tcp",
+                "start": 80,
+                "end": 81
+            },
+            {
+                "name": "handler_udp_tun_to_net",
+                "start": 85,
+                "end": 146
+            },
+            {
+                "name": "handler_udp_notify_close",
+                "start": 148,
+                "end": 158
+            },
+            {
+                "name": "handler_udp_net_to_tun",
+                "start": 160,
+                "end": 239
+            },
+            {
+                "name": "handler_udp",
+                "start": 241,
+                "end": 252
+            },
+            {
+                "name": "handler_tcp_tun_to_net",
+                "start": 254,
+                "end": 311
+            },
+            {
+                "name": "handler_tcp_read",
+                "start": 313,
+                "end": 337
+            },
+            {
+                "name": "handler_tcp_notify_close",
+                "start": 339,
+                "end": 348
+            },
+            {
+                "name": "handler_tcp_net_to_tun",
+                "start": 350,
+                "end": 431
+            },
+            {
+                "name": "handler_tcp",
+                "start": 433,
+                "end": 444
+            },
+            {
+                "name": "worker",
+                "start": 446,
+                "end": 493
+            },
+            {
+                "name": "thread_spawn_or_panic",
+                "start": 495,
+                "end": 535
+            },
+            {
+                "name": "thread_finish",
+                "start": 537,
+                "end": 551
+            },
+            {
+                "name": "server_main",
+                "start": 553,
+                "end": 812
+            }
+        ],
+        "tstamping.c": [
+            {
+                "name": "set_sockopt_hwtimestamp",
+                "start": 13,
+                "end": 38
+            }
+        ],
+        "privs.c": [
+            {
+                "name": "drop_privileges",
+                "start": 7,
+                "end": 19
+            }
+        ],
+        "proto_igmp.c": [
+            {
+                "name": "friendly_msg_type_name",
+                "start": 142,
+                "end": 180
+            },
+            {
+                "name": "friendly_group_rec_type_name",
+                "start": 191,
+                "end": 209
+            },
+            {
+                "name": "dissect_igmp_v0",
+                "start": 211,
+                "end": 271
+            },
+            {
+                "name": "dissect_igmp_v1",
+                "start": 273,
+                "end": 295
+            },
+            {
+                "name": "dissect_igmp_v2",
+                "start": 297,
+                "end": 331
+            },
+            {
+                "name": "dissect_igmp_v3_membership_query",
+                "start": 333,
+                "end": 384
+            },
+            {
+                "name": "dissect_igmp_v3_membership_report",
+                "start": 386,
+                "end": 449
+            },
+            {
+                "name": "igmp",
+                "start": 451,
+                "end": 492
+            },
+            {
+                "name": "igmp_less",
+                "start": 494,
+                "end": 553
+            }
+        ],
+        "taia.c": [
+            {
+                "name": "taia_looks_good",
+                "start": 11,
+                "end": 27
+            }
+        ],
+        "proto_mpls_unicast.c": [
+            {
+                "name": "mpls_uc_next_proto",
+                "start": 23,
+                "end": 47
+            },
+            {
+                "name": "mpls_uc_full",
+                "start": 49,
+                "end": 77
+            },
+            {
+                "name": "mpls_uc_less",
+                "start": 79,
+                "end": 102
+            }
+        ],
+        "patricia.h": [
+            {
+                "name": "ptree_search_data_nearest",
+                "start": 30,
+                "end": 32
+            },
+            {
+                "name": "ptree_search_data_exact",
+                "start": 33,
+                "end": 35
+            },
+            {
+                "name": "ptree_add_entry",
+                "start": 36,
+                "end": 38
+            },
+            {
+                "name": "ptree_del_entry",
+                "start": 39,
+                "end": 40
+            },
+            {
+                "name": "ptree_get_key",
+                "start": 41,
+                "end": 42
+            },
+            {
+                "name": "ptree_get_key_addr",
+                "start": 43,
+                "end": 45
+            }
+        ],
+        "patricia.c": [
+            {
+                "name": "testbit",
+                "start": 21,
+                "end": 29
+            },
+            {
+                "name": "testbit_max",
+                "start": 31,
+                "end": 37
+            },
+            {
+                "name": "where_the_bit_differ",
+                "start": 39,
+                "end": 52
+            },
+            {
+                "name": "new_node",
+                "start": 54,
+                "end": 61
+            },
+            {
+                "name": "free_node",
+                "start": 63,
+                "end": 68
+            },
+            {
+                "name": "ptree_display",
+                "start": 70,
+                "end": 87
+            },
+            {
+                "name": "ptree_get_key",
+                "start": 89,
+                "end": 104
+            },
+            {
+                "name": "ptree_get_key_addr",
+                "start": 106,
+                "end": 121
+            },
+            {
+                "name": "ptree_search_data_r",
+                "start": 123,
+                "end": 139
+            },
+            {
+                "name": "ptree_search_data_r_p",
+                "start": 141,
+                "end": 151
+            },
+            {
+                "name": "ptree_search_data_r_x",
+                "start": 153,
+                "end": 173
+            },
+            {
+                "name": "ptree_search_data_nearest",
+                "start": 175,
+                "end": 182
+            },
+            {
+                "name": "ptree_search_data_nearest_ptr",
+                "start": 184,
+                "end": 188
+            },
+            {
+                "name": "ptree_search_data_exact",
+                "start": 190,
+                "end": 197
+            },
+            {
+                "name": "ptree_make_root_node",
+                "start": 199,
+                "end": 215
+            },
+            {
+                "name": "ptree_add_entry_at",
+                "start": 217,
+                "end": 254
+            },
+            {
+                "name": "ptree_add_entry",
+                "start": 256,
+                "end": 290
+            },
+            {
+                "name": "ptree_remove_entry_r",
+                "start": 292,
+                "end": 332
+            },
+            {
+                "name": "ptree_del_entry",
+                "start": 334,
+                "end": 340
+            },
+            {
+                "name": "ptree_free",
+                "start": 342,
+                "end": 353
+            }
+        ],
+        "proto_udp.c": [
+            {
+                "name": "udp",
+                "start": 22,
+                "end": 57
+            },
+            {
+                "name": "udp_less",
+                "start": 59,
+                "end": 82
+            }
+        ],
+        "cpusched.c": [
+            {
+                "name": "get_appropriate_cpu",
+                "start": 23,
+                "end": 36
+            },
+            {
+                "name": "socket_to_cpu",
+                "start": 38,
+                "end": 54
+            },
+            {
+                "name": "register_socket",
+                "start": 56,
+                "end": 77
+            },
+            {
+                "name": "socket_to_map_entry",
+                "start": 79,
+                "end": 94
+            },
+            {
+                "name": "unregister_socket",
+                "start": 96,
+                "end": 119
+            },
+            {
+                "name": "cleanup_cpusched_batch",
+                "start": 121,
+                "end": 138
+            },
+            {
+                "name": "init_cpusched",
+                "start": 140,
+                "end": 145
+            },
+            {
+                "name": "destroy_cpusched",
+                "start": 147,
+                "end": 153
+            }
+        ],
+        "curve_test.c": [
+            {
+                "name": "curve25519_selftest",
+                "start": 6,
+                "end": 80
+            }
+        ],
+        "curvetun_mgmt_servers.c": [
+            {
+                "name": "server_store_alloc",
+                "start": 39,
+                "end": 42
+            },
+            {
+                "name": "server_store_free",
+                "start": 44,
+                "end": 50
+            },
+            {
+                "name": "parse_line",
+                "start": 61,
+                "end": 117
+            },
+            {
+                "name": "parse_userfile_and_generate_serv_store_or_die",
+                "start": 119,
+                "end": 158
+            },
+            {
+                "name": "dump_serv_store",
+                "start": 160,
+                "end": 181
+            },
+            {
+                "name": "destroy_serv_store",
+                "start": 183,
+                "end": 198
+            },
+            {
+                "name": "get_serv_store_entry_by_alias",
+                "start": 200,
+                "end": 243
+            },
+            {
+                "name": "get_serv_store_entry_proto_inf",
+                "start": 245,
+                "end": 255
+            },
+            {
+                "name": "get_serv_store_entry_auth_token",
+                "start": 257,
+                "end": 267
+            }
+        ],
+        "proto_ipv6_routing.c": [
+            {
+                "name": "dissect_routinghdr_type_0",
+                "start": 33,
+                "end": 65
+            },
+            {
+                "name": "dissect_routinghdr_type_0_norm",
+                "start": 67,
+                "end": 71
+            },
+            {
+                "name": "dissect_routinghdr_type_0_less",
+                "start": 73,
+                "end": 77
+            },
+            {
+                "name": "routing",
+                "start": 79,
+                "end": 122
+            },
+            {
+                "name": "routing_less",
+                "start": 124,
+                "end": 156
+            }
+        ],
+        "bpf_jit_disasm.c": [
+            {
+                "name": "get_exec_path",
+                "start": 37,
+                "end": 52
+            },
+            {
+                "name": "get_asm_insns",
+                "start": 54,
+                "end": 97
+            },
+            {
+                "name": "get_klog_buff",
+                "start": 99,
+                "end": 110
+            },
+            {
+                "name": "put_klog_buff",
+                "start": 112,
+                "end": 115
+            },
+            {
+                "name": "get_last_jit_image",
+                "start": 117,
+                "end": 177
+            },
+            {
+                "name": "main",
+                "start": 179,
+                "end": 207
+            }
+        ],
+        "tprintf.c": [
+            {
+                "name": "get_tty_size",
+                "start": 30,
+                "end": 43
+            },
+            {
+                "name": "__tprintf_flush_newline",
+                "start": 45,
+                "end": 52
+            },
+            {
+                "name": "__tprintf_flush_skip",
+                "start": 54,
+                "end": 62
+            },
+            {
+                "name": "__tprintf_flush",
+                "start": 64,
+                "end": 91
+            },
+            {
+                "name": "tprintf_flush",
+                "start": 93,
+                "end": 98
+            },
+            {
+                "name": "tprintf_init",
+                "start": 100,
+                "end": 106
+            },
+            {
+                "name": "tprintf_cleanup",
+                "start": 108,
+                "end": 112
+            },
+            {
+                "name": "tprintf",
+                "start": 114,
+                "end": 150
+            },
+            {
+                "name": "tputchar_safe",
+                "start": 152,
+                "end": 160
+            },
+            {
+                "name": "tputs_safe",
+                "start": 162,
+                "end": 168
+            }
+        ],
+        "proto_arp.c": [
+            {
+                "name": "arp",
+                "start": 44,
+                "end": 118
+            },
+            {
+                "name": "arp_less",
+                "start": 120,
+                "end": 156
+            }
+        ],
+        "hash.c": [
+            {
+                "name": "lookup_hash_entry",
+                "start": 18,
+                "end": 34
+            },
+            {
+                "name": "insert_hash_entry",
+                "start": 45,
+                "end": 60
+            },
+            {
+                "name": "remove_hash_entry",
+                "start": 70,
+                "end": 88
+            },
+            {
+                "name": "grow_hash_table",
+                "start": 90,
+                "end": 112
+            },
+            {
+                "name": "lookup_hash",
+                "start": 114,
+                "end": 120
+            },
+            {
+                "name": "remove_hash",
+                "start": 122,
+                "end": 129
+            },
+            {
+                "name": "insert_hash",
+                "start": 131,
+                "end": 139
+            },
+            {
+                "name": "for_each_hash",
+                "start": 141,
+                "end": 162
+            },
+            {
+                "name": "for_each_hash_int",
+                "start": 164,
+                "end": 186
+            },
+            {
+                "name": "free_hash",
+                "start": 188,
+                "end": 195
+            }
+        ],
+        "iosched.c": [
+            {
+                "name": "ioprio_set",
+                "start": 35,
+                "end": 38
+            },
+            {
+                "name": "ioprio_get",
+                "start": 40,
+                "end": 43
+            },
+            {
+                "name": "ioprio_setpid",
+                "start": 45,
+                "end": 51
+            },
+            {
+                "name": "ioprio_print",
+                "start": 53,
+                "end": 66
+            },
+            {
+                "name": "set_ioprio_rt",
+                "start": 68,
+                "end": 71
+            },
+            {
+                "name": "set_ioprio_be",
+                "start": 73,
+                "end": 76
+            }
+        ],
+        "keypair.c": [
+            {
+                "name": "generate_keypair",
+                "start": 16,
+                "end": 44
+            },
+            {
+                "name": "verify_keypair",
+                "start": 46,
+                "end": 76
+            }
+        ],
+        "pcap_mm.c": [
+            {
+                "name": "__pcap_mmap_write_need_remap",
+                "start": 24,
+                "end": 49
+            },
+            {
+                "name": "pcap_mm_write",
+                "start": 51,
+                "end": 65
+            },
+            {
+                "name": "pcap_mm_read",
+                "start": 67,
+                "end": 88
+            },
+            {
+                "name": "____get_map_size",
+                "start": 90,
+                "end": 95
+            },
+            {
+                "name": "__pcap_mm_prepare_access_wr",
+                "start": 97,
+                "end": 127
+            },
+            {
+                "name": "__pcap_mm_prepare_access_rd",
+                "start": 129,
+                "end": 149
+            },
+            {
+                "name": "pcap_mm_init_once",
+                "start": 151,
+                "end": 154
+            },
+            {
+                "name": "pcap_mm_prepare_access",
+                "start": 156,
+                "end": 170
+            },
+            {
+                "name": "pcap_mm_fsync",
+                "start": 172,
+                "end": 175
+            },
+            {
+                "name": "pcap_mm_prepare_close",
+                "start": 177,
+                "end": 190
+            }
+        ],
+        "proc.c": [
+            {
+                "name": "cpu_affinity",
+                "start": 12,
+                "end": 24
+            },
+            {
+                "name": "set_proc_prio",
+                "start": 26,
+                "end": 33
+            },
+            {
+                "name": "set_sched_status",
+                "start": 35,
+                "end": 66
+            }
+        ],
+        "rnd.c": [
+            {
+                "name": "randombytes_weak",
+                "start": 13,
+                "end": 41
+            },
+            {
+                "name": "randombytes_strong",
+                "start": 43,
+                "end": 54
+            },
+            {
+                "name": "secrand",
+                "start": 56,
+                "end": 63
+            },
+            {
+                "name": "gen_key_bytes",
+                "start": 65,
+                "end": 68
+            }
+        ],
+        "bpf.c": [
+            {
+                "name": "bpf_dump_op_table",
+                "start": 84,
+                "end": 91
+            },
+            {
+                "name": "bpf_dump_linux_k",
+                "start": 93,
+                "end": 125
+            },
+            {
+                "name": "__bpf_dump",
+                "start": 127,
+                "end": 347
+            },
+            {
+                "name": "bpf_dump_all",
+                "start": 349,
+                "end": 355
+            },
+            {
+                "name": "bpf_attach_to_sock",
+                "start": 357,
+                "end": 369
+            },
+            {
+                "name": "bpf_detach_from_sock",
+                "start": 371,
+                "end": 379
+            },
+            {
+                "name": "enable_kernel_bpf_jit_compiler",
+                "start": 381,
+                "end": 395
+            },
+            {
+                "name": "__bpf_validate",
+                "start": 397,
+                "end": 515
+            },
+            {
+                "name": "bpf_run_filter",
+                "start": 517,
+                "end": 714
+            },
+            {
+                "name": "bpf_parse_rules",
+                "start": 716,
+                "end": 768
+            }
+        ],
+        "proto_ipv6_no_nxt_hdr.c": [
+            {
+                "name": "no_next_header",
+                "start": 17,
+                "end": 29
+            },
+            {
+                "name": "no_next_header_less",
+                "start": 31,
+                "end": 34
+            }
+        ],
+        "bpf_comp.c": [
+            {
+                "name": "bpf_try_compile",
+                "start": 15,
+                "end": 44
+            }
+        ],
+        "proto_vlan_q_in_q.c": [
+            {
+                "name": "QinQ_full",
+                "start": 23,
+                "end": 41
+            },
+            {
+                "name": "QinQ_less",
+                "start": 43,
+                "end": 56
+            }
+        ],
+        "ioexact.c": [
+            {
+                "name": "read_exact",
+                "start": 10,
+                "end": 32
+            },
+            {
+                "name": "write_exact",
+                "start": 34,
+                "end": 56
+            }
+        ],
+        "link.c": [
+            {
+                "name": "wireless_bitrate",
+                "start": 11,
+                "end": 30
+            },
+            {
+                "name": "wireless_sigqual",
+                "start": 32,
+                "end": 51
+            },
+            {
+                "name": "wireless_rangemax_sigqual",
+                "start": 53,
+                "end": 79
+            },
+            {
+                "name": "ethtool_bitrate",
+                "start": 81,
+                "end": 110
+            },
+            {
+                "name": "ethtool_link",
+                "start": 112,
+                "end": 136
+            },
+            {
+                "name": "ethtool_drvinf",
+                "start": 138,
+                "end": 158
+            }
+        ],
+        "xmalloc.c": [
+            {
+                "name": "xmalloc",
+                "start": 22,
+                "end": 35
+            },
+            {
+                "name": "xzmalloc",
+                "start": 37,
+                "end": 42
+            },
+            {
+                "name": "xmalloc_aligned",
+                "start": 44,
+                "end": 58
+            },
+            {
+                "name": "xzmalloc_aligned",
+                "start": 60,
+                "end": 65
+            },
+            {
+                "name": "xmallocz",
+                "start": 67,
+                "end": 79
+            },
+            {
+                "name": "xmemdupz",
+                "start": 81,
+                "end": 84
+            },
+            {
+                "name": "xrealloc",
+                "start": 86,
+                "end": 106
+            },
+            {
+                "name": "xfree_func",
+                "start": 108,
+                "end": 114
+            },
+            {
+                "name": "xstrdup",
+                "start": 116,
+                "end": 127
+            },
+            {
+                "name": "xstrndup",
+                "start": 129,
+                "end": 143
+            }
+        ],
+        "trie.c": [
+            {
+                "name": "trie_addr_lookup",
+                "start": 21,
+                "end": 43
+            },
+            {
+                "name": "trie_addr_maybe_update",
+                "start": 45,
+                "end": 66
+            },
+            {
+                "name": "trie_addr_remove",
+                "start": 68,
+                "end": 85
+            },
+            {
+                "name": "trie_addr_remove_addr",
+                "start": 87,
+                "end": 104
+            },
+            {
+                "name": "trie_init",
+                "start": 106,
+                "end": 109
+            },
+            {
+                "name": "trie_cleanup",
+                "start": 111,
+                "end": 117
+            }
+        ],
+        "astraceroute.c": [
+            {
+                "name": "assemble_ipv4",
+                "start": 73,
+                "end": 75
+            },
+            {
+                "name": "assemble_ipv6",
+                "start": 76,
+                "end": 78
+            },
+            {
+                "name": "check_ipv4",
+                "start": 79,
+                "end": 80
+            },
+            {
+                "name": "handle_ipv4",
+                "start": 81,
+                "end": 82
+            },
+            {
+                "name": "check_ipv6",
+                "start": 83,
+                "end": 84
+            },
+            {
+                "name": "handle_ipv6",
+                "start": 85,
+                "end": 86
+            },
+            {
+                "name": "signal_handler",
+                "start": 167,
+                "end": 177
+            },
+            {
+                "name": "help",
+                "start": 179,
+                "end": 238
+            },
+            {
+                "name": "version",
+                "start": 240,
+                "end": 252
+            },
+            {
+                "name": "__assemble_data",
+                "start": 254,
+                "end": 269
+            },
+            {
+                "name": "__assemble_icmp4",
+                "start": 271,
+                "end": 280
+            },
+            {
+                "name": "__assemble_icmp6",
+                "start": 282,
+                "end": 291
+            },
+            {
+                "name": "__assemble_tcp",
+                "start": 293,
+                "end": 321
+            },
+            {
+                "name": "assemble_ipv4",
+                "start": 323,
+                "end": 376
+            },
+            {
+                "name": "assemble_ipv6",
+                "start": 378,
+                "end": 427
+            },
+            {
+                "name": "check_ipv4",
+                "start": 429,
+                "end": 453
+            },
+            {
+                "name": "handle_ipv4",
+                "start": 455,
+                "end": 494
+            },
+            {
+                "name": "check_ipv6",
+                "start": 496,
+                "end": 520
+            },
+            {
+                "name": "handle_ipv6",
+                "start": 522,
+                "end": 561
+            },
+            {
+                "name": "show_trace_info",
+                "start": 563,
+                "end": 585
+            },
+            {
+                "name": "get_remote_fd",
+                "start": 587,
+                "end": 665
+            },
+            {
+                "name": "inject_filter",
+                "start": 667,
+                "end": 678
+            },
+            {
+                "name": "__process_node",
+                "start": 680,
+                "end": 724
+            },
+            {
+                "name": "timerdiv",
+                "start": 726,
+                "end": 733
+            },
+            {
+                "name": "timevalcmp",
+                "start": 735,
+                "end": 743
+            },
+            {
+                "name": "__process_time",
+                "start": 745,
+                "end": 821
+            },
+            {
+                "name": "__probe_remote",
+                "start": 823,
+                "end": 854
+            },
+            {
+                "name": "__process_ttl",
+                "start": 856,
+                "end": 887
+            },
+            {
+                "name": "main_trace",
+                "start": 889,
+                "end": 930
+            },
+            {
+                "name": "main",
+                "start": 932,
+                "end": 1112
+            }
+        ],
+        "screen.c": [
+            {
+                "name": "screen_init",
+                "start": 5,
+                "end": 19
+            },
+            {
+                "name": "screen_end",
+                "start": 21,
+                "end": 24
+            }
+        ],
+        "dissector.c": [
+            {
+                "name": "dissector_set_print_type",
+                "start": 20,
+                "end": 39
+            },
+            {
+                "name": "dissector_main",
+                "start": 41,
+                "end": 60
+            },
+            {
+                "name": "dissector_entry_point",
+                "start": 62,
+                "end": 105
+            },
+            {
+                "name": "dissector_init_all",
+                "start": 107,
+                "end": 111
+            },
+            {
+                "name": "dissector_cleanup_all",
+                "start": 113,
+                "end": 117
+            }
+        ],
+        "proto_lldp.c": [
+            {
+                "name": "lldp_print_net_addr",
+                "start": 87,
+                "end": 122
+            },
+            {
+                "name": "lldp_print_cap_one",
+                "start": 124,
+                "end": 128
+            },
+            {
+                "name": "lldp_print_cap",
+                "start": 130,
+                "end": 150
+            },
+            {
+                "name": "lldp",
+                "start": 152,
+                "end": 442
+            },
+            {
+                "name": "lldp_less",
+                "start": 444,
+                "end": 475
+            }
+        ],
+        "proto_80211_mac_hdr.c": [
+            {
+                "name": "len_neq_error",
+                "start": 774,
+                "end": 782
+            },
+            {
+                "name": "len_lt_error",
+                "start": 784,
+                "end": 792
+            },
+            {
+                "name": "data_rates",
+                "start": 794,
+                "end": 821
+            },
+            {
+                "name": "subelements",
+                "start": 830,
+                "end": 865
+            },
+            {
+                "name": "inf_reserved",
+                "start": 867,
+                "end": 888
+            },
+            {
+                "name": "inf_ssid",
+                "start": 890,
+                "end": 914
+            },
+            {
+                "name": "inf_supp_rates",
+                "start": 916,
+                "end": 945
+            },
+            {
+                "name": "inf_fh_ps",
+                "start": 947,
+                "end": 964
+            },
+            {
+                "name": "inf_dsss_ps",
+                "start": 966,
+                "end": 980
+            },
+            {
+                "name": "inf_cf_ps",
+                "start": 982,
+                "end": 999
+            },
+            {
+                "name": "inf_tim",
+                "start": 1001,
+                "end": 1027
+            },
+            {
+                "name": "inf_ibss_ps",
+                "start": 1029,
+                "end": 1043
+            },
+            {
+                "name": "inf_country",
+                "start": 1045,
+                "end": 1089
+            },
+            {
+                "name": "inf_hop_pp",
+                "start": 1091,
+                "end": 1106
+            },
+            {
+                "name": "inf_hop_pt",
+                "start": 1108,
+                "end": 1137
+            },
+            {
+                "name": "inf_req",
+                "start": 1139,
+                "end": 1161
+            },
+            {
+                "name": "inf_bss_load",
+                "start": 1163,
+                "end": 1180
+            },
+            {
+                "name": "inf_edca_ps",
+                "start": 1182,
+                "end": 1227
+            },
+            {
+                "name": "inf_tspec",
+                "start": 1229,
+                "end": 1277
+            },
+            {
+                "name": "class_type",
+                "start": 1279,
+                "end": 1290
+            },
+            {
+                "name": "inf_tclas",
+                "start": 1292,
+                "end": 1511
+            },
+            {
+                "name": "inf_sched",
+                "start": 1513,
+                "end": 1537
+            },
+            {
+                "name": "inf_chall_txt",
+                "start": 1539,
+                "end": 1562
+            },
+            {
+                "name": "inf_pwr_constr",
+                "start": 1564,
+                "end": 1579
+            },
+            {
+                "name": "inf_pwr_cap",
+                "start": 1581,
+                "end": 1597
+            },
+            {
+                "name": "inf_tpc_req",
+                "start": 1599,
+                "end": 1612
+            },
+            {
+                "name": "inf_tpc_rep",
+                "start": 1614,
+                "end": 1630
+            },
+            {
+                "name": "inf_supp_ch",
+                "start": 1632,
+                "end": 1663
+            },
+            {
+                "name": "inf_ch_sw_ann",
+                "start": 1665,
+                "end": 1683
+            },
+            {
+                "name": "meas_type",
+                "start": 1685,
+                "end": 1703
+            },
+            {
+                "name": "inf_meas_req",
+                "start": 1705,
+                "end": 2085
+            },
+            {
+                "name": "inf_meas_rep",
+                "start": 2087,
+                "end": 2443
+            },
+            {
+                "name": "inf_quiet",
+                "start": 2445,
+                "end": 2464
+            },
+            {
+                "name": "inf_ibss_dfs",
+                "start": 2466,
+                "end": 2503
+            },
+            {
+                "name": "inf_erp",
+                "start": 2505,
+                "end": 2522
+            },
+            {
+                "name": "inf_ts_del",
+                "start": 2524,
+                "end": 2538
+            },
+            {
+                "name": "inf_tclas_proc",
+                "start": 2540,
+                "end": 2555
+            },
+            {
+                "name": "inf_ht_cap",
+                "start": 2557,
+                "end": 2636
+            },
+            {
+                "name": "inf_qos_cap",
+                "start": 2638,
+                "end": 2654
+            },
+            {
+                "name": "inf_ext_supp_rates",
+                "start": 2656,
+                "end": 2682
+            },
+            {
+                "name": "inf_vend_spec",
+                "start": 2684,
+                "end": 2706
+            },
+            {
+                "name": "inf_unimplemented",
+                "start": 2708,
+                "end": 2712
+            },
+            {
+                "name": "inf_elements",
+                "start": 2714,
+                "end": 2854
+            },
+            {
+                "name": "cap_field",
+                "start": 2873,
+                "end": 2909
+            },
+            {
+                "name": "beacon",
+                "start": 2912,
+                "end": 2937
+            },
+            {
+                "name": "mgmt_unimplemented",
+                "start": 2939,
+                "end": 2942
+            },
+            {
+                "name": "ctrl_unimplemented",
+                "start": 2946,
+                "end": 2949
+            },
+            {
+                "name": "data_unimplemented",
+                "start": 2953,
+                "end": 2956
+            },
+            {
+                "name": "mgt_sub",
+                "start": 2959,
+                "end": 3052
+            },
+            {
+                "name": "ctrl_sub",
+                "start": 3054,
+                "end": 3082
+            },
+            {
+                "name": "data_sub",
+                "start": 3084,
+                "end": 3119
+            },
+            {
+                "name": "frame_control_type",
+                "start": 3121,
+                "end": 3142
+            },
+            {
+                "name": "ieee80211",
+                "start": 3144,
+                "end": 3195
+            },
+            {
+                "name": "ieee80211_less",
+                "start": 3197,
+                "end": 3200
+            }
+        ],
+        "proto_ipv6_hop_by_hop.c": [
+            {
+                "name": "dissect_opt_hop",
+                "start": 23,
+                "end": 37
+            },
+            {
+                "name": "hop_by_hop",
+                "start": 39,
+                "end": 71
+            },
+            {
+                "name": "hop_by_hop_less",
+                "start": 73,
+                "end": 94
+            }
+        ],
+        "bpfc.c": [
+            {
+                "name": "compile_filter",
+                "start": 34,
+                "end": 35
+            },
+            {
+                "name": "help",
+                "start": 37,
+                "end": 67
+            },
+            {
+                "name": "version",
+                "start": 69,
+                "end": 81
+            },
+            {
+                "name": "main",
+                "start": 83,
+                "end": 156
+            }
+        ],
+        "ioops.c": [
+            {
+                "name": "open_or_die",
+                "start": 17,
+                "end": 23
+            },
+            {
+                "name": "open_or_die_m",
+                "start": 25,
+                "end": 31
+            },
+            {
+                "name": "dup_or_die",
+                "start": 33,
+                "end": 39
+            },
+            {
+                "name": "dup2_or_die",
+                "start": 41,
+                "end": 46
+            },
+            {
+                "name": "create_or_die",
+                "start": 48,
+                "end": 52
+            },
+            {
+                "name": "pipe_or_die",
+                "start": 54,
+                "end": 59
+            },
+            {
+                "name": "tun_open_or_die",
+                "start": 61,
+                "end": 89
+            },
+            {
+                "name": "read_or_die",
+                "start": 91,
+                "end": 101
+            },
+            {
+                "name": "write_or_die",
+                "start": 103,
+                "end": 113
+            },
+            {
+                "name": "read_blob_or_die",
+                "start": 115,
+                "end": 124
+            },
+            {
+                "name": "write_blob_or_die",
+                "start": 126,
+                "end": 136
+            }
+        ],
+        "curvetun_mgmt_users.c": [
+            {
+                "name": "init_sock_mapper",
+                "start": 60,
+                "end": 70
+            },
+            {
+                "name": "init_sockaddr_mapper",
+                "start": 72,
+                "end": 81
+            },
+            {
+                "name": "cleanup_batch_sock_mapper",
+                "start": 83,
+                "end": 100
+            },
+            {
+                "name": "destroy_sock_mapper",
+                "start": 102,
+                "end": 110
+            },
+            {
+                "name": "cleanup_batch_sockaddr_mapper",
+                "start": 112,
+                "end": 128
+            },
+            {
+                "name": "destroy_sockaddr_mapper",
+                "start": 130,
+                "end": 138
+            },
+            {
+                "name": "user_store_alloc",
+                "start": 140,
+                "end": 143
+            },
+            {
+                "name": "user_store_free",
+                "start": 145,
+                "end": 151
+            },
+            {
+                "name": "__check_duplicate_username",
+                "start": 154,
+                "end": 169
+            },
+            {
+                "name": "__check_duplicate_pubkey",
+                "start": 172,
+                "end": 187
+            },
+            {
+                "name": "parse_line",
+                "start": 195,
+                "end": 235
+            },
+            {
+                "name": "parse_userfile_and_generate_user_store_or_die",
+                "start": 237,
+                "end": 294
+            },
+            {
+                "name": "dump_user_store",
+                "start": 296,
+                "end": 317
+            },
+            {
+                "name": "destroy_user_store",
+                "start": 319,
+                "end": 338
+            },
+            {
+                "name": "username_msg",
+                "start": 340,
+                "end": 370
+            },
+            {
+                "name": "username_msg_is_user",
+                "start": 372,
+                "end": 400
+            },
+            {
+                "name": "register_user_by_socket",
+                "start": 402,
+                "end": 422
+            },
+            {
+                "name": "register_user_by_sockaddr",
+                "start": 424,
+                "end": 448
+            },
+            {
+                "name": "try_register_user_by_socket",
+                "start": 450,
+                "end": 524
+            },
+            {
+                "name": "try_register_user_by_sockaddr",
+                "start": 526,
+                "end": 603
+            },
+            {
+                "name": "get_user_by_socket",
+                "start": 605,
+                "end": 628
+            },
+            {
+                "name": "get_user_by_sockaddr",
+                "start": 630,
+                "end": 657
+            },
+            {
+                "name": "socket_to_sock_map_entry",
+                "start": 659,
+                "end": 678
+            },
+            {
+                "name": "remove_user_by_socket",
+                "start": 680,
+                "end": 705
+            },
+            {
+                "name": "sockaddr_to_sockaddr_map_entry",
+                "start": 707,
+                "end": 730
+            },
+            {
+                "name": "remove_user_by_sockaddr",
+                "start": 732,
+                "end": 760
+            }
+        ],
+        "curvetun.c": [
+            {
+                "name": "signal_handler",
+                "start": 76,
+                "end": 86
+            },
+            {
+                "name": "help",
+                "start": 88,
+                "end": 128
+            },
+            {
+                "name": "version",
+                "start": 130,
+                "end": 143
+            },
+            {
+                "name": "check_file_or_die",
+                "start": 145,
+                "end": 166
+            },
+            {
+                "name": "check_config_exists_or_die",
+                "start": 168,
+                "end": 178
+            },
+            {
+                "name": "fetch_home_dir",
+                "start": 180,
+                "end": 186
+            },
+            {
+                "name": "write_username",
+                "start": 188,
+                "end": 217
+            },
+            {
+                "name": "create_curvedir",
+                "start": 219,
+                "end": 249
+            },
+            {
+                "name": "create_keypair",
+                "start": 251,
+                "end": 312
+            },
+            {
+                "name": "check_config_keypair_or_die",
+                "start": 314,
+                "end": 378
+            },
+            {
+                "name": "main_keygen",
+                "start": 380,
+                "end": 388
+            },
+            {
+                "name": "main_export",
+                "start": 390,
+                "end": 433
+            },
+            {
+                "name": "main_dumpc",
+                "start": 435,
+                "end": 451
+            },
+            {
+                "name": "main_dumps",
+                "start": 453,
+                "end": 469
+            },
+            {
+                "name": "daemonize",
+                "start": 471,
+                "end": 502
+            },
+            {
+                "name": "main_client",
+                "start": 504,
+                "end": 529
+            },
+            {
+                "name": "main_server",
+                "start": 531,
+                "end": 547
+            },
+            {
+                "name": "main",
+                "start": 549,
+                "end": 677
+            }
+        ],
+        "stun.c": [
+            {
+                "name": "stun_test",
+                "start": 53,
+                "end": 172
+            },
+            {
+                "name": "print_stun_probe",
+                "start": 174,
+                "end": 187
+            }
+        ],
+        "cookie.c": [
+            {
+                "name": "cookie_writer",
+                "start": 19,
+                "end": 42
+            },
+            {
+                "name": "to_std_log",
+                "start": 48,
+                "end": 51
+            }
+        ],
+        "dissector_eth.c": [
+            {
+                "name": "lookup_port_udp",
+                "start": 41,
+                "end": 44
+            },
+            {
+                "name": "lookup_port_tcp",
+                "start": 46,
+                "end": 49
+            },
+            {
+                "name": "lookup_ether_type",
+                "start": 51,
+                "end": 54
+            },
+            {
+                "name": "dissector_init_ports",
+                "start": 112,
+                "end": 179
+            },
+            {
+                "name": "dissector_cleanup_ports",
+                "start": 181,
+                "end": 198
+            },
+            {
+                "name": "dissector_init_ethernet",
+                "start": 200,
+                "end": 213
+            },
+            {
+                "name": "dissector_cleanup_ethernet",
+                "start": 215,
+                "end": 231
+            }
+        ],
+        "oui.c": [
+            {
+                "name": "lookup_vendor",
+                "start": 25,
+                "end": 34
+            },
+            {
+                "name": "dissector_init_oui",
+                "start": 36,
+                "end": 89
+            },
+            {
+                "name": "dissector_cleanup_oui_hash",
+                "start": 91,
+                "end": 108
+            },
+            {
+                "name": "dissector_cleanup_oui",
+                "start": 110,
+                "end": 115
+            }
+        ],
+        "mac80211.c": [
+            {
+                "name": "get_mac80211_phydev",
+                "start": 40,
+                "end": 60
+            },
+            {
+                "name": "nl80211_nlmsg_xalloc",
+                "start": 62,
+                "end": 68
+            },
+            {
+                "name": "nl80211_nl_socket_xalloc",
+                "start": 70,
+                "end": 76
+            },
+            {
+                "name": "nl80211_init",
+                "start": 78,
+                "end": 96
+            },
+            {
+                "name": "nl80211_cleanup",
+                "start": 98,
+                "end": 104
+            },
+            {
+                "name": "nl80211_wait_handler",
+                "start": 106,
+                "end": 113
+            },
+            {
+                "name": "nl80211_error_handler",
+                "start": 115,
+                "end": 120
+            },
+            {
+                "name": "nl80211_add_mon_if",
+                "start": 122,
+                "end": 179
+            },
+            {
+                "name": "nl80211_del_mon_if",
+                "start": 181,
+                "end": 210
+            },
+            {
+                "name": "enter_rfmon_mac80211",
+                "start": 212,
+                "end": 242
+            },
+            {
+                "name": "leave_rfmon_mac80211",
+                "start": 244,
+                "end": 256
+            }
+        ],
+        "proto_icmpv4.c": [
+            {
+                "name": "icmp",
+                "start": 34,
+                "end": 51
+            },
+            {
+                "name": "icmp_less",
+                "start": 53,
+                "end": 61
+            }
+        ],
+        "proto_ipv6_dest_opts.c": [
+            {
+                "name": "dissect_opt_dest",
+                "start": 24,
+                "end": 38
+            },
+            {
+                "name": "dest_opts",
+                "start": 40,
+                "end": 72
+            },
+            {
+                "name": "dest_opts_less",
+                "start": 74,
+                "end": 95
+            }
+        ],
+        "geoip.c": [
+            {
+                "name": "geoip_working",
+                "start": 91,
+                "end": 94
+            },
+            {
+                "name": "geoip_get_remote_fd",
+                "start": 96,
+                "end": 132
+            },
+            {
+                "name": "geoip_inflate",
+                "start": 134,
+                "end": 155
+            },
+            {
+                "name": "geoip_get_database",
+                "start": 157,
+                "end": 257
+            },
+            {
+                "name": "geoip4_get_record",
+                "start": 259,
+                "end": 264
+            },
+            {
+                "name": "geoip6_get_record",
+                "start": 266,
+                "end": 271
+            },
+            {
+                "name": "geoip4_as_name",
+                "start": 273,
+                "end": 278
+            },
+            {
+                "name": "geoip6_as_name",
+                "start": 280,
+                "end": 285
+            },
+            {
+                "name": "geoip4_longitude",
+                "start": 287,
+                "end": 290
+            },
+            {
+                "name": "geoip4_latitude",
+                "start": 292,
+                "end": 295
+            },
+            {
+                "name": "geoip6_longitude",
+                "start": 297,
+                "end": 300
+            },
+            {
+                "name": "geoip6_latitude",
+                "start": 302,
+                "end": 305
+            },
+            {
+                "name": "geoip4_city_name",
+                "start": 307,
+                "end": 310
+            },
+            {
+                "name": "geoip6_city_name",
+                "start": 312,
+                "end": 315
+            },
+            {
+                "name": "geoip4_region_name",
+                "start": 317,
+                "end": 320
+            },
+            {
+                "name": "geoip6_region_name",
+                "start": 322,
+                "end": 325
+            },
+            {
+                "name": "geoip4_country_name",
+                "start": 327,
+                "end": 332
+            },
+            {
+                "name": "geoip6_country_name",
+                "start": 334,
+                "end": 339
+            },
+            {
+                "name": "geoip_open_prepare",
+                "start": 348,
+                "end": 358
+            },
+            {
+                "name": "geoip_open_restore",
+                "start": 360,
+                "end": 367
+            },
+            {
+                "name": "geoip_open_type",
+                "start": 369,
+                "end": 378
+            },
+            {
+                "name": "geoip_open",
+                "start": 380,
+                "end": 389
+            },
+            {
+                "name": "init_geoip_city_open4",
+                "start": 391,
+                "end": 405
+            },
+            {
+                "name": "init_geoip_city_open6",
+                "start": 407,
+                "end": 421
+            },
+            {
+                "name": "init_geoip_city",
+                "start": 423,
+                "end": 427
+            },
+            {
+                "name": "destroy_geoip_city",
+                "start": 429,
+                "end": 433
+            },
+            {
+                "name": "init_geoip_country_open4",
+                "start": 435,
+                "end": 449
+            },
+            {
+                "name": "init_geoip_country_open6",
+                "start": 451,
+                "end": 465
+            },
+            {
+                "name": "init_geoip_country",
+                "start": 467,
+                "end": 471
+            },
+            {
+                "name": "destroy_geoip_country",
+                "start": 473,
+                "end": 477
+            },
+            {
+                "name": "init_geoip_asname_open4",
+                "start": 479,
+                "end": 493
+            },
+            {
+                "name": "init_geoip_asname_open6",
+                "start": 495,
+                "end": 509
+            },
+            {
+                "name": "init_geoip_asname",
+                "start": 511,
+                "end": 515
+            },
+            {
+                "name": "destroy_geoip_asname",
+                "start": 517,
+                "end": 521
+            },
+            {
+                "name": "init_mirrors",
+                "start": 523,
+                "end": 549
+            },
+            {
+                "name": "destroy_mirrors",
+                "start": 551,
+                "end": 557
+            },
+            {
+                "name": "init_geoip",
+                "start": 559,
+                "end": 564
+            },
+            {
+                "name": "update_geoip",
+                "start": 566,
+                "end": 594
+            },
+            {
+                "name": "destroy_geoip",
+                "start": 596,
+                "end": 603
+            }
+        ],
+        "flowtop.c": [
+            {
+                "name": "signal_handler",
+                "start": 210,
+                "end": 222
+            },
+            {
+                "name": "help",
+                "start": 227,
+                "end": 260
+            },
+            {
+                "name": "version",
+                "start": 262,
+                "end": 275
+            },
+            {
+                "name": "flow_entry_xalloc",
+                "start": 277,
+                "end": 280
+            },
+            {
+                "name": "flow_entry_xfree",
+                "start": 282,
+                "end": 285
+            },
+            {
+                "name": "flow_list_init",
+                "start": 287,
+                "end": 291
+            },
+            {
+                "name": "flow_list_new_entry",
+                "start": 293,
+                "end": 302
+            },
+            {
+                "name": "flow_list_find_id",
+                "start": 304,
+                "end": 317
+            },
+            {
+                "name": "flow_list_find_prev_id",
+                "start": 319,
+                "end": 335
+            },
+            {
+                "name": "flow_list_update_entry",
+                "start": 337,
+                "end": 356
+            },
+            {
+                "name": "flow_list_destroy_entry",
+                "start": 358,
+                "end": 377
+            },
+            {
+                "name": "flow_list_destroy",
+                "start": 379,
+                "end": 393
+            },
+            {
+                "name": "walk_process",
+                "start": 395,
+                "end": 437
+            },
+            {
+                "name": "walk_processes",
+                "start": 439,
+                "end": 464
+            },
+            {
+                "name": "get_port_inode",
+                "start": 466,
+                "end": 500
+            },
+            {
+                "name": "flow_entry_from_ct",
+                "start": 510,
+                "end": 545
+            },
+            {
+                "name": "flow_entry_get_extended_is_dns",
+                "start": 552,
+                "end": 558
+            },
+            {
+                "name": "flow_entry_get_sain4_obj",
+                "start": 563,
+                "end": 570
+            },
+            {
+                "name": "flow_entry_get_sain6_obj",
+                "start": 572,
+                "end": 581
+            },
+            {
+                "name": "flow_entry_geo_city_lookup_generic",
+                "start": 583,
+                "end": 615
+            },
+            {
+                "name": "flow_entry_geo_country_lookup_generic",
+                "start": 617,
+                "end": 649
+            },
+            {
+                "name": "flow_entry_get_extended_geo",
+                "start": 651,
+                "end": 656
+            },
+            {
+                "name": "flow_entry_get_extended_revdns",
+                "start": 658,
+                "end": 696
+            },
+            {
+                "name": "flow_entry_get_extended",
+                "start": 698,
+                "end": 714
+            },
+            {
+                "name": "presenter_get_port",
+                "start": 716,
+                "end": 742
+            },
+            {
+                "name": "presenter_screen_do_line",
+                "start": 744,
+                "end": 855
+            },
+            {
+                "name": "presenter_flow_wrong_state",
+                "start": 857,
+                "end": 883
+            },
+            {
+                "name": "presenter_screen_update",
+                "start": 885,
+                "end": 976
+            },
+            {
+                "name": "presenter",
+                "start": 978,
+                "end": 1018
+            },
+            {
+                "name": "collector_cb",
+                "start": 1020,
+                "end": 1046
+            },
+            {
+                "name": "collector_flush",
+                "start": 1048,
+                "end": 1051
+            },
+            {
+                "name": "collector",
+                "start": 1053,
+                "end": 1118
+            },
+            {
+                "name": "main",
+                "start": 1120,
+                "end": 1191
+            }
+        ],
+        "proto_ipv4.c": [
+            {
+                "name": "ipv4",
+                "start": 34,
+                "end": 168
+            },
+            {
+                "name": "ipv4_less",
+                "start": 170,
+                "end": 194
+            }
+        ],
+        "epoll2.c": [
+            {
+                "name": "set_epoll_descriptor",
+                "start": 7,
+                "end": 19
+            },
+            {
+                "name": "set_epoll_descriptor2",
+                "start": 21,
+                "end": 30
+            }
+        ],
+        "str.c": [
+            {
+                "name": "strlcpy",
+                "start": 13,
+                "end": 25
+            },
+            {
+                "name": "vslprintf",
+                "start": 27,
+                "end": 35
+            },
+            {
+                "name": "slprintf",
+                "start": 37,
+                "end": 47
+            },
+            {
+                "name": "slprintf_nocheck",
+                "start": 49,
+                "end": 59
+            },
+            {
+                "name": "xmemset",
+                "start": 61,
+                "end": 70
+            },
+            {
+                "name": "strtrim_right",
+                "start": 72,
+                "end": 88
+            }
+        ],
+        "trafgen.c": [
+            {
+                "name": "signal_handler",
+                "start": 129,
+                "end": 140
+            },
+            {
+                "name": "help",
+                "start": 142,
+                "end": 206
+            },
+            {
+                "name": "example",
+                "start": 208,
+                "end": 260
+            },
+            {
+                "name": "version",
+                "start": 262,
+                "end": 274
+            },
+            {
+                "name": "apply_counter",
+                "start": 276,
+                "end": 300
+            },
+            {
+                "name": "apply_randomizer",
+                "start": 302,
+                "end": 312
+            },
+            {
+                "name": "apply_csum16",
+                "start": 314,
+                "end": 350
+            },
+            {
+                "name": "setup_shared_var",
+                "start": 352,
+                "end": 380
+            },
+            {
+                "name": "destroy_shared_var",
+                "start": 382,
+                "end": 385
+            },
+            {
+                "name": "dump_trafgen_snippet",
+                "start": 387,
+                "end": 399
+            },
+            {
+                "name": "xmit_smoke_setup",
+                "start": 401,
+                "end": 429
+            },
+            {
+                "name": "xmit_smoke_probe",
+                "start": 431,
+                "end": 499
+            },
+            {
+                "name": "xmit_slowpath_or_die",
+                "start": 501,
+                "end": 587
+            },
+            {
+                "name": "xmit_fastpath_or_die",
+                "start": 589,
+                "end": 684
+            },
+            {
+                "name": "__set_state",
+                "start": 686,
+                "end": 689
+            },
+            {
+                "name": "__get_state",
+                "start": 691,
+                "end": 694
+            },
+            {
+                "name": "__wait_and_sum_others",
+                "start": 696,
+                "end": 715
+            },
+            {
+                "name": "__correct_global_delta",
+                "start": 717,
+                "end": 754
+            },
+            {
+                "name": "__set_state_cf",
+                "start": 756,
+                "end": 762
+            },
+            {
+                "name": "__set_state_cd",
+                "start": 764,
+                "end": 768
+            },
+            {
+                "name": "xmit_packet_precheck",
+                "start": 770,
+                "end": 805
+            },
+            {
+                "name": "main_loop",
+                "start": 807,
+                "end": 842
+            },
+            {
+                "name": "generate_srand_seed",
+                "start": 844,
+                "end": 857
+            },
+            {
+                "name": "main",
+                "start": 859,
+                "end": 1139
+            }
+        ],
+        "ifpps.c": [
+            {
+                "name": "signal_handler",
+                "start": 95,
+                "end": 107
+            },
+            {
+                "name": "iswireless",
+                "start": 109,
+                "end": 112
+            },
+            {
+                "name": "help",
+                "start": 114,
+                "end": 148
+            },
+            {
+                "name": "version",
+                "start": 150,
+                "end": 163
+            },
+            {
+                "name": "padding_from_num",
+                "start": 165,
+                "end": 172
+            },
+            {
+                "name": "stats_alloc",
+                "start": 177,
+                "end": 188
+            },
+            {
+                "name": "stats_zero",
+                "start": 193,
+                "end": 207
+            },
+            {
+                "name": "stats_release",
+                "start": 212,
+                "end": 223
+            },
+            {
+                "name": "stats_proc_net_dev",
+                "start": 225,
+                "end": 270
+            },
+            {
+                "name": "stats_proc_interrupts",
+                "start": 272,
+                "end": 332
+            },
+            {
+                "name": "stats_proc_softirqs",
+                "start": 334,
+                "end": 384
+            },
+            {
+                "name": "stats_proc_memory",
+                "start": 386,
+                "end": 428
+            },
+            {
+                "name": "stats_proc_system",
+                "start": 430,
+                "end": 478
+            },
+            {
+                "name": "stats_proc_procs",
+                "start": 480,
+                "end": 506
+            },
+            {
+                "name": "adjust_dbm_level",
+                "start": 508,
+                "end": 514
+            },
+            {
+                "name": "stats_wireless",
+                "start": 516,
+                "end": 536
+            },
+            {
+                "name": "stats_diff",
+                "start": 550,
+                "end": 589
+            },
+            {
+                "name": "stats_fetch",
+                "start": 591,
+                "end": 607
+            },
+            {
+                "name": "stats_sample_generic",
+                "start": 609,
+                "end": 622
+            },
+            {
+                "name": "cmp_hits",
+                "start": 624,
+                "end": 638
+            },
+            {
+                "name": "cmp_irqs_rel",
+                "start": 640,
+                "end": 654
+            },
+            {
+                "name": "cmp_irqs_abs",
+                "start": 656,
+                "end": 670
+            },
+            {
+                "name": "stats_top",
+                "start": 672,
+                "end": 706
+            },
+            {
+                "name": "screen_header",
+                "start": 708,
+                "end": 737
+            },
+            {
+                "name": "screen_net_dev_rel",
+                "start": 739,
+                "end": 761
+            },
+            {
+                "name": "screen_net_dev_percentage",
+                "start": 763,
+                "end": 775
+            },
+            {
+                "name": "screen_net_dev_abs",
+                "start": 777,
+                "end": 795
+            },
+            {
+                "name": "screen_sys",
+                "start": 797,
+                "end": 806
+            },
+            {
+                "name": "screen_mem_swap",
+                "start": 808,
+                "end": 827
+            },
+            {
+                "name": "screen_percpu_states_one",
+                "start": 829,
+                "end": 846
+            },
+            {
+                "name": "screen_percpu_states",
+                "start": 856,
+                "end": 927
+            },
+            {
+                "name": "screen_percpu_irqs_rel_one",
+                "start": 929,
+                "end": 942
+            },
+            {
+                "name": "screen_percpu_irqs_rel",
+                "start": 944,
+                "end": 993
+            },
+            {
+                "name": "screen_percpu_irqs_abs_one",
+                "start": 995,
+                "end": 1003
+            },
+            {
+                "name": "screen_percpu_irqs_abs",
+                "start": 1005,
+                "end": 1044
+            },
+            {
+                "name": "screen_wireless",
+                "start": 1046,
+                "end": 1061
+            },
+            {
+                "name": "screen_update",
+                "start": 1063,
+                "end": 1131
+            },
+            {
+                "name": "screen_main",
+                "start": 1133,
+                "end": 1162
+            },
+            {
+                "name": "term_csv",
+                "start": 1164,
+                "end": 1231
+            },
+            {
+                "name": "term_csv_header",
+                "start": 1233,
+                "end": 1304
+            },
+            {
+                "name": "term_main",
+                "start": 1306,
+                "end": 1323
+            },
+            {
+                "name": "main",
+                "start": 1325,
+                "end": 1441
+            }
+        ],
+        "proto_vlan.c": [
+            {
+                "name": "vlan",
+                "start": 21,
+                "end": 39
+            },
+            {
+                "name": "vlan_less",
+                "start": 41,
+                "end": 54
+            }
+        ],
+        "proto_ipv6_fragm.c": [
+            {
+                "name": "fragm",
+                "start": 25,
+                "end": 47
+            },
+            {
+                "name": "fragm_less",
+                "start": 49,
+                "end": 63
+            }
+        ],
+        "sig.c": [
+            {
+                "name": "register_signal",
+                "start": 6,
+                "end": 18
+            },
+            {
+                "name": "register_signal_f",
+                "start": 20,
+                "end": 32
+            }
+        ],
+        "proto_ipv6_mobility_hdr.c": [
+            {
+                "name": "dissect_mobility_options",
+                "start": 80,
+                "end": 92
+            },
+            {
+                "name": "dissect_mobilityhdr_type_0",
+                "start": 94,
+                "end": 106
+            },
+            {
+                "name": "dissect_mobilityhdr_type_1_2",
+                "start": 108,
+                "end": 122
+            },
+            {
+                "name": "dissect_mobilityhdr_type_3_4",
+                "start": 124,
+                "end": 140
+            },
+            {
+                "name": "dissect_mobilityhdr_type_5",
+                "start": 142,
+                "end": 158
+            },
+            {
+                "name": "dissect_mobilityhdr_type_6",
+                "start": 160,
+                "end": 179
+            },
+            {
+                "name": "dissect_mobilityhdr_type_7",
+                "start": 181,
+                "end": 203
+            },
+            {
+                "name": "get_mh_type",
+                "start": 205,
+                "end": 244
+            },
+            {
+                "name": "mobility",
+                "start": 246,
+                "end": 285
+            },
+            {
+                "name": "mobility_less",
+                "start": 287,
+                "end": 308
+            }
+        ],
+        "ring_rx.c": [
+            {
+                "name": "destroy_rx_ring",
+                "start": 22,
+                "end": 41
+            },
+            {
+                "name": "setup_rx_ring_layout",
+                "start": 43,
+                "end": 77
+            },
+            {
+                "name": "create_rx_ring",
+                "start": 79,
+                "end": 111
+            },
+            {
+                "name": "mmap_rx_ring",
+                "start": 113,
+                "end": 116
+            },
+            {
+                "name": "alloc_rx_ring_frames",
+                "start": 118,
+                "end": 133
+            },
+            {
+                "name": "bind_rx_ring",
+                "start": 135,
+                "end": 138
+            },
+            {
+                "name": "sock_rx_net_stats",
+                "start": 140,
+                "end": 164
+            }
+        ],
+        "pcap_rw.c": [
+            {
+                "name": "pcap_rw_write",
+                "start": 20,
+                "end": 38
+            },
+            {
+                "name": "pcap_rw_read",
+                "start": 40,
+                "end": 58
+            },
+            {
+                "name": "pcap_rw_init_once",
+                "start": 60,
+                "end": 63
+            },
+            {
+                "name": "pcap_rw_fsync",
+                "start": 65,
+                "end": 68
+            }
+        ],
+        "corking.c": [
+            {
+                "name": "set_udp_cork",
+                "start": 10,
+                "end": 17
+            },
+            {
+                "name": "set_udp_uncork",
+                "start": 19,
+                "end": 26
+            },
+            {
+                "name": "set_tcp_cork",
+                "start": 28,
+                "end": 35
+            },
+            {
+                "name": "set_tcp_uncork",
+                "start": 37,
+                "end": 44
+            },
+            {
+                "name": "set_sock_cork",
+                "start": 46,
+                "end": 52
+            },
+            {
+                "name": "set_sock_uncork",
+                "start": 54,
+                "end": 60
+            }
+        ],
+        "proto_none.c": [
+            {
+                "name": "_hex",
+                "start": 16,
+                "end": 25
+            },
+            {
+                "name": "hex",
+                "start": 27,
+                "end": 36
+            },
+            {
+                "name": "_ascii",
+                "start": 38,
+                "end": 47
+            },
+            {
+                "name": "ascii",
+                "start": 49,
+                "end": 58
+            },
+            {
+                "name": "hex_ascii",
+                "start": 60,
+                "end": 71
+            },
+            {
+                "name": "none_less",
+                "start": 73,
+                "end": 76
+            }
+        ],
+        "dev.c": [
+            {
+                "name": "device_ifindex",
+                "start": 16,
+                "end": 37
+            },
+            {
+                "name": "device_type",
+                "start": 39,
+                "end": 61
+            },
+            {
+                "name": "__device_address6",
+                "start": 63,
+                "end": 86
+            },
+            {
+                "name": "device_address",
+                "start": 88,
+                "end": 113
+            },
+            {
+                "name": "device_mtu",
+                "start": 115,
+                "end": 132
+            },
+            {
+                "name": "device_get_flags",
+                "start": 134,
+                "end": 151
+            },
+            {
+                "name": "device_set_flags",
+                "start": 153,
+                "end": 169
+            },
+            {
+                "name": "device_up_and_running",
+                "start": 171,
+                "end": 181
+            },
+            {
+                "name": "device_bitrate",
+                "start": 183,
+                "end": 191
+            },
+            {
+                "name": "device_enter_promiscuous_mode",
+                "start": 193,
+                "end": 204
+            },
+            {
+                "name": "device_leave_promiscuous_mode",
+                "start": 206,
+                "end": 212
+            }
+        ],
+        "sock.c": [
+            {
+                "name": "af_socket",
+                "start": 13,
+                "end": 25
+            },
+            {
+                "name": "pf_socket",
+                "start": 27,
+                "end": 34
+            },
+            {
+                "name": "pf_tx_socket",
+                "start": 36,
+                "end": 43
+            },
+            {
+                "name": "set_sock_qdisc_bypass",
+                "start": 48,
+                "end": 62
+            },
+            {
+                "name": "set_sock_prio",
+                "start": 64,
+                "end": 71
+            },
+            {
+                "name": "set_nonblocking",
+                "start": 73,
+                "end": 78
+            },
+            {
+                "name": "set_nonblocking_sloppy",
+                "start": 80,
+                "end": 83
+            },
+            {
+                "name": "set_socket_keepalive",
+                "start": 85,
+                "end": 92
+            },
+            {
+                "name": "set_tcp_nodelay",
+                "start": 94,
+                "end": 101
+            },
+            {
+                "name": "set_ipv6_only",
+                "start": 103,
+                "end": 107
+            },
+            {
+                "name": "set_reuseaddr",
+                "start": 109,
+                "end": 118
+            },
+            {
+                "name": "set_mtu_disc_dont",
+                "start": 120,
+                "end": 127
+            },
+            {
+                "name": "get_system_socket_mem",
+                "start": 146,
+                "end": 163
+            },
+            {
+                "name": "set_system_socket_mem",
+                "start": 165,
+                "end": 183
+            },
+            {
+                "name": "set_system_socket_memory",
+                "start": 185,
+                "end": 197
+            },
+            {
+                "name": "reset_system_socket_memory",
+                "start": 199,
+                "end": 207
+            }
+        ],
+        "proto_ethernet.c": [
+            {
+                "name": "is_multicast_ether_addr",
+                "start": 18,
+                "end": 21
+            },
+            {
+                "name": "is_broadcast_ether_addr",
+                "start": 23,
+                "end": 26
+            },
+            {
+                "name": "ether_lookup_addr",
+                "start": 28,
+                "end": 39
+            },
+            {
+                "name": "ethernet",
+                "start": 41,
+                "end": 72
+            },
+            {
+                "name": "ethernet_less",
+                "start": 74,
+                "end": 93
+            }
+        ],
+        "curve.c": [
+            {
+                "name": "curve25519_init",
+                "start": 32,
+                "end": 41
+            },
+            {
+                "name": "curve25519_destroy",
+                "start": 43,
+                "end": 50
+            },
+            {
+                "name": "curve25519_tfm_alloc",
+                "start": 52,
+                "end": 60
+            },
+            {
+                "name": "curve25519_tfm_free",
+                "start": 62,
+                "end": 66
+            },
+            {
+                "name": "curve25519_tfm_free_void",
+                "start": 68,
+                "end": 71
+            },
+            {
+                "name": "curve25519_proto_init",
+                "start": 73,
+                "end": 104
+            },
+            {
+                "name": "curve25519_encode",
+                "start": 106,
+                "end": 141
+            },
+            {
+                "name": "curve25519_decode",
+                "start": 143,
+                "end": 185
+            },
+            {
+                "name": "curve25519_pubkey_hexparse_32",
+                "start": 187,
+                "end": 203
+            }
+        ],
+        "curvetun/abiname.c": [
+            {
+                "name": "abi",
+                "start": 3,
+                "end": 40
+            },
+            {
+                "name": "main",
+                "start": 42,
+                "end": 46
+            }
+        ],
+        "staging/mz.h": [
+            {
+                "name": "verbose_l1",
+                "start": 46,
+                "end": 56
+            },
+            {
+                "name": "verbose_l2",
+                "start": 58,
+                "end": 68
+            },
+            {
+                "name": "timestamp_subtract",
+                "start": 795,
+                "end": 797
+            },
+            {
+                "name": "timestamp_add",
+                "start": 799,
+                "end": 801
+            },
+            {
+                "name": "got_rtp_packet",
+                "start": 872,
+                "end": 874
+            },
+            {
+                "name": "arptable_add",
+                "start": 911,
+                "end": 917
+            },
+            {
+                "name": "arpwatch",
+                "start": 920,
+                "end": 928
+            }
+        ],
+        "staging/mops.h": [
+            {
+                "name": "mops_tcp_add_option",
+                "start": 809,
+                "end": 814
+            },
+            {
+                "name": "mops_msg_add_counter",
+                "start": 839,
+                "end": 845
+            },
+            {
+                "name": "mops_create_igmpv2",
+                "start": 883,
+                "end": 888
+            }
+        ],
+        "staging/cli_rtp.c": [
+            {
+                "name": "cmd_rtp_version",
+                "start": 26,
+                "end": 46
+            },
+            {
+                "name": "cmd_rtp_padding",
+                "start": 48,
+                "end": 71
+            },
+            {
+                "name": "cmd_rtp_xten",
+                "start": 73,
+                "end": 98
+            },
+            {
+                "name": "cmd_rtp_marker",
+                "start": 101,
+                "end": 122
+            },
+            {
+                "name": "cmd_rtp_cc",
+                "start": 125,
+                "end": 148
+            },
+            {
+                "name": "cmd_rtp_pt",
+                "start": 151,
+                "end": 172
+            },
+            {
+                "name": "cmd_rtp_ssrc",
+                "start": 174,
+                "end": 200
+            },
+            {
+                "name": "cmd_rtp_sqnr",
+                "start": 203,
+                "end": 224
+            },
+            {
+                "name": "cmd_rtp_time",
+                "start": 227,
+                "end": 248
+            },
+            {
+                "name": "cmd_rtp_extension",
+                "start": 251,
+                "end": 281
+            },
+            {
+                "name": "cmd_rtp_source",
+                "start": 285,
+                "end": 299
+            },
+            {
+                "name": "cmd_rtp_cclist",
+                "start": 302,
+                "end": 340
+            }
+        ],
+        "staging/mops_threads.c": [
+            {
+                "name": "mops_set_active",
+                "start": 26,
+                "end": 31
+            },
+            {
+                "name": "mops_set_seqact",
+                "start": 33,
+                "end": 38
+            },
+            {
+                "name": "mops_set_conf",
+                "start": 41,
+                "end": 46
+            },
+            {
+                "name": "mops_is_active",
+                "start": 49,
+                "end": 56
+            },
+            {
+                "name": "mops_is_any_active",
+                "start": 60,
+                "end": 67
+            },
+            {
+                "name": "mops_is_seqact",
+                "start": 70,
+                "end": 77
+            },
+            {
+                "name": "mops_state",
+                "start": 82,
+                "end": 89
+            },
+            {
+                "name": "mops_tx_simple",
+                "start": 92,
+                "end": 110
+            },
+            {
+                "name": "mops_tx_sequence",
+                "start": 118,
+                "end": 140
+            },
+            {
+                "name": "mops_sequence_thread",
+                "start": 144,
+                "end": 171
+            },
+            {
+                "name": "mops_interval_thread",
+                "start": 183,
+                "end": 198
+            },
+            {
+                "name": "mops_tx_thread_native",
+                "start": 203,
+                "end": 615
+            },
+            {
+                "name": "mops_destroy_thread",
+                "start": 621,
+                "end": 639
+            }
+        ],
+        "staging/cli_udp.c": [
+            {
+                "name": "cmd_port_source",
+                "start": 26,
+                "end": 76
+            },
+            {
+                "name": "cmd_port_destination",
+                "start": 81,
+                "end": 132
+            },
+            {
+                "name": "cmd_udp_sum",
+                "start": 136,
+                "end": 178
+            },
+            {
+                "name": "cmd_udp_len",
+                "start": 182,
+                "end": 195
+            },
+            {
+                "name": "cmd_udp_end",
+                "start": 198,
+                "end": 204
+            }
+        ],
+        "staging/mops_sequence.c": [
+            {
+                "name": "mops_delete_sequence",
+                "start": 41,
+                "end": 53
+            },
+            {
+                "name": "mops_create_sequence",
+                "start": 57,
+                "end": 77
+            },
+            {
+                "name": "mops_dump_sequence",
+                "start": 92,
+                "end": 142
+            },
+            {
+                "name": "mops_add_packet_to_sequence",
+                "start": 151,
+                "end": 171
+            },
+            {
+                "name": "mops_add_delay_to_sequence",
+                "start": 179,
+                "end": 194
+            },
+            {
+                "name": "mops_delete_packet_from_pseq",
+                "start": 206,
+                "end": 229
+            },
+            {
+                "name": "mops_delete_all_packets_from_pseq",
+                "start": 232,
+                "end": 248
+            },
+            {
+                "name": "stop_sequence",
+                "start": 257,
+                "end": 278
+            },
+            {
+                "name": "stop_all_sequences",
+                "start": 289,
+                "end": 302
+            }
+        ],
+        "staging/llist.c": [
+            {
+                "name": "mz_ll_create_new_element",
+                "start": 46,
+                "end": 71
+            },
+            {
+                "name": "mz_ll_delete_element",
+                "start": 74,
+                "end": 86
+            },
+            {
+                "name": "mz_ll_delete_list",
+                "start": 89,
+                "end": 105
+            },
+            {
+                "name": "mz_ll_search_name",
+                "start": 107,
+                "end": 116
+            },
+            {
+                "name": "mz_ll_search_index",
+                "start": 118,
+                "end": 127
+            },
+            {
+                "name": "mz_ll_size",
+                "start": 129,
+                "end": 143
+            },
+            {
+                "name": "mz_ll_dump_all",
+                "start": 146,
+                "end": 160
+            },
+            {
+                "name": "_mz_ll_set_default",
+                "start": 165,
+                "end": 172
+            }
+        ],
+        "staging/mops_update.c": [
+            {
+                "name": "mops_update",
+                "start": 36,
+                "end": 420
+            }
+        ],
+        "staging/mops_mpls.c": [
+            {
+                "name": "mops_mpls",
+                "start": 41,
+                "end": 71
+            },
+            {
+                "name": "mops_mpls_remove",
+                "start": 80,
+                "end": 123
+            },
+            {
+                "name": "mops_mpls_bos",
+                "start": 127,
+                "end": 136
+            },
+            {
+                "name": "mops_mpls_nobos",
+                "start": 140,
+                "end": 149
+            }
+        ],
+        "staging/automops.c": [
+            {
+                "name": "automops_init",
+                "start": 26,
+                "end": 35
+            },
+            {
+                "name": "automops_set_defaults",
+                "start": 40,
+                "end": 64
+            },
+            {
+                "name": "automops_alloc_protocol",
+                "start": 74,
+                "end": 103
+            },
+            {
+                "name": "automops_delete_protocol",
+                "start": 121,
+                "end": 152
+            },
+            {
+                "name": "automops_search_protocol",
+                "start": 161,
+                "end": 175
+            },
+            {
+                "name": "automops_dump_all",
+                "start": 182,
+                "end": 259
+            },
+            {
+                "name": "automops_clone_automops",
+                "start": 269,
+                "end": 364
+            },
+            {
+                "name": "automops_add_field",
+                "start": 368,
+                "end": 397
+            },
+            {
+                "name": "automops_field_set_defaults",
+                "start": 402,
+                "end": 421
+            },
+            {
+                "name": "mops_str2layers",
+                "start": 435,
+                "end": 463
+            },
+            {
+                "name": "amp_str2type",
+                "start": 467,
+                "end": 477
+            },
+            {
+                "name": "amp_type2str",
+                "start": 481,
+                "end": 510
+            },
+            {
+                "name": "amp_getamp_byname",
+                "start": 519,
+                "end": 528
+            },
+            {
+                "name": "amp_add_pentry",
+                "start": 535,
+                "end": 611
+            },
+            {
+                "name": "amp_checkindex",
+                "start": 620,
+                "end": 638
+            },
+            {
+                "name": "amp_getfield_byname",
+                "start": 648,
+                "end": 659
+            },
+            {
+                "name": "ensure_single_word",
+                "start": 672,
+                "end": 685
+            },
+            {
+                "name": "amp_add_fentry",
+                "start": 691,
+                "end": 783
+            },
+            {
+                "name": "automops_delete_fields",
+                "start": 788,
+                "end": 817
+            },
+            {
+                "name": "automops_delete_all",
+                "start": 824,
+                "end": 854
+            },
+            {
+                "name": "automops_cleanup",
+                "start": 861,
+                "end": 878
+            },
+            {
+                "name": "amperr2str",
+                "start": 885,
+                "end": 949
+            },
+            {
+                "name": "mapfile",
+                "start": 962,
+                "end": 1002
+            },
+            {
+                "name": "automops_update",
+                "start": 1008,
+                "end": 1012
+            }
+        ],
+        "staging/layer2.c": [
+            {
+                "name": "send_arp",
+                "start": 112,
+                "end": 385
+            },
+            {
+                "name": "send_bpdu",
+                "start": 414,
+                "end": 901
+            }
+        ],
+        "staging/mops_ext_rtp.c": [
+            {
+                "name": "mops_init_pdesc_rtp",
+                "start": 27,
+                "end": 60
+            },
+            {
+                "name": "mops_update_rtp",
+                "start": 85,
+                "end": 174
+            },
+            {
+                "name": "mops_update_rtp_dynamics",
+                "start": 191,
+                "end": 242
+            }
+        ],
+        "staging/rtp.c": [
+            {
+                "name": "create_rtp_packet",
+                "start": 60,
+                "end": 212
+            }
+        ],
+        "staging/dns.c": [
+            {
+                "name": "create_dns_packet",
+                "start": 99,
+                "end": 525
+            },
+            {
+                "name": "dns_get_query",
+                "start": 538,
+                "end": 613
+            },
+            {
+                "name": "dns_process_label",
+                "start": 625,
+                "end": 653
+            },
+            {
+                "name": "dns_get_answer",
+                "start": 672,
+                "end": 817
+            }
+        ],
+        "staging/send.c": [
+            {
+                "name": "complexity",
+                "start": 40,
+                "end": 162
+            },
+            {
+                "name": "send_frame",
+                "start": 171,
+                "end": 263
+            }
+        ],
+        "staging/cli_legacy.c": [
+            {
+                "name": "transmit",
+                "start": 25,
+                "end": 141
+            }
+        ],
+        "staging/cli_eth.c": [
+            {
+                "name": "cmd_packet_mac_address_source",
+                "start": 28,
+                "end": 72
+            },
+            {
+                "name": "cmd_packet_mac_address_destination",
+                "start": 76,
+                "end": 116
+            },
+            {
+                "name": "cmd_eth_type",
+                "start": 123,
+                "end": 161
+            },
+            {
+                "name": "cmd_eth_length",
+                "start": 166,
+                "end": 200
+            },
+            {
+                "name": "cmd_eth_llc",
+                "start": 206,
+                "end": 220
+            },
+            {
+                "name": "cmd_eth_snap",
+                "start": 225,
+                "end": 269
+            }
+        ],
+        "staging/mops_tcp.c": [
+            {
+                "name": "mops_tcp_complexity_sqnr",
+                "start": 25,
+                "end": 41
+            },
+            {
+                "name": "mops_tcp_complexity_acknr",
+                "start": 45,
+                "end": 61
+            },
+            {
+                "name": "mops_tcp_option_remove_all",
+                "start": 69,
+                "end": 73
+            },
+            {
+                "name": "mops_tcp_flags2str",
+                "start": 80,
+                "end": 98
+            },
+            {
+                "name": "mops_tcp_add_option",
+                "start": 104,
+                "end": 153
+            }
+        ],
+        "staging/mops_ext_arp.c": [
+            {
+                "name": "mops_init_pdesc_arp",
+                "start": 27,
+                "end": 51
+            },
+            {
+                "name": "mops_update_arp",
+                "start": 92,
+                "end": 125
+            },
+            {
+                "name": "service_arp",
+                "start": 143,
+                "end": 239
+            }
+        ],
+        "staging/cli_interface.c": [
+            {
+                "name": "enter_interface",
+                "start": 29,
+                "end": 68
+            },
+            {
+                "name": "conf_ip_address",
+                "start": 72,
+                "end": 91
+            },
+            {
+                "name": "conf_mac_address",
+                "start": 95,
+                "end": 114
+            },
+            {
+                "name": "conf_tag_dot1q",
+                "start": 118,
+                "end": 127
+            },
+            {
+                "name": "conf_tag_mpls",
+                "start": 129,
+                "end": 138
+            }
+        ],
+        "staging/cli_dns.c": [
+            {
+                "name": "cmd_dns_query",
+                "start": 25,
+                "end": 29
+            },
+            {
+                "name": "cmd_dns_answer",
+                "start": 32,
+                "end": 36
+            },
+            {
+                "name": "cmd_dns_ttl",
+                "start": 39,
+                "end": 43
+            },
+            {
+                "name": "cmd_dns_end",
+                "start": 46,
+                "end": 52
+            }
+        ],
+        "staging/mops_checksums.c": [
+            {
+                "name": "mops_sum16",
+                "start": 48,
+                "end": 70
+            },
+            {
+                "name": "mops_get_transport_sum",
+                "start": 80,
+                "end": 127
+            }
+        ],
+        "staging/mausezahn.c": [
+            {
+                "name": "signal_handler",
+                "start": 38,
+                "end": 41
+            },
+            {
+                "name": "clean_up",
+                "start": 43,
+                "end": 102
+            },
+            {
+                "name": "help",
+                "start": 105,
+                "end": 170
+            },
+            {
+                "name": "version",
+                "start": 172,
+                "end": 185
+            },
+            {
+                "name": "reset",
+                "start": 187,
+                "end": 346
+            },
+            {
+                "name": "getopts",
+                "start": 351,
+                "end": 835
+            },
+            {
+                "name": "main",
+                "start": 837,
+                "end": 1015
+            }
+        ],
+        "staging/cli.c": [
+            {
+                "name": "mz_cli_init",
+                "start": 26,
+                "end": 44
+            },
+            {
+                "name": "cli_read_cfg",
+                "start": 50,
+                "end": 148
+            },
+            {
+                "name": "cli",
+                "start": 178,
+                "end": 568
+            }
+        ],
+        "staging/tools.c": [
+            {
+                "name": "getarg",
+                "start": 68,
+                "end": 106
+            },
+            {
+                "name": "str2int",
+                "start": 111,
+                "end": 126
+            },
+            {
+                "name": "str2lint",
+                "start": 132,
+                "end": 147
+            },
+            {
+                "name": "xstr2int",
+                "start": 152,
+                "end": 168
+            },
+            {
+                "name": "xstr2lint",
+                "start": 173,
+                "end": 188
+            },
+            {
+                "name": "get_ip_range_dst",
+                "start": 214,
+                "end": 286
+            },
+            {
+                "name": "get_ip_range_src",
+                "start": 312,
+                "end": 384
+            },
+            {
+                "name": "check_eth_mac_txt",
+                "start": 400,
+                "end": 483
+            },
+            {
+                "name": "get_port_range",
+                "start": 505,
+                "end": 594
+            },
+            {
+                "name": "get_tcp_flags",
+                "start": 606,
+                "end": 655
+            },
+            {
+                "name": "get_mpls_params",
+                "start": 679,
+                "end": 810
+            },
+            {
+                "name": "exists",
+                "start": 815,
+                "end": 831
+            },
+            {
+                "name": "mz_strisbinary",
+                "start": 841,
+                "end": 856
+            },
+            {
+                "name": "str2bin8",
+                "start": 868,
+                "end": 878
+            },
+            {
+                "name": "str2bin16",
+                "start": 889,
+                "end": 900
+            },
+            {
+                "name": "char2bits",
+                "start": 912,
+                "end": 925
+            },
+            {
+                "name": "getfullpath_cfg",
+                "start": 941,
+                "end": 969
+            },
+            {
+                "name": "getfullpath_log",
+                "start": 980,
+                "end": 1007
+            },
+            {
+                "name": "mz_strncpy",
+                "start": 1022,
+                "end": 1028
+            },
+            {
+                "name": "number_of_args",
+                "start": 1040,
+                "end": 1047
+            },
+            {
+                "name": "mz_strisnum",
+                "start": 1057,
+                "end": 1072
+            },
+            {
+                "name": "mz_strishex",
+                "start": 1081,
+                "end": 1096
+            },
+            {
+                "name": "mz_rand32",
+                "start": 1101,
+                "end": 1107
+            },
+            {
+                "name": "mz_strcmp",
+                "start": 1123,
+                "end": 1147
+            },
+            {
+                "name": "mz_tok",
+                "start": 1184,
+                "end": 1248
+            },
+            {
+                "name": "delay_parse",
+                "start": 1268,
+                "end": 1343
+            }
+        ],
+        "staging/cli_igmp.c": [
+            {
+                "name": "cmd_igmpv2_genquery",
+                "start": 26,
+                "end": 68
+            },
+            {
+                "name": "cmd_igmpv2_specquery",
+                "start": 71,
+                "end": 130
+            },
+            {
+                "name": "cmd_igmpv2_report",
+                "start": 136,
+                "end": 183
+            },
+            {
+                "name": "cmd_igmpv2_leave",
+                "start": 186,
+                "end": 233
+            },
+            {
+                "name": "cmd_igmpv1_query",
+                "start": 239,
+                "end": 271
+            },
+            {
+                "name": "cmd_igmpv1_report",
+                "start": 274,
+                "end": 321
+            }
+        ],
+        "staging/cli_launch.c": [
+            {
+                "name": "launch_bpdu",
+                "start": 27,
+                "end": 73
+            },
+            {
+                "name": "launch_synflood",
+                "start": 77,
+                "end": 141
+            }
+        ],
+        "staging/mops_dot1Q.c": [
+            {
+                "name": "mops_dot1Q_remove",
+                "start": 29,
+                "end": 62
+            },
+            {
+                "name": "mops_dot1Q_nocfi",
+                "start": 66,
+                "end": 75
+            },
+            {
+                "name": "mops_dot1Q_cfi",
+                "start": 79,
+                "end": 88
+            },
+            {
+                "name": "mops_dot1Q",
+                "start": 107,
+                "end": 130
+            }
+        ],
+        "staging/modifications.c": [
+            {
+                "name": "update_Eth_SA",
+                "start": 48,
+                "end": 73
+            },
+            {
+                "name": "update_RTP",
+                "start": 78,
+                "end": 118
+            },
+            {
+                "name": "update_IP_SA",
+                "start": 133,
+                "end": 190
+            },
+            {
+                "name": "update_IP_DA",
+                "start": 206,
+                "end": 262
+            },
+            {
+                "name": "update_DPORT",
+                "start": 276,
+                "end": 336
+            },
+            {
+                "name": "update_SPORT",
+                "start": 348,
+                "end": 408
+            },
+            {
+                "name": "update_USUM",
+                "start": 413,
+                "end": 452
+            },
+            {
+                "name": "update_TSUM",
+                "start": 454,
+                "end": 509
+            },
+            {
+                "name": "update_ISUM",
+                "start": 511,
+                "end": 549
+            },
+            {
+                "name": "update_TCP_SQNR",
+                "start": 557,
+                "end": 606
+            },
+            {
+                "name": "print_frame_details",
+                "start": 613,
+                "end": 697
+            }
+        ],
+        "staging/cli_packet.c": [
+            {
+                "name": "debug_packet",
+                "start": 25,
+                "end": 30
+            },
+            {
+                "name": "enter_packet",
+                "start": 40,
+                "end": 76
+            },
+            {
+                "name": "cmd_packet_type",
+                "start": 86,
+                "end": 295
+            },
+            {
+                "name": "cmd_packet_end",
+                "start": 301,
+                "end": 305
+            },
+            {
+                "name": "cmd_packet_clone",
+                "start": 311,
+                "end": 315
+            },
+            {
+                "name": "cmd_packet_name",
+                "start": 319,
+                "end": 350
+            },
+            {
+                "name": "cmd_packet_description",
+                "start": 352,
+                "end": 368
+            },
+            {
+                "name": "cmd_packet_count",
+                "start": 370,
+                "end": 393
+            },
+            {
+                "name": "cmd_packet_delay",
+                "start": 396,
+                "end": 435
+            },
+            {
+                "name": "cmd_packet_bind",
+                "start": 439,
+                "end": 475
+            },
+            {
+                "name": "cmd_packet_dot1q",
+                "start": 487,
+                "end": 665
+            },
+            {
+                "name": "cmd_packet_mpls",
+                "start": 684,
+                "end": 894
+            },
+            {
+                "name": "cmd_packet_payload_hex",
+                "start": 902,
+                "end": 970
+            },
+            {
+                "name": "cmd_packet_payload_ascii",
+                "start": 974,
+                "end": 1032
+            },
+            {
+                "name": "cmd_packet_payload_raw",
+                "start": 1035,
+                "end": 1039
+            },
+            {
+                "name": "cmd_packet_interval",
+                "start": 1043,
+                "end": 1120
+            }
+        ],
+        "staging/layer4.c": [
+            {
+                "name": "create_udp_packet",
+                "start": 143,
+                "end": 292
+            },
+            {
+                "name": "create_icmp_packet",
+                "start": 309,
+                "end": 543
+            },
+            {
+                "name": "create_icmp6_packet",
+                "start": 545,
+                "end": 661
+            },
+            {
+                "name": "create_tcp_packet",
+                "start": 674,
+                "end": 884
+            }
+        ],
+        "staging/cli_ip.c": [
+            {
+                "name": "cmd_ip_address_source",
+                "start": 54,
+                "end": 154
+            },
+            {
+                "name": "cmd_ip_address_destination",
+                "start": 159,
+                "end": 236
+            },
+            {
+                "name": "cmd_ip_version",
+                "start": 241,
+                "end": 262
+            },
+            {
+                "name": "cmd_ip_ttl",
+                "start": 266,
+                "end": 289
+            },
+            {
+                "name": "cmd_ip_protocol",
+                "start": 293,
+                "end": 315
+            },
+            {
+                "name": "cmd_ip_hlen",
+                "start": 321,
+                "end": 343
+            },
+            {
+                "name": "cmd_ip_len",
+                "start": 349,
+                "end": 371
+            },
+            {
+                "name": "cmd_ip_id",
+                "start": 377,
+                "end": 400
+            },
+            {
+                "name": "cmd_ip_offset",
+                "start": 407,
+                "end": 427
+            },
+            {
+                "name": "cmd_ip_sum",
+                "start": 433,
+                "end": 462
+            },
+            {
+                "name": "cmd_ip_tos",
+                "start": 470,
+                "end": 554
+            },
+            {
+                "name": "cmd_ip_dscp",
+                "start": 562,
+                "end": 595
+            },
+            {
+                "name": "cmd_ip_rsv",
+                "start": 601,
+                "end": 633
+            },
+            {
+                "name": "cmd_ip_df",
+                "start": 639,
+                "end": 673
+            },
+            {
+                "name": "cmd_ip_mf",
+                "start": 679,
+                "end": 712
+            },
+            {
+                "name": "cmd_ip_fragsize",
+                "start": 715,
+                "end": 751
+            },
+            {
+                "name": "cmd_ip_fragoverlap",
+                "start": 755,
+                "end": 788
+            },
+            {
+                "name": "cmd_ip_option",
+                "start": 794,
+                "end": 841
+            },
+            {
+                "name": "cmd_ip_delivery",
+                "start": 849,
+                "end": 878
+            },
+            {
+                "name": "cmd_ip_end",
+                "start": 882,
+                "end": 888
+            }
+        ],
+        "staging/cli_bpdu.c": [
+            {
+                "name": "cmd_bpdu_id",
+                "start": 27,
+                "end": 47
+            },
+            {
+                "name": "cmd_bpdu_version",
+                "start": 50,
+                "end": 68
+            },
+            {
+                "name": "cmd_bpdu_type",
+                "start": 72,
+                "end": 94
+            },
+            {
+                "name": "cmd_bpdu_flags",
+                "start": 97,
+                "end": 169
+            },
+            {
+                "name": "cmd_bpdu_rid",
+                "start": 179,
+                "end": 250
+            },
+            {
+                "name": "cmd_bpdu_pc",
+                "start": 257,
+                "end": 284
+            },
+            {
+                "name": "cmd_bpdu_bid",
+                "start": 289,
+                "end": 362
+            },
+            {
+                "name": "cmd_bpdu_pid",
+                "start": 368,
+                "end": 397
+            },
+            {
+                "name": "cmd_bpdu_age",
+                "start": 407,
+                "end": 460
+            },
+            {
+                "name": "cmd_bpdu_maxage",
+                "start": 468,
+                "end": 521
+            },
+            {
+                "name": "cmd_bpdu_hello",
+                "start": 527,
+                "end": 580
+            },
+            {
+                "name": "cmd_bpdu_fwd",
+                "start": 582,
+                "end": 636
+            },
+            {
+                "name": "cmd_bpdu_mode",
+                "start": 640,
+                "end": 701
+            },
+            {
+                "name": "cmd_bpdu_vlan",
+                "start": 706,
+                "end": 739
+            },
+            {
+                "name": "cmd_bpdu_end",
+                "start": 743,
+                "end": 749
+            }
+        ],
+        "staging/cli_set.c": [
+            {
+                "name": "cmd_set",
+                "start": 24,
+                "end": 350
+            }
+        ],
+        "staging/cdp.c": [
+            {
+                "name": "checksum16",
+                "start": 83,
+                "end": 105
+            },
+            {
+                "name": "create_tlv",
+                "start": 109,
+                "end": 130
+            },
+            {
+                "name": "send_cdp",
+                "start": 162,
+                "end": 769
+            }
+        ],
+        "staging/tx_switch.c": [
+            {
+                "name": "tx_switch",
+                "start": 24,
+                "end": 178
+            }
+        ],
+        "staging/cli_cmds.c": [
+            {
+                "name": "cmd_test",
+                "start": 31,
+                "end": 35
+            },
+            {
+                "name": "debug_all",
+                "start": 40,
+                "end": 60
+            },
+            {
+                "name": "clear_all",
+                "start": 67,
+                "end": 80
+            },
+            {
+                "name": "clear_packet",
+                "start": 83,
+                "end": 115
+            },
+            {
+                "name": "cmd_reset_packet",
+                "start": 118,
+                "end": 150
+            },
+            {
+                "name": "show_system",
+                "start": 155,
+                "end": 159
+            },
+            {
+                "name": "show_packets",
+                "start": 171,
+                "end": 638
+            },
+            {
+                "name": "show_interfaces",
+                "start": 642,
+                "end": 786
+            },
+            {
+                "name": "show_set",
+                "start": 791,
+                "end": 882
+            },
+            {
+                "name": "stop_mausezahn",
+                "start": 891,
+                "end": 914
+            },
+            {
+                "name": "cmd_run_id",
+                "start": 919,
+                "end": 961
+            },
+            {
+                "name": "cmd_run_name",
+                "start": 964,
+                "end": 1004
+            },
+            {
+                "name": "cmd_run_sequence",
+                "start": 1007,
+                "end": 1038
+            },
+            {
+                "name": "cmd_run_all",
+                "start": 1042,
+                "end": 1089
+            },
+            {
+                "name": "cmd_stop",
+                "start": 1093,
+                "end": 1179
+            },
+            {
+                "name": "show_mops",
+                "start": 1183,
+                "end": 1223
+            },
+            {
+                "name": "cmd_reset_interface",
+                "start": 1228,
+                "end": 1251
+            },
+            {
+                "name": "conf_frame_limit",
+                "start": 1256,
+                "end": 1309
+            },
+            {
+                "name": "cmd_load",
+                "start": 1314,
+                "end": 1345
+            },
+            {
+                "name": "show_arp",
+                "start": 1348,
+                "end": 1420
+            },
+            {
+                "name": "cmd_end_to_config",
+                "start": 1424,
+                "end": 1428
+            }
+        ],
+        "staging/syslog.c": [
+            {
+                "name": "create_syslog_packet",
+                "start": 74,
+                "end": 245
+            }
+        ],
+        "staging/cli_arp.c": [
+            {
+                "name": "cmd_arp_hwtype",
+                "start": 34,
+                "end": 48
+            },
+            {
+                "name": "cmd_arp_prtype",
+                "start": 52,
+                "end": 66
+            },
+            {
+                "name": "cmd_arp_hwaddrsize",
+                "start": 70,
+                "end": 84
+            },
+            {
+                "name": "cmd_arp_praddrsize",
+                "start": 87,
+                "end": 101
+            },
+            {
+                "name": "cmd_arp_opcode",
+                "start": 104,
+                "end": 129
+            },
+            {
+                "name": "cmd_arp_smac",
+                "start": 133,
+                "end": 149
+            },
+            {
+                "name": "cmd_arp_sip",
+                "start": 153,
+                "end": 167
+            },
+            {
+                "name": "cmd_arp_tmac",
+                "start": 171,
+                "end": 185
+            },
+            {
+                "name": "cmd_arp_tip",
+                "start": 189,
+                "end": 203
+            },
+            {
+                "name": "cmd_arp_trailer",
+                "start": 207,
+                "end": 221
+            },
+            {
+                "name": "cmd_arp_end",
+                "start": 225,
+                "end": 231
+            }
+        ],
+        "staging/lookupdev.c": [
+            {
+                "name": "lookupdev",
+                "start": 41,
+                "end": 149
+            },
+            {
+                "name": "get_if_addr",
+                "start": 161,
+                "end": 189
+            },
+            {
+                "name": "get_dev_params",
+                "start": 203,
+                "end": 356
+            }
+        ],
+        "staging/mops_ip.c": [
+            {
+                "name": "mops_ip_get_dst_mac",
+                "start": 52,
+                "end": 83
+            },
+            {
+                "name": "mops_ip_dscp",
+                "start": 109,
+                "end": 165
+            },
+            {
+                "name": "mops_ip_tos",
+                "start": 190,
+                "end": 214
+            },
+            {
+                "name": "mops_ip_option_remove_all",
+                "start": 282,
+                "end": 287
+            },
+            {
+                "name": "mops_ip_option_nop",
+                "start": 291,
+                "end": 295
+            },
+            {
+                "name": "mops_ip_option_eol",
+                "start": 298,
+                "end": 302
+            },
+            {
+                "name": "mops_ip_option_lsr",
+                "start": 307,
+                "end": 311
+            },
+            {
+                "name": "mops_ip_option_ssr",
+                "start": 314,
+                "end": 318
+            },
+            {
+                "name": "mops_ip_option_rr",
+                "start": 321,
+                "end": 325
+            },
+            {
+                "name": "mops_ip_option_ts",
+                "start": 328,
+                "end": 332
+            },
+            {
+                "name": "mops_ip_option_sec",
+                "start": 391,
+                "end": 395
+            },
+            {
+                "name": "mops_ip_option_ra",
+                "start": 423,
+                "end": 447
+            }
+        ],
+        "staging/mops.c": [
+            {
+                "name": "mops_init",
+                "start": 55,
+                "end": 71
+            },
+            {
+                "name": "mops_alloc_packet",
+                "start": 86,
+                "end": 141
+            },
+            {
+                "name": "mops_delete_packet",
+                "start": 153,
+                "end": 184
+            },
+            {
+                "name": "mops_reset_packet",
+                "start": 191,
+                "end": 225
+            },
+            {
+                "name": "mops_dump_all",
+                "start": 233,
+                "end": 263
+            },
+            {
+                "name": "mops_search_name",
+                "start": 271,
+                "end": 285
+            },
+            {
+                "name": "mops_search_id",
+                "start": 291,
+                "end": 303
+            },
+            {
+                "name": "mops_delete_all",
+                "start": 314,
+                "end": 349
+            },
+            {
+                "name": "mops_cleanup",
+                "start": 354,
+                "end": 363
+            },
+            {
+                "name": "mops_set_defaults",
+                "start": 376,
+                "end": 510
+            },
+            {
+                "name": "mops_print_frame",
+                "start": 518,
+                "end": 555
+            },
+            {
+                "name": "mops_get_new_pkt_id",
+                "start": 567,
+                "end": 595
+            },
+            {
+                "name": "mops_clear_layers",
+                "start": 614,
+                "end": 654
+            },
+            {
+                "name": "mops_get_device_index",
+                "start": 665,
+                "end": 676
+            },
+            {
+                "name": "mops_use_device",
+                "start": 684,
+                "end": 694
+            },
+            {
+                "name": "mops_get_proto_info",
+                "start": 706,
+                "end": 767
+            }
+        ],
+        "staging/send_eth.c": [
+            {
+                "name": "create_eth_frame",
+                "start": 34,
+                "end": 464
+            },
+            {
+                "name": "print_dot1Q_help",
+                "start": 468,
+                "end": 489
+            }
+        ],
+        "staging/cli_sequence.c": [
+            {
+                "name": "conf_sequence",
+                "start": 31,
+                "end": 82
+            },
+            {
+                "name": "sequence_add",
+                "start": 86,
+                "end": 115
+            },
+            {
+                "name": "sequence_delay",
+                "start": 119,
+                "end": 173
+            },
+            {
+                "name": "sequence_remove",
+                "start": 177,
+                "end": 215
+            },
+            {
+                "name": "sequence_show",
+                "start": 219,
+                "end": 261
+            }
+        ],
+        "staging/cli_tools.c": [
+            {
+                "name": "mz_def16",
+                "start": 33,
+                "end": 38
+            }
+        ],
+        "staging/mops_ext_lldp.c": [
+            {
+                "name": "mops_init_pdesc_lldp",
+                "start": 28,
+                "end": 60
+            },
+            {
+                "name": "mops_update_lldp",
+                "start": 64,
+                "end": 107
+            },
+            {
+                "name": "mops_lldp_tlv",
+                "start": 155,
+                "end": 169
+            },
+            {
+                "name": "mops_lldp_opt_tlv",
+                "start": 180,
+                "end": 195
+            },
+            {
+                "name": "mops_lldp_tlv_chassis",
+                "start": 212,
+                "end": 222
+            },
+            {
+                "name": "mops_lldp_opt_tlv_chassis",
+                "start": 225,
+                "end": 233
+            },
+            {
+                "name": "mops_lldp_tlv_port",
+                "start": 251,
+                "end": 260
+            },
+            {
+                "name": "mops_lldp_opt_tlv_port",
+                "start": 263,
+                "end": 271
+            },
+            {
+                "name": "mops_lldp_tlv_TTL",
+                "start": 287,
+                "end": 297
+            },
+            {
+                "name": "mops_lldp_opt_tlv_TTL",
+                "start": 301,
+                "end": 311
+            },
+            {
+                "name": "mops_lldp_tlv_end",
+                "start": 326,
+                "end": 331
+            },
+            {
+                "name": "mops_lldp_opt_tlv_end",
+                "start": 334,
+                "end": 347
+            },
+            {
+                "name": "mops_lldp_opt_tlv_bad",
+                "start": 366,
+                "end": 390
+            },
+            {
+                "name": "mops_lldp_opt_tlv_org",
+                "start": 400,
+                "end": 419
+            },
+            {
+                "name": "mops_lldp_opt_tlv_vlan",
+                "start": 422,
+                "end": 429
+            }
+        ],
+        "staging/rcv_rtp.c": [
+            {
+                "name": "rcv_rtp_init",
+                "start": 43,
+                "end": 273
+            },
+            {
+                "name": "rcv_rtp",
+                "start": 284,
+                "end": 344
+            },
+            {
+                "name": "compare4B",
+                "start": 351,
+                "end": 359
+            },
+            {
+                "name": "got_rtp_packet",
+                "start": 366,
+                "end": 628
+            },
+            {
+                "name": "print_jitterbar",
+                "start": 633,
+                "end": 768
+            }
+        ],
+        "staging/mopsrx_arp.c": [
+            {
+                "name": "mops_rx_arp",
+                "start": 29,
+                "end": 49
+            },
+            {
+                "name": "rx_arp",
+                "start": 59,
+                "end": 113
+            },
+            {
+                "name": "got_arp_packet",
+                "start": 116,
+                "end": 184
+            },
+            {
+                "name": "arptable_add",
+                "start": 194,
+                "end": 277
+            },
+            {
+                "name": "arpwatch",
+                "start": 282,
+                "end": 300
+            }
+        ],
+        "staging/parse_xml.c": [
+            {
+                "name": "xml_tag2int",
+                "start": 30,
+                "end": 93
+            },
+            {
+                "name": "xml_check_parent",
+                "start": 100,
+                "end": 142
+            },
+            {
+                "name": "parse_protocol",
+                "start": 150,
+                "end": 200
+            },
+            {
+                "name": "xml_getnext_tag",
+                "start": 222,
+                "end": 291
+            },
+            {
+                "name": "xml_get_data",
+                "start": 299,
+                "end": 326
+            },
+            {
+                "name": "xml_canonic",
+                "start": 338,
+                "end": 428
+            },
+            {
+                "name": "xml_readin",
+                "start": 444,
+                "end": 506
+            },
+            {
+                "name": "xnstack_init",
+                "start": 529,
+                "end": 532
+            },
+            {
+                "name": "xnstack_get_top",
+                "start": 536,
+                "end": 540
+            },
+            {
+                "name": "xnstack_push",
+                "start": 544,
+                "end": 551
+            },
+            {
+                "name": "xnstack_pop",
+                "start": 556,
+                "end": 562
+            },
+            {
+                "name": "xnstack_size",
+                "start": 564,
+                "end": 567
+            }
+        ],
+        "staging/cli_lldp.c": [
+            {
+                "name": "cmd_lldp_conformance",
+                "start": 26,
+                "end": 54
+            },
+            {
+                "name": "cmd_lldp_chassis_id",
+                "start": 57,
+                "end": 100
+            },
+            {
+                "name": "cmd_lldp_port_id",
+                "start": 105,
+                "end": 149
+            },
+            {
+                "name": "cmd_lldp_ttl",
+                "start": 153,
+                "end": 185
+            },
+            {
+                "name": "cmd_lldp_vlan",
+                "start": 189,
+                "end": 216
+            },
+            {
+                "name": "cmd_lldp_opt_tlv",
+                "start": 220,
+                "end": 265
+            },
+            {
+                "name": "cmd_lldp_opt_tlv_bad",
+                "start": 270,
+                "end": 330
+            },
+            {
+                "name": "cmd_lldp_opt_org",
+                "start": 334,
+                "end": 393
+            },
+            {
+                "name": "cmd_lldp_endtlv",
+                "start": 399,
+                "end": 415
+            },
+            {
+                "name": "cmd_lldp_reset",
+                "start": 418,
+                "end": 434
+            }
+        ],
+        "staging/mops_ext_bpdu.c": [
+            {
+                "name": "mops_init_pdesc_bpdu",
+                "start": 27,
+                "end": 80
+            },
+            {
+                "name": "mops_update_bpdu",
+                "start": 103,
+                "end": 154
+            },
+            {
+                "name": "mops_create_bpdu_bid",
+                "start": 176,
+                "end": 221
+            },
+            {
+                "name": "mops_create_bpdu_trailer",
+                "start": 224,
+                "end": 242
+            }
+        ],
+        "staging/hextools.c": [
+            {
+                "name": "str2hex_mac",
+                "start": 46,
+                "end": 73
+            },
+            {
+                "name": "str2hex",
+                "start": 86,
+                "end": 111
+            },
+            {
+                "name": "num2hex",
+                "start": 120,
+                "end": 148
+            },
+            {
+                "name": "bs2str",
+                "start": 155,
+                "end": 171
+            },
+            {
+                "name": "getbytes",
+                "start": 177,
+                "end": 198
+            },
+            {
+                "name": "str2ip32",
+                "start": 203,
+                "end": 233
+            },
+            {
+                "name": "str2ip32_rev",
+                "start": 238,
+                "end": 268
+            },
+            {
+                "name": "type2str",
+                "start": 276,
+                "end": 321
+            }
+        ],
+        "staging/time.c": [
+            {
+                "name": "check_timer",
+                "start": 27,
+                "end": 52
+            },
+            {
+                "name": "getcurtime",
+                "start": 62,
+                "end": 68
+            },
+            {
+                "name": "timestamp_subtract",
+                "start": 84,
+                "end": 110
+            },
+            {
+                "name": "timestamp_add",
+                "start": 115,
+                "end": 127
+            },
+            {
+                "name": "timestamp_human",
+                "start": 148,
+                "end": 176
+            },
+            {
+                "name": "timestamp_hms",
+                "start": 189,
+                "end": 206
+            }
+        ],
+        "staging/layer3.c": [
+            {
+                "name": "get_link_context",
+                "start": 107,
+                "end": 137
+            },
+            {
+                "name": "create_ip_packet",
+                "start": 142,
+                "end": 455
+            },
+            {
+                "name": "create_ip6_packet",
+                "start": 459,
+                "end": 733
+            }
+        ],
+        "staging/cli_tcp.c": [
+            {
+                "name": "cmd_tcp_seqnr",
+                "start": 30,
+                "end": 87
+            },
+            {
+                "name": "cmd_tcp_acknr",
+                "start": 93,
+                "end": 151
+            },
+            {
+                "name": "cmd_tcp_offset",
+                "start": 158,
+                "end": 178
+            },
+            {
+                "name": "cmd_tcp_res",
+                "start": 183,
+                "end": 203
+            },
+            {
+                "name": "cmd_tcp_flags",
+                "start": 206,
+                "end": 297
+            },
+            {
+                "name": "cmd_tcp_cwr",
+                "start": 301,
+                "end": 331
+            },
+            {
+                "name": "cmd_tcp_ece",
+                "start": 335,
+                "end": 362
+            },
+            {
+                "name": "cmd_tcp_urg",
+                "start": 366,
+                "end": 393
+            },
+            {
+                "name": "cmd_tcp_ack",
+                "start": 398,
+                "end": 426
+            },
+            {
+                "name": "cmd_tcp_psh",
+                "start": 430,
+                "end": 457
+            },
+            {
+                "name": "cmd_tcp_rst",
+                "start": 461,
+                "end": 488
+            },
+            {
+                "name": "cmd_tcp_syn",
+                "start": 492,
+                "end": 519
+            },
+            {
+                "name": "cmd_tcp_fin",
+                "start": 523,
+                "end": 550
+            },
+            {
+                "name": "cmd_tcp_window",
+                "start": 554,
+                "end": 576
+            },
+            {
+                "name": "cmd_tcp_sum",
+                "start": 580,
+                "end": 609
+            },
+            {
+                "name": "cmd_tcp_urgptr",
+                "start": 613,
+                "end": 636
+            },
+            {
+                "name": "cmd_tcp_options",
+                "start": 640,
+                "end": 669
+            },
+            {
+                "name": "cmd_tcp_end",
+                "start": 673,
+                "end": 679
+            }
+        ],
+        "staging/mops_tools.c": [
+            {
+                "name": "mops_flags",
+                "start": 37,
+                "end": 40
+            },
+            {
+                "name": "mops_hton2",
+                "start": 44,
+                "end": 52
+            },
+            {
+                "name": "mops_hton4",
+                "start": 55,
+                "end": 65
+            },
+            {
+                "name": "mops_get_counter",
+                "start": 72,
+                "end": 83
+            },
+            {
+                "name": "mops_msg_add_byte",
+                "start": 87,
+                "end": 91
+            },
+            {
+                "name": "mops_msg_add_field",
+                "start": 95,
+                "end": 99
+            },
+            {
+                "name": "mops_msg_add_2bytes",
+                "start": 103,
+                "end": 110
+            },
+            {
+                "name": "mops_msg_add_4bytes",
+                "start": 114,
+                "end": 123
+            },
+            {
+                "name": "mops_msg_add_string",
+                "start": 126,
+                "end": 132
+            },
+            {
+                "name": "mops_msg_add_counter",
+                "start": 137,
+                "end": 186
+            },
+            {
+                "name": "compare_ip",
+                "start": 196,
+                "end": 204
+            },
+            {
+                "name": "compare_mac",
+                "start": 209,
+                "end": 219
+            },
+            {
+                "name": "timespec2str",
+                "start": 225,
+                "end": 258
+            }
+        ],
+        "staging/mops_ext_igmp.c": [
+            {
+                "name": "mops_init_pdesc_igmp",
+                "start": 27,
+                "end": 42
+            },
+            {
+                "name": "mops_create_igmpv2",
+                "start": 70,
+                "end": 130
+            },
+            {
+                "name": "mops_update_igmp",
+                "start": 140,
+                "end": 189
+            }
+        ],
+        "staging/layer1.c": [
+            {
+                "name": "send_eth",
+                "start": 33,
+                "end": 355
+            }
+        ],
+        "staging/directmops.c": [
+            {
+                "name": "mops_direct",
+                "start": 25,
+                "end": 30
+            }
+        ],
+        "staging/mops_ext.c": [
+            {
+                "name": "mops_ext_add_pdesc",
+                "start": 36,
+                "end": 110
+            },
+            {
+                "name": "mops_ext_del_pdesc",
+                "start": 117,
+                "end": 165
+            },
+            {
+                "name": "mops_ext_update",
+                "start": 170,
+                "end": 205
+            },
+            {
+                "name": "mops_pdesc_mstrings",
+                "start": 238,
+                "end": 261
+            },
+            {
+                "name": "mops_pdesc_1byte",
+                "start": 269,
+                "end": 294
+            },
+            {
+                "name": "mops_pdesc_2byte",
+                "start": 300,
+                "end": 325
+            },
+            {
+                "name": "mops_pdesc_4byte",
+                "start": 330,
+                "end": 355
+            },
+            {
+                "name": "mops_pdesc_mac",
+                "start": 364,
+                "end": 379
+            },
+            {
+                "name": "mops_pdesc_ip",
+                "start": 384,
+                "end": 411
+            },
+            {
+                "name": "mops_init_pdesc_cdp",
+                "start": 427,
+                "end": 433
+            },
+            {
+                "name": "mops_init_pdesc_dns",
+                "start": 436,
+                "end": 442
+            },
+            {
+                "name": "mops_init_pdesc_icmp",
+                "start": 445,
+                "end": 451
+            },
+            {
+                "name": "mops_init_pdesc_syslog",
+                "start": 455,
+                "end": 460
+            }
+        ]
+    }
+}

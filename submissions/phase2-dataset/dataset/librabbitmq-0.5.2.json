@@ -1,0 +1,2129 @@
+{
+    "librabbitmq-0.5.2": {
+        "coverity/model.c": [
+            {
+                "name": "amqp_abort",
+                "start": 3,
+                "end": 6
+            },
+            {
+                "name": "die_on_amqp_error",
+                "start": 8,
+                "end": 11
+            },
+            {
+                "name": "die_on_error",
+                "start": 13,
+                "end": 16
+            }
+        ],
+        "tests/test_tables.c": [
+            {
+                "name": "die",
+                "start": 52,
+                "end": 60
+            },
+            {
+                "name": "dump_indent",
+                "start": 62,
+                "end": 69
+            },
+            {
+                "name": "dump_value",
+                "start": 71,
+                "end": 170
+            },
+            {
+                "name": "test_dump_value",
+                "start": 172,
+                "end": 220
+            },
+            {
+                "name": "test_table_codec",
+                "start": 258,
+                "end": 411
+            },
+            {
+                "name": "compare_files",
+                "start": 415,
+                "end": 442
+            },
+            {
+                "name": "main",
+                "start": 446,
+                "end": 480
+            }
+        ],
+        "tests/test_parse_url.c": [
+            {
+                "name": "match_string",
+                "start": 47,
+                "end": 54
+            },
+            {
+                "name": "match_int",
+                "start": 56,
+                "end": 63
+            },
+            {
+                "name": "parse_success",
+                "start": 65,
+                "end": 92
+            },
+            {
+                "name": "parse_fail",
+                "start": 94,
+                "end": 108
+            },
+            {
+                "name": "main",
+                "start": 110,
+                "end": 253
+            }
+        ],
+        "tests/test_hostcheck.c": [
+            {
+                "name": "hostcheck_success",
+                "start": 35,
+                "end": 48
+            },
+            {
+                "name": "hostcheck_fail",
+                "start": 50,
+                "end": 63
+            },
+            {
+                "name": "main",
+                "start": 65,
+                "end": 78
+            }
+        ],
+        "librabbitmq/amqp.h": [
+            {
+                "name": "amqp_version_number",
+                "start": 293,
+                "end": 295
+            },
+            {
+                "name": "amqp_version",
+                "start": 308,
+                "end": 310
+            },
+            {
+                "name": "init_amqp_pool",
+                "start": 814,
+                "end": 816
+            },
+            {
+                "name": "recycle_amqp_pool",
+                "start": 838,
+                "end": 840
+            },
+            {
+                "name": "empty_amqp_pool",
+                "start": 851,
+                "end": 853
+            },
+            {
+                "name": "amqp_pool_alloc",
+                "start": 871,
+                "end": 873
+            },
+            {
+                "name": "amqp_pool_alloc_bytes",
+                "start": 894,
+                "end": 896
+            },
+            {
+                "name": "amqp_cstring_bytes",
+                "start": 916,
+                "end": 918
+            },
+            {
+                "name": "amqp_bytes_malloc_dup",
+                "start": 936,
+                "end": 938
+            },
+            {
+                "name": "amqp_bytes_malloc",
+                "start": 954,
+                "end": 956
+            },
+            {
+                "name": "amqp_bytes_free",
+                "start": 972,
+                "end": 974
+            },
+            {
+                "name": "amqp_new_connection",
+                "start": 988,
+                "end": 990
+            },
+            {
+                "name": "amqp_get_sockfd",
+                "start": 1009,
+                "end": 1011
+            },
+            {
+                "name": "amqp_set_sockfd",
+                "start": 1031,
+                "end": 1035
+            },
+            {
+                "name": "amqp_tune_connection",
+                "start": 1070,
+                "end": 1075
+            },
+            {
+                "name": "amqp_get_channel_max",
+                "start": 1088,
+                "end": 1090
+            },
+            {
+                "name": "amqp_destroy_connection",
+                "start": 1109,
+                "end": 1111
+            },
+            {
+                "name": "amqp_handle_input",
+                "start": 1154,
+                "end": 1158
+            },
+            {
+                "name": "amqp_release_buffers_ok",
+                "start": 1177,
+                "end": 1179
+            },
+            {
+                "name": "amqp_release_buffers",
+                "start": 1205,
+                "end": 1207
+            },
+            {
+                "name": "amqp_maybe_release_buffers",
+                "start": 1226,
+                "end": 1228
+            },
+            {
+                "name": "amqp_maybe_release_buffers_on_channel",
+                "start": 1250,
+                "end": 1253
+            },
+            {
+                "name": "amqp_send_frame",
+                "start": 1276,
+                "end": 1278
+            },
+            {
+                "name": "amqp_table_entry_cmp",
+                "start": 1291,
+                "end": 1293
+            },
+            {
+                "name": "amqp_open_socket",
+                "start": 1322,
+                "end": 1324
+            },
+            {
+                "name": "amqp_send_header",
+                "start": 1347,
+                "end": 1349
+            },
+            {
+                "name": "amqp_frames_enqueued",
+                "start": 1367,
+                "end": 1369
+            },
+            {
+                "name": "amqp_simple_wait_frame",
+                "start": 1422,
+                "end": 1425
+            },
+            {
+                "name": "amqp_simple_wait_frame_noblock",
+                "start": 1488,
+                "end": 1492
+            },
+            {
+                "name": "amqp_simple_wait_method",
+                "start": 1534,
+                "end": 1539
+            },
+            {
+                "name": "amqp_send_method",
+                "start": 1567,
+                "end": 1572
+            },
+            {
+                "name": "amqp_simple_rpc",
+                "start": 1606,
+                "end": 1612
+            },
+            {
+                "name": "amqp_simple_rpc_decoded",
+                "start": 1628,
+                "end": 1634
+            },
+            {
+                "name": "amqp_get_rpc_reply",
+                "start": 1675,
+                "end": 1677
+            },
+            {
+                "name": "amqp_login",
+                "start": 1729,
+                "end": 1733
+            },
+            {
+                "name": "amqp_login_with_properties",
+                "start": 1787,
+                "end": 1791
+            },
+            {
+                "name": "amqp_basic_publish",
+                "start": 1841,
+                "end": 1847
+            },
+            {
+                "name": "amqp_channel_close",
+                "start": 1859,
+                "end": 1862
+            },
+            {
+                "name": "amqp_connection_close",
+                "start": 1877,
+                "end": 1879
+            },
+            {
+                "name": "amqp_basic_ack",
+                "start": 1896,
+                "end": 1899
+            },
+            {
+                "name": "amqp_basic_get",
+                "start": 1917,
+                "end": 1920
+            },
+            {
+                "name": "amqp_basic_reject",
+                "start": 1937,
+                "end": 1940
+            },
+            {
+                "name": "amqp_basic_nack",
+                "start": 1961,
+                "end": 1965
+            },
+            {
+                "name": "amqp_data_in_buffer",
+                "start": 1978,
+                "end": 1980
+            },
+            {
+                "name": "amqp_error_string",
+                "start": 1997,
+                "end": 2001
+            },
+            {
+                "name": "amqp_error_string2",
+                "start": 2015,
+                "end": 2017
+            },
+            {
+                "name": "amqp_decode_table",
+                "start": 2040,
+                "end": 2043
+            },
+            {
+                "name": "amqp_encode_table",
+                "start": 2064,
+                "end": 2066
+            },
+            {
+                "name": "amqp_table_clone",
+                "start": 2087,
+                "end": 2089
+            },
+            {
+                "name": "amqp_read_message",
+                "start": 2120,
+                "end": 2124
+            },
+            {
+                "name": "amqp_destroy_message",
+                "start": 2133,
+                "end": 2135
+            },
+            {
+                "name": "amqp_consume_message",
+                "start": 2182,
+                "end": 2186
+            },
+            {
+                "name": "amqp_destroy_envelope",
+                "start": 2195,
+                "end": 2197
+            },
+            {
+                "name": "amqp_default_connection_info",
+                "start": 2228,
+                "end": 2230
+            },
+            {
+                "name": "amqp_parse_url",
+                "start": 2254,
+                "end": 2256
+            },
+            {
+                "name": "amqp_socket_open",
+                "start": 2276,
+                "end": 2279
+            },
+            {
+                "name": "amqp_socket_open_noblock",
+                "start": 2298,
+                "end": 2301
+            },
+            {
+                "name": "amqp_socket_get_sockfd",
+                "start": 2318,
+                "end": 2321
+            },
+            {
+                "name": "amqp_get_socket",
+                "start": 2331,
+                "end": 2333
+            },
+            {
+                "name": "amqp_get_server_properties",
+                "start": 2345,
+                "end": 2347
+            }
+        ],
+        "librabbitmq/amqp_framing.h": [
+            {
+                "name": "amqp_constant_name",
+                "start": 76,
+                "end": 78
+            },
+            {
+                "name": "amqp_constant_is_hard_error",
+                "start": 80,
+                "end": 82
+            },
+            {
+                "name": "amqp_method_name",
+                "start": 84,
+                "end": 86
+            },
+            {
+                "name": "amqp_method_has_content",
+                "start": 88,
+                "end": 90
+            },
+            {
+                "name": "amqp_decode_method",
+                "start": 92,
+                "end": 97
+            },
+            {
+                "name": "amqp_decode_properties",
+                "start": 99,
+                "end": 104
+            },
+            {
+                "name": "amqp_encode_method",
+                "start": 106,
+                "end": 110
+            },
+            {
+                "name": "amqp_encode_properties",
+                "start": 112,
+                "end": 116
+            }
+        ],
+        "librabbitmq/amqp_private.h": [
+            {
+                "name": "amqp_os_error_string",
+                "start": 84,
+                "end": 85
+            },
+            {
+                "name": "amqp_heartbeat_enabled",
+                "start": 184,
+                "end": 187
+            },
+            {
+                "name": "amqp_calc_next_send_heartbeat",
+                "start": 189,
+                "end": 192
+            },
+            {
+                "name": "amqp_calc_next_recv_heartbeat",
+                "start": 194,
+                "end": 197
+            },
+            {
+                "name": "amqp_offset",
+                "start": 201,
+                "end": 204
+            },
+            {
+                "name": "amqp_encode_bytes",
+                "start": 334,
+                "end": 344
+            },
+            {
+                "name": "amqp_decode_bytes",
+                "start": 346,
+                "end": 357
+            },
+            {
+                "name": "amqp_abort",
+                "start": 359,
+                "end": 361
+            }
+        ],
+        "librabbitmq/amqp_socket.h": [
+            {
+                "name": "amqp_os_socket_error",
+                "start": 39,
+                "end": 40
+            },
+            {
+                "name": "amqp_os_socket_close",
+                "start": 42,
+                "end": 43
+            },
+            {
+                "name": "amqp_set_socket",
+                "start": 91,
+                "end": 92
+            },
+            {
+                "name": "amqp_socket_writev",
+                "start": 108,
+                "end": 109
+            },
+            {
+                "name": "amqp_socket_send",
+                "start": 125,
+                "end": 126
+            },
+            {
+                "name": "amqp_socket_recv",
+                "start": 140,
+                "end": 141
+            },
+            {
+                "name": "amqp_socket_close",
+                "start": 154,
+                "end": 155
+            },
+            {
+                "name": "amqp_socket_delete",
+                "start": 162,
+                "end": 163
+            },
+            {
+                "name": "amqp_open_socket_noblock",
+                "start": 179,
+                "end": 180
+            },
+            {
+                "name": "amqp_queue_frame",
+                "start": 182,
+                "end": 183
+            },
+            {
+                "name": "amqp_put_back_frame",
+                "start": 185,
+                "end": 186
+            },
+            {
+                "name": "amqp_simple_wait_frame_on_channel",
+                "start": 188,
+                "end": 191
+            }
+        ],
+        "librabbitmq/amqp_timer.h": [
+            {
+                "name": "amqp_get_monotonic_timestamp",
+                "start": 60,
+                "end": 61
+            },
+            {
+                "name": "amqp_timer_update",
+                "start": 64,
+                "end": 65
+            }
+        ],
+        "librabbitmq/amqp_socket.c": [
+            {
+                "name": "amqp_os_socket_init",
+                "start": 76,
+                "end": 95
+            },
+            {
+                "name": "amqp_os_socket_socket",
+                "start": 97,
+                "end": 127
+            },
+            {
+                "name": "amqp_os_socket_setsockopt",
+                "start": 129,
+                "end": 140
+            },
+            {
+                "name": "amqp_os_socket_setsockblock",
+                "start": 142,
+                "end": 172
+            },
+            {
+                "name": "amqp_os_socket_error",
+                "start": 175,
+                "end": 183
+            },
+            {
+                "name": "amqp_os_socket_close",
+                "start": 185,
+                "end": 193
+            },
+            {
+                "name": "amqp_socket_writev",
+                "start": 195,
+                "end": 201
+            },
+            {
+                "name": "amqp_socket_send",
+                "start": 203,
+                "end": 209
+            },
+            {
+                "name": "amqp_socket_recv",
+                "start": 211,
+                "end": 217
+            },
+            {
+                "name": "amqp_socket_open",
+                "start": 219,
+                "end": 225
+            },
+            {
+                "name": "amqp_socket_open_noblock",
+                "start": 227,
+                "end": 233
+            },
+            {
+                "name": "amqp_socket_close",
+                "start": 235,
+                "end": 241
+            },
+            {
+                "name": "amqp_socket_delete",
+                "start": 243,
+                "end": 250
+            },
+            {
+                "name": "amqp_socket_get_sockfd",
+                "start": 252,
+                "end": 258
+            },
+            {
+                "name": "amqp_open_socket",
+                "start": 260,
+                "end": 265
+            },
+            {
+                "name": "amqp_open_socket_noblock",
+                "start": 267,
+                "end": 453
+            },
+            {
+                "name": "amqp_send_header",
+                "start": 455,
+                "end": 463
+            },
+            {
+                "name": "sasl_method_name",
+                "start": 465,
+                "end": 480
+            },
+            {
+                "name": "sasl_response",
+                "start": 482,
+                "end": 516
+            },
+            {
+                "name": "amqp_frames_enqueued",
+                "start": 518,
+                "end": 521
+            },
+            {
+                "name": "amqp_data_in_buffer",
+                "start": 527,
+                "end": 530
+            },
+            {
+                "name": "consume_one_frame",
+                "start": 532,
+                "end": 548
+            },
+            {
+                "name": "recv_with_timeout",
+                "start": 551,
+                "end": 632
+            },
+            {
+                "name": "amqp_try_recv",
+                "start": 634,
+                "end": 682
+            },
+            {
+                "name": "wait_frame_inner",
+                "start": 684,
+                "end": 801
+            },
+            {
+                "name": "amqp_create_link_for_frame",
+                "start": 803,
+                "end": 825
+            },
+            {
+                "name": "amqp_queue_frame",
+                "start": 827,
+                "end": 844
+            },
+            {
+                "name": "amqp_put_back_frame",
+                "start": 846,
+                "end": 863
+            },
+            {
+                "name": "amqp_simple_wait_frame_on_channel",
+                "start": 865,
+                "end": 904
+            },
+            {
+                "name": "amqp_simple_wait_frame",
+                "start": 906,
+                "end": 910
+            },
+            {
+                "name": "amqp_simple_wait_frame_noblock",
+                "start": 912,
+                "end": 927
+            },
+            {
+                "name": "amqp_simple_wait_method",
+                "start": 929,
+                "end": 948
+            },
+            {
+                "name": "amqp_send_method",
+                "start": 950,
+                "end": 962
+            },
+            {
+                "name": "amqp_id_in_reply_list",
+                "start": 964,
+                "end": 973
+            },
+            {
+                "name": "amqp_simple_rpc",
+                "start": 975,
+                "end": 1064
+            },
+            {
+                "name": "amqp_simple_rpc_decoded",
+                "start": 1066,
+                "end": 1085
+            },
+            {
+                "name": "amqp_get_rpc_reply",
+                "start": 1087,
+                "end": 1090
+            },
+            {
+                "name": "amqp_table_contains_entry",
+                "start": 1093,
+                "end": 1111
+            },
+            {
+                "name": "amqp_login_inner",
+                "start": 1113,
+                "end": 1345
+            },
+            {
+                "name": "amqp_login",
+                "start": 1347,
+                "end": 1366
+            },
+            {
+                "name": "amqp_login_with_properties",
+                "start": 1368,
+                "end": 1388
+            }
+        ],
+        "librabbitmq/amqp_framing.c": [
+            {
+                "name": "amqp_constant_name",
+                "start": 48,
+                "end": 77
+            },
+            {
+                "name": "amqp_constant_is_hard_error",
+                "start": 79,
+                "end": 94
+            },
+            {
+                "name": "amqp_method_name",
+                "start": 96,
+                "end": 164
+            },
+            {
+                "name": "amqp_method_has_content",
+                "start": 166,
+                "end": 174
+            },
+            {
+                "name": "amqp_decode_method",
+                "start": 176,
+                "end": 1011
+            },
+            {
+                "name": "amqp_decode_properties",
+                "start": 1013,
+                "end": 1185
+            },
+            {
+                "name": "amqp_encode_method",
+                "start": 1187,
+                "end": 1762
+            },
+            {
+                "name": "amqp_encode_properties",
+                "start": 1764,
+                "end": 1881
+            },
+            {
+                "name": "amqp_channel_open",
+                "start": 1883,
+                "end": 1889
+            },
+            {
+                "name": "amqp_channel_flow",
+                "start": 1892,
+                "end": 1898
+            },
+            {
+                "name": "amqp_exchange_declare",
+                "start": 1901,
+                "end": 1915
+            },
+            {
+                "name": "amqp_exchange_delete",
+                "start": 1918,
+                "end": 1927
+            },
+            {
+                "name": "amqp_exchange_bind",
+                "start": 1930,
+                "end": 1941
+            },
+            {
+                "name": "amqp_exchange_unbind",
+                "start": 1944,
+                "end": 1955
+            },
+            {
+                "name": "amqp_queue_declare",
+                "start": 1958,
+                "end": 1971
+            },
+            {
+                "name": "amqp_queue_bind",
+                "start": 1974,
+                "end": 1985
+            },
+            {
+                "name": "amqp_queue_purge",
+                "start": 1988,
+                "end": 1996
+            },
+            {
+                "name": "amqp_queue_delete",
+                "start": 1999,
+                "end": 2009
+            },
+            {
+                "name": "amqp_queue_unbind",
+                "start": 2012,
+                "end": 2022
+            },
+            {
+                "name": "amqp_basic_qos",
+                "start": 2025,
+                "end": 2033
+            },
+            {
+                "name": "amqp_basic_consume",
+                "start": 2036,
+                "end": 2049
+            },
+            {
+                "name": "amqp_basic_cancel",
+                "start": 2052,
+                "end": 2059
+            },
+            {
+                "name": "amqp_basic_recover",
+                "start": 2062,
+                "end": 2068
+            },
+            {
+                "name": "amqp_tx_select",
+                "start": 2071,
+                "end": 2076
+            },
+            {
+                "name": "amqp_tx_commit",
+                "start": 2079,
+                "end": 2084
+            },
+            {
+                "name": "amqp_tx_rollback",
+                "start": 2087,
+                "end": 2092
+            },
+            {
+                "name": "amqp_confirm_select",
+                "start": 2095,
+                "end": 2101
+            }
+        ],
+        "librabbitmq/amqp_timer.c": [
+            {
+                "name": "amqp_get_monotonic_timestamp",
+                "start": 91,
+                "end": 104
+            },
+            {
+                "name": "amqp_timer_update",
+                "start": 107,
+                "end": 140
+            }
+        ],
+        "librabbitmq/amqp_ssl_socket.h": [
+            {
+                "name": "amqp_ssl_socket_new",
+                "start": 57,
+                "end": 60
+            },
+            {
+                "name": "amqp_ssl_socket_set_cacert",
+                "start": 73,
+                "end": 77
+            },
+            {
+                "name": "amqp_ssl_socket_set_key",
+                "start": 91,
+                "end": 96
+            },
+            {
+                "name": "amqp_ssl_socket_set_key_buffer",
+                "start": 111,
+                "end": 117
+            },
+            {
+                "name": "amqp_ssl_socket_set_verify",
+                "start": 131,
+                "end": 135
+            },
+            {
+                "name": "amqp_set_initialize_ssl_library",
+                "start": 161,
+                "end": 164
+            }
+        ],
+        "librabbitmq/amqp_cyassl.c": [
+            {
+                "name": "amqp_ssl_socket_send",
+                "start": 49,
+                "end": 65
+            },
+            {
+                "name": "amqp_ssl_socket_writev",
+                "start": 67,
+                "end": 100
+            },
+            {
+                "name": "amqp_ssl_socket_recv",
+                "start": 102,
+                "end": 118
+            },
+            {
+                "name": "amqp_ssl_socket_get_sockfd",
+                "start": 120,
+                "end": 125
+            },
+            {
+                "name": "amqp_ssl_socket_close",
+                "start": 127,
+                "end": 142
+            },
+            {
+                "name": "amqp_ssl_socket_error",
+                "start": 144,
+                "end": 149
+            },
+            {
+                "name": "amqp_ssl_error_string",
+                "start": 151,
+                "end": 155
+            },
+            {
+                "name": "amqp_ssl_socket_open",
+                "start": 157,
+                "end": 182
+            },
+            {
+                "name": "amqp_ssl_socket_new",
+                "start": 194,
+                "end": 211
+            },
+            {
+                "name": "amqp_ssl_socket_set_cacert",
+                "start": 213,
+                "end": 228
+            },
+            {
+                "name": "amqp_ssl_socket_set_key",
+                "start": 230,
+                "end": 248
+            },
+            {
+                "name": "amqp_ssl_socket_set_key_buffer",
+                "start": 250,
+                "end": 258
+            },
+            {
+                "name": "amqp_ssl_socket_set_verify",
+                "start": 260,
+                "end": 265
+            },
+            {
+                "name": "amqp_set_initialize_ssl_library",
+                "start": 267,
+                "end": 270
+            }
+        ],
+        "librabbitmq/amqp_polarssl.c": [
+            {
+                "name": "amqp_ssl_socket_send",
+                "start": 58,
+                "end": 74
+            },
+            {
+                "name": "amqp_ssl_socket_writev",
+                "start": 76,
+                "end": 110
+            },
+            {
+                "name": "amqp_ssl_socket_recv",
+                "start": 112,
+                "end": 128
+            },
+            {
+                "name": "amqp_ssl_socket_open",
+                "start": 130,
+                "end": 172
+            },
+            {
+                "name": "amqp_ssl_socket_close",
+                "start": 174,
+                "end": 199
+            },
+            {
+                "name": "amqp_ssl_socket_error",
+                "start": 201,
+                "end": 205
+            },
+            {
+                "name": "amqp_ssl_error_string",
+                "start": 207,
+                "end": 211
+            },
+            {
+                "name": "amqp_ssl_socket_get_sockfd",
+                "start": 213,
+                "end": 218
+            },
+            {
+                "name": "amqp_ssl_socket_new",
+                "start": 230,
+                "end": 280
+            },
+            {
+                "name": "amqp_ssl_socket_set_cacert",
+                "start": 282,
+                "end": 301
+            },
+            {
+                "name": "amqp_ssl_socket_set_key",
+                "start": 303,
+                "end": 331
+            },
+            {
+                "name": "amqp_ssl_socket_set_key_buffer",
+                "start": 333,
+                "end": 341
+            },
+            {
+                "name": "amqp_ssl_socket_set_verify",
+                "start": 343,
+                "end": 357
+            },
+            {
+                "name": "amqp_set_initialize_ssl_library",
+                "start": 359,
+                "end": 362
+            }
+        ],
+        "librabbitmq/amqp_url.c": [
+            {
+                "name": "amqp_default_connection_info",
+                "start": 47,
+                "end": 56
+            },
+            {
+                "name": "find_delim",
+                "start": 59,
+                "end": 108
+            },
+            {
+                "name": "amqp_parse_url",
+                "start": 111,
+                "end": 218
+            }
+        ],
+        "librabbitmq/amqp_tcp_socket.h": [
+            {
+                "name": "amqp_tcp_socket_new",
+                "start": 49,
+                "end": 52
+            },
+            {
+                "name": "amqp_tcp_socket_set_sockfd",
+                "start": 66,
+                "end": 69
+            }
+        ],
+        "librabbitmq/amqp_tcp_socket.c": [
+            {
+                "name": "amqp_tcp_socket_send_inner",
+                "start": 44,
+                "end": 79
+            },
+            {
+                "name": "amqp_tcp_socket_send",
+                "start": 81,
+                "end": 85
+            },
+            {
+                "name": "amqp_tcp_socket_writev",
+                "start": 87,
+                "end": 197
+            },
+            {
+                "name": "amqp_tcp_socket_recv",
+                "start": 199,
+                "end": 220
+            },
+            {
+                "name": "amqp_tcp_socket_open",
+                "start": 222,
+                "end": 233
+            },
+            {
+                "name": "amqp_tcp_socket_close",
+                "start": 235,
+                "end": 248
+            },
+            {
+                "name": "amqp_tcp_socket_get_sockfd",
+                "start": 250,
+                "end": 255
+            },
+            {
+                "name": "amqp_tcp_socket_delete",
+                "start": 257,
+                "end": 267
+            },
+            {
+                "name": "amqp_tcp_socket_new",
+                "start": 279,
+                "end": 292
+            },
+            {
+                "name": "amqp_tcp_socket_set_sockfd",
+                "start": 294,
+                "end": 303
+            }
+        ],
+        "librabbitmq/amqp_hostcheck.c": [
+            {
+                "name": "amqp_raw_toupper",
+                "start": 34,
+                "end": 92
+            },
+            {
+                "name": "amqp_raw_equal",
+                "start": 104,
+                "end": 120
+            },
+            {
+                "name": "amqp_raw_nequal",
+                "start": 122,
+                "end": 137
+            },
+            {
+                "name": "amqp_hostmatch",
+                "start": 148,
+                "end": 187
+            },
+            {
+                "name": "amqp_hostcheck",
+                "start": 189,
+                "end": 201
+            }
+        ],
+        "librabbitmq/amqp_hostcheck.h": [
+            {
+                "name": "amqp_hostcheck",
+                "start": 33,
+                "end": 34
+            }
+        ],
+        "librabbitmq/amqp_openssl.c": [
+            {
+                "name": "amqp_ssl_socket_send",
+                "start": 77,
+                "end": 108
+            },
+            {
+                "name": "amqp_ssl_socket_writev",
+                "start": 110,
+                "end": 141
+            },
+            {
+                "name": "amqp_ssl_socket_recv",
+                "start": 143,
+                "end": 168
+            },
+            {
+                "name": "amqp_ssl_socket_verify_hostname",
+                "start": 170,
+                "end": 227
+            },
+            {
+                "name": "amqp_ssl_socket_open",
+                "start": 229,
+                "end": 297
+            },
+            {
+                "name": "amqp_ssl_socket_close",
+                "start": 299,
+                "end": 319
+            },
+            {
+                "name": "amqp_ssl_socket_get_sockfd",
+                "start": 321,
+                "end": 326
+            },
+            {
+                "name": "amqp_ssl_socket_delete",
+                "start": 328,
+                "end": 341
+            },
+            {
+                "name": "amqp_ssl_socket_new",
+                "start": 353,
+                "end": 382
+            },
+            {
+                "name": "amqp_ssl_socket_set_cacert",
+                "start": 384,
+                "end": 399
+            },
+            {
+                "name": "amqp_ssl_socket_set_key",
+                "start": 401,
+                "end": 422
+            },
+            {
+                "name": "password_cb",
+                "start": 424,
+                "end": 432
+            },
+            {
+                "name": "amqp_ssl_socket_set_key_buffer",
+                "start": 434,
+                "end": 471
+            },
+            {
+                "name": "amqp_ssl_socket_set_cert",
+                "start": 473,
+                "end": 488
+            },
+            {
+                "name": "amqp_ssl_socket_set_verify",
+                "start": 490,
+                "end": 500
+            },
+            {
+                "name": "amqp_set_initialize_ssl_library",
+                "start": 502,
+                "end": 508
+            },
+            {
+                "name": "initialize_openssl",
+                "start": 534,
+                "end": 598
+            },
+            {
+                "name": "destroy_openssl",
+                "start": 600,
+                "end": 626
+            }
+        ],
+        "librabbitmq/amqp_api.c": [
+            {
+                "name": "amqp_error_string2",
+                "start": 92,
+                "end": 131
+            },
+            {
+                "name": "amqp_error_string",
+                "start": 133,
+                "end": 146
+            },
+            {
+                "name": "amqp_abort",
+                "start": 148,
+                "end": 156
+            },
+            {
+                "name": "amqp_basic_publish",
+                "start": 167,
+                "end": 252
+            },
+            {
+                "name": "amqp_channel_close",
+                "start": 254,
+                "end": 270
+            },
+            {
+                "name": "amqp_connection_close",
+                "start": 272,
+                "end": 287
+            },
+            {
+                "name": "amqp_basic_ack",
+                "start": 289,
+                "end": 298
+            },
+            {
+                "name": "amqp_basic_get",
+                "start": 300,
+                "end": 318
+            },
+            {
+                "name": "amqp_basic_reject",
+                "start": 320,
+                "end": 329
+            },
+            {
+                "name": "amqp_basic_nack",
+                "start": 331,
+                "end": 340
+            }
+        ],
+        "librabbitmq/amqp_consumer.c": [
+            {
+                "name": "amqp_basic_properties_clone",
+                "start": 37,
+                "end": 117
+            },
+            {
+                "name": "amqp_destroy_message",
+                "start": 120,
+                "end": 124
+            },
+            {
+                "name": "amqp_destroy_envelope",
+                "start": 126,
+                "end": 132
+            },
+            {
+                "name": "amqp_bytes_malloc_dup_failed",
+                "start": 134,
+                "end": 140
+            },
+            {
+                "name": "amqp_consume_message",
+                "start": 142,
+                "end": 200
+            },
+            {
+                "name": "amqp_read_message",
+                "start": 202,
+                "end": 308
+            }
+        ],
+        "librabbitmq/amqp_mem.c": [
+            {
+                "name": "amqp_version",
+                "start": 49,
+                "end": 52
+            },
+            {
+                "name": "amqp_version_number",
+                "start": 54,
+                "end": 57
+            },
+            {
+                "name": "init_amqp_pool",
+                "start": 59,
+                "end": 72
+            },
+            {
+                "name": "empty_blocklist",
+                "start": 74,
+                "end": 86
+            },
+            {
+                "name": "recycle_amqp_pool",
+                "start": 88,
+                "end": 94
+            },
+            {
+                "name": "empty_amqp_pool",
+                "start": 96,
+                "end": 100
+            },
+            {
+                "name": "record_pool_block",
+                "start": 103,
+                "end": 123
+            },
+            {
+                "name": "amqp_pool_alloc",
+                "start": 125,
+                "end": 171
+            },
+            {
+                "name": "amqp_pool_alloc_bytes",
+                "start": 173,
+                "end": 177
+            },
+            {
+                "name": "amqp_cstring_bytes",
+                "start": 179,
+                "end": 185
+            },
+            {
+                "name": "amqp_bytes_malloc_dup",
+                "start": 187,
+                "end": 196
+            },
+            {
+                "name": "amqp_bytes_malloc",
+                "start": 198,
+                "end": 204
+            },
+            {
+                "name": "amqp_bytes_free",
+                "start": 206,
+                "end": 209
+            },
+            {
+                "name": "amqp_get_or_create_channel_pool",
+                "start": 211,
+                "end": 236
+            },
+            {
+                "name": "amqp_get_channel_pool",
+                "start": 238,
+                "end": 252
+            }
+        ],
+        "librabbitmq/amqp_table.c": [
+            {
+                "name": "amqp_decode_field_value",
+                "start": 51,
+                "end": 54
+            },
+            {
+                "name": "amqp_encode_field_value",
+                "start": 56,
+                "end": 58
+            },
+            {
+                "name": "amqp_decode_array",
+                "start": 62,
+                "end": 120
+            },
+            {
+                "name": "amqp_decode_table",
+                "start": 122,
+                "end": 192
+            },
+            {
+                "name": "amqp_decode_field_value",
+                "start": 194,
+                "end": 282
+            },
+            {
+                "name": "amqp_encode_array",
+                "start": 286,
+                "end": 311
+            },
+            {
+                "name": "amqp_encode_table",
+                "start": 313,
+                "end": 348
+            },
+            {
+                "name": "amqp_encode_field_value",
+                "start": 350,
+                "end": 441
+            },
+            {
+                "name": "amqp_table_entry_cmp",
+                "start": 445,
+                "end": 464
+            },
+            {
+                "name": "amqp_field_value_clone",
+                "start": 466,
+                "end": 566
+            },
+            {
+                "name": "amqp_table_entry_clone",
+                "start": 569,
+                "end": 584
+            },
+            {
+                "name": "amqp_table_clone",
+                "start": 586,
+                "end": 614
+            }
+        ],
+        "librabbitmq/amqp_connection.c": [
+            {
+                "name": "amqp_new_connection",
+                "start": 70,
+                "end": 107
+            },
+            {
+                "name": "amqp_get_sockfd",
+                "start": 109,
+                "end": 112
+            },
+            {
+                "name": "amqp_set_sockfd",
+                "start": 114,
+                "end": 122
+            },
+            {
+                "name": "amqp_set_socket",
+                "start": 124,
+                "end": 128
+            },
+            {
+                "name": "amqp_get_socket",
+                "start": 130,
+                "end": 134
+            },
+            {
+                "name": "amqp_tune_connection",
+                "start": 136,
+                "end": 166
+            },
+            {
+                "name": "amqp_get_channel_max",
+                "start": 168,
+                "end": 171
+            },
+            {
+                "name": "amqp_destroy_connection",
+                "start": 173,
+                "end": 195
+            },
+            {
+                "name": "return_to_idle",
+                "start": 197,
+                "end": 204
+            },
+            {
+                "name": "consume_data",
+                "start": 206,
+                "end": 222
+            },
+            {
+                "name": "amqp_handle_input",
+                "start": 224,
+                "end": 399
+            },
+            {
+                "name": "amqp_release_buffers_ok",
+                "start": 401,
+                "end": 404
+            },
+            {
+                "name": "amqp_release_buffers",
+                "start": 406,
+                "end": 418
+            },
+            {
+                "name": "amqp_maybe_release_buffers",
+                "start": 420,
+                "end": 425
+            },
+            {
+                "name": "amqp_maybe_release_buffers_on_channel",
+                "start": 427,
+                "end": 451
+            },
+            {
+                "name": "amqp_send_frame",
+                "start": 453,
+                "end": 539
+            },
+            {
+                "name": "amqp_get_server_properties",
+                "start": 540,
+                "end": 544
+            }
+        ],
+        "librabbitmq/amqp_gnutls.c": [
+            {
+                "name": "amqp_ssl_socket_send",
+                "start": 51,
+                "end": 66
+            },
+            {
+                "name": "amqp_ssl_socket_writev",
+                "start": 68,
+                "end": 101
+            },
+            {
+                "name": "amqp_ssl_socket_recv",
+                "start": 103,
+                "end": 119
+            },
+            {
+                "name": "amqp_ssl_socket_open",
+                "start": 121,
+                "end": 151
+            },
+            {
+                "name": "amqp_ssl_socket_close",
+                "start": 153,
+                "end": 169
+            },
+            {
+                "name": "amqp_ssl_socket_error",
+                "start": 171,
+                "end": 176
+            },
+            {
+                "name": "amqp_ssl_error_string",
+                "start": 178,
+                "end": 182
+            },
+            {
+                "name": "amqp_ssl_socket_get_sockfd",
+                "start": 184,
+                "end": 189
+            },
+            {
+                "name": "amqp_ssl_verify",
+                "start": 191,
+                "end": 242
+            },
+            {
+                "name": "amqp_ssl_socket_new",
+                "start": 254,
+                "end": 289
+            },
+            {
+                "name": "amqp_ssl_socket_set_cacert",
+                "start": 291,
+                "end": 308
+            },
+            {
+                "name": "amqp_ssl_socket_set_key",
+                "start": 310,
+                "end": 329
+            },
+            {
+                "name": "amqp_ssl_socket_set_key_buffer",
+                "start": 331,
+                "end": 339
+            },
+            {
+                "name": "amqp_ssl_socket_set_verify",
+                "start": 341,
+                "end": 357
+            },
+            {
+                "name": "amqp_set_initialize_ssl_library",
+                "start": 359,
+                "end": 362
+            }
+        ],
+        "librabbitmq/win32/threads.c": [
+            {
+                "name": "pthread_self",
+                "start": 26,
+                "end": 30
+            },
+            {
+                "name": "pthread_mutex_init",
+                "start": 32,
+                "end": 41
+            },
+            {
+                "name": "pthread_mutex_lock",
+                "start": 43,
+                "end": 52
+            },
+            {
+                "name": "pthread_mutex_unlock",
+                "start": 54,
+                "end": 63
+            }
+        ],
+        "tools/common.h": [
+            {
+                "name": "die",
+                "start": 47,
+                "end": 48
+            },
+            {
+                "name": "die_errno",
+                "start": 49,
+                "end": 50
+            },
+            {
+                "name": "die_amqp_error",
+                "start": 51,
+                "end": 52
+            },
+            {
+                "name": "die_rpc",
+                "start": 53,
+                "end": 54
+            },
+            {
+                "name": "process_options",
+                "start": 69,
+                "end": 71
+            },
+            {
+                "name": "process_all_options",
+                "start": 72,
+                "end": 73
+            }
+        ],
+        "tools/delete_queue.c": [
+            {
+                "name": "main",
+                "start": 48,
+                "end": 93
+            }
+        ],
+        "tools/common.c": [
+            {
+                "name": "die",
+                "start": 58,
+                "end": 66
+            },
+            {
+                "name": "die_errno",
+                "start": 68,
+                "end": 81
+            },
+            {
+                "name": "die_amqp_error",
+                "start": 83,
+                "end": 96
+            },
+            {
+                "name": "amqp_server_exception_string",
+                "start": 98,
+                "end": 131
+            },
+            {
+                "name": "amqp_rpc_reply_string",
+                "start": 133,
+                "end": 151
+            },
+            {
+                "name": "die_rpc",
+                "start": 153,
+                "end": 166
+            },
+            {
+                "name": "init_connection_info",
+                "start": 228,
+                "end": 322
+            },
+            {
+                "name": "make_connection",
+                "start": 324,
+                "end": 366
+            },
+            {
+                "name": "close_connection",
+                "start": 368,
+                "end": 378
+            },
+            {
+                "name": "read_all",
+                "start": 380,
+                "end": 411
+            },
+            {
+                "name": "write_all",
+                "start": 413,
+                "end": 424
+            },
+            {
+                "name": "copy_body",
+                "start": 426,
+                "end": 450
+            },
+            {
+                "name": "process_options",
+                "start": 452,
+                "end": 473
+            },
+            {
+                "name": "process_all_options",
+                "start": 475,
+                "end": 489
+            },
+            {
+                "name": "cstring_bytes",
+                "start": 491,
+                "end": 494
+            }
+        ],
+        "tools/declare_queue.c": [
+            {
+                "name": "main",
+                "start": 48,
+                "end": 92
+            }
+        ],
+        "tools/get.c": [
+            {
+                "name": "do_get",
+                "start": 45,
+                "end": 57
+            },
+            {
+                "name": "main",
+                "start": 59,
+                "end": 86
+            }
+        ],
+        "tools/publish.c": [
+            {
+                "name": "do_publish",
+                "start": 49,
+                "end": 58
+            },
+            {
+                "name": "main",
+                "start": 60,
+                "end": 166
+            }
+        ],
+        "tools/consume.c": [
+            {
+                "name": "stringify_bytes",
+                "start": 53,
+                "end": 74
+            },
+            {
+                "name": "setup_queue",
+                "start": 76,
+                "end": 142
+            },
+            {
+                "name": "do_consume",
+                "start": 146,
+                "end": 201
+            },
+            {
+                "name": "main",
+                "start": 203,
+                "end": 277
+            }
+        ],
+        "tools/unix/process.c": [
+            {
+                "name": "pipeline",
+                "start": 51,
+                "end": 81
+            },
+            {
+                "name": "finish_pipeline",
+                "start": 83,
+                "end": 94
+            }
+        ],
+        "tools/win32/compat.c": [
+            {
+                "name": "asprintf",
+                "start": 47,
+                "end": 67
+            }
+        ],
+        "tools/win32/process.c": [
+            {
+                "name": "die_windows_error",
+                "start": 48,
+                "end": 67
+            },
+            {
+                "name": "make_command_line",
+                "start": 69,
+                "end": 151
+            },
+            {
+                "name": "pipeline",
+                "start": 153,
+                "end": 205
+            },
+            {
+                "name": "finish_pipeline",
+                "start": 207,
+                "end": 234
+            }
+        ],
+        "examples/utils.c": [
+            {
+                "name": "die",
+                "start": 49,
+                "end": 57
+            },
+            {
+                "name": "die_on_error",
+                "start": 59,
+                "end": 65
+            },
+            {
+                "name": "die_on_amqp_error",
+                "start": 67,
+                "end": 107
+            },
+            {
+                "name": "dump_row",
+                "start": 109,
+                "end": 138
+            },
+            {
+                "name": "rows_eq",
+                "start": 140,
+                "end": 150
+            },
+            {
+                "name": "amqp_dump",
+                "start": 152,
+                "end": 194
+            }
+        ],
+        "examples/amqps_sendstring.c": [
+            {
+                "name": "main",
+                "start": 50,
+                "end": 123
+            }
+        ],
+        "examples/amqps_unbind.c": [
+            {
+                "name": "main",
+                "start": 50,
+                "end": 114
+            }
+        ],
+        "examples/amqps_bind.c": [
+            {
+                "name": "main",
+                "start": 50,
+                "end": 114
+            }
+        ],
+        "examples/amqp_bind.c": [
+            {
+                "name": "main",
+                "start": 48,
+                "end": 97
+            }
+        ],
+        "examples/amqp_rpc_sendstring_client.c": [
+            {
+                "name": "main",
+                "start": 50,
+                "end": 246
+            }
+        ],
+        "examples/amqps_exchange_declare.c": [
+            {
+                "name": "main",
+                "start": 50,
+                "end": 109
+            }
+        ],
+        "examples/amqps_consumer.c": [
+            {
+                "name": "run",
+                "start": 54,
+                "end": 148
+            },
+            {
+                "name": "main",
+                "start": 150,
+                "end": 227
+            }
+        ],
+        "examples/amqp_sendstring.c": [
+            {
+                "name": "main",
+                "start": 48,
+                "end": 106
+            }
+        ],
+        "examples/amqp_listen.c": [
+            {
+                "name": "main",
+                "start": 50,
+                "end": 142
+            }
+        ],
+        "examples/amqps_connect_timeout.c": [
+            {
+                "name": "main",
+                "start": 64,
+                "end": 132
+            }
+        ],
+        "examples/amqp_unbind.c": [
+            {
+                "name": "main",
+                "start": 48,
+                "end": 97
+            }
+        ],
+        "examples/amqp_connect_timeout.c": [
+            {
+                "name": "main",
+                "start": 61,
+                "end": 110
+            }
+        ],
+        "examples/amqps_listenq.c": [
+            {
+                "name": "main",
+                "start": 52,
+                "end": 140
+            }
+        ],
+        "examples/amqp_exchange_declare.c": [
+            {
+                "name": "main",
+                "start": 48,
+                "end": 92
+            }
+        ],
+        "examples/amqp_consumer.c": [
+            {
+                "name": "run",
+                "start": 52,
+                "end": 145
+            },
+            {
+                "name": "main",
+                "start": 147,
+                "end": 210
+            }
+        ],
+        "examples/amqps_producer.c": [
+            {
+                "name": "send_batch",
+                "start": 52,
+                "end": 112
+            },
+            {
+                "name": "main",
+                "start": 114,
+                "end": 171
+            }
+        ],
+        "examples/amqp_listenq.c": [
+            {
+                "name": "main",
+                "start": 50,
+                "end": 123
+            }
+        ],
+        "examples/amqp_producer.c": [
+            {
+                "name": "send_batch",
+                "start": 50,
+                "end": 110
+            },
+            {
+                "name": "main",
+                "start": 112,
+                "end": 154
+            }
+        ],
+        "examples/amqps_listen.c": [
+            {
+                "name": "main",
+                "start": 52,
+                "end": 159
+            }
+        ],
+        "examples/unix/platform_utils.c": [
+            {
+                "name": "now_microseconds",
+                "start": 45,
+                "end": 50
+            },
+            {
+                "name": "microsleep",
+                "start": 52,
+                "end": 55
+            }
+        ],
+        "examples/win32/platform_utils.c": [
+            {
+                "name": "now_microseconds",
+                "start": 41,
+                "end": 47
+            },
+            {
+                "name": "microsleep",
+                "start": 49,
+                "end": 52
+            }
+        ]
+    }
+}

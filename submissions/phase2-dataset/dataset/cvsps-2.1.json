@@ -1,0 +1,737 @@
+{
+    "cvsps-2.1": {
+        "cbtcommon/debug.h": [
+            {
+                "name": "debug",
+                "start": 46,
+                "end": 56
+            },
+            {
+                "name": "mdebug",
+                "start": 58,
+                "end": 68
+            }
+        ],
+        "util.c": [
+            {
+                "name": "readfile",
+                "start": 29,
+                "end": 50
+            },
+            {
+                "name": "strrep",
+                "start": 52,
+                "end": 63
+            },
+            {
+                "name": "get_cvsps_dir",
+                "start": 65,
+                "end": 104
+            },
+            {
+                "name": "xstrdup",
+                "start": 106,
+                "end": 118
+            },
+            {
+                "name": "strzncpy",
+                "start": 120,
+                "end": 124
+            },
+            {
+                "name": "get_string",
+                "start": 126,
+                "end": 142
+            },
+            {
+                "name": "get_int_substr",
+                "start": 144,
+                "end": 150
+            },
+            {
+                "name": "mktime_utc",
+                "start": 152,
+                "end": 171
+            },
+            {
+                "name": "convert_date",
+                "start": 173,
+                "end": 216
+            },
+            {
+                "name": "timing_start",
+                "start": 220,
+                "end": 223
+            },
+            {
+                "name": "timing_stop",
+                "start": 225,
+                "end": 235
+            },
+            {
+                "name": "my_system",
+                "start": 240,
+                "end": 265
+            },
+            {
+                "name": "escape_filename",
+                "start": 267,
+                "end": 291
+            }
+        ],
+        "cvs_direct.c": [
+            {
+                "name": "open_cvs_server",
+                "start": 53,
+                "end": 174
+            },
+            {
+                "name": "open_ctx_pserver",
+                "start": 176,
+                "end": 257
+            },
+            {
+                "name": "open_ctx_forked",
+                "start": 259,
+                "end": 358
+            },
+            {
+                "name": "close_cvs_server",
+                "start": 360,
+                "end": 490
+            },
+            {
+                "name": "get_cvspass",
+                "start": 492,
+                "end": 536
+            },
+            {
+                "name": "send_string",
+                "start": 538,
+                "end": 603
+            },
+            {
+                "name": "refill_buffer",
+                "start": 605,
+                "end": 662
+            },
+            {
+                "name": "read_line",
+                "start": 664,
+                "end": 685
+            },
+            {
+                "name": "read_response",
+                "start": 687,
+                "end": 698
+            },
+            {
+                "name": "ctx_to_fp",
+                "start": 700,
+                "end": 725
+            },
+            {
+                "name": "cvs_rdiff",
+                "start": 727,
+                "end": 742
+            },
+            {
+                "name": "cvs_rupdate",
+                "start": 744,
+                "end": 769
+            },
+            {
+                "name": "parse_patch_arg",
+                "start": 771,
+                "end": 804
+            },
+            {
+                "name": "cvs_diff",
+                "start": 806,
+                "end": 846
+            },
+            {
+                "name": "cvs_rlog_open",
+                "start": 856,
+                "end": 875
+            },
+            {
+                "name": "cvs_rlog_fgets",
+                "start": 877,
+                "end": 902
+            },
+            {
+                "name": "cvs_rlog_close",
+                "start": 904,
+                "end": 906
+            },
+            {
+                "name": "cvs_version",
+                "start": 908,
+                "end": 925
+            }
+        ],
+        "cbtcommon/list.h": [
+            {
+                "name": "__list_add",
+                "start": 48,
+                "end": 56
+            },
+            {
+                "name": "list_add",
+                "start": 61,
+                "end": 64
+            },
+            {
+                "name": "__list_del",
+                "start": 73,
+                "end": 78
+            },
+            {
+                "name": "list_del",
+                "start": 80,
+                "end": 83
+            },
+            {
+                "name": "list_empty",
+                "start": 85,
+                "end": 88
+            },
+            {
+                "name": "list_splice",
+                "start": 93,
+                "end": 107
+            }
+        ],
+        "cvsps.c": [
+            {
+                "name": "main",
+                "start": 149,
+                "end": 257
+            },
+            {
+                "name": "load_from_cvs",
+                "start": 259,
+                "end": 554
+            },
+            {
+                "name": "usage",
+                "start": 556,
+                "end": 606
+            },
+            {
+                "name": "parse_args",
+                "start": 608,
+                "end": 914
+            },
+            {
+                "name": "parse_rc",
+                "start": 916,
+                "end": 950
+            },
+            {
+                "name": "init_paths",
+                "start": 952,
+                "end": 1058
+            },
+            {
+                "name": "parse_file",
+                "start": 1060,
+                "end": 1160
+            },
+            {
+                "name": "get_patch_set",
+                "start": 1162,
+                "end": 1240
+            },
+            {
+                "name": "get_branch_ext",
+                "start": 1242,
+                "end": 1260
+            },
+            {
+                "name": "get_branch",
+                "start": 1262,
+                "end": 1265
+            },
+            {
+                "name": "assign_pre_revision",
+                "start": 1275,
+                "end": 1345
+            },
+            {
+                "name": "check_print_patch_set",
+                "start": 1347,
+                "end": 1439
+            },
+            {
+                "name": "print_patch_set",
+                "start": 1441,
+                "end": 1487
+            },
+            {
+                "name": "assign_patchset_id",
+                "start": 1492,
+                "end": 1518
+            },
+            {
+                "name": "compare_rev_strings",
+                "start": 1520,
+                "end": 1557
+            },
+            {
+                "name": "compare_patch_sets_by_members",
+                "start": 1559,
+                "end": 1581
+            },
+            {
+                "name": "compare_patch_sets_bk",
+                "start": 1583,
+                "end": 1592
+            },
+            {
+                "name": "compare_patch_sets",
+                "start": 1594,
+                "end": 1651
+            },
+            {
+                "name": "compare_patch_sets_bytime_list",
+                "start": 1653,
+                "end": 1658
+            },
+            {
+                "name": "compare_patch_sets_bytime",
+                "start": 1660,
+                "end": 1688
+            },
+            {
+                "name": "is_revision_metadata",
+                "start": 1691,
+                "end": 1711
+            },
+            {
+                "name": "patch_set_member_regex",
+                "start": 1713,
+                "end": 1728
+            },
+            {
+                "name": "patch_set_affects_branch",
+                "start": 1730,
+                "end": 1753
+            },
+            {
+                "name": "do_cvs_diff",
+                "start": 1755,
+                "end": 1905
+            },
+            {
+                "name": "parse_revision",
+                "start": 1907,
+                "end": 1921
+            },
+            {
+                "name": "cvs_file_add_revision",
+                "start": 1923,
+                "end": 1992
+            },
+            {
+                "name": "create_cvsfile",
+                "start": 1994,
+                "end": 2017
+            },
+            {
+                "name": "create_patch_set",
+                "start": 2019,
+                "end": 2041
+            },
+            {
+                "name": "create_patch_set_member",
+                "start": 2043,
+                "end": 2052
+            },
+            {
+                "name": "create_patch_set_range",
+                "start": 2054,
+                "end": 2058
+            },
+            {
+                "name": "file_get_revision",
+                "start": 2060,
+                "end": 2076
+            },
+            {
+                "name": "parse_sym",
+                "start": 2089,
+                "end": 2145
+            },
+            {
+                "name": "cvs_file_add_symbol",
+                "start": 2147,
+                "end": 2180
+            },
+            {
+                "name": "cvs_file_add_branch",
+                "start": 2182,
+                "end": 2202
+            },
+            {
+                "name": "resolve_global_symbols",
+                "start": 2217,
+                "end": 2323
+            },
+            {
+                "name": "revision_affects_branch",
+                "start": 2325,
+                "end": 2365
+            },
+            {
+                "name": "count_dots",
+                "start": 2367,
+                "end": 2376
+            },
+            {
+                "name": "is_vendor_branch",
+                "start": 2383,
+                "end": 2386
+            },
+            {
+                "name": "patch_set_add_member",
+                "start": 2388,
+                "end": 2403
+            },
+            {
+                "name": "set_psm_initial",
+                "start": 2405,
+                "end": 2418
+            },
+            {
+                "name": "check_rev_funk",
+                "start": 2424,
+                "end": 2490
+            },
+            {
+                "name": "before_tag",
+                "start": 2493,
+                "end": 2507
+            },
+            {
+                "name": "rev_follow_branch",
+                "start": 2511,
+                "end": 2529
+            },
+            {
+                "name": "check_norc",
+                "start": 2531,
+                "end": 2543
+            },
+            {
+                "name": "determine_branch_ancestor",
+                "start": 2545,
+                "end": 2610
+            },
+            {
+                "name": "handle_collisions",
+                "start": 2612,
+                "end": 2620
+            },
+            {
+                "name": "walk_all_patch_sets",
+                "start": 2622,
+                "end": 2629
+            }
+        ],
+        "stats.c": [
+            {
+                "name": "count_hash",
+                "start": 20,
+                "end": 32
+            },
+            {
+                "name": "stat_ps_tree_node",
+                "start": 34,
+                "end": 85
+            },
+            {
+                "name": "print_statistics",
+                "start": 87,
+                "end": 140
+            }
+        ],
+        "cap.c": [
+            {
+                "name": "cvs_check_cap",
+                "start": 24,
+                "end": 50
+            },
+            {
+                "name": "get_version_external",
+                "start": 52,
+                "end": 89
+            },
+            {
+                "name": "check_cvs_version",
+                "start": 91,
+                "end": 103
+            },
+            {
+                "name": "check_version_string",
+                "start": 105,
+                "end": 134
+            }
+        ],
+        "cache.c": [
+            {
+                "name": "cache_open",
+                "start": 36,
+                "end": 75
+            },
+            {
+                "name": "read_cache",
+                "start": 98,
+                "end": 357
+            },
+            {
+                "name": "parse_cache_revision",
+                "start": 368,
+                "end": 440
+            },
+            {
+                "name": "write_cache",
+                "start": 444,
+                "end": 505
+            },
+            {
+                "name": "write_patch_set_to_cache",
+                "start": 507,
+                "end": 510
+            },
+            {
+                "name": "dump_patch_set",
+                "start": 512,
+                "end": 547
+            }
+        ],
+        "list_sort.c": [
+            {
+                "name": "list_sort",
+                "start": 10,
+                "end": 81
+            }
+        ],
+        "cbtcommon/debug.c": [
+            {
+                "name": "vdebug",
+                "start": 37,
+                "end": 80
+            },
+            {
+                "name": "vmdebug",
+                "start": 82,
+                "end": 110
+            },
+            {
+                "name": "hexdump",
+                "start": 113,
+                "end": 160
+            },
+            {
+                "name": "to_hex",
+                "start": 162,
+                "end": 173
+            },
+            {
+                "name": "debug_set_error_file",
+                "start": 175,
+                "end": 180
+            },
+            {
+                "name": "debug_set_error_facility",
+                "start": 182,
+                "end": 191
+            }
+        ],
+        "cbtcommon/hash.c": [
+            {
+                "name": "create_hash_table",
+                "start": 22,
+                "end": 43
+            },
+            {
+                "name": "destroy_hash_table",
+                "start": 45,
+                "end": 69
+            },
+            {
+                "name": "put_hash_object",
+                "start": 74,
+                "end": 79
+            },
+            {
+                "name": "get_hash_entry",
+                "start": 81,
+                "end": 92
+            },
+            {
+                "name": "get_hash_object",
+                "start": 94,
+                "end": 98
+            },
+            {
+                "name": "remove_hash_object",
+                "start": 100,
+                "end": 113
+            },
+            {
+                "name": "hash_string",
+                "start": 115,
+                "end": 123
+            },
+            {
+                "name": "scan_list",
+                "start": 125,
+                "end": 140
+            },
+            {
+                "name": "reset_hash_iterator",
+                "start": 142,
+                "end": 146
+            },
+            {
+                "name": "next_hash_entry",
+                "start": 148,
+                "end": 172
+            },
+            {
+                "name": "put_hash_object_ex",
+                "start": 174,
+                "end": 244
+            },
+            {
+                "name": "destroy_hash_table_ex",
+                "start": 246,
+                "end": 272
+            }
+        ],
+        "cbtcommon/tcpsocket.c": [
+            {
+                "name": "tcp_create_socket",
+                "start": 37,
+                "end": 59
+            },
+            {
+                "name": "tcp_bind_and_listen",
+                "start": 61,
+                "end": 91
+            },
+            {
+                "name": "tcp_accept_connection",
+                "start": 93,
+                "end": 125
+            },
+            {
+                "name": "tcp_get_client_ip",
+                "start": 127,
+                "end": 150
+            },
+            {
+                "name": "tcp_connect",
+                "start": 152,
+                "end": 183
+            },
+            {
+                "name": "convert_address",
+                "start": 185,
+                "end": 240
+            },
+            {
+                "name": "tcp_get_local_address",
+                "start": 242,
+                "end": 257
+            }
+        ],
+        "cbtcommon/text_util.c": [
+            {
+                "name": "chop",
+                "start": 22,
+                "end": 41
+            },
+            {
+                "name": "digits",
+                "start": 43,
+                "end": 62
+            },
+            {
+                "name": "lower_case",
+                "start": 64,
+                "end": 76
+            },
+            {
+                "name": "reverse",
+                "start": 78,
+                "end": 93
+            },
+            {
+                "name": "trim",
+                "start": 95,
+                "end": 104
+            },
+            {
+                "name": "upper_case",
+                "start": 106,
+                "end": 118
+            },
+            {
+                "name": "strrcmp",
+                "start": 120,
+                "end": 129
+            },
+            {
+                "name": "money2cents",
+                "start": 138,
+                "end": 172
+            },
+            {
+                "name": "cents2money",
+                "start": 174,
+                "end": 217
+            },
+            {
+                "name": "trim_zeros_after_decimal",
+                "start": 219,
+                "end": 237
+            },
+            {
+                "name": "frobstr",
+                "start": 258,
+                "end": 267
+            },
+            {
+                "name": "unfrobstr",
+                "start": 269,
+                "end": 278
+            },
+            {
+                "name": "str2hex",
+                "start": 280,
+                "end": 295
+            },
+            {
+                "name": "hex2str",
+                "start": 297,
+                "end": 316
+            }
+        ],
+        "cbtcommon/sio.c": [
+            {
+                "name": "readn",
+                "start": 21,
+                "end": 52
+            },
+            {
+                "name": "writen",
+                "start": 54,
+                "end": 86
+            }
+        ]
+    }
+}

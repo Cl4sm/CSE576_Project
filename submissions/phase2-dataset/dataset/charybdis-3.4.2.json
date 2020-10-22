@@ -1,0 +1,3934 @@
+{
+    "charybdis-3.4.2": {
+        "src/class.c": [
+            {
+                "name": "make_class",
+                "start": 47,
+                "end": 61
+            },
+            {
+                "name": "free_class",
+                "start": 63,
+                "end": 72
+            },
+            {
+                "name": "get_conf_ping",
+                "start": 81,
+                "end": 88
+            },
+            {
+                "name": "get_client_class",
+                "start": 97,
+                "end": 122
+            },
+            {
+                "name": "get_client_ping",
+                "start": 131,
+                "end": 157
+            },
+            {
+                "name": "get_con_freq",
+                "start": 166,
+                "end": 172
+            },
+            {
+                "name": "add_class",
+                "start": 181,
+                "end": 208
+            },
+            {
+                "name": "find_class",
+                "start": 218,
+                "end": 236
+            },
+            {
+                "name": "check_class",
+                "start": 245,
+                "end": 263
+            },
+            {
+                "name": "initclass",
+                "start": 272,
+                "end": 277
+            },
+            {
+                "name": "report_classes",
+                "start": 286,
+                "end": 314
+            },
+            {
+                "name": "get_sendq",
+                "start": 323,
+                "end": 344
+            }
+        ],
+        "src/reject.c": [
+            {
+                "name": "delay_exit_length",
+                "start": 68,
+                "end": 72
+            },
+            {
+                "name": "reject_exit",
+                "start": 74,
+                "end": 92
+            },
+            {
+                "name": "reject_expires",
+                "start": 94,
+                "end": 113
+            },
+            {
+                "name": "init_reject",
+                "start": 115,
+                "end": 123
+            },
+            {
+                "name": "throttle_size",
+                "start": 125,
+                "end": 143
+            },
+            {
+                "name": "add_reject",
+                "start": 145,
+                "end": 182
+            },
+            {
+                "name": "check_reject",
+                "start": 184,
+                "end": 212
+            },
+            {
+                "name": "is_reject_ip",
+                "start": 214,
+                "end": 237
+            },
+            {
+                "name": "flush_reject",
+                "start": 239,
+                "end": 254
+            },
+            {
+                "name": "remove_reject_ip",
+                "start": 256,
+                "end": 274
+            },
+            {
+                "name": "remove_reject_mask",
+                "start": 276,
+                "end": 303
+            },
+            {
+                "name": "throttle_add",
+                "start": 305,
+                "end": 338
+            },
+            {
+                "name": "is_throttle_ip",
+                "start": 340,
+                "end": 357
+            },
+            {
+                "name": "flush_throttle",
+                "start": 359,
+                "end": 375
+            },
+            {
+                "name": "throttle_expires",
+                "start": 377,
+                "end": 396
+            }
+        ],
+        "src/channel.c": [
+            {
+                "name": "init_channels",
+                "start": 65,
+                "end": 76
+            },
+            {
+                "name": "allocate_channel",
+                "start": 81,
+                "end": 88
+            },
+            {
+                "name": "free_channel",
+                "start": 90,
+                "end": 96
+            },
+            {
+                "name": "allocate_ban",
+                "start": 98,
+                "end": 108
+            },
+            {
+                "name": "free_ban",
+                "start": 110,
+                "end": 117
+            },
+            {
+                "name": "send_channel_join",
+                "start": 126,
+                "end": 145
+            },
+            {
+                "name": "find_channel_membership",
+                "start": 153,
+                "end": 187
+            },
+            {
+                "name": "find_channel_status",
+                "start": 195,
+                "end": 215
+            },
+            {
+                "name": "add_user_to_channel",
+                "start": 223,
+                "end": 243
+            },
+            {
+                "name": "remove_user_from_channel",
+                "start": 251,
+                "end": 275
+            },
+            {
+                "name": "remove_user_from_channels",
+                "start": 283,
+                "end": 312
+            },
+            {
+                "name": "invalidate_bancache_user",
+                "start": 321,
+                "end": 336
+            },
+            {
+                "name": "check_channel_name",
+                "start": 344,
+                "end": 358
+            },
+            {
+                "name": "free_channel_list",
+                "start": 366,
+                "end": 381
+            },
+            {
+                "name": "destroy_channel",
+                "start": 389,
+                "end": 411
+            },
+            {
+                "name": "channel_pub_or_secret",
+                "start": 419,
+                "end": 427
+            },
+            {
+                "name": "channel_member_names",
+                "start": 435,
+                "end": 500
+            },
+            {
+                "name": "del_invite",
+                "start": 508,
+                "end": 513
+            },
+            {
+                "name": "is_banned_list",
+                "start": 523,
+                "end": 643
+            },
+            {
+                "name": "is_banned",
+                "start": 652,
+                "end": 658
+            },
+            {
+                "name": "is_quieted",
+                "start": 667,
+                "end": 673
+            },
+            {
+                "name": "can_join",
+                "start": 682,
+                "end": 792
+            },
+            {
+                "name": "can_send",
+                "start": 800,
+                "end": 860
+            },
+            {
+                "name": "flood_attack_channel",
+                "start": 871,
+                "end": 916
+            },
+            {
+                "name": "find_bannickchange_channel",
+                "start": 922,
+                "end": 954
+            },
+            {
+                "name": "check_spambot_warning",
+                "start": 963,
+                "end": 1014
+            },
+            {
+                "name": "check_splitmode",
+                "start": 1023,
+                "end": 1053
+            },
+            {
+                "name": "allocate_topic",
+                "start": 1062,
+                "end": 1080
+            },
+            {
+                "name": "free_topic",
+                "start": 1088,
+                "end": 1103
+            },
+            {
+                "name": "set_channel_topic",
+                "start": 1111,
+                "end": 1128
+            },
+            {
+                "name": "channel_modes",
+                "start": 1139,
+                "end": 1195
+            },
+            {
+                "name": "send_cap_mode_changes",
+                "start": 1212,
+                "end": 1312
+            },
+            {
+                "name": "resv_chan_forcepart",
+                "start": 1314,
+                "end": 1363
+            }
+        ],
+        "src/send.c": [
+            {
+                "name": "_send_linebuf",
+                "start": 60,
+                "end": 109
+            },
+            {
+                "name": "send_linebuf_remote",
+                "start": 117,
+                "end": 127
+            },
+            {
+                "name": "send_queued",
+                "start": 135,
+                "end": 213
+            },
+            {
+                "name": "send_pop_queue",
+                "start": 215,
+                "end": 224
+            },
+            {
+                "name": "send_queued_write",
+                "start": 232,
+                "end": 238
+            },
+            {
+                "name": "sendto_one",
+                "start": 246,
+                "end": 269
+            },
+            {
+                "name": "sendto_one_prefix",
+                "start": 277,
+                "end": 310
+            },
+            {
+                "name": "sendto_one_notice",
+                "start": 318,
+                "end": 350
+            },
+            {
+                "name": "sendto_one_numeric",
+                "start": 359,
+                "end": 392
+            },
+            {
+                "name": "sendto_server",
+                "start": 411,
+                "end": 454
+            },
+            {
+                "name": "sendto_channel_flags",
+                "start": 462,
+                "end": 529
+            },
+            {
+                "name": "sendto_channel_opmod",
+                "start": 537,
+                "end": 617
+            },
+            {
+                "name": "sendto_channel_local",
+                "start": 625,
+                "end": 656
+            },
+            {
+                "name": "_sendto_channel_local_with_capability_butone",
+                "start": 663,
+                "end": 696
+            },
+            {
+                "name": "sendto_channel_local_with_capability",
+                "start": 704,
+                "end": 712
+            },
+            {
+                "name": "sendto_channel_local_with_capability_butone",
+                "start": 721,
+                "end": 730
+            },
+            {
+                "name": "sendto_channel_local_butone",
+                "start": 740,
+                "end": 774
+            },
+            {
+                "name": "sendto_common_channels_local",
+                "start": 787,
+                "end": 835
+            },
+            {
+                "name": "sendto_common_channels_local_butone",
+                "start": 847,
+                "end": 891
+            },
+            {
+                "name": "sendto_match_butone",
+                "start": 899,
+                "end": 961
+            },
+            {
+                "name": "sendto_match_servs",
+                "start": 969,
+                "end": 1022
+            },
+            {
+                "name": "sendto_monitor",
+                "start": 1030,
+                "end": 1056
+            },
+            {
+                "name": "sendto_anywhere",
+                "start": 1064,
+                "end": 1100
+            },
+            {
+                "name": "sendto_realops_snomask",
+                "start": 1108,
+                "end": 1172
+            },
+            {
+                "name": "sendto_realops_snomask_from",
+                "start": 1179,
+                "end": 1212
+            },
+            {
+                "name": "sendto_wallops_flags",
+                "start": 1223,
+                "end": 1254
+            },
+            {
+                "name": "kill_client",
+                "start": 1262,
+                "end": 1277
+            },
+            {
+                "name": "kill_client_serv_butone",
+                "start": 1291,
+                "end": 1325
+            }
+        ],
+        "src/scache.c": [
+            {
+                "name": "clear_scache_hash_table",
+                "start": 69,
+                "end": 73
+            },
+            {
+                "name": "sc_hash",
+                "start": 75,
+                "end": 87
+            },
+            {
+                "name": "find_or_add",
+                "start": 89,
+                "end": 115
+            },
+            {
+                "name": "scache_connect",
+                "start": 117,
+                "end": 131
+            },
+            {
+                "name": "scache_split",
+                "start": 133,
+                "end": 140
+            },
+            {
+                "name": "scache_get_name",
+                "start": 142,
+                "end": 145
+            },
+            {
+                "name": "scache_send_flattened_links",
+                "start": 153,
+                "end": 185
+            },
+            {
+                "name": "scache_send_missing",
+                "start": 195,
+                "end": 213
+            },
+            {
+                "name": "count_scache",
+                "start": 221,
+                "end": 242
+            }
+        ],
+        "src/numeric.c": [
+            {
+                "name": "form_str",
+                "start": 44,
+                "end": 63
+            }
+        ],
+        "src/tgchange.c": [
+            {
+                "name": "find_allowing_channel",
+                "start": 36,
+                "end": 49
+            },
+            {
+                "name": "add_target",
+                "start": 51,
+                "end": 70
+            },
+            {
+                "name": "add_channel_target",
+                "start": 72,
+                "end": 79
+            },
+            {
+                "name": "add_hashed_target",
+                "start": 81,
+                "end": 159
+            },
+            {
+                "name": "add_reply_target",
+                "start": 161,
+                "end": 194
+            }
+        ],
+        "src/chmode.c": [
+            {
+                "name": "construct_cflags_strings",
+                "start": 78,
+                "end": 128
+            },
+            {
+                "name": "find_cflag_slot",
+                "start": 138,
+                "end": 150
+            },
+            {
+                "name": "cflag_add",
+                "start": 152,
+                "end": 168
+            },
+            {
+                "name": "cflag_orphan",
+                "start": 170,
+                "end": 178
+            },
+            {
+                "name": "get_channel_access",
+                "start": 180,
+                "end": 200
+            },
+            {
+                "name": "allow_mode_change",
+                "start": 210,
+                "end": 236
+            },
+            {
+                "name": "add_id",
+                "start": 244,
+                "end": 299
+            },
+            {
+                "name": "del_id",
+                "start": 307,
+                "end": 333
+            },
+            {
+                "name": "check_string",
+                "start": 341,
+                "end": 358
+            },
+            {
+                "name": "pretty_mask",
+                "start": 371,
+                "end": 502
+            },
+            {
+                "name": "check_forward",
+                "start": 510,
+                "end": 547
+            },
+            {
+                "name": "fix_key",
+                "start": 556,
+                "end": 570
+            },
+            {
+                "name": "fix_key_remote",
+                "start": 579,
+                "end": 593
+            },
+            {
+                "name": "chm_nosuch",
+                "start": 599,
+                "end": 608
+            },
+            {
+                "name": "chm_simple",
+                "start": 610,
+                "end": 651
+            },
+            {
+                "name": "chm_orphaned",
+                "start": 653,
+                "end": 685
+            },
+            {
+                "name": "chm_staff",
+                "start": 687,
+                "end": 736
+            },
+            {
+                "name": "chm_ban",
+                "start": 738,
+                "end": 987
+            },
+            {
+                "name": "chm_op",
+                "start": 989,
+                "end": 1069
+            },
+            {
+                "name": "chm_voice",
+                "start": 1071,
+                "end": 1141
+            },
+            {
+                "name": "chm_limit",
+                "start": 1143,
+                "end": 1196
+            },
+            {
+                "name": "chm_throttle",
+                "start": 1198,
+                "end": 1252
+            },
+            {
+                "name": "chm_forward",
+                "start": 1254,
+                "end": 1332
+            },
+            {
+                "name": "chm_key",
+                "start": 1334,
+                "end": 1405
+            },
+            {
+                "name": "set_channel_mode",
+                "start": 1688,
+                "end": 1830
+            },
+            {
+                "name": "set_channel_mlock",
+                "start": 1838,
+                "end": 1851
+            }
+        ],
+        "src/ratelimit.c": [
+            {
+                "name": "ratelimit_client",
+                "start": 50,
+                "end": 80
+            },
+            {
+                "name": "ratelimit_client_who",
+                "start": 98,
+                "end": 110
+            },
+            {
+                "name": "credit_client_join",
+                "start": 126,
+                "end": 132
+            }
+        ],
+        "src/blacklist.c": [
+            {
+                "name": "find_blacklist",
+                "start": 47,
+                "end": 60
+            },
+            {
+                "name": "blacklist_dns_callback",
+                "start": 62,
+                "end": 113
+            },
+            {
+                "name": "initiate_blacklist_dnsquery",
+                "start": 115,
+                "end": 180
+            },
+            {
+                "name": "new_blacklist",
+                "start": 183,
+                "end": 205
+            },
+            {
+                "name": "unref_blacklist",
+                "start": 207,
+                "end": 215
+            },
+            {
+                "name": "lookup_blacklists",
+                "start": 217,
+                "end": 228
+            },
+            {
+                "name": "abort_blacklist_queries",
+                "start": 230,
+                "end": 245
+            },
+            {
+                "name": "destroy_blacklists",
+                "start": 247,
+                "end": 264
+            }
+        ],
+        "src/getopt.c": [
+            {
+                "name": "parseargs",
+                "start": 33,
+                "end": 120
+            },
+            {
+                "name": "usage",
+                "start": 122,
+                "end": 140
+            }
+        ],
+        "src/match.c": [
+            {
+                "name": "match",
+                "start": 49,
+                "end": 106
+            },
+            {
+                "name": "mask_match",
+                "start": 119,
+                "end": 178
+            },
+            {
+                "name": "match_esc",
+                "start": 197,
+                "end": 309
+            },
+            {
+                "name": "comp_with_mask",
+                "start": 311,
+                "end": 323
+            },
+            {
+                "name": "comp_with_mask_sock",
+                "start": 325,
+                "end": 345
+            },
+            {
+                "name": "match_ips",
+                "start": 352,
+                "end": 398
+            },
+            {
+                "name": "match_cidr",
+                "start": 406,
+                "end": 466
+            },
+            {
+                "name": "collapse",
+                "start": 472,
+                "end": 498
+            },
+            {
+                "name": "collapse_esc",
+                "start": 504,
+                "end": 534
+            },
+            {
+                "name": "irccmp",
+                "start": 543,
+                "end": 560
+            },
+            {
+                "name": "ircncmp",
+                "start": 562,
+                "end": 579
+            }
+        ],
+        "src/packet.c": [
+            {
+                "name": "parse_client_queued",
+                "start": 44,
+                "end": 159
+            },
+            {
+                "name": "flood_endgrace",
+                "start": 165,
+                "end": 174
+            },
+            {
+                "name": "flood_recalc",
+                "start": 182,
+                "end": 227
+            },
+            {
+                "name": "read_packet",
+                "start": 232,
+                "end": 319
+            },
+            {
+                "name": "client_dopacket",
+                "start": 333,
+                "end": 369
+            }
+        ],
+        "src/s_auth.c": [
+            {
+                "name": "init_auth",
+                "start": 134,
+                "end": 141
+            },
+            {
+                "name": "make_auth_request",
+                "start": 146,
+                "end": 155
+            },
+            {
+                "name": "free_auth_request",
+                "start": 160,
+                "end": 164
+            },
+            {
+                "name": "release_auth_client",
+                "start": 171,
+                "end": 190
+            },
+            {
+                "name": "auth_dns_callback",
+                "start": 199,
+                "end": 268
+            },
+            {
+                "name": "auth_error",
+                "start": 273,
+                "end": 285
+            },
+            {
+                "name": "start_auth_query",
+                "start": 295,
+                "end": 372
+            },
+            {
+                "name": "GetValidIdent",
+                "start": 381,
+                "end": 434
+            },
+            {
+                "name": "start_auth",
+                "start": 439,
+                "end": 463
+            },
+            {
+                "name": "timeout_auth_queries_event",
+                "start": 469,
+                "end": 503
+            },
+            {
+                "name": "auth_connect_callback",
+                "start": 516,
+                "end": 541
+            },
+            {
+                "name": "read_auth_reply",
+                "start": 552,
+                "end": 615
+            },
+            {
+                "name": "delete_auth_queries",
+                "start": 623,
+                "end": 643
+            }
+        ],
+        "src/bandbi.c": [
+            {
+                "name": "init_bandb",
+                "start": 64,
+                "end": 72
+            },
+            {
+                "name": "start_bandb",
+                "start": 75,
+                "end": 119
+            },
+            {
+                "name": "bandb_add",
+                "start": 121,
+                "end": 139
+            },
+            {
+                "name": "bandb_del",
+                "start": 145,
+                "end": 158
+            },
+            {
+                "name": "bandb_handle_ban",
+                "start": 160,
+                "end": 208
+            },
+            {
+                "name": "bandb_check_kline",
+                "start": 210,
+                "end": 251
+            },
+            {
+                "name": "bandb_check_dline",
+                "start": 253,
+                "end": 264
+            },
+            {
+                "name": "bandb_check_xline",
+                "start": 266,
+                "end": 277
+            },
+            {
+                "name": "bandb_check_resv_channel",
+                "start": 279,
+                "end": 294
+            },
+            {
+                "name": "bandb_check_resv_nick",
+                "start": 296,
+                "end": 306
+            },
+            {
+                "name": "bandb_handle_clear",
+                "start": 308,
+                "end": 318
+            },
+            {
+                "name": "bandb_handle_finish",
+                "start": 320,
+                "end": 380
+            },
+            {
+                "name": "bandb_handle_failure",
+                "start": 382,
+                "end": 391
+            },
+            {
+                "name": "bandb_parse",
+                "start": 393,
+                "end": 426
+            },
+            {
+                "name": "bandb_rehash_bans",
+                "start": 428,
+                "end": 433
+            },
+            {
+                "name": "bandb_restart_cb",
+                "start": 435,
+                "end": 448
+            }
+        ],
+        "src/hash.c": [
+            {
+                "name": "init_hash",
+                "start": 93,
+                "end": 101
+            },
+            {
+                "name": "fnv_hash_upper",
+                "start": 104,
+                "end": 117
+            },
+            {
+                "name": "fnv_hash",
+                "start": 119,
+                "end": 132
+            },
+            {
+                "name": "fnv_hash_len",
+                "start": 134,
+                "end": 147
+            },
+            {
+                "name": "fnv_hash_upper_len",
+                "start": 149,
+                "end": 162
+            },
+            {
+                "name": "hash_nick",
+                "start": 169,
+                "end": 173
+            },
+            {
+                "name": "hash_id",
+                "start": 179,
+                "end": 183
+            },
+            {
+                "name": "hash_channel",
+                "start": 189,
+                "end": 193
+            },
+            {
+                "name": "hash_hostname",
+                "start": 200,
+                "end": 204
+            },
+            {
+                "name": "hash_resv",
+                "start": 210,
+                "end": 214
+            },
+            {
+                "name": "add_to_id_hash",
+                "start": 220,
+                "end": 230
+            },
+            {
+                "name": "add_to_client_hash",
+                "start": 236,
+                "end": 248
+            },
+            {
+                "name": "add_to_hostname_hash",
+                "start": 254,
+                "end": 266
+            },
+            {
+                "name": "add_to_resv_hash",
+                "start": 272,
+                "end": 284
+            },
+            {
+                "name": "del_from_id_hash",
+                "start": 290,
+                "end": 302
+            },
+            {
+                "name": "del_from_client_hash",
+                "start": 308,
+                "end": 321
+            },
+            {
+                "name": "del_from_channel_hash",
+                "start": 327,
+                "end": 340
+            },
+            {
+                "name": "del_from_hostname_hash",
+                "start": 346,
+                "end": 357
+            },
+            {
+                "name": "del_from_resv_hash",
+                "start": 363,
+                "end": 376
+            },
+            {
+                "name": "find_id",
+                "start": 382,
+                "end": 403
+            },
+            {
+                "name": "find_client",
+                "start": 409,
+                "end": 435
+            },
+            {
+                "name": "find_named_client",
+                "start": 441,
+                "end": 463
+            },
+            {
+                "name": "find_server",
+                "start": 469,
+                "end": 498
+            },
+            {
+                "name": "find_hostname",
+                "start": 506,
+                "end": 517
+            },
+            {
+                "name": "find_channel",
+                "start": 523,
+                "end": 545
+            },
+            {
+                "name": "get_or_create_channel",
+                "start": 558,
+                "end": 612
+            },
+            {
+                "name": "hash_find_resv",
+                "start": 618,
+                "end": 643
+            },
+            {
+                "name": "clear_resv_hash",
+                "start": 645,
+                "end": 665
+            },
+            {
+                "name": "add_to_cli_fd_hash",
+                "start": 667,
+                "end": 671
+            },
+            {
+                "name": "del_from_cli_fd_hash",
+                "start": 674,
+                "end": 680
+            },
+            {
+                "name": "find_cli_fd_hash",
+                "start": 682,
+                "end": 696
+            },
+            {
+                "name": "output_hash",
+                "start": 698,
+                "end": 736
+            },
+            {
+                "name": "count_hash",
+                "start": 739,
+                "end": 760
+            },
+            {
+                "name": "hash_stats",
+                "start": 762,
+                "end": 772
+            }
+        ],
+        "src/client.c": [
+            {
+                "name": "init_client",
+                "start": 112,
+                "end": 131
+            },
+            {
+                "name": "make_client",
+                "start": 144,
+                "end": 180
+            },
+            {
+                "name": "free_pre_client",
+                "start": 182,
+                "end": 198
+            },
+            {
+                "name": "free_local_client",
+                "start": 200,
+                "end": 250
+            },
+            {
+                "name": "free_client",
+                "start": 252,
+                "end": 261
+            },
+            {
+                "name": "check_pings",
+                "start": 289,
+                "end": 295
+            },
+            {
+                "name": "check_pings_list",
+                "start": 304,
+                "end": 362
+            },
+            {
+                "name": "check_unknowns_list",
+                "start": 371,
+                "end": 410
+            },
+            {
+                "name": "notify_banned_client",
+                "start": 412,
+                "end": 440
+            },
+            {
+                "name": "check_banned_lines",
+                "start": 449,
+                "end": 455
+            },
+            {
+                "name": "check_klines_event",
+                "start": 463,
+                "end": 468
+            },
+            {
+                "name": "check_klines",
+                "start": 476,
+                "end": 510
+            },
+            {
+                "name": "check_dlines",
+                "start": 518,
+                "end": 560
+            },
+            {
+                "name": "check_xlines",
+                "start": 568,
+                "end": 601
+            },
+            {
+                "name": "resv_nick_fnc",
+                "start": 609,
+                "end": 689
+            },
+            {
+                "name": "update_client_exit_stats",
+                "start": 698,
+                "end": 720
+            },
+            {
+                "name": "release_client_state",
+                "start": 729,
+                "end": 744
+            },
+            {
+                "name": "remove_client_from_list",
+                "start": 753,
+                "end": 773
+            },
+            {
+                "name": "find_person",
+                "start": 782,
+                "end": 792
+            },
+            {
+                "name": "find_named_person",
+                "start": 794,
+                "end": 804
+            },
+            {
+                "name": "find_chasing",
+                "start": 813,
+                "end": 838
+            },
+            {
+                "name": "get_client_name",
+                "start": 859,
+                "end": 902
+            },
+            {
+                "name": "log_client_name",
+                "start": 909,
+                "end": 942
+            },
+            {
+                "name": "is_remote_connect",
+                "start": 946,
+                "end": 955
+            },
+            {
+                "name": "free_exited_clients",
+                "start": 957,
+                "end": 1027
+            },
+            {
+                "name": "recurse_send_quits",
+                "start": 1037,
+                "end": 1067
+            },
+            {
+                "name": "recurse_remove_clients",
+                "start": 1078,
+                "end": 1121
+            },
+            {
+                "name": "remove_dependents",
+                "start": 1128,
+                "end": 1148
+            },
+            {
+                "name": "exit_aborted_clients",
+                "start": 1150,
+                "end": 1190
+            },
+            {
+                "name": "dead_link",
+                "start": 1197,
+                "end": 1218
+            },
+            {
+                "name": "exit_generic_client",
+                "start": 1222,
+                "end": 1260
+            },
+            {
+                "name": "exit_remote_client",
+                "start": 1266,
+                "end": 1290
+            },
+            {
+                "name": "exit_unknown_client",
+                "start": 1296,
+                "end": 1326
+            },
+            {
+                "name": "exit_remote_server",
+                "start": 1328,
+                "end": 1381
+            },
+            {
+                "name": "qs_server",
+                "start": 1383,
+                "end": 1404
+            },
+            {
+                "name": "exit_local_server",
+                "start": 1406,
+                "end": 1471
+            },
+            {
+                "name": "exit_local_client",
+                "start": 1478,
+                "end": 1528
+            },
+            {
+                "name": "exit_client",
+                "start": 1551,
+                "end": 1601
+            },
+            {
+                "name": "count_local_client_memory",
+                "start": 1608,
+                "end": 1614
+            },
+            {
+                "name": "count_remote_client_memory",
+                "start": 1619,
+                "end": 1627
+            },
+            {
+                "name": "del_all_accepts",
+                "start": 1655,
+                "end": 1682
+            },
+            {
+                "name": "show_ip",
+                "start": 1694,
+                "end": 1715
+            },
+            {
+                "name": "show_ip_conf",
+                "start": 1717,
+                "end": 1729
+            },
+            {
+                "name": "make_user",
+                "start": 1739,
+                "end": 1752
+            },
+            {
+                "name": "make_server",
+                "start": 1762,
+                "end": 1773
+            },
+            {
+                "name": "free_user",
+                "start": 1784,
+                "end": 1817
+            },
+            {
+                "name": "allocate_away",
+                "start": 1819,
+                "end": 1824
+            },
+            {
+                "name": "free_away",
+                "start": 1827,
+                "end": 1834
+            },
+            {
+                "name": "init_uid",
+                "start": 1836,
+                "end": 1848
+            },
+            {
+                "name": "generate_uid",
+                "start": 1851,
+                "end": 1882
+            },
+            {
+                "name": "close_connection",
+                "start": 1889,
+                "end": 1959
+            },
+            {
+                "name": "error_exit_client",
+                "start": 1963,
+                "end": 2007
+            }
+        ],
+        "src/s_conf.c": [
+            {
+                "name": "init_s_conf",
+                "start": 89,
+                "end": 111
+            },
+            {
+                "name": "make_conf",
+                "start": 120,
+                "end": 128
+            },
+            {
+                "name": "free_conf",
+                "start": 137,
+                "end": 162
+            },
+            {
+                "name": "check_client",
+                "start": 178,
+                "end": 304
+            },
+            {
+                "name": "verify_access",
+                "start": 314,
+                "end": 397
+            },
+            {
+                "name": "add_ip_limit",
+                "start": 409,
+                "end": 447
+            },
+            {
+                "name": "remove_ip_limit",
+                "start": 449,
+                "end": 469
+            },
+            {
+                "name": "attach_iline",
+                "start": 479,
+                "end": 526
+            },
+            {
+                "name": "detach_conf",
+                "start": 536,
+                "end": 569
+            },
+            {
+                "name": "attach_conf",
+                "start": 582,
+                "end": 616
+            },
+            {
+                "name": "rehash",
+                "start": 625,
+                "end": 645
+            },
+            {
+                "name": "rehash_bans",
+                "start": 647,
+                "end": 651
+            },
+            {
+                "name": "set_default_conf",
+                "start": 668,
+                "end": 811
+            },
+            {
+                "name": "read_conf",
+                "start": 824,
+                "end": 836
+            },
+            {
+                "name": "validate_conf",
+                "start": 838,
+                "end": 897
+            },
+            {
+                "name": "add_temp_kline",
+                "start": 906,
+                "end": 932
+            },
+            {
+                "name": "add_temp_dline",
+                "start": 940,
+                "end": 966
+            },
+            {
+                "name": "valid_wild_card",
+                "start": 974,
+                "end": 1022
+            },
+            {
+                "name": "find_prop_ban",
+                "start": 1024,
+                "end": 1041
+            },
+            {
+                "name": "deactivate_conf",
+                "start": 1043,
+                "end": 1091
+            },
+            {
+                "name": "replace_old_ban",
+                "start": 1096,
+                "end": 1121
+            },
+            {
+                "name": "expire_prop_bans",
+                "start": 1123,
+                "end": 1152
+            },
+            {
+                "name": "expire_temp_kd",
+                "start": 1161,
+                "end": 1185
+            },
+            {
+                "name": "reorganise_temp_kd",
+                "start": 1187,
+                "end": 1220
+            },
+            {
+                "name": "get_oper_name",
+                "start": 1229,
+                "end": 1247
+            },
+            {
+                "name": "get_printable_conf",
+                "start": 1265,
+                "end": 1278
+            },
+            {
+                "name": "get_user_ban_reason",
+                "start": 1280,
+                "end": 1305
+            },
+            {
+                "name": "get_printable_kline",
+                "start": 1307,
+                "end": 1329
+            },
+            {
+                "name": "read_conf_files",
+                "start": 1338,
+                "end": 1377
+            },
+            {
+                "name": "free_alias_cb",
+                "start": 1382,
+                "end": 1390
+            },
+            {
+                "name": "clear_out_old_conf",
+                "start": 1399,
+                "end": 1474
+            },
+            {
+                "name": "conf_add_class_to_conf",
+                "start": 1484,
+                "end": 1517
+            },
+            {
+                "name": "conf_add_d_conf",
+                "start": 1525,
+                "end": 1546
+            },
+            {
+                "name": "strip_tabs",
+                "start": 1548,
+                "end": 1565
+            },
+            {
+                "name": "yyerror",
+                "start": 1574,
+                "end": 1585
+            },
+            {
+                "name": "conf_fgets",
+                "start": 1587,
+                "end": 1594
+            },
+            {
+                "name": "conf_yy_fatal_error",
+                "start": 1596,
+                "end": 1600
+            }
+        ],
+        "src/whowas.c": [
+            {
+                "name": "hash_whowas_name",
+                "start": 54,
+                "end": 57
+            },
+            {
+                "name": "add_history",
+                "start": 59,
+                "end": 103
+            },
+            {
+                "name": "off_history",
+                "start": 105,
+                "end": 115
+            },
+            {
+                "name": "get_history",
+                "start": 117,
+                "end": 134
+            },
+            {
+                "name": "count_whowas_memory",
+                "start": 136,
+                "end": 140
+            },
+            {
+                "name": "initwhowas",
+                "start": 142,
+                "end": 154
+            },
+            {
+                "name": "add_whowas_to_clist",
+                "start": 157,
+                "end": 164
+            },
+            {
+                "name": "del_whowas_from_clist",
+                "start": 166,
+                "end": 175
+            },
+            {
+                "name": "add_whowas_to_list",
+                "start": 177,
+                "end": 184
+            },
+            {
+                "name": "del_whowas_from_list",
+                "start": 186,
+                "end": 195
+            }
+        ],
+        "src/listener.c": [
+            {
+                "name": "make_listener",
+                "start": 59,
+                "end": 70
+            },
+            {
+                "name": "free_listener",
+                "start": 72,
+                "end": 98
+            },
+            {
+                "name": "get_listener_name",
+                "start": 106,
+                "end": 125
+            },
+            {
+                "name": "show_ports",
+                "start": 133,
+                "end": 152
+            },
+            {
+                "name": "inetport",
+                "start": 167,
+                "end": 245
+            },
+            {
+                "name": "find_listener",
+                "start": 247,
+                "end": 297
+            },
+            {
+                "name": "add_listener",
+                "start": 306,
+                "end": 386
+            },
+            {
+                "name": "close_listener",
+                "start": 391,
+                "end": 409
+            },
+            {
+                "name": "close_listeners",
+                "start": 414,
+                "end": 427
+            },
+            {
+                "name": "add_connection",
+                "start": 437,
+                "end": 472
+            },
+            {
+                "name": "accept_precallback",
+                "start": 476,
+                "end": 549
+            },
+            {
+                "name": "accept_ssld",
+                "start": 551,
+                "end": 564
+            },
+            {
+                "name": "accept_callback",
+                "start": 566,
+                "end": 586
+            }
+        ],
+        "src/extban.c": [
+            {
+                "name": "match_extban",
+                "start": 32,
+                "end": 65
+            },
+            {
+                "name": "valid_extban",
+                "start": 67,
+                "end": 94
+            },
+            {
+                "name": "get_extban_string",
+                "start": 96,
+                "end": 108
+            }
+        ],
+        "src/operhash.c": [
+            {
+                "name": "operhash_add",
+                "start": 52,
+                "end": 82
+            },
+            {
+                "name": "operhash_find",
+                "start": 84,
+                "end": 105
+            },
+            {
+                "name": "operhash_delete",
+                "start": 107,
+                "end": 136
+            }
+        ],
+        "src/reslib.c": [
+            {
+                "name": "irc_ns_name_compress",
+                "start": 125,
+                "end": 126
+            },
+            {
+                "name": "irc_dn_find",
+                "start": 127,
+                "end": 128
+            },
+            {
+                "name": "irc_encode_bitsring",
+                "start": 129,
+                "end": 130
+            },
+            {
+                "name": "irc_ns_name_uncompress",
+                "start": 131,
+                "end": 132
+            },
+            {
+                "name": "irc_ns_name_unpack",
+                "start": 133,
+                "end": 135
+            },
+            {
+                "name": "irc_res_init",
+                "start": 140,
+                "end": 148
+            },
+            {
+                "name": "parse_resvconf",
+                "start": 156,
+                "end": 214
+            },
+            {
+                "name": "add_nameserver",
+                "start": 223,
+                "end": 250
+            },
+            {
+                "name": "irc_dn_expand",
+                "start": 259,
+                "end": 268
+            },
+            {
+                "name": "irc_ns_name_uncompress",
+                "start": 278,
+                "end": 290
+            },
+            {
+                "name": "irc_ns_name_unpack",
+                "start": 297,
+                "end": 370
+            },
+            {
+                "name": "irc_ns_name_ntop",
+                "start": 381,
+                "end": 471
+            },
+            {
+                "name": "irc_dn_comp",
+                "start": 478,
+                "end": 485
+            },
+            {
+                "name": "irc_dn_skipname",
+                "start": 490,
+                "end": 497
+            },
+            {
+                "name": "irc_ns_name_skip",
+                "start": 505,
+                "end": 550
+            },
+            {
+                "name": "irc_ns_get16",
+                "start": 552,
+                "end": 559
+            },
+            {
+                "name": "irc_ns_get32",
+                "start": 561,
+                "end": 568
+            },
+            {
+                "name": "irc_ns_put16",
+                "start": 570,
+                "end": 574
+            },
+            {
+                "name": "irc_ns_put32",
+                "start": 576,
+                "end": 580
+            },
+            {
+                "name": "special",
+                "start": 591,
+                "end": 609
+            },
+            {
+                "name": "labellen",
+                "start": 611,
+                "end": 636
+            },
+            {
+                "name": "printable",
+                "start": 646,
+                "end": 650
+            },
+            {
+                "name": "irc_decode_bitstring",
+                "start": 652,
+                "end": 682
+            },
+            {
+                "name": "irc_ns_name_pton",
+                "start": 694,
+                "end": 822
+            },
+            {
+                "name": "irc_ns_name_pack",
+                "start": 841,
+                "end": 931
+            },
+            {
+                "name": "irc_ns_name_compress",
+                "start": 933,
+                "end": 942
+            },
+            {
+                "name": "irc_encode_bitsring",
+                "start": 944,
+                "end": 1047
+            },
+            {
+                "name": "irc_dn_find",
+                "start": 1058,
+                "end": 1116
+            },
+            {
+                "name": "mklower",
+                "start": 1122,
+                "end": 1129
+            },
+            {
+                "name": "irc_res_mkquery",
+                "start": 1137,
+                "end": 1180
+            }
+        ],
+        "src/sslproc.c": [
+            {
+                "name": "send_new_ssl_certs_one",
+                "start": 72,
+                "end": 73
+            },
+            {
+                "name": "buf_to_int32",
+                "start": 79,
+                "end": 85
+            },
+            {
+                "name": "int32_to_buf",
+                "start": 87,
+                "end": 92
+            },
+            {
+                "name": "buf_to_uint16",
+                "start": 95,
+                "end": 101
+            },
+            {
+                "name": "uint16_to_buf",
+                "start": 103,
+                "end": 108
+            },
+            {
+                "name": "allocate_ssl_daemon",
+                "start": 111,
+                "end": 125
+            },
+            {
+                "name": "free_ssl_daemon",
+                "start": 127,
+                "end": 159
+            },
+            {
+                "name": "ssl_killall",
+                "start": 168,
+                "end": 182
+            },
+            {
+                "name": "ssl_dead",
+                "start": 184,
+                "end": 196
+            },
+            {
+                "name": "ssl_do_pipe",
+                "start": 198,
+                "end": 210
+            },
+            {
+                "name": "restart_ssld_event",
+                "start": 212,
+                "end": 225
+            },
+            {
+                "name": "start_ssldaemon",
+                "start": 227,
+                "end": 340
+            },
+            {
+                "name": "ssl_process_zipstats",
+                "start": 342,
+                "end": 372
+            },
+            {
+                "name": "ssl_process_dead_fd",
+                "start": 374,
+                "end": 403
+            },
+            {
+                "name": "ssl_process_certfp",
+                "start": 405,
+                "end": 428
+            },
+            {
+                "name": "ssl_process_cmd_recv",
+                "start": 430,
+                "end": 480
+            },
+            {
+                "name": "ssl_read_ctl",
+                "start": 483,
+                "end": 515
+            },
+            {
+                "name": "which_ssld",
+                "start": 517,
+                "end": 537
+            },
+            {
+                "name": "ssl_write_ctl",
+                "start": 539,
+                "end": 574
+            },
+            {
+                "name": "ssl_cmd_write_queue",
+                "start": 576,
+                "end": 598
+            },
+            {
+                "name": "send_new_ssl_certs_one",
+                "start": 601,
+                "end": 620
+            },
+            {
+                "name": "send_init_prng",
+                "start": 622,
+                "end": 648
+            },
+            {
+                "name": "send_new_ssl_certs",
+                "start": 650,
+                "end": 664
+            },
+            {
+                "name": "start_ssld_accept",
+                "start": 667,
+                "end": 682
+            },
+            {
+                "name": "start_ssld_connect",
+                "start": 684,
+                "end": 700
+            },
+            {
+                "name": "ssld_decrement_clicount",
+                "start": 702,
+                "end": 713
+            },
+            {
+                "name": "start_zlib_session",
+                "start": 724,
+                "end": 810
+            },
+            {
+                "name": "collect_zipstats",
+                "start": 812,
+                "end": 839
+            },
+            {
+                "name": "cleanup_dead_ssl",
+                "start": 841,
+                "end": 854
+            },
+            {
+                "name": "get_ssld_count",
+                "start": 856,
+                "end": 860
+            },
+            {
+                "name": "init_ssld",
+                "start": 862,
+                "end": 867
+            }
+        ],
+        "src/cache.c": [
+            {
+                "name": "init_cache",
+                "start": 60,
+                "end": 75
+            },
+            {
+                "name": "untabify",
+                "start": 82,
+                "end": 104
+            },
+            {
+                "name": "cache_file",
+                "start": 112,
+                "end": 155
+            },
+            {
+                "name": "cache_links",
+                "start": 157,
+                "end": 192
+            },
+            {
+                "name": "free_cachefile",
+                "start": 200,
+                "end": 216
+            },
+            {
+                "name": "load_help",
+                "start": 225,
+                "end": 299
+            },
+            {
+                "name": "send_user_motd",
+                "start": 307,
+                "end": 329
+            },
+            {
+                "name": "cache_user_motd",
+                "start": 331,
+                "end": 352
+            },
+            {
+                "name": "send_oper_motd",
+                "start": 361,
+                "end": 382
+            }
+        ],
+        "src/logger.c": [
+            {
+                "name": "verify_logfile_access",
+                "start": 76,
+                "end": 116
+            },
+            {
+                "name": "init_main_logfile",
+                "start": 118,
+                "end": 126
+            },
+            {
+                "name": "open_logfiles",
+                "start": 128,
+                "end": 147
+            },
+            {
+                "name": "close_logfiles",
+                "start": 149,
+                "end": 166
+            },
+            {
+                "name": "ilog",
+                "start": 168,
+                "end": 194
+            },
+            {
+                "name": "_iprint",
+                "start": 196,
+                "end": 203
+            },
+            {
+                "name": "inotice",
+                "start": 205,
+                "end": 218
+            },
+            {
+                "name": "iwarn",
+                "start": 220,
+                "end": 233
+            },
+            {
+                "name": "ierror",
+                "start": 235,
+                "end": 248
+            },
+            {
+                "name": "report_operspy",
+                "start": 250,
+                "end": 267
+            },
+            {
+                "name": "smalldate",
+                "start": 269,
+                "end": 282
+            },
+            {
+                "name": "ilog_error",
+                "start": 284,
+                "end": 296
+            }
+        ],
+        "src/ircd.c": [
+            {
+                "name": "ircd_shutdown",
+                "start": 123,
+                "end": 150
+            },
+            {
+                "name": "print_startup",
+                "start": 155,
+                "end": 172
+            },
+            {
+                "name": "init_sys",
+                "start": 181,
+                "end": 200
+            },
+            {
+                "name": "make_daemon",
+                "start": 202,
+                "end": 241
+            },
+            {
+                "name": "check_rehash",
+                "start": 262,
+                "end": 287
+            },
+            {
+                "name": "initialize_global_set_options",
+                "start": 296,
+                "end": 343
+            },
+            {
+                "name": "initialize_server_capabs",
+                "start": 351,
+                "end": 355
+            },
+            {
+                "name": "write_pidfile",
+                "start": 365,
+                "end": 387
+            },
+            {
+                "name": "check_pidfile",
+                "start": 398,
+                "end": 419
+            },
+            {
+                "name": "setup_corefile",
+                "start": 429,
+                "end": 442
+            },
+            {
+                "name": "ircd_log_cb",
+                "start": 444,
+                "end": 448
+            },
+            {
+                "name": "ircd_restart_cb",
+                "start": 450,
+                "end": 455
+            },
+            {
+                "name": "ircd_die_cb",
+                "start": 464,
+                "end": 478
+            },
+            {
+                "name": "seed_with_urandom",
+                "start": 482,
+                "end": 499
+            },
+            {
+                "name": "seed_with_clock",
+                "start": 501,
+                "end": 508
+            },
+            {
+                "name": "seed_random",
+                "start": 510,
+                "end": 521
+            },
+            {
+                "name": "main",
+                "start": 532,
+                "end": 764
+            }
+        ],
+        "src/supported.c": [
+            {
+                "name": "add_isupport",
+                "start": 94,
+                "end": 104
+            },
+            {
+                "name": "change_isupport",
+                "start": 106,
+                "end": 130
+            },
+            {
+                "name": "delete_isupport",
+                "start": 132,
+                "end": 148
+            },
+            {
+                "name": "show_isupport",
+                "start": 151,
+                "end": 196
+            },
+            {
+                "name": "isupport_intptr",
+                "start": 198,
+                "end": 204
+            },
+            {
+                "name": "isupport_boolean",
+                "start": 206,
+                "end": 211
+            },
+            {
+                "name": "isupport_string",
+                "start": 213,
+                "end": 218
+            },
+            {
+                "name": "isupport_stringptr",
+                "start": 220,
+                "end": 224
+            },
+            {
+                "name": "isupport_chanmodes",
+                "start": 226,
+                "end": 237
+            },
+            {
+                "name": "isupport_chantypes",
+                "start": 239,
+                "end": 243
+            },
+            {
+                "name": "isupport_chanlimit",
+                "start": 245,
+                "end": 253
+            },
+            {
+                "name": "isupport_maxlist",
+                "start": 255,
+                "end": 265
+            },
+            {
+                "name": "isupport_targmax",
+                "start": 267,
+                "end": 276
+            },
+            {
+                "name": "isupport_extban",
+                "start": 278,
+                "end": 289
+            },
+            {
+                "name": "isupport_nicklen",
+                "start": 291,
+                "end": 298
+            },
+            {
+                "name": "init_isupport",
+                "start": 300,
+                "end": 336
+            }
+        ],
+        "src/capability.c": [
+            {
+                "name": "capability_get",
+                "start": 43,
+                "end": 55
+            },
+            {
+                "name": "capability_put",
+                "start": 57,
+                "end": 84
+            },
+            {
+                "name": "capability_orphan",
+                "start": 86,
+                "end": 99
+            },
+            {
+                "name": "capability_require",
+                "start": 101,
+                "end": 111
+            },
+            {
+                "name": "capability_destroy",
+                "start": 113,
+                "end": 119
+            },
+            {
+                "name": "capability_index_create",
+                "start": 121,
+                "end": 134
+            },
+            {
+                "name": "capability_index_destroy",
+                "start": 136,
+                "end": 145
+            },
+            {
+                "name": "capability_index_list",
+                "start": 147,
+                "end": 173
+            },
+            {
+                "name": "capability_index_mask",
+                "start": 175,
+                "end": 191
+            },
+            {
+                "name": "capability_index_get_required",
+                "start": 193,
+                "end": 209
+            },
+            {
+                "name": "capability_index_stats",
+                "start": 211,
+                "end": 239
+            }
+        ],
+        "src/monitor.c": [
+            {
+                "name": "init_monitor",
+                "start": 43,
+                "end": 47
+            },
+            {
+                "name": "hash_monitor_nick",
+                "start": 49,
+                "end": 53
+            },
+            {
+                "name": "find_monitor",
+                "start": 55,
+                "end": 81
+            },
+            {
+                "name": "free_monitor",
+                "start": 83,
+                "end": 91
+            },
+            {
+                "name": "monitor_signon",
+                "start": 100,
+                "end": 113
+            },
+            {
+                "name": "monitor_signoff",
+                "start": 122,
+                "end": 133
+            },
+            {
+                "name": "clear_monitor",
+                "start": 135,
+                "end": 153
+            }
+        ],
+        "src/s_user.c": [
+            {
+                "name": "show_lusers",
+                "start": 142,
+                "end": 193
+            },
+            {
+                "name": "register_local_user",
+                "start": 219,
+                "end": 571
+            },
+            {
+                "name": "introduce_client",
+                "start": 582,
+                "end": 704
+            },
+            {
+                "name": "valid_hostname",
+                "start": 716,
+                "end": 751
+            },
+            {
+                "name": "valid_username",
+                "start": 765,
+                "end": 800
+            },
+            {
+                "name": "report_and_set_user_flags",
+                "start": 811,
+                "end": 867
+            },
+            {
+                "name": "show_other_user_mode",
+                "start": 869,
+                "end": 891
+            },
+            {
+                "name": "user_mode",
+                "start": 900,
+                "end": 1147
+            },
+            {
+                "name": "send_umode",
+                "start": 1153,
+                "end": 1199
+            },
+            {
+                "name": "send_umode_out",
+                "start": 1208,
+                "end": 1231
+            },
+            {
+                "name": "user_welcome",
+                "start": 1240,
+                "end": 1268
+            },
+            {
+                "name": "oper_up",
+                "start": 1277,
+                "end": 1344
+            },
+            {
+                "name": "find_umode_slot",
+                "start": 1354,
+                "end": 1366
+            },
+            {
+                "name": "construct_umodebuf",
+                "start": 1368,
+                "end": 1400
+            },
+            {
+                "name": "change_nick_user_host",
+                "start": 1402,
+                "end": 1511
+            }
+        ],
+        "src/modules.c": [
+            {
+                "name": "modules_init",
+                "start": 113,
+                "end": 125
+            },
+            {
+                "name": "mod_find_path",
+                "start": 133,
+                "end": 148
+            },
+            {
+                "name": "mod_add_path",
+                "start": 156,
+                "end": 168
+            },
+            {
+                "name": "mod_clear_paths",
+                "start": 176,
+                "end": 189
+            },
+            {
+                "name": "findmodule_byname",
+                "start": 198,
+                "end": 209
+            },
+            {
+                "name": "load_all_modules",
+                "start": 217,
+                "end": 250
+            },
+            {
+                "name": "load_core_modules",
+                "start": 258,
+                "end": 278
+            },
+            {
+                "name": "load_one_module",
+                "start": 286,
+                "end": 322
+            },
+            {
+                "name": "mo_modload",
+                "start": 326,
+                "end": 352
+            },
+            {
+                "name": "mo_modunload",
+                "start": 356,
+                "end": 392
+            },
+            {
+                "name": "mo_modreload",
+                "start": 395,
+                "end": 437
+            },
+            {
+                "name": "mo_modlist",
+                "start": 440,
+                "end": 476
+            },
+            {
+                "name": "mo_modrestart",
+                "start": 479,
+                "end": 506
+            },
+            {
+                "name": "unload_one_module",
+                "start": 684,
+                "end": 754
+            },
+            {
+                "name": "load_a_module",
+                "start": 764,
+                "end": 891
+            },
+            {
+                "name": "increase_modlist",
+                "start": 900,
+                "end": 915
+            }
+        ],
+        "src/ircd_signal.c": [
+            {
+                "name": "dummy_handler",
+                "start": 36,
+                "end": 40
+            },
+            {
+                "name": "sigchld_handler",
+                "start": 43,
+                "end": 52
+            },
+            {
+                "name": "sigterm_handler",
+                "start": 57,
+                "end": 61
+            },
+            {
+                "name": "sighup_handler",
+                "start": 66,
+                "end": 70
+            },
+            {
+                "name": "sigusr1_handler",
+                "start": 75,
+                "end": 79
+            },
+            {
+                "name": "sigusr2_handler",
+                "start": 81,
+                "end": 85
+            },
+            {
+                "name": "sigint_handler",
+                "start": 90,
+                "end": 109
+            },
+            {
+                "name": "setup_signals",
+                "start": 114,
+                "end": 175
+            }
+        ],
+        "src/restart.c": [
+            {
+                "name": "restart",
+                "start": 39,
+                "end": 51
+            },
+            {
+                "name": "server_reboot",
+                "start": 53,
+                "end": 84
+            }
+        ],
+        "src/s_newconf.c": [
+            {
+                "name": "init_s_newconf",
+                "start": 68,
+                "end": 75
+            },
+            {
+                "name": "clear_s_newconf",
+                "start": 77,
+                "end": 121
+            },
+            {
+                "name": "clear_s_newconf_bans",
+                "start": 123,
+                "end": 153
+            },
+            {
+                "name": "make_remote_conf",
+                "start": 155,
+                "end": 160
+            },
+            {
+                "name": "free_remote_conf",
+                "start": 162,
+                "end": 173
+            },
+            {
+                "name": "find_shared_conf",
+                "start": 175,
+                "end": 198
+            },
+            {
+                "name": "propagate_generic",
+                "start": 200,
+                "end": 217
+            },
+            {
+                "name": "cluster_generic",
+                "start": 219,
+                "end": 246
+            },
+            {
+                "name": "make_oper_conf",
+                "start": 248,
+                "end": 253
+            },
+            {
+                "name": "free_oper_conf",
+                "start": 255,
+                "end": 281
+            },
+            {
+                "name": "find_oper_conf",
+                "start": 283,
+                "end": 320
+            },
+            {
+                "name": "make_server_conf",
+                "start": 322,
+                "end": 328
+            },
+            {
+                "name": "free_server_conf",
+                "start": 330,
+                "end": 353
+            },
+            {
+                "name": "add_server_conf",
+                "start": 355,
+                "end": 378
+            },
+            {
+                "name": "find_server_conf",
+                "start": 380,
+                "end": 398
+            },
+            {
+                "name": "attach_server_conf",
+                "start": 400,
+                "end": 417
+            },
+            {
+                "name": "detach_server_conf",
+                "start": 419,
+                "end": 440
+            },
+            {
+                "name": "set_server_conf_autoconn",
+                "start": 442,
+                "end": 460
+            },
+            {
+                "name": "disable_server_conf_autoconn",
+                "start": 462,
+                "end": 478
+            },
+            {
+                "name": "find_xline",
+                "start": 480,
+                "end": 499
+            },
+            {
+                "name": "find_xline_mask",
+                "start": 501,
+                "end": 516
+            },
+            {
+                "name": "find_nick_resv",
+                "start": 518,
+                "end": 536
+            },
+            {
+                "name": "find_nick_resv_mask",
+                "start": 538,
+                "end": 553
+            },
+            {
+                "name": "clean_resv_nick",
+                "start": 561,
+                "end": 588
+            },
+            {
+                "name": "valid_wild_card_simple",
+                "start": 596,
+                "end": 630
+            },
+            {
+                "name": "valid_temp_time",
+                "start": 632,
+                "end": 653
+            },
+            {
+                "name": "expire_temp_rxlines",
+                "start": 656,
+                "end": 716
+            },
+            {
+                "name": "get_nd_count",
+                "start": 718,
+                "end": 722
+            },
+            {
+                "name": "add_nd_entry",
+                "start": 724,
+                "end": 741
+            },
+            {
+                "name": "free_nd_entry",
+                "start": 743,
+                "end": 750
+            },
+            {
+                "name": "expire_nd_entries",
+                "start": 752,
+                "end": 771
+            },
+            {
+                "name": "add_tgchange",
+                "start": 773,
+                "end": 792
+            },
+            {
+                "name": "find_tgchange",
+                "start": 794,
+                "end": 803
+            }
+        ],
+        "src/res.c": [
+            {
+                "name": "do_query_number",
+                "start": 83,
+                "end": 84
+            },
+            {
+                "name": "res_ourserver",
+                "start": 104,
+                "end": 157
+            },
+            {
+                "name": "timeout_query_list",
+                "start": 163,
+                "end": 200
+            },
+            {
+                "name": "timeout_resolver",
+                "start": 205,
+                "end": 208
+            },
+            {
+                "name": "start_resolver",
+                "start": 216,
+                "end": 234
+            },
+            {
+                "name": "init_resolver",
+                "start": 239,
+                "end": 245
+            },
+            {
+                "name": "restart_resolver",
+                "start": 250,
+                "end": 256
+            },
+            {
+                "name": "add_local_domain",
+                "start": 262,
+                "end": 278
+            },
+            {
+                "name": "rem_request",
+                "start": 285,
+                "end": 290
+            },
+            {
+                "name": "make_request",
+                "start": 295,
+                "end": 307
+            },
+            {
+                "name": "delete_resolver_queries",
+                "start": 313,
+                "end": 327
+            },
+            {
+                "name": "retryfreq",
+                "start": 333,
+                "end": 348
+            },
+            {
+                "name": "send_res_msg",
+                "start": 356,
+                "end": 391
+            },
+            {
+                "name": "find_id",
+                "start": 396,
+                "end": 410
+            },
+            {
+                "name": "gethost_byname_type",
+                "start": 416,
+                "end": 420
+            },
+            {
+                "name": "gethost_byaddr",
+                "start": 425,
+                "end": 428
+            },
+            {
+                "name": "do_query_name",
+                "start": 433,
+                "end": 451
+            },
+            {
+                "name": "do_query_number",
+                "start": 456,
+                "end": 505
+            },
+            {
+                "name": "query_name",
+                "start": 510,
+                "end": 552
+            },
+            {
+                "name": "resend_query",
+                "start": 554,
+                "end": 570
+            },
+            {
+                "name": "check_question",
+                "start": 577,
+                "end": 593
+            },
+            {
+                "name": "proc_answer",
+                "start": 598,
+                "end": 731
+            },
+            {
+                "name": "res_read_single_reply",
+                "start": 737,
+                "end": 861
+            },
+            {
+                "name": "res_readreply",
+                "start": 863,
+                "end": 868
+            },
+            {
+                "name": "make_dnsreply",
+                "start": 870,
+                "end": 880
+            },
+            {
+                "name": "report_dns_servers",
+                "start": 882,
+                "end": 895
+            }
+        ],
+        "src/substitution.c": [
+            {
+                "name": "substitution_append_var",
+                "start": 60,
+                "end": 68
+            },
+            {
+                "name": "substitution_free",
+                "start": 77,
+                "end": 90
+            },
+            {
+                "name": "substitution_parse",
+                "start": 99,
+                "end": 150
+            }
+        ],
+        "src/snomask.c": [
+            {
+                "name": "construct_snobuf",
+                "start": 121,
+                "end": 137
+            },
+            {
+                "name": "parse_snobuf_to_mask",
+                "start": 146,
+                "end": 176
+            },
+            {
+                "name": "find_snomask_slot",
+                "start": 186,
+                "end": 198
+            }
+        ],
+        "src/parse.c": [
+            {
+                "name": "string_to_array",
+                "start": 64,
+                "end": 111
+            },
+            {
+                "name": "parse",
+                "start": 117,
+                "end": 295
+            },
+            {
+                "name": "handle_command",
+                "start": 308,
+                "end": 372
+            },
+            {
+                "name": "handle_encap",
+                "start": 374,
+                "end": 397
+            },
+            {
+                "name": "clear_hash_parse",
+                "start": 408,
+                "end": 412
+            },
+            {
+                "name": "mod_add_cmd",
+                "start": 423,
+                "end": 438
+            },
+            {
+                "name": "mod_del_cmd",
+                "start": 446,
+                "end": 454
+            },
+            {
+                "name": "report_messages",
+                "start": 463,
+                "end": 486
+            },
+            {
+                "name": "cancel_clients",
+                "start": 495,
+                "end": 519
+            },
+            {
+                "name": "remove_unknown",
+                "start": 527,
+                "end": 566
+            },
+            {
+                "name": "do_numeric",
+                "start": 583,
+                "end": 671
+            },
+            {
+                "name": "do_alias",
+                "start": 673,
+                "end": 718
+            },
+            {
+                "name": "m_not_oper",
+                "start": 720,
+                "end": 725
+            },
+            {
+                "name": "m_unregistered",
+                "start": 727,
+                "end": 742
+            },
+            {
+                "name": "m_registered",
+                "start": 744,
+                "end": 749
+            },
+            {
+                "name": "m_ignore",
+                "start": 751,
+                "end": 755
+            }
+        ],
+        "src/newconf.c": [
+            {
+                "name": "conf_strtype",
+                "start": 64,
+                "end": 82
+            },
+            {
+                "name": "add_top_conf",
+                "start": 84,
+                "end": 99
+            },
+            {
+                "name": "find_top_conf",
+                "start": 101,
+                "end": 115
+            },
+            {
+                "name": "find_conf_item",
+                "start": 118,
+                "end": 145
+            },
+            {
+                "name": "remove_top_conf",
+                "start": 147,
+                "end": 163
+            },
+            {
+                "name": "conf_set_serverinfo_name",
+                "start": 165,
+                "end": 203
+            },
+            {
+                "name": "conf_set_serverinfo_sid",
+                "start": 205,
+                "end": 222
+            },
+            {
+                "name": "conf_set_serverinfo_network_name",
+                "start": 224,
+                "end": 234
+            },
+            {
+                "name": "conf_set_serverinfo_vhost",
+                "start": 236,
+                "end": 246
+            },
+            {
+                "name": "conf_set_serverinfo_vhost6",
+                "start": 248,
+                "end": 263
+            },
+            {
+                "name": "conf_set_serverinfo_nicklen",
+                "start": 265,
+                "end": 282
+            },
+            {
+                "name": "conf_set_modules_module",
+                "start": 284,
+                "end": 301
+            },
+            {
+                "name": "conf_set_modules_path",
+                "start": 303,
+                "end": 311
+            },
+            {
+                "name": "find_umode",
+                "start": 405,
+                "end": 417
+            },
+            {
+                "name": "set_modes_from_table",
+                "start": 419,
+                "end": 460
+            },
+            {
+                "name": "conf_set_privset_extends",
+                "start": 462,
+                "end": 466
+            },
+            {
+                "name": "conf_set_privset_privs",
+                "start": 468,
+                "end": 514
+            },
+            {
+                "name": "conf_begin_oper",
+                "start": 516,
+                "end": 538
+            },
+            {
+                "name": "conf_end_oper",
+                "start": 540,
+                "end": 635
+            },
+            {
+                "name": "conf_set_oper_flags",
+                "start": 637,
+                "end": 643
+            },
+            {
+                "name": "conf_set_oper_fingerprint",
+                "start": 645,
+                "end": 651
+            },
+            {
+                "name": "conf_set_oper_privset",
+                "start": 653,
+                "end": 657
+            },
+            {
+                "name": "conf_set_oper_user",
+                "start": 659,
+                "end": 690
+            },
+            {
+                "name": "conf_set_oper_password",
+                "start": 692,
+                "end": 702
+            },
+            {
+                "name": "conf_set_oper_rsa_public_key_file",
+                "start": 704,
+                "end": 713
+            },
+            {
+                "name": "conf_set_oper_umodes",
+                "start": 715,
+                "end": 719
+            },
+            {
+                "name": "conf_set_oper_snomask",
+                "start": 721,
+                "end": 725
+            },
+            {
+                "name": "conf_begin_class",
+                "start": 727,
+                "end": 735
+            },
+            {
+                "name": "conf_end_class",
+                "start": 737,
+                "end": 752
+            },
+            {
+                "name": "conf_set_class_ping_time",
+                "start": 754,
+                "end": 758
+            },
+            {
+                "name": "conf_set_class_cidr_ipv4_bitlen",
+                "start": 760,
+                "end": 771
+            },
+            {
+                "name": "conf_set_class_number_per_cidr",
+                "start": 788,
+                "end": 792
+            },
+            {
+                "name": "conf_set_class_number_per_ip",
+                "start": 794,
+                "end": 798
+            },
+            {
+                "name": "conf_set_class_number_per_ip_global",
+                "start": 801,
+                "end": 805
+            },
+            {
+                "name": "conf_set_class_number_per_ident",
+                "start": 807,
+                "end": 811
+            },
+            {
+                "name": "conf_set_class_connectfreq",
+                "start": 813,
+                "end": 817
+            },
+            {
+                "name": "conf_set_class_max_number",
+                "start": 819,
+                "end": 823
+            },
+            {
+                "name": "conf_set_class_sendq",
+                "start": 825,
+                "end": 829
+            },
+            {
+                "name": "conf_begin_listen",
+                "start": 833,
+                "end": 839
+            },
+            {
+                "name": "conf_end_listen",
+                "start": 841,
+                "end": 847
+            },
+            {
+                "name": "conf_set_listen_defer_accept",
+                "start": 849,
+                "end": 853
+            },
+            {
+                "name": "conf_set_listen_port_both",
+                "start": 855,
+                "end": 889
+            },
+            {
+                "name": "conf_set_listen_port",
+                "start": 891,
+                "end": 895
+            },
+            {
+                "name": "conf_set_listen_sslport",
+                "start": 897,
+                "end": 901
+            },
+            {
+                "name": "conf_set_listen_address",
+                "start": 903,
+                "end": 908
+            },
+            {
+                "name": "conf_begin_auth",
+                "start": 910,
+                "end": 929
+            },
+            {
+                "name": "conf_end_auth",
+                "start": 931,
+                "end": 998
+            },
+            {
+                "name": "conf_set_auth_user",
+                "start": 1000,
+                "end": 1030
+            },
+            {
+                "name": "conf_set_auth_auth_user",
+                "start": 1032,
+                "end": 1039
+            },
+            {
+                "name": "conf_set_auth_passwd",
+                "start": 1041,
+                "end": 1048
+            },
+            {
+                "name": "conf_set_auth_spoof",
+                "start": 1050,
+                "end": 1109
+            },
+            {
+                "name": "conf_set_auth_flags",
+                "start": 1111,
+                "end": 1117
+            },
+            {
+                "name": "conf_set_auth_redir_serv",
+                "start": 1119,
+                "end": 1125
+            },
+            {
+                "name": "conf_set_auth_redir_port",
+                "start": 1127,
+                "end": 1134
+            },
+            {
+                "name": "conf_set_auth_class",
+                "start": 1136,
+                "end": 1141
+            },
+            {
+                "name": "conf_cleanup_shared",
+                "start": 1147,
+                "end": 1165
+            },
+            {
+                "name": "conf_set_shared_oper",
+                "start": 1167,
+                "end": 1220
+            },
+            {
+                "name": "conf_set_shared_flags",
+                "start": 1222,
+                "end": 1244
+            },
+            {
+                "name": "conf_begin_connect",
+                "start": 1246,
+                "end": 1260
+            },
+            {
+                "name": "conf_end_connect",
+                "start": 1262,
+                "end": 1305
+            },
+            {
+                "name": "conf_set_connect_host",
+                "start": 1307,
+                "end": 1314
+            },
+            {
+                "name": "conf_set_connect_vhost",
+                "start": 1316,
+                "end": 1327
+            },
+            {
+                "name": "conf_set_connect_send_password",
+                "start": 1329,
+                "end": 1339
+            },
+            {
+                "name": "conf_set_connect_accept_password",
+                "start": 1341,
+                "end": 1350
+            },
+            {
+                "name": "conf_set_connect_fingerprint",
+                "start": 1352,
+                "end": 1361
+            },
+            {
+                "name": "conf_set_connect_port",
+                "start": 1363,
+                "end": 1372
+            },
+            {
+                "name": "conf_set_connect_aftype",
+                "start": 1374,
+                "end": 1387
+            },
+            {
+                "name": "conf_set_connect_flags",
+                "start": 1389,
+                "end": 1398
+            },
+            {
+                "name": "conf_set_connect_hub_mask",
+                "start": 1400,
+                "end": 1414
+            },
+            {
+                "name": "conf_set_connect_leaf_mask",
+                "start": 1416,
+                "end": 1430
+            },
+            {
+                "name": "conf_set_connect_class",
+                "start": 1432,
+                "end": 1437
+            },
+            {
+                "name": "conf_set_exempt_ip",
+                "start": 1439,
+                "end": 1455
+            },
+            {
+                "name": "conf_cleanup_cluster",
+                "start": 1457,
+                "end": 1475
+            },
+            {
+                "name": "conf_set_cluster_name",
+                "start": 1477,
+                "end": 1488
+            },
+            {
+                "name": "conf_set_cluster_flags",
+                "start": 1490,
+                "end": 1511
+            },
+            {
+                "name": "conf_set_general_havent_read_conf",
+                "start": 1513,
+                "end": 1526
+            },
+            {
+                "name": "conf_set_general_hide_error_messages",
+                "start": 1528,
+                "end": 1541
+            },
+            {
+                "name": "conf_set_general_kline_delay",
+                "start": 1543,
+                "end": 1550
+            },
+            {
+                "name": "conf_set_general_stats_k_oper_only",
+                "start": 1552,
+                "end": 1565
+            },
+            {
+                "name": "conf_set_general_stats_i_oper_only",
+                "start": 1567,
+                "end": 1580
+            },
+            {
+                "name": "conf_set_general_compression_level",
+                "start": 1582,
+                "end": 1598
+            },
+            {
+                "name": "conf_set_general_default_umodes",
+                "start": 1600,
+                "end": 1638
+            },
+            {
+                "name": "conf_set_general_oper_umodes",
+                "start": 1640,
+                "end": 1644
+            },
+            {
+                "name": "conf_set_general_oper_only_umodes",
+                "start": 1646,
+                "end": 1650
+            },
+            {
+                "name": "conf_set_general_oper_snomask",
+                "start": 1652,
+                "end": 1681
+            },
+            {
+                "name": "conf_set_serverhide_links_delay",
+                "start": 1683,
+                "end": 1689
+            },
+            {
+                "name": "conf_begin_service",
+                "start": 1691,
+                "end": 1705
+            },
+            {
+                "name": "conf_set_service_name",
+                "start": 1707,
+                "end": 1738
+            },
+            {
+                "name": "conf_begin_alias",
+                "start": 1740,
+                "end": 1752
+            },
+            {
+                "name": "conf_end_alias",
+                "start": 1754,
+                "end": 1781
+            },
+            {
+                "name": "conf_set_alias_name",
+                "start": 1783,
+                "end": 1790
+            },
+            {
+                "name": "conf_set_alias_target",
+                "start": 1792,
+                "end": 1799
+            },
+            {
+                "name": "conf_set_blacklist_host",
+                "start": 1801,
+                "end": 1805
+            },
+            {
+                "name": "conf_set_blacklist_type",
+                "start": 1807,
+                "end": 1833
+            },
+            {
+                "name": "conf_set_blacklist_reason",
+                "start": 1835,
+                "end": 1874
+            },
+            {
+                "name": "conf_report_error",
+                "start": 1879,
+                "end": 1897
+            },
+            {
+                "name": "conf_start_block",
+                "start": 1899,
+                "end": 1918
+            },
+            {
+                "name": "conf_end_block",
+                "start": 1920,
+                "end": 1928
+            },
+            {
+                "name": "conf_set_generic_int",
+                "start": 1930,
+                "end": 1934
+            },
+            {
+                "name": "conf_set_generic_string",
+                "start": 1936,
+                "end": 1947
+            },
+            {
+                "name": "conf_call_set",
+                "start": 1949,
+                "end": 2044
+            },
+            {
+                "name": "add_conf_item",
+                "start": 2046,
+                "end": 2068
+            },
+            {
+                "name": "remove_conf_item",
+                "start": 2070,
+                "end": 2090
+            },
+            {
+                "name": "newconf_init",
+                "start": 2326,
+                "end": 2377
+            }
+        ],
+        "src/s_serv.c": [
+            {
+                "name": "init_builtin_capabs",
+                "start": 100,
+                "end": 123
+            },
+            {
+                "name": "hunt_server",
+                "start": 147,
+                "end": 220
+            },
+            {
+                "name": "try_connections",
+                "start": 228,
+                "end": 313
+            },
+            {
+                "name": "check_server",
+                "start": 315,
+                "end": 400
+            },
+            {
+                "name": "send_capabilities",
+                "start": 411,
+                "end": 415
+            },
+            {
+                "name": "burst_ban",
+                "start": 417,
+                "end": 476
+            },
+            {
+                "name": "burst_modes_TS6",
+                "start": 484,
+                "end": 535
+            },
+            {
+                "name": "burst_TS6",
+                "start": 545,
+                "end": 696
+            },
+            {
+                "name": "show_capabilities",
+                "start": 705,
+                "end": 725
+            },
+            {
+                "name": "server_estab",
+                "start": 734,
+                "end": 957
+            },
+            {
+                "name": "serv_connect_resolved",
+                "start": 965,
+                "end": 1055
+            },
+            {
+                "name": "serv_connect_dns_callback",
+                "start": 1057,
+                "end": 1092
+            },
+            {
+                "name": "serv_connect",
+                "start": 1111,
+                "end": 1234
+            },
+            {
+                "name": "serv_connect_ssl_callback",
+                "start": 1236,
+                "end": 1262
+            },
+            {
+                "name": "serv_connect_callback",
+                "start": 1273,
+                "end": 1375
+            }
+        ],
+        "src/irc_dictionary.c": [
+            {
+                "name": "irc_dictionary_create",
+                "start": 57,
+                "end": 67
+            },
+            {
+                "name": "irc_dictionary_create_named",
+                "start": 86,
+                "end": 98
+            },
+            {
+                "name": "irc_dictionary_set_comparator_func",
+                "start": 117,
+                "end": 124
+            },
+            {
+                "name": "irc_dictionary_get_comparator_func",
+                "start": 140,
+                "end": 146
+            },
+            {
+                "name": "irc_dictionary_get_linear_index",
+                "start": 164,
+                "end": 190
+            },
+            {
+                "name": "irc_dictionary_retune",
+                "start": 206,
+                "end": 282
+            },
+            {
+                "name": "irc_dictionary_link",
+                "start": 305,
+                "end": 369
+            },
+            {
+                "name": "irc_dictionary_unlink_root",
+                "start": 385,
+                "end": 438
+            },
+            {
+                "name": "irc_dictionary_destroy",
+                "start": 462,
+                "end": 479
+            },
+            {
+                "name": "irc_dictionary_foreach",
+                "start": 499,
+                "end": 515
+            },
+            {
+                "name": "irc_dictionary_search",
+                "start": 536,
+                "end": 558
+            },
+            {
+                "name": "irc_dictionary_foreach_start",
+                "start": 576,
+                "end": 595
+            },
+            {
+                "name": "irc_dictionary_foreach_cur",
+                "start": 614,
+                "end": 621
+            },
+            {
+                "name": "irc_dictionary_foreach_next",
+                "start": 639,
+                "end": 657
+            },
+            {
+                "name": "irc_dictionary_find",
+                "start": 675,
+                "end": 687
+            },
+            {
+                "name": "irc_dictionary_add",
+                "start": 706,
+                "end": 729
+            },
+            {
+                "name": "irc_dictionary_delete",
+                "start": 750,
+                "end": 764
+            },
+            {
+                "name": "irc_dictionary_retrieve",
+                "start": 782,
+                "end": 790
+            },
+            {
+                "name": "irc_dictionary_size",
+                "start": 806,
+                "end": 811
+            },
+            {
+                "name": "stats_recurse",
+                "start": 814,
+                "end": 827
+            },
+            {
+                "name": "irc_dictionary_stats",
+                "start": 845,
+                "end": 864
+            }
+        ],
+        "src/hostmask.c": [
+            {
+                "name": "parse_netmask",
+                "start": 50,
+                "end": 106
+            },
+            {
+                "name": "init_host_hash",
+                "start": 111,
+                "end": 115
+            },
+            {
+                "name": "hash_ipv4",
+                "start": 122,
+                "end": 134
+            },
+            {
+                "name": "hash_text",
+                "start": 171,
+                "end": 183
+            },
+            {
+                "name": "get_mask_hash",
+                "start": 191,
+                "end": 202
+            },
+            {
+                "name": "find_conf_by_address",
+                "start": 212,
+                "end": 357
+            },
+            {
+                "name": "find_address_conf",
+                "start": 365,
+                "end": 435
+            },
+            {
+                "name": "find_dline",
+                "start": 442,
+                "end": 466
+            },
+            {
+                "name": "find_exact_conf_by_address",
+                "start": 473,
+                "end": 521
+            },
+            {
+                "name": "add_conf_by_address",
+                "start": 529,
+                "end": 571
+            },
+            {
+                "name": "delete_one_address_conf",
+                "start": 579,
+                "end": 620
+            },
+            {
+                "name": "clear_out_address_conf",
+                "start": 629,
+                "end": 660
+            },
+            {
+                "name": "clear_out_address_conf_bans",
+                "start": 662,
+                "end": 693
+            },
+            {
+                "name": "show_iline_prefix",
+                "start": 705,
+                "end": 729
+            },
+            {
+                "name": "report_auth",
+                "start": 737,
+                "end": 766
+            },
+            {
+                "name": "report_Klines",
+                "start": 774,
+                "end": 803
+            }
+        ],
+        "src/hook.c": [
+            {
+                "name": "init_hook",
+                "start": 68,
+                "end": 90
+            },
+            {
+                "name": "grow_hooktable",
+                "start": 95,
+                "end": 106
+            },
+            {
+                "name": "find_freehookslot",
+                "start": 112,
+                "end": 128
+            },
+            {
+                "name": "find_hook",
+                "start": 133,
+                "end": 148
+            },
+            {
+                "name": "register_hook",
+                "start": 154,
+                "end": 167
+            },
+            {
+                "name": "add_hook",
+                "start": 173,
+                "end": 181
+            },
+            {
+                "name": "remove_hook",
+                "start": 186,
+                "end": 195
+            },
+            {
+                "name": "call_hook",
+                "start": 200,
+                "end": 214
+            }
+        ],
+        "src/privilege.c": [
+            {
+                "name": "privilegeset_in_set",
+                "start": 31,
+                "end": 38
+            },
+            {
+                "name": "privilegeset_get_any",
+                "start": 40,
+                "end": 56
+            },
+            {
+                "name": "privilegeset_set_new",
+                "start": 58,
+                "end": 84
+            },
+            {
+                "name": "privilegeset_extend",
+                "start": 86,
+                "end": 119
+            },
+            {
+                "name": "privilegeset_get",
+                "start": 121,
+                "end": 130
+            },
+            {
+                "name": "privilegeset_ref",
+                "start": 132,
+                "end": 140
+            },
+            {
+                "name": "privilegeset_unref",
+                "start": 142,
+                "end": 160
+            },
+            {
+                "name": "privilegeset_mark_all_illegal",
+                "start": 162,
+                "end": 180
+            },
+            {
+                "name": "privilegeset_delete_all_illegal",
+                "start": 182,
+                "end": 194
+            },
+            {
+                "name": "privilegeset_report",
+                "start": 196,
+                "end": 211
+            }
+        ]
+    }
+}
