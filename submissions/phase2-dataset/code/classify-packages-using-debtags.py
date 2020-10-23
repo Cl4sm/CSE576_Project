@@ -43,7 +43,7 @@ def main():
     os.makedirs(output_dir, exist_ok=True)
 
     check_if_runnable_package_file = os.path.join(output_dir, "check-if-runnable-package.txt")
-    partially_c_packages_file = os.path.join(output_dir, "partially-c-packages.txt")
+    partially_c_packages_file = os.path.join(output_dir, "runnable-partially-c-packages.txt")
     not_runnable_packages_file = os.path.join(output_dir, "not-runnable-packages.txt")
     runnable_non_c_packages_file = os.path.join(output_dir, "non-c-runnable-packages.txt")
     runnable_unknown_language_packages_file = os.path.join(output_dir, "runnable-unknown-language-packages.txt")
