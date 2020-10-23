@@ -162,7 +162,7 @@ since specific details of those tasks have not yet been identified, we do not ha
                     python3 parse-package-using-clang.py --package-tree $(realpath ./debtags-classification/runnable-c-only-packages/$i) \
                         --output-file clang-filtered/$i.json
                done
-    (cse576) $ for i in $(cat debtags-classification/runnable-partially-c-packages.txt)
+    (cse576) $ for i in $(cat debtags-classification/runnable-partially-c-packages-linguist-filtered.txt)
                do
                     python3 parse-package-using-clang.py --package-tree $(realpath ./debtags-classification/runnable-partially-c-packages/$i) \
                         --output-file clang-filtered/$i.json
