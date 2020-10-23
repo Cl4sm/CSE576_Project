@@ -15,7 +15,8 @@ DOCKER_IMAGE_NAME = "jessie-downloader"
 DOCKERFILE_DIR = "downloader-docker"
 PACKAGE_DIR = "dataset-packages"
 DEBTAG_FILE = "debtags-2020-10-16.txt"
-FILTER_TYPES = ["runnable-c-only-packages", "runnable-unknown-language-packages"]
+FILTER_TYPES = ["runnable-partially-c-packages", "runnable-unknown-language-packages"]
+C_ONLY_TYPES = ["runnable-c-only-packages"]
 GL_RES_DIR = "gl_results"
 CLANG_RES_DIR = "clang_results"
 
@@ -78,27 +79,42 @@ def do_gl_filtering():
         type_dir = os.path.join(package_dir, ftype)
         gl_filter_packages(type_dir, filtered_res)
 
-def do_clang_parse_one_type(ftype):
-    filtered_res = os.path.join(gl_res_dir, ftype+"-filtered.txt")
-    with open(filtered_res) as f:
-        content = f.read()
+def do_clang_parse_one_package(ftype, package_name):
+    output_path = os.path.join(clang_res_dir, package_name+".json")
+    package_tree = os.path.join(package_dir, ftype, package_name)
+    assert os.path.isdir(package_tree)
 
-    package_names = [x for x in content.splitlines() if x]
-    for package_name in tqdm.tqdm(package_names, desc=ftype):
-        package_name = package_name.strip()
-        if not package_name:
+    clang_parse(package_name, None, output_path, package_tree)
+
+def gen_task_for_clang():
+    for ftype in C_ONLY_TYPES:
+        ftype_dir = os.path.join(package_dir, ftype)
+        package_names = [x for x in os.listdir(ftype_dir) if os.path.isdir(os.path.join(ftype_dir, x))]
+        for package_name in package_names:
+            yield (ftype, package_name)
+
+    for ftype in FILTER_TYPES:
+        try:
+            filtered_res = os.path.join(gl_res_dir, ftype+"-filtered.txt")
+            with open(filtered_res) as f:
+                content = f.read()
+        except Exception:
             continue
-
-        output_path = os.path.join(clang_res_dir, package_name+".json")
-        package_tree = os.path.join(package_dir, ftype, package_name)
-        assert os.path.isdir(package_tree)
-
-        clang_parse(package_name, None, output_path, package_tree)
+        package_names = [x.strip() for x in content.splitlines() if x]
+        for package_name in package_names:
+            yield (ftype, package_name)
 
 def do_clang_parse():
     print("Starting parsing packages using libclang...")
-    for ftype in FILTER_TYPES:
-        do_clang_parse_one_type(ftype)
+    gen = gen_task_for_clang()
+
+    tasks = list(gen)
+
+    for task in tqdm.tqdm(tasks, desc="clang-parse"):
+        ftype = task[0]
+        package_name = task[1]
+        do_clang_parse_one_package(ftype, package_name)
+
 
 if __name__ == "__main__":
     import argparse
