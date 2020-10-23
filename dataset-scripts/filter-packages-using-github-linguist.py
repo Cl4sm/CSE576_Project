@@ -14,6 +14,7 @@ import delegator
 def tmp_cwd(path):
     cwd = os.getcwd()
     try:
+        os.chdir(path)
         yield
     finally:
         os.chdir(cwd)
@@ -21,6 +22,7 @@ def tmp_cwd(path):
 @contextlib.contextmanager
 def git_cxt():
     git_commands = ["git init", "git add .", "git commit -m 'blah'"]
+    os.system("rm -rf .git")
 
     # create a git context
     for command in git_commands:
@@ -28,6 +30,7 @@ def git_cxt():
         if c.return_code != 0:
             print("failed to create git repo")
             yield False
+            return
     yield True
 
     # cleanup
@@ -63,25 +66,25 @@ def is_package_implemented_in_c(package_dir):
     is_c_package = False
 
     with tmp_cwd(package_dir), git_cxt() as git_cxt_res:
-        if not git_cxt_res:
-            return "Failed"
-
-        # try running github-linguist
-        c = delegator.run("github-linguist")
-        if c.return_code != 0:
-            print(f"github-linguist exited with error code {c.return_code}")
-            return "Failed"
-
-        # parse the output
-        linguist_output = c.out.strip()
-        if linguist_output != "":
-            try:
-                percentages = dict(entry.replace(' ', '').split('%') for entry in linguist_output.split(os.linesep))
-            except ValueError:
-                print(f"failed to compute language percentage")
+            if not git_cxt_res:
                 return "Failed"
 
-            is_c_package = (percentages[max(percentages.keys(), key=float)] == 'C')
+            # try running github-linguist
+            c = delegator.run("github-linguist")
+            if c.return_code != 0:
+                print(f"github-linguist exited with error code {c.return_code}")
+                return "Failed"
+
+            # parse the output
+            linguist_output = c.out.strip()
+            if linguist_output != "":
+                try:
+                    percentages = dict(entry.replace(' ', '').split('%') for entry in linguist_output.split(os.linesep))
+                except ValueError:
+                    print(f"failed to compute language percentage")
+                    return "Failed"
+
+                is_c_package = (percentages[max(percentages.keys(), key=float)] == 'C')
 
     return is_c_package
 
