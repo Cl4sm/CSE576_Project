@@ -7,10 +7,7 @@ run echo "deb-src http://deb.debian.org/debian jessie-updates main" >> /etc/apt/
 run apt-get update
 run apt-get install -y dpkg-dev
 
-# copy lists into the container
-copy ./dataset-packages /dataset-packages
-workdir dataset-packages
+# copy the script into the container
 copy ./downloader.sh /downloader.sh
-
 cmd /downloader.sh
 

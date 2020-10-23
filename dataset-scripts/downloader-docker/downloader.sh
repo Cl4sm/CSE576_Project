@@ -1,27 +1,32 @@
 #!/bin/bash
 
-mkdir runnable-c-only-packages  runnable-partially-c-packages  runnable-unknown-language-packages
+TYPES=("runnable-c-only-packages" "runnable-partially-c-packages" "runnable-unknown-language-packages")
+cd ./output/dataset-packages/
 
-cd /dataset-packages/runnable-c-only-packages
-for i in $(cat /dataset-packages/runnable-c-only-packages.txt)
-do
-   echo -n "Downloading sources of $i..."
-   apt-get source $i
-   echo "done."
-done
+function download_source() {
+	FOLDER=$1
+	FILE=$1.txt
+	cnt=0
+	total=$(wc -l $FILE | awk '{print $1}')
 
-cd /dataset-packages/runnable-partially-c-packages
-for i in $(cat /dataset-packages/runnable-partially-c-packages.txt)
-do
-  echo -n "Downloading sources of $i..."
-  apt-get source $i
-  echo "done."
-done
+	mkdir $FOLDER
+	pushd $FOLDER
 
-cd /dataset-packages/runnable-unknown-language-packages
-for i in $(cat /dataset-packages/runnable-unknown-language-packages.txt)
+	echo $cnt
+	echo $total
+	for pname in $(cat ../$FILE);
+	do
+		echo \($cnt/$total\) $FOLDER/$pname
+		cnt=$(($cnt+1))
+
+		apt-get source $pname
+	done
+
+	popd
+}
+
+
+for i in ${TYPES[@]};
 do
-  echo -n "Downloading sources of $i..."
-  apt-get source $i
-  echo "done."
+	download_source $i
 done

@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-import argparse
 import os
 
 import tinydb
@@ -25,11 +24,7 @@ def create_argument_parser():
     return parser
 
 
-def main():
-    arg_parser = create_argument_parser()
-    args = arg_parser.parse_args()
-    db_file = args.db
-    output_dir = args.output_dir
+def main(db_file, output_dir):
 
     if not os.path.isfile(db_file):
         print(f"{db_file} is not a valid file")
@@ -38,7 +33,7 @@ def main():
     db = tinydb.TinyDB(db_file)
     q = tinydb.Query()
     if not os.path.isabs(output_dir):
-        output_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), os.path.basename(output_dir))
+        output_dir = os.path.join(os.getcwd(), output_dir)
 
     os.makedirs(output_dir, exist_ok=True)
 
@@ -137,4 +132,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    arg_parser = create_argument_parser()
+    args = arg_parser.parse_args()
+
+    main(args.db, args.output_dir)
