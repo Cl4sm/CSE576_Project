@@ -4,6 +4,10 @@ import docker
 from src.utils import tmp_cwd, docker_cleanup
 from src.parse_debtags_to_tinydb import main as debtags_to_tinydb
 from src.classify_packages_using_debtags import main as classify_packages
+from src.filter_packages_using_github_linguist import main as gl_filter_packages
+from src.parse_package_using_clang import main as clang_parse
+
+import tqdm
 
 
 ##### CONFIG ######
@@ -11,11 +15,17 @@ DOCKER_IMAGE_NAME = "jessie-downloader"
 DOCKERFILE_DIR = "downloader-docker"
 PACKAGE_DIR = "dataset-packages"
 DEBTAG_FILE = "debtags-2020-10-16.txt"
+FILTER_TYPES = ["runnable-c-only-packages", "runnable-unknown-language-packages"]
+GL_RES_DIR = "gl_results"
+CLANG_RES_DIR = "clang_results"
 
 ##### INIT ######
 client = None
 db_path = None
 package_dir = None
+output_dir = None
+gl_res_dir = None
+clang_res_dir = None
 
 ##### CODE ######
 def init(args):
@@ -27,6 +37,15 @@ def init(args):
 
     if not os.path.exists(args.output_folder):
         os.mkdir(args.output_folder)
+
+    if not os.path.exists(package_dir):
+        os.mkdir(package_dir)
+
+    if not os.path.exists(gl_res_dir):
+        os.mkdir(gl_res_dir)
+
+    if not os.path.exists(clang_res_dir):
+        os.mkdir(clang_res_dir)
 
     print(f"Initialization success!")
 
@@ -52,6 +71,35 @@ def download():
         except Exception:
             pass
 
+def do_gl_filtering():
+    print("Starting filtering packages using github linguist...")
+    for ftype in FILTER_TYPES:
+        filtered_res = os.path.join(gl_res_dir, ftype+"-filtered.txt")
+        type_dir = os.path.join(package_dir, ftype)
+        gl_filter_packages(type_dir, filtered_res)
+
+def do_clang_parse_one_type(ftype):
+    filtered_res = os.path.join(gl_res_dir, ftype+"-filtered.txt")
+    with open(filtered_res) as f:
+        content = f.read()
+
+    package_names = [x for x in content.splitlines() if x]
+    for package_name in tqdm.tqdm(package_names, desc=ftype):
+        package_name = package_name.strip()
+        if not package_name:
+            continue
+
+        output_path = os.path.join(clang_res_dir, package_name+".json")
+        package_tree = os.path.join(package_dir, ftype, package_name)
+        assert os.path.isdir(package_tree)
+
+        clang_parse(package_name, None, output_path, package_tree)
+
+def do_clang_parse():
+    print("Starting parsing packages using libclang...")
+    for ftype in FILTER_TYPES:
+        do_clang_parse_one_type(ftype)
+
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
@@ -59,6 +107,7 @@ if __name__ == "__main__":
     parser.add_argument("-d", "--debtag", type=str, default=DEBTAG_FILE, help="the debtag file, something like 'debtags-2020-10-16.txt'")
     parser.add_argument("--init-only", default=False, action="store_true", help="do we want to stop after initialization")
     parser.add_argument("--download-only", default=False, action="store_true", help="do we want to stop after downloading the packages")
+    parser.add_argument("-no-dl", "--skip-download", default=False, action="store_true", help="if the packages are downloaded already, we can skip it")
     args = parser.parse_args()
 
     # initialize variables
@@ -66,6 +115,9 @@ if __name__ == "__main__":
     db_name = os.path.basename(args.debtag).strip(".txt") + ".json"
     db_path = os.path.abspath(os.path.join(args.output_folder, db_name))
     package_dir = os.path.abspath(os.path.join(args.output_folder, PACKAGE_DIR))
+    output_dir = os.path.abspath(args.output_folder)
+    gl_res_dir = os.path.abspath(os.path.join(output_dir, GL_RES_DIR))
+    clang_res_dir = os.path.abspath(os.path.join(output_dir, CLANG_RES_DIR))
 
     # perform initialization
     init(args)
@@ -73,15 +125,15 @@ if __name__ == "__main__":
         exit(0)
 
     # now download packages
-    download_prep(args.debtag, args.output_folder)
-    download()
+    if not args.skip_download:
+        download_prep(args.debtag, args.output_folder)
+        download()
     if args.download_only:
         exit(0)
-    
 
-    #print(args)
-    #if not os.path.exists(os.package_folder):
-    #    pass
+    # filter downloaded packages by using "github linguist"
+    do_gl_filtering()
 
-
+    # parse packages using clang
+    do_clang_parse()
 

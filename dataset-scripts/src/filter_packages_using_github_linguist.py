@@ -6,36 +6,10 @@ import os
 import subprocess
 import shutil
 from pathlib import Path
-import contextlib
 
 import delegator
 
-@contextlib.contextmanager
-def tmp_cwd(path):
-    cwd = os.getcwd()
-    try:
-        os.chdir(path)
-        yield
-    finally:
-        os.chdir(cwd)
-
-@contextlib.contextmanager
-def git_cxt():
-    git_commands = ["git init", "git add .", "git commit -m 'blah'"]
-    os.system("rm -rf .git")
-
-    # create a git context
-    for command in git_commands:
-        c = delegator.run(command)
-        if c.return_code != 0:
-            print("failed to create git repo")
-            yield False
-            return
-    yield True
-
-    # cleanup
-    os.system("rm -rf .git")
-
+from .utils import tmp_cwd, git_cxt
 
 def are_dependencies_available():
     """
@@ -89,14 +63,12 @@ def is_package_implemented_in_c(package_dir):
     return is_c_package
 
 
-def main():
+def main(packages_dir, output):
     if not are_dependencies_available():
         return
 
-    arg_parser = create_argument_parser()
-    args = arg_parser.parse_args()
-    extracted_packages_dir = Path(args.packages_dir)
-    output_file = Path(args.output).absolute()
+    extracted_packages_dir = Path(packages_dir)
+    output_file = Path(output).absolute()
 
     if not extracted_packages_dir.is_dir():
         print(f"{extracted_packages_dir} is not a valid directory.")
@@ -123,16 +95,18 @@ def main():
             classified_output["not-c"].append(package_dir)
             print("not c")
 
-    fh = open(output_file, 'w')
-    for package in classified_output["c"]:
-        fh.write(package + os.linesep)
+    with open(output_file, 'w') as fh:
+        for package in classified_output["c"]:
+            fh.write(package + os.linesep)
 
-    fh.close()
-    print("Failed to process following packages")
-    for package in classified_output["failed"]:
-        print(package)
+    if classified_output["failed"]:
+        print("Failed to process following packages")
+        for package in classified_output["failed"]:
+            print(package)
 
 
 if __name__ == "__main__":
     import argparse
-    main()
+    arg_parser = create_argument_parser()
+    args = arg_parser.parse_args()
+    main(args.packages_dir, args.output)
