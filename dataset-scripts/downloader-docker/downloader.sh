@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TYPES=("runnable-c-only-packages" "runnable-partially-c-packages" "runnable-unknown-language-packages")
-cd ./output/dataset-packages/
+cd /dataset-packages/
 
 function download_source() {
 	FOLDER=$1
@@ -12,14 +12,12 @@ function download_source() {
 	mkdir $FOLDER
 	pushd $FOLDER
 
-	echo $cnt
-	echo $total
 	for pname in $(cat ../$FILE);
 	do
 		echo \($cnt/$total\) $FOLDER/$pname
 		cnt=$(($cnt+1))
 
-		apt-get source $pname
+		apt-get source $pname 2>/dev/null 1>/dev/null
 	done
 
 	popd

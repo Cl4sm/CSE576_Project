@@ -42,8 +42,15 @@ def download():
     volumes = {package_dir: {'bind': '/dataset-packages/', 'mode': 'rw'}}
 
     with docker_cleanup(client) as tmp_name:
-        client.containers.run(DOCKER_IMAGE_NAME, auto_remove=True, volumes=volumes, name=tmp_name, stdout=True)
+        container = client.containers.run(DOCKER_IMAGE_NAME, auto_remove=True, volumes=volumes, name=tmp_name, detach=True)
 
+        # steam the output
+        it = container.logs(stream=True)
+        try:
+            while container.status == 'created':
+                print(it.next().decode().strip())
+        except Exception:
+            pass
 
 if __name__ == "__main__":
     import argparse
