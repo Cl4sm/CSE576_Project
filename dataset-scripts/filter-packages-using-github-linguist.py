@@ -2,12 +2,36 @@
 
 # Level 2: Classify packages based on if main programming language is C using github-linguist
 
-import argparse
 import os
+import subprocess
 import shutil
 from pathlib import Path
+import contextlib
 
 import delegator
+
+@contextlib.contextmanager
+def tmp_cwd(path):
+    cwd = os.getcwd()
+    try:
+        yield
+    finally:
+        os.chdir(cwd)
+
+@contextlib.contextmanager
+def git_cxt():
+    git_commands = ["git init", "git add .", "git commit -m 'blah'"]
+
+    # create a git context
+    for command in git_commands:
+        c = delegator.run(command)
+        if c.return_code != 0:
+            print("failed to create git repo")
+            yield False
+    yield True
+
+    # cleanup
+    os.system("rm -rf .git")
 
 
 def are_dependencies_available():
@@ -36,36 +60,29 @@ def is_package_implemented_in_c(package_dir):
     """
     Check if package is mainly implemented in C using github-linguist. Requires creating a git repository.
     """
+    is_c_package = False
 
-    os.chdir(package_dir)
-    git_commands = ["git init", "git add .", "git commit -m 'blah'"]
-    cleanup_git_command = "rm -rf .git"
-    for command in git_commands:
-        c = delegator.run(command)
-        if c.return_code != 0:
-            print(f"failed to create git repo")
-            delegator.run(cleanup_git_command)
+    with tmp_cwd(package_dir), git_cxt() as git_cxt_res:
+        if not git_cxt_res:
             return "Failed"
 
-    is_c_package = False
-    c = delegator.run("github-linguist")
-    if c.return_code != 0:
-        print(f"github-linguist exited with error code {c.return_code}")
-        delegator.run(cleanup_git_command)
-        return "Failed"
-    else:
+        # try running github-linguist
+        c = delegator.run("github-linguist")
+        if c.return_code != 0:
+            print(f"github-linguist exited with error code {c.return_code}")
+            return "Failed"
+
+        # parse the output
         linguist_output = c.out.strip()
         if linguist_output != "":
             try:
                 percentages = dict(entry.replace(' ', '').split('%') for entry in linguist_output.split(os.linesep))
             except ValueError:
                 print(f"failed to compute language percentage")
-                delegator.run(cleanup_git_command)
                 return "Failed"
 
             is_c_package = (percentages[max(percentages.keys(), key=float)] == 'C')
 
-    delegator.run(cleanup_git_command)
     return is_c_package
 
 
@@ -114,4 +131,5 @@ def main():
 
 
 if __name__ == "__main__":
+    import argparse
     main()
