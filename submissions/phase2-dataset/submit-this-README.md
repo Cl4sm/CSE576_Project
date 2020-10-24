@@ -9,8 +9,9 @@ recreate the dataset: either your editor's markdown preview or [an online previe
 Our dataset is derived from [Allstar](https://allstar.jhuapl.edu), a public repository of Debian packages specially created
 for reverse engineering research.
 
-The dataset is a JSON file which contains source level information about functions present in each package(the name of the source
-file and the line numbers in the source file). We split it up into 1 JSON file for each package.
+The dataset is a collection of source functions from various packages and their binaries. The source files are processed
+and JSON files containing source level information about functions present in each package(the name of the source
+file and the line numbers in the source file) are created. We create 1 JSON file for each package.
 
 The dataset is created using 3 levels of filtering:
 
