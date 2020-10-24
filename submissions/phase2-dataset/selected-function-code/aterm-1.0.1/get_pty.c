@@ -1,0 +1,89 @@
+get_pty(void)
+{
+    int             fd = -1;
+
+#if defined (__sgi)
+    ptydev = ttydev = _getpty(&fd, O_RDWR | O_NDELAY, 0622, 0);
+    if (ptydev == NULL)
+	goto Failed;
+#elif defined (__svr4__) || defined(__CYGWIN32__) || defined(__lnx21__)
+    {
+	extern char    *ptsname();
+
+    /* open the STREAMS, clone device /dev/ptmx (master pty) */
+#ifdef HAVE_GETPT
+	if ((fd = getpt()) < 0) {
+#else
+	if ((fd = open("/dev/ptmx", O_RDWR)) < 0) {
+#endif
+		goto Failed;
+	} else {
+	    grantpt(fd);	/* change slave permissions */
+	    unlockpt(fd);	/* unlock slave */
+	    ptydev = ttydev = ptsname(fd);	/* get slave's name */
+	    goto Found;
+	}
+    }
+#elif defined (_AIX)
+    if ((fd = open("/dev/ptc", O_RDWR)) < 0)
+	goto Failed;
+    else
+	ptydev = ttydev = ttyname(fd);
+#elif defined(ALL_NUMERIC_PTYS)	/* SCO OSr5 */
+    static char     pty_name[] = "/dev/ptyp??\0\0\0";
+    static char     tty_name[] = "/dev/ttyp??\0\0\0";
+    int             len = strlen(tty_name);
+    char           *c1, *c2;
+    int             idx;
+
+    ptydev = pty_name;
+    ttydev = tty_name;
+
+    for (idx = 0; idx < 256; idx++) {
+	sprintf(ptydev, "%s%d", "/dev/ptyp", idx);
+	sprintf(ttydev, "%s%d", "/dev/ttyp", idx);
+
+	if (access(ttydev, F_OK) < 0) {
+	    idx = 256;
+	    break;
+	}
+	if ((fd = open(ptydev, O_RDWR)) >= 0) {
+	    if (access(ttydev, R_OK | W_OK) == 0)
+		goto Found;
+	    close(fd);
+	}
+    }
+    goto Failed;
+#else
+    static char     pty_name[] = "/dev/pty??";
+    static char     tty_name[] = "/dev/tty??";
+    int             len = strlen(tty_name);
+    char           *c1, *c2;
+
+    ptydev = pty_name;
+    ttydev = tty_name;
+
+# define PTYCHAR1	"pqrstuvwxyz"
+# define PTYCHAR2     "0123456789abcdefghijklmnopqrstuvwxyz"
+    for (c1 = PTYCHAR1; *c1; c1++) {
+	ptydev[len - 2] = ttydev[len - 2] = *c1;
+	for (c2 = PTYCHAR2; *c2; c2++) {
+	    ptydev[len - 1] = ttydev[len - 1] = *c2;
+	    if ((fd = open(ptydev, O_RDWR)) >= 0) {
+		if (access(ttydev, R_OK | W_OK) == 0)
+		    goto Found;
+		close(fd);
+	    }
+	}
+    }
+    goto Failed;
+#endif
+
+  Found:
+    fcntl(fd, F_SETFL, O_NDELAY);
+    return fd;
+
+  Failed:
+    print_error("can't open pseudo-tty");
+    return -1;
+}
