@@ -1,3 +1,4 @@
+void initTexture(Visual *d) {
   GLint min_filter;
   char texname[120];
 

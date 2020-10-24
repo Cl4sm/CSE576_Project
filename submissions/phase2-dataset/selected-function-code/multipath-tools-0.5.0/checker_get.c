@@ -1,3 +1,4 @@
+void checker_get (struct checker * dst, char * name)
 {
 	struct checker * src = checker_lookup(name);
 

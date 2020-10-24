@@ -1,3 +1,4 @@
+int
 createImage(Context)
 struct Sundata * Context;
 {

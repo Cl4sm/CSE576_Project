@@ -1,3 +1,4 @@
+  static int
 rl_query_yn(char *prompt, int dfl)
   /* query the user with a y/n-requester.  `prompt' is the query-prompt.
    * `dfl' is the default answer offered to the user.  the value of `dfl'

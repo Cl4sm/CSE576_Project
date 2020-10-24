@@ -1,3 +1,4 @@
+void filesDelete(gchar* filename, uint32_t objectID) {
     gint ret = 1;
     GSList *node;
     FileListStruc *fileptr;

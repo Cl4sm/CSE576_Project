@@ -1,3 +1,4 @@
+static void _sc_window_end_populate_gtk(sc_window_gtk *w, GtkWidget *console) {
 
    char buf[SC_GTK_STRING_BUFFER];
    sc_player *p;

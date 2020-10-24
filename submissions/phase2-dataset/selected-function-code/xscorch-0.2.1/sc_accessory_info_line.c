@@ -1,3 +1,4 @@
+void sc_accessory_info_line(const sc_accessory_config *ac, const sc_accessory_info *info, char *buffer, int buflen) {
 /* sc_accessory_info_line
    Create a line of information about the accessory. */
 

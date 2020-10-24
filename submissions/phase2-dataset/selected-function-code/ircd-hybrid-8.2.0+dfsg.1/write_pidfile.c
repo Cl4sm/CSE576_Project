@@ -1,3 +1,4 @@
+static void
 write_pidfile(const char *filename)
 {
   FILE *fb;

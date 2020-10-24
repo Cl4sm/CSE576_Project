@@ -1,3 +1,4 @@
+XPoint *intersect(P1, Q1, P2, Q2)
      XPoint P1, Q1, P2, Q2;
      
 {

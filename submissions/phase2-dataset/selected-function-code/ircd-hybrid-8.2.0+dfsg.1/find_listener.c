@@ -1,3 +1,4 @@
+static struct Listener *
 find_listener(int port, struct irc_ssaddr *addr)
 {
   dlink_node *ptr;

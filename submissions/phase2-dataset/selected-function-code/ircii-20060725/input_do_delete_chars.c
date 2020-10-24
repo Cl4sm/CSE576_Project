@@ -1,3 +1,4 @@
+static void
 input_do_delete_chars(int n, int do_save_cut)
 {
 	u_char* buf  = current_screen->inputdata.buffer.buf;

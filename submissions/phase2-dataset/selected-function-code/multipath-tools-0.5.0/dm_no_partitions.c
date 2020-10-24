@@ -1,3 +1,4 @@
+int
 dm_no_partitions(int major, int minor)
 {
 	char params[PARAMS_SIZE], *ptr;

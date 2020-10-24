@@ -1,3 +1,4 @@
+NOEXPORT int signal_pipe_dispatch(void) {
     int sig;
 
     s_log(LOG_DEBUG, "Dispatching signals from the signal pipe");

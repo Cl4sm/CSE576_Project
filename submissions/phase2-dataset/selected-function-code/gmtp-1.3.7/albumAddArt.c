@@ -1,3 +1,4 @@
+void albumAddArt(guint32 album_id, gchar* filename) {
     LIBMTP_filesampledata_t *albumart;
     gint ret;
     uint64_t filesize;

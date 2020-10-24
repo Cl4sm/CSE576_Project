@@ -1,3 +1,4 @@
+extern int
 dm_type(const char * name, char * type)
 {
 	int r = 0;

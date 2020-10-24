@@ -1,3 +1,4 @@
+extern int
 snprint_blacklist_except (char * buff, int len)
 {
 	int i;

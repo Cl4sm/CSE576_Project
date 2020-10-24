@@ -1,3 +1,4 @@
+void key_return()
 {
 	char	*s = cur_pos;
 

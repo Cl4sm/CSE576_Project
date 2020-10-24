@@ -1,3 +1,4 @@
+static const sc_player *_sc_ai_calculated_fire(const sc_config *c, sc_player *p) {
 /* sc_ai_calculated_fire
    See if we can shoot anyone with the above two trajectory mechanisms.  We
    check players in random order, and if we can reach any of them, then fire

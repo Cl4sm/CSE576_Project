@@ -1,3 +1,4 @@
+int
 rexec(ahost, rport, name, pass, cmd, fd2p)
 	char **ahost;
 	int rport;

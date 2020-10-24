@@ -1,3 +1,4 @@
+void
 sendto_channel_local(unsigned int type, int nodeaf, struct Channel *chptr,
                      const char *pattern, ...)
 {

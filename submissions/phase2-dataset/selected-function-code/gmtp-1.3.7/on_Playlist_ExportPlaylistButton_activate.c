@@ -1,3 +1,4 @@
+void on_Playlist_ExportPlaylistButton_activate(GtkMenuItem *menuitem, gpointer user_data) {
     gchar *playlistfilename = NULL;
     GtkWidget *FileDialog;
 

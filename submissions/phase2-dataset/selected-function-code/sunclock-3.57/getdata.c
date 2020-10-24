@@ -1,3 +1,4 @@
+char *
 getdata(fd)
 FILE * fd;
 {

@@ -1,3 +1,4 @@
+void gmtpfolders_drag_data_received(GtkWidget * widget, GdkDragContext * context, gint x, gint y,
         GtkSelectionData * selection_data, guint info, guint time, gpointer user_data) {
 
     //uint32_t mainFolderID = 0;

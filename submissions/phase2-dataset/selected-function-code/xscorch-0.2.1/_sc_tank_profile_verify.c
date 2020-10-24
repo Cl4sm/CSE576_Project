@@ -1,3 +1,4 @@
+static bool _sc_tank_profile_verify(sc_tank_profile *profile) {
 /* sc_tank_profile_verify
    This function is responsible for making certain that the tank profile is 
    valid.  In particular, this function checks that the tank is base-aligned

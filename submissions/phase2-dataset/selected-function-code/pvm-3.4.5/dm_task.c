@@ -1,3 +1,4 @@
+int
 dm_task(hp, mp)
 	struct hostd *hp;
 	struct pmsg *mp;

@@ -1,3 +1,4 @@
+int compact_string(char *data_out) {
 	char *data_in = data_out;
 	int i=0;
 	if(*data_in=='0') {

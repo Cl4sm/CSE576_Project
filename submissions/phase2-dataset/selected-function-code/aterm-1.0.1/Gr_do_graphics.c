@@ -1,3 +1,4 @@
+void
 Gr_do_graphics(int cmd, int nargs, int args[], unsigned char *text)
 {
 #ifdef RXVT_GRAPHICS

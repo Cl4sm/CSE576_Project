@@ -1,3 +1,4 @@
+void
 ChangeGameCB(Widget w, int index, XtPointer p)
 {
     int xsize, ysize;

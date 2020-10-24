@@ -1,3 +1,4 @@
+is_it (filename)
   char *filename;
 {
   int fd;

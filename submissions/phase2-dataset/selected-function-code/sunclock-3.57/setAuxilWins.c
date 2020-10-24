@@ -1,3 +1,4 @@
+void
 setAuxilWins(Context, mode)
 Sundata * Context;
 int mode;

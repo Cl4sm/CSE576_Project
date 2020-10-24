@@ -1,3 +1,4 @@
+void
 bgp_check_config(struct bgp_config *c)
 {
   int internal = (c->local_as == c->remote_as);

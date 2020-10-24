@@ -1,3 +1,4 @@
+static struct mpnh *
 fix_device_nexthops(struct proto_ospf *po, const struct mpnh *n, ip_addr gw)
 {
   struct mpnh *root1 = NULL;

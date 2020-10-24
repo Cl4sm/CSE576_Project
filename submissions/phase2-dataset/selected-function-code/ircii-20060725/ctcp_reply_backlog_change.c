@@ -1,3 +1,4 @@
+extern  void
 ctcp_reply_backlog_change(s)
 	int	s;
 {

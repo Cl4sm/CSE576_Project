@@ -1,3 +1,4 @@
+tn_packet_list *tn_packet_list_new(void) {
 /*
  * tn_packet_list_new
  * Create a new packet list item.

@@ -1,3 +1,4 @@
+void on_buttonAlbumArtDelete_activate(GtkWidget *button, gpointer user_data) {
 
     // Send a blank representation.
     gint selected = gtk_combo_box_get_active(GTK_COMBO_BOX(textboxAlbumArt));

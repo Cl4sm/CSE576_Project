@@ -1,3 +1,4 @@
+Bool 
 TransparentPixmapNeedsUpdate()
 {
 #ifdef DEBUG_BACKGROUND_PMAP	

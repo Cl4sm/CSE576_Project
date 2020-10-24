@@ -1,3 +1,4 @@
+int
 scr_page(int direction, int nlines)
 {
     int             start, dirn;

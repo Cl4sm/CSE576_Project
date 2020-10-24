@@ -1,3 +1,4 @@
+int reg_get_integer_from_values(reg *r, reg_var *v, const char *path, int defvalue,
                                 const char **names, const unsigned int *values) {
 /* reg_get_integer_from_values
    Read the variable <path>, relative to <v>, and attempt to translate

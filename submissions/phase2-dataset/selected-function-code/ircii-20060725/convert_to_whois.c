@@ -1,3 +1,4 @@
+void
 convert_to_whois()
 {
 	u_char	*NextAsked;

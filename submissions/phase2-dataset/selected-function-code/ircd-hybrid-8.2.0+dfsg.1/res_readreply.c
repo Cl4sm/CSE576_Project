@@ -1,3 +1,4 @@
+static void
 res_readreply(fde_t *fd, void *data)
 {
   unsigned char buf[sizeof(HEADER) + MAXPACKET];

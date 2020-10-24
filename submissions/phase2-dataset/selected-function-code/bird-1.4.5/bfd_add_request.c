@@ -1,3 +1,4 @@
+static int
 bfd_add_request(struct bfd_proto *p, struct bfd_request *req)
 {
   struct bfd_session *s = bfd_find_session_by_addr(p, req->addr);

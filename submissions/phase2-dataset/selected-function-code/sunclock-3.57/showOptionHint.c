@@ -1,3 +1,4 @@
+void
 showOptionHint(but_pos)
 int but_pos;
 {

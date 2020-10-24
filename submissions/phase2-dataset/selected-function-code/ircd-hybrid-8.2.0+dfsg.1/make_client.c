@@ -1,3 +1,4 @@
+struct Client *
 make_client(struct Client *from)
 {
   struct Client *client_p = mp_pool_get(client_pool);

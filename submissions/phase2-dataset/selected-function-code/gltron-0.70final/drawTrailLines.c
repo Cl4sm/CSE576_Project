@@ -1,3 +1,4 @@
+void drawTrailLines(Player *p, PlayerVisual *pV) {
   segment2 *s;
   float height;
 

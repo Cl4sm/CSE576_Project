@@ -1,3 +1,4 @@
+SCM istring2number(str, len, radix)
      char *str;
      long len;
      long radix;

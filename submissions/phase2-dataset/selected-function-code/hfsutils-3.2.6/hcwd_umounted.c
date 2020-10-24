@@ -1,3 +1,4 @@
+int hcwd_umounted(int vol)
 {
   mountent *entry;
   int i;

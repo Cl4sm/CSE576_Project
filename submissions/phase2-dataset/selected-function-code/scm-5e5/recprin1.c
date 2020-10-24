@@ -1,3 +1,4 @@
+static int recprin1(exp, port, writing)
      SCM exp, port;
      int writing;
 {

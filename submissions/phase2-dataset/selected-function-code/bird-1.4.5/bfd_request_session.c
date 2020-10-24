@@ -1,3 +1,4 @@
+struct bfd_request *
 bfd_request_session(pool *p, ip_addr addr, ip_addr local, struct iface *iface,
 		    void (*hook)(struct bfd_request *), void *data)
 {

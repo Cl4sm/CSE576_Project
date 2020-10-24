@@ -1,3 +1,4 @@
+static
 int split(node *left, byte *record, unsigned int *reclen)
 {
   btree *bt = left->bt;

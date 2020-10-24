@@ -1,3 +1,4 @@
+int
 term_resize()
 {
 

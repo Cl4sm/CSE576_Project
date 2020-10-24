@@ -1,3 +1,4 @@
+static void
 parse_cancel_clients(struct Client *client_p, struct Client *source_p, char *cmd)
 {
   if (IsServer(source_p) || IsMe(source_p))

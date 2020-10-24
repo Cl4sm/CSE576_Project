@@ -1,3 +1,4 @@
+SCM lregerror(scode)
      SCM scode;
 {
   int code;

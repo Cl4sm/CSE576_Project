@@ -1,3 +1,4 @@
+static ea_list *
 ospf_build_attrs(ea_list * next, struct linpool *pool, u32 m1, u32 m2,
 		 u32 tag, u32 rid)
 {

@@ -1,3 +1,4 @@
+void dlog (int sink, int prio, const char * fmt, ...)
 {
 	va_list ap;
 	int thres;

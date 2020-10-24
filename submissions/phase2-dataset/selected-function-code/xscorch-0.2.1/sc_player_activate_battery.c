@@ -1,3 +1,4 @@
+bool sc_player_activate_battery(const sc_config *c, sc_player *p) {
 /* sc_player_activate_battery
    Activates a player battery, if any are available.  This will
    allow the player to partially recharge their tank.  */

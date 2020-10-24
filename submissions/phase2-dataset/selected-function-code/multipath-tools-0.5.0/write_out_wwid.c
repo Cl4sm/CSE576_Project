@@ -1,3 +1,4 @@
+static int
 write_out_wwid(int fd, char *wwid) {
 	int ret;
 	off_t offset;

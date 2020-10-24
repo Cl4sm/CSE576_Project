@@ -1,3 +1,4 @@
+int
 path_offline (struct path * pp)
 {
 	struct udev_device * parent;

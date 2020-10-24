@@ -1,3 +1,4 @@
+void
 sendto_server(struct Client *one,
               const unsigned int caps,
               const unsigned int nocaps,

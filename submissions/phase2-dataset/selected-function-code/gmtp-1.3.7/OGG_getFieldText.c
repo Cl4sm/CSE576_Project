@@ -1,3 +1,4 @@
+gchar * OGG_getFieldText(const vorbis_comment *comments, const char *name) {
     gchar ** file_comments;
     gchar ** comments_split;
     gint file_comments_count = 0;

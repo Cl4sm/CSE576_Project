@@ -1,3 +1,4 @@
+static int
 cmp_nhs(struct mpnh *s1, struct mpnh *s2)
 {
   int r;

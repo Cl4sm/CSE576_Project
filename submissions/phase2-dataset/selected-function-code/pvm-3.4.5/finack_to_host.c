@@ -1,3 +1,4 @@
+int
 finack_to_host(hp)
 	struct hostd *hp;
 {

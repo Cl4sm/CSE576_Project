@@ -1,3 +1,4 @@
+int
 readXPM(path, Context)
 char * path;
 struct Sundata * Context;

@@ -1,3 +1,4 @@
+static	u_char	*
 get_from_history_file(which)
 	int	which;
 {

@@ -1,3 +1,4 @@
+static void
 display_colours(fgcolour, bgcolour)
 	int fgcolour;
 	int bgcolour;

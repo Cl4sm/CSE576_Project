@@ -1,3 +1,4 @@
+void scm_iprin1(exp, port, writing)
      SCM exp;
      SCM port;
      int writing;

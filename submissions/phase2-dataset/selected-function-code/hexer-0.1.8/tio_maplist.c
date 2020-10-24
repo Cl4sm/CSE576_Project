@@ -1,3 +1,4 @@
+  char **
 tio_maplist(map)
   int map;
 {

@@ -1,3 +1,4 @@
+color marble_texture(const vector * hit, const texture * tx, const ray * ry) {
   flt i,d;
   flt x,y,z;
   color col;

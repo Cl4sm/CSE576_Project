@@ -1,3 +1,4 @@
+static GElf_Addr
 resolve_dso (struct prelink_info *info, GElf_Word r_sym,
 	     int reloc_type)
 {

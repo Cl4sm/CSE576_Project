@@ -1,3 +1,4 @@
+int _set_int(char *name, keyword_t *ids, int size, int *mask)
 {
 	int i, slot;
 	char *ptr;

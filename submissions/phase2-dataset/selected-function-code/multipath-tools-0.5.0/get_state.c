@@ -1,3 +1,4 @@
+int
 get_state (struct path * pp, int daemon)
 {
 	struct checker * c = &pp->checker;

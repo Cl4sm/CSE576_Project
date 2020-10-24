@@ -1,3 +1,4 @@
+int
 pvm_reg_rm(hip)
 	struct pvmhostinfo **hip;
 {

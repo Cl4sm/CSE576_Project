@@ -1,3 +1,4 @@
+void
 comm_checktimeouts(void *unused)
 {
   int i;

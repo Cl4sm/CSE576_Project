@@ -1,3 +1,4 @@
+void * thread_trace(thr_parms * t) {
   unsigned long * local_mbox = NULL;
   scenedef * scene;
   color col;

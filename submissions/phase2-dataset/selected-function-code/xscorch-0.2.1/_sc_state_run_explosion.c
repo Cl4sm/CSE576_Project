@@ -1,3 +1,4 @@
+static void _sc_state_run_explosion(sc_config *c, sc_game *g) {
 
    bool result;
 

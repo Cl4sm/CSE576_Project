@@ -1,3 +1,4 @@
+extern int
 disassemble_map (vector pathvec, char * params, struct multipath * mpp)
 {
 	char * word;

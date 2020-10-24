@@ -1,3 +1,4 @@
+SCM scm_env_rlookup(addr, stenv, what)
      SCM addr, stenv;
      const char *what;
 {

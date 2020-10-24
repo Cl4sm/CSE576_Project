@@ -1,3 +1,4 @@
+static void
 bgp_send_open(struct bgp_conn *conn)
 {
   conn->start_state = conn->bgp->start_state;

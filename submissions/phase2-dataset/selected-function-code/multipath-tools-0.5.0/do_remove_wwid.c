@@ -1,3 +1,4 @@
+int
 do_remove_wwid(int fd, char *str) {
 	char buf[4097];
 	char *ptr;

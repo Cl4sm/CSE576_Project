@@ -1,3 +1,4 @@
+SCM repl()
 {
   SCM x;
   SCM env = EOL; /* scm_env_addprop(SCM_ENV_FILENAME, i_repl, EOL); */

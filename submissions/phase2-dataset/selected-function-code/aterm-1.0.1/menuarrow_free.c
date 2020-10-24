@@ -1,3 +1,4 @@
+void
 menuarrow_free(char name)
 {
 #ifdef MENUBAR

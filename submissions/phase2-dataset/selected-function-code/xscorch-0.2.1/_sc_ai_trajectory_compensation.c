@@ -1,3 +1,4 @@
+static inline void _sc_ai_trajectory_compensation(const sc_config *c, const sc_player *p, 
                                                   const sc_player *victim, int *deltax, int *deltay) {
 /* sc_ai_trajectory_compensation 
    Compensation for shields, if offset targetting is allowed.

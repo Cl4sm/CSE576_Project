@@ -1,3 +1,4 @@
+int s_connect(CLI *c, SOCKADDR_UNION *addr, socklen_t addrlen) {
     int error;
     char *dst;
 

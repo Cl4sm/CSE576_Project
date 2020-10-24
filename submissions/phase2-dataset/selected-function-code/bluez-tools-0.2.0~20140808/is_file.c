@@ -1,3 +1,4 @@
+gboolean is_file(const gchar *filename, GError **error)
 {
     g_assert(filename != NULL && strlen(filename) > 0);
 

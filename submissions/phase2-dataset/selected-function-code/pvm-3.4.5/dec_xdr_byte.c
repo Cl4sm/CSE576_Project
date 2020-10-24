@@ -1,3 +1,4 @@
+static int
 dec_xdr_byte(mp, vp, cnt, std, siz)
 	struct pmsg *mp;
 	void *vp;

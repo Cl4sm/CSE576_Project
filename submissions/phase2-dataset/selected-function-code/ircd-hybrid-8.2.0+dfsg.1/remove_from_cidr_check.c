@@ -1,3 +1,4 @@
+void
 remove_from_cidr_check(struct irc_ssaddr *ip, struct ClassItem *aclass)
 {
   dlink_node *ptr = NULL;

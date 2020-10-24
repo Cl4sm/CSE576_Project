@@ -1,3 +1,4 @@
+void
 ea_show(struct cli *c, eattr *e)
 {
   struct protocol *p;

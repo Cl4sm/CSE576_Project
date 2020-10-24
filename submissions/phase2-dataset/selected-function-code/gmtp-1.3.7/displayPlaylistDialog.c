@@ -1,3 +1,4 @@
+void displayPlaylistDialog(void) {
     //LIBMTP_playlist_t* tmpplaylist;
     LIBMTP_track_t* tmptrack;
     GtkTreeIter rowIter;

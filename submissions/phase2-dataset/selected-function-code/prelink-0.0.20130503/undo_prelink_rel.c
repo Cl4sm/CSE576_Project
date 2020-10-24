@@ -1,3 +1,4 @@
+static int
 undo_prelink_rel (DSO *dso, int n)
 {
   Elf_Data *data = NULL;

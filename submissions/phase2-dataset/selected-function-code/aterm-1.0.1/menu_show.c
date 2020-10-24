@@ -1,3 +1,4 @@
+void
 menu_show(void)
 {
 #ifdef MENUBAR

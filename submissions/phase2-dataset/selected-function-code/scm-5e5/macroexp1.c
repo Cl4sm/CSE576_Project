@@ -1,3 +1,4 @@
+static SCM macroexp1(xorig, env, ctxt, mode)
      SCM xorig, env, ctxt;
      int mode;
 {

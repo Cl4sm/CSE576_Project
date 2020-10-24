@@ -1,3 +1,4 @@
+void
 process_sgr_mode(unsigned int nargs, int arg[])
 {
     unsigned int    i;

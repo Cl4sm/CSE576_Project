@@ -1,3 +1,4 @@
+const gchar *manager_default_adapter(Manager *self, GError **error)
 {
     g_assert(MANAGER_IS(self));
 

@@ -1,3 +1,4 @@
+static void
 mp_pool_sort_used_chunks(mp_pool_t *pool)
 {
   int i, n = 0, inverted = 0;

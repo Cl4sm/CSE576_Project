@@ -1,3 +1,4 @@
+static void properties_dispose (GObject *gobject)
 {
     Properties *self = PROPERTIES (gobject);
 

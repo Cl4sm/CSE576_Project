@@ -1,3 +1,4 @@
+void
 new_free(iptr)
 	void	*iptr;
 {

@@ -1,3 +1,4 @@
+struct f_tree *
 build_tree(struct f_tree *from)
 {
   struct f_tree *tmp, *root;

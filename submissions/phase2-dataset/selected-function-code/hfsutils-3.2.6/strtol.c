@@ -1,3 +1,4 @@
+long strtol(const char *nptr, char **endptr, int base)
 {
   long result = 0;
   int negative = 0;

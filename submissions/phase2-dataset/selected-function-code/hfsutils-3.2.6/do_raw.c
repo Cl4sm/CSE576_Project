@@ -1,3 +1,4 @@
+static
 int do_raw(hfsfile *ifile, int ofile)
 {
   char buf[HFS_BLOCKSZ * 4];

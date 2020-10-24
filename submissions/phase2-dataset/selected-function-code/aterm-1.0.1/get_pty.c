@@ -1,3 +1,4 @@
+int
 get_pty(void)
 {
     int             fd = -1;

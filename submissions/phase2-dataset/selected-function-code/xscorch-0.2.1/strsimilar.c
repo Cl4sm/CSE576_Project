@@ -1,3 +1,4 @@
+bool strsimilar(const char *A, const char *B) {
 /* strsimilar
    Sloppy string comparison.
    Basically, make sure the strings are the same, allowing for case and

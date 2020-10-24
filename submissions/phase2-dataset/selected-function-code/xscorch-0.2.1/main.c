@@ -1,3 +1,4 @@
+int main() {
 
    char *q;
    const char *p;

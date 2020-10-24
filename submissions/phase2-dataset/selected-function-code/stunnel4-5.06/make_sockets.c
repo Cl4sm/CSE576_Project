@@ -1,3 +1,4 @@
+int make_sockets(int fd[2]) { /* make a pair of connected ipv4 sockets */
 #ifdef INET_SOCKET_PAIR
     struct sockaddr_in addr;
     socklen_t addrlen;

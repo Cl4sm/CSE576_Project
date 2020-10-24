@@ -1,3 +1,4 @@
+struct adata *
 as_path_prepend(struct linpool *pool, struct adata *olda, u32 as)
 {
   struct adata *newa;

@@ -1,3 +1,4 @@
+char *
 pvmgettmp()
 {
 	static char *td = 0;

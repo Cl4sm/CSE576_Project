@@ -1,3 +1,4 @@
+int
 FillPixmapWithTile (Pixmap pixmap, Pixmap tile, int x, int y, int width, int height, int tile_x, int tile_y)
 {
   if (tile != None && pixmap != None)

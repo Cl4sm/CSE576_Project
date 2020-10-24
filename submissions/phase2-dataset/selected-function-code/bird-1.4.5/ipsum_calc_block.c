@@ -1,3 +1,4 @@
+static u16
 ipsum_calc_block(u32 *buf, unsigned len, u16 isum)
 {
   /*

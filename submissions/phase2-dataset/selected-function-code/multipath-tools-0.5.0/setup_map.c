@@ -1,3 +1,4 @@
+extern int
 setup_map (struct multipath * mpp, char * params, int params_size)
 {
 	struct pathgroup * pgp;

@@ -1,3 +1,4 @@
+int
 pvm_hostsync(host, clk, delta)
 	int host;				/* pvmd tid of host */
 	struct timeval *clk;	/* current time on host */

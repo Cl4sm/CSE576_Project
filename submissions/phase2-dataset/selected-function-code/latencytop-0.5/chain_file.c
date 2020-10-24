@@ -1,3 +1,4 @@
+static chain_file(struct fsync_process *proc, char *filename)
 {
 	struct fsync_files *file;
 	GList *item;

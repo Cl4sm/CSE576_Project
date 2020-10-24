@@ -1,3 +1,4 @@
+const char *
 date(time_t lclock)
 {
   static char buf[80], plus;

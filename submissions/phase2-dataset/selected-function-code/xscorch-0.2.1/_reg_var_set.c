@@ -1,3 +1,4 @@
+static reg_var *_reg_var_set(const reg *r, reg_var *b, const char *name, reg_type type) {
 /* reg_var_set */
 
    reg_var *var;       /* Variable created or to set */

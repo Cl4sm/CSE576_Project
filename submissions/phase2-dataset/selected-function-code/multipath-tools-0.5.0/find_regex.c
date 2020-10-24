@@ -1,3 +1,4 @@
+char *find_regex(char * string, char * regex)
 {
 	int err;
 	regex_t preg;

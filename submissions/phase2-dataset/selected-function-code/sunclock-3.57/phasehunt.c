@@ -1,3 +1,4 @@
+void phasehunt(sdate, phases)
 double sdate;
 double phases[5];
 {

@@ -1,3 +1,4 @@
+extern int
 __setup_multipath (struct vectors * vecs, struct multipath * mpp, int reset)
 {
 	if (dm_get_info(mpp->alias, &mpp->dmi)) {

@@ -1,3 +1,4 @@
+void PWRight(Widget w)
 #else
 void PWRight(w)
      Widget w;

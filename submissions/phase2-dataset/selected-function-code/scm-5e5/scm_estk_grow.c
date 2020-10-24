@@ -1,3 +1,4 @@
+void scm_estk_grow()
 {
   /* 40 and 10 below are adjustable parameters:  the number of frames
      in a stack segment, and the number of frames to overlap between

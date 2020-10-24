@@ -1,3 +1,4 @@
+long mode_bits(modes, cmodes)
      char *modes, *cmodes;
 {
   int iout = 0;

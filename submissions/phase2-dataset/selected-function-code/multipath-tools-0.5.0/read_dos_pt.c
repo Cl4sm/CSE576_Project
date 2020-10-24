@@ -1,3 +1,4 @@
+int
 read_dos_pt(int fd, struct slice all, struct slice *sp, int ns) {
 	struct partition p;
 	unsigned long offset = all.start;

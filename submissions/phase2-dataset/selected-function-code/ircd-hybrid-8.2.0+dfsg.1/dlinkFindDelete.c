@@ -1,3 +1,4 @@
+dlink_node *
 dlinkFindDelete(dlink_list *list, void *data)
 {
   dlink_node *m = NULL;

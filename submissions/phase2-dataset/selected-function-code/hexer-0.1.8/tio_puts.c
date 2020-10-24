@@ -1,3 +1,4 @@
+  int
 tio_puts(s)
   char *s;
   /* Like `fputs(s, stdout)'.

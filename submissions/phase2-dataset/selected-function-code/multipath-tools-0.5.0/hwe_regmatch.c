@@ -1,3 +1,4 @@
+static int
 hwe_regmatch (struct hwentry *hwe1, struct hwentry *hwe2)
 {
 	regex_t vre, pre, rre;

@@ -1,3 +1,4 @@
+int
 inplaceRecv(src, tag, buf, len, rlen, llmsg)
 int src;
 int tag;

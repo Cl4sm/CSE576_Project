@@ -1,3 +1,4 @@
+int writergb(char *name, int xres, int yres, unsigned char *imgdata) {
   FILE * ofp;
   char iname[80];               /* Image name */
   int x, y, i;

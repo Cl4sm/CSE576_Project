@@ -1,3 +1,4 @@
+static int print_xccc(exp, f, writing)
      SCM exp;
      SCM f;
      int writing;

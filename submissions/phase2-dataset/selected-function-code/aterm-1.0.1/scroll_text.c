@@ -1,3 +1,4 @@
+int
 scroll_text(int row1, int row2, int count, int spec)
 {
     int             i, j;

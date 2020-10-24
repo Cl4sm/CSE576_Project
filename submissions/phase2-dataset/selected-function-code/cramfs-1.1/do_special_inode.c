@@ -1,3 +1,4 @@
+static void do_special_inode(char *path, struct cramfs_inode *i)
 {
 	dev_t devtype = 0;
 	char type;

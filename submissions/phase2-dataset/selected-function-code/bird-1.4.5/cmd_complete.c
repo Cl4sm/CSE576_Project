@@ -1,3 +1,4 @@
+int
 cmd_complete(char *cmd, int len, char *buf, int again)
 {
   char *start = cmd;

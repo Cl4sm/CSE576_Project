@@ -1,3 +1,4 @@
+void sendsignal(bool inrange, btdev_t* btdev)
 {
    DBusMessage* msg;
    DBusMessageIter it;

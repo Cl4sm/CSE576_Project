@@ -1,3 +1,4 @@
+static sc_trajectory_result _sc_traj_hit_tank(const sc_config *c, sc_trajectory *tr) {
 /* sc_traj_hit_tank
    Determine whether we hit a tank with the weapon at (t).
    The weapon might explode, or it might pass right on through... */

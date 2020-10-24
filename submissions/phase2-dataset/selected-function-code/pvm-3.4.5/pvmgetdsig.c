@@ -1,3 +1,4 @@
+int
 pvmgetdsig()
 {
 	static int myfmt = -1;

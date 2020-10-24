@@ -1,3 +1,4 @@
+static int
 enc_xdr_init(mp)
 	struct pmsg *mp;
 {

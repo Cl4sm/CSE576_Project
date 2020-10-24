@@ -1,3 +1,4 @@
+void
 SFbuttonReleaseList(w, n, event)
 	Widget			w;
 	int			n;

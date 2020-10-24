@@ -1,3 +1,4 @@
+int main(int argc, char *argv[])
 {
   uint32_t		superblock_in[16], superblock_out[16], 
                         flags, blockpointer_in, blockpointer_out,

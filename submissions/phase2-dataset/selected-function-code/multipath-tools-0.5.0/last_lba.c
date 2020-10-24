@@ -1,3 +1,4 @@
+static uint64_t
 last_lba(int filedes)
 {
 	int rc;

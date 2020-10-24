@@ -1,3 +1,4 @@
+static void
 server_connect(void)
 {
   struct sockaddr_un sa;

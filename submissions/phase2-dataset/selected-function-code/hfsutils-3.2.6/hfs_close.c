@@ -1,3 +1,4 @@
+int hfs_close(hfsfile *file)
 {
   hfsvol *vol = file->vol;
   int result = 0;

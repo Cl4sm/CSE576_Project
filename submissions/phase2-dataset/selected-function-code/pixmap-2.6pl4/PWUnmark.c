@@ -1,3 +1,4 @@
+void PWUnmark(Widget w)
 #else
 void PWUnmark(w)
      Widget w;

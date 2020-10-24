@@ -1,3 +1,4 @@
+work()
 {
 	static int lastpinged = 0;	/* host that got last keepalive msg */
 #ifdef FDSETNOTSTRUCT

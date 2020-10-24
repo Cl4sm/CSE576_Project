@@ -1,3 +1,4 @@
+int
 tm_addhost(tp, mp)
 	struct task *tp;
 	struct pmsg *mp;

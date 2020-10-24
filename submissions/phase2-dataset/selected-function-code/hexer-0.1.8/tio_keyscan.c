@@ -1,3 +1,4 @@
+  char *
 tio_keyscan(key, s, mode)
   int *key;
   char *s;

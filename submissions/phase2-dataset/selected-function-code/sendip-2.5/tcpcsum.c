@@ -1,3 +1,4 @@
+static void tcpcsum(sendip_data *ip_hdr, sendip_data *tcp_hdr,
 						  sendip_data *data) {
 	tcp_header *tcp = (tcp_header *)tcp_hdr->data;
 	ip_header  *ip  = (ip_header *)ip_hdr->data;

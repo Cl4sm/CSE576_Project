@@ -1,3 +1,4 @@
+void ai_getDistances(int player, AI_Distances *distances) {
 	enum { eFront = 0, eLeft, eRight, eBackleft, eMax };
 	segment2 segments[eMax];
 	vec2 v, vPos;

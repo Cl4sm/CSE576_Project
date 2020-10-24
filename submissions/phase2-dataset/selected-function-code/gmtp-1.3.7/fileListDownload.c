@@ -1,3 +1,4 @@
+gboolean fileListDownload(GList *List) {
     GtkWidget *FileDialog;
     gchar *savepath = NULL;
     //savepath = g_malloc0(8192);

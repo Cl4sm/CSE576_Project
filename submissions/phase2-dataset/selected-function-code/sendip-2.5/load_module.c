@@ -1,3 +1,4 @@
+static bool load_module(char *modname) {
 	sendip_module *newmod = malloc(sizeof(sendip_module));
 	sendip_module *cur;
 	int (*n_opts)(void);

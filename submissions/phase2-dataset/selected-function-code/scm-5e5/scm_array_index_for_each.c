@@ -1,3 +1,4 @@
+SCM scm_array_index_for_each(ra, proc)
      SCM ra, proc;
 {
   SCM hp_av, hp_indv, auto_av[5];

@@ -1,3 +1,4 @@
+void
 say(char *format, ...)
 {
 	va_list vl;

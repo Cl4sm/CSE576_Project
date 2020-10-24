@@ -1,3 +1,4 @@
+bool sc_weapon_create_all(sc_config *c, sc_explosion **e) {
 /* sc_weapon_create_all
    Create the weapons for each player, to be launched.
    Returns true if we already have explosions to run... */

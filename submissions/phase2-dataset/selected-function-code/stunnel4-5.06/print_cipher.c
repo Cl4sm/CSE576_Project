@@ -1,3 +1,4 @@
+NOEXPORT void print_cipher(CLI *c) { /* print negotiated cipher */
     SSL_CIPHER *cipher;
 #if !defined(OPENSSL_NO_COMP) && OPENSSL_VERSION_NUMBER>=0x0090800fL
     const COMP_METHOD *compression, *expansion;

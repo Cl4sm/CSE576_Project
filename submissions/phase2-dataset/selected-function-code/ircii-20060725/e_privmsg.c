@@ -1,3 +1,4 @@
+static	void
 e_privmsg(command, args, subargs)
 	u_char	*command,
 		*args,

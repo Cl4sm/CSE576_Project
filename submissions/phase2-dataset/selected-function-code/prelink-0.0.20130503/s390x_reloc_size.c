@@ -1,3 +1,4 @@
+static int
 s390x_reloc_size (int reloc_type)
 {
   switch (reloc_type)

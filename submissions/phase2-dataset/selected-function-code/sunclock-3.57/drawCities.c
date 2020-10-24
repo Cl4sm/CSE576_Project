@@ -1,3 +1,4 @@
+void
 drawCities(Context)
 struct Sundata * Context;
 {

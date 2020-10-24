@@ -1,3 +1,4 @@
+void file_resize(char *s, char *d)
 {
 	char	*e;
 	unsigned int i;

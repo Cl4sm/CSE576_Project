@@ -1,3 +1,4 @@
+void initXwindow(int argc, char *argv[]){
 
     int		 i;
     char	*display_name = NULL;

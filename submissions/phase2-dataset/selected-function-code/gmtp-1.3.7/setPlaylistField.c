@@ -1,3 +1,4 @@
+void setPlaylistField(gint PlayListID) {
     // This function will populate the playlist_PL_List widget with the
     // details of the selected playlist.
     LIBMTP_playlist_t* tmpplaylist = devicePlayLists;

@@ -1,3 +1,4 @@
+static void calc_sequence(struct params *fd, int tailsect)
 {
 	int sec_id, cur_sector, i;
 

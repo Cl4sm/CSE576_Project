@@ -1,3 +1,4 @@
+int l_putddr(hfsvol *vol, const Block0 *ddr)
 {
   block b;
   byte *ptr = b;

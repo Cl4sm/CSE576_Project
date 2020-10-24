@@ -1,3 +1,4 @@
+struct peer *
 peer_conn(tid, new_connection)
 	int tid;
 	int *new_connection;

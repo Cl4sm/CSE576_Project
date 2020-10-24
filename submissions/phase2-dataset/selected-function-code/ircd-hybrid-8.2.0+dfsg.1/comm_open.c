@@ -1,3 +1,4 @@
+int
 comm_open(fde_t *F, int family, int sock_type, int proto, const char *note)
 {
   int fd;

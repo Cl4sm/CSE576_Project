@@ -1,3 +1,4 @@
+static
 int opendst(const char *dstname, const char *hint)
 {
   int fd;

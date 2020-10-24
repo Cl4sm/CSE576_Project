@@ -1,3 +1,4 @@
+unsigned long getColor(char *ColorName, float fac, int *red, int *grn, int *blu) {
 
      XColor 		Color;
      XWindowAttributes 	Attributes;

@@ -1,3 +1,4 @@
+static void
 cli_copy_message(cli *c)
 {
   byte *p, *q;

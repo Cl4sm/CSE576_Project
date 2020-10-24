@@ -1,3 +1,4 @@
+color image_sphere_texture(const vector * hit, const texture * tx, const ray * ry) {
   vector rh;
   flt u, v, miprad, maxscale, sprad;
   standard_texture * tex = (standard_texture *) tx;

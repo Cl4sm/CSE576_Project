@@ -1,3 +1,4 @@
+void
 funny_print_widelist()
 {
 	int	i;

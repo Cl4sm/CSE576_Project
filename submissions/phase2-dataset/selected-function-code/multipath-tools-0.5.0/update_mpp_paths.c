@@ -1,3 +1,4 @@
+extern int
 update_mpp_paths(struct multipath * mpp, vector pathvec)
 {
 	struct pathgroup * pgp;

@@ -1,3 +1,4 @@
+char* bud_expand_fmt(const bud_utrec_t *bud, const char *fmt_string){
 	int buf_fd[2], buf_size=0, amt=0, i, h_len=0;
 	char *hname=NULL, *out_str=NULL;
 	time_t tp;

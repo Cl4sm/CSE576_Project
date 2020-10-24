@@ -1,3 +1,4 @@
+void
 send_umode(struct Client *client_p, struct Client *source_p,
            unsigned int old, char *umode_buf)
 {

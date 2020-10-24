@@ -1,3 +1,4 @@
+sc_weapon_config *sc_weapon_config_create(const sc_config *c) {
 /* sc_weapon_config_create
    Allocate space and set defaults on a new sc_weapon_config struct. */
 

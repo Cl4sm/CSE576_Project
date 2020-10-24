@@ -1,3 +1,4 @@
+NOEXPORT int init_prng(GLOBAL_OPTIONS *global) {
     int totbytes=0;
     char filename[256];
 #ifndef USE_WIN32

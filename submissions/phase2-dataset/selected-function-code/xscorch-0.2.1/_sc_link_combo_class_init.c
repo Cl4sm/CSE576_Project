@@ -1,3 +1,4 @@
+static void _sc_link_combo_class_init(ScLinkComboClass *klass) {
 
    GtkObjectClass *object_class = (GtkObjectClass *)klass;
 

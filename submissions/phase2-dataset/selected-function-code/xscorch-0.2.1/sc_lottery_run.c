@@ -1,3 +1,4 @@
+void sc_lottery_run(sc_config *c) {
 /* sc_lottery_run
    Give a random player a random weapon. */
 

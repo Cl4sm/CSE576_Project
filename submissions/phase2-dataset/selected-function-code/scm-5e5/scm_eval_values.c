@@ -1,3 +1,4 @@
+SCM scm_eval_values(x, env, valenv)
      SCM x, env, valenv;
 {
   SCM res;

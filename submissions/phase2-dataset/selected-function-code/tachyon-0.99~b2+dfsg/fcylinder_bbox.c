@@ -1,3 +1,4 @@
+static int fcylinder_bbox(void * obj, vector * min, vector * max) {
   cylinder * c = (cylinder *) obj;
   vector mintmp, maxtmp;
 

@@ -1,3 +1,4 @@
+void 
 drawButton(win, n, clicked)
 Window win;
 int n;

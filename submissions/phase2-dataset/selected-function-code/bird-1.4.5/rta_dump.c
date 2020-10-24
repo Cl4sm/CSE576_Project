@@ -1,3 +1,4 @@
+void
 rta_dump(rta *a)
 {
   static char *rts[] = { "RTS_DUMMY", "RTS_STATIC", "RTS_INHERIT", "RTS_DEVICE",

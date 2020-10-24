@@ -1,3 +1,4 @@
+void r_unpackcatdata(const byte *pdata, CatDataRec *data)
 {
   int i;
 

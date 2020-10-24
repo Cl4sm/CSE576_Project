@@ -1,3 +1,4 @@
+static int get_proxy(const char *dev, int fd)
 {
 	unsigned char results[256];
 	unsigned char sb[128];

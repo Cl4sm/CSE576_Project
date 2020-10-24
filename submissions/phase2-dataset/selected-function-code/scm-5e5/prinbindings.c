@@ -1,3 +1,4 @@
+static void prinbindings(names, inits, init_env,
 			 steps, step_env, port, writing)
      SCM names, inits, init_env, steps, step_env, port;
      int writing;

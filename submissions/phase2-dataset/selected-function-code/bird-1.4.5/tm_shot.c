@@ -1,3 +1,4 @@
+static void
 tm_shot(void)
 {
   timer *t;

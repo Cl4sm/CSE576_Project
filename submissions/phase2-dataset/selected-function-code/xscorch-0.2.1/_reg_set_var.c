@@ -1,3 +1,4 @@
+static bool _reg_set_var(reg *r, reg_var *v, const char *path,
                          const reg_var_data *data, bool overwrite) {
 /* reg_set_var
    Sets the variable to the value based on the description in data.

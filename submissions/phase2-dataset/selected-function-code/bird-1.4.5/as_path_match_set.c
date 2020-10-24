@@ -1,3 +1,4 @@
+int
 as_path_match_set(struct adata *path, struct f_tree *set)
 {
   u8 *p = path->data;

@@ -1,3 +1,4 @@
+static int
 rt_update_hostentry(rtable *tab, struct hostentry *he)
 {
   rta *old_src = he->src;

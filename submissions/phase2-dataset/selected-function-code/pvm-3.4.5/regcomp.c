@@ -1,3 +1,4 @@
+int
 regcomp (preg, pattern, cflags)
     regex_t *preg;
     const char *pattern; 

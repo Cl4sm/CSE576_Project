@@ -1,3 +1,4 @@
+static void _obex_object_push_set_property(GObject *object, guint property_id, const GValue *value, GParamSpec *pspec)
 {
 	ObexObjectPush *self = OBEX_OBJECT_PUSH(object);
 	GError *error = NULL;

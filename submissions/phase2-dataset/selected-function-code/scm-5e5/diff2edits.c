@@ -1,3 +1,4 @@
+SCM diff2edits(Edits, Fp, Args)
      SCM Edits, Fp, Args;	/* Ccrr, A, B; */
 {
   SCM aprot, bprot;

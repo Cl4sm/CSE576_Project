@@ -1,3 +1,4 @@
+int v_writemdb(hfsvol *vol)
 {
   vol->mdb.drLsMod = d_mtime(time(0));
 

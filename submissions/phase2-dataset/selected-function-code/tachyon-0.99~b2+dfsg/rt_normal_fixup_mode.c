@@ -1,3 +1,4 @@
+void rt_normal_fixup_mode(SceneHandle voidscene, int mode) {
   scenedef * scene = (scenedef *) voidscene;
   switch (mode) {
     /* RT_NORMAL_FIXUP_MODE_GUESS */

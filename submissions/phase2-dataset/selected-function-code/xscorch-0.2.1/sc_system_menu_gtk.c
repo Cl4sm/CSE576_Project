@@ -1,3 +1,4 @@
+void sc_system_menu_gtk(sc_window_gtk *w) {
 
    char help[SC_GTK_STRING_BUFFER];
    sc_config *c = w->c;

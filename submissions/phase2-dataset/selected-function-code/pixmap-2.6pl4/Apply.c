@@ -1,3 +1,4 @@
+static void Apply( w, client_data, call_data )
     Widget	w;		/* apply button */
     XtPointer	client_data;	/* TextOptions* */
     XtPointer	call_data;	/* unused */

@@ -1,3 +1,4 @@
+bool sc_net_client_send_orders(const sc_config *c, sc_client *cli, int playerid) {
 /* sc_net_client_send_orders
    Send our orders to the server. The server will hopefully accept
    our orders and send a broadcast packet to all players containing

@@ -1,3 +1,4 @@
+void
 resize_window(XEvent* ev)
 {
 	int root_x = 0, root_y = 0; 

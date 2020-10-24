@@ -1,3 +1,4 @@
+color vcstri_color(const vector * hit, const texture * tx, const ray * incident) {
   vcstri_texture * tex = (vcstri_texture *) tx;
   const vcstri * trn = (vcstri *) tex->obj;
   flt U, V, W, lensqr;

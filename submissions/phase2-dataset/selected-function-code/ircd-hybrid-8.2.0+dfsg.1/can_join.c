@@ -1,3 +1,4 @@
+int
 can_join(struct Client *source_p, struct Channel *chptr, const char *key)
 {
   if ((chptr->mode.mode & MODE_SSLONLY) && !HasUMode(source_p, UMODE_SSL))

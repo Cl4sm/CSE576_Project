@@ -1,3 +1,4 @@
+  static char *
 regex_ref(int slot)
   /* The contents of undefined slots default to an empty string, therefore
    * the return value is always a valid (non-zero) pointer.

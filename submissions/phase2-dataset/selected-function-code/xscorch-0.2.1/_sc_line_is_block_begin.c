@@ -1,3 +1,4 @@
+static bool _sc_line_is_block_begin(const reg *r, char *buf, char *name, char *klass) {
 /* sc_line_is_block_begin */
 
    char *p;

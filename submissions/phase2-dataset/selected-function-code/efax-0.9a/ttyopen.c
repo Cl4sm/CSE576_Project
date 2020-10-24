@@ -1,3 +1,4 @@
+int ttyopen ( TFILE *f, char *fname, int reverse, int hwfc )
 {
   int flags, err=0 ;
 

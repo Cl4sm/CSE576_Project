@@ -1,3 +1,4 @@
+static void _sc_traj_roller_fallthrough(const sc_config *c, sc_trajectory *tr, int flags) {
 /* sc_traj_roller_fallthrough
    If falling, then we are allowed to reverse direction once we land.
    We don't care about impact type here, because we assume when this

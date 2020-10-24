@@ -1,3 +1,4 @@
+void parse_rcfile2(const char *filename, rckeys2 *keys) {
 
 	char	*p;
 	char	temp[128];

@@ -1,3 +1,4 @@
+void
 proto_copy_config(struct proto_config *dest, struct proto_config *src)
 {
   node old_node;

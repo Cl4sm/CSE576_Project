@@ -1,3 +1,4 @@
+void child_status(void) { /* dead libwrap or 'exec' process detected */
     int pid, status;
 
 #ifdef HAVE_WAIT_FOR_PID

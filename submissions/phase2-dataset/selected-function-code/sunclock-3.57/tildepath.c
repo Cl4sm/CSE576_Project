@@ -1,3 +1,4 @@
+char *
 tildepath(path)
 char *path;		/* Path starting with ~ */
 {

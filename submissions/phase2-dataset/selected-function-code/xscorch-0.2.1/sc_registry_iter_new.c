@@ -1,3 +1,4 @@
+sc_registry_iter *sc_registry_iter_new(const sc_registry *registry, int class, sc_registry_direction direction, sc_registry_test_func function, long arg) {
 /* sc_registry_iter_new
    Allocate an sc_registry_iter struct for fast registry set iteration. */
 

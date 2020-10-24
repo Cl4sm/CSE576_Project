@@ -1,3 +1,4 @@
+void
 createGData(Context, private)
 struct Sundata * Context;
 int private;

@@ -1,3 +1,4 @@
+  long
 he_search(hedit, exp, replace, direction, wrap, increment, end,
           replace_str, replace_len, match_len)
   struct he_s *hedit;

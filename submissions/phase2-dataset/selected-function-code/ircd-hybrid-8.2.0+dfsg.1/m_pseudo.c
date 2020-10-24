@@ -1,3 +1,4 @@
+static int
 m_pseudo(struct Client *source_p, int parc, char *parv[])
 {
   char buffer[IRCD_BUFSIZE] = "";

@@ -1,3 +1,4 @@
+void PWSetImage(Widget w, XImage *image, XImage *mask_image)
 #else
 void PWSetImage(w, image, mask_image)
     Widget w;

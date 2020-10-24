@@ -1,3 +1,4 @@
+static void * log_thread (void * et)
 {
 	int running;
 

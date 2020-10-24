@@ -1,3 +1,4 @@
+SCM scm_bitfield(n, start, end)
      SCM n, start, end;
 {
   int sign;

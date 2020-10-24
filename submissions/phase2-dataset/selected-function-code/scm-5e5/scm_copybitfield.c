@@ -1,3 +1,4 @@
+SCM scm_copybitfield(to, from, rest)
      SCM to, from, rest;
 {
   long len;

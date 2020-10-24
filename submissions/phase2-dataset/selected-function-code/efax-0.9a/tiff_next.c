@@ -1,3 +1,4 @@
+int tiff_next ( IFILE *f )
 {
   int err=0 ;
   unsigned short ntag, tag, type ;

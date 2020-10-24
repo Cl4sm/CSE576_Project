@@ -1,3 +1,4 @@
+void readwrite_cylinder(int fd, int drive, enum dir direction, 
 			int cylinder, char *data, struct xdf_struct *fmt,
 			int FatSize, int RootDirSize)
 {

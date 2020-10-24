@@ -1,3 +1,4 @@
+static int raeql_1(ra0, as_equal, ra1)
      SCM ra0, as_equal, ra1;
 {
   SCM e0 = UNDEFINED, e1 = UNDEFINED;

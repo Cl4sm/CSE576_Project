@@ -1,3 +1,4 @@
+void PWSetFont( Widget w, XFontStruct *font_struct ) 
 #else
 void PWSetFont( w, font_struct ) 
      Widget	 w; 

@@ -1,3 +1,4 @@
+color cam_orthographic_ray(ray * ry, flt x, flt y) {
   scenedef * scene=ry->scene;
 
   /* starting from the lower left corner of the image plane, we move the   */

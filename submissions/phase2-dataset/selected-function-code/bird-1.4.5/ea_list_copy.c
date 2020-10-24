@@ -1,3 +1,4 @@
+static inline ea_list *
 ea_list_copy(ea_list *o)
 {
   ea_list *n;

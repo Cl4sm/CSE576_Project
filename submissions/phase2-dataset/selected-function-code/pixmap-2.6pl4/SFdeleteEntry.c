@@ -1,3 +1,4 @@
+static
 SFdeleteEntry(dir, entry)
 	SFDir	*dir;
 	SFEntry	*entry;

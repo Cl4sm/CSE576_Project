@@ -1,3 +1,4 @@
+int
 pvm_halt()
 {
 	int cc, sbf, rbf;

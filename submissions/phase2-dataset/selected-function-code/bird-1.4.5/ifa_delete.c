@@ -1,3 +1,4 @@
+void
 ifa_delete(struct ifa *a)
 {
   struct iface *i = a->iface;

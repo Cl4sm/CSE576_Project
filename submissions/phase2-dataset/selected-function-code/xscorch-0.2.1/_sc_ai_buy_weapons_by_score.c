@@ -1,3 +1,4 @@
+static bool _sc_ai_buy_weapons_by_score(const sc_config *c, sc_player *p, int *budget) {
 /* sc_ai_buy_weapons_by_score
    Buy the weapons yielding the best destructive power.  This is a great
    buying strategy for players that just want to annihilate the entire

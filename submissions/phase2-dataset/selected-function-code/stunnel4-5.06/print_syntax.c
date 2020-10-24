@@ -1,3 +1,4 @@
+NOEXPORT void print_syntax(void) {
     s_log(LOG_NOTICE, " ");
     s_log(LOG_NOTICE, "Syntax:");
     s_log(LOG_NOTICE, "stunnel "

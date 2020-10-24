@@ -1,3 +1,4 @@
+extern void
 free_multipath_attributes (struct multipath * mpp)
 {
 	if (!mpp)

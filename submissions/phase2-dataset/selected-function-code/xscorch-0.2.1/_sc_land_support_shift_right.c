@@ -1,3 +1,4 @@
+static int _sc_land_support_shift_right(const sc_config *c, const sc_land *l, int x, int y, int r, int s) {
 /* sc_land_support_shift_right
    Returns the offset the tank may shift to the RIGHT if it is not properly
    supported in that direction.  The tank is at coordinates (x,y+1) with a

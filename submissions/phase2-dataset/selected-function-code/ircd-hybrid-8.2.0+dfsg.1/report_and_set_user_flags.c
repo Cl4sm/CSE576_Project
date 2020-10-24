@@ -1,3 +1,4 @@
+static void
 report_and_set_user_flags(struct Client *source_p, const struct MaskItem *conf)
 {
   /* If this user is being spoofed, tell them so */

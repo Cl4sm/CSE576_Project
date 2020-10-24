@@ -1,3 +1,4 @@
+static void _manager_device_found(GDBusConnection *connection, const gchar *sender_name, const gchar *object_path, const gchar *interface_name, const gchar *signal_name, GVariant *parameters, gpointer user_data)
 {
     g_assert(user_data != NULL);
     const gchar *adapter_object_path = user_data;

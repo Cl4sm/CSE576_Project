@@ -1,3 +1,4 @@
+static void create_targets_window(void)
 {
 	GtkWidget *w, *paned, *paned2, *vbox, *hbox, *btn;
 

@@ -1,3 +1,4 @@
+int text_first ( IFILE *f )
 {
   static faxfont defaultfont ;
 

@@ -1,3 +1,4 @@
+extern int
 select_rr_weight (struct multipath * mp)
 {
 	if (mp->mpe && mp->mpe->rr_weight) {

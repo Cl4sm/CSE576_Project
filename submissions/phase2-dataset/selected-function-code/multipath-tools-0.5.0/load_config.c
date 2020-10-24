@@ -1,3 +1,4 @@
+int
 load_config (char * file, struct udev *udev)
 {
 	if (!conf)

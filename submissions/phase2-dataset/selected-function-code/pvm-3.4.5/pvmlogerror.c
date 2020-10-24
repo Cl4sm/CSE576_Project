@@ -1,3 +1,4 @@
+pvmlogerror(s)
 	char *s;	/* text */
 {
 	pvmlogprintf("%s", s);

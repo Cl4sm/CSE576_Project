@@ -1,3 +1,4 @@
+static void 
 bfd_session_update_state(struct bfd_session *s, uint state, uint diag)
 {
   struct bfd_proto *p = s->ifa->bfd;

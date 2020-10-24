@@ -1,3 +1,4 @@
+int
 close_db(struct dbFILE *f)
 {
   int res;

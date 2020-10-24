@@ -1,3 +1,4 @@
+int
 netentry(hp, mp)
 	struct hostd *hp;
 	struct pmsg *mp;

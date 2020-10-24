@@ -1,3 +1,4 @@
+NOEXPORT int setup_fd(int fd, int nonblock, char *msg) {
 #if !defined USE_NEW_LINUX_API && defined FD_CLOEXEC
     int err;
 #endif

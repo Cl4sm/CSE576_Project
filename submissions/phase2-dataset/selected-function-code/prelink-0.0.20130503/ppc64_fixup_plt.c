@@ -1,3 +1,4 @@
+static int
 ppc64_fixup_plt (struct prelink_info *info, GElf_Rela *rela, GElf_Addr value)
 {
   DSO *dso = info->dso;

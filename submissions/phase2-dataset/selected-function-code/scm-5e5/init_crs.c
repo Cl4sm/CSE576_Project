@@ -1,3 +1,4 @@
+void init_crs()
 {
   /*  savetty(); */
   /* "Stdscr" is a nearly inaccessible symbol used as a GC protect. */

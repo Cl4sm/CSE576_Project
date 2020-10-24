@@ -1,3 +1,4 @@
+char* expand(char* filepath)
 {
    static char newpath[256];
    static char username[32];

@@ -1,3 +1,4 @@
+static void
 add_one_to_uid(unsigned int i)
 {
   if (i != IRC_MAXSID)  /* Not reached server SID portion yet? */

@@ -1,3 +1,4 @@
+static inline u32
 fibnode_to_lsaid(struct proto_ospf *po, struct fib_node *fn)
 {
   /* We have to map IP prefixes to u32 in such manner that resulting

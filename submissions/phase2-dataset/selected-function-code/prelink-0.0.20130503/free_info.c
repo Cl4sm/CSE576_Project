@@ -1,3 +1,4 @@
+static void
 free_info (struct prelink_info *info)
 {
   int i;

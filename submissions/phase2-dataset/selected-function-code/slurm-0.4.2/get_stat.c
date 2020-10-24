@@ -1,3 +1,4 @@
+int get_stat(void)
 {
     int             i,fd, ret=-1;
     static int wait_pcks_counter=WAIT_PCKS_COUNTER+1;

@@ -1,3 +1,4 @@
+static GHashTable *_bt_device_sdp_browse(const gchar *device_path, const gchar *pattern)
 {
     int pipefd[2];
     pipe(pipefd);

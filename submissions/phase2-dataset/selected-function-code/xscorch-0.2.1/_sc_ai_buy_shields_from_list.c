@@ -1,3 +1,4 @@
+static bool _sc_ai_buy_shields_from_list(const sc_config *c, sc_player *p, int *budget, const int *ordering) {
 /* sc_ai_buy_shields_from_list
    Buy shields from the ordered list given; keep trying to
    buy until we find a set we can afford, then stop there.  */

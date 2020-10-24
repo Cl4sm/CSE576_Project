@@ -1,3 +1,4 @@
+SCM scm_make_cont()
 {
   SCM cont, estk, *from;
   CONTINUATION *ncont;

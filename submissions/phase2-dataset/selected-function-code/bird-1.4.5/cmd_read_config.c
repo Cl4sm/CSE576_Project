@@ -1,3 +1,4 @@
+static struct config *
 cmd_read_config(char *name)
 {
   struct config *conf;

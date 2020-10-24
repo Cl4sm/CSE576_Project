@@ -1,3 +1,4 @@
+void
 scr_index(int direction)
 {
     int             dirn;

@@ -1,3 +1,4 @@
+shashlist_item *shashlist_find_by_int(const shashlist *list, int key) {
 /* shashlist_find_by_int
    Find a shashlist item by integer key. */
 

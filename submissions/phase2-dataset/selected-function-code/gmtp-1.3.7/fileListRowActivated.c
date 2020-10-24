@@ -1,3 +1,4 @@
+void fileListRowActivated(GtkTreeView *treeview, GtkTreePath *path, GtkTreeViewColumn *column, gpointer data) {
     GtkTreeModel *model;
     GtkTreeModel *sortmodel;
     GtkTreeIter iter;

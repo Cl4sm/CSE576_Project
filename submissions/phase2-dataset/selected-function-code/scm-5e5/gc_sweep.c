@@ -1,3 +1,4 @@
+static void gc_sweep(contin_bad)
      int contin_bad;
 {
   register CELLPTR ptr;

@@ -1,3 +1,4 @@
+void
 menubar_dispatch(char *str)
 {
 #ifdef MENUBAR

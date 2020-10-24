@@ -1,3 +1,4 @@
+void sc_window_paint(sc_window *w_, int x1, int y1, int x2, int y2, int flags) {
 /* sc_window_paint
    This function updates a rectangular region of the display, using the
    coordinates (x1,y1)-(x2,y2) as a bounding box for the area needing

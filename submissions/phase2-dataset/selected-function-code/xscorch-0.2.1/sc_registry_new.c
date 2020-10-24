@@ -1,3 +1,4 @@
+sc_registry *sc_registry_new(void) {
 /* sc_registry_new
    Allocate and initialize a new registry. */
 

@@ -1,3 +1,4 @@
+int b_writelb(hfsvol *vol, unsigned long bnum, const block *bp)
 {
   if (vol->vlen > 0 && bnum >= vol->vlen)
     ERROR(EIO, "write nonexistent logical block");

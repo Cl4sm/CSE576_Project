@@ -1,3 +1,4 @@
+static void
 rte_announce(rtable *tab, unsigned type, net *net, rte *new, rte *old, rte *before_old, ea_list *tmpa)
 {
   if (!rte_is_valid(old))

@@ -1,3 +1,4 @@
+void
 term_init()
 {
 #ifndef	STTY_ONLY

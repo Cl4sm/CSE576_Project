@@ -1,3 +1,4 @@
+struct segdesc *
 pvm_shmget(key, len, iAmOwner)
 key_t key;
 int len;

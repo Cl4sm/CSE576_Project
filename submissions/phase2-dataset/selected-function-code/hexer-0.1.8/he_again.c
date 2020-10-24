@@ -1,3 +1,4 @@
+  static void
 he_again(struct he_s *hedit, long position)
   /* Walk backwards through the undo list, until a command is found with
    * the `again' flag set and reperfom this command on position `position'.

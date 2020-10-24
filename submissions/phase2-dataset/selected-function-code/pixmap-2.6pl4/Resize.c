@@ -1,3 +1,4 @@
+static void Resize(PW)
      PixmapWidget PW;
 {
     Dimension squareW, squareH;

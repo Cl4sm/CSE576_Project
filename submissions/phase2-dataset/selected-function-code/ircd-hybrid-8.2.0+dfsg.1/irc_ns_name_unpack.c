@@ -1,3 +1,4 @@
+static int
 irc_ns_name_unpack(const unsigned char *msg, const unsigned char *eom,
                    const unsigned char *src, unsigned char *dst,
                    size_t dstsiz)

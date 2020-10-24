@@ -1,3 +1,4 @@
+static void
 select_loop(void)
 {
   int rv;

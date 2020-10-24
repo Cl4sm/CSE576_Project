@@ -1,3 +1,4 @@
+static SCM acro_call(x, env)
      SCM x, env;
 {
   SCM proc, argv[3];

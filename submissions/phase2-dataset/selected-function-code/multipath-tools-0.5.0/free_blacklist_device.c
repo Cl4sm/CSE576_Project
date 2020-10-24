@@ -1,3 +1,4 @@
+void
 free_blacklist_device (vector blist)
 {
 	struct blentry_device * ble;

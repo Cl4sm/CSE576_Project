@@ -1,3 +1,4 @@
+void
 read_links_file(void)
 {
   FILE *file = NULL;

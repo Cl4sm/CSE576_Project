@@ -1,3 +1,4 @@
+mp_pool_t *
 mp_pool_new(size_t item_size, size_t chunk_capacity)
 {
   mp_pool_t *pool;

@@ -1,3 +1,4 @@
+static	void
 dcc_rename(args)
 	u_char	*args;
 {

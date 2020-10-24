@@ -1,3 +1,4 @@
+void
 save_xline_database(void)
 {
   uint32_t records = 0;

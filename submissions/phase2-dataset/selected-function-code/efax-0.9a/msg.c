@@ -1,3 +1,4 @@
+int msg ( char *fmt, ... ) 
 { 
   static int init=0 ;
   static FILE *logfile [ NLOG ] ;

@@ -1,3 +1,4 @@
+static int
 hw_detect_prio_handler(vector strvec)
 {
 	struct hwentry *hwe = VECTOR_LAST_SLOT(conf->hwtable);

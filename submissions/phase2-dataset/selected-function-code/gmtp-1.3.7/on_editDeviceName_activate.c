@@ -1,3 +1,4 @@
+void on_editDeviceName_activate(GtkMenuItem *menuitem, gpointer user_data) {
     gchar *devicename = NULL;
     gchar *tmp_string = NULL;
 

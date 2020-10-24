@@ -1,3 +1,4 @@
+int
 read_sun_pt(int fd, struct slice all, struct slice *sp, int ns) {
 	struct sun_disk_label *l;
 	struct sun_raw_part *s;

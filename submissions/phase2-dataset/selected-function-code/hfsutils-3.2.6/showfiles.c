@@ -1,3 +1,4 @@
+static
 int showfiles(darray *files, int flags, int options, int width)
 {
   dlist list;

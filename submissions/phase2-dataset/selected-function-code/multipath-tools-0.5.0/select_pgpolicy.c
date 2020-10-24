@@ -1,3 +1,4 @@
+extern int
 select_pgpolicy (struct multipath * mp)
 {
 	char pgpolicy_name[POLICY_NAME_SIZE];

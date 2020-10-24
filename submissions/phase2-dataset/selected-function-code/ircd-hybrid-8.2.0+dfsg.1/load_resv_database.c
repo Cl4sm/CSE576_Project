@@ -1,3 +1,4 @@
+void
 load_resv_database(void)
 {
   uint32_t i = 0;

@@ -1,3 +1,4 @@
+static int
 do_inq(int sg_fd, int cmddt, int evpd, unsigned int pg_op,
        void *resp, int mx_resp_len, int noisy, unsigned int timeout)
 {

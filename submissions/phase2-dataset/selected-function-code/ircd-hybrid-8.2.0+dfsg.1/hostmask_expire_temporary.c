@@ -1,3 +1,4 @@
+void
 hostmask_expire_temporary(void)
 {
   dlink_node *ptr = NULL, *ptr_next = NULL;

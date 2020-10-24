@@ -1,3 +1,4 @@
+void
 sha_process_block (const void *buffer, size_t len, struct sha_ctx *ctx)
 {
   const md5_uint32 *words = buffer;

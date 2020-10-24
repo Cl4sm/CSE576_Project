@@ -1,3 +1,4 @@
+static inline void _sc_expl_cache_annihilate_happy_gtk(sc_window_gtk *w, GdkPixmap *pixmap, 
                                                        int radius) {
 /* sc_expl_cache_annihilate_happy_gtk
    It's not a bug... it's a ``feature''...  I wonder if anyone has actually

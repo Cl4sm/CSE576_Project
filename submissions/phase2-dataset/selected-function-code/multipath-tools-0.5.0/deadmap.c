@@ -1,3 +1,4 @@
+static int
 deadmap (struct multipath * mpp)
 {
 	int i, j;

@@ -1,3 +1,4 @@
+NOEXPORT void init_local(CLI *c) {
     SOCKADDR_UNION addr;
     socklen_t addr_len;
     char *accepted_address;

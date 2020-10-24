@@ -1,3 +1,4 @@
+static inline bool _sc_land_passable_opponent(const sc_config *c, const sc_player *p, int x, int y) {
 /* sc_land_passable_opponent
    Returns true if the land at virtual (x, y) is passable, considering only
    p's land profile.  This is an internal function with no sanity checks.  */

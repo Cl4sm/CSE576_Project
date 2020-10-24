@@ -1,3 +1,4 @@
+SCM lmax(x, y)
      SCM x, y;
 {
 #ifdef FLOATS

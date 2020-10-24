@@ -1,3 +1,4 @@
+static sc_trajectory_result _sc_traj_traverse_path(sc_config *c, sc_trajectory *tr, int flags,
                                                    sc_trajectory_action action, void *data) {
 /* sc_traj_traverse_path
    This function follows a weapon, from source (x,y) to its (intended)

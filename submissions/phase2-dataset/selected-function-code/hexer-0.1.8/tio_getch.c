@@ -1,3 +1,4 @@
+  int
 tio_getch()
   /* Read a character or keypad key from the keyboard.  `tio_getch()' waits
    * for input and returns the key pressed or `HXKEY_ERROR' (-1) on error.

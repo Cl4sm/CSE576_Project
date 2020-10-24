@@ -1,3 +1,4 @@
+int bt_writehdr(btree *bt)
 {
   byte *ptr, *map;
   unsigned long mapsz, nnum;

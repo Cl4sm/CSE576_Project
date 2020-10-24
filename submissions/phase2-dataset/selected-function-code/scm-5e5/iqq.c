@@ -1,3 +1,4 @@
+static SCM iqq(form)
      SCM form;
 {
   SCM tmp;

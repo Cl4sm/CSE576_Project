@@ -1,3 +1,4 @@
+static void
 ospf_ext_spf(struct proto_ospf *po)
 {
   ort *nf1, *nf2;

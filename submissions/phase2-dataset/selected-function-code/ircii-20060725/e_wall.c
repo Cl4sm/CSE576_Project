@@ -1,3 +1,4 @@
+static	void
 e_wall(command, args, subargs)
 	u_char	*command,
 		*args,

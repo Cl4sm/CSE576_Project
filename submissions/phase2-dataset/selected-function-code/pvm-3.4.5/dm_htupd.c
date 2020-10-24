@@ -1,3 +1,4 @@
+int
 dm_htupd(hp, mp)
 	struct hostd *hp;
 	struct pmsg *mp;

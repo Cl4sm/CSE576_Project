@@ -1,3 +1,4 @@
+int os_open(void **priv, const char *path, int mode)
 {
   int fd;
   struct flock lock;

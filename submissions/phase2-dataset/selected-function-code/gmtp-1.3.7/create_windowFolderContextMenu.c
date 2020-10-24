@@ -1,3 +1,4 @@
+GtkWidget* create_windowFolderContextMenu(void) {
     GtkWidget* menu;
     GtkWidget* menuseparator1;
     menu = gtk_menu_new();

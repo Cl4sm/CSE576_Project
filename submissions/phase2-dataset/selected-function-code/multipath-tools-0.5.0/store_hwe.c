@@ -1,3 +1,4 @@
+int
 store_hwe (vector hwtable, struct hwentry * dhwe)
 {
 	struct hwentry * hwe;

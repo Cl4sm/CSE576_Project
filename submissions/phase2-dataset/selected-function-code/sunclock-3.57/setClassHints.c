@@ -1,3 +1,4 @@
+void
 setClassHints(win, num)
 Window win;
 int    num;

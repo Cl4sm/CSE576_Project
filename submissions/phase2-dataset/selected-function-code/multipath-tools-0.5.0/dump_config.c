@@ -1,3 +1,4 @@
+static int
 dump_config (void)
 {
 	char * c;

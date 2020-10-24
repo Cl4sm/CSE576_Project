@@ -1,3 +1,4 @@
+DBusConnection* dbusConnect()
 {
    DBusConnection* conn;
    DBusError err;

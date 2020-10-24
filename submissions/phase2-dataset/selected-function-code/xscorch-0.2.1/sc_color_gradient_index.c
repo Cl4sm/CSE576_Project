@@ -1,3 +1,4 @@
+int sc_color_gradient_index(bool dither, const int *gradient, int y) {
 
    const int *gp;
    int low;

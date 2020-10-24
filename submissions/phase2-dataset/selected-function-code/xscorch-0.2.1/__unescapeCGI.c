@@ -1,3 +1,4 @@
+static inline char *__unescapeCGI(char *s) {
 /* internal-Unescape-CGIstring
    This function will unescape characters in a CGI-encoded string.
    Note that since the target string is always smaller than the

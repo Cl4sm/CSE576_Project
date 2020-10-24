@@ -1,3 +1,4 @@
+static
 cpifunc automode_unix(const char *path)
 {
   int i;

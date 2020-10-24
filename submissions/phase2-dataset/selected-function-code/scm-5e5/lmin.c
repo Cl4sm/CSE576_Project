@@ -1,3 +1,4 @@
+SCM lmin(x, y)
      SCM x, y;
 {
 #ifdef FLOATS

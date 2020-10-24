@@ -1,3 +1,4 @@
+void 
 showManual()
 {
 int i=0, j, k, l, c, cp;

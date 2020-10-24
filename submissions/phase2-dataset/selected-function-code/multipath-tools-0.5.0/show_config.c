@@ -1,3 +1,4 @@
+int
 show_config (char ** r, int * len)
 {
 	char * c;

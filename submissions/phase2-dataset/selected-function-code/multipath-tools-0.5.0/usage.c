@@ -1,3 +1,4 @@
+static void usage()
 {
 	fprintf(stderr,
 			"Usage: mpathpersist [OPTIONS] [DEVICE]\n"

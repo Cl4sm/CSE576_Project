@@ -1,3 +1,4 @@
+int sc_config_file_load(sc_config *c) {
 /* sc_config_file_load
    Load the registry from user's config file. */
 

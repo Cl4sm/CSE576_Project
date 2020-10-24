@@ -1,3 +1,4 @@
+void
 scr_insdel_chars(int count, int insdel)
 {
     int             col, row;

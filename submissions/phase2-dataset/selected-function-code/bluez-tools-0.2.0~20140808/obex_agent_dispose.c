@@ -1,3 +1,4 @@
+static void obex_agent_dispose(GObject *gobject)
 {
 	ObexAgent *self = OBEX_AGENT(gobject);
 

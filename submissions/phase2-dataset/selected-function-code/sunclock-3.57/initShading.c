@@ -1,3 +1,4 @@
+void 
 initShading(Context) 
 struct Sundata * Context;
 {

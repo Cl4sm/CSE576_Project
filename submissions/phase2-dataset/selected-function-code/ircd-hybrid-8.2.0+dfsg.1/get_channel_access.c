@@ -1,3 +1,4 @@
+static int
 get_channel_access(const struct Client *source_p,
                    const struct Membership *member)
 {

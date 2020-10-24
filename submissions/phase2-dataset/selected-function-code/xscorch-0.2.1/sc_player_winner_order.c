@@ -1,3 +1,4 @@
+sc_player **sc_player_winner_order(sc_config *c, sc_player **playerlist) {
 /* sc_player_winner_order */
 
    sc_player *tmp;

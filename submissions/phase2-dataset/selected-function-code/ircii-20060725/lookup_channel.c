@@ -1,3 +1,4 @@
+ChannelList *
 lookup_channel(u_char *channel, int server, int do_unlink)
 {
 	ChannelList	*chan, *last = (ChannelList *) 0;

@@ -1,3 +1,4 @@
+int gchar( unsigned char *byt)
 { static char buffer[BUFLEN_E];
   static int cnt=0;
   static char *ptr;

@@ -1,3 +1,4 @@
+void
 internal_function
 _nl_load_domain (domain_file, domainbinding)
      struct loaded_l10nfile *domain_file;

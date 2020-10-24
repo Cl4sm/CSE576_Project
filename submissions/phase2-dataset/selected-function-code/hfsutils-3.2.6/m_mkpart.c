@@ -1,3 +1,4 @@
+int m_mkpart(hfsvol *vol,
 	     const char *name, const char *type, unsigned long len)
 {
   Partition map;

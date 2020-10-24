@@ -1,3 +1,4 @@
+int DoMaildirMail()
 {
 	struct conf_ent *cp;
 	struct mail_ent me;

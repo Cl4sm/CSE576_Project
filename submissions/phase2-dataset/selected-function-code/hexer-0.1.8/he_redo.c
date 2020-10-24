@@ -1,3 +1,4 @@
+  static void
 he_redo(struct he_s *hedit)
   /* Redo the last undo.
    */

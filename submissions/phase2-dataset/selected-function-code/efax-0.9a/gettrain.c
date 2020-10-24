@@ -1,3 +1,4 @@
+int gettrain ( TFILE *f, char *s, int n, int *good ) 
 { 
   int err=0, c, i=0, maxrunl=0, runl=0 ;
   

@@ -1,3 +1,4 @@
+extern void
 print_all_paths_custo (vector pathvec, int banner, char *fmt)
 {
 	int i;

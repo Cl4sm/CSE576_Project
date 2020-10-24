@@ -1,3 +1,4 @@
+extern int
 dm_addmap (int task, const char *name, const char *target,
 	   const char *params, uint64_t size, int ro, const char *uuid, int part,
 	   mode_t mode, uid_t uid, gid_t gid, uint32_t *cookie) {

@@ -1,3 +1,4 @@
+void
 remove_from_channel(u_char *channel, u_char *nick, int server)
 {
 	ChannelList *chan;

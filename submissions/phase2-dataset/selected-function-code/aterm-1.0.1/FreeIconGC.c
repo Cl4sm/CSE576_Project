@@ -1,3 +1,4 @@
+static void
 FreeIconGC( IconGC* igc )
 {
     if( igc )

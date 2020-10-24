@@ -1,3 +1,4 @@
+int processEvent(GameEvent* e) {
   int value = 0;
 
 #ifdef RECORD

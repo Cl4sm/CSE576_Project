@@ -1,3 +1,4 @@
+int 
 ogm_complete( ogmlist )
 struct msgid **ogmlist; 
 {

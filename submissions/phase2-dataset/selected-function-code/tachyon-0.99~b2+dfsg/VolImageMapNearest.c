@@ -1,3 +1,4 @@
+color VolImageMapNearest(const rawimage * img, flt u, flt v, flt w) {
   color col;
   flt x, y, z;
   int ix, iy, iz;

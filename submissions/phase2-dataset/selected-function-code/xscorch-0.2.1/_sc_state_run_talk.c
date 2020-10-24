@@ -1,3 +1,4 @@
+static void _sc_state_run_talk(sc_config *c, sc_game *g) {
 
    const char *msg;
    sc_player *p = c->plorder[g->curplayer];

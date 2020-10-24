@@ -1,3 +1,4 @@
+NOEXPORT char *nntp_client(CLI *c, SERVICE_OPTIONS *opt, const PHASE phase) {
     char *line;
 
     (void)opt; /* skip warning about unused parameter */

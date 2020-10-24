@@ -1,3 +1,4 @@
+color shade_reflection(ray * incident, const shadedata * shadevars, flt specular) {
   ray specray;
   color col;
   vector R;

@@ -1,3 +1,4 @@
+void print_params(drivedesc_t *drivedesc,
 		  struct floppy_struct *ft,
 		  level_t level, int cpm,
 		  void (*print)(char *,int))

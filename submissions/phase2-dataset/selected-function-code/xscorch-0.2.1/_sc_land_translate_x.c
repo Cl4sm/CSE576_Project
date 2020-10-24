@@ -1,3 +1,4 @@
+static inline bool _sc_land_translate_x(const sc_land *l, int *x) {
 /* _sc_land_translate_x
    Translates the X coordinate indicated.  This will translate, taking into
    consideration the wall types.  It will return true if the coordinate

@@ -1,3 +1,4 @@
+void add_package(package_t* package)
 {
    variable_t* evar;
    variable_t* vvar;

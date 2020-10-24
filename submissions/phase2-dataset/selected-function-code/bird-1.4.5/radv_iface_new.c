@@ -1,3 +1,4 @@
+static void
 radv_iface_new(struct proto_radv *ra, struct iface *iface, struct radv_iface_config *cf)
 {
   pool *pool = ra->p.pool;

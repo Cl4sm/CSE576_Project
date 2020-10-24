@@ -1,3 +1,4 @@
+void
 tev_flush( setflag )
 int setflag;
 {

@@ -1,3 +1,4 @@
+void PWHighlightAxes(Widget w)
 #else
 void PWHighlightAxes(w)
      Widget w;

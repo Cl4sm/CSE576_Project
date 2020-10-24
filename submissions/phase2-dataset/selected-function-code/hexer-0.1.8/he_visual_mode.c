@@ -1,3 +1,4 @@
+  static void
 he_visual_mode(hedit)
   struct he_s *hedit;
 {

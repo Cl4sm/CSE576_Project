@@ -1,3 +1,4 @@
+struct birdloop *
 birdloop_new(void)
 {
   /* FIXME: this init should be elsewhere and thread-safe */

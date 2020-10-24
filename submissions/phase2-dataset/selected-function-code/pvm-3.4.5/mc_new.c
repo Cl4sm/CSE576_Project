@@ -1,3 +1,4 @@
+static struct pvmmclass *
 mc_new(name)
 	char *name;
 {

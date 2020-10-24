@@ -1,3 +1,4 @@
+static int
 sk_maybe_write(sock *s)
 {
   int e;

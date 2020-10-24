@@ -1,3 +1,4 @@
+static int
 ibol(o, p, n)
 	int o;
 	char *p;

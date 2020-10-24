@@ -1,3 +1,4 @@
+struct MaskItem *
 find_address_conf(const char *host, const char *user, struct irc_ssaddr *ip,
                   int aftype, const char *password)
 {

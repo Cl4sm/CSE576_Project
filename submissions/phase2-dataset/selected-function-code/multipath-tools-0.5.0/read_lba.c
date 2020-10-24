@@ -1,3 +1,4 @@
+static ssize_t
 read_lba(int fd, uint64_t lba, void *buffer, size_t bytes)
 {
 	int sector_size = get_sector_size(fd);

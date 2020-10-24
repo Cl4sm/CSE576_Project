@@ -1,3 +1,4 @@
+int
 dm_get_major (char * mapname)
 {
 	int r = -1;

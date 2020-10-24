@@ -1,3 +1,4 @@
+static int engrid_objlist(grid * g, object ** list) {
   object * cur, * next, **prev;
   int numsucceeded = 0;
 

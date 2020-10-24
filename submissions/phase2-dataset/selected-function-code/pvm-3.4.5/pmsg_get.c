@@ -1,3 +1,4 @@
+static struct pmsg *
 pmsg_get()
 {
 	struct pmsg *mp;

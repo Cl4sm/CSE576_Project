@@ -1,3 +1,4 @@
+GSList* getFileGetList2Add() {
     GSList* files = NULL;
     GtkWidget *FileDialog;
     gchar *savepath = NULL;

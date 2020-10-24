@@ -1,3 +1,4 @@
+static void
 rt_prune_nets(rtable *tab)
 {
   struct fib_iterator fit;

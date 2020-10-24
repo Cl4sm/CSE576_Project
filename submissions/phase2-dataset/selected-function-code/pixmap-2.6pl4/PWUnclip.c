@@ -1,3 +1,4 @@
+void PWUnclip(Widget w)
 #else
 void PWUnclip(w)
     Widget w;

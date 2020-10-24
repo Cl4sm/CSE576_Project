@@ -1,3 +1,4 @@
+int
 check_path (struct vectors * vecs, struct path * pp)
 {
 	int newstate;

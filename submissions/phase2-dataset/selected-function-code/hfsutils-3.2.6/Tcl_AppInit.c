@@ -1,3 +1,4 @@
+int Tcl_AppInit(Tcl_Interp *interp)
 {
   if (Tcl_Init(interp) == TCL_ERROR ||
       Tk_Init(interp)  == TCL_ERROR ||

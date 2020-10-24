@@ -1,3 +1,4 @@
+void sc_sound_start(sc_sound *s, sc_sound_music id) {
 
    /*int voice;*/
 

@@ -1,3 +1,4 @@
+int
 mpp_probe()
 {
 	struct pkt *pp, *pp2, *tosend;

@@ -1,3 +1,4 @@
+int drop_privileges(int critical) {
 #if defined(USE_WIN32) || defined(__vms) || defined(USE_OS2)
     (void)critical; /* skip warning about unused parameter */
 #else

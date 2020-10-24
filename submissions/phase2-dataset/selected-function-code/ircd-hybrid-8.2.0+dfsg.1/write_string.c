@@ -1,3 +1,4 @@
+int
 write_string(const char *s, struct dbFILE *f)
 {
   uint32_t len = 0;

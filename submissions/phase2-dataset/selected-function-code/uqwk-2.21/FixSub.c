@@ -1,3 +1,4 @@
+struct sub_ent *FixSub (sp, lo, hi)
 struct sub_ent *sp;
 int lo, hi;
 /*

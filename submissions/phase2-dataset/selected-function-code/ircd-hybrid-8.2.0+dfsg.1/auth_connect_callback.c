@@ -1,3 +1,4 @@
+static void
 auth_connect_callback(fde_t *fd, int error, void *data)
 {
   struct AuthRequest *auth = data;

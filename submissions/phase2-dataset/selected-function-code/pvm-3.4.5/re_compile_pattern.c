@@ -1,3 +1,4 @@
+const char *
 re_compile_pattern (pattern, length, bufp)
      const char *pattern;
      int length;

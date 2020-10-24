@@ -1,3 +1,4 @@
+void
 originate_sum_rt_lsa(struct ospf_area *oa, struct fib_node *fn, int metric, u32 options UNUSED)
 {
   struct proto_ospf *po = oa->po;

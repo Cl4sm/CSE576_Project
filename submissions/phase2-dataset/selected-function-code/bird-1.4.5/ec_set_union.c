@@ -1,3 +1,4 @@
+struct adata *
 ec_set_union(struct linpool *pool, struct adata *l1, struct adata *l2)
 {
   if (!l1)

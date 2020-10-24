@@ -1,3 +1,4 @@
+FILE *
 XsraSelFile(toplevel, prompt, ok, cancel, failed,
 	    init_path, mode, show_entry, name_return)
 	Widget		toplevel;

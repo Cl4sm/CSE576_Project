@@ -1,3 +1,4 @@
+int
 peer_wait()
 {
 	struct msgboxhdr *inbp = (struct msgboxhdr *)pvminbox;

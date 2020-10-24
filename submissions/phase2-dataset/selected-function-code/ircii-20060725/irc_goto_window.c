@@ -1,3 +1,4 @@
+static	void
 irc_goto_window(which)
 	int	which;
 {

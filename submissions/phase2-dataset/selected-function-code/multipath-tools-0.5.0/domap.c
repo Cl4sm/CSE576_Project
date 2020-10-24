@@ -1,3 +1,4 @@
+extern int
 domap (struct multipath * mpp, char * params)
 {
 	int r = 0;

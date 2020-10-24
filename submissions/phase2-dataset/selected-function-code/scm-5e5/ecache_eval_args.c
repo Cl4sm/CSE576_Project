@@ -1,3 +1,4 @@
+static int ecache_eval_args(proc, arg1, arg2, arg3, x)
      SCM proc, arg1, arg2, arg3, x;
 {
   SCM argv[3];

@@ -1,3 +1,4 @@
+SCM obunhash(obj)
      SCM obj;
 {
 #ifdef BIGDIG

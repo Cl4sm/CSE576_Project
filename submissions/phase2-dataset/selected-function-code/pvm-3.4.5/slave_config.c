@@ -1,3 +1,4 @@
+int
 slave_config(hn, argc, argv)
 	char *hn;
 	int argc;

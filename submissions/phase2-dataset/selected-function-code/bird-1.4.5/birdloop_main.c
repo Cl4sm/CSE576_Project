@@ -1,3 +1,4 @@
+static void *
 birdloop_main(void *arg)
 {
   struct birdloop *loop = arg;

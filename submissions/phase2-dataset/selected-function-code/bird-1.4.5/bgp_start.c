@@ -1,3 +1,4 @@
+static int
 bgp_start(struct proto *P)
 {
   struct bgp_proto *p = (struct bgp_proto *) P;

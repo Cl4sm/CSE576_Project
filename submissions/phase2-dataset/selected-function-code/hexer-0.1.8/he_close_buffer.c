@@ -1,3 +1,4 @@
+  int
 he_close_buffer(name)
   char *name;
   /* Close the buffer named `name'. If `name == 0', the current buffer

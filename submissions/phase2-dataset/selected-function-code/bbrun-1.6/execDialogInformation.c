@@ -1,3 +1,4 @@
+void execDialogInformation() 
 {
   gchar *workingPath = '\0';
   gchar *command = '\0';

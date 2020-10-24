@@ -1,3 +1,4 @@
+void
 scr_refresh(int type)
 {
     int             i, j,	/* tmp                                       */

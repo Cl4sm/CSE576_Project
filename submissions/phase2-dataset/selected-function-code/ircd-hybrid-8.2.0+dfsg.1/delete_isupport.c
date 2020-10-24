@@ -1,3 +1,4 @@
+void
 delete_isupport(const char *name)
 {
   dlink_node *ptr;

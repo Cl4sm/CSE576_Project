@@ -1,3 +1,4 @@
+static bool _sc_spill_try_fill(const sc_config *c, const sc_land *l,
                                sc_spill *sp, int x, int y, bool allowup) {
 /* sc_spill_try_fill
    Attempt to fill in a region of a spill.  If allowup is set, then

@@ -1,3 +1,4 @@
+int
 pvm_newcontext()
 {
 	int sbf, rbf, cc;

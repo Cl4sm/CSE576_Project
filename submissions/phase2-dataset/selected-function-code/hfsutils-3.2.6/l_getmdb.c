@@ -1,3 +1,4 @@
+int l_getmdb(hfsvol *vol, MDB *mdb, int backup)
 {
   block b;
   const byte *ptr = b;

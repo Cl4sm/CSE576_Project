@@ -1,3 +1,4 @@
+bool finalize(char *hdrs, sendip_data *headers[], sendip_data *data,
 				  sendip_data *pack) {
 	ipv6_header *ipv6 = (ipv6_header *)pack->data;
 

@@ -1,3 +1,4 @@
+bool sc_player_would_impact(const sc_config *c, const sc_player *p, int x, int y) {
 /* sc_player_would_impact
    Determines whether the x, y coordinate indicated is atop the player,
    i.e. a weapon at that coordinate would actually hit the player.  The

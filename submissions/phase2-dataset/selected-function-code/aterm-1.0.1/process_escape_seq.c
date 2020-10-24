@@ -1,3 +1,4 @@
+void
 process_escape_seq(void)
 {
     unsigned char   ch = cmd_getc();

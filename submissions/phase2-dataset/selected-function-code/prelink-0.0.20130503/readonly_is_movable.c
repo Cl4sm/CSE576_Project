@@ -1,3 +1,4 @@
+static inline int
 readonly_is_movable (DSO *dso, GElf_Ehdr *ehdr, GElf_Shdr *shdr, int k)
 {
   if (! (shdr[k].sh_flags & (SHF_ALLOC | SHF_WRITE)))

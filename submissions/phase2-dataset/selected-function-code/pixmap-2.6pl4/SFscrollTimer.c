@@ -1,3 +1,4 @@
+static void
 SFscrollTimer(n)
 	int	n;
 {

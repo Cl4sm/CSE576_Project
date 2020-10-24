@@ -1,3 +1,4 @@
+color sky_sphere_background_texture(const ray *ry) {
   color col;
   flt IdotG = VDot(&ry->d, &ry->scene->bgtex.gradient);
   flt range = ry->scene->bgtex.gradtopval - ry->scene->bgtex.gradbotval;

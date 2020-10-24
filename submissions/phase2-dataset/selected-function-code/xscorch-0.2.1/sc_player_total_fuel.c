@@ -1,3 +1,4 @@
+int sc_player_total_fuel(const sc_accessory_config *ac, const sc_player *p) {
 /* sc_player_total_fuel
    Used to discover how much fuel a player has, for the movement menu. */
 

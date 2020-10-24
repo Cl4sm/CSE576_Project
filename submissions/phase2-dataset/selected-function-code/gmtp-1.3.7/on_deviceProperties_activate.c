@@ -1,3 +1,4 @@
+void on_deviceProperties_activate(GtkMenuItem *menuitem, gpointer user_data) {
     gchar *tmp_string;
 
     // We confirm our device properties, this should setup the device structure information we use below.

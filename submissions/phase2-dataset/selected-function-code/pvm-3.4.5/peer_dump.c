@@ -1,3 +1,4 @@
+int
 peer_dump()
 {
 	struct peer *pp;

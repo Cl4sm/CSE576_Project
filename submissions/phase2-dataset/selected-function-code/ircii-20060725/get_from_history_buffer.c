@@ -1,3 +1,4 @@
+static	u_char	*
 get_from_history_buffer(which)
 	int	which;
 {

@@ -1,3 +1,4 @@
+int SumArticle (fd, artnum, bytes, np)
 FILE *fd;
 long bytes;
 struct nrc_ent *np;

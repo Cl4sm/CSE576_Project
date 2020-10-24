@@ -1,3 +1,4 @@
+static int
 copy_text_and_data (new, a_out)
      int new, a_out;
 {

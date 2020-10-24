@@ -1,3 +1,4 @@
+int hls_main(int argc, char *argv[])
 {
   hfsvol *vol;
   int fargc, i;

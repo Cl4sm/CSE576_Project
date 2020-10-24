@@ -1,3 +1,4 @@
+int
 pvm_shmmsginit( key, localseg )
 key_t *key;
 struct segdesc **localseg;

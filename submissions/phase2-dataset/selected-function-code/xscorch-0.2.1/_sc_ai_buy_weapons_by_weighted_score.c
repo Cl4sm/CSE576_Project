@@ -1,3 +1,4 @@
+static bool _sc_ai_buy_weapons_by_weighted_score(const sc_config *c, sc_player *p, int *budget) {
 /* sc_ai_buy_weapons_by_weighted_score
    Buy the weapons yielding the best destructive power per price of
    unit.  This is the "efficient" way to buy, but there are times when

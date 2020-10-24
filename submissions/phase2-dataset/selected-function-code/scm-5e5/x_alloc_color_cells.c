@@ -1,3 +1,4 @@
+SCM x_alloc_color_cells(scmap, spxls, sargs)
      SCM scmap, spxls, sargs;
 {
   XColor xclr;

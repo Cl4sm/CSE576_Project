@@ -1,3 +1,4 @@
+char *
 key_generator (const char * str, int state)
 {
 	static int index, len, has_param;

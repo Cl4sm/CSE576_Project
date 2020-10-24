@@ -1,3 +1,4 @@
+int hfs_truncate(hfsfile *file, unsigned long len)
 {
   unsigned long *lglen;
 

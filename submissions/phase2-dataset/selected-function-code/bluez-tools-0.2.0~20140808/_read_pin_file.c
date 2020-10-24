@@ -1,3 +1,4 @@
+static void _read_pin_file(const gchar *filename, GHashTable *pin_hash_table, gboolean first_run)
 {
 	g_assert(filename != NULL && strlen(filename) > 0);
 	g_assert(pin_hash_table != NULL);

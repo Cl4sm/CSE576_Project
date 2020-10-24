@@ -1,3 +1,4 @@
+static void yyensure_buffer_stack (void)
 {
 	yy_size_t num_to_alloc;
     

@@ -1,3 +1,4 @@
+static void
 ospf_dump(struct proto *p)
 {
   struct ospf_iface *ifa;

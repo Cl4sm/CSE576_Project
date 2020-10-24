@@ -1,3 +1,4 @@
+unsigned long mpegd_get_bits (mpeg_demux_t *mpeg, unsigned i, unsigned n)
 {
 	unsigned long r;
 	unsigned long v, m;

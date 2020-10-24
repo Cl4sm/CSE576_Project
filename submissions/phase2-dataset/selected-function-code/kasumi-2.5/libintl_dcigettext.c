@@ -1,3 +1,4 @@
+char *
 DCIGETTEXT (domainname, msgid1, msgid2, plural, n, category)
      const char *domainname;
      const char *msgid1;

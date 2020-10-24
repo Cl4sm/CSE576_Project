@@ -1,3 +1,4 @@
+  static int
 exh_shell_command(char *command, int pager_f)
                     /* command to be executed by the shell specified by
                      * the "SHELL" environment variable.  the default shell

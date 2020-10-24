@@ -1,3 +1,4 @@
+static GtkCellEditable *
 gui_cell_renderer_spin_start_editing (GtkCellRenderer      *cell,
                                       GdkEvent             *event,
                                       GtkWidget            *widget,

@@ -1,3 +1,4 @@
+int daemon_mode(char *devname,char *mountpoint,int mountflags,
                 int interval,int drivetype) 
 {
     int e,fd,disk_in,prev_disk_in,first;

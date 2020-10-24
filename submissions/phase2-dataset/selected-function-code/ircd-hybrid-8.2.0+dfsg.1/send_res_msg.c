@@ -1,3 +1,4 @@
+static int
 send_res_msg(const unsigned char *msg, int len, unsigned int rcount)
 {
   int sent = 0;

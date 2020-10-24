@@ -1,3 +1,4 @@
+  static void
 s_append(struct option_s *last,
          const char *option,
          const enum s_option_e type, ...)

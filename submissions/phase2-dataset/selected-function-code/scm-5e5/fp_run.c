@@ -1,3 +1,4 @@
+int fp_run(fp, fpoff, k, a, m, b, n, array_refsEql_P, cc, p)
      int *fp;
      int fpoff;
      int k;

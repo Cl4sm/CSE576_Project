@@ -1,3 +1,4 @@
+extern int
 devt2devname (char *devname, int devname_len, char *devt)
 {
 	FILE *fd;

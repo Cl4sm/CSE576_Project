@@ -1,3 +1,4 @@
+sc_player **sc_player_random_order(sc_config *c, sc_player **playerlist) {
 /* sc_player_random_order */
 
    int order[SC_MAX_PLAYERS];

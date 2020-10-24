@@ -1,3 +1,4 @@
+static void _sc_sound_reset(sc_sound *s) {
 /* sc_sound_reset
    Reset the mikmod driver - Warning: all sound samples and modules must
    be reloaded after this call.  Otherwise, nasty segfaults will occur.  */

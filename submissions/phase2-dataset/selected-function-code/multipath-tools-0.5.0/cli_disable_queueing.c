@@ -1,3 +1,4 @@
+int
 cli_disable_queueing(void *v, char **reply, int *len, void *data)
 {
 	struct vectors * vecs = (struct vectors *)data;

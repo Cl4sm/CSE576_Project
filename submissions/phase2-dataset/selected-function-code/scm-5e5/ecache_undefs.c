@@ -1,3 +1,4 @@
+static void ecache_undefs(x)
      SCM x;
 {
   static SCM argv[10] = {UNDEFINED, UNDEFINED, UNDEFINED,

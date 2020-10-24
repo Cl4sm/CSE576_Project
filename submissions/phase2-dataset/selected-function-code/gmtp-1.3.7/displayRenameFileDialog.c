@@ -1,3 +1,4 @@
+gchar* displayRenameFileDialog(gchar* currentfilename) {
     GtkWidget *dialog, *hbox, *label, *textbox;
     gchar* textfield;
 

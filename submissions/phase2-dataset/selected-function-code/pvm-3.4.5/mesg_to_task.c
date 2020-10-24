@@ -1,3 +1,4 @@
+int
 mesg_to_task(tp, mp)
 	struct task *tp;
 	struct pmsg *mp;

@@ -1,3 +1,4 @@
+int
 upkstralloc(mp, ss)
 	struct pmsg *mp;		/* message to unpack */
 	char **ss;				/* return pointer */

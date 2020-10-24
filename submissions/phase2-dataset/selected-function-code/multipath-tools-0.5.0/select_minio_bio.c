@@ -1,3 +1,4 @@
+int
 select_minio_bio (struct multipath * mp)
 {
 	if (mp->mpe && mp->mpe->minio) {

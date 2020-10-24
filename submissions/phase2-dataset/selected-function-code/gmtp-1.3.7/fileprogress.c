@@ -1,3 +1,4 @@
+int fileprogress(const uint64_t sent, const uint64_t total, void const * const data) {
     gchar* tmp_string;
     gchar* tmp_sent;
     gchar* tmp_total;

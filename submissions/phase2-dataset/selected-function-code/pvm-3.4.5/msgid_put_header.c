@@ -1,3 +1,4 @@
+static
 msgid_put_header(mp)
 	struct msgid *mp;
 {

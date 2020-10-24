@@ -1,3 +1,4 @@
+static int ramap_2o(ra0, proc, ras)
      SCM ra0, proc, ras;
 {
   SCM ra1 = CAR(ras);

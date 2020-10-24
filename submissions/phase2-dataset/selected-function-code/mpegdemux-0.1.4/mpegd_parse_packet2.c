@@ -1,3 +1,4 @@
+static
 int mpegd_parse_packet2 (mpeg_demux_t *mpeg, unsigned i)
 {
 	unsigned           pts_dts_flag;

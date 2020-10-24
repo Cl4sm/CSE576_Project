@@ -1,3 +1,4 @@
+static void
 renderIcon(char **data, Icon* pIcon, IconGC* igc)
 {
     Pixmap d, mask;

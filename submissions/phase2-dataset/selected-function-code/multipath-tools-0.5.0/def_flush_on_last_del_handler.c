@@ -1,3 +1,4 @@
+static int
 def_flush_on_last_del_handler(vector strvec)
 {
 	char * buff;

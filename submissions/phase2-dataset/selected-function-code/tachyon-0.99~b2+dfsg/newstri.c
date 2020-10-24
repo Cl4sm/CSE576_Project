@@ -1,3 +1,4 @@
+object * newstri(void * tex, vector v0, vector v1, vector v2,
                            vector n0, vector n1, vector n2) {
   stri * t;
   vector edge1, edge2, edge3;

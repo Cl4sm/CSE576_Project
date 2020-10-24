@@ -1,3 +1,4 @@
+SCM sc2array(s, ra, prot)
      SCM s, ra, prot;
 {
   SCM res;

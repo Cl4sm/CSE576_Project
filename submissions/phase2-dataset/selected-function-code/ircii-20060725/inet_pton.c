@@ -1,3 +1,4 @@
+int
 inet_pton(af, src, dst)
 	int af;
 	const char *src;

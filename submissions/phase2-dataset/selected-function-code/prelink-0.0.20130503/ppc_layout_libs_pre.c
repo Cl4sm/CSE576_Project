@@ -1,3 +1,4 @@
+static int
 ppc_layout_libs_pre (struct layout_libs *l)
 {
   Elf32_Addr mmap_start = l->mmap_start - REG1S;

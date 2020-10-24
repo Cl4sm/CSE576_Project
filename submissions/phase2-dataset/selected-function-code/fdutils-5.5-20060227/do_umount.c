@@ -1,3 +1,4 @@
+int do_umount(const char *devname,int force) {
     int e,fuid;
     mnt_node *mnt;
     char *mountpoint, *uidstr;

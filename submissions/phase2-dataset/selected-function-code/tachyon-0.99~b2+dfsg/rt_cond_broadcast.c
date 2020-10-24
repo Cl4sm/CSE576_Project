@@ -1,3 +1,4 @@
+int rt_cond_broadcast(rt_cond_t * cvp) {
   int status=0;
 
 #ifdef THR

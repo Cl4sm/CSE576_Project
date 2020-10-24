@@ -1,3 +1,4 @@
+static int prinmacro(exp, port, writing)
      SCM exp;
      SCM port;
      int writing;

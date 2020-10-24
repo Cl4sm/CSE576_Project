@@ -1,3 +1,4 @@
+int readppm(const char * name, int * xres, int * yres, unsigned char **imgdata) {
   char data[256];  
   FILE * ifp;
   int i, bytesread;

@@ -1,3 +1,4 @@
+static
 char *nbsdecrypt(cpt,key,result)
   char *cpt,*key;
   char *result;

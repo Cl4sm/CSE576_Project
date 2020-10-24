@@ -1,3 +1,4 @@
+char *
 get_user_friendly_alias(char *wwid, char *file, char *prefix,
 			int bindings_read_only)
 {

@@ -1,3 +1,4 @@
+static void
 ipcache_remove_expired_entries(void *unused)
 {
   dlink_node *ptr = NULL, *ptr_next = NULL;

@@ -1,3 +1,4 @@
+int
 pvm_pstat(tid)
 	int tid;	/* task */
 {

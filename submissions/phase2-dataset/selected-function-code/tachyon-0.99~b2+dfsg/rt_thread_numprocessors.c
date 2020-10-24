@@ -1,3 +1,4 @@
+int rt_thread_numprocessors(void) {
   int a=1;
 
 #ifdef THR

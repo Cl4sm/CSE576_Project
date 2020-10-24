@@ -1,3 +1,4 @@
+int
 read_string(char **ret, struct dbFILE *f)
 {
   char *s = NULL;

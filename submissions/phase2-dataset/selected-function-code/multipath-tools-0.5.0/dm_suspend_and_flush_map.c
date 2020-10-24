@@ -1,3 +1,4 @@
+extern int
 dm_suspend_and_flush_map (const char * mapname)
 {
 	int s = 0, queue_if_no_path = 0;

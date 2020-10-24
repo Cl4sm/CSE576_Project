@@ -1,3 +1,4 @@
+pidtid_dump()
 {
 	int i;
 	char *s;

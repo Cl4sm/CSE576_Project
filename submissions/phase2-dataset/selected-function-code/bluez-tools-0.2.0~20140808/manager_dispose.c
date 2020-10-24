@@ -1,3 +1,4 @@
+static void manager_dispose (GObject *gobject)
 {
     Manager *self = MANAGER (gobject);
 

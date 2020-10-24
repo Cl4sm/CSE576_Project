@@ -1,3 +1,4 @@
+char *
 varsub(s)
 	char *s;
 {

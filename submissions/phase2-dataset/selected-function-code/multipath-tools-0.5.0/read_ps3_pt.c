@@ -1,3 +1,4 @@
+int
 read_ps3_pt(int fd, struct slice all, struct slice *sp, int ns) {
 	struct disklabel label;
         int n = 0;

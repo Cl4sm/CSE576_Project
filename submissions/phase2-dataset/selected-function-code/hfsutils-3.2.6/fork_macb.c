@@ -1,3 +1,4 @@
+static
 int fork_macb(hfsfile *ifile, int ofile, unsigned long size)
 {
   char buf[HFS_BLOCKSZ * 4];

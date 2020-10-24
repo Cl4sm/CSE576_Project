@@ -1,3 +1,4 @@
+static inline sc_trajectory_result _sc_traj_hit(const sc_config *c, sc_trajectory *tr, int flags,
                                                 const sc_trajectory_data *t) {
 /* sc_traj_hit
    Returns results if weapon tried to occupy the same pixel as something.

@@ -1,3 +1,4 @@
+void SetToolbarButtonState(gboolean state) {
     gtk_widget_set_sensitive(GTK_WIDGET(toolbuttonAddFile), state);
     gtk_widget_set_sensitive(GTK_WIDGET(toolbuttonRemoveFile), state);
     gtk_widget_set_sensitive(GTK_WIDGET(toolbuttonRetrieve), state);

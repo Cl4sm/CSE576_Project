@@ -1,3 +1,4 @@
+static void
 config_done(void *unused UNUSED)
 {
   if (config->shutdown)

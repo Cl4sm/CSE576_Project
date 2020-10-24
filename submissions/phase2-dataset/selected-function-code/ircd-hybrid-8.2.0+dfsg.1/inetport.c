@@ -1,3 +1,4 @@
+static int
 inetport(struct Listener *listener)
 {
   struct irc_ssaddr lsin;

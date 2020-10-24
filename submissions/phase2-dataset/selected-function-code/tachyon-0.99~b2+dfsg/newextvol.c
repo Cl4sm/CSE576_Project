@@ -1,3 +1,4 @@
+extvol * newextvol(void * voidtex, vector min, vector max, 
                    int samples, flt (* evaluator)(flt, flt, flt)) { 
   extvol * xvol;
   standard_texture * tex, * xvoltex;

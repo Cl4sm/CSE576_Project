@@ -1,3 +1,4 @@
+void CommandOptions (argc, argv)
 int argc;
 char *argv[];
 /*

@@ -1,3 +1,4 @@
+char *
 pvmdsockfile()
 {
 	static char buf[255];

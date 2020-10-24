@@ -1,3 +1,4 @@
+static void _sc_ai_target_practice(const sc_config *c, sc_player **playerlist) {
 /* sc_ai_target_practice
    I feel kind of sorry for the poor, poor humans...
    Actually, no, I don't :)  */

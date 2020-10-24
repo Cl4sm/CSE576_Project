@@ -1,3 +1,4 @@
+void DragTwoPointsTerminate(w, status, draw)
     Widget     w;
     PWStatus  *status;
     void     (*draw)();

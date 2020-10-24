@@ -1,3 +1,4 @@
+void
 parse_command(line, hist_flag, sub_args)
 	u_char	*line;
 	int	hist_flag;

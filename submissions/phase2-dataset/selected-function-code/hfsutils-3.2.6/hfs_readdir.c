@@ -1,3 +1,4 @@
+int hfs_readdir(hfsdir *dir, hfsdirent *ent)
 {
   CatKeyRec key;
   CatDataRec data;

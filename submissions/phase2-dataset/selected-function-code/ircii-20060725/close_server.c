@@ -1,3 +1,4 @@
+void
 close_server(server_index, message)
 	int	server_index;
 	u_char	*message;

@@ -1,3 +1,4 @@
+char *s_strerror(int errnum) {
     switch(errnum) {
 #ifdef USE_WIN32
     case 10004:

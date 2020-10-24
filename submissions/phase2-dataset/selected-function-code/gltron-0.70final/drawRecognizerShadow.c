@@ -1,3 +1,4 @@
+void drawRecognizerShadow(void) {
   float dirx;
   vec2 p, v;
   /* states */

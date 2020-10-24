@@ -1,3 +1,4 @@
+int
 as_path_match(struct adata *path, struct f_path_mask *mask)
 {
   struct pm_pos pos[2048 + 1];

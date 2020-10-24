@@ -1,3 +1,4 @@
+static	void
 channel_topic(from, ArgList)
 	u_char	*from,
 		**ArgList;

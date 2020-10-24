@@ -1,3 +1,4 @@
+int
 pvm_initsend(enc)
 	int enc;
 {

@@ -1,3 +1,4 @@
+color VolImageMapTrilinear(const rawimage * img, flt u, flt v, flt w) {
   color col, colL, colU, colll, colul, colLL, colUL;
   flt x, y, z, px, py, pz;
   int ix, iy, iz, nx, ny, nz;

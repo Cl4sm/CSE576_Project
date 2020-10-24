@@ -1,3 +1,4 @@
+  static void
 he_paste_over(struct he_s *hedit, long count)
 {
   char *data_insert, *data_delete;

@@ -1,3 +1,4 @@
+sc_auto_def_gtk *_sc_auto_def_gtk_new(void) {
 /* _sc_auto_def_gtk_new
    Set up a new auto_def_gtk */
 

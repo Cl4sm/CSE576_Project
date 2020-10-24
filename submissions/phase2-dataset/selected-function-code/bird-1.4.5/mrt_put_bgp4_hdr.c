@@ -1,3 +1,4 @@
+static byte *
 mrt_put_bgp4_hdr(byte *buf, struct bgp_conn *conn, int as4)
 {
   struct bgp_proto *p = conn->bgp;

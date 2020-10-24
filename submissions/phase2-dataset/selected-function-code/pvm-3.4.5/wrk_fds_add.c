@@ -1,3 +1,4 @@
+wrk_fds_add(fd, sets)
 	int fd;				/* the fd */
 	int sets;			/* which sets */
 {

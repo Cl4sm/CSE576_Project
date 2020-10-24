@@ -1,3 +1,4 @@
+int v_allocblocks(hfsvol *vol, ExtDescriptor *blocks)
 {
   unsigned int request, found, foundat, start, end;
   register unsigned int pt;

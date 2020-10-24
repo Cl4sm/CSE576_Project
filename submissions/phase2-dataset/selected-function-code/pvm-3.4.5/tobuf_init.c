@@ -1,3 +1,4 @@
+static int
 tobuf_init()
 {
 	int i;

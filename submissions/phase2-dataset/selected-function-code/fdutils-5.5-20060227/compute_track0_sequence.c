@@ -1,3 +1,4 @@
+void compute_track0_sequence(struct params *fd)
 {
 	int i;
 	int sectors;

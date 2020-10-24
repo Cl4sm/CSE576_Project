@@ -1,3 +1,4 @@
+void
 delete_one_address_conf(const char *address, struct MaskItem *conf)
 {
   int bits = 0;

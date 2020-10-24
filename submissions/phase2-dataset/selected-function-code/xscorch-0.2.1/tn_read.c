@@ -1,3 +1,4 @@
+bool tn_read(tn_connection *tnc, byte **payload, size_t *size) {
 /*
  * tn_read
  * Read a packet payload into a newly created buffer.

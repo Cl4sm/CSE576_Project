@@ -1,3 +1,4 @@
+RETSIGTYPE
 term_cont(signo)
 	int signo;
 {

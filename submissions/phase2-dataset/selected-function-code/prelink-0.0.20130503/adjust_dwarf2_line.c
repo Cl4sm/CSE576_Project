@@ -1,3 +1,4 @@
+static int
 adjust_dwarf2_line (DSO *dso, GElf_Addr start, GElf_Addr adjust)
 {
   unsigned char *ptr = debug_sections[DEBUG_LINE].data;

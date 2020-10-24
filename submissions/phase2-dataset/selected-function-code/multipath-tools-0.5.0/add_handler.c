@@ -1,3 +1,4 @@
+int
 add_handler (unsigned long fp, int (*fn)(void *, char **, int *, void *))
 {
 	struct handler * h;

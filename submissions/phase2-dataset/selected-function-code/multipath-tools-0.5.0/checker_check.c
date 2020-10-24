@@ -1,3 +1,4 @@
+int checker_check (struct checker * c)
 {
 	int r;
 

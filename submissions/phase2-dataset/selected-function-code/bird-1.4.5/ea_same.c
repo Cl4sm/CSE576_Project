@@ -1,3 +1,4 @@
+int
 ea_same(ea_list *x, ea_list *y)
 {
   int c;

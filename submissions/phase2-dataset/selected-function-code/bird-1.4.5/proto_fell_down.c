@@ -1,3 +1,4 @@
+static void
 proto_fell_down(struct proto *p)
 {
   DBG("Protocol %s down\n", p->name);

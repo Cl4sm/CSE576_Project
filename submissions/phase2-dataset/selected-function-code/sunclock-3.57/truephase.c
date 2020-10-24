@@ -1,3 +1,4 @@
+double truephase(k, phase)
 double k, phase;
 {
         double t, t2, t3, pt, m, mprime, f;

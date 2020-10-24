@@ -1,3 +1,4 @@
+void
 setTZ(cptr)
 City    *cptr;
 {

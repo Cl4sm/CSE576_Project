@@ -1,3 +1,4 @@
+int
 readPNG(path, Context)
 char *path;
 Sundata * Context;

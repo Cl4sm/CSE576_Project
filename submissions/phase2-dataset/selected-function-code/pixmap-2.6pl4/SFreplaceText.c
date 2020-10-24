@@ -1,3 +1,4 @@
+static
 SFreplaceText(dir, str)
 	SFDir	*dir;
 	char	*str;

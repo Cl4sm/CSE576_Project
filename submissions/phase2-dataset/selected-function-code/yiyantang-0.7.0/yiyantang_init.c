@@ -1,3 +1,4 @@
+char** yiyantang_init (int argc, char **argv, int *fromcode, int *tocode)
 {
 	struct gengetopt_args_info args_info;
 /*	int c;

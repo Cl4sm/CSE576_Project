@@ -1,3 +1,4 @@
+gchar* displayPlaylistNewDialog(void) {
     GtkWidget *dialog, *hbox, *label, *textbox;
     gchar* textfield;
 

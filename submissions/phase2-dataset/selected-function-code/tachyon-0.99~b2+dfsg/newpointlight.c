@@ -1,3 +1,4 @@
+point_light * newpointlight(void * tex, vector ctr, flt rad) {
   point_light * l;
   
   l=(point_light *) malloc(sizeof(point_light));

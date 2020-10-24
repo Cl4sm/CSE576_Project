@@ -1,3 +1,4 @@
+static struct key *
 find_key (const char * str)
 {
 	int i;

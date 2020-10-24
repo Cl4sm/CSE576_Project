@@ -1,3 +1,4 @@
+int
 as_path_contains(struct adata *path, u32 as, int min)
 {
   u8 *p = path->data;

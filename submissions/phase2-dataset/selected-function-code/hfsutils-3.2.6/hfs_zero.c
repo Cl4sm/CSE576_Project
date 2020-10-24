@@ -1,3 +1,4 @@
+int hfs_zero(const char *path, unsigned int maxparts, unsigned long *blocks)
 {
   hfsvol vol;
 

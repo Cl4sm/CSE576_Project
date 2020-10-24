@@ -1,3 +1,4 @@
+void rt_tri_fcylinder(SceneHandle scene, void * tex, apivector ctr, apivector axis, flt rad) {
   apivector x, y, z, tmp;
   double u, v, u2, v2;
   int j;

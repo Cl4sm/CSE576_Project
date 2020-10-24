@@ -1,3 +1,4 @@
+int
 load_keys (void)
 {
 	int r = 0;

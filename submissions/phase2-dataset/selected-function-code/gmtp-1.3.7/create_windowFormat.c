@@ -1,3 +1,4 @@
+GtkWidget* create_windowFormat(void) {
     GtkWidget* windowFormat;
     GtkWidget* label1;
     GtkWidget* vbox1;

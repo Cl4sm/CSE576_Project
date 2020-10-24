@@ -1,3 +1,4 @@
+char *sresponse ( char *s, int *ip )
 {
   char *p, *r = 0 ;
   int lens, lenr ;

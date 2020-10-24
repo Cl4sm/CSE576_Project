@@ -1,3 +1,4 @@
+void get_limits(void) { /* set max_fds and max_clients */
     /* start with current ulimit */
 #if defined(HAVE_SYSCONF)
     errno=0;

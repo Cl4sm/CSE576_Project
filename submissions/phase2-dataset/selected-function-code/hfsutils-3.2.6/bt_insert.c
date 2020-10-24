@@ -1,3 +1,4 @@
+int bt_insert(btree *bt, const byte *record, unsigned int reclen)
 {
   node root;
   byte newrec[HFS_MAX_RECLEN];

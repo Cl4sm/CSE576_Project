@@ -1,3 +1,4 @@
+static inline int
 rte_validate(rte *e)
 {
   int c;

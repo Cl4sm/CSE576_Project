@@ -1,3 +1,4 @@
+void
 da_unref(p)
 	char *p;
 {

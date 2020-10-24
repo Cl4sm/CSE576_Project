@@ -1,3 +1,4 @@
+int
 ospf_lsupd_flood(struct proto_ospf *po,
 		 struct ospf_neighbor *n, struct ospf_lsa_header *hn,
 		 struct ospf_lsa_header *hh, u32 domain, int rtl)

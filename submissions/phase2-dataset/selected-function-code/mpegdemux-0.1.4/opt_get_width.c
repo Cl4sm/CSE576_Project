@@ -1,3 +1,4 @@
+static
 unsigned opt_get_width (const mpegd_option_t *opt)
 {
 	unsigned n;

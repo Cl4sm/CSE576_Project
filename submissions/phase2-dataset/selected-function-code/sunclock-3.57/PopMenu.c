@@ -1,3 +1,4 @@
+void
 PopMenu(Context)
 struct Sundata * Context;
 {

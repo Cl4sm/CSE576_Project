@@ -1,3 +1,4 @@
+static void
 pm_mark(struct pm_pos *pos, int i, int plen, int *nl, int *nh)
 {
   int j;

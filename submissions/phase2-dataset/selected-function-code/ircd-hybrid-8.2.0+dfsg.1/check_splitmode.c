@@ -1,3 +1,4 @@
+void
 check_splitmode(void *unused)
 {
   if (splitchecking && (ConfigChannel.no_join_on_split ||

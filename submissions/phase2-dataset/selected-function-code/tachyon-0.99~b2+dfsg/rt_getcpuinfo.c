@@ -1,3 +1,4 @@
+int rt_getcpuinfo(nodeinfo **nodes) {
   int numnodes = rt_numnodes();
   int mynode = rt_mynode();
 #ifdef MPI

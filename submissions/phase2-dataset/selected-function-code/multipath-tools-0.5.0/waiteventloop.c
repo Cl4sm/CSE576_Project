@@ -1,3 +1,4 @@
+int waiteventloop (struct event_thread *waiter)
 {
 	sigset_t set, oldset;
 	int event_nr;

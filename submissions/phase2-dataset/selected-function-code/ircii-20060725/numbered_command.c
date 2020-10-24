@@ -1,3 +1,4 @@
+void
 numbered_command(from, comm, ArgList)
 	u_char	*from;
 	int	comm;

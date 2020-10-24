@@ -1,3 +1,4 @@
+int sendbuf ( TFILE *f, uchar *p, int n, int dcecps )
 {
   int err=0, c, over ;
   uchar *order = f->obitorder ;

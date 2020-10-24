@@ -1,3 +1,4 @@
+mpeg_demux_t *mpegd_open_fp (mpeg_demux_t *mpeg, FILE *fp, int close)
 {
 	if (mpeg == NULL) {
 		mpeg = malloc (sizeof (mpeg_demux_t));

@@ -1,3 +1,4 @@
+static void change_file_status(char *path, struct cramfs_inode *i)
 {
 	struct utimbuf epoch = { 0, 0 };
 

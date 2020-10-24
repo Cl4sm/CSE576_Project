@@ -1,3 +1,4 @@
+static int
 i386_arch_undo_prelink (DSO *dso)
 {
   int i;

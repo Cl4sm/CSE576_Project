@@ -1,3 +1,4 @@
+int
 forkexec(flags, name, argv, nenv, env, inst, hosttotal, outof, tpp)
 	int flags;				/* exec options */
 	char *name;				/* filename */

@@ -1,3 +1,4 @@
+static void _sc_console_draw_frame(ScConsole *cons) {
 /* sc_console_draw_frame
    Draws the window border for this console, if applicable, and draws
    the scrollbars for this console if they need to be displayed.  */

@@ -1,3 +1,4 @@
+void
 ppi_init()
 {
 	struct pidtidhdr *pvminfo;

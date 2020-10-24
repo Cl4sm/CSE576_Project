@@ -1,3 +1,4 @@
+void sc_economy_config_destroy(sc_economy_config **ec) {
 /* sc_economy_config_destroy
    Obliterate a poor innocent economy config that was doing nothing wrong. */
 

@@ -1,3 +1,4 @@
+static void
 send_message_remote(struct Client *to, struct Client *from, struct dbuf_block *buf)
 {
   to = to->from;

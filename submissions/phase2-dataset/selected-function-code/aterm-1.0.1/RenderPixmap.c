@@ -1,3 +1,4 @@
+void
 RenderPixmap(int DontCheckSource )
 {
 	XGCValues       gcvalue;

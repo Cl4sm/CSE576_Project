@@ -1,3 +1,4 @@
+int
 acav(s, acp, av)
 	char *s;		/* the string to parse */
 	int *acp;		/* max words in, ac out */

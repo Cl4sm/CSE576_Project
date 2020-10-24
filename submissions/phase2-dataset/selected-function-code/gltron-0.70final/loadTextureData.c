@@ -1,3 +1,4 @@
+texture* loadTextureData(const char *filename) {
   texture *tex = NULL;
   char *path;
   char *artpack;

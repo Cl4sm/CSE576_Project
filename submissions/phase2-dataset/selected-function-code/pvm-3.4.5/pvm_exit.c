@@ -1,3 +1,4 @@
+int
 pvm_exit()
 {
 	int i, lndh;

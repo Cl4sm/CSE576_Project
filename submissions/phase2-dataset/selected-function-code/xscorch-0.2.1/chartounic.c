@@ -1,3 +1,4 @@
+wchar *chartounic(wchar *d, const char *s, unsigned int maxlen) {
 /* Character-to-Unicode-Countbuffer
    Converts a source character string into a unicode string by appending
    a leading 0 byte to each byte in the source string. The target buffer

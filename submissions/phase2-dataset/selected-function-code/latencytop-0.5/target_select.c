@@ -1,3 +1,4 @@
+static gint target_select(GtkTreeSelection *sel, void *data)
 {
 	GtkTreeModel		*model;
 	GtkTreeIter		iter;

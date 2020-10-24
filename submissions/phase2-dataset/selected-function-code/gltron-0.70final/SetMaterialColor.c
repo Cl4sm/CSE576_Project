@@ -1,3 +1,4 @@
+void SetMaterialColor(Mesh *pMesh, char *name, ColorType eType,
 		      float pColor[4]) {
   int i;
 

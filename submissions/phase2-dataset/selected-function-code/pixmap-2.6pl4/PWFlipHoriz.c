@@ -1,3 +1,4 @@
+void PWFlipHoriz(Widget w)
 #else
 void PWFlipHoriz(w)
      Widget w;

@@ -1,3 +1,4 @@
+bool sc_addconf_append_file(sc_addconf_type type, const char *filename, void *container) {
 /* sc_addconf_append_file
    Append a conf file to the data registry.  Returns true on success. */
 

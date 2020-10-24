@@ -1,3 +1,4 @@
+static
 int process(hfsvol *vol, darray *dirs, darray *files,
 	    int flags, int options, int width)
 {

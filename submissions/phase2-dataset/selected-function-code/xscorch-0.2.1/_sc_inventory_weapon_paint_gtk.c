@@ -1,3 +1,4 @@
+static void _sc_inventory_weapon_paint_gtk(sc_inventory_gtk *inv) {
 /* sc_inventory_weapon_paint_gtk
    Paint the weapons window pane.  */
 

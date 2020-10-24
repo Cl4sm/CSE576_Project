@@ -1,3 +1,4 @@
+int
 read_bsd_pt(int fd, struct slice all, struct slice *sp, int ns) {
 	struct bsd_disklabel *l;
 	struct bsd_partition *p;

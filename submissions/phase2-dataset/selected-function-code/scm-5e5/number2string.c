@@ -1,3 +1,4 @@
+SCM number2string(x, radix)
      SCM x, radix;
 {
   if (UNBNDP(radix)) radix=MAKINUM(10L);

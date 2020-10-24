@@ -1,3 +1,4 @@
+ssize_t sysfs_attr_get_value(struct udev_device *dev, const char *attr_name,
 			     char * value, size_t value_len)
 {
 	char devpath[PATH_SIZE];

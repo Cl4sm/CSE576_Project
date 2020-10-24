@@ -1,3 +1,4 @@
+int
 nmd_delete(name, req)
 	char *name;
 	int req;

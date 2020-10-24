@@ -1,3 +1,4 @@
+void createXBMfromXPM(char *xbm, char **xpm, int sx, int sy) {
 
 	int		i,j,k;
 	int		width, height, numcol, depth;

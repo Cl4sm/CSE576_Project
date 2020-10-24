@@ -1,3 +1,4 @@
+void on_filesAdd_activate(GtkMenuItem *menuitem, gpointer user_data) {
     GSList* files;
     int64_t targetFol = 0;
     //uint32_t tmpFolderID = 0;

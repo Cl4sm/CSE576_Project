@@ -1,3 +1,4 @@
+static gboolean _sc_window_tank_move_key_gtk(GtkWidget *widget, 
                                              __libj_unused ScActiveConsoleSpot *spot,
                                              GdkEventKey *key, sc_window_gtk *w) {
 

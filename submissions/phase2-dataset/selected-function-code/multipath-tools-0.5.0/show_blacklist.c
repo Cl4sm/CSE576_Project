@@ -1,3 +1,4 @@
+int
 show_blacklist (char ** r, int * len)
 {
 	char *c = NULL;

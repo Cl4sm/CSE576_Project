@@ -1,3 +1,4 @@
+bool _tn_write_select(tn_connection *tnc) {
 /*
  * tn_write_select
  * Scan the connection buffer to see if there are errors.

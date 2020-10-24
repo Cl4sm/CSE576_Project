@@ -1,3 +1,4 @@
+u_char *
 get_notify_list(which)
 	int which;
 {

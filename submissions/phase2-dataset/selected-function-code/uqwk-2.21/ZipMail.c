@@ -1,3 +1,4 @@
+int ZipMail (fn)
 char *fn;
 /*
  *  Process ZipNews mail reply

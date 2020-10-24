@@ -1,3 +1,4 @@
+int GetHdr (fd, cc, bytes, hdr)
 FILE *fd;
 char *cc, *hdr;
 int bytes;

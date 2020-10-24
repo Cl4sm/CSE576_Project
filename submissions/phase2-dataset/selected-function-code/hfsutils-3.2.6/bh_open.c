@@ -1,3 +1,4 @@
+int bh_open(int fd)
 {
   int dupfd, c;
   const char *ptr;

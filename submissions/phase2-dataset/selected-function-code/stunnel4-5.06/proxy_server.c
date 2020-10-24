@@ -1,3 +1,4 @@
+NOEXPORT char *proxy_server(CLI *c, SERVICE_OPTIONS *opt, const PHASE phase) {
     SOCKADDR_UNION addr;
     socklen_t addrlen;
     char src_host[IP_LEN], dst_host[IP_LEN];

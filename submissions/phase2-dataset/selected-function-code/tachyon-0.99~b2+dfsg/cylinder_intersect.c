@@ -1,3 +1,4 @@
+static void cylinder_intersect(const cylinder * cyl, ray * ry) {
   vector rc, n, D, O;  
   flt t, s, tin, tout, ln, d; 
 

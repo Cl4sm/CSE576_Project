@@ -1,3 +1,4 @@
+static	void
 oper(command, args, subargs)
 	u_char	*command,
 		*args,

@@ -1,3 +1,4 @@
+void main_meta(int key)
 {
     if (key>=1 && key<=10)
     switch(key) {

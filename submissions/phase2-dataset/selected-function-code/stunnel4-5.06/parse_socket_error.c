@@ -1,3 +1,4 @@
+NOEXPORT int parse_socket_error(CLI *c, const char *text) {
     switch(get_last_socket_error()) {
         /* http://tangentsoft.net/wskfaq/articles/bsd-compatibility.html */
     case 0: /* close on read, or close on write on WIN32 */

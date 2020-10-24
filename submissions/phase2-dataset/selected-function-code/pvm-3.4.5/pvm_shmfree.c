@@ -1,3 +1,4 @@
+int
 pvm_shmfree ( sseg )
 struct segdesc *sseg;
 {

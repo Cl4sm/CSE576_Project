@@ -1,3 +1,4 @@
+void **
 htab_find_slot_with_hash (htab, element, hash, insert)
      htab_t htab;
      const void * element;

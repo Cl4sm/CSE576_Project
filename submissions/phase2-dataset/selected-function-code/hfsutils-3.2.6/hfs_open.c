@@ -1,3 +1,4 @@
+hfsfile *hfs_open(hfsvol *vol, const char *path)
 {
   hfsfile *file = 0;
 

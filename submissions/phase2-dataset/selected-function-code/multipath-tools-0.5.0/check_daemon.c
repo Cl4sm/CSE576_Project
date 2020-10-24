@@ -1,3 +1,4 @@
+int check_daemon(void)
 {
 	int fd;
 	char *reply;

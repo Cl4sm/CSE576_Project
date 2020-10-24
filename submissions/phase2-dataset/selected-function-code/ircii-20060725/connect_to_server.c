@@ -1,3 +1,4 @@
+int
 connect_to_server(server_name, port, nick, c_server)
 	u_char	*server_name;
 	int	port;

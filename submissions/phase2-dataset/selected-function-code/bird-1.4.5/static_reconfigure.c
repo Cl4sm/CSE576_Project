@@ -1,3 +1,4 @@
+static int
 static_reconfigure(struct proto *p, struct proto_config *new)
 {
   struct static_config *o = (void *) p->cf;

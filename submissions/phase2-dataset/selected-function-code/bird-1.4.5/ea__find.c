@@ -1,3 +1,4 @@
+static inline eattr *
 ea__find(ea_list *e, unsigned id)
 {
   eattr *a;

@@ -1,3 +1,4 @@
+unsigned long b_size(hfsvol *vol)
 {
   unsigned long low, high, mid;
   block b;

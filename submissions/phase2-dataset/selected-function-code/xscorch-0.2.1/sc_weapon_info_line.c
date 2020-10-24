@@ -1,3 +1,4 @@
+void sc_weapon_info_line(const sc_weapon_config *wc, const sc_weapon_info *info, char *buffer, int buflen) {
 /* sc_weapon_info_line
    Create a line of information about the weapon. */
 

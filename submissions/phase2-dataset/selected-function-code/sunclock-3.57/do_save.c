@@ -1,3 +1,4 @@
+void do_save()
 {
 	char bakfile[NLEN+1];
 

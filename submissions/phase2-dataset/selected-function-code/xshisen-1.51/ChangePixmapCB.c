@@ -1,3 +1,4 @@
+void
 ChangePixmapCB(Widget w, int index, XtPointer p)
 {
     char subdir[16];

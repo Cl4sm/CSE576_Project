@@ -1,3 +1,4 @@
+static int
 config_do_commit(struct config *c, int type)
 {
   if (type == RECONFIG_UNDO)

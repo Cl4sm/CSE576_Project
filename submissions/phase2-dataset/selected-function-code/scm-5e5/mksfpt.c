@@ -1,3 +1,4 @@
+SCM mksfpt(pv, modes)
      SCM pv, modes;
 {
   SCM z;

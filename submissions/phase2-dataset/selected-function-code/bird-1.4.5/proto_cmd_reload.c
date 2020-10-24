@@ -1,3 +1,4 @@
+void
 proto_cmd_reload(struct proto *p, unsigned int dir, int cnt UNUSED)
 {
   if (p->disabled)

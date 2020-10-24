@@ -1,3 +1,4 @@
+void DoAddExtension()
 {
     char *name = NULL;
 

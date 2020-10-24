@@ -1,3 +1,4 @@
+int mpath_translate_response (char * dev, struct sg_io_hdr io_hdr, SenseData_t Sensedata, int noisy)
 {
 	condlog(3, "%s: status driver:%02x host:%02x scsi:%02x", dev, 
 			io_hdr.driver_status, io_hdr.host_status ,io_hdr.status);

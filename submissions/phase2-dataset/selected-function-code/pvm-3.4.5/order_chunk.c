@@ -1,3 +1,4 @@
+int
 order_chunk( ostruct, ibuf, inchunk )
 CHUNK_ORDER_PTR ostruct;
 int ibuf;

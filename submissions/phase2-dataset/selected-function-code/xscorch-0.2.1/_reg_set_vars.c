@@ -1,3 +1,4 @@
+static bool _reg_set_vars(reg *r, reg_var *v, const char *path,
                           const reg_var_data *data, bool overwrite) {
 /* reg_set_vars
    This function takes a list of reg_var_data's in data, which is

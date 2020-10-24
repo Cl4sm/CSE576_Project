@@ -1,3 +1,4 @@
+static void
 bgp_graceful_close_conn(struct bgp_conn *conn, unsigned subcode)
 {
   switch (conn->state)

@@ -1,3 +1,4 @@
+struct sub_ent *SubList (c)
 char *c;
 /*
  *  Parse a newsrc subscription line, make into subscription list

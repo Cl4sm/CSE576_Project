@@ -1,3 +1,4 @@
+void
 ospf_neigh_sm(struct ospf_neighbor *n, int event)
 {
   struct proto_ospf *po = n->ifa->oa->po;

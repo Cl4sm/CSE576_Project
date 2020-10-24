@@ -1,3 +1,4 @@
+int
 check_channel_name(const char *name, const int local)
 {
   const char *p = name;

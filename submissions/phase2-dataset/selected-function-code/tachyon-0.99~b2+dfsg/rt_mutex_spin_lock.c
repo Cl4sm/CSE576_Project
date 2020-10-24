@@ -1,3 +1,4 @@
+int rt_mutex_spin_lock(rt_mutex_t * mp) {
   int status=0;
 
 #ifdef THR

@@ -1,3 +1,4 @@
+void box_normal(const box * bx, const vector * pnt, const ray * incident, vector * N) {
   vector a, b, c; 
   flt t;
  

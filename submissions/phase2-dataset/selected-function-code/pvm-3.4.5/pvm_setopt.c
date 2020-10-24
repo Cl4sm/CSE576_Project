@@ -1,3 +1,4 @@
+int
 pvm_setopt(what, val)
 	int what;
 	int val;

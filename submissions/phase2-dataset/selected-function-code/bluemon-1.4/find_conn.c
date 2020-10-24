@@ -1,3 +1,4 @@
+static int find_conn(int s, int dev_id, long arg)
 {
 	struct hci_conn_list_req *cl;
 	struct hci_conn_info *ci;

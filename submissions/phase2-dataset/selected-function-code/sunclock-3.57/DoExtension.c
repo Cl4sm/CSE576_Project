@@ -1,3 +1,4 @@
+static int
 DoExtension(FILE *fd, int label)
 {
     static char buf[256];

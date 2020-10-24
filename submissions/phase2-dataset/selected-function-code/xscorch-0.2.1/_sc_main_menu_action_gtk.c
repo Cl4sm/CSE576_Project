@@ -1,3 +1,4 @@
+static gboolean _sc_main_menu_action_gtk(sc_window_gtk *w, gint row) {
 
    switch(row) {
       case SC_ACTION_PLAYER:

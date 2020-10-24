@@ -1,3 +1,4 @@
+static int _sc_expl_cache_lookup_gtk(sc_window_gtk *w, int radius, sc_explosion_type type) {
 /* sc_expl_cache_lookup_gtk
    Lookup an entry in the cache matching this description.
    If no such entry is found, -1 is returned.  */

@@ -1,3 +1,4 @@
+int
 tev_begin( kind, entry_exit )
 int kind;
 int entry_exit;

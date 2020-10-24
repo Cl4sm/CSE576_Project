@@ -1,3 +1,4 @@
+int
 parseColor(s)
 char * s;
 {

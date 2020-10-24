@@ -1,3 +1,4 @@
+static
 int validvname(const char *name)
 {
   int len;

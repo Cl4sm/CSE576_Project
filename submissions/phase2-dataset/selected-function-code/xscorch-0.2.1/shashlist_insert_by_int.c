@@ -1,3 +1,4 @@
+shashlist_item *shashlist_insert_by_int(shashlist *list, void *data, int class, int key) {
 /* shashlist_append_by_int
    Append a new data item onto a hash dll.
    This will return NULL if the item is a duplicate or if allocation fails. */

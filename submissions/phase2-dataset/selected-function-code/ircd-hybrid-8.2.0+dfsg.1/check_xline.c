@@ -1,3 +1,4 @@
+static int
 check_xline(struct Client *source_p)
 {
   struct MaskItem *conf = NULL;

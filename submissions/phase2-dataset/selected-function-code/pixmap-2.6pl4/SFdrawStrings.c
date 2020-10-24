@@ -1,3 +1,4 @@
+static
 SFdrawStrings(w, dir, from, to)
 	register Window	w;
 	register SFDir	*dir;

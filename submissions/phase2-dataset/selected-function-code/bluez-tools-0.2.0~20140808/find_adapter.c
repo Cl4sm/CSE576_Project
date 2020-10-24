@@ -1,3 +1,4 @@
+Adapter *find_adapter(const gchar *name, GError **error)
 {
     gchar *adapter_path = NULL;
     Adapter *adapter = NULL;

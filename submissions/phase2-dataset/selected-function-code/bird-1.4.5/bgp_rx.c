@@ -1,3 +1,4 @@
+int
 bgp_rx(sock *sk, int size)
 {
   struct bgp_conn *conn = sk->data;

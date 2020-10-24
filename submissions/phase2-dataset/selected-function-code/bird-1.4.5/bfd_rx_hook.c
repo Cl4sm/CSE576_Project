@@ -1,3 +1,4 @@
+static int
 bfd_rx_hook(sock *sk, int len)
 {
   struct bfd_proto *p =  sk->data;

@@ -1,3 +1,4 @@
+int
 bgp_rte_better(rte *new, rte *old)
 {
   struct bgp_proto *new_bgp = (struct bgp_proto *) new->attrs->src->proto;

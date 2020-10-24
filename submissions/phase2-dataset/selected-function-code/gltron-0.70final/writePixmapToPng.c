@@ -1,3 +1,4 @@
+static int writePixmapToPng(screenshot_info_t *screenshot, char *fname) {
   png_structp png_ptr;
   png_infop info_ptr;
   png_byte **row_ptrs;

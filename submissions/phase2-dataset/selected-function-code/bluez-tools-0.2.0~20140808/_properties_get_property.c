@@ -1,3 +1,4 @@
+static void _properties_get_property(GObject *object, guint property_id, GValue *value, GParamSpec *pspec)
 {
     Properties *self = PROPERTIES(object);
 

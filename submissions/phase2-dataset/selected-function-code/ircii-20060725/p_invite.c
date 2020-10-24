@@ -1,3 +1,4 @@
+static	void
 p_invite(from, ArgList)
 	u_char	*from,
 		**ArgList;

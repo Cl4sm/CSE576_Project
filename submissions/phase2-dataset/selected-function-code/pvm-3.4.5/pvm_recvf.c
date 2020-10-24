@@ -1,3 +1,4 @@
+int (*
 pvm_recvf(new))()
 	int (*new)__ProtoGlarp__((int,int,int));
 {

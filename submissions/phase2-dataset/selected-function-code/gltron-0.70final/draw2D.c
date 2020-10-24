@@ -1,3 +1,4 @@
+void draw2D( Visual *d ) {
 		float width, height;
 		float border_left, border_bottom;
 		int i;

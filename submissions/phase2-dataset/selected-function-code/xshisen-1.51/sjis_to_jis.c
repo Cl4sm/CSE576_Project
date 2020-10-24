@@ -1,3 +1,4 @@
+char
 *sjis_to_jis(const char *str)
 {
     int len, i, p=0, kanji=0;

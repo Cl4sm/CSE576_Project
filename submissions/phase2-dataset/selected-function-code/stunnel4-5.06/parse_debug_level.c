@@ -1,3 +1,4 @@
+NOEXPORT int parse_debug_level(char *arg) {
     char *arg_copy;
     char *string;
     facilitylevel *fl;

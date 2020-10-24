@@ -1,3 +1,4 @@
+int v_readvbm(hfsvol *vol)
 {
   unsigned int vbmst = vol->mdb.drVBMSt;
   unsigned int vbmsz = (vol->mdb.drNmAlBlks + 0x0fff) >> 12;

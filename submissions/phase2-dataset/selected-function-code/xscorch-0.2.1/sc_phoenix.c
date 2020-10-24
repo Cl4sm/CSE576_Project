@@ -1,3 +1,4 @@
+sc_phoenix_result sc_phoenix(int locate, const sc_config *c, sc_weapon **wp, sc_explosion **e) {
 /* sc_phoenix_result
    Check if a weapon is phoenix class and if so call the requested action on it.
    It is important to *NOTE* that when these subfunctions return, the original

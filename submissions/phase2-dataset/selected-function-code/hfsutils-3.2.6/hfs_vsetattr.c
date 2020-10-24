@@ -1,3 +1,4 @@
+int hfs_vsetattr(hfsvol *vol, hfsvolent *ent)
 {
   if (getvol(&vol) == -1)
     goto fail;

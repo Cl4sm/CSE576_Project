@@ -1,3 +1,4 @@
+void				/* I send all I received in LSREQ */
 ospf_lsupd_send_list(struct ospf_neighbor *n, list * l)
 {
   struct ospf_area *oa = n->ifa->oa;

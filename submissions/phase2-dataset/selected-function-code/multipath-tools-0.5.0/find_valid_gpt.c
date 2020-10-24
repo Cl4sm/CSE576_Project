@@ -1,3 +1,4 @@
+static int
 find_valid_gpt(int fd, gpt_header ** gpt, gpt_entry ** ptes)
 {
         extern int force_gpt;

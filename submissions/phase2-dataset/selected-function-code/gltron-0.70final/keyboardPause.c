@@ -1,3 +1,4 @@
+void keyboardPause(int state, int key, int x, int y) {
 	if(state == SYSTEM_KEYSTATE_UP)
 		return;
 

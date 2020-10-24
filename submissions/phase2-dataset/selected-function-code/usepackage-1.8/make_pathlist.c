@@ -1,3 +1,4 @@
+linked_list* make_pathlist(char* path_string)
 {
    linked_list* list;
    int start,i,end;

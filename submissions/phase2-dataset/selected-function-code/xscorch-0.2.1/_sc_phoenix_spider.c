@@ -1,3 +1,4 @@
+static sc_phoenix_result _sc_phoenix_spider(__libj_unused int locate, const sc_config *c, sc_weapon **wp, sc_explosion **e) {
 /* _sc_phoenix_spider
    Split a missile with detonation on land and give random destinations */
 

@@ -1,3 +1,4 @@
+sc_explosion *sc_expl_new_with_angle(int centerx, int centery, int radius, int force,
                                      double direction, double angular_width,
                                      int playerid, sc_explosion_type type) {
 /* sc_expl_new_with_angle

@@ -1,3 +1,4 @@
+void scm_princode(code, env, port, writing)
      SCM code, env, port;
      int writing;
 {

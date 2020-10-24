@@ -1,3 +1,4 @@
+int
 sk_open(sock *s)
 {
   int af = BIRD_AF;

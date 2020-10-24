@@ -1,3 +1,4 @@
+int hfs_setcwd(hfsvol *vol, unsigned long id)
 {
   if (getvol(&vol) == -1)
     goto fail;

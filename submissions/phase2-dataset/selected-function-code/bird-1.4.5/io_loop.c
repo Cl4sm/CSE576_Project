@@ -1,3 +1,4 @@
+void
 io_loop(void)
 {
   fd_set rd, wr;

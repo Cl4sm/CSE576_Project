@@ -1,3 +1,4 @@
+static Boolean SetValues(current, request, new)
      Widget current, request, new;
 {
   PixmapWidget p_old = (PixmapWidget) current;

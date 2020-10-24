@@ -1,3 +1,4 @@
+void print_env(void)
 {
    list_node* node;
    variable_t* var;

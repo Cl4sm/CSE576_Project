@@ -1,3 +1,4 @@
+static GtkWidget *create_targets_list(void)
 {
 	GtkWidget *scrollw;
 	GtkCellRenderer *renderer;

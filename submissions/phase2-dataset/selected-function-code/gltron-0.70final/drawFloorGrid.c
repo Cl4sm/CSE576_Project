@@ -1,3 +1,4 @@
+void drawFloorGrid(int grid_size,  int line_spacing, 
                    float line_color[4], float square_color[4]) {
   int i, j;
 

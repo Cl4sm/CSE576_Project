@@ -1,3 +1,4 @@
+int rt_hash_delete(rt_hash_t *tptr, const char *key) {
   hash_node_t *node, *last;
   int data;
   int h;

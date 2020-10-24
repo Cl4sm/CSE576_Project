@@ -1,3 +1,4 @@
+int
 parseArgs(argc, argv)
 int                    argc;
 char **                argv;

@@ -1,3 +1,4 @@
+int getnameinfo(const struct sockaddr *sa, int salen,
     char *host, int hostlen, char *serv, int servlen, int flags) {
 
 #if defined(USE_WIN32) && !defined(_WIN32_WCE)

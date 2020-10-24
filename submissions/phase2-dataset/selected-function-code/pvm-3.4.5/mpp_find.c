@@ -1,3 +1,4 @@
+struct task *mpp_find( tp )
 	struct task	*tp;
 {
 	int			i;

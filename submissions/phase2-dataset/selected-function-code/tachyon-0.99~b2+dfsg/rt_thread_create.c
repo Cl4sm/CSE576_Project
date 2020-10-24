@@ -1,3 +1,4 @@
+int rt_thread_create(rt_thread_t * thr, void * fctn(void *), void * arg) {
   int status=0;
 
 #ifdef THR

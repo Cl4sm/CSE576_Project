@@ -1,3 +1,4 @@
+static bool _sc_tank_profile_new(sc_tank_profile **plist, reg *r, reg_var *rv) {
 /* sc_tank_profile_new
    This function, if successful, allocates and reads a new tank profile, and
    adds it to the END of the linked list specified.  True is returned on

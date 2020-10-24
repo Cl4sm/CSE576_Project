@@ -1,3 +1,4 @@
+int scm_grow_gra(gra, elt)
      scm_gra *gra;
      char *elt;
 {

@@ -1,3 +1,4 @@
+void _inituni ()
 {
     if (!init_stat[GBUNI])
     {

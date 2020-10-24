@@ -1,3 +1,4 @@
+int
 mroute(mid, dtid, code, tmout)
 	int mid;				/* message */
 	int dtid;				/* dest */

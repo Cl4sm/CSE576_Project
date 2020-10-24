@@ -1,3 +1,4 @@
+static gboolean _sc_status_activate_item(__libj_unused GtkWidget *widget,
                                          ScActiveConsoleSpot *spot,
                                          sc_window_gtk *w) {
 

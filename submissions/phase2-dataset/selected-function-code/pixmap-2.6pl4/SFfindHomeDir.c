@@ -1,3 +1,4 @@
+static int
 SFfindHomeDir(begin, end)
 	char	*begin, *end;
 {

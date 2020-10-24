@@ -1,3 +1,4 @@
+static gint _sc_active_console_button_release(GtkWidget *widget, GdkEventButton *event) {
 
    ScActiveConsole *cons = SC_ACTIVE_CONSOLE(widget);
    ScActiveConsoleSpot *spot;

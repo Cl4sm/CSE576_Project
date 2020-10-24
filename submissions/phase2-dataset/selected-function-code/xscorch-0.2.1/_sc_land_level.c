@@ -1,3 +1,4 @@
+static inline void _sc_land_level(const sc_config *c, sc_land *l, int x, int ht) {
 /* sc_land_level
    Internal function to level a column of land to the specified height.
    Caution, X is a real coordinate in this funciton, no sanity checks run.  */

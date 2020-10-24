@@ -1,3 +1,4 @@
+int
 can_send(struct Channel *chptr, struct Client *source_p,
          struct Membership *ms, const char *message)
 {

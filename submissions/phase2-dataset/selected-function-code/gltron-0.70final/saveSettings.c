@@ -1,3 +1,4 @@
+void saveSettings(void) {
 	char *script;
 	script = getPath(PATH_SCRIPTS, "save.lua");
 	scripting_RunFile(script);

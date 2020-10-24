@@ -1,3 +1,4 @@
+static unsigned int write_superblock(struct entry *root, char *base, int size)
 {
 	struct cramfs_super *super = (struct cramfs_super *) base;
 	unsigned int offset = sizeof(struct cramfs_super) + image_length;

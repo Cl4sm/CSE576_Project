@@ -1,3 +1,4 @@
+int
 prelink_get_relocations (struct prelink_info *info)
 {
   FILE *f;

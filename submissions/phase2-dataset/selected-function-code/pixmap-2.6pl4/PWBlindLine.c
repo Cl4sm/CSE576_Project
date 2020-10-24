@@ -1,3 +1,4 @@
+void PWBlindLine(Widget w, Position from_x, Position from_y, 
 		 Position to_x, Position to_y, int value)
 #else
 void PWBlindLine(w, from_x, from_y, to_x, to_y, value)

@@ -1,3 +1,4 @@
+void
 Message(Pixmap symbol, const char *message, int timeout,
         XtTimerCallbackProc timeout_proc, XtCallbackProc additional_callback)
 {

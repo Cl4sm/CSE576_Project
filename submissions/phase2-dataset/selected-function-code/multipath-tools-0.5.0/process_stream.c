@@ -1,3 +1,4 @@
+int
 process_stream(vector keywords)
 {
 	int i;

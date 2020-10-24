@@ -1,3 +1,4 @@
+static
 int outpath(dstring *str, queueent *ent, int flags)
 {
   const char *path;

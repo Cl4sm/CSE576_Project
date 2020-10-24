@@ -1,3 +1,4 @@
+void key_control(int key)
 {
 	if(!(keve->state & ShiftMask) && flag[BLK]) mark_off();
 	switch(key|0x60) {

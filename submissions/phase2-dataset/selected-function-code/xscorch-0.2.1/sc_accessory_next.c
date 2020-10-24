@@ -1,3 +1,4 @@
+sc_accessory_info *sc_accessory_next(const sc_accessory_config *ac, const sc_accessory_info *info, int flags) {
 /* sc_accessory_next
    Advance to the next/prev accessory in the list (with wrapping).  */
 

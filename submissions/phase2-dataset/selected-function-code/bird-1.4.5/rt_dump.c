@@ -1,3 +1,4 @@
+void
 rt_dump(rtable *t)
 {
   rte *e;

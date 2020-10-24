@@ -1,3 +1,4 @@
+SCM array_imap(ra, proc)
      SCM ra, proc;
 {
   SCM hp_av, hp_indv, auto_av[5];

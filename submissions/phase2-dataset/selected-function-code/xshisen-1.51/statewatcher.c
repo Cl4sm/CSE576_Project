@@ -1,3 +1,4 @@
+void
 statewatcher(Widget w, caddr_t unused, XEvent *event)
 {
     if (event->type == MapNotify) {

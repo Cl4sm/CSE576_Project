@@ -1,3 +1,4 @@
+void
 resize_window1(unsigned int width, unsigned int height)
 {
     static short    first_time = 1;

@@ -1,3 +1,4 @@
+void 
 buildMap(Context, wintype, build)
 struct Sundata * Context;
 int wintype, build;

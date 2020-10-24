@@ -1,3 +1,4 @@
+int uevent_dispatch(int (*uev_trigger)(struct uevent *, void * trigger_data),
 		    void * trigger_data)
 {
 	my_uev_trigger = uev_trigger;

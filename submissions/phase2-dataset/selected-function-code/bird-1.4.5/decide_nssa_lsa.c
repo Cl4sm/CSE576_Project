@@ -1,3 +1,4 @@
+static inline int
 decide_nssa_lsa(ort *nf, u32 *rt_metric, ip_addr *rt_fwaddr, u32 *rt_tag)
 {
   struct ospf_area *oa = nf->n.oa;

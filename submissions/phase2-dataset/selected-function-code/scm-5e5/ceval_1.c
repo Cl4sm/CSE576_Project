@@ -1,3 +1,4 @@
+static SCM ceval_1(x)
      SCM x;
 {
 #ifdef GCC_SPARC_BUG

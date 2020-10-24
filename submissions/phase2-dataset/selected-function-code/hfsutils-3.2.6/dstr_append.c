@@ -1,3 +1,4 @@
+int dstr_append(dstring *string, const char *str, size_t len)
 {
   size_t newlen;
 

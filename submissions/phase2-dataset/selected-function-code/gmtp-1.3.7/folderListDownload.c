@@ -1,3 +1,4 @@
+gboolean folderListDownload(gchar *foldername, uint32_t folderid) {
     GtkWidget *FileDialog;
     gchar *savepath = NULL;
     //savepath = g_malloc0(8192);

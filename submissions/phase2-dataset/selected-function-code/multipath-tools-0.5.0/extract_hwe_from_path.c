@@ -1,3 +1,4 @@
+static struct hwentry *
 extract_hwe_from_path(struct multipath * mpp)
 {
 	struct path * pp = NULL;

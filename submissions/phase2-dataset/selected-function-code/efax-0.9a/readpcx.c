@@ -1,3 +1,4 @@
+int readpcx ( char *p, int len, IFILE *f )
 {
   int err=0, n, c ;
 

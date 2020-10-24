@@ -1,3 +1,4 @@
+SCM l_connect (sockpt, address, arg)
      SCM sockpt, address, arg;
 {
   long flags;

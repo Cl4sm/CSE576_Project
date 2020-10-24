@@ -1,3 +1,4 @@
+void PWDown(Widget w)
 #else
 void PWDown(w)
      Widget w;

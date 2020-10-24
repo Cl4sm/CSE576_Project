@@ -1,3 +1,4 @@
+static void _adapter_set_property(GObject *object, guint property_id, const GValue *value, GParamSpec *pspec)
 {
 	Adapter *self = ADAPTER(object);
 	GError *error = NULL;

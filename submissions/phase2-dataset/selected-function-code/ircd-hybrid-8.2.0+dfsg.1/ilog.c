@@ -1,3 +1,4 @@
+void
 ilog(enum log_type type, const char *fmt, ...)
 {
   char buf[LOG_BUFSIZE] = "";

@@ -1,3 +1,4 @@
+float * image_crop_rgb96f(int xres, int yres, float *fimg, 
                           int szx, int szy, int sx, int sy) {
   float *cropped;
   int x, y;

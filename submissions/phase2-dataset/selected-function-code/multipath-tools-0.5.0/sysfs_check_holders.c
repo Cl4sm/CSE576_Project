@@ -1,3 +1,4 @@
+int sysfs_check_holders(char * check_devt, char * new_devt)
 {
 	unsigned int major, new_minor, table_minor;
 	char path[PATH_SIZE], check_dev[PATH_SIZE];

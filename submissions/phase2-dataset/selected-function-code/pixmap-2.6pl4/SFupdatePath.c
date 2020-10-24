@@ -1,3 +1,4 @@
+SFupdatePath()
 {
 	static int	alloc;
 	static int	wasTwiddle = 0;

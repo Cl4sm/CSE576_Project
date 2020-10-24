@@ -1,3 +1,4 @@
+u_char	*
 get_input()
 {
 	iconv_const char *source = (iconv_const char*)get_input_raw();

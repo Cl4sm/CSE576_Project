@@ -1,3 +1,4 @@
+SCM scm_iabs(x)
      SCM x;
 {
 #ifdef BIGDIG

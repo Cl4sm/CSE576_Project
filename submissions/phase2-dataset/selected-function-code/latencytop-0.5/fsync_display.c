@@ -1,3 +1,4 @@
+int fsync_display(int duration)
 {
 	struct timeval start,end,now;
 	int key;

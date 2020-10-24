@@ -1,3 +1,4 @@
+static int
 adjust_symtab_section_indices (DSO *dso, int n, int old_shnum, int *old_to_new)
 {
   Elf_Data *data = NULL;

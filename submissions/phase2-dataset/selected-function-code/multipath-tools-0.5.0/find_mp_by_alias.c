@@ -1,3 +1,4 @@
+struct multipath *
 find_mp_by_alias (vector mpvec, char * alias)
 {
 	int i;

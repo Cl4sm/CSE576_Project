@@ -1,3 +1,4 @@
+int
 pvm_putinfo(name, mid, flags)
 	char *name;			/* class name */
 	int mid;			/* message to store */

@@ -1,3 +1,4 @@
+Device *find_device(Adapter *adapter, const gchar *name, GError **error)
 {
     g_assert(adapter != NULL && ADAPTER_IS(adapter));
     g_assert(name != NULL && strlen(name) > 0);

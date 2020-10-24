@@ -1,3 +1,4 @@
+int
 umbuf_dump(mid, lvl)
 	int mid;
 	int lvl;	/* 0 - summary, 1 - frag lengths, 2 - frag data */

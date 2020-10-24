@@ -1,3 +1,4 @@
+void show_scr(int fr, int to)
 {
 	int len=screen_width-1;
 	int i=fr;

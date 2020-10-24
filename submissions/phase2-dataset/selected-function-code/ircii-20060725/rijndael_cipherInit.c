@@ -1,3 +1,4 @@
+int rijndael_cipherInit(rijndael_cipherInstance *cipher, BYTE mode, char *IV)
 {
 	int i, j, t;
 	

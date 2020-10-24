@@ -1,3 +1,4 @@
+SCM m_case(xorig, env, ctxt)
      SCM xorig, env, ctxt;
 {
   SCM clause, key_expr, x = CDR(xorig);

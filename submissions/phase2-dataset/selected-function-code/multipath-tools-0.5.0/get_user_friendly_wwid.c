@@ -1,3 +1,4 @@
+int
 get_user_friendly_wwid(char *alias, char *buff, char *file)
 {
 	int fd, unused;

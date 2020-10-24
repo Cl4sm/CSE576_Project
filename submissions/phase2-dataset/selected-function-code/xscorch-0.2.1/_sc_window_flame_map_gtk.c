@@ -1,3 +1,4 @@
+static int *_sc_window_flame_map_gtk(const sc_config *c) {
 /* sc_window_flame_map_gtk */
 
    double dist;

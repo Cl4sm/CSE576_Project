@@ -1,3 +1,4 @@
+int mpeg_buf_set_max (mpeg_buffer_t *buf, unsigned max)
 {
 	if (buf->max == max) {
 		return (0);

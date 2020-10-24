@@ -1,3 +1,4 @@
+int get_link_qual(btdev_t* btdev)
 {
 	struct hci_conn_info_req *cr;
 	struct hci_request rq;

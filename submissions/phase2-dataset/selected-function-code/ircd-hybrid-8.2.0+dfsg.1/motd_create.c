@@ -1,3 +1,4 @@
+static struct Motd *
 motd_create(const char *mask, const char *path)
 {
   struct Motd *tmp = MyCalloc(sizeof(struct Motd));

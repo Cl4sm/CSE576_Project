@@ -1,3 +1,4 @@
+int DoZipReplies ()
 /*
  *  Process replies in a Zip packet
  */

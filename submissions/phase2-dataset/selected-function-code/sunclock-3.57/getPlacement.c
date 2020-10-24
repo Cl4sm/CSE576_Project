@@ -1,3 +1,4 @@
+int
 getPlacement(win, x, y, w, h)
 Window win;
 int *x, *y;

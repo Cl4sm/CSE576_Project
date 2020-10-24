@@ -1,3 +1,4 @@
+int main(int argc, char *argv[]){
 	htable_t *ht=NULL;
 	process_args(argc, argv, &g_config);
 

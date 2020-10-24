@@ -1,3 +1,4 @@
+SCM scm_bytes_to_integer(sbyts, sn)
      SCM sbyts;
      SCM sn;
 {

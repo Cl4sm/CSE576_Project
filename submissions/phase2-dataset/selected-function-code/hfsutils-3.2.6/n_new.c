@@ -1,3 +1,4 @@
+int n_new(node *np)
 {
   btree *bt = np->bt;
   unsigned long num;

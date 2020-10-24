@@ -1,3 +1,4 @@
+struct prelink_conflict *
 prelink_conflict (struct prelink_info *info, GElf_Word r_sym,
 		  int reloc_type)
 {

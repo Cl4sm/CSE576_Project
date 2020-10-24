@@ -1,3 +1,4 @@
+flt shade_phong(const ray * incident, const shadedata * shadevars, flt specpower) {
   vector R;   /* reflection vector      */
   vector V;   /* direction to viewpoint */
   vector LL;  /* reverse direction to light     */

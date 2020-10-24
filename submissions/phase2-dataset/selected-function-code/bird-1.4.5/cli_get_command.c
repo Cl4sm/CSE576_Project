@@ -1,3 +1,4 @@
+int
 cli_get_command(cli *c)
 {
   sock *s = c->priv;

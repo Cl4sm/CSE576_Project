@@ -1,3 +1,4 @@
+void * rt_spotlight(SceneHandle voidscene, void * tex, apivector ctr, flt rad,
                     apivector dir, flt start, flt end) {
   flt fallstart, fallend;
   point_light * li;

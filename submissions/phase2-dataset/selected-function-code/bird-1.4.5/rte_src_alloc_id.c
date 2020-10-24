@@ -1,3 +1,4 @@
+static inline u32
 rte_src_alloc_id(void)
 {
   int i, j;

@@ -1,3 +1,4 @@
+static int
 uev_remove_map (struct uevent * uev, struct vectors * vecs)
 {
 	char *alias;

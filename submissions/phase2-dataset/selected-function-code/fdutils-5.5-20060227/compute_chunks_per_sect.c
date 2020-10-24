@@ -1,3 +1,4 @@
+static int compute_chunks_per_sect(struct params *fd,
 				    int tracksize,
 				    int sizecode,
 				    int *gap,

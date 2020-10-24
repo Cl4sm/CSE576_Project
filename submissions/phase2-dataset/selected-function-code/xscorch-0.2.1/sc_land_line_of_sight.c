@@ -1,3 +1,4 @@
+bool sc_land_line_of_sight(const sc_config *c, const sc_land *l, int x1, int y1, int x2, int y2) {
 /* sc_land_line_of_sight
    Returns nonzero if (x1,y1) can see (x2,y2).  This function will take
    wrapping boundaries and solid walls into account, if they are available.

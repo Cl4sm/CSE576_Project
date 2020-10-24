@@ -1,3 +1,4 @@
+int
 gather_config (void)
 {
   struct config_line *c;

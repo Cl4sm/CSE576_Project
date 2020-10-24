@@ -1,3 +1,4 @@
+void 
 check_extended_wm_hints_support()
 {
 	memset( &ExtWM, 0x00, sizeof(ExtWM));

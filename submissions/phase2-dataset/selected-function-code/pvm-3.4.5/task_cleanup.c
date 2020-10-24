@@ -1,3 +1,4 @@
+void
 task_cleanup(tp)
 	struct task *tp;
 {

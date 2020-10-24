@@ -1,3 +1,4 @@
+int
 conf_connect_allowed(struct irc_ssaddr *addr, int aftype)
 {
   struct ip_entry *ip_found = NULL;

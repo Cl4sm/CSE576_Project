@@ -1,3 +1,4 @@
+static int update_display(int duration, char *filterchar)
 {
 	struct timeval start,end,now;
 	int key;

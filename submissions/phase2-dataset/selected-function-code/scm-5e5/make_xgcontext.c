@@ -1,3 +1,4 @@
+SCM make_xgcontext(d, screen_number, gc, rootp)
      SCM d;
      int screen_number;
      GC gc;

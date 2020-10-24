@@ -1,3 +1,4 @@
+void FixImage(w, client_data, call_data)
      Widget w;
      XtPointer client_data, call_data;
 {

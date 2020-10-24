@@ -1,3 +1,4 @@
+SCM lregmatp(prog, str)
      SCM prog, str;
 {
   FIXUP_REGEXP(prog);

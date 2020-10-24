@@ -1,3 +1,4 @@
+void
 Gr_DestroyWindow(grwin_t * grwin)
 {
 #ifdef RXVT_GRAPHICS

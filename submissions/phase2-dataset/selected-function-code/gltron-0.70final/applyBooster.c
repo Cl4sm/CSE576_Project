@@ -1,3 +1,4 @@
+int applyBooster(int player, int dt) {
 	Data *data = game->player[player].data;
 	if(data->booster > 0 && data->boost_enabled) {
 		float boost = getSettingf("booster_use") * dt / 1000.0f;

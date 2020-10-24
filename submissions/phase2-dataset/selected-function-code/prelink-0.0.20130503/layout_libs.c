@@ -1,3 +1,4 @@
+int
 layout_libs (void)
 {
   struct layout_libs l;

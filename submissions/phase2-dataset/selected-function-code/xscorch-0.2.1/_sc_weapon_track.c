@@ -1,3 +1,4 @@
+static sc_weapon_track_result _sc_weapon_track(sc_config *c, sc_weapon **wp, sc_explosion **e) {
 /* sc_weapon_track
    Track a single weapon component.  This function undraws the weapon at
    its current position ((*wp)->tr->cur{x,y}).  Then, it tracks the weapon

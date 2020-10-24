@@ -1,3 +1,4 @@
+static void makeMCTs (const char *ecbEncryptionFile, const char *ecbDecryptionFile,
 	const char *cbcEncryptionFile, const char *cbcDecryptionFile)
 {
 	FILE *fp;

@@ -1,3 +1,4 @@
+void jyear(td, yy, mm, dd)
 double td;
 int *yy, *mm, *dd;
 {

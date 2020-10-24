@@ -1,3 +1,4 @@
+static void _sc_dialog_ok_clicked(GtkWidget *button, ScDialog *dlg) {
 /* sc_dialog_ok_clicked
    The OK button was clicked.  Emit the "apply" signal, then close
    out the dialog window (unless defer was selected).  */

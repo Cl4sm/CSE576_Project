@@ -1,3 +1,4 @@
+static void
 client_input(int fd) {
 	int nchars, i, new, query;
 	struct passwd *pw;

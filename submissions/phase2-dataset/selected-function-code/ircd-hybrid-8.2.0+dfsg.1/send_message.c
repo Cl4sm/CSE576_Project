@@ -1,3 +1,4 @@
+static void
 send_message(struct Client *to, struct dbuf_block *buf)
 {
   assert(!IsMe(to));

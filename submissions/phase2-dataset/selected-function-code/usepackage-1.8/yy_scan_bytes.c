@@ -1,3 +1,4 @@
+YY_BUFFER_STATE yy_scan_bytes( yyconst char *bytes, int len )
 #else
 YY_BUFFER_STATE yy_scan_bytes( bytes, len )
 yyconst char *bytes;

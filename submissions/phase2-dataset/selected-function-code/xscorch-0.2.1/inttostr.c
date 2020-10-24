@@ -1,3 +1,4 @@
+char *inttostr(char *d, sdword num, udword digits) {
 /* Integer-To_String
    Converts integer <num> to a string with <digits> digits. If
    <digits> is less than number of digits in <num>, then the

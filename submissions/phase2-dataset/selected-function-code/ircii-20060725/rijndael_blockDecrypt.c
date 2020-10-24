@@ -1,3 +1,4 @@
+int rijndael_blockDecrypt(rijndael_cipherInstance *cipher,
 	rijndael_keyInstance *key, BYTE *input, int inputLen, BYTE *outBuffer)
 {
 	int i, j, t, numBlocks;

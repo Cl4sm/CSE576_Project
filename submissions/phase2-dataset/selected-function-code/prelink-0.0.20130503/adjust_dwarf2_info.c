@@ -1,3 +1,4 @@
+static int
 adjust_dwarf2_info (DSO *dso, GElf_Addr start, GElf_Addr adjust, int type)
 {
   unsigned char *ptr, *endcu, *endsec;

@@ -1,3 +1,4 @@
+int format_track(struct params *fd, int cylinder, int head, int do_skew)
 {
 	format_map_t *data;
 	struct floppy_raw_cmd raw_cmd;

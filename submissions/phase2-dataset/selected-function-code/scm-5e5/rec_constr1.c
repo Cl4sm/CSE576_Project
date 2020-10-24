@@ -1,3 +1,4 @@
+SCM rec_constr1(args)
      SCM args;
 {
   SCM cclo = CAR(args);

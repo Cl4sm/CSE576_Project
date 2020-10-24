@@ -1,3 +1,4 @@
+int dial ( TFILE *f, char *s, int nowait )
 {
   int err=0, hsc=-1 ;
   char c, dsbuf [ 128 ], *p ;

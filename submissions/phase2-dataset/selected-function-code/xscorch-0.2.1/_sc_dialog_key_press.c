@@ -1,3 +1,4 @@
+static gint _sc_dialog_key_press(GtkWidget *widget, GdkEventKey *key) {
 /* sc_dialog_key_press
    Process a keypress event in this dialog window.  */
 

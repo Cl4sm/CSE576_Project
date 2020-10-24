@@ -1,3 +1,4 @@
+void f_init(hfsfile *file, hfsvol *vol, long cnid, const char *name)
 {
   int i;
 

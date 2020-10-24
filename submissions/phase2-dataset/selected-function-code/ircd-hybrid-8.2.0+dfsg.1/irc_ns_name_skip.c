@@ -1,3 +1,4 @@
+static int
 irc_ns_name_skip(const unsigned char **ptrptr, const unsigned char *eom)
 {
   const unsigned char *cp;

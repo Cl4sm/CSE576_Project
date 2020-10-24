@@ -1,3 +1,4 @@
+void get_id3_tags(gchar *filename, LIBMTP_track_t *trackinformation) {
     gchar * tracknumber = NULL;
     gchar * trackduration = NULL;
     MP3_Info mp3_information;

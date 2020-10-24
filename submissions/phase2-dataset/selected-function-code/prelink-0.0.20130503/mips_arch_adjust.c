@@ -1,3 +1,4 @@
+static int
 mips_arch_adjust (DSO *dso, GElf_Addr start, GElf_Addr adjust)
 {
   struct mips_local_got_iterator lgi;

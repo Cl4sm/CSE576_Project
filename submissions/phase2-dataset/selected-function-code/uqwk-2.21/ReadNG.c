@@ -1,3 +1,4 @@
+int ReadNG()
 /*
  *  Read the desired newsgroups file
  */

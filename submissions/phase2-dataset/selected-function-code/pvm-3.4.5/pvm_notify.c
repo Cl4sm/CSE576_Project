@@ -1,3 +1,4 @@
+int
 pvm_notify(what, code, count, vals)
 	int what;
 	int code;

@@ -1,3 +1,4 @@
+void
 split_nuh(struct split_nuh_item *const iptr)
 {
   char *p = NULL, *q = NULL;

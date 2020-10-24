@@ -1,3 +1,4 @@
+sc_window *sc_window_new(sc_config *c, __libj_unused int argc, __libj_unused char **argv) {
 
    sc_window_gtk *w;
    GtkWidget *cont;

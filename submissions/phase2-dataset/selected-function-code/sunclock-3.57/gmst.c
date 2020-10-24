@@ -1,3 +1,4 @@
+double
 gmst(jd)
 double jd;
 {

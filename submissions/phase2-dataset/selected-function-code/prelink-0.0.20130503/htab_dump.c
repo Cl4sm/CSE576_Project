@@ -1,3 +1,4 @@
+void
 htab_dump (htab, name, dumpfn)
      htab_t htab;
      const char *name;

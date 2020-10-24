@@ -1,3 +1,4 @@
+char *
 pvmnametag(tag, found)
 	int tag;
 	int *found;

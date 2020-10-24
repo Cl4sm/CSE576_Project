@@ -1,3 +1,4 @@
+static int
 bgp_encode_attr_hdr(byte *dst, unsigned int flags, unsigned code, int len)
 {
   int wlen;

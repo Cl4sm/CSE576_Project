@@ -1,3 +1,4 @@
+static void test_fs(int start)
 {
 	struct cramfs_inode *root;
 

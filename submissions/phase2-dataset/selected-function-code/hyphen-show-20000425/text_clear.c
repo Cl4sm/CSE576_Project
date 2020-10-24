@@ -1,3 +1,4 @@
+char* text_clear(char * str, int* p)
   { unsigned n; char cc;
     n = 0; *p = 0;
     while (strlen(str) > 0)

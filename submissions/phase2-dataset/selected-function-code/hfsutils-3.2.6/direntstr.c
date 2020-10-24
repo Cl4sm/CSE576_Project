@@ -1,3 +1,4 @@
+static
 char *direntstr(hfsdirent *ent)
 {
   char

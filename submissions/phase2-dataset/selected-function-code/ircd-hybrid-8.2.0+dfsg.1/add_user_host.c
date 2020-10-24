@@ -1,3 +1,4 @@
+void
 add_user_host(const char *user, const char *host, int global)
 {
   dlink_node *ptr;

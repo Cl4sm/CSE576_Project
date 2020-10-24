@@ -1,3 +1,4 @@
+void ctrlq_key(int key)
 {
 	switch(key | 0x60) {
 		case 'a': goto_replace(); break;	/* ^Q^A replace */

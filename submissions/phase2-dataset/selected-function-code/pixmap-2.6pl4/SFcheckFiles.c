@@ -1,3 +1,4 @@
+static int
 SFcheckFiles(dir)
 	SFDir	*dir;
 {

@@ -1,3 +1,4 @@
+void DrawImageData(PW, image, mask_image, at_x, at_y, value, mode)
      PixmapWidget PW;
      XImage *image, *mask_image;
      Position at_x, at_y;

@@ -1,3 +1,4 @@
+static struct expression *
 new_exp (nargs, op, args)
      int nargs;
      enum operator op;

@@ -1,3 +1,4 @@
+int
 pvm_getmboxinfo(pattern, nclasses, classes)
 	char *pattern;					/* class name */
 	int *nclasses;					/* number of classes returned */

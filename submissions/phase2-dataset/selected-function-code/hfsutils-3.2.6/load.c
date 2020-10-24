@@ -1,3 +1,4 @@
+static
 rsrchandle *load(rsrcfile *rfile, const byte *ritem)
 {
   unsigned long offs, nbytes, len, count;

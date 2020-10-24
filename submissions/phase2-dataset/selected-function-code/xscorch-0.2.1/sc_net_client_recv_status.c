@@ -1,3 +1,4 @@
+bool sc_net_client_recv_status(const sc_config *c, sc_client *cli, sc_packet *packet) {
 /* sc_net_client_recv_status
    Update the client status data. */
 

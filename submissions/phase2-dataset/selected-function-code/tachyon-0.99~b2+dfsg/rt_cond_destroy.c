@@ -1,3 +1,4 @@
+int rt_cond_destroy(rt_cond_t * cvp) {
   int status=0;
 
 #ifdef THR

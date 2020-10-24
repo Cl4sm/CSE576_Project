@@ -1,3 +1,4 @@
+static report_file(char *process, char *file)
 {
 	struct fsync_process *proc;
 	GList *item;

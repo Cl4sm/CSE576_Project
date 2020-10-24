@@ -1,3 +1,4 @@
+static struct mpnh *
 calc_next_hop(struct ospf_area *oa, struct top_hash_entry *en,
 	      struct top_hash_entry *par, int pos)
 {

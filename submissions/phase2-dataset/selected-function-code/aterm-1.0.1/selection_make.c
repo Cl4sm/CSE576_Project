@@ -1,3 +1,4 @@
+void
 selection_make(Time tm, unsigned int key_state)
 {
     int             i, col, end_col, row, end_row;

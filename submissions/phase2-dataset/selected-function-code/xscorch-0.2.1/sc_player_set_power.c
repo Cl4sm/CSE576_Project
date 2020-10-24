@@ -1,3 +1,4 @@
+void sc_player_set_power(const sc_config *c, sc_player *p, int power) {
 /* sc_player_set_power */
 
    int life;

@@ -1,3 +1,4 @@
+static void
 rt_sync(struct proto_ospf *po)
 {
   struct proto *p = &po->proto;

@@ -1,3 +1,4 @@
+void *str_realloc_debug(void *ptr, size_t size, char *file, int line) {
     ALLOC_LIST *prev_alloc_list, *alloc_list;
 
     if(!ptr)

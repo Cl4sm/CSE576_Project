@@ -1,3 +1,4 @@
+void
 mp_pool_release(void *item)
 {
   mp_allocated_t *allocated = (void *)M2A(item);

@@ -1,3 +1,4 @@
+static gint _sc_console_button_release(GtkWidget *widget, GdkEventButton *event) {
 /* sc_console_button_release
    Someone released the mouse button.  Update the cursor/active highlight if
    needed, and check for scrollbar events.  */

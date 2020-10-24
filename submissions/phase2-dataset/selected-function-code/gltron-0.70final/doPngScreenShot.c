@@ -1,3 +1,4 @@
+void doPngScreenShot(Visual *display) {
   screenshot_info_t screenshot;
   static int last_png_num; /* store last free file index. */
   char *path;

@@ -1,3 +1,4 @@
+static void
 do_query_number(dns_callback_fnc callback, void *ctx,
                 const struct irc_ssaddr *addr,
                 struct reslist *request)

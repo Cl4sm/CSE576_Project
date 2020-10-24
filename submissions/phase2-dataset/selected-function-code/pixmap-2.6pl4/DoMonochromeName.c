@@ -1,3 +1,4 @@
+void DoMonochromeName()
 {
   char *m_name;
   char message[80];

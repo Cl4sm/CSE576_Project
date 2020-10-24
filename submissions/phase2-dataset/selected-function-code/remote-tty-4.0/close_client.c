@@ -1,3 +1,4 @@
+static void
 close_client(int fd) {
 	dprintf(stderr, "close_client: fd%d\n", fd);
 	close(fd);

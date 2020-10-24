@@ -1,3 +1,4 @@
+void EnvOptions()
 /*
  *  Override options from environment variables
  */

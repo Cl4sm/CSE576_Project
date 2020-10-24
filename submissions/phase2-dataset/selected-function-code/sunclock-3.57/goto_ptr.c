@@ -1,3 +1,4 @@
+void goto_ptr(char *s)
 {
 	/* find line_start <= s */
 	char *s1 = s;

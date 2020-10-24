@@ -1,3 +1,4 @@
+static void
 kanjiconvert(const char *operation)
 {
     char buffer[100], *p;

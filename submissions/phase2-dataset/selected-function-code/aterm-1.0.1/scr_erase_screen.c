@@ -1,3 +1,4 @@
+void
 scr_erase_screen(int mode)
 {
     int             row, num, row_offset;

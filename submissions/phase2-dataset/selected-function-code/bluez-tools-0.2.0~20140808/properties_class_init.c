@@ -1,3 +1,4 @@
+static void properties_class_init (PropertiesClass *klass)
 {
     GObjectClass *gobject_class = G_OBJECT_CLASS (klass);
     

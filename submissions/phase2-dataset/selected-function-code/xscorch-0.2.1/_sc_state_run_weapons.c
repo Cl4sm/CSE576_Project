@@ -1,3 +1,4 @@
+static void _sc_state_run_weapons(sc_config *c, sc_game *g) {
 
    switch(sc_weapon_track_all(c, &g->expl_init)) {
       case SC_WEAPON_TRACK_NO_ACTION:

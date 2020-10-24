@@ -1,3 +1,4 @@
+gboolean on_windowMainContextMenu_activate(GtkWidget *widget, GdkEvent *event) {
     GtkMenu *menu;
     GdkEventButton *event_button;
     g_return_val_if_fail(widget != NULL, FALSE);

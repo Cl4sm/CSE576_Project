@@ -1,3 +1,4 @@
+void readHistory(void) {
   char buf[MAXCMDLEN];
   char *item;
   FILE *fp;

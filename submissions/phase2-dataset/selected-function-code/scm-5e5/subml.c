@@ -1,3 +1,4 @@
+SCM subml(str1, start1, args)
      SCM str1, start1, args;
 {
   SCM end1, str2, start2;

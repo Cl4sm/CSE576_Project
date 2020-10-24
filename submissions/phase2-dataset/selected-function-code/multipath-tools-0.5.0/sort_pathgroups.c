@@ -1,3 +1,4 @@
+void
 sort_pathgroups (struct multipath *mp) {
 	int i, j;
 	struct pathgroup * pgp1, * pgp2;

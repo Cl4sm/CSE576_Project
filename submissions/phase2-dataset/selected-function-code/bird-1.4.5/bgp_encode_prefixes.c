@@ -1,3 +1,4 @@
+static unsigned int
 bgp_encode_prefixes(struct bgp_proto *p, byte *w, struct bgp_bucket *buck, unsigned int remains)
 {
   byte *start = w;

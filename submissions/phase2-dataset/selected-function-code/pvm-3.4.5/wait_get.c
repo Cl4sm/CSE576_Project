@@ -1,3 +1,4 @@
+struct waitc *
 wait_get(hp, mp, kind)
 	struct hostd *hp;
 	struct pmsg *mp;

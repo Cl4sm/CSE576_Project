@@ -1,3 +1,4 @@
+static void sphere_intersect(const sphere * spr, ray * ry) {
   flt b, disc, t1, t2, temp;
   vector V;
 

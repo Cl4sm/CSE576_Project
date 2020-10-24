@@ -1,3 +1,4 @@
+void
 olock_acquire(struct object_lock *l)
 {
   node *n;

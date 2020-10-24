@@ -1,3 +1,4 @@
+int
 pvm_mpp_beatask(mytid, myptid, 
 				outtid, outctx, outtag,
 				trctid, trcctx, trctag,

@@ -1,3 +1,4 @@
+mipmap * CreateMIPMap(rawimage * image, int maxlevels) {
   mipmap * mip;
   int xlevels, ylevels, zlevels, i; 
   char msgtxt[1024];

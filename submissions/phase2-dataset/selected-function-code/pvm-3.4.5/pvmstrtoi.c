@@ -1,3 +1,4 @@
+int
 pvmstrtoi(p)
 	char *p;
 {

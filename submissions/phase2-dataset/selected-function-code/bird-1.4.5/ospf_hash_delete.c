@@ -1,3 +1,4 @@
+void
 ospf_hash_delete(struct top_graph *f, struct top_hash_entry *e)
 {
   struct top_hash_entry **ee = f->hash_table + 

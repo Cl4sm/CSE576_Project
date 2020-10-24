@@ -1,3 +1,4 @@
+void
 scr_printscreen(int fullhist)
 {
 #ifdef PRINTPIPE

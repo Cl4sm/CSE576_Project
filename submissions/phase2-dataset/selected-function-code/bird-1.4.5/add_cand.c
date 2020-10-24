@@ -1,3 +1,4 @@
+static void
 add_cand(list * l, struct top_hash_entry *en, struct top_hash_entry *par,
 	 u32 dist, struct ospf_area *oa, int pos)
 {

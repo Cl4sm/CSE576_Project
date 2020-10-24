@@ -1,3 +1,4 @@
+char *rkstrpat(rkstate *rk, char *s, const char *d) {
 /* Rabin-Karp-String-Pattern
    Searches for substring <d> in source string <s> using the Rabin Karp
    algorithm. */

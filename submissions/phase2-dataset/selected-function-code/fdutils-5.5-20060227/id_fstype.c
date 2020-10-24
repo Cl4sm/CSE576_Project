@@ -1,3 +1,4 @@
+int id_fstype(byte *super, fmt_descr *fmt) {
 
 #define minix ((struct minix_super_block*)(super+1024))
 #define dos   ((struct msdos_boot_sector*)super)

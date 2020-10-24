@@ -1,3 +1,4 @@
+void
 removeCity(c)
 City *c;
 {

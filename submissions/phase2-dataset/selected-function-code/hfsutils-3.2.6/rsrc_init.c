@@ -1,3 +1,4 @@
+rsrcfile *rsrc_init(void *priv, const struct rsrcprocs *procs)
 {
   rsrcfile *rfile;
   byte head[16];

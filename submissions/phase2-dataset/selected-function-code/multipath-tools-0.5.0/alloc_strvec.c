@@ -1,3 +1,4 @@
+vector
 alloc_strvec(char *string)
 {
 	char *cp, *start, *token;

@@ -1,3 +1,4 @@
+void sc_dialog_error(const char *s) {
 
    char *err;
    char *buf;

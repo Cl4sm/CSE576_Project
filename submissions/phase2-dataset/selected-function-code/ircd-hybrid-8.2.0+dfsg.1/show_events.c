@@ -1,3 +1,4 @@
+void
 show_events(struct Client *source_p)
 {
   const dlink_node *node;

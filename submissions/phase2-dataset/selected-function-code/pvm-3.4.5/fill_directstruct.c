@@ -1,3 +1,4 @@
+int
 fill_directstruct( dstruct , nsbufs, rtid, rpid, tagbase, seq , appid)
 MPP_DIRECTI_PTR dstruct;
 int nsbufs;

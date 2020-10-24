@@ -1,3 +1,4 @@
+void box_intersect(const box * bx, ray * ry) {
   flt a, tx1, tx2, ty1, ty2, tz1, tz2;
   flt tnear, tfar;
 

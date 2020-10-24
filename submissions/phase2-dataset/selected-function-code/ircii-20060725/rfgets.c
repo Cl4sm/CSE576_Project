@@ -1,3 +1,4 @@
+char	*
 rfgets(lbuf, size, file)
 	char	*lbuf;
 	int	size;

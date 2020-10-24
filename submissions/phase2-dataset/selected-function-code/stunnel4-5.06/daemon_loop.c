@@ -1,3 +1,4 @@
+void daemon_loop(void) {
     SERVICE_OPTIONS *opt;
     int temporary_lack_of_resources;
 

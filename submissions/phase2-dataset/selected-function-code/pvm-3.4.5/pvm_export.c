@@ -1,3 +1,4 @@
+int
 pvm_export(name)
 	char *name;
 {

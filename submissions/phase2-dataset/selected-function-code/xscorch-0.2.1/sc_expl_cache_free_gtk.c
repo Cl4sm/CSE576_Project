@@ -1,3 +1,4 @@
+void sc_expl_cache_free_gtk(sc_expl_cache_gtk **cache) {
 /* sc_expl_cache_free_gtk
    Release the cache, and associated data.  */
    

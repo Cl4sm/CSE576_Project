@@ -1,3 +1,4 @@
+int bt_getnode(node *np, btree *bt, unsigned long nnum)
 {
   block *bp = &np->data;
   const byte *ptr;

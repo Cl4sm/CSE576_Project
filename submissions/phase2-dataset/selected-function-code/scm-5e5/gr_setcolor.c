@@ -1,3 +1,4 @@
+SCM     gr_setcolor( c )
 SCM     c;
 {
 int     color;

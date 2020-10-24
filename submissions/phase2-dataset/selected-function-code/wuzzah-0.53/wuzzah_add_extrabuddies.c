@@ -1,3 +1,4 @@
+void wuzzah_add_extrabuddies(const char *line, htable_t *ht){
 	int i=0, len=strlen(line);
 	const char *head=line;
 	char *buf=NULL;

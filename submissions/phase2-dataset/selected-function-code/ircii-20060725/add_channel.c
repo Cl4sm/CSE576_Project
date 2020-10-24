@@ -1,3 +1,4 @@
+void
 add_channel(u_char *channel, u_char *key, int server, int connected,
 	    ChannelList *copy)
 {

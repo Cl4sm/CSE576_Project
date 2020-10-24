@@ -1,3 +1,4 @@
+static int
 snprint_mp_no_path_retry (char * buff, int len, void * data)
 {
 	struct mpentry * mpe = (struct mpentry *)data;

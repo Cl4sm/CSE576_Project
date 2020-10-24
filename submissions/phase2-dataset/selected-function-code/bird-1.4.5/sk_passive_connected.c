@@ -1,3 +1,4 @@
+static int
 sk_passive_connected(sock *s, int type)
 {
   sockaddr loc_sa, rem_sa;

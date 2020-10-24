@@ -1,3 +1,4 @@
+SCM     gr_draw( S )
 SCM     S;
 {
 float   xf, yf;

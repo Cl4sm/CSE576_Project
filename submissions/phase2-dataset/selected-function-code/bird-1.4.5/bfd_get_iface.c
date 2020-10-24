@@ -1,3 +1,4 @@
+static struct bfd_iface *
 bfd_get_iface(struct bfd_proto *p, ip_addr local, struct iface *iface)
 {
   struct bfd_iface *ifa;

@@ -1,3 +1,4 @@
+void init_types()
 {
   sizet j = num_protects;
   while(j) sys_protects[--j] = UNDEFINED;

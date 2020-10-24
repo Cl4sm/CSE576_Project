@@ -1,3 +1,4 @@
+uint32_t
 get_file_version(struct dbFILE *f)
 {
   uint32_t version = 0;

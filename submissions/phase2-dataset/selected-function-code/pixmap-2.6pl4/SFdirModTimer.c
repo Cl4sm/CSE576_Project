@@ -1,3 +1,4 @@
+void
 SFdirModTimer()
 {
 	static int	n = -1;

@@ -1,3 +1,4 @@
+void CopyAndShadeArea( Drawable src, Pixmap trg,
                        int x, int y, int w, int h,
 		       int trg_x, int trg_y,
 		       GC gc, ShadingInfo* shading )

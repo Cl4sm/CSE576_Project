@@ -1,3 +1,4 @@
+static void
 ospf_area_remove(struct ospf_area *oa)
 {
   struct proto *p = &oa->po->proto;

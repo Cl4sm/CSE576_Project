@@ -1,3 +1,4 @@
+  static int
 regex_store(long slot, long begin, long end)
   /* The text between the positions `begin' (incl.) and `end' (excl.) is
    * stored in slot `slot'.  (Actually only the `begin' and `end' positions

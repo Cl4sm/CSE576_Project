@@ -1,3 +1,4 @@
+void sc_ai_controller_setup_gtk(sc_window_gtk *w) {
 
    sc_ai_controller *aic = w->c->aicontrol;
    sc_ai_controller_setup_data_gtk setup;

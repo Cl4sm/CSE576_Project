@@ -1,3 +1,4 @@
+int uevent_listen(struct udev *udev)
 {
 	int err;
 	struct udev_monitor *monitor = NULL;

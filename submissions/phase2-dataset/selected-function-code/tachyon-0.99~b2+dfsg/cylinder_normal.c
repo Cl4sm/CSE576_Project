@@ -1,3 +1,4 @@
+static void cylinder_normal(const cylinder * cyl, const vector * pnt, const ray * incident, vector * N) {
   vector a, b;
   flt t, invlen, invlen2;
 

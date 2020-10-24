@@ -1,3 +1,4 @@
+SCM lregexec(prog, str)
      SCM prog, str;
 {
   ALLOCA_PROTECT;

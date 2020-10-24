@@ -1,3 +1,4 @@
+int PWReadFile(Widget w, String filename)
 #else
 int PWReadFile(w, filename)
     Widget w;

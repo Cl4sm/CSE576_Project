@@ -1,3 +1,4 @@
+void sc_player_setup_gtk(sc_window_gtk *w) {
 
    char help1[SC_GTK_STRING_BUFFER];
    char help2[SC_GTK_STRING_BUFFER];

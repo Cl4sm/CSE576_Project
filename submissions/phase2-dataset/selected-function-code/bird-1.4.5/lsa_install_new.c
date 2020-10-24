@@ -1,3 +1,4 @@
+struct top_hash_entry *
 lsa_install_new(struct proto_ospf *po, struct ospf_lsa_header *lsa, u32 domain, void *body)
 {
   /* LSA can be temporarrily, but body must be mb_allocated. */

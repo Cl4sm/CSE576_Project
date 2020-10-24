@@ -1,3 +1,4 @@
+void 
 XPutStringImage(Context, x, y, s, l, mode)
 Sundata *Context;
 int x, y;

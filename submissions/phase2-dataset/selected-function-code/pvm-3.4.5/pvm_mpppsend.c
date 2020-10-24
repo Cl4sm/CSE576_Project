@@ -1,3 +1,4 @@
+int 
 pvm_mpppsend(cp, len, tid, tag)
 char *cp;
 int len;

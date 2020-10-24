@@ -1,3 +1,4 @@
+void
 mpath_print_transport_id(struct prin_fulldescr *fdesc)
 {
 	switch (fdesc->trnptid.protocol_id) {

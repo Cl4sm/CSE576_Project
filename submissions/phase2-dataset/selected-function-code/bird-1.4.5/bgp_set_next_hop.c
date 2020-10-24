@@ -1,3 +1,4 @@
+static inline int
 bgp_set_next_hop(struct bgp_proto *p, rta *a)
 {
   struct eattr *nh = ea_find(a->eattrs, EA_CODE(EAP_BGP, BA_NEXT_HOP));

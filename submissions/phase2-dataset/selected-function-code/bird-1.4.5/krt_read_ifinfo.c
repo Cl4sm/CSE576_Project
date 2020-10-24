@@ -1,3 +1,4 @@
+static void
 krt_read_ifinfo(struct ks_msg *msg, int scan)
 {
   struct if_msghdr *ifm = (struct if_msghdr *)&msg->rtm;

@@ -1,3 +1,4 @@
+void AlbumArtUpdateImage(LIBMTP_album_t* selectedAlbum) {
     LIBMTP_filesampledata_t *imagedata = NULL;
     GdkPixbufLoader *BufferLoader = NULL;
     GdkPixbuf *gdk_image = NULL;

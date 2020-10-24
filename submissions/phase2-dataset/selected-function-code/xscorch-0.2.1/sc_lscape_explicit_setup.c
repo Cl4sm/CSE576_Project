@@ -1,3 +1,4 @@
+void sc_lscape_explicit_setup(int w, int h, double b, sc_lscape_generator g) {
 /* sc_lscape_explicit_setup
    Performs all the stuff that needs to be done before generating a
    new landscape. */

@@ -1,3 +1,4 @@
+bool sc_player_use_contact_trigger(const sc_config *c, sc_player *p) {
 /* sc_player_use_contact_trigger
    Try to use a contact trigger.  If successful, return true. */
 

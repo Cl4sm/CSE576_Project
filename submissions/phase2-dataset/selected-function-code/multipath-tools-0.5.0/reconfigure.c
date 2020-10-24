@@ -1,3 +1,4 @@
+int
 reconfigure (struct vectors * vecs)
 {
 	struct config * old = conf;

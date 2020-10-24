@@ -1,3 +1,4 @@
+void
 process_xterm_seq(void)
 {
     unsigned char   ch, string[STRING_MAX];

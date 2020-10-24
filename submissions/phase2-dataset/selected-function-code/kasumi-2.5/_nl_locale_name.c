@@ -1,3 +1,4 @@
+const char *
 _nl_locale_name (category, categoryname)
      int category;
      const char *categoryname;

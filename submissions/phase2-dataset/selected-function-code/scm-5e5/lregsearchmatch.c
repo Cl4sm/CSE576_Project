@@ -1,3 +1,4 @@
+SCM lregsearchmatch(prog, str, args, search, vector)
      SCM prog, str, args;
      int vector, search;
 {

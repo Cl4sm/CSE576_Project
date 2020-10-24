@@ -1,3 +1,4 @@
+void
 draw_Arrows(int name, int state)
 {
 #ifdef MENUBAR

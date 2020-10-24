@@ -1,3 +1,4 @@
+bool sc_game_expl_queue_do_runnable(sc_config *c, sc_game *g, sc_explosion *queue, sc_game_run_fn action) {
 /* sc_game_expl_queue_do_runnable
    For each item in the queue whose timestamp is at most the current game
    time, invoke the procedure given exactly once.  Action may remove e

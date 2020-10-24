@@ -1,3 +1,4 @@
+void addFilesinFolder(gchar* foldername) {
     // foldername is the name of the folder as the absolute path with leading /
     // We save the currentFolderID, create a new folder on the device,
     // and set currentFolderID to the new folders ID.

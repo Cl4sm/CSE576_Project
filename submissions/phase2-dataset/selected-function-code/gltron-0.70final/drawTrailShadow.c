@@ -1,3 +1,4 @@
+void drawTrailShadow(Player* p, PlayerVisual *pV) {
   /* states */
 
   if(gSettingsCache.use_stencil) {

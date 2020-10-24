@@ -1,3 +1,4 @@
+bool sc_net_client_send_shields(const sc_config *c, sc_client *cli, int playerid) {
 /* sc_net_client_send_shields
    Let the server know that we are activating our shields. This packet
    may be directly relayed to other clients. Returns true if the packet

@@ -1,3 +1,4 @@
+static bool _sc_state_run_explosion_nosimult(sc_config *c, sc_game *g) {
 
    /* Check ``done'' queue */
    if(g->expl_done != NULL) return(sc_game_expl_queue_run_first(c, g, g->expl_done, _sc_state_run_land_fall));

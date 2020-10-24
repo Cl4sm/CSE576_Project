@@ -1,3 +1,4 @@
+void
 sendto_wallops_flags(unsigned int flags, struct Client *source_p,
                      const char *pattern, ...)
 {

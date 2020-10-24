@@ -1,3 +1,4 @@
+int
 valid_wild_card(struct Client *source_p, int warn, int count, ...)
 {
   unsigned char tmpch = '\0';

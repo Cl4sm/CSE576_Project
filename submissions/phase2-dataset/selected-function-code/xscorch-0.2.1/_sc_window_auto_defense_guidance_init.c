@@ -1,3 +1,4 @@
+void _sc_window_auto_defense_guidance_init(sc_auto_def_gtk *adg) {
 /* _sc_window_auto_defense_guidance_init
    Draw up the console pane for Guidance System selection.
    There is allocation here so don't call it multiple times. */

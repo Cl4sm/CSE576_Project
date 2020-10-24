@@ -1,3 +1,4 @@
+int
 pvm_setminfo(mid, info)
 	int mid;
 	struct pvmminfo *info;

@@ -1,3 +1,4 @@
+struct process* find_create_process(unsigned int pid)
 {
 	GList *entry;
 	struct process *proc;

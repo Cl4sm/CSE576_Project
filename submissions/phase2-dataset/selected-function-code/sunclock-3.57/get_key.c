@@ -1,3 +1,4 @@
+int get_key()
 {
 #ifdef EMACS
     static  char k1[]="ABCDFH256"; /* up,dn,rt,le,ins,pgup,pgdn */

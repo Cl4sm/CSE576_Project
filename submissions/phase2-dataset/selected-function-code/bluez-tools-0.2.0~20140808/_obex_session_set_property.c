@@ -1,3 +1,4 @@
+static void _obex_session_set_property(GObject *object, guint property_id, const GValue *value, GParamSpec *pspec)
 {
 	ObexSession *self = OBEX_SESSION(object);
 	GError *error = NULL;

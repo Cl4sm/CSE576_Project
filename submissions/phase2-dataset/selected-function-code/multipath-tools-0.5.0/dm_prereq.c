@@ -1,3 +1,4 @@
+extern int
 dm_prereq (char * str, int x, int y, int z)
 {
 	int r = 1;

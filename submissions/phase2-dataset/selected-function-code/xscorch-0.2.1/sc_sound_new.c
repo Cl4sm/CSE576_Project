@@ -1,3 +1,4 @@
+sc_sound *sc_sound_new(int enable, int hqmixer) {
 
    sc_sound *s;
 

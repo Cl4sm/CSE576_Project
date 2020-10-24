@@ -1,3 +1,4 @@
+int
 netinput()
 {
 	struct sockaddr_in osad;		/* sender's ip addr */

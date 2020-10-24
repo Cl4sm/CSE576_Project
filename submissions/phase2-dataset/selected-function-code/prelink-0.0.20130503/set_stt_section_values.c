@@ -1,3 +1,4 @@
+static int
 set_stt_section_values (DSO *dso, int n)
 {
   Elf_Data *data;

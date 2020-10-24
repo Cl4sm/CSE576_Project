@@ -1,3 +1,4 @@
+sc_player **sc_player_loser_order(sc_config *c, sc_player **playerlist) {
 /* sc_player_loser_order */
 
    sc_player *tmp;

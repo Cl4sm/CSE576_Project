@@ -1,3 +1,4 @@
+static void
 clear_out_old_conf(void)
 {
   dlink_node *ptr = NULL, *next_ptr = NULL;

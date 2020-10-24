@@ -1,3 +1,4 @@
+static inline sc_trajectory_result _sc_traj_pass_wall_concrete(const sc_config *c,
                                                                const sc_trajectory *tr) {
 /* sc_traj_pass_wall_concrete
    Boundary case for a good ol' solid concrete box.  */

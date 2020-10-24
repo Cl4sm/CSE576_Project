@@ -1,3 +1,4 @@
+int DoArticle (news_path, artnum, np, cp)
 char *news_path;
 int artnum;
 struct nrc_ent *np;

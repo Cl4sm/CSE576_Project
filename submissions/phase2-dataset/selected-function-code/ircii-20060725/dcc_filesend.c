@@ -1,3 +1,4 @@
+static	void
 dcc_filesend(args)
 	u_char	*args;
 {

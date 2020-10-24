@@ -1,3 +1,4 @@
+void
 load_xline_database(void)
 {
   uint32_t i = 0;

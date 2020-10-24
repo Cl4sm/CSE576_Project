@@ -1,3 +1,4 @@
+double
 dayLength(gtime, lat)
 time_t  gtime;
 double  lat;

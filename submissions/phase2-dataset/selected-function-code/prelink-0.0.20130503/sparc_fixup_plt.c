@@ -1,3 +1,4 @@
+static void
 sparc_fixup_plt (DSO *dso, GElf_Rela *rela, GElf_Addr value)
 {
   Elf32_Sword disp = value - rela->r_offset;

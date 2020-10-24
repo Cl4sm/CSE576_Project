@@ -1,3 +1,4 @@
+void
 try_connections(void *unused)
 {
   dlink_node *ptr = NULL;

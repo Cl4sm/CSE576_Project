@@ -1,3 +1,4 @@
+int
 pvmshmkey(pid)
 	int pid;
 {

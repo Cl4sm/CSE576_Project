@@ -1,3 +1,4 @@
+void
 menuitem_free(menu_t * menu, menuitem_t * item)
 {
 #ifdef MENUBAR

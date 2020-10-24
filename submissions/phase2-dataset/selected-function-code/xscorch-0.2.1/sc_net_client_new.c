@@ -1,3 +1,4 @@
+sc_client *sc_net_client_new(const char *name, const char *hostname, int port) {
 
    char versionstr[SC_NET_BUFFER_SIZE];  /* version info */
    sc_packet packet;    /* Transmitted data packet */

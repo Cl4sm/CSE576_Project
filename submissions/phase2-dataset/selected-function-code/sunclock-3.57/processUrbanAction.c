@@ -1,3 +1,4 @@
+void
 processUrbanAction(Context, x, y, button, evtype)
 Sundata * Context;
 int x, y, button, evtype;

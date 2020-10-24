@@ -1,3 +1,4 @@
+void
 add_user_to_channel(struct Channel *chptr, struct Client *who,
                     unsigned int flags, int flood_ctrl)
 {

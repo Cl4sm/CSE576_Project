@@ -1,3 +1,4 @@
+struct adata *
 int_set_del(struct linpool *pool, struct adata *list, u32 val)
 {
   if (!int_set_contains(list, val))

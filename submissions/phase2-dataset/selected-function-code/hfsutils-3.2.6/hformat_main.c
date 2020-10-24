@@ -1,3 +1,4 @@
+int hformat_main(int argc, char *argv[])
 {
   const char *vname;
   char *path = 0;

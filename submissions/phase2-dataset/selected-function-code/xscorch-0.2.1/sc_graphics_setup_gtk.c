@@ -1,3 +1,4 @@
+void sc_graphics_setup_gtk(sc_window_gtk *w) {
 
    sc_config *c = w->c;
    sc_graphics_setup_data_gtk setup;

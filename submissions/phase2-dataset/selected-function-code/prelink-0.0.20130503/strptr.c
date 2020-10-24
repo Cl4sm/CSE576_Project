@@ -1,3 +1,4 @@
+const char *
 strptr (DSO *dso, int sec, off_t offset)
 {
   Elf_Scn *scn;

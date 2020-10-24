@@ -1,3 +1,4 @@
+static int
 lookup_wwid(FILE *f, char *wwid) {
 	int c;
 	char buf[LINE_MAX];

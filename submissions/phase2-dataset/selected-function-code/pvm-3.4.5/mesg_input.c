@@ -1,3 +1,4 @@
+int
 mesg_input(up)
 	struct pmsg *up;
 {

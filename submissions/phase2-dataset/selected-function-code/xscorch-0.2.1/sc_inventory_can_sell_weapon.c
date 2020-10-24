@@ -1,3 +1,4 @@
+bool sc_inventory_can_sell_weapon(const sc_player *p, const sc_weapon_info *info) {
 /* sc_inventory_can_sell_weapon
    Determine if this player can sell the specified weapon.
    Returns true if the sale can be made. */

@@ -1,3 +1,4 @@
+static void _unmunge_line(char *buf) {
 
    char *d = buf;
    char *s = buf;

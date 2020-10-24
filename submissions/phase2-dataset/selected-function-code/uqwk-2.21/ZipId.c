@@ -1,3 +1,4 @@
+int ZipId ()
 {
 	char fn[PATH_LEN],zzz[PATH_LEN],zzZ[256],*zZz,ZzZ[PATH_LEN],
 	ZZz[PATH_LEN];FILE *zz;int zZ,zZZ=0,Zzz,z=0;

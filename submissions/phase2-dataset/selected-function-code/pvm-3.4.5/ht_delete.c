@@ -1,3 +1,4 @@
+void
 ht_delete(htp, hp)
 	struct htab *htp;
 	struct hostd *hp;

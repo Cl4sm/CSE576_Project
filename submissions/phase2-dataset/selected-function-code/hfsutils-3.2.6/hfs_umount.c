@@ -1,3 +1,4 @@
+int hfs_umount(hfsvol *vol)
 {
   int result = 0;
 

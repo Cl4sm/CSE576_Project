@@ -1,3 +1,4 @@
+  void
 tio_set_cursor(mode)
   /* Set the visibility of the cursor.
    * `mode == 0':  invisible.

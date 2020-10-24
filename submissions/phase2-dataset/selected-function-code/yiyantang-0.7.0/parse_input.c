@@ -1,3 +1,4 @@
+void parse_input(char* ibuf, int* ret, yytconfig *curconfig, keystate *inputstate)
 {
 	int i;
 

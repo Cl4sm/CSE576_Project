@@ -1,3 +1,4 @@
+void sc_options_setup_gtk(sc_window_gtk *w) {
 
    sc_config_options *co = &w->c->options;
    sc_options_setup_data_gtk setup;

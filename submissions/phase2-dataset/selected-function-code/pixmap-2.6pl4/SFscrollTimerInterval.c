@@ -1,3 +1,4 @@
+static unsigned long
 SFscrollTimerInterval()
 {
 	static int	maxVal = 200;

@@ -1,3 +1,4 @@
+GdkColor *sc_console_get_color(ScConsole *cons, ScConsoleColorId rqst) {
 /* sc_console_get_color
    Returns the GdkColor for the specified console attribute.  */
 

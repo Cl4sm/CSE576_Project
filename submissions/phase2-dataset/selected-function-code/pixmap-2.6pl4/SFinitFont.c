@@ -1,3 +1,4 @@
+SFinitFont()
 {
 	TextData	*data;
 

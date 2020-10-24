@@ -1,3 +1,4 @@
+static sc_trajectory_result _sc_window_draw_arc_gtk(sc_config *c, sc_trajectory *tr, void *data) {
 /* sc_window_draw_arc_gtk */
 
    sc_window_gtk *w = (sc_window_gtk *)data;

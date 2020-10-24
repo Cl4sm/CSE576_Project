@@ -1,3 +1,4 @@
+int sc_land_height(const sc_land *l, int x, int y0) {
 /* sc_land_height
    This function returns the height of the land in virtual column x.  The
    height of the lowest non-land pixel will be returned by this function.

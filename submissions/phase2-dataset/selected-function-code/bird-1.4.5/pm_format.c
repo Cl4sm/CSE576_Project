@@ -1,3 +1,4 @@
+static void
 pm_format(struct f_path_mask *p, buffer *buf)
 {
   buffer_puts(buf, "[= ");

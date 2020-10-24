@@ -1,3 +1,4 @@
+char *mpeg_get_name (const char *base, unsigned sid)
 {
 	unsigned n;
 	unsigned dig;

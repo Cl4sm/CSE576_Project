@@ -1,3 +1,4 @@
+int
 pvm_siblings(tidsp)
 	int **tidsp;
 {

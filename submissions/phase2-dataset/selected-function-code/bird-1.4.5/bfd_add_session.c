@@ -1,3 +1,4 @@
+static struct bfd_session *
 bfd_add_session(struct bfd_proto *p, ip_addr addr, ip_addr local, struct iface *iface)
 {
   birdloop_enter(p->loop);

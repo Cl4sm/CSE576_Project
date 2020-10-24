@@ -1,3 +1,4 @@
+int bh_read(void *buf, register int len)
 {
   register unsigned char *data = buf;
   const unsigned char *ptr = data;

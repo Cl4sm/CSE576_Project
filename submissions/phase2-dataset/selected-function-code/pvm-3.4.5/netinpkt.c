@@ -1,3 +1,4 @@
+netinpkt(hp, pp)
 	struct hostd *hp;
 	struct pkt *pp;
 {

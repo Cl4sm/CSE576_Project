@@ -1,3 +1,4 @@
+void
 setProtocols(Context, num)
 struct Sundata * Context;
 int				num;

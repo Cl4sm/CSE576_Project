@@ -1,3 +1,4 @@
+int v_dirty(hfsvol *vol)
 {
   if (vol->mdb.drAtrb & HFS_ATRB_UMOUNTED)
     {

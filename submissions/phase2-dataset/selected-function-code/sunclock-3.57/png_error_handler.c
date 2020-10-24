@@ -1,3 +1,4 @@
+static void
 png_error_handler (png_structp png_ptr, png_const_charp msg)
 {
     jmpbuf_wrapper  *jmpbuf_ptr;

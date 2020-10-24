@@ -1,3 +1,4 @@
+void
 command_completion(key, ptr)
 	u_int	key;
 	u_char	*ptr;

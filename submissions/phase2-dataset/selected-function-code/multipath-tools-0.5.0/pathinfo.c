@@ -1,3 +1,4 @@
+extern int
 pathinfo (struct path *pp, vector hwtable, int mask)
 {
 	int path_state;

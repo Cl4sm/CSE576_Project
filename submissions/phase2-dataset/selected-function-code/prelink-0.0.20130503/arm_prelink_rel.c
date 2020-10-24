@@ -1,3 +1,4 @@
+static int
 arm_prelink_rel (struct prelink_info *info, GElf_Rel *rel, GElf_Addr reladdr)
 {
   DSO *dso;

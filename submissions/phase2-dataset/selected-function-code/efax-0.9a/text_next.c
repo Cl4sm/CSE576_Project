@@ -1,3 +1,4 @@
+int text_next ( IFILE *f )
 {
   int err = 0, i, nc ;
   char buf [ MAXLINELEN ] ;

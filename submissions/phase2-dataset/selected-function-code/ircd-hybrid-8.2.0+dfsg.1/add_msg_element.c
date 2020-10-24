@@ -1,3 +1,4 @@
+static void
 add_msg_element(struct MessageTree *mtree_p, struct Message *msg_p,
                 const char *cmd)
 {

@@ -1,3 +1,4 @@
+void
 originate_ext_lsa(struct ospf_area *oa, struct fib_node *fn, int src,
 		  u32 metric, ip_addr fwaddr, u32 tag, int pbit)
 {

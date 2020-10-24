@@ -1,3 +1,4 @@
+int
 post_receive(imsg, src, tag, mxsize, headroom, ptype, appid, llmsg)
 MSG_INFO_PTR imsg;
 int src, tag, mxsize, headroom;

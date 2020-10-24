@@ -1,3 +1,4 @@
+static
 int rleflush(void)
 {
   unsigned char rle[] = { 0x90, 0x00, 0x90, 0x00 };

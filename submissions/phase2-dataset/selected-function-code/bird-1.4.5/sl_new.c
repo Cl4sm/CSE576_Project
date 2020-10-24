@@ -1,3 +1,4 @@
+slab *
 sl_new(pool *p, unsigned size)
 {
   slab *s = ralloc(p, &sl_class);

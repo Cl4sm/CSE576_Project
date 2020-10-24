@@ -1,3 +1,4 @@
+linked_list* merge_paths(linked_list* elist, linked_list* vlist)
 {
    list_node* enode;
    list_node* vnode;

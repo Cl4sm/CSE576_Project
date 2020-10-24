@@ -1,3 +1,4 @@
+STATIC
 unsigned long int
 internal_function
 plural_eval (pexp, n)

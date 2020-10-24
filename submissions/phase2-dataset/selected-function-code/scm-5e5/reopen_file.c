@@ -1,3 +1,4 @@
+SCM reopen_file(filename, modes, port)
      SCM filename, modes, port;
 {
   FILE *f;

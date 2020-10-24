@@ -1,3 +1,4 @@
+bool sc_expl_annihilate_clear(sc_config *c, sc_explosion *e) {
 /* sc_expl_annihilate_clear
    Clears someone else's explosions.  If this function returns "true", then
    you need to call annihilate_clear_continue to continue processing the

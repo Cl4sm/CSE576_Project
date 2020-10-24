@@ -1,3 +1,4 @@
+read_header (file, hdr, auxhdr)
      int file;
      struct header *hdr;
      struct som_exec_auxhdr *auxhdr;

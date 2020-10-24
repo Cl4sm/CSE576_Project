@@ -1,3 +1,4 @@
+void free_checker (struct checker * c)
 {
 	if (!c)
 		return;

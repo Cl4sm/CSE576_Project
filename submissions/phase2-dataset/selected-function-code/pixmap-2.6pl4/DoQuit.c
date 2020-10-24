@@ -1,3 +1,4 @@
+void DoQuit()
 {
   if (PWQueryChanged(pixmap_widget)) {
     PWGetFilename(pixmap_widget, &filename);

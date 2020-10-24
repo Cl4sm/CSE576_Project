@@ -1,3 +1,4 @@
+int prio_path_weight(struct path *pp, char *prio_args)
 {
 	char path[FILE_NAME_SIZE];
 	char *arg;

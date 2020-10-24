@@ -1,3 +1,4 @@
+SCM m_let(xorig, env, ctxt)
      SCM xorig, env, ctxt;
 {
   SCM proc, body, vars, inits, x = CDR(xorig);

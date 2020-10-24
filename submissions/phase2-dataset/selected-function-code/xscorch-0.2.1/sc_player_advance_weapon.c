@@ -1,3 +1,4 @@
+void sc_player_advance_weapon(const sc_config *c, sc_player *p, int delta) {
 /* sc_player_advance_weapon
    Jump <delta> weapons forward (negative: jump back by so many weapons). */
 

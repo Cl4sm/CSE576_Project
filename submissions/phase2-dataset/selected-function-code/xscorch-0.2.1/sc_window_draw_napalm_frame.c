@@ -1,3 +1,4 @@
+void sc_window_draw_napalm_frame(sc_window *w_, const int *xlist,
                                  const int *ylist, int size) {
 /* sc_window_draw_napalm_frame */
 

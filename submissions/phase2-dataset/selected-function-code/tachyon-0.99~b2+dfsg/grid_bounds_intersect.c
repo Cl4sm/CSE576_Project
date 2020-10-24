@@ -1,3 +1,4 @@
+static int grid_bounds_intersect(const grid * g, const ray * ry, flt *hitnear, flt *hitfar) {
   flt a, tx1, tx2, ty1, ty2, tz1, tz2;
   flt tnear, tfar;
 

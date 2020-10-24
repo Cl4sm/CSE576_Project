@@ -1,3 +1,4 @@
+int
 show_paths (char ** r, int * len, struct vectors * vecs, char * style)
 {
 	int i;

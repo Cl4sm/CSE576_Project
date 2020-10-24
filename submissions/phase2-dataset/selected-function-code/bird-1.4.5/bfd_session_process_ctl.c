@@ -1,3 +1,4 @@
+void
 bfd_session_process_ctl(struct bfd_session *s, u8 flags, u32 old_tx_int, u32 old_rx_int)
 {
   if (s->poll_active && (flags & BFD_FLAG_FINAL))

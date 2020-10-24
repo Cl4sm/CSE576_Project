@@ -1,3 +1,4 @@
+int
 pvm_irecvshm(sseg, buf, len, src, tag, info)
 struct segdesc *sseg;
 char *buf;

@@ -1,3 +1,4 @@
+void chg_case(int upper)
 {
 	char *s;
 	int i, j, change=0;

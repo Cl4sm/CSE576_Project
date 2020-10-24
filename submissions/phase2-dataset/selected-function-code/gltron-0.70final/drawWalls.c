@@ -1,3 +1,4 @@
+void drawWalls(void) {
 #undef WALL_H
 #define WALL_H 48
   float t;

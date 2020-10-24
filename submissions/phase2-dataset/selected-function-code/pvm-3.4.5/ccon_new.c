@@ -1,3 +1,4 @@
+struct ccon *
 ccon_new(tp)
 	struct task *tp;
 {

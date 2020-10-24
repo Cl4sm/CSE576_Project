@@ -1,3 +1,4 @@
+int
 i_same(struct f_inst *f1, struct f_inst *f2)
 {
   if ((!!f1) != (!!f2))

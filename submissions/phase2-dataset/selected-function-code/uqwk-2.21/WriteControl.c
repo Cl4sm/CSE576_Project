@@ -1,3 +1,4 @@
+int WriteControl()
 /*
  *  Create the CONTROL.DAT file (or AREAS if SLNP)
  */

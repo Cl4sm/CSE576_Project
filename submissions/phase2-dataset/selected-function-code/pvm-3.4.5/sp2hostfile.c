@@ -1,3 +1,4 @@
+char *
 sp2hostfile(first, count)
 	int first;			/* first node in the set */
 	int count;			/* number of nodes requested */

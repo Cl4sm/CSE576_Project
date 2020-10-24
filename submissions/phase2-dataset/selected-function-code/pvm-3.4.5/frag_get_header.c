@@ -1,3 +1,4 @@
+static struct frag *
 frag_get_header()
 {
 	struct frag *fp;

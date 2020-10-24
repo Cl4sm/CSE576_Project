@@ -1,3 +1,4 @@
+int
 pvm_upkbyte(cp, cnt, std)
 	char *cp;
 	int cnt;

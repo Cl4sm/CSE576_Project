@@ -1,3 +1,4 @@
+bool sc_ai_trajectory_scan(const sc_config *c, sc_player *p, const sc_player *victim) {
 /* sc_ai_trajectory_scan
    Scan for an optimal trajectory to the specified victim.  Returns true if
    one was found, false otherwise.  */

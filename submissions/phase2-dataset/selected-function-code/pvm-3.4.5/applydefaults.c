@@ -1,3 +1,4 @@
+int
 applydefaults(hp, defhp)
 	struct hostd *hp;		/* hostd to modify */
 	struct hostd *defhp;	/* default settings */

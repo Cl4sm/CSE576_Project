@@ -1,3 +1,4 @@
+int m_zeropm(hfsvol *vol, unsigned int maxparts)
 {
   Partition map;
   unsigned int i;

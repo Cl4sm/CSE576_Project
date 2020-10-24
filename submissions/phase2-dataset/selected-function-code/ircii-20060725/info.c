@@ -1,3 +1,4 @@
+static	void
 info(command, args, subargs)
 	u_char	*command,
 		*args,

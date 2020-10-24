@@ -1,3 +1,4 @@
+int
 pvm_kill(tid)
 	int tid;
 {

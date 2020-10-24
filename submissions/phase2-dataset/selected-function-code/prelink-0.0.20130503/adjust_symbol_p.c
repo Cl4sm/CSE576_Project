@@ -1,3 +1,4 @@
+int
 adjust_symbol_p (DSO *dso, GElf_Sym *sym)
 {
   if (sym->st_shndx == SHN_ABS

@@ -1,3 +1,4 @@
+struct task *
 task_new(tid)
 	int tid;
 {

@@ -1,3 +1,4 @@
+int hp_sw_prio(const char *dev, int fd)
 {
         unsigned char turCmdBlk[TUR_CMD_LEN] = { 0x00, 0, 0, 0, 0, 0 };
 	unsigned char sb[128];

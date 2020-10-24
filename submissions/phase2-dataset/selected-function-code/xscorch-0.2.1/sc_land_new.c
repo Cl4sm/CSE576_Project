@@ -1,3 +1,4 @@
+sc_land *sc_land_new(int width, int height, int flags) {
 /* sc_land_new
    Setup a new landscape.  This function allocates a new land structure and
    initialises it with the flags and size given.  This function does not

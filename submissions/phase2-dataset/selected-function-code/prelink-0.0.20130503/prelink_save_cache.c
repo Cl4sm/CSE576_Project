@@ -1,3 +1,4 @@
+int
 prelink_save_cache (int do_warn)
 {
   struct prelink_cache cache;

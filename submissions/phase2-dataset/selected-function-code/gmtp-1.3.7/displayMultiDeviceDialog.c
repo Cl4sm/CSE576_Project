@@ -1,3 +1,4 @@
+gint displayMultiDeviceDialog(void) {
     GtkWidget *dialog, *hbox, *label, *textbox;
     gchar *tmp_string = NULL;
     gint dialog_selection = 0;

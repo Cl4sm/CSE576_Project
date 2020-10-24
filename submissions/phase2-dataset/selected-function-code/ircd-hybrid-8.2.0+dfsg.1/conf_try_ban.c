@@ -1,3 +1,4 @@
+void
 conf_try_ban(struct Client *client_p, struct MaskItem *conf)
 {
   const char *user_reason = NULL;  /* What is sent to user */

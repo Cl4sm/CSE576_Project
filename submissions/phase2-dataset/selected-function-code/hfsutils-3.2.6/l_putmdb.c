@@ -1,3 +1,4 @@
+int l_putmdb(hfsvol *vol, const MDB *mdb, int backup)
 {
   block b;
   byte *ptr = b;

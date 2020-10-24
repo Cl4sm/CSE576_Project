@@ -1,3 +1,4 @@
+static void
 dcc_chat(args)
 	u_char	*args;
 {

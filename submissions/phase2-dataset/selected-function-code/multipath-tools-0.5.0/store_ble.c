@@ -1,3 +1,4 @@
+extern int
 store_ble (vector blist, char * str, int origin)
 {
 	struct blentry * ble;

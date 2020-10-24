@@ -1,3 +1,4 @@
+inline void sc_game_reinstate(sc_game *g, unsigned long delay) {
 
    #if SC_STATE_TIMER_DEBUG
       struct timeval curtime;

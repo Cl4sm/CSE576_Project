@@ -1,3 +1,4 @@
+GtkTreeViewColumn *setupFolderList(GtkTreeView *treeviewFolders) {
     GtkCellRenderer *renderer;
     GtkTreeViewColumn *column;
     GtkTreeViewColumn *folderColumnInt;

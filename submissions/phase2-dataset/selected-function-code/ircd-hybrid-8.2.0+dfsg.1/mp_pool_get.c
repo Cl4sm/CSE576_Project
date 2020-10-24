@@ -1,3 +1,4 @@
+void *
 mp_pool_get(mp_pool_t *pool)
 {
   mp_chunk_t *chunk;

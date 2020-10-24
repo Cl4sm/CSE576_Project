@@ -1,3 +1,4 @@
+int
 pvm_addhosts(names, count, svp)
 	char **names;	/* host name vector */
 	int count;		/* length of names */

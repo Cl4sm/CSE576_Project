@@ -1,3 +1,4 @@
+int
 dm_rename (char * old, char * new)
 {
 	int r = 0;

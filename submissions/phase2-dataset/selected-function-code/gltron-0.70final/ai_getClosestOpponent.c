@@ -1,3 +1,4 @@
+void ai_getClosestOpponent(int player, int* opponent, float *distance) {
 	int i;
 	vec2 v_player;
 	vec2 v_opponent;

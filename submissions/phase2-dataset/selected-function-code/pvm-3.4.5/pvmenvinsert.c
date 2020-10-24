@@ -1,3 +1,4 @@
+int
 pvmenvinsert(anep, s)
 	char ***anep;		/* environment pointer, may change (NOT environ) */
 	char *s;			/* string of form "NAME=Value" */

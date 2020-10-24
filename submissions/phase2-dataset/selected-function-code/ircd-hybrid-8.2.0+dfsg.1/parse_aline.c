@@ -1,3 +1,4 @@
+int
 parse_aline(const char *cmd, struct Client *source_p,
             int parc, char **parv,
             int parse_flags, char **up_p, char **h_p, time_t *tkline_time,

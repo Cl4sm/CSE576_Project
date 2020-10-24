@@ -1,3 +1,4 @@
+static inline void _sc_console_vert_scroll_extents(ScConsole *cons,
                                                    gint *startx, gint *starty,
                                                    gint *width, gint *height,
                                                    gint *arrowh) {

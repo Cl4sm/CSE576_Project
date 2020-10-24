@@ -1,3 +1,4 @@
+void
 plotdata(u, v, s)
 int u, v, s;
 {

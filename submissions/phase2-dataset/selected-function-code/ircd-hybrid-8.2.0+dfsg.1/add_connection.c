@@ -1,3 +1,4 @@
+void
 add_connection(struct Listener *listener, struct irc_ssaddr *irn, int fd)
 {
   struct Client *client_p = make_client(NULL);

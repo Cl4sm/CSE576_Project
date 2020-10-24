@@ -1,3 +1,4 @@
+void
 send_to_server(char *format, ...)
 {
 	static	int	in_send_to_server = 0;

@@ -1,3 +1,4 @@
+gboolean folderListAdd(LIBMTP_folder_t *folders, GtkTreeIter *parent) {
     GtkTreeIter rowIter;
     GdkPixbuf *image = NULL;
 

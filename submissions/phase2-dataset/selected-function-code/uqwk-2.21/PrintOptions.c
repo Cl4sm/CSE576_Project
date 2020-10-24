@@ -1,3 +1,4 @@
+void PrintOptions ()
 {
 	printf ("Version: %s\n", UQWK_VERSION);
 	printf ("Do mail: %s\n", do_mail?"yes":"no");

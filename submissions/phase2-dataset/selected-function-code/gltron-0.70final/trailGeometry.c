@@ -1,3 +1,4 @@
+void trailGeometry(Player *pPlayer, PlayerVisual* pV,
 									 TrailMesh *pMesh,
 									 int *pvOffset, int *piOffset) {
 	Data *pData = pPlayer->data;

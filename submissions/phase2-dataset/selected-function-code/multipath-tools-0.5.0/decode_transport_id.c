@@ -1,3 +1,4 @@
+void
 decode_transport_id(struct prin_fulldescr *fdesc, unsigned char * p, int length)
 {
 	int num, k;

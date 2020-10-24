@@ -1,3 +1,4 @@
+int
 pvm_getcontext()
 {
 	TEV_DECLS

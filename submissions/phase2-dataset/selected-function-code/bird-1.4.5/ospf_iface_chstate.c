@@ -1,3 +1,4 @@
+void
 ospf_iface_chstate(struct ospf_iface *ifa, u8 state)
 {
   struct proto_ospf *po = ifa->oa->po;

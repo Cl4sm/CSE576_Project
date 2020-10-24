@@ -1,3 +1,4 @@
+void
 init_command(char *argv[])
 {
 /*

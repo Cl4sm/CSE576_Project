@@ -1,3 +1,4 @@
+bool _tn_read_select(tn_connection *tnc, struct timeval *timeout) {
 /*
  * tn_read_select
  * Scan the connection buffer to see if data is waiting.

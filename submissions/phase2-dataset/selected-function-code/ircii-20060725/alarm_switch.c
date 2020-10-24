@@ -1,3 +1,4 @@
+static	void
 alarm_switch(flag)
 	int	flag;
 {

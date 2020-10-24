@@ -1,3 +1,4 @@
+void
 ospf_dbdes_send(struct ospf_neighbor *n, int next)
 {
   struct ospf_dbdes_packet *pkt;

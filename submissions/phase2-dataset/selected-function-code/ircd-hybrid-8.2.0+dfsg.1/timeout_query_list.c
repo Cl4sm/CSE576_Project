@@ -1,3 +1,4 @@
+static time_t
 timeout_query_list(void)
 {
   dlink_node *ptr = NULL, *ptr_next = NULL;

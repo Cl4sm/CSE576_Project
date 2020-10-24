@@ -1,3 +1,4 @@
+struct adata *
 ec_set_del(struct linpool *pool, struct adata *list, u64 val)
 {
   if (!ec_set_contains(list, val))

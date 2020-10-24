@@ -1,3 +1,4 @@
+struct prelink_entry *
 prelink_find_entry (const char *filename, const struct stat64 *stp,
 		    int insert)
 {

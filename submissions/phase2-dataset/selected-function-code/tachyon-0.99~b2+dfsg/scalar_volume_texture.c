@@ -1,3 +1,4 @@
+color scalar_volume_texture(const vector * hit, const texture * tx, ray * ry) {
   color col, col2;
   box * bx;
   flt a, tx1, tx2, ty1, ty2, tz1, tz2;

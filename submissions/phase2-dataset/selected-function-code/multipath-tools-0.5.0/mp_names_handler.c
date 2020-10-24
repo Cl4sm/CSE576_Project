@@ -1,3 +1,4 @@
+static int
 mp_names_handler(vector strvec)
 {
 	struct mpentry *mpe = VECTOR_LAST_SLOT(conf->mptable);

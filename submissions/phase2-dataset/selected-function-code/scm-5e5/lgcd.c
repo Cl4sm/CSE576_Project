@@ -1,3 +1,4 @@
+SCM lgcd(x, y)
      SCM x, y;
 {
   register long u, v, k, t;

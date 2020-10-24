@@ -1,3 +1,4 @@
+void computeBBox(Mesh *pMesh) {
   int i, j;
   vec3 vMin, vMax, vSize;
 

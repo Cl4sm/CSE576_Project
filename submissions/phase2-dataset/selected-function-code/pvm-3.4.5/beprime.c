@@ -1,3 +1,4 @@
+beprime()
 {
 	struct htab *htp;
 	struct task *tp;

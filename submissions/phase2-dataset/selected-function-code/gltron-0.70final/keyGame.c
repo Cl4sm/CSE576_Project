@@ -1,3 +1,4 @@
+void keyGame(int state, int k, int x, int y)
 {
   int i;
 

@@ -1,3 +1,4 @@
+static SCM scm_lreadpr(tok_buf, port, flgs)
      SCM tok_buf;
      SCM port;
      int flgs;

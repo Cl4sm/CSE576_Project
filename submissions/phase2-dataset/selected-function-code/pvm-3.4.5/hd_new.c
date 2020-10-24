@@ -1,3 +1,4 @@
+struct hostd *
 hd_new(hh)
 	int hh;		/* index in host table */
 {

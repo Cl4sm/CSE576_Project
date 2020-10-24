@@ -1,3 +1,4 @@
+void
 cli_set_log_echo(cli *c, unsigned int mask, unsigned int size)
 {
   if (c->ring_buf)

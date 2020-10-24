@@ -1,3 +1,4 @@
+int SLNPArticle (art_fd, bytes)
 FILE *art_fd;
 int bytes;
 /*

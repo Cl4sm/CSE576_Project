@@ -1,3 +1,4 @@
+int
 readGIF(path, Context)
 char *path;
 Sundata * Context;

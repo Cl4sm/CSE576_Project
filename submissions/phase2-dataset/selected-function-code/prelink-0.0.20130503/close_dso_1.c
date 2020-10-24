@@ -1,3 +1,4 @@
+static int
 close_dso_1 (DSO *dso)
 {
   if (dso_is_rdwr (dso))

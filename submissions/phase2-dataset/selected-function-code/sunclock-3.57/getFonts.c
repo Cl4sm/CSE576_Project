@@ -1,3 +1,4 @@
+void
 getFonts(Context)
 Sundata * Context;
 {

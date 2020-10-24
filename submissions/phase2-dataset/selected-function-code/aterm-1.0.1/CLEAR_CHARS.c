@@ -1,3 +1,4 @@
+void CLEAR_CHARS(unsigned x, unsigned y, unsigned num)
 {
   unsigned char_w = Width2Pixel(1)-1, line_h = Height2Pixel(1)-1;
   register unsigned hx = (char_w+1)*num ,hy = line_h+1;

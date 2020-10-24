@@ -1,3 +1,4 @@
+SCM scm_intlength(n)
      SCM n;
 {
   register unsigned long c = 0;

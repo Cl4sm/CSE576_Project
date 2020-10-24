@@ -1,3 +1,4 @@
+int
 scr_change_screen(int scrn)
 {
     int             i, offset, tmp;

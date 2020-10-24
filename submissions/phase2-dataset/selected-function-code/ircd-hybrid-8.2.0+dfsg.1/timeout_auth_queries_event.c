@@ -1,3 +1,4 @@
+static void
 timeout_auth_queries_event(void *notused)
 {
   dlink_node *ptr = NULL, *ptr_next = NULL;

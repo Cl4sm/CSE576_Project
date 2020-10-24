@@ -1,3 +1,4 @@
+void inttoms (int i, unsigned char c[4])
 {
 	int m, e;
 

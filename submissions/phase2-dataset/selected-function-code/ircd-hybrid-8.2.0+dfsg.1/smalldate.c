@@ -1,3 +1,4 @@
+const char *
 smalldate(time_t lclock)
 {
   static char buf[MAX_DATE_STRING];

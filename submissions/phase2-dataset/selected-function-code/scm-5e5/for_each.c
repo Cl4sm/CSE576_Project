@@ -1,3 +1,4 @@
+SCM for_each(proc, arg1, args)
      SCM proc, arg1, args;
 {
   SCM heap_ve, auto_ve[5], auto_ave[5];

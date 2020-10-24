@@ -1,3 +1,4 @@
+static
 int hqxchar(void)
 {
   int c;

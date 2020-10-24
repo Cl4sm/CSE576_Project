@@ -1,3 +1,4 @@
+void drawGlow(Camera *pCam, Player *pTarget, PlayerVisual *pV,
 							Visual *d, float dim) {
   float mat[4*4];
   float alpha, dist;

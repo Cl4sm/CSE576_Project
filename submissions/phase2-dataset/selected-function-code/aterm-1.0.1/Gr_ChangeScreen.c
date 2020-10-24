@@ -1,3 +1,4 @@
+void
 Gr_ChangeScreen(void)
 {
 #ifdef RXVT_GRAPHICS

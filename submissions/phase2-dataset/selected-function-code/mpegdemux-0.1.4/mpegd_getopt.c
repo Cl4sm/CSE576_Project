@@ -1,3 +1,4 @@
+int mpegd_getopt (int argc, char **argv, char ***optarg, mpegd_option_t *opt)
 {
 	mpegd_option_t     *ret;
 	static int        atend = 0;

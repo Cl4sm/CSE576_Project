@@ -1,3 +1,4 @@
+static gint _sc_console_button_press(GtkWidget *widget, GdkEventButton *event) {
 /* sc_console_button_press
    Someone clicked the mouse.  Update the cursor/active highlight if
    needed, and check for scrollbar events.  */

@@ -1,3 +1,4 @@
+void
 ospf_rt_reset(struct proto_ospf *po)
 {
   struct ospf_area *oa;

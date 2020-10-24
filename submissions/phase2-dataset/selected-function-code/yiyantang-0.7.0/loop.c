@@ -1,3 +1,4 @@
+void loop (int ptym, int fromcode, int tocode)
 {
 	char ibuf[BUFFSIZE];
 	char *obuf;

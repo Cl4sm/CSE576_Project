@@ -1,3 +1,4 @@
+void
 parse_line(name, org_line, args, hist_flag, append_flag, eat_space)
 	u_char	*name,
 		*org_line,

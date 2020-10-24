@@ -1,3 +1,4 @@
+void
 read_packet(fde_t *fd, void *data)
 {
   struct Client *client_p = data;

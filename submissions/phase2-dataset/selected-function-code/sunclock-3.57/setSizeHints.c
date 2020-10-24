@@ -1,3 +1,4 @@
+void
 setSizeHints(Context, num)
 struct Sundata *                Context;
 int				num;

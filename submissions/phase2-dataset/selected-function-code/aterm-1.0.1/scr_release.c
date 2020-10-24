@@ -1,3 +1,4 @@
+void
 scr_release(void)
 {
     int             i, total_rows;

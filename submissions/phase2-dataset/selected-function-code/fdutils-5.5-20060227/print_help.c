@@ -1,3 +1,4 @@
+void print_help(struct enh_options *eo)
 {
 	int i, wordlength, htlength, col;
 	char *ptr1, *ptr2;

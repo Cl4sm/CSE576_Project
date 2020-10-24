@@ -1,3 +1,4 @@
+gchar* getFullFolderPath(uint32_t folderid) {
 
     gchar* fullfilename = g_strdup("");
     gchar* tmpfilename = NULL;

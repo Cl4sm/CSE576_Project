@@ -1,3 +1,4 @@
+struct Client *
 whowas_get_history(const char *nick, time_t timelimit)
 {
   dlink_node *ptr = NULL;

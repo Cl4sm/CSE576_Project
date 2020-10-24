@@ -1,3 +1,4 @@
+int v_geometry(hfsvol *vol, int pnum)
 {
   Partition map;
   unsigned long bnum = 0;

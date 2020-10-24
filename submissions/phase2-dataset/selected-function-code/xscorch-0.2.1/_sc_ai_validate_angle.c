@@ -1,3 +1,4 @@
+static bool _sc_ai_validate_angle(const sc_config *c, sc_player *p, int angle) {
 /* sc_ai_validate_angle
    Checks to see if there is a line of sight at least SC_AI_VALIDATE_DIST
    pixels away from the AI tank in the specified angle.  This is to prevent

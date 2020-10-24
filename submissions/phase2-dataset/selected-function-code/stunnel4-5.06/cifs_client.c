@@ -1,3 +1,4 @@
+NOEXPORT char *cifs_client(CLI *c, SERVICE_OPTIONS *opt, const PHASE phase) {
     u8 buffer[5];
     u8 request_dummy[4] = {0x81, 0, 0, 0}; /* a zero-length request */
 

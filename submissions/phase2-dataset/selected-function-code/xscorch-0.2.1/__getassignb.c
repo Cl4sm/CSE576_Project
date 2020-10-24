@@ -1,3 +1,4 @@
+static inline bool __getassignb(char *var, char *val, const char *s, sizea lvar, sizea lval) {
 /* internal-Get-Assignment-Countbuffer
    This is a useful function for more than just CGI processing,
    actually. What this will do is it takes the string <s>, which

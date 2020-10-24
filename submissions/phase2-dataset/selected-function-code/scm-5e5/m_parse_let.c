@@ -1,3 +1,4 @@
+static SCM m_parse_let(imm, xorig, x, vars, inits)
      SCM imm, xorig, x, *vars, *inits;
 {
   SCM clause, bdgs, *varloc = vars, *initloc = inits;

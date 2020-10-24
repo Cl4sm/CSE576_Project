@@ -1,3 +1,4 @@
+static void
 query_name(const char *name, int query_class, int type, struct reslist *request)
 {
   unsigned char buf[MAXPACKET];

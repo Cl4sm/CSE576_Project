@@ -1,3 +1,4 @@
+struct Channel *
 hash_find_channel(const char *name)
 {
   unsigned int hashv = strhash(name);

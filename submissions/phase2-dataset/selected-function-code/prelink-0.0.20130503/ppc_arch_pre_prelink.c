@@ -1,3 +1,4 @@
+static int
 ppc_arch_pre_prelink (DSO *dso)
 {
   Elf_Data *data = NULL;

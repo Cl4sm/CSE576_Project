@@ -1,3 +1,4 @@
+int mpegd_parse (mpeg_demux_t *mpeg)
 {
 	unsigned long long ofs;
 

@@ -1,3 +1,4 @@
+static void tri_intersect(const tri * trn, ray * ry) {
   vector tvec, pvec, qvec;
   flt det, inv_det, t, u, v;
 

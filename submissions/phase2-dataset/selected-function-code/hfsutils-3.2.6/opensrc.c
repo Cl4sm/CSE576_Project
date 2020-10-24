@@ -1,3 +1,4 @@
+static
 hfsfile *opensrc(hfsvol *vol, const char *srcname,
 		 const char **dsthint, const char *ext)
 {

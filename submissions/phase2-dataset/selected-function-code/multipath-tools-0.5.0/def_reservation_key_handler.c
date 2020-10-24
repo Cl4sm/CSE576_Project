@@ -1,3 +1,4 @@
+static int
 def_reservation_key_handler(vector strvec)
 {
 	char *buff;

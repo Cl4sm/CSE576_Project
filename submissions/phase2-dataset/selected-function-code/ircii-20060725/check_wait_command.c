@@ -1,3 +1,4 @@
+int
 check_wait_command(nick)
 	u_char 	*nick;
 {

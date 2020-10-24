@@ -1,3 +1,4 @@
+void sc_economy_setup_gtk(sc_window_gtk *w) {
 
    sc_economy_config *ec = w->c->economics;
    sc_economy_setup_data_gtk setup;

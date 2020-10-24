@@ -1,3 +1,4 @@
+static int
 snprint_hwentry (char * buff, int len, struct hwentry * hwe)
 {
 	int i;

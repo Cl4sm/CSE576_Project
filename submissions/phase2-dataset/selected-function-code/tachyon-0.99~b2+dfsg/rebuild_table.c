@@ -1,3 +1,4 @@
+static void rebuild_table(rt_hash_t *tptr) {
   hash_node_t **old_bucket, *old_hash, *tmp;
   int old_size, h, i;
 

@@ -1,3 +1,4 @@
+gboolean sc_dialog_run(ScDialog *dialog) {
 /* sc_dialog_run
    Runs the specified dialogue until it is closed.  This will set the
    dialog to modal if it was requested on creation, so other windows

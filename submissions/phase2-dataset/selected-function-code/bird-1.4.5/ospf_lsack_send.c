@@ -1,3 +1,4 @@
+void
 ospf_lsack_send(struct ospf_neighbor *n, int queue)
 {
   struct ospf_packet *op;

@@ -1,3 +1,4 @@
+struct MaskItem *
 create_resv(const char *name, const char *reason, const dlink_list *list)
 {
   dlink_node *ptr = NULL;

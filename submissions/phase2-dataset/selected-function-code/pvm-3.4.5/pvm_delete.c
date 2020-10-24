@@ -1,3 +1,4 @@
+int
 pvm_delete(name, req)
 	char *name;		/* class name */
 	int req;		/* class index or -1 for all */

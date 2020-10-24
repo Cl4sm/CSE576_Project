@@ -1,3 +1,4 @@
+void
 init_xlocale(void)
 {
 #ifndef NO_XLOCALE

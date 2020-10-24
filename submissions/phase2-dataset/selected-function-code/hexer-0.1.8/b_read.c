@@ -1,3 +1,4 @@
+  long
 b_read(buffer, target, position, count)
   Buffer *buffer;
   char *target;

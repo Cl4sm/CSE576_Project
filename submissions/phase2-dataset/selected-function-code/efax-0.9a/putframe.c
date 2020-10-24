@@ -1,3 +1,4 @@
+int putframe ( int type, uchar *buf, int len, TFILE *f, int t )
 {
   int err=0 ;
 

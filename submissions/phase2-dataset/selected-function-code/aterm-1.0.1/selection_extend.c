@@ -1,3 +1,4 @@
+void
 selection_extend(int x, int y, int flag)
 {
     int             col, row;

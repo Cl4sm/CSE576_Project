@@ -1,3 +1,4 @@
+int
 snprint_multipath (char * line, int len, char * format,
 	     struct multipath * mpp)
 {

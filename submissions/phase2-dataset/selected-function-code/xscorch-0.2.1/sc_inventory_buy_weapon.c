@@ -1,3 +1,4 @@
+bool sc_inventory_buy_weapon(sc_player *p, sc_weapon_info *info) {
 /* sc_inventory_buy_weapon
    Buys the specified weapon.  Returns true if the purchase was successful. */
 

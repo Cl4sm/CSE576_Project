@@ -1,3 +1,4 @@
+void
 set_scroll(value)
 	int	value;
 {

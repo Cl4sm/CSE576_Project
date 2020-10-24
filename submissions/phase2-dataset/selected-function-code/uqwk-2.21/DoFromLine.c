@@ -1,3 +1,4 @@
+void DoFromLine (offset)
 long offset;
 {
 	struct mail_ent *mp;

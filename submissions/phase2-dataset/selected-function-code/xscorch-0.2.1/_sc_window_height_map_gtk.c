@@ -1,3 +1,4 @@
+static int *_sc_window_height_map_gtk(const sc_config *c, const int *xlist,
                                       const int *ylist, int size) {
 /* sc_window_height_map_gtk
    Creates a heightmap for the list of coordinates, given.  If there is no

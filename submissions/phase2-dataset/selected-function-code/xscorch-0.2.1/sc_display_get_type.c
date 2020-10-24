@@ -1,3 +1,4 @@
+GType sc_display_get_type(void) {
 
    static GType sc_display_type = 0;
 

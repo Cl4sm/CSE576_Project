@@ -1,3 +1,4 @@
+int
 listen_dcc(src_host)
 	u_char	*src_host;
 {

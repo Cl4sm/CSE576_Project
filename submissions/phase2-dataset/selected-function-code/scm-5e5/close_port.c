@@ -1,3 +1,4 @@
+SCM close_port(port)
      SCM port;
 {
 	sizet i;

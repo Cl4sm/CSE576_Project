@@ -1,3 +1,4 @@
+static int
 arm_rela_to_rel (DSO *dso, GElf_Rela *rela, GElf_Rel *rel)
 {
   rel->r_offset = rela->r_offset;

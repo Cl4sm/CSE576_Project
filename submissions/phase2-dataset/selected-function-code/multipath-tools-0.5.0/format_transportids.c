@@ -1,3 +1,4 @@
+uint32_t  format_transportids(struct prout_param_descriptor *paramp)
 {
 	int i = 0, len;	
 	uint32_t buff_offset = 4;

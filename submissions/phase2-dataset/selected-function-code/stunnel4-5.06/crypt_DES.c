@@ -1,3 +1,4 @@
+NOEXPORT void crypt_DES(DES_cblock dst, const_DES_cblock src, DES_cblock hash) {
     DES_cblock key;
     DES_key_schedule sched;
 

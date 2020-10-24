@@ -1,3 +1,4 @@
+int
 pkt_to_host(hp, pp)
 	struct hostd *hp;
 	struct pkt *pp;

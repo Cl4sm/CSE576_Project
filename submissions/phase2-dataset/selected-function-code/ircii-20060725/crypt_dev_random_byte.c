@@ -1,3 +1,4 @@
+static int
 crypt_dev_random_byte()
 {
 	static	int	devrndfd = -1;

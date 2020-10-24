@@ -1,3 +1,4 @@
+int
 hoster(mp)
 	struct pmsg *mp;
 {

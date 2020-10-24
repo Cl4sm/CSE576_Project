@@ -1,3 +1,4 @@
+static	void
 init_mail()
 {
 #if defined(AMS_MAIL) || defined(UNIX_MAIL)

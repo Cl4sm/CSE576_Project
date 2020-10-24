@@ -1,3 +1,4 @@
+color full_shader(ray * incident) {
   color col, diffuse, ambocccol, phongcol;
   shadedata shadevars;
   ray shadowray;

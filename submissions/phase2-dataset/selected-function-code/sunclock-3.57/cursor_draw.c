@@ -1,3 +1,4 @@
+void cursor_draw(unsigned long color)
 {
 	XSetForeground(dpy, gc, color);
 #ifdef VERTCURS

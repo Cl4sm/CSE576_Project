@@ -1,3 +1,4 @@
+static void sweep_symhash(v)
      SCM v;
 {
   SCM al, x, *lloc;

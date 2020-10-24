@@ -1,3 +1,4 @@
+void _sc_window_auto_defense_parachute_init(sc_auto_def_gtk *adg) {
 /* _sc_window_auto_defense_parachute_init
    Draw up the console pane for Parachute Configuration.
    There is allocation here so don't call it multiple times. */

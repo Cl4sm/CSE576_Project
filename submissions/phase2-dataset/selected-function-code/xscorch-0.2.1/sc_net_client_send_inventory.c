@@ -1,3 +1,4 @@
+bool sc_net_client_send_inventory(const sc_config *c, sc_client *cli, int playerid) {
 
    const sc_accessory_info *ai;  /* Accessory info */
    const sc_weapon_info *wi;  /* Weapon info */

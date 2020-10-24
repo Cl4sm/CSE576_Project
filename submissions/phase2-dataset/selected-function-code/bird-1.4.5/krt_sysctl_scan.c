@@ -1,3 +1,4 @@
+static void
 krt_sysctl_scan(struct proto *p, int cmd, int table_id)
 {
   byte *buf, *next;

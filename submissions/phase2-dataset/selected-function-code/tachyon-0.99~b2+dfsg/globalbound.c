@@ -1,3 +1,4 @@
+static void globalbound(object ** rootlist, vector * gmin, vector * gmax) {
   vector min, max;
   object * cur;
 

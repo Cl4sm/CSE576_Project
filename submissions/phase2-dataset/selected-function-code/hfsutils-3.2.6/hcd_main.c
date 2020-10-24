@@ -1,3 +1,4 @@
+int hcd_main(int argc, char *argv[])
 {
   mountent *ment;
   hfsvol *vol;

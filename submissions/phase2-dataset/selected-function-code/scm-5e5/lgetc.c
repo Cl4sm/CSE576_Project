@@ -1,3 +1,4 @@
+int lgetc(port)
   SCM port;
 {
   FILE *f;

@@ -1,3 +1,4 @@
+static void
 expire_pending_glines(struct gline_pending *in)
 {
   dlink_node *ptr = NULL, *ptr_next = NULL;

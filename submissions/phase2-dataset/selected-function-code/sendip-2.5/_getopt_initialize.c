@@ -1,3 +1,4 @@
+static const char *
 _getopt_initialize (argc, argv, optstring)
      int argc;
      char *const *argv;

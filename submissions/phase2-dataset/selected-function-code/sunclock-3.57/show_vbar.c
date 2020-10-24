@@ -1,3 +1,4 @@
+void show_vbar()
 {
 	int j;
 

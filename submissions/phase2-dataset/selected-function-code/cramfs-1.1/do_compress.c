@@ -1,3 +1,4 @@
+static unsigned int do_compress(char *base, unsigned int offset, char const *name, char *uncompressed, unsigned int size)
 {
 	unsigned long original_size = size;
 	unsigned long original_offset = offset;

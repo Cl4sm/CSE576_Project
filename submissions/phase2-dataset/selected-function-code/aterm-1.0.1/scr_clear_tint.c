@@ -1,3 +1,4 @@
+void
 scr_clear_tint(int bWithTinting)
 {
     if( !TermWin.bMapped ) return ;

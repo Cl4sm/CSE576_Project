@@ -1,3 +1,4 @@
+void
 on_colors_changed(int idx)
 {
     colors_changed = 1 ;

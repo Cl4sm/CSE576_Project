@@ -1,3 +1,4 @@
+void
 processKey(win, keysym)
 Window  win;
 KeySym  keysym;

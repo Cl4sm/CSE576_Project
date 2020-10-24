@@ -1,3 +1,4 @@
+int
 pvm_addmhf(src, tag, ctx, f)
 	int src, tag, ctx;			/* message source, context, tag */
 #ifdef  IMA_SCO

@@ -1,3 +1,4 @@
+static int
 default_failback_handler(vector strvec)
 {
 	char * buff;

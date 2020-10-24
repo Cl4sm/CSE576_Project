@@ -1,3 +1,4 @@
+static int
 lsa_compare_for_state(const void *p1, const void *p2)
 {
   struct top_hash_entry * he1 = * (struct top_hash_entry **) p1;

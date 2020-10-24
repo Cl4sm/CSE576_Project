@@ -1,3 +1,4 @@
+int hcwd_mounted(const char *vname, long vcrdate, const char *path, int partno)
 {
   mountent *entry, new;
 

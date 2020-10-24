@@ -1,3 +1,4 @@
+extern void
 print_multipath_topology (struct multipath * mpp, int verbosity)
 {
 	int resize;

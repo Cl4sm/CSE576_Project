@@ -1,3 +1,4 @@
+void
 sha_process_bytes (const void *buffer, size_t len, struct sha_ctx *ctx)
 {
   /* When we already have some bits in our internal buffer concatenate

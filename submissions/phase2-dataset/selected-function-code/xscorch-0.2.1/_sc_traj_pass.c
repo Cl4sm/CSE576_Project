@@ -1,3 +1,4 @@
+static inline sc_trajectory_result _sc_traj_pass(const sc_config *c, sc_trajectory *tr,
                                                  int flags, sc_trajectory_data *t) {
 /* sc_traj_pass
    Returns results if weapon passed through a non-pixel boundary.

@@ -1,3 +1,4 @@
+static int
 tev_pack_string_raw( did, array, datap, cnt, std )
 int did;
 int array;

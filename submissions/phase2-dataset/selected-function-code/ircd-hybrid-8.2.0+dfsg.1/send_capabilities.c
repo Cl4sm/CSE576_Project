@@ -1,3 +1,4 @@
+void
 send_capabilities(struct Client *client_p, int cap_can_send)
 {
   char buf[IRCD_BUFSIZE] = "";

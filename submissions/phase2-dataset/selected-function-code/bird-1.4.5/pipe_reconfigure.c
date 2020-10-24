@@ -1,3 +1,4 @@
+static int
 pipe_reconfigure(struct proto *P, struct proto_config *new)
 {
   struct pipe_proto *p = (struct pipe_proto *)P;

@@ -1,3 +1,4 @@
+void DoSaveAs()
 {
   PWGetFilename(pixmap_widget, &filename);
  RetrySave:

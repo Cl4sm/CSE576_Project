@@ -1,3 +1,4 @@
+static int ontap_prio(const char *dev, int fd)
 {
 	unsigned char results[RESULTS_MAX];
 	int results_size=RESULTS_MAX;

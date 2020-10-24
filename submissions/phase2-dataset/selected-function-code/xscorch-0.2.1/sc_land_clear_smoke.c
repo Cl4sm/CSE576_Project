@@ -1,3 +1,4 @@
+void sc_land_clear_smoke(const sc_config *c, sc_land *l) {
 /* sc_land_clear_smoke
    Clears the smoke off the land given. */
 

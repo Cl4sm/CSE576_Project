@@ -1,3 +1,4 @@
+unsigned long hfs_read(hfsfile *file, void *buf, unsigned long len)
 {
   unsigned long *lglen, count;
   byte *ptr = buf;

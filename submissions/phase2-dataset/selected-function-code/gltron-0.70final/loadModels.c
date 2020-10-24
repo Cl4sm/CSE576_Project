@@ -1,3 +1,4 @@
+static void loadModels(void) {
 	char *path;
 	int i;
 	/* load recognizer model */

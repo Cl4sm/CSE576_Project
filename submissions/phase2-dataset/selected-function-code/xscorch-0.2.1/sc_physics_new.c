@@ -1,3 +1,4 @@
+sc_physics *sc_physics_new(void) {
 /* sc_physics_new
    Create a new physics parametre structure.  */
 

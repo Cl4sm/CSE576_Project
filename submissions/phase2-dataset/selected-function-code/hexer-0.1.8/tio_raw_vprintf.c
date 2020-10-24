@@ -1,3 +1,4 @@
+  int
 tio_raw_vprintf(fmt, ap)
   const char *fmt;
   va_list ap;

@@ -1,3 +1,4 @@
+void
 rebuild_isupport_message_line(void)
 {
   char isupportbuffer[IRCD_BUFSIZE];

@@ -1,3 +1,4 @@
+GtkWidget *sc_link_combo_new(int *value, const char **entries) {
 
    ScLinkComboData *combo_data;
    ScLinkCombo *combo;

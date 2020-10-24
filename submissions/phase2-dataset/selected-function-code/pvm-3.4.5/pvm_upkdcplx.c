@@ -1,3 +1,4 @@
+int
 pvm_upkdcplx(zp, cnt, std)
 	double *zp;
 	int cnt;

@@ -1,3 +1,4 @@
+static double _sc_lscape_eval_valley(double x) {
 /* _sc_lscape_eval_valley
    Evaluates the ``valley'' profile function at point x. */
 

@@ -1,3 +1,4 @@
+void
 prelink_entry_restore (htab_t htab, const char *filename)
 {
   size_t i, j;

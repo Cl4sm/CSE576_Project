@@ -1,3 +1,4 @@
+static	void
 reset_nickname(from)
 	u_char	*from;
 {

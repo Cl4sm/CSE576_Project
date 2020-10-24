@@ -1,3 +1,4 @@
+void PWZoomOut(Widget w)
 #else
 void PWZoomOut(w)
     Widget w;

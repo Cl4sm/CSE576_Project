@@ -1,3 +1,4 @@
+int
 ec_format(byte *buf, u64 ec)
 {
   u32 type, key, val;

@@ -1,3 +1,4 @@
+void
 send_line(key, ptr)
 	u_int	key;
 	u_char	*ptr;

@@ -1,3 +1,4 @@
+static int
 LWZReadByte(FILE *fd, int flag, int input_code_size)
 {
     static int fresh = FALSE;

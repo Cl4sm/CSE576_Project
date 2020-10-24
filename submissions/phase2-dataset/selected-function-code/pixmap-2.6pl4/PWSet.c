@@ -1,3 +1,4 @@
+void PWSet(Widget w)
 #else
 void PWSet(w)
      Widget w;

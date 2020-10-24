@@ -1,3 +1,4 @@
+static void
 init_stuff(void)
 {
     XGCValues gcvalue;

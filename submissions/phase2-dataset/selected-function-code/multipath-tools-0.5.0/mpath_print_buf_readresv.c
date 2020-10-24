@@ -1,3 +1,4 @@
+void mpath_print_buf_readresv( struct prin_resp *pr_buff)
 {
 	int j, num, scope=0, type=0;
 	unsigned char *keyp;

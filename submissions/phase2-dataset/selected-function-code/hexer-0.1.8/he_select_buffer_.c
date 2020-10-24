@@ -1,3 +1,4 @@
+  int
 he_select_buffer_(buffer)
   struct buffer_s *buffer;
   /* Set `current_buffer' to `buffer'.  The file for `buffer' is loaded if

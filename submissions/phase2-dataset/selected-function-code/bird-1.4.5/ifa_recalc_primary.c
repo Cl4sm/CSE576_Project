@@ -1,3 +1,4 @@
+static int
 ifa_recalc_primary(struct iface *i)
 {
   struct ifa *a = kif_choose_primary(i);

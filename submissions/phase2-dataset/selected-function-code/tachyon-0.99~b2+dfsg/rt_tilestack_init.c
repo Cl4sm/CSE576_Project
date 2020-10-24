@@ -1,3 +1,4 @@
+int rt_tilestack_init(rt_tilestack_t *s, int size) {
   if (s == NULL)
     return -1;
 

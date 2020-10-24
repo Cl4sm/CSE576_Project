@@ -1,3 +1,4 @@
+void PWSetText( Widget w, String s ) 
 #else
 void PWSetText( w, s ) 
      Widget	w; 

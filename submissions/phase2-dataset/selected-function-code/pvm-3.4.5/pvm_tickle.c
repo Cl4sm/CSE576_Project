@@ -1,3 +1,4 @@
+int
 pvm_tickle(narg, argp, nresp, resp)
 	int narg;
 	int *argp;

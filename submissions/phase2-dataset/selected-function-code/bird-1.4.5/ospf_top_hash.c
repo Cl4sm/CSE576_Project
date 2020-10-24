@@ -1,3 +1,4 @@
+static inline unsigned
 ospf_top_hash(struct top_graph *f, u32 domain, u32 lsaid, u32 rtrid, u32 type)
 {
   /* In OSPFv2, we don't know Router ID when looking for network LSAs.

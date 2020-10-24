@@ -1,3 +1,4 @@
+void scm2display_screen(dat, optidx, dspscn, s_caller)
      SCM dat;
      SCM optidx;
      struct display_screen *dspscn;

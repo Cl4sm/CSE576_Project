@@ -1,3 +1,4 @@
+ssize_t
 send_file (int outfd, int infd, off_t *poff, size_t count)
 {
   char buf[65536], *b, *p, *q;

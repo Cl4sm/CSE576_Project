@@ -1,3 +1,4 @@
+struct keyword *
 find_keyword(vector v, char * name)
 {
 	struct keyword *keyword;

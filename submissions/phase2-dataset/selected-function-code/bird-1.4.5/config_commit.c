@@ -1,3 +1,4 @@
+int
 config_commit(struct config *c, int type, int timeout)
 {
   if (shutting_down)

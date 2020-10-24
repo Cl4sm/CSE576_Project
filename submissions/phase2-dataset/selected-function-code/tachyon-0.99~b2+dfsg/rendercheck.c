@@ -1,3 +1,4 @@
+static void rendercheck(scenedef * scene) {
   flt runtime;
   rt_timerhandle stth; /* setup time timer handle */
 

@@ -1,3 +1,4 @@
+static int
 add_key (vector vec, char * str, unsigned long code, int has_param)
 {
 	struct key * kw;

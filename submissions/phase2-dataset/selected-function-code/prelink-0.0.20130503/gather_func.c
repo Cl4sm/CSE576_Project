@@ -1,3 +1,4 @@
+static int
 gather_func (const char *name, const struct stat64 *st, int type,
 	     struct FTW *ftwp)
 {

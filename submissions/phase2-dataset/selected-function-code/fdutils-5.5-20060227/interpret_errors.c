@@ -1,3 +1,4 @@
+int interpret_errors(struct floppy_raw_cmd *raw_cmd, int probe_only)
 {
 	int i,k;
 	int code;

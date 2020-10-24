@@ -1,3 +1,4 @@
+NOEXPORT void transfer(CLI *c) {
     int watchdog=0; /* a counter to detect an infinite loop */
     int num, err;
     /* logical channels (not file descriptors!) open for read or write */

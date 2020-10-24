@@ -1,3 +1,4 @@
+static
 int flushvol(hfsvol *vol, int umount)
 {
   if (vol->flags & HFS_VOL_READONLY)

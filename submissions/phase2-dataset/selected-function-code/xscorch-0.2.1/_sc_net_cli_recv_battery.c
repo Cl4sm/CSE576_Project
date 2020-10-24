@@ -1,3 +1,4 @@
+static bool _sc_net_cli_recv_battery(sc_config *c, sc_packet *packet) {
 /* _sc_net_cli_recv_battery
    Similar to the orders packet, except we are receiving a player request
    to activate one of their batteries. Again, returns true on success. */

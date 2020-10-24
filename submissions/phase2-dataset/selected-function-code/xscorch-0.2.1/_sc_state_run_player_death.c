@@ -1,3 +1,4 @@
+static void _sc_state_run_player_death(sc_config *c, sc_game *g) {
 
    sc_player *p;
    const char *msg;

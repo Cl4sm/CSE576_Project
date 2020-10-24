@@ -1,3 +1,4 @@
+void
 Gr_Dispatch(grwin_t * grwin, grcmd_t * data)
 {
 #ifdef RXVT_GRAPHICS

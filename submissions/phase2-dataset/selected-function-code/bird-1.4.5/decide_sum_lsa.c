@@ -1,3 +1,4 @@
+static int
 decide_sum_lsa(struct ospf_area *oa, ort *nf, int dest)
 {
   /* 12.4.3.1. - for stub/NSSA areas, originating summary routes is configurable */

@@ -1,3 +1,4 @@
+int ux_socket_listen(const char *name)
 {
 	int fd, len;
 #ifdef USE_SYSTEMD

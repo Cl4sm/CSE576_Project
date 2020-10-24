@@ -1,3 +1,4 @@
+  long
 regex_search(regex, begin, end, start, direction,
              replace_str, replace_len, match_len)
   long *regex;

@@ -1,3 +1,4 @@
+shashlist_item *shashlist_item_new(void *data, int key, const char *keystr, int class) {
 /* shashlist_item_new
    Create and initialize a new shashlist_item. */
 

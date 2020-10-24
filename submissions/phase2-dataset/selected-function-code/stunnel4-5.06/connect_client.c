@@ -1,3 +1,4 @@
+NOEXPORT char *connect_client(CLI *c, SERVICE_OPTIONS *opt, const PHASE phase) {
     char *line, *encoded;
 
     if(phase!=PROTOCOL_MIDDLE)

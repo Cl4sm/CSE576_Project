@@ -1,3 +1,4 @@
+static int
 dec_xdr_ulong(mp, vp, cnt, std, siz)
 	struct pmsg *mp;
 	void *vp;

@@ -1,3 +1,4 @@
+void
 cmd_help(char *cmd, int len)
 {
   char *end = cmd + len;

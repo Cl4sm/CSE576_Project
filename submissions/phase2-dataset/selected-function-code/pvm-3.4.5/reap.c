@@ -1,3 +1,4 @@
+void
 reap(sig)
 	int sig;
 {

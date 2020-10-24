@@ -1,3 +1,4 @@
+void
 dcc_list(args)
 	u_char	*args;
 {

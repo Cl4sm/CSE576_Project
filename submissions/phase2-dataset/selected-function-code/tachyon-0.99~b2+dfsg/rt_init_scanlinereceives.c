@@ -1,3 +1,4 @@
+void * rt_init_scanlinereceives(scenedef * scene) {
 #ifdef MPI
   int i, addr;
   pardata * p;

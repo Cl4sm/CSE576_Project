@@ -1,3 +1,4 @@
+int chk_mountpoint(char *dir,int is_default) {
     int must_own;
     struct stat st;
 

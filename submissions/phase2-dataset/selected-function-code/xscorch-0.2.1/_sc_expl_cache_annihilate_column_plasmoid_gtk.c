@@ -1,3 +1,4 @@
+static inline void _sc_expl_cache_annihilate_column_plasmoid_gtk(GdkImage *image, GdkColor *gradient,
                                                                  int gsize, int dx, int dy, int radius,
                                                                  unsigned char *fractal, int fsize) {
 /* sc_expl_cache_annihilate_column_plasmoid_gtk

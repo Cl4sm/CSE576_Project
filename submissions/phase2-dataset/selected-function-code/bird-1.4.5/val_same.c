@@ -1,3 +1,4 @@
+int
 val_same(struct f_val v1, struct f_val v2)
 {
   int rc;

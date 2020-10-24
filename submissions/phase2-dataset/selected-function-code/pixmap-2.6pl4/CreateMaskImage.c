@@ -1,3 +1,4 @@
+XImage *CreateMaskImage(PW, width, height)
     PixmapWidget PW;
     Dimension width, height;
 {

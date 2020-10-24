@@ -1,3 +1,4 @@
+static sc_trajectory_result _sc_traj_traverse_roller(sc_config *c, sc_trajectory *tr, int flags,
                                                      double distance, sc_trajectory_action action,
                                                      void *data) {
 /* sc_traj_traverse_roller

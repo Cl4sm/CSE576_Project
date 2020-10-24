@@ -1,3 +1,4 @@
+static void yyunput( int c, register char *yy_bp )
 #else
 static void yyunput( c, yy_bp )
 int c;

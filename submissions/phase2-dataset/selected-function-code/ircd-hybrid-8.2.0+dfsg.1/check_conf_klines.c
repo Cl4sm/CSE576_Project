@@ -1,3 +1,4 @@
+void
 check_conf_klines(void)
 {
   struct MaskItem *conf = NULL;

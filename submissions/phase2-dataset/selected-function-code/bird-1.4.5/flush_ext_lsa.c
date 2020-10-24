@@ -1,3 +1,4 @@
+void
 flush_ext_lsa(struct ospf_area *oa, struct fib_node *fn, int nssa)
 {
   struct proto_ospf *po = oa->po;

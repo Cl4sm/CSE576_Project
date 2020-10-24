@@ -1,3 +1,4 @@
+static inline sc_trajectory_result _sc_traj_pass_wall_wrap(const sc_config *c,
                                                            sc_trajectory *tr) {
 /* sc_traj_pass_wall_wrap
    Boundary case for horizontal wrapping.  */

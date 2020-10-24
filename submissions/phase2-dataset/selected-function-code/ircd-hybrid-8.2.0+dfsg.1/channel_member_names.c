@@ -1,3 +1,4 @@
+void
 channel_member_names(struct Client *source_p, struct Channel *chptr,
                      int show_eon)
 {

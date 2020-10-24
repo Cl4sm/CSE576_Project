@@ -1,3 +1,4 @@
+static
 int do_copyout(hfsvol *vol, int argc, char *argv[], const char *dest, int mode)
 {
   struct stat sbuf;

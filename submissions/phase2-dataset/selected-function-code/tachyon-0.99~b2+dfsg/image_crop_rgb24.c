@@ -1,3 +1,4 @@
+unsigned char * image_crop_rgb24(int xres, int yres, unsigned char *img, 
                                  int szx, int szy, int sx, int sy) {
   unsigned char *cropped;
   int x, y;

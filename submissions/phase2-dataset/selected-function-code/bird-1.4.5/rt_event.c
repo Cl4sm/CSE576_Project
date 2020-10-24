@@ -1,3 +1,4 @@
+static void
 rt_event(void *ptr)
 {
   rtable *tab = ptr;

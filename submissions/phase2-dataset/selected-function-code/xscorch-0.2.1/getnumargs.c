@@ -1,3 +1,4 @@
+sizea getnumargs(const char *s, char sep) {
 /* Get-Number-of-Arguments
    total number of arguments in a cmd string (assuming '|' separates
    arguments) You can optionally specify the "sep" character to

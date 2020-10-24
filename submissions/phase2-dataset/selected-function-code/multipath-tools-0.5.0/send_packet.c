@@ -1,3 +1,4 @@
+int send_packet(int fd, const char *buf, size_t len)
 {
 	int ret = 0;
 	sigset_t set, old;

@@ -1,3 +1,4 @@
+void drawMenu(Visual *d) {
   /* draw Menu pCurrent */
 
   int i;

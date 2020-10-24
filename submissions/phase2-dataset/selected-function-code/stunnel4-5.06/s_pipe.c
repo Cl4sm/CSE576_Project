@@ -1,3 +1,4 @@
+int s_pipe(int pipefd[2], int nonblock, char *msg) {
     int retval;
 
 #ifdef USE_NEW_LINUX_API

@@ -1,3 +1,4 @@
+static int
 undo_one (void **p, void *info)
 {
   struct prelink_entry *ent = * (struct prelink_entry **) p;

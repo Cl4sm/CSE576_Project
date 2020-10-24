@@ -1,3 +1,4 @@
+void *waitevent (void *et)
 {
 	int r;
 	struct event_thread *waiter;

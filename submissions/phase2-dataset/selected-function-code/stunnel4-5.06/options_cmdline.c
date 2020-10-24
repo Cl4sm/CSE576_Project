@@ -1,3 +1,4 @@
+int options_cmdline(char *name, char *parameter) {
     CONF_TYPE type=CONF_FILE;
 
 #ifdef USE_WIN32

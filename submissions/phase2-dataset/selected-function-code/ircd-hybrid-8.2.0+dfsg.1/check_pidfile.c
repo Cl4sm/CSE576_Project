@@ -1,3 +1,4 @@
+static void
 check_pidfile(const char *filename)
 {
   FILE *fb;

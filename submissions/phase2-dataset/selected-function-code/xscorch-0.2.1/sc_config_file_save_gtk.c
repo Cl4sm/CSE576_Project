@@ -1,3 +1,4 @@
+void sc_config_file_save_gtk(sc_window_gtk *w) {
 
    sc_file_save save;
    ScDialog  *dialog;

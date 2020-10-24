@@ -1,3 +1,4 @@
+static SCM asubr_apply(proc, arg1, arg2, arg3, args)
      SCM proc, arg1, arg2, arg3, args;
 {
   switch TYP7(proc) {

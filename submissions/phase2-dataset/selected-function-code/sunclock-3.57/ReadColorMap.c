@@ -1,3 +1,4 @@
+static int
 ReadColorMap(FILE *fd, int number, unsigned char buffer[3][MAXCOLORMAPSIZE],
 	     int *gray)
 {

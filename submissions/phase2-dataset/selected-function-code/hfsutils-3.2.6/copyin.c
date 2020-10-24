@@ -1,3 +1,4 @@
+static
 int copyin(Tcl_Interp *interp, hfsvol *vol, char *argv[])
 {
   cpifunc copyfile;

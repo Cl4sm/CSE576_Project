@@ -1,3 +1,4 @@
+SFdrawList(n, doScroll)
 	int	n;
 	int	doScroll;
 {

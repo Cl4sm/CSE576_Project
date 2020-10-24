@@ -1,3 +1,4 @@
+extern struct multipath *
 add_map_with_path (struct vectors * vecs,
 		   struct path * pp, int add_vec)
 {

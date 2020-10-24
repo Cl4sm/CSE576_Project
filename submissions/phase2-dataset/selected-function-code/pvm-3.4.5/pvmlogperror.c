@@ -1,3 +1,4 @@
+int
 pvmlogperror(s)
 	char *s;	/* text */
 {

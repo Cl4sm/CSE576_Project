@@ -1,3 +1,4 @@
+void
 build_server_list(servers)
 	u_char	*servers;
 {

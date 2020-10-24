@@ -1,3 +1,4 @@
+int
 tm_conn2(tp, mp)
 	struct task *tp;
 	struct pmsg *mp;

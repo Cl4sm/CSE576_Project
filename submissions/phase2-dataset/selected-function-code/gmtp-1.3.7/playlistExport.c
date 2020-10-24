@@ -1,3 +1,4 @@
+void playlistExport(gchar * filename, LIBMTP_playlist_t * playlist) {
     FILE* fd;
     uint32_t numtracks = playlist->no_tracks;
     uint32_t *tracks = playlist->tracks;

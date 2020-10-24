@@ -1,3 +1,4 @@
+int puttrain ( TFILE *f, char *s, int n  )
 {
   int i, m, err=0 ;
   uchar buf [ MINWRITE ] = { 0 } ;

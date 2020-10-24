@@ -1,3 +1,4 @@
+static void
 advertise_entry( struct proto *p, struct rip_block *b, ip_addr whotoldme, struct iface *iface )
 {
   rta *a, A;

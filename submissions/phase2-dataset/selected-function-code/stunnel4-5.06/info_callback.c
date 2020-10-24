@@ -1,3 +1,4 @@
+NOEXPORT void info_callback(
 #if OPENSSL_VERSION_NUMBER>=0x0090700fL
         const
 #endif

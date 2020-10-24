@@ -1,3 +1,4 @@
+static int
 ospf_get_attr(eattr * a, byte * buf, int buflen UNUSED)
 {
   switch (a->id)

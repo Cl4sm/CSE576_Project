@@ -1,3 +1,4 @@
+bool sc_net_client_send_battery(const sc_config *c, sc_client *cli, int playerid) {
 /* sc_net_client_send_battery
    Let the server know that we are activating a battery. This packet
    may be directly relayed to other clients. Returns true if the packet

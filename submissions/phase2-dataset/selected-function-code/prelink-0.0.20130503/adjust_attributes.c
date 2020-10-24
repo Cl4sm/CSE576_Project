@@ -1,3 +1,4 @@
+static unsigned char *
 adjust_attributes (DSO *dso, unsigned char *ptr, struct abbrev_tag *t,
 		   struct cu_data *cu,
 		   GElf_Addr start, GElf_Addr adjust)

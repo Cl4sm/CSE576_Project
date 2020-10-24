@@ -1,3 +1,4 @@
+int modemsync ( TFILE *f )
 {
   int err=0, method=0 ;
 

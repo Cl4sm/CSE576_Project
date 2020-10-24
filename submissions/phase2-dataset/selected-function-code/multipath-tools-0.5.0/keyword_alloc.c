@@ -1,3 +1,4 @@
+int
 keyword_alloc(vector keywords, char *string, int (*handler) (vector),
 		int (*print) (char *, int, void *), int unique)
 {

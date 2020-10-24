@@ -1,3 +1,4 @@
+void
 load_kline_database(void)
 {
   struct dbFILE *f = NULL;

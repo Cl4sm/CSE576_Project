@@ -1,3 +1,4 @@
+int bh_end(void)
 {
   int result = 0;
 

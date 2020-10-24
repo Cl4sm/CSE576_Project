@@ -1,3 +1,4 @@
+color wood_texture(const vector * hit, const texture * tx, const ray * ry) {
   flt radius, angle;
   int grain;
   color col;

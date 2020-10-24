@@ -1,3 +1,4 @@
+static int
 ReadImage(FILE * fd, Sundata * Context, int width, int height, int cmapSize,
 	  unsigned char cmap[3][MAXCOLORMAPSIZE],
 	  int gray, int interlace)

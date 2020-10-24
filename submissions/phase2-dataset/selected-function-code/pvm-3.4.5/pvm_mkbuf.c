@@ -1,3 +1,4 @@
+int
 pvm_mkbuf(enc)
 	int enc;		/* data format */
 {

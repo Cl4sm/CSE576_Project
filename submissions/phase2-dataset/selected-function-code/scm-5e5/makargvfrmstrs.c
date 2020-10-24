@@ -1,3 +1,4 @@
+char **makargvfrmstrs(args, s_name)
      SCM args;
      const char *s_name;
 {

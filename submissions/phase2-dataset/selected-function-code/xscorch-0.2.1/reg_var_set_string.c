@@ -1,3 +1,4 @@
+bool reg_var_set_string(const reg *r, reg_var *b, const char *name, const char *value) {
 /* reg_var_set_string
    Adds a new string variable.  */
 

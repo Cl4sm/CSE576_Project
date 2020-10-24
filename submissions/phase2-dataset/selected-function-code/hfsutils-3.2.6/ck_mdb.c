@@ -1,3 +1,4 @@
+int ck_mdb(hfsvol *vol)
 {
   MDB *mdb = &vol->mdb;
   time_t now;

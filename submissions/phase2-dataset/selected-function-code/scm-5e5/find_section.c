@@ -1,3 +1,4 @@
+static int
 find_section (name, section_names, file_name, old_file_h, old_section_h, noerror)
      char *name;
      char *section_names;

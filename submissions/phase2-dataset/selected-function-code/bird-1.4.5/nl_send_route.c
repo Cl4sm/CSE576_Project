@@ -1,3 +1,4 @@
+static int
 nl_send_route(struct krt_proto *p, rte *e, struct ea_list *eattrs, int new)
 {
   eattr *ea;

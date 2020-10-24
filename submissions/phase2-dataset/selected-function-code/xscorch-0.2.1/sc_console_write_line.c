@@ -1,3 +1,4 @@
+void sc_console_write_line(ScConsole *cons, gint x, gint y, const char *line) {
 /* sc_console_write_line
    Writes a line of text starting at character position (x,y).  If the
    line overflows the width of the text buffer, then the line is

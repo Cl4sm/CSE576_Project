@@ -1,3 +1,4 @@
+int pty_allocate(int *ptyfd, int *ttyfd, char *namebuf) {
 #if defined(HAVE_OPENPTY) || defined(BSD4_4) && !defined(__INNOTEK_LIBC__)
     /* openpty(3) exists in OSF/1 and some other os'es */
     char buf[64];

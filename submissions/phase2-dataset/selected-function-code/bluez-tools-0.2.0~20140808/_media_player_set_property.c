@@ -1,3 +1,4 @@
+static void _media_player_set_property(GObject *object, guint property_id, const GValue *value, GParamSpec *pspec)
 {
 	MediaPlayer *self = MEDIA_PLAYER(object);
 	GError *error = NULL;

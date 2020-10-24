@@ -1,3 +1,4 @@
+  int
 b_set_size(buffer, size)
   Buffer *buffer;
   unsigned long size;

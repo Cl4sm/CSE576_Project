@@ -1,3 +1,4 @@
+void
 get_ourmods(void)
 {
     int             i, j, k;

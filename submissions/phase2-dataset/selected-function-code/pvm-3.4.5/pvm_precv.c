@@ -1,3 +1,4 @@
+int
 pvm_precv(tid, tag, cp, len, dt, rtid, rtag, rlen)
 	int tid;
 	int tag;

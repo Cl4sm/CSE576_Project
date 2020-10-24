@@ -1,3 +1,4 @@
+int rt_threadpool_destroy(rt_threadpool_t *thrpool) {
 #if defined(THR)
   int i;
 #endif

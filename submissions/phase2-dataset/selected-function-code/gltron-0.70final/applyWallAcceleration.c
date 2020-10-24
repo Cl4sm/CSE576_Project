@@ -1,3 +1,4 @@
+int applyWallAcceleration(int player, int dt) {
 	// find distance to enemy walls left & right
 	enum { eLeft, eRight, eMax };
 	segment2 segments[eMax];

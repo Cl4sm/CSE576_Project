@@ -1,3 +1,4 @@
+void
 event_run(void)
 {
   static time_t last = 0;

@@ -1,3 +1,4 @@
+SCM lessp(x, y)
      SCM x, y;
 {
 #ifdef FLOATS

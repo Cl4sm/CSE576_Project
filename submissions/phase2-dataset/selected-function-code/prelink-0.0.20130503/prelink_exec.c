@@ -1,3 +1,4 @@
+int
 prelink_exec (struct prelink_info *info)
 {
   int i, j, ndeps = info->ent->ndepends + 1;

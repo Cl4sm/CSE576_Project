@@ -1,3 +1,4 @@
+void
 sync_map_state(struct multipath *mpp)
 {
 	struct pathgroup *pgp;

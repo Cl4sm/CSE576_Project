@@ -1,3 +1,4 @@
+bool _sc_scoring_read_item(sc_economy_config *ec, reg *reader, reg_var *item) {
 /* _sc_scoring_read_item
    Read an economy scoring info and insert it into the registry. */
 

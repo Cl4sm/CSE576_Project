@@ -1,3 +1,4 @@
+int
 iface_patt_match(struct iface_patt *ifp, struct iface *i, struct ifa *a)
 {
   struct iface_patt_node *p;

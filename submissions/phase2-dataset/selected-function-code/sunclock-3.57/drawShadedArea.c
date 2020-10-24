@@ -1,3 +1,4 @@
+void
 drawShadedArea (Context)
 Sundata * Context;
 {

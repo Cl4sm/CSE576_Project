@@ -1,3 +1,4 @@
+static
 int deletex(node *np, const byte *key, byte *record, int *flag)
 {
   node child;

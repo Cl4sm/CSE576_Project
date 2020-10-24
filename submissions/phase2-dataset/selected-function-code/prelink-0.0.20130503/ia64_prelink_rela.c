@@ -1,3 +1,4 @@
+static int
 ia64_prelink_rela (struct prelink_info *info, GElf_Rela *rela,
 		   GElf_Addr relaaddr)
 {

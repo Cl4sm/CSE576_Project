@@ -1,3 +1,4 @@
+int GetLine (bytes, fd)
 int *bytes;
 FILE *fd;
 /*

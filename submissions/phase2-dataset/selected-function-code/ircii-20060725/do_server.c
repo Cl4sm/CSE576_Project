@@ -1,3 +1,4 @@
+void
 do_server(rd, wd)
 	fd_set	*rd, *wd;
 {

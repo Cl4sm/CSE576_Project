@@ -1,3 +1,4 @@
+NOEXPORT void log_raw(const int level, const char *stamp,
         const char *id, const char *text) {
     char *line;
 

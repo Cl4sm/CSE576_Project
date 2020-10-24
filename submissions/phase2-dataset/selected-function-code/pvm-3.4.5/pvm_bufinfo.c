@@ -1,3 +1,4 @@
+int
 pvm_bufinfo(mid, len, code, tid)
 	int mid;
 	int *len;

@@ -1,3 +1,4 @@
+int
 yyparse (void)
 {
     int yystate;

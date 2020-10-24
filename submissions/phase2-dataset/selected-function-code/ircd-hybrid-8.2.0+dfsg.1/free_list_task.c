@@ -1,3 +1,4 @@
+void
 free_list_task(struct Client *source_p)
 {
   struct ListTask *lt = source_p->localClient->list_task;

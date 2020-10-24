@@ -1,3 +1,4 @@
+void
 save_kline_database(void)
 {
   uint32_t i = 0;

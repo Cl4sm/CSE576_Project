@@ -1,3 +1,4 @@
+int
 check_mail_status()
 {
 

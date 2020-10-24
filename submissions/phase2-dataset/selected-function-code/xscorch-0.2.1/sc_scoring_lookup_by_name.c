@@ -1,3 +1,4 @@
+sc_scoring_info *sc_scoring_lookup_by_name(const sc_economy_config *ec, const char *name) {
 /* sc_scoring_lookup_by_name
    Tries to find an economy scoring by roughly the requested name.
    This is much slower than sc_scoring_lookup. */

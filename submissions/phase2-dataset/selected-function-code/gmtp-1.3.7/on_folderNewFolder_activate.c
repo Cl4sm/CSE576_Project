@@ -1,3 +1,4 @@
+void on_folderNewFolder_activate(GtkMenuItem *menuitem, gpointer user_data) {
     gchar *foldername = NULL;
     uint32_t tmpFolderID = 0;
     // Get the folder name by displaying a dialog.

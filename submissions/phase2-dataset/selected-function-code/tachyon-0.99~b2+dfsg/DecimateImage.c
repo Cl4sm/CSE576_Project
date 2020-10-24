@@ -1,3 +1,4 @@
+rawimage * DecimateImage(const rawimage * image) {
   rawimage * newimage;
   int x, y, addr, addr2;
 

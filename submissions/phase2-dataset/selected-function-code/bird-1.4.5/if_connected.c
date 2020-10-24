@@ -1,3 +1,4 @@
+static int
 if_connected(ip_addr *a, struct iface *i, struct ifa **ap)
 {
   struct ifa *b;

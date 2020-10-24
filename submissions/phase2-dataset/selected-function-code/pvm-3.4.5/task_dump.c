@@ -1,3 +1,4 @@
+void
 task_dump()
 {
 	struct task *tp;

@@ -1,3 +1,4 @@
+static void drawWave(double radius) {
   int i, j;
   double angle;
   double delta_radius = SHOCKWAVE_WIDTH / SHOCKWAVE_SEGMENTS;

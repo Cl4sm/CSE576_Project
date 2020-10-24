@@ -1,3 +1,4 @@
+char *escapeb(char *str, sizea size) {
 /* Escape
    Escapes potentially troublesome characters in the string.  The
    size indicates the maximum size of the buffer; trailing characters

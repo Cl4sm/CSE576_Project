@@ -1,3 +1,4 @@
+struct proto *
 proto_get_named(struct symbol *sym, struct protocol *pr)
 {
   struct proto *p, *q;

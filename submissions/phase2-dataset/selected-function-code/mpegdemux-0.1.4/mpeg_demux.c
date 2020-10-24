@@ -1,3 +1,4 @@
+int mpeg_demux (FILE *inp, FILE *out)
 {
 	unsigned     i;
 	int          r;

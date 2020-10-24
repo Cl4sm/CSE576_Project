@@ -1,3 +1,4 @@
+struct AddressRec *
 add_conf_by_address(const unsigned int type, struct MaskItem *conf)
 {
   const char *hostname = conf->host;

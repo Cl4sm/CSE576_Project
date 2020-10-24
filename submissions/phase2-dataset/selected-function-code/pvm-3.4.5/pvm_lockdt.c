@@ -1,3 +1,4 @@
+int
 pvm_lockdt ( sseg )
 struct segdesc *sseg;
 {

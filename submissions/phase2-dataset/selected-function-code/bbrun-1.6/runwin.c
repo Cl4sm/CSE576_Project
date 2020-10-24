@@ -1,3 +1,4 @@
+int runwin()
 {
   GtkWidget *window;
   GtkWidget *cancelButton;

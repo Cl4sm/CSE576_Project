@@ -1,3 +1,4 @@
+SceneHandle rt_newscene(void) {
   scenedef * scene;
   SceneHandle voidscene;
   apicolor bgcolor = rt_color(0.0, 0.0, 0.0);

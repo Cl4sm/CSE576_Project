@@ -1,3 +1,4 @@
+int
 valid_username(const char *username, const int local)
 {
   unsigned int dots = 0;

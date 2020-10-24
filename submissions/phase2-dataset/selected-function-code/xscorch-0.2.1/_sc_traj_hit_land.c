@@ -1,3 +1,4 @@
+static sc_trajectory_result _sc_traj_hit_land(const sc_config *c, sc_trajectory *tr, int flags) {
 /* sc_traj_hit_ground
    Returns SC_TRAJ_IMPACT_LAND if the weapon hit the ground.
    Otherwise, the value SC_TRAJ_CONTINUE will be returned.

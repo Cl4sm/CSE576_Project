@@ -1,3 +1,4 @@
+int
 adjust_nonalloc (DSO *dso, GElf_Ehdr *ehdr, GElf_Shdr *shdr, int first,
 		 GElf_Addr start, GElf_Addr adjust)
 {

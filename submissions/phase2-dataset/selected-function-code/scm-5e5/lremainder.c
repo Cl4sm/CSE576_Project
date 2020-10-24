@@ -1,3 +1,4 @@
+SCM lremainder(x, y)
      SCM x, y;
 {
   register long z;

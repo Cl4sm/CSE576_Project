@@ -1,3 +1,4 @@
+char *escaped_scan(char *src, char ch) {
 /* Escaped-Scan
    Scans for occurrence of ch in the string.  Returns NULL if the character
    is not found, otherwise the first occurence is returned.  This function

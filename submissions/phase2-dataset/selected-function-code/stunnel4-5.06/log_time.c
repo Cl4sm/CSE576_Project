@@ -1,3 +1,4 @@
+NOEXPORT void log_time(const int level, const char *txt, ASN1_TIME *t) {
     char *cp;
     BIO *bio;
     int n;

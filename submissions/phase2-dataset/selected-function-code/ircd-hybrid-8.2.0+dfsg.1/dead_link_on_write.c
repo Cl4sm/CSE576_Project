@@ -1,3 +1,4 @@
+void
 dead_link_on_write(struct Client *client_p, int ierrno)
 {
   dlink_node *ptr;

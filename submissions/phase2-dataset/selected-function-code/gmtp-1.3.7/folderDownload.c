@@ -1,3 +1,4 @@
+void folderDownload(gchar *foldername, uint32_t folderID, gboolean isParent) {
     gchar* fullfilename = NULL;
     LIBMTP_folder_t* currentFolder = NULL;
     LIBMTP_file_t* tmpFiles = NULL;

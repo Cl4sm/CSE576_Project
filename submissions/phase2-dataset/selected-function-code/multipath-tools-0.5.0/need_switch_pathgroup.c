@@ -1,3 +1,4 @@
+static int
 need_switch_pathgroup (struct multipath * mpp, int refresh)
 {
 	struct pathgroup * pgp;

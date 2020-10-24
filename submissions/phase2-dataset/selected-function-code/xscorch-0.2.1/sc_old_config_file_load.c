@@ -1,3 +1,4 @@
+int sc_old_config_file_load(sc_config *c) {
 /* sc_old_config_file_load */
 
    int version;            /* Version of the config file */

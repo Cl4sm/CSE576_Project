@@ -1,3 +1,4 @@
+static
 int cmd_hfs(ClientData clientData, Tcl_Interp *interp,
 	    int argc, char *argv[])
 {

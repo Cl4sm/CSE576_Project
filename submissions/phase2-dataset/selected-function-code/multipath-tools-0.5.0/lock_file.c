@@ -1,3 +1,4 @@
+static int
 lock_file(int fd, char *file_name)
 {
 	struct sigaction act, oldact;

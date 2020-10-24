@@ -1,3 +1,4 @@
+void read_rc()
 {
 	FILE *fr = NULL;
 	char name[NLEN], *ptr;

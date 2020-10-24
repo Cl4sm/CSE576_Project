@@ -1,3 +1,4 @@
+bool sc_player_passable(const sc_config *c, const sc_player *p, int x, int y) {
 /* sc_player_passable
    Returns true if the player can be placed at the virtual coordinate 
    indicated.  (x, y) represents the new `center' of the tank.  To do

@@ -1,3 +1,4 @@
+static int
 bubble(n, a)
 	int n;			/* length of a */
 	int *a;

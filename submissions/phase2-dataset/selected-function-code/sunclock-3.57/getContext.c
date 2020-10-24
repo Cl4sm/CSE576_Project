@@ -1,3 +1,4 @@
+struct Sundata *
 getContext(win)
 Window win;
 {

@@ -1,3 +1,4 @@
+void SelectionCallback(w, client_data, selection, type, value, length, format)
     Widget w;
     XtPointer client_data;
     Atom *selection, *type;

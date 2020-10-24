@@ -1,3 +1,4 @@
+void updateHistory(char *newHistoryItem) 
 {
   int duplicate = -1;
   int historyIndex;

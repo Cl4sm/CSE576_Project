@@ -1,3 +1,4 @@
+static	void
 parse_note(server, line)
 	u_char	*server;
 	u_char	*line;

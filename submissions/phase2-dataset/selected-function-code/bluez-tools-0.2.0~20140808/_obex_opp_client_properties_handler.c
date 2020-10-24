@@ -1,3 +1,4 @@
+static void _obex_opp_client_properties_handler(GDBusConnection *connection, const gchar *sender_name, const gchar *object_path, const gchar *interface_name, const gchar *signal_name, GVariant *parameters, gpointer user_data)
 {
     const gchar *arg0 = g_variant_get_string(g_variant_get_child_value(parameters, 0), NULL);
     GVariant *changed_properties = g_variant_get_child_value(parameters, 1);

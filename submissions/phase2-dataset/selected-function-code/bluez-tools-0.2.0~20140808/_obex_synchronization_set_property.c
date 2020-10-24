@@ -1,3 +1,4 @@
+static void _obex_synchronization_set_property(GObject *object, guint property_id, const GValue *value, GParamSpec *pspec)
 {
 	ObexSynchronization *self = OBEX_SYNCHRONIZATION(object);
 	GError *error = NULL;

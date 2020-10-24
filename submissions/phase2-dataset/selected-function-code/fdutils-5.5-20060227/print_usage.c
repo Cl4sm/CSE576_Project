@@ -1,3 +1,4 @@
+void print_usage(char *progname, struct enh_options *eo, char *userparams)
 {
 	int i;
 	

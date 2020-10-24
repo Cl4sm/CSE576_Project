@@ -1,3 +1,4 @@
+extern char *
 find_unused_loop_device (void)
 {
 	/* Just creating a device, say in /tmp, is probably a bad idea -

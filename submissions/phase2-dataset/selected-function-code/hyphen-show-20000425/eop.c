@@ -1,3 +1,4 @@
+void eop(void)
   { char gef = FALSE;
     char * ttp, *ttap = NULL,*tgesp, *tcp, *terr;
     int ttapl,ntc;

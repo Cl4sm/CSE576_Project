@@ -1,3 +1,4 @@
+void sc_land_setup_gtk(sc_window_gtk *w) {
 
    sc_land *land = w->c->land;
    sc_land_setup_data_gtk setup;

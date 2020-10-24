@@ -1,3 +1,4 @@
+void
 roa_delete_item(struct roa_table *t, ip_addr prefix, byte pxlen, byte maxlen, u32 asn, byte src)
 {
   struct roa_node *n = fib_find(&t->fib, &prefix, pxlen);

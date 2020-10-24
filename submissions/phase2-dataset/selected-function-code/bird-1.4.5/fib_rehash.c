@@ -1,3 +1,4 @@
+static void
 fib_rehash(struct fib *f, int step)
 {
   unsigned old, new, oldn, newn, ni, nh;

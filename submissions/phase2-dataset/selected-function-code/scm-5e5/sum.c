@@ -1,3 +1,4 @@
+SCM sum(x, y)
      SCM x, y;
 {
   if (UNBNDP(y)) {

@@ -1,3 +1,4 @@
+SCM x_create_window(swin, spos, sargs)
      SCM swin, spos, sargs;
 {
   XPoint position, size;

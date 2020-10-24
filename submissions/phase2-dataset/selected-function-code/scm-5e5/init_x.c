@@ -1,3 +1,4 @@
+void init_x()
 {
   init_iprocs(x_subr3s, tc7_subr_3);
   init_iprocs(x_lsubr2s, tc7_lsubr_2);

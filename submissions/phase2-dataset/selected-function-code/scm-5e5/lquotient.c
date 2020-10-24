@@ -1,3 +1,4 @@
+SCM lquotient(x, y)
      SCM x, y;
 {
   register long z;

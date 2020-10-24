@@ -1,3 +1,4 @@
+static void
 dev_ifa_notify(struct proto *p, unsigned c, struct ifa *ad)
 {
   struct rt_dev_config *P = (void *) p->cf;

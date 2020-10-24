@@ -1,3 +1,4 @@
+static bool _sc_net_cli_recv_sync(sc_config *c, sc_client *cli, sc_packet *packet) {
 /* _sc_net_cli_recv_sync
 
    See sc_net_client_sync() for an overview of the process. This is the tail

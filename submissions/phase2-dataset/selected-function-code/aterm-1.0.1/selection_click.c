@@ -1,3 +1,4 @@
+void
 selection_click(int clicks, int x, int y)
 {
 /*    int             r, c;

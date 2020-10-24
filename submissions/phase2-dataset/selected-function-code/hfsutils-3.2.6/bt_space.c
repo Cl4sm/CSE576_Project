@@ -1,3 +1,4 @@
+int bt_space(btree *bt, unsigned int nrecs)
 {
   unsigned int nnodes;
   long space;

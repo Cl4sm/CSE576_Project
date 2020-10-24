@@ -1,3 +1,4 @@
+void __filesAdd(gchar* filename) {
     gchar* filename_stripped = NULL;
 
     filename_stripped = basename(filename);

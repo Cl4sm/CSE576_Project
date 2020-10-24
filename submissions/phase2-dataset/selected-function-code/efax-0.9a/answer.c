@@ -1,3 +1,4 @@
+int answer ( TFILE *f, char **lkfile, 
 	    int wait, int share, int softaa, 
 	    char *getty, char *vcmd, char *acmd )
 {

@@ -1,3 +1,4 @@
+void sc_land_level_around(const sc_config *c, sc_land *l, int x, int w, int ht) {
 /* sc_land_level_around
    This function levels the land to a uniform height, ht.  This function
    levels the virtual interval [x - w, x + w], inclusive.  No values are

@@ -1,3 +1,4 @@
+void sc_window_auto_defense(sc_window *w_, sc_player *p) {
 /* sc_window_auto_defense
    Display the auto defense window. */
 

@@ -1,3 +1,4 @@
+int
 uxsock_trigger (char * str, char ** reply, int * len, void * trigger_data)
 {
 	struct vectors * vecs;

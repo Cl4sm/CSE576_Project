@@ -1,3 +1,4 @@
+static	void
 BreakArgs(Input, Sender, OutPut)
 	u_char	*Input;
 	u_char	**Sender;

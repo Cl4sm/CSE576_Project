@@ -1,3 +1,4 @@
+  long *
 regex_compile(str, replace)
   char *str;
   char *replace;

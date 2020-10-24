@@ -1,3 +1,4 @@
+int hfs_format(const char *path, int pnum, int mode, const char *vname,
 	       unsigned int nbadblocks, const unsigned long badblocks[])
 {
   hfsvol vol;

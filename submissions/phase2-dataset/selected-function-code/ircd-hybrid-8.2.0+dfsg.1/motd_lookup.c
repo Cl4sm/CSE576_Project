@@ -1,3 +1,4 @@
+static struct Motd *
 motd_lookup(const struct Client *client_p)
 {
   dlink_node *ptr = NULL;

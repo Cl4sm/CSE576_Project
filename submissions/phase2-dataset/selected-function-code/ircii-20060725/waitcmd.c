@@ -1,3 +1,4 @@
+static void
 waitcmd(command, args, subargs)
 	u_char	*command,
 		*args,

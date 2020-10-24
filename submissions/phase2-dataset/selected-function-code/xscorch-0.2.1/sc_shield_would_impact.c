@@ -1,3 +1,4 @@
+bool sc_shield_would_impact(const sc_config *c, const sc_player *owner, const sc_player *p, int traj_flags,
                             double x, double y, double nextx, double nexty) {
 /* sc_shield_would_impact
    When a shield will, to the best of our knowledge, take a hit in the

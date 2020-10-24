@@ -1,3 +1,4 @@
+void * newscalarvol(void * voidtex, vector min, vector max, 
                     int xs, int ys, int zs, const char * fname, 
                     scalarvol * invol) {
   standard_texture * tx, * tex;

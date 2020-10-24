@@ -1,3 +1,4 @@
+static
 SFgetHomeDirs()
 {
 	struct passwd	*pw;

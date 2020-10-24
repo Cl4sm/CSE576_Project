@@ -1,3 +1,4 @@
+static
 int mpeg_remux_packet (mpeg_demux_t *mpeg)
 {
 	int      r;

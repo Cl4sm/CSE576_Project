@@ -1,3 +1,4 @@
+int
 read_solaris_pt(int fd, struct slice all, struct slice *sp, int ns) {
 	struct solaris_x86_vtoc *v;
 	struct solaris_x86_slice *s;

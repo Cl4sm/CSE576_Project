@@ -1,3 +1,4 @@
+void mpath_print_buf_readkeys( struct prin_resp *pr_buff)
 {
 	int i,j,k, num;
 	unsigned char *keyp;

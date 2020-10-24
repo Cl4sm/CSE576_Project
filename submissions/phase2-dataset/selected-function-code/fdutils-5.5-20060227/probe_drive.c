@@ -1,3 +1,4 @@
+int probe_drive(char *devname) {
     char drive_name[17];
     int e,fd,type;
    

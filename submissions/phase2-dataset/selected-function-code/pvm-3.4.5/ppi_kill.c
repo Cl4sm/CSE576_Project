@@ -1,3 +1,4 @@
+int
 ppi_kill(tp, signum)
 	struct task *tp;
 	int signum;

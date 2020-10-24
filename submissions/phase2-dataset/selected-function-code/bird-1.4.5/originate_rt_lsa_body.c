@@ -1,3 +1,4 @@
+static void *
 originate_rt_lsa_body(struct ospf_area *oa, u16 *length)
 {
   struct proto_ospf *po = oa->po;

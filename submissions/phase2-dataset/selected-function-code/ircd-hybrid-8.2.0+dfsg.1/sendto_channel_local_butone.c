@@ -1,3 +1,4 @@
+void
 sendto_channel_local_butone(struct Client *one, unsigned int type, unsigned int cap,
                             struct Channel *chptr, const char *pattern, ...)
 {

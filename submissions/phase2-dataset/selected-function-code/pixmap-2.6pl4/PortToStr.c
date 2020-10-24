@@ -1,3 +1,4 @@
+char *PortToStr( p )
     Port *p;
 {
     char id_str[40];

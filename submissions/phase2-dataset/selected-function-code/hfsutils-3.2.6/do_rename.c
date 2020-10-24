@@ -1,3 +1,4 @@
+static
 int do_rename(hfsvol *vol, int argc, char *argv[], const char *dest)
 {
   hfsdirent ent;

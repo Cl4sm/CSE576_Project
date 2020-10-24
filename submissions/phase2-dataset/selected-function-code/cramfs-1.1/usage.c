@@ -1,3 +1,4 @@
+static void usage(int status)
 {
 	FILE *stream = status ? stderr : stdout;
 

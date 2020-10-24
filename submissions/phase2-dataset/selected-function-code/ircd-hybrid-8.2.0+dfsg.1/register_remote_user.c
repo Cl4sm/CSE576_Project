@@ -1,3 +1,4 @@
+void
 register_remote_user(struct Client *source_p)
 {
   const struct Client *target_p = NULL;

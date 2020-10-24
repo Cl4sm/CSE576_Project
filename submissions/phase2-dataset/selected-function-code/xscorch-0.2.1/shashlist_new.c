@@ -1,3 +1,4 @@
+shashlist *shashlist_new(unsigned int hashsize) {
 /* shashlist_new
    Create and initialize a new shashlist. */
 

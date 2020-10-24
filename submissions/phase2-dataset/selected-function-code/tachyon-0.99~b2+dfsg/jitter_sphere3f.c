@@ -1,3 +1,4 @@
+void jitter_sphere3f(rng_frand_handle *rngh, float *dir) {
   float dx, dy, dz, len, invlen;
   /* In order to correctly sample a sphere, using rays    */
   /* generated randomly within a cube we must throw out   */

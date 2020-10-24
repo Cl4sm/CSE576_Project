@@ -1,3 +1,4 @@
+static void
 proto_feed_more(void *P)
 {
   struct proto *p = P;

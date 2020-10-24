@@ -1,3 +1,4 @@
+extern int
 set_ble_device (vector blist, char * vendor, char * product, int origin)
 {
 	struct blentry_device * ble;

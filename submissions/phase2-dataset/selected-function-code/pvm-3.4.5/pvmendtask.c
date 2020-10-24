@@ -1,3 +1,4 @@
+int
 pvmendtask()
 {
 	int i;

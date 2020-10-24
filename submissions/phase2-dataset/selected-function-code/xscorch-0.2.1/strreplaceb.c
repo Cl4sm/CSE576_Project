@@ -1,3 +1,4 @@
+sizea strreplaceb(char *in_s, const char *src, const char *dst, sizea in_ssize) {
 /* strreplaceb
    Replaces occurrences of src with dst in the string s.  Here, ssize
    is the size of s's buffer; we guarantee that s will terminate with

@@ -1,3 +1,4 @@
+u_char	*
 check_mail()
 {
 #if !defined(AMS_MAIL) && !defined(UNIX_MAIL)

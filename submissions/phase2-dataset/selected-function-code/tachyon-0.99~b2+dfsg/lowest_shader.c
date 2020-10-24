@@ -1,3 +1,4 @@
+color lowest_shader(ray * incident) {
   int numints;
   object const * obj;
   flt t = FHUGE;

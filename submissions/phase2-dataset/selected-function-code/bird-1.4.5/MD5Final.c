@@ -1,3 +1,4 @@
+void MD5Final(unsigned char digest[16], struct MD5Context *ctx)
 {
     unsigned count;
     unsigned char *p;

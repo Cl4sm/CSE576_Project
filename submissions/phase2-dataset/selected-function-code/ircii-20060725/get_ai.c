@@ -1,3 +1,4 @@
+static struct addrinfo *
 get_ai(pai, afd, addr)
 	const struct addrinfo *pai;
 	const struct afd *afd;

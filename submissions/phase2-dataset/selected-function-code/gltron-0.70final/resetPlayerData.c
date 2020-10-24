@@ -1,3 +1,4 @@
+void resetPlayerData(void) {
   int i;
   Data *data;
   AI *ai;

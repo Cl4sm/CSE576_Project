@@ -1,3 +1,4 @@
+void
 channel_modes(struct Channel *chptr, struct Client *client_p, char *mbuf, char *pbuf)
 {
   *mbuf++ = '+';

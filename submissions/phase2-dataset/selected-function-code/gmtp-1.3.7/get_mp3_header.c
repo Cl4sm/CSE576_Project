@@ -1,3 +1,4 @@
+gboolean get_mp3_header(FILE * mp3_file, MP3_header * header_info) {
     uint8_t raw_header[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
     uint32_t framesize = 0;
     uint32_t id3_footer = 0;

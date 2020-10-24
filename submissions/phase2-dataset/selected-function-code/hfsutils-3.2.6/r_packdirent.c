@@ -1,3 +1,4 @@
+void r_packdirent(CatDataRec *data, const hfsdirent *ent)
 {
   switch (data->cdrType)
     {

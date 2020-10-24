@@ -1,3 +1,4 @@
+static u_int32_t bgp_parse_nlri (u_int8_t *buf,
                                  char     *arg)
 {
 	u_int8_t *ptr = buf;

@@ -1,3 +1,4 @@
+int
 tp_sendctl(int fd, u_int f, u_int i, u_char *c) {
 	struct iovec iov[2];
 	ttyprot t;

@@ -1,3 +1,4 @@
+static void _sc_ac_toggle_draw(ScGadget *gadget) {
 /* _sc_ac_toggle_draw
    Draw a toggle, depressed or not. */
 

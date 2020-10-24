@@ -1,3 +1,4 @@
+void *  mpath_pr_event_handler_fn (void * pathp )
 {
 	struct multipath * mpp;
 	int i,j, ret, isFound;

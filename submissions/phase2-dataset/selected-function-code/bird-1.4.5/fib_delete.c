@@ -1,3 +1,4 @@
+void
 fib_delete(struct fib *f, void *E)
 {
   struct fib_node *e = E;

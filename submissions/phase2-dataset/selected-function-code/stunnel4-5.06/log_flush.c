@@ -1,3 +1,4 @@
+void log_flush(LOG_MODE new_mode) {
     struct LIST *tmp;
 
     /* prevent changing LOG_MODE_CONFIGURED to LOG_MODE_ERROR

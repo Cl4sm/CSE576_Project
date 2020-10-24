@@ -1,3 +1,4 @@
+  static long
 he_get_counter(hedit)
   struct he_s *hedit;
   /* Read a counter from the keyboard.  If this is terminated by pressing

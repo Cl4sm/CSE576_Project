@@ -1,3 +1,4 @@
+bool sc_ai_trajectory_line_wind(const sc_config *c, sc_player *p, const sc_player *victim) {
 /* sc_ai_trajectory_line_wind
    Calculates trajectory to the specified coordinates, taking into account
    gravity and wind.  This function assumes we do have a direct line of

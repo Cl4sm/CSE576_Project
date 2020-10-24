@@ -1,3 +1,4 @@
+enum connectmode ansmode ( int *crate, int *hsc )
 {
   enum connectmode mode = NONE ;
   int x=0 ;

@@ -1,3 +1,4 @@
+SFcreateGC()
 {
 	XGCValues	gcValues;
 	XRectangle	rectangles[1];

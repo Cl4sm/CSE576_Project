@@ -1,3 +1,4 @@
+static gboolean _sc_window_keypress_gtk(GtkWidget *widget, GdkEventKey *key, gpointer data) {
 
    sc_window_gtk *w = data;
    sc_player *curplayer = w->c->plorder[w->c->game->curplayer];

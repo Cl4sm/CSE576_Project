@@ -1,3 +1,4 @@
+int bind_ports(void) {
     SERVICE_OPTIONS *opt;
     char *local_address;
     int listening_section;

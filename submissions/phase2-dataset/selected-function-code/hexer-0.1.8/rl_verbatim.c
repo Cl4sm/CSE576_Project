@@ -1,3 +1,4 @@
+  static void
 rl_verbatim(void)
 {
   int key;

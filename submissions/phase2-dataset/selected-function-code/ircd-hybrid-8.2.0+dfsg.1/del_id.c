@@ -1,3 +1,4 @@
+static int
 del_id(struct Channel *chptr, char *banid, unsigned int type)
 {
   dlink_list *list = NULL;

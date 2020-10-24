@@ -1,3 +1,4 @@
+static void
 prelink_ent (struct prelink_entry *ent)
 {
   int i, j;

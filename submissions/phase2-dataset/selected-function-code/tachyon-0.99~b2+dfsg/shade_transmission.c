@@ -1,3 +1,4 @@
+color shade_transmission(ray * incident, const shadedata * shadevars, flt trans) {
   ray transray;
   color col;
 

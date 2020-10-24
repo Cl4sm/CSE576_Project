@@ -1,3 +1,4 @@
+int
 get_target_port_group(int fd)
 {
 	unsigned char		*buf;

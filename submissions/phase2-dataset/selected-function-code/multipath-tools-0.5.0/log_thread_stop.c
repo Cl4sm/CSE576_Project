@@ -1,3 +1,4 @@
+void log_thread_stop (void)
 {
 	logdbg(stderr,"enter log_thread_stop\n");
 

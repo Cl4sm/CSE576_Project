@@ -1,3 +1,4 @@
+int
 re_compile_fastmap (bufp)
      struct re_pattern_buffer *bufp;
 {

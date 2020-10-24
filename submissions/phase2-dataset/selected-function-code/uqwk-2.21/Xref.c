@@ -1,3 +1,4 @@
+int Xref (s)
 char *s;
 /*
  *  Process an Xref line.

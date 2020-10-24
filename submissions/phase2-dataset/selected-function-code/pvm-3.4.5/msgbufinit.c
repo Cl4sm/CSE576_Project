@@ -1,3 +1,4 @@
+int
 msgbufinit(buf)
 	char *buf;
 {

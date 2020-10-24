@@ -1,3 +1,4 @@
+extern	void
 set_socket_options(s)
 	int	s;
 {

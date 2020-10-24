@@ -1,3 +1,4 @@
+int
 GetRootDimensions (int *width, int *height)
 {
 #ifndef X_DISPLAY_MISSING

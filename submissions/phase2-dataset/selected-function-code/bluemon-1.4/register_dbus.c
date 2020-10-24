@@ -1,3 +1,4 @@
+DBusConnection* register_dbus()
 {
    DBusError err;
    DBusConnection* conn;

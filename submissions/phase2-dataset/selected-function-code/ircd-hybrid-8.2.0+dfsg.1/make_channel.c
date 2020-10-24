@@ -1,3 +1,4 @@
+struct Channel *
 make_channel(const char *chname)
 {
   struct Channel *chptr = NULL;

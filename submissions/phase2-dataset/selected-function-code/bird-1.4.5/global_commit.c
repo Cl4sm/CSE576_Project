@@ -1,3 +1,4 @@
+static int
 global_commit(struct config *new, struct config *old)
 {
   if (!old)

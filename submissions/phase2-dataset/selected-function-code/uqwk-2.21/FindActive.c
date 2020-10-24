@@ -1,3 +1,4 @@
+struct act_ent *FindActive (c)
 char *c;
 /*
  *  Look for group's active entry given group name

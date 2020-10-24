@@ -1,3 +1,4 @@
+int
 snprint_path (char * line, int len, char * format,
 	     struct path * pp)
 {

@@ -1,3 +1,4 @@
+void
 GameCB(Widget w, int index)
 {
     static long pausedTime;

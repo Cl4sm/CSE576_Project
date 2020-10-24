@@ -1,3 +1,4 @@
+static
 int addchars(const unsigned char *data, register int len)
 {
   register unsigned char c;

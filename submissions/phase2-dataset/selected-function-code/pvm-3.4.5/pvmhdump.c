@@ -1,3 +1,4 @@
+pvmhdump(cp, n, pad)
 	char *cp;		/* bytes */
 	int n;			/* length */
 	char *pad;		/* tag string */

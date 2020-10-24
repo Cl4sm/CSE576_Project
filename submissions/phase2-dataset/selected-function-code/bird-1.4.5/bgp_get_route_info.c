@@ -1,3 +1,4 @@
+void
 bgp_get_route_info(rte *e, byte *buf, ea_list *attrs)
 {
   eattr *p = ea_find(attrs, EA_CODE(EAP_BGP, BA_AS_PATH));

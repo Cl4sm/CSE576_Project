@@ -1,3 +1,4 @@
+void
 scr_reverse_selection(void)
 {
     int		i, col, row, end_row;

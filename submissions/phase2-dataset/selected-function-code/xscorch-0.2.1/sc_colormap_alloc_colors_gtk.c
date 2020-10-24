@@ -1,3 +1,4 @@
+void sc_colormap_alloc_colors_gtk(sc_window_gtk *w) {
 
    sc_color_gtk *colormap = w->colormap;
    sc_color *colors = w->c->colors;

@@ -1,3 +1,4 @@
+static int
 irc_dn_find(const unsigned char *domain, const unsigned char *msg,
             const unsigned char * const *dnptrs,
             const unsigned char * const *lastdnptr)

@@ -1,3 +1,4 @@
+void
 log_commit(int class, buffer *buf)
 {
   struct log_config *l;

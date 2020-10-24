@@ -1,3 +1,4 @@
+void sc_expl_cache_draw(sc_window *w_, int ptr, int centerx, int centery, int rad) {
 /* sc_expl_cache_draw
    Draws the explosion to the screen buffer.  */
 

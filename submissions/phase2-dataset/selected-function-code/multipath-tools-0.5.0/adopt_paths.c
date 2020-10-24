@@ -1,3 +1,4 @@
+extern int
 adopt_paths (vector pathvec, struct multipath * mpp, int get_info)
 {
 	int i;

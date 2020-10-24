@@ -1,3 +1,4 @@
+int main(int argc, char *argv[]) 
 {
   int xfd;
   int buttonStatus = -1;

@@ -1,3 +1,4 @@
+struct iface *
 if_update(struct iface *new)
 {
   struct iface *i;

@@ -1,3 +1,4 @@
+static	int
 create_timer_ref(want)
 	int	want;
 {

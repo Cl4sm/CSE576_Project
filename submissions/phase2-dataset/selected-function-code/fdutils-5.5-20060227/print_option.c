@@ -1,3 +1,4 @@
+static void print_option(struct enh_options *eo, int wordlength)
 {
 	int i, iterations;
 	long number;

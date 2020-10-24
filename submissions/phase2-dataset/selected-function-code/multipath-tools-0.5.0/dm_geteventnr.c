@@ -1,3 +1,4 @@
+int
 dm_geteventnr (char *name)
 {
 	struct dm_task *dmt;

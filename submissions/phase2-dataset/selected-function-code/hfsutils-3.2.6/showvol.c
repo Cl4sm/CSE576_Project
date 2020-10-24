@@ -1,3 +1,4 @@
+static
 int showvol(mountent *ment)
 {
   hfsvol *vol;

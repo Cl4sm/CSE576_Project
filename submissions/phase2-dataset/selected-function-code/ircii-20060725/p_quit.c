@@ -1,3 +1,4 @@
+static	void
 p_quit(from, ArgList)
 	u_char	*from,
 		**ArgList;

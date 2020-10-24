@@ -1,3 +1,4 @@
+static	void
 cannot_join_channel(from, ArgList)
 	u_char	*from,	
 		**ArgList;

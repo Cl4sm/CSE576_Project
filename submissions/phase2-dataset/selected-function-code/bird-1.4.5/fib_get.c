@@ -1,3 +1,4 @@
+void *
 fib_get(struct fib *f, ip_addr *a, int len)
 {
   unsigned int h = ipa_hash(*a);

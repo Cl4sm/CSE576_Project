@@ -1,3 +1,4 @@
+static
 void print_option (const mpegd_option_t *opt, unsigned w)
 {
 	unsigned n;

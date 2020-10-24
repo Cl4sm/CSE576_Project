@@ -1,3 +1,4 @@
+void key_normal(int key)
 {
 	char *s=line_start+x_offset;
 	int xtmp;

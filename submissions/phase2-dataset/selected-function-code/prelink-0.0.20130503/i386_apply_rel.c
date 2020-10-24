@@ -1,3 +1,4 @@
+static int
 i386_apply_rel (struct prelink_info *info, GElf_Rel *rel, char *buf)
 {
   GElf_Addr value;

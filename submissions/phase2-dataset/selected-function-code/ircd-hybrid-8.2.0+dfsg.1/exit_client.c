@@ -1,3 +1,4 @@
+void
 exit_client(struct Client *source_p, const char *comment)
 {
   dlink_node *m = NULL;

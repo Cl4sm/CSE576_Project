@@ -1,3 +1,4 @@
+unsigned long 
 getColor(Context, num)
 Sundata *        Context;
 int              num;

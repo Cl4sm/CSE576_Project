@@ -1,3 +1,4 @@
+int dl_append(dlist *list, const char *str)
 {
   size_t len;
 

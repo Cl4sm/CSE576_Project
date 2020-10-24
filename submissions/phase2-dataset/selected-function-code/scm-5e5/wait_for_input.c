@@ -1,3 +1,4 @@
+SCM wait_for_input(args)
      SCM args;
 {
   SCM how_long, port1, port, ports, ans = EOL;

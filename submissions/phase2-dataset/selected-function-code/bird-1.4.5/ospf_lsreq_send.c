@@ -1,3 +1,4 @@
+void
 ospf_lsreq_send(struct ospf_neighbor *n)
 {
   snode *sn;

@@ -1,3 +1,4 @@
+double meanphase(sdate, phase, usek)
 double sdate, phase;
 double *usek;
 {

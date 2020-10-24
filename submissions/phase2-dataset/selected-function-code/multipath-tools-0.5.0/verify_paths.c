@@ -1,3 +1,4 @@
+extern int
 verify_paths(struct multipath * mpp, struct vectors * vecs, vector rpvec)
 {
 	struct path * pp;

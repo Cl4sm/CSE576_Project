@@ -1,3 +1,4 @@
+extern int
 select_getuid (struct path * pp)
 {
 	if (pp->hwe && pp->hwe->uid_attribute) {

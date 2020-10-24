@@ -1,3 +1,4 @@
+void sc_land_create_dirt(const sc_config *c, sc_land *l, const int *xlist, const int *ylist, int size) {
 /* sc_land_create_dirt
    This function creates dirt at each of the virtual coordinates in the
    lists of coordinates given.  xlist and ylist are list of (x, y) virtual

@@ -1,3 +1,4 @@
+static int readFile(PixmapWidget PW, String filename)
 #else
 static int readFile(PW, filename)
     PixmapWidget PW;

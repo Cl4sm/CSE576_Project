@@ -1,3 +1,4 @@
+static int
 prelink_save_cache_check (struct prelink_entry *ent)
 {
   int i;

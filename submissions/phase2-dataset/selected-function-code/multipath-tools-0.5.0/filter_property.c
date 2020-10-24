@@ -1,3 +1,4 @@
+int
 filter_property(struct config * conf, struct udev_device * udev)
 {
 	const char *devname = udev_device_get_sysname(udev);

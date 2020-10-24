@@ -1,3 +1,4 @@
+sc_trajectory *sc_traj_new_power_angle(const sc_config *c, const sc_player *p, int flags,
                                        double centerx, double centery,
                                        double power, double angle) {
 /* sc_traj_new_power_angle

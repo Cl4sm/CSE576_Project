@@ -1,3 +1,4 @@
+int iet_prio(const char *dev, char * args)
 {
 	char preferredip_buff[255] = "";
 	char *preferredip = &preferredip_buff[0];

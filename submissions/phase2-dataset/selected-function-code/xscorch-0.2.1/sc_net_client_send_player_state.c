@@ -1,3 +1,4 @@
+bool sc_net_client_send_player_state(const sc_config *c, sc_client *cli) {
 
    const sc_player *pl;    /* Player data */
    sc_packet packet;       /* Packet to send */

@@ -1,3 +1,4 @@
+SCM make_xwindow(display, screen_number, win, pxmp, rootp)
      SCM display;
      int screen_number;
      Drawable win;

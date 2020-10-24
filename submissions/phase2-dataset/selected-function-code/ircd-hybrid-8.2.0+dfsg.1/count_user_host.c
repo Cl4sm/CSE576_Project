@@ -1,3 +1,4 @@
+void
 count_user_host(const char *user, const char *host, unsigned int *global_p,
                 unsigned int *local_p, unsigned int *icount_p)
 {

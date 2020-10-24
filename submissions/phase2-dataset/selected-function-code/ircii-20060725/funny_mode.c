@@ -1,3 +1,4 @@
+void
 funny_mode(from, ArgList)
 	u_char	*from,
 		**ArgList;

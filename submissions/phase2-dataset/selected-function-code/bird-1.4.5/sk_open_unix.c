@@ -1,3 +1,4 @@
+int
 sk_open_unix(sock *s, char *name)
 {
   struct sockaddr_un sa;

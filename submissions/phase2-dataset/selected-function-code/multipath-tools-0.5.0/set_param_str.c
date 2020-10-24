@@ -1,3 +1,4 @@
+static char *
 set_param_str(char * str)
 {
 	char * dst;

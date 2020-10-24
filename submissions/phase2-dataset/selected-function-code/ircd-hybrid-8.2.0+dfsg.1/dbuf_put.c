@@ -1,3 +1,4 @@
+void
 dbuf_put(struct dbuf_queue *queue, const char *buf, size_t sz)
 {
   while (sz > 0)

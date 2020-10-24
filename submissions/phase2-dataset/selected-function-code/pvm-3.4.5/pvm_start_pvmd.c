@@ -1,3 +1,4 @@
+int
 pvm_start_pvmd(argc, argv, block)
 	int argc;		/* number of args to pass to pvmd (>= 0) */
 	char **argv;	/* args for pvmd or null */

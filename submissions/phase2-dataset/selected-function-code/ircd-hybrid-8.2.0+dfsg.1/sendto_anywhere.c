@@ -1,3 +1,4 @@
+void
 sendto_anywhere(struct Client *to, struct Client *from,
                 const char *command,
                 const char *pattern, ...)

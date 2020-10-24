@@ -1,3 +1,4 @@
+static void _device_set_property(GObject *object, guint property_id, const GValue *value, GParamSpec *pspec)
 {
 	Device *self = DEVICE(object);
 	GError *error = NULL;

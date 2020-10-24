@@ -1,3 +1,4 @@
+void print_result(struct floppy_raw_cmd *raw_cmd, long long date)
 {
 	int i;
 

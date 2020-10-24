@@ -1,3 +1,4 @@
+static	void
 timercmd(command, args, subargs)
 	u_char	*command,
 		*args,

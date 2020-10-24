@@ -1,3 +1,4 @@
+SCM append(args)
      SCM args;
 {
 	SCM res = EOL;

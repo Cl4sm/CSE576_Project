@@ -1,3 +1,4 @@
+NOEXPORT int daemonize(int fd) { /* go to background */
     if(global_options.option.foreground)
         return 0;
     dup2(fd, 0);

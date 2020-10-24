@@ -1,3 +1,4 @@
+void writetgaregion(void * voidhandle, int startx, int starty, 
                     int stopx, int stopy, unsigned char * buffer) {
   int x, y, totalx, totaly, xbytes, widthbytes, regionstart;
   unsigned char * bufpos;

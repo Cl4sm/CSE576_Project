@@ -1,3 +1,4 @@
+int
 sysfs_get_timeout(struct path *pp, unsigned int *timeout)
 {
 	const char *attr = NULL;

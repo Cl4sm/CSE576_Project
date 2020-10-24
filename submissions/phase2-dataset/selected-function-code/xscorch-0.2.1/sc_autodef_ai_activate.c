@@ -1,3 +1,4 @@
+bool sc_autodef_ai_activate(const sc_config *c, sc_player *p) {
 /* sc_autodef_ai_activate
    Activate an AI's Auto Defense system.
    Do NOT call game_rand from this function!  You have been warned! */

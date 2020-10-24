@@ -1,3 +1,4 @@
+char *
 getblock (int fd, unsigned int secnr) {
 	struct block *bp;
 

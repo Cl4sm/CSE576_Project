@@ -1,3 +1,4 @@
+static void
 ospf_rt_notify(struct proto *p, rtable *tbl UNUSED, net * n, rte * new, rte * old UNUSED, ea_list * attrs)
 {
   struct proto_ospf *po = (struct proto_ospf *) p;

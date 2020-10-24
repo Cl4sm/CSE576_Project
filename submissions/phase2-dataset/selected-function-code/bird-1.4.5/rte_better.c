@@ -1,3 +1,4 @@
+static int				/* Actually better or at least as good as */
 rte_better(rte *new, rte *old)
 {
   int (*better)(rte *, rte *);

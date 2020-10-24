@@ -1,3 +1,4 @@
+int
 main (int argc, char **argv)
 {
    char line[256], *file = NULL;

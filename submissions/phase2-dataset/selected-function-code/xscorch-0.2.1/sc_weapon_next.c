@@ -1,3 +1,4 @@
+sc_weapon_info *sc_weapon_next(const sc_weapon_config *wc, const sc_weapon_info *info, int flags) {
 /* sc_weapon_next
    Advance to the next/prev weapon in the list (with wrapping).  */
 

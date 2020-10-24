@@ -1,3 +1,4 @@
+int tgetd ( TFILE *f, int t )
 { 
   int c ;
 

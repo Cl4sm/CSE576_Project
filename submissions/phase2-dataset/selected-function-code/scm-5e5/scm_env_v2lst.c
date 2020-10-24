@@ -1,3 +1,4 @@
+void scm_env_v2lst(argc, argv)
      long argc;
      SCM *argv;
 {

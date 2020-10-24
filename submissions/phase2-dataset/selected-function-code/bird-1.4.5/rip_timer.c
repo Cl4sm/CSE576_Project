@@ -1,3 +1,4 @@
+static void
 rip_timer(timer *t)
 {
   struct proto *p = t->data;

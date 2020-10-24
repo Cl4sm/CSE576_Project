@@ -1,3 +1,4 @@
+int dm_reassign_table(const char *name, char *old, char *new)
 {
 	int r, modified = 0;
 	uint64_t start, length;

@@ -1,3 +1,4 @@
+void
 parseargs(int *argc, char ***argv, struct lgetopt *opts)
 {
   const char *progname = (*argv)[0];

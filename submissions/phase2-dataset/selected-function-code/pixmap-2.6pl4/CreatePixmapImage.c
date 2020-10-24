@@ -1,3 +1,4 @@
+XImage *CreatePixmapImage(PW, width, height)
     PixmapWidget PW;
     Dimension width, height;
 {

@@ -1,3 +1,4 @@
+void
 xterm_seq(int op, const char *str)
 {
     int color;

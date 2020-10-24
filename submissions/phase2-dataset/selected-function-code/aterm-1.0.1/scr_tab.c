@@ -1,3 +1,4 @@
+void
 scr_tab(int count)
 {
     int             i, x;

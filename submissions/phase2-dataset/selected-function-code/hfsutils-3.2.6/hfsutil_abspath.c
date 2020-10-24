@@ -1,3 +1,4 @@
+char *hfsutil_abspath(const char *path)
 {
   char *cwd, *buf;
   size_t len;

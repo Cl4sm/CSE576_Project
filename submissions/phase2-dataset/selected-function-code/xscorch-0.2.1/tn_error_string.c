@@ -1,3 +1,4 @@
+const char *tn_error_string(tn_connection *tnc) {
 /*
  * tn_error_string
  * Generate a string describing the connection state.

@@ -1,3 +1,4 @@
+SCM force(x)
      SCM x;
 {
  tail:

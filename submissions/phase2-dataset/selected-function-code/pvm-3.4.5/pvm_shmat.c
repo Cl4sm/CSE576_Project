@@ -1,3 +1,4 @@
+char *
 pvm_shmat ( sseg )
 struct segdesc *sseg;
 {

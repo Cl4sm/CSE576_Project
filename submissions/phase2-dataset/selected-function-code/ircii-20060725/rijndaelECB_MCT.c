@@ -1,3 +1,4 @@
+static void rijndaelECB_MCT (FILE *fp, const char *initKey, int keyLength,
 	const char *initBlock, int blockLength, BYTE direction)
 {
 	int i, j;

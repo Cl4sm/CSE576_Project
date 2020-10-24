@@ -1,3 +1,4 @@
+void DoSymbolicName()
 {
   char *s_name;
   char message[80];

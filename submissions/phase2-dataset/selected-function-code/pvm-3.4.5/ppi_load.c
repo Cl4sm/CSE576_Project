@@ -1,3 +1,4 @@
+int
 ppi_load(wxp)
 	struct waitc_spawn *wxp;
 {

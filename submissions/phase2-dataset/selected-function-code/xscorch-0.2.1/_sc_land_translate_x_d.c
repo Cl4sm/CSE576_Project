@@ -1,3 +1,4 @@
+static inline bool _sc_land_translate_x_d(const sc_land *l, double *x) {
 /* _sc_land_translate_x_d
    This function is identical to above, but uses doubles.  */
 

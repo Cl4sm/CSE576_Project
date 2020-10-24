@@ -1,3 +1,4 @@
+void sc_tools_init(void)
 {
   long int i;
   double t;

@@ -1,3 +1,4 @@
+vector
 read_value_block(void)
 {
 	char *buf;

@@ -1,3 +1,4 @@
+int compute_all_sequences(struct params *fd, 
 			  int tracksize,
 			  int sizecode,
 			  int gap,

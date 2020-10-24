@@ -1,3 +1,4 @@
+static yy_state_type yy_get_previous_state()
 	{
 	register yy_state_type yy_current_state;
 	register char *yy_cp;

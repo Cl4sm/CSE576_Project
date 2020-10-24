@@ -1,3 +1,4 @@
+int
 pvm_parent()
 {
 	int cc;

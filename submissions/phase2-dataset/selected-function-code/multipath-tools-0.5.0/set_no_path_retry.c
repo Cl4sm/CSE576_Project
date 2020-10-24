@@ -1,3 +1,4 @@
+extern void
 set_no_path_retry(struct multipath *mpp)
 {
 	mpp->retry_tick = 0;

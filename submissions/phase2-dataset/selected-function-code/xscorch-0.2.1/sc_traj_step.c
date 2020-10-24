@@ -1,3 +1,4 @@
+sc_trajectory_result sc_traj_step(sc_config *c, sc_trajectory *tr, int flags,
                                   sc_trajectory_action action, void *data) {
 /* sc_traj_step
    Run one step of a trajectory.  Used for code that intends to

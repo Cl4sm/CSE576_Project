@@ -1,3 +1,4 @@
+Window GetVRoot(dpy)
      Display *dpy;
 {
   int          i;

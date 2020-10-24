@@ -1,3 +1,4 @@
+GList* playlist_TrackList_GetSelection() {
     GList *selectedFiles, *ptr;
     GtkTreeRowReference *ref;
     GtkTreeModel *model;

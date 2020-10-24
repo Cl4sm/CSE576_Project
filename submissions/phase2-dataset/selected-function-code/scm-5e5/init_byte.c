@@ -1,3 +1,4 @@
+void init_byte()
 {
   init_iprocs(subr1s, tc7_subr_1);
   init_iprocs(subr2os, tc7_subr_2o);

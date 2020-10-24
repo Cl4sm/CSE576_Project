@@ -1,3 +1,4 @@
+int
 delete_capability(const char *capab_name)
 {
   dlink_node *ptr = NULL, *ptr_next = NULL;

@@ -1,3 +1,4 @@
+static double _sc_traj_angle(__libj_unused double gravity, __libj_unused double wind,
                              __libj_unused double visc,
                              double deltax, double deltay,
                              double height) {

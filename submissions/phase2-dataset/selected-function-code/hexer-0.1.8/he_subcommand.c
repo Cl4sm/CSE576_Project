@@ -1,3 +1,4 @@
+  void
 he_subcommand(hedit, type, position, count, data)
   struct he_s *hedit;
   int type;

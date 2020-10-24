@@ -1,3 +1,4 @@
+static gboolean _sc_autodef_guidance_enter_gtk(__libj_unused ScActiveConsole *cons,
                                                ScActiveConsoleSpot *spot,
                                                sc_auto_def_gtk *adg) {
 /* _sc_autodef_guidance_enter_gtk

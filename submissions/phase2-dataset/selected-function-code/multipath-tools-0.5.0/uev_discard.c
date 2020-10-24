@@ -1,3 +1,4 @@
+static int
 uev_discard(char * devpath)
 {
 	char *tmp;

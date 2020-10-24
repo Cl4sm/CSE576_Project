@@ -1,3 +1,4 @@
+static int sendpacket(sendip_data *data, char *hostname, int af_type,
 							 bool verbose) {
 	_sockaddr_storage *to = malloc(sizeof(_sockaddr_storage));
 	int tolen;

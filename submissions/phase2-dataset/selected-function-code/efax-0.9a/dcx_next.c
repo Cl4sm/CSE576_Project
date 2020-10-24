@@ -1,3 +1,4 @@
+int dcx_next ( IFILE *f )
 {
   int err=0 ;
   long thisp, nextp ;

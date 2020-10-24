@@ -1,3 +1,4 @@
+extern int
 select_flush_on_last_del(struct multipath *mp)
 {
 	if (mp->flush_on_last_del == FLUSH_IN_PROGRESS)

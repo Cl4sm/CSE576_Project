@@ -1,3 +1,4 @@
+void DrawSquare(PW, x, y, color)
      PixmapWidget PW;
      Position x, y;
      Pixel color;

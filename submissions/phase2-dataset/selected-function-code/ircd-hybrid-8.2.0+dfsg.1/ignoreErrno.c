@@ -1,3 +1,4 @@
+int
 ignoreErrno(int ierrno)
 {
   switch (ierrno)

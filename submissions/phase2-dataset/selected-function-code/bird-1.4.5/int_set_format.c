@@ -1,3 +1,4 @@
+int
 int_set_format(struct adata *set, int way, int from, byte *buf, unsigned int size)
 {
   u32 *z = (u32 *) set->data;

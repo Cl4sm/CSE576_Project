@@ -1,3 +1,4 @@
+int SLbNews (char *fn)
 {
 	FILE *fd;
 	int  bytes, rval=0;

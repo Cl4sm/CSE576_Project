@@ -1,3 +1,4 @@
+static int
 coalesce_maps(struct vectors *vecs, vector nmpv)
 {
 	struct multipath * ompp;

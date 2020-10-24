@@ -1,3 +1,4 @@
+int f_flush(hfsfile *file)
 {
   hfsvol *vol = file->vol;
 

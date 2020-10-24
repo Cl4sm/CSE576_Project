@@ -1,3 +1,4 @@
+int 
 read_dasd_pt(int fd, struct slice all, struct slice *sp, int ns)
 {
 	int retval = -1;

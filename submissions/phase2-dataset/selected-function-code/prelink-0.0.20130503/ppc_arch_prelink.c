@@ -1,3 +1,4 @@
+static int
 ppc_arch_prelink (struct prelink_info *info)
 {
   DSO *dso = info->dso;

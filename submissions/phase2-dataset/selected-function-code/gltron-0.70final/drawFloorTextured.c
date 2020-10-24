@@ -1,3 +1,4 @@
+int drawFloorTextured(int grid_size, GLuint texture) {
   int i, j, l, t;
   
   glEnable(GL_BLEND);

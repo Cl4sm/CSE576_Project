@@ -1,3 +1,4 @@
+static void
 neigh_chstate(struct ospf_neighbor *n, u8 state)
 {
   u8 oldstate;

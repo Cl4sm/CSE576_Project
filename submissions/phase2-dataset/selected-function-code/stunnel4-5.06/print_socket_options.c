@@ -1,3 +1,4 @@
+NOEXPORT int print_socket_options(void) {
     int fd;
     socklen_t optlen;
     SOCK_OPT *ptr;

@@ -1,3 +1,4 @@
+void
 tev_send_endtask( dst, ctx, tag, tid, status, usec, uusec, ssec, susec )
 	int dst;
 	int ctx;

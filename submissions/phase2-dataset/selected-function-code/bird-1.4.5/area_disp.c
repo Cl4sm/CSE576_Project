@@ -1,3 +1,4 @@
+void
 area_disp(struct ospf_area *oa)
 {
   struct proto_ospf *po = oa->po;

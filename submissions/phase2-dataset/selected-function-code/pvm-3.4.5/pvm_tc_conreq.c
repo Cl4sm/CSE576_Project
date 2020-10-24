@@ -1,3 +1,4 @@
+static int
 pvm_tc_conreq(mid)
 	int mid;
 {

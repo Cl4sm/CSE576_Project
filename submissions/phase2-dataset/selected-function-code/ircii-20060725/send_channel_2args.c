@@ -1,3 +1,4 @@
+static	void
 send_channel_2args(command, args, subargs)
 	u_char	*command,
 		*args,

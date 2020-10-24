@@ -1,3 +1,4 @@
+void writeHistory() 
 {
   FILE *fp;
 

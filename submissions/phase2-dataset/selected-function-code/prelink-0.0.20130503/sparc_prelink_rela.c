@@ -1,3 +1,4 @@
+static int
 sparc_prelink_rela (struct prelink_info *info, GElf_Rela *rela,
 		    GElf_Addr relaaddr)
 {

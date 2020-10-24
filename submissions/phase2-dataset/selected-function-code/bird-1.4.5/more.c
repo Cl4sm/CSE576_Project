@@ -1,3 +1,4 @@
+void
 more(void)
 {
   more_begin();

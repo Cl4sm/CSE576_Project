@@ -1,3 +1,4 @@
+int do_mount(char *devname,char *_mountpoint,
              int flags,int force,int is_default,int drivetype) 
 {
     int fd,e,fstype;

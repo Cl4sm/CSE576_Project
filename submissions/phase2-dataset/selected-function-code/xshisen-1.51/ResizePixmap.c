@@ -1,3 +1,4 @@
+Pixmap
 ResizePixmap(Pixmap original, GC gc,
              unsigned int new_width, unsigned int new_height)
 {

@@ -1,3 +1,4 @@
+static void
 times_init(struct birdloop *loop)
 {
   struct timespec ts;

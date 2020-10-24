@@ -1,3 +1,4 @@
+static char * number(char * str, long num, int base, int size, int precision,
 	int type, int remains)
 {
 	char c,sign,tmp[66];

@@ -1,3 +1,4 @@
+int
 remove_redundant_cxx_conflicts (struct prelink_info *info)
 {
   int i, j, k, n, o, state, removed = 0;

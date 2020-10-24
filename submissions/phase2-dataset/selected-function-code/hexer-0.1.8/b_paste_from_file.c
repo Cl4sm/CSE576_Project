@@ -1,3 +1,4 @@
+  long
 b_paste_from_file(buffer, filename, position)
   Buffer *buffer;
   char *filename;

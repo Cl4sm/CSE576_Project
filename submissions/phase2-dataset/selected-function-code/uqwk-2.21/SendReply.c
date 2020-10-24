@@ -1,3 +1,4 @@
+int SendReply ()
 {
 	FILE    *pfd;
 	unsigned char    c;

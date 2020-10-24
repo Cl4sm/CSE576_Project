@@ -1,3 +1,4 @@
+int SLNPReply ()
 {
 	char fname[PATH_LEN], kind[PATH_LEN], type[PATH_LEN];
 	int rval=0;

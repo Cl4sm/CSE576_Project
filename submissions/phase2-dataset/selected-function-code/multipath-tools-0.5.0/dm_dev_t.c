@@ -1,3 +1,4 @@
+static int
 dm_dev_t (const char * mapname, char * dev_t, int len)
 {
 	int r = 1;

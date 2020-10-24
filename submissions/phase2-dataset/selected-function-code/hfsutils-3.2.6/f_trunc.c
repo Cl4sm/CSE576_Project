@@ -1,3 +1,4 @@
+int f_trunc(hfsfile *file)
 {
   hfsvol *vol = file->vol;
   ExtDataRec *extrec;

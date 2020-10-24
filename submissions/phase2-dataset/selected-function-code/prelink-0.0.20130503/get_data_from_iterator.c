@@ -1,3 +1,4 @@
+unsigned char *
 get_data_from_iterator (struct data_iterator *it, GElf_Addr size)
 {
   unsigned char *ptr;

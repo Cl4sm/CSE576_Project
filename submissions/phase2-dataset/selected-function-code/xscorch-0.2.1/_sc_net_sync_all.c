@@ -1,3 +1,4 @@
+static bool _sc_net_sync_all(sc_server *srv) {
 /* _sc_net_sync_all
 
    I think you want to read snetclient.c (search for "_sync") before looking

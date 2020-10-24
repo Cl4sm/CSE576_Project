@@ -1,3 +1,4 @@
+bool sc_expl_annihilate(sc_config *c, sc_explosion *e) {
 /* sc_expl_annihilate
    Annihilate a section of the screen by drawing a huge explosion to it.
    This function is called to initiate animation of the explosion and

@@ -1,3 +1,4 @@
+char *
 num2str(value, string, dms)
 double value;
 char *string;

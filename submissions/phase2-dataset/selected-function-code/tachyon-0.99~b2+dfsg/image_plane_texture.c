@@ -1,3 +1,4 @@
+color image_plane_texture(const vector * hit, const texture * tx, const ray * ry) {
   vector pnt;
   flt u, v, miprad, maxscale;
   standard_texture * tex = (standard_texture *) tx;

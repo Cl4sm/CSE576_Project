@@ -1,3 +1,4 @@
+void sc_console_set_fonts(ScConsole *cons, GdkFont *font, GdkFont *boldfont) {
 /* sc_console_set_fonts
    Update the fonts installed for this console.  Neither font pointer
    should be NULL.  The currently-installed fonts will be unreferenced,

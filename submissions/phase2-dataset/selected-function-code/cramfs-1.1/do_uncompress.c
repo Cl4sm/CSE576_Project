@@ -1,3 +1,4 @@
+static void do_uncompress(char *path, int fd, unsigned long offset, unsigned long size)
 {
 	unsigned long curr = offset + 4 * ((size + PAGE_CACHE_SIZE - 1) / PAGE_CACHE_SIZE);
 

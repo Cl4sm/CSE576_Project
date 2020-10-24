@@ -1,3 +1,4 @@
+static	IrcCommand *
 find_command(com, cnt)
 	u_char	*com;
 	int	*cnt;

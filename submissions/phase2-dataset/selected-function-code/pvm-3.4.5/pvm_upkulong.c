@@ -1,3 +1,4 @@
+int
 pvm_upkulong(np, cnt, std)
 	unsigned long *np;
 	int cnt;

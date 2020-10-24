@@ -1,3 +1,4 @@
+int
 pmsg_packbody(mp, mp2)
 	struct pmsg *mp;		/* message to pack into */
 	struct pmsg *mp2;		/* message to include body of */

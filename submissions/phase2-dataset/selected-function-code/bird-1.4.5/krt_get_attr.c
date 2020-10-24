@@ -1,3 +1,4 @@
+static int
 krt_get_attr(eattr * a, byte * buf, int buflen UNUSED)
 {
   switch (a->id)

@@ -1,3 +1,4 @@
+bool _sc_weapon_read_item(sc_weapon_config *wc, reg *reader, reg_var *item) {
 /* _sc_weapon_read_item
    Read a weapon info and insert it into the registry. */
 

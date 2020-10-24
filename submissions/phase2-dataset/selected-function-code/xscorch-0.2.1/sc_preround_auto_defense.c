@@ -1,3 +1,4 @@
+bool sc_preround_auto_defense(struct _sc_config *c, struct _sc_player *p) {
 /* sc_preround_auto_defense
    Run the auto defense screen in pre-round mode.
    Will return true if a wait is expected. */

@@ -1,3 +1,4 @@
+static bool _sc_net_client_send_name(sc_client *cli) {
 /* _sc_net_client_send_name
    Send the name of this player to the server. This packet is usually sent
    out immediately after the ACCEPTED packet is received from the server,

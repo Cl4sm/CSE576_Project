@@ -1,3 +1,4 @@
+  int
 tio_echo(on)
   int on;
   /* on=1:  characters are echoed as they are typed.

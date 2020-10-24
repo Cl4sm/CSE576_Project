@@ -1,3 +1,4 @@
+static sizet scm_read_token(ic, tok_buf, port, flgs)
      int ic;
      SCM tok_buf;
      SCM port;

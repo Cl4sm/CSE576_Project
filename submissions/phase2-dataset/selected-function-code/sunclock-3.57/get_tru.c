@@ -1,3 +1,4 @@
+int get_tru(char* pos)
 {
 	char* tmpp;
 	int i = 1;

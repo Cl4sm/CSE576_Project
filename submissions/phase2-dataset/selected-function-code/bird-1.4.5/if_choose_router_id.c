@@ -1,3 +1,4 @@
+u32
 if_choose_router_id(struct iface_patt *mask, u32 old_id)
 {
 #ifndef IPV6

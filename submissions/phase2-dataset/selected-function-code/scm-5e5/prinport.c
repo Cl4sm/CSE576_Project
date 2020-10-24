@@ -1,3 +1,4 @@
+void prinport(exp, port, type)
      SCM exp; SCM port; char *type;
 {
   int filn = fileno(STREAM(exp));

@@ -1,3 +1,4 @@
+NOEXPORT int hostport2addrlist(SOCKADDR_LIST *addr_list,
         char *host_name, char *port_name) {
     struct addrinfo hints, *res=NULL, *cur;
     int err, retries=0;

@@ -1,3 +1,4 @@
+int rt_threadlaunch(int numprocs, void *clientdata, void * fctn(void *),
                     rt_tasktile_t *tile) {
   rt_shared_iterator_t iter;
   rt_threadlaunch_t *parms=NULL;

@@ -1,3 +1,4 @@
+static void parse_option_table(struct enh_options *eo)
 {
 	int i;
 	char *ptr;

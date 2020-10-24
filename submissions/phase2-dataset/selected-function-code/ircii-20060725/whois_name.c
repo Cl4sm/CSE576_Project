@@ -1,3 +1,4 @@
+void
 whois_name(from, ArgList)
 	u_char	*from;
 	u_char	**ArgList;

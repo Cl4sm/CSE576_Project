@@ -1,3 +1,4 @@
+void
 doTimeout(Context)
 struct Sundata * Context;
 {

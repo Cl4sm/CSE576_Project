@@ -1,3 +1,4 @@
+static	void
 dcc_close(args)
 	u_char	*args;
 {

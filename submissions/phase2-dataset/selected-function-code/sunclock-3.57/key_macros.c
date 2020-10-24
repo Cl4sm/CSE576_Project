@@ -1,3 +1,4 @@
+void key_macros(int record)
 {
 	char *s=mbuf;
 	int k;

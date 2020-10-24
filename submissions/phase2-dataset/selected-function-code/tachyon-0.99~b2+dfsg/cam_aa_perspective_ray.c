@@ -1,3 +1,4 @@
+color cam_aa_perspective_ray(ray * ry, flt x, flt y) {
   color col, avcol;
   int alias; 
   scenedef * scene=ry->scene;

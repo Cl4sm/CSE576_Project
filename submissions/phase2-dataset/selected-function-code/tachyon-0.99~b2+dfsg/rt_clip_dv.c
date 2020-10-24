@@ -1,3 +1,4 @@
+void rt_clip_dv(SceneHandle voidscene, int numplanes, const double *planes) {
   list * lst;
   clip_group * clip; 
   int i;

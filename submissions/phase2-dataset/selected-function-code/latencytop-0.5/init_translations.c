@@ -1,3 +1,4 @@
+void init_translations(char *filename)
 {
 	char *c, *c2;
 	FILE *file;

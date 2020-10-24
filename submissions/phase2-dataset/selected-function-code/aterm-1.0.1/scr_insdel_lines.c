@@ -1,3 +1,4 @@
+void
 scr_insdel_lines(int count, int insdel)
 {
     int             end;

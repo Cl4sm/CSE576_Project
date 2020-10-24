@@ -1,3 +1,4 @@
+static inline void _sc_window_draw_land_gtk(sc_window_gtk *w, int x1, int y1, int x2, int y2) {
 /* sc_window_draw_land_gtk
    This is a wrapper for the above two functions, which will select the
    appropriate function based on the number of pixels needing update.  This

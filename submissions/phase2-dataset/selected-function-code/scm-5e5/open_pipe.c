@@ -1,3 +1,4 @@
+SCM open_pipe(pipestr, modes)
      SCM pipestr, modes;
 {
 	FILE *f;

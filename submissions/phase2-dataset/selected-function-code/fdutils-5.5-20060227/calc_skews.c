@@ -1,3 +1,4 @@
+int calc_skews(struct params *fd0, struct params *fd, int n)
 {	
 	int cylinder, head;
 	struct params *f = NULL;

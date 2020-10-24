@@ -1,3 +1,4 @@
+int rt_tilestack_push(rt_tilestack_t *s, const rt_tasktile_t *t) {
 #if defined(THR)
   rt_mutex_lock(&s->mtx);
 #endif

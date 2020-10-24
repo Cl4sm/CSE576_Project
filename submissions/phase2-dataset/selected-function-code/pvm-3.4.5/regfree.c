@@ -1,3 +1,4 @@
+void
 regfree (preg)
     regex_t *preg;
 {

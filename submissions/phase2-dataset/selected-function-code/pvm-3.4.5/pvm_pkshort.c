@@ -1,3 +1,4 @@
+int
 pvm_pkshort(np, cnt, std)
 	short *np;
 	int cnt;

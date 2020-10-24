@@ -1,3 +1,4 @@
+struct MaskItem *
 find_conf_name(dlink_list *list, const char *name, enum maskitem_type type)
 {
   dlink_node *ptr;

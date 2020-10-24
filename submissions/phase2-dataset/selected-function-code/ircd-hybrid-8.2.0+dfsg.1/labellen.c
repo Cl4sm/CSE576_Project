@@ -1,3 +1,4 @@
+static int
 labellen(const unsigned char *lp)
 {                               
   int bitlen;

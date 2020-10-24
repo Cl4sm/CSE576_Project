@@ -1,3 +1,4 @@
+static void do_file(char *path, struct cramfs_inode *i)
 {
 	unsigned long offset = i->offset << 2;
 	int fd = 0;

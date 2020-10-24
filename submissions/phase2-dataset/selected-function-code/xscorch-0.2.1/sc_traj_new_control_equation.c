@@ -1,3 +1,4 @@
+void sc_traj_new_control_equation(sc_trajectory *tr,
                                   double ctrx, double ctry,
                                   double velx, double vely) {
 /* sc_traj_new_control_equation

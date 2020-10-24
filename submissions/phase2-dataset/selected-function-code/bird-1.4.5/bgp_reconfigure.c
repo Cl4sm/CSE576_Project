@@ -1,3 +1,4 @@
+static int
 bgp_reconfigure(struct proto *P, struct proto_config *C)
 {
   struct bgp_config *new = (struct bgp_config *) C;

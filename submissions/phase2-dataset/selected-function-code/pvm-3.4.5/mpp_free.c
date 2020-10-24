@@ -1,3 +1,4 @@
+void
 mpp_free(tp)
 	struct task *tp;
 {

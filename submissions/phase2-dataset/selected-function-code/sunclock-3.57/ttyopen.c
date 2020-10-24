@@ -1,3 +1,4 @@
+void ttyopen()
 {
     char    tcbuf[4096];        /* buffer for termcap entry */
     char    *termtype;          /* terminal type */

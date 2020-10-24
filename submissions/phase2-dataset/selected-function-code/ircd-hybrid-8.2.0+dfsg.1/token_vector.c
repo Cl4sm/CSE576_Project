@@ -1,3 +1,4 @@
+int
 token_vector(char *names, char token, char *vector[], int size)
 {
   int count = 0;

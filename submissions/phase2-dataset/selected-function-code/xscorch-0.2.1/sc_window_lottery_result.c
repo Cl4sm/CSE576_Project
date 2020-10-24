@@ -1,3 +1,4 @@
+void sc_window_lottery_result(sc_window *w_, bool showstake) {
 /* sc_window_lottery_result
    Paste up a window describing the result of the lottery. */
 

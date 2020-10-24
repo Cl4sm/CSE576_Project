@@ -1,3 +1,4 @@
+int
 find_server_group(group, add)
 	u_char	*group;
 	int	add;

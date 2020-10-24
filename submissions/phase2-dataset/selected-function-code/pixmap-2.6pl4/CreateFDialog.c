@@ -1,3 +1,4 @@
+Dialog CreateFDialog(top_widget, name, options)
      Widget top_widget;
      String name;
      int options;

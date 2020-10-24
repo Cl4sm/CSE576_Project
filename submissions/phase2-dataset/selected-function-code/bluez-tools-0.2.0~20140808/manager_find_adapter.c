@@ -1,3 +1,4 @@
+const gchar *manager_find_adapter(Manager *self, const gchar *pattern, GError **error)
 {
     g_assert(MANAGER_IS(self));
 

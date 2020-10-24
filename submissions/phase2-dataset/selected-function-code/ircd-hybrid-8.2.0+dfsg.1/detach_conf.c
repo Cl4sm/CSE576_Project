@@ -1,3 +1,4 @@
+void
 detach_conf(struct Client *client_p, enum maskitem_type type)
 {
   dlink_node *ptr = NULL, *ptr_next = NULL;

@@ -1,3 +1,4 @@
+static bool _sc_sound_try_load(sc_sound *s, sc_sound_music id) {
 /* sc_sound_try_load
    Attempt to load the song given by the ID.  On success, true is returned
    and s->module will refer to the song.  On failure, false is returned.

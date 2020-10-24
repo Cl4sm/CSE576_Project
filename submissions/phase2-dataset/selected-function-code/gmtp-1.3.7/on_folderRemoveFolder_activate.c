@@ -1,3 +1,4 @@
+void on_folderRemoveFolder_activate(GtkMenuItem *menuitem, gpointer user_data) {
     GtkWidget *dialog;
     GtkTreeModel *sortmodel;
     GtkTreeIter iter;

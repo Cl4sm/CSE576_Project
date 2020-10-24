@@ -1,3 +1,4 @@
+unsigned char * image_rgb48bepl_from_rgb96f(int xres, int yres, float *fimg) { 
   int x, y, R, G, B, sz;
   unsigned char *img = (unsigned char *) malloc(xres * yres * 6);
 

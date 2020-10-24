@@ -1,3 +1,4 @@
+color cyl_checker_texture(const vector * hit, const texture * tx, const ray * ry) {
   long x,y;
   vector rh;
   flt u,v;

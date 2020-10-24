@@ -1,3 +1,4 @@
+struct password_item *
 password_find(list *l, int first_fit)
 {
   struct password_item *pi;

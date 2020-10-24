@@ -1,3 +1,4 @@
+gboolean sc_console_highlight_detach(ScConsole *cons) {
 /* sc_console_highlight_detach
    Remove the most recently attached highlight on this console.  
    Returns FALSE if there were no consoles available for deletion.  */

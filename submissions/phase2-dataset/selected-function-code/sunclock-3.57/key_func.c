@@ -1,3 +1,4 @@
+void key_func(int key)
 {
 	if(keve->state & ShiftMask)
 		switch(key) {

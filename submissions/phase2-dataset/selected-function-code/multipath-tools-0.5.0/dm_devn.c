@@ -1,3 +1,4 @@
+int
 dm_devn (char * mapname, int *major, int *minor)
 {
 	int r = 1;

@@ -1,3 +1,4 @@
+SCM scm_multi_set(syms, vals)
      SCM syms, vals;
 {
   SCM res = EOL, *pres = &res;

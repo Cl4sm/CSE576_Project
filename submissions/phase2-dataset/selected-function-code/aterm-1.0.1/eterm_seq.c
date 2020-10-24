@@ -1,3 +1,4 @@
+	void
 eterm_seq(int op, const char *str)
 {
 	assert(str != NULL);

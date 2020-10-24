@@ -1,3 +1,4 @@
+void
 init_variables()
 {
 	check_variable_order();

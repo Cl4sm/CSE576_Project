@@ -1,3 +1,4 @@
+void
 conf_add_class_to_conf(struct MaskItem *conf, const char *class_name)
 {
   if (class_name == NULL)

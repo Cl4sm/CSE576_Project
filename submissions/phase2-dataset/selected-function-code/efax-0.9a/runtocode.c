@@ -1,3 +1,4 @@
+uchar *runtocode ( ENCODER *e, short *runs, int nr, uchar *codes )
 {
   uchar col = 0, *maxcodes = codes + MAXCODES ;
   t4tab *ctab = wtab, *p ;

@@ -1,3 +1,4 @@
+extern int
 group_by_prio (struct multipath * mp)
 {
 	int i;

@@ -1,3 +1,4 @@
+int
 hostids_new(num, tids)
 	int *num;			/* count requested, returned */
 	int *tids;			/* return tids */

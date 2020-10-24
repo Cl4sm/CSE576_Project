@@ -1,3 +1,4 @@
+gboolean is_dir(const gchar *dirname, GError **error)
 {
     g_assert(dirname != NULL && strlen(dirname) > 0);
 

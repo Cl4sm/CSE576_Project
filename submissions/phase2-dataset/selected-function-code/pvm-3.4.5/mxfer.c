@@ -1,3 +1,4 @@
+static int
 mxfer(txup, tmout)
 	struct pmsg *txup;			/* outgoing message or null */
 	struct timeval *tmout;		/* time limit to get at least one message */

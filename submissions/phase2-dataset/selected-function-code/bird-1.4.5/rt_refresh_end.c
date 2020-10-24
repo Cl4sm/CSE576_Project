@@ -1,3 +1,4 @@
+void
 rt_refresh_end(rtable *t, struct announce_hook *ah)
 {
   int prune = 0;

@@ -1,3 +1,4 @@
+void *
 vector_alloc_slot(vector v)
 {
 	void *new_slot = NULL;

@@ -1,3 +1,4 @@
+static	void
 list_processes()
 {
 	Process	*proc;

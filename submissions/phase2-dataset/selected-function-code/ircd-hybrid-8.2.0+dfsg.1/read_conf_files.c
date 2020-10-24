@@ -1,3 +1,4 @@
+void
 read_conf_files(int cold)
 {
   const char *filename = NULL;

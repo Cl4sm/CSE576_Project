@@ -1,3 +1,4 @@
+static int
 def_retain_hwhandler_handler(vector strvec)
 {
 	char * buff;

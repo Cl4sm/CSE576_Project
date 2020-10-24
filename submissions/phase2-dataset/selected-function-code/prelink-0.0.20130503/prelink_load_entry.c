@@ -1,3 +1,4 @@
+static struct prelink_entry *
 prelink_load_entry (const char *filename)
 {
   struct prelink_entry e, *ent = NULL;

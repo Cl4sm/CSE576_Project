@@ -1,3 +1,4 @@
+sc_economy_config *sc_economy_config_create(sc_config *c) {
 /* sc_economy_config_create
    Allocate space and read in economy scoring definitions. */
 

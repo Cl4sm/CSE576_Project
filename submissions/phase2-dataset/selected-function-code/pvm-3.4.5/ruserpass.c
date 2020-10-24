@@ -1,3 +1,4 @@
+void
 ruserpass(const char *host, char **aname, char **apass)
 {
 	static char namebuf [256];

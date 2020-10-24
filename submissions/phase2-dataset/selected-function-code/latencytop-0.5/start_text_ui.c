@@ -1,3 +1,4 @@
+void start_text_ui(void) 
 {
 	char filterchar = '\0';
 	int ret = 1;

@@ -1,3 +1,4 @@
+static bool _sc_ai_buy_contact_triggers(const sc_config *c, sc_player *p, int *budget) {
 /* sc_ai_buy_contact_triggers
    Buy contact triggers if tunneling is allowed. */
 

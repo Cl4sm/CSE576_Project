@@ -1,3 +1,4 @@
+static bool _sc_ai_buy_auto_defense(const sc_config *c, sc_player *p, int *budget) {
 /* sc_ai_buy_auto_defense
    Buy auto-defense, only if this is a sequential game. */
 

@@ -1,3 +1,4 @@
+int
 pvm_freecontext(cid)
 	int cid;
 {

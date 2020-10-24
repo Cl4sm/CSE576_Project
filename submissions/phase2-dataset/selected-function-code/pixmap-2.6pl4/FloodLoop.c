@@ -1,3 +1,4 @@
+void FloodLoop(PW, x, y, value, toflood)
      PixmapWidget PW;
      Position     x, y;
      Pixel          value, toflood;

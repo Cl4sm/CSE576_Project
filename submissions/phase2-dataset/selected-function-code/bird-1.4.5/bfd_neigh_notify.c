@@ -1,3 +1,4 @@
+static void
 bfd_neigh_notify(struct neighbor *nb)
 {
   struct bfd_proto *p = (struct bfd_proto *) nb->proto;

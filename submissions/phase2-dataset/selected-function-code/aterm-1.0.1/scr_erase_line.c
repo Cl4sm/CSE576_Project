@@ -1,3 +1,4 @@
+void
 scr_erase_line(int mode)
 {
     int             row, col, num;

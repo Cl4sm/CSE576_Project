@@ -1,3 +1,4 @@
+sc_weapon *sc_weapon_new(const sc_config *c, sc_weapon_info *info,
                          double x, double y, double vx, double vy,
                          bool has_contact_trigger, int playerid) {
 /* sc_weapon_new

@@ -1,3 +1,4 @@
+void
 get_connected(server)
 	int	server;
 {

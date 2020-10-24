@@ -1,3 +1,4 @@
+color ImageMap(const rawimage * image, flt u, flt v) {
   color col, colx, colx2;
   flt x, y, px, py;
   int ix, iy, nx, ny;

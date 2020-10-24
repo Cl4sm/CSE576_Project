@@ -1,3 +1,4 @@
+static void
 nl_parse_route(struct nlmsghdr *h, int scan)
 {
   struct krt_proto *p;

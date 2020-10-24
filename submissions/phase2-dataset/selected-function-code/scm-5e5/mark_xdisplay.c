@@ -1,3 +1,4 @@
+static SCM mark_xdisplay(ptr)
      SCM ptr;
 {
   if (CLOSEDP(ptr)) return BOOL_F;

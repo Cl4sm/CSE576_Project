@@ -1,3 +1,4 @@
+static int
 snprint_chk_state (char * buff, size_t len, struct path * pp)
 {
 	switch (pp->state) {

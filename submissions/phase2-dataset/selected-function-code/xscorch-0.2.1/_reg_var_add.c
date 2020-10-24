@@ -1,3 +1,4 @@
+static reg_var *_reg_var_add(const reg *r, reg_var **vars, const char *name, reg_type type) {
 /* reg_var_add
    Adds a new variable definition to the end of the linked list given.
    The variable will be uninitialised, but its type field will be set.

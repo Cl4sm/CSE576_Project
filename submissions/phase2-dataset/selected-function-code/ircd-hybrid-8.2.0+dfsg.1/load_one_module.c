@@ -1,3 +1,4 @@
+int
 load_one_module(const char *name)
 {
   dlink_node *ptr = NULL;

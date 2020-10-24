@@ -1,3 +1,4 @@
+static int
 prelink_record_relocations (struct prelink_info *info, FILE *f,
 			    const char *ent_filename)
 {

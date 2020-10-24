@@ -1,3 +1,4 @@
+long num2long(num, pos, s_caller)
      SCM num;
      char *pos, *s_caller;
 {

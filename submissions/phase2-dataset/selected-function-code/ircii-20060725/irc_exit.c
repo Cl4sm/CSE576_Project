@@ -1,3 +1,4 @@
+RETSIGTYPE
 irc_exit()
 {
 	do_hook(EXIT_LIST, "Exiting");

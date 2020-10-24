@@ -1,3 +1,4 @@
+void
 window_set_server(refnum, server, misc)
 	int	refnum;
 	int	server;

@@ -1,3 +1,4 @@
+static void checked_define(name, val, what)
      SCM name, val;
      const char *what;
 {

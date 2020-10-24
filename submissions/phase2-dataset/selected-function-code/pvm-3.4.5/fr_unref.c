@@ -1,3 +1,4 @@
+void
 fr_unref(fp)
 	struct frag *fp;		/* master frag */
 {

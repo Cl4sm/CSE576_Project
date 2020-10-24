@@ -1,3 +1,4 @@
+static void _proximity_monitor_set_property(GObject *object, guint property_id, const GValue *value, GParamSpec *pspec)
 {
 	ProximityMonitor *self = PROXIMITY_MONITOR(object);
 	GError *error = NULL;

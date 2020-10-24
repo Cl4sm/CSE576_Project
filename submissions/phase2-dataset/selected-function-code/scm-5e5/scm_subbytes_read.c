@@ -1,3 +1,4 @@
+SCM scm_subbytes_read(sstr, start, args)
      SCM sstr, start, args;
 {
   SCM end, port;

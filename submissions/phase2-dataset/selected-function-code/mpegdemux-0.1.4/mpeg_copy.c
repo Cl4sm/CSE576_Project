@@ -1,3 +1,4 @@
+int mpeg_copy (mpeg_demux_t *mpeg, FILE *fp, unsigned n)
 {
 	unsigned char buf[4096];
 	unsigned      i, j;

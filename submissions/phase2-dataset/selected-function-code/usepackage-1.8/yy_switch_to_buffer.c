@@ -1,3 +1,4 @@
+void yy_switch_to_buffer( YY_BUFFER_STATE new_buffer )
 #else
 void yy_switch_to_buffer( new_buffer )
 YY_BUFFER_STATE new_buffer;

@@ -1,3 +1,4 @@
+static	void
 whois(command, args, subargs)
 	u_char	*command,
 		*args,

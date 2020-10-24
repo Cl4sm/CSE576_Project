@@ -1,3 +1,4 @@
+static int
 mp_mode_handler(vector strvec)
 {
 	mode_t mode;

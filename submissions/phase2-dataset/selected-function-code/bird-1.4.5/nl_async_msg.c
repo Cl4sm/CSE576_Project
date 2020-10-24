@@ -1,3 +1,4 @@
+static void
 nl_async_msg(struct nlmsghdr *h)
 {
   switch (h->nlmsg_type)

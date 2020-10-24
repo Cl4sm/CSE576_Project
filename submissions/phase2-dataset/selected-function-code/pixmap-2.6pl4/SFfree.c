@@ -1,3 +1,4 @@
+static
 SFfree(i)
 	int	i;
 {

@@ -1,3 +1,4 @@
+void *darr_append(darray *array, void *elem)
 {
   char *eltend = array->eltend;
   size_t elemsz = array->elemsz;

@@ -1,3 +1,4 @@
+int WriteAreas()
 /*
  *  Write the SLNP AREAS file
  */

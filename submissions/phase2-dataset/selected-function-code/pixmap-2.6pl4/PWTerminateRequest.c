@@ -1,3 +1,4 @@
+Boolean PWTerminateRequest(Widget w, Boolean cont)
 #else
 Boolean PWTerminateRequest(w, cont)
     Widget w;

@@ -1,3 +1,4 @@
+int
 parse_keysym(char *str, char *arg)
 {
     char           *key_string;

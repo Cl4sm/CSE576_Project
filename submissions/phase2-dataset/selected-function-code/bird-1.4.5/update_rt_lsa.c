@@ -1,3 +1,4 @@
+void
 update_rt_lsa(struct ospf_area *oa)
 {
   struct proto_ospf *po = oa->po;

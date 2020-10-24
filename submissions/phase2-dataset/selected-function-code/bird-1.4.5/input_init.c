@@ -1,3 +1,4 @@
+void
 input_init(void)
 {
   if (!interactive)

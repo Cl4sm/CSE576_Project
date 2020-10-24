@@ -1,3 +1,4 @@
+void list_groups()
 {
    list_node* gnode;
    list_node* pnode;

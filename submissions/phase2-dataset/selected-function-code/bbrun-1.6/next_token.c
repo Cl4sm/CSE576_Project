@@ -1,3 +1,4 @@
+char*
 next_token(char *word, char **next)
 {
     char *ptr;

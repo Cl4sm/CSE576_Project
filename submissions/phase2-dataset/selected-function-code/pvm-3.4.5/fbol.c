@@ -1,3 +1,4 @@
+static int
 fbol(o, p, n)
 	int o;
 	unsigned char *p;

@@ -1,3 +1,4 @@
+static int
 remove_dynamic_prelink_tags (DSO *dso)
 {
   Elf_Data *data;

@@ -1,3 +1,4 @@
+static unsigned int write_file(char *file, char *base, unsigned int offset)
 {
 	int fd;
 	char *buf;

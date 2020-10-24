@@ -1,3 +1,4 @@
+static void process(int fd)
 {
 	char *line;
 	char *reply;

@@ -1,3 +1,4 @@
+void resolver_init() {
 #if defined(USE_WIN32) && !defined(_WIN32_WCE)
     HINSTANCE handle;
 

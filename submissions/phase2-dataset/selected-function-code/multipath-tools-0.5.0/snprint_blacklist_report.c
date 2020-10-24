@@ -1,3 +1,4 @@
+extern int
 snprint_blacklist_report (char * buff, int len)
 {
 	int threshold = MAX_LINE_LEN;

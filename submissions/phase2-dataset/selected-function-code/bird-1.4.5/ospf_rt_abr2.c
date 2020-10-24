@@ -1,3 +1,4 @@
+static void
 ospf_rt_abr2(struct proto_ospf *po)
 {
   struct ospf_area *oa;

@@ -1,3 +1,4 @@
+void ZipMessage(fd, mp, xhdrs)
 FILE *          fd;
 struct mail_ent *mp;
 char		*xhdrs;

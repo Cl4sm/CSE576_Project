@@ -1,3 +1,4 @@
+void sc_traj_revise_velocity(sc_trajectory *tr, double nvelx, double nvely) {
 /* sc_traj_revise_velocity
    Call this function when you want to revise the course of the weapon
    already in flight.  Assumptions:  we want to maintain current position

@@ -1,3 +1,4 @@
+SCM scm_apply_cxr(proc, arg1)
      SCM proc, arg1;
 {
   double y;

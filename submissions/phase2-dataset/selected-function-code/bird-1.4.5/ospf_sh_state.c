@@ -1,3 +1,4 @@
+void
 ospf_sh_state(struct proto *p, int verbose, int reachable)
 {
   struct proto_ospf *po = (struct proto_ospf *) p;

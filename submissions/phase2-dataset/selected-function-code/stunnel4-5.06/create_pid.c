@@ -1,3 +1,4 @@
+NOEXPORT int create_pid(void) {
     int pf;
     char *pid;
 

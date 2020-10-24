@@ -1,3 +1,4 @@
+void PWFold(Widget w)
 #else
 void PWFold(w)
      Widget w;

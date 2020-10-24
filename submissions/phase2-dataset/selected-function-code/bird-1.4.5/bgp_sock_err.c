@@ -1,3 +1,4 @@
+static void
 bgp_sock_err(sock *sk, int err)
 {
   struct bgp_conn *conn = sk->data;

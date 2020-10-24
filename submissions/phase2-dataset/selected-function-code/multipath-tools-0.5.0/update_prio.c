@@ -1,3 +1,4 @@
+int update_prio(struct path *pp, int refresh_all)
 {
 	int oldpriority;
 	struct path *pp1;

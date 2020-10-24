@@ -1,3 +1,4 @@
+void FixMark(PW)
     PixmapWidget PW;
 {
     if (QuerySet(PW->pixmap.mark.from_x, PW->pixmap.mark.from_y)) {

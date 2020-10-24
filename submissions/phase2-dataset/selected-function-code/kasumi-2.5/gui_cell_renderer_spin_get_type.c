@@ -1,3 +1,4 @@
+GType
 gui_cell_renderer_spin_get_type (void)
 {
   static GType cell_spin_type = 0;

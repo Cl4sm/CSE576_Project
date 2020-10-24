@@ -1,3 +1,4 @@
+static void insert_results(GList *list)
 {
 	GList *entry;
 	struct latency_line *line;

@@ -1,3 +1,4 @@
+bool sc_net_recv_packet(sc_connection *conn, sc_config *c, void *parm, packet_handler handler) {
 /* sc_net_recv_packet()
    Pull packets off the network stream and tokenize them into the packet queue.
    Then return a single packet off the top of the queue. */

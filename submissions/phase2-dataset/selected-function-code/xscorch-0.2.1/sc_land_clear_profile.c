@@ -1,3 +1,4 @@
+void sc_land_clear_profile(const sc_config *c, sc_land *l, const sc_player *p) {
 /* sc_land_clear_profile
    This function is a sanity check used by players, to make certain
    there is sky behind their profile.  */

@@ -1,3 +1,4 @@
+void
 motd_memory_count(struct Client *source_p)
 {
   const dlink_node *ptr = NULL;

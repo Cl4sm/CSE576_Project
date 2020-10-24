@@ -1,3 +1,4 @@
+bool reg_class_register_var(reg *r, const char *classname, const char *name,
                             reg_type type, const char *klass) {
 /* reg_class_register_var
    Register a variable with name <name>, and specified <type> (and <klass>

@@ -1,3 +1,4 @@
+static void compute_params(drivedesc_t *drvprm,
 			   struct floppy_struct *medprm)
 {
 	int r, capacity, mysize;

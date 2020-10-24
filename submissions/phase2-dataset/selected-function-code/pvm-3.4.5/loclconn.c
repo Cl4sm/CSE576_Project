@@ -1,3 +1,4 @@
+loclconn()
 {
 	struct task *tp;			/* new task context */
 #ifdef SOCKLENISUINT

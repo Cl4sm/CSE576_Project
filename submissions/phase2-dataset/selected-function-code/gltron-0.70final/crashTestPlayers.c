@@ -1,3 +1,4 @@
+int crashTestPlayers(int i, const segment2 *movement) {
 	int j, k;
 	int crash = 0;
 	Data *data = game->player[i].data;

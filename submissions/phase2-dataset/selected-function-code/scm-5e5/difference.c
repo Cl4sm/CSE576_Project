@@ -1,3 +1,4 @@
+SCM difference(x, y)
      SCM x, y;
 {
 #ifdef FLOATS

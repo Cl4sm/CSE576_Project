@@ -1,3 +1,4 @@
+static int
 copy_sym (new, a_out, a_name, new_name)
      int new, a_out;
      char *a_name, *new_name;

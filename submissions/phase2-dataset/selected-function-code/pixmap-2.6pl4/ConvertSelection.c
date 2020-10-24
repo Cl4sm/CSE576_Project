@@ -1,3 +1,4 @@
+Boolean ConvertSelection(w, selection, target, type, value, length, format)
     Widget w;
     Atom *selection, *target, *type;
     XtPointer *value;

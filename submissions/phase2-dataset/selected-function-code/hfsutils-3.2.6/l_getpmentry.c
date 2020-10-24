@@ -1,3 +1,4 @@
+int l_getpmentry(hfsvol *vol, Partition *map, unsigned long bnum)
 {
   block b;
   const byte *ptr = b;

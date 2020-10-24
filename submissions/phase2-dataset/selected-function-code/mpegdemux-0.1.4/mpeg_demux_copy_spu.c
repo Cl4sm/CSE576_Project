@@ -1,3 +1,4 @@
+static
 int mpeg_demux_copy_spu (mpeg_demux_t *mpeg, FILE *fp, unsigned cnt)
 {
 	static unsigned    spucnt = 0;

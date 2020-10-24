@@ -1,3 +1,4 @@
+netoutput()
 {
 	struct timeval tnow, tx;
 	struct pkt *pp, *pp2;

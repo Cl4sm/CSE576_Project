@@ -1,3 +1,4 @@
+int v_extsearch(hfsfile *file, unsigned int fabn,
 		ExtDataRec *data, node *np)
 {
   ExtKeyRec key;

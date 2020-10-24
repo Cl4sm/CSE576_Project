@@ -1,3 +1,4 @@
+int b_flush(hfsvol *vol)
 {
   bcache *cache = vol->cache;
   bucket *chain[HFS_CACHESZ];

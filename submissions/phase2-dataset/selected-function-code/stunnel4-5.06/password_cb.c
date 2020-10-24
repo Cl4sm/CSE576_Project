@@ -1,3 +1,4 @@
+NOEXPORT int password_cb(char *buf, int size, int rwflag, void *userdata) {
     static char cache[PEM_BUFSIZE];
     int len;
 

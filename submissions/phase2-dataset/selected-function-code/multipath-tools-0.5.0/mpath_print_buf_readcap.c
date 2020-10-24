@@ -1,3 +1,4 @@
+void mpath_print_buf_readcap( struct prin_resp *pr_buff)
 {
 	if ( pr_buff->prin_descriptor.prin_readcap.length <= 2 ) {
 		fprintf(stderr, "Unexpected response for PRIN Report "

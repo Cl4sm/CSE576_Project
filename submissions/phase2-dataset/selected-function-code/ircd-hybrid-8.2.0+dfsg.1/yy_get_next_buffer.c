@@ -1,3 +1,4 @@
+static int yy_get_next_buffer (void)
 {
     	register char *dest = YY_CURRENT_BUFFER_LVALUE->yy_ch_buf;
 	register char *source = (yytext_ptr);

@@ -1,3 +1,4 @@
+int sc_options_parse(sc_config *c, int argc, char **argv) {
 
   #if USE_NETWORK
    char name[SC_OPTION_BUFFER];

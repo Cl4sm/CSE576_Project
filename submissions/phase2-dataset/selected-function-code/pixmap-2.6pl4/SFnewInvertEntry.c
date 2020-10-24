@@ -1,3 +1,4 @@
+static int
 SFnewInvertEntry(n, event)
 	register int		n;
 	register XMotionEvent	*event;

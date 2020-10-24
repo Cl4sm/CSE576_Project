@@ -1,3 +1,4 @@
+time_t
 valid_tkline(const char *data, const int minutes)
 {
   const unsigned char *p = (const unsigned char *)data;

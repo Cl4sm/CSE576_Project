@@ -1,3 +1,4 @@
+static int
 get_port(ai, servname, matchonly)
 	struct addrinfo *ai;
 	const char *servname;

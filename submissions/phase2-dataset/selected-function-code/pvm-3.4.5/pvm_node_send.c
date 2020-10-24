@@ -1,3 +1,4 @@
+int
 pvm_node_send(cp, len, ttpcbp, smsglist, inPlaceHeader, inPlaceBodyLen)
 	char *cp;				/* this is what we are supposed to be sending */
 	int len;				/* this is the length of the frag */

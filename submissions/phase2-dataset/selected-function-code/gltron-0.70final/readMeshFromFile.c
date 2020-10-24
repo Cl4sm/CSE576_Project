@@ -1,3 +1,4 @@
+Mesh* readMeshFromFile(const char *filename, MeshType iType) {
   // allocate some buffers
   // vertices, normals
 

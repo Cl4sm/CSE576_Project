@@ -1,3 +1,4 @@
+void PWRotateBufferAndImage(Widget w)
 #else
 void PWRotateBufferAndImage(w)
      Widget w;

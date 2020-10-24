@@ -1,3 +1,4 @@
+static	int
 decifer_mode(u_char *mode_string, u_long *mode, int *chop, NickList **nicks,
 	     u_char **key)
 {

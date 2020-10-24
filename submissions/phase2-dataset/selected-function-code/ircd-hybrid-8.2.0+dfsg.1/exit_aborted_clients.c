@@ -1,3 +1,4 @@
+void
 exit_aborted_clients(void)
 {
   dlink_node *ptr;

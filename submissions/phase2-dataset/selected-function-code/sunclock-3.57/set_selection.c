@@ -1,3 +1,4 @@
+void set_selection()
 {
 	int i;
 

@@ -1,3 +1,4 @@
+int tty_raw (int fd)
 {
     struct termios buf;
 

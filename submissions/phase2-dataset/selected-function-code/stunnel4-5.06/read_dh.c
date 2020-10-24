@@ -1,3 +1,4 @@
+NOEXPORT DH *read_dh(char *cert) {
     DH *dh;
     BIO *bio;
 

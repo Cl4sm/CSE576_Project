@@ -1,3 +1,4 @@
+char *
 TEXTDOMAIN (domainname)
      const char *domainname;
 {

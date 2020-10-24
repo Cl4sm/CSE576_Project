@@ -1,3 +1,4 @@
+int DoXref (fd, bytes)
 FILE *fd;
 long bytes;
 /*

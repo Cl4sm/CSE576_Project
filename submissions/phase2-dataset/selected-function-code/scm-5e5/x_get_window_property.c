@@ -1,3 +1,4 @@
+SCM x_get_window_property(swin, sprop, sargs)
      SCM swin, sprop, sargs;
 {
   struct xs_Window *xwn;

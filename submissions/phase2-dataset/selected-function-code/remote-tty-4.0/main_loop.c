@@ -1,3 +1,4 @@
+static void
 main_loop(void) {
 	FD_ZERO(&fds);
 	FD_SET(Serv, &fds);

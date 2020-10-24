@@ -1,3 +1,4 @@
+static int
 mid_new(mp)
 	struct pmsg *mp;
 {

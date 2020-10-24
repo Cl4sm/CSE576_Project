@@ -1,3 +1,4 @@
+void sc_dialog_text(const char *filename, GdkFont *font_normal, GdkFont *font_italic, GdkFont *font_bold) {
 
    ScDialog *dlg;
    char buf[SC_DIALOG_STRING_BUFFER];

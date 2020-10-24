@@ -1,3 +1,4 @@
+char **get_dir_list(char *dirname, int *num_entries)
 {
   int i,size=CHUNK;
   char **table, old_dir[MAXPATHLEN];

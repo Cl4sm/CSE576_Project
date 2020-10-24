@@ -1,3 +1,4 @@
+static int
 find_user_host(struct Client *source_p, char *user_host_or_nick,
                char *luser, char *lhost, unsigned int flags)
 {

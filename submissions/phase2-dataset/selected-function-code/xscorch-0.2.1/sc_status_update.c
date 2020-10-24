@@ -1,3 +1,4 @@
+void sc_status_update(sc_window *w_, const sc_player *p) {
 
    int size;
    const sc_weapon_info *wi;

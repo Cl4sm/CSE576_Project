@@ -1,3 +1,4 @@
+static	void
 really_save(file, line)
 	u_char	*file;
 	u_char	*line;

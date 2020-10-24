@@ -1,3 +1,4 @@
+void
 sendto_realops_flags(unsigned int flags, int level, int type, const char *pattern, ...)
 {
   const char *ntype = NULL;

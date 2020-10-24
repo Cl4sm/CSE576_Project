@@ -1,3 +1,4 @@
+unsigned int
 pvmcrcappend(buf, len, crc)
 	char *buf;			/* buffer to append to crc value */
 	int len;			/* length */

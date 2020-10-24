@@ -1,3 +1,4 @@
+int
 sysfs_get_tgt_nodename (struct path *pp, char * node)
 {
 	const char *tgtname, *value;

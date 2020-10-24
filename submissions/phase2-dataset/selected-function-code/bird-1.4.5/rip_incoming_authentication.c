@@ -1,3 +1,4 @@
+int
 rip_incoming_authentication( struct proto *p, struct rip_block_auth *block, struct rip_packet *packet, int num, ip_addr whotoldme )
 {
   DBG( "Incoming authentication: " );

@@ -1,3 +1,4 @@
+static
 int mpegd_parse_pack (mpeg_demux_t *mpeg)
 {
 	unsigned           sid;

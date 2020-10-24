@@ -1,3 +1,4 @@
+static inline void
 show_lsa_external(struct top_hash_entry *he)
 {
   struct ospf_lsa_ext *ext = he->lsa_body;

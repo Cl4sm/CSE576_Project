@@ -1,3 +1,4 @@
+sc_weapon_info *sc_weapon_lookup_by_name(const sc_weapon_config *wc, const char *name, int flags) {
 /* sc_weapon_lookup_by_name
    Tries to find a weapon by roughly the requested name.
    This is much slower than sc_weapon_lookup. */

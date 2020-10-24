@@ -1,3 +1,4 @@
+static
 FILE *mpeg_demux_open (mpeg_demux_t *mpeg, unsigned sid, unsigned ssid)
 {
 	FILE     *fp;

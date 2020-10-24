@@ -1,3 +1,4 @@
+void
 list_channels(void)
 {
 	ChannelList *tmp;

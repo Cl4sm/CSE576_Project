@@ -1,3 +1,4 @@
+bool sc_land_drop_zone(const sc_config *c, sc_land *l, int x1, int x2) {
 /* sc_land_drop
    Drop the land in the columns x1 to x2 (inclusive).  If land still needs
    to be dropped after this call, then nonzero is returned.  X is a virtual

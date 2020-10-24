@@ -1,3 +1,4 @@
+static int
 s390x_arch_undo_prelink (DSO *dso)
 {
   int i;

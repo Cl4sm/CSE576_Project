@@ -1,3 +1,4 @@
+void * uxsock_listen(int (*uxsock_trigger)(char *, char **, int *, void *),
 			void * trigger_data)
 {
 	int ux_sock;

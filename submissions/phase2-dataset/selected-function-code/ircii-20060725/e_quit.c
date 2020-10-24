@@ -1,3 +1,4 @@
+void
 e_quit(command, args, subargs)
 	u_char	*command,
 		*args,

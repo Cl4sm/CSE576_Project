@@ -1,3 +1,4 @@
+static char *
 canon_filename (const char *name, int nested, struct stat64 *stp)
 {
   char *rpath, *dest, *extra_buf = NULL;

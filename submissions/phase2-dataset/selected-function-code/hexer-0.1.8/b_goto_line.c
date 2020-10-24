@@ -1,3 +1,4 @@
+  long
 b_goto_line(buffer, number)
   Buffer *buffer;
   long number;

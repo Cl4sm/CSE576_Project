@@ -1,3 +1,4 @@
+static void display_process_list(unsigned int cursor_pid, char filter)
 {
 	GList *entry, *start = NULL;
 	struct process *proc;

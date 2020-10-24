@@ -1,3 +1,4 @@
+sc_accessory_info *sc_shield_find_best(const sc_config *c, const sc_player *p) {
 /* sc_shield_find_best
    Find the best shield in a player's inventory.
    This is very accurate, but also very sensitive to shield definition changes. */

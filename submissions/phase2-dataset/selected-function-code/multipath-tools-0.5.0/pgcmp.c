@@ -1,3 +1,4 @@
+static int
 pgcmp (struct multipath * mpp, struct multipath * cmpp)
 {
 	int i, j;

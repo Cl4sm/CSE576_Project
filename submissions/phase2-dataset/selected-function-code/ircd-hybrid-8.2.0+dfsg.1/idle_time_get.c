@@ -1,3 +1,4 @@
+unsigned int
 idle_time_get(const struct Client *source_p, const struct Client *target_p)
 {
   unsigned int idle = 0;

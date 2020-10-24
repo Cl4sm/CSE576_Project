@@ -1,3 +1,4 @@
+void
 cluster_a_line(struct Client *source_p, const char *command,
                int capab, int cluster_type, const char *pattern, ...)
 {

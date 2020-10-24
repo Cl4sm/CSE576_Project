@@ -1,3 +1,4 @@
+void
 free_config (struct config * conf)
 {
 	if (!conf)

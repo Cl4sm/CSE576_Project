@@ -1,3 +1,4 @@
+static void udpcsum(sendip_data *ip_hdr, sendip_data *udp_hdr,
 						  sendip_data *data) {
 	udp_header *udp = (udp_header *)udp_hdr->data;
 	ip_header  *ip  = (ip_header *)ip_hdr->data;

@@ -1,3 +1,4 @@
+static void
 timers_fire(struct birdloop *loop)
 {
   btime base_time;

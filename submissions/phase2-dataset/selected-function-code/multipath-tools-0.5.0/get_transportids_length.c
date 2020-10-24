@@ -1,3 +1,4 @@
+int
 get_transportids_length(unsigned char * transportid_arr, int max_transportid, int num_transportids)
 {
 	int compact_len = 0;

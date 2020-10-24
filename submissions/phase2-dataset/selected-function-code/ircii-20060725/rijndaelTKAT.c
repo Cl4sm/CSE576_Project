@@ -1,3 +1,4 @@
+static void rijndaelTKAT (FILE *fp, int blockLength, int keyLength, FILE *in)
 {
 	int i, j;
 	unsigned int s;

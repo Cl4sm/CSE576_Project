@@ -1,3 +1,4 @@
+void rt_tri_ring(SceneHandle scene, void * tex, apivector ctr, apivector norm, flt a, flt b) {
   apivector x, y, z, tmp;
   double u, v, u2, v2;
   int j;

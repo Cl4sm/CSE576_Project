@@ -1,3 +1,4 @@
+NOEXPORT int servername_cb(SSL *ssl, int *ad, void *arg) {
     SERVICE_OPTIONS *section=(SERVICE_OPTIONS *)arg;
     const char *servername=SSL_get_servername(ssl, TLSEXT_NAMETYPE_host_name);
     SERVERNAME_LIST *list;

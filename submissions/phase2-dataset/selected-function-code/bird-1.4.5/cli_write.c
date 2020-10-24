@@ -1,3 +1,4 @@
+static void
 cli_write(cli *c)
 {
   sock *s = c->priv;

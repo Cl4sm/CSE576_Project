@@ -1,3 +1,4 @@
+void
 pvmdisplaymhfinfo(who, msg, tid)
 	char *who;			/* who made this call */
 	char *msg;			/* message from caller */

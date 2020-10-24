@@ -1,3 +1,4 @@
+static inline char *__getargb(char *d, const char *s, sizea argnum, char sep, sizea maxlen) {
 /* internal-Get-Argument-Countbuffer
    returns the argnum'th argument in '|'-delimited cmd string (or
    you can optionally specify your own separator to use). This command

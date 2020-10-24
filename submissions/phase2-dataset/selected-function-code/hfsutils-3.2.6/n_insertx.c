@@ -1,3 +1,4 @@
+void n_insertx(node *np, const byte *record, unsigned int reclen)
 {
   int rnum, i;
   byte *ptr;

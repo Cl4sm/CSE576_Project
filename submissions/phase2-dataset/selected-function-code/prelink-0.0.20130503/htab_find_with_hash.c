@@ -1,3 +1,4 @@
+void *
 htab_find_with_hash (htab, element, hash)
      htab_t htab;
      const void * element;

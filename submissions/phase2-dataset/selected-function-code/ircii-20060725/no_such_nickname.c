@@ -1,3 +1,4 @@
+void
 no_such_nickname(from, ArgList)
 	u_char	*from,
 		**ArgList;

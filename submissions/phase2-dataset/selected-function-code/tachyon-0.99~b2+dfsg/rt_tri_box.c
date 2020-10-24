@@ -1,3 +1,4 @@
+void rt_tri_box(SceneHandle scene, void * tex, apivector min, apivector max) {
   /* -XY face */
   rt_tri(scene, tex, rt_vector(min.x, min.y, min.z),
                      rt_vector(min.x, max.y, min.z), 

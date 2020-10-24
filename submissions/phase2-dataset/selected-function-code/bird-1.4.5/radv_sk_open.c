@@ -1,3 +1,4 @@
+int
 radv_sk_open(struct radv_iface *ifa)
 {
   sock *sk = sk_new(ifa->ra->p.pool);

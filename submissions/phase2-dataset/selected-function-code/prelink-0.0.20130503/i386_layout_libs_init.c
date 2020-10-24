@@ -1,3 +1,4 @@
+static int
 i386_layout_libs_init (struct layout_libs *l)
 {
   if (exec_shield)

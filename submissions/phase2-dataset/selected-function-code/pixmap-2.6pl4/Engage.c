@@ -1,3 +1,4 @@
+Boolean Engage(PW, current)
     PixmapWidget PW;
     Cardinal current;
 {

@@ -1,3 +1,4 @@
+bool sc_shield_absorb_hit(sc_player *p, bool sapper) {
 /* sc_shield_absorb_hit
    When a shield takes a direct hit. */
 

@@ -1,3 +1,4 @@
+void
 protos_commit(struct config *new, struct config *old, int force_reconfig, int type)
 {
   struct proto_config *oc, *nc;

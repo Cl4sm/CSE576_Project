@@ -1,3 +1,4 @@
+static int
 htab_expand (htab)
      htab_t htab;
 {

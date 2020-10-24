@@ -1,3 +1,4 @@
+int
 as_path_get_last(struct adata *path, u32 *orig_as)
 {
   int found = 0;

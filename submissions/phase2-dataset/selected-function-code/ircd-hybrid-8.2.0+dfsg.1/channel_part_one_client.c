@@ -1,3 +1,4 @@
+static void
 channel_part_one_client(struct Client *source_p, const char *name, const char *reason)
 {
   struct Channel *chptr = NULL;

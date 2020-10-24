@@ -1,3 +1,4 @@
+  void
 s_set_option(option, value_string, no_action)
   const char *option;
   const char *value_string;

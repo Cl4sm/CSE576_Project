@@ -1,3 +1,4 @@
+int
 update_dynamic_tags (DSO *dso, GElf_Shdr *shdr, GElf_Shdr *old_shdr,
 		     struct section_move *move)
 {

@@ -1,3 +1,4 @@
+int
 gather_check_libs (void)
 {
   struct prelink_dir *dir;

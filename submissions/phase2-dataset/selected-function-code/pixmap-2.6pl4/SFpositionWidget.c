@@ -1,3 +1,4 @@
+void
 SFpositionWidget(w)
     Widget w;
 {

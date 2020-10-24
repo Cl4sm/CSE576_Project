@@ -1,3 +1,4 @@
+int sc_options_usage(const char *progname) {
 
    printf("Usage:  %s [options]\n\n", progname);
 

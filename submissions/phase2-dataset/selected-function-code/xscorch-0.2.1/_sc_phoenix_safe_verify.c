@@ -1,3 +1,4 @@
+static int _sc_phoenix_safe_verify(const sc_weapon_config *wc, const sc_weapon_info *info, slcache *cache, slcache *prev) {
 /* sc_phoenix_verify
    Recursively scan the weapon's info structure and check for fatal errors. */
 

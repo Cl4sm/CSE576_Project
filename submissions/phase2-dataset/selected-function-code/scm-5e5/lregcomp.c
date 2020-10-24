@@ -1,3 +1,4 @@
+SCM lregcomp(pattern, flags)
      SCM pattern, flags;
 {
   SCM z;

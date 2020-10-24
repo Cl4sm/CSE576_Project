@@ -1,3 +1,4 @@
+static inline uid_t
 get_uid(const char *s)
 {
   struct passwd *pw;

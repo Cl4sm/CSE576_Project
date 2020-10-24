@@ -1,3 +1,4 @@
+int diff_divide_and_conquer(fp, fpoff, ccrr, a, start_a, end_a, b, start_b, end_b, edits, edx, epo, procs, p_lim)
      int *fp;
      int fpoff;
      int *ccrr;

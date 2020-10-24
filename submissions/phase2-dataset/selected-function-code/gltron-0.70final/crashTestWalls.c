@@ -1,3 +1,4 @@
+int crashTestWalls(int i, const segment2 *movement) {
 	int j;
 	vec2 v;
 	float t1, t2;

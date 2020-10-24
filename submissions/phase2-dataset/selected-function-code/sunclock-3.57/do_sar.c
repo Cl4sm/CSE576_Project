@@ -1,3 +1,4 @@
+void do_sar()
 {
 	int i;
 	char *sb;

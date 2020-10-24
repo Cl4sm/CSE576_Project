@@ -1,3 +1,4 @@
+void
 i_dump(how)
 	int how;			/* != 0 also do sanity checking */
 {

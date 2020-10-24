@@ -1,3 +1,4 @@
+int ra_eqp(ra0, ras)
      SCM ra0, ras;
 {
   SCM ra1 = CAR(ras), ra2 = CAR(CDR(ras));

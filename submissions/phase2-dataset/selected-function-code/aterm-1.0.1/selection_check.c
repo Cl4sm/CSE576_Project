@@ -1,3 +1,4 @@
+void
 selection_check(int check_more)
 {
     row_col_t       pos;

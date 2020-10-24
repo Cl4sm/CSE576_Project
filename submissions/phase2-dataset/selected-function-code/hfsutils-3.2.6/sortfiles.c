@@ -1,3 +1,4 @@
+static
 void sortfiles(darray *files, int flags, int options)
 {
   int (*compare)(const queueent *, const queueent *);

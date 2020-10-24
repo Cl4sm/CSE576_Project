@@ -1,3 +1,4 @@
+void
 ospf_ifaces_reconfigure(struct ospf_area *oa, struct ospf_area_config *nac)
 {
   struct proto *p = &oa->po->proto;

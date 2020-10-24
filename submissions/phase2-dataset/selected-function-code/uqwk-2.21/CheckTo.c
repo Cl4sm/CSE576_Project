@@ -1,3 +1,4 @@
+int CheckTo (to, bytes)
 char *to;
 int bytes;
 /*

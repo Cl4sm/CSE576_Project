@@ -1,3 +1,4 @@
+static inline void _sc_expl_annihilate_fill_column(sc_config *c, sc_land *l,
                                                    int x, int y1, int y2) {
 /* sc_expl_annihilate_fill_column
    Fills a column with land.  This fills any clear tiles in column x

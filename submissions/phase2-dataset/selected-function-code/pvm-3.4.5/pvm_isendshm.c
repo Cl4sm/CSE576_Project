@@ -1,3 +1,4 @@
+int
 pvm_isendshm(sseg, buf, len, dst, tag)
 struct segdesc *sseg;
 char *buf;

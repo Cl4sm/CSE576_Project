@@ -1,3 +1,4 @@
+extern int
 snprint_mptable (char * buff, int len, vector mptable)
 {
 	int fwd = 0;

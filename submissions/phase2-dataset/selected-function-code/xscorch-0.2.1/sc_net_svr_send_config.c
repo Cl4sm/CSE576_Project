@@ -1,3 +1,4 @@
+bool sc_net_svr_send_config(sc_config *c, sc_server *svr) {
 
    sc_packet config;    /* Data packet to transmit to server broadcast */
    sc_packet player;    /* player data to transmit to server broadcast */

@@ -1,3 +1,4 @@
+int
 dm_get_maps (vector mp)
 {
 	struct multipath * mpp;

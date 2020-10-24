@@ -1,3 +1,4 @@
+static struct MotdCache *
 motd_cache(struct Motd *motd)
 {
   FILE *file = NULL;

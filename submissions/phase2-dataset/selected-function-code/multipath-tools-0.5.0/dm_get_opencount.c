@@ -1,3 +1,4 @@
+int
 dm_get_opencount (const char * mapname)
 {
 	int r = -1;

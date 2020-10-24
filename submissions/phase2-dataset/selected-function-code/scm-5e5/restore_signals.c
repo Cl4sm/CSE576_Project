@@ -1,3 +1,4 @@
+void restore_signals()
 {
   int i;
 #ifdef ultrix

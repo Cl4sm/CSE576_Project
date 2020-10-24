@@ -1,3 +1,4 @@
+u16
 lsasum_check(struct ospf_lsa_header *h, void *body)
 {
   u8 *sp, *ep, *p, *q, *b;

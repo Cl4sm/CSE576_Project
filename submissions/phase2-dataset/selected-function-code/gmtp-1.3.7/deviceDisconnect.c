@@ -1,3 +1,4 @@
+guint deviceDisconnect() {
     if (DeviceMgr.deviceConnected == FALSE) {
         DeviceMgr.deviceConnected = FALSE;
         return MTP_NO_DEVICE;

@@ -1,3 +1,4 @@
+NOEXPORT int verify_callback(int preverify_ok, X509_STORE_CTX *callback_ctx) {
         /* our verify callback function */
     SSL *ssl;
     CLI *c;

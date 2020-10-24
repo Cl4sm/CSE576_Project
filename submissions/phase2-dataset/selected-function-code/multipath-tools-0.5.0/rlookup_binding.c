@@ -1,3 +1,4 @@
+static int
 rlookup_binding(FILE *f, char *buff, char *map_alias)
 {
 	char line[LINE_MAX];

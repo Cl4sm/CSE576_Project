@@ -1,3 +1,4 @@
+static int rafe(ra0, proc, ras)
      SCM ra0, proc, ras;
 {
   SCM heap_ve, auto_rav[5], auto_argv[5];

@@ -1,3 +1,4 @@
+void ParseCMDLine(int argc, char *argv[]) {
 
 int  i;
   

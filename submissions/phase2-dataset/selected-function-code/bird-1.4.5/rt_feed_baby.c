@@ -1,3 +1,4 @@
+int
 rt_feed_baby(struct proto *p)
 {
   struct announce_hook *h;

@@ -1,3 +1,4 @@
+NOEXPORT int load_cert(SERVICE_OPTIONS *section) {
     /* load the certificate */
     if(section->cert) {
         s_log(LOG_INFO, "Loading cert from file: %s", section->cert);

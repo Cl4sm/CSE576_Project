@@ -1,3 +1,4 @@
+void * rt_directional_light(SceneHandle voidscene, void * tex, apivector dir) {
   directional_light * li;
   scenedef * scene = (scenedef *) voidscene;
   list * lst;

@@ -1,3 +1,4 @@
+static int
 ospf_iface_stubby(struct ospf_iface_patt *ip, struct ifa *addr)
 {
   /* a host address */

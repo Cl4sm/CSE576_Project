@@ -1,3 +1,4 @@
+static void _sc_ai_select_last_weapon(const sc_config *c, sc_player *p) {
 /* sc_ai_select_last_weapon
    Selects the last (highest-index) weapon available to the AI.  The naive
    AI's make the assumption that weapons further down the inventory list

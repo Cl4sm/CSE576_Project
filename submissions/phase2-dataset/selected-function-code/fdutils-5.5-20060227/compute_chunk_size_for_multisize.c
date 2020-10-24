@@ -1,3 +1,4 @@
+static int compute_chunk_size_for_multisize(struct params *fd,
 					    int gap,
 					    int tailsize)
 {

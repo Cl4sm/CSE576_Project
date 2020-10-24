@@ -1,3 +1,4 @@
+static bool _sc_state_run_explosion_simult(sc_config *c, sc_game *g) {
 
    bool result;
 

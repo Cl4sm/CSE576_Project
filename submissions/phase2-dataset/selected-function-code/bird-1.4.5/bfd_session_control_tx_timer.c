@@ -1,3 +1,4 @@
+static void
 bfd_session_control_tx_timer(struct bfd_session *s, int reset)
 {
   // if (!s->opened) goto stop;

@@ -1,3 +1,4 @@
+int rdpage ( IFILE *f, int dp, int *ppm, cap local, int *changed )
 {
   int err=0, m=EOP, yres, fVR, nVR  ;
 

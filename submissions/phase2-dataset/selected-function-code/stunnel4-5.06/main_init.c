@@ -1,3 +1,4 @@
+void main_init() { /* one-time initialization */
 #ifdef HAVE_SYSTEMD_SD_DAEMON_H
     systemd_fds=sd_listen_fds(1);
     if(systemd_fds<0)

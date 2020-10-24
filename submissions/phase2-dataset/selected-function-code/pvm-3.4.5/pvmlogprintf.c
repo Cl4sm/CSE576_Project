@@ -1,3 +1,4 @@
+int
 #if defined (__STDC__) || defined(IMA_WIN32_WATCOM)
 pvmlogprintf(const char *fmt, ...)
 #else

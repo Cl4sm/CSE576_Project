@@ -1,3 +1,4 @@
+SCM     gr_drawto( x, y )
 SCM     x, y;
 {
 int     xi, yi;

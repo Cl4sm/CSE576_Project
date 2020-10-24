@@ -1,3 +1,4 @@
+static void
 auth_dns_callback(void *vptr, const struct irc_ssaddr *addr, const char *name, size_t namelength)
 {
   struct AuthRequest *auth = vptr;

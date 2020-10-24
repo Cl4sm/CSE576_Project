@@ -1,3 +1,4 @@
+static int
 extract_one_line(struct dbuf_queue *qptr, char *buffer)
 {
   int line_bytes = 0, eol_bytes = 0;

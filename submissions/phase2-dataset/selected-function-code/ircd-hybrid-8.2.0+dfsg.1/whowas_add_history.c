@@ -1,3 +1,4 @@
+void
 whowas_add_history(struct Client *client_p, const int online)
 {
   static unsigned int whowas_next = 0;

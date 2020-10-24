@@ -1,3 +1,4 @@
+Pixmap
 MakeHalfBrightPixmap(Pixmap original, GC gc)
 {
     XImage *orig_image, *new_image;

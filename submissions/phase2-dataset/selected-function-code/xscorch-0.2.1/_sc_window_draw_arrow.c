@@ -1,3 +1,4 @@
+static void _sc_window_draw_arrow(GdkPixmap *buffer, GdkGC *gc, int x, int y,
                                   int size, bool right) {
 /* sc_window_draw_arrow
    Draws an arrow on the screen whose RIGHT coordinate of the mainline

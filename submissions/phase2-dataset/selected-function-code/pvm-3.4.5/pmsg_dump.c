@@ -1,3 +1,4 @@
+int
 pmsg_dump(mp, lvl)
 	struct pmsg *mp;
 	int lvl;			/* 0 - summary, 1 - frag lengths, 2 - frag data */

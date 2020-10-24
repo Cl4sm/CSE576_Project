@@ -1,3 +1,4 @@
+int argvify(int *cmd_argc, char **cmd_argv[], const char *cmdline){
 	int i=0, num_args=1, cmd_len=strlen(cmdline);
 	char **argv=NULL, *next_arg=NULL, *cmd_copy=strdup(cmdline);
 

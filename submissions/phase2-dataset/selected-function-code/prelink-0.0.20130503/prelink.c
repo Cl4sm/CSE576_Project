@@ -1,3 +1,4 @@
+int
 prelink (DSO *dso, struct prelink_entry *ent)
 {
   int i;

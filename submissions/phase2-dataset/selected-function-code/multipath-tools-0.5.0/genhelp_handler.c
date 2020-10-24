@@ -1,3 +1,4 @@
+static char *
 genhelp_handler (void)
 {
 	int i, j;

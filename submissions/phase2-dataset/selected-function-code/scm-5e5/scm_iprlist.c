@@ -1,3 +1,4 @@
+void scm_iprlist(hdr, exp, tlr, port, writing)
      char *hdr, tlr;
      SCM exp;
      SCM port;

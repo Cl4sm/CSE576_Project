@@ -1,3 +1,4 @@
+void
 hash_del_channel(struct Channel *chptr)
 {
   unsigned int hashv = strhash(chptr->chname);

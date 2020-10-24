@@ -1,3 +1,4 @@
+void
 SFmotionList(w, n, event)
 	Widget			w;
 	register int		n;

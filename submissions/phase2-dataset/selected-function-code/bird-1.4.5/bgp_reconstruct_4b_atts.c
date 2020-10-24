@@ -1,3 +1,4 @@
+static void
 bgp_reconstruct_4b_atts(struct bgp_proto *p, rta *a, struct linpool *pool)
 {
   eattr *p2 =ea_find(a->eattrs, EA_CODE(EAP_BGP, BA_AS_PATH));

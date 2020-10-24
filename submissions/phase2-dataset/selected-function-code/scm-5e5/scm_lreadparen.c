@@ -1,3 +1,4 @@
+static SCM scm_lreadparen(tok_buf, port, flgs, name)
      SCM tok_buf;
      SCM port;
      int flgs;

@@ -1,3 +1,4 @@
+static unsigned int write_data(struct entry *entry, char *base, unsigned int offset)
 {
 	do {
 		if (entry->path || entry->uncompressed) {

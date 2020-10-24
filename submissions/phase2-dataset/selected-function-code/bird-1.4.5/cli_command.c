@@ -1,3 +1,4 @@
+static void
 cli_command(struct cli *c)
 {
   struct config f;

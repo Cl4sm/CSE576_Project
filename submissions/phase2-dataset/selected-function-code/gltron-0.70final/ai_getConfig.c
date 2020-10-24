@@ -1,3 +1,4 @@
+void ai_getConfig(int player, int target,
 										AI_Configuration *config) {
 
 	Data *data;

@@ -1,3 +1,4 @@
+int m_zeroddr(hfsvol *vol)
 {
   Block0 ddr;
   int i;

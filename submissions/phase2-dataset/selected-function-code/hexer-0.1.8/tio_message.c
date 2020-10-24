@@ -1,3 +1,4 @@
+  void
 tio_message(message, indent)
   char **message;
   int indent;

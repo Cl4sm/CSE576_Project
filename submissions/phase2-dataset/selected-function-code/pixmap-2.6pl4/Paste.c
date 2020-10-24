@@ -1,3 +1,4 @@
+void Paste(w, at_x, at_y, value)
     Widget    w;
     Position  at_x, at_y;
     int       value;

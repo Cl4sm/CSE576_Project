@@ -1,3 +1,4 @@
+void setupLights(int type) {
 	float white[] = { 1.0f, 1.0f, 1.0f, 1.0f };
 	// float gray22[] = { 0.22f, 0.22f, 0.22f, 1.0f };
 	float gray66[] = { 0.66f, 0.66f, 0.66f, 1.0f };

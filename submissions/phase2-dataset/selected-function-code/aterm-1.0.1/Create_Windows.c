@@ -1,3 +1,4 @@
+void
 Create_Windows(int argc, char *argv[])
 {
     Cursor          cursor;

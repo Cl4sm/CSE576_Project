@@ -1,3 +1,4 @@
+void idleTimedemo(void) {
 	int t;
 	int i, j;
 

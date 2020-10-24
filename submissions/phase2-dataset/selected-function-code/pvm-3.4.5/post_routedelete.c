@@ -1,3 +1,4 @@
+int
 post_routedelete(tid, ctx, tag)
 	int tid;
 	int ctx;

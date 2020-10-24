@@ -1,3 +1,4 @@
+void ctrlx_key(int key)
 {
 	switch(key | 0x60) {
 		case 'c': sys_exit(0); break;		/* ^XC exit only if file saved */

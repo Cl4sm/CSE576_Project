@@ -1,3 +1,4 @@
+int dm_reassign(const char *mapname)
 {
 	struct dm_deps *deps;
 	struct dm_task *dmt;

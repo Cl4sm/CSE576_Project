@@ -1,3 +1,4 @@
+void initVideoData(void) {
   gScreen = (Visual*) malloc(sizeof(Visual));
   gViewportType = getSettingi("display_type"); 
   

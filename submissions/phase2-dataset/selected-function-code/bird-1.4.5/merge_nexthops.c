@@ -1,3 +1,4 @@
+static struct mpnh *
 merge_nexthops(struct proto_ospf *po, struct mpnh *s1, struct mpnh *s2, int r1, int r2)
 {
   struct mpnh *root = NULL;

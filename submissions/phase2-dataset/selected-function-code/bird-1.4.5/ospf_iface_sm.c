@@ -1,3 +1,4 @@
+void
 ospf_iface_sm(struct ospf_iface *ifa, int event)
 {
   DBG("SM on iface %s. Event is '%s'\n", ifa->ifname, ospf_ism[event]);

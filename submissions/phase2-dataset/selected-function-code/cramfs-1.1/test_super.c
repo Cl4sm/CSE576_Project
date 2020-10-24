@@ -1,3 +1,4 @@
+static void test_super(int *start, size_t *length) {
 	struct stat st;
 
 	/* find the physical size of the file or block device */

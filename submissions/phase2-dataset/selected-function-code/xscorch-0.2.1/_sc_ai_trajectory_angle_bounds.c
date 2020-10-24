@@ -1,3 +1,4 @@
+static int _sc_ai_trajectory_angle_bounds(int deltax, int deltay, int maxdelta) {
 /* sc_ai_trajectory_angle_bounds
    Calculate the maximum permitted delta angle, for scanning for an optimal
    angle to fire at.  maxdelta is the maximum delta angle permitted from the

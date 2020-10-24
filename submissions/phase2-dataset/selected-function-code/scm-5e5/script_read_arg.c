@@ -1,3 +1,4 @@
+char *script_read_arg(f)
      FILE *f;
 {
   sizet tlen = 1;

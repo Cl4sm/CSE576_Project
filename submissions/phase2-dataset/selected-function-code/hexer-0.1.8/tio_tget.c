@@ -1,3 +1,4 @@
+  int
 tio_tget(int tmout)
   /* Like `tio_get()', but waits `timeout' tenths of a second for input.
    * `tio_tget()' returns `HXKEY_NONE' (0) if nothing has been read.

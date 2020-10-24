@@ -1,3 +1,4 @@
+SCM gsubr_apply(args)
      SCM args;
 {
   SCM self = CAR(args);

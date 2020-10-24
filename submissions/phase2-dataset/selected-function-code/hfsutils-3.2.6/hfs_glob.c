@@ -1,3 +1,4 @@
+char **hfs_glob(hfsvol *vol, int argc, char *argv[], int *nelts)
 {
   dlist list;
   int i;

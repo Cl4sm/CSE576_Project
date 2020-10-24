@@ -1,3 +1,4 @@
+static int
 input_help(int arg, int key UNUSED)
 {
   int i, in_string, in_bracket;

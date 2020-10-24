@@ -1,3 +1,4 @@
+  static char *
 he_line(const struct he_s *hedit, long position)
   /* Create a line suitable for `tio_display()' (including @-commands).
    * `position' ist the number of the first byte in the line to be

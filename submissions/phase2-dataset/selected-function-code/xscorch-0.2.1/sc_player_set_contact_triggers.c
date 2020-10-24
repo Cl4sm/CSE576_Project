@@ -1,3 +1,4 @@
+void sc_player_set_contact_triggers(const sc_config *c, sc_player *p, bool flag) {
 /* sc_player_set_contact_triggers
    Toggles the contact-trigger flag automagically.
    Won't toggle it unless the player has contact triggers. */

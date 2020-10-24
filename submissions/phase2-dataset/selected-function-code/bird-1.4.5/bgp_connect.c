@@ -1,3 +1,4 @@
+static void
 bgp_connect(struct bgp_proto *p)	/* Enter Connect state and start establishing connection */
 {
   sock *s;

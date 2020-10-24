@@ -1,3 +1,4 @@
+void DefaultOptions()
 /*
  *  Set up default options
  */

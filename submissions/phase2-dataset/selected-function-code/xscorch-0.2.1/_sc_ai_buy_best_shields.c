@@ -1,3 +1,4 @@
+static bool _sc_ai_buy_best_shields(const sc_config *c, sc_player *p, int *budget) {
 /* sc_ai_buy_best_shields
    Buy the best shields on the list that we can afford.  We will
    want to sort the shields out before deciding which to buy.  */

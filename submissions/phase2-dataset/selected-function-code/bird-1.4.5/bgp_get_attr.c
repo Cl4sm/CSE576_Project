@@ -1,3 +1,4 @@
+int
 bgp_get_attr(eattr *a, byte *buf, int buflen)
 {
   unsigned int i = EA_ID(a->id);

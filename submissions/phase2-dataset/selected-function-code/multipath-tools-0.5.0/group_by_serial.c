@@ -1,3 +1,4 @@
+extern int
 group_by_serial (struct multipath * mp) {
 	int i, j;
 	int * bitmap;

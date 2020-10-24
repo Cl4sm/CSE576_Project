@@ -1,3 +1,4 @@
+int
 pvm_reg_hoster()
 {
 	static int imit = 0;		/* i'm the hoster */

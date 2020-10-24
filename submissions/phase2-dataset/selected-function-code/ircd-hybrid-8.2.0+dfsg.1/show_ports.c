@@ -1,3 +1,4 @@
+void
 show_ports(struct Client *source_p)
 {
   char buf[IRCD_BUFSIZE] = "";

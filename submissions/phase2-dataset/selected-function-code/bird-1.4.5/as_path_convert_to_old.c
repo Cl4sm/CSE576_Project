@@ -1,3 +1,4 @@
+int
 as_path_convert_to_old(struct adata *path, byte *dst, int *new_used)
 {
   byte *src = path->data;

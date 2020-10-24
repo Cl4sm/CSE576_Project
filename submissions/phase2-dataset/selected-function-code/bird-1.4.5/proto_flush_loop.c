@@ -1,3 +1,4 @@
+static void
 proto_flush_loop(void *unused UNUSED)
 {
   struct proto *p;

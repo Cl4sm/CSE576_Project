@@ -1,3 +1,4 @@
+GType sc_link_check_get_type(void) {
 
    static GType sc_link_check_type = 0;
 

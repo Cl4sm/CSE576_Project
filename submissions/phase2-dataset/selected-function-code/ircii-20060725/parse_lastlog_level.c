@@ -1,3 +1,4 @@
+int
 parse_lastlog_level(str)
 	u_char	*str;
 {

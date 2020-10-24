@@ -1,3 +1,4 @@
+static int
 snprint_progress (char * buff, size_t len, int cur, int total)
 {
 	char * c = buff;

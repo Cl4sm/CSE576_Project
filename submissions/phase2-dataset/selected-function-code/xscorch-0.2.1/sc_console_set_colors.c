@@ -1,3 +1,4 @@
+void sc_console_set_colors(ScConsole *cons, GdkColor *fg, GdkColor *bg) {
 /* sc_console_set_colors
    Modify the normal foreground/background colours for this console.
    This does not alter the colour attributes for highlights or the

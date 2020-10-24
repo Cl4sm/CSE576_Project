@@ -1,3 +1,4 @@
+extern int
 dm_map_present (char * str)
 {
 	int r = 0;

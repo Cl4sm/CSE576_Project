@@ -1,3 +1,4 @@
+void
 processPoint(Context, x, y)
 struct Sundata * Context;
 int x, y;      /* Screen co-ordinates of mouse */

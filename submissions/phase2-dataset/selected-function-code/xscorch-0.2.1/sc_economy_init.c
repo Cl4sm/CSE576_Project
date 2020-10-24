@@ -1,3 +1,4 @@
+void sc_economy_init(sc_economy_config *ec) {
 /* sc_economy_init
    Initialize the economics for start of each game. */
 

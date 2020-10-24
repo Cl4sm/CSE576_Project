@@ -1,3 +1,4 @@
+int
 mb_tidy(tid)
 	int tid;
 {

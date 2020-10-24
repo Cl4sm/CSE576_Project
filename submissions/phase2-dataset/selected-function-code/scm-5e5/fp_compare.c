@@ -1,3 +1,4 @@
+int fp_compare(fp, fpoff, cc, a, m, b, n, array_refsEql_P, p_lim)
      int *fp;
      int fpoff;
      int *cc;

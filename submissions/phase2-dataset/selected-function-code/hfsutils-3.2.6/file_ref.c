@@ -1,3 +1,4 @@
+static
 void file_ref(Tcl_Interp *interp, volref *vref, fileref *fref, hfsfile *file)
 {
   static int id = 0;

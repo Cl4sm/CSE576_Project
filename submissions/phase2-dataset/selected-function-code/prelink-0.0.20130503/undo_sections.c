@@ -1,3 +1,4 @@
+int
 undo_sections (DSO *dso, int undo, struct section_move *move,
 	       struct reloc_info *rinfo, GElf_Ehdr *ehdr,
 	       GElf_Phdr *phdr, GElf_Shdr *shdr)

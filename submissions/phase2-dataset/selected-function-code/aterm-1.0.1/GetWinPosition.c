@@ -1,3 +1,4 @@
+int
 GetWinPosition (Window w, int *x, int *y)
 {
 #ifndef X_DISPLAY_MISSING

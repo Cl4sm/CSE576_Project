@@ -1,3 +1,4 @@
+static void _sc_console_init_obj(ScConsole *cons) {
 /* sc_console_init_obj
    Initialize a new instance of a console.  */
 

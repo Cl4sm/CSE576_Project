@@ -1,3 +1,4 @@
+static	int
 same_channel(ChannelList *chan, u_char	*channel)
 {
 	size_t	len, len2;

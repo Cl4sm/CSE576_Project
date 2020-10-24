@@ -1,3 +1,4 @@
+static int
 scsi_error(struct sg_io_hdr *hdr)
 {
 	/* Treat SG_ERR here to get rid of sg_err.[ch] */

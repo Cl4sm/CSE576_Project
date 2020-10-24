@@ -1,3 +1,4 @@
+static void
 rte_recalculate(struct announce_hook *ah, net *net, rte *new, ea_list *tmpa, struct rte_src *src)
 {
   struct proto *p = ah->proto;

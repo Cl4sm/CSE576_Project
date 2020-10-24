@@ -1,3 +1,4 @@
+int 
 getButton(win, x, y)
 Window win;
 int x, y;

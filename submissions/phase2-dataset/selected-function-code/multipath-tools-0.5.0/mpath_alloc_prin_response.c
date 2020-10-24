@@ -1,3 +1,4 @@
+void * mpath_alloc_prin_response(int prin_sa)
 {
 	void * ptr = NULL;
 	int size=0;

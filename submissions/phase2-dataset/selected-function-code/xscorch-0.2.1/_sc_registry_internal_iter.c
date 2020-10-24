@@ -1,3 +1,4 @@
+inline shashlist_item *_sc_registry_internal_iter(shashlist *list, shashlist_item *item, int class, sc_registry_direction direction, sc_registry_test_func function, long arg) {
 /* _sc_registry_internal_iter
    Local function to find the next or prev entry in a set. */
 

@@ -1,3 +1,4 @@
+void
 clean_up_processes()
 {
 	int	i;

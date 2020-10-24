@@ -1,3 +1,4 @@
+void
 tm2_set(timer2 *t, btime when)
 {
   struct birdloop *loop = birdloop_current();

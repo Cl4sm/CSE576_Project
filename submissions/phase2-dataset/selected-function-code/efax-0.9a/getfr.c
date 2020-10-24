@@ -1,3 +1,4 @@
+int getfr ( TFILE *mf, uchar *buf, int getcmd )
 {
   int err=0, frame=0, frlen, c, t ;
   char remoteid [ IDLEN + 1 ] ;

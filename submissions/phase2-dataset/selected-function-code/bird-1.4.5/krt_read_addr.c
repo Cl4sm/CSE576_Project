@@ -1,3 +1,4 @@
+static void
 krt_read_addr(struct ks_msg *msg, int scan)
 {
   struct ifa_msghdr *ifam = (struct ifa_msghdr *)&msg->rtm;

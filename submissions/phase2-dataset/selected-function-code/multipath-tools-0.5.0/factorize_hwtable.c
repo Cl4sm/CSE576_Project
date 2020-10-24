@@ -1,3 +1,4 @@
+static void
 factorize_hwtable (vector hw, int n)
 {
 	struct hwentry *hwe1, *hwe2;

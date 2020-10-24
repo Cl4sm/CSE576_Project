@@ -1,3 +1,4 @@
+void sc_player_init_round(sc_config *c, sc_player *p) {
 /* sc_player_init_round
    Called once for each player at the beginning of any round. */
 

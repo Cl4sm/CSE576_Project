@@ -1,3 +1,4 @@
+void doblockr()
 {
 	char *bb_end;
 	int c, d;

@@ -1,3 +1,4 @@
+extern int
 get_refwwid (char * dev, enum devtypes dev_type, vector pathvec, char **wwid)
 {
 	int ret = 1;

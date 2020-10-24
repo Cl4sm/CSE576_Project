@@ -1,3 +1,4 @@
+static	int
 connect_to_server_direct(server_name, port, nick, server_index)
 	u_char	*server_name;
 	int	port;

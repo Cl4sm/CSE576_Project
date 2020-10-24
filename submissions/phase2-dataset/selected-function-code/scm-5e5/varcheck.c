@@ -1,3 +1,4 @@
+static int varcheck(vars, op, what)
      SCM vars, op;
      const char *what;
 {

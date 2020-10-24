@@ -1,3 +1,4 @@
+NOEXPORT char *init_sni(SERVICE_OPTIONS *section) {
     char *tmpstr;
     SERVICE_OPTIONS *tmpsrv;
 

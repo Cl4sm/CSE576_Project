@@ -1,3 +1,4 @@
+const char
 *checker_msg_string(struct volume_access_inq *inq)
 {
 	/* lun not connected */

@@ -1,3 +1,4 @@
+  int
 tio_scroll_down(count, first, last)
   int count;
   int first, last;

@@ -1,3 +1,4 @@
+static inline sc_trajectory *_sc_traj_new(const sc_config *c, const sc_player *p,
                                           sc_trajectory_type type, int flags,
                                           double centerx, double centery) {
 /* sc_traj_new

@@ -1,3 +1,4 @@
+int ask(char *question, ...)
 {
   int result = -1;
   va_list args;

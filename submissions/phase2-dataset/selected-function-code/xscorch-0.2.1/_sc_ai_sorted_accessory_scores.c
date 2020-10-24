@@ -1,3 +1,4 @@
+static void _sc_ai_sorted_accessory_scores(sc_accessory_config *ac, int *ordering, int *scores) {
 /* sc_ai_sorted_accessory_scores
    Impose an ordering on the accessorys, based on scores loaded into *scores.  */
 

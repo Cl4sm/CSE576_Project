@@ -1,3 +1,4 @@
+void
 debug_colors(void)
 {
     int             color;

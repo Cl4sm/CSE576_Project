@@ -1,3 +1,4 @@
+inline unsigned int
 ea_hash(ea_list *e)
 {
   u32 h = 0;

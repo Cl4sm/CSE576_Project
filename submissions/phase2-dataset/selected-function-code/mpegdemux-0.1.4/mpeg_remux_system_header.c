@@ -1,3 +1,4 @@
+static
 int mpeg_remux_system_header (mpeg_demux_t *mpeg)
 {
 	if (par_no_shdr && (mpeg->shdr_cnt > 1)) {

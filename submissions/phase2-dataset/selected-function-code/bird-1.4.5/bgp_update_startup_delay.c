@@ -1,3 +1,4 @@
+void
 bgp_update_startup_delay(struct bgp_proto *p)
 {
   struct bgp_config *cf = p->cf;

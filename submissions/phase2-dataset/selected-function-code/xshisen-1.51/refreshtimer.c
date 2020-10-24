@@ -1,3 +1,4 @@
+static Boolean
 refreshtimer(XtPointer p)
 {
     if (bd->Active()) {

@@ -1,3 +1,4 @@
+void FixColorMenuLabel(old_name, name)
      char *old_name;
      char *name;
 {

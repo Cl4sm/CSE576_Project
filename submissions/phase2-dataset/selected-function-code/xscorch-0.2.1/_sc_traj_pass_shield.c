@@ -1,3 +1,4 @@
+static sc_trajectory_result _sc_traj_pass_shield(const sc_config *c, sc_trajectory *tr,
                                                  int flags, const sc_trajectory_data *t) {
 /* sc_traj_pass_shield
    Determine whether we are passing through a tank's shields with the

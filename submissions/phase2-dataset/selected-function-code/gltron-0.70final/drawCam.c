@@ -1,3 +1,4 @@
+void drawCam(Player *p, PlayerVisual* pV) {
   int i;
   float up[3] = { 0, 0, 1 };
 	Visual *d = & pV->display;

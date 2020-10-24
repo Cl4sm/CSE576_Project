@@ -1,3 +1,4 @@
+static int
 def_no_path_retry_handler(vector strvec)
 {
 	char * buff;

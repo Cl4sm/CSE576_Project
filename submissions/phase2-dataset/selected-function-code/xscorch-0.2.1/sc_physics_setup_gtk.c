@@ -1,3 +1,4 @@
+void sc_physics_setup_gtk(sc_window_gtk *w) {
 
    sc_physics *ph = w->c->physics;
    sc_physics_setup_data_gtk setup;

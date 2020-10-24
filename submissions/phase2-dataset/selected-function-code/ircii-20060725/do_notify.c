@@ -1,3 +1,4 @@
+void
 do_notify()
 {
 	static	int	location = 0;

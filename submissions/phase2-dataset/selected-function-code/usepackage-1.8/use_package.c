@@ -1,3 +1,4 @@
+void use_package(char* name)
 {
    package_t* package;
    list_node* node;

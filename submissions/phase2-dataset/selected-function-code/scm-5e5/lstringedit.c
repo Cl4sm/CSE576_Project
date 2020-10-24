@@ -1,3 +1,4 @@
+SCM lstringedit(prog, editspec, args)
      SCM prog, editspec, args;
 {
   int match_start, match_end, search_base, editcount;

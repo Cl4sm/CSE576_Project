@@ -1,3 +1,4 @@
+void displayAbout(void) {
 
 #if GTK_CHECK_VERSION(2,12,0)
     GtkWidget *dialog;

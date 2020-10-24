@@ -1,3 +1,4 @@
+int
 ospf_rx_hook(sock *sk, int size)
 {
   char *mesg = "OSPF: Bad packet from ";

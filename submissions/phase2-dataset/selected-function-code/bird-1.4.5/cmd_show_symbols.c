@@ -1,3 +1,4 @@
+void
 cmd_show_symbols(struct sym_show_data *sd)
 {
   int pos = 0;

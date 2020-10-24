@@ -1,3 +1,4 @@
+int parse_driveprm(int fd, drivedesc_t *drive)
 {
 	int found;
 

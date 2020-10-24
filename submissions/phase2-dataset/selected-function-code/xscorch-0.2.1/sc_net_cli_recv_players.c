@@ -1,3 +1,4 @@
+bool sc_net_cli_recv_players(sc_config *c, sc_client *cli, sc_packet *packet) {
 
    ubyte *p;            /* Pointer to packet data */
    int i;               /* Iterator variable */

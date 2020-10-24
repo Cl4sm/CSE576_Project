@@ -1,3 +1,4 @@
+static bool _sc_net_process_message(sc_config *c, sc_client *cli, sc_packet *packet) {
 
    char buffer[SC_NET_BUFFER_SIZE];   /* Temporary output buffer */
    char infomsg[SC_NET_BUFFER_SIZE];  /* Text to be displayed to user */

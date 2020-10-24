@@ -1,3 +1,4 @@
+void drawRecognizer(void) {
   float dirx;
   vec2 p, v;
 

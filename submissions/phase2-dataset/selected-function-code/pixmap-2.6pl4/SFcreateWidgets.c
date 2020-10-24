@@ -1,3 +1,4 @@
+static void
 SFcreateWidgets(toplevel, prompt, ok, cancel)
 	Widget	toplevel;
 	char	*prompt;

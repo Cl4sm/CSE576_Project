@@ -1,3 +1,4 @@
+static int
 radv_prepare_dnssl(struct radv_iface *ifa, list *dnssl_list, char **buf, char *bufend)
 {
   struct radv_dnssl_config *dcf = HEAD(*dnssl_list);

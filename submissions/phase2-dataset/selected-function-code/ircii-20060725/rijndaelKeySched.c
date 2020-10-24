@@ -1,3 +1,4 @@
+int rijndaelKeySched (word8 k[4][MAXKC], int keyBits, int blockBits, word8 W[MAXROUNDS+1][4][MAXBC]) {
 	/* Calculate the necessary round keys
 	 * The number of calculations depends on keyBits and blockBits
 	 */

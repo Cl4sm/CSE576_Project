@@ -1,3 +1,4 @@
+void init_signals()
 {
 #ifdef WINSIGNALS
   init_sig1(INT_SIGNAL, SIGINT, win32_sigint);

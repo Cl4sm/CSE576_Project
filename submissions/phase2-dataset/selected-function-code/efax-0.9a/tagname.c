@@ -1,3 +1,4 @@
+char *tagname ( int tag )
 {
   static struct tagnamestruct {  int code ;  char *name ; } 
   tagnames [] = {

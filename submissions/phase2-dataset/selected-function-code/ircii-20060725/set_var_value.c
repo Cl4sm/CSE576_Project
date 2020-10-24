@@ -1,3 +1,4 @@
+void
 set_var_value(var_index, value)
 	int	var_index;
 	u_char	*value;

@@ -1,3 +1,4 @@
+int
 write_uint64(uint64_t val, struct dbFILE *f)
 {
   if (fputc((val >> 56) & 0xFF, f->fp) == EOF)

@@ -1,3 +1,4 @@
+ip_addr
 ipv6_mkmask(unsigned n)
 {
   ip_addr a;

@@ -1,3 +1,4 @@
+SCM tryload(filename, reader)
      SCM filename, reader;
 {
   ASRTER(NIMP(filename) && STRINGP(filename), filename, ARG1, s_load);

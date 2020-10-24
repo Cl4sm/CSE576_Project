@@ -1,3 +1,4 @@
+void PWMove(Widget w, Position at_x, Position at_y, int value)
 #else
 void PWMove(w, at_x, at_y, value)
      Widget   w;

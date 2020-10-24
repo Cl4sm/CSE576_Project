@@ -1,3 +1,4 @@
+void
 mp_pool_clean(mp_pool_t *pool, int n_to_keep, int keep_recently_used)
 {
   mp_chunk_t *chunk, **first_to_free;

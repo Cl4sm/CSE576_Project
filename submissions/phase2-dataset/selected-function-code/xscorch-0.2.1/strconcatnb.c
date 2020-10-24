@@ -1,3 +1,4 @@
+char *strconcatnb(char *d, const char *s, sizea n, sizea b) {
 /* StringN-Concat-Null
    Concatenates 2 strings by copying the first <n> characters from
    s into d, and appends a null character to the string.  The dest

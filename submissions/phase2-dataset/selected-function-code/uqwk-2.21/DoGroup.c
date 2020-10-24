@@ -1,3 +1,4 @@
+int DoGroup (np)
 struct nrc_ent *np;
 /*
  *  Process given group

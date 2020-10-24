@@ -1,3 +1,4 @@
+void putsrlenn(const char *s, sizea size) {
 /* Put-String-Rightaligned-Length
    Displays the first <size> characters of string <s> on the console.
    If <s> is smaller than <size> characters, then preceding characters

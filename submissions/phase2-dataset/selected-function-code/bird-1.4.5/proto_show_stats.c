@@ -1,3 +1,4 @@
+static void
 proto_show_stats(struct proto_stats *s, int in_keep_filtered)
 {
   if (in_keep_filtered)

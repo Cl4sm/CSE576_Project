@@ -1,3 +1,4 @@
+void
 tev_send_spntask( dst, ctx, tag, tid, ptid )
 	int dst;
 	int ctx;

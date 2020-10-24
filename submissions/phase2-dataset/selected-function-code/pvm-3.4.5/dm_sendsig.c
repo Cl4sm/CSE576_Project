@@ -1,3 +1,4 @@
+int
 dm_sendsig(hp, mp)
 	struct hostd *hp;
 	struct pmsg *mp;

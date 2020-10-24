@@ -1,3 +1,4 @@
+static int
 radv_reconfigure(struct proto *p, struct proto_config *c)
 {
   struct proto_radv *ra = (struct proto_radv *) p;

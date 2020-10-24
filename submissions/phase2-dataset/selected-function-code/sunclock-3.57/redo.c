@@ -1,3 +1,4 @@
+void redo()
 {
 		/* dont redo nothing */
 		if(undop == undosp) { bell(); return; }

@@ -1,3 +1,4 @@
+void
 SFhAreaSelectedCallback(w, n, pnew)
 	Widget	w;
 	int	n;

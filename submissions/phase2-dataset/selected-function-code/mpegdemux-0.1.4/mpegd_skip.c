@@ -1,3 +1,4 @@
+int mpegd_skip (mpeg_demux_t *mpeg, unsigned n)
 {
 	size_t r;
 

@@ -1,3 +1,4 @@
+int execute_program(char *path, char *value, int len)
 {
 	int retval;
 	int count;

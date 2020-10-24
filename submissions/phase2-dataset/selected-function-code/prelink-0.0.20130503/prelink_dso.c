@@ -1,3 +1,4 @@
+static int
 prelink_dso (struct prelink_info *info)
 {
   int liblist = 0, libstr = 0, nobits_plt = 0;

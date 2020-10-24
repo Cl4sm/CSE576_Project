@@ -1,3 +1,4 @@
+static void
 parse_resvconf(void)
 {
   char *p;

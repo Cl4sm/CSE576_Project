@@ -1,3 +1,4 @@
+int bittorun ( uchar *bits, int n, short *runs )
 {
   static uchar init=0, *rltab [ 256 ] ;
   register uchar *p, c, lastc = 0x00 ;

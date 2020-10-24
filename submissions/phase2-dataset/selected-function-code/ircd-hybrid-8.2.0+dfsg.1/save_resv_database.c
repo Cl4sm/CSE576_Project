@@ -1,3 +1,4 @@
+void
 save_resv_database(void)
 {
   uint32_t records = 0;

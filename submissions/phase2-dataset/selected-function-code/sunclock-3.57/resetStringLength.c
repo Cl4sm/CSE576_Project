@@ -1,3 +1,4 @@
+void
 resetStringLength(max, entry)
 int max;
 TextEntry * entry;

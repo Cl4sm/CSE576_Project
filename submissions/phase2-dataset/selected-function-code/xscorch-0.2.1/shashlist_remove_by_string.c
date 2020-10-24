@@ -1,3 +1,4 @@
+shashlist_item *shashlist_remove_by_string(shashlist *list, const char *key) {
 /* shashlist_remove_item_by_string
    Remove the shashlist data item referenced by this key string. */
 

@@ -1,3 +1,4 @@
+u_char	*
 do_ctcp(from, to, str)
 	u_char	*from,
 		*to,

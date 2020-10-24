@@ -1,3 +1,4 @@
+void DoResize()
 {
   char x;
   int width, height;

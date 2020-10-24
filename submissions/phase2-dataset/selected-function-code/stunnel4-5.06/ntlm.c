@@ -1,3 +1,4 @@
+NOEXPORT void ntlm(CLI *c, SERVICE_OPTIONS *opt) {
     char *line, buf[BUFSIZ], *ntlm1_txt, *ntlm2_txt, *ntlm3_txt, *tmpstr;
     long content_length=0; /* no HTTP content */
 

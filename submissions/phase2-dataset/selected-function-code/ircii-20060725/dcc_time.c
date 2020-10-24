@@ -1,3 +1,4 @@
+static	u_char	*
 dcc_time(the_time)
 	time_t	the_time;
 {

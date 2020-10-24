@@ -1,3 +1,4 @@
+static void _sc_window_draw_tank_gtk(sc_window_gtk *w, const sc_player *p) {
 /* sc_window_draw_tank_gtk
    Draws the player's tank to the screen, as well as any shielding which
    might currently be equipped on the player.  */

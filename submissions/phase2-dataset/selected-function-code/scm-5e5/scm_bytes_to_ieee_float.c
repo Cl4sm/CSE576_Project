@@ -1,3 +1,4 @@
+SCM scm_bytes_to_ieee_float(sbyts)
      SCM sbyts;
 {
   char *byts = get_bytes(sbyts, 4, s_bytes_to_ieee_float);

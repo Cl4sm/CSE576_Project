@@ -1,3 +1,4 @@
+GPtrArray *manager_get_adapters(Manager *self)
 {
     g_assert(MANAGER_IS(self));
 

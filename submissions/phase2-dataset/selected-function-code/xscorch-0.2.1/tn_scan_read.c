@@ -1,3 +1,4 @@
+bool tn_scan_read(tn_connection *tnc, struct timeval *timeout) {
 /*
  * tn_scan_read
  * Scan the connection buffer and read in new packets.

@@ -1,3 +1,4 @@
+void folderDelete(LIBMTP_folder_t* folderptr, guint level) {
 
     GSList *node;
     FileListStruc *fileptr;

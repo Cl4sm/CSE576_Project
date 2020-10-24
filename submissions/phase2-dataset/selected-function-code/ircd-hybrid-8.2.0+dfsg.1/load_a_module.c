@@ -1,3 +1,4 @@
+int
 load_a_module(const char *path, int warn)
 {
   lt_dlhandle tmpptr = NULL;

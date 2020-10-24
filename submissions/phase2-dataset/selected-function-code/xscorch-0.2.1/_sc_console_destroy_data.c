@@ -1,3 +1,4 @@
+static void _sc_console_destroy_data(ScConsole *cons) {
 /* sc_console_destroy_data
    Destroys the data buffer currently allocated to this console, and
    data allocated in the highlight structures.  This does not release

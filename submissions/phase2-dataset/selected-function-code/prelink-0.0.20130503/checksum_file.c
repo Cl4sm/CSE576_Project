@@ -1,3 +1,4 @@
+static int
 checksum_file (int fd, size_t count,
 	       void (*sum) (const void *, size_t, void *), void *arg)
 {

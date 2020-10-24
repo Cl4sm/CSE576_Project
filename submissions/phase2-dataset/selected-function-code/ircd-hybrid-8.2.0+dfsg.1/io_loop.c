@@ -1,3 +1,4 @@
+static void
 io_loop(void)
 {
   while (1)

@@ -1,3 +1,4 @@
+pl_startup(num, hostlist)
 	int num;
 	struct hst **hostlist;
 {

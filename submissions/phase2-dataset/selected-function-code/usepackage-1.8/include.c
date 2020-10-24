@@ -1,3 +1,4 @@
+int include(char* filename)
 {
    static linked_list* include_path = NULL;
    list_node* node;

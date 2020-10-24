@@ -1,3 +1,4 @@
+void
 lookup_confhost(struct MaskItem *conf)
 {
   struct addrinfo hints, *res;

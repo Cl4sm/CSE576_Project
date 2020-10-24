@@ -1,3 +1,4 @@
+static bool _sc_traj_digger_direction_clear(const sc_config *c, sc_trajectory *tr,
                                             int flags, int dir) {
 /* sc_traj_digger_direction_clear
    Check if the specified delta direction is clear or not. */

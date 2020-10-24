@@ -1,3 +1,4 @@
+gboolean folderListAddDialog(LIBMTP_folder_t *folders, GtkTreeIter *parent, GtkTreeStore *fl) {
     GtkTreeIter rowIter;
     GdkPixbuf *image = NULL;
 

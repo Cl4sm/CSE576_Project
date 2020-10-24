@@ -1,3 +1,4 @@
+void
 get_options(int argc, char *argv[])
 {
     int             i, bad_option = 0;

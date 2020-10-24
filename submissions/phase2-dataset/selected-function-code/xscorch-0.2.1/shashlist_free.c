@@ -1,3 +1,4 @@
+void shashlist_free(shashlist **list) {
 /* shashlist_free
    Destroy and deallocate an entire hash list. */
 

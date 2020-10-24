@@ -1,3 +1,4 @@
+static int
 def_names_handler(vector strvec)
 {
 	char * buff;

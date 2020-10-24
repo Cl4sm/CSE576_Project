@@ -1,3 +1,4 @@
+void
 scr_gotorc(int row, int col, int relative)
 {
     ZERO_SCROLLBACK;

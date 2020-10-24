@@ -1,3 +1,4 @@
+int
 dm_drv_version (unsigned int * version, char * str)
 {
 	int r = 2;

@@ -1,3 +1,4 @@
+gchar* playlistImport(gchar * filename) {
     FILE* fd;
     gchar* playlistname = NULL;
     gchar* fileString = NULL;

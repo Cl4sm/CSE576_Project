@@ -1,3 +1,4 @@
+void setup_PL_List(GtkTreeView *treeviewFiles) {
     GtkCellRenderer *renderer;
     GtkTreeViewColumn *column;
 

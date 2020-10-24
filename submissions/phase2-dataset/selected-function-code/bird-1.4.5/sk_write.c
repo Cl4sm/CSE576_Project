@@ -1,3 +1,4 @@
+int
 sk_write(sock *s)
 {
   switch (s->type)

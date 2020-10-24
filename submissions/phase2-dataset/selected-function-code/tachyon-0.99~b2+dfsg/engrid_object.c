@@ -1,3 +1,4 @@
+static int engrid_object(grid * g, object * obj, int addtolist) {
   vector omin, omax; 
   gridindex low, high;
   int x, y, z, zindex, yindex, voxindex;

@@ -1,3 +1,4 @@
+bool sc_player_activate_shield(const sc_config *c, sc_player *p) {
 /* sc_player_activate_shield
    Activates the currently selected player shield.  If unable to activate,
    then false is returned.  Any existing shield will be destroyed, even

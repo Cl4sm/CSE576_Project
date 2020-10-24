@@ -1,3 +1,4 @@
+void
 sendto_common_channels_local(struct Client *user, int touser, unsigned int cap,
                              const char *pattern, ...)
 {

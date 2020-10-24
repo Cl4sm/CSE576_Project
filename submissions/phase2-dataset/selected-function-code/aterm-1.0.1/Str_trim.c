@@ -1,3 +1,4 @@
+char           *
 Str_trim(char *str)
 {
     if (str && *str) {

@@ -1,3 +1,4 @@
+void
 bfd_send_ctl(struct bfd_proto *p, struct bfd_session *s, int final)
 {
   sock *sk = s->ifa->sk;

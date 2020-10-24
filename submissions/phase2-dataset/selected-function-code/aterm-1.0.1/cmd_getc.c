@@ -1,3 +1,4 @@
+unsigned char
 cmd_getc(void)
 {
 #define TIMEOUT_USEC	5000

@@ -1,3 +1,4 @@
+int main(int argc, char **argv)
 {
 	int i, use_gtk = 0;
 

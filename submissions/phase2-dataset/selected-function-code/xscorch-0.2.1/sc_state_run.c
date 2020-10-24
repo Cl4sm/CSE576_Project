@@ -1,3 +1,4 @@
+void sc_state_run(sc_config *c, sc_game *g) {
 
    struct timeval curtime;
 

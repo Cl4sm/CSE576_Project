@@ -1,3 +1,4 @@
+Boolean StrToPort( str, p )
     char *str;
     Port *p;
 {

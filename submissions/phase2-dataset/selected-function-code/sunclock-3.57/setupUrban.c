@@ -1,3 +1,4 @@
+void
 setupUrban(mode)
 int mode;
 {

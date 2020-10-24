@@ -1,3 +1,4 @@
+NOEXPORT void cache_transfer(SSL_CTX *ctx, const unsigned int type,
         const unsigned int timeout,
         const unsigned char *key, const unsigned int key_len,
         const unsigned char *val, const unsigned int val_len,

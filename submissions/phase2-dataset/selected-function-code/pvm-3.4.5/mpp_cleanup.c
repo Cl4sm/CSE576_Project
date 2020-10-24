@@ -1,3 +1,4 @@
+void
 mpp_cleanup()
 {
 	struct peer *pp;

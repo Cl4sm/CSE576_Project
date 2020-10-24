@@ -1,3 +1,4 @@
+static void
 nl_parse_link(struct nlmsghdr *h, int scan)
 {
   struct ifinfomsg *i;

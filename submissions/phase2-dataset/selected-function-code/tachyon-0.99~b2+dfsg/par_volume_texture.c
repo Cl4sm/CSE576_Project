@@ -1,3 +1,4 @@
+color par_volume_texture(vector * hit, texture * tex, ray * ry) {
   color col, col2;
   box * bx;
   parvol * xvol;

@@ -1,3 +1,4 @@
+void
 dumpHex(const char* str, int len, int log)
 {
 	const char * p = str;

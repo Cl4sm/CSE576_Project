@@ -1,3 +1,4 @@
+int runor ( short *a, int na, short *b, int nb, short *c, int *pels )
 {
   register short la, lb ;
   int ia, ib, ic, np=0 ;

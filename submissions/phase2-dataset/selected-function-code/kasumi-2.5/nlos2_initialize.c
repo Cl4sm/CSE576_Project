@@ -1,3 +1,4 @@
+static __attribute__((constructor)) void
 nlos2_initialize ()
 {
   char *root = getenv ("UNIXROOT");

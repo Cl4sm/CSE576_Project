@@ -1,3 +1,4 @@
+Window	*
 new_window()
 {
 	Window	*new;

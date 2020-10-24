@@ -1,3 +1,4 @@
+static int
 parse_path(struct adata *path, struct pm_pos *pos)
 {
   u8 *p = path->data;

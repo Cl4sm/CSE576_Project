@@ -1,3 +1,4 @@
+int
 mksocs()
 {
 	struct hostd *hp = hosts->ht_hosts[hosts->ht_local];

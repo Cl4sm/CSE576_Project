@@ -1,3 +1,4 @@
+static inline void
 show_lsa_network(struct top_hash_entry *he)
 {
   struct ospf_lsa_header *lsa = &(he->lsa);

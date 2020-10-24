@@ -1,3 +1,4 @@
+int handle_it(i)
      int i;
 {
   SCM proc;

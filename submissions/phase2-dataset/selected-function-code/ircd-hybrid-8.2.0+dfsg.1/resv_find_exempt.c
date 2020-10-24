@@ -1,3 +1,4 @@
+int
 resv_find_exempt(const struct Client *who, const struct MaskItem *conf)
 {
   const dlink_node *ptr = NULL;

@@ -1,3 +1,4 @@
+static void _sc_console_draw_region(ScConsole *cons, gint x, gint y, gint width, gint height) {
 /* sc_console_draw_region
    Draws a region of the console, specified by the rectangle using CHARACTER
    coordinates, with corner (x,y) and the indicated width and height.  This

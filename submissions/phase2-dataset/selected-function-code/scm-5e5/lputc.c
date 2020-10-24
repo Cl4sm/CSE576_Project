@@ -1,3 +1,4 @@
+void lputc(c, port)
      int c;
      SCM port;
 {

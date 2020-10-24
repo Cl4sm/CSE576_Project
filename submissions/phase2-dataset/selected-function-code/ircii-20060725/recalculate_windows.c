@@ -1,3 +1,4 @@
+void
 recalculate_windows()
 {
 	int	base_size,

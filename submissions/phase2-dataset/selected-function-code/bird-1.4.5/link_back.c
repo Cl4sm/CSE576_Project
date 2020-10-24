@@ -1,3 +1,4 @@
+static int
 link_back(struct ospf_area *oa, struct top_hash_entry *en, struct top_hash_entry *par)
 {
   u32 i, *rts;

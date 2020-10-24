@@ -1,3 +1,4 @@
+int v_readmdb(hfsvol *vol)
 {
   if (l_getmdb(vol, &vol->mdb, 0) == -1)
     goto fail;

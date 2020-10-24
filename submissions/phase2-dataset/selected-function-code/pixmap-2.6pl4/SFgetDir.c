@@ -1,3 +1,4 @@
+int
 SFgetDir(dir)
 	SFDir	*dir;
 {

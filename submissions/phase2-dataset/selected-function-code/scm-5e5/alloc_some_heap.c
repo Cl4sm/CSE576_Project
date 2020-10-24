@@ -1,3 +1,4 @@
+static void alloc_some_heap()
 {
   CELLPTR ptr, *tmplims;
   sizet len = (2+hplim_ind)*sizeof(CELLPTR);

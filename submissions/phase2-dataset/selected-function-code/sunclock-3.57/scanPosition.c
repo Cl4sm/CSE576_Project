@@ -1,3 +1,4 @@
+void
 scanPosition(string, city)
 char * string;
 City * city;

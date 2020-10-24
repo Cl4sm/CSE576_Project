@@ -1,3 +1,4 @@
+static void mark_syms(v)
      SCM v;
 {
   SCM x, al;

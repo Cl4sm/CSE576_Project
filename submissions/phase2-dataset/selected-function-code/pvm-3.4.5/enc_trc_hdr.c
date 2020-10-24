@@ -1,3 +1,4 @@
+int /* not static */
 enc_trc_hdr(mp)
 	struct pmsg *mp;
 {

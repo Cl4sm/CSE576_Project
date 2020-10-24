@@ -1,3 +1,4 @@
+static struct bgp_bucket *
 bgp_get_bucket(struct bgp_proto *p, net *n, ea_list *attrs, int originate)
 {
   ea_list *new;

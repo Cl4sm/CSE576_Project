@@ -1,3 +1,4 @@
+int
 sendmessage(mp)
 	struct pmsg *mp;
 {

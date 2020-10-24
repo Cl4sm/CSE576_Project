@@ -1,3 +1,4 @@
+  long
 he_do_command(hedit, command)
   struct he_s *hedit;
   struct he_command_s *command;

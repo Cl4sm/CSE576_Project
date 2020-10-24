@@ -1,3 +1,4 @@
+void
 roa_flush(struct roa_table *t, byte src)
 {
   struct roa_item *it, **itp;

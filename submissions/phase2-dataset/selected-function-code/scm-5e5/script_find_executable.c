@@ -1,3 +1,4 @@
+char *script_find_executable(name)
      const char *name;
 {
   char tbuf[MAXPATHLEN];

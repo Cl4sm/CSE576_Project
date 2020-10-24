@@ -1,3 +1,4 @@
+int
 config_parse(struct config *c)
 {
   DBG("Parsing configuration file `%s'\n", c->file_name);

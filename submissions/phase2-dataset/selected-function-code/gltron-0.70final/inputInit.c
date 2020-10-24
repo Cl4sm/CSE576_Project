@@ -1,3 +1,4 @@
+void inputInit(void) {
 	/* keyboard */
   SDL_EnableKeyRepeat(0, 0); /* turn keyrepeat off */
   

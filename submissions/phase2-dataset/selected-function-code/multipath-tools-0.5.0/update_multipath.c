@@ -1,3 +1,4 @@
+int update_multipath (struct vectors *vecs, char *mapname, int reset)
 {
 	struct multipath *mpp;
 	struct pathgroup  *pgp;

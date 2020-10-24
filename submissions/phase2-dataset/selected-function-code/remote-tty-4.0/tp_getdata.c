@@ -1,3 +1,4 @@
+int
 tp_getdata(int fd, ttyprot *tp) {
 	int len = ntohs(tp->i);
 	int nchars;

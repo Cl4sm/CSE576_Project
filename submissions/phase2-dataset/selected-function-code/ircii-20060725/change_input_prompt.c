@@ -1,3 +1,4 @@
+void
 change_input_prompt(direction)
 	int	direction;
 {

@@ -1,3 +1,4 @@
+extern int
 apply_format (char * string, char * cmd, struct path * pp)
 {
 	char * pos;

@@ -1,3 +1,4 @@
+void updateSettingsCache(void) {
   /* cache lua settings that don't change during play */
   gSettingsCache.use_stencil = getSettingi("use_stencil");
   gSettingsCache.show_scores = getSettingi("show_scores");

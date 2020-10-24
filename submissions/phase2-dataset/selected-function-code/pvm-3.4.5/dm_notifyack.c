@@ -1,3 +1,4 @@
+int
 dm_notifyack(hp, mp)
 	struct hostd *hp;
 	struct pmsg *mp;

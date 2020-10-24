@@ -1,3 +1,4 @@
+  static void
 he_insert_mode(hedit, replace_mode, count)
   struct he_s *hedit;
   int replace_mode;

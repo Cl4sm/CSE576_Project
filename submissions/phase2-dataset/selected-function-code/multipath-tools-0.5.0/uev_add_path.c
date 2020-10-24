@@ -1,3 +1,4 @@
+static int
 uev_add_path (struct uevent *uev, struct vectors * vecs)
 {
 	struct path *pp;

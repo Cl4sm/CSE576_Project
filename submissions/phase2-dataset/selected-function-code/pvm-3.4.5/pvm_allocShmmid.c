@@ -1,3 +1,4 @@
+int
 pvm_allocShmmid(midentry)
 struct shm_midlist **midentry;
 {

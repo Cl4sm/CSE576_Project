@@ -1,3 +1,4 @@
+static void autoConfigureDisplay(void) {
   int n_humans = 0;
   int i;
   int vp;

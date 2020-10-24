@@ -1,3 +1,4 @@
+void
 oper_up(struct Client *source_p)
 {
   const unsigned int old = source_p->umodes;

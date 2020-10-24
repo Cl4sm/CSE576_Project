@@ -1,3 +1,4 @@
+GType sc_gadget_get_type(void) {
 
    static GType sc_gadget_type = 0;
 

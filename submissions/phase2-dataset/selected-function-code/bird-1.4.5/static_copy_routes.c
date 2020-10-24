@@ -1,3 +1,4 @@
+static void
 static_copy_routes(list *dlst, list *slst)
 {
   struct static_route *dr, *sr;

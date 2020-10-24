@@ -1,3 +1,4 @@
+void print_verifying(int cylinder, int head)
 {
 	if (verbosity >= 5) {
 		printf("verifying cylinder %d head %d\n",

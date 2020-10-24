@@ -1,3 +1,4 @@
+int writebmp(char * filename, int xs, int ys, unsigned char * img) {
   if (img != NULL) {
     FILE * dfile;
 

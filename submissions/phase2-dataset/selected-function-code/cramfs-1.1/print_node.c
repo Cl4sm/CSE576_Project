@@ -1,3 +1,4 @@
+static void print_node(struct entry *e)
 {
 	char info[10];
 	char type = '?';

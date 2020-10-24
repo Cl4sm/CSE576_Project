@@ -1,3 +1,4 @@
+void sc_console_buffer_size(ScConsole *cons, gint width, gint height) {
 /* sc_console_buffer_size
    This resets the console size.  The buffer text is cleared.  This does not
    automatically redraw the console; it is generally used as an initialization

@@ -1,3 +1,4 @@
+static	int
 delete_process(process)
 	int	process;
 {

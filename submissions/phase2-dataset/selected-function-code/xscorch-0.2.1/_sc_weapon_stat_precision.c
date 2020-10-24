@@ -1,3 +1,4 @@
+static double _sc_weapon_stat_precision(const sc_weapon_config *wc, const sc_weapon_info *info, bool triple) {
 /* _sc_weapon_stat_precision
    Find a rough estimator of a weapon's precision.
    Later on we might have a wind shear value, and/or a

@@ -1,3 +1,4 @@
+int
 prelink_undo (DSO *dso)
 {
   GElf_Ehdr ehdr;

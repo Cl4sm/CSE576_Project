@@ -1,3 +1,4 @@
+void initData(void) {
 	/* lasttime = SystemGetElapsedTime(); */
 	game->pauseflag = PAUSE_GAME_RUNNING;
 

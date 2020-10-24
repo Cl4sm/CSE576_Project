@@ -1,3 +1,4 @@
+char *
 dynbuf(tid, len)
 	int tid;
 	int len;

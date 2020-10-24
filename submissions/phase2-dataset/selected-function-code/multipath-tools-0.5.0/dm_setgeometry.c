@@ -1,3 +1,4 @@
+int dm_setgeometry(struct multipath *mpp)
 {
 	struct dm_task *dmt;
 	struct path *pp;

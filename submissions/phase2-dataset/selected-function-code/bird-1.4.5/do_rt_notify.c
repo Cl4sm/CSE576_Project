@@ -1,3 +1,4 @@
+static void
 do_rt_notify(struct announce_hook *ah, net *net, rte *new, rte *old, ea_list *tmpa, int refeed)
 {
   struct proto *p = ah->proto;

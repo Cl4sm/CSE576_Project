@@ -1,3 +1,4 @@
+int
 mpp_conn(tp, tp2)
 	struct task *tp;
 	struct task *tp2;

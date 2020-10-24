@@ -1,3 +1,4 @@
+void
 process_csi_seq(void)
 {
     unsigned char   ch, priv;

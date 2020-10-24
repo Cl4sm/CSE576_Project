@@ -1,3 +1,4 @@
+static
 void calctzdiff(void)
 {
 # ifdef HAVE_MKTIME

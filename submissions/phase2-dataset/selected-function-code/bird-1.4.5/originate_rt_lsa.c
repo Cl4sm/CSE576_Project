@@ -1,3 +1,4 @@
+void
 originate_rt_lsa(struct ospf_area *oa)
 {
   struct ospf_lsa_header lsa;

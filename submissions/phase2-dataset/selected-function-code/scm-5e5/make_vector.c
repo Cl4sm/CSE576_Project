@@ -1,3 +1,4 @@
+SCM make_vector(k, fill)
      SCM k, fill;
 {
   SCM v;

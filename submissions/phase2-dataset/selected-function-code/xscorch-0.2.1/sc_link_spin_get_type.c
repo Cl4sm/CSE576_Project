@@ -1,3 +1,4 @@
+GType sc_link_spin_get_type(void) {
 
    static GType sc_link_spin_type = 0;
 

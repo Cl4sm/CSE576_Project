@@ -1,3 +1,4 @@
+int v_mkdir(hfsvol *vol, unsigned long parid, const char *name)
 {
   CatKeyRec key;
   CatDataRec data;

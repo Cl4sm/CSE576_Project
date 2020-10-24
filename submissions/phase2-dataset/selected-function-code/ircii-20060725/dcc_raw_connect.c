@@ -1,3 +1,4 @@
+u_char	*
 dcc_raw_connect(host, iport)
 	u_char	*host;
 	u_int	iport;

@@ -1,3 +1,4 @@
+static void _sc_state_turn_pl_done(sc_config *c, sc_game *g) {
 
    sc_player *p = c->plorder[g->curplayer];
 

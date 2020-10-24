@@ -1,3 +1,4 @@
+void deviceProperties() {
     gint ret;
     gchar *tmp_string;
 

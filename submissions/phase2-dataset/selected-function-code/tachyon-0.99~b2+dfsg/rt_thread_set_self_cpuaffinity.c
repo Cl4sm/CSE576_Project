@@ -1,3 +1,4 @@
+int rt_thread_set_self_cpuaffinity(int cpu) {
   int status=-1; /* unsupported by default */
 
 #ifdef THR

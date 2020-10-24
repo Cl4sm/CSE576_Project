@@ -1,3 +1,4 @@
+static	void
 scrollback_forwards_lines(ScrollDist)
 	int	ScrollDist;
 {

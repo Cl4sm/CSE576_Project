@@ -1,3 +1,4 @@
+int
 parseFont(s)
 char * s;
 {

@@ -1,3 +1,4 @@
+bool reg_var_set_block(const reg *r, reg_var *b, const char *name, reg_var **block) {
 /* reg_var_set_block
    Adds a new block variable.  */
 

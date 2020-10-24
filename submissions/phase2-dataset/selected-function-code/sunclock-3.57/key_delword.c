@@ -1,3 +1,4 @@
+void key_delword(int eol)
 {
 	char	*d=cur_pos;
 

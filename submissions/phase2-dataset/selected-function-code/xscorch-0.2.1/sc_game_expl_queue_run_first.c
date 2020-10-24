@@ -1,3 +1,4 @@
+bool sc_game_expl_queue_run_first(sc_config *c, sc_game *g, sc_explosion *queue, sc_game_run_fn action) {
 /* sc_game_expl_queue_run_first
    Find the first item in the queue whose timestamp is at most the current game
    time, invoking the procedure given exactly once on that item.  Action may

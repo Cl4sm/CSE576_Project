@@ -1,3 +1,4 @@
+void s_log(int level, const char *format, ...) {
     va_list ap;
     char *text, *stamp, *id;
     unsigned long tid;

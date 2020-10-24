@@ -1,3 +1,4 @@
+void doCycleTurnRotation(PlayerVisual *pV, Player *p) {
   int neigung_dir = -1;
 	int time = game2->time.current - p->data->turn_time;
   float dirAngle = getDirAngle(time, p);

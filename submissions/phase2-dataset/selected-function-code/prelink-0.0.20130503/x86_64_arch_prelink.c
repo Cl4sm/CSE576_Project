@@ -1,3 +1,4 @@
+static int
 x86_64_arch_prelink (struct prelink_info *info)
 {
   DSO *dso;

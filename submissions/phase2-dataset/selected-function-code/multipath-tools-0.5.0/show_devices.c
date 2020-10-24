@@ -1,3 +1,4 @@
+int
 show_devices (char ** r, int * len, struct vectors *vecs)
 {
 	char *c = NULL;

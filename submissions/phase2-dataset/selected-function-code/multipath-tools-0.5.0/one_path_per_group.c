@@ -1,3 +1,4 @@
+extern int
 one_path_per_group (struct multipath * mp)
 {
 	int i;

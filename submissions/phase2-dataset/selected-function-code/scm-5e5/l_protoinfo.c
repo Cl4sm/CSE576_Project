@@ -1,3 +1,4 @@
+SCM l_protoinfo(name)
      SCM name;
 {
   SCM ans = make_vector(MAKINUM(3), UNSPECIFIED);

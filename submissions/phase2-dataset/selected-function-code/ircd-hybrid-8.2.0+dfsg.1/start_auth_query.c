@@ -1,3 +1,4 @@
+static int
 start_auth_query(struct AuthRequest *auth)
 {
   struct irc_ssaddr localaddr;

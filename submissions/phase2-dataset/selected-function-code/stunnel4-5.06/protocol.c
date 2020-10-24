@@ -1,3 +1,4 @@
+char *protocol(CLI *c, SERVICE_OPTIONS *opt, const PHASE phase) {
     if(phase==PROTOCOL_CHECK) /* default to be overridden by protocols */
         opt->option.connect_before_ssl=opt->option.client;
     if(!opt->protocol) /* no protocol specified */

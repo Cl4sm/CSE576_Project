@@ -1,3 +1,4 @@
+void
 watch_add_to_hash_table(const char *nick, struct Client *client_p)
 {
   struct Watch *anptr = NULL;

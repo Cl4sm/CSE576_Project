@@ -1,3 +1,4 @@
+static void _sc_options_setup_apply_gtk(__libj_unused ScDialog *dlg, sc_options_setup_data_gtk *setup) {
 
    sc_config_options *co = setup->co;
    sc_window_gtk *w = (sc_window_gtk *)setup->c->window;

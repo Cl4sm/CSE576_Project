@@ -1,3 +1,4 @@
+static	Screen	*
 create_new_screen()
 {
 	Screen	*new = NULL,

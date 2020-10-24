@@ -1,3 +1,4 @@
+int n_free(node *np)
 {
   btree *bt = np->bt;
   node sib;

@@ -1,3 +1,4 @@
+int hfs_mkpart(const char *path, unsigned long len)
 {
   hfsvol vol;
 

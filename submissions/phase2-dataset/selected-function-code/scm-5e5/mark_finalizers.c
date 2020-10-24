@@ -1,3 +1,4 @@
+static void mark_finalizers(finalizers, pending)
      SCM *finalizers, *pending;
 {
   SCM lst, elt, v;

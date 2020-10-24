@@ -1,3 +1,4 @@
+void mkdis ( cap c, uchar *fif, int len, int isdis, int t4tx ) 
 {
   int i, k ;
   t30tabst *p ;

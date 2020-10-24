@@ -1,3 +1,4 @@
+int
 update_dynamic_rel (DSO *dso, struct reloc_info *rinfo)
 {
   GElf_Dyn *info[DT_NUM], *info_DT_RELCOUNT, *info_DT_RELACOUNT;

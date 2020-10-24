@@ -1,3 +1,4 @@
+static int
 gather_exec (DSO *dso, const struct stat64 *st)
 {
   int i, j;

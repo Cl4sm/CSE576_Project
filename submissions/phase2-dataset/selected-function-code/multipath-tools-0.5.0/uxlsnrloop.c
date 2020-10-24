@@ -1,3 +1,4 @@
+static void *
 uxlsnrloop (void * ap)
 {
 	if (cli_init())

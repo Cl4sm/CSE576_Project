@@ -1,3 +1,4 @@
+static int
 GetCode(FILE *fd, int code_size, int flag)
 {
     static unsigned char buf[280];

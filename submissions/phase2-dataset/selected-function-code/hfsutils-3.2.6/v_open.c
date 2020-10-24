@@ -1,3 +1,4 @@
+int v_open(hfsvol *vol, const char *path, int mode)
 {
   if (vol->flags & HFS_VOL_OPEN)
     ERROR(EINVAL, "volume already open");

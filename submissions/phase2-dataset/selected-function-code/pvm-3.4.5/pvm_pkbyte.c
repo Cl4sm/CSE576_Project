@@ -1,3 +1,4 @@
+int
 pvm_pkbyte(cp, cnt, std)
 	char *cp;
 	int cnt;

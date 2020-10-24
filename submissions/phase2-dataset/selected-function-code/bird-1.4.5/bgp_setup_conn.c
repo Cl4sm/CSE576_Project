@@ -1,3 +1,4 @@
+static void
 bgp_setup_conn(struct bgp_proto *p, struct bgp_conn *conn)
 {
   timer *t;

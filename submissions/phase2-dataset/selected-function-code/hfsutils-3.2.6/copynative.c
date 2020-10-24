@@ -1,3 +1,4 @@
+static
 int copynative(Tcl_Interp *interp, volref *srcvref, char *argv[])
 {
   volref *dstvref;

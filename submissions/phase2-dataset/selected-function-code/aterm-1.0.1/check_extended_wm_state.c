@@ -1,3 +1,4 @@
+Bool
 check_extended_wm_state()	
 {
 	CARD32         *items;

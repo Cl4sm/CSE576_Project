@@ -1,3 +1,4 @@
+void
 sunpos(jd, apparent, ra, dec, rv, slong)
 double jd;
 int apparent;

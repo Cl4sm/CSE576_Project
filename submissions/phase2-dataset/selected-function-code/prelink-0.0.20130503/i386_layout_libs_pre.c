@@ -1,3 +1,4 @@
+static int
 i386_layout_libs_pre (struct layout_libs *l)
 {
   Elf32_Addr mmap_start, virt, reg0s;

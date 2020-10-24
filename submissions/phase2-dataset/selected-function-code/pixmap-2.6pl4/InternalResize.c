@@ -1,3 +1,4 @@
+static int InternalResize(PW)
      PixmapWidget PW;
 {
     Dimension w, h, rw, rh, oldw, oldh;

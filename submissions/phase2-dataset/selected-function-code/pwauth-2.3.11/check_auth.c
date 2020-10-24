@@ -1,3 +1,4 @@
+int check_auth(char *login, char *passwd)
 {
 #ifndef PAM_SOLARIS_26
     struct ad_user user_info= {login, passwd};

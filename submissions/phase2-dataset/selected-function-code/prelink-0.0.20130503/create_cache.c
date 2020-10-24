@@ -1,3 +1,4 @@
+static struct find_cxx_sym_cache *
 create_cache (DSO *dso, int plt)
 {
   Elf_Data *symtab, *strtab;

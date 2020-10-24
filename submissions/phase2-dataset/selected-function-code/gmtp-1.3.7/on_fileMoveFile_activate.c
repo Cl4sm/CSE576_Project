@@ -1,3 +1,4 @@
+void on_fileMoveFile_activate(GtkMenuItem *menuitem, gpointer user_data) {
     GList *List = NULL;
     int64_t targetfolder = 0;
 

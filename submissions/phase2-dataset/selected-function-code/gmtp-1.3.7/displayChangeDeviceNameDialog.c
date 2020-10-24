@@ -1,3 +1,4 @@
+gchar* displayChangeDeviceNameDialog(gchar* devicename) {
     GtkWidget *dialog, *hbox, *label, *textbox;
     gchar* textfield;
 

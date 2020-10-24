@@ -1,3 +1,4 @@
+static
 int copyout(Tcl_Interp *interp, hfsvol *vol, char *argv[])
 {
   cpofunc copyfile;

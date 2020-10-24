@@ -1,3 +1,4 @@
+char*
 i_realloc(loc, len)
 	char *loc;			/* old buffer */
 	unsigned len;		/* length of new buffer */

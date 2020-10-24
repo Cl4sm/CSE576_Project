@@ -1,3 +1,4 @@
+neighbor *
 neigh_find2(struct proto *p, ip_addr *a, struct iface *ifa, unsigned flags)
 {
   neighbor *n;

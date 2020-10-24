@@ -1,3 +1,4 @@
+int zhconv (yytconfig curconfig, char *buf, int *count)
 {
 	int fromcode, tocode;
 	static int lastfrom = 0;	/* From code from the last iteration. */

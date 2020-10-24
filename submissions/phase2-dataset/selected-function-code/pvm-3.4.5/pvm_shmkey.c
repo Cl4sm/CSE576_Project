@@ -1,3 +1,4 @@
+int
 pvm_shmkey(pid)
 	int pid;
 {

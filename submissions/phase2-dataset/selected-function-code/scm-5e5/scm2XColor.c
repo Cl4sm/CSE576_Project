@@ -1,3 +1,4 @@
+int scm2XColor(s_dat, xclr)
      SCM s_dat;
      XColor *xclr;
 {

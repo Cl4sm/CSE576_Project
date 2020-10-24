@@ -1,3 +1,4 @@
+int ttlocked ( char *fname, int log )
 {
   int err=0, ipid ;
   FILE *f ;

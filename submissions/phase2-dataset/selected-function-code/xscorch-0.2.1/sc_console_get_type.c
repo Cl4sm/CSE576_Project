@@ -1,3 +1,4 @@
+GType sc_console_get_type(void) {
 /* sc_console_get_type
    Return the console type.  */
 

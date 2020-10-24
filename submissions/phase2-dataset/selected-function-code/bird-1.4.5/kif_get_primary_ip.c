@@ -1,3 +1,4 @@
+struct ifa *
 kif_get_primary_ip(struct iface *i)
 {
 #ifndef IPV6

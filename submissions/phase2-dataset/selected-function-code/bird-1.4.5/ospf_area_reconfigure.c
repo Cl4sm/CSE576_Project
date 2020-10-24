@@ -1,3 +1,4 @@
+static void
 ospf_area_reconfigure(struct ospf_area *oa, struct ospf_area_config *nac)
 {
   oa->ac = nac;

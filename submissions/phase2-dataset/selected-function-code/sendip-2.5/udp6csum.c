@@ -1,3 +1,4 @@
+static void udp6csum(sendip_data *ipv6_hdr, sendip_data *udp_hdr,
 							sendip_data *data) {
 	udp_header *udp = (udp_header *)udp_hdr->data;
 	ipv6_header  *ipv6  = (ipv6_header *)ipv6_hdr->data;

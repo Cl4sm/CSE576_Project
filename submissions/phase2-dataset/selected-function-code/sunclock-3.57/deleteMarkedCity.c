@@ -1,3 +1,4 @@
+void
 deleteMarkedCity()
 {
      City *c, *cp = NULL;

@@ -1,3 +1,4 @@
+int ck_btree(btree *bt)
 {
   printf("*** Checking %s B*-tree\n", bt->f.name);
 

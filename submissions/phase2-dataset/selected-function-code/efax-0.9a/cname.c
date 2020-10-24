@@ -1,3 +1,4 @@
+char *cname ( uchar c ) 
 {
 #define CNAMEFMT "<0x%02x>"
 #define CNAMELEN 6+1

@@ -1,3 +1,4 @@
+SCM ra2contig(ra, copy)
      SCM ra;
      int copy;
 {

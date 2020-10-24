@@ -1,3 +1,4 @@
+u_int32_t make_fixed_point(double n, bool issigned, int totbits, int intbits) {
 	u_int32_t intpart;
 	u_int32_t fracpart;
 	u_int32_t result;

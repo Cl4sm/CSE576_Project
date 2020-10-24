@@ -1,3 +1,4 @@
+int tiffinit ( OFILE *f )
 {
   int err=0, compr=1 ;
   long tdoff, doff ;

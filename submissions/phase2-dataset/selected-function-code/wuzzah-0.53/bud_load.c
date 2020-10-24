@@ -1,3 +1,4 @@
+int bud_load(const char *fn, htable_t *ht){
 	char *line_buf=NULL;
 	int line_buf_size=4, buf_offset=0, len=0;
 	buddy_t *next_buddy=NULL;

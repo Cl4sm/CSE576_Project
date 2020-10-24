@@ -1,3 +1,4 @@
+void
 showHours(Context)
 struct Sundata * Context;
 {

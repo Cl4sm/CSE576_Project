@@ -1,3 +1,4 @@
+tn_connection *tn_connection_new(void) {
 /*
  * tn_connection_new
  * Create a new connection descriptor.

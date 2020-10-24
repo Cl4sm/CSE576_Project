@@ -1,3 +1,4 @@
+sc_trajectory *sc_traj_new_dest_angle(const sc_config *c, const sc_player *p, int flags,
                                       double centerx, double centery,
                                       double deltax, double deltay,
                                       double angle, double maxpower) {

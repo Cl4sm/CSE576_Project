@@ -1,3 +1,4 @@
+static void obex_agent_init(ObexAgent *self)
 {
 	self->priv = obex_agent_get_instance_private(self);
         g_assert(session_conn != NULL);

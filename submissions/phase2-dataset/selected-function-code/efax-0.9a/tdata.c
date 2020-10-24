@@ -1,3 +1,4 @@
+int tdata ( TFILE *f, int t )
 {
   int n, err=0 ;
   fd_set fds ;

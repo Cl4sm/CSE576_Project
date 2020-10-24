@@ -1,3 +1,4 @@
+bool _sc_accessory_read_item(sc_accessory_config *ac, reg *reader, reg_var *item) {
 /* _sc_accessory_read_item
    Read an accessory info and insert it into the registry. */
 

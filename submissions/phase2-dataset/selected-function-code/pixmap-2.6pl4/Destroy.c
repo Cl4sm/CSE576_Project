@@ -1,3 +1,4 @@
+static void Destroy(w)
     Widget w;
 {
     PixmapWidget PW = (PixmapWidget) w;

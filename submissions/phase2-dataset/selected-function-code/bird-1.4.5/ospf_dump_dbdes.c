@@ -1,3 +1,4 @@
+static void ospf_dump_dbdes(struct proto *p, struct ospf_dbdes_packet *pkt)
 {
   struct ospf_packet *op = &pkt->ospf_packet;
 

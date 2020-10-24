@@ -1,3 +1,4 @@
+void
 mbdata_init(struct mb_data *d, const char *enc)
 {
 	bzero(d, sizeof(*d));

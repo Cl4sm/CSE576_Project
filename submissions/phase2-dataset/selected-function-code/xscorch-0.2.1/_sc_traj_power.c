@@ -1,3 +1,4 @@
+static double _sc_traj_power(double gravity, double wind,
                              __libj_unused double visc,
                              double deltax, double deltay,
                              double angle) {

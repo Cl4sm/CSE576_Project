@@ -1,3 +1,4 @@
+sc_accessory_config *sc_accessory_config_create(const sc_config *c) {
 /* sc_accessory_config_create
    Allocate space and set defaults on a new sc_accessory_config struct. */
 

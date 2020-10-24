@@ -1,3 +1,4 @@
+extern int
 select_checker(struct path *pp)
 {
 	struct checker * c = &pp->checker;

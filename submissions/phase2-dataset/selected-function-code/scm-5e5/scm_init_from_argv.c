@@ -1,3 +1,4 @@
+void scm_init_from_argv(argc, argv, script_arg, iverbose, buf0stdin)
      int argc;
      const char * const *argv;
      char *script_arg;

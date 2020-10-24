@@ -1,3 +1,4 @@
+NOEXPORT char *parse_global_option(CMD cmd, char *opt, char *arg) {
     char *tmpstr;
 #ifndef USE_WIN32
     struct group *gr;

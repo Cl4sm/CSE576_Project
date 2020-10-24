@@ -1,3 +1,4 @@
+void
 fill_line(char *scan, char* c, int w, int zw, int wp, int dx)
 {
 unsigned char r, g, b;

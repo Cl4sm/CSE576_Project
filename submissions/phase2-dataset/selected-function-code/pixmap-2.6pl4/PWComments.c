@@ -1,3 +1,4 @@
+void PWComments(Widget w, char **hints_cmt, char **colors_cmt, 
 		char **pixels_cmt)
 #else
 void PWComments(w, hints_cmt, colors_cmt, pixels_cmt)

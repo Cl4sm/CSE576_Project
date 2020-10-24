@@ -1,3 +1,4 @@
+void
 pulseMarks(Context)
 struct Sundata * Context;
 {

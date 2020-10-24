@@ -1,3 +1,4 @@
+GType sc_drawbuf_get_type(void) {
 
    static GType sc_drawbuf_type = 0;
 

@@ -1,3 +1,4 @@
+void
 PopOption(Context)
 struct Sundata * Context;
 {

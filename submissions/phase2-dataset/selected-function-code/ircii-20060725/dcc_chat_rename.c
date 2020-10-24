@@ -1,3 +1,4 @@
+static void
 dcc_chat_rename(args)
 	u_char	*args;
 {

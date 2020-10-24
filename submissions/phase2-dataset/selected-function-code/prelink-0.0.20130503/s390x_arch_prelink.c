@@ -1,3 +1,4 @@
+static int
 s390x_arch_prelink (struct prelink_info *info)
 {
   DSO *dso;

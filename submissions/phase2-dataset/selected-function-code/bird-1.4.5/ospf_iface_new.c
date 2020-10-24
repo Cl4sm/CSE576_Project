@@ -1,3 +1,4 @@
+void
 ospf_iface_new(struct ospf_area *oa, struct ifa *addr, struct ospf_iface_patt *ip)
 {
   struct proto *p = &oa->po->proto;

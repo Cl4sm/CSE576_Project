@@ -1,3 +1,4 @@
+int OpenZipFiles ()
 /*
  *  Open files for a ZipNews news packet
  */

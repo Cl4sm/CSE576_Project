@@ -1,3 +1,4 @@
+SCM scm_remove_linums(x)
      SCM x;
 {
   SCM ret = x;

@@ -1,3 +1,4 @@
+static inline void
 ea_do_sort(ea_list *e)
 {
   unsigned n = e->count;

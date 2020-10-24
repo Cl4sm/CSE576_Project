@@ -1,3 +1,4 @@
+static void
 parse_client_queued(struct Client *client_p)
 {
   int dolen = 0;

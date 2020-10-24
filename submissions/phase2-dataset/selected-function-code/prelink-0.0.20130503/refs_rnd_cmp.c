@@ -1,3 +1,4 @@
+static int
 refs_rnd_cmp (const void *A, const void *B)
 {
   struct prelink_entry *a = * (struct prelink_entry **) A;

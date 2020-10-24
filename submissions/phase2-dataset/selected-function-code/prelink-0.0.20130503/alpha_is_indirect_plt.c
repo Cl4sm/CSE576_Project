@@ -1,3 +1,4 @@
+static int
 alpha_is_indirect_plt (DSO *dso, GElf_Rela *rela, GElf_Addr relaaddr)
 {
   Elf64_Addr pltaddr;

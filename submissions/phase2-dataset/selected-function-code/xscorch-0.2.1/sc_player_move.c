@@ -1,3 +1,4 @@
+bool sc_player_move(const sc_config *c, sc_player *p, int delta) {
 /* sc_player_move
    Move the player's tank by means of consuming fuel cells.  This call
    is only used when moving by using fuel, and should not be used to

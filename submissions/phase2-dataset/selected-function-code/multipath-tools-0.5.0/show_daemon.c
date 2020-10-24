@@ -1,3 +1,4 @@
+int
 show_daemon (char ** r, int *len)
 {
 	char * c;

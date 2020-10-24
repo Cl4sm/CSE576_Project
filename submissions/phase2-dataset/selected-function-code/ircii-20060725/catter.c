@@ -1,3 +1,4 @@
+static	void
 catter(command, args, subargs)
 	u_char	*command,
 		*args,

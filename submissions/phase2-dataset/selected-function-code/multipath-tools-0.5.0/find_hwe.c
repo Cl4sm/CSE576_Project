@@ -1,3 +1,4 @@
+struct hwentry *
 find_hwe (vector hwtable, char * vendor, char * product, char * revision)
 {
 	int i;

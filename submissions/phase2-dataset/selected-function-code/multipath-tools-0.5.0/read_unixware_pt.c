@@ -1,3 +1,4 @@
+int
 read_unixware_pt(int fd, struct slice all, struct slice *sp, int ns) {
 	struct unixware_disklabel *l;
 	struct unixware_slice *p;

@@ -1,3 +1,4 @@
+void
 update_all_windows()
 {
 	Window	*tmp;

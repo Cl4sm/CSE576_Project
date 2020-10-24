@@ -1,3 +1,4 @@
+sizea fcount(const char *fname) {
 /* File-Count
    Counts the number of lines in a standard text file. Reads through a
    local read buffer for parsing. Return value is zero if an error occurs,

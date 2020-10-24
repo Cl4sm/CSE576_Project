@@ -1,3 +1,4 @@
+void
 watch_check_hash(struct Client *client_p, const enum irc_numerics reply)
 {
   struct Watch *anptr = NULL;

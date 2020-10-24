@@ -1,3 +1,4 @@
+void
 update_net_lsa(struct ospf_iface *ifa)
 {
   struct proto_ospf *po = ifa->oa->po;

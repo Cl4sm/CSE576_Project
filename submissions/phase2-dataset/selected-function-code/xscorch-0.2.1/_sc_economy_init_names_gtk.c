@@ -1,3 +1,4 @@
+static int _sc_economy_init_names_gtk(sc_economy_setup_data_gtk *setup) {
 /* _sc_economy_init_names_gtk
    Make a list of names, appropriate for the combo box. */
 

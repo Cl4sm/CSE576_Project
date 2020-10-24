@@ -1,3 +1,4 @@
+int
 dm_rename_partmaps (char * old, char * new)
 {
 	struct dm_task *dmt;

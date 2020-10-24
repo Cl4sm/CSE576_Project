@@ -1,3 +1,4 @@
+GtkCellRenderer *
 gui_cell_renderer_spin_new (gdouble  lower,
                             gdouble  upper,
                             gdouble  step_inc,

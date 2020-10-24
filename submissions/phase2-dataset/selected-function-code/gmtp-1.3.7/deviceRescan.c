@@ -1,3 +1,4 @@
+void deviceRescan() {
     gchar* tmp_string;
     //g_print("You selected deviceRescan\n");
     // First we clear the file and folder list...

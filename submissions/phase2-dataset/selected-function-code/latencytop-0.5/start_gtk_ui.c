@@ -1,3 +1,4 @@
+void start_gtk_ui(void) 
 {
 	load_icons();
 	create_targets_window();

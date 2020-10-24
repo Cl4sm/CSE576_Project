@@ -1,3 +1,4 @@
+int
 get_relocated_mem (struct prelink_info *info, DSO *dso, GElf_Addr addr,
 		   char *buf, GElf_Word size, GElf_Addr dest_addr)
 {

@@ -1,3 +1,4 @@
+void
 window_restore_server(server)
 	int	server;
 {

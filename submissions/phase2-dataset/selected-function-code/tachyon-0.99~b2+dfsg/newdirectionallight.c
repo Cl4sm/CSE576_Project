@@ -1,3 +1,4 @@
+directional_light * newdirectionallight(void * tex, vector dir) {
   directional_light * l;
   
   l=(directional_light *) malloc(sizeof(directional_light));

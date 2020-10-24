@@ -1,3 +1,4 @@
+int n_search(node *np, const byte *pkey)
 {
   const btree *bt = np->bt;
   byte key1[HFS_MAX_KEYLEN], key2[HFS_MAX_KEYLEN];

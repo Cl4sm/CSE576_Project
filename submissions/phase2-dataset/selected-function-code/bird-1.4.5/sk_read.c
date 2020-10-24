@@ -1,3 +1,4 @@
+int
 sk_read(sock *s)
 {
   switch (s->type)

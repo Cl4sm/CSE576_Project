@@ -1,3 +1,4 @@
+static char
 input_do_check_prompt(int update)
 {
 	u_char	*prompt;

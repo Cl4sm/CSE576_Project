@@ -1,3 +1,4 @@
+void
 log_switch(int debug, list *l, char *new_syslog_name)
 {
   if (!l || EMPTY_LIST(*l))

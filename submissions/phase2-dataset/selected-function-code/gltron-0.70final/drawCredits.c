@@ -1,3 +1,4 @@
+void drawCredits(void) {
   int time;
   int x, y;
   int h;

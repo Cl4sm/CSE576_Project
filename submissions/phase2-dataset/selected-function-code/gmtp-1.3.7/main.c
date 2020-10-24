@@ -1,3 +1,4 @@
+int main(int argc, char *argv[]) {
     setFilePaths(argc, argv);
 
 #if GLIB_CHECK_VERSION(2,32,0)

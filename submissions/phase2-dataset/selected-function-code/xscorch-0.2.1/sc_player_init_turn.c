@@ -1,3 +1,4 @@
+void sc_player_init_turn(const sc_config *c, sc_player *p) {
 /* sc_player_init_turn
    Called for the player at the beginning of their turn. */
 

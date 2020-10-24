@@ -1,3 +1,4 @@
+static int
 irc_ns_name_pack(const unsigned char *src, unsigned char *dst, int dstsiz,
                  const unsigned char **dnptrs, const unsigned char **lastdnptr)
 {

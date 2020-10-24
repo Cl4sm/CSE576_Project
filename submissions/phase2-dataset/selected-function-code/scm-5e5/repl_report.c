@@ -1,3 +1,4 @@
+void repl_report()
 {
   if (verbose > 2) {
     lfflush(cur_outp);

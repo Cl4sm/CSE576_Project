@@ -1,3 +1,4 @@
+extern int
 is_loop_device (const char *device)
 {
 	struct stat statbuf;

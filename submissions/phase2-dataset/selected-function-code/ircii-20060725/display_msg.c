@@ -1,3 +1,4 @@
+void
 display_msg(from, ArgList)
 	u_char	*from,
 		**ArgList;

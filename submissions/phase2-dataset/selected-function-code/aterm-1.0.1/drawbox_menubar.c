@@ -1,3 +1,4 @@
+void
 drawbox_menubar(int x, int len, int state)
 {
 #ifdef MENUBAR

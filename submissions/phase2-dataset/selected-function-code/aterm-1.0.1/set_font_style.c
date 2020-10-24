@@ -1,3 +1,4 @@
+void
 set_font_style(void)
 {
     rstyle &= ~RS_fontMask;

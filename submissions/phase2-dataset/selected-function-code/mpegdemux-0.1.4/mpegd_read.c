@@ -1,3 +1,4 @@
+unsigned mpegd_read (mpeg_demux_t *mpeg, void *buf, unsigned n)
 {
 	unsigned      ret;
 	unsigned      i;

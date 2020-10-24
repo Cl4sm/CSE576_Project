@@ -1,3 +1,4 @@
+static	void
 p_privmsg(from, Args)
 	u_char	*from,
 		**Args;

@@ -1,3 +1,4 @@
+sc_accessory_info *sc_accessory_lookup_by_name(const sc_accessory_config *ac, const char *name, int flags) {
 /* sc_accessory_lookup_by_name
    Tries to find an accessory by roughly the requested name.
    This is much slower than sc_accessory_lookup. */

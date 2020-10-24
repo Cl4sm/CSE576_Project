@@ -1,3 +1,4 @@
+static void
 bgp_start_locked(struct object_lock *lock)
 {
   struct bgp_proto *p = lock->data;

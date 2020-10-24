@@ -1,3 +1,4 @@
+bool sc_net_server_run(sc_config *c, sc_server *srv) {
 
    sc_connection *client;
    addr address;

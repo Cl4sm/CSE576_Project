@@ -1,3 +1,4 @@
+int
 _install_keyword(char *string, int (*handler) (vector),
 		int (*print) (char *, int, void *), int unique)
 {

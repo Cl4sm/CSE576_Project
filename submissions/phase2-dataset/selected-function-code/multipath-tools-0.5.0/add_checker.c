@@ -1,3 +1,4 @@
+struct checker * add_checker (char * name)
 {
 	char libname[LIB_CHECKER_NAMELEN];
 	struct stat stbuf;

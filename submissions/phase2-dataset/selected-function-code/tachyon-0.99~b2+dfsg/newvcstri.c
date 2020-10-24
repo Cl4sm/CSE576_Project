@@ -1,3 +1,4 @@
+object * newvcstri(void * voidtex, vector v0, vector v1, vector v2,
                    vector n0, vector n1, vector n2,
                    color c0, color c1, color c2) {
   vcstri * t;

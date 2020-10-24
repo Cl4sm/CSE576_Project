@@ -1,3 +1,4 @@
+static int
 hostexectasker(file, tid)
 	char *file;
 	int tid;

@@ -1,3 +1,4 @@
+struct MaskItem *
 find_exact_name_conf(enum maskitem_type type, const struct Client *who, const char *name,
                      const char *user, const char *host)
 {

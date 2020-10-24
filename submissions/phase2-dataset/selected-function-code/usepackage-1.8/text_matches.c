@@ -1,3 +1,4 @@
+int text_matches(char* text, linked_list* matches)
 {
    list_node* node;
    match_t* match;

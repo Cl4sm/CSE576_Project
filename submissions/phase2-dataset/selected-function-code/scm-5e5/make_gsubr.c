@@ -1,3 +1,4 @@
+SCM make_gsubr(name, req, opt, rst, fcn)
      const char *name;
      int req, opt, rst;
      SCM (*fcn)();

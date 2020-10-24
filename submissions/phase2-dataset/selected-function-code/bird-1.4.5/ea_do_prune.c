@@ -1,3 +1,4 @@
+static inline void
 ea_do_prune(ea_list *e)
 {
   eattr *s, *d, *l, *s0;

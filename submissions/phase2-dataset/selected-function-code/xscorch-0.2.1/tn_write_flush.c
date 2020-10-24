@@ -1,3 +1,4 @@
+bool tn_write_flush(tn_connection *tnc) {
 /*
  * tn_write_flush
  * Flush the transmit buffer.

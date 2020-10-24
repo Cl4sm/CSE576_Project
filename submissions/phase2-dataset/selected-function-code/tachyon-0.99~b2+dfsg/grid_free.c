@@ -1,3 +1,4 @@
+static void grid_free(void * v) {
   int i, numvoxels;
   grid * g = (grid *) v;
 

@@ -1,3 +1,4 @@
+int
 check_dso (DSO *dso)
 {
   int i, last = 1;

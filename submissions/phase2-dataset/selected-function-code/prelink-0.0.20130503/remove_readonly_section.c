@@ -1,3 +1,4 @@
+int
 remove_readonly_section (GElf_Ehdr *ehdr, GElf_Shdr *shdr, int n,
 			 struct readonly_adjust *adjust)
 {

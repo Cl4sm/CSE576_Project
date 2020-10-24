@@ -1,3 +1,4 @@
+void
 setupZoom(mode)
 int mode;
 {

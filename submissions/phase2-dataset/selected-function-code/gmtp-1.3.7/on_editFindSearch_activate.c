@@ -1,3 +1,4 @@
+void on_editFindSearch_activate(GtkMenuItem *menuitem, gpointer user_data) {
     gchar *searchstring = NULL;
     gboolean searchfiles = FALSE;
     gboolean searchmeta = FALSE;

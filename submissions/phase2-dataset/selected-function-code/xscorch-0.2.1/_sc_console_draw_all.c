@@ -1,3 +1,4 @@
+static void _sc_console_draw_all(ScConsole *cons) {
 /* sc_console_draw_all
    Redraws the entire console, including all displayable text, all borders,
    and the scrollbars if they are applicable.  */

@@ -1,3 +1,4 @@
+byte
 roa_check(struct roa_table *t, ip_addr prefix, byte pxlen, u32 asn)
 {
   struct roa_node *n;

@@ -1,3 +1,4 @@
+void
 krt_replace_rte(struct krt_proto *p, net *n, rte *new, rte *old, struct ea_list *eattrs)
 {
   int err = 0;

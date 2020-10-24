@@ -1,3 +1,4 @@
+SCM make_xdisplay(d)
      Display *d;
 {
   SCM z;

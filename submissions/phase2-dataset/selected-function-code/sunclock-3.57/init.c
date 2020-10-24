@@ -1,3 +1,4 @@
+void init(int argc,char *argv[])
 {
 		int screen;
 		XWMHints *wmh;

@@ -1,3 +1,4 @@
+static void
 bfd_reconfigure_neighbors(struct bfd_proto *p, struct bfd_config *new)
 {
   struct bfd_config *old = (struct bfd_config *) (p->p.cf);

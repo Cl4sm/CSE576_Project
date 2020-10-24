@@ -1,3 +1,4 @@
+extern struct multipath *
 add_map_without_path (struct vectors * vecs, char * alias)
 {
 	struct multipath * mpp = alloc_multipath();

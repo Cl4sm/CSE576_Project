@@ -1,3 +1,4 @@
+void storeVertex(TrailMesh *pMesh, int offset, 
 								 segment2 *s, float t, /* 0: start, 1: end */
 								 float fFloor, float fTop, 
 								 float fSegLength, float fTotalLength) {

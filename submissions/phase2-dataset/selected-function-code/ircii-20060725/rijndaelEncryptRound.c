@@ -1,3 +1,4 @@
+int rijndaelEncryptRound (word8 a[4][MAXBC], int keyBits, int blockBits, 
 		word8 rk[MAXROUNDS+1][4][MAXBC], int rounds)
 /* Encrypt only a certain number of rounds.
  * Only used in the Intermediate Value Known Answer Test.

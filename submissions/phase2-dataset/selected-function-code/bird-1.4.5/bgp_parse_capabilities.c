@@ -1,3 +1,4 @@
+void
 bgp_parse_capabilities(struct bgp_conn *conn, byte *opt, int len)
 {
   // struct bgp_proto *p = conn->bgp;

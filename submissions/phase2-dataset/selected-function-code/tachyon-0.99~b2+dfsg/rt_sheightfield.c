@@ -1,3 +1,4 @@
+static void rt_sheightfield(SceneHandle scene, void * tex, apivector ctr, int m, int n, 
                     flt * field, flt wx, flt wy) {
   apivector * vertices;
   apivector * normals;

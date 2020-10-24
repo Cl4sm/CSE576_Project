@@ -1,3 +1,4 @@
+int
 set_dynamic (DSO *dso, GElf_Word tag, GElf_Addr value, int fatal)
 {
   Elf_Data *data;

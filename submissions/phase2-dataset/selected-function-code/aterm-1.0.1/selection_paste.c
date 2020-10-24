@@ -1,3 +1,4 @@
+void
 selection_paste(Window win, unsigned prop, int Delete)
 {
 	unsigned long   bytes_after;

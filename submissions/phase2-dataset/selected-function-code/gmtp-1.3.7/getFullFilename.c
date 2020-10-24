@@ -1,3 +1,4 @@
+gchar* getFullFilename(uint32_t item_id) {
     gchar* fullfilename = NULL;
     gchar* tmpfilename = NULL;
     uint32_t parent_id = 0;

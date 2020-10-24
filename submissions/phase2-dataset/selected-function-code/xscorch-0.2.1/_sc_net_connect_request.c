@@ -1,3 +1,4 @@
+static void _sc_net_connect_request(sc_config *c, sc_server *srv, const sc_packet *incoming, int connid) {
 
    char versionstr[SC_NET_BUFFER_SIZE];
    char infomsg[SC_NET_BUFFER_SIZE];

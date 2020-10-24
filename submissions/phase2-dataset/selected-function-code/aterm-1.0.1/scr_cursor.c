@@ -1,3 +1,4 @@
+void
 scr_cursor(int mode)
 {
     D_SCREEN((stderr, "scr_cursor(%c)", mode));

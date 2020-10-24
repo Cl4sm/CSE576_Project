@@ -1,3 +1,4 @@
+char *must_realloc(where, olen, len, what)
      char *where;
      long olen, len;
      const char *what;

@@ -1,3 +1,4 @@
+static const char *
 internal_function
 guess_category_value (category, categoryname)
      int category;

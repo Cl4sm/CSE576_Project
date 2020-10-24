@@ -1,3 +1,4 @@
+SCM x_gc_ref(oargs)
      SCM oargs;
 {
   SCM sgc, args = oargs, sval = BOOL_F;

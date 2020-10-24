@@ -1,3 +1,4 @@
+void rt_shadermode(SceneHandle voidscene, int mode) {
   scenedef * scene = (scenedef *) voidscene;
 
   /* Main shader used for whole scene */

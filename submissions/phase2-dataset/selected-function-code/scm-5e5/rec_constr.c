@@ -1,3 +1,4 @@
+SCM rec_constr(rtd, flds)
      SCM rtd, flds;
 {
   SCM flst, fld;

@@ -1,3 +1,4 @@
+static void
 ospf_rt_abr1(struct proto_ospf *po)
 {
   struct area_net *anet;

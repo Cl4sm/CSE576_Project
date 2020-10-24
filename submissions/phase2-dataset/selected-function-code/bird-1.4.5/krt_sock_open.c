@@ -1,3 +1,4 @@
+static sock *
 krt_sock_open(pool *pool, void *data, int table_id)
 {
   sock *sk;

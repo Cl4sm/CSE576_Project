@@ -1,3 +1,4 @@
+int
 send_my_pid()
 {
 	struct pmsg *up;

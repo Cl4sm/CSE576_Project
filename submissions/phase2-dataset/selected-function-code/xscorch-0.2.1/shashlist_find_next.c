@@ -1,3 +1,4 @@
+shashlist_item *shashlist_find_next(const shashlist *list, shashlist_item *item, int class) {
 /* shashlist_find_next
    Find the next shashlist_item after item that is in the specified class.
    Passing item == NULL is a slang way of asking for the first item. */

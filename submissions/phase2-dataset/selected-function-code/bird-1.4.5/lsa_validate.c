@@ -1,3 +1,4 @@
+int
 lsa_validate(struct ospf_lsa_header *lsa, void *body)
 {
   switch (lsa->type)

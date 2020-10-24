@@ -1,3 +1,4 @@
+shashlist_item *shashlist_insert_by_string(shashlist *list, void *data, int class, const char *key) {
 /* shashlist_insert_by_string
    Append a new data item onto a hash dll, keyed by string.
    This will return NULL if the item is a duplicate or if allocation fails. */

@@ -1,3 +1,4 @@
+static	void
 version(command, args, subargs)
 	u_char	*command,
 		*args,

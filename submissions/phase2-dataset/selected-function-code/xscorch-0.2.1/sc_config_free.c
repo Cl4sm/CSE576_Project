@@ -1,3 +1,4 @@
+void sc_config_free(sc_config **c) {
 /* sc_config_free
    Release the configuration structure, and all associated substructures. */
 

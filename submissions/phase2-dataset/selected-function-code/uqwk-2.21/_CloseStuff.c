@@ -1,3 +1,4 @@
+int _CloseStuff()
 {
 #ifdef NNTP
 	/*  JS -- server might have been connected to implicitly! */

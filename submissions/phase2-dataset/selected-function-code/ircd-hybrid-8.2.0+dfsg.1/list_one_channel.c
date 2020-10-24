@@ -1,3 +1,4 @@
+static void
 list_one_channel(struct Client *source_p, struct Channel *chptr)
 {
   const struct ListTask *lt = source_p->localClient->list_task;

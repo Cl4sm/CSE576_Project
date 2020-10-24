@@ -1,3 +1,4 @@
+  static int
 rl_delete(int under_cursor)
 {
   int i;

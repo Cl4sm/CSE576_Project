@@ -1,3 +1,4 @@
+reg_var *reg_var_lookup(reg_var *vars, const char *name) {
 /* reg_var_lookup
    Checks to see if the specified variable is already defined.  If it
    is, then we will return it here.  */

@@ -1,3 +1,4 @@
+struct loaded_l10nfile *
 internal_function
 _nl_find_domain (dirname, locale, domainname, domainbinding)
      const char *dirname;

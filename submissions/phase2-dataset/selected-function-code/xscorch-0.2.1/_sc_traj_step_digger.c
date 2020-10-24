@@ -1,3 +1,4 @@
+static sc_trajectory_result _sc_traj_step_digger(sc_config *c, sc_trajectory *tr, int flags,
                                                  sc_trajectory_action action, void *data) {
 /* sc_traj_step_digger */
 

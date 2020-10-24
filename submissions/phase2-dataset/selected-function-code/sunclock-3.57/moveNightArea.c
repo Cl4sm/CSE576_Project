@@ -1,3 +1,4 @@
+void
 moveNightArea(Context)
 struct Sundata * Context;
 {

@@ -1,3 +1,4 @@
+unsigned long hfs_write(hfsfile *file, const void *buf, unsigned long len)
 {
   unsigned long *lglen, *pylen, count;
   const byte *ptr = buf;

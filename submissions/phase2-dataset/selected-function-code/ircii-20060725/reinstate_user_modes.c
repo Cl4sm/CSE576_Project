@@ -1,3 +1,4 @@
+void
 reinstate_user_modes()
 {
 	u_char	modes[10];

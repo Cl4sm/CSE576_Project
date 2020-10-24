@@ -1,3 +1,4 @@
+char *
 cmd_expand(char *cmd)
 {
   struct cmd_node *n, *m;

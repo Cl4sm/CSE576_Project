@@ -1,3 +1,4 @@
+static void
 broadcast(u_char *buf, int nchars, u_int typ) {
 	int fd, x;
 

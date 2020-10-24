@@ -1,3 +1,4 @@
+int n_delete(node *np, byte *record, int *flag)
 {
   byte *rec;
 

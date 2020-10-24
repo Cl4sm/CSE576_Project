@@ -1,3 +1,4 @@
+SCM x_draw_points(sdbl, sgc, sargs)
      SCM sdbl, sgc, sargs;
 {
   XPoint pos[1];

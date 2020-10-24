@@ -1,3 +1,4 @@
+GtkWidget* create_windowMainColumnContextMenu(void) {
     GtkWidget* menu;
     menu = gtk_menu_new();
 

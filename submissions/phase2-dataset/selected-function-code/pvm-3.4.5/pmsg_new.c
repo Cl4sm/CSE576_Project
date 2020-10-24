@@ -1,3 +1,4 @@
+struct pmsg *
 pmsg_new(master)
 	int master;			/* true if a master (no data) node */
 {

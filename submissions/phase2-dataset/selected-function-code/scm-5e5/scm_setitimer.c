@@ -1,3 +1,4 @@
+SCM scm_setitimer(which, value, interval)
      SCM which, value, interval;
 {
   struct itimerval tval, oval;

@@ -1,3 +1,4 @@
+int
 pvm_recv(tid, tag)
 	int tid;
 	int tag;

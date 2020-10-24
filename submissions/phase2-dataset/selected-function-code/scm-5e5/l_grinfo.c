@@ -1,3 +1,4 @@
+SCM l_grinfo(name)
      SCM name;
 {
   SCM ans = make_vector(MAKINUM(4), UNSPECIFIED);

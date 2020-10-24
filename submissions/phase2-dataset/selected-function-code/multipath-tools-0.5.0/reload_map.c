@@ -1,3 +1,4 @@
+extern int reload_map(struct vectors *vecs, struct multipath *mpp, int refresh)
 {
 	char params[PARAMS_SIZE] = {0};
 	struct path *pp;

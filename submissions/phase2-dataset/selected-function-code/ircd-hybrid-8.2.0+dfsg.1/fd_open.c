@@ -1,3 +1,4 @@
+void
 fd_open(fde_t *F, int fd, int is_socket, const char *desc)
 {
   unsigned int hashv = hash_fd(fd);

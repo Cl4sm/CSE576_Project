@@ -1,3 +1,4 @@
+extern int
 set_loop (const char *device, const char *file, int offset, int *loopro)
 {
 	struct loop_info loopinfo;

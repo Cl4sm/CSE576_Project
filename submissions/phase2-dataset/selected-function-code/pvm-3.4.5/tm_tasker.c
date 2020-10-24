@@ -1,3 +1,4 @@
+int
 tm_tasker(tp, mp)
 	struct task *tp;
 	struct pmsg *mp;

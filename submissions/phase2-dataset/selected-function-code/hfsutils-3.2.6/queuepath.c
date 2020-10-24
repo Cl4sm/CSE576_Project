@@ -1,3 +1,4 @@
+static
 int queuepath(hfsvol *vol, char *path, darray *dirs, darray *files, int flags)
 {
   queueent ent;

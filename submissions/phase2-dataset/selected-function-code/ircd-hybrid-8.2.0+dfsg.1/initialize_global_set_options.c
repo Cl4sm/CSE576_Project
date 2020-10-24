@@ -1,3 +1,4 @@
+static void
 initialize_global_set_options(void)
 {
   GlobalSetOptions.autoconn  = 1;

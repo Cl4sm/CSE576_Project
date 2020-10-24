@@ -1,3 +1,4 @@
+int
 shstrtabadd (DSO *dso, const char *name)
 {
   Elf_Scn *scn;

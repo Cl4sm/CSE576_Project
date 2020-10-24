@@ -1,3 +1,4 @@
+Pixmap scrollbar_fill_back( unsigned int height, int check_cache )
 {
 
   Pixmap buffer = None;

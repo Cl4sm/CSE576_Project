@@ -1,3 +1,4 @@
+int
 mb_delete(tid, name, req, flags)
 	int tid;				/* owner task */
 	char *name;				/* class name */

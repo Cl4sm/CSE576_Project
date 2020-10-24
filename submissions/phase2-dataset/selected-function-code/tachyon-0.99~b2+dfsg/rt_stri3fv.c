@@ -1,3 +1,4 @@
+void rt_stri3fv(SceneHandle voidscene, void * tex, 
                 const float *v0, const float *v1, const float *v2, 
                 const float *n0, const float *n1, const float *n2) {
   scenedef * scene = (scenedef *) voidscene;

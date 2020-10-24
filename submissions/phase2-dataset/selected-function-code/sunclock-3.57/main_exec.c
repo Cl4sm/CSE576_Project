@@ -1,3 +1,4 @@
+void main_exec(int key)
 {
 	cur_pos = get_cur();
 	if (update_scr) {

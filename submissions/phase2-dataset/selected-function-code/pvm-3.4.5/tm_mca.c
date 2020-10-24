@@ -1,3 +1,4 @@
+int
 tm_mca(tp, mp)
 	struct task *tp;
 	struct pmsg *mp;

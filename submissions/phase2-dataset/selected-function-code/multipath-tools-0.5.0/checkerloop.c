@@ -1,3 +1,4 @@
+static void *
 checkerloop (void *ap)
 {
 	struct vectors *vecs;

@@ -1,3 +1,4 @@
+void rt_heightfield(SceneHandle scene, void * tex, apivector ctr, int m, int n, 
                     flt * field, flt wx, flt wy) {
   int xx,yy; 
   apivector v0, v1, v2; 

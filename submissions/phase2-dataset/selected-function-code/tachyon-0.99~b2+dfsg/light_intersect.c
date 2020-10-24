@@ -1,3 +1,4 @@
+static void light_intersect(const point_light * l, ray * ry) {
   flt b, disc, t1, t2, temp;
   vector V;
 

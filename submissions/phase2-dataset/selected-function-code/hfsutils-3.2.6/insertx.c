@@ -1,3 +1,4 @@
+static
 int insertx(node *np, byte *record, int *reclen)
 {
   node child;

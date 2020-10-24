@@ -1,3 +1,4 @@
+void initConfiguration(int argc, const char *argv[])
 {
   /* load some more defaults from config file */
 	runScript(PATH_SCRIPTS, "config.lua");

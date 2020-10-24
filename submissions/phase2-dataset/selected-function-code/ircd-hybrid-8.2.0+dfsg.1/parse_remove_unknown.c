@@ -1,3 +1,4 @@
+static void
 parse_remove_unknown(struct Client *client_p, const char *lsender, char *lbuffer)
 {
   /*

@@ -1,3 +1,4 @@
+SCM scm_env_lookup(var, stenv)
      SCM var, stenv;
 {
   SCM  frame, env = stenv;

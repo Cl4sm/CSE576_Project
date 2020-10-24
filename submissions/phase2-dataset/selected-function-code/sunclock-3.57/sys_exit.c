@@ -1,3 +1,4 @@
+void sys_exit(int code)
 {
 	if(!(flag[CHG]) || code==2) {
 		/* watch where you're goin', clean up where you been */

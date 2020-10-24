@@ -1,3 +1,4 @@
+static inline void
 check_sum_net_lsa(struct proto_ospf *po, ort *nf)
 {
   struct area_net *anet = NULL;

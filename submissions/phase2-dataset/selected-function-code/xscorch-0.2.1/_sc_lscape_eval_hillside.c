@@ -1,3 +1,4 @@
+static double _sc_lscape_eval_hillside(double x) {
 /* _sc_lscape_eval_hillside
    Evaluates the ``hillside'' profile function at point x. */
 

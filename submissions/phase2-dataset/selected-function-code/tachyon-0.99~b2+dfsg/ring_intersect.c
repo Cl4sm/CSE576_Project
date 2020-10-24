@@ -1,3 +1,4 @@
+static void ring_intersect(const ring * rng, ray * ry) {
   flt d;
   flt t,td;
   vector hit, pnt;

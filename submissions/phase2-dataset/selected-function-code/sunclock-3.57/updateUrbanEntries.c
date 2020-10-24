@@ -1,3 +1,4 @@
+void
 updateUrbanEntries(Context, city)
 Sundata * Context;
 City * city;

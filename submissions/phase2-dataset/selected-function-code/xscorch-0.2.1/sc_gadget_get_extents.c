@@ -1,3 +1,4 @@
+void sc_gadget_get_extents(ScGadget *gadget, GdkRectangle *bounds) {
 
    ScConsole *cons;
    gint x, y;

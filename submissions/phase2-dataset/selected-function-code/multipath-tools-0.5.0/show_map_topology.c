@@ -1,3 +1,4 @@
+int
 show_map_topology (char ** r, int * len, struct multipath * mpp,
 		   struct vectors * vecs)
 {

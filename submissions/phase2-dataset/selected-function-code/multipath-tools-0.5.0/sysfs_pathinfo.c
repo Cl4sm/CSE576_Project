@@ -1,3 +1,4 @@
+int
 sysfs_pathinfo(struct path * pp)
 {
 	if (common_sysfs_pathinfo(pp))

@@ -1,3 +1,4 @@
+int scan_fdprm(FILE *file, char *name, struct floppy_struct *ft, 
 	       void (*callback)(char *name, char *comment,
 				struct floppy_struct *ft))
 {

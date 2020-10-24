@@ -1,3 +1,4 @@
+void init_posix()
 {
 	init_iprocs(subr0s, tc7_subr_0);
 	init_iprocs(subr1s, tc7_subr_1);

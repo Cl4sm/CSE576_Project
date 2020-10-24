@@ -1,3 +1,4 @@
+void mpath_format_readfullstatus(struct prin_resp *pr_buff, int len, int noisy)
 {
 	int num, k, tid_len_len=0;
 	uint32_t fdesc_count=0;

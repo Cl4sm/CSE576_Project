@@ -1,3 +1,4 @@
+int checkinterface()
 {
     int validinterface = FALSE;
     int sockfd, i, numifs, numifreqs;

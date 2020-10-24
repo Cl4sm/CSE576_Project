@@ -1,3 +1,4 @@
+static void
 gui_cell_renderer_spin_editing_done (GtkCellEditable *spinbutton,
                                      gpointer         data)
 {

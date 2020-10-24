@@ -1,3 +1,4 @@
+int
 pvm_node_mcast(tids, count, code, offhtids, offhcnt)
 int *tids; 	/* array of tids, on and off host */
 int count;	/* #of tids */

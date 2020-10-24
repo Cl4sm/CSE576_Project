@@ -1,3 +1,4 @@
+SCM scm_ieee_float_to_bytes(in_flt)
      SCM in_flt;
 {
   double dbl = num2dbl(in_flt, (char *)ARG1, s_ieee_float_to_bytes);

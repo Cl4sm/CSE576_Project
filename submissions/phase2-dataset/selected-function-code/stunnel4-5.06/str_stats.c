@@ -1,3 +1,4 @@
+void str_stats() {
     ALLOC_TLS *alloc_tls;
     ALLOC_LIST *alloc_list;
     int i=0;

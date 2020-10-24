@@ -1,3 +1,4 @@
+void
 drawLabels(Context)
 struct Sundata * Context;
 {

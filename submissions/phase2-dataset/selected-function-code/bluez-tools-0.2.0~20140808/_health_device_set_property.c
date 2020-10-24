@@ -1,3 +1,4 @@
+static void _health_device_set_property(GObject *object, guint property_id, const GValue *value, GParamSpec *pspec)
 {
 	HealthDevice *self = HEALTH_DEVICE(object);
 	GError *error = NULL;

@@ -1,3 +1,4 @@
+int
 get_tty(void)
 {
     int             fd;

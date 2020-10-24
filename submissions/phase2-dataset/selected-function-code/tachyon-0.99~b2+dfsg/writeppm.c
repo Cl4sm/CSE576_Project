@@ -1,3 +1,4 @@
+int writeppm(const char *name, int xres, int yres, unsigned char *imgdata) {
   FILE * ofp;
   int y, xbytes;
  

@@ -1,3 +1,4 @@
+void
 usage(int type)
 {
     int             i, col;

@@ -1,3 +1,4 @@
+static int
 hosterforkexec(tid,name, tpp)
 	int tid;			/* tid given by hosterexectask */
 	char *name;			/* filename */

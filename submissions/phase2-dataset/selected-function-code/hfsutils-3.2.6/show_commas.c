@@ -1,3 +1,4 @@
+static
 void show_commas(int sz, queueent *ents, char **strs,
 		 int flags, int options, int width)
 {

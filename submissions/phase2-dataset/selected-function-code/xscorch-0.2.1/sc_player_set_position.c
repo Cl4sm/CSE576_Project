@@ -1,3 +1,4 @@
+void sc_player_set_position(const sc_config *c, sc_player *p, int x, int y) {
 /* sc_player_set_position
    The coordinate (x, y) indicates the new player position, in virtual
    coordinates.  This function always succeeds and performs no sanity

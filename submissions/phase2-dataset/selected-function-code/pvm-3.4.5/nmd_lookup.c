@@ -1,3 +1,4 @@
+int
 nmd_lookup(name, req, datap)
 	char *name;
 	int req;

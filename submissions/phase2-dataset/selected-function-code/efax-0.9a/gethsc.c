@@ -1,3 +1,4 @@
+int gethsc ( int *hsc, int *perr )
 {
   int err=0, i ;
   if ( sresponse ( "+FHNG:", hsc ) || sresponse ( "+FHS:", hsc ) ) {

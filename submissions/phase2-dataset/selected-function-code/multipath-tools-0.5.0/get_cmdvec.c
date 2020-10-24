@@ -1,3 +1,4 @@
+static int
 get_cmdvec (char * cmd, vector *v)
 {
 	int i;

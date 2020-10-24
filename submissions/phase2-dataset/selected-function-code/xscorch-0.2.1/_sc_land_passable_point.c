@@ -1,3 +1,4 @@
+static inline bool _sc_land_passable_point(const sc_config *c, const sc_player *p, int x, int y) {
 /* sc_land_passable_point
    Returns true if the virtual point (x, y) is passable, considering the
    land and player profiles.  If p is non-NULL, that player's profile will

@@ -1,3 +1,4 @@
+extern int
 select_pgfailback (struct multipath * mp)
 {
 	if (mp->mpe && mp->mpe->pgfailback != FAILBACK_UNDEF) {

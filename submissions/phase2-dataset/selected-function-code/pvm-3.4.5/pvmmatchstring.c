@@ -1,3 +1,4 @@
+int
 pvmmatchstring( str, pattern )
 char *str;
 char *pattern;

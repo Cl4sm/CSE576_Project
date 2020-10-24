@@ -1,3 +1,4 @@
+int
 ipv6_classify(ip_addr *a)
 {
   u32 x = a->addr[0];

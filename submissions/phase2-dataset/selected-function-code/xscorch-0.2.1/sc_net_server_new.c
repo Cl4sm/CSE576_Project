@@ -1,3 +1,4 @@
+sc_server *sc_net_server_new(sc_config *c, int port) {
 
    addr socket_info;    /* Information about us */
    sc_server *srv;      /* Server object */

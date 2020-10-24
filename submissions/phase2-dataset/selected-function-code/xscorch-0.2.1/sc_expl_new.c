@@ -1,3 +1,4 @@
+sc_explosion *sc_expl_new(int centerx, int centery, int radius, int force,
                           int playerid, sc_explosion_type type) {
 /* sc_expl_new
    Create a new explosion.  */

@@ -1,3 +1,4 @@
+static int
 find_bmask(const struct Client *who, const dlink_list *const list)
 {
   const dlink_node *ptr = NULL;

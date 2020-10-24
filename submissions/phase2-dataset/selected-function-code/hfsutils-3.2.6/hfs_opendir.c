@@ -1,3 +1,4 @@
+hfsdir *hfs_opendir(hfsvol *vol, const char *path)
 {
   hfsdir *dir = 0;
   CatKeyRec key;

@@ -1,3 +1,4 @@
+void initArtpacks(void) {
   const char *art_path;
   List *artList;
   List *p;

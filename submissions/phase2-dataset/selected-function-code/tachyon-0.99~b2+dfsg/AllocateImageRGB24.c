@@ -1,3 +1,4 @@
+rawimage * AllocateImageRGB24(const char * filename, int xs, int ys, int zs, unsigned char * rgb) {
   rawimage * newimage = NULL;
   int i, len, intable;
 

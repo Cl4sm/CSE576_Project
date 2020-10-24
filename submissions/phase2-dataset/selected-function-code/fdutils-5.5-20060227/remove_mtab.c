@@ -1,3 +1,4 @@
+void remove_mtab(const char *devname) {
     mnt_node *mm,*prev,*nxt;
     mm=mounted_list;
     prev=NULL;

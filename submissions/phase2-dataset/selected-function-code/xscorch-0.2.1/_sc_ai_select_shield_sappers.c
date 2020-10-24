@@ -1,3 +1,4 @@
+static void _sc_ai_select_shield_sappers(const sc_config *c, sc_player *p, const sc_player *target) {
 /* sc_ai_select_shield_sappers
    If we are not selecting offset targetting and the target is
    shielded, then we will fire shield sappers if we have them.  */

@@ -1,3 +1,4 @@
+static void
 chm_simple(struct Client *source_p, struct Channel *chptr, int parc, int *parn,
            char **parv, int *errors, int alev, int dir, char c, unsigned int d)
 {

@@ -1,3 +1,4 @@
+bool do_opt(char *opt, char *arg, sendip_data *pack) {
 	ripng_header *rippack = (ripng_header *)pack->data;
 	ripng_entry *ripopt;
 	char *p, *q;

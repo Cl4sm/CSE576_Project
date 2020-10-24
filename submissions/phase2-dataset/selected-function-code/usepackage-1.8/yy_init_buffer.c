@@ -1,3 +1,4 @@
+void yy_init_buffer( YY_BUFFER_STATE b, FILE *file )
 #else
 void yy_init_buffer( b, file )
 YY_BUFFER_STATE b;

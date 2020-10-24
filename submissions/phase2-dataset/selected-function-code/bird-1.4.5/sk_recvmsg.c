@@ -1,3 +1,4 @@
+static inline int
 sk_recvmsg(sock *s)
 {
   struct iovec iov = {s->rbuf, s->rbsize};

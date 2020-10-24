@@ -1,3 +1,4 @@
+static void
 parse_handle_numeric(unsigned int numeric, struct Client *source_p, int parc, char *parv[])
 {
   struct Client *target_p = NULL;

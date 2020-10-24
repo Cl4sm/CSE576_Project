@@ -1,3 +1,4 @@
+static void _obex_phonebook_access_set_property(GObject *object, guint property_id, const GValue *value, GParamSpec *pspec)
 {
 	ObexPhonebookAccess *self = OBEX_PHONEBOOK_ACCESS(object);
 	GError *error = NULL;

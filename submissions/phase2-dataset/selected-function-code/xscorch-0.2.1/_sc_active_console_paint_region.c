@@ -1,3 +1,4 @@
+static void _sc_active_console_paint_region(ScConsole *_cons, GdkRectangle *bounds) {
 /* _sc_active_console_paint_region
    This signal is sent to us from sconsole.c to tell us
    when we need to ask our widgets to redraw in a region. */

@@ -1,3 +1,4 @@
+SCM array_for_each(proc, ra0, lra)
      SCM proc, ra0, lra;
 {
   long narg = ilength(lra) + 1;

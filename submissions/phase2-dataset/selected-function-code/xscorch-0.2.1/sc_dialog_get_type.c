@@ -1,3 +1,4 @@
+GType sc_dialog_get_type(void) {
 /* sc_dialog_get_type
    Return the GTK type for a dialog window.  */
 

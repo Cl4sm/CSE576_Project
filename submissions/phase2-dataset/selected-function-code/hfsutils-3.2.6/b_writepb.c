@@ -1,3 +1,4 @@
+int b_writepb(hfsvol *vol, unsigned long bnum, const block *bp,
 	      unsigned int blen)
 {
   unsigned long nblocks;

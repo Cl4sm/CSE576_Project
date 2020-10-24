@@ -1,3 +1,4 @@
+bool reg_set_var_class_defaults(reg *r, reg_var *v, const char *path, const reg_class_default_data *data) {
 /* reg_set_var_defaults
    This function takes a list of reg_class_default_data's, which is
    terminated by a record whose name field is NULL.  It assigns

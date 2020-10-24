@@ -1,3 +1,4 @@
+static void
 proto_rethink_goal(struct proto *p)
 {
   struct protocol *q;

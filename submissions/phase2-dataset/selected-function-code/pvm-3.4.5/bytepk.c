@@ -1,3 +1,4 @@
+static int
 bytepk(mp, cp, num, siz, lnc)
 	struct pmsg *mp;
 	char *cp;			/* base of data */

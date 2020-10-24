@@ -1,3 +1,4 @@
+static void
 radv_timer(timer *tm)
 {
   struct radv_iface *ifa = tm->data;

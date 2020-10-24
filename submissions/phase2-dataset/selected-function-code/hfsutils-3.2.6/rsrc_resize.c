@@ -1,3 +1,4 @@
+void *rsrc_resize(void *rdata, unsigned long newsize)
 {
   rsrchandle *newrsrc, *rsrc = gethandle(rdata);
 

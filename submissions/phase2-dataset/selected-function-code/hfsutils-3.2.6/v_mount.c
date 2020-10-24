@@ -1,3 +1,4 @@
+int v_mount(hfsvol *vol)
 {
   /* read the MDB, volume bitmap, and extents/catalog B*-tree headers */
 

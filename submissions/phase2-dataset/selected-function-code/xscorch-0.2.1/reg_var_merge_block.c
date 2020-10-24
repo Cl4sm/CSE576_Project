@@ -1,3 +1,4 @@
+bool reg_var_merge_block(const reg *r, reg_var *b, const char *name, reg_var **block) {
 /* reg_var_merge_block
    Merges the given block into an existing block (if available).  If
    necessary, a new block will be created.  Variables in <block> will

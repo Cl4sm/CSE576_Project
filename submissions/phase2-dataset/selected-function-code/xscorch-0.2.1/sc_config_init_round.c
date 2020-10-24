@@ -1,3 +1,4 @@
+void sc_config_init_round(sc_config *c) {
 
    int i;
 

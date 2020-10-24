@@ -1,3 +1,4 @@
+extern pid_t
 execCommand(char *command)
 {
     pid_t pid;

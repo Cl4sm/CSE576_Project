@@ -1,3 +1,4 @@
+void block_format(int mode)
 {
 	char	*s=line_start;
 	int ytmp = y;

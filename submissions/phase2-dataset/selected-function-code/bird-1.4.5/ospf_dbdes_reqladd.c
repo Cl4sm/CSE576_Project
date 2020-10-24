@@ -1,3 +1,4 @@
+static void
 ospf_dbdes_reqladd(struct ospf_dbdes_packet *ps, struct ospf_neighbor *n)
 {
   struct ospf_lsa_header *plsa, lsa;

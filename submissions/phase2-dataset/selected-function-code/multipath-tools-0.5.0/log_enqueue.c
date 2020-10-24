@@ -1,3 +1,4 @@
+int log_enqueue (int prio, const char * fmt, va_list ap)
 {
 	int len, fwd;
 	char buff[MAX_MSG_SIZE];

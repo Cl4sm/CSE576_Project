@@ -1,3 +1,4 @@
+static int
 enc_xdr_cplx(mp, vp, cnt, std, siz)
 	struct pmsg *mp;
 	void *vp;

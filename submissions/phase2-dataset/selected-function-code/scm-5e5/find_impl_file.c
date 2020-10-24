@@ -1,3 +1,4 @@
+char *find_impl_file(exec_path, generic_name, initname, sep)
      const char *exec_path;
      const char *generic_name, *initname, *sep;
 {

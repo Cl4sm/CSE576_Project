@@ -1,3 +1,4 @@
+static void
 olock_free(resource *r)
 {
   struct object_lock *q, *l = (struct object_lock *) r;

@@ -1,3 +1,4 @@
+static void Initialize(request, new, argv, argc)
     PixmapWidget request, new;
     ArgList argv;
     Cardinal argc;

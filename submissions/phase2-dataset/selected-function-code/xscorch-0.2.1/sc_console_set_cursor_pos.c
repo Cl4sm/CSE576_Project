@@ -1,3 +1,4 @@
+void sc_console_set_cursor_pos(ScConsole *cons, gint x, gint y) {
 /* sc_console_set_cursor_pos
    Modifies the cursor position to the CHARACTER coordinates (x,y) (which are
    relative to the TEXT BUFFER, not the viewport).  The cursor's width and

@@ -1,3 +1,4 @@
+static gboolean _sc_inventory_weapon_button_gtk(__libj_unused ScActiveConsole *cons,
                                                 ScActiveConsoleSpot *spot,
                                                 GdkEventButton *event, sc_inventory_gtk *inv) {
 /* sc_inventory_weapon_button_gtk

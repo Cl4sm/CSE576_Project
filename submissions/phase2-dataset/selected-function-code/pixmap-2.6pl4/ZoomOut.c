@@ -1,3 +1,4 @@
+void ZoomOut(PW)
     PixmapWidget PW;
 {
     CopyImageData(PW->pixmap.image, PW->pixmap.zoom.image, 

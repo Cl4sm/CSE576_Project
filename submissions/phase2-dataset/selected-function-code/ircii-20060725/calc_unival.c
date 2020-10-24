@@ -1,3 +1,4 @@
+unsigned
 calc_unival(const u_char *utfbuf)
 {
 	/* This function does the reverse of utf8_sequence(). */

@@ -1,3 +1,4 @@
+extern int
 select_retain_hwhandler (struct multipath * mp)
 {
 	unsigned int minv_dm_retain[3] = {1, 5, 0};

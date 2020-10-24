@@ -1,3 +1,4 @@
+static int
 merge_hwe (struct hwentry * dst, struct hwentry * src)
 {
 	merge_str(vendor);

@@ -1,3 +1,4 @@
+int modem_init ( TFILE *mf, cap c, char *id, 
 		 int calling, int poll, int capsset, int *preverse )
 {
   int err=0, t=-TO_RESET ;

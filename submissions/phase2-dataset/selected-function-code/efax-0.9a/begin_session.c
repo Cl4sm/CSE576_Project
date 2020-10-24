@@ -1,3 +1,4 @@
+int begin_session ( TFILE *f, char *fname, int reverse, int hwfc, 
 		    char **lkfile, ttymodes mode, void (*onsig) (int) )
 {
   int i, err=0, busy=0, minbusy=0 ;

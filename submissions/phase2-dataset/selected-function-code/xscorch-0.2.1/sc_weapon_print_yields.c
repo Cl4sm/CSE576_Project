@@ -1,3 +1,4 @@
+void sc_weapon_print_yields(const sc_weapon_config *wc) {
 /* sc_weapon_print_yields
    Print current weapon yields.
    This is very unoptimized, in favor of stressing things more.

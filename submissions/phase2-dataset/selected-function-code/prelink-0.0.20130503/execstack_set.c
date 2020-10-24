@@ -1,3 +1,4 @@
+static int
 execstack_set (DSO *dso, int flag)
 {
   int i, null = -1, last, ret;

@@ -1,3 +1,4 @@
+static SCM *lookupcar(vloc)
      SCM vloc;
 {
   SCM *pv, val, var = CAR(vloc), env = STATIC_ENV;

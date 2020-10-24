@@ -1,3 +1,4 @@
+static bool _reg_load_top(reg *r) {
 
    reg_var *top;
    reg_var *subblock;

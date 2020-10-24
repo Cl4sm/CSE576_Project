@@ -1,3 +1,4 @@
+DCC_list *
 dcc_searchlist(name, user, type, flag, othername)
 	u_char	*name,
 		*user;

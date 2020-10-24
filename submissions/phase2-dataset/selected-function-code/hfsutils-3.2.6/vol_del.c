@@ -1,3 +1,4 @@
+static
 void vol_del(ClientData clientData)
 {
   volref *vref = clientData;

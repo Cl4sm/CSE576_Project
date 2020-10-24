@@ -1,3 +1,4 @@
+int
 pmsg_decmore(mp)
 	struct pmsg *mp;
 {

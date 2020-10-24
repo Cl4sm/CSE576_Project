@@ -1,3 +1,4 @@
+  char **
 s_option_list(prefix, bool_only)
   const char *prefix;
   int bool_only;

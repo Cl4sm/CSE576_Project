@@ -1,3 +1,4 @@
+int PWWriteFile(Widget w, String filename)
 #else
 int PWWriteFile(w, filename)
     Widget w;

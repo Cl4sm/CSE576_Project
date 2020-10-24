@@ -1,3 +1,4 @@
+int
 pvm_getsbuf()
 {
 	int cc;

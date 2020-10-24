@@ -1,3 +1,4 @@
+static int
 res_ourserver(const struct irc_ssaddr *inp)
 {
   const struct sockaddr_in6 *v6in = (const struct sockaddr_in6 *)inp;

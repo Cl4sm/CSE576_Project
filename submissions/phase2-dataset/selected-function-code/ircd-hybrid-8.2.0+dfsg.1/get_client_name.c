@@ -1,3 +1,4 @@
+const char *
 get_client_name(const struct Client *client_p, enum addr_mask_type type)
 {
   static char buf[HOSTLEN * 2 + USERLEN + 5];

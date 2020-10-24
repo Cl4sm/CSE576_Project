@@ -1,3 +1,4 @@
+char **
 pvmcopyenv(anyep)
 	char **anyep;		/* old environment to copy, or NULL */
 {

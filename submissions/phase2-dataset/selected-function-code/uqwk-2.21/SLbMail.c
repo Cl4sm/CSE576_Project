@@ -1,3 +1,4 @@
+int SLbMail(char *fn)
 {
 	FILE *fd;
 	int bytes, ret = 0;

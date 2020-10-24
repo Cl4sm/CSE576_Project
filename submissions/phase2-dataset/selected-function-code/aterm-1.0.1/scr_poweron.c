@@ -1,3 +1,4 @@
+void
 scr_poweron(void)
 {
     D_SCREEN((stderr, "scr_poweron()"));

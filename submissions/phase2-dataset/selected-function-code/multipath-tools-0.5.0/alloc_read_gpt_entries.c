@@ -1,3 +1,4 @@
+static gpt_entry *
 alloc_read_gpt_entries(int fd, gpt_header * gpt)
 {
 	gpt_entry *pte;

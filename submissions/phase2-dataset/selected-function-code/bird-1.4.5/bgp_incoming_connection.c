@@ -1,3 +1,4 @@
+static int
 bgp_incoming_connection(sock *sk, int dummy UNUSED)
 {
   struct proto_config *pc;

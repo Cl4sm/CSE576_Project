@@ -1,3 +1,4 @@
+void
 process_graphics(void)
 {
     unsigned char   ch, cmd = cmd_getc();

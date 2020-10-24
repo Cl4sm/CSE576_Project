@@ -1,3 +1,4 @@
+shashlist_item *shashlist_find_prev(const shashlist *list, shashlist_item *item, int class) {
 /* shashlist_find_prev
    Find the previous shashlist_item after item in the specified class.
    Passing item == NULL is a slang way of asking for the last item. */

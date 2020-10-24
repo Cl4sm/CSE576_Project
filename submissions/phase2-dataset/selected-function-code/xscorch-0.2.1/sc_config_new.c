@@ -1,3 +1,4 @@
+sc_config *sc_config_new(int *argc, char ***argv) {
 /* sc_config_new
    This function creates the configuration structure, initialises all
    values, and then calls the config file reader and options parser to 

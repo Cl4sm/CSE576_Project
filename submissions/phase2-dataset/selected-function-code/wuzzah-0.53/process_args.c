@@ -1,3 +1,4 @@
+void process_args(int ac, char *av[], wuzzah_config_t *conf){
 	int c, len;
 	char *homedir;
 

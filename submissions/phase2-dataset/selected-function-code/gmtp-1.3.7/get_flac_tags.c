@@ -1,3 +1,4 @@
+void get_flac_tags(gchar *filename, LIBMTP_track_t *trackinformation) {
     FLAC__StreamMetadata *tags = NULL;
     FLAC__StreamMetadata streaminfo;
     gchar * tracknumber = 0;

@@ -1,3 +1,4 @@
+void
 MenuAC(Widget w, XEvent *event, String *params, Cardinal *num)
 {
 #if DEBUG

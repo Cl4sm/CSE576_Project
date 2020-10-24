@@ -1,3 +1,4 @@
+static int
 gather_dso (DSO *dso, struct prelink_entry *ent)
 {
   int prelinked;

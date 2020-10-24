@@ -1,3 +1,4 @@
+NOEXPORT void client_run(CLI *c) {
     int err, rst;
 #ifndef USE_FORK
     int num_clients_copy;

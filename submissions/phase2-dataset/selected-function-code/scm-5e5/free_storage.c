@@ -1,3 +1,4 @@
+void free_storage()
 {
   DEFER_INTS;
   loc_gc_hook = (SCM *)0;

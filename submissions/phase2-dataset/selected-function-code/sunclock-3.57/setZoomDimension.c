@@ -1,3 +1,4 @@
+void
 setZoomDimension(Context)
 struct Sundata * Context;
 {

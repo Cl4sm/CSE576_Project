@@ -1,3 +1,4 @@
+void
 add_listener(int port, const char *vhost_ip, unsigned int flags)
 {
   struct Listener *listener;

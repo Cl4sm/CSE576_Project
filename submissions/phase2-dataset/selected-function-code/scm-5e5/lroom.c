@@ -1,3 +1,4 @@
+SCM lroom(opt)
      SCM opt;
 {
   scm_intprint(cells_allocated, -10, cur_errp);

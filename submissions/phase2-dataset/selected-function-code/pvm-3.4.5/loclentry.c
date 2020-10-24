@@ -1,3 +1,4 @@
+int
 loclentry(tp, mp)
 	struct task *tp;
 	struct pmsg *mp;

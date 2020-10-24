@@ -1,3 +1,4 @@
+static unsigned int write_directory_structure(struct entry *entry, char *base, unsigned int offset)
 {
 	int stack_entries = 0;
 	int stack_size = 64;

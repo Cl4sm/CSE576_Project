@@ -1,3 +1,4 @@
+  static int
 rl_complete(int context, int again)
 {
   char **list;

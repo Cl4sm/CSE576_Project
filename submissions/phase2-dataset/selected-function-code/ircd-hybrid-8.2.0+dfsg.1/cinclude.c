@@ -1,3 +1,4 @@
+static void
 cinclude(void)
 {
   char *p = NULL;

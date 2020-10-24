@@ -1,3 +1,4 @@
+void parseArguments(int argc, char *argv[]) 
 {
   int curOpt;
   int optionIndex = 0;

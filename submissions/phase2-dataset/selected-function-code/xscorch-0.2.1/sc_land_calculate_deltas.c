@@ -1,3 +1,4 @@
+bool sc_land_calculate_deltas(const sc_land *l, int *deltax, int *deltay, int x1, int y1, int x2, int y2) {
 /* sc_land_calculate_deltas
    Calculates the short-path deltaX, deltaY between two virtual coordinates,
    taking boundaries into effect. This fixes issues with delta calculation

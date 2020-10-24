@@ -1,3 +1,4 @@
+  long
 b_write_buffer_to_file(buffer, filename)
   Buffer *buffer;
   char *filename;

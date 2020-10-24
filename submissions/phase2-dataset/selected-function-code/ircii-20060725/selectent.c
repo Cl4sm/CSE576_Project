@@ -1,3 +1,4 @@
+static	int
 selectent(entry)
 	const struct dirent	*entry;
 {

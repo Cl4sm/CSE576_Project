@@ -1,3 +1,4 @@
+int
 recompute_nonalloc_offsets (DSO *dso)
 {
   int i, first_nonalloc, sec_before_shoff = 0;

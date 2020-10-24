@@ -1,3 +1,4 @@
+SFtextChanged()
 {
 
 	if ((SFtextBuffer[0] == '/') || (SFtextBuffer[0] == '~')) {

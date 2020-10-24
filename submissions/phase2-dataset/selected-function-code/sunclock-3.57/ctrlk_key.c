@@ -1,3 +1,4 @@
+void ctrlk_key(int key)
 {
 	switch(key | 0x60) {
 		case 'b': block_mark(); break;		/* ^K^B set mark block on */

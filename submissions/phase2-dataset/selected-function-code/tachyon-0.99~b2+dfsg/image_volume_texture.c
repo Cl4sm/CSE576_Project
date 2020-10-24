@@ -1,3 +1,4 @@
+color image_volume_texture(const vector * hit, const texture * tx, const ray * ry) {
   vector pnt;
   flt u, v, w, miprad, maxscale;
   standard_texture * tex = (standard_texture *) tx;

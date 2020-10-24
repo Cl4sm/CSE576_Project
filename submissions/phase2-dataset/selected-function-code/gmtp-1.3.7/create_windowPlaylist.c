@@ -1,3 +1,4 @@
+GtkWidget* create_windowPlaylist(void) {
     GtkWidget *window_playlist;
     GtkWidget *vbox1;
     GtkWidget *hbox1;

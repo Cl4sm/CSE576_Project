@@ -1,3 +1,4 @@
+struct MaskItem *
 find_is_glined(const char *host, const char *user)
 {
   struct irc_ssaddr iphost, *piphost = NULL;

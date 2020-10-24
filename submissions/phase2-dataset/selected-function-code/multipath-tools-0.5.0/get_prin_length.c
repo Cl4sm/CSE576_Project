@@ -1,3 +1,4 @@
+int get_prin_length(int rq_servact)
 {
         int mx_resp_len;
         switch (rq_servact)

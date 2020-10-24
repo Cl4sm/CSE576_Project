@@ -1,3 +1,4 @@
+extern int
 disassemble_status (char * params, struct multipath * mpp)
 {
 	char * word;

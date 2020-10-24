@@ -1,3 +1,4 @@
+void
 list_options()
 {
 #define INDENT 30

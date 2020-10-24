@@ -1,3 +1,4 @@
+static int
 ensure_directories_exist(char *str, mode_t dir_mode)
 {
 	char *pathname;

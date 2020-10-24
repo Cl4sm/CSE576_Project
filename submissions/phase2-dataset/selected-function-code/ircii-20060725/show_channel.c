@@ -1,3 +1,4 @@
+static	void
 show_channel(ChannelList *chan)
 {
 	NickList *tmp;

@@ -1,3 +1,4 @@
+void
 internal_function
 FREE_EXPRESSION (exp)
      struct expression *exp;

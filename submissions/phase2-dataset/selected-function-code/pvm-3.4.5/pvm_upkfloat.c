@@ -1,3 +1,4 @@
+int
 pvm_upkfloat(fp, cnt, std)
 	float *fp;
 	int cnt;

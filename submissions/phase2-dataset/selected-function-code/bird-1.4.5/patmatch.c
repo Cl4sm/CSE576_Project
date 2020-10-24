@@ -1,3 +1,4 @@
+int
 MATCH_FUNC_NAME(byte *p, byte *s)
 {
   while (*p)

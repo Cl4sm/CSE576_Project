@@ -1,3 +1,4 @@
+void sc_window_load_fonts(sc_window_gtk *w) {
 
    sc_config *c;
 

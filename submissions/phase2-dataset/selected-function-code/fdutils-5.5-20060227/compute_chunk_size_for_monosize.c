@@ -1,3 +1,4 @@
+static int compute_chunk_size_for_monosize(struct params *fd,
 					   int gap,
 					   int tailsize)
 {

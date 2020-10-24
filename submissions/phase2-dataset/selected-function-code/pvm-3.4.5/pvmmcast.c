@@ -1,3 +1,4 @@
+int
 pvmmcast(mid, tids, count, tag)
 	int mid;
 	int *tids;

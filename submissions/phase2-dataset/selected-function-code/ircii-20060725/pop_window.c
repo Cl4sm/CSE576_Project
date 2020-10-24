@@ -1,3 +1,4 @@
+static	void
 pop_window()
 {
 	int	refnum;

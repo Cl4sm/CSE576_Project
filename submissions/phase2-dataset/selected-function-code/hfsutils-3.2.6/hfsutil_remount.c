@@ -1,3 +1,4 @@
+hfsvol *hfsutil_remount(mountent *ment, int flags)
 {
   hfsvol *vol;
   hfsvolent vent;

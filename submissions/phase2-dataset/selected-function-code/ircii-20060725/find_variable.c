@@ -1,3 +1,4 @@
+static	int
 find_variable(org_name, cnt)
 	u_char	*org_name;
 	int	*cnt;

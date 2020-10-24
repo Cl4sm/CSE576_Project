@@ -1,3 +1,4 @@
+int
 cli_init (void) {
 	if (load_keys())
 		return 1;

@@ -1,3 +1,4 @@
+void
 server_die(const char *message, int rboot)
 {
   char buffer[IRCD_BUFSIZE] = "";

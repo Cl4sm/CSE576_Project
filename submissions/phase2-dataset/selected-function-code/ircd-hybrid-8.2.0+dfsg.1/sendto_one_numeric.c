@@ -1,3 +1,4 @@
+void
 sendto_one_numeric(struct Client *to, struct Client *from, enum irc_numerics numeric, ...)
 {
   struct dbuf_block *buffer = NULL;

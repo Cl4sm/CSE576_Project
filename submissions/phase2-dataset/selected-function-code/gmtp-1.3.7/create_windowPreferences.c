@@ -1,3 +1,4 @@
+GtkWidget* create_windowPreferences(void) {
     GtkWidget *windowDialog;
     GtkWidget *vbox1;
     GtkWidget *frame1;

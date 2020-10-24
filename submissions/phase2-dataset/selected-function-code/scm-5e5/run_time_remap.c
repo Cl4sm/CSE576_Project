@@ -1,3 +1,4 @@
+void
 run_time_remap (progname)
      char *progname;
 {

@@ -1,3 +1,4 @@
+void
 user_set_hostmask(struct Client *target_p, const char *hostname, const int what)
 {
   dlink_node *ptr = NULL;

@@ -1,3 +1,4 @@
+SCM read_line(port)
      SCM port;
 {
   register int c;

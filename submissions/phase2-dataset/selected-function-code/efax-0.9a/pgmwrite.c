@@ -1,3 +1,4 @@
+void pgmwrite ( OFILE *f, uchar *buf, int n )
 {
   static uchar gval [ MAXBITS * 8 / 4 ] ;
   static int init=0, lines=0 ;

@@ -1,3 +1,4 @@
+static void _sc_console_draw_vert_scroll(ScConsole *cons) {
 /* sc_console_draw_vert_scroll
    Draws the vertical scrollbar.  */
 

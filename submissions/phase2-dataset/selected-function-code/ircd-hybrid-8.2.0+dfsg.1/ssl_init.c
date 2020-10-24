@@ -1,3 +1,4 @@
+static void
 ssl_init(void)
 {
 #ifdef HAVE_LIBCRYPTO

@@ -1,3 +1,4 @@
+SCM make_xcolormap(sdpy, cmp)
      SCM sdpy;
      Colormap cmp;
 {

@@ -1,3 +1,4 @@
+int rijndaelDecrypt (word8 a[4][MAXBC], int keyBits, int blockBits, word8 rk[MAXROUNDS+1][4][MAXBC])
 {
 	int r, BC, ROUNDS;
 	

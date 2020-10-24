@@ -1,3 +1,4 @@
+int
 adjust_dso (DSO *dso, GElf_Addr start, GElf_Addr adjust)
 {
   int i;

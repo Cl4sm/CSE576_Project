@@ -1,3 +1,4 @@
+void sc_console_highlight_attach(ScConsole *cons, GdkColor *fg, GdkColor *bg, gboolean bold,
                                  gint x, gint y, gint width, gint height) {
 /* sc_console_highlight_attach
    Attach a new highlight to the console, with the indicated colours and

@@ -1,3 +1,4 @@
+static	int
 connect_by_number(service, host)
 	char	*service;
 	char	*host;

@@ -1,3 +1,4 @@
+static int compute_tot_size(struct params *fd,
 			    int chunksize,
 			    int gap,
 			    int tailsize)

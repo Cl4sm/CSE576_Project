@@ -1,3 +1,4 @@
+void folderSearch(GPatternSpec *pspec, GSList **list, LIBMTP_folder_t * folderptr) {
     FileListStruc *filestruc = NULL;
     gchar *tmpstring = NULL;
     while (folderptr != NULL) {

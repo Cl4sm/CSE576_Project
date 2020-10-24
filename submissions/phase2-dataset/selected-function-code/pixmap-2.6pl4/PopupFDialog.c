@@ -1,3 +1,4 @@
+int PopupFDialog(popup, message, suggestion, answer, grab)
     Dialog popup;
     String message, suggestion, *answer;
     XtGrabKind grab;

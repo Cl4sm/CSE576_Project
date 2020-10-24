@@ -1,3 +1,4 @@
+int
 pvm_insert(name, req, data)
 	char *name;		/* class name */
 	int req;		/* requested class index or -1 for any */

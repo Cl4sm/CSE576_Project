@@ -1,3 +1,4 @@
+SCM l_dup(oldpt, modes)
      SCM oldpt, modes;
 {
   long flags;

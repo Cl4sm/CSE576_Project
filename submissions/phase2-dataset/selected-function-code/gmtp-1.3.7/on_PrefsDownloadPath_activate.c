@@ -1,3 +1,4 @@
+void on_PrefsDownloadPath_activate(GtkMenuItem *menuitem, gpointer user_data) {
     // What we do here is display a find folder dialog, and save the resulting folder into the text wigdet and preferences item.
     gchar *savepath = NULL;
     GtkWidget *FileDialog;

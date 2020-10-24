@@ -1,3 +1,4 @@
+extern int 
 del_loop (const char *device)
 {
 	int retries = 3;

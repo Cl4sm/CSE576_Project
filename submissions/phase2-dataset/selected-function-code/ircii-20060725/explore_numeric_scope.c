@@ -1,3 +1,4 @@
+static int
 explore_numeric_scope(pai, hostname, servname, res)
 	const struct addrinfo *pai;
 	const char *hostname;

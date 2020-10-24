@@ -1,3 +1,4 @@
+void
 fd_close(fde_t *F)
 {
   unsigned int hashv = hash_fd(F->fd);

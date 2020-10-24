@@ -1,3 +1,4 @@
+static int
 snprint_blacklist_group (char *buff, int len, int *fwd, vector *vec)
 {
 	int threshold = MAX_LINE_LEN;

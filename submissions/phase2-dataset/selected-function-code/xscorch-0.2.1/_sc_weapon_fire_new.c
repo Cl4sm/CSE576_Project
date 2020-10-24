@@ -1,3 +1,4 @@
+static inline bool _sc_weapon_fire_new(sc_config *c, sc_player *p, sc_explosion **e) {
 /* _sc_weapon_fire_new
    A tank wants to fire a weapon.
    Called by sc_weapon_create_all, below.

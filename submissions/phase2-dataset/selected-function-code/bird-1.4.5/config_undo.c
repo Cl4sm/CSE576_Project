@@ -1,3 +1,4 @@
+int
 config_undo(void)
 {
   if (shutting_down)

@@ -1,3 +1,4 @@
+int
 dm_htcommit(hp, mp)
 	struct hostd *hp;
 	struct pmsg *mp;

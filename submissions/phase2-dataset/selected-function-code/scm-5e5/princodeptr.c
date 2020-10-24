@@ -1,3 +1,4 @@
+static int princodeptr(exp, port, writing)
      SCM exp;
      SCM port;
      int writing;

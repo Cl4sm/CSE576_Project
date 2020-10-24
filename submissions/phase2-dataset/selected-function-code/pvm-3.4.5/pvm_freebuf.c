@@ -1,3 +1,4 @@
+int
 pvm_freebuf(mid)
 	int mid;		/* message handle */
 {

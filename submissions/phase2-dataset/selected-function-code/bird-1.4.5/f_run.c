@@ -1,3 +1,4 @@
+int
 f_run(struct filter *filter, struct rte **rte, struct ea_list **tmp_attrs, struct linpool *tmp_pool, int flags)
 {
   if (filter == FILTER_ACCEPT)

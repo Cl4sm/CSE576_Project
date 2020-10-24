@@ -1,3 +1,4 @@
+static int
 pvmgetenvars(ep)
 	char ***ep;
 {

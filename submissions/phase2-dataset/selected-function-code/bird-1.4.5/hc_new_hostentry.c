@@ -1,3 +1,4 @@
+static struct hostentry *
 hc_new_hostentry(struct hostcache *hc, ip_addr a, ip_addr ll, rtable *dep, unsigned k)
 {
   struct hostentry *he = sl_alloc(hc->slab);

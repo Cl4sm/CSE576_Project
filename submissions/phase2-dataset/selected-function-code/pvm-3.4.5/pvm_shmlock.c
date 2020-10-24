@@ -1,3 +1,4 @@
+int
 pvm_shmlock( lock )
 PVM_LOCK lock;
 {

@@ -1,3 +1,4 @@
+void setFilePaths(int argc, char *argv[]) {
     // Get our executable location.
     applicationpath = getRuntimePath(argc, argv);
 

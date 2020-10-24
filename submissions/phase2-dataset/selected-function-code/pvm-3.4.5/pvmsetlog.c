@@ -1,3 +1,4 @@
+int
 pvmsetlog(how)
 	int how;
 {

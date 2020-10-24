@@ -1,3 +1,4 @@
+static int
 dm_drv_prereq (void)
 {
 	unsigned int minv[3] = {1, 0, 3};

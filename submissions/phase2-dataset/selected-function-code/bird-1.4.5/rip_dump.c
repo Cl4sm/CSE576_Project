@@ -1,3 +1,4 @@
+static void
 rip_dump(struct proto *p)
 {
   int i;

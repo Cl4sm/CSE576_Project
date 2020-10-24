@@ -1,3 +1,4 @@
+static void
 serv_connect_callback(fde_t *fd, int status, void *data)
 {
   struct Client *client_p = data;

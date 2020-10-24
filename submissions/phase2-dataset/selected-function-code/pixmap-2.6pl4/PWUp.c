@@ -1,3 +1,4 @@
+void PWUp(Widget w)
 #else
 void PWUp(w)
      Widget w;

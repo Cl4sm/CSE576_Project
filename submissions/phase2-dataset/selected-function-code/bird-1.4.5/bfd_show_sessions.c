@@ -1,3 +1,4 @@
+void
 bfd_show_sessions(struct proto *P)
 {
   byte tbuf[TM_DATETIME_BUFFER_SIZE];

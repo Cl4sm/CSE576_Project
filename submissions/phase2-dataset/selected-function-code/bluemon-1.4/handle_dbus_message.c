@@ -1,3 +1,4 @@
+void handle_dbus_message(DBusMessage* msg, int threshold)
 {
    DBusMessage* reply;
    DBusMessageIter it;

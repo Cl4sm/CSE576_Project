@@ -1,3 +1,4 @@
+static void
 bfd_remove_session(struct bfd_proto *p, struct bfd_session *s)
 {
   ip_addr ip = s->addr;

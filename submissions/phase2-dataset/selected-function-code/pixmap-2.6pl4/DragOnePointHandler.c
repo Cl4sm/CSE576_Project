@@ -1,3 +1,4 @@
+void DragOnePointHandler(w, status, event)
      Widget       w;
      PWStatus    *status;
      XEvent      *event;

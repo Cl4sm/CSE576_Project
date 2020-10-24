@@ -1,3 +1,4 @@
+void sc_accessory_config_destroy(sc_accessory_config **ac) {
 /* sc_accessory_config_destroy
    Invalidate memory used by an accessory config struct. */
 

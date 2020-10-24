@@ -1,3 +1,4 @@
+DISK_FILE *file_open(char *name, FILE_MODE mode) {
     DISK_FILE *df;
     int fd, flags;
 

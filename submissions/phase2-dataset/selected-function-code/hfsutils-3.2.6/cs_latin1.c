@@ -1,3 +1,4 @@
+char *cs_latin1(char *mstr, int *lenptr)
 {
   int ilen, olen, i;
   char *latin1, *ptr;

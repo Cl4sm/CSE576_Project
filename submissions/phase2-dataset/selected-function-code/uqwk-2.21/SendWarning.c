@@ -1,3 +1,4 @@
+int SendWarning (to)
 char *to;
 /*
  *  Mail a warning to the user if the reply packet

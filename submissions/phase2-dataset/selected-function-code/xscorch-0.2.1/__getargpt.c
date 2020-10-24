@@ -1,3 +1,4 @@
+static inline sizea __getargpt(char **d, char *s, sizea argnum, char sep) {
 /* internal-Get-Argument-Pointer-Trim
    returns a pointer to the argnum'th argument in '|'-delimited cmd
    string (or you can optionally specify your own separator to use).

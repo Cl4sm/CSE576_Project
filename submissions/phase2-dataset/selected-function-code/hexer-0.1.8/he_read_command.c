@@ -1,3 +1,4 @@
+  static struct he_command_s *
 he_read_command(struct he_s *hedit)
   /* Read a compound command from the swap file.  If the end of the
    * swap file is hit (the read failed), the return value is 0, else

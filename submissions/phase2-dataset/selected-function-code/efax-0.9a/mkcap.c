@@ -1,3 +1,4 @@
+int mkcap ( uchar *fif, cap c, int dis ) 
 {
   int err=0, i, j, k, len ;
   t30tabst *p ;

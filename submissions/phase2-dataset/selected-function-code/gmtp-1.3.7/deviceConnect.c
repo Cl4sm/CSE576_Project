@@ -1,3 +1,4 @@
+guint deviceConnect() {
     gint error;
     if (DeviceMgr.deviceConnected == TRUE) {
         // We must be wanting to disconnect the device.

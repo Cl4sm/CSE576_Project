@@ -1,3 +1,4 @@
+int send_data ( TFILE *mf, IFILE *f, int page, int pages,
 	       cap local, cap session, char *header, faxfont *font )
 {
   int done=0, err=0, noise=0, nr=0, lastnr=0, line, pixels ;

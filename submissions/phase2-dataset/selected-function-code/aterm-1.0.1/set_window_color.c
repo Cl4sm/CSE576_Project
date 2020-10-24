@@ -1,3 +1,4 @@
+void
 set_window_color(int idx, const char *color)
 {
     const char     *const msg = "can't load color \"%s\"";

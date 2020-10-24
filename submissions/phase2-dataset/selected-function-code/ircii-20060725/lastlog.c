@@ -1,3 +1,4 @@
+void
 lastlog(command, args, subargs)
 	u_char	*command,
 		*args,

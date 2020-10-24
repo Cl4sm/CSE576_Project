@@ -1,3 +1,4 @@
+int rt_shared_iterator_next_tile(rt_shared_iterator_t *it, int reqsize,
                                  rt_tasktile_t *tile) {
   int rc=RT_SCHED_CONTINUE;
 

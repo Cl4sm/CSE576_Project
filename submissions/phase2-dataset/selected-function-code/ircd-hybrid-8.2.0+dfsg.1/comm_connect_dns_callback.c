@@ -1,3 +1,4 @@
+static void
 comm_connect_dns_callback(void *vptr, const struct irc_ssaddr *addr, const char *name, size_t namelength)
 {
   fde_t *F = vptr;

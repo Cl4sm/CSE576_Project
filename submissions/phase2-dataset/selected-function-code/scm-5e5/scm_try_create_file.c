@@ -1,3 +1,4 @@
+SCM scm_try_create_file(fname, modes, perms)
      SCM fname, modes, perms;
 {
   SCM port;

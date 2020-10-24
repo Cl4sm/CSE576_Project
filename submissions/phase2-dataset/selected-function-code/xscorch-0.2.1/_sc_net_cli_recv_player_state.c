@@ -1,3 +1,4 @@
+static bool _sc_net_cli_recv_player_state(sc_config *c, sc_packet *packet) {
 
    sc_player *pl;          /* Player data structure */
    dword *p;               /* Pointer into packet data */

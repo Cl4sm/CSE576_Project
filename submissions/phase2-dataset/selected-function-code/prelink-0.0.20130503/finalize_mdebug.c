@@ -1,3 +1,4 @@
+int
 finalize_mdebug (DSO *dso)
 {
   int i;

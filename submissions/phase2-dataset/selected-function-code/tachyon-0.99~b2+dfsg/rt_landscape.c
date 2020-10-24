@@ -1,3 +1,4 @@
+void rt_landscape(SceneHandle scene, void * tex, int m, int n, 
                   apivector ctr, flt wx, flt wy) {
   int totalsize, x, y;
   flt * field; 

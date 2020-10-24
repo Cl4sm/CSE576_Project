@@ -1,3 +1,4 @@
+static void
 init_syntax_once ()
 {
    register int c;

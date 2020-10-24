@@ -1,3 +1,4 @@
+GType sc_ac_toggle_get_type(void) {
 /* sc_ac_toggle_get_type
    Define the toggle's GTK type. */
 

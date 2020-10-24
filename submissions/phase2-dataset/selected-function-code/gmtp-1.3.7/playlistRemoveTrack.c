@@ -1,3 +1,4 @@
+void playlistRemoveTrack(LIBMTP_playlist_t* playlist, LIBMTP_track_t* track, uint32_t instances) {
     LIBMTP_playlist_t* tmpplaylist = playlist;
     uint32_t *tmp = NULL;
 

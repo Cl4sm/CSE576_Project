@@ -1,3 +1,4 @@
+static inline unsigned long int
 hash_string (str_param)
      const char *str_param;
 {

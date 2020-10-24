@@ -1,3 +1,4 @@
+int receive_frame_data ( TFILE *f, uchar *buf, int n, int *len )
 {
   int err=0, c, i ;
 

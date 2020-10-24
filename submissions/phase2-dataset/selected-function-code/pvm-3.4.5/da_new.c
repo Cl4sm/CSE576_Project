@@ -1,3 +1,4 @@
+char *
 da_new(len)
 	int len;
 {

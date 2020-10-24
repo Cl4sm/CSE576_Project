@@ -1,3 +1,4 @@
+void cameraposition(camdef * camera, vector center, vector viewvec, 
                     vector upvec) {
   vector newupvec;
   vector newviewvec;

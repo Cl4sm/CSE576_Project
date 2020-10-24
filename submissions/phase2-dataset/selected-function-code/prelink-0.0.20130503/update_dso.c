@@ -1,3 +1,4 @@
+int
 update_dso (DSO *dso, const char *orig_name)
 {
   int rdwr = dso_is_rdwr (dso);

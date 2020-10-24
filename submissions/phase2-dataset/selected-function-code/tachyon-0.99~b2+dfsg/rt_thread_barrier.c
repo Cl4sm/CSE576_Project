@@ -1,3 +1,4 @@
+int rt_thread_barrier(rt_barrier_t *barrier, int increment) {
 #ifdef THR
   int my_phase;
   int my_result;

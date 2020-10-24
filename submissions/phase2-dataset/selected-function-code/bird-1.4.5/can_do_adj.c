@@ -1,3 +1,4 @@
+static int
 can_do_adj(struct ospf_neighbor *n)
 {
   struct ospf_iface *ifa;

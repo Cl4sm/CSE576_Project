@@ -1,3 +1,4 @@
+void
 str2numval(s, val, max)
 char *s;
 int *val;

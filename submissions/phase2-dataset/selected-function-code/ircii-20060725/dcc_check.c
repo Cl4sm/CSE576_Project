@@ -1,3 +1,4 @@
+void
 dcc_check(rd, wd)
 	fd_set	*rd,
 		*wd;

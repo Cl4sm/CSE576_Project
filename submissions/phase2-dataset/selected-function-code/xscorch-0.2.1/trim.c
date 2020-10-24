@@ -1,3 +1,4 @@
+char *trim(char *s) {
 /* Trim
    trims off leading and trailing whitespace, \n, \t, etc off of the
    string passed in <cmd>. Since this function only removes characters,

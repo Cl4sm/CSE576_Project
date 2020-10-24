@@ -1,3 +1,4 @@
+int sc_shield_absorb_explosion(sc_player *p, const sc_explosion *e, int damage) {
 /* sc_shield_absorb_explosion
    Try to absorb damage into a player's shield.  The damage undealt
    is returned, or zero if all damage absorbed.  */

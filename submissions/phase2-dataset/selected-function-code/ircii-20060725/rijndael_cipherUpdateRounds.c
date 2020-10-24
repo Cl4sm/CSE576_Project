@@ -1,3 +1,4 @@
+int rijndael_cipherUpdateRounds(rijndael_cipherInstance *cipher,
 	rijndael_keyInstance *key, BYTE *input, int inputLen, BYTE *outBuffer, int rounds)
 {
 	int j, t;

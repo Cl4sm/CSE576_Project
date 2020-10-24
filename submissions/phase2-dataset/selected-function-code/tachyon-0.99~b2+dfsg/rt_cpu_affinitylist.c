@@ -1,3 +1,4 @@
+int * rt_cpu_affinitylist(int *cpuaffinitycount) {
   int *affinitylist = NULL;
   *cpuaffinitycount = -1; /* return count -1 if unimplemented or err occurs */
 

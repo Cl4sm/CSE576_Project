@@ -1,3 +1,4 @@
+void PWDrawPoint(Widget w, Position x, Position y, int value)
 #else
 void PWDrawPoint(w, x, y, value)
      Widget  w;

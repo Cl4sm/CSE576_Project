@@ -1,3 +1,4 @@
+SCM apply(proc, arg1, args)
      SCM proc, arg1, args;
 {
   ASRTGO(NIMP(proc), badproc);

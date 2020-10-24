@@ -1,3 +1,4 @@
+static
 int fork_native(Tcl_Interp *interp, hfsfile *ifile, hfsfile *ofile)
 {
   char buf[HFS_BLOCKSZ * 8];

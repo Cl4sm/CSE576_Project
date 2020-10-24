@@ -1,3 +1,4 @@
+int
 mpprecv(tid, tag, cp, len, rtid, rtag, rlen)
 	int tid;
 	int tag;

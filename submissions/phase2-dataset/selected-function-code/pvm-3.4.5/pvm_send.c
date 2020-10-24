@@ -1,3 +1,4 @@
+int
 pvm_send(tid, tag)
 	int tid;	/* dest task */
 	int tag;	/* type code */

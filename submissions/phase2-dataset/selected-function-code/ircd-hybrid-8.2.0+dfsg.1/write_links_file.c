@@ -1,3 +1,4 @@
+void
 write_links_file(void *unused)
 {
   FILE *file = NULL;

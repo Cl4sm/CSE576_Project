@@ -1,3 +1,4 @@
+static gboolean _sc_window_tank_move_btn_gtk(GtkWidget *widget, ScActiveConsoleSpot *spot, sc_window_gtk *w) {
 
    char buf[SC_GTK_STRING_BUFFER];
    int fuel;

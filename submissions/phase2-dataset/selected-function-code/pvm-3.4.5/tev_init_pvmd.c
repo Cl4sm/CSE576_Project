@@ -1,3 +1,4 @@
+void
 tev_init_pvmd( dst, ctx, tag )
 	int dst;
 	int ctx;

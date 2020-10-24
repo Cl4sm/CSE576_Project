@@ -1,3 +1,4 @@
+int
 pvm_probe(tid, tag)
 	int tid;
 	int tag;

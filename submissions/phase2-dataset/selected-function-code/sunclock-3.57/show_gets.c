@@ -1,3 +1,4 @@
+int show_gets(char *prp, char *buf, int blen, void *cb)
 {
 #ifdef X11
 	comment = prp;

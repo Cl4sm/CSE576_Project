@@ -1,3 +1,4 @@
+list_node* get_into_env(variable_t* var)
 {
    variable_t* env_var;
 

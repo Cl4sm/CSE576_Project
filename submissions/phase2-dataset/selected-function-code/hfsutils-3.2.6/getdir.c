@@ -1,3 +1,4 @@
+static
 int getdir(Tcl_Interp *interp, volref *vref, const char *path)
 {
   hfsvol *vol = vref->vol;

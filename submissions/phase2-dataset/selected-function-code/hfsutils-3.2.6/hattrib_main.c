@@ -1,3 +1,4 @@
+int hattrib_main(int argc, char *argv[])
 {
   const char *type = 0, *crea = 0;
   int invis = 0, lock = 0, bless = 0;

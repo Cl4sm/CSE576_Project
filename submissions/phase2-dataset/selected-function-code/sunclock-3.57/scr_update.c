@@ -1,3 +1,4 @@
+void scr_update()
 {
 
 #ifdef X11

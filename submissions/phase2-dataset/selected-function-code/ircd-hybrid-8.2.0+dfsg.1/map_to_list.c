@@ -1,3 +1,4 @@
+static dlink_list *
 map_to_list(enum maskitem_type type)
 {
   switch(type)

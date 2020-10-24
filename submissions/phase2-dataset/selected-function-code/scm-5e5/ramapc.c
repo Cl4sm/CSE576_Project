@@ -1,3 +1,4 @@
+int ramapc(cproc, data, ra0, lra, what)
      int (*cproc)();
      SCM data, ra0, lra;
      const char *what;

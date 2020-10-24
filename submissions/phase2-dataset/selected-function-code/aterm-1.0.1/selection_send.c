@@ -1,3 +1,4 @@
+void
 selection_send(XSelectionRequestEvent * rq)
 {
     /* Changes are from rxvt. This fixes #205040. */

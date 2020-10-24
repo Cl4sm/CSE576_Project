@@ -1,3 +1,4 @@
+void on_buttonAlbumArtDownload_activate(GtkWidget *button, gpointer user_data) {
     FILE* fd;
     gint selected = gtk_combo_box_get_active(GTK_COMBO_BOX(textboxAlbumArt));
     gint count = 0;

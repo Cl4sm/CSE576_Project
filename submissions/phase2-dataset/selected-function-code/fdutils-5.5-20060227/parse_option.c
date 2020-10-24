@@ -1,3 +1,4 @@
+static int parse_option(struct enh_options *eo, 
 			 char *name)
 {
 	char *end;

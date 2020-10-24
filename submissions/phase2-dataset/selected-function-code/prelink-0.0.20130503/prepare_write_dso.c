@@ -1,3 +1,4 @@
+int
 prepare_write_dso (DSO *dso)
 {
   int i;

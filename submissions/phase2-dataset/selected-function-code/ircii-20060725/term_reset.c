@@ -1,3 +1,4 @@
+void
 term_reset()
 {
 #ifdef HAVE_TERMIOS_H

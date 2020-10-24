@@ -1,3 +1,4 @@
+tn_packet *tn_packet_new(void) {
 /*
  * tn_packet_new
  * Create and default a new packet.

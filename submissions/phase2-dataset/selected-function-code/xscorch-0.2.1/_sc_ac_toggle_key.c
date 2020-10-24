@@ -1,3 +1,4 @@
+static gint _sc_ac_toggle_key(ScGadget *gadget, GdkEventKey *event) {
 /* _sc_ac_toggle_key
    Key press events for the toggle. */
 

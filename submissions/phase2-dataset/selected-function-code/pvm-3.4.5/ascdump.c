@@ -1,3 +1,4 @@
+static void
 ascdump(o, p, e)
 	char **o;		/* addr of pointer to output space (passed back) */
 	char *p;		/* string to convert */

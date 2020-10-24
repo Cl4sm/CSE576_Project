@@ -1,3 +1,4 @@
+void
 check_spambot_warning(struct Client *source_p, const char *name)
 {
   int t_delta = 0;

@@ -1,3 +1,4 @@
+void
 change_font(int init, const char *fontname)
 {
     const char     *const msg = "can't load font \"%s\"";

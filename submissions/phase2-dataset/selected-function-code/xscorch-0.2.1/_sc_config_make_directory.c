@@ -1,3 +1,4 @@
+static int _sc_config_make_directory(void) {
 /* sc_config_make_directory
    Construct a new local directory for config files, etc. */
 

@@ -1,3 +1,4 @@
+void setupPreferences() {
     // We setup default Preferences.
     Preferences.ask_download_path = TRUE;
     Preferences.attemptDeviceConnectOnStart = FALSE;

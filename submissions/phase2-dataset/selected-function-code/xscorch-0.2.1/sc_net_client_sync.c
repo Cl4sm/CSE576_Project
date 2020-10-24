@@ -1,3 +1,4 @@
+bool sc_net_client_sync(sc_client *cli, dword flag, bool isserver) {
 /* sc_net_client_sync
 
    Okay, this is how this works. The sstate.c code calls this function

@@ -1,3 +1,4 @@
+void DoGrey4Name()
 {
   char *g4_name;
   char message[80];

@@ -1,3 +1,4 @@
+static inline void _sc_colormap_gradient_gtk(sc_window_gtk *w, int gradidx, double r, double g, double b, double fr, double fg, double fb) {
 
    double dr;
    double dg;

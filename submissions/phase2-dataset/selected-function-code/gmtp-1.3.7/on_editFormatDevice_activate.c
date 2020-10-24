@@ -1,3 +1,4 @@
+void on_editFormatDevice_activate(GtkMenuItem *menuitem, gpointer user_data) {
     GtkWidget *dialog;
     dialog = gtk_message_dialog_new(GTK_WINDOW(windowMain),
             GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT,

@@ -1,3 +1,4 @@
+void
 ospf_iface_info(struct ospf_iface *ifa)
 {
   char *more = "";

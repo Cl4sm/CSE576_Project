@@ -1,3 +1,4 @@
+sc_spill *sc_spill_new(const sc_config *c, const sc_land *l,
                        int size, int centerx, int centery) {
 /* sc_spill_new
    Create a new spill structure. This initialises the array that

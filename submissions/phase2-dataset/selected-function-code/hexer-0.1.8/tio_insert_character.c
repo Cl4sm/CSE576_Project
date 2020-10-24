@@ -1,3 +1,4 @@
+  int
 tio_insert_character(x)
   char x;
   /* Insert the character `x' at the current position.

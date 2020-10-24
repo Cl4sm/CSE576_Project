@@ -1,3 +1,4 @@
+void ht_remove(void *obj, htable_t *ht){
 	int hc=(ht->hashcode(obj)%ht->num_buckets);
 	ht_list_t *chain=ht->table[hc];
 	ht_list_t *oldchain=chain;

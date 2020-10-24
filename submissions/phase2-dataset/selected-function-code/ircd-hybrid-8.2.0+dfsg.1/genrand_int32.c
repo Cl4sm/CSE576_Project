@@ -1,3 +1,4 @@
+uint32_t
 genrand_int32(void)
 {
   uint32_t y;

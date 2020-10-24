@@ -1,3 +1,4 @@
+int sc_land_min_height_around(const sc_land *l, int x, int y0, int w) {
 /* sc_land_min_height_around
    Returns the MINIMUM height around an interval.  Similar to the
    above function in approach.  */

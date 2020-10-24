@@ -1,3 +1,4 @@
+void *
 sha_finish_ctx (struct sha_ctx *ctx, void *resbuf)
 {
   /* Take yet unprocessed bytes into account.  */

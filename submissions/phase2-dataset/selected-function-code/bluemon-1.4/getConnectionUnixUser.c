@@ -1,3 +1,4 @@
+uint32_t getConnectionUnixUser(const char* service, DBusConnection* conn)
 {
    DBusMessage* msg;
    DBusMessageIter args;

@@ -1,3 +1,4 @@
+FILE *
 SFopenFile(name, mode, prompt, failed)
     char *name;
     char *mode;

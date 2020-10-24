@@ -1,3 +1,4 @@
+void minmax_rgb96f(int xres, int yres, const float *fimg, 
                    float *min, float *max) {
   int i, sz;
   float minval, maxval;

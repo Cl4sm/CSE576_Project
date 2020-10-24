@@ -1,3 +1,4 @@
+void initWalls(void) {
 	float raw[4][4] = {
 		{ 0.0f, 0.0f, 1.0f,  0.0f },
 		{ 1.0f, 0.0f, 0.0f, 1.0f },

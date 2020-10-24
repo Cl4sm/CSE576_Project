@@ -1,3 +1,4 @@
+static void
 server_got_reply(char *x)
 {
   int code;

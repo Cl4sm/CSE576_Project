@@ -1,3 +1,4 @@
+static int
 snprint_mpentry (char * buff, int len, struct mpentry * mpe)
 {
 	int i;

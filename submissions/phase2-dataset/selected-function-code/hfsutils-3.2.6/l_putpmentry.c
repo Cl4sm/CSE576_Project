@@ -1,3 +1,4 @@
+int l_putpmentry(hfsvol *vol, const Partition *map, unsigned long bnum)
 {
   block b;
   byte *ptr = b;

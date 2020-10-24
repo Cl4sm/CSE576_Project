@@ -1,3 +1,4 @@
+color cam_fisheye_ray(ray * ry, flt x, flt y) {
   flt ax, ay;
   scenedef * scene=ry->scene;
 

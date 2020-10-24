@@ -1,3 +1,4 @@
+static void
 olock_run_event(void *unused UNUSED)
 {
   node *n;

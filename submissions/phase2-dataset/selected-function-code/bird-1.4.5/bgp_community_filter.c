@@ -1,3 +1,4 @@
+static int
 bgp_community_filter(struct bgp_proto *p, rte *e)
 {
   eattr *a;

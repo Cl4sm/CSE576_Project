@@ -1,3 +1,4 @@
+int pbm_first ( IFILE *f )
 {
   int err=0 ;
 

@@ -1,3 +1,4 @@
+SCM scm_logtest(x, y)
      SCM x, y;
 {
 #ifndef RECKLESS

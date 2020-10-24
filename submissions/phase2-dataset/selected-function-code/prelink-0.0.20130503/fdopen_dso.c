@@ -1,3 +1,4 @@
+DSO *
 fdopen_dso (int fd, const char *name)
 {
   Elf *elf = NULL;

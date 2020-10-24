@@ -1,3 +1,4 @@
+int rt_rwlock_readlock(rt_rwlock_t * rwp) {
   int status=0;
 
 #ifdef THR  

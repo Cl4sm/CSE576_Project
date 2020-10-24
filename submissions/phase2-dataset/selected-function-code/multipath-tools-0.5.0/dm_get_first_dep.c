@@ -1,3 +1,4 @@
+dev_t dm_get_first_dep(char *devname)
 {
 	struct dm_task *dmt;
 	struct dm_deps *dm_deps;

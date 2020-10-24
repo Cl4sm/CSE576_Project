@@ -1,3 +1,4 @@
+static void
 ospf_area_add(struct proto_ospf *po, struct ospf_area_config *ac, int reconf)
 {
   struct proto *p = &po->proto;

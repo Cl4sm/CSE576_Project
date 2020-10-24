@@ -1,3 +1,4 @@
+sc_weapon_info *sc_weapon_first(const sc_weapon_config *wc, int flags) {
 /* sc_weapon_first
    Return the first/last viable weapon in the weapon config space. */
 

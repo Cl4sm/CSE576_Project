@@ -1,3 +1,4 @@
+int hfs_rename(hfsvol *vol, const char *srcpath, const char *dstpath)
 {
   hfsvol *srcvol;
   CatDataRec src, dst;

@@ -1,3 +1,4 @@
+static void _sc_dialog_class_init(ScDialogClass *klass) {
 /* sc_dialog_class_init
    Initialise the dialog class.  */
 

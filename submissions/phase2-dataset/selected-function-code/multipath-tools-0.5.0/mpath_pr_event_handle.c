@@ -1,3 +1,4 @@
+int mpath_pr_event_handle(struct path *pp)
 {
 	pthread_t thread;
 	int rc;

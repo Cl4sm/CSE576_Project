@@ -1,3 +1,4 @@
+  int
 he_query_yn(int dfl, char *fmt, ...)
 #else
   int

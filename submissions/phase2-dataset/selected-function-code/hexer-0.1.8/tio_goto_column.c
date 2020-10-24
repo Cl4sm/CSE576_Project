@@ -1,3 +1,4 @@
+  void
 tio_goto_column(column)
   int column;
   /* Move cursor to column `column'.

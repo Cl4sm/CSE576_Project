@@ -1,3 +1,4 @@
+static size_t
 internal_function
 read_alias_file (fname, fname_len)
      const char *fname;

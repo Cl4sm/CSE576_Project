@@ -1,3 +1,4 @@
+static char
 input_check_resized(void)
 {
 	ScreenInputData* inputdata = &current_screen->inputdata;

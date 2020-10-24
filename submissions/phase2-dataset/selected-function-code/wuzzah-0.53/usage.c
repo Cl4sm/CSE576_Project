@@ -1,3 +1,4 @@
+void usage(void){
         fprintf(stderr, "\nusage:\t");
         fprintf(stderr, "%s [OPTIONS] ...\n", g_config.progname);
         fprintf(stderr, ""

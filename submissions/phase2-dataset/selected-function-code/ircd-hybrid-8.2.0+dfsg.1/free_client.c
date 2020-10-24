@@ -1,3 +1,4 @@
+static void
 free_client(struct Client *client_p)
 {
   assert(client_p);

@@ -1,3 +1,4 @@
+static void
 bgp_do_rx_update(struct bgp_conn *conn,
 		 byte *withdrawn, int withdrawn_len,
 		 byte *nlri, int nlri_len,

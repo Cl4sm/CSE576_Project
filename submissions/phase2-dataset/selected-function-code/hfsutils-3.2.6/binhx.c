@@ -1,3 +1,4 @@
+static
 int binhx(hfsfile *ifile)
 {
   hfsdirent ent;

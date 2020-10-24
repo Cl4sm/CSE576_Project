@@ -1,3 +1,4 @@
+flt shade_blinn_fast(const ray * incident, const shadedata * shadevars, flt specpower) {
   vector H;   /* Blinn's halfway vector */
   flt inten;  /* calculated intensity   */
 

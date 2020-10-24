@@ -1,3 +1,4 @@
+struct pkt *
 pk_new(len)
 	int len;	/* (max) buffer size or 0 */
 {

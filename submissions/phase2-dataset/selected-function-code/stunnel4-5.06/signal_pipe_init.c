@@ -1,3 +1,4 @@
+NOEXPORT int signal_pipe_init(void) {
 #ifdef USE_WIN32
     if(make_sockets(signal_pipe))
         return 1;

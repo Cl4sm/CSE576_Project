@@ -1,3 +1,4 @@
+static void
 bgp_neigh_notify(neighbor *n)
 {
   struct bgp_proto *p = (struct bgp_proto *) n->proto;

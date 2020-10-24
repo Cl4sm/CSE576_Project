@@ -1,3 +1,4 @@
+static void
 bgp_start_neighbor(struct bgp_proto *p)
 {
   /* Called only for single-hop BGP sessions */

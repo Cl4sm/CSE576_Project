@@ -1,3 +1,4 @@
+static void egc_copy_roots()
 {
   SCM *roots = &(scm_egc_roots[scm_egc_root_index]);
   SCM e, x;

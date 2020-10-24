@@ -1,3 +1,4 @@
+void
 dlink_move_node(dlink_node *m, dlink_list *list_del, dlink_list *list_add)
 {
   /* Assumption: If m->next == NULL, then list_del->tail == m

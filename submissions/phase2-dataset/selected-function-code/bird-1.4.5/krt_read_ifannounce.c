@@ -1,3 +1,4 @@
+static void
 krt_read_ifannounce(struct ks_msg *msg)
 {
   struct if_announcemsghdr *ifam = (struct if_announcemsghdr *)&msg->rtm;

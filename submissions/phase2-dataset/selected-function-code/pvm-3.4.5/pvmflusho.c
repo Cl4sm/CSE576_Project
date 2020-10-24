@@ -1,3 +1,4 @@
+static int
 pvmflusho()
 {
 	struct tobuf *op;

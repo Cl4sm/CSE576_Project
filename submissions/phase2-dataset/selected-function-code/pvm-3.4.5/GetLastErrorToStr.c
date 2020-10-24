@@ -1,3 +1,4 @@
+char *
 GetLastErrorToStr (error)
 int error;
 {

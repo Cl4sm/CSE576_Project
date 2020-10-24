@@ -1,3 +1,4 @@
+void scm_run_finalizers(exiting)
      int exiting;
 {
   SCM f;

@@ -1,3 +1,4 @@
+void drawGuiLogo(void) {
   float pos[] = { 512 - 10 - 320, 384 - 80 };
   float size[] = { 320, 80 };
   float glpos = 64;

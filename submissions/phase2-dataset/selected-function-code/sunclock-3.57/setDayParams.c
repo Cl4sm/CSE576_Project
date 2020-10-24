@@ -1,3 +1,4 @@
+void
 setDayParams(Context)
 struct Sundata * Context;
 {

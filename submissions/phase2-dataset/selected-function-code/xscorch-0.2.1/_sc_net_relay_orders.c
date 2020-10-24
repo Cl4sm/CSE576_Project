@@ -1,3 +1,4 @@
+static bool _sc_net_relay_orders(const sc_config *c, sc_server *srv, const sc_packet *incoming, int connid) {
 /* _sc_net_relay_orders
    Push orders from one player to all the other players. */
 

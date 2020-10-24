@@ -1,3 +1,4 @@
+static void parse_ftrace(void)
 {
 	FILE *file;
 	char line[PATH_MAX];

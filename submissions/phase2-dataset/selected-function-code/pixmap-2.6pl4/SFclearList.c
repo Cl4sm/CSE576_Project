@@ -1,3 +1,4 @@
+SFclearList(n, doScroll)
 	int	n;
 	int	doScroll;
 {

@@ -1,3 +1,4 @@
+int
 sm_sthostack(mp)
 	struct pmsg *mp;
 {

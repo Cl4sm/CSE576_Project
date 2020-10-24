@@ -1,3 +1,4 @@
+static int
 s390x_undo_prelink_rela (DSO *dso, GElf_Rela *rela, GElf_Addr relaaddr)
 {
   int sec;

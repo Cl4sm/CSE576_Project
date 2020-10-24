@@ -1,3 +1,4 @@
+int
 as_path_convert_to_new(struct adata *path, byte *dst, int req_as)
 {
   byte *src = path->data;

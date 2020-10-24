@@ -1,3 +1,4 @@
+int diff_mid_split(n, rr, cc, cost)
      int n;
      int *rr;
      int *cc;

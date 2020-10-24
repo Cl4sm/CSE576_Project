@@ -1,3 +1,4 @@
+static inline char *__escapeCGI(char *s) {
 /* internal-Escape-CGIstring
    This function will escape characters in a string to their
    safe CGI representation.  Note that the target string must

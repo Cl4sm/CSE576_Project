@@ -1,3 +1,4 @@
+struct Client *
 hash_find_client(const char *name)
 {
   unsigned int hashv = strhash(name);

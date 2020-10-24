@@ -1,3 +1,4 @@
+SCM l_pwinfo(user)
      SCM user;
 {
   SCM ans = make_vector(MAKINUM(7), UNSPECIFIED);

@@ -1,3 +1,4 @@
+static int
 update_paths (struct multipath * mpp)
 {
 	int i, j;

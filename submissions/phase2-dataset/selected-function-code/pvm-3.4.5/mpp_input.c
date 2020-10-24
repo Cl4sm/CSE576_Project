@@ -1,3 +1,4 @@
+int
 mpp_input()
 {
 	static int cbuf = 0;

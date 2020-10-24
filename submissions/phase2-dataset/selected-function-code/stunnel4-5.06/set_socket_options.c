@@ -1,3 +1,4 @@
+int set_socket_options(int s, int type) {
     SOCK_OPT *ptr;
     extern SOCK_OPT sock_opts[];
     static char *type_str[3]={"accept", "local", "remote"};

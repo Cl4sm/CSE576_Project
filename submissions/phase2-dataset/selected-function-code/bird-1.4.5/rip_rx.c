@@ -1,3 +1,4 @@
+static int
 rip_rx(sock *s, int size)
 {
   struct rip_interface *i = s->data;

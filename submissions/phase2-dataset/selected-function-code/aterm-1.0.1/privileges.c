@@ -1,3 +1,4 @@
+void
 privileges(int mode)
 {
 #ifdef HAVE_SETEUID

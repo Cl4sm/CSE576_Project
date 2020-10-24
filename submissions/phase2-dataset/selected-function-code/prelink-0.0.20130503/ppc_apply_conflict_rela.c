@@ -1,3 +1,4 @@
+static int
 ppc_apply_conflict_rela (struct prelink_info *info, GElf_Rela *rela,
 			 char *buf, GElf_Addr dest_addr)
 {

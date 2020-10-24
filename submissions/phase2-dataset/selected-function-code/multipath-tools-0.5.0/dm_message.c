@@ -1,3 +1,4 @@
+int
 dm_message(char * mapname, char * message)
 {
 	int r = 1;

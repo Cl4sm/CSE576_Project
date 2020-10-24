@@ -1,3 +1,4 @@
+int
 construct_transportid(const char * lcp, struct transportid transid[], int num_transportids)
 {
 	int k = 0;

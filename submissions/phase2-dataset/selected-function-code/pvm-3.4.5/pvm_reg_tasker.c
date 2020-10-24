@@ -1,3 +1,4 @@
+int
 pvm_reg_tasker()
 {
 	static int imit = 0;		/* i'm the tasker */

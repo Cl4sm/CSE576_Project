@@ -1,3 +1,4 @@
+int cpi_macb(const char *srcname, hfsvol *vol, const char *dstname)
 {
   int ifile, result = 0;
   hfsfile *ofile;

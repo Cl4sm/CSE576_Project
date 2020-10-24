@@ -1,3 +1,4 @@
+bool sc_inventory_can_buy_accessory(const sc_player *p, const sc_accessory_info *info, int budget) {
 /* sc_inventory_can_buy_accessory
    Determine if this player can buy the specified accessory.  Returns true
    if the purchase can be made.  Budget is the amount of money allocated for

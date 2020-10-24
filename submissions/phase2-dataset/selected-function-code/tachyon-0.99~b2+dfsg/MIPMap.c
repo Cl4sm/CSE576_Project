@@ -1,3 +1,4 @@
+color MIPMap(const mipmap * mip, flt u, flt v, flt d) {
   int mapindex;
   flt mapflt;
   color col, col1, col2;

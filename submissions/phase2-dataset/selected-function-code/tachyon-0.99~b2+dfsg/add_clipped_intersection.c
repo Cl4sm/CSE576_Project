@@ -1,3 +1,4 @@
+void add_clipped_intersection(flt t, const object * obj, ray * ry) {
   if (t > EPSILON) {
     /* if we hit something before maxdist update maxdist */
     if (t < ry->maxdist) {

@@ -1,3 +1,4 @@
+void
 motd_signon(struct Client *source_p)
 {
   const struct MotdCache *cache = motd_cache(motd_lookup(source_p));

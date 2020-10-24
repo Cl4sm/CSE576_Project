@@ -1,3 +1,4 @@
+void scm_brk_report()
 {
   unsigned long scm_curbrk = (unsigned long)sbrk(0),
     dif1 = ((dumped ? scm_dumped_brk : scm_curbrk) - scm_init_brk)/1024,

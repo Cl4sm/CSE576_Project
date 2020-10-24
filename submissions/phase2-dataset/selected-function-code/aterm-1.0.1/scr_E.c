@@ -1,3 +1,4 @@
+void
 scr_E(void)
 {
     int             i, j;

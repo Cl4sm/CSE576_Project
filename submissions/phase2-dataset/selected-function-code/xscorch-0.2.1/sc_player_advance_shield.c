@@ -1,3 +1,4 @@
+void sc_player_advance_shield(const sc_config *c, sc_player *p, int flags) {
 /* sc_player_advance_shield
    Jump to the next available shield.  */
 

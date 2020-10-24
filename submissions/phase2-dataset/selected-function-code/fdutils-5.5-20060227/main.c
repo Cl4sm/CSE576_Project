@@ -1,3 +1,4 @@
+int main(int argc, char **argv)
 {
     int pid;
     int i,e,c,is_default,optidx=0;

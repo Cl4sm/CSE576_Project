@@ -1,3 +1,4 @@
+color ext_volume_texture(const vector * hit, const texture * tx, ray * ry) {
   color col, col2;
   box * bx;
   extvol * xvol;

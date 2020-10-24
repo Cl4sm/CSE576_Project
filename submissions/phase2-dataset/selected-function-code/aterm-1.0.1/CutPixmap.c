@@ -1,3 +1,4 @@
+static Pixmap
 CutPixmap ( Pixmap src, Pixmap trg,
             int x, int y,
 	    unsigned int src_w, unsigned int src_h,

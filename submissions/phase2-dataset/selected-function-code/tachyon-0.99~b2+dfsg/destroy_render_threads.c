@@ -1,3 +1,4 @@
+void destroy_render_threads(scenedef * scene) {
   thr_parms * parms = (thr_parms *) scene->threadparms;
   rt_thread_t * threads = (rt_thread_t *) scene->threads;
   int thr;

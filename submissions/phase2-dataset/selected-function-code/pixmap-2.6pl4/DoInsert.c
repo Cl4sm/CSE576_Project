@@ -1,3 +1,4 @@
+void DoInsert()
 {
   PWGetFilepath(pixmap_widget, &filename);
  RetryInsert:

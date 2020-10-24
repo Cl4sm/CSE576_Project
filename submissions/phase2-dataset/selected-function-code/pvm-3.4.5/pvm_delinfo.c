@@ -1,3 +1,4 @@
+int
 pvm_delinfo(name, index, flags)
 	char *name;		/* class name */
 	int index;		/* class index or -1 for all */

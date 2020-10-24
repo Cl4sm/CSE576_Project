@@ -1,3 +1,4 @@
+static int
 adjust_location_list (DSO *dso, struct cu_data *cu, unsigned char *ptr,
 		      size_t len, GElf_Addr start, GElf_Addr adjust)
 {

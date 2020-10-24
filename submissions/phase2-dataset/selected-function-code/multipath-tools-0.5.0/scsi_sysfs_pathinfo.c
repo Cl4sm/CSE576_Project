@@ -1,3 +1,4 @@
+static int
 scsi_sysfs_pathinfo (struct path * pp)
 {
 	struct udev_device *parent;

@@ -1,3 +1,4 @@
+int
 peer_detach(pp)
 	struct peer *pp;
 {

@@ -1,3 +1,4 @@
+bool tn_instantiate(tn_connection **tnc, int socket) {
 /*
  * tn_initiate
  * Create a new connection struct.

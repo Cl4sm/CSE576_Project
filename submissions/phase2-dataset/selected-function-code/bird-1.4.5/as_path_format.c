@@ -1,3 +1,4 @@
+void
 as_path_format(struct adata *path, byte *buf, unsigned int size)
 {
   byte *p = path->data;

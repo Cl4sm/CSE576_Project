@@ -1,3 +1,4 @@
+void PWFloodFill(Widget w, Position x, Position y, int value)
 #else
 void PWFloodFill(w, x, y, value)
      Widget w;

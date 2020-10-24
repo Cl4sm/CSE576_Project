@@ -1,3 +1,4 @@
+void
 parse_server_info(name, port, password, nick, group, extra, type)
 	u_char	**name,
 		**port,

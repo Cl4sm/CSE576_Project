@@ -1,3 +1,4 @@
+void *
 pvmcompileregex( pattern )
 char *pattern;
 {

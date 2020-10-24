@@ -1,3 +1,4 @@
+void
 menubar_clear(void)
 {
 #ifdef MENUBAR

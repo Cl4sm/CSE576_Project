@@ -1,3 +1,4 @@
+void
 scr_rendition(int set, int style)
 {
     unsigned int    color;

@@ -1,3 +1,4 @@
+int
 snprint_keyword(char *buff, int len, char *fmt, struct keyword *kw, void *data)
 {
 	int r;

@@ -1,3 +1,4 @@
+int sc_weapon_count(const sc_weapon_config *wc, int flags) {
 /* sc_weapon_count
    Counts the number of weapons that have been registered with the game's data registry.
    This is optimized but of course if you're calling it a lot you should cache the data.

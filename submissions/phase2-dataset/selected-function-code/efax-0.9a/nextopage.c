@@ -1,3 +1,4 @@
+int nextopage ( OFILE *f, int page )
 {
   int err = 0 ;
   int i, nb=0 ;

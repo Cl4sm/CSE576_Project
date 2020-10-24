@@ -1,3 +1,4 @@
+static	void
 who(command, args, subargs)
 	u_char	*command,
 		*args,

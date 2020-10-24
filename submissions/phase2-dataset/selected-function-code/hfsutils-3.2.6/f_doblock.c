@@ -1,3 +1,4 @@
+int f_doblock(hfsfile *file, unsigned long num, block *bp,
 	      int (*func)(hfsvol *, unsigned int, unsigned int, block *))
 {
   unsigned int abnum;

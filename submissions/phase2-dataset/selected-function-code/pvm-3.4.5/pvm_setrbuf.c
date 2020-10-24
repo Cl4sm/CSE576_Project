@@ -1,3 +1,4 @@
+int
 pvm_setrbuf(mid)
 	int mid;
 {

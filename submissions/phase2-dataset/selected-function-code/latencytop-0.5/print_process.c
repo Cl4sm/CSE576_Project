@@ -1,3 +1,4 @@
+static void print_process(unsigned int pid)
 {
 	struct process *proc;
 	GList *item;

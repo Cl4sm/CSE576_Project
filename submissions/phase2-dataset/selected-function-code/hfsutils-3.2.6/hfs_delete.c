@@ -1,3 +1,4 @@
+int hfs_delete(hfsvol *vol, const char *path)
 {
   hfsfile file;
   CatKeyRec key;

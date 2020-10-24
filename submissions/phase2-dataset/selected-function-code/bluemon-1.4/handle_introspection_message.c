@@ -1,3 +1,4 @@
+void handle_introspection_message(DBusMessage* msg)
 {
    DBusMessage* reply;
    DBusMessageIter it;

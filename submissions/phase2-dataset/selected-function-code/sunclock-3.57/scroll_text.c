@@ -1,3 +1,4 @@
+void scroll_text()
 {
 	int m, rep;
 

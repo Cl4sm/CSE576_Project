@@ -1,3 +1,4 @@
+static int
 bgp_fire_tx(struct bgp_conn *conn)
 {
   struct bgp_proto *p = conn->bgp;

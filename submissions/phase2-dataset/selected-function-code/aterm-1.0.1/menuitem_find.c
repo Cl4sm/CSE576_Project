@@ -1,3 +1,4 @@
+menuitem_t     *
 menuitem_find(menu_t * menu, char *name)
 {
 #ifdef MENUBAR

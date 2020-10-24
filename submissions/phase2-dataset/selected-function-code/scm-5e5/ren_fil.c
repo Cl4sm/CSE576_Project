@@ -1,3 +1,4 @@
+SCM ren_fil(oldname, newname)
      SCM oldname, newname;
 {
   SCM ans;

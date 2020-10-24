@@ -1,3 +1,4 @@
+int b_readpb(hfsvol *vol, unsigned long bnum, block *bp, unsigned int blen)
 {
   unsigned long nblocks;
 

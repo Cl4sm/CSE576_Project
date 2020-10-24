@@ -1,3 +1,4 @@
+size_t read_all(int fd, void *buf, size_t len)
 {
 	size_t total = 0;
 	ssize_t n;

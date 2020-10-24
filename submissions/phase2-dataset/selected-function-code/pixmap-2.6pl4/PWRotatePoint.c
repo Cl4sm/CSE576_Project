@@ -1,3 +1,4 @@
+void PWRotatePoint( w, x, y, direction )
     Widget                      w;
     Position                    *x;
     Position                    *y;

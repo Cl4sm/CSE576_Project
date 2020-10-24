@@ -1,3 +1,4 @@
+int initWindow(void) {
   int win_id;
   int flags;
   unsigned char fullscreen = 0;

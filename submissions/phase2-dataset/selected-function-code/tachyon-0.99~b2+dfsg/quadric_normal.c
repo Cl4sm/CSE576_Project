@@ -1,3 +1,4 @@
+void quadric_normal(const quadric * q, const vector * pnt, const ray * incident, vector * N) {
   flt invlen;
 
   N->x = (q->mat.a*(pnt->x - q->ctr.x) + 

@@ -1,3 +1,4 @@
+static gboolean _sc_window_auto_def_key_gtk(__libj_unused GtkWidget *widget,
                                             __libj_unused ScActiveConsoleSpot *spot,
                                             GdkEventKey *key, sc_auto_def_gtk *adg) {
 /* _sc_window_auto_def_key_gtk

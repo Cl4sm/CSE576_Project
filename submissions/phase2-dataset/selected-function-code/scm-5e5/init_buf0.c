@@ -1,3 +1,4 @@
+int init_buf0(inport)
      FILE *inport;
 {
   if (isatty(fileno(inport))) {

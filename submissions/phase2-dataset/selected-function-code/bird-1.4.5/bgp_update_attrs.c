@@ -1,3 +1,4 @@
+static int
 bgp_update_attrs(struct bgp_proto *p, rte *e, ea_list **attrs, struct linpool *pool, int rr)
 {
   eattr *a;

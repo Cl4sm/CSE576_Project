@@ -1,3 +1,4 @@
+void readargs(int argc, char** argv, arg_t* args)
 {
    args->config = NULL;
    args->btdevroot = NULL;

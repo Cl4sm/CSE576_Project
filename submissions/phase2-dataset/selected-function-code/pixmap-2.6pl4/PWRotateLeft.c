@@ -1,3 +1,4 @@
+void PWRotateLeft(Widget w)
 #else
 void PWRotateLeft(w)
      Widget w;

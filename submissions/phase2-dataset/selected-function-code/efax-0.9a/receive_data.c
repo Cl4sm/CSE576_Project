@@ -1,3 +1,4 @@
+int receive_data ( TFILE *mf, OFILE *f, cap session, int *nerr )
 {
   int err=0, line, lines, nr, len ;
   int pwidth = pagewidth [ session [ WD ] ] ;

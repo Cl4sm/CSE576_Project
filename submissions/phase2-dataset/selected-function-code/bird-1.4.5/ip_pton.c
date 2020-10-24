@@ -1,3 +1,4 @@
+int
 ip_pton(char *a, ip_addr *o)
 {
   u16 words[8];

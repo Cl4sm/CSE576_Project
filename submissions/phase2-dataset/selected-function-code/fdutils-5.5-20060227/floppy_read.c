@@ -1,3 +1,4 @@
+int floppy_read(struct params *fd, void *data, int cylinder, 
 				int head, int sectors)
 {
 	int n,m;

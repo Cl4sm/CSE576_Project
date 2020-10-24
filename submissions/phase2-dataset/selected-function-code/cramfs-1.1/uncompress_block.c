@@ -1,3 +1,4 @@
+static int uncompress_block(void *src, int len)
 {
 	int err;
 

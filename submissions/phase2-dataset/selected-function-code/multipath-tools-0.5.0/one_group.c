@@ -1,3 +1,4 @@
+extern int
 one_group (struct multipath * mp)	/* aka multibus */
 {
 	struct pathgroup * pgp;

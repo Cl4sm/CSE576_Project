@@ -1,3 +1,4 @@
+void
 sendto_channel_butone(struct Client *one, struct Client *from,
                       struct Channel *chptr, unsigned int type,
                       const char *pattern, ...)

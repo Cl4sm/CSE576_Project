@@ -1,3 +1,4 @@
+int getformat ( uchar *p, int n )
 {
   int format = 0 ;
 

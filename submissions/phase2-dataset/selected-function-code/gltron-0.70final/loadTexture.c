@@ -1,3 +1,4 @@
+void loadTexture(const char *filename, int format) {
   texture *tex;
   GLint internal;
 	int maxSize;

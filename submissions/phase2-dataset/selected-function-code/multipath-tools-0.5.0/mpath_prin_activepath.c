@@ -1,3 +1,4 @@
+int 
 mpath_prin_activepath (struct multipath *mpp, int rq_servact,
 	struct prin_resp * resp, int noisy)
 {

@@ -1,3 +1,4 @@
+static reg_errcode_t
 regex_compile (pattern, size, syntax, bufp)
      const char *pattern;
      int size;

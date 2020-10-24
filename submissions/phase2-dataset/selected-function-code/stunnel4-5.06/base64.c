@@ -1,3 +1,4 @@
+NOEXPORT char *base64(int encode, char *in, int len) {
     BIO *bio, *b64;
     char *out;
     int n;

@@ -1,3 +1,4 @@
+void
 krt_got_route(struct krt_proto *p, rte *e)
 {
   rte *old;

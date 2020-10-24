@@ -1,3 +1,4 @@
+FontTex *ftxLoadFont(const char *filename) {
   char *path;
   file_handle file;
   char buf[100];

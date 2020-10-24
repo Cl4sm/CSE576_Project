@@ -1,3 +1,4 @@
+gchar* displayFolderNewDialog(void) {
     GtkWidget *dialog, *hbox, *label, *textbox;
     gchar* textfield;
 

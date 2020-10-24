@@ -1,3 +1,4 @@
+int
 needMore(argc, argv)
 int *                  argc;
 char **                argv;

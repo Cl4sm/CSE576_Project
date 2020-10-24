@@ -1,3 +1,4 @@
+void PWUseColorInTable(Widget w, Pixel pixel, char *symbol, char *sname, 
 		       char *mname, char *g4name, char *gname, char *cname)
 #else
 void PWUseColorInTable(w, pixel, symbol, sname, mname, g4name, gname, cname)

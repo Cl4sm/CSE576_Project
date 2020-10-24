@@ -1,3 +1,4 @@
+unsigned
 calc_unival_length(const u_char* str)
 {
 	/* Returns the number of bytes taken by

@@ -1,3 +1,4 @@
+struct nmdcls *
 nc_new(name)
 	char *name;
 {

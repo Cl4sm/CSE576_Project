@@ -1,3 +1,4 @@
+static void _sc_spill_fill(const sc_config *c, const sc_land *l,
                            sc_spill *sp, int curx, int cury, bool allowup) {
 /* sc_spill_fill
    Attempt to fill in a region of a spill.  This tries all directions from

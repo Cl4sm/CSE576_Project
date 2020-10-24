@@ -1,3 +1,4 @@
+char *unitocharc(char *d, const wchar *s, unsigned int maxlen) {
 /* Unicode-to-Character-Countbuffer
    Converts a source unicode string into a character string by stripping
    off the high bits of the source string. The target buffer should be

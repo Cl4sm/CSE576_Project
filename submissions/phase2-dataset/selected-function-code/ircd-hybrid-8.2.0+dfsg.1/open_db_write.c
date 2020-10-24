@@ -1,3 +1,4 @@
+static struct dbFILE *
 open_db_write(const char *filename, uint32_t version)
 {
   struct dbFILE *f = MyCalloc(sizeof(*f));

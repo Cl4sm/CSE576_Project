@@ -1,3 +1,4 @@
+int humount_main(int argc, char *argv[])
 {
   int vnum;
   mountent *ent;

@@ -1,3 +1,4 @@
+int engrid_scene(scenedef * scene, int boundthresh) {
   grid * g;
   int numobj, numcbrt;
   vector gmin={0,0,0};

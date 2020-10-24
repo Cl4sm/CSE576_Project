@@ -1,3 +1,4 @@
+static void _sc_active_console_destroy(GtkObject *obj) {
 /* sc_active_console_destroy
    Destroys the active console passed in.  */
 

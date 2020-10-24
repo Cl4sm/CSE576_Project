@@ -1,3 +1,4 @@
+static	void
 show_stack()
 {
 	WindowStack *last = (WindowStack *) 0,

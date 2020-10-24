@@ -1,3 +1,4 @@
+char **
 colonsep(s)
 	char *s;	/* the string to break up */
 {

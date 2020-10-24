@@ -1,3 +1,4 @@
+msgmid_t
 post_send(buffer, len, distruct, llmsg)
 char *buffer;
 int len;

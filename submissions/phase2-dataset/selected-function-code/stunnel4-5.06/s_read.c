@@ -1,3 +1,4 @@
+void s_read(CLI *c, int fd, void *ptr, int len) {
         /* simulate a blocking read */
     int num;
 

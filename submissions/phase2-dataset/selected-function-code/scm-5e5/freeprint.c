@@ -1,3 +1,4 @@
+static int freeprint(exp, port, writing)
      SCM exp; SCM port; int writing;
 {
   if (tc_broken_heart==CAR(exp)) {

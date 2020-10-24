@@ -1,3 +1,4 @@
+extern	void
 remove_from_server_list(i)
 	int	i;
 {

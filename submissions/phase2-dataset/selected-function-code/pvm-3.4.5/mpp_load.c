@@ -1,3 +1,4 @@
+int
 mpp_load( wxp )
 struct waitc_spawn *wxp;
 {

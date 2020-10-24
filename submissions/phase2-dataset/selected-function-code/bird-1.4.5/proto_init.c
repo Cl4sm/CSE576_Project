@@ -1,3 +1,4 @@
+static struct proto *
 proto_init(struct proto_config *c)
 {
   struct protocol *p = c->protocol;

@@ -1,3 +1,4 @@
+SCM m_cond(xorig, env, ctxt)
      SCM xorig, env, ctxt;
 {
   SCM s, clause, cdrx = scm_cp_list(CDR(xorig), 1), x = cdrx;

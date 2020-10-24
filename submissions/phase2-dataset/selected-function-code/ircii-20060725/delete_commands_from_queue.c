@@ -1,3 +1,4 @@
+static	int
 delete_commands_from_queue(queue, which)
 	Queue	*queue;
 	int	which;

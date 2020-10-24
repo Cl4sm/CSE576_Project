@@ -1,3 +1,4 @@
+static void
 server_read(void)
 {
   int c;

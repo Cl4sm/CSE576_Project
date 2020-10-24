@@ -1,3 +1,4 @@
+static void PopupTextOptions(button, text_options)
     Widget      button;
     TextOptions *text_options;
 {

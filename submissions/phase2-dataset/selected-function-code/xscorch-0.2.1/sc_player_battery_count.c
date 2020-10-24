@@ -1,3 +1,4 @@
+int sc_player_battery_count(const sc_config *c, const sc_player *p) {
 /* sc_player_battery_count
    Determine the number of batteries in the player's inventory.  */
 

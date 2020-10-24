@@ -1,3 +1,4 @@
+static
 unsigned opt_max_width (const mpegd_option_t *opt)
 {
 	unsigned i, n, w;

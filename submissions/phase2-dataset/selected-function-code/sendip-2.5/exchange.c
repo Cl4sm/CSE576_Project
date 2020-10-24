@@ -1,3 +1,4 @@
+static void
 exchange (argv)
      char **argv;
 {

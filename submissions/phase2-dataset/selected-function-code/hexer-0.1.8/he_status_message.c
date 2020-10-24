@@ -1,3 +1,4 @@
+  void
 he_status_message(verbose)
   int verbose;
   /* display name and size of the current buffer.  if `verbose' is set,

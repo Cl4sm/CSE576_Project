@@ -1,3 +1,4 @@
+static void
 prelink_entry_dumpfn (FILE *f, const void *ptr)
 {
   struct prelink_entry *e = (struct prelink_entry *) ptr;

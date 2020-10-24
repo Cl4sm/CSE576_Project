@@ -1,3 +1,4 @@
+static reg_var *_reg_load_block(reg *r, const char *name, const char *klass) {
 
    bool exit;
    int startline;

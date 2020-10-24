@@ -1,3 +1,4 @@
+void MD5Transform(u32 buf[4], u32 const in[16])
 {
     register u32 a, b, c, d;
 

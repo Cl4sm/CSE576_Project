@@ -1,3 +1,4 @@
+void
 GetBoardSizeFromGameSize(int xsize, int ysize, int &width, int &height)
 {
     if (globRes.fitPixmap) {

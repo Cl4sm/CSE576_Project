@@ -1,3 +1,4 @@
+static void
 enable_group(struct path * pp)
 {
 	struct pathgroup * pgp;

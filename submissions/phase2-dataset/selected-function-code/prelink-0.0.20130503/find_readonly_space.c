@@ -1,3 +1,4 @@
+int
 find_readonly_space (DSO *dso, GElf_Shdr *add, GElf_Ehdr *ehdr,
 		     GElf_Phdr *phdr, GElf_Shdr *shdr,
 		     struct readonly_adjust *adjust)

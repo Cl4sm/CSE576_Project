@@ -1,3 +1,4 @@
+void loadArt(void) {
   char *path;
   char *artpack;
 

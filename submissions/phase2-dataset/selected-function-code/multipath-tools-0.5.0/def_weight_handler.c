@@ -1,3 +1,4 @@
+static int
 def_weight_handler(vector strvec)
 {
 	char * buff;

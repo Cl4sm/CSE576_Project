@@ -1,3 +1,4 @@
+int createtgafile(char *name, unsigned short width, unsigned short height) {
   int filesize;
   FILE * ofp;
 

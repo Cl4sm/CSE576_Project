@@ -1,3 +1,4 @@
+YY_BUFFER_STATE yy_create_buffer( FILE *file, int size )
 #else
 YY_BUFFER_STATE yy_create_buffer( file, size )
 FILE *file;

@@ -1,3 +1,4 @@
+static void
 proto_want_core_up(struct proto *p)
 {
   ASSERT(p->core_state == FS_HUNGRY);

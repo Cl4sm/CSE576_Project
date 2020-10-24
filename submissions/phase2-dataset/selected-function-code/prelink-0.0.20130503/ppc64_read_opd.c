@@ -1,3 +1,4 @@
+static int
 ppc64_read_opd (DSO *dso, struct prelink_entry *ent)
 {
   int opd;

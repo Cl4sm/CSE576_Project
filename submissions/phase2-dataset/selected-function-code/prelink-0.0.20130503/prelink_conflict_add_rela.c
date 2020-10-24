@@ -1,3 +1,4 @@
+GElf_Rela *
 prelink_conflict_add_rela (struct prelink_info *info)
 {
   GElf_Rela *ret;

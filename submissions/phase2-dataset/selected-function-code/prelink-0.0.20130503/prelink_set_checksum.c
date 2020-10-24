@@ -1,3 +1,4 @@
+int
 prelink_set_checksum (DSO *dso)
 {
   extern uint32_t crc32 (uint32_t crc, unsigned char *buf, size_t len);

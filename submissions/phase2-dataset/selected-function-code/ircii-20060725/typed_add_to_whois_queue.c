@@ -1,3 +1,4 @@
+static void
 typed_add_to_whois_queue(int type, u_char *nick, void (*func)(WhoisStuff *, u_char *, u_char *), char *format, va_list vlist)
 {
 	u_char	lbuf[BIG_BUFFER_SIZE];

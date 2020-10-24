@@ -1,3 +1,4 @@
+int
 iflist(alp, np)
 	struct in_addr **alp;	/* return list of addresses */
 	int *np;				/* return len of alp */

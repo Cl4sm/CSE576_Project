@@ -1,3 +1,4 @@
+static	Queue	*
 do_queue(queue, noflush)
 	Queue	*queue;
 	int	noflush;

@@ -1,3 +1,4 @@
+void
 check_process_limits()
 {
 	int	limit;

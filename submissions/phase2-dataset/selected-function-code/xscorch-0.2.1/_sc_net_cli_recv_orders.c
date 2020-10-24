@@ -1,3 +1,4 @@
+static bool _sc_net_cli_recv_orders(sc_config *c, sc_packet *packet) {
 /* _sc_net_cli_recv_orders
    Receiving orders from another player in the game. We are given our
    client data structure, and their packet (as relayed from the server).

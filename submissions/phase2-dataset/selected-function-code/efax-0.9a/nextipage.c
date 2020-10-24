@@ -1,3 +1,4 @@
+int nextipage ( IFILE *f, int dp )
 {
   int err=0 ;
 

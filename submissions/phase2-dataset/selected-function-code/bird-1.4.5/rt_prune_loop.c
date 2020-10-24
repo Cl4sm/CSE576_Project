@@ -1,3 +1,4 @@
+int
 rt_prune_loop(void)
 {
   static int step = 0;

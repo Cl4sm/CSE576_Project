@@ -1,3 +1,4 @@
+GSList *filesSearch(gchar *searchstring, gboolean searchfiles, gboolean searchmeta) {
     GSList *list = NULL;
     GPatternSpec *pspec = g_pattern_spec_new(searchstring);
     LIBMTP_file_t *files = deviceFiles;

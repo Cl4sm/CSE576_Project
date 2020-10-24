@@ -1,3 +1,4 @@
+static	void
 dcc_getfile(args)
 	u_char	*args;
 {

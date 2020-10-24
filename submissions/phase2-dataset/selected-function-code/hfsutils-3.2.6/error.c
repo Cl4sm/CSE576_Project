@@ -1,3 +1,4 @@
+static
 int error(Tcl_Interp *interp, const char *msg)
 {
   const char *str;

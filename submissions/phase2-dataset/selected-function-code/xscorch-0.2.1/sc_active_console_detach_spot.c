@@ -1,3 +1,4 @@
+gboolean sc_active_console_detach_spot(ScActiveConsole *cons) {
 
    ScActiveConsoleSpot *spot;
    GList *cur;

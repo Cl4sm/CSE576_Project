@@ -1,3 +1,4 @@
+int readruns ( IFILE *f, short *runs, int *pels )
 {
   int err=0, c=EOF, n ;
   register int x ;

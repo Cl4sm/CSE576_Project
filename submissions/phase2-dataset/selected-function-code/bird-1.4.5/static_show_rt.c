@@ -1,3 +1,4 @@
+static void
 static_show_rt(struct static_route *r)
 {
   byte via[STD_ADDRESS_P_LENGTH + 16];

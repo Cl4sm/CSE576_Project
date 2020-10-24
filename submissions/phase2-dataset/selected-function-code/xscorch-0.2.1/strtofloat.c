@@ -1,3 +1,4 @@
+double strtofloat(const char *s, int *succ) {
 /* String-To-Float
    Converts string <s> to a double value, if possible. If succ
    is not null, then the return value in <*succ> will be zero

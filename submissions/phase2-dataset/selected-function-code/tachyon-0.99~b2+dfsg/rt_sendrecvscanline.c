@@ -1,3 +1,4 @@
+void rt_sendrecvscanline(void * voidhandle) {
 #ifdef MPI
   pardata * p = (pardata *) voidhandle;
 

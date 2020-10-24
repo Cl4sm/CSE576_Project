@@ -1,3 +1,4 @@
+sizea getargp(char **d, char *s, sizea argnum, char sep) {
 /* Get-Argument-Pointer
    returns a pointer to the argnum'th argument in '|'-delimited cmd
    string (or you can optionally specify your own separator to use).

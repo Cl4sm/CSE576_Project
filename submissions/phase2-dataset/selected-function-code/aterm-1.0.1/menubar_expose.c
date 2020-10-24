@@ -1,3 +1,4 @@
+void
 menubar_expose(void)
 {
 #ifdef MENUBAR

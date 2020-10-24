@@ -1,3 +1,4 @@
+void init_storage(stack_start_ptr, init_heap_size)
      STACKITEM *stack_start_ptr;
      long init_heap_size;
 {

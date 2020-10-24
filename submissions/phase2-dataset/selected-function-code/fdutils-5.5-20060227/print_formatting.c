@@ -1,3 +1,4 @@
+void print_formatting(int cylinder, int head)
 {
 	switch(verbosity) {
 		case 0:

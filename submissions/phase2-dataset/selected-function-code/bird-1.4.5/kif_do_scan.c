@@ -1,3 +1,4 @@
+void
 kif_do_scan(struct kif_proto *p UNUSED)
 {
   struct nlmsghdr *h;

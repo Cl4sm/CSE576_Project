@@ -1,3 +1,4 @@
+static inline sc_trajectory_result _sc_traj_pass_wall_none(const sc_config *c,
                                                            const sc_trajectory *tr) {
 /* sc_traj_pass_wall_none
    Boundary case for no walls.  */

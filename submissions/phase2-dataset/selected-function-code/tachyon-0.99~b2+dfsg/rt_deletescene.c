@@ -1,3 +1,4 @@
+void rt_deletescene(SceneHandle voidscene) {
   scenedef * scene = (scenedef *) voidscene;
   list * cur, * next;
 

@@ -1,3 +1,4 @@
+void
 add_blacklist_ext (const char *ext)
 {
   blacklist_ext = realloc (blacklist_ext,

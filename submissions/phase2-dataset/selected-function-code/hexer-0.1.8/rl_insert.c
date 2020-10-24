@@ -1,3 +1,4 @@
+  static int
 rl_insert(int x)
 {
   int i;

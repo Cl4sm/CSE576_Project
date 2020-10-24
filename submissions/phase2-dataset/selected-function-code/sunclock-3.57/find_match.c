@@ -1,3 +1,4 @@
+void find_match()
 {
 	char *s = cur_pos;
 	int dire, cnt;

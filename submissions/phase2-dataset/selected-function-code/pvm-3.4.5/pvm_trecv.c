@@ -1,3 +1,4 @@
+int
 pvm_trecv(tid, tag, tmout)
 	int tid;				/* source tid to match */
 	int tag;				/* message tag to match */

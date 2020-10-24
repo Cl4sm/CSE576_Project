@@ -1,3 +1,4 @@
+static void calc_placement(struct params *fd, int gap)
 {
 	int cur_sector, i, max_offset;
 	int track_end=0;

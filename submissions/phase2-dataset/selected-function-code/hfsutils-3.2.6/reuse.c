@@ -1,3 +1,4 @@
+static
 int reuse(bcache *cache, bucket *b, unsigned long bnum)
 {
   bucket *chain[HFS_BLOCKBUFSZ], *bptr;

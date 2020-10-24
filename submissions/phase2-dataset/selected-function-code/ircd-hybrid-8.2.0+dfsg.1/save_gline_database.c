@@ -1,3 +1,4 @@
+void
 save_gline_database(void)
 {
   uint32_t i = 0;

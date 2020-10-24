@@ -1,3 +1,4 @@
+void
 comm_connect_tcp(fde_t *fd, const char *host, unsigned short port, struct sockaddr *clocal,
                  int socklen, void (*callback)(fde_t *, int, void *), void *data,
                  int aftype, int timeout)

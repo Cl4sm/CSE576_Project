@@ -1,3 +1,4 @@
+static int
 set_fdlimit(void)
 {
   int fdmax;

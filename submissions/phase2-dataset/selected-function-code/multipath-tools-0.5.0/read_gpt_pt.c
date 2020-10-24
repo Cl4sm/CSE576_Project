@@ -1,3 +1,4 @@
+int
 read_gpt_pt (int fd, struct slice all, struct slice *sp, int ns)
 {
 	gpt_header *gpt = NULL;

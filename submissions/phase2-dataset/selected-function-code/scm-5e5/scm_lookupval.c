@@ -1,3 +1,4 @@
+static SCM scm_lookupval(vloc, memo)
      SCM vloc;
      int memo;
 {

@@ -1,3 +1,4 @@
+static int
 pvmclaimo(mid)
 	int mid;
 {

@@ -1,3 +1,4 @@
+void
 task_free(tp)
 	struct task *tp;
 {

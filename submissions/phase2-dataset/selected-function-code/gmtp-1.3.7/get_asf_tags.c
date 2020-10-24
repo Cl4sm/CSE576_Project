@@ -1,3 +1,4 @@
+void get_asf_tags(gchar *filename, LIBMTP_track_t *trackinformation) {
     FILE *ASF_File;
     GUID Header_GUID;
     GUID Stream_GUID;

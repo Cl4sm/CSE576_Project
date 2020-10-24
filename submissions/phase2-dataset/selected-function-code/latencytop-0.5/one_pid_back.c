@@ -1,3 +1,4 @@
+static int one_pid_back(unsigned int cursor_pid, char filter)
 {
 	GList *entry, *start = NULL;
 	struct process *proc;

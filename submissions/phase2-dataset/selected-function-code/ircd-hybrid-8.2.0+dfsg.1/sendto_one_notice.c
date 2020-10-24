@@ -1,3 +1,4 @@
+void
 sendto_one_notice(struct Client *to, struct Client *from, const char *pattern, ...)
 {
   struct dbuf_block *buffer = NULL;

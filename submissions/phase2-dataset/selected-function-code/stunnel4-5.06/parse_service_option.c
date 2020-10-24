@@ -1,3 +1,4 @@
+NOEXPORT char *parse_service_option(CMD cmd, SERVICE_OPTIONS *section,
         char *opt, char *arg) {
     char *tmpstr;
     int tmpnum, endpoints=0;

@@ -1,3 +1,4 @@
+void
 whois_server(from, ArgList)
 	u_char	*from;
 	u_char	**ArgList;

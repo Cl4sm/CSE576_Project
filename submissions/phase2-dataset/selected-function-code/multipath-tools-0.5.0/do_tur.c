@@ -1,3 +1,4 @@
+static int
 do_tur (int fd, unsigned int timeout)
 {
 	unsigned char turCmdBlk[TUR_CMD_LEN] = { 0x00, 0, 0, 0, 0, 0 };

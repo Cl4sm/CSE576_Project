@@ -1,3 +1,4 @@
+color cam_dof_ray(ray * ry, flt x, flt y) {
   flt rdx, rdy, rdz, len;
   scenedef * scene=ry->scene;
 

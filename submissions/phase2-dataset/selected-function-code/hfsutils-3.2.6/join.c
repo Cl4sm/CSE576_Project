@@ -1,3 +1,4 @@
+static
 int join(node *left, node *right, byte *record, int *flag)
 {
   int i, offset;

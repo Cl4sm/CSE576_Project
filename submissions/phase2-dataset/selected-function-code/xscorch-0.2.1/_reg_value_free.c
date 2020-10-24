@@ -1,3 +1,4 @@
+static void _reg_value_free(reg_type type, reg_value *value) {
 /* reg_value_free */
 
    switch(type) {

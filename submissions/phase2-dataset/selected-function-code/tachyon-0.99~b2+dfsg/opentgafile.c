@@ -1,3 +1,4 @@
+void * opentgafile(char * filename) {
   tgahandle * tga; 
   tga = malloc(sizeof(tgahandle));
   

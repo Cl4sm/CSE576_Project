@@ -1,3 +1,4 @@
+  static int
 he_command(struct he_s *hedit, int key, long count)
   /* Execute a command-mode command.  If `key' is an unknown command,
    * the return value is 0.  If `key' is a quit command, the return value

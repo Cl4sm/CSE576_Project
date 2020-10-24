@@ -1,3 +1,4 @@
+    static int input  (void)
 #endif
 
 {

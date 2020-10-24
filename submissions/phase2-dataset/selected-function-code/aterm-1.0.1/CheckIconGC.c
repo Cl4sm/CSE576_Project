@@ -1,3 +1,4 @@
+static void
 CheckIconGC(IconGC* igc, Pixmap icon, Pixmap icon_mask)
 {
   XGCValues values ;

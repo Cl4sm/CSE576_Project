@@ -1,3 +1,4 @@
+  static int
 he_verbatim(struct he_s *hedit)
 {
   int key;

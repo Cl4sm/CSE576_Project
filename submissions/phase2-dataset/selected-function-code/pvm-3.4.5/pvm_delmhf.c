@@ -1,3 +1,4 @@
+int
 pvm_delmhf(mhid)
 	int mhid;			/* message handler index */
 {

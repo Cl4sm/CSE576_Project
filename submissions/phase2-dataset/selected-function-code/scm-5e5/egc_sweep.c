@@ -1,3 +1,4 @@
+static void egc_sweep()
 {
   SCM z;
   int i;

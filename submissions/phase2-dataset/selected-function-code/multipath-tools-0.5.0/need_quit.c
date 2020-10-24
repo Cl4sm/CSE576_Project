@@ -1,3 +1,4 @@
+static int need_quit(char *str, size_t len)
 {
 	char *ptr, *start;
 	size_t trimed_len = len;

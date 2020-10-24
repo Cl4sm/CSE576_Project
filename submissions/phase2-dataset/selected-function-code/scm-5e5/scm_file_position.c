@@ -1,3 +1,4 @@
+SCM scm_file_position(port, pos)
      SCM port, pos;
 {
   ASRTER(NIMP(port) && OPFPORTP(port), port, ARG1, s_file_position);

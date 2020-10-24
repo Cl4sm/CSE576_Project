@@ -1,3 +1,4 @@
+extern int
 snprint_multipath_topology (char * buff, int len, struct multipath * mpp,
 			    int verbosity)
 {

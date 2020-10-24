@@ -1,3 +1,4 @@
+void
 Gr_NewWindow(int nargs, int args[])
 {
 #ifdef RXVT_GRAPHICS

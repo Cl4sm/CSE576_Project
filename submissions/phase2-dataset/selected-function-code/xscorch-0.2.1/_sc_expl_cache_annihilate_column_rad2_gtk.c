@@ -1,3 +1,4 @@
+static inline void _sc_expl_cache_annihilate_column_rad2_gtk(GdkImage *image, GdkColor *gradient, 
                                                              int gsize, int dx, int dy, 
                                                              int radius, int rad2) {
 /* sc_expl_cache_annihilate_column_rad2_gtk

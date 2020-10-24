@@ -1,3 +1,4 @@
+extern int
 select_no_path_retry(struct multipath *mp)
 {
 	if (mp->flush_on_last_del == FLUSH_IN_PROGRESS) {

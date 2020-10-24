@@ -1,3 +1,4 @@
+static
 int mpegd_parse_system_header (mpeg_demux_t *mpeg)
 {
 	unsigned long long ofs;

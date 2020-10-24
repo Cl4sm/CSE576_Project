@@ -1,3 +1,4 @@
+void
 prodpvmd()
 {
 	static char dummy[TDFRAGHDR];

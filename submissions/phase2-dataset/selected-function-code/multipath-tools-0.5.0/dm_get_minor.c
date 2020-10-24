@@ -1,3 +1,4 @@
+int
 dm_get_minor (char * mapname)
 {
 	int r = -1;

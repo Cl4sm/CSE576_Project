@@ -1,3 +1,4 @@
+static inline int
 sk_sendmsg(sock *s)
 {
   struct iovec iov = {s->tbuf, s->tpos - s->tbuf};

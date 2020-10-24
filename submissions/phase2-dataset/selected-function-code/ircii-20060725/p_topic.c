@@ -1,3 +1,4 @@
+static	void
 p_topic(from, ArgList)
 	u_char	*from,
 		**ArgList;

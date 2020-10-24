@@ -1,3 +1,4 @@
+int
 bgp_rte_recalculate(rtable *table, net *net, rte *new, rte *old, rte *old_best)
 {
   rte *r, *s;

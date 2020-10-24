@@ -1,3 +1,4 @@
+    static yy_state_type yy_try_NUL_trans  (yy_state_type yy_current_state )
 {
 	register int yy_is_jam;
     	register char *yy_cp = (yy_c_buf_p);

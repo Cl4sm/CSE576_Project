@@ -1,3 +1,4 @@
+int main (int argc, char * argv[])
 {
 	int fd, c, res;
 	const char *device_name = NULL;

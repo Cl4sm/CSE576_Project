@@ -1,3 +1,4 @@
+void
 set_variable(command, args, subargs)
 	u_char	*command,
 		*args,

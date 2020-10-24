@@ -1,3 +1,4 @@
+static void drawImpactGlow(float glow_radius) {
 
   float opacity;
   

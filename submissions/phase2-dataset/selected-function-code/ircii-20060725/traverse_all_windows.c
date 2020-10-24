@@ -1,3 +1,4 @@
+Window	*
 traverse_all_windows(flag)
 	int	*flag;
 {

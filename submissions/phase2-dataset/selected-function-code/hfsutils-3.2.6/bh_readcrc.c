@@ -1,3 +1,4 @@
+int bh_readcrc(void)
 {
   unsigned short check;
   unsigned char word[2];

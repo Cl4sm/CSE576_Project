@@ -1,3 +1,4 @@
+static void _sc_state_auto_defense(sc_config *c, sc_game *g) {
 /* _sc_state_auto_defense
    Select the auto defense state, and run it.
    The window code will advance the state for us when it's done. */

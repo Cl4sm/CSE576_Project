@@ -1,3 +1,4 @@
+struct ospf_neighbor *
 ospf_neighbor_new(struct ospf_iface *ifa)
 {
   struct proto *p = (struct proto *) (ifa->oa->po);

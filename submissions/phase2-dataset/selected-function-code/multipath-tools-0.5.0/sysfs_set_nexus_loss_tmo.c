@@ -1,3 +1,4 @@
+static void
 sysfs_set_nexus_loss_tmo(struct multipath *mpp, struct path *pp)
 {
 	struct udev_device *sas_dev = NULL;

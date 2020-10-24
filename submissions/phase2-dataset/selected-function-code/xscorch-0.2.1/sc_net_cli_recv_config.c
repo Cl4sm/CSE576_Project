@@ -1,3 +1,4 @@
+bool sc_net_cli_recv_config(sc_config *c, sc_client *cli, sc_packet *packet) {
 
    char buffer[SC_NET_BUFFER_SIZE];   /* For info messages */
    dword *p;            /* Pointer to packet data */

@@ -1,3 +1,4 @@
+SCM     gr_setdot( x, y, c )
 SCM     x, y, c;
 {
 int     xi, yi, ci;

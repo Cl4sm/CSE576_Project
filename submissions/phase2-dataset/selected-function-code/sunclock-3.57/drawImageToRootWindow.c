@@ -1,3 +1,4 @@
+void
 drawImageToRootWindow(Context, mode)
 Sundata * Context;
 int mode;

@@ -1,3 +1,4 @@
+void
 fit_init(struct fib_iterator *i, struct fib *f)
 {
   unsigned h;

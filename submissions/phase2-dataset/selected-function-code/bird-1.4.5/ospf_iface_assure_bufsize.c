@@ -1,3 +1,4 @@
+int
 ospf_iface_assure_bufsize(struct ospf_iface *ifa, uint plen)
 {
   plen += SIZE_OF_IP_HEADER;

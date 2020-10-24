@@ -1,3 +1,4 @@
+char
 displayable_unival(unsigned unival, iconv_t conv_out)
 {
 	/* First rule out control characters */

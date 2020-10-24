@@ -1,3 +1,4 @@
+void
 send_ctcp(u_char *type, u_char *to, u_char *datatag, char *format, ...)
 {
 	va_list vl;

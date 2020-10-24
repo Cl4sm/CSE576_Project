@@ -1,3 +1,4 @@
+SCM scm_integer_to_bytes(sn, slen)
      SCM sn;
      SCM slen;
 {

@@ -1,3 +1,4 @@
+static int
 prelink_print_cache_object (void **p, void *info)
 {
   struct prelink_entry *e = * (struct prelink_entry **) p;

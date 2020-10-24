@@ -1,3 +1,4 @@
+void
 mp_pool_log_status(mp_pool_t *pool)
 {
   uint64_t bytes_used = 0;

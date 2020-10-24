@@ -1,3 +1,4 @@
+int get_packages(linked_list** packages, linked_list** groups,
                  linked_list** annotations)
 {
 #ifdef YYDEBUG

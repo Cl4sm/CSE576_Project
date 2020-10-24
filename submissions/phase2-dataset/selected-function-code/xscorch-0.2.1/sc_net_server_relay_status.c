@@ -1,3 +1,4 @@
+bool sc_net_server_relay_status(sc_server *srv, sc_packet *incoming, int connid) {
 /* sc_net_server_relay_status
    Relay a status packet from a client to all players currently connected. */
 

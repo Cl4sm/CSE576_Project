@@ -1,3 +1,4 @@
+static void rijndaelIVKAT (FILE *fp, int keyLength, int blockLength)
 {
 	int i, ROUNDS;
 	BYTE block[4*MAXBC], block2[4*MAXBC];

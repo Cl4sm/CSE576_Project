@@ -1,3 +1,4 @@
+static	u_int
 create_refnum()
 {
 	unsigned int	new_refnum = 1;

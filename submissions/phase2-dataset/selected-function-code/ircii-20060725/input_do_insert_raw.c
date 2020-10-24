@@ -1,3 +1,4 @@
+static void
 input_do_insert_raw(u_char* source)
 {
 	u_char* buf  = current_screen->inputdata.buffer.buf;

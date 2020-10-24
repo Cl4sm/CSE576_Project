@@ -1,3 +1,4 @@
+static void
 rip_tx( sock *s )
 {
   struct rip_interface *rif = s->data;

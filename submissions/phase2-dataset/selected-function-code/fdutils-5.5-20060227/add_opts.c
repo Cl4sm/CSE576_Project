@@ -1,3 +1,4 @@
+static void add_opts(char *opts)
 {
     char *newopt;
     int l;

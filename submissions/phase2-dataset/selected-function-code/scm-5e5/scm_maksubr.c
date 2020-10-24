@@ -1,3 +1,4 @@
+SCM scm_maksubr(name, type, fcn)
      const char *name;
      int type;
      SCM (*fcn)();

@@ -1,3 +1,4 @@
+void openXwindow(int argc, char *argv[], char *pixmap_bytes[], char *pixmask_bits, 
     int pixmask_width, int pixmask_height) {
 
     unsigned int	borderwidth = 1;

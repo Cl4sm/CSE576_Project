@@ -1,3 +1,4 @@
+static uint32_t
 ipcache_hash_address(const struct irc_ssaddr *addr)
 {
   if (addr->ss.ss_family == AF_INET)

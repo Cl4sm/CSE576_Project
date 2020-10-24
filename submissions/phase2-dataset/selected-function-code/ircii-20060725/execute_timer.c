@@ -1,3 +1,4 @@
+extern	void
 execute_timer()
 {
 	struct timeval current;

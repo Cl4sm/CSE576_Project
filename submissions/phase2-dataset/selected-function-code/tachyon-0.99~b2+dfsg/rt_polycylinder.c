@@ -1,3 +1,4 @@
+void rt_polycylinder(SceneHandle scene, void * tex, apivector * points, int numpts, flt rad) {
   apivector a;
   int i;
 

@@ -1,3 +1,4 @@
+CHUNK_ORDER_PTR 
 new_vchunkostruct( nstructs, nbufs )
 int nstructs;
 int nbufs;

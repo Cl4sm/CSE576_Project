@@ -1,3 +1,4 @@
+static void
 ospf_iface_down(struct ospf_iface *ifa)
 {
   struct ospf_neighbor *n, *nx;

@@ -1,3 +1,4 @@
+void resetVideoData(void) {
   /* for each player */
 
   int i;

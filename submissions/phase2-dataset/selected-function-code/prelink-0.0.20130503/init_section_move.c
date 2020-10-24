@@ -1,3 +1,4 @@
+struct section_move *
 init_section_move (DSO *dso)
 {
   struct section_move *move;

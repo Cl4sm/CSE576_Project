@@ -1,3 +1,4 @@
+int
 radv_process_domain(struct radv_dnssl_config *cf)
 {
   /* Format of domain in search list is <size> <label> <size> <label> ... 0 */

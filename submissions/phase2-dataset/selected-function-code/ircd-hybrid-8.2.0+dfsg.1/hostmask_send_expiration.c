@@ -1,3 +1,4 @@
+static void
 hostmask_send_expiration(struct AddressRec *arec)
 {
   char ban_type = '\0';

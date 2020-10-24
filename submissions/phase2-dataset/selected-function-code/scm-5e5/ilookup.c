@@ -1,3 +1,4 @@
+SCM *ilookup(iloc)
      SCM iloc;
 {
   register int ir = IFRAME(iloc);

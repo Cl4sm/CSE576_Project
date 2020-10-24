@@ -1,3 +1,4 @@
+void stri_normal_fixup(object *otri, int mode) {
   stri *t = (stri *) otri;
 
   switch (mode) {

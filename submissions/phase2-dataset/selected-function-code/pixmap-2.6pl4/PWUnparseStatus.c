@@ -1,3 +1,4 @@
+String PWUnparseStatus(Widget w)
 #else
 String PWUnparseStatus(w)
     Widget w;

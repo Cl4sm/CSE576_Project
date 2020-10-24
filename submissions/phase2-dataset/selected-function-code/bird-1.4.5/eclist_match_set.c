@@ -1,3 +1,4 @@
+static int
 eclist_match_set(struct adata *list, struct f_tree *set)
 {
   if (!list)

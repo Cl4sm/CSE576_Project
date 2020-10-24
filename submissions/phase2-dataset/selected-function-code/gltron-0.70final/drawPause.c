@@ -1,3 +1,4 @@
+void drawPause(Visual *display) {
   char pause[] = "Game is paused";
   char winner[] = "Player %d wins!";
   char nowinner[] = "No one wins!";

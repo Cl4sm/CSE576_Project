@@ -1,3 +1,4 @@
+void
 ospf_iface_new_vlink(struct proto_ospf *po, struct ospf_iface_patt *ip)
 {
   struct proto *p = &po->proto;

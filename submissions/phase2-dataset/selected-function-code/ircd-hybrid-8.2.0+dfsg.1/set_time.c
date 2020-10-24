@@ -1,3 +1,4 @@
+void
 set_time(void)
 {
   struct timeval newtime = { .tv_sec = 0, .tv_usec = 0 };

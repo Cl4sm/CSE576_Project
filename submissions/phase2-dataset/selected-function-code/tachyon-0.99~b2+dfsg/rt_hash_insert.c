@@ -1,3 +1,4 @@
+int rt_hash_insert(rt_hash_t *tptr, const char *key, int data) {
   int tmp;
   hash_node_t *node;
   int h;

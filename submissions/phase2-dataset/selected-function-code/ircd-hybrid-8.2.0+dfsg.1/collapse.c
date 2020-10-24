@@ -1,3 +1,4 @@
+char *
 collapse(char *mask)
 {
   unsigned int star = 0;

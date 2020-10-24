@@ -1,3 +1,4 @@
+static void _sc_window_draw_land_pixmap_gtk(sc_window_gtk *w, int x1, int y1, int x2, int y2) {
 /* sc_window_draw_land_pixmap_gtk
    This was the original drawing code, sending pixels at a time to the X
    server.  Note this is not at all efficient in that it wastes bandwidth

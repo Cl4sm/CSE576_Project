@@ -1,3 +1,4 @@
+void
 ospf_rt_spf(struct proto_ospf *po)
 {
   struct proto *p = &po->proto;

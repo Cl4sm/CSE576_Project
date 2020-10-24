@@ -1,3 +1,4 @@
+color ExtVoxelColor(flt scalar) {
   color col;
 
   if (scalar > 1.0) 

@@ -1,3 +1,4 @@
+static const char *
 internal_function
 category_to_name (category)
      int category;

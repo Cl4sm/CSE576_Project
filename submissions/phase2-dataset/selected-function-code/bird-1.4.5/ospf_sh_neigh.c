@@ -1,3 +1,4 @@
+void
 ospf_sh_neigh(struct proto *p, char *iff)
 {
   struct ospf_iface *ifa = NULL;

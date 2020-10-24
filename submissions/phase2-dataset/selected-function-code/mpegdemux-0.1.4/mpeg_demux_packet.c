@@ -1,3 +1,4 @@
+static
 int mpeg_demux_packet (mpeg_demux_t *mpeg)
 {
 	unsigned sid, ssid;

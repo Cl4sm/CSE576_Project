@@ -1,3 +1,4 @@
+static int
 mxinput(pcbp, nfr)
 	struct ttpcb *pcbp;
 	int *nfr;				/* number of frags read */

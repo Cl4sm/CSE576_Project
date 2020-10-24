@@ -1,3 +1,4 @@
+static int
 rt_prune_step(rtable *tab, int step, int *limit)
 {
   static struct tbf rl_flush = TBF_DEFAULT_LOG_LIMITS;

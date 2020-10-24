@@ -1,3 +1,4 @@
+int
 menubar_mapping(int map)
 {
     int             change = 0;

@@ -1,3 +1,4 @@
+int
 strtabfind (DSO *dso, int strndx, const char *name)
 {
   Elf_Scn *scn;

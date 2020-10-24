@@ -1,3 +1,4 @@
+void
 ospf_open_vlink_sk(struct proto_ospf *po)
 {
   sock *sk = sk_new(po->proto.pool);

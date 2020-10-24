@@ -1,3 +1,4 @@
+  static int
 rl_right(void)
 {
   int last_col;

@@ -1,3 +1,4 @@
+static void
 send_members(struct Client *client_p, struct Channel *chptr,
              char *modebuf, char *parabuf)
 {

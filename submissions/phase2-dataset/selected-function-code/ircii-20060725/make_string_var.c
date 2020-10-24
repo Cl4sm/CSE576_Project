@@ -1,3 +1,4 @@
+u_char	*
 make_string_var(var_name)
 	u_char	*var_name;
 {

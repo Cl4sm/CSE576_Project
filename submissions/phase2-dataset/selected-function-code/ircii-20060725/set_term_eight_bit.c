@@ -1,3 +1,4 @@
+extern	void
 set_term_eight_bit(value)
 	int	value;
 {

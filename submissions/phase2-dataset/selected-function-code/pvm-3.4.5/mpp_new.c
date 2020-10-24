@@ -1,3 +1,4 @@
+struct nodeset *
 mpp_new(count, ptid)
 	int count;		/* number of nodes requested */
 	int ptid;		/* parent's tid */

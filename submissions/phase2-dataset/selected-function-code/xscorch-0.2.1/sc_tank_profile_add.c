@@ -1,3 +1,4 @@
+bool sc_tank_profile_add(sc_tank_profile **plist, const char *datafile) {
 /* sc_tank_profile_add
    Adds a new set of tank profiles to the linked list given, by reading data
    from the datafile given.  On success, this function returns true (even if

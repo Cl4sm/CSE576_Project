@@ -1,3 +1,4 @@
+static int
 get_serial (char * str, int maxlen, int fd)
 {
 	int len = 0;

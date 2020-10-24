@@ -1,3 +1,4 @@
+sc_accessory_info *sc_accessory_first(const sc_accessory_config *ac, int flags) {
 /* sc_accessory_first
    Return the first/last viable accessory in the accessory config space. */
 

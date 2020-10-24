@@ -1,3 +1,4 @@
+void
 read_dynamic (DSO *dso)
 {
   int i;

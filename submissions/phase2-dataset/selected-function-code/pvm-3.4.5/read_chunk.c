@@ -1,3 +1,4 @@
+CHUNK_PTR
 read_chunk( imsg, src, tag, len , repost, appid, llmsg)
 MSG_INFO_PTR imsg;
 int *src;

@@ -1,3 +1,4 @@
+static int
 ospf_sk_open(struct ospf_iface *ifa)
 {
   struct proto_ospf *po = ifa->oa->po;

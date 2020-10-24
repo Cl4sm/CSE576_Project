@@ -1,3 +1,4 @@
+int
 readVMF(path, Context)
 char * path;
 struct Sundata * Context;

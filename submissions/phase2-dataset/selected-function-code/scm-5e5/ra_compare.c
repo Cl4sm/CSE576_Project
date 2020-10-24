@@ -1,3 +1,4 @@
+static int ra_compare(ra0, ra1, ra2, opt)
      SCM ra0, ra1, ra2;
      int opt;
 {

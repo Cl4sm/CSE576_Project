@@ -1,3 +1,4 @@
+int rdac_prio(const char *dev, int fd)
 {
 	unsigned char sense_buffer[256];
 	unsigned char sb[128];

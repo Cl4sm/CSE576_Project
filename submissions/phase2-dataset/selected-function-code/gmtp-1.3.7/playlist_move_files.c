@@ -1,3 +1,4 @@
+gboolean playlist_move_files(gint direction) {
     GList * playlist_files = NULL;
     GtkTreeIter iter;
     gint tracknumber = 1;

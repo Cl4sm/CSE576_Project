@@ -1,3 +1,4 @@
+static	void
 nickname_sendline(data, nick)
 	u_char	*data;
 	u_char	*nick;

@@ -1,3 +1,4 @@
+void
 showMapImage(Context)
 struct Sundata * Context;
 {

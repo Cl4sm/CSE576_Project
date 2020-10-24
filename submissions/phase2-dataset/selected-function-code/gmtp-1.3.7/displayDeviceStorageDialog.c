@@ -1,3 +1,4 @@
+gint displayDeviceStorageDialog(void) {
     GtkWidget *dialog, *hbox, *label, *textbox;
     LIBMTP_devicestorage_t *devicestorage;
     gchar *tmp_string = NULL;

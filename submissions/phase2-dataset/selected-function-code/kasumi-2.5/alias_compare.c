@@ -1,3 +1,4 @@
+static int
 alias_compare (map1, map2)
      const struct alias_map *map1;
      const struct alias_map *map2;

@@ -1,3 +1,4 @@
+int
 pvm_lockget (key, sseg, iAmOwner )
 key_t key;
 struct segdesc *sseg;

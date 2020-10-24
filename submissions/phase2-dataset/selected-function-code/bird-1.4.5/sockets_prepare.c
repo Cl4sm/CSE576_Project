@@ -1,3 +1,4 @@
+static void
 sockets_prepare(struct birdloop *loop)
 {
   BUFFER_SET(loop->poll_sk, loop->sock_num + 1);

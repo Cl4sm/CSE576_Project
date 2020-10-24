@@ -1,3 +1,4 @@
+extern int
 get_pgpolicy_name (char * buff, int len, int id)
 {
 	char * s;

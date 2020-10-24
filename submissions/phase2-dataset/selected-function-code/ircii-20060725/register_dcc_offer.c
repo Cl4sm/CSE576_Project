@@ -1,3 +1,4 @@
+void
 register_dcc_offer(user, type, description, address, port, size)
 	u_char	*user;
 	u_char	*type;

@@ -1,3 +1,4 @@
+SCM scm_intexpt(z1, z2)
      SCM z1, z2;
 {
   SCM acc = MAKINUM(1L);

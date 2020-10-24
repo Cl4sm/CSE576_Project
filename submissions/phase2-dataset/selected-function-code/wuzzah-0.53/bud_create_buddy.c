@@ -1,3 +1,4 @@
+buddy_t* bud_create_buddy(const char *line){
 	char *line_buf=strdup(line);
 	buddy_t *next_buddy=MSTRUCT(buddy_t);
 	short colon=0, len=0;

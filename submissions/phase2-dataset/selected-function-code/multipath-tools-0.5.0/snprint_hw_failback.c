@@ -1,3 +1,4 @@
+static int
 snprint_hw_failback (char * buff, int len, void * data)
 {
 	struct hwentry * hwe = (struct hwentry *)data;

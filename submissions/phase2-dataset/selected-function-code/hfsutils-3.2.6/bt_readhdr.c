@@ -1,3 +1,4 @@
+int bt_readhdr(btree *bt)
 {
   const byte *ptr;
   byte *map = 0;

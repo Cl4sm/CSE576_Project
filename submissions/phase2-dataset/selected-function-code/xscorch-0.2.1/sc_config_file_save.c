@@ -1,3 +1,4 @@
+int sc_config_file_save(sc_config *c) {
 /* sc_config_file_save
    Save the user options. */
 

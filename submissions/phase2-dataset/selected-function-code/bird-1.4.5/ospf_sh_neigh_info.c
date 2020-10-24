@@ -1,3 +1,4 @@
+void
 ospf_sh_neigh_info(struct ospf_neighbor *n)
 {
   struct ospf_iface *ifa = n->ifa;

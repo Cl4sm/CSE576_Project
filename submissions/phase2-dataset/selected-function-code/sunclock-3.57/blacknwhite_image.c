@@ -1,3 +1,4 @@
+char *
 blacknwhite_image()
 {
   int i, j, k, l, u;

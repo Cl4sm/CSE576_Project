@@ -1,3 +1,4 @@
+int strcomp(const char *s, const char *d) {
 /* String-Compare-Nullsafe
    This is a null-pointer-safe version of strcmp. This will return 0
    if both pointers are NULL.  This function considers a NULL pointer

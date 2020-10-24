@@ -1,3 +1,4 @@
+int
 peer_recv(gotem)
 	int *gotem;
 {

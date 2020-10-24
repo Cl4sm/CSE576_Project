@@ -1,3 +1,4 @@
+void
 cmd_build_tree(void)
 {
   unsigned int i;

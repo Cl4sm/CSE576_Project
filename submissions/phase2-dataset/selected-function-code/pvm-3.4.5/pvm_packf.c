@@ -1,3 +1,4 @@
+int
 #ifdef __STDC__
 pvm_packf(const char *fmt, ...)
 #else

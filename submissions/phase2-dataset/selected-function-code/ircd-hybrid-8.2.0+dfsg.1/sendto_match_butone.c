@@ -1,3 +1,4 @@
+void
 sendto_match_butone(struct Client *one, struct Client *from, const char *mask,
                     int what, const char *pattern, ...)
 {

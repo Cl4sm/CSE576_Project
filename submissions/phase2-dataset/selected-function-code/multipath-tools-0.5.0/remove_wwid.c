@@ -1,3 +1,4 @@
+int
 remove_wwid(char *wwid) {
 	int fd, len, can_write;
 	char *str;

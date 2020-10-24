@@ -1,3 +1,4 @@
+int
 init_data(char *conf_file, void (*init_keywords) (void))
 {
 	int r;

@@ -1,3 +1,4 @@
+int bh_start(int fd)
 {
   int dupfd;
 

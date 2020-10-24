@@ -1,3 +1,4 @@
+static const char *
 get_sysdep_segment_value (name)
      const char *name;
 {

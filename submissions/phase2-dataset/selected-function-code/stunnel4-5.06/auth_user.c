@@ -1,3 +1,4 @@
+NOEXPORT void auth_user(CLI *c, char *accepted_address) {
 #ifndef _WIN32_WCE
     struct servent *s_ent;    /* structure for getservbyname */
 #endif

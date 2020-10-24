@@ -1,3 +1,4 @@
+void
 SetSrcPixmap(Pixmap p)
 {
 #ifdef DEBUG_BACKGROUND_PMAP	   

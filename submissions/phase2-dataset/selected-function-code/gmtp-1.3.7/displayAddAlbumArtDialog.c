@@ -1,3 +1,4 @@
+void displayAddAlbumArtDialog(void) {
     //Album_Struct* albumdetails;
     GtkWidget *hbox, *label;
     GtkWidget *buttonBox;

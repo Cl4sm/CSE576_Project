@@ -1,3 +1,4 @@
+void init_record()
 {
   SCM i_name = CAR(sysintern("name", UNDEFINED));
   SCM i_fields = CAR(sysintern("fields", UNDEFINED));

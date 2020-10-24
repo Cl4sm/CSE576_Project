@@ -1,3 +1,4 @@
+int
 get_alua_info(int fd)
 {
 	int	rc;

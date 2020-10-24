@@ -1,3 +1,4 @@
+static void
 rip_sendto( struct proto *p, ip_addr daddr, int dport, struct rip_interface *rif )
 {
   struct iface *iface = rif->iface;

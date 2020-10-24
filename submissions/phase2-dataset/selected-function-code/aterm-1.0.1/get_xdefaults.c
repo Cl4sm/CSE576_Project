@@ -1,3 +1,4 @@
+void
 get_xdefaults(FILE * stream, const char *name)
 {
     unsigned int    len;

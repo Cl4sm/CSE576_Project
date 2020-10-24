@@ -1,3 +1,4 @@
+SCM x_create_pixmap(obj, s_size, s_depth)
      SCM obj, s_size, s_depth;
 {
   unsigned int depth = INUM(s_depth);

@@ -1,3 +1,4 @@
+void
 dead_link_on_read(struct Client *client_p, int error)
 {
   char errmsg[IRCD_BUFSIZE];

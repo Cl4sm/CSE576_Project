@@ -1,3 +1,4 @@
+static
 int file_cmd(ClientData clientData, Tcl_Interp *interp,
 	     int argc, char *argv[])
 {

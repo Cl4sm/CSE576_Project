@@ -1,3 +1,4 @@
+SCM l_accept(sockpt)
      SCM sockpt;
 {
   int newsd, sadlen;

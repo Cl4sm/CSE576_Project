@@ -1,3 +1,4 @@
+void
 roa_commit(struct config *new, struct config *old)
 {
   struct roa_table_config *cf;

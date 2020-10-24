@@ -1,3 +1,4 @@
+static	void
 inputcmd(command, args, subargs)
 	u_char	*command,
 		*args,

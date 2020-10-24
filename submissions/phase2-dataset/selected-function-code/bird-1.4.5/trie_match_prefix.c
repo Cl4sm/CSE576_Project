@@ -1,3 +1,4 @@
+int
 trie_match_prefix(struct f_trie *t, ip_addr px, int plen)
 {
   ip_addr pmask = ipa_mkmask(plen);

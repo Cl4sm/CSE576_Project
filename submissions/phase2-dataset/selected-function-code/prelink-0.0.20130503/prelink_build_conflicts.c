@@ -1,3 +1,4 @@
+int
 prelink_build_conflicts (struct prelink_info *info)
 {
   int i, ndeps = info->ent->ndepends + 1;

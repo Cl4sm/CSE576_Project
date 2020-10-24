@@ -1,3 +1,4 @@
+const char *s_gai_strerror(int err) {
     switch(err) {
 #ifdef EAI_BADFLAGS
         case EAI_BADFLAGS:

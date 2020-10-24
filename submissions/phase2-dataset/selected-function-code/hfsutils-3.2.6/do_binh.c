@@ -1,3 +1,4 @@
+static
 int do_binh(hfsfile *ifile, int ofile)
 {
   int result;

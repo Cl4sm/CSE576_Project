@@ -1,3 +1,4 @@
+int
 show_maps_topology (char ** r, int * len, struct vectors * vecs)
 {
 	int i;

@@ -1,3 +1,4 @@
+int v_close(hfsvol *vol)
 {
   int result = 0;
 

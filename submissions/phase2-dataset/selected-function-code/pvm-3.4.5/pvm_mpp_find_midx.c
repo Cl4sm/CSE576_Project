@@ -1,3 +1,4 @@
+int
 pvm_mpp_find_midx(mppsendmids, mppoutchunks, current, num, mfunc )
 msgmid_t *mppsendmids;
 CHUNK_PTR *mppoutchunks;

@@ -1,3 +1,4 @@
+int prin_do_scsi_ioctl(char * dev, int rq_servact, struct prin_resp * resp, int noisy)
 {
 
 	int ret, status, got, fd;

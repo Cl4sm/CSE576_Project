@@ -1,3 +1,4 @@
+static SCM scm_case_selector(x)
      SCM x;
 {
   SCM key, keys, *kv, *av;

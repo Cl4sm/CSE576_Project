@@ -1,3 +1,4 @@
+static void def_err_response()
 {
   SCM file, env = err_env, obj = *loc_errobj;
   SCM linum = UNDEFINED;

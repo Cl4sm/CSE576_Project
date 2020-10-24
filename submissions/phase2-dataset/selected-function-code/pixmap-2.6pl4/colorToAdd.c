@@ -1,3 +1,4 @@
+void colorToAdd(w, pixel, name)
      Widget w;
      Pixel pixel;
      char *name;

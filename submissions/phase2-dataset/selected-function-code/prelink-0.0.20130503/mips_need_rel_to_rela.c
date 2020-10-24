@@ -1,3 +1,4 @@
+static int
 mips_need_rel_to_rela (DSO *dso, int first, int last)
 {
   Elf_Data *data;

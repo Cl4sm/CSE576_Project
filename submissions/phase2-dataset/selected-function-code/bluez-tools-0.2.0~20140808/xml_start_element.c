@@ -1,3 +1,4 @@
+static void xml_start_element(GMarkupParseContext *context,
                               const gchar *element_name,
                               const gchar **attribute_names,
                               const gchar **attribute_values,

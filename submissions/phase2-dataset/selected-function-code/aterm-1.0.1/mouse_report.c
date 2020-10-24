@@ -1,3 +1,4 @@
+void
 mouse_report(XButtonEvent * ev)
 {
     int             button_number, key_state = 0;

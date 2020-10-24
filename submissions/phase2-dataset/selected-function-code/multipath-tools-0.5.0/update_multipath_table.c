@@ -1,3 +1,4 @@
+static int
 update_multipath_table (struct multipath *mpp, vector pathvec)
 {
 	char params[PARAMS_SIZE] = {0};

@@ -1,3 +1,4 @@
+void
 createGCs(Context)
 struct Sundata * Context;
 {

@@ -1,3 +1,4 @@
+static void
 static_match(struct proto *p, struct static_route *r, struct static_config *n)
 {
   struct static_route *t;

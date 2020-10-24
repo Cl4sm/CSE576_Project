@@ -1,3 +1,4 @@
+static void _trim_line(char *buf) {
 
    bool countedspace = true;
    char *d = buf;

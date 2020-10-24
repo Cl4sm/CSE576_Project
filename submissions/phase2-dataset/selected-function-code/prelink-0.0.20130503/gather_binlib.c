@@ -1,3 +1,4 @@
+static int
 gather_binlib (const char *name, const struct stat64 *st)
 {
   unsigned char e_ident [EI_NIDENT + 2];

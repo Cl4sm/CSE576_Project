@@ -1,3 +1,4 @@
+SCM scm_bytes_to_ieee_double(sbyts)
      SCM sbyts;
 {
   char *byts = get_bytes(sbyts, 8, s_bytes_to_ieee_double);

@@ -1,3 +1,4 @@
+void *
 hash_get_bucket(int type, unsigned int hashv)
 {
   assert(hashv < HASHSIZE);

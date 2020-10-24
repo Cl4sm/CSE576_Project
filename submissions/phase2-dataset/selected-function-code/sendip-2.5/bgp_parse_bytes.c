@@ -1,3 +1,4 @@
+static u_int32_t bgp_parse_bytes (u_int8_t   *buf,
                                   char       *arg,
                                   char      **new_arg,
                                   u_int32_t   limit,

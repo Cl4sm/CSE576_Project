@@ -1,3 +1,4 @@
+static int
 uev_add_map (struct uevent * uev, struct vectors * vecs)
 {
 	char *alias;

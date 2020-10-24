@@ -1,3 +1,4 @@
+extern int
 select_prio (struct path * pp)
 {
 	struct mpentry * mpe;

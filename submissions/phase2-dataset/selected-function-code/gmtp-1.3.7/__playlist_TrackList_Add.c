@@ -1,3 +1,4 @@
+void __playlist_TrackList_Add(GtkTreeRowReference *Row) {
     GtkTreePath *path = NULL;
     GtkTreeIter iter;
     GtkTreeIter PL_rowIter;

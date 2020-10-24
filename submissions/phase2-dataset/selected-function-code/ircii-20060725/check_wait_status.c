@@ -1,3 +1,4 @@
+int
 check_wait_status(wanted)
 	int wanted;
 {

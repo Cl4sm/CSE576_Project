@@ -1,3 +1,4 @@
+void print_path(char* varname, linked_list* pathlist)
 {
    list_node* node;
    char* dirname;

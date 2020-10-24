@@ -1,3 +1,4 @@
+void
 pseudo_register(const char *name, const char *nick,
                 const char *serv, const char *prep,
                 const char *command)

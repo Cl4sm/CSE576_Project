@@ -1,3 +1,4 @@
+  char *
 s_get_option(option)
   const char *option;
 {

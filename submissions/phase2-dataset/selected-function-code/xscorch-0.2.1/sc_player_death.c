@@ -1,3 +1,4 @@
+void sc_player_death(const sc_config *c, const sc_player *p, sc_explosion **e) {
 /* sc_player_death
    Nice knowin' ya... Note, this function may add new explosions to the
    queue e that is passed in.  This function does not (directly) modify

@@ -1,3 +1,4 @@
+GType sc_label_get_type(void) {
 
    static GType sc_label_type = 0;
 

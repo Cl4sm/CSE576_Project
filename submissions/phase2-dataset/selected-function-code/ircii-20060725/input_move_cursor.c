@@ -1,3 +1,4 @@
+void
 input_move_cursor(dir)
 	int	dir;
 {

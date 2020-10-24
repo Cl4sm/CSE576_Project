@@ -1,3 +1,4 @@
+void PWTPaste(w, event)
     Widget  w;
     XEvent *event;
 {

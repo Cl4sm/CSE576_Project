@@ -1,3 +1,4 @@
+static char *
 proto_state_name(struct proto *p)
 {
 #define P(x,y) ((x << 4) | y)

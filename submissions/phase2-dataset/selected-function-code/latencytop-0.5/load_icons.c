@@ -1,3 +1,4 @@
+static load_icons(void)
 {
 	GError *err;
 

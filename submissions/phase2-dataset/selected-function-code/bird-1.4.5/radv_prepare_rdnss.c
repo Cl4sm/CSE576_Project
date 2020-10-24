@@ -1,3 +1,4 @@
+static int
 radv_prepare_rdnss(struct radv_iface *ifa, list *rdnss_list, char **buf, char *bufend)
 {
   struct radv_rdnss_config *rcf = HEAD(*rdnss_list);

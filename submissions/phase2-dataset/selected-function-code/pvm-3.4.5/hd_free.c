@@ -1,3 +1,4 @@
+void
 hd_free(hp)
 	struct hostd *hp;
 {

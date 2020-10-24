@@ -1,3 +1,4 @@
+void get_ogg_tags(gchar *filename, LIBMTP_track_t *trackinformation) {
     OggVorbis_File *mov_file = NULL;
     vorbis_info * mov_info = NULL;
     FILE *mfile;

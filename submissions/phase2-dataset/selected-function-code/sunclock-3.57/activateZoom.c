@@ -1,3 +1,4 @@
+void
 activateZoom(Context, rebuild)
 Sundata *Context;
 int rebuild;

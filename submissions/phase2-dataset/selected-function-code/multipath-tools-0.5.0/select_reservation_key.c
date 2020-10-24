@@ -1,3 +1,4 @@
+extern int
 select_reservation_key (struct multipath * mp)
 {
 	int j;

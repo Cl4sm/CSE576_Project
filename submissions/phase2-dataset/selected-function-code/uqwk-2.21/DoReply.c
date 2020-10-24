@@ -1,3 +1,4 @@
+int DoReply ()
 {
 	int n, rep_cnt, ret;
 	char bbs[PATH_LEN];

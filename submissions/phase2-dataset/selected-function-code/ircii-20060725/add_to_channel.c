@@ -1,3 +1,4 @@
+void
 add_to_channel(u_char *channel, u_char *nick, int server, int oper, int voice)
 {
 	NickList *new;

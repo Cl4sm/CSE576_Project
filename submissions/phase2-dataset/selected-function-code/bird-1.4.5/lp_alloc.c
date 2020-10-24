@@ -1,3 +1,4 @@
+void *
 lp_alloc(linpool *m, unsigned size)
 {
   byte *a = (byte *) BIRD_ALIGN((unsigned long) m->ptr, CPU_STRUCT_ALIGN);

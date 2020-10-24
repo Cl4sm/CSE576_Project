@@ -1,3 +1,4 @@
+char *
 canonicalize (const char *path)
 {
     char *canonical = xmalloc (PATH_MAX + 1);

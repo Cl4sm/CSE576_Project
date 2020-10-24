@@ -1,3 +1,4 @@
+  static char *
 key_strrep(const int *ks)
 {
   int n;

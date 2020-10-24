@@ -1,3 +1,4 @@
+static	void
 cd(command, args, subargs)
 	u_char	*command,
 		*args,

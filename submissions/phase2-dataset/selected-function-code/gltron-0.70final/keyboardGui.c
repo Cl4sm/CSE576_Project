@@ -1,3 +1,4 @@
+void keyboardGui(int state, int key, int x, int y) {
   char *pMenuName;
 
 	if(state == SYSTEM_KEYSTATE_UP)

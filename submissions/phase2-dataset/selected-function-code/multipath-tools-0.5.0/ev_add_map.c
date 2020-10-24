@@ -1,3 +1,4 @@
+int
 ev_add_map (char * dev, char * alias, struct vectors * vecs)
 {
 	char * refwwid;

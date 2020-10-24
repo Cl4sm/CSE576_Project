@@ -1,3 +1,4 @@
+void init_repl( iverbose )
      int iverbose;
 {
 	sysintern(s_ccl, MAKINUM(CHAR_CODE_LIMIT));

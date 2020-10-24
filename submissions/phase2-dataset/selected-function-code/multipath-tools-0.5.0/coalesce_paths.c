@@ -1,3 +1,4 @@
+extern int
 coalesce_paths (struct vectors * vecs, vector newmp, char * refwwid, int force_reload)
 {
 	int r = 1;

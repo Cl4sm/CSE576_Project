@@ -1,3 +1,4 @@
+static void
 bfd_notify_init(struct bfd_proto *p)
 {
   int pfds[2];

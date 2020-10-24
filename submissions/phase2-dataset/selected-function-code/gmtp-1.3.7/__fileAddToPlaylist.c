@@ -1,3 +1,4 @@
+void __fileAddToPlaylist(GtkTreeRowReference *Row, LIBMTP_playlist_t **playlist) {
     GtkTreePath *path;
     GtkTreeIter iter;
     uint32_t objectID;

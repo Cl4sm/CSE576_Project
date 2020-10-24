@@ -1,3 +1,4 @@
+void file_read()
 {
 	int c, d;
 	char *col = file_new();

@@ -1,3 +1,4 @@
+void
 ospf_sh_lsadb(struct lsadb_show_data *ld)
 {
   struct proto *p = proto_get_named(ld->name, &proto_ospf);

@@ -1,3 +1,4 @@
+static struct proto *
 bgp_init(struct proto_config *C)
 {
   struct proto *P = proto_new(C, sizeof(struct bgp_proto));

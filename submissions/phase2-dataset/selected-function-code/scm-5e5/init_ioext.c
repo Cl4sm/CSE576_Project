@@ -1,3 +1,4 @@
+void init_ioext()
 {
 	init_iprocs(subr1os, tc7_subr_1o);
 	init_iprocs(subr1s, tc7_subr_1);

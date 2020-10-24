@@ -1,3 +1,4 @@
+int
 do_hook(int which, char *format, ...)
 {
 	va_list vl;

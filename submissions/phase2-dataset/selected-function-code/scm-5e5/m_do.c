@@ -1,3 +1,4 @@
+SCM m_do(xorig, env, ctxt)
      SCM xorig, env, ctxt;
 {
   SCM x = CDR(xorig), bdg, bdgs, test, body;

@@ -1,3 +1,4 @@
+static void do_refresh(void)
 {
 	/* Ignore selection messages triggerd by the list during those updates */
 	ignore_sel = TRUE;

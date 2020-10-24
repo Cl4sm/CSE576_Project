@@ -1,3 +1,4 @@
+sc_explosion *sc_weapon_get_explosion(const sc_config *c, const sc_weapon *wp,
                                       int x, int y, double direction) {
 /* sc_weapon_get_explosion
    Take a weapon and a location, and return a ready-made explosion.

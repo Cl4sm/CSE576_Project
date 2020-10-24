@@ -1,3 +1,4 @@
+extern char *
 find_loop_by_file (const char * filename)
 {
 	char dev[64];

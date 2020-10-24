@@ -1,3 +1,4 @@
+void
 send_queued_write(struct Client *to)
 {
   int retlen = 0;

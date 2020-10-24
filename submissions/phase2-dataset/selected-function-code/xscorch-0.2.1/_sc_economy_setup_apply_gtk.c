@@ -1,3 +1,4 @@
+static void _sc_economy_setup_apply_gtk(__libj_unused ScDialog *dlg,
                                         sc_economy_setup_data_gtk *setup) {
 
    sc_scoring_info *info;

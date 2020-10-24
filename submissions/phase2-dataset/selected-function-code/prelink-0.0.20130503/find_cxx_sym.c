@@ -1,3 +1,4 @@
+static int
 find_cxx_sym (struct prelink_info *info, GElf_Addr addr,
 	      struct find_cxx_sym *fcs, int reloc_size,
 	      struct find_cxx_sym_cache **cache)

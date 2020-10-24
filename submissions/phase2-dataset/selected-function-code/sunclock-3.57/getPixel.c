@@ -1,3 +1,4 @@
+Pixel
 getPixel(cmap, str)
 Colormap cmap;
 char *str;

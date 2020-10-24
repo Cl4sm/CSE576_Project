@@ -1,3 +1,4 @@
+void v_init(hfsvol *vol, int flags)
 {
   btree *ext = &vol->ext;
   btree *cat = &vol->cat;

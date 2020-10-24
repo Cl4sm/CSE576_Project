@@ -1,3 +1,4 @@
+static int
 def_detect_prio_handler(vector strvec)
 {
 	char * buff;

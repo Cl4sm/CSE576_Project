@@ -1,3 +1,4 @@
+void
 menubar_read(const char *filename)
 {
 #ifdef MENUBAR

@@ -1,3 +1,4 @@
+void
 tm_format_datetime(char *x, struct timeformat *fmt_spec, bird_clock_t t)
 {
   const char *fmt_used;

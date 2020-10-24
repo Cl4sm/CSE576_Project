@@ -1,3 +1,4 @@
+static void
 nl_parse_addr(struct nlmsghdr *h, int scan)
 {
   struct ifaddrmsg *i;

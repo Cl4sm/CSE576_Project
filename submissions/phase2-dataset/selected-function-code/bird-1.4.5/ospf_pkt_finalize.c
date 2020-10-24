@@ -1,3 +1,4 @@
+static void
 ospf_pkt_finalize(struct ospf_iface *ifa, struct ospf_packet *pkt)
 {
   struct password_item *passwd = NULL;

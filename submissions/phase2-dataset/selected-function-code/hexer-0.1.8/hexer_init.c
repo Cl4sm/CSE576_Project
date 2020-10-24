@@ -1,3 +1,4 @@
+  void
 hexer_init()
   /* this function is called by `process_args()' (main.c) before executing
    * the commands given at the command line.

@@ -1,3 +1,4 @@
+SCM scm_copybit(index, j1, bit)
      SCM index, j1, bit;
 {
   ASRTER(INUMP(index) && INUM(index) >= 0, index, ARG1, s_copybit);

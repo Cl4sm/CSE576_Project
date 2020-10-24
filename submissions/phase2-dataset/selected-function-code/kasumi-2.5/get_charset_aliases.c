@@ -1,3 +1,4 @@
+static const char *
 get_charset_aliases ()
 {
   const char *cp;

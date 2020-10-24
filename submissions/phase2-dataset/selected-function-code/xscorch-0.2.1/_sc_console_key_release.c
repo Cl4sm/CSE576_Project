@@ -1,3 +1,4 @@
+static gint _sc_console_key_release(GtkWidget *widget, GdkEventKey *event) {
 /* sc_console_key_release
    Process a key that was released.  */
 

@@ -1,3 +1,4 @@
+  static void
 regex_clear(void)
   /* clear all slots.
    */

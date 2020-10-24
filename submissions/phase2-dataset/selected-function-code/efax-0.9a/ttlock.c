@@ -1,3 +1,4 @@
+int ttlock ( char *fname, int log )
 {
   int err=0, dirlen, bin=0 ;    
   FILE *f=0 ;    

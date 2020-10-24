@@ -1,3 +1,4 @@
+int
 sysfs_set_scsi_tmo (struct multipath *mpp)
 {
 	struct path *pp;

@@ -1,3 +1,4 @@
+static inline void
 s_merge(snode *from, snode *to)
 {
   siterator *f, *g;

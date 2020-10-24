@@ -1,3 +1,4 @@
+write_segment (new, ptr, end)
      int new;
      register char *ptr, *end;
 {

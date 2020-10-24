@@ -1,3 +1,4 @@
+loclinpkt(tp, pp)
 	struct task *tp;
 	struct pkt *pp;
 {

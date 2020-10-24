@@ -1,3 +1,4 @@
+int
 pvmputenv(s)
 	char *s;	/* string of form "NAME=Value" */
 {

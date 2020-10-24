@@ -1,3 +1,4 @@
+extern int
 select_hwhandler (struct multipath * mp)
 {
 	if (mp->hwe && mp->hwe->hwhandler) {

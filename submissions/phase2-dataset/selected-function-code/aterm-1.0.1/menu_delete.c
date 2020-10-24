@@ -1,3 +1,4 @@
+menu_t         *
 menu_delete(menu_t * menu)
 {
 #ifdef MENUBAR

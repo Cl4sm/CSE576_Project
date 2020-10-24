@@ -1,3 +1,4 @@
+int
 menu_select(XButtonEvent * ev)
 {
 #ifdef MENUBAR

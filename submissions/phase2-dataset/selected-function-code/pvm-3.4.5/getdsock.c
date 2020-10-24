@@ -1,3 +1,4 @@
+void
 getdsock()
 {
 	char buf[128];

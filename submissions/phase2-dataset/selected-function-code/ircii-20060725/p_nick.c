@@ -1,3 +1,4 @@
+static	void
 p_nick(from, ArgList)
 	u_char	*from,
 		**ArgList;

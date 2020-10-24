@@ -1,3 +1,4 @@
+int
 do_boolean(str, value)
 	u_char	*str;
 	int	*value;

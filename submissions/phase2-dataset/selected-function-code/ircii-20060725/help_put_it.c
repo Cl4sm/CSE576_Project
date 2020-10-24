@@ -1,3 +1,4 @@
+void
 help_put_it(u_char *topic, char *format, ...)
 {
 	va_list vl;

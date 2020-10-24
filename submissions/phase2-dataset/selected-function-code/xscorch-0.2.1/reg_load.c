@@ -1,3 +1,4 @@
+bool reg_load(reg *r) {
 
    if(r == NULL) return(false);
 

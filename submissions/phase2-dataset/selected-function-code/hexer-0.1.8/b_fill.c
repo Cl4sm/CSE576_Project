@@ -1,3 +1,4 @@
+  long
 b_fill(buffer, c, position, count)
   Buffer *buffer;
   char c;

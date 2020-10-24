@@ -1,3 +1,4 @@
+static bool _sc_net_cli_recv_shields(sc_config *c, sc_packet *packet) {
 /* _sc_net_cli_recv_shields
    Similar to the orders packet, except we are receiving a player request
    to activate their shields. Again, returns true on success. */

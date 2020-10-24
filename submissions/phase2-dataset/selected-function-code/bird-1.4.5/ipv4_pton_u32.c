@@ -1,3 +1,4 @@
+int
 ipv4_pton_u32(char *a, u32 *o)
 {
   int i;

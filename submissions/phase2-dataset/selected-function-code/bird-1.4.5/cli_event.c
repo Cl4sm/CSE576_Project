@@ -1,3 +1,4 @@
+static void
 cli_event(void *data)
 {
   cli *c = data;

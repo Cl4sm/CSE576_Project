@@ -1,3 +1,4 @@
+static bool _sc_land_drop_column(const sc_config *c, sc_land *l, int x) {
 /* sc_land_drop_column
    Drop the land in the current column, x. This is an internal function
    will no sanity checking; caution, X may be a virtual coordinate.  */

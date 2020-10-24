@@ -1,3 +1,4 @@
+void
 PopZoom(Context)
 struct Sundata * Context;
 {

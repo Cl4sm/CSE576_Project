@@ -1,3 +1,4 @@
+  static int
 rl_display_line(int clear_to_eol)
 {
   char line[1024];

@@ -1,3 +1,4 @@
+void
 proto_show_basic_info(struct proto *p)
 {
   // cli_msg(-1006, "  Table:          %s", p->table->name);

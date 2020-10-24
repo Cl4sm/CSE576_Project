@@ -1,3 +1,4 @@
+static int
 copy_xattrs (const char *temp_name, const char *name, int ignore_errors)
 {
   ssize_t sz = listxattr (name, NULL, 0), valsz = 0;

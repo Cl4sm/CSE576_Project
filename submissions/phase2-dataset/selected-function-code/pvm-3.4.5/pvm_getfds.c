@@ -1,3 +1,4 @@
+int
 pvm_getfds(fds)		/* XXX this function kinda sucks */
 	int **fds;			/* fd list return */
 {

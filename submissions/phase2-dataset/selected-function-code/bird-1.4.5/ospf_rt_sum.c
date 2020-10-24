@@ -1,3 +1,4 @@
+static void
 ospf_rt_sum(struct ospf_area *oa)
 {
   struct proto_ospf *po = oa->po;

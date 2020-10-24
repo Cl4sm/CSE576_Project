@@ -1,3 +1,4 @@
+void libcheck_free (struct checker * c)
 {
 	struct directio_context * ct = (struct directio_context *)c->context;
 	long flags;

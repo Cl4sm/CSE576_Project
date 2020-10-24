@@ -1,3 +1,4 @@
+static void icmp6csum(struct in6_addr *src, struct in6_addr *dst,
 							 sendip_data *hdr, sendip_data *data) {
 	icmp_header *icp = (icmp_header *)hdr->data;
 	struct ipv6_pseudo_hdr phdr;

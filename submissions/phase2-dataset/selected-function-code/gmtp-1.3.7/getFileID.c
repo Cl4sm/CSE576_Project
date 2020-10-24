@@ -1,3 +1,4 @@
+uint32_t getFileID(gchar* filename, gboolean ignorepath) {
     LIBMTP_file_t* files = deviceFiles;
     uint32_t folderID = 0;
 

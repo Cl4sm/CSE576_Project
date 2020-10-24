@@ -1,3 +1,4 @@
+void sc_lscape_setup(const struct _sc_config *c, const struct _sc_land *l) {
 /* sc_lscape_setup
    Front-end to sc_lscape_explicit_setup.  Note: the internals of this
    function are bound to change quite a bit. */

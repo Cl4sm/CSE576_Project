@@ -1,3 +1,4 @@
+int end_data ( TFILE *mf, cap session, int ppm, int *good )
 {
   int err=0, c ;
   uchar *p ;

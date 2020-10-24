@@ -1,3 +1,4 @@
+static void _cycling_speed_manager_set_property(GObject *object, guint property_id, const GValue *value, GParamSpec *pspec)
 {
 	CyclingSpeedManager *self = CYCLING_SPEED_MANAGER(object);
 	GError *error = NULL;

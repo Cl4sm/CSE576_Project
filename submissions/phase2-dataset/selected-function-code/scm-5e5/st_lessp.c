@@ -1,3 +1,4 @@
+SCM st_lessp(s1, s2)
      SCM s1, s2;
 {
 	register sizet i, len;

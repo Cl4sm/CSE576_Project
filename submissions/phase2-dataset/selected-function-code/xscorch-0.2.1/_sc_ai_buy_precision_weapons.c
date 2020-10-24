@@ -1,3 +1,4 @@
+static bool _sc_ai_buy_precision_weapons(const sc_config *c, sc_player *p, int *budget) {
 /* sc_ai_buy_precision_weapons
    Buy the weapons yielding high power and precision.  This is for use
    by AI players who know exactly how to aim and exactly what/who they

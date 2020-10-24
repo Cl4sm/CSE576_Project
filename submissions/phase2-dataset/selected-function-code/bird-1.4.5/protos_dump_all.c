@@ -1,3 +1,4 @@
+void
 protos_dump_all(void)
 {
   struct proto *p;

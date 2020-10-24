@@ -1,3 +1,4 @@
+void
 remove_ipv6_mapping(struct irc_ssaddr *addr)
 {
   if (addr->ss.ss_family == AF_INET6)

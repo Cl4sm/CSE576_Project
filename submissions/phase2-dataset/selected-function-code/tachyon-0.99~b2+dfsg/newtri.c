@@ -1,3 +1,4 @@
+object * newtri(void * tex, vector v0, vector v1, vector v2) {
   tri * t;
   vector edge1, edge2, edge3;
 

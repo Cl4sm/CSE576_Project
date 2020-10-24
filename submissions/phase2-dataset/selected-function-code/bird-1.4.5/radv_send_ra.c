@@ -1,3 +1,4 @@
+void
 radv_send_ra(struct radv_iface *ifa, int shutdown)
 {
   struct proto_radv *ra = ifa->ra;

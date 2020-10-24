@@ -1,3 +1,4 @@
+void sc_window_draw_weapon(sc_window *w_, const sc_weapon *wp) {
 /* sc_window_draw_weapon
    Draw the indicated weapon to the screen.  */
 

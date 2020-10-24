@@ -1,3 +1,4 @@
+void
 mask_addr(struct irc_ssaddr *ip, int bits)
 {
   int mask;

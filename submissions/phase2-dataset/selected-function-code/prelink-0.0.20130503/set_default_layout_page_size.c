@@ -1,3 +1,4 @@
+static void
 set_default_layout_page_size (void)
 {
   /* From gcc.dg/20020523-1.c test in gcc 3.2 testsuite.  */

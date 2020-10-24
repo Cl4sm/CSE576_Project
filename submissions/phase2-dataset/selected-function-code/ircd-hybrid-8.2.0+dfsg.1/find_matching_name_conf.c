@@ -1,3 +1,4 @@
+struct MaskItem *
 find_matching_name_conf(enum maskitem_type type, const char *name, const char *user,
                         const char *host, unsigned int flags)
 {

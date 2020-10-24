@@ -1,3 +1,4 @@
+extern int
 snprint_devices (char * buff, int len, struct vectors *vecs)
 {
 	DIR *blkdir;

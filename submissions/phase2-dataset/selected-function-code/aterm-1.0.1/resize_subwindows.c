@@ -1,3 +1,4 @@
+Bool
 resize_subwindows(int width, int height)
 {
     int             x = 0, y = 0;

@@ -1,3 +1,4 @@
+int ux_socket_connect(const char *name)
 {
 	int fd, len;
 	struct sockaddr_un addr;

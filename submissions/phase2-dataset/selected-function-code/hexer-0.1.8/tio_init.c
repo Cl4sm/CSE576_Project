@@ -1,3 +1,4 @@
+  int
 tio_init(prog)
   char *prog;
   /* Initialize.  This function should be called before any other

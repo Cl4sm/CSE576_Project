@@ -1,3 +1,4 @@
+static sc_trajectory_result _sc_weapon_track_point(sc_config *c, sc_trajectory *tr, void *data) {
 /* sc_weapon_track_point
    This function takes a current trajectory tr, and a weapon (passed in
    using the extra data argument).  This function is called when a

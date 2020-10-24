@@ -1,3 +1,4 @@
+static int
 gather_deps (DSO *dso, struct prelink_entry *ent)
 {
   int i, j, seen = 0;

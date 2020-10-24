@@ -1,3 +1,4 @@
+static double _sc_lscape_eval_canyon(double x) {
 /* _sc_lscape_eval_canyon
    Evaluates the ``canyon'' profile function at point x. */
 

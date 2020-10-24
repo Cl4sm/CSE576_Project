@@ -1,3 +1,4 @@
+int getxy ( char *arg, float *x, float *y, int dim )
 {
   int i, n, nc=0, err=0 ;
   char c ;

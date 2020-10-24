@@ -1,3 +1,4 @@
+YY_BUFFER_STATE yy_scan_buffer( char *base, yy_size_t size )
 #else
 YY_BUFFER_STATE yy_scan_buffer( base, size )
 char *base;

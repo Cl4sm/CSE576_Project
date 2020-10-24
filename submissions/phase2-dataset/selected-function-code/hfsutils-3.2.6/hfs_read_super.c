@@ -1,3 +1,4 @@
+static
 struct super_block *hfs_read_super(struct super_block *sb,
 				   void *data, int silent)
 {

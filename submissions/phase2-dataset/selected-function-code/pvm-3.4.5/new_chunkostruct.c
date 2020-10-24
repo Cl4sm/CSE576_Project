@@ -1,3 +1,4 @@
+CHUNK_ORDER_PTR 
 new_chunkostruct( nbufs )
 int nbufs;
 {

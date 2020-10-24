@@ -1,3 +1,4 @@
+static void _sim_access_set_property(GObject *object, guint property_id, const GValue *value, GParamSpec *pspec)
 {
 	SimAccess *self = SIM_ACCESS(object);
 	GError *error = NULL;

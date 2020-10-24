@@ -1,3 +1,4 @@
+int yylex_destroy  (void)
 {
     
     /* Pop the buffer stack, destroying each element. */

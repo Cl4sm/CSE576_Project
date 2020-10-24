@@ -1,3 +1,4 @@
+static void egc_copy(px)
      SCM *px;
 {
   SCM z, x = *px;

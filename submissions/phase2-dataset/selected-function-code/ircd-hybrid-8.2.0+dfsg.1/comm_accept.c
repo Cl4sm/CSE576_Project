@@ -1,3 +1,4 @@
+int
 comm_accept(struct Listener *lptr, struct irc_ssaddr *addr)
 {
   int newfd;

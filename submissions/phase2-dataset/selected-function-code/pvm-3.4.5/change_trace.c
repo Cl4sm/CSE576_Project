@@ -1,3 +1,4 @@
+int
 change_trace(tp, trctid, trcctx, trctag)
 	struct task *tp;
 	int trctid, trcctx, trctag;

@@ -1,3 +1,4 @@
+int pcx_first ( IFILE *f )
 {
   int err=0, xmin, xmax, ymin, ymax, nc, nb ;
   long start ;

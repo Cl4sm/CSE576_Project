@@ -1,3 +1,4 @@
+static int
 SFfindFile(dir, str)
 	SFDir		*dir;
 	register char	*str;

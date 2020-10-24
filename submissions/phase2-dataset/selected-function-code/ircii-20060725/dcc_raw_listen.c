@@ -1,3 +1,4 @@
+u_char	*
 dcc_raw_listen(iport)
 	u_int	iport;
 {

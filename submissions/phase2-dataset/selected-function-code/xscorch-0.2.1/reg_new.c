@@ -1,3 +1,4 @@
+reg *reg_new(const char *filename) {
 /* reg_new
    Create a new registry structure, with the associated filename.
    The filename is used by reg_load() and reg_save() functions,

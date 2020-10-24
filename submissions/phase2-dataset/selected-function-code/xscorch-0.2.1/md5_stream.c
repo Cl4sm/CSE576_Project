@@ -1,3 +1,4 @@
+int
 md5_stream (stream, resblock)
      FILE *stream;
      void *resblock;

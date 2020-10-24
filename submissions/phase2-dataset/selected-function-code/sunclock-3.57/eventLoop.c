@@ -1,3 +1,4 @@
+void
 eventLoop()
 {
         XEvent                  ev;

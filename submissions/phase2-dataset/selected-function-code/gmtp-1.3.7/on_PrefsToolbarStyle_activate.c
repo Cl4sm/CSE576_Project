@@ -1,3 +1,4 @@
+void on_PrefsToolbarStyle_activate(GtkComboBox *combobox, gpointer user_data) {
 #if HAVE_GTK3 == 0
     #if GTK_CHECK_VERSION(2,6,0)
     gchar *selection = gtk_combo_box_get_active_text(GTK_COMBO_BOX(combobox));

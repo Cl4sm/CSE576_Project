@@ -1,3 +1,4 @@
+static int
 val_in_range(struct f_val v1, struct f_val v2)
 {
   if ((v1.type == T_PATH) && (v2.type == T_PATH_MASK))

@@ -1,3 +1,4 @@
+static inline void
 fib_merge_readers(struct fib_iterator *i, struct fib_node *to)
 {
   if (to)

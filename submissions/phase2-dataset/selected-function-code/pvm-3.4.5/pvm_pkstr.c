@@ -1,3 +1,4 @@
+int
 pvm_pkstr(cp)
 	char *cp;
 {

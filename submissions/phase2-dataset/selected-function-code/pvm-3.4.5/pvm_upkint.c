@@ -1,3 +1,4 @@
+int
 pvm_upkint(np, cnt, std)
 	int *np;
 	int cnt;

@@ -1,3 +1,4 @@
+void
 ospf_age(struct proto_ospf *po)
 {
   struct proto *p = &po->proto;

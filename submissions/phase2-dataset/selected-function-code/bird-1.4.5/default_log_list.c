@@ -1,3 +1,4 @@
+static list *
 default_log_list(int debug, int init, char **syslog_name)
 {
   static list init_log_list;

@@ -1,3 +1,4 @@
+int verify_init(SERVICE_OPTIONS *section) {
     STACK_OF(X509_NAME) *ca_dn;
     char *ca_name;
     int i;

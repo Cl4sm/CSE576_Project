@@ -1,3 +1,4 @@
+int
 blacklist_from_config (void)
 {
   struct config_line *c;

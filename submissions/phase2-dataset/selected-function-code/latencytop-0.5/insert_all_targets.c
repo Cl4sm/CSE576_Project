@@ -1,3 +1,4 @@
+static void insert_all_targets(void)
 {
 	GList *entry;
 	struct process *proc;

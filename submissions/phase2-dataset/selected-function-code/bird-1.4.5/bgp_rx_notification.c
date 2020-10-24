@@ -1,3 +1,4 @@
+static void
 bgp_rx_notification(struct bgp_conn *conn, byte *pkt, int len)
 {
   struct bgp_proto *p = conn->bgp;

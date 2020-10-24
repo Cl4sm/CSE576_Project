@@ -1,3 +1,4 @@
+int
 cmdline_parser (int argc, char * const *argv, struct gengetopt_args_info *args_info)
 {
   int c;	/* Character of the parsed option.  */

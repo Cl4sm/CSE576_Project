@@ -1,3 +1,4 @@
+  static int
 regex_match_(long *regex, long position, int *parstack, int *parsp)
 {
   long *pp = regex;

@@ -1,3 +1,4 @@
+static void _sc_net_incoming_connect(sc_config *c, sc_server *srv, int socket, const addr *fromaddr, int fromaddrsize) {
 
    sc_connection *client;
    sc_player *p;

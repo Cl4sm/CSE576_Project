@@ -1,3 +1,4 @@
+char
 *jis_to_euc(const char *str)
 {
     int len, i, p=0, kanji=0;

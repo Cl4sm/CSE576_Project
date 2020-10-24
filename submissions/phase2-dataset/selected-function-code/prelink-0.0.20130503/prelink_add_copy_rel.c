@@ -1,3 +1,4 @@
+static int
 prelink_add_copy_rel (DSO *dso, int n, GElf_Rel *rel, struct copy_relocs *cr)
 {
   Elf_Data *data = NULL;

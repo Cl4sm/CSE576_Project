@@ -1,3 +1,4 @@
+void
 close_all_exec()
 {
 	int	i;

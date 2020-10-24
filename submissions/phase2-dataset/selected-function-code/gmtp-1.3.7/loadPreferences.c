@@ -1,3 +1,4 @@
+gboolean loadPreferences() {
 #if HAVE_GTK3 == 0
     if (gconf_client_dir_exists(gconfconnect, "/apps/gMTP", NULL) == TRUE) {
         gconf_client_preload(gconfconnect, "/apps/gMTP", GCONF_CLIENT_PRELOAD_ONELEVEL, NULL);

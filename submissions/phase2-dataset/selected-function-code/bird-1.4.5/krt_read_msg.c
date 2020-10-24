@@ -1,3 +1,4 @@
+static void
 krt_read_msg(struct proto *p, struct ks_msg *msg, int scan)
 {
   /* p is NULL iff KRT_SHARED_SOCKET and !scan */

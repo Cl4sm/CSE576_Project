@@ -1,3 +1,4 @@
+void
 roa_show(struct roa_show_data *d)
 {
   struct roa_node *rn;

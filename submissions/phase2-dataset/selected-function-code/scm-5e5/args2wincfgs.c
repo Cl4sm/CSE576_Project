@@ -1,3 +1,4 @@
+static int args2wincfgs(vlu, oargs)
      XWindowChanges *vlu;
      SCM oargs;
 {

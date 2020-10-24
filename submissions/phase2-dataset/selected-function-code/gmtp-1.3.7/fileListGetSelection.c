@@ -1,3 +1,4 @@
+GList* fileListGetSelection() {
     GList *selectedFiles, *ptr;
     GtkTreeRowReference *ref;
     GtkTreeModel *sortmodel;

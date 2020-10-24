@@ -1,3 +1,4 @@
+static bool _sc_net_cli_recv_flags(sc_config *c, sc_packet *packet) {
 /* _sc_net_cli_recv_flags
    Similar to the orders packet, except we are receiving a player's
    set of command flags.  Again, returns true on success. */

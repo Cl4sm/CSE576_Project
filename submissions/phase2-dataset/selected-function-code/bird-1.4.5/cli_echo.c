@@ -1,3 +1,4 @@
+void
 cli_echo(unsigned int class, byte *msg)
 {
   unsigned len, free, i, l;

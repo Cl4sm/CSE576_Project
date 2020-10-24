@@ -1,3 +1,4 @@
+static void
 read_auth_reply(fde_t *fd, void *data)
 {
   struct AuthRequest *auth = data;

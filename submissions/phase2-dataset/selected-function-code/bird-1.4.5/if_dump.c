@@ -1,3 +1,4 @@
+void
 if_dump(struct iface *i)
 {
   struct ifa *a;

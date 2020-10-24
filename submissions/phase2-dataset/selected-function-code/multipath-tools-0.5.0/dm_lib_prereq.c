@@ -1,3 +1,4 @@
+static int
 dm_lib_prereq (void)
 {
 	char version[64];

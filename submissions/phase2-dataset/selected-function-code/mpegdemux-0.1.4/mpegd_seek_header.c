@@ -1,3 +1,4 @@
+static
 int mpegd_seek_header (mpeg_demux_t *mpeg)
 {
 	unsigned long long ofs;

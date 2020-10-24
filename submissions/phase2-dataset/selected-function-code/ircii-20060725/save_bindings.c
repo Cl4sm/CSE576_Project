@@ -1,3 +1,4 @@
+void
 save_bindings(fp, do_all)
 	FILE	*fp;
 	int	do_all;

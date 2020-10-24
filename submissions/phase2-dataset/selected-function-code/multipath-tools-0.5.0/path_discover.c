@@ -1,3 +1,4 @@
+static int
 path_discover (vector pathvec, struct config * conf,
 	       struct udev_device *udevice, int flag)
 {

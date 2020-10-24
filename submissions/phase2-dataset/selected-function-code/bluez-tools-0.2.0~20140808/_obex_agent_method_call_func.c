@@ -1,3 +1,4 @@
+static void _obex_agent_method_call_func(GDBusConnection *connection, const gchar *sender, const gchar *object_path, const gchar *interface_name, const gchar *method_name, GVariant *parameters, GDBusMethodInvocation *invocation, gpointer user_data)
 {
     g_assert(user_data != NULL);
     ObexAgent *self = user_data;

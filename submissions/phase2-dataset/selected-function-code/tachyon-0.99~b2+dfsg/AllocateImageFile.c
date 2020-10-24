@@ -1,3 +1,4 @@
+rawimage * AllocateImageFile(const char * filename) { 
   rawimage * newimage = NULL;
   int i, len, intable;
 

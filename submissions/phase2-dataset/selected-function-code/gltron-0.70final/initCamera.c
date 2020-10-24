@@ -1,3 +1,4 @@
+void initCamera(Camera *cam, Data *data, int type) {
 	float x,y;
 	
 	getPositionFromData(&x, &y, data);

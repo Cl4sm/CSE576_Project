@@ -1,3 +1,4 @@
+int
 main(int argc, char *argv[])
 {
   /* Check to see if the user is running us as root, which is a nono */

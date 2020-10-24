@@ -1,3 +1,4 @@
+void
 hash_del_userhost(struct UserHost *userhost)
 {
   unsigned int hashv = strhash(userhost->host);

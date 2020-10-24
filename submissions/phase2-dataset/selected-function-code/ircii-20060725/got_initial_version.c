@@ -1,3 +1,4 @@
+void
 got_initial_version(line)
 	u_char	*line;
 {

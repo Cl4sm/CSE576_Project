@@ -1,3 +1,4 @@
+static void 
 bfd_session_timeout(struct bfd_session *s)
 {
   struct bfd_proto *p = s->ifa->bfd;

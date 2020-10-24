@@ -1,3 +1,4 @@
+bool reg_var_set_by_value(const reg *r, reg_var *b, const char *name, char *value) {
 /* reg_var_set_by_value
    Adds a new variable, based on the contents of the string value.  First,
    this function attempts to set an integer variable; failing that, it will

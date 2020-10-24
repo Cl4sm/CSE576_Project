@@ -1,3 +1,4 @@
+static int
 mp_no_path_retry_handler(vector strvec)
 {
 	struct mpentry *mpe = VECTOR_LAST_SLOT(conf->mptable);

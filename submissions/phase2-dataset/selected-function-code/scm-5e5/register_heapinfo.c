@@ -1,3 +1,4 @@
+__inline__
 #endif
 static void
 register_heapinfo ()

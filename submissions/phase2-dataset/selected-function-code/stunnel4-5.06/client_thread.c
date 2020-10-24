@@ -1,3 +1,4 @@
+void *client_thread(void *arg) {
     CLI *c=arg;
 
 #ifdef DEBUG_STACK_SIZE

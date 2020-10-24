@@ -1,3 +1,4 @@
+void
 free_hwe (struct hwentry * hwe)
 {
 	if (!hwe)

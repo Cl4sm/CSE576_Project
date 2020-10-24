@@ -1,3 +1,4 @@
+void init_scm(iverbose, buf0stdin, init_heap_size)
      int iverbose;
      int buf0stdin;
      long init_heap_size;

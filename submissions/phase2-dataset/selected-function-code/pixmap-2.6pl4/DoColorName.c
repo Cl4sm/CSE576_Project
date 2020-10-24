@@ -1,3 +1,4 @@
+void DoColorName()
 {
   char *c_name;
   char message[80];

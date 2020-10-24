@@ -1,3 +1,4 @@
+static void _sc_console_lock_view_to_cursor(ScConsole *cons, ScConsoleCursor *cursor) {
 /* sc_console_lock_view_to_cursor
    Forces the cursor to appear within the viewport by altering the viewport
    if necessary.  */

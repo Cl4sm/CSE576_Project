@@ -1,3 +1,4 @@
+int
 pvm_sendsig(tid, signum)
 	int tid;
 	int signum;

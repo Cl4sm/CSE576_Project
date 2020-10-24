@@ -1,3 +1,4 @@
+char *strsignal(int sig)
 {
   struct
   {

@@ -1,3 +1,4 @@
+void
 drawMeridian(Context, lon, step, thickness, numdigits)
 struct Sundata * Context;
 double lon;

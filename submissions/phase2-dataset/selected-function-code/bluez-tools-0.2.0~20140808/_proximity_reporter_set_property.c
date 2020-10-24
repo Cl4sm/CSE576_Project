@@ -1,3 +1,4 @@
+static void _proximity_reporter_set_property(GObject *object, guint property_id, const GValue *value, GParamSpec *pspec)
 {
 	ProximityReporter *self = PROXIMITY_REPORTER(object);
 	GError *error = NULL;

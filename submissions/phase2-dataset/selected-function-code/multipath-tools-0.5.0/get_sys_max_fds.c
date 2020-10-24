@@ -1,3 +1,4 @@
+int
 get_sys_max_fds(int *max_fds)
 {
 	FILE *file;

@@ -1,3 +1,4 @@
+static
 void cplace(bcache *cache, bucket *b)
 {
   bucket *p;

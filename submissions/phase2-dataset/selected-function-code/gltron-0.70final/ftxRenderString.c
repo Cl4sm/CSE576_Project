@@ -1,3 +1,4 @@
+void ftxRenderString(FontTex *ftx, const char *string, int len) {
   int i;
   int bound = -1;
   int index;

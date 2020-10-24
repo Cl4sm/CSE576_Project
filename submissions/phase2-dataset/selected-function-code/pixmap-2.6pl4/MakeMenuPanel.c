@@ -1,3 +1,4 @@
+void MakeMenuPanel(father, menu, num, callback)
      Widget father;
      ButtonRec	   menu[];
      Cardinal       num;

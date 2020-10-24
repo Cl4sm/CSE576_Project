@@ -1,3 +1,4 @@
+static void
 fmtfp(char *buffer, size_t *currlen, size_t maxlen, LDOUBLE fvalue,
 	int min, int max, int flags)
 {

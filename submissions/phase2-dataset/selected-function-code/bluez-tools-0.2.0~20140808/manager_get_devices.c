@@ -1,3 +1,4 @@
+const gchar **manager_get_devices(Manager *self, const gchar *adapter_pattern)
 {
     g_assert(MANAGER_IS(self));
 

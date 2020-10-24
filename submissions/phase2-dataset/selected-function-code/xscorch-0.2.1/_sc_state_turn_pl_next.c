@@ -1,3 +1,4 @@
+static void _sc_state_turn_pl_next(sc_config *c, sc_game *g) {
 
    ++g->curplayer;
    if(g->curplayer >= c->numplayers) switch(c->options.mode) {

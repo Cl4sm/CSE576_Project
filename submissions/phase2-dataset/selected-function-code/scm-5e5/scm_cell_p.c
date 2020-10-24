@@ -1,3 +1,4 @@
+int scm_cell_p(x)
      SCM x;
 {
 	register int i, j;

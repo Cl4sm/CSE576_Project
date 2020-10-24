@@ -1,3 +1,4 @@
+int
 pvm_delhosts(names, count, svp)
 	char **names;
 	int count;

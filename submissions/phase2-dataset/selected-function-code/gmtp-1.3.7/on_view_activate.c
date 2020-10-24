@@ -1,3 +1,4 @@
+void on_view_activate(GtkMenuItem *menuitem, gpointer user_data) {
 #if HAVE_GTK3 == 0
     gchar *gconf_path = NULL;
     gboolean state = gtk_check_menu_item_get_active(GTK_CHECK_MENU_ITEM(menuitem));

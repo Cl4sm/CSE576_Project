@@ -1,3 +1,4 @@
+static gint _sc_drawbuf_configure(GtkWidget *widget, GdkEventConfigure *event) {
 
    ScDrawbuf *draw = SC_DRAWBUF(widget);
    gint width = widget->allocation.width;

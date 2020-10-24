@@ -1,3 +1,4 @@
+int libcheck_check (struct checker * c)
 {
 	int ret;
 	struct directio_context * ct = (struct directio_context *)c->context;

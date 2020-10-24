@@ -1,3 +1,4 @@
+static
 int mpeg_list_system_header (mpeg_demux_t *mpeg)
 {
 	FILE *fp;

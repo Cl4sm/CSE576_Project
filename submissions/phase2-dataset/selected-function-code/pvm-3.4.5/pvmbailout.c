@@ -1,3 +1,4 @@
+void
 pvmbailout(n)
 	int n;
 {

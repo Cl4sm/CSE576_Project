@@ -1,3 +1,4 @@
+static	void
 redirect(command, args, subargs)
 	u_char	*command,
 		*args,

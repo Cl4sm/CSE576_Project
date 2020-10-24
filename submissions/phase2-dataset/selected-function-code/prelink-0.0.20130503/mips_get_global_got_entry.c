@@ -1,3 +1,4 @@
+static inline int
 mips_get_global_got_entry (struct mips_global_got_iterator *ggi)
 {
   ggi->sym_index++;

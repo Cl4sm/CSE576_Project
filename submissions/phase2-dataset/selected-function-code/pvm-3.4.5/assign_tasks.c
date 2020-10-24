@@ -1,3 +1,4 @@
+assign_tasks(wp)
 	struct waitc *wp;		/* (any) waitc in peer group for this op */
 {
 	static int lasthh = -1;			/* for assigning hosts */

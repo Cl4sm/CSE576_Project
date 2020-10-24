@@ -1,3 +1,4 @@
+static void
 bgp_show_proto_info(struct proto *P)
 {
   struct bgp_proto *p = (struct bgp_proto *) P;

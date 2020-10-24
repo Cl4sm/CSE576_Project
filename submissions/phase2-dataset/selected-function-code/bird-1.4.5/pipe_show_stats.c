@@ -1,3 +1,4 @@
+static void
 pipe_show_stats(struct pipe_proto *p)
 {
   struct proto_stats *s1 = &p->p.stats;

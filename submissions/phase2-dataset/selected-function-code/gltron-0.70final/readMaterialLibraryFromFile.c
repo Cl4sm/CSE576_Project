@@ -1,3 +1,4 @@
+void readMaterialLibraryFromFile(char *filename, Mesh *pMesh) {
   Material *pMaterials; 
   int iMaterial;
 

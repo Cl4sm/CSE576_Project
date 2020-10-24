@@ -1,3 +1,4 @@
+  static void
 tio_warning_msg(const char *fmt, ...)
 #else
   static void

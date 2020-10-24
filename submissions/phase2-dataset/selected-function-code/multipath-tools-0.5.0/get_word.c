@@ -1,3 +1,4 @@
+int
 get_word (char * sentence, char ** word)
 {
 	char * p;

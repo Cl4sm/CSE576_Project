@@ -1,3 +1,4 @@
+static void drawSpires(float radius) {
   int i;
   float left[3], right[3];
   float zunit[3] = {0, 0, 1};

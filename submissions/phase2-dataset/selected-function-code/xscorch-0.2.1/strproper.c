@@ -1,3 +1,4 @@
+char *strproper(char *s) {
 /* String-Proper
    converts string <s> to propercase character */
 

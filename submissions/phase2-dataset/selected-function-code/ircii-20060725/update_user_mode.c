@@ -1,3 +1,4 @@
+void
 update_user_mode(modes)
 	u_char	*modes;
 {

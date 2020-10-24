@@ -1,3 +1,4 @@
+  static void
 he_motion(struct he_s *hedit, int key, long count)
 {
   int i;

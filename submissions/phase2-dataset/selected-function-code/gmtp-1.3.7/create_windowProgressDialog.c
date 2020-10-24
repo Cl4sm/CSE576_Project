@@ -1,3 +1,4 @@
+GtkWidget* create_windowProgressDialog(gchar* msg) {
     GtkWidget *window1;
     GtkWidget *vbox1;
     GtkWidget *hbox1;

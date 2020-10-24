@@ -1,3 +1,4 @@
+void 
 readLanguage()
 {
     FILE *rc;           /* File pointer for rc file */

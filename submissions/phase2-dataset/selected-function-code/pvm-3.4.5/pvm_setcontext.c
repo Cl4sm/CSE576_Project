@@ -1,3 +1,4 @@
+int
 pvm_setcontext(newctx)
 	int newctx;
 {

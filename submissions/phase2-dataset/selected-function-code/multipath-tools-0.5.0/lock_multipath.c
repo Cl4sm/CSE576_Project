@@ -1,3 +1,4 @@
+static int
 lock_multipath (struct multipath * mpp, int lock)
 {
 	struct pathgroup * pgp;

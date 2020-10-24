@@ -1,3 +1,4 @@
+menu_t         *
 menu_add(menu_t * parent, char *path)
 {
 #ifdef MENUBAR

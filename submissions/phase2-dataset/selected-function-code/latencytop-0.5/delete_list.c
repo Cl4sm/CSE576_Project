@@ -1,3 +1,4 @@
+void delete_list(void)
 {
 	GList *entry, *entry2,*next;
 	struct latency_line *line;

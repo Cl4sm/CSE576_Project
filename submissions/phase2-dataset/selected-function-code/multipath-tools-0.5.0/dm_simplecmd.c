@@ -1,3 +1,4 @@
+extern int
 dm_simplecmd (int task, const char *name, int no_flush, uint32_t *cookie) {
 	int r = 0;
 	int udev_wait_flag = (task == DM_DEVICE_RESUME ||

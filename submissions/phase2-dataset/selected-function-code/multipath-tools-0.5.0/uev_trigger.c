@@ -1,3 +1,4 @@
+int
 uev_trigger (struct uevent * uev, void * trigger_data)
 {
 	int r = 0;

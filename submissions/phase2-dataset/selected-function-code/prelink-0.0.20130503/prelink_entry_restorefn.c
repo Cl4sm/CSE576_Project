@@ -1,3 +1,4 @@
+static void *
 prelink_entry_restorefn (FILE *f)
 {
   struct prelink_entry *e;

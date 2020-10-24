@@ -1,3 +1,4 @@
+SCM scm_logbitp(index, j1)
      SCM index, j1;
 {
   ASRTER(INUMP(index) && INUM(index) >= 0, index, ARG1, s_logbitp);

@@ -1,3 +1,4 @@
+int setZoomAspect(Context, mode)
 struct Sundata * Context;
 int mode;
 {

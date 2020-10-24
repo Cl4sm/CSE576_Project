@@ -1,3 +1,4 @@
+gotnewhosts(htp2, htp1)
 	struct htab *htp2;		/* new host table */
 	struct htab *htp1;		/* old host table */
 {

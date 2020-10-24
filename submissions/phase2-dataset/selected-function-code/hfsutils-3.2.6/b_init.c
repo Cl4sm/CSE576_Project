@@ -1,3 +1,4 @@
+int b_init(hfsvol *vol)
 {
   bcache *cache;
   int i;

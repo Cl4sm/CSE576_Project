@@ -1,3 +1,4 @@
+static	u_char	*
 recreate_mode(ChannelList *chan)
 {
 	int	mode_pos = 0,

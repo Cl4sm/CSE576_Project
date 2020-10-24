@@ -1,3 +1,4 @@
+void
 set_channel_mode(struct Client *source_p, struct Channel *chptr,
                  struct Membership *member, int parc, char *parv[])
 {

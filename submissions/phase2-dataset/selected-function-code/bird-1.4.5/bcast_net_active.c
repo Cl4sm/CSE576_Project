@@ -1,3 +1,4 @@
+int
 bcast_net_active(struct ospf_iface *ifa)
 {
   struct ospf_neighbor *neigh;

@@ -1,3 +1,4 @@
+static void stri_normal_reverse(const stri * trn, const vector * hit, const ray * incident, vector * N) {
   flt U, V, W, lensqr, invlen;
   vector P, tmp, norm;
   

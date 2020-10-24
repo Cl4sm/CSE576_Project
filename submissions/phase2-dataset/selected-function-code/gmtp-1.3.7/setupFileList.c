@@ -1,3 +1,4 @@
+void setupFileList(GtkTreeView *treeviewFiles) {
     GtkCellRenderer *renderer;
     GtkTreeViewColumn *column;
     GtkWidget *header;

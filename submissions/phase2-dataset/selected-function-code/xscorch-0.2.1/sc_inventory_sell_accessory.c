@@ -1,3 +1,4 @@
+bool sc_inventory_sell_accessory(sc_player *p, sc_accessory_info *info) {
 /* sc_inventory_sell_accessory
    Sells the specified accessory.  Returns true if the transaction was successful. */
 

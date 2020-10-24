@@ -1,3 +1,4 @@
+int
 sk_rx_ready(sock *s)
 {
   fd_set rd, wr;

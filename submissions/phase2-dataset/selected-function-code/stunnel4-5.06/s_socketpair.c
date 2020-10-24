@@ -1,3 +1,4 @@
+int s_socketpair(int domain, int type, int protocol, int sv[2],
         int nonblock, char *msg) {
 #ifdef USE_NEW_LINUX_API
     if(nonblock)

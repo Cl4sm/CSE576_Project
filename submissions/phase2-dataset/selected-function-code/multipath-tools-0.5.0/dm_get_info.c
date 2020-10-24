@@ -1,3 +1,4 @@
+int
 dm_get_info (char * mapname, struct dm_info ** dmi)
 {
 	int r = 1;

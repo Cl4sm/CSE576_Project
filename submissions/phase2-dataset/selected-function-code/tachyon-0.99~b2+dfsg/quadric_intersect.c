@@ -1,3 +1,4 @@
+void quadric_intersect(const quadric * q, ray * ry) {
   flt Aq, Bq, Cq;
   flt t1, t2;
   flt disc;

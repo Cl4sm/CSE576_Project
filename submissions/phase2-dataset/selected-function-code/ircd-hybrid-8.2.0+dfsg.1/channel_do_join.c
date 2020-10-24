@@ -1,3 +1,4 @@
+void
 channel_do_join(struct Client *source_p, char *channel, char *key_list)
 {
   char *p = NULL;

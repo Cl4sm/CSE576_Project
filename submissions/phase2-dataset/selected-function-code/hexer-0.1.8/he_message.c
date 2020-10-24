@@ -1,3 +1,4 @@
+  void
 he_message(int beep, char *fmt, ...)
 #else
   void

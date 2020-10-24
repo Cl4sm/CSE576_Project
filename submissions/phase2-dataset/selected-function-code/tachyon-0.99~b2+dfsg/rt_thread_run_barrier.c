@@ -1,3 +1,4 @@
+void * (*rt_thread_run_barrier(rt_run_barrier_t *barrier,
                                void * fctn(void*),
                                void * parms,
                                void **rsltparms))(void *) {

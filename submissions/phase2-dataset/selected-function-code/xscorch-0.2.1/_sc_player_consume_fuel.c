@@ -1,3 +1,4 @@
+static bool _sc_player_consume_fuel(const sc_accessory_config *ac, sc_player *p) {
 /* _sc_player_consume_fuel
    Used to eat up fuel, based on tank type and such. */
 

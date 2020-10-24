@@ -1,3 +1,4 @@
+void
 scr_reset(void)
 {
     int             i, j, k, total_rows, prev_total_rows;

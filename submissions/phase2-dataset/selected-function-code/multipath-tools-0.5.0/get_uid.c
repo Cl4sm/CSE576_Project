@@ -1,3 +1,4 @@
+static int
 get_uid (struct path * pp)
 {
 	char *c;

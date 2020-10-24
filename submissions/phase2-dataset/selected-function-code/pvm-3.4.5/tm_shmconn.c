@@ -1,3 +1,4 @@
+int
 tm_shmconn(tp, mp)
 	struct task *tp;
 	struct pmsg *mp;	/* remember no return message */

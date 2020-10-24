@@ -1,3 +1,4 @@
+int
 node_mcast(mid, dtid, code)
 	int mid;	/* message id */
 	int dtid;	/* destination */

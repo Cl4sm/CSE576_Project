@@ -1,3 +1,4 @@
+void sc_dialog_text_buffer(const char *title, const char *buffer,
                            GdkFont *font_normal, GdkFont *font_italic, GdkFont *font_bold) {
 
    ScDialog *dlg;

@@ -1,3 +1,4 @@
+int main ()
 {
     char *pbuf;
     //  char *test = "老虎不吃人 This is not really a a大事";

@@ -1,3 +1,4 @@
+int SLPipe (fd, bytes, agent)
 FILE *fd;
 int bytes;
 char *agent;

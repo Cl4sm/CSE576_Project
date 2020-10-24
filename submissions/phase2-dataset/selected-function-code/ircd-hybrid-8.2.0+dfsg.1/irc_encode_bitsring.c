@@ -1,3 +1,4 @@
+static int
 irc_encode_bitsring(const char **bp, const char *end, unsigned char **labelp,
                     unsigned char **dst, const unsigned char *eom)
 {

@@ -1,3 +1,4 @@
+void sc_window_paint_end_game(sc_window *w_) {
 
    GtkWidget *console;
    sc_window_gtk *w = (sc_window_gtk *)w_;

@@ -1,3 +1,4 @@
+NOEXPORT void init_remote(CLI *c) {
     /* where to bind connecting socket */
     if(c->opt->option.local) /* outgoing interface */
         c->bind_addr=&c->opt->source_addr;

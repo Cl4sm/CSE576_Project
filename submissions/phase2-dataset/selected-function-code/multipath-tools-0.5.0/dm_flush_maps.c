@@ -1,3 +1,4 @@
+extern int
 dm_flush_maps (void)
 {
 	int r = 0;

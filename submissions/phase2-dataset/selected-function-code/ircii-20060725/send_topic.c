@@ -1,3 +1,4 @@
+static	void
 send_topic(command, args, subargs)
 	u_char	*command,
 		*args,

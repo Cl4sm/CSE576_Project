@@ -1,3 +1,4 @@
+void
 check_ext_input()
 {
 	char input[256];

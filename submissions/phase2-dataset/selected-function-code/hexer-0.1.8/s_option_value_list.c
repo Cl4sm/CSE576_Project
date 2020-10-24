@@ -1,3 +1,4 @@
+  char **
 s_option_value_list()
 {
   struct option_s *i;

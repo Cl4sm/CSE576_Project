@@ -1,3 +1,4 @@
+int
 adjust_mdebug (DSO *dso, int n, GElf_Addr start, GElf_Addr adjust)
 {
   struct mdebug mdebug;

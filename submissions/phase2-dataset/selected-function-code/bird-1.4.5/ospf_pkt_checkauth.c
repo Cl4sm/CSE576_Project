@@ -1,3 +1,4 @@
+static int
 ospf_pkt_checkauth(struct ospf_neighbor *n, struct ospf_iface *ifa, struct ospf_packet *pkt, int size)
 {
   struct proto_ospf *po = ifa->oa->po;

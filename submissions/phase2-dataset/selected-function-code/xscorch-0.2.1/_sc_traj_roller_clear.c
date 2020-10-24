@@ -1,3 +1,4 @@
+static bool _sc_traj_roller_clear(const sc_config *c, sc_trajectory *tr, int flags,
                                   double deltax, double deltay) {
 /* sc_traj_roller_clear
    This takes a trajectory, and plants it at (curx + deltax),

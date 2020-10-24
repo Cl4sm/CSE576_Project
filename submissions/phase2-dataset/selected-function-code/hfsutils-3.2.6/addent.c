@@ -1,3 +1,4 @@
+static
 int addent(mountent *ent)
 {
   if (nmounts >= mtabsz)

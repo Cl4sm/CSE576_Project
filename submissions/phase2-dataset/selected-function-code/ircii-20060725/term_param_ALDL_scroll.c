@@ -1,3 +1,4 @@
+static	int
 term_param_ALDL_scroll(line1, line2, n)
 	int	line1,
 		line2,

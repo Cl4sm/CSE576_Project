@@ -1,3 +1,4 @@
+bool sc_config_okay_to_begin(const sc_config *c) {
 /* sc_config_okay_to_begin
    Returns true if it is okay to begin a new game. This performs some
    sanity checking (right number of players, network game setup as

@@ -1,3 +1,4 @@
+int
 _nl_explode_name (name, language, modifier, territory, codeset,
 		  normalized_codeset, special, sponsor, revision)
      char *name;

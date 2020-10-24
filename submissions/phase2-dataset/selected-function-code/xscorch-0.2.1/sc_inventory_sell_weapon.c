@@ -1,3 +1,4 @@
+bool sc_inventory_sell_weapon(sc_player *p, sc_weapon_info *info) {
 /* sc_inventory_sell_weapon
    Sells the specified weapon.  Returns true if the transaction was successful. */
 

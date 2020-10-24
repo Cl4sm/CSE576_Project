@@ -1,3 +1,4 @@
+static
 int str_get_streams (const char *str, unsigned char stm[256], unsigned msk)
 {
 	unsigned i;

@@ -1,3 +1,4 @@
+int
 sleep_dammit( msecs )
 int msecs;
 {

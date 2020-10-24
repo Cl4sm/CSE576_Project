@@ -1,3 +1,4 @@
+void doLookAt(float *cam, float *target, float *up) {
   float m[16];
   float x[3], y[3], z[3];
 

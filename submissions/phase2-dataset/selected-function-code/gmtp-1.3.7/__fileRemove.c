@@ -1,3 +1,4 @@
+void __fileRemove(GtkTreeRowReference *Row) {
     GtkTreePath *path;
     GtkTreeIter iter;
     gchar* filename = NULL;

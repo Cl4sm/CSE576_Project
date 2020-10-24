@@ -1,3 +1,4 @@
+int l_getddr(hfsvol *vol, Block0 *ddr)
 {
   block b;
   const byte *ptr = b;

@@ -1,3 +1,4 @@
+static inline void _sc_expl_annihilate_clear_column(sc_config *c, sc_land *l,
                                                     int x, int y1, int y2) {
 /* sc_expl_annihilate_clear_column
    Clears a column of everything in a column; everything in the column

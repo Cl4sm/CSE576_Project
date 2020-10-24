@@ -1,3 +1,4 @@
+int
 pvm_upkushort(np, cnt, std)
 	unsigned short *np;
 	int cnt;

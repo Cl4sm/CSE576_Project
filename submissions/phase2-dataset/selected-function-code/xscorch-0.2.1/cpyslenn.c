@@ -1,3 +1,4 @@
+char *cpyslenn(char *d, const char *s, sizea size) {
 /* Copy-String-Length
    Copies the first <size> characters of string <s> to string <d>. String
    <d> must already be allocated to support <size> + 1 characters (this

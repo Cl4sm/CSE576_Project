@@ -1,3 +1,4 @@
+void sc_traj_revise_acceleration(sc_trajectory *tr, double naccx, double naccy) {
 /* sc_traj_revise_acceleration
    Call this function when you want to revise the course of the weapon
    already in flight via its acceleration terms.  Assumptions:  we want

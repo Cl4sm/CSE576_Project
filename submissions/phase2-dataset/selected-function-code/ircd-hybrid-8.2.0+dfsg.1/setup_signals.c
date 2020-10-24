@@ -1,3 +1,4 @@
+void
 setup_signals(void)
 {
   struct sigaction act;

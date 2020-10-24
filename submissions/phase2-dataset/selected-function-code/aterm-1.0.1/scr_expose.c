@@ -1,3 +1,4 @@
+void
 scr_expose(int x, int y, int width, int height)
 {
     int             i;

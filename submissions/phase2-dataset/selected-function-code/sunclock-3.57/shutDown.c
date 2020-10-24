@@ -1,3 +1,4 @@
+void
 shutDown(Context, all)
 struct Sundata * Context;
 int all;

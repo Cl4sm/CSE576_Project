@@ -1,3 +1,4 @@
+int
 pkt_to_task(tp, pp)
 	struct task *tp;
 	struct pkt *pp;

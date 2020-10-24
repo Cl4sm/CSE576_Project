@@ -1,3 +1,4 @@
+static void _heart_rate_set_property(GObject *object, guint property_id, const GValue *value, GParamSpec *pspec)
 {
 	HeartRate *self = HEART_RATE(object);
 	GError *error = NULL;

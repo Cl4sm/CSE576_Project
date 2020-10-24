@@ -1,3 +1,4 @@
+int rijndael_makeKey(rijndael_keyInstance *key, BYTE direction, int keyLen, char *keyMaterial)
 {
 	word8 k[4][MAXKC];
 	int i, j, t;

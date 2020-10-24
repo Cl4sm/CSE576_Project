@@ -1,3 +1,4 @@
+SCM scm_logxor(x, y)
      SCM x, y;
 {
   if (UNBNDP(y)) {

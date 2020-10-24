@@ -1,3 +1,4 @@
+gboolean read_access(const gchar *path, GError **error)
 {
     if(g_access(path, F_OK) != 0)
     {

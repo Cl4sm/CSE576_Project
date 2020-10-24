@@ -1,3 +1,4 @@
+void
 load_gline_database(void)
 {
   struct dbFILE *f = NULL;

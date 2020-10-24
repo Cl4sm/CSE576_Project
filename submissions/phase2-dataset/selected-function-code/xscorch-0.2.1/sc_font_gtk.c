@@ -1,3 +1,4 @@
+void sc_font_gtk(sc_window_gtk *w) {
 
    GtkWidget *button;
    int row = 0;

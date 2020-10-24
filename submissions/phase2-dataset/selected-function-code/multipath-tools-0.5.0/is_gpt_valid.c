@@ -1,3 +1,4 @@
+static int
 is_gpt_valid(int fd, uint64_t lba,
              gpt_header ** gpt, gpt_entry ** ptes)
 {

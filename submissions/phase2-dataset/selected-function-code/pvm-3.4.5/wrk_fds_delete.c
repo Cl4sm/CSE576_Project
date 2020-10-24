@@ -1,3 +1,4 @@
+wrk_fds_delete(fd, sets)
 	int fd;				/* the fd */
 	int sets;			/* which sets */
 {

@@ -1,3 +1,4 @@
+static bool _sc_expl_pixel_test(int dy, const sc_wedge_boundaries *wedge) {
 /* sc_expl_pixel_test */
 
    int dx            = 0;  /* currently this is never called with any other dx */

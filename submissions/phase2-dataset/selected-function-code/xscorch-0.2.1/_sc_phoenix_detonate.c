@@ -1,3 +1,4 @@
+static sc_phoenix_result _sc_phoenix_detonate(int locate, const sc_config *c, sc_weapon **wp, sc_explosion **e) {
 /* sc_phoenix_detonate
  * Detonate a weapon in place, immediately */
 

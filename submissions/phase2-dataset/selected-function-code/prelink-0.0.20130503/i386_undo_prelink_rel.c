@@ -1,3 +1,4 @@
+static int
 i386_undo_prelink_rel (DSO *dso, GElf_Rel *rel, GElf_Addr reladdr)
 {
   int sec;

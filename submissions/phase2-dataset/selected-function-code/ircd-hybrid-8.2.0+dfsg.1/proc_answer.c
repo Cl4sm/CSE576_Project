@@ -1,3 +1,4 @@
+static int
 proc_answer(struct reslist *request, HEADER *header, unsigned char *buf, unsigned char *eob)
 {
   char hostbuf[RFC1035_MAX_DOMAIN_LENGTH + 100]; /* working buffer */

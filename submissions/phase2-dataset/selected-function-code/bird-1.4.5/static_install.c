@@ -1,3 +1,4 @@
+static void
 static_install(struct proto *p, struct static_route *r, struct iface *ifa)
 {
   net *n;

@@ -1,3 +1,4 @@
+static inline void
 bgp_normalize_ec_set(struct adata *ad, u32 *src, int internal)
 {
   u32 *dst = int_set_get_data(ad);

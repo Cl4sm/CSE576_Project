@@ -1,3 +1,4 @@
+int base64encode ( void )
 {
   int err=0, c ;
   uchar n=0, m=0, bits=0 ;

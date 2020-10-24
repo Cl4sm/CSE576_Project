@@ -1,3 +1,4 @@
+static int
 orta_compare_ext(const struct proto_ospf *po, const orta *new, const orta *old)
 {
   int r;

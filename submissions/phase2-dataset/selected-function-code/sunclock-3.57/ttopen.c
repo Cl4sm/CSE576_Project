@@ -1,3 +1,4 @@
+void ttopen()
 {
     /* Set up tty flags in raw and cooked structures.
      * Do this before any termcap-initialisation stuff

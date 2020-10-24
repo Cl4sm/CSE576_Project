@@ -1,3 +1,4 @@
+void PWAddColor(Widget w, PWColorInfo *color)
 #else
 void PWAddColor(w, color)
      Widget w;

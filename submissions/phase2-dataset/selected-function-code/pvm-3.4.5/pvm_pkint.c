@@ -1,3 +1,4 @@
+int
 pvm_pkint(np, cnt, std)
 	int *np;
 	int cnt;

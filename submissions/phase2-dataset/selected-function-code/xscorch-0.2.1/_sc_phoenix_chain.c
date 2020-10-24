@@ -1,3 +1,4 @@
+static sc_phoenix_result _sc_phoenix_chain(__libj_unused int locate, const sc_config *c, sc_weapon **wp, sc_explosion **e) {
 /* _sc_phoenix_chain
    Split a missile with detonation on land and bounce a child if it has any */
 

@@ -1,3 +1,4 @@
+int
 Str_escaped(char *str)
 {
     register char  *p = str;

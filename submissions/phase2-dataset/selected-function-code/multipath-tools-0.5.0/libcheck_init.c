@@ -1,3 +1,4 @@
+int libcheck_init (struct checker * c)
 {
 	unsigned long pgsize = getpagesize();
 	struct directio_context * ct;

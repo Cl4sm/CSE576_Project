@@ -1,3 +1,4 @@
+loclinput(tp)
 	struct task *tp;
 {
 	struct pkt *pp = 0;

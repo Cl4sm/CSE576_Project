@@ -1,3 +1,4 @@
+static void
 ospf_get_status(struct proto *p, byte * buf)
 {
   struct proto_ospf *po = (struct proto_ospf *) p;

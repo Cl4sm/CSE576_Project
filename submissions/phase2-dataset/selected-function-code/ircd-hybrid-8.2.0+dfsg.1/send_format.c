@@ -1,3 +1,4 @@
+static void
 send_format(struct dbuf_block *buffer, const char *pattern, va_list args)
 {
   /*

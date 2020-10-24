@@ -1,3 +1,4 @@
+static void _sc_physics_setup_apply_gtk(__libj_unused ScDialog *dlg,
                                         sc_physics_setup_data_gtk *setup) {
 
    sc_physics *ph = setup->ph;

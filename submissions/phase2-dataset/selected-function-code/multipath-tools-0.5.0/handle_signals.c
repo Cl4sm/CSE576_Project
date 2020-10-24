@@ -1,3 +1,4 @@
+void
 handle_signals(void)
 {
 	if (reconfig_sig && running_state == DAEMON_RUNNING) {

@@ -1,3 +1,4 @@
+static const gchar *_find_device_pin(const gchar *device_path)
 {
     if (_pin_hash_table)
     {

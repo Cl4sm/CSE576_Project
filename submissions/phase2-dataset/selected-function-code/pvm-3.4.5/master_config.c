@@ -1,3 +1,4 @@
+int
 master_config(hn, argc, argv)
 	char *hn;			/* hostname or null */
 	int argc;

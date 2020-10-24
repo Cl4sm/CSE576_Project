@@ -1,3 +1,4 @@
+GType sc_active_console_get_type(void) {
 
    static GType sc_active_console_type = 0;
 

@@ -1,3 +1,4 @@
+void __fileMove(GtkTreeRowReference *Row) {
     GtkTreePath *path;
     GtkTreeIter iter;
 

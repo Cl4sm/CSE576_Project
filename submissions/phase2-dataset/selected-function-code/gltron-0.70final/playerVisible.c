@@ -1,3 +1,4 @@
+int playerVisible(Player *eye, Player *target) {
   float v1[3];
   float v2[3];
   float tmp[3];

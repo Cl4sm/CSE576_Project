@@ -1,3 +1,4 @@
+static struct cmd_node *
 cmd_find_abbrev(struct cmd_node *root, char *cmd, int len, int *pambiguous)
 {
   struct cmd_node *m, *best = NULL, *best2 = NULL;

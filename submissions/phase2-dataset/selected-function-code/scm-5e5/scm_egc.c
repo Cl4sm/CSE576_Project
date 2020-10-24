@@ -1,3 +1,4 @@
+void scm_egc()
 {
   VERIFY_INTS("scm_egc", 0L);
 /* We need to make sure there are enough cells available to migrate

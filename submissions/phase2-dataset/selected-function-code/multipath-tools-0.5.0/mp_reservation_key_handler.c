@@ -1,3 +1,4 @@
+static int
 mp_reservation_key_handler (vector strvec)
 {
 	char *buff;

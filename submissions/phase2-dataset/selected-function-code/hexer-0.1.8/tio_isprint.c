@@ -1,3 +1,4 @@
+  int
 tio_isprint(x)
   int x;
 {

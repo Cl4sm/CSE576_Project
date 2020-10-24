@@ -1,3 +1,4 @@
+static int
 ia64_adjust_rela (DSO *dso, GElf_Rela *rela, GElf_Addr start,
 		  GElf_Addr adjust)
 {

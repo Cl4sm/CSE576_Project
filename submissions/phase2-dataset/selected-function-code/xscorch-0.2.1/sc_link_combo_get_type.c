@@ -1,3 +1,4 @@
+GType sc_link_combo_get_type(void) {
 
    static GType sc_link_combo_type = 0;
 

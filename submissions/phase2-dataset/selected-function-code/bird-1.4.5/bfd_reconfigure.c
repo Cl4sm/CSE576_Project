@@ -1,3 +1,4 @@
+static int
 bfd_reconfigure(struct proto *P, struct proto_config *c)
 {
   struct bfd_proto *p = (struct bfd_proto *) P;

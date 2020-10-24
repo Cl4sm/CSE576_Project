@@ -1,3 +1,4 @@
+bool sc_net_send_packet(sc_connection *conn, sc_packet *packet) {
 /* sc_net_send_packet()
    Try to queue a packet; true indicates success. */
 

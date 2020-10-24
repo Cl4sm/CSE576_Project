@@ -1,3 +1,4 @@
+long f_alloc(hfsfile *file)
 {
   hfsvol *vol = file->vol;
   unsigned long clumpsz;

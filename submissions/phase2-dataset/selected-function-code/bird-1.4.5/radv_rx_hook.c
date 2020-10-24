@@ -1,3 +1,4 @@
+static int
 radv_rx_hook(sock *sk, int size)
 {
   struct radv_iface *ifa = sk->data;

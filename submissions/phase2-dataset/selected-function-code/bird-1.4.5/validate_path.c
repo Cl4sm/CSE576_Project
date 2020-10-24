@@ -1,3 +1,4 @@
+static int
 validate_path(struct bgp_proto *p, int as_path, int bs, byte *idata, unsigned int *ilength)
 {
   int res = 0;

@@ -1,3 +1,4 @@
+static void
 introduce_client(struct Client *source_p)
 {
   dlink_node *ptr = NULL;

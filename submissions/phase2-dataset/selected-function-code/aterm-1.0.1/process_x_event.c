@@ -1,3 +1,4 @@
+void
 process_x_event(XEvent * ev)
 {
     static int      bypass_keystate = 0;

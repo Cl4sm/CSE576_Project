@@ -1,3 +1,4 @@
+static void _sc_ai_select_weapon_by_score(const sc_config *c, sc_player *p) {
 /* sc_ai_select_weapon_by_score
    Selects the highest-ranked weapon available to the AI.  This is slightly
    better, but we might end up selecting a very powerful weapon to kill only

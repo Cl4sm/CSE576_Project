@@ -1,3 +1,4 @@
+static	void
 p_channel(from, ArgList)
 	u_char	*from;
 	u_char	**ArgList;

@@ -1,3 +1,4 @@
+static	void
 do_new_notice_ctcp(from, to, str, cmd)
 	u_char	*from,
 		*to,

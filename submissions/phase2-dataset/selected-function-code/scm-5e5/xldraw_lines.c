@@ -1,3 +1,4 @@
+SCM xldraw_lines(sdbl, sgc, sargs, funcod, s_caller)
      SCM sdbl, sgc, sargs;
      int funcod;
      char *s_caller;

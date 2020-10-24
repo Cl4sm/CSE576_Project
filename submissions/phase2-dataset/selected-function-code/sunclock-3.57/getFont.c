@@ -1,3 +1,4 @@
+XFontStruct *
 getFont(num)
 int num;
 {

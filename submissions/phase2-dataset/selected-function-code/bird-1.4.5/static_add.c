@@ -1,3 +1,4 @@
+static void
 static_add(struct proto *p, struct static_config *cf, struct static_route *r)
 {
   DBG("static_add(%I/%d,%d)\n", r->net, r->masklen, r->dest);

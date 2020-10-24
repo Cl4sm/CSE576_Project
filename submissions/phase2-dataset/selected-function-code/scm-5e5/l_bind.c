@@ -1,3 +1,4 @@
+SCM l_bind(sockpt, address)
      SCM sockpt, address;
 {
   int sts;

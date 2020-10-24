@@ -1,3 +1,4 @@
+void camray_init(scenedef *scene, ray *primary, unsigned long serial, 
                  unsigned long * mbox, unsigned int randval) {
   /* setup the right function pointer depending on what features are in use */
   if (scene->flags & RT_SHADE_CLIPPING) {

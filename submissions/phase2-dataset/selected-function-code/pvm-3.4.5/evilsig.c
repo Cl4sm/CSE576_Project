@@ -1,3 +1,4 @@
+void
 evilsig(sig)
 	int sig;
 {

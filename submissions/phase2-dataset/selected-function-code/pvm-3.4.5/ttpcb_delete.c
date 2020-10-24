@@ -1,3 +1,4 @@
+void
 ttpcb_delete(pcbp)
 	struct ttpcb *pcbp;
 {

@@ -1,3 +1,4 @@
+void
 internal_function
 EXTRACT_PLURAL_EXPRESSION (nullentry, pluralp, npluralsp)
      const char *nullentry;

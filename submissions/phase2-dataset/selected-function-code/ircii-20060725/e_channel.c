@@ -1,3 +1,4 @@
+static	void
 e_channel(command, args, subargs)
 	u_char	*command,
 		*args,

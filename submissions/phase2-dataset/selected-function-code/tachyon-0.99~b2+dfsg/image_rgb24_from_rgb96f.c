@@ -1,3 +1,4 @@
+unsigned char * image_rgb24_from_rgb96f(int xres, int yres, float *fimg) { 
   unsigned char *img;
   int x, y, R, G, B;
   img = (unsigned char *) malloc(xres * yres * 3);

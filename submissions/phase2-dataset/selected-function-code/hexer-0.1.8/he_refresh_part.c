@@ -1,3 +1,4 @@
+  void 
 he_refresh_part(hedit, pos1, pos2)
   struct he_s *hedit;
   long pos1, pos2;

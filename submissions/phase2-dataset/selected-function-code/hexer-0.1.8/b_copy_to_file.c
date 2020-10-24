@@ -1,3 +1,4 @@
+  long
 b_copy_to_file(buffer, filename, position, count)
   Buffer *buffer;
   char *filename;

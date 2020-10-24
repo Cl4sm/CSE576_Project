@@ -1,3 +1,4 @@
+shashlist_item *shashlist_remove_by_int(shashlist *list, int key) {
 /* shashlist_remove_item_by_int
    Remove the shashlist data item referenced by this key. */
 

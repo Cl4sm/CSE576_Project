@@ -1,3 +1,4 @@
+static bool _sc_ai_buy_last_weapons(const sc_config *c, sc_player *p, int *budget) {
 /* sc_ai_buy_last_weapons
    Buy the last weapons on the list that we can afford.  This is a rather
    naive approach, in assuming that weapons at the end of the list must

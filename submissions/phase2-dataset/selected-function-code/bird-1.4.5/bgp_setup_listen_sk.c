@@ -1,3 +1,4 @@
+static sock *
 bgp_setup_listen_sk(ip_addr addr, unsigned port, u32 flags)
 {
   sock *s = sk_new(&root_pool);

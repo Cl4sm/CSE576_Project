@@ -1,3 +1,4 @@
+static void
 set_oom_adj (void)
 {
 #ifdef OOM_SCORE_ADJ_MIN

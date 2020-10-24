@@ -1,3 +1,4 @@
+static int
 mp_gid_handler(vector strvec)
 {
 	gid_t gid;

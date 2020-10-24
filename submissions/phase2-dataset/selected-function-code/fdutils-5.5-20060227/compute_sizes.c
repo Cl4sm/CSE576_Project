@@ -1,3 +1,4 @@
+static void compute_sizes(struct params *fd, 
 			  int remaining, /* bytes per track */
 			  int max_sizecode) /* size of biggest sector used */
 {

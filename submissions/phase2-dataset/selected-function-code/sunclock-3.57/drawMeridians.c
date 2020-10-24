@@ -1,3 +1,4 @@
+void
 drawMeridians(Context)
 struct Sundata * Context;
 {

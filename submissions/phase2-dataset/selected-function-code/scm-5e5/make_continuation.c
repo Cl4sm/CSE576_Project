@@ -1,3 +1,4 @@
+CONTINUATION *make_continuation(parent_cont)
      CONTINUATION *parent_cont;
 {
   CONTINUATION *cont;

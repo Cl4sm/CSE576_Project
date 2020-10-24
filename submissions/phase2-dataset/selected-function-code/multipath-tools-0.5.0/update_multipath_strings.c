@@ -1,3 +1,4 @@
+extern int
 update_multipath_strings (struct multipath *mpp, vector pathvec)
 {
 	if (!mpp)

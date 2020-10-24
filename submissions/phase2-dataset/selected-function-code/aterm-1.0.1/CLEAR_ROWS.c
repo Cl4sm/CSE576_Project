@@ -1,3 +1,4 @@
+void CLEAR_ROWS(unsigned row, unsigned num)
 {
   unsigned line_h = Height2Pixel(1)-1;
   register unsigned hy = (line_h+1)*num, y = Row2Pixel(row);

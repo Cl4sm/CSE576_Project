@@ -1,3 +1,4 @@
+void parse_global_list(void)
 {
 	FILE *file;
 	char *ln;

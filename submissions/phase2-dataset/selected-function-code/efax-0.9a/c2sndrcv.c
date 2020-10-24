@@ -1,3 +1,4 @@
+int c2sndrcv (
 	      TFILE *mf, cap local, char *localid, 
 	      OFILE *outf, IFILE *inf, 
 	      int pages, char *header, faxfont *font, 

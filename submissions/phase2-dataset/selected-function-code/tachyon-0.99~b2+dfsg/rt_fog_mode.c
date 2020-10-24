@@ -1,3 +1,4 @@
+void rt_fog_mode(SceneHandle voidscene, int mode) {
   scenedef * scene = (scenedef *) voidscene;
 
   switch (mode) {

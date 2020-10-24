@@ -1,3 +1,4 @@
+int
 gather_object (const char *name, int deref, int onefs)
 {
   struct stat64 st;

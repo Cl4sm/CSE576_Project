@@ -1,3 +1,4 @@
+void sc_window_clear_napalm(sc_window *w_, const int *xlist,
                             const int *ylist, int totalsize) {
 /* sc_window_clear_napalm */
 

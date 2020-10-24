@@ -1,3 +1,4 @@
+void sc_console_init(ScConsole *cons, gint x, gint y, gint width, gint height, ScConsoleStyle style,
                      GdkFont *font, GdkFont *boldfont) {
 /* sc_console_init
    Initialize a console.  */

@@ -1,3 +1,4 @@
+int scm_arity_check(proc, argc, what)
      SCM proc;
      long argc;
      const char *what;

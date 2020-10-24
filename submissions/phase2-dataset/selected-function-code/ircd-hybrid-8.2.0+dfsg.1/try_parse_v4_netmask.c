@@ -1,3 +1,4 @@
+static int
 try_parse_v4_netmask(const char *text, struct irc_ssaddr *addr, int *b)
 {
   const char *digits[4];

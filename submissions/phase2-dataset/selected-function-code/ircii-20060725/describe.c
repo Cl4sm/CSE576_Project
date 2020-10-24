@@ -1,3 +1,4 @@
+static	void
 describe(command, args, subargs)
 	u_char	*command,
 		*args,

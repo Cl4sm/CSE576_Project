@@ -1,3 +1,4 @@
+static void tcp6csum(sendip_data *ipv6_hdr, sendip_data *tcp_hdr,
 							sendip_data *data) {
 	tcp_header *tcp = (tcp_header *)tcp_hdr->data;
 	ipv6_header  *ipv6  = (ipv6_header *)ipv6_hdr->data;

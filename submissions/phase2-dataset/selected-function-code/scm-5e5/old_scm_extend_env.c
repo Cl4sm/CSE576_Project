@@ -1,3 +1,4 @@
+void old_scm_extend_env(names)
      SCM names;
 {
    SCM z1, z2;

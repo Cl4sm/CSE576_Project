@@ -1,3 +1,4 @@
+void dynthrow(a)
      long *a;
 {
   register CONTINUATION *cont = (CONTINUATION *)(a[0]);

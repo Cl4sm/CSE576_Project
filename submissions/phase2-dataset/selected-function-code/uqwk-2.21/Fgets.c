@@ -1,3 +1,4 @@
+char *Fgets (c, n, fd)
 char *c;
 int n;
 FILE *fd;

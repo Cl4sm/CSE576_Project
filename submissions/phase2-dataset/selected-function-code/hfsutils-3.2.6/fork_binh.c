@@ -1,3 +1,4 @@
+static
 int fork_binh(hfsfile *ifile, unsigned long size)
 {
   char buf[HFS_BLOCKSZ * 4];

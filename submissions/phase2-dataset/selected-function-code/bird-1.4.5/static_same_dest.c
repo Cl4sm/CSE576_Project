@@ -1,3 +1,4 @@
+static inline int
 static_same_dest(struct static_route *x, struct static_route *y)
 {
   if (x->dest != y->dest)

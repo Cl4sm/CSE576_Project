@@ -1,3 +1,4 @@
+int
 pvmupkstralloc(ss)
 	char **ss;				/* return pointer */
 {

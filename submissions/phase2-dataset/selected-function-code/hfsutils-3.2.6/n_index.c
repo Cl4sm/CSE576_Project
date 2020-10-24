@@ -1,3 +1,4 @@
+void n_index(const node *np, byte *record, unsigned int *reclen)
 {
   const byte *key = HFS_NODEREC(*np, 0);
 

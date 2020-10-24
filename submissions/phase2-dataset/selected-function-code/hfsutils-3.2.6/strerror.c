@@ -1,3 +1,4 @@
+char *strerror(int errnum)
 {
   static char str[14 + CHARLEN(int) + 1];
 

@@ -1,3 +1,4 @@
+int
 check_routedelete(pcbp)
 	struct ttpcb *pcbp;
 {

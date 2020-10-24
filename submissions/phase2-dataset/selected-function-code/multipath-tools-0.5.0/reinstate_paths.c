@@ -1,3 +1,4 @@
+extern int
 reinstate_paths (struct multipath * mpp)
 {
 	int i, j;

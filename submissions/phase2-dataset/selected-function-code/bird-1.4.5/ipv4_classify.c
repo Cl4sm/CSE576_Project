@@ -1,3 +1,4 @@
+int
 ipv4_classify(u32 a)
 {
   u32 b = a >> 24U;

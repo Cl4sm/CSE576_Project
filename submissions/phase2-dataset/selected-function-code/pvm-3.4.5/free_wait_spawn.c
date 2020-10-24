@@ -1,3 +1,4 @@
+int
 free_wait_spawn(wxp)
 	struct waitc_spawn *wxp;
 {

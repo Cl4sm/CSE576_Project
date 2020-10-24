@@ -1,3 +1,4 @@
+color low_shader(ray * incident) {
   int numints;
   object const * obj;
   vector hit;

@@ -1,3 +1,4 @@
+int ReadTrans()
 /*
  *  Read the newsgroup name translation table
  */

@@ -1,3 +1,4 @@
+static void
 my_echo(command, args, subargs)
 	u_char	*command,
 		*args,

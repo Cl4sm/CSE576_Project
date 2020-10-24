@@ -1,3 +1,4 @@
+int sc_land_sky_flag(const sc_config *c) {
 /* sc_land_sky_flag
    Returns the sky flags for the sky selected by the user.  */
 

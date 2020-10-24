@@ -1,3 +1,4 @@
+static inline int
 rt_next_hop_update_net(rtable *tab, net *n)
 {
   rte **k, *e, *new, *old_best, **new_best;

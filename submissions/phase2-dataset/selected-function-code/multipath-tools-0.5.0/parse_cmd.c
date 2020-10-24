@@ -1,3 +1,4 @@
+int
 parse_cmd (char * cmd, char ** reply, int * len, void * data)
 {
 	int r;

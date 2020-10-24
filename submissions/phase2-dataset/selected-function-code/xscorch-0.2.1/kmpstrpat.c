@@ -1,3 +1,4 @@
+char *kmpstrpat(char *s, const char *d) {
 /* Kmith-Morris-Pratt-String-Pattern
    A different algorithm from rabin karp. Best suited for algorithms with
    longer patterns with a relatively small alphabet. Not a guaranteed

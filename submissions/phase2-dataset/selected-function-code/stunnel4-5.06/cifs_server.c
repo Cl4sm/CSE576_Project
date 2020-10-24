@@ -1,3 +1,4 @@
+NOEXPORT char *cifs_server(CLI *c, SERVICE_OPTIONS *opt, const PHASE phase) {
     u8 buffer[128];
     u8 response_access_denied[5] = {0x83, 0, 0, 1, 0x81};
     u8 response_use_ssl[5] = {0x83, 0, 0, 1, 0x8e};

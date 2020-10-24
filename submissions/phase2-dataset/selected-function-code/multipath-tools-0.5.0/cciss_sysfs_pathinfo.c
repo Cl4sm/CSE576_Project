@@ -1,3 +1,4 @@
+static int
 cciss_sysfs_pathinfo (struct path * pp)
 {
 	const char * attr_path = NULL;

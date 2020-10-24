@@ -1,3 +1,4 @@
+void 
 parse_notice(from, Args)
 	u_char 	*from;
 	u_char 	**Args;

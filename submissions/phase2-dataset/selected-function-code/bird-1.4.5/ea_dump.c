@@ -1,3 +1,4 @@
+void
 ea_dump(ea_list *e)
 {
   int i;

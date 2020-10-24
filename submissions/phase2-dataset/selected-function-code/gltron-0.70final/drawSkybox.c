@@ -1,3 +1,4 @@
+void drawSkybox(int grid_size) {
   /* 
      matrices are: 
      projection: perspective projection 

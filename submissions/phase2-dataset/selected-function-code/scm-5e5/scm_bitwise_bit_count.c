@@ -1,3 +1,4 @@
+SCM scm_bitwise_bit_count(n)
      SCM n;
 {
   register unsigned long c = 0;

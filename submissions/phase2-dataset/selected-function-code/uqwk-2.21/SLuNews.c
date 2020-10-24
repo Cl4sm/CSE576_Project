@@ -1,3 +1,4 @@
+int SLuNews (fn)
 char *fn;
 /*
  *  Process a SLNP news reply file, usenet type

@@ -1,3 +1,4 @@
+int main_configure(char *arg1, char *arg2) {
     if(options_cmdline(arg1, arg2))
         return 1;
     options_apply();

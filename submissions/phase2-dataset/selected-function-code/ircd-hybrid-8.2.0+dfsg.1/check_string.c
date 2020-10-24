@@ -1,3 +1,4 @@
+static char *
 check_string(char *s)
 {
   char *str = s;

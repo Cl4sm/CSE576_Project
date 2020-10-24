@@ -1,3 +1,4 @@
+void
 restore_message_from()
 {
 	struct mfstack *mfs = mfstack_head.next;

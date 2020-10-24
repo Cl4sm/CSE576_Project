@@ -1,3 +1,4 @@
+int
 TestGIF(char *file)
 {
     FILE *fd = fopen(file, "r");

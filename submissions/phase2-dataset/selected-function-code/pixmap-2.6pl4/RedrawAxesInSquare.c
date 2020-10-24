@@ -1,3 +1,4 @@
+void RedrawAxesInSquare(PW, x, y)
      PixmapWidget PW;
      Position x, y;
 {

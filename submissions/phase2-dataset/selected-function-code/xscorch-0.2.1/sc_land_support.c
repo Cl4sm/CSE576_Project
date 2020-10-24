@@ -1,3 +1,4 @@
+int sc_land_support(const sc_config *c, const sc_land *l, int x, int y, int r, int s) {
 /* sc_land_support
    Returns the offset the tank may be shifted over if it is not properly
    supported on one side.  The tank is at coordinates (x,y) with a base

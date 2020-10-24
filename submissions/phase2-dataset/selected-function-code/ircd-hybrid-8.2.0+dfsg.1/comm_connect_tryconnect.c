@@ -1,3 +1,4 @@
+static void
 comm_connect_tryconnect(fde_t *fd, void *unused)
 {
   int retval;

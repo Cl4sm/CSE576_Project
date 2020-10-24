@@ -1,3 +1,4 @@
+int
 read_config (const char *config)
 {
   FILE *file = fopen (config, "r");

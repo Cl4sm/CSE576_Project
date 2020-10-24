@@ -1,3 +1,4 @@
+struct msgid *
 msgid_new()
 {
 	struct msgid *mp;

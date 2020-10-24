@@ -1,3 +1,4 @@
+static void ospf_dump_lsupd(struct proto *p, struct ospf_lsupd_packet *pkt)
 {
   struct ospf_packet *op = &pkt->ospf_packet;
 

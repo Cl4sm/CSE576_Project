@@ -1,3 +1,4 @@
+void
 get_ttymode(ttymode_t * tio)
 {
 #ifdef HAVE_TERMIOS_H

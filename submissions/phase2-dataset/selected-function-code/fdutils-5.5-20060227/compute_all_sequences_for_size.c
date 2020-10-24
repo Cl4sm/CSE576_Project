@@ -1,3 +1,4 @@
+static void compute_all_sequences_for_size(struct params *fd,
 					   int *offset,
 					   int tracksize,
 					   int sizecode,

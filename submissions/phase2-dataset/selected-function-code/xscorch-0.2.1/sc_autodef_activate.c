@@ -1,3 +1,4 @@
+bool sc_autodef_activate(const sc_config *c, sc_player *p, const sc_auto_def_set *ads) {
 /* sc_player_activate_auto_def
    Activates player auto-defense, if available and if any shields are currently
    available.  This is for the interactive GUI screen (see ...auto_shield). */

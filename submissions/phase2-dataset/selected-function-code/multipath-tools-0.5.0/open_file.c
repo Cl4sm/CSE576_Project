@@ -1,3 +1,4 @@
+int
 open_file(char *file, int *can_write, char *header)
 {
 	int fd;

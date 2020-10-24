@@ -1,3 +1,4 @@
+void
 initValues()
 {
         int i;

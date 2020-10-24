@@ -1,3 +1,4 @@
+int
 lsa_comp(struct ospf_lsa_header *l1, struct ospf_lsa_header *l2)
 			/* Return codes from point of view of l1 */
 {

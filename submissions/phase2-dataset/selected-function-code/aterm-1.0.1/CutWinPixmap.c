@@ -1,3 +1,4 @@
+Pixmap
 CutWinPixmap (Window win, Drawable src, int src_w, int src_h, int width, int height, GC gc, ShadingInfo * shading)
 {
   unsigned int x = 0, y = 0;

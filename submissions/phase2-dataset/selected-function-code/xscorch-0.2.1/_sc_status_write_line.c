@@ -1,3 +1,4 @@
+static void _sc_status_write_line(const sc_window_gtk *w, const sc_player *p, int x, int y,
                                   const char *text, sc_status_state state) {
 
    switch(state) {

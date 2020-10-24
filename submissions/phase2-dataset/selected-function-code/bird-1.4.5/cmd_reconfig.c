@@ -1,3 +1,4 @@
+void
 cmd_reconfig(char *name, int type, int timeout)
 {
   if (cli_access_restricted())

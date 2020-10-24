@@ -1,3 +1,4 @@
+int ZipNews (fn)
 char *fn;
 /*
  *  Process ZipNews news reply

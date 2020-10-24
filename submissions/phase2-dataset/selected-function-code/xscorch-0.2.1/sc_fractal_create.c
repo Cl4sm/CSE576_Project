@@ -1,3 +1,4 @@
+unsigned char *sc_fractal_create(int *size, int requestedsize)
 {
   /*** WARNING:::  SIZE MUST BE A POWER OF _2_ + 1 ***/
   

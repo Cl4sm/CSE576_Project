@@ -1,3 +1,4 @@
+char *extstr(ExtDescriptor *ext)
 {
   static char str[20];
 

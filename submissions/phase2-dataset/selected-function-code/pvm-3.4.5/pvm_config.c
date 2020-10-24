@@ -1,3 +1,4 @@
+int
 pvm_config(nhostp, narchp, hostp)
 	int *nhostp;
 	int *narchp;

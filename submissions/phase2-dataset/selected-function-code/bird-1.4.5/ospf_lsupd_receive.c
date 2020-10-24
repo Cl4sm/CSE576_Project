@@ -1,3 +1,4 @@
+void
 ospf_lsupd_receive(struct ospf_packet *ps_i, struct ospf_iface *ifa,
 		   struct ospf_neighbor *n)
 {

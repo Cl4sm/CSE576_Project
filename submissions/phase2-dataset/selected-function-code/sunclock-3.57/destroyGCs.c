@@ -1,3 +1,4 @@
+void
 destroyGCs(Context)
 Sundata * Context;
 {

@@ -1,3 +1,4 @@
+void on_editFind_activate(GtkMenuItem *menuitem, gpointer user_data) {
     if (inFindMode == FALSE) {
 
         gtk_widget_show(findToolbar);

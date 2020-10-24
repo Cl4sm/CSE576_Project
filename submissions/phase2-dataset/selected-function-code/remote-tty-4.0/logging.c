@@ -1,3 +1,4 @@
+static void
 logging(int fd) {
 	if (Log == -1) {
 		int save_nonblock = tty_nonblock(fd, 0);

@@ -1,3 +1,4 @@
+NOEXPORT void setup_connect_addr(CLI *c) {
 #ifdef SO_ORIGINAL_DST
     socklen_t addrlen=sizeof(SOCKADDR_UNION);
 #endif /* SO_ORIGINAL_DST */

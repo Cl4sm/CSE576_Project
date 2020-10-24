@@ -1,3 +1,4 @@
+void
 load_all_modules(int warn)
 {
   DIR *system_module_dir = NULL;

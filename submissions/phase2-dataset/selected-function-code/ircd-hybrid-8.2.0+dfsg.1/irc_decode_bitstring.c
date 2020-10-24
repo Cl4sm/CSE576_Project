@@ -1,3 +1,4 @@
+static int
 irc_decode_bitstring(const unsigned char **cpp, char *dn, const char *eom)
 {
         const unsigned char *cp = *cpp;

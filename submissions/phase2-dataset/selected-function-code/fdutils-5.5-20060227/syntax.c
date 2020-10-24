@@ -1,3 +1,4 @@
+void syntax() {
     fprintf(stderr,
 	    "usage: fdmount [options] drive_name [mount_dir]\n"
 	    "       fdumount [options] drive_name\n"

@@ -1,3 +1,4 @@
+  int
 regex_match(regex, position, replace_str, replace_len, match_len)
   long *regex;        /* pointer to the regex-code to be processed. */
   long position;      /* position in the input stream. */

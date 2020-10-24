@@ -1,3 +1,4 @@
+static void _sc_window_draw_all_tanks_gtk(sc_window_gtk *w, int x1, int y1, int x2, int y2) {
 /* sc_window_draw_all_tanks_gtk
    Draws all player tanks to the screen which are partially or entirely
    within the bounding box given by (x1, y1)-(x2, y2).  All coordinates

@@ -1,3 +1,4 @@
+print_fdset(pad, n, f)
 	char *pad;			/* label at head */
 	int n;				/* max fd + 1 */
 #ifdef FDSETNOTSTRUCT

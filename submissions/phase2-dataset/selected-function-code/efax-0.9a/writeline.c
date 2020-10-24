@@ -1,3 +1,4 @@
+void writeline ( OFILE *f, short *runs, int nr, int no )
 {
   int nb = 0 ;
   uchar *p, buf [ MAXCODES ] ;

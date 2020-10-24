@@ -1,3 +1,4 @@
+void storeIndices(TrailMesh *pMesh, int indexOffset, int vertexOffset) {
 	unsigned short ppBase[2][6] = {
 		{ 0, 2, 1, 2, 3, 1 },
 		{ 0, 1, 2, 1, 3, 2 }

@@ -1,3 +1,4 @@
+struct prio * add_prio (char * name)
 {
 	char libname[LIB_PRIO_NAMELEN];
 	struct stat stbuf;

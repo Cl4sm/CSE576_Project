@@ -1,3 +1,4 @@
+void
 setupFilesel(mode)
 int mode;
 {

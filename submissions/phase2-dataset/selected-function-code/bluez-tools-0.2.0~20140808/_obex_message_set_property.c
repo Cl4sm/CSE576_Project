@@ -1,3 +1,4 @@
+static void _obex_message_set_property(GObject *object, guint property_id, const GValue *value, GParamSpec *pspec)
 {
 	ObexMessage *self = OBEX_MESSAGE(object);
 	GError *error = NULL;

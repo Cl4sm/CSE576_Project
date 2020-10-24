@@ -1,3 +1,4 @@
+void *tur_thread(void *ctx)
 {
 	struct tur_checker_context *ct = ctx;
 	int state;

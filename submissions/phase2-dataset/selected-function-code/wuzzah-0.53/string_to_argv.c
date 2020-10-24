@@ -1,3 +1,4 @@
+int string_to_argv(const char *str, char **av[]){
 	int c=0, i=0, j=0, num_args=1, len=strlen(str), procd_str_pipe[2];
 	int arg_len=0, arg_max_len=0;
 	short parsing_whitespace=1;

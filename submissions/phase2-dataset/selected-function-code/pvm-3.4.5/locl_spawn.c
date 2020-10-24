@@ -1,3 +1,4 @@
+void
 locl_spawn( file, argv )
 char *file;
 char **argv;

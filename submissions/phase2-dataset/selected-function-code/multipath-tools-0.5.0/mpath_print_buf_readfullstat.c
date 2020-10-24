@@ -1,3 +1,4 @@
+void mpath_print_buf_readfullstat( struct prin_resp *pr_buff)
 {
 
 	int i,j, num;

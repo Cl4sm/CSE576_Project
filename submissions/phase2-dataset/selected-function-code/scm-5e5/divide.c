@@ -1,3 +1,4 @@
+SCM divide(x, y)
      SCM x, y;
 {
 #ifdef FLOATS

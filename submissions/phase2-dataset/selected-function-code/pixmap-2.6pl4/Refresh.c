@@ -1,3 +1,4 @@
+void Refresh(PW, x, y, width, height)
     PixmapWidget PW;
     Position     x, y;
     Dimension    width, height;

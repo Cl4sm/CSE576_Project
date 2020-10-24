@@ -1,3 +1,4 @@
+static inline void
 bgp_rte_update(struct bgp_proto *p, ip_addr prefix, int pxlen,
 	       u32 path_id, u32 *last_id, struct rte_src **src,
 	       rta *a0, rta **a)

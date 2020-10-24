@@ -1,3 +1,4 @@
+SCM map(proc, arg1, args)
      SCM proc, arg1, args;
 {
   SCM res = EOL, *pres = &res;

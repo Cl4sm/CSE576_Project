@@ -1,3 +1,4 @@
+  static void
 t_tinit()
   /* initialize the global variables `t_PC' and `t_speed';
    * called by `tgetent()'.

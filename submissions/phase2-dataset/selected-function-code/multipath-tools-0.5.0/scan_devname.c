@@ -1,3 +1,4 @@
+static int
 scan_devname(char *alias, char *prefix)
 {
 	char *c;

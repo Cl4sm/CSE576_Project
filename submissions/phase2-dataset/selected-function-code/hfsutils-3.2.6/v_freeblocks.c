@@ -1,3 +1,4 @@
+int v_freeblocks(hfsvol *vol, const ExtDescriptor *blocks)
 {
   unsigned int start, len, pt;
   block *vbm;

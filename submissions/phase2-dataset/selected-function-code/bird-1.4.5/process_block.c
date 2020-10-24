@@ -1,3 +1,4 @@
+static void
 process_block( struct proto *p, struct rip_block *block, ip_addr whotoldme, struct iface *iface )
 {
   int metric, pxlen;

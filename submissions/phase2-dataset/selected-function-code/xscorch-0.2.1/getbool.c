@@ -1,3 +1,4 @@
+bool getbool(bool *result, const char *s) {
 /* Get-Boolean
    Returns "true" if the value in <s> is a boolean identifier string, in
    which case, <result> is set to true or false based on <s>. If <result>

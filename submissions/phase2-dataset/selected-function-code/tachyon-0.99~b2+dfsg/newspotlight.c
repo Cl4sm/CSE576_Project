@@ -1,3 +1,4 @@
+point_light * newspotlight(void * tex, vector ctr, flt rad, vector dir,
                            flt fallstart, flt fallend) {
   point_light * l;
 

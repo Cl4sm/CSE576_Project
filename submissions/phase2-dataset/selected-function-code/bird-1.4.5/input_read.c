@@ -1,3 +1,4 @@
+void
 input_read(void)
 {
   char buf[INPUT_BUF_LEN];

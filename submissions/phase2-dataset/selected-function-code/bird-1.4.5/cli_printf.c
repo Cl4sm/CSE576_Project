@@ -1,3 +1,4 @@
+void
 cli_printf(cli *c, int code, char *msg, ...)
 {
   va_list args;

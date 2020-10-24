@@ -1,3 +1,4 @@
+sc_expl_cache_gtk *sc_expl_cache_new_gtk(void) {
 /* sc_expl_cache_new_gtk
    Creates a new explosion cache.  */
    

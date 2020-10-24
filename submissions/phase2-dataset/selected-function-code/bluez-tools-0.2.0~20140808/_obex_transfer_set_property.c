@@ -1,3 +1,4 @@
+static void _obex_transfer_set_property(GObject *object, guint property_id, const GValue *value, GParamSpec *pspec)
 {
 	ObexTransfer *self = OBEX_TRANSFER(object);
 	GError *error = NULL;

@@ -1,3 +1,4 @@
+int gettocode ()
 {
 	char *ret;
 

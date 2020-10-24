@@ -1,3 +1,4 @@
+static
 int mpeg_remux_next_fp (mpeg_demux_t *mpeg)
 {
 	char *fname;

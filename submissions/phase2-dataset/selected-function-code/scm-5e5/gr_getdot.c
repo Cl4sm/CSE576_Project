@@ -1,3 +1,4 @@
+SCM     gr_getdot( x, y )
 SCM     x, y;
 {
 int                     xi, yi;

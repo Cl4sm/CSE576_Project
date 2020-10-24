@@ -1,3 +1,4 @@
+update_file_ptrs (file, hdr, auxhdr, location, offset)
      int file;
      struct header *hdr;
      struct som_exec_auxhdr *auxhdr;

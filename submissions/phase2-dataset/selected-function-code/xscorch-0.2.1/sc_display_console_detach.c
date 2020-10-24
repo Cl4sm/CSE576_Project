@@ -1,3 +1,4 @@
+gboolean sc_display_console_detach(ScDisplay *dpy) {
 
    GtkFixedChild *child;
    GtkWidget *cwidget;

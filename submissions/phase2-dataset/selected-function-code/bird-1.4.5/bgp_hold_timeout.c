@@ -1,3 +1,4 @@
+static void
 bgp_hold_timeout(timer *t)
 {
   struct bgp_conn *conn = t->data;

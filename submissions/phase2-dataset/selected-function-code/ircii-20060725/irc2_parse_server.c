@@ -1,3 +1,4 @@
+void
 irc2_parse_server(line)
 	u_char	*line;
 {

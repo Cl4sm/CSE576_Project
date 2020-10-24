@@ -1,3 +1,4 @@
+void
 servercmd(command, args, subargs)
 	u_char	*command,
 		*args,

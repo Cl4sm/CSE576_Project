@@ -1,3 +1,4 @@
+int
 pvm_getnoresets( tids, ntids )
 	int **tids;
 	int *ntids;

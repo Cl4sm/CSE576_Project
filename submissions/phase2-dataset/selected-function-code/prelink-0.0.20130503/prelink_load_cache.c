@@ -1,3 +1,4 @@
+int
 prelink_load_cache (void)
 {
   int fd, i, j;

@@ -1,3 +1,4 @@
+static void
 graceful_restart_done(struct timer *t UNUSED)
 {
   struct proto *p;

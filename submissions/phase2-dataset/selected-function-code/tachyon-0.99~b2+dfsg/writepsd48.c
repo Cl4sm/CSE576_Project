@@ -1,3 +1,4 @@
+int writepsd48(char *name, int xres, int yres, unsigned char *imgdata) {
   FILE * ofp;
   int y, p;
   char width[4];

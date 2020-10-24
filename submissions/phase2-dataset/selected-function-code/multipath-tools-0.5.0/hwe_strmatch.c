@@ -1,3 +1,4 @@
+static int
 hwe_strmatch (struct hwentry *hwe1, struct hwentry *hwe2)
 {
 	if ((hwe2->vendor && !hwe1->vendor) ||

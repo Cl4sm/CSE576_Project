@@ -1,3 +1,4 @@
+void
 whoreply(from, ArgList)
 	u_char	**ArgList,
 		*from;

@@ -1,3 +1,4 @@
+static void
 rip_rt_notify(struct proto *p, struct rtable *table UNUSED, struct network *net,
 	      struct rte *new, struct rte *old UNUSED, struct ea_list *attrs)
 {

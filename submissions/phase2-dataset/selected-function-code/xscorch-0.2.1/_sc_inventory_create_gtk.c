@@ -1,3 +1,4 @@
+static void _sc_inventory_create_gtk(sc_window_gtk *w, sc_player *p) {
 /* sc_inventory_create_gtk
    Construct the inventory window for given player. */
 

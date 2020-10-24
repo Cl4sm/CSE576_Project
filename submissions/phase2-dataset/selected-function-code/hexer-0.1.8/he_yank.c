@@ -1,3 +1,4 @@
+  static void
 he_yank(struct he_s *hedit, long count)
 {
   long start;

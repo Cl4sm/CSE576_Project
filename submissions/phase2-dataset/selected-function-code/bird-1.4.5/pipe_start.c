@@ -1,3 +1,4 @@
+static int
 pipe_start(struct proto *P)
 {
   struct pipe_config *cf = (struct pipe_config *) P->cf;

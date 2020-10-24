@@ -1,3 +1,4 @@
+int
 ev_add_path (struct path * pp, struct vectors * vecs)
 {
 	struct multipath * mpp;

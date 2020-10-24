@@ -1,3 +1,4 @@
+bool sc_inventory_can_buy_weapon(const sc_player *p, const sc_weapon_info *info, int budget) {
 /* sc_inventory_can_buy_weapon
    Determine if this player can buy the specified weapon.  Returns true
    if the purchase can be made.  Budget is the amount of money allocated for

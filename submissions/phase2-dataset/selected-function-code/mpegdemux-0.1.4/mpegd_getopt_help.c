@@ -1,3 +1,4 @@
+void mpegd_getopt_help (const char *tag, const char *usage, mpegd_option_t *opt)
 {
 	unsigned w;
 

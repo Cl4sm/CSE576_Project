@@ -1,3 +1,4 @@
+unsigned long os_seek(void **priv, unsigned long offset)
 {
   int fd = (int) *priv;
   off_t result;

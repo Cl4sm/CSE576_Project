@@ -1,3 +1,4 @@
+void
 add_to_server_list(server, port, password, nick, group, type, flags)
 	u_char	*server;
 	int	port;

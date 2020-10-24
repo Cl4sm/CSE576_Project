@@ -1,3 +1,4 @@
+bool sc_land_calculate_deltas_d(const sc_land *l, double *deltax, double *deltay, double x1, double y1, double x2, double y2) {
 /* sc_land_calculate_deltas_d
    Same as above, but uses double values.  */
 

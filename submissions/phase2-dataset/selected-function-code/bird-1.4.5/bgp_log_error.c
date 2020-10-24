@@ -1,3 +1,4 @@
+void
 bgp_log_error(struct bgp_proto *p, u8 class, char *msg, unsigned code, unsigned subcode, byte *data, unsigned len)
 {
   const byte *name;

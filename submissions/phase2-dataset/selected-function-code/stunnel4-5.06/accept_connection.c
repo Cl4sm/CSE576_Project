@@ -1,3 +1,4 @@
+NOEXPORT int accept_connection(SERVICE_OPTIONS *opt) {
     SOCKADDR_UNION addr;
     char *from_address;
     int s;

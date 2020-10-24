@@ -1,3 +1,4 @@
+static int
 configured_stubnet(struct ospf_area *oa, struct ifa *a)
 {
   if (!oa->ac)

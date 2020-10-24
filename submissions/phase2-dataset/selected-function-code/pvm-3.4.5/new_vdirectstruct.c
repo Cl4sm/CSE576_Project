@@ -1,3 +1,4 @@
+MPP_DIRECTI_PTR 
 new_vdirectstruct( nstructs, nsbufs, nrbufs )
 int nsbufs;
 int nrbufs;

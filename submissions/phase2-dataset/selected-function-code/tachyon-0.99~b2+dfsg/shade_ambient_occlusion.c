@@ -1,3 +1,4 @@
+color shade_ambient_occlusion(ray * incident, const shadedata * shadevars) {
   ray ambray;
   color ambcol;
   int i;

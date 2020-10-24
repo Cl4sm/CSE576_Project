@@ -1,3 +1,4 @@
+static void
 nl_add_multipath(struct nlmsghdr *h, unsigned bufsize, struct mpnh *nh)
 {
   unsigned len = sizeof(struct rtattr);

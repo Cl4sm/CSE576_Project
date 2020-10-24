@@ -1,3 +1,4 @@
+char *ParseFrom (c)
 char *c;
 /*
  *  Extract the email address from a From: line

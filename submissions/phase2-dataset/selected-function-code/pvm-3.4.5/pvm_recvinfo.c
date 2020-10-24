@@ -1,3 +1,4 @@
+int
 pvm_recvinfo(name, index, flags)
 	char *name;		/* class name */
 	int index;		/* req class index or -1 for any */

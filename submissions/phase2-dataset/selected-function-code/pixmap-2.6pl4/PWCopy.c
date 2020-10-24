@@ -1,3 +1,4 @@
+void PWCopy(Widget w, Position at_x, Position at_y, int value)
 #else
 void PWCopy(w, at_x, at_y, value)
      Widget w;

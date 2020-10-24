@@ -1,3 +1,4 @@
+void
 funny_namreply(from, Args)
 	u_char	*from;
 	u_char	**Args;

@@ -1,3 +1,4 @@
+static void new_client(int ux_sock)
 {
 	struct client *c;
 	struct sockaddr addr;

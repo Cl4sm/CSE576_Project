@@ -1,3 +1,4 @@
+Boolean PWRemoveRequest(Widget w)
 #else
 Boolean PWRemoveRequest(w)
     Widget w;

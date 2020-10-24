@@ -1,3 +1,4 @@
+int
 serv_connect(struct MaskItem *conf, struct Client *by)
 {
   struct Client *client_p = NULL;

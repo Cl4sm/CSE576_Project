@@ -1,3 +1,4 @@
+static void
 print_escaped (stream, str)
      FILE *stream;
      const char *str;

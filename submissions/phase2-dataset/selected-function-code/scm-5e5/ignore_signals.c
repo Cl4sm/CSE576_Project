@@ -1,3 +1,4 @@
+void ignore_signals()
 {
   int i = NUM_SIGNALS;
 #ifdef ultrix

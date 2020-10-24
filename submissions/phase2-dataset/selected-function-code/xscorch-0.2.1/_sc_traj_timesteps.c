@@ -1,3 +1,4 @@
+static double _sc_traj_timesteps(const sc_trajectory *tr, double y0) {
 /* sc_traj_timesteps
    Estimate the number of timesteps to reach coordinate y0, given the
    y velocity and acceleration defined in the trajectory.  Returns -1

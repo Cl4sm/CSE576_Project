@@ -1,3 +1,4 @@
+void Game_Idle(void) {
   List *l;
   List *p;
   int i;

@@ -1,3 +1,4 @@
+static void _network_set_property(GObject *object, guint property_id, const GValue *value, GParamSpec *pspec)
 {
 	Network *self = NETWORK(object);
 	GError *error = NULL;

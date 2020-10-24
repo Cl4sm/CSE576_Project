@@ -1,3 +1,4 @@
+void
 selection_delimit_word(int dirn, row_col_t * mark, row_col_t * ret)
 {
     int             col, row, dirnadd, tcol, trow, w1, w2;

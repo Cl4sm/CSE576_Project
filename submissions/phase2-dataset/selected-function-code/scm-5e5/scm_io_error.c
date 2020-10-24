@@ -1,3 +1,4 @@
+int scm_io_error(port, what)
      SCM port;
      const char *what;
 {

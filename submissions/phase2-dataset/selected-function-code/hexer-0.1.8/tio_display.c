@@ -1,3 +1,4 @@
+  void
 tio_display(text, indent_arg)
   /* Send the string `text' to the terminal.  The string may contain the
    * following `@*'-commands:

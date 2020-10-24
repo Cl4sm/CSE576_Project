@@ -1,3 +1,4 @@
+static void
 rt_update_hostcache(rtable *tab)
 {
   struct hostcache *hc = tab->hostcache;

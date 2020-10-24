@@ -1,3 +1,4 @@
+void filesRename(gchar* filename, uint32_t ObjectID) {
     // We must first determine, if this is a file, a folder, playlist or album
     // and use the correct API.
     LIBMTP_file_t *genfile = NULL;

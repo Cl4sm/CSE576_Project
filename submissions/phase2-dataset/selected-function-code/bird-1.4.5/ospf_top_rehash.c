@@ -1,3 +1,4 @@
+static void
 ospf_top_rehash(struct top_graph *f, int step)
 {
   unsigned int oldn, oldh;

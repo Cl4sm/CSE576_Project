@@ -1,3 +1,4 @@
+static
 int nextchar(void)
 {
   int c, c2, ch;

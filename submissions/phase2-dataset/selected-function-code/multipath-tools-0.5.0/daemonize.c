@@ -1,3 +1,4 @@
+static int
 daemonize(void)
 {
 	int pid;

@@ -1,3 +1,4 @@
+int
 opd_init (struct prelink_info *info)
 {
   int i, j, nrefent = 0;

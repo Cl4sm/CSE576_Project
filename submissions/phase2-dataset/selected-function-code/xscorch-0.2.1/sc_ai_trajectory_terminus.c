@@ -1,3 +1,4 @@
+void sc_ai_trajectory_terminus(const sc_config *c, const sc_trajectory *tr) {
 
    if(SC_AI_DEBUG_VICTIMS) {
       const sc_player *vp;

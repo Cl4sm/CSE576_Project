@@ -1,3 +1,4 @@
+static void
 ospf_check_vlinks(struct proto_ospf *po)
 {
   struct proto *p = &po->proto;

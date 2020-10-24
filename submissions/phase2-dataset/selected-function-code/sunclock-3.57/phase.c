@@ -1,3 +1,4 @@
+double
 phase(gtime, lat, lon, pphase, mage, dist, angdia, sudist, suangdia)
 time_t gtime;
 double *lat;                       /* Latitude in degrees/Earth */

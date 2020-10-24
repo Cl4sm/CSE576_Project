@@ -1,3 +1,4 @@
+extern void
 parse_command(char *command, char ***argv, int *argc)
 {
     LinkedList *list = NULL;

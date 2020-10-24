@@ -1,3 +1,4 @@
+SCM     gr_helpturtlegr()
 {
         fputs( "\
 Ret   Name               nargs    args        returns\n\

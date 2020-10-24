@@ -1,3 +1,4 @@
+int sc_land_avg_height_around(const sc_land *l, int x, int y0, int w) {
 /* sc_land_avg_height_around
    Returns the average height of the land over a virtual interval.
    Similar to the previous two functions in approach.  */

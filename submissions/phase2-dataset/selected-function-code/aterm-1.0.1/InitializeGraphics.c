@@ -1,3 +1,4 @@
+int
 InitializeGraphics (int scroll_text_up)
 {
    int fno, i;

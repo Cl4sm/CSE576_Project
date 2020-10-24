@@ -1,3 +1,4 @@
+void TrappingLoop(PW)
     PixmapWidget PW;
 {
 

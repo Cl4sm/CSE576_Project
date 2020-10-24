@@ -1,3 +1,4 @@
+void TwoPointsHandler(w, status, event)
     Widget      w;
     PWStatus   *status;
     XEvent     *event;

@@ -1,3 +1,4 @@
+bool sc_land_generate(const sc_config *c, sc_land *l) {
 /* sc_land_generate
    Generate a new landscape.  The land is generated based on definitions in
    the configuration structure given, and is created using the profile

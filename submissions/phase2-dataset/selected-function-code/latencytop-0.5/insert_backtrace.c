@@ -1,3 +1,4 @@
+static void insert_backtrace(struct latency_line *line)
 {
 	GtkTreeIter iter;
 	char *c = line->backtrace;

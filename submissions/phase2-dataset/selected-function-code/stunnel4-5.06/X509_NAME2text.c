@@ -1,3 +1,4 @@
+char *X509_NAME2text(X509_NAME *name) {
     char *text;
     BIO *bio;
     int n;

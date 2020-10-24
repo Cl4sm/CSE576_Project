@@ -1,3 +1,4 @@
+SCM scm_port_entry(stream, ptype, flags)
      FILE *stream;
      long ptype, flags;
 {

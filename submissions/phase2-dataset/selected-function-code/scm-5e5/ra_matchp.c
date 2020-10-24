@@ -1,3 +1,4 @@
+int ra_matchp(ra0, ras)
      SCM ra0, ras;
 {
   SCM ra1;

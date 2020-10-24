@@ -1,3 +1,4 @@
+void
 helpHint(Context, key, hint)
 Sundata * Context;
 char key;

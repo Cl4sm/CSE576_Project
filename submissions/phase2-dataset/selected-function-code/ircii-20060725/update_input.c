@@ -1,3 +1,4 @@
+void
 update_input(update)
 	int	update;
 {

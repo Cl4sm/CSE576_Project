@@ -1,3 +1,4 @@
+void rt_hash_init(rt_hash_t *tptr, int buckets) {
 
   /* make sure we allocate something */
   if (buckets==0)

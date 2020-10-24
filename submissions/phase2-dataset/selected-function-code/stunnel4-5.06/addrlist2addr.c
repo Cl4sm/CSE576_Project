@@ -1,3 +1,4 @@
+NOEXPORT void addrlist2addr(SOCKADDR_UNION *addr, SOCKADDR_LIST *addr_list) {
     unsigned i;
 
     for(i=0; i<addr_list->num; ++i) { /* find the first IPv4 address */

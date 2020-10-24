@@ -1,3 +1,4 @@
+static void **
 find_empty_slot_for_expand (htab, hash)
      htab_t htab;
      hashval_t hash;

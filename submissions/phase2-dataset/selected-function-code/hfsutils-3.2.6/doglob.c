@@ -1,3 +1,4 @@
+static
 int doglob(hfsvol *vol, dlist *list, const char *dir, const char *rem)
 {
   dstring new;

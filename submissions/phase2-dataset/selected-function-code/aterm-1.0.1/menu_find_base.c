@@ -1,3 +1,4 @@
+char           *
 menu_find_base(menu_t ** menu, char *path)
 {
 #ifdef MENUBAR

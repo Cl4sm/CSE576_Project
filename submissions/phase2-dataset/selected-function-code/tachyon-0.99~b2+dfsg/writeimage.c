@@ -1,3 +1,4 @@
+int writeimage(char * name, int xres, int yres, void *img, 
                int imgbufferformat, int fileformat) {
   if (img == NULL) 
     return IMAGENULLDATA;

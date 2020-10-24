@@ -1,3 +1,4 @@
+char*
 i_malloc(len, tag)
 	unsigned len;	/* number of bytes */
 	char *tag;		/* content description */

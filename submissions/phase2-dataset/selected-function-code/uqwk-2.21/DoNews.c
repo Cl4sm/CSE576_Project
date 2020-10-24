@@ -1,3 +1,4 @@
+int DoNews ()
 /*
  *  Collect unread news into a packet
  */

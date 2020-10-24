@@ -1,3 +1,4 @@
+Pixmap
 ValidatePixmap (Pixmap p, int bSetHandler, int bTransparent, unsigned int *pWidth, unsigned int *pHeight)
 {
 #ifndef X_DISPLAY_MISSING

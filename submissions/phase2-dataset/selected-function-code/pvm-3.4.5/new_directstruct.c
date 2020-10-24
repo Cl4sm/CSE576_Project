@@ -1,3 +1,4 @@
+MPP_DIRECTI_PTR 
 new_directstruct( nrbufs, nsbufs )
 int nrbufs;  /* number of receive buffers */
 int nsbufs;	 /* number of send buffers */

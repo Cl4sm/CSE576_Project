@@ -1,3 +1,4 @@
+unsigned int
 bgp_encode_attrs(struct bgp_proto *p, byte *w, ea_list *attrs, int remains)
 {
   unsigned int i, code, type, flags;

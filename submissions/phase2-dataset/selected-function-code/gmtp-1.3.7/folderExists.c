@@ -1,3 +1,4 @@
+gboolean folderExists(gchar *foldername, uint32_t folderID ){
     if(Preferences.use_alt_access_method){
         LIBMTP_file_t* tmpfile = LIBMTP_Get_Files_And_Folders(DeviceMgr.device, DeviceMgr.devicestorage->id, folderID);
         while (tmpfile != NULL) {

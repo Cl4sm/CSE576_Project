@@ -1,3 +1,4 @@
+void pswrite ( OFILE *f, unsigned char *buf, int n )
 {
   int i, j, l ;
   static unsigned char last [ MAXBITS ] ;

@@ -1,3 +1,4 @@
+void DoZoomFactor()
 {
     Dimension square_size;
     Arg args[2];

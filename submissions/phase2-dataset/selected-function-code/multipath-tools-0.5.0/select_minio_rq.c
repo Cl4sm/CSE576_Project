@@ -1,3 +1,4 @@
+int
 select_minio_rq (struct multipath * mp)
 {
 	if (mp->mpe && mp->mpe->minio_rq) {

@@ -1,3 +1,4 @@
+void
 SFenterList(w, n, event)
 	Widget				w;
 	register int			n;

@@ -1,3 +1,4 @@
+static	void
 xtypecmd(command, args, subargs)
 	u_char	*command,
 		*args,

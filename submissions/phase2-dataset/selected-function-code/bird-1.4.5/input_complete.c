@@ -1,3 +1,4 @@
+static int
 input_complete(int arg UNUSED, int key UNUSED)
 {
   static int complete_flag;

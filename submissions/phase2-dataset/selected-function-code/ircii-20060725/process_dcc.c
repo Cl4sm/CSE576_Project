@@ -1,3 +1,4 @@
+void
 process_dcc(args)
 	u_char	*args;
 {

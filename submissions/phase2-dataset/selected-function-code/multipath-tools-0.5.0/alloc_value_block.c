@@ -1,3 +1,4 @@
+int
 alloc_value_block(vector strvec, void (*alloc_func) (vector))
 {
 	char *buf;

@@ -1,3 +1,4 @@
+void initTimedemo(void) {
 	int i = 0;
 
 	printf("-- initializing timedemo\n");

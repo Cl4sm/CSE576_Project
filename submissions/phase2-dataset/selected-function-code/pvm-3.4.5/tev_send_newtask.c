@@ -1,3 +1,4 @@
+void
 tev_send_newtask( dst, ctx, tag, tid, ptid, flags, name )
 	int dst;
 	int ctx;

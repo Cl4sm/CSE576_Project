@@ -1,3 +1,4 @@
+static int
 yylex (lval, pexp)
      YYSTYPE *lval;
      const char **pexp;

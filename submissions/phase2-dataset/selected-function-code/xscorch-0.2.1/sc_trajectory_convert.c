@@ -1,3 +1,4 @@
+bool sc_trajectory_convert(const sc_config *c, sc_trajectory *tr,
                            int flags, sc_trajectory_type type) {
 /* sc_trajectory_convert
    Convert from one trajectory type to another. Not all possible conversions

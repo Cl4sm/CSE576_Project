@@ -1,3 +1,4 @@
+const char *
 internal_function
 _nl_init_domain_conv (domain_file, domain, domainbinding)
      struct loaded_l10nfile *domain_file;

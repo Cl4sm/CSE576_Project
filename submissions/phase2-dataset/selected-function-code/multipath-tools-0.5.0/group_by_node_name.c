@@ -1,3 +1,4 @@
+extern int
 group_by_node_name (struct multipath * mp) {
 	int i, j;
 	int * bitmap;

@@ -1,3 +1,4 @@
+sc_player *sc_player_new(int index, const sc_tank_profile *tank) {
 /* sc_player_new
    Create a new player */
 

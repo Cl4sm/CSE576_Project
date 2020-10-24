@@ -1,3 +1,4 @@
+int
 pmsg_unpack(mp, mp2)
 	struct pmsg *mp;		/* message to unpack from */
 	struct pmsg *mp2;		/* blank message to write on */

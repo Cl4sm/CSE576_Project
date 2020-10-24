@@ -1,3 +1,4 @@
+int
 do_rtpg(int fd, void* resp, long resplen)
 {
 	struct rtpg_command	cmd;

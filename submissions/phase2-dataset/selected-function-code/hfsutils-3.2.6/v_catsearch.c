@@ -1,3 +1,4 @@
+int v_catsearch(hfsvol *vol, unsigned long parid, const char *name,
 		CatDataRec *data, char *cname, node *np)
 {
   CatKeyRec key;

@@ -1,3 +1,4 @@
+static int
 snprint_mp_reservation_key (char * buff, int len, void * data)
 {
 	int i;

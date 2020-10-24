@@ -1,3 +1,4 @@
+int
 tm_pstat(tp, mp)
 	struct task *tp;
 	struct pmsg *mp;

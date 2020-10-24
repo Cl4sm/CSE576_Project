@@ -1,3 +1,4 @@
+int bh_insert(const void *buf, register int len)
 {
   register const unsigned char *data = buf;
 

@@ -1,3 +1,4 @@
+SCM eqp(x, y)
      SCM x, y;
 {
 #ifdef FLOATS

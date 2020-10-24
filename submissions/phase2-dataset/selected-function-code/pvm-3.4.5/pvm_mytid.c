@@ -1,3 +1,4 @@
+int
 pvm_mytid()
 {
 	int cc;

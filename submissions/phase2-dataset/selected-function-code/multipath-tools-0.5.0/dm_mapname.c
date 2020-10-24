@@ -1,3 +1,4 @@
+char *
 dm_mapname(int major, int minor)
 {
 	struct dm_task *dmt;

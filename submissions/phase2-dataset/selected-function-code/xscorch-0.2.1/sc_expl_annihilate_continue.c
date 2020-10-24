@@ -1,3 +1,4 @@
+bool sc_expl_annihilate_continue(sc_config *c, sc_explosion *e) {
 /* sc_expl_annihilate_continue
    Continue to annihilate a section of the screen by drawing a huge explosion
    to it.  This function returns "true" if it needs to be called again to

@@ -1,3 +1,4 @@
+void
 hd_dump(hp)
 	struct hostd *hp;
 {

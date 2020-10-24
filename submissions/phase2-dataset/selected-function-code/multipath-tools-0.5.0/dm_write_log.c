@@ -1,3 +1,4 @@
+static void
 dm_write_log (int level, const char *file, int line, const char *f, ...)
 {
 	va_list ap;

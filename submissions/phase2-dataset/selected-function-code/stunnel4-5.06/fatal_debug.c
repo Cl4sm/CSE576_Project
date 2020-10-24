@@ -1,3 +1,4 @@
+void fatal_debug(char *txt, char *file, int line) {
     char msg[80];
 #ifdef USE_WIN32
     DWORD num;

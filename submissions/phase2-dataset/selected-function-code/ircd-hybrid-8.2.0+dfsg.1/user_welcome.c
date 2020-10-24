@@ -1,3 +1,4 @@
+static void
 user_welcome(struct Client *source_p)
 {
 #if defined(__TIME__) && defined(__DATE__)

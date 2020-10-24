@@ -1,3 +1,4 @@
+int
 tev_fin()
 {
 	struct timeval timestamp;

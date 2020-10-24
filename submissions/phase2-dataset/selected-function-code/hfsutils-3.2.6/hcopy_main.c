@@ -1,3 +1,4 @@
+int hcopy_main(int argc, char *argv[])
 {
   int nargs, mode = 'a', result = 0;
   const char *target;

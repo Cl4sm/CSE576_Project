@@ -1,3 +1,4 @@
+void *
 sl_alloc(slab *s)
 {
   struct sl_head *h;

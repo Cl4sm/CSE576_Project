@@ -1,3 +1,4 @@
+struct rta *
 bgp_decode_attrs(struct bgp_conn *conn, byte *attr, unsigned int len, struct linpool *pool, int mandatory)
 {
   struct bgp_proto *bgp = conn->bgp;

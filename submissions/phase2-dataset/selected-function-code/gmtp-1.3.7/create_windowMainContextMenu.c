@@ -1,3 +1,4 @@
+GtkWidget* create_windowMainContextMenu(void) {
     GtkWidget* menu;
     //GtkWidget* cfileAdd;
     GtkWidget* cfileRename;

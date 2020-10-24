@@ -1,3 +1,4 @@
+u_char	*
 bits_to_lastlog_level(level)
 	int	level;
 {

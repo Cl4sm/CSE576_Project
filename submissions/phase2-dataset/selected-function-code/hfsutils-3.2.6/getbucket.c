@@ -1,3 +1,4 @@
+static
 bucket *getbucket(bcache *cache, unsigned long bnum, int fill)
 {
   bucket **hslot, *b, *p, *bptr,

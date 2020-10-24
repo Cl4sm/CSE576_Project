@@ -1,3 +1,4 @@
+void f_getptrs(hfsfile *file, ExtDataRec **extrec,
 	       unsigned long **lglen, unsigned long **pylen)
 {
   if (file->fork == fkData)

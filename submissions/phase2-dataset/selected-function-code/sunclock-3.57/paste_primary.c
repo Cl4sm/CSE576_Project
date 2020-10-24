@@ -1,3 +1,4 @@
+int paste_primary(int win, int property, int Delete)
 {
 	Atom actual_type;
 	int actual_format, i;

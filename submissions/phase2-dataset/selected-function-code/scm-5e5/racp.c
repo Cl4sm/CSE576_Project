@@ -1,3 +1,4 @@
+static int racp(src, dst)
      SCM dst, src;
 {
   long n = (ARRAY_DIMS(src)->ubnd - ARRAY_DIMS(src)->lbnd + 1);

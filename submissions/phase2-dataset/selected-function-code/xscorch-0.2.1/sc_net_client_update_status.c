@@ -1,3 +1,4 @@
+bool sc_net_client_update_status(sc_client *cli) {
 /* sc_net_client_update_status
    Send current information about our connection to the server. */
 

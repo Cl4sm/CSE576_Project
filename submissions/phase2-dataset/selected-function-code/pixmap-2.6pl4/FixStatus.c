@@ -1,3 +1,4 @@
+void FixStatus()
 {
     int n;
     Arg wargs[2];

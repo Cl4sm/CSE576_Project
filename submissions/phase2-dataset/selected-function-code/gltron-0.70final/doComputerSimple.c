@@ -1,3 +1,4 @@
+void doComputerSimple(int player, int target, AI_Distances *distances) {
   AI *ai;
   Data *data;
   Player *me;

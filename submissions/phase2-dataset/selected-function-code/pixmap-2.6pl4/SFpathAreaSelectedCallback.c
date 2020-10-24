@@ -1,3 +1,4 @@
+void
 SFpathAreaSelectedCallback(w, client_data, pnew)
 	Widget		w;
 	XtPointer	client_data;

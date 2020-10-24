@@ -1,3 +1,4 @@
+struct announce_hook *
 proto_add_announce_hook(struct proto *p, struct rtable *t, struct proto_stats *stats)
 {
   struct announce_hook *h;

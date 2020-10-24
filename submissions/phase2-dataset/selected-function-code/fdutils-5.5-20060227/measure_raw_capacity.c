@@ -1,3 +1,4 @@
+int measure_raw_capacity(int fd, int dn, int rate, 
 			int cylinder, int warmup, int verbosity)
 {
 	int cap, min, ctr;

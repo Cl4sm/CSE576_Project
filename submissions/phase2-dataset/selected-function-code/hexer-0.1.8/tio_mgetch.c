@@ -1,3 +1,4 @@
+  int
 tio_mgetch(map, map_string)
   int map;
   char *map_string;

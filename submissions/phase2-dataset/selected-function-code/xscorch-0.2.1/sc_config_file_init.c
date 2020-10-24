@@ -1,3 +1,4 @@
+int sc_config_file_init(sc_config *c) {
 /* sc_config_file_init
    Initialise a registry database.  This function only initialises
    the registry structure with the classes and variables defined

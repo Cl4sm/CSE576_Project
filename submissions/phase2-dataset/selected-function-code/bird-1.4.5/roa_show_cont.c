@@ -1,3 +1,4 @@
+static void
 roa_show_cont(struct cli *c)
 {
   struct roa_show_data *d = c->rover;

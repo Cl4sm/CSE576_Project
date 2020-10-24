@@ -1,3 +1,4 @@
+static void
 cli_init_unix(uid_t use_uid, gid_t use_gid)
 {
   sock *s;

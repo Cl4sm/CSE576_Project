@@ -1,3 +1,4 @@
+static void
 i386_find_free_addr (struct layout_libs *l, Elf32_Addr *ret,
 		     Elf32_Addr beg, Elf32_Addr end, Elf32_Addr start)
 {

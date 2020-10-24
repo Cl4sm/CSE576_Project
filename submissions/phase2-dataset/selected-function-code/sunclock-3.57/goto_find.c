@@ -1,3 +1,4 @@
+char *goto_find(char *s, int back)
 {
 	mark_off();
 	do

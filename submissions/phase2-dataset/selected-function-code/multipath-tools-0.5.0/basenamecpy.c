@@ -1,3 +1,4 @@
+int
 basenamecpy (const char * str1, char * str2, int str2len)
 {
 	char *p;

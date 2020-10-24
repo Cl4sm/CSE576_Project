@@ -1,3 +1,4 @@
+void
 add_isupport(const char *name, const char *options, int n)
 {
   dlink_node *ptr;

@@ -1,3 +1,4 @@
+void scm_princlosure(proc, port, writing)
      SCM proc, port;
      int writing;
 {

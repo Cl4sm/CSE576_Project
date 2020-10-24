@@ -1,3 +1,4 @@
+bool tn_send_buffer(tn_connection *tnc, const byte *buffer, size_t size) {
 /*
  * tn_send_buffer
  * Transmist a buffer with fully blocking IO.

@@ -1,3 +1,4 @@
+NOEXPORT int verify_checks(int preverify_ok, X509_STORE_CTX *callback_ctx) {
     X509 *cert;
     int depth;
     char *subject;

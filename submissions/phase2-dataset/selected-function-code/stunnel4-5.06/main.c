@@ -1,3 +1,4 @@
+int main(int argc, char *argv[]) {
     static struct WSAData wsa_state;
     TCHAR *c, stunnel_exe_path[MAX_PATH];
 

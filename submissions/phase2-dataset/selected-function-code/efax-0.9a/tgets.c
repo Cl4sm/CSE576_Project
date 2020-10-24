@@ -1,3 +1,4 @@
+char *tgets( TFILE *f, char *s, int len, int t )
 {
   int i, n, c ;
 

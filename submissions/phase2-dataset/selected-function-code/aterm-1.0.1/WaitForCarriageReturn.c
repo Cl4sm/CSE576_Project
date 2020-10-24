@@ -1,3 +1,4 @@
+int
 WaitForCarriageReturn (long *win, int *x, int *y)
 {
    int i, len;

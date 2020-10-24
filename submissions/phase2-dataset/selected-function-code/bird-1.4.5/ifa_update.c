@@ -1,3 +1,4 @@
+struct ifa *
 ifa_update(struct ifa *a)
 {
   struct iface *i = a->iface;

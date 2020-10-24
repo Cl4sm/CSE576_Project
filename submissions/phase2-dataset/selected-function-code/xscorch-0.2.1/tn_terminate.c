@@ -1,3 +1,4 @@
+bool tn_terminate(tn_connection **tnc) {
 /*
  * tn_terminate
  * Close out a connection and free up its structs.

@@ -1,3 +1,4 @@
+  static void
 he_undo(struct he_s *hedit)
   /* Undo the last command.
    */

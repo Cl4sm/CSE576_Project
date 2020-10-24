@@ -1,3 +1,4 @@
+void initGameStructures(void) { /* called only once */
   int i;
 
   /* initialize some global variables */

@@ -1,3 +1,4 @@
+void DoAddColor()
 {
   char *cname;
   

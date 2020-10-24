@@ -1,3 +1,4 @@
+void  pcxwrite ( OFILE *of, uchar *p, int nb )
 {
   int c, n, runc ;
   FILE *f = of->f ;

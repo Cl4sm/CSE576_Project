@@ -1,3 +1,4 @@
+int rt_cond_wait(rt_cond_t * cvp, rt_mutex_t * mp) {
   int status=0;
 #if defined(THR) && defined(_MSC_VER)
   int result=0;

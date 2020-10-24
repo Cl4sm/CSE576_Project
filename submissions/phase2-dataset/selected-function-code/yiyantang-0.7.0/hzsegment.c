@@ -1,3 +1,4 @@
+int hzsegment (unsigned char *buf, int count)
 {
 	unsigned char *pbuf;
 	int i;

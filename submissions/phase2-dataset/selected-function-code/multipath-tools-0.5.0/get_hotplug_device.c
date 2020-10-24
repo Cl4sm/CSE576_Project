@@ -1,3 +1,4 @@
+static char *
 get_hotplug_device(void)
 {
 	unsigned int major, minor, off, len;

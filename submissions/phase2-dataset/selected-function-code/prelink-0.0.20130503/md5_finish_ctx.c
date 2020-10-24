@@ -1,3 +1,4 @@
+void *
 md5_finish_ctx (ctx, resbuf)
      struct md5_ctx *ctx;
      void *resbuf;

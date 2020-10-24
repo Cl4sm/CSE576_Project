@@ -1,3 +1,4 @@
+static int
 mp_weight_handler(vector strvec)
 {
 	struct mpentry * mpe = VECTOR_LAST_SLOT(conf->mptable);

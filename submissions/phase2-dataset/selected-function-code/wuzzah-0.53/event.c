@@ -1,3 +1,4 @@
+void event(const struct buddy *b, const struct bud_utrec *u, short write){
 	char *status_msg=NULL, *wr_msg=NULL, *extra_cmd=NULL;
 
 	if(u->verified==B_LOGGED_IN || u->verified==B_LOGGED_OUT){

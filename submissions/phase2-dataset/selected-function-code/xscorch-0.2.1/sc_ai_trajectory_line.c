@@ -1,3 +1,4 @@
+bool sc_ai_trajectory_line(const sc_config *c, sc_player *p, const sc_player *victim) {
 /* sc_ai_trajectory_line
    Calculates trajectory to the specified coordinates, taking into account
    only the gravity.  This function assumes we do have a direct line of

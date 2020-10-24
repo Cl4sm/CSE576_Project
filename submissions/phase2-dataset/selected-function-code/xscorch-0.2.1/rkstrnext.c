@@ -1,3 +1,4 @@
+char *rkstrnext(rkstate *rk) {
 /* Rabin-Karp-String-Next
    Searches for the next substring <d> in source string <s> using the
    Rabin Karp algorithm. Returns NULL if no more entries were found, or

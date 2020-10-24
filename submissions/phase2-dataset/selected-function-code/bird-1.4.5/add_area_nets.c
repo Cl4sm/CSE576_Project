@@ -1,3 +1,4 @@
+static void
 add_area_nets(struct ospf_area *oa, struct ospf_area_config *ac)
 {
     struct proto_ospf *po = oa->po;

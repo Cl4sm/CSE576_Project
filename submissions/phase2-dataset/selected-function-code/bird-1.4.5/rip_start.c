@@ -1,3 +1,4 @@
+static int
 rip_start(struct proto *p)
 {
   struct rip_interface *rif;

@@ -1,3 +1,4 @@
+static bool _sc_net_cli_recv_inventory(sc_config *c, sc_packet *packet) {
 
    sc_accessory_info *ai;  /* A temp pointer into info structs */
    sc_weapon_info *wi;     /* A temp pointer into info structs */

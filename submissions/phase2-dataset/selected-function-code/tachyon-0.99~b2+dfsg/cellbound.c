@@ -1,3 +1,4 @@
+static int cellbound(const grid *g, const gridindex *index, vector * cmin, vector * cmax) {
   vector min, max, cellmin, cellmax;
   objectlist * cur;
   int numinbounds = 0;

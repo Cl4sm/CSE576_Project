@@ -1,3 +1,4 @@
+void client_main(CLI *c) {
     s_log(LOG_DEBUG, "Service [%s] started", c->opt->servname);
     if(c->opt->option.program && c->opt->option.remote) {
             /* exec and connect options specified together

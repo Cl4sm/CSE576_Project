@@ -1,3 +1,4 @@
+void scm_dynthrow(tocont, arg1, arg2, rest)
      SCM tocont;
      SCM arg1, arg2, rest;
 {

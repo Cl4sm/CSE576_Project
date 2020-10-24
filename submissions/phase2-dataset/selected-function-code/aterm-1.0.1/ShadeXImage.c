@@ -1,3 +1,4 @@
+void ShadeXImage( XImage* srcImage, ShadingInfo* shading, GC gc )
 {
   int sh_r, sh_g, sh_b;
   RUINT32T mask_r, mask_g, mask_b;

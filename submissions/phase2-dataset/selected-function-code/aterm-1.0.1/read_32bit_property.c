@@ -1,3 +1,4 @@
+Bool 
 read_32bit_property (Window w, Atom property, CARD32* trg)
 {
 	Bool          res = False;

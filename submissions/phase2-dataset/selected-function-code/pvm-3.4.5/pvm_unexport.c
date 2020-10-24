@@ -1,3 +1,4 @@
+int
 pvm_unexport(name)
 	char *name;
 {

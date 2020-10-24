@@ -1,3 +1,4 @@
+static void _sc_player_damage(sc_config *c, sc_player *p, const sc_explosion *e) {
 /* sc_player_damage */
 
    int damage;

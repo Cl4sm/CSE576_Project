@@ -1,3 +1,4 @@
+void loadPixEditColors()
 {
   FILE *colorfile;
   static char *fname = ".pixmap";

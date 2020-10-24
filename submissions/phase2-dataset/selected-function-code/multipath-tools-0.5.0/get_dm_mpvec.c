@@ -1,3 +1,4 @@
+static int
 get_dm_mpvec (vector curmp, vector pathvec, char * refwwid)
 {
 	int i;

@@ -1,3 +1,4 @@
+static bool _sc_ai_buy_batteries(const sc_config *c, sc_player *p, int *budget) {
 /* sc_ai_buy_batteries
    Buys some batteries for the AI.  */
 

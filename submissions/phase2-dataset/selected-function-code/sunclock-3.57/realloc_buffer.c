@@ -1,3 +1,4 @@
+char * realloc_buffer(int mode)
 {
 	char *ptr;
 	int i;

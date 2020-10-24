@@ -1,3 +1,4 @@
+sock *
 bfd_open_rx_sk(struct bfd_proto *p, int multihop)
 {
   sock *sk = sk_new(p->tpool);

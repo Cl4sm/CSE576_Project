@@ -1,3 +1,4 @@
+static void
 send_mode_changes(struct Client *source_p, struct Channel *chptr)
 {
   int mbl = 0, pbl = 0, arglen = 0, nc = 0, mc = 0;

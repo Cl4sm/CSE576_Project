@@ -1,3 +1,4 @@
+int
 dm_get_map(int major, int minor, char * outparams)
 {
 	int r = 1;

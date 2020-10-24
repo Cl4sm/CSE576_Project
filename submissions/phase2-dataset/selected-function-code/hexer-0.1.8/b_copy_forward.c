@@ -1,3 +1,4 @@
+  long
 b_copy_forward(buffer, target_position, source_position, count)
   Buffer *buffer;
   long target_position;

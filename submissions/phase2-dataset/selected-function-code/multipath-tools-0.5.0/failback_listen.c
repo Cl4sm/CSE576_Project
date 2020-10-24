@@ -1,3 +1,4 @@
+int failback_listen(void)
 {
 	int sock;
 	struct sockaddr_nl snl;

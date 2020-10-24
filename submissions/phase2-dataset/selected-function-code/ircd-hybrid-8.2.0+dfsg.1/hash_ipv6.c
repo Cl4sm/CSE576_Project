@@ -1,3 +1,4 @@
+static uint32_t
 hash_ipv6(const struct irc_ssaddr *addr, int bits)
 {
   uint32_t v = 0, n;

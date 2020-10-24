@@ -1,3 +1,4 @@
+char *scm_find_implpath(execpath)
      const char *execpath;
 {
   char *implpath = 0;

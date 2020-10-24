@@ -1,3 +1,4 @@
+String PWGetFilepath(Widget w, String *str)
 #else
 String PWGetFilepath(w, str)
     Widget w;

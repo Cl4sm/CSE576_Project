@@ -1,3 +1,4 @@
+static void test_crc(int start)
 {
 	void *buf;
 	u32 crc;

@@ -1,3 +1,4 @@
+reg_var *reg_block_resolve(reg *r, reg_var *v, const char *path) {
 /* reg_block_resolve
    Resolve the specified pathname, relative to <v>.  If <path> == NULL,
    then <v> itself is returned.  Otherwise, the <path> is resolved,

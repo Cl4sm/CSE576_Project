@@ -1,3 +1,4 @@
+int
 mb_names(tid, pattern, mp)
 	int tid;
 	char *pattern;

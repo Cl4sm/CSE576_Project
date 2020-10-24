@@ -1,3 +1,4 @@
+void yy_flush_buffer( YY_BUFFER_STATE b )
 #else
 void yy_flush_buffer( b )
 YY_BUFFER_STATE b;

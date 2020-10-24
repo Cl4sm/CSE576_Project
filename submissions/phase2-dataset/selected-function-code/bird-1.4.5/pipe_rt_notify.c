@@ -1,3 +1,4 @@
+static void
 pipe_rt_notify(struct proto *P, rtable *src_table, net *n, rte *new, rte *old, ea_list *attrs)
 {
   struct pipe_proto *p = (struct pipe_proto *) P;

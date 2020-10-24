@@ -1,3 +1,4 @@
+SCM resizuve(vect, len)
      SCM vect, len;
 {
   long ol, l = INUM(len);

@@ -1,3 +1,4 @@
+rta *
 rta_lookup(rta *o)
 {
   rta *r;

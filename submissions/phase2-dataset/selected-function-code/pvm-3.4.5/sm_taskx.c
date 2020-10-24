@@ -1,3 +1,4 @@
+int
 sm_taskx(mp)
 	struct pmsg *mp;
 {

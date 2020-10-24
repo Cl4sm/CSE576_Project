@@ -1,3 +1,4 @@
+void Sound_initTracks(void) {
   const char *music_path;
   List *soundList;
   List *p;

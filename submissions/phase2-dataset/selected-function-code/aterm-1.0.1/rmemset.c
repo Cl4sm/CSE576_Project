@@ -1,3 +1,4 @@
+void
 rmemset(void *p, unsigned char c, R_int_p_t len)
 {
     R_u_int_p_t     i, val, *rp;

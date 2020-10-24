@@ -1,3 +1,4 @@
+void
 report_failure(path, code)
 char *path;
 int code;

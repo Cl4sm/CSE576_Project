@@ -1,3 +1,4 @@
+void
 cmd_show_status(void)
 {
   byte tim[TM_DATETIME_BUFFER_SIZE];

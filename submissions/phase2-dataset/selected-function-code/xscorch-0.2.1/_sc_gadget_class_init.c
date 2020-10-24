@@ -1,3 +1,4 @@
+static void _sc_gadget_class_init(ScGadgetClass *klass) {
 
    GtkObjectClass *object_class = (GtkObjectClass *)klass;
 

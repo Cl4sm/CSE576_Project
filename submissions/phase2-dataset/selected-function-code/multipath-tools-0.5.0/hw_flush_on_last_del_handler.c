@@ -1,3 +1,4 @@
+static int
 hw_flush_on_last_del_handler(vector strvec)
 {
 	struct hwentry *hwe = VECTOR_LAST_SLOT(conf->hwtable);

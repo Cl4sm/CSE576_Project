@@ -1,3 +1,4 @@
+int
 parseCmdLine(buf)
 char * buf;
 {

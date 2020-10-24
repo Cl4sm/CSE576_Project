@@ -1,3 +1,4 @@
+static void _thermometer_manager_set_property(GObject *object, guint property_id, const GValue *value, GParamSpec *pspec)
 {
 	ThermometerManager *self = THERMOMETER_MANAGER(object);
 	GError *error = NULL;

@@ -1,3 +1,4 @@
+int rt_tilestack_compact(rt_tilestack_t *s) {
 #if defined(THR)
   rt_mutex_lock(&s->mtx);
 #endif

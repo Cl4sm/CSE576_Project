@@ -1,3 +1,4 @@
+void drawGame(void) {
   GLint i;
 
   polycount = 0;

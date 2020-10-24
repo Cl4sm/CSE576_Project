@@ -1,3 +1,4 @@
+void InitNoise(void) {
   byte x,y,z,i,j,k;
   unsigned int rndval = 1234567; /* pathetic random number seed */
 

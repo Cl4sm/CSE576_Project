@@ -1,3 +1,4 @@
+static int
 tev_pack_short_desc( did, array, datap, cnt, std )
 int did;
 int array;

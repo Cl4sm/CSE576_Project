@@ -1,3 +1,4 @@
+static int
 handle_verify (int fd, const char *filename)
 {
   off_t off;

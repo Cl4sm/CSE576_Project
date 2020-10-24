@@ -1,3 +1,4 @@
+static Widget
 MakeMenu( menubar, menuName, buttonName, menu, num, callback )
     Widget	   menubar;
     String	   menuName;

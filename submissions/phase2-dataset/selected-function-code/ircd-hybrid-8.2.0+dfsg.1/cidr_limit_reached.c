@@ -1,3 +1,4 @@
+int
 cidr_limit_reached(int over_rule, struct irc_ssaddr *ip, struct ClassItem *class)
 {
   dlink_node *ptr = NULL;

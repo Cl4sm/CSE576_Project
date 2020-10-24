@@ -1,3 +1,4 @@
+void
 proto_notify_state(struct proto *p, unsigned ps)
 {
   unsigned ops = p->proto_state;

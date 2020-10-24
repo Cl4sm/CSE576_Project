@@ -1,3 +1,4 @@
+void
 display_server_list()
 {
 	int	i;

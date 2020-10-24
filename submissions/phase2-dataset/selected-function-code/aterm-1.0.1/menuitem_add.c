@@ -1,3 +1,4 @@
+menuitem_t     *
 menuitem_add(menu_t * menu, char *name, char *name2, char *action)
 {
 #ifdef MENUBAR

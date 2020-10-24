@@ -1,3 +1,4 @@
+int ReadActive()
 /*
  *  Read active file
  */

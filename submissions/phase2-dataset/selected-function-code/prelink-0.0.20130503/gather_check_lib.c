@@ -1,3 +1,4 @@
+static int
 gather_check_lib (void **p, void *info)
 {
   struct prelink_entry *e = * (struct prelink_entry **) p;

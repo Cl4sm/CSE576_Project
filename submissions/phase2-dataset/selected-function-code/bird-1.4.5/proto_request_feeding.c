@@ -1,3 +1,4 @@
+void
 proto_request_feeding(struct proto *p)
 {
   ASSERT(p->proto_state == PS_UP);

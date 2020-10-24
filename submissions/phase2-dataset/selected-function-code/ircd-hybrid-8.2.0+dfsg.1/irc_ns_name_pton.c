@@ -1,3 +1,4 @@
+static int
 irc_ns_name_pton(const char *src, unsigned char *dst, size_t dstsiz)
 {
   unsigned char *label, *bp, *eom;

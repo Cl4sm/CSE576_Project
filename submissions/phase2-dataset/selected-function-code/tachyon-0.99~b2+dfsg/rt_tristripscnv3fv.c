@@ -1,3 +1,4 @@
+void rt_tristripscnv3fv(SceneHandle voidscene, void * tex,
                         int numverts, const float * cnv, int numstrips,
                         const int *vertsperstrip, const int *facets) {
   int strip, t, v;

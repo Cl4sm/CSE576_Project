@@ -1,3 +1,4 @@
+int
 configure (struct vectors * vecs, int start_waiters)
 {
 	struct multipath * mpp;

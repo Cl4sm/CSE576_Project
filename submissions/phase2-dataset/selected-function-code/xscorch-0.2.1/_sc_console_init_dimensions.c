@@ -1,3 +1,4 @@
+static inline void _sc_console_init_dimensions(ScConsole *cons) {
 /* sc_console_init_dimensions
    Initialize console dimensions based on the current font metrics, and set
    the console's usize request.  */

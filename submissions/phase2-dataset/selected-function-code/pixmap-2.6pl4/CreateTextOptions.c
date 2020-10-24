@@ -1,3 +1,4 @@
+TextOptions* CreateTextOptions(parent, name ) 
     Widget	parent;
     String	name;
 {

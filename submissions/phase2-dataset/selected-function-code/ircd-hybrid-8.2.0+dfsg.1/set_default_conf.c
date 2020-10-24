@@ -1,3 +1,4 @@
+static void
 set_default_conf(void)
 {
   /* verify init_class() ran, this should be an unnecessary check

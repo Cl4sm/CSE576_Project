@@ -1,3 +1,4 @@
+int
 prelink_verify (const char *filename)
 {
   DSO *dso = NULL, *dso2 = NULL;

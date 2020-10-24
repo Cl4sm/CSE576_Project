@@ -1,3 +1,4 @@
+void
 parse(struct Client *client_p, char *pbuffer, char *bufend)
 {
   struct Client *from = client_p;

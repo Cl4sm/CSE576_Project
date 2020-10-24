@@ -1,3 +1,4 @@
+static int
 arm_prelink_conflict_rela (DSO *dso, struct prelink_info *info,
 			   GElf_Rela *rela, GElf_Addr relaaddr)
 {

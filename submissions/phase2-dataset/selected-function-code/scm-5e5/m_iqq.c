@@ -1,3 +1,4 @@
+static SCM m_iqq(form, depth, env, ctxt)
      SCM form, env, ctxt;
      int depth;
 {

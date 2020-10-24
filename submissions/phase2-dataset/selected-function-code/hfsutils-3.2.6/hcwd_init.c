@@ -1,3 +1,4 @@
+int hcwd_init(void)
 {
   const char *home, *start;
   char buf[512], *path, *ptr;

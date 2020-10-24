@@ -1,3 +1,4 @@
+void rt_quadsphere(SceneHandle scene, void * tex, apivector ctr, flt rad) {
   quadric * q;
   flt factor;
   q=(quadric *) newquadric();

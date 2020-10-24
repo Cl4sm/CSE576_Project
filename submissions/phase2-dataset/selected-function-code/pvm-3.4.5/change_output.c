@@ -1,3 +1,4 @@
+int
 change_output(tp, outtid, outctx, outtag)
 	struct task *tp;
 	int outtid, outctx, outtag;

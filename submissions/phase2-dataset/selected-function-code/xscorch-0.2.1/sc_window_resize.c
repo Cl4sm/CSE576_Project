@@ -1,3 +1,4 @@
+void sc_window_resize(sc_window *w_) {
 
    sc_window_gtk *w = (sc_window_gtk *)w_;
    sc_config *c = w->c;

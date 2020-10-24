@@ -1,3 +1,4 @@
+static struct vectors *
 init_vecs (void)
 {
 	struct vectors * vecs;

@@ -1,3 +1,4 @@
+static inline int _sc_ai_budget(const sc_config *c, const sc_player *p) {
 /* sc_ai_budget
    Calculate the amount of money the AI is permitted to spend this turn */
 

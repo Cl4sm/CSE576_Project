@@ -1,3 +1,4 @@
+NOEXPORT int alloc_addresses(struct hostent *h, const struct addrinfo *hints,
         u_short port, struct addrinfo **head, struct addrinfo **tail) {
     int i;
     struct addrinfo *ai;

@@ -1,3 +1,4 @@
+void MD5Update(struct MD5Context *ctx, unsigned char const *buf, unsigned len)
 {
     u32 t;
 

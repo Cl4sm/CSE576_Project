@@ -1,3 +1,4 @@
+  static char *
 rl_make_vline_(struct rl_line_s *rrl)
   /* update the visible line `rrl->vline' from `rrl->line'.
    * the return value is `rrl->vline'.

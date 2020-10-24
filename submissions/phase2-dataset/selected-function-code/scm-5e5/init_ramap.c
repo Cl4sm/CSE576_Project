@@ -1,3 +1,4 @@
+void init_ramap()
 {
   init_raprocs(ra_rpsubrs);
   init_raprocs(ra_asubrs);

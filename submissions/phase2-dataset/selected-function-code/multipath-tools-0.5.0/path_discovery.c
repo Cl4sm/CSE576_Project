@@ -1,3 +1,4 @@
+int
 path_discovery (vector pathvec, struct config * conf, int flag)
 {
 	struct udev_enumerate *udev_iter;

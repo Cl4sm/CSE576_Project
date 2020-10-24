@@ -1,3 +1,4 @@
+static int
 lsa_validate_rt(struct ospf_lsa_header *lsa, struct ospf_lsa_rt *body)
 {
   unsigned int i, max;

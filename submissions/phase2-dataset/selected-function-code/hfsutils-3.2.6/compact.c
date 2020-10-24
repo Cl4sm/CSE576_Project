@@ -1,3 +1,4 @@
+static
 void compact(node *np)
 {
   byte *ptr;

@@ -1,3 +1,4 @@
+int
 peer_send(txup, txfp, dtid, code)
 	struct pmsg *txup;		/* tx message or null */
 	struct frag *txfp;		/* cur tx frag or null */

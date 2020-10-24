@@ -1,3 +1,4 @@
+void
 start_auth(struct Client *client_p)
 {
   struct AuthRequest *auth = NULL;

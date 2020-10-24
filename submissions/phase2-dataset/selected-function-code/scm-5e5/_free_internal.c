@@ -1,3 +1,4 @@
+void
 _free_internal (ptr)
      __ptr_t ptr;
 {

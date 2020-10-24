@@ -1,3 +1,4 @@
+static void
 f_rta_cow(void)
 {
   if ((*f_rte)->attrs->aflags & RTAF_CACHED) {

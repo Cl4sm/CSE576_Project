@@ -1,3 +1,4 @@
+static int
 mips_rel_to_rela (DSO *dso, GElf_Rel *rel, GElf_Rela *rela)
 {
   rela->r_offset = rel->r_offset;

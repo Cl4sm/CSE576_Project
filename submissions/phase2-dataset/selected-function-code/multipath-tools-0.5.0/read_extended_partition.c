@@ -1,3 +1,4 @@
+static int
 read_extended_partition(int fd, struct partition *ep, int en,
 			struct slice *sp, int ns)
 {

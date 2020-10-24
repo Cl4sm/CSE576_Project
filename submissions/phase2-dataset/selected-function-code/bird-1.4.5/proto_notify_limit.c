@@ -1,3 +1,4 @@
+void
 proto_notify_limit(struct announce_hook *ah, struct proto_limit *l, int dir, u32 rt_count)
 {
   const char *dir_name[PLD_MAX] = { "receive", "import" , "export" };

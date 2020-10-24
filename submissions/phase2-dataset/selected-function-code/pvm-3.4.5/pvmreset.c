@@ -1,3 +1,4 @@
+int
 pvmreset( mytid, killtasks, class, index )
 int mytid;
 int killtasks;

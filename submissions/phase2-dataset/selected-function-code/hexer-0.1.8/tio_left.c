@@ -1,3 +1,4 @@
+  void
 tio_left(count)
   /* Move cursor left `count' lines.
    */

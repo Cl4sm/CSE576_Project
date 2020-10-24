@@ -1,3 +1,4 @@
+bool sc_inventory_buy_accessory(sc_player *p, sc_accessory_info *info) {
 /* sc_inventory_buy_accessory
    Buys the specified accessory.  Returns true if the purchase was successful. */
 

@@ -1,3 +1,4 @@
+static int
 bgp_get_attr_len(eattr *a)
 {
   int len;

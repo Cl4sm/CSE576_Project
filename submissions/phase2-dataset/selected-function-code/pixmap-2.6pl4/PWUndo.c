@@ -1,3 +1,4 @@
+void PWUndo(Widget w)
 #else
 void PWUndo(w)
      Widget w;

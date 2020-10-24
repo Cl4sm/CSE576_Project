@@ -1,3 +1,4 @@
+static void
 ccomment(void)
 {
   int c = 0;

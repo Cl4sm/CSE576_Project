@@ -1,3 +1,4 @@
+static struct ea_list *
 krt_make_tmp_attrs(rte *rt, struct linpool *pool)
 {
   struct ea_list *l = lp_alloc(pool, sizeof(struct ea_list) + 2 * sizeof(eattr));

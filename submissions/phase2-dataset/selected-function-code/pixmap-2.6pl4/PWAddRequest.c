@@ -1,3 +1,4 @@
+Boolean PWAddRequest(Widget w, PWRequest name, Boolean trap, 
 		     XtPointer call_data, Cardinal call_data_size)
 #else
 Boolean PWAddRequest(w, name, trap, call_data, call_data_size)

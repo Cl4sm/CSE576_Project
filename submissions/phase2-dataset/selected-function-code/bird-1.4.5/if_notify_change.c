@@ -1,3 +1,4 @@
+static void
 if_notify_change(unsigned c, struct iface *i)
 {
   struct proto *p;

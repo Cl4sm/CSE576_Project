@@ -1,3 +1,4 @@
+static int
 adjust_dwarf2_ranges (DSO *dso, GElf_Addr offset, GElf_Addr base,
 		      GElf_Addr start, GElf_Addr adjust)
 {

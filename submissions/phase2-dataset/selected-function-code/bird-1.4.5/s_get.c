@@ -1,3 +1,4 @@
+snode *
 s_get(siterator *i)
 {
   siterator *f, *g;

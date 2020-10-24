@@ -1,3 +1,4 @@
+static sc_trajectory_result _sc_traj_pass_wall(const sc_config *c, sc_trajectory *tr, sc_trajectory_data *t) {
 /* sc_traj_pass_wall
    Determine whether we hit a wall with the weapon at (t).  Action depends
    on the wall type.  This function may choose to detonate here.  Returns

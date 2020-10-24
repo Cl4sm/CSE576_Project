@@ -1,3 +1,4 @@
+static int input()
 #endif
 	{
 	int c;

@@ -1,3 +1,4 @@
+int
 snprint_path_header (char * line, int len, char * format)
 {
 	char * c = line;   /* line cursor */

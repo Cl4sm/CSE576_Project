@@ -1,3 +1,4 @@
+GtkWidget* create_windowMain(void) {
     GtkWidget *vbox1;
     GtkWidget *menubarMain;
     GtkWidget *menuitem1;

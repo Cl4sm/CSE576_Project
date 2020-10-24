@@ -1,3 +1,4 @@
+static int
 nl_async_hook(sock *sk, int size UNUSED)
 {
   struct iovec iov = { nl_async_rx_buffer, NL_RX_SIZE };

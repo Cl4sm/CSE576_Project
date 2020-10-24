@@ -1,3 +1,4 @@
+char *trimbracecomment(char *s, char c1, char c2) {
 /* Trim-Brace-Comment
    Trims off the comment in string <s>, which is specified as anything
    following the character specified in <c1>, up to the occurrence of

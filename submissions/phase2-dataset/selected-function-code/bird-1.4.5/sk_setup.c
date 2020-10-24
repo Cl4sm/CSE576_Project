@@ -1,3 +1,4 @@
+static int
 sk_setup(sock *s)
 {
   int y = 1;

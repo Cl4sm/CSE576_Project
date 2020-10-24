@@ -1,3 +1,4 @@
+void newDECODER ( DECODER *d )
 {
   int i ;
 

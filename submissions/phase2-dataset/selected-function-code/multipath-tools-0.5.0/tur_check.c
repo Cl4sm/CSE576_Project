@@ -1,3 +1,4 @@
+int
 tur_check(int fd, unsigned int timeout, char *msg)
 {
 	struct sg_io_hdr io_hdr;

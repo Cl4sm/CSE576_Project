@@ -1,3 +1,4 @@
+int mincap ( cap local, cap remote, cap session )
 {
   int err=0, i ;
   int msttab[2][8] = { { 0,1,3,3,5,5,7,7 } , { 0,1,1,3,3,5,5,7 } } ;

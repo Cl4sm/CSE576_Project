@@ -1,3 +1,4 @@
+double jd(ny, nm, nd, UT)
 int ny, nm, nd;
 double UT;
 {

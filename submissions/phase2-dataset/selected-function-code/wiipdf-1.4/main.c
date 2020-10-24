@@ -1,3 +1,4 @@
+int main(int argc, char *argv[]) {
 	bdaddr_t wiimote_addr;
 
 	if (argc != 3) {

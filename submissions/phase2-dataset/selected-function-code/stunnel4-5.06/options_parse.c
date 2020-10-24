@@ -1,3 +1,4 @@
+int options_parse(CONF_TYPE type) {
     DISK_FILE *df;
     char line_text[CONFLINELEN], *errstr;
     char config_line[CONFLINELEN], *config_opt, *config_arg;

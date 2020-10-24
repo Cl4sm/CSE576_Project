@@ -1,3 +1,4 @@
+int
 irc_res_mkquery(
 	     const char *dname,		/* domain name */
 	     int class, int type,	/* class and type of query */

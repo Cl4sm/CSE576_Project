@@ -1,3 +1,4 @@
+void
 SFpathSliderMovedCallback(w, client_data, new)
 	Widget		w;
 	XtPointer	client_data;

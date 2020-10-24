@@ -1,3 +1,4 @@
+void
 Draw_Triangle(Window win, GC topShadow, GC botShadow, int x, int y, int w, int type)
 {
     switch (type) {

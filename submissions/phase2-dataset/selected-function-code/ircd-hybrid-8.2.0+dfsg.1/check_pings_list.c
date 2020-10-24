@@ -1,3 +1,4 @@
+static void
 check_pings_list(dlink_list *list)
 {
   char buf[IRCD_BUFSIZE] = "";

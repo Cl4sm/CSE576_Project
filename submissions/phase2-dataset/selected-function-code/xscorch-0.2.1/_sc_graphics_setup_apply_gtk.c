@@ -1,3 +1,4 @@
+static void _sc_graphics_setup_apply_gtk(__libj_unused ScDialog *dlg,
                                          sc_graphics_setup_data_gtk *setup) {
 
    sc_config *c = setup->c;

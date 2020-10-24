@@ -1,3 +1,4 @@
+gint displayFileOverwriteDialog(gchar *filename) {
     GtkWidget *dialog;
     dialog = gtk_message_dialog_new_with_markup(GTK_WINDOW(windowMain),
             (GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT),

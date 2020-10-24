@@ -1,3 +1,4 @@
+static void _health_channel_set_property(GObject *object, guint property_id, const GValue *value, GParamSpec *pspec)
 {
 	HealthChannel *self = HEALTH_CHANNEL(object);
 	GError *error = NULL;

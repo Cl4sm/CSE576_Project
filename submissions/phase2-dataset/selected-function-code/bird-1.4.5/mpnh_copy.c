@@ -1,3 +1,4 @@
+static struct mpnh *
 mpnh_copy(struct mpnh *o)
 {
   struct mpnh *first = NULL;

@@ -1,3 +1,4 @@
+static GElf_Addr
 ia64_create_opd (struct prelink_info *info, int first, int last, int plt)
 {
   Elf_Data *d;

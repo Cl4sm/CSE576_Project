@@ -1,3 +1,4 @@
+static void
 nbssetkey(key)
 char *key;
 {

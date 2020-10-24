@@ -1,3 +1,4 @@
+static void
 static_neigh_notify(struct neighbor *n)
 {
   struct proto *p = n->proto;

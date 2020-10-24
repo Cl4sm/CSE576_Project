@@ -1,3 +1,4 @@
+void
 protos_build(void)
 {
   init_list(&protocol_list);

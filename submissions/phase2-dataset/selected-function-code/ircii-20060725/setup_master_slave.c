@@ -1,3 +1,4 @@
+static void
 setup_master_slave()
 {
 	char	line[11];

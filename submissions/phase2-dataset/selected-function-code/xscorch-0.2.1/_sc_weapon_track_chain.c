@@ -1,3 +1,4 @@
+static inline sc_weapon_track_result _sc_weapon_track_chain(sc_config *c, sc_weapon **wp, sc_explosion **e) {
 /* sc_weapon_track_chain
    Track a weapon chain for a single player.  This processes all
    weapons in the chain; it will return either:

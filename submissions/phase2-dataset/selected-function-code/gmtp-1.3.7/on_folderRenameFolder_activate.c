@@ -1,3 +1,4 @@
+void on_folderRenameFolder_activate(GtkMenuItem *menuitem, gpointer user_data) {
     gchar *newfilename = NULL;
     gchar *filename = NULL;
     GtkTreeModel *sortmodel;

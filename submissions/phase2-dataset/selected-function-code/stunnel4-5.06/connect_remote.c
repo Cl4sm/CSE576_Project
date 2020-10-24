@@ -1,3 +1,4 @@
+NOEXPORT int connect_remote(CLI *c) {
     int fd;
     unsigned ind_start, ind_try, ind_cur;
 

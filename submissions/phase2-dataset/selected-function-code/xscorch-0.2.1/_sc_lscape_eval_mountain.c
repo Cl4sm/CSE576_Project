@@ -1,3 +1,4 @@
+static double _sc_lscape_eval_mountain(double x) {
 /* _sc_lscape_eval_mountain
    Evaluates the ``mountain'' profile function at point x */
 

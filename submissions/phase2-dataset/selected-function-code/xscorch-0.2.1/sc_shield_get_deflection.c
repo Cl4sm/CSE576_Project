@@ -1,3 +1,4 @@
+bool sc_shield_get_deflection(sc_config *c, const sc_player *owner, int traj_flags, double x, double y, double *vx, double *vy) {
 /* sc_shield_get_deflection
    Find the total deflection in velocity of a missile by magnetic shields. */
 

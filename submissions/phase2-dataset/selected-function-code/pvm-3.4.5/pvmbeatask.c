@@ -1,3 +1,4 @@
+int
 pvmbeatask()
 {
 	struct shmpkhdr *inmsgs;

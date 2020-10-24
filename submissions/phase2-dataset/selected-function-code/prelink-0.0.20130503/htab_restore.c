@@ -1,3 +1,4 @@
+void
 htab_restore (htab, name, restorefn)
      htab_t htab;
      const char *name;

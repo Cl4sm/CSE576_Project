@@ -1,3 +1,4 @@
+void
 conf_free(struct MaskItem *conf)
 {
   dlink_node *ptr = NULL, *ptr_next = NULL;

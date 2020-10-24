@@ -1,3 +1,4 @@
+static inline void _sc_expl_cache_annihilate_column_rad_gtk(GdkImage *image, GdkColor *gradient,
                                                             int gsize, int dx, int dy, int radius) {
 /* sc_expl_cache_annihilate_column_rad_gtk
    Annihilate a column of an explosion.  (cx,cy) is the center coordinate of

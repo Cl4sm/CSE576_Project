@@ -1,3 +1,4 @@
+static
 const byte *find(rsrcmap *map, const char *type,
 		 int (*compare)(rsrcmap *, const byte *, const void *),
 		 const void *key)

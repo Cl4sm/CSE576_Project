@@ -1,3 +1,4 @@
+void
 init_keywords(void)
 {
 	install_keyword_root("defaults", NULL);

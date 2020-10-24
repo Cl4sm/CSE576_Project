@@ -1,3 +1,4 @@
+NOEXPORT SSL_SESSION *sess_get_cb(SSL *ssl,
         unsigned char *key, int key_len, int *do_copy) {
     unsigned char *val, *val_tmp=NULL;
     unsigned int val_len=0;

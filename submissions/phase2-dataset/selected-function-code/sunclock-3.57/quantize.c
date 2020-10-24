@@ -1,3 +1,4 @@
+void
 quantize(Context)
 Sundata * Context;
 {

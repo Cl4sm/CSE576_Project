@@ -1,3 +1,4 @@
+void
 free_mpe (struct mpentry * mpe)
 {
 	if (!mpe)

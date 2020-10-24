@@ -1,3 +1,4 @@
+static int
 make_hdr (new, a_out, data_start, bss_start, entry_address, a_name, new_name)
      int new, a_out;
      unsigned data_start, bss_start, entry_address;

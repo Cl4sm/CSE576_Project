@@ -1,3 +1,4 @@
+static int
 mips_apply_reloc (struct prelink_info *info, GElf_Xword r_info,
 		  GElf_Rela *rela, char *buf)
 {

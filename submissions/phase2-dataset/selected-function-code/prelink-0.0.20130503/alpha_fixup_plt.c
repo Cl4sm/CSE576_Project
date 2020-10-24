@@ -1,3 +1,4 @@
+static void
 alpha_fixup_plt (DSO *dso, GElf_Rela *rela, GElf_Addr relaaddr,
 		 GElf_Addr value)
 {

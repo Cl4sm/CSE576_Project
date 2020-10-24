@@ -1,3 +1,4 @@
+static void _reg_save_variable(reg *r, const reg_var *var, int indent) {
 
    char buf[REG_BUFFER];
 

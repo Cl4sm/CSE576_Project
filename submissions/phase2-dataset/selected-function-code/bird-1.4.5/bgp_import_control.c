@@ -1,3 +1,4 @@
+int
 bgp_import_control(struct proto *P, rte **new, ea_list **attrs, struct linpool *pool)
 {
   rte *e = *new;

@@ -1,3 +1,4 @@
+void create_render_threads(scenedef * scene) {
   thr_parms * parms;
   rt_thread_t * threads;
   rt_barrier_t * bar;

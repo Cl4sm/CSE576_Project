@@ -1,3 +1,4 @@
+void
 flush_server()
 {
 	fd_set rd;

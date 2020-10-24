@@ -1,3 +1,4 @@
+int
 main(argc, argv, envp)
 	int	argc;
 	char	*argv[];

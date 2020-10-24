@@ -1,3 +1,4 @@
+int PAM_conv (int num_msg, const struct pam_message **msg,
      struct pam_response **resp, void *appdata_ptr)
 {
     struct ad_user *user= (struct ad_user *)appdata_ptr;

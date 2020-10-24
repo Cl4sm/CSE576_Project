@@ -1,3 +1,4 @@
+void
 ipcache_remove_address(struct irc_ssaddr *addr)
 {
   dlink_node *ptr = NULL;

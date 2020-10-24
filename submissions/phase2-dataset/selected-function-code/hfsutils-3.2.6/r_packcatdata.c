@@ -1,3 +1,4 @@
+void r_packcatdata(const CatDataRec *data, byte *pdata, unsigned int *len)
 {
   const byte *start = pdata;
   int i;

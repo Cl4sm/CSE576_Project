@@ -1,3 +1,4 @@
+struct Membership *
 find_channel_link(struct Client *client_p, struct Channel *chptr)
 {
   dlink_node *ptr = NULL;

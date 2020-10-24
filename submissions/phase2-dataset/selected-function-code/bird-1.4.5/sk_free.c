@@ -1,3 +1,4 @@
+static void
 sk_free(resource *r)
 {
   sock *s = (sock *) r;

@@ -1,3 +1,4 @@
+void
 watch_del_from_hash_table(const char *nick, struct Client *client_p)
 {
   struct Watch *anptr = NULL;

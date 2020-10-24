@@ -1,3 +1,4 @@
+void psinit ( OFILE *f, int newfile, int page, int w, int h, int n )
 {
   float ptw, pth ;
 

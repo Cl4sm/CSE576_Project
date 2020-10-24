@@ -1,3 +1,4 @@
+static int
 bgp_create_attrs(struct bgp_proto *p, rte *e, ea_list **attrs, struct linpool *pool)
 {
   ea_list *ea = lp_alloc(pool, sizeof(ea_list) + 4*sizeof(eattr));

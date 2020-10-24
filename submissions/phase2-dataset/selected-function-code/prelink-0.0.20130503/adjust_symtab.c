@@ -1,3 +1,4 @@
+static int
 adjust_symtab (DSO *dso, int n, GElf_Addr start, GElf_Addr adjust)
 {
   Elf_Data *data = NULL;

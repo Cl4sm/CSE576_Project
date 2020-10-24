@@ -1,3 +1,4 @@
+void
 release_auth_client(struct AuthRequest *auth)
 {
   struct Client *client = auth->client;

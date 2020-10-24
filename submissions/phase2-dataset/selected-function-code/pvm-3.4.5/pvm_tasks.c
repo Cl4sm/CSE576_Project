@@ -1,3 +1,4 @@
+int
 pvm_tasks(where, ntaskp, taskp)
 	int where;					/* which host or 0 for all */
 	int *ntaskp;

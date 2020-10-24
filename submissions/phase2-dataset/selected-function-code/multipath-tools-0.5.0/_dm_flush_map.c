@@ -1,3 +1,4 @@
+extern int
 _dm_flush_map (const char * mapname, int need_sync)
 {
 	int r;

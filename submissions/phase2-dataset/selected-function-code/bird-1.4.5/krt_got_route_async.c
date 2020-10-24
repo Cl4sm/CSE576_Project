@@ -1,3 +1,4 @@
+void
 krt_got_route_async(struct krt_proto *p, rte *e, int new)
 {
   net *net = e->net;

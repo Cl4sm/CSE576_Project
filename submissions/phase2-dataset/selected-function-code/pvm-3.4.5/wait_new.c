@@ -1,3 +1,4 @@
+struct waitc *
 wait_new(kind)
 	int kind;
 {

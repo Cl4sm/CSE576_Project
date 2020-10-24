@@ -1,3 +1,4 @@
+static int parse_indirect(int argc, char **argv,
 		  drivedesc_t *drvprm,
 		  struct floppy_struct *medprm)
 {

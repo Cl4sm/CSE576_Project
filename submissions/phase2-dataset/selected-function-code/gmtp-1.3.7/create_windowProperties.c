@@ -1,3 +1,4 @@
+GtkWidget* create_windowProperties() {
     GtkWidget *windowDialog;
     GtkWidget *windowNotebook;
     GtkWidget *vbox1;

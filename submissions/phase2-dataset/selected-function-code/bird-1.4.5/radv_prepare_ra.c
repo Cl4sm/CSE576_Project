@@ -1,3 +1,4 @@
+static void
 radv_prepare_ra(struct radv_iface *ifa)
 {
   struct proto_radv *ra = ifa->ra;

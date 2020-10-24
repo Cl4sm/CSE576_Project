@@ -1,3 +1,4 @@
+int f_addextent(hfsfile *file, ExtDescriptor *blocks)
 {
   hfsvol *vol = file->vol;
   ExtDataRec *extrec;

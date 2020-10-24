@@ -1,3 +1,4 @@
+static int
 snprint_hw_no_path_retry (char * buff, int len, void * data)
 {
 	struct hwentry * hwe = (struct hwentry *)data;

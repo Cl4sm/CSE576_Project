@@ -1,3 +1,4 @@
+int
 setup_default_blist (struct config * conf)
 {
 	struct blentry * ble;

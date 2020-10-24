@@ -1,3 +1,4 @@
+int
 cli_setprstatus(void * v, char ** reply, int * len, void * data)
 {
 	struct multipath * mpp;

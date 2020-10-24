@@ -1,3 +1,4 @@
+static void _sc_link_entry_class_init(ScLinkEntryClass *klass) {
 
    GtkObjectClass *object_class = (GtkObjectClass *)klass;
 

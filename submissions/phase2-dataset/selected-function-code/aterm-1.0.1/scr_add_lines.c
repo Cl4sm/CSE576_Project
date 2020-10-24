@@ -1,3 +1,4 @@
+void
 scr_add_lines(const unsigned char *str, int nlines, int len)
 {
     char            c;

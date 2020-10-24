@@ -1,3 +1,4 @@
+static void _sc_expl_annihilate_third_column(sc_config *c, sc_land *l,
                                              int cx, int cy, int dx, int dy,
                                              const sc_wedge_boundaries *wedge,
                                              bool fill) {

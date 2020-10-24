@@ -1,3 +1,4 @@
+static int
 lookup_binding(FILE *f, char *map_wwid, char **map_alias, char *prefix)
 {
 	char buf[LINE_MAX];

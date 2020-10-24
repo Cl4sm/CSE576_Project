@@ -1,3 +1,4 @@
+static void fixup_reason(struct latency_line *line, char *c)
 {
 	char *c2;
 

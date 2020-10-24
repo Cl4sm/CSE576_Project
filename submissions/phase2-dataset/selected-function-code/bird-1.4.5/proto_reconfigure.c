@@ -1,3 +1,4 @@
+static int
 proto_reconfigure(struct proto *p, struct proto_config *oc, struct proto_config *nc, int type)
 {
   /* If the protocol is DOWN, we just restart it */

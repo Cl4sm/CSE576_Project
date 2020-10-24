@@ -1,3 +1,4 @@
+void
 if_show(void)
 {
   struct iface *i;

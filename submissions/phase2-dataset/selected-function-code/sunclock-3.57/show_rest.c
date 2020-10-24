@@ -1,3 +1,4 @@
+void show_rest(int len, char *s)
 {
 	char *ss;
 	char disp[MAXVLINE];

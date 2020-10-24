@@ -1,3 +1,4 @@
+static inline int _sc_land_height(const sc_land *l, int x, int y0) {
 /* sc_land_height
    This is an internal function that assumes x, y0 are real coordiantes.
    This function will return a maximum of y0; if you want to scan the entire

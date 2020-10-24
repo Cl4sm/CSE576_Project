@@ -1,3 +1,4 @@
+void on_deviceConnect_activate(GtkMenuItem *menuitem, gpointer user_data) {
     gchar *tmp_string;
     GtkWidget *menuText;
 

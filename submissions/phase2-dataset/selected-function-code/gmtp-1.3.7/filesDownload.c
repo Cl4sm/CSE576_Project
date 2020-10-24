@@ -1,3 +1,4 @@
+void filesDownload(gchar* filename, uint32_t objectID) {
     gchar* fullfilename = NULL;
 
     // Maybe something went wrong, so we disconnected. If so, then simple exit....

@@ -1,3 +1,4 @@
+int
 nmd_insert(name, req, data)
 	char *name;
 	int req;

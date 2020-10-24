@@ -1,3 +1,4 @@
+void
 mpp_init(argc, argv)
 	int *argc;
 	char **argv;

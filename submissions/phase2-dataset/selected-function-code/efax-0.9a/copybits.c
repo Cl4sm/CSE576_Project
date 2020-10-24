@@ -1,3 +1,4 @@
+void copybits ( uchar *in, int from, short nb )
 {
   uchar *f ;
   short bits ;

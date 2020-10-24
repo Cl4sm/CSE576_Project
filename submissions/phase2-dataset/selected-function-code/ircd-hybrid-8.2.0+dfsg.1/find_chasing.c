@@ -1,3 +1,4 @@
+struct Client *
 find_chasing(struct Client *source_p, const char *name)
 {
   struct Client *who = find_person(source_p, name);

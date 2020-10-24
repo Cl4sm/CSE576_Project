@@ -1,3 +1,4 @@
+void sc_weapons_setup_gtk(sc_window_gtk *w) {
 
    sc_weapon_config *wpc = w->c->weapons;
    sc_weapons_setup_data_gtk setup;

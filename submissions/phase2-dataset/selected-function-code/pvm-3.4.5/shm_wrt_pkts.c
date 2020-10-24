@@ -1,3 +1,4 @@
+int
 shm_wrt_pkts(tp)
 struct task * tp;
 {

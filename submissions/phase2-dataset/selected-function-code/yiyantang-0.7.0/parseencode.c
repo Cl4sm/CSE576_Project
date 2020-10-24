@@ -1,3 +1,4 @@
+void parseencode (char *input, int *encode)
 {
 
 	if (!strncasecmp (input, "GB", 2))

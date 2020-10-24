@@ -1,3 +1,4 @@
+static inline void
 write_pid_file(void)
 {
   int pl, rv;

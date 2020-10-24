@@ -1,3 +1,4 @@
+SCM x_create_gc(args)
      SCM args;
 {
   SCM swin;

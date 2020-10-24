@@ -1,3 +1,4 @@
+  void
 he_search_command(hedit, exp, dir)
   struct he_s *hedit;
   char *exp;

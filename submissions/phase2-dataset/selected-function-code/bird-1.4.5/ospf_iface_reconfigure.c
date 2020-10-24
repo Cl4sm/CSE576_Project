@@ -1,3 +1,4 @@
+int
 ospf_iface_reconfigure(struct ospf_iface *ifa, struct ospf_iface_patt *new)
 {
   struct proto *p = &ifa->oa->po->proto;

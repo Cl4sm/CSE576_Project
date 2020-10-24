@@ -1,3 +1,4 @@
+static int
 clist_match_set(struct adata *clist, struct f_tree *set)
 {
   if (!clist)

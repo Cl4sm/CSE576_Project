@@ -1,3 +1,4 @@
+int
 lpvmerr(f, n)
 	char *f;		/* error location */
 	int n;			/* error code */

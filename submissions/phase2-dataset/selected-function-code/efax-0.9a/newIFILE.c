@@ -1,3 +1,4 @@
+int newIFILE ( IFILE *f, char **fnames )
 {
   int err=0, i, n, fformat=0 ;
   char **p ;

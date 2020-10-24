@@ -1,3 +1,4 @@
+NOEXPORT int add_rand_file(GLOBAL_OPTIONS *global, const char *filename) {
     int readbytes;
     int writebytes;
     struct stat sb;

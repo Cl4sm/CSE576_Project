@@ -1,3 +1,4 @@
+static int
 ppc_reloc_size (int reloc_type)
 {
   switch (reloc_type)

@@ -1,3 +1,4 @@
+int update_map_pr(struct multipath *mpp)
 {
 	int noisy=0;
 	struct prin_resp *resp;

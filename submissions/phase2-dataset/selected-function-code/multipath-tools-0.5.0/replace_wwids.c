@@ -1,3 +1,4 @@
+int
 replace_wwids(vector mp)
 {
 	int i, fd, can_write;

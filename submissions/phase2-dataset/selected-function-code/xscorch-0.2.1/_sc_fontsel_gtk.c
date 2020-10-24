@@ -1,3 +1,4 @@
+static void _sc_fontsel_gtk(const char *title, GtkWidget *entry) {
 
    sc_fontsel_data_gtk setup;
    ScDialog *dialog;

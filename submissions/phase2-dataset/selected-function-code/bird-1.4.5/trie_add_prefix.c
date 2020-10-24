@@ -1,3 +1,4 @@
+void
 trie_add_prefix(struct f_trie *t, ip_addr px, int plen, int l, int h)
 {
   if (l == 0)

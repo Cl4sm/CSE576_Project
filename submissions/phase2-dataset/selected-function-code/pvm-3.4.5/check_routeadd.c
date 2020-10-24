@@ -1,3 +1,4 @@
+int
 check_routeadd(pcbp)
 	struct ttpcb *pcbp;
 {

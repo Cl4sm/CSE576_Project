@@ -1,3 +1,4 @@
+int rt_thread_numphysprocessors(void) {
   int a=1;
 
 #ifdef THR

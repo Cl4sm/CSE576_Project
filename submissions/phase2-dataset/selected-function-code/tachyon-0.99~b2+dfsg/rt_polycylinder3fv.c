@@ -1,3 +1,4 @@
+void rt_polycylinder3fv(SceneHandle scene, void * tex,
                         const float *points, int numpts, float rad) {
   float a[3];
   int i;

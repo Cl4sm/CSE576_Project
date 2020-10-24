@@ -1,3 +1,4 @@
+char *dld_find_executable(name)
      const char *name;
 {
   char *search;

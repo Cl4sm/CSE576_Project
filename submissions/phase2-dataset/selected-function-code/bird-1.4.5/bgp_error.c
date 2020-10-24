@@ -1,3 +1,4 @@
+void
 bgp_error(struct bgp_conn *c, unsigned code, unsigned subcode, byte *data, int len)
 {
   struct bgp_proto *p = c->bgp;

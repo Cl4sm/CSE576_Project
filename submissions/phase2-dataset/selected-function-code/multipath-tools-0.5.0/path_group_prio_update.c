@@ -1,3 +1,4 @@
+extern void
 path_group_prio_update (struct pathgroup * pgp)
 {
 	int i;

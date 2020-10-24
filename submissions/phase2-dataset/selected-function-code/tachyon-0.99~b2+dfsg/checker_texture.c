@@ -1,3 +1,4 @@
+color checker_texture(const vector * hit, const texture * tx, const ray * ry) {
   long x,y,z;
   flt xh,yh,zh;
   color col;

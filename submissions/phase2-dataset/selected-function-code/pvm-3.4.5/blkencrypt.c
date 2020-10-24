@@ -1,3 +1,4 @@
+static void
 blkencrypt(char *block, int edflag)
 {
 	int i, ii;

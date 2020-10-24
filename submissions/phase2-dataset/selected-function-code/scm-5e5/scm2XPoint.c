@@ -1,3 +1,4 @@
+void scm2XPoint(signp, dat, ipr, pos, s_caller)
      int signp;
      SCM dat;
      XPoint *ipr;

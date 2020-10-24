@@ -1,3 +1,4 @@
+int
 check_server(const char *name, struct Client *client_p)
 {
   dlink_node *ptr;

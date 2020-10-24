@@ -1,3 +1,4 @@
+static int
 sh_arch_undo_prelink (DSO *dso)
 {
   int i;

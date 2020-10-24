@@ -1,3 +1,4 @@
+void s_write(CLI *c, int fd, const void *buf, int len) {
         /* simulate a blocking write */
     u8 *ptr=(u8 *)buf;
     int num;

@@ -1,3 +1,4 @@
+void
 send_text(org_nick, line, command)
 	u_char	*org_nick;
 	u_char	*line;

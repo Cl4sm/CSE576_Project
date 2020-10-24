@@ -1,3 +1,4 @@
+SCM scm_env_annotation(var, stenv)
      SCM var, stenv;
 {
   SCM s, frame, env = stenv;

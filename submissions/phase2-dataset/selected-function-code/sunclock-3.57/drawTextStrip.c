@@ -1,3 +1,4 @@
+void
 drawTextStrip(Context, s, l)
 struct Sundata * Context;
 char *s;

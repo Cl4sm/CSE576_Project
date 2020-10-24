@@ -1,3 +1,4 @@
+HANDLE 
 win32_create_file(TMP_AREA, mode)
 char *TMP_AREA;
 int mode;

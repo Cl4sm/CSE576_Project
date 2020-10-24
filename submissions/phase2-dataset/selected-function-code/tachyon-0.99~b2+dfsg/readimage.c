@@ -1,3 +1,4 @@
+int readimage(rawimage * img) {
   int rc;
   int xres, yres, zres;
   unsigned char * imgdata;

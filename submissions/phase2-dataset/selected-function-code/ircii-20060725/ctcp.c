@@ -1,3 +1,4 @@
+static	void
 ctcp(command, args, subargs)
 	u_char	*command,
 		*args,

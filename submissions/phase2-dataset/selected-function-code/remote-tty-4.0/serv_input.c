@@ -1,3 +1,4 @@
+static void
 serv_input(int fd) {
 	char passwd[TP_MAXVAR], s[3], *c, *crypt();
 	int nchars, i;

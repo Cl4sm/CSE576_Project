@@ -1,3 +1,4 @@
+static int
 ospf_rte_better(struct rte *new, struct rte *old)
 {
   if (new->u.ospf.metric1 == LSINFINITY)

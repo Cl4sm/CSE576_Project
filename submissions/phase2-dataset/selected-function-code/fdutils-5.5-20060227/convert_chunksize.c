@@ -1,3 +1,4 @@
+static void convert_chunksize(struct params *fd)
 {
 	int i;
 

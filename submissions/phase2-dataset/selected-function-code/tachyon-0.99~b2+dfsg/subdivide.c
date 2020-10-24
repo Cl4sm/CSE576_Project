@@ -1,3 +1,4 @@
+static void subdivide(flt *base, int xres, int yres, flt wx, flt wy,
                       int x1, int y1, int x2, int y2, unsigned int *rndval) {
   int x, y;
 

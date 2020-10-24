@@ -1,3 +1,4 @@
+static int
 shmemuptod(txup)
 	struct pmsg *txup;			/* outgoing message */
 {

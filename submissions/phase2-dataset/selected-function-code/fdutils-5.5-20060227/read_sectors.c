@@ -1,3 +1,4 @@
+void read_sectors(enum fs fs, int sector, char **data, int sectors,
 		  int drive, int fd, int cylinder, struct xdf_struct *fmt, 
 		  int direction, struct floppy_raw_cmd *raw_cmd, int *j)
 {

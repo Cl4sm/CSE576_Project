@@ -1,3 +1,4 @@
+static	void
 show_timer(command)
 	u_char	*command;
 {

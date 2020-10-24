@@ -1,3 +1,4 @@
+void
 pseudo_clear(void)
 {
   dlink_node *ptr = NULL, *ptr_next = NULL;

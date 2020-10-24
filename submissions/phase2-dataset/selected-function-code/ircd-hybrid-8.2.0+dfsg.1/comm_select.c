@@ -1,3 +1,4 @@
+void
 comm_select(void)
 {
   int num, i;

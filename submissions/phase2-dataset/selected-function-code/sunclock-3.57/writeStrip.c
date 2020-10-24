@@ -1,3 +1,4 @@
+void
 writeStrip(Context)
 struct Sundata * Context;
 {

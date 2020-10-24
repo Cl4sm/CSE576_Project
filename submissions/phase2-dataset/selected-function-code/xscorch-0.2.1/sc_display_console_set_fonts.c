@@ -1,3 +1,4 @@
+void sc_display_console_set_fonts(ScDisplay *dpy, GdkFont *font, GdkFont *boldfont) {
 
    GtkFixedChild *child;
    GtkWidget *cwidget;

@@ -1,3 +1,4 @@
+int datacore_prio (const char *dev, int sg_fd, char * args)
 {
 	int k;
 	char vendor[8];

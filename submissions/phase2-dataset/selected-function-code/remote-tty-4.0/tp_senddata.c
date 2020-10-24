@@ -1,3 +1,4 @@
+int
 tp_senddata(int fd, const u_char *buf, int len, int typ) {
 	struct iovec iov[2];
 	ttyprot t;

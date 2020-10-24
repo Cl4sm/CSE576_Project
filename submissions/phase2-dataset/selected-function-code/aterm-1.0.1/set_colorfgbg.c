@@ -1,3 +1,4 @@
+void
 set_colorfgbg(void)
 {
     unsigned int    i;

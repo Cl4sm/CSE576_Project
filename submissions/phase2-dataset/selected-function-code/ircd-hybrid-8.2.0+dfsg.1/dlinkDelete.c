@@ -1,3 +1,4 @@
+void
 dlinkDelete(dlink_node *m, dlink_list *list)
 {
   /* Assumption: If m->next == NULL, then list->tail == m

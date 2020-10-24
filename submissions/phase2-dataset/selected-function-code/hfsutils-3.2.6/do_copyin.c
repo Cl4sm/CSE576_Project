@@ -1,3 +1,4 @@
+static
 int do_copyin(hfsvol *vol, int argc, char *argv[], const char *dest, int mode)
 {
   hfsdirent ent;

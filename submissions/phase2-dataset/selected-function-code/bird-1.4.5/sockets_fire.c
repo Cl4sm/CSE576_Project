@@ -1,3 +1,4 @@
+static void
 sockets_fire(struct birdloop *loop)
 {
   struct pollfd *pfd = loop->poll_fd.data;

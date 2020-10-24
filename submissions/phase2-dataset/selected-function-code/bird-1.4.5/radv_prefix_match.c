@@ -1,3 +1,4 @@
+static struct radv_prefix_config *
 radv_prefix_match(struct radv_iface *ifa, struct ifa *a)
 {
   struct proto *p = &ifa->ra->p;

@@ -1,3 +1,4 @@
+int sc_land_height_around(const sc_land *l, int x, int y0, int w) {
 /* sc_land_height_around
    This function returns the maximum land height (see sc_land_height),
    for virtual x coordinates in the interval [x - w, x + w].  */

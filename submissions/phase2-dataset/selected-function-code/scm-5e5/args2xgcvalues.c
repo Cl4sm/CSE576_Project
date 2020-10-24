@@ -1,3 +1,4 @@
+static int args2xgcvalues(sgc, vlu, oargs)
      SCM sgc;
      XGCValues *vlu;
      SCM oargs;

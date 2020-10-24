@@ -1,3 +1,4 @@
+int
 scandir(Name, dirlist, Selector, Sorter)
 #if defined(__linux__) || defined(__sgi)
 	const char	*Name;

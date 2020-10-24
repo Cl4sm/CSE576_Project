@@ -1,3 +1,4 @@
+int
 unload_one_module(const char *name, int warn)
 {
   struct module *modp = NULL;

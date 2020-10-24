@@ -1,3 +1,4 @@
+int
 convert_rela_to_rel (DSO *dso, int i)
 {
   Elf_Data d1, d2, *d;

@@ -1,3 +1,4 @@
+int cpi_binh(const char *srcname, hfsvol *vol, const char *dstname)
 {
   int ifile, result;
   hfsfile *ofile;

@@ -1,3 +1,4 @@
+static void print_usage(void) {
 	sendip_module *mod;
 	int i;
 	printf("Usage: %s [-v] [-d data] [-h] [-f datafile] [-p module] [module options] hostname\n",progname);

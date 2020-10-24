@@ -1,3 +1,4 @@
+static void do_directory(char *path, struct cramfs_inode *i)
 {
 	int pathlen = strlen(path);
 	int count = i->size;

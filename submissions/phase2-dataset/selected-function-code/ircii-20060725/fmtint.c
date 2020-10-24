@@ -1,3 +1,4 @@
+static void
 fmtint(char *buffer, size_t *currlen, size_t maxlen, LLONG value, int base,
 	int min, int max, int flags)
 {

@@ -1,3 +1,4 @@
+void sc_weapon_config_destroy(sc_weapon_config **wc) {
 /* sc_weapon_config_destroy
    Invalidate memory used by a weapon config struct. */
 

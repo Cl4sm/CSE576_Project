@@ -1,3 +1,4 @@
+static	void
 kill_process(kill_index, sig)
 	int	kill_index,
 		sig;

@@ -1,3 +1,4 @@
+SCM try_open_file(filename, modes)
      SCM filename, modes;
 {
   register SCM port;

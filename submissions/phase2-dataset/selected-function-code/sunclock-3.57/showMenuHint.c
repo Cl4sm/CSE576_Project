@@ -1,3 +1,4 @@
+void
 showMenuHint(but_pos)
 int but_pos;
 {

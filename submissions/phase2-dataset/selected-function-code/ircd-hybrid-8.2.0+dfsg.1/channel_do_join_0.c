@@ -1,3 +1,4 @@
+void
 channel_do_join_0(struct Client *source_p)
 {
   dlink_node *ptr = NULL, *ptr_next = NULL;

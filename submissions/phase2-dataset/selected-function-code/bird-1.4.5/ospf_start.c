@@ -1,3 +1,4 @@
+static int
 ospf_start(struct proto *p)
 {
   struct proto_ospf *po = (struct proto_ospf *) p;

@@ -1,3 +1,4 @@
+darray *darr_new(size_t elemsz)
 {
   darray *array;
 

@@ -1,3 +1,4 @@
+void
 ospf_ifa_notify(struct proto *p, unsigned flags, struct ifa *a)
 {
   struct proto_ospf *po = (struct proto_ospf *) p;

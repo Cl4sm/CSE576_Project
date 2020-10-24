@@ -1,3 +1,4 @@
+NOEXPORT int cert_check(X509_STORE_CTX *callback_ctx, int preverify_ok) {
     SSL *ssl=X509_STORE_CTX_get_ex_data(callback_ctx,
         SSL_get_ex_data_X509_STORE_CTX_idx());
     CLI *c=SSL_get_ex_data(ssl, cli_index);

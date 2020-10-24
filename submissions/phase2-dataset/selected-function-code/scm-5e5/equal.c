@@ -1,3 +1,4 @@
+SCM equal(x, y)
      SCM x, y;
 {
   CHECK_STACK;

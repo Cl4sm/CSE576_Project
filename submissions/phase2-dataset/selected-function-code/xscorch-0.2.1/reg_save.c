@@ -1,3 +1,4 @@
+bool reg_save(reg *r) {
 
    if(r == NULL) return(false);
 

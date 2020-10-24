@@ -1,3 +1,4 @@
+void sc_player_advance_power(const sc_config *c, sc_player *p, int delta) {
 /* sc_player_advance_power
    Modifies power output by the delta given. */
 

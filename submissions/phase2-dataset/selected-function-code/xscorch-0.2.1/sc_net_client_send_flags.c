@@ -1,3 +1,4 @@
+bool sc_net_client_send_flags(const sc_config *c, sc_client *cli, int playerid) {
 /* sc_net_client_send_flags
    Let the server know what command flags we have set, e.g. contact
    trigger status.  Returns true if the packet makes it out the door;

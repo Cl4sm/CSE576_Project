@@ -1,3 +1,4 @@
+int bh_close(void)
 {
   int c, result = 0;
 

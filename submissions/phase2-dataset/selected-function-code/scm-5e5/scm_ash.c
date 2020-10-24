@@ -1,3 +1,4 @@
+SCM scm_ash(n, cnt)
      SCM n, cnt;
 {
   SCM res = INUM(n);

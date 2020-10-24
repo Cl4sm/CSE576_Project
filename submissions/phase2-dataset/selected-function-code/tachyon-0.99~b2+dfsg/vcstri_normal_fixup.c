@@ -1,3 +1,4 @@
+void vcstri_normal_fixup(object *otri, int mode) {
   vcstri *t = (vcstri *) otri;
 
   switch (mode) {

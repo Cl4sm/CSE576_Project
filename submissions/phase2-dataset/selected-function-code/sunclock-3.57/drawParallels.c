@@ -1,3 +1,4 @@
+void
 drawParallels(Context)
 struct Sundata * Context;
 {

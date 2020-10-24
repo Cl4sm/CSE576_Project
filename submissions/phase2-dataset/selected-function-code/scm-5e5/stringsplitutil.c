@@ -1,3 +1,4 @@
+SCM stringsplitutil(prog, str, vector)
      SCM prog, str;
      int vector;
 {

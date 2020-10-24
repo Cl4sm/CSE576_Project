@@ -1,3 +1,4 @@
+int v_adjvalence(hfsvol *vol, unsigned long parid, int isdir, int adj)
 {
   node n;
   CatDataRec data;

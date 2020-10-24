@@ -1,3 +1,4 @@
+NOEXPORT char *ntlm3(char *username, char *password, char *phase2) {
     MD4_CTX md4;
     char *decoded; /* decoded reply from proxy */
     char phase3[146];

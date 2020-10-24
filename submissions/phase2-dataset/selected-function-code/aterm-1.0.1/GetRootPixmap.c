@@ -1,3 +1,4 @@
+Pixmap
 GetRootPixmap (Atom id)
 {
 	Pixmap currentRootPixmap = None;

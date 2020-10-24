@@ -1,3 +1,4 @@
+int file_getline(DISK_FILE *df, char *line, int len) {
     /* this version is really slow, but performance is not important here */
     /* (no buffering is implemented) */
     int i;

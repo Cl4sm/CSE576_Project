@@ -1,3 +1,4 @@
+LIBMTP_filetype_t find_filetype(const gchar * filename) {
     LIBMTP_filetype_t filetype = LIBMTP_FILETYPE_UNKNOWN;
     gchar *fileext;
     gint i;

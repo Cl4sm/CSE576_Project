@@ -1,3 +1,4 @@
+int
 check_wwids_file(char *wwid, int write_wwid)
 {
 	int fd, can_write, found, ret;

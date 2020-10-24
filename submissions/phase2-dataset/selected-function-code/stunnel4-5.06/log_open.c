@@ -1,3 +1,4 @@
+int log_open(void) {
     if(global_options.output_file) { /* 'output' option specified */
         outfile=file_open(global_options.output_file,
             global_options.log_file_mode);

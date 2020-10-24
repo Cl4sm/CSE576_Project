@@ -1,3 +1,4 @@
+NOEXPORT char *imap_server(CLI *c, SERVICE_OPTIONS *opt, const PHASE phase) {
     char *line, *id, *tail, *capa;
 
     (void)opt; /* skip warning about unused parameter */

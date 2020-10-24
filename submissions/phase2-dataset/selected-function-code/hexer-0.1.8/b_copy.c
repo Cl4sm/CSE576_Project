@@ -1,3 +1,4 @@
+  long
 b_copy(target_buffer, source_buffer, target_position, source_position, count)
   Buffer *target_buffer;
   Buffer *source_buffer;

@@ -1,3 +1,4 @@
+Bool
 read_32bit_proplist (Window w, Atom property, long estimate, CARD32 ** list, long *nitems)
 {
 	Bool          res = False;

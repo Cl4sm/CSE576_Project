@@ -1,3 +1,4 @@
+struct sub_ent *MarkRead (num, sp_head)
 int num;
 struct sub_ent *sp_head;
 /*

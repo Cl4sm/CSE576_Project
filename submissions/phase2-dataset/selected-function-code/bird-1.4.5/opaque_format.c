@@ -1,3 +1,4 @@
+static inline void
 opaque_format(struct adata *ad, byte *buf, unsigned int size)
 {
   byte *bound = buf + size - 10;

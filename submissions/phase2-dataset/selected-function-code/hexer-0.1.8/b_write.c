@@ -1,3 +1,4 @@
+  long
 b_write(buffer, source, position, count)
   Buffer *buffer;
   char *source;

@@ -1,3 +1,4 @@
+const char *
 show_capabilities(const struct Client *target_p)
 {
   static char msgbuf[IRCD_BUFSIZE] = "";

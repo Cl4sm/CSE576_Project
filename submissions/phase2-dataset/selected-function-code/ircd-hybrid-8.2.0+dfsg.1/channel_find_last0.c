@@ -1,3 +1,4 @@
+static char *
 channel_find_last0(struct Client *source_p, char *chanlist)
 {
   int join0 = 0;

@@ -1,3 +1,4 @@
+void sc_accessory_inventory_clear(sc_accessory_config *ac) {
 /* sc_accessory_inventory_clear
    Clear out the player accessory inventories. */
 

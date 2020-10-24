@@ -1,3 +1,4 @@
+static void _sc_console_class_init(ScConsoleClass *klass) {
 /* sc_console_class_init
    Initialise the console class.  */
 

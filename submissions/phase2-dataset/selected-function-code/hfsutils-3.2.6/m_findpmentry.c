@@ -1,3 +1,4 @@
+int m_findpmentry(hfsvol *vol, const char *type,
 		  Partition *map, unsigned long *start)
 {
   unsigned long bnum;

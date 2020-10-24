@@ -1,3 +1,4 @@
+uint32_t getFolderID(LIBMTP_folder_t* folderptr, gchar* foldername) {
     gchar** pathcomponents;
     if (g_ascii_strcasecmp(foldername, ".") == 0) {
         // We have a root directory...

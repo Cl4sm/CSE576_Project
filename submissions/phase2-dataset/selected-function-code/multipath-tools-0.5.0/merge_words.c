@@ -1,3 +1,4 @@
+static int
 merge_words (char ** dst, char * word, int space)
 {
 	char * p;

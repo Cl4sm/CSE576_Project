@@ -1,3 +1,4 @@
+static void
 list_sort (struct prelink_entry *x)
 {
   int cnt, i;

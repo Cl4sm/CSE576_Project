@@ -1,3 +1,4 @@
+void sighandle(int signum)
 {
    btdev_t* btdev;
    switch (signum) {

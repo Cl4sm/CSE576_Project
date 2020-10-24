@@ -1,3 +1,4 @@
+int64_t getTargetFolderLocation(void) {
     GtkWidget *dialog;
     GtkWidget *treeviewFoldersDialog;
     GtkTreeStore *folderListDialog;

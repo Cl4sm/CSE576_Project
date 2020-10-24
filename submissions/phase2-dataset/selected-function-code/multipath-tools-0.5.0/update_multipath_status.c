@@ -1,3 +1,4 @@
+static int
 update_multipath_status (struct multipath *mpp)
 {
 	char status[PARAMS_SIZE] = {0};

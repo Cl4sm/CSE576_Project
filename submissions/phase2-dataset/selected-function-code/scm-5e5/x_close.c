@@ -1,3 +1,4 @@
+SCM x_close(obj)
      SCM obj;
 {
   ASRTER(NIMP(obj), obj, ARG1, s_x_close);

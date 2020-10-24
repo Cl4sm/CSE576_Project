@@ -1,3 +1,4 @@
+static int
 assert_chunks_ok(mp_pool_t *pool, mp_chunk_t *chunk, int empty, int full)
 {
   mp_allocated_t *allocated;

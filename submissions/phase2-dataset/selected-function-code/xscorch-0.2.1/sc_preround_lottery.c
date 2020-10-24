@@ -1,3 +1,4 @@
+bool sc_preround_lottery(struct _sc_config *c) {
 /* sc_preround_lottery
    Run the pre-round display of lottery results.
    Will return true if a wait is expected. */

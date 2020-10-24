@@ -1,3 +1,4 @@
+static int yy_init_globals (void)
 {
         /* Initialization is the same as for the non-reentrant scanner.
      * This function is called from yylex_destroy(), so don't allocate here.

@@ -1,3 +1,4 @@
+static htab_t
 read_abbrev (DSO *dso, unsigned char *ptr)
 {
   htab_t h = htab_try_create (50, abbrev_hash, abbrev_eq, abbrev_del);

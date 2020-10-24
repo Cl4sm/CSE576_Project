@@ -1,3 +1,4 @@
+SCM st_append(args)
      SCM args;
 {
 	SCM res;

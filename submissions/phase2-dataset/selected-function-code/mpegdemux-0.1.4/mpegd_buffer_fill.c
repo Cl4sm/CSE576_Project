@@ -1,3 +1,4 @@
+static
 int mpegd_buffer_fill (mpeg_demux_t *mpeg)
 {
 	unsigned i, n;

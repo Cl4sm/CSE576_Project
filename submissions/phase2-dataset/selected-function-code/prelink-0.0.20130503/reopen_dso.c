@@ -1,3 +1,4 @@
+int
 reopen_dso (DSO *dso, struct section_move *move, const char *temp_base)
 {
   char filename[strlen (temp_base ? temp_base : dso->filename)

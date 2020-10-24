@@ -1,3 +1,4 @@
+NOEXPORT char *connect_server(CLI *c, SERVICE_OPTIONS *opt, const PHASE phase) {
     char *request, *proto, *header;
 
     (void)opt; /* skip warning about unused parameter */

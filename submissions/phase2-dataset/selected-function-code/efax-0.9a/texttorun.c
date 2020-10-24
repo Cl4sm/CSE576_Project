@@ -1,3 +1,4 @@
+int texttorun ( uchar *txt, faxfont *font, short line, 
 	       int w, int h, int lmargin,
 	       short *runs, int *ppels )
 {

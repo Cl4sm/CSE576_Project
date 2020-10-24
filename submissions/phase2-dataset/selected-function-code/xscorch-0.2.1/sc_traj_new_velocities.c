@@ -1,3 +1,4 @@
+sc_trajectory *sc_traj_new_velocities(const sc_config *c, const sc_player *p, int flags,
                                       double centerx, double centery,
                                       double velx, double vely) {
 /* sc_traj_new_velocities

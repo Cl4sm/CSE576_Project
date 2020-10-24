@@ -1,3 +1,4 @@
+void
 clear_out_address_conf(void)
 {
   dlink_node *ptr = NULL, *ptr_next = NULL;

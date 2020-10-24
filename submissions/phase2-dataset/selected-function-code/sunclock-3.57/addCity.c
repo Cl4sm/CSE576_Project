@@ -1,3 +1,4 @@
+City *
 addCity(longparams)
 char *longparams;
 {

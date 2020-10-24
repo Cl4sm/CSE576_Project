@@ -1,3 +1,4 @@
+  char *
 tio_keyname(key)
   /* Returns the name of the key `key'.  If `key' is a printable character,
    * it is returned as a string.  If `key' is a special key, the name of

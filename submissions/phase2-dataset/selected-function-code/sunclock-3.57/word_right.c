@@ -1,3 +1,4 @@
+void word_right()
 {
 	char *d = cur_pos;
 

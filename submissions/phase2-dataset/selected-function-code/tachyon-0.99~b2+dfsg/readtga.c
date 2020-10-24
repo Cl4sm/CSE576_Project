@@ -1,3 +1,4 @@
+int readtga(char * name, int * xres, int * yres, unsigned char **imgdata) {
   int format, width, height, w1, w2, h1, h2, depth, flags;
   int imgsize, bytesread, i, tmp;
   FILE * ifp;

@@ -1,3 +1,4 @@
+int main (int argc, char **argv)
 {
 	unsigned i;
 	int      r;

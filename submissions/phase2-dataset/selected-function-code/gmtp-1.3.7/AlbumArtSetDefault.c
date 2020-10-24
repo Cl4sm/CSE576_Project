@@ -1,3 +1,4 @@
+void AlbumArtSetDefault(void) {
     //gtk_image_set_from_stock(GTK_IMAGE(AlbumArtImage), GTK_STOCK_MISSING_IMAGE, GTK_ICON_SIZE_DIALOG );
     GdkPixbuf *gdk_image = NULL;
     GdkPixbuf *gdk_image_scale = NULL;

@@ -1,3 +1,4 @@
+void PWDrawCircle(Widget w, Position origin_x, Position origin_y, 
 		  Position point_x, Position point_y, int value)
 #else
 void PWDrawCircle(w, origin_x, origin_y, point_x, point_y, value)

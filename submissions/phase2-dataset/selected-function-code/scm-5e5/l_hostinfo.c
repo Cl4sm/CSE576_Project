@@ -1,3 +1,4 @@
+SCM l_hostinfo(name)
      SCM name;
 {
   SCM ans = make_vector(MAKINUM(5), UNSPECIFIED);

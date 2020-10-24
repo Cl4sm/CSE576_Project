@@ -1,3 +1,4 @@
+static int input_waiting(f)
      FILE *f;
 {
 # ifdef HAVE_SELECT

@@ -1,3 +1,4 @@
+char *
 dm_mapuuid(int major, int minor)
 {
 	struct dm_task *dmt;

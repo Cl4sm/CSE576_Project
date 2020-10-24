@@ -1,3 +1,4 @@
+rt_threadpool_t * rt_threadpool_create(int workercount, int *devlist) {
   int i;
   rt_threadpool_t *thrpool = NULL;
   thrpool = (rt_threadpool_t *) malloc(sizeof(rt_threadpool_t));

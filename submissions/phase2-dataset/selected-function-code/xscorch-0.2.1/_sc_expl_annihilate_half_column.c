@@ -1,3 +1,4 @@
+static void _sc_expl_annihilate_half_column(sc_config *c, sc_land *l,
                                             int cx, int cy, int dx, int dy,
                                             const sc_wedge_boundaries *wedge,
                                             int critical_y, bool fill) {

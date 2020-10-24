@@ -1,3 +1,4 @@
+void handle_key(char *astr, int skey, int state)
 {
 		char chstr[256];
 		int x=outxy.X, y=outxy.Y, n=0;

@@ -1,3 +1,4 @@
+void OnePointImmediateEngage(w, status, draw, state)
     Widget      w;
     PWStatus   *status;
     void      (*draw)();

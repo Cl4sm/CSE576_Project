@@ -1,3 +1,4 @@
+int
 add_to_blacklist (const char *name, int deref, int onefs)
 {
   const char *canon_name;

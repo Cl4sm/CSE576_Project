@@ -1,3 +1,4 @@
+int
 pvm_getopt(what)
 	int what;
 {

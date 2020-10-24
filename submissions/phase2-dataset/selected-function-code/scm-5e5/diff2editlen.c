@@ -1,3 +1,4 @@
+SCM diff2editlen(Fp, A, Args)
      SCM Fp, A, Args;		/* B, P_lim */
 {
   SCM aprot, bprot;

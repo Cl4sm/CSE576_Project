@@ -1,3 +1,4 @@
+void initPause(void) {
   SystemHidePointer();
   SystemWarpPointer(MOUSE_ORIG_X, MOUSE_ORIG_Y);
 

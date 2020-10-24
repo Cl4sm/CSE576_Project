@@ -1,3 +1,4 @@
+  long
 b_read_buffer_from_file(buffer, filename)
   Buffer *buffer;
   char *filename;

@@ -1,3 +1,4 @@
+bool sc_inventory_can_sell_accessory(const sc_player *p, const sc_accessory_info *info) {
 /* sc_inventory_can_sell_accessory
    Determine if this player can sell the specified accessory.
    Returns true if the sale can be made. */

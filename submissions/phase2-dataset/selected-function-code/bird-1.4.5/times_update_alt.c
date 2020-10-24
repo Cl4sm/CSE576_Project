@@ -1,3 +1,4 @@
+static void
 times_update_alt(struct birdloop *loop)
 {
   struct timeval tv;

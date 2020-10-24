@@ -1,3 +1,4 @@
+int ra_divide(ra0, ras)
      SCM ra0, ras;
 {
   long n = ARRAY_DIMS(ra0)->ubnd - ARRAY_DIMS(ra0)->lbnd + 1;

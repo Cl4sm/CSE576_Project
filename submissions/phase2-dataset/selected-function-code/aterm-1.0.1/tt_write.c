@@ -1,3 +1,4 @@
+void
 tt_write(const unsigned char *d, int len)
 {
     int             riten, p;

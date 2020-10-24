@@ -1,3 +1,4 @@
+static int
 prelink_rela (DSO *dso, int n, struct prelink_info *info)
 {
   Elf_Data *data = NULL;

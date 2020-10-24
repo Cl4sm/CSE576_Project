@@ -1,3 +1,4 @@
+int
 ec_set_format(struct adata *set, int from, byte *buf, unsigned int size)
 {
   u32 *z = int_set_get_data(set);

@@ -1,3 +1,4 @@
+int getprio (struct path * pp, char * args)
 {
 	int rc;
 	int aas;

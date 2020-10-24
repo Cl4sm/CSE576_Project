@@ -1,3 +1,4 @@
+bool sc_land_translate_x_range(const sc_land *l, int *x1, int *x2) {
 /* _sc_land_translate_x_range
    Translates a range of virtual X coordinates s.t. at least part of the
    range is in the real coordinate space.  On bounded rooms, the interval

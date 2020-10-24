@@ -1,3 +1,4 @@
+int
 sockaddr_read(sockaddr *sa, int af, ip_addr *a, struct iface **ifa, uint *port)
 {
   if (sa->sa.sa_family != af)

@@ -1,3 +1,4 @@
+SCM must_malloc_cell(len, c, what)
      long len;
      SCM c;
      const char *what;

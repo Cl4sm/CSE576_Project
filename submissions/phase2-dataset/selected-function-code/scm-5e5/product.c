@@ -1,3 +1,4 @@
+SCM product(x, y)
      SCM x, y;
 {
   if (UNBNDP(y)) {

@@ -1,3 +1,4 @@
+int update_prflag(char * arg1, char * arg2, int noisy)
 {
 	int fd;
 	char str[64];

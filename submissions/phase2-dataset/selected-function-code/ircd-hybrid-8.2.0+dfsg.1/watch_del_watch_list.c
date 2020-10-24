@@ -1,3 +1,4 @@
+void
 watch_del_watch_list(struct Client *client_p)
 {
   dlink_node *ptr = NULL, *ptr_next = NULL;

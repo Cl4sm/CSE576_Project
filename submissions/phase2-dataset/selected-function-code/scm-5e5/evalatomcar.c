@@ -1,3 +1,4 @@
+static SCM evalatomcar(x, toplevelp)
      SCM x;
      int toplevelp;
 {

@@ -1,3 +1,4 @@
+int
 scrollbar_show_cached(int update, int check_cache)
 {
     /* old (drawn) values */

@@ -1,3 +1,4 @@
+void bud_chk_utmpx(htable_t *buddy_table, short write_users){
 	ht_list_t *budlist_root,*budlist, *utlist_root,*utlist;
 	STRUCT_UTMPX *u;
 	// below are for quick lookups in the respective ht's

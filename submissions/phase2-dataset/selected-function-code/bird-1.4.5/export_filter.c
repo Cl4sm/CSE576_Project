@@ -1,3 +1,4 @@
+static rte *
 export_filter(struct announce_hook *ah, rte *rt0, rte **rt_free, ea_list **tmpa, int silent)
 {
   struct proto *p = ah->proto;

@@ -1,3 +1,4 @@
+int 
 readRC(fname, verbosity)
 char *fname;        /* Path to .sunclockrc file */
 int verbosity;

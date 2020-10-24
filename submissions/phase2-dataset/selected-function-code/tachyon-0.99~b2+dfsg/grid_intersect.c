@@ -1,3 +1,4 @@
+static void grid_intersect(const grid * g, ray * ry) {
   flt tnear, tfar;
   vector curpos, tmax, tdelta;
   gridindex curvox, step, out; 

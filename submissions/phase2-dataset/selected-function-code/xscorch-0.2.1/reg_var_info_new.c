@@ -1,3 +1,4 @@
+reg_var_info *reg_var_info_new(reg_var_info **reg, const char *name,
                                reg_type type, const reg_class *klass) {
 /* reg_var_info_new */
 

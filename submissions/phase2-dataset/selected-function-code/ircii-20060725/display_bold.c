@@ -1,3 +1,4 @@
+static	u_char
 display_bold(flag)
 	int	flag;
 {

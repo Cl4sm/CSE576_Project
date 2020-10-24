@@ -1,3 +1,4 @@
+static int
 find_libs (void **p, void *info)
 {
   struct layout_libs *l = (struct layout_libs *) info;

@@ -1,3 +1,4 @@
+static unsigned int parse_directory(struct entry *root_entry, const char *name, struct entry **prev, loff_t *fslen_ub)
 {
 	struct dirent **dirlist;
 	int totalsize = 0, dircount, dirindex;

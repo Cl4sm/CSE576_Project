@@ -1,3 +1,4 @@
+static
 int do_macb(hfsfile *ifile, int ofile)
 {
   hfsdirent ent;

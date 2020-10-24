@@ -1,3 +1,4 @@
+static	void
 save_settings(command, args, subargs)
 	u_char	*command,
 		*args,

@@ -1,3 +1,4 @@
+static int
 enc_trc_dcplx(mp, vp, cnt, std, siz)
 	struct pmsg *mp;
 	void *vp;

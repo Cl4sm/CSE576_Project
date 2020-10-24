@@ -1,3 +1,4 @@
+NOEXPORT int load_key_file(SERVICE_OPTIONS *section) {
     int i, reason;
     UI_DATA ui_data;
 #if !defined(USE_WIN32) && !defined(USE_OS2)

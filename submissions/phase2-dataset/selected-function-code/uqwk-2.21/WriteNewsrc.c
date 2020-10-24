@@ -1,3 +1,4 @@
+int WriteNewsrc()
 /*
  *  Rewrite the updated .newsrc file
  */

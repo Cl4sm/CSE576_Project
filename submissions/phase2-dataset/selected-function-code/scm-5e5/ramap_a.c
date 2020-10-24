@@ -1,3 +1,4 @@
+static int ramap_a(ra0, proc, ras)
      SCM ra0, proc, ras;
 {
   SCM e0 = UNDEFINED, e1 = UNDEFINED;

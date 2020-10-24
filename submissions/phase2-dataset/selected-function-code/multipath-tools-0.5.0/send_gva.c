@@ -1,3 +1,4 @@
+static int send_gva(const char *dev, int fd, unsigned char pg,
 		    unsigned char *results, int *results_size)
 {
 	unsigned char sb[128];

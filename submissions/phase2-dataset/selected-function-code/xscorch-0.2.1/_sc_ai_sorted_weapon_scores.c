@@ -1,3 +1,4 @@
+static void _sc_ai_sorted_weapon_scores(sc_weapon_config *wc, int *ordering, double *scores) {
 /* sc_ai_sorted_weapon_scores
    Impose an ordering on the weapons, based on scores loaded into *scores.  */
 

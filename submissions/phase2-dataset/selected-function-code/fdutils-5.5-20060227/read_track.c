@@ -1,3 +1,4 @@
+static int read_track(int fd, int dn, int rate, int cylinder)
 {
 	struct floppy_raw_cmd raw_cmd;
 	int tmp;

@@ -1,3 +1,4 @@
+void show_help(int mode)
 {
 #ifdef EXTHELP
 	char name[NLEN];

@@ -1,3 +1,4 @@
+int rt_thread_join(rt_thread_t thr, void ** stat) {
   int status=0;  
 
 #ifdef THR

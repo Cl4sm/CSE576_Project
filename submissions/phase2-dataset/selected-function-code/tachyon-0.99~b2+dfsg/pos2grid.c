@@ -1,3 +1,4 @@
+static int pos2grid(grid * g, vector * pos, gridindex * index) {
   index->x = (int) ((flt) (pos->x - g->min.x) / g->voxsize.x);
   index->y = (int) ((flt) (pos->y - g->min.y) / g->voxsize.y);
   index->z = (int) ((flt) (pos->z - g->min.z) / g->voxsize.z);

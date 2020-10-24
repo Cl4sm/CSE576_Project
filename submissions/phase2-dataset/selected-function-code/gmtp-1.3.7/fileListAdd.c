@@ -1,3 +1,4 @@
+gboolean fileListAdd() {
     GtkTreeIter rowIter;
     //gchar *filename = NULL;
     gchar *filename_hid = NULL;

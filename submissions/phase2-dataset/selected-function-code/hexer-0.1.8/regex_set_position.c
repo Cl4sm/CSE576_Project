@@ -1,3 +1,4 @@
+  static int
 regex_set_position(long position)
   /* NOTE: `bp' and `buffer_base' *must* be initialized before calling
    *   `regex_set_position'.

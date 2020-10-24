@@ -1,3 +1,4 @@
+static void unpaint(p)
      SCM *p;
 {
   SCM x;

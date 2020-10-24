@@ -1,3 +1,4 @@
+static double _sc_weapon_stat_yield(const sc_weapon_config *wc, const sc_weapon_info *info, bool triple) {
 /* _sc_weapon_stat_yield
    Find an upper bound yield for a weapon.  */
 

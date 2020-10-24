@@ -1,3 +1,4 @@
+int
 krt_capable(rte *e)
 {
   rta *a = e->attrs;

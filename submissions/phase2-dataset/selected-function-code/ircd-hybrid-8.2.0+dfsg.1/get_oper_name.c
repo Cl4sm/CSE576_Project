@@ -1,3 +1,4 @@
+const char *
 get_oper_name(const struct Client *client_p)
 {
   const dlink_node *cnode = NULL;

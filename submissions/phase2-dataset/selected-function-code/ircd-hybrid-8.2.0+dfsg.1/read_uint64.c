@@ -1,3 +1,4 @@
+int
 read_uint64(uint64_t *ret, struct dbFILE *f)
 {
   int64_t c1 = fgetc(f->fp);

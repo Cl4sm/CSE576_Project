@@ -1,3 +1,4 @@
+char *
 ip_ntop(ip_addr a, char *b)
 {
   u16 words[8];

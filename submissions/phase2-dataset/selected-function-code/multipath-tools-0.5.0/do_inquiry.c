@@ -1,3 +1,4 @@
+int
 do_inquiry(int fd, int evpd, unsigned int codepage, void *resp, int resplen)
 {
 	struct inquiry_command	cmd;

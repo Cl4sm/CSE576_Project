@@ -1,3 +1,4 @@
+  int
 tio_raw_printf(const char *fmt, ...)
 #else
   int

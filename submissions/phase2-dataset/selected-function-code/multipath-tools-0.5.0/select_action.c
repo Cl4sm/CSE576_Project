@@ -1,3 +1,4 @@
+static void
 select_action (struct multipath * mpp, vector curmp, int force_reload)
 {
 	struct multipath * cmpp;

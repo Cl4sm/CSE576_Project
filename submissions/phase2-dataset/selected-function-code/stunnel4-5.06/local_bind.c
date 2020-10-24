@@ -1,3 +1,4 @@
+NOEXPORT void local_bind(CLI *c) {
 #ifndef USE_WIN32
     int on;
 

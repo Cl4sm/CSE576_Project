@@ -1,3 +1,4 @@
+SCM positivep(x)
      SCM x;
 {
 #ifdef FLOATS

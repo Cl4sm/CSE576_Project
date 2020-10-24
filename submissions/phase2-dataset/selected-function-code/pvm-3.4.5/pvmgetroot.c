@@ -1,3 +1,4 @@
+char *
 pvmgetroot()
 {
 	static char *rd = 0;

@@ -1,3 +1,4 @@
+int
 sysfs_get_size (struct path *pp, unsigned long long * size)
 {
 	char attr[255];

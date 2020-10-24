@@ -1,3 +1,4 @@
+void gc_mark(p)
      SCM p;
 {
   register long i;

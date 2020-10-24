@@ -1,3 +1,4 @@
+void
 close_connection(struct Client *client_p)
 {
   dlink_node *ptr = NULL;

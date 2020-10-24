@@ -1,3 +1,4 @@
+int
 action_dispatch(action_t * action)
 {
 #ifdef MENUBAR

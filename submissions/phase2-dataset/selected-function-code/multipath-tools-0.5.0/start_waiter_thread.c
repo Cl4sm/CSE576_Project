@@ -1,3 +1,4 @@
+int start_waiter_thread (struct multipath *mpp, struct vectors *vecs)
 {
 	struct event_thread *wp;
 

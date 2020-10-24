@@ -1,3 +1,4 @@
+static int
 ppc64_undo_prelink_rela (DSO *dso, GElf_Rela *rela, GElf_Addr relaaddr)
 {
   switch (GELF_R_TYPE (rela->r_info))

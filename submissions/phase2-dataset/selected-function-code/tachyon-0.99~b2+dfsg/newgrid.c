@@ -1,3 +1,4 @@
+object * newgrid(scenedef * scene, int xsize, int ysize, int zsize, vector min, vector max) {
   grid * g;
   int numcells;
 

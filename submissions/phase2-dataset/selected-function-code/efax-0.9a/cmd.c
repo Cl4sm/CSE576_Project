@@ -1,3 +1,4 @@
+int cmd ( TFILE *f, char *s, int t )
 {
   char buf [ CMDBUFSIZE ], *p = "" ;
   int resplen=0, pause=0 ;

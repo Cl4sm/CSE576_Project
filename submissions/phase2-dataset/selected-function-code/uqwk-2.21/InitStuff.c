@@ -1,3 +1,4 @@
+void InitStuff()
 {
 	buf = malloc(BUF_LEN);
 	if (!buf)

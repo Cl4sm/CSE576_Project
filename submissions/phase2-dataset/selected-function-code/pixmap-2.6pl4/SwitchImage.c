@@ -1,3 +1,4 @@
+void SwitchImage()
 {
     if (image_visible) {
       XtPopdown(image_shell);

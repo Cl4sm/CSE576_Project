@@ -1,3 +1,4 @@
+char *get_file_name(struct dirent *d)
 {
   struct stat s;
   char *name;

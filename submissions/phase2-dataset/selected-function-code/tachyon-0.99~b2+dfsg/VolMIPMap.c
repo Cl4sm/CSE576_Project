@@ -1,3 +1,4 @@
+color VolMIPMap(const mipmap * mip, flt u, flt v, flt w, flt d) {
   int mapindex;
   flt mapflt;
   color col, col1, col2;

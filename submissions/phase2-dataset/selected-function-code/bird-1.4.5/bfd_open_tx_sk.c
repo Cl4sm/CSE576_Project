@@ -1,3 +1,4 @@
+sock *
 bfd_open_tx_sk(struct bfd_proto *p, ip_addr local, struct iface *ifa)
 {
   sock *sk = sk_new(p->tpool);

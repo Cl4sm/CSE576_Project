@@ -1,3 +1,4 @@
+void
 window_check_servers()
 {
 	Window	*tmp;

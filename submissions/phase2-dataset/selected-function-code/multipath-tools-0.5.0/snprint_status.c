@@ -1,3 +1,4 @@
+extern int
 snprint_status (char * buff, int len, struct vectors *vecs)
 {
 	int fwd = 0;

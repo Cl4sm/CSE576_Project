@@ -1,3 +1,4 @@
+static void
 init_commands(void)
 {
   if (restricted)

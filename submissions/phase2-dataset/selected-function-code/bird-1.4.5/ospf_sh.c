@@ -1,3 +1,4 @@
+void
 ospf_sh(struct proto *p)
 {
   struct ospf_area *oa;

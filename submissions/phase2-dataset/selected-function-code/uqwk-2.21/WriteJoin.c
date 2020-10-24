@@ -1,3 +1,4 @@
+int WriteJoin ()
 /*
  *  Write the ZipNews join file
  */

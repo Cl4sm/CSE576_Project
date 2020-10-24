@@ -1,3 +1,4 @@
+static void _sc_link_spin_class_init(ScLinkSpinClass *klass) {
 
    GtkObjectClass *object_class = (GtkObjectClass *)klass;
 

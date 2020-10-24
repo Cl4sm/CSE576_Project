@@ -1,3 +1,4 @@
+void
 parseFormats(char * format)
 {
         int i, j, l;

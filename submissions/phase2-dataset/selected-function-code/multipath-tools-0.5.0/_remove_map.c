@@ -1,3 +1,4 @@
+static void
 _remove_map (struct multipath * mpp, struct vectors * vecs,
 	    int stop_waiter, int purge_vec)
 {

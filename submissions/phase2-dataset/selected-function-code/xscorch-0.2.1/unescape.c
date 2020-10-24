@@ -1,3 +1,4 @@
+char *unescape(char *s) {
 /* Unescape
    This function will take an escaped string and "unescape" it. Standard C
    escape sequence is read. The escape sequences currently recognized are

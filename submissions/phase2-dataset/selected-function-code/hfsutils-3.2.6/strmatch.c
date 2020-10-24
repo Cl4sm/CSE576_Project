@@ -1,3 +1,4 @@
+static
 int strmatch(const char *str, const char *pat)
 {
   while (1)

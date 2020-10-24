@@ -1,3 +1,4 @@
+static void
 ospf_iface_add(struct object_lock *lock)
 {
   struct ospf_iface *ifa = lock->data;

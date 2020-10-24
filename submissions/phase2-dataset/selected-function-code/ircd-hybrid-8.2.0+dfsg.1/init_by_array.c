@@ -1,3 +1,4 @@
+void
 init_by_array(uint32_t init_key[], int key_length)
 {
   int i, j, k;

@@ -1,3 +1,4 @@
+NOEXPORT int parse_socket_option(char *arg) {
     int socket_type; /* 0-accept, 1-local, 2-remote */
     char *opt_val_str, *opt_val2_str, *tmpstr;
     SOCK_OPT *ptr;

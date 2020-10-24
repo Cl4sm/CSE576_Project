@@ -1,3 +1,4 @@
+int readwrite_sectors(int fd, /* file descriptor */
 		      int drive,
 		      enum dir direction,
 		      int cylinder, int head, 

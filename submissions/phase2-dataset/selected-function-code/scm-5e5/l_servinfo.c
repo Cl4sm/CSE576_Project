@@ -1,3 +1,4 @@
+SCM l_servinfo(args)
      SCM args;
 {
   SCM ans = make_vector(MAKINUM(4), UNSPECIFIED);

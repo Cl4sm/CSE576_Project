@@ -1,3 +1,4 @@
+locloutput(tp)
 	struct task *tp;
 {
 	struct pkt *pp;

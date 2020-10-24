@@ -1,3 +1,4 @@
+static int raeql(ra0, as_equal, ra1)
      SCM ra0, as_equal, ra1;
 {
   SCM v0 = ra0, v1 = ra1;

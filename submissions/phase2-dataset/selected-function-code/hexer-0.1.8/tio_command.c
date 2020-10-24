@@ -1,3 +1,4 @@
+  static int
 tio_command(char *cmd, int affcnt, ...)
 #else
   static int

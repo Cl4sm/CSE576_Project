@@ -1,3 +1,4 @@
+static int
 rip_rte_better(struct rte *new, struct rte *old)
 {
   struct proto *p = new->attrs->src->proto;

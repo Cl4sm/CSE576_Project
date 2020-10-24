@@ -1,3 +1,4 @@
+void scm_env_cons3(v, w, x, y)
      SCM v, w, x, y;
 {
    SCM z1, z2;

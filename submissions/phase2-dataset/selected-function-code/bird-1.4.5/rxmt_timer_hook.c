@@ -1,3 +1,4 @@
+static void
 rxmt_timer_hook(timer * timer)
 {
   struct ospf_neighbor *n = (struct ospf_neighbor *) timer->data;

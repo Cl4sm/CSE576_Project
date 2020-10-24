@@ -1,3 +1,4 @@
+void FixEntry(w, id)
     Widget w;
     int *id;
 {

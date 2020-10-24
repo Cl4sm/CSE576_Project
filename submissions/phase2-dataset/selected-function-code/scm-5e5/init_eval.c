@@ -1,3 +1,4 @@
+void init_eval()
 {
   scm_env = EOL;
   scm_env_tmp = UNSPECIFIED;

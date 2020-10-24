@@ -1,3 +1,4 @@
+static int
 adjust_dwarf2_loc (DSO *dso, struct cu_data *cu, GElf_Addr offset,
 		   GElf_Addr base, GElf_Addr start, GElf_Addr adjust)
 {

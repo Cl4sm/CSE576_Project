@@ -1,3 +1,4 @@
+static gint _sc_console_key_press(GtkWidget *widget, GdkEventKey *event) {
 /* sc_console_key_press
    Process a key that was pressed.  */
 

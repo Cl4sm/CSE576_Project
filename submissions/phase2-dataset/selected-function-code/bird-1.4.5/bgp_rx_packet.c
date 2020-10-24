@@ -1,3 +1,4 @@
+static void
 bgp_rx_packet(struct bgp_conn *conn, byte *pkt, unsigned len)
 {
   byte type = pkt[18];

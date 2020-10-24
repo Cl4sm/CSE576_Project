@@ -1,3 +1,4 @@
+static int find_identical_file(struct entry *orig, struct entry *newfile)
 {
 	if (orig == newfile)
 		return 1;

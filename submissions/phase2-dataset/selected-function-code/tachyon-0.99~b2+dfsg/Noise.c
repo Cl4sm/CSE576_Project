@@ -1,3 +1,4 @@
+int Noise(flt x, flt y, flt z) {
   byte ix, iy, iz;
   flt ox, oy, oz;
   int p000, p001, p010, p011;

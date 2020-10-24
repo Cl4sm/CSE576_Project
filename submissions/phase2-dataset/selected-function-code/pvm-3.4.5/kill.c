@@ -1,3 +1,4 @@
+int 
 kill(pid, p_handle, signal)
 int pid;
 int p_handle;

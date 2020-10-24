@@ -1,3 +1,4 @@
+static void
 input_do_replace_prompt(u_char *newprompt)
 {
 	ScreenInputBufferData* bufdata = &current_screen->inputdata.buffer;

@@ -1,3 +1,4 @@
+static int
 get_prio (struct path * pp)
 {
 	if (!pp)

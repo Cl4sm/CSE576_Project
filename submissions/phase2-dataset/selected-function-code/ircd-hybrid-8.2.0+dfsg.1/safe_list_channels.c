@@ -1,3 +1,4 @@
+void
 safe_list_channels(struct Client *source_p, int only_unmasked_channels)
 {
   struct ListTask *lt = source_p->localClient->list_task;

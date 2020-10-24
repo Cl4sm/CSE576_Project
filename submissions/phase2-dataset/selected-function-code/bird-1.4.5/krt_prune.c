@@ -1,3 +1,4 @@
+static void
 krt_prune(struct krt_proto *p)
 {
   struct rtable *t = p->p.table;

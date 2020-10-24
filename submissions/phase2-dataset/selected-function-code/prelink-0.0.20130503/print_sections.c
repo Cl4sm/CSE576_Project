@@ -1,3 +1,4 @@
+void
 print_sections (DSO *dso, GElf_Ehdr *ehdr, GElf_Shdr *shdr)
 {
   int elf64 = ehdr->e_ident[EI_CLASS] == ELFCLASS64;

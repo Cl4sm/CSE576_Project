@@ -1,3 +1,4 @@
+pvm_shmsgdone (midListId)
 int midListId;
 {
 int rval;

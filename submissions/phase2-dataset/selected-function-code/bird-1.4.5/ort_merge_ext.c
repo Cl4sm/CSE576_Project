@@ -1,3 +1,4 @@
+static void
 ort_merge_ext(struct proto_ospf *po, ort *o, const orta *new)
 {
   orta *old = &o->n;

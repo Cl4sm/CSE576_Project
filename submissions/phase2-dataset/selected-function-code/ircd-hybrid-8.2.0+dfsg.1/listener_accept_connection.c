@@ -1,3 +1,4 @@
+static void
 listener_accept_connection(fde_t *pfd, void *data)
 {
   static time_t rate = 0;

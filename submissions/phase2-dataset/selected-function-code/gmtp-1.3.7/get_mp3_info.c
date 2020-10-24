@@ -1,3 +1,4 @@
+void get_mp3_info(gchar *filename, MP3_Info *mp3_struct) {
 
     FILE * mp3_file = NULL;
     struct stat sb;

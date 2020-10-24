@@ -1,3 +1,4 @@
+void
 setupOption(mode)
 int mode;
 {

@@ -1,3 +1,4 @@
+static int logarea_init (int size)
 {
 	logdbg(stderr,"enter logarea_init\n");
 	la = (struct logarea *)MALLOC(sizeof(struct logarea));

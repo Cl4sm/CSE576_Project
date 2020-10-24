@@ -1,3 +1,4 @@
+void on_folderMoveFolder_activate(GtkMenuItem *menuitem, gpointer user_data) {
     GtkTreeModel *sortmodel;
     GtkTreeIter iter;
     GtkTreeIter childiter;

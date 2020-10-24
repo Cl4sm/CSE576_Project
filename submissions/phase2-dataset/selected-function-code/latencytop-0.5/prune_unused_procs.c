@@ -1,3 +1,4 @@
+void prune_unused_procs(void)
 {
 	GList *entry, *entry2;
 	struct latency_line *line;

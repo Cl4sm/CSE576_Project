@@ -1,3 +1,4 @@
+void processZoomAction(Context, x, y, button, evtype)
 Sundata * Context;
 int x;
 int y;

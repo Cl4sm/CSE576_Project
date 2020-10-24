@@ -1,3 +1,4 @@
+int Subscribe (pfd)
 FILE *pfd;
 {
 	struct act_ent *ap;

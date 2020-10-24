@@ -1,3 +1,4 @@
+void PWRescale(Widget w, Dimension width, Dimension height)
 #else
 void PWRescale(w, width, height)
     Widget w;

@@ -1,3 +1,4 @@
+static void _sc_window_draw_flames_gtk(sc_window_gtk *w, const int *xlist,
                                        const int *ylist, int size) {
 /* sc_window_draw_flames_gtk */
 

@@ -1,3 +1,4 @@
+int sc_expl_damage_at_point(const sc_land *l, const sc_explosion *e, int x, int y) {
 /* sc_expl_damage_at_point
    Returns the amount of damage (in units comparable to life), done by the
    specified explosion to an object centered at (x, y).  If no damage is

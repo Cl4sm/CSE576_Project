@@ -1,3 +1,4 @@
+static int
 SFstatAndCheck(dir, entry)
 	SFDir	*dir;
 	SFEntry	*entry;

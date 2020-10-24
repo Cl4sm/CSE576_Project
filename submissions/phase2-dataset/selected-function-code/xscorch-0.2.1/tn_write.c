@@ -1,3 +1,4 @@
+bool tn_write(tn_connection *tnc, const byte *payload, size_t size) {
 /*
  * tn_write
  * Write a packet onto the outgoing chain.

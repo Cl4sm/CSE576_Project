@@ -1,3 +1,4 @@
+static void _sc_marshal_BOOLEAN__VOID(GClosure *closure, GValue *return_value,
                                       guint n_param_values, const GValue *param_values,
                                       __libj_unused gpointer invocation_hint, gpointer marshal_data) {
 

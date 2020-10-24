@@ -1,3 +1,4 @@
+static void _sc_active_console_class_init(ScActiveConsoleClass *klass) {
 
    GtkObjectClass *object_class = (GtkObjectClass *)klass;
 

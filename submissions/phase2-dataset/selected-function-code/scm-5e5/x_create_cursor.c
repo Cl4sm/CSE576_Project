@@ -1,3 +1,4 @@
+SCM x_create_cursor(sdpy, scsr, sargs)
      SCM sdpy, scsr, sargs;
 {
   Cursor cursor;

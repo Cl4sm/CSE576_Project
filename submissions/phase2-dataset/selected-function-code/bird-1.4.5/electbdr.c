@@ -1,3 +1,4 @@
+static struct ospf_neighbor *
 electbdr(list nl)
 {
   struct ospf_neighbor *neigh, *n1, *n2;

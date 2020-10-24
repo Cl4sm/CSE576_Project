@@ -1,3 +1,4 @@
+char *scm_cat_path(str1, str2, n)
      char *str1;
      const char *str2;
      long n;

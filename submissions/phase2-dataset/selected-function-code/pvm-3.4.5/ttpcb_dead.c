@@ -1,3 +1,4 @@
+void
 ttpcb_dead(pcbp)
 	struct ttpcb *pcbp;
 {

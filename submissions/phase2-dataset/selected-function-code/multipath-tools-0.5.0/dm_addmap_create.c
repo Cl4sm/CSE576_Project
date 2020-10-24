@@ -1,3 +1,4 @@
+extern int
 dm_addmap_create (struct multipath *mpp, char * params) {
 	int ro;
 

@@ -1,3 +1,4 @@
+static int
 mp_uid_handler(vector strvec)
 {
 	uid_t uid;

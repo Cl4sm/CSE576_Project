@@ -1,3 +1,4 @@
+int
 pvm_lookup(name, req, datap)
 	char *name;		/* class name */
 	int req;		/* req class index or -1 for any */

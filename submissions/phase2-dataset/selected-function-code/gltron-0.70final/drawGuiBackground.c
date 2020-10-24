@@ -1,3 +1,4 @@
+void drawGuiBackground(void) {
   checkGLError("gui background start");
 
   glClearColor(0.0, 0.0, 0.0, 0.0);

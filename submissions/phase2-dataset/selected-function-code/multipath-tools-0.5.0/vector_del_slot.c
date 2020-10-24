@@ -1,3 +1,4 @@
+void
 vector_del_slot(vector v, int slot)
 {
 	int i;

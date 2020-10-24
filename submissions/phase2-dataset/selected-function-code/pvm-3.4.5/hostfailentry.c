@@ -1,3 +1,4 @@
+int
 hostfailentry(hp)
 	struct hostd *hp;
 {

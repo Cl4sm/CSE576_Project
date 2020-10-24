@@ -1,3 +1,4 @@
+void *
 set_value(vector strvec)
 {
 	char *str = VECTOR_SLOT(strvec, 1);

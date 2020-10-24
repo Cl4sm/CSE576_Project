@@ -1,3 +1,4 @@
+void filesAdd(gchar* filename) {
     uint64_t filesize = 0;
     gchar *filename_stripped;
     struct stat sb;

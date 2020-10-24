@@ -1,3 +1,4 @@
+static void _sc_fractal_average(unsigned char *data, int size, int spacing)
 {
   int spacing2 = (spacing >> 1); /*used as offset*/
   int basey;                     /*1D offset of current row*/

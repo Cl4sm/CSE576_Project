@@ -1,3 +1,4 @@
+void
 _nl_log_untranslated (logfilename, domainname, msgid1, msgid2, plural)
      const char *logfilename;
      const char *domainname;

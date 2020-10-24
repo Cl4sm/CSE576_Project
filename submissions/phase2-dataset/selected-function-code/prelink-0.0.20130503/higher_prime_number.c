@@ -1,3 +1,4 @@
+static unsigned long
 higher_prime_number (n)
      unsigned long n;
 {

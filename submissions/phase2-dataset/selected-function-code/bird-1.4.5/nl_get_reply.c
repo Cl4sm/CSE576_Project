@@ -1,3 +1,4 @@
+static struct nlmsghdr *
 nl_get_reply(struct nl_sock *nl)
 {
   for(;;)

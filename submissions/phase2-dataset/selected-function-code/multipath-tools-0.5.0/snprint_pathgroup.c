@@ -1,3 +1,4 @@
+int
 snprint_pathgroup (char * line, int len, char * format,
 		   struct pathgroup * pgp)
 {

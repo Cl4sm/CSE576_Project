@@ -1,3 +1,4 @@
+void *rsrc_getind(rsrcfile *rfile, const char *type, int index)
 {
   const byte *ptr;
   short nitems;

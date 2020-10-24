@@ -1,3 +1,4 @@
+void    init_turtlegr() /* detects if graphics is available; must be
                            called among program initializations */
 {
 #ifdef  X11

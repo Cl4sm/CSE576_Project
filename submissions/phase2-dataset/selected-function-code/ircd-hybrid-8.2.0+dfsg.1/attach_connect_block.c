@@ -1,3 +1,4 @@
+int
 attach_connect_block(struct Client *client_p, const char *name,
                      const char *host)
 {

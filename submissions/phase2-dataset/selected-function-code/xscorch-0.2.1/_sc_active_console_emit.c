@@ -1,3 +1,4 @@
+static inline gboolean _sc_active_console_emit(ScActiveConsole *cons, int signalid,
                                                ScActiveConsoleSpot *spot) {
 /* sc_active_console_emit
    Emits the indicated signalid, which should be ENTER_SPOT_SIGNAL,

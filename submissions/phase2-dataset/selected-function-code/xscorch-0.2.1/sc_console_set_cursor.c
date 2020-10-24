@@ -1,3 +1,4 @@
+void sc_console_set_cursor(ScConsole *cons, gint x, gint y, gint width, gint height) {
 /* sc_console_set_cursor
    Updates all attributes of the cursor.  The cursor's position is given in
    (x,y) which are CHARACTER coordinates relative to the TEXT BUFFER (not

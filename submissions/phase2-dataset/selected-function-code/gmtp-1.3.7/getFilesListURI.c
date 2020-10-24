@@ -1,3 +1,4 @@
+GSList* getFilesListURI(gchar* rawdata) {
     // The data is just the data in string form
     // Files are in the URI form of file:///filename\n so just look for those,
     // and if found see if a folder or not?

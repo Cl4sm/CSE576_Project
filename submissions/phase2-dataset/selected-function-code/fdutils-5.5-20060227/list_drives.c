@@ -1,3 +1,4 @@
+void list_drives() {
     mnt_node *mnt;
     int i,type;
     char devname[10];

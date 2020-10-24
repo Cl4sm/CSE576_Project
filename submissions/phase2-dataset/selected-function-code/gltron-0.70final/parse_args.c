@@ -1,3 +1,4 @@
+void parse_args(int argc, const char *argv[]) {
   int i;
   while(argc--) {
     if(argv[argc][0] == '-') {

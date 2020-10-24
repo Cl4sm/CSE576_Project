@@ -1,3 +1,4 @@
+static byte *
 cli_alloc_out(cli *c, int size)
 {
   struct cli_out *o;

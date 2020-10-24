@@ -1,3 +1,4 @@
+void
 dbuf_delete(struct dbuf_queue *queue, size_t count)
 {
   while (count > 0 && dbuf_length(queue) > 0)

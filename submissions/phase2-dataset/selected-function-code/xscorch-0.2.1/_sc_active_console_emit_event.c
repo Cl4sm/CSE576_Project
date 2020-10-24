@@ -1,3 +1,4 @@
+static inline gboolean _sc_active_console_emit_event(ScActiveConsole *cons, int signalid,
                                                      gpointer event, ScActiveConsoleSpot *spot) {
 /* sc_active_console_emit_event
    Emits the indicated signalid, which should be KEY_PRESS_SPOT_SIGNAL,

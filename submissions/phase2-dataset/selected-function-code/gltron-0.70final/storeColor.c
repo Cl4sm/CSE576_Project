@@ -1,3 +1,4 @@
+void storeColor(TrailMesh *pMesh, int offset, PlayerVisual *pV, int type) {
   float color[] = { 0, 0, 0, 1 };
 	float white[] = { 1, 1, 1, 1 };
 

@@ -1,3 +1,4 @@
+SCM     gr_moveTo( x, y )
 SCM     x, y;
 {
 float   xf, yf;

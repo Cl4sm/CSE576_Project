@@ -1,3 +1,4 @@
+CHUNK_PTR
 pvm_chunkReady(ppmsg, nbufs, mfunc, ostructs, nstructs, cbuf, hdReadyList )
 MSG_INFO_PTR ppmsg;	/* vector of pre-posted message buffers */
 int nbufs;				/* number of bufs in ppsmg */

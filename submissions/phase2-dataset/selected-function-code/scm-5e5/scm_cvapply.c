@@ -1,3 +1,4 @@
+SCM scm_cvapply(proc, n, argv)
      SCM proc, *argv;
      long n;
 {

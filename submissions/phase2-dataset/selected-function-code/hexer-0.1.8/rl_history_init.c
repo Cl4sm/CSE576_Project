@@ -1,3 +1,4 @@
+  static int
 rl_history_init(int max)
   /* initialize readline-history.  set the maximum number of lines to
    * `max' (`rl_history_max').

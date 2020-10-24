@@ -1,3 +1,4 @@
+SCM x_list_properties(swin)
      SCM swin;
 {
   struct xs_Window *xwn;

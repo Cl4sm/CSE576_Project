@@ -1,3 +1,4 @@
+main(c,v)
 int c;char **v;{
   int n=200,j=0,m,b=2,k=0,t,r=1,d=5;
   long q;

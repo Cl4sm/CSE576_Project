@@ -1,3 +1,4 @@
+static void _obex_opp_client_object_manager_handler(GDBusConnection *connection, const gchar *sender_name, const gchar *object_path, const gchar *interface_name, const gchar *signal_name, GVariant *parameters, gpointer user_data)
 {
     if(g_strcmp0(signal_name, "InterfacesAdded") == 0)
     {

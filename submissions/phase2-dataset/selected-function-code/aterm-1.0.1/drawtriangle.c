@@ -1,3 +1,4 @@
+void
 drawtriangle(int x, int y, int state)
 {
 #ifdef MENUBAR

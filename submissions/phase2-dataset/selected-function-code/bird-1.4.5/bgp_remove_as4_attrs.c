@@ -1,3 +1,4 @@
+static void
 bgp_remove_as4_attrs(struct bgp_proto *p, rta *a)
 {
   unsigned id1 = EA_CODE(EAP_BGP, BA_AS4_PATH);

@@ -1,3 +1,4 @@
+void
 Gr_ButtonReport(int but, int x, int y)
 {
 #ifdef RXVT_GRAPHICS

@@ -1,3 +1,4 @@
+void drawImpact(PlayerVisual *pV) {
 
   glDisable(GL_LIGHTING);
   glPushMatrix();

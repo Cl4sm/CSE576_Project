@@ -1,3 +1,4 @@
+static void _alert_agent_set_property(GObject *object, guint property_id, const GValue *value, GParamSpec *pspec)
 {
 	AlertAgent *self = ALERT_AGENT(object);
 	GError *error = NULL;

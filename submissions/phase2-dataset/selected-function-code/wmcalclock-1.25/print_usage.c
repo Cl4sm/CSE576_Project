@@ -1,3 +1,4 @@
+void print_usage(){
 
     printf("\nwmCalClock version: %s\n", WMCALCLOCK_VERSION);
     printf("\nusage: wmCalClock [-b <Volume>] [-tc <Color>] [-bc <Color>] [-e \"Command\"] [-S]\n");

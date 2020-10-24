@@ -1,3 +1,4 @@
+void
 SFvSliderMovedCallback(w, n, new)
 	Widget	w;
 	int	n;

@@ -1,3 +1,4 @@
+void
 flush_sum_lsa(struct ospf_area *oa, struct fib_node *fn, int type)
 {
   struct proto_ospf *po = oa->po;

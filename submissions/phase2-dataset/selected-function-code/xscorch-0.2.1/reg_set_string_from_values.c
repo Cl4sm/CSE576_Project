@@ -1,3 +1,4 @@
+bool reg_set_string_from_values(reg *r, reg_var *v, const char *path, int value,
                                 const char **names, const unsigned int *values) {
 /* reg_set_string_from_values
    Write the enumerated value <value>, as its corresponding string to

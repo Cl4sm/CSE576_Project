@@ -1,3 +1,4 @@
+static bool _sc_load_images(sc_window_gtk *w) {
 
    const char *filename;
 

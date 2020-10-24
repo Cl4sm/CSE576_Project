@@ -1,3 +1,4 @@
+char *inttohex(char *d, udword num, udword digits) {
 /* Integer-To_Hexadecimal
    Converts integer <num> to a string with <digits> digits. If
    <digits> is less than number of digits in <num>, then the

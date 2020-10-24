@@ -1,3 +1,4 @@
+static void
 update_client_exit_stats(struct Client *client_p)
 {
   if (IsClient(client_p))

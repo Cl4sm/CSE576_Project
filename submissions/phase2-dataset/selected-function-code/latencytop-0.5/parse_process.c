@@ -1,3 +1,4 @@
+void parse_process(struct process *process)
 {
 	DIR *dir;
 	struct dirent *dirent;

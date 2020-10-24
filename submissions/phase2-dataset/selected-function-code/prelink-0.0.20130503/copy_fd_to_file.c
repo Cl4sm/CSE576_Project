@@ -1,3 +1,4 @@
+int
 copy_fd_to_file (int fdin, const char *name, struct stat64 *st)
 {
   struct stat64 stt;

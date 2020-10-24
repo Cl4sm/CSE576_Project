@@ -1,3 +1,4 @@
+int
 mpp_dredge()
 {
 	int i;

@@ -1,3 +1,4 @@
+static
 int cmd_exit(ClientData clientData, Tcl_Interp *interp,
 	     int argc, char *argv[])
 {

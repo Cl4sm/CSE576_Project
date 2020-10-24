@@ -1,3 +1,4 @@
+void on_Playlist_NewPlaylistButton_activate(GtkMenuItem *menuitem, gpointer user_data) {
     //g_printf("Clicked on new playlist button\n");
     gchar *playlistname = NULL;
 

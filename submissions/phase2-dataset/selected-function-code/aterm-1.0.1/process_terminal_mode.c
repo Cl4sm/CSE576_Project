@@ -1,3 +1,4 @@
+void
 process_terminal_mode(int mode, int priv, unsigned int nargs, int arg[])
 {
     unsigned int    i;

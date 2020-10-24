@@ -1,3 +1,4 @@
+  char *
 readline(prompt, default_val, context)
   char *prompt;
   char *default_val;

@@ -1,3 +1,4 @@
+char *wortanfang(char *str)
   { char ht[2] = {(char)0, (char)0};
     int n,k;
     n = strlen(str);

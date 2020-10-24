@@ -1,3 +1,4 @@
+CHUNK_PTR
 ochunk_delete( ostruct )
 CHUNK_ORDER_PTR ostruct;
 {

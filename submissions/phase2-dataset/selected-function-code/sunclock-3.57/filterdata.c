@@ -1,3 +1,4 @@
+void
 filterdata()
 {
 int i, j, t, ind;

@@ -1,3 +1,4 @@
+static int
 set_security_context (const char *temp_name, const char *name,
 		      int ignore_errors)
 {

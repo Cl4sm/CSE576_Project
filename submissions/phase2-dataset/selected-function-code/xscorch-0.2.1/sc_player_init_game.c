@@ -1,3 +1,4 @@
+void sc_player_init_game(const sc_config *c, sc_player *p) {
 /* sc_player_init_game
    Game initialization for this player */
 

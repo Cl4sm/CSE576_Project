@@ -1,3 +1,4 @@
+static int
 i386_layout_libs_post (struct layout_libs *l)
 {
   struct prelink_entry *e;

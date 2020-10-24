@@ -1,3 +1,4 @@
+static inline void
 sk_prepare_cmsgs6(sock *s, struct msghdr *msg, void *cbuf, size_t cbuflen)
 {
   struct cmsghdr *cm;

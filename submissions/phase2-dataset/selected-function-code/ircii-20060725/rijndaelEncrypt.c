@@ -1,3 +1,4 @@
+int rijndaelEncrypt (word8 a[4][MAXBC], int keyBits, int blockBits, word8 rk[MAXROUNDS+1][4][MAXBC])
 {
 	/* Encryption of one block. 
 	 */

@@ -1,3 +1,4 @@
+void apitextotex(apitexture * apitex, texture * tx) {
   standard_texture * tex = (standard_texture *) tx;
   tex->img = NULL;
  

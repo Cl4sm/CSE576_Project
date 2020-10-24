@@ -1,3 +1,4 @@
+NOEXPORT void init_ssl(CLI *c) {
     int i, err;
     SSL_SESSION *old_session;
     int unsafe_openssl;

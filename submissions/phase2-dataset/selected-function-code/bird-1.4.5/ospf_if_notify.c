@@ -1,3 +1,4 @@
+void
 ospf_if_notify(struct proto *p, unsigned flags, struct iface *iface)
 {
   struct proto_ospf *po = (struct proto_ospf *) p;

@@ -1,3 +1,4 @@
+XImage *
 pixmap_image()
 {
   int i, j, k, l, w, h;

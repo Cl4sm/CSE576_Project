@@ -1,3 +1,4 @@
+void
 makeContext(Context, build)
 struct Sundata * Context;
 int build;

@@ -1,3 +1,4 @@
+static struct adata *
 clist_filter(struct linpool *pool, struct adata *list, struct f_val set, int pos)
 {
   if (!list)

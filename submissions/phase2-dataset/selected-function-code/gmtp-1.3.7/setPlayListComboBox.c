@@ -1,3 +1,4 @@
+void setPlayListComboBox(void) {
     LIBMTP_playlist_t* tmpplaylist = NULL;
     
     // We need to remove all entries in the combo box before starting.

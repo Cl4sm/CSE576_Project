@@ -1,3 +1,4 @@
+void getWinParams(win, Context, keys, nkeys, y, width)
 Window win;
 struct Sundata **Context;
 char **keys;

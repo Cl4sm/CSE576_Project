@@ -1,3 +1,4 @@
+void on_filesDelete_activate(GtkMenuItem *menuitem, gpointer user_data) {
     GtkWidget *dialog;
 
     // Let's check to see if we have anything selected in our treeview?

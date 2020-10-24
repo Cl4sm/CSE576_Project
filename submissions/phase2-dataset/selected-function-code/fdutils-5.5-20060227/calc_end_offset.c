@@ -1,3 +1,4 @@
+static inline int calc_end_offset(struct params *f, int cur_pos, int *lskew)
 {
 	int sector_skew, byte_skew;
 

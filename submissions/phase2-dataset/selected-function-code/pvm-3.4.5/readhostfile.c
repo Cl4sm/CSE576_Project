@@ -1,3 +1,4 @@
+struct htab *
 readhostfile(fn)
 	char *fn;
 {

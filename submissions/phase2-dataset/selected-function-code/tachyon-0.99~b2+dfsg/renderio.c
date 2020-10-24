@@ -1,3 +1,4 @@
+static void renderio(scenedef * scene) {
   flt iotime;
   char msgtxt[256];
   rt_timerhandle ioth; /* I/O timer handle */

@@ -1,3 +1,4 @@
+static	void
 display_all_queues(queue)
 	Queue	*queue;
 {

@@ -1,3 +1,4 @@
+static
 const byte *findtype(rsrcmap *map, const char *type)
 {
   const byte *ptr;

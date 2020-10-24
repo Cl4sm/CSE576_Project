@@ -1,3 +1,4 @@
+int ttymode ( TFILE *f, enum ttymodes mode )
 {
   int err=0, i ;         
   static struct termios t, oldt, *pt ;

@@ -1,3 +1,4 @@
+void PWFlipVert(Widget w)
 #else
 void PWFlipVert(w)
      Widget w;

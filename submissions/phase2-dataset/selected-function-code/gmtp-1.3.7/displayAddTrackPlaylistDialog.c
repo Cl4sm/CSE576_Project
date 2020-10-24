@@ -1,3 +1,4 @@
+int32_t displayAddTrackPlaylistDialog(gboolean showNew /* = TRUE */) {
     GtkWidget *dialog, *hbox, *label, *buttonNewPlaylist;
     LIBMTP_playlist_t* tmpplaylist = NULL;
     gint selectedPlaylist = 0;

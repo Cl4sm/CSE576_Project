@@ -1,3 +1,4 @@
+const char *
 locale_charset ()
 {
   const char *codeset;

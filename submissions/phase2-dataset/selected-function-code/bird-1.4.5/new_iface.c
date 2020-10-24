@@ -1,3 +1,4 @@
+static struct rip_interface *
 new_iface(struct proto *p, struct iface *new, unsigned long flags, struct iface_patt *patt )
 {
   struct rip_interface *rif;

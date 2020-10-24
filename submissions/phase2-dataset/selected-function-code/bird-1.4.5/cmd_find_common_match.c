@@ -1,3 +1,4 @@
+static int
 cmd_find_common_match(struct cmd_node *root, char *cmd, int len, int *pcount, char *buf)
 {
   struct cmd_node *m;

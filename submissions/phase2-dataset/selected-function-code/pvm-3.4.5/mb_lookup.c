@@ -1,3 +1,4 @@
+int
 mb_lookup(tid, name, req, flags, mpp)
 	int tid;				/* owner task */
 	char *name;				/* class name */

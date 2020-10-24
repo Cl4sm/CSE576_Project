@@ -1,3 +1,4 @@
+int pidfile_create(const char *pidFile, pid_t pid)
 {
 	char buf[20];
 	struct flock lock;

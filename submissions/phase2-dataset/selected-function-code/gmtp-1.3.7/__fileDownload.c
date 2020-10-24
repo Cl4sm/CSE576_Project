@@ -1,3 +1,4 @@
+void __fileDownload(GtkTreeRowReference *Row) {
     GtkTreePath *path;
     GtkTreeIter iter;
     gchar *filename = NULL;

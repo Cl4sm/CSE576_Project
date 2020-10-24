@@ -1,3 +1,4 @@
+const char *
 get_member_status(const struct Membership *ms, const int combine)
 {
   static char buffer[4];  /* 4 for @%+\0 */

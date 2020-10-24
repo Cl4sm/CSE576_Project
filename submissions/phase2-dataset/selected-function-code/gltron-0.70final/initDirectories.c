@@ -1,3 +1,4 @@
+void initDirectories(void) {
   if(PREF_DIR[0] != '~')
     sprintf(preferences_dir, PREF_DIR);
   else

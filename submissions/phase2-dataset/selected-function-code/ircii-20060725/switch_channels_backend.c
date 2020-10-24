@@ -1,3 +1,4 @@
+static int
 switch_channels_backend(ChannelList * chan)
 {
 	u_char *newchan;

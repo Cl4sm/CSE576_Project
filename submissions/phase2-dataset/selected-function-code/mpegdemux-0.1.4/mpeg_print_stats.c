@@ -1,3 +1,4 @@
+void mpeg_print_stats (mpeg_demux_t *mpeg, FILE *fp)
 {
 	unsigned i;
 

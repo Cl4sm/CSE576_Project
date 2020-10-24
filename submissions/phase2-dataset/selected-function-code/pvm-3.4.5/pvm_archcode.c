@@ -1,3 +1,4 @@
+int
 pvm_archcode(arch)
 	char *arch;
 {

@@ -1,3 +1,4 @@
+extern int
 select_features (struct multipath * mp)
 {
 	struct mpentry * mpe;

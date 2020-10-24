@@ -1,3 +1,4 @@
+int recv_packet(int fd, char **buf, size_t *len)
 {
 	if (read_all(fd, len, sizeof(*len)) != sizeof(*len)) {
 		(*buf) = NULL;

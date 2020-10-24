@@ -1,3 +1,4 @@
+void
 Gr_scroll(int count)
 {
 #ifdef RXVT_GRAPHICS

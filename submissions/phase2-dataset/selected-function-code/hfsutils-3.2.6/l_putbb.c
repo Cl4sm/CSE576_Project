@@ -1,3 +1,4 @@
+int l_putbb(hfsvol *vol, const BootBlkHdr *bb, const byte *bootcode)
 {
   block b;
   byte *ptr = b;

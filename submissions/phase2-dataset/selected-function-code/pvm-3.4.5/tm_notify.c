@@ -1,3 +1,4 @@
+int
 tm_notify(tp, mp)
 	struct task *tp;
 	struct pmsg *mp;

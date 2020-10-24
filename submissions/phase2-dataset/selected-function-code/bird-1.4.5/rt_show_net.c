@@ -1,3 +1,4 @@
+static void
 rt_show_net(struct cli *c, net *n, struct rt_show_data *d)
 {
   rte *e, *ee;

@@ -1,3 +1,4 @@
+int
 prelink_prepare (DSO *dso)
 {
   struct reloc_info rinfo;

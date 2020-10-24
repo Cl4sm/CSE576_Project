@@ -1,3 +1,4 @@
+XImage *ScalePixmapImage(PW, src, scale_x, scale_y)
      PixmapWidget PW;
      XImage *src;
      double scale_x, scale_y;

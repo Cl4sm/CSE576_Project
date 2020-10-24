@@ -1,3 +1,4 @@
+void str_detach_debug(void *ptr, char *file, int line) {
     ALLOC_LIST *alloc_list;
 
     if(!ptr) /* do not attempt to free null pointers */

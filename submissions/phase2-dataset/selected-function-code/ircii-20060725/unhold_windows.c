@@ -1,3 +1,4 @@
+int
 unhold_windows()
 {
 	Window	*tmp;

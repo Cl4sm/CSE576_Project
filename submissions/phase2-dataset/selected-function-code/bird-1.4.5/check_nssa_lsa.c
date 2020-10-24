@@ -1,3 +1,4 @@
+static inline void
 check_nssa_lsa(struct proto_ospf *po, ort *nf)
 {
   struct fib_node *fn = &nf->fn;

@@ -1,3 +1,4 @@
+gboolean intf_supported(const gchar *dbus_service_name, const gchar *dbus_object_path, const gchar *intf_name)
 {
     g_assert(dbus_service_name != NULL && strlen(dbus_service_name) > 0);
     g_assert(dbus_object_path != NULL && strlen(dbus_object_path) > 0);

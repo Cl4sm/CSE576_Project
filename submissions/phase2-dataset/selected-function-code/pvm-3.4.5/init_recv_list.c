@@ -1,3 +1,4 @@
+MSG_INFO_PTR
 init_recv_list( nbufs, tagbase, msize, hsize, appid, llmsg )
 int nbufs, tagbase, msize, hsize;
 int appid;

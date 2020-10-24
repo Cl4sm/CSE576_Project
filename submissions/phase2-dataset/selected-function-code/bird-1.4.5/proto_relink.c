@@ -1,3 +1,4 @@
+static void
 proto_relink(struct proto *p)
 {
   list *l = NULL;

@@ -1,3 +1,4 @@
+City *
 searchCityLocation(params)
 char *params;
 {

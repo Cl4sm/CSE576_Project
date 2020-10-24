@@ -1,3 +1,4 @@
+int context_init(SERVICE_OPTIONS *section) { /* init SSL context */
     /* create SSL context */
     if(section->option.client)
         section->ctx=SSL_CTX_new(section->client_method);

@@ -1,3 +1,4 @@
+int v_resolve(hfsvol **vol, const char *path,
 	      CatDataRec *data, long *parid, char *fname, node *np)
 {
   unsigned long dirid;

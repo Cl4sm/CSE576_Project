@@ -1,3 +1,4 @@
+int l_getbb(hfsvol *vol, BootBlkHdr *bb, byte *bootcode)
 {
   block b;
   const byte *ptr = b;

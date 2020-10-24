@@ -1,3 +1,4 @@
+extern int
 snprint_hwtable (char * buff, int len, vector hwtable)
 {
 	int fwd = 0;

@@ -1,3 +1,4 @@
+void
 scr_color(unsigned int color, unsigned int Intensity)
 {
     if (color == restoreFG)

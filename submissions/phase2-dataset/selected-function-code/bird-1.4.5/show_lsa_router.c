@@ -1,3 +1,4 @@
+static inline void
 show_lsa_router(struct proto_ospf *po, struct top_hash_entry *he, int first, int verbose)
 {
   struct ospf_lsa_header *lsa = &(he->lsa);

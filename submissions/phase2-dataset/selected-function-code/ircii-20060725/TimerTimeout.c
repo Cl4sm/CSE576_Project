@@ -1,3 +1,4 @@
+static void
 TimerTimeout(tv)
 	struct timeval *tv;
 {

@@ -1,3 +1,4 @@
+static int
 execstack_make_rdwr (DSO *dso, int flag)
 {
   int i, fd = -1, status;

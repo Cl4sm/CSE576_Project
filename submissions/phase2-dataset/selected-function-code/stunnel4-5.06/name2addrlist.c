@@ -1,3 +1,4 @@
+unsigned name2addrlist(SOCKADDR_LIST *addr_list, char *name, char *default_host) {
     char *tmp, *host_name, *port_name;
     unsigned retval;
 

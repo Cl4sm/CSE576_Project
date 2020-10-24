@@ -1,3 +1,4 @@
+int hcwd_finish(void)
 {
   if (statef && mounts && dirty)
     {

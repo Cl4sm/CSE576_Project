@@ -1,3 +1,4 @@
+static
 char *mkenvkey(char mch)
 {
 #ifndef __EMX__

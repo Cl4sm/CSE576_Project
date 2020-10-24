@@ -1,3 +1,4 @@
+double sc_weapon_statistic(const sc_weapon_config *wc, const sc_weapon_info *info,
                            const sc_player *p, sc_weapon_stat statistic) {
 /* sc_weapon_statistic
    Calculate various weapon statistics used in AI purchasing.

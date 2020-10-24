@@ -1,3 +1,4 @@
+  char *
 tio_keyrep(key)
   int key;
 {

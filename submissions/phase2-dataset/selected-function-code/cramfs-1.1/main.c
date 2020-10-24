@@ -1,3 +1,4 @@
+int main(int argc, char **argv)
 {
 	struct stat st;		/* used twice... */
 	struct entry *root_entry;

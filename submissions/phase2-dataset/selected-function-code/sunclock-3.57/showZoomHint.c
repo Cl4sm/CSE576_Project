@@ -1,3 +1,4 @@
+void
 showZoomHint(but_pos)
 int but_pos;
 {

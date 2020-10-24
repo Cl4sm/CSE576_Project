@@ -1,3 +1,4 @@
+void
 free_multipath (struct multipath * mpp, enum free_path_mode free_paths)
 {
 	if (!mpp)

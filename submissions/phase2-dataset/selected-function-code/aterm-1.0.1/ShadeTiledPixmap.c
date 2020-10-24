@@ -1,3 +1,4 @@
+void ShadeTiledPixmap(Pixmap src, Pixmap trg, int src_w, int src_h, int x, int y, int w, int h, GC gc, ShadingInfo* shading)
 {
   int tile_x, tile_y, left_w, bott_h;
 

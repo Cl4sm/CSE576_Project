@@ -1,3 +1,4 @@
+static u_int8_t buildroute(char *data) {
 	char *data_out = data;
 	char *data_in = data;
 	char *next;

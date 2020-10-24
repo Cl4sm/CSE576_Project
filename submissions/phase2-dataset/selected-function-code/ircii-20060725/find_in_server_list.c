@@ -1,3 +1,4 @@
+extern	int
 find_in_server_list(server, port, nick)
 	u_char	*server;
 	int	port;

@@ -1,3 +1,4 @@
+void drawCycle(Player *p, PlayerVisual *pV, int lod, int drawTurn) {
   Mesh *cycle = lightcycle[lod];
 
   unsigned int spoke_time = game2->time.current - pV->spoke_time;

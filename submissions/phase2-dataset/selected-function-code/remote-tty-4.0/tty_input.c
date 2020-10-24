@@ -1,3 +1,4 @@
+static void
 tty_input(int fd) {
 	static enum {base, need_cr, tilde} state = base;
 	u_char buf[1];

@@ -1,3 +1,4 @@
+void
 Usage()
 {
 #define SP		"\t"

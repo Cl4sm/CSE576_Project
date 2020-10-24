@@ -1,3 +1,4 @@
+static int engrid_cell(scenedef * scene, int boundthresh, grid * gold, gridindex *index) {
   vector gmin, gmax, gsize;
   flt len;
   int numobj, numcbrt, xs, ys, zs;

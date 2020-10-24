@@ -1,3 +1,4 @@
+int QWKOffLine (bytes, fd)
 int bytes;
 FILE *fd;
 /*

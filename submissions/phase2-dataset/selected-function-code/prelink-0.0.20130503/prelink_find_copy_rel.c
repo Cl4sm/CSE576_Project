@@ -1,3 +1,4 @@
+static int
 prelink_find_copy_rel (DSO *dso, int n, struct copy_relocs *cr)
 {
   Elf_Data *data = NULL;

@@ -1,3 +1,4 @@
+int ttunlock ( char *fname )
 {
   int err = 0 ;
 

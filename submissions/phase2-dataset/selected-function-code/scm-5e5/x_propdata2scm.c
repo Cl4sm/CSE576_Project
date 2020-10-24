@@ -1,3 +1,4 @@
+SCM x_propdata2scm(type, format, nitems, data)
      Atom type;
      int format;
      unsigned long nitems;

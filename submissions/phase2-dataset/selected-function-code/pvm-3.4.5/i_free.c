@@ -1,3 +1,4 @@
+i_free(loc)
 	char *loc;		/* ptr to buffer */
 {
 	struct glob *ob;	/* freeing this object */

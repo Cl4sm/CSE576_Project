@@ -1,3 +1,4 @@
+int
 ev_remove_path (struct path *pp, struct vectors * vecs)
 {
 	struct multipath * mpp;

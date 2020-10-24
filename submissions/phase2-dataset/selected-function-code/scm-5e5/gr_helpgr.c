@@ -1,3 +1,4 @@
+SCM     gr_helpgr()
 {
         fputs( "\
 Ret   Name               nargs    args        returns\n\

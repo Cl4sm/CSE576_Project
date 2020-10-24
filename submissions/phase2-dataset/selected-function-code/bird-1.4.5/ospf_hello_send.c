@@ -1,3 +1,4 @@
+void
 ospf_hello_send(struct ospf_iface *ifa, int kind, struct ospf_neighbor *dirn)
 {
   struct ospf_hello_packet *pkt;

@@ -1,3 +1,4 @@
+void
 val_format(struct f_val v, buffer *buf)
 {
   char buf2[1024];

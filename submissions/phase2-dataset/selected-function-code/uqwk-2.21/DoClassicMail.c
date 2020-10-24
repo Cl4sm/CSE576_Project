@@ -1,3 +1,4 @@
+int DoClassicMail ()
 {
 	struct mail_ent *mailp;
 	struct conf_ent *cp;

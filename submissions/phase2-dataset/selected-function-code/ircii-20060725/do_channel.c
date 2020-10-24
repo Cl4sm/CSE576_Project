@@ -1,3 +1,4 @@
+u_char *
 do_channel(chan, force)
 	u_char	*chan;
 	int force;

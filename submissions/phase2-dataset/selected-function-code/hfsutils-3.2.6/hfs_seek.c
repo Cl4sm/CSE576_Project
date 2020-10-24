@@ -1,3 +1,4 @@
+unsigned long hfs_seek(hfsfile *file, long offset, int from)
 {
   unsigned long *lglen, newpos;
 

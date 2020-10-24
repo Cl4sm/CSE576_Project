@@ -1,3 +1,4 @@
+bool sc_shield_get_reflection(sc_config *c, sc_player *p, int traj_flags,
                               double *x, double *y, double *velx, double *vely) {
 /* sc_shield_get_reflection
    Find the new reflection in velocity of a missile off a force shield. */

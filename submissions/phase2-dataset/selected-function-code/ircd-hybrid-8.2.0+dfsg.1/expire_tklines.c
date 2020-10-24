@@ -1,3 +1,4 @@
+static void
 expire_tklines(dlink_list *tklist)
 {
   dlink_node *ptr = NULL, *ptr_next = NULL;

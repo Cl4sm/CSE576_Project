@@ -1,3 +1,4 @@
+SCM scm_scope_trace(env)
      SCM env;
 {
   SCM ef, file = UNDEFINED;

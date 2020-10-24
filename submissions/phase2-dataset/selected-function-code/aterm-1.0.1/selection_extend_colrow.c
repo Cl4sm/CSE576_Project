@@ -1,3 +1,4 @@
+void
 selection_extend_colrow(int col, int row, int button3, int buttonpress, int clickchange)
 {
     int             end_col;

@@ -1,3 +1,4 @@
+void
 userhost_returned(from, ArgList)
 	u_char	*from,
 		**ArgList;

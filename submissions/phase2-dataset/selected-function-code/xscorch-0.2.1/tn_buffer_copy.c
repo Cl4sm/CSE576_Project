@@ -1,3 +1,4 @@
+bool tn_buffer_copy(byte *dst, byte **src, size_t *cur, int *avl, int len) {
 /*
  * tn_buffer_copy
  * Copy src to dst until cur becomes len unless not enough avl.

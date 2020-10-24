@@ -1,3 +1,4 @@
+static struct mpnh *
 nl_parse_multipath(struct krt_proto *p, struct rtattr *ra)
 {
   /* Temporary buffer for multicast nexthops */

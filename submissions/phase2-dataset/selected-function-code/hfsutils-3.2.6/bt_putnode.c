@@ -1,3 +1,4 @@
+int bt_putnode(node *np)
 {
   btree *bt = np->bt;
   block *bp = &np->data;

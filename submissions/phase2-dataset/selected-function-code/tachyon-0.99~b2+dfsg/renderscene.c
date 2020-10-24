@@ -1,3 +1,4 @@
+void renderscene(scenedef * scene) {
   flt runtime;
   rt_timerhandle rtth; /* render time timer handle */
 

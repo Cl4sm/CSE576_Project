@@ -1,3 +1,4 @@
+void PWGetUnzoomedPixmap(Widget w, Pixmap *pixmap, Pixmap *pixmap_mask)
 #else
 void PWGetUnzoomedPixmap(w, pixmap, pixmap_mask)
      Widget w;

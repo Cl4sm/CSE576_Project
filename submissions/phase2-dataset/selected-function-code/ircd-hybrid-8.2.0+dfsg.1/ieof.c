@@ -1,3 +1,4 @@
+static int
 ieof(void)
 {
   /* log(L_NOTICE, "return from include stack!"); */

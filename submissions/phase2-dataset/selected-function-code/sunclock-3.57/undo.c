@@ -1,3 +1,4 @@
+void undo()
 {
 		/* dont undo nothing, but say nothing is unchanged */
 		if(undone) { bell(); return; }

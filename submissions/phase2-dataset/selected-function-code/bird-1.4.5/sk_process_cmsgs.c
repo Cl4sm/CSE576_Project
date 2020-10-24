@@ -1,3 +1,4 @@
+static void
 sk_process_cmsgs(sock *s, struct msghdr *msg)
 {
   struct cmsghdr *cm;

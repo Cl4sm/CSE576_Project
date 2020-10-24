@@ -1,3 +1,4 @@
+reg_class *reg_class_new(reg_class **classes, const char *name) {
 /* reg_class_new
    Creates a new block class object.  Each block class holds the
    list of variables and their data types, for the given class.

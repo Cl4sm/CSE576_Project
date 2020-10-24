@@ -1,3 +1,4 @@
+void playerCamera(PlayerVisual *pV, Player *p) {
   float dest[3];
   float tdest[3];
   float phi, chi, r;

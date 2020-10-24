@@ -1,3 +1,4 @@
+void enterGame(void) { /* called when game mode is entered */
   updateSettingsCache();
 
   SystemHidePointer();

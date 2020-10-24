@@ -1,3 +1,4 @@
+int warn_on_duplicates(vector uniques, char *str)
 {
 	char *tmp;
 	int i;

@@ -1,3 +1,4 @@
+int
 exectasks(mp, rmp, schtid)
 	struct pmsg *mp;		/* the request message */
 	struct pmsg *rmp;		/* reply message blank */

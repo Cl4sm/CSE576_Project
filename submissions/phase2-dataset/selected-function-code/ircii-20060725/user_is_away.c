@@ -1,3 +1,4 @@
+void
 user_is_away(from, ArgList)
 	u_char	*from,
 		**ArgList;

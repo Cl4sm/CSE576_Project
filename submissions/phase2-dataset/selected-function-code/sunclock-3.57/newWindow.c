@@ -1,3 +1,4 @@
+Window
 newWindow(Context, Geom, num)
 struct Sundata * Context;
 struct Geometry * Geom;

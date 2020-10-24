@@ -1,3 +1,4 @@
+extern int
 add_feature (char **f, char *n)
 {
 	int c = 0, d, l;

@@ -1,3 +1,4 @@
+static void
 rt_notify_accepted(struct announce_hook *ah, net *net, rte *new_changed, rte *old_changed, rte *before_old,
 		   ea_list *tmpa, int feed)
 {

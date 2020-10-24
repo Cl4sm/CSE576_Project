@@ -1,3 +1,4 @@
+static int rw_track(struct params *fd, int cylinder, int head, int mode)
 {
 	int i;
 	int cur_sector;

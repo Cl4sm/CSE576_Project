@@ -1,3 +1,4 @@
+static void _sc_land_setup_apply_gtk(__libj_unused ScDialog *dlg, sc_land_setup_data_gtk *setup) {
 
    sc_land *land = setup->land;
 

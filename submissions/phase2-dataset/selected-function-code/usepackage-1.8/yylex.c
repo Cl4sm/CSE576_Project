@@ -1,3 +1,4 @@
+YY_DECL
 	{
 	register yy_state_type yy_current_state;
 	register char *yy_cp, *yy_bp;

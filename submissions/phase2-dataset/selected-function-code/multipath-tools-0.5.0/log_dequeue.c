@@ -1,3 +1,4 @@
+int log_dequeue (void * buff)
 {
 	struct logmsg * src = (struct logmsg *)la->head;
 	struct logmsg * dst = (struct logmsg *)buff;

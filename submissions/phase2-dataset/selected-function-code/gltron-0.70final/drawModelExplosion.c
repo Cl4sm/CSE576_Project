@@ -1,3 +1,4 @@
+void drawModelExplosion(Mesh *pMesh, float fRadius) {
   int i, j, k;
 #define EXP_VECTORS 10
   float vectors[][3] = {

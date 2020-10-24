@@ -1,3 +1,4 @@
+int readline ( IFILE *f, short *runs, int *pels )
 {
   int nr = 0, nb ;
   uchar bits [ MAXBITS ] ;

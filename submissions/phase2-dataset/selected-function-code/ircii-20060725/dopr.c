@@ -1,3 +1,4 @@
+static void
 dopr(char *buffer, size_t maxlen, size_t *retlen, const char *format,
 	va_list args)
 {

@@ -1,3 +1,4 @@
+void
 end_of_whois(from, ArgList)
 	u_char	*from;
 	u_char	**ArgList;

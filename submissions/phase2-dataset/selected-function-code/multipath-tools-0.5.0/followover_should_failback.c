@@ -1,3 +1,4 @@
+static int
 followover_should_failback(struct path * pp)
 {
 	struct pathgroup * pgp;

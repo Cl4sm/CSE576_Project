@@ -1,3 +1,4 @@
+static SCM m_body(xorig, env, ctxt)
      SCM xorig, env, ctxt;
 {
   SCM form, denv = env, x = xorig, defs = EOL;

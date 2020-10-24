@@ -1,3 +1,4 @@
+int
 assemble_map (struct multipath * mp, char * params, int len)
 {
 	int i, j;

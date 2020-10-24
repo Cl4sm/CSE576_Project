@@ -1,3 +1,4 @@
+  static long
 he_undo_command(struct he_s *hedit, struct he_command_s *command)
   /* Undo the compound command `command'.  The return value is the position
    * of the last change made.

@@ -1,3 +1,4 @@
+void
 pk_free(pp)
 	struct pkt *pp;
 {

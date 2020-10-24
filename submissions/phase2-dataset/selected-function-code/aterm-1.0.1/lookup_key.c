@@ -1,3 +1,4 @@
+void
 lookup_key(XEvent * ev)
 {
     static int      numlock_state = 0;

@@ -1,3 +1,4 @@
+void drawFPS(Visual *d) {
 #define FPS_HSIZE 20
   /* draws FPS in upper left corner of Display d */
   static int fps_h[FPS_HSIZE];

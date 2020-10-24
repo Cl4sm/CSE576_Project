@@ -1,3 +1,4 @@
+void
 sl_free(slab *s, void *oo)
 {
   struct sl_obj *o = SKIP_BACK(struct sl_obj, u.data, oo);

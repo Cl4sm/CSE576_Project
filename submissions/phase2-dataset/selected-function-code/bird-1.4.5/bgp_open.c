@@ -1,3 +1,4 @@
+static int
 bgp_open(struct bgp_proto *p)
 {
   struct config *cfg = p->cf->c.global;

@@ -1,3 +1,4 @@
+static void
 add_nameserver(const char *arg)
 {
   struct addrinfo hints, *res;

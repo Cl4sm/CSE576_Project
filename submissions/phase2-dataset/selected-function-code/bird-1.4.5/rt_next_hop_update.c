@@ -1,3 +1,4 @@
+static void
 rt_next_hop_update(rtable *tab)
 {
   struct fib_iterator *fit = &tab->nhu_fit;

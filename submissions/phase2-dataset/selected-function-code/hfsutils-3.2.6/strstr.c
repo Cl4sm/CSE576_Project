@@ -1,3 +1,4 @@
+char *strstr(const char *haystack, const char *needle)
 {
   register const char *hptr, *nptr;
 

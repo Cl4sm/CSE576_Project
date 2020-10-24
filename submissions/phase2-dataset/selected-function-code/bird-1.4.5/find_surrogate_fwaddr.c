@@ -1,3 +1,4 @@
+static inline ip_addr
 find_surrogate_fwaddr(struct ospf_area *oa)
 {
   struct proto_ospf *po = oa->po;

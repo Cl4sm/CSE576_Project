@@ -1,3 +1,4 @@
+int
 dm_remove_partmaps (const char * mapname, int need_sync)
 {
 	struct dm_task *dmt;

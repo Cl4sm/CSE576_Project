@@ -1,3 +1,4 @@
+static void
 wait_for_write(int fd)
 {
   while (1)

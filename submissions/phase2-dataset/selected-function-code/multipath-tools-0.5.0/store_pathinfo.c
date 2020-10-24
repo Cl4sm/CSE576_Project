@@ -1,3 +1,4 @@
+int
 store_pathinfo (vector pathvec, vector hwtable, struct udev_device *udevice,
 		int flag, struct path **pp_ptr)
 {

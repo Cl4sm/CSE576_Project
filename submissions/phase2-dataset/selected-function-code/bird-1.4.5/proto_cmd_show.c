@@ -1,3 +1,4 @@
+void
 proto_cmd_show(struct proto *p, unsigned int verbose, int cnt)
 {
   byte buf[256], tbuf[TM_DATETIME_BUFFER_SIZE];

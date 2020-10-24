@@ -1,3 +1,4 @@
+SCM l_pipe()
 {
   int fd[2], ret;
   FILE *f_rd, *f_wt;

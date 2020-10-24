@@ -1,3 +1,4 @@
+NOEXPORT int init_compression(GLOBAL_OPTIONS *global) {
 #ifndef OPENSSL_NO_COMP
     SSL_COMP *comp;
     STACK_OF(SSL_COMP) *ssl_comp_methods;

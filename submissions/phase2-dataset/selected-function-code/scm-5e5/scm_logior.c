@@ -1,3 +1,4 @@
+SCM scm_logior(x, y)
      SCM x, y;
 {
   if (UNBNDP(y)) {

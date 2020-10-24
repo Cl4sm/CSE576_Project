@@ -1,3 +1,4 @@
+static int
 tor_log2(uint64_t u64)
 {
   int r = 0;

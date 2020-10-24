@@ -1,3 +1,4 @@
+struct frag *
 fr_snew(cp, len)
 	char *cp;	/* buffer */
 	int len;	/* buffer size */

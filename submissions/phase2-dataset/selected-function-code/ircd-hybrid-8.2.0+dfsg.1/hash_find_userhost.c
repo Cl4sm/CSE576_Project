@@ -1,3 +1,4 @@
+struct UserHost *
 hash_find_userhost(const char *host)
 {
   unsigned int hashv = strhash(host);

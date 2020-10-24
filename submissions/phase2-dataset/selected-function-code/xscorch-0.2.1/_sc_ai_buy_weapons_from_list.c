@@ -1,3 +1,4 @@
+static bool _sc_ai_buy_weapons_from_list(const sc_config *c, sc_player *p, int *budget, const int *ordering) {
 /* sc_ai_buy_weapons_from_list
    Buys weapons from a presorted list, beginning at the _end_ of the list.  */
 

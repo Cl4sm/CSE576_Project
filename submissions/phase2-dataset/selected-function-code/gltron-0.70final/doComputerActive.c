@@ -1,3 +1,4 @@
+void doComputerActive(int player, int target, AI_Distances *distances) {
 	Data *data = game->player[player].data;
 	AI *ai = game->player[player].ai;
 

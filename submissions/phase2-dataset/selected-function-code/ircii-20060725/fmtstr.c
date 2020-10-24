@@ -1,3 +1,4 @@
+static void
 fmtstr(char *buffer, size_t *currlen, size_t maxlen, char *value,
 	int min, int max, int flags)
 {

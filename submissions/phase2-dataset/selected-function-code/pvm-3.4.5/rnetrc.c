@@ -1,3 +1,4 @@
+static void
 rnetrc(const char *host, char **aname, char **apass)
 {
 	char *hdir, buf[BUFSIZ];

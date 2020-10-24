@@ -1,3 +1,4 @@
+int
 msendrecv(other, code, context)
 	int other;				/* dst, src tid */
 	int code;				/* message tag */

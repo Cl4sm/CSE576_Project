@@ -1,3 +1,4 @@
+void set_nonblock(int fd, unsigned long nonblock) {
 #if defined F_GETFL && defined F_SETFL && defined O_NONBLOCK && !defined __INNOTEK_LIBC__
     int err, flags;
 

@@ -1,3 +1,4 @@
+variable_t* update_var(variable_t* evar, variable_t* vvar)
 {
    linked_list* testlist;
 

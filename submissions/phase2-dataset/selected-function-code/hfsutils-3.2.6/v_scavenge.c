@@ -1,3 +1,4 @@
+int v_scavenge(hfsvol *vol)
 {
   block *vbm = vol->vbm;
   node n;

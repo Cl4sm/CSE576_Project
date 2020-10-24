@@ -1,3 +1,4 @@
+void unbind_ports(void) {
     SERVICE_OPTIONS *opt;
 #ifdef HAVE_STRUCT_SOCKADDR_UN
     struct stat st; /* buffer for stat */

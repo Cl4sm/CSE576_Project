@@ -1,3 +1,4 @@
+static void
 server_send(char *cmd)
 {
   int l = strlen(cmd);

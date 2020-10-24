@@ -1,3 +1,4 @@
+void
 bgp_conn_enter_established_state(struct bgp_conn *conn)
 {
   struct bgp_proto *p = conn->bgp;

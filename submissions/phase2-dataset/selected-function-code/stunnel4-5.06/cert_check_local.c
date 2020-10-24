@@ -1,3 +1,4 @@
+NOEXPORT int cert_check_local(X509_STORE_CTX *callback_ctx) {
     X509 *cert=X509_STORE_CTX_get_current_cert(callback_ctx);
 #if OPENSSL_VERSION_NUMBER>=0x10000000L
     STACK_OF(X509) *sk=X509_STORE_get1_certs(callback_ctx,

@@ -1,3 +1,4 @@
+static int
 mips_arch_prelink_conflict (DSO *dso, struct prelink_info *info)
 {
   struct mips_global_got_iterator ggi;

@@ -1,3 +1,4 @@
+static void
 ospf_get_route_info(rte * rte, byte * buf, ea_list * attrs UNUSED)
 {
   char *type = "<bug>";

@@ -1,3 +1,4 @@
+void sc_window_tank_move_gtk(sc_window_gtk *w, sc_player *p) {
 
    char buf[SC_GTK_STRING_BUFFER];
    GtkWidget *console;

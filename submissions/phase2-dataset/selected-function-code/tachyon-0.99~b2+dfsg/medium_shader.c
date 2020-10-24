@@ -1,3 +1,4 @@
+color medium_shader(ray * incident) {
   color col, diffuse, phongcol; 
   shadedata shadevars;
   flt inten;

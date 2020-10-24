@@ -1,3 +1,4 @@
+int
 schentry(mp)
 	struct pmsg *mp;
 {

@@ -1,3 +1,4 @@
+SCM sysintern(name, val)
      const char *name;
      SCM val;
 {

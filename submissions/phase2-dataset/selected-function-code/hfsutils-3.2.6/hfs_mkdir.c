@@ -1,3 +1,4 @@
+int hfs_mkdir(hfsvol *vol, const char *path)
 {
   CatDataRec data;
   unsigned long parid;

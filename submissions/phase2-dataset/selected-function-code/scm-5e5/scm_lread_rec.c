@@ -1,3 +1,4 @@
+static SCM scm_lread_rec(tok_buf, port)
      SCM tok_buf;
      SCM port;
 {

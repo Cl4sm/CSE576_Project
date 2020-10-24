@@ -1,3 +1,4 @@
+NOEXPORT int main_unix(int argc, char* argv[]) {
 #if !defined(__vms) && !defined(USE_OS2)
     int fd;
 

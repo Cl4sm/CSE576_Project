@@ -1,3 +1,4 @@
+void
 send_queued_all(void)
 {
   dlink_node *ptr;

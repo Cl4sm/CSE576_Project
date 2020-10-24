@@ -1,3 +1,4 @@
+void
 processStringEntry(keysym, entry)
 KeySym keysym;
 TextEntry *entry;

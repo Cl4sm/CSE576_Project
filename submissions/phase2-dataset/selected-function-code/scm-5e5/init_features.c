@@ -1,3 +1,4 @@
+void init_features()
 {
   loc_features = &CDR(sysintern("slib:features", EOL));
   init_iprocs(subr0s, tc7_subr_0);

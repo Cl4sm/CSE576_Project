@@ -1,3 +1,4 @@
+void
 updateImage(Context)
 struct Sundata * Context;
 {

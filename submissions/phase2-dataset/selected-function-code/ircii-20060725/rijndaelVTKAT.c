@@ -1,3 +1,4 @@
+static void rijndaelVTKAT (FILE *fp, int keyLength, int blockLength)
 {
 	int i;
 	BYTE block[4*MAXBC];

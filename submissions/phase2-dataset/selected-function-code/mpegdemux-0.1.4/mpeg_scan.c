@@ -1,3 +1,4 @@
+int mpeg_scan (FILE *inp, FILE *out)
 {
 	int          r;
 	unsigned     i;

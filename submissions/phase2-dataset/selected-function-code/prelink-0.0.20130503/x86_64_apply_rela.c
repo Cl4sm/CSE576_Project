@@ -1,3 +1,4 @@
+static int
 x86_64_apply_rela (struct prelink_info *info, GElf_Rela *rela, char *buf)
 {
   GElf_Addr value;

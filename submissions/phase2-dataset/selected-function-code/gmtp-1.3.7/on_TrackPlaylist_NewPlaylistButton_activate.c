@@ -1,3 +1,4 @@
+void on_TrackPlaylist_NewPlaylistButton_activate(GtkWidget *button, gpointer user_data) {
     gchar *playlistname = NULL;
     gint combobox_entries = 0;
 

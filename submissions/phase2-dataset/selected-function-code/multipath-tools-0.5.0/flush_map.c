@@ -1,3 +1,4 @@
+static int
 flush_map(struct multipath * mpp, struct vectors * vecs)
 {
 	/*

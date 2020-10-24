@@ -1,3 +1,4 @@
+void show_top()
 {
 	int i;
 	char tbuf[NLEN];

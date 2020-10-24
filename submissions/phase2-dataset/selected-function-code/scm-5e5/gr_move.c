@@ -1,3 +1,4 @@
+SCM     gr_move( S )
 SCM     S;
 {
 float   xf, yf;

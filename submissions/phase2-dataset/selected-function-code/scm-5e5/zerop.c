@@ -1,3 +1,4 @@
+SCM zerop(z)
      SCM z;
 {
 #ifdef FLOATS

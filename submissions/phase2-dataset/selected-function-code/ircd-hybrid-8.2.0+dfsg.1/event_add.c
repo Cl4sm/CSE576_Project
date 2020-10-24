@@ -1,3 +1,4 @@
+void
 event_add(struct event *ev, void *data)
 {
   dlink_node *node;

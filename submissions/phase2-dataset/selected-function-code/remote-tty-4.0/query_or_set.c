@@ -1,3 +1,4 @@
+static void
 query_or_set(int fd, int ch) {
 	int set, new, save_nonblock;
 	char buf[64];

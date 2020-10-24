@@ -1,3 +1,4 @@
+gchar * ID3_getFrameText(struct id3_tag *tag, char *frame_name) {
     const id3_ucs4_t *id3_string;
     struct id3_frame *id3_frame;
     union id3_field *id3_field;

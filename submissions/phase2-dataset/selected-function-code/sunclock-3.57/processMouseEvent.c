@@ -1,3 +1,4 @@
+void
 processMouseEvent(win, x, y, button, evtype)
 Window  win;
 int     x, y;

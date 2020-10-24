@@ -1,3 +1,4 @@
+SCM x_window_ref(oargs)
      SCM oargs;
 {
   SCM swn, args = oargs, sval = BOOL_F;

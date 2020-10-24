@@ -1,3 +1,4 @@
+void lputs(s, port)
      const char *s;
      SCM port;
 {

@@ -1,3 +1,4 @@
+void parse_arg(char *arg1, char *arg2)
 {
 	if(*arg1=='-') {
 		if (!strcasecmp(arg1, "-f"))

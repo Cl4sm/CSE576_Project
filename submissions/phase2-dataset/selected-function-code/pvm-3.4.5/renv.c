@@ -1,3 +1,4 @@
+static void
 renv(const char *host, char **aname, char **apass)
 {
 	register char *cp;

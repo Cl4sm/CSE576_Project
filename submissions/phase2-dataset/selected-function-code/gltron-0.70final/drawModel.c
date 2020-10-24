@@ -1,3 +1,4 @@
+void drawModel(Mesh *pMesh, MeshType iType) {
   int i;
   int iFaceSize = 0;
   GLenum primitive = GL_TRIANGLES;

@@ -1,3 +1,4 @@
+int
 pvm_pkulong(np, cnt, std)
 	unsigned long *np;
 	int cnt;

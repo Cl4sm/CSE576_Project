@@ -1,3 +1,4 @@
+int
 check_client(struct Client *source_p)
 {
   int i;

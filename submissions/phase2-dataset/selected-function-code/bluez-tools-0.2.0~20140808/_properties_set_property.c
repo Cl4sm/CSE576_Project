@@ -1,3 +1,4 @@
+static void _properties_set_property(GObject *object, guint property_id, const GValue *value, GParamSpec *pspec)
 {
     Properties *self = PROPERTIES(object);
     GError *error = NULL;

@@ -1,3 +1,4 @@
+int hfs_nparts(const char *path)
 {
   hfsvol vol;
   int nparts, found;

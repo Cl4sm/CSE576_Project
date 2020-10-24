@@ -1,3 +1,4 @@
+loclstout(tp)
 	struct task *tp;
 {
 	int n;

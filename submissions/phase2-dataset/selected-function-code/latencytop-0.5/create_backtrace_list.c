@@ -1,3 +1,4 @@
+static GtkWidget *create_backtrace_list(void)
 {
 	GtkWidget *scrollw;
 	GtkCellRenderer *renderer;

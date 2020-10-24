@@ -1,3 +1,4 @@
+int
 pvm_psend(tid, tag, cp, len, dt)
 	int tid;
 	int tag;

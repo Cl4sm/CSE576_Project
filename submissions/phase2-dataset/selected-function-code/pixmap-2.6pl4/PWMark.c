@@ -1,3 +1,4 @@
+void PWMark(Widget w, Position from_x, Position from_y, 
 	    Position to_x, Position to_y)
 #else
 void PWMark(w, from_x, from_y, to_x, to_y)

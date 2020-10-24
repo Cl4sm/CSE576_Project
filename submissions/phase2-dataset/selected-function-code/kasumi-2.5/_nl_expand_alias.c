@@ -1,3 +1,4 @@
+const char *
 _nl_expand_alias (name)
     const char *name;
 {

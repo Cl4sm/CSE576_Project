@@ -1,3 +1,4 @@
+static void do_symlink(char *path, struct cramfs_inode *i)
 {
 	unsigned long offset = i->offset << 2;
 	unsigned long curr = offset + 4;

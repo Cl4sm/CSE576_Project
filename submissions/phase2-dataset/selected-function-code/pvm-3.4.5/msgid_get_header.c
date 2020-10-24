@@ -1,3 +1,4 @@
+static struct msgid *
 msgid_get_header()
 {
 	struct msgid *mp;

@@ -1,3 +1,4 @@
+void
 check_for_exit(src)
 	int src;
 {

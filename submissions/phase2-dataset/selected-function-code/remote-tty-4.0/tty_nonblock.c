@@ -1,3 +1,4 @@
+int
 tty_nonblock(int tty, int nonblock) {
 	int old, new;
 

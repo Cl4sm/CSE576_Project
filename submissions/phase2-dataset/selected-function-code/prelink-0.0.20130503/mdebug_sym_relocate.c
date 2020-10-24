@@ -1,3 +1,4 @@
+static inline int
 mdebug_sym_relocate (unsigned int st, unsigned int sc)
 {
   switch (sc)

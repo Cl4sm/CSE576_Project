@@ -1,3 +1,4 @@
+int sc_expl_cache_new(sc_window *w_, int radius, sc_explosion_type type) {
 /* sc_expl_cache_new
    Creates a new explosion with these characteristics, and returns its cache
    ID.  Note, if an explosion of these characteristics already exists in the

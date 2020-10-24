@@ -1,3 +1,4 @@
+int
 valid_wild_card_simple(const char *data)
 {
   const unsigned char *p = (const unsigned char *)data;

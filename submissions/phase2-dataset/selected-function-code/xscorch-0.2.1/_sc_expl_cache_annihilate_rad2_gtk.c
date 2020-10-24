@@ -1,3 +1,4 @@
+static void _sc_expl_cache_annihilate_rad2_gtk(GdkImage *image, GdkColor *gradient, 
                                                int gsize, int radius) {
 /* sc_expl_annihilate_rad2_gtk
    Annihilate a region centered at (cx,cy) for a radius r.  This function

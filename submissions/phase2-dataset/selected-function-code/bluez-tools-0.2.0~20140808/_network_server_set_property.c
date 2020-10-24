@@ -1,3 +1,4 @@
+static void _network_server_set_property(GObject *object, guint property_id, const GValue *value, GParamSpec *pspec)
 {
 	NetworkServer *self = NETWORK_SERVER(object);
 	GError *error = NULL;

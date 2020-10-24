@@ -1,3 +1,4 @@
+  static void
 he_delete(struct he_s *hedit, long count, int dont_save)
   /* If `dont_save == 1' the data deleted is not copied to the `kill_buffer'.
    */

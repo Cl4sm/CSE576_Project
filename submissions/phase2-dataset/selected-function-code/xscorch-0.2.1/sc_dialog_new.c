@@ -1,3 +1,4 @@
+GtkWidget *sc_dialog_new(const char *title, const char *msgtext, guint flags) {
 /* sc_dialog_new
    Create a new dialog window, with the indicated title, message text, and
    flags.  If title or msgtext are NULL, then they are omitted from the

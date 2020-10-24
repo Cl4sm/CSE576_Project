@@ -1,3 +1,4 @@
+int ZipArticle (art_fd, bytes, np)
 FILE *art_fd;
 int bytes;
 struct nrc_ent *np;

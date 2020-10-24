@@ -1,3 +1,4 @@
+static void print_global_list(void)
 {
 	GList *item;
 	struct latency_line *line;

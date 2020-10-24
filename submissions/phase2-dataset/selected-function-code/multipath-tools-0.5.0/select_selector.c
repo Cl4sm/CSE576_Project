@@ -1,3 +1,4 @@
+extern int
 select_selector (struct multipath * mp)
 {
 	if (mp->mpe && mp->mpe->selector) {

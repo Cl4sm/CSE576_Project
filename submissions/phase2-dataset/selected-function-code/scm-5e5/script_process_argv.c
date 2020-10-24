@@ -1,3 +1,4 @@
+char **script_process_argv(argc, argv)
      int argc;
      const char **argv;
 {

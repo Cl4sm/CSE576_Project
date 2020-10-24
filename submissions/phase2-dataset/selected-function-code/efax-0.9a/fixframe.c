@@ -1,3 +1,4 @@
+int fixframe ( uchar *buf, int n, TFILE *f )
 {
   int i;
 

@@ -1,3 +1,4 @@
+int
 tid_new()
 {
 	static int lastind = 0;		/* last local-part assigned */

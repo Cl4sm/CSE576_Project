@@ -1,3 +1,4 @@
+void free_prio (struct prio * p)
 {
 	if (!p)
 		return;

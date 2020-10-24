@@ -1,3 +1,4 @@
+char *cs_macroman(char *lstr, int *lenptr)
 {
   int ilen, olen, i;
   char *macroman, *ptr;

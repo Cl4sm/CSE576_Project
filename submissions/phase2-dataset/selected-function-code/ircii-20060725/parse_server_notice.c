@@ -1,3 +1,4 @@
+static	void
 parse_server_notice(from, to, line)
 	u_char	*from,
 		*to,

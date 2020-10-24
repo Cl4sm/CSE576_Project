@@ -1,3 +1,4 @@
+int os2_spawn( char *path, char **argv, int nenv, char **env, 
                char *debugger)
 //-----------------------------------------------------------
  { char *Arg[1024],*Env[1024],**d,**s,*idstr="PVMEPID=",buf[32];

@@ -1,3 +1,4 @@
+void PWRequestSelection(Widget w, Time time, Boolean wait)
 #else
 void PWRequestSelection(w, time, wait)
     Widget w;

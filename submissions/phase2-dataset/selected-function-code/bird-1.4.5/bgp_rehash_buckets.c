@@ -1,3 +1,4 @@
+static void
 bgp_rehash_buckets(struct bgp_proto *p)
 {
   struct bgp_bucket **old = p->bucket_hash;

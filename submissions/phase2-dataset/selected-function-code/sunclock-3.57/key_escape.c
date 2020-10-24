@@ -1,3 +1,4 @@
+void key_escape(int key)
 {
 	switch(tolower(key)) {
 		case ' ':

@@ -1,3 +1,4 @@
+static	void
 delete_other_windows()
 {
 	Window	*tmp,

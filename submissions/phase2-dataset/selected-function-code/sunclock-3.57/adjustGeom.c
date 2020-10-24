@@ -1,3 +1,4 @@
+void
 adjustGeom(Context, which)
 struct Sundata * Context;
 int which;

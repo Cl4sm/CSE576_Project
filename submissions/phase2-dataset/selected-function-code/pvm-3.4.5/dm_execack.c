@@ -1,3 +1,4 @@
+int
 dm_execack(hp, mp)
 	struct hostd *hp;
 	struct pmsg *mp;

@@ -1,3 +1,4 @@
+int
 run_command(char *argv[])
 {
     ttymode_t       tio;

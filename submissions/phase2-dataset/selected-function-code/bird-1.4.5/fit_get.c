@@ -1,3 +1,4 @@
+struct fib_node *
 fit_get(struct fib *f, struct fib_iterator *i)
 {
   struct fib_node *n;

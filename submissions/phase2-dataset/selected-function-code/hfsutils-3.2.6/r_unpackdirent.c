@@ -1,3 +1,4 @@
+void r_unpackdirent(unsigned long parid, const char *name,
 		    const CatDataRec *data, hfsdirent *ent)
 {
   strcpy(ent->name, name);

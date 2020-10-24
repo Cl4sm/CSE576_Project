@@ -1,3 +1,4 @@
+void
 showUrbanHint(str)
 char * str;
 {

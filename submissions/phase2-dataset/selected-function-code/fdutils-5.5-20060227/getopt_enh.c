@@ -1,3 +1,4 @@
+int getopt_enh(int argc, 
 	       char **argv, 
 	       struct enh_options *eo, 
 	       int *longind,

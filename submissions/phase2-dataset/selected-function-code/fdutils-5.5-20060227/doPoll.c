@@ -1,3 +1,4 @@
+int doPoll(int fd,
 	   struct floppy_drive_params *dpr,
 	   struct floppy_drive_struct *state)
 {

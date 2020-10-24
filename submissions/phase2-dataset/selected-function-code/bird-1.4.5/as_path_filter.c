@@ -1,3 +1,4 @@
+struct adata *
 as_path_filter(struct linpool *pool, struct adata *path, struct f_tree *set, u32 key, int pos)
 {
   if (!path)

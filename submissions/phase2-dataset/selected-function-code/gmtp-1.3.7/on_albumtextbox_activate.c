@@ -1,3 +1,4 @@
+void on_albumtextbox_activate(GtkComboBox *combobox, gpointer user_data) {
     gint selected = gtk_combo_box_get_active(combobox);
     gint count = 0;
     LIBMTP_album_t *albumlist = LIBMTP_Get_Album_List_For_Storage(DeviceMgr.device, DeviceMgr.devicestorage->id);

@@ -1,3 +1,4 @@
+static struct bgp_bucket *
 bgp_new_bucket(struct bgp_proto *p, ea_list *new, unsigned hash)
 {
   struct bgp_bucket *b;

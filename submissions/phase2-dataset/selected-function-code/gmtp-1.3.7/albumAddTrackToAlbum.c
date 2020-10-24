@@ -1,3 +1,4 @@
+void albumAddTrackToAlbum(LIBMTP_album_t* albuminfo, LIBMTP_track_t* trackinfo) {
     LIBMTP_album_t *album = NULL;
     LIBMTP_album_t *found_album = NULL;
     LIBMTP_album_t *album_orig = NULL;

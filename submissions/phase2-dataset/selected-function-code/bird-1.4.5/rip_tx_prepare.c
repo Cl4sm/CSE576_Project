@@ -1,3 +1,4 @@
+static int
 rip_tx_prepare(struct proto *p, struct rip_block *b, struct rip_entry *e, struct rip_interface *rif, int pos )
 {
   int metric;

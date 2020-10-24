@@ -1,3 +1,4 @@
+int
 howDark(Context, i, j)
 struct Sundata * Context;
 int i, j;

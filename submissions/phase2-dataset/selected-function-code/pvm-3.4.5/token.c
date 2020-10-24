@@ -1,3 +1,4 @@
+static int
 token()
 {
 	char *cp;

@@ -1,3 +1,4 @@
+reg_var *reg_block_resolve_container(reg *r, reg_var *v, const char *path, char *varname) {
 /* reg_block_resolve_container
    Resolve the container which holds the specified variable.
    Lookup rules are the same as for reg_block_resolve().  The

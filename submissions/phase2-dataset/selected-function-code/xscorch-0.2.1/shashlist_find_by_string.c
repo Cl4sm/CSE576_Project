@@ -1,3 +1,4 @@
+shashlist_item *shashlist_find_by_string(const shashlist *list, const char *key) {
 /* shashlist_find_by_string
    Find a shashlist item by string key. */
 

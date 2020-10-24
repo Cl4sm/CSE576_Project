@@ -1,3 +1,4 @@
+int send_cmd(int fd,struct floppy_raw_cmd *raw_cmd, char *message)
 {
 	int i;
 	int code;

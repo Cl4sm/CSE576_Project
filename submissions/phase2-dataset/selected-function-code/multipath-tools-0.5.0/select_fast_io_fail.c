@@ -1,3 +1,4 @@
+extern int
 select_fast_io_fail(struct multipath *mp)
 {
 	if (mp->hwe && mp->hwe->fast_io_fail != MP_FAST_IO_FAIL_UNSET) {

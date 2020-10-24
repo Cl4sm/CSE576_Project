@@ -1,3 +1,4 @@
+static bool _sc_ai_buy_shield_sappers(const sc_config *c, sc_player *p, int *budget) {
 /* sc_ai_buy_shield_sappers
    Buy up Shield Sappers, which have no yield,
    but AIs can use them against shielded players. */

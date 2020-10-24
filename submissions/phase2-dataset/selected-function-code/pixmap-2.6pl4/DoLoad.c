@@ -1,3 +1,4 @@
+void DoLoad()
 {
   int status;
 

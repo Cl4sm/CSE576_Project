@@ -1,3 +1,4 @@
+extern int
 snprint_defaults (char * buff, int len)
 {
 	int fwd = 0;

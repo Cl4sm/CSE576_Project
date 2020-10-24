@@ -1,3 +1,4 @@
+color sky_plane_background_texture(const ray *ry) {
   color col;
   flt IdotG = VDot(&ry->o, &ry->scene->bgtex.gradient);
   flt range = ry->scene->bgtex.gradtopval - ry->scene->bgtex.gradbotval;

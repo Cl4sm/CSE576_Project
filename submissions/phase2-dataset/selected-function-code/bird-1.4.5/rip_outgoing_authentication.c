@@ -1,3 +1,4 @@
+int
 rip_outgoing_authentication( struct proto *p, struct rip_block_auth *block, struct rip_packet *packet, int num )
 {
   struct password_item *passwd = password_find(P_CF->passwords, 1);

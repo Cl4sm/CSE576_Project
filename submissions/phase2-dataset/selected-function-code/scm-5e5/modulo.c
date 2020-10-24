@@ -1,3 +1,4 @@
+SCM modulo(x, y)
      SCM x, y;
 {
   register long yy, z;

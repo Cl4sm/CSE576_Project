@@ -1,3 +1,4 @@
+unsigned long num2ulong(num, pos, s_caller)
      SCM num;
      char *pos, *s_caller;
 {

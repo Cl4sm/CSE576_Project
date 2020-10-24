@@ -1,3 +1,4 @@
+void must_realloc_cell(z, olen, len, what)
      SCM z;
      long olen, len;
      const char *what;

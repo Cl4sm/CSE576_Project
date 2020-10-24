@@ -1,3 +1,4 @@
+int check(i, j, which)
 int i, j, which;
 {
 #define MASK -65536

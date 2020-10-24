@@ -1,3 +1,4 @@
+  static int
 tio_getch_(void)
   /* Read a character or keypad key from the keyboard.  Keypad keys
    * (like arrow keys, function keys, ...) are recognized only if the

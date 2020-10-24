@@ -1,3 +1,4 @@
+static int args2winattribs(vlu, oargs)
      XSetWindowAttributes *vlu;
      SCM oargs;
 {

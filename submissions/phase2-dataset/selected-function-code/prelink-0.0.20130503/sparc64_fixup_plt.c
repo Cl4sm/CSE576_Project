@@ -1,3 +1,4 @@
+static void
 sparc64_fixup_plt (DSO *dso, GElf_Rela *rela, GElf_Addr value)
 {
   Elf64_Sxword disp = value - rela->r_offset;

@@ -1,3 +1,4 @@
+SCM array_map(ra0, proc, lra)
      SCM ra0, proc, lra;
 {
   long narg = ilength(lra);

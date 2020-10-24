@@ -1,3 +1,4 @@
+static const char *
 check_ident_reply(char *reply)
 {
   char *token = NULL, *end = NULL;

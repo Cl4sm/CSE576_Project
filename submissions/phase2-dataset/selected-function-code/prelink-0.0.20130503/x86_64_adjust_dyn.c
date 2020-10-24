@@ -1,3 +1,4 @@
+static int
 x86_64_adjust_dyn (DSO *dso, int n, GElf_Dyn *dyn, GElf_Addr start,
 		   GElf_Addr adjust)
 {

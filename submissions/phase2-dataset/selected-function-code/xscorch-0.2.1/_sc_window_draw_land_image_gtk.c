@@ -1,3 +1,4 @@
+static void _sc_window_draw_land_image_gtk(sc_window_gtk *w, int x1, int y1, int x2, int y2) {
 /* sc_window_draw_land_image_gtk
    This code draws land using a GdkImage object (stored client-side).  I
    have found for pixel-by-pixel images, it is faster to construct a client-

@@ -1,3 +1,4 @@
+void PWLeft(Widget w)
 #else
 void PWLeft(w)
      Widget w;

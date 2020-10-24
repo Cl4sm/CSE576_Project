@@ -1,3 +1,4 @@
+void
 radv_iface_notify(struct radv_iface *ifa, int event)
 {
   struct proto_radv *ra = ifa->ra;

@@ -1,3 +1,4 @@
+static int
 mips_adjust_reloc (DSO *dso, GElf_Addr r_offset, GElf_Xword r_info,
 		   GElf_Addr start, GElf_Addr adjust, GElf_Rela *rela)
 {

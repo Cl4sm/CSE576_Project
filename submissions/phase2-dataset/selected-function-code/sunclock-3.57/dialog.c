@@ -1,3 +1,4 @@
+void dialog(int key)
 {
 	int skey;
 

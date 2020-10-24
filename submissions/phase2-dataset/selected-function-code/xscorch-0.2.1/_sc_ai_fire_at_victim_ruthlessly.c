@@ -1,3 +1,4 @@
+static const sc_player *_sc_ai_fire_at_victim_ruthlessly(const sc_config *c, sc_player *p) {
 /* sc_ai_fire_at_victim_ruthlessly
    Attack victim in AI state.  If NULL or they are dead, then behave like
    calculated_fire.  This is the "big bully" behaviour; once a victim is

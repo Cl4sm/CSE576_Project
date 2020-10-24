@@ -1,3 +1,4 @@
+static int
 bfd_shutdown(struct proto *P)
 {
   struct bfd_proto *p = (struct bfd_proto *) P;

@@ -1,3 +1,4 @@
+  int
 he_open_buffer(name, path)
   char *name;
   char *path;

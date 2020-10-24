@@ -1,3 +1,4 @@
+int ssl_configure(GLOBAL_OPTIONS *global) { /* configure global SSL settings */
 #ifdef USE_FIPS
     if(FIPS_mode()!=global->option.fips) {
         RAND_set_rand_method(NULL); /* reset RAND methods */

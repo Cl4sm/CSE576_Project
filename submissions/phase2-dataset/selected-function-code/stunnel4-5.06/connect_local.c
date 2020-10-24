@@ -1,3 +1,4 @@
+NOEXPORT int connect_local(CLI *c) { /* spawn local process */
     char *name, host[40], port[6];
     int fd[2], pid;
     X509 *peer;

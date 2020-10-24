@@ -1,3 +1,4 @@
+hfsvol *hfs_mount(const char *path, int pnum, int mode)
 {
   hfsvol *vol, *check;
 

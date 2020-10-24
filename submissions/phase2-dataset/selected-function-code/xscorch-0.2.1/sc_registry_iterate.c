@@ -1,3 +1,4 @@
+void *sc_registry_iterate(sc_registry_iter *iter) {
 /* sc_registry_iterate
    Find and return the next item in the set, if any. */
 

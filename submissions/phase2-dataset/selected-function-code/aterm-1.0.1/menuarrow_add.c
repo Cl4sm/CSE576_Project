@@ -1,3 +1,4 @@
+void
 menuarrow_add(char *string)
 {
 #ifdef MENUBAR

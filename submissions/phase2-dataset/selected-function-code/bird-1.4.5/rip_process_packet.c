@@ -1,3 +1,4 @@
+static int
 rip_process_packet( struct proto *p, struct rip_packet *packet, int num, ip_addr whotoldme, int port, struct iface *iface )
 {
   int i;

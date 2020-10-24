@@ -1,3 +1,4 @@
+char *
 strtoken(char** save, char* str, const char* fs)
 {
   char *pos = *save;  /* keep last position across calls */

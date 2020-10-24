@@ -1,3 +1,4 @@
+struct conf_ent *NewConference (name, num)
 char *name;
 int num;
 {

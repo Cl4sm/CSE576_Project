@@ -1,3 +1,4 @@
+static
 int do_copynative(Tcl_Interp *interp, hfsfile *ifile, hfsfile *ofile)
 {
   int result;

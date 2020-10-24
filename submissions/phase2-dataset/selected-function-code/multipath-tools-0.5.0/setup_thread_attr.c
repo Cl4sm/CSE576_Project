@@ -1,3 +1,4 @@
+void
 setup_thread_attr(pthread_attr_t *attr, size_t stacksize, int detached)
 {
 	if (pthread_attr_init(attr)) {

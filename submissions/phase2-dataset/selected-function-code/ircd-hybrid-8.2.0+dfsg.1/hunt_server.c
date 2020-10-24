@@ -1,3 +1,4 @@
+int
 hunt_server(struct Client *source_p, const char *command,
             const int server, const int parc, char *parv[])
 {

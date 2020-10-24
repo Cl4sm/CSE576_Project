@@ -1,3 +1,4 @@
+void sc_window_paint_circular(sc_window *w_, int centerx, int centery, int rad, int flags) {
 /* sc_window_paint_circular
    Like the above function, but this updates a circular region of the
    physical display (it will still update a rectangular region of the

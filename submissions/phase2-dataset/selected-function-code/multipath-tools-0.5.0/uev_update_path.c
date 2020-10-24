@@ -1,3 +1,4 @@
+static int
 uev_update_path (struct uevent *uev, struct vectors * vecs)
 {
 	int ro, retval = 0;

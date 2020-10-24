@@ -1,3 +1,4 @@
+int
 pvm_pkmesg(mid)
 	int mid;
 {

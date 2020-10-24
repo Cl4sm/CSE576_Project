@@ -1,3 +1,4 @@
+int
 get_asymmetric_access_state(int fd, unsigned int tpg)
 {
 	unsigned char		*buf;

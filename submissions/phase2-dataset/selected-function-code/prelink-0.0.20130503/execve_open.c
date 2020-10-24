@@ -1,3 +1,4 @@
+FILE *
 execve_open (const char *path, char *const argv[], char *const envp[])
 {
   int p[2];

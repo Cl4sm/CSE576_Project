@@ -1,3 +1,4 @@
+int hds_modular_prio (const char *dev, int fd)
 {
 	int k;
 	char vendor[9];

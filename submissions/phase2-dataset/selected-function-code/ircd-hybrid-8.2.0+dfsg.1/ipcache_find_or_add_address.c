@@ -1,3 +1,4 @@
+struct ip_entry *
 ipcache_find_or_add_address(struct irc_ssaddr *addr)
 {
   dlink_node *ptr = NULL;

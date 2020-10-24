@@ -1,3 +1,4 @@
+void
 hash_del_id(struct Client *client_p)
 {
   unsigned int hashv = strhash(client_p->id);

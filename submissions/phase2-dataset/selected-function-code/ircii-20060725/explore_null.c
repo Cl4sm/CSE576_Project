@@ -1,3 +1,4 @@
+static int
 explore_null(pai, servname, res)
 	const struct addrinfo *pai;
 	const char *servname;

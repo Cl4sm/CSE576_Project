@@ -1,3 +1,4 @@
+static void
 radv_rt_notify(struct proto *p, rtable *tbl UNUSED, net *n, rte *new, rte *old UNUSED, ea_list *attrs UNUSED)
 {
   struct proto_radv *ra = (struct proto_radv *) p;

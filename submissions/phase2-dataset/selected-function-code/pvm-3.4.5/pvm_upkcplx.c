@@ -1,3 +1,4 @@
+int
 pvm_upkcplx(xp, cnt, std)
 	float *xp;
 	int cnt;

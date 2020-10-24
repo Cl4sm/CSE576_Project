@@ -1,3 +1,4 @@
+static int
 verify_access(struct Client *client_p)
 {
   struct MaskItem *conf = NULL;

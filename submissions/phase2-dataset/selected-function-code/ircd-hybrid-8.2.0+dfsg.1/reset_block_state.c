@@ -1,3 +1,4 @@
+static void
 reset_block_state(void)
 {
   dlink_node *ptr = NULL, *ptr_next = NULL;

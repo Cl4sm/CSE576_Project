@@ -1,3 +1,4 @@
+SCM scm_top_level(initpath, toplvl_fun)
      char *initpath;
      SCM (*toplvl_fun)();
 {

@@ -1,3 +1,4 @@
+static SIGRETTYPE scmable_signal(sig)
      int sig;
 {
   int oerr = errno;

@@ -1,3 +1,4 @@
+void
 extract_resources(Display * display, const char *name)
 {
 #ifndef NO_RESOURCES

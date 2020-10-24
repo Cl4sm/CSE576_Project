@@ -1,3 +1,4 @@
+const int *sc_land_sky_index(const sc_config *c) {
 /* sc_land_sky_index
    Returns the list of sky gradient indices for the sky selected by
    the user.  Do not attempt to modify this array directly.  NULL is

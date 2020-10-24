@@ -1,3 +1,4 @@
+char special_char(char opcode,unsigned char k)
   {
 /* Sonderzeichen fuer "von" "bis" (--) und Gedankenstrich (---)
    sollen in der Form angezeigt werden.

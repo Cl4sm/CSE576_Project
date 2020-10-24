@@ -1,3 +1,4 @@
+void
 put_file(filename)
 	u_char	*filename;
 {

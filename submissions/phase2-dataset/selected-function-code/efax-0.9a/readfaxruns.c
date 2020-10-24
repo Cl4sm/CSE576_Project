@@ -1,3 +1,4 @@
+int readfaxruns ( TFILE *f, DECODER *d, short *runs, int *pels )
 {
   int err=0, c=EOF, x, n ;
   dtab *tab, *t ;

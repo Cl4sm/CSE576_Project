@@ -1,3 +1,4 @@
+  static int
 rl_get_vposition(void)
   /* return the position of the cursor in `rl.vline'.
    */

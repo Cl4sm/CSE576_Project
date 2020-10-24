@@ -1,3 +1,4 @@
+void
 log_filter (const char *dev, char *vendor, char *product, char *wwid,
 	    const char *env, int r)
 {

@@ -1,3 +1,4 @@
+static void makeKATs (const char *vkFile, const char *vtFile, const char *tblFile,
                       const char *ivFile)
 {
 	FILE *fp, *fp2;

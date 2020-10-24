@@ -1,3 +1,4 @@
+static void
 send_mode_list(struct Client *client_p, struct Channel *chptr,
                const dlink_list *list, const char flag)
 {

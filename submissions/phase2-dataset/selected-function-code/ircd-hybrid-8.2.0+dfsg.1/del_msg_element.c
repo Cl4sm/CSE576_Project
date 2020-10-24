@@ -1,3 +1,4 @@
+static void
 del_msg_element(struct MessageTree *mtree_p, const char *cmd)
 {
   struct MessageTree *ntree_p = NULL;

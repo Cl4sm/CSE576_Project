@@ -1,3 +1,4 @@
+void
 clear_channel_list(int server)
 {
 	ChannelList *tmp,

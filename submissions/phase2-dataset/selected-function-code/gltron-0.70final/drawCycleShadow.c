@@ -1,3 +1,4 @@
+void drawCycleShadow(PlayerVisual *pV, Player *p, int lod, int drawTurn) {
   Mesh *cycle;
   int turn_time = game2->time.current - p->data->turn_time;
       

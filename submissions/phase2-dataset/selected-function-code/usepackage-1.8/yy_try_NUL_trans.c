@@ -1,3 +1,4 @@
+static yy_state_type yy_try_NUL_trans( yy_state_type yy_current_state )
 #else
 static yy_state_type yy_try_NUL_trans( yy_current_state )
 yy_state_type yy_current_state;

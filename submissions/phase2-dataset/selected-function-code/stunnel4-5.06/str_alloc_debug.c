@@ -1,3 +1,4 @@
+void *str_alloc_debug(size_t size, char *file, int line) {
     ALLOC_TLS *alloc_tls;
     ALLOC_LIST *alloc_list;
 

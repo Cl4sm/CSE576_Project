@@ -1,3 +1,4 @@
+static
 void sort_options (mpegd_option_t *opt)
 {
 	unsigned      i, j;

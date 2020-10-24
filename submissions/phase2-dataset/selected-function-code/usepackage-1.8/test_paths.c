@@ -1,3 +1,4 @@
+linked_list* test_paths(linked_list* vlist)
 {
    linked_list* elist = new_list();
    list_node* vnode;

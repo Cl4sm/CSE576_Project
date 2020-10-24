@@ -1,3 +1,4 @@
+int bt_search(btree *bt, const byte *key, node *np)
 {
   int found = 0;
   unsigned long nnum;

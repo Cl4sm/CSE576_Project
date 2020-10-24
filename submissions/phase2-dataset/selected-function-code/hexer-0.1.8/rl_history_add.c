@@ -1,3 +1,4 @@
+  static void
 rl_history_add(struct rl_line_s line)
   /* add the line `line' to the history of the current context.
    */

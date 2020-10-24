@@ -1,3 +1,4 @@
+static int
 enc_xdr_long(mp, vp, cnt, std, siz)
 	struct pmsg *mp;
 	void *vp;

@@ -1,3 +1,4 @@
+static byte *
 krt_buffer_update(struct proto *p, size_t *needed)
 {
   size_t req = *needed;

@@ -1,3 +1,4 @@
+static void _bt_network_property_changed(GDBusConnection *connection, const gchar *sender_name, const gchar *object_path, const gchar *interface_name, const gchar *signal_name, GVariant *parameters, gpointer user_data)
 {
         g_assert(user_data != NULL);
 	GMainLoop *mainloop = user_data;

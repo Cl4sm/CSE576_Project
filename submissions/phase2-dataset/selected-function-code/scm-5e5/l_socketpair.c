@@ -1,3 +1,4 @@
+SCM l_socketpair(fam, proto)
      SCM fam, proto;
 {
   int sts, tp = INUM(fam);

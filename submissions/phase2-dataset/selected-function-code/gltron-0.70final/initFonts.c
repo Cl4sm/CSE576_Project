@@ -1,3 +1,4 @@
+void initFonts(void) {
   char *path;
   file_handle file;
   char buf[100];

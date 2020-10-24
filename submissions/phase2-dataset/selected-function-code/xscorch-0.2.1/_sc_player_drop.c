@@ -1,3 +1,4 @@
+static bool _sc_player_drop(sc_config *c, sc_player *p, int falldist) {
 /* sc_player_drop
    Drop current player; return nonzero if still falling */
 

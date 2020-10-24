@@ -1,3 +1,4 @@
+int
 rt_examine(rtable *t, ip_addr prefix, int pxlen, struct proto *p, struct filter *filter)
 {
   net *n = net_find(t, prefix, pxlen);

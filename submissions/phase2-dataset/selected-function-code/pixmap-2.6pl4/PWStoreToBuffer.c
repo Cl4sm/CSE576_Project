@@ -1,3 +1,4 @@
+void PWStoreToBuffer(Widget w)
 #else
 void PWStoreToBuffer(w)
      Widget w;

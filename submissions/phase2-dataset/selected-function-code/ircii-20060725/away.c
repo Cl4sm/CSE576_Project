@@ -1,3 +1,4 @@
+static	void
 away(command, args, subargs)
 	u_char	*command,
 		*args,

@@ -1,3 +1,4 @@
+int sc_player_contact_trigger_count(const sc_config *c, const sc_player *p) {
 /* sc_player_contact_trigger_count
    Return the number of contact triggers in this player's inventory. */
 

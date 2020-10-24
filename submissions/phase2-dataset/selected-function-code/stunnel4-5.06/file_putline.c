@@ -1,3 +1,4 @@
+int file_putline(DISK_FILE *df, char *line) {
     int len;
     char *buff;
 #ifdef USE_WIN32

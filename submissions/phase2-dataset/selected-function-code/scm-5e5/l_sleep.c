@@ -1,3 +1,4 @@
+SCM l_sleep(i)
      SCM i;
 {
   unsigned int j = 0;

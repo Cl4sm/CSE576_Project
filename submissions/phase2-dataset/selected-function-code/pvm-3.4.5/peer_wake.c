@@ -1,3 +1,4 @@
+void
 peer_wake(pp)
 	struct peer *pp;
 {

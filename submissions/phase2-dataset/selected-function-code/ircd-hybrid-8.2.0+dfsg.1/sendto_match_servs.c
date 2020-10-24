@@ -1,3 +1,4 @@
+void
 sendto_match_servs(struct Client *source_p, const char *mask, unsigned int cap,
                    const char *pattern, ...)
 {

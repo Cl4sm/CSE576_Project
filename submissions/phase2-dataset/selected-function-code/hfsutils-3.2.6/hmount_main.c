@@ -1,3 +1,4 @@
+int hmount_main(int argc, char *argv[])
 {
   char *path = 0;
   hfsvol *vol;

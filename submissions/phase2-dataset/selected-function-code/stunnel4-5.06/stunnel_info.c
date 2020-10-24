@@ -1,3 +1,4 @@
+void stunnel_info(int level) {
     s_log(level, "stunnel " STUNNEL_VERSION " on " HOST " platform");
     if(SSLeay()==SSLEAY_VERSION_NUMBER) {
         s_log(level, "Compiled/running with " OPENSSL_VERSION_TEXT);

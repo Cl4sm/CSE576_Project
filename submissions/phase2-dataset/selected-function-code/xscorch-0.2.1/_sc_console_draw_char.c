@@ -1,3 +1,4 @@
+static void _sc_console_draw_char(ScConsole *cons, GdkGC *fg, GdkGC *bg, gboolean bold, gint x, gint y, char ch) {
 /* sc_console_draw_char
    Draws a single character using the indicated fg/bg GCs, and at the
    CHARACTER position (x,y).  The coordinate will be converted to

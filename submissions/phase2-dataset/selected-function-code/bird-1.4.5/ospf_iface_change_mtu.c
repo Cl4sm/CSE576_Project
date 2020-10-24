@@ -1,3 +1,4 @@
+static void
 ospf_iface_change_mtu(struct proto_ospf *po, struct ospf_iface *ifa)
 {
   struct proto *p = &po->proto;

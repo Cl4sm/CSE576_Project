@@ -1,3 +1,4 @@
+void sc_window_main_menu(sc_window *w_) {
 
    sc_window_gtk *w = (sc_window_gtk *)w_;
    static const char *mainmenu[] = {

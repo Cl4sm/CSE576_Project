@@ -1,3 +1,4 @@
+void
 rt_show(struct rt_show_data *d)
 {
   net *n;

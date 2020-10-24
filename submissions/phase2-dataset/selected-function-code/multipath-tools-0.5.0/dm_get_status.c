@@ -1,3 +1,4 @@
+extern int
 dm_get_status(char * name, char * outstatus)
 {
 	int r = 1;

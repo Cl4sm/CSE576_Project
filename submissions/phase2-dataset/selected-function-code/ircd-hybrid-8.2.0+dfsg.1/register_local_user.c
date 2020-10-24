@@ -1,3 +1,4 @@
+void
 register_local_user(struct Client *source_p)
 {
   const char *id = NULL;

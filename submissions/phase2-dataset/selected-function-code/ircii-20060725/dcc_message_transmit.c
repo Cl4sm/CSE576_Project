@@ -1,3 +1,4 @@
+void
 dcc_message_transmit(user, text, type, flag)
 	u_char	*user;
 	u_char	*text;

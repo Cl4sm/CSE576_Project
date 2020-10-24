@@ -1,3 +1,4 @@
+static void
 radv_if_notify(struct proto *p, unsigned flags, struct iface *iface)
 { 
   struct proto_radv *ra = (struct proto_radv *) p;

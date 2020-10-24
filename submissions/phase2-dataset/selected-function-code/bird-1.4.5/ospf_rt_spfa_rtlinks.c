@@ -1,3 +1,4 @@
+static void
 ospf_rt_spfa_rtlinks(struct ospf_area *oa, struct top_hash_entry *act, struct top_hash_entry *en)
 {
   // struct proto *p = &oa->po->proto;

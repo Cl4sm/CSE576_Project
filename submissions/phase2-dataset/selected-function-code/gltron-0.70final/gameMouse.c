@@ -1,3 +1,4 @@
+void gameMouse(int buttons, int state, int x, int y) {
   if(state == SYSTEM_MOUSEPRESSED) {
     if(buttons == SYSTEM_MOUSEBUTTON_LEFT) gInput.mouse1 = 1;
     if(buttons == SYSTEM_MOUSEBUTTON_RIGHT) gInput.mouse2 = 1;

@@ -1,3 +1,4 @@
+int hvol_main(int argc, char *argv[])
 {
   int vnum;
   mountent *ment;

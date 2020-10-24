@@ -1,3 +1,4 @@
+int sknm_print(exp, port, writing)
      SCM exp; SCM port; int writing;
 {
   lputs("#<", port);

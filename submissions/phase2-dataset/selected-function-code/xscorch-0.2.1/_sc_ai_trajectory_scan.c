@@ -1,3 +1,4 @@
+static bool _sc_ai_trajectory_scan(const sc_config *c, sc_player *p, const sc_player *victim, 
                                    int *newpower, int *newangle, int minangle, int maxangle, int deltaangle, 
                                    int minpower, int maxpower, int deltapower, double maxdist) {
 /* _sc_ai_trajectory_scan

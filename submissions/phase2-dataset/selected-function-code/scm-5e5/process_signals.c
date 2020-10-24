@@ -1,3 +1,4 @@
+void process_signals()
 {
   int i, n;
   unsigned long mask = 1L;

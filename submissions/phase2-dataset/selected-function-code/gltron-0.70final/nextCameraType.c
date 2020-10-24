@@ -1,3 +1,4 @@
+void nextCameraType(void) {
   int i;
   int current_cam_type = getSettingi("camType");
   int new_cam_type = (current_cam_type + 1) % CAM_COUNT;

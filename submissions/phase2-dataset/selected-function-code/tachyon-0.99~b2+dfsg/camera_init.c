@@ -1,3 +1,4 @@
+void camera_init(scenedef *scene) {
   flt sx, sy;
   vector newupvec;
   vector newviewvec;

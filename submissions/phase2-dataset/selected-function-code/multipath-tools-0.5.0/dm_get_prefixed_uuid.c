@@ -1,3 +1,4 @@
+static int
 dm_get_prefixed_uuid(const char *name, char *uuid)
 {
 	struct dm_task *dmt;

@@ -1,3 +1,4 @@
+void sc_window_create_menus_gtk(sc_window_gtk *w) {
 
    GError *gerr = NULL;
    GtkAction *action = NULL;

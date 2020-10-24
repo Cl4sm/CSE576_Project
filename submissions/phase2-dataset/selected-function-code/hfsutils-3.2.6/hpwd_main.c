@@ -1,3 +1,4 @@
+int hpwd_main(int argc, char *argv[])
 {
   mountent *ent;
 

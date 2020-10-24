@@ -1,3 +1,4 @@
+void _getifdata()
 {
     int buffer, fd, val, ret = -1;
     unsigned int len, i;

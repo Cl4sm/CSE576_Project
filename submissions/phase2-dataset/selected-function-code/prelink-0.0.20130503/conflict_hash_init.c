@@ -1,3 +1,4 @@
+static void
 conflict_hash_init (struct prelink_conflicts *conflicts)
 {
   struct prelink_conflict **hash

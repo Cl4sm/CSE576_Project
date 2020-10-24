@@ -1,3 +1,4 @@
+SCM istr2int(str, len, radix)
      register char *str;
      long len;
      register long radix;

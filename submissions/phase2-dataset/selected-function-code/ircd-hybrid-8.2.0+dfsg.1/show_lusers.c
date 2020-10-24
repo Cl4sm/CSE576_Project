@@ -1,3 +1,4 @@
+void
 show_lusers(struct Client *source_p)
 {
   if (!ConfigServerHide.hide_servers || HasUMode(source_p, UMODE_OPER))

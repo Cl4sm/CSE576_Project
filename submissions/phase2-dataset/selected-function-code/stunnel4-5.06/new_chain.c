@@ -1,3 +1,4 @@
+NOEXPORT void new_chain(CLI *c) {
     BIO *bio;
     int i, len;
     X509 *peer=NULL;

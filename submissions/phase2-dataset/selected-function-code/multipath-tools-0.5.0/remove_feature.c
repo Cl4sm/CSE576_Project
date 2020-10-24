@@ -1,3 +1,4 @@
+extern int
 remove_feature(char **f, char *o)
 {
 	int c = 0, d, l;

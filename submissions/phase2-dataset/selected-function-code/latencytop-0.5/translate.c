@@ -1,3 +1,4 @@
+char *translate(char *line)
 {
 	char buffer[4096], *c, *c2;
 	int prio = 0;

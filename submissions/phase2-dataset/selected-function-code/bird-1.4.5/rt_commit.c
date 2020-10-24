@@ -1,3 +1,4 @@
+void
 rt_commit(struct config *new, struct config *old)
 {
   struct rtable_config *o, *r;

@@ -1,3 +1,4 @@
+int
 add_id(struct Client *client_p, struct Channel *chptr, char *banid, unsigned int type)
 {
   dlink_list *list = NULL;

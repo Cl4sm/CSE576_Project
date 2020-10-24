@@ -1,3 +1,4 @@
+  int
 tio_raw_readwait(tmout)
 {
 #ifdef FD_ZERO

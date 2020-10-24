@@ -1,3 +1,4 @@
+int
 pvm_spawn(file, argv, flags, where, count, tids)
 	char *file;
 	char **argv;

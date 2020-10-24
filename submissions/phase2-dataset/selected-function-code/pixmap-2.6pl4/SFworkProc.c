@@ -1,3 +1,4 @@
+Boolean
 SFworkProc()
 {
 	register SFDir		*dir;

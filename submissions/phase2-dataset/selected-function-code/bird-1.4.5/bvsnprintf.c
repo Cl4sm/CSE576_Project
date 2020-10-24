@@ -1,3 +1,4 @@
+int bvsnprintf(char *buf, int size, const char *fmt, va_list args)
 {
 	int len;
 	unsigned long num;

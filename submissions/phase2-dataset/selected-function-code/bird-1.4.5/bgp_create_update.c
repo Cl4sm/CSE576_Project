@@ -1,3 +1,4 @@
+static byte *
 bgp_create_update(struct bgp_conn *conn, byte *buf)
 {
   struct bgp_proto *p = conn->bgp;

@@ -1,3 +1,4 @@
+char *fd_getline(CLI *c, int fd) {
     char *line, *tmpline;
     int ptr=0, allocated=32;
 

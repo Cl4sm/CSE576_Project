@@ -1,3 +1,4 @@
+void sc_help_text(char *res, int size, const char *idphrase) {
 /* sc_help_text */
 
    char buf[0x1000];

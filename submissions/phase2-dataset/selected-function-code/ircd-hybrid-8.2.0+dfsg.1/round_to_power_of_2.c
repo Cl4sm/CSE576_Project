@@ -1,3 +1,4 @@
+static uint64_t
 round_to_power_of_2(uint64_t u64)
 {
   int lg2;

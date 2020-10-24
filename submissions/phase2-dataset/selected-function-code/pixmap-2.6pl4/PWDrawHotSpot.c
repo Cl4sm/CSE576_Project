@@ -1,3 +1,4 @@
+void PWDrawHotSpot(Widget w, Position x, Position y, int value)
 #else
 void PWDrawHotSpot(w, x, y, value)
     Widget w;

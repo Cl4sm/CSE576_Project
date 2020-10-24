@@ -1,3 +1,4 @@
+int
 match(const char *mask, const char *name)
 {
   const char *m = mask, *n = name;

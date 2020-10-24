@@ -1,3 +1,4 @@
+static int
 kif_reconfigure(struct proto *p, struct proto_config *new)
 {
   struct kif_config *o = (struct kif_config *) p->cf;

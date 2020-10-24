@@ -1,3 +1,4 @@
+static char *
 allocate_binding(int fd, char *wwid, int id, char *prefix)
 {
 	char buf[LINE_MAX];

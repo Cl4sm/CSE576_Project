@@ -1,3 +1,4 @@
+static sc_phoenix_result _sc_phoenix_scatter(__libj_unused int locate, const sc_config *c, sc_weapon **wp, __libj_unused sc_explosion **e) {
 /* _sc_phoenix_scatter
    Scatter a missile without detonation */
 

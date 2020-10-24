@@ -1,3 +1,4 @@
+static int
 krt_send_route(struct krt_proto *p, int cmd, rte *e)
 {
   net *net = e->net;

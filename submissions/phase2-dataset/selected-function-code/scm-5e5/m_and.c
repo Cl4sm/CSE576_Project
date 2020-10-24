@@ -1,3 +1,4 @@
+SCM m_and(xorig, env, ctxt)
      SCM xorig, env, ctxt;
 {
   SCM x = CDR(xorig);

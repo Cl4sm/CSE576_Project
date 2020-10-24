@@ -1,3 +1,4 @@
+bool btconnect(btdev_t* btdev)
 {
 	int ptype;
 	uint16_t handle = 0;

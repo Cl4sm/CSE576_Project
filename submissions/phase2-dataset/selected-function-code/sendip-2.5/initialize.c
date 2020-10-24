@@ -1,3 +1,4 @@
+sendip_data *initialize (void)
 {
 	sendip_data *data = NULL;
 	u_int8_t    *ptr;

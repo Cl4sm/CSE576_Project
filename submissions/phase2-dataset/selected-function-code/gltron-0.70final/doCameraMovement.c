@@ -1,3 +1,4 @@
+void doCameraMovement(void) {
   int i;
   Player *p;
 	PlayerVisual *pV;

@@ -1,3 +1,4 @@
+int
 startack(wp, mp)
 	struct waitc *wp;		/* wait context on hoster */
 	struct pmsg *mp;

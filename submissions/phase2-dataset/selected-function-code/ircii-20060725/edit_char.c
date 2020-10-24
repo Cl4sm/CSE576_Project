@@ -1,3 +1,4 @@
+void
 edit_char(ikey)
 	u_int ikey;
 {

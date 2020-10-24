@@ -1,3 +1,4 @@
+void
 doExpose(w)
 Window w;
 {

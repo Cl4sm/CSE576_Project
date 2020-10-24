@@ -1,3 +1,4 @@
+int bt_delete(btree *bt, const byte *key)
 {
   node root;
   byte record[HFS_MAX_RECLEN];

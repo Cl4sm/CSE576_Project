@@ -1,3 +1,4 @@
+unsigned
 calc_unival_width(unsigned unival)
 {
 	/* FIXME: Should we use some kind of database here?

@@ -1,3 +1,4 @@
+static
 int mpeg_scan_packet (mpeg_demux_t *mpeg)
 {
 	FILE               *fp;

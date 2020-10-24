@@ -1,3 +1,4 @@
+int
 find_reloc_sections (DSO *dso, struct reloc_info *rinfo)
 {
   int first, last, rela, i;

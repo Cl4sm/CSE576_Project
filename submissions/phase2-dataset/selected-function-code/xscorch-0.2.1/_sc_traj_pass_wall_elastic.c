@@ -1,3 +1,4 @@
+static inline sc_trajectory_result _sc_traj_pass_wall_elastic(const sc_config *c, sc_trajectory *tr,
                                                               sc_trajectory_data *t, double elasticity) {
 /* sc_traj_pass_wall_elastic
    Boundary case for elastic walls, with elasticity given (values < 1, wall

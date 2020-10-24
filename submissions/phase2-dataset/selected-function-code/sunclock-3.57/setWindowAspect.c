@@ -1,3 +1,4 @@
+int setWindowAspect(Context)
 struct Sundata * Context;
 {
    unsigned int b, i, j;

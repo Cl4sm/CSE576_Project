@@ -1,3 +1,4 @@
+void FixColor(w, current)
      Widget w;
      Pixel current;
 {

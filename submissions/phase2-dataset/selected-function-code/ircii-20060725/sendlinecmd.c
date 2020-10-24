@@ -1,3 +1,4 @@
+static	void
 sendlinecmd(command, args, subargs)
 	u_char	*command,
 		*args,

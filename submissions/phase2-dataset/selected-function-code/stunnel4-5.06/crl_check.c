@@ -1,3 +1,4 @@
+NOEXPORT int crl_check(X509_STORE_CTX *callback_ctx) {
     SSL *ssl;
     CLI *c;
     X509_STORE_CTX store_ctx;

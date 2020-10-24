@@ -1,3 +1,4 @@
+int ReadNewsrc()
 /*
  *  Read the .newsrc file
  */

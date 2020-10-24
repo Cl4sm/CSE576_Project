@@ -1,3 +1,4 @@
+static void _sc_window_draw_wind_arrow(sc_window_gtk *w, bool drawing) {
 /* sc_window_draw_wind_arrow
    Draws the wind arrow in the upper-right corner of the screen.  If
    drawing is set, we will draw an arrow; otherwise we will erase the

@@ -1,3 +1,4 @@
+void
 tm_start(timer *t, unsigned after)
 {
   bird_clock_t when;

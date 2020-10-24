@@ -1,3 +1,4 @@
+int
 pvm_upkuint(np, cnt, std)
 	unsigned int *np;
 	int cnt;

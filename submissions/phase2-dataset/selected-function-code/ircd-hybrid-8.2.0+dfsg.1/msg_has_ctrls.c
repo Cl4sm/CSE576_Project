@@ -1,3 +1,4 @@
+static int
 msg_has_ctrls(const char *message)
 {
   const unsigned char *p = (const unsigned char *)message;

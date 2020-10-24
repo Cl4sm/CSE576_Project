@@ -1,3 +1,4 @@
+void
 dlinkMoveList(dlink_list *from, dlink_list *to)
 {
   /* There are three cases */

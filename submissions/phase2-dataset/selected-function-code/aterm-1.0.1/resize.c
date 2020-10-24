@@ -1,3 +1,4 @@
+void
 resize(void)
 {
     szHint.base_width = (2 * TermWin_internalBorder);

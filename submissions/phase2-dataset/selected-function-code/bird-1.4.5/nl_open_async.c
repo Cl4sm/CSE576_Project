@@ -1,3 +1,4 @@
+static void
 nl_open_async(void)
 {
   sock *sk;

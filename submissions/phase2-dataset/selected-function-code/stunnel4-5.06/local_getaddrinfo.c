@@ -1,3 +1,4 @@
+NOEXPORT int getaddrinfo(const char *node, const char *service,
         const struct addrinfo *hints, struct addrinfo **res) {
     struct hostent *h;
 #ifndef _WIN32_WCE

@@ -1,3 +1,4 @@
+static void _media_set_property(GObject *object, guint property_id, const GValue *value, GParamSpec *pspec)
 {
 	Media *self = MEDIA(object);
 	GError *error = NULL;

@@ -1,3 +1,4 @@
+int
 parsehost(buf, hp)
 	char *buf;
 	struct hostd *hp;

@@ -1,3 +1,4 @@
+int DoSelect ()
 /*
  *  Select articles from a summary file
  */

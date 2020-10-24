@@ -1,3 +1,4 @@
+static	void
 funny_stuff(command, args, subargs)
 	u_char	*command,
 		*args,

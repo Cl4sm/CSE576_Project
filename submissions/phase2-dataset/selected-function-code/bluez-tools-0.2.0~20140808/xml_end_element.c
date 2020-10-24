@@ -1,3 +1,4 @@
+static void xml_end_element(GMarkupParseContext *context,
                             const gchar *element_name,
                             gpointer user_data,
                             GError **error)

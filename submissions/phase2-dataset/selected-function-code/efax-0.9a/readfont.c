@@ -1,3 +1,4 @@
+int readfont ( char *fname, faxfont *font )
 {
   int err=0, i, j, n=0, nr, nb, fontok=0, pels ;
   char *fnames [2] = { 0, 0 } ;

@@ -1,3 +1,4 @@
+static void
 set_binding_values (domainname, dirnamep, codesetp)
      const char *domainname;
      const char **dirnamep;

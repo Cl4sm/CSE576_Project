@@ -1,3 +1,4 @@
+void
 utf8_sequence(unsigned unival, u_char* utfbuf)
 {
 	/* This function does the reverse of calc_unival(). */

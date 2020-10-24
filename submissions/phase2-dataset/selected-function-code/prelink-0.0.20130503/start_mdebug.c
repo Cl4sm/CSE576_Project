@@ -1,3 +1,4 @@
+static int
 start_mdebug (DSO *dso, int n, struct mdebug *mdebug)
 {
   Elf_Data *data = NULL;

@@ -1,3 +1,4 @@
+int
 pvm_upklong(np, cnt, std)
 	long *np;
 	int cnt;

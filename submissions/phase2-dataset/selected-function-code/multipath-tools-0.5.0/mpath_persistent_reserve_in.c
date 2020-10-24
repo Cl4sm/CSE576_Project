@@ -1,3 +1,4 @@
+int mpath_persistent_reserve_in (int fd, int rq_servact, struct prin_resp *resp, int noisy, int verbose)
 {
 	struct stat info;
 	vector curmp = NULL;

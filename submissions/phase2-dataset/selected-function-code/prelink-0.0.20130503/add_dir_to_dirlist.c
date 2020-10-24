@@ -1,3 +1,4 @@
+static int
 add_dir_to_dirlist (const char *name, dev_t dev, int flags)
 {
   const char *canon_name;

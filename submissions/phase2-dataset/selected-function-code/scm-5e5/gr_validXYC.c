@@ -1,3 +1,4 @@
+SCM     gr_validXYC( x, y, c )
 SCM     x, y, c;
 {
 int     xi, yi, ci;

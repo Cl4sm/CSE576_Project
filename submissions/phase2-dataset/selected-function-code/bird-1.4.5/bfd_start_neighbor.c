@@ -1,3 +1,4 @@
+static void
 bfd_start_neighbor(struct bfd_proto *p, struct bfd_neighbor *n)
 {
   n->active = 1;

@@ -1,3 +1,4 @@
+static gint _sc_console_configure(GtkWidget *widget, GdkEventConfigure *event) {
 /* sc_console_configure
    This is the configure event when a console is resized.  Takes
    care of redrawing the entire console.  */

@@ -1,3 +1,4 @@
+char *frname ( int fr )
 {
   static struct framenamestruct {  int code ;  char *name ; } 
   framenames [] = {

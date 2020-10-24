@@ -1,3 +1,4 @@
+SCM scm_getgroups()
 {
   SCM grps, ans;
   int ngroups = getgroups(0, 0);

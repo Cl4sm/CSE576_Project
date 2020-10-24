@@ -1,3 +1,4 @@
+int mpeg_remux (FILE *inp, FILE *out)
 {
 	int          r;
 	mpeg_demux_t *mpeg;

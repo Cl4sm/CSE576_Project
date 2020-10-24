@@ -1,3 +1,4 @@
+char *
 read_pvmregistry(token_call)
 const char *token_call;
 {

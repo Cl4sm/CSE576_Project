@@ -1,3 +1,4 @@
+static int
 attach_iline(struct Client *client_p, struct MaskItem *conf)
 {
   const struct ClassItem *class = conf->class;

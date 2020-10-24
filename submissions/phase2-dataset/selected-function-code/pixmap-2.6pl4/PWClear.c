@@ -1,3 +1,4 @@
+void PWClear(Widget w)
 #else
 void PWClear(w)
      Widget w;

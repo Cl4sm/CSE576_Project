@@ -1,3 +1,4 @@
+void
 DarkenPixel(Context, x, y, t)
 struct Sundata * Context;
 int x;

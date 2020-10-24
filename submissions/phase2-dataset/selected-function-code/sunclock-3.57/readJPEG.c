@@ -1,3 +1,4 @@
+int
 readJPEG(path, Context)
 char *path;
 Sundata * Context;

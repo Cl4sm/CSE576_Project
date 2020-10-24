@@ -1,3 +1,4 @@
+int
 action_type(action_t * action, unsigned char *str)
 {
 #ifdef MENUBAR

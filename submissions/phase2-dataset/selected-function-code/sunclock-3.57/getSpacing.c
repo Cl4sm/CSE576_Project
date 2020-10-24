@@ -1,3 +1,4 @@
+double
 getSpacing(Context, mode)
 Sundata * Context;
 int mode;   /* 0=parallel 1=meridian spacing */

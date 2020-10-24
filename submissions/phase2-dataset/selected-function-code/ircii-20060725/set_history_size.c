@@ -1,3 +1,4 @@
+void
 set_history_size(size)
 	int	size;
 {

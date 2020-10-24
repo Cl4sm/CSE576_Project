@@ -1,3 +1,4 @@
+void
 checkRCfile(argc, argv)
 register int                    argc;
 register char **                argv;

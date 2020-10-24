@@ -1,3 +1,4 @@
+int main( int argc, char **argv)
 {
   int err=0, doneargs=0, c=0, i ;
   int testing=0, calling=0 ;

@@ -1,3 +1,4 @@
+static const sc_player *_sc_ai_random_fire(const sc_config *c, sc_player *p) {
 /* sc_ai_random_fire
    Fires a random trajectory and power.  This is the simplest form of AI;
    currently, MORON uses it exclusively, and other AI's may use this

@@ -1,3 +1,4 @@
+time_t
 sunParams(gtime, sunlong, sundec, city)
 time_t gtime;
 double *sunlong;

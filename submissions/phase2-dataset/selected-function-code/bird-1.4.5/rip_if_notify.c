@@ -1,3 +1,4 @@
+static void
 rip_if_notify(struct proto *p, unsigned c, struct iface *iface)
 {
   DBG( "RIP: if notify\n" );

@@ -1,3 +1,4 @@
+static
 int opt_cmp (const mpegd_option_t *opt1, const mpegd_option_t *opt2)
 {
 	int c1, c2;

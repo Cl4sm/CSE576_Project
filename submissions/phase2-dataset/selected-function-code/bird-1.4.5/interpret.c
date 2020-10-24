@@ -1,3 +1,4 @@
+static struct f_val
 interpret(struct f_inst *what)
 {
   struct symbol *sym;

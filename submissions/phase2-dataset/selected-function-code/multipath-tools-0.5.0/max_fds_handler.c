@@ -1,3 +1,4 @@
+static int
 max_fds_handler(vector strvec)
 {
 	char * buff;

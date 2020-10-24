@@ -1,3 +1,4 @@
+void
 lsasum_calculate(struct ospf_lsa_header *h, void *body)
 {
   u16 length = h->length;

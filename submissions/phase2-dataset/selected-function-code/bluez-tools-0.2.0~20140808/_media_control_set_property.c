@@ -1,3 +1,4 @@
+static void _media_control_set_property(GObject *object, guint property_id, const GValue *value, GParamSpec *pspec)
 {
 	MediaControl *self = MEDIA_CONTROL(object);
 	GError *error = NULL;

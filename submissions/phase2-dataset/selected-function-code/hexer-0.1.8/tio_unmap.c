@@ -1,3 +1,4 @@
+  int
 tio_unmap(map, from, special_f)
   int map;
   char *from;

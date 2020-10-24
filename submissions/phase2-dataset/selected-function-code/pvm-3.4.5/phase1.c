@@ -1,3 +1,4 @@
+phase1(sp)
 	struct slot *sp;
 {
 	struct hst *hp;

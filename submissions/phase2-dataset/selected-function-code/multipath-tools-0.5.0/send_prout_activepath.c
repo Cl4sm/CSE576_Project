@@ -1,3 +1,4 @@
+int send_prout_activepath(char * dev, int rq_servact, int rq_scope,
 	unsigned int rq_type, struct prout_param_descriptor * paramp, int noisy)
 {
 	struct prout_param param;

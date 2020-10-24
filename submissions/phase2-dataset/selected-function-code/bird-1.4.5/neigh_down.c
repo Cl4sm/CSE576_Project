@@ -1,3 +1,4 @@
+static void
 neigh_down(neighbor *n)
 {
   DBG("Flushing neighbor %I on %s\n", n->addr, n->iface->name);

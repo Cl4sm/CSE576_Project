@@ -1,3 +1,4 @@
+static int
 child (void * param)
 {
 	pthread_t check_thr, uevent_thr, uxlsnr_thr, uevq_thr;

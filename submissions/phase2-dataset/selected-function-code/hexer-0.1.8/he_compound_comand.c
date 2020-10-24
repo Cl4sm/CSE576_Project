@@ -1,3 +1,4 @@
+  void
 he_compound_comand(hedit, command)
   struct he_s *hedit;
   struct he_command_s *command;

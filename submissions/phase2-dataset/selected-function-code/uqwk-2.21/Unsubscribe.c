@@ -1,3 +1,4 @@
+int Unsubscribe (pfd)
 FILE *pfd;
 {
 	struct nrc_ent *np;

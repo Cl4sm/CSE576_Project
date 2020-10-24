@@ -1,3 +1,4 @@
+int hcwd_setcwd(mountent *ent, const char *newcwd)
 {
   const char *path;
   char *cwd;

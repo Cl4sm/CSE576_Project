@@ -1,3 +1,4 @@
+int mpath_prout_rel(struct multipath *mpp,int rq_servact, int rq_scope,
         unsigned int rq_type, struct prout_param_descriptor * paramp, int noisy)
 {
 	int i, j;

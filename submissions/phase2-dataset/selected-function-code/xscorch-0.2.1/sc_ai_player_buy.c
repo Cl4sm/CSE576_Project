@@ -1,3 +1,4 @@
+sc_ai_result sc_ai_player_buy(const sc_config *c, sc_player *p) {
 /* sc_ai_player_buy
    Buy some weapons and accessories.  */
 

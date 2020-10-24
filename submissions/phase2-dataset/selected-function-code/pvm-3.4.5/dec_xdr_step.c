@@ -1,3 +1,4 @@
+static int
 dec_xdr_step(mp)
 	struct pmsg *mp;
 {

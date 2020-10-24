@@ -1,3 +1,4 @@
+void LoadVol(scalarvol * vol) { 
   FILE * dfile;
  
   dfile=fopen(vol->name, "r");

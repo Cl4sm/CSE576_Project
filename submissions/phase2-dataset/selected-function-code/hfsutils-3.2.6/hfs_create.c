@@ -1,3 +1,4 @@
+hfsfile *hfs_create(hfsvol *vol, const char *path,
 		    const char *type, const char *creator)
 {
   hfsfile *file = 0;

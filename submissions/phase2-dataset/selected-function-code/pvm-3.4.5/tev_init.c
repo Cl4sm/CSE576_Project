@@ -1,3 +1,4 @@
+void
 tev_init()
 {
 	int i;

@@ -1,3 +1,4 @@
+int
 pvm_tc_settrace(mid)
 	int mid;
 {

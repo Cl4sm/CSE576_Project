@@ -1,3 +1,4 @@
+SCM your_time()
 {
   long tmp;
   struct timeb time_buffer1;

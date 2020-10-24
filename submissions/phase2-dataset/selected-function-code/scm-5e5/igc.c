@@ -1,3 +1,4 @@
+void igc(what, basecont)
      const char *what;
      SCM basecont;
 {

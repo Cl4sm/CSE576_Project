@@ -1,3 +1,4 @@
+static void err_head(str)
      char *str;
 {
   SCM lps;

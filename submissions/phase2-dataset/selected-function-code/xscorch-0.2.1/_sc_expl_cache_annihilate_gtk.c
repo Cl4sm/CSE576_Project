@@ -1,3 +1,4 @@
+static inline void _sc_expl_cache_annihilate_gtk(sc_window_gtk *w, GdkPixmap *pixmap, 
                                                  int radius, sc_explosion_type type) {
 /* sc_expl_annihilate_rad_gtk
    Annihilate a region centered at (cx,cy) for a radius r.  This function

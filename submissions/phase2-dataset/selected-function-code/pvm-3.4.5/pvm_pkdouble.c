@@ -1,3 +1,4 @@
+int
 pvm_pkdouble(dp, cnt, std)
 	double *dp;
 	int cnt;

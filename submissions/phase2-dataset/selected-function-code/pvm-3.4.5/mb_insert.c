@@ -1,3 +1,4 @@
+int
 mb_insert(tid, name, req, flags, mp)
 	int tid;				/* owner task */
 	char *name;				/* class name */

@@ -1,3 +1,4 @@
+static
 APIRET death(PID pid)
 {
 	APIRET rc;

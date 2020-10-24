@@ -1,3 +1,4 @@
+int hfs_rmdir(hfsvol *vol, const char *path)
 {
   CatKeyRec key;
   CatDataRec data;

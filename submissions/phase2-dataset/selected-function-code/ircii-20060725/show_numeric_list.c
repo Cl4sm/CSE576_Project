@@ -1,3 +1,4 @@
+static	int
 show_numeric_list(numeric)
 	int	numeric;
 {

@@ -1,3 +1,4 @@
+int
 pvm_vpackf(fmt, ap)
 	char *fmt;
 	va_list ap;

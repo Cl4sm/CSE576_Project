@@ -1,3 +1,4 @@
+pid_t fork_and_exec(const char *command){
 	int cmd_result;
 	pid_t child = fork();
 	switch(child){

@@ -1,3 +1,4 @@
+static int
 irc_ns_name_ntop(const unsigned char *src, char *dst, size_t dstsiz)
 {
 	const unsigned char *cp;

@@ -1,3 +1,4 @@
+PWColorInfo *PWGetColor(Widget w, Pixel pixel)
 #else
 PWColorInfo *PWGetColor(w, pixel)
      Widget w;

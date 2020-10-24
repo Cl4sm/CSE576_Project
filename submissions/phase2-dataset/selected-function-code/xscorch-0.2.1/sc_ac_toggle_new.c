@@ -1,3 +1,4 @@
+ScGadget *sc_ac_toggle_new(gint x, gint y, gint width, gint height) {
 /* sc_ac_toggle_new
    Instantiate a new toggle widget. */
 

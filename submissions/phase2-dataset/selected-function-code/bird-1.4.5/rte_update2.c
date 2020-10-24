@@ -1,3 +1,4 @@
+void
 rte_update2(struct announce_hook *ah, net *net, rte *new, struct rte_src *src)
 {
   struct proto *p = ah->proto;

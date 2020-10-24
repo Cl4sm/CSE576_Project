@@ -1,3 +1,4 @@
+static int
 krt_start(struct proto *P)
 {
   struct krt_proto *p = (struct krt_proto *) P;

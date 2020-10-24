@@ -1,3 +1,4 @@
+void
 setupMenu(mode)
 int mode;
 {

@@ -1,3 +1,4 @@
+gchar *getRuntimePath(int argc, char *argv[]) {
 
     gchar *fullpath;
     gchar *filepath;

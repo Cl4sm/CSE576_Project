@@ -1,3 +1,4 @@
+struct top_hash_entry *
 ospf_hash_get(struct top_graph *f, u32 domain, u32 lsa, u32 rtr, u32 type)
 {
   struct top_hash_entry **ee;

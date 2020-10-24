@@ -1,3 +1,4 @@
+void ParseDate (c, hp)
 char *c;
 struct qwk_hdr *hp;
 {

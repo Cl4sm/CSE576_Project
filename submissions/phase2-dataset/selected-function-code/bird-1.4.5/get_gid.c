@@ -1,3 +1,4 @@
+static inline gid_t
 get_gid(const char *s)
 {
   struct group *gr;

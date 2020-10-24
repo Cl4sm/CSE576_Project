@@ -1,3 +1,4 @@
+int
 pvm_nrecv(tid, tag)
 	int tid;
 	int tag;

@@ -1,3 +1,4 @@
+void
 drawObject(Context, lon, lat, mode, color, name)
 struct Sundata * Context;
 double lon, lat;                /* Latitude and longtitude of the city */

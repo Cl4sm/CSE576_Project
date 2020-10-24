@@ -1,3 +1,4 @@
+static
 int flushchain(hfsvol *vol, bucket **bptr, unsigned int *count)
 {
   bucket *blist[HFS_BLOCKBUFSZ], **start = bptr;

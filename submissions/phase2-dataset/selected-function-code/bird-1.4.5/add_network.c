@@ -1,3 +1,4 @@
+static void
 add_network(struct ospf_area *oa, ip_addr px, int pxlen, int metric, struct top_hash_entry *en, int pos)
 {
   orta nf = {

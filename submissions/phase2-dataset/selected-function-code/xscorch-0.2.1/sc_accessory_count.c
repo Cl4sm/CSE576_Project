@@ -1,3 +1,4 @@
+int sc_accessory_count(const sc_accessory_config *ac, int flags) {
 /* sc_accessory_count
    Counts the number of accessories that have been registered with the game's data registry.
    This is optimized but of course if you're calling it a lot you should cache the data.

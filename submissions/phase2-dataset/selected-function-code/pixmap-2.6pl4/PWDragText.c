@@ -1,3 +1,4 @@
+void PWDragText(Widget w, Position at_x, Position at_y, int value)
 #else
 void PWDragText(w, at_x, at_y, value)
      Widget	w;

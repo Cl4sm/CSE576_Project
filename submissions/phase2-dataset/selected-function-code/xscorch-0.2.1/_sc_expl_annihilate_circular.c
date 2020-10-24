@@ -1,3 +1,4 @@
+static void _sc_expl_annihilate_circular(sc_config *c, const sc_explosion *e,
                                          int radius, bool fill) {
 /* sc_expl_annihilate_circular
    Clears (if fill == false) or fills (if fill == true) dirt in the

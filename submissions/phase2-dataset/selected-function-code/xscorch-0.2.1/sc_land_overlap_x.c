@@ -1,3 +1,4 @@
+bool sc_land_overlap_x(const sc_land *l, int *x1, int *x2) {
 /* _sc_land_overlap_x
    Determines if the X range described by [x1, x2] would overlap a wrapping
    boundary.  This function behaves rather oddly; usually the center of the

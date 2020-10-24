@@ -1,3 +1,4 @@
+void on_editFindClose_activate(GtkMenuItem *menuitem, gpointer user_data) {
     gchar* tmp_string;
 
     gtk_widget_hide(findToolbar);

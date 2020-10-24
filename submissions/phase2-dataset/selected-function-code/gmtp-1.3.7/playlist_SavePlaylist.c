@@ -1,3 +1,4 @@
+void playlist_SavePlaylist(gint PlayListID) {
     LIBMTP_playlist_t* tmpplaylist = devicePlayLists;
     gint tmpplaylistID = PlayListID;
     gint item_id = 0;

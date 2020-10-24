@@ -1,3 +1,4 @@
+uint32_t getFile(gchar* filename, uint32_t folderID) {
     // What we have to go is scan the entire file tree looking for
     // entries in the same folder as the current and the same
     // storage pool, then we do a string compare (since doing a string

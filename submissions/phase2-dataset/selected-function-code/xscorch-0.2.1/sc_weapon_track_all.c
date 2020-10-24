@@ -1,3 +1,4 @@
+sc_weapon_track_result sc_weapon_track_all(sc_config *c, sc_explosion **e) {
 /* sc_weapon_track_all
    Track the weapons of every player, in sync.  This function will always
    process weapons for all players; if at least one player created a new
