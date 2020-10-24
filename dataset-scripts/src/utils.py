@@ -3,6 +3,7 @@ import random
 import string
 import contextlib
 
+import docker
 import delegator
 
 @contextlib.contextmanager
@@ -20,7 +21,10 @@ def docker_cleanup(client):
     try:
         yield name
     finally:
-        client.containers.get(name).kill()
+        try:
+            client.containers.get(name).kill()
+        except docker.errors.APIError:
+            pass
 
 @contextlib.contextmanager
 def git_cxt():
