@@ -43,8 +43,8 @@ The dataset is created using 3 levels of filtering:
 
 After this filtering, we have a collection of functions as well as the executables for the dataset. We have a total of 1127200 functions
 across 2087 packages. Since our dataset would be extremely large(with both source files and binary executables), we are including
-only the source level information of functions(compressed) derived from the source packages and bianries, which can be easily
-obtained from the public Allstar and Debian source package repositories.
+only the source level information of functions(compressed) derived from the source packages and binaries and only part
+of the source code; the rest can be obtained from the public Allstar and Debian source package repositories.
 
 We also expect additional filtering and processing of the dataset would become necessary as we make further progress on the
 project and more aspects become clearer. We will add additional details in future updates about the project.
