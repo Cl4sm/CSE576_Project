@@ -62,7 +62,7 @@ task are discussed among the team and finalized. Additionally, members also help
 responsibility assignment was done as follows:
 
 - William Gibbs: Tokenizing source code using IDA decompiler output.
-- Yihui Zheng: Tokenizing source code using clang and IDA decompiler output.
+- Yihui Zeng: Tokenizing source code using clang and IDA decompiler output.
 - Maxfield Lehman: Responsible for model creation and training using fairseq. Also helped with generating dataset.
 - HuiJun Tay: Responsible for model creation and training using fairseq. Also helped with generating dataset.
 - Arvind Sriram Raj: Creating initial dataset from which training and testing sets will be derived.
