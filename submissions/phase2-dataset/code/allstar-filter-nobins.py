@@ -14,9 +14,11 @@ parser.add_argument('directory',
 
 args = parser.parse_args()
 repo = allstar.AllstarRepo("amd64")
+target_dir = os.path.normpath(args.directory)
+
 all_packages = repo.package_list()
-package_files = os.listdir(args.directory)
-map_filepath = os.path.dirname(args.directory)+"-names.txt"
+package_files = os.listdir(target_dir)
+map_filepath = os.path.basename(target_dir)+"-names.txt"
 
 package_map = dict()
 
@@ -91,8 +93,8 @@ for pfile in package_files:
 
 print("Found %d/%d Packages with binaries on repo:" % (count, len(package_files)))
 
-filtered_dir = args.directory.strip('/')+"-hasbinaries"
-orignal_dir = args.directory.strip('/')
+filtered_dir = target_dir+"-hasbinaries"
+orignal_dir = target_dir
 if os.path.exists(filtered_dir):
     shutil.rmtree(filtered_dir)
 os.mkdir(filtered_dir)
