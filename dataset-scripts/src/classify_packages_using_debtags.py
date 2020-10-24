@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-import argparse
 import os
 
 import tinydb
@@ -25,11 +24,7 @@ def create_argument_parser():
     return parser
 
 
-def main():
-    arg_parser = create_argument_parser()
-    args = arg_parser.parse_args()
-    db_file = args.db
-    output_dir = args.output_dir
+def main(db_file, output_dir):
 
     if not os.path.isfile(db_file):
         print(f"{db_file} is not a valid file")
@@ -38,12 +33,12 @@ def main():
     db = tinydb.TinyDB(db_file)
     q = tinydb.Query()
     if not os.path.isabs(output_dir):
-        output_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), os.path.basename(output_dir))
+        output_dir = os.path.join(os.getcwd(), output_dir)
 
     os.makedirs(output_dir, exist_ok=True)
 
     check_if_runnable_package_file = os.path.join(output_dir, "check-if-runnable-package.txt")
-    partially_c_packages_file = os.path.join(output_dir, "partially-c-packages.txt")
+    partially_c_packages_file = os.path.join(output_dir, "runnable-partially-c-packages.txt")
     not_runnable_packages_file = os.path.join(output_dir, "not-runnable-packages.txt")
     runnable_non_c_packages_file = os.path.join(output_dir, "non-c-runnable-packages.txt")
     runnable_unknown_language_packages_file = os.path.join(output_dir, "runnable-unknown-language-packages.txt")
@@ -137,4 +132,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    arg_parser = create_argument_parser()
+    args = arg_parser.parse_args()
+
+    main(args.db, args.output_dir)

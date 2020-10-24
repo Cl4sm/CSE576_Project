@@ -2,7 +2,6 @@
 
 # Clang based parser to extract function names and line numbers from C/C++ software packages/repos
 
-import argparse
 import glob
 import itertools
 import json
@@ -88,7 +87,7 @@ def find_source_files(sources_dir: str) -> Iterator[str]:
     return itertools.chain(*src_files)
 
 
-def create_argument_parser() -> argparse.ArgumentParser:
+def create_argument_parser():
     """
     Create CLI arguments parser
     """
@@ -105,27 +104,23 @@ def create_argument_parser() -> argparse.ArgumentParser:
     return argparser
 
 
-def main():
-    argparser = create_argument_parser()
-    args = argparser.parse_args()
+def main(package_name, src_dirs, output_file, package_tree):
     package_src_dirs = []
 
-    output_file = os.path.abspath(args.output_file)
-    package_tree_dir = os.path.abspath(args.package_tree)
+    output_file = os.path.abspath(output_file)
+    package_tree_dir = os.path.abspath(package_tree)
     if not os.path.isdir(package_tree_dir):
         print(f"{package_tree_dir} is not a valid directory", file=sys.stderr)
         return
 
-    if args.package_name:
-        package_name = args.package_name
-    else:
+    if not package_name:
         package_name = os.path.basename(package_tree_dir)
 
-    if args.src_dirs:
-        for src_dir in args.src_dirs:
+    if src_dirs:
+        for src_dir in src_dirs:
             package_src_dir = os.path.join(package_tree_dir, src_dir)
             if not os.path.isdir(package_src_dir):
-                print(f"{args.src_dir} not found in {package_tree_dir}. Ignoring.", file=sys.stderr)
+                print(f"{src_dir} not found in {package_tree_dir}. Ignoring.", file=sys.stderr)
             else:
                 package_src_dirs.append(package_src_dir)
     else:
@@ -170,4 +165,7 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    import argparse
+    argparser = create_argument_parser()
+    args = argparser.parse_args()
+    main(args.package_name, args.src_dirs, args.output_file, args.package_tree)
