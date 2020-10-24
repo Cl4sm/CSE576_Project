@@ -1,4 +1,7 @@
 import os
+import subprocess
+
+import tqdm
 import docker
 
 from src.utils import tmp_cwd, docker_cleanup
@@ -6,8 +9,6 @@ from src.parse_debtags_to_tinydb import main as debtags_to_tinydb
 from src.classify_packages_using_debtags import main as classify_packages
 from src.filter_packages_using_github_linguist import main as gl_filter_packages
 from src.parse_package_using_clang import main as clang_parse
-
-import tqdm
 
 
 ##### CONFIG ######
@@ -144,6 +145,9 @@ if __name__ == "__main__":
     if not args.skip_download:
         download_prep(args.debtag, args.output_folder)
         download()
+        assert os.path.exists(output_dir)
+        uid = os.getuid()
+        subprocess.run(['sudo', 'chown', '-R', f'{uid}:{uid}', package_dir])
     if args.download_only:
         exit(0)
 
