@@ -107,9 +107,8 @@ since specific details of those tasks have not yet been identified, we do not ha
    $ docker run -v $PWD/debtags-classification:/dataset-packages --name cse576-package-source-downloader -it debian:jessie bash
    # This will pull docker the image if doesn't exist and then drop you into a shell inside the container.
    # For here on, everything is inside the container.
-   $ echo "deb-src http://deb.debian.org/debian jessie main" >> /etc/apt/sources.list
-   $ echo "deb-src http://security.debian.org/debian-security jessie/updates main" >> /etc/apt/sources.list
-   $ echo "deb-src http://deb.debian.org/debian jessie-updates main" >> /etc/apt/sources.list
+   $ echo "deb https://allstar.jhuapl.edu/debian jessie main" > /etc/apt/sources.list
+   $ echo "deb-src https://allstar.jhuapl.edu/debian jessie main" >> /etc/apt/sources.list
    $ apt update
    $ cd /dataset-packages
    $ mkdir runnable-c-only-packages  runnable-partially-c-packages  runnable-unknown-language-packages
