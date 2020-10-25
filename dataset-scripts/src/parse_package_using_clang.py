@@ -151,7 +151,7 @@ def main(package_name, src_dirs, output_file, package_tree):
             if src_file in package_functions:
                 for data in src_file_data:
                     if data not in package_functions[src_file]:
-                        package_functions[src_file].extend(data)
+                        package_functions[src_file].append(data)
             else:
                 package_functions[src_file] = src_file_data
 
