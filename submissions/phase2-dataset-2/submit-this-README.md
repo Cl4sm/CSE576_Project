@@ -77,104 +77,28 @@ since specific details of those tasks have not yet been identified, we do not ha
    instructions are mostly based on that; please adjust accordingly for other distros:
 
    ```bash
-   $ sudo apt update && sudo apt install python3-pip
+   $ sudo apt update && sudo apt install python3-pip docker-ce
    $ sudo pip install virtualenvwrapper
    # Add "source /usr/local/bin/virtualenvwrapper.sh" to your shell's RC($HOME/.bashrc, $HOME/.zshrc etc) file
    # and restart terminal before continuing
    $ mkvirtualenv --python=`which python3` cse576
    (cse576) $ pip install -r requirements.txt
    ```
+2. Build the dataset by running the automation script we have prepared. This script will perform several tasks
+   - Parse debtags file into a TinyDB database
+   - Perform first classification of packages using the `debtags` file
+   - Download all source code in a docker environment(This step may take a long time, up to hours)
+   - Perform second level classification using GitHub linguist.
+   - Extract data using clang parser. This step would display errors that source packages could not be found for some packages. This
+       is because we use a heuristic to find the source folder(search for folders named `src`, `Src`, `source` etc). We will explore
+       improving this going ahead. Alternatively, you can manually specify the source directory name using `--src-dirs`.
 
-2. Parse debtags file into a TinyDB database:
-
-    ```bash
-    (cse576) $ python3 parse-debtags-to-tinydb.py --debtags-file debtags-2020-10-16.txt --json debtags-2020-10-16.json
-    ```
-
-3. Perform first classification of packages using the `debtags` file.
-
-    ```bash
-    (cse576) $ python3 classify-packages-using-debtags.py --db debtags-2020-10-16.json --output-dir debtags-classification
-    ```
-
-4. Download all source packages needed. Since we download packages from Debian jessie's source repositories, this requires
-   using a Debian jessie distribution to download the packages. The easiest way is to use a docker container running Debian
-   jessie. As first step, [install docker using the official instructions](https://docs.docker.com/engine/install/ubuntu/).
-
-   (Warning: This process will take a lot of time - about 11GB of packages need to be downloaded. Consider downloading just a few
-    packages in each category for testing)
-
+   Before running the code, make sure you have a working docker environment installed
    ```bash
-   $ docker run -v $PWD/debtags-classification:/dataset-packages --name cse576-package-source-downloader -it debian:jessie bash
-   # This will pull docker the image if doesn't exist and then drop you into a shell inside the container.
-   # For here on, everything is inside the container.
-   $ echo "deb https://allstar.jhuapl.edu/debian jessie main" > /etc/apt/sources.list
-   $ echo "deb-src https://allstar.jhuapl.edu/debian jessie main" >> /etc/apt/sources.list
-   $ apt update
-   $ cd /dataset-packages
-   $ mkdir runnable-c-only-packages  runnable-partially-c-packages  runnable-unknown-language-packages
-   $ cd /dataset-packages/runnable-c-only-packages
-   $ for i in $(cat /dataset-packages/runnable-c-only-packages.txt)
-     do
-        echo -n "Downloading sources of $i..."
-        apt source $i
-        echo "done."
-     done
-    $ cd /dataset-packages/runnable-partially-c-packages
-    $ for i in $(cat /dataset-packages/runnable-partially-c-packages.txt)
-      do
-        echo -n "Downloading sources of $i..."
-        apt source $i
-        echo "done."
-      done
-    $ cd /dataset-packages/runnable-unknown-language-packages
-    $ for i in $(cat /dataset-packages/runnable-unknown-language-packages.txt)
-      do
-        echo -n "Downloading sources of $i..."
-        apt source $i
-        echo "done."
-      done
-    # Exit from container
-    $ exit
+   python gen_dataset.py -o <output_folder>
    ```
 
-5. Perform second level classification using GitHub linguist.
-
-    ```bash
-    # Docker creates all files and folders as owned by root unless configured otherwise. Let's change that.
-    $ sudo chown $USER:$USER -R debtags-classification
-    $ workon cse576  # Activate virtual environment if not active
-    (cse576) $ python3 filter-packages-using-github-linguist.py --packages-dir $(realpath ./debtags-classification/runnable-partially-c-packages) \
-                        --output ./debtags-classification/runnable-partially-c-packages-linguist-filtered.txt
-    (cse576) $ python3 filter-packages-using-github-linguist.py --packages-dir $(realpath ./debtags-classification/runnable-unknown-language-packages) \
-                        --output ./debtags-classification/runnable-unknown-language-packages-linguist-filtered.txt
-    ```
-
-6. Extract data using clang parser. This step would display errors that source packages could not be found for some packages. This
-   is because we use a heuristic to find the source folder(search for folders named `src`, `Src`, `source` etc). We will explore
-   improving this going ahead. Alternatively, you can manually specify the source directory name using `--src-dirs`.
-
-    ```bash
-    $ workon cse576  # Activate virtual environment if not active
-    (cse576) $ mkdir clang-filtered
-    (cse576) $ for i in $(ls debtags-classification/runnable-c-only-packages)
-               do
-                    python3 parse-package-using-clang.py --package-tree $(realpath ./debtags-classification/runnable-c-only-packages/$i) \
-                        --output-file clang-filtered/$i.json
-               done
-    (cse576) $ for i in $(cat debtags-classification/runnable-partially-c-packages-linguist-filtered.txt)
-               do
-                    python3 parse-package-using-clang.py --package-tree $(realpath ./debtags-classification/runnable-partially-c-packages/$i) \
-                        --output-file clang-filtered/$i.json
-               done
-    (cse576) $ for i in $(cat debtags-classification/runnable-unknown-language-packages-linguist-filtered.txt)
-               do
-                    python3 parse-package-using-clang.py --package-tree $(realpath ./debtags-classification/runnable-unknown-language-packages/$i) \
-                        --output-file clang-filtered/$i.json
-               done
-    ```
-
-7. Perform final filtering using the Allstar dataset. This uses a package name to package version mapping derived by
+3. Perform final filtering using the Allstar dataset. This uses a package name to package version mapping derived by
    parsing the debian packaging metadata(using the files `runnable-c-only-packages-names.txt` and
    `runnable-unknown-language-packages-names.txt`).
 
