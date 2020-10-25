@@ -59,7 +59,7 @@ For the project, we split our initial tasks along these three categories:
 3. Creating the dataset.
 
 We assigned a specific person responsible for each task who will perform the implementation. However, high level details of each
-task are discussed among the team and finalized. Additionally, members also help the responsible person as needed. The task
+task are discussed among the team and finalized. Additionally, other team members also help the person responsible as needed. The task
 responsibility assignment was done as follows:
 
 - William Gibbs: Tokenizing source code using IDA decompiler output.
