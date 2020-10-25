@@ -77,7 +77,7 @@ since specific details of those tasks have not yet been identified, we do not ha
    instructions are mostly based on that; please adjust accordingly for other distros:
 
    ```bash
-   $ sudo apt update && sudo apt install python3-pip docker-ce
+   $ sudo apt update && sudo apt install python3-pip docker
    $ sudo pip install virtualenvwrapper
    # Add "source /usr/local/bin/virtualenvwrapper.sh" to your shell's RC($HOME/.bashrc, $HOME/.zshrc etc) file
    # and restart terminal before continuing
@@ -93,17 +93,25 @@ since specific details of those tasks have not yet been identified, we do not ha
        is because we use a heuristic to find the source folder(search for folders named `src`, `Src`, `source` etc). We will explore
        improving this going ahead. Alternatively, you can manually specify the source directory name using `--src-dirs`.
 
-   Before running the code, make sure you have a working docker environment installed
+   Before running the code, make sure you have a working docker environment installed (you may need sudoless docker)
    ```bash
    python gen_dataset.py -o <output_folder>
    ```
 
-3. Perform final filtering using the Allstar dataset. This uses a package name to package version mapping derived by
+3. Perform final filtering using the Allstar dataset. Filters out uncompilable packages. We assume that if the Allstar repo
+   does not contain a corresponding binary for a package, that the package is not compilable.
+
+   This script uses a package name to package version mapping derived by
    parsing the debian packaging metadata(using the files `runnable-c-only-packages-names.txt` and
    `runnable-unknown-language-packages-names.txt`).
 
     ```bash
     $ workon cse576  # Activate virtual environment if not active
-    (cse576) $ python3 allstar-filter-nobins.py debtags-classification/runnable-c-only-packages
-    (cse576) $ python3 allstar-filter-nobins.py debtags-classification/runnable-unknown-language-packages
+    (cse576) $ cd src
+    (cse576) $ python allstar-filter-nobins.py ../<output_folder>/dataset-packages/runnable-c-only-packages
+    (cse576) $ python allstar-filter-nobins.py ../<output_folder>/dataset-packages/runnable-unknown-language-packages
     ```
+
+  The final jsons are output to the following folders:
+    <output_folder>/dataset-packages/runnable-c-only-packages-hasbinaries
+    <output_folder>/dataset-packages/runnable-unknown-language-hasbinaries
