@@ -14,9 +14,11 @@ parser.add_argument('directory',
 
 args = parser.parse_args()
 repo = allstar.AllstarRepo("amd64")
+target_dir = os.path.normpath(args.directory)
+
 all_packages = repo.package_list()
-package_files = os.listdir(args.directory)
-map_filepath = os.path.dirname(args.directory)+"-names.txt"
+package_files = os.listdir(target_dir)
+map_filepath = os.path.basename(target_dir)+"-names.txt"
 
 package_map = dict()
 
@@ -42,11 +44,12 @@ nomapping = list()
 all_packages.sort()
 package_files.sort()
 
+print("Checking package jsons from Allstar repo for binaries...")
 count = 0
 for pfile in package_files:
     pname = pfile.split(".json")[0]
     if pname not in package_map.keys():
-        print("No corresponding package mapping found for %s" % pname)
+        # print("No corresponding package mapping found for %s" % pname)
         if pfile not in nomapping:
             nomapping.append(pfile)
         continue
@@ -57,13 +60,13 @@ for pfile in package_files:
     errored = False
     pot_errors = []
     # found match
-    print("Grabbing packages for %s" % (pname))
+    # print("Grabbing packages for %s" % (pname))
     for package_name in packages:
-        print("   - %s" % package_name)
+        # print("   - %s" % package_name)
         try:
             index = repo._package_index(package_name)
         except Exception as e1:
-            print("   ---> ERROR %s" % e1)
+            # print("   ---> ERROR %s" % e1)
 
             errorMessage = "%s: %s" % (package_name, e1)
             pot_errors.append(errorMessage)
@@ -91,8 +94,8 @@ for pfile in package_files:
 
 print("Found %d/%d Packages with binaries on repo:" % (count, len(package_files)))
 
-filtered_dir = args.directory.strip('/')+"-hasbinaries"
-orignal_dir = args.directory.strip('/')
+filtered_dir = target_dir+"-hasbinaries"
+orignal_dir = target_dir
 if os.path.exists(filtered_dir):
     shutil.rmtree(filtered_dir)
 os.mkdir(filtered_dir)
