@@ -1,8 +1,8 @@
 # README
 
 This is a document describing how we created the dataset, how to run the scripts to recreate the dataset and the task split up
-between the team for the project. We strongly recommend using a Markdown previewer to read this, specially for the instructions to
-recreate the dataset: either your editor's markdown preview or [an online previewer](https://dillinger.io/).
+between the team for the project. We strongly recommend using a Markdown previewer to read this, especially for the instructions to
+recreate the dataset: use either your editor's markdown preview or [an online previewer](https://dillinger.io/).
 
 ## Dataset description
 
@@ -32,7 +32,7 @@ The dataset is created using 3 levels of filtering:
 
     - Categories 1 and 4 are directly rejected because we are focusing only on C programs and our evaluation requires executables
       since we plan to run test suites to ensure semantic correctness is preserved.
-    - Categories 2, 5 and 6 require further processing. For now, we ignore 2 and perform the second filtering for other
+    - Categories 2, 5 and 6 require further processing. For now, we will ignore 2 and perform the second filtering for other
       categories.
     - Category 3 is directly shortlisted for the final filtering.
 
@@ -56,9 +56,9 @@ For the project, we split our initial tasks along these three categories:
 
 1. Tokenizing source code and IDA decompiler output.
 2. Creating and training the model using fairseq.
-3. Creating dataset.
+3. Creating the dataset.
 
-We assigned a specific person responsible for each task who will perform the implementatin. However, high level details of each
+We assigned a specific person responsible for each task who will perform the implementation. However, high level details of each
 task are discussed among the team and finalized. Additionally, members also help the responsible person as needed. The task
 responsibility assignment was done as follows:
 
@@ -68,7 +68,7 @@ responsibility assignment was done as follows:
 - HuiJun Tay: Responsible for model creation and training using fairseq. Also helped with generating dataset.
 - Arvind Sriram Raj: Creating initial dataset from which training and testing sets will be derived.
 
-In addition, we will split the final evaluation task amongst all of us us. We have high level evaluation tasks identified but
+In addition, we will split the final evaluation task amongst all of us. We have high level evaluation tasks identified but
 since specific details of those tasks have not yet been identified, we do not have a clear distribution of tasks amongst us yet.
 
 ## How to run the code
