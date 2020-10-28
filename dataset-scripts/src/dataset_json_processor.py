@@ -101,7 +101,6 @@ class DatasetJSONProcessor(object):
             return json.loads(package_index_str)
         except json.decoder.JSONDecodeError:
             print(f"Unable to JSON decode package info. Contents dumped to {package_index_out_file}", file=self.log_fh)
-            return {}
 
     def _get_package_binaries_details(self, package: str, package_allstar_info: Dict, package_data_out_dir: pathlib.Path):
         """
@@ -158,6 +157,7 @@ class DatasetJSONProcessor(object):
                 # This package is already processed. No need to process again.
                 continue
 
+            errored = False
             package_data_out_dir.mkdir(exist_ok=True)
             # Find all executables in the package from Allstar repo
             package_binaries_details = {}
@@ -165,7 +165,13 @@ class DatasetJSONProcessor(object):
                 package_allstar_info = self._get_package_allstar_config(deb_package, package_data_out_dir)
                 if package_allstar_info == {}:
                     continue
+                elif package_allstar_info is None:
+                    errored = True
+                    continue
                 package_binaries_details[deb_package] = self._get_package_binaries_details(deb_package, package_allstar_info, package_data_out_dir)
+            if errored:
+                # Some package's Allstar metadata is corrupted. Defer processing source package until it's fixed.
+                continue
             # Extract functions in package
             package_functions = self._extract_functions(package_source_dir, package_functions_data, package_data_out_dir)
             # Dump package info
