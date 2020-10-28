@@ -52,14 +52,33 @@ class AllstarRepo(object):
         return self.packages[pkg]
 
     def _package_index(self, pkg):
+        index_url = self._package_index_url(pkg)
+        return self.rsession.get(index_url).json()
+
+    def _package_index_raw(self, pkg):
+        index_url = self._package_index_url(pkg)
+        return self.rsession.get(index_url).text
+
+    def _package_index_url(self, pkg):
         pkg_url = urljoin(self.base_url, '/repo/p{}/{}/{}/'.format(self._package_part(pkg),
                                                                    self.arch, pkg))
         
-        index_url = urljoin(pkg_url, 'index.json')
-        return self.rsession.get(index_url).json()
+        return urljoin(pkg_url, 'index.json')
 
     def package_list(self):
         return list(self.packages.keys())
+
+    def package_binaries_details(self, pkg, pkg_info):
+        binaries = []
+        for i in range(0, len(pkg_info['binaries'])):
+            f = pkg_info['binaries'][i]['file']
+            binary_url = urljoin(self.base_url,
+                                 '/repo/p{}/{}/{}/{}'.format(self._package_part(pkg),
+                                                             self.arch, pkg, f))
+            binaries.append({'name': pkg_info['binaries'][i]['name'],
+                             'url': binary_url})
+
+        return binaries
 
     def package_binaries(self, pkg):
         binaries = []
