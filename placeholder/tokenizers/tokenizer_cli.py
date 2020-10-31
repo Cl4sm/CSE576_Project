@@ -1,6 +1,6 @@
 import io
 import os
-from placeholder import CTokenizer, CTreeTokenizer
+from placeholder import CTokenizer, IDATokenizer
 
 def sanitize_input(args):
     if args.input_file and args.input_bin:
@@ -35,7 +35,7 @@ if __name__ == '__main__':
         tokenizer = CTokenizer()
         tokens = tokenizer.tokenize(source)
     elif args.input_bin:
-        tokenizer = CTreeTokenizer()
+        tokenizer = IDATokenizer()
         tokens = tokenizer.tokenize(args.input_bin, args.func_name)
 
     print(tokens)

@@ -1,2 +1,2 @@
 from .c_tokenizer import CTokenizer
-from .ctree_tokenizer import CTreeTokenizer
+from .ida_tokenizer import IDATokenizer
