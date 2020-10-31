@@ -70,6 +70,14 @@ class IDATokenizer:
         idx = lines.index('JSON:')
         info = json.loads(lines[idx+1])
         print(f"binary info extraction elapsed in {info['time']} seconds")
+        self._save_cache(bin_path, info)
+        return info
+
+    def get_bin_info(self, bin_path):
+        info = self._load_cache(bin_path)
+        # try to load cached info
+        if not info:
+            info = self._extract_bin_info(bin_path)
         return info
 
     def get_func_info(self, bin_path, func_name):
@@ -78,7 +86,6 @@ class IDATokenizer:
         # try to load cached info
         if not info:
             info = self._extract_bin_info(bin_path)
-            self._save_cache(bin_path, info)
 
         data = info['data']
 
