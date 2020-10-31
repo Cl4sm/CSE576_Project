@@ -151,6 +151,7 @@ class CTokenizer:
 
             # ignore comment token
             if typ == TokenKind.COMMENT:
+                i += 1
                 continue
             # detokenize literals
             elif typ ==  TokenKind.LITERAL:
