@@ -57,7 +57,7 @@ class IDATokenizer:
             log_name = f.name
             env = os.environ
             env["IDALOG"] = f.name
-            subprocess.run(cmd, env=env)
+            subprocess.run(cmd, env=env, timeout=10*60)
             assert os.path.getsize(log_name) != 0, cmd
             content = f.read()
 

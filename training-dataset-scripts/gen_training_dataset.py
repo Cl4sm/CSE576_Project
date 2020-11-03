@@ -108,12 +108,16 @@ def process_pkg(pkg_dir):
     ida_tokenizer = IDATokenizer()
     info_dict = {}
     for path in bin_paths:
-        info = ida_tokenizer.get_bin_info(path)
-        info = info['data']
-        info_dict[os.path.basename(path)] = info
+        try:
+            info = ida_tokenizer.get_bin_info(path)
+            info = info['data']
+            info_dict[os.path.basename(path)] = info
+        except Exception as e:
+            logger.exception(e)
 
     # iterate through functions
     for func_name in pkg_data['functions']:
+        logger.debug("processing %s...", func_name)
         try:
             process_func(func_name, info_dict, pkg_dir, pkg_data)
         except Exception as e:
