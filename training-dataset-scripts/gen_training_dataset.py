@@ -63,8 +63,8 @@ def process_func(func_name, info_dict, pkg_dir, pkg_data):
         logger.warning(f"[-] multiple definitions for {func_name} in package {pkg_name}")
         return
     logger.info(f"[+] found exactly one definition of {func_name} in package {pkg_name}")
-    with open(os.path.join(pkg_dir, 'src', func_name+'.c')) as f:
-        raw_code = f.read()
+    with open(os.path.join(pkg_dir, 'src', func_name+'.c'), "rb") as f:
+        raw_code = f.read().decode(errors="replace")
 
     bin_path = last_bin_path
     info = last_info
