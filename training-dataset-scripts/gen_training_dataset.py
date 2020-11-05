@@ -92,7 +92,8 @@ def process_func(func_name, info_dict, pkg_dir, pkg_data):
                             "info_bin": info_bin,
                             "info_src": pkg_data["functions"][func_name]
                             }
-    save_mapping()
+    if id_cnt % 0x1000 == 0:
+        save_mapping()
 
 def process_pkg(pkg_dir):
     pkg_dir = os.path.abspath(pkg_dir)
@@ -155,3 +156,4 @@ if __name__ == '__main__':
         logger.info(f"processing package {pkg}...")
         pkg_dir = os.path.join(args.dataset_dir, pkg)
         process_pkg(pkg_dir)
+    save_mapping()
