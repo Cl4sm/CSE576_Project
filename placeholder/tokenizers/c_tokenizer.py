@@ -220,6 +220,7 @@ class CTokenizer:
 
             # ignore comment token
             if typ == TokenKind.COMMENT:
+                i += 1
                 continue
             # detokenize literals
             elif typ ==  TokenKind.LITERAL:
@@ -266,7 +267,7 @@ class CTokenizer:
 
 if __name__ == "__main__":
     tokenizer = CTokenizer()
-    tokens = tokenizer.tokenize(open("./test.c").read())
+    tokens = tokenizer.tokenize(open("./tests/c_files/test_1.c").read())
     print("tokens", tokens)
     new_code = tokenizer.detokenize(tokens)
     print(new_code)

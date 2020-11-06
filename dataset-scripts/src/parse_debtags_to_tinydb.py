@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 
-
-import argparse
 import os
 import sys
 
@@ -18,12 +16,7 @@ def create_argument_parser():
     return parser
 
 
-def main():
-    args_parser = create_argument_parser()
-    args = args_parser.parse_args()
-    debtags_file = args.debtags_file
-    debtags_json_out = args.json
-
+def main(debtags_file, debtags_json_out):
     if not os.path.isfile(debtags_file):
         print(f"{debtags_file} is not a valid file", file=sys.stderr)
         return
@@ -56,6 +49,9 @@ def main():
     db.close()
     return
 
-
 if __name__ == "__main__":
-    main()
+    import argparse
+    args_parser = create_argument_parser()
+    args = args_parser.parse_args()
+
+    main(args.debtags_file, args.json)
