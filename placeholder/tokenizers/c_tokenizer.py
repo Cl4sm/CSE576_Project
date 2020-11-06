@@ -46,6 +46,7 @@ class CTokenizer:
             'global_var': {},
         }
 
+    @timeout(seconds=10)
     def parse(self, code):
         tmp_fpath = os.path.join("/tmp", "c_tokenizer-"+"".join(random.choices(string.ascii_letters, k=20))+".c")
 
@@ -58,7 +59,6 @@ class CTokenizer:
         #    print(str(c.kind)+'\t'+str(c.spelling))
         return tu
 
-    @timeout(seconds=10)
     def _tokenize(self, code, replace_tokens=False):
         # parse
         tu = self.parse(code)
