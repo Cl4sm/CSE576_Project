@@ -46,20 +46,28 @@ class CTokenizer:
             'global_var': {},
         }
 
-    @timeout(seconds=10)
-    def _tokenize(self, code, replace_tokens=False):
-        # parse
+    def parse(self, code):
         tmp_fpath = os.path.join("/tmp", "c_tokenizer-"+"".join(random.choices(string.ascii_letters, k=20))+".c")
 
         # CXTranslationUnit_KeepGoing = 0x200
         # ref: https://clang.llvm.org/doxygen/group__CINDEX__TRANSLATION__UNIT.html
         tu = self.idx.parse(tmp_fpath, args=['-std=c11'], unsaved_files=[(tmp_fpath, code)], options=0x200)
 
+        #print(code)
+        #for c in tu.cursor.walk_preorder():
+        #    print(str(c.kind)+'\t'+str(c.spelling))
+        return tu
+
+    @timeout(seconds=10)
+    def _tokenize(self, code, replace_tokens=False):
+        # parse
+        tu = self.parse(code)
+
         # get raw_tokens from translation unit
         raw_tokens = tu.get_tokens(extent=tu.cursor.extent)
 
         # record token replacement by abstraction analysis
-        self.token_abstractor(tu)
+        self.token_abstractor(tu, code)
 
         # now perform token replacement
         abstracted_tokens = []
@@ -73,8 +81,34 @@ class CTokenizer:
                 abstracted_tokens.append((token.spelling, token.kind))
         return abstracted_tokens
 
-    def token_abstractor(self, tu):
+    def token_abstractor(self, tu, code):
         def make_name(x): return f"{x}_{len(self.replace_dict[x])//2}"
+
+        global_vars = set()
+        # process global variables which are not valid out of the program contexts
+        for diag in tu.diagnostics:
+            # we don't care about warnings
+            if diag.severity < clang.cindex.Diagnostic.Error:
+                continue
+            # usage of unknown global variable is "undeclared identifier" error
+            res = re.search(f"use of undeclared identifier '(.*)'", diag.spelling)
+            if not res:
+                continue
+            var_name = res.group(1)
+            global_vars.add(var_name)
+            # now add this abastraction into our mapping
+            if var_name not in self.replace_dict['global_var']:
+                tup = (make_name('global_var'), var_name, "global_var")
+                self.replace_dict['global_var'][var_name] = tup
+                self.replace_dict['global_var'][tup[0]] = tup
+
+        declarations = ""
+        for var in global_vars:
+            declarations += f"extern {var};\n"
+        new_code = declarations + code
+
+        # parse new code
+        tu = self.parse(new_code)
 
         # process valid tokens
         for c in tu.cursor.walk_preorder():
@@ -96,6 +130,9 @@ class CTokenizer:
                 self.replace_dict['arg'][tup[0]] = tup
 
             elif c.kind == CursorKind.VAR_DECL:
+                # in the new code, a VAR_DECL cursor might be introduced by us for global variables
+                if c.spelling in self.replace_dict['global_var']:
+                    continue
                 tup = (make_name('var'), c.spelling, c.kind)
                 self.replace_dict['var'][c.spelling] = tup
                 self.replace_dict['var'][tup[0]] = tup
@@ -107,21 +144,6 @@ class CTokenizer:
                     self.replace_dict['str_lit'][c.spelling] = tup
                     self.replace_dict['str_lit'][tup[0]] = tup
 
-        # process global variables which are not valid out of the program contexts
-        for diag in tu.diagnostics:
-            # we don't care about warnings
-            if diag.severity < clang.cindex.Diagnostic.Error:
-                continue
-            # usage of unknown global variable is "undeclared identifier" error
-            res = re.search(f"use of undeclared identifier '(.*)'", diag.spelling)
-            if not res:
-                continue
-            var_name = res.group(1)
-            # now add this abastraction into our mapping
-            if var_name not in self.replace_dict['global_var']:
-                tup = (make_name('global_var'), var_name, "global_var")
-                self.replace_dict['global_var'][var_name] = tup
-                self.replace_dict['global_var'][tup[0]] = tup
 
     def abstract_name_replace(self, token):
         return next(x[0] for x in self.replace_dict['func'].keys() + self.replace_dict['var'].keys())
