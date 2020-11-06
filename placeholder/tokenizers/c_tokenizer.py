@@ -1,4 +1,3 @@
-from os import replace
 import re
 import os
 import string
@@ -50,31 +49,38 @@ class CTokenizer:
     def _tokenize(self, code, replace_tokens=False):
         # parse
         tmp_fpath = os.path.join("/tmp", "c_tokenizer-"+"".join(random.choices(string.ascii_letters, k=20))+".c")
-        parsed_code = self.idx.parse(tmp_fpath, args=['-std=c11'], unsaved_files=[(tmp_fpath, code)], options=0)
 
-        for c in parsed_code.cursor.walk_preorder():
-            print(c.kind, c.spelling)
-        self.token_abstractor(parsed_code)
-        tokens = parsed_code.get_tokens(extent=parsed_code.cursor.extent)
-        return_tokens = []
-        if replace_tokens:
-            for token in tokens:
-                hash_1 = hash(token.spelling)
-                for typ in self.replace_dict.keys():
-                    if hash_1 in self.replace_dict[typ]:
-                        return_tokens.append(
-                            (self.replace_dict[typ][hash_1][0], token.kind))
-                        break
-                else:
-                    return_tokens.append((token.spelling, token.kind))
-        else:
-            return_tokens = [(tok.spelling, tok.kind) for tok in tokens]
-        return return_tokens
+        # CXTranslationUnit_KeepGoing = 0x200
+        # ref: https://clang.llvm.org/doxygen/group__CINDEX__TRANSLATION__UNIT.html
+        tu = self.idx.parse(tmp_fpath, args=['-std=c11'], unsaved_files=[(tmp_fpath, code)], options=0x200)
 
-    def token_abstractor(self, parsed_code):
+        # get raw_tokens from translation unit
+        raw_tokens = tu.get_tokens(extent=tu.cursor.extent)
+
+        # if we don't want to replace tokens, just simply return
+        if not replace_tokens:
+            return [(tok.spelling, tok.kind) for tok in raw_tokens]
+
+        # record token replacement by abstraction analysis
+        self.token_abstractor(tu)
+
+        # now perform token replacement
+        abstracted_tokens = []
+        for token in raw_tokens:
+            hash_1 = hash(token.spelling)
+            for typ in self.replace_dict.keys():
+                if hash_1 in self.replace_dict[typ]:
+                    abstracted_tokens.append(
+                        (self.replace_dict[typ][hash_1][0], token.kind))
+                    break
+            else:
+                abstracted_tokens.append((token.spelling, token.kind))
+        return abstracted_tokens
+
+    def token_abstractor(self, tu):
         def make_name(x): return f"{x}_{len(self.replace_dict[x])//2}"
 
-        for c in parsed_code.cursor.walk_preorder():
+        for c in tu.cursor.walk_preorder():
             tup = None
             if c.kind == CursorKind.FUNCTION_DECL:
                 tup = (make_name('func'), c.spelling, c.kind)
