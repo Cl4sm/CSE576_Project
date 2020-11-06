@@ -43,6 +43,7 @@ class CTokenizer:
             'arg': {},
             'var': {},
             'str_lit': {},
+            'global_var': {},
         }
 
     @timeout(seconds=10)
@@ -57,9 +58,10 @@ class CTokenizer:
         # get raw_tokens from translation unit
         raw_tokens = tu.get_tokens(extent=tu.cursor.extent)
 
-        # if we don't want to replace tokens, just simply return
-        if not replace_tokens:
-            return [(tok.spelling, tok.kind) for tok in raw_tokens]
+        for c in tu.cursor.walk_preorder():
+            print(str(c.kind)+'\t'+str(c.spelling))
+        for diag in tu.diagnostics:
+            print(diag.severity, diag.spelling)
 
         # record token replacement by abstraction analysis
         self.token_abstractor(tu)
@@ -67,11 +69,10 @@ class CTokenizer:
         # now perform token replacement
         abstracted_tokens = []
         for token in raw_tokens:
-            hash_1 = hash(token.spelling)
             for typ in self.replace_dict.keys():
-                if hash_1 in self.replace_dict[typ]:
+                if token.spelling in self.replace_dict[typ]:
                     abstracted_tokens.append(
-                        (self.replace_dict[typ][hash_1][0], token.kind))
+                        (self.replace_dict[typ][token.spelling][0], token.kind))
                     break
             else:
                 abstracted_tokens.append((token.spelling, token.kind))
@@ -84,40 +85,30 @@ class CTokenizer:
             tup = None
             if c.kind == CursorKind.FUNCTION_DECL:
                 tup = (make_name('func'), c.spelling, c.kind)
-                hash_1 = hash(c.spelling)
-                hash_2 = hash(tup[0])
-                self.replace_dict['func'][hash_1] = tup
-                self.replace_dict['func'][hash_2] = tup
+                self.replace_dict['func'][c.spelling] = tup
+                self.replace_dict['func'][tup[0]] = tup
 
             elif c.kind == CursorKind.CALL_EXPR:
-                if not hash(c.spelling) in self.replace_dict['func']:
+                if not c.spelling in self.replace_dict['func']:
                     tup = (make_name('func'), c.spelling, c.kind)
-                    hash_1 = hash(c.spelling)
-                    hash_2 = hash(tup[0])
-                    self.replace_dict['func'][hash_1] = tup
-                    self.replace_dict['func'][hash_2] = tup
+                    self.replace_dict['func'][c.spelling] = tup
+                    self.replace_dict['func'][tup[0]] = tup
 
             elif c.kind == CursorKind.PARM_DECL:
                 tup = (make_name('arg'), c.spelling, c.kind)
-                hash_1 = hash(c.spelling)
-                hash_2 = hash(tup[0])
-                self.replace_dict['arg'][hash_1] = tup
-                self.replace_dict['arg'][hash_2] = tup
+                self.replace_dict['arg'][c.spelling] = tup
+                self.replace_dict['arg'][tup[0]] = tup
 
             elif c.kind == CursorKind.VAR_DECL:
                 tup = (make_name('var'), c.spelling, c.kind)
-                hash_1 = hash(c.spelling)
-                hash_2 = hash(tup[0])
-                self.replace_dict['var'][hash_1] = tup
-                self.replace_dict['var'][hash_2] = tup
+                self.replace_dict['var'][c.spelling] = tup
+                self.replace_dict['var'][tup[0]] = tup
 
             elif c.kind == CursorKind.STRING_LITERAL:
-                if not hash(c.spelling) in self.replace_dict['str_lit']:
+                if not c.spelling in self.replace_dict['str_lit']:
                     tup = (make_name('str_lit').replace('_', ''), c.spelling, c.kind)
-                    hash_1 = hash(c.spelling)
-                    hash_2 = hash(tup[0])
-                    self.replace_dict['str_lit'][hash_1] = tup
-                    self.replace_dict['str_lit'][hash_2] = tup
+                    self.replace_dict['str_lit'][c.spelling] = tup
+                    self.replace_dict['str_lit'][tup[0]] = tup
 
     def abstract_name_replace(self, token):
         return next(x[0] for x in self.replace_dict['func'].keys() + self.replace_dict['var'].keys())
