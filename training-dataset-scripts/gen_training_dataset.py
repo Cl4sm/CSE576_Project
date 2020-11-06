@@ -152,7 +152,7 @@ if __name__ == '__main__':
         assert os.path.isdir(args.dataset_dir), f"{args.dataset_dir} doesn't exist or is not a directory!"
 
     pkgs = os.listdir(args.dataset_dir)
-    for pkg in tqdm.tqdm(pkgs):
+    for pkg in tqdm.tqdm(pkgs, smoothing=0):
         logger.info(f"processing package {pkg}...")
         pkg_dir = os.path.join(args.dataset_dir, pkg)
         process_pkg(pkg_dir)
