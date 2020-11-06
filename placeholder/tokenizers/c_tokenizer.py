@@ -1,10 +1,12 @@
+from os import replace
 import re
 import os
 import string
 import random
+from collections import defaultdict
 
 import clang
-from clang.cindex import TokenKind
+from clang.cindex import TokenKind, CursorKind
 from sacrebleu.tokenizers import TokenizerV14International
 
 from .utils.timeout import TimeoutError, timeout
@@ -37,17 +39,84 @@ class CTokenizer:
     def __init__(self):
         self.idx = clang.cindex.Index.create()
         self.bleu_tokenizer = TokenizerV14International()
+        self.replace_dict = {
+            'func': {},
+            'arg': {},
+            'var': {},
+            'str_lit': {},
+        }
 
     @timeout(seconds=10)
-    def _tokenize(self, code):
+    def _tokenize(self, code, replace_tokens=False):
         # parse
         tmp_fpath = os.path.join("/tmp", "c_tokenizer-"+"".join(random.choices(string.ascii_letters, k=20))+".c")
         parsed_code = self.idx.parse(tmp_fpath, args=['-std=c11'], unsaved_files=[(tmp_fpath, code)], options=0)
 
-        # return tokens
+        for c in parsed_code.cursor.walk_preorder():
+            print(c.kind, c.spelling)
+        self.token_abstractor(parsed_code)
         tokens = parsed_code.get_tokens(extent=parsed_code.cursor.extent)
-        return [(tok.spelling, tok.kind) for tok in tokens]
+        return_tokens = []
+        if replace_tokens:
+            for token in tokens:
+                hash_1 = hash(token.spelling)
+                for typ in self.replace_dict.keys():
+                    if hash_1 in self.replace_dict[typ]:
+                        return_tokens.append(
+                            (self.replace_dict[typ][hash_1][0], token.kind))
+                        break
+                else:
+                    return_tokens.append((token.spelling, token.kind))
+        else:
+            return_tokens = [(tok.spelling, tok.kind) for tok in tokens]
+        return return_tokens
 
+    def token_abstractor(self, parsed_code):
+        def make_name(x): return f"{x}_{len(self.replace_dict[x])//2}"
+
+        for c in parsed_code.cursor.walk_preorder():
+            tup = None
+            if c.kind == CursorKind.FUNCTION_DECL:
+                tup = (make_name('func'), c.spelling, c.kind)
+                hash_1 = hash(c.spelling)
+                hash_2 = hash(tup[0])
+                self.replace_dict['func'][hash_1] = tup
+                self.replace_dict['func'][hash_2] = tup
+
+            elif c.kind == CursorKind.CALL_EXPR:
+                if not hash(c.spelling) in self.replace_dict['func']:
+                    tup = (make_name('func'), c.spelling, c.kind)
+                    hash_1 = hash(c.spelling)
+                    hash_2 = hash(tup[0])
+                    self.replace_dict['func'][hash_1] = tup
+                    self.replace_dict['func'][hash_2] = tup
+
+            elif c.kind == CursorKind.PARM_DECL:
+                tup = (make_name('arg'), c.spelling, c.kind)
+                hash_1 = hash(c.spelling)
+                hash_2 = hash(tup[0])
+                self.replace_dict['arg'][hash_1] = tup
+                self.replace_dict['arg'][hash_2] = tup
+
+            elif c.kind == CursorKind.VAR_DECL:
+                tup = (make_name('var'), c.spelling, c.kind)
+                hash_1 = hash(c.spelling)
+                hash_2 = hash(tup[0])
+                self.replace_dict['var'][hash_1] = tup
+                self.replace_dict['var'][hash_2] = tup
+
+            elif c.kind == CursorKind.STRING_LITERAL:
+                if not hash(c.spelling) in self.replace_dict['str_lit']:
+                    tup = (make_name('str_lit').replace('_', ''), c.spelling, c.kind)
+                    hash_1 = hash(c.spelling)
+                    hash_2 = hash(tup[0])
+                    self.replace_dict['str_lit'][hash_1] = tup
+                    self.replace_dict['str_lit'][hash_2] = tup
+
+    def abstract_name_replace(self, token):
+        return next(x[0] for x in self.replace_dict['func'].keys() + self.replace_dict['var'].keys())
+
+        ##MISSING GLOBAL DECLARATIONS
     def process_string(self, tok, char2tok, tok2char, is_comment):
         # a token processing function ported from TransCoder
         if is_comment:
@@ -99,7 +168,7 @@ class CTokenizer:
 
         # use libclang to parse the code
         try:
-            tokens_n_types = self._tokenize(code)
+            tokens_n_types = self._tokenize(code, replace_tokens=True)
         except TimeoutError:
             print("Timeout Error")
             return []
