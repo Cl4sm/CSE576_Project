@@ -102,7 +102,8 @@ class CTokenizer:
 
             elif c.kind == CursorKind.STRING_LITERAL:
                 if not c.spelling in self.replace_dict['str_lit']:
-                    tup = (make_name('str_lit').replace('_', ''), c.spelling, c.kind)
+                    new_str = '"'+make_name('str_lit').replace('_', '').strip()+'"'
+                    tup = (new_str, c.spelling, c.kind)
                     self.replace_dict['str_lit'][c.spelling] = tup
                     self.replace_dict['str_lit'][tup[0]] = tup
 
