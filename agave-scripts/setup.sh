@@ -15,7 +15,7 @@
 ## Always purge modules to ensure consistent environments
 module purge
 ## Load required modules for job's environment
-module load anaconda/py3 clang/8.4.0
+module load anaconda/py3 gcc/8.4.0
 
 SCRATCH=/scratch/$USER/decompiler-project
 mkdir -p $SCRATCH
