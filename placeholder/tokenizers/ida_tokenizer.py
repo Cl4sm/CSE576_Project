@@ -16,11 +16,11 @@ END_BANNER = "===================================IDA SCRIPT END=================
 IDA_BIN = os.path.join(IDA_PATH, "ida64")
 SCRIPT_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "utils", "idascript.py")
 CACHE_DIR = os.path.join("/tmp", "ida_tokenizer_cache")
-assert os.path.exists(IDA_PATH), f"IDA_PATH: {IDA_PATH} does not exists"
+#assert os.path.exists(IDA_PATH), f"IDA_PATH: {IDA_PATH} does not exists"
 
 # make sure IDA is runnable
 output = subprocess.getoutput("ps aux | grep ./lmgrd | grep -v grep")
-assert "lmgrd" in output, "Launch your License Manager Daemon for IDA first."
+#assert "lmgrd" in output, "Launch your License Manager Daemon for IDA first."
 
 class IDATokenizer:
     def __init__(self):
@@ -33,7 +33,7 @@ class IDATokenizer:
         h = hashlib.sha256(os.path.abspath(bin_path).encode()).digest().hex()
         bin_name = os.path.basename(path)
         pkg_name = os.path.basename(os.path.dirname(path))
-        return f"{pkg_name}_{bin_name}_{h}"
+        return f"{pkg_name}|{bin_name}"
 
     def _load_cache(self, bin_path):
         key = self._get_key(bin_path)
