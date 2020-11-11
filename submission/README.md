@@ -55,8 +55,34 @@ To resolve this issue, we perform our analysis twice, once to capture informatio
 
 ## Model
 
-## Preliminary Results
-We include some of our preliminary results in `submission/examples`. Comment of each example is also included in the example files.
+## Training overview
+
+We use [fairseq](https://github.com/pytorch/fairseq) for creating the model with [apex](https://github.com/NVIDIA/apex) to accelerate the training process(as recommended by fairseq). The hyper-parameters used are derived from fairseq's basic transformer and XLM examples as well as [Transcoder](https://arxiv.org/abs/2006.03511), a programming language to programming language translator.
+
+We have previously collected several software packages from the Debian Jessie package repositories. We split the packages into training, testing and validation sets(respectively 75%, 15% and 10% of entire dataset) using sklearn. In Debian, multiple binaries are derived from the same source package. In order to ensure that there is no code shared between the binaries in training, testing and validation set, we specifically group by packages as opposed to source code or binaries to avoid any bias.
+
+The output of sklearn is fed into the fairseq preprocessor, which learns the programming language vocabulary using the custom libclang based tokenizer we developed (we work with codebases that primarily use the C programming language). The preprocessor output is used to train a basic transformer model using the above mentioned values for the hyper-parameters.
+
+For evaluating the model, we use perplexity scores(obtained using `fairseq-eval-lm`) and BLEU scores(obtained using `fairseq-score`). Scripts for preprocessing, training and evaluation can be found under the folder `argave_scripts`.
+
+## Preliminary results
+
+We initially started with Google colab and later switched to the Agave cluster. Thus, we haven't been able to train for significant periods: we have training for 80 epochs with a loss score of 2.3. 
+
+Our model has a perplexity score of 4.70 over 1775416 tokens when evaluated on our test set. A dump of the `fairseq-eval-lm` can be found in `submission/results/perplexity.score`
+
+A dump of the individual BLEU scores of each test case can be found in `submission/results/bleu-scores.zip`
+
+Some examples of the translations made by our model are discussed in `submission/examples/examples_*.txt`
+
+# Next steps
+
+We intend to improve the model efficiency going forward before the final deadline. Below are some of the possible improvements we are considering going ahead:
+
+1. Currently, we use defaults for training the transformer model. We intend to explore these settings further to see if improvements are possible.
+2. We have also been exploring running the training in a distributed manner across multiple machines but have run into some challenges doing so on the Agave. We are currently looking to contact the school regarding possible workarounds.
+3. During training,some inputs were deemed to be of wrong size leading to errors. As a temporary workaround, we used `--skip-invalid-size-inputs-valid-test.` We intend to explore why this is happening going ahead.
+4. During the preprocessing, we had a very large dictionary size(>90k) due to some issues in the way the abstraction was designed. In order to reduce the dictionary size to a manageable number, we mark all words which occur less than 10 times as unknown. We intend to explore modifying the abstraction in order to avoid such a workaround.
 
 ## How to run the code
 
