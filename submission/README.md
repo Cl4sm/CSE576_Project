@@ -85,6 +85,8 @@ We intend to improve the model efficiency going forward before the final deadlin
 4. During the preprocessing, we had a very large dictionary size(>90k) due to some issues in the way the abstraction was designed. In order to reduce the dictionary size to a manageable number, we mark all words which occur less than 10 times as unknown. We intend to explore modifying the abstraction in order to avoid such a workaround.
 
 ## How to run the code
+
+### On Agave
 The `agave_scripts` folder includes sbatch scripts to set up an environment under `/scratch/$USER/decompiler-project` on Agave.
 
 Submitting `setup.sh` as an sbatch job (or running it in an interactive Agave session) will set up a python virtual environment, install fairseq, apex, and our code inside that enviroment, and pull the dataset.
@@ -97,11 +99,12 @@ The same script can be used to continue training as it stores checkpoints of the
 
 Once a model has been trained, the `generate-fairseq-dec-raw.sh` script can be used to generate output from the model and the `eval-fairseq-dec-raw.sh` script can be used generate the perplexity score.
 
-### Installation
+### Locally
+#### Installation
 1. Install `placeholder` project by running `pip install -e .` in `submission/tokenizers`
 
 
-### Tokenizer
+#### Tokenizer
 There are two tokenizers in this project. One is `CTokenizer`, and the other is `IDATokenizer`.
 `CTokenizer` is used to tokenize C source code. It can be invoked as
 ```
@@ -133,6 +136,9 @@ code = tokenizer.detokenize(tokens)
 print(code)
 ```
 
-### Generate training dataset
+#### Generate training dataset
 To generate training dataset, one can run `python gen_training_dataset.py -d <dataset_folder> -o <output_folder>` in `submission/training-dataset-scripts`.
 It will generate a folder containing both source code(`raw_code`) and decompiled code(`raw_decompiled_code`) and another version of them with comment stripped away(folder with a prefix `stripped`).
+
+#### Preprocessing, training, generating, and evaluating
+Once you have a local copy of the dataset from the prior step, the scripts supplied for Agave can also be used locally after the paths are corrected to reflect the location of the dataset.
