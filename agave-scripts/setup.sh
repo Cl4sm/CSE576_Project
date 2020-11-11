@@ -61,7 +61,7 @@ pushd $SCRATCH
     mkdir $SCRATCH/smoke
     if [ ! -d "$SCRATCH/smoke/fairseq_dataset" ]
     then
-      rsync -rv --append $REMOTE/smoke/fairseq_dataset $SCRATCH/smoke/fairseq_dataset
+      rsync -rv --append $REMOTE/smoke/fairseq_dataset $SCRATCH/smoke/
     fi
   
     # Install our code into the venv
@@ -69,7 +69,7 @@ pushd $SCRATCH
     repo="$SCRATCH/decompiler-project-phase3"
     if [ ! -d "$SCRATCH/decompiler-project-phase3" ]
     then
-      rsync -rv --append $remote_repo $repo
+      rsync -rv --append $remote_repo $SCRATCH
       pushd $repo
         pip install .
       popd
