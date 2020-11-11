@@ -140,5 +140,8 @@ print(code)
 To generate training dataset, one can run `python gen_training_dataset.py -d <dataset_folder> -o <output_folder>` in `submission/training-dataset-scripts`.
 It will generate a folder containing both source code(`raw_code`) and decompiled code(`raw_decompiled_code`) and another version of them with comment stripped away(folder with a prefix `stripped`).
 
+Once that is done, run `python parse_to_fairseq_dataset.py <path_to_mapping.json> <path_to_stripped_raw_code> <path_to_stripped_decompiled_code> <path_to_output_folder>`
+This will read the dataset folders from the previous script, use the mappings from `mapping.json` to group them by their respective packages, then format them into test, train and validation datasets for use with `fairseq`, placing the files inside `<path_to_output_folder>`. Each line in these files is one entry in the dataset, and they are divided as source (.decomp) files and target (.raw) files.
+
 #### Preprocessing, training, generating, and evaluating
 Once you have a local copy of the dataset from the prior step, the scripts supplied for Agave can also be used locally after the paths are corrected to reflect the location of the dataset.
