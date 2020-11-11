@@ -54,23 +54,24 @@ pushd $SCRATCH
                   .
     popd
 
-  if [ ! -d "$SCRATCH/smoke/fairseq_dataset"]
-  then
-    rsync -rv --append /scratch/mclehman/smoke/fairseq_dataset $SCRATCH/smoke/fairseq_dataset
-  fi
+    mkdir $SCRATCH/smoke
+    if [ ! -d "$SCRATCH/smoke/fairseq_dataset" ]
+    then
+      rsync -rv --append /scratch/mclehman/smoke/fairseq_dataset $SCRATCH/smoke/fairseq_dataset
+    fi
+  
+    # Install our code into the venv
+    remote_repo="/scratch/mclehman/decompiler-project-phase3"
+    repo="$SCRATCH/decompiler-project-phase3"
+    if [ ! -d "$SCRATCH/decompiler-project-phase3" ]
+    then
+      rsync -rv --append $remote_repo $repo
+      pushd $repo
+        pip install .
+      popd
+    fi
 
-  # Install our code into the venv
-  remote_repo="/scratch/mclehman/decompiler-project-phase3"
-  repo="$SCRATCH/decompiler-project-phase3"
-  if [ ! -d "$SCRATCH/decompiler-project-phase3"]
-  then
-    rsync -rv --append $remote_repo $repo
-    pushd $repo
-      pip install .
-    popd
-  fi
-
-  # Copy custom tokenizer into fairseq
-  script_dir="/scratch/mclehman/scripts"
-  cp $script_dir/clang_tokenizer.py $venv/fairseq/fairseq/data/encoders/
+    # Copy custom tokenizer into fairseq
+    script_dir="/scratch/mclehman/scripts"
+    cp $script_dir/clang_tokenizer.py $venv/fairseq/fairseq/data/encoders/
 popd
