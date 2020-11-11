@@ -92,3 +92,6 @@ code = tokenizer.detokenize(tokens)
 print(code)
 ```
 
+### Generate training dataset
+To generate training dataset, one can run `python gen_training_dataset.py -d <dataset_folder> -o <output_folder>`.
+It will generate a folder containing both source code(`raw_code`) and decompiled code(`raw_decompiled_code`) and another version of them with comment stripped away(folder with a prefix `stripped`).
