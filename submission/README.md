@@ -52,7 +52,8 @@ To resolve this issue, we perform our analysis twice, once to capture informatio
 
 ## Model
 
-## Current status
+## Preliminary Results
+We include some of our preliminary results in `submission/examples`. Comment of each example is also included in the example files.
 
 ## How to run the code
 

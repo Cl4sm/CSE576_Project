@@ -1,0 +1,39 @@
+######### THOUGHTS	######### 
+
+Example of how our model transforms an unwieldy if/do-while loop in
+the decompiled code into the more readable while loop that closely
+resembles the original
+
+######### INPUT S-11335	######### 
+
+void __fastcall func_1 ( global_var_0 * arg_1 ) { 
+	global_var_0 * global_var_1; 
+	if ( arg_1 ) { 
+		do { 
+			global_var_1 = arg_1 -> next; 
+			free ( arg_1 ); 
+			arg_1 = global_var_1; 
+		} while ( global_var_1 ); 
+	} 
+} 
+
+######### HYPOTHESIS H-11335	######### 
+
+void func_2 ( global_var_0 * arg_1 ) {
+	global_var_0 * global_var_1; 
+	while ( arg_1 )	{
+		global_var_1 = arg_1 -> next; 
+		func_1 ( arg_1 ); 
+		arg_1 = global_var_1; 
+	}
+}
+
+
+######### ORIGINAL RAW-11335	######### 
+void func_2 ( struct dep * arg_1 ) {
+	while ( arg_1 != 0 ) {
+		struct dep * var_1 = arg_1; 
+		arg_1 = arg_1 -> next; 
+		func_1 ( var_1 ); 
+	}
+} 

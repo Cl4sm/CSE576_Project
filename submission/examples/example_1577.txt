@@ -1,0 +1,38 @@
+######### THOUGHTS	######### 
+
+This example is more to point out the current limitations in using the BLEU scores
+for training/validation. Notably, BLEU tends to work poorly in the specific case of
+every token being a single token present in the correct version, leading to the
+following mess that somehow has a BLEU score of 2^-0.18501925468444824 (0.87963733591)
+
+Definitely something to fix in subsequent iterations
+
+######### INPUT S-1577	######### 
+
+global_var_0 __fastcall func_2 ( void * ptr ) {
+
+	global_var_0 * global_var_1; 
+	global_var_0 global_var_2; 
+	global_var_1 = * ( global_var_0 * * ) ptr; 
+	global_var_2 = * global_var_1; 
+
+	func_1 ( global_var_1 ); 
+	func_1 ( ptr ); 
+	return global_var_2; 
+}
+
+######### HYPOTHESIS H-1577	######### 
+
+ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr
+
+######### ORIGINAL RAW-1577	######### 
+
+char * func_2 ( xio_file arg_1 ) {
+
+	struct fr * var_2 = ( struct fr * ) arg_1 -> data; 
+	char * var_2 = var_2 -> string; 
+
+	func_1 ( var_2 ); 
+	func_1 ( arg_1 ); 
+	return var_2; 
+} 

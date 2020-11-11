@@ -1,0 +1,40 @@
+######### THOUGHTS	######### 
+
+This test case correctly recognizes that global_var_2 is a list header and substitutes it accordingly.
+However, the function lines within the for loop appear truncated, with all the operations summarized
+into a "func_1". A better abstraction approach coupled with some fine tuning may help prevent this
+sort of over-simplifcation.
+
+######### INPUT S-4880	######### 
+
+void __fastcall func_2 ( int arg_3 ) { global_var_0 * global_var_1; 
+	global_var_0 * global_var_2; 
+	for ( global_var_1 = global_var_3.next; global_var_1 != & global_var_3; global_var_1 = global_var_1->next ) { 
+		global_var_2 = global_var_1[5].next[6].next; 
+		if ( global_var_2 ) 
+			( ( void ( __fastcall * ) ( global_var_0 *, arg_3 ) ) global_var_2 ) ( global_var_1, ( unsigned int ) arg_3 ); 
+	}
+}
+
+
+######### HYPOTHESIS H-4880	######### 
+
+void func_2 ( int arg_1 ) { 
+	struct flist_head * var_1; 
+	for ( var_1 = global_var_0[arg_1]; var_1 != global_var_1; var_1 = var_1->next ) 
+		func_1 ( var_1 ); 
+}
+
+
+######### ORIGINAL RAW-4880	######### 
+
+void func_1 ( int arg_1 ) { 
+	struct list_node * var_3; 
+	for ( var_3 = global_var_0.next; var_3 != & global_var_0; var_3 = var_3->next ) 
+	{ 
+		struct simio_device * var_3 = ( struct simio_device * ) var_3; 
+		const struct simio_class * var_3 = var_3 -> var_3; 
+		if ( var_3 -> ack_interrupt ) 
+			var_3 -> ack_interrupt ( var_3, arg_1 ); 
+	} 
+} 

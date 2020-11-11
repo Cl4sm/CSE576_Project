@@ -1,0 +1,100 @@
+######### THOUGHTS	######### 
+
+Example below does a good job of compressing the arguments and the recreating the "structure"
+of the source code. However the lines inside the if/else loop are identical in the hypothesis
+likely due to the way we are currently doing our abstraction. Future improvements to the
+abstraction should help with this example
+
+######### INPUT S-15284	######### 
+
+void __fastcall func_3 ( GtkCellRenderer * arg_4, GtkCellEditable * arg_4, const gchar * arg_4, gpointer arg_4 ) 
+{ 
+
+	global_var_0 global_var_2;
+	global_var_1 global_var_3;
+	global_var_0 global_var_4;
+	global_var_1 v11;
+	global_var_1 v12;
+	global_var_1 v13;
+	global_var_1 v14;
+	global_var_1 v15;
+	global_var_1 v16;
+	global_var_1 v17;
+	global_var_1 v18;
+	global_var_2 = func_1 ( );
+	global_var_3 = g_type_check_instance_cast ( arg_4, global_var_2 ); 
+	global_var_4 = func_1 ( ); 
+	v11 = g_type_instance_get_private ( global_var_3, global_var_4 ); 
+	v12 = gtk_entry_get_type ( global_var_3, global_var_4 ); 
+
+	if ( arg_4 && ( * ( _QWORD * ) arg_4 && * * ( _QWORD * * ) arg_4 == v12 || ( unsigned int ) g_type_check_instance_is_a ( arg_4, v12 ) ) ) 
+	{ 
+		g_free ( * ( _QWORD * ) ( v11 + 176 ) ); 
+		v13 = * ( _QWORD * ) ( v11 + 184 ); 
+		* ( _QWORD * ) ( v11 + 176 ) = 0LL; 
+		g_free ( v13 ); 
+		* ( _QWORD * ) ( v11 + 184 ) = g_strdup ( arg_4 ); 
+		v14 = g_type_check_instance_cast ( arg_4, 80LL ); 
+		* ( _DWORD * ) ( v11 + 192 ) = g_object_get_data ( v14, <unk> ); 
+		v15 = g_type_check_instance_cast ( arg_4, 80LL ); 
+		g_signal_connect_data ( v15, <unk> <unk> arg_4, 0LL, 0LL ); 
+		v16 = g_type_check_instance_cast ( arg_4, 80LL ); 
+		g_signal_connect_data ( v16, & <unk> <unk> arg_4, 0LL, 1LL ); 
+		v17 = g_type_check_instance_cast ( arg_4, 80LL ); 
+		g_signal_connect_data ( v17, "changed", <unk> arg_4, 0LL, 0LL ); 
+		v18 = g_type_check_instance_cast ( arg_4, 80LL ); 
+		g_signal_connect_data ( v18, "key-press-event", <unk> arg_4, 0LL, 0LL ); 
+	} 
+	else 
+	{ 
+		func_2 ( 0LL, 16LL, "strlit2", "strlit3" ); 
+	} 
+
+}
+
+######### HYPOTHESIS H-15284	######### 
+
+static void func_1 ( GObject * arg_4, GtkCellRenderer * arg_4, const gchar * arg_4, gpointer arg_4 ) 
+{
+	global_var_0 * global_var_1 = XFCE_SYSTRAY_PLUGIN ( arg_4 ); 
+	const gchar * var_1 = gtk_entry_get_text ( GTK_ENTRY ( arg_4 ) );
+
+	if ( G_UNLIKELY ( global_var_1 -> var_1 != global_var_2 ) ) 
+	{ 
+		global_var_1 -> var_1 = g_strdup ( gtk_entry_get_text ( GTK_ENTRY ( global_var_1 -> var_1 ) ) ); 
+		global_var_1 -> var_1 = g_strdup ( gtk_entry_get_text ( GTK_ENTRY ( global_var_1 -> var_1 ) ) ); 
+	} 
+	else 
+	{ 
+		global_var_1 -> var_1 = g_strdup ( gtk_entry_get_text ( GTK_ENTRY ( global_var_1 -> var_1 ) ) ); 
+		global_var_1 -> var_1 = g_strdup ( gtk_entry_get_text ( GTK_ENTRY ( global_var_1 -> var_1 ) ) ); 
+		global_var_1 -> var_1 = g_strdup ( gtk_entry_get_text ( GTK_ENTRY ( global_var_1 -> var_1 ) ) ); 
+		global_var_1 -> var_1 = g_strdup ( gtk_entry_get_text ( GTK_ENTRY ( global_var_1 -> var_1 ) ) ); 
+	} 
+}
+
+######### ORIGINAL RAW-15284	######### 
+
+static void func_2 ( GtkCellRenderer * arg_4, GtkCellEditable * arg_4, const gchar * arg_4, gpointer arg_4 ) 
+{ 
+	global_var_0 * global_var_1 = CE_PAGE_IP6 ( arg_4 ); 
+	global_var_2 * global_var_3 = CE_PAGE_IP6_GET_PRIVATE ( global_var_1 ); 
+	global_var_4 global_var_6; 
+
+	if ( ! GTK_IS_ENTRY ( arg_4 ) ) { 
+		func_1 ( "strlit2", __func__ ); 
+		return; 
+	} 
+
+	g_free ( global_var_3 -> last_edited ); 
+	global_var_3 -> last_edited = global_var_5; 
+	g_free ( global_var_3 -> last_path ); 
+	global_var_3 -> last_path = g_strdup ( arg_4 ); 
+	global_var_3 -> last_column = GPOINTER_TO_UINT ( g_object_get_data ( G_OBJECT ( arg_4 ), "column" ) ); 
+	global_var_6 = GPOINTER_TO_UINT ( g_object_get_data ( G_OBJECT ( arg_4 ), "column" ) ); 
+	g_object_set_data ( G_OBJECT ( arg_4 ), "column", GUINT_TO_POINTER ( global_var_6 ) ); 
+	g_signal_connect ( G_OBJECT ( arg_4 ), "insert-text", ( global_var_7 ) ip_address_filter_cb, arg_4 ); 
+	g_signal_connect_after ( G_OBJECT ( arg_4 ), "delete-text", ( global_var_7 ) delete_text_cb, arg_4 ); 
+	g_signal_connect ( G_OBJECT ( arg_4 ), "changed", ( global_var_7 ) cell_changed_cb, arg_4 ); 
+	g_signal_connect ( G_OBJECT ( arg_4 ), "key-press-event", ( global_var_7 ) key_pressed_cb, arg_4 ); 
+} 
