@@ -50,7 +50,7 @@ int main(int argc, char **argv)
 ```
 will be tokenized into tokens `['int', 'func_0', '(', 'int', 'arg_0', ',', 'char', '*', '*', 'arg_1', ')', '{', 'func_1', '(', '" strlit0"', ')', ';', 'char', 'var_0', '[', '32', ']', ';', 'func_2', '(', '" strlit1"', ',', 'var_0', ')', ';', 'func_1', '(', '" strlit2"', ',', 'global_var_0', ')', ';', 'for', '(', 'int', 'var_1', '=', '0', ';', 'var_1', '<', '10', ';', 'var_1', '++', ')', '{', 'func_1', '(', '" strlit3"', ',', 'var_1', ')', ';', '}', 'func_1', '(', '" strlit4"', ')', ';', 'func_1', '(', '" strlit5"', ',', 'var_0', ')', ';', '}']`.
 
-However, there have been difficulties with global variables and structures. `liblang` does not inherrently capture global variables and structures. This is especially true at the function level. Tokenizing at the function level also loses the type context of such variables.
+However, there have been difficulties with global variables and structures. `libclang` does not inherrently capture global variables and structures. This is especially true at the function level. Tokenizing at the function level also loses the type context of such variables.
 To resolve this issue, we perform our analysis twice, once to capture information loss, once for token substituition. By this method, our abstraction is still not complete, it can't standardize a struct attribute if the struct is unknown. But it is able to substitute known tokens in the second run so our abstraction is still sound.
 
 ## Model
