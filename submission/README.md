@@ -63,7 +63,7 @@ We have previously collected several software packages from the Debian Jessie pa
 
 The output of sklearn is fed into the fairseq preprocessor, which learns the programming language vocabulary using the custom libclang based tokenizer we developed (we work with codebases that primarily use the C programming language). The preprocessor output is used to train a basic transformer model using the above mentioned values for the hyper-parameters.
 
-For evaluating the model, we use perplexity scores(obtained using `fairseq-eval-lm`) and BLEU scores(obtained using `fairseq-score`). Scripts for preprocessing, training and evaluation can be found under the folder `argave_scripts`.
+For evaluating the model, we use perplexity scores(obtained using `fairseq-eval-lm`) and BLEU scores(obtained using `fairseq-score`). Scripts for preprocessing, training and evaluation can be found under the folder `agave_scripts`.
 
 ## Preliminary results
 
@@ -89,7 +89,7 @@ We intend to improve the model efficiency going forward before the final deadlin
 ### On Agave
 The `agave_scripts` folder includes sbatch scripts to set up an environment under `/scratch/$USER/decompiler-project` on Agave.
 
-Submitting `setup.sh` as an sbatch job (or running it in an interactive Agave session) will set up a python virtual environment, install fairseq, apex, and our code inside that enviroment, and pull the dataset.
+Submitting `setup.sh` as an sbatch job (or running it in an interactive Agave session) will set up a python virtual environment, install fairseq, apex, and our code inside that environment, and pull the dataset.
 The dataset and our code is pulled directly from the Agave scratch filesystem as well to avoid logistical issues with sharing the dataset.
 
 Once that environment has been built once using `setup.sh`, the remaining sbatch scripts can be used to orchestrate various fairseq operations with reasonable sbatch parameters (i.e. multi-gpu, specific gpu model, etc.).
