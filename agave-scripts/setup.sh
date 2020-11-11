@@ -17,7 +17,11 @@ module purge
 ## Load required modules for job's environment
 module load anaconda/py3 gcc/8.4.0
 
+# Local path to everything we'll install/use
 SCRATCH=/scratch/$USER/decompiler-project
+# Path to one of our group member's agave scratch folder to pull data from
+REMOTE=/scratch/mclehman
+
 mkdir -p $SCRATCH
 pushd $SCRATCH
   # Install fairseq/sacremoses/apex in a new virtualenv
@@ -57,11 +61,11 @@ pushd $SCRATCH
     mkdir $SCRATCH/smoke
     if [ ! -d "$SCRATCH/smoke/fairseq_dataset" ]
     then
-      rsync -rv --append /scratch/mclehman/smoke/fairseq_dataset $SCRATCH/smoke/fairseq_dataset
+      rsync -rv --append $remote/smoke/fairseq_dataset $SCRATCH/smoke/fairseq_dataset
     fi
   
     # Install our code into the venv
-    remote_repo="/scratch/mclehman/decompiler-project-phase3"
+    remote_repo="$remote/decompiler-project-phase3"
     repo="$SCRATCH/decompiler-project-phase3"
     if [ ! -d "$SCRATCH/decompiler-project-phase3" ]
     then
@@ -72,6 +76,7 @@ pushd $SCRATCH
     fi
 
     # Copy custom tokenizer into fairseq
-    script_dir="/scratch/mclehman/scripts"
+    script_dir="$remote/decompiler-project-phase3/agave-scripts"
     cp $script_dir/clang_tokenizer.py $venv/fairseq/fairseq/data/encoders/
+  popd
 popd
