@@ -1,5 +1,8 @@
 # README
 
+In the past 2 weeks, we implemented tokenizers for tokenizing C code and decompiled code into valid tokens.
+Based on the tokens, we trained a `fairseq` model and obtained some preliminary results.
+
 ## Tokenizer
 Existing tokenizers like BPE(Byte-Pair Encoding), WordPiece are designed for natural languages. In our task, the input and output sequences are C source code. Without knowing the syntax of C code, a tokenizer is likely to parse C code incorrectly and output incorrect C code.
 
