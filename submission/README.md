@@ -1,14 +1,19 @@
 # README
 
 ## Tokenizer
-Each *\*.c* file is split into several different files, one per each function in the file. #IFDEFs are problems for us since tokenization occurs at a function level and the #IFDEF can't be reasoned about before compilation, but decompiled binaries can either include or exclude that code creating a disparity between the source file and the decompiled file. To actually tokenize the source and decompiled binaries, we use the tokenizer built into clang. This has worked reasonably well for us, however, there have been difficulties with global variable and structures. Clang's tokenizer does not inherrently capture global variables and structures. This is especially true at the function level. Tokenizing at the function level also looses the type context of such variables.
-
 Existing tokenizers like BPE(Byte-Pair Encoding), WordPiece are designed for natural languages. In our task, the input and output sequences are C source code. Without knowing the syntax of C code, a tokenizer is likely to parse C code incorrectly and output incorrect C code.
 
 To resolve this problem, we decide to write our own tokenizer based on a compiler library: `libclang`.
 
+Each *\*.c* file is split into several different files, one per each function in the file. #IFDEFs are problems for us since tokenization occurs at a function level and the #IFDEF can't be reasoned about before compilation, but decompiled binaries can either include or exclude that code creating a disparity between the source file and the decompiled file.
+
+To actually tokenize the source and decompiled binaries, we use the tokenizer built into clang. This has worked reasonably well for us.
+
 ### Abstraction
-Unless for some reason a binary is compiled with excessive debugging information (which would never be the case in some deployed software), there will be a severe out-of-vocabulary issue between the variable and function names of the decompiled code and the original source code. Compilation does not capture variable names and as such, all decompiled variable names are essentially unusable. We have decided to alleviate this problem by replacing these function and variable names with standardized tokens. The first function that we see is labled `func_1` and similarly for arguments, string literals, and variables it is `arg_1`, `strlit1` and `var_1`. This will allow us to keep all of the potential variable and function names in a small vocabulary and then unmap them to their original names after our model outputs the finished function.
+however, there have been difficulties with global variable and structures. Clang's tokenizer does not inherrently capture global variables and structures. This is especially true at the function level. Tokenizing at the function level also looses the type context of such variables.
+
+Due to fact that function names and variable names can be arbitrary, there is no vocabulary can contain all function names and variable names. This makes the vocabulary unreasonably large and make the model untrainable.
+Compilation does not capture variable names and as such, all decompiled variable names are essentially unusable. We have decided to alleviate this problem by replacing these function and variable names with standardized tokens. The first function that we see is labled `func_1` and similarly for arguments, string literals, and variables it is `arg_1`, `strlit1` and `var_1`. This will allow us to keep all of the potential variable and function names in a small vocabulary and then unmap them to their original names after our model outputs the finished function.
 ```python
             if c.kind == CursorKind.FUNCTION_DECL:
                 tup = (make_name('func'), c.spelling, c.kind)
