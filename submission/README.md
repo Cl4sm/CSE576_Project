@@ -51,7 +51,7 @@ int main(int argc, char **argv)
 will be tokenized into tokens `['int', 'func_0', '(', 'int', 'arg_0', ',', 'char', '*', '*', 'arg_1', ')', '{', 'func_1', '(', '" strlit0"', ')', ';', 'char', 'var_0', '[', '32', ']', ';', 'func_2', '(', '" strlit1"', ',', 'var_0', ')', ';', 'func_1', '(', '" strlit2"', ',', 'global_var_0', ')', ';', 'for', '(', 'int', 'var_1', '=', '0', ';', 'var_1', '<', '10', ';', 'var_1', '++', ')', '{', 'func_1', '(', '" strlit3"', ',', 'var_1', ')', ';', '}', 'func_1', '(', '" strlit4"', ')', ';', 'func_1', '(', '" strlit5"', ',', 'var_0', ')', ';', '}']`.
 
 However, there have been difficulties with global variables and structures. `liblang` does not inherrently capture global variables and structures. This is especially true at the function level. Tokenizing at the function level also loses the type context of such variables.
-To resolve this issue, we perform our analysis twice, once to capture information loss, once for token substituition. By this method, our abstraction is still not complete, it can't standardize a struct attribute if the struct is unknonw. But it is able to substitute tokens in the second run so our abstraction is still sound.
+To resolve this issue, we perform our analysis twice, once to capture information loss, once for token substituition. By this method, our abstraction is still not complete, it can't standardize a struct attribute if the struct is unknown. But it is able to substitute known tokens in the second run so our abstraction is still sound.
 
 ## Model
 
@@ -65,7 +65,7 @@ We include some of our preliminary results in `submission/examples`. Comment of 
 
 
 ### Tokenizer
-There are two tokenizers in this project. One is `CTokenizer`, the other is `IDATokenizer`.
+There are two tokenizers in this project. One is `CTokenizer`, and the other is `IDATokenizer`.
 `CTokenizer` is used to tokenize C source code. To run it, one can do:
 ```
 from placeholder import CTokenizer
@@ -81,9 +81,9 @@ print(code)
 Notice that in the example, `test.c` contains one function and it doesn't contain macros like `#include <stdio>`. Our tokenizer assumes there is no macros in the code. Examples can be found at `submission/tokenizers/placeholder/tokenizers/tests/c_files/test_1.c`
 
 `IDATokenizer` is used to decompile and tokenize a function within a binary.
-Due to license issue, we can't ship `IDA Pro`(a decompiler) to you. But we build a decompilation cache [here](https://doc-0o-7g-docs.googleusercontent.com/docs/securesc/nrqvdihn7o8ifgt32oes1eedm9qfmsbk/o04e1vsdk7rakgplqerjs4svbnvaom5m/1605059925000/14285738738769488385/14285738738769488385/1MftXkP8LEyq56lNAMWkWK_JwfunVoq3k?e=download&authuser=1&nonce=eiovc3lat3ivq&user=14285738738769488385&hash=e0jqpnhpr1i0dshk44j35u20vt8qrg32). You can download it, unzip it and put the resultant folder at `/tmp/ida_tokenizer_cache`. Our `IDATokenizer` will try to read decompilation cache from `/tmp/ida_tokenizer_cache/<cache>`.
+Due to license issue, we can't ship `IDA Pro`(the decompiler we use for decompilation) to you. But we build a decompilation cache [here](https://doc-0o-7g-docs.googleusercontent.com/docs/securesc/nrqvdihn7o8ifgt32oes1eedm9qfmsbk/o04e1vsdk7rakgplqerjs4svbnvaom5m/1605059925000/14285738738769488385/14285738738769488385/1MftXkP8LEyq56lNAMWkWK_JwfunVoq3k?e=download&authuser=1&nonce=eiovc3lat3ivq&user=14285738738769488385&hash=e0jqpnhpr1i0dshk44j35u20vt8qrg32). You can download it, unzip it and put the resultant folder at `/tmp/ida_tokenizer_cache`. Our `IDATokenizer` will try to read decompilation cache from `/tmp/ida_tokenizer_cache/<cache>`.
 
-If the decompilation cache for a binary exists, the following command will generate valid tokens for a function `<func>` inside binary `bin`
+If the decompilation cache for a binary exists, the following command will generate valid tokens for a function `<func>` inside binary `<bin>`
 ```
 from placeholder import IDATokenizer
 tokenizer = IDATokenizer()
@@ -97,5 +97,5 @@ print(code)
 ```
 
 ### Generate training dataset
-To generate training dataset, one can run `python gen_training_dataset.py -d <dataset_folder> -o <output_folder>`.
+To generate training dataset, one can run `python gen_training_dataset.py -d <dataset_folder> -o <output_folder>` in `submission/training-dataset-scripts`.
 It will generate a folder containing both source code(`raw_code`) and decompiled code(`raw_decompiled_code`) and another version of them with comment stripped away(folder with a prefix `stripped`).
