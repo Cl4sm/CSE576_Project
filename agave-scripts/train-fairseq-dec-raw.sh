@@ -3,10 +3,10 @@
 #SBATCH -N 1            # number of nodes
 #SBATCH -c 1            # number of "tasks" (cores)
 #SBATCH --mem=32G       # GigaBytes of memory required (per node)
-#SBATCH -t 0-8:00:00    # time in d-hh:mm:ss
+#SBATCH -t 0-08:00:00    # time in d-hh:mm:ss
 #SBATCH -p gpu          # partition (not mrlinegpu1)
-#SBATCH --gres=gpu:2    # Request one GPU
-#SBATCH -C V100         # Request GPU v100 with 32GB
+#SBATCH --gres=gpu:2    # Request two GPUs
+#SBATCH -C V100_16      # Request v100s with 16GB
 #SBATCH -q wildfire     # QOS
 #SBATCH -o slurm.%j.out # file to save job's STDOUT (%j = JobId)
 #SBATCH -e slurm.%j.err # file to save job's STDERR (%j = JobId)
@@ -34,10 +34,6 @@ fairseq-preprocess \
                 --thresholdtgt 10 --thresholdsrc 10 \
                 --workers 20
 
-mail -s "[576-agave] Preprocessing finished" ${USER}@asu.edu << EOF
-Finished training a model on the allstar-smoke dataset.
-EOF
-
 # train the model
 mkdir -p $SCRATCH/smoke/checkpoints
 
@@ -52,7 +48,3 @@ fairseq-train \
                 --fp16 \
                 --skip-invalid-size-inputs-valid-test \
                 --max-epoch 200
-
-mail -s "[576-agave] Training finished" ${USER}@asu.edu << EOF
-Finished training a model on the allstar-smoke dataset.
-EOF
