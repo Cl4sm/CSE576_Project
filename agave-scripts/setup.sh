@@ -58,7 +58,7 @@ pushd $SCRATCH
                   .
     popd
 
-    mkdir $SCRATCH/smoke
+    mkdir -p $SCRATCH/smoke
     if [ ! -d "$SCRATCH/smoke/fairseq_dataset" ]
     then
       rsync -rv --append $REMOTE/smoke/fairseq_dataset $SCRATCH/smoke/
@@ -67,13 +67,10 @@ pushd $SCRATCH
     # Install our code into the venv
     remote_repo="$REMOTE/decompiler-project-phase3"
     repo="$SCRATCH/decompiler-project-phase3"
-    if [ ! -d "$SCRATCH/decompiler-project-phase3" ]
-    then
-      rsync -rv --append $remote_repo $SCRATCH
-      pushd $repo
-        pip install .
-      popd
-    fi
+    rsync -rv --append $remote_repo $SCRATCH
+    pushd $repo
+      pip install -e .
+    popd
 
     # Copy custom tokenizer into fairseq
     script_dir="$REMOTE/decompiler-project-phase3/agave-scripts"
