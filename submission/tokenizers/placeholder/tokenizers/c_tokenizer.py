@@ -66,6 +66,9 @@ class CTokenizer:
         # get raw_tokens from translation unit
         raw_tokens = tu.get_tokens(extent=tu.cursor.extent)
 
+        if not replace_tokens:
+             return [(token.spelling, token.kind) for token in raw_tokens]
+
         # record token replacement by abstraction analysis
         self.token_abstractor(tu, code)
 
