@@ -59,6 +59,17 @@ To resolve this issue, we perform our analysis twice, once to capture informatio
 We include some of our preliminary results in `submission/examples`. Comment of each example is also included in the example files.
 
 ## How to run the code
+The `agave_scripts` folder includes sbatch scripts to set up an environment under `/scratch/$USER/decompiler-project` on Agave.
+
+Submitting `setup.sh` as an sbatch job (or running it in an interactive Agave session) will set up a python virtual environment, install fairseq, apex, and our code inside that enviroment, and pull the dataset.
+The dataset and our code is pulled directly from the Agave scratch filesystem as well to avoid logistical issues with sharing the dataset.
+
+Once that environment has been built once using `setup.sh`, the remaining sbatch scripts can be used to orchestrate various fairseq operations with reasonable sbatch parameters (i.e. multi-gpu, specific gpu model, etc.).
+
+The `train-fairseq-dec-raw.sh` script will preprocess the dataset and begin training.
+The same script can be used to continue training as it stores checkpoints of the model.
+
+Once a model has been trained, the `generate-fairseq-dec-raw.sh` script can be used to generate output from the model and the `eval-fairseq-dec-raw.sh` script can be used generate the perplexity score.
 
 ### Installation
 1. Install `placeholder` project by running `pip install -e .` in `submission/tokenizers`
