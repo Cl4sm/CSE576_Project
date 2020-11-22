@@ -28,29 +28,33 @@ class IDATokenizer:
         if not os.path.exists(CACHE_DIR):
             os.mkdir(CACHE_DIR)
 
-    def _get_key(self, bin_path):
+    @staticmethod
+    def _get_key(bin_path):
         path = os.path.abspath(bin_path)
         h = hashlib.sha256(os.path.abspath(bin_path).encode()).digest().hex()
         bin_name = os.path.basename(path)
         pkg_name = os.path.basename(os.path.dirname(path))
         return f"{pkg_name}|{bin_name}"
 
-    def _load_cache(self, bin_path):
-        key = self._get_key(bin_path)
+    @staticmethod
+    def _load_cache(bin_path):
+        key = IDATokenizer._get_key(bin_path)
         cache_path = os.path.join(CACHE_DIR, key)
         if not os.path.exists(cache_path):
             return None
         with open(cache_path, 'r') as f:
             return json.load(f)
 
-    def _save_cache(self, bin_path, info):
-        key = self._get_key(bin_path)
+    @staticmethod
+    def _save_cache(bin_path, info):
+        key = IDATokenizer._get_key(bin_path)
         cache_path = os.path.join(CACHE_DIR, key)
         assert not os.path.exists(cache_path)
         with open(cache_path, 'w') as f:
             json.dump(info, f)
 
-    def _extract_bin_info(self, bin_path):
+    @staticmethod
+    def _extract_bin_info(bin_path):
         # run IDA to extract its log
         cmd = [IDA_BIN, '-B', '-S'+SCRIPT_PATH, os.path.abspath(bin_path)]
         with tempfile.NamedTemporaryFile(mode='r', dir="/tmp", prefix='ida_tokenizer-') as f:
@@ -70,22 +74,24 @@ class IDATokenizer:
         idx = lines.index('JSON:')
         info = json.loads(lines[idx+1])
         print(f"binary info extraction elapsed in {info['time']} seconds")
-        self._save_cache(bin_path, info)
+        IDATokenizer._save_cache(bin_path, info)
         return info
 
-    def get_bin_info(self, bin_path):
-        info = self._load_cache(bin_path)
+    @staticmethod
+    def get_bin_info(bin_path):
+        info = IDATokenizer._load_cache(bin_path)
         # try to load cached info
         if not info:
-            info = self._extract_bin_info(bin_path)
+            info = IDATokenizer._extract_bin_info(bin_path)
         return info
 
-    def get_func_info(self, bin_path, func_name):
-        info = self._load_cache(bin_path)
+    @staticmethod
+    def get_func_info(bin_path, func_name):
+        info = IDATokenizer._load_cache(bin_path)
 
         # try to load cached info
         if not info:
-            info = self._extract_bin_info(bin_path)
+            info = IDATokenizer._extract_bin_info(bin_path)
 
         data = info['data']
 
