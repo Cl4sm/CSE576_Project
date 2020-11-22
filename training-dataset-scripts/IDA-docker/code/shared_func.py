@@ -9,7 +9,7 @@ import subprocess
 import jsonlines
 
 from placeholder import IDATokenizer
-from utils import new_logger, tmp_path
+from utils import new_logger, tmp_path, tmp_ida_cxt
 
 logger = new_logger("Zipper")
 
@@ -111,7 +111,7 @@ def process_task(task):
 
     # lol, create an empty folder just in case
     os.system("mkdir -p /tmp/ida_tokenizer_cache")
-    with tmp_path(suffix='.zip') as zip_path, tmp_path(suffix='_dir') as tmp_dir:
+    with tmp_path(suffix='.zip') as zip_path, tmp_path(suffix='_dir') as tmp_dir, tmp_ida_cxt():
         # write zip file
         with open(zip_path, "wb") as f:
             content = base64.b64decode(zip_content)

@@ -42,3 +42,12 @@ def tmp_path(suffix=''):
         yield fpath
     finally:
         os.system(f"rm -rf {fpath}")
+
+@contextmanager
+def tmp_ida_cxt():
+    try:
+        os.system("mkdir -p ~/.idapro")
+        os.system("cp ~/bk_ida.reg ~/.idapro/ida.reg")
+        yield
+    finally:
+        os.system("rm -rf ~/.idapro/*")
