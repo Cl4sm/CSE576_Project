@@ -118,7 +118,7 @@ def process_task(task):
             f.write(content)
 
         # unzip the zip file into a temporary directory
-        os.system(f"unzip -d {tmp_dir} {zip_path}")
+        os.system(f"unzip -d {tmp_dir} {zip_path} >/dev/null 2>&1")
 
         # now build decompilation cache using IDA
         pkg_dir = os.path.join(tmp_dir, pkg_name)
