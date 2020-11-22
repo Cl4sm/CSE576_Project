@@ -110,7 +110,7 @@ def process_task(task):
     logger.info(f"processing package {pkg_name}...")
 
     # lol, create an empty folder just in case
-    os.system("/tmp/ida_tokenizer_cache")
+    os.system("mkdir -p /tmp/ida_tokenizer_cache")
     with tmp_path(suffix='.zip') as zip_path, tmp_path(suffix='_dir') as tmp_dir:
         # write zip file
         with open(zip_path, "wb") as f:
