@@ -39,7 +39,7 @@ def process_task_result(task_res):
         return
 
     cache_dir = "/tmp/ida_tokenizer_cache/"
-    os.system(f"mkdir {cache_dir}")
+    os.system(f"mkdir -p {cache_dir}")
     with tmp_path(suffix=".zip") as zip_path, tmp_path(suffix="_dir") as dir_path:
         with open(zip_path, 'wb') as f:
             f.write(base64.b64decode(task_res['result']))
