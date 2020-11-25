@@ -19,6 +19,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-f', '--input-file', default='',
                         help='The C file to tokenize.')
+    parser.add_argument('-s', '--src-dir', default=None,
+                        help='the root directory of the source code that the input file belongs to')
     parser.add_argument('-b', '--input-bin', default='',
                         help='The binary to tokenize.')
     parser.add_argument('-n', '--func-name', default='',
@@ -28,15 +30,17 @@ if __name__ == '__main__':
     sanitize_input(args)
 
     # choose a proper tokenizer
-    if args.input_file:
+    if args.input_file and args.src_dir:
         with io.open(args.input_file, encoding='utf-8') as f:
             source = f.read()
 
-        tokenizer = CTokenizer()
+        tokenizer = CTokenizer(args.src_dir)
         tokens = tokenizer.tokenize(source)
     elif args.input_bin:
         tokenizer = IDATokenizer()
         tokens = tokenizer.tokenize(args.input_bin, args.func_name)
+    else:
+        raise
 
     print(tokens)
 

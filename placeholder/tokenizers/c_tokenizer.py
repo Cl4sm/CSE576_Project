@@ -9,6 +9,7 @@ from clang.cindex import TokenKind, CursorKind
 from sacrebleu.tokenizers import TokenizerV14International
 
 from .utils.timeout import TimeoutError, timeout
+from .utils.contexts import cwd_cxt
 
 ############### Configuration ###################
 TOK_NO_SPACE_BEFORE = {',', ';'}
@@ -35,7 +36,7 @@ clang.cindex.Config.set_library_path('/usr/local/lib/')
 
 ############### The C Tokenizer ###################
 class CTokenizer:
-    def __init__(self):
+    def __init__(self, src_dir):
         self.idx = clang.cindex.Index.create()
         self.bleu_tokenizer = TokenizerV14International()
         self.replace_dict = {
@@ -44,22 +45,29 @@ class CTokenizer:
             'var': {},
             'str_lit': {},
             'global_var': {},
+            'attr': {},
         }
+        self.src_dir = src_dir
 
     @timeout(seconds=10)
     def parse(self, code):
-        tmp_fpath = os.path.join("/tmp", "c_tokenizer-"+"".join(random.choices(string.ascii_letters, k=20))+".c")
+        with cwd_cxt(self.src_dir):
+            try:
+                # CXTranslationUnit_KeepGoing = 0x200
+                # ref: https://clang.llvm.org/doxygen/group__CINDEX__TRANSLATION__UNIT.html
+                tmp_fpath = os.path.join(".", "c_tokenizer-"+"".join(random.choices(string.ascii_letters, k=20))+".c")
+                tu = self.idx.parse(tmp_fpath, args=['-std=c11', '-I/usr/local/include', '-I/usr/local/lib/clang/11.0.0/include', '-ferror-limit=0'], unsaved_files=[(tmp_fpath, code)], options=0x200)
+            except Exception as e:
+                print(e)
+                return None
 
-        # CXTranslationUnit_KeepGoing = 0x200
-        # ref: https://clang.llvm.org/doxygen/group__CINDEX__TRANSLATION__UNIT.html
-        tu = self.idx.parse(tmp_fpath, args=['-std=c11'], unsaved_files=[(tmp_fpath, code)], options=0x200)
-
-        #print(code)
+        #print(code2)
         #for c in tu.cursor.walk_preorder():
         #    print(str(c.kind)+'\t'+str(c.spelling))
+
         return tu
 
-    def _tokenize(self, code, replace_tokens=False):
+    def _abstracted_tokenize(self, code, replace_tokens=False):
         # parse
         tu = self.parse(code)
 
@@ -81,38 +89,45 @@ class CTokenizer:
                 abstracted_tokens.append((token.spelling, token.kind))
         return abstracted_tokens
 
+    def _tokenize(self, code, replace_tokens=False):
+        # parse
+        tu = self.parse(code)
+
+        # get raw_tokens from translation unit
+        raw_tokens = tu.get_tokens(extent=tu.cursor.extent)
+
+        # return the tokens directly
+        return [(x.spelling, x.kind) for x in raw_tokens]
+
     def token_abstractor(self, tu, code):
         def make_name(x): return f"{x}_{len(self.replace_dict[x])//2}"
 
-        global_vars = set()
-        # process global variables which are not valid out of the program contexts
-        for diag in tu.diagnostics:
-            # we don't care about warnings
-            if diag.severity < clang.cindex.Diagnostic.Error:
-                continue
-            # usage of unknown global variable is "undeclared identifier" error
-            res = re.search(f"use of undeclared identifier '(.*)'", diag.spelling)
-            if not res:
-                continue
-            var_name = res.group(1)
-            global_vars.add(var_name)
-            # now add this abastraction into our mapping
-            if var_name not in self.replace_dict['global_var']:
-                tup = (make_name('global_var'), var_name, "global_var")
-                self.replace_dict['global_var'][var_name] = tup
-                self.replace_dict['global_var'][tup[0]] = tup
-
-        declarations = ""
-        for var in global_vars:
-            declarations += f"extern {var};\n"
-        new_code = declarations + code
+        # add a prefix to make libclang to capture structures and global variables
+        prefix = '#include "main.c"\nstatic int LOL_ABCD_LOL;\n'
+        #print(code)
+        new_code = prefix + code
 
         # parse new code
         tu = self.parse(new_code)
+        #for diag in tu.diagnostics:
+        #    print(diag.spelling)
 
-        # process valid tokens
+        # process valid tokens, we only process the original code
+        found = False
         for c in tu.cursor.walk_preorder():
             tup = None
+
+            # look for original code
+            if found == False:
+                if c.kind != CursorKind.VAR_DECL or c.spelling != "LOL_ABCD_LOL":
+                    continue
+                found = True
+                continue
+
+            #print(c.kind, c.spelling)
+            if c.kind == CursorKind.INTEGER_LITERAL:
+                tokens = list(c.get_tokens())
+
             if c.kind == CursorKind.FUNCTION_DECL:
                 tup = (make_name('func'), c.spelling, c.kind)
                 self.replace_dict['func'][c.spelling] = tup
@@ -143,6 +158,32 @@ class CTokenizer:
                     tup = (new_str, c.spelling, c.kind)
                     self.replace_dict['str_lit'][c.spelling] = tup
                     self.replace_dict['str_lit'][tup[0]] = tup
+
+            elif c.kind == CursorKind.MEMBER_REF_EXPR:
+                if not c.spelling in self.replace_dict['attr']:
+                    tup = (make_name('attr'), c.spelling, c.kind)
+                    self.replace_dict['attr'][c.spelling] = tup
+                    self.replace_dict['attr'][tup[0]] = tup
+
+        # now process the ast again to find undefined variable use and record them as global variables
+        found = False
+        for c in tu.cursor.walk_preorder():
+            tup = None
+
+            # look for original code
+            if found == False:
+                if c.kind != CursorKind.VAR_DECL or c.spelling != "LOL_ABCD_LOL":
+                    continue
+                found = True
+                continue
+
+            if c.kind == CursorKind.DECL_REF_EXPR:
+                if c.spelling in self.replace_dict['global_var']:
+                    continue
+                if all(c.spelling not in self.replace_dict[x] for x in ['func', 'arg', 'var', 'str_lit', 'attr']):
+                    tup = (make_name('global_var'), c.spelling, c.kind)
+                    self.replace_dict['global_var'][c.spelling] = tup
+                    self.replace_dict['global_var'][tup[0]] = tup
 
 
     def abstract_name_replace(self, token):
@@ -200,7 +241,7 @@ class CTokenizer:
 
         # use libclang to parse the code
         try:
-            tokens_n_types = self._tokenize(code, replace_tokens=True)
+            tokens_n_types = self._abstracted_tokenize(code, replace_tokens=True)
         except TimeoutError:
             print("Timeout Error")
             return []
