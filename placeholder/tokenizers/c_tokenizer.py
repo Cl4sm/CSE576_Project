@@ -36,7 +36,7 @@ clang.cindex.Config.set_library_path('/usr/local/lib/')
 
 ############### The C Tokenizer ###################
 class CTokenizer:
-    def __init__(self, src_dir):
+    def __init__(self, src_dir=None):
         self.idx = clang.cindex.Index.create()
         self.bleu_tokenizer = TokenizerV14International()
         self.replace_dict = {
@@ -134,6 +134,9 @@ class CTokenizer:
             #print(c.kind, c.spelling)
             if c.kind == CursorKind.INTEGER_LITERAL:
                 tokens = list(c.get_tokens())
+                if not tokens:
+                    print(f"macro detected!!!! @ {c.location}")
+
 
             if c.kind == CursorKind.FUNCTION_DECL:
                 tup = (make_name('func'), c.spelling, c.kind)
