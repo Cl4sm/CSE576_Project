@@ -46,25 +46,21 @@ class CTokenizer:
             'str_lit': {},
             'global_var': {},
             'attr': {},
+            'type': {},
         }
         self.src_dir = src_dir
 
     @timeout(seconds=10)
     def parse(self, code):
-        with cwd_cxt(self.src_dir):
-            try:
+        if self.src_dir:
+            with cwd_cxt(self.src_dir):
                 # CXTranslationUnit_KeepGoing = 0x200
                 # ref: https://clang.llvm.org/doxygen/group__CINDEX__TRANSLATION__UNIT.html
                 tmp_fpath = os.path.join(".", "c_tokenizer-"+"".join(random.choices(string.ascii_letters, k=20))+".c")
                 tu = self.idx.parse(tmp_fpath, args=['-std=c11', '-I/usr/local/include', '-I/usr/local/lib/clang/11.0.0/include', '-ferror-limit=0'], unsaved_files=[(tmp_fpath, code)], options=0x200)
-            except Exception as e:
-                print(e)
-                return None
-
-        #print(code2)
-        #for c in tu.cursor.walk_preorder():
-        #    print(str(c.kind)+'\t'+str(c.spelling))
-
+        else:
+            tmp_fpath = os.path.join("/tmp", "c_tokenizer-"+"".join(random.choices(string.ascii_letters, k=20))+".c")
+            tu = self.idx.parse(tmp_fpath, args=['-std=c11'], unsaved_files=[(tmp_fpath, code)], options=0x200)
         return tu
 
     def _abstracted_tokenize(self, code, replace_tokens=False):
@@ -72,18 +68,29 @@ class CTokenizer:
         tu = self.parse(code)
 
         # get raw_tokens from translation unit
-        raw_tokens = tu.get_tokens(extent=tu.cursor.extent)
+        raw_tokens = list(tu.get_tokens(extent=tu.cursor.extent))
 
         # record token replacement by abstraction analysis
         self.token_abstractor(tu, code)
 
         # now perform token replacement
         abstracted_tokens = []
-        for token in raw_tokens:
+        idx = 0
+        while idx < len(raw_tokens):
+            token = raw_tokens[idx]
+            # retrieve the correct spelling
+            if token.spelling == 'struct':
+                spelling = token.spelling + " " + raw_tokens[idx+1].spelling
+                idx += 2
+            else:
+                spelling = token.spelling
+                idx += 1
+
+            # replace token
             for typ in self.replace_dict.keys():
-                if token.spelling in self.replace_dict[typ]:
+                if spelling in self.replace_dict[typ]:
                     abstracted_tokens.append(
-                        (self.replace_dict[typ][token.spelling][0], token.kind))
+                        (self.replace_dict[typ][spelling][0], token.kind))
                     break
             else:
                 abstracted_tokens.append((token.spelling, token.kind))
@@ -165,6 +172,12 @@ class CTokenizer:
                     self.replace_dict['attr'][c.spelling] = tup
                     self.replace_dict['attr'][tup[0]] = tup
 
+            elif c.kind == CursorKind.TYPE_REF:
+                if not c.spelling in self.replace_dict['type']:
+                    tup = (make_name('type'), c.spelling, c.kind)
+                    self.replace_dict['type'][c.spelling] = tup
+                    self.replace_dict['type'][tup[0]] = tup
+
         # now process the ast again to find undefined variable use and record them as global variables
         found = False
         for c in tu.cursor.walk_preorder():
@@ -180,16 +193,12 @@ class CTokenizer:
             if c.kind == CursorKind.DECL_REF_EXPR:
                 if c.spelling in self.replace_dict['global_var']:
                     continue
-                if all(c.spelling not in self.replace_dict[x] for x in ['func', 'arg', 'var', 'str_lit', 'attr']):
+                if all(c.spelling not in self.replace_dict[x] for x in ['func', 'arg', 'var', 'str_lit', 'attr', 'type']):
                     tup = (make_name('global_var'), c.spelling, c.kind)
                     self.replace_dict['global_var'][c.spelling] = tup
                     self.replace_dict['global_var'][tup[0]] = tup
 
 
-    def abstract_name_replace(self, token):
-        return next(x[0] for x in self.replace_dict['func'].keys() + self.replace_dict['var'].keys())
-
-        ##MISSING GLOBAL DECLARATIONS
     def process_string(self, tok, char2tok, tok2char, is_comment):
         # a token processing function ported from TransCoder
         if is_comment:
