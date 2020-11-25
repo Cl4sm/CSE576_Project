@@ -14,7 +14,7 @@ from utils import new_logger, tmp_path, tmp_ida_cxt
 logger = new_logger("Zipper")
 
 #####--------Configuration----------######
-DATASET_PATH = "/home/kylebot/Desktop/courses/CSE576/datasets/dataset/dataset"
+DATASET_PATH = "/home/kylebot/Desktop/courses/CSE576/datasets/dataset_v2"
 
 #####--------MASTER FUNCTIONS-------######
 def get_all_items():
@@ -80,6 +80,7 @@ def process_pkg(pkg_dir):
     bin_paths = []
     for pkg in pkg_data['binaries']:
         bin_paths += [os.path.join(pkg_dir, x['dataset_file']) for x in pkg_data['binaries'][pkg]]
+    bin_paths = [x for x in bin_paths if os.path.exists(x)]
 
     # now use IDATokenizer to grab info from the binaries
     ida_tokenizer = IDATokenizer()
