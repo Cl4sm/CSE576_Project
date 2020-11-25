@@ -15,6 +15,7 @@ STRIP_RAW_CODE_DIR = "stripped_raw_code"
 DEC_CODE_DIR = "raw_decompiled_code"
 STRIP_DEC_CODE_DIR = "stripped_decompiled_code"
 MAPPING_NAME = "mapping.json"
+FUNC_NAME_BLACKLIST = ["start"]
 
 ##################### INIT ###########################
 raw_code_dir = None
@@ -32,7 +33,7 @@ handler.setFormatter(logger_formatter)
 logger.addHandler(handler)
 
 def strip_code(code):
-    c_tokenizer = CTokenizer()
+    c_tokenizer = CTokenizer(None)
     tokens = c_tokenizer.tokenize(code)
     return c_tokenizer.detokenize(tokens)
 
@@ -119,6 +120,8 @@ def process_pkg(pkg_dir):
 
     # iterate through functions
     for func_name in pkg_data['functions']:
+        if func_name in FUNC_NAME_BLACKLIST:
+            continue
         logger.debug("processing %s...", func_name)
         try:
             process_func(func_name, info_dict, pkg_dir, pkg_data)
