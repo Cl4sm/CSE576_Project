@@ -229,12 +229,17 @@ class CTokenizer:
             self.replace_dict[typ][c.spelling] = tup
             self.replace_dict[typ][tup[0]] = tup
 
+        if "__noreturn" in code:
+            code = code.replace("__noreturn", "")
+            tu = self.parse(code)
+
         global_vars = set()
         # process global variables which are not valid out of the program contexts
         for diag in tu.diagnostics:
             # we don't care about warnings
             if diag.severity < clang.cindex.Diagnostic.Error:
                 continue
+            #print(diag.spelling)
             # usage of unknown global variable is "undeclared identifier" error
             res = re.search(f"use of undeclared identifier '(.*)'", diag.spelling)
             if not res:
