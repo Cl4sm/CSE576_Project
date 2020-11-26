@@ -1,0 +1,137 @@
+.TH NRSS 1 "26 February 2008" "Version 0.3.9" "NRSS"
+
+.SH NAME
+NRSS \- An ncurses RSS reader
+.SH DESCRIPTION
+NRSS is an RSS reader built to use minimal amounts of external libraries,
+using a minimal interface while maintaining a featureful client.
+
+.SH COMMAND LINE USAGE
+.TP
+\-h
+Simple help
+
+.TP
+\-v
+Print version
+
+.TP
+\-c [num]
+Set number of columns
+
+.TP
+\-D [path]
+Set the configuration directory (default: ~/.nrss/)
+
+.TP
+\-C [path]
+Set the configuration file (default: ~/.nrss/config)
+
+.TP
+\-F [path]
+Set the feed directory (default: ~/.nrss/feeds)
+
+.TP
+\-L [path]
+Set the log file (default: ~/.nrss/log)
+
+.SH INTERNAL USAGE
+Within the program you can use the following (default) keys.
+These can be changed in your configuration file by using the
+"key" command.
+
+.TP
+UP or DOWN
+Select previous or next item/feed (next) (prev)
+
+.TP
+PGUP or PGDOWN
+Goto previous or next feed (next-feed) (prev-feed)
+
+.TP
+h
+Display usage (toggle-usage)
+
+.TP
+C
+Toggle collapse all feeds (toggle-collapse-all)
+
+.TP
+Space
+Collapse a feed or read a story (default)
+
+.TP
+g
+Use the defined browser to goto the item's URL (goto)
+
+.TP
+x
+Show all items in feed (toggle-expand)
+
+.TP
+r
+Refresh the current feed (refresh)
+
+.TP
+R
+Refresh all (refresh-all)
+
+.TP
+M
+Mark all read (mark-all-read)
+
+.TP
+D
+Redraw screen (redraw)
+
+.TP
+q
+Quit NRSS (quit)
+
+.SH CONFIGURATION
+The ~/.nrss/config file is where all of the configuration is. You can start by using the example config below.
+
+.SH EXAMPLE CONFIG
+.sp 1
+.nf
+default_rate "5"
+default_show "30"
+default_maxitems "50"
+
+#Add some feeds
+add "http://rss.slashdot.org/Slashdot/slashdot" "Slashdot"
+add "http://www.digg.com/rss/index.xml" "Digg All"
+add "http://newsrss.bbc.co.uk/rss/newsonline_world_edition/front_page/rss.xml" "BBC"
+add "http://www.osnews.com/files/recent.xml" "OSNews"
+add "http://distrowatch.com/news/dw.xml" "DistroWatch"
+
+#Change rate for Slashdot
+rate "30" "Slashdot"
+
+#These aren't defaults, but examples
+browser "/usr/bin/elinks %u"
+
+#Text browsers should enable this
+browser_wait "1"
+
+.SH FILES
+.TP
+.I ~/.nrss/config
+Main configuration file. For advanced usage, see the online configuration documentation: http://codezen.org/nrss-config
+
+.TP
+.I ~/.nrss/log
+Everyday log file.
+
+.TP
+.I ~/.nrss/feeds/
+This is where the raw XML is stored.
+
+.SH BUGS
+None known, but it's not outside of the realm of possibility =P.  
+
+.SH HOMEPAGE
+http://codezen.org/nrss
+
+.SH AUTHOR
+Jack Miller <jjm2n4@umr.edu>

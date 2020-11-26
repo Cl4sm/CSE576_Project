@@ -1,0 +1,17 @@
+Source: nrss
+Section: net
+Priority: extra
+Maintainer: Michael Casadevall <mcasadevall@buildd.net>
+Build-Depends: debhelper (>= 5), libexpat1-dev, libncursesw5-dev, wget
+Standards-Version: 3.7.3
+Homepage: http://www.codezen.org/nrss/
+
+Package: nrss
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, wget
+Description: A ncurses-based RSS reader
+ NRSS is a console based RSS reader allowing
+ uses to read and manage RSS feeds with a simple
+ to use interface. Like most graphical RSS readers
+ it provides a three pane interface for ease of use
+ in managing multiple feeds.
