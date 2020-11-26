@@ -70,7 +70,8 @@ class CTokenizer:
                 tu = self.idx.parse(tmp_fpath, args=args, unsaved_files=[(tmp_fpath, code)], options=0x200)
         else:
             tmp_fpath = os.path.join("/tmp", "c_tokenizer-"+"".join(random.choices(string.ascii_letters, k=20))+".c")
-            tu = self.idx.parse(tmp_fpath, args=['-std=c11', '-I%s' % os.path.join(os.path.abspath(IDA_PATH), "plugins")], unsaved_files=[(tmp_fpath, code)], options=0x200)
+            args = ['-std=c11', '-I%s' % os.path.join(os.path.abspath(IDA_PATH), "plugins"), '-ferror-limit=0']
+            tu = self.idx.parse(tmp_fpath, args=args, unsaved_files=[(tmp_fpath, code)], options=0x200)
         return tu
 
     def _get_abstracted_tokens(self, raw_tokens):
