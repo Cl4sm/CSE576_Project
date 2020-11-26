@@ -1,12 +1,18 @@
 import os
 import json
 import copy
+import glob
+import random
+import string
 import logging
+import subprocess
 
 import tqdm
+import clang
+from clang.cindex import TokenKind, CursorKind
 
 from placeholder import IDATokenizer, CTokenizer
-from utils import new_logger, logger_formatter
+from utils import new_logger, logger_formatter, path_context
 
 
 ##################### CONFIG ###########################
@@ -16,6 +22,7 @@ DEC_CODE_DIR = "raw_decompiled_code"
 STRIP_DEC_CODE_DIR = "stripped_decompiled_code"
 MAPPING_NAME = "mapping.json"
 FUNC_NAME_BLACKLIST = ["start"]
+COMPILE_DB_DIR = "/home/kylebot/Desktop/courses/CSE576/datasets/compiled_bin_dataset/compile-db"
 
 ##################### INIT ###########################
 raw_code_dir = None
@@ -24,6 +31,7 @@ dec_code_dir = None
 mapping_path = None
 id_cnt = 0
 mapping = {}
+clang.cindex.Config.set_library_path('/usr/local/lib/')
 
 logger = new_logger("Dataset")
 logger.setLevel("INFO")
@@ -32,8 +40,8 @@ handler.setLevel("DEBUG")
 handler.setFormatter(logger_formatter)
 logger.addHandler(handler)
 
-def strip_code(code):
-    c_tokenizer = CTokenizer(None)
+def abstract_code(code, build_dir=None, build_src_path=None):
+    c_tokenizer = CTokenizer(build_dir=build_dir, build_src_path=build_src_path)
     tokens = c_tokenizer.tokenize(code)
     return c_tokenizer.detokenize(tokens)
 
@@ -45,7 +53,7 @@ def save_file(path, content):
     with open(path, 'w') as f:
         f.write(content)
 
-def process_func(func_name, info_dict, pkg_dir, pkg_data):
+def process_func(func_name, info_dict, pkg_dir, pkg_data, compile_info):
     global id_cnt
     pkg_name = pkg_data['source_package']
 
@@ -69,10 +77,35 @@ def process_func(func_name, info_dict, pkg_dir, pkg_data):
 
     bin_path = last_bin_path
     info = last_info
+    info_func = pkg_data["functions"][func_name]
     dec_func = info[func_name]
     dec_code = dec_func['code']
-    strip_raw_code = strip_code(raw_code)
-    strip_dec_code = strip_code(dec_code)
+    src_path = info_func["orig_source_file"]
+    compile_key = os.path.join("/inline-macro-elimination-dataset/packages-archives/", pkg_name, pkg_data["orig_package_src_dir"], src_path)
+
+    # look for the compilation entry
+    for entry in compile_info["compile-db"]:
+        if entry['file'] == compile_key:
+            break
+    else:
+        raise
+
+    # look for source code directory
+    pkg_dirname = os.path.basename(compile_info["src_root"])
+    pkg_dirpaths = glob.glob(os.path.join("/home/kylebot/Desktop/courses/CSE576/src/CSE576_Project/dataset-scripts/output/dataset-packages/*/", pkg_dirname))
+    assert len(pkg_dirpaths) >= 1, pkg_dirpaths
+    pkg_dirpath = pkg_dirpaths[0]
+
+    # translate build directory
+    fake_build_dir = entry['directory']
+    build_dirname = fake_build_dir.split(pkg_dirname+'/')[1]
+    build_dir = os.path.join(pkg_dirpath, build_dirname)
+    build_src_path = os.path.relpath(src_path, start=build_dirname)
+    assert os.path.exists(build_dir)
+    assert os.path.exists(os.path.join(build_dir, build_src_path))
+
+    strip_raw_code = abstract_code(raw_code, build_dir=build_dir, build_src_path=build_src_path)
+    strip_dec_code = abstract_code(dec_code)
     info_bin = copy.deepcopy(info[func_name])
     del info_bin['code']
 
@@ -91,7 +124,7 @@ def process_func(func_name, info_dict, pkg_dir, pkg_data):
                             "package": pkg_name,
                             "binary": bin_path,
                             "info_bin": info_bin,
-                            "info_src": pkg_data["functions"][func_name]
+                            "info_src": info_func
                             }
     if id_cnt % 0x1000 == 0:
         save_mapping()
@@ -100,6 +133,9 @@ def process_pkg(pkg_dir):
     pkg_dir = os.path.abspath(pkg_dir)
     with open(os.path.join(pkg_dir, "data.json")) as f:
         pkg_data = json.load(f)
+    pkg_name = pkg_data["source_package"]
+    with open(os.path.join(COMPILE_DB_DIR, pkg_name+".json")) as f:
+        compile_info = json.load(f)
 
     # grab all binary paths and filtering them by existence first
     bin_paths = []
@@ -124,7 +160,7 @@ def process_pkg(pkg_dir):
             continue
         logger.debug("processing %s...", func_name)
         try:
-            process_func(func_name, info_dict, pkg_dir, pkg_data)
+            process_func(func_name, info_dict, pkg_dir, pkg_data, compile_info)
         except Exception as e:
             logger.exception(e)
 
@@ -156,8 +192,12 @@ if __name__ == '__main__':
         assert os.path.isdir(args.dataset_dir), f"{args.dataset_dir} doesn't exist or is not a directory!"
 
     pkgs = os.listdir(args.dataset_dir)
-    for pkg in tqdm.tqdm(pkgs, smoothing=0):
+    for idx, pkg in tqdm.tqdm(enumerate(pkgs), smoothing=0):
+        #if pkg != 'tiff':
+        #    continue
         logger.info(f"processing package {pkg}...")
         pkg_dir = os.path.join(args.dataset_dir, pkg)
         process_pkg(pkg_dir)
+        #if idx == 10:
+        #    exit(0)
     save_mapping()

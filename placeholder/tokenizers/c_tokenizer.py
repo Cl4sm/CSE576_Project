@@ -36,7 +36,7 @@ clang.cindex.Config.set_library_path('/usr/local/lib/')
 
 ############### The C Tokenizer ###################
 class CTokenizer:
-    def __init__(self, src_dir=None):
+    def __init__(self, build_dir=None, build_src_path=None):
         self.idx = clang.cindex.Index.create()
         self.bleu_tokenizer = TokenizerV14International()
         self.replace_dict = {
@@ -48,12 +48,13 @@ class CTokenizer:
             'attr': {},
             'type': {},
         }
-        self.src_dir = src_dir
+        self.build_dir = build_dir
+        self.build_src_path = build_src_path
 
     @timeout(seconds=10)
     def parse(self, code):
-        if self.src_dir:
-            with cwd_cxt(self.src_dir):
+        if self.build_dir:
+            with cwd_cxt(self.build_dir):
                 # CXTranslationUnit_KeepGoing = 0x200
                 # ref: https://clang.llvm.org/doxygen/group__CINDEX__TRANSLATION__UNIT.html
                 tmp_fpath = os.path.join(".", "c_tokenizer-"+"".join(random.choices(string.ascii_letters, k=20))+".c")
@@ -71,7 +72,7 @@ class CTokenizer:
         raw_tokens = list(tu.get_tokens(extent=tu.cursor.extent))
 
         # record token replacement by abstraction analysis
-        if self.src_dir:
+        if self.build_dir:
             self.token_abstractor(tu, code)
         else:
             self.token_abstractor_fallback(tu, code)
@@ -113,9 +114,9 @@ class CTokenizer:
         def make_name(x): return f"{x}_{len(self.replace_dict[x])//2}"
 
         # add a prefix to make libclang to capture structures and global variables
-        prefix = '#include "main.c"\nstatic int LOL_ABCD_LOL;\n'
-        #print(code)
-        new_code = prefix + code
+        with cwd_cxt(self.build_dir), open(self.build_src_path) as f:
+            content = f.read()
+        new_code = content + '\nstatic int LOL_ABCD_LOL;\n' + code
 
         # parse new code
         tu = self.parse(new_code)
