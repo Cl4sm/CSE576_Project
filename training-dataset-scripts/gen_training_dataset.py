@@ -16,17 +16,17 @@ from utils import new_logger, logger_formatter, path_context
 
 
 ##################### CONFIG ###########################
-RAW_CODE_DIR = "raw_code"
-STRIP_RAW_CODE_DIR = "stripped_raw_code"
-DEC_CODE_DIR = "raw_decompiled_code"
-STRIP_DEC_CODE_DIR = "stripped_decompiled_code"
+SRC_CODE_DIR = "src_code"
+ABSTRACTED_SRC_CODE_DIR = "abstracted_src_code"
+DEC_CODE_DIR = "decompiled_code"
+ABSTRACTED_DEC_CODE_DIR = "abstracted_decompiled_code"
 MAPPING_NAME = "mapping.json"
 FUNC_NAME_BLACKLIST = ["start"]
 COMPILE_DB_DIR = "/home/kylebot/Desktop/courses/CSE576/datasets/compiled_bin_dataset/compile-db"
 
 ##################### INIT ###########################
-raw_code_dir = None
-strip_code_dir = None
+src_code_dir = None
+abstracted_code_dir = None
 dec_code_dir = None
 mapping_path = None
 id_cnt = 0
@@ -73,7 +73,10 @@ def process_func(func_name, info_dict, pkg_dir, pkg_data, compile_info):
         return
     logger.info(f"[+] found exactly one definition of {func_name} in package {pkg_name}")
     with open(os.path.join(pkg_dir, 'src', func_name+'.c'), "rb") as f:
-        raw_code = f.read().decode(errors="replace")
+        src_code = f.read().decode(errors="replace")
+    if '#ifdef' in src_code:
+        logger.warning(f"function {func_name} from package {pkg_name} has ifdef!")
+        return
 
     bin_path = last_bin_path
     info = last_info
@@ -98,24 +101,24 @@ def process_func(func_name, info_dict, pkg_dir, pkg_data, compile_info):
 
     # translate build directory
     fake_build_dir = entry['directory']
-    build_dirname = fake_build_dir.split(pkg_dirname+'/')[1]
+    build_dirname = fake_build_dir.split(pkg_dirname)[1][1:]
     build_dir = os.path.join(pkg_dirpath, build_dirname)
     build_src_path = os.path.relpath(src_path, start=build_dirname)
     assert os.path.exists(build_dir)
     assert os.path.exists(os.path.join(build_dir, build_src_path))
 
-    strip_raw_code = abstract_code(raw_code, build_dir=build_dir, build_src_path=build_src_path)
-    strip_dec_code = abstract_code(dec_code)
+    abstracted_src_code = abstract_code(src_code, build_dir=build_dir, build_src_path=build_src_path)
+    abstracted_dec_code = abstract_code(dec_code)
     info_bin = copy.deepcopy(info[func_name])
     del info_bin['code']
 
     # save files
     func_id = id_cnt
     id_cnt += 1
-    save_file(os.path.join(raw_code_dir, str(func_id)+'.c'), raw_code)
-    save_file(os.path.join(strip_raw_code_dir, str(func_id)+'.c'), strip_raw_code)
+    save_file(os.path.join(src_code_dir, str(func_id)+'.c'), src_code)
+    save_file(os.path.join(abstracted_src_code_dir, str(func_id)+'.c'), abstracted_src_code)
     save_file(os.path.join(dec_code_dir, str(func_id)+'.c'), dec_code)
-    save_file(os.path.join(strip_dec_code_dir, str(func_id)+'.c'), strip_dec_code)
+    save_file(os.path.join(abstracted_dec_code_dir, str(func_id)+'.c'), abstracted_dec_code)
 
 
     # update mapping
@@ -176,14 +179,14 @@ if __name__ == '__main__':
 
     # lol, WTF is this code?
     if not os.path.exists(args.output_dir): os.mkdir(args.output_dir)
-    raw_code_dir = os.path.join(args.output_dir, RAW_CODE_DIR)
-    if not os.path.exists(raw_code_dir): os.mkdir(raw_code_dir)
-    strip_raw_code_dir = os.path.join(args.output_dir, STRIP_RAW_CODE_DIR)
-    if not os.path.exists(strip_raw_code_dir): os.mkdir(strip_raw_code_dir)
+    src_code_dir = os.path.join(args.output_dir, SRC_CODE_DIR)
+    if not os.path.exists(src_code_dir): os.mkdir(src_code_dir)
+    abstracted_src_code_dir = os.path.join(args.output_dir, ABSTRACTED_SRC_CODE_DIR)
+    if not os.path.exists(abstracted_src_code_dir): os.mkdir(abstracted_src_code_dir)
     dec_code_dir = os.path.join(args.output_dir, DEC_CODE_DIR)
     if not os.path.exists(dec_code_dir): os.mkdir(dec_code_dir)
-    strip_dec_code_dir = os.path.join(args.output_dir, STRIP_DEC_CODE_DIR)
-    if not os.path.exists(strip_dec_code_dir): os.mkdir(strip_dec_code_dir)
+    abstracted_dec_code_dir = os.path.join(args.output_dir, ABSTRACTED_DEC_CODE_DIR)
+    if not os.path.exists(abstracted_dec_code_dir): os.mkdir(abstracted_dec_code_dir)
     mapping_path = os.path.join(args.output_dir , MAPPING_NAME)
 
     if args.pkg_dir:
@@ -193,11 +196,12 @@ if __name__ == '__main__':
 
     pkgs = os.listdir(args.dataset_dir)
     for idx, pkg in tqdm.tqdm(enumerate(pkgs), smoothing=0):
-        #if pkg != 'tiff':
+        #if pkg != 'nrss':
         #    continue
         logger.info(f"processing package {pkg}...")
         pkg_dir = os.path.join(args.dataset_dir, pkg)
         process_pkg(pkg_dir)
         #if idx == 10:
+        #    save_mapping()
         #    exit(0)
     save_mapping()

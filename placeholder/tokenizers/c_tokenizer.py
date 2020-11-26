@@ -167,10 +167,10 @@ class CTokenizer:
                 continue
 
             #print(c.kind, c.spelling)
-            if c.kind == CursorKind.INTEGER_LITERAL:
-                tokens = list(c.get_tokens())
-                if not tokens:
-                    print(f"macro detected!!!! @ {c.location}")
+            #if c.kind == CursorKind.INTEGER_LITERAL:
+            #    tokens = list(c.get_tokens())
+            #    if not tokens:
+            #        print(f"macro detected!!!! @ {c.location}")
 
 
             if c.kind == CursorKind.FUNCTION_DECL:
