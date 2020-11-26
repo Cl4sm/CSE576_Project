@@ -38,6 +38,8 @@ if __name__ == '__main__':
 
         tokenizer = CTokenizer(build_dir=args.build_dir, build_src_path=args.build_src_path)
         tokens = tokenizer.tokenize(source)
+        print(source)
+        print("------")
     elif args.input_bin:
         tokenizer = IDATokenizer()
         tokens = tokenizer.tokenize(args.input_bin, args.func_name)
@@ -45,7 +47,6 @@ if __name__ == '__main__':
         raise
 
     print(tokens)
-
     print("------")
 
     new_code = tokenizer.detokenize(tokens)

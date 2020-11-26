@@ -12,6 +12,9 @@ from .utils.timeout import TimeoutError, timeout
 from .utils.contexts import cwd_cxt
 
 ############### Configuration ###################
+CLANG_LIB_PATH = '/usr/local/lib/'
+CLANG_INCLUDE_PATH = '/usr/local/lib/clang/11.0.0/include'
+
 TOK_NO_SPACE_BEFORE = {',', ';'}
 C_TOKEN2CHAR = {'STOKEN0': "//",
                    'STOKEN1': "/*",
@@ -30,8 +33,13 @@ C_CHAR2TOKEN = {"//": ' STOKEN0 ',
                    '\\n': ' STOKEN6 '
                    }
 
+# IDA type definition extracted from os.path.join(IDA_PATH, "plugins", "defs.h")
+IDA_WHITELIST = ['ll', 'ull', 'll', 'ull', 'll', 'ull', 'uint', 'uchar', 'ushort', 'ulong', 'int8', 'sint8', 'uint8', 'int16', 'sint16',
+                 'uint16', 'int32', 'sint32', 'uint32', 'int64', 'sint64', 'uint64', '_BOOL1', '_BOOL2', '_BOOL4', '_BOOL8', 'BYTE',
+                 'WORD', 'DWORD', 'LONG', 'BOOL', 'QWORD', '_BYTE', '_WORD', '_DWORD', '_QWORD', '__int64', '__int32', '__int16', '__int8']
+
 ############### Initialization ###################
-clang.cindex.Config.set_library_path('/usr/local/lib/')
+clang.cindex.Config.set_library_path(CLANG_LIB_PATH)
 
 
 ############### The C Tokenizer ###################
@@ -58,10 +66,11 @@ class CTokenizer:
                 # CXTranslationUnit_KeepGoing = 0x200
                 # ref: https://clang.llvm.org/doxygen/group__CINDEX__TRANSLATION__UNIT.html
                 tmp_fpath = os.path.join(".", "c_tokenizer-"+"".join(random.choices(string.ascii_letters, k=20))+".c")
-                tu = self.idx.parse(tmp_fpath, args=['-std=c11', '-I/usr/local/include', '-I/usr/local/lib/clang/11.0.0/include', '-ferror-limit=0'], unsaved_files=[(tmp_fpath, code)], options=0x200)
+                args = ['-std=c11', '-I/usr/local/include', '-I%s' % CLANG_INCLUDE_PATH, '-ferror-limit=0']
+                tu = self.idx.parse(tmp_fpath, args=args, unsaved_files=[(tmp_fpath, code)], options=0x200)
         else:
             tmp_fpath = os.path.join("/tmp", "c_tokenizer-"+"".join(random.choices(string.ascii_letters, k=20))+".c")
-            tu = self.idx.parse(tmp_fpath, args=['-std=c11'], unsaved_files=[(tmp_fpath, code)], options=0x200)
+            tu = self.idx.parse(tmp_fpath, args=['-std=c11', '-I%s' % os.path.join(os.path.abspath(IDA_PATH), "plugins")], unsaved_files=[(tmp_fpath, code)], options=0x200)
         return tu
 
     def _get_abstracted_tokens(self, raw_tokens):
@@ -232,6 +241,8 @@ class CTokenizer:
             if not res:
                 continue
             var_name = res.group(1)
+            if var_name in IDA_WHITELIST:
+                continue
             global_vars.add(var_name)
             # now add this abastraction into our mapping
             if var_name not in self.replace_dict['global_var']:
@@ -239,7 +250,7 @@ class CTokenizer:
                 self.replace_dict['global_var'][var_name] = tup
                 self.replace_dict['global_var'][tup[0]] = tup
 
-        declarations = ""
+        declarations = "#include <math.h>\n#include <defs.h>\nstatic int LOL_ABCD_LOL;\n"
         for var in global_vars:
             declarations += f"extern {var};\n"
         new_code = declarations + code
@@ -248,8 +259,18 @@ class CTokenizer:
         tu = self.parse(new_code)
 
         # process valid tokens
+        found = False
         for c in tu.cursor.walk_preorder():
             tup = None
+
+            # look for original code
+            if found == False:
+                if c.kind != CursorKind.VAR_DECL or c.spelling != "LOL_ABCD_LOL":
+                    continue
+                found = True
+                continue
+
+
             if c.kind == CursorKind.FUNCTION_DECL:
                 tup = (make_name('func'), c.spelling, c.kind)
                 self.replace_dict['func'][c.spelling] = tup
@@ -431,9 +452,4 @@ class CTokenizer:
                          .replace('CB_', '}').replace('OB_', '{')
         return untok_s
 
-if __name__ == "__main__":
-    tokenizer = CTokenizer()
-    tokens = tokenizer.tokenize(open("./tests/c_files/test_1.c").read())
-    print("tokens", tokens)
-    new_code = tokenizer.detokenize(tokens)
-    print(new_code)
+from .ida_tokenizer import IDA_PATH
