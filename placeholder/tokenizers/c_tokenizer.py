@@ -71,7 +71,10 @@ class CTokenizer:
         raw_tokens = list(tu.get_tokens(extent=tu.cursor.extent))
 
         # record token replacement by abstraction analysis
-        self.token_abstractor(tu, code)
+        if self.src_dir:
+            self.token_abstractor(tu, code)
+        else:
+            self.token_abstractor_fallback(tu, code)
 
         # now perform token replacement
         abstracted_tokens = []
@@ -200,6 +203,69 @@ class CTokenizer:
                     tup = (make_name('global_var'), c.spelling, c.kind)
                     self.replace_dict['global_var'][c.spelling] = tup
                     self.replace_dict['global_var'][tup[0]] = tup
+
+    def token_abstractor_fallback(self, tu, code):
+        def make_name(x): return f"{x}_{len(self.replace_dict[x])//2}"
+
+        global_vars = set()
+        # process global variables which are not valid out of the program contexts
+        for diag in tu.diagnostics:
+            # we don't care about warnings
+            if diag.severity < clang.cindex.Diagnostic.Error:
+                continue
+            # usage of unknown global variable is "undeclared identifier" error
+            res = re.search(f"use of undeclared identifier '(.*)'", diag.spelling)
+            if not res:
+                continue
+            var_name = res.group(1)
+            global_vars.add(var_name)
+            # now add this abastraction into our mapping
+            if var_name not in self.replace_dict['global_var']:
+                tup = (make_name('global_var'), var_name, "global_var")
+                self.replace_dict['global_var'][var_name] = tup
+                self.replace_dict['global_var'][tup[0]] = tup
+
+        declarations = ""
+        for var in global_vars:
+            declarations += f"extern {var};\n"
+        new_code = declarations + code
+
+        # parse new code
+        tu = self.parse(new_code)
+
+        # process valid tokens
+        for c in tu.cursor.walk_preorder():
+            tup = None
+            if c.kind == CursorKind.FUNCTION_DECL:
+                tup = (make_name('func'), c.spelling, c.kind)
+                self.replace_dict['func'][c.spelling] = tup
+                self.replace_dict['func'][tup[0]] = tup
+
+            elif c.kind == CursorKind.CALL_EXPR:
+                if not c.spelling in self.replace_dict['func']:
+                    tup = (make_name('func'), c.spelling, c.kind)
+                    self.replace_dict['func'][c.spelling] = tup
+                    self.replace_dict['func'][tup[0]] = tup
+
+            elif c.kind == CursorKind.PARM_DECL:
+                tup = (make_name('arg'), c.spelling, c.kind)
+                self.replace_dict['arg'][c.spelling] = tup
+                self.replace_dict['arg'][tup[0]] = tup
+
+            elif c.kind == CursorKind.VAR_DECL:
+                # in the new code, a VAR_DECL cursor might be introduced by us for global variables
+                if c.spelling in self.replace_dict['global_var']:
+                    continue
+                tup = (make_name('var'), c.spelling, c.kind)
+                self.replace_dict['var'][c.spelling] = tup
+                self.replace_dict['var'][tup[0]] = tup
+
+            elif c.kind == CursorKind.STRING_LITERAL:
+                if not c.spelling in self.replace_dict['str_lit']:
+                    new_str = '"'+make_name('str_lit').replace('_', '').strip()+'"'
+                    tup = (new_str, c.spelling, c.kind)
+                    self.replace_dict['str_lit'][c.spelling] = tup
+                    self.replace_dict['str_lit'][tup[0]] = tup
 
 
     def process_string(self, tok, char2tok, tok2char, is_comment):

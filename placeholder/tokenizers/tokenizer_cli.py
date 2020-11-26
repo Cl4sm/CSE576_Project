@@ -30,7 +30,7 @@ if __name__ == '__main__':
     sanitize_input(args)
 
     # choose a proper tokenizer
-    if args.input_file and args.src_dir:
+    if args.input_file:
         with io.open(args.input_file, encoding='utf-8') as f:
             source = f.read()
 
