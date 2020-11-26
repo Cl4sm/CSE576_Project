@@ -134,6 +134,14 @@ class CTokenizer:
 
     def abstract_analysis_v2(self, tu, code):
         def make_name(x): return f"{x}_{len(self.replace_dict[x])//2}"
+        def save_replace(typ, c, name=None):
+            if name is None:
+                name = make_name(typ)
+            if c.spelling in self.replace_dict[typ]:
+                return
+            tup = (name, c.spelling, c.kind)
+            self.replace_dict[typ][c.spelling] = tup
+            self.replace_dict[typ][tup[0]] = tup
 
         # add a prefix to make libclang to capture structures and global variables
         with cwd_cxt(self.build_dir), open(self.build_src_path) as f:
@@ -165,47 +173,29 @@ class CTokenizer:
 
 
             if c.kind == CursorKind.FUNCTION_DECL:
-                tup = (make_name('func'), c.spelling, c.kind)
-                self.replace_dict['func'][c.spelling] = tup
-                self.replace_dict['func'][tup[0]] = tup
+                save_replace('func', c)
 
             elif c.kind == CursorKind.CALL_EXPR:
-                if not c.spelling in self.replace_dict['func']:
-                    tup = (make_name('func'), c.spelling, c.kind)
-                    self.replace_dict['func'][c.spelling] = tup
-                    self.replace_dict['func'][tup[0]] = tup
+                save_replace('func', c)
 
             elif c.kind == CursorKind.PARM_DECL:
-                tup = (make_name('arg'), c.spelling, c.kind)
-                self.replace_dict['arg'][c.spelling] = tup
-                self.replace_dict['arg'][tup[0]] = tup
+                save_replace('arg', c)
 
             elif c.kind == CursorKind.VAR_DECL:
                 # in the new code, a VAR_DECL cursor might be introduced by us for global variables
                 if c.spelling in self.replace_dict['global_var']:
                     continue
-                tup = (make_name('var'), c.spelling, c.kind)
-                self.replace_dict['var'][c.spelling] = tup
-                self.replace_dict['var'][tup[0]] = tup
+                save_replace('var', c)
 
             elif c.kind == CursorKind.STRING_LITERAL:
-                if not c.spelling in self.replace_dict['str_lit']:
-                    new_str = '"'+make_name('str_lit').replace('_', '').strip()+'"'
-                    tup = (new_str, c.spelling, c.kind)
-                    self.replace_dict['str_lit'][c.spelling] = tup
-                    self.replace_dict['str_lit'][tup[0]] = tup
+                new_str = '"'+make_name('str_lit').replace('_', '').strip()+'"'
+                save_replace('var', c, name=new_str)
 
             elif c.kind == CursorKind.MEMBER_REF_EXPR:
-                if not c.spelling in self.replace_dict['attr']:
-                    tup = (make_name('attr'), c.spelling, c.kind)
-                    self.replace_dict['attr'][c.spelling] = tup
-                    self.replace_dict['attr'][tup[0]] = tup
+                save_replace('attr', c)
 
             elif c.kind == CursorKind.TYPE_REF:
-                if not c.spelling in self.replace_dict['type']:
-                    tup = (make_name('type'), c.spelling, c.kind)
-                    self.replace_dict['type'][c.spelling] = tup
-                    self.replace_dict['type'][tup[0]] = tup
+                save_replace('type', c)
 
         # now process the ast again to find undefined variable use and record them as global variables
         found = False
@@ -229,6 +219,14 @@ class CTokenizer:
 
     def abstract_analysis_v1(self, tu, code):
         def make_name(x): return f"{x}_{len(self.replace_dict[x])//2}"
+        def save_replace(typ, c, name=None):
+            if name is None:
+                name = make_name(typ)
+            if c.spelling in self.replace_dict[typ]:
+                return
+            tup = (name, c.spelling, c.kind)
+            self.replace_dict[typ][c.spelling] = tup
+            self.replace_dict[typ][tup[0]] = tup
 
         global_vars = set()
         # process global variables which are not valid out of the program contexts
@@ -257,6 +255,8 @@ class CTokenizer:
 
         # parse new code
         tu = self.parse(new_code)
+        #for diag in tu.diagnostics:
+        #    print(diag.spelling)
 
         # process valid tokens
         found = False
@@ -272,35 +272,23 @@ class CTokenizer:
 
 
             if c.kind == CursorKind.FUNCTION_DECL:
-                tup = (make_name('func'), c.spelling, c.kind)
-                self.replace_dict['func'][c.spelling] = tup
-                self.replace_dict['func'][tup[0]] = tup
+                save_replace('func', c)
 
             elif c.kind == CursorKind.CALL_EXPR:
-                if not c.spelling in self.replace_dict['func']:
-                    tup = (make_name('func'), c.spelling, c.kind)
-                    self.replace_dict['func'][c.spelling] = tup
-                    self.replace_dict['func'][tup[0]] = tup
+                save_replace('func', c)
 
             elif c.kind == CursorKind.PARM_DECL:
-                tup = (make_name('arg'), c.spelling, c.kind)
-                self.replace_dict['arg'][c.spelling] = tup
-                self.replace_dict['arg'][tup[0]] = tup
+                save_replace('arg', c)
 
             elif c.kind == CursorKind.VAR_DECL:
                 # in the new code, a VAR_DECL cursor might be introduced by us for global variables
                 if c.spelling in self.replace_dict['global_var']:
                     continue
-                tup = (make_name('var'), c.spelling, c.kind)
-                self.replace_dict['var'][c.spelling] = tup
-                self.replace_dict['var'][tup[0]] = tup
+                save_replace('var', c)
 
             elif c.kind == CursorKind.STRING_LITERAL:
-                if not c.spelling in self.replace_dict['str_lit']:
-                    new_str = '"'+make_name('str_lit').replace('_', '').strip()+'"'
-                    tup = (new_str, c.spelling, c.kind)
-                    self.replace_dict['str_lit'][c.spelling] = tup
-                    self.replace_dict['str_lit'][tup[0]] = tup
+                new_str = '"'+make_name('str_lit').replace('_', '').strip()+'"'
+                save_replace('str_lit', c, new_str)
 
 
     def process_string(self, tok, char2tok, tok2char, is_comment):
