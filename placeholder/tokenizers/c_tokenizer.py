@@ -64,20 +64,7 @@ class CTokenizer:
             tu = self.idx.parse(tmp_fpath, args=['-std=c11'], unsaved_files=[(tmp_fpath, code)], options=0x200)
         return tu
 
-    def _abstracted_tokenize(self, code, replace_tokens=False):
-        # parse
-        tu = self.parse(code)
-
-        # get raw_tokens from translation unit
-        raw_tokens = list(tu.get_tokens(extent=tu.cursor.extent))
-
-        # record token replacement by abstraction analysis
-        if self.build_dir:
-            self.token_abstractor(tu, code)
-        else:
-            self.token_abstractor_fallback(tu, code)
-
-        # now perform token replacement
+    def _get_abstracted_tokens(self, raw_tokens):
         abstracted_tokens = []
         idx = 0
         while idx < len(raw_tokens):
@@ -100,7 +87,33 @@ class CTokenizer:
                 abstracted_tokens.append((token.spelling, token.kind))
         return abstracted_tokens
 
-    def _tokenize(self, code, replace_tokens=False):
+    def _abstracted_tokenize_v1(self, code):
+        # parse
+        tu = self.parse(code)
+
+        # get raw_tokens from translation unit
+        raw_tokens = list(tu.get_tokens(extent=tu.cursor.extent))
+        self.abstract_analysis_v1(tu, code)
+
+        return self._get_abstracted_tokens(raw_tokens)
+
+    def _abstracted_tokenize_v2(self, code):
+        # parse
+        tu = self.parse(code)
+
+        # get raw_tokens from translation unit
+        raw_tokens = list(tu.get_tokens(extent=tu.cursor.extent))
+        self.abstract_analysis_v2(tu, code)
+
+        return self._get_abstracted_tokens(raw_tokens)
+
+    def abstracted_tokenize(self, code):
+        if self.build_dir:
+            tokens = self._abstracted_tokenize_v2(code)
+            code = self.detokenize([x[0] for x in tokens])
+        return self._abstracted_tokenize_v1(code)
+
+    def _tokenize(self, code):
         # parse
         tu = self.parse(code)
 
@@ -110,7 +123,7 @@ class CTokenizer:
         # return the tokens directly
         return [(x.spelling, x.kind) for x in raw_tokens]
 
-    def token_abstractor(self, tu, code):
+    def abstract_analysis_v2(self, tu, code):
         def make_name(x): return f"{x}_{len(self.replace_dict[x])//2}"
 
         # add a prefix to make libclang to capture structures and global variables
@@ -205,7 +218,7 @@ class CTokenizer:
                     self.replace_dict['global_var'][c.spelling] = tup
                     self.replace_dict['global_var'][tup[0]] = tup
 
-    def token_abstractor_fallback(self, tu, code):
+    def abstract_analysis_v1(self, tu, code):
         def make_name(x): return f"{x}_{len(self.replace_dict[x])//2}"
 
         global_vars = set()
@@ -319,8 +332,9 @@ class CTokenizer:
         code = code.replace("\r", "")
 
         # use libclang to parse the code
+        tokens_n_types = self.abstracted_tokenize(code)
         try:
-            tokens_n_types = self._abstracted_tokenize(code, replace_tokens=True)
+            tokens_n_types = self.abstracted_tokenize(code)
         except TimeoutError:
             print("Timeout Error")
             return []
