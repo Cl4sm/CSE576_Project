@@ -195,7 +195,8 @@ if __name__ == '__main__':
         assert os.path.isdir(args.dataset_dir), f"{args.dataset_dir} doesn't exist or is not a directory!"
 
     pkgs = os.listdir(args.dataset_dir)
-    for idx, pkg in tqdm.tqdm(enumerate(pkgs), smoothing=0):
+    for pkg in tqdm.tqdm(pkgs, smoothing=0):
+    #for idx, pkg in tqdm.tqdm(enumerate(pkgs), smoothing=0):
         #if pkg != 'nrss':
         #    continue
         logger.info(f"processing package {pkg}...")
