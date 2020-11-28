@@ -350,7 +350,6 @@ class CTokenizer:
         code = code.replace("\r", "")
 
         # use libclang to parse the code
-        tokens_n_types = self.abstracted_tokenize(code)
         try:
             tokens_n_types = self.abstracted_tokenize(code)
         except TimeoutError:
