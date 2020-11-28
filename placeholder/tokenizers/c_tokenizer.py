@@ -59,7 +59,7 @@ class CTokenizer:
         self.build_dir = build_dir
         self.build_src_path = build_src_path
 
-    @timeout(seconds=10)
+    @timeout(seconds=20)
     def parse(self, code):
         if self.build_dir:
             with cwd_cxt(self.build_dir):
@@ -229,8 +229,11 @@ class CTokenizer:
             self.replace_dict[typ][c.spelling] = tup
             self.replace_dict[typ][tup[0]] = tup
 
-        if "__noreturn" in code:
-            code = code.replace("__noreturn", "")
+        # if this is decompiled code, include IDA's header file
+        if not self.build_dir:
+            code = "#include <math.h>\n#include <defs.h>\n" + code
+            if "__noreturn" in code:
+                code = code.replace("__noreturn", "")
             tu = self.parse(code)
 
         global_vars = set()
@@ -254,7 +257,7 @@ class CTokenizer:
                 self.replace_dict['global_var'][var_name] = tup
                 self.replace_dict['global_var'][tup[0]] = tup
 
-        declarations = "#include <math.h>\n#include <defs.h>\nstatic int LOL_ABCD_LOL;\n"
+        declarations = "static int LOL_ABCD_LOL;\n"
         for var in global_vars:
             declarations += f"extern {var};\n"
         new_code = declarations + code
@@ -262,7 +265,7 @@ class CTokenizer:
         # parse new code
         tu = self.parse(new_code)
         #for diag in tu.diagnostics:
-        #    print(diag.spelling)
+        #    print(diag.severity, diag.spelling)
 
         # process valid tokens
         found = False

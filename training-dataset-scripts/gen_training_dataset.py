@@ -41,8 +41,12 @@ handler.setFormatter(logger_formatter)
 logger.addHandler(handler)
 
 def abstract_code(code, build_dir=None, build_src_path=None):
-    c_tokenizer = CTokenizer(build_dir=build_dir, build_src_path=build_src_path)
-    tokens = c_tokenizer.tokenize(code)
+    try:
+        c_tokenizer = CTokenizer(build_dir=build_dir, build_src_path=build_src_path)
+        tokens = c_tokenizer.tokenize(code)
+    except Exception:
+        c_tokenizer = CTokenizer()
+        tokens = c_tokenizer.tokenize(code)
     return c_tokenizer.detokenize(tokens)
 
 def save_mapping():
