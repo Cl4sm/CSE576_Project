@@ -145,8 +145,8 @@ class CTokenizer:
             self.replace_dict[typ][tup[0]] = tup
 
         # add a prefix to make libclang to capture structures and global variables
-        with cwd_cxt(self.build_dir), open(self.build_src_path) as f:
-            content = f.read()
+        with cwd_cxt(self.build_dir), open(self.build_src_path, 'rb') as f:
+            content = f.read().decode("utf-8", "replace")
         new_code = content + '\nstatic int LOL_ABCD_LOL;\n' + code
 
         # parse new code
