@@ -231,10 +231,10 @@ class CTokenizer:
 
         # if this is decompiled code, include IDA's header file
         if not self.build_dir:
-            code = "#include <math.h>\n#include <defs.h>\n" + code
             if "__noreturn" in code:
                 code = code.replace("__noreturn", "")
-            tu = self.parse(code)
+            new_code = "#include <math.h>\n#include <defs.h>\n" + code
+            tu = self.parse(new_code)
 
         global_vars = set()
         # process global variables which are not valid out of the program contexts
@@ -257,7 +257,7 @@ class CTokenizer:
                 self.replace_dict['global_var'][var_name] = tup
                 self.replace_dict['global_var'][tup[0]] = tup
 
-        declarations = "static int LOL_ABCD_LOL;\n"
+        declarations = "#include <math.h>\n#include <defs.h>\nstatic int LOL_ABCD_LOL;\n"
         for var in global_vars:
             declarations += f"extern {var};\n"
         new_code = declarations + code
@@ -352,6 +352,7 @@ class CTokenizer:
         # use libclang to parse the code
         try:
             tokens_n_types = self.abstracted_tokenize(code)
+            #tokens_n_types = self._tokenize(code)
         except TimeoutError:
             print("Timeout Error")
             return []

@@ -25,7 +25,7 @@ MAPPING_NAME = "mapping.json"
 FUNC_NAME_BLACKLIST = ["start"]
 COMPILE_DB_DIR = "/home/kylebot/Desktop/courses/CSE576/datasets/compiled_bin_dataset/compile-db"
 output_dir = "./output"
-dataset_dir = "/home/kylebot/Desktop/courses/CSE576/datasets/dataset_v2"
+dataset_dir = "/home/kylebot/Desktop/courses/CSE576/datasets/dataset_v3"
 
 clang.cindex.Config.set_library_path('/usr/local/lib/')
 
@@ -196,7 +196,7 @@ def get_all_items():
     #links = [x[1] for x in state['targets']]
     item_list = []
     pkgs = os.listdir(dataset_dir)
-    for pkg in tqdm.tqdm(pkgs, smoothing=0):
+    for pkg in tqdm.tqdm(pkgs, smoothing=0, dynamic_ncols=True):
         pkg_dir = os.path.join(dataset_dir, pkg)
         item_list += get_items_from_pkg(pkg_dir)
     print(len(item_list))
@@ -225,8 +225,14 @@ def process_task(task):
     process a task and append result to the task, a task is a dictionary
     the initial item can be accessed by `task['item']`
     """
-    print(task)
+    tid = task['task_id']
+    task_res = {
+        "task_id": tid,
+        "result": None
+        }
     item = task['item']
+
+
     func_id = item['func_id']
     src_code = item['src_code']
     dec_code = item['dec_code']
@@ -244,14 +250,12 @@ def process_task(task):
 
 
     # update mapping
-    mapping[func_id] = {
-                            "func_name": func_name,
-                            "package": pkg_name,
-                            "binary": bin_path,
-                            "info_bin": info_bin,
-                            "info_src": info_func
-                            }
+    mapping[func_id] = map_entry
+
     if func_id % 0x1000 == 0:
         save_mapping()
 
-    raise
+    return task_res
+
+with open("items.json", "w") as f:
+    json.dump(get_all_items(), f)
