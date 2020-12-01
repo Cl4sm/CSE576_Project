@@ -1,0 +1,45 @@
+######### THOUGHTS ######### 
+
+In this example, the decompiler totally fails to recognize the number of arguments of each function involved.
+It is expected that our model preserves the number of arguments of functions. Surprisingly, our model is
+able to successfully realize that this function does not return any value.
+
+######### INPUT ######### 
+__int64 __fastcall func_363 ( __int64 arg_10, __int64 arg_11 ) {
+  func_364 ( arg_10, arg_11 );
+  func_364 ( arg_10, arg_11 );
+  func_364 ( arg_10, arg_11 );
+  func_364 ( arg_10, arg_11 );
+  func_364 ( arg_10, arg_11 );
+  func_364 ( arg_10, arg_11 );
+  func_364 ( arg_10, arg_11 );
+  func_364 ( arg_10, arg_11 );
+  return func_364 ( arg_10, arg_11 );
+}
+
+######### HYPOTHESIS ######### 
+void func_0 ( type_0 * arg_0, type_1 * arg_1 ) {
+  func_1 ( arg_0, arg_1 );
+  func_1 ( arg_0, arg_1 );
+  func_1 ( arg_0, arg_1 );
+  func_1 ( arg_0, arg_1 );
+  func_1 ( arg_0, arg_1 );
+  func_1 ( arg_0, arg_1 );
+  func_1 ( arg_0, arg_1 );
+  func_1 ( arg_0, arg_1 );
+  func_1 ( arg_0, arg_1 );
+}
+
+######### ORIGINAL SOURCE CODE ######### 
+void func_363 ( ) {
+  int var_0 = func_364 ( );
+  int var_1 = func_364 ( );
+  int var_2 = func_364 ( );
+  int var_3 = func_364 ( );
+  int var_4 = func_364 ( );
+  int var_5 = func_364 ( );
+  int var_6 = func_364 ( );
+  int var_7 = func_364 ( );
+  int var_8 = func_364 ( );
+  func_365 ( "strlit0", var_0, var_1, var_2, var_3, var_4, var_5, var_6, var_7, var_8 );
+}
