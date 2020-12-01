@@ -26,8 +26,10 @@ def abstract_code(code, build_dir=None, build_src_path=None):
     return c_tokenizer.detokenize(tokens)
 
 
-INPUT_DIR = "output/abstracted_src_code"
-OUTPUT_DIR = "output/abstracted_base64_src_code"
+#INPUT_DIR = "/dev/shm/output/abstracted_decompiled_code"
+#OUTPUT_DIR = "/dev/shm/output/abstracted_base64_decompiled_code"
+INPUT_DIR = "/dev/shm/output/abstracted_src_code"
+OUTPUT_DIR = "/dev/shm/output/abstracted_base64_src_code"
 os.system("mkdir -p %s" % OUTPUT_DIR)
 for fname in tqdm.tqdm(os.listdir(INPUT_DIR), smoothing=0, dynamic_ncols=True):
     fpath = os.path.join(INPUT_DIR, fname)
