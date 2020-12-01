@@ -1,0 +1,105 @@
+######### THOUGHTS ######### 
+
+In this example, our model generates a perfect hypothesis.
+It not only captures the semantic information without error. The syntax it emits is
+even better than the source code itself. It is better in the sense that: in C code,
+an `break` statement after `return` will never be executed. Our model is intelligent
+enough to detect the extra `break` statement and remove it.
+
+######### INPUT ######### 
+const char * __fastcall func_363 ( int arg_10 ) {
+  const char * var_0;
+  switch ( arg_10 ) {
+    case 1 : var_0 = "strlit0";
+    break;
+    case 2 : var_0 = "strlit1";
+    break;
+    case 3 : var_0 = "strlit2";
+    break;
+    case 4 : var_0 = "strlit3";
+    break;
+    case 5 : var_0 = "strlit4";
+    break;
+    case 6 : var_0 = "strlit5";
+    break;
+    case 7 : var_0 = "strlit6";
+    break;
+    case 8 : var_0 = "strlit7";
+    break;
+    case 9 : var_0 = "strlit8";
+    break;
+    case 10 : var_0 = "strlit9";
+    break;
+    case 11 : var_0 = "strlit10";
+    break;
+    case 12 : var_0 = "strlit11";
+    break;
+    case 13 : var_0 = "strlit12";
+    break;
+    case 20 : var_0 = "strlit13";
+    break;
+    default : var_0 = "strlit14";
+    break;
+  }
+  return var_0;
+}
+
+######### HYPOTHESIS ######### 
+const char * func_0 ( int arg_0 ) {
+  switch ( arg_0 ) {
+    case global_var_0 : return "strlit0";
+    case global_var_1 : return "strlit0";
+    case global_var_2 : return "strlit0";
+    case global_var_3 : return "strlit0";
+    case global_var_4 : return "strlit0";
+    case global_var_5 : return "strlit0";
+    case global_var_6 : return "strlit0";
+    case global_var_7 : return "strlit0";
+    case global_var_8 : return "strlit0";
+    case global_var_9 : return "strlit0";
+    case global_var_10 : return "strlit0";
+    case global_var_11 : return "strlit0";
+    case global_var_12 : return "strlit0";
+    case global_var_13 : return "strlit0";
+    case global_var_14 : return "strlit0";
+    case global_var_15 : return "strlit0";
+    case global_var_16 : return "strlit0";
+    case global_var_17 : return "strlit0";
+  }
+  return "strlit0";
+}
+
+######### ORIGINAL SOURCE CODE ######### 
+char * func_0 ( int arg_0 ) {
+  switch ( arg_0 ) {
+    case global_var_0 : return ( "strlit0" );
+    break;
+    case global_var_1 : return ( "strlit0" );
+    break;
+    case global_var_2 : return ( "strlit0" );
+    break;
+    case global_var_3 : return ( "strlit0" );
+    break;
+    case global_var_4 : return ( "strlit0" );
+    break;
+    case global_var_5 : return ( "strlit0" );
+    break;
+    case global_var_6 : return ( "strlit0" );
+    break;
+    case global_var_7 : return ( "strlit0" );
+    break;
+    case global_var_8 : return ( "strlit0" );
+    break;
+    case global_var_9 : return ( "strlit0" );
+    break;
+    case global_var_10 : return ( "strlit0" );
+    break;
+    case global_var_11 : return ( "strlit0" );
+    break;
+    case global_var_12 : return ( "strlit0" );
+    break;
+    case global_var_13 : return ( "strlit0" );
+    break;
+    default : return ( "strlit0" );
+  }
+}

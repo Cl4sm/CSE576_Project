@@ -1,0 +1,30 @@
+######### THOUGHTS ######### 
+
+This example demonstrates the model's ability to reconstrcut macros from code snippet.
+In standard C library, `assert` is a macro that gets expanded to a complicated snippet
+after preprocessing.
+In this example, our model reconstruct a reasonble C code. And most amazingly, it
+recognizes the pattern of `assert` macro and shrank a whole snippet into an `assert` call.
+And the reconstruction is exactly the same as what is written in the original source code.
+
+######### INPUT ######### 
+__int64 __fastcall func_363 ( __int64 arg_10, const char * arg_11 ) {
+  __int64 var_0;
+  if ( ! arg_10 || ! arg_11 ) func_364 ( "strlit0", "strlit1", 0x138u, "strlit2" );
+  var_0 = func_365 ( arg_11 );
+  return func_366 ( arg_10, arg_11, var_0 );
+}
+
+######### HYPOTHESIS ######### 
+char * func_0 ( type_0 * arg_0, const char * arg_1 ) {
+  assert ( arg_0 && arg_1 );
+  return func_2 ( arg_0, arg_1, func_3 ( arg_1 ) );
+}
+
+######### ORIGINAL SOURCE CODE ######### 
+void func_0 ( type_0 * arg_0, char * arg_1 ) {
+  unsigned long var_0;
+  assert ( arg_0 && arg_1 );
+  var_0 = func_2 ( arg_1 );
+  func_3 ( arg_0, arg_1, var_0 );
+}

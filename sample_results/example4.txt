@@ -1,0 +1,33 @@
+######### THOUGHTS ######### 
+
+In this example, our model demonstrates its ability when the input is lossy.
+Initially, the decompiled fails to capture the first line of the original
+source code. With information loss, our model is still able to reconstruct
+the source code as much as possible. It recognizes the input is a data structure
+and the following functions take each field of the data structure as the input.
+IDA fails to recognizes.
+
+######### INPUT ######### 
+void __fastcall func_363 ( void * * arg_10 ) {
+  func_364 ( arg_10 [ 3 ] );
+  func_364 ( arg_10 [ 2 ] );
+  func_364 ( arg_10 [ 4 ] );
+  func_364 ( arg_10 );
+}
+
+######### HYPOTHESIS ######### 
+void func_0 ( type_0 * arg_0 ) {
+  func_1 ( arg_0 -> attr_0 );
+  func_1 ( arg_0 -> attr_1 );
+  func_1 ( arg_0 -> attr_2 );
+  func_1 ( arg_0 );
+}
+
+######### ORIGINAL SOURCE CODE ######### 
+R_API void func_0 ( void * ptr ) {
+  global_var_0 * global_var_1 = ptr;
+  func_1 ( global_var_1 -> buffer );
+  func_1 ( global_var_1 -> traps );
+  func_1 ( global_var_1 -> bits );
+  func_1 ( global_var_1 );
+}
