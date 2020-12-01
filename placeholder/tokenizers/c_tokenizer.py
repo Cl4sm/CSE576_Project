@@ -120,7 +120,7 @@ class CTokenizer:
     def abstracted_tokenize(self, code):
         if self.build_dir:
             tokens = self._abstracted_tokenize_v2(code)
-            code = self.detokenize([x[0] for x in tokens])
+            return tokens
         return self._abstracted_tokenize_v1(code)
 
     def _tokenize(self, code):
@@ -147,12 +147,18 @@ class CTokenizer:
         # add a prefix to make libclang to capture structures and global variables
         with cwd_cxt(self.build_dir), open(self.build_src_path, 'rb') as f:
             content = f.read().decode("utf-8", "replace")
-        new_code = content + '\nstatic int LOL_ABCD_LOL;\n' + code
+        new_code = content + '\nvoid LOL_EFG_LOL(){LOL_EFGH_LOL;}\nstatic int LOL_ABCD_LOL;\n' + code
 
         # parse new code
         tu = self.parse(new_code)
-        #for diag in tu.diagnostics:
-        #    print(diag.spelling)
+        found = False
+        for diag in tu.diagnostics:
+            #print(diag.severity, diag.spelling)
+            if not found and 'LOL_EFGH_LOL' in diag.spelling:
+                found = True
+                continue
+            if found and diag.severity >= 3:
+                raise RuntimeError("Unexpected error in target code: %s" % diag.spelling)
 
         # process valid tokens, we only process the original code
         found = False
@@ -257,15 +263,23 @@ class CTokenizer:
                 self.replace_dict['global_var'][var_name] = tup
                 self.replace_dict['global_var'][tup[0]] = tup
 
-        declarations = "#include <math.h>\n#include <defs.h>\nstatic int LOL_ABCD_LOL;\n"
+        declarations = "#include <math.h>\n#include <defs.h>\nvoid LOL_EFG_LOL(){LOL_EFGH_LOL;}\nstatic int LOL_ABCD_LOL;\n"
         for var in global_vars:
             declarations += f"extern {var};\n"
         new_code = declarations + code
 
         # parse new code
         tu = self.parse(new_code)
-        #for diag in tu.diagnostics:
-        #    print(diag.severity, diag.spelling)
+
+        #if there is any fatal error in the target code, raise
+        found = False
+        for diag in tu.diagnostics:
+            #print(diag.severity, diag.spelling)
+            if not found and 'LOL_EFGH_LOL' in diag.spelling:
+                found = True
+                continue
+            if found and diag.severity >= 3:
+                raise RuntimeError("Unexpected error in target code: %s", diag.spelling)
 
         # process valid tokens
         found = False
@@ -358,7 +372,7 @@ class CTokenizer:
             return []
         except Exception as e:
             print(e)
-            print(f"Unknown error during parsing {code}")
+            #print(f"Unknown error during parsing {code}")
 
         # post-process: strip comments and tokenize literals
         for tok, typ in tokens_n_types:
