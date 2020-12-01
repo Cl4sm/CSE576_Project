@@ -1,0 +1,58 @@
+######### THOUGHTS	######### 
+
+We include this case to show how our decompilation has changed as our pipeline improves.
+
+Previously, our model correctly recognizes that global_var_2 is a list header and substitutes it accordingly.
+It oversimplfied the inner loop however, and lost much of the detail.
+
+Our new model retains the structure of the inner loop and the arguments involved without
+as much loss. However, the list node is no longer recognized, likely due to our changes in
+our abstraction step.
+
+######### INPUT S-4880	######### 
+
+void __fastcall func_2 ( int arg_3 ) { global_var_0 * global_var_1; 
+	global_var_0 * global_var_2; 
+	for ( global_var_1 = global_var_3.next; global_var_1 != & global_var_3; global_var_1 = global_var_1->next ) { 
+		global_var_2 = global_var_1[5].next[6].next; 
+		if ( global_var_2 ) 
+			( ( void ( __fastcall * ) ( global_var_0 *, arg_3 ) ) global_var_2 ) ( global_var_1, ( unsigned int ) arg_3 ); 
+	}
+}
+
+
+######### OLD HYPOTHESIS ######### 
+
+void func_2 ( int arg_1 ) { 
+	struct flist_head * var_1; 
+	for ( var_1 = global_var_0[arg_1]; var_1 != global_var_1; var_1 = var_1->next ) 
+		func_1 ( var_1 ); 
+}
+
+
+######### NEW HYPOTHESIS ######### 
+
+extern void func_0 ( void ) {
+   register type_0 * var_0;
+   register type_1 * var_1;
+   for ( var_0 = global_var_0;
+   var_0 != global_var_1;
+   var_0 = var_0 -> attr_0 ) {
+     var_1 = var_0 -> attr_1;
+     func_1 ( var_0 );
+   }
+   func_2 ( );
+}
+
+######### ORIGINAL ######### 
+
+void func_1 ( int arg_1 ) { 
+	struct list_node * var_3; 
+	for ( var_3 = global_var_0.next; var_3 != & global_var_0; var_3 = var_3->next ) 
+	{ 
+		struct simio_device * var_3 = ( struct simio_device * ) var_3; 
+		const struct simio_class * var_3 = var_3 -> var_3; 
+		if ( var_3 -> ack_interrupt ) 
+			var_3 -> ack_interrupt ( var_3, arg_1 ); 
+	} 
+} 

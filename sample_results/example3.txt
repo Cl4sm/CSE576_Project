@@ -1,0 +1,25 @@
+######### THOUGHTS ######### 
+
+In this example, our model generates a perfect hypothesis.
+Apart from successfully preserving the semantic information, it is able to successfully
+recognize the data type of the input by using the information provided by the
+decompiled code. This data type recognization is not by luck, it is infered by the unique
+input type, a function pointer, appear in decompiled code.
+
+######### INPUT ######### 
+__int64 ( * __fastcall func_363 ( __int64 ( * arg_10 ) ( void ) ) ) ( void ) {
+  __int64 ( * var_0 ) ( void );
+  var_0 = arg_10;
+  global_var_0 = arg_10;
+  return var_0;
+}
+
+######### HYPOTHESIS ######### 
+void func_0 ( get_time_ms_func_t arg_0 ) {
+  global_var_0 = arg_0;
+}
+
+######### ORIGINAL SOURCE CODE ######### 
+void func_0 ( get_time_ms_func_t arg_0 ) {
+  global_var_0 = arg_0;
+}

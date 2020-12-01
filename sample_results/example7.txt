@@ -1,0 +1,65 @@
+######### THOUGHTS	######### 
+
+We include this case to show how our decompilation has changed as our pipeline improves.
+
+Previously, the hypothesis generated is a mass of "ptr" tokens. 
+
+Our improved abstraction and tokenization pipeline allows our model to
+resolve the input into something much more structured, even if
+the actual assignments being made are still not accurate, it
+represent a significant improvement over the previous case.
+
+######### INPUT S-1577	######### 
+
+global_var_0 __fastcall func_2 ( void * ptr ) {
+
+	global_var_0 * global_var_1; 
+	global_var_0 global_var_2; 
+	global_var_1 = * ( global_var_0 * * ) ptr; 
+	global_var_2 = * global_var_1; 
+
+	func_1 ( global_var_1 ); 
+	func_1 ( ptr ); 
+	return global_var_2; 
+}
+
+######### OLD HYPOTHESIS ######### 
+
+ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr
+ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr
+ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr
+ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr
+ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr
+ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr
+ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr
+ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr
+ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr
+ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr
+ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr
+ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr ptr
+
+
+######### LATEST HYPOTHESIS ######### 
+
+global_var_0 * func_0 ( void ) {
+   global_var_0 * var_0;
+   var_0 = func_1 ( sizeof ( global_var_0 ) );
+   var_0 -> attr_0 = global_var_2;
+   var_0 -> attr_1 = global_var_2;
+   var_0 -> attr_2 = global_var_2;
+   var_0 -> attr_3 = global_var_2;
+   var_0 -> attr_4 = global_var_2;
+   return var_0;
+}
+
+######### ORIGINAL RAW-1577	######### 
+
+char * func_2 ( xio_file arg_1 ) {
+
+	struct fr * var_2 = ( struct fr * ) arg_1 -> data; 
+	char * var_2 = var_2 -> string; 
+
+	func_1 ( var_2 ); 
+	func_1 ( arg_1 ); 
+	return var_2; 
+} 

@@ -1,0 +1,68 @@
+######### THOUGHTS ######### 
+
+Similar to exmaple2, this example also demonstrates the strength
+of model in recognizing `switch` statement. Its output is better than
+the source code by striping the extra `break` statements. This
+further confirms that the execllent translation is not by luck.
+
+######### INPUT ######### 
+const char * __fastcall func_363 ( int arg_10 ) {
+  const char * var_0;
+  switch ( arg_10 ) {
+    case 0 : var_0 = "strlit0";
+    break;
+    case 1 : var_0 = "strlit1";
+    break;
+    case 2 : var_0 = "strlit2";
+    break;
+    case 3 : var_0 = "strlit3";
+    break;
+    case 4 : var_0 = "strlit4";
+    break;
+    case 5 : var_0 = "strlit5";
+    break;
+    case 6 : var_0 = "strlit6";
+    break;
+    default : var_0 = "strlit7";
+    break;
+  }
+  return var_0;
+}
+
+######### HYPOTHESIS ######### 
+const char * func_0 ( const char * arg_0 ) {
+  switch ( arg_0 ) {
+    case global_var_0 : return "strlit0";
+    case global_var_1 : return "strlit0";
+    case global_var_2 : return "strlit0";
+    case global_var_3 : return "strlit0";
+    case global_var_4 : return "strlit0";
+    case global_var_5 : return "strlit0";
+    case global_var_6 : return "strlit0";
+    case global_var_7 : return "strlit0";
+    case global_var_8 : return "strlit0";
+    case global_var_9 : return "strlit0";
+  }
+  return "strlit0";
+}
+
+######### ORIGINAL SOURCE CODE ######### 
+char * func_0 ( int arg_0 ) {
+  switch ( arg_0 ) {
+    case global_var_0 : return ( "strlit0" );
+    break;
+    case global_var_1 : return ( "strlit0" );
+    break;
+    case global_var_2 : return ( "strlit0" );
+    break;
+    case global_var_3 : return ( "strlit0" );
+    break;
+    case global_var_4 : return ( "strlit0" );
+    break;
+    case global_var_5 : return ( "strlit0" );
+    break;
+    case global_var_6 : return ( "strlit0" );
+    break;
+    default : return ( "strlit0" );
+  }
+}
